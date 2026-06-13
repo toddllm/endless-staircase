@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — The Atomix War (Lore 27, the scale-of-reality batch)
+
+Based on Toby's June 13 lore (a new "Lore 27" thread, the scale-of-reality one):
+*"Simon divides his zones apart... 1 domain holds 15,000,075 zones... Infinity Worlds
+in Classics. Simon divides even more than a zone: semi-zones, olpha, shred, and
+atomix... Simon continues to corrupt the game at one atomix at a time."* And what
+ChatGPT said happens next, which Toby pasted in: *"Simon stops conquering like a
+fighter and starts conquering like a system... He is no longer just taking land. He
+is taking outcomes."* Plus the follow-ups: the **Copies of Intention** (*"tiny,
+logic-sized Simon traces that live inside the atomix and carry one instruction each:
+Belong. Close. Fall. Forget. Return to Center"*) so *"the game starts trying to choose
+him by itself,"* and the rebellion below, where **Alex and Luigi Green** *"free it from
+below by cleaning atomix upward,"* fighting *"over which version of the board gets to
+exist."*
+
+![Lore 27 — THE ATOMIX WAR: the board divided into a red/blue atomix lattice, Simon's cross-and-omega symbol forming in the sky, red Copies of Intention diamonds carrying the words Belong and Fall, the PHASE 2 SIMON — the atomix war caption, and the BOARD tug-of-war bar showing the RETURN TO CENTER curse](screenshots/14-atomix-war.png)
+
+- **A ninth arc: THE ATOMIX WAR.** Climb on past the Silent Executioner and Simon
+  stops conquering like a fighter and conquers like a *system*. A new state fires with
+  its own warning, taunts (*"Center's mine. I take outcomes now, one atomix at a time."*),
+  and a red HUD tag: **▓ THE ATOMIX WAR ▓**. His caption becomes **PHASE 2 SIMON — the
+  atomix war**.
+- **The board, divided down to the atomix.** The whole screen becomes a flickering
+  lattice of tiny cells, each one an *atomix*, flickering between **RED (Simon-owned)**
+  and **BLUE (freed by the rebellion)**. The red share tracks the live board state, so
+  you can *see* the board being fought over.
+- **Copies of Intention.** Simon seeds tiny red diamond slivers of his will, each with a
+  flickering eye and **one instruction** drifting in and homing on you:
+  **Belong · Close · Fall · Forget · Return to Center**. Let one touch you and the board
+  flips toward Simon (*"the game starts choosing him by itself"*) and your movement is
+  **cursed by its word**: *Return to Center* / *Close* drag you back to the middle, *Fall*
+  / *Belong* pull you downward, *Forget* makes you lose your momentum. The curses are
+  gentle and time-limited, a nudge, never a trap.
+- **The rebellion cleans upward.** From below, Alex and Luigi Green free atomix back, so
+  the **BOARD** tug-of-war bar steadily slides back toward blue whenever you *dodge* the
+  Copies. The fight is over which version of the board gets to exist.
+- **Center's mine.** Let the board fully agree with Simon and the floating zones lock
+  into **his symbol** (a great cross with an omega-like curve) and lightning **seals it**
+  with a hit. New death sting: *"I stopped conquering like a fighter. I conquer like a
+  system. I do not take the land. I take the outcomes." — The Atomix War*.
+
 ## 2026-06-13 — The Silent Executioner (Lore 28)
 
 Based on Toby's June 13 lore (Lore 28): *"Simon is a being with his own mind and

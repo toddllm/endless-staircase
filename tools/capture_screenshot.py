@@ -215,6 +215,40 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('I only move when it is certain. One clean move.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "atomix": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // every prior arc has resolved; the last is the SILENT EXECUTIONER, then THE ATOMIX WAR
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        for (var m=0;m<40;m++){ update(1/60); }
+        // board mostly agreeing with Simon so the red lattice + his symbol show
+        if (typeof board!=='undefined'){ board=0.18; }
+        // guarantee Copies of Intention on screen, one near the player, each with a word
+        if (typeof copies!=='undefined'){
+          copies.length=0;
+          copies.push({x:player.x+70, y:player.y-30, vx:0, vy:0, r:17, t:1.0, wob:0.8, word:'Return to Center'});
+          copies.push({x:player.x-120, y:player.y-100, vx:0, vy:0, r:17, t:2.0, wob:0.8, word:'Fall'});
+          copies.push({x:player.x+140, y:player.y+80, vx:0, vy:0, r:17, t:0.5, wob:0.8, word:'Forget'});
+          copies.push({x:90, y:player.y-150, vx:0, vy:0, r:17, t:1.5, wob:0.8, word:'Belong'});
+        }
+        // a curse active so the HUD shows the imposed word
+        if (typeof curse!=='undefined'){ curse.type='Return to Center'; curse.t=1.0; }
+        if (typeof player!=='undefined'){ player.vx=0; }
+        // freeze on a leading beat so atomix-war Simon shows his flickering eyes + caption
+        if (typeof battle!=='undefined'){ battle.t=0.0; battle.leadFlash=1.0; battle.answerActive=true; battle.answerWave=0.4;
+          if (typeof platforms!=='undefined'){ for (var b=0;b<platforms.length;b++){ if(platforms[b].boxer){ platforms[b].boxer.answer=0.7; platforms[b].boxer.infected=true; } } } }
+        if (typeof glitch!=='undefined'){ glitch=0.4; }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('I take outcomes now, one atomix at a time. Center’s mine.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
