@@ -6,7 +6,9 @@ A browser game built from the **newest chapter** of the *Secret of Simon's Lore*
 
 **▶ Play it (no install): https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/**
 
-![title](screenshots/01-title.png)
+What's new is tracked in the [**CHANGELOG**](CHANGELOG.md) — latest: **The False Cure** (Simon's deadly look-alike bottles) and **Simon's Levers**.
+
+![The False Cure](screenshots/05-false-cure.png)
 
 ## The three horrors, all at once
 
