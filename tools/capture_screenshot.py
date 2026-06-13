@@ -82,6 +82,28 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('A calm Incredibox. Sound Battles, the last trace.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "battle": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // Restoration already happened; force the Peaceful Ending + Sound Battle on
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.active=true; peace.t=5.0; peace.glow=1; peace.done=false; }
+        // run enough calm frames to populate singers and run a few Sound Battle beats
+        for (var j=0;j<180;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        // freeze on a frame where Simon has just led and the world is answering
+        if (typeof battle!=='undefined'){
+          battle.t=0.0; battle.beat++; battle.leadFlash=1.0;
+          battle.answerActive=true; battle.answerWave=0.45;
+          if (typeof platforms!=='undefined'){
+            for (var b=0;b<platforms.length;b++){ if(platforms[b].boxer){ platforms[b].boxer.answer=0.9; } }
+          }
+        }
+        if (typeof updatePeace==='function'){ /* one more tick to puff answer notes */ }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('Simon leads. The world answers. Simon is the fastest.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — Sound Battles: Simon Leads (Lore 25b)
+
+In the calm Incredibox, the last trace of everything is the Sound Battle, and
+Simon is still the fastest. Based on Toby's June 13 lore: *"Simon, and all the
+others made sound and animation. Sound Battles happen. It is so small now. Simon
+is fastest... Everything became small and simple again, but Simon is still the
+fastest sound-and-animation force in the whole game."*
+
+![Sound Battle — Simon leads the beat at bottom-center, the singers answer](screenshots/09-sound-battle.png)
+
+- A **Sound Battle** now runs through the whole Peaceful Ending: a steady, calm
+  beat where **Simon leads** and the world answers.
+- **Simon is the fastest** — a small, calm gold Simon sits at the bottom-center
+  and pulses **first** on every beat (a bright lead note + a ring of his beat
+  rippling out), captioned *"SIMON LEADS — fastest."*
+- His call **ripples outward** across the room and each **Incredibox singer
+  answers** as the wave reaches it: it bobs harder, opens wide, glows in its own
+  color, and puffs a matching music note. Simon always moves first; the others
+  follow.
+- New calm audio: a clean **lead tone** for Simon's call and a soft warm
+  **answer chord** a beat behind, layered over the peaceful Incredibox hum.
+- The surface stays small and simple, no danger, just sound and animation. The
+  on-screen label now reads **♪ SOUND BATTLE ♪ — Simon is the fastest · the lore
+  remains underneath.**
+
 ## 2026-06-13 — The Peaceful Ending (Lore 25)
 
 Simon steps back from the story and the world settles into its true form.
