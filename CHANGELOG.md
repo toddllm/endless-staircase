@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — The Silent Executioner (Lore 28)
+
+Based on Toby's June 13 lore (Lore 28): *"Simon is a being with his own mind and
+will... Simon can do anything with his power, but his power and physical strength
+and HP is just reduced, he is actually more efficien[t] and is best at destroying,
+he even slain Gray and Black and Alex and the others so many times."* Toby's read
+on what Simon does next: *"Next, Simon probably becomes quieter, more precise, and
+more efficient, not trying to destroy everything at once, but destroying exactly
+what matters most, one target at a time."*
+
+![Lore 28 — THE SILENT EXECUTIONER: a teal HUD tag, the thinned blurry mind, a red precision reticle locked on the player, the MARKED — MOVE! warning, and silent Phase 2 Simon with flickering eyes](screenshots/13-silent-executioner.png)
+
+- **An eighth arc: THE SILENT EXECUTIONER.** A little past the Blurry Mind, climb
+  on and found-out Simon goes quiet. A new state fires with its own warning, taunts
+  (*"If they all know what I am... I stop hiding it."*), and a teal HUD tag:
+  **▓ THE SILENT EXECUTIONER ▓**. His caption changes to **PHASE 2 SIMON — silent**.
+- **He stops wasting power.** Weaker on paper but more efficient, Simon thins the
+  blurry-thought spam right out (fewer, slower thoughts) and turns to precision.
+- **The MARK and the one clean move.** "He only moves when the result is certain."
+  Every few seconds Simon **MARKS your exact spot** with a red reticle that
+  **contracts as the strike becomes certain**, holds while it locks (the lock dot
+  flashes white), then drops **one clean lightning bolt** straight down on the mark.
+  Stay on it (hesitate / *"think too much"*) and the clean move lands — **CLEAN HIT**.
+  Read it and **MOVE off the mark** and he **MISSED**. A blinking **◎ MARKED — MOVE!**
+  warning calls it out.
+- **Silent and watchful.** Simon's eyes now flicker **red, then teal, then white**;
+  new **aim** (a quiet rising lock tone) and **strike** (one sharp precision crack,
+  then silence) sounds; and a new death sting: *"I do not need to overpower the room.
+  I only break the right thing first. One clean move." — The Silent Executioner*.
+
 ## 2026-06-13 — EXPOSED: The Blurry Mind, Found Out (Lore 27)
 
 Based on Toby's June 13 lore (Lore 27): *"Simon is the only cat, all other
