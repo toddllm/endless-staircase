@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — Phase 2: The .EXE Virus (Lore 25c)
+
+The End of the Peaceful Ending. Climb past the calm Incredibox and Simon is
+locked to Phase 2 forever, the virus takes the world. Based on Toby's June 13
+lore: *"Simon is now even less in power and even feels weak, he can't attack, he
+is Phase 2 forever... Phase 2 Simon comes and then comes the .EXE virus, all gets
+corrupted... he instead made several tentacles and corrupted chaos attack
+everyone... he is Phase 2 forever because of the lock. Every second the game gets
+more and more corrupt, Error 404, Error 666, Error 303, and several more errors."*
+
+![Phase 2 — the .EXE virus floods the room, Simon's eyes flash red/white/teal, the errors multiply](screenshots/10-phase2-exe-virus.png)
+
+- A new **sixth arc** fires after the Peaceful Ending and Sound Battle: climb
+  high enough and **PHASE 2 — THE .EXE VIRUS** breaks the calm. There is no
+  Pacifist Phase 1 left inside Simon to clean the chaos, so he is **locked to
+  Phase 2 forever** and the danger returns for good.
+- **The calm Simon becomes Phase 2 Simon** — a dark, glitching, locked figure
+  whose **eyes flash bright red, white, and teal-blue**, with a datamosh ghost
+  copy jittering behind him. The caption flips from "SIMON LEADS" to
+  **"PHASE 2 SIMON — locked."**
+- **The .EXE virus spreads:** the peaceful Incredibox singers get **infected one
+  by one**, glitching red/teal with red eyes; the calm dawn **tears** into a
+  corrupted red/teal void with a jagged, flashing equalizer.
+- **The errors multiply every second** — 404, 666, 303, 502, 0xDEAD, NaN,
+  SIMON.EXE flood the background and keep growing, flashing the same
+  red/white/teal as Simon's eyes.
+- **Corrupted tentacles attack everything:** Simon "can't attack" with his levers
+  anymore, so instead the screen throws **.EXE glitch pulses** (torn datamosh
+  slices + scanlines) and **extra corruption tendrils** lash out. Damage is back
+  on; the once-safe calm surface can hurt you again.
+- New audio: a glitchy **corruption crash** when Phase 2 fires (re-muffles the
+  room and re-arms the horror drone the Peaceful Ending had calmed), plus a short
+  **digital stutter** on every glitch pulse.
+- Death screen gets a Phase 2 sting: *"There is no Phase 1 left. Simon is locked
+  to Phase 2 forever, attacking all." — .EXE*
+
 ## 2026-06-13 — Sound Battles: Simon Leads (Lore 25b)
 
 In the calm Incredibox, the last trace of everything is the Sound Battle, and

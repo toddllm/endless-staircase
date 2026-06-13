@@ -104,6 +104,27 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('Simon leads. The world answers. Simon is the fastest.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "phase2": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // Restoration + Peaceful Ending already happened
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        // populate the calm Incredibox singers first
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        // now break it: force PHASE 2 — the .EXE virus
+        if (typeof phase2!=='undefined'){ phase2.active=true; phase2.t=3.0; phase2.glow=1; phase2.done=false; phase2.errs=55; }
+        // run corrupted frames so the singers get infected + tendrils spawn
+        for (var m=0;m<80;m++){ keys['ArrowRight']=(m%30<15); update(1/60); }
+        // freeze on a leading beat so Phase 2 Simon shows his flashing eyes
+        if (typeof battle!=='undefined'){ battle.t=0.0; battle.leadFlash=1.0; battle.answerActive=true; battle.answerWave=0.4;
+          if (typeof platforms!=='undefined'){ for (var b=0;b<platforms.length;b++){ if(platforms[b].boxer){ platforms[b].boxer.answer=0.8; platforms[b].boxer.infected=true; } } } }
+        if (typeof glitch!=='undefined'){ glitch=0.95; }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('Phase 2 forever. Every second more corrupt.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
