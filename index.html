@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>The Endless Staircase — Classic RL</title>
+<style>
+  :root{
+    --bg:#05030a; --ink:#e9e0ff; --dim:#8a82a8; --err404:#3ec6ff; --err666:#ff3b5c;
+    --gold:#ffd84f; --simon:#ffd84f; --emerald:#39e08a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#05030a;color:var(--ink);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;overflow:hidden;
+    -webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;}
+  #wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(120% 80% at 50% -10%, #1a0c2e 0%, #0a0614 45%, #05030a 100%);}
+  canvas{display:block;height:100%;max-height:100vh;background:#070411;
+    box-shadow:0 0 60px rgba(120,40,200,.35), 0 0 0 1px rgba(180,120,255,.12) inset;
+    image-rendering:auto;touch-action:none;}
+  #hint{position:fixed;bottom:8px;left:0;right:0;text-align:center;color:#5a5278;
+    font-size:11px;letter-spacing:.5px;pointer-events:none;}
+  @media (max-width:560px){ #hint{font-size:10px} }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="c" width="540" height="760"></canvas></div>
+<div id="hint">◀ ▶ / A D move &nbsp;·&nbsp; ▲ / W / SPACE jump &nbsp;·&nbsp; M mute &nbsp;·&nbsp; tap left/right halves on mobile</div>
+<script>
+"use strict";
+/* =========================================================================
+   THE ENDLESS STAIRCASE  (Classic RL / Secret of Simon's Lore — Lore 24)
+   "everyone is forced by Simon to walk endlessly up the endless spiral
+    staircase ... The stairs are a monstrosity, it is living!"
+   Single file. Vanilla Canvas + WebAudio. No external libraries.
+   ========================================================================= */
+
+const cv = document.getElementById('c');
+const ctx = cv.getContext('2d');
+const W = cv.width, H = cv.height;
+
+/* ---------- responsive scale (keep portrait aspect, fit height) ---------- */
+function fit(){
+  const s = Math.min(window.innerWidth / W, window.innerHeight / H);
+  cv.style.width  = Math.floor(W * s) + 'px';
+  cv.style.height = Math.floor(H * s) + 'px';
+}
+window.addEventListener('resize', fit); fit();
+
+/* ---------- input ---------- */
+const keys = {};
+const press = {};            // edge-triggered this frame
+function setKey(code, down){
+  if(down && !keys[code]) press[code] = true;
+  keys[code] = down;
+}
+window.addEventListener('keydown', e=>{
+  const c = e.code;
+  if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Space','KeyA','KeyD','KeyW'].includes(c)) e.preventDefault();
+  if(c==='KeyM'){ AUDIO.toggle(); }
+  if(c==='Enter' || c==='Space'){ handleConfirm(); }
+  setKey(c, true);
+}, {passive:false});
+window.addEventListener('keyup', e=> setKey(e.code,false));
+
+/* touch: left half = move left, right half = move right, swipe-up / tap-top = jump */
+let touchLeft=false, touchRight=false;
+function touchHandler(e){
+  e.preventDefault();
+  touchLeft=false; touchRight=false;
+  let jump=false;
+  const r = cv.getBoundingClientRect();
+  for(const t of e.touches){
+    const x = (t.clientX - r.left)/r.width;
+    const y = (t.clientY - r.top)/r.height;
+    if(y < 0.25) jump = true;
+    else if(x < 0.5) touchLeft=true; else touchRight=true;
+  }
+  if(jump) press['Space']=true;
+  if(e.type==='touchstart'){ handleConfirm(); }
+}
+cv.addEventListener('touchstart', touchHandler, {passive:false});
+cv.addEventListener('touchmove',  touchHandler, {passive:false});
+cv.addEventListener('touchend', e=>{ e.preventDefault(); touchLeft=false; touchRight=false; }, {passive:false});
+
+function leftHeld(){ return keys['ArrowLeft']||keys['KeyA']||touchLeft; }
+function rightHeld(){ return keys['ArrowRight']||keys['KeyD']||touchRight; }
+function jumpEdge(){ return press['ArrowUp']||press['KeyW']||press['Space']; }
+
+/* =========================================================================
+   AUDIO — synthesized, no files. A tense climbing pulse + heartbeat that
+   quickens as Simon nears, plus jump/hit/coin SFX and a Phase-2 horror drone.
+   ========================================================================= */
+const AUDIO = (()=>{
+  let ac=null, master=null, musicGain=null, on=true, started=false;
+  let lp=null, drone=null, droneGain=null;
+  let step=0, nextNoteTime=0, bpm=132, timer=null, intensity=0;
+  const scale=[0,3,5,7,10,12,15];        // minor pentatonic-ish, eerie
+  const bassRoot=55;                       // A1
+  function init(){
+    if(ac) return;
+    try{
+      ac = new (window.AudioContext||window.webkitAudioContext)();
+      master = ac.createGain(); master.gain.value = 0.0; master.connect(ac.destination);
+      lp = ac.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value=18000; lp.connect(master);
+      musicGain = ac.createGain(); musicGain.gain.value=0.5; musicGain.connect(lp);
+      // horror drone (kicks in as Simon closes)
+      drone = ac.createOscillator(); drone.type='sawtooth'; drone.frequency.value=41.2;
+      droneGain = ac.createGain(); droneGain.gain.value=0.0; drone.connect(droneGain); droneGain.connect(lp);
+      drone.start();
+    }catch(e){ ac=null; }
+  }
+  function blip(freq,t,dur,type,gain,pan){
+    if(!ac) return;
+    const o=ac.createOscillator(); o.type=type||'triangle'; o.frequency.value=freq;
+    const g=ac.createGain(); g.gain.setValueAtTime(0,t);
+    g.gain.linearRampToValueAtTime(gain,t+0.01);
+    g.gain.exponentialRampToValueAtTime(0.0008,t+dur);
+    let node=g;
+    if(pan!==undefined && ac.createStereoPanner){ const p=ac.createStereoPanner(); p.pan.value=pan; g.connect(p); node=p; }
+    o.connect(g); node.connect(musicGain); o.start(t); o.stop(t+dur+0.02);
+  }
+  function scheduler(){
+    if(!ac) return;
+    while(nextNoteTime < ac.currentTime + 0.12){
+      const t=nextNoteTime;
+      const spb=60/bpm;
+      // bass on every beat
+      if(step%2===0){
+        blip(bassRoot*(step%8===0?1:1.5), t, spb*0.9, 'sawtooth', 0.10+0.05*intensity, 0);
+      }
+      // arpeggio melody quickens / rises with intensity
+      const deg = scale[(step + (step>>2)) % scale.length];
+      const oct = 1 + (intensity>0.6?1:0);
+      blip(220*Math.pow(2,(deg+12*oct)/12), t, spb*0.45, intensity>0.6?'square':'triangle', 0.045+0.05*intensity, ((step%4)-1.5)/3);
+      // tension tick high up
+      if(intensity>0.35 && step%4===2) blip(1320, t, 0.05,'square',0.02*intensity, 0.6);
+      step++; nextNoteTime += spb/2; // 8th notes
+    }
+  }
+  return {
+    ensure(){ if(!started){ init(); started=true;
+        if(ac){ if(ac.state==='suspended') ac.resume(); nextNoteTime=ac.currentTime+0.05;
+          timer=setInterval(scheduler,25);
+          master.gain.linearRampToValueAtTime(on?0.9:0.0, ac.currentTime+0.4);
+        } } },
+    toggle(){ on=!on; if(ac){ master.gain.cancelScheduledValues(ac.currentTime);
+        master.gain.linearRampToValueAtTime(on?0.9:0.0, ac.currentTime+0.15);} return on; },
+    isOn(){ return on; },
+    /* p = proximity 0..1 (0 far, 1 Simon at your heels); h=height factor */
+    setTension(p, h){
+      intensity = Math.max(0, Math.min(1, p*0.7 + h*0.5));
+      bpm = 120 + h*70 + p*40;
+      if(ac){
+        droneGain.gain.setTargetAtTime(0.02 + p*0.22, ac.currentTime, 0.3);
+        drone.frequency.setTargetAtTime(40 + p*18, ac.currentTime, 0.5);
+        lp.frequency.setTargetAtTime(18000 - p*15000, ac.currentTime, 0.3); // muffles as he nears
+      }
+    },
+    jump(){ if(!ac||!on) return; const t=ac.currentTime;
+      const o=ac.createOscillator(),g=ac.createGain(); o.type='square';
+      o.frequency.setValueAtTime(330,t); o.frequency.exponentialRampToValueAtTime(720,t+0.12);
+      g.gain.setValueAtTime(0.14,t); g.gain.exponentialRampToValueAtTime(0.001,t+0.16);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t+0.18); },
+    coin(){ if(!ac||!on) return; const t=ac.currentTime;
+      blipExt(880,t,0.07,'square',0.12); blipExt(1320,t+0.06,0.09,'square',0.12); },
+    hurt(){ if(!ac||!on) return; const t=ac.currentTime;
+      const o=ac.createOscillator(),g=ac.createGain(); o.type='sawtooth';
+      o.frequency.setValueAtTime(200,t); o.frequency.exponentialRampToValueAtTime(60,t+0.25);
+      g.gain.setValueAtTime(0.2,t); g.gain.exponentialRampToValueAtTime(0.001,t+0.3);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t+0.32); },
+    roar(){ if(!ac||!on) return; const t=ac.currentTime;
+      const o=ac.createOscillator(),g=ac.createGain(),f=ac.createBiquadFilter();
+      o.type='sawtooth'; f.type='lowpass'; f.frequency.value=600;
+      o.frequency.setValueAtTime(70,t); o.frequency.linearRampToValueAtTime(40,t+0.6);
+      g.gain.setValueAtTime(0.0,t); g.gain.linearRampToValueAtTime(0.35,t+0.08); g.gain.exponentialRampToValueAtTime(0.001,t+0.7);
+      o.connect(f); f.connect(g); g.connect(master); o.start(t); o.stop(t+0.75);
+      // dissonant overtone
+      const o2=ac.createOscillator(),g2=ac.createGain(); o2.type='square'; o2.frequency.value=300;
+      g2.gain.setValueAtTime(0.0,t); g2.gain.linearRampToValueAtTime(0.06,t+0.1); g2.gain.exponentialRampToValueAtTime(0.001,t+0.5);
+      o2.connect(g2); g2.connect(master); o2.start(t); o2.stop(t+0.55); },
+    death(){ if(!ac) return; const t=ac.currentTime;
+      const o=ac.createOscillator(),g=ac.createGain(); o.type='sawtooth';
+      o.frequency.setValueAtTime(420,t); o.frequency.exponentialRampToValueAtTime(30,t+1.1);
+      g.gain.setValueAtTime(0.25,t); g.gain.exponentialRampToValueAtTime(0.001,t+1.2);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t+1.25); }
+  };
+  function blipExt(freq,t,dur,type,gain){ if(!ac) return;
+    const o=ac.createOscillator(),g=ac.createGain(); o.type=type; o.frequency.value=freq;
+    g.gain.setValueAtTime(gain,t); g.gain.exponentialRampToValueAtTime(0.001,t+dur);
+    o.connect(g); g.connect(master); o.start(t); o.stop(t+dur+0.02); }
+})();
+
+/* =========================================================================
+   GAME
+   World uses screen-like coords (y grows downward). "Height" = how far the
+   player has climbed = (startY - player.y). Camera scrolls up (cameraY only
+   decreases). Simon is a rising tide at the bottom of the view; if the
+   player falls below the bottom edge, Simon eats them.
+   ========================================================================= */
+const GRAV = 0.58, JUMP_V = -13.4, MOVE = 1.1, MAX_VX = 6.0, FRICTION = 0.80, AIR = 0.62;
+const STEP_DY = 72;          // vertical gap between stairs
+const PLAT_W_MIN = 116, PLAT_W_MAX = 168, PLAT_H = 18;
+const MARGIN = 26;
+const PX_PER_M = 26;         // pixels -> "meters" for the score
+
+let state = 'title';         // title | play | dead
+let player, cameraY, simonY, platforms, particles, emeralds, tendrils, floaters;
+let height, best=0, emer=0, hp, maxHp=3, hitFlash, shake, time;
+let scrollSpeed, simonSpeed, nextPlatY, roarTimer, roarFlash, warnText, warnT;
+let bestKey='tes_best_v1';
+try{ best = parseInt(localStorage.getItem(bestKey)||'0',10)||0; }catch(e){}
+
+function reset(){
+  player = { x:W/2, y:0, vx:0, vy:0, w:30, h:34, onGround:false, coyote:0, face:1, anim:0, dead:false };
+  platforms = [];
+  particles = []; emeralds = []; tendrils = []; floaters = [];
+  height = 0; emer = 0; hp = maxHp; hitFlash = 0; shake = 0; time = 0;
+  scrollSpeed = 0.55; simonSpeed = 0.45; roarTimer = 7; roarFlash=0; warnText=''; warnT=0;
+  // starting ground platform under the player
+  const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
+  platforms.push(ground);
+  player.x = W/2; player.y = ground.y - player.h/2 - 1; player.vy=0;
+  cameraY = player.y - H*0.58;
+  simonY = player.y + H*1.35;     // starts well below — breathing room to orient
+  nextPlatY = ground.y - STEP_DY;
+  // pre-generate a column of platforms
+  for(let i=0;i<14;i++) genPlatform(i<4);
+}
+
+function rnd(a,b){ return a + Math.random()*(b-a); }
+function chance(p){ return Math.random()<p; }
+
+function genPlatform(safe){
+  const last = platforms[platforms.length-1];
+  const w = rnd(PLAT_W_MIN, PLAT_W_MAX);
+  // reachable horizontal offset from the last platform
+  let cx = (last? (last.x+last.w/2) : W/2) + rnd(-120,120);
+  cx = Math.max(MARGIN+w/2, Math.min(W-MARGIN-w/2, cx));
+  const hf = Math.min(1, height/3500);        // difficulty by height
+  let type='normal';
+  if(!safe){
+    const r=Math.random();
+    if(r < 0.12+0.18*hf) type='bite';          // living biting step
+    else if(r < 0.20+0.26*hf) type='crumble';  // collapses after you land
+  }
+  const p = { x:cx-w/2, y:nextPlatY, w, h:PLAT_H, type, born:time, crumble:-1, biteT: rnd(0,2), eye: Math.random()*6.28 };
+  platforms.push(p);
+  // collectibles
+  if(!safe && chance(0.28)) emeralds.push({ x:cx, y:nextPlatY-30, t:Math.random()*6.28, got:false });
+  nextPlatY -= STEP_DY * rnd(0.92, 1.12);
+}
+
+/* ---------- update ---------- */
+function update(dt){
+  time += dt;
+  if(state!=='play') return;
+
+  const hf = Math.min(1, height/3500);
+
+  /* difficulty ramp — Simon's rising tide is the pressure (per 1/60 frame) */
+  simonSpeed  = 1.15 + hf*2.4 + time*0.010;
+
+  /* Simon "is the fastest" — periodic lunges (forced-march pressure) */
+  roarTimer -= dt;
+  if(roarTimer<=0){
+    roarTimer = rnd(7,11) - hf*3;
+    roarFlash = 1.0;
+    warnText = pick(["KEEP CLIMBING.","RUN, RUN, RUN.","NO ONE CAN HIDE.","FASTER."]);
+    warnT = 1.6;
+    AUDIO.roar();
+    simonLunge = 1.0;       // temporary surge handled below
+  }
+  if(roarFlash>0) roarFlash = Math.max(0, roarFlash - dt*1.6);
+  if(warnT>0) warnT = Math.max(0, warnT - dt);
+
+  /* ---- player horizontal ---- */
+  const acc = player.onGround ? MOVE : MOVE*AIR;
+  if(leftHeld()){ player.vx -= acc; player.face=-1; }
+  if(rightHeld()){ player.vx += acc; player.face=1; }
+  if(!leftHeld() && !rightHeld() && player.onGround) player.vx *= FRICTION;
+  player.vx = Math.max(-MAX_VX, Math.min(MAX_VX, player.vx));
+  player.x += player.vx;
+  // walls
+  if(player.x < player.w/2){ player.x=player.w/2; player.vx=0; }
+  if(player.x > W-player.w/2){ player.x=W-player.w/2; player.vx=0; }
+
+  /* ---- jump ---- */
+  if(player.coyote>0) player.coyote -= dt;
+  if(jumpEdge() && (player.onGround || player.coyote>0)){
+    player.vy = JUMP_V; player.onGround=false; player.coyote=0; AUDIO.jump();
+    for(let i=0;i<6;i++) particles.push(spark(player.x, player.y+player.h/2, '#b89cff'));
+  }
+
+  /* ---- gravity + vertical ---- */
+  player.vy += GRAV; if(player.vy>17) player.vy=17;
+  const prevBottom = player.y + player.h/2;
+  player.y += player.vy;
+
+  /* ---- platform collision (one-way, only when falling) ---- */
+  player.onGround=false;
+  if(player.vy >= 0){
+    const bottom = player.y + player.h/2;
+    for(const p of platforms){
+      if(p.gone) continue;
+      if(player.x + player.w*0.35 < p.x || player.x - player.w*0.35 > p.x+p.w) continue;
+      if(prevBottom <= p.y+6 && bottom >= p.y && bottom <= p.y + p.h + 14){
+        player.y = p.y - player.h/2; player.vy=0; player.onGround=true; player.coyote=0.12;
+        // living-step reactions
+        if(p.type==='crumble' && p.crumble<0){ p.crumble = 0.45; }
+        if(p.type==='bite'){ standOn = p; }
+        break;
+      }
+    }
+  }
+
+  /* biting steps: hurt if you linger while their jaw is open */
+  for(const p of platforms){
+    if(p.type==='bite'){ p.biteT += dt; }
+    if(p.type==='crumble' && p.crumble>=0){
+      p.crumble -= dt;
+      if(p.crumble<=0 && !p.gone){ p.gone=true;
+        for(let i=0;i<8;i++) particles.push(spark(p.x+p.w/2, p.y, '#6b5a8a')); }
+    }
+  }
+  // bite damage check
+  if(player.onGround && standOn && standOn.type==='bite'){
+    const jawOpen = (Math.sin(standOn.biteT*4)>0.4);
+    standOn.lingered = (standOn.lingered||0) + dt;
+    if(jawOpen && standOn.lingered>0.35){ damage(); standOn.lingered=-0.6; shake=Math.max(shake,8);
+      for(let i=0;i<10;i++) particles.push(spark(player.x, player.y+12, '#ff3b5c')); }
+  }
+  standOn=null;
+
+  /* tendrils: living staircase swipes that emerge from the central column */
+  if(chance(0.012 + hf*0.02) && tendrils.length<3){
+    const fromLeft = chance(0.5);
+    tendrils.push({ side:fromLeft?-1:1, y: cameraY + rnd(80, H-160), t:0, len:0, life:2.4, hit:false });
+  }
+  for(const tn of tendrils){
+    tn.t += dt; tn.life -= dt;
+    tn.len = Math.sin(Math.min(Math.PI, tn.t*2.0)) * (W*0.62);
+    // collision with player
+    const reach = tn.side<0 ? tn.len : W - tn.len;
+    const tipX = tn.side<0 ? tn.len : W - tn.len;
+    if(!tn.hit && Math.abs((player.y) - tn.y) < 26){
+      const inSwipe = tn.side<0 ? (player.x < tn.len) : (player.x > W-tn.len);
+      if(inSwipe){ tn.hit=true; damage(); player.vy=JUMP_V*0.6; shake=Math.max(shake,10);
+        for(let i=0;i<12;i++) particles.push(spark(player.x, player.y, '#ff3b5c')); }
+    }
+  }
+  tendrils = tendrils.filter(t=>t.life>0);
+
+  /* emeralds */
+  for(const e of emeralds){ if(e.got) continue; e.t+=dt;
+    if(Math.abs(e.x-player.x)<24 && Math.abs(e.y-player.y)<26){ e.got=true; emer++; AUDIO.coin();
+      floaters.push({x:e.x,y:e.y,t:0,txt:'+1',col:'#39e08a'});
+      for(let i=0;i<10;i++) particles.push(spark(e.x,e.y,'#39e08a')); } }
+
+  /* ---- camera follows the climber smoothly ---- */
+  const followCam = player.y - H*0.58;
+  cameraY += (followCam - cameraY) * 0.16;
+
+  /* ---- Simon's tide rises toward the player (the chase) ---- */
+  let sSpd = simonSpeed * (time < 1.6 ? 0.18 : 1);   // brief grace at the start
+  if(typeof simonLunge!=='undefined' && simonLunge>0){ sSpd += simonLunge*3; simonLunge=Math.max(0,simonLunge-dt*1.4); }
+  simonY -= sSpd;
+  // he is the fastest — he never trails further than ~1.5 screens below
+  const leadCap = player.y + H*1.5;
+  if(simonY > leadCap) simonY = leadCap;
+
+  /* ---- height / score ---- */
+  const climbed = Math.max(0, (platforms[0].y - player.y));
+  height = Math.max(height, climbed);
+
+  /* ---- generate / cull platforms ---- */
+  while(nextPlatY > cameraY - 120) genPlatform(false);
+  platforms = platforms.filter(p => p.y < cameraY + H + 260 || p===platforms[0]);
+  emeralds = emeralds.filter(e => e.y < cameraY + H + 200 && !e.got);
+
+  /* ---- death checks ---- */
+  if(player.y > simonY - 10) die('SIMON CAUGHT YOU');   // the tide reaches you
+  if(hp<=0) die('THE STAIRCASE ATE YOU');
+
+  /* ---- fx ---- */
+  for(const pt of particles){ pt.x+=pt.vx; pt.y+=pt.vy; pt.vy+=0.25; pt.life-=dt; }
+  particles = particles.filter(p=>p.life>0);
+  for(const f of floaters){ f.y-=0.6; f.t+=dt; }
+  floaters = floaters.filter(f=>f.t<1);
+  if(shake>0) shake=Math.max(0, shake-dt*30);
+  if(hitFlash>0) hitFlash=Math.max(0, hitFlash-dt*2);
+  player.anim += dt;
+
+  /* ---- audio tension from Simon proximity ---- */
+  const gap = (simonY - (player.y)) ;             // smaller = closer
+  const prox = Math.max(0, Math.min(1, 1 - gap/(H*0.95)));
+  AUDIO.setTension(prox, hf);
+}
+let standOn=null, simonLunge=0;
+
+function damage(){
+  if(hitFlash>0.5) return;   // brief i-frames
+  hp--; hitFlash=1; shake=Math.max(shake,10); AUDIO.hurt();
+}
+function die(reason){
+  if(state!=='play') return;
+  state='dead'; player.dead=true; deathReason=reason; AUDIO.death();
+  shake=18;
+  const m = Math.floor(height/PX_PER_M);
+  if(m>best){ best=m; try{localStorage.setItem(bestKey,String(best));}catch(e){} newBest=true; } else newBest=false;
+  for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, chance(0.5)?'#ff3b5c':'#3ec6ff'));
+}
+let deathReason='', newBest=false;
+
+function spark(x,y,col){ return { x,y, vx:rnd(-3,3), vy:rnd(-5,1), life:rnd(0.5,1.1), col }; }
+function pick(a){ return a[(Math.random()*a.length)|0]; }
+
+/* =========================================================================
+   RENDER
+   ========================================================================= */
+function draw(){
+  ctx.save();
+  // screen shake
+  const sx = shake? rnd(-shake,shake):0, sy = shake? rnd(-shake,shake):0;
+  ctx.translate(sx,sy);
+
+  drawBackdrop();
+
+  if(state==='title'){ drawWorldStatic(); drawTitle(); ctx.restore(); return; }
+
+  // world (translate by camera)
+  ctx.save();
+  ctx.translate(0, -cameraY);
+  drawTendrils();
+  drawPlatforms();
+  drawEmeralds();
+  drawSimonTide();
+  drawPlayer();
+  drawParticles();
+  drawFloaters();
+  ctx.restore();
+
+  drawHUD();
+
+  // proximity red vignette
+  const gap = (simonY - player.y);
+  const prox = Math.max(0, Math.min(1, 1 - gap/(H*0.95)));
+  if(prox>0.02){
+    const g = ctx.createRadialGradient(W/2,H/2, H*0.25, W/2,H/2, H*0.75);
+    g.addColorStop(0,'rgba(0,0,0,0)');
+    g.addColorStop(1,`rgba(${120+100*prox|0},0,30,${0.25+0.5*prox})`);
+    ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  }
+  if(roarFlash>0){ ctx.fillStyle=`rgba(255,40,70,${roarFlash*0.22})`; ctx.fillRect(0,0,W,H); }
+  if(hitFlash>0){ ctx.fillStyle=`rgba(255,40,70,${hitFlash*0.30})`; ctx.fillRect(0,0,W,H); }
+  if(warnT>0 && warnText){
+    ctx.save(); ctx.globalAlpha=Math.min(1,warnT*1.5);
+    ctx.font='800 30px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillStyle='#ff3b5c'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=18;
+    ctx.fillText(warnText, W/2, H*0.30); ctx.restore();
+  }
+
+  if(state==='dead') drawDeath();
+
+  ctx.restore();
+}
+
+let bgT=0;
+function drawBackdrop(){
+  bgT += 0.016;
+  // deep tower void
+  const g = ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#0c0820'); g.addColorStop(0.5,'#0a0518'); g.addColorStop(1,'#06030f');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  // central pillar glow (the spiral column)
+  const px=W/2;
+  const pg=ctx.createLinearGradient(px-90,0,px+90,0);
+  pg.addColorStop(0,'rgba(20,10,40,0)'); pg.addColorStop(0.5,'rgba(60,30,110,0.30)'); pg.addColorStop(1,'rgba(20,10,40,0)');
+  ctx.fillStyle=pg; ctx.fillRect(px-90,0,180,H);
+  // drifting error strings (404 blue / 666 red) — "the stairs are living"
+  ctx.font='12px ui-monospace,monospace'; ctx.textAlign='left';
+  for(let i=0;i<26;i++){
+    const seed=i*97.13;
+    const x=((seed*1.7 + bgT*8*(i%3+1)) % (W+40))-20;
+    const y=((seed*2.3 - (state==='play'?cameraY*0.15:bgT*14*(i%4+1))) % (H+40)+H+40)%(H+40)-20;
+    ctx.fillStyle = i%2? 'rgba(62,198,255,0.10)':'rgba(255,59,92,0.09)';
+    ctx.fillText(i%2?'404':'666', x, y);
+  }
+}
+
+function drawWorldStatic(){
+  // a hint of staircase behind the title
+  ctx.save(); ctx.globalAlpha=0.5;
+  for(let i=0;i<8;i++){
+    const w=120, x= (i%2? W*0.22 : W*0.55), y=H-60 - i*86;
+    roundRect(x,y,w,16,6); ctx.fillStyle='#241a3c'; ctx.fill();
+    ctx.fillStyle='#3a2a5e'; ctx.fillRect(x,y,w,4);
+  }
+  ctx.restore();
+}
+
+function drawPlatforms(){
+  for(const p of platforms){
+    if(p.gone) continue;
+    const wob = Math.sin(time*1.6 + (p.eye||0))*1.5;   // the whole thing breathes
+    const x=p.x, y=p.y+wob, w=p.w, h=p.h;
+    // base slab
+    roundRect(x,y,w,h,6);
+    let base = p.type==='safe' ? '#2e2350' : '#241a3c';
+    if(p.type==='crumble') base = p.crumble>=0 ? '#5a2230' : '#33233f';
+    if(p.type==='bite') base = '#2a1130';
+    ctx.fillStyle=base; ctx.fill();
+    // top edge highlight
+    ctx.fillStyle = p.type==='bite' ? 'rgba(255,80,110,0.5)' : 'rgba(150,110,220,0.55)';
+    ctx.fillRect(x,y,w,3);
+    // cracks for crumble
+    if(p.type==='crumble'){
+      ctx.strokeStyle='rgba(255,90,120,0.6)'; ctx.lineWidth=1.4; ctx.beginPath();
+      ctx.moveTo(x+w*0.3,y); ctx.lineTo(x+w*0.4,y+h); ctx.moveTo(x+w*0.65,y); ctx.lineTo(x+w*0.55,y+h); ctx.stroke();
+    }
+    // living biting step: teeth on the underside + an eye
+    if(p.type==='bite'){
+      const open = Math.max(0,Math.sin(p.biteT*4))*8;
+      ctx.fillStyle='#ff3b5c';
+      ctx.beginPath();
+      const teeth=Math.max(4,(w/16)|0);
+      for(let i=0;i<teeth;i++){ const tx=x+ (i+0.5)*(w/teeth);
+        ctx.moveTo(tx-5,y+h); ctx.lineTo(tx,y+h+6+open); ctx.lineTo(tx+5,y+h); }
+      ctx.fill();
+      // eye
+      ctx.fillStyle='#ffd84f'; ctx.beginPath(); ctx.arc(x+w/2,y-7,5,0,6.28); ctx.fill();
+      ctx.fillStyle='#1a0008'; ctx.beginPath(); ctx.arc(x+w/2+Math.sin(time*2)*1.5,y-7,2.4,0,6.28); ctx.fill();
+    }
+  }
+}
+
+function drawEmeralds(){
+  for(const e of emeralds){ if(e.got) continue;
+    const yy = e.y + Math.sin(e.t*2)*4;
+    ctx.save(); ctx.translate(e.x,yy); ctx.rotate(Math.sin(e.t)*0.3);
+    ctx.shadowColor='#39e08a'; ctx.shadowBlur=12;
+    ctx.fillStyle='#39e08a'; ctx.beginPath();
+    ctx.moveTo(0,-10); ctx.lineTo(8,-1); ctx.lineTo(0,11); ctx.lineTo(-8,-1); ctx.closePath(); ctx.fill();
+    ctx.fillStyle='rgba(255,255,255,0.7)'; ctx.beginPath();
+    ctx.moveTo(0,-10); ctx.lineTo(4,-3); ctx.lineTo(0,0); ctx.lineTo(-4,-3); ctx.closePath(); ctx.fill();
+    ctx.restore();
+  }
+}
+
+function drawTendrils(){
+  for(const tn of tendrils){
+    const y=tn.y;
+    const segs=14;
+    ctx.save();
+    ctx.strokeStyle='rgba(255,59,92,0.85)'; ctx.lineCap='round';
+    ctx.beginPath();
+    for(let i=0;i<=segs;i++){
+      const f=i/segs; const xx = tn.side<0 ? f*tn.len : W - f*tn.len;
+      const yy = y + Math.sin(f*8 + tn.t*6)*8*(1-f);
+      ctx.lineWidth = (1-f)*14 + 2;
+      if(i===0) ctx.moveTo(xx,yy); else ctx.lineTo(xx,yy);
+    }
+    ctx.stroke();
+    // glowing tip
+    const tx = tn.side<0 ? tn.len : W-tn.len;
+    ctx.fillStyle='#ffd84f'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=14;
+    ctx.beginPath(); ctx.arc(tx,y,5,0,6.28); ctx.fill();
+    ctx.restore();
+  }
+}
+
+function drawSimonTide(){
+  const top = simonY;
+  if(top > cameraY + H + 200) return;
+  const h = (cameraY + H + 260) - top;
+  // body of the tide
+  const g = ctx.createLinearGradient(0, top, 0, top+h);
+  g.addColorStop(0,'rgba(255,59,92,0.0)');
+  g.addColorStop(0.18,'rgba(120,10,30,0.85)');
+  g.addColorStop(1,'rgba(20,0,6,1)');
+  ctx.fillStyle=g;
+  // wavy top edge
+  ctx.beginPath(); ctx.moveTo(0, top+20);
+  for(let x=0;x<=W;x+=20){ ctx.lineTo(x, top + Math.sin(x*0.05 + time*4)*8 + 8); }
+  ctx.lineTo(W, top+h); ctx.lineTo(0, top+h); ctx.closePath(); ctx.fill();
+  // reaching grasp-tendrils
+  ctx.strokeStyle='rgba(255,59,92,0.5)'; ctx.lineWidth=3;
+  for(let i=0;i<6;i++){ const x=(i+0.5)*W/6 + Math.sin(time*2+i)*16;
+    ctx.beginPath(); ctx.moveTo(x, top+14);
+    ctx.quadraticCurveTo(x+Math.sin(time*3+i)*20, top-26, x+Math.sin(time+i)*8, top-50-Math.abs(Math.sin(time*2+i))*20);
+    ctx.stroke(); }
+  // Simon's eyes + grin glaring up out of the tide
+  const ex=W/2, ey=top+34;
+  ctx.fillStyle='#ffd84f'; ctx.shadowColor='#ff0033'; ctx.shadowBlur=24;
+  ctx.beginPath(); ctx.arc(ex-34,ey,11,0,6.28); ctx.arc(ex+34,ey,11,0,6.28); ctx.fill();
+  ctx.shadowBlur=0; ctx.fillStyle='#ff0022';
+  ctx.beginPath(); ctx.arc(ex-34,ey,5,0,6.28); ctx.arc(ex+34,ey,5,0,6.28); ctx.fill();
+  // jagged grin
+  ctx.fillStyle='#fff'; ctx.beginPath();
+  const gy=ey+26; ctx.moveTo(ex-50,gy);
+  for(let i=0;i<10;i++){ const gx=ex-50+i*11; ctx.lineTo(gx+5, gy+ (i%2?12:0)); ctx.lineTo(gx+11, gy); }
+  ctx.lineTo(ex+50,gy+14); ctx.lineTo(ex-50,gy+14); ctx.closePath(); ctx.fill();
+}
+
+function drawPlayer(){
+  const p=player; const x=p.x, y=p.y;
+  const sq = p.onGround ? 1 + Math.sin(p.anim*10)* (Math.abs(p.vx)>0.5?0.05:0.0) : 1;
+  const bw=p.w*(2-sq), bh=p.h*sq;
+  ctx.save(); ctx.translate(x,y);
+  // shadow
+  ctx.fillStyle='rgba(0,0,0,0.3)'; ctx.beginPath(); ctx.ellipse(0,p.h/2+2,p.w*0.4,4,0,0,6.28); ctx.fill();
+  // body (Jet — the player; blue, "the most powerful player")
+  ctx.fillStyle = p.dead? '#5a6072' : '#46b4ff';
+  roundRectC(0,0,bw,bh,9); ctx.fill();
+  ctx.fillStyle='rgba(255,255,255,0.18)'; roundRectC(-bw*0.18,-bh*0.18,bw*0.5,bh*0.4,6); ctx.fill();
+  // eyes
+  const look=p.face*2;
+  ctx.fillStyle='#f0fdff'; ctx.beginPath(); ctx.arc(-6,-2,5,0,6.28); ctx.arc(7,-2,5,0,6.28); ctx.fill();
+  ctx.fillStyle='#0b1a2a'; ctx.beginPath(); ctx.arc(-6+look,-2,2.4,0,6.28); ctx.arc(7+look,-2,2.4,0,6.28); ctx.fill();
+  // little crown
+  ctx.fillStyle='#1f75ff'; ctx.beginPath();
+  ctx.moveTo(-10,-bh/2); ctx.lineTo(-6,-bh/2-7); ctx.lineTo(-2,-bh/2); ctx.lineTo(2,-bh/2-7); ctx.lineTo(6,-bh/2); ctx.lineTo(10,-bh/2-7); ctx.lineTo(10,-bh/2+2); ctx.lineTo(-10,-bh/2+2); ctx.closePath(); ctx.fill();
+  ctx.restore();
+}
+
+function drawParticles(){
+  for(const pt of particles){ ctx.globalAlpha=Math.max(0,pt.life);
+    ctx.fillStyle=pt.col; ctx.fillRect(pt.x-2,pt.y-2,4,4); }
+  ctx.globalAlpha=1;
+}
+function drawFloaters(){
+  ctx.textAlign='center'; ctx.font='700 16px ui-monospace,monospace';
+  for(const f of floaters){ ctx.globalAlpha=Math.max(0,1-f.t); ctx.fillStyle=f.col; ctx.fillText(f.txt,f.x,f.y); }
+  ctx.globalAlpha=1;
+}
+
+/* ---------- HUD ---------- */
+function drawHUD(){
+  const m = Math.floor(height/PX_PER_M);
+  // top bar
+  ctx.fillStyle='rgba(8,4,18,0.65)'; ctx.fillRect(0,0,W,46);
+  ctx.fillStyle='#e9e0ff'; ctx.textAlign='left'; ctx.font='800 24px ui-monospace,monospace';
+  ctx.fillText(m+' m', 14, 31);
+  ctx.fillStyle='#8a82a8'; ctx.font='11px ui-monospace,monospace';
+  ctx.fillText('BEST '+best, 14, 42);
+  // emeralds
+  ctx.textAlign='right'; ctx.fillStyle='#39e08a'; ctx.font='700 18px ui-monospace,monospace';
+  ctx.fillText('◆ '+emer, W-14, 24);
+  // hearts
+  for(let i=0;i<maxHp;i++){ const hx=W-20-i*24, hy=38;
+    ctx.fillStyle = i<hp ? '#ff3b5c':'rgba(255,59,92,0.22)';
+    heart(hx,hy,7); }
+  // Simon proximity bar
+  const gap=(simonY-player.y); const prox=Math.max(0,Math.min(1,1-gap/(H*0.95)));
+  ctx.fillStyle='rgba(255,255,255,0.08)'; ctx.fillRect(W/2-90,40,180,5);
+  ctx.fillStyle = prox>0.7?'#ff0033':(prox>0.4?'#ff7b00':'#ffd84f');
+  ctx.fillRect(W/2-90,40,180*prox,5);
+  ctx.textAlign='center'; ctx.fillStyle='#8a82a8'; ctx.font='9px ui-monospace,monospace';
+  ctx.fillText('SIMON', W/2, 38);
+  // mute indicator
+  ctx.textAlign='right'; ctx.fillStyle='#5a5278'; ctx.font='10px ui-monospace,monospace';
+  ctx.fillText(AUDIO.isOn()?'♪ on (M)':'♪ off (M)', W-14, 56);
+}
+
+/* ---------- title ---------- */
+function drawTitle(){
+  ctx.textAlign='center';
+  // title
+  ctx.save();
+  ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=24;
+  ctx.fillStyle='#ffd84f'; ctx.font='800 40px ui-monospace,monospace';
+  ctx.fillText('THE ENDLESS', W/2, 150);
+  ctx.fillText('STAIRCASE', W/2, 196);
+  ctx.restore();
+  ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
+  ctx.fillText('CLASSIC RL · Lore 24 · the final, hardest level', W/2, 226);
+
+  // lore blurb
+  ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
+  const lines=[
+    'Simon forces everyone up the endless spiral.',
+    'The stairs are a monstrosity. They are LIVING.',
+    '',
+    'Simon rises behind you — and he is the fastest',
+    'thing in all of Classics. He never stops.',
+    '',
+    'Climb. Dodge the biting steps and tendrils.',
+    'Grab emeralds. There is no top. Only how high.'
+  ];
+  lines.forEach((l,i)=> ctx.fillText(l, W/2, 270 + i*22));
+
+  // controls
+  ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
+  ctx.fillText('◀ ▶ move    ▲ / SPACE jump    M mute', W/2, 470);
+  if(best>0){ ctx.fillStyle='#39e08a'; ctx.fillText('BEST CLIMB: '+best+' m', W/2, 500); }
+
+  // prompt
+  const blink = (Math.sin(time*4)>0)?1:0.3;
+  ctx.globalAlpha=blink; ctx.fillStyle='#ffd84f'; ctx.font='800 20px ui-monospace,monospace';
+  ctx.fillText('PRESS SPACE / TAP TO CLIMB', W/2, 560);
+  ctx.globalAlpha=1;
+
+  // a tiny Simon grin at the bottom
+  ctx.fillStyle='#ffd84f'; ctx.beginPath(); ctx.arc(W/2-30,690,9,0,6.28); ctx.arc(W/2+30,690,9,0,6.28); ctx.fill();
+  ctx.fillStyle='#ff0022'; ctx.beginPath(); ctx.arc(W/2-30,690,4,0,6.28); ctx.arc(W/2+30,690,4,0,6.28); ctx.fill();
+}
+
+/* ---------- death ---------- */
+function drawDeath(){
+  ctx.fillStyle='rgba(6,2,12,0.78)'; ctx.fillRect(0,0,W,H);
+  ctx.textAlign='center';
+  ctx.fillStyle='#ff3b5c'; ctx.font='800 30px ui-monospace,monospace';
+  ctx.shadowColor='#ff0033'; ctx.shadowBlur=16;
+  ctx.fillText(deathReason, W/2, H*0.34);
+  ctx.shadowBlur=0;
+  const m=Math.floor(height/PX_PER_M);
+  ctx.fillStyle='#e9e0ff'; ctx.font='800 46px ui-monospace,monospace';
+  ctx.fillText(m+' m', W/2, H*0.46);
+  ctx.fillStyle='#39e08a'; ctx.font='700 18px ui-monospace,monospace';
+  ctx.fillText('◆ '+emer+' emeralds', W/2, H*0.52);
+  if(newBest){ ctx.fillStyle='#ffd84f'; ctx.font='800 18px ui-monospace,monospace';
+    ctx.fillText('★ NEW BEST CLIMB ★', W/2, H*0.57); }
+  else { ctx.fillStyle='#8a82a8'; ctx.font='13px ui-monospace,monospace';
+    ctx.fillText('best '+best+' m', W/2, H*0.57); }
+  // lore sting
+  ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
+  ctx.fillText('"No one outruns Simon. No one reaches the top.', W/2, H*0.64);
+  ctx.fillText(' The staircase only goes up — forever."', W/2, H*0.67);
+  const blink=(Math.sin(time*4)>0)?1:0.35;
+  ctx.globalAlpha=blink; ctx.fillStyle='#ffd84f'; ctx.font='800 20px ui-monospace,monospace';
+  ctx.fillText('PRESS SPACE / TAP TO TRY AGAIN', W/2, H*0.78);
+  ctx.globalAlpha=1;
+}
+
+/* ---------- helpers ---------- */
+function roundRect(x,y,w,h,r){ ctx.beginPath();
+  ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+function roundRectC(cx,cy,w,h,r){ roundRect(cx-w/2,cy-h/2,w,h,r); }
+function heart(x,y,s){ ctx.beginPath();
+  ctx.moveTo(x,y+s*0.6);
+  ctx.bezierCurveTo(x,y, x-s,y, x-s,y-s*0.5);
+  ctx.bezierCurveTo(x-s,y-s*1.2, x,y-s*1.1, x,y-s*0.4);
+  ctx.bezierCurveTo(x,y-s*1.1, x+s,y-s*1.2, x+s,y-s*0.5);
+  ctx.bezierCurveTo(x+s,y, x,y, x,y+s*0.6); ctx.fill(); }
+
+/* ---------- confirm (start / restart) ---------- */
+function handleConfirm(){
+  AUDIO.ensure();
+  if(state==='title'){ reset(); state='play'; }
+  else if(state==='dead'){ reset(); state='play'; }
+}
+
+/* =========================================================================
+   MAIN LOOP — fixed timestep for stable physics
+   ========================================================================= */
+let last=performance.now(), acc=0; const STEP=1/60;
+function frame(now){
+  let dt=(now-last)/1000; last=now; if(dt>0.1) dt=0.1; acc+=dt;
+  while(acc>=STEP){ update(STEP); clearPress(); acc-=STEP; }
+  draw();
+  requestAnimationFrame(frame);
+}
+function clearPress(){ for(const k in press) delete press[k]; }
+reset(); state='title';
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
