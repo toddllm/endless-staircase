@@ -154,6 +154,38 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('Pyrakontacke + Plorotacke = lightning. RUN = FUEL.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "exposed": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // Restoration + Peaceful Ending happened, Phase 2 locked, now FOUND OUT
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        // stand still (look closely) so the bandages glow and the mind can clear-read
+        for (var m=0;m<90;m++){ update(1/60); }
+        // guarantee blurry thoughts on screen, one overlapping the player
+        if (typeof thoughts!=='undefined'){
+          thoughts.length=0;
+          thoughts.push({x:player.x+8, y:player.y-6, vx:0, vy:0, r:36, t:1.0, wob:0.8, word:'who?'});
+          thoughts.push({x:player.x-120, y:player.y-90, vx:0, vy:0, r:32, t:2.0, wob:0.8, word:'forget'});
+          thoughts.push({x:player.x+130, y:player.y+70, vx:0, vy:0, r:30, t:0.5, wob:0.8, word:'meow'});
+          thoughts.push({x:90, y:player.y-160, vx:0, vy:0, r:34, t:1.5, wob:0.8, word:'Gray?'});
+        }
+        // MIND meter high so the fog + seal flash show
+        if (typeof mind!=='undefined'){ mind=0.82; }
+        if (typeof mindSeal!=='undefined'){ mindSeal=0.6; }
+        if (typeof player!=='undefined'){ player.vx=0; }
+        // freeze on a leading beat so found-out Simon shows his bandages
+        if (typeof battle!=='undefined'){ battle.t=0.0; battle.leadFlash=1.0; battle.answerActive=true; battle.answerWave=0.4;
+          if (typeof platforms!=='undefined'){ for (var b=0;b<platforms.length;b++){ if(platforms[b].boxer){ platforms[b].boxer.answer=0.8; platforms[b].boxer.infected=true; } } } }
+        if (typeof glitch!=='undefined'){ glitch=0.5; }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('Look closely. The bandages warn you. meow 😿'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

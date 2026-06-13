@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — EXPOSED: The Blurry Mind, Found Out (Lore 27)
+
+Based on Toby's June 13 lore (Lore 27): *"Simon is the only cat, all other
+characters are dog people... Simon gets alarmed and offended... his physical
+strength dropped even more from a 9 to a 7... He has the power to make memories
+blurry and can also make new blurry thoughts, and he seals each with lightning,
+victums explode from too much stuff in the mind/brain... Gray couldn't escape
+because Gray didn't look close enough at the banages to tell him that Simon is
+Phase 2... Simon doesn't even think about attacking now, since everyone finds
+him out."*
+
+![Lore 27 — the EXPOSED state: violet blurry-thought blobs drift in and fog the screen, a MIND OVERLOAD bar fills, found-out Simon shows his bandages, sealed with lightning](screenshots/12-exposed-blurry-mind.png)
+
+- **A seventh arc: EXPOSED — THE BLURRY MIND.** A little after Phase 2 locks
+  (the .EXE virus), climb on and Simon is **found out**. A new state fires with
+  its own warning, taunts (*"Everyone finds me out. meow 😿"*), and a violet HUD
+  tag: **▓ EXPOSED — THE BLURRY MIND ▓**.
+- **Blurry thoughts.** Simon stops relying on direct attack and **plants blurry
+  thoughts** — soft, smeared violet blobs carrying fogged words (*who? · forget ·
+  meow · Gray? · 404*) that drift in and slowly home on you. As your memory fogs,
+  a **violet haze** creeps over the whole screen.
+- **The MIND meter + the lightning seal.** A new **MIND** bar fills while a blurry
+  thought overlaps you (*"too much stuff in the mind/brain"*). Let it **overload**
+  and Simon **seals it with lightning** — a white seal-flash, an explosion of your
+  over-full mind, and a hit. The counter is the lore's own rule: **look closely
+  (stand still)** and your mind clears.
+- **The bandages are a warning sign.** Found-out Simon now wears **bandages** you
+  can see, and they **glow brighter when you stand still to look closely** (with a
+  tiny **P2** warning glyph) — the warning Gray missed. His caption changes to
+  **PHASE 2 SIMON — found out**.
+- **Found out, he stops chasing.** Because everyone knows him now, Simon's direct
+  **tendril swipes mostly stop** and he turns watchful and defensive — *scarier in
+  a quieter way*. New blurry-mind death sting and a new `blur` sound (a smeared,
+  detuned wobble before the seal).
+- Everything is additive and gated behind Phase 2 → Exposed, so the climb, the
+  Peaceful Ending, the Sound Battle, and the .EXE virus all play exactly as before
+  until Simon is found out.
+
 ## 2026-06-13 — The Spreading of Simon: Cells, Lightning, and RUN = FUEL (Lore 26)
 
 Based on Toby's June 13 lore (Lore 26): *"Simon forces the game to create small

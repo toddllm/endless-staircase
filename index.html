@@ -235,7 +235,17 @@ const AUDIO = (()=>{
         const n=ac.createOscillator(),ng=ac.createGain(); n.type='square';
         n.frequency.value=2200 - i*300 + (i%2?260:0);
         ng.gain.setValueAtTime(0.05,st); ng.gain.exponentialRampToValueAtTime(0.001,st+0.04);
-        n.connect(ng); ng.connect(master); n.start(st); n.stop(st+0.05); } }
+        n.connect(ng); ng.connect(master); n.start(st); n.stop(st+0.05); } },
+    // Lore 27 — the blurry mind: a smeared, detuned wobble that warps and fades,
+    // like a memory going fuzzy before the lightning seal.
+    blur(){ if(!ac||!on) return; const t=ac.currentTime;
+      for(let i=0;i<3;i++){ const o=ac.createOscillator(),g=ac.createGain();
+        o.type='sine'; const f=320 - i*40;
+        o.frequency.setValueAtTime(f, t); o.frequency.linearRampToValueAtTime(f*0.6, t+0.7);
+        o.detune.setValueAtTime((i-1)*22, t);
+        g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(0.06,t+0.1);
+        g.gain.exponentialRampToValueAtTime(0.001,t+0.8);
+        o.connect(g); g.connect(master); o.start(t); o.stop(t+0.85); } }
   };
   function blipExt(freq,t,dur,type,gain){ if(!ac) return;
     const o=ac.createOscillator(),g=ac.createGain(); o.type=type; o.frequency.value=freq;
@@ -298,6 +308,15 @@ let phase2, phase2H, glitch;
 // The rule of Phase 2: those who RUN become fuel; those who HIDE (stay still)
 // stay safe. fuel = how much running has charged the corruption against you.
 let cells, bolts, fuel, fuelHint, safeGlow;
+// Lore 27 — "The Spreading of Simon, Phase 2 Found Out": Simon is the only cat
+// among dog people (Wenda and Gray are dogs); he is alarmed, offended, and
+// EXPOSED. His body weakens (strength 9->7) but his blurry-mind power grows: he
+// plants blurry thoughts, fogs memory, overloads the brain, and SEALS each with
+// lightning, so victims explode from too much in the mind. His bandages are a
+// warning sign that only matters if you look closely. Once found out he stops
+// chasing and turns watchful, scary in a quieter way. The reading move is to
+// look closely (stand still): stillness keeps you safe AND clears the mind.
+let thoughts, mind, mindSeal, exposed, exposedH;
 const LEVERS = [
   { type:'fall',      name:'THE STAIRCASE FALLS', warn:1.4, act:2.4 },
   { type:'rearrange', name:'THE STEPS REARRANGE', warn:1.2, act:1.8 },
@@ -334,6 +353,8 @@ function reset(){
   phase2 = { active:false, t:0, glow:0, done:false, errs:0 }; phase2H = 6200;
   glitch = 0; corruptTimer = 0;
   cells = []; bolts = []; fuel = 0; fuelHint = 0; safeGlow = 0;
+  thoughts = []; mind = 0; mindSeal = 0;
+  exposed = { active:false, t:0, glow:0, done:false }; exposedH = phase2H + 700;
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -351,6 +372,8 @@ function chance(p){ return Math.random()<p; }
 function peaceful(){ return !!(peace && (peace.active || peace.done)); }
 // once Phase 2 fires, the .EXE virus breaks the calm: danger returns for good
 function corrupted(){ return !!(phase2 && (phase2.active || phase2.done)); }
+// Lore 27 — once Phase 2 Simon is found out, the EXPOSED / blurry-mind state begins
+function isExposed(){ return !!(exposed && (exposed.active || exposed.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -592,6 +615,24 @@ function update(dt){
   if(phase2.glow < (corrupted() ? 1 : 0))
     phase2.glow = Math.min(1, phase2.glow + dt*0.6);
   if(glitch>0) glitch = Math.max(0, glitch - dt*0.8);
+  /* ---- Lore 27 — EXPOSED: Phase 2 Simon is found out and turns to the blurry
+         mind. Fires a little after the .EXE virus locks, once you climb on. ---- */
+  if(phase2.done && !exposed.active && !exposed.done && height > exposedH){
+    exposed.active = true; exposed.t = 0;
+    shake = Math.max(shake, 10); glitch = Math.max(glitch, 0.8); mindSeal = 0.6;
+    warnText = 'EXPOSED — THE BLURRY MIND'; warnT = 2.8;
+    showTaunt('Everyone finds me out. meow 😿');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'FOUND OUT', col:'#b98cff' });
+    AUDIO.blur();
+  }
+  if(exposed.active){
+    exposed.t += dt;
+    if(exposed.t>2.3 && exposed.t<2.35) showTaunt('Look closely. The bandages warn you.');
+    if(exposed.t>4.6 && exposed.t<4.65) showTaunt('I make your memories blurry. Then lightning.');
+    if(exposed.t > 6){ exposed.active = false; exposed.done = true; }
+  }
+  if(exposed.glow < (isExposed() ? 1 : 0))
+    exposed.glow = Math.min(1, exposed.glow + dt*0.5);
   if(corrupted()) updateCorruption(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
@@ -832,7 +873,9 @@ function updateCorruption(dt){
     corruptTimer = rnd(1.1, 2.1);
     glitch = Math.max(glitch, 0.85); shake = Math.max(shake, 6);
     AUDIO.glitch();
-    if(tendrils.length<4){
+    // Lore 27 — once found out, Simon "doesn't even think about attacking now":
+    // his direct tendril swipes mostly stop. He turns to the blurry mind instead.
+    if(tendrils.length<4 && (!isExposed() || chance(0.22))){
       const fromLeft = chance(0.5);
       tendrils.push({ side:fromLeft?-1:1, y: cameraY + rnd(80, H-160), t:0, len:0, life:2.2, hit:false });
     }
@@ -896,6 +939,55 @@ function updateCorruption(dt){
     safeGlow = Math.min(1, safeGlow + dt*1.4);
   }
   if(fuelHint>0) fuelHint = Math.max(0, fuelHint - dt);
+
+  /* ---- Lore 27 — the BLURRY MIND. Once Simon is found out he stops chasing and
+         plants blurry thoughts that fog your memory. They drift in and slowly home
+         on you; while one overlaps you the MIND meter climbs ("too much in the
+         brain"). Overload and Simon SEALS it with lightning and you explode. The
+         counter is to look closely (stand still): stillness clears the mind. ---- */
+  if(mindSeal>0) mindSeal = Math.max(0, mindSeal - dt*1.4);
+  if(isExposed()){
+    const eg = exposed.glow||0;
+    // plant blurry thoughts (capped so the screen never floods)
+    if(thoughts.length < 6 && chance(0.03 + 0.05*eg)){
+      thoughts.push({
+        x: rnd(MARGIN, W-MARGIN), y: cameraY + (chance(0.5)? -40 : H+40),
+        vx: rnd(-0.2,0.2), vy: rnd(-0.2,0.2),
+        r: rnd(26,40), t: Math.random()*6.28, wob: rnd(0.5,1.1),
+        word: pick(['who?','...','blurry','meow','forget','Gray?','Wenda?','404'])
+      });
+    }
+    let overlap = 0;
+    for(const th of thoughts){
+      // gentle homing toward the player so memory keeps creeping in
+      const dx = player.x - th.x, dy = player.y - th.y;
+      const d = Math.hypot(dx,dy) || 1;
+      th.vx += (dx/d)*0.012; th.vy += (dy/d)*0.012;
+      th.vx *= 0.985; th.vy *= 0.985;
+      th.x += th.vx + Math.sin(th.t*th.wob)*0.25; th.y += th.vy; th.t += dt;
+      th.x = Math.max(MARGIN, Math.min(W-MARGIN, th.x));
+      if(Math.abs(th.x-player.x) < th.r+18 && Math.abs(th.y-player.y) < th.r+22) overlap++;
+    }
+    thoughts = thoughts.filter(th => th.y > cameraY-120 && th.y < cameraY+H+120);
+    const running = Math.abs(player.vx) > 1.6;
+    if(overlap>0){
+      mind = Math.min(1, mind + dt*(0.22 + 0.20*overlap) + (running?dt*0.12:0));
+    } else if(!running){
+      mind = Math.max(0, mind - dt*0.55);   // looking closely / standing still clears it
+    } else {
+      mind = Math.max(0, mind - dt*0.12);
+    }
+    // OVERLOAD — too much in the mind; Simon seals it with lightning and you explode
+    if(mind >= 1){
+      mind = 0.45; mindSeal = 1.0;
+      glitch = Math.max(glitch, 0.7); shake = Math.max(shake, 9);
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OVERLOAD', col:'#b98cff' });
+      // an explosion of the over-full mind
+      for(let i=0;i<14;i++) particles.push(spark(player.x, player.y, pick(['#b98cff','#eafcff','#3ec6ff'])));
+      AUDIO.zap();
+      damage();
+    }
+  }
 }
 
 /* =========================================================================
@@ -928,6 +1020,7 @@ function draw(){
   if(peace && peace.glow>0) drawNotes();
   drawSimonTide();
   if(corrupted() && phase2.glow>0.02){ drawCells(); drawBolts(); }
+  if(isExposed() && exposed.glow>0.02) drawThoughts();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -965,6 +1058,28 @@ function draw(){
       for(let y=0;y<H;y+=3){ ctx.fillRect(0,y,W,1); }
       ctx.restore();
     }
+  }
+  // Lore 27 — the BLURRY MIND fog: as the mind fills, a soft violet haze creeps in
+  // from the edges (memory going blurry). The lightning SEAL flashes the screen white.
+  if(isExposed() && (mind>0.02 || mindSeal>0.02)){
+    ctx.save();
+    const fog = Math.min(1, mind);
+    if(fog>0.02){
+      const g = ctx.createRadialGradient(W/2,H/2, H*0.20, W/2,H/2, H*0.72);
+      g.addColorStop(0,'rgba(150,120,255,0)');
+      g.addColorStop(1,`rgba(150,120,255,${0.10+0.42*fog})`);
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      // drifting blur bands across the middle of vision
+      ctx.globalAlpha = 0.05 + 0.12*fog;
+      ctx.fillStyle = '#cdbcff';
+      for(let i=0;i<4;i++){
+        const yy = ((i*97 + (bgT*40|0)) % H + H) % H;
+        ctx.fillRect(0, yy, W, 10 + 22*fog);
+      }
+      ctx.globalAlpha = 1;
+    }
+    if(mindSeal>0.02){ ctx.fillStyle=`rgba(234,252,255,${mindSeal*0.4})`; ctx.fillRect(0,0,W,H); }
+    ctx.restore();
   }
   if(warnT>0 && warnText){
     ctx.save(); ctx.globalAlpha=Math.min(1,warnT*1.5);
@@ -1332,6 +1447,21 @@ function drawBattleLead(){
     ctx.globalAlpha=a*0.45; ctx.fillStyle='#3ee6dc'; roundRectC(-3-jit,0,22,26,7); ctx.fill();
     ctx.globalAlpha=a; ctx.fillStyle='#1a0a14'; roundRectC(0,0,22,26,7); ctx.fill();
     ctx.shadowBlur=0; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=1.4; roundRectC(0,0,22,26,7); ctx.stroke();
+    // Lore 27 — bandages: a warning sign that he is Phase 2. They glow brighter
+    // when you look closely (stand still), like the warning Gray missed.
+    if(isExposed()){
+      const still = Math.abs(player.vx) < 1.6;
+      const bA = a * (still ? 0.95 : 0.5);
+      ctx.save(); ctx.beginPath(); roundRectC(0,0,22,26,7); ctx.clip();
+      ctx.globalAlpha = bA; ctx.strokeStyle = still ? '#fff7e6' : '#e8dccb'; ctx.lineWidth = 3.2;
+      ctx.lineCap='round';
+      for(let b=-1;b<=2;b++){ const yy = b*8 - 2;
+        ctx.beginPath(); ctx.moveTo(-13, yy); ctx.lineTo(13, yy-7); ctx.stroke(); }
+      // faint warning glyph the close looker can read
+      if(still){ ctx.globalAlpha=a; ctx.fillStyle='#ff3b5c'; ctx.font='800 7px ui-monospace,monospace';
+        ctx.textAlign='center'; ctx.fillText('P2', 0, 2); }
+      ctx.restore();
+    }
   } else {
     // calm gold Simon — small now, but still the fastest
     ctx.fillStyle='#ffd84f'; roundRectC(0,0,22,26,7); ctx.fill();
@@ -1354,7 +1484,7 @@ function drawBattleLead(){
   // little caption under his lead
   ctx.save(); ctx.globalAlpha=a*0.95; ctx.textAlign='center';
   if(corr){ ctx.fillStyle='#ff3b5c'; ctx.font='800 10px ui-monospace,monospace';
-    ctx.fillText('PHASE 2 SIMON — locked', x, y-22); }
+    ctx.fillText(isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked', x, y-22); }
   else { ctx.fillStyle='#ffd84f'; ctx.font='800 10px ui-monospace,monospace';
     ctx.fillText('SIMON LEADS — fastest', x, y-22); }
   ctx.restore();
@@ -1448,6 +1578,38 @@ function drawCells(){
   }
   ctx.shadowBlur=0;
 }
+// Lore 27 — blurry thoughts Simon plants: soft smeared violet blobs with a faint
+// fogged word, each ringed by little lightning ticks (he seals them with lightning).
+function drawThoughts(){
+  for(const th of thoughts){
+    ctx.save(); ctx.translate(th.x, th.y);
+    const pulse = 1 + Math.sin(th.t*2)*0.1;
+    // layered smear — several offset translucent disks = a blurry, unfocused look
+    for(let k=0;k<4;k++){
+      const off = k*3;
+      const ox = Math.cos(th.t*0.7+k)*off, oy = Math.sin(th.t*0.9+k)*off;
+      ctx.fillStyle = `rgba(150,120,255,${0.10 - k*0.018})`;
+      ctx.beginPath(); ctx.arc(ox, oy, th.r*pulse, 0, 6.28); ctx.fill();
+    }
+    // the faint, fogged word inside the thought
+    ctx.globalAlpha = 0.5 + 0.2*Math.sin(th.t*1.5);
+    ctx.fillStyle = '#d9ccff'; ctx.textAlign='center'; ctx.font='700 12px ui-monospace,monospace';
+    ctx.shadowColor='#b98cff'; ctx.shadowBlur=6;
+    ctx.fillText(th.word, Math.sin(th.t*3)*1.5, 4);
+    ctx.shadowBlur=0; ctx.globalAlpha=1;
+    // tiny lightning seal ticks around the rim
+    ctx.strokeStyle='rgba(234,252,255,0.5)'; ctx.lineWidth=1;
+    for(let s=0;s<3;s++){ const a = th.t*2 + s*2.09;
+      const r1=th.r*0.8, r2=th.r*1.05;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(a)*r1, Math.sin(a)*r1);
+      ctx.lineTo(Math.cos(a+0.2)*r2, Math.sin(a+0.2)*r2);
+      ctx.stroke();
+    }
+    ctx.restore();
+  }
+  ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
 // Lightning-powered corruption: Pyrakontacke + Plorotacke mixing inside Simon.
 function drawBolts(){
   for(const z of bolts){
@@ -1538,6 +1700,18 @@ function drawHUD(){
     else { ctx.fillStyle = `rgba(143,227,255,${0.5+0.5*safeGlow})`;
       ctx.fillText('HIDDEN = SAFE', W/2, by-6); }
   }
+  // EXPOSED (Lore 27) — the MIND meter. Fills when blurry thoughts touch you;
+  // overload and Simon seals it with lightning. Look closely (stand still) to clear.
+  if(isExposed() && exposed.glow>0.05){
+    const bw=180, bx=W/2-bw/2, by=H-46;
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    const mg = mind>0.66?'#eafcff':(mind>0.33?'#b98cff':'#7a5cff');
+    ctx.fillStyle=mg; ctx.fillRect(bx,by,bw*mind,7);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(mind>0.66 || mindSeal>0){ ctx.fillStyle = mindSeal>0?'#eafcff':'#b98cff';
+      ctx.fillText('MIND OVERLOAD', W/2, by-6); }
+    else { ctx.fillStyle = '#b98cff'; ctx.fillText('MIND: BLURRY', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -1550,8 +1724,8 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle='#ff3b5c'; ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText('▓ .EXE VIRUS — PHASE 2 ▓', W/2, 64);
+    ctx.fillStyle = isExposed()? '#b98cff' : '#ff3b5c'; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText(isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓', W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -1567,7 +1741,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · Lore 26 · Phase 2: The Spreading of Simon', W/2, 226);
+  ctx.fillText('CLASSIC RL · Lore 27 · Phase 2 Exposed: The Blurry Mind', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -1585,8 +1759,11 @@ function drawTitle(){
     '',
     'PHASE 2: Simon grows corruption-cells. Red',
     'Pyrakontacke + cyan Plorotacke mix into lightning.',
-    'The rule: RUN and you become fuel; HIDE (stand',
-    'still) and you stay safe. But the tide still rises.'
+    'RUN and you become fuel; HIDE (stand still) is safe.',
+    '',
+    'EXPOSED: found out, Simon stops chasing and plants',
+    'BLURRY THOUGHTS. Let your MIND overload and he seals',
+    'it with lightning. Look closely (stand still) to clear.'
   ];
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 248 + i*18));
 
@@ -1625,7 +1802,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(phase2 && (phase2.active || phase2.done)){
+  if(isExposed()){
+    ctx.fillText('"Too much in the mind. I sealed it with lightning.', W/2, H*0.64);
+    ctx.fillText(' You did not look closely enough. meow 😿" — Phase 2 Simon, found out', W/2, H*0.67);
+  } else if(phase2 && (phase2.active || phase2.done)){
     ctx.fillText('"Those who run become fuel. Those who hide are', W/2, H*0.64);
     ctx.fillText(' safe. !CLaSsIcs can\'T b3 SAV3b!" — Phase 2 Simon', W/2, H*0.67);
   } else if(peace && peace.done){
