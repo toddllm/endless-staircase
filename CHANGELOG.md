@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 24). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — The Restoration (Simon's redemption)
+
+Simon's turn from destroyer to rebuilder. Based on Toby's June 13 lore.
+
+![The Restoration — golden crack, Mr. Sun and Mr. Tree](screenshots/07-restoration.png)
+
+- **The Restoration** fires when you climb high enough: Simon opens a **golden
+  crack** down the middle of the sky.
+- **Mr. Sun and Mr. Tree** rise over a bright, normal half of the room while the
+  other half stays corrupt — half healed, half dark.
+- Simon **ends Error 404 and Error 666** (the drifting error words fade) and
+  **heals you to full**.
+- His line: *"There are no villains. I was the corruption. The rest is only
+  perspective."*
+
 ## 2026-06-13 — The False Cure
 
 Simon weaponizes hope. Based on Toby's June 13 lore.
