@@ -211,6 +211,12 @@ let scrollSpeed, simonSpeed, nextPlatY, roarTimer, roarFlash, warnText, warnT;
 /* ---- Simon's Levers (Lore 24b/c): the all-powerful staircase controls ---- */
 let lever, leverTimer, leverFlash, ctrlInvert, slideMode;
 let bottles, taunt, tauntT, nextRewardH;     // false-cure bottles + Simon's taunts
+/* ---- The Restoration (Lore 24d, June 13 2026): Simon's redemption arc.
+        Climb high enough and Simon stops being only the destroyer. He opens a
+        golden crack in the sky, brightens it with Mr. Sun and Mr. Tree, ends
+        Error 404 and Error 666, and admits there are no villains, only him and
+        perspective. Half the game turns normal, half stays corrupt. ---- */
+let restore, restoreH;
 const LEVERS = [
   { type:'fall',      name:'THE STAIRCASE FALLS', warn:1.4, act:2.4 },
   { type:'rearrange', name:'THE STEPS REARRANGE', warn:1.2, act:1.8 },
@@ -240,6 +246,7 @@ function reset(){
   lever = { state:'idle', type:null, name:'', t:0, warnDur:0, actDur:0 };
   leverTimer = 14; leverFlash = 0; ctrlInvert = false; slideMode = 0;
   bottles = []; taunt = ''; tauntT = 0; nextRewardH = 700;
+  restore = { active:false, t:0, glow:0, done:false }; restoreH = 2400;
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -419,8 +426,28 @@ function update(dt){
     if(lever.state==='idle' && chance(0.8)) leverTimer = rnd(0.6, 1.4);   // the cruelty: a lever is coming
   }
   // background taunts: Simon keeps selling the lie of a top
-  if(tauntT<=0 && chance(0.0016)) showTaunt(pick(TAUNTS));
+  if(tauntT<=0 && chance(0.0016) && !restore.active) showTaunt(pick(TAUNTS));
   if(tauntT>0) tauntT -= dt;
+
+  /* ---- THE RESTORATION: climb high enough and Simon's redemption fires.
+         He opens the golden crack, ends 404/666, and you are healed in full.
+         "there are no villains, I was corrupt by viruses." The world turns
+         half-normal, half-corrupt, and stays that way for the rest of the climb. */
+  if(!restore.active && !restore.done && height > restoreH){
+    restore.active = true; restore.t = 0;
+    hp = maxHp; hitFlash = 0; leverFlash = 1.0; shake = Math.max(shake, 6);
+    warnText = 'THE GOLDEN CRACK OPENS'; warnT = 2.4;
+    showTaunt('There are no villains. I was the corruption.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'RESTORED +♥', col:'#ffd84f' });
+    AUDIO.coin();
+  }
+  if(restore.active){
+    restore.t += dt;
+    if(restore.t>2.0 && restore.t<2.05) showTaunt('The rest is only perspective.');
+    if(restore.t > 6){ restore.active = false; restore.done = true; }
+  }
+  if(restore.glow < (restore.active||restore.done ? 1 : 0))
+    restore.glow = Math.min(1, restore.glow + dt*0.7);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -702,15 +729,60 @@ function drawBackdrop(){
     }
   }
   ctx.restore();
-  // drifting error strings (404 blue / 666 red) — "the stairs are living"
+  // THE RESTORATION — Simon opens a golden crack, ends 404/666, brightens the
+  // sky with Mr. Sun and Mr. Tree. Half the room turns normal, half stays corrupt.
+  const rg = (restore? restore.glow : 0) || 0;
+  // drifting error strings (404 blue / 666 red) — they fade as Simon ends them
+  const errA = 1 - rg*0.9;
   ctx.font='12px ui-monospace,monospace'; ctx.textAlign='left';
   for(let i=0;i<26;i++){
     const seed=i*97.13;
     const x=((seed*1.7 + bgT*8*(i%3+1)) % (W+40))-20;
     const y=((seed*2.3 - (state==='play'?cameraY*0.15:bgT*14*(i%4+1))) % (H+40)+H+40)%(H+40)-20;
-    ctx.fillStyle = i%2? 'rgba(62,198,255,0.10)':'rgba(255,59,92,0.09)';
+    ctx.fillStyle = i%2? `rgba(62,198,255,${0.10*errA})`:`rgba(255,59,92,${0.09*errA})`;
     ctx.fillText(i%2?'404':'666', x, y);
   }
+  if(rg>0) drawRestoration(rg);
+}
+
+// The right half of the room becomes "normal" — warm sky, Mr. Sun, Mr. Tree —
+// while the left stays Simon's corrupt dark. A golden crack splits the sky.
+function drawRestoration(rg){
+  ctx.save();
+  // warm dawn over the normal (right) half
+  const wg = ctx.createLinearGradient(0,0,0,H);
+  wg.addColorStop(0,`rgba(120,90,30,${0.34*rg})`);
+  wg.addColorStop(0.5,`rgba(90,70,40,${0.18*rg})`);
+  wg.addColorStop(1,`rgba(40,60,40,${0.10*rg})`);
+  ctx.fillStyle=wg; ctx.fillRect(W/2,0,W/2,H);
+  // Mr. Sun — top right, with a calm little face
+  const sx=W*0.80, sy=H*0.16, sr=34;
+  ctx.globalAlpha=rg;
+  ctx.shadowColor='#ffd84f'; ctx.shadowBlur=30;
+  ctx.fillStyle='#ffe27a'; ctx.beginPath(); ctx.arc(sx,sy,sr,0,6.28); ctx.fill();
+  ctx.shadowBlur=0;
+  ctx.strokeStyle=`rgba(255,210,80,${0.7})`; ctx.lineWidth=3;
+  for(let i=0;i<12;i++){ const a=i/12*6.28 + bgT*0.4;
+    ctx.beginPath(); ctx.moveTo(sx+Math.cos(a)*(sr+6), sy+Math.sin(a)*(sr+6));
+    ctx.lineTo(sx+Math.cos(a)*(sr+16), sy+Math.sin(a)*(sr+16)); ctx.stroke(); }
+  ctx.fillStyle='#7a5a10';
+  ctx.beginPath(); ctx.arc(sx-11,sy-4,3.2,0,6.28); ctx.arc(sx+11,sy-4,3.2,0,6.28); ctx.fill();
+  ctx.strokeStyle='#7a5a10'; ctx.lineWidth=2.4;
+  ctx.beginPath(); ctx.arc(sx,sy+4,11,0.15*Math.PI,0.85*Math.PI,false); ctx.stroke();
+  // Mr. Tree — bottom right, rooted in the new ground
+  const tx=W*0.88, ty=H*0.86;
+  ctx.fillStyle=`rgba(90,60,30,${rg})`; ctx.fillRect(tx-7, ty, 14, H*0.16);
+  ctx.fillStyle=`rgba(60,150,70,${rg})`;
+  ctx.beginPath(); ctx.arc(tx,ty-6,30,0,6.28); ctx.arc(tx-22,ty+6,20,0,6.28); ctx.arc(tx+22,ty+6,20,0,6.28); ctx.fill();
+  ctx.fillStyle='#3a2a10';
+  ctx.beginPath(); ctx.arc(tx-7,ty+2,2.6,0,6.28); ctx.arc(tx+7,ty+2,2.6,0,6.28); ctx.fill();
+  // the golden crack splitting the sky down the middle
+  ctx.globalAlpha=1;
+  ctx.strokeStyle=`rgba(255,216,79,${0.85*rg})`; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=18*rg;
+  ctx.lineWidth=3.5; ctx.beginPath(); ctx.moveTo(W/2,0);
+  for(let y=0;y<=H;y+=48){ ctx.lineTo(W/2 + Math.sin(y*0.06 + bgT)*14, y); }
+  ctx.stroke();
+  ctx.restore();
 }
 
 function drawWorldStatic(){
@@ -992,8 +1064,13 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('"Simon promised a cure at the top.', W/2, H*0.64);
-  ctx.fillText(' There is no cure. There is no top."', W/2, H*0.67);
+  if(restore && restore.done){
+    ctx.fillText('"There are no villains. I was the corruption.', W/2, H*0.64);
+    ctx.fillText(' The rest is only perspective." — Simon', W/2, H*0.67);
+  } else {
+    ctx.fillText('"Simon promised a cure at the top.', W/2, H*0.64);
+    ctx.fillText(' There is no cure. There is no top."', W/2, H*0.67);
+  }
   const blink=(Math.sin(time*4)>0)?1:0.35;
   ctx.globalAlpha=blink; ctx.fillStyle='#ffd84f'; ctx.font='800 20px ui-monospace,monospace';
   ctx.fillText('PRESS SPACE / TAP TO TRY AGAIN', W/2, H*0.78);
