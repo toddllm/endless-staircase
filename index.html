@@ -223,7 +223,19 @@ const AUDIO = (()=>{
         const o=ac.createOscillator(),g=ac.createGain(); o.type='square';
         o.frequency.value=130 + i*430 + i*i*60;
         g.gain.setValueAtTime(0.09,st); g.gain.exponentialRampToValueAtTime(0.001,st+0.05);
-        o.connect(g); g.connect(master); o.start(st); o.stop(st+0.06); } }
+        o.connect(g); g.connect(master); o.start(st); o.stop(st+0.06); } },
+    // Lore 26 — Pyrakontacke + Plorotacke mix inside Simon: lightning-powered
+    // corruption. A sharp electric crackle that sweeps down in pitch.
+    zap(){ if(!ac||!on) return; const t=ac.currentTime;
+      const o=ac.createOscillator(),g=ac.createGain(); o.type='sawtooth';
+      o.frequency.setValueAtTime(1700,t); o.frequency.exponentialRampToValueAtTime(180,t+0.22);
+      g.gain.setValueAtTime(0.14,t); g.gain.exponentialRampToValueAtTime(0.001,t+0.24);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t+0.26);
+      for(let i=0;i<4;i++){ const st=t+0.01+i*0.02;
+        const n=ac.createOscillator(),ng=ac.createGain(); n.type='square';
+        n.frequency.value=2200 - i*300 + (i%2?260:0);
+        ng.gain.setValueAtTime(0.05,st); ng.gain.exponentialRampToValueAtTime(0.001,st+0.04);
+        n.connect(ng); ng.connect(master); n.start(st); n.stop(st+0.05); } }
   };
   function blipExt(freq,t,dur,type,gain){ if(!ac) return;
     const o=ac.createOscillator(),g=ac.createGain(); o.type=type; o.frequency.value=freq;
@@ -279,6 +291,13 @@ let battle;
         every second, and Phase 2 Simon, unable to clean it, lashes the world
         with corrupted tentacles, eyes flashing red / white / teal-blue. ---- */
 let phase2, phase2H, glitch;
+// Lore 26 — "The Spreading of Simon": Phase 2 Simon forces the game to grow
+// corruption-cells. Pyrakontacke (red, a bright Power Nucleus) corrupts shields
+// and souls; Plorotacke (cyan, no nucleus, one huge Mitochondria) is raw charge.
+// When the two meet they mix inside Simon into lightning-powered corruption.
+// The rule of Phase 2: those who RUN become fuel; those who HIDE (stay still)
+// stay safe. fuel = how much running has charged the corruption against you.
+let cells, bolts, fuel, fuelHint, safeGlow;
 const LEVERS = [
   { type:'fall',      name:'THE STAIRCASE FALLS', warn:1.4, act:2.4 },
   { type:'rearrange', name:'THE STEPS REARRANGE', warn:1.2, act:1.8 },
@@ -314,6 +333,7 @@ function reset(){
   battle = { t:0, beat:0, leadFlash:0, answerWave:0, answerActive:false, simonX:W/2 };
   phase2 = { active:false, t:0, glow:0, done:false, errs:0 }; phase2H = 6200;
   glitch = 0; corruptTimer = 0;
+  cells = []; bolts = []; fuel = 0; fuelHint = 0; safeGlow = 0;
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -821,6 +841,61 @@ function updateCorruption(dt){
   for(const p of platforms){
     if(p.boxer && !p.boxer.infected && chance(0.05)) p.boxer.infected = true;
   }
+
+  /* ---- Lore 26: Simon forces the game to grow corruption-cells ---- */
+  // Pyrakontacke (red, Power Nucleus) and Plorotacke (cyan, huge Mitochondria)
+  // drift up through the room. Cap the count so the screen never floods.
+  if(cells.length < 14 && chance(0.06 + 0.04*(phase2.glow||0))){
+    const pyra = chance(0.5);
+    cells.push({
+      kind: pyra ? 'pyra' : 'ploro',
+      x: rnd(MARGIN, W-MARGIN), y: cameraY + H + rnd(10, 90),
+      vx: rnd(-0.25,0.25), vy: rnd(-0.45,-0.18),
+      r: pyra ? rnd(9,14) : rnd(11,16), t: Math.random()*6.28, wob: rnd(0.6,1.4)
+    });
+  }
+  for(const c of cells){
+    c.x += c.vx + Math.sin(c.t*c.wob)*0.3; c.y += c.vy; c.t += dt;
+    c.x = Math.max(MARGIN, Math.min(W-MARGIN, c.x));
+  }
+  cells = cells.filter(c => c.y > cameraY - 80);
+  // when a Pyrakontacke meets a Plorotacke they mix inside Simon -> lightning.
+  for(let i=0;i<cells.length;i++){
+    for(let j=i+1;j<cells.length;j++){
+      const a=cells[i], b=cells[j];
+      if(a.kind===b.kind) continue;
+      const dx=a.x-b.x, dy=a.y-b.y;
+      if(dx*dx+dy*dy < 52*52 && bolts.length<4 && chance(0.5)){
+        bolts.push({ ax:a.x, ay:a.y, bx:b.x, by:b.y, t:0, life:0.5, seed:(i*7+j*13)%97 });
+        glitch = Math.max(glitch, 0.6); AUDIO.zap();
+        // the mixed cells are spent in the reaction
+        a.y = cameraY - 999; b.y = cameraY - 999;
+        // a lightning arc that crosses the player charges the corruption
+        const my=(a.y+b.y)/2;
+        if(Math.abs(((a.x+b.x)/2) - player.x) < 70 && Math.abs(my - player.y) < 90) damage();
+      }
+    }
+  }
+  cells = cells.filter(c => c.y > cameraY - 80);
+  for(const z of bolts){ z.t += dt; }
+  bolts = bolts.filter(z => z.t < z.life);
+
+  /* ---- Phase 2 rule: RUN becomes fuel, HIDE (stillness) stays safe ---- */
+  // Panic is punished. Running charges the corruption; standing still lets it
+  // settle. (Simon's tide still rises, so you can never hide for long.)
+  const running = Math.abs(player.vx) > 1.6;
+  if(running){
+    fuel = Math.min(1, fuel + dt*0.42); safeGlow = Math.max(0, safeGlow - dt*2);
+    if(fuel >= 1){
+      fuel = 0.55; fuelHint = 1.2;
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'FUEL', col:'#ff3b5c' });
+      damage();
+    }
+  } else {
+    fuel = Math.max(0, fuel - dt*0.7);
+    safeGlow = Math.min(1, safeGlow + dt*1.4);
+  }
+  if(fuelHint>0) fuelHint = Math.max(0, fuelHint - dt);
 }
 
 /* =========================================================================
@@ -852,6 +927,7 @@ function draw(){
   drawBottles();
   if(peace && peace.glow>0) drawNotes();
   drawSimonTide();
+  if(corrupted() && phase2.glow>0.02){ drawCells(); drawBolts(); }
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -1339,6 +1415,57 @@ function drawSimonTide(){
   ctx.lineTo(ex+50,gy+14); ctx.lineTo(ex-50,gy+14); ctx.closePath(); ctx.fill();
 }
 
+// Lore 26 — the corruption-cells Simon forces the game to grow.
+function drawCells(){
+  for(const c of cells){
+    ctx.save(); ctx.translate(c.x, c.y);
+    const pulse = 1 + Math.sin(c.t*3)*0.12;
+    if(c.kind==='pyra'){
+      // Pyrakontacke: red cell with a bright Power Nucleus (true)
+      ctx.fillStyle='rgba(255,40,70,0.22)'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=12;
+      ctx.beginPath(); ctx.arc(0,0,c.r*pulse,0,6.28); ctx.fill();
+      ctx.strokeStyle='rgba(255,90,110,0.7)'; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.arc(0,0,c.r*pulse,0,6.28); ctx.stroke();
+      // the nucleus — a hot core
+      ctx.shadowBlur=10; ctx.fillStyle='#ffd84f';
+      ctx.beginPath(); ctx.arc(0,0,c.r*0.38,0,6.28); ctx.fill();
+      ctx.shadowBlur=0; ctx.fillStyle='#ff0022';
+      ctx.beginPath(); ctx.arc(0,0,c.r*0.18,0,6.28); ctx.fill();
+    } else {
+      // Plorotacke: cyan cell, no nucleus, one huge Mitochondria (raw charge)
+      ctx.fillStyle='rgba(62,198,255,0.18)'; ctx.shadowColor='#3ec6ff'; ctx.shadowBlur=12;
+      ctx.beginPath(); ctx.arc(0,0,c.r*pulse,0,6.28); ctx.fill();
+      ctx.strokeStyle='rgba(120,220,255,0.7)'; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.arc(0,0,c.r*pulse,0,6.28); ctx.stroke();
+      // the oversized mitochondria — a stadium-shaped charge blob
+      ctx.shadowBlur=8; ctx.fillStyle='rgba(140,255,210,0.9)';
+      ctx.beginPath(); ctx.ellipse(0,0,c.r*0.6,c.r*0.34,c.t*0.6,0,6.28); ctx.fill();
+      ctx.strokeStyle='rgba(60,200,150,0.8)'; ctx.lineWidth=1;
+      for(let k=-2;k<=2;k++){ ctx.beginPath();
+        ctx.moveTo(-c.r*0.5, k*c.r*0.13); ctx.lineTo(c.r*0.5, k*c.r*0.13); ctx.stroke(); }
+    }
+    ctx.restore();
+  }
+  ctx.shadowBlur=0;
+}
+// Lightning-powered corruption: Pyrakontacke + Plorotacke mixing inside Simon.
+function drawBolts(){
+  for(const z of bolts){
+    const a = Math.max(0, 1 - z.t/z.life);
+    ctx.save(); ctx.globalAlpha = a;
+    ctx.strokeStyle = z.t<z.life*0.5 ? '#eafcff' : '#ffd84f';
+    ctx.shadowColor='#3ec6ff'; ctx.shadowBlur=14; ctx.lineWidth=2.6; ctx.lineCap='round';
+    const segs=8; ctx.beginPath(); ctx.moveTo(z.ax, z.ay);
+    for(let i=1;i<segs;i++){ const f=i/segs;
+      const jx=(((z.seed*(i+3))%13)-6) * (1-Math.abs(f-0.5)*2) * 3.2;
+      const jy=(((z.seed*(i+7))%11)-5) * 1.8;
+      ctx.lineTo(z.ax+(z.bx-z.ax)*f + jx, z.ay+(z.by-z.ay)*f + jy);
+    }
+    ctx.lineTo(z.bx, z.by); ctx.stroke();
+    ctx.restore();
+  }
+  ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
 function drawPlayer(){
   const p=player; const x=p.x, y=p.y;
   const sq = p.onGround ? 1 + Math.sin(p.anim*10)* (Math.abs(p.vx)>0.5?0.05:0.0) : 1;
@@ -1397,6 +1524,20 @@ function drawHUD(){
   // mute indicator
   ctx.textAlign='right'; ctx.fillStyle='#5a5278'; ctx.font='10px ui-monospace,monospace';
   ctx.fillText(AUDIO.isOn()?'♪ on (M)':'♪ off (M)', W-14, 56);
+
+  // PHASE 2 (Lore 26) — RUN = FUEL, HIDE = SAFE. A charge bar + a live status.
+  if(corrupted() && phase2.glow>0.05){
+    const bw=180, bx=W/2-bw/2, by=H-30;
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    const fg = fuel>0.66?'#ff0033':(fuel>0.33?'#ff7b00':'#ffd84f');
+    ctx.fillStyle=fg; ctx.fillRect(bx,by,bw*fuel,7);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    const running = Math.abs(player.vx) > 1.6;
+    if(running || fuelHint>0){ ctx.fillStyle = (fuelHint>0?'#ff3b5c':fg);
+      ctx.fillText('RUNNING = FUEL', W/2, by-6); }
+    else { ctx.fillStyle = `rgba(143,227,255,${0.5+0.5*safeGlow})`;
+      ctx.fillText('HIDDEN = SAFE', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -1426,35 +1567,38 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · Lore 25 · the Peaceful Ending breaks into Phase 2', W/2, 226);
+  ctx.fillText('CLASSIC RL · Lore 26 · Phase 2: The Spreading of Simon', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
   const lines=[
-    'Endless staircases fill the Endless Room. They LIVE.',
+    'Endless living staircases fill the Endless Room.',
     'Simon forces everyone up, and he never stops.',
     '',
-    'He is ALL POWERFUL. He pulls his levers and the',
-    'whole staircase obeys: it FALLS, the steps',
-    'REARRANGE, it turns to a BRIDGE, it SPINS,',
-    'or it flattens into an ENDLESS SLIDE.',
+    'He is ALL POWERFUL: he pulls his levers and the',
+    'staircase FALLS, REARRANGES, becomes a BRIDGE,',
+    'SPINS, or flattens into an ENDLESS SLIDE.',
     '',
-    'Climb. Dodge biting steps and tendrils. Grab',
-    'emeralds. Climb far enough and Simon steps back:',
-    'the world goes calm, a peaceful Incredibox where',
-    'Simon leads the Sound Battles, until Phase 2 breaks it.'
+    'Climb far and Simon steps back: the world goes',
+    'calm, a peaceful Incredibox, Simon leads the',
+    'Sound Battles... until PHASE 2 breaks it.',
+    '',
+    'PHASE 2: Simon grows corruption-cells. Red',
+    'Pyrakontacke + cyan Plorotacke mix into lightning.',
+    'The rule: RUN and you become fuel; HIDE (stand',
+    'still) and you stay safe. But the tide still rises.'
   ];
-  lines.forEach((l,i)=> ctx.fillText(l, W/2, 262 + i*20));
+  lines.forEach((l,i)=> ctx.fillText(l, W/2, 248 + i*18));
 
   // controls
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('◀ ▶ move    ▲ / SPACE jump    M mute', W/2, 470);
-  if(best>0){ ctx.fillStyle='#39e08a'; ctx.fillText('BEST CLIMB: '+best+' m', W/2, 500); }
+  ctx.fillText('◀ ▶ move    ▲ / SPACE jump    M mute', W/2, 526);
+  if(best>0){ ctx.fillStyle='#39e08a'; ctx.fillText('BEST CLIMB: '+best+' m', W/2, 550); }
 
   // prompt
   const blink = (Math.sin(time*4)>0)?1:0.3;
   ctx.globalAlpha=blink; ctx.fillStyle='#ffd84f'; ctx.font='800 20px ui-monospace,monospace';
-  ctx.fillText('PRESS SPACE / TAP TO CLIMB', W/2, 560);
+  ctx.fillText('PRESS SPACE / TAP TO CLIMB', W/2, 590);
   ctx.globalAlpha=1;
 
   // a tiny Simon grin at the bottom
@@ -1482,8 +1626,8 @@ function drawDeath(){
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
   if(phase2 && (phase2.active || phase2.done)){
-    ctx.fillText('"There is no Phase 1 left. Simon is locked', W/2, H*0.64);
-    ctx.fillText(' to Phase 2 forever, attacking all." — .EXE', W/2, H*0.67);
+    ctx.fillText('"Those who run become fuel. Those who hide are', W/2, H*0.64);
+    ctx.fillText(' safe. !CLaSsIcs can\'T b3 SAV3b!" — Phase 2 Simon', W/2, H*0.67);
   } else if(peace && peace.done){
     ctx.fillText('"The chaos happened. The lore remains.', W/2, H*0.64);
     ctx.fillText(' It was all normal again." — Simon', W/2, H*0.67);

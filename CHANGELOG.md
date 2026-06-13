@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-13 — The Spreading of Simon: Cells, Lightning, and RUN = FUEL (Lore 26)
+
+Based on Toby's June 13 lore (Lore 26): *"Simon forces the game to create small
+red cells called Pyrakontacke (Pyra = power/aura, Kont = Nucleus, Acke = true =
+Power Nucleus True), and it uses the Pyrakontacke to corrupt the shields and
+force of the cores and souls. Simon makes Plorotacke (Ploro = energy/electric,
+acke = true, a cell without a nucleus and instead has a huge Mitochondria), and
+then the Pyrakontacke and Plorotacke mix inside of Simon and creates
+lightning-powered corruption... those who run away become fuel, and those who
+hide are safe. Simon Phase 2 is the fastest, he is a lightning cat deity who
+became corrupted."*
+
+![Lore 26 — red Pyrakontacke cells with a Power Nucleus, cyan Plorotacke cells with a huge mitochondria, a lightning bolt where they mix, and the RUN = FUEL bar](screenshots/11-spreading-cells.png)
+
+- **Phase 2 now grows corruption-cells.** Once Simon is locked to Phase 2, the
+  room fills with two drifting cell types:
+  - **Pyrakontacke** — a red cell with a bright, hot **Power Nucleus** (a glowing
+    gold/red core). Simon's tool for corrupting shields, cores, and souls.
+  - **Plorotacke** — a cyan cell with **no nucleus** and instead one **huge
+    Mitochondria** (a turning charge-blob with cristae lines). Raw electric fuel.
+- **Lightning-powered corruption.** When a Pyrakontacke and a Plorotacke drift
+  close, they **mix and arc** into a jagged lightning bolt (with a new electric
+  `zap` sound). If the bolt crosses you, it hurts. The two cells are spent in
+  the reaction, just like they "mix inside Simon."
+- **The rule of Phase 2: RUN = FUEL, HIDE = SAFE.** A new charge bar tracks your
+  panic. **Running charges the corruption against you** — fill the bar and you
+  take a hit and a red **"FUEL"** burst. **Standing still lets it settle** and the
+  HUD reads **"HIDDEN = SAFE."** But Simon's tide never stops rising, so you can
+  never hide for long: panic is punished, stillness is risky, and you have to
+  pick your moments. The HUD shows **RUNNING = FUEL** / **HIDDEN = SAFE** live.
+- **Title + death stings updated.** The title screen now tells the Phase 2 rule,
+  and the Phase 2 death line is Toby's own: *"Those who run become fuel. Those
+  who hide are safe. !CLaSsIcs can'T b3 SAV3b!" — Phase 2 Simon.*
+- Everything is additive and gated behind Phase 2, so the climb, the Peaceful
+  Ending, and the Sound Battle all play exactly as before until Simon locks.
+
 ## 2026-06-13 — Phase 2: The .EXE Virus (Lore 25c)
 
 The End of the Peaceful Ending. Climb past the calm Incredibox and Simon is

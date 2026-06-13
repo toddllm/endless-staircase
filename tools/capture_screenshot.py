@@ -125,6 +125,35 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('Phase 2 forever. Every second more corrupt.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "spreading": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // Restoration + Peaceful Ending already happened, then Phase 2 locks on
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        // run corrupted frames so the corruption-cells spawn and drift
+        for (var m=0;m<140;m++){ keys['ArrowRight']=(m%30<15); update(1/60); }
+        // guarantee a clear pair of cells + a lightning bolt mixing between them
+        if (typeof cells!=='undefined'){
+          cells.push({kind:'pyra', x: player.x-46, y: player.y-46, vx:0, vy:0, r:13, t:1.0, wob:1});
+          cells.push({kind:'ploro',x: player.x+46, y: player.y-30, vx:0, vy:0, r:15, t:2.0, wob:1});
+          cells.push({kind:'pyra', x: 90, y: player.y-150, vx:0, vy:0, r:12, t:0.5, wob:1});
+          cells.push({kind:'ploro',x: W-90, y: player.y+90, vx:0, vy:0, r:14, t:1.5, wob:1});
+        }
+        if (typeof bolts!=='undefined'){
+          bolts.push({ax:player.x-46, ay:player.y-46, bx:player.x+46, by:player.y-30, t:0.05, life:0.5, seed:31});
+        }
+        // RUN = FUEL: show the charge bar lit and the running status
+        if (typeof fuel!=='undefined'){ fuel=0.8; }
+        if (typeof player!=='undefined'){ player.vx=3.4; }
+        if (typeof glitch!=='undefined'){ glitch=0.7; }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('Pyrakontacke + Plorotacke = lightning. RUN = FUEL.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
