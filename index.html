@@ -183,7 +183,21 @@ const AUDIO = (()=>{
       const o=ac.createOscillator(),g=ac.createGain(); o.type='sawtooth';
       o.frequency.setValueAtTime(420,t); o.frequency.exponentialRampToValueAtTime(30,t+1.1);
       g.gain.setValueAtTime(0.25,t); g.gain.exponentialRampToValueAtTime(0.001,t+1.2);
-      o.connect(g); g.connect(master); o.start(t); o.stop(t+1.25); }
+      o.connect(g); g.connect(master); o.start(t); o.stop(t+1.25); },
+    // The Peaceful Ending: a soft, warm major chime as the world settles calm.
+    peace(){ if(!ac||!on) return; const t=ac.currentTime;
+      // open the muffling filter back up and hush the horror drone
+      if(droneGain){ droneGain.gain.setTargetAtTime(0.004, t, 0.6); }
+      if(lp){ lp.frequency.setTargetAtTime(18000, t, 0.8); }
+      // gentle ascending C-major arpeggio (C E G C), sine, like an Incredibox idle
+      const notes=[261.6, 329.6, 392.0, 523.3];
+      notes.forEach((f,i)=>{
+        const o=ac.createOscillator(),g=ac.createGain(); o.type='sine'; o.frequency.value=f;
+        const st=t+i*0.16;
+        g.gain.setValueAtTime(0,st); g.gain.linearRampToValueAtTime(0.16,st+0.04);
+        g.gain.exponentialRampToValueAtTime(0.001,st+1.1);
+        o.connect(g); g.connect(master); o.start(st); o.stop(st+1.2);
+      }); }
   };
   function blipExt(freq,t,dur,type,gain){ if(!ac) return;
     const o=ac.createOscillator(),g=ac.createGain(); o.type=type; o.frequency.value=freq;
@@ -217,6 +231,12 @@ let bottles, taunt, tauntT, nextRewardH;     // false-cure bottles + Simon's tau
         Error 404 and Error 666, and admits there are no villains, only him and
         perspective. Half the game turns normal, half stays corrupt. ---- */
 let restore, restoreH;
+/* ---- The Peaceful Ending (Lore 25, June 13 2026): after the Restoration,
+        climb higher still and Simon steps back from the story. The world finally
+        settles into its true form: a calm Incredibox. The chaos happened, the
+        lore remains underneath, the danger is remembered, but the surface is
+        calm again, with Sound Battles as the last trace. "It was all normal." ---- */
+let peace, peaceH, boxers, notes;
 const LEVERS = [
   { type:'fall',      name:'THE STAIRCASE FALLS', warn:1.4, act:2.4 },
   { type:'rearrange', name:'THE STEPS REARRANGE', warn:1.2, act:1.8 },
@@ -247,6 +267,8 @@ function reset(){
   leverTimer = 14; leverFlash = 0; ctrlInvert = false; slideMode = 0;
   bottles = []; taunt = ''; tauntT = 0; nextRewardH = 700;
   restore = { active:false, t:0, glow:0, done:false }; restoreH = 2400;
+  peace = { active:false, t:0, glow:0, done:false }; peaceH = 4200;
+  boxers = []; notes = [];
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -260,6 +282,8 @@ function reset(){
 
 function rnd(a,b){ return a + Math.random()*(b-a); }
 function chance(p){ return Math.random()<p; }
+// once the Peaceful Ending begins, the surface stays calm for the rest of the climb
+function peaceful(){ return !!(peace && (peace.active || peace.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -297,7 +321,7 @@ function update(dt){
 
   /* Simon "is the fastest" — periodic lunges (forced-march pressure) */
   roarTimer -= dt;
-  if(roarTimer<=0){
+  if(roarTimer<=0 && !peaceful()){
     roarTimer = rnd(7,11) - hf*3;
     roarFlash = 1.0;
     warnText = pick(["KEEP CLIMBING.","RUN, RUN, RUN.","NO ONE CAN HIDE.","FASTER."]);
@@ -407,10 +431,15 @@ function update(dt){
   let sSpd = simonSpeed * (time < 1.6 ? 0.18 : 1);   // brief grace at the start
   if(typeof simonLunge!=='undefined' && simonLunge>0){ sSpd += simonLunge*3; simonLunge=Math.max(0,simonLunge-dt*1.4); }
   if(slideMode>0) sSpd *= 1.7;                        // the slide drags everyone back down toward him
-  simonY -= sSpd;
-  // he is the fastest — he never trails further than ~1.5 screens below
-  const leadCap = player.y + H*1.5;
-  if(simonY > leadCap) simonY = leadCap;
+  if(peaceful()){
+    // Simon steps back from the story — the rising tide sinks calmly away
+    simonY += (player.y + H*2.6 - simonY) * 0.05;
+  } else {
+    simonY -= sSpd;
+    // he is the fastest — he never trails further than ~1.5 screens below
+    const leadCap = player.y + H*1.5;
+    if(simonY > leadCap) simonY = leadCap;
+  }
 
   /* ---- height / score ---- */
   const climbed = Math.max(0, (platforms[0].y - player.y));
@@ -418,7 +447,7 @@ function update(dt){
 
   /* ---- Simon's cruel "reward": 5 emeralds at a milestone, a taunt, then a
          lever to wipe you out the next step. "you won't get higher." ---- */
-  if(height > nextRewardH){
+  if(height > nextRewardH && !peaceful()){
     nextRewardH += rnd(620, 920);
     emer += 5; AUDIO.coin();
     floaters.push({ x:player.x, y:player.y-30, t:0, txt:'+5 ✦', col:'#39e08a' });
@@ -426,7 +455,7 @@ function update(dt){
     if(lever.state==='idle' && chance(0.8)) leverTimer = rnd(0.6, 1.4);   // the cruelty: a lever is coming
   }
   // background taunts: Simon keeps selling the lie of a top
-  if(tauntT<=0 && chance(0.0016) && !restore.active) showTaunt(pick(TAUNTS));
+  if(tauntT<=0 && chance(0.0016) && !restore.active && !peaceful()) showTaunt(pick(TAUNTS));
   if(tauntT>0) tauntT -= dt;
 
   /* ---- THE RESTORATION: climb high enough and Simon's redemption fires.
@@ -448,6 +477,31 @@ function update(dt){
   }
   if(restore.glow < (restore.active||restore.done ? 1 : 0))
     restore.glow = Math.min(1, restore.glow + dt*0.7);
+
+  /* ---- THE PEACEFUL ENDING: after the Restoration, climb higher still and
+         Simon steps back from the story. The chaos happened; the lore remains;
+         the danger is remembered; but the surface goes calm. Classics returns
+         to a peaceful Incredibox, with Sound Battles as the last trace. */
+  if(restore.done && !peace.active && !peace.done && height > peaceH){
+    peace.active = true; peace.t = 0;
+    hp = maxHp; hitFlash = 0; leverFlash = 0; shake = 0;
+    lever = { state:'idle', type:null, name:'', t:0, warnDur:0, actDur:0 };
+    ctrlInvert = false; slideMode = 0; bottles = [];
+    warnText = ''; warnT = 0; taunt = ''; tauntT = 0;
+    warnText = 'THE WORLD GOES QUIET'; warnT = 2.6;
+    showTaunt('It was all normal.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PEACE', col:'#8fe3ff' });
+    AUDIO.peace();
+  }
+  if(peace.active){
+    peace.t += dt;
+    if(peace.t>2.2 && peace.t<2.25) showTaunt('The chaos happened. The lore remains.');
+    if(peace.t>4.4 && peace.t<4.45) showTaunt('A calm Incredibox. Sound Battles, the last trace.');
+    if(peace.t > 7){ peace.active = false; peace.done = true; }
+  }
+  if(peace.glow < (peaceful() ? 1 : 0))
+    peace.glow = Math.min(1, peace.glow + dt*0.5);
+  if(peaceful()) updatePeace(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -478,6 +532,7 @@ function update(dt){
 let standOn=null, simonLunge=0;
 
 function damage(){
+  if(peaceful()) return;     // the surface is calm again — nothing can hurt you
   if(hitFlash>0.5) return;   // brief i-frames
   hp--; hitFlash=1; shake=Math.max(shake,10); AUDIO.hurt();
 }
@@ -504,6 +559,7 @@ function visiblePlats(){
   return platforms.filter(p=>!p.gone && p.y>cameraY-60 && p.y<cameraY+H+60);
 }
 function updateLevers(dt, hf){
+  if(peaceful()) return;     // Simon set the levers down; the staircase is calm
   if(lever.state==='idle'){
     leverTimer -= dt;
     if(leverTimer<=0 && height>140) startLever(hf);
@@ -615,6 +671,29 @@ function updateBottles(dt){
   bottles = bottles.filter(b => b.life>0 && b.y < cameraY + H + 200);
 }
 
+/* ---- The Peaceful Ending: turn the live staircase into a calm Incredibox.
+       Steps grow little beatbox characters that bob to a shared beat and puff
+       out music notes; the notes drift up like the world is humming to itself. */
+const BOXER_COLS = ['#62c6ff','#8fe3ff','#ffd84f','#39e08a','#c79bff','#ff9bd0'];
+function updatePeace(dt){
+  // give nearby on-screen steps a calm Incredibox singer (additive, once each)
+  for(const p of platforms){
+    if(p.boxer===undefined && !p.gone && p.y < cameraY + H + 120 && p.y > cameraY - 120){
+      p.boxer = chance(0.55) ? { col: pick(BOXER_COLS), phase: rnd(0,6.28), nt: rnd(0.3,1.4) } : null;
+    }
+    if(p.boxer){
+      p.boxer.nt -= dt;
+      if(p.boxer.nt<=0){
+        p.boxer.nt = rnd(1.1, 2.2);
+        notes.push({ x:p.x+p.w/2 + rnd(-10,10), y:p.y-26, vy:rnd(-0.5,-0.8),
+                     t:0, life:rnd(2.4,3.4), col:p.boxer.col, sw:rnd(0.6,1.3) });
+      }
+    }
+  }
+  for(const n of notes){ n.t+=dt; n.y+=n.vy; n.x += Math.sin(n.t*2+n.sw)*0.4; }
+  notes = notes.filter(n => n.t < n.life && n.y > cameraY - 40);
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -639,8 +718,10 @@ function draw(){
   ctx.translate(0, -cameraY);
   drawTendrils();
   drawPlatforms();
+  if(peace && peace.glow>0) drawBoxers();
   drawEmeralds();
   drawBottles();
+  if(peace && peace.glow>0) drawNotes();
   drawSimonTide();
   drawPlayer();
   drawParticles();
@@ -667,12 +748,29 @@ function draw(){
     ctx.fillStyle='#ff3b5c'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=18;
     ctx.fillText(warnText, W/2, H*0.30); ctx.restore();
   }
-  // Simon's taunt — his promised "cure at the top" that does not exist
+  // Simon's taunt — his promised "cure at the top" that does not exist.
+  // In the Peaceful Ending it softens into calm narration, no longer a threat.
   if(tauntT>0 && taunt && state==='play'){
     ctx.save(); ctx.globalAlpha=Math.min(1, tauntT*0.9);
     ctx.textAlign='center'; ctx.font='italic 700 17px ui-monospace,monospace';
-    ctx.fillStyle='#ffd84f'; ctx.shadowColor='#000'; ctx.shadowBlur=8;
-    ctx.fillText('Simon: "'+taunt+'"', W/2, H*0.42); ctx.restore();
+    if(peaceful()){
+      ctx.fillStyle='#8fe3ff'; ctx.shadowColor='#0a2230'; ctx.shadowBlur=8;
+      ctx.fillText(taunt, W/2, H*0.42);
+    } else {
+      ctx.fillStyle='#ffd84f'; ctx.shadowColor='#000'; ctx.shadowBlur=8;
+      ctx.fillText('Simon: "'+taunt+'"', W/2, H*0.42);
+    }
+    ctx.restore();
+  }
+  // SOUND BATTLES — the last trace of everything that happened, kept calm.
+  if(peace && peace.glow>0.02 && state==='play'){
+    ctx.save(); ctx.globalAlpha=Math.min(1, peace.glow)*0.9;
+    ctx.textAlign='center'; ctx.font='800 13px ui-monospace,monospace';
+    ctx.fillStyle='#8fe3ff'; ctx.shadowColor='#1a3a4a'; ctx.shadowBlur=10;
+    ctx.fillText('♪ SOUND BATTLES ♪', W/2, H-18);
+    ctx.fillStyle='#cfeaff'; ctx.font='11px ui-monospace,monospace'; ctx.shadowBlur=0;
+    ctx.fillText('the lore remains underneath', W/2, H-4);
+    ctx.restore();
   }
 
   if(state==='dead') drawDeath();
@@ -683,6 +781,7 @@ function draw(){
 let bgT=0;
 function drawBackdrop(){
   bgT += 0.016;
+  const pgl = (peace ? peace.glow : 0) || 0;   // Peaceful Ending: calm overtakes the void
   // deep tower void
   const g = ctx.createLinearGradient(0,0,0,H);
   g.addColorStop(0,'#0c0820'); g.addColorStop(0.5,'#0a0518'); g.addColorStop(1,'#06030f');
@@ -708,7 +807,7 @@ function drawBackdrop(){
   ctx.restore();
   // Parinusian banners — Simon hangs his symbol (golden cross in a gray
   // omega) all over the Endless Room to make the lie of a "cure" feel holy.
-  ctx.save(); ctx.globalAlpha=0.5;
+  ctx.save(); ctx.globalAlpha=0.5*(1-pgl*0.8);
   const ban = (state==='play'? cameraY*0.10 : bgT*12);
   const bx=[W*0.16, W*0.84];
   for(let s=0;s<bx.length;s++){
@@ -732,8 +831,9 @@ function drawBackdrop(){
   // THE RESTORATION — Simon opens a golden crack, ends 404/666, brightens the
   // sky with Mr. Sun and Mr. Tree. Half the room turns normal, half stays corrupt.
   const rg = (restore? restore.glow : 0) || 0;
-  // drifting error strings (404 blue / 666 red) — they fade as Simon ends them
-  const errA = 1 - rg*0.9;
+  // drifting error strings (404 blue / 666 red) — they fade as Simon ends them,
+  // and fade further into faint memory once the Peaceful Ending settles in
+  const errA = (1 - rg*0.9) * (1 - pgl*0.85);
   ctx.font='12px ui-monospace,monospace'; ctx.textAlign='left';
   for(let i=0;i<26;i++){
     const seed=i*97.13;
@@ -743,6 +843,29 @@ function drawBackdrop(){
     ctx.fillText(i%2?'404':'666', x, y);
   }
   if(rg>0) drawRestoration(rg);
+  if(pgl>0) drawPeaceSky(pgl);
+}
+
+// THE PEACEFUL ENDING sky — the golden corruption settles into a soft, calm
+// dawn across the whole room. A gentle equalizer of light glows at the base,
+// the way an Incredibox hums even when nothing is wrong.
+function drawPeaceSky(pgl){
+  ctx.save();
+  // soft full-room dawn that overtakes the void
+  const wg = ctx.createLinearGradient(0,0,0,H);
+  wg.addColorStop(0,`rgba(60,120,160,${0.30*pgl})`);
+  wg.addColorStop(0.45,`rgba(90,140,170,${0.16*pgl})`);
+  wg.addColorStop(1,`rgba(40,90,120,${0.08*pgl})`);
+  ctx.fillStyle=wg; ctx.fillRect(0,0,W,H);
+  // a calm equalizer along the bottom — the Incredibox keeps humming
+  ctx.globalAlpha = pgl*0.5;
+  const bars=18, bw=W/bars;
+  for(let i=0;i<bars;i++){
+    const h = 8 + Math.abs(Math.sin(bgT*2 + i*0.6))*26;
+    ctx.fillStyle = BOXER_COLS[i%BOXER_COLS.length];
+    ctx.fillRect(i*bw+2, H-h, bw-4, h);
+  }
+  ctx.restore();
 }
 
 // The right half of the room becomes "normal" — warm sky, Mr. Sun, Mr. Tree —
@@ -875,6 +998,38 @@ function drawBottles(){
     ctx.fillText('?', 0, 4);
     ctx.restore();
   }
+}
+
+// THE PEACEFUL ENDING — little Incredibox singers stand on the calm steps and
+// bob to a shared beat, the corruption finally turned into music.
+function drawBoxers(){
+  const a = Math.min(1, peace.glow);
+  for(const p of platforms){
+    if(!p.boxer || p.gone) continue;
+    const bob = Math.abs(Math.sin(bgT*3 + p.boxer.phase))*4;
+    const x = p.x + p.w/2, y = p.y - 14 - bob;
+    ctx.save(); ctx.globalAlpha=a; ctx.translate(x,y);
+    // body
+    ctx.fillStyle=p.boxer.col; roundRectC(0,0,16,22,5); ctx.fill();
+    // eyes
+    ctx.fillStyle='#0b1a2a'; ctx.beginPath(); ctx.arc(-3.5,-3,1.8,0,6.28); ctx.arc(3.5,-3,1.8,0,6.28); ctx.fill();
+    // open singing mouth — bigger on the beat
+    const mo = 1.5 + Math.abs(Math.sin(bgT*3 + p.boxer.phase))*3;
+    ctx.fillStyle='#0b1a2a'; ctx.beginPath(); ctx.ellipse(0,4,2.6,mo,0,0,6.28); ctx.fill();
+    ctx.restore();
+  }
+}
+
+// floating music notes drifting up — the world humming to itself
+function drawNotes(){
+  ctx.save();
+  for(const n of notes){
+    const a = Math.min(1, peace.glow) * Math.max(0, 1 - n.t/n.life);
+    ctx.globalAlpha = a; ctx.fillStyle = n.col;
+    ctx.font='800 16px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText((n.sw>1?'♫':'♪'), n.x, n.y);
+  }
+  ctx.restore();
 }
 
 function drawTendrils(){
@@ -1011,7 +1166,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · Lore 24 · the final, hardest level', W/2, 226);
+  ctx.fillText('CLASSIC RL · Lore 25 · climb to the Peaceful Ending', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -1025,7 +1180,9 @@ function drawTitle(){
     'or it flattens into an ENDLESS SLIDE.',
     '',
     'Climb. Dodge biting steps and tendrils. Grab',
-    'emeralds. There is no top. Only how high.'
+    'emeralds. Climb far enough and Simon steps back:',
+    'the world goes calm, a peaceful Incredibox with',
+    'Sound Battles, and the lore remains underneath.'
   ];
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 262 + i*20));
 
@@ -1064,7 +1221,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(restore && restore.done){
+  if(peace && peace.done){
+    ctx.fillText('"The chaos happened. The lore remains.', W/2, H*0.64);
+    ctx.fillText(' It was all normal again." — Simon', W/2, H*0.67);
+  } else if(restore && restore.done){
     ctx.fillText('"There are no villains. I was the corruption.', W/2, H*0.64);
     ctx.fillText(' The rest is only perspective." — Simon', W/2, H*0.67);
   } else {

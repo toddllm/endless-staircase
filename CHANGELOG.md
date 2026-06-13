@@ -1,8 +1,30 @@
 # Changelog — The Endless Staircase
 
 All notable changes to the playable game. Newest first. Built from Toby's
-"Secret of Simon's Lore" emails (Lore 24). Live game:
+"Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
+
+## 2026-06-13 — The Peaceful Ending (Lore 25)
+
+Simon steps back from the story and the world settles into its true form.
+Based on Toby's June 13 lore: *"Simon goes back from the story, and now it is
+just only a peaceful incredibox with lore and Sound Battles. It was all normal."*
+
+![The Peaceful Ending — calm Incredibox, Sound Battles, lore underneath](screenshots/08-peaceful-ending.png)
+
+- **The Peaceful Ending** fires after the Restoration, once you climb high
+  enough: Simon **steps back from the story** and his rising tide sinks calmly
+  away. He can no longer catch you.
+- The whole room turns into a **calm Incredibox** — a soft dawn overtakes the
+  void and a gentle **equalizer of light hums** along the bottom.
+- **Incredibox singers** sprout on the calm steps, bobbing to a shared beat and
+  puffing out **music notes** that drift up.
+- **Sound Battles** stays on screen as the last trace, with a reminder that
+  **the lore remains underneath** (the 404/666 errors and Parinusian banners
+  fade to faint memory but never fully disappear).
+- The surface is fully calm: **levers stop, taunts soften, nothing can hurt
+  you.** Simon's line settles to: *"It was all normal."*
+- A warm major chime plays and the horror drone finally hushes.
 
 ## 2026-06-13 — The Restoration (Simon's redemption)
 

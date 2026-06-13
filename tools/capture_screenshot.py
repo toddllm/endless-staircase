@@ -69,6 +69,19 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('There are no villains. I was the corruption.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "peace": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // the Restoration has already happened; now force the Peaceful Ending on
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.active=true; peace.t=5.0; peace.glow=1; peace.done=false; }
+        // let a few calm frames populate the Incredibox singers + notes, then freeze
+        for (var j=0;j<140;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('A calm Incredibox. Sound Battles, the last trace.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
