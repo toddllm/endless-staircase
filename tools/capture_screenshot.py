@@ -12,6 +12,7 @@ Scenes:
     title  (default) — the title screen (always renders the latest lore blurb)
     play             — a few seconds of auto-play (stairs + Simon + hazards)
     cure             — the False Cure scene (two bottles + taunt + banners)
+    residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -247,6 +248,39 @@ SCENES = {
         if (typeof glitch!=='undefined'){ glitch=0.4; }
         window.update = function(){};
         if (typeof showTaunt==='function'){ showTaunt('I take outcomes now, one atomix at a time. Center’s mine.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "residual": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // every prior arc has resolved; the last is THE ATOMIX WAR, then THE RESIDUAL WAR
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        if (typeof residual!=='undefined'){ residual.active=false; residual.done=true; residual.glow=1; residual.t=6.5; }
+        for (var m=0;m<30;m++){ update(1/60); }
+        // a high SPINE meter so the Sound Spine column lights up bright
+        if (typeof spine!=='undefined'){ spine=0.78; }
+        // guarantee half-formed REMNANTS on screen, one of each kind, one near the player
+        if (typeof remnants!=='undefined'){
+          remnants.length=0;
+          remnants.push({x:player.x+72, y:player.y-28, vx:0, vy:0, r:20, t:1.0, wob:0.8, kind:'stair', life:9, fin:0});
+          remnants.push({x:player.x-130, y:player.y-100, vx:0, vy:0, r:18, t:2.0, wob:0.8, kind:'laugh', life:9, fin:0});
+          remnants.push({x:player.x+150, y:player.y+80, vx:0, vy:0, r:19, t:0.5, wob:0.8, kind:'door', life:9, fin:0});
+          remnants.push({x:110, y:player.y-150, vx:0, vy:0, r:21, t:1.5, wob:0.8, kind:'polo', life:9, fin:0});
+          remnants.push({x:W-90, y:player.y+30, vx:0, vy:0, r:17, t:2.5, wob:0.8, kind:'sound', life:9, fin:0});
+        }
+        // freeze on a leading beat so residual-war Simon shows his flickering eyes + caption
+        if (typeof battle!=='undefined'){ battle.t=0.0; battle.leadFlash=1.0; battle.answerActive=true; battle.answerWave=0.4;
+          if (typeof platforms!=='undefined'){ for (var b=0;b<platforms.length;b++){ if(platforms[b].boxer){ platforms[b].boxer.answer=0.7; platforms[b].boxer.infected=true; } } } }
+        if (typeof glitch!=='undefined'){ glitch=0.4; }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('No. 😿 Residual climbs the gap. FINISH it; converge the Sound Spine.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
 }

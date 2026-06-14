@@ -353,6 +353,20 @@ let executioner, executionerH, mark, markTimer;
 // Simon and the floating zones lock into his symbol and lightning seals it.
 let atomix, atomixH, copies, board, curse;
 const INTENTIONS = ['Belong','Close','Fall','Forget','Return to Center'];
+// Lore 27 (the Residual War batch, June 14 2026) — "THE RESIDUAL WAR": Simon, tired of
+// always saying yes and answering the world, finally REFUSES ("No. 😿"). His refusal
+// opens a GAP, and RESIDUAL — a being grown from everything left unfinished (broken
+// stair logic, dead sounds, torn maps, abandoned routes, failed erasures) — climbs up
+// through the loosened seams into the active game. It is not a king or a rival; it only
+// makes winning impossible forever by leaving things half-open. It cannot be fought head
+// on: every blow makes MORE unfinished matter and feeds it. The only way to end it is to
+// FINISH what it leaves unfinished and force it to CONVERGE into one final shape — the
+// SOUND SPINE — and end it all at once. Reach the half-formed REMNANTS to close their
+// gaps; each one fills the SPINE meter. Fill it and the Sound Spine rises and seals the
+// war. Let remnants sit unfinished and they fold back in; let the meter empty and the
+// floor opens into a remembered hole (a nudge, never a wall).
+let residual, residualH, remnants, spine, spineFlash;
+const REMKINDS = ['stair','laugh','polo','door','sound'];  // the unfinished things Residual leaves half-open
 const LEVERS = [
   { type:'fall',      name:'THE STAIRCASE FALLS', warn:1.4, act:2.4 },
   { type:'rearrange', name:'THE STEPS REARRANGE', warn:1.2, act:1.8 },
@@ -395,6 +409,8 @@ function reset(){
   mark = null; markTimer = 3.0;
   atomix = { active:false, t:0, glow:0, done:false }; atomixH = executionerH + 900;
   copies = []; board = 0.55; curse = { type:'', t:0 };   // board: 0 = Simon owns it, 1 = freed by the rebellion
+  residual = { active:false, t:0, glow:0, done:false }; residualH = atomixH + 1000;
+  remnants = []; spine = 0.45; spineFlash = 0;   // spine: 0 = Residual sprawls free, 1 = converged into the Sound Spine
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -420,6 +436,9 @@ function isExecutioner(){ return !!(executioner && (executioner.active || execut
 // Lore 27 (scale-of-reality) — once the executioner phase resolves, Simon turns to
 // conquering the board as a system: THE ATOMIX WAR begins.
 function isAtomix(){ return !!(atomix && (atomix.active || atomix.done)); }
+// Lore 27 (the Residual War) — once the Atomix War resolves, Simon refuses the world
+// ("No. 😿"), the gap opens, and RESIDUAL climbs into the game: THE RESIDUAL WAR begins.
+function isResidual(){ return !!(residual && (residual.active || residual.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -733,9 +752,32 @@ function update(dt){
   }
   if(atomix.glow < (isAtomix() ? 1 : 0))
     atomix.glow = Math.min(1, atomix.glow + dt*0.5);
+  /* ---- Lore 27 (the Residual War) — THE RESIDUAL WAR: past the Atomix War, Simon
+         finally REFUSES the world ("No. 😿"). His refusal opens a gap and RESIDUAL,
+         grown from everything left unfinished, climbs into the active game. It cannot
+         be beaten by fighting (every blow makes more unfinished matter); it has to be
+         FINISHED and forced to CONVERGE into the Sound Spine. Fires past the atomix. ---- */
+  if(atomix.done && !residual.active && !residual.done && height > residualH){
+    residual.active = true; residual.t = 0;
+    shake = Math.max(shake, 9); glitch = Math.max(glitch, 0.7);
+    warnText = 'THE RESIDUAL WAR'; warnT = 2.8;
+    showTaunt('No. 😿  I stop answering the world. Mind the gap.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'RESIDUAL', col:'#9affc8' });
+    copies = [];   // the atomix layer goes quiet; Residual climbs through the gap it left
+    AUDIO.corrupt();
+  }
+  if(residual.active){
+    residual.t += dt;
+    if(residual.t>2.3 && residual.t<2.35) showTaunt('Residual loves gaps. It climbs through the unfinished.');
+    if(residual.t>4.6 && residual.t<4.65) showTaunt('You cannot fight it. FINISH it. Force it to converge.');
+    if(residual.t > 6){ residual.active = false; residual.done = true; }
+  }
+  if(residual.glow < (isResidual() ? 1 : 0))
+    residual.glow = Math.min(1, residual.glow + dt*0.5);
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
-  if(isAtomix()) updateAtomix(dt);
+  if(isAtomix() && !isResidual()) updateAtomix(dt);
+  if(isResidual()) updateResidual(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1181,6 +1223,78 @@ function updateAtomix(dt){
   }
 }
 
+/* ---- Lore 27 (the Residual War) — THE RESIDUAL WAR. Residual is made of everything
+       left unfinished, so it climbs the game as half-formed REMNANTS: a false staircase
+       that flickers in, a reversed laugh, half a polo icon, a false door, a dead sound
+       prompt. Each is UNFINISHED — an open ring with a gap. You cannot beat Residual by
+       fighting; every blow makes more unfinished matter. You FINISH it: reach a remnant
+       to close its gap, and the SPINE meter climbs. Fill the meter and the SOUND SPINE
+       rises, all remnants converge into it, and Residual is ended all at once. Let a
+       remnant sit unfinished and it folds back into the world; let the meter empty and
+       the floor opens into a remembered hole (a nudge, never a wall). ---- */
+function updateResidual(dt){
+  const rg = residual.glow||0;
+  if(spineFlash>0) spineFlash = Math.max(0, spineFlash - dt*1.6);
+  // Residual likes sprawl: convergence slowly slips back toward the unfinished
+  spine = Math.max(0, spine - dt*(0.05 + 0.03*rg));
+  // it climbs the gap as half-formed remnants (capped so the screen never floods)
+  if(remnants.length < 6 && chance(0.03 + 0.04*rg)){
+    remnants.push({
+      x: rnd(MARGIN, W-MARGIN), y: cameraY + (chance(0.5)? -36 : H+36),
+      vx: rnd(-0.3,0.3), vy: rnd(-0.25,0.25),
+      r: rnd(15,22), t: Math.random()*6.28, wob: rnd(0.5,1.1),
+      kind: pick(REMKINDS), life: rnd(5,8), fin:0
+    });
+  }
+  for(const r of remnants){
+    if(r.fin>0){ r.fin += dt; continue; }   // a finished remnant is sealing — leave it
+    r.life -= dt;
+    // it drifts and flickers, half-real
+    r.x += r.vx + Math.sin(r.t*r.wob)*0.3; r.y += r.vy; r.t += dt;
+    r.x = Math.max(MARGIN, Math.min(W-MARGIN, r.x));
+    // FINISH it — close the gap by reaching it; the Sound Spine gains
+    if(Math.abs(r.x-player.x) < r.r+16 && Math.abs(r.y-player.y) < r.r+20){
+      r.fin = 0.001;
+      spine = Math.min(1, spine + 0.085);
+      floaters.push({ x:r.x, y:r.y-22, t:0, txt:'FINISHED', col:'#9affc8' });
+      for(let i=0;i<6;i++) particles.push(spark(r.x, r.y, pick(['#9affc8','#eafff4','#ffd84f'])));
+      AUDIO.battleLead();
+      // the trap: finishing it makes a little more unfinished matter somewhere else
+      if(remnants.length < 7 && chance(0.6)){
+        remnants.push({ x: rnd(MARGIN, W-MARGIN), y: cameraY + (chance(0.5)? -36 : H+36),
+          vx: rnd(-0.3,0.3), vy: rnd(-0.25,0.25), r: rnd(15,22), t:Math.random()*6.28,
+          wob: rnd(0.5,1.1), kind: pick(REMKINDS), life: rnd(5,8), fin:0 });
+      }
+    }
+  }
+  // remnants left unfinished fold back into the world (Residual sprawls)
+  for(const r of remnants){
+    if(r.fin===0 && r.life<=0){
+      spine = Math.max(0, spine - 0.04); glitch = Math.max(glitch, 0.35);
+      floaters.push({ x:r.x, y:r.y-22, t:0, txt:'unfinished...', col:'#7a8a9a' });
+    }
+  }
+  remnants = remnants.filter(r => (r.fin>0 ? r.fin<0.5 : r.life>0) && r.y>cameraY-160 && r.y<cameraY+H+160);
+  // CONVERGE — the Sound Spine rises and Residual is ended all at once (a reward beat)
+  if(spine >= 1){
+    spine = 0.4; spineFlash = 1;
+    shake = Math.max(shake, 10); glitch = Math.max(glitch, 0.5); emer += 5;
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:'CONVERGE — SOUND SPINE', col:'#ffd84f' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#9affc8','#ffd84f','#eafff4'])));
+    showTaunt('Converge. The Sound Spine ends it all at once.');
+    AUDIO.zap();
+  }
+  // let Residual sprawl completely and the floor opens into a remembered hole — the
+  // shaft Simon caught himself from. A small nudge, then the rebellion claws it back.
+  if(spine <= 0.001){
+    spine = 0.25;
+    glitch = Math.max(glitch, 0.7); shake = Math.max(shake, 9);
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'A REMEMBERED HOLE', col:'#9affc8' });
+    AUDIO.glitch();
+    damage();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1213,7 +1327,8 @@ function draw(){
   if(corrupted() && phase2.glow>0.02){ drawCells(); drawBolts(); }
   if(isExposed() && exposed.glow>0.02) drawThoughts();
   if(isExecutioner() && mark) drawMark();
-  if(isAtomix() && atomix.glow>0.02) drawCopies();
+  if(isAtomix() && !isResidual() && atomix.glow>0.02) drawCopies();
+  if(isResidual() && residual.glow>0.02){ drawSpine(); drawRemnants(); }
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -1278,7 +1393,7 @@ function draw(){
   // cell flickers between RED (Simon-owned) and BLUE (freed by the rebellion). The
   // share that is red tracks the board meter, so you can SEE the board being fought
   // over. When the board nearly agrees with Simon, the cells line up into his symbol.
-  if(isAtomix() && atomix.glow>0.02){
+  if(isAtomix() && !isResidual() && atomix.glow>0.02){
     ctx.save();
     const ag = atomix.glow, S=30, cols=Math.ceil(W/S), rows=Math.ceil(H/S);
     const redShare = 1 - board;                    // how much the board agrees with Simon
@@ -1716,10 +1831,11 @@ function drawBattleLead(){
   ctx.restore();
   // little caption under his lead
   ctx.save(); ctx.globalAlpha=a*0.95; ctx.textAlign='center';
-  if(corr){ ctx.fillStyle = (isAtomix()||!isExecutioner())? '#ff3b5c' : '#3ee6ff'; ctx.font='800 10px ui-monospace,monospace';
-    ctx.fillText(isAtomix()? 'PHASE 2 SIMON — the atomix war'
+  if(corr){ ctx.fillStyle = isResidual()? '#9affc8' : ((isAtomix()||!isExecutioner())? '#ff3b5c' : '#3ee6ff'); ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText(isResidual()? 'PHASE 2 SIMON — the residual war'
+               : (isAtomix()? 'PHASE 2 SIMON — the atomix war'
                : (isExecutioner()? 'PHASE 2 SIMON — silent'
-               : (isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked')), x, y-22); }
+               : (isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked'))), x, y-22); }
   else { ctx.fillStyle='#ffd84f'; ctx.font='800 10px ui-monospace,monospace';
     ctx.fillText('SIMON LEADS — fastest', x, y-22); }
   ctx.restore();
@@ -1949,6 +2065,58 @@ function drawCopies(){
   }
 }
 
+// Lore 27 (the Residual War) — half-formed REMNANTS: the unfinished things Residual
+// leaves half-open. Each is an open ring with a GAP plus a glyph of what it once was
+// (a broken staircase, a reversed laugh, half a polo, a false door, a dead sound).
+// Reach one and it FINISHES: the ring closes and flares green.
+function drawRemnants(){
+  for(const r of remnants){
+    ctx.save(); ctx.translate(r.x, r.y);
+    const finishing = r.fin>0;
+    const flick = finishing ? 1 : (0.55 + 0.45*Math.sin(r.t*5));
+    const col = finishing ? '#9affc8' : `rgba(154,255,200,${0.35+0.35*flick})`;
+    ctx.strokeStyle = col; ctx.fillStyle = col;
+    ctx.shadowColor='#9affc8'; ctx.shadowBlur = finishing ? 16 : 8; ctx.lineWidth = 2;
+    // the UNFINISHED ring: an arc with an open gap; finishing closes the whole circle
+    const close = finishing ? 1 : 0.62;
+    ctx.beginPath(); ctx.arc(0,0,r.r, -Math.PI/2, -Math.PI/2 + 6.28*close, false); ctx.stroke();
+    // a half-formed glyph of the old thing it is a remnant of
+    ctx.shadowBlur=0; const g=r.r*0.5;
+    if(r.kind==='stair'){ for(let i=0;i<3;i++) ctx.strokeRect(-g+i*4, g-4-i*5, 7, 4); }
+    else if(r.kind==='laugh'){ ctx.beginPath();
+      for(let i=0;i<=12;i++){ const xx=-g+(2*g)*i/12, yy=Math.sin((i+r.t*6)*0.9)*4;
+        if(i===0) ctx.moveTo(xx,yy); else ctx.lineTo(xx,yy); } ctx.stroke(); }
+    else if(r.kind==='polo'){ ctx.beginPath(); ctx.arc(0,0,g, Math.PI*0.15, Math.PI*1.05, false); ctx.stroke(); }
+    else if(r.kind==='door'){ ctx.strokeRect(-g*0.7, -g*0.2, g*1.4, g*1.5);
+      ctx.beginPath(); ctx.arc(g*0.4, g*0.55, 1.4, 0, 6.28); ctx.stroke(); }
+    else { ctx.beginPath(); ctx.moveTo(-g,-3); ctx.lineTo(-2,-3); ctx.lineTo(g*0.7,-g*0.7);
+      ctx.lineTo(g*0.7,g*0.7); ctx.lineTo(-2,3); ctx.lineTo(-g,3); ctx.closePath(); ctx.stroke(); }
+    ctx.restore();
+  }
+  ctx.shadowBlur=0;
+}
+// Lore 27 (the Residual War) — THE SOUND SPINE: the one structure in Classics that can
+// force Residual into a final shape and end it at once. A bright vertebral column down
+// the center that grows solid as convergence (spine) climbs, and flares gold on CONVERGE.
+function drawSpine(){
+  const x = W/2, top = cameraY-40, bot = cameraY+H+40;
+  const lit = Math.max(spine, spineFlash);
+  if(lit < 0.05) return;
+  ctx.save();
+  ctx.globalAlpha = 0.18 + 0.5*lit + 0.3*spineFlash;
+  ctx.strokeStyle = spineFlash>0 ? '#ffd84f' : '#9affc8';
+  ctx.shadowColor = ctx.strokeStyle; ctx.shadowBlur = 12 + 18*spineFlash;
+  ctx.lineWidth = 2 + 4*lit;
+  ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, bot); ctx.stroke();
+  // vertebrae — the spine's segments, wider and more solid as it converges
+  ctx.lineWidth = 2;
+  for(let yy = top; yy < bot; yy += 26){
+    const w = (10 + 26*lit) * (0.6+0.4*Math.sin((yy*0.05)+time*2));
+    ctx.beginPath(); ctx.moveTo(x-w, yy); ctx.lineTo(x+w, yy); ctx.stroke();
+  }
+  ctx.restore(); ctx.shadowBlur=0;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2010,7 +2178,7 @@ function drawHUD(){
   }
   // ATOMIX WAR (Lore 27) — the BOARD tug-of-war: red = Simon owns it, blue = the
   // rebellion freed it. A Copy of Intention touching you drags the marker left.
-  if(isAtomix() && atomix.glow>0.05){
+  if(isAtomix() && !isResidual() && atomix.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46;
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#ff2b4c'; ctx.fillRect(bx, by, bw*(1-board), 7);          // Simon's share
@@ -2021,6 +2189,19 @@ function drawHUD(){
     if(curse.t>0){ ctx.fillStyle='#ff2b4c'; ctx.fillText('“'+curse.type.toUpperCase()+'”', W/2, by-6); }
     else if(board<0.34){ ctx.fillStyle='#ff2b4c'; ctx.fillText('BOARD: AGREEING WITH SIMON', W/2, by-6); }
     else { ctx.fillStyle='#3ee6ff'; ctx.fillText('REBELLION CLEANS UPWARD — DODGE', W/2, by-6); }
+  }
+  // RESIDUAL WAR (Lore 27) — the SOUND SPINE meter. Finish the half-formed remnants to
+  // climb it; fill it and the Sound Spine converges Residual and ends it all at once.
+  if(isResidual() && residual.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, sp=Math.max(0,Math.min(1,spine));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#2c3a34'; ctx.fillRect(bx, by, bw, 7);                    // the unfinished sprawl
+    ctx.fillStyle = spineFlash>0 ? '#ffd84f' : '#9affc8';
+    ctx.fillRect(bx, by, bw*sp, 7);                                          // convergence toward the Sound Spine
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*sp-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(spineFlash>0){ ctx.fillStyle='#ffd84f'; ctx.fillText('CONVERGE — RESIDUAL SEALED', W/2, by-6); }
+    else { ctx.fillStyle='#9affc8'; ctx.fillText('FINISH THE UNFINISHED — FILL THE SPINE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -2034,11 +2215,12 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'));
+    ctx.fillStyle = isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')));
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isAtomix()? '▓ THE ATOMIX WAR ▓'
+    ctx.fillText(isResidual()? '▓ THE RESIDUAL WAR ▓'
+               : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -2054,7 +2236,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · Lore 27 · Phase 2: The Atomix War', W/2, 226);
+  ctx.fillText('CLASSIC RL · Lore 27 · Phase 2: The Residual War', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -2076,9 +2258,9 @@ function drawTitle(){
     'SILENT EXECUTIONER: quiet, precise, he MARKS you and',
     'strikes one clean bolt. Read it and MOVE off the mark.',
     '',
-    'ATOMIX WAR: he divides the board down to the ATOMIX and',
-    'seeds COPIES OF INTENTION. Dodge them; the rebellion frees',
-    'the board from below. Let it agree with Simon and he seals it.'
+    'ATOMIX WAR: he divides the board to the ATOMIX; dodge his',
+    'COPIES. RESIDUAL WAR: he REFUSES the world, and RESIDUAL',
+    'climbs the gap. FINISH the unfinished; converge the Sound Spine.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));
@@ -2118,7 +2300,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isAtomix()){
+  if(isResidual()){
+    ctx.fillText('"I stopped answering the world, and the gap let Residual in. It is not', W/2, H*0.64);
+    ctx.fillText(' fought, only finished, then forced to converge." — The Residual War', W/2, H*0.67);
+  } else if(isAtomix()){
     ctx.fillText('"I stopped conquering like a fighter. I conquer like a system.', W/2, H*0.64);
     ctx.fillText(' I do not take the land. I take the outcomes." — The Atomix War', W/2, H*0.67);
   } else if(isExecutioner()){

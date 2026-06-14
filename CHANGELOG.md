@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-14 — The Residual War (Lore 27, the "No. 😿" thread)
+
+Based on Toby's June 14 lore: *"Simon then was tired of saying 'Certainly' to anything,
+so he decides not to, Simon then says 'no. 😿', everyone goes upon again. Then The
+Residual War begins."* And what ChatGPT continued, which Toby pasted in: Simon's refusal
+*"creates a gap. Residual loves gaps,"* so **Residual** — *"growing in the dead layers out
+of all the unfinished things everyone left behind: broken stair logic, old corruption,
+failed erasures, torn maps, loose atomix, dead sounds, abandoned routes"* — *"slips upward
+through the loosened seams"* into the active game. The key rule: *"Residual cannot be
+fought like Black... Residual is fought by finishing what it tries to leave unfinished,"*
+but *"every time Simon finishes one thing, Residual grows stronger somewhere else, because
+the war itself creates new unfinished matter. That is the trap."* The only way out:
+*"It has to be forced into one final shape and ended all at once... The Sound Spine.
+So Simon calls everyone back... 'Converge.'"*
+
+![Lore 27 — THE RESIDUAL WAR: the green Sound Spine column running down the center with its vertebrae, half-formed REMNANTS (a broken staircase, a reversed laugh, a false door, half a polo, a dead sound prompt) flickering with open gaps, the PHASE 2 SIMON — the residual war caption, and the FILL THE SPINE convergence meter](screenshots/15-residual-war.png)
+
+- **A tenth arc: THE RESIDUAL WAR.** Climb on past the Atomix War and Simon, tired of
+  always answering the world, finally refuses: *"No. 😿"* His refusal opens a **gap**, a
+  new state fires with its own warning and a green HUD tag **▓ THE RESIDUAL WAR ▓**, and
+  his caption becomes **PHASE 2 SIMON — the residual war**.
+- **Residual climbs through the gap.** It surfaces as half-formed **REMNANTS** of all the
+  unfinished things: a broken staircase, a reversed laugh-wave, half a polo icon, a false
+  door, a dead sound prompt. Each is drawn as an **open ring with a gap** — unfinished,
+  flickering, half-real, drifting through the room.
+- **You finish it, you don't fight it.** Reach a remnant and it **FINISHES**: the ring
+  snaps closed and flares green, and the **SPINE** meter climbs. But finishing one makes a
+  little *new* unfinished matter appear somewhere else (*"the war itself creates new
+  unfinished matter. That is the trap."*). Remnants left alone fold back into the world.
+- **The Sound Spine.** A bright vertebral column runs down the center of the room and
+  grows solid as the SPINE meter fills. Fill it and Residual is forced to **CONVERGE**:
+  the Spine flares gold, the war is sealed all at once, and you are rewarded (+5 emeralds).
+- **A remembered hole.** Let Residual sprawl unchecked and the floor opens into the shaft
+  Simon once caught himself from. A gentle nudge, then the climb continues. New death
+  sting: *"I stopped answering the world, and the gap let Residual in. It is not fought,
+  only finished, then forced to converge." — The Residual War*.
+
 ## 2026-06-13 — The Atomix War (Lore 27, the scale-of-reality batch)
 
 Based on Toby's June 13 lore (a new "Lore 27" thread, the scale-of-reality one):
