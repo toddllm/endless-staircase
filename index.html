@@ -389,6 +389,17 @@ let sounds, soundsH, leadNotes, battleMeter, foePress, winFlash;
 // it. The War of Shapes: hold your OWN shape away from the core and climb to fill the SHAPE
 // meter. Outlast the Torqe and you keep your shape in the Void.
 let voidwar, voidwarH, torqe, shapeMeter, voidPress;
+// THE JUDGMENT FIELD (Lore 27, the "I talk to ChatGPT each time" thread, June 14 2026) —
+// "Simon hated all these repeated wars... he taken off all the pages of his calendar
+// (January in game), Simon became Winter Simon... he beeps and sends signals with his
+// antenna, he taken on a cloak... 'You both ruined the board again.'" So past the Void,
+// Simon stops FIGHTING and starts JUDGING: he freezes every side war, the board turns white
+// with frozen signal-lines, and only the main clash (Alex vs Neo vs Simon) is left in
+// motion. He also runs the Gold Card game: "1 chance to guess 1 out of the 12 thousand
+// cards to find a gold piece, there is only 1 gold piece" — Alex and Gray got 5 emeralds,
+// everyone else got coal. CLIMB WITH PURPOSE to pass judgment; catch the one GOLD CARD
+// among the falling coal.
+let judge, judgeH, verdict;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -440,6 +451,9 @@ function reset(){
   leadNotes = []; battleMeter = 0.25; foePress = { t:0, x:0, active:false, dir:1, hit:false }; winFlash = 0;
   voidwar = { active:false, t:0, glow:0, done:false, held:false, core:W/2 }; voidwarH = soundsH + 1100;
   torqe = 0; shapeMeter = 0.25; voidPress = 0;   // torqe: the speed-law; shapeMeter: keep your own shape
+  judge = { active:false, t:0, glow:0, done:false, held:false, gold:false, presents:[], dropT:1.4 };
+  judgeH = voidwarH + 1100;
+  verdict = 0;   // the judgment meter: climb with purpose and Winter Simon clears you
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -476,6 +490,10 @@ function isSounds(){ return !!(sounds && (sounds.active || sounds.done)); }
 // with his Domain Expansion and says "Torqe": the Blackhole Tower rises and the speed-law
 // engages. THE LORE OF THE VOID begins.
 function isVoid(){ return !!(voidwar && (voidwar.active || voidwar.done)); }
+// THE JUDGMENT FIELD (Lore 27) — once the Lore of the Void resolves, Simon hates the
+// repeated wars, tears January off his calendar, becomes WINTER SIMON, and freezes every
+// side war into a white judgment field where every move is measured.
+function isJudge(){ return !!(judge && (judge.active || judge.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -860,12 +878,35 @@ function update(dt){
     voidwar.glow = Math.min(1, voidwar.glow + dt*0.5);
   torqe = Math.max(0, Math.min(1, torqe + (isVoid()?1:-1)*dt*0.5));   // the speed-law ramps in/out
 
+  /* ---- Lore 27 (the "talk to ChatGPT each time" thread) — THE JUDGMENT FIELD: past the
+         Void, Simon "hated all these repeated wars," tore January off his calendar, and
+         became WINTER SIMON. He stops fighting and starts JUDGING: he freezes every side
+         war, the board turns white with frozen signal-lines, and only the main clash is
+         left. "You both ruined the board again." Fires past the Lore of the Void. ---- */
+  if(voidwar.done && !judge.active && !judge.done && height > judgeH){
+    judge.active = true; judge.t = 0;
+    shake = Math.max(shake, 11); glitch = Math.max(glitch, 0.6);
+    warnText = 'WINTER SIMON — JUDGMENT'; warnT = 2.8;
+    showTaunt('Simon tears January off the calendar. He takes on a cloak. Winter Simon.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'JUDGMENT FIELD', col:'#bfe0ff' });
+    AUDIO.zap();
+  }
+  if(judge.active){
+    judge.t += dt;
+    if(judge.t>2.3 && judge.t<2.35) showTaunt('He beeps and sends signals with his antenna. "You both ruined the board again."');
+    if(judge.t>4.6 && judge.t<4.65) showTaunt('Every side war freezes. Climb with purpose. Find the one gold card.');
+    if(judge.t > 6){ judge.active = false; judge.done = true; }
+  }
+  if(judge.glow < (isJudge() ? 1 : 0))
+    judge.glow = Math.min(1, judge.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
   if(isResidual() && !isSounds()) updateResidual(dt);
   if(isSounds() && !isVoid()) updateSounds(dt);
-  if(isVoid()) updateVoid(dt);
+  if(isVoid() && !isJudge()) updateVoid(dt);
+  if(isJudge()) updateJudge(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1493,6 +1534,57 @@ function updateVoid(dt){
   }
 }
 
+/* ---- Lore 27 (the "talk to ChatGPT each time" thread) — THE JUDGMENT FIELD. Winter
+       Simon froze every side war: the board turns white with frozen signal-lines and only
+       the main clash is left. He measures every move, so you pass judgment by CLIMBING
+       WITH PURPOSE (the VERDICT meter fills while you keep moving upward; it stalls if you
+       just sit still). He also runs the Gold Card game — "1 chance out of 12 thousand
+       cards to find the one gold piece." Presents fall: almost all are COAL, exactly one
+       is the GOLD CARD. Catch the gold for the rare reward (Alex and Gray got 5 emeralds,
+       everyone else got coal). ---- */
+function updateJudge(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the VERDICT meter: keep climbing with purpose and Winter Simon clears you. It fills
+  // while you are airborne or moving (a real climb) and stalls if you just stand still.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  verdict = Math.max(0, Math.min(1, verdict + (moving ? dt*0.05 : -dt*0.012)));
+  // THE GOLD CARD GAME — presents fall from above: almost all coal, exactly one gold.
+  judge.dropT -= dt;
+  if(judge.dropT <= 0){
+    judge.dropT = rnd(0.9, 1.7);
+    // the one gold piece — rare, and only until you have already caught it
+    const gold = !judge.gold && chance(0.09);
+    judge.presents.push({ x: rnd(MARGIN+34, W-MARGIN-34), y: cameraY - 24,
+                          vy: rnd(46, 84), gold, got:false, spin: Math.random()*6.28 });
+  }
+  for(const p of judge.presents){
+    if(p.got) continue;
+    p.y += p.vy * dt; p.spin += dt*2;
+    if(Math.abs(p.x - player.x) < 26 && Math.abs(p.y - player.y) < 26){
+      p.got = true;
+      if(p.gold){
+        judge.gold = true; winFlash = 1; emer += 5; shake = Math.max(shake,6);
+        showTaunt('The one gold piece, out of twelve thousand cards. You won the gold.');
+        floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THE ONE GOLD CARD — 5 EMERALDS ★', col:'#ffd84f' });
+        for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#fff6c8','#ffae00'])));
+        AUDIO.zap();
+      } else {
+        floaters.push({ x:player.x, y:player.y-40, t:0, txt:'COAL', col:'#9aa0b0' });
+      }
+    }
+  }
+  judge.presents = judge.presents.filter(p => !p.got && p.y < cameraY + H + 90);
+  // WIN — you climbed with purpose through the judgment; Winter Simon clears you. Alex and
+  // Gray were the only two who got 5 emeralds; keep your purpose and so do you.
+  if(verdict >= 1 && !judge.held){
+    judge.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('Winter Simon stops walking. You did not ruin the board. Judgment passed.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ JUDGMENT PASSED ★', col:'#bfe0ff' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#bfe0ff','#eafaff','#8fd0ff'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1528,7 +1620,8 @@ function draw(){
   if(isAtomix() && !isResidual() && atomix.glow>0.02) drawCopies();
   if(isResidual() && !isSounds() && residual.glow>0.02){ drawSpine(); drawRemnants(); }
   if(isSounds() && sounds.glow>0.02 && !isVoid()) drawSounds();
-  if(isVoid() && voidwar.glow>0.02) drawVoid();
+  if(isVoid() && voidwar.glow>0.02 && !isJudge()) drawVoid();
+  if(isJudge() && judge.glow>0.02) drawJudge();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -2391,6 +2484,60 @@ function drawVoid(){
   ctx.restore(); ctx.shadowBlur = 0;
 }
 
+// THE JUDGMENT FIELD — Winter Simon froze the board: a pale white wash, a locked lattice of
+// frozen signal-lines with blinking measure-nodes, drifting snow, and the falling Gold Card
+// game presents (dark coal boxes, one bright gold card).
+function drawJudge(){
+  const jg = judge.glow||0; const top = cameraY;
+  ctx.save();
+  // the field freezes white — a pale wash over the whole room
+  ctx.fillStyle = `rgba(210,228,255,${0.20*jg})`;
+  ctx.fillRect(0, top, W, H);
+  // frozen signal-lines — a locked lattice (the side wars, paused mid-motion)
+  ctx.strokeStyle = `rgba(180,212,255,${0.42*jg})`; ctx.lineWidth = 1;
+  ctx.shadowColor = '#bfe0ff'; ctx.shadowBlur = 5;
+  for(let i=0;i<7;i++){ const yy = top + (i+0.5)*H/7;
+    ctx.beginPath(); ctx.moveTo(0, yy); ctx.lineTo(W, yy); ctx.stroke(); }
+  for(let i=0;i<6;i++){ const xx = (i+0.5)*W/6;
+    ctx.beginPath(); ctx.moveTo(xx, top); ctx.lineTo(xx, top+H); ctx.stroke(); }
+  // blinking measure-nodes at the intersections (every move being measured)
+  ctx.shadowBlur = 9;
+  const tick = (time*2)|0;
+  for(let i=0;i<7;i++) for(let j=0;j<6;j++){
+    if(((i*6+j)+tick) % 5 === 0){
+      const yy = top + (i+0.5)*H/7, xx = (j+0.5)*W/6;
+      ctx.fillStyle = `rgba(232,246,255,${0.7*jg})`;
+      ctx.beginPath(); ctx.arc(xx, yy, 2.2, 0, 6.28); ctx.fill();
+    }
+  }
+  ctx.shadowBlur = 0;
+  // drifting snow (Winter Simon)
+  for(let i=0;i<46;i++){
+    const sx = (i*101 + time*22) % W;
+    const sy = top + ((i*57 + time*46) % H);
+    ctx.fillStyle = `rgba(255,255,255,${0.5*jg})`;
+    ctx.fillRect(sx, sy, 2, 2);
+  }
+  // the Gold Card game — falling presents: coal (common) and the one gold card
+  for(const p of judge.presents){
+    if(p.got) continue;
+    ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(Math.sin(p.spin)*0.18);
+    if(p.gold){
+      ctx.shadowColor = '#ffd84f'; ctx.shadowBlur = 14;
+      ctx.fillStyle = '#ffd84f'; roundRectC(0,0,22,30,4); ctx.fill();
+      ctx.fillStyle = '#fff6c8'; ctx.fillRect(-7,-11,14,8);
+      ctx.fillStyle = '#9a7500'; ctx.font = '800 9px ui-monospace,monospace'; ctx.textAlign = 'center';
+      ctx.fillText('GOLD', 0, 8);
+    } else {
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = '#2a2a33'; roundRectC(0,0,18,18,3); ctx.fill();
+      ctx.strokeStyle = 'rgba(90,90,104,0.9)'; ctx.lineWidth = 1.4; ctx.stroke();
+    }
+    ctx.restore();
+  }
+  ctx.restore(); ctx.shadowBlur = 0;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2507,6 +2654,20 @@ function drawHUD(){
     if(voidwar.held){ ctx.fillStyle='#b98cff'; ctx.fillText('★ TORQE OUTLASTED — YOU KEPT YOUR SHAPE ★', W/2, by-6); }
     else { ctx.fillStyle='#b98cff'; ctx.fillText('WAR OF SHAPES — HOLD YOUR SHAPE, KEEP CLIMBING', W/2, by-6); }
   }
+  // THE JUDGMENT FIELD (Lore 27) — the VERDICT meter: Winter Simon froze every side war and
+  // measures every move. Climb with purpose to fill it, and catch the one gold card.
+  if(isJudge() && judge.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, vm=Math.max(0,Math.min(1,verdict));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#1c2738'; ctx.fillRect(bx, by, bw, 7);
+    ctx.fillStyle = winFlash>0 ? '#eafaff' : '#bfe0ff';
+    ctx.fillRect(bx, by, bw*vm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*vm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(judge.held){ ctx.fillStyle='#bfe0ff'; ctx.fillText('★ JUDGMENT PASSED — YOU KEPT YOUR PURPOSE ★', W/2, by-6); }
+    else if(judge.gold){ ctx.fillStyle='#ffd84f'; ctx.fillText('YOU HOLD THE ONE GOLD CARD — KEEP CLIMBING', W/2, by-6); }
+    else { ctx.fillStyle='#bfe0ff'; ctx.fillText('JUDGMENT FIELD — CLIMB WITH PURPOSE, FIND THE GOLD', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -2519,14 +2680,15 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))));
+    ctx.fillStyle = isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))));
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isVoid()? '▓ THE LORE OF THE VOID — TORQE ▓'
+    ctx.fillText(isJudge()? '❄ WINTER SIMON — THE JUDGMENT FIELD ❄'
+               : (isVoid()? '▓ THE LORE OF THE VOID — TORQE ▓'
                : (isSounds()? '▓ THE 17 SOUND BATTLES ▓'
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -2542,7 +2704,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The 17 Sound Battles', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The Judgment Field', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -2566,7 +2728,10 @@ function drawTitle(){
     '',
     'ATOMIX WAR: he divides the board to the ATOMIX. RESIDUAL',
     'WAR: he REFUSES the world; FINISH the unfinished. Then he',
-    'takes command: 17 SOUND BATTLES, all decided through sound.'
+    'takes command: 17 SOUND BATTLES, all decided through sound.',
+    'LORE OF THE VOID: he fuses the Void, says TORQE. Then he',
+    'tires of the wars: WINTER SIMON freezes the board into a',
+    'JUDGMENT FIELD. Climb with purpose; catch the one GOLD CARD.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));
@@ -2606,7 +2771,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isVoid()){
+  if(isJudge()){
+    ctx.fillText('"I hated all these repeated wars, so I tore January off the calendar and', W/2, H*0.64);
+    ctx.fillText(' became Winter Simon. You both ruined the board again." — The Judgment Field', W/2, H*0.67);
+  } else if(isVoid()){
     ctx.fillText('"I created the void, a totally dense space, and fused it with my Domain.', W/2, H*0.64);
     ctx.fillText(' My eyes turned red, I said Torqe, and I jumped." — The Lore of the Void', W/2, H*0.67);
   } else if(isSounds()){

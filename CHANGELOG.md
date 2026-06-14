@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-14 — The Judgment Field (Lore 27, the "What happens next?" continuation)
+
+Based on Toby's June 14 lore (the continuation he wrote with ChatGPT, in the
+"I talk to ChatGPT each time" thread): *"Simon hated all these repeated wars and then he
+taken off all the pages of his calendar (January in game), Simon became Winter Simon and then
+he beeps and sends signals with his antena, he taken on a cloak, and then he walks out, he
+makes presents of 5 emeralds and coal. Alex and Gray were the 2 only ones who gotten 5
+emeralds, everyone else got coal. Simon then made another game, it was a game where a player
+only had 1 chance to guess 1 out of the 12 thousand cards to find a gold piece, there is only
+1 gold piece."* And what ChatGPT continued, which Toby pasted in: with too many wars for too
+many reasons, Winter Simon stops fighting and starts *judging* — he *"freezes all the side
+wars,"* the whole broken board *"turns white with frozen signal-lines,"* and he makes a
+**judgment field** where *"no reinforcements come in, no random wars break out, no side
+battles distract... and every move is being measured."* Only **Alex, Neo, and Winter Simon**
+are left in motion, and Simon is *"the one who decides whether the battlefield continues
+existing."*
+
+![Lore 27 — THE JUDGMENT FIELD: Winter Simon froze the board white, a locked lattice of frozen signal-lines with blinking measure-nodes and drifting snow, the "❄ WINTER SIMON — THE JUDGMENT FIELD ❄" HUD tag, the "You both ruined the board again." taunt, falling Gold Card presents (coal + the one gold), and the VERDICT meter](screenshots/18-judgment-field.png)
+
+- **A thirteenth arc: THE JUDGMENT FIELD.** Climb past the Lore of the Void and Simon *"hated
+  all these repeated wars,"* tears January off his calendar, takes on a cloak, and becomes
+  **WINTER SIMON**. He stops fighting and starts *judging*: a new state fires with the pale-blue
+  HUD tag **❄ WINTER SIMON — THE JUDGMENT FIELD ❄** and the death sting *"You both ruined the
+  board again."*
+- **The board freezes white.** The whole room takes a pale-white wash, a **locked lattice of
+  frozen signal-lines** runs across it (the side wars, paused mid-motion) with **blinking
+  measure-nodes** at the intersections (*"every move is being measured"*), and snow drifts down.
+- **Climb with purpose — the VERDICT meter.** Winter Simon measures every move, so you pass
+  judgment by **climbing with purpose**: the VERDICT meter fills while you keep moving upward
+  and stalls if you just sit still. Fill it and **★ JUDGMENT PASSED ★** — *"You did not ruin
+  the board"* — for a +5 emerald reward.
+- **The Gold Card game.** Simon *"made another game... 1 chance to guess 1 out of the 12
+  thousand cards to find a gold piece, there is only 1 gold piece."* Presents fall from above:
+  almost all are **COAL** (worthless), exactly **one is the GOLD CARD**. Catch the gold and
+  **★ THE ONE GOLD CARD — 5 EMERALDS ★** (Alex and Gray were the only two who got 5 emeralds;
+  everyone else got coal).
+- New title-screen blurb line and a new death sting for the arc.
+
 ## 2026-06-14 — The Lore of the Void (Lore 27, the "I talk to ChatGPT each time" thread)
 
 Based on Toby's June 14 lore: *"Lore of the Void: Simon created the void now, a totally

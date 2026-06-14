@@ -344,6 +344,39 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('VOID EXPANSION AND CLOSING — Marvolent Kitchen And Fork!'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "judgment": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // every prior arc has resolved; the last is THE LORE OF THE VOID, then THE JUDGMENT FIELD
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        if (typeof residual!=='undefined'){ residual.active=false; residual.done=true; residual.glow=1; residual.t=6.5; }
+        if (typeof sounds!=='undefined'){ sounds.active=false; sounds.done=true; sounds.glow=1; sounds.t=6.5; sounds.idx=17; }
+        if (typeof voidwar!=='undefined'){ voidwar.active=false; voidwar.done=true; voidwar.glow=1; voidwar.t=6.5; voidwar.held=true; }
+        // THE JUDGMENT FIELD resolved and lit — Winter Simon froze the board white
+        if (typeof judge!=='undefined'){ judge.active=false; judge.done=true; judge.glow=1; judge.t=6.5; judge.held=false; judge.gold=true; }
+        if (typeof verdict!=='undefined'){ verdict=0.6; }
+        for (var m=0;m<24;m++){ update(1/60); }
+        if (typeof winFlash!=='undefined'){ winFlash=0.5; }
+        // guarantee falling presents on screen: several coal + the one gold card near the player
+        if (typeof judge!=='undefined'){
+          judge.presents = [];
+          judge.presents.push({x:player.x+58, y:player.y-46, vy:60, gold:true, got:false, spin:0.4});
+          judge.presents.push({x:player.x-120, y:player.y-110, vy:54, gold:false, got:false, spin:1.0});
+          judge.presents.push({x:player.x+150, y:player.y+70, vy:70, gold:false, got:false, spin:2.0});
+          judge.presents.push({x:110, y:player.y-150, vy:50, gold:false, got:false, spin:0.5});
+          judge.presents.push({x:W-90, y:player.y+30, vy:62, gold:false, got:false, spin:1.5});
+        }
+        if (typeof showTaunt==='function'){ showTaunt('Winter Simon: "You both ruined the board again." The one gold card falls.'); tauntT=8; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
