@@ -367,6 +367,20 @@ const INTENTIONS = ['Belong','Close','Fall','Forget','Return to Center'];
 // floor opens into a remembered hole (a nudge, never a wall).
 let residual, residualH, remnants, spine, spineFlash;
 const REMKINDS = ['stair','laugh','polo','door','sound'];  // the unfinished things Residual leaves half-open
+// Lore 27 (the "I talk to ChatGPT each time" thread, June 14 2026) — "THE 17 SOUND
+// BATTLES": past the Residual War, Simon takes DIRECT command. "Hope this will shock some
+// sense into ya!" — he fires lightning, seizes the main control panel so nobody controls
+// Simon but Simon, then "Unleash The Domain Expansion — Marvolent Kitchen and Fork!" ends
+// the game all at once. From the wreckage begin 17 SOUND BATTLES: with the board
+// destroyed, only Sound Battle law still makes sense, so everything is decided through
+// sound. ANSWER Simon's lead beats (reach the rising NOTES) to fill the BATTLE meter and
+// force each foe out of its claim; dodge the foe's PRESSURE sweep. Win all 17 and Sound
+// Battle law holds across every dome (the one law that crosses them all). Battle 14 is
+// ToddLLM — the duel of created will, where Simon proves he moves by his own will now.
+let sounds, soundsH, leadNotes, battleMeter, foePress, winFlash;
+const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
+  'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
+  'The Last Stand','Sound Battle Law'];
 const LEVERS = [
   { type:'fall',      name:'THE STAIRCASE FALLS', warn:1.4, act:2.4 },
   { type:'rearrange', name:'THE STEPS REARRANGE', warn:1.2, act:1.8 },
@@ -411,6 +425,8 @@ function reset(){
   copies = []; board = 0.55; curse = { type:'', t:0 };   // board: 0 = Simon owns it, 1 = freed by the rebellion
   residual = { active:false, t:0, glow:0, done:false }; residualH = atomixH + 1000;
   remnants = []; spine = 0.45; spineFlash = 0;   // spine: 0 = Residual sprawls free, 1 = converged into the Sound Spine
+  sounds = { active:false, t:0, glow:0, done:false, idx:0 }; soundsH = residualH + 1000;
+  leadNotes = []; battleMeter = 0.25; foePress = { t:0, x:0, active:false, dir:1, hit:false }; winFlash = 0;
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -439,6 +455,10 @@ function isAtomix(){ return !!(atomix && (atomix.active || atomix.done)); }
 // Lore 27 (the Residual War) — once the Atomix War resolves, Simon refuses the world
 // ("No. 😿"), the gap opens, and RESIDUAL climbs into the game: THE RESIDUAL WAR begins.
 function isResidual(){ return !!(residual && (residual.active || residual.done)); }
+// Lore 27 (the "I talk to ChatGPT each time" thread) — once the Residual War is sealed,
+// Simon takes direct command and destroys the board; only sound law is left: THE 17 SOUND
+// BATTLES begin and decide what returns.
+function isSounds(){ return !!(sounds && (sounds.active || sounds.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -774,10 +794,34 @@ function update(dt){
   }
   if(residual.glow < (isResidual() ? 1 : 0))
     residual.glow = Math.min(1, residual.glow + dt*0.5);
+  /* ---- Lore 27 (the "talk to ChatGPT each time" thread) — THE 17 SOUND BATTLES: past
+         the Residual War, Simon takes DIRECT command. "Hope this will shock some sense
+         into ya!" — lightning, he seizes the main control panel (Simon controls Simon),
+         then the Domain Expansion "Marvolent Kitchen and Fork!" ends the game all at
+         once. With the board destroyed, only Sound Battle law survives, so 17 SOUND
+         BATTLES decide what returns. Fires past the Residual War. ---- */
+  if(residual.done && !sounds.active && !sounds.done && height > soundsH){
+    sounds.active = true; sounds.t = 0; sounds.idx = 0;
+    shake = Math.max(shake, 11); glitch = Math.max(glitch, 0.8);
+    warnText = 'THE 17 SOUND BATTLES'; warnT = 2.8;
+    showTaunt('Hope this will shock some sense into ya! Simon controls Simon now.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'17 SOUND BATTLES', col:'#ffd84f' });
+    remnants = [];   // the Residual layer is sealed; the destroyed board reduces to sound
+    AUDIO.zap();
+  }
+  if(sounds.active){
+    sounds.t += dt;
+    if(sounds.t>2.3 && sounds.t<2.35) showTaunt('Unleash The Domain Expansion — Marvolent Kitchen and Fork!');
+    if(sounds.t>4.6 && sounds.t<4.65) showTaunt('Everything decided through sound now. Battle 1: Simon vs Black.');
+    if(sounds.t > 6){ sounds.active = false; sounds.done = true; }
+  }
+  if(sounds.glow < (isSounds() ? 1 : 0))
+    sounds.glow = Math.min(1, sounds.glow + dt*0.5);
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
-  if(isResidual()) updateResidual(dt);
+  if(isResidual() && !isSounds()) updateResidual(dt);
+  if(isSounds()) updateSounds(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1295,6 +1339,78 @@ function updateResidual(dt){
   }
 }
 
+/* ---- Lore 27 (the "talk to ChatGPT each time" thread) — THE 17 SOUND BATTLES. Simon
+       destroyed the board with the Domain Expansion, so only Sound Battle law is left:
+       everything is decided through sound. Simon LEADS beats — glowing NOTES rise through
+       the room; ANSWER on beat by reaching one and the BATTLE meter climbs. Fill it and
+       the current foe loses its claim and the next of the 17 steps up (Black, Gray, Alex,
+       Luigi Green... Battle 14 is ToddLLM, the duel of created will). The foe answers with
+       a PRESSURE sweep — a band of sound across the room; let it cross you and you take a
+       hit and the meter slips (a nudge, never a wall). Win all 17 and Sound Battle law
+       holds across every dome — the one law that crosses them all. ---- */
+function updateSounds(dt){
+  const sg = sounds.glow||0;
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  const beaten = sounds.idx >= SOUND_FOES.length;   // all 17 claims decided
+  // Simon leads beats — notes rise for you to answer (capped so the room never floods)
+  if(!beaten && leadNotes.length < 5 && chance(0.03 + 0.05*sg)){
+    leadNotes.push({ x: rnd(MARGIN, W-MARGIN), y: cameraY + H + 30,
+      vy: -rnd(0.7,1.2), t: Math.random()*6.28, wob: rnd(0.6,1.1),
+      r: 13, life: rnd(4,6), ans:0 });
+  }
+  for(const n of leadNotes){
+    if(n.ans>0){ n.ans += dt; continue; }   // an answered note is flaring — leave it
+    n.life -= dt; n.y += n.vy; n.x += Math.sin(n.t*n.wob)*0.4; n.t += dt;
+    // ANSWER ON BEAT — reach the rising note; the battle meter climbs
+    if(Math.abs(n.x-player.x) < n.r+16 && Math.abs(n.y-player.y) < n.r+20){
+      n.ans = 0.001;
+      battleMeter = Math.min(1, battleMeter + 0.085);
+      floaters.push({ x:n.x, y:n.y-22, t:0, txt:'ON BEAT', col:'#ffd84f' });
+      for(let i=0;i<6;i++) particles.push(spark(n.x, n.y, pick(['#ffd84f','#eafff4','#3ee6ff'])));
+      AUDIO.battleLead();
+    }
+  }
+  // notes missed (drift off the top) cost a little ground
+  for(const n of leadNotes){
+    if(n.ans===0 && (n.life<=0 || n.y < cameraY-50)) battleMeter = Math.max(0, battleMeter - 0.03);
+  }
+  leadNotes = leadNotes.filter(n => (n.ans>0 ? n.ans<0.5 : (n.life>0 && n.y>cameraY-60)));
+  // the foe answers with a PRESSURE sweep — a band of sound crossing the room
+  if(!beaten){
+    if(!foePress.active && chance(0.012 + 0.01*sg)){
+      foePress.active = true; foePress.t = 0; foePress.hit = false;
+      foePress.x = chance(0.5) ? -40 : W+40; foePress.dir = foePress.x<0 ? 1 : -1;
+    }
+    if(foePress.active){
+      foePress.t += dt; foePress.x += foePress.dir * dt * 220;
+      // crossing the player: a hit and the meter slips (a nudge, never a wall)
+      if(Math.abs(foePress.x - player.x) < 22 && !foePress.hit){
+        foePress.hit = true; damage(); battleMeter = Math.max(0, battleMeter - 0.12);
+        glitch = Math.max(glitch, 0.3);
+      }
+      if(foePress.x < -60 || foePress.x > W+60){ foePress.active = false; foePress.hit = false; }
+    }
+  } else { foePress.active = false; }
+  // WIN the current battle — the foe loses its claim; the next of the 17 steps up
+  if(!beaten && battleMeter >= 1){
+    const foe = SOUND_FOES[sounds.idx];
+    sounds.idx++; battleMeter = 0.2; winFlash = 1;
+    shake = Math.max(shake, 7); emer += (sounds.idx % 3 === 0 ? 2 : 1);
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:foe+' LOSES THE CLAIM', col:'#ffd84f' });
+    for(let i=0;i<14;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#3ee6ff','#eafff4'])));
+    AUDIO.zap();
+    if(sounds.idx < SOUND_FOES.length){
+      const nxt = SOUND_FOES[sounds.idx];
+      showTaunt(sounds.idx===13 ? 'Sound Battle 14 — Simon vs ToddLLM. I move by my will now.'
+              : 'Sound Battle '+(sounds.idx+1)+' — Simon vs '+nxt+'.');
+    } else {
+      emer += 5;
+      showTaunt('All 17 decided. Sound Battle law holds across every dome.');
+      floaters.push({ x:player.x, y:player.y-54, t:0, txt:'SOUND BATTLE LAW HOLDS', col:'#ffd84f' });
+    }
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1328,7 +1444,8 @@ function draw(){
   if(isExposed() && exposed.glow>0.02) drawThoughts();
   if(isExecutioner() && mark) drawMark();
   if(isAtomix() && !isResidual() && atomix.glow>0.02) drawCopies();
-  if(isResidual() && residual.glow>0.02){ drawSpine(); drawRemnants(); }
+  if(isResidual() && !isSounds() && residual.glow>0.02){ drawSpine(); drawRemnants(); }
+  if(isSounds() && sounds.glow>0.02) drawSounds();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -1832,10 +1949,11 @@ function drawBattleLead(){
   // little caption under his lead
   ctx.save(); ctx.globalAlpha=a*0.95; ctx.textAlign='center';
   if(corr){ ctx.fillStyle = isResidual()? '#9affc8' : ((isAtomix()||!isExecutioner())? '#ff3b5c' : '#3ee6ff'); ctx.font='800 10px ui-monospace,monospace';
-    ctx.fillText(isResidual()? 'PHASE 2 SIMON — the residual war'
+    ctx.fillText(isSounds()? 'PHASE 2 SIMON — the 17 sound battles'
+               : (isResidual()? 'PHASE 2 SIMON — the residual war'
                : (isAtomix()? 'PHASE 2 SIMON — the atomix war'
                : (isExecutioner()? 'PHASE 2 SIMON — silent'
-               : (isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked'))), x, y-22); }
+               : (isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked')))), x, y-22); }
   else { ctx.fillStyle='#ffd84f'; ctx.font='800 10px ui-monospace,monospace';
     ctx.fillText('SIMON LEADS — fastest', x, y-22); }
   ctx.restore();
@@ -2117,6 +2235,36 @@ function drawSpine(){
   ctx.restore(); ctx.shadowBlur=0;
 }
 
+// Lore 27 (the 17 Sound Battles) — Simon LEADS the beat: glowing notes rise through the
+// room to be answered on beat, and the current foe answers with a PRESSURE sweep, a band
+// of sound crossing the room. With the board destroyed, sound is the only surviving law.
+function drawSounds(){
+  // the foe's PRESSURE sweep — a translucent band of sound crossing the room
+  if(foePress.active){
+    ctx.save();
+    ctx.fillStyle = 'rgba(62,230,255,0.12)';
+    ctx.fillRect(foePress.x-12, cameraY, 24, H);
+    ctx.strokeStyle = 'rgba(62,230,255,0.65)'; ctx.lineWidth = 2;
+    ctx.shadowColor = '#3ee6ff'; ctx.shadowBlur = 10;
+    ctx.beginPath(); ctx.moveTo(foePress.x, cameraY); ctx.lineTo(foePress.x, cameraY+H); ctx.stroke();
+    ctx.restore(); ctx.shadowBlur = 0;
+  }
+  // Simon's lead beats — glowing eighth-notes rising to be answered on beat
+  for(const n of leadNotes){
+    ctx.save(); ctx.translate(n.x, n.y);
+    const answering = n.ans>0;
+    const flick = answering ? 1 : (0.55 + 0.45*Math.sin(n.t*6));
+    const col = answering ? '#eafff4' : `rgba(255,216,79,${0.4+0.4*flick})`;
+    ctx.fillStyle = col; ctx.strokeStyle = col;
+    ctx.shadowColor = '#ffd84f'; ctx.shadowBlur = answering ? 16 : 8; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.ellipse(-3, 4, 6, 4.5, -0.4, 0, 6.28); ctx.fill();   // note head
+    ctx.beginPath(); ctx.moveTo(3, 4); ctx.lineTo(3, -12); ctx.stroke();      // stem
+    ctx.beginPath(); ctx.moveTo(3, -12); ctx.quadraticCurveTo(11, -9, 9, -2); ctx.stroke();  // flag
+    ctx.restore();
+  }
+  ctx.shadowBlur = 0;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2192,7 +2340,7 @@ function drawHUD(){
   }
   // RESIDUAL WAR (Lore 27) — the SOUND SPINE meter. Finish the half-formed remnants to
   // climb it; fill it and the Sound Spine converges Residual and ends it all at once.
-  if(isResidual() && residual.glow>0.05){
+  if(isResidual() && !isSounds() && residual.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, sp=Math.max(0,Math.min(1,spine));
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#2c3a34'; ctx.fillRect(bx, by, bw, 7);                    // the unfinished sprawl
@@ -2202,6 +2350,23 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(spineFlash>0){ ctx.fillStyle='#ffd84f'; ctx.fillText('CONVERGE — RESIDUAL SEALED', W/2, by-6); }
     else { ctx.fillStyle='#9affc8'; ctx.fillText('FINISH THE UNFINISHED — FILL THE SPINE', W/2, by-6); }
+  }
+  // 17 SOUND BATTLES (Lore 27) — the BATTLE meter + which of the 17 claims is being
+  // decided. Answer Simon's lead beats to fill it; fill it and the foe loses its claim.
+  // Battle 14 is ToddLLM, the duel of created will.
+  if(isSounds() && sounds.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, bm=Math.max(0,Math.min(1,battleMeter));
+    const beaten = sounds.idx >= SOUND_FOES.length;
+    const n = Math.min(sounds.idx+1, SOUND_FOES.length);
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#2a2438'; ctx.fillRect(bx, by, bw, 7);
+    ctx.fillStyle = winFlash>0 ? '#eafff4' : '#ffd84f';
+    ctx.fillRect(bx, by, bw*bm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*bm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(beaten){ ctx.fillStyle='#ffd84f'; ctx.fillText('★ ALL 17 DECIDED — SOUND LAW HOLDS ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffd84f';
+      ctx.fillText('SOUND BATTLE '+n+'/17 — vs '+SOUND_FOES[sounds.idx].toUpperCase(), W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -2215,12 +2380,13 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')));
+    ctx.fillStyle = isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))));
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isResidual()? '▓ THE RESIDUAL WAR ▓'
+    ctx.fillText(isSounds()? '▓ THE 17 SOUND BATTLES ▓'
+               : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -2236,7 +2402,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · Lore 27 · Phase 2: The Residual War', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The 17 Sound Battles', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -2258,9 +2424,9 @@ function drawTitle(){
     'SILENT EXECUTIONER: quiet, precise, he MARKS you and',
     'strikes one clean bolt. Read it and MOVE off the mark.',
     '',
-    'ATOMIX WAR: he divides the board to the ATOMIX; dodge his',
-    'COPIES. RESIDUAL WAR: he REFUSES the world, and RESIDUAL',
-    'climbs the gap. FINISH the unfinished; converge the Sound Spine.'
+    'ATOMIX WAR: he divides the board to the ATOMIX. RESIDUAL',
+    'WAR: he REFUSES the world; FINISH the unfinished. Then he',
+    'takes command: 17 SOUND BATTLES, all decided through sound.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));
@@ -2300,7 +2466,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isResidual()){
+  if(isSounds()){
+    ctx.fillText('"With the board destroyed, only Sound Battle law makes sense. Everything', W/2, H*0.64);
+    ctx.fillText(' is decided through sound now, and Simon controls Simon." — The 17 Sound Battles', W/2, H*0.67);
+  } else if(isResidual()){
     ctx.fillText('"I stopped answering the world, and the gap let Residual in. It is not', W/2, H*0.64);
     ctx.fillText(' fought, only finished, then forced to converge." — The Residual War', W/2, H*0.67);
   } else if(isAtomix()){

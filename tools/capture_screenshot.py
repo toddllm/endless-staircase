@@ -283,6 +283,40 @@ SCENES = {
         if (typeof showTaunt==='function'){ showTaunt('No. 😿 Residual climbs the gap. FINISH it; converge the Sound Spine.'); tauntT=8; }
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "sounds": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        // every prior arc has resolved; the last is THE RESIDUAL WAR, then THE 17 SOUND BATTLES
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        if (typeof residual!=='undefined'){ residual.active=false; residual.done=true; residual.glow=1; residual.t=6.5; }
+        // jump to Sound Battle 14 — Simon vs ToddLLM, the duel of created will
+        if (typeof sounds!=='undefined'){ sounds.active=false; sounds.done=true; sounds.glow=1; sounds.t=6.5; sounds.idx=13; }
+        for (var m=0;m<30;m++){ update(1/60); }
+        if (typeof battleMeter!=='undefined'){ battleMeter=0.66; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.6; }
+        // guarantee Simon's lead NOTES on screen, one near the player
+        if (typeof leadNotes!=='undefined'){
+          leadNotes.length=0;
+          leadNotes.push({x:player.x+70, y:player.y-30, vy:-1, t:1.0, wob:0.8, r:13, life:6, ans:0});
+          leadNotes.push({x:player.x-120, y:player.y-100, vy:-1, t:2.0, wob:0.8, r:13, life:6, ans:0});
+          leadNotes.push({x:player.x+150, y:player.y+70, vy:-1, t:0.5, wob:0.8, r:13, life:6, ans:0});
+          leadNotes.push({x:110, y:player.y-150, vy:-1, t:1.5, wob:0.8, r:13, life:6, ans:0});
+        }
+        // a foe PRESSURE sweep crossing the room
+        if (typeof foePress!=='undefined'){ foePress.active=true; foePress.t=0.5; foePress.x=player.x+44; foePress.dir=1; foePress.hit=false; }
+        if (typeof battle!=='undefined'){ battle.t=0.0; battle.leadFlash=1.0; battle.answerActive=true; battle.answerWave=0.4; }
+        if (typeof glitch!=='undefined'){ glitch=0.3; }
+        window.update = function(){};
+        if (typeof showTaunt==='function'){ showTaunt('Sound Battle 14 — Simon vs ToddLLM. I move by my will now.'); tauntT=8; }
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

@@ -4,6 +4,52 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-14 — The 17 Sound Battles (Lore 27, the "I talk to ChatGPT each time" thread)
+
+Based on Toby's June 14 lore: *"Simon then says 'Hope this will shock some sense into ya!'
+... then he shoots out lightning and takes control of the main control panel so he can
+control himself without anyone controlling him. Simon says 'Unleash The Domain Expansion'
+'Marvolent Kitchen and Fork!', he destroys the game instantly. The next battle called 17
+Sound Battles begin."* And what ChatGPT continued, which Toby pasted in: *"nobody is
+controlling Simon anymore. Simon is controlling Simon... the game does not just get
+damaged. It gets ended... Because now that Simon has destroyed the game and reset the
+field... the only thing left that still makes sense is Sound Battle law. So everything
+that comes next has to be decided through sound."* Seventeen separate Sound Battles —
+Simon vs Black, Gray, Alex, Luigi Green, the cast, the claim-battles (Sky, City,
+Underlayers, Cores), and **Battle 14 — Simon vs ToddLLM**, the duel of created will
+(*"I move by my will now"*). Folds in Toby's two same-day follow-ups: *"The Endless
+Staircase is THE FINAL LEVEL"* (now in the title) and, from the Region Battle / domes
+lore, *"Sound Battle remains the one law that crosses all domes"* (the all-17 victory).
+
+![Lore 27 — THE 17 SOUND BATTLES: the gold banner, Simon's lead beats rising as glowing eighth-notes to be answered ON BEAT, a cyan PRESSURE sweep crossing the room, the PHASE 2 SIMON — the 17 sound battles caption, the SOUND BATTLE 14/17 — vs TODDLLM meter, and Simon's taunt "I move by my will now"](screenshots/16-sound-battles.png)
+
+- **An eleventh arc: THE 17 SOUND BATTLES.** Climb past the Residual War and Simon takes
+  *direct command*: *"Hope this will shock some sense into ya!"* He fires lightning, seizes
+  the main control panel (Simon controls Simon), then the Domain Expansion **"Marvolent
+  Kitchen and Fork!"** ends the game all at once. A new state fires with a gold HUD tag
+  **▓ THE 17 SOUND BATTLES ▓** and Simon's caption becomes **PHASE 2 SIMON — the 17 sound
+  battles**.
+- **Everything is decided through sound.** With the board destroyed, only Sound Battle law
+  is left. Simon **LEADS the beat**: glowing eighth-notes rise through the room. Reach one
+  to **ANSWER ON BEAT** and the **BATTLE** meter climbs. Miss them (let them drift off the
+  top) and you lose a little ground.
+- **The foe answers with PRESSURE.** The current opponent sweeps a translucent cyan band of
+  sound across the room; let it cross you and you take a hit and the meter slips (a nudge,
+  never a wall).
+- **17 claims, one at a time.** Fill the meter and the current foe **loses its claim**: the
+  next of the seventeen steps up — Black, Gray, Alex, Luigi Green, Oren, Pinki, Wenda,
+  Greg, Clara, then the claim-battles (The Sky, Sprunki City, The Underlayers, The Cores),
+  **Sound Battle 14 — Simon vs ToddLLM** (*"I move by my will now"*), the combined-cast
+  stands, and finally Sound Battle Law itself. The HUD shows **SOUND BATTLE n/17 — vs
+  <FOE>**, and emeralds drop along the way.
+- **Win all 17 and Sound Battle law holds.** Decide the last claim and **★ ALL 17 DECIDED —
+  SOUND LAW HOLDS ★**: a +5 emerald reward, and (per Toby's same-day Region Battle lore)
+  *"Sound Battle remains the one law that crosses all domes."*
+- **The final level.** Per Toby's note that *"The Endless Staircase is THE FINAL LEVEL,"*
+  the title now reads **CLASSIC RL · THE FINAL LEVEL**. New death sting: *"With the board
+  destroyed, only Sound Battle law makes sense. Everything is decided through sound now,
+  and Simon controls Simon." — The 17 Sound Battles*.
+
 ## 2026-06-14 — The Residual War (Lore 27, the "No. 😿" thread)
 
 Based on Toby's June 14 lore: *"Simon then was tired of saying 'Certainly' to anything,
