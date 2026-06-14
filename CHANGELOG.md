@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-14 — The Lore of the Void (Lore 27, the "I talk to ChatGPT each time" thread)
+
+Based on Toby's June 14 lore: *"Lore of the Void: Simon created the void now, a totally
+dense space. Simon created the void and then he taken the Void and combined it with his
+Domain Expansion, now it became even stronger, 'VOID EXPANSION AND CLOSING: Marvolent
+Kitchen And Fork'. Simon is now an actual godly character now... he even remade the Endless
+Staircase, he summoned all his pets. Simon Made A Thousand New Robots... Simon also brought
+everything he needed to make the game his, Simon's eyes turned red and he says 'Torqe' and
+he jumps, Several Wars in 1 Happened, what happens next?"* And what ChatGPT continued, which
+Toby pasted in: the world becomes *a stack of wars happening at once*, the **Blackhole
+Tower** becomes the tallest and most dangerous place where *"gravity keeps shifting,"* the
+remade Endless Staircase becomes *"part of the Tower's feeding system,"* and *"Torqe"
+becomes a trigger-word that starts the next speed-law... the entire war suddenly speeds up."*
+The **War of Shapes** is the heart of it: every side fights for *"what shape should Classics
+become?"*
+
+![Lore 27 — THE LORE OF THE VOID: the purple "THE LORE OF THE VOID — TORQE" HUD tag, the Blackhole Tower rising as a column of bent light with accretion rings and red-rimmed void mouths down its core, the "VOID EXPANSION AND CLOSING — Marvolent Kitchen And Fork!" taunt, GODLY SIMON's caption, and the WAR OF SHAPES — HOLD YOUR SHAPE meter](screenshots/17-lore-of-the-void.png)
+
+- **A twelfth arc: THE LORE OF THE VOID.** Climb past the 17 Sound Battles and Simon
+  *"created the void now, a totally dense space,"* fuses it with his Domain Expansion
+  (**VOID EXPANSION AND CLOSING — Marvolent Kitchen And Fork!**), and becomes *"an actual
+  godly character."* His eyes turn red, he says **"Torqe"** and jumps. A new state fires with
+  a purple HUD tag **▓ THE LORE OF THE VOID — TORQE ▓** and Simon's caption becomes **GODLY
+  SIMON — the lore of the void**.
+- **The Blackhole Tower.** A gravity well rises at the center of the room: a column of bent
+  light with swirling accretion rings and a chain of black void-mouths (red-rimmed, for
+  Simon's red eyes) running up its core. It **pulls you toward the center**, and the core
+  **drifts side to side** so the pull keeps shifting (*"gravity keeps shifting"*).
+- **"Torqe" — the speed-law.** While the Void holds, the whole war speeds up: Simon's rising
+  tide comes faster (he benefits most, *"because he was already the fastest"*). A nudge to
+  the pace, never an instant wall.
+- **The War of Shapes.** Hold your **own shape** away from the dense core and keep climbing
+  to fill the **SHAPE** meter (**WAR OF SHAPES — HOLD YOUR SHAPE, KEEP CLIMBING**). Get
+  caught in the core band and the Void presses you: your shape slips and you take an
+  occasional hit (a nudge, never a wall).
+- **Outlast the Torqe.** Fill the SHAPE meter and **★ TORQE OUTLASTED — YOU KEPT YOUR SHAPE
+  ★**: a +5 emerald reward for keeping your own shape inside Simon's god-made Void.
+- New death sting: *"I created the void, a totally dense space, and fused it with my Domain.
+  My eyes turned red, I said Torqe, and I jumped." — The Lore of the Void*.
+
 ## 2026-06-14 — The 17 Sound Battles (Lore 27, the "I talk to ChatGPT each time" thread)
 
 Based on Toby's June 14 lore: *"Simon then says 'Hope this will shock some sense into ya!'

@@ -378,6 +378,17 @@ const REMKINDS = ['stair','laugh','polo','door','sound'];  // the unfinished thi
 // Battle law holds across every dome (the one law that crosses them all). Battle 14 is
 // ToddLLM — the duel of created will, where Simon proves he moves by his own will now.
 let sounds, soundsH, leadNotes, battleMeter, foePress, winFlash;
+// Lore of the Void (Lore 27, the "I talk to ChatGPT each time" thread, June 14 2026) —
+// "Simon created the void now, a totally dense space... combined it with his Domain
+// Expansion, now it became even stronger, VOID EXPANSION AND CLOSING: Marvolent Kitchen
+// And Fork. Simon is now an actual godly character now... he even remade the Endless
+// Staircase... Simon's eyes turned red and he says 'Torqe' and he jumps." So past the 17
+// Sound Battles, Simon fuses the Void with his Domain. He says "Torqe" — a speed-law that
+// speeds the whole war up. The BLACKHOLE TOWER rises at the room's center: a gravity well
+// whose pull keeps shifting (gravity shifts), and the remade Endless Staircase feeds into
+// it. The War of Shapes: hold your OWN shape away from the core and climb to fill the SHAPE
+// meter. Outlast the Torqe and you keep your shape in the Void.
+let voidwar, voidwarH, torqe, shapeMeter, voidPress;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -427,6 +438,8 @@ function reset(){
   remnants = []; spine = 0.45; spineFlash = 0;   // spine: 0 = Residual sprawls free, 1 = converged into the Sound Spine
   sounds = { active:false, t:0, glow:0, done:false, idx:0 }; soundsH = residualH + 1000;
   leadNotes = []; battleMeter = 0.25; foePress = { t:0, x:0, active:false, dir:1, hit:false }; winFlash = 0;
+  voidwar = { active:false, t:0, glow:0, done:false, held:false, core:W/2 }; voidwarH = soundsH + 1100;
+  torqe = 0; shapeMeter = 0.25; voidPress = 0;   // torqe: the speed-law; shapeMeter: keep your own shape
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -459,6 +472,10 @@ function isResidual(){ return !!(residual && (residual.active || residual.done))
 // Simon takes direct command and destroys the board; only sound law is left: THE 17 SOUND
 // BATTLES begin and decide what returns.
 function isSounds(){ return !!(sounds && (sounds.active || sounds.done)); }
+// Lore of the Void (Lore 27) — once the 17 Sound Battles are decided, Simon fuses the Void
+// with his Domain Expansion and says "Torqe": the Blackhole Tower rises and the speed-law
+// engages. THE LORE OF THE VOID begins.
+function isVoid(){ return !!(voidwar && (voidwar.active || voidwar.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -493,6 +510,8 @@ function update(dt){
 
   /* difficulty ramp — Simon's rising tide is the pressure (per 1/60 frame) */
   simonSpeed  = 1.15 + hf*2.4 + time*0.010;
+  /* "Torqe" — Simon's speed-law: in the Void the whole war speeds up (he benefits most) */
+  if(torqe>0) simonSpeed *= (1 + 0.22*torqe);
 
   /* Simon "is the fastest" — periodic lunges (forced-march pressure) */
   roarTimer -= dt;
@@ -817,11 +836,36 @@ function update(dt){
   }
   if(sounds.glow < (isSounds() ? 1 : 0))
     sounds.glow = Math.min(1, sounds.glow + dt*0.5);
+
+  /* ---- Lore 27 (the "talk to ChatGPT each time" thread) — THE LORE OF THE VOID: past the
+         17 Sound Battles, Simon "created the void now, a totally dense space," fuses it with
+         his Domain Expansion (VOID EXPANSION AND CLOSING — Marvolent Kitchen And Fork), and
+         becomes godly. His eyes turn red, he says "Torqe" and jumps: the speed-law engages
+         and the Blackhole Tower rises. Fires past the 17 Sound Battles. ---- */
+  if(sounds.done && !voidwar.active && !voidwar.done && height > voidwarH){
+    voidwar.active = true; voidwar.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.9);
+    warnText = 'VOID EXPANSION — TORQE'; warnT = 2.8;
+    showTaunt('VOID EXPANSION AND CLOSING — Marvolent Kitchen And Fork!');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'TORQE', col:'#b98cff' });
+    AUDIO.zap();
+  }
+  if(voidwar.active){
+    voidwar.t += dt;
+    if(voidwar.t>2.3 && voidwar.t<2.35) showTaunt('Simon’s eyes turn red. "Torqe." Everything speeds up now.');
+    if(voidwar.t>4.6 && voidwar.t<4.65) showTaunt('The Blackhole Tower rises. The War of Shapes — keep your own shape.');
+    if(voidwar.t > 6){ voidwar.active = false; voidwar.done = true; }
+  }
+  if(voidwar.glow < (isVoid() ? 1 : 0))
+    voidwar.glow = Math.min(1, voidwar.glow + dt*0.5);
+  torqe = Math.max(0, Math.min(1, torqe + (isVoid()?1:-1)*dt*0.5));   // the speed-law ramps in/out
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
   if(isResidual() && !isSounds()) updateResidual(dt);
-  if(isSounds()) updateSounds(dt);
+  if(isSounds() && !isVoid()) updateSounds(dt);
+  if(isVoid()) updateVoid(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1411,6 +1455,44 @@ function updateSounds(dt){
   }
 }
 
+/* ---- Lore 27 (the "talk to ChatGPT each time" thread) — THE LORE OF THE VOID. Simon
+       fused the Void (a totally dense space) with his Domain Expansion and said "Torqe":
+       the speed-law sped the war up, and the BLACKHOLE TOWER rose at the room's center. Its
+       gravity well PULLS you toward the core, and the pull keeps shifting (the core drifts —
+       "gravity keeps shifting"). The remade Endless Staircase feeds into it. The War of
+       Shapes: hold your OWN shape away from the dense core and keep climbing to fill the
+       SHAPE meter. Caught in the core band, your shape slips and the Void nudges you. Fill
+       the meter and you outlast the Torqe — you keep your shape in the Void. ---- */
+function updateVoid(dt){
+  const vg = voidwar.glow||0;
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // THE BLACKHOLE TOWER — a gravity well at the room's center that pulls you in; the core
+  // drifts, so the safe side keeps shifting ("gravity keeps shifting").
+  const core = W/2 + Math.sin(time*0.6)*70;
+  voidwar.core = core;
+  const pull = (0.010 + 0.016*vg) * (0.55 + 0.5*Math.sin(time*1.7));   // pulses inward
+  player.x += (core - player.x) * Math.max(0, pull);
+  // caught in the dense center band: the Void presses, your shape slips
+  const inCore = Math.abs(player.x - core) < 26;
+  if(inCore){
+    voidPress = Math.min(1, voidPress + dt*0.85);
+    shapeMeter = Math.max(0, shapeMeter - dt*0.10);
+    if(voidPress>=1){ voidPress=0; damage(); glitch=Math.max(glitch,0.3); }
+  } else {
+    voidPress = Math.max(0, voidPress - dt*0.6);
+    // hold your own shape away from the core, and while you keep climbing, the meter fills
+    shapeMeter = Math.min(1, shapeMeter + dt*0.05);
+  }
+  // WIN — you outlasted the Torqe and the Void closing; you kept your own shape
+  if(shapeMeter >= 1 && !voidwar.held){
+    voidwar.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('Torqe outlasted. You kept your own shape in the Void.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ YOU KEPT YOUR SHAPE ★', col:'#b98cff' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#b98cff','#eafff4','#7a4fff'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1445,7 +1527,8 @@ function draw(){
   if(isExecutioner() && mark) drawMark();
   if(isAtomix() && !isResidual() && atomix.glow>0.02) drawCopies();
   if(isResidual() && !isSounds() && residual.glow>0.02){ drawSpine(); drawRemnants(); }
-  if(isSounds() && sounds.glow>0.02) drawSounds();
+  if(isSounds() && sounds.glow>0.02 && !isVoid()) drawSounds();
+  if(isVoid() && voidwar.glow>0.02) drawVoid();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -1949,11 +2032,12 @@ function drawBattleLead(){
   // little caption under his lead
   ctx.save(); ctx.globalAlpha=a*0.95; ctx.textAlign='center';
   if(corr){ ctx.fillStyle = isResidual()? '#9affc8' : ((isAtomix()||!isExecutioner())? '#ff3b5c' : '#3ee6ff'); ctx.font='800 10px ui-monospace,monospace';
-    ctx.fillText(isSounds()? 'PHASE 2 SIMON — the 17 sound battles'
+    ctx.fillText(isVoid()? 'GODLY SIMON — the lore of the void'
+               : (isSounds()? 'PHASE 2 SIMON — the 17 sound battles'
                : (isResidual()? 'PHASE 2 SIMON — the residual war'
                : (isAtomix()? 'PHASE 2 SIMON — the atomix war'
                : (isExecutioner()? 'PHASE 2 SIMON — silent'
-               : (isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked')))), x, y-22); }
+               : (isExposed()? 'PHASE 2 SIMON — found out' : 'PHASE 2 SIMON — locked'))))), x, y-22); }
   else { ctx.fillStyle='#ffd84f'; ctx.font='800 10px ui-monospace,monospace';
     ctx.fillText('SIMON LEADS — fastest', x, y-22); }
   ctx.restore();
@@ -2265,6 +2349,48 @@ function drawSounds(){
   ctx.shadowBlur = 0;
 }
 
+/* ---- Lore 27 — THE LORE OF THE VOID: the Blackhole Tower (a drifting gravity well) and
+       the dense Void. Drawn in world space. ---- */
+function drawVoid(){
+  const vg = voidwar.glow||0;
+  const core = voidwar.core!=null ? voidwar.core : W/2;
+  const top = cameraY;
+  ctx.save();
+  // the dense Void — a heavy dark wash over the whole room
+  ctx.fillStyle = `rgba(10,4,22,${0.30*vg})`;
+  ctx.fillRect(0, top, W, H);
+  // THE BLACKHOLE TOWER — a vertical column of bent light around the drifting core
+  const grad = ctx.createLinearGradient(core-90, 0, core+90, 0);
+  grad.addColorStop(0, 'rgba(122,79,255,0)');
+  grad.addColorStop(0.5, `rgba(80,40,160,${0.32*vg})`);
+  grad.addColorStop(1, 'rgba(122,79,255,0)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(core-90, top, 180, H);
+  // swirling accretion rings drifting up the tower
+  ctx.strokeStyle = `rgba(185,140,255,${0.5*vg})`;
+  ctx.shadowColor = '#b98cff'; ctx.shadowBlur = 12;
+  for(let i=0;i<7;i++){
+    const yy = top + ((time*40 + i*H/7) % H);
+    const rr = 30 + 26*Math.abs(Math.sin(time*1.1 + i));
+    ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.ellipse(core, yy, rr, rr*0.34, 0, 0, 6.28); ctx.stroke();
+  }
+  // the dense core — black void mouths with a bright red rim (Simon's eyes turned red)
+  for(let yy = top + 30; yy < top + H; yy += 96){
+    const cy = yy + ((time*40) % 96);
+    const r = 20 + 6*Math.sin(time*3 + cy*0.05);
+    const g2 = ctx.createRadialGradient(core, cy, 2, core, cy, r);
+    g2.addColorStop(0, 'rgba(0,0,0,0.92)');
+    g2.addColorStop(0.7, `rgba(20,4,30,${0.7*vg})`);
+    g2.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g2;
+    ctx.beginPath(); ctx.arc(core, cy, r, 0, 6.28); ctx.fill();
+    ctx.strokeStyle = `rgba(255,60,90,${0.55*vg})`; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(core, cy, r*0.7, 0, 6.28); ctx.stroke();
+  }
+  ctx.restore(); ctx.shadowBlur = 0;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2354,7 +2480,7 @@ function drawHUD(){
   // 17 SOUND BATTLES (Lore 27) — the BATTLE meter + which of the 17 claims is being
   // decided. Answer Simon's lead beats to fill it; fill it and the foe loses its claim.
   // Battle 14 is ToddLLM, the duel of created will.
-  if(isSounds() && sounds.glow>0.05){
+  if(isSounds() && sounds.glow>0.05 && !isVoid()){
     const bw=200, bx=W/2-bw/2, by=H-46, bm=Math.max(0,Math.min(1,battleMeter));
     const beaten = sounds.idx >= SOUND_FOES.length;
     const n = Math.min(sounds.idx+1, SOUND_FOES.length);
@@ -2368,6 +2494,19 @@ function drawHUD(){
     else { ctx.fillStyle='#ffd84f';
       ctx.fillText('SOUND BATTLE '+n+'/17 — vs '+SOUND_FOES[sounds.idx].toUpperCase(), W/2, by-6); }
   }
+  // LORE OF THE VOID (Lore 27) — the SHAPE meter: hold your own shape away from the
+  // Blackhole Tower core and climb to fill it; outlast the Torqe and you keep your shape.
+  if(isVoid() && voidwar.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, sm=Math.max(0,Math.min(1,shapeMeter));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#241a3a'; ctx.fillRect(bx, by, bw, 7);
+    ctx.fillStyle = winFlash>0 ? '#eafff4' : '#b98cff';
+    ctx.fillRect(bx, by, bw*sm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*sm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(voidwar.held){ ctx.fillStyle='#b98cff'; ctx.fillText('★ TORQE OUTLASTED — YOU KEPT YOUR SHAPE ★', W/2, by-6); }
+    else { ctx.fillStyle='#b98cff'; ctx.fillText('WAR OF SHAPES — HOLD YOUR SHAPE, KEEP CLIMBING', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -2380,13 +2519,14 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))));
+    ctx.fillStyle = isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))));
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isSounds()? '▓ THE 17 SOUND BATTLES ▓'
+    ctx.fillText(isVoid()? '▓ THE LORE OF THE VOID — TORQE ▓'
+               : (isSounds()? '▓ THE 17 SOUND BATTLES ▓'
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -2466,7 +2606,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isSounds()){
+  if(isVoid()){
+    ctx.fillText('"I created the void, a totally dense space, and fused it with my Domain.', W/2, H*0.64);
+    ctx.fillText(' My eyes turned red, I said Torqe, and I jumped." — The Lore of the Void', W/2, H*0.67);
+  } else if(isSounds()){
     ctx.fillText('"With the board destroyed, only Sound Battle law makes sense. Everything', W/2, H*0.64);
     ctx.fillText(' is decided through sound now, and Simon controls Simon." — The 17 Sound Battles', W/2, H*0.67);
   } else if(isResidual()){
