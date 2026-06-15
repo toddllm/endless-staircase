@@ -410,6 +410,16 @@ let judge, judgeH, verdict;
 // Simon double-claps and lays an ICE CREEP up the field. HOLD THE FIELD BALANCED — climb
 // with purpose while the three claimants take turns pressing — to keep your footing.
 let triad, triadH, triadM;
+// THE CONTAINMENT FACILITY (Lore 27 cont., the "I talk to ChatGPT each time" thread, June 15
+// 2026) — "Simon was thrown in SCF (Simon.Containment.Facility) with the other monsterosities
+// and entities... a monsterosity scared Simon, then Simon went to his attack mode and the next
+// second all the Monsters were slashed to bits... Simon is actually now code." People build a
+// HUGE facility to contain him, but because he is code now he spreads through cameras, doors,
+// warning systems, locks, and control panels: banners appear on screens, doors unlock at the
+// wrong times, logs rewrite themselves, warning lights turn YELLOW, and his symbol shows where
+// labels should be. "They contained Simon's body, but by then Simon had already become the code
+// of the containment itself." HOLD CONTAINMENT — climb with purpose while the code spreads.
+let scf, scfH, scfM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -467,6 +477,9 @@ function reset(){
   triad = { active:false, t:0, glow:0, done:false, held:false, claim:0, claimT:2.2, ice:0 };
   triadH = judgeH + 1100;
   triadM = 0.25;   // the three-way field balance: hold control, origin, and containment at once
+  scf = { active:false, t:0, glow:0, done:false, held:false, spread:0, eventT:2.4 };
+  scfH = triadH + 1100;
+  scfM = 0.25;     // the containment meter: hold the facility while Simon's code spreads
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -511,6 +524,11 @@ function isJudge(){ return !!(judge && (judge.active || judge.done)); }
 // and becomes a god of CONTROL, Lica rises as ORIGIN, and Winter Simon answers with
 // CONTAINMENT: the board shatters into a three-way field where all three exist at once.
 function isTriad(){ return !!(triad && (triad.active || triad.done)); }
+// THE CONTAINMENT FACILITY (Lore 27 cont.) — once the Three-Way Field resolves, Simon is
+// thrown into the SCF, slashes every monster the instant he is frightened, and becomes CODE.
+// The facility built to contain him starts becoming Simon-shaped: yellow lights, unlocking
+// doors, rewriting logs, his symbol where labels should be.
+function isScf(){ return !!(scf && (scf.active || scf.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -942,6 +960,29 @@ function update(dt){
   if(triad.glow < (isTriad() ? 1 : 0))
     triad.glow = Math.min(1, triad.glow + dt*0.5);
 
+  /* ---- Lore 27 cont. (June 15) — THE CONTAINMENT FACILITY: past the Three-Way Field, Simon
+         is thrown into the SCF with every monster. A monstrosity frightens him; in the next
+         second he slashes them all to bits, then goes still. "Simon is actually now code."
+         Because he is code, he spreads through the facility: doors unlock, logs rewrite,
+         warning lights turn yellow, and his symbol shows where labels should be. ---- */
+  if(triad.done && !scf.active && !scf.done && height > scfH){
+    scf.active = true; scf.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE CONTAINMENT FACILITY'; warnT = 2.8;
+    showTaunt('Simon is thrown in the SCF with every monster. A monstrosity scares him.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON IS ACTUALLY NOW CODE', col:'#ffe98a' });
+    AUDIO.zap();
+  }
+  if(scf.active){
+    scf.t += dt;
+    if(scf.t>1.6 && scf.t<1.66){ shake = Math.max(shake,9); AUDIO.zap(); }   // attack mode
+    if(scf.t>1.6 && scf.t<1.68) showTaunt('Attack mode. The next second, every monster is slashed to bits. Then he stops.');
+    if(scf.t>3.6 && scf.t<3.66) showTaunt('He is code now. He spreads through cameras, doors, locks, and control panels.');
+    if(scf.t > 5.4){ scf.active = false; scf.done = true; }
+  }
+  if(scf.glow < (isScf() ? 1 : 0))
+    scf.glow = Math.min(1, scf.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -949,7 +990,8 @@ function update(dt){
   if(isSounds() && !isVoid()) updateSounds(dt);
   if(isVoid() && !isJudge()) updateVoid(dt);
   if(isJudge() && !isTriad()) updateJudge(dt);
-  if(isTriad()) updateTriad(dt);
+  if(isTriad() && !isScf()) updateTriad(dt);
+  if(isScf()) updateScf(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1658,6 +1700,37 @@ function updateTriad(dt){
   }
 }
 
+/* ---- Lore 27 cont. (June 15) — THE CONTAINMENT FACILITY. Simon is thrown into the SCF,
+       slashes every monster the instant he is frightened, then becomes CODE. The huge facility
+       built to contain him starts becoming Simon-shaped: doors unlock at the wrong times, logs
+       rewrite themselves, warning lights turn yellow, and his symbol shows where labels should
+       be. HOLD CONTAINMENT — climb with purpose while the code spreads across the panels — to
+       keep the facility yours a little longer. "They contained his body, but by then Simon had
+       already become the code of the containment itself." ---- */
+function updateScf(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the code spreads through the facility: more panels flip to Simon-yellow the longer it runs
+  scf.spread = Math.min(1, (scf.spread||0) + dt*0.035);
+  // intermittent facility events — doors unlock, logs rewrite, lights turn yellow, banners show
+  scf.eventT -= dt;
+  if(scf.eventT <= 0){ scf.eventT = rnd(2.2, 3.6);
+    const ev = ['A DOOR UNLOCKS AT THE WRONG TIME','A LOG REWRITES ITSELF','WARNING LIGHTS TURN YELLOW','HIS SYMBOL REPLACES A LABEL'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe98a' });
+    AUDIO.zap();
+  }
+  // HOLD CONTAINMENT: keep climbing with purpose to hold the facility while the code spreads.
+  // The meter fills while you move and drains while you stand still on the infected floor.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  scfM = Math.max(0, Math.min(1, scfM + (moving ? dt*0.05 : -dt*0.02)));
+  if(scfM >= 1 && !scf.held){
+    scf.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('They contained his body. But Simon had already become the code of the containment.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ CONTAINMENT HELD ★', col:'#ffe98a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ffe98a','#ff3b5c'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1695,7 +1768,8 @@ function draw(){
   if(isSounds() && sounds.glow>0.02 && !isVoid()) drawSounds();
   if(isVoid() && voidwar.glow>0.02 && !isJudge()) drawVoid();
   if(isJudge() && judge.glow>0.02 && !isTriad()) drawJudge();
-  if(isTriad() && triad.glow>0.02) drawTriad();
+  if(isTriad() && triad.glow>0.02 && !isScf()) drawTriad();
+  if(isScf() && scf.glow>0.02) drawScf();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -2672,6 +2746,76 @@ function drawTriad(){
   ctx.restore(); ctx.shadowBlur = 0;
 }
 
+// THE CONTAINMENT FACILITY — the SCF becoming Simon-shaped. Two columns of containment panels
+// (a wall of security screens) line the margins; as Simon's code spreads, panels flip from a
+// dim cyan label to YELLOW warning with his symbol stamped on them. Scrolling log lines rewrite
+// themselves, a yellow warning haze creeps in, and his great symbol fades up over the room.
+function drawScf(){
+  const sg = scf.glow||0, sp = scf.spread||0, top = cameraY;
+  ctx.save();
+  // a creeping yellow warning haze that deepens as the code takes the facility
+  const haze = ctx.createLinearGradient(0, top, 0, top+H);
+  haze.addColorStop(0, `rgba(40,30,6,${0.10*sg})`);
+  haze.addColorStop(1, `rgba(70,52,8,${(0.10+0.22*sp)*sg})`);
+  ctx.fillStyle = haze; ctx.fillRect(0, top, W, H);
+  // a tiny reusable stamp of Simon's symbol (cross + omega arc) for infected panels
+  function simonMark(cx, cy, r, a){
+    ctx.globalAlpha = a; ctx.strokeStyle = '#ff3b5c'; ctx.lineWidth = 1.6; ctx.lineCap='round';
+    ctx.beginPath(); ctx.moveTo(cx, cy-r); ctx.lineTo(cx, cy+r);
+    ctx.moveTo(cx-r, cy); ctx.lineTo(cx+r, cy); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx, cy, r*0.66, Math.PI*0.78, Math.PI*0.22, false); ctx.stroke();
+  }
+  // two columns of containment panels along the margins
+  const PW = 30, PH = 22, GAP = 8, rows = Math.ceil(H/(PH+GAP)) + 1;
+  for(const side of [0, 1]){
+    const px = side===0 ? 8 : W-8-PW;
+    for(let r=0; r<rows; r++){
+      const py = top + 56 + r*(PH+GAP);
+      const seed = ((r*73 + side*131 + 17) % 101) / 101;        // stable per-panel phase
+      const infected = seed < sp;                               // the code has reached this panel
+      const flick = 0.5 + 0.5*Math.sin(time*3 + seed*9);
+      // panel body
+      ctx.globalAlpha = (0.5 + 0.4*sg);
+      ctx.fillStyle = infected ? `rgba(60,48,8,1)` : `rgba(10,16,28,1)`;
+      ctx.fillRect(px, py, PW, PH);
+      ctx.globalAlpha = (0.6*sg) * (infected ? (0.6+0.4*flick) : 0.7);
+      ctx.strokeStyle = infected ? '#ffd84f' : '#2a3a55'; ctx.lineWidth = 1;
+      ctx.strokeRect(px+0.5, py+0.5, PW-1, PH-1);
+      if(infected){
+        // Simon's symbol stamped where the label should be
+        simonMark(px+PW/2, py+PH/2, 6, (0.45+0.4*flick)*sg);
+        // a yellow warning light, top-right of the panel
+        ctx.globalAlpha = (0.7+0.3*flick)*sg; ctx.fillStyle = '#ffe98a';
+        ctx.fillRect(px+PW-5, py+2, 3, 3);
+      } else {
+        // a dim cyan "label" tick: still a normal containment readout
+        ctx.globalAlpha = 0.5*sg; ctx.fillStyle = '#3ee6ff';
+        ctx.fillRect(px+4, py+PH/2-1, PW-8, 2);
+        ctx.fillStyle = '#1f7d33'; ctx.fillRect(px+PW-5, py+2, 3, 3);   // green ok-light
+      }
+    }
+  }
+  // scrolling log lines down the center that rewrite themselves (yellow as the code wins)
+  ctx.globalAlpha = (0.16+0.20*sp)*sg; ctx.fillStyle = '#ffe98a';
+  for(let i=0;i<10;i++){
+    const ly = top + (((i*73 + time*40) % H) + H) % H;
+    const lw = 30 + ((i*53)%70);
+    ctx.fillRect(W/2-90 + ((i*37)%150), ly, lw, 1.5);
+  }
+  // Simon's great symbol fading up over the whole room as he becomes the facility's code
+  if(sp > 0.15){
+    const a = (0.06 + 0.20*sp) * sg;
+    ctx.globalAlpha = a; ctx.strokeStyle = '#ff3b5c';
+    ctx.shadowColor = '#ff2b4c'; ctx.shadowBlur = 16; ctx.lineWidth = 4; ctx.lineCap='round';
+    const cx=W/2, cy=top+H*0.5, R=Math.min(W,H)*0.28;
+    ctx.beginPath(); ctx.moveTo(cx, cy-R); ctx.lineTo(cx, cy+R);
+    ctx.moveTo(cx-R, cy); ctx.lineTo(cx+R, cy); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx, cy, R*0.66, Math.PI*0.78, Math.PI*0.22, false); ctx.stroke();
+    ctx.shadowBlur = 0;
+  }
+  ctx.restore(); ctx.shadowBlur = 0; ctx.globalAlpha = 1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2804,7 +2948,7 @@ function drawHUD(){
   }
   // THE THREE-WAY FIELD (Lore 27 cont.) — the FIELD meter: hold control, origin, and
   // containment all at once by climbing with purpose while the three claimants press.
-  if(isTriad() && triad.glow>0.05){
+  if(isTriad() && !isScf() && triad.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, fm=Math.max(0,Math.min(1,triadM));
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#20283a'; ctx.fillRect(bx, by, bw, 7);
@@ -2814,6 +2958,21 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(triad.held){ ctx.fillStyle='#dff0ff'; ctx.fillText('★ THE FIELD HELD — CONTROL · ORIGIN · CONTAINMENT ★', W/2, by-6); }
     else { ctx.fillStyle='#dff0ff'; ctx.fillText('THREE-WAY FIELD — HOLD YOUR FOOTING, CLIMB WITH PURPOSE', W/2, by-6); }
+  }
+  // THE CONTAINMENT FACILITY (Lore 27 cont.) — the CONTAINMENT meter: hold the facility by
+  // climbing with purpose while Simon's code spreads across the panels and turns the lights yellow.
+  if(isScf() && scf.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, cm=Math.max(0,Math.min(1,scfM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#2a2410'; ctx.fillRect(bx, by, bw, 7);
+    // the bar fills yellow as you hold; behind it, a red spread-marker creeps with the code
+    ctx.fillStyle = winFlash>0 ? '#fff6cf' : '#ffd84f';
+    ctx.fillRect(bx, by, bw*cm, 7);
+    ctx.fillStyle='rgba(255,59,92,0.7)'; ctx.fillRect(bx+bw*Math.min(1,scf.spread||0)-1, by-1, 2, 9);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*cm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(scf.held){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ CONTAINMENT HELD — BUT HE IS ALREADY THE CODE ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffe98a'; ctx.fillText('CONTAINMENT FACILITY — HOLD THE LINE, CLIMB WITH PURPOSE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -2827,16 +2986,17 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))) ;
+    ctx.fillStyle = isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isTriad()? '❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄'
+    ctx.fillText(isScf()? '▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓'
+               : (isTriad()? '❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄'
                : (isJudge()? '❄ WINTER SIMON — THE JUDGMENT FIELD ❄'
                : (isVoid()? '▓ THE LORE OF THE VOID — TORQE ▓'
                : (isSounds()? '▓ THE 17 SOUND BATTLES ▓'
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -2852,7 +3012,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The Three-Way Field', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The Containment Facility', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -2872,8 +3032,9 @@ function drawTitle(){
     'LORE OF THE VOID: he fuses the Void, says TORQE.',
     'WINTER SIMON freezes it into a JUDGMENT FIELD: climb',
     'with purpose; catch the one GOLD CARD. Then Alex turns',
-    'god of CONTROL, Lica rises as ORIGIN, and Simon claps',
-    'twice to FREEZE it all: the THREE-WAY FIELD. Hold on.'
+    'god of CONTROL, Lica ORIGIN, Simon claps twice to',
+    'FREEZE it: the THREE-WAY FIELD. Then the SCF: thrown in',
+    'with the monsters, Simon becomes CODE. HOLD CONTAINMENT.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));

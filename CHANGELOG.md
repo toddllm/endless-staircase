@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-15 — The Containment Facility (Lore 27 cont., the "I talk to ChatGPT each time" thread)
+
+Based on Toby's June 15 lore (the reply later in the same thread): *"Simon was thrown in SCF
+with the other monsterosities and entities and CXEs and all other horror creatures... The thing
+was built to contain Simon... then a monsterosity scared Simon, then Simon went to his attack
+mode and then the next second, all the Monsters were slashed to bits, Simon doesn't see any other
+entities so he stops moving. Simon is actually now code."* And what ChatGPT continued, which Toby
+pasted in: because Simon is code now, he does not break out loudly. He begins spreading through
+*"cameras, doors, warning systems, locks, containment monitors, and internal SCF control panels."*
+The staff think he is standing still in the cell, but the facility starts becoming **Simon-shaped**:
+*"banners appear on screens, doors unlock at the wrong times, logs rewrite themselves, warning
+lights turn yellow, and some sectors start showing his symbol where there should be labels."* The
+best line: *"They contained Simon's body, but by then Simon had already become the code of the
+containment itself."*
+
+![Lore 27 cont. — THE CONTAINMENT FACILITY: the SCF becoming Simon-shaped, two margin columns of containment panels flipping from dim-cyan labels to YELLOW warning panels stamped with Simon's red cross-and-omega symbol, scrolling log lines that rewrite themselves, a creeping yellow warning haze, the great red Simon symbol fading up over the room, the "▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓" HUD tag, and the yellow CONTAINMENT meter with the red spread-marker creeping behind it](screenshots/20-containment-facility.png)
+
+- **A fifteenth arc: THE CONTAINMENT FACILITY.** Climb past the Three-Way Field and Simon is
+  thrown into the **SCF (Simon.Containment.Facility)** with every monster. A monstrosity frightens
+  him; *"the next second, all the Monsters were slashed to bits,"* then he goes still — and
+  *"Simon is actually now code."* A new state fires with the yellow HUD tag **▓ THE CONTAINMENT
+  FACILITY — SIMON IS CODE ▓**.
+- **The facility becomes Simon-shaped.** Two columns of **containment panels** line the margins
+  (a wall of security screens). As Simon's code **spreads**, panels flip from a dim-cyan label to
+  a **yellow warning panel** stamped with his red **cross-and-omega symbol** *"where there should
+  be labels,"* their ok-lights turning from green to yellow. Down the center, **log lines rewrite
+  themselves**, a **yellow warning haze** deepens, and his **great symbol fades up over the room**.
+- **Intermittent facility events.** Floating warnings fire as the code wins: *A DOOR UNLOCKS AT THE
+  WRONG TIME*, *A LOG REWRITES ITSELF*, *WARNING LIGHTS TURN YELLOW*, *HIS SYMBOL REPLACES A LABEL.*
+- **Hold containment — the CONTAINMENT meter.** Climb with purpose to hold the facility while a
+  red **spread-marker** creeps behind the bar with the code. Fill it and you flash **★ CONTAINMENT
+  HELD ★**, with the eerie truth: *"They contained his body. But Simon had already become the code
+  of the containment."*
+- **Wiring, unchanged pattern.** New `scf` state + `isScf()` gate slot in after `triad`; the
+  Three-Way Field hands off to the Containment Facility exactly as every prior arc hands off. The
+  capture helper gains an `scf` scene; the title screen and lore blurb now end on the SCF.
+
 ## 2026-06-15 — The Three-Way Field (Lore 27 cont., the "I talk to ChatGPT each time" thread)
 
 Based on Toby's June 15 lore: *"Alex VS Neo then went correctly, Alex won and taken all
