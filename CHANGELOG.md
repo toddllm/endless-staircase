@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-15 — The Three-Way Field (Lore 27 cont., the "I talk to ChatGPT each time" thread)
+
+Based on Toby's June 15 lore: *"Alex VS Neo then went correctly, Alex won and taken all
+Neo's and everyone's power, Alex became a god now. Lica came over and claims that she's the
+center of everything and that everything flows from her (it actually does)... Alex VS Lica
+happened 3 times, Alex beaten Lica those 3 times. Pupahya revealed all the domains... bro
+can open all dimensions just with speed and he is also super strong to. Simon clapped his
+hands 2 times, then ice formed underneath him, more and more ice appears when he walked.
+What happens next?"* And what ChatGPT continued, which Toby pasted in: after Alex beats Neo,
+the whole war stops orbiting Neo and starts orbiting **Alex** — *Neo was kingship, Lica was
+origin, Pupahya was spread and love, but Alex is becoming **control***. The open dimensions
+do not close; they *"hover like open choices."* The world splits into three pressures —
+**Alex pressure (control)**, **Lica pressure (origin/source)**, and **Simon pressure
+(containment)** — and Simon answers with *Winter logic: freeze routes, slow spread, make
+movement cost more.* One dimension shatters into a mixed field that is *"part source-light
+from Lica, part built structure from Alex, part winter-lock from Simon,"* and that becomes
+the next battlefield, *"the first place where origin, control, and containment all exist at
+once."*
+
+![Lore 27 cont. — THE THREE-WAY FIELD: the shattered dimension split into three colored zones (Lica's source-light, Simon's winter-lock, Alex's built structure) with jagged bright seams between them, the rising ICE CREEP with its crystalline frozen front line (Simon clapped twice and ice spread with every step), the "❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄" HUD tag, and the FIELD balance meter](screenshots/19-three-way-field.png)
+
+- **A fourteenth arc: THE THREE-WAY FIELD.** Climb past the Judgment Field and Alex defeats
+  Neo, *"became a god now"* — the war stops orbiting Neo and orbits **CONTROL**. A new state
+  fires with the pale-blue HUD tag **❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄**.
+- **Three claimants, one field.** The board shatters into **three colored vertical zones** —
+  **Lica** (origin / source-light, pink-gold), **Simon** (containment / winter-lock, ice-blue),
+  and **Alex** (control / built structure, violet-steel) — with jagged bright **seams** where
+  they meet (*"the first place where origin, control, and containment all exist at once"*).
+  The three take turns **claiming the field**; the claimed zone brightens.
+- **Simon claps twice; ice spreads.** *"Simon clapped his hands 2 times, then ice formed
+  underneath him, more and more ice appears when he walked."* On the double-clap, an **ICE
+  CREEP** rises from the bottom of the field with a crystalline frozen front line and spikes,
+  spreading further the longer the arc runs (Winter logic: freeze routes, slow spread).
+- **Hold the field — the FIELD meter.** Among all three pressures you pass by **climbing with
+  purpose**: the FIELD balance meter fills while you keep moving and drains if you stand still
+  on the freezing field. Fill it and **★ THE FIELD HELD — CONTROL · ORIGIN · CONTAINMENT ★**
+  for a +5 emerald reward (*"You held the field... Footing kept."*).
+- New title-screen blurb lines and a new death sting for the arc.
+
 ## 2026-06-14 — The Judgment Field (Lore 27, the "What happens next?" continuation)
 
 Based on Toby's June 14 lore (the continuation he wrote with ChatGPT, in the

@@ -400,6 +400,16 @@ let voidwar, voidwarH, torqe, shapeMeter, voidPress;
 // everyone else got coal. CLIMB WITH PURPOSE to pass judgment; catch the one GOLD CARD
 // among the falling coal.
 let judge, judgeH, verdict;
+// THE THREE-WAY FIELD (Lore 27 cont., the "I talk to ChatGPT each time" thread, June 15
+// 2026) — "Alex VS Neo... Alex won and taken all... power, Alex became a god now. Lica...
+// claims that she's the center of everything and that everything flows from her. Pupahya
+// revealed all the domains... Simon clapped his hands 2 times, then ice formed underneath
+// him, more and more ice appears when he walked." Past the Judgment Field the war stops
+// orbiting Neo and orbits ALEX: it becomes a three-way field of CONTROL (Alex) vs ORIGIN
+// (Lica) vs CONTAINMENT (Winter Simon's freeze), with Pupahya keeping every dimension open.
+// Simon double-claps and lays an ICE CREEP up the field. HOLD THE FIELD BALANCED — climb
+// with purpose while the three claimants take turns pressing — to keep your footing.
+let triad, triadH, triadM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -454,6 +464,9 @@ function reset(){
   judge = { active:false, t:0, glow:0, done:false, held:false, gold:false, presents:[], dropT:1.4 };
   judgeH = voidwarH + 1100;
   verdict = 0;   // the judgment meter: climb with purpose and Winter Simon clears you
+  triad = { active:false, t:0, glow:0, done:false, held:false, claim:0, claimT:2.2, ice:0 };
+  triadH = judgeH + 1100;
+  triadM = 0.25;   // the three-way field balance: hold control, origin, and containment at once
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -494,6 +507,10 @@ function isVoid(){ return !!(voidwar && (voidwar.active || voidwar.done)); }
 // repeated wars, tears January off his calendar, becomes WINTER SIMON, and freezes every
 // side war into a white judgment field where every move is measured.
 function isJudge(){ return !!(judge && (judge.active || judge.done)); }
+// THE THREE-WAY FIELD (Lore 27 cont.) — once the Judgment Field resolves, Alex defeats Neo
+// and becomes a god of CONTROL, Lica rises as ORIGIN, and Winter Simon answers with
+// CONTAINMENT: the board shatters into a three-way field where all three exist at once.
+function isTriad(){ return !!(triad && (triad.active || triad.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -900,13 +917,39 @@ function update(dt){
   if(judge.glow < (isJudge() ? 1 : 0))
     judge.glow = Math.min(1, judge.glow + dt*0.5);
 
+  /* ---- Lore 27 cont. (June 15) — THE THREE-WAY FIELD: past the Judgment Field, Alex beats
+         Neo and becomes a god ("Alex became a god now"), Lica rises claiming "everything
+         flows from me" (ORIGIN), and Winter Simon answers by freezing the field
+         (CONTAINMENT). Simon "clapped his hands 2 times, then ice formed underneath him,
+         more and more ice appears when he walked." The board shatters into one field where
+         CONTROL, ORIGIN, and CONTAINMENT all exist at once. ---- */
+  if(judge.done && !triad.active && !triad.done && height > triadH){
+    triad.active = true; triad.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE THREE-WAY FIELD'; warnT = 2.8;
+    showTaunt('Alex beat Neo and became a god of control. Lica: "Everything flows from me."');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CONTROL · ORIGIN · CONTAINMENT', col:'#dff0ff' });
+    AUDIO.zap();
+  }
+  if(triad.active){
+    triad.t += dt;
+    if(triad.t>2.3 && triad.t<2.35) showTaunt('Pupahya opens every dimension at once, the accelerant nobody can pin down.');
+    if(triad.t>4.5 && triad.t<4.55) showTaunt('Simon claps twice. Ice forms underneath him, and spreads with every step.');
+    if(triad.t>4.55 && triad.t<4.62){ shake = Math.max(shake,7); AUDIO.zap(); }   // clap one
+    if(triad.t>4.85 && triad.t<4.92){ shake = Math.max(shake,7); AUDIO.zap(); }   // clap two
+    if(triad.t > 6){ triad.active = false; triad.done = true; }
+  }
+  if(triad.glow < (isTriad() ? 1 : 0))
+    triad.glow = Math.min(1, triad.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
   if(isResidual() && !isSounds()) updateResidual(dt);
   if(isSounds() && !isVoid()) updateSounds(dt);
   if(isVoid() && !isJudge()) updateVoid(dt);
-  if(isJudge()) updateJudge(dt);
+  if(isJudge() && !isTriad()) updateJudge(dt);
+  if(isTriad()) updateTriad(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1585,6 +1628,36 @@ function updateJudge(dt){
   }
 }
 
+/* ---- Lore 27 cont. (June 15) — THE THREE-WAY FIELD. Alex became a god of CONTROL, Lica
+       rose as ORIGIN ("everything flows from me"), Pupahya keeps every dimension open, and
+       Winter Simon answers with CONTAINMENT: ice forms under him and spreads with every
+       step. The shattered field holds all three at once. HOLD THE FIELD BALANCED — climb
+       with purpose while the three claimants take turns pressing — and you keep your footing
+       in the field. ---- */
+function updateTriad(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the ice creep — Simon's freeze rises up the field and spreads with every step
+  triad.ice = Math.min(1, (triad.ice||0) + dt*0.04);
+  // the three claimants take turns pressing the field: Alex (control), Lica (origin),
+  // Simon (containment). The claim cycles; whoever holds it sweeps a colored pressure.
+  triad.claimT -= dt;
+  if(triad.claimT <= 0){ triad.claim = (triad.claim+1)%3; triad.claimT = rnd(2.0, 3.2);
+    floaters.push({ x:player.x, y:player.y-34, t:0,
+      txt:['ALEX CLAIMS THE FIELD','LICA CLAIMS THE FIELD','SIMON FREEZES THE FIELD'][triad.claim],
+      col:['#c9b8ff','#ffc8e6','#bfe0ff'][triad.claim] }); }
+  // HOLD THE FIELD: keep climbing with purpose to keep your footing among all three. The
+  // balance fills while you move and drains if you stand still on the freezing field.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  triadM = Math.max(0, Math.min(1, triadM + (moving ? dt*0.05 : -dt*0.02)));
+  if(triadM >= 1 && !triad.held){
+    triad.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You held the field: control, origin, and containment all at once. Footing kept.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THE FIELD HELD ★', col:'#dff0ff' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#c9b8ff','#ffc8e6','#bfe0ff'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1621,7 +1694,8 @@ function draw(){
   if(isResidual() && !isSounds() && residual.glow>0.02){ drawSpine(); drawRemnants(); }
   if(isSounds() && sounds.glow>0.02 && !isVoid()) drawSounds();
   if(isVoid() && voidwar.glow>0.02 && !isJudge()) drawVoid();
-  if(isJudge() && judge.glow>0.02) drawJudge();
+  if(isJudge() && judge.glow>0.02 && !isTriad()) drawJudge();
+  if(isTriad() && triad.glow>0.02) drawTriad();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -2538,6 +2612,66 @@ function drawJudge(){
   ctx.restore(); ctx.shadowBlur = 0;
 }
 
+// THE THREE-WAY FIELD — the shattered dimension where CONTROL, ORIGIN, and CONTAINMENT all
+// exist at once: three colored vertical zones (Lica's source-light, Simon's winter-lock,
+// Alex's built structure) with shattered seams between them, plus the ice creep rising from
+// below (Simon clapped twice and ice spreads). The active claimant's zone brightens.
+function drawTriad(){
+  const tg = triad.glow||0; const top = cameraY;
+  ctx.save();
+  // three vertical zones: left = LICA (origin, pink-gold), center = SIMON (containment, ice),
+  // right = ALEX (control, violet-steel). Each pulses; the active claimant brightens.
+  const cols = [ [255,200,230], [191,224,255], [201,184,255] ];   // Lica, Simon, Alex
+  for(let z=0; z<3; z++){
+    const zx = z*W/3, pulse = 0.16 + 0.10*Math.sin(time*1.6 + z*2.1);
+    const lit = (triad.claim===z) ? 0.20 : 0;   // brighten the claimed zone
+    const a = (pulse + lit) * tg, c = cols[z];
+    const g = ctx.createLinearGradient(zx, 0, zx+W/3, 0);
+    g.addColorStop(0, `rgba(${c[0]},${c[1]},${c[2]},0)`);
+    g.addColorStop(0.5, `rgba(${c[0]},${c[1]},${c[2]},${a})`);
+    g.addColorStop(1, `rgba(${c[0]},${c[1]},${c[2]},0)`);
+    ctx.fillStyle = g; ctx.fillRect(zx, top, W/3, H);
+  }
+  // the shattered seams where the three meet — jagged bright cracks
+  ctx.strokeStyle = `rgba(232,246,255,${0.45*tg})`; ctx.lineWidth = 1.4;
+  ctx.shadowColor = '#dff0ff'; ctx.shadowBlur = 7;
+  for(const seam of [W/3, 2*W/3]){
+    ctx.beginPath(); ctx.moveTo(seam, top);
+    for(let y=top; y<top+H; y+=26){ ctx.lineTo(seam + Math.sin(y*0.13 + time*1.3)*9, y); }
+    ctx.stroke();
+  }
+  ctx.shadowBlur = 0;
+  // origin-light motes drifting up the left, control-grid ticks falling on the right
+  for(let i=0;i<16;i++){
+    const lx = (i*53) % (W/3);
+    const ly = top + (((i*71 - time*30) % H) + H) % H;
+    ctx.fillStyle = `rgba(255,200,230,${0.5*tg})`; ctx.fillRect(lx, ly, 2, 2);
+    const rx = 2*W/3 + ((i*47) % (W/3));
+    const ry = top + ((i*61 + time*24) % H);
+    ctx.fillStyle = `rgba(201,184,255,${0.5*tg})`; ctx.fillRect(rx, ry, 2, 6);
+  }
+  // THE ICE CREEP — Simon clapped twice and ice spreads up from the bottom of the field
+  const ice = triad.ice||0;
+  if(ice > 0){
+    const band = top + H*(1 - 0.55*ice);   // the frozen front rises as ice spreads
+    const g2 = ctx.createLinearGradient(0, band, 0, top+H);
+    g2.addColorStop(0, 'rgba(191,224,255,0)');
+    g2.addColorStop(1, `rgba(210,236,255,${0.34*tg})`);
+    ctx.fillStyle = g2; ctx.fillRect(0, band, W, top+H-band);
+    // a crystalline frozen front line with little ice spikes
+    ctx.strokeStyle = `rgba(234,250,255,${0.7*tg})`; ctx.lineWidth = 1.6;
+    ctx.shadowColor = '#eafaff'; ctx.shadowBlur = 8;
+    ctx.beginPath();
+    for(let x=0; x<=W; x+=22){
+      const yy = band + Math.sin(x*0.08 + time*0.8)*4;
+      if(x===0) ctx.moveTo(x, yy); else ctx.lineTo(x, yy);
+      ctx.lineTo(x+11, yy-7);
+    }
+    ctx.stroke(); ctx.shadowBlur = 0;
+  }
+  ctx.restore(); ctx.shadowBlur = 0;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2656,7 +2790,7 @@ function drawHUD(){
   }
   // THE JUDGMENT FIELD (Lore 27) — the VERDICT meter: Winter Simon froze every side war and
   // measures every move. Climb with purpose to fill it, and catch the one gold card.
-  if(isJudge() && judge.glow>0.05){
+  if(isJudge() && !isTriad() && judge.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, vm=Math.max(0,Math.min(1,verdict));
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#1c2738'; ctx.fillRect(bx, by, bw, 7);
@@ -2667,6 +2801,19 @@ function drawHUD(){
     if(judge.held){ ctx.fillStyle='#bfe0ff'; ctx.fillText('★ JUDGMENT PASSED — YOU KEPT YOUR PURPOSE ★', W/2, by-6); }
     else if(judge.gold){ ctx.fillStyle='#ffd84f'; ctx.fillText('YOU HOLD THE ONE GOLD CARD — KEEP CLIMBING', W/2, by-6); }
     else { ctx.fillStyle='#bfe0ff'; ctx.fillText('JUDGMENT FIELD — CLIMB WITH PURPOSE, FIND THE GOLD', W/2, by-6); }
+  }
+  // THE THREE-WAY FIELD (Lore 27 cont.) — the FIELD meter: hold control, origin, and
+  // containment all at once by climbing with purpose while the three claimants press.
+  if(isTriad() && triad.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, fm=Math.max(0,Math.min(1,triadM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#20283a'; ctx.fillRect(bx, by, bw, 7);
+    ctx.fillStyle = winFlash>0 ? '#eafaff' : ['#c9b8ff','#ffc8e6','#bfe0ff'][triad.claim];
+    ctx.fillRect(bx, by, bw*fm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*fm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(triad.held){ ctx.fillStyle='#dff0ff'; ctx.fillText('★ THE FIELD HELD — CONTROL · ORIGIN · CONTAINMENT ★', W/2, by-6); }
+    else { ctx.fillStyle='#dff0ff'; ctx.fillText('THREE-WAY FIELD — HOLD YOUR FOOTING, CLIMB WITH PURPOSE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -2680,15 +2827,16 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))));
+    ctx.fillStyle = isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isJudge()? '❄ WINTER SIMON — THE JUDGMENT FIELD ❄'
+    ctx.fillText(isTriad()? '❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄'
+               : (isJudge()? '❄ WINTER SIMON — THE JUDGMENT FIELD ❄'
                : (isVoid()? '▓ THE LORE OF THE VOID — TORQE ▓'
                : (isSounds()? '▓ THE 17 SOUND BATTLES ▓'
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -2704,34 +2852,28 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The Judgment Field', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The Three-Way Field', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
   const lines=[
     'Endless living staircases fill the Endless Room.',
     'Simon forces everyone up, and he never stops.',
-    '',
     'He is ALL POWERFUL: his levers make the staircase',
     'FALL, REARRANGE, become a BRIDGE, SPIN, or SLIDE.',
-    '',
     'Climb far and Simon steps back: a calm Incredibox',
     'and Sound Battles... until PHASE 2 breaks it.',
-    '',
     'PHASE 2: red + cyan cells mix into lightning.',
     'RUN = fuel; HIDE (stand still) = safe. EXPOSED: he',
-    'plants BLURRY THOUGHTS; let your MIND overload and he',
-    'seals it. Stand still to clear it.',
-    '',
-    'SILENT EXECUTIONER: quiet, precise, he MARKS you and',
-    'strikes one clean bolt. Read it and MOVE off the mark.',
-    '',
-    'ATOMIX WAR: he divides the board to the ATOMIX. RESIDUAL',
-    'WAR: he REFUSES the world; FINISH the unfinished. Then he',
-    'takes command: 17 SOUND BATTLES, all decided through sound.',
-    'LORE OF THE VOID: he fuses the Void, says TORQE. Then he',
-    'tires of the wars: WINTER SIMON freezes the board into a',
-    'JUDGMENT FIELD. Climb with purpose; catch the one GOLD CARD.'
+    'plants BLURRY THOUGHTS; stand still to clear it.',
+    'SILENT EXECUTIONER: he MARKS you; MOVE off the mark.',
+    'ATOMIX WAR: he divides the board. RESIDUAL WAR:',
+    'FINISH the unfinished. Then 17 SOUND BATTLES decide.',
+    'LORE OF THE VOID: he fuses the Void, says TORQE.',
+    'WINTER SIMON freezes it into a JUDGMENT FIELD: climb',
+    'with purpose; catch the one GOLD CARD. Then Alex turns',
+    'god of CONTROL, Lica rises as ORIGIN, and Simon claps',
+    'twice to FREEZE it all: the THREE-WAY FIELD. Hold on.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));
@@ -2771,7 +2913,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isJudge()){
+  if(isTriad()){
+    ctx.fillText('"Alex became a god of control, Lica claims everything flows from her, and I', W/2, H*0.64);
+    ctx.fillText(' freeze it all to hold it. Control, origin, containment." — The Three-Way Field', W/2, H*0.67);
+  } else if(isJudge()){
     ctx.fillText('"I hated all these repeated wars, so I tore January off the calendar and', W/2, H*0.64);
     ctx.fillText(' became Winter Simon. You both ruined the board again." — The Judgment Field', W/2, H*0.67);
   } else if(isVoid()){
