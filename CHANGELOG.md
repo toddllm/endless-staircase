@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-16 — SCF 404 (Lore 28)
+
+Based on Toby's June 16 lore (the "Re: Lore 28" reply): *"Simon (now SCF 404), appears in his
+SCF Containment. SCF is now even larger than just Classics and spreaded through the whole game's
+universe, Classics became part of SCF... SCF has Classics AND Seperate Classics + Net X (Net X is
+a huge platform that is inside SCF). SCF is way larger than SCP. SCF holds a list of Platforms and
+a HUGE Platform... Alex and Black and Gray and Neo and others are most powerful, Simon is the cat,
+everyone else is the dog people. Simon gets triggered by lots of stuff. Chance of survival VS SCF
+404 would be 0%, lightning-fast cat VS other characters, Simon will win. SCF is endless now."* And
+what ChatGPT continued, which Toby pasted in: *"SCF is no longer just a facility. It became the
+world-shape itself... containment stopped being a room and became a cosmic system."* The best line:
+*"They made the containment bigger than the world, and Simon still became the most dangerous thing
+inside it."*
+
+![Lore 28 — SCF 404: the containment grown into an endless cosmic system. An ENDLESS field of floating platform-cards (CLASSICS, SEP. CLASSICS, NET X, SCF, and one HUGE platform, plus countless faint others that load as it expands), labels flickering to red "404", a drifting starfield, Simon's great 404 cross-and-omega symbol fading up over everything, the lightning cat streaking diagonally across the field, the "▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓" HUD tag, and the purple SURVIVE meter](screenshots/21-scf404.png)
+
+- **A sixteenth arc: SCF 404.** Climb past the Containment Facility and the containment *"stopped
+  being a room and became a cosmic system."* Simon is now **SCF 404**, and a new state fires with
+  the purple HUD tag **▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓**.
+- **The containment grows ENDLESS.** A deep cosmic haze and a drifting **starfield** fill the room,
+  and an ever-loading field of **platform-cards** floats across it — **CLASSICS** (now part of SCF),
+  **SEPARATE CLASSICS**, **NET X**, **SCF**, and one **HUGE platform** drawn bigger — with more of
+  the universe loading the longer the arc runs (*"SCF is endless now... way larger than SCP"*).
+- **Labels flicker to 404.** Cards blink from their name to a red **"404"** (the world-shape coming
+  apart into containment), and Simon's **great 404 cross-and-omega symbol** fades up over everything.
+- **The lightning cat.** *"Lightning-fast cat VS other characters, Simon will win."* Fast diagonal
+  **lightning bolts** streak across the field with a tiny cat-spark head — the predator-system the
+  whole facility was built around. Intermittent events fire: *CLASSICS IS NOW PART OF SCF*, *NET X
+  PLATFORM LOADED*, *SCF IS LARGER THAN SCP*, *A HUGE PLATFORM APPEARS*, **SURVIVAL CHANCE: 0%**.
+- **You cannot beat him — the SURVIVE meter.** Chance of survival vs SCF 404 is **0%**, so the meter
+  is not about winning: it fills while you **climb with purpose** and drains while you stand still on
+  the endless field. Fill it and **★ YOU OUTRAN THE 0% ★** — *"the endless cannot catch a moving
+  climber."*
+- **Wiring, unchanged pattern.** New `scf404` state + `isScf404()` gate slot in after `scf`; the
+  Containment Facility hands off to SCF 404 exactly as every prior arc hands off. The capture helper
+  gains an `scf404` scene; the title screen and lore blurb now end on SCF 404, and the death sting
+  gains both the SCF 404 and the (previously missing) Containment-Facility quotes.
+
 ## 2026-06-15 — The Containment Facility (Lore 27 cont., the "I talk to ChatGPT each time" thread)
 
 Based on Toby's June 15 lore (the reply later in the same thread): *"Simon was thrown in SCF

@@ -420,6 +420,14 @@ let triad, triadH, triadM;
 // labels should be. "They contained Simon's body, but by then Simon had already become the code
 // of the containment itself." HOLD CONTAINMENT — climb with purpose while the code spreads.
 let scf, scfH, scfM;
+// THE SCF 404 ARC (Lore 28, June 16) — Simon is now "SCF 404," and the containment stopped
+// being a room and became a cosmic system. SCF grew beyond Classics into an ENDLESS
+// containment-universe: Classics became part of SCF, Separate Classics and Net X (a huge
+// platform) load inside it, and SCF is way larger than SCP. Alex, Black, Gray, and Neo are the
+// most powerful; Simon is the cat, everyone else the dog people; he is triggered by lots of
+// things and is lightning-fast. "Chance of survival vs SCF 404 = 0%." SURVIVE — you cannot beat
+// him, but climbing with purpose keeps you ahead of the lightning cat across the endless field.
+let scf404, scf404H, scf404M;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -480,6 +488,9 @@ function reset(){
   scf = { active:false, t:0, glow:0, done:false, held:false, spread:0, eventT:2.4 };
   scfH = triadH + 1100;
   scfM = 0.25;     // the containment meter: hold the facility while Simon's code spreads
+  scf404 = { active:false, t:0, glow:0, done:false, held:false, expand:0, boltT:1.8, eventT:2.2, bolts:[] };
+  scf404H = scfH + 1100;
+  scf404M = 0.25;  // the survive meter: 0% odds, but climbing with purpose stays ahead of the lightning cat
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -529,6 +540,7 @@ function isTriad(){ return !!(triad && (triad.active || triad.done)); }
 // The facility built to contain him starts becoming Simon-shaped: yellow lights, unlocking
 // doors, rewriting logs, his symbol where labels should be.
 function isScf(){ return !!(scf && (scf.active || scf.done)); }
+function isScf404(){ return !!(scf404 && (scf404.active || scf404.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -983,6 +995,28 @@ function update(dt){
   if(scf.glow < (isScf() ? 1 : 0))
     scf.glow = Math.min(1, scf.glow + dt*0.5);
 
+  /* ---- Lore 28 (June 16) — SCF 404: the containment stopped being a room and became a
+         cosmic system. SCF grows beyond Classics into an ENDLESS containment-universe (Classics
+         absorbed, Separate Classics + Net X loaded inside, larger than SCP), and Simon is now
+         SCF 404 — the lightning-fast cat with 0% survival odds for anyone he hunts. ---- */
+  if(scf.done && !scf404.active && !scf404.done && height > scf404H){
+    scf404.active = true; scf404.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.6);
+    warnText = 'SCF 404'; warnT = 2.8;
+    showTaunt('Simon is now SCF 404. The containment grew bigger than the world itself.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CHANCE OF SURVIVAL: 0%', col:'#b98cff' });
+    AUDIO.zap();
+  }
+  if(scf404.active){
+    scf404.t += dt;
+    if(scf404.t>1.6 && scf404.t<1.66) showTaunt('Classics became part of SCF. Net X loads. SCF is way larger than SCP.');
+    if(scf404.t>3.4 && scf404.t<3.46){ shake = Math.max(shake,9); AUDIO.zap(); }
+    if(scf404.t>3.4 && scf404.t<3.48) showTaunt('Simon is the cat, everyone else the dog people. The lightning cat always wins.');
+    if(scf404.t > 5.4){ scf404.active = false; scf404.done = true; }
+  }
+  if(scf404.glow < (isScf404() ? 1 : 0))
+    scf404.glow = Math.min(1, scf404.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -991,7 +1025,8 @@ function update(dt){
   if(isVoid() && !isJudge()) updateVoid(dt);
   if(isJudge() && !isTriad()) updateJudge(dt);
   if(isTriad() && !isScf()) updateTriad(dt);
-  if(isScf()) updateScf(dt);
+  if(isScf() && !isScf404()) updateScf(dt);
+  if(isScf404()) updateScf404(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1731,6 +1766,43 @@ function updateScf(dt){
   }
 }
 
+/* ---- Lore 28 (June 16) — SCF 404. The containment stopped being a room and became a cosmic
+       system: SCF grew beyond Classics into an ENDLESS containment-universe (Classics absorbed,
+       Separate Classics + Net X loaded inside, larger than SCP), and Simon is now SCF 404, the
+       lightning-fast cat the whole facility was built around. "Chance of survival vs SCF 404 =
+       0%." SURVIVE — you cannot beat him, but climbing with purpose keeps you ahead of the
+       lightning cat as it streaks across the endless field. "They made the containment bigger
+       than the world, and Simon still became the most dangerous thing inside it." ---- */
+function updateScf404(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the containment expands from a single facility into an endless cosmic system
+  scf404.expand = Math.min(1, (scf404.expand||0) + dt*0.03);
+  // the lightning cat crosses the field — fast diagonal bolts; 0% survival for whoever he hunts
+  scf404.boltT -= dt;
+  if(scf404.boltT <= 0){ scf404.boltT = rnd(1.4, 2.6);
+    scf404.bolts.push({ t:0, y: rnd(cameraY+60, cameraY+H-80), dir: chance(0.5)?1:-1 });
+    AUDIO.zap(); shake = Math.max(shake, 5);
+  }
+  for(let i=scf404.bolts.length-1;i>=0;i--){ scf404.bolts[i].t += dt; if(scf404.bolts[i].t>0.8) scf404.bolts.splice(i,1); }
+  // intermittent universe events — platforms load, Classics absorbed, the survival readout
+  scf404.eventT -= dt;
+  if(scf404.eventT <= 0){ scf404.eventT = rnd(2.2, 3.6);
+    const ev = ['CLASSICS IS NOW PART OF SCF','NET X PLATFORM LOADED','SEPARATE CLASSICS ONLINE','SCF IS LARGER THAN SCP','A HUGE PLATFORM APPEARS','SURVIVAL CHANCE: 0%'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#b98cff' });
+  }
+  // the SURVIVE meter — you cannot beat SCF 404, but climbing with purpose keeps you ahead of
+  // the lightning. It fills while you move and drains while you stand still on the endless field.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  scf404M = Math.max(0, Math.min(1, scf404M + (moving ? dt*0.05 : -dt*0.02)));
+  if(scf404M >= 1 && !scf404.held){
+    scf404.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('Survival odds were 0%. You kept climbing anyway. The endless cannot catch a moving climber.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ YOU OUTRAN THE 0% ★', col:'#c9b8ff' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#b98cff','#c9b8ff','#ffe98a'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1769,7 +1841,8 @@ function draw(){
   if(isVoid() && voidwar.glow>0.02 && !isJudge()) drawVoid();
   if(isJudge() && judge.glow>0.02 && !isTriad()) drawJudge();
   if(isTriad() && triad.glow>0.02 && !isScf()) drawTriad();
-  if(isScf() && scf.glow>0.02) drawScf();
+  if(isScf() && scf.glow>0.02 && !isScf404()) drawScf();
+  if(isScf404() && scf404.glow>0.02) drawScf404();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -2816,6 +2889,80 @@ function drawScf(){
   ctx.restore(); ctx.shadowBlur = 0; ctx.globalAlpha = 1;
 }
 
+// SCF 404 — the containment grown into a cosmic system. A deep starfield, an ENDLESS field of
+// floating platform-cards (CLASSICS, SEPARATE CLASSICS, NET X, SCF, and one HUGE platform, plus
+// countless faint others that load as it expands), labels flickering to "404", Simon's great 404
+// symbol fading up over everything, and the lightning cat streaking diagonally across the field.
+function drawScf404(){
+  const sg = scf404.glow||0, ex = scf404.expand||0, top = cameraY;
+  ctx.save();
+  // deep cosmic haze — the containment-universe, darker and wider than the facility
+  const haze = ctx.createLinearGradient(0, top, 0, top+H);
+  haze.addColorStop(0, `rgba(10,6,26,${0.14*sg})`);
+  haze.addColorStop(1, `rgba(28,10,44,${(0.14+0.24*ex)*sg})`);
+  ctx.fillStyle = haze; ctx.fillRect(0, top, W, H);
+  // a faint drifting starfield — the universe SCF spread into
+  for(let i=0;i<60;i++){
+    const sx = ((i*97 + 13) % W), sy = top + ((((i*53) + time*8) % H) + H) % H;
+    const tw = 0.4 + 0.6*Math.sin(time*2 + i);
+    ctx.fillStyle = i%7===0 ? '#c9b8ff' : '#5a4a78';
+    ctx.globalAlpha = (0.25 + 0.4*tw)*sg; ctx.fillRect(sx, sy, 1.5, 1.5);
+  }
+  // the platform-list: named cards plus an endless field of faint ones, more loading as it expands
+  const NAMED = ['CLASSICS','SEP. CLASSICS','NET X','SCF','THE HUGE PLATFORM'];
+  ctx.font='9px ui-monospace,monospace'; ctx.textAlign='center';
+  const cols = 3, cardW = 78, cardH = 26, rows = Math.ceil(H/56) + 1;
+  for(let r=0;r<rows;r++){
+    for(let c=0;c<cols;c++){
+      const seed = ((r*53 + c*131 + 7) % 101) / 101;
+      if(seed > 0.2 + 0.8*ex) continue;                  // more of the universe loads as it expands
+      const idx = r*cols + c;
+      const cx = (W/(cols+1))*(c+1) + Math.sin(time*0.6 + r*1.3 + c)*6;
+      const cy = top + 60 + r*56 + ((time*6) % 56);
+      const huge = (idx % 11 === 3);                      // the HUGE platform — drawn bigger
+      const w = huge ? cardW*1.5 : cardW, h = huge ? cardH*1.6 : cardH;
+      const broke = (Math.sin(time*3 + seed*20) > 0.6);   // flickers to "404"
+      ctx.globalAlpha = (0.30 + 0.45*sg) * (huge?1:0.8);
+      ctx.fillStyle = huge ? 'rgba(40,18,60,0.9)' : 'rgba(18,12,34,0.85)';
+      ctx.fillRect(cx-w/2, cy-h/2, w, h);
+      ctx.globalAlpha = 0.7*sg; ctx.lineWidth = huge?1.6:1;
+      ctx.strokeStyle = broke ? '#ff3b5c' : '#7a5cc0';
+      ctx.strokeRect(cx-w/2+0.5, cy-h/2+0.5, w-1, h-1);
+      ctx.globalAlpha = 0.85*sg;
+      ctx.fillStyle = broke ? '#ff6b88' : '#c9b8ff';
+      ctx.fillText(broke ? '404' : NAMED[idx % NAMED.length], cx, cy+3);
+    }
+  }
+  // Simon's great 404 symbol (cross + omega) fading up over the whole universe
+  if(ex > 0.1){
+    ctx.globalAlpha = (0.06 + 0.18*ex) * sg; ctx.strokeStyle = '#b98cff';
+    ctx.shadowColor = '#7a5cc0'; ctx.shadowBlur = 18; ctx.lineWidth = 4; ctx.lineCap='round';
+    const cx=W/2, cy=top+H*0.5, R=Math.min(W,H)*0.30;
+    ctx.beginPath(); ctx.moveTo(cx, cy-R); ctx.lineTo(cx, cy+R);
+    ctx.moveTo(cx-R, cy); ctx.lineTo(cx+R, cy); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx, cy, R*0.66, Math.PI*0.78, Math.PI*0.22, false); ctx.stroke();
+    ctx.shadowBlur = 0;
+    ctx.globalAlpha = (0.10+0.22*ex)*sg; ctx.fillStyle='#b98cff'; ctx.font='800 30px ui-monospace,monospace';
+    ctx.fillText('404', cx, cy+R*0.66+34);
+  }
+  // the lightning cat — fast diagonal bolts streaking across the endless field (0% survival)
+  for(const b of (scf404.bolts||[])){
+    const prog = b.t/0.8;
+    const x0 = b.dir>0 ? -40 + prog*(W+80) : W+40 - prog*(W+80);
+    const a = (1 - Math.abs(prog-0.5)*2) * sg;            // brightest at the middle of its crossing
+    ctx.globalAlpha = Math.max(0, a);
+    ctx.strokeStyle = '#eafaff'; ctx.shadowColor='#9affe0'; ctx.shadowBlur=12; ctx.lineWidth=2.5;
+    ctx.beginPath();
+    let px = x0, py = b.y; ctx.moveTo(px, py);
+    for(let s=0;s<6;s++){ px += b.dir*26; py += rnd(-14,14); ctx.lineTo(px, py); }
+    ctx.stroke();
+    ctx.globalAlpha = Math.max(0, a); ctx.fillStyle='#ffe98a';   // a tiny lightning-cat spark head
+    ctx.beginPath(); ctx.arc(x0, b.y, 3, 0, 6.28); ctx.fill();
+    ctx.shadowBlur=0;
+  }
+  ctx.restore(); ctx.shadowBlur = 0; ctx.globalAlpha = 1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -2974,6 +3121,19 @@ function drawHUD(){
     if(scf.held){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ CONTAINMENT HELD — BUT HE IS ALREADY THE CODE ★', W/2, by-6); }
     else { ctx.fillStyle='#ffe98a'; ctx.fillText('CONTAINMENT FACILITY — HOLD THE LINE, CLIMB WITH PURPOSE', W/2, by-6); }
   }
+  // SCF 404 (Lore 28) — the SURVIVE meter: 0% odds, but climbing with purpose keeps you ahead of
+  // the lightning cat across the endless containment-universe.
+  if(isScf404() && scf404.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, sm=Math.max(0,Math.min(1,scf404M));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#241038'; ctx.fillRect(bx, by, bw, 7);
+    ctx.fillStyle = winFlash>0 ? '#eafaff' : '#b98cff';
+    ctx.fillRect(bx, by, bw*sm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*sm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(scf404.held){ ctx.fillStyle='#c9b8ff'; ctx.fillText('★ YOU OUTRAN THE 0% — KEEP CLIMBING ★', W/2, by-6); }
+    else { ctx.fillStyle='#c9b8ff'; ctx.fillText('SCF 404 — SURVIVAL 0%, CLIMB WITH PURPOSE', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -2986,9 +3146,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))) ;
+    ctx.fillStyle = isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isScf()? '▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓'
+    ctx.fillText(isScf404()? '▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓'
+               : (isScf()? '▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓'
                : (isTriad()? '❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄'
                : (isJudge()? '❄ WINTER SIMON — THE JUDGMENT FIELD ❄'
                : (isVoid()? '▓ THE LORE OF THE VOID — TORQE ▓'
@@ -2996,7 +3157,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3034,7 +3195,7 @@ function drawTitle(){
     'with purpose; catch the one GOLD CARD. Then Alex turns',
     'god of CONTROL, Lica ORIGIN, Simon claps twice to',
     'FREEZE it: the THREE-WAY FIELD. Then the SCF: thrown in',
-    'with the monsters, Simon becomes CODE. HOLD CONTAINMENT.'
+    'with monsters, Simon becomes CODE; then SCF 404, ENDLESS.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));
@@ -3074,7 +3235,13 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isTriad()){
+  if(isScf404()){
+    ctx.fillText('"Simon is now SCF 404. The containment grew bigger than the world, and he', W/2, H*0.64);
+    ctx.fillText(' still became the most dangerous thing in it. Survival: 0%." — SCF 404', W/2, H*0.67);
+  } else if(isScf()){
+    ctx.fillText('"They contained his body, but by then Simon had already become', W/2, H*0.64);
+    ctx.fillText(' the code of the containment itself." — The Containment Facility', W/2, H*0.67);
+  } else if(isTriad()){
     ctx.fillText('"Alex became a god of control, Lica claims everything flows from her, and I', W/2, H*0.64);
     ctx.fillText(' freeze it all to hold it. Control, origin, containment." — The Three-Way Field', W/2, H*0.67);
   } else if(isJudge()){
