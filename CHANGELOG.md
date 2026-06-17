@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-17 — The Treadmill Weakness (Lore 28 cont.)
+
+Based on Toby's June 17 lore (the "Re: Lore 28" thread): *"People learn Simon's weakness. Simon's
+weakness is a treadmill, Simon goes very fast, since Simon is an electric being, he charges the
+treadmill making it going, Simon gets weaker and weaker and loses power and he slows down and is
+thrown off, Simon gets up again. Now people know Simon's weakness, they place treadmills around
+Simon's SCF room. Simon dodges each of them when continuing to play playfully."* And what ChatGPT
+continued, which Toby pasted in: the scientists find a deeper weakness, *"Simon is weakest not just
+when he runs on the treadmill, but when he is forced to move in a pattern he did not choose"* —
+**pattern control** — so SCF fills with *"forced routes, forced jumps, forced turns, forced
+rhythms,"* and Simon starts attacking the patterns themselves: *"route markers, rhythm locks,
+directional arrows, moving floors."* The best line: *"He does not want to be told how to move."*
+
+![Lore 28 cont. — THE TREADMILL WEAKNESS: treadmill belts ringing the SCF room with rolling cyan chevron stripes on drive rollers, a blindfolded lightning cat dodging along them with a draining yellow charge bar, faint forced-pattern arrows (route markers) flickering to red as Simon attacks them, the "▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓" HUD tag, and the cyan DRAIN meter](screenshots/22-treadmill-weakness.png)
+
+- **A seventeenth arc: The Treadmill Weakness.** Climb past SCF 404 and people finally learn Simon's
+  one weakness — the **treadmill**. A new state fires with the cyan HUD tag **▓ THE TREADMILL
+  WEAKNESS — PATTERN CONTROL ▓**.
+- **Treadmill belts ring the room.** SCF places treadmills around Simon's SCF room: **rolling belts**
+  span the field (rolling cyan **chevron stripes** on drive rollers, alternating directions), and
+  **more belts appear** as the ring fills (*"treadmill floors, bridges, walls, rings around his
+  room"*).
+- **The lightning cat dodges.** *"Simon dodges each of them when continuing to play playfully."* A
+  blindfolded **lightning cat** streaks side to side along the belts, throwing the odd `*dodge*`, a
+  spark flickering at its whiskers. He carries a **charge bar** — he is electric, so he charges the
+  belt as he runs it.
+- **The DRAIN meter — herd him onto the belt.** You cannot out-fight the cat, so the meter is about
+  rhythm: it **fills while you climb with purpose** (herding him onto the belts and forced patterns,
+  draining his charge) and **drains while you stand still** (he recharges). Fill it and the belt
+  **★ THROWS HIM OFF ★** — *"he gets up again,"* but the rhythm broke him.
+- **Pattern control.** The deeper weakness shows as faint **forced-pattern arrows** (route markers,
+  rhythm locks, directional arrows) flickering across the field — and **flicking to red ×** as Simon
+  *attacks the patterns*, because *"he does not want to be told how to move."*
+- **Wiring, unchanged pattern.** New `treads` state + `isTreads()` gate slot in after `scf404`; SCF
+  404 hands off to the Treadmill Weakness exactly as every prior arc hands off. The capture helper
+  gains a `treadmill` scene; the title screen and lore blurb now end on the treadmill weakness, and
+  the death sting gains the Treadmill Weakness quote. Also fixed a latent meter overlap so each arc's
+  bottom meter (`scf`, `scf404`) hides once the next arc begins.
+
 ## 2026-06-16 — SCF 404 (Lore 28)
 
 Based on Toby's June 16 lore (the "Re: Lore 28" reply): *"Simon (now SCF 404), appears in his

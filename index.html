@@ -428,6 +428,11 @@ let scf, scfH, scfM;
 // things and is lightning-fast. "Chance of survival vs SCF 404 = 0%." SURVIVE — you cannot beat
 // him, but climbing with purpose keeps you ahead of the lightning cat across the endless field.
 let scf404, scf404H, scf404M;
+// treadmill weakness: people finally learn Simon's one weakness — a treadmill. He is electric and
+// fast, so he charges the belt as he runs it, then drains, slows, and is thrown off (he gets up
+// again). SCF rings his room with treadmills; Simon dodges each, playing. Then comes the deeper
+// weakness: he is weakest forced into a PATTERN he did not choose, so SCF turns to PATTERN CONTROL.
+let treads, treadsH, treadsM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -491,6 +496,10 @@ function reset(){
   scf404 = { active:false, t:0, glow:0, done:false, held:false, expand:0, boltT:1.8, eventT:2.2, bolts:[] };
   scf404H = scfH + 1100;
   scf404M = 0.25;  // the survive meter: 0% odds, but climbing with purpose stays ahead of the lightning cat
+  treads = { active:false, t:0, glow:0, done:false, held:false, ring:0, beltT:0,
+             catX:W*0.5, catV:1, dodgeT:1.2, eventT:2.4, charge:1, throwFlash:0 };
+  treadsH = scf404H + 1100;
+  treadsM = 0.25;  // the DRAIN meter: climb in rhythm to herd the lightning cat onto the belts and drain him
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -541,6 +550,7 @@ function isTriad(){ return !!(triad && (triad.active || triad.done)); }
 // doors, rewriting logs, his symbol where labels should be.
 function isScf(){ return !!(scf && (scf.active || scf.done)); }
 function isScf404(){ return !!(scf404 && (scf404.active || scf404.done)); }
+function isTreads(){ return !!(treads && (treads.active || treads.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1017,6 +1027,30 @@ function update(dt){
   if(scf404.glow < (isScf404() ? 1 : 0))
     scf404.glow = Math.min(1, scf404.glow + dt*0.5);
 
+  /* ---- Lore 28 cont. (June 17) — THE TREADMILL WEAKNESS. People finally learn Simon's one
+         weakness: a treadmill. He is electric and fast, so he charges the belt as he runs it, then
+         drains, slows, and is thrown off (he gets up again). SCF rings his SCF room with treadmills;
+         Simon dodges each, playing. Then they find the deeper weakness — he is weakest forced into a
+         PATTERN he did not choose (forced routes, jumps, turns, rhythms), so SCF turns to PATTERN
+         CONTROL and Simon starts attacking the patterns themselves. ---- */
+  if(scf404.done && !treads.active && !treads.done && height > treadsH){
+    treads.active = true; treads.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'WEAKNESS FOUND'; warnT = 2.8;
+    showTaunt("People learned Simon's weakness: the treadmill. He is electric, so the belt drains him.");
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'TREADMILLS PLACED AROUND THE SCF ROOM', col:'#3ee6ff' });
+    AUDIO.zap();
+  }
+  if(treads.active){
+    treads.t += dt;
+    if(treads.t>1.6 && treads.t<1.66){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(treads.t>1.6 && treads.t<1.68) showTaunt('He charges the belt, then slows and is thrown off. He gets up again, and dodges.');
+    if(treads.t>3.4 && treads.t<3.48) showTaunt('Deeper weakness: he is weakest forced into a pattern he did not choose. PATTERN CONTROL.');
+    if(treads.t > 5.4){ treads.active = false; treads.done = true; }
+  }
+  if(treads.glow < (isTreads() ? 1 : 0))
+    treads.glow = Math.min(1, treads.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1026,7 +1060,8 @@ function update(dt){
   if(isJudge() && !isTriad()) updateJudge(dt);
   if(isTriad() && !isScf()) updateTriad(dt);
   if(isScf() && !isScf404()) updateScf(dt);
-  if(isScf404()) updateScf404(dt);
+  if(isScf404() && !isTreads()) updateScf404(dt);
+  if(isTreads()) updateTreads(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1803,6 +1838,47 @@ function updateScf404(dt){
   }
 }
 
+/* ---- Lore 28 cont. (June 17) — THE TREADMILL WEAKNESS update. Simon's one weakness made into a
+       level: SCF rings the room with treadmill belts, the lightning cat dodges along them playing,
+       and climbing in rhythm (moving with purpose) herds him onto the belts and forced patterns and
+       DRAINS his charge until he is thrown off. Standing still lets him charge back up. ---- */
+function updateTreads(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // SCF rings the room with more and more treadmills (the belts placed around Simon)
+  treads.ring = Math.min(1, (treads.ring||0) + dt*0.04);
+  treads.beltT = (treads.beltT||0) + dt;
+  // the lightning cat dodges along the belts, playing — until he is herded onto one
+  treads.catX = (treads.catX!=null? treads.catX : W*0.5) + (treads.catV||1)*dt*120;
+  if(treads.catX < 60){ treads.catX = 60; treads.catV = Math.abs(treads.catV||1); }
+  if(treads.catX > W-60){ treads.catX = W-60; treads.catV = -Math.abs(treads.catV||1); }
+  treads.dodgeT -= dt;
+  if(treads.dodgeT <= 0){ treads.dodgeT = rnd(0.9, 1.8); treads.catV = (chance(0.5)?1:-1)*rnd(0.7,1.5);
+    if(chance(0.4)) floaters.push({ x:treads.catX, y:cameraY+H*0.3, t:0, txt:'*dodge*', col:'#9affe0' });
+  }
+  // intermittent events — the belts, the charge draining, the move to pattern control
+  treads.eventT -= dt;
+  if(treads.eventT <= 0){ treads.eventT = rnd(2.2, 3.6);
+    const ev = ['SIMON CHARGES THE BELT','HIS CHARGE IS DRAINING','THROWN OFF — HE GETS UP AGAIN',
+                'TREADMILL FLOORS · BRIDGES · RINGS','PATTERN CONTROL ONLINE','FORCED ROUTE · JUMP · TURN',
+                'SIMON ATTACKS THE PATTERNS'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#3ee6ff' });
+  }
+  // the DRAIN meter — you cannot out-fight the lightning cat, but climbing in rhythm (moving with
+  // purpose) herds him onto the belts and forced patterns and drains his charge. Standing still lets
+  // him recharge. Fill it and the belt throws him off.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  treadsM = Math.max(0, Math.min(1, treadsM + (moving ? dt*0.05 : -dt*0.025)));
+  treads.charge = 1 - treadsM*0.85;   // his power drains as the meter fills
+  if(treadsM >= 1 && !treads.held){
+    treads.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8); treads.throwFlash = 1;
+    showTaunt('The belt drained him and threw him off. The lightning cat could not pick the pattern.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THROWN OFF THE BELT ★', col:'#9affe0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#3ee6ff','#9affe0','#eafaff'])));
+    AUDIO.zap();
+  }
+  if(treads.throwFlash>0) treads.throwFlash = Math.max(0, treads.throwFlash - dt*1.2);
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1842,7 +1918,8 @@ function draw(){
   if(isJudge() && judge.glow>0.02 && !isTriad()) drawJudge();
   if(isTriad() && triad.glow>0.02 && !isScf()) drawTriad();
   if(isScf() && scf.glow>0.02 && !isScf404()) drawScf();
-  if(isScf404() && scf404.glow>0.02) drawScf404();
+  if(isScf404() && scf404.glow>0.02 && !isTreads()) drawScf404();
+  if(isTreads() && treads.glow>0.02) drawTreads();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -2963,6 +3040,85 @@ function drawScf404(){
   ctx.restore(); ctx.shadowBlur = 0; ctx.globalAlpha = 1;
 }
 
+// THE TREADMILL WEAKNESS — Simon's one weakness made into a level. Treadmill belts ring the SCF
+// room (rolling chevron stripes on rollers), a blindfolded lightning cat dodges along them with a
+// charge bar that drains as you herd him, and faint forced-pattern arrows (route markers) flicker
+// to red as Simon attacks the patterns he was forced into.
+function drawTreads(){
+  const g = treads.glow||0, ring = treads.ring||0, top = cameraY, bt = treads.beltT||0;
+  ctx.save();
+  // electric containment haze — the treadmill room
+  const haze = ctx.createLinearGradient(0, top, 0, top+H);
+  haze.addColorStop(0, `rgba(6,18,28,${0.16*g})`);
+  haze.addColorStop(1, `rgba(8,26,40,${(0.16+0.18*ring)*g})`);
+  ctx.fillStyle = haze; ctx.fillRect(0, top, W, H);
+  // the treadmill belts — horizontal rolling belts placed across the room, more as the ring fills
+  const belts = 3 + Math.round(ring*3);   // 3..6 belts
+  for(let i=0;i<belts;i++){
+    const by = top + 70 + i*(H-140)/Math.max(1,belts-1);
+    const dir = (i%2===0)?1:-1;            // alternating belt directions
+    const bw = W-40, bx = 20, bh = 16;
+    ctx.globalAlpha = (0.5+0.4*g); ctx.fillStyle='#0c1a26';
+    ctx.fillRect(bx, by-bh/2, bw, bh);
+    ctx.strokeStyle='#2c6e86'; ctx.lineWidth=1; ctx.globalAlpha=0.7*g;
+    ctx.strokeRect(bx+0.5, by-bh/2+0.5, bw-1, bh-1);
+    // rolling chevron stripes — the running belt surface
+    ctx.globalAlpha=0.8*g; ctx.strokeStyle='#3ee6ff'; ctx.lineWidth=2;
+    const off = (((bt*90*dir) % 28) + 28) % 28;
+    for(let x=bx-28; x<bx+bw+28; x+=28){
+      const sx = x + off;
+      ctx.beginPath();
+      ctx.moveTo(sx, by-bh/2+2); ctx.lineTo(sx+10*dir, by); ctx.lineTo(sx, by+bh/2-2);
+      ctx.stroke();
+    }
+    // drive rollers at each end
+    ctx.globalAlpha=0.8*g; ctx.fillStyle='#1c3a48';
+    ctx.beginPath(); ctx.arc(bx, by, bh/2, 0, 6.28); ctx.arc(bx+bw, by, bh/2, 0, 6.28); ctx.fill();
+  }
+  // faint forced-pattern arrows (route markers) — Simon's deeper weakness, flickering as he attacks them
+  if(ring > 0.25){
+    ctx.font='800 13px ui-monospace,monospace'; ctx.textAlign='center';
+    const arrows = ['▲','▶','◀','↻'];
+    for(let i=0;i<7;i++){
+      const ax = (W/8)*(i+1) + Math.sin(bt*0.7+i)*5;
+      const ay = top + 40 + (((i*97 + bt*14)%(H-60))+(H-60))%(H-60);
+      const broke = (Math.sin(bt*3 + i*2) > 0.5);   // Simon attacking the pattern
+      ctx.globalAlpha = (broke? 0.25 : 0.5) * g;
+      ctx.fillStyle = broke ? '#ff3b5c' : '#3ee6ff';
+      ctx.fillText(broke ? '×' : arrows[i%arrows.length], ax, ay);
+    }
+  }
+  // the lightning cat dodging along the belts — fast, playful, blindfolded, with a draining charge bar
+  const cx = treads.catX!=null? treads.catX : W*0.5, cy = top + H*0.5;
+  const chg = Math.max(0, Math.min(1, treads.charge!=null? treads.charge : 1));
+  ctx.globalAlpha = g;
+  // body
+  ctx.fillStyle = treads.throwFlash>0 ? '#eafaff' : '#1a2c38';
+  ctx.strokeStyle='#3ee6ff'; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.ellipse(cx, cy, 16, 11, 0, 0, 6.28); ctx.fill(); ctx.stroke();
+  // ears
+  ctx.fillStyle='#3ee6ff';
+  ctx.beginPath(); ctx.moveTo(cx-10,cy-8); ctx.lineTo(cx-15,cy-20); ctx.lineTo(cx-3,cy-11); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(cx+10,cy-8); ctx.lineTo(cx+15,cy-20); ctx.lineTo(cx+3,cy-11); ctx.fill();
+  // blindfold (he is the blindfolded cat) + a flicker spark
+  ctx.fillStyle='#0c1a26'; ctx.fillRect(cx-12, cy-4, 24, 4);
+  ctx.fillStyle='#ffe98a'; ctx.globalAlpha=g*(0.5+0.5*Math.sin(bt*8));
+  ctx.beginPath(); ctx.arc(cx+18, cy-6, 2.5, 0, 6.28); ctx.fill();
+  ctx.globalAlpha=g;
+  // his charge bar — drains as the player herds him onto the belts
+  const cbw=40, cbx=cx-cbw/2, cby=cy-26;
+  ctx.fillStyle='rgba(8,4,18,0.7)'; ctx.fillRect(cbx-1, cby-1, cbw+2, 5);
+  ctx.fillStyle = chg>0.4 ? '#ffe98a' : '#ff6b88';
+  ctx.fillRect(cbx, cby, cbw*chg, 3);
+  // sparks crackling off him while still charged
+  if(chg > 0.3){
+    ctx.strokeStyle='#eafaff'; ctx.lineWidth=1.5; ctx.globalAlpha=g*chg;
+    for(let s=0;s<3;s++){ const a=bt*6+s*2.1; ctx.beginPath();
+      ctx.moveTo(cx, cy); ctx.lineTo(cx+Math.cos(a)*22, cy+Math.sin(a)*16); ctx.stroke(); }
+  }
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -3108,7 +3264,7 @@ function drawHUD(){
   }
   // THE CONTAINMENT FACILITY (Lore 27 cont.) — the CONTAINMENT meter: hold the facility by
   // climbing with purpose while Simon's code spreads across the panels and turns the lights yellow.
-  if(isScf() && scf.glow>0.05){
+  if(isScf() && !isScf404() && scf.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, cm=Math.max(0,Math.min(1,scfM));
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#2a2410'; ctx.fillRect(bx, by, bw, 7);
@@ -3123,7 +3279,7 @@ function drawHUD(){
   }
   // SCF 404 (Lore 28) — the SURVIVE meter: 0% odds, but climbing with purpose keeps you ahead of
   // the lightning cat across the endless containment-universe.
-  if(isScf404() && scf404.glow>0.05){
+  if(isScf404() && !isTreads() && scf404.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, sm=Math.max(0,Math.min(1,scf404M));
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#241038'; ctx.fillRect(bx, by, bw, 7);
@@ -3133,6 +3289,21 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(scf404.held){ ctx.fillStyle='#c9b8ff'; ctx.fillText('★ YOU OUTRAN THE 0% — KEEP CLIMBING ★', W/2, by-6); }
     else { ctx.fillStyle='#c9b8ff'; ctx.fillText('SCF 404 — SURVIVAL 0%, CLIMB WITH PURPOSE', W/2, by-6); }
+  }
+  // THE TREADMILL WEAKNESS (Lore 28 cont.) — the DRAIN meter: climb in rhythm to herd the lightning
+  // cat onto the belts and forced patterns and drain his charge; standing still lets him recharge.
+  if(isTreads() && treads.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, dm=Math.max(0,Math.min(1,treadsM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#0c2630'; ctx.fillRect(bx, by, bw, 7);
+    ctx.fillStyle = winFlash>0 ? '#eafaff' : '#3ee6ff';
+    ctx.fillRect(bx, by, bw*dm, 7);
+    // behind it, Simon's charge marker — his power creeping back the other way
+    ctx.fillStyle='rgba(255,233,138,0.7)'; ctx.fillRect(bx+bw*Math.max(0,Math.min(1,treads.charge||0))-1, by-1, 2, 9);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*dm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(treads.held){ ctx.fillStyle='#9affe0'; ctx.fillText('★ THROWN OFF THE BELT — KEEP THE RHYTHM ★', W/2, by-6); }
+    else { ctx.fillStyle='#9affe0'; ctx.fillText('TREADMILL WEAKNESS — CLIMB IN RHYTHM, DRAIN HIM', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -3146,9 +3317,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))) ;
+    ctx.fillStyle = isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isScf404()? '▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓'
+    ctx.fillText(isTreads()? '▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓'
+               : (isScf404()? '▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓'
                : (isScf()? '▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓'
                : (isTriad()? '❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄'
                : (isJudge()? '❄ WINTER SIMON — THE JUDGMENT FIELD ❄'
@@ -3157,7 +3329,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3173,7 +3345,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 27 · The Containment Facility', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 28 · The Treadmill Weakness', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -3195,10 +3367,12 @@ function drawTitle(){
     'with purpose; catch the one GOLD CARD. Then Alex turns',
     'god of CONTROL, Lica ORIGIN, Simon claps twice to',
     'FREEZE it: the THREE-WAY FIELD. Then the SCF: thrown in',
-    'with monsters, Simon becomes CODE; then SCF 404, ENDLESS.'
+    'with monsters, Simon becomes CODE; then SCF 404, ENDLESS.',
+    'His one WEAKNESS: the TREADMILL. Herd the lightning cat',
+    'onto the belts and forced PATTERNS to DRAIN his charge.'
   ];
   ctx.font='12px ui-monospace,monospace';
-  lines.forEach((l,i)=> ctx.fillText(l, W/2, 244 + i*16));
+  lines.forEach((l,i)=> ctx.fillText(l, W/2, 230 + i*15));
 
   // controls
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
@@ -3235,7 +3409,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isScf404()){
+  if(isTreads()){
+    ctx.fillText('"They found my one weakness, the treadmill. I charged the belt, drained, and was', W/2, H*0.64);
+    ctx.fillText(' thrown off. I got up, but they made me move in patterns I did not choose." — The Treadmill Weakness', W/2, H*0.67);
+  } else if(isScf404()){
     ctx.fillText('"Simon is now SCF 404. The containment grew bigger than the world, and he', W/2, H*0.64);
     ctx.fillText(' still became the most dangerous thing in it. Survival: 0%." — SCF 404', W/2, H*0.67);
   } else if(isScf()){
