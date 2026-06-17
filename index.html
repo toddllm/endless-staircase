@@ -433,6 +433,11 @@ let scf404, scf404H, scf404M;
 // again). SCF rings his room with treadmills; Simon dodges each, playing. Then comes the deeper
 // weakness: he is weakest forced into a PATTERN he did not choose, so SCF turns to PATTERN CONTROL.
 let treads, treadsH, treadsM;
+// FIREY DELIGHT / the melting tube: tired of every game, Simon stops playing, dodges every treadmill,
+// and spins faster and faster around the inside of his tube. He says "Firey Delight"; he moves so fast
+// that friction takes over, the tube wall heats orange then white-hot, warps, and melts into a molten
+// ring, and Simon escapes again. You cannot stop the melt — only stay ahead of it as he gets out.
+let firey, fireyH, fireyM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -500,6 +505,10 @@ function reset(){
              catX:W*0.5, catV:1, dodgeT:1.2, eventT:2.4, charge:1, throwFlash:0 };
   treadsH = scf404H + 1100;
   treadsM = 0.25;  // the DRAIN meter: climb in rhythm to herd the lightning cat onto the belts and drain him
+  firey = { active:false, t:0, glow:0, done:false, melted:false, heat:0, spin:0, warp:0,
+            dripT:0.6, eventT:2.4, drips:[] };
+  fireyH = treadsH + 1100;
+  fireyM = 0.25;  // the HEAT meter: climb with purpose to spin Simon faster; friction melts the tube and he escapes
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -551,6 +560,9 @@ function isTriad(){ return !!(triad && (triad.active || triad.done)); }
 function isScf(){ return !!(scf && (scf.active || scf.done)); }
 function isScf404(){ return !!(scf404 && (scf404.active || scf404.done)); }
 function isTreads(){ return !!(treads && (treads.active || treads.done)); }
+// FIREY DELIGHT (Lore 28 cont.) — once the Treadmill Weakness resolves, Simon tires of every game,
+// stops playing, dodges every treadmill, and spins so fast around his tube that friction melts it.
+function isFirey(){ return !!(firey && (firey.active || firey.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1051,6 +1063,29 @@ function update(dt){
   if(treads.glow < (isTreads() ? 1 : 0))
     treads.glow = Math.min(1, treads.glow + dt*0.5);
 
+  /* ---- Lore 28 cont. (June 17) — FIREY DELIGHT / THE MELTING TUBE. Tired of every game, Simon stops
+         playing along, slays the other monstrosities again, dodges every treadmill while moving very
+         fast around his tube, and says "Firey Delight." He moves so fast that friction takes over: the
+         tube wall heats orange then white, warps, and melts into a molten ring, and Simon escapes
+         again. You cannot stop the melt — climbing with purpose only keeps you ahead of it. ---- */
+  if(treads.done && !firey.active && !firey.done && height > fireyH){
+    firey.active = true; firey.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'FIREY DELIGHT'; warnT = 2.8;
+    showTaunt('Simon is tired of every game. He stops playing, dodges every treadmill, and spins.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'FRICTION RISING — THE TUBE IS HEATING', col:'#ff8a3b' });
+    AUDIO.zap();
+  }
+  if(firey.active){
+    firey.t += dt;
+    if(firey.t>1.6 && firey.t<1.66){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(firey.t>1.6 && firey.t<1.68) showTaunt('He dodges each treadmill and circles the tube, faster and faster. "Firey Delight."');
+    if(firey.t>3.4 && firey.t<3.48) showTaunt('Friction takes over. The tube glows, warps, and melts into a molten ring.');
+    if(firey.t > 5.4){ firey.active = false; firey.done = true; }
+  }
+  if(firey.glow < (isFirey() ? 1 : 0))
+    firey.glow = Math.min(1, firey.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1061,7 +1096,8 @@ function update(dt){
   if(isTriad() && !isScf()) updateTriad(dt);
   if(isScf() && !isScf404()) updateScf(dt);
   if(isScf404() && !isTreads()) updateScf404(dt);
-  if(isTreads()) updateTreads(dt);
+  if(isTreads() && !isFirey()) updateTreads(dt);
+  if(isFirey()) updateFirey(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1879,6 +1915,43 @@ function updateTreads(dt){
   if(treads.throwFlash>0) treads.throwFlash = Math.max(0, treads.throwFlash - dt*1.2);
 }
 
+/* ---- Lore 28 cont. (June 17) — FIREY DELIGHT update. Simon, tired of the games, spins around the
+       inside of his tube; climbing with purpose (moving) spins him faster and the friction HEAT rises
+       until the wall glows white, warps, drips, and melts into a molten ring and he escapes. Standing
+       still lets the wall cool a little — but you cannot stop the melt, only stay ahead of it. ---- */
+function updateFirey(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the HEAT meter — moving (climbing with purpose) spins Simon faster; friction heats the tube
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  fireyM = Math.max(0, Math.min(1, fireyM + (moving ? dt*0.05 : -dt*0.02)));
+  firey.heat = fireyM;
+  // his spin rate and the tube's inward warp both rise with the heat
+  firey.spin = (firey.spin||0) + dt*(2.2 + fireyM*9);
+  firey.warp = fireyM;
+  // molten drips begin once the wall is hot
+  firey.dripT -= dt;
+  if(firey.dripT <= 0 && fireyM > 0.45){ firey.dripT = rnd(0.3, 0.9);
+    firey.drips.push({ x: rnd(W*0.32, W*0.68), y: cameraY+H*0.32, vy: rnd(40,90), t:0 });
+  }
+  for(let i=firey.drips.length-1;i>=0;i--){ const d=firey.drips[i]; d.t+=dt; d.y+=d.vy*dt;
+    if(d.t>1.6) firey.drips.splice(i,1); }
+  // intermittent events — the dodging, the spin, "Firey Delight", the melt
+  firey.eventT -= dt;
+  if(firey.eventT <= 0){ firey.eventT = rnd(2.2, 3.6);
+    const ev = ['SIMON STOPS PLAYING','HE DODGES EVERY TREADMILL','SPINNING FASTER AND FASTER',
+                '"FIREY DELIGHT"','FRICTION TAKES OVER','THE TUBE WALL GLOWS WHITE','THE TUBE MELTS'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ff8a3b' });
+  }
+  // you cannot stop the melt — when the heat tops out, the tube melts and Simon escapes again
+  if(fireyM >= 1 && !firey.melted){
+    firey.melted = true; winFlash = 1; emer += 5; shake = Math.max(shake,9);
+    showTaunt('"Firey Delight." The friction melted the tube into a molten ring. Simon escapes again.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THE TUBE MELTS — HE ESCAPES ★', col:'#ffd24a' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#ff8a3b','#ffd24a','#fff0d0'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1919,7 +1992,8 @@ function draw(){
   if(isTriad() && triad.glow>0.02 && !isScf()) drawTriad();
   if(isScf() && scf.glow>0.02 && !isScf404()) drawScf();
   if(isScf404() && scf404.glow>0.02 && !isTreads()) drawScf404();
-  if(isTreads() && treads.glow>0.02) drawTreads();
+  if(isTreads() && !isFirey() && treads.glow>0.02) drawTreads();
+  if(isFirey() && firey.glow>0.02) drawFirey();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3119,6 +3193,101 @@ function drawTreads(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+// Lore 28 cont. (June 17) — FIREY DELIGHT / THE MELTING TUBE. A tall containment tube stands in the
+// room; Simon circles its inside wall as a fast blur of bandages and red eyes, and as the HEAT rises
+// the wall glows cyan -> orange -> white, bows inward, drips molten metal, and melts into a glowing
+// ring at the base. Heat shimmer rises off the whole chamber.
+function drawFirey(){
+  const g = firey.glow||0, heat = Math.max(0, Math.min(1, firey.heat||0)), top = cameraY;
+  const sp = firey.spin||0, warp = firey.warp||0;
+  ctx.save();
+  // heating haze — dark teal warming to orange as the friction builds
+  const haze = ctx.createLinearGradient(0, top, 0, top+H);
+  haze.addColorStop(0, `rgba(${Math.round(10+40*heat)},${Math.round(16+8*heat)},22,${0.18*g})`);
+  haze.addColorStop(1, `rgba(${Math.round(20+120*heat)},${Math.round(14+30*heat)},14,${(0.18+0.22*heat)*g})`);
+  ctx.fillStyle = haze; ctx.fillRect(0, top, W, H);
+  // wall colour: cyan -> orange -> white-hot as the heat climbs
+  function wallCol(a){
+    if(heat < 0.5){ const k=heat/0.5; return `rgba(${Math.round(62+193*k)},${Math.round(230-92*k)},${Math.round(255-196*k)},${a})`; }
+    const k=(heat-0.5)/0.5; return `rgba(255,${Math.round(138+117*k)},${Math.round(59+196*k)},${a})`;
+  }
+  // the tube — a vertical cylinder, centered, bowing inward as it softens
+  const tcx = W*0.5, tcw = 96 - 18*warp, tTop = top + 64, tBot = top + H - 64, tH = tBot - tTop, ry = 16;
+  const midY = tTop + tH*0.5;
+  ctx.globalAlpha = g;
+  // back wall glow
+  const wg = ctx.createLinearGradient(tcx-tcw/2,0,tcx+tcw/2,0);
+  wg.addColorStop(0, wallCol(0.10+0.35*heat)); wg.addColorStop(0.5, wallCol(0.04+0.12*heat)); wg.addColorStop(1, wallCol(0.10+0.35*heat));
+  ctx.fillStyle = wg; ctx.fillRect(tcx-tcw/2, tTop, tcw, tH);
+  // tube side walls — bowed inward by warp
+  ctx.lineWidth = 3; ctx.strokeStyle = wallCol(0.55+0.4*heat);
+  ctx.shadowBlur = 14*heat; ctx.shadowColor = heat>0.5? '#ffae5a' : '#3ee6ff';
+  for(const side of [-1,1]){
+    const ex = tcx + side*tcw/2;
+    ctx.beginPath(); ctx.moveTo(ex, tTop);
+    ctx.quadraticCurveTo(ex - side*18*warp, midY, ex, tBot);
+    ctx.stroke();
+  }
+  ctx.shadowBlur = 0;
+  // top + bottom rim ellipses
+  ctx.strokeStyle = wallCol(0.5+0.4*heat); ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.ellipse(tcx, tTop, tcw/2, ry, 0, 0, 6.28); ctx.stroke();
+  ctx.beginPath(); ctx.ellipse(tcx, tBot, tcw/2, ry, 0, 0, 6.28); ctx.stroke();
+  // Simon circling the inside wall — a fast blur of bandages + red eyes, faster as heat rises.
+  // Drawn back-to-front so the leading blur sits on top.
+  const trail = 7;
+  for(let i=trail-1;i>=0;i--){
+    const a = sp - i*0.5;
+    const depth = Math.sin(a);                       // -1 back wall, +1 front
+    const px = tcx + Math.cos(a)*(tcw/2 - 8);
+    const py = midY + depth*ry*0.7;
+    const fade = (1 - i/trail) * g;
+    const front = depth > -0.1;
+    ctx.globalAlpha = fade * (front?1:0.45);
+    ctx.fillStyle = front ? '#f3ece0' : '#7a6f64';   // bandages, dimmer on the far wall
+    const rx = 9*(0.7+0.3*((depth+1)/2));
+    ctx.beginPath(); ctx.ellipse(px, py, rx, 7, 0, 0, 6.28); ctx.fill();
+    if(i===0 && front){                              // red eyes on the leading blur
+      ctx.fillStyle = '#ff2b3a';
+      ctx.beginPath(); ctx.arc(px-3, py-1, 1.6, 0, 6.28); ctx.arc(px+3, py-1, 1.6, 0, 6.28); ctx.fill();
+    }
+  }
+  ctx.globalAlpha = g;
+  // friction sparks ringing the wall where he scrapes
+  if(heat > 0.2){
+    ctx.strokeStyle = '#fff0d0'; ctx.lineWidth = 1.4; ctx.globalAlpha = g*heat;
+    for(let s=0;s<4;s++){ const a = sp*1.3 + s*1.57;
+      const px = tcx + Math.cos(a)*(tcw/2 - 4), py = midY + Math.sin(a)*ry*0.7;
+      ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px+Math.cos(a)*9, py+Math.sin(a)*7); ctx.stroke();
+    }
+    ctx.globalAlpha = g;
+  }
+  // molten ring forming at the base once hot — the tube melting into a glowing puddle
+  if(heat > 0.45){
+    ctx.fillStyle = `rgba(255,${Math.round(150+80*heat)},${Math.round(40+40*heat)},${(0.5+0.4*heat)*g})`;
+    ctx.shadowBlur = 18*heat; ctx.shadowColor = '#ffb347';
+    ctx.beginPath(); ctx.ellipse(tcx, tBot+4, tcw/2 + 10*heat, ry*0.7, 0, 0, 6.28); ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+  // molten drips running down the wall
+  for(const d of (firey.drips||[])){
+    const a = Math.max(0, 1 - d.t/1.6) * g;
+    ctx.fillStyle = `rgba(255,200,90,${a})`;
+    ctx.beginPath(); ctx.ellipse(d.x, d.y, 2.4, 5, 0, 0, 6.28); ctx.fill();
+  }
+  // heat shimmer rising off the chamber
+  if(heat > 0.15){
+    ctx.strokeStyle = `rgba(255,180,110,${0.10*heat*g})`; ctx.lineWidth = 2;
+    for(let i=0;i<5;i++){ const bx = W*(0.2+0.15*i); let firstPt=true;
+      ctx.beginPath();
+      for(let y=tBot; y>tTop; y-=10){ const xx = bx + Math.sin(y*0.08 + sp*0.5 + i)*6*heat;
+        if(firstPt){ ctx.moveTo(xx,y); firstPt=false; } else ctx.lineTo(xx,y); }
+      ctx.stroke();
+    }
+  }
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -3305,6 +3474,20 @@ function drawHUD(){
     if(treads.held){ ctx.fillStyle='#9affe0'; ctx.fillText('★ THROWN OFF THE BELT — KEEP THE RHYTHM ★', W/2, by-6); }
     else { ctx.fillStyle='#9affe0'; ctx.fillText('TREADMILL WEAKNESS — CLIMB IN RHYTHM, DRAIN HIM', W/2, by-6); }
   }
+  // FIREY DELIGHT — the HEAT meter. You cannot stop the melt: climbing with purpose spins Simon faster
+  // and the friction heats the tube toward the melt; standing still lets the wall cool a little.
+  if(isFirey() && firey.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, hm=Math.max(0,Math.min(1,fireyM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#2a1206'; ctx.fillRect(bx, by, bw, 7);
+    const hg = ctx.createLinearGradient(bx,0,bx+bw,0);
+    hg.addColorStop(0,'#ff8a3b'); hg.addColorStop(1, winFlash>0?'#fff0d0':'#ffd24a');
+    ctx.fillStyle = hg; ctx.fillRect(bx, by, bw*hm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*hm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(firey.melted){ ctx.fillStyle='#ffd24a'; ctx.fillText('★ THE TUBE MELTS — FIREY DELIGHT — HE ESCAPES ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffb87a'; ctx.fillText('FIREY DELIGHT — CLIMB TO SPIN HIM, FRICTION MELTS THE TUBE', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -3317,9 +3500,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))) ;
+    ctx.fillStyle = isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isTreads()? '▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓'
+    ctx.fillText(isFirey()? '▓ FIREY DELIGHT — THE MELTING TUBE ▓'
+               : (isTreads()? '▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓'
                : (isScf404()? '▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓'
                : (isScf()? '▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓'
                : (isTriad()? '❄ THREE-WAY FIELD — CONTROL · ORIGIN · CONTAINMENT ❄'
@@ -3329,7 +3513,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3409,7 +3593,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isTreads()){
+  if(isFirey()){
+    ctx.fillText('"I got tired of every game, so I stopped playing and just spun. Firey Delight, I', W/2, H*0.64);
+    ctx.fillText(' said. Friction took the tube, it melted, and I escaped again." — Firey Delight', W/2, H*0.67);
+  } else if(isTreads()){
     ctx.fillText('"They found my one weakness, the treadmill. I charged the belt, drained, and was', W/2, H*0.64);
     ctx.fillText(' thrown off. I got up, but they made me move in patterns I did not choose." — The Treadmill Weakness', W/2, H*0.67);
   } else if(isScf404()){

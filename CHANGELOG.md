@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-17 — Firey Delight / The Melting Tube (Lore 28 cont.)
+
+Based on Toby's June 17 lore (the "Re: Lore 28" thread): *"Then Simon tries to escape each time, all
+other characters fell into trapdoors for the Shadow Realm, Simon is now tired of each game, Simon now
+stops playing. Simon slays all the other monsterosities again, Simon dodges each treadmill while moving
+very fast around his tube so many times, Simon says "Firey Delight", Simon moves so fast that friction
+takes over and the tube melts. Simon escapes again."* And what ChatGPT continued, which Toby pasted in,
+calling it the *"T-404 Thermal Escape Event"* — *"the day the tube became useless"*: SCF had measured his
+lightning, his speed, the treadmill drain, *"what they did not measure well enough was friction."*
+
+![Lore 28 cont. — FIREY DELIGHT / THE MELTING TUBE: a tall containment tube glowing white-hot and bowed
+inward, Simon circling its inside wall as a fast blur of bandages and red eyes, molten metal dripping
+down the wall and pooling into a glowing ring at the base, heat shimmer rising off the chamber, the "▓
+FIREY DELIGHT — THE MELTING TUBE ▓" HUD tag, and the orange-to-gold HEAT meter](screenshots/23-firey-delight.png)
+
+- **An eighteenth arc: Firey Delight.** Climb past the Treadmill Weakness and Simon, *"tired of each
+  game,"* stops playing along, *"slays all the other monsterosities again,"* and **dodges every treadmill**
+  while circling the inside of his tube. A new state fires with the orange HUD tag **▓ FIREY DELIGHT — THE
+  MELTING TUBE ▓**.
+- **The spinning blur.** Simon circles the inside wall of a tall containment **tube** as a fast **blur of
+  bandages and red eyes**, *"moving very fast around his tube so many times,"* faster and faster as the
+  heat climbs, scraping friction sparks off the wall.
+- **The HEAT meter — friction, the thing they never measured.** *"Simon moves so fast that friction takes
+  over and the tube melts."* The meter is HEAT: it **rises while you climb with purpose** (every step
+  spins the cat faster, building friction) and **cools a little while you stand still**. The tube wall
+  glows **cyan → orange → white-hot**, **bows inward** as it softens, and **drips molten metal** into a
+  glowing **molten ring** at the base.
+- **You cannot stop the melt.** Like SCF 404's 0% odds, this one Simon wins: fill the meter and he says
+  **"Firey Delight,"** the tube **★ MELTS ★**, and *"Simon escapes again."* Climbing with purpose only
+  keeps you ahead of the molten ring as he gets out.
+- **Wiring, unchanged pattern.** New `firey` state + `isFirey()` gate slot in after `treads`; the SCF 404
+  → Treadmill Weakness chain now runs SCF 404 → Treadmill Weakness → Firey Delight. New `firey` screenshot
+  scene added to `tools/capture_screenshot.py`. Everything additive; no existing behavior removed.
+
 ## 2026-06-17 — The Treadmill Weakness (Lore 28 cont.)
 
 Based on Toby's June 17 lore (the "Re: Lore 28" thread): *"People learn Simon's weakness. Simon's
