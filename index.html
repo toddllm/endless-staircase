@@ -442,6 +442,7 @@ let alien, alienH, alienM;
 let wall, wallH, wallM;
 let smooth, smoothH, smoothM;
 let hallu, halluH, halluM;
+let plague, plagueH, plagueM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -534,6 +535,20 @@ function reset(){
             blindfold:1, screech:0, black:{ alive:true, melt:0, respawn:0 } };
   halluH = smoothH + 1100;
   halluM = 0.25;  // the YELLOW EYE PROTOCOL meter: if the eye opens fully, full sector evacuation — climb with purpose to clear the sight-line before it opens
+  plague = { active:false, t:0, glow:0, done:false, held:false,
+             // Lore 29 (June 18) — THE PLAGUE CYCLE / SCF-404: THE SLEEPING PLAGUE KING. With almost
+             // everyone dead and a "cure" rumored, Simon crowns himself King of Plague. He wears a beak
+             // mask and only lifts it for the instant he touches a victim — one cold touch and they
+             // become a 404D, a zombie, or dead (which, to him, is "living"). His broken mind reverses
+             // life and death: living people look dead, the dead/infected look alive, plague looks like
+             // cure. He calls "GIVE ME A SACRIFICE!", and when an outcome goes wrong (a "resurrection")
+             // he raises a storm and rages, then calms. He lays bodies on a table, sprays them with
+             // anti-virus, and they vanish so they "don't stink." SCF reclassifies him a CONVERSION
+             // entity and writes the PLAGUE-KING PROTOCOL: no direct contact, no mask-removal events.
+             anim:0, mask:1, eye:0, phase:'call', phaseT:2.2, storm:0, rage:0, callFlash:0,
+             victims:[], converts:[], table:{ t:0, fate:'', spray:0 }, victimT:0.8, eventT:2.0 };
+  plagueH = halluH + 1100;
+  plagueM = 0.25;  // the PLAGUE-KING PROTOCOL meter: climb with purpose to keep the protocol (no direct contact, no mask-removal events); standing in his touch-range lets him "cure" you
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -592,6 +607,8 @@ function isAlien(){ return !!(alien && (alien.active || alien.done)); }
 function isWall(){ return !!(wall && (wall.active || wall.done)); }
 function isSmooth(){ return !!(smooth && (smooth.active || smooth.done)); }
 function isHallu(){ return !!(hallu && (hallu.active || hallu.done)); }
+// Lore 29 — after the Hallucination Era, Simon crowns himself the Plague King: THE PLAGUE CYCLE
+function isPlague(){ return !!(plague && (plague.active || plague.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1213,6 +1230,31 @@ function update(dt){
   if(hallu.glow < (isHallu() ? 1 : 0))
     hallu.glow = Math.min(1, hallu.glow + dt*0.5);
 
+  /* ---- Lore 29 (June 18) — THE PLAGUE CYCLE / SCF-404: THE SLEEPING PLAGUE KING. Almost everyone is
+         dead and a "cure" is whispered, so Simon decides to become the whole plague god: King of Plague.
+         He puts on a beak mask and only lifts it for the instant his cold touch lands on a victim, and
+         one touch turns them into a 404D, a zombie, or the dead (which he thinks is living). His mind is
+         reversed: living looks dead, dead looks alive, plague looks like cure. He calls for sacrifices,
+         rages with a storm when an outcome "resurrects," then calms and tidies the bodies with anti-virus.
+         SCF stops treating him as a breach and writes the PLAGUE-KING PROTOCOL: no direct contact. ---- */
+  if(hallu.done && !plague.active && !plague.done && height > plagueH){
+    plague.active = true; plague.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE PLAGUE CYCLE'; warnT = 2.8;
+    showTaunt('Simon crowns himself the Plague King. One touch: a 404D, a zombie, or the dead.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'GIVE ME A SACRIFICE!!!', col:'#9affc8' });
+    AUDIO.zap();
+  }
+  if(plague.active){
+    plague.t += dt;
+    if(plague.t>1.6 && plague.t<1.68) showTaunt('To him, the living look dead and the dead look alive. Plague looks like cure.');
+    if(plague.t>3.4 && plague.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(plague.t>3.4 && plague.t<3.48) showTaunt('PLAGUE-KING PROTOCOL: no direct contact, no mask-removal events. Keep clear.');
+    if(plague.t > 5.4){ plague.active = false; plague.done = true; }
+  }
+  if(plague.glow < (isPlague() ? 1 : 0))
+    plague.glow = Math.min(1, plague.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1228,7 +1270,8 @@ function update(dt){
   if(isAlien() && !isWall()) updateAlien(dt);
   if(isWall() && !isSmooth()) updateWall(dt);
   if(isSmooth() && !isHallu()) updateSmooth(dt);
-  if(isHallu()) updateHallu(dt);
+  if(isHallu() && !isPlague()) updateHallu(dt);
+  if(isPlague()) updatePlague(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2315,7 +2358,8 @@ function draw(){
   if(isAlien() && !isWall() && alien.glow>0.02) drawAlien();
   if(isWall() && !isSmooth() && wall.glow>0.02) drawWall();
   if(isSmooth() && !isHallu() && smooth.glow>0.02) drawSmooth();
-  if(isHallu() && hallu.glow>0.02) drawHallu();
+  if(isHallu() && !isPlague() && hallu.glow>0.02) drawHallu();
+  if(isPlague() && plague.glow>0.02) drawPlague();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3948,6 +3992,246 @@ function drawHallu(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* =========================================================================
+   Lore 29 — THE PLAGUE CYCLE / SCF-404: THE SLEEPING PLAGUE KING
+   Simon becomes a ritual figure: call for a sacrifice, lift the mask for one
+   cold touch (404D / zombie / dead), rage with a storm when an outcome "goes
+   wrong" (a resurrection), then calm and tidy the body with anti-virus. The
+   PLAGUE-KING PROTOCOL meter rewards keeping clear: no direct contact.
+   ========================================================================= */
+const PLAGUE_FATES = ['404D','ZOMBIE','DEAD'];
+function updatePlague(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  plague.anim = (plague.anim||0) + dt;
+  plague.eye = 0.5 + 0.5*Math.abs(Math.sin(plague.anim*0.9));     // the cold yellow eyes pulse
+  plague.callFlash = Math.max(0, (plague.callFlash||0) - dt*1.6);
+  // the mask grows back between touches; it only ever lifts in the 'touch' beat
+  if(plague.phase!=='touch') plague.mask = Math.min(1, (plague.mask||0) + dt*2.2);
+
+  // drifting victims he can select from — to him the living look dead, so they shuffle in slowly
+  plague.victimT = (plague.victimT||0) - dt;
+  if(plague.victimT <= 0){ plague.victimT = rnd(1.0, 2.0);
+    if(plague.victims.length < 5){
+      plague.victims.push({ x: rnd(W*0.14, W*0.86), y: cameraY + rnd(H*0.32, H*0.70),
+        t:0, life: rnd(4.0, 6.0), vx: rnd(-10, 10), sel:false });
+    }
+  }
+  for(const v of plague.victims){ v.t += dt; v.x += (v.vx||0)*dt; }
+  plague.victims = plague.victims.filter(v => v.t < v.life && !v.taken);
+
+  // converted things rise and fade with their fate label stamped on
+  for(const c of plague.converts) c.t += dt;
+  plague.converts = plague.converts.filter(c => c.t < 1.8);
+
+  // the storm only burns while he is raging; otherwise it bleeds away and he calms
+  plague.storm = Math.max(0, Math.min(1, (plague.storm||0) + ((plague.phase==='wrong') ? dt*1.6 : -dt*0.9)));
+  plague.rage = Math.max(0, (plague.rage||0) - dt*1.1);
+  // the anti-virus table cleanup runs during 'calm'
+  plague.table.spray = Math.max(0, (plague.table.spray||0) - dt*0.8);
+  if(plague.table.t>0) plague.table.t = Math.max(0, plague.table.t - dt*0.5);
+
+  // ---- the cycle: CALL → RITUAL TOUCH → (CORRECTION on a wrong outcome) → CALM ----
+  plague.phaseT -= dt;
+  if(plague.phaseT <= 0){
+    if(plague.phase==='call'){
+      // GIVE ME A SACRIFICE — select the nearest drifting victim, lift the mask, deliver the cold touch
+      plague.phase = 'touch'; plague.phaseT = 0.55; plague.mask = 0;
+      let best=null, bd=1e9;
+      for(const v of plague.victims){ const d=Math.abs(v.x-W*0.5); if(!v.taken && d<bd){ bd=d; best=v; } }
+      if(best){ best.taken = true;
+        const fate = pick(PLAGUE_FATES);
+        plague.converts.push({ x:best.x, y:best.y, t:0, fate });
+        plague.table = { t:1.0, fate, spray:0 };     // the body goes to the anti-virus table next
+        AUDIO.zap(); shake = Math.max(shake, 7);
+        showTaunt('The mask lifts for one cold touch. '+fate+'. To Simon, that is a cure.');
+      }
+    } else if(plague.phase==='touch'){
+      // sometimes the outcome "goes wrong" — something resurrects, which to him is the exact opposite
+      if(Math.random() < 0.34){
+        plague.phase = 'wrong'; plague.phaseT = 2.0; plague.rage = 1;
+        shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.4); AUDIO.zap();
+        showTaunt('"Why did you make him resurrect?! You did the exact opposite!" Simon raises a storm.');
+        floaters.push({ x:player.x, y:player.y-34, t:0, txt:'A RESURRECTION — SIMON RAGES', col:'#ff3b5c' });
+      } else {
+        plague.phase = 'calm'; plague.phaseT = 1.8; plague.table.spray = 1;
+      }
+    } else if(plague.phase==='wrong'){
+      // the storm peaks, then he calms — the cycle always returns to calm
+      plague.phase = 'calm'; plague.phaseT = 1.8; plague.table.spray = 1;
+      showTaunt('The storm stops. He calms, lays the body the other way up, sprays anti-virus.');
+    } else { // 'calm' — the body is sprayed and vanishes so it "does not stink," then he calls again
+      plague.phase = 'call'; plague.phaseT = rnd(1.8, 2.6); plague.callFlash = 1;
+      plague.table = { t:0, fate:'', spray:0 };
+    }
+  }
+
+  // the PLAGUE-KING PROTOCOL meter — climb with purpose to keep the protocol (no direct contact);
+  // standing still lets him close the distance for a "cure"-touch and drains the meter
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  plagueM = Math.max(0, Math.min(1, plagueM + (moving ? dt*0.05 : -dt*0.03)));
+  plague.eventT -= dt;
+  if(plague.eventT <= 0){ plague.eventT = rnd(2.2, 3.6);
+    const ev = ['THE PLAGUE CYCLE','SCF-404: THE SLEEPING PLAGUE KING','"GIVE ME A SACRIFICE!"',
+                'ONE TOUCH: 404D · ZOMBIE · DEAD','HE THINKS THE DEAD ARE LIVING','PLAGUE LOOKS LIKE CURE',
+                'PLAGUE-KING PROTOCOL — NO DIRECT CONTACT','NO MASK-REMOVAL EVENTS','HE IS A WHOLE BROKEN GAME',
+                'ANTI-VIRUS THE BODIES SO THEY DO NOT STINK','A CONVERSION ENTITY, NOT A BREACH',
+                'NO ANTI-VIRUS LEFT WITHIN HIS REACH','HE THINKS HE IS HELPING','RAGE · RITUAL · CORRECTION · CALM'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#9affc8' });
+  }
+  if(plagueM >= 1 && !plague.held){
+    plague.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You kept the Plague-King Protocol. No direct contact, no mask removed, no cure forced.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PROTOCOL HELD — NO DIRECT CONTACT ★', col:'#bfffd8' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#9affc8','#7bdc6a','#bfffd8'])));
+    AUDIO.zap();
+  }
+}
+
+function drawPlague(){
+  const g = plague.glow||0, top = cameraY, an = plague.anim||0;
+  ctx.save();
+  // a sick plague haze — green miasma bleeding to black, darker when the storm is up
+  const st = plague.storm||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(10,${18-Math.round(8*st)},14,${(0.34+0.20*st)*g})`);
+  bg.addColorStop(1, `rgba(6,10,8,${(0.32+0.18*st)*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  // the storm — slanting rain + lightning while Simon rages, then it bleeds away as he calms
+  if(st > 0.02){
+    ctx.strokeStyle = `rgba(150,200,180,${0.30*st*g})`; ctx.lineWidth=1;
+    for(let i=0;i<40;i++){
+      const rx = (i*53 + (an*220)%W) % W, ry = top + ((i*97 + an*420) % H);
+      ctx.beginPath(); ctx.moveTo(rx, ry); ctx.lineTo(rx-6, ry+16); ctx.stroke();
+    }
+    if(st > 0.45 && Math.sin(an*9)>0.6){
+      ctx.strokeStyle = `rgba(180,255,210,${0.8*st})`; ctx.lineWidth=2;
+      let lx = W*0.5 + Math.sin(an*3)*60, ly = top;
+      ctx.beginPath(); ctx.moveTo(lx, ly);
+      for(let s=0;s<7;s++){ lx += Math.sin(s*2.1 + an*30)*26; ly += H/7; ctx.lineTo(lx, ly); }
+      ctx.stroke();
+    }
+  }
+
+  // drifting VICTIMS — to Simon the living look dead, so they trudge in slowly
+  for(const v of plague.victims){
+    const fade = Math.min(1, v.t/0.4) * Math.min(1, (v.life-v.t)/0.6);
+    ctx.globalAlpha = g*0.8*fade;
+    ctx.fillStyle = v.sel ? '#cfe0d0' : '#8b9a8e';
+    ctx.beginPath(); ctx.ellipse(v.x, v.y, 7, 14, 0, 0, 6.28); ctx.fill();
+    ctx.beginPath(); ctx.arc(v.x, v.y-16, 6, 0, 6.28); ctx.fill();
+  }
+  ctx.globalAlpha = g;
+
+  // CONVERTED things rising with their fate stamped on — 404D yellow, ZOMBIE green, DEAD gray
+  for(const c of plague.converts){
+    const p = Math.min(1, c.t/1.8); const cy = c.y - p*34;
+    ctx.globalAlpha = g*(1-p)*0.95; ctx.textAlign='center';
+    const col = c.fate==='404D' ? '#ffe24a' : (c.fate==='ZOMBIE' ? '#9fd06a' : '#b9b9c4');
+    ctx.fillStyle = col;
+    ctx.beginPath(); ctx.ellipse(c.x, cy, 6, 12, 0, 0, 6.28); ctx.fill();
+    ctx.font='800 9px ui-monospace,monospace'; ctx.fillText(c.fate, c.x, cy-18);
+  }
+  ctx.globalAlpha = g;
+
+  // the anti-virus TABLE off to the side — the body laid the other way up, sprayed so it "does not stink"
+  const tx = W*0.84, tFloor = top + H - 92;
+  ctx.strokeStyle = `rgba(150,160,170,${0.5*g})`; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.moveTo(tx-26, tFloor); ctx.lineTo(tx+26, tFloor); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(tx-20, tFloor); ctx.lineTo(tx-22, tFloor+22);
+  ctx.moveTo(tx+20, tFloor); ctx.lineTo(tx+22, tFloor+22); ctx.stroke();
+  if((plague.table.t||0) > 0.02){
+    // a body lying on the table (upside-down), fading as it is sprayed away
+    const tt = plague.table.t;
+    ctx.fillStyle = `rgba(150,150,160,${0.55*tt*g})`;
+    ctx.beginPath(); ctx.ellipse(tx, tFloor-8, 18, 6, 0, 0, 6.28); ctx.fill();
+    ctx.beginPath(); ctx.arc(tx-14, tFloor-8, 5, 0, 6.28); ctx.fill();   // head, the other way up
+  }
+  if((plague.table.spray||0) > 0.02){
+    const sp = plague.table.spray;
+    ctx.fillStyle = `rgba(120,230,170,${0.5*sp*g})`;
+    for(let i=0;i<10;i++){ const a2=i*0.7+an*2, rr=6+12*sp;
+      ctx.beginPath(); ctx.arc(tx + Math.cos(a2)*rr, tFloor-10 + Math.sin(a2)*rr*0.6, 1.6, 0, 6.28); ctx.fill(); }
+  }
+  ctx.textAlign='center'; ctx.fillStyle = `rgba(120,200,160,${0.6*g})`; ctx.font='700 7px ui-monospace,monospace';
+  ctx.fillText('ANTI-VIRUS TABLE', tx, tFloor+34);
+
+  // ---- SIMON, the masked Plague King — larger now (he is a whole game inside) ----
+  const scx = W*0.40, sFloor = top + H - 96, bob = Math.sin(an*0.7)*1.6, sy0 = sFloor - 64 + bob;
+  ctx.save();
+  ctx.shadowBlur = 12 + 10*st; ctx.shadowColor = st>0.3 ? '#7bdc6a' : '#ffe24a';
+  // a taller, broken body — robe of a ritual king
+  ctx.fillStyle = '#2a3328';
+  ctx.beginPath(); ctx.moveTo(scx-22, sy0+58); ctx.lineTo(scx-15, sy0+8); ctx.lineTo(scx+15, sy0+8);
+  ctx.lineTo(scx+22, sy0+58); ctx.closePath(); ctx.fill();
+  ctx.fillStyle = '#cfc6b0';                                   // the dim, damaged head
+  ctx.beginPath(); ctx.ellipse(scx, sy0, 16, 15, 0, 0, 6.28); ctx.fill();
+  // a thin crown of broken code over the king
+  ctx.strokeStyle = `rgba(255,226,74,${0.85*g})`; ctx.lineWidth=2;
+  ctx.beginPath();
+  ctx.moveTo(scx-14, sy0-13); ctx.lineTo(scx-14, sy0-22); ctx.lineTo(scx-7, sy0-15);
+  ctx.lineTo(scx, sy0-24); ctx.lineTo(scx+7, sy0-15); ctx.lineTo(scx+14, sy0-22); ctx.lineTo(scx+14, sy0-13);
+  ctx.stroke();
+  // the cold yellow eyes (always glowing, even behind the mask)
+  const ey = plague.eye||0;
+  ctx.shadowBlur = 8 + 14*ey;
+  ctx.fillStyle = '#ffe24a';
+  ctx.beginPath(); ctx.arc(scx-5, sy0-1, 2.0+1.2*ey, 0, 6.28); ctx.arc(scx+5, sy0-1, 2.0+1.2*ey, 0, 6.28); ctx.fill();
+  ctx.restore();
+
+  // the BEAK MASK — on by default; it lifts (slides up) only in the one cold-touch instant
+  const mk = plague.mask||0;
+  if(mk > 0.04){
+    const lift = (1-mk)*16;                                    // how far the mask has risen off the face
+    ctx.save();
+    ctx.fillStyle = `rgba(40,46,38,${0.95*g})`;
+    ctx.strokeStyle = `rgba(150,160,140,${0.6*g})`; ctx.lineWidth=1;
+    // the long plague-doctor beak
+    ctx.beginPath();
+    ctx.moveTo(scx-9, sy0-3-lift); ctx.lineTo(scx-22, sy0+6-lift);
+    ctx.lineTo(scx-7, sy0+9-lift); ctx.lineTo(scx+8, sy0+4-lift);
+    ctx.lineTo(scx+9, sy0-3-lift); ctx.closePath(); ctx.fill(); ctx.stroke();
+    // the two round mask eye-lenses
+    ctx.fillStyle = `rgba(20,24,18,${0.9*g})`;
+    ctx.beginPath(); ctx.arc(scx-5, sy0-2-lift, 3, 0, 6.28); ctx.arc(scx+5, sy0-2-lift, 3, 0, 6.28); ctx.fill();
+    ctx.restore();
+  } else {
+    // mask is OFF — the cold touch: a hand reaching toward the nearest victim, chills in the air
+    let tgt = plague.converts.length ? plague.converts[plague.converts.length-1] : null;
+    const hx = tgt ? tgt.x : scx+40, hy = tgt ? tgt.y : sy0+10;
+    ctx.strokeStyle = `rgba(200,220,255,${0.8*g})`; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(scx+12, sy0+14); ctx.lineTo(hx, hy); ctx.stroke();
+    ctx.fillStyle = `rgba(220,235,255,${0.9*g})`;
+    ctx.beginPath(); ctx.arc(hx, hy, 4, 0, 6.28); ctx.fill();
+    // chill rings off the cold touch
+    ctx.strokeStyle = `rgba(180,220,255,${0.5*g})`; ctx.lineWidth=1;
+    for(let r=0;r<3;r++){ ctx.beginPath(); ctx.arc(hx, hy, 5+r*6+(an*20%6), 0, 6.28); ctx.stroke(); }
+  }
+
+  // the call — GIVE ME A SACRIFICE!!! flashes when he calls
+  ctx.textAlign='center';
+  if((plague.callFlash||0) > 0.02 || plague.phase==='call'){
+    const cf = Math.max(plague.callFlash||0, 0.5);
+    ctx.fillStyle = `rgba(154,255,200,${cf*g})`; ctx.font='800 13px ui-monospace,monospace';
+    ctx.fillText('GIVE ME A SACRIFICE!!!', scx, sy0-34);
+  }
+  // the cycle indicator — RAGE · RITUAL · CORRECTION · CALM, lit on the current beat
+  const beats = [['RAGE','wrong'],['RITUAL','touch'],['CALL','call'],['CALM','calm']];
+  ctx.font='700 8px ui-monospace,monospace';
+  let bxs = scx - 78;
+  for(const [lbl,ph] of beats){
+    ctx.fillStyle = (plague.phase===ph) ? `rgba(255,242,176,${g})` : `rgba(140,160,150,${0.5*g})`;
+    ctx.fillText(lbl, bxs, sFloor+18); bxs += 52;
+  }
+  // title line
+  ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(154,255,200,${(0.7+0.3*Math.abs(Math.sin(an*4)))*g})`;
+  ctx.fillText('SCF-404: THE SLEEPING PLAGUE KING', scx, sy0-48);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -4210,6 +4494,20 @@ function drawHUD(){
     if(hallu.evac){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ SECTOR EVACUATED — NO DIRECT VIEW ★', W/2, by-6); }
     else { ctx.fillStyle='#ffe98a'; ctx.fillText('THE YELLOW EYE PROTOCOL — EVACUATE BEFORE IT OPENS', W/2, by-6); }
   }
+  // THE PLAGUE CYCLE / PLAGUE-KING PROTOCOL (Lore 29) — the PROTOCOL meter. Climb with purpose to keep
+  // the protocol (no direct contact, no mask-removal events); standing in his touch-range drains it.
+  if(isPlague() && plague.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, em=Math.max(0,Math.min(1,plagueM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#0a160e'; ctx.fillRect(bx, by, bw, 7);
+    const pg = ctx.createLinearGradient(bx,0,bx+bw,0);
+    pg.addColorStop(0,'#2a3328'); pg.addColorStop(0.5,'#7bdc6a'); pg.addColorStop(1, winFlash>0?'#bfffd8':'#9affc8');
+    ctx.fillStyle = pg; ctx.fillRect(bx, by, bw*em, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*em-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(plague.held){ ctx.fillStyle='#bfffd8'; ctx.fillText('★ PROTOCOL HELD — NO DIRECT CONTACT ★', W/2, by-6); }
+    else { ctx.fillStyle='#bfffd8'; ctx.fillText('THE PLAGUE-KING PROTOCOL — KEEP CLEAR OF THE TOUCH', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -4222,9 +4520,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))) ;
+    ctx.fillStyle = isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isHallu()? '▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓'
+    ctx.fillText(isPlague()? '▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓'
+               : (isHallu()? '▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓'
                : (isSmooth()? '▓ THE SMOOTH AGE — THE ARROW CHAMBER ▓'
                : (isWall()? '▓ THE WALL ERA — THE NIL STATE ▓'
                : (isAlien()? '▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓'
@@ -4239,7 +4538,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -4255,7 +4554,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Hallucination Era', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Plague Cycle', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -4279,10 +4578,12 @@ function drawTitle(){
     'THE WALL ERA: walled in, the NIL STATE subtracts the room.',
     'THE SMOOTH AGE: FNF arrows read him; then he LIES.',
     'THE HALLUCINATION ERA: HP near 0; the YELLOW EYE melts',
-    'what it sees; he sees zombies/chocolate. BLACK rules now.'
+    'what it sees; he sees zombies/chocolate. BLACK rules now.',
+    'THE PLAGUE CYCLE: Simon crowns himself the PLAGUE KING.',
+    'One cold touch = 404D / ZOMBIE / DEAD. Keep the PROTOCOL.'
   ];
-  ctx.font='12px ui-monospace,monospace';
-  lines.forEach((l,i)=> ctx.fillText(l, W/2, 230 + i*15));
+  ctx.font='11px ui-monospace,monospace';
+  lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
 
   // controls
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
@@ -4319,7 +4620,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isFirey()){
+  if(isPlague()){
+    ctx.fillText('"Almost everyone is dead, so I became the cure. One touch and you are a 404D, a', W/2, H*0.64);
+    ctx.fillText(' zombie, or the dead, which I call living. Give me a sacrifice." — The Plague Cycle', W/2, H*0.67);
+  } else if(isFirey()){
     ctx.fillText('"I got tired of every game, so I stopped playing and just spun. Firey Delight, I', W/2, H*0.64);
     ctx.fillText(' said. Friction took the tube, it melted, and I escaped again." — Firey Delight', W/2, H*0.67);
   } else if(isTreads()){

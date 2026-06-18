@@ -4,6 +4,50 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The Plague Cycle (Lore 29)
+
+Based on Toby's June 18 lore (the "Lore 29" thread): *"Simon decides that if almost everyone is dead and that
+there is a cure then he decides to become a whole plague god, King of Plague... 1 touch by him and then it
+infects all into 404Ds, zombies, or dead which he thinks is living. Simon is SCF 404: The Sleeping Plague King...
+he uses the mask to cover his face, and only takes it off when it touches each victim... he has a cold touch...
+the instant he takes off his mask for a second and looks at you while touching you, you'd turn into either of
+the 3 options. Simon arose and says 'Give me a Sacrifice!!!', a character was sacrificed and Simon says 'Why
+did you make him resurrect?! You did the exact opposite!', Simon makes a storm and gets angry, then after a
+while he calms and stops the storm... He takes the bodies... places it on a table and sprays it with anti-virus,
+then he walks away... he just makes it so that the bodies don't stink."* Simon stops being a rampaging breach
+and becomes a **ritual figure**: his broken mind reverses life and death, so to him the living look dead, the
+dead look alive, and **plague looks like cure**. SCF reclassifies him from a containment threat to a
+**conversion entity** and writes the **Plague-King Protocol**: no direct contact, no sacrificial handling, no
+mask-removal events, no anti-virus left within his reach. The real horror, in Toby's own reading of it: *Simon
+thinks he is helping.*
+
+![Lore 29 — THE PLAGUE CYCLE: the green plague miasma with the masked Plague King at center under a broken-code
+crown, his beak mask lifted for the one cold-touch instant (a pale hand reaching out with chill rings), drifting
+gray victims, converted figures rising with their fate stamped on — a yellow "404D" and a green "ZOMBIE" — the
+anti-virus table off to the right holding a body in green spray-mist, the "SCF-404: THE SLEEPING PLAGUE KING"
+title and the flashing "GIVE ME A SACRIFICE!!!" call, the RAGE · RITUAL · CALL · CALM cycle indicator with
+RITUAL lit, and the green "▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓" HUD tag over the protocol
+meter](screenshots/29-plague-cycle.png)
+
+- **The mask that only lifts to touch.** Simon now wears a beak plague-mask by default; it **only lifts for the
+  one instant his cold touch lands on a victim**, then grows back. The lift is the dangerous beat — one touch
+  and the victim is converted.
+- **One touch, three fates.** A converted victim becomes one of exactly three things, stamped on as it rises:
+  **404D** (yellow), **ZOMBIE** (green), or **DEAD** (gray) — which, to Simon, is "living."
+- **The cycle: RAGE · RITUAL · CALL · CALM.** He calls *"GIVE ME A SACRIFICE!!!"*, lifts the mask for the
+  ritual touch, and **sometimes the outcome "goes wrong"** (a resurrection — *"Why did you make him resurrect?!
+  You did the exact opposite!"*). When it does he **raises a storm and rages** (slanting rain, lightning), then
+  **calms** — the cycle always returns to calm. He never stays in rage.
+- **The anti-virus table.** After a conversion the body goes to a table off to the side, laid the other way up
+  and **sprayed with anti-virus** in a green mist until it vanishes, so it "doesn't stink."
+- **The Plague-King Protocol meter.** The new doctrine is *no direct contact*. Climb with purpose to keep clear
+  of his touch and the meter fills to **★ PROTOCOL HELD — NO DIRECT CONTACT ★** (+5 emeralds); standing still in
+  his touch-range lets him close the distance for a "cure" and drains it.
+- **A whole broken game.** Title line **SCF-404: THE SLEEPING PLAGUE KING**, drawn larger now (he is "larger
+  inside since he is a whole game"), with permanent cold yellow eyes glowing through the mask.
+- Title screen, lore blurb, era HUD tag, and the death-screen lore sting all updated for the Plague Cycle. Added
+  the `plague` screenshot scene to `tools/capture_screenshot.py`. Everything is additive; all prior eras intact.
+
 ## 2026-06-18 — The No-Sight Chamber (Lore 29 cont.)
 
 Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Simon can't see anything because of his

@@ -694,6 +694,39 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "plague": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE PLAGUE CYCLE — frozen on the ritual touch: the beak mask is lifted for one cold touch, a
+        // victim has just become a 404D, drifting victims wait, and the anti-virus table holds a body.
+        if (typeof plague!=='undefined'){
+          plague.active=true; plague.done=false; plague.glow=1; plague.t=4.0;
+          plague.anim=2.2; plague.eye=0.9; plague.mask=0.0; plague.phase='touch'; plague.phaseT=0.5;
+          plague.storm=0.18; plague.callFlash=0.9;
+          plague.victims=[{x:W*0.30,y:cameraY+H*0.46,t:1.0,life:6,vx:6,sel:false},
+                          {x:W*0.62,y:cameraY+H*0.58,t:1.0,life:6,vx:-5,sel:false},
+                          {x:W*0.20,y:cameraY+H*0.66,t:1.0,life:6,vx:4,sel:false}];
+          plague.converts=[{x:W*0.50,y:cameraY+H*0.50,t:0.4,fate:'404D'},
+                           {x:W*0.44,y:cameraY+H*0.40,t:0.9,fate:'ZOMBIE'}];
+          plague.table={t:0.9,fate:'DEAD',spray:0.7};
+        }
+        if (typeof plagueM!=='undefined'){ plagueM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof plague!=='undefined'){ plague.mask=0.0; plague.phase='touch'; plague.callFlash=0.9; plague.eye=0.9; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.3; }
+        if (typeof glitch!=='undefined'){ glitch=0.3; }
+        if (typeof showTaunt==='function'){ showTaunt('The Plague Cycle. Simon lifts the mask for one cold touch: 404D, zombie, or dead. Keep the Plague-King Protocol: no direct contact.'); tauntT=9; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
     "nosight": """
       try {
         handleConfirm();
