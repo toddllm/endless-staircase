@@ -527,7 +527,11 @@ function reset(){
   smoothH = wallH + 1100;
   smoothM = 0.25;  // the READ meter: stop trusting the FNF arrows and read HIM — climb with purpose to read past the lie
   hallu = { active:false, t:0, glow:0, done:false, evac:false, anim:0, eye:0, eyeFull:0, lightning:0,
-            figs:[], figT:1.2, melts:[], eventT:2.0 };
+            figs:[], figT:1.2, melts:[], eventT:2.0,
+            // Lore 29 cont. (June 18) — the No-Sight Chamber: the blindfold melts every time he opens
+            // his eyes; Black's see-through cell is fatal — line of sight alone melts him and he is "sent
+            // back to his containment"; SCF rebuilds around sensor-only observation (no direct view)
+            blindfold:1, screech:0, black:{ alive:true, melt:0, respawn:0 } };
   halluH = smoothH + 1100;
   halluM = 0.25;  // the YELLOW EYE PROTOCOL meter: if the eye opens fully, full sector evacuation — climb with purpose to clear the sight-line before it opens
   // starting ground platform under the player
@@ -2211,10 +2215,26 @@ function updateHallu(dt){
     // whatever he sees melts — drop a melt where a hallucination is standing
     const h = hallu.figs[(hallu.figs.length*Math.random())|0];
     if(h) hallu.melts.push({ x:h.x, y:h.y, t:0 });
-    showTaunt('The Yellow Eye opened fully. Whatever he sees melts. Full sector evacuation.');
+    // the blindfold ALWAYS melts the instant he opens his eyes
+    hallu.blindfold = 0;
+    // Black's cell is see-through, so line of sight alone is fatal: he melts and is "sent back"
+    if(hallu.black.alive){
+      hallu.black.alive = false; hallu.black.melt = 1.0; hallu.black.respawn = 4.5;
+      hallu.screech = 1.0; shake = Math.max(shake, 12);
+      showTaunt('Black looked through the see-through cell. Simon opened his eye. Black melts, sent back.');
+    } else {
+      showTaunt('The Yellow Eye opened fully. The blindfold melts. Whatever he sees melts.');
+    }
   }
   hallu.eyeFull = Math.max(0, (hallu.eyeFull||0) - dt*1.6);
   hallu.lightning = Math.max(0, (hallu.lightning||0) - dt*2.2);
+  hallu.screech = Math.max(0, (hallu.screech||0) - dt*1.4);
+  hallu.black.melt = Math.max(0, (hallu.black.melt||0) - dt*0.9);
+  // the blindfold slowly grows back over his eyes between openings (he keeps re-applying it)
+  if(!hallu.black.alive){ hallu.black.respawn -= dt;
+    if(hallu.black.respawn <= 0){ hallu.black.alive = true; }   // Black is sent back to his cell
+  }
+  hallu.blindfold = Math.min(1, (hallu.blindfold||0) + dt*0.45);
   // the Hullelations — the living look like zombies, the dead look alive, all brown things look like chocolate
   hallu.figT = (hallu.figT||0) - dt;
   if(hallu.figT <= 0){ hallu.figT = rnd(0.9, 1.7);
@@ -2235,7 +2255,10 @@ function updateHallu(dt){
   if(hallu.eventT <= 0){ hallu.eventT = rnd(2.2, 3.6);
     const ev = ['THE HALLUCINATION ERA','HP NEAR ZERO — STILL DANGEROUS','YELLOW EYE: A FATE, NOT A CURSE',
                 'HULLELATIONS FOREVER','"ALL BROWN THINGS ARE CHOCOLATE"','THE DEAD LOOK ALIVE',
-                'BLACK IS THE STRONGEST NOW','NO DIRECT VIEW — EVACUATE THE SECTOR'];
+                'BLACK IS THE STRONGEST NOW','NO DIRECT VIEW — EVACUATE THE SECTOR',
+                'THE NO-SIGHT CHAMBER','THE BLINDFOLD MELTS WHEN HE OPENS HIS EYES',
+                'NO TRANSPARENT WALLS — SENSOR-ONLY','DO NOT LET ENTITY 404 BE OBSERVED',
+                'IF SIMON SEES IT, IT MELTS','HEAT · PRESSURE · SOUND — NO CAMERAS'];
     floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
   }
   if(halluM >= 1 && !hallu.evac){
@@ -3846,6 +3869,18 @@ function drawHallu(){
   ctx.fillStyle = full>0.2 ? '#fff6c0' : '#ffe24a';             // the Yellow Eye
   ctx.beginPath(); ctx.ellipse(scx+5, sy0, 2.2, 2.2*eo, 0, 0, 6.28); ctx.fill();
   ctx.restore();
+  // the blindfold he keeps re-applying over his eyes — it MELTS the instant the Yellow Eye opens, then grows back
+  const bf = hallu.blindfold||0;
+  if(bf > 0.04){
+    ctx.fillStyle = `rgba(28,24,18,${0.92*bf*g})`;
+    ctx.fillRect(scx-13, sy0-3.5, 26, 6.5*bf);
+    ctx.strokeStyle = `rgba(64,56,42,${0.85*bf*g})`; ctx.lineWidth=1;
+    ctx.strokeRect(scx-13, sy0-3.5, 26, 6.5*bf);
+  } else {
+    // mid-melt — dark drips run down where the blindfold just gave way
+    ctx.fillStyle = `rgba(40,34,22,${0.55*g})`;
+    ctx.fillRect(scx-10, sy0+1, 3, 9); ctx.fillRect(scx+7, sy0+1, 3, 7);
+  }
   // melt drips where the Yellow Eye has looked
   for(const mlt of hallu.melts){
     const p = Math.min(1, mlt.t/1.6);
@@ -3854,6 +3889,46 @@ function drawHallu(){
     ctx.fillStyle = '#caa050'; ctx.fillRect(mlt.x-3, mlt.y+10, 6, 6 + p*36);
   }
   ctx.globalAlpha = g;
+  // Lore 29 cont. — Black's "basic, very small jail-cell." It is SEE-THROUGH, which is exactly why line of
+  // sight alone is fatal: when the Yellow Eye opens toward it, Black melts and is "sent back to his containment."
+  const bk = hallu.black, ccx = W*0.80, cTop = sFloor - 64, cW = 46, cH = 64;
+  ctx.save(); ctx.textAlign='center';
+  // SCF's redesign note — the new chamber is sensor-only: no cameras, no transparent walls (this old cell still is)
+  ctx.fillStyle = `rgba(255,210,90,${0.7*g})`; ctx.font='700 7px ui-monospace,monospace';
+  ctx.fillText('SENSOR-ONLY · HEAT · PRESSURE · SOUND', W*0.5, sFloor+18);
+  // the see-through cell — thin walls + bars you can see straight through
+  ctx.strokeStyle = `rgba(150,160,180,${0.5*g})`; ctx.lineWidth=2;
+  ctx.strokeRect(ccx-cW/2, cTop, cW, cH);
+  ctx.strokeStyle = `rgba(120,130,150,${0.4*g})`; ctx.lineWidth=1;
+  for(let bx=1; bx<5; bx++){ const X=ccx-cW/2+bx*(cW/5); ctx.beginPath(); ctx.moveTo(X,cTop); ctx.lineTo(X,cTop+cH); ctx.stroke(); }
+  // danger / warning signs at the door
+  for(let s=-1;s<=1;s++){ const wx=ccx+s*16, wy=cTop-11;
+    ctx.fillStyle = `rgba(255,200,40,${0.85*g})`;
+    ctx.beginPath(); ctx.moveTo(wx,wy-6); ctx.lineTo(wx-6,wy+5); ctx.lineTo(wx+6,wy+5); ctx.closePath(); ctx.fill();
+    ctx.fillStyle=`rgba(26,20,7,${g})`; ctx.fillText('!', wx, wy+4.5);
+  }
+  if(bk.alive){
+    // Black, contained — a small dark figure looking out (and looking is what dooms him)
+    ctx.fillStyle = `rgba(10,8,16,${0.9*g})`;
+    ctx.beginPath(); ctx.ellipse(ccx, cTop+cH-20, 11, 18, 0, 0, 6.28); ctx.fill();
+    ctx.beginPath(); ctx.arc(ccx, cTop+cH-38, 9, 0, 6.28); ctx.fill();
+    ctx.fillStyle = `rgba(255,80,110,${0.85*g})`;
+    ctx.beginPath(); ctx.arc(ccx-3, cTop+cH-40, 1.8,0,6.28); ctx.arc(ccx+3, cTop+cH-40,1.8,0,6.28); ctx.fill();
+    ctx.fillStyle = `rgba(220,210,230,${0.8*g})`;
+    ctx.fillText('BLACK', ccx, cTop-1);
+  } else {
+    // melted by being seen — a red drip, then "SENT BACK" while he respawns into the cell
+    ctx.fillStyle = `rgba(255,80,110,${0.7*g*(bk.melt||0)})`;
+    ctx.fillRect(ccx-6, cTop+cH-30, 12, 4 + 24*(bk.melt||0));
+    ctx.fillStyle = `rgba(180,170,190,${0.8*g})`;
+    ctx.fillText(bk.respawn>1.2 ? 'SENT BACK' : 'BLACK', ccx, cTop-1);
+  }
+  ctx.restore();
+  // the screech that takes Black out the moment Simon opens his eye toward the cell
+  if((hallu.screech||0) > 0.02){
+    ctx.strokeStyle = `rgba(255,246,180,${0.8*hallu.screech*g})`; ctx.lineWidth=2;
+    for(let r=0;r<3;r++){ ctx.beginPath(); ctx.arc(scx+5, sy0, 14+r*13 + (1-hallu.screech)*22, -0.55, 0.55); ctx.stroke(); }
+  }
   // when the Yellow Eye fully opens, lightning covers the screen
   if((hallu.lightning||0) > 0.02){
     const lg = hallu.lightning;

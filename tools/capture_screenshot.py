@@ -694,6 +694,37 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "nosight": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        if (typeof smooth!=='undefined'){ smooth.read=true; smooth.arrows=[]; }
+        // THE NO-SIGHT CHAMBER — the Yellow Eye has just opened: blindfold melted, Black melting by line of
+        // sight (sent back to his see-through cell), the screech firing, lightning across the screen
+        if (typeof hallu!=='undefined'){ hallu.active=true; hallu.done=false; hallu.glow=1; hallu.t=4.0;
+          hallu.anim=2.4; hallu.eye=0.0; hallu.eyeFull=0.85; hallu.lightning=0.85; hallu.figT=1.0;
+          hallu.blindfold=0.06; hallu.screech=0.7;
+          hallu.black={ alive:false, melt:0.8, respawn:2.6 };
+          hallu.figs=[{x:W*0.60,y:cameraY+H*0.42,kind:'zombie',t:1.0,life:5.0,vx:6},
+                      {x:W*0.30,y:cameraY+H*0.62,kind:'choc',t:1.0,life:5.0,vx:4}];
+          hallu.melts=[{x:W*0.60,y:cameraY+H*0.42+18,t:0.5}]; }
+        if (typeof halluM!=='undefined'){ halluM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof hallu!=='undefined'){ hallu.eyeFull=0.85; hallu.lightning=0.85; hallu.screech=0.7;
+          hallu.black.alive=false; hallu.black.melt=0.8; hallu.black.respawn=2.6; hallu.blindfold=0.06; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.3; }
+        if (typeof glitch!=='undefined'){ glitch=0.3; }
+        if (typeof showTaunt==='function'){ showTaunt('The No-Sight Chamber. The blindfold melts when he opens his eyes; Black looked through the see-through cell and was sent back. Sensor-only now: no direct view.'); tauntT=9; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

@@ -4,6 +4,53 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The No-Sight Chamber (Lore 29 cont.)
+
+Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Simon can't see anything because of his
+yellow lights from his eyes that cause him Hallucinations... ALL THINGS Simon Sees WILL Melt... Simon closes
+his eyes and even puts on the blindfold, then when he opens his eyes, the blindfold always melts... Simon is
+now placed inside the biggest and strongest... Containment rooms... Black was given a basic very small
+jail-cell-like containment center. Black once looked at Simon and then Simon turned around and opened his
+eyes, Simon screetches, Black fellen and was sent back to his containment... the cage was see-through, and he
+sees Black, Black dies. Simon closes his eyes again and waits for the next victum to look at him."* The danger
+flips one more time: it is no longer what Simon **does**, it is what **enters his line of sight**. So SCF stops
+treating Entity 404 like a combatant and starts treating him like a **catastrophic sight hazard**. The new
+doctrine, in Toby's framing: ***keep his eyes closed, keep everything out of sight range, no reflective
+surfaces, never allow line-of-sight to other entities*** — *"Do not let Entity 404 be observed by anything
+living."* The see-through cell turns out to be one of the worst ideas possible, which is why **Black dies just
+by being seen**, and the blindfold he keeps putting on **melts every time he opens his eyes**. SCF's answer is
+the first true **no-sight chamber**: no transparent walls, no cameras, **sensor-only** observation (heat,
+pressure, sound).
+
+![Lore 29 cont. — THE NO-SIGHT CHAMBER: the murky brown-green hallucination haze with Simon damaged and dim,
+his blindfold melted away to a dark drip the instant his Yellow Eye opened, white screech arcs ringing out from
+the eye, Black's small SEE-THROUGH jail-cell on the right (bars you can see straight through, three yellow
+danger-triangle warning signs over the door) now empty and tagged "SENT BACK" after dying by line of sight, the
+"SENSOR-ONLY · HEAT · PRESSURE · SOUND" chamber note, drifting mislabeled hullelations (a green "ZOMBIE?", a
+brown "CHOCOLATE"), the "SIMON HP 0.0001 — WEAKEST, NOT HARMLESS" readout, lightning across the screen, and the
+yellow "▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓" HUD tag](screenshots/28-no-sight-chamber.png)
+
+- **The blindfold that always melts.** Simon keeps his eyes closed and re-applies a blindfold; it grows back
+  over his eyes between openings, and **melts away the instant the Yellow Eye opens**, leaving a dark drip. He
+  never gets to stay covered, which is exactly why this is tragic — he does not even understand what is
+  happening.
+- **Black's see-through cell — death by line of sight.** Off to the side sits Black's *"basic very small
+  jail-cell"*: thin walls and **bars you can see straight through**, with three **danger-triangle warning
+  signs** over the door. Because the cell is see-through, when the Yellow Eye opens toward it **Black melts and
+  is "sent back to his containment"** (the cell reads **SENT BACK**, then **BLACK** again as he respawns). A
+  **screech** rings out from the eye each time it happens. Even the strongest being is not safe if he enters
+  Simon's view.
+- **The no-sight chamber — sensor-only.** SCF redesigns containment around **total line-of-sight prevention**
+  instead of stronger walls: no transparent walls, no reflective surfaces, no cameras facing him — only
+  **heat, pressure, and sound** readings (a new **SENSOR-ONLY · HEAT · PRESSURE · SOUND** note sits under the
+  room). New ticker lines carry the doctrine: *THE NO-SIGHT CHAMBER*, *DO NOT LET ENTITY 404 BE OBSERVED*,
+  *NO TRANSPARENT WALLS — SENSOR-ONLY*, *IF SIMON SEES IT, IT MELTS*.
+- **Wiring, unchanged pattern.** All additive inside the existing `hallu` state (no new top-level arc): new
+  `blindfold`, `screech`, and `black` fields in the reset init; the eye-fully-opens branch now melts the
+  blindfold and kills Black by line of sight; `updateHallu` regrows the blindfold and respawns Black; `drawHallu`
+  draws the blindfold, the see-through cell with warning signs, the sensor note, and the screech arcs. New
+  `nosight` screenshot scene added to `tools/capture_screenshot.py`. Nothing removed; game and wiki stay up.
+
 ## 2026-06-18 — The Hallucination Era / The Yellow Eye Protocol (Lore 29 cont.)
 
 Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Classics and SCF finally gained rights...
