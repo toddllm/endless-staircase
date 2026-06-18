@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The Alien Age / Faster Than Prediction (Lore 29)
+
+Based on Toby's June 18 lore (the "Lore 29" thread): SCF enters *"The Alien Age of SCF."* After an
+impossible number of years, SCF-404 wakes from sleep, and the facility is no longer merely futuristic.
+It is *"planet-sized, layered through multiple realities, grown with alien engineering, self-repairing,
+self-thinking,"* and old enough that *"entire civilizations inside SCF no longer remember what outside
+originally meant."* Simon wakes *"already aware"* and is offended that *"SCF kept evolving to hold him."*
+The standout is the first post-sleep escape: the alien soldiers fire *"containment geometry: folding
+light-shapes meant to restrict possible futures,"* and *"one drone predicts his next 400 movements. Simon
+chooses movement 401."* The report becomes famous: *"Subject escaped faster than prediction."* A single
+yellow eye / symbol keeps appearing in the sky-shield above the towers.
+
+![Lore 29 — THE ALIEN AGE / FASTER THAN PREDICTION: a planet-sized alien-grown chamber with a deep violet-
+green haze, a single glowing yellow eye open in the sky-shield band, a green prediction lattice mapping
+future positions, folding light-shape polygons (containment geometry) drifting in to box Simon's futures,
+the dotted predicted-path nodes near the player with the yellow MOVE 401 node stepping off the track, the
+"▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓" HUD tag, and the green-to-yellow PREDICTION
+meter](screenshots/24-alien-age.png)
+
+- **A nineteenth arc: The Alien Age.** Climb past Firey Delight and the staircase enters the Alien Age. A
+  new state fires with the alien-green HUD tag **▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓**. SCF-404
+  *"wakes already aware"* in a planet-sized, self-thinking chamber grown by alien engineering.
+- **The single yellow eye.** A yellow eye / symbol opens in the **sky-shield** band above the chamber,
+  *"a giant symbol in the artificial clouds"* the cities look up at when 404 wakes. Its pupil pulses.
+- **Containment geometry — folding light-shapes.** The alien soldiers *"fire not bullets, but containment
+  geometry: folding light-shapes meant to restrict possible futures."* Rotating green polygons (3–6 sides)
+  drift down into the chamber, morphing as they try to box Simon's futures in.
+- **The prediction lattice + MOVE 401.** A faint green **prediction lattice** maps where Simon will go,
+  and a row of ghost **predicted-path nodes** trails the player — the drone's *"next 400 movements."* As
+  the meter fills, a yellow **MOVE 401** node steps off the predicted line: Simon picks the one move the
+  lattice did not.
+- **The PREDICTION meter — escape faster than prediction.** *"Subject escaped faster than prediction."*
+  The meter **fills while you climb with purpose** (so Simon chooses move 401 and outruns the lattice) and
+  **slips while you stand still** (the prediction catches up — a behind-the-bar marker shows how well the
+  lattice still predicts him). Fill it and Simon is *"already gone,"* faster than prediction.
+- **Wiring, unchanged pattern.** New `alien` state + `isAlien()` gate slot in after `firey`; the chain now
+  runs SCF 404 → Treadmill Weakness → Firey Delight → The Alien Age. New `alien` screenshot scene added to
+  `tools/capture_screenshot.py`. Everything additive; no existing behavior removed.
+
 ## 2026-06-17 — Firey Delight / The Melting Tube (Lore 28 cont.)
 
 Based on Toby's June 17 lore (the "Re: Lore 28" thread): *"Then Simon tries to escape each time, all

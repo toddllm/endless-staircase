@@ -525,6 +525,44 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "alien": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        if (typeof residual!=='undefined'){ residual.active=false; residual.done=true; residual.glow=1; residual.t=6.5; }
+        if (typeof sounds!=='undefined'){ sounds.active=false; sounds.done=true; sounds.glow=1; sounds.t=6.5; sounds.idx=17; }
+        if (typeof voidwar!=='undefined'){ voidwar.active=false; voidwar.done=true; voidwar.glow=1; voidwar.t=6.5; voidwar.held=true; }
+        if (typeof judge!=='undefined'){ judge.active=false; judge.done=true; judge.glow=1; judge.t=6.5; judge.held=true; judge.gold=true; judge.presents=[]; }
+        if (typeof triad!=='undefined'){ triad.active=false; triad.done=true; triad.glow=1; triad.t=6.5; triad.held=true; triad.ice=0.85; }
+        if (typeof scf!=='undefined'){ scf.active=false; scf.done=true; scf.glow=1; scf.t=6.5; scf.spread=0.9; scf.held=true; }
+        if (typeof scfM!=='undefined'){ scfM=1.0; }
+        if (typeof scf404!=='undefined'){ scf404.active=false; scf404.done=true; scf404.glow=1; scf404.t=6.5; scf404.expand=0.8; scf404.held=true; scf404.bolts=[]; }
+        if (typeof scf404M!=='undefined'){ scf404M=1.0; }
+        if (typeof treads!=='undefined'){ treads.active=false; treads.done=true; treads.glow=1; treads.t=6.5; treads.ring=1.0; treads.charge=0.0; treads.held=true; }
+        if (typeof treadsM!=='undefined'){ treadsM=1.0; }
+        if (typeof firey!=='undefined'){ firey.active=false; firey.done=true; firey.glow=1; firey.t=6.5; firey.heat=1.0; firey.warp=1.0; firey.spin=7.4; firey.melted=true; firey.drips=[]; }
+        if (typeof fireyM!=='undefined'){ fireyM=1.0; }
+        // THE ALIEN AGE lit and near escape — eye open, lattice + containment geometry, MOVE 401 off-track
+        if (typeof alien!=='undefined'){ alien.active=true; alien.done=false; alien.glow=1; alien.t=4.2;
+          alien.eye=1.0; alien.predict=0.18; alien.latticeT=3.0; alien.spawnT=0.4;
+          alien.shapes=[{x:W*0.30,y:cameraY+H*0.42,vy:70,sides:5,rot:1.1,t:0.4},
+                        {x:W*0.66,y:cameraY+H*0.30,vy:60,sides:6,rot:2.2,t:0.8},
+                        {x:W*0.50,y:cameraY+H*0.55,vy:80,sides:4,rot:0.6,t:0.2}]; }
+        if (typeof alienM!=='undefined'){ alienM=0.86; }
+        for (var m=0;m<10;m++){ update(1/60); }
+        if (typeof winFlash!=='undefined'){ winFlash=0.5; }
+        if (typeof glitch!=='undefined'){ glitch=0.3; }
+        if (typeof showTaunt==='function'){ showTaunt('You built all this and still thought I was sleeping. The drone predicted 400 moves. I chose 401.'); tauntT=8; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

@@ -438,6 +438,7 @@ let treads, treadsH, treadsM;
 // that friction takes over, the tube wall heats orange then white-hot, warps, and melts into a molten
 // ring, and Simon escapes again. You cannot stop the melt — only stay ahead of it as he gets out.
 let firey, fireyH, fireyM;
+let alien, alienH, alienM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -509,6 +510,10 @@ function reset(){
             dripT:0.6, eventT:2.4, drips:[] };
   fireyH = treadsH + 1100;
   fireyM = 0.25;  // the HEAT meter: climb with purpose to spin Simon faster; friction melts the tube and he escapes
+  alien = { active:false, t:0, glow:0, done:false, escaped:false, eye:0, predict:0,
+            latticeT:0, spawnT:0.6, eventT:2.0, shapes:[] };
+  alienH = fireyH + 1100;
+  alienM = 0.25;  // the PREDICTION meter: climb with purpose so Simon picks move 401 and escapes faster than prediction
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -563,6 +568,7 @@ function isTreads(){ return !!(treads && (treads.active || treads.done)); }
 // FIREY DELIGHT (Lore 28 cont.) — once the Treadmill Weakness resolves, Simon tires of every game,
 // stops playing, dodges every treadmill, and spins so fast around his tube that friction melts it.
 function isFirey(){ return !!(firey && (firey.active || firey.done)); }
+function isAlien(){ return !!(alien && (alien.active || alien.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1086,6 +1092,29 @@ function update(dt){
   if(firey.glow < (isFirey() ? 1 : 0))
     firey.glow = Math.min(1, firey.glow + dt*0.5);
 
+  /* ---- Lore 29 (June 18) — THE ALIEN AGE. After an impossible sleep, SCF-404 wakes already aware in a
+         planet-sized, self-thinking facility grown by alien engineering. A single yellow eye opens in the
+         sky-shield, and containment geometry (folding light-shapes) folds in to restrict his possible
+         futures while a prediction lattice maps his next 400 moves. So he chooses move 401: he escapes
+         faster than prediction. Climb with purpose to fill the PREDICTION meter and step off the track. ---- */
+  if(firey.done && !alien.active && !alien.done && height > alienH){
+    alien.active = true; alien.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE ALIEN AGE'; warnT = 2.8;
+    showTaunt('The Alien Age of SCF. Simon wakes from an impossible sleep, already aware.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SCF-404: AWAKE — THE FACILITY EVOLVED TO HOLD HIM', col:'#aef34a' });
+    AUDIO.zap();
+  }
+  if(alien.active){
+    alien.t += dt;
+    if(alien.t>1.6 && alien.t<1.68) showTaunt('"You built all this and still thought I was sleeping." Planet-sized SCF, grown by alien engineering.');
+    if(alien.t>3.4 && alien.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(alien.t>3.4 && alien.t<3.48) showTaunt('Containment geometry folds in to restrict his futures. A drone predicts his next 400 moves.');
+    if(alien.t > 5.4){ alien.active = false; alien.done = true; }
+  }
+  if(alien.glow < (isAlien() ? 1 : 0))
+    alien.glow = Math.min(1, alien.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1097,7 +1126,8 @@ function update(dt){
   if(isScf() && !isScf404()) updateScf(dt);
   if(isScf404() && !isTreads()) updateScf404(dt);
   if(isTreads() && !isFirey()) updateTreads(dt);
-  if(isFirey()) updateFirey(dt);
+  if(isFirey() && !isAlien()) updateFirey(dt);
+  if(isAlien()) updateAlien(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -1952,6 +1982,45 @@ function updateFirey(dt){
   }
 }
 
+/* ---- Lore 29 (June 18) — THE ALIEN AGE update. A single yellow eye opens in the sky-shield and
+       containment geometry (folding light-shapes) drifts in to box his possible futures while a
+       prediction lattice maps where he goes next. The PREDICTION meter fills while you climb with
+       purpose: Simon chooses move 401, steps off the predicted track, and escapes faster than
+       prediction. Standing still lets the lattice catch up. ---- */
+function updateAlien(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the single yellow eye / sky-shield symbol fades in
+  alien.eye = Math.min(1, (alien.eye||0) + dt*0.4);
+  alien.latticeT = (alien.latticeT||0) + dt;
+  // the PREDICTION meter — climbing with purpose lets Simon choose move 401 and outrun the lattice
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  alienM = Math.max(0, Math.min(1, alienM + (moving ? dt*0.05 : -dt*0.025)));
+  alien.predict = 1 - alienM*0.85;   // how well the lattice still predicts him; drops as he steps off-track
+  // containment geometry — folding light-shapes drifting down to restrict his futures
+  alien.spawnT -= dt;
+  if(alien.spawnT <= 0){ alien.spawnT = rnd(0.5, 1.1);
+    alien.shapes.push({ x: rnd(W*0.18, W*0.82), y: cameraY - 24, vy: rnd(48,92),
+                        sides: 3 + (Math.floor(alien.t*7)%4), rot: alien.t, t:0 });
+  }
+  for(let i=alien.shapes.length-1;i>=0;i--){ const s=alien.shapes[i]; s.t+=dt; s.y+=s.vy*dt; s.rot+=dt*1.5;
+    if(s.t>3.2) alien.shapes.splice(i,1); }
+  // intermittent events — the waking, the prediction, move 401
+  alien.eventT -= dt;
+  if(alien.eventT <= 0){ alien.eventT = rnd(2.2, 3.6);
+    const ev = ['SCF-404: AWAKE','HE WOKE ALREADY AWARE','CONTAINMENT GEOMETRY FOLDS IN',
+                'PREDICTED: NEXT 400 MOVES','HE CHOOSES MOVE 401','FASTER THAN PREDICTION'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#aef34a' });
+  }
+  // fill it and he escapes faster than the prediction can place him
+  if(alienM >= 1 && !alien.escaped){
+    alien.escaped = true; winFlash = 1; emer += 5; shake = Math.max(shake,9);
+    showTaunt('"Subject escaped faster than prediction." Simon chose move 401 and was already gone.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ FASTER THAN PREDICTION — MOVE 401 ★', col:'#eaffce' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#aef34a','#ffe24a','#eaffce'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -1993,7 +2062,8 @@ function draw(){
   if(isScf() && scf.glow>0.02 && !isScf404()) drawScf();
   if(isScf404() && scf404.glow>0.02 && !isTreads()) drawScf404();
   if(isTreads() && !isFirey() && treads.glow>0.02) drawTreads();
-  if(isFirey() && firey.glow>0.02) drawFirey();
+  if(isFirey() && !isAlien() && firey.glow>0.02) drawFirey();
+  if(isAlien() && alien.glow>0.02) drawAlien();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3288,6 +3358,67 @@ function drawFirey(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ---- Lore 29 — THE ALIEN AGE render. A planet-sized, alien-grown chamber: a yellow eye in the
+       sky-shield, a green prediction lattice, folding light-shapes closing in, and the predicted
+       path of his next moves with the yellow MOVE 401 node stepping off-track as he outruns it. ---- */
+function drawAlien(){
+  const g = alien.glow||0, top = cameraY, lt = alien.latticeT||0;
+  const pred = Math.max(0,Math.min(1,alien.predict||0)), out = Math.max(0,Math.min(1,alienM));
+  ctx.save();
+  // alien-age haze — deep violet over alien green
+  const haze = ctx.createLinearGradient(0, top, 0, top+H);
+  haze.addColorStop(0, `rgba(18,10,30,${0.30*g})`);
+  haze.addColorStop(1, `rgba(12,28,16,${0.26*g})`);
+  ctx.fillStyle = haze; ctx.fillRect(0, top, W, H);
+  // the prediction lattice — a faint green grid of future-position nodes; stronger while it predicts him
+  ctx.globalAlpha = g;
+  ctx.strokeStyle = `rgba(124,240,106,${0.08+0.20*pred})`; ctx.lineWidth = 1;
+  const step = 46;
+  for(let x=((lt*14)%step); x<W; x+=step){ ctx.beginPath(); ctx.moveTo(x, top+112); ctx.lineTo(x, top+H); ctx.stroke(); }
+  for(let y=top+112+((lt*10)%step); y<top+H; y+=step){ ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+  // the sky-shield band + the single yellow eye / symbol in the artificial clouds
+  const eye = alien.eye||0, ecx = W*0.5, ecy = top + 80;
+  ctx.fillStyle = `rgba(110,140,80,${0.10*g})`; ctx.fillRect(0, top+42, W, 70);
+  ctx.save();
+  ctx.globalAlpha = g*eye;
+  ctx.shadowBlur = 22; ctx.shadowColor = '#ffe24a';
+  ctx.strokeStyle = `rgba(255,226,74,${0.8*eye})`; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.ellipse(ecx, ecy, 46, 22, 0, 0, 6.28); ctx.stroke();   // the eye outline
+  ctx.fillStyle = `rgba(255,226,74,${0.9*eye})`;
+  ctx.beginPath(); ctx.ellipse(ecx, ecy, 12, 12*(0.6+0.4*Math.abs(Math.sin(lt*1.5))), 0, 0, 6.28); ctx.fill(); // pupil
+  ctx.restore();
+  // folding light-shapes (containment geometry) drifting in to box his futures
+  for(const s of (alien.shapes||[])){
+    const a = Math.max(0, 1 - s.t/3.2) * g, R = 15 + 4*Math.sin(s.rot*1.3);
+    ctx.save();
+    ctx.shadowBlur = 8; ctx.shadowColor = '#aef34a';
+    ctx.strokeStyle = `rgba(174,243,74,${0.8*a})`; ctx.lineWidth = 1.6;
+    ctx.fillStyle = `rgba(124,240,106,${0.16*a})`;
+    ctx.beginPath();
+    for(let k=0;k<=s.sides;k++){ const ang = s.rot + k*6.2832/s.sides;
+      const px = s.x + Math.cos(ang)*R, py = s.y + Math.sin(ang)*R;
+      if(k===0) ctx.moveTo(px,py); else ctx.lineTo(px,py); }
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
+  // the predicted path — ghost nodes the lattice expects Simon to take, near him
+  const baseX = Math.max(48, Math.min(W-48, player.x)), baseY = player.y - 22;
+  for(let i=0;i<10;i++){
+    const nx = baseX + (i-4.5)*16, ny = baseY - Math.sin(i*0.6 + lt)*7;
+    ctx.fillStyle = `rgba(124,240,106,${(0.5*pred)*g})`;
+    ctx.beginPath(); ctx.arc(nx, ny, 2.2, 0, 6.28); ctx.fill();
+  }
+  // MOVE 401 — the node Simon actually takes, off the predicted line, glowing yellow as he outruns it
+  const f401x = baseX + 6*16, f401y = baseY - 24*out;
+  ctx.save(); ctx.shadowBlur = 4 + 12*out; ctx.shadowColor = '#ffe24a';
+  ctx.fillStyle = `rgba(255,226,74,${(0.4+0.6*out)*g})`;
+  ctx.beginPath(); ctx.arc(f401x, f401y, 3.6, 0, 6.28); ctx.fill();
+  if(out > 0.25){ ctx.strokeStyle = `rgba(255,226,74,${0.5*out*g})`; ctx.lineWidth = 1.4;
+    ctx.beginPath(); ctx.moveTo(baseX + 4.5*16, baseY); ctx.lineTo(f401x, f401y); ctx.stroke(); }
+  ctx.restore();
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -3488,6 +3619,22 @@ function drawHUD(){
     if(firey.melted){ ctx.fillStyle='#ffd24a'; ctx.fillText('★ THE TUBE MELTS — FIREY DELIGHT — HE ESCAPES ★', W/2, by-6); }
     else { ctx.fillStyle='#ffb87a'; ctx.fillText('FIREY DELIGHT — CLIMB TO SPIN HIM, FRICTION MELTS THE TUBE', W/2, by-6); }
   }
+  // THE ALIEN AGE (Lore 29) — the PREDICTION meter: a drone predicts his next 400 moves; climb with
+  // purpose so Simon chooses move 401 and escapes faster than prediction. Behind it, how well the
+  // lattice still predicts him (his predict-marker) creeps the other way.
+  if(isAlien() && alien.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, pm=Math.max(0,Math.min(1,alienM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#10220e'; ctx.fillRect(bx, by, bw, 7);
+    const ag = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ag.addColorStop(0,'#7cf06a'); ag.addColorStop(1, winFlash>0?'#eaffce':'#ffe24a');
+    ctx.fillStyle = ag; ctx.fillRect(bx, by, bw*pm, 7);
+    ctx.fillStyle='rgba(174,243,74,0.7)'; ctx.fillRect(bx+bw*Math.max(0,Math.min(1,alien.predict||0))-1, by-1, 2, 9);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*pm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(alien.escaped){ ctx.fillStyle='#d6ff9a'; ctx.fillText('★ FASTER THAN PREDICTION — HE CHOSE MOVE 401 ★', W/2, by-6); }
+    else { ctx.fillStyle='#aef34a'; ctx.fillText('THE ALIEN AGE — CLIMB WITH PURPOSE, CHOOSE MOVE 401', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -3500,9 +3647,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))) ;
+    ctx.fillStyle = isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isFirey()? '▓ FIREY DELIGHT — THE MELTING TUBE ▓'
+    ctx.fillText(isAlien()? '▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓'
+               : (isFirey()? '▓ FIREY DELIGHT — THE MELTING TUBE ▓'
                : (isTreads()? '▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓'
                : (isScf404()? '▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓'
                : (isScf()? '▓ THE CONTAINMENT FACILITY — SIMON IS CODE ▓'
@@ -3513,7 +3661,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3529,7 +3677,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 28 · The Treadmill Weakness', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Alien Age', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -3553,7 +3701,11 @@ function drawTitle(){
     'FREEZE it: the THREE-WAY FIELD. Then the SCF: thrown in',
     'with monsters, Simon becomes CODE; then SCF 404, ENDLESS.',
     'His one WEAKNESS: the TREADMILL. Herd the lightning cat',
-    'onto the belts and forced PATTERNS to DRAIN his charge.'
+    'onto the belts and forced PATTERNS to DRAIN his charge.',
+    'FIREY DELIGHT: he spins his tube till friction MELTS it.',
+    'THE ALIEN AGE: SCF-404 wakes already aware; a drone',
+    'predicts his next 400 moves, so he chooses MOVE 401 and',
+    'escapes FASTER THAN PREDICTION. Climb with purpose.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 230 + i*15));
