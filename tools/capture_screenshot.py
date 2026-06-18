@@ -647,6 +647,53 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "hallu": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        if (typeof residual!=='undefined'){ residual.active=false; residual.done=true; residual.glow=1; residual.t=6.5; }
+        if (typeof sounds!=='undefined'){ sounds.active=false; sounds.done=true; sounds.glow=1; sounds.t=6.5; sounds.idx=17; }
+        if (typeof voidwar!=='undefined'){ voidwar.active=false; voidwar.done=true; voidwar.glow=1; voidwar.t=6.5; voidwar.held=true; }
+        if (typeof judge!=='undefined'){ judge.active=false; judge.done=true; judge.glow=1; judge.t=6.5; judge.held=true; judge.gold=true; judge.presents=[]; }
+        if (typeof triad!=='undefined'){ triad.active=false; triad.done=true; triad.glow=1; triad.t=6.5; triad.held=true; triad.ice=0.85; }
+        if (typeof scf!=='undefined'){ scf.active=false; scf.done=true; scf.glow=1; scf.t=6.5; scf.spread=0.9; scf.held=true; }
+        if (typeof scfM!=='undefined'){ scfM=1.0; }
+        if (typeof scf404!=='undefined'){ scf404.active=false; scf404.done=true; scf404.glow=1; scf404.t=6.5; scf404.expand=0.8; scf404.held=true; scf404.bolts=[]; }
+        if (typeof scf404M!=='undefined'){ scf404M=1.0; }
+        if (typeof treads!=='undefined'){ treads.active=false; treads.done=true; treads.glow=1; treads.t=6.5; treads.ring=1.0; treads.charge=0.0; treads.held=true; }
+        if (typeof treadsM!=='undefined'){ treadsM=1.0; }
+        if (typeof firey!=='undefined'){ firey.active=false; firey.done=true; firey.glow=1; firey.t=6.5; firey.heat=1.0; firey.warp=1.0; firey.spin=7.4; firey.melted=true; firey.drips=[]; }
+        if (typeof fireyM!=='undefined'){ fireyM=1.0; }
+        if (typeof alien!=='undefined'){ alien.active=false; alien.done=true; alien.glow=1; alien.t=6.5; alien.eye=1.0; alien.predict=0.1; alien.escaped=true; alien.shapes=[]; }
+        if (typeof alienM!=='undefined'){ alienM=1.0; }
+        if (typeof wall!=='undefined'){ wall.active=false; wall.done=true; wall.glow=1; wall.t=6.5; wall.hum=1.0; wall.flash=0.1; wall.converted=true; wall.subs=[]; }
+        if (typeof wallM!=='undefined'){ wallM=1.0; }
+        if (typeof smooth!=='undefined'){ smooth.active=false; smooth.done=true; smooth.glow=1; smooth.t=6.5; smooth.read=true; smooth.arrows=[]; }
+        if (typeof smoothM!=='undefined'){ smoothM=1.0; }
+        // THE HALLUCINATION ERA lit — Yellow Eye opening, hullelations on screen, BLACK looming, lightning + melt
+        if (typeof hallu!=='undefined'){ hallu.active=true; hallu.done=false; hallu.glow=1; hallu.t=4.0;
+          hallu.anim=2.4; hallu.eye=0.82; hallu.eyeFull=0.7; hallu.lightning=0.8; hallu.figT=1.0;
+          hallu.figs=[{x:W*0.62,y:cameraY+H*0.40,kind:'zombie',t:1.0,life:5.0,vx:6},
+                      {x:W*0.78,y:cameraY+H*0.56,kind:'choc',t:1.0,life:5.0,vx:-6},
+                      {x:W*0.30,y:cameraY+H*0.62,kind:'alive',t:1.0,life:5.0,vx:4}];
+          hallu.melts=[{x:W*0.62,y:cameraY+H*0.40+18,t:0.5}]; }
+        if (typeof halluM!=='undefined'){ halluM=0.82; }
+        for (var m=0;m<4;m++){ update(1/60); }
+        if (typeof hallu!=='undefined'){ hallu.eye=0.9; hallu.eyeFull=0.7; hallu.lightning=0.8; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.4; }
+        if (typeof glitch!=='undefined'){ glitch=0.3; }
+        if (typeof showTaunt==='function'){ showTaunt('Holes fixed, HP still near zero. The Yellow Eye melts what it sees; he sees zombies and chocolate. Black is strongest now.'); tauntT=8; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

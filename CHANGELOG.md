@@ -4,6 +4,51 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The Hallucination Era / The Yellow Eye Protocol (Lore 29 cont.)
+
+Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Classics and SCF finally gained rights...
+Simon now has Hullelations and sees many things not real, and he thinks there is a cure and that living are
+zombies and dead are living... and he also thinks all brown things are chocolate. Simon's health is now like
+the smallest number which is right before 0 with ALL Those Shots! He fixed each shot, but his HP didn't
+change. Simon now still has the Yellow eye, whatever he sees will melt... lightning covers the screen when
+Simon's eyes fully open. Yellow Eye and Hullelations are no longer the curses, but the 2 fates of Simon...
+Black appears and becomes the most powerful, Simon is actually one of the weakest now."* So the whole balance
+of the world flips: Simon fixed every hole and every shot, but his HP stayed at the smallest number right
+before 0. He is now **one of the weakest in raw power**, while **Black becomes the strongest**. The Yellow Eye
+and the Hullelations stop being curses and become his **two permanent fates**: whatever the Yellow Eye sees
+**melts**, and when his eyes fully open **lightning covers the screen**; the Hullelations make him see the
+living as zombies, the dead as alive, and all brown things as chocolate. SCF's new top law: *if the Yellow Eye
+opens fully, full sector evacuation.* As Toby put it, weak does not mean harmless — *"one of the most dangerous
+beings to be near."*
+
+![Lore 29 cont. — THE HALLUCINATION ERA / THE YELLOW EYE PROTOCOL: a murky brown-green haze with a huge dark
+BLACK silhouette looming behind (now the strongest), Simon standing damaged and dim with patched bullet-holes
+and one permanent Yellow Eye opening wide, hallucination figures drifting and mislabeled (a green "ZOMBIE?", a
+pale "ALIVE?", a brown block "CHOCOLATE"), a melt drip where the eye looked, jagged lightning covering the
+whole screen as the eye opens fully, the "SIMON HP 0.0001 — WEAKEST, NOT HARMLESS" readout, and the yellow "▓
+THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓" HUD tag](screenshots/27-hallucination-era.png)
+
+- **A twenty-second arc: The Hallucination Era.** Climb past the Smooth Age and the world flips. A new state
+  fires with the yellow HUD tag **▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓**, over a sickly
+  brown-green haze. **Black** now looms as a huge dark silhouette behind everything, labeled **BLACK —
+  STRONGEST**: Simon is no longer the top force.
+- **The two fates: the Yellow Eye and the Hullelations.** Both are permanent now, not curses. Simon stands
+  **damaged, dim, with patched bullet-holes** and a **near-zero HP** readout (*"SIMON HP 0.0001 — WEAKEST, NOT
+  HARMLESS"*) — he fixed every shot, but his HP never moved.
+- **The Yellow Eye melts what it sees.** The eye slowly **charges open**; when it **opens fully**, jagged
+  **lightning covers the whole screen**, a screen-flash fires, and a **melt drip** appears where it looked.
+- **The Hullelations.** Drifting figures Simon misreads float through the room and are tagged with what he
+  *thinks* they are: a green **ZOMBIE?** (a living person), a pale **ALIVE?** (the dead seen as living), and a
+  brown block **CHOCOLATE** (all brown things). They fade in and out as he hallucinates.
+- **The Yellow Eye Protocol meter — evacuate before it opens.** SCF's rule: *if the Yellow Eye opens fully,
+  full sector evacuation.* The EYE meter **fills while you climb with purpose** (you clear the sight-line and
+  evacuate) and **drains while you stand still** (you stay in the sight-line; a yellow tick shows how open the
+  eye is). Fill it and **★ SECTOR EVACUATED — NO DIRECT VIEW ★** (+5 emeralds).
+- **Wiring, unchanged pattern.** New `hallu` state + `isHallu()` gate slot in after `smooth`; the chain now
+  runs The Wall Era → The Smooth Age → The Hallucination Era. New `hallu` screenshot scene added to
+  `tools/capture_screenshot.py`; the title-screen lore recap was condensed to fit the new arc. Everything
+  additive; no existing behavior removed (the game and wiki both stay up).
+
 ## 2026-06-18 — The Smooth Age / The Arrow Chamber (Lore 29 cont.)
 
 Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Black now reaches the full potential,

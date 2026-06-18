@@ -441,6 +441,7 @@ let firey, fireyH, fireyM;
 let alien, alienH, alienM;
 let wall, wallH, wallM;
 let smooth, smoothH, smoothM;
+let hallu, halluH, halluM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -525,6 +526,10 @@ function reset(){
              eventT:2.0 };
   smoothH = wallH + 1100;
   smoothM = 0.25;  // the READ meter: stop trusting the FNF arrows and read HIM — climb with purpose to read past the lie
+  hallu = { active:false, t:0, glow:0, done:false, evac:false, anim:0, eye:0, eyeFull:0, lightning:0,
+            figs:[], figT:1.2, melts:[], eventT:2.0 };
+  halluH = smoothH + 1100;
+  halluM = 0.25;  // the YELLOW EYE PROTOCOL meter: if the eye opens fully, full sector evacuation — climb with purpose to clear the sight-line before it opens
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -582,6 +587,7 @@ function isFirey(){ return !!(firey && (firey.active || firey.done)); }
 function isAlien(){ return !!(alien && (alien.active || alien.done)); }
 function isWall(){ return !!(wall && (wall.active || wall.done)); }
 function isSmooth(){ return !!(smooth && (smooth.active || smooth.done)); }
+function isHallu(){ return !!(hallu && (hallu.active || hallu.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1178,6 +1184,31 @@ function update(dt){
   if(smooth.glow < (isSmooth() ? 1 : 0))
     smooth.glow = Math.min(1, smooth.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 18) — THE HALLUCINATION ERA / THE YELLOW EYE PROTOCOL. Classics and SCF
+         finally won their rights. Simon fixed every hole and every shot, but his HP stayed at the smallest
+         number right before 0: he is now one of the WEAKEST in raw power, while BLACK becomes the strongest.
+         The Yellow Eye and the Hullelations are no longer curses, they are his two permanent FATES: whatever
+         the Yellow Eye sees MELTS, and when his eyes fully open lightning covers the screen; the Hullelations
+         make him see the living as zombies, the dead as alive, and all brown things as chocolate. SCF's new
+         top law: if the Yellow Eye opens fully, full sector evacuation. Weak does not mean harmless. ---- */
+  if(smooth.done && !hallu.active && !hallu.done && height > halluH){
+    hallu.active = true; hallu.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE HALLUCINATION ERA'; warnT = 2.8;
+    showTaunt('The Hallucination Era. Simon fixed every hole, but his HP stayed near zero.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'YELLOW EYE & HULLELATIONS — NOW HIS TWO FATES', col:'#ffe24a' });
+    AUDIO.zap();
+  }
+  if(hallu.active){
+    hallu.t += dt;
+    if(hallu.t>1.6 && hallu.t<1.68) showTaunt('Whatever the Yellow Eye sees MELTS. He sees zombies, chocolate, the dead alive.');
+    if(hallu.t>3.4 && hallu.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(hallu.t>3.4 && hallu.t<3.48) showTaunt('Black is the strongest now. Simon is the weakest, but weak does not mean harmless.');
+    if(hallu.t > 5.4){ hallu.active = false; hallu.done = true; }
+  }
+  if(hallu.glow < (isHallu() ? 1 : 0))
+    hallu.glow = Math.min(1, hallu.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1192,7 +1223,8 @@ function update(dt){
   if(isFirey() && !isAlien()) updateFirey(dt);
   if(isAlien() && !isWall()) updateAlien(dt);
   if(isWall() && !isSmooth()) updateWall(dt);
-  if(isSmooth()) updateSmooth(dt);
+  if(isSmooth() && !isHallu()) updateSmooth(dt);
+  if(isHallu()) updateHallu(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2168,6 +2200,53 @@ function updateSmooth(dt){
   }
 }
 
+function updateHallu(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  hallu.anim = (hallu.anim||0) + dt;
+  // the Yellow Eye charges open; when it fully opens, lightning covers the screen and what it sees MELTS
+  hallu.eye = (hallu.eye||0) + dt*(0.34 + 0.10*Math.sin(hallu.anim*0.7));
+  if(hallu.eye >= 1){
+    hallu.eye = 0; hallu.eyeFull = 1.0; hallu.lightning = 1.0;
+    shake = Math.max(shake, 10); glitch = Math.max(glitch, 0.45); AUDIO.zap();
+    // whatever he sees melts — drop a melt where a hallucination is standing
+    const h = hallu.figs[(hallu.figs.length*Math.random())|0];
+    if(h) hallu.melts.push({ x:h.x, y:h.y, t:0 });
+    showTaunt('The Yellow Eye opened fully. Whatever he sees melts. Full sector evacuation.');
+  }
+  hallu.eyeFull = Math.max(0, (hallu.eyeFull||0) - dt*1.6);
+  hallu.lightning = Math.max(0, (hallu.lightning||0) - dt*2.2);
+  // the Hullelations — the living look like zombies, the dead look alive, all brown things look like chocolate
+  hallu.figT = (hallu.figT||0) - dt;
+  if(hallu.figT <= 0){ hallu.figT = rnd(0.9, 1.7);
+    if(hallu.figs.length < 5){
+      hallu.figs.push({ x: rnd(W*0.12, W*0.88), y: cameraY + rnd(H*0.30, H*0.72),
+        kind: pick(['zombie','alive','choc']), t:0, life: rnd(3.0, 5.0), vx: rnd(-12, 12) });
+    }
+  }
+  for(const f of hallu.figs){ f.t += dt; f.x += (f.vx||0)*dt; }
+  hallu.figs = hallu.figs.filter(f => f.t < f.life);
+  for(const mlt of hallu.melts) mlt.t += dt;
+  hallu.melts = hallu.melts.filter(m => m.t < 1.6);
+  // the YELLOW EYE PROTOCOL meter — climb with purpose to clear the sight-line (evacuate) before the eye
+  // opens fully; standing still in the sight-line lets it charge and drains the meter
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  halluM = Math.max(0, Math.min(1, halluM + (moving ? dt*0.05 : -dt*0.03)));
+  hallu.eventT -= dt;
+  if(hallu.eventT <= 0){ hallu.eventT = rnd(2.2, 3.6);
+    const ev = ['THE HALLUCINATION ERA','HP NEAR ZERO — STILL DANGEROUS','YELLOW EYE: A FATE, NOT A CURSE',
+                'HULLELATIONS FOREVER','"ALL BROWN THINGS ARE CHOCOLATE"','THE DEAD LOOK ALIVE',
+                'BLACK IS THE STRONGEST NOW','NO DIRECT VIEW — EVACUATE THE SECTOR'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
+  }
+  if(halluM >= 1 && !hallu.evac){
+    hallu.evac = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You evacuated the sector before the Yellow Eye opened. No direct view, no melt.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ SECTOR EVACUATED — NO DIRECT VIEW ★', col:'#fff2b0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffe24a','#7bdc6a','#fff2b0'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -2212,7 +2291,8 @@ function draw(){
   if(isFirey() && !isAlien() && firey.glow>0.02) drawFirey();
   if(isAlien() && !isWall() && alien.glow>0.02) drawAlien();
   if(isWall() && !isSmooth() && wall.glow>0.02) drawWall();
-  if(isSmooth() && smooth.glow>0.02) drawSmooth();
+  if(isSmooth() && !isHallu() && smooth.glow>0.02) drawSmooth();
+  if(isHallu() && hallu.glow>0.02) drawHallu();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3703,6 +3783,96 @@ function drawSmooth(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+function drawHallu(){
+  const g = hallu.glow||0, top = cameraY, an = hallu.anim||0;
+  ctx.save();
+  // a sickly hallucination haze — murky brown over a green sheen
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(22,20,8,${0.36*g})`);
+  bg.addColorStop(1, `rgba(14,22,10,${0.32*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+  // BLACK is now the strongest — a huge dark silhouette looming behind everything
+  const Bx = W*0.5, Btop = top + 18;
+  ctx.fillStyle = `rgba(6,4,10,${0.5*g})`;
+  ctx.beginPath();
+  ctx.moveTo(Bx-120, top+H); ctx.lineTo(Bx-72, Btop+62); ctx.lineTo(Bx, Btop);
+  ctx.lineTo(Bx+72, Btop+62); ctx.lineTo(Bx+120, top+H); ctx.closePath(); ctx.fill();
+  ctx.fillStyle = `rgba(255,80,110,${0.55*g})`;
+  ctx.beginPath(); ctx.arc(Bx-22, Btop+46, 5, 0, 6.28); ctx.arc(Bx+22, Btop+46, 5, 0, 6.28); ctx.fill();
+  ctx.textAlign='center'; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(255,80,110,${0.55*g})`; ctx.fillText('BLACK — STRONGEST', Bx, Btop+30);
+  // the Hullelations — drifting figures Simon misreads (zombie / alive / chocolate)
+  for(const f of hallu.figs){
+    const fade = Math.min(1, f.t/0.4) * Math.min(1, (f.life-f.t)/0.6);
+    ctx.globalAlpha = g*0.85*fade; ctx.textAlign='center';
+    if(f.kind==='zombie'){          // a living person Simon sees as a green zombie
+      ctx.fillStyle = '#6f9c4e';
+      ctx.beginPath(); ctx.ellipse(f.x, f.y, 8, 16, 0, 0, 6.28); ctx.fill();
+      ctx.beginPath(); ctx.arc(f.x, f.y-18, 7, 0, 6.28); ctx.fill();
+      ctx.fillStyle='#1c2a10'; ctx.beginPath(); ctx.arc(f.x-3,f.y-18,1.6,0,6.28); ctx.arc(f.x+3,f.y-18,1.6,0,6.28); ctx.fill();
+      ctx.fillStyle='#9fd06a'; ctx.font='700 8px ui-monospace,monospace'; ctx.fillText('ZOMBIE?', f.x, f.y+26);
+    } else if(f.kind==='alive'){    // a dead / resurrected thing Simon sees as alive
+      ctx.fillStyle = '#dfeaff';
+      ctx.beginPath(); ctx.ellipse(f.x, f.y, 8, 16, 0, 0, 6.28); ctx.fill();
+      ctx.beginPath(); ctx.arc(f.x, f.y-18, 7, 0, 6.28); ctx.fill();
+      ctx.fillStyle='#7ea0d6'; ctx.font='700 8px ui-monospace,monospace'; ctx.fillText('ALIVE?', f.x, f.y+26);
+    } else {                        // a brown thing Simon sees as chocolate
+      ctx.fillStyle = '#6b3f1d';
+      ctx.fillRect(f.x-9, f.y-9, 18, 18);
+      ctx.strokeStyle='#4a2a12'; ctx.lineWidth=1;
+      ctx.beginPath(); ctx.moveTo(f.x,f.y-9); ctx.lineTo(f.x,f.y+9); ctx.moveTo(f.x-9,f.y); ctx.lineTo(f.x+9,f.y); ctx.stroke();
+      ctx.fillStyle='#caa06a'; ctx.font='700 8px ui-monospace,monospace'; ctx.fillText('CHOCOLATE', f.x, f.y+24);
+    }
+  }
+  ctx.globalAlpha = g;
+  // Simon — damaged, weak, near-zero HP, one permanent Yellow Eye
+  const scx = W*0.42, sFloor = top + H - 96, bob = Math.sin(an*0.8)*1.5, sy0 = sFloor - 56 + bob;
+  const eye = Math.max(0, Math.min(1, hallu.eye||0)), full = hallu.eyeFull||0;
+  ctx.save();
+  ctx.shadowBlur = 10; ctx.shadowColor = '#ffe24a';
+  ctx.fillStyle = '#cfc6b0';                                    // dimmer, damaged body
+  ctx.beginPath(); ctx.ellipse(scx, sy0+30, 16, 24, 0, 0, 6.28); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(scx, sy0, 15, 14, 0, 0, 6.28); ctx.fill();
+  ctx.fillStyle = '#8a7f63';                                    // patched holes — the fixed shots
+  ctx.beginPath(); ctx.arc(scx-6, sy0+24, 2, 0, 6.28); ctx.arc(scx+5, sy0+38, 2, 0, 6.28); ctx.arc(scx+2, sy0+14, 1.6, 0, 6.28); ctx.fill();
+  ctx.strokeStyle = '#cfc6b0'; ctx.lineWidth = 2;               // antennae
+  ctx.beginPath(); ctx.moveTo(scx-6, sy0-12); ctx.lineTo(scx-9, sy0-24);
+  ctx.moveTo(scx+6, sy0-12); ctx.lineTo(scx+9, sy0-24); ctx.stroke();
+  const eo = 1 + eye*3 + full*2;                                // the Yellow Eye opens wider as it charges
+  ctx.shadowBlur = 8 + eye*16 + full*16;
+  ctx.fillStyle = '#9a7a14';                                    // the dim normal eye
+  ctx.beginPath(); ctx.arc(scx-5, sy0, 2.2, 0, 6.28); ctx.fill();
+  ctx.fillStyle = full>0.2 ? '#fff6c0' : '#ffe24a';             // the Yellow Eye
+  ctx.beginPath(); ctx.ellipse(scx+5, sy0, 2.2, 2.2*eo, 0, 0, 6.28); ctx.fill();
+  ctx.restore();
+  // melt drips where the Yellow Eye has looked
+  for(const mlt of hallu.melts){
+    const p = Math.min(1, mlt.t/1.6);
+    ctx.globalAlpha = g*(1-p)*0.9;
+    ctx.fillStyle = '#ffd84f'; ctx.fillRect(mlt.x-7, mlt.y-2, 14, 4 + p*30);
+    ctx.fillStyle = '#caa050'; ctx.fillRect(mlt.x-3, mlt.y+10, 6, 6 + p*36);
+  }
+  ctx.globalAlpha = g;
+  // when the Yellow Eye fully opens, lightning covers the screen
+  if((hallu.lightning||0) > 0.02){
+    const lg = hallu.lightning;
+    ctx.fillStyle = `rgba(255,246,180,${0.18*lg})`; ctx.fillRect(0, top, W, H);
+    ctx.strokeStyle = `rgba(255,242,140,${0.9*lg})`; ctx.lineWidth = 2;
+    for(let b=0;b<4;b++){
+      let lx = (W*0.18) + b*(W*0.2), ly = top;
+      ctx.beginPath(); ctx.moveTo(lx, ly);
+      for(let s=0;s<8;s++){ lx += Math.sin(b*9 + s*1.7 + an*30)*22; ly += H/8; ctx.lineTo(lx, ly); }
+      ctx.stroke();
+    }
+  }
+  // the near-zero HP readout — "the smallest number right before 0," fixed every shot but HP never moved
+  ctx.textAlign='center'; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(255,59,92,${(0.7+0.3*Math.abs(Math.sin(an*5)))*g})`;
+  ctx.fillText('SIMON HP 0.0001 — WEAKEST, NOT HARMLESS', scx, sy0-30);
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -3949,6 +4119,22 @@ function drawHUD(){
     if(smooth.read){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ READ PAST THE LIE — YOU KEPT TEMPO ★', W/2, by-6); }
     else { ctx.fillStyle='#ffe98a'; ctx.fillText('THE SMOOTH AGE — READ HIM, NOT THE ARROWS', W/2, by-6); }
   }
+  // THE HALLUCINATION ERA / THE YELLOW EYE PROTOCOL (Lore 29 cont.) — the EYE meter. If the Yellow Eye opens
+  // fully, full sector evacuation. Climb with purpose to clear the sight-line before it opens; standing in
+  // the sight-line lets the eye charge (the yellow tick) and drains the meter.
+  if(isHallu() && hallu.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, em=Math.max(0,Math.min(1,halluM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#1c1606'; ctx.fillRect(bx, by, bw, 7);
+    const eg = ctx.createLinearGradient(bx,0,bx+bw,0);
+    eg.addColorStop(0,'#6b3f1d'); eg.addColorStop(0.5,'#7bdc6a'); eg.addColorStop(1, winFlash>0?'#fff6c0':'#ffe24a');
+    ctx.fillStyle = eg; ctx.fillRect(bx, by, bw*em, 7);
+    ctx.fillStyle='rgba(255,226,74,0.85)'; ctx.fillRect(bx+bw*Math.max(0,Math.min(1,hallu.eye||0))-1, by-1, 2, 9);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*em-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(hallu.evac){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ SECTOR EVACUATED — NO DIRECT VIEW ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffe98a'; ctx.fillText('THE YELLOW EYE PROTOCOL — EVACUATE BEFORE IT OPENS', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -3961,9 +4147,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))) ;
+    ctx.fillStyle = isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isSmooth()? '▓ THE SMOOTH AGE — THE ARROW CHAMBER ▓'
+    ctx.fillText(isHallu()? '▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓'
+               : (isSmooth()? '▓ THE SMOOTH AGE — THE ARROW CHAMBER ▓'
                : (isWall()? '▓ THE WALL ERA — THE NIL STATE ▓'
                : (isAlien()? '▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓'
                : (isFirey()? '▓ FIREY DELIGHT — THE MELTING TUBE ▓'
@@ -3977,7 +4164,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3993,7 +4180,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Smooth Age', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Hallucination Era', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -4015,8 +4202,9 @@ function drawTitle(){
     'WEAKNESS: the TREADMILL. FIREY DELIGHT melts the tube.',
     'THE ALIEN AGE: he reads 400 moves ahead, picks MOVE 401.',
     'THE WALL ERA: walled in, the NIL STATE subtracts the room.',
-    'THE SMOOTH AGE: FNF YELLOW/BLACK arrows read him, then',
-    'he LIES. Climb with purpose; read HIM, not the arrows.'
+    'THE SMOOTH AGE: FNF arrows read him; then he LIES.',
+    'THE HALLUCINATION ERA: HP near 0; the YELLOW EYE melts',
+    'what it sees; he sees zombies/chocolate. BLACK rules now.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 230 + i*15));
