@@ -604,6 +604,49 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "smooth": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof phase2!=='undefined'){ phase2.active=false; phase2.done=true; phase2.glow=1; phase2.errs=60; }
+        if (typeof exposed!=='undefined'){ exposed.active=false; exposed.done=true; exposed.glow=1; exposed.t=6.5; }
+        if (typeof executioner!=='undefined'){ executioner.active=false; executioner.done=true; executioner.glow=1; executioner.t=6.5; }
+        if (typeof atomix!=='undefined'){ atomix.active=false; atomix.done=true; atomix.glow=1; atomix.t=6.5; }
+        if (typeof residual!=='undefined'){ residual.active=false; residual.done=true; residual.glow=1; residual.t=6.5; }
+        if (typeof sounds!=='undefined'){ sounds.active=false; sounds.done=true; sounds.glow=1; sounds.t=6.5; sounds.idx=17; }
+        if (typeof voidwar!=='undefined'){ voidwar.active=false; voidwar.done=true; voidwar.glow=1; voidwar.t=6.5; voidwar.held=true; }
+        if (typeof judge!=='undefined'){ judge.active=false; judge.done=true; judge.glow=1; judge.t=6.5; judge.held=true; judge.gold=true; judge.presents=[]; }
+        if (typeof triad!=='undefined'){ triad.active=false; triad.done=true; triad.glow=1; triad.t=6.5; triad.held=true; triad.ice=0.85; }
+        if (typeof scf!=='undefined'){ scf.active=false; scf.done=true; scf.glow=1; scf.t=6.5; scf.spread=0.9; scf.held=true; }
+        if (typeof scfM!=='undefined'){ scfM=1.0; }
+        if (typeof scf404!=='undefined'){ scf404.active=false; scf404.done=true; scf404.glow=1; scf404.t=6.5; scf404.expand=0.8; scf404.held=true; scf404.bolts=[]; }
+        if (typeof scf404M!=='undefined'){ scf404M=1.0; }
+        if (typeof treads!=='undefined'){ treads.active=false; treads.done=true; treads.glow=1; treads.t=6.5; treads.ring=1.0; treads.charge=0.0; treads.held=true; }
+        if (typeof treadsM!=='undefined'){ treadsM=1.0; }
+        if (typeof firey!=='undefined'){ firey.active=false; firey.done=true; firey.glow=1; firey.t=6.5; firey.heat=1.0; firey.warp=1.0; firey.spin=7.4; firey.melted=true; firey.drips=[]; }
+        if (typeof fireyM!=='undefined'){ fireyM=1.0; }
+        if (typeof alien!=='undefined'){ alien.active=false; alien.done=true; alien.glow=1; alien.t=6.5; alien.eye=1.0; alien.predict=0.1; alien.escaped=true; alien.shapes=[]; }
+        if (typeof alienM!=='undefined'){ alienM=1.0; }
+        if (typeof wall!=='undefined'){ wall.active=false; wall.done=true; wall.glow=1; wall.t=6.5; wall.hum=1.0; wall.flash=0.1; wall.converted=true; wall.subs=[]; }
+        if (typeof wallM!=='undefined'){ wallM=1.0; }
+        // THE SMOOTH AGE lit — FNF arrows up (yellow + black), the readout LYING, eyes flashing
+        if (typeof smooth!=='undefined'){ smooth.active=true; smooth.done=false; smooth.glow=1; smooth.t=4.0;
+          smooth.anim=2.05; smooth.stepT=0.4; smooth.lie=1;
+          smooth.arrows=[{dir:0,col:0,p:0.9},{dir:1,col:1,p:0.6},{dir:2,col:0,p:0.8},{dir:3,col:0,p:0.5}]; }
+        if (typeof smoothM!=='undefined'){ smoothM=0.82; }
+        for (var m=0;m<4;m++){ update(1/60); }
+        if (typeof smooth!=='undefined'){ smooth.lie=1; smooth.stepT=0.45;
+          smooth.arrows=[{dir:0,col:0,p:0.9},{dir:1,col:1,p:0.6},{dir:2,col:0,p:0.8},{dir:3,col:0,p:0.5}]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.4; }
+        if (typeof glitch!=='undefined'){ glitch=0.25; }
+        if (typeof showTaunt==='function'){ showTaunt('We are not reading the arrows. We are reading what he WANTS us to think the arrows mean.'); tauntT=8; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

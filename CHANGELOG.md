@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The Smooth Age / The Arrow Chamber (Lore 29 cont.)
+
+Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Black now reaches the full potential,
+Simon now is in the FNF animations... the textures were improved, and the glitches and lightning and
+cutscenes were improved and smoother. SCF became more advanced, Simon still is forever Phase 2, The arrows
+above Simon are colored of Yellow and Black."* SCF enters **The Smooth Age** — *"now everything is sharper,
+smoother, cleaner, and more dangerous... the danger is no longer rough and chaotic. Now it is beautifully
+precise. And that makes it worse."* The standout is **The Arrow Chamber**: with Simon in the FNF animation
+space, *"timing has become visible."* Above him appear **yellow and black arrows** that *"act like a
+readout of his state"* — **yellow = charge / intent / attack rhythm / lightning**, **black = Nil flash /
+corruption / phase instability / state change**. SCF builds an observation sector to predict him from the
+arrows, and for a while it works — until *"Simon notices them trying to read him. So he starts lying with
+the arrows. He lets yellow gather when he has no intention of striking. He lets black drift when he is
+calm."* The famous line: ***"We are not reading the arrows. We are reading what he wants us to think the
+arrows mean."*** Mr Fun Computer's warning: *"SMOOTHNESS INCREASES ENTITY EFFICIENCY."*
+
+![Lore 29 cont. — THE SMOOTH AGE / THE ARROW CHAMBER: a clean FNF-style indigo chamber with crisp
+scanlines and a red Mr-Black demon-light at the right edge, Simon standing in the center with flashing
+yellow eyes, four chunky FNF arrows (left/down/up/right) popping above his head colored yellow (charge) or
+black (Nil), an ARROWS: LYING / TRUTH tag beneath them because the readout is bait, the "▓ THE SMOOTH AGE
+— THE ARROW CHAMBER ▓" HUD tag, and the black-to-yellow READ meter](screenshots/26-smooth-age.png)
+
+- **A twenty-first arc: The Smooth Age.** Climb past the Wall Era and Simon enters the FNF animation space:
+  cleaner, sharper, *"beautifully precise."* A new state fires with the yellow HUD tag **▓ THE SMOOTH AGE
+  — THE ARROW CHAMBER ▓**, over a clean FNF indigo backdrop with crisp scanlines and a hint of **Mr Black**
+  (a red demon-light column at the right edge).
+- **The FNF arrows — a readout of his state.** Four chunky **arrows** (left / down / up / right) pop above
+  Simon's head on an **exact beat**, each **YELLOW** (charge / attack / lightning) or **BLACK** (Nil /
+  corruption / state change). *"Timing has become visible."*
+- **He lies with the arrows.** Sometimes the beat is a **feint**: yellow gathers with no strike, black
+  drifts while he is calm. An **ARROWS: LYING / TRUTH** tag flips beneath them, and floaters call the feints
+  out — because *"even Simon's visible warnings are dangerous to trust."*
+- **The READ meter — read him, not the arrows.** The lesson is to stop trusting the readout: the meter
+  **fills while you climb with purpose** (you read *him* and keep tempo) and **drains while you stand still**
+  (trusting the arrows). Fill it and **★ READ PAST THE LIE — YOU KEPT TEMPO ★** (+5 emeralds).
+- **Wiring, unchanged pattern.** New `smooth` state + `isSmooth()` gate slot in after `wall`; the chain now
+  runs The Alien Age → The Wall Era → The Smooth Age. New `smooth` screenshot scene added to
+  `tools/capture_screenshot.py`; the title-screen lore recap was condensed to fit the new arcs. Everything
+  additive; no existing behavior removed.
+
 ## 2026-06-18 — The Wall Era / The Nil State (Lore 29 cont.)
 
 Based on Toby's June 18 lore (the "Lore 29" thread continued): after *"SCF characters VS Simon"* he

@@ -440,6 +440,7 @@ let treads, treadsH, treadsM;
 let firey, fireyH, fireyM;
 let alien, alienH, alienM;
 let wall, wallH, wallM;
+let smooth, smoothH, smoothM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -519,6 +520,11 @@ function reset(){
            subs:[], panels:[], eventT:2.0, hum:0 };
   wallH = alienH + 1100;
   wallM = 0.25;  // the NIL meter: the Nil State is automatic; climbing with purpose spreads the subtraction until the room becomes him
+  smooth = { active:false, t:0, glow:0, done:false, read:false, anim:0, stepT:0, lie:0,
+             arrows:[{dir:0,col:0,p:0},{dir:1,col:0,p:0},{dir:2,col:0,p:0},{dir:3,col:0,p:0}],
+             eventT:2.0 };
+  smoothH = wallH + 1100;
+  smoothM = 0.25;  // the READ meter: stop trusting the FNF arrows and read HIM — climb with purpose to read past the lie
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -575,6 +581,7 @@ function isTreads(){ return !!(treads && (treads.active || treads.done)); }
 function isFirey(){ return !!(firey && (firey.active || firey.done)); }
 function isAlien(){ return !!(alien && (alien.active || alien.done)); }
 function isWall(){ return !!(wall && (wall.active || wall.done)); }
+function isSmooth(){ return !!(smooth && (smooth.active || smooth.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1146,6 +1153,31 @@ function update(dt){
   if(wall.glow < (isWall() ? 1 : 0))
     wall.glow = Math.min(1, wall.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 18) — THE SMOOTH AGE / THE ARROW CHAMBER. Black reaches full potential and
+         Simon enters the FNF animation space: smoother cutscenes, cleaner textures, sharper glitches,
+         exact timing — "the danger is no longer rough and chaotic, now it is beautifully precise." Above
+         Simon appear YELLOW and BLACK arrows that read out his state (yellow = charge/attack/lightning,
+         black = Nil flash / corruption / state change). SCF builds the Arrow Chamber to predict him — so
+         he starts LYING with the arrows: "we are not reading the arrows, we are reading what he wants us
+         to think the arrows mean." Stop trusting the arrows and read HIM. ---- */
+  if(wall.done && !smooth.active && !smooth.done && height > smoothH){
+    smooth.active = true; smooth.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE SMOOTH AGE'; warnT = 2.8;
+    showTaunt('The Smooth Age. Simon enters the FNF animations: cleaner, sharper, beautifully precise.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'TIMING BECAME VISIBLE — YELLOW & BLACK ARROWS', col:'#ffe24a' });
+    AUDIO.zap();
+  }
+  if(smooth.active){
+    smooth.t += dt;
+    if(smooth.t>1.6 && smooth.t<1.68) showTaunt('Yellow = charge, attack, lightning. Black = Nil flash, corruption, state change.');
+    if(smooth.t>3.4 && smooth.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(smooth.t>3.4 && smooth.t<3.48) showTaunt('He starts lying with the arrows. Read what he WANTS you to think they mean.');
+    if(smooth.t > 5.4){ smooth.active = false; smooth.done = true; }
+  }
+  if(smooth.glow < (isSmooth() ? 1 : 0))
+    smooth.glow = Math.min(1, smooth.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1159,7 +1191,8 @@ function update(dt){
   if(isTreads() && !isFirey()) updateTreads(dt);
   if(isFirey() && !isAlien()) updateFirey(dt);
   if(isAlien() && !isWall()) updateAlien(dt);
-  if(isWall()) updateWall(dt);
+  if(isWall() && !isSmooth()) updateWall(dt);
+  if(isSmooth()) updateSmooth(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2093,6 +2126,48 @@ function updateWall(dt){
   }
 }
 
+/* ---- Lore 29 cont. (June 18) — THE SMOOTH AGE / THE ARROW CHAMBER update. Above Simon, four FNF arrows
+       pop on an exact beat, each YELLOW (charge/attack) or BLACK (Nil/corruption) — a readout of his
+       state. But he LIES with them: he lets yellow gather with no strike and black drift while calm, so
+       a TRUTH/LYING tag flips beneath them. The READ meter fills while you climb with purpose (you stop
+       trusting the arrows and read HIM, keeping tempo); standing still and trusting the readout drains
+       it. Fill it and you read past the lie. ---- */
+function updateSmooth(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  smooth.anim = (smooth.anim||0) + dt;
+  // FNF beat — every step re-rolls the four arrows; sometimes he is lying with them
+  smooth.stepT = (smooth.stepT||0) - dt;
+  if(smooth.stepT <= 0){ smooth.stepT = 0.5;   // a clean, exact tempo (the Smooth Age)
+    smooth.lie = chance(0.45) ? 1 : 0;          // is this beat a feint?
+    for(const a of smooth.arrows){
+      // yellow = charge/attack, black = Nil; a lie stacks yellow with no strike (or black while calm)
+      a.col = smooth.lie ? (chance(0.72)?0:1) : (chance(0.5)?0:1);
+      a.p = 1;   // pop
+    }
+    if(smooth.lie) floaters.push({ x:player.x, y:player.y-30, t:0,
+      txt: chance(0.5)?'FEINT — NO STRIKE':'(the arrows are lying)', col:'#ffe24a' });
+    if(smooth.anim > 0.3) AUDIO.tone && AUDIO.tone();
+  }
+  for(const a of smooth.arrows) a.p = Math.max(0, a.p - dt*2.5);
+  // the READ meter — read past the lie by climbing with purpose; trusting the readout (standing still) drains it
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  smoothM = Math.max(0, Math.min(1, smoothM + (moving ? dt*0.05 : -dt*0.025)));
+  // intermittent events
+  smooth.eventT -= dt;
+  if(smooth.eventT <= 0){ smooth.eventT = rnd(2.2, 3.6);
+    const ev = ['THE SMOOTH AGE','TIMING BECAME VISIBLE','YELLOW = CHARGE','BLACK = NIL FLASH',
+                'HE LIES WITH THE ARROWS','"SMOOTHNESS INCREASES ENTITY EFFICIENCY"','READ HIM, NOT THE ARROWS'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
+  }
+  if(smoothM >= 1 && !smooth.read){
+    smooth.read = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You stopped reading the arrows and started reading him. You read past the lie.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ READ PAST THE LIE — YOU KEPT TEMPO ★', col:'#fff2b0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffe24a','#1a1a1a','#fff2b0'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -2136,7 +2211,8 @@ function draw(){
   if(isTreads() && !isFirey() && treads.glow>0.02) drawTreads();
   if(isFirey() && !isAlien() && firey.glow>0.02) drawFirey();
   if(isAlien() && !isWall() && alien.glow>0.02) drawAlien();
-  if(isWall() && wall.glow>0.02) drawWall();
+  if(isWall() && !isSmooth() && wall.glow>0.02) drawWall();
+  if(isSmooth() && smooth.glow>0.02) drawSmooth();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3566,6 +3642,67 @@ function drawWall(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ---- Lore 29 cont. — THE SMOOTH AGE / THE ARROW CHAMBER render. A clean FNF-style chamber: a smooth
+       gradient and crisp scanlines, Simon standing in the center with flashing yellow eyes, and four
+       FNF arrows above his head popping on the beat — YELLOW (charge/attack) or BLACK (Nil) — with a
+       TRUTH / LYING tag under them, because the readout is bait. ---- */
+function drawSmooth(){
+  const g = smooth.glow||0, top = cameraY, an = smooth.anim||0;
+  ctx.save();
+  // the Smooth Age — a clean FNF gradient, deep indigo to violet
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(16,10,32,${0.34*g})`);
+  bg.addColorStop(1, `rgba(28,12,40,${0.30*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+  // crisp scanlines — "cleaner textures, sharper glitches"
+  ctx.fillStyle = `rgba(255,255,255,${0.03*g})`;
+  for(let y=top+((an*40)%4); y<top+H; y+=4) ctx.fillRect(0, y, W, 1);
+  // a hint of Mr Black at full potential — a clean red demon-light column at the right edge
+  const mb = ctx.createLinearGradient(W-70,0,W,0);
+  mb.addColorStop(0,'rgba(255,40,70,0)'); mb.addColorStop(1,`rgba(255,40,70,${0.16*g})`);
+  ctx.fillStyle = mb; ctx.fillRect(W-70, top, 70, H);
+  // Simon standing still in the center, eyes flashing yellow (he is in the FNF animations now)
+  const scx = W*0.5, sFloor = top + H - 96, bob = Math.sin(an*0.8)*2, sy0 = sFloor - 56 + bob;
+  const eyeOn = Math.abs(Math.sin(an*6)) > 0.4;
+  ctx.save();
+  ctx.shadowBlur = 12; ctx.shadowColor = '#ffe24a';
+  ctx.fillStyle = '#ece2d0';
+  ctx.beginPath(); ctx.ellipse(scx, sy0+30, 16, 24, 0, 0, 6.28); ctx.fill();   // torso
+  ctx.beginPath(); ctx.ellipse(scx, sy0, 15, 14, 0, 0, 6.28); ctx.fill();       // head
+  ctx.strokeStyle = '#ece2d0'; ctx.lineWidth = 2;                               // antenna
+  ctx.beginPath(); ctx.moveTo(scx-6, sy0-12); ctx.lineTo(scx-9, sy0-24);
+  ctx.moveTo(scx+6, sy0-12); ctx.lineTo(scx+9, sy0-24); ctx.stroke();
+  ctx.shadowBlur = eyeOn? 12 : 3;                                               // flashing yellow eyes
+  ctx.fillStyle = eyeOn ? '#ffe24a' : '#9a7a14';
+  ctx.beginPath(); ctx.arc(scx-5, sy0, 2.4, 0, 6.28); ctx.arc(scx+5, sy0, 2.4, 0, 6.28); ctx.fill();
+  ctx.restore();
+  // the four FNF arrows above his head — pop on the beat, yellow (charge) or black (Nil)
+  const ax0 = scx - 54, ay = sy0 - 46, gap = 36;
+  const dirs = [Math.PI, Math.PI*0.5, -Math.PI*0.5, 0];   // left, down, up, right
+  for(let i=0;i<smooth.arrows.length;i++){
+    const a = smooth.arrows[i], cxA = ax0 + i*gap, sc = 1 + (a.p||0)*0.5;
+    const yellow = a.col===0;
+    ctx.save();
+    ctx.translate(cxA, ay); ctx.rotate(dirs[i]); ctx.scale(sc, sc);
+    ctx.shadowBlur = yellow ? 10 : 6; ctx.shadowColor = yellow ? '#ffe24a' : '#000';
+    ctx.fillStyle = yellow ? `rgba(255,226,74,${(0.55+0.45*(a.p||0))})` : `rgba(20,18,24,${(0.7+0.3*(a.p||0))})`;
+    ctx.strokeStyle = yellow ? '#fff2b0' : '#ffe24a'; ctx.lineWidth = 1.4;
+    // a chunky FNF arrow: chevron head + stem
+    ctx.beginPath();
+    ctx.moveTo(8,0); ctx.lineTo(0,-9); ctx.lineTo(0,-4); ctx.lineTo(-9,-4);
+    ctx.lineTo(-9,4); ctx.lineTo(0,4); ctx.lineTo(0,9); ctx.closePath();
+    ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
+  // the TRUTH / LYING tag beneath the arrows — the readout is bait
+  ctx.textAlign = 'center'; ctx.font = '800 10px ui-monospace,monospace';
+  if(smooth.lie){ ctx.fillStyle = `rgba(255,59,92,${(0.6+0.4*Math.abs(Math.sin(an*9)))*g})`;
+    ctx.fillText('ARROWS: LYING', scx, ay+24); }
+  else { ctx.fillStyle = `rgba(124,240,106,${0.7*g})`; ctx.fillText('ARROWS: TRUTH', scx, ay+24); }
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -3797,6 +3934,21 @@ function drawHUD(){
     if(wall.converted){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ THE ROOM BECAME HIM — THE WALL HUMS HIS RHYTHM ★', W/2, by-6); }
     else { ctx.fillStyle='#ffe98a'; ctx.fillText('THE WALL ERA — THE NIL STATE SUBTRACTS THE ROOM', W/2, by-6); }
   }
+  // THE SMOOTH AGE / THE ARROW CHAMBER (Lore 29 cont.) — the READ meter: the FNF arrows lie, so stop
+  // trusting the readout and read HIM. Climb with purpose to read past the lie; trusting it (standing
+  // still) drains the meter.
+  if(isSmooth() && smooth.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, rm=Math.max(0,Math.min(1,smoothM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#1a1228'; ctx.fillRect(bx, by, bw, 7);
+    const rg = ctx.createLinearGradient(bx,0,bx+bw,0);
+    rg.addColorStop(0,'#1a1a1a'); rg.addColorStop(0.5,'#ffe24a'); rg.addColorStop(1, winFlash>0?'#fff2b0':'#ffd84f');
+    ctx.fillStyle = rg; ctx.fillRect(bx, by, bw*rm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*rm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(smooth.read){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ READ PAST THE LIE — YOU KEPT TEMPO ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffe98a'; ctx.fillText('THE SMOOTH AGE — READ HIM, NOT THE ARROWS', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -3809,9 +3961,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))) ;
+    ctx.fillStyle = isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isWall()? '▓ THE WALL ERA — THE NIL STATE ▓'
+    ctx.fillText(isSmooth()? '▓ THE SMOOTH AGE — THE ARROW CHAMBER ▓'
+               : (isWall()? '▓ THE WALL ERA — THE NIL STATE ▓'
                : (isAlien()? '▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓'
                : (isFirey()? '▓ FIREY DELIGHT — THE MELTING TUBE ▓'
                : (isTreads()? '▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓'
@@ -3824,7 +3977,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3840,7 +3993,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Wall Era', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Smooth Age', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -3857,22 +4010,13 @@ function drawTitle(){
     'SILENT EXECUTIONER: he MARKS you; MOVE off the mark.',
     'ATOMIX WAR: he divides the board. RESIDUAL WAR:',
     'FINISH the unfinished. Then 17 SOUND BATTLES decide.',
-    'LORE OF THE VOID: he fuses the Void, says TORQE.',
-    'WINTER SIMON freezes it into a JUDGMENT FIELD: climb',
-    'with purpose; catch the one GOLD CARD. Then Alex turns',
-    'god of CONTROL, Lica ORIGIN, Simon claps twice to',
-    'FREEZE it: the THREE-WAY FIELD. Then the SCF: thrown in',
-    'with monsters, Simon becomes CODE; then SCF 404, ENDLESS.',
-    'His one WEAKNESS: the TREADMILL. Herd the lightning cat',
-    'onto the belts and forced PATTERNS to DRAIN his charge.',
-    'FIREY DELIGHT: he spins his tube till friction MELTS it.',
-    'THE ALIEN AGE: SCF-404 wakes already aware; a drone',
-    'predicts his next 400 moves, so he chooses MOVE 401 and',
-    'escapes FASTER THAN PREDICTION. Climb with purpose.',
-    'THE WALL ERA: weaker, Phase 2 forever, he is WALLED in.',
-    'He stands still and the NIL STATE flashes black, a brief',
-    'subtraction event that turns the room into him. DO NOT',
-    'LOOK, NO NOISE; he also hears intention.'
+    'VOID + TORQE; WINTER SIMON judges (the GOLD CARD); a',
+    'THREE-WAY FIELD; the SCF: he becomes CODE, then SCF 404.',
+    'WEAKNESS: the TREADMILL. FIREY DELIGHT melts the tube.',
+    'THE ALIEN AGE: he reads 400 moves ahead, picks MOVE 401.',
+    'THE WALL ERA: walled in, the NIL STATE subtracts the room.',
+    'THE SMOOTH AGE: FNF YELLOW/BLACK arrows read him, then',
+    'he LIES. Climb with purpose; read HIM, not the arrows.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 230 + i*15));
