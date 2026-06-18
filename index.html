@@ -439,6 +439,7 @@ let treads, treadsH, treadsM;
 // ring, and Simon escapes again. You cannot stop the melt — only stay ahead of it as he gets out.
 let firey, fireyH, fireyM;
 let alien, alienH, alienM;
+let wall, wallH, wallM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -514,6 +515,10 @@ function reset(){
             latticeT:0, spawnT:0.6, eventT:2.0, shapes:[] };
   alienH = fireyH + 1100;
   alienM = 0.25;  // the PREDICTION meter: climb with purpose so Simon picks move 401 and escapes faster than prediction
+  wall = { active:false, t:0, glow:0, done:false, converted:false, flash:0, flashT:0.6,
+           subs:[], panels:[], eventT:2.0, hum:0 };
+  wallH = alienH + 1100;
+  wallM = 0.25;  // the NIL meter: the Nil State is automatic; climbing with purpose spreads the subtraction until the room becomes him
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -569,6 +574,7 @@ function isTreads(){ return !!(treads && (treads.active || treads.done)); }
 // stops playing, dodges every treadmill, and spins so fast around his tube that friction melts it.
 function isFirey(){ return !!(firey && (firey.active || firey.done)); }
 function isAlien(){ return !!(alien && (alien.active || alien.done)); }
+function isWall(){ return !!(wall && (wall.active || wall.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1115,6 +1121,31 @@ function update(dt){
   if(alien.glow < (isAlien() ? 1 : 0))
     alien.glow = Math.min(1, alien.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 18) — THE WALL ERA / THE NIL STATE. Weaker now and Phase 2 forever, Simon is
+         sent to the largest Containment Center and a huge layered wall is built around it: "fear made
+         architecture." He stands still (when he stands still, he is thinking), yellow eyes hidden behind
+         his hands, and the NIL STATE flashes black through him — "a brief subtraction event": for tiny
+         moments the room stops being fully itself where he flashes, so the CC is slowly converted into a
+         state closer to him. "That one's automatic." Signs go up: DON'T LOOK / NO NOISE / NO CONTACT —
+         and "silence is not enough, he also hears intention." ---- */
+  if(alien.done && !wall.active && !wall.done && height > wallH){
+    wall.active = true; wall.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE WALL ERA'; warnT = 2.8;
+    showTaunt('The Wall Era. Weaker, Phase 2 forever, Simon is walled into the largest Containment Center.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'DO NOT LOOK AT THE ENTITY — NO NOISE — NO CONTACT', col:'#ffe24a' });
+    AUDIO.zap();
+  }
+  if(wall.active){
+    wall.t += dt;
+    if(wall.t>1.6 && wall.t<1.68) showTaunt('"Fear made architecture." When Simon stands still, he is thinking. The Nil State flashes black.');
+    if(wall.t>3.4 && wall.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(wall.t>3.4 && wall.t<3.48) showTaunt('The Nil State is a brief subtraction event — the room becomes him where he flashes. "That one’s automatic."');
+    if(wall.t > 5.4){ wall.active = false; wall.done = true; }
+  }
+  if(wall.glow < (isWall() ? 1 : 0))
+    wall.glow = Math.min(1, wall.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1127,7 +1158,8 @@ function update(dt){
   if(isScf404() && !isTreads()) updateScf404(dt);
   if(isTreads() && !isFirey()) updateTreads(dt);
   if(isFirey() && !isAlien()) updateFirey(dt);
-  if(isAlien()) updateAlien(dt);
+  if(isAlien() && !isWall()) updateAlien(dt);
+  if(isWall()) updateWall(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2021,6 +2053,46 @@ function updateAlien(dt){
   }
 }
 
+/* ---- Lore 29 cont. (June 18) — THE WALL ERA / THE NIL STATE update. Simon stands still, weaker and
+       Phase 2 forever, walled into the largest Containment Center; the Nil State flashes black through him
+       and SUBTRACTS the nearest wall panels (they blink black / to 404), slowly converting the room into a
+       state closer to him. It is automatic — you cannot stop it, only feed or starve its rhythm: climbing
+       with purpose teaches the wall his rhythm and spreads the subtraction; standing still lets the
+       anti-flash stabilizers claw a little back. Fill it and the room becomes him. ---- */
+function updateWall(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  // the NIL meter — the subtraction spreads as you climb with purpose; standing still stabilizes a little
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  wallM = Math.max(0, Math.min(1, wallM + (moving ? dt*0.05 : -dt*0.022)));
+  wall.hum = wallM;   // the huge wall hums louder with his rhythm as the Nil State spreads
+  // the black Nil flash pulses through Simon and the nearest walls — brighter/more often as it spreads
+  wall.flashT -= dt;
+  if(wall.flashT <= 0){ wall.flashT = rnd(0.5, 1.3) * (1 - wallM*0.5);
+    wall.flash = 1;
+    // each flash subtracts a nearby wall panel into Nil/404 static
+    wall.subs.push({ side: chance(0.5)?-1:1, y: rnd(cameraY+120, cameraY+H-90), t:0,
+                     life: rnd(1.4, 2.6), n404: chance(0.6) });
+    if(wallM > 0.4) AUDIO.zap();
+  }
+  if(wall.flash>0) wall.flash = Math.max(0, wall.flash - dt*2.2);
+  for(let i=wall.subs.length-1;i>=0;i--){ const s=wall.subs[i]; s.t+=dt; if(s.t>s.life) wall.subs.splice(i,1); }
+  // intermittent events — the standing, the rules, the subtraction
+  wall.eventT -= dt;
+  if(wall.eventT <= 0){ wall.eventT = rnd(2.2, 3.6);
+    const ev = ['SIMON STANDS STILL','DO NOT LOOK','NO NOISE — NO CONTACT','THE NIL STATE FLASHES BLACK',
+                'A BRIEF SUBTRACTION EVENT','HE ALSO HEARS INTENTION','"THAT ONE’S AUTOMATIC"'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
+  }
+  // you cannot stop the Nil State — fill it and the room becomes a state closer to him
+  if(wallM >= 1 && !wall.converted){
+    wall.converted = true; winFlash = 1; emer += 5; shake = Math.max(shake,9);
+    showTaunt('The Nil State spread until the room became him, and the huge wall hummed his rhythm.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THE ROOM BECAME HIM — THE WALL HUMS HIS RHYTHM ★', col:'#fff2b0' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#ffe24a','#000000','#fff2b0'])));
+    AUDIO.zap();
+  }
+}
+
 /* =========================================================================
    RENDER
    ========================================================================= */
@@ -2063,7 +2135,8 @@ function draw(){
   if(isScf404() && scf404.glow>0.02 && !isTreads()) drawScf404();
   if(isTreads() && !isFirey() && treads.glow>0.02) drawTreads();
   if(isFirey() && !isAlien() && firey.glow>0.02) drawFirey();
-  if(isAlien() && alien.glow>0.02) drawAlien();
+  if(isAlien() && !isWall() && alien.glow>0.02) drawAlien();
+  if(isWall() && wall.glow>0.02) drawWall();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3419,6 +3492,80 @@ function drawAlien(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ---- Lore 29 cont. — THE WALL ERA / THE NIL STATE render. The largest Containment Center: a huge layered
+       wall ringing both margins (metal · alien stone · code glass · signal mesh · anti-speed), DON'T LOOK /
+       NO NOISE signs, Simon standing still in the center with his hands over his hidden yellow eyes, and the
+       black Nil flash subtracting nearby wall panels into 404 static as the room is converted toward him. ---- */
+function drawWall(){
+  const g = wall.glow||0, top = cameraY, hum = Math.max(0,Math.min(1,wall.hum||0)), fl = wall.flash||0;
+  ctx.save();
+  // dim Nil-haze, deep and getting darker as the subtraction spreads
+  const haze = ctx.createLinearGradient(0, top, 0, top+H);
+  haze.addColorStop(0, `rgba(10,9,6,${(0.30+0.25*hum)*g})`);
+  haze.addColorStop(1, `rgba(6,6,5,${(0.34+0.30*hum)*g})`);
+  ctx.fillStyle = haze; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+  // the huge layered wall ringing both margins — bands of metal, alien stone, code glass, signal mesh, anti-speed
+  const bands = [ ['#3a3d44',26], ['#2f3a30',16], ['rgba(62,230,220,0.35)',8], ['#4a4030',10], ['rgba(255,59,92,0.35)',6] ];
+  for(const side of [-1,1]){
+    let x = (side<0) ? 0 : W;   // outer edge
+    for(const [col,w] of bands){
+      const bx = (side<0) ? x : x - w;
+      ctx.fillStyle = col; ctx.fillRect(bx, top, w, H);
+      x += side<0 ? w : -w;
+    }
+  }
+  const innerL = 66, innerR = W-66;   // inner face of the wall on each side
+  // DON'T LOOK / NO NOISE signs bolted to the inner wall faces
+  ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+  const signs = ['DO NOT LOOK','NO NOISE','NO CONTACT'];
+  for(let i=0;i<signs.length;i++){
+    const sy = top + 150 + i*150, sx = (i%2===0)? innerL-14 : innerR+14;
+    ctx.fillStyle = 'rgba(255,226,74,0.85)'; ctx.fillRect(sx-30, sy-9, 60, 16);
+    ctx.fillStyle = '#1a1405'; ctx.fillText(signs[i], sx, sy+2);
+  }
+  // the Nil subtraction patches — wall panels blinking black / to 404 static where he has flashed
+  for(const s of (wall.subs||[])){
+    const a = Math.max(0, 1 - s.t/s.life) * g;
+    const px = (s.side<0)? innerL-30 : innerR-30, pw = 60, ph = 34;
+    ctx.fillStyle = `rgba(0,0,0,${0.7*a})`; ctx.fillRect(px, s.y, pw, ph);
+    ctx.strokeStyle = `rgba(255,226,74,${0.5*a})`; ctx.lineWidth = 1; ctx.strokeRect(px, s.y, pw, ph);
+    if(s.n404){ ctx.fillStyle = `rgba(255,59,92,${0.8*a})`; ctx.font='700 11px ui-monospace,monospace';
+      ctx.textAlign='center'; ctx.fillText('404 404', px+pw/2, s.y+ph/2+4); }
+  }
+  // Simon standing still in the center — head lowered, hands over his hidden yellow eyes, antenna still,
+  // bandages hanging; the black Nil State flashes through his outline
+  const scx = W*0.5, sFloor = top + H - 96, bob = Math.sin((wall.t||0)*0.6)*2;
+  const sy0 = sFloor - 56 + bob, blackout = fl;
+  ctx.save();
+  // body (a pale bandaged figure), flashing to black on the Nil pulse
+  const bodyCol = `rgb(${Math.round(232*(1-blackout))},${Math.round(226*(1-blackout))},${Math.round(208*(1-blackout))})`;
+  ctx.shadowBlur = 16*(0.4+0.6*hum); ctx.shadowColor = blackout>0.3? '#000' : '#ffe24a';
+  ctx.fillStyle = bodyCol;
+  ctx.beginPath(); ctx.ellipse(scx, sy0+30, 16, 24, 0, 0, 6.28); ctx.fill();   // torso
+  ctx.beginPath(); ctx.ellipse(scx, sy0, 15, 14, 0, 0, 6.28); ctx.fill();       // head
+  // antenna (still), bandage wraps
+  ctx.strokeStyle = bodyCol; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(scx-6, sy0-12); ctx.lineTo(scx-9, sy0-24);
+  ctx.moveTo(scx+6, sy0-12); ctx.lineTo(scx+9, sy0-24); ctx.stroke();
+  // hands over the face, hiding the yellow eyes (a faint yellow glow leaks between them)
+  ctx.fillStyle = `rgba(255,226,74,${(0.25+0.4*hum)*(1-blackout)})`;
+  ctx.beginPath(); ctx.ellipse(scx, sy0+1, 8, 5, 0, 0, 6.28); ctx.fill();        // leaking eye-glow
+  ctx.fillStyle = bodyCol;
+  ctx.beginPath(); ctx.ellipse(scx-6, sy0+2, 6, 9, -0.3, 0, 6.28); ctx.fill();   // left hand
+  ctx.beginPath(); ctx.ellipse(scx+6, sy0+2, 6, 9, 0.3, 0, 6.28); ctx.fill();    // right hand
+  ctx.restore();
+  // the global Nil flash — a brief black subtraction wash over everything, with a hum line at the base
+  if(fl > 0.02){ ctx.fillStyle = `rgba(0,0,0,${0.34*fl*g})`; ctx.fillRect(0, top, W, H); }
+  // the huge wall hums his rhythm — a pulsing line across the floor that grows with the meter
+  ctx.strokeStyle = `rgba(255,226,74,${(0.12+0.4*hum)*g})`; ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  for(let x=innerL;x<=innerR;x+=8){ const yy = sFloor+30 + Math.sin(x*0.06 + (wall.t||0)*3)*4*hum;
+    if(x===innerL) ctx.moveTo(x,yy); else ctx.lineTo(x,yy); }
+  ctx.stroke();
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -3635,6 +3782,21 @@ function drawHUD(){
     if(alien.escaped){ ctx.fillStyle='#d6ff9a'; ctx.fillText('★ FASTER THAN PREDICTION — HE CHOSE MOVE 401 ★', W/2, by-6); }
     else { ctx.fillStyle='#aef34a'; ctx.fillText('THE ALIEN AGE — CLIMB WITH PURPOSE, CHOOSE MOVE 401', W/2, by-6); }
   }
+  // THE WALL ERA / THE NIL STATE (Lore 29 cont.) — the NIL meter: the Nil State is automatic; climbing with
+  // purpose teaches the wall his rhythm and spreads the subtraction until the room becomes him. Standing
+  // still lets the anti-flash stabilizers claw a little back.
+  if(isWall() && wall.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, nm=Math.max(0,Math.min(1,wallM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#161208'; ctx.fillRect(bx, by, bw, 7);
+    const ng = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ng.addColorStop(0,'#000000'); ng.addColorStop(0.5,'#ffe24a'); ng.addColorStop(1, winFlash>0?'#fff2b0':'#ffd84f');
+    ctx.fillStyle = ng; ctx.fillRect(bx, by, bw*nm, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*nm-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(wall.converted){ ctx.fillStyle='#ffe98a'; ctx.fillText('★ THE ROOM BECAME HIM — THE WALL HUMS HIS RHYTHM ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffe98a'; ctx.fillText('THE WALL ERA — THE NIL STATE SUBTRACTS THE ROOM', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -3647,9 +3809,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))) ;
+    ctx.fillStyle = isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isAlien()? '▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓'
+    ctx.fillText(isWall()? '▓ THE WALL ERA — THE NIL STATE ▓'
+               : (isAlien()? '▓ THE ALIEN AGE — FASTER THAN PREDICTION ▓'
                : (isFirey()? '▓ FIREY DELIGHT — THE MELTING TUBE ▓'
                : (isTreads()? '▓ THE TREADMILL WEAKNESS — PATTERN CONTROL ▓'
                : (isScf404()? '▓ SCF 404 — THE ENDLESS CONTAINMENT-UNIVERSE ▓'
@@ -3661,7 +3824,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -3677,7 +3840,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Alien Age', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Wall Era', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -3705,7 +3868,11 @@ function drawTitle(){
     'FIREY DELIGHT: he spins his tube till friction MELTS it.',
     'THE ALIEN AGE: SCF-404 wakes already aware; a drone',
     'predicts his next 400 moves, so he chooses MOVE 401 and',
-    'escapes FASTER THAN PREDICTION. Climb with purpose.'
+    'escapes FASTER THAN PREDICTION. Climb with purpose.',
+    'THE WALL ERA: weaker, Phase 2 forever, he is WALLED in.',
+    'He stands still and the NIL STATE flashes black, a brief',
+    'subtraction event that turns the room into him. DO NOT',
+    'LOOK, NO NOISE; he also hears intention.'
   ];
   ctx.font='12px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 230 + i*15));

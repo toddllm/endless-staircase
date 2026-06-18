@@ -4,6 +4,48 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The Wall Era / The Nil State (Lore 29 cont.)
+
+Based on Toby's June 18 lore (the "Lore 29" thread continued): after *"SCF characters VS Simon"* he
+*"gotten weaker and weaker"* and is *"sent to the largest of Containment Centers in the SCF and around the
+CC is now a huge wall."* SCF enters *"The Wall Era,"* because walling him off *"does not feel like victory.
+It feels like fear made architecture."* Simon stands still in the center, *"weaker than before, Phase 2
+forever, black Nil-state flashing through him, yellow eyes hidden again,"* and *"for a long time he does
+nothing. That is what scares them"* — *"when Simon stands still, he is thinking."* The Golden Rules /
+signs go up: *DO NOT LOOK AT THE ENTITY · NO NOISE · NO CONTACT*, and the file on him keeps corrupting to
+*"404 404 404."* The standout is the **Nil State** — *"not only a visual phase, it is a brief subtraction
+event. For tiny moments, the room stops being fully itself where Simon flashes... the CC is being
+partially converted into a state closer to him."* And when he says *"That one's automatic,"* it is worse,
+because he did not even choose it. Quiet Squad 404 learns the other rule the hard way: *"Silence is not
+enough. He also hears intention."*
+
+![Lore 29 cont. — THE WALL ERA / THE NIL STATE: the largest Containment Center, a huge layered wall (metal,
+alien stone, code glass, signal mesh, anti-speed) ringing both margins, DO NOT LOOK / NO NOISE / NO CONTACT
+signs bolted to the inner faces, Simon standing still in the center with his hands over his hidden yellow
+eyes, the black Nil flash subtracting nearby wall panels into "404 404" static, the "▓ THE WALL ERA — THE
+NIL STATE ▓" HUD tag, and the black-to-yellow NIL meter](screenshots/25-wall-era.png)
+
+- **A twentieth arc: The Wall Era.** Climb past the Alien Age and Simon, *"weaker and weaker"* and Phase 2
+  forever, is walled into the largest Containment Center. A new state fires with the yellow HUD tag **▓ THE
+  WALL ERA — THE NIL STATE ▓**.
+- **The huge wall — "fear made architecture."** A thick layered **wall** rings both margins of the chamber
+  in bands — *"metal, alien stone, code glass, signal mesh, and anti-speed layers"* — with **DO NOT LOOK /
+  NO NOISE / NO CONTACT** signs bolted to the inner faces.
+- **Simon stands still.** In the center stands a pale bandaged figure, head lowered, **hands over his
+  hidden yellow eyes** (a faint yellow glow leaks between his fingers), antenna still. *"When Simon stands
+  still, he is thinking."*
+- **The Nil State — a brief subtraction event.** The **black Nil flash** pulses through Simon's outline and
+  **subtracts the nearest wall panels**, which blink to black and to **"404 404"** static — *"the room
+  stops being fully itself where Simon flashes,"* slowly converting the CC into a state closer to him. The
+  flash also washes the whole screen black for an instant.
+- **The NIL meter — it is automatic.** Like SCF 404's 0% and the melting tube, this one Simon wins: the
+  Nil State *"is automatic,"* so the meter **fills while you climb with purpose** (teaching the huge wall
+  his rhythm, spreading the subtraction) and the **anti-flash stabilizers** claw a little back while you
+  stand still. Fill it and **★ THE ROOM BECAME HIM — THE WALL HUMS HIS RHYTHM ★** (+5 emeralds).
+- **Wiring, unchanged pattern.** New `wall` state + `isWall()` gate slot in after `alien`; the chain now
+  runs Firey Delight → The Alien Age → The Wall Era. New `wall` screenshot scene added to
+  `tools/capture_screenshot.py`. Everything additive; no existing behavior removed.
+
 ## 2026-06-18 — The Alien Age / Faster Than Prediction (Lore 29)
 
 Based on Toby's June 18 lore (the "Lore 29" thread): SCF enters *"The Alien Age of SCF."* After an
