@@ -788,6 +788,31 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "codex": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE STATUS CODEX — the full roster sealed, every status group scanned in
+        if (typeof codex!=='undefined'){
+          codex.active=true; codex.done=false; codex.glow=1; codex.t=4.0;
+          codex.anim=2.2; codex.logged=8; codex.note=1; codex.noteT=2.4;
+        }
+        if (typeof codexM!=='undefined'){ codexM=0.66; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof codex!=='undefined'){ codex.logged=8; codex.note=1; codex.glow=1; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.3; }
+        if (typeof glitch!=='undefined'){ glitch=0.25; }
+        if (typeof showTaunt==='function'){ showTaunt('The Status Codex. Every fate filed: Simon and Sumona CRAZY; Oren, Black, Pinki, Durple DEMONED; Gray, Wenda, Clukr .EXE; Mr. Sun a BLACKHOLE; Raddy infected; Jevin, Alex, Neo, ToddLLM alive; many dead. Star Steed runs; the Throne is destroyed.'); tauntT=9; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

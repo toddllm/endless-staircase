@@ -444,6 +444,7 @@ let smooth, smoothH, smoothM;
 let hallu, halluH, halluM;
 let plague, plagueH, plagueM;
 let danger, dangerH, dangerM;
+let codex, codexH, codexM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -563,6 +564,17 @@ function reset(){
              phase:'list', phaseT:2.6, eventT:2.0 };
   dangerH = plagueH + 1100;
   dangerM = 0.25;  // THE DANGER INDEX meter: climb with purpose to log the whole ranking (catalog the danger levels) before the Invisible Man closes in
+  codex = { active:false, t:0, glow:0, done:false, held:false, anim:0,
+            // Lore 29 cont. (June 18) — THE STATUS CODEX. Toby gave the fate of the whole cast, so SCF
+            // expands the Danger Index into a full status codex: every named being filed under CRAZY,
+            // DEMONED, .EXE, CORRUPT, INFECTED, ALIVE, or DEAD. Mr. Sun became a BLACKHOLE when he was
+            // corrupted; Mervin gave his own life to Simon so Mindy Starchild would live; Mindy trusts
+            // Rumble to spare her kingdom, Star Steed, and the throne; Paul is one step from the straw
+            // that breaks the camel's back; Gray is .EXE and one of the most dangerous; the SCF
+            // soldiers/scientists are 76.9% alive; Star Steed runs free; the Throne is destroyed.
+            logged:0, noteT:2.4, note:0, eventT:2.0 };
+  codexH = dangerH + 1100;
+  codexM = 0.25;  // THE STATUS CODEX meter: climb with purpose to seal every fate before the roster scrolls past
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -625,6 +637,7 @@ function isHallu(){ return !!(hallu && (hallu.active || hallu.done)); }
 function isPlague(){ return !!(plague && (plague.active || plague.done)); }
 // Lore 29 cont. — after the Plague Cycle, SCF posts the final ranking: THE DANGER INDEX
 function isDanger(){ return !!(danger && (danger.active || danger.done)); }
+function isCodex(){ return !!(codex && (codex.active || codex.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1296,6 +1309,31 @@ function update(dt){
   if(danger.glow < (isDanger() ? 1 : 0))
     danger.glow = Math.min(1, danger.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 18) — THE STATUS CODEX. Toby filed the fate of the whole cast, so SCF
+         expands the ranking into a full codex: every named being under CRAZY, DEMONED, .EXE, CORRUPT,
+         INFECTED, ALIVE, or DEAD. Mr. Sun became a BLACKHOLE when corrupted; Mervin gave his own life to
+         Simon so Mindy Starchild would live; Mindy trusts Rumble to spare her kingdom, Star Steed, and
+         the throne; Paul is one step from the straw that breaks the camel's back; Gray is .EXE and one of
+         the most dangerous; the SCF soldiers/scientists are 76.9% alive; Star Steed runs; the Throne is
+         destroyed. ---- */
+  if(danger.done && !codex.active && !codex.done && height > codexH){
+    codex.active = true; codex.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE STATUS CODEX'; warnT = 2.8;
+    showTaunt('SCF opens the full codex. Every fate filed: CRAZY, DEMONED, .EXE, CORRUPT, INFECTED, ALIVE, DEAD.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE STATUS CODEX — EVERY FATE', col:'#cfe0ff' });
+    AUDIO.zap();
+  }
+  if(codex.active){
+    codex.t += dt;
+    if(codex.t>1.6 && codex.t<1.68) showTaunt('Mr. Sun became a BLACKHOLE when corrupted. Gray is .EXE, one of the most dangerous.');
+    if(codex.t>3.4 && codex.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(codex.t>3.4 && codex.t<3.48) showTaunt('Mervin gave his life to Simon so Mindy Starchild would live. Star Steed runs; the Throne is destroyed.');
+    if(codex.t > 5.6){ codex.active = false; codex.done = true; }
+  }
+  if(codex.glow < (isCodex() ? 1 : 0))
+    codex.glow = Math.min(1, codex.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1313,7 +1351,8 @@ function update(dt){
   if(isSmooth() && !isHallu()) updateSmooth(dt);
   if(isHallu() && !isPlague()) updateHallu(dt);
   if(isPlague() && !isDanger()) updatePlague(dt);
-  if(isDanger()) updateDanger(dt);
+  if(isDanger() && !isCodex()) updateDanger(dt);
+  if(isCodex()) updateCodex(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2402,7 +2441,8 @@ function draw(){
   if(isSmooth() && !isHallu() && smooth.glow>0.02) drawSmooth();
   if(isHallu() && !isPlague() && hallu.glow>0.02) drawHallu();
   if(isPlague() && !isDanger() && plague.glow>0.02) drawPlague();
-  if(isDanger() && danger.glow>0.02) drawDanger();
+  if(isDanger() && !isCodex() && danger.glow>0.02) drawDanger();
+  if(isCodex() && codex.glow>0.02) drawCodex();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -4455,6 +4495,138 @@ function drawDanger(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* =========================================================================
+   Lore 29 cont. — THE STATUS CODEX
+   Toby filed the fate of the whole cast, so SCF expands the Danger Index into a
+   full status codex: every named being under CRAZY, DEMONED, .EXE, CORRUPT,
+   INFECTED, ALIVE, or DEAD, plus the objects/forces (Star Steed runs, the Throne
+   is destroyed, the SCF soldiers/scientists are 76.9% alive). The codex scans in
+   group by group; a cycling SCF note records the special fates (Mr. Sun became a
+   BLACKHOLE, Mervin gave his life to Simon for Mindy Starchild, Paul is one step
+   from breaking, Gray is .EXE and one of the most dangerous). The CODEX meter
+   rewards sealing every fate before the roster scrolls past.
+   ========================================================================= */
+const CODEX_GROUPS = [
+  { s:'CRAZY',    col:'#ff5c8a', m:['Simon','Sumona'] },
+  { s:'DEMONED',  col:'#b98cff', m:['Oren','Black','Pinki','Durple'] },
+  { s:'.EXE',     col:'#7ed0ff', m:['Gray','Wenda','Clukr','Mr. Fun Computer','Pupahya','Luigi Green','67 Kid','Endless Staircase'] },
+  { s:'CORRUPT',  col:'#ff9a3c', m:['Mr. Sun → Blackhole'] },
+  { s:'INFECTED', col:'#9ae66e', m:['Raddy (first)','67 Dog','Gewlis (= 67 Dog)'] },
+  { s:'ALIVE',    col:'#9affc8', m:['Jevin','Vineria (barely)','Sky','Alex','Greg','Neo','Paul (near breaking)','Clara','67 Pirate','Mindy Starchild','Rumble','Zen','ToddLLM'] },
+  { s:'DEAD',     col:'#9aa0ad', m:['Tunner','Fun Bot','Garnold','Brud','Mr. Tree','Karuto','Mervin','Zara Goldheart','Lexicon','El Quwera','Victoria','Vaspra','Cloudy','King Jet','Lica','TIM (Invisible Man)'] },
+];
+const CODEX_OBJECTS = [
+  { n:'Star Steed', s:'RUNNING',     col:'#9affc8' },
+  { n:'The Throne', s:'DESTROYED',   col:'#ff5c8a' },
+  { n:'SCF Soldiers / Scientists', s:'76.9% ALIVE', col:'#ffd84f' },
+];
+const CODEX_NOTES = [
+  'Mr. Sun became a BLACKHOLE when he was corrupted.',
+  'Mervin gave his own life to Simon so Mindy Starchild would live.',
+  'Mindy trusts Rumble to spare her kingdom, Star Steed, and the throne.',
+  "Paul is one step from the straw that breaks the camel's back.",
+  'Gray is .EXE — one of the most dangerous of all.',
+  'Mr. Black and Black are the same. TIM = The Invisible Man.',
+];
+function updateCodex(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  codex.anim = (codex.anim||0) + dt;
+  codex.logged = Math.min(CODEX_GROUPS.length + 1, (codex.logged||0) + dt*1.1);  // groups scan in one by one (+1 = the objects row)
+  codex.noteT -= dt;
+  if(codex.noteT <= 0){ codex.noteT = 2.6; codex.note = ((codex.note||0)+1) % CODEX_NOTES.length; }
+  // floating event labels
+  codex.eventT -= dt;
+  if(codex.eventT <= 0){ codex.eventT = rnd(2.2,3.6);
+    const ev = ['THE STATUS CODEX','SIMON & SUMONA — CRAZY','OREN · BLACK · PINKI · DURPLE — DEMONED',
+      'GRAY · WENDA · CLUKR — .EXE','MR. SUN → BLACKHOLE — CORRUPT','RADDY · 67 DOG · GEWLIS — INFECTED',
+      'JEVIN · ALEX · NEO · TODDLLM — ALIVE','MERVIN GAVE HIS LIFE FOR MINDY','STAR STEED RUNS · THE THRONE IS DESTROYED',
+      'SCF: 76.9% STILL ALIVE','PAUL IS NEAR THE BREAKING POINT','SEAL EVERY FATE'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#cfe0ff' });
+  }
+  // THE STATUS CODEX meter — climb with purpose to seal every fate before the roster scrolls past
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  codexM = Math.max(0, Math.min(1, codexM + (moving ? dt*0.05 : -dt*0.03)));
+  if(codexM >= 1 && !codex.held){
+    codex.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You sealed the full Status Codex. Every named fate filed and saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ CODEX SEALED — EVERY FATE FILED ★', col:'#dff0ff' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#7ed0ff','#9affc8','#ff5c8a'])));
+    AUDIO.zap();
+  }
+}
+function drawCodex(){
+  const g = codex.glow||0, top = cameraY;
+  ctx.save();
+  // a cold SCF dossier wash — deep ink with a pale-blue codex glow
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(8,10,16,${0.50*g})`);
+  bg.addColorStop(1, `rgba(6,6,12,${0.48*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  const px = W*0.04, pw = W*0.92, py = top + H*0.085, panelH = H*0.83;
+  ctx.fillStyle = `rgba(14,16,24,${0.80*g})`;
+  ctx.strokeStyle = `rgba(143,179,255,${0.5*g})`; ctx.lineWidth=1.5;
+  ctx.fillRect(px, py, pw, panelH);
+  ctx.strokeRect(px, py, pw, panelH);
+  // title bar
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(207,224,255,${0.95*g})`;
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText('SCF FULL STATUS CODEX — EVERY FATE FILED', px+12, py+18);
+  ctx.textAlign='right'; ctx.fillStyle = `rgba(143,179,255,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('Lore 29 cont. · Toby, June 18', px+pw-12, py+18);
+  ctx.textAlign='left';
+  ctx.strokeStyle = `rgba(143,179,255,${0.25*g})`; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(px+8, py+26); ctx.lineTo(px+pw-8, py+26); ctx.stroke();
+
+  const leftX = px+12, rightX = px + pw/2 + 6, startY = py+44;
+
+  // one status group; alpha fades in as codex.logged passes its reveal index; layout stays stable
+  function drawGroup(grp, revealIdx, cx, cy){
+    const appear = Math.max(0, Math.min(1, (codex.logged||0) - revealIdx)), a = g*appear;
+    ctx.globalAlpha = a;
+    ctx.fillStyle = grp.col; ctx.fillRect(cx, cy-7, 7, 7);
+    ctx.font='800 10px ui-monospace,monospace'; ctx.textAlign='left';
+    ctx.fillText(grp.s+'  ('+grp.m.length+')', cx+12, cy);
+    cy += 13; ctx.font='9px ui-monospace,monospace';
+    for(const name of grp.m){
+      ctx.fillStyle = `rgba(220,228,245,${0.9*a})`;
+      ctx.fillText('· '+name, cx+10, cy); cy += 10.5;
+    }
+    return cy + 6;
+  }
+
+  // left column: CRAZY, DEMONED, .EXE, CORRUPT, INFECTED, then OBJECTS & FORCES
+  let ly = startY;
+  ly = drawGroup(CODEX_GROUPS[0], 0, leftX, ly);  // CRAZY
+  ly = drawGroup(CODEX_GROUPS[1], 2, leftX, ly);  // DEMONED
+  ly = drawGroup(CODEX_GROUPS[2], 4, leftX, ly);  // .EXE
+  ly = drawGroup(CODEX_GROUPS[3], 5, leftX, ly);  // CORRUPT
+  ly = drawGroup(CODEX_GROUPS[4], 6, leftX, ly);  // INFECTED
+  { const a = g*Math.max(0, Math.min(1, (codex.logged||0) - 7));
+    ctx.globalAlpha = a;
+    ctx.fillStyle = '#ffd84f'; ctx.fillRect(leftX, ly-7, 7, 7);
+    ctx.font='800 10px ui-monospace,monospace'; ctx.fillText('OBJECTS & FORCES', leftX+12, ly); ly += 13;
+    ctx.font='9px ui-monospace,monospace';
+    for(const o of CODEX_OBJECTS){ ctx.fillStyle = `rgba(220,228,245,${0.9*a})`;
+      ctx.fillText('· '+o.n+' — ', leftX+10, ly);
+      ctx.fillStyle = o.col; ctx.fillText(o.s, leftX+10+ctx.measureText('· '+o.n+' — ').width, ly); ly += 10.5; }
+  }
+  ctx.globalAlpha = g;
+
+  // right column: ALIVE, DEAD
+  let ry = startY;
+  ry = drawGroup(CODEX_GROUPS[5], 1, rightX, ry);  // ALIVE
+  ry = drawGroup(CODEX_GROUPS[6], 3, rightX, ry);  // DEAD
+
+  // footer: a cycling SCF note
+  ctx.globalAlpha = g; ctx.textAlign='left';
+  ctx.fillStyle = `rgba(143,179,255,${0.88*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('▸ '+CODEX_NOTES[codex.note||0], px+12, py+panelH-12);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -4733,7 +4905,7 @@ function drawHUD(){
   }
   // THE DANGER INDEX (Lore 29 cont.) — the INDEX meter. Climb with purpose to log the whole ranking
   // (catalog every danger level) before the Invisible Man closes in; standing still drains it.
-  if(isDanger() && danger.glow>0.05){
+  if(isDanger() && !isCodex() && danger.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,dangerM));
     ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
     ctx.fillStyle='#1a1206'; ctx.fillRect(bx, by, bw, 7);
@@ -4744,6 +4916,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(danger.held){ ctx.fillStyle='#fff2b0'; ctx.fillText('★ INDEX LOGGED — RANKING CATALOGUED ★', W/2, by-6); }
     else { ctx.fillStyle='#ffe24a'; ctx.fillText('THE DANGER INDEX — LOG THE WHOLE RANKING', W/2, by-6); }
+  }
+  // THE STATUS CODEX (Lore 29 cont.) — the CODEX meter. Climb with purpose to seal every fate.
+  if(isCodex() && codex.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,codexM));
+    ctx.fillStyle='#0a0e16'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#7ed0ff'); ig.addColorStop(0.5,'#9affc8'); ig.addColorStop(1, winFlash>0?'#dff0ff':'#cfe0ff');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(codex.held){ ctx.fillStyle='#dff0ff'; ctx.fillText('★ CODEX SEALED — EVERY FATE FILED ★', W/2, by-6); }
+    else { ctx.fillStyle='#cfe0ff'; ctx.fillText('THE STATUS CODEX — SEAL EVERY FATE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -4757,9 +4941,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))))) ;
+    ctx.fillStyle = isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isDanger()? '▓ THE DANGER INDEX — SCF FINAL RANKING ▓'
+    ctx.fillText(isCodex()? '▓ THE STATUS CODEX — EVERY FATE FILED ▓'
+               : (isDanger()? '▓ THE DANGER INDEX — SCF FINAL RANKING ▓'
                : (isPlague()? '▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓'
                : (isHallu()? '▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓'
                : (isSmooth()? '▓ THE SMOOTH AGE — THE ARROW CHAMBER ▓'
@@ -4776,7 +4961,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -4792,7 +4977,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Danger Index', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Status Codex', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -4819,9 +5004,9 @@ function drawTitle(){
     'what it sees; he sees zombies/chocolate. BLACK rules now.',
     'THE PLAGUE CYCLE: Simon crowns himself the PLAGUE KING.',
     'One cold touch = 404D / ZOMBIE / DEAD. Keep the PROTOCOL.',
-    'THE DANGER INDEX: SIMON 1004.04 (the .04 hides 404), CRAZY.',
+    'THE DANGER INDEX: SIMON 1004.04 (the .04 hides 404), CRAZY;',
     'OREN 1004, BLACK 1000, PINKI 997, JEVIN 990.5, SUMONA 950.',
-    'THE INVISIBLE MAN says "It\'s ok." then the mask lifts: he BURNS.'
+    'THE STATUS CODEX files every fate: CRAZY/DEMONED/.EXE/ALIVE/DEAD.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
@@ -4861,7 +5046,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isDanger()){
+  if(isCodex()){
+    ctx.fillText('"Every fate is filed now. Mr. Sun is a BLACKHOLE, Gray is .EXE, Mervin gave his life', W/2, H*0.64);
+    ctx.fillText(' for Mindy, Star Steed runs, the Throne is gone." — The Status Codex', W/2, H*0.67);
+  } else if(isDanger()){
     ctx.fillText('"Simon is 1004.04, and the .04 hides 404. Whatever he sees melts. Only he and Sumona', W/2, H*0.64);
     ctx.fillText(' are CRAZY. The Invisible Man said It is ok., then the mask lifted." — The Danger Index', W/2, H*0.67);
   } else if(isPlague()){

@@ -4,6 +4,57 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-19 — The Status Codex (Lore 29 cont.)
+
+Based on Toby's June 18 lore (the "Lore 29" thread continued, the full-cast fates): *"Simon is the Crazy
+status, TIM is the dead status, Black has the demoned status, Pinki and Oren are demoned, Wenda is .EXE,
+Raddy is infected (first), Sumona is crazy status, Jevin is Alive... Brud is dead, Clunkr is .EXE, Vineria
+is alive (barely), Gray is .EXE (one of the most dangerous), Mr. Sun is Corrupt, Mr. Tree is dead, Mr Fun
+Computer is .EXE, Sky is Alive, Durple is Demoned, Alex is alive, Greg is alive, Pupahya is .EXE, Neo is
+alive, Paul is alive and is nearly at the straw that broke the camel's back, Karuto is dead, Clara is alive,
+Luigi Green is .EXE, 67 Pirate is alive, 67 Kid is .EXE, 67 Dog is infected, Gewlis is 67 Dog and is
+infected, Mindy Starchild is alive and almost died 'til Mervin appeared and gave Simon her life instead,
+Mervin is dead, Rumble is alive when Mindy Starchild decides to trust Rumble even if she was worried that
+Rumble would destroy her kingdom, Star Steed and the throne, Zen is alive, Zara Goldheart is dead, Lexicon
+is dead, El Qwera is dead, Victoria is dead, Vaspra is dead, Cloudy is dead, Endless Staircase is .EXE, Sun
+became Blackhole when he was corrupt... Star Steed is running, The Throne is destroyed, ToddLLM is alive,
+King Jet is dead, Lica is dead, SCF Soldiers/Scientists are 76.9% Alive and the rest are dead, Mr. Black
+and Black are the same."* After the Danger Index, SCF expands the ranking into a full **Status Codex** that
+files every named being.
+
+![Lore 29 — THE STATUS CODEX: the SCF full-roster dossier filing every named being by status. Left column
+lists CRAZY (Simon, Sumona), DEMONED (Oren, Black, Pinki, Durple), .EXE (Gray, Wenda, Clukr, Mr. Fun
+Computer, Pupahya, Luigi Green, 67 Kid, Endless Staircase), CORRUPT (Mr. Sun → Blackhole), INFECTED (Raddy,
+67 Dog, Gewlis), and OBJECTS & FORCES (Star Steed RUNNING, The Throne DESTROYED, SCF Soldiers/Scientists
+76.9% ALIVE); right column lists ALIVE (Jevin, Vineria barely, Sky, Alex, Greg, Neo, Paul near breaking,
+Clara, 67 Pirate, Mindy Starchild, Rumble, Zen, ToddLLM) and DEAD (Tunner, Fun Bot, Garnold, Brud, Mr.
+Tree, Karuto, Mervin, Zara Goldheart, Lexicon, El Quwera, Victoria, Vaspra, Cloudy, King Jet, Lica, TIM the
+Invisible Man); the footer note reads "Mervin gave his own life to Simon so Mindy Starchild would live",
+under the pale-blue "▓ THE STATUS CODEX — EVERY FATE FILED ▓" HUD tag](screenshots/31-status-codex.png)
+
+- **The full roster, drawn as a dossier.** A new climb era opens the SCF Full Status Codex: a two-column
+  board that files every named being Toby gave a fate to, under **CRAZY · DEMONED · .EXE · CORRUPT ·
+  INFECTED · ALIVE · DEAD**. Each status group has a colored chip, a member count, and its list; the codex
+  scans in group by group.
+- **Every status faithful to Toby's list.** CRAZY = Simon, Sumona. DEMONED = Oren, Black, Pinki, Durple.
+  .EXE = Gray, Wenda, Clukr, Mr. Fun Computer, Pupahya, Luigi Green, 67 Kid, Endless Staircase. CORRUPT =
+  Mr. Sun → Blackhole. INFECTED = Raddy, 67 Dog, Gewlis. ALIVE = Jevin, Vineria (barely), Sky, Alex, Greg,
+  Neo, Paul (near breaking), Clara, 67 Pirate, Mindy Starchild, Rumble, Zen, ToddLLM. DEAD = Tunner, Fun
+  Bot, Garnold, Brud, Mr. Tree, Karuto, Mervin, Zara Goldheart, Lexicon, El Quwera, Victoria, Vaspra,
+  Cloudy, King Jet, Lica, TIM.
+- **Objects & forces.** A separate block records the non-character fates: **Star Steed is RUNNING, The
+  Throne is DESTROYED, and the SCF Soldiers/Scientists are 76.9% ALIVE.**
+- **The special fates as a cycling SCF note.** A footer line rotates through the details Toby called out:
+  **Mr. Sun became a BLACKHOLE when corrupted; Mervin gave his own life to Simon so Mindy Starchild would
+  live; Mindy trusts Rumble to spare her kingdom, Star Steed, and the throne; Paul is one step from the
+  straw that breaks the camel's back; Gray is .EXE and one of the most dangerous; Mr. Black and Black are
+  the same, and TIM = The Invisible Man.**
+- **The CODEX meter.** Climb with purpose to **seal every fate** (catalog the whole codex); fill it for
+  **★ CODEX SEALED — EVERY FATE FILED ★** (+5 emeralds). Standing still drains it.
+- Title subtitle, start-screen lore lines, the era HUD tag, and the death-screen lore sting all updated for
+  the Status Codex. Added the `codex` screenshot scene to `tools/capture_screenshot.py`. Everything is
+  additive; all prior eras (including the Danger Index) are intact.
+
 ## 2026-06-18 — The Danger Index (Lore 29 cont.)
 
 Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Simon (😾⚡) came over, his danger level
