@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-19 — BORT joins the index, 5th at 996 (Lore 29 cont.)
+
+Based on Toby's June 19 lore: *"Bort (a smooth rubbery bouncy gray horror bear thing) appeared. Bort is alive,
+and danger level is 996, under Pinki. Bort acts playfully and makes this music 'Borty Borty Bort Bort Borty
+Borty Bort Bort' while dancing, but when a victim gets too close, Bort stands up dramatically and chases the
+victim like crazy, when he reaches the victim, Bort attacks the victim like crazy and eats the soul, the body
+rots away, unless Simon finds the body and sprays it. Simon is way higher than Bort... Simon will keep
+attacking and he will win each time."*
+
+![Lore 29 — BORT JOINS THE INDEX: the SCF Danger Index now reads "ALL SEVENTEEN FILED." BORT — 996 — ALIVE
+slots in at #5, just under PINKI 997 and above JEVIN 990.5, with his own danger bar. On the right, Bort the
+smooth gray rubber horror bear has stood up out of his "Borty Borty Bort Bort" dance and is mid-LUNGE, eyes
+flushed red, the banner reading "BORT LUNGES — CHASES LIKE CRAZY," tagged "BORT — 996 — 5TH · looks safe
+until it isn't · just under Pinki." Simon still tops the index at 1004.04](screenshots/33-bort.png)
+
+- **Bort enters the Danger Index at #5.** A new row, `BORT — 996 — ALIVE`, slots between Pinki (997) and Jevin
+  (990.5), so the board now files **seventeen**. He is rubber-gray on the list, ALIVE like Jevin (he holds a
+  number while alive), and his danger bar sits a hair under Pinki's.
+- **The fake-safe lure, animated.** On the right of the index Bort runs his cycle: **DANCE** — a squat
+  bouncing rubber blob bobbing to a "♪ Borty Borty Bort Bort ♪" caption with little music notes; then he
+  **LUNGES** — rears up tall, eyes flush red, leans at the nearest victim and "chases like crazy"; then he
+  **eats the soul** (a pale wisp pulled into his maw, "THE BODY ROTS"); then **Simon sprays the body** (a
+  blue mist, since Simon is way higher than Bort) and Bort drops back to the harmless dance.
+- **Proximity bait.** The dance flips to a lunge faster when the climber is close to the index, so getting
+  near Bort is what trips the ambush, exactly Toby's "when a victim gets too close" rule.
+- **Ticker + tags.** The event ticker now scans Bort's lines ("BORT 996 — 5TH, JUST UNDER PINKI", "'BORTY
+  BORTY BORT BORT' — THEN HE LUNGES", "BORT EATS THE SOUL · THE BODY ROTS") alongside the rest of the index.
+
 ## 2026-06-19 — The Danger Index, all sixteen filed (Lore 29 cont.)
 
 Based on Toby's June 19 lore (the "Lore 29" thread continued, completing the danger ranking): *"Only .EXEs

@@ -772,7 +772,7 @@ SCENES = {
         // shirt, pants, hat) has just reached Simon, the mask is lifting, and he is BURNING.
         if (typeof danger!=='undefined'){
           danger.active=true; danger.done=false; danger.glow=1; danger.t=4.0;
-          danger.anim=2.2; danger.logged=16; danger.scan=2.0;
+          danger.anim=2.2; danger.logged=17; danger.scan=2.0;
           danger.phase='lift'; danger.phaseT=0.5; danger.mask=0.0; danger.burn=0.55; danger.imApproach=1;
           danger.flames=[];
           for (var f=0;f<22;f++){ danger.flames.push({ x:W*0.80 + (f%7-3)*6, y:cameraY+H*0.52 + (f%5-2)*5,
@@ -780,11 +780,36 @@ SCENES = {
         }
         if (typeof dangerM!=='undefined'){ dangerM=0.62; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof danger!=='undefined'){ danger.mask=0.0; danger.burn=0.55; danger.logged=16; danger.imApproach=1; }
+        if (typeof danger!=='undefined'){ danger.mask=0.0; danger.burn=0.55; danger.logged=17; danger.imApproach=1; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.3; }
         if (typeof glitch!=='undefined'){ glitch=0.3; }
         if (typeof showTaunt==='function'){ showTaunt('The Danger Index, all sixteen filed. Simon 1004.04 (the .04 hides 404), CRAZY. Then the .EXE and Infected get numbers: Wenda 949.2, Clunkr 949, Gray and Luigi Green 940, Pupahya 930, Raddy 910, Mr. Fun Computer 900, Gewlis 850, Endless Staircase 800, 67 Kid 790. Only .EXE, Crazy, and Infected can rank.'); tauntT=9; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "bort": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE DANGER INDEX with BORT mid-lunge — he has stood up dramatically and is chasing the victim.
+        if (typeof danger!=='undefined'){
+          danger.active=true; danger.done=false; danger.glow=1; danger.t=4.0;
+          danger.anim=2.2; danger.logged=17; danger.scan=2.0;
+          danger.phase='list'; danger.phaseT=2.6; danger.mask=1; danger.burn=0; danger.imApproach=0; danger.flames=[];
+          if (danger.bort){ danger.bort.phase='lunge'; danger.bort.t=0.6; danger.bort.lunge=1; danger.bort.bounce=1.2; danger.bort.song=1.0; danger.bort.soul=0; danger.bort.spray=0; }
+        }
+        if (typeof dangerM!=='undefined'){ dangerM=0.5; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof danger!=='undefined' && danger.bort){ danger.bort.phase='lunge'; danger.bort.lunge=1; danger.logged=17; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof showTaunt==='function'){ showTaunt('Bort: a smooth rubbery bouncy gray horror bear, danger 996, 5th just under Pinki. He dances to "Borty Borty Bort Bort," but when a victim gets too close he stands up dramatically and chases like crazy, eats the soul, and the body rots, unless Simon finds it and sprays it.'); tauntT=9; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,

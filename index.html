@@ -561,7 +561,13 @@ function reset(){
              // who says "It's ok." and destroys with five slaps — but when he steps to Simon, the mask
              // lifts for one instant and the Invisible Man BURNS.
              logged:0, scan:0, mask:1, burn:0, imX:0, imApproach:0, flames:[],
-             phase:'list', phaseT:2.6, eventT:2.0 };
+             phase:'list', phaseT:2.6, eventT:2.0,
+             // Lore 29 cont. (June 19) — BORT, a smooth rubbery bouncy gray horror bear, danger 996,
+             // 5th just under Pinki. He acts playful and dances to "Borty Borty Bort Bort", but when a
+             // victim gets too close he stands up dramatically and chases like crazy, eats the soul, and
+             // the body rots — unless Simon finds it and sprays it. Simon is way higher than Bort, so on
+             // the index Simon's spray restores the body and Bort drops back to his harmless dance.
+             bort:{ phase:'dance', t:0, bounce:0, song:0, lunge:0, soul:0, spray:0 } };
   dangerH = plagueH + 1100;
   dangerM = 0.25;  // THE DANGER INDEX meter: climb with purpose to log the whole ranking (catalog the danger levels) before the Invisible Man closes in
   codex = { active:false, t:0, glow:0, done:false, held:false, anim:0,
@@ -4337,6 +4343,7 @@ const DANGER_ROSTER = [
   { n:'OREN',             d:'1004',    s:'DEMONIZED', col:'#b98cff', mx:0.985 },
   { n:'BLACK',            d:'1000',    s:'DEMONIZED', col:'#9aa0ad', mx:0.97 },
   { n:'PINKI',            d:'997',     s:'DEMONIZED', col:'#ff7bd0', mx:0.95 },
+  { n:'BORT',             d:'996',     s:'ALIVE',     col:'#9aa6b0', mx:0.94 },
   { n:'JEVIN',            d:'990.5',   s:'ALIVE',     col:'#9affc8', mx:0.93 },
   { n:'SUMONA',           d:'950',     s:'CRAZY',     col:'#ff5c8a', mx:0.86 },
   { n:'WENDA',            d:'949.2',   s:'.EXE',      col:'#5cff9a', mx:0.85 },
@@ -4380,6 +4387,33 @@ function updateDanger(dt){
     }
   }
 
+  // ---- BORT's lure cycle: DANCE ("Borty Borty Bort Bort") → LUNGE (chases, eats the soul, body rots) →
+  //      SIMON SPRAYS the body → back to the harmless dance. The dance is the bait; the lunge is the danger. ----
+  const b = danger.bort;
+  b.t += dt; b.bounce = (b.bounce||0) + dt*8; b.song = (b.song||0) + dt;
+  if(b.phase==='dance'){
+    b.lunge = Math.max(0, (b.lunge||0) - dt*2);
+    // close enough? the player walking past the index is the "victim getting too close" — also a steady cadence
+    const near = Math.abs(player.x - W*0.50) < 120;
+    if(b.t > (near ? 2.2 : 3.6)){
+      b.phase='lunge'; b.t=0; AUDIO.zap(); shake=Math.max(shake,4);
+      showTaunt('Bort stands up dramatically and chases the victim like crazy.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'BORT: "BORTY BORTY BORT BORT" — THEN HE LUNGES', col:'#cdd6df' });
+    }
+  } else if(b.phase==='lunge'){
+    b.lunge = Math.min(1, (b.lunge||0) + dt*2.4);
+    if(b.t > 1.3){ b.phase='soul'; b.t=0; b.soul=1; glitch=Math.max(glitch,0.25);
+      floaters.push({ x:player.x, y:player.y-40, t:0, txt:'BORT EATS THE SOUL · THE BODY ROTS', col:'#7fae6e' }); }
+  } else if(b.phase==='soul'){
+    b.soul = Math.max(0, (b.soul||0) - dt*0.9);
+    if(b.t > 1.0){ b.phase='spray'; b.t=0; b.spray=1;
+      showTaunt('Simon is way higher than Bort. He finds the body and sprays it.');
+      for(let i=0;i<10;i++) particles.push(spark(W*0.50, cameraY+H*0.62, '#7be0ff')); }
+  } else { // 'spray' → body restored, Bort drops back to the harmless dance
+    b.spray = Math.max(0, (b.spray||0) - dt*1.2);
+    if(b.t > 0.9){ b.phase='dance'; b.t=0; b.lunge=0; }
+  }
+
   // THE DANGER INDEX meter — climb with purpose to log the whole ranking before the Invisible Man closes in
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
   dangerM = Math.max(0, Math.min(1, dangerM + (moving ? dt*0.05 : -dt*0.03)));
@@ -4388,9 +4422,10 @@ function updateDanger(dt){
     const ev = ['THE DANGER INDEX','SIMON 1004.04 — THE .04 HIDES 404','SIMON & SUMONA: CRAZY STATUS',
       'OREN 1004 — SOUND BENDS REALITY','BLACK 1000 · PINKI 997 — DEMONIZED','JEVIN 990.5 — STILL ALIVE',
       'SUMONA 950 — DAUGHTER OF OREN & PINKI','SUMONA HUNTS EVERYONE','WHATEVER SIMON SEES MELTS',
+      'BORT 996 — 5TH, JUST UNDER PINKI','"BORTY BORTY BORT BORT" — THEN HE LUNGES','BORT EATS THE SOUL · THE BODY ROTS',
       'WENDA 949.2 · CLUNKR 949 — .EXE','GRAY 940 · LUIGI GREEN 940 — .EXE','PUPAHYA 930 — .EXE',
       'RADDY 910 · GEWLIS 850 — INFECTED','MR. FUN COMPUTER 900 — .EXE','ENDLESS STAIRCASE 800 — .EXE',
-      '67 KID 790 — LAST OF THE .EXE','ONLY .EXE · CRAZY · INFECTED RANK','ALL SIXTEEN FILED',
+      '67 KID 790 — LAST OF THE .EXE','ONLY .EXE · CRAZY · INFECTED RANK','ALL SEVENTEEN FILED',
       'THE INVISIBLE MAN: FIVE SLAPS','"IT\'S OK." — THEN THE MASK LIFTS','LOG THE WHOLE RANKING'];
     floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
   }
@@ -4421,7 +4456,7 @@ function drawDanger(){
   ctx.strokeRect(px, py-24, pw, rowH*DANGER_ROSTER.length + 40);
   ctx.textAlign='left'; ctx.fillStyle = `rgba(255,226,74,${0.92*g})`;
   ctx.font='800 11px ui-monospace,monospace';
-  ctx.fillText('SCF DANGER INDEX — ALL SIXTEEN FILED', px+10, py-9);
+  ctx.fillText('SCF DANGER INDEX — ALL SEVENTEEN FILED', px+10, py-9);
   // the status color used for the .EXE / Infected tags + bar accents
   const statCol = s => s==='CRAZY' ? '#ff5c8a' : s==='ALIVE' ? '#9affc8'
     : s==='.EXE' ? '#5cff9a' : s==='INFECTED' ? '#b6e35a' : '#b98cff';
@@ -4512,7 +4547,88 @@ function drawDanger(){
   ctx.fillStyle=`rgba(240,235,255,${0.7*g})`; ctx.font='700 8px ui-monospace,monospace';
   ctx.fillText('most dangerous · whatever he sees melts', scx, sy0-18);
 
+  // ---- BORT — a smooth rubbery bouncy gray horror bear, danger 996, on the index floor between Simon and the list ----
+  drawBort(top, g, an);
+
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+function drawBort(top, g, an){
+  const b = danger.bort; if(!b) return;
+  const bx = W*0.50, floor = top + H - 64;
+  const lunge = b.lunge||0, soul = b.soul||0, spray = b.spray||0;
+  const dancing = b.phase==='dance';
+  // in the dance he is a squat bouncing rubber blob; in the lunge he rears up tall and leans at the player
+  const bounce = dancing ? Math.abs(Math.sin(b.bounce))*7 : 0;
+  const rear = lunge;                                   // 0 = squat & playful, 1 = stood up & attacking
+  const by = floor - bounce - rear*18;
+  const bw = 26 - rear*6, bh = 22 + rear*26;            // stretches tall when he stands
+  const lean = Math.sign((player.x||W*0.5) - bx) * rear * 10;
+  ctx.save();
+  ctx.globalAlpha = g;
+  // rubbery gray body — flushes an angry red as he lunges
+  const bodyCol = `rgb(${Math.round(154+70*rear)},${Math.round(166-60*rear)},${Math.round(176-90*rear)})`;
+  ctx.fillStyle = bodyCol;
+  ctx.strokeStyle = `rgba(40,46,54,${0.6*g})`; ctx.lineWidth = 1.5;
+  // body (rounded rubber lump)
+  ctx.beginPath(); ctx.ellipse(bx+lean, by, bw, bh, 0, 0, 6.28); ctx.fill(); ctx.stroke();
+  // two round ears
+  ctx.beginPath(); ctx.arc(bx+lean-bw*0.7, by-bh*0.85, 6, 0, 6.28);
+  ctx.arc(bx+lean+bw*0.7, by-bh*0.85, 6, 0, 6.28); ctx.fill(); ctx.stroke();
+  // belly sheen (the smooth rubber highlight)
+  ctx.fillStyle = `rgba(255,255,255,${0.10*g})`;
+  ctx.beginPath(); ctx.ellipse(bx+lean-bw*0.3, by-bh*0.2, bw*0.35, bh*0.4, 0, 0, 6.28); ctx.fill();
+  // eyes — friendly dots when dancing, wide hungry rings when lunging
+  ctx.fillStyle = lunge>0.4 ? '#ff3b3b' : '#1a1f26';
+  const er = 2.4 + rear*1.6;
+  ctx.beginPath(); ctx.arc(bx+lean-7, by-bh*0.45, er, 0, 6.28); ctx.arc(bx+lean+7, by-bh*0.45, er, 0, 6.28); ctx.fill();
+  // mouth — little smile when playful, gaping maw when he eats the soul
+  ctx.strokeStyle = '#1a1f26'; ctx.lineWidth = 2;
+  if(lunge>0.4 || soul>0.05){
+    ctx.fillStyle = `rgba(20,8,12,${g})`;
+    ctx.beginPath(); ctx.ellipse(bx+lean, by-bh*0.05, 6, 7+soul*4, 0, 0, 6.28); ctx.fill();
+  } else {
+    ctx.beginPath(); ctx.arc(bx+lean, by-bh*0.18, 5, 0.15*Math.PI, 0.85*Math.PI); ctx.stroke();
+  }
+  ctx.restore();
+
+  // the soul being pulled in — a pale wisp drawn up into Bort's maw
+  if(soul>0.05){
+    ctx.save(); ctx.globalAlpha = g*soul;
+    ctx.fillStyle = '#bfe9ff';
+    for(let i=0;i<5;i++){ const t=(b.song*2+i*0.5)%1; const sy=by+18-t*22;
+      ctx.beginPath(); ctx.arc(bx+lean+Math.sin(t*6+i)*5, sy, 2.2*(1-t)+0.6, 0, 6.28); ctx.fill(); }
+    ctx.restore();
+  }
+  // Simon's spray — a blue mist that restores the rotting body
+  if(spray>0.05){
+    ctx.save(); ctx.globalAlpha = g*spray;
+    ctx.fillStyle = '#7be0ff';
+    for(let i=0;i<8;i++){ ctx.beginPath();
+      ctx.arc(bx+lean + Math.cos(an*3+i)*14, by + Math.sin(an*3+i)*12, 2+1.5*spray, 0, 6.28); ctx.fill(); }
+    ctx.restore();
+  }
+
+  // the song — "Borty Borty Bort Bort" bobs above him while he dances; the tag flips to a warning on the lunge
+  ctx.textAlign='center';
+  if(dancing){
+    const wob = Math.sin(b.song*5)*3;
+    ctx.fillStyle = `rgba(205,214,223,${(0.7+0.3*Math.abs(Math.sin(b.song*4)))*g})`;
+    ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('♪ Borty Borty Bort Bort ♪', bx, by-bh-16+wob);
+    // little bouncing music notes
+    ctx.fillStyle = `rgba(180,200,160,${0.7*g})`; ctx.font='10px ui-monospace,monospace';
+    ctx.fillText('♫', bx-26+Math.sin(b.song*6)*4, by-bh-6);
+    ctx.fillText('♪', bx+26+Math.cos(b.song*6)*4, by-bh-10);
+  } else {
+    ctx.fillStyle = `rgba(255,90,90,${g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText(soul>0.05 ? 'SOUL EATEN — THE BODY ROTS' : 'BORT LUNGES — CHASES LIKE CRAZY', bx, by-bh-14);
+  }
+  ctx.fillStyle = `rgba(154,166,176,${0.92*g})`; ctx.font='800 10px ui-monospace,monospace';
+  ctx.fillText('BORT — 996 — 5TH', bx, floor+16);
+  ctx.fillStyle = `rgba(160,200,150,${0.7*g})`; ctx.font='700 7px ui-monospace,monospace';
+  ctx.fillText('looks safe until it isn\'t · just under Pinki', bx, floor+26);
+  ctx.globalAlpha = g;
 }
 
 /* =========================================================================
