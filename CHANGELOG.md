@@ -4,6 +4,52 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-18 — The Danger Index (Lore 29 cont.)
+
+Based on Toby's June 18 lore (the "Lore 29" thread continued): *"Simon (😾⚡) came over, his danger level
+reached to Ecluid and it's agression reaches to Genocide... Simon's Danger Level is 1004.04... Oren (1004
+Danger Level, 2nd highest since Simon is just 0.04 (it is to make the 404 in 1004.04) more Danger Level,
+Simon is most dangerous and powerful, whatever he sees melts... but Simon however can make Lightning strike
+the whole screen)... Black is Demonized (1000 Danger Level, 3rd most powerful and most dangerous), Pinki (997
+Danger Level, 4th)... Jevin is 5th most dangerous with 990.5 Danger Level... Sumona's danger level is 950 (6th
+most dangerous and powerful)... Sumona is now hunting all other characters and is the daughter of Oren and
+Pinki... Simon and Sumona are the only 2 with Crazy status... Wenda is .EXE, and Raddy was infected by Simon
+as a punishment... Tunner is dead, Fun Bot is dead, Garnold is dead. The Invisable Man is a floating shirt
+and pants and hat... he makes the target think they are crazy, then the I.V. comes up and then the target is
+destroyed with 5 slaps. Simon VS TIV: Simon looks shy, Invisable Man walks closer and says 'It's ok.', Simon
+gets angry and he takes his mask off and Invisable Man was burned."* SCF stops chasing him scene by scene and
+posts the **final ranking**: a danger-level index of who is left, what they have become, and where Simon sits
+at the very top.
+
+![Lore 29 — THE DANGER INDEX: the SCF final-ranking board on the left listing SIMON 1004.04 (CRAZY), OREN 1004,
+BLACK 1000, PINKI 997 (all DEMONIZED), JEVIN 990.5 (ALIVE), and SUMONA 950 (CRAZY) with danger-level bars and
+status tags, the footer noting "1004.04 → the .04 hides 404 · only SIMON & SUMONA are CRAZY" and the fallen
+(WENDA .EXE · RADDY INFECTED · TUNNER · FUN BOT · GARNOLD — DEAD); on the right Simon labeled "SIMON — 1004.04
+— CRAZY · most dangerous · whatever he sees melts" with the floating shirt-pants-hat Invisible Man burning
+beside him as the mask lifts, under the amber "▓ THE DANGER INDEX — SCF FINAL RANKING ▓" HUD tag and the INDEX
+meter](screenshots/30-danger-index.png)
+
+- **The final ranking, drawn as a board.** A new climb era posts the SCF Danger Index: six ranked rows —
+  **Simon 1004.04 · Oren 1004 · Black 1000 · Pinki 997 · Jevin 990.5 · Sumona 950** — each with a danger-level
+  bar, a status tag (**CRAZY**, **DEMONIZED**, or **ALIVE**), and its number. The board scans in row by row.
+- **The 404 hidden in Simon's number.** Simon sits at **1004.04**, and the footer calls out Toby's own joke:
+  the trailing **.04 hides "404"**, and **only Simon and Sumona** carry the **CRAZY** status.
+- **Whatever he sees melts; his lightning hits the whole screen.** Simon is drawn at the top of the index with
+  his cold yellow eyes and the beak mask, labeled *most dangerous · whatever he sees melts*.
+- **Sumona, daughter of Oren and Pinki.** She is in the ranking at 950, CRAZY, with the note that she is now
+  hunting every other character.
+- **The fallen and the changed.** A footer line records the rest: **Wenda is .EXE, Raddy was infected** as a
+  punishment, and **Tunner, Fun Bot, and Garnold are dead.**
+- **The Invisible Man.** A new character walks the index: a **floating shirt, pants, and hat** (no body) who
+  drifts up saying *"It's ok."* — then in the **Simon VS TIV** beat the **mask lifts for one instant and the
+  Invisible Man burns** (a flame burst where he stood).
+- **The INDEX meter.** Climb with purpose to **log the whole ranking** (catalog every danger level) before the
+  Invisible Man closes in; fill it for **★ INDEX LOGGED — RANKING CATALOGUED ★** (+5 emeralds). Standing still
+  drains it.
+- Title subtitle, start-screen lore lines, the era HUD tag, and the death-screen lore sting all updated for the
+  Danger Index. Added the `danger` screenshot scene to `tools/capture_screenshot.py`. Everything is additive;
+  all prior eras (including the Plague Cycle) are intact.
+
 ## 2026-06-18 — The Plague Cycle (Lore 29)
 
 Based on Toby's June 18 lore (the "Lore 29" thread): *"Simon decides that if almost everyone is dead and that

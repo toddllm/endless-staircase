@@ -443,6 +443,7 @@ let wall, wallH, wallM;
 let smooth, smoothH, smoothM;
 let hallu, halluH, halluM;
 let plague, plagueH, plagueM;
+let danger, dangerH, dangerM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -549,6 +550,19 @@ function reset(){
              victims:[], converts:[], table:{ t:0, fate:'', spray:0 }, victimT:0.8, eventT:2.0 };
   plagueH = halluH + 1100;
   plagueM = 0.25;  // the PLAGUE-KING PROTOCOL meter: climb with purpose to keep the protocol (no direct contact, no mask-removal events); standing in his touch-range lets him "cure" you
+  danger = { active:false, t:0, glow:0, done:false, held:false, anim:0,
+             // Lore 29 cont. (June 18) — THE DANGER INDEX. With almost everyone dead, SCF posts the final
+             // ranking. Simon tops it at 1004.04 (the .04 hides "404"), CRAZY: whatever he sees melts and
+             // his lightning strikes the whole screen. Oren 1004 (his sound bends reality into a hole),
+             // Black 1000, Pinki 997 are DEMONIZED; Jevin 990.5 is still ALIVE; Sumona 950, CRAZY, the
+             // daughter of Oren and Pinki, is hunting everyone. Only Simon and Sumona hold the CRAZY
+             // status. A new threat walks the index: THE INVISIBLE MAN, a floating shirt, pants, and hat
+             // who says "It's ok." and destroys with five slaps — but when he steps to Simon, the mask
+             // lifts for one instant and the Invisible Man BURNS.
+             logged:0, scan:0, mask:1, burn:0, imX:0, imApproach:0, flames:[],
+             phase:'list', phaseT:2.6, eventT:2.0 };
+  dangerH = plagueH + 1100;
+  dangerM = 0.25;  // THE DANGER INDEX meter: climb with purpose to log the whole ranking (catalog the danger levels) before the Invisible Man closes in
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -609,6 +623,8 @@ function isSmooth(){ return !!(smooth && (smooth.active || smooth.done)); }
 function isHallu(){ return !!(hallu && (hallu.active || hallu.done)); }
 // Lore 29 — after the Hallucination Era, Simon crowns himself the Plague King: THE PLAGUE CYCLE
 function isPlague(){ return !!(plague && (plague.active || plague.done)); }
+// Lore 29 cont. — after the Plague Cycle, SCF posts the final ranking: THE DANGER INDEX
+function isDanger(){ return !!(danger && (danger.active || danger.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1255,6 +1271,31 @@ function update(dt){
   if(plague.glow < (isPlague() ? 1 : 0))
     plague.glow = Math.min(1, plague.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 18) — THE DANGER INDEX. With almost everyone dead, SCF posts the final
+         ranking. Simon tops it at 1004.04 (the .04 hides "404"), CRAZY: whatever he sees melts and his
+         lightning strikes the whole screen. Oren 1004 (his sound bends reality into a hole), Black 1000,
+         and Pinki 997 are DEMONIZED; Jevin 990.5 is still ALIVE; Sumona 950, CRAZY, the daughter of Oren
+         and Pinki, hunts everyone. Only Simon and Sumona hold CRAZY. A new threat walks the index: THE
+         INVISIBLE MAN, a floating shirt, pants, and hat who says "It's ok." and kills with five slaps —
+         but when he steps to Simon, the mask lifts for one instant and the Invisible Man BURNS. ---- */
+  if(plague.done && !danger.active && !danger.done && height > dangerH){
+    danger.active = true; danger.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE DANGER INDEX'; warnT = 2.8;
+    showTaunt('SCF posts the final ranking. Simon: 1004.04 — the .04 hides 404 — CRAZY, most dangerous.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'DANGER INDEX — SIMON 1004.04', col:'#ffe24a' });
+    AUDIO.zap();
+  }
+  if(danger.active){
+    danger.t += dt;
+    if(danger.t>1.6 && danger.t<1.68) showTaunt('Oren 1004: his sound bends reality into a hole. Black 1000 and Pinki 997 are DEMONIZED.');
+    if(danger.t>3.4 && danger.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(danger.t>3.4 && danger.t<3.48) showTaunt('Sumona 950, CRAZY, daughter of Oren and Pinki, hunts everyone. Only she and Simon are CRAZY.');
+    if(danger.t > 5.4){ danger.active = false; danger.done = true; }
+  }
+  if(danger.glow < (isDanger() ? 1 : 0))
+    danger.glow = Math.min(1, danger.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1271,7 +1312,8 @@ function update(dt){
   if(isWall() && !isSmooth()) updateWall(dt);
   if(isSmooth() && !isHallu()) updateSmooth(dt);
   if(isHallu() && !isPlague()) updateHallu(dt);
-  if(isPlague()) updatePlague(dt);
+  if(isPlague() && !isDanger()) updatePlague(dt);
+  if(isDanger()) updateDanger(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2359,7 +2401,8 @@ function draw(){
   if(isWall() && !isSmooth() && wall.glow>0.02) drawWall();
   if(isSmooth() && !isHallu() && smooth.glow>0.02) drawSmooth();
   if(isHallu() && !isPlague() && hallu.glow>0.02) drawHallu();
-  if(isPlague() && plague.glow>0.02) drawPlague();
+  if(isPlague() && !isDanger() && plague.glow>0.02) drawPlague();
+  if(isDanger() && danger.glow>0.02) drawDanger();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -4232,6 +4275,186 @@ function drawPlague(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* =========================================================================
+   Lore 29 cont. — THE DANGER INDEX
+   SCF posts the final ranking. Simon tops it at 1004.04 (the .04 hides "404"),
+   CRAZY: whatever he sees melts and his lightning hits the whole screen. Oren
+   1004 (his sound bends reality into a hole), Black 1000, Pinki 997 are
+   DEMONIZED; Jevin 990.5 is still ALIVE; Sumona 950, CRAZY, the daughter of
+   Oren and Pinki, hunts everyone. Only Simon and Sumona hold CRAZY. A new
+   threat walks the index: THE INVISIBLE MAN, a floating shirt, pants, and hat
+   who says "It's ok." and kills with five slaps — but when he steps to Simon,
+   the mask lifts for one instant and the Invisible Man BURNS. The INDEX meter
+   rewards logging the whole ranking before the Invisible Man closes in.
+   ========================================================================= */
+const DANGER_ROSTER = [
+  { n:'SIMON',  d:'1004.04', s:'CRAZY',     col:'#ffe24a', mx:1.00 },
+  { n:'OREN',   d:'1004',    s:'DEMONIZED', col:'#b98cff', mx:0.985 },
+  { n:'BLACK',  d:'1000',    s:'DEMONIZED', col:'#9aa0ad', mx:0.97 },
+  { n:'PINKI',  d:'997',     s:'DEMONIZED', col:'#ff7bd0', mx:0.95 },
+  { n:'JEVIN',  d:'990.5',   s:'ALIVE',     col:'#9affc8', mx:0.93 },
+  { n:'SUMONA', d:'950',     s:'CRAZY',     col:'#ff5c8a', mx:0.86 },
+];
+function updateDanger(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  danger.anim = (danger.anim||0) + dt;
+  danger.logged = Math.min(DANGER_ROSTER.length, (danger.logged||0) + dt*1.4);   // the index scans in row by row
+  danger.scan = (danger.scan||0) + dt;
+  if(danger.phase!=='lift') danger.mask = Math.min(1, (danger.mask||0) + dt*2.0);  // mask grows back between encounters
+  danger.burn = Math.max(0, (danger.burn||0) - dt*0.7);
+  if(danger.phase==='approach') danger.imApproach = Math.min(1, (danger.imApproach||0) + dt*0.6);
+  for(const f of danger.flames){ f.t += dt; f.y -= (f.vy||20)*dt; f.x += (f.vx||0)*dt; }
+  danger.flames = danger.flames.filter(f => f.t < f.life);
+
+  // ---- the cycle: LIST → INVISIBLE MAN APPROACHES → MASK LIFTS (he BURNS) → back to LIST ----
+  danger.phaseT -= dt;
+  if(danger.phaseT <= 0){
+    if(danger.phase==='list'){
+      danger.phase='approach'; danger.phaseT=2.0; danger.imApproach=0;
+      showTaunt('THE INVISIBLE MAN — a floating shirt, pants, and hat — walks up: "It\'s ok."');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE INVISIBLE MAN: "IT\'S OK."', col:'#dfe7ff' });
+    } else if(danger.phase==='approach'){
+      // he reaches Simon; the mask lifts for one instant and he BURNS
+      danger.phase='lift'; danger.phaseT=0.6; danger.mask=0; danger.burn=1; danger.imApproach=1;
+      shake=Math.max(shake,9); glitch=Math.max(glitch,0.35); AUDIO.zap();
+      for(let i=0;i<22;i++) danger.flames.push({ x: W*0.80 + rnd(-12,12), y: cameraY+H*0.52 + rnd(-10,10),
+        t:0, life: rnd(0.5,1.1), vy: rnd(16,38), vx: rnd(-10,10) });
+      showTaunt('Simon takes the mask off for one second. The Invisible Man is burned.');
+    } else { // 'lift' → back to the list
+      danger.phase='list'; danger.phaseT=rnd(2.4,3.4); danger.imApproach=0;
+    }
+  }
+
+  // THE DANGER INDEX meter — climb with purpose to log the whole ranking before the Invisible Man closes in
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  dangerM = Math.max(0, Math.min(1, dangerM + (moving ? dt*0.05 : -dt*0.03)));
+  danger.eventT -= dt;
+  if(danger.eventT <= 0){ danger.eventT = rnd(2.2,3.6);
+    const ev = ['THE DANGER INDEX','SIMON 1004.04 — THE .04 HIDES 404','SIMON & SUMONA: CRAZY STATUS',
+      'OREN 1004 — SOUND BENDS REALITY','BLACK 1000 · PINKI 997 — DEMONIZED','JEVIN 990.5 — STILL ALIVE',
+      'SUMONA 950 — DAUGHTER OF OREN & PINKI','SUMONA HUNTS EVERYONE','WHATEVER SIMON SEES MELTS',
+      'WENDA IS .EXE · RADDY WAS INFECTED','TUNNER · FUN BOT · GARNOLD — DEAD',
+      'THE INVISIBLE MAN: FIVE SLAPS','"IT\'S OK." — THEN THE MASK LIFTS','LOG THE WHOLE RANKING'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
+  }
+  if(dangerM >= 1 && !danger.held){
+    danger.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You logged the whole Danger Index. Every danger level catalogued, the Invisible Man kept off.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ INDEX LOGGED — RANKING CATALOGUED ★', col:'#fff2b0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffe24a','#ff5c8a','#b98cff'])));
+    AUDIO.zap();
+  }
+}
+
+function drawDanger(){
+  const g = danger.glow||0, top = cameraY, an = danger.anim||0;
+  ctx.save();
+  // a cold SCF dossier wash — deep ink with an amber index glow
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(14,10,6,${0.42*g})`);
+  bg.addColorStop(1, `rgba(8,6,10,${0.40*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  // ---- the ranking board, on the left ----
+  const px = W*0.05, pw = W*0.55, py = top + H*0.22, rowH = 30;
+  ctx.fillStyle = `rgba(20,16,12,${0.74*g})`;
+  ctx.strokeStyle = `rgba(255,226,74,${0.5*g})`; ctx.lineWidth=1.5;
+  ctx.fillRect(px, py-26, pw, rowH*DANGER_ROSTER.length + 44);
+  ctx.strokeRect(px, py-26, pw, rowH*DANGER_ROSTER.length + 44);
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(255,226,74,${0.92*g})`;
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText('SCF DANGER INDEX — FINAL RANKING', px+12, py-10);
+
+  for(let i=0;i<DANGER_ROSTER.length;i++){
+    const appear = Math.max(0, Math.min(1, (danger.logged||0) - i));
+    if(appear <= 0) break;
+    const r = DANGER_ROSTER[i], ry = py + i*rowH + 12;
+    ctx.globalAlpha = g*Math.max(0.15, appear);
+    // rank + name
+    ctx.fillStyle = r.col; ctx.font='800 12px ui-monospace,monospace'; ctx.textAlign='left';
+    ctx.fillText((i+1)+'. '+r.n, px+12, ry);
+    // danger bar
+    const bx = px+150, bw = pw-230;
+    ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(bx, ry-9, bw, 9);
+    ctx.fillStyle = r.col; ctx.fillRect(bx, ry-9, bw*r.mx*appear, 9);
+    // the danger number
+    ctx.fillStyle = `rgba(240,235,255,${g})`; ctx.font='700 11px ui-monospace,monospace'; ctx.textAlign='right';
+    ctx.fillText(r.d, px+pw-12, ry);
+    // status tag
+    ctx.textAlign='left';
+    ctx.fillStyle = r.s==='CRAZY' ? '#ff5c8a' : (r.s==='ALIVE' ? '#9affc8' : '#b98cff');
+    ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText(r.s, px+150, ry+9);
+  }
+  ctx.globalAlpha = g;
+  // footer: the .04 = 404 note + the fallen
+  ctx.textAlign='left';
+  ctx.fillStyle = `rgba(255,226,74,${0.88*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('SIMON 1004.04 → the .04 hides 404 · only SIMON & SUMONA are CRAZY', px+12, py + DANGER_ROSTER.length*rowH + 8);
+  ctx.fillStyle = `rgba(160,150,170,${0.82*g})`;
+  ctx.fillText('WENDA .EXE · RADDY INFECTED · TUNNER · FUN BOT · GARNOLD — DEAD', px+12, py + DANGER_ROSTER.length*rowH + 20);
+
+  // ---- SIMON + THE INVISIBLE MAN, on the right ----
+  const scx = W*0.80, sFloor = top + H - 120, sy0 = sFloor - 60 + Math.sin(an*0.7)*1.5;
+  const burn = danger.burn||0;
+  // the Invisible Man: a floating shirt + pants + hat, no body — drifts toward Simon during 'approach'
+  const imBase = W*0.95, imX = imBase - (imBase - (scx+34))*(danger.imApproach||0);
+  if(burn < 0.85){
+    ctx.save();
+    ctx.globalAlpha = g*(1 - burn);
+    ctx.fillStyle = '#2a2630';                                  // hat
+    ctx.fillRect(imX-12, sy0-30, 24, 5); ctx.fillRect(imX-7, sy0-42, 14, 12);
+    ctx.fillStyle = '#cfd6e6';                                  // floating shirt
+    ctx.beginPath(); ctx.moveTo(imX-14, sy0-20); ctx.lineTo(imX+14, sy0-20);
+    ctx.lineTo(imX+11, sy0+6); ctx.lineTo(imX-11, sy0+6); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = `rgba(8,6,10,${g})`; ctx.fillRect(imX-5, sy0-22, 10, 5);   // the no-head collar gap
+    ctx.fillStyle = '#3a4256';                                  // pants
+    ctx.fillRect(imX-10, sy0+6, 8, 22); ctx.fillRect(imX+2, sy0+6, 8, 22);
+    ctx.restore();
+    if(danger.phase==='approach'){
+      ctx.textAlign='center'; ctx.fillStyle = `rgba(223,231,255,${g})`; ctx.font='700 10px ui-monospace,monospace';
+      ctx.fillText('"It\'s ok."', imX, sy0-50);
+    }
+  }
+  // the burn — flames where the Invisible Man was
+  for(const f of danger.flames){
+    const fa = Math.min(1,(f.life-f.t)/f.life);
+    ctx.globalAlpha = g*fa;
+    ctx.fillStyle = (f.t<f.life*0.5)?'#ffd84f':'#ff5a2b';
+    ctx.beginPath(); ctx.arc(f.x, f.y, 2.5+3*fa, 0, 6.28); ctx.fill();
+  }
+  ctx.globalAlpha = g;
+
+  // ---- SIMON, the top of the index ----
+  ctx.save();
+  ctx.shadowBlur = 12; ctx.shadowColor = '#ffe24a';
+  ctx.fillStyle = '#1a1410';
+  ctx.beginPath(); ctx.moveTo(scx-20, sy0+54); ctx.lineTo(scx-13, sy0+6); ctx.lineTo(scx+13, sy0+6);
+  ctx.lineTo(scx+20, sy0+54); ctx.closePath(); ctx.fill();
+  ctx.fillStyle = '#cfc6b0';
+  ctx.beginPath(); ctx.ellipse(scx, sy0, 15, 14, 0, 0, 6.28); ctx.fill();
+  ctx.shadowBlur = 10; ctx.fillStyle = '#ffe24a';               // the cold yellow eyes
+  ctx.beginPath(); ctx.arc(scx-5, sy0-1, 2.4, 0, 6.28); ctx.arc(scx+5, sy0-1, 2.4, 0, 6.28); ctx.fill();
+  const mk = danger.mask||0;                                    // the mask (lifts in the burn beat)
+  if(mk>0.04){
+    const lift=(1-mk)*16;
+    ctx.fillStyle = `rgba(40,46,38,${0.95*g})`; ctx.strokeStyle=`rgba(150,160,140,${0.6*g})`; ctx.lineWidth=1;
+    ctx.beginPath();
+    ctx.moveTo(scx-8, sy0-3-lift); ctx.lineTo(scx-20, sy0+6-lift);
+    ctx.lineTo(scx-6, sy0+9-lift); ctx.lineTo(scx+8, sy0+4-lift);
+    ctx.lineTo(scx+8, sy0-3-lift); ctx.closePath(); ctx.fill(); ctx.stroke();
+  }
+  ctx.restore();
+  ctx.textAlign='center';
+  ctx.fillStyle = `rgba(255,226,74,${(0.7+0.3*Math.abs(Math.sin(an*4)))*g})`; ctx.font='800 11px ui-monospace,monospace';
+  ctx.fillText('SIMON — 1004.04 — CRAZY', scx, sy0-30);
+  ctx.fillStyle=`rgba(240,235,255,${0.7*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('most dangerous · whatever he sees melts', scx, sy0-18);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -4508,6 +4731,20 @@ function drawHUD(){
     if(plague.held){ ctx.fillStyle='#bfffd8'; ctx.fillText('★ PROTOCOL HELD — NO DIRECT CONTACT ★', W/2, by-6); }
     else { ctx.fillStyle='#bfffd8'; ctx.fillText('THE PLAGUE-KING PROTOCOL — KEEP CLEAR OF THE TOUCH', W/2, by-6); }
   }
+  // THE DANGER INDEX (Lore 29 cont.) — the INDEX meter. Climb with purpose to log the whole ranking
+  // (catalog every danger level) before the Invisible Man closes in; standing still drains it.
+  if(isDanger() && danger.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,dangerM));
+    ctx.fillStyle='rgba(8,4,18,0.6)'; ctx.fillRect(bx,by,bw,7);
+    ctx.fillStyle='#1a1206'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#ff5c8a'); ig.addColorStop(0.5,'#b98cff'); ig.addColorStop(1, winFlash>0?'#fff2b0':'#ffe24a');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(danger.held){ ctx.fillStyle='#fff2b0'; ctx.fillText('★ INDEX LOGGED — RANKING CATALOGUED ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffe24a'; ctx.fillText('THE DANGER INDEX — LOG THE WHOLE RANKING', W/2, by-6); }
+  }
   // active lever tag
   if(lever && lever.state!=='idle'){
     ctx.textAlign='center';
@@ -4520,9 +4757,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))))) ;
+    ctx.fillStyle = isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isPlague()? '▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓'
+    ctx.fillText(isDanger()? '▓ THE DANGER INDEX — SCF FINAL RANKING ▓'
+               : (isPlague()? '▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓'
                : (isHallu()? '▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓'
                : (isSmooth()? '▓ THE SMOOTH AGE — THE ARROW CHAMBER ▓'
                : (isWall()? '▓ THE WALL ERA — THE NIL STATE ▓'
@@ -4538,7 +4776,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -4554,7 +4792,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Plague Cycle', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Danger Index', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -4580,7 +4818,10 @@ function drawTitle(){
     'THE HALLUCINATION ERA: HP near 0; the YELLOW EYE melts',
     'what it sees; he sees zombies/chocolate. BLACK rules now.',
     'THE PLAGUE CYCLE: Simon crowns himself the PLAGUE KING.',
-    'One cold touch = 404D / ZOMBIE / DEAD. Keep the PROTOCOL.'
+    'One cold touch = 404D / ZOMBIE / DEAD. Keep the PROTOCOL.',
+    'THE DANGER INDEX: SIMON 1004.04 (the .04 hides 404), CRAZY.',
+    'OREN 1004, BLACK 1000, PINKI 997, JEVIN 990.5, SUMONA 950.',
+    'THE INVISIBLE MAN says "It\'s ok." then the mask lifts: he BURNS.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
@@ -4620,7 +4861,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isPlague()){
+  if(isDanger()){
+    ctx.fillText('"Simon is 1004.04, and the .04 hides 404. Whatever he sees melts. Only he and Sumona', W/2, H*0.64);
+    ctx.fillText(' are CRAZY. The Invisible Man said It is ok., then the mask lifted." — The Danger Index', W/2, H*0.67);
+  } else if(isPlague()){
     ctx.fillText('"Almost everyone is dead, so I became the cure. One touch and you are a 404D, a', W/2, H*0.64);
     ctx.fillText(' zombie, or the dead, which I call living. Give me a sacrifice." — The Plague Cycle', W/2, H*0.67);
   } else if(isFirey()){
