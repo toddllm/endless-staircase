@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-19 — THE RELATION WEB: bonds and hunt-lines (Lore 29 cont.)
+
+Based on Toby's June 19 lore: *"Pinki and Oren are now teaming up to hunt Black, Black is running, the
+characters are split apart and now are chasing each other, Oren and Pinki are girl and boy friends, Sumona is
+their daughter, Simon is basically Oren's brother. Jevin and Black are friends, Vineria and Oswxack are
+friends, Bort is hostile, Wenda and Gray are boy and girl friends, Garnold and Fun Bot are friends, Mr. Sun
+and Mr. Tree are friends, ect. Simon didn't want the battles, so he just made the battles focus on those who
+are dead now."*
+
+![Lore 29 — THE RELATION WEB: the SCF panel reads "SCF RELATION WEB — BONDS & HUNT-LINES." The cast is drawn
+as a node graph instead of a power chart. Simon sits at the top with a red crown-ring; Oren and Pinki are
+linked by a pink LOVE-PAIR line and both fire red dashed, arrow-tipped HUNT-LINES at Black in the center, who
+is running. Gold dashed FAMILY links tie Sumona to Oren and Pinki (their daughter) and Oren to Simon (his
+brother). Cyan FRIEND lines join Jevin+Black, Vineria+Oswxack, Garnold+Fun Bot, and Wenda+Gray; Mr. Sun+Mr.
+Tree sit paired at the bottom; Bort hangs in the corner with a red dashed HOSTILE line. A legend reads
+LOVE-PAIR · FAMILY · FRIEND · HOSTILE · HUNT-LINE, and the footer note says "Pinki and Oren are together, and
+now they hunt Black."](screenshots/34-relation-web.png)
+
+- **A new final era after the Status Codex.** Once the codex is sealed and you climb past it, the board stops
+  being a ranking and becomes a **web of bonds** — who is chasing who, who is tied to who, who still matters
+  to somebody, exactly as Toby reframed it.
+- **The bond graph.** Fifteen characters are placed as nodes and wired together by edge type: **LOVE-PAIR**
+  (Pinki+Oren, Wenda+Gray) in pink, **FAMILY** (Sumona = Oren & Pinki's daughter; Simon = Oren's brother) in
+  gold dashes, **FRIEND** (Jevin+Black, Vineria+Oswxack, Garnold+Fun Bot, Mr. Sun+Mr. Tree) in cyan, and
+  **HOSTILE** (Bort) in red dashes.
+- **The active hunt-line, animated.** Pinki and Oren each throw a pulsing, arrow-tipped **HUNT-LINE** at
+  Black, who carries a flickering red ring as the prey; the dashes crawl toward him so the chase reads as
+  live. Simon, Pinki, and Oren all pulse with rings to mark the main chase.
+- **Simon redirects, not starts.** The era narration carries Toby's point that Simon didn't want the battles,
+  so he sends them toward those already dead rather than starting them himself.
+- **The WEB meter + ticker.** A new "THE RELATION WEB — TRACE EVERY BOND" meter rewards climbing with purpose
+  to map the whole web; the event ticker and a cycling footer note scan the bonds ("PINKI + OREN HUNT BLACK",
+  "SUMONA — THEIR DAUGHTER", "SIMON — OREN'S BROTHER", "SIMON REDIRECTS THE BATTLES").
+
 ## 2026-06-19 — BORT joins the index, 5th at 996 (Lore 29 cont.)
 
 Based on Toby's June 19 lore: *"Bort (a smooth rubbery bouncy gray horror bear thing) appeared. Bort is alive,

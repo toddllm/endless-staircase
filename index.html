@@ -445,6 +445,7 @@ let hallu, halluH, halluM;
 let plague, plagueH, plagueM;
 let danger, dangerH, dangerM;
 let codex, codexH, codexM;
+let web, webH, webM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -581,6 +582,17 @@ function reset(){
             logged:0, noteT:2.4, note:0, eventT:2.0 };
   codexH = dangerH + 1100;
   codexM = 0.25;  // THE STATUS CODEX meter: climb with purpose to seal every fate before the roster scrolls past
+  web = { active:false, t:0, glow:0, done:false, held:false, anim:0,
+          // Lore 29 cont. (June 19) — THE RELATION WEB. Toby reframed the cast as a web of bonds, not just a
+          // power chart: who is chasing who, who is tied to who, who still matters to somebody. Pinki + Oren
+          // are together and now HUNT Black; Sumona is their daughter; Simon is basically Oren's brother;
+          // Jevin + Black are friends; Vineria + Oswxack are friends; Wenda + Gray are together; Garnold +
+          // Fun Bot are friends; Mr. Sun + Mr. Tree are friends; Bort is hostile. Simon did not want the
+          // battles, so instead of starting them he REDIRECTS them toward those already dead, trying to keep
+          // the living web from tearing itself apart. The board now reads as linked HUNT-LINES.
+          scan:0, pulse:0, noteT:2.6, note:0, eventT:2.0 };
+  webH = codexH + 1100;
+  webM = 0.25;  // THE RELATION WEB meter: climb with purpose to trace every bond before a hunt-line snaps
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -644,6 +656,8 @@ function isPlague(){ return !!(plague && (plague.active || plague.done)); }
 // Lore 29 cont. — after the Plague Cycle, SCF posts the final ranking: THE DANGER INDEX
 function isDanger(){ return !!(danger && (danger.active || danger.done)); }
 function isCodex(){ return !!(codex && (codex.active || codex.done)); }
+// Lore 29 cont. — after the Status Codex, Toby reframed the cast as a web of bonds and hunt-lines: THE RELATION WEB
+function isWeb(){ return !!(web && (web.active || web.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1341,6 +1355,31 @@ function update(dt){
   if(codex.glow < (isCodex() ? 1 : 0))
     codex.glow = Math.min(1, codex.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 19) — THE RELATION WEB. Toby reframed the whole cast as a web of bonds, not a
+         power chart: who is chasing who, who is tied to who, who still matters to somebody. Pinki + Oren are
+         together and now HUNT Black; Sumona is their daughter; Simon is basically Oren's brother; Jevin +
+         Black are friends; Vineria + Oswxack, Wenda + Gray, Garnold + Fun Bot, Mr. Sun + Mr. Tree are paired;
+         Bort is hostile. Simon did not want the battles, so instead of starting them he REDIRECTS the fights
+         toward those already dead, trying to keep the living web from tearing itself apart. ---- */
+  if(codex.done && !web.active && !web.done && height > webH){
+    web.active = true; web.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE RELATION WEB'; warnT = 2.8;
+    showTaunt('The board is a web now, not a chart. Who is chasing who, who is tied to who, who still matters.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'RELATION WEB — THE HUNT-LINES', col:'#ff8ab0' });
+    AUDIO.zap();
+  }
+  if(web.active){
+    web.t += dt;
+    if(web.t>1.6 && web.t<1.68) showTaunt('Pinki and Oren are together, and now they hunt Black. Sumona is their daughter.');
+    if(web.t>3.2 && web.t<3.26){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(web.t>3.2 && web.t<3.28) showTaunt('Simon is basically Oren\'s brother. Jevin and Black are friends; Wenda and Gray are together.');
+    if(web.t>4.6 && web.t<4.68) showTaunt('Simon did not want the battles, so he redirects them toward those already dead.');
+    if(web.t > 5.6){ web.active = false; web.done = true; }
+  }
+  if(web.glow < (isWeb() ? 1 : 0))
+    web.glow = Math.min(1, web.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1359,7 +1398,8 @@ function update(dt){
   if(isHallu() && !isPlague()) updateHallu(dt);
   if(isPlague() && !isDanger()) updatePlague(dt);
   if(isDanger() && !isCodex()) updateDanger(dt);
-  if(isCodex()) updateCodex(dt);
+  if(isCodex() && !isWeb()) updateCodex(dt);
+  if(isWeb()) updateWeb(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2449,7 +2489,8 @@ function draw(){
   if(isHallu() && !isPlague() && hallu.glow>0.02) drawHallu();
   if(isPlague() && !isDanger() && plague.glow>0.02) drawPlague();
   if(isDanger() && !isCodex() && danger.glow>0.02) drawDanger();
-  if(isCodex() && codex.glow>0.02) drawCodex();
+  if(isCodex() && !isWeb() && codex.glow>0.02) drawCodex();
+  if(isWeb() && web.glow>0.02) drawWeb();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -4763,6 +4804,206 @@ function drawCodex(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* =========================================================================
+   Lore 29 cont. — THE RELATION WEB
+   Toby reframed the whole cast as a web of bonds, not a power chart: who is
+   chasing who, who is tied to who, who still matters to somebody. The board
+   draws as a node graph — characters as nodes, bonds as colored edges:
+     LOVE (Pinki+Oren, Wenda+Gray), FAMILY (Sumona = their daughter, Simon =
+     Oren's brother), FRIEND (Jevin+Black, Vineria+Oswxack, Garnold+Fun Bot,
+     Mr. Sun+Mr. Tree), HOSTILE (Bort), and the active HUNT-LINE (Pinki+Oren
+     chasing Black). Simon did not want the battles, so he REDIRECTS them
+     toward the already-dead zone instead of starting them himself. The WEB
+     meter rewards tracing every bond before a hunt-line snaps.
+   ========================================================================= */
+// nx,ny are normalized [0..1] inside the panel body; c = node tint
+const WEB_NODES = {
+  Simon:  { x:0.40, y:0.10, c:'#ff5c8a' },
+  Oren:   { x:0.24, y:0.30, c:'#b98cff' },
+  Pinki:  { x:0.18, y:0.55, c:'#ff8ab0' },
+  Sumona: { x:0.07, y:0.40, c:'#ffd84f' },
+  Black:  { x:0.60, y:0.40, c:'#9aa0ad' },
+  Jevin:  { x:0.82, y:0.28, c:'#9affc8' },
+  Bort:   { x:0.90, y:0.10, c:'#c9c9d6' },
+  Wenda:  { x:0.50, y:0.66, c:'#7ed0ff' },
+  Gray:   { x:0.70, y:0.66, c:'#7ed0ff' },
+  Vineria:{ x:0.14, y:0.82, c:'#9affc8' },
+  Oswxack:{ x:0.33, y:0.86, c:'#9affc8' },
+  Garnold:{ x:0.86, y:0.50, c:'#9ae66e' },
+  'Fun Bot':{ x:0.93, y:0.70, c:'#9ae66e' },
+  'Mr. Sun':{ x:0.52, y:0.90, c:'#ff9a3c' },
+  'Mr. Tree':{ x:0.74, y:0.88, c:'#9ae66e' },
+};
+// type: love | family | friend | hostile | hunt   (hunt edges are directed + animated)
+const WEB_EDGES = [
+  { a:'Pinki', b:'Oren', t:'love' },
+  { a:'Wenda', b:'Gray', t:'love' },
+  { a:'Oren', b:'Sumona', t:'family' },
+  { a:'Pinki', b:'Sumona', t:'family' },
+  { a:'Oren', b:'Simon', t:'family' },
+  { a:'Jevin', b:'Black', t:'friend' },
+  { a:'Vineria', b:'Oswxack', t:'friend' },
+  { a:'Garnold', b:'Fun Bot', t:'friend' },
+  { a:'Mr. Sun', b:'Mr. Tree', t:'friend' },
+  { a:'Bort', b:'Jevin', t:'hostile' },
+  { a:'Oren', b:'Black', t:'hunt' },
+  { a:'Pinki', b:'Black', t:'hunt' },
+];
+const WEB_LEGEND = [
+  { t:'love',    c:'#ff5c8a', s:'LOVE-PAIR' },
+  { t:'family',  c:'#ffd84f', s:'FAMILY' },
+  { t:'friend',  c:'#7ed0ff', s:'FRIEND' },
+  { t:'hostile', c:'#ff3b3b', s:'HOSTILE' },
+  { t:'hunt',    c:'#ff2b4c', s:'HUNT-LINE' },
+];
+const WEB_NOTES = [
+  'Pinki and Oren are together, and now they hunt Black.',
+  'Sumona is the daughter of Oren and Pinki.',
+  'Simon is basically Oren\'s brother.',
+  'Jevin and Black are friends; Wenda and Gray are together.',
+  'Vineria + Oswxack, Garnold + Fun Bot, Mr. Sun + Mr. Tree.',
+  'Bort is hostile to everyone around him.',
+  'Simon did not want the battles, so he redirects them to the dead.',
+];
+function updateWeb(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  web.anim = (web.anim||0) + dt;
+  web.pulse = (web.pulse||0) + dt;
+  web.scan = Math.min(WEB_EDGES.length + 2, (web.scan||0) + dt*1.4);  // edges trace in one by one
+  web.noteT -= dt;
+  if(web.noteT <= 0){ web.noteT = 2.6; web.note = ((web.note||0)+1) % WEB_NOTES.length; }
+  web.eventT -= dt;
+  if(web.eventT <= 0){ web.eventT = rnd(2.2,3.6);
+    const ev = ['THE RELATION WEB','PINKI + OREN HUNT BLACK','SUMONA — THEIR DAUGHTER',
+      'SIMON — OREN\'S BROTHER','JEVIN + BLACK — FRIENDS','WENDA + GRAY — TOGETHER',
+      'GARNOLD + FUN BOT','MR. SUN + MR. TREE','BORT — HOSTILE',
+      'SIMON REDIRECTS THE BATTLES','WHO STILL MATTERS TO SOMEBODY?','TRACE EVERY BOND'];
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ff8ab0' });
+  }
+  // THE RELATION WEB meter — climb with purpose to trace every bond before a hunt-line snaps
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  webM = Math.max(0, Math.min(1, webM + (moving ? dt*0.05 : -dt*0.03)));
+  if(webM >= 1 && !web.held){
+    web.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You traced the whole Relation Web. Every bond mapped, every hunt-line held.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ WEB TRACED — EVERY BOND MAPPED ★', col:'#ffd0e2' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff5c8a','#7ed0ff','#ffd84f'])));
+    AUDIO.zap();
+  }
+}
+function edgeColor(t){
+  return t==='love' ? '#ff5c8a' : t==='family' ? '#ffd84f'
+       : t==='friend' ? '#7ed0ff' : t==='hostile' ? '#ff3b3b' : '#ff2b4c';
+}
+function drawWeb(){
+  const g = web.glow||0, top = cameraY;
+  ctx.save();
+  // a warm-ink relationship wash — deep with a rose-web glow
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(14,8,14,${0.52*g})`);
+  bg.addColorStop(1, `rgba(8,6,12,${0.50*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  const px = W*0.04, pw = W*0.92, py = top + H*0.085, panelH = H*0.83;
+  ctx.fillStyle = `rgba(16,12,20,${0.80*g})`;
+  ctx.strokeStyle = `rgba(255,138,176,${0.5*g})`; ctx.lineWidth=1.5;
+  ctx.fillRect(px, py, pw, panelH);
+  ctx.strokeRect(px, py, pw, panelH);
+  // title bar
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(255,208,226,${0.95*g})`;
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText('SCF RELATION WEB — BONDS & HUNT-LINES', px+12, py+18);
+  ctx.textAlign='right'; ctx.fillStyle = `rgba(255,138,176,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('Lore 29 cont. · Toby, June 19', px+pw-12, py+18);
+  ctx.textAlign='left';
+  ctx.strokeStyle = `rgba(255,138,176,${0.25*g})`; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(px+8, py+26); ctx.lineTo(px+pw-8, py+26); ctx.stroke();
+
+  // node graph body
+  const bx = px+10, by = py+34, bw = pw-20, bh = panelH-86;
+  const NP = function(n){ const o = WEB_NODES[n]; return { x: bx + o.x*bw, y: by + o.y*bh, c:o.c }; };
+
+  // ---- edges (drawn first, under the nodes); each traces in as web.scan passes its index ----
+  WEB_EDGES.forEach(function(e, i){
+    const appear = Math.max(0, Math.min(1, (web.scan||0) - i));
+    if(appear<=0) return;
+    const A = NP(e.a), B = NP(e.b), col = edgeColor(e.t);
+    const a = g*appear;
+    if(e.t==='hunt'){
+      // active hunt-line: a pulsing, directed arrow from hunter to Black
+      const pulse = 0.55 + 0.45*Math.sin((web.pulse||0)*4 - i);
+      ctx.globalAlpha = a*pulse; ctx.strokeStyle = col; ctx.lineWidth = 2.4;
+      ctx.setLineDash([7,5]); ctx.lineDashOffset = -(web.pulse||0)*22;
+      ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y); ctx.stroke();
+      ctx.setLineDash([]);
+      // arrowhead near Black
+      const ang = Math.atan2(B.y-A.y, B.x-A.x), hx = B.x - Math.cos(ang)*16, hy = B.y - Math.sin(ang)*16;
+      ctx.fillStyle = col; ctx.beginPath();
+      ctx.moveTo(hx + Math.cos(ang)*9, hy + Math.sin(ang)*9);
+      ctx.lineTo(hx + Math.cos(ang+2.5)*7, hy + Math.sin(ang+2.5)*7);
+      ctx.lineTo(hx + Math.cos(ang-2.5)*7, hy + Math.sin(ang-2.5)*7);
+      ctx.closePath(); ctx.fill();
+    } else if(e.t==='hostile'){
+      ctx.globalAlpha = a*0.9; ctx.strokeStyle = col; ctx.lineWidth = 1.6;
+      ctx.setLineDash([3,4]);
+      ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y); ctx.stroke();
+      ctx.setLineDash([]);
+    } else {
+      ctx.globalAlpha = a*(e.t==='love'?0.95:0.8); ctx.strokeStyle = col;
+      ctx.lineWidth = e.t==='love' ? 2.2 : 1.6;
+      if(e.t==='family'){ ctx.setLineDash([2,3]); }
+      ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.lineTo(B.x, B.y); ctx.stroke();
+      ctx.setLineDash([]);
+    }
+  });
+  ctx.globalAlpha = g;
+
+  // ---- nodes (drawn on top), each appears as the web scans past its first edge ----
+  const shown = {};
+  WEB_EDGES.forEach(function(e,i){ if((web.scan||0) > i){ shown[e.a]=true; shown[e.b]=true; } });
+  for(const name in WEB_NODES){
+    if(!shown[name]) continue;
+    const P = NP(name);
+    const isHunter = (name==='Pinki' || name==='Oren');
+    const isPrey = (name==='Black');
+    const r = (name==='Simon') ? 8 : 6;
+    ctx.fillStyle = P.c;
+    ctx.beginPath(); ctx.arc(P.x, P.y, r, 0, Math.PI*2); ctx.fill();
+    // ring: hunters get a live rose ring, Black (prey) a flickering gray ring, Simon a red crown ring
+    if(isHunter || isPrey || name==='Simon'){
+      const ring = name==='Simon' ? '#ff5c8a' : isPrey ? '#ff2b4c' : '#ff8ab0';
+      ctx.strokeStyle = ring; ctx.lineWidth = 1.6;
+      ctx.globalAlpha = g*(0.5 + 0.5*Math.abs(Math.sin((web.pulse||0)*3)));
+      ctx.beginPath(); ctx.arc(P.x, P.y, r+3.5, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha = g;
+    }
+    // label, nudged to avoid the edges
+    ctx.fillStyle = `rgba(232,224,245,${0.95*g})`;
+    ctx.font = (name==='Simon') ? '800 9px ui-monospace,monospace' : '8px ui-monospace,monospace';
+    ctx.textAlign = (P.x > bx+bw*0.6) ? 'right' : 'left';
+    const lx = (P.x > bx+bw*0.6) ? P.x - r - 4 : P.x + r + 4;
+    ctx.fillText(name, lx, P.y+3);
+  }
+  ctx.textAlign='left';
+
+  // ---- legend strip ----
+  let lx = px+14, lyy = py+panelH-30;
+  ctx.font='700 8px ui-monospace,monospace';
+  WEB_LEGEND.forEach(function(L){
+    ctx.strokeStyle = L.c; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(lx, lyy-3); ctx.lineTo(lx+14, lyy-3); ctx.stroke();
+    ctx.fillStyle = `rgba(220,212,232,${0.9*g})`; ctx.fillText(L.s, lx+18, lyy);
+    lx += 18 + ctx.measureText(L.s).width + 14;
+  });
+
+  // ---- footer: a cycling SCF relationship note ----
+  ctx.fillStyle = `rgba(255,138,176,${0.9*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('▸ '+WEB_NOTES[web.note||0], px+12, py+panelH-12);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -5054,7 +5295,7 @@ function drawHUD(){
     else { ctx.fillStyle='#ffe24a'; ctx.fillText('THE DANGER INDEX — LOG THE WHOLE RANKING', W/2, by-6); }
   }
   // THE STATUS CODEX (Lore 29 cont.) — the CODEX meter. Climb with purpose to seal every fate.
-  if(isCodex() && codex.glow>0.05){
+  if(isCodex() && !isWeb() && codex.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,codexM));
     ctx.fillStyle='#0a0e16'; ctx.fillRect(bx, by, bw, 7);
     const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
@@ -5064,6 +5305,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(codex.held){ ctx.fillStyle='#dff0ff'; ctx.fillText('★ CODEX SEALED — EVERY FATE FILED ★', W/2, by-6); }
     else { ctx.fillStyle='#cfe0ff'; ctx.fillText('THE STATUS CODEX — SEAL EVERY FATE', W/2, by-6); }
+  }
+  // THE RELATION WEB (Lore 29 cont.) — the WEB meter. Climb with purpose to trace every bond.
+  if(isWeb() && web.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,webM));
+    ctx.fillStyle='#140c14'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#ff5c8a'); ig.addColorStop(0.5,'#7ed0ff'); ig.addColorStop(1, winFlash>0?'#ffd0e2':'#ffd84f');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(web.held){ ctx.fillStyle='#ffd0e2'; ctx.fillText('★ WEB TRACED — EVERY BOND MAPPED ★', W/2, by-6); }
+    else { ctx.fillStyle='#ff8ab0'; ctx.fillText('THE RELATION WEB — TRACE EVERY BOND', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -5077,9 +5330,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))))))) ;
+    ctx.fillStyle = isWeb()? '#ff8ab0' : (isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isCodex()? '▓ THE STATUS CODEX — EVERY FATE FILED ▓'
+    ctx.fillText(isWeb()? '▓ THE RELATION WEB — HUNT-LINES & BONDS ▓'
+               : (isCodex()? '▓ THE STATUS CODEX — EVERY FATE FILED ▓'
                : (isDanger()? '▓ THE DANGER INDEX — SCF FINAL RANKING ▓'
                : (isPlague()? '▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓'
                : (isHallu()? '▓ THE HALLUCINATION ERA — THE YELLOW EYE PROTOCOL ▓'
@@ -5097,7 +5351,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -5113,7 +5367,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Status Codex', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Relation Web', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -5142,7 +5396,10 @@ function drawTitle(){
     'One cold touch = 404D / ZOMBIE / DEAD. Keep the PROTOCOL.',
     'THE DANGER INDEX: SIMON 1004.04 (the .04 hides 404), CRAZY;',
     'OREN 1004, BLACK 1000, PINKI 997, JEVIN 990.5, SUMONA 950.',
-    'THE STATUS CODEX files every fate: CRAZY/DEMONED/.EXE/ALIVE/DEAD.'
+    'THE STATUS CODEX files every fate: CRAZY/DEMONED/.EXE/ALIVE/DEAD.',
+    'THE RELATION WEB: bonds, not a chart. PINKI + OREN hunt BLACK;',
+    'SUMONA is their child; SIMON is OREN\'s brother; Simon redirects',
+    'the battles toward the dead. TRACE every bond before a line snaps.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
@@ -5182,7 +5439,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isCodex()){
+  if(isWeb()){
+    ctx.fillText('"It is a web now, not a chart. Pinki and Oren are together and they hunt Black. Sumona', W/2, H*0.64);
+    ctx.fillText(' is their daughter. I did not want the battles, so I send them to the dead." — The Relation Web', W/2, H*0.67);
+  } else if(isCodex()){
     ctx.fillText('"Every fate is filed now. Mr. Sun is a BLACKHOLE, Gray is .EXE, Mervin gave his life', W/2, H*0.64);
     ctx.fillText(' for Mindy, Star Steed runs, the Throne is gone." — The Status Codex', W/2, H*0.67);
   } else if(isDanger()){
