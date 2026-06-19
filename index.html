@@ -1304,6 +1304,7 @@ function update(dt){
     if(danger.t>1.6 && danger.t<1.68) showTaunt('Oren 1004: his sound bends reality into a hole. Black 1000 and Pinki 997 are DEMONIZED.');
     if(danger.t>3.4 && danger.t<3.46){ shake = Math.max(shake,8); AUDIO.zap(); }
     if(danger.t>3.4 && danger.t<3.48) showTaunt('Sumona 950, CRAZY, daughter of Oren and Pinki, hunts everyone. Only she and Simon are CRAZY.');
+    if(danger.t>4.6 && danger.t<4.68) showTaunt('Then the .EXE and Infected get their numbers: Wenda 949.2 down to 67 Kid 790. All sixteen filed.');
     if(danger.t > 5.4){ danger.active = false; danger.done = true; }
   }
   if(danger.glow < (isDanger() ? 1 : 0))
@@ -4327,13 +4328,27 @@ function drawPlague(){
    the mask lifts for one instant and the Invisible Man BURNS. The INDEX meter
    rewards logging the whole ranking before the Invisible Man closes in.
    ========================================================================= */
+/* Lore 29 cont. (June 19) — Toby completed the ranking: the .EXE and Infected beings each got their
+   own danger level, so the index now files all sixteen. By his rule only .EXE, Crazy, and Infected
+   beings can hold a danger level. Toby's exact final order is kept even where a number sits a touch
+   high (Luigi Green 940 below Pupahya 930) — it is his ranking, logged as he gave it. */
 const DANGER_ROSTER = [
-  { n:'SIMON',  d:'1004.04', s:'CRAZY',     col:'#ffe24a', mx:1.00 },
-  { n:'OREN',   d:'1004',    s:'DEMONIZED', col:'#b98cff', mx:0.985 },
-  { n:'BLACK',  d:'1000',    s:'DEMONIZED', col:'#9aa0ad', mx:0.97 },
-  { n:'PINKI',  d:'997',     s:'DEMONIZED', col:'#ff7bd0', mx:0.95 },
-  { n:'JEVIN',  d:'990.5',   s:'ALIVE',     col:'#9affc8', mx:0.93 },
-  { n:'SUMONA', d:'950',     s:'CRAZY',     col:'#ff5c8a', mx:0.86 },
+  { n:'SIMON',            d:'1004.04', s:'CRAZY',     col:'#ffe24a', mx:1.00 },
+  { n:'OREN',             d:'1004',    s:'DEMONIZED', col:'#b98cff', mx:0.985 },
+  { n:'BLACK',            d:'1000',    s:'DEMONIZED', col:'#9aa0ad', mx:0.97 },
+  { n:'PINKI',            d:'997',     s:'DEMONIZED', col:'#ff7bd0', mx:0.95 },
+  { n:'JEVIN',            d:'990.5',   s:'ALIVE',     col:'#9affc8', mx:0.93 },
+  { n:'SUMONA',           d:'950',     s:'CRAZY',     col:'#ff5c8a', mx:0.86 },
+  { n:'WENDA',            d:'949.2',   s:'.EXE',      col:'#5cff9a', mx:0.85 },
+  { n:'CLUNKR',           d:'949',     s:'.EXE',      col:'#6effa6', mx:0.848 },
+  { n:'GRAY',             d:'940',     s:'.EXE',      col:'#9aa0ad', mx:0.84 },
+  { n:'PUPAHYA',          d:'930',     s:'.EXE',      col:'#c8a0ff', mx:0.825 },
+  { n:'LUIGI GREEN',      d:'940',     s:'.EXE',      col:'#6ee86e', mx:0.84 },
+  { n:'RADDY',            d:'910',     s:'INFECTED',  col:'#b6e35a', mx:0.80 },
+  { n:'MR. FUN COMPUTER', d:'900',     s:'.EXE',      col:'#7be0ff', mx:0.79 },
+  { n:'GEWLIS / 67 DOG',  d:'850',     s:'INFECTED',  col:'#9fd14a', mx:0.73 },
+  { n:'ENDLESS STAIRCASE',d:'800',     s:'.EXE',      col:'#ffb86e', mx:0.66 },
+  { n:'67 KID',           d:'790',     s:'.EXE',      col:'#ffd05c', mx:0.64 },
 ];
 function updateDanger(dt){
   if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
@@ -4373,7 +4388,9 @@ function updateDanger(dt){
     const ev = ['THE DANGER INDEX','SIMON 1004.04 — THE .04 HIDES 404','SIMON & SUMONA: CRAZY STATUS',
       'OREN 1004 — SOUND BENDS REALITY','BLACK 1000 · PINKI 997 — DEMONIZED','JEVIN 990.5 — STILL ALIVE',
       'SUMONA 950 — DAUGHTER OF OREN & PINKI','SUMONA HUNTS EVERYONE','WHATEVER SIMON SEES MELTS',
-      'WENDA IS .EXE · RADDY WAS INFECTED','TUNNER · FUN BOT · GARNOLD — DEAD',
+      'WENDA 949.2 · CLUNKR 949 — .EXE','GRAY 940 · LUIGI GREEN 940 — .EXE','PUPAHYA 930 — .EXE',
+      'RADDY 910 · GEWLIS 850 — INFECTED','MR. FUN COMPUTER 900 — .EXE','ENDLESS STAIRCASE 800 — .EXE',
+      '67 KID 790 — LAST OF THE .EXE','ONLY .EXE · CRAZY · INFECTED RANK','ALL SIXTEEN FILED',
       'THE INVISIBLE MAN: FIVE SLAPS','"IT\'S OK." — THEN THE MASK LIFTS','LOG THE WHOLE RANKING'];
     floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ffe24a' });
   }
@@ -4396,44 +4413,47 @@ function drawDanger(){
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   ctx.globalAlpha = g;
 
-  // ---- the ranking board, on the left ----
-  const px = W*0.05, pw = W*0.55, py = top + H*0.22, rowH = 30;
-  ctx.fillStyle = `rgba(20,16,12,${0.74*g})`;
+  // ---- the ranking board, on the left (now the full sixteen) ----
+  const px = W*0.04, pw = W*0.62, py = top + H*0.15, rowH = 25;
+  ctx.fillStyle = `rgba(20,16,12,${0.78*g})`;
   ctx.strokeStyle = `rgba(255,226,74,${0.5*g})`; ctx.lineWidth=1.5;
-  ctx.fillRect(px, py-26, pw, rowH*DANGER_ROSTER.length + 44);
-  ctx.strokeRect(px, py-26, pw, rowH*DANGER_ROSTER.length + 44);
+  ctx.fillRect(px, py-24, pw, rowH*DANGER_ROSTER.length + 40);
+  ctx.strokeRect(px, py-24, pw, rowH*DANGER_ROSTER.length + 40);
   ctx.textAlign='left'; ctx.fillStyle = `rgba(255,226,74,${0.92*g})`;
-  ctx.font='800 12px ui-monospace,monospace';
-  ctx.fillText('SCF DANGER INDEX — FINAL RANKING', px+12, py-10);
+  ctx.font='800 11px ui-monospace,monospace';
+  ctx.fillText('SCF DANGER INDEX — ALL SIXTEEN FILED', px+10, py-9);
+  // the status color used for the .EXE / Infected tags + bar accents
+  const statCol = s => s==='CRAZY' ? '#ff5c8a' : s==='ALIVE' ? '#9affc8'
+    : s==='.EXE' ? '#5cff9a' : s==='INFECTED' ? '#b6e35a' : '#b98cff';
 
   for(let i=0;i<DANGER_ROSTER.length;i++){
     const appear = Math.max(0, Math.min(1, (danger.logged||0) - i));
     if(appear <= 0) break;
-    const r = DANGER_ROSTER[i], ry = py + i*rowH + 12;
+    const r = DANGER_ROSTER[i], ry = py + i*rowH + 11;
     ctx.globalAlpha = g*Math.max(0.15, appear);
     // rank + name
-    ctx.fillStyle = r.col; ctx.font='800 12px ui-monospace,monospace'; ctx.textAlign='left';
-    ctx.fillText((i+1)+'. '+r.n, px+12, ry);
+    ctx.fillStyle = r.col; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='left';
+    ctx.fillText((i+1)+'. '+r.n, px+10, ry);
     // danger bar
-    const bx = px+150, bw = pw-230;
-    ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(bx, ry-9, bw, 9);
-    ctx.fillStyle = r.col; ctx.fillRect(bx, ry-9, bw*r.mx*appear, 9);
+    const bx = px+162, bw = pw-242;
+    ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(bx, ry-8, bw, 8);
+    ctx.fillStyle = r.col; ctx.fillRect(bx, ry-8, bw*r.mx*appear, 8);
     // the danger number
-    ctx.fillStyle = `rgba(240,235,255,${g})`; ctx.font='700 11px ui-monospace,monospace'; ctx.textAlign='right';
-    ctx.fillText(r.d, px+pw-12, ry);
-    // status tag
+    ctx.fillStyle = `rgba(240,235,255,${g})`; ctx.font='700 10px ui-monospace,monospace'; ctx.textAlign='right';
+    ctx.fillText(r.d, px+pw-8, ry);
+    // status tag, under the name
     ctx.textAlign='left';
-    ctx.fillStyle = r.s==='CRAZY' ? '#ff5c8a' : (r.s==='ALIVE' ? '#9affc8' : '#b98cff');
-    ctx.font='700 8px ui-monospace,monospace';
-    ctx.fillText(r.s, px+150, ry+9);
+    ctx.fillStyle = statCol(r.s);
+    ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText(r.s, px+10, ry+8);
   }
   ctx.globalAlpha = g;
-  // footer: the .04 = 404 note + the fallen
+  // footer: the .04 = 404 note + the rule that closes the list
   ctx.textAlign='left';
-  ctx.fillStyle = `rgba(255,226,74,${0.88*g})`; ctx.font='700 9px ui-monospace,monospace';
-  ctx.fillText('SIMON 1004.04 → the .04 hides 404 · only SIMON & SUMONA are CRAZY', px+12, py + DANGER_ROSTER.length*rowH + 8);
-  ctx.fillStyle = `rgba(160,150,170,${0.82*g})`;
-  ctx.fillText('WENDA .EXE · RADDY INFECTED · TUNNER · FUN BOT · GARNOLD — DEAD', px+12, py + DANGER_ROSTER.length*rowH + 20);
+  ctx.fillStyle = `rgba(255,226,74,${0.88*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('SIMON 1004.04 → the .04 hides 404 · only SIMON & SUMONA are CRAZY', px+10, py + DANGER_ROSTER.length*rowH + 6);
+  ctx.fillStyle = `rgba(160,200,150,${0.84*g})`;
+  ctx.fillText('only .EXE · CRAZY · INFECTED can hold a danger level · GEWLIS = 67 DOG', px+10, py + DANGER_ROSTER.length*rowH + 17);
 
   // ---- SIMON + THE INVISIBLE MAN, on the right ----
   const scx = W*0.80, sFloor = top + H - 120, sy0 = sFloor - 60 + Math.sin(an*0.7)*1.5;

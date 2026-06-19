@@ -772,7 +772,7 @@ SCENES = {
         // shirt, pants, hat) has just reached Simon, the mask is lifting, and he is BURNING.
         if (typeof danger!=='undefined'){
           danger.active=true; danger.done=false; danger.glow=1; danger.t=4.0;
-          danger.anim=2.2; danger.logged=6; danger.scan=2.0;
+          danger.anim=2.2; danger.logged=16; danger.scan=2.0;
           danger.phase='lift'; danger.phaseT=0.5; danger.mask=0.0; danger.burn=0.55; danger.imApproach=1;
           danger.flames=[];
           for (var f=0;f<22;f++){ danger.flames.push({ x:W*0.80 + (f%7-3)*6, y:cameraY+H*0.52 + (f%5-2)*5,
@@ -780,11 +780,11 @@ SCENES = {
         }
         if (typeof dangerM!=='undefined'){ dangerM=0.62; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof danger!=='undefined'){ danger.mask=0.0; danger.burn=0.55; danger.logged=6; danger.imApproach=1; }
+        if (typeof danger!=='undefined'){ danger.mask=0.0; danger.burn=0.55; danger.logged=16; danger.imApproach=1; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.3; }
         if (typeof glitch!=='undefined'){ glitch=0.3; }
-        if (typeof showTaunt==='function'){ showTaunt('The Danger Index. Simon 1004.04 (the .04 hides 404), CRAZY. Oren 1004, Black 1000, Pinki 997, Jevin 990.5, Sumona 950. The Invisible Man said It is ok., then the mask lifted and he burned.'); tauntT=9; }
+        if (typeof showTaunt==='function'){ showTaunt('The Danger Index, all sixteen filed. Simon 1004.04 (the .04 hides 404), CRAZY. Then the .EXE and Infected get numbers: Wenda 949.2, Clunkr 949, Gray and Luigi Green 940, Pupahya 930, Raddy 910, Mr. Fun Computer 900, Gewlis 850, Endless Staircase 800, 67 Kid 790. Only .EXE, Crazy, and Infected can rank.'); tauntT=9; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,

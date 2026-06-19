@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-19 — The Danger Index, all sixteen filed (Lore 29 cont.)
+
+Based on Toby's June 19 lore (the "Lore 29" thread continued, completing the danger ranking): *"Only .EXEs
+and Crazy Status and Infected can get the danger level... Wenda is 7th with 949.2, Clunkr is 8th with 949,
+Gray is 9th with 940, Pupahya is 10th with 930, Luigi Green is 11th with 940, Mr. Fun Computer is 13th with
+900, Raddy is 12th with 910, Endless Staircase is 14th with 800, Gewlis (67 Dog) is 13th with 850, 67 Kid
+is 14th with 790."* The full danger set is now: 1. Simon 1004.04 (Crazy), 2. Oren 1004, 3. Black 1000,
+4. Pinki 997 (Demoned), 5. Jevin 990.5 (Alive), 6. Sumona 950 (Crazy), 7. Wenda 949.2, 8. Clunkr 949,
+9. Gray 940, 10. Pupahya 930, 11. Luigi Green 940, 12. Raddy 910 (Infected), 13. Mr. Fun Computer 900,
+14. Gewlis/67 Dog 850 (Infected), 15. Endless Staircase 800, 16. 67 Kid 790 — all the .EXE / Crazy /
+Infected beings now hold a number.
+
+![Lore 29 — THE DANGER INDEX, all sixteen filed: the SCF final ranking board now lists every .EXE, Crazy,
+and Infected being with its danger level and a danger bar. From the top: SIMON 1004.04 CRAZY, OREN 1004,
+BLACK 1000, PINKI 997 DEMONIZED, JEVIN 990.5 ALIVE, SUMONA 950 CRAZY, then the newly-numbered set in green
+.EXE / Infected tags — WENDA 949.2, CLUNKR 949, GRAY 940, PUPAHYA 930, LUIGI GREEN 940, RADDY 910 INFECTED,
+MR. FUN COMPUTER 900, GEWLIS/67 DOG 850 INFECTED, ENDLESS STAIRCASE 800, 67 KID 790. The footer reads
+"SIMON 1004.04 → the .04 hides 404 · only SIMON & SUMONA are CRAZY" and "only .EXE · CRAZY · INFECTED can
+hold a danger level · GEWLIS = 67 DOG". On the right, Simon stands at the top of the index while the
+Invisible Man burns](screenshots/32-danger-index-sixteen.png)
+
+- **The Danger Index completes.** The final-ranking board grew from the top six to all **sixteen** beings.
+  Toby's rule is honored exactly: only **.EXE**, **Crazy**, and **Infected** beings can hold a danger level,
+  so those eleven newly-numbered names join Simon, Oren, Black, Pinki, Jevin, and Sumona on the board.
+- **New status colors.** `.EXE` beings file in glitch-green and `INFECTED` beings in a sickly lime, each
+  with its own danger bar scaled to its number, so the board reads at a glance which fate a name carries.
+- **Faithful to Toby's order.** Where his numbering sits a touch high against the raw value (Luigi Green 940
+  ranked just under Pupahya 930), the list keeps his exact order — it is his ranking, logged as he gave it.
+- **GEWLIS = 67 DOG, one slot.** Gewlis and 67 Dog are the same Infected being, filed as one row at 850, so
+  the board lands on sixteen, not seventeen. The event ticker and in-scene taunts now call out the new
+  numbers as they scan in.
+
 ## 2026-06-19 — The Status Codex (Lore 29 cont.)
 
 Based on Toby's June 18 lore (the "Lore 29" thread continued, the full-cast fates): *"Simon is the Crazy
