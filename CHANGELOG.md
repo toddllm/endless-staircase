@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-20 — THE 3 XS, ONE HUNT SYSTEM: roles + the 5-step pattern (Lore 29 cont.)
+
+Based on Toby's June 20 lore (the follow-up to "The 3 Xs"): *"They are not just attackers. They are a complete
+hunt system. Oren breaks what the target loves, Pinki finishes the target or the reverse, Simon shuts down
+warning systems, signals, machines, escape routes, and help... Simon also takes over the computers and they
+say that everything is fine and to stay here and that there is no watch at all. Simon being the main character
+/ center is not lore here. That is story."* The hunt always runs the same order: communication fails, then the
+thing the target loves is destroyed, then time/sound/signals/machines warp, then the target is isolated, then
+the target falls.
+
+![Lore 29 — THE 3 XS, ONE HUNT SYSTEM: the Relation Web's crimson 3-Xs triangle now carries a job under each
+member. Beneath Simon's "X1 · THE ONE" / "NO MERCY" sits "CUTS THE WARNINGS"; beneath Oren's "X2 · 2ND TO 1"
+sits "BREAKS WHAT YOU LOVE"; beneath Pinki's "X · STRONGEST" sits "STOPS TIME, FINISHES." Along the bottom of
+the panel a new orange ladder reads "THE 3 XS — ONE HUNT:" followed by five steps — 1 COMMS FAIL › 2 LOVE
+BROKEN › 3 WORLD WARPS › 4 ISOLATED › 5 TARGET FALLS — with the active step (3 WORLD WARPS) lit gold as the
+highlight travels left to right.](screenshots/36-3xs-hunt-system.png)
+
+- **Each X gets a job.** The trio is no longer just three ranks; each member now carries the part of the hunt
+  they handle, drawn under their node: **Oren = BREAKS WHAT YOU LOVE**, **Pinki = STOPS TIME, FINISHES**,
+  **Simon = CUTS THE WARNINGS** (the signals, machines, escape routes, and help). Together they read as one
+  system, not three attackers.
+- **The hunt sequence ladder.** A new five-step ladder runs along the bottom of the Relation Web panel:
+  **COMMS FAIL → LOVE BROKEN → WORLD WARPS → ISOLATED → TARGET FALLS**. The active step lights gold and
+  travels left to right on a loop, so the trap reads as a repeatable *pattern* — once the trio is coordinated,
+  the hunt is almost already over.
+- **The world itself lies.** New footer notes and ticker events carry Toby's clarification straight through:
+  "Simon makes the computers say everything is safe. The world itself lies," "The 3 Xs are one hunt system,"
+  and "Simon as the center is story, not lore. The lore is how the hunt works."
+- **All additive.** Same final Relation Web stage, same triangle and ranks from the June 20 build; the roles,
+  the ladder, and the new notes layer on top. The panel's date tag now reads June 20.
+
 ## 2026-06-20 — THE 3 XS: Simon, Oren, Pinki team up (Lore 29 cont.)
 
 Based on Toby's June 20 lore: *"Pinki and Oren are teaming, Simon goes in too, Simon and Oren call themselves

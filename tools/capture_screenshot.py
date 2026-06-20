@@ -852,11 +852,11 @@ SCENES = {
         if (typeof web!=='undefined'){
           web.active=true; web.done=false; web.glow=1; web.t=4.0;
           web.anim=2.2; web.pulse=1.4; web.scan=14; web.note=7; web.noteT=2.4;
-          web.xsGlow=1; web.xsT=0.75; web.xsTarget=0;
+          web.xsGlow=1; web.xsT=0.75; web.xsTarget=0; web.huntStep=2; web.huntT=0.4;
         }
         if (typeof webM!=='undefined'){ webM=0.66; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof web!=='undefined'){ web.scan=14; web.note=7; web.glow=1; web.pulse=1.4; web.xsGlow=1; web.xsT=0.75; web.xsTarget=0; }
+        if (typeof web!=='undefined'){ web.scan=14; web.note=7; web.glow=1; web.pulse=1.4; web.xsGlow=1; web.xsT=0.75; web.xsTarget=0; web.huntStep=2; web.huntT=0.4; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.3; }
         if (typeof glitch!=='undefined'){ glitch=0.25; }
