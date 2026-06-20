@@ -864,6 +864,34 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "clara": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE ETERNAL BATTLE — Clara's Judgement Hall, the king dodging the queen forever
+        if (typeof clara!=='undefined'){
+          clara.active=true; clara.done=false; clara.glow=1; clara.t=4.0;
+          clara.anim=2.2; clara.dodge=1.1; clara.glitchT=0.7; clara.mercy=1;
+          clara.rebirth=3; clara.rebirthT=1.0; clara.note=5; clara.noteT=2.4;
+          clara.attacks=[{t:0.5,lane:1,hue:0},{t:0.9,lane:-1,hue:2},{t:1.2,lane:1,hue:4}];
+        }
+        if (typeof claraM!=='undefined'){ claraM=0.66; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof clara!=='undefined'){ clara.glow=1; clara.mercy=1; clara.rebirth=3;
+          clara.attacks=[{t:0.5,lane:1,hue:0},{t:0.9,lane:-1,hue:2},{t:1.2,lane:1,hue:4}]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.3; }
+        if (typeof glitch!=='undefined'){ glitch=0.25; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

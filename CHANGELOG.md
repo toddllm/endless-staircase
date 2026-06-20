@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-20 — THE ETERNAL BATTLE: Clara, the king-vs-queen fight that never ends (Lore 29 cont.)
+
+Based on Toby's June 20 lore (a new being, Clara): *"Clara (the ancient being from a corrupted Classics X
+Undertale mod) is now attacking again. Clara was stronger than Simon and they can't defeat each other, Clara
+also destroys the Mercy button... Simon is the king, and Clara is the queen in chess. Simon keeps dodging
+Clara's attacks, and if Clara never gives up, the battle will go on forever. Draws don't exist in Classics.
+Simon can't lose, Clara can't lose either. Clara is canonically stronger... the owner of her Judgement Hall...
+glitchier than all of Classics combined... both Undertale and Classics. Clara isn't a sprite, its design is
+complex... saturation and contrast... a 'green' cloak and jacket and 'tanish' body, and its aura is so many
+colors."* A new final stage after the Relation Web: THE ETERNAL BATTLE.
+
+![Lore 29 — THE ETERNAL BATTLE: Clara's Judgement Hall. The top banner reads "THE ETERNAL BATTLE — CLARA, KING
+vs QUEEN." A panel titled "CLARA — THE ETERNAL BATTLE · HER JUDGEMENT HALL" holds a chessboard floor. On the
+left a gold KING piece is labeled "SIMON · KING / DODGES FOREVER"; on the right CLARA stands as the QUEEN —
+not a plain shape but a complex glitch figure: a tanish robed body with an RGB-split (magenta/cyan) jitter, a
+green cloak over the shoulders, scanline glitch bars, and a halo of impossible colors — labeled "CLARA · QUEEN
+/ CANONICALLY STRONGER." Above the board a shattered, struck-through MERCY button reads "DESTROYED — NO SPARE."
+Across the middle: "NEITHER CAN LOSE · DRAWS DO NOT EXIST · THE BATTLE GOES ON FOREVER," then "QUEEN OVERWHELMS
+· KING ENDURES · NEITHER FINISHES THE OTHER," then "CLARA REBIRTHS STRONGER ×3."](screenshots/37-clara-eternal-battle.png)
+
+- **A new final stage.** After the Relation Web resolves, climb higher and Clara attacks: **THE ETERNAL
+  BATTLE**, set in her own **Judgement Hall** (a chessboard floor). It is the new top of the tower.
+- **King vs Queen, and neither can lose.** **Simon = KING** (a gold chess piece that weaves side to side,
+  dodging forever); **Clara = QUEEN** (canonically stronger). Glitch bolts arc from Clara toward the king on a
+  loop and always swerve *around* him at the last instant — the fight literally never resolves on screen.
+- **Clara is not a sprite.** Unlike the other Classics characters (plain shapes and colors), Clara is drawn as
+  a **complex glitch figure**: a tanish robed body, an RGB-split magenta/cyan jitter, a **green cloak**,
+  scanline bars, and a layered aura of saturated, high-contrast, "colors not made yet." She reads as **both
+  Undertale and Classics at once**.
+- **The Mercy button is broken.** A shattered, struck-through **MERCY** button sits on the board — *DESTROYED,
+  NO SPARE* — because Clara took the option away.
+- **Rebirth counter.** Clara **rebirths stronger** every few seconds; a live `CLARA REBIRTHS STRONGER ×N`
+  counter climbs and her aura swells with it, so the escalation is endless by design.
+- **The meter you can't win, only hold.** The new **THE ETERNAL BATTLE — ENDURE EVERY EXCHANGE** meter fills
+  as you keep climbing. It rewards *enduring* rather than winning, since draws do not exist and neither side
+  can be defeated. Title screen, banner, death sting, and the lore blurb all carry Clara's lines.
+- **All additive.** Every earlier stage is untouched; Clara layers on as the new top stage with its own state,
+  trigger, update, draw, HUD meter, and screenshot scene (`clara`) in the capture helper.
+
 ## 2026-06-20 — THE 3 XS, ONE HUNT SYSTEM: roles + the 5-step pattern (Lore 29 cont.)
 
 Based on Toby's June 20 lore (the follow-up to "The 3 Xs"): *"They are not just attackers. They are a complete

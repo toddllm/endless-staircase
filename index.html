@@ -446,6 +446,7 @@ let plague, plagueH, plagueM;
 let danger, dangerH, dangerM;
 let codex, codexH, codexM;
 let web, webH, webM;
+let clara, claraH, claraM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -598,6 +599,19 @@ function reset(){
           scan:0, pulse:0, noteT:2.6, note:0, eventT:2.0, xsT:0, xsTarget:0, xsGlow:0 };
   webH = codexH + 1100;
   webM = 0.25;  // THE RELATION WEB meter: climb with purpose to trace every bond before a hunt-line snaps
+  clara = { active:false, t:0, glow:0, done:false, held:false, anim:0,
+            // Lore 29 cont. (June 20) — THE ETERNAL BATTLE. Toby introduced CLARA: the ancient being from a
+            // corrupted Classics X Undertale mod. Clara is canonically stronger than Simon, owns her own
+            // Judgement Hall, and destroys the MERCY button so there is no option to spare. In chess terms
+            // Simon is the KING (everything revolves around him) and Clara is the QUEEN (the overwhelming
+            // piece). Neither can lose. Draws do not exist in Classics. So if Clara never gives up, the battle
+            // is ETERNAL: Simon endlessly dodges, Clara endlessly attacks, and each cycle Clara REBIRTHS
+            // STRONGER. She is glitchier than all of Classics combined, both Undertale and Classics at once,
+            // and unlike the other Classics characters (just shapes and colors) her design is complex —
+            // saturation, contrast, a green cloak/jacket, a tanish body, and an aura of colors not made yet.
+            dodge:0, attackT:0, attacks:[], rebirth:0, rebirthT:0, mercy:0, glitchT:0, noteT:2.6, note:0, eventT:2.0 };
+  claraH = webH + 1100;
+  claraM = 0.25;  // THE ETERNAL BATTLE meter: climb with purpose to ENDURE every exchange (the battle never ends)
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -663,6 +677,8 @@ function isDanger(){ return !!(danger && (danger.active || danger.done)); }
 function isCodex(){ return !!(codex && (codex.active || codex.done)); }
 // Lore 29 cont. — after the Status Codex, Toby reframed the cast as a web of bonds and hunt-lines: THE RELATION WEB
 function isWeb(){ return !!(web && (web.active || web.done)); }
+// Lore 29 cont. (June 20) — after the Relation Web, Toby introduced Clara, the eternal-battle queen: THE ETERNAL BATTLE
+function isClara(){ return !!(clara && (clara.active || clara.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1385,6 +1401,30 @@ function update(dt){
   if(web.glow < (isWeb() ? 1 : 0))
     web.glow = Math.min(1, web.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 20) — THE ETERNAL BATTLE. After the Relation Web, Clara attacks: the ancient
+         being from a corrupted Classics X Undertale mod, canonically stronger than Simon, owner of her own
+         Judgement Hall. She destroys the Mercy button so spare is gone. Simon = KING, Clara = QUEEN; neither
+         can lose, and draws do not exist in Classics, so the fight is eternal — Simon dodges forever, Clara
+         attacks forever, and she rebirths stronger each cycle. ---- */
+  if(web.done && !clara.active && !clara.done && height > claraH){
+    clara.active = true; clara.t = 0;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE ETERNAL BATTLE'; warnT = 2.8;
+    showTaunt('Clara is attacking again. She is canonically stronger, and she just destroyed the Mercy button.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA — KING vs QUEEN, NEITHER CAN LOSE', col:'#9affc8' });
+    AUDIO.zap();
+  }
+  if(clara.active){
+    clara.t += dt;
+    if(clara.t>1.6 && clara.t<1.68) showTaunt('Simon is the king, Clara is the queen. She owns her Judgement Hall.');
+    if(clara.t>3.2 && clara.t<3.26){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(clara.t>3.2 && clara.t<3.28) showTaunt('Draws do not exist in Classics. Simon cannot lose, Clara cannot lose.');
+    if(clara.t>4.6 && clara.t<4.68) showTaunt('If Clara never gives up, the battle goes on forever. She rebirths stronger.');
+    if(clara.t > 5.6){ clara.active = false; clara.done = true; }
+  }
+  if(clara.glow < (isClara() ? 1 : 0))
+    clara.glow = Math.min(1, clara.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1404,7 +1444,8 @@ function update(dt){
   if(isPlague() && !isDanger()) updatePlague(dt);
   if(isDanger() && !isCodex()) updateDanger(dt);
   if(isCodex() && !isWeb()) updateCodex(dt);
-  if(isWeb()) updateWeb(dt);
+  if(isWeb() && !isClara()) updateWeb(dt);
+  if(isClara()) updateClara(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2495,7 +2536,8 @@ function draw(){
   if(isPlague() && !isDanger() && plague.glow>0.02) drawPlague();
   if(isDanger() && !isCodex() && danger.glow>0.02) drawDanger();
   if(isCodex() && !isWeb() && codex.glow>0.02) drawCodex();
-  if(isWeb() && web.glow>0.02) drawWeb();
+  if(isWeb() && !isClara() && web.glow>0.02) drawWeb();
+  if(isClara() && clara.glow>0.02) drawClara();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -5145,6 +5187,263 @@ function drawWeb(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* =========================================================================
+   Lore 29 cont. (June 20) — THE ETERNAL BATTLE (CLARA)
+   Toby: "Clara (the ancient being from a corrupted Classics X Undertale mod)
+   is now attacking again. Clara was stronger than Simon and they can't defeat
+   each other, Clara also destroys the Mercy button... Simon is the king, and
+   Clara is the queen in chess. Simon keeps dodging Clara's attacks, and if
+   Clara never gives up, the battle will go on forever. Draws don't exist in
+   Classics. Simon can't lose, Clara can't lose either. Clara is canonically
+   stronger... the owner of her Judgement Hall... glitchier than all of Classics
+   combined... both Undertale and Classics. Clara isn't a sprite, its design is
+   complex... saturation and contrast... a green cloak/jacket, a tanish body,
+   and an aura of so many colors."
+   The scene draws Clara's Judgement Hall: a chessboard floor, the KING (Simon)
+   forever dodging the QUEEN's (Clara's) attacks. Unlike the other Classics
+   characters (plain shapes), Clara is a complex glitch silhouette — RGB-split,
+   scanlines, impossible colors. A broken MERCY button sits struck-out below.
+   The meter rewards ENDURING the eternal exchange, since it can never resolve.
+   ========================================================================= */
+const CLARA_NOTES = [
+  'Clara is the ancient being from a corrupted Classics X Undertale mod.',
+  'Clara is canonically stronger than Simon. Neither can defeat the other.',
+  'Simon is the king. Clara is the queen. In chess the queen overwhelms.',
+  'Clara destroyed the Mercy button. There is no spare option left.',
+  'Draws do not exist in Classics. Simon cannot lose, Clara cannot lose.',
+  'If Clara never gives up, the battle goes on forever.',
+  'Clara owns her Judgement Hall. She rules the territory itself.',
+  'Each cycle Clara rebirths stronger. The fight only escalates.',
+  'Clara is glitchier than all of Classics combined.',
+  'Clara is both Undertale and Classics at once.',
+  'Clara is not a sprite. Her design is complex: saturation and contrast.',
+  'A green cloak, a tanish body, an aura of colors not made yet.',
+];
+const CLARA_EVENTS = ['THE ETERNAL BATTLE','KING vs QUEEN','NEITHER CAN LOSE','DRAWS DO NOT EXIST',
+  'CLARA — CANONICALLY STRONGER','THE MERCY BUTTON IS BROKEN','SIMON DODGES FOREVER','CLARA ATTACKS FOREVER',
+  'CLARA REBIRTHS STRONGER','HER JUDGEMENT HALL','GLITCHIER THAN ALL OF CLASSICS','BOTH UNDERTALE AND CLASSICS',
+  'AN AURA OF SO MANY COLORS','THE BATTLE GOES ON FOREVER'];
+// impossible colors for Clara's aura — saturated, high-contrast, shifting
+const CLARA_AURA = ['#39e0a8','#7a8c4a','#caa97a','#ff3bd0','#3bf0ff','#b9ff3b','#ff7b00','#9a3bff'];
+
+function updateClara(dt){
+  if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
+  clara.anim = (clara.anim||0) + dt;
+  clara.glitchT = (clara.glitchT||0) + dt;
+  // Simon (the king) endlessly dodges — a smooth side-to-side weave that never lands anywhere
+  clara.dodge = (clara.dodge||0) + dt;
+  // the Mercy button is broken: it stays shattered, flickering as if it can't redraw
+  clara.mercy = Math.min(1, (clara.mercy||0) + dt*0.6);
+  // Clara fires attacks on a cadence; each one arcs toward the king and is dodged (never resolves)
+  clara.attackT = (clara.attackT||0) + dt;
+  if(clara.attackT >= 0.9){
+    clara.attackT = 0;
+    clara.attacks.push({ t:0, lane: (clara.attacks.length%2)? -1 : 1, hue: clara.attacks.length % CLARA_AURA.length });
+    AUDIO.zap && AUDIO.zap();
+  }
+  clara.attacks.forEach(function(a){ a.t += dt; });
+  clara.attacks = clara.attacks.filter(function(a){ return a.t < 1.4; });
+  // each full cycle, Clara rebirths stronger — the aura intensifies and the counter climbs (eternal escalation)
+  clara.rebirthT = (clara.rebirthT||0) + dt;
+  if(clara.rebirthT >= 3.0){ clara.rebirthT = 0; clara.rebirth = (clara.rebirth||0) + 1; shake = Math.max(shake,5); }
+  clara.noteT -= dt;
+  if(clara.noteT <= 0){ clara.noteT = 2.6; clara.note = ((clara.note||0)+1) % CLARA_NOTES.length; }
+  clara.eventT -= dt;
+  if(clara.eventT <= 0){ clara.eventT = rnd(2.2,3.6);
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(CLARA_EVENTS), col:pick(['#39e0a8','#3bf0ff','#ff3bd0']) });
+  }
+  // THE ETERNAL BATTLE meter — climb with purpose to ENDURE the exchange (it can never be won, only held)
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  claraM = Math.max(0, Math.min(1, claraM + (moving ? dt*0.05 : -dt*0.03)));
+  if(claraM >= 1 && !clara.held){
+    clara.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You endured the eternal battle. It never ends, but you held the king on his feet.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ ENDURED — THE BATTLE GOES ON FOREVER ★', col:'#caffe6' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(CLARA_AURA)));
+    AUDIO.zap();
+  }
+}
+// a single chess piece silhouette (used for the plain KING). cx,cy = base center; s = scale
+function chessPiece(cx, cy, s, kind, fill){
+  ctx.fillStyle = fill;
+  ctx.beginPath();
+  // base
+  ctx.ellipse(cx, cy, s*0.9, s*0.28, 0, 0, Math.PI*2); ctx.fill();
+  // body
+  ctx.beginPath();
+  ctx.moveTo(cx - s*0.55, cy);
+  ctx.quadraticCurveTo(cx - s*0.30, cy - s*1.5, cx - s*0.32, cy - s*2.0);
+  ctx.lineTo(cx + s*0.32, cy - s*2.0);
+  ctx.quadraticCurveTo(cx + s*0.30, cy - s*1.5, cx + s*0.55, cy);
+  ctx.closePath(); ctx.fill();
+  // head
+  ctx.beginPath(); ctx.arc(cx, cy - s*2.2, s*0.42, 0, Math.PI*2); ctx.fill();
+  if(kind==='king'){
+    // a cross crown on top
+    ctx.fillRect(cx - s*0.08, cy - s*3.1, s*0.16, s*0.6);
+    ctx.fillRect(cx - s*0.28, cy - s*2.9, s*0.56, s*0.16);
+  }
+}
+function drawClara(){
+  const g = clara.glow||0, top = cameraY;
+  ctx.save();
+  // Judgement Hall wash — deep, with a cold green/violet glitch glow (Clara's two-system aura)
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(6,12,10,${0.56*g})`);
+  bg.addColorStop(1, `rgba(8,6,14,${0.54*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  const px = W*0.04, pw = W*0.92, py = top + H*0.085, panelH = H*0.83;
+  ctx.fillStyle = `rgba(10,14,16,${0.80*g})`;
+  ctx.strokeStyle = `rgba(57,224,168,${0.5*g})`; ctx.lineWidth=1.5;
+  ctx.fillRect(px, py, pw, panelH);
+  ctx.strokeRect(px, py, pw, panelH);
+  // title bar
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(202,255,230,${0.95*g})`;
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText('CLARA — THE ETERNAL BATTLE · HER JUDGEMENT HALL', px+12, py+18);
+  ctx.textAlign='right'; ctx.fillStyle = `rgba(57,224,168,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('Lore 29 cont. · Toby, June 20', px+pw-12, py+18);
+  ctx.textAlign='left';
+  ctx.strokeStyle = `rgba(57,224,168,${0.25*g})`; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(px+8, py+26); ctx.lineTo(px+pw-8, py+26); ctx.stroke();
+
+  // ---- the Judgement Hall chessboard floor ----
+  const bx = px+10, by = py+34, bw = pw-20, bh = panelH-86;
+  const floorY = by + bh*0.74, tileW = bw/8;
+  for(let i=0;i<8;i++){
+    ctx.globalAlpha = g*0.22;
+    ctx.fillStyle = (i%2===0) ? '#1a2a26' : '#0c1512';
+    ctx.fillRect(bx + i*tileW, floorY, tileW, bh*0.12);
+  }
+  ctx.globalAlpha = g;
+  ctx.strokeStyle = `rgba(57,224,168,${0.22*g})`; ctx.lineWidth=1;
+  ctx.strokeRect(bx, floorY, bw, bh*0.12);
+
+  // ---- the KING (Simon): a plain gold piece, weaving side to side as he dodges forever ----
+  const kingBaseX = bx + bw*0.30 + Math.sin((clara.dodge||0)*2.2) * bw*0.06;
+  const kingY = floorY + bh*0.06;
+  ctx.fillStyle = `rgba(255,216,80,${0.20*g})`;
+  ctx.beginPath(); ctx.ellipse(kingBaseX, kingY+2, 22, 7, 0, 0, Math.PI*2); ctx.fill();
+  chessPiece(kingBaseX, kingY, 12, 'king', `rgba(255,216,80,${0.95*g})`);
+  ctx.textAlign='center'; ctx.fillStyle = `rgba(255,216,80,${0.95*g})`; ctx.font='800 8px ui-monospace,monospace';
+  ctx.fillText('SIMON · KING', kingBaseX, kingY+18);
+  ctx.fillStyle = `rgba(232,224,200,${0.75*g})`; ctx.font='700 6px ui-monospace,monospace';
+  ctx.fillText('DODGES FOREVER', kingBaseX, kingY+27);
+
+  // ---- the QUEEN (Clara): NOT a plain shape. A complex glitch silhouette — RGB-split, scanlines, an aura of
+  //      impossible colors (green cloak, tanish body), saturation + contrast. She is both Undertale + Classics. ----
+  const claraX = bx + bw*0.72, claraFeet = floorY + bh*0.02, claraBodyH = 74 + (clara.rebirth||0)*1.5;
+  const claraTop = claraFeet - claraBodyH, claraMidY = (claraFeet+claraTop)/2;
+  const jit = function(){ return (Math.sin((clara.glitchT||0)*53.0)*0.5 + Math.sin((clara.glitchT||0)*97.0)*0.5) ; };
+  // her shadow / footing on the board
+  ctx.globalAlpha = g*0.25; ctx.fillStyle = '#39e0a8';
+  ctx.beginPath(); ctx.ellipse(claraX, claraFeet, 22, 6, 0, 0, Math.PI*2); ctx.fill();
+  ctx.globalAlpha = g;
+  // layered aura halo — many colors at once, swelling with each rebirth
+  for(let i=0;i<CLARA_AURA.length;i++){
+    const ph = (clara.anim||0)*1.4 + i*0.8;
+    const rr = 26 + i*4 + Math.sin(ph)*5 + (clara.rebirth||0)*1.2;  // rebirth swells the aura
+    ctx.globalAlpha = g*0.14;
+    ctx.strokeStyle = CLARA_AURA[i]; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.ellipse(claraX, claraMidY, rr, rr*1.15, 0, 0, Math.PI*2); ctx.stroke();
+  }
+  ctx.globalAlpha = g;
+  // body silhouette drawn three times with an RGB-style split + jitter (the glitch / two-system look)
+  const headR = 10;
+  const drawBody = function(ox, oy, col, alpha){
+    ctx.globalAlpha = g*alpha;
+    ctx.fillStyle = col;
+    // tanish body core — a robed figure tapering from feet up to the shoulders
+    ctx.beginPath();
+    ctx.moveTo(claraX-16+ox, claraFeet+oy);
+    ctx.quadraticCurveTo(claraX-12+ox, claraMidY+oy, claraX-9+ox, claraTop+12+oy);
+    ctx.lineTo(claraX+9+ox, claraTop+12+oy);
+    ctx.quadraticCurveTo(claraX+12+ox, claraMidY+oy, claraX+16+ox, claraFeet+oy);
+    ctx.closePath(); ctx.fill();
+    // head
+    ctx.beginPath(); ctx.arc(claraX+ox, claraTop+oy, headR, 0, Math.PI*2); ctx.fill();
+  };
+  const sp = 2.5 + jit()*1.8;  // split amount glitches frame to frame
+  drawBody(-sp, 0, '#ff3bd0', 0.5);   // magenta channel
+  drawBody( sp, 0, '#3bf0ff', 0.5);   // cyan channel
+  drawBody( 0,  0, '#caa97a', 0.9);   // the "tanish body"
+  // green cloak/jacket over the shoulders
+  ctx.globalAlpha = g*0.85; ctx.fillStyle = '#39e0a8';
+  ctx.beginPath();
+  ctx.moveTo(claraX-17, claraTop+30);
+  ctx.quadraticCurveTo(claraX, claraTop+8, claraX+17, claraTop+30);
+  ctx.quadraticCurveTo(claraX, claraTop+20, claraX-17, claraTop+30);
+  ctx.closePath(); ctx.fill();
+  // scanline glitch bars across her
+  ctx.globalAlpha = g*0.4;
+  for(let s2=0;s2<5;s2++){
+    const sy = claraTop + ((clara.glitchT||0)*40 + s2*18) % claraBodyH;
+    ctx.fillStyle = CLARA_AURA[(s2 + (clara.rebirth||0)) % CLARA_AURA.length];
+    ctx.fillRect(claraX-17 + jit()*3, sy, 34, 2);
+  }
+  ctx.globalAlpha = g;
+  ctx.textAlign='center'; ctx.fillStyle = `rgba(202,255,230,${0.95*g})`; ctx.font='800 8px ui-monospace,monospace';
+  ctx.fillText('CLARA · QUEEN', claraX, floorY+18);
+  ctx.fillStyle = `rgba(57,224,168,${0.85*g})`; ctx.font='700 6px ui-monospace,monospace';
+  ctx.fillText('CANONICALLY STRONGER', claraX, floorY+27);
+
+  // ---- Clara's attacks: glitch bolts arc from the queen toward the king and are always dodged (never land) ----
+  clara.attacks.forEach(function(a){
+    const k = a.t/1.4;                    // 0..1 progress
+    const sx = claraX, sy = claraMidY;
+    const ex = kingBaseX, ey = kingY - 8;
+    const cxp = (sx+ex)/2, cyp = Math.min(sy,ey) - 40*a.lane;  // arc up/down
+    const ax = (1-k)*(1-k)*sx + 2*(1-k)*k*cxp + k*k*ex;
+    const ay = (1-k)*(1-k)*sy + 2*(1-k)*k*cyp + k*k*ey;
+    // the bolt swerves AROUND the king near the end (the dodge) instead of hitting
+    const miss = Math.max(0, k-0.78) * 60;
+    ctx.globalAlpha = g*(1-k*0.5);
+    ctx.fillStyle = CLARA_AURA[a.hue];
+    ctx.beginPath(); ctx.arc(ax + miss, ay - miss*0.4, 4 + jit()*1.5, 0, Math.PI*2); ctx.fill();
+  });
+  ctx.globalAlpha = g;
+
+  // ---- the broken MERCY button: Clara destroyed it. Shattered, struck through, flickering ----
+  const mbW = 76, mbX = bx + bw/2 - mbW/2, mbY = by + bh*0.04, mbH = 18;
+  const flick = 0.45 + 0.55*Math.abs(Math.sin((clara.anim||0)*7));
+  ctx.globalAlpha = g*0.85;
+  ctx.strokeStyle = `rgba(255,80,80,${flick})`; ctx.lineWidth=1.5;
+  ctx.strokeRect(mbX, mbY, mbW, mbH);
+  // cracks
+  ctx.beginPath();
+  ctx.moveTo(mbX+10, mbY); ctx.lineTo(mbX+mbW*0.45, mbY+mbH);
+  ctx.moveTo(mbX+mbW*0.7, mbY); ctx.lineTo(mbX+mbW*0.55, mbY+mbH);
+  ctx.stroke();
+  ctx.textAlign='center'; ctx.fillStyle = `rgba(255,120,120,${flick})`; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillText('MERCY', mbX+mbW/2, mbY+13);
+  // struck through
+  ctx.strokeStyle = `rgba(255,59,92,${0.9*g})`; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.moveTo(mbX-4, mbY+mbH+2); ctx.lineTo(mbX+mbW+4, mbY-2); ctx.stroke();
+  ctx.fillStyle = `rgba(255,138,138,${0.9*g})`; ctx.font='700 7px ui-monospace,monospace';
+  ctx.fillText('DESTROYED — NO SPARE', mbX+mbW/2, mbY+mbH+12);
+  ctx.globalAlpha = g;
+
+  // ---- the verdict strip: why this battle never ends ----
+  const vY = by + bh*0.42;
+  ctx.textAlign='center'; ctx.font='800 10px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(202,255,230,${0.95*g})`;
+  ctx.fillText('NEITHER CAN LOSE · DRAWS DO NOT EXIST · THE BATTLE GOES ON FOREVER', bx+bw/2, vY);
+  ctx.font='700 8px ui-monospace,monospace'; ctx.fillStyle = `rgba(57,224,168,${0.85*g})`;
+  ctx.fillText('QUEEN OVERWHELMS · KING ENDURES · NEITHER FINISHES THE OTHER', bx+bw/2, vY+13);
+  // rebirth counter — climbs forever, each cycle stronger
+  ctx.fillStyle = `rgba(255,123,0,${0.9*g})`; ctx.font='800 8px ui-monospace,monospace';
+  ctx.fillText('CLARA REBIRTHS STRONGER ×'+(clara.rebirth||0), bx+bw/2, vY+27);
+  ctx.textAlign='left';
+
+  // ---- footer: a cycling Clara note (straight from Toby) ----
+  ctx.fillStyle = `rgba(57,224,168,${0.9*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('▸ '+CLARA_NOTES[clara.note||0], px+12, py+panelH-12);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -5448,7 +5747,7 @@ function drawHUD(){
     else { ctx.fillStyle='#cfe0ff'; ctx.fillText('THE STATUS CODEX — SEAL EVERY FATE', W/2, by-6); }
   }
   // THE RELATION WEB (Lore 29 cont.) — the WEB meter. Climb with purpose to trace every bond.
-  if(isWeb() && web.glow>0.05){
+  if(isWeb() && !isClara() && web.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,webM));
     ctx.fillStyle='#140c14'; ctx.fillRect(bx, by, bw, 7);
     const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
@@ -5458,6 +5757,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(web.held){ ctx.fillStyle='#ffd0e2'; ctx.fillText('★ WEB TRACED — EVERY BOND MAPPED ★', W/2, by-6); }
     else { ctx.fillStyle='#ff8ab0'; ctx.fillText('THE RELATION WEB — TRACE EVERY BOND', W/2, by-6); }
+  }
+  // THE ETERNAL BATTLE (Lore 29 cont.) — the ENDURE meter. The fight can never be won, only held.
+  if(isClara() && clara.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,claraM));
+    ctx.fillStyle='#0a1410'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#39e0a8'); ig.addColorStop(0.5,'#3bf0ff'); ig.addColorStop(1, winFlash>0?'#caffe6':'#ff3bd0');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(clara.held){ ctx.fillStyle='#caffe6'; ctx.fillText('★ ENDURED — THE BATTLE GOES ON FOREVER ★', W/2, by-6); }
+    else { ctx.fillStyle='#39e0a8'; ctx.fillText('THE ETERNAL BATTLE — ENDURE EVERY EXCHANGE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -5471,9 +5782,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isWeb()? '#ff8ab0' : (isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))))))) ;
+    ctx.fillStyle = isClara()? '#39e0a8' : (isWeb()? '#ff8ab0' : (isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isWeb()? '▓ THE RELATION WEB — HUNT-LINES & BONDS ▓'
+    ctx.fillText(isClara()? '▓ THE ETERNAL BATTLE — CLARA, KING vs QUEEN ▓'
+               : (isWeb()? '▓ THE RELATION WEB — HUNT-LINES & BONDS ▓'
                : (isCodex()? '▓ THE STATUS CODEX — EVERY FATE FILED ▓'
                : (isDanger()? '▓ THE DANGER INDEX — SCF FINAL RANKING ▓'
                : (isPlague()? '▓ THE PLAGUE CYCLE — THE PLAGUE-KING PROTOCOL ▓'
@@ -5492,7 +5804,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -5508,7 +5820,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Relation Web', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Eternal Battle', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -5540,7 +5852,9 @@ function drawTitle(){
     'THE STATUS CODEX files every fate: CRAZY/DEMONED/.EXE/ALIVE/DEAD.',
     'THE RELATION WEB: bonds, not a chart. PINKI + OREN hunt BLACK;',
     'SUMONA is their child; SIMON is OREN\'s brother; Simon redirects',
-    'the battles toward the dead. TRACE every bond before a line snaps.'
+    'the battles toward the dead. TRACE every bond before a line snaps.',
+    'THE ETERNAL BATTLE: CLARA attacks. SIMON is the KING, CLARA the',
+    'QUEEN; neither can lose, draws do not exist, so it goes on forever.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
@@ -5580,7 +5894,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isWeb()){
+  if(isClara()){
+    ctx.fillText('"Clara is canonically stronger, and she broke the Mercy button. I am the king, she is the', W/2, H*0.64);
+    ctx.fillText(' queen. Neither can lose, draws do not exist, so we fight forever." — The Eternal Battle', W/2, H*0.67);
+  } else if(isWeb()){
     ctx.fillText('"It is a web now, not a chart. Pinki and Oren are together and they hunt Black. Sumona', W/2, H*0.64);
     ctx.fillText(' is their daughter. I did not want the battles, so I send them to the dead." — The Relation Web', W/2, H*0.67);
   } else if(isCodex()){
