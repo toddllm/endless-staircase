@@ -448,6 +448,7 @@ let codex, codexH, codexM;
 let web, webH, webM;
 let clara, claraH, claraM;
 let claraAdmin, claraAdminH, claraAdminM;
+let power, powerH, powerM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -628,6 +629,19 @@ function reset(){
             noteT:2.6, note:0, eventT:2.0, glitchT:0 };
   claraAdminH = claraH + 1100;
   claraAdminM = 0.25;  // THE ADMIN ASCENSION meter: climb to WITHDRAW like Simon did and survive the admin's reign
+  power = { active:false, t:0, glow:0, done:false, held:false, anim:0,
+            // Lore 29 (June 20) — THE POWER ORDER. Toby reshuffled the whole power ranking: "Oren rose in
+            // power, Oren is most powerful now, Simon only has a few forms stronger than Oren... Pinki rose in
+            // power and is now 3rd... Clara and Oren are tied. Oren and Simon are usually tied (unless if Oren
+            // wins, Simon wins if the battle is for revenge). Oren can easily beat Pinki. Simon can easily beat
+            // Pinki. Pinki with the Shifted AU can beat Base Clara. Oren can beat Cross Clara, Errorshifted
+            // Clara, Antishifted Clara, Reversed Clara... Oren also beats Black." So the system is now
+            // matchup-based, not one straight ranking: Oren = most stable top-tier winner; Clara/Simon tie him
+            // by condition; Pinki is a flexible AU-based 3rd; Black is below Oren; and Simon is no longer top by
+            // default but keeps a REVENGE-win condition that flips a normal loss to Oren into a win.
+            revenge:0, revT:0, rowT:0, row:0, auT:0, noteT:2.6, note:0, eventT:2.0 };
+  powerH = claraAdminH + 1100;
+  powerM = 0.25;  // THE POWER ORDER meter: climb with purpose to read every matchup and rise through the new order
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -697,6 +711,8 @@ function isWeb(){ return !!(web && (web.active || web.done)); }
 function isClara(){ return !!(clara && (clara.active || clara.done)); }
 // Lore 29 cont. (June 20) — after the Eternal Battle, Simon gives up and Clara takes over: THE ADMIN ASCENSION
 function isClaraAdmin(){ return !!(claraAdmin && (claraAdmin.active || claraAdmin.done)); }
+// Lore 29 (June 20) — after the Admin Ascension, the whole power ranking is reshuffled: THE POWER ORDER
+function isPower(){ return !!(power && (power.active || power.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1466,6 +1482,28 @@ function update(dt){
   if(claraAdmin.glow < (isClaraAdmin() ? 1 : 0))
     claraAdmin.glow = Math.min(1, claraAdmin.glow + dt*0.5);
 
+  /* ---- Lore 29 (June 20) — THE POWER ORDER. After Clara's reign, Toby reshuffles the whole ranking: Oren is
+         now the most powerful overall, Pinki rose to 3rd, Clara and Oren tie, Oren and Simon usually tie (Oren
+         wins normal, Simon wins if the fight is for REVENGE), Oren easily beats Pinki and Black and many Clara
+         AUs. The system is matchup-based now, not one straight ranking. ---- */
+  if(claraAdmin.done && !power.active && !power.done && height > powerH){
+    power.active = true; power.t = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE POWER ORDER'; warnT = 2.8;
+    showTaunt('The whole power order just reshuffled: Oren rose to the top, Pinki rose to 3rd.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN — MOST POWERFUL NOW', col:'#ffcf4f' });
+    AUDIO.zap();
+  }
+  if(power.active){
+    power.t += dt;
+    if(power.t>1.6 && power.t<1.68) showTaunt('Oren is the most stable top-tier winner. Clara and Oren can tie.');
+    if(power.t>3.2 && power.t<3.28) showTaunt('Oren and Simon are usually tied; Oren wins normal, but Simon wins if it is for revenge.');
+    if(power.t>4.6 && power.t<4.68) showTaunt('Pinki rose to 3rd. With the Shifted AU she can beat Base Clara.');
+    if(power.t > 5.6){ power.active = false; power.done = true; }
+  }
+  if(power.glow < (isPower() ? 1 : 0))
+    power.glow = Math.min(1, power.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1487,7 +1525,8 @@ function update(dt){
   if(isCodex() && !isWeb()) updateCodex(dt);
   if(isWeb() && !isClara()) updateWeb(dt);
   if(isClara() && !isClaraAdmin()) updateClara(dt);
-  if(isClaraAdmin()) updateClaraAdmin(dt);
+  if(isClaraAdmin() && !isPower()) updateClaraAdmin(dt);
+  if(isPower()) updatePower(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2580,7 +2619,8 @@ function draw(){
   if(isCodex() && !isWeb() && codex.glow>0.02) drawCodex();
   if(isWeb() && !isClara() && web.glow>0.02) drawWeb();
   if(isClara() && !isClaraAdmin() && clara.glow>0.02) drawClara();
-  if(isClaraAdmin() && claraAdmin.glow>0.02) drawClaraAdmin();
+  if(isClaraAdmin() && !isPower() && claraAdmin.glow>0.02) drawClaraAdmin();
+  if(isPower() && power.glow>0.02) drawPower();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -5756,6 +5796,206 @@ function drawClaraAdmin(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===========================================================================
+   Lore 29 (June 20) — THE POWER ORDER (Oren rises, the whole ranking reshuffles)
+   Toby: "Pinki rose in power and is now 3rd in power. Oren rose in power, Oren is
+   most powerful now, Simon only has a few forms stronger than Oren. Oren can still
+   beat those forms... Clara and Oren are tied. Oren and Simon are usually tied
+   (unless if Oren wins, Simon wins if the battle is for revenge). Oren can easily
+   beat Pinki. Simon can easily beat Pinki. Pinki with the Shifted AU can beat Base
+   Clara. Oren can beat Cross Clara, Errorshifted Clara, Antishifted Clara, Reversed
+   Clara... Oren proves as the most powerful. Oren also beats Black."
+   The board: a ranked ladder (Oren #1, Clara/Simon tie by condition, Pinki #3, Black
+   below Oren), a Simon REVENGE flip panel (normal = Oren wins, revenge = Simon wins),
+   a grid of matchup rules, and an AU-win band (Shifted Pinki > Base Clara, etc.).
+   The order is matchup-based now, not one straight ranking.
+   =========================================================================== */
+const POWER_ROWS = [
+  { rank:'1', who:'OREN',          tag:'MOST POWERFUL OVERALL',           pow:1.00, col:'#ffcf4f' },
+  { rank:'2', who:'CLARA · SIMON', tag:'TIE WITH OREN — BY CONDITION',    pow:0.93, col:'#39e0a8' },
+  { rank:'3', who:'PINKI',         tag:'ROSE TO 3RD · AU WIN CONDITIONS', pow:0.62, col:'#ff7bd0' },
+  { rank:'4', who:'BLACK',         tag:'BELOW OREN',                      pow:0.50, col:'#9aa3ad' }
+];
+const POWER_MATCHUPS = [
+  'OREN beats BLACK','OREN easily beats PINKI','SIMON easily beats PINKI',
+  'CLARA beats PINKI','OREN ties CLARA','OREN & SIMON usually tied',
+  'OREN beats many CLARA AUs','OREN wins normal fights','SIMON wins on REVENGE'
+];
+const POWER_AUWINS = ['Shifted PINKI > Base CLARA','OREN > Cross CLARA','OREN > Errorshifted CLARA',
+  'OREN > Antishifted CLARA','OREN > Reversed CLARA','Oren beats the few Simon forms above him'];
+const POWER_NOTES = [
+  'Oren is the most powerful overall now.',
+  'Pinki rose to 3rd in power.',
+  'Clara and Oren can tie in direct scaling.',
+  'Oren and Simon are usually tied.',
+  'Oren wins a normal fight; Simon wins if it is for revenge.',
+  'Simon is no longer top by default, but revenge still spikes him.',
+  'Oren beats Black, and many Clara AUs too.',
+  'Shifted AU Pinki can beat Base Clara.',
+  'The order is matchup-based now, not one straight ranking.',
+  'Oren is the most stable top-tier winner.'
+];
+const POWER_EVENTS = ['OREN #1','PINKI → 3RD','TIE BY CONDITION','REVENGE SPIKE','MATCHUP-BASED',
+  'OREN BEATS BLACK','AU WIN CONDITIONS','SIMON ≠ TOP DEFAULT'];
+
+function updatePower(dt){
+  power.t = (power.t||0) + dt;
+  power.anim = (power.anim||0) + dt;
+  // Simon's revenge condition flips on a cycle: NORMAL (Oren wins) <-> REVENGE (Simon wins)
+  power.revT = (power.revT||0) + dt;
+  if(power.revT >= 2.2){ power.revT = 0; power.revenge = power.revenge ? 0 : 1; shake = Math.max(shake,4); AUDIO.zap(); }
+  // ladder row highlight cycles down the ranking
+  power.rowT = (power.rowT||0) + dt;
+  if(power.rowT >= 1.1){ power.rowT = 0; power.row = ((power.row||0)+1) % POWER_ROWS.length; }
+  // AU-win band scroll
+  power.au = (power.au||0) + dt*20;
+  // notes + floating events
+  power.noteT -= dt;
+  if(power.noteT <= 0){ power.noteT = 2.6; power.note = ((power.note||0)+1) % POWER_NOTES.length; }
+  power.eventT -= dt;
+  if(power.eventT <= 0){ power.eventT = rnd(2.2,3.6);
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(POWER_EVENTS), col:pick(['#ffcf4f','#39e0a8','#ff7bd0']) });
+  }
+  // THE POWER ORDER meter — climb with purpose to read every matchup and rise through the order
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  powerM = Math.max(0, Math.min(1, powerM + (moving ? dt*0.05 : -dt*0.03)));
+  if(powerM >= 1 && !power.held){
+    power.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You read the whole new order: Oren on top, the ties by condition, Pinki risen to 3rd.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ READ THE POWER ORDER ★', col:'#ffe8a8' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffcf4f','#39e0a8','#ff7bd0'])));
+    AUDIO.zap();
+  }
+}
+
+function drawPower(){
+  const g = power.glow||0, top = cameraY;
+  ctx.save();
+  // a cold "ranking board" wash — deep blue/violet with an amber authority tint at the top
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(14,11,4,${0.58*g})`);
+  bg.addColorStop(1, `rgba(7,6,16,${0.58*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  const px = W*0.04, pw = W*0.92, py = top + H*0.085, panelH = H*0.83, cx0 = px+pw/2;
+  ctx.fillStyle = `rgba(12,12,18,${0.82*g})`;
+  ctx.strokeStyle = `rgba(255,207,79,${0.5*g})`; ctx.lineWidth=1.5;
+  ctx.fillRect(px, py, pw, panelH); ctx.strokeRect(px, py, pw, panelH);
+
+  // title bar
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(255,236,184,${0.95*g})`;
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText('THE POWER ORDER — OREN RISES · THE RANKING RESHUFFLES', px+12, py+18);
+  ctx.textAlign='right'; ctx.fillStyle = `rgba(255,207,79,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('Lore 29 · Toby, June 20', px+pw-12, py+18);
+  ctx.textAlign='left';
+  ctx.strokeStyle = `rgba(255,207,79,${0.25*g})`; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(px+8, py+26); ctx.lineTo(px+pw-8, py+26); ctx.stroke();
+  ctx.fillStyle = `rgba(255,207,79,${0.7*g})`; ctx.font='700 7px ui-monospace,monospace';
+  ctx.fillText('MATCHUP-BASED — NOT ONE STRAIGHT RANKING', px+12, py+35);
+
+  // ===== the ranked ladder =====
+  const ladderY0 = py + panelH*0.115, rowH = panelH*0.072;
+  for(let i=0;i<POWER_ROWS.length;i++){
+    const r = POWER_ROWS[i], rowY = ladderY0 + i*rowH, on = (i===(power.row||0));
+    ctx.globalAlpha = g*(on?1:0.66);
+    // row plate
+    ctx.fillStyle = on ? 'rgba(255,207,79,0.08)' : 'rgba(255,255,255,0.03)';
+    ctx.fillRect(px+12, rowY-12, pw-24, rowH-6);
+    ctx.strokeStyle = on ? `rgba(255,207,79,${0.7*g})` : `rgba(255,255,255,${0.12*g})`; ctx.lineWidth=1;
+    ctx.strokeRect(px+12, rowY-12, pw-24, rowH-6);
+    // rank chip
+    ctx.fillStyle = r.col; ctx.globalAlpha = g*(on?1:0.7);
+    ctx.font='800 16px ui-monospace,monospace'; ctx.textAlign='left';
+    ctx.fillText('#'+r.rank, px+22, rowY+2);
+    // who + tag
+    ctx.fillStyle = r.col; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText(r.who, px+62, rowY-2);
+    ctx.fillStyle = `rgba(220,224,232,${(on?0.9:0.6)*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText(r.tag, px+62, rowY+9);
+    // relative power bar (Simon's row pulses with the revenge flip)
+    const barX = px+pw*0.56, barW = pw*0.36, by = rowY-3;
+    ctx.fillStyle = `rgba(255,255,255,${0.08*g})`; ctx.fillRect(barX, by, barW, 8);
+    let p = r.pow;
+    if(i===1 && power.revenge){ p = 1.0; }  // revenge spikes the Clara·Simon tier to match Oren
+    ctx.fillStyle = r.col; ctx.globalAlpha = g*(on?1:0.7);
+    ctx.fillRect(barX, by, barW*p, 8);
+    ctx.globalAlpha = g;
+  }
+
+  // ===== Simon REVENGE flip panel =====
+  const rvY = ladderY0 + POWER_ROWS.length*rowH + panelH*0.02;
+  const rev = !!power.revenge;
+  ctx.textAlign='center';
+  ctx.fillStyle = `rgba(255,236,184,${0.9*g})`; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillText('OREN  vs  SIMON — USUALLY TIED', cx0, rvY);
+  // two outcome chips, the live one lit
+  const chipW = pw*0.4, gap = pw*0.04;
+  const normX = cx0 - gap/2 - chipW, revX = cx0 + gap/2;
+  // NORMAL → OREN WINS
+  ctx.globalAlpha = g*(rev?0.4:1);
+  ctx.fillStyle = rev ? 'rgba(255,207,79,0.06)' : 'rgba(255,207,79,0.2)';
+  ctx.fillRect(normX, rvY+8, chipW, 22);
+  ctx.strokeStyle = rev ? `rgba(255,207,79,${0.3*g})` : `rgba(255,207,79,${0.95*g})`; ctx.lineWidth=1.5;
+  ctx.strokeRect(normX, rvY+8, chipW, 22);
+  ctx.fillStyle = rev ? 'rgba(255,236,184,0.55)' : '#ffe8a8'; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillText('NORMAL FIGHT → OREN WINS', normX+chipW/2, rvY+22);
+  // REVENGE → SIMON WINS
+  ctx.globalAlpha = g*(rev?1:0.4);
+  ctx.fillStyle = rev ? 'rgba(255,59,92,0.22)' : 'rgba(255,59,92,0.06)';
+  ctx.fillRect(revX, rvY+8, chipW, 22);
+  ctx.strokeStyle = rev ? `rgba(255,59,92,${0.95*g})` : `rgba(255,59,92,${0.3*g})`; ctx.lineWidth=1.5;
+  ctx.strokeRect(revX, rvY+8, chipW, 22);
+  ctx.fillStyle = rev ? '#ffb3c0' : 'rgba(255,179,192,0.55)'; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillText('FOR REVENGE → SIMON WINS', revX+chipW/2, rvY+22);
+  ctx.globalAlpha = g;
+  ctx.fillStyle = `rgba(255,207,79,${0.7*g})`; ctx.font='700 6px ui-monospace,monospace';
+  ctx.fillText('Simon is no longer top by default — but the revenge rule still flips the result.', cx0, rvY+40);
+
+  // ===== matchup-rule grid (3 columns) =====
+  const mY = rvY + panelH*0.085; ctx.textAlign='left';
+  ctx.fillStyle = `rgba(255,236,184,${0.9*g})`; ctx.font='800 8px ui-monospace,monospace';
+  ctx.fillText('MATCHUP RULES', px+14, mY);
+  const cols = 3, colW = (pw-28)/cols;
+  for(let i=0;i<POWER_MATCHUPS.length;i++){
+    const c = i%cols, rr = Math.floor(i/cols);
+    const mx = px+16 + c*colW, myy = mY + 13 + rr*13;
+    const hot = /REVENGE/.test(POWER_MATCHUPS[i]);
+    ctx.fillStyle = hot ? `rgba(255,179,192,${0.95*g})` : `rgba(202,224,255,${0.8*g})`;
+    ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('· '+POWER_MATCHUPS[i], mx, myy);
+  }
+
+  // ===== AU-win band — version decides the matchup =====
+  const auY = py + panelH*0.80; ctx.textAlign='left';
+  ctx.fillStyle = `rgba(255,123,208,${0.9*g})`; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillText('AU WIN CONDITIONS — THE VERSION DECIDES THE FIGHT', px+14, auY);
+  ctx.save();
+  ctx.beginPath(); ctx.rect(px+10, auY+6, pw-20, 20); ctx.clip();
+  const span = POWER_AUWINS.length*230, scroll = (power.au||0)*4 % span;
+  for(let i=0;i<POWER_AUWINS.length*2;i++){
+    const tx = px+14 + i*230 - scroll;
+    const fl = 0.5 + 0.5*Math.abs(Math.sin((power.anim||0)*2 + i));
+    ctx.globalAlpha = g*fl; ctx.fillStyle = i%2 ? '#ff7bd0' : '#ffcf4f'; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText(POWER_AUWINS[i%POWER_AUWINS.length], tx, auY+20);
+  }
+  ctx.restore(); ctx.globalAlpha=g;
+
+  // ===== verdict =====
+  const vY = py + panelH*0.91; ctx.textAlign='center'; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(255,236,184,${0.95*g})`;
+  ctx.fillText('OREN — THE MOST STABLE TOP-TIER WINNER', cx0, vY);
+  ctx.font='700 7px ui-monospace,monospace'; ctx.fillStyle = `rgba(255,207,79,${0.8*g})`;
+  ctx.fillText('CLARA = AU MONSTER · SIMON = REVENGE SPECIALIST · PINKI = AU-BASED 3RD', cx0, vY+11);
+
+  // footer note (straight from Toby)
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(255,207,79,${0.9*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('▸ '+POWER_NOTES[power.note||0], px+12, py+panelH-10);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -6083,7 +6323,7 @@ function drawHUD(){
     else { ctx.fillStyle='#39e0a8'; ctx.fillText('THE ETERNAL BATTLE — ENDURE EVERY EXCHANGE', W/2, by-6); }
   }
   // THE ADMIN ASCENSION (Lore 29 cont.) — the WITHDRAW meter. Survive the admin's reign like Simon did.
-  if(isClaraAdmin() && claraAdmin.glow>0.05){
+  if(isClaraAdmin() && !isPower() && claraAdmin.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,claraAdminM));
     ctx.fillStyle='#0a1410'; ctx.fillRect(bx, by, bw, 7);
     const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
@@ -6093,6 +6333,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(claraAdmin.held){ ctx.fillStyle='#caffe6'; ctx.fillText('★ WITHDREW — SURVIVED THE ADMIN ★', W/2, by-6); }
     else { ctx.fillStyle='#39e0a8'; ctx.fillText('THE ADMIN ASCENSION — WITHDRAW & SURVIVE', W/2, by-6); }
+  }
+  // THE POWER ORDER (Lore 29) — the READ meter. Climb with purpose to read every matchup and rise.
+  if(isPower() && power.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,powerM));
+    ctx.fillStyle='#141004'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#ffcf4f'); ig.addColorStop(0.5,'#39e0a8'); ig.addColorStop(1, winFlash>0?'#ffe8a8':'#ff7bd0');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(power.held){ ctx.fillStyle='#ffe8a8'; ctx.fillText('★ READ THE POWER ORDER ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffcf4f'; ctx.fillText('THE POWER ORDER — READ THE MATCHUPS & RISE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){

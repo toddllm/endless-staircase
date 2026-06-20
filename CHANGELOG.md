@@ -4,6 +4,51 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-20 — THE POWER ORDER: Oren rises, the ranking reshuffles (Lore 29)
+
+Based on Toby's June 20 lore (a full power-ranking update): *"Pinki rose in power and is now 3rd in power.
+Oren rose in power, Oren is most powerful now, Simon only has a few forms stronger than Oren. Oren can still
+beat those forms... Clara and Oren are tied. Oren and Simon are usually tied (unless if Oren wins, Simon wins
+if the battle is for revenge). Oren can easily beat Pinki. Simon can easily beat Pinki. Pinki with the Shifted
+AU can beat Base Clara. Oren can beat Cross Clara, Errorshifted Clara, Antishifted Clara, Reversed Clara, and
+several others. Oren proves as the most powerful. Oren also beats Black."* A new stage after the Admin
+Ascension: THE POWER ORDER — the system is now matchup-based, not one straight ranking.
+
+![Lore 29 — THE POWER ORDER. A ranking board titled "THE POWER ORDER — OREN RISES · THE RANKING RESHUFFLES"
+with the subtitle "MATCHUP-BASED — NOT ONE STRAIGHT RANKING." A ranked ladder runs down the panel: #1 OREN
+(MOST POWERFUL OVERALL) with a full gold power bar, #2 CLARA · SIMON (TIE WITH OREN — BY CONDITION) in green,
+#3 PINKI (ROSE TO 3RD · AU WIN CONDITIONS) in pink at ~60%, #4 BLACK (BELOW OREN) in gray at ~50%. Below the
+ladder, an "OREN vs SIMON — USUALLY TIED" flip panel shows two outcome chips: "NORMAL FIGHT → OREN WINS"
+(dim) and "FOR REVENGE → SIMON WINS" (lit red, currently active), with the line "Simon is no longer top by
+default — but the revenge rule still flips the result." A three-column MATCHUP RULES grid lists OREN beats
+BLACK, OREN easily beats PINKI, SIMON easily beats PINKI, CLARA beats PINKI, OREN ties CLARA, OREN & SIMON
+usually tied, OREN beats many CLARA AUs, OREN wins normal fights, SIMON wins on REVENGE. An "AU WIN CONDITIONS
+— THE VERSION DECIDES THE FIGHT" band scrolls Shifted PINKI > Base CLARA, OREN > Cross CLARA, OREN >
+Errorshifted CLARA, and more. The verdict reads "OREN — THE MOST STABLE TOP-TIER WINNER · CLARA = AU MONSTER ·
+SIMON = REVENGE SPECIALIST · PINKI = AU-BASED 3RD."](screenshots/39-power-order.png)
+
+- **A new stage.** After the Admin Ascension, climb higher and the arc turns to **THE POWER ORDER** — the new
+  top of the tower, where the whole cast's ranking is laid out and re-scored.
+- **Oren rises to #1.** A ranked ladder cycles its highlight down the order: **#1 Oren** (most powerful
+  overall, full power bar), **#2 Clara · Simon** (tie with Oren, by condition), **#3 Pinki** (risen to 3rd),
+  **#4 Black** (below Oren). Each tier has its own color and a relative power bar.
+- **Simon's revenge rule, as a live flip.** An **OREN vs SIMON** panel flips on a cycle between two outcomes:
+  **NORMAL FIGHT → OREN WINS** and **FOR REVENGE → SIMON WINS**. When the revenge side lights up, the
+  Clara·Simon tier's power bar spikes to match Oren's — Simon is no longer top by default, but the revenge
+  condition still flips the result.
+- **The matchup rules.** A three-column grid lists the canon matchups straight from Toby: Oren beats Black,
+  Oren and Simon easily beat Pinki, Clara beats Pinki, Oren ties Clara, Oren beats many Clara AUs, Oren wins
+  normal fights, Simon wins on revenge.
+- **AU win conditions.** A scrolling band carries the version-dependent wins — **Shifted Pinki > Base Clara**,
+  **Oren > Cross / Errorshifted / Antishifted / Reversed Clara** — marking that the version that walks in
+  decides the fight, not just the rank number.
+- **The verdict.** **Oren is the most stable top-tier winner**; Clara is the AU monster, Simon the revenge
+  specialist, Pinki the AU-based 3rd.
+- **The meter you read by climbing.** The new **THE POWER ORDER — READ THE MATCHUPS & RISE** meter fills as you
+  keep climbing with purpose, so you rise through the new order as you read it.
+- **All additive.** The Admin Ascension and every earlier stage are untouched; the Power Order layers on as the
+  new top stage with its own state, trigger, update, draw, HUD meter, and screenshot scene (`powerorder`).
+
 ## 2026-06-20 — THE ADMIN ASCENSION: Simon gives up, Clara becomes admin (Lore 29 cont.)
 
 Based on Toby's June 20 lore (the follow-up to the Eternal Battle): *"Simon gives up battling Clara, Simon
