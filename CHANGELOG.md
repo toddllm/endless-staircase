@@ -4,6 +4,51 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-20 — THE ADMIN ASCENSION: Simon gives up, Clara becomes admin (Lore 29 cont.)
+
+Based on Toby's June 20 lore (the follow-up to the Eternal Battle): *"Simon gives up battling Clara, Simon
+can't defeat her with his true form of the blob... Clara is now admin of the game, Simon then walks so he can
+be safe and not fight anymore. Clara now beats all the other characters. Clara has the ability of dashes, the
+daggar slash, rebirth/self-resurrection, teleportation... Clara also makes slash beams... She makes her first
+attack so intense and says 'Was that to intense for a first attack? Why blame me when it is your fault?!',
+Simon says 'Heh heh, that was your fault wasn't it?'... Clara's danger level is ∞... Clara is both Undertale
+and Classics, the most broken and corrupt... Clara also has so many AUs."* And the next message: *"Clara is
+actually main character with Simon. Clara has all Undertale AUs and All Classics AUs, that is so many AUs."*
+A new final stage after the Eternal Battle: THE ADMIN ASCENSION.
+
+![Lore 29 — THE ADMIN ASCENSION: Clara's admin throne room. The banner reads "CLARA — THE ADMIN ASCENSION ·
+SHE RULES THE GAME" with "DANGER LEVEL ∞ · ABOVE SIMON · SHE BEATS EVERY OTHER CHARACTER." On the left,
+Simon's true form — a minimal black BLOB with two simple white eyes, ringed by 404 / .EXE static and a gold
+walk-away arrow — is labeled "SIMON · TRUE FORM (THE BLOB) / GAVE UP · WALKED AWAY / lightning cat that wanted
+to devour the game." On the right, CLARA stands as the glitch figure (RGB-split body, green cloak, scanlines,
+many-colored aura) labeled "▣ ADMIN · CLARA · ADMIN · BOTH UNDERTALE & CLASSICS · MOST BROKEN," firing a cyan
+SLASH BEAM. A row of move chips shows her full attack pattern — DASH · DAGGER SLASH · SLASH BEAM (lit) ·
+TELEPORT · REBIRTH. Below, the dialogue: CLARA "Was that too intense for a first attack? Why blame me when it
+is your fault?!" / SIMON "Heh heh, that was your fault wasn't it?" An AU OVERFLOW band scrolls "ALL UNDERTALE
+AUs · ALL CLASSICS AUs," and the verdict reads "CLARA & SIMON — THE TWO MAIN CHARACTERS."](screenshots/38-clara-admin-ascension.png)
+
+- **A new final stage.** After the Eternal Battle resolves, climb higher and the arc turns: **THE ADMIN
+  ASCENSION** becomes the new top of the tower.
+- **Simon gives up — even in his true form.** Simon cannot beat Clara even as his **true form, the BLOB** (a
+  minimal black presence with simple white eyes and 404 / .EXE emptiness around it). So he **walks away to stay
+  safe**: the lightning cat that wanted to devour the game steps back, fading off the panel behind a gold arrow.
+- **Clara becomes ADMIN.** She takes over the game and beats the rest of the cast. A pulsing **DANGER LEVEL ∞**
+  banner sits above the arena — her danger is now above Simon's.
+- **Her full attack pattern.** A row of move chips cycles through her arsenal one at a time, the active one lit
+  and animating: **DASH, DAGGER SLASH, SLASH BEAM, TELEPORT, REBIRTH** (self-resurrection). Attacks are hard to
+  dodge; a `REBIRTHS ×N` counter climbs.
+- **The "Why blame me?" dialogue.** A live strip cycles the exchange — Clara: *"Was that too intense for a
+  first attack? Why blame me when it is your fault?!"*; Simon: *"Heh heh, that was your fault wasn't it?"*;
+  Clara again: *"Why blame me when it is your fault?!"*
+- **AU overflow.** A scrolling band of flickering AU tags carries **all Undertale AUs and all Classics AUs**,
+  marking Clara as an AU-collection being, both Undertale and Classics, the most broken and corrupt.
+- **The two main characters.** The verdict strip reads **CLARA & SIMON — THE TWO MAIN CHARACTERS**: the
+  catastrophic core (Simon) and the battle/admin core (Clara).
+- **The meter you survive by withdrawing.** The new **THE ADMIN ASCENSION — WITHDRAW & SURVIVE** meter fills as
+  you keep climbing: you survive by stepping back, exactly as Simon did, rather than by winning.
+- **All additive.** The Eternal Battle and every earlier stage are untouched; the Admin Ascension layers on as
+  the new top stage with its own state, trigger, update, draw, HUD meter, and screenshot scene (`claraadmin`).
+
 ## 2026-06-20 — THE ETERNAL BATTLE: Clara, the king-vs-queen fight that never ends (Lore 29 cont.)
 
 Based on Toby's June 20 lore (a new being, Clara): *"Clara (the ancient being from a corrupted Classics X

@@ -447,6 +447,7 @@ let danger, dangerH, dangerM;
 let codex, codexH, codexM;
 let web, webH, webM;
 let clara, claraH, claraM;
+let claraAdmin, claraAdminH, claraAdminM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -612,6 +613,21 @@ function reset(){
             dodge:0, attackT:0, attacks:[], rebirth:0, rebirthT:0, mercy:0, glitchT:0, noteT:2.6, note:0, eventT:2.0 };
   claraH = webH + 1100;
   claraM = 0.25;  // THE ETERNAL BATTLE meter: climb with purpose to ENDURE every exchange (the battle never ends)
+  claraAdmin = { active:false, t:0, glow:0, done:false, held:false, anim:0,
+            // Lore 29 cont. (June 20) — THE ADMIN ASCENSION. Toby's follow-up to the Eternal Battle: Simon
+            // cannot defeat Clara even in his TRUE FORM (the BLOB — a minimal black presence with simple white
+            // eyes and 404/.EXE emptiness around it), so he GIVES UP and walks away to stay safe. The lightning
+            // cat that wanted to devour the game steps back. CLARA becomes ADMIN of the game and beats all the
+            // other characters. Her full attack pattern is enormous: DASHES, a DAGGER SLASH, SLASH BEAMS,
+            // TELEPORTATION, and REBIRTH / self-resurrection — attacks that are hard to dodge. Her danger level
+            // is ∞, above Simon's. She is both Undertale and Classics, the most broken and corrupt, and she
+            // holds ALL Undertale AUs and ALL Classics AUs (an AU-overflow being). She judges as she fights:
+            // "Was that too intense for a first attack? Why blame me when it is your fault?!" Clara and Simon
+            // are now the TWO main characters — the catastrophic core (Simon) and the battle/admin core (Clara).
+            move:0, moveT:0, blink:0, rebirth:0, simonWalk:0, au:0, lineT:0, line:0,
+            noteT:2.6, note:0, eventT:2.0, glitchT:0 };
+  claraAdminH = claraH + 1100;
+  claraAdminM = 0.25;  // THE ADMIN ASCENSION meter: climb to WITHDRAW like Simon did and survive the admin's reign
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -679,6 +695,8 @@ function isCodex(){ return !!(codex && (codex.active || codex.done)); }
 function isWeb(){ return !!(web && (web.active || web.done)); }
 // Lore 29 cont. (June 20) — after the Relation Web, Toby introduced Clara, the eternal-battle queen: THE ETERNAL BATTLE
 function isClara(){ return !!(clara && (clara.active || clara.done)); }
+// Lore 29 cont. (June 20) — after the Eternal Battle, Simon gives up and Clara takes over: THE ADMIN ASCENSION
+function isClaraAdmin(){ return !!(claraAdmin && (claraAdmin.active || claraAdmin.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1425,6 +1443,29 @@ function update(dt){
   if(clara.glow < (isClara() ? 1 : 0))
     clara.glow = Math.min(1, clara.glow + dt*0.5);
 
+  /* ---- Lore 29 cont. (June 20) — THE ADMIN ASCENSION. After the Eternal Battle, Simon cannot beat Clara even
+         in his true form (the blob), so he GIVES UP and walks away to stay safe. Clara becomes ADMIN, beats the
+         rest of the cast, and unleashes her full attack pattern (dashes, dagger slash, slash beams, teleport,
+         rebirth). Her danger level is ∞, and she holds all Undertale + all Classics AUs. ---- */
+  if(clara.done && !claraAdmin.active && !claraAdmin.done && height > claraAdminH){
+    claraAdmin.active = true; claraAdmin.t = 0;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE ADMIN ASCENSION'; warnT = 2.8;
+    showTaunt('Simon could not win even as the blob, so he gave up and walked away. Clara is admin now.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA — ADMIN · DANGER ∞', col:'#9affc8' });
+    AUDIO.zap();
+  }
+  if(claraAdmin.active){
+    claraAdmin.t += dt;
+    if(claraAdmin.t>1.6 && claraAdmin.t<1.68) showTaunt('Clara: "Was that too intense for a first attack? Why blame me when it is your fault?!"');
+    if(claraAdmin.t>3.2 && claraAdmin.t<3.26){ shake = Math.max(shake,8); AUDIO.zap(); }
+    if(claraAdmin.t>3.2 && claraAdmin.t<3.28) showTaunt('Simon: "Heh heh, that was your fault wasn\'t it?" Clara: "Why blame me when it is your fault?!"');
+    if(claraAdmin.t>4.6 && claraAdmin.t<4.68) showTaunt('Clara holds all Undertale AUs and all Classics AUs. She and Simon are the two main characters.');
+    if(claraAdmin.t > 5.6){ claraAdmin.active = false; claraAdmin.done = true; }
+  }
+  if(claraAdmin.glow < (isClaraAdmin() ? 1 : 0))
+    claraAdmin.glow = Math.min(1, claraAdmin.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1445,7 +1486,8 @@ function update(dt){
   if(isDanger() && !isCodex()) updateDanger(dt);
   if(isCodex() && !isWeb()) updateCodex(dt);
   if(isWeb() && !isClara()) updateWeb(dt);
-  if(isClara()) updateClara(dt);
+  if(isClara() && !isClaraAdmin()) updateClara(dt);
+  if(isClaraAdmin()) updateClaraAdmin(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2537,7 +2579,8 @@ function draw(){
   if(isDanger() && !isCodex() && danger.glow>0.02) drawDanger();
   if(isCodex() && !isWeb() && codex.glow>0.02) drawCodex();
   if(isWeb() && !isClara() && web.glow>0.02) drawWeb();
-  if(isClara() && clara.glow>0.02) drawClara();
+  if(isClara() && !isClaraAdmin() && clara.glow>0.02) drawClara();
+  if(isClaraAdmin() && claraAdmin.glow>0.02) drawClaraAdmin();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -5444,6 +5487,275 @@ function drawClara(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===========================================================================
+   Lore 29 cont. (June 20) — THE ADMIN ASCENSION (CLARA becomes admin, Simon gives up)
+   Toby: "Simon gives up battling Clara, Simon can't defeat her with his true form
+   of the blob... Clara is now admin of the game, Simon then walks so he can be safe
+   and not fight anymore. Clara now beats all the other characters. Clara has the
+   ability of dashes, the daggar slash, rebirth/self-resurrection, teleportation...
+   Clara also makes slash beams... 'Why blame me when it is your fault?!'... Clara's
+   danger level is ∞... Clara is both Undertale and Classics, the most broken and
+   corrupt... Clara also has so many AUs." And: "Clara is actually main character with
+   Simon. Clara has all Undertale AUs and All Classics AUs."
+   The scene: Simon's true form (the blob) walks away fading on the left; Clara stands
+   as ADMIN on the right cycling her full attack pattern; a DANGER ∞ banner; the
+   "Why blame me?" dialogue; and an AU-overflow band scrolling all the AUs.
+   =========================================================================== */
+const CLARA_ADMIN_MOVES = ['DASH','DAGGER SLASH','SLASH BEAM','TELEPORT','REBIRTH'];
+const CLARA_ADMIN_NOTES = [
+  'Simon could not win even in his true form, the blob, so he gave up.',
+  'Simon walked away to stay safe. The lightning cat stepped back.',
+  'Clara is now ADMIN of the game. She beats all the other characters.',
+  'Clara dashes, slashes with her dagger, fires slash beams, teleports.',
+  'Clara can rebirth and resurrect herself. Her attacks are hard to dodge.',
+  'Clara\'s danger level is ∞ — above Simon\'s.',
+  'Clara is both Undertale and Classics, the most broken and corrupt.',
+  'Clara holds all Undertale AUs and all Classics AUs. So many AUs.',
+  'Clara judges as she fights: "Why blame me when it is your fault?!"',
+  'Clara and Simon are the two main characters now.'
+];
+const CLARA_ADMIN_EVENTS = ['THE ADMIN ASCENSION','DANGER ∞','CLARA IS ADMIN','SIMON GAVE UP',
+  'ALL UNDERTALE AUs','ALL CLASSICS AUs','SHE BEATS EVERYONE','TWO MAIN CHARACTERS','HARD TO DODGE'];
+const CLARA_DIALOGUE = [
+  {who:'CLARA', txt:'Was that too intense for a first attack? Why blame me when it is your fault?!', col:'#9affc8'},
+  {who:'SIMON', txt:'Heh heh, that was your fault wasn\'t it?', col:'#ffd84f'},
+  {who:'CLARA', txt:'Why blame me when it is your fault?!', col:'#9affc8'}
+];
+// AU labels for the overflow band — all Undertale AUs + all Classics AUs (just flickering tags)
+const CLARA_AUS = ['UT','UF','US','SwapFell','Storyshift','Dusttale','Glitchtale','Aftertale','Reapertale',
+  'Outertale','Horrortale','Inverted','Error','Ink','Dream','Nightmare','Cross','Epic','CLASSIC','CLASSIC-X',
+  'RL-AU','SCF-AU','VOID-AU','404-AU','PLAGUE-AU','ATOMIX-AU'];
+
+function updateClaraAdmin(dt){
+  claraAdmin.t = (claraAdmin.t||0) + dt;
+  claraAdmin.anim = (claraAdmin.anim||0) + dt;
+  claraAdmin.glitchT = (claraAdmin.glitchT||0) + dt;
+  // cycle through her full attack pattern, one move at a time
+  claraAdmin.moveT = (claraAdmin.moveT||0) + dt;
+  if(claraAdmin.moveT >= 1.1){ claraAdmin.moveT = 0; claraAdmin.move = ((claraAdmin.move||0)+1) % CLARA_ADMIN_MOVES.length;
+    if(CLARA_ADMIN_MOVES[claraAdmin.move]==='TELEPORT') claraAdmin.blink = 1;
+    if(CLARA_ADMIN_MOVES[claraAdmin.move]==='REBIRTH'){ claraAdmin.rebirth = (claraAdmin.rebirth||0)+1; shake = Math.max(shake,5); }
+    AUDIO.zap();
+  }
+  if(claraAdmin.blink>0) claraAdmin.blink = Math.max(0, claraAdmin.blink - dt*2.2);
+  // Simon's true form walks away, fading off the panel
+  claraAdmin.simonWalk = Math.min(1, (claraAdmin.simonWalk||0) + dt*0.05);
+  // AU overflow scroll
+  claraAdmin.au = (claraAdmin.au||0) + dt*22;
+  // dialogue cycles
+  claraAdmin.lineT -= dt;
+  if(claraAdmin.lineT <= 0){ claraAdmin.lineT = 2.8; claraAdmin.line = ((claraAdmin.line||0)+1) % CLARA_DIALOGUE.length; }
+  // notes + floating events
+  claraAdmin.noteT -= dt;
+  if(claraAdmin.noteT <= 0){ claraAdmin.noteT = 2.6; claraAdmin.note = ((claraAdmin.note||0)+1) % CLARA_ADMIN_NOTES.length; }
+  claraAdmin.eventT -= dt;
+  if(claraAdmin.eventT <= 0){ claraAdmin.eventT = rnd(2.2,3.6);
+    floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(CLARA_ADMIN_EVENTS), col:pick(['#39e0a8','#3bf0ff','#ff3bd0']) });
+  }
+  // THE ADMIN ASCENSION meter — climb to WITHDRAW like Simon did and survive the admin's reign
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  claraAdminM = Math.max(0, Math.min(1, claraAdminM + (moving ? dt*0.05 : -dt*0.03)));
+  if(claraAdminM >= 1 && !claraAdmin.held){
+    claraAdmin.held = true; winFlash = 1; emer += 5; shake = Math.max(shake,8);
+    showTaunt('You did what even Simon did: you stepped back and survived the admin\'s reign.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ WITHDREW — SURVIVED THE ADMIN ★', col:'#caffe6' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(CLARA_AURA)));
+    AUDIO.zap();
+  }
+}
+
+// Clara's complex glitch figure — RGB-split, green cloak, tanish body, scanlines, aura.
+// cx = center x, feetY = baseline; scale multiplies size. (Same look as the Eternal Battle queen.)
+function drawClaraFigure(cx, feetY, g, scale, glitchT, anim, rebirth){
+  const bodyH = (74 + rebirth*1.5)*scale;
+  const fY = feetY, topY = fY - bodyH, midY = (fY+topY)/2;
+  const jit = (Math.sin(glitchT*53.0)*0.5 + Math.sin(glitchT*97.0)*0.5);
+  ctx.globalAlpha = g*0.25; ctx.fillStyle = '#39e0a8';
+  ctx.beginPath(); ctx.ellipse(cx, fY, 22*scale, 6, 0, 0, Math.PI*2); ctx.fill();
+  for(let i=0;i<CLARA_AURA.length;i++){
+    const ph = anim*1.4 + i*0.8, rr = (26+i*4+Math.sin(ph)*5+rebirth*1.2)*scale;
+    ctx.globalAlpha = g*0.14; ctx.strokeStyle = CLARA_AURA[i]; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.ellipse(cx, midY, rr, rr*1.15, 0, 0, Math.PI*2); ctx.stroke();
+  }
+  const headR = 10*scale;
+  const drawBody = function(ox, oy, col, alpha){
+    ctx.globalAlpha = g*alpha; ctx.fillStyle = col;
+    ctx.beginPath();
+    ctx.moveTo(cx-16*scale+ox, fY+oy);
+    ctx.quadraticCurveTo(cx-12*scale+ox, midY+oy, cx-9*scale+ox, topY+12*scale+oy);
+    ctx.lineTo(cx+9*scale+ox, topY+12*scale+oy);
+    ctx.quadraticCurveTo(cx+12*scale+ox, midY+oy, cx+16*scale+ox, fY+oy);
+    ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.arc(cx+ox, topY+oy, headR, 0, Math.PI*2); ctx.fill();
+  };
+  const sp = (2.5 + jit*1.8);
+  drawBody(-sp,0,'#ff3bd0',0.5); drawBody(sp,0,'#3bf0ff',0.5); drawBody(0,0,'#caa97a',0.9);
+  ctx.globalAlpha = g*0.85; ctx.fillStyle = '#39e0a8';
+  ctx.beginPath();
+  ctx.moveTo(cx-17*scale, topY+30*scale);
+  ctx.quadraticCurveTo(cx, topY+8*scale, cx+17*scale, topY+30*scale);
+  ctx.quadraticCurveTo(cx, topY+20*scale, cx-17*scale, topY+30*scale);
+  ctx.closePath(); ctx.fill();
+  ctx.globalAlpha = g*0.4;
+  for(let s2=0;s2<5;s2++){ const sy = topY + ((glitchT*40 + s2*18) % bodyH);
+    ctx.fillStyle = CLARA_AURA[(s2+rebirth)%CLARA_AURA.length];
+    ctx.fillRect(cx-17*scale + jit*3, sy, 34*scale, 2); }
+  ctx.globalAlpha = g;
+}
+
+function drawClaraAdmin(){
+  const g = claraAdmin.glow||0, top = cameraY;
+  ctx.save();
+  // Admin throne-room wash — deep green/violet with a hard authority tint
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(5,12,10,${0.60*g})`);
+  bg.addColorStop(1, `rgba(10,5,14,${0.58*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.globalAlpha = g;
+
+  const px = W*0.04, pw = W*0.92, py = top + H*0.085, panelH = H*0.83, cx0 = px+pw/2;
+  ctx.fillStyle = `rgba(9,14,15,${0.82*g})`;
+  ctx.strokeStyle = `rgba(57,224,168,${0.55*g})`; ctx.lineWidth=1.5;
+  ctx.fillRect(px, py, pw, panelH); ctx.strokeRect(px, py, pw, panelH);
+
+  // title bar
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(202,255,230,${0.95*g})`;
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText('CLARA — THE ADMIN ASCENSION · SHE RULES THE GAME', px+12, py+18);
+  ctx.textAlign='right'; ctx.fillStyle = `rgba(57,224,168,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('Lore 29 cont. · Toby, June 20', px+pw-12, py+18);
+  ctx.textAlign='left';
+  ctx.strokeStyle = `rgba(57,224,168,${0.25*g})`; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(px+8, py+26); ctx.lineTo(px+pw-8, py+26); ctx.stroke();
+
+  // ---- DANGER ∞ banner ----
+  const dY = py + 46; ctx.textAlign='center';
+  const pulse = 0.7 + 0.3*Math.sin((claraAdmin.anim||0)*4);
+  ctx.fillStyle = `rgba(255,59,92,${pulse*g})`; ctx.font='800 22px ui-monospace,monospace';
+  ctx.fillText('DANGER LEVEL  ∞', cx0, dY);
+  ctx.fillStyle = `rgba(255,138,138,${0.85*g})`; ctx.font='700 8px ui-monospace,monospace';
+  ctx.fillText('ABOVE SIMON · SHE BEATS EVERY OTHER CHARACTER', cx0, dY+12);
+
+  // ===== arena: Simon's true form (the blob) walking away (left) vs Clara the admin (right) =====
+  const arenaY = py + panelH*0.36;
+  const sw = claraAdmin.simonWalk||0;
+  const blobX = px + pw*0.24 - sw*pw*0.16;
+  const blobA = (1 - sw*0.55);
+  // 404/.EXE emptiness static around the blob
+  ctx.globalAlpha = g; ctx.fillStyle = `rgba(120,130,140,${0.18*g*blobA})`;
+  for(let i=0;i<10;i++){ ctx.fillRect(blobX-26 + (i*5), arenaY-46 + ((i*13)%52), 3, 2); }
+  // the blob body — minimal black presence
+  ctx.fillStyle = `rgba(8,8,10,${0.95*g*blobA})`;
+  ctx.beginPath(); ctx.ellipse(blobX, arenaY-14, 20, 24, 0, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.ellipse(blobX, arenaY+2, 22, 10, 0, 0, Math.PI*2); ctx.fill();
+  // simple white eyes
+  ctx.fillStyle = `rgba(240,240,245,${0.95*g*blobA})`;
+  ctx.beginPath(); ctx.arc(blobX-7, arenaY-18, 3.2, 0, Math.PI*2); ctx.arc(blobX+7, arenaY-18, 3.2, 0, Math.PI*2); ctx.fill();
+  // faint 404 / .EXE tags
+  ctx.fillStyle = `rgba(150,160,170,${0.55*g*blobA})`; ctx.font='700 7px ui-monospace,monospace'; ctx.textAlign='center';
+  ctx.fillText('404', blobX-24, arenaY-30); ctx.fillText('.EXE', blobX+24, arenaY-26);
+  // a small arrow showing he walks away
+  ctx.globalAlpha = g; ctx.strokeStyle = `rgba(255,216,80,${0.4*g})`; ctx.lineWidth=1.5;
+  ctx.beginPath(); ctx.moveTo(blobX-30, arenaY+6); ctx.lineTo(blobX-58, arenaY+6); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(blobX-52, arenaY+2); ctx.lineTo(blobX-58, arenaY+6); ctx.lineTo(blobX-52, arenaY+10); ctx.stroke();
+  ctx.fillStyle = `rgba(255,216,80,${0.9*g})`; ctx.font='800 8px ui-monospace,monospace';
+  ctx.fillText('SIMON · TRUE FORM (THE BLOB)', blobX, arenaY+24);
+  ctx.fillStyle = `rgba(232,224,200,${0.72*g})`; ctx.font='700 6px ui-monospace,monospace';
+  ctx.fillText('GAVE UP · WALKED AWAY', blobX, arenaY+33);
+  ctx.fillText('lightning cat that wanted to devour the game', blobX, arenaY+42);
+
+  // Clara as ADMIN on the right — the full glitch figure, with her active attack effect
+  const claraX = px + pw*0.74;
+  drawClaraFigure(claraX, arenaY, g, 1.15, claraAdmin.glitchT||0, claraAdmin.anim||0, claraAdmin.rebirth||0);
+  // the active attack effect emanating from Clara
+  const mv = CLARA_ADMIN_MOVES[claraAdmin.move||0], mt = (claraAdmin.moveT||0)/1.1;
+  ctx.save(); ctx.globalAlpha = g;
+  if(mv==='DASH'){
+    for(let i=0;i<5;i++){ ctx.globalAlpha=g*(0.55-i*0.09); ctx.strokeStyle='#3bf0ff'; ctx.lineWidth=2;
+      ctx.beginPath(); ctx.moveTo(claraX - i*10, arenaY-34); ctx.lineTo(claraX - i*10 - 28, arenaY-34); ctx.stroke(); }
+  } else if(mv==='DAGGER SLASH'){
+    ctx.globalAlpha=g*(1-mt*0.6); ctx.strokeStyle='#caffe6'; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.arc(claraX-22, arenaY-34, 30, -0.7+mt*1.4, 0.6+mt*1.4); ctx.stroke();
+  } else if(mv==='SLASH BEAM'){
+    ctx.globalAlpha=g*(1-mt*0.4); ctx.strokeStyle='#3bf0ff'; ctx.lineWidth=2+Math.abs(Math.sin(mt*9));
+    const bx2 = claraX - 30 - mt*pw*0.5;
+    ctx.beginPath(); ctx.moveTo(claraX-18, arenaY-36); ctx.lineTo(bx2, arenaY-44); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(claraX-18, arenaY-28); ctx.lineTo(bx2, arenaY-20); ctx.stroke();
+  } else if(mv==='TELEPORT'){
+    for(let i=0;i<3;i++){ ctx.globalAlpha=g*0.35*(1-mt); ctx.fillStyle=CLARA_AURA[(i*2)%CLARA_AURA.length];
+      ctx.beginPath(); ctx.arc(claraX + (i-1)*26, arenaY-34, 6, 0, Math.PI*2); ctx.fill(); }
+  } else if(mv==='REBIRTH'){
+    ctx.globalAlpha=g*(1-mt); ctx.strokeStyle='#ff7b00'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.arc(claraX, arenaY-34, 10+mt*44, 0, Math.PI*2); ctx.stroke();
+  }
+  ctx.restore(); ctx.globalAlpha=g;
+  // ADMIN badge + labels
+  ctx.fillStyle = `rgba(57,224,168,${0.95*g})`; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+  ctx.fillText('▣ ADMIN', claraX, arenaY-82);
+  ctx.fillStyle = `rgba(202,255,230,${0.95*g})`; ctx.font='800 8px ui-monospace,monospace';
+  ctx.fillText('CLARA · ADMIN', claraX, arenaY+24);
+  ctx.fillStyle = `rgba(57,224,168,${0.85*g})`; ctx.font='700 6px ui-monospace,monospace';
+  ctx.fillText('BOTH UNDERTALE & CLASSICS · MOST BROKEN', claraX, arenaY+33);
+  ctx.fillText('REBIRTHS ×'+(claraAdmin.rebirth||0), claraX, arenaY+42);
+
+  // ===== full attack-pattern showcase: a row of move chips, the active one lit =====
+  const moveRowY = py + panelH*0.54, chipW = (pw-24)/CLARA_ADMIN_MOVES.length;
+  ctx.textAlign='center';
+  for(let i=0;i<CLARA_ADMIN_MOVES.length;i++){
+    const mx = px+12 + i*chipW, on = (i===(claraAdmin.move||0));
+    ctx.globalAlpha = g*(on?1:0.5);
+    ctx.fillStyle = on ? 'rgba(57,224,168,0.22)' : 'rgba(57,224,168,0.06)';
+    ctx.fillRect(mx+3, moveRowY-12, chipW-6, 18);
+    ctx.strokeStyle = on ? `rgba(57,224,168,${0.9*g})` : `rgba(57,224,168,${0.3*g})`; ctx.lineWidth=1;
+    ctx.strokeRect(mx+3, moveRowY-12, chipW-6, 18);
+    ctx.fillStyle = on ? '#caffe6' : 'rgba(202,255,230,0.6)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText(CLARA_ADMIN_MOVES[i], mx+chipW/2, moveRowY+1);
+  }
+  ctx.globalAlpha = g;
+  ctx.fillStyle = `rgba(57,224,168,${0.7*g})`; ctx.font='700 7px ui-monospace,monospace';
+  ctx.fillText('HER FULL ATTACK PATTERN — HARD TO DODGE · SELF-RESURRECTS', cx0, moveRowY+15);
+
+  // ===== dialogue strip: the "Why blame me?" exchange =====
+  const dlgY = py + panelH*0.66; ctx.textAlign='left';
+  for(let i=0;i<CLARA_DIALOGUE.length;i++){
+    const d = CLARA_DIALOGUE[i], on = (i===(claraAdmin.line||0));
+    ctx.globalAlpha = g*(on?1:0.4);
+    ctx.fillStyle = d.col; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText(d.who+':', px+14, dlgY + i*14);
+    ctx.fillStyle = `rgba(232,236,240,${(on?0.95:0.55)*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('"'+d.txt+'"', px+58, dlgY + i*14);
+  }
+  ctx.globalAlpha = g;
+
+  // ===== AU overflow band — all Undertale AUs + all Classics AUs scrolling =====
+  const auY = py + panelH*0.80; ctx.textAlign='left';
+  ctx.fillStyle = `rgba(57,224,168,${0.9*g})`; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillText('AU OVERFLOW — ALL UNDERTALE AUs · ALL CLASSICS AUs', px+14, auY);
+  ctx.save();
+  ctx.beginPath(); ctx.rect(px+10, auY+6, pw-20, 20); ctx.clip();
+  const span = CLARA_AUS.length*54, scroll = (claraAdmin.au||0) % span;
+  for(let i=0;i<CLARA_AUS.length*2;i++){
+    const tx = px+14 + i*54 - scroll;
+    const fl = 0.4 + 0.6*Math.abs(Math.sin((claraAdmin.glitchT||0)*3 + i));
+    ctx.globalAlpha = g*fl; ctx.fillStyle = CLARA_AURA[i%CLARA_AURA.length]; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText(CLARA_AUS[i%CLARA_AUS.length], tx, auY+20);
+  }
+  ctx.restore(); ctx.globalAlpha=g;
+
+  // ===== verdict: the two main characters =====
+  const vY = py + panelH*0.91; ctx.textAlign='center'; ctx.font='800 9px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(202,255,230,${0.95*g})`;
+  ctx.fillText('CLARA & SIMON — THE TWO MAIN CHARACTERS', cx0, vY);
+  ctx.font='700 7px ui-monospace,monospace'; ctx.fillStyle = `rgba(57,224,168,${0.8*g})`;
+  ctx.fillText('CATASTROPHIC CORE (SIMON) · BATTLE & ADMIN CORE (CLARA)', cx0, vY+11);
+
+  // footer note (straight from Toby)
+  ctx.textAlign='left'; ctx.fillStyle = `rgba(57,224,168,${0.9*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('▸ '+CLARA_ADMIN_NOTES[claraAdmin.note||0], px+12, py+panelH-10);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -5759,7 +6071,7 @@ function drawHUD(){
     else { ctx.fillStyle='#ff8ab0'; ctx.fillText('THE RELATION WEB — TRACE EVERY BOND', W/2, by-6); }
   }
   // THE ETERNAL BATTLE (Lore 29 cont.) — the ENDURE meter. The fight can never be won, only held.
-  if(isClara() && clara.glow>0.05){
+  if(isClara() && !isClaraAdmin() && clara.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,claraM));
     ctx.fillStyle='#0a1410'; ctx.fillRect(bx, by, bw, 7);
     const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
@@ -5769,6 +6081,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(clara.held){ ctx.fillStyle='#caffe6'; ctx.fillText('★ ENDURED — THE BATTLE GOES ON FOREVER ★', W/2, by-6); }
     else { ctx.fillStyle='#39e0a8'; ctx.fillText('THE ETERNAL BATTLE — ENDURE EVERY EXCHANGE', W/2, by-6); }
+  }
+  // THE ADMIN ASCENSION (Lore 29 cont.) — the WITHDRAW meter. Survive the admin's reign like Simon did.
+  if(isClaraAdmin() && claraAdmin.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,claraAdminM));
+    ctx.fillStyle='#0a1410'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#39e0a8'); ig.addColorStop(0.5,'#3bf0ff'); ig.addColorStop(1, winFlash>0?'#caffe6':'#ff3bd0');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(claraAdmin.held){ ctx.fillStyle='#caffe6'; ctx.fillText('★ WITHDREW — SURVIVED THE ADMIN ★', W/2, by-6); }
+    else { ctx.fillStyle='#39e0a8'; ctx.fillText('THE ADMIN ASCENSION — WITHDRAW & SURVIVE', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -5782,9 +6106,10 @@ function drawHUD(){
   if(corrupted()){
     ctx.textAlign='center';
     const blink=(Math.sin(time*12)>0)?1:0.5; ctx.globalAlpha=blink;
-    ctx.fillStyle = isClara()? '#39e0a8' : (isWeb()? '#ff8ab0' : (isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c')))))))))))))))))))) ;
+    ctx.fillStyle = isClaraAdmin()? '#39e0a8' : (isClara()? '#39e0a8' : (isWeb()? '#ff8ab0' : (isCodex()? '#cfe0ff' : (isDanger()? '#ffe24a' : (isPlague()? '#9affc8' : (isHallu()? '#ffe24a' : (isSmooth()? '#ffe24a' : (isWall()? '#ffe24a' : (isAlien()? '#aef34a' : (isFirey()? '#ff8a3b' : (isTreads()? '#3ee6ff' : (isScf404()? '#b98cff' : (isScf()? '#ffe98a' : (isTriad()? '#dff0ff' : (isJudge()? '#bfe0ff' : (isVoid()? '#b98cff' : (isSounds()? '#ffd84f' : (isResidual()? '#9affc8' : (isAtomix()? '#ff2b4c' : (isExecutioner()? '#3ee6ff' : (isExposed()? '#b98cff' : '#ff3b5c'))))))))))))))))))))) ;
     ctx.font='800 11px ui-monospace,monospace';
-    ctx.fillText(isClara()? '▓ THE ETERNAL BATTLE — CLARA, KING vs QUEEN ▓'
+    ctx.fillText(isClaraAdmin()? '▓ THE ADMIN ASCENSION — CLARA, DANGER ∞ ▓'
+               : (isClara()? '▓ THE ETERNAL BATTLE — CLARA, KING vs QUEEN ▓'
                : (isWeb()? '▓ THE RELATION WEB — HUNT-LINES & BONDS ▓'
                : (isCodex()? '▓ THE STATUS CODEX — EVERY FATE FILED ▓'
                : (isDanger()? '▓ THE DANGER INDEX — SCF FINAL RANKING ▓'
@@ -5804,7 +6129,7 @@ function drawHUD(){
                : (isResidual()? '▓ THE RESIDUAL WAR ▓'
                : (isAtomix()? '▓ THE ATOMIX WAR ▓'
                : (isExecutioner()? '▓ THE SILENT EXECUTIONER ▓'
-               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓')))))))))))))))))))), W/2, 64);
+               : (isExposed()? '▓ EXPOSED — THE BLURRY MIND ▓' : '▓ .EXE VIRUS — PHASE 2 ▓'))))))))))))))))))))), W/2, 64);
     ctx.globalAlpha=1;
   }
 }
@@ -5820,7 +6145,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Eternal Battle', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Admin Ascension', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -5854,7 +6179,10 @@ function drawTitle(){
     'SUMONA is their child; SIMON is OREN\'s brother; Simon redirects',
     'the battles toward the dead. TRACE every bond before a line snaps.',
     'THE ETERNAL BATTLE: CLARA attacks. SIMON is the KING, CLARA the',
-    'QUEEN; neither can lose, draws do not exist, so it goes on forever.'
+    'QUEEN; neither can lose, draws do not exist, so it goes on forever.',
+    'THE ADMIN ASCENSION: Simon can\'t win even as the BLOB, so he GIVES',
+    'UP and walks away. CLARA is ADMIN, danger ∞: dash, dagger, slash beam,',
+    'teleport, rebirth, all the AUs. "Why blame me when it is your fault?!"'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
@@ -5894,7 +6222,10 @@ function drawDeath(){
     ctx.fillText('best '+best+' m', W/2, H*0.57); }
   // lore sting
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  if(isClara()){
+  if(isClaraAdmin()){
+    ctx.fillText('"I could not beat her even as the blob, so I gave up and walked away to stay safe. Clara is', W/2, H*0.64);
+    ctx.fillText(' admin now, danger ∞, all the AUs. Why blame her when it is your fault?" — The Admin Ascension', W/2, H*0.67);
+  } else if(isClara()){
     ctx.fillText('"Clara is canonically stronger, and she broke the Mercy button. I am the king, she is the', W/2, H*0.64);
     ctx.fillText(' queen. Neither can lose, draws do not exist, so we fight forever." — The Eternal Battle', W/2, H*0.67);
   } else if(isWeb()){

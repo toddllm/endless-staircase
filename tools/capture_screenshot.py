@@ -892,6 +892,34 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "claraadmin": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE ADMIN ASCENSION — Clara is admin, Simon's true form (the blob) walks away
+        if (typeof claraAdmin!=='undefined'){
+          claraAdmin.active=true; claraAdmin.done=false; claraAdmin.glow=1; claraAdmin.t=4.0;
+          claraAdmin.anim=2.2; claraAdmin.glitchT=0.7; claraAdmin.rebirth=4;
+          claraAdmin.move=2; claraAdmin.moveT=0.4; claraAdmin.simonWalk=0.45;
+          claraAdmin.line=0; claraAdmin.lineT=2.4; claraAdmin.note=2; claraAdmin.noteT=2.4; claraAdmin.au=120;
+        }
+        if (typeof claraAdminM!=='undefined'){ claraAdminM=0.66; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof claraAdmin!=='undefined'){ claraAdmin.glow=1; claraAdmin.rebirth=4;
+          claraAdmin.move=2; claraAdmin.moveT=0.4; claraAdmin.simonWalk=0.45; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.3; }
+        if (typeof glitch!=='undefined'){ glitch=0.25; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
