@@ -590,7 +590,12 @@ function reset(){
           // Fun Bot are friends; Mr. Sun + Mr. Tree are friends; Bort is hostile. Simon did not want the
           // battles, so instead of starting them he REDIRECTS them toward those already dead, trying to keep
           // the living web from tearing itself apart. The board now reads as linked HUNT-LINES.
-          scan:0, pulse:0, noteT:2.6, note:0, eventT:2.0 };
+          // Lore 29 cont. (June 20) — THE 3 XS. Pinki and Oren are teaming and Simon chose to join them; the
+          // three call themselves "The 3 Xs." Simon is THE ONE (#1), Oren is SECOND TO ONE (#2), Pinki is one
+          // of the strongest and teams with Oren (they are together). Pinki and Oren SPARED their daughter
+          // Sumona; Simon spares NO ONE, and if someone protects his target he just switches to another. So
+          // the faction reads as power (Oren) + bond (Pinki) + inevitability (Simon, the wild card).
+          scan:0, pulse:0, noteT:2.6, note:0, eventT:2.0, xsT:0, xsTarget:0, xsGlow:0 };
   webH = codexH + 1100;
   webM = 0.25;  // THE RELATION WEB meter: climb with purpose to trace every bond before a hunt-line snaps
   // starting ground platform under the player
@@ -4855,6 +4860,8 @@ const WEB_LEGEND = [
   { t:'friend',  c:'#7ed0ff', s:'FRIEND' },
   { t:'hostile', c:'#ff3b3b', s:'HOSTILE' },
   { t:'hunt',    c:'#ff2b4c', s:'HUNT-LINE' },
+  { t:'xs',      c:'#ff2b4c', s:'THE 3 XS' },
+  { t:'switch',  c:'#ff7b00', s:'SIMON SWITCHES' },
 ];
 const WEB_NOTES = [
   'Pinki and Oren are together, and now they hunt Black.',
@@ -4864,7 +4871,16 @@ const WEB_NOTES = [
   'Vineria + Oswxack, Garnold + Fun Bot, Mr. Sun + Mr. Tree.',
   'Bort is hostile to everyone around him.',
   'Simon did not want the battles, so he redirects them to the dead.',
+  'The 3 Xs: Simon is THE ONE, Oren second to one, Pinki one of the strongest.',
+  'Pinki and Oren spared Sumona. Simon spares no one.',
+  'Protect Simon\'s target and he just switches to someone else.',
 ];
+// Lore 29 cont. (June 20) — THE 3 XS faction: Simon + Oren + Pinki. Ranks read straight off Toby's note —
+// Simon is "the one," Oren is "second to one," Pinki is one of the strongest and teams with Oren.
+const XS_MEMBERS = ['Simon', 'Oren', 'Pinki'];
+const XS_RANK = { Simon:'X1 · THE ONE', Oren:'X2 · 2ND TO 1', Pinki:'X · STRONGEST' };
+// Simon spares no one and switches if a target is protected; his redirect arrow cycles these living targets
+const XS_SWITCH = ['Black', 'Jevin', 'Wenda', 'Garnold', 'Vineria'];
 function updateWeb(dt){
   if(winFlash>0) winFlash = Math.max(0, winFlash - dt*1.4);
   web.anim = (web.anim||0) + dt;
@@ -4877,9 +4893,16 @@ function updateWeb(dt){
     const ev = ['THE RELATION WEB','PINKI + OREN HUNT BLACK','SUMONA — THEIR DAUGHTER',
       'SIMON — OREN\'S BROTHER','JEVIN + BLACK — FRIENDS','WENDA + GRAY — TOGETHER',
       'GARNOLD + FUN BOT','MR. SUN + MR. TREE','BORT — HOSTILE',
-      'SIMON REDIRECTS THE BATTLES','WHO STILL MATTERS TO SOMEBODY?','TRACE EVERY BOND'];
+      'SIMON REDIRECTS THE BATTLES','WHO STILL MATTERS TO SOMEBODY?','TRACE EVERY BOND',
+      'THE 3 XS','SIMON — THE ONE','OREN — SECOND TO ONE','PINKI — ONE OF THE STRONGEST',
+      'THEY SPARED SUMONA','SIMON SPARES NO ONE','PROTECT THE TARGET? HE SWITCHES'];
     floaters.push({ x:player.x, y:player.y-34, t:0, txt:pick(ev), col:'#ff8ab0' });
   }
+  // THE 3 XS faction — the triad fades in once the web is mostly traced; Simon's redirect arrow cycles
+  // targets, because protecting one just makes him switch to the next living name.
+  web.xsGlow = Math.max(0, Math.min(1, (web.xsGlow||0) + ((web.scan||0) > 6 ? dt*0.6 : -dt*0.6)));
+  web.xsT = (web.xsT||0) + dt;
+  if(web.xsT >= 1.5){ web.xsT = 0; web.xsTarget = ((web.xsTarget||0)+1) % XS_SWITCH.length; }
   // THE RELATION WEB meter — climb with purpose to trace every bond before a hunt-line snaps
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
   webM = Math.max(0, Math.min(1, webM + (moving ? dt*0.05 : -dt*0.03)));
@@ -4913,7 +4936,7 @@ function drawWeb(){
   // title bar
   ctx.textAlign='left'; ctx.fillStyle = `rgba(255,208,226,${0.95*g})`;
   ctx.font='800 12px ui-monospace,monospace';
-  ctx.fillText('SCF RELATION WEB — BONDS & HUNT-LINES', px+12, py+18);
+  ctx.fillText('SCF RELATION WEB — BONDS, HUNT-LINES & THE 3 XS', px+12, py+18);
   ctx.textAlign='right'; ctx.fillStyle = `rgba(255,138,176,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
   ctx.fillText('Lore 29 cont. · Toby, June 19', px+pw-12, py+18);
   ctx.textAlign='left';
@@ -4959,6 +4982,31 @@ function drawWeb(){
   });
   ctx.globalAlpha = g;
 
+  // ---- THE 3 XS faction triad (Lore 29 cont., June 20): a crimson triangle binding Simon + Oren + Pinki,
+  //      drawn under the nodes so the members still sit on top ----
+  const xg = g*(web.xsGlow||0);
+  if(xg > 0.02){
+    const S = NP('Simon'), O = NP('Oren'), Pk = NP('Pinki');
+    const pulse = 0.6 + 0.4*Math.sin((web.pulse||0)*3);
+    // translucent fill
+    ctx.globalAlpha = xg*0.14;
+    ctx.fillStyle = '#ff2b4c';
+    ctx.beginPath(); ctx.moveTo(S.x,S.y); ctx.lineTo(O.x,O.y); ctx.lineTo(Pk.x,Pk.y); ctx.closePath(); ctx.fill();
+    // pulsing crimson outline
+    ctx.globalAlpha = xg*pulse;
+    ctx.strokeStyle = '#ff2b4c'; ctx.lineWidth = 2;
+    ctx.setLineDash([6,4]); ctx.lineDashOffset = -(web.pulse||0)*18;
+    ctx.beginPath(); ctx.moveTo(S.x,S.y); ctx.lineTo(O.x,O.y); ctx.lineTo(Pk.x,Pk.y); ctx.closePath(); ctx.stroke();
+    ctx.setLineDash([]);
+    // faction label at the centroid
+    const cxx=(S.x+O.x+Pk.x)/3, cyy=(S.y+O.y+Pk.y)/3;
+    ctx.globalAlpha = xg; ctx.textAlign='center';
+    ctx.fillStyle = '#ff7a93'; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE 3 XS', cxx, cyy+3);
+    ctx.textAlign='left';
+  }
+  ctx.globalAlpha = g;
+
   // ---- nodes (drawn on top), each appears as the web scans past its first edge ----
   const shown = {};
   WEB_EDGES.forEach(function(e,i){ if((web.scan||0) > i){ shown[e.a]=true; shown[e.b]=true; } });
@@ -4986,6 +5034,45 @@ function drawWeb(){
     ctx.fillText(name, lx, P.y+3);
   }
   ctx.textAlign='left';
+
+  // ---- THE 3 XS overlay on the nodes: rank badges, the spare/no-mercy split, and Simon's switching arrow ----
+  if(xg > 0.02){
+    // rank badges beneath each member
+    ctx.textAlign='center'; ctx.font='800 7px ui-monospace,monospace';
+    XS_MEMBERS.forEach(function(m){
+      if(!shown[m]) return; const P = NP(m);
+      ctx.fillStyle = `rgba(255,43,76,${0.95*xg})`;
+      ctx.fillText(XS_RANK[m], P.x, P.y - 11);
+    });
+    // the moral split: Pinki + Oren SPARED Sumona; Simon spares NO ONE
+    if(shown['Sumona']){ const Su = NP('Sumona');
+      ctx.fillStyle = `rgba(122,230,110,${0.95*xg})`; ctx.fillText('SPARED', Su.x, Su.y+15); }
+    if(shown['Simon']){ const Si = NP('Simon');
+      ctx.fillStyle = `rgba(255,123,0,${0.95*xg})`; ctx.fillText('NO MERCY', Si.x, Si.y+17); }
+    // Simon's redirect arrow — it switches targets, because protecting one makes him move to the next
+    if(shown['Simon']){
+      const Si = NP('Simon');
+      const tgtName = XS_SWITCH[web.xsTarget||0];
+      const T = WEB_NODES[tgtName] ? NP(tgtName) : null;
+      if(T){
+        const fade = Math.min(1, web.xsT/0.25) * Math.min(1, (1.5-web.xsT)/0.25);  // ease in/out per switch
+        ctx.globalAlpha = xg * Math.max(0.25, fade);
+        ctx.strokeStyle = '#ff7b00'; ctx.lineWidth = 1.8;
+        ctx.setLineDash([4,4]); ctx.lineDashOffset = -(web.pulse||0)*26;
+        ctx.beginPath(); ctx.moveTo(Si.x, Si.y); ctx.lineTo(T.x, T.y); ctx.stroke();
+        ctx.setLineDash([]);
+        const ang = Math.atan2(T.y-Si.y, T.x-Si.x), hx=T.x-Math.cos(ang)*14, hy=T.y-Math.sin(ang)*14;
+        ctx.fillStyle = '#ff7b00'; ctx.beginPath();
+        ctx.moveTo(hx+Math.cos(ang)*8, hy+Math.sin(ang)*8);
+        ctx.lineTo(hx+Math.cos(ang+2.5)*6, hy+Math.sin(ang+2.5)*6);
+        ctx.lineTo(hx+Math.cos(ang-2.5)*6, hy+Math.sin(ang-2.5)*6);
+        ctx.closePath(); ctx.fill();
+        ctx.globalAlpha = xg;
+      }
+    }
+    ctx.textAlign='left';
+  }
+  ctx.globalAlpha = g;
 
   // ---- legend strip ----
   let lx = px+14, lyy = py+panelH-30;

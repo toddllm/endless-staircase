@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-20 — THE 3 XS: Simon, Oren, Pinki team up (Lore 29 cont.)
+
+Based on Toby's June 20 lore: *"Pinki and Oren are teaming, Simon goes in too, Simon and Oren call themselves
+'The 3 Xs', Pinki and Oren spared their daughter Sumona, Simon doesn't spare anyone, and if someone protects
+the victim, Simon just moves to someone else. Oren is second to one, Simon is the one, Pinki is one of the most
+powerful and teams with Oren because they are just girl and boy friends... Simon also decides to be in the Xs.
+Simon is crazy status, even WAY more so than Sumona."*
+
+![Lore 29 — THE 3 XS: the relation-web panel now reads "SCF RELATION WEB — BONDS, HUNT-LINES & THE 3 XS." A
+crimson dashed triangle binds Simon, Oren, and Pinki into one faction with "THE 3 XS" written at its center.
+Rank badges sit on each member: Simon "X1 · THE ONE," Oren "X2 · 2ND TO 1," Pinki "X · STRONGEST." A green
+"SPARED" tag marks Sumona (Pinki and Oren's daughter) while an orange "NO MERCY" tag marks Simon. An orange
+dashed "SIMON SWITCHES" redirect arrow runs from Simon to his current target (Black), and the legend now lists
+THE 3 XS and SIMON SWITCHES alongside the bonds and hunt-lines.](screenshots/35-the-3-xs.png)
+
+- **The faction triad.** On the final Relation Web stage, Simon, Oren, and Pinki are now bound by a pulsing
+  crimson triangle labeled **THE 3 XS** — the team Toby named. It fades in once most of the web is traced, so
+  the bonds read first and then resolve into the faction sitting on top of them.
+- **Ranks, straight from the lore.** Each member carries a badge: **Simon = X1 · THE ONE**, **Oren = X2 · 2ND
+  TO 1**, **Pinki = X · STRONGEST** (one of the most powerful, teamed with Oren because they are together).
+- **The mercy split.** A green **SPARED** tag sits on Sumona — Pinki and Oren spared their daughter — while an
+  orange **NO MERCY** tag sits on Simon, who spares no one.
+- **Simon the wild card.** A separate orange **SIMON SWITCHES** redirect arrow runs from Simon to a target
+  that keeps changing every 1.5s (Black → Jevin → Wenda → Garnold → Vineria), because protecting one target
+  just makes him move to the next. He is almost impossible to redirect emotionally.
+- **New notes, events, and legend rows.** The footer cycles "Simon is THE ONE, Oren second to one, Pinki one
+  of the strongest," "They spared Sumona. Simon spares no one," and "Protect his target and he switches"; the
+  ticker adds THE 3 XS / THE ONE / 2ND TO ONE / NO MERCY events; the legend gains THE 3 XS and SIMON SWITCHES.
+
 ## 2026-06-19 — THE RELATION WEB: bonds and hunt-lines (Lore 29 cont.)
 
 Based on Toby's June 19 lore: *"Pinki and Oren are now teaming up to hunt Black, Black is running, the
