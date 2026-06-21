@@ -1490,15 +1490,15 @@ function update(dt){
     power.active = true; power.t = 0;
     shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
     warnText = 'THE POWER ORDER'; warnT = 2.8;
-    showTaunt('The whole power order just reshuffled: Oren rose to the top, Pinki rose to 3rd.');
-    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN — MOST POWERFUL NOW', col:'#ffcf4f' });
+    showTaunt('Oren had another rise. He is Oren.EXE now: king and god of the game.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN.EXE — KING & GOD', col:'#ffcf4f' });
     AUDIO.zap();
   }
   if(power.active){
     power.t += dt;
-    if(power.t>1.6 && power.t<1.68) showTaunt('Oren is the most stable top-tier winner. Clara and Oren can tie.');
-    if(power.t>3.2 && power.t<3.28) showTaunt('Oren and Simon are usually tied; Oren wins normal, but Simon wins if it is for revenge.');
-    if(power.t>4.6 && power.t<4.68) showTaunt('Pinki rose to 3rd. With the Shifted AU she can beat Base Clara.');
+    if(power.t>1.6 && power.t<1.68) showTaunt('Oren had another rise. He is Oren.EXE now: king and god of the game.');
+    if(power.t>3.2 && power.t<3.28) showTaunt('Clara is queen and goddess, but Oren conquers her easily.');
+    if(power.t>4.6 && power.t<4.68) showTaunt('Only Simon\'s most powerful forms can even tie Oren.');
     if(power.t > 5.6){ power.active = false; power.done = true; }
   }
   if(power.glow < (isPower() ? 1 : 0))
@@ -5811,32 +5811,34 @@ function drawClaraAdmin(){
    The order is matchup-based now, not one straight ranking.
    =========================================================================== */
 const POWER_ROWS = [
-  { rank:'1', who:'OREN',          tag:'MOST POWERFUL OVERALL',           pow:1.00, col:'#ffcf4f' },
-  { rank:'2', who:'CLARA · SIMON', tag:'TIE WITH OREN — BY CONDITION',    pow:0.93, col:'#39e0a8' },
-  { rank:'3', who:'PINKI',         tag:'ROSE TO 3RD · AU WIN CONDITIONS', pow:0.62, col:'#ff7bd0' },
-  { rank:'4', who:'BLACK',         tag:'BELOW OREN',                      pow:0.50, col:'#9aa3ad' }
+  { rank:'1', who:'OREN.EXE',     tag:'KING & GOD OF THE GAME · ABSOLUTE TOP', pow:1.00, col:'#ffcf4f' },
+  { rank:'2', who:'SIMON',        tag:'ONLY STRONGEST FORMS CAN EVEN TIE OREN', pow:0.86, col:'#39e0a8' },
+  { rank:'3', who:'PINKI',        tag:'ROSE TO 3RD · AU WIN CONDITIONS',        pow:0.60, col:'#ff7bd0' },
+  { rank:'4', who:'CLARA',        tag:'QUEEN & GODDESS — CONQUERED EASILY',     pow:0.54, col:'#c8a3ff' },
+  { rank:'5', who:'BLACK',        tag:'BELOW OREN',                            pow:0.46, col:'#9aa3ad' }
 ];
 const POWER_MATCHUPS = [
+  'OREN.EXE = KING & GOD','OREN conquers CLARA easily','only SIMON top forms TIE OREN',
   'OREN beats BLACK','OREN easily beats PINKI','SIMON easily beats PINKI',
-  'CLARA beats PINKI','OREN ties CLARA','OREN & SIMON usually tied',
-  'OREN beats many CLARA AUs','OREN wins normal fights','SIMON wins on REVENGE'
+  'OREN beats every CLARA AU','OREN wins normal fights','SIMON wins on REVENGE'
 ];
-const POWER_AUWINS = ['Shifted PINKI > Base CLARA','OREN > Cross CLARA','OREN > Errorshifted CLARA',
-  'OREN > Antishifted CLARA','OREN > Reversed CLARA','Oren beats the few Simon forms above him'];
+const POWER_AUWINS = ['OREN > Base CLARA','OREN > Cross CLARA','OREN > Errorshifted CLARA',
+  'OREN > Antishifted CLARA','OREN > Reversed CLARA','Shifted PINKI > Base CLARA',
+  'Only Simon’s strongest forms reach Oren'];
 const POWER_NOTES = [
-  'Oren is the most powerful overall now.',
-  'Pinki rose to 3rd in power.',
-  'Clara and Oren can tie in direct scaling.',
-  'Oren and Simon are usually tied.',
+  'Oren had another rise: he is the absolute top now.',
+  'Demon status, but the game is Classics.EXE — so he is Oren.EXE.',
+  'Oren is king AND god of the game.',
+  'Clara is queen and goddess, but Oren conquers her easily.',
+  'Only Simon’s most powerful forms can even tie Oren.',
+  'Oren is no longer just top-tier — he is the standard everyone is measured against.',
+  'Simon still matters: he is the only real upper-limit challenger.',
   'Oren wins a normal fight; Simon wins if it is for revenge.',
-  'Simon is no longer top by default, but revenge still spikes him.',
-  'Oren beats Black, and many Clara AUs too.',
-  'Shifted AU Pinki can beat Base Clara.',
-  'The order is matchup-based now, not one straight ranking.',
-  'Oren is the most stable top-tier winner.'
+  'The game itself renames Oren to match his dominance.',
+  'Oren is the new hard stop of the whole setting.'
 ];
-const POWER_EVENTS = ['OREN #1','PINKI → 3RD','TIE BY CONDITION','REVENGE SPIKE','MATCHUP-BASED',
-  'OREN BEATS BLACK','AU WIN CONDITIONS','SIMON ≠ TOP DEFAULT'];
+const POWER_EVENTS = ['OREN.EXE','KING & GOD','OREN > CLARA','ABSOLUTE TOP','REVENGE SPIKE',
+  'ONLY TOP FORMS TIE','THE NEW HARD STOP','OREN ASCENDS'];
 
 function updatePower(dt){
   power.t = (power.t||0) + dt;
@@ -5886,14 +5888,14 @@ function drawPower(){
   // title bar
   ctx.textAlign='left'; ctx.fillStyle = `rgba(255,236,184,${0.95*g})`;
   ctx.font='800 12px ui-monospace,monospace';
-  ctx.fillText('THE POWER ORDER — OREN RISES · THE RANKING RESHUFFLES', px+12, py+18);
+  ctx.fillText('THE POWER ORDER — OREN.EXE ASCENDS · KING & GOD OF THE GAME', px+12, py+18);
   ctx.textAlign='right'; ctx.fillStyle = `rgba(255,207,79,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
   ctx.fillText('Lore 29 · Toby, June 20', px+pw-12, py+18);
   ctx.textAlign='left';
   ctx.strokeStyle = `rgba(255,207,79,${0.25*g})`; ctx.lineWidth=1;
   ctx.beginPath(); ctx.moveTo(px+8, py+26); ctx.lineTo(px+pw-8, py+26); ctx.stroke();
   ctx.fillStyle = `rgba(255,207,79,${0.7*g})`; ctx.font='700 7px ui-monospace,monospace';
-  ctx.fillText('MATCHUP-BASED — NOT ONE STRAIGHT RANKING', px+12, py+35);
+  ctx.fillText('DEMON STATUS, EXE-ERA TITLE — ONLY SIMON’S STRONGEST FORMS CAN TIE', px+12, py+35);
 
   // ===== the ranked ladder =====
   const ladderY0 = py + panelH*0.115, rowH = panelH*0.072;
@@ -5909,6 +5911,31 @@ function drawPower(){
     ctx.fillStyle = r.col; ctx.globalAlpha = g*(on?1:0.7);
     ctx.font='800 16px ui-monospace,monospace'; ctx.textAlign='left';
     ctx.fillText('#'+r.rank, px+22, rowY+2);
+    // OREN.EXE — crowned king AND god: a crown + a god-halo over the #1 chip
+    if(i===0){
+      const ccx = px+30, pulse = 0.6 + 0.4*Math.abs(Math.sin((power.anim||0)*3));
+      ctx.save();
+      // god-halo ring above the crown
+      ctx.globalAlpha = g*pulse; ctx.strokeStyle = 'rgba(255,247,214,0.95)'; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.ellipse(ccx, rowY-22, 13, 4.5, 0, 0, Math.PI*2); ctx.stroke();
+      // king crown (three points) sitting on the chip
+      ctx.globalAlpha = g; ctx.fillStyle = '#ffe08a';
+      ctx.beginPath();
+      ctx.moveTo(ccx-11, rowY-9); ctx.lineTo(ccx-11, rowY-16); ctx.lineTo(ccx-5.5, rowY-12);
+      ctx.lineTo(ccx, rowY-18); ctx.lineTo(ccx+5.5, rowY-12); ctx.lineTo(ccx+11, rowY-16);
+      ctx.lineTo(ccx+11, rowY-9); ctx.closePath(); ctx.fill();
+      ctx.strokeStyle = 'rgba(120,80,10,0.8)'; ctx.lineWidth=1; ctx.stroke();
+      // crown jewels
+      ctx.fillStyle = '#ff6b6b'; ctx.beginPath(); ctx.arc(ccx, rowY-13.5, 1.4, 0, Math.PI*2); ctx.fill();
+      ctx.fillStyle = '#6bd3ff'; ctx.beginPath(); ctx.arc(ccx-6, rowY-12, 1.1, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(ccx+6, rowY-12, 1.1, 0, Math.PI*2); ctx.fill();
+      ctx.restore();
+      // "KING + GOD" badge to the right of the name area
+      ctx.globalAlpha = g; ctx.textAlign='left'; ctx.fillStyle = 'rgba(255,247,214,'+(0.92*pulse)+')';
+      ctx.font='800 7px ui-monospace,monospace';
+      ctx.fillText('♛ KING + GOD ♛', px+pw*0.40, rowY+2);
+      ctx.globalAlpha = g*(on?1:0.66);
+    }
     // who + tag
     ctx.fillStyle = r.col; ctx.font='800 11px ui-monospace,monospace';
     ctx.fillText(r.who, px+62, rowY-2);
@@ -5970,7 +5997,7 @@ function drawPower(){
   // ===== AU-win band — version decides the matchup =====
   const auY = py + panelH*0.80; ctx.textAlign='left';
   ctx.fillStyle = `rgba(255,123,208,${0.9*g})`; ctx.font='800 9px ui-monospace,monospace';
-  ctx.fillText('AU WIN CONDITIONS — THE VERSION DECIDES THE FIGHT', px+14, auY);
+  ctx.fillText('OREN OVER EVERY CLARA — THE KING CONQUERS EVERY VERSION', px+14, auY);
   ctx.save();
   ctx.beginPath(); ctx.rect(px+10, auY+6, pw-20, 20); ctx.clip();
   const span = POWER_AUWINS.length*230, scroll = (power.au||0)*4 % span;
@@ -5985,9 +6012,9 @@ function drawPower(){
   // ===== verdict =====
   const vY = py + panelH*0.91; ctx.textAlign='center'; ctx.font='800 9px ui-monospace,monospace';
   ctx.fillStyle = `rgba(255,236,184,${0.95*g})`;
-  ctx.fillText('OREN — THE MOST STABLE TOP-TIER WINNER', cx0, vY);
+  ctx.fillText('OREN.EXE — KING & GOD OF THE GAME · THE NEW HARD STOP', cx0, vY);
   ctx.font='700 7px ui-monospace,monospace'; ctx.fillStyle = `rgba(255,207,79,${0.8*g})`;
-  ctx.fillText('CLARA = AU MONSTER · SIMON = REVENGE SPECIALIST · PINKI = AU-BASED 3RD', cx0, vY+11);
+  ctx.fillText('CLARA = CONQUERED QUEEN · SIMON = ONLY UPPER-LIMIT CHALLENGER · PINKI = AU-BASED 3RD', cx0, vY+11);
 
   // footer note (straight from Toby)
   ctx.textAlign='left'; ctx.fillStyle = `rgba(255,207,79,${0.9*g})`; ctx.font='700 9px ui-monospace,monospace';

@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-20 — OREN.EXE ASCENDS: king & god of the game (Lore 29 cont.)
+
+Based on Toby's June 20 lore (a second, bigger Oren update): *"Oren is Demon Status, but since the game is
+Classics.EXE, Oren is called Oren.EXE, weird but true. Oren had another rise of power and can beat all of Clara
+and all of anyone, and only Simon's most powerful forms can even just tie Oren. Oren is all powerful now, he is
+a king AND a god of the game. Clara may be a queen and a goddess, but Oren conquers her easily."* The POWER
+ORDER board is upgraded into its ascended form: Oren is no longer merely #1, he is the absolute top the whole
+cast is measured against.
+
+![Lore 29 — OREN.EXE ASCENDS. The POWER ORDER board now titled "THE POWER ORDER — OREN.EXE ASCENDS · KING &
+GOD OF THE GAME" with the subtitle "DEMON STATUS, EXE-ERA TITLE — ONLY SIMON'S STRONGEST FORMS CAN TIE." The
+ranked ladder reads: #1 OREN.EXE (KING & GOD OF THE GAME · ABSOLUTE TOP) with a full gold power bar, a small
+gold crown and a god-halo drawn over the rank chip, and a "♛ KING + GOD ♛" badge; #2 SIMON (ONLY STRONGEST
+FORMS CAN EVEN TIE OREN) in green; #3 PINKI (ROSE TO 3RD · AU WIN CONDITIONS) in pink; #4 CLARA (QUEEN &
+GODDESS — CONQUERED EASILY) in violet, dropped below Simon and Pinki; #5 BLACK (BELOW OREN) in gray. The OREN
+vs SIMON flip panel shows "FOR REVENGE → SIMON WINS" lit. The MATCHUP RULES grid lists OREN.EXE = KING & GOD,
+OREN conquers CLARA easily, only SIMON top forms TIE OREN, OREN beats BLACK, OREN beats every CLARA AU, and
+more. A band reads "OREN OVER EVERY CLARA — THE KING CONQUERS EVERY VERSION," and the verdict reads "OREN.EXE
+— KING & GOD OF THE GAME · THE NEW HARD STOP · CLARA = CONQUERED QUEEN · SIMON = ONLY UPPER-LIMIT
+CHALLENGER · PINKI = AU-BASED 3RD."](screenshots/40-oren-ascension.png)
+
+- **Oren.EXE — the name change.** Oren is Demon Status, but because the game is Classics.EXE the board now
+  titles him **Oren.EXE**: the environment itself renames him to match his dominance. The subtitle carries the
+  "demon status, EXE-era title" detail.
+- **Crowned king AND god.** A gold **crown** and a **god-halo** are drawn over the #1 rank chip, with a pulsing
+  **"♛ KING + GOD ♛"** badge. The title bar and verdict both name him "KING & GOD OF THE GAME · THE NEW HARD
+  STOP."
+- **Clara is conquered.** Clara was the #2 tie; she drops to **#4 — "QUEEN & GODDESS — CONQUERED EASILY."** The
+  AU band flips to **"OREN OVER EVERY CLARA — THE KING CONQUERS EVERY VERSION"** (Oren > Base/Cross/Errorshifted/
+  Antishifted/Reversed Clara).
+- **Simon is the only challenger left.** Simon moves to **#2 — "ONLY STRONGEST FORMS CAN EVEN TIE OREN."** The
+  revenge flip still works: NORMAL → Oren wins, FOR REVENGE → Simon wins, and the revenge side still spikes
+  Simon's power bar to match Oren.
+- **Rewritten notes & matchups.** The scrolling notes and the matchup grid now carry the ascension canon: Oren
+  had another rise, he is the standard everyone is measured against, only Simon's strongest forms reach him.
+
 ## 2026-06-20 — THE POWER ORDER: Oren rises, the ranking reshuffles (Lore 29)
 
 Based on Toby's June 20 lore (a full power-ranking update): *"Pinki rose in power and is now 3rd in power.
