@@ -946,6 +946,33 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "oren": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE OREN.EXE CUTSCENE — freeze on the RED-EYE beat: face lit, left eye red, shockwave rings out
+        if (typeof oren!=='undefined'){
+          oren.active=true; oren.done=false; oren.glow=1; oren.t=8.2; oren.cyc=8.2;
+          oren.phase=3; oren.eye=1; oren.jitter=0.12; oren.type=oren.type||0;
+          oren.rings=[{r:120,life:0.85},{r:220,life:0.55},{r:330,life:0.28}];
+        }
+        if (typeof orenM!=='undefined'){ orenM=0.7; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof oren!=='undefined'){ oren.glow=1; oren.eye=1; oren.cyc=8.2; oren.phase=3;
+          oren.rings=[{r:120,life:0.85},{r:220,life:0.55},{r:330,life:0.28}]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

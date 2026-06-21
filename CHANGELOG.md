@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-21 — THE OREN.EXE CUTSCENE: intro, static, laughter, red eye, outro (Lore 29 cont.)
+
+Based on Toby's June 21 lore: *"Oren.EXE has an intro and an outro, his intro is Oren says 'lets play a game.',
+the game goes in static and Oren laughs, his left eye turns red. The outro is when the screen fades out and says
+'Oren.EXE wins'. Oren.EXE never lost. Simon.EXE can tie Oren, but Oren most of the time will win that. Oren.EXE's
+sound makes shockwaves out of the game around him. Clara would be the most powerful character in Undertale, but
+Oren is the most powerful in Classics."* Oren.EXE now gets the full creepypasta presentation: a looping five-beat
+cinematic that plays over the climb after THE POWER ORDER.
+
+![Lore 29 — THE OREN.EXE CUTSCENE, frozen on the RED-EYE beat. A dark, irregular skull-shaped face fills the
+screen: his right eye (screen left) is a cold pale white, his LEFT eye (screen right) has ignited into a glowing
+RED, and below is a red toothy grin. Concentric red SOUND-SHOCKWAVE rings roll outward from the face, "out of the
+game around him." The caption "the left eye turns red" sits below. A red title band reads "THE OREN.EXE CUTSCENE
+— INTRO · STATIC · LAUGH · RED EYE · OUTRO," and under it a canon band reads "CLARA RULES UNDERTALE POWER · OREN
+RULES CLASSICS POWER · OREN.EXE NEVER LOST." The bottom meter reads "OREN.EXE: LETS PLAY A GAME. — CLIMB PAST
+INSTEAD."](screenshots/41-oren-cutscene.png)
+
+- **The five beats.** A looping cinematic plays over the climb in the Oren zone: **INTRO** (his line *"lets play
+  a game."* types out one character at a time), **STATIC** (the screen tears into TV noise and jitters),
+  **LAUGH** (his face fades in and a *"HA HA HA"* cackle stutters out), **RED EYE** (his **left eye ignites red**,
+  the one detail Toby called out), and **OUTRO** (the screen darkens and shows *"OREN.EXE WINS"* / *"OREN.EXE
+  NEVER LOST"*), then it loops.
+- **Sound shockwaves out of the game.** During the laugh, red-eye, and outro beats, concentric shockwave **rings**
+  expand outward from his face with a deep boom — his sound "makes shockwaves out of the game around him."
+- **New audio.** Three Web-Audio cues were added: `orenStatic` (a filtered white-noise hiss), `orenLaugh` (a
+  detuned descending cackle), and `shock` (a deep sub-bass shockwave boom).
+- **Two-domain canon.** The framing band carries Toby's divider: **Clara rules Undertale power, Oren rules
+  Classics power**, and **Oren.EXE never lost.**
+- **The one non-win.** Oren never lost, so you cannot beat him — but you *can* climb past without ever pressing
+  play on his game. Fill the meter and you get *"DIDN'T PLAY HIS GAME"*: the one outcome that is not a win for him.
+- **Open question for Toby.** The cinematic covers the intro and outro; the attack pattern *after* the intro
+  starts is still unwritten — that is the next thing to build.
+
 ## 2026-06-20 — OREN.EXE ASCENDS: king & god of the game (Lore 29 cont.)
 
 Based on Toby's June 20 lore (a second, bigger Oren update): *"Oren is Demon Status, but since the game is

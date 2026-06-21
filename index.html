@@ -262,7 +262,32 @@ const AUDIO = (()=>{
       const n=ac.createOscillator(),ng=ac.createGain(); n.type='square';
       n.frequency.setValueAtTime(3200,t); ng.gain.setValueAtTime(0.07,t);
       ng.gain.exponentialRampToValueAtTime(0.001,t+0.05);
-      n.connect(ng); ng.connect(master); n.start(t); n.stop(t+0.06); }
+      n.connect(ng); ng.connect(master); n.start(t); n.stop(t+0.06); },
+    // Lore 29 (June 21) — OREN.EXE's creepypasta presentation.
+    // TV static hiss: a burst of filtered white noise.
+    orenStatic(dur){ if(!ac||!on) return; const t=ac.currentTime; dur=dur||0.5;
+      const len=Math.max(1,Math.floor(ac.sampleRate*dur)), buf=ac.createBuffer(1,len,ac.sampleRate), d=buf.getChannelData(0);
+      for(let i=0;i<len;i++){ d[i]=(Math.random()*2-1)*0.6; }
+      const src=ac.createBufferSource(); src.buffer=buf;
+      const f=ac.createBiquadFilter(); f.type='highpass'; f.frequency.value=850;
+      const g=ac.createGain(); g.gain.setValueAtTime(0.0,t); g.gain.linearRampToValueAtTime(0.15,t+0.04);
+      g.gain.setValueAtTime(0.15,t+dur-0.06); g.gain.exponentialRampToValueAtTime(0.001,t+dur);
+      src.connect(f); f.connect(g); g.connect(master); src.start(t); src.stop(t+dur); },
+    // "HA HA HA" cackle: a stutter of detuned descending blips.
+    orenLaugh(){ if(!ac||!on) return; const t=ac.currentTime;
+      [0,0.13,0.26,0.40,0.56].forEach((s,i)=>{ const st=t+s, f=260 - i*22;
+        const o=ac.createOscillator(),g=ac.createGain(); o.type='sawtooth';
+        o.frequency.setValueAtTime(f*1.5,st); o.frequency.exponentialRampToValueAtTime(f,st+0.08);
+        g.gain.setValueAtTime(0.0,st); g.gain.linearRampToValueAtTime(0.12,st+0.02); g.gain.exponentialRampToValueAtTime(0.001,st+0.13);
+        const o2=ac.createOscillator(); o2.type='square'; o2.frequency.value=f*2.01;
+        o.connect(g); o2.connect(g); g.connect(master);
+        o.start(st); o.stop(st+0.15); o2.start(st); o2.stop(st+0.15); }); },
+    // a deep shockwave boom that rolls out of the game.
+    shock(){ if(!ac||!on) return; const t=ac.currentTime;
+      const o=ac.createOscillator(),g=ac.createGain(); o.type='sine';
+      o.frequency.setValueAtTime(120,t); o.frequency.exponentialRampToValueAtTime(28,t+0.6);
+      g.gain.setValueAtTime(0.0,t); g.gain.linearRampToValueAtTime(0.3,t+0.04); g.gain.exponentialRampToValueAtTime(0.001,t+0.7);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t+0.75); }
   };
   function blipExt(freq,t,dur,type,gain){ if(!ac) return;
     const o=ac.createOscillator(),g=ac.createGain(); o.type=type; o.frequency.value=freq;
@@ -449,6 +474,7 @@ let web, webH, webM;
 let clara, claraH, claraM;
 let claraAdmin, claraAdminH, claraAdminM;
 let power, powerH, powerM;
+let oren, orenH, orenM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -642,6 +668,14 @@ function reset(){
             revenge:0, revT:0, rowT:0, row:0, auT:0, noteT:2.6, note:0, eventT:2.0 };
   powerH = claraAdminH + 1100;
   powerM = 0.25;  // THE POWER ORDER meter: climb with purpose to read every matchup and rise through the new order
+  oren = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, type:0, typeT:0,
+           // Lore 29 (June 21) — Toby gave Oren.EXE a full creepypasta intro/outro: intro line
+           // "lets play a game.", then STATIC, then LAUGHTER, then his LEFT EYE turns RED; outro
+           // "Oren.EXE wins." Oren.EXE never lost. His sound makes shockwaves out of the game around him.
+           // Clara rules Undertale power, Oren rules Classics power. A looping cinematic over the climb.
+           rings:[], ringT:0, eye:0, held:false, jitter:0 };
+  orenH = powerH + 1100;
+  orenM = 0.25;   // THE OREN.EXE CUTSCENE meter: climb past without playing his game — the one thing that isn't a win for him
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -713,6 +747,8 @@ function isClara(){ return !!(clara && (clara.active || clara.done)); }
 function isClaraAdmin(){ return !!(claraAdmin && (claraAdmin.active || claraAdmin.done)); }
 // Lore 29 (June 20) — after the Admin Ascension, the whole power ranking is reshuffled: THE POWER ORDER
 function isPower(){ return !!(power && (power.active || power.done)); }
+// Lore 29 (June 21) — after THE POWER ORDER, Oren.EXE gets his creepypasta presentation: THE OREN.EXE CUTSCENE
+function isOren(){ return !!(oren && (oren.active || oren.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1504,6 +1540,26 @@ function update(dt){
   if(power.glow < (isPower() ? 1 : 0))
     power.glow = Math.min(1, power.glow + dt*0.5);
 
+  /* ---- Lore 29 (June 21) — THE OREN.EXE CUTSCENE. After the new Power Order, Toby gave Oren.EXE a
+         full creepypasta presentation: intro line "lets play a game.", then STATIC, then LAUGHTER,
+         then his LEFT EYE turns RED; outro "Oren.EXE wins." Oren.EXE never lost. His sound makes
+         shockwaves out of the game around him. A looping cinematic plays over the climb. ---- */
+  if(power.done && !oren.active && !oren.done && height > orenH){
+    oren.active = true; oren.t = 0; oren.cyc = 0; oren.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.6);
+    warnText = 'OREN.EXE'; warnT = 2.8;
+    showTaunt('Oren.EXE: "lets play a game."');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'lets play a game.', col:'#ff3b3b' });
+    AUDIO.shock();
+  }
+  if(oren.active){
+    oren.t += dt;
+    // the cutscene plays once through to set the canon, then stays "done" and keeps looping as ambiance
+    if(oren.t > 13.0){ oren.active = false; oren.done = true; }
+  }
+  if(oren.glow < (isOren() ? 1 : 0))
+    oren.glow = Math.min(1, oren.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1526,7 +1582,8 @@ function update(dt){
   if(isWeb() && !isClara()) updateWeb(dt);
   if(isClara() && !isClaraAdmin()) updateClara(dt);
   if(isClaraAdmin() && !isPower()) updateClaraAdmin(dt);
-  if(isPower()) updatePower(dt);
+  if(isPower() && !isOren()) updatePower(dt);
+  if(isOren()) updateOren(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2620,7 +2677,8 @@ function draw(){
   if(isWeb() && !isClara() && web.glow>0.02) drawWeb();
   if(isClara() && !isClaraAdmin() && clara.glow>0.02) drawClara();
   if(isClaraAdmin() && !isPower() && claraAdmin.glow>0.02) drawClaraAdmin();
-  if(isPower() && power.glow>0.02) drawPower();
+  if(isPower() && !isOren() && power.glow>0.02) drawPower();
+  if(isOren() && oren.glow>0.02) drawOren();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -6023,6 +6081,183 @@ function drawPower(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===========================================================================
+   Lore 29 (June 21) — THE OREN.EXE CUTSCENE (Oren.EXE's creepypasta intro/outro)
+   Toby: "Oren.EXE has an intro and an outro. His intro is Oren says 'lets play a
+   game.', the game goes in static and Oren laughs, his left eye turns red. The
+   outro is when the screen fades out and says 'Oren.EXE wins'. Oren.EXE never lost.
+   Simon.EXE can tie Oren, but Oren most of the time will win that. Oren.EXE's sound
+   makes shockwaves out of the game around him. Clara would be the most powerful in
+   Undertale, but Oren is the most powerful in Classics."
+   A looping five-beat cinematic plays over the climb: INTRO (the typed line) ->
+   STATIC -> LAUGH (face + shockwave rings) -> RED EYE (his left eye ignites) ->
+   OUTRO ("OREN.EXE WINS" / "OREN.EXE NEVER LOST"), then it loops. The only thing
+   that isn't a win for him: climbing past without ever playing his game.
+   =========================================================================== */
+const OREN_CYC = 13.0;
+const OREN_INTRO = "lets play a game.";
+// returns [phaseIndex 0..4, localTime] for a point in the cutscene cycle
+function orenSeg(c){
+  if(c < 2.6) return [0, c];
+  if(c < 4.4) return [1, c-2.6];
+  if(c < 7.2) return [2, c-4.4];
+  if(c < 9.6) return [3, c-7.2];
+  return [4, c-9.6];
+}
+function updateOren(dt){
+  oren.t = (oren.t||0) + dt;
+  oren.cyc = ((oren.cyc||0) + dt) % OREN_CYC;
+  const seg = orenSeg(oren.cyc), ph = seg[0], lt = seg[1];
+  // phase-change audio cues
+  if(ph !== oren.phase){
+    oren.phase = ph;
+    if(ph===0){ showTaunt('Oren.EXE: "lets play a game."'); }
+    if(ph===1){ AUDIO.orenStatic(1.6); shake=Math.max(shake,8); glitch=Math.max(glitch,0.5); }
+    if(ph===2){ AUDIO.orenLaugh(); }
+    if(ph===3){ AUDIO.zap(); shake=Math.max(shake,6); }                 // his left eye ignites red
+    if(ph===4){ AUDIO.shock(); winFlash=Math.max(winFlash||0,0.4);      // outro: the screen says he won
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'OREN.EXE WINS', col:'#ff2b2b' }); }
+  }
+  // typed intro line, one char at a time
+  if(ph===0) oren.type = Math.min(OREN_INTRO.length, Math.floor(lt/0.13));
+  // re-trigger the cackle a couple times across the laugh beat
+  if(ph===2){ oren.laughT=(oren.laughT||0)-dt; if(oren.laughT<=0){ oren.laughT=0.95; AUDIO.orenLaugh(); } }
+  // left eye glow rises through the RED-EYE beat, stays lit afterward
+  const eyeTarget = (ph>=3)?1:(ph===2? Math.min(0.25, lt*0.1):0);
+  oren.eye += (eyeTarget - oren.eye) * Math.min(1, dt*4);
+  // sound shockwaves rolling out of the game around him
+  oren.ringT=(oren.ringT||0)-dt;
+  if((ph===2||ph===3||ph===4) && oren.ringT<=0){
+    oren.ringT = (ph===4?0.5:0.7);
+    oren.rings.push({ r:30, life:1 });
+    if(ph>=3){ AUDIO.shock(); shake=Math.max(shake,5); }
+  }
+  for(let i=oren.rings.length-1;i>=0;i--){ const rg=oren.rings[i];
+    rg.r += dt*260; rg.life -= dt*0.7; if(rg.life<=0) oren.rings.splice(i,1); }
+  // screen jitter peaks during static, eases out after
+  oren.jitter += ((ph===1?1:0) - oren.jitter) * Math.min(1,dt*6);
+
+  // THE OREN.EXE meter — climb past without ever pressing play on his game.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  orenM = Math.max(0, Math.min(1, orenM + (moving ? dt*0.05 : -dt*0.03)));
+  if(orenM>=1 && !oren.held){
+    oren.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You climbed past without playing. Oren.EXE never lost — but he never beat you either.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ DIDN’T PLAY HIS GAME ★', col:'#ffd0d0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff3b3b','#ffffff','#9aa3ad'])));
+    AUDIO.shock();
+  }
+}
+
+function drawOren(){
+  const g = oren.glow||0, top = cameraY;
+  const c = oren.cyc||0, seg = orenSeg(c), ph = seg[0], lt = seg[1];
+  ctx.save();
+  // background wash — near black, deepening to red at the bottom; darkest during the outro fade
+  const dark = 0.62 + 0.3*(ph===4? Math.min(1,lt/2):0);
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(6,2,3,${dark*g})`);
+  bg.addColorStop(1, `rgba(20,2,4,${dark*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+
+  const cx = W/2, cy = top + H*0.42;
+
+  // ===== sound shockwaves rolling out of the game around him =====
+  for(const rg of oren.rings){
+    const a = Math.max(0, rg.life) * 0.5 * g;
+    ctx.strokeStyle = `rgba(255,60,60,${a})`; ctx.lineWidth = 2.5*Math.max(0.2,rg.life);
+    ctx.beginPath(); ctx.arc(cx, cy, rg.r, 0, Math.PI*2); ctx.stroke();
+    ctx.strokeStyle = `rgba(255,255,255,${a*0.4})`; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(cx, cy, rg.r*0.86, 0, Math.PI*2); ctx.stroke();
+  }
+
+  // ===== the face (fades in from the laugh beat on) =====
+  const faceA = (ph>=2 ? (ph===2? Math.min(1, lt/0.8) : 1) : 0) * g;
+  if(faceA>0.02){
+    ctx.save(); ctx.globalAlpha = faceA;
+    // jitter the whole face slightly during/after the static
+    ctx.translate((Math.random()-0.5)*6*oren.jitter, (Math.random()-0.5)*6*oren.jitter);
+    // head — a dark, irregular skull-ish shape
+    ctx.fillStyle = '#0b0608'; ctx.strokeStyle = 'rgba(120,20,24,0.85)'; ctx.lineWidth=3;
+    ctx.beginPath();
+    ctx.moveTo(cx-120, cy-110);
+    ctx.quadraticCurveTo(cx, cy-180, cx+120, cy-110);
+    ctx.quadraticCurveTo(cx+150, cy+10, cx+90, cy+120);
+    ctx.quadraticCurveTo(cx, cy+170, cx-90, cy+120);
+    ctx.quadraticCurveTo(cx-150, cy+10, cx-120, cy-110);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    // eyes
+    const eyeY = cy-18, eyeDX=46, eyeR=20;
+    // his RIGHT eye (screen left) — pale and cold
+    ctx.fillStyle = '#d8d2cc';
+    ctx.beginPath(); ctx.ellipse(cx-eyeDX, eyeY, eyeR, eyeR*1.1, 0, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle='#111'; ctx.beginPath(); ctx.arc(cx-eyeDX, eyeY, 7,0,Math.PI*2); ctx.fill();
+    // his LEFT eye (screen right) — turns RED
+    const er = oren.eye||0;
+    ctx.fillStyle = `rgb(${Math.round(216 + (255-216)*er)},${Math.round(210*(1-er)+30*er)},${Math.round(204*(1-er)+30*er)})`;
+    ctx.beginPath(); ctx.ellipse(cx+eyeDX, eyeY, eyeR, eyeR*1.1, 0, 0, Math.PI*2); ctx.fill();
+    if(er>0.02){
+      ctx.shadowColor='#ff1b1b'; ctx.shadowBlur=24*er;
+      ctx.fillStyle=`rgba(255,40,40,${er})`;
+      ctx.beginPath(); ctx.ellipse(cx+eyeDX, eyeY, eyeR*0.92, eyeR, 0, 0, Math.PI*2); ctx.fill();
+      ctx.shadowBlur=0;
+    }
+    ctx.fillStyle='#1a0000'; ctx.beginPath(); ctx.arc(cx+eyeDX, eyeY, 7,0,Math.PI*2); ctx.fill();
+    // grin (opens wider during the laugh)
+    const grin = (ph===2?0.6+0.4*Math.abs(Math.sin(lt*10)):0.5);
+    ctx.strokeStyle='#b41a1e'; ctx.lineWidth=4;
+    ctx.beginPath(); ctx.moveTo(cx-52, cy+58);
+    ctx.quadraticCurveTo(cx, cy+58+44*grin, cx+52, cy+58); ctx.stroke();
+    // teeth
+    ctx.strokeStyle='rgba(220,210,200,0.7)'; ctx.lineWidth=1.5;
+    for(let i=-2;i<=2;i++){ const tx=cx+i*20;
+      ctx.beginPath(); ctx.moveTo(tx,cy+58); ctx.lineTo(tx,cy+58+20*grin); ctx.stroke(); }
+    ctx.restore();
+  }
+
+  // ===== TV static over the whole screen (the static beat) =====
+  if(ph===1 || oren.jitter>0.05){
+    ctx.globalAlpha = (ph===1?0.5:0.12*oren.jitter)*g;
+    for(let i=0;i<120;i++){
+      ctx.fillStyle = Math.random()<0.5?'#ffffff':'#000000';
+      ctx.fillRect(Math.random()*W, top+Math.random()*H, Math.random()*40+6, Math.random()*3+1);
+    }
+    ctx.globalAlpha=1;
+  }
+
+  // ===== text per beat =====
+  ctx.textAlign='center';
+  if(ph===0){
+    const shown = OREN_INTRO.slice(0, oren.type||0);
+    const caret = (Math.sin((oren.t||0)*8)>0)?'_':'';
+    ctx.fillStyle=`rgba(232,232,232,${g})`; ctx.font='700 26px ui-monospace,monospace';
+    ctx.fillText(shown+caret, cx, cy+10);
+  } else if(ph===2){
+    const ha = 'HA '.repeat(2 + (Math.floor(lt*4)%4)).trim();
+    ctx.save(); ctx.translate((Math.random()-0.5)*4,(Math.random()-0.5)*4);
+    ctx.fillStyle=`rgba(255,60,60,${g})`; ctx.font='800 30px ui-monospace,monospace';
+    ctx.fillText(ha, cx, top+H*0.85); ctx.restore();
+  } else if(ph===3){
+    ctx.fillStyle=`rgba(255,40,40,${g})`; ctx.font='800 19px ui-monospace,monospace';
+    ctx.fillText('the left eye turns red', cx, top+H*0.85);
+  } else if(ph===4){
+    const fa = Math.min(1, lt/1.2)*g;
+    ctx.shadowColor='#ff0000'; ctx.shadowBlur=20*fa;
+    ctx.fillStyle=`rgba(255,40,40,${fa})`; ctx.font='900 40px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE WINS', cx, cy+8); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(222,210,210,${fa})`; ctx.font='800 15px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE NEVER LOST', cx, cy+40);
+  }
+
+  // ===== title band + canon note (framing the cinematic) =====
+  ctx.fillStyle=`rgba(255,60,60,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE OREN.EXE CUTSCENE — INTRO · STATIC · LAUGH · RED EYE · OUTRO', cx, top+30);
+  ctx.fillStyle=`rgba(210,200,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('CLARA RULES UNDERTALE POWER · OREN RULES CLASSICS POWER · OREN.EXE NEVER LOST', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -6362,7 +6597,7 @@ function drawHUD(){
     else { ctx.fillStyle='#39e0a8'; ctx.fillText('THE ADMIN ASCENSION — WITHDRAW & SURVIVE', W/2, by-6); }
   }
   // THE POWER ORDER (Lore 29) — the READ meter. Climb with purpose to read every matchup and rise.
-  if(isPower() && power.glow>0.05){
+  if(isPower() && !isOren() && power.glow>0.05){
     const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,powerM));
     ctx.fillStyle='#141004'; ctx.fillRect(bx, by, bw, 7);
     const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
@@ -6372,6 +6607,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(power.held){ ctx.fillStyle='#ffe8a8'; ctx.fillText('★ READ THE POWER ORDER ★', W/2, by-6); }
     else { ctx.fillStyle='#ffcf4f'; ctx.fillText('THE POWER ORDER — READ THE MATCHUPS & RISE', W/2, by-6); }
+  }
+  // THE OREN.EXE CUTSCENE (Lore 29, June 21) — climb past without ever playing his game.
+  if(isOren() && oren.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,orenM));
+    ctx.fillStyle='#180405'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#ff3b3b'); ig.addColorStop(1, oren.held?'#ffd0d0':'#9aa3ad');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(oren.held){ ctx.fillStyle='#ffd0d0'; ctx.fillText('★ DIDN’T PLAY HIS GAME ★', W/2, by-6); }
+    else { ctx.fillStyle='#ff6b6b'; ctx.fillText('OREN.EXE: "LETS PLAY A GAME." — CLIMB PAST INSTEAD', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){
@@ -6424,7 +6671,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Admin Ascension', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Oren.EXE Cutscene', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -6461,7 +6708,12 @@ function drawTitle(){
     'QUEEN; neither can lose, draws do not exist, so it goes on forever.',
     'THE ADMIN ASCENSION: Simon can\'t win even as the BLOB, so he GIVES',
     'UP and walks away. CLARA is ADMIN, danger ∞: dash, dagger, slash beam,',
-    'teleport, rebirth, all the AUs. "Why blame me when it is your fault?!"'
+    'teleport, rebirth, all the AUs. "Why blame me when it is your fault?!"',
+    'THE POWER ORDER: Oren rises to KING & GOD; only Simon\'s strongest',
+    'forms can tie him; Clara is the conquered queen; Pinki rose to 3rd.',
+    'THE OREN.EXE CUTSCENE: "lets play a game." -> static -> laughter ->',
+    'the left eye turns red -> "OREN.EXE WINS." Oren.EXE never lost. His',
+    'sound makes shockwaves out of the game. Climb past without playing.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
