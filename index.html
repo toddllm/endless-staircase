@@ -475,6 +475,7 @@ let clara, claraH, claraM;
 let claraAdmin, claraAdminH, claraAdminM;
 let power, powerH, powerM;
 let oren, orenH, orenM;
+let betray, betrayH, betrayM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -676,6 +677,14 @@ function reset(){
            rings:[], ringT:0, eye:0, held:false, jitter:0 };
   orenH = powerH + 1100;
   orenM = 0.25;   // THE OREN.EXE CUTSCENE meter: climb past without playing his game — the one thing that isn't a win for him
+  betray = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 29 (June 21) — THE ALLIANCE BETRAYAL. Toby's team-up scene: Simon.EXE seeks allies from
+             // Oren, Clara, and Luigi Green. Oren says NO; Clara and Luigi Green say YES — and Simon slays
+             // them the moment they accept. Then Simon.EXE battles Oren.EXE, LOSES, and never wants to face
+             // Oren again. Hierarchy: Oren = strongest, Simon = most murderous / least trustworthy, Pinki = 3rd.
+             ask:0, slainC:0, slainL:0, clash:0, flee:0, rings:[], ringT:0, slashT:0, slashed:false };
+  betrayH = orenH + 1100;
+  betrayM = 0.25;  // THE ALLIANCE BETRAYAL meter: climb past without taking the deal — refuse what Simon will betray
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -749,6 +758,8 @@ function isClaraAdmin(){ return !!(claraAdmin && (claraAdmin.active || claraAdmi
 function isPower(){ return !!(power && (power.active || power.done)); }
 // Lore 29 (June 21) — after THE POWER ORDER, Oren.EXE gets his creepypasta presentation: THE OREN.EXE CUTSCENE
 function isOren(){ return !!(oren && (oren.active || oren.done)); }
+// Lore 29 (June 21) — after THE OREN.EXE CUTSCENE, Simon's team-up-and-betray scene plays out: THE ALLIANCE BETRAYAL
+function isBetray(){ return !!(betray && (betray.active || betray.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1560,6 +1571,26 @@ function update(dt){
   if(oren.glow < (isOren() ? 1 : 0))
     oren.glow = Math.min(1, oren.glow + dt*0.5);
 
+  /* ---- Lore 29 (June 21) — THE ALLIANCE BETRAYAL. After the Oren.EXE cutscene, Toby's team-up scene:
+         Simon.EXE goes to Oren, Clara, and Luigi Green to ally. Oren says NO; Clara and Luigi Green say
+         YES — and Simon slays the two who accepted. Then Simon.EXE battles Oren.EXE, loses, and never
+         wants to face Oren again. A looping cinematic that locks the hierarchy: Oren strongest, Simon the
+         most murderous and least trustworthy ally, Pinki third. ---- */
+  if(oren.done && !betray.active && !betray.done && height > betrayH){
+    betray.active = true; betray.t = 0; betray.cyc = 0; betray.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE ALLIANCE BETRAYAL'; warnT = 2.8;
+    showTaunt('Simon.EXE: "team up with me." Oren says no. Clara and Luigi Green say yes.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON.EXE SEEKS ALLIES', col:'#ff3b3b' });
+    AUDIO.zap();
+  }
+  if(betray.active){
+    betray.t += dt;
+    if(betray.t > 14.0){ betray.active = false; betray.done = true; }
+  }
+  if(betray.glow < (isBetray() ? 1 : 0))
+    betray.glow = Math.min(1, betray.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1583,7 +1614,8 @@ function update(dt){
   if(isClara() && !isClaraAdmin()) updateClara(dt);
   if(isClaraAdmin() && !isPower()) updateClaraAdmin(dt);
   if(isPower() && !isOren()) updatePower(dt);
-  if(isOren()) updateOren(dt);
+  if(isOren() && !isBetray()) updateOren(dt);
+  if(isBetray()) updateBetray(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2678,7 +2710,8 @@ function draw(){
   if(isClara() && !isClaraAdmin() && clara.glow>0.02) drawClara();
   if(isClaraAdmin() && !isPower() && claraAdmin.glow>0.02) drawClaraAdmin();
   if(isPower() && !isOren() && power.glow>0.02) drawPower();
-  if(isOren() && oren.glow>0.02) drawOren();
+  if(isOren() && !isBetray() && oren.glow>0.02) drawOren();
+  if(isBetray() && betray.glow>0.02) drawBetray();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -6254,6 +6287,206 @@ function drawOren(){
   ctx.fillText('THE OREN.EXE CUTSCENE — INTRO · STATIC · LAUGH · RED EYE · OUTRO', cx, top+30);
   ctx.fillStyle=`rgba(210,200,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('CLARA RULES UNDERTALE POWER · OREN RULES CLASSICS POWER · OREN.EXE NEVER LOST', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ===== THE ALLIANCE BETRAYAL (Lore 29, June 21) =====
+   Simon.EXE seeks allies from Oren, Clara, and Luigi Green. Oren says NO; Clara and Luigi Green
+   say YES — and Simon slays the two who accepted. Then Simon.EXE battles Oren.EXE, loses, and
+   never wants to face Oren again. A looping cinematic over the climb. Five beats:
+   SEEK · ANSWERS · BETRAYAL · BATTLE · OREN WINS. */
+const BETRAY_CYC = 14.0;
+function betraySeg(c){
+  if(c < 2.8) return [0, c];        // SEEK — Simon rises toward the three
+  if(c < 5.4) return [1, c-2.8];    // ANSWERS — Oren NO, Clara/Luigi YES
+  if(c < 8.4) return [2, c-5.4];    // BETRAYAL — the two who said yes are slain
+  if(c < 11.0) return [3, c-8.4];   // BATTLE — Simon.EXE vs Oren.EXE
+  return [4, c-11.0];               // OREN WINS — Simon flees, never again
+}
+function updateBetray(dt){
+  betray.t = (betray.t||0) + dt;
+  betray.cyc = ((betray.cyc||0) + dt) % BETRAY_CYC;
+  const seg = betraySeg(betray.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== betray.phase){
+    betray.phase = ph;
+    if(ph===0){ betray.ask=0; betray.flee=0; betray.slainC=0; betray.slainL=0; betray.slashed=false;
+      showTaunt('Simon.EXE seeks allies: Oren, Clara, Luigi Green.'); }
+    if(ph===1){ AUDIO.zap(); showTaunt('Oren: NO. Clara: YES. Luigi Green: YES.'); }
+    if(ph===2){ AUDIO.strike(); shake=Math.max(shake,9); glitch=Math.max(glitch,0.4); betray.slashed=false;
+      showTaunt('They said yes. Simon.EXE slays the allies who trusted him.'); }
+    if(ph===3){ AUDIO.shock(); shake=Math.max(shake,7); betray.clash=0;
+      showTaunt('Simon.EXE turns on Oren.EXE. The two strongest collide.'); }
+    if(ph===4){ AUDIO.shock(); winFlash=Math.max(winFlash||0,0.4);
+      showTaunt('Oren.EXE wins. Simon never wants to face Oren again.');
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'OREN.EXE WINS', col:'#ff2b2b' }); }
+  }
+  if(ph===0) betray.ask = Math.min(1, lt/2.2);
+  if(ph===2){
+    if(!betray.slashed && lt>0.9){ betray.slashed=true; AUDIO.strike(); shake=Math.max(shake,10);
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA & LUIGI GREEN — SLAIN', col:'#9aa3ad' }); }
+    betray.slainC = Math.min(1, Math.max(0, (lt-0.9)/1.0));
+    betray.slainL = Math.min(1, Math.max(0, (lt-1.1)/1.0));
+  } else if(ph>=3){ betray.slainC=1; betray.slainL=1; }
+  if(ph===3){
+    betray.clash = Math.min(1, lt/1.5);
+    betray.ringT = (betray.ringT||0)-dt;
+    if(betray.ringT<=0){ betray.ringT=0.45; betray.rings.push({ r:24, life:1 }); AUDIO.shock(); shake=Math.max(shake,5); }
+  }
+  for(let i=betray.rings.length-1;i>=0;i--){ const rg=betray.rings[i];
+    rg.r += dt*240; rg.life -= dt*0.8; if(rg.life<=0) betray.rings.splice(i,1); }
+  if(ph===4) betray.flee = Math.min(1, lt/1.6);
+
+  // THE ALLIANCE BETRAYAL meter — climb past without ever taking the deal.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  betrayM = Math.max(0, Math.min(1, betrayM + (moving ? dt*0.05 : -dt*0.03)));
+  if(betrayM>=1 && !betray.held){
+    betray.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You never took the deal. Simon cannot betray an ally he never made.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ REFUSED THE ALLIANCE ★', col:'#ffd0d0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff3b3b','#c187ff','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawBetray(){
+  const g = betray.glow||0, top = cameraY;
+  const c = betray.cyc||0, seg = betraySeg(c), ph = seg[0], lt = seg[1];
+  ctx.save();
+  // background — cold dark, deepening to red through the battle and outro
+  const dark = 0.6 + 0.28*((ph>=3)? (ph===4?1:Math.min(1,lt/1.5)) : 0);
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(4,3,8,${dark*g})`);
+  bg.addColorStop(1, `rgba(18,3,6,${dark*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+
+  const cx = W/2, rowY = top + H*0.32;
+  const ax = [cx-180, cx, cx+180];                 // Oren, Clara, Luigi Green
+  const cols = ['#ff3b3b', '#c187ff', '#39e08a'];
+  const names = ['OREN', 'CLARA', 'LUIGI GREEN'];
+  const answers = ['NO', 'YES', 'YES'];
+  const slain = [0, (ph>=3?1:(ph===2?betray.slainC:0)), (ph>=3?1:(ph===2?betray.slainL:0))];
+
+  // ----- one ally head -----
+  function ally(x, y, col, dead){
+    ctx.save();
+    ctx.globalAlpha = (1 - 0.65*dead) * g;
+    const cc = dead>0.5 ? '#3a3d42' : col;
+    if(dead<0.5){ ctx.shadowColor=col; ctx.shadowBlur=14*g; }
+    ctx.fillStyle = '#0c0a12'; ctx.strokeStyle = cc; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.ellipse(x, y, 30, 34, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur=0;
+    ctx.fillStyle = cc;
+    ctx.beginPath(); ctx.arc(x-11, y-4, 5, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(x+11, y-4, 5, 0, Math.PI*2); ctx.fill();
+    ctx.strokeStyle = cc; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(x-12, y+14); ctx.lineTo(x+12, y+14); ctx.stroke();
+    ctx.restore();
+    if(dead>0.3){            // X-out the eyes of the slain
+      ctx.save(); ctx.globalAlpha = Math.min(1, dead)*g;
+      ctx.strokeStyle='#9aa3ad'; ctx.lineWidth=2.5;
+      for(const ex of [x-11, x+11]){
+        ctx.beginPath(); ctx.moveTo(ex-5,y-9); ctx.lineTo(ex+5,y+1);
+        ctx.moveTo(ex+5,y-9); ctx.lineTo(ex-5,y+1); ctx.stroke();
+      }
+      ctx.restore();
+    }
+  }
+
+  // ----- the three allies, their names and answers -----
+  for(let i=0;i<3;i++){
+    ally(ax[i], rowY, cols[i], slain[i]);
+    ctx.globalAlpha = g; ctx.textAlign='center';
+    ctx.fillStyle = slain[i]>0.5 ? `rgba(154,163,173,${g})` : cols[i];
+    ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText(names[i], ax[i], rowY+54);
+    if(ph>=1 && slain[i]<0.5){
+      const yes = answers[i]==='YES';
+      const ba = (ph===1? Math.min(1, lt/0.5) : 1) * g;
+      ctx.globalAlpha = ba;
+      const bw=48, bh=22, bx=ax[i]-bw/2, by=rowY-60;
+      ctx.fillStyle = yes ? 'rgba(57,224,138,0.16)' : 'rgba(255,59,59,0.16)';
+      ctx.fillRect(bx, by, bw, bh);
+      ctx.strokeStyle = yes ? '#39e08a' : '#ff3b3b'; ctx.lineWidth=1.5; ctx.strokeRect(bx,by,bw,bh);
+      ctx.fillStyle = yes ? '#39e08a' : '#ff3b3b'; ctx.font='800 13px ui-monospace,monospace';
+      ctx.fillText(answers[i], ax[i], by+16);
+    }
+    ctx.globalAlpha = g;
+  }
+
+  // ----- battle shockwaves between Simon and Oren -----
+  if(ph>=3){
+    const mx = (ax[0] + (cx-92))/2, my = rowY;
+    for(const rg of betray.rings){
+      const a = Math.max(0, rg.life)*0.5*g;
+      ctx.strokeStyle=`rgba(255,60,60,${a})`; ctx.lineWidth=2.5*Math.max(0.2,rg.life);
+      ctx.beginPath(); ctx.arc(mx, my, rg.r, 0, Math.PI*2); ctx.stroke();
+    }
+  }
+
+  // ----- Simon.EXE -----
+  let sx=cx, sy=top+H*0.66, sA=1;
+  if(ph===0){ sy = top + H*(0.80 - 0.16*(betray.ask||0)); }
+  else if(ph===1){ sy = top + H*0.60; }
+  else if(ph===2){ sx = cx+30; sy = rowY+4; }
+  else if(ph===3){ sx = cx-92; sy = rowY; }
+  else if(ph===4){ sx = cx-92; sy = rowY + H*0.42*(betray.flee||0); sA = 1 - 0.8*(betray.flee||0); }
+  ctx.save(); ctx.globalAlpha = Math.max(0,sA)*g;
+  ctx.shadowColor='#ff2b2b'; ctx.shadowBlur=16*g;
+  ctx.fillStyle='#08060a'; ctx.strokeStyle='#ff2b2b'; ctx.lineWidth=3;
+  ctx.beginPath();
+  ctx.moveTo(sx-26, sy-30); ctx.lineTo(sx+26, sy-30); ctx.lineTo(sx+30, sy+24);
+  ctx.lineTo(sx, sy+40); ctx.lineTo(sx-30, sy+24); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.shadowBlur=0;
+  ctx.fillStyle='#ff2b2b';
+  ctx.beginPath(); ctx.arc(sx-10, sy-8, 5,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(sx+10, sy-8, 5,0,Math.PI*2); ctx.fill();
+  ctx.strokeStyle='#ff2b2b'; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.moveTo(sx-12, sy+10);
+  ctx.lineTo(sx-6,sy+16); ctx.lineTo(sx,sy+10); ctx.lineTo(sx+6,sy+16); ctx.lineTo(sx+12,sy+10); ctx.stroke();
+  ctx.fillStyle=`rgba(255,59,59,${Math.max(0,sA)*g})`; ctx.font='800 10px ui-monospace,monospace'; ctx.textAlign='center';
+  ctx.fillText('SIMON.EXE', sx, sy+54);
+  ctx.restore();
+
+  // ----- the betrayal slash sweep -----
+  if(ph===2 && betray.slashed){
+    const sw = Math.min(1, (lt-0.9)/0.5);
+    ctx.save(); ctx.globalAlpha = (1-sw)*g;
+    ctx.strokeStyle='#ffffff'; ctx.lineWidth=4;
+    ctx.beginPath(); ctx.moveTo(cx-50, rowY-46); ctx.lineTo(cx+230, rowY+46); ctx.stroke();
+    ctx.strokeStyle='rgba(255,59,59,0.7)'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(cx-50, rowY-38); ctx.lineTo(cx+230, rowY+54); ctx.stroke();
+    ctx.restore();
+  }
+
+  // ----- per-beat caption -----
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  const capY = top+H*0.70;
+  if(ph===0){
+    ctx.fillStyle=`rgba(232,232,232,${g})`; ctx.font='700 17px ui-monospace,monospace';
+    ctx.fillText('"team up with me."', cx, capY);
+  } else if(ph===1){
+    ctx.fillStyle=`rgba(232,232,232,${g})`; ctx.font='700 15px ui-monospace,monospace';
+    ctx.fillText('Oren refuses. Clara and Luigi Green accept.', cx, capY);
+  } else if(ph===2){
+    ctx.fillStyle=`rgba(255,60,60,${g})`; ctx.font='800 17px ui-monospace,monospace';
+    ctx.fillText('THE ALLIES WHO SAID YES ARE SLAIN', cx, capY);
+  } else if(ph===3){
+    ctx.fillStyle=`rgba(255,60,60,${g})`; ctx.font='800 19px ui-monospace,monospace';
+    ctx.fillText('SIMON.EXE  vs  OREN.EXE', cx, capY);
+  } else if(ph===4){
+    const fa = Math.min(1, lt/1.2)*g;
+    ctx.shadowColor='#ff0000'; ctx.shadowBlur=20*fa;
+    ctx.fillStyle=`rgba(255,40,40,${fa})`; ctx.font='900 34px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE WINS', cx, capY); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(222,210,210,${fa})`; ctx.font='800 13px ui-monospace,monospace';
+    ctx.fillText('Simon never wants to face Oren again.', cx, capY+28);
+  }
+
+  // ----- title band + canon note -----
+  ctx.fillStyle=`rgba(255,60,60,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE ALLIANCE BETRAYAL — SEEK · ANSWERS · BETRAYAL · BATTLE · OREN WINS', cx, top+30);
+  ctx.fillStyle=`rgba(210,200,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('OREN.EXE STRONGEST · SIMON.EXE MOST MURDEROUS, LEAST TRUSTED · PINKI.EXE THIRD', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

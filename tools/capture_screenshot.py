@@ -973,6 +973,34 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "betray": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE ALLIANCE BETRAYAL — freeze on the BATTLE beat: Clara & Luigi slain (gray), Simon.EXE vs Oren.EXE, rings out
+        if (typeof betray!=='undefined'){
+          betray.active=true; betray.done=false; betray.glow=1; betray.t=9.8; betray.cyc=9.8;
+          betray.phase=3; betray.slainC=1; betray.slainL=1; betray.clash=1;
+          betray.rings=[{r:60,life:0.8},{r:130,life:0.5},{r:210,life:0.25}];
+        }
+        if (typeof betrayM!=='undefined'){ betrayM=0.7; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof betray!=='undefined'){ betray.glow=1; betray.cyc=9.8; betray.phase=3;
+          betray.slainC=1; betray.slainL=1;
+          betray.rings=[{r:60,life:0.8},{r:130,life:0.5},{r:210,life:0.25}]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

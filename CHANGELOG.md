@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-21 — THE ALLIANCE BETRAYAL: Simon seeks allies, slays the ones who say yes, then loses to Oren (Lore 29 cont.)
+
+Based on Toby's June 21 lore: *"Oren.EXE is most powerful, but Simon.EXE is the one who actually wants the lives
+of everyone more than anything else. Pinki.EXE is third in power. Simon goes to Luigi Green, Clara, or Oren to
+team up, Oren says no, Clara and Luigi Green says yes, Simon.EXE appears, both Clara and Luigi Green was slain,
+Simon.EXE and Oren.EXE battle, Oren.EXE won and Simon never wants to encounter Oren again."* Toby's team-up scene
+is now a looping five-beat cutscene that plays over the climb right after THE OREN.EXE CUTSCENE, locking in the
+new hierarchy: Oren strongest, Simon the most murderous and least trustworthy, Pinki third.
+
+![Lore 29 — THE ALLIANCE BETRAYAL, frozen on the BATTLE beat. Three ally heads stand in a row across the top:
+OREN on the left (red, with a red "NO" answer bubble above him, untouched), CLARA in the center and LUIGI GREEN
+on the right, both grayed out with X-ed eyes — slain. Simon.EXE, a dark red jagged figure with red eyes and a
+spiked grin, stands beside Oren as concentric red SHOCKWAVE rings roll out between them. The caption "SIMON.EXE
+vs OREN.EXE" sits in the middle. A red title band reads "THE ALLIANCE BETRAYAL — SEEK · ANSWERS · BETRAYAL ·
+BATTLE · OREN WINS," and under it a canon band reads "OREN.EXE STRONGEST · SIMON.EXE MOST MURDEROUS, LEAST
+TRUSTED · PINKI.EXE THIRD."](screenshots/42-alliance-betrayal.png)
+
+- **The five beats.** A looping cinematic plays over the climb in the Betrayal zone: **SEEK** (Simon.EXE rises
+  toward the three with *"team up with me."*), **ANSWERS** (answer bubbles pop in — Oren **NO**, Clara **YES**,
+  Luigi Green **YES**), **BETRAYAL** (a white slash sweeps across the two who accepted and they gray out with
+  X-ed eyes — *"THE ALLIES WHO SAID YES ARE SLAIN"*), **BATTLE** (Simon.EXE squares off against Oren.EXE with red
+  shockwave rings), and **OREN WINS** (*"Simon never wants to face Oren again"* as Simon flees downward), then it
+  loops.
+- **The hierarchy, made visible.** Oren is the one ally who refuses, and the only one left standing — the strongest.
+  Simon is the one who asks for trust and then destroys it — the most murderous and least trustworthy. The canon
+  band carries the three-way order: **Oren strongest · Simon most murderous, least trusted · Pinki third.**
+- **The one safe move.** Simon can only betray an ally he actually made. Climb past without ever taking the deal
+  and you fill the meter for *"REFUSED THE ALLIANCE"* — the betrayal can't reach someone who never said yes.
+- **No new audio files.** The scene reuses existing cues: `zap` for the asking, `strike` for the betrayal slash,
+  and `shock` for the Simon-vs-Oren shockwaves.
+- **Open question for Toby.** Toby ended on *"what does Simon.EXE do after deciding never to face Oren again?"* —
+  that is the next thing to build.
+
 ## 2026-06-21 — THE OREN.EXE CUTSCENE: intro, static, laughter, red eye, outro (Lore 29 cont.)
 
 Based on Toby's June 21 lore: *"Oren.EXE has an intro and an outro, his intro is Oren says 'lets play a game.',
