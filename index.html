@@ -476,6 +476,7 @@ let claraAdmin, claraAdminH, claraAdminM;
 let power, powerH, powerM;
 let oren, orenH, orenM;
 let betray, betrayH, betrayM;
+let dimension, dimensionH, dimensionM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -685,6 +686,15 @@ function reset(){
              ask:0, slainC:0, slainL:0, clash:0, flee:0, rings:[], ringT:0, slashT:0, slashed:false };
   betrayH = orenH + 1100;
   betrayM = 0.25;  // THE ALLIANCE BETRAYAL meter: climb past without taking the deal — refuse what Simon will betray
+  dimension = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 29 (June 22) — THE THIRD DIMENSION. Toby answered the open question: after Simon won't
+             // face Oren again, Clara and Luigi Green RESPAWN, Simon REBUILDS his battle system into one
+             // hybrid of FNF + Sound Battle, but Oren gains 100x more power and his battle pattern becomes
+             // 3D while everyone else stays 2D — so Oren still beats Simon's rebuilt system, Pinki is crushed,
+             // and Simon turns away to hunt easier targets: the roaming hunter.
+             fuse:0, rise:0, crush:0, hunt:0, rings:[], ringT:0, held:false };
+  dimensionH = betrayH + 1100;
+  dimensionM = 0.25;  // THE THIRD DIMENSION meter: keep moving and you're never weak enough for the roaming hunter
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -760,6 +770,8 @@ function isPower(){ return !!(power && (power.active || power.done)); }
 function isOren(){ return !!(oren && (oren.active || oren.done)); }
 // Lore 29 (June 21) — after THE OREN.EXE CUTSCENE, Simon's team-up-and-betray scene plays out: THE ALLIANCE BETRAYAL
 function isBetray(){ return !!(betray && (betray.active || betray.done)); }
+// Lore 29 (June 22) — after THE ALLIANCE BETRAYAL, Toby answered "what does Simon do next?": THE THIRD DIMENSION
+function isDimension(){ return !!(dimension && (dimension.active || dimension.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1591,6 +1603,26 @@ function update(dt){
   if(betray.glow < (isBetray() ? 1 : 0))
     betray.glow = Math.min(1, betray.glow + dt*0.5);
 
+  /* ---- Lore 29 (June 22) — THE THIRD DIMENSION. After Simon swears off Oren, Toby answered what comes next:
+         Clara and Luigi Green RESPAWN; Simon REBUILDS his battle system into one hybrid of FNF + Sound Battle;
+         but Oren gains 100x more power and his pattern rises into 3D while everyone else is stuck in 2D — so
+         Oren still beats Simon's rebuilt system, Pinki is crushed at that level, and Simon gives up matching
+         Oren and turns to hunt easier targets: the roaming hunter. A looping cinematic over the climb. ---- */
+  if(betray.done && !dimension.active && !dimension.done && height > dimensionH){
+    dimension.active = true; dimension.t = 0; dimension.cyc = 0; dimension.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE THIRD DIMENSION'; warnT = 2.8;
+    showTaunt('Clara and Luigi Green respawn. Simon rebuilds. Oren rises into 3D.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN.EXE RISES INTO 3D', col:'#ff3b3b' });
+    AUDIO.shock();
+  }
+  if(dimension.active){
+    dimension.t += dt;
+    if(dimension.t > 15.0){ dimension.active = false; dimension.done = true; }
+  }
+  if(dimension.glow < (isDimension() ? 1 : 0))
+    dimension.glow = Math.min(1, dimension.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1615,7 +1647,8 @@ function update(dt){
   if(isClaraAdmin() && !isPower()) updateClaraAdmin(dt);
   if(isPower() && !isOren()) updatePower(dt);
   if(isOren() && !isBetray()) updateOren(dt);
-  if(isBetray()) updateBetray(dt);
+  if(isBetray() && !isDimension()) updateBetray(dt);
+  if(isDimension()) updateDimension(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2711,7 +2744,8 @@ function draw(){
   if(isClaraAdmin() && !isPower() && claraAdmin.glow>0.02) drawClaraAdmin();
   if(isPower() && !isOren() && power.glow>0.02) drawPower();
   if(isOren() && !isBetray() && oren.glow>0.02) drawOren();
-  if(isBetray() && betray.glow>0.02) drawBetray();
+  if(isBetray() && !isDimension() && betray.glow>0.02) drawBetray();
+  if(isDimension() && dimension.glow>0.02) drawDimension();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -6491,6 +6525,273 @@ function drawBetray(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===== THE THIRD DIMENSION (Lore 29, June 22) =====
+   Toby answered "what does Simon do after deciding never to face Oren again?": Clara and Luigi Green
+   RESPAWN, Simon REBUILDS his battle system into one hybrid of FNF + Sound Battle, but Oren gains 100x
+   more power and his battle pattern rises into 3D while everyone else stays 2D — so Oren still beats
+   Simon's rebuilt system, Pinki is crushed at that level, and Simon turns to hunt easier targets:
+   the roaming hunter. A looping cinematic over the climb. Five beats:
+   RESPAWN · REBUILD · 3D RISE · STILL LOSES · HUNTER. */
+const DIM_CYC = 15.0;
+function dimSeg(c){
+  if(c < 2.8) return [0, c];        // RESPAWN — Clara and Luigi Green return
+  if(c < 6.0) return [1, c-2.8];    // REBUILD — Simon fuses FNF + Sound Battle into one
+  if(c < 9.5) return [2, c-6.0];    // 3D RISE — Oren rises 100x into 3D; Pinki crushed
+  if(c < 12.2) return [3, c-9.5];   // STILL LOSES — Simon's 2D hybrid can't reach 3D Oren
+  return [4, c-12.2];               // HUNTER — Simon turns to easier targets
+}
+function updateDimension(dt){
+  dimension.t = (dimension.t||0) + dt;
+  dimension.cyc = ((dimension.cyc||0) + dt) % DIM_CYC;
+  const seg = dimSeg(dimension.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== dimension.phase){
+    dimension.phase = ph;
+    if(ph===0){ dimension.fuse=0; dimension.rise=0; dimension.crush=0; dimension.hunt=0;
+      AUDIO.coin(); showTaunt('Clara and Luigi Green respawn into the world.'); }
+    if(ph===1){ AUDIO.battleLead();
+      showTaunt('Simon rebuilds his battle system: FNF + Sound Battle into one.'); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,9); glitch=Math.max(glitch,0.4);
+      showTaunt('Oren gains 100x power. His pattern rises into 3D. Pinki is crushed.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN.EXE — 3D · 100X POWER', col:'#ff3b3b' }); }
+    if(ph===3){ AUDIO.strike(); shake=Math.max(shake,7);
+      showTaunt('Simon’s rebuilt system is still 2D. Oren beats him from above.'); }
+    if(ph===4){ AUDIO.zap();
+      showTaunt('Simon gives up on Oren and turns to hunt easier targets.');
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'THE ROAMING HUNTER', col:'#ff8b3b' }); }
+  }
+  if(ph===1) dimension.fuse = Math.min(1, lt/2.4);
+  else if(ph>=2) dimension.fuse = 1;
+  if(ph===2){
+    dimension.rise = Math.min(1, lt/2.0);
+    dimension.crush = Math.min(1, Math.max(0,(lt-1.2)/1.2));
+    dimension.ringT = (dimension.ringT||0)-dt;
+    if(dimension.ringT<=0){ dimension.ringT=0.5; dimension.rings.push({ r:30, life:1 }); AUDIO.shock(); shake=Math.max(shake,4); }
+  } else if(ph>=3){ dimension.rise=1; dimension.crush=1; }
+  for(let i=dimension.rings.length-1;i>=0;i--){ const rg=dimension.rings[i];
+    rg.r += dt*240; rg.life -= dt*0.8; if(rg.life<=0) dimension.rings.splice(i,1); }
+  if(ph===4) dimension.hunt = Math.min(1, lt/1.8);
+
+  // THE THIRD DIMENSION meter — keep moving and you're never weak enough for the roaming hunter.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  dimensionM = Math.max(0, Math.min(1, dimensionM + (moving ? dt*0.05 : -dt*0.03)));
+  if(dimensionM>=1 && !dimension.held){
+    dimension.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You never slowed down. The roaming hunter only takes easy targets.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ NOT AN EASY TARGET ★', col:'#ffd0a0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff3b3b','#ff8b3b','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+// a rotating wireframe cube — Oren.EXE's 3D battle pattern, projected with simple perspective
+function drawDimCube(ox, oy, s, a, b, col, alpha){
+  const ca=Math.cos(a), sa=Math.sin(a), cb=Math.cos(b), sb=Math.sin(b);
+  const V=[];
+  for(let i=0;i<2;i++) for(let j=0;j<2;j++) for(let k=0;k<2;k++){
+    const x=(i?1:-1)*s, y=(j?1:-1)*s, z=(k?1:-1)*s;
+    const x1=x*ca - z*sa, z1=x*sa + z*ca;            // yaw around Y
+    const y2=y*cb - z1*sb, z2=y*sb + z1*cb;          // pitch around X
+    const f=340, sc=f/(f+z2);
+    V[i*4+j*2+k] = { X:ox + x1*sc, Y:oy + y2*sc };
+  }
+  ctx.save();
+  ctx.globalAlpha = alpha; ctx.strokeStyle = col; ctx.lineWidth = 2;
+  ctx.shadowColor = col; ctx.shadowBlur = 12*alpha;
+  for(let n=0;n<8;n++) for(const bit of [1,2,4]){ const m=n^bit;
+    if(m>n){ ctx.beginPath(); ctx.moveTo(V[n].X,V[n].Y); ctx.lineTo(V[m].X,V[m].Y); ctx.stroke(); } }
+  // a small glowing core so the cube reads as a power source
+  ctx.fillStyle = col; ctx.shadowBlur = 18*alpha;
+  ctx.beginPath(); ctx.arc(ox, oy, 4+2*alpha, 0, Math.PI*2); ctx.fill();
+  ctx.restore();
+}
+function drawDimension(){
+  const g = dimension.glow||0, top = cameraY;
+  const c = dimension.cyc||0, seg = dimSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2;
+  ctx.save();
+  // background — dark, deepening to red as Oren rises into 3D
+  const dark = 0.6 + 0.3*(dimension.rise||0);
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(3,3,9,${dark*g})`);
+  bg.addColorStop(1, `rgba(16,3,8,${dark*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+
+  const planeY = top + H*0.60;
+
+  // ----- the flat 2D plane: "everyone else fights here" -----
+  ctx.save(); ctx.globalAlpha = 0.5*g; ctx.strokeStyle = '#3a4a6a'; ctx.lineWidth = 1;
+  for(let i=0;i<=6;i++){ const y = planeY + i*13, sp = 1 + i*0.42;
+    ctx.beginPath(); ctx.moveTo(cx-190*sp, y); ctx.lineTo(cx+190*sp, y); ctx.stroke(); }
+  for(let i=-6;i<=6;i++){ ctx.beginPath(); ctx.moveTo(cx+i*22, planeY); ctx.lineTo(cx+i*64, planeY+78); ctx.stroke(); }
+  ctx.restore();
+  ctx.globalAlpha = g; ctx.textAlign = 'center';
+  ctx.fillStyle = `rgba(120,140,180,${0.75*g})`; ctx.font = '700 9px ui-monospace,monospace';
+  ctx.fillText('THE 2D PLANE — EVERYONE ELSE STAYS HERE', cx, planeY+92);
+
+  // ----- a small head (Clara / Luigi Green / Pinki) -----
+  function head(x, y, col, a, squash){
+    if(a<=0.01) return;
+    ctx.save(); ctx.globalAlpha = a*g;
+    ctx.shadowColor = col; ctx.shadowBlur = 10*a;
+    ctx.fillStyle = '#0c0a12'; ctx.strokeStyle = col; ctx.lineWidth = 2.5;
+    const rx = 22, ry = 24*(1-0.78*(squash||0));
+    ctx.beginPath(); ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur = 0; ctx.fillStyle = col;
+    const ey = y - 4*(1-(squash||0));
+    ctx.beginPath(); ctx.arc(x-8, ey, 3.4, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(x+8, ey, 3.4, 0, Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+
+  // ----- RESPAWN: Clara and Luigi Green flicker back into the world -----
+  const respawnA = ph===0 ? Math.min(1, lt/1.6) : 1;
+  const flick = ph===0 ? Math.min(1, respawnA + (1-respawnA)*(0.5+0.5*Math.sin(dimension.t*32))) : 1;
+  head(cx-180, planeY-22, '#c187ff', respawnA*flick, 0);   // Clara
+  head(cx+180, planeY-22, '#39e08a', respawnA*flick, 0);   // Luigi Green
+  ctx.globalAlpha = g; ctx.font = '800 9px ui-monospace,monospace';
+  ctx.fillStyle = `rgba(193,135,255,${respawnA*g})`; ctx.fillText('CLARA', cx-180, planeY+12);
+  ctx.fillStyle = `rgba(57,224,138,${respawnA*g})`; ctx.fillText('LUIGI GREEN', cx+180, planeY+12);
+  if(ph===0){
+    const ra = Math.min(1, lt/0.8)*g;
+    ctx.fillStyle = `rgba(210,200,210,${ra})`; ctx.font = '800 11px ui-monospace,monospace';
+    ctx.fillText('RESPAWNED', cx-180, planeY-52); ctx.fillText('RESPAWNED', cx+180, planeY-52);
+  }
+
+  // ----- PINKI on the plane, crushed flat once Oren rises -----
+  head(cx+70, planeY-18, '#ff7bd0', g>0?1:0, dimension.crush||0);
+  ctx.fillStyle = `rgba(255,123,208,${g})`; ctx.font = '800 9px ui-monospace,monospace';
+  ctx.fillText('PINKI', cx+70, planeY+12);
+  if((dimension.crush||0) > 0.4){
+    ctx.fillStyle = `rgba(255,123,208,${Math.min(1,(dimension.crush-0.4)/0.4)*g})`;
+    ctx.font = '800 9px ui-monospace,monospace';
+    ctx.fillText('CRUSHED', cx+70, planeY-30);
+  }
+
+  // ----- REBUILD: Simon fuses FNF + Sound Battle into one hybrid pattern -----
+  if(ph===1 || (ph>=2 && false)){ /* strips only during the rebuild beat */ }
+  if(ph===1){
+    const f = dimension.fuse||0, sy = top + H*0.40;
+    const gap = (1-f) * 120;
+    // FNF arrow strip (slides in from the left)
+    ctx.save(); ctx.globalAlpha = g; ctx.textAlign = 'center';
+    const arrows = ['←','↓','↑','→'];
+    ctx.font = '800 16px ui-monospace,monospace'; ctx.fillStyle = '#39e08a';
+    for(let i=0;i<4;i++) ctx.fillText(arrows[i], cx-70-gap + i*22, sy);
+    ctx.fillStyle = `rgba(57,224,138,${0.8*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('FNF', cx-37-gap, sy+16);
+    // Sound Battle waveform strip (slides in from the right)
+    ctx.strokeStyle = '#ffcf4f'; ctx.lineWidth = 2; ctx.beginPath();
+    for(let i=0;i<=40;i++){ const x = cx+12+gap + i*2.2, y = sy + Math.sin(i*0.6 + dimension.t*6)*7;
+      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y); }
+    ctx.stroke();
+    ctx.fillStyle = `rgba(255,207,79,${0.8*g})`; ctx.font='700 8px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('SOUND BATTLE', cx+57+gap, sy+18);
+    // the fused "one system" glows in the middle as they meet
+    if(f > 0.6){
+      const fa = Math.min(1,(f-0.6)/0.4)*g;
+      ctx.fillStyle = `rgba(255,255,255,${fa})`; ctx.font='900 12px ui-monospace,monospace';
+      ctx.fillText('→ ONE SYSTEM', cx, sy-22);
+    }
+    ctx.restore();
+  }
+
+  // ----- 3D RISE: Oren.EXE's wireframe cube rises out of the 2D world -----
+  if(ph>=2){
+    const r = dimension.rise||0;
+    const ox = cx, oy = top + H*(0.40 - 0.10*r);
+    const s = 14 + 36*r;
+    // shockwave rings rolling off the rising cube
+    for(const rg of dimension.rings){
+      const a = Math.max(0, rg.life)*0.5*g;
+      ctx.strokeStyle = `rgba(255,60,60,${a})`; ctx.lineWidth = 2.5*Math.max(0.2,rg.life);
+      ctx.beginPath(); ctx.arc(ox, oy, rg.r, 0, Math.PI*2); ctx.stroke();
+    }
+    drawDimCube(ox, oy, s, dimension.t*0.9, dimension.t*0.6, '#ff3b3b', Math.min(1,r+0.2)*g);
+    ctx.globalAlpha = g; ctx.textAlign = 'center';
+    ctx.fillStyle = `rgba(255,80,80,${g})`; ctx.font = '900 12px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE', ox, oy - s - 12);
+    ctx.fillStyle = `rgba(255,150,150,${g})`; ctx.font = '700 9px ui-monospace,monospace';
+    ctx.fillText('3D BATTLE PATTERN · 100X POWER', ox, oy + s + 18);
+  }
+
+  // ----- Simon.EXE on the 2D plane -----
+  let sx = cx-40, sy = planeY-20, sA = 1;
+  if(ph===1){ sx = cx; sy = top + H*0.40 + 44; }     // center, rebuilding below the strips
+  else if(ph===3){ sy = planeY-20 - H*0.10*Math.min(1,lt/1.2); }  // tries to reach up... but stays 2D
+  else if(ph===4){ sx = cx-40 - 70*(dimension.hunt||0); sy = planeY-20 + H*0.16*(dimension.hunt||0); sA = 1 - 0.5*(dimension.hunt||0); }
+  ctx.save(); ctx.globalAlpha = Math.max(0,sA)*g;
+  ctx.shadowColor = '#ff2b2b'; ctx.shadowBlur = 14*g;
+  ctx.fillStyle = '#08060a'; ctx.strokeStyle = '#ff2b2b'; ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(sx-22, sy-26); ctx.lineTo(sx+22, sy-26); ctx.lineTo(sx+26, sy+20);
+  ctx.lineTo(sx, sy+34); ctx.lineTo(sx-26, sy+20); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.shadowBlur = 0; ctx.fillStyle = '#ff2b2b';
+  ctx.beginPath(); ctx.arc(sx-8, sy-6, 4,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(sx+8, sy-6, 4,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle = `rgba(255,59,59,${Math.max(0,sA)*g})`; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+  ctx.fillText('SIMON.EXE', sx, sy+46);
+  ctx.restore();
+
+  // ----- STILL LOSES: Simon's flat attack can't reach the 3D cube -----
+  if(ph===3){
+    const a = Math.min(1, lt/1.0)*g;
+    ctx.save(); ctx.globalAlpha = a*0.8;
+    ctx.strokeStyle = '#ff2b2b'; ctx.lineWidth = 2; ctx.setLineDash([6,5]);
+    ctx.beginPath(); ctx.moveTo(cx-40, planeY-40); ctx.lineTo(cx-40, top+H*0.34); ctx.stroke();
+    ctx.setLineDash([]);
+    // it stops short of the cube — bounces flat along the plane
+    ctx.fillStyle = `rgba(255,80,80,${a})`; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('STILL 2D', cx-40, top+H*0.31);
+    ctx.restore();
+  }
+
+  // ----- HUNTER: smaller dim targets Simon roams toward -----
+  if(ph===4){
+    const h = dimension.hunt||0;
+    for(let i=0;i<3;i++){
+      const tx = cx-150 + i*40, ty = planeY + 50 + i*8, a = h*g*0.8;
+      ctx.save(); ctx.globalAlpha = a;
+      ctx.fillStyle = '#2a2030'; ctx.strokeStyle = '#7a6a8a'; ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.ellipse(tx, ty, 9, 10, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+      ctx.restore();
+    }
+    ctx.globalAlpha = h*g; ctx.fillStyle = `rgba(255,139,59,${h*g})`;
+    ctx.font='700 9px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('EASIER TARGETS', cx-110, planeY+82);
+  }
+
+  // ----- per-beat caption -----
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  const capY = top + H*0.74;
+  if(ph===0){
+    ctx.fillStyle=`rgba(232,232,232,${g})`; ctx.font='700 16px ui-monospace,monospace';
+    ctx.fillText('Clara and Luigi Green respawned.', cx, capY);
+  } else if(ph===1){
+    ctx.fillStyle=`rgba(232,232,232,${g})`; ctx.font='700 15px ui-monospace,monospace';
+    ctx.fillText('Simon rebuilds: FNF + Sound Battle into one system.', cx, capY);
+  } else if(ph===2){
+    ctx.fillStyle=`rgba(255,60,60,${g})`; ctx.font='800 17px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE RISES INTO 3D · EVERYONE ELSE STAYS 2D', cx, capY);
+  } else if(ph===3){
+    ctx.fillStyle=`rgba(255,60,60,${g})`; ctx.font='800 18px ui-monospace,monospace';
+    ctx.fillText('STILL 2D — OREN WINS FROM ABOVE', cx, capY);
+  } else if(ph===4){
+    const fa = Math.min(1, lt/1.0)*g;
+    ctx.shadowColor='#ff8b3b'; ctx.shadowBlur=16*fa;
+    ctx.fillStyle=`rgba(255,139,59,${fa})`; ctx.font='900 26px ui-monospace,monospace';
+    ctx.fillText('THE ROAMING HUNTER', cx, capY); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(222,210,210,${fa})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('Simon hunts easier targets instead of Oren.', cx, capY+26);
+  }
+
+  // ----- title band + canon note -----
+  ctx.fillStyle=`rgba(255,60,60,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE THIRD DIMENSION — RESPAWN · REBUILD · 3D RISE · STILL LOSES · HUNTER', cx, top+30);
+  ctx.fillStyle=`rgba(210,200,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('OREN.EXE FIGHTS IN 3D · EVERYONE ELSE IN 2D · SIMON = ROAMING HUNTER · PINKI CRUSHED', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -6852,6 +7153,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(oren.held){ ctx.fillStyle='#ffd0d0'; ctx.fillText('★ DIDN’T PLAY HIS GAME ★', W/2, by-6); }
     else { ctx.fillStyle='#ff6b6b'; ctx.fillText('OREN.EXE: "LETS PLAY A GAME." — CLIMB PAST INSTEAD', W/2, by-6); }
+  }
+  // THE THIRD DIMENSION (Lore 29, June 22) — keep moving and you're never an easy target.
+  if(isDimension() && dimension.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,dimensionM));
+    ctx.fillStyle='#180405'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#ff3b3b'); ig.addColorStop(1, dimension.held?'#ffd0a0':'#ff8b3b');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(dimension.held){ ctx.fillStyle='#ffd0a0'; ctx.fillText('★ NOT AN EASY TARGET ★', W/2, by-6); }
+    else { ctx.fillStyle='#ff8b3b'; ctx.fillText('THE ROAMING HUNTER — KEEP MOVING, STAY HARD TO HUNT', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){

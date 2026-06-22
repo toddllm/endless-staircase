@@ -1001,6 +1001,34 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "dimension": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE THIRD DIMENSION — freeze on the 3D RISE beat: Oren's cube up, Pinki crushed, Clara/Luigi respawned, rings out
+        if (typeof dimension!=='undefined'){
+          dimension.active=true; dimension.done=false; dimension.glow=1; dimension.t=8.3; dimension.cyc=8.3;
+          dimension.phase=2; dimension.fuse=1; dimension.rise=1; dimension.crush=0.92; dimension.hunt=0;
+          dimension.rings=[{r:70,life:0.8},{r:150,life:0.5},{r:240,life:0.25}];
+        }
+        if (typeof dimensionM!=='undefined'){ dimensionM=0.7; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof dimension!=='undefined'){ dimension.glow=1; dimension.cyc=8.3; dimension.phase=2;
+          dimension.rise=1; dimension.crush=0.92; dimension.fuse=1;
+          dimension.rings=[{r:70,life:0.8},{r:150,life:0.5},{r:240,life:0.25}]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

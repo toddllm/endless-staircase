@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-22 — THE THIRD DIMENSION: Clara & Luigi respawn, Simon rebuilds, Oren rises into 3D and still wins (Lore 29 cont.)
+
+Based on Toby's June 22 lore — his answer to the open question "what does Simon do after deciding never to face
+Oren again?": *"Luigi Green and Clara respawned. Simon changes his whole battle system, and battle pattern to make
+it into the FNF and Sound Battles patterns into 1. Oren also gained 100X more power, Oren is now all powerful...
+Oren.EXE still beats Simon, Simon just moves onto easier targets. Oren.EXE's battle pattern is unique, it's 3D
+instead of everyone else's 2D, since he has this huge rise. Pinki gets crushed by power that high."* The answer
+becomes a looping five-beat cutscene over the climb, right after THE ALLIANCE BETRAYAL.
+
+![Lore 29 — THE THIRD DIMENSION, frozen on the 3D RISE beat. A red wireframe CUBE — Oren.EXE's 3D battle pattern —
+hangs high in the screen, rotating, with a glowing core and concentric red shockwave rings rolling off it; it is
+labeled "OREN.EXE" above and "3D BATTLE PATTERN · 100X POWER" below. Beneath it runs a flat perspective grid
+labeled "THE 2D PLANE — EVERYONE ELSE STAYS HERE." Standing on that plane, left to right: CLARA (violet, respawned),
+SIMON.EXE (the red jagged figure, center), PINKI (pink, squashed flat with the tag "CRUSHED"), and LUIGI GREEN
+(green, respawned). The caption reads "OREN.EXE RISES INTO 3D · EVERYONE ELSE STAYS 2D." A red title band reads
+"THE THIRD DIMENSION — RESPAWN · REBUILD · 3D RISE · STILL LOSES · HUNTER," and under it a canon band reads
+"OREN.EXE FIGHTS IN 3D · EVERYONE ELSE IN 2D · SIMON = ROAMING HUNTER · PINKI CRUSHED."](screenshots/43-third-dimension.png)
+
+- **The five beats.** A looping cinematic plays over the climb in the Dimension zone: **RESPAWN** (Clara and Luigi
+  Green flicker back into the world), **REBUILD** (Simon fuses an *FNF* arrow strip and a *Sound Battle* waveform
+  into **one** hybrid system), **3D RISE** (Oren gains *100x* power and his battle pattern lifts off the flat plane
+  into a rotating 3D wireframe cube while everyone else stays 2D; Pinki is **crushed** flat at that level),
+  **STILL LOSES** (Simon's rebuilt attack is still 2D — it reaches up but stops short of the cube; Oren wins from
+  above), and **HUNTER** (Simon turns away from Oren toward smaller, dim *easier targets*), then it loops.
+- **3D vs 2D, made literal.** Oren is the only thing in the scene that exists in three dimensions: a real rotating
+  wireframe cube projected with perspective, floating above a flat perspective grid that holds everyone else. That
+  is Toby's whole point — Simon improving *within* the 2D game can't reach an opponent who moved *above* it.
+- **The roaming hunter.** Simon stops trying to match Oren and becomes a hunter of weaker beings. The zone meter
+  flips that into the one safe move: keep climbing and stay in motion, and you fill *"NOT AN EASY TARGET"* —
+  the roaming hunter only takes the targets that slow down.
+- **No new audio files.** The scene reuses existing cues: `coin` for the respawn, `battleLead` for the FNF/Sound
+  rebuild, `shock` for Oren's 3D shockwaves, `strike` for the loss from above, and `zap` for the turn to hunting.
+- **Open question for Toby.** Toby ended on *"what Oren.EXE's 3D attacks actually look like compared to Simon's new
+  FNF/Sound-Battle hybrid system"* — the cube is the shape of the 3D pattern; the actual attack moves are the next
+  thing to build.
+
 ## 2026-06-21 — THE ALLIANCE BETRAYAL: Simon seeks allies, slays the ones who say yes, then loses to Oren (Lore 29 cont.)
 
 Based on Toby's June 21 lore: *"Oren.EXE is most powerful, but Simon.EXE is the one who actually wants the lives
