@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-22 — THE WEAKNESS: Simon is an Electric Psychic, and here is what beats him (Lore 30 cont.)
+
+Based on Toby's June 22 lore (Lore 30 cont.): *"What would Simon be weak too? Simon is a Electric Psychic (Simon
+is made for Lightning, Simon's lightning and all his powers give a psychic pulse)."* He then worked out the
+answer himself: *"If Simon is Electric Psychic, then the best way to weaken him is to ground his lightning, force
+his movement, and disrupt the psychic signal riding inside his power."* So the new zone is the answer to his own
+question — a five-beat cutscene that lands each weakness on Simon in turn, playing right after THE DELETION LAYER.
+
+![Lore 30 cont. — THE WEAKNESS, frozen on the OVER-DRAIN beat. Simon is redrawn as an Electric Psychic: a jagged
+cold-blue figure with two glowing eyes, lit yellow arcs blasting outward from him as he is forced to discharge,
+and an "OUTPUT OVERLOAD" bar filling beneath him. Down the left edge a weakness checklist lights up beat by beat,
+with GROUND, FORCE, JAM and OVER-DRAIN already checked (◆) and BLIND still pending (◇). The big caption reads
+"OVER-DRAIN — FORCE CONSTANT DISCHARGE." A blue title band reads "THE WEAKNESS — ELECTRIC PSYCHIC: GROUND ·
+FORCE · JAM · OVER-DRAIN · BLIND," and the canon line under it reads "GROUND THE LIGHTNING · FORCE THE MOVEMENT ·
+DISRUPT THE PSYCHIC SIGNAL."](screenshots/45-the-weakness.png)
+
+- **Five weaknesses, one per beat.** The cutscene loops through Simon's full weakness profile as Toby laid it
+  out: **GROUND** (a conductive plate drains his charge down out of him), **FORCE** (a treadmill takes control
+  of his movement — the speed-being controlled, building on the established treadmill weakness), **JAM**
+  (the psychic pulse riding inside his power gets scrambled into static), **OVER-DRAIN** (he is forced to
+  discharge constantly until he outputs too much at once and overloads — he gains from charge, but too much out
+  burns him), and **BLIND** (the Yellow Eye gets covered and his perception/mind is hit — his containment-class
+  weakness). A checklist down the left fills in as each beat lands.
+- **It answers his question, in his words.** The title and canon bands carry Toby's exact one-line summary —
+  *ground the lightning, force the movement, disrupt the psychic signal* — so the canon he reasoned out is now
+  the through-line of the level.
+- **Exploit meter.** Like the other late zones, keeping the pressure on (keep moving / climbing) fills a meter;
+  fill it and you "wear Simon down" for a reward — the idea that even the Electric Psychic has a way to be beaten.
+
 ## 2026-06-22 — THE DELETION LAYER: Oren takes the throne, Simon becomes SCF 000, the symbios spreads, Simon is chained behind the titanium door (Lore 30)
 
 Based on Toby's June 22 lore (Lore 30): *"Gray is now third in power, Pinki fourth, Simon second, Oren first...

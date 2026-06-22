@@ -488,7 +488,16 @@ let dimension, dimensionH, dimensionM;
         "404: I deleted something." Two layers: Oren = the power hierarchy on top,
         Simon = the corruption/removal layer underneath. ---- */
 let deletion, deletionH, deletionM;
-const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
+/* ---- THE WEAKNESS (Lore 30 cont., June 22 2026): Toby asked "What would Simon
+        be weak too?" and answered it — Simon is an ELECTRIC PSYCHIC (his lightning
+        carries a psychic pulse), so his weaknesses are everything that interferes
+        with that: GROUNDING (drain his charge out of him), FORCED MOVEMENT
+        (treadmills / pattern-forced motion), SIGNAL JAM (scramble the psychic pulse
+        riding inside his power), OVER-DRAIN (force constant discharge until he outputs
+        too much at once), and BLIND / PERCEPTION (attack the mind and cover the Yellow
+        Eye). One line: ground the lightning, force the movement, disrupt the signal. ---- */
+let weakness, weaknessH, weaknessM;
+const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
 const LEVERS = [
@@ -715,6 +724,14 @@ function reset(){
              reorder:0, eye:0, symb:0, contain:0, errs:[], errT:0, melt:0, held:false };
   deletionH = dimensionH + 1100;
   deletionM = 0.25;  // THE DELETION LAYER meter: look away from the Yellow Eye (keep climbing) and you stay uncorrupted
+  weakness = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 30 cont. (June 22) — THE WEAKNESS. Toby asked what Simon is weak to, and answered it:
+             // Simon is an ELECTRIC PSYCHIC, so he is weak to GROUNDING (drain his charge), FORCED MOVEMENT
+             // (treadmills), SIGNAL JAM (scramble the psychic pulse), OVER-DRAIN (force constant discharge),
+             // and BLIND/PERCEPTION (cover the Yellow Eye, hit the mind). Each beat applies one weakness to him.
+             ground:0, force:0, jam:0, drain:0, blind:0, arcs:[], arcT:0, held:false };
+  weaknessH = deletionH + 1100;
+  weaknessM = 0.25;  // THE WEAKNESS meter: keep exploiting the weakness (keep moving) and you wear Simon down
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -795,6 +812,9 @@ function isDimension(){ return !!(dimension && (dimension.active || dimension.do
 // Lore 30 (June 22) — after THE THIRD DIMENSION, the order flips again: Oren king, Simon redesignated SCF 000,
 // the Yellow Eye, the symbios spreads, Simon chained behind the titanium door as the laughing deletion-force.
 function isDeletion(){ return !!(deletion && (deletion.active || deletion.done)); }
+// Lore 30 cont. (June 22) — after THE DELETION LAYER, Toby answered "what is Simon weak to?": THE WEAKNESS.
+// Simon is an Electric Psychic; weak to grounding, forced movement, signal jam, over-drain, and blinding.
+function isWeakness(){ return !!(weakness && (weakness.active || weakness.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1662,8 +1682,28 @@ function update(dt){
     deletion.t += dt;
     if(deletion.t > 17.0){ deletion.active = false; deletion.done = true; }
   }
-  if(deletion.glow < (isDeletion() ? 1 : 0))
+  if(deletion.glow < (isDeletion() && !isWeakness() ? 1 : 0))
     deletion.glow = Math.min(1, deletion.glow + dt*0.5);
+
+  /* ---- Lore 30 cont. (June 22) — THE WEAKNESS. Toby asked "What would Simon be weak too?" and answered it:
+         Simon is an ELECTRIC PSYCHIC whose lightning carries a psychic pulse, so he is weak to anything that
+         interferes with that — GROUNDING (drain his charge), FORCED MOVEMENT (treadmills), SIGNAL JAM (scramble
+         the psychic pulse), OVER-DRAIN (force constant discharge), and BLIND/PERCEPTION (cover the Yellow Eye,
+         hit the mind). One line: ground the lightning, force the movement, disrupt the signal. ---- */
+  if(deletion.done && !weakness.active && !weakness.done && height > weaknessH){
+    weakness.active = true; weakness.t = 0; weakness.cyc = 0; weakness.phase = -1;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE WEAKNESS'; warnT = 2.8;
+    showTaunt('Simon is an Electric Psychic. Ground the lightning, force the movement, disrupt the signal.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ELECTRIC PSYCHIC — HIS WEAKNESS', col:'#8fe3ff' });
+    AUDIO.zap();
+  }
+  if(weakness.active){
+    weakness.t += dt;
+    if(weakness.t > 17.0){ weakness.active = false; weakness.done = true; }
+  }
+  if(weakness.glow < (isWeakness() ? 1 : 0))
+    weakness.glow = Math.min(1, weakness.glow + dt*0.5);
 
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
@@ -1691,7 +1731,8 @@ function update(dt){
   if(isOren() && !isBetray()) updateOren(dt);
   if(isBetray() && !isDimension()) updateBetray(dt);
   if(isDimension() && !isDeletion()) updateDimension(dt);
-  if(isDeletion()) updateDeletion(dt);
+  if(isDeletion() && !isWeakness()) updateDeletion(dt);
+  if(isWeakness()) updateWeakness(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2789,7 +2830,8 @@ function draw(){
   if(isOren() && !isBetray() && oren.glow>0.02) drawOren();
   if(isBetray() && !isDimension() && betray.glow>0.02) drawBetray();
   if(isDimension() && !isDeletion() && dimension.glow>0.02) drawDimension();
-  if(isDeletion() && deletion.glow>0.02) drawDeletion();
+  if(isDeletion() && !isWeakness() && deletion.glow>0.02) drawDeletion();
+  if(isWeakness() && weakness.glow>0.02) drawWeakness();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -7105,6 +7147,232 @@ function drawDeletion(){
   ctx.fillText('THE DELETION LAYER — REORDER · SCF 000 · YELLOW EYE · SYMBIOS · CONTAINED', cx, top+30);
   ctx.fillStyle=`rgba(210,205,180,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('OREN = POWER ON TOP · SIMON = REMOVAL UNDERNEATH · 000 NOT 404 · SYMBIOS IN ALL', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ===== THE WEAKNESS (Lore 30 cont., June 22) =====
+   Toby asked "What would Simon be weak too?" Simon is an ELECTRIC PSYCHIC — his lightning carries a psychic
+   pulse — so his weaknesses are everything that interferes with that current and that signal. Five beats, each
+   landing one weakness on him: GROUND (drain his charge into the floor), FORCE (treadmill / pattern-forced
+   movement), JAM (scramble the psychic pulse riding inside his power), OVER-DRAIN (force constant discharge until
+   he outputs too much at once), BLIND (cover the Yellow Eye, hit perception). One line under it all:
+   ground the lightning, force the movement, disrupt the signal. */
+const WK_CYC = 16.0;
+const WK_BEATS = [
+  { key:'GROUND',     col:'#8fe3ff', sub:'DRAIN HIS CHARGE INTO THE FLOOR' },
+  { key:'FORCE',      col:'#ff9b3b', sub:'TREADMILL — CONTROL HIS MOVEMENT' },
+  { key:'JAM',        col:'#b98cff', sub:'SCRAMBLE THE PSYCHIC PULSE' },
+  { key:'OVER-DRAIN', col:'#ffd84f', sub:'FORCE CONSTANT DISCHARGE' },
+  { key:'BLIND',      col:'#39e08a', sub:'COVER THE YELLOW EYE · HIT THE MIND' },
+];
+function wkSeg(c){
+  if(c < 3.2)  return [0, c];        // GROUND
+  if(c < 6.4)  return [1, c-3.2];    // FORCE
+  if(c < 9.6)  return [2, c-6.4];    // JAM
+  if(c < 12.8) return [3, c-9.6];    // OVER-DRAIN
+  return [4, c-12.8];                // BLIND
+}
+function updateWeakness(dt){
+  weakness.t = (weakness.t||0) + dt;
+  weakness.cyc = ((weakness.cyc||0) + dt) % WK_CYC;
+  const seg = wkSeg(weakness.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== weakness.phase){
+    weakness.phase = ph;
+    if(ph===0){ weakness.ground=0; weakness.force=0; weakness.jam=0; weakness.drain=0; weakness.blind=0;
+      weakness.arcs.length=0; AUDIO.zap(); shake=Math.max(shake,6);
+      showTaunt('Simon is an Electric Psychic. Ground his lightning and the charge drains out of him.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'WEAK TO: GROUNDING', col:'#8fe3ff' }); }
+    if(ph===1){ AUDIO.glitch();
+      showTaunt('Force his movement. A treadmill takes his speed away — an electric speed-being controlled.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'WEAK TO: FORCED MOVEMENT', col:'#ff9b3b' }); }
+    if(ph===2){ AUDIO.corrupt();
+      showTaunt('Jam the psychic pulse riding inside his power and the signal scrambles.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'WEAK TO: SIGNAL JAM', col:'#b98cff' }); }
+    if(ph===3){ AUDIO.shock(); shake=Math.max(shake,6);
+      showTaunt('Force constant discharge. He gets stronger from charge, but too much out at once burns him.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'WEAK TO: OVER-DRAIN', col:'#ffd84f' }); }
+    if(ph===4){ AUDIO.glitch();
+      showTaunt('Cover the Yellow Eye and hit the mind. Perception is his containment-weakness.');
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'WEAK TO: BLINDNESS · PSYCHIC', col:'#39e08a' }); }
+  }
+  // per-beat ramps
+  if(ph===0) weakness.ground = Math.min(1, lt/2.2); else weakness.ground = 1;
+  if(ph===1) weakness.force  = Math.min(1, lt/2.2); else if(ph>1) weakness.force = 1;
+  if(ph===2) weakness.jam    = Math.min(1, lt/2.2); else if(ph>2) weakness.jam = 1;
+  if(ph===3){
+    weakness.drain = Math.min(1, lt/2.2);
+    // sparks fly off as he over-discharges
+    weakness.arcT = (weakness.arcT||0) - dt;
+    if(weakness.arcT<=0 && weakness.arcs.length<14){
+      weakness.arcT = 0.18;
+      weakness.arcs.push({ a:Math.random()*Math.PI*2, r:0, life:1 });
+      AUDIO.zap();
+    }
+  } else if(ph>3) weakness.drain = 1;
+  if(ph===4) weakness.blind = Math.min(1, lt/2.2); else if(ph>4) weakness.blind = 1;
+  for(let i=weakness.arcs.length-1;i>=0;i--){ const a=weakness.arcs[i];
+    a.r += dt*120; a.life -= dt*0.9; if(a.life<=0) weakness.arcs.splice(i,1); }
+
+  // THE WEAKNESS meter — keep exploiting it: keep moving (climbing) and you wear Simon down.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  weaknessM = Math.max(0, Math.min(1, weaknessM + (moving ? dt*0.05 : -dt*0.03)));
+  if(weaknessM>=1 && !weakness.held){
+    weakness.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You found every weakness. Even the Electric Psychic can be worn down.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ WEAKNESS EXPLOITED ★', col:'#bff0ff' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#8fe3ff','#ffd84f','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawWeakness(){
+  const g = weakness.glow||0, top = cameraY;
+  const c = weakness.cyc||0, seg = wkSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = WK_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — cold electric blue, dimming toward green as the eye is blinded
+  const bl = weakness.blind||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(3,8,14,${(0.74)*g})`);
+  bg.addColorStop(1, `rgba(2,10,8,${(0.74+0.12*bl)*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+
+  const sy = top + H*0.40;
+  // Simon-as-Electric-Psychic figure (jagged body, two glowing eyes), drained/jittered per beat
+  function simonElec(scale, charge, jitter){
+    ctx.save(); ctx.globalAlpha = g;
+    const jx = (jitter? (Math.random()-0.5)*4*jitter : 0);
+    ctx.translate(jx, 0);
+    ctx.shadowColor = '#8fe3ff'; ctx.shadowBlur = (10+14*charge)*g;
+    ctx.fillStyle = '#06121c'; ctx.strokeStyle = '#8fe3ff'; ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(cx-22*scale, sy-26*scale); ctx.lineTo(cx+22*scale, sy-26*scale);
+    ctx.lineTo(cx+26*scale, sy+20*scale); ctx.lineTo(cx, sy+34*scale); ctx.lineTo(cx-26*scale, sy+20*scale);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    // eyes — left can be the Yellow Eye; blinded in the last beat
+    ctx.shadowBlur=0;
+    ctx.fillStyle='#8fe3ff';
+    ctx.beginPath(); ctx.arc(cx-8*scale, sy-6*scale, 4*scale, 0, Math.PI*2); ctx.fill();
+    const eyeY = ph>=4 ? (1-bl) : 1;
+    ctx.fillStyle=`rgba(255,225,79,${eyeY})`; ctx.shadowColor='#ffe14f'; ctx.shadowBlur=12*eyeY*g;
+    ctx.beginPath(); ctx.arc(cx+8*scale, sy-6*scale, 4*scale, 0, Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+  // internal lightning bolts within him (his charge); fewer when grounded/drained
+  function innerBolts(n, len){
+    ctx.save(); ctx.globalAlpha = g; ctx.strokeStyle='#bff0ff'; ctx.lineWidth=2;
+    ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=8;
+    for(let i=0;i<n;i++){ const a = (i/Math.max(1,n))*Math.PI*2 + weakness.t*1.2;
+      let x=cx, y=sy; ctx.beginPath(); ctx.moveTo(x,y);
+      for(let s=0;s<3;s++){ x+=Math.cos(a)*len/3 + (Math.random()-0.5)*8; y+=Math.sin(a)*len/3 + (Math.random()-0.5)*8;
+        ctx.lineTo(x,y); }
+      ctx.stroke(); }
+    ctx.restore();
+  }
+
+  if(ph===0){
+    // ----- GROUND: a conductive floor pulls his charge down and out of him -----
+    const k = weakness.ground||0;
+    innerBolts(Math.round(5*(1-k)), 40);
+    simonElec(1.4, 1-k, 0);
+    // the grounding plate beneath him
+    ctx.save(); ctx.globalAlpha=g;
+    ctx.fillStyle='rgba(120,150,170,0.5)'; ctx.fillRect(cx-70, sy+40, 140, 8);
+    // charge draining down into the plate
+    ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*k;
+    for(let i=-2;i<=2;i++){ ctx.globalAlpha=g*k;
+      ctx.beginPath(); ctx.moveTo(cx+i*16, sy+34); ctx.lineTo(cx+i*16, sy+40); ctx.stroke(); }
+    ctx.restore();
+  } else if(ph===1){
+    // ----- FORCE: a treadmill controls his movement; he is dragged sideways -----
+    const k = weakness.force||0;
+    simonElec(1.4, 0.5, k*0.6);
+    ctx.save(); ctx.globalAlpha=g;
+    // treadmill belt with moving arrows
+    ctx.fillStyle='rgba(40,46,56,0.8)'; ctx.fillRect(cx-90, sy+40, 180, 14);
+    ctx.fillStyle='#ff9b3b'; ctx.font='800 12px ui-monospace,monospace';
+    const off = (weakness.t*60)%30;
+    for(let x=cx-84+off; x<cx+84; x+=30){ ctx.fillText('»', x, sy+51); }
+    // drag indicator on Simon
+    ctx.fillStyle=`rgba(255,155,59,${k})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('SPEED CONTROLLED →', cx, sy-46);
+    ctx.restore();
+  } else if(ph===2){
+    // ----- JAM: scramble the psychic pulse riding in his power -----
+    const k = weakness.jam||0;
+    innerBolts(4, 36);
+    simonElec(1.4, 0.7, k*1.4);
+    ctx.save();
+    // clean pulse rings turning to broken static as the jam ramps
+    for(let i=0;i<4;i++){ const rr = 26 + i*22 + (weakness.t*30)%22;
+      ctx.globalAlpha = g*(1-i/4)*(1-k*0.7);
+      ctx.strokeStyle='#b98cff'; ctx.lineWidth=2;
+      ctx.beginPath(); ctx.arc(cx, sy-6, rr, 0, Math.PI*2); ctx.stroke(); }
+    // jam static
+    ctx.globalAlpha=g*k; ctx.fillStyle='#b98cff';
+    for(let i=0;i<Math.round(40*k);i++){ ctx.fillRect(cx-90+Math.random()*180, sy-60+Math.random()*120, 2, 2); }
+    ctx.restore();
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(185,140,255,${k*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('SIGNAL SCRAMBLED', cx, sy-50);
+  } else if(ph===3){
+    // ----- OVER-DRAIN: force constant discharge until he outputs too much at once -----
+    const k = weakness.drain||0;
+    simonElec(1.4, 1, k*0.8);
+    ctx.save(); ctx.globalAlpha=g;
+    // arcs blasting outward
+    ctx.strokeStyle='#ffd84f'; ctx.lineWidth=2; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=10;
+    for(const a of weakness.arcs){ ctx.globalAlpha=g*Math.max(0,a.life);
+      let x=cx, y=sy-6; ctx.beginPath(); ctx.moveTo(x,y);
+      for(let s=0;s<3;s++){ x+=Math.cos(a.a)*a.r/3 + (Math.random()-0.5)*8; y+=Math.sin(a.a)*a.r/3 + (Math.random()-0.5)*8;
+        ctx.lineTo(x,y); }
+      ctx.stroke(); }
+    ctx.restore();
+    // overload bar
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(255,255,255,0.08)'; ctx.fillRect(cx-70, sy+44, 140, 8);
+    ctx.fillStyle='#ffd84f'; ctx.fillRect(cx-70, sy+44, 140*k, 8);
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('OUTPUT OVERLOAD', cx, sy-50);
+  } else if(ph===4){
+    // ----- BLIND: cover the Yellow Eye, hit perception -----
+    const k = weakness.blind||0;
+    simonElec(1.4, 0.6, k*0.5);
+    ctx.save(); ctx.globalAlpha=g*k;
+    // a dark band sliding across the eyes
+    ctx.fillStyle='rgba(8,14,12,0.92)';
+    ctx.fillRect(cx-30*1.4, sy-6*1.4-7, 60*1.4, 14);
+    ctx.strokeStyle='#39e08a'; ctx.lineWidth=2; ctx.shadowColor='#39e08a'; ctx.shadowBlur=10;
+    ctx.strokeRect(cx-30*1.4, sy-6*1.4-7, 60*1.4, 14);
+    ctx.restore();
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(57,224,138,${k*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('YELLOW EYE COVERED · MIND HIT', cx, sy-50);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.78;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // weakness checklist down the left — each lights up as its beat passes
+  const items = WK_BEATS;
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<items.length;i++){
+    const lit = i<=ph ? 1 : 0.3, y = top + H*0.30 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? items[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+items[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(143,227,255,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE WEAKNESS — ELECTRIC PSYCHIC: GROUND · FORCE · JAM · OVER-DRAIN · BLIND', cx, top+30);
+  ctx.fillStyle=`rgba(190,210,220,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('GROUND THE LIGHTNING · FORCE THE MOVEMENT · DISRUPT THE PSYCHIC SIGNAL', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
