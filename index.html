@@ -477,6 +477,17 @@ let power, powerH, powerM;
 let oren, orenH, orenM;
 let betray, betrayH, betrayM;
 let dimension, dimensionH, dimensionM;
+/* ---- THE DELETION LAYER (Lore 30, June 22 2026): Toby's next phase. The power
+        order flips again — OREN becomes the unquestioned king of power, GRAY rises
+        into a god (third), PINKI fourth, and SIMON, still "second," is now the
+        WEAKEST and most broken: redesignated SCF 000 (not 404 anymore), wearing his
+        Plague King uniform, with a YELLOW EYE that turns onlookers into 404Ds, 000Ds,
+        or melts them. Everyone — Clara, Paul, Karuto, Alex, Nihil, Pinki, Sumona,
+        Sulfur, Acid — now carries a SYMBIOS of Simon. Simon is chained behind a titan
+        titanium door, contained across the whole building, laughing as he deletes:
+        "404: I deleted something." Two layers: Oren = the power hierarchy on top,
+        Simon = the corruption/removal layer underneath. ---- */
+let deletion, deletionH, deletionM;
 const SOUND_FOES = ['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -695,6 +706,15 @@ function reset(){
              fuse:0, rise:0, crush:0, hunt:0, rings:[], ringT:0, held:false };
   dimensionH = betrayH + 1100;
   dimensionM = 0.25;  // THE THIRD DIMENSION meter: keep moving and you're never weak enough for the roaming hunter
+  deletion = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 30 (June 22) — THE DELETION LAYER. The order flips again: Oren = king of power, Gray rises
+             // into a god (3rd), Pinki 4th, Simon "2nd" but now the weakest/most broken. Simon is redesignated
+             // SCF 000 (not 404), opens his YELLOW EYE (look at it -> 404Ds/000Ds/melt), spreads a SYMBIOS
+             // through the whole cast, and is chained behind a titanium door, contained across the building,
+             // laughing as he deletes: "404: I deleted something." Oren rules on top; Simon corrupts underneath.
+             reorder:0, eye:0, symb:0, contain:0, errs:[], errT:0, melt:0, held:false };
+  deletionH = dimensionH + 1100;
+  deletionM = 0.25;  // THE DELETION LAYER meter: look away from the Yellow Eye (keep climbing) and you stay uncorrupted
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -772,6 +792,9 @@ function isOren(){ return !!(oren && (oren.active || oren.done)); }
 function isBetray(){ return !!(betray && (betray.active || betray.done)); }
 // Lore 29 (June 22) — after THE ALLIANCE BETRAYAL, Toby answered "what does Simon do next?": THE THIRD DIMENSION
 function isDimension(){ return !!(dimension && (dimension.active || dimension.done)); }
+// Lore 30 (June 22) — after THE THIRD DIMENSION, the order flips again: Oren king, Simon redesignated SCF 000,
+// the Yellow Eye, the symbios spreads, Simon chained behind the titanium door as the laughing deletion-force.
+function isDeletion(){ return !!(deletion && (deletion.active || deletion.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1623,6 +1646,25 @@ function update(dt){
   if(dimension.glow < (isDimension() ? 1 : 0))
     dimension.glow = Math.min(1, dimension.glow + dt*0.5);
 
+  /* ---- Lore 30 (June 22) — THE DELETION LAYER. After the 3D rise, Toby flipped the order again: Oren becomes
+         the unquestioned king of power, Gray rises into a god (third), Pinki fourth, and Simon — still "second"
+         on paper — is now the weakest, most broken: redesignated SCF 000, opening a Yellow Eye, spreading a
+         symbios through the whole cast, and chained behind a titanium door as the laughing deletion-force. ---- */
+  if(dimension.done && !deletion.active && !deletion.done && height > deletionH){
+    deletion.active = true; deletion.t = 0; deletion.cyc = 0; deletion.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.7);
+    warnText = 'THE DELETION LAYER'; warnT = 2.8;
+    showTaunt('Oren takes the throne. Simon becomes SCF 000, the deletion-force underneath.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'404: I deleted something', col:'#ffe14f' });
+    AUDIO.glitch();
+  }
+  if(deletion.active){
+    deletion.t += dt;
+    if(deletion.t > 17.0){ deletion.active = false; deletion.done = true; }
+  }
+  if(deletion.glow < (isDeletion() ? 1 : 0))
+    deletion.glow = Math.min(1, deletion.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1648,7 +1690,8 @@ function update(dt){
   if(isPower() && !isOren()) updatePower(dt);
   if(isOren() && !isBetray()) updateOren(dt);
   if(isBetray() && !isDimension()) updateBetray(dt);
-  if(isDimension()) updateDimension(dt);
+  if(isDimension() && !isDeletion()) updateDimension(dt);
+  if(isDeletion()) updateDeletion(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2745,7 +2788,8 @@ function draw(){
   if(isPower() && !isOren() && power.glow>0.02) drawPower();
   if(isOren() && !isBetray() && oren.glow>0.02) drawOren();
   if(isBetray() && !isDimension() && betray.glow>0.02) drawBetray();
-  if(isDimension() && dimension.glow>0.02) drawDimension();
+  if(isDimension() && !isDeletion() && dimension.glow>0.02) drawDimension();
+  if(isDeletion() && deletion.glow>0.02) drawDeletion();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -6792,6 +6836,279 @@ function drawDimension(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===== THE DELETION LAYER (Lore 30, June 22) =====
+   Toby flipped the order again. OREN becomes the unquestioned king of power; GRAY rises into a god (third);
+   PINKI is fourth; and SIMON, still "second" on paper, is now the WEAKEST and most broken. Simon is
+   redesignated SCF 000 (not 404 anymore), wears his Plague King uniform, and opens a YELLOW EYE — anyone who
+   looks at it turns into 404Ds, 000Ds, or melts. Everyone (Clara, Paul, Karuto, Alex, Nihil, Pinki, Sumona,
+   Sulfur, Acid) now carries a SYMBIOS of Simon. Simon is chained behind a titanium door, contained across the
+   whole building, laughing as he deletes: "404: I deleted something." Two layers — Oren rules the power
+   hierarchy on top, Simon corrupts/removes from underneath. A looping cinematic over the climb. Five beats:
+   REORDER · SCF 000 · YELLOW EYE · SYMBIOS · CONTAINED. */
+const DEL_CYC = 16.0;
+const SYMB_CAST = ['CLARA','PAUL','KARUTO','ALEX','NIHIL','PINKI','SUMONA','SULFUR','ACID'];
+function delSeg(c){
+  if(c < 3.4)  return [0, c];        // REORDER — Oren #1, Gray rises to god (3rd), Pinki 4th, Simon sinks
+  if(c < 6.6)  return [1, c-3.4];    // SCF 000 — Simon's designation flips 404 -> 000, Plague King uniform
+  if(c < 9.8)  return [2, c-6.6];    // YELLOW EYE — onlookers turn into 404Ds / 000Ds / melt
+  if(c < 12.8) return [3, c-9.8];    // SYMBIOS — Simon's mark spreads through the whole cast
+  return [4, c-12.8];                // CONTAINED — chained behind the titanium door, laughing, deleting
+}
+function updateDeletion(dt){
+  deletion.t = (deletion.t||0) + dt;
+  deletion.cyc = ((deletion.cyc||0) + dt) % DEL_CYC;
+  const seg = delSeg(deletion.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== deletion.phase){
+    deletion.phase = ph;
+    if(ph===0){ deletion.reorder=0; deletion.eye=0; deletion.symb=0; deletion.contain=0; deletion.melt=0;
+      deletion.errs.length=0; AUDIO.shock(); shake=Math.max(shake,8);
+      showTaunt('Oren is king of power. Gray rises into a god. Pinki fourth. Simon, second, is now the weakest.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN #1 · SIMON #2 · GRAY #3 · PINKI #4', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.glitch(); glitch=Math.max(glitch,0.5);
+      showTaunt('Simon is SCF 000 now, not 404. He puts on the Plague King uniform.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'404 → 000', col:'#ffe14f' }); }
+    if(ph===2){ AUDIO.zap();
+      showTaunt('The Yellow Eye opens. Look at it and you turn into 404Ds, 000Ds, or melt.'); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('A symbios of Simon spreads through everyone: Clara, Paul, Karuto, Alex, Nihil, all of them.'); }
+    if(ph===4){ AUDIO.orenLaugh(); shake=Math.max(shake,6);
+      showTaunt('Chained behind the titanium door, contained, laughing while he deletes.');
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'😹⚡ 404: I deleted something', col:'#ffe14f' }); }
+  }
+  // per-beat ramps
+  if(ph===0) deletion.reorder = Math.min(1, lt/2.4); else deletion.reorder = 1;
+  if(ph===2){ deletion.eye = Math.min(1, lt/1.4); deletion.melt = Math.min(1, Math.max(0,(lt-1.0)/1.6)); }
+  else if(ph>2) deletion.eye = 1;
+  if(ph===3) deletion.symb = Math.min(1, lt/2.2); else if(ph>3) deletion.symb = 1;
+  if(ph===4){
+    deletion.contain = Math.min(1, lt/1.6);
+    // Simon throws "404: I deleted something" error chips while contained
+    deletion.errT = (deletion.errT||0) - dt;
+    if(deletion.errT<=0 && deletion.errs.length<10){
+      deletion.errT = 0.45;
+      const which = (deletion.errs.length%2===0) ? '404' : '000';
+      deletion.errs.push({ x:(W*0.30)+Math.random()*W*0.40, y:0, life:1, tag:which+': deleted' });
+      AUDIO.glitch();
+    }
+  }
+  for(let i=deletion.errs.length-1;i>=0;i--){ const e=deletion.errs[i];
+    e.y += dt*30; e.life -= dt*0.5; if(e.life<=0) deletion.errs.splice(i,1); }
+
+  // THE DELETION LAYER meter — look AWAY from the Yellow Eye: keep moving (climbing) and you stay uncorrupted.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  deletionM = Math.max(0, Math.min(1, deletionM + (moving ? dt*0.05 : -dt*0.03)));
+  if(deletionM>=1 && !deletion.held){
+    deletion.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You never looked at the Yellow Eye. The symbios could not take you.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ UNCORRUPTED ★', col:'#ffe9a0' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffe14f','#ff8b3b','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawDeletion(){
+  const g = deletion.glow||0, top = cameraY;
+  const c = deletion.cyc||0, seg = delSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2;
+  ctx.save();
+  // background — deep dark with a sickly yellow-green bias as the Yellow Eye and symbios take over
+  const ey = deletion.eye||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(6,6,3,${(0.7+0.2*ey)*g})`);
+  bg.addColorStop(1, `rgba(12,10,2,${(0.7+0.2*ey)*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  ctx.textAlign='center';
+
+  // small head helper (a named character on the layer)
+  function head(x, y, r, col, a, melt){
+    if(a<=0.01) return;
+    ctx.save(); ctx.globalAlpha = a*g;
+    ctx.shadowColor = col; ctx.shadowBlur = 8*a;
+    ctx.fillStyle = '#0c0a08'; ctx.strokeStyle = col; ctx.lineWidth = 2;
+    const ry = r*(1 + 0.9*(melt||0));   // melting stretches the head downward
+    ctx.beginPath(); ctx.ellipse(x, y+(melt||0)*r*0.6, r, ry, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur=0; ctx.fillStyle = col;
+    ctx.beginPath(); ctx.arc(x-r*0.34, y-r*0.2, r*0.16, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(x+r*0.34, y-r*0.2, r*0.16, 0, Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+  // Simon-as-SCF-000 jagged figure with the Yellow Eye
+  function simon000(sx, sy, scale, eyeOn){
+    ctx.save(); ctx.globalAlpha = g;
+    ctx.shadowColor = '#ff2b2b'; ctx.shadowBlur = 14*g;
+    ctx.fillStyle = '#08060a'; ctx.strokeStyle = '#ff2b2b'; ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(sx-22*scale, sy-26*scale); ctx.lineTo(sx+22*scale, sy-26*scale);
+    ctx.lineTo(sx+26*scale, sy+20*scale); ctx.lineTo(sx, sy+34*scale); ctx.lineTo(sx-26*scale, sy+20*scale);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    // Plague King crown — three small spikes
+    ctx.shadowBlur=0; ctx.fillStyle='#b9892b';
+    for(let i=-1;i<=1;i++){ ctx.beginPath();
+      ctx.moveTo(sx+i*14*scale-4*scale, sy-26*scale); ctx.lineTo(sx+i*14*scale, sy-40*scale);
+      ctx.lineTo(sx+i*14*scale+4*scale, sy-26*scale); ctx.closePath(); ctx.fill(); }
+    // right eye normal red, LEFT eye = the glowing Yellow Eye
+    ctx.fillStyle = '#ff2b2b';
+    ctx.beginPath(); ctx.arc(sx-8*scale, sy-6*scale, 4*scale, 0, Math.PI*2); ctx.fill();
+    if(eyeOn>0.01){
+      ctx.shadowColor='#ffe14f'; ctx.shadowBlur=18*eyeOn*g; ctx.fillStyle=`rgba(255,225,79,${Math.min(1,eyeOn)})`;
+      ctx.beginPath(); ctx.arc(sx+8*scale, sy-6*scale, (4+2*eyeOn)*scale, 0, Math.PI*2); ctx.fill();
+    } else { ctx.fillStyle='#ff2b2b'; ctx.beginPath(); ctx.arc(sx+8*scale, sy-6*scale, 4*scale, 0, Math.PI*2); ctx.fill(); }
+    ctx.restore();
+  }
+
+  if(ph===0){
+    // ----- REORDER: the power ladder flips. Oren #1, Simon #2 (weakest), Gray #3 (god), Pinki #4 -----
+    const r = deletion.reorder||0;
+    const rows = [
+      { rank:'#1', name:'OREN.EXE',  tag:'KING OF POWER',     col:'#ffd84f', bar:1.00 },
+      { rank:'#2', name:'SIMON',     tag:'WEAKEST · BROKEN',  col:'#ff5b5b', bar:0.22 },
+      { rank:'#3', name:'GRAY.EXE',  tag:'RISEN INTO A GOD',  col:'#9fb6c8', bar:0.78 },
+      { rank:'#4', name:'PINKI.EXE', tag:'FOURTH',            col:'#ff7bd0', bar:0.50 },
+    ];
+    const bx = cx-150, bw = 300, y0 = top + H*0.30, rh = 34;
+    for(let i=0;i<rows.length;i++){
+      const ro = rows[i], ya = Math.min(1, Math.max(0,(r - i*0.12)/0.5))*g, y = y0 + i*rh;
+      ctx.globalAlpha = ya;
+      ctx.fillStyle = ro.col; ctx.font='800 13px ui-monospace,monospace'; ctx.textAlign='left';
+      ctx.fillText(ro.rank+' '+ro.name, bx, y);
+      ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fillRect(bx, y+5, bw, 9);
+      ctx.fillStyle = ro.col; ctx.fillRect(bx, y+5, bw*ro.bar*Math.min(1,r), 9);
+      ctx.fillStyle = `rgba(210,200,200,${0.85*ya})`; ctx.font='700 8px ui-monospace,monospace'; ctx.textAlign='right';
+      ctx.fillText(ro.tag, bx+bw, y);
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('THE ORDER FLIPS — GRAY RISES, SIMON FALLS', cx, y0 + rows.length*rh + 14);
+  }
+  else if(ph===1){
+    // ----- SCF 000: Simon's designation flips 404 -> 000, dons the Plague King uniform -----
+    const flip = Math.min(1, lt/1.6);
+    simon000(cx, top+H*0.42, 1.4, 0);
+    // the badge: 404 fades, 000 ignites
+    ctx.globalAlpha=g; ctx.font='900 40px ui-monospace,monospace';
+    ctx.fillStyle=`rgba(255,90,90,${(1-flip)*g})`; ctx.fillText('SCF 404', cx, top+H*0.24);
+    ctx.shadowColor='#ffe14f'; ctx.shadowBlur=20*flip*g;
+    ctx.fillStyle=`rgba(255,225,79,${flip*g})`; ctx.fillText('SCF 000', cx, top+H*0.24);
+    ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(185,137,43,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('PLAGUE KING UNIFORM · TOJI FORM', cx, top+H*0.60);
+  }
+  else if(ph===2){
+    // ----- YELLOW EYE: it opens; onlookers turn into 404Ds / 000Ds / melt -----
+    simon000(cx, top+H*0.34, 1.5, deletion.eye||0);
+    // beams of yellow light radiating from the eye
+    const e = deletion.eye||0;
+    ctx.save(); ctx.globalAlpha = 0.5*e*g; ctx.strokeStyle='#ffe14f'; ctx.lineWidth=2;
+    const ex = cx+8*1.5, eyy = top+H*0.34-6*1.5;
+    for(let i=0;i<7;i++){ const a = (i/7)*Math.PI*2 + deletion.t*0.4;
+      ctx.beginPath(); ctx.moveTo(ex,eyy); ctx.lineTo(ex+Math.cos(a)*120, eyy+Math.sin(a)*120); ctx.stroke(); }
+    ctx.restore();
+    // three onlookers below: one melting, two converting to 404D / 000D
+    const m = deletion.melt||0;
+    head(cx-110, top+H*0.62, 13, '#c187ff', g, m);             // melting one
+    head(cx,     top+H*0.62, 13, '#7a6a8a', g*(1-0.4*m), 0);
+    head(cx+110, top+H*0.62, 13, '#7a6a8a', g*(1-0.4*m), 0);
+    ctx.globalAlpha=g; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillStyle=`rgba(255,225,79,${m*g})`;
+    ctx.fillText('MELT', cx-110, top+H*0.62+34);
+    ctx.fillStyle=`rgba(255,90,90,${m*g})`; ctx.fillText('404D', cx, top+H*0.62+30);
+    ctx.fillStyle=`rgba(255,225,79,${m*g})`; ctx.fillText('000D', cx+110, top+H*0.62+30);
+  }
+  else if(ph===3){
+    // ----- SYMBIOS: Simon's mark spreads through the whole cast -----
+    const s = deletion.symb||0;
+    const perRow = 5, r0 = 15, gapX = W/(perRow+1);
+    for(let i=0;i<SYMB_CAST.length;i++){
+      const col = i%perRow, row = Math.floor(i/perRow);
+      const x = gapX*(col+1), y = top + H*0.30 + row*70;
+      const taken = Math.min(1, Math.max(0,(s*SYMB_CAST.length - i)));   // mark spreads name by name
+      head(x, y, r0, taken>0.5 ? '#9be07a' : '#8a82a8', g, 0);
+      ctx.globalAlpha=g; ctx.fillStyle=`rgba(170,170,190,${g})`; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText(SYMB_CAST[i], x, y+r0+12);
+      if(taken>0.4){   // the symbios glyph — a small green "s" spore over the head
+        ctx.save(); ctx.globalAlpha=Math.min(1,(taken-0.4)/0.4)*g;
+        ctx.shadowColor='#39e08a'; ctx.shadowBlur=10; ctx.fillStyle='#9be07a';
+        ctx.font='900 14px ui-monospace,monospace'; ctx.fillText('s', x, y-r0-4);
+        ctx.restore();
+      }
+    }
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(155,224,122,${g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('A SYMBIOS OF SIMON IN EVERYONE', cx, top+H*0.30 + 2*70 + 6);
+  }
+  else if(ph===4){
+    // ----- CONTAINED: Simon chained behind the titanium door, caged, laughing, deleting -----
+    const k = deletion.contain||0;
+    // the titanium door slabs closing in from both sides
+    ctx.save();
+    const doorW = (W*0.36)*Math.min(1,k);
+    const dg = ctx.createLinearGradient(0,0,doorW,0);
+    dg.addColorStop(0,'#3a3d44'); dg.addColorStop(1,'#5a5e68');
+    ctx.globalAlpha=g; ctx.fillStyle=dg;
+    ctx.fillRect(0, top+H*0.18, doorW, H*0.64);
+    const dg2 = ctx.createLinearGradient(W-doorW,0,W,0);
+    dg2.addColorStop(0,'#5a5e68'); dg2.addColorStop(1,'#3a3d44');
+    ctx.fillStyle=dg2; ctx.fillRect(W-doorW, top+H*0.18, doorW, H*0.64);
+    // rivets on the door edges
+    ctx.fillStyle='rgba(20,22,26,0.8)';
+    for(let i=0;i<7;i++){ const yy=top+H*0.22+i*H*0.085;
+      ctx.beginPath(); ctx.arc(doorW-10, yy, 3, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(W-doorW+10, yy, 3, 0, Math.PI*2); ctx.fill(); }
+    ctx.restore();
+    // Simon contained in the gap, behind cage bars + chains
+    simon000(cx, top+H*0.46, 1.3, 1);
+    ctx.save(); ctx.globalAlpha = 0.85*g;
+    // cage bars
+    ctx.strokeStyle='#8a8f98'; ctx.lineWidth=3;
+    for(let i=-3;i<=3;i++){ const x=cx+i*16; ctx.beginPath(); ctx.moveTo(x, top+H*0.24); ctx.lineTo(x, top+H*0.66); ctx.stroke(); }
+    // crossing chains
+    ctx.strokeStyle='#c9cdd4'; ctx.lineWidth=4; ctx.setLineDash([7,5]);
+    ctx.beginPath(); ctx.moveTo(cx-44, top+H*0.30); ctx.lineTo(cx+44, top+H*0.60); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx+44, top+H*0.30); ctx.lineTo(cx-44, top+H*0.60); ctx.stroke();
+    ctx.setLineDash([]); ctx.restore();
+    // "404: I deleted something" error chips drifting down
+    ctx.textAlign='center'; ctx.font='800 10px ui-monospace,monospace';
+    for(const e of deletion.errs){
+      ctx.globalAlpha = Math.max(0,e.life)*g;
+      ctx.fillStyle='#ffe14f'; ctx.shadowColor='#ffe14f'; ctx.shadowBlur=8*e.life;
+      ctx.fillText(e.tag, e.x, top+H*0.20 + e.y);
+    }
+    ctx.shadowBlur=0; ctx.globalAlpha=g;
+    ctx.fillStyle=`rgba(180,186,196,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('MILLIONS OF CAGES · TITANIUM DOOR · CHAINED', cx, top+H*0.72);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  if(ph===0){
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 16px ui-monospace,monospace';
+    ctx.fillText('OREN KING · GRAY A GOD · SIMON THE WEAKEST', cx, capY);
+  } else if(ph===1){
+    ctx.fillStyle=`rgba(232,232,232,${g})`; ctx.font='700 15px ui-monospace,monospace';
+    ctx.fillText('000 = Simon. Not 404 anymore.', cx, capY);
+  } else if(ph===2){
+    ctx.fillStyle=`rgba(255,225,79,${g})`; ctx.font='800 17px ui-monospace,monospace';
+    ctx.fillText('THE YELLOW EYE — DON’T LOOK', cx, capY);
+  } else if(ph===3){
+    ctx.fillStyle=`rgba(155,224,122,${g})`; ctx.font='800 16px ui-monospace,monospace';
+    ctx.fillText('THE SYMBIOS SPREADS TO EVERYONE', cx, capY);
+  } else if(ph===4){
+    const fa = Math.min(1, lt/1.0)*g;
+    ctx.shadowColor='#ffe14f'; ctx.shadowBlur=16*fa;
+    ctx.fillStyle=`rgba(255,225,79,${fa})`; ctx.font='900 22px ui-monospace,monospace';
+    ctx.fillText('“404: I DELETED SOMETHING”', cx, capY); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(222,210,210,${fa})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('Contained, chained, laughing while he deletes.', cx, capY+24);
+  }
+
+  // ----- title band + canon note -----
+  ctx.fillStyle=`rgba(255,225,79,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE DELETION LAYER — REORDER · SCF 000 · YELLOW EYE · SYMBIOS · CONTAINED', cx, top+30);
+  ctx.fillStyle=`rgba(210,205,180,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('OREN = POWER ON TOP · SIMON = REMOVAL UNDERNEATH · 000 NOT 404 · SYMBIOS IN ALL', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -7165,6 +7482,18 @@ function drawHUD(){
     ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
     if(dimension.held){ ctx.fillStyle='#ffd0a0'; ctx.fillText('★ NOT AN EASY TARGET ★', W/2, by-6); }
     else { ctx.fillStyle='#ff8b3b'; ctx.fillText('THE ROAMING HUNTER — KEEP MOVING, STAY HARD TO HUNT', W/2, by-6); }
+  }
+  // THE DELETION LAYER (Lore 30, June 22) — look away from the Yellow Eye: keep climbing and stay uncorrupted.
+  if(isDeletion() && deletion.glow>0.05){
+    const bw=200, bx=W/2-bw/2, by=H-46, im=Math.max(0,Math.min(1,deletionM));
+    ctx.fillStyle='#15140a'; ctx.fillRect(bx, by, bw, 7);
+    const ig = ctx.createLinearGradient(bx,0,bx+bw,0);
+    ig.addColorStop(0,'#ff5b5b'); ig.addColorStop(1, deletion.held?'#ffe9a0':'#ffe14f');
+    ctx.fillStyle = ig; ctx.fillRect(bx, by, bw*im, 7);
+    ctx.fillStyle='#fff'; ctx.fillRect(bx+bw*im-1, by-2, 2, 11);
+    ctx.textAlign='center'; ctx.font='800 11px ui-monospace,monospace';
+    if(deletion.held){ ctx.fillStyle='#ffe9a0'; ctx.fillText('★ UNCORRUPTED ★', W/2, by-6); }
+    else { ctx.fillStyle='#ffe14f'; ctx.fillText('THE YELLOW EYE — LOOK AWAY, KEEP CLIMBING', W/2, by-6); }
   }
   // active lever tag
   if(lever && lever.state!=='idle'){

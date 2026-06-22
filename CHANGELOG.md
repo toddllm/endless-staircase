@@ -4,6 +4,48 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-22 — THE DELETION LAYER: Oren takes the throne, Simon becomes SCF 000, the symbios spreads, Simon is chained behind the titanium door (Lore 30)
+
+Based on Toby's June 22 lore (Lore 30): *"Gray is now third in power, Pinki fourth, Simon second, Oren first...
+Simon decreased to the low tier, in fact is the weakest of the characters now, Simon wears his Toji form and also
+puts on his Plauge King uniform. 000 = Simon, not 404 anymore. SCF 000 (Simon) can turn those into 404Ds, and
+000Ds... Simon has Yellow Eye... those who look at it turn into the 404Ds, 000Ds, or melt... now everyone has a
+symbios of Simon, litterly everyone like Clara, Paul, Karuto, Alex, Nihil, Pinki, Sumona, Sulfur, Acid, everyone!
+... Simon then thrown an error on the screen '😹⚡ 404: I deleted something'. Simon always laughs when he removes
+anything... Simon is now contained in the whole building, millions of cages hinder him, and he is now on chains.
+Simon was also locked away with a titan heavy titainuim door. Oren was now even king of power."* The order flips
+again, and it becomes a looping five-beat cutscene over the climb, right after THE THIRD DIMENSION.
+
+![Lore 30 — THE DELETION LAYER, frozen on the CONTAINED beat. Two heavy gray TITANIUM DOOR slabs close in from
+the left and right edges, riveted down their inner faces. In the narrow gap between them, Simon — redrawn as
+SCF 000 with a small gold Plague-King crown and a glowing YELLOW left eye — stands behind a row of vertical
+CAGE BARS and two crossing CHAINS. Yellow error chips drift down the screen: "404: deleted", "000: deleted".
+Below reads "MILLIONS OF CAGES · TITANIUM DOOR · CHAINED," and under that, in big yellow type, "404: I DELETED
+SOMETHING," with the line "Contained, chained, laughing while he deletes." A yellow title band reads "THE
+DELETION LAYER — REORDER · SCF 000 · YELLOW EYE · SYMBIOS · CONTAINED," and a canon band reads "OREN = POWER ON
+TOP · SIMON = REMOVAL UNDERNEATH · 000 NOT 404 · SYMBIOS IN ALL."](screenshots/44-deletion-layer.png)
+
+- **The five beats.** A looping cinematic plays over the climb in the Deletion zone: **REORDER** (the power ladder
+  flips on screen — #1 OREN king of power, #2 SIMON now the weakest/broken, #3 GRAY risen into a god, #4 PINKI),
+  **SCF 000** (Simon's badge flips *404 → 000* and he puts on the Plague King crown / Toji form), **YELLOW EYE**
+  (his left eye opens into a glowing yellow and beams out; onlookers below *melt* or convert into *404Ds* and
+  *000Ds*), **SYMBIOS** (Simon's mark spreads name-by-name across the whole cast — Clara, Paul, Karuto, Alex,
+  Nihil, Pinki, Sumona, Sulfur, Acid — each head turning and growing a small green *"s"* spore), and **CONTAINED**
+  (the titanium door closes, cages and chains pin Simon, and he throws *"404: I deleted something"* errors while
+  laughing), then it loops.
+- **Two layers, made literal.** Toby's whole point is that Oren rules the *power hierarchy* on top while Simon
+  becomes the *removal/corruption layer* underneath. The title and canon bands carry that split, and the cutscene
+  shows it: Simon is locked away and "second," but his symbios is already inside everyone else.
+- **000, not 404.** Simon's designation change is the through-line — he is SCF 000 now, and his deletions spawn
+  both 404Ds and 000Ds. The badge flip and the falling "404/000: deleted" chips both call it out.
+- **The one safe move.** The Yellow Eye corrupts those who *look*. The zone meter turns that into the safe play:
+  keep climbing and never stop, and you fill *"UNCORRUPTED"* — look away from the eye and the symbios can't take you.
+- **No new audio files.** The scene reuses existing cues: `shock` for the reorder, `glitch` for the 404→000 flip
+  and the falling error chips, `zap` for the eye opening, `corrupt` for the spreading symbios, and `orenLaugh`
+  for the laughing, chained deletion-force.
+- **Open question for Toby.** Toby ended on *"what exactly does a Simon symbios do to each character over time?"* —
+  that is the next thing to build.
+
 ## 2026-06-22 — THE THIRD DIMENSION: Clara & Luigi respawn, Simon rebuilds, Oren rises into 3D and still wins (Lore 29 cont.)
 
 Based on Toby's June 22 lore — his answer to the open question "what does Simon do after deciding never to face
