@@ -1085,6 +1085,34 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "pursuit": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE FINAL PURSUIT — freeze on THE HUNT beat: Simon -> Oren -> Paul, arrows + embers, the cliffhanger line
+        if (typeof pursuit!=='undefined'){
+          pursuit.active=true; pursuit.done=false; pursuit.glow=1; pursuit.t=14.0; pursuit.cyc=14.0;
+          pursuit.phase=4; pursuit.pirate=1; pursuit.forms=1; pursuit.team=1; pursuit.cull=1; pursuit.hunt=0.95;
+          pursuit.slain=['Sumona','Gray','Pinki','Wenda','King Jet','Greg','Clara','Black','Luigi Green'];
+          pursuit.embers=[{p:0.3,lane:0,life:0.9},{p:0.6,lane:1,life:0.8},{p:0.15,lane:1,life:0.95},{p:0.75,lane:0,life:0.6}];
+        }
+        if (typeof pursuitM!=='undefined'){ pursuitM=0.7; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof pursuit!=='undefined'){ pursuit.glow=1; pursuit.cyc=14.0; pursuit.phase=4; pursuit.hunt=0.95;
+          pursuit.embers=[{p:0.3,lane:0,life:0.9},{p:0.6,lane:1,life:0.8},{p:0.15,lane:1,life:0.95},{p:0.75,lane:0,life:0.6}]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

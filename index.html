@@ -497,6 +497,17 @@ let deletion, deletionH, deletionM;
         too much at once), and BLIND / PERCEPTION (attack the mind and cover the Yellow
         Eye). One line: ground the lightning, force the movement, disrupt the signal. ---- */
 let weakness, weaknessH, weaknessM;
+/* ---- THE FINAL PURSUIT (Lore 30 cont., June 23 2026): Toby's endgame. 67 Pirate grows
+        stronger than Pupahya; Super Pirate shouts "Six Seven!!!" and 67 Pirate becomes the
+        absolute king of 6-7. The whole cast reaches its HIGHEST FORM — Eraser of the Universe
+        Gray, Errorshifted Clara, 404 God Simon, God Charged Pupahya.EXE, Infected Alex.EXE — for
+        one giant battle. The heroes beat everyone, but when Oren, Gray and Simon leave they merge
+        into one X TEAM: Gray can erase the whole game, Oren.EXE is all-powerful and hungry for
+        souls and now spares no one, Simon is made for lightning and speed. Everyone is slain
+        except PAUL and SIMON. The story narrows to one chain — Oren.EXE hunts Paul, Simon.EXE
+        hunts Oren.EXE: SIMON -> OREN -> PAUL. "You will really want to know what happened next,
+        but it didn't happen yet." ---- */
+let pursuit, pursuitH, pursuitM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -732,6 +743,13 @@ function reset(){
              ground:0, force:0, jam:0, drain:0, blind:0, arcs:[], arcT:0, held:false };
   weaknessH = deletionH + 1100;
   weaknessM = 0.25;  // THE WEAKNESS meter: keep exploiting the weakness (keep moving) and you wear Simon down
+  pursuit = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 30 cont. (June 23) — THE FINAL PURSUIT. 67 Pirate king of 6-7 ("Six Seven!!!"),
+             // the cast in HIGHEST FORMS, Oren/Gray/Simon merge into the X TEAM, everyone slain but
+             // Paul and Simon, then the hunt narrows: Simon.EXE -> Oren.EXE -> Paul. Each beat lands one.
+             pirate:0, forms:0, team:0, cull:0, hunt:0, embers:[], emberT:0, slain:[], held:false };
+  pursuitH = weaknessH + 1100;
+  pursuitM = 0.25;  // THE FINAL PURSUIT meter: keep climbing (keep the chain moving) and the hunt closes in
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -815,6 +833,10 @@ function isDeletion(){ return !!(deletion && (deletion.active || deletion.done))
 // Lore 30 cont. (June 22) — after THE DELETION LAYER, Toby answered "what is Simon weak to?": THE WEAKNESS.
 // Simon is an Electric Psychic; weak to grounding, forced movement, signal jam, over-drain, and blinding.
 function isWeakness(){ return !!(weakness && (weakness.active || weakness.done)); }
+// Lore 30 cont. (June 23) — after THE WEAKNESS, Toby's endgame: 67 Pirate becomes king of 6-7,
+// the cast reaches its highest forms, then Oren/Gray/Simon merge into one X TEAM and cull everyone
+// but Paul and Simon. The story narrows to one chain — Simon.EXE -> Oren.EXE -> Paul: THE FINAL PURSUIT.
+function isPursuit(){ return !!(pursuit && (pursuit.active || pursuit.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1702,8 +1724,26 @@ function update(dt){
     weakness.t += dt;
     if(weakness.t > 17.0){ weakness.active = false; weakness.done = true; }
   }
-  if(weakness.glow < (isWeakness() ? 1 : 0))
+  if(weakness.glow < (isWeakness() && !isPursuit() ? 1 : 0))
     weakness.glow = Math.min(1, weakness.glow + dt*0.5);
+
+  /* ---- Lore 30 cont. (June 23) — THE FINAL PURSUIT. After THE WEAKNESS, the endgame: 67 Pirate
+          becomes king of 6-7, the cast hits its highest forms, Oren/Gray/Simon merge into the X
+          team and slay everyone but Paul and Simon, then the hunt narrows to Simon -> Oren -> Paul. */
+  if(weakness.done && !pursuit.active && !pursuit.done && height > pursuitH){
+    pursuit.active = true; pursuit.t = 0; pursuit.cyc = 0; pursuit.phase = -1;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE FINAL PURSUIT'; warnT = 2.8;
+    showTaunt('Six Seven! The cast reaches its highest forms. Oren, Gray and Simon become one X team.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON → OREN → PAUL', col:'#ffd84f' });
+    AUDIO.shock();
+  }
+  if(pursuit.active){
+    pursuit.t += dt;
+    if(pursuit.t > 17.0){ pursuit.active = false; pursuit.done = true; }
+  }
+  if(pursuit.glow < (isPursuit() ? 1 : 0))
+    pursuit.glow = Math.min(1, pursuit.glow + dt*0.5);
 
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
@@ -1732,7 +1772,8 @@ function update(dt){
   if(isBetray() && !isDimension()) updateBetray(dt);
   if(isDimension() && !isDeletion()) updateDimension(dt);
   if(isDeletion() && !isWeakness()) updateDeletion(dt);
-  if(isWeakness()) updateWeakness(dt);
+  if(isWeakness() && !isPursuit()) updateWeakness(dt);
+  if(isPursuit()) updatePursuit(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2831,7 +2872,8 @@ function draw(){
   if(isBetray() && !isDimension() && betray.glow>0.02) drawBetray();
   if(isDimension() && !isDeletion() && dimension.glow>0.02) drawDimension();
   if(isDeletion() && !isWeakness() && deletion.glow>0.02) drawDeletion();
-  if(isWeakness() && weakness.glow>0.02) drawWeakness();
+  if(isWeakness() && !isPursuit() && weakness.glow>0.02) drawWeakness();
+  if(isPursuit() && pursuit.glow>0.02) drawPursuit();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -7373,6 +7415,243 @@ function drawWeakness(){
   ctx.fillText('THE WEAKNESS — ELECTRIC PSYCHIC: GROUND · FORCE · JAM · OVER-DRAIN · BLIND', cx, top+30);
   ctx.fillStyle=`rgba(190,210,220,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('GROUND THE LIGHTNING · FORCE THE MOVEMENT · DISRUPT THE PSYCHIC SIGNAL', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ======================= THE FINAL PURSUIT (Lore 30 cont., June 23 2026) =======================
+   Toby's endgame, five beats: SIX SEVEN (67 Pirate king of 6-7), HIGHEST FORMS (the whole cast at
+   its final form), THE X TEAM (Oren/Gray/Simon merge), THE CULLING (everyone slain but Paul and
+   Simon), THE HUNT (Simon.EXE -> Oren.EXE -> Paul). Same beat-cycle structure as THE WEAKNESS. */
+const PUR_CYC = 16.0;
+const PUR_BEATS = [
+  { key:'SIX SEVEN',     col:'#ffd84f', sub:'67 PIRATE — KING OF 6-7' },
+  { key:'HIGHEST FORMS', col:'#8fe3ff', sub:'THE WHOLE CAST, FINAL FORM' },
+  { key:'THE X TEAM',    col:'#b98cff', sub:'OREN · GRAY · SIMON — ONE' },
+  { key:'THE CULLING',   col:'#ff3b5c', sub:'ALL SLAIN BUT PAUL AND SIMON' },
+  { key:'THE HUNT',      col:'#ffffff', sub:'SIMON → OREN → PAUL' },
+];
+function purSeg(c){
+  if(c < 3.2)  return [0, c];        // SIX SEVEN
+  if(c < 6.4)  return [1, c-3.2];    // HIGHEST FORMS
+  if(c < 9.6)  return [2, c-6.4];    // THE X TEAM
+  if(c < 12.8) return [3, c-9.6];    // THE CULLING
+  return [4, c-12.8];                // THE HUNT
+}
+// the cast at their highest forms, for the HIGHEST FORMS roll-call
+const PUR_FORMS = [
+  'Eraser of the Universe Gray', 'Errorshifted Clara', '404 God Simon',
+  'God Charged Pupahya.EXE', 'Infected Alex.EXE', 'Super 67 Pirate', 'base Oren.EXE',
+];
+// who falls in THE CULLING — everyone but Paul and Simon
+const PUR_SLAIN = ['Sumona','Gray','Pinki','Wenda','King Jet','Greg','Clara','Black','Luigi Green'];
+function updatePursuit(dt){
+  pursuit.t = (pursuit.t||0) + dt;
+  pursuit.cyc = ((pursuit.cyc||0) + dt) % PUR_CYC;
+  const seg = purSeg(pursuit.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== pursuit.phase){
+    pursuit.phase = ph;
+    if(ph===0){ pursuit.pirate=0; pursuit.forms=0; pursuit.team=0; pursuit.cull=0; pursuit.hunt=0;
+      pursuit.embers.length=0; pursuit.slain.length=0; AUDIO.shock(); shake=Math.max(shake,7);
+      showTaunt('67 Pirate grows stronger than Pupahya. Super Pirate shouts "Six Seven!!!"');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIX SEVEN!!! — KING OF 6-7', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.zap();
+      showTaunt('Everyone reaches their highest form for the giant battle.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'HIGHEST FORMS', col:'#8fe3ff' }); }
+    if(ph===2){ AUDIO.corrupt(); shake=Math.max(shake,6);
+      showTaunt('Oren, Gray and Simon leave, and merge into one X team. Gray can erase the whole game.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE X TEAM — OREN · GRAY · SIMON', col:'#b98cff' }); }
+    if(ph===3){ AUDIO.shock(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.4);
+      showTaunt('Oren.EXE now spares no one. Everyone is slain except Paul and Simon.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ALL SLAIN BUT PAUL & SIMON', col:'#ff3b5c' }); }
+    if(ph===4){ AUDIO.glitch();
+      showTaunt('The story narrows to one chain: Simon.EXE hunts Oren.EXE, Oren.EXE hunts Paul.');
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'SIMON → OREN → PAUL', col:'#ffffff' }); }
+  }
+  // per-beat ramps
+  if(ph===0) pursuit.pirate = Math.min(1, lt/2.2); else pursuit.pirate = 1;
+  if(ph===1) pursuit.forms  = Math.min(1, lt/2.2); else if(ph>1) pursuit.forms = 1;
+  if(ph===2) pursuit.team   = Math.min(1, lt/2.2); else if(ph>2) pursuit.team = 1;
+  if(ph===3){
+    pursuit.cull = Math.min(1, lt/2.2);
+    // names of the slain wink out one by one as the culling ramps
+    const want = Math.floor(pursuit.cull * PUR_SLAIN.length);
+    while(pursuit.slain.length < want && pursuit.slain.length < PUR_SLAIN.length){
+      pursuit.slain.push(PUR_SLAIN[pursuit.slain.length]);
+      for(let i=0;i<5;i++) particles.push(spark(W/2+(Math.random()-0.5)*160, cameraY+H*0.4, '#ff3b5c'));
+    }
+  } else if(ph>3) pursuit.cull = 1;
+  if(ph===4){
+    pursuit.hunt = Math.min(1, lt/2.2);
+    // sparks streaking along the hunt chain
+    pursuit.emberT = (pursuit.emberT||0) - dt;
+    if(pursuit.emberT<=0 && pursuit.embers.length<16){
+      pursuit.emberT = 0.12;
+      pursuit.embers.push({ p:0, lane:Math.floor(Math.random()*2), life:1 });
+    }
+  } else pursuit.hunt = 0;
+  for(let i=pursuit.embers.length-1;i>=0;i--){ const e=pursuit.embers[i];
+    e.p += dt*0.6; e.life -= dt*0.5; if(e.p>1||e.life<=0) pursuit.embers.splice(i,1); }
+
+  // THE FINAL PURSUIT meter — keep the chain moving (keep climbing) and the hunt closes in.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  pursuitM = Math.max(0, Math.min(1, pursuitM + (moving ? dt*0.05 : -dt*0.03)));
+  if(pursuitM>=1 && !pursuit.held){
+    pursuit.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('The pursuit closes. Only Paul and Simon are left, and what happens next has not happened yet.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THE FINAL PURSUIT ★', col:'#ffd84f' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff3b5c','#8fe3ff'])));
+    AUDIO.shock();
+  }
+}
+function drawPursuit(){
+  const g = pursuit.glow||0, top = cameraY;
+  const c = pursuit.cyc||0, seg = purSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = PUR_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep void warming to red as the culling and hunt take over
+  const cl = pursuit.cull||0, hn = pursuit.hunt||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(6,4,12,${0.78*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(10+30*cl)},4,${Math.round(14)}, ${(0.78)*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.42;
+
+  // a small jagged glowing figure (reused for the cast / the trio)
+  function figure(x, y, scale, col, eyeCol, jitter){
+    ctx.save(); ctx.globalAlpha = g;
+    const jx = (jitter? (Math.random()-0.5)*4*jitter : 0);
+    ctx.translate(x+jx, y);
+    ctx.shadowColor = col; ctx.shadowBlur = 12*g;
+    ctx.fillStyle = '#0a0814'; ctx.strokeStyle = col; ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.moveTo(-16*scale, -20*scale); ctx.lineTo(16*scale, -20*scale);
+    ctx.lineTo(19*scale, 15*scale); ctx.lineTo(0, 26*scale); ctx.lineTo(-19*scale, 15*scale);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur=0; ctx.fillStyle=eyeCol;
+    ctx.beginPath(); ctx.arc(-6*scale, -4*scale, 3*scale, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(6*scale, -4*scale, 3*scale, 0, Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+
+  if(ph===0){
+    // ----- SIX SEVEN: 67 Pirate rises, Super Pirate shouts "Six Seven!!!" -----
+    const k = pursuit.pirate||0;
+    figure(cx, sy, 1.5+0.4*k, '#ffd84f', '#ff3b5c', 0);
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 30px ui-monospace,monospace';
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=18*k*g;
+    ctx.fillText('6-7', cx, sy-44); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(255,255,255,${k*g})`; ctx.font='800 16px ui-monospace,monospace';
+    ctx.fillText('"SIX SEVEN!!!"', cx, sy+58);
+    ctx.fillStyle=`rgba(255,155,59,${k*g})`; ctx.font='700 11px ui-monospace,monospace';
+    ctx.fillText('67 PIRATE — STRONGER THAN PUPAHYA · KING OF 6-7', cx, sy+76);
+  } else if(ph===1){
+    // ----- HIGHEST FORMS: the cast lit up around the ring, names rolling in -----
+    const k = pursuit.forms||0, n = PUR_FORMS.length;
+    const cols = ['#b98cff','#ff3b5c','#8fe3ff','#ffd84f','#39e08a','#ff9b3b','#ff5cf0'];
+    for(let i=0;i<n;i++){
+      const a = (i/n)*Math.PI*2 + pursuit.t*0.3, rr = 96;
+      const fx = cx + Math.cos(a)*rr, fy = sy + Math.sin(a)*rr*0.6;
+      if(i/n <= k+0.02) figure(fx, fy, 0.7, cols[i%cols.length], '#fff', 0.2);
+    }
+    figure(cx, sy, 1.2, '#8fe3ff', '#ffd84f', 0);
+    // name of the currently-revealing form
+    const idx = Math.min(n-1, Math.floor(k*n));
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(143,227,255,${g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText(PUR_FORMS[idx], cx, sy+72);
+  } else if(ph===2){
+    // ----- THE X TEAM: Oren, Gray, Simon merge into one trio -----
+    const k = pursuit.team||0;
+    const spread = (1-k)*70;
+    figure(cx-spread, sy, 1.2, '#ff3b5c', '#fff', 0.3);          // Oren.EXE
+    figure(cx,        sy-spread*0.3, 1.2, '#b98cff', '#fff', 0.3); // Gray (eraser)
+    figure(cx+spread, sy, 1.2, '#8fe3ff', '#ffd84f', 0.3);        // Simon (lightning/speed)
+    // a binding X drawn over them as they merge
+    ctx.save(); ctx.globalAlpha=g*k; ctx.strokeStyle='#b98cff'; ctx.lineWidth=3;
+    ctx.shadowColor='#b98cff'; ctx.shadowBlur=12;
+    ctx.beginPath(); ctx.moveTo(cx-60,sy-50); ctx.lineTo(cx+60,sy+50);
+    ctx.moveTo(cx+60,sy-50); ctx.lineTo(cx-60,sy+50); ctx.stroke();
+    ctx.restore();
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(185,140,255,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('GRAY ERASES THE GAME · OREN HUNGRY FOR SOULS · SIMON = LIGHTNING + SPEED', cx, sy+70);
+  } else if(ph===3){
+    // ----- THE CULLING: the slain wink out; only Paul and Simon remain -----
+    ctx.globalAlpha=g; ctx.textAlign='left'; ctx.font='700 11px ui-monospace,monospace';
+    for(let i=0;i<PUR_SLAIN.length;i++){
+      const col = (i%2? cx+10 : cx-150), yy = top+H*0.30 + Math.floor(i/2)*20;
+      const dead = pursuit.slain.indexOf(PUR_SLAIN[i])>=0;
+      ctx.fillStyle = dead ? 'rgba(120,40,55,0.5)' : 'rgba(230,200,210,0.95)';
+      ctx.fillText((dead?'✗ ':'• ')+PUR_SLAIN[i], col, yy);
+    }
+    ctx.textAlign='center';
+    // the two survivors, side by side and lit
+    figure(cx-34, sy+40, 1.1, '#39e08a', '#fff', 0);   // Paul
+    figure(cx+34, sy+40, 1.1, '#8fe3ff', '#ffd84f', 0); // Simon
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(57,224,138,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('PAUL', cx-34, sy+78);
+    ctx.fillStyle=`rgba(143,227,255,${g})`; ctx.fillText('SIMON', cx+34, sy+78);
+    ctx.fillStyle=`rgba(255,59,92,${(pursuit.cull||0)*g})`; ctx.font='900 14px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE SPARES NO ONE', cx, top+H*0.30-10);
+  } else if(ph===4){
+    // ----- THE HUNT: Simon -> Oren -> Paul, the final chain -----
+    const k = pursuit.hunt||0;
+    const ax=cx-150, bx=cx, dx=cx+150, hy=sy;
+    figure(ax, hy, 1.0, '#8fe3ff', '#ffd84f', 0.2);  // Simon.EXE
+    figure(bx, hy, 1.0, '#ff3b5c', '#fff', 0.2);     // Oren.EXE
+    figure(dx, hy, 1.0, '#39e08a', '#fff', 0.1);     // Paul
+    // arrows along the chain, drawn left-to-right as the hunt ramps
+    ctx.save(); ctx.globalAlpha=g; ctx.strokeStyle='#ffffff'; ctx.lineWidth=2;
+    ctx.shadowColor='#fff'; ctx.shadowBlur=8;
+    function arrow(x1,x2,prog){ const xe = x1 + (x2-x1)*Math.min(1,prog*2);
+      ctx.beginPath(); ctx.moveTo(x1+24, hy); ctx.lineTo(xe-22, hy); ctx.stroke();
+      if(prog>0.4){ ctx.beginPath(); ctx.moveTo(xe-30,hy-6); ctx.lineTo(xe-20,hy); ctx.lineTo(xe-30,hy+6); ctx.stroke(); } }
+    arrow(ax,bx,k); arrow(bx,dx,Math.max(0,k-0.4));
+    // streaking embers chasing down each lane
+    ctx.shadowBlur=10;
+    for(const e of pursuit.embers){ ctx.globalAlpha=g*Math.max(0,e.life);
+      const x1 = e.lane? bx:ax, x2 = e.lane? dx:bx, ex = x1+(x2-x1)*e.p;
+      ctx.fillStyle = e.lane? '#ff3b5c':'#8fe3ff';
+      ctx.beginPath(); ctx.arc(ex, hy-2, 3, 0, Math.PI*2); ctx.fill(); }
+    ctx.restore();
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(143,227,255,${g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('SIMON.EXE', ax, hy+44);
+    ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.fillText('OREN.EXE', bx, hy+44);
+    ctx.fillStyle=`rgba(57,224,138,${g})`; ctx.fillText('PAUL', dx, hy+44);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('hunts →            hunts →', cx, hy+62);
+    ctx.fillStyle=`rgba(220,220,230,${0.8*g})`; ctx.font='italic 700 11px ui-monospace,monospace';
+    ctx.fillText('"...but it didn’t happen yet."', cx, hy+86);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left — each lights up as its beat passes
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<PUR_BEATS.length;i++){
+    const y = top + H*0.30 + i*18;
+    // (skip the checklist on the CULLING beat, which uses the left column for the slain list)
+    if(ph===3) break;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? PUR_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+PUR_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,216,79,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE FINAL PURSUIT — SIX SEVEN · HIGHEST FORMS · X TEAM · CULLING · THE HUNT', cx, top+30);
+  ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('OREN.EXE HUNTS PAUL · SIMON.EXE HUNTS OREN.EXE · ONLY PAUL AND SIMON REMAIN', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

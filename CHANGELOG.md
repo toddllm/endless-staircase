@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-23 — THE FINAL PURSUIT: 67 Pirate, the highest forms, the X team, and the hunt (Lore 30 cont.)
+
+Based on Toby's June 23 lore (Lore 30 cont.): the endgame. *"67 Pirate grown actually stronger than Pupahya,
+Super Pirate comes and he shouts 'Six Seven!!!'. 67 Pirate became the absolute king of 6-7."* The whole cast
+reaches its highest form for one giant battle — *"Gray became Eraser of The Universe Gray, Clara became
+Errorshifted Clara, ... Simon was at 404 God Simon, Pupahya became God Charged Pupahya.EXE, Infected Alex.EXE."*
+The heroes win, but when Oren, Gray and Simon leave, *"they all brought together into 1 X team."* Then the cull:
+*"everyone was slain except for Paul and Simon. Oren.EXE tries to find Paul, Simon.EXE is trying to find
+Oren.EXE."* It ends on a cliffhanger: *"You will really want to know what happened next, but it didn't happen
+yet."* The new zone plays right after THE WEAKNESS and lands all five of these beats in turn.
+
+![Lore 30 cont. — THE FINAL PURSUIT, frozen on THE HUNT beat. Three jagged glowing figures stand in a row across
+a dark void: cyan SIMON.EXE on the left, red OREN.EXE in the middle, green PAUL on the right, with white arrows
+and the words "hunts → hunts →" running left to right and small streaking embers chasing down each lane. Under
+them the italic cliffhanger line reads "...but it didn't happen yet." Down the left edge a five-beat checklist is
+fully lit: SIX SEVEN, HIGHEST FORMS, THE X TEAM, THE CULLING, THE HUNT. The big caption reads "THE HUNT — SIMON →
+OREN → PAUL." A gold title band reads "THE FINAL PURSUIT — SIX SEVEN · HIGHEST FORMS · X TEAM · CULLING · THE
+HUNT," with the canon line "OREN.EXE HUNTS PAUL · SIMON.EXE HUNTS OREN.EXE · ONLY PAUL AND SIMON
+REMAIN."](screenshots/46-final-pursuit.png)
+
+- **Five beats, the whole endgame.** The cutscene loops through Toby's sequence in order: **SIX SEVEN** (67 Pirate
+  grows past Pupahya, Super Pirate shouts "Six Seven!!!", 67 Pirate is crowned king of 6-7), **HIGHEST FORMS**
+  (the cast lights up around the ring as their final forms roll in — Eraser of the Universe Gray, Errorshifted
+  Clara, 404 God Simon, God Charged Pupahya.EXE, Infected Alex.EXE, Super 67 Pirate, base Oren.EXE), **THE X
+  TEAM** (Oren, Gray and Simon slide together and a binding X locks over them — Gray erases the game, Oren hungers
+  for souls, Simon is lightning and speed), **THE CULLING** (the slain wink out one by one down the left column
+  until only Paul and Simon are left lit), and **THE HUNT** (the chain Simon → Oren → Paul, arrows drawn on as the
+  hunt ramps, embers streaking down each lane).
+- **It ends where Toby ended it.** THE HUNT beat carries his exact closing note as an on-screen line —
+  *"...but it didn't happen yet"* — so the zone stops on the same cliffhanger the email did, not a made-up ending.
+- **Same shape as the other zones.** Triggers ~1100m above THE WEAKNESS, runs a 16-second beat cycle, and has its
+  own "keep the chain moving" meter that rewards climbing; a self-contained part with no new libraries.
+
 ## 2026-06-22 — THE WEAKNESS: Simon is an Electric Psychic, and here is what beats him (Lore 30 cont.)
 
 Based on Toby's June 22 lore (Lore 30 cont.): *"What would Simon be weak too? Simon is a Electric Psychic (Simon
