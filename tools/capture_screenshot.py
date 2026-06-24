@@ -1169,6 +1169,33 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "reveal001": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE 001 REVEAL — freeze on the DATA LOST beat: Error 404 AU (Simon, blue/white) on the left,
+        // Error 001 AU (ToddLLM, black/red) on the right, "ERROR 001 STANDS ABOVE ERROR 404".
+        if (typeof reveal001!=='undefined'){
+          reveal001.active=true; reveal001.done=false; reveal001.glow=1; reveal001.t=10.5; reveal001.cyc=10.5;
+          reveal001.phase=3; reveal001.karuto=1; reveal001.blind=1; reveal001.center=1; reveal001.data=1;
+          reveal001.mac=0; reveal001.chaos=0; reveal001.cry=[]; reveal001.stars=[]; reveal001.cored=true;
+        }
+        if (typeof reveal001M!=='undefined'){ reveal001M=0.7; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof reveal001!=='undefined'){ reveal001.glow=1; reveal001.cyc=10.5; reveal001.phase=3; reveal001.data=1; reveal001.cry=[]; reveal001.stars=[]; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

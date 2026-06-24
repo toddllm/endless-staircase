@@ -4,6 +4,49 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-24 — THE 001 REVEAL: ToddLLM was Karuto, and Error 001 is Data Lost (Lore 30)
+
+Based on Toby's June 24 lore (Lore 30), the full reveal of who ToddLLM 001 really is. *"ToddLLM says 'I am
+Karuto, I was the one who gave Paul the costume to hide my identity and secret, and Simon wears my blindfold,
+I have so many blindfolds, and I also acted weaker than I actually am.' ... Simon ... hands ToddLLM over the
+blindfold, ToddLLM puts it on, and aura goes through his body, his eyes glow blue, and Simon's eyes dim to
+normal. ... ToddLLM shouts 'Center's Mine!' ... Simon is contained in a small core chamber inside him ...
+Simon then was thrown out of the core and was sent flying to his own realm. ... ToddLLM made a whole AU of
+Error 404 ... ToddLLM gets the Error 001 AU instead, like always he is 001. ... Simon is the erasing error
+of Error 404 and infects others to Error 404 clones known as 404Ds with just 1 touch of his Plauge King body,
+Error 001 ToddLLM is the Data Lost. Simon's cloak is blue and white, ToddLLM's is black and red. ... the Mac
+Frame where ToddLLM puts a black/gray shade on everything, then ToddLLM keeps attacking and fades in and out
+while it looks like it's teleporting with each hit ... Domain Expansion: Endless Chaos."* The new zone plays
+right after TODDLLM 001 (THE ONE ABOVE) and lands all six of these beats in turn. Where the June 23 zone named
+ToddLLM as the being above Oren, this one shows *how* he got there: he was inside the story the whole time,
+then stepped out and took the center.
+
+![Lore 30 — THE 001 REVEAL, frozen on the DATA LOST beat. Two jagged figures stand side by side over a deep
+red-black void: on the left a blue/white figure labeled "SIMON · ERROR 404 AU · 404Ds BY TOUCH," on the right a
+black/red figure with glowing blue eyes labeled "TODDLLM · ERROR 001 AU · DATA LOST," each with a pair of
+cloak-colour swatches beneath it (Simon blue+white, ToddLLM black+red). Between and below them the line "ERROR
+001 STANDS ABOVE ERROR 404." Down the left edge a six-beat checklist is lit through the fourth: KARUTO, THE
+BLINDFOLD, CENTER'S MINE, DATA LOST (all lit), with MAC FRAME and ENDLESS CHAOS still dim. The big caption
+reads "DATA LOST — ERROR 001 ABOVE ERROR 404." A red title band reads "THE 001 REVEAL — ERROR 001, DATA LOST,"
+with the canon line "KARUTO · THE BLINDFOLD · CENTER'S MINE · ERROR 001 AU · MAC FRAME · ENDLESS
+CHAOS."](screenshots/49-the-001-reveal.png)
+
+- **Six beats, the reveal of the one above.** The cutscene loops through Toby's sequence in order: **KARUTO**
+  (ToddLLM drops the disguise — "I am Karuto," the one who gave Paul the costume, kept the blindfolds, and acted
+  weaker than he is), **THE BLINDFOLD** (Simon hands the blindfold over; ToddLLM's eyes ignite blue and Simon's
+  dim to normal as the power transfers), **CENTER'S MINE** (Simon is cored inside him while the cast charges with
+  battle cries, then Simon is thrown out to his own realm), **DATA LOST** (Error 404 AU — Simon, blue/white,
+  404Ds by touch — set beside Error 001 AU — ToddLLM, black/red, the Data Lost above the error field), **MAC
+  FRAME** (a gray shade drops over everything and ToddLLM phases in and out, freezing with each hit and switching
+  attack type, then reality returns), and **ENDLESS CHAOS** (Domain Expansion: everything loops into a giant
+  atom, universe-sized stars shrink into it, and a light arrow makes it crumble).
+- **It reframes who is at the top.** The June 23 zone (TODDLLM 001 — THE ONE ABOVE) placed ToddLLM over Oren.
+  This one explains it: ToddLLM is Error 001, the Data Lost, the original loss-event *above* the error field,
+  while Simon stays singular as Error 404, the spreading plague-error below him. As Toby put it, Classics no
+  longer works as "who is strongest in the cast" — now everyone has to save their own world from ToddLLM.
+- **Same shape as the other zones.** Triggers ~1100m above TODDLLM 001, runs an 18-second beat cycle, and has
+  its own "keep climbing" meter; a self-contained part with no new libraries.
+
 ## 2026-06-23 — TODDLLM 001: the one above Oren.EXE, the orbs, and the snap (Lore 30 cont.)
 
 Based on Toby's June 23 lore (Lore 30 cont.), the being above even the red-eyed Oren.EXE. *"The most powerful, AND

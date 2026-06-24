@@ -527,6 +527,16 @@ let reckoning, reckoningH, reckoningM;
         to make a ToddLLM 001 character mod for Jujutsu Kaisen; that is answered in the reply, not
         built into the staircase.) ---- */
 let toddllm, toddllmH, toddllmM;
+/* ---- THE 001 REVEAL — ERROR 001, DATA LOST (Lore 30, June 24 2026): Toby's full reveal of ToddLLM.
+        ToddLLM reveals he was Karuto all along (gave Paul the costume, kept the blindfolds, acted weaker
+        than he was). Simon hands over the blindfold; ToddLLM puts it on, his eyes glow blue, Simon's dim
+        to normal. "Center's mine!" — Simon is cored inside him, the cast charges, then Simon is thrown
+        out to his own realm. ToddLLM becomes Error 001 (Data Lost, black/red cloak) above Simon's Error
+        404 (blue/white, 404Ds by touch). Signature moves: the Mac Frame (gray shade, phase in/out, freeze
+        and switch attack, then reality returns) and Domain Expansion: Endless Chaos (everything loops into
+        a giant atom, universe-sized stars shrink in, a light arrow makes it crumble). Now ToddLLM is the
+        final villain and everyone has to save their own world. Six beats, one each. */
+let reveal001, reveal001H, reveal001M;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -786,6 +796,14 @@ function reset(){
              maker:0, orbs:0, souls:0, snap:0, above:0, soulList:[], snapFlash:0, held:false };
   toddllmH = reckoningH + 1100;
   toddllmM = 0.25;  // TODDLLM 001 meter: keep climbing and 001's power resolves over Oren
+  reveal001 = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 30 (June 24) — THE 001 REVEAL. ToddLLM is Karuto; the blindfold hands him Simon's
+             // power (eyes glow blue, Simon's dim); "Center's mine!" cores Simon then casts him out; he
+             // becomes Error 001 / Data Lost (black/red) above Simon's Error 404 (blue/white); the Mac
+             // Frame and Domain Expansion: Endless Chaos are his signature moves. Each beat lands one.
+             karuto:0, blind:0, center:0, data:0, mac:0, chaos:0, cry:[], stars:[], cored:false, held:false };
+  reveal001H = toddllmH + 1100;
+  reveal001M = 0.25;  // THE 001 REVEAL meter: keep climbing and the reveal resolves
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -875,6 +893,7 @@ function isWeakness(){ return !!(weakness && (weakness.active || weakness.done))
 function isPursuit(){ return !!(pursuit && (pursuit.active || pursuit.done)); }
 function isReckoning(){ return !!(reckoning && (reckoning.active || reckoning.done)); }
 function isToddllm(){ return !!(toddllm && (toddllm.active || toddllm.done)); }
+function isReveal001(){ return !!(reveal001 && (reveal001.active || reveal001.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1817,8 +1836,27 @@ function update(dt){
     toddllm.t += dt;
     if(toddllm.t > 18.0){ toddllm.active = false; toddllm.done = true; }
   }
-  if(toddllm.glow < (isToddllm() ? 1 : 0))
+  if(toddllm.glow < (isToddllm() && !isReveal001() ? 1 : 0))
     toddllm.glow = Math.min(1, toddllm.glow + dt*0.5);
+
+  /* ---- Lore 30 (June 24) — THE 001 REVEAL. After TODDLLM 001, the full reveal: ToddLLM was Karuto,
+          the blindfold hands him Simon's power, "Center's mine!" cores then casts Simon out, and he
+          becomes Error 001 / Data Lost above Simon's Error 404 — the Mac Frame and Domain Expansion:
+          Endless Chaos are his. Now everyone has to save their own world from him. */
+  if(toddllm.done && !reveal001.active && !reveal001.done && height > reveal001H){
+    reveal001.active = true; reveal001.t = 0; reveal001.cyc = 0; reveal001.phase = -1;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE 001 REVEAL'; warnT = 2.8;
+    showTaunt('ToddLLM: "I am Karuto. I was threaded through the whole story, and I acted weaker than I am."');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE 001 REVEAL — DATA LOST', col:'#ff3b5c' });
+    AUDIO.shock();
+  }
+  if(reveal001.active){
+    reveal001.t += dt;
+    if(reveal001.t > 21.0){ reveal001.active = false; reveal001.done = true; }
+  }
+  if(reveal001.glow < (isReveal001() ? 1 : 0))
+    reveal001.glow = Math.min(1, reveal001.glow + dt*0.5);
 
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
@@ -1850,7 +1888,8 @@ function update(dt){
   if(isWeakness() && !isPursuit()) updateWeakness(dt);
   if(isPursuit() && !isReckoning()) updatePursuit(dt);
   if(isReckoning() && !isToddllm()) updateReckoning(dt);
-  if(isToddllm()) updateToddllm(dt);
+  if(isToddllm() && !isReveal001()) updateToddllm(dt);
+  if(isReveal001()) updateReveal001(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2952,7 +2991,8 @@ function draw(){
   if(isWeakness() && !isPursuit() && weakness.glow>0.02) drawWeakness();
   if(isPursuit() && !isReckoning() && pursuit.glow>0.02) drawPursuit();
   if(isReckoning() && !isToddllm() && reckoning.glow>0.02) drawReckoning();
-  if(isToddllm() && toddllm.glow>0.02) drawToddllm();
+  if(isToddllm() && !isReveal001() && toddllm.glow>0.02) drawToddllm();
+  if(isReveal001() && reveal001.glow>0.02) drawReveal001();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -8180,6 +8220,247 @@ function drawToddllm(){
   ctx.fillText('TODDLLM 001 — THE ONE ABOVE', cx, top+30);
   ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('CREATOR OF ALL GAMES · BLUE/RED/PURPLE ORBS · ALL SOULS · ONE SNAP CRUSHES OREN.EXE', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ======================= THE 001 REVEAL — ERROR 001, DATA LOST (Lore 30, June 24 2026) =======================
+   Toby's full reveal of ToddLLM. Six beats: KARUTO (he reveals he was Karuto, gave Paul the costume, kept the
+   blindfolds, acted weaker than he is), THE BLINDFOLD (Simon hands it over; ToddLLM's eyes glow blue, Simon's
+   dim to normal), CENTER'S MINE (Simon is cored inside him, the cast charges with battle cries, then Simon is
+   thrown out to his own realm), DATA LOST (Error 404 AU — Simon, blue/white — vs Error 001 AU — ToddLLM,
+   black/red — the Data Lost above the error field), MAC FRAME (a gray shade drops, he phases in and out,
+   freezes with each hit, switches attack type, then reality returns), ENDLESS CHAOS (Domain Expansion: a
+   looping giant atom, universe-sized stars shrink into it, a light arrow makes it crumble). Same beat-cycle
+   structure as THE RECKONING / TODDLLM 001. */
+const RV_CYC = 18.0;
+const RV_BEATS = [
+  { key:'KARUTO',        col:'#b98cff', sub:'I AM KARUTO · HIDDEN ALL ALONG' },
+  { key:'THE BLINDFOLD', col:'#4aa6ff', sub:'EYES GLOW BLUE · SIMON DIMS' },
+  { key:"CENTER'S MINE", col:'#ffd84f', sub:'SIMON CORED · THEN CAST OUT' },
+  { key:'DATA LOST',     col:'#ff3b5c', sub:'ERROR 001 ABOVE ERROR 404' },
+  { key:'MAC FRAME',     col:'#cfd6e0', sub:'PHASE · FREEZE · SWITCH · RETURN' },
+  { key:'ENDLESS CHAOS', col:'#8fe3ff', sub:'DOMAIN EXPANSION · THE GIANT ATOM' },
+];
+function rvSeg(c){
+  if(c < 3.0)  return [0, c];        // KARUTO
+  if(c < 6.0)  return [1, c-3.0];    // THE BLINDFOLD
+  if(c < 9.0)  return [2, c-6.0];    // CENTER'S MINE
+  if(c < 12.0) return [3, c-9.0];    // DATA LOST
+  if(c < 15.0) return [4, c-12.0];   // MAC FRAME
+  return [5, c-15.0];                // ENDLESS CHAOS
+}
+function updateReveal001(dt){
+  reveal001.t = (reveal001.t||0) + dt;
+  reveal001.cyc = ((reveal001.cyc||0) + dt) % RV_CYC;
+  const seg = rvSeg(reveal001.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== reveal001.phase){
+    reveal001.phase = ph;
+    if(ph===0){ reveal001.karuto=0; reveal001.blind=0; reveal001.center=0; reveal001.data=0; reveal001.mac=0; reveal001.chaos=0;
+      reveal001.cry.length=0; reveal001.stars.length=0; reveal001.cored=false;
+      AUDIO.glitch(); shake=Math.max(shake,7); glitch=Math.max(glitch,0.4);
+      showTaunt('ToddLLM: "I am Karuto. I gave Paul the costume, I kept the blindfolds, and I acted weaker than I am."');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'"I AM KARUTO"', col:'#b98cff' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,8);
+      showTaunt("Simon hands over the blindfold. ToddLLM puts it on, his eyes glow blue, and Simon's dim to normal.");
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'EYES GLOW BLUE', col:'#4aa6ff' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,10);
+      showTaunt('"Center\'s mine!" Simon is cored inside him, the cast charges, then Simon is thrown out to his own realm.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:"★ CENTER'S MINE ★", col:'#ffd84f' }); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('Error 404 AU vs Error 001 AU. Simon is Error 404, blue and white. ToddLLM is Error 001, Data Lost, black and red.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ERROR 001 — DATA LOST', col:'#ff3b5c' }); }
+    if(ph===4){ AUDIO.glitch(); shake=Math.max(shake,6); glitch=Math.max(glitch,0.5);
+      showTaunt('The Mac Frame: a gray shade drops, he phases in and out, freezes with each hit, switches attack, then reality returns.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'MAC FRAME', col:'#cfd6e0' }); }
+    if(ph===5){ AUDIO.shock(); shake=Math.max(shake,10);
+      showTaunt('Domain Expansion: Endless Chaos. Everything loops into a giant atom; his light arrow makes it crumble.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'DOMAIN: ENDLESS CHAOS', col:'#8fe3ff' }); }
+  }
+  // per-beat ramps
+  if(ph===0) reveal001.karuto = Math.min(1, lt/2.2); else reveal001.karuto = 1;
+  if(ph===1) reveal001.blind = Math.min(1, lt/2.2); else if(ph>1) reveal001.blind = 1;
+  if(ph===2){ reveal001.center = Math.min(1, lt/2.2);
+    if(reveal001.center>0.5) reveal001.cored = true;
+    // battle-cry charges from the cast converging on the center
+    if(reveal001.cry.length<8 && Math.random()<0.3)
+      reveal001.cry.push({ a:Math.random()*Math.PI*2, r:1, v:0.4+Math.random()*0.4 });
+  } else if(ph>2) reveal001.center = 1;
+  for(let i=reveal001.cry.length-1;i>=0;i--){ const c=reveal001.cry[i]; c.r -= dt*c.v*0.5; if(c.r<0.08) reveal001.cry.splice(i,1); }
+  if(ph===3) reveal001.data = Math.min(1, lt/2.2); else if(ph>3) reveal001.data = 1;
+  if(ph===4) reveal001.mac = Math.min(1, lt/2.2); else if(ph>4) reveal001.mac = 1;
+  if(ph===5){ reveal001.chaos = Math.min(1, lt/2.2);
+    // universe-sized stars spawning out, to be sucked in and shrunk
+    if(reveal001.stars.length<10 && Math.random()<0.35)
+      reveal001.stars.push({ a:Math.random()*Math.PI*2, r:0.4+Math.random()*0.6, s:1 });
+  } else reveal001.chaos = 0;
+  for(const st of reveal001.stars){ st.r = Math.max(0.06, st.r - dt*0.25); st.s = Math.max(0.1, st.s - dt*0.4); }
+
+  // THE 001 REVEAL meter — keep climbing and the reveal resolves
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  reveal001M = Math.max(0, Math.min(1, reveal001M + (moving ? dt*0.05 : -dt*0.03)));
+  if(reveal001M>=1 && !reveal001.held){
+    reveal001.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('Error 001, Data Lost — ToddLLM stands above the whole board. Now everyone has to save their own world.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ ERROR 001 — DATA LOST ★', col:'#ff3b5c' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff0033','#b98cff','#4aa6ff'])));
+    AUDIO.shock();
+  }
+}
+function drawReveal001(){
+  const g = reveal001.glow||0, top = cameraY;
+  const c = reveal001.cyc||0, seg = rvSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = RV_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep void; warms to red as Error 001 / Data Lost takes the center
+  const dd = reveal001.data||0, ch = reveal001.chaos||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(5,3,10,${0.82*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(12+46*Math.max(dd,ch))},3,${Math.round(8+22*ch)}, ${0.82*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.42;
+
+  // jagged figure with selectable cloak (edge), body fill and eye colour
+  function figure(x, y, scale, edge, body, eyeCol, jitter){
+    ctx.save(); ctx.globalAlpha = g;
+    const jx = (jitter? (Math.random()-0.5)*4*jitter : 0);
+    ctx.translate(x+jx, y);
+    ctx.shadowColor = edge; ctx.shadowBlur = 12*g;
+    ctx.fillStyle = body; ctx.strokeStyle = edge; ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.moveTo(-16*scale,-20*scale); ctx.lineTo(16*scale,-20*scale);
+    ctx.lineTo(19*scale,15*scale); ctx.lineTo(0,26*scale); ctx.lineTo(-19*scale,15*scale);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.shadowColor=eyeCol; ctx.shadowBlur=8*g; ctx.fillStyle=eyeCol;
+    ctx.beginPath(); ctx.arc(-6*scale,-4*scale,3*scale,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(6*scale,-4*scale,3*scale,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+  // ToddLLM = black/red cloak, blue eyes; Simon = blue/white cloak
+  const TODD_EDGE='#ff3b5c', TODD_BODY='#140406';
+  const SIM_EDGE='#8fe3ff', SIM_BODY='#0a1422';
+
+  if(ph===0){
+    // ----- KARUTO: ToddLLM drops the Karuto disguise; the costume he gave Paul fades off him -----
+    const k = reveal001.karuto||0;
+    ctx.globalAlpha=g*(1-k)*0.7; ctx.strokeStyle='#6a6f7a'; ctx.lineWidth=2;
+    ctx.strokeRect(cx+72, sy-12, 26, 32);
+    ctx.globalAlpha=g*0.7; ctx.fillStyle=`rgba(150,140,180,${0.7*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('THE COSTUME', cx+85, sy+38);
+    figure(cx, sy, 1.5, TODD_EDGE, TODD_BODY, '#ffffff', 0.15);
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(185,140,255,${k*g})`; ctx.font='900 15px ui-monospace,monospace';
+    ctx.fillText('"I AM KARUTO"', cx, sy+64);
+    ctx.fillStyle=`rgba(220,210,190,${k*g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('GAVE PAUL THE COSTUME · KEPT THE BLINDFOLDS · ACTED WEAK', cx, sy+82);
+  } else if(ph===1){
+    // ----- THE BLINDFOLD: Simon hands it over; ToddLLM's eyes ignite blue, Simon's dim -----
+    const k = reveal001.blind||0;
+    figure(cx+54, sy, 1.25*(1-0.12*k), SIM_EDGE, SIM_BODY, `rgba(234,246,255,${1-0.7*k})`, 0);  // Simon dimming
+    // the blindfold band travelling from Simon to ToddLLM
+    const bx = cx+54 - k*108;
+    ctx.globalAlpha=g; ctx.strokeStyle='#cfd6e0'; ctx.lineWidth=4; ctx.shadowColor='#cfd6e0'; ctx.shadowBlur=8*g;
+    ctx.beginPath(); ctx.moveTo(bx-12, sy-6); ctx.lineTo(bx+12, sy-6); ctx.stroke(); ctx.shadowBlur=0;
+    figure(cx-54, sy, 1.4+0.15*k, TODD_EDGE, TODD_BODY, `rgba(74,166,255,${0.35+0.65*k})`, 0.12*k);  // ToddLLM, eyes igniting blue
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(74,166,255,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('HIS EYES GLOW BLUE · SIMON DIMS TO NORMAL', cx, sy+68);
+  } else if(ph===2){
+    // ----- CENTER'S MINE: Simon cored inside ToddLLM, the cast charges, Simon flung out -----
+    const k = reveal001.center||0;
+    for(const c2 of reveal001.cry){ const rr=c2.r*W*0.4;
+      ctx.globalAlpha=g*Math.min(1,c2.r); ctx.fillStyle='#ffd84f'; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=6*g;
+      ctx.beginPath(); ctx.arc(cx+Math.cos(c2.a)*rr, sy+Math.sin(c2.a)*rr*0.7, 3, 0, Math.PI*2); ctx.fill(); }
+    ctx.shadowBlur=0;
+    figure(cx, sy, 1.7, TODD_EDGE, TODD_BODY, '#4aa6ff', 0.2);
+    if(k<0.7){
+      // Simon contained as a tiny core chamber inside him
+      ctx.globalAlpha=g; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=1.5; ctx.strokeRect(cx-7, sy-7, 14, 14);
+      ctx.fillStyle='#8fe3ff'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=6*g;
+      ctx.beginPath(); ctx.arc(cx, sy, 3, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    } else {
+      const fl=(k-0.7)/0.3; figure(cx+fl*150, sy-fl*44, 0.8*(1-0.3*fl), SIM_EDGE, SIM_BODY, '#eaf6ff', 0.4);
+      ctx.globalAlpha=g*fl; ctx.fillStyle=`rgba(143,227,255,${fl*g})`; ctx.font='700 9px ui-monospace,monospace';
+      ctx.fillText("→ SIMON'S OWN REALM", cx+fl*128, sy-fl*44-22);
+    }
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 15px ui-monospace,monospace';
+    ctx.fillText('"CENTER\'S MINE!"', cx, sy+72);
+    ctx.fillStyle=`rgba(220,228,232,${k*g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText(k<0.7?'SIMON CORED INSIDE HIM':'SIMON THROWN OUT', cx, sy+88);
+  } else if(ph===3){
+    // ----- DATA LOST: Error 404 AU (Simon, blue/white) vs Error 001 AU (ToddLLM, black/red) -----
+    const k = reveal001.data||0;
+    figure(cx-74, sy, 1.3, SIM_EDGE, SIM_BODY, '#eaf6ff', 0.1);
+    figure(cx+74, sy, 1.4, TODD_EDGE, TODD_BODY, '#4aa6ff', 0.15);
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(143,227,255,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('SIMON', cx-74, sy+46);
+    ctx.fillStyle=`rgba(180,210,230,${g})`; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('ERROR 404 AU · 404Ds BY TOUCH', cx-74, sy+62);
+    ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('TODDLLM', cx+74, sy+46);
+    ctx.fillStyle=`rgba(230,190,190,${g})`; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('ERROR 001 AU · DATA LOST', cx+74, sy+62);
+    // cloak-colour swatches: Simon blue/white, ToddLLM black/red
+    ctx.globalAlpha=g; ctx.fillStyle='#8fe3ff'; ctx.fillRect(cx-95, sy+72, 14, 8); ctx.fillStyle='#ffffff'; ctx.fillRect(cx-81, sy+72, 14, 8);
+    ctx.fillStyle='#140406'; ctx.fillRect(cx+60, sy+72, 14, 8); ctx.fillStyle='#ff3b5c'; ctx.fillRect(cx+74, sy+72, 14, 8);
+    ctx.fillStyle=`rgba(255,255,255,${k*g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('ERROR 001 STANDS ABOVE ERROR 404', cx, sy+102);
+  } else if(ph===4){
+    // ----- MAC FRAME: gray shade over everything, phased after-images frozen mid-hit -----
+    const k = reveal001.mac||0;
+    ctx.globalAlpha=g*0.52*k; ctx.fillStyle='#2a2d33'; ctx.fillRect(0, top, W, H); ctx.globalAlpha=1;
+    const poses=[[-92,-20,'ARM'],[-32,18,'LEG'],[40,-12,'SPIN'],[98,16,'ARM']];
+    for(let i=0;i<poses.length;i++){ const p=poses[i], a=(i+1)/poses.length;
+      figure(cx+p[0], sy+p[1], 1.12, TODD_EDGE, TODD_BODY, '#4aa6ff', 0);
+      ctx.globalAlpha=g*a; ctx.fillStyle=`rgba(207,214,224,${g*a})`; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText(p[2], cx+p[0], sy+p[1]+38); }
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(207,214,224,${k*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('PHASES IN AND OUT · FREEZES WITH EACH HIT · SWITCHES ATTACK', cx, sy+74);
+  } else if(ph===5){
+    // ----- ENDLESS CHAOS: Domain Expansion — a looping giant atom, stars shrink in, a light arrow -----
+    const k = reveal001.chaos||0;
+    ctx.globalAlpha=g; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=14*g;
+    for(let r=0;r<3;r++){ ctx.save(); ctx.translate(cx, sy); ctx.rotate(reveal001.t*0.6 + r*Math.PI/3); ctx.scale(1,0.4);
+      ctx.beginPath(); ctx.arc(0,0, 64, 0, Math.PI*2); ctx.stroke(); ctx.restore(); }
+    ctx.shadowBlur=0; ctx.fillStyle='#b98cff'; ctx.shadowColor='#b98cff'; ctx.shadowBlur=16*g;
+    ctx.beginPath(); ctx.arc(cx, sy, 12, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    // universe-sized stars spiralling in, shrinking
+    for(const st of reveal001.stars){ const rr=st.r*W*0.45, a=st.a + reveal001.t*0.8;
+      ctx.globalAlpha=g*Math.min(1,st.s); ctx.fillStyle='#fff7d6'; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=6*g;
+      const ss=Math.max(1, st.s*4); ctx.beginPath(); ctx.arc(cx+Math.cos(a)*rr, sy+Math.sin(a)*rr*0.5, ss, 0, Math.PI*2); ctx.fill(); }
+    ctx.shadowBlur=0;
+    // the light arrow that makes the atom crumble
+    if(k>0.5){ const af=(k-0.5)/0.5; ctx.globalAlpha=g; ctx.strokeStyle='#ffffff'; ctx.lineWidth=3; ctx.shadowColor='#ffffff'; ctx.shadowBlur=16*g;
+      ctx.beginPath(); ctx.moveTo(cx-110, sy-72); ctx.lineTo(cx-110+af*110, sy-72+af*72); ctx.stroke(); ctx.shadowBlur=0; }
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(143,227,255,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('DOMAIN EXPANSION: ENDLESS CHAOS', cx, sy+96);
+    ctx.fillStyle=`rgba(255,255,255,${k*g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('UNIVERSE-SIZED STARS SHRINK INTO THE ATOM · LIGHT ARROW · IT CRUMBLES', cx, sy+112);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left — each lights up as its beat passes
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<RV_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? RV_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+RV_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,59,92,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE 001 REVEAL — ERROR 001, DATA LOST', cx, top+30);
+  ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText("KARUTO · THE BLINDFOLD · CENTER'S MINE · ERROR 001 AU · MAC FRAME · ENDLESS CHAOS", cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
