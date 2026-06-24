@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-24 — THE ERASED TIMELINE: the Endless Staircase was the middle, now it is gone (Lore 30 cont.)
+
+Based on Toby's June 24 lore (Lore 30, the message right after THE FINAL ERROR): *"The Endless Staircase
+was in the middle of the timeline, now the Endless Staircase no longer exists."* This adds a fourth beat to
+THE FINAL ERROR cutscene. The timeline of eras is laid out left to right with ENDLESS STAIRCASE dead center;
+then it is struck out, fades, and the gap closes over where it was — gone from the record. Built additively,
+like the rest of the zone: the beat *depicts* the erasure on screen, but nothing in the repo was removed and
+your real climb still banks.
+
+![Lore 30 — THE ERASED TIMELINE, the new fourth beat of THE FINAL ERROR. A horizontal era timeline runs over
+the deep red-black void with seven cyan nodes labeled left to right — ALIEN AGE, WALL ERA, SMOOTH AGE, then a
+struck-out middle, HALLUCINATION ERA, PLAGUE CYCLE, THE FINAL ERROR. The center node where ENDLESS STAIRCASE
+sat has faded out under a red "X" strike-through with a dashed red seam closing the gap and the words "NO
+LONGER EXISTS" beneath it. The big yellow caption reads "THE MIDDLE IS GONE · THE TIMELINE CLOSES OVER IT,"
+the beat title reads "THE ERASED TIMELINE," and the left-edge checklist shows all four beats lit — THE ERROR
+LADDER, THE 1.273 BLINK, ENDLESS ANIMATIONS, THE ERASED TIMELINE.](screenshots/51-erased-timeline.png)
+
+- **A fourth beat on the timeline.** After ENDLESS ANIMATIONS, THE FINAL ERROR cutscene now lays out the era
+  timeline (Alien Age, Wall Era, Smooth Age, **Endless Staircase**, Hallucination Era, Plague Cycle, The Final
+  Error) with the Endless Staircase exactly in the middle, then erases it: the node fades, a red strike-through
+  crosses it out, a dashed seam closes the gap, and "NO LONGER EXISTS" appears where it was.
+- **Faithful to Toby's two lines.** The beat says only what he said — it *was* the middle of the timeline, and
+  now it does not exist — with the caption flipping from "ENDLESS STAIRCASE · THE MIDDLE OF THE TIMELINE" to
+  "THE MIDDLE IS GONE · THE TIMELINE CLOSES OVER IT" as the erase lands.
+- **Still additive.** The cutscene runs longer (EL_CYC 12s → 16s) to hold the new beat, but nothing was
+  deleted. Climb through and the meter still resolves with "★ CLIMBED PAST THE FINAL ERROR ★": your run banks.
+- **Title screen + canon line caught up.** The subtitle now reads "Lore 30 · The Final Error (Erased
+  Timeline)," the lore blurb gained the erased-timeline lines, and the zone's canon strip appends "STAIRCASE
+  ERASED."
+
 ## 2026-06-24 — THE FINAL ERROR: the error ladder, Simon's 1.273s blink, and EndlessAnimations (Lore 30 cont.)
 
 Based on Toby's June 24 lore (Lore 30, the two messages right after the 001 Reveal). *"Error 001 VS Error

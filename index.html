@@ -8503,12 +8503,18 @@ function drawReveal001(){
         a blink of the former center before the frame moves on.
      3) ENDLESS ANIMATIONS — ToddLLM turns the world into a looping animation; "the game is never saved."
    Built ADDITIVELY: a cutscene that depicts the idea. The real game still plays, and your climb still banks. */
-const EL_CYC = 12.0;
+const EL_CYC = 16.0;
 const EL_BEATS = [
   { key:'THE ERROR LADDER',  col:'#ff3b5c', sub:'001 > 666 > 404 > 012' },
   { key:'THE 1.273 BLINK',   col:'#8fe3ff', sub:'SIMON: 1.273s, THEN GONE' },
   { key:'ENDLESS ANIMATIONS',col:'#cfd6e0', sub:'THE GAME IS NEVER SAVED' },
+  { key:'THE ERASED TIMELINE',col:'#ffd84f',sub:'ONCE THE MIDDLE, NOW NOWHERE' },
 ];
+// Lore 30 cont. (June 24, second message): "The Endless Staircase was in the middle of the
+// timeline, now the Endless Staircase no longer exists." The timeline of eras with ENDLESS
+// STAIRCASE dead center; then it is struck out and the gap closes — gone from the record.
+const EL_TIMELINE = ['ALIEN AGE','WALL ERA','SMOOTH AGE','ENDLESS STAIRCASE','HALLUCINATION ERA','PLAGUE CYCLE','THE FINAL ERROR'];
+const EL_MID = 3; // index of ENDLESS STAIRCASE — the middle of the timeline
 const EL_RUNGS = [
   { code:'001', label:'DATA LOST · TODDLLM · UNSTOPPABLE', col:'#ff3b5c' },
   { code:'666', label:'SIMON IN AN AU · STRONGER THAN 404', col:'#ff7b00' },
@@ -8518,7 +8524,8 @@ const EL_RUNGS = [
 function elSeg(c){
   if(c < 4.5) return [0, c];        // THE ERROR LADDER
   if(c < 8.0) return [1, c-4.5];    // THE 1.273 BLINK
-  return [2, c-8.0];                // ENDLESS ANIMATIONS
+  if(c < 11.5) return [2, c-8.0];   // ENDLESS ANIMATIONS
+  return [3, c-11.5];               // THE ERASED TIMELINE
 }
 function updateErrLad(dt){
   errLad.t = (errLad.t||0) + dt;
@@ -8535,6 +8542,9 @@ function updateErrLad(dt){
     if(ph===2){ AUDIO.corrupt();
       showTaunt('EndlessAnimations: the world plays on as an animation. "The game is never saved."');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE GAME IS NEVER SAVED', col:'#cfd6e0' }); }
+    if(ph===3){ AUDIO.glitch(); shake=Math.max(shake,7); glitch=Math.max(glitch,0.5);
+      showTaunt('The Endless Staircase was the middle of the timeline. Now it no longer exists; the gap closes over where it was.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ENDLESS STAIRCASE · ERASED', col:'#ffd84f' }); }
   }
   // THE FINAL ERROR meter — keep climbing and it resolves; your real climb still banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -8606,7 +8616,7 @@ function drawErrLad(){
     ctx.fillText(cnt.toFixed(3)+'s', cx, sy+72);
     ctx.fillStyle=`rgba(210,214,224,${g})`; ctx.font='700 10px ui-monospace,monospace';
     ctx.fillText(shown ? 'SIMON: A LEFTOVER REMNANT, A BLINK OF THE OLD CENTER' : 'EVERYONE FORGOT HE WAS EVER THERE', cx, sy+94);
-  } else {
+  } else if(ph===2){
     // ----- ENDLESS ANIMATIONS: a film strip loops; the SAVE slot is crossed out -----
     const frames = 5, fw = 56, gap2 = 8, totW = frames*fw + (frames-1)*gap2, x0 = cx - totW/2;
     const head = Math.floor(lt*3) % frames;
@@ -8630,6 +8640,46 @@ function drawErrLad(){
     ctx.beginPath(); ctx.moveTo(cx-80, sy+90); ctx.lineTo(cx-36, sy+78); ctx.stroke();
     ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.font='800 12px ui-monospace,monospace';
     ctx.fillText('THE GAME IS NEVER SAVED', cx+34, sy+86);
+  } else {
+    // ----- THE ERASED TIMELINE: the era timeline with ENDLESS STAIRCASE dead center, then erased -----
+    const n = EL_TIMELINE.length, span = Math.min(W-80, 560), x0 = cx - span/2, step = span/(n-1);
+    const ty = sy + 6;
+    // the moment the middle node is struck out and the gap closes
+    const erase = Math.max(0, Math.min(1, (lt-1.8)/1.4));   // 0 -> intact, 1 -> gone
+    // baseline timeline track
+    ctx.globalAlpha = g; ctx.strokeStyle='#5a5f6a'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(x0, ty); ctx.lineTo(x0+span, ty); ctx.stroke();
+    for(let i=0;i<n;i++){
+      const isMid = (i===EL_MID);
+      const nx = x0 + i*step;
+      // the middle node fades as it is erased; everyone else stays lit
+      const a = isMid ? g*(1-erase) : g;
+      // node dot
+      ctx.globalAlpha = a;
+      ctx.fillStyle = isMid ? '#ffd84f' : '#8fe3ff';
+      ctx.shadowColor = isMid ? '#ffd84f' : '#8fe3ff'; ctx.shadowBlur = (isMid?12:6)*a;
+      ctx.beginPath(); ctx.arc(nx, ty, isMid?7:4, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+      // label, alternating above/below so they don't collide
+      const up = (i%2===0);
+      ctx.textAlign='center'; ctx.font = isMid ? '900 9px ui-monospace,monospace' : '700 8px ui-monospace,monospace';
+      ctx.fillStyle = isMid ? `rgba(255,216,79,${a})` : `rgba(200,210,222,${a})`;
+      ctx.save(); ctx.translate(nx, ty + (up?-22:26)); ctx.fillText(EL_TIMELINE[i], 0, 0); ctx.restore();
+    }
+    // strike-through + "ERASED" callout over the middle node
+    const mx = x0 + EL_MID*step;
+    if(erase>0){
+      ctx.globalAlpha = g*erase; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=2.5;
+      ctx.beginPath(); ctx.moveTo(mx-26, ty-12); ctx.lineTo(mx+26, ty+12); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(mx-26, ty+12); ctx.lineTo(mx+26, ty-12); ctx.stroke();
+      // the gap that closes over where it was — a dashed seam in the track
+      ctx.setLineDash([4,4]); ctx.strokeStyle=`rgba(255,59,92,${g*erase})`;
+      ctx.beginPath(); ctx.moveTo(mx-step*0.5, ty); ctx.lineTo(mx+step*0.5, ty); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle=`rgba(255,59,92,${g*erase})`; ctx.textAlign='center'; ctx.font='900 11px ui-monospace,monospace';
+      ctx.fillText('NO LONGER EXISTS', mx, ty+46);
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 14px ui-monospace,monospace';
+    ctx.fillText(erase<0.5 ? 'ENDLESS STAIRCASE · THE MIDDLE OF THE TIMELINE' : 'THE MIDDLE IS GONE · THE TIMELINE CLOSES OVER IT', cx, sy+86);
   }
 
   // ----- per-beat caption -----
@@ -8655,7 +8705,7 @@ function drawErrLad(){
   ctx.fillStyle=`rgba(255,59,92,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText('THE FINAL ERROR — THE ERROR LADDER', cx, top+30);
   ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
-  ctx.fillText('ERROR 001 > 666 > 404 > 012 · SIMON 1.273s · ENDLESSANIMATIONS', cx, top+44);
+  ctx.fillText('ERROR 001 > 666 > 404 > 012 · SIMON 1.273s · ENDLESSANIMATIONS · STAIRCASE ERASED', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
@@ -9097,7 +9147,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Final Error (Error Ladder)', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Final Error (Erased Timeline)', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -9142,7 +9192,9 @@ function drawTitle(){
     'sound makes shockwaves out of the game. Climb past without playing.',
     'THE 001 REVEAL: ToddLLM was KARUTO; ERROR 001 / DATA LOST above 404.',
     'THE FINAL ERROR: ladder 001 > 666 > 404 > 012; Simon blinks in 1.273s',
-    'then is GONE; ENDLESSANIMATIONS loops. "Never saved." Climb anyway.'
+    'then is GONE; ENDLESSANIMATIONS loops. "Never saved." Climb anyway.',
+    'THE ERASED TIMELINE: the Endless Staircase was the MIDDLE of the',
+    'timeline; now it no longer exists and the gap closes over where it was.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
