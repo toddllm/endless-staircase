@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-24 — THE CENTER IS MINE: ToddLLM 001 goes Full Charged and ends it (Lore 30 cont.)
+
+Based on Toby's June 24 lore (Lore 30, the message after THE ERASED TIMELINE): *"Only ToddLLM and Simon can
+remove stuff... ToddLLM's orbs can mess up Simon and actually corrupt Simon to his 404 AU. ToddLLM has always
+the 001 AU... when it reaches to 100% (very common), he becomes Full Charged and he gains godly powers... he
+makes a 001 Orb and then throws it up, the whole Judgement Hall dissolved and burned. Simon was thrown so far
+away... ToddLLM wins and says 'Center's Mine, that is why I won.'"* This adds a new ending cutscene after THE
+FINAL ERROR: ToddLLM 001 as the source-entity above comparison. Built additively — the beat *depicts* Simon's
+defeat on screen, but nothing in the repo was removed and your real climb still banks.
+
+![Lore 30 — THE CENTER IS MINE, the final beat (CENTER'S MINE). Over a deep red-black void, ToddLLM 001 levitates
+dead center: a dark red-edged entity with cat ears, a blindfold band leaking blue light across his eyes, and a
+red "001" tag on his chest, sitting in a red levitation glow. Simon, cast out and corrupted, is a small dim cyan
+pentagon labeled "404" thrown to the upper-right corner. The white line beneath reads "CENTER'S MINE, THAT IS
+WHY I WON." The big caption reads "CENTER'S MINE · THAT IS WHY I WON," the title band reads "THE CENTER IS MINE —
+TODDLLM 001, FULL CHARGED," and the left-edge checklist shows all four beats lit — THE FIVE AUTHORITIES, FULL
+CHARGE, THE 001 ORB, CENTER'S MINE.](screenshots/52-center-is-mine.png)
+
+- **A new four-beat ending after THE FINAL ERROR.** Climb past the erased timeline and ToddLLM 001 closes the
+  story: **THE FIVE AUTHORITIES** (removal, orb, blindfold, full charge, and the stable 001 identity light up
+  one by one), **FULL CHARGE** (Voidunites, Command Blocks, Admins, Cores, Containments and Lightning stream in
+  and his power % climbs to 100 — FULL CHARGED), **THE 001 ORB** (he throws it; the Judgement Hall's pillars
+  dissolve and burn into embers while Simon is hurled away and corrupted to 404), and **CENTER'S MINE** (he
+  levitates and holds the pose with the line).
+- **Faithful to Toby's lore.** Only ToddLLM and Simon can remove things; the blindfold is part of him and only
+  he can take it off (drawn as a band leaking blue light, the power it produces); an orb SHARD is a god and a
+  whole 001 ORB ends scenes; ToddLLM stays 001 while Simon falls to 404. Simon is *catastrophic*, ToddLLM is
+  *definitive*.
+- **Still additive.** A THE CENTER IS MINE meter resolves with "★ CLIMBED PAST THE CENTER ★" when you keep
+  climbing; nothing was deleted and your run banks. New `centermine` screenshot scene added to the capture tool.
+- **Title screen + canon line caught up.** The subtitle now reads "Lore 30 · The Center Is Mine (ToddLLM 001
+  Full Charged)" and the lore blurb gained the five-authorities / 001-orb / Center's-Mine lines.
+
 ## 2026-06-24 — THE ERASED TIMELINE: the Endless Staircase was the middle, now it is gone (Lore 30 cont.)
 
 Based on Toby's June 24 lore (Lore 30, the message right after THE FINAL ERROR): *"The Endless Staircase

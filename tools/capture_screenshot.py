@@ -1248,6 +1248,32 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "centermine": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=1; o.t=6.5; } } catch(e){} }
+        // THE CENTER IS MINE — freeze on the final beat (phase 3): ToddLLM 001 levitating,
+        // holding the pose, Simon cast out as 404, "Center's Mine, that is why I won."
+        if (typeof centerMine!=='undefined'){
+          centerMine.active=true; centerMine.done=false; centerMine.glow=1; centerMine.t=15.5; centerMine.cyc=15.5;
+          centerMine.phase=3; centerMine.charge=1; centerMine.held=true;
+        }
+        if (typeof centerMineM!=='undefined'){ centerMineM=0.7; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof centerMine!=='undefined'){ centerMine.glow=1; centerMine.cyc=15.5; centerMine.phase=3; centerMine.charge=1; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():

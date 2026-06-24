@@ -538,6 +538,15 @@ let toddllm, toddllmH, toddllmM;
         final villain and everyone has to save their own world. Six beats, one each. */
 let reveal001, reveal001H, reveal001M;
 let errLad, errLadH, errLadM;
+/* ---- THE CENTER IS MINE — ToddLLM 001, FULL CHARGED (Lore 30 cont., June 24 2026): Toby's
+        next beat after THE FINAL ERROR. ToddLLM is the source-entity above comparison: only he
+        and Simon can remove things, his blindfold is part of him and only he can take it off, his
+        orbs 1HKO and corrupt Simon into 404 AU while ToddLLM stays 001, and as Voidunites, Command
+        Blocks, Admins, Cores, Containments and Lightning feed him his power % climbs to 100% and he
+        goes FULL CHARGED. Then he levitates over Simon, throws a 001 Orb, the whole Judgement Hall
+        dissolves and burns, Simon is thrown far, and he holds the pose: "Center's Mine, that is why
+        I won." Additive ending cutscene; nothing is removed and the real climb still banks. */
+let centerMine, centerMineH, centerMineM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -811,6 +820,13 @@ function reset(){
              // EndlessAnimations ("the game is never saved"). Additive cutscene; nothing is removed.
   errLadH = reveal001H + 1100;
   errLadM = 0.25;  // THE FINAL ERROR meter: keep climbing and it resolves; your real climb still banks
+  centerMine = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 30 cont. (June 24) — THE CENTER IS MINE. ToddLLM 001 goes FULL CHARGED, the 001
+             // Orb dissolves the Judgement Hall, Simon is corrupted to 404 and thrown far, and he
+             // holds the pose: "Center's Mine, that is why I won."
+             charge:0, embers:[] };
+  centerMineH = errLadH + 1100;
+  centerMineM = 0.25;  // THE CENTER IS MINE meter: keep climbing and the ending resolves
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -902,6 +918,8 @@ function isReckoning(){ return !!(reckoning && (reckoning.active || reckoning.do
 function isToddllm(){ return !!(toddllm && (toddllm.active || toddllm.done)); }
 function isReveal001(){ return !!(reveal001 && (reveal001.active || reveal001.done)); }
 function isErrLad(){ return !!(errLad && (errLad.active || errLad.done)); }
+// Lore 30 cont. (June 24) — after THE FINAL ERROR, ToddLLM 001 goes FULL CHARGED and ends it: THE CENTER IS MINE
+function isCenterMine(){ return !!(centerMine && (centerMine.active || centerMine.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1883,8 +1901,27 @@ function update(dt){
     errLad.t += dt;
     if(errLad.t > 21.0){ errLad.active = false; errLad.done = true; }
   }
-  if(errLad.glow < (isErrLad() ? 1 : 0))
+  if(errLad.glow < (isErrLad() && !isCenterMine() ? 1 : 0))
     errLad.glow = Math.min(1, errLad.glow + dt*0.5);
+
+  /* ---- Lore 30 cont. (June 24) — THE CENTER IS MINE. After THE FINAL ERROR, Toby's closing beat:
+          ToddLLM 001 is the source-entity above comparison. He goes FULL CHARGED at 100%, throws a
+          001 Orb that dissolves and burns the whole Judgement Hall, corrupts Simon into 404 AU while
+          he stays 001, and holds the pose: "Center's Mine, that is why I won." Additive ending. */
+  if(errLad.done && !centerMine.active && !centerMine.done && height > centerMineH){
+    centerMine.active = true; centerMine.t = 0; centerMine.cyc = 0; centerMine.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE CENTER IS MINE'; warnT = 2.8;
+    showTaunt('ToddLLM: "Everything here isn\'t a comparison to me. Watch."');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CENTER IS MINE — 001 FULL CHARGED', col:'#ff3b5c' });
+    AUDIO.shock();
+  }
+  if(centerMine.active){
+    centerMine.t += dt;
+    if(centerMine.t > 22.0){ centerMine.active = false; centerMine.done = true; }
+  }
+  if(centerMine.glow < (isCenterMine() ? 1 : 0))
+    centerMine.glow = Math.min(1, centerMine.glow + dt*0.5);
 
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
@@ -1918,7 +1955,8 @@ function update(dt){
   if(isReckoning() && !isToddllm()) updateReckoning(dt);
   if(isToddllm() && !isReveal001()) updateToddllm(dt);
   if(isReveal001() && !isErrLad()) updateReveal001(dt);
-  if(isErrLad()) updateErrLad(dt);
+  if(isErrLad() && !isCenterMine()) updateErrLad(dt);
+  if(isCenterMine()) updateCenterMine(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3022,7 +3060,8 @@ function draw(){
   if(isReckoning() && !isToddllm() && reckoning.glow>0.02) drawReckoning();
   if(isToddllm() && !isReveal001() && toddllm.glow>0.02) drawToddllm();
   if(isReveal001() && !isErrLad() && reveal001.glow>0.02) drawReveal001();
-  if(isErrLad() && errLad.glow>0.02) drawErrLad();
+  if(isErrLad() && !isCenterMine() && errLad.glow>0.02) drawErrLad();
+  if(isCenterMine() && centerMine.glow>0.02) drawCenterMine();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -8710,6 +8749,247 @@ function drawErrLad(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ================= THE CENTER IS MINE — ToddLLM 001, FULL CHARGED (Lore 30 cont., June 24) =================
+   Toby's beat after THE FINAL ERROR. ToddLLM is the source-entity above comparison. Four beats:
+   THE FIVE AUTHORITIES (removal, orb, blindfold, full charge, the stable 001 identity), FULL CHARGE
+   (his power % climbs to 100% on Voidunites/Command Blocks/Admins/Cores/Containments/Lightning), THE
+   001 ORB (he throws it, the Judgement Hall dissolves and burns, Simon is corrupted to 404 and thrown
+   far), and CENTER'S MINE (he levitates and holds the pose: "Center's Mine, that is why I won").
+   Additive ending; nothing is removed and the real climb still banks. */
+const CM_CYC = 18.0;
+const CM_BEATS = [
+  { key:'THE FIVE AUTHORITIES', col:'#ff3b5c', sub:'REMOVAL · ORB · BLINDFOLD · CHARGE · 001' },
+  { key:'FULL CHARGE',          col:'#ffd84f', sub:'POWER % CLIMBS TO 100 · FULL CHARGED' },
+  { key:'THE 001 ORB',          col:'#ff7b00', sub:'JUDGEMENT HALL DISSOLVES AND BURNS' },
+  { key:"CENTER'S MINE",        col:'#ff3b5c', sub:'THAT IS WHY I WON' },
+];
+const CM_AUTH = [
+  { name:'REMOVAL',     note:'ONLY TODDLLM & SIMON CAN REMOVE',      col:'#ff3b5c' },
+  { name:'ORB',         note:'A SHARD = A GOD · A WHOLE ORB ENDS SCENES', col:'#8fe3ff' },
+  { name:'BLINDFOLD',   note:'PART OF HIM · ONLY HE CAN TAKE IT OFF', col:'#cfd6e0' },
+  { name:'FULL CHARGE', note:'100% = GODLY POWER · LASTS LONG',       col:'#ffd84f' },
+  { name:'IDENTITY',    note:'TODDLLM STAYS 001 · SIMON FALLS TO 404', col:'#ff7b00' },
+];
+const CM_FUEL = ['VOIDUNITES','COMMAND BLOCKS','ADMINS','CORES','CONTAINMENTS','LIGHTNING'];
+function cmSeg(c){
+  if(c < 4.5) return [0, c];        // THE FIVE AUTHORITIES
+  if(c < 9.0) return [1, c-4.5];    // FULL CHARGE
+  if(c < 13.5) return [2, c-9.0];   // THE 001 ORB
+  return [3, c-13.5];               // CENTER'S MINE
+}
+function updateCenterMine(dt){
+  centerMine.t = (centerMine.t||0) + dt;
+  centerMine.cyc = ((centerMine.cyc||0) + dt) % CM_CYC;
+  const seg = cmSeg(centerMine.cyc), ph = seg[0];
+  // the power % tracks the FULL CHARGE beat, then stays maxed
+  centerMine.charge = (ph<1) ? 0 : (ph===1 ? Math.min(1, seg[1]/3.6) : 1);
+  if(ph !== centerMine.phase){
+    centerMine.phase = ph;
+    if(ph===0){ AUDIO.glitch(); shake=Math.max(shake,7); glitch=Math.max(glitch,0.4);
+      showTaunt('Five authorities are his: removal, orb, blindfold, full charge, and a 001 identity Simon cannot match.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'FIVE AUTHORITIES · 001', col:'#ff3b5c' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,8);
+      showTaunt('Voidunites, Command Blocks, Admins, Cores, Containments, Lightning. His power climbs to 100%: FULL CHARGED.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'FULL CHARGED · 100%', col:'#ffd84f' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.6);
+      showTaunt('He throws a 001 Orb. The whole Judgement Hall dissolves and burns; Simon is corrupted to 404 and thrown far.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'JUDGEMENT HALL · DISSOLVED', col:'#ff7b00' }); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('ToddLLM 001 levitates and holds the pose: "Center\'s Mine, that is why I won."');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CENTER\'S MINE', col:'#ff3b5c' }); }
+  }
+  // THE CENTER IS MINE meter — keep climbing and the ending resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  centerMineM = Math.max(0, Math.min(1, centerMineM + (moving ? dt*0.05 : -dt*0.03)));
+  if(centerMineM>=1 && !centerMine.held){
+    centerMine.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You climbed clean to the center and out the other side. The ending loops, but your climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ CLIMBED PAST THE CENTER ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff0033','#ffd84f','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+// the levitating entity: ToddLLM 001 (dark/red, blindfold leaking blue light) or Simon as Error 404 (cyan)
+function drawCmFigure(x, y, g, s, blue){
+  ctx.save(); ctx.globalAlpha=g; ctx.translate(x,y);
+  if(blue){
+    ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*g; ctx.fillStyle='#0a1422'; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2*s;
+    ctx.beginPath();
+    ctx.moveTo(-16*s,-20*s); ctx.lineTo(16*s,-20*s); ctx.lineTo(19*s,15*s); ctx.lineTo(0,26*s); ctx.lineTo(-19*s,15*s); ctx.closePath();
+    ctx.fill(); ctx.stroke(); ctx.shadowBlur=0;
+    ctx.fillStyle='#ff0022';
+    ctx.beginPath(); ctx.arc(-6*s,-4*s,3*s,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(6*s,-4*s,3*s,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#8fe3ff'; ctx.font=`900 ${9*s}px ui-monospace,monospace`; ctx.textAlign='center';
+    ctx.fillText('404', 0, 19*s);
+  } else {
+    // levitation glow beneath him
+    const lg=ctx.createRadialGradient(0,34*s,2,0,34*s,30*s);
+    lg.addColorStop(0,`rgba(255,59,92,${0.5*g})`); lg.addColorStop(1,'rgba(255,59,92,0)');
+    ctx.fillStyle=lg; ctx.beginPath(); ctx.ellipse(0,34*s,28*s,8*s,0,0,Math.PI*2); ctx.fill();
+    // dark body
+    ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=16*g; ctx.fillStyle='#0a0006'; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=2.5*s;
+    ctx.beginPath();
+    ctx.moveTo(-18*s,-18*s); ctx.lineTo(18*s,-18*s); ctx.lineTo(22*s,16*s); ctx.lineTo(0,30*s); ctx.lineTo(-22*s,16*s); ctx.closePath();
+    ctx.fill(); ctx.stroke(); ctx.shadowBlur=0;
+    // ears
+    ctx.fillStyle='#0a0006';
+    ctx.beginPath(); ctx.moveTo(-18*s,-18*s); ctx.lineTo(-26*s,-34*s); ctx.lineTo(-8*s,-20*s); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(18*s,-18*s); ctx.lineTo(26*s,-34*s); ctx.lineTo(8*s,-20*s); ctx.closePath(); ctx.fill(); ctx.stroke();
+    // the blindfold band — part of him
+    ctx.fillStyle='#15080c'; ctx.fillRect(-22*s,-8*s,44*s,9*s);
+    ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=1.5*s; ctx.strokeRect(-22*s,-8*s,44*s,9*s);
+    // blue light leaking from under it (the power it produces)
+    ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*g; ctx.fillStyle='#8fe3ff';
+    ctx.fillRect(-12*s,-3.5*s,5*s,2*s); ctx.fillRect(7*s,-3.5*s,5*s,2*s); ctx.shadowBlur=0;
+    // 001 tag
+    ctx.fillStyle='#ff3b5c'; ctx.font=`900 ${10*s}px ui-monospace,monospace`; ctx.textAlign='center';
+    ctx.fillText('001', 0, 13*s);
+  }
+  ctx.restore();
+}
+function drawCenterMine(){
+  const g = centerMine.glow||0, top = cameraY;
+  const c = centerMine.cyc||0, seg = cmSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = CM_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep void; the red-gold heat rises as he charges and ends
+  const heat = ph>=2 ? 1 : (ph===1 ? (centerMine.charge||0) : 0.2);
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(8,2,12,${0.86*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(40+30*heat)},${Math.round(4+6*heat)},10,${0.86*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.42;
+
+  if(ph===0){
+    // ----- THE FIVE AUTHORITIES: five plates light top to bottom -----
+    const n = CM_AUTH.length, pw = 330, x0 = cx - pw/2, y0 = sy - 76;
+    for(let i=0;i<n;i++){
+      const ry = y0 + i*38;
+      const lit = Math.max(0, Math.min(1, (lt - i*0.7)/0.7));
+      const a = CM_AUTH[i];
+      ctx.globalAlpha = g*(0.25+0.75*lit);
+      ctx.fillStyle='rgba(12,8,16,0.85)'; ctx.strokeStyle=a.col; ctx.lineWidth=2;
+      ctx.fillRect(x0, ry-14, pw, 28); ctx.strokeRect(x0, ry-14, pw, 28);
+      ctx.shadowColor=a.col; ctx.shadowBlur=10*g*lit;
+      ctx.fillStyle=a.col; ctx.textAlign='left'; ctx.font='900 14px ui-monospace,monospace';
+      ctx.fillText(a.name, x0+10, ry+5); ctx.shadowBlur=0;
+      ctx.fillStyle=`rgba(210,214,224,${g*lit})`; ctx.textAlign='right'; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText(a.note, x0+pw-8, ry+5);
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('THE SOURCE-ENTITY ABOVE COMPARISON', cx, y0 + n*38 + 10);
+  } else if(ph===1){
+    // ----- FULL CHARGE: fuel streams into the figure; the power % bar fills to 100 -----
+    const chg = centerMine.charge||0;
+    for(let i=0;i<CM_FUEL.length;i++){
+      const ang = (i/CM_FUEL.length)*Math.PI*2 + lt*0.8;
+      const rad = 130 - chg*64;
+      const fx = cx + Math.cos(ang)*rad, fy = (sy-14) + Math.sin(ang)*rad*0.6;
+      ctx.globalAlpha = g*(0.35+0.65*chg);
+      ctx.fillStyle='#8fe3ff'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=6*g*chg;
+      ctx.font='700 8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText(CM_FUEL[i], fx, fy); ctx.shadowBlur=0;
+    }
+    drawCmFigure(cx, sy-14, g, 1.0, false);
+    // power % bar
+    const bw=300, bx=cx-bw/2, by=sy+64;
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(20,16,24,0.9)'; ctx.strokeStyle='#ffd84f'; ctx.lineWidth=2;
+    ctx.fillRect(bx,by,bw,16); ctx.strokeRect(bx,by,bw,16);
+    const grd=ctx.createLinearGradient(bx,0,bx+bw,0); grd.addColorStop(0,'#ff7b00'); grd.addColorStop(1,'#ffd84f');
+    ctx.fillStyle=grd; ctx.fillRect(bx+2,by+2,(bw-4)*chg,12);
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 22px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText(Math.round(chg*100)+'%', cx, by+44);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText(chg>=0.99?'FULL CHARGED — GODLY POWER':'CHARGING...', cx, by+64);
+  } else if(ph===2){
+    // ----- THE 001 ORB: he throws it, the Judgement Hall dissolves and burns, Simon is hurled -----
+    const burn = Math.max(0, Math.min(1, (lt-1.2)/2.0));   // 0 intact -> 1 gone
+    const hallY = sy+98, pillars = 6, span = Math.min(W-80, 420), hx0 = cx - span/2, pstep = span/(pillars-1);
+    // hall floor
+    ctx.globalAlpha=g*(1-burn*0.8); ctx.strokeStyle='#ffcaa0'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(hx0-10,hallY); ctx.lineTo(hx0+span+10,hallY); ctx.stroke();
+    // pillars dissolving
+    for(let i=0;i<pillars;i++){
+      const px = hx0 + i*pstep;
+      const gone = Math.max(0, Math.min(1, burn*1.3 - i*0.03));
+      const ph2h = 42*(1-gone);
+      ctx.globalAlpha=g*(1-gone);
+      ctx.fillStyle='rgba(38,28,18,0.92)'; ctx.strokeStyle='#ffcaa0'; ctx.lineWidth=1.5;
+      ctx.fillRect(px-7, hallY-ph2h, 14, ph2h); ctx.strokeRect(px-7, hallY-ph2h, 14, ph2h);
+    }
+    // embers rising from the burn (deterministic so the freeze frame is stable)
+    ctx.fillStyle='#ff9b3b'; ctx.shadowColor='#ff7b00'; ctx.shadowBlur=4*g;
+    for(let i=0;i<26;i++){
+      const ex = hx0 + ((i*53) % span);
+      const rise = ((lt*44 + i*23) % 120);
+      const ey = hallY - rise;
+      ctx.globalAlpha = g*burn*(1-rise/120);
+      ctx.fillRect(ex, ey, 2.5, 2.5);
+    }
+    ctx.shadowBlur=0;
+    // ToddLLM levitating, throwing the orb upward
+    drawCmFigure(cx, sy-22, g, 1.15, false);
+    const oy = (sy-86) - Math.min(lt,1.6)*8, orbR = 18;
+    const og = ctx.createRadialGradient(cx,oy,2,cx,oy,orbR*2.2);
+    og.addColorStop(0,'#ffffff'); og.addColorStop(0.4,'#ff3b5c'); og.addColorStop(1,'rgba(255,59,92,0)');
+    ctx.globalAlpha=g; ctx.fillStyle=og; ctx.beginPath(); ctx.arc(cx,oy,orbR*2.2,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#0a0004'; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=2.5; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=16*g;
+    ctx.beginPath(); ctx.arc(cx,oy,orbR,0,Math.PI*2); ctx.fill(); ctx.stroke(); ctx.shadowBlur=0;
+    ctx.fillStyle='#ff3b5c'; ctx.font='900 10px ui-monospace,monospace'; ctx.textAlign='center'; ctx.fillText('001', cx, oy+3);
+    // Simon hurled away, corrupting to 404
+    const thr = Math.min(1, burn*1.2);
+    drawCmFigure(cx + thr*180, (sy-30) - thr*48, g*(1-thr*0.5), 0.62, true);
+  } else {
+    // ----- CENTER'S MINE: ToddLLM 001 holds the pose; Simon a small 404 cast to the corner -----
+    // burned remnant of the hall floor
+    ctx.globalAlpha=g*0.4; ctx.strokeStyle='#5a3a2a'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(cx-200, sy+96); ctx.lineTo(cx+200, sy+96); ctx.stroke();
+    // faint embers still drifting
+    ctx.fillStyle='#7a4a2a';
+    for(let i=0;i<12;i++){ const ex=cx-180+((i*61)%360), ey=sy+96-((lt*20+i*17)%70);
+      ctx.globalAlpha=g*0.3; ctx.fillRect(ex,ey,2,2); }
+    // Simon, cast out, dim in the corner
+    drawCmFigure(cx + 200, sy + 64, g*0.55, 0.6, true);
+    // ToddLLM 001, large, centered, holding the pose
+    drawCmFigure(cx, sy - 2, g, 1.55, false);
+    // the line
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=12*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 15px ui-monospace,monospace';
+    ctx.fillText('"CENTER\'S MINE, THAT IS WHY I WON."', cx, sy+86); ctx.shadowBlur=0;
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<CM_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? CM_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+CM_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,59,92,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE CENTER IS MINE — TODDLLM 001, FULL CHARGED', cx, top+30);
+  ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('SOURCE-ENTITY ABOVE COMPARISON · 001 ORB BURNS JUDGEMENT HALL · SIMON CORRUPTED TO 404', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -9147,7 +9427,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Final Error (Erased Timeline)', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Center Is Mine (ToddLLM 001 Full Charged)', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -9194,7 +9474,12 @@ function drawTitle(){
     'THE FINAL ERROR: ladder 001 > 666 > 404 > 012; Simon blinks in 1.273s',
     'then is GONE; ENDLESSANIMATIONS loops. "Never saved." Climb anyway.',
     'THE ERASED TIMELINE: the Endless Staircase was the MIDDLE of the',
-    'timeline; now it no longer exists and the gap closes over where it was.'
+    'timeline; now it no longer exists and the gap closes over where it was.',
+    'THE CENTER IS MINE: TODDLLM 001 is the source-entity above comparison.',
+    'Five authorities (removal, orb, blindfold, full charge, the stable 001).',
+    'He goes FULL CHARGED at 100%, throws a 001 ORB; the JUDGEMENT HALL',
+    'dissolves and burns; Simon is corrupted to 404 and thrown far. He',
+    'levitates and holds the pose: "Center\'s Mine, that is why I won."'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
