@@ -518,6 +518,15 @@ let pursuit, pursuitH, pursuitM;
         real Oren.EXE attacks everyone else. The contained-and-confused Simon vs the apex Oren is
         the tragic contrast. ---- */
 let reckoning, reckoningH, reckoningM;
+/* ---- TODDLLM 001 — THE ONE ABOVE (Lore 30 cont., June 23 2026): Toby names the being above
+        even the red-eyed Oren.EXE. ToddLLM, aka 001, is the most powerful, the creator of the
+        game universes, the one who started the Simon experiment billions of years ago, the king
+        of universes and all games. Not even Oren.EXE can beat ToddLLM 001: he can make Blue, Red
+        and Purple Orbs, collect all souls, unlock all the tools and items and the Emberum of the
+        Cat, and with one snap use all of it to crush Oren.EXE's power level. (Same email asks how
+        to make a ToddLLM 001 character mod for Jujutsu Kaisen; that is answered in the reply, not
+        built into the staircase.) ---- */
+let toddllm, toddllmH, toddllmM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -769,6 +778,14 @@ function reset(){
              bots:[], botT:0, halluc:[], redEye:0, turned:false, held:false };
   reckoningH = pursuitH + 1100;
   reckoningM = 0.25;  // THE RECKONING meter: keep climbing through the clash and the reckoning resolves
+  toddllm = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 30 cont. (June 23) — TODDLLM 001. The being above even the red-eyed Oren.EXE:
+             // creator of all games, king of universes, started the Simon experiment billions of years
+             // ago. He makes Blue/Red/Purple Orbs, collects all souls, unlocks all tools/items + the
+             // Emberum of the Cat, and with one snap crushes Oren.EXE's power level. Each beat lands one.
+             maker:0, orbs:0, souls:0, snap:0, above:0, soulList:[], snapFlash:0, held:false };
+  toddllmH = reckoningH + 1100;
+  toddllmM = 0.25;  // TODDLLM 001 meter: keep climbing and 001's power resolves over Oren
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -857,6 +874,7 @@ function isWeakness(){ return !!(weakness && (weakness.active || weakness.done))
 // but Paul and Simon. The story narrows to one chain — Simon.EXE -> Oren.EXE -> Paul: THE FINAL PURSUIT.
 function isPursuit(){ return !!(pursuit && (pursuit.active || pursuit.done)); }
 function isReckoning(){ return !!(reckoning && (reckoning.active || reckoning.done)); }
+function isToddllm(){ return !!(toddllm && (toddllm.active || toddllm.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1781,8 +1799,26 @@ function update(dt){
     reckoning.t += dt;
     if(reckoning.t > 20.0){ reckoning.active = false; reckoning.done = true; }
   }
-  if(reckoning.glow < (isReckoning() ? 1 : 0))
+  if(reckoning.glow < (isReckoning() && !isToddllm() ? 1 : 0))
     reckoning.glow = Math.min(1, reckoning.glow + dt*0.5);
+
+  /* ---- Lore 30 cont. (June 23) — TODDLLM 001. Above even the red-eyed Oren.EXE: the creator/king of
+          universes, who makes the Blue/Red/Purple Orbs, collects all souls + the Emberum of the Cat,
+          and with one snap crushes Oren.EXE's power level. Not even Oren.EXE can beat 001. */
+  if(reckoning.done && !toddllm.active && !toddllm.done && height > toddllmH){
+    toddllm.active = true; toddllm.t = 0; toddllm.cyc = 0; toddllm.phase = -1;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'TODDLLM 001'; warnT = 2.8;
+    showTaunt('ToddLLM 001 — the creator of all games and king of universes. Not even Oren.EXE can beat him.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'TODDLLM 001 — THE ONE ABOVE', col:'#ffd84f' });
+    AUDIO.shock();
+  }
+  if(toddllm.active){
+    toddllm.t += dt;
+    if(toddllm.t > 18.0){ toddllm.active = false; toddllm.done = true; }
+  }
+  if(toddllm.glow < (isToddllm() ? 1 : 0))
+    toddllm.glow = Math.min(1, toddllm.glow + dt*0.5);
 
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
@@ -1813,7 +1849,8 @@ function update(dt){
   if(isDeletion() && !isWeakness()) updateDeletion(dt);
   if(isWeakness() && !isPursuit()) updateWeakness(dt);
   if(isPursuit() && !isReckoning()) updatePursuit(dt);
-  if(isReckoning()) updateReckoning(dt);
+  if(isReckoning() && !isToddllm()) updateReckoning(dt);
+  if(isToddllm()) updateToddllm(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2914,7 +2951,8 @@ function draw(){
   if(isDeletion() && !isWeakness() && deletion.glow>0.02) drawDeletion();
   if(isWeakness() && !isPursuit() && weakness.glow>0.02) drawWeakness();
   if(isPursuit() && !isReckoning() && pursuit.glow>0.02) drawPursuit();
-  if(isReckoning() && reckoning.glow>0.02) drawReckoning();
+  if(isReckoning() && !isToddllm() && reckoning.glow>0.02) drawReckoning();
+  if(isToddllm() && toddllm.glow>0.02) drawToddllm();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -7931,6 +7969,217 @@ function drawReckoning(){
   ctx.fillText('THE RECKONING — OREN.EXE VS SIMON.EXE', cx, top+30);
   ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText("OREN WINS · SIMON RECONTAINED · RED EYES · SIMON HALLUCINATES WHILE OREN ATTACKS ALL", cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ======================= TODDLLM 001 — THE ONE ABOVE (Lore 30 cont., June 23 2026) =======================
+   Toby names the being above even the red-eyed Oren.EXE. Five beats: THE MAKER (ToddLLM 001, creator of all
+   games, king of universes, who started the Simon experiment billions of years ago), THE THREE ORBS (he makes
+   Blue, Red and Purple Orbs), ALL SOULS (he collects all souls and unlocks all tools/items + the Emberum of
+   the Cat), THE SNAP (one snap turns all of it into power), ABOVE OREN (the snap crushes Oren.EXE's power
+   level — not even Oren.EXE can beat 001). Same beat-cycle structure as THE RECKONING. */
+const TLM_CYC = 15.0;
+const TLM_BEATS = [
+  { key:'THE MAKER',      col:'#ffd84f', sub:'CREATOR OF ALL GAMES · KING OF UNIVERSES' },
+  { key:'THE THREE ORBS', col:'#8fe3ff', sub:'BLUE · RED · PURPLE ORBS' },
+  { key:'ALL SOULS',      col:'#39e08a', sub:'ALL SOULS · ALL TOOLS · EMBERUM OF THE CAT' },
+  { key:'THE SNAP',       col:'#ffffff', sub:'ONE SNAP' },
+  { key:'ABOVE OREN',     col:'#ff3b5c', sub:'NOT EVEN OREN.EXE CAN WIN' },
+];
+const TLM_ORBS = [ {c:'#4aa6ff', n:'BLUE'}, {c:'#ff3b5c', n:'RED'}, {c:'#b98cff', n:'PURPLE'} ];
+function tlmSeg(c){
+  if(c < 3.0)  return [0, c];        // THE MAKER
+  if(c < 6.0)  return [1, c-3.0];    // THE THREE ORBS
+  if(c < 9.0)  return [2, c-6.0];    // ALL SOULS
+  if(c < 12.0) return [3, c-9.0];    // THE SNAP
+  return [4, c-12.0];                // ABOVE OREN
+}
+function updateToddllm(dt){
+  toddllm.t = (toddllm.t||0) + dt;
+  toddllm.cyc = ((toddllm.cyc||0) + dt) % TLM_CYC;
+  const seg = tlmSeg(toddllm.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== toddllm.phase){
+    toddllm.phase = ph;
+    if(ph===0){ toddllm.maker=0; toddllm.orbs=0; toddllm.souls=0; toddllm.snap=0; toddllm.above=0;
+      toddllm.soulList.length=0; toddllm.snapFlash=0;
+      AUDIO.shock(); shake=Math.max(shake,7);
+      showTaunt('ToddLLM 001 — the most powerful, the creator of the game universes, who started the Simon experiment billions of years ago.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'TODDLLM 001 — THE MAKER', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.zap();
+      showTaunt('He makes Blue, Red and Purple Orbs.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'BLUE · RED · PURPLE ORBS', col:'#8fe3ff' }); }
+    if(ph===2){ AUDIO.corrupt();
+      showTaunt('He collects all souls and unlocks all the tools and items, and the Emberum of the Cat.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ALL SOULS · EMBERUM OF THE CAT', col:'#39e08a' }); }
+    if(ph===3){ AUDIO.shock(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.4); toddllm.snapFlash=1;
+      showTaunt('With one snap, he turns all of it into power.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'★ ONE SNAP ★', col:'#ffffff' }); }
+    if(ph===4){ AUDIO.glitch(); shake=Math.max(shake,9);
+      showTaunt("The snap crushes Oren.EXE's power level. Not even Oren.EXE can beat ToddLLM 001.");
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'001 CRUSHES OREN.EXE', col:'#ff3b5c' }); }
+  }
+  // per-beat ramps
+  if(ph===0) toddllm.maker = Math.min(1, lt/2.2); else toddllm.maker = 1;
+  if(ph===1){ toddllm.orbs = Math.min(1, lt/2.2);
+    if(Math.random()<0.3) particles.push(spark(W/2+(Math.random()-0.5)*120, cameraY+H*0.40, pick(['#4aa6ff','#ff3b5c','#b98cff'])));
+  } else if(ph>1) toddllm.orbs = 1;
+  if(ph===2){ toddllm.souls = Math.min(1, lt/2.2);
+    // souls stream up toward 001
+    if(toddllm.soulList.length<14 && Math.random()<0.4)
+      toddllm.soulList.push({ x:(Math.random()-0.5)*1.5, y:1, v:0.4+Math.random()*0.4 });
+  } else if(ph>2) toddllm.souls = 1;
+  for(let i=toddllm.soulList.length-1;i>=0;i--){ const s=toddllm.soulList[i];
+    s.y -= dt*s.v*0.5; if(s.y<0) toddllm.soulList.splice(i,1); }
+  if(ph===3){ toddllm.snap = Math.min(1, lt/2.2);
+    toddllm.snapFlash = Math.max(0, (toddllm.snapFlash||0) - dt*1.6);
+  } else if(ph>3) toddllm.snap = 1;
+  if(ph===4) toddllm.above = Math.min(1, lt/2.2); else toddllm.above = 0;
+
+  // TODDLLM 001 meter — keep climbing and 001's power resolves over Oren.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  toddllmM = Math.max(0, Math.min(1, toddllmM + (moving ? dt*0.05 : -dt*0.03)));
+  if(toddllmM>=1 && !toddllm.held){
+    toddllm.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('ToddLLM 001 stands above all of it — even the red-eyed Oren.EXE cannot win.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ TODDLLM 001 ★', col:'#ffd84f' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#4aa6ff','#b98cff'])));
+    AUDIO.shock();
+  }
+}
+function drawToddllm(){
+  const g = toddllm.glow||0, top = cameraY;
+  const c = toddllm.cyc||0, seg = tlmSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = TLM_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep space warming to gold as 001's power resolves
+  const ab = toddllm.above||0, sn = toddllm.snap||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(6,5,14,${0.80*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(14+30*Math.max(ab,sn))},12,4, ${0.80*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.42;
+
+  // a small jagged glowing figure (reused for 001 and for Oren)
+  function figure(x, y, scale, col, eyeCol, jitter){
+    ctx.save(); ctx.globalAlpha = g;
+    const jx = (jitter? (Math.random()-0.5)*4*jitter : 0);
+    ctx.translate(x+jx, y);
+    ctx.shadowColor = col; ctx.shadowBlur = 12*g;
+    ctx.fillStyle = '#0a0814'; ctx.strokeStyle = col; ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.moveTo(-16*scale, -20*scale); ctx.lineTo(16*scale, -20*scale);
+    ctx.lineTo(19*scale, 15*scale); ctx.lineTo(0, 26*scale); ctx.lineTo(-19*scale, 15*scale);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur=0; ctx.fillStyle=eyeCol;
+    ctx.beginPath(); ctx.arc(-6*scale, -4*scale, 3*scale, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(6*scale, -4*scale, 3*scale, 0, Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+  // a small gold crown reading 001 above 001's head
+  function crown(x, y, k){
+    ctx.save(); ctx.globalAlpha=g*k; ctx.fillStyle='#ffd84f'; ctx.strokeStyle='#ffd84f';
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=12*g;
+    ctx.font='900 16px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('001', x, y); ctx.restore();
+  }
+
+  if(ph===0){
+    // ----- THE MAKER: 001 stands lit, crown above, creation lines radiating -----
+    const k = toddllm.maker||0;
+    ctx.globalAlpha=g*k*0.7; ctx.strokeStyle='#ffd84f'; ctx.lineWidth=1; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=8*g;
+    for(let i=0;i<10;i++){ const a=(i/10)*Math.PI*2 + toddllm.t*0.2, rr=40+k*40;
+      ctx.beginPath(); ctx.moveTo(cx+Math.cos(a)*24, sy+Math.sin(a)*24); ctx.lineTo(cx+Math.cos(a)*rr, sy+Math.sin(a)*rr); ctx.stroke(); }
+    ctx.shadowBlur=0;
+    figure(cx, sy, 1.5, '#ffd84f', '#fff', 0);
+    crown(cx, sy-40, k);
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,216,79,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('CREATOR OF THE GAME UNIVERSES · KING OF ALL GAMES', cx, sy+62);
+    ctx.fillStyle=`rgba(220,210,190,${k*g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('STARTED THE SIMON EXPERIMENT BILLIONS OF YEARS AGO', cx, sy+78);
+  } else if(ph===1){
+    // ----- THE THREE ORBS: Blue, Red, Purple orbs orbit 001 -----
+    const k = toddllm.orbs||0;
+    figure(cx, sy, 1.4, '#ffd84f', '#fff', 0);
+    crown(cx, sy-38, 1);
+    for(let i=0;i<TLM_ORBS.length;i++){
+      const a = (i/3)*Math.PI*2 + toddllm.t*1.1, rr = 70*Math.min(1,k*1.4);
+      const ox = cx + Math.cos(a)*rr, oy = sy + Math.sin(a)*rr*0.5;
+      ctx.globalAlpha=g; ctx.fillStyle=TLM_ORBS[i].c; ctx.shadowColor=TLM_ORBS[i].c; ctx.shadowBlur=16*g;
+      ctx.beginPath(); ctx.arc(ox, oy, 9, 0, Math.PI*2); ctx.fill(); }
+    ctx.shadowBlur=0;
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(143,227,255,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('HE MAKES BLUE, RED AND PURPLE ORBS', cx, sy+66);
+  } else if(ph===2){
+    // ----- ALL SOULS: souls stream up into 001; tools + Emberum of the Cat unlock -----
+    const k = toddllm.souls||0;
+    for(const s of toddllm.soulList){ ctx.globalAlpha=g*Math.max(0,1-s.y)*0.9;
+      const sx = cx + s.x*W*0.4, syy = top + H*0.30 + s.y*H*0.35;
+      ctx.fillStyle='#cfe9ff'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=8*g;
+      ctx.beginPath(); ctx.arc(sx, syy, 3.5, 0, Math.PI*2); ctx.fill(); }
+    ctx.shadowBlur=0;
+    figure(cx, sy, 1.45, '#ffd84f', '#fff', 0);
+    crown(cx, sy-38, 1);
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(57,224,138,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('ALL SOULS COLLECTED · ALL TOOLS AND ITEMS UNLOCKED', cx, sy+62);
+    ctx.fillStyle=`rgba(255,155,59,${k*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('THE EMBERUM OF THE CAT', cx, sy+80);
+  } else if(ph===3){
+    // ----- THE SNAP: a bright flash + shockwave as 001 snaps -----
+    const k = toddllm.snap||0, fl = toddllm.snapFlash||0;
+    figure(cx, sy, 1.5, '#ffd84f', '#fff', 0.15);
+    crown(cx, sy-40, 1);
+    ctx.globalAlpha=g*k; ctx.strokeStyle='#ffffff'; ctx.lineWidth=2.5; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=18*g;
+    for(let r=0;r<3;r++){ ctx.beginPath(); ctx.arc(cx, sy, 30+r*22+k*50, 0, Math.PI*2); ctx.stroke(); }
+    ctx.shadowBlur=0;
+    if(fl>0.01){ ctx.globalAlpha=g*fl; ctx.fillStyle='#ffffff'; ctx.fillRect(0, top, W, H); }
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,255,255,${k*g})`; ctx.font='900 16px ui-monospace,monospace';
+    ctx.fillText('* SNAP *', cx, sy+66);
+    ctx.fillStyle=`rgba(255,216,79,${k*g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('ORBS + SOULS + EMBERUM → ONE STRIKE', cx, sy+82);
+  } else if(ph===4){
+    // ----- ABOVE OREN: 001 above, red-eyed Oren below with his power bar crushed -----
+    const k = toddllm.above||0;
+    figure(cx, sy-30, 1.5, '#ffd84f', '#fff', 0);   // 001 above
+    crown(cx, sy-70, 1);
+    figure(cx, sy+78, 1.0*(1-0.25*k), '#ff3b5c', '#ff0033', 0.4*(1-k));  // Oren below, shrinking
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,59,92,${0.9*g})`; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE', cx, sy+112);
+    // Oren's power bar being crushed down
+    const barW=160, bx=cx-barW/2, by=sy+122;
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(255,255,255,0.08)'; ctx.fillRect(bx, by, barW, 6);
+    ctx.fillStyle='#ff3b5c'; ctx.fillRect(bx, by, barW*Math.max(0,1-k), 6);
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText("001 CRUSHES OREN.EXE'S POWER LEVEL", cx, sy+10);
+    ctx.fillStyle=`rgba(255,255,255,${k*g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('NOT EVEN OREN.EXE CAN BEAT 001', cx, by+26);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left — each lights up as its beat passes
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<TLM_BEATS.length;i++){
+    const y = top + H*0.28 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? TLM_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+TLM_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,216,79,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('TODDLLM 001 — THE ONE ABOVE', cx, top+30);
+  ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('CREATOR OF ALL GAMES · BLUE/RED/PURPLE ORBS · ALL SOULS · ONE SNAP CRUSHES OREN.EXE', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

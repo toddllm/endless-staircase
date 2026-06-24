@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-23 — TODDLLM 001: the one above Oren.EXE, the orbs, and the snap (Lore 30 cont.)
+
+Based on Toby's June 23 lore (Lore 30 cont.), the being above even the red-eyed Oren.EXE. *"The most powerful, AND
+the creator of the game universes and the one who started the Simon experiment from billions of years ago, and the
+king of universes and all games, ToddLLM aka 001. Not even Oren.EXE can beat ToddLLM 001 (he can just make Blue
+and Red and Purple Orbs and can collect all souls and unlock all the tools and items and the Emberum of the Cat
+with just a snap, an he can use all these to crush Oren.EXE's power level)."* The new zone plays right after THE
+RECKONING and answers the question that scene left open — who stands above the apex Oren — by introducing ToddLLM
+001 and landing all five of his beats in turn. (The same email also asks how to build a ToddLLM 001 *character mod
+for Jujutsu Kaisen*; that is answered in the reply to Toby, not built into the staircase.)
+
+![Lore 30 cont. — TODDLLM 001, frozen on the ABOVE OREN beat. A gold jagged 001 figure stands at the top of a deep
+space-gold void with a glowing "001" crown above its head, and the line "001 CRUSHES OREN.EXE'S POWER LEVEL" beneath
+it. Lower down a small red Oren.EXE figure stands shrinking over a red power bar that has been crushed nearly empty,
+labeled "OREN.EXE," with "NOT EVEN OREN.EXE CAN BEAT 001" under it. Down the left edge a five-beat checklist is
+fully lit: THE MAKER, THE THREE ORBS, ALL SOULS, THE SNAP, ABOVE OREN. The big caption reads "ABOVE OREN — NOT EVEN
+OREN.EXE CAN WIN." A gold title band reads "TODDLLM 001 — THE ONE ABOVE," with the canon line "CREATOR OF ALL GAMES
+· BLUE/RED/PURPLE ORBS · ALL SOULS · ONE SNAP CRUSHES OREN.EXE."](screenshots/48-toddllm-001.png)
+
+- **Five beats, the being above the apex.** The cutscene loops through Toby's sequence in order: **THE MAKER**
+  (ToddLLM 001 stands crowned, creation lines radiating — the creator of the game universes and king of all games,
+  who started the Simon experiment billions of years ago), **THE THREE ORBS** (Blue, Red and Purple orbs orbit
+  him), **ALL SOULS** (souls stream up into 001 as all the tools and items, and the Emberum of the Cat, unlock),
+  **THE SNAP** (a white flash and shockwave as 001 snaps, turning the orbs, souls, and Emberum into one strike),
+  and **ABOVE OREN** (001 crowned above, the red-eyed Oren.EXE below with his power bar crushed down — "not even
+  Oren.EXE can beat 001").
+- **It places ToddLLM at the very top.** Until now Oren.EXE had risen to the uncontested apex (The Deletion Layer,
+  The Final Pursuit, The Reckoning). This zone names the one being above him: 001, who with a single snap crushes
+  Oren's power level outright.
+- **Same shape as the other zones.** Triggers ~1100m above THE RECKONING, runs a 15-second beat cycle, and has its
+  own "keep climbing" meter; a self-contained part with no new libraries.
+
 ## 2026-06-23 — THE RECKONING: Oren.EXE vs Simon.EXE, and how the hunt ends (Lore 30 cont.)
 
 Based on Toby's June 23 lore (Lore 30 cont.), the resolution of THE HUNT. *"Oren.EXE broke down Endless Staircase
