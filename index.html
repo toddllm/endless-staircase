@@ -508,6 +508,16 @@ let weakness, weaknessH, weaknessM;
         hunts Oren.EXE: SIMON -> OREN -> PAUL. "You will really want to know what happened next,
         but it didn't happen yet." ---- */
 let pursuit, pursuitH, pursuitM;
+/* ---- THE RECKONING (Lore 30 cont., June 23 2026): Toby's resolution of THE HUNT. Oren.EXE
+        breaks down the Endless Staircase with robots, lasers, and the Simon "Juice That Makes
+        Your Head Explode" Bot Infinity. Oren reaches Paul, but Paul is missing; a sign reads
+        "DON'T TURN AROUND." Oren turns around anyway and Simon.EXE is standing there holding
+        Paul's head, which he throws down. Oren takes the head and turns it into energy. Then
+        Oren.EXE vs Simon.EXE happens, and Oren wins; Simon.EXE is contained again. Oren's eyes
+        turn red and the whole view goes strange: Simon, contained, sees hallucinations while the
+        real Oren.EXE attacks everyone else. The contained-and-confused Simon vs the apex Oren is
+        the tragic contrast. ---- */
+let reckoning, reckoningH, reckoningM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -750,6 +760,15 @@ function reset(){
              pirate:0, forms:0, team:0, cull:0, hunt:0, embers:[], emberT:0, slain:[], held:false };
   pursuitH = weaknessH + 1100;
   pursuitM = 0.25;  // THE FINAL PURSUIT meter: keep climbing (keep the chain moving) and the hunt closes in
+  reckoning = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1,
+             // Lore 30 cont. (June 23) — THE RECKONING. After THE FINAL PURSUIT: Oren breaks the
+             // Staircase (Juice Bot Infinity), reaches Paul's empty spot + the "DON'T TURN AROUND"
+             // sign, turns around to Simon.EXE holding Paul's head, takes the head as energy, beats
+             // Simon (recontained), then his eyes go red and the world warps while Simon hallucinates.
+             siege:0, sign:0, turn:0, fuel:0, clash:0, red:0,
+             bots:[], botT:0, halluc:[], redEye:0, turned:false, held:false };
+  reckoningH = pursuitH + 1100;
+  reckoningM = 0.25;  // THE RECKONING meter: keep climbing through the clash and the reckoning resolves
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -837,6 +856,7 @@ function isWeakness(){ return !!(weakness && (weakness.active || weakness.done))
 // the cast reaches its highest forms, then Oren/Gray/Simon merge into one X TEAM and cull everyone
 // but Paul and Simon. The story narrows to one chain — Simon.EXE -> Oren.EXE -> Paul: THE FINAL PURSUIT.
 function isPursuit(){ return !!(pursuit && (pursuit.active || pursuit.done)); }
+function isReckoning(){ return !!(reckoning && (reckoning.active || reckoning.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1742,8 +1762,27 @@ function update(dt){
     pursuit.t += dt;
     if(pursuit.t > 17.0){ pursuit.active = false; pursuit.done = true; }
   }
-  if(pursuit.glow < (isPursuit() ? 1 : 0))
+  if(pursuit.glow < (isPursuit() && !isReckoning() ? 1 : 0))
     pursuit.glow = Math.min(1, pursuit.glow + dt*0.5);
+
+  /* ---- Lore 30 cont. (June 23) — THE RECKONING. After THE FINAL PURSUIT, the resolution of the hunt:
+          Oren breaks the Staircase with the Juice Bot Infinity, finds Paul gone and the "DON'T TURN
+          AROUND" sign, turns to Simon.EXE holding Paul's head, takes the head as energy, beats Simon
+          (recontained), then his eyes go red and the world warps while Simon hallucinates. */
+  if(pursuit.done && !reckoning.active && !reckoning.done && height > reckoningH){
+    reckoning.active = true; reckoning.t = 0; reckoning.cyc = 0; reckoning.phase = -1;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.6);
+    warnText = 'THE RECKONING'; warnT = 2.8;
+    showTaunt("Oren.EXE breaks the Staircase. The sign reads DON'T TURN AROUND. Oren turns around.");
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN.EXE VS SIMON.EXE', col:'#ff3b5c' });
+    AUDIO.shock();
+  }
+  if(reckoning.active){
+    reckoning.t += dt;
+    if(reckoning.t > 20.0){ reckoning.active = false; reckoning.done = true; }
+  }
+  if(reckoning.glow < (isReckoning() ? 1 : 0))
+    reckoning.glow = Math.min(1, reckoning.glow + dt*0.5);
 
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
@@ -1773,7 +1812,8 @@ function update(dt){
   if(isDimension() && !isDeletion()) updateDimension(dt);
   if(isDeletion() && !isWeakness()) updateDeletion(dt);
   if(isWeakness() && !isPursuit()) updateWeakness(dt);
-  if(isPursuit()) updatePursuit(dt);
+  if(isPursuit() && !isReckoning()) updatePursuit(dt);
+  if(isReckoning()) updateReckoning(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2873,7 +2913,8 @@ function draw(){
   if(isDimension() && !isDeletion() && dimension.glow>0.02) drawDimension();
   if(isDeletion() && !isWeakness() && deletion.glow>0.02) drawDeletion();
   if(isWeakness() && !isPursuit() && weakness.glow>0.02) drawWeakness();
-  if(isPursuit() && pursuit.glow>0.02) drawPursuit();
+  if(isPursuit() && !isReckoning() && pursuit.glow>0.02) drawPursuit();
+  if(isReckoning() && reckoning.glow>0.02) drawReckoning();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -7652,6 +7693,244 @@ function drawPursuit(){
   ctx.fillText('THE FINAL PURSUIT — SIX SEVEN · HIGHEST FORMS · X TEAM · CULLING · THE HUNT', cx, top+30);
   ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('OREN.EXE HUNTS PAUL · SIMON.EXE HUNTS OREN.EXE · ONLY PAUL AND SIMON REMAIN', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ======================= THE RECKONING (Lore 30 cont., June 23 2026) =======================
+   Toby's resolution of THE HUNT, six beats: THE SIEGE (Oren breaks the Staircase with robots,
+   lasers, the "Juice That Makes Your Head Explode" Bot Infinity), THE SIGN (Paul missing, a sign
+   reads "DON'T TURN AROUND"), THE TURN (Oren turns; Simon.EXE holds Paul's head and throws it
+   down), THE FUEL (Oren takes the head, turns it to energy), THE LAST CLASH (Oren.EXE vs Simon.EXE;
+   Oren wins, Simon contained again), RED EYES (Oren's eyes turn red, the world warps, Simon
+   hallucinates while Oren attacks everyone else). Same beat-cycle structure as THE FINAL PURSUIT. */
+const RECK_CYC = 18.0;
+const RECK_BEATS = [
+  { key:'THE SIEGE',      col:'#ff7b00', sub:'ROBOTS · LASERS · JUICE BOT INFINITY' },
+  { key:'THE SIGN',       col:'#ffd84f', sub:"PAUL GONE — \"DON'T TURN AROUND\"" },
+  { key:'THE TURN',       col:'#8fe3ff', sub:"SIMON.EXE HOLDS PAUL'S HEAD" },
+  { key:'THE FUEL',       col:'#b98cff', sub:'OREN TURNS THE HEAD TO ENERGY' },
+  { key:'THE LAST CLASH', col:'#ff3b5c', sub:'OREN.EXE WINS · SIMON CONTAINED' },
+  { key:'RED EYES',       col:'#ff0033', sub:'REALITY WARPS · SIMON HALLUCINATES' },
+];
+function reckSeg(c){
+  if(c < 3.0)  return [0, c];        // THE SIEGE
+  if(c < 6.0)  return [1, c-3.0];    // THE SIGN
+  if(c < 9.0)  return [2, c-6.0];    // THE TURN
+  if(c < 12.0) return [3, c-9.0];    // THE FUEL
+  if(c < 15.0) return [4, c-12.0];   // THE LAST CLASH
+  return [5, c-15.0];                // RED EYES
+}
+function updateReckoning(dt){
+  reckoning.t = (reckoning.t||0) + dt;
+  reckoning.cyc = ((reckoning.cyc||0) + dt) % RECK_CYC;
+  const seg = reckSeg(reckoning.cyc), ph = seg[0], lt = seg[1];
+  if(ph !== reckoning.phase){
+    reckoning.phase = ph;
+    if(ph===0){ reckoning.siege=0; reckoning.sign=0; reckoning.turn=0; reckoning.fuel=0; reckoning.clash=0; reckoning.red=0;
+      reckoning.bots.length=0; reckoning.halluc.length=0; reckoning.turned=false; reckoning.redEye=0;
+      AUDIO.shock(); shake=Math.max(shake,8);
+      showTaunt('Oren.EXE breaks down the Endless Staircase with robots, lasers, and the Juice That Makes Your Head Explode Bot Infinity.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE SIEGE — JUICE BOT INFINITY', col:'#ff7b00' }); }
+    if(ph===1){ AUDIO.glitch();
+      showTaunt("Oren reaches Paul, but Paul is missing. A sign reads: DON'T TURN AROUND.");
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:"\"DON'T TURN AROUND\"", col:'#ffd84f' }); }
+    if(ph===2){ AUDIO.corrupt(); shake=Math.max(shake,7);
+      showTaunt("Oren turns around anyway. Simon.EXE is standing there, holding Paul's head, and throws it down.");
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:"SIMON.EXE — PAUL'S HEAD", col:'#8fe3ff' }); }
+    if(ph===3){ AUDIO.zap();
+      showTaunt('Oren takes the head and turns it into pure energy.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE HEAD BECOMES ENERGY', col:'#b98cff' }); }
+    if(ph===4){ AUDIO.shock(); shake=Math.max(shake,9); glitch=Math.max(glitch,0.4);
+      showTaunt('Oren.EXE vs Simon.EXE. Oren wins. Simon.EXE is contained again.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'OREN WINS — SIMON CONTAINED', col:'#ff3b5c' }); }
+    if(ph===5){ AUDIO.corrupt(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.6);
+      showTaunt("Oren.EXE's eyes turn red and reality warps. Simon, contained, sees hallucinations while the real Oren attacks everyone else.");
+      floaters.push({ x:player.x, y:player.y-36, t:0, txt:'RED EYES — OREN ATTACKS ALL', col:'#ff0033' }); }
+  }
+  // per-beat ramps
+  if(ph===0){ reckoning.siege = Math.min(1, lt/2.2);
+    reckoning.botT = (reckoning.botT||0) - dt;
+    if(reckoning.botT<=0 && reckoning.bots.length<14){ reckoning.botT=0.18;
+      reckoning.bots.push({ x:(Math.random()-0.5)*1.6, y:Math.random(), v:0.3+Math.random()*0.5 }); }
+  } else reckoning.siege = 1;
+  for(const b of reckoning.bots){ b.y += dt*b.v*0.2; if(b.y>1) b.y-=1; }
+  if(ph===1) reckoning.sign = Math.min(1, lt/2.2); else if(ph>1) reckoning.sign = 1;
+  if(ph===2){ reckoning.turn = Math.min(1, lt/2.2);
+    if(reckoning.turn>0.5 && !reckoning.turned){ reckoning.turned=true; AUDIO.shock(); shake=Math.max(shake,8);
+      for(let i=0;i<10;i++) particles.push(spark(W/2, cameraY+H*0.42, '#8fe3ff')); }
+  } else if(ph>2) reckoning.turn = 1;
+  if(ph===3){ reckoning.fuel = Math.min(1, lt/2.2);
+    if(Math.random()<0.4) particles.push(spark(W/2+(Math.random()-0.5)*60, cameraY+H*0.40, '#b98cff'));
+  } else if(ph>3) reckoning.fuel = 1;
+  if(ph===4) reckoning.clash = Math.min(1, lt/2.2); else if(ph>4) reckoning.clash = 1;
+  if(ph===5){ reckoning.red = Math.min(1, lt/2.2); reckoning.redEye = Math.min(1, (reckoning.redEye||0)+dt*0.5);
+    // contained Simon's hallucination ghosts drift in and fade
+    if(reckoning.halluc.length<10 && Math.random()<0.3)
+      reckoning.halluc.push({ x:(Math.random()-0.5)*1.4, y:Math.random(), life:1, drift:(Math.random()-0.5) });
+  } else reckoning.red = 0;
+  for(let i=reckoning.halluc.length-1;i>=0;i--){ const h=reckoning.halluc[i];
+    h.life -= dt*0.4; h.x += dt*h.drift*0.1; if(h.life<=0) reckoning.halluc.splice(i,1); }
+
+  // THE RECKONING meter — keep climbing through the clash and the reckoning resolves.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  reckoningM = Math.max(0, Math.min(1, reckoningM + (moving ? dt*0.05 : -dt*0.03)));
+  if(reckoningM>=1 && !reckoning.held){
+    reckoning.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('Oren.EXE is the last one moving. Simon is contained and seeing false things; the real catastrophe is outside.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ THE RECKONING ★', col:'#ff0033' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff0033','#ff3b5c','#b98cff'])));
+    AUDIO.shock();
+  }
+}
+function drawReckoning(){
+  const g = reckoning.glow||0, top = cameraY;
+  const c = reckoning.cyc||0, seg = reckSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = RECK_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — void deepening to blood red as the clash and the red-eye reckoning take over
+  const rd = reckoning.red||0, cl = reckoning.clash||0;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(8,3,8,${0.80*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(14+50*Math.max(rd,cl))},3,10, ${0.80*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.42;
+
+  // a small jagged glowing figure (reused for Oren / Simon / the hallucinations)
+  function figure(x, y, scale, col, eyeCol, jitter){
+    ctx.save(); ctx.globalAlpha = g;
+    const jx = (jitter? (Math.random()-0.5)*4*jitter : 0);
+    ctx.translate(x+jx, y);
+    ctx.shadowColor = col; ctx.shadowBlur = 12*g;
+    ctx.fillStyle = '#0a0814'; ctx.strokeStyle = col; ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.moveTo(-16*scale, -20*scale); ctx.lineTo(16*scale, -20*scale);
+    ctx.lineTo(19*scale, 15*scale); ctx.lineTo(0, 26*scale); ctx.lineTo(-19*scale, 15*scale);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.shadowBlur=0; ctx.fillStyle=eyeCol;
+    ctx.beginPath(); ctx.arc(-6*scale, -4*scale, 3*scale, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(6*scale, -4*scale, 3*scale, 0, Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+
+  if(ph===0){
+    // ----- THE SIEGE: Oren tears down the Staircase; robots + lasers rain; Juice Bot Infinity -----
+    const k = reckoning.siege||0;
+    for(const b of reckoning.bots){ const bx = cx + b.x*W*0.45, by = top + H*0.10 + b.y*H*0.66;
+      ctx.globalAlpha=g*0.9; ctx.fillStyle='#ff7b00'; ctx.shadowColor='#ff7b00'; ctx.shadowBlur=8*g;
+      ctx.fillRect(bx-3, by-3, 6, 6);
+      ctx.strokeStyle=`rgba(255,80,40,${0.5*g})`; ctx.lineWidth=1.5; ctx.shadowBlur=0;
+      ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(bx+5, by+18); ctx.stroke(); }
+    ctx.shadowBlur=0;
+    figure(cx, sy, 1.5, '#ff3b5c', '#fff', 0.2);
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,123,0,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('"JUICE THAT MAKES YOUR HEAD EXPLODE" — BOT INFINITY', cx, sy+62);
+    ctx.fillStyle=`rgba(255,90,60,${k*g})`; ctx.font='700 11px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE BREAKS DOWN THE ENDLESS STAIRCASE', cx, sy+80);
+  } else if(ph===1){
+    // ----- THE SIGN: Paul's spot empty, the warning sign reads DON'T TURN AROUND -----
+    const k = reckoning.sign||0;
+    figure(cx-20, sy, 1.4, '#ff3b5c', '#fff', 0);
+    // empty marker where Paul should be
+    ctx.globalAlpha=g*0.6; ctx.strokeStyle='#39e08a'; ctx.setLineDash([5,5]); ctx.lineWidth=2;
+    ctx.strokeRect(cx+86, sy-26, 40, 52); ctx.setLineDash([]);
+    ctx.fillStyle=`rgba(57,224,138,${0.7*g})`; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('PAUL?', cx+106, sy+44);
+    // the sign
+    ctx.globalAlpha=g; ctx.save(); ctx.translate(cx, sy-84);
+    ctx.fillStyle='#15110a'; ctx.strokeStyle='#ffd84f'; ctx.lineWidth=2.5;
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=14*k*g;
+    ctx.fillRect(-118,-20,236,40); ctx.strokeRect(-118,-20,236,40); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 16px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText("DON'T TURN AROUND", 0, 6); ctx.restore();
+  } else if(ph===2){
+    // ----- THE TURN: Oren turns; Simon.EXE behind him holding Paul's head, then drops it -----
+    const k = reckoning.turn||0;
+    figure(cx-42, sy, 1.3, '#ff3b5c', reckoning.turned?'#ff0033':'#fff', 0.2);  // Oren, now turned
+    figure(cx+66, sy-6, 1.2, '#8fe3ff', '#ffd84f', 0.3);                          // Simon.EXE
+    // Paul's head — held high, then dropping once Oren has turned
+    const drop = reckoning.turned ? Math.min(1,(k-0.5)*2) : 0;
+    const headY = sy-40 + drop*60;
+    ctx.globalAlpha=g; ctx.fillStyle='#39e08a'; ctx.shadowColor='#39e08a'; ctx.shadowBlur=10*g;
+    ctx.beginPath(); ctx.arc(cx+66, headY, 9, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(57,224,138,${0.85*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText("PAUL'S HEAD", cx+66, headY-15);
+    ctx.fillStyle=`rgba(143,227,255,${k*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('SIMON.EXE WAS BEHIND HIM ALL ALONG', cx, sy+66);
+  } else if(ph===3){
+    // ----- THE FUEL: Oren takes the head and converts it into energy -----
+    const k = reckoning.fuel||0;
+    figure(cx, sy, 1.4+0.3*k, '#ff3b5c', '#ff0033', 0.2);
+    ctx.globalAlpha=g*k; ctx.strokeStyle='#b98cff'; ctx.lineWidth=2; ctx.shadowColor='#b98cff'; ctx.shadowBlur=16*g;
+    for(let r=0;r<3;r++){ ctx.beginPath(); ctx.arc(cx, sy, 26+r*16+k*20, 0, Math.PI*2); ctx.stroke(); }
+    ctx.shadowBlur=0;
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(185,140,255,${k*g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText("PAUL'S REMAINS → PURE ENERGY", cx, sy+70);
+  } else if(ph===4){
+    // ----- THE LAST CLASH: Oren.EXE vs Simon.EXE; Oren wins, Simon recontained -----
+    const k = reckoning.clash||0;
+    const shove = k*30;
+    figure(cx-50, sy, 1.4, '#ff3b5c', '#ff0033', 0.3);                       // Oren
+    figure(cx+50+shove, sy, 1.2*(1-0.3*k), '#8fe3ff', '#ffd84f', 0.5*(1-k)); // Simon, pushed back / shrinking
+    // clash burst between them
+    ctx.globalAlpha=g; ctx.strokeStyle='#fff'; ctx.lineWidth=2; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=14*g;
+    for(let i=0;i<8;i++){ const a=i/8*Math.PI*2, rr=20+k*16;
+      ctx.beginPath(); ctx.moveTo(cx,sy); ctx.lineTo(cx+Math.cos(a)*rr, sy+Math.sin(a)*rr); ctx.stroke(); }
+    ctx.shadowBlur=0;
+    // containment box closing over Simon as he loses
+    ctx.globalAlpha=g*k; ctx.strokeStyle='#8fe3ff'; ctx.setLineDash([4,4]); ctx.lineWidth=2;
+    ctx.strokeRect(cx+50+shove-22, sy-26, 44, 52); ctx.setLineDash([]);
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.font='900 14px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE WINS', cx, sy+64);
+    ctx.fillStyle=`rgba(143,227,255,${k*g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('SIMON.EXE CONTAINED AGAIN', cx, sy+80);
+  } else if(ph===5){
+    // ----- RED EYES: red-eyed Oren, warped view; contained Simon hallucinates, Oren attacks all -----
+    const k = reckoning.red||0, re = reckoning.redEye||0;
+    // warped perception — a wavering red wash over the whole view
+    ctx.globalAlpha=g*0.18*re; ctx.fillStyle='#ff0033'; ctx.fillRect(0, top, W, H);
+    ctx.globalAlpha=1;
+    // hallucination ghosts (the false things contained Simon sees)
+    for(const h of reckoning.halluc){ ctx.globalAlpha=g*Math.max(0,h.life)*0.5;
+      figure(cx + h.x*W*0.4, top+H*0.28 + h.y*H*0.4, 0.6, '#8fe3ff', '#fff', 0.6); }
+    ctx.globalAlpha=1;
+    figure(cx, sy, 1.6, '#ff0033', '#ff0033', 0.3);  // red-eyed Oren
+    // the two red eyes burning brighter
+    ctx.globalAlpha=g; ctx.fillStyle='#ff0033'; ctx.shadowColor='#ff0033'; ctx.shadowBlur=20*re*g;
+    ctx.beginPath(); ctx.arc(cx-9, sy-6, 4+re*2, 0, Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(cx+9, sy-6, 4+re*2, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.globalAlpha=g;
+    ctx.fillStyle=`rgba(255,0,51,${k*g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE ATTACKS EVERYONE ELSE', cx, sy+60);
+    ctx.fillStyle=`rgba(143,227,255,${0.75*g})`; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('SIMON: CONTAINED · CONFUSED · SEEING FALSE THINGS', cx, sy+78);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left — each lights up as its beat passes
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<RECK_BEATS.length;i++){
+    const y = top + H*0.28 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? RECK_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+RECK_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,59,92,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE RECKONING — OREN.EXE VS SIMON.EXE', cx, top+30);
+  ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText("OREN WINS · SIMON RECONTAINED · RED EYES · SIMON HALLUCINATES WHILE OREN ATTACKS ALL", cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

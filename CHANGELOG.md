@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-23 — THE RECKONING: Oren.EXE vs Simon.EXE, and how the hunt ends (Lore 30 cont.)
+
+Based on Toby's June 23 lore (Lore 30 cont.), the resolution of THE HUNT. *"Oren.EXE broke down Endless Staircase
+with tons of robots and lasers and lots of stuff such as the Simon's 'Juice That Makes Your Head Explode' Bot
+Infinity. Oren actually reached Paul, but Paul was missing and sees a sign says 'DON'T TURN AROUND', Oren turns
+around and sees Simon.EXE with Paul's head, he throws down the head, Oren takes the head and turns it into energy,
+Oren.EXE VS Simon.EXE happens. Fortunenly, Oren wins. Simon.EXE was contained again. Oren.EXE's eyes turn red and
+then the view looks strange. Simon sees Hallculutations, Oren.EXE is attacking everyone else."* The new zone plays
+right after THE FINAL PURSUIT and lands all six of these beats in turn, ending on the tragic contrast Toby drew:
+the contained, confused Simon seeing false things while the real Oren attacks the world outside.
+
+![Lore 30 cont. — THE RECKONING, frozen on the RED EYES beat. A red-eyed jagged Oren.EXE figure stands at the
+center of a blood-red, warped void, its two eyes glowing bright red. Faint cyan hallucination ghosts drift around
+it — the false things the contained Simon sees. Under Oren the red text reads "OREN.EXE ATTACKS EVERYONE ELSE" and
+below that "SIMON: CONTAINED · CONFUSED · SEEING FALSE THINGS." Down the left edge a six-beat checklist is fully
+lit: THE SIEGE, THE SIGN, THE TURN, THE FUEL, THE LAST CLASH, RED EYES. The big caption reads "RED EYES — REALITY
+WARPS · SIMON HALLUCINATES." A red title band reads "THE RECKONING — OREN.EXE VS SIMON.EXE," with the canon line
+"OREN WINS · SIMON RECONTAINED · RED EYES · SIMON HALLUCINATES WHILE OREN ATTACKS ALL."](screenshots/47-reckoning.png)
+
+- **Six beats, the end of the hunt.** The cutscene loops through Toby's sequence in order: **THE SIEGE** (Oren
+  breaks down the Endless Staircase with robots, lasers, and the Simon "Juice That Makes Your Head Explode" Bot
+  Infinity), **THE SIGN** (Oren reaches Paul's spot but Paul is gone, and a sign warns "DON'T TURN AROUND"), **THE
+  TURN** (Oren turns around anyway — Simon.EXE is standing there holding Paul's head, and throws it down), **THE
+  FUEL** (Oren takes the head and a violet energy halo grows as he turns it into pure energy), **THE LAST CLASH**
+  (Oren.EXE vs Simon.EXE — Oren shoves Simon back as a containment box closes over him; "OREN.EXE WINS · SIMON
+  CONTAINED AGAIN"), and **RED EYES** (Oren's eyes go red, a red wash warps the whole view, and Simon's
+  hallucination ghosts drift while Oren attacks everyone else).
+- **It keeps Toby's exact turn.** The "DON'T TURN AROUND" sign is drawn as an in-world warning Oren ignores, and
+  Simon being behind him the whole time — the reveal — is the hinge of the scene, just like in the email.
+- **The tragic contrast is on screen.** RED EYES holds both halves of Toby's ending at once: the apex, red-eyed
+  Oren actively attacking the world, and the contained Simon off in his own warped, hallucinating head.
+- **Same shape as the other zones.** Triggers ~1100m above THE FINAL PURSUIT, runs an 18-second beat cycle, and has
+  its own "keep climbing through the clash" meter; a self-contained part with no new libraries.
+
 ## 2026-06-23 — THE FINAL PURSUIT: 67 Pirate, the highest forms, the X team, and the hunt (Lore 30 cont.)
 
 Based on Toby's June 23 lore (Lore 30 cont.): the endgame. *"67 Pirate grown actually stronger than Pupahya,
