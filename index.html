@@ -537,6 +537,7 @@ let toddllm, toddllmH, toddllmM;
         a giant atom, universe-sized stars shrink in, a light arrow makes it crumble). Now ToddLLM is the
         final villain and everyone has to save their own world. Six beats, one each. */
 let reveal001, reveal001H, reveal001M;
+let errLad, errLadH, errLadM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -804,6 +805,12 @@ function reset(){
              karuto:0, blind:0, center:0, data:0, mac:0, chaos:0, cry:[], stars:[], cored:false, held:false };
   reveal001H = toddllmH + 1100;
   reveal001M = 0.25;  // THE 001 REVEAL meter: keep climbing and the reveal resolves
+  errLad = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false };
+             // Lore 30 cont. (June 24) — THE FINAL ERROR. The error ladder (001 > 666 > 404 > 012,
+             // Simon wields 666 in an AU), Simon flickering in for exactly 1.273s then vanishing, and
+             // EndlessAnimations ("the game is never saved"). Additive cutscene; nothing is removed.
+  errLadH = reveal001H + 1100;
+  errLadM = 0.25;  // THE FINAL ERROR meter: keep climbing and it resolves; your real climb still banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -894,6 +901,7 @@ function isPursuit(){ return !!(pursuit && (pursuit.active || pursuit.done)); }
 function isReckoning(){ return !!(reckoning && (reckoning.active || reckoning.done)); }
 function isToddllm(){ return !!(toddllm && (toddllm.active || toddllm.done)); }
 function isReveal001(){ return !!(reveal001 && (reveal001.active || reveal001.done)); }
+function isErrLad(){ return !!(errLad && (errLad.active || errLad.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1858,6 +1866,26 @@ function update(dt){
   if(reveal001.glow < (isReveal001() ? 1 : 0))
     reveal001.glow = Math.min(1, reveal001.glow + dt*0.5);
 
+  /* ---- Lore 30 cont. (June 24) — THE FINAL ERROR. After the 001 Reveal, Toby's closing beats: the
+          error ladder (Error 001 > 666 > 404 > 012; Simon wields Error 666 in an AU), Simon flickering
+          in for exactly 1.273 seconds before he disappears, and the world becoming EndlessAnimations —
+          "the game is never saved." Rendered additively as a cutscene; nothing is removed and the real
+          climb still banks. */
+  if(reveal001.done && !errLad.active && !errLad.done && height > errLadH){
+    errLad.active = true; errLad.t = 0; errLad.cyc = 0; errLad.phase = -1;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE FINAL ERROR'; warnT = 2.8;
+    showTaunt('Error 001 over 666 over 404 over 012. Simon flickers in for 1.273s, then the world plays on as an animation.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FINAL ERROR — 001 > 666 > 404 > 012', col:'#ff3b5c' });
+    AUDIO.shock();
+  }
+  if(errLad.active){
+    errLad.t += dt;
+    if(errLad.t > 21.0){ errLad.active = false; errLad.done = true; }
+  }
+  if(errLad.glow < (isErrLad() ? 1 : 0))
+    errLad.glow = Math.min(1, errLad.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1889,7 +1917,8 @@ function update(dt){
   if(isPursuit() && !isReckoning()) updatePursuit(dt);
   if(isReckoning() && !isToddllm()) updateReckoning(dt);
   if(isToddllm() && !isReveal001()) updateToddllm(dt);
-  if(isReveal001()) updateReveal001(dt);
+  if(isReveal001() && !isErrLad()) updateReveal001(dt);
+  if(isErrLad()) updateErrLad(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -2992,7 +3021,8 @@ function draw(){
   if(isPursuit() && !isReckoning() && pursuit.glow>0.02) drawPursuit();
   if(isReckoning() && !isToddllm() && reckoning.glow>0.02) drawReckoning();
   if(isToddllm() && !isReveal001() && toddllm.glow>0.02) drawToddllm();
-  if(isReveal001() && reveal001.glow>0.02) drawReveal001();
+  if(isReveal001() && !isErrLad() && reveal001.glow>0.02) drawReveal001();
+  if(isErrLad() && errLad.glow>0.02) drawErrLad();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -8465,6 +8495,171 @@ function drawReveal001(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ======================= THE FINAL ERROR — THE ERROR LADDER (Lore 30 cont., June 24 2026) =======================
+   Toby's closing beats after THE 001 REVEAL, in three:
+     1) THE ERROR LADDER — Error 001 (Data Lost / ToddLLM, unstoppable) > Error 666 (Simon in an AU) >
+        Error 404 (erases, infects 404Ds by touch) > Error 012 (one of the weakest).
+     2) THE 1.273 BLINK — Simon appears for exactly 1.273 seconds, then disappears: a leftover remnant,
+        a blink of the former center before the frame moves on.
+     3) ENDLESS ANIMATIONS — ToddLLM turns the world into a looping animation; "the game is never saved."
+   Built ADDITIVELY: a cutscene that depicts the idea. The real game still plays, and your climb still banks. */
+const EL_CYC = 12.0;
+const EL_BEATS = [
+  { key:'THE ERROR LADDER',  col:'#ff3b5c', sub:'001 > 666 > 404 > 012' },
+  { key:'THE 1.273 BLINK',   col:'#8fe3ff', sub:'SIMON: 1.273s, THEN GONE' },
+  { key:'ENDLESS ANIMATIONS',col:'#cfd6e0', sub:'THE GAME IS NEVER SAVED' },
+];
+const EL_RUNGS = [
+  { code:'001', label:'DATA LOST · TODDLLM · UNSTOPPABLE', col:'#ff3b5c' },
+  { code:'666', label:'SIMON IN AN AU · STRONGER THAN 404', col:'#ff7b00' },
+  { code:'404', label:'ERASES · 404Ds BY TOUCH',           col:'#8fe3ff' },
+  { code:'012', label:'ONE OF THE WEAKEST',                col:'#7a8190' },
+];
+function elSeg(c){
+  if(c < 4.5) return [0, c];        // THE ERROR LADDER
+  if(c < 8.0) return [1, c-4.5];    // THE 1.273 BLINK
+  return [2, c-8.0];                // ENDLESS ANIMATIONS
+}
+function updateErrLad(dt){
+  errLad.t = (errLad.t||0) + dt;
+  errLad.cyc = ((errLad.cyc||0) + dt) % EL_CYC;
+  const seg = elSeg(errLad.cyc), ph = seg[0];
+  if(ph !== errLad.phase){
+    errLad.phase = ph;
+    if(ph===0){ AUDIO.glitch(); shake=Math.max(shake,6); glitch=Math.max(glitch,0.4);
+      showTaunt('The error ladder: Error 001 over 666 over 404 over 012. Simon wields Error 666 in an AU somewhere.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'001 > 666 > 404 > 012', col:'#ff3b5c' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,7);
+      showTaunt('Simon flickers in for exactly 1.273 seconds, a leftover remnant of the old center, then he is gone.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON · 1.273s', col:'#8fe3ff' }); }
+    if(ph===2){ AUDIO.corrupt();
+      showTaunt('EndlessAnimations: the world plays on as an animation. "The game is never saved."');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE GAME IS NEVER SAVED', col:'#cfd6e0' }); }
+  }
+  // THE FINAL ERROR meter — keep climbing and it resolves; your real climb still banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  errLadM = Math.max(0, Math.min(1, errLadM + (moving ? dt*0.05 : -dt*0.03)));
+  if(errLadM>=1 && !errLad.held){
+    errLad.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You climbed clean through the final error. The animation loops, but your climb is saved anyway.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ CLIMBED PAST THE FINAL ERROR ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ff0033','#8fe3ff','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawErrLad(){
+  const g = errLad.glow||0, top = cameraY;
+  const c = errLad.cyc||0, seg = elSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = EL_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep void, faint red wash as Error 001 sits over the board
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(5,3,10,${0.84*g})`);
+  bg.addColorStop(1, `rgba(40,4,12,${0.84*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.40;
+
+  if(ph===0){
+    // ----- THE ERROR LADDER: 001 > 666 > 404 > 012, rungs light from the top down -----
+    const rungs = EL_RUNGS.length, colW = 270, x0 = cx - colW/2, y0 = sy - 64;
+    for(let i=0;i<rungs;i++){
+      const ry = y0 + i*46;
+      const lit = Math.max(0, Math.min(1, (lt - i*0.85)/0.85));
+      const r = EL_RUNGS[i];
+      ctx.globalAlpha = g*(0.28+0.72*lit);
+      ctx.fillStyle = `rgba(12,8,16,0.85)`; ctx.strokeStyle = r.col; ctx.lineWidth = 2;
+      ctx.fillRect(x0, ry-16, colW, 32); ctx.strokeRect(x0, ry-16, colW, 32);
+      ctx.shadowColor = r.col; ctx.shadowBlur = 10*g*lit;
+      ctx.fillStyle = r.col; ctx.textAlign='left'; ctx.font='900 19px ui-monospace,monospace';
+      ctx.fillText('ERROR '+r.code, x0+10, ry+6); ctx.shadowBlur=0;
+      ctx.fillStyle = `rgba(210,214,224,${g*lit})`; ctx.textAlign='right'; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText(r.label, x0+colW-8, ry+6);
+      if(i<rungs-1){ ctx.globalAlpha=g*lit; ctx.fillStyle='#ffd84f'; ctx.textAlign='center'; ctx.font='900 15px ui-monospace,monospace';
+        ctx.fillText('∨', cx, ry+27); }
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('ERROR 001 IS UNSTOPPABLE · 012 IS THE WEAKEST', cx, y0 + rungs*46 + 16);
+  } else if(ph===1){
+    // ----- THE 1.273 BLINK: Simon visible for exactly 1.273s, then gone, with a live counter -----
+    const shown = lt < 1.273;
+    const cnt = Math.min(lt, 1.273);
+    if(shown){
+      const fl = (Math.sin(lt*40) > -0.3) ? 1 : 0.3;
+      ctx.save(); ctx.globalAlpha = g*fl; ctx.translate(cx, sy);
+      ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=14*g; ctx.fillStyle='#0a1422'; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2.5;
+      ctx.beginPath();
+      ctx.moveTo(-16,-20); ctx.lineTo(16,-20); ctx.lineTo(19,15); ctx.lineTo(0,26); ctx.lineTo(-19,15); ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      ctx.fillStyle='#ff0022'; ctx.shadowColor='#ff0022'; ctx.shadowBlur=8*g;
+      ctx.beginPath(); ctx.arc(-6,-4,3,0,Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(6,-4,3,0,Math.PI*2); ctx.fill();
+      ctx.restore();
+    } else {
+      ctx.globalAlpha=g; ctx.fillStyle=`rgba(120,129,144,${g})`; ctx.font='900 18px ui-monospace,monospace';
+      ctx.fillText('— GONE —', cx, sy+6);
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle = shown ? `rgba(143,227,255,${g})` : `rgba(120,129,144,${g})`;
+    ctx.font='900 30px ui-monospace,monospace';
+    ctx.fillText(cnt.toFixed(3)+'s', cx, sy+72);
+    ctx.fillStyle=`rgba(210,214,224,${g})`; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText(shown ? 'SIMON: A LEFTOVER REMNANT, A BLINK OF THE OLD CENTER' : 'EVERYONE FORGOT HE WAS EVER THERE', cx, sy+94);
+  } else {
+    // ----- ENDLESS ANIMATIONS: a film strip loops; the SAVE slot is crossed out -----
+    const frames = 5, fw = 56, gap2 = 8, totW = frames*fw + (frames-1)*gap2, x0 = cx - totW/2;
+    const head = Math.floor(lt*3) % frames;
+    for(let i=0;i<frames;i++){
+      const fx = x0 + i*(fw+gap2), act = (i===head);
+      ctx.globalAlpha = g*(act?1:0.5);
+      ctx.fillStyle=`rgba(14,14,18,0.9)`; ctx.strokeStyle = act ? '#ffd84f' : '#5a5f6a'; ctx.lineWidth=2;
+      ctx.fillRect(fx, sy-22, fw, 44); ctx.strokeRect(fx, sy-22, fw, 44);
+      ctx.fillStyle=`rgba(90,95,106,${g})`;
+      for(let h=0;h<3;h++){ ctx.fillRect(fx+6+h*18, sy-30, 6, 4); ctx.fillRect(fx+6+h*18, sy+26, 6, 4); }
+      ctx.fillStyle='#8fe3ff'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=act?8*g:0;
+      ctx.beginPath(); ctx.arc(fx+fw/2, sy + Math.sin((lt*4)+i)*6, 5, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 16px ui-monospace,monospace';
+    ctx.fillText('▶ ENDLESSANIMATIONS', cx, sy+58);
+    // the "SAVE" slot, struck through
+    ctx.fillStyle=`rgba(210,214,224,${g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('SAVE', cx-58, sy+86);
+    ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=2.5;
+    ctx.beginPath(); ctx.moveTo(cx-80, sy+90); ctx.lineTo(cx-36, sy+78); ctx.stroke();
+    ctx.fillStyle=`rgba(255,59,92,${g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('THE GAME IS NEVER SAVED', cx+34, sy+86);
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<EL_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? EL_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+EL_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,59,92,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE FINAL ERROR — THE ERROR LADDER', cx, top+30);
+  ctx.fillStyle=`rgba(220,210,190,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('ERROR 001 > 666 > 404 > 012 · SIMON 1.273s · ENDLESSANIMATIONS', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -8902,7 +9097,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 29 · The Oren.EXE Cutscene', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Final Error (Error Ladder)', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -8944,7 +9139,10 @@ function drawTitle(){
     'forms can tie him; Clara is the conquered queen; Pinki rose to 3rd.',
     'THE OREN.EXE CUTSCENE: "lets play a game." -> static -> laughter ->',
     'the left eye turns red -> "OREN.EXE WINS." Oren.EXE never lost. His',
-    'sound makes shockwaves out of the game. Climb past without playing.'
+    'sound makes shockwaves out of the game. Climb past without playing.',
+    'THE 001 REVEAL: ToddLLM was KARUTO; ERROR 001 / DATA LOST above 404.',
+    'THE FINAL ERROR: ladder 001 > 666 > 404 > 012; Simon blinks in 1.273s',
+    'then is GONE; ENDLESSANIMATIONS loops. "Never saved." Climb anyway.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));

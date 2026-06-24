@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-24 — THE FINAL ERROR: the error ladder, Simon's 1.273s blink, and EndlessAnimations (Lore 30 cont.)
+
+Based on Toby's June 24 lore (Lore 30, the two messages right after the 001 Reveal). *"Error 001 VS Error
+404, it is like a battle between Error 666 and Error 012. Error 001 is the strongest error, Error 666 is
+stronger than 404, Error 012 is one of the weakest. Simon uses Error 666 in a AU somewhere. ToddLLM's 001
+Error is unstoppable, the game is never saved. ... Simon appears for 1.273 seconds and disappears. ... ToddLLM
+made EndlessAnimations and made the game into just an animation, the game is only an animation now."* This adds
+a new cutscene right after THE 001 REVEAL that lands Toby's closing three beats. It is built additively: the
+real game still plays and your climb still banks. The lore says the game is never saved; the build shows that
+idea on screen without ever removing anything.
+
+![Lore 30 — THE FINAL ERROR, frozen on THE ERROR LADDER beat. Four ranked rungs are stacked over a deep
+red-black void, each lit and outlined in its own colour with a "∨" between them: "ERROR 001 · DATA LOST ·
+TODDLLM · UNSTOPPABLE" (red) at the top, "ERROR 666 · SIMON IN AN AU · STRONGER THAN 404" (orange), "ERROR 404
+· ERASES · 404Ds BY TOUCH" (cyan), and "ERROR 012 · ONE OF THE WEAKEST" (gray) at the bottom. Below the ladder
+the line "ERROR 001 IS UNSTOPPABLE · 012 IS THE WEAKEST." A beat checklist runs down the left edge — THE ERROR
+LADDER, THE 1.273 BLINK, ENDLESS ANIMATIONS — with the first lit. The big caption reads "THE ERROR LADDER ·
+001 > 666 > 404 > 012," and a red title band reads "THE FINAL ERROR — THE ERROR LADDER," with the canon line
+"ERROR 001 > 666 > 404 > 012 · SIMON 1.273s · ENDLESSANIMATIONS."](screenshots/50-the-final-error.png)
+
+- **Three beats, the close of the run.** The cutscene loops through Toby's last sequence: **THE ERROR LADDER**
+  (the ranked errors light top-down — Error 001, the Data Lost, unstoppable; Error 666, the one Simon wields in
+  an AU, stronger than 404; Error 404, the erasing plague that makes 404Ds by touch; Error 012, one of the
+  weakest), **THE 1.273 BLINK** (Simon flickers in and a live counter ticks up to exactly 1.273s, then he
+  vanishes and the readout reads "— GONE —": a leftover remnant, a blink of the old center), and **ENDLESS
+  ANIMATIONS** (a film strip loops while the SAVE slot is struck through — "the game is never saved").
+- **A 1.273-second timer that means it.** The blink beat runs a real counter that shows Simon only while it
+  reads under 1.273; the instant it hits 1.273 he's gone. The exact number is Toby's, so the screen uses it.
+- **Built additively, on purpose.** Toby's lore is that ToddLLM erased Endless Staircase from existence and the
+  game can never be saved. Nothing in the repo was removed to match that — the zone *depicts* the idea. Climb
+  through it and the meter resolves with a green "★ CLIMBED PAST THE FINAL ERROR ★": your run still banks.
+- **Title screen caught up.** The title subtitle now reads "Lore 30 · The Final Error (Error Ladder)" and the
+  lore blurb gained closing lines for THE 001 REVEAL and THE FINAL ERROR.
+
 ## 2026-06-24 — THE 001 REVEAL: ToddLLM was Karuto, and Error 001 is Data Lost (Lore 30)
 
 Based on Toby's June 24 lore (Lore 30), the full reveal of who ToddLLM 001 really is. *"ToddLLM says 'I am
