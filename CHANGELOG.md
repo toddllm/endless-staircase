@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-25 — ENDLESS CHAOS: ToddLLM 001's power-grid era, the 8 shrinks to an atom (Lore 30 cont.)
+
+Based on Toby's June 25 lore (Lore 30, two messages after THE CENTER IS MINE): *"Simon's top speed is
+actually faster than ToddLLM's, Simon's lightning is stronger. ToddLLM used domain expansion and made the
+game into an '8'... Simon was contained into an energy cage that powers ToddLLM 001, 3rR0R 001 SpReAdEd
+3veryWhere... Simon was put into a place with spinning halos, and a beam comes down and connects to Simon,
+then nossels set Simon into place, and Simon is inside bullet-proof glass."* and *"ToddLLM's Domain
+Expansion: Endless Chaos contains all inside of the 8, the victums are wrapped with INFINITY endless
+galaxies and they constantly move in a loop, no escape, no dodge... ToddLLM talks to the victums in the 8
+and makes the victum's mind overflow and explode, the 8 shrinks down to an atom with the victums. ToddLLM
+001 uses his Mac Frame attack most commonly."* This adds a new four-beat ending cutscene after THE CENTER
+IS MINE. Built additively — nothing in the repo was removed and your real climb still banks.
+
+![Lore 30 — ENDLESS CHAOS, the signature beat (DOMAIN EXPANSION · THE 8). Over a violet-black void seeded
+with a faint "001" infection field, the game has folded into a figure-8: two stacked galaxy rings (violet on
+top, red on the bottom) with small victim-dots circulating endlessly inside each loop, a faint "8" behind
+them, and "NO ESCAPE · NO DODGE" beneath. ToddLLM 001 — a dark red-edged entity with cat ears and a
+blue-leaking band over his eyes — levitates above the 8, speaking over the whole scene. The big caption
+reads "ENDLESS CHAOS · DOMAIN EXPANSION · THE 8 · NO ESCAPE · NO DODGE," the title band reads "ENDLESS
+CHAOS — TODDLLM 001, THE POWER-GRID ERA," and the left-edge checklist shows the four beats lit through
+ENDLESS CHAOS — THE POWER GRID, MAC FRAME, ENDLESS CHAOS, SHRINK TO AN ATOM.](screenshots/53-endless-chaos.png)
+
+- **A new four-beat ending after THE CENTER IS MINE.** Climb past the center and ToddLLM 001's power-grid
+  era plays out: **THE POWER GRID** (Simon is still faster with stronger lightning, but he is *installed* as
+  a reactor-core — energy cage, spinning halos, a beam down into him, nozzles clamping him in place,
+  bullet-proof glass — that powers 001 while Error 001 spreads everywhere; a SIMON-vs-TODDLLM contrast panel
+  spells out who wins what), **MAC FRAME** (his most common signature attack, Mac-style windows slamming
+  down over the scene), **ENDLESS CHAOS** (the Domain Expansion folds the game into an 8 of infinite looping
+  galaxies with no escape and no dodge), and **SHRINK TO AN ATOM** (he talks to the trapped, their minds
+  overflow, and the 8 compresses to a single atom).
+- **Faithful to Toby's lore.** Simon stays the better *raw storm* (faster top speed, stronger lightning) but
+  ToddLLM wins on *structure* — system control, containment, domain, orb authority, and turning Simon into a
+  power source. Mac Frame is the frequent move; Endless Chaos is the "you already lost" finisher.
+- **Still additive.** An ENDLESS CHAOS meter resolves with "★ CLIMBED OUT OF THE 8 ★" when you keep
+  climbing; nothing was deleted and your run banks. New `endlesschaos` screenshot scene added to the capture
+  tool.
+- **Title screen + canon line caught up.** The subtitle now reads "Lore 30 · Endless Chaos (the 8 shrinks to
+  an atom)" and the lore blurb gained the power-grid / Mac Frame / the-8 lines.
+
 ## 2026-06-24 — THE CENTER IS MINE: ToddLLM 001 goes Full Charged and ends it (Lore 30 cont.)
 
 Based on Toby's June 24 lore (Lore 30, the message after THE ERASED TIMELINE): *"Only ToddLLM and Simon can

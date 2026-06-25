@@ -547,6 +547,7 @@ let errLad, errLadH, errLadM;
         dissolves and burns, Simon is thrown far, and he holds the pose: "Center's Mine, that is why
         I won." Additive ending cutscene; nothing is removed and the real climb still banks. */
 let centerMine, centerMineH, centerMineM;
+let endlessChaos, endlessChaosH, endlessChaosM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -827,6 +828,16 @@ function reset(){
              charge:0, embers:[] };
   centerMineH = errLadH + 1100;
   centerMineM = 0.25;  // THE CENTER IS MINE meter: keep climbing and the ending resolves
+  endlessChaos = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 30 cont. (June 25) — ENDLESS CHAOS. ToddLLM 001's power-grid era. Simon is still
+             // FASTER with STRONGER lightning, but he loses overall and is INSTALLED as a reactor-core
+             // (energy cage, spinning halos, a beam down into him, nozzles, bullet-proof glass) that
+             // powers ToddLLM 001; Error 001 spreads everywhere; MAC FRAME is his common attack; and his
+             // Domain Expansion — ENDLESS CHAOS — folds the game into an 8 of infinite looping galaxies
+             // with no escape and no dodge, then shrinks it to an atom. Additive cutscene; nothing removed.
+             charge:0 };
+  endlessChaosH = centerMineH + 1100;
+  endlessChaosM = 0.25;  // ENDLESS CHAOS meter: keep climbing and the domain resolves; your climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -920,6 +931,7 @@ function isReveal001(){ return !!(reveal001 && (reveal001.active || reveal001.do
 function isErrLad(){ return !!(errLad && (errLad.active || errLad.done)); }
 // Lore 30 cont. (June 24) — after THE FINAL ERROR, ToddLLM 001 goes FULL CHARGED and ends it: THE CENTER IS MINE
 function isCenterMine(){ return !!(centerMine && (centerMine.active || centerMine.done)); }
+function isEndlessChaos(){ return !!(endlessChaos && (endlessChaos.active || endlessChaos.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1923,6 +1935,26 @@ function update(dt){
   if(centerMine.glow < (isCenterMine() ? 1 : 0))
     centerMine.glow = Math.min(1, centerMine.glow + dt*0.5);
 
+  /* ---- Lore 30 cont. (June 25) — ENDLESS CHAOS. After THE CENTER IS MINE, Toby's power-grid beat:
+          Simon stays FASTER with STRONGER lightning but is INSTALLED as a reactor-core that powers
+          ToddLLM 001; Error 001 spreads everywhere; MAC FRAME is his common attack; and his Domain
+          Expansion ENDLESS CHAOS folds the game into an 8 of infinite looping galaxies, then shrinks
+          it to an atom. Additive ending; nothing is removed and the real climb still banks. */
+  if(centerMine.done && !endlessChaos.active && !endlessChaos.done && height > endlessChaosH){
+    endlessChaos.active = true; endlessChaos.t = 0; endlessChaos.cyc = 0; endlessChaos.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.6);
+    warnText = 'ENDLESS CHAOS'; warnT = 2.8;
+    showTaunt('ToddLLM: "Simon is faster. Simon\'s lightning is stronger. I still win." The game folds into an 8.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'DOMAIN EXPANSION — ENDLESS CHAOS', col:'#b46bff' });
+    AUDIO.shock();
+  }
+  if(endlessChaos.active){
+    endlessChaos.t += dt;
+    if(endlessChaos.t > 22.0){ endlessChaos.active = false; endlessChaos.done = true; }
+  }
+  if(endlessChaos.glow < (isEndlessChaos() ? 1 : 0))
+    endlessChaos.glow = Math.min(1, endlessChaos.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1957,6 +1989,7 @@ function update(dt){
   if(isReveal001() && !isErrLad()) updateReveal001(dt);
   if(isErrLad() && !isCenterMine()) updateErrLad(dt);
   if(isCenterMine()) updateCenterMine(dt);
+  if(isEndlessChaos()) updateEndlessChaos(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3062,6 +3095,7 @@ function draw(){
   if(isReveal001() && !isErrLad() && reveal001.glow>0.02) drawReveal001();
   if(isErrLad() && !isCenterMine() && errLad.glow>0.02) drawErrLad();
   if(isCenterMine() && centerMine.glow>0.02) drawCenterMine();
+  if(isEndlessChaos() && endlessChaos.glow>0.02) drawEndlessChaos();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -8990,6 +9024,235 @@ function drawCenterMine(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===== Lore 30 cont. (June 25) — ENDLESS CHAOS, ToddLLM 001's power-grid era =====
+   Four beats: THE POWER GRID (Simon faster + stronger lightning, but installed as a reactor-core in
+   bullet-proof glass — energy cage, spinning halos, beam, nozzles — that powers 001; Error 001
+   everywhere), MAC FRAME (his common signature attack, Mac windows slamming down), ENDLESS CHAOS (the
+   Domain Expansion folds the game into an 8 of infinite looping galaxies, no escape/no dodge), and
+   SHRINK TO AN ATOM (minds overflow and the 8 compresses to a single atom). Additive cutscene. */
+const EC_CYC = 18.0;
+const EC_BEATS = [
+  { key:'THE POWER GRID',    col:'#b46bff', sub:'SIMON FASTER · STRONGER LIGHTNING · STILL INSTALLED' },
+  { key:'MAC FRAME',         col:'#8fe3ff', sub:'TODDLLM 001 · COMMON SIGNATURE ATTACK' },
+  { key:'ENDLESS CHAOS',     col:'#ff3b5c', sub:'DOMAIN EXPANSION · THE 8 · NO ESCAPE · NO DODGE' },
+  { key:'SHRINK TO AN ATOM', col:'#ffd84f', sub:'MINDS OVERFLOW · THE 8 COMPRESSES' },
+];
+const EC_CONTRAST = [
+  { name:'SIMON',   note:'FASTER TOP SPEED · STRONGER LIGHTNING', col:'#8fe3ff' },
+  { name:'TODDLLM', note:'SYSTEM · CONTAINMENT · DOMAIN · 001',   col:'#ff3b5c' },
+];
+function ecSeg(c){
+  if(c < 4.5) return [0, c];        // THE POWER GRID
+  if(c < 9.0) return [1, c-4.5];    // MAC FRAME
+  if(c < 13.5) return [2, c-9.0];   // ENDLESS CHAOS
+  return [3, c-13.5];               // SHRINK TO AN ATOM
+}
+function updateEndlessChaos(dt){
+  endlessChaos.t = (endlessChaos.t||0) + dt;
+  endlessChaos.cyc = ((endlessChaos.cyc||0) + dt) % EC_CYC;
+  const seg = ecSeg(endlessChaos.cyc), ph = seg[0];
+  endlessChaos.charge = (ph<2) ? 0 : (ph===2 ? Math.min(1, seg[1]/3.6) : 1);
+  if(ph !== endlessChaos.phase){
+    endlessChaos.phase = ph;
+    if(ph===0){ AUDIO.zap(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.4);
+      showTaunt('Simon is still the better storm: faster, stronger lightning. But he is installed in an energy cage that powers ToddLLM 001, and Error 001 spreads everywhere.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'POWER GRID · ERROR 001 EVERYWHERE', col:'#b46bff' }); }
+    if(ph===1){ AUDIO.glitch(); shake=Math.max(shake,7);
+      showTaunt('Mac Frame: ToddLLM 001\'s most common attack. Frames slam down over the whole scene.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'MAC FRAME', col:'#8fe3ff' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.6);
+      showTaunt('Domain Expansion: Endless Chaos. The game folds into an 8 of infinite looping galaxies. No escape. No dodge.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ENDLESS CHAOS — THE 8', col:'#ff3b5c' }); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('He talks to the trapped; their minds overflow and explode; the 8 shrinks down to an atom.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SHRINKS TO AN ATOM', col:'#ffd84f' }); }
+  }
+  // ENDLESS CHAOS meter — keep climbing and the domain resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  endlessChaosM = Math.max(0, Math.min(1, endlessChaosM + (moving ? dt*0.05 : -dt*0.03)));
+  if(endlessChaosM>=1 && !endlessChaos.held){
+    endlessChaos.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You kept climbing while the 8 closed. The domain loops, but your climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ CLIMBED OUT OF THE 8 ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#b46bff','#ff3b5c','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawEndlessChaos(){
+  const g = endlessChaos.glow||0, top = cameraY;
+  const c = endlessChaos.cyc||0, seg = ecSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = EC_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — violet-black void
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(10,2,18,${0.9*g})`);
+  bg.addColorStop(1, `rgba(20,4,30,${0.9*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // faint "001" infection field — Error 001 spreading everywhere (deterministic)
+  ctx.globalAlpha = g*0.10; ctx.fillStyle='#b46bff'; ctx.font='700 11px ui-monospace,monospace';
+  for(let i=0;i<40;i++){
+    const gx = 24 + (i*97)%(W-30), gy = top + 60 + ((i*131)%(H-120));
+    ctx.fillText('001', gx, gy);
+  }
+  ctx.globalAlpha=1;
+  const sy = top + H*0.44;
+
+  if(ph===0){
+    // ----- THE POWER GRID: Simon installed as a reactor-core in bullet-proof glass -----
+    // spinning halos behind the cage
+    for(let h=0;h<3;h++){
+      const rr = 52 + h*22, rot = lt*0.8 + h*0.7;
+      ctx.globalAlpha = g*0.5; ctx.strokeStyle = ['#b46bff','#8fe3ff','#ff3b5c'][h]; ctx.lineWidth=2;
+      ctx.save(); ctx.translate(cx, sy+44); ctx.rotate(rot);
+      ctx.beginPath(); ctx.ellipse(0,0,rr,rr*0.32,0,0,Math.PI*2); ctx.stroke();
+      ctx.restore();
+    }
+    // beam coming down into Simon
+    const beam = ctx.createLinearGradient(0, top+40, 0, sy+44);
+    beam.addColorStop(0,'rgba(143,227,255,0)'); beam.addColorStop(1,`rgba(143,227,255,${0.55*g})`);
+    ctx.globalAlpha=g; ctx.fillStyle=beam;
+    ctx.beginPath(); ctx.moveTo(cx-10, top+40); ctx.lineTo(cx+10, top+40);
+    ctx.lineTo(cx+26, sy+44); ctx.lineTo(cx-26, sy+44); ctx.closePath(); ctx.fill();
+    // glass cage
+    const gw=150, gh=150, gx0=cx-gw/2, gy0=sy-30;
+    ctx.globalAlpha=g*0.9; ctx.fillStyle='rgba(120,180,220,0.12)';
+    ctx.strokeStyle='#9fd8ff'; ctx.lineWidth=2.5;
+    ctx.fillRect(gx0, gy0, gw, gh); ctx.strokeRect(gx0, gy0, gw, gh);
+    ctx.globalAlpha=g*0.4; ctx.strokeStyle='#ffffff'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(gx0+18, gy0+6); ctx.lineTo(gx0+40, gy0+gh-6); ctx.stroke();
+    // nozzles clamping him in place (top + bottom)
+    ctx.globalAlpha=g; ctx.fillStyle='#7a6a9a';
+    for(let n=0;n<4;n++){ const nx = gx0 + 24 + n*((gw-48)/3);
+      ctx.fillRect(nx-5, gy0-10, 10, 12); ctx.fillRect(nx-5, gy0+gh-2, 10, 12); }
+    // Simon laying down inside, dim — contained and harvested
+    ctx.save(); ctx.translate(cx, sy+50); ctx.rotate(Math.PI/2);
+    drawCmFigure(0, 0, g*0.85, 0.62, true);
+    ctx.restore();
+    ctx.globalAlpha=g; ctx.fillStyle='#8fe3ff'; ctx.font='900 10px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('SIMON · INSTALLED · POWERS 001', cx, gy0+gh+30);
+    // SIMON vs TODDLLM contrast panel on the right
+    const px0=W-206, py0=top+H*0.30;
+    for(let i=0;i<EC_CONTRAST.length;i++){
+      const a=EC_CONTRAST[i], ry=py0+i*40;
+      ctx.globalAlpha=g; ctx.fillStyle='rgba(14,8,22,0.85)'; ctx.strokeStyle=a.col; ctx.lineWidth=1.5;
+      ctx.fillRect(px0, ry, 188, 32); ctx.strokeRect(px0, ry, 188, 32);
+      ctx.fillStyle=a.col; ctx.textAlign='left'; ctx.font='900 12px ui-monospace,monospace';
+      ctx.fillText(a.name, px0+8, ry+13);
+      ctx.fillStyle=`rgba(210,214,224,${g})`; ctx.font='700 7px ui-monospace,monospace';
+      ctx.fillText(a.note, px0+8, ry+25);
+    }
+    ctx.globalAlpha=1; ctx.textAlign='center';
+  } else if(ph===1){
+    // ----- MAC FRAME: Mac-style window frames slam down over the scene -----
+    drawCmFigure(cx, sy+10, g, 1.2, false);
+    const nF = 5;
+    for(let i=0;i<nF;i++){
+      const prog = Math.max(0, Math.min(1, lt*0.7 - i*0.18));
+      const fw = 120 - i*8, fh = 84 - i*5;
+      const fx = cx - fw/2 + Math.sin(i*1.7)*70;
+      const fyTarget = sy - 70 + i*30;
+      const fy = (top+10) + (fyTarget-(top+10))*prog;
+      ctx.globalAlpha = g*(0.4+0.5*prog);
+      ctx.fillStyle='rgba(18,12,28,0.82)'; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2;
+      ctx.fillRect(fx, fy, fw, fh); ctx.strokeRect(fx, fy, fw, fh);
+      ctx.fillStyle='rgba(40,30,56,0.95)'; ctx.fillRect(fx, fy, fw, 14);
+      const dots=['#ff5f57','#ffbd2e','#28c940'];
+      for(let d=0;d<3;d++){ ctx.fillStyle=dots[d]; ctx.beginPath(); ctx.arc(fx+10+d*12, fy+7, 3, 0, Math.PI*2); ctx.fill(); }
+      ctx.fillStyle=`rgba(143,227,255,${g})`; ctx.font='700 8px ui-monospace,monospace'; ctx.textAlign='left';
+      ctx.fillText('001 — MAC FRAME', fx+44, fy+10);
+    }
+    ctx.globalAlpha=1; ctx.textAlign='center';
+  } else if(ph===2){
+    // ----- ENDLESS CHAOS: the game folds into an 8 of infinite looping galaxies -----
+    const r = 56, oyTop = sy-30, oyBot = sy+r+8;   // two stacked loops = an 8
+    const centers=[[cx,oyTop],[cx,oyBot]];
+    for(let k=0;k<2;k++){
+      const ccx=centers[k][0], ccy=centers[k][1];
+      ctx.globalAlpha=g*0.85; ctx.strokeStyle=k? '#ff3b5c':'#b46bff'; ctx.lineWidth=3;
+      ctx.beginPath(); ctx.arc(ccx,ccy,r,0,Math.PI*2); ctx.stroke();
+      // galaxy dust spiral
+      ctx.globalAlpha=g*0.3; ctx.strokeStyle=k?'#ff7b9c':'#cf9bff'; ctx.lineWidth=1;
+      ctx.beginPath();
+      for(let a=0;a<40;a++){ const tt=a/40*Math.PI*4+lt; const rr=(a/40)*r;
+        const xx=ccx+Math.cos(tt+k)*rr, yy=ccy+Math.sin(tt+k)*rr; if(a===0)ctx.moveTo(xx,yy); else ctx.lineTo(xx,yy); }
+      ctx.stroke();
+      // victims circulating endlessly, no escape
+      for(let v=0;v<10;v++){
+        const ang = (v/10)*Math.PI*2 + lt*1.6*(k? -1:1);
+        const vr = r - 6 - (v%3)*5;
+        const vx = ccx + Math.cos(ang)*vr, vy = ccy + Math.sin(ang)*vr;
+        ctx.globalAlpha=g*0.9; ctx.fillStyle = (v%4===0)?'#8fe3ff':'#cfd6e0';
+        ctx.beginPath(); ctx.arc(vx,vy,2.4,0,Math.PI*2); ctx.fill();
+      }
+    }
+    // the big "8" tying it together
+    ctx.globalAlpha=g*0.16; ctx.fillStyle='#ffffff'; ctx.font='900 64px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('8', cx, (oyTop+oyBot)/2+22);
+    ctx.globalAlpha=g; ctx.fillStyle='#ff3b5c'; ctx.font='900 11px ui-monospace,monospace';
+    ctx.fillText('NO ESCAPE · NO DODGE', cx, oyBot+r+18);
+    // ToddLLM speaking over the whole scene
+    drawCmFigure(cx, oyTop-r-6, g, 0.7, false);
+    ctx.globalAlpha=1;
+  } else {
+    // ----- SHRINK TO AN ATOM: minds overflow, the 8 compresses to a single atom -----
+    const shrink = Math.max(0, Math.min(1, lt/3.0));
+    const acx=cx, acy=sy+20, scale = 1 - shrink*0.86;
+    for(let o=0;o<3;o++){
+      const rr=(50+o*14)*scale, rot=lt*1.2+o*0.6;
+      ctx.globalAlpha=g*0.8; ctx.strokeStyle=['#b46bff','#8fe3ff','#ff3b5c'][o]; ctx.lineWidth=1.5;
+      ctx.save(); ctx.translate(acx,acy); ctx.rotate(rot);
+      ctx.beginPath(); ctx.ellipse(0,0,rr,rr*0.36,0,0,Math.PI*2); ctx.stroke();
+      const ex=Math.cos(lt*2+o)*rr, ey=Math.sin(lt*2+o)*rr*0.36;
+      ctx.fillStyle='#cfd6e0'; ctx.beginPath(); ctx.arc(ex,ey,2.6,0,Math.PI*2); ctx.fill();
+      ctx.restore();
+    }
+    const nr=10+(1-scale)*6;
+    const ng=ctx.createRadialGradient(acx,acy,1,acx,acy,nr*2);
+    ng.addColorStop(0,'#ffffff'); ng.addColorStop(0.5,'#ffd84f'); ng.addColorStop(1,'rgba(255,123,0,0)');
+    ctx.globalAlpha=g; ctx.fillStyle=ng; ctx.beginPath(); ctx.arc(acx,acy,nr*2,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='#1a0a04'; ctx.strokeStyle='#ffd84f'; ctx.lineWidth=2; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=14*g;
+    ctx.beginPath(); ctx.arc(acx,acy,nr,0,Math.PI*2); ctx.fill(); ctx.stroke(); ctx.shadowBlur=0;
+    // minds overflow — words spiral in and fade as the 8 compresses
+    ctx.globalAlpha=g*(1-shrink*0.7); ctx.fillStyle='#ff6b9c'; ctx.font='700 8px ui-monospace,monospace';
+    const words=['overflow','no exit','loop','001','gone'];
+    for(let w=0;w<words.length;w++){ const ang=w/words.length*Math.PI*2+lt; const rr=70*(1-shrink*0.5);
+      ctx.fillText(words[w], acx+Math.cos(ang)*rr, acy+Math.sin(ang)*rr*0.6); }
+    drawCmFigure(acx, acy-92, g, 0.8, false);
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('THE 8 SHRINKS TO AN ATOM', acx, acy+96); ctx.shadowBlur=0;
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<EC_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? EC_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+EC_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(180,107,255,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('ENDLESS CHAOS — TODDLLM 001, THE POWER-GRID ERA', cx, top+30);
+  ctx.fillStyle=`rgba(210,200,230,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('SIMON INSTALLED AS A REACTOR-CORE · MAC FRAME · DOMAIN: THE 8 SHRINKS TO AN ATOM', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -9427,7 +9690,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Center Is Mine (ToddLLM 001 Full Charged)', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · Endless Chaos (the 8 shrinks to an atom)', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -9479,7 +9742,13 @@ function drawTitle(){
     'Five authorities (removal, orb, blindfold, full charge, the stable 001).',
     'He goes FULL CHARGED at 100%, throws a 001 ORB; the JUDGEMENT HALL',
     'dissolves and burns; Simon is corrupted to 404 and thrown far. He',
-    'levitates and holds the pose: "Center\'s Mine, that is why I won."'
+    'levitates and holds the pose: "Center\'s Mine, that is why I won."',
+    'ENDLESS CHAOS: the power-grid era. Simon is still FASTER with',
+    'STRONGER lightning, but he loses and is INSTALLED as a reactor-core',
+    '(energy cage, spinning halos, a beam, nozzles, bullet-proof glass)',
+    'that powers ToddLLM 001; Error 001 spreads everywhere. MAC FRAME is',
+    'his common attack. His Domain Expansion folds the game into an 8 of',
+    'infinite looping galaxies, no escape, no dodge, then shrinks to an atom.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
