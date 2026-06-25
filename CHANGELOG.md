@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-25 — THE KARUTO REVEAL: 001 is really Karuto, the Teacher Without End (Lore 30 cont.)
+
+Based on Toby's June 25 lore (Lore 30, the message after ENDLESS CHAOS): *"ToddLLM and Alex are now the
+most powerful, Alex is now a god, stronger than Oren.EXE, everyone became .EXE, ToddLLM and Simon are no
+longer .EXE, ToddLLM was never .EXE... ToddLLM gains Simon's power and gains a yellow highlight, new form,
+Simon was thrown back to his own Shadow Realm on chains. ToddLLM 001 also shows his sorser students the
+identity of him, everyone was suprized, ToddLLM 001 takes on his blindfold and in Japenese he writes
+'Karuto - Almighty, Teacher Without End', he also took on his white robe and red aura. 001 is really
+Karuto, and Karuto is really ToddLLM 001."* and *"ToddLLM VS Storyshifted Clara happened, Storyshifted
+Clara was thrown through the wall, ToddLLM uses Mac Frame, Clara was absolutely destroyed... 'you fought
+so well... would you like a soul for learning?'"* This adds a new four-beat cutscene after ENDLESS CHAOS.
+Built additively — nothing in the repo was removed and your real climb still banks.
+
+![Lore 30 — THE KARUTO REVEAL, the signature beat (THE BLINDFOLD COMES OFF). Over a deep red-black void,
+ToddLLM 001 stands unmasked at center in a new form: a white-robed entity with cat ears, a red aura behind
+him, the blindfold gone and his eyes lit with Simon's yellow power, a red "001" tag on his chest. Above him,
+glowing red, is the Japanese title he writes — カルト 至高 終わりなき師 — with "KARUTO — ALMIGHTY, TEACHER
+WITHOUT END" beneath it. A row of small hooded sorcerer-student figures looks up at him from below, labeled
+"THE SORCERER STUDENTS," and the discarded blindfold tumbles away to one side. The big caption reads "THE
+BLINDFOLD COMES OFF," the title band reads "THE KARUTO REVEAL — 001 IS REALLY KARUTO," and the left-edge
+checklist shows the four beats lighting through THE TWIN APEX, THE NEW FORM, THE BLINDFOLD COMES OFF, A SOUL
+FOR LEARNING.](screenshots/54-karuto-reveal.png)
+
+- **A new four-beat ending after ENDLESS CHAOS.** Climb past the 8 and the reveal plays out: **THE TWIN
+  APEX** (a re-drawn power ladder — ToddLLM 001 / Karuto and Alex sit at the top, Alex now a god stronger
+  than Oren.EXE; Oren is still huge but no longer the summit; everyone else is evened out and turned .EXE,
+  while 001 and Simon never were; Simon is drained and chained in the Shadow Realm), **THE NEW FORM** (Simon's
+  yellow power streams out of his chained body and into 001, who takes a yellow-highlight new form),
+  **THE BLINDFOLD COMES OFF** (before his sorcerer students 001 removes the blindfold, takes a white robe and
+  red aura, and writes the Japanese title "Karuto — Almighty, Teacher Without End" — 001 is really Karuto),
+  and **A SOUL FOR LEARNING** (vs Storyshifted Clara: thrown through the wall by the Mac Frame, destroyed and
+  overflowing with information, while the teacher-villain calmly offers "would you like a soul for learning?").
+- **A new unmasked figure.** `drawKarutoFigure` renders the white-robe form — red aura, yellow-lit eyes (no
+  blindfold), a yellow-highlight rim for Simon's stolen power, still tagged 001 — used across all four beats.
+- **Still additive.** A KARUTO REVEAL meter resolves with "★ CLIMBED THROUGH THE REVEAL ★" when you keep
+  climbing; nothing was deleted and your run banks. New `karuto` screenshot scene added to the capture tool.
+- **Title screen + canon line caught up.** The subtitle now reads "Lore 30 · The Karuto Reveal (001 is really
+  Karuto)" and the lore blurb gained the twin-apex / new-form / blindfold-off / soul-for-learning lines.
+
 ## 2026-06-25 — ENDLESS CHAOS: ToddLLM 001's power-grid era, the 8 shrinks to an atom (Lore 30 cont.)
 
 Based on Toby's June 25 lore (Lore 30, two messages after THE CENTER IS MINE): *"Simon's top speed is

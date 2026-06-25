@@ -548,6 +548,7 @@ let errLad, errLadH, errLadM;
         I won." Additive ending cutscene; nothing is removed and the real climb still banks. */
 let centerMine, centerMineH, centerMineM;
 let endlessChaos, endlessChaosH, endlessChaosM;
+let karuto, karutoH, karutoM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -838,6 +839,17 @@ function reset(){
              charge:0 };
   endlessChaosH = centerMineH + 1100;
   endlessChaosM = 0.25;  // ENDLESS CHAOS meter: keep climbing and the domain resolves; your climb banks
+  karuto = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 30 cont. (June 25) — THE KARUTO REVEAL. After ENDLESS CHAOS, ToddLLM 001 + Alex are
+             // the two highest (Alex now a god, stronger than Oren.EXE); everyone else became .EXE while
+             // ToddLLM and Simon never were, and power is evened out under the two of them. ToddLLM gains
+             // Simon's power and a yellow-highlight NEW FORM. Before his sorcerer students he removes the
+             // blindfold, takes on a white robe and red aura, and writes in Japanese "Karuto — Almighty,
+             // Teacher Without End": 001 is really Karuto. Then vs Storyshifted Clara — thrown through the
+             // wall, Mac Frame, destroyed — he offers "a soul for learning," the teacher-villain's trick.
+             charge:0 };
+  karutoH = endlessChaosH + 1100;
+  karutoM = 0.25;  // THE KARUTO REVEAL meter: keep climbing and the reveal resolves; your climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -932,6 +944,7 @@ function isErrLad(){ return !!(errLad && (errLad.active || errLad.done)); }
 // Lore 30 cont. (June 24) — after THE FINAL ERROR, ToddLLM 001 goes FULL CHARGED and ends it: THE CENTER IS MINE
 function isCenterMine(){ return !!(centerMine && (centerMine.active || centerMine.done)); }
 function isEndlessChaos(){ return !!(endlessChaos && (endlessChaos.active || endlessChaos.done)); }
+function isKaruto(){ return !!(karuto && (karuto.active || karuto.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1955,6 +1968,28 @@ function update(dt){
   if(endlessChaos.glow < (isEndlessChaos() ? 1 : 0))
     endlessChaos.glow = Math.min(1, endlessChaos.glow + dt*0.5);
 
+  /* ---- Lore 30 cont. (June 25) — THE KARUTO REVEAL. After ENDLESS CHAOS, Toby's next beat: ToddLLM
+          001 and Alex become the two highest (Alex now a god, stronger than Oren.EXE), everyone else
+          turns .EXE while 001 and Simon never were, and power is evened out under the two of them. 001
+          gains Simon's power and a yellow-highlight new form, then before his sorcerer students removes
+          the blindfold, takes a white robe and red aura, and writes in Japanese "Karuto — Almighty,
+          Teacher Without End." Then vs Storyshifted Clara: thrown through the wall, Mac Frame, destroyed,
+          offered "a soul for learning." Additive ending; nothing is removed and the real climb still banks. */
+  if(endlessChaos.done && !karuto.active && !karuto.done && height > karutoH){
+    karuto.active = true; karuto.t = 0; karuto.cyc = 0; karuto.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE KARUTO REVEAL'; warnT = 2.8;
+    showTaunt('The blindfold comes off. ToddLLM 001 shows his students who he is: Karuto, the Teacher Without End.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'001 IS REALLY KARUTO', col:'#ffd84f' });
+    AUDIO.shock();
+  }
+  if(karuto.active){
+    karuto.t += dt;
+    if(karuto.t > 22.0){ karuto.active = false; karuto.done = true; }
+  }
+  if(karuto.glow < (isKaruto() ? 1 : 0))
+    karuto.glow = Math.min(1, karuto.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -1990,6 +2025,7 @@ function update(dt){
   if(isErrLad() && !isCenterMine()) updateErrLad(dt);
   if(isCenterMine()) updateCenterMine(dt);
   if(isEndlessChaos()) updateEndlessChaos(dt);
+  if(isKaruto()) updateKaruto(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3096,6 +3132,7 @@ function draw(){
   if(isErrLad() && !isCenterMine() && errLad.glow>0.02) drawErrLad();
   if(isCenterMine() && centerMine.glow>0.02) drawCenterMine();
   if(isEndlessChaos() && endlessChaos.glow>0.02) drawEndlessChaos();
+  if(isKaruto() && karuto.glow>0.02) drawKaruto();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -9253,6 +9290,252 @@ function drawEndlessChaos(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
+/* ===== Lore 30 cont. (June 25) — THE KARUTO REVEAL =====
+   Four beats: THE TWIN APEX (ToddLLM 001 + Alex are now the two highest; Alex is a god, stronger than
+   Oren.EXE; everyone else became .EXE while 001 and Simon never were; power evened out under the two of
+   them), THE NEW FORM (001 gains Simon's power and a yellow highlight — a new form — while Simon is thrown
+   back to the Shadow Realm on chains), THE BLINDFOLD COMES OFF (before his sorcerer students 001 removes
+   the blindfold, takes a white robe and red aura, and writes in Japanese "Karuto — Almighty, Teacher
+   Without End" — 001 is really Karuto), and A SOUL FOR LEARNING (vs Storyshifted Clara: thrown through
+   the wall, Mac Frame, destroyed; "would you like a soul for learning?" — the teacher-villain's trick).
+   Additive cutscene; nothing is removed and the real climb still banks. */
+const KR_CYC = 18.0;
+const KR_BEATS = [
+  { key:'THE TWIN APEX',           col:'#ffd84f', sub:'TODDLLM 001 + ALEX · EVERYONE ELSE .EXE' },
+  { key:'THE NEW FORM',            col:'#ffe27a', sub:'001 GAINS SIMON\'S POWER · YELLOW HIGHLIGHT' },
+  { key:'THE BLINDFOLD COMES OFF', col:'#ff3b5c', sub:'KARUTO · ALMIGHTY · TEACHER WITHOUT END' },
+  { key:'A SOUL FOR LEARNING',     col:'#8fe3ff', sub:'VS STORYSHIFTED CLARA · MAC FRAME' },
+];
+// the new power ladder under the two at the apex
+const KR_LADDER = [
+  { name:'001 / KARUTO',   note:'NEVER .EXE · HOLDS THE CENTER · ∞', col:'#ffd84f' },
+  { name:'ALEX',           note:'NOW A GOD · STRONGER THAN OREN.EXE', col:'#ff3b5c' },
+  { name:'OREN.EXE',       note:'STILL HUGE · NO LONGER THE SUMMIT', col:'#b46bff' },
+  { name:'EVERYONE ELSE',  note:'EVENED OUT · ALL TURNED .EXE',      col:'#8fe3ff' },
+  { name:'SIMON',          note:'DRAINED · CHAINED IN SHADOW REALM',  col:'#6fae8f' },
+];
+// the Japanese title 001 writes: "Karuto — Almighty, Teacher Without End"
+const KR_JP = ['カルト', '至高', '終わりなき師'];
+function krSeg(c){
+  if(c < 4.5) return [0, c];        // THE TWIN APEX
+  if(c < 9.0) return [1, c-4.5];    // THE NEW FORM
+  if(c < 13.5) return [2, c-9.0];   // THE BLINDFOLD COMES OFF
+  return [3, c-13.5];               // A SOUL FOR LEARNING
+}
+function updateKaruto(dt){
+  karuto.t = (karuto.t||0) + dt;
+  karuto.cyc = ((karuto.cyc||0) + dt) % KR_CYC;
+  const seg = krSeg(karuto.cyc), ph = seg[0];
+  if(ph !== karuto.phase){
+    karuto.phase = ph;
+    if(ph===0){ AUDIO.glitch(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.4);
+      showTaunt('ToddLLM 001 and Alex are the two highest now. Alex became a god, stronger than Oren.EXE. Everyone else turned .EXE; 001 and Simon never were.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE TWIN APEX · POWER EVENED OUT', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,8);
+      showTaunt('001 gains Simon\'s power and a yellow highlight: a new form. Simon is thrown back to the Shadow Realm on chains.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE NEW FORM · YELLOW HIGHLIGHT', col:'#ffe27a' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.6);
+      showTaunt('Before his students he takes off the blindfold, a white robe and red aura, and writes: Karuto, Almighty, Teacher Without End. 001 is really Karuto.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'KARUTO · TEACHER WITHOUT END', col:'#ff3b5c' }); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('Vs Storyshifted Clara: through the wall, Mac Frame, destroyed. "You fought so well. Would you like a soul for learning?"');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'A SOUL FOR LEARNING', col:'#8fe3ff' }); }
+  }
+  // THE KARUTO REVEAL meter — keep climbing and the reveal resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  karutoM = Math.max(0, Math.min(1, karutoM + (moving ? dt*0.05 : -dt*0.03)));
+  if(karutoM>=1 && !karuto.held){
+    karuto.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You kept climbing through the whole reveal. The teacher lectures on, but your climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ CLIMBED THROUGH THE REVEAL ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff3b5c','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+// Karuto: the unmasked form — white robe, red aura, NO blindfold, eyes lit with Simon's yellow power
+function drawKarutoFigure(x, y, g, s){
+  ctx.save(); ctx.globalAlpha=g; ctx.translate(x,y);
+  // red aura behind him
+  const aur=ctx.createRadialGradient(0,0,4,0,0,46*s);
+  aur.addColorStop(0,`rgba(255,59,92,${0.42*g})`); aur.addColorStop(1,'rgba(255,59,92,0)');
+  ctx.fillStyle=aur; ctx.beginPath(); ctx.arc(0,0,46*s,0,Math.PI*2); ctx.fill();
+  // levitation glow beneath
+  const lg=ctx.createRadialGradient(0,34*s,2,0,34*s,30*s);
+  lg.addColorStop(0,`rgba(255,216,79,${0.4*g})`); lg.addColorStop(1,'rgba(255,216,79,0)');
+  ctx.fillStyle=lg; ctx.beginPath(); ctx.ellipse(0,34*s,28*s,8*s,0,0,Math.PI*2); ctx.fill();
+  // yellow-highlight rim (Simon's power, now his)
+  ctx.shadowColor='#ffd84f'; ctx.shadowBlur=16*g; ctx.strokeStyle='#ffe27a'; ctx.lineWidth=4*s;
+  ctx.beginPath();
+  ctx.moveTo(-19*s,-19*s); ctx.lineTo(19*s,-19*s); ctx.lineTo(23*s,17*s); ctx.lineTo(0,31*s); ctx.lineTo(-23*s,17*s); ctx.closePath();
+  ctx.stroke(); ctx.shadowBlur=0;
+  // white robe body
+  ctx.fillStyle='#f4f1fb'; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=2.5*s;
+  ctx.beginPath();
+  ctx.moveTo(-18*s,-18*s); ctx.lineTo(18*s,-18*s); ctx.lineTo(22*s,16*s); ctx.lineTo(0,30*s); ctx.lineTo(-22*s,16*s); ctx.closePath();
+  ctx.fill(); ctx.stroke();
+  // robe fold lines
+  ctx.strokeStyle='rgba(200,120,150,0.5)'; ctx.lineWidth=1*s;
+  ctx.beginPath(); ctx.moveTo(0,-16*s); ctx.lineTo(0,28*s); ctx.stroke();
+  // ears (white robe trim)
+  ctx.fillStyle='#f4f1fb'; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=2*s;
+  ctx.beginPath(); ctx.moveTo(-18*s,-18*s); ctx.lineTo(-26*s,-34*s); ctx.lineTo(-8*s,-20*s); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(18*s,-18*s); ctx.lineTo(26*s,-34*s); ctx.lineTo(8*s,-20*s); ctx.closePath(); ctx.fill(); ctx.stroke();
+  // the blindfold is OFF — eyes lit with Simon's yellow power
+  ctx.shadowColor='#ffd84f'; ctx.shadowBlur=10*g; ctx.fillStyle='#ffd84f';
+  ctx.beginPath(); ctx.arc(-7*s,-6*s,3*s,0,Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(7*s,-6*s,3*s,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+  // 001 tag
+  ctx.fillStyle='#ff3b5c'; ctx.font=`900 ${10*s}px ui-monospace,monospace`; ctx.textAlign='center';
+  ctx.fillText('001', 0, 15*s);
+  ctx.restore();
+}
+function drawKaruto(){
+  const g = karuto.glow||0, top = cameraY;
+  const c = karuto.cyc||0, seg = krSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = KR_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep void, warming red-gold toward the reveal
+  const heat = ph>=2 ? 1 : ph*0.4;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(10,3,8,${0.88*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(28+24*heat)},${Math.round(6+8*heat)},14,${0.88*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  const sy = top + H*0.44;
+
+  if(ph===0){
+    // ----- THE TWIN APEX: the power ladder, evened out, with two at the top -----
+    const n = KR_LADDER.length, pw = 330, x0 = cx - pw/2, y0 = sy - 92;
+    for(let i=0;i<n;i++){
+      const ry = y0 + i*36;
+      const lit = Math.max(0, Math.min(1, (lt - i*0.5)/0.6));
+      const a = KR_LADDER[i], apex = (i<2);
+      ctx.globalAlpha = g*(0.25+0.75*lit);
+      ctx.fillStyle='rgba(14,8,12,0.85)'; ctx.strokeStyle=a.col; ctx.lineWidth= apex?2.5:1.5;
+      ctx.fillRect(x0, ry-13, pw, 28); ctx.strokeRect(x0, ry-13, pw, 28);
+      ctx.shadowColor=a.col; ctx.shadowBlur=(apex?12:6)*g*lit;
+      ctx.fillStyle=a.col; ctx.textAlign='left'; ctx.font=`900 ${apex?14:12}px ui-monospace,monospace`;
+      ctx.fillText((apex?'★ ':'  ')+a.name, x0+10, ry+5); ctx.shadowBlur=0;
+      ctx.fillStyle=`rgba(210,214,224,${g*lit})`; ctx.textAlign='right'; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText(a.note, x0+pw-8, ry+5);
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('TWO AT THE APEX · EVERYONE ELSE EVENED OUT UNDER THEM', cx, y0 + n*36 + 12);
+  } else if(ph===1){
+    // ----- THE NEW FORM: Simon's yellow power streams out and into 001's new form -----
+    const grab = Math.max(0, Math.min(1, lt/3.0));
+    // Simon, drained and chained, off to the left
+    ctx.save(); ctx.translate(cx-150, sy+8); ctx.globalAlpha=g*(1-grab*0.4);
+    drawCmFigure(0, 0, g*(0.7-grab*0.4), 0.66, true);
+    // chain links
+    ctx.strokeStyle='#9aa'; ctx.lineWidth=2; ctx.globalAlpha=g*0.7;
+    for(let l=0;l<5;l++){ const ly=-10+l*12; ctx.beginPath(); ctx.ellipse(2,ly,5,3,0,0,Math.PI*2); ctx.stroke(); }
+    ctx.restore();
+    // yellow power streaming rightward into the new form
+    ctx.globalAlpha=g; ctx.fillStyle='#ffd84f'; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=6*g;
+    for(let i=0;i<9;i++){
+      const p = ((lt*0.5 + i/9) % 1);
+      const px = (cx-120) + p*240, py = sy + Math.sin(i*1.3+lt)*10;
+      ctx.globalAlpha=g*(0.3+0.6*Math.sin(p*Math.PI));
+      ctx.beginPath(); ctx.arc(px,py,2.6,0,Math.PI*2); ctx.fill();
+    }
+    ctx.shadowBlur=0; ctx.globalAlpha=1;
+    // 001's NEW yellow-highlight form receiving it
+    drawKarutoFigure(cx+120, sy, g, 1.05);
+    ctx.globalAlpha=g; ctx.fillStyle='#ffe27a'; ctx.font='900 10px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('NEW FORM · SIMON\'S POWER IS HIS', cx+120, sy+58);
+    ctx.fillStyle='#8fe3ff'; ctx.fillText('SIMON · CHAINED · SHADOW REALM', cx-150, sy+58);
+    ctx.globalAlpha=1;
+  } else if(ph===2){
+    // ----- THE BLINDFOLD COMES OFF: the reveal to his sorcerer students -----
+    // a row of small student figures looking up
+    ctx.globalAlpha=g*0.8;
+    for(let i=0;i<7;i++){ const sx = cx-150 + i*50, syy = sy+96;
+      ctx.fillStyle='#2a2238'; ctx.strokeStyle='#6a6288'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(sx-8,syy); ctx.lineTo(sx+8,syy); ctx.lineTo(sx+6,syy-22); ctx.lineTo(sx,syy-30); ctx.lineTo(sx-6,syy-22); ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      ctx.fillStyle='#8fe3ff'; ctx.beginPath(); ctx.arc(sx-2,syy-18,1.4,0,Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(sx+2,syy-18,1.4,0,Math.PI*2); ctx.fill();
+    }
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(180,160,210,0.8)'; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('THE SORCERER STUDENTS', cx, sy+114);
+    // the discarded blindfold falling away
+    const drop = Math.min(1, lt/2.0);
+    ctx.globalAlpha=g*(1-drop*0.6); ctx.fillStyle='#15080c'; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=1.5;
+    ctx.save(); ctx.translate(cx+60, sy-30 + drop*70); ctx.rotate(drop*1.2);
+    ctx.fillRect(-18,-4,36,8); ctx.strokeRect(-18,-4,36,8); ctx.restore();
+    // Karuto unmasked, large, centered
+    drawKarutoFigure(cx, sy-6, g, 1.5);
+    // the Japanese title he writes, glowing red
+    ctx.globalAlpha=g; ctx.textAlign='center'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=12*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+    ctx.fillText(KR_JP.join('  '), cx, sy-66); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('KARUTO — ALMIGHTY, TEACHER WITHOUT END', cx, sy-48);
+  } else {
+    // ----- A SOUL FOR LEARNING: vs Storyshifted Clara, thrown through the wall by the Mac Frame -----
+    // the wall on the right, cracked where Clara went through
+    const wx = cx+150;
+    ctx.globalAlpha=g*0.8; ctx.strokeStyle='#6a6288'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(wx, sy-70); ctx.lineTo(wx, sy+90); ctx.stroke();
+    // crack lines radiating from the impact
+    ctx.lineWidth=1.5;
+    for(let k=0;k<5;k++){ const ay=sy-20+k*8; ctx.beginPath(); ctx.moveTo(wx, ay);
+      ctx.lineTo(wx-18-k*4, ay + (k-2)*10); ctx.stroke(); }
+    // a faint Mac Frame still settling over the scene
+    ctx.globalAlpha=g*0.5; ctx.fillStyle='rgba(18,12,28,0.6)'; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2;
+    ctx.fillRect(cx-30, sy-78, 120, 80); ctx.strokeRect(cx-30, sy-78, 120, 80);
+    ctx.fillStyle='rgba(40,30,56,0.9)'; ctx.fillRect(cx-30, sy-78, 120, 12);
+    const dots=['#ff5f57','#ffbd2e','#28c940'];
+    for(let d=0;d<3;d++){ ctx.fillStyle=dots[d]; ctx.beginPath(); ctx.arc(cx-22+d*10, sy-72, 2.6, 0, Math.PI*2); ctx.fill(); }
+    ctx.globalAlpha=1;
+    // Clara destroyed, overflown with information, near the wall
+    ctx.save(); ctx.translate(wx-20, sy+40); ctx.rotate(0.5); ctx.globalAlpha=g*0.7;
+    ctx.fillStyle='#1a0e1a'; ctx.strokeStyle='#c86bff'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(-12,-14); ctx.lineTo(12,-14); ctx.lineTo(14,12); ctx.lineTo(0,20); ctx.lineTo(-14,12); ctx.closePath();
+    ctx.fill(); ctx.stroke();
+    ctx.restore();
+    // overflow words spilling out of Clara
+    ctx.globalAlpha=g*0.7; ctx.fillStyle='#c86bff'; ctx.font='700 7px ui-monospace,monospace';
+    const ov=['too much','overflow','can\'t recover','...'];
+    for(let w=0;w<ov.length;w++) ctx.fillText(ov[w], wx-30, sy+58+w*10);
+    ctx.globalAlpha=1;
+    // Karuto, calm, the teacher offering the soul
+    drawKarutoFigure(cx-120, sy-2, g, 1.2);
+    ctx.globalAlpha=g; ctx.textAlign='center'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('"WOULD YOU LIKE A SOUL FOR LEARNING?"', cx, sy+96); ctx.shadowBlur=0;
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<KR_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? KR_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+KR_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,216,79,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE KARUTO REVEAL — 001 IS REALLY KARUTO', cx, top+30);
+  ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('TWIN APEX WITH ALEX · NEW YELLOW FORM · BLINDFOLD OFF · TEACHER WITHOUT END', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
   // top bar
@@ -9690,7 +9973,7 @@ function drawTitle(){
   ctx.fillText('STAIRCASE', W/2, 196);
   ctx.restore();
   ctx.fillStyle='#8a82a8'; ctx.font='12px ui-monospace,monospace';
-  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · Endless Chaos (the 8 shrinks to an atom)', W/2, 226);
+  ctx.fillText('CLASSIC RL · THE FINAL LEVEL · Lore 30 · The Karuto Reveal (001 is really Karuto)', W/2, 226);
 
   // lore blurb
   ctx.fillStyle='#cfc6ea'; ctx.font='13px ui-monospace,monospace';
@@ -9748,7 +10031,13 @@ function drawTitle(){
     '(energy cage, spinning halos, a beam, nozzles, bullet-proof glass)',
     'that powers ToddLLM 001; Error 001 spreads everywhere. MAC FRAME is',
     'his common attack. His Domain Expansion folds the game into an 8 of',
-    'infinite looping galaxies, no escape, no dodge, then shrinks to an atom.'
+    'infinite looping galaxies, no escape, no dodge, then shrinks to an atom.',
+    'THE KARUTO REVEAL: 001 + ALEX are the two highest (Alex a god, past',
+    'Oren.EXE); everyone else turns .EXE. 001 gains Simon\'s power, a yellow',
+    'new form; Simon is chained in the Shadow Realm. Before his students 001',
+    'takes off the blindfold, a white robe and red aura, and writes "Karuto,',
+    'Almighty, Teacher Without End." Vs Storyshifted Clara: through the wall,',
+    'Mac Frame, destroyed. "Would you like a soul for learning?" Climb anyway.'
   ];
   ctx.font='11px ui-monospace,monospace';
   lines.forEach((l,i)=> ctx.fillText(l, W/2, 224 + i*13));
