@@ -552,6 +552,7 @@ let karuto, karutoH, karutoM;
 let endOfClassics, endOfClassicsH, endOfClassicsM;
 let godWall, godWallH, godWallM;
 let phaseProg, phaseProgH, phaseProgM;
+let acumin, acuminH, acuminM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -892,6 +893,20 @@ function reset(){
              motes:[] };
   phaseProgH = godWallH + 1100;
   phaseProgM = 0.25;  // THE FOUR PHASES meter: keep climbing and the transformation resolves; your climb banks
+  acumin = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 34 (June 26, "Re: More stuff on ToddLLM 001") — ACUMINATION. Toby's "everyone fused
+             // together" answer to ToddLLM. Luigi Green, Mario.EXE, Alex, and Greg all come together; then
+             // every Sprunki merges too; all of it becomes one huge being called Acumination — all heroes,
+             // all merged mass, all pooled resistance, the cast's last-hope combined form. Acumination fights
+             // ToddLLM. Simon keeps making more and more sugars for ToddLLM during the battle, so he is still
+             // sustaining the opposite side. ToddLLM still beats Acumination EASILY, walks to the center of the
+             // board, and says "Center's Mine." The point of the beat: even the whole world fused into one
+             // being still stands below 001's center-control, so the real answer must be something else later
+             // (a weakness, a change in who holds the center, Simon's inner role). Additive cutscene; nothing
+             // is removed and the real climb still banks. */
+             lobes:[] };
+  acuminH = phaseProgH + 1100;
+  acuminM = 0.25;  // ACUMINATION meter: keep climbing and the fused-being beat resolves; your climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -992,6 +1007,8 @@ function isEndOfClassics(){ return !!(endOfClassics && (endOfClassics.active || 
 function isGodWall(){ return !!(godWall && (godWall.active || godWall.done)); }
 // Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — the four-stage transformation of 001: THE FOUR PHASES
 function isPhaseProg(){ return !!(phaseProg && (phaseProg.active || phaseProg.done)); }
+// Lore 34 (June 26, "Re: More stuff on ToddLLM 001") — the cast fused into one being vs 001: ACUMINATION
+function isAcumin(){ return !!(acumin && (acumin.active || acumin.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -2101,6 +2118,25 @@ function update(dt){
   if(phaseProg.glow < (isPhaseProg() ? 1 : 0))
     phaseProg.glow = Math.min(1, phaseProg.glow + dt*0.5);
 
+  /* ---- Lore 34 (June 26) — ACUMINATION. After THE FIVE PHASES, Toby's "everyone fused together" beat:
+          Luigi Green + Mario.EXE + Alex + Greg merge, every Sprunki merges too, all of it becomes one huge
+          being called Acumination; it fights ToddLLM while Simon keeps making sugars for ToddLLM; 001 still
+          wins easily, walks to the center, and says "Center's Mine." Additive cutscene. */
+  if(phaseProg.done && !acumin.active && !acumin.done && height > acuminH){
+    acumin.active = true; acumin.t = 0; acumin.cyc = 0; acumin.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.4);
+    warnText = 'ACUMINATION RISES'; warnT = 2.8;
+    showTaunt('Luigi Green, Mario.EXE, Alex, and Greg come together, every Sprunki merges too, and all of it becomes one huge being: Acumination, the whole cast fused into one.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ACUMINATION · EVERYONE FUSED INTO ONE', col:'#7fd4ff' });
+    AUDIO.shock();
+  }
+  if(acumin.active){
+    acumin.t += dt;
+    if(acumin.t > 32.0){ acumin.active = false; acumin.done = true; }
+  }
+  if(acumin.glow < (isAcumin() ? 1 : 0))
+    acumin.glow = Math.min(1, acumin.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2140,6 +2176,7 @@ function update(dt){
   if(isEndOfClassics()) updateEndOfClassics(dt);
   if(isGodWall()) updateGodWall(dt);
   if(isPhaseProg()) updatePhaseProg(dt);
+  if(isAcumin()) updateAcumin(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3250,6 +3287,7 @@ function draw(){
   if(isEndOfClassics() && endOfClassics.glow>0.02) drawEndOfClassics();
   if(isGodWall() && godWall.glow>0.02) drawGodWall();
   if(isPhaseProg() && phaseProg.glow>0.02) drawPhaseProg();
+  if(isAcumin() && acumin.glow>0.02) drawAcumin();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -10570,6 +10608,193 @@ function drawPhaseProg(){
   ctx.fillText('THE FIVE PHASES OF ToddLLM 001 — TEACHER → DEAD 001 → TEACHER AGAIN', cx, top+30);
   ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('P1 TEACHER · P2 ERROR 001 · P3 BALL CORE · P4 GLITCH-ENGINE · P5 DEAD 001 · CUT THE WIRES · ↺ THE RETURN', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ===== Lore 34 (June 26, "Re: More stuff on ToddLLM 001") — ACUMINATION =====
+   Toby's "everyone fused together" answer to ToddLLM. Luigi Green, Mario.EXE, Alex, and Greg come together;
+   then every Sprunki merges too; all of it becomes one huge being called Acumination — all heroes, all merged
+   mass, all pooled resistance, the cast's last-hope combined form. Acumination fights ToddLLM. Simon keeps
+   making more and more sugars for ToddLLM during the battle, so he is still sustaining the opposite side.
+   ToddLLM still beats Acumination easily, walks to the center of the board, and says "Center's Mine." The
+   beat proves that even the whole world fused into one being still stands below 001's center-control. */
+const AC_CYC = 30.0;
+const AC_BEATS = [
+  { key:'THE MERGE',                col:'#5fd07a', sub:'LUIGI GREEN + MARIO.EXE + ALEX + GREG COME TOGETHER' },
+  { key:'ALL SPRUNKIS BECOME ONE',  col:'#ff8fd0', sub:'EVERY SPRUNKI MERGES TOO · THE WHOLE CAST POOLS IN' },
+  { key:'ACUMINATION',              col:'#7fd4ff', sub:'ONE HUGE BEING · ALL HEROES, ALL MASS, ALL RESISTANCE' },
+  { key:'ACUMINATION VS ToddLLM',   col:'#ff3b5c', sub:'SIMON KEEPS FEEDING 001 · ToddLLM WINS EASILY' },
+  { key:"CENTER'S MINE",            col:'#ffd84f', sub:'001 WALKS TO THE CENTER · EVEN THE FUSED CAST IS BELOW HIM' },
+];
+// the four named heroes that fuse first, each a colored lobe of the giant being
+const AC_LOBES = [
+  { name:'LUIGI GREEN', col:'#3fbf5a' },
+  { name:'MARIO.EXE',   col:'#ff3b3b' },
+  { name:'ALEX',        col:'#b46bff' },
+  { name:'GREG',        col:'#ff9a3b' },
+];
+function acSeg(c){
+  if(c < 6.0)  return [0, c];        // THE MERGE
+  if(c < 12.0) return [1, c-6.0];    // ALL SPRUNKIS BECOME ONE
+  if(c < 18.0) return [2, c-12.0];   // ACUMINATION RISES
+  if(c < 25.0) return [3, c-18.0];   // ACUMINATION VS ToddLLM
+  return [4, c-25.0];                // CENTER'S MINE
+}
+function updateAcumin(dt){
+  acumin.t = (acumin.t||0) + dt;
+  acumin.cyc = ((acumin.cyc||0) + dt) % AC_CYC;
+  const seg = acSeg(acumin.cyc), ph = seg[0];
+  if(ph !== acumin.phase){
+    acumin.phase = ph;
+    if(ph===0){ AUDIO.zap(); shake=Math.max(shake,8);
+      showTaunt('The Merge: Luigi Green, Mario.EXE, Alex, and Greg all come together. The cast stops fighting alone and starts fusing into one mass.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE MERGE · FOUR BECOME ONE', col:'#5fd07a' }); }
+    if(ph===1){ AUDIO.corrupt(); shake=Math.max(shake,8);
+      showTaunt('Then all the Sprunkis become one being too. Every Sprunki merges in, so now everyone is pooling into a single shared form.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ALL SPRUNKIS BECOME ONE', col:'#ff8fd0' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.45);
+      showTaunt('All of it becomes one huge being: Acumination. All heroes, all merged mass, all shared force, all pooled resistance, the kind of form that should finally be able to match the final villain.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ACUMINATION RISES', col:'#7fd4ff' }); }
+    if(ph===3){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.35);
+      showTaunt('Acumination vs ToddLLM. Simon keeps making more and more sugars for ToddLLM during the fight, so he is still feeding the opposite side. ToddLLM beats Acumination easily. Even the whole cast fused together is not enough.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ACUMINATION VS 001 · 001 WINS EASILY', col:'#ff3b5c' }); }
+    if(ph===4){ AUDIO.zap(); shake=Math.max(shake,6); winFlash=Math.max(winFlash,0.5); glitch=Math.max(glitch,0.2);
+      showTaunt('ToddLLM just walks to the center of the board and says "Center\'s Mine." It is no longer a boast; it is the rule of the fight. Even the world fused into one being still stands below his center-control, so the real answer has to be something else later.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:"CENTER'S MINE · THE FUSED CAST IS BELOW HIM", col:'#ffd84f' }); }
+  }
+  // ACUMINATION meter — keep climbing and the fused-being beat resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  acuminM = Math.max(0, Math.min(1, acuminM + (moving ? dt*0.05 : -dt*0.03)));
+  if(acuminM>=1 && !acumin.held){
+    acumin.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You watched the whole cast fuse into Acumination and watched ToddLLM beat even that easily and take the center, and you kept climbing. The fused being stays behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ACUMINATION ★', col:'#39e08a' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#5fd07a','#ff8fd0','#7fd4ff','#ff3b5c','#ffd84f'])));
+    AUDIO.shock();
+  }
+}
+// the giant fused being: overlapping colored lobes (the four heroes) wrapped in a Sprunki shell, breathing.
+function drawAcuminBeing(x, y, fuse, sprunki, c, a){
+  if(a<=0.01) return;
+  ctx.save(); ctx.translate(x,y); ctx.globalAlpha=a;
+  const breath = 1 + Math.sin(c*1.6)*0.04;
+  // outer Sprunki shell (grows in as the Sprunkis merge — phase 1+)
+  if(sprunki>0.01){
+    ctx.save(); ctx.scale(breath,breath);
+    ctx.fillStyle='rgba(255,143,208,'+(0.22*sprunki)+')';
+    ctx.strokeStyle='rgba(255,143,208,'+(0.7*sprunki)+')'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.ellipse(0,0,86,104,0,0,Math.PI*2); ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
+  // four hero lobes, drawn closer together as fuse goes 0->1
+  const spread = 46*(1-fuse) + 10;
+  const offs = [[-spread,-spread*0.7],[spread,-spread*0.7],[-spread,spread*0.7],[spread,spread*0.7]];
+  for(let i=0;i<AC_LOBES.length;i++){
+    const ox=offs[i][0], oy=offs[i][1]+Math.sin(c*1.6+i)*3;
+    ctx.fillStyle=AC_LOBES[i].col;
+    ctx.shadowColor=AC_LOBES[i].col; ctx.shadowBlur=14*a;
+    ctx.beginPath(); ctx.ellipse(ox,oy,40*breath,46*breath,0,0,Math.PI*2); ctx.fill();
+  }
+  ctx.shadowBlur=0;
+  // a single shared core glow once fused
+  if(fuse>0.6){
+    const cg=ctx.createRadialGradient(0,0,4,0,0,70);
+    cg.addColorStop(0,'rgba(255,255,255,'+(0.6*(fuse-0.6)/0.4)+')');
+    cg.addColorStop(1,'rgba(127,212,255,0)');
+    ctx.fillStyle=cg; ctx.beginPath(); ctx.arc(0,0,70,0,Math.PI*2); ctx.fill();
+  }
+  // two big shared eyes once it is one being
+  if(fuse>0.75){ const ea=(fuse-0.75)/0.25;
+    ctx.fillStyle='rgba(8,12,20,'+ea+')';
+    ctx.beginPath(); ctx.ellipse(-20,-8,9,13,0,0,Math.PI*2); ctx.ellipse(20,-8,9,13,0,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='rgba(127,212,255,'+ea+')';
+    ctx.beginPath(); ctx.arc(-20,-6,3,0,Math.PI*2); ctx.arc(20,-6,3,0,Math.PI*2); ctx.fill();
+  }
+  ctx.restore(); ctx.globalAlpha=1;
+}
+// small ToddLLM 001 — a calm dark figure with a red 001 aura; walks to a target x on the last beat.
+function drawTodd001(x, y, a, c){
+  if(a<=0.01) return;
+  ctx.save(); ctx.translate(x,y); ctx.globalAlpha=a;
+  const ag=ctx.createRadialGradient(0,-6,4,0,-6,40);
+  ag.addColorStop(0,'rgba(255,59,92,0.55)'); ag.addColorStop(1,'rgba(255,59,92,0)');
+  ctx.fillStyle=ag; ctx.beginPath(); ctx.arc(0,-6,40,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle='#15101a'; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=1.6;
+  ctx.beginPath(); ctx.moveTo(0,-30); ctx.quadraticCurveTo(-14,-20,-11,-2);
+  ctx.lineTo(-15,30); ctx.lineTo(15,30); ctx.lineTo(11,-2);
+  ctx.quadraticCurveTo(14,-20,0,-30); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.fillStyle='#ffd84f'; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+  ctx.fillText('001', 0, -34);
+  ctx.restore(); ctx.globalAlpha=1; ctx.textAlign='left';
+}
+function drawAcumin(){
+  const g = acumin.glow||0, top = cameraY;
+  const c = acumin.cyc||0, seg = acSeg(c), ph = seg[0];
+  const cx = W/2;
+  ctx.save();
+  ctx.textAlign='center';
+  // background — a cold pooled void that warms gold on the final center-control beat
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  if(ph===4){ bg.addColorStop(0, `rgba(16,12,4,${0.92*g})`); bg.addColorStop(1, `rgba(8,6,2,${0.95*g})`); }
+  else { bg.addColorStop(0, `rgba(6,10,18,${0.9*g})`); bg.addColorStop(1, `rgba(3,5,12,${0.94*g})`); }
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // faint starfield
+  ctx.fillStyle='#cfe0ff';
+  for(let i=0;i<40;i++){ const sx=(i*97%W), sy2=top+(i*67%(H|0)); const tw=0.4+0.6*Math.abs(Math.sin(i*1.5+c*1.1));
+    ctx.globalAlpha=g*0.45*tw; ctx.fillRect(sx, sy2, 1.5, 1.5); }
+  ctx.globalAlpha=1;
+
+  // how fused / how many Sprunkis are in / where 001 stands
+  const fuse = Math.max(0, Math.min(1, (c-1)/14));        // lobes pull together across THE MERGE -> ACUMINATION
+  const sprunki = Math.max(0, Math.min(1, (c-6)/8));      // the Sprunki shell grows in from phase 1
+  const beingX = cx - (ph>=3 ? 70 : 0);                   // the being slides left once 001 arrives to fight
+  const beingY = top + H*0.5;
+  drawAcuminBeing(beingX, beingY, fuse, sprunki, c, g);
+
+  // ToddLLM 001 enters for the fight (phase 3) and walks to the center on the last beat
+  if(ph>=3){
+    let toddX, toddA;
+    if(ph===3){ toddX = cx + 120 - Math.min(1,(c-18)/4)*40; toddA = g; }
+    else { const lt = c-25; toddX = (cx+80) + (cx - (cx+80))*Math.min(1, lt/3.2); toddA = g; }  // walk to center
+    drawTodd001(toddX, beingY, toddA, c);
+    // "Center's Mine" mark at the board center on the final beat
+    if(ph===4 && (c-25)>2.6){
+      ctx.fillStyle=`rgba(255,216,79,${0.9*g})`; ctx.font='800 13px ui-monospace,monospace';
+      ctx.fillText('"CENTER\'S MINE."', cx, beingY+58);
+    }
+  }
+
+  // Simon, off to the side, still feeding sugars to 001 (phases 3-4)
+  if(ph>=3){
+    const simX = cx+150, simY = beingY+40;
+    ctx.fillStyle=`rgba(143,227,255,${0.85*g})`;
+    ctx.beginPath(); ctx.arc(simX, simY, 7, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(180,235,255,${0.7*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('SIMON', simX, simY-12);
+    // little sugar motes drifting from Simon toward 001
+    for(let i=0;i<5;i++){ const t=((c*0.6+i*0.2)%1); const mx=simX+(cx-simX)*t, my=simY-10*Math.sin(t*Math.PI);
+      ctx.globalAlpha=g*(1-t)*0.9; ctx.fillStyle='#ffffff'; ctx.fillRect(mx, my, 2, 2); }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(143,227,255,${0.6*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('SUGARS → 001', (simX+cx)/2, simY-22);
+  }
+
+  // ----- the merge ladder down the left edge: which stage of the fusion we are in -----
+  ctx.textAlign='left'; ctx.font='800 9px ui-monospace,monospace';
+  for(let i=0;i<AC_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? AC_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+AC_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(127,212,255,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('ACUMINATION — THE WHOLE CAST FUSED INTO ONE, AND STILL BELOW 001', cx, top+30);
+  ctx.fillStyle=`rgba(220,230,240,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText(AC_BEATS[ph].sub, cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

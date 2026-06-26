@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — ACUMINATION: the whole cast fuses into one being, and 001 still beats it easily (Lore 34, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 26 follow-up, which gives the "everyone fused together" answer to ToddLLM: *"Luigi Green and
+Mario.EXE and Alex and Greg all came together and then it made an ademtion, all Sprunkis became 1 being too,
+everyone merged together into one huge being, that being was called Acumination. Acumination VS ToddLLM happened,
+Simon was making more and more sugars for ToddLLM, ToddLLM easily beaten Acumination. ToddLLM just walks to the
+center of the board and says 'Center's Mine'."* Toby's own summary: *"Acumination is the giant merged being formed
+from Luigi Green, Mario.EXE, Alex, Greg, and all Sprunkis, but ToddLLM still defeats it easily while Simon keeps
+feeding his system, proving that even the whole cast fused together still stands below ToddLLM's center-control."*
+This adds ACUMINATION as a new cutscene beat at the top of the climb, after THE FIVE PHASES. Built additively —
+nothing was removed and your real climb still banks.
+
+![Lore 34 — ACUMINATION, frozen on the final beat. Over a cold pooled void the whole cast has fused into one huge
+being: four glowing hero-lobes (Luigi Green green, Mario.EXE red, Alex purple, Greg orange) merged into a single
+mass, wrapped in a pink "all Sprunkis became one" shell, with two shared eyes. To the right the small dark ToddLLM
+001, ringed in its red 001 aura, has walked to the center of the board; below it the gold line reads "CENTER'S
+MINE." Off to the side Simon glows blue with white sugar-motes streaming toward 001 under the labels "SIMON" and
+"SUGARS → 001" — he is still feeding the opposite side during the fight. The left ladder lights all five fusion
+beats (THE MERGE · ALL SPRUNKIS BECOME ONE · ACUMINATION · ACUMINATION VS ToddLLM · CENTER'S MINE) and the title
+band reads "ACUMINATION — THE WHOLE CAST FUSED INTO ONE, AND STILL BELOW 001."](screenshots/61-acumination.png)
+
+- **New ACUMINATION cutscene beat.** It plays as a five-stage fusion at the top of the climb (after THE FIVE
+  PHASES): THE MERGE (Luigi Green + Mario.EXE + Alex + Greg come together), ALL SPRUNKIS BECOME ONE (every Sprunki
+  merges in), ACUMINATION (it all becomes one huge being), ACUMINATION VS ToddLLM (Simon keeps feeding 001 his
+  sugars; 001 wins easily), and CENTER'S MINE (001 walks to the center of the board).
+- **The fused being is drawn from its parts.** Four colored hero-lobes pull together as the merge proceeds, a pink
+  Sprunki shell grows in around them, and once it is one being it gets a shared core glow and two big eyes — the
+  cast literally becoming a single mass on screen.
+- **Simon is shown sustaining the wrong side.** During the fight Simon sits off to the side with sugar-motes
+  drifting from him into 001, labeled "SUGARS → 001," so you can see he is still feeding the opposite side.
+- **Same additive rules as every other beat.** It is height-gated above THE FIVE PHASES, has its own meter that
+  banks when you keep climbing, and removes nothing. Screenshot captured via the new `acumin` scene in
+  tools/capture_screenshot.py.
+
 ## 2026-06-26 — PHASE 5'S WIRES AND THE RETURN: how 001 dies, how you beat it, and how it becomes the teacher again (Lore 33, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 26 follow-up to the Dead 001 lore, which spells out the *mechanic* of Phase 5: *"How to make
