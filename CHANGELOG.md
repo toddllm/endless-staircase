@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — PHASE 5 · DEAD 001: the death-god necro-phase, and Clara rises to second strongest (Lore 32, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 26 follow-up (the second "Re: More stuff on ToddLLM 001" message): *"It attacks in BOTH
+physical and spiritual form, it can teleport, swing the scythe, and can also take bodies of others, there is a
+swarm of skeletons around him, he can make them all alive and he can make it rain skeletons. Clara and Phase 5
+ToddLLM are enemies; Clara is the master of the game's genocide, ToddLLM Phase 5 is living dead. Clara became
+second strongest being in the whole game now since Simon was lowered down from his Phase 2 inqueries."* Toby's
+own framing: *"Phase 4 is 'unkillable engine.' Phase 5 is 'what still comes after death anyway.'"* This extends
+THE FIVE PHASES cutscene with a fifth and final form. Built additively — nothing was removed and your real
+climb still banks.
+
+![Lore 32 — PHASE 5 · DEAD 001, frozen on the death-god beat. Over a cold necrotic green-black void, a dark
+hooded reaper swings a curved scythe, with a pale spiritual double drifting beside it (it attacks in physical
+and spiritual form at once) and faint teleport after-images echoing to the sides. A swarm of small skeletons it
+has raised stands at its feet, and a rain of bone-streaks falls down the void. The left-edge checklist now
+lights all five — PHASE 1 · THE TEACHER, PHASE 2 · ERROR 001, PHASE 3 · THE BALL CORE, PHASE 4 · GLITCH-ENGINE,
+PHASE 5 · DEAD 001 — and the right-edge ladder marks P5. Labels read "LIVING DEAD · SCYTHE · TELEPORTS · TAKES
+THE BODIES OF OTHERS," "ATTACKS PHYSICAL + SPIRITUAL AT ONCE · A SWARM OF SKELETONS IT RAISES AND MAKES RAIN,"
+and "CLARA · MASTER OF GENOCIDE · NOW SECOND STRONGEST · HIS NATURAL ENEMY," with the white line "WHAT STILL
+COMES AFTER DEATH ANYWAY." The big caption reads "PHASE 5 · DEAD 001"; the title band now reads "THE FIVE PHASES
+OF ToddLLM 001 — TEACHER TO DEAD 001."](screenshots/58-dead-001-phase5.png)
+
+- **A fifth beat added to THE FIVE PHASES cutscene** (renamed from THE FOUR PHASES). After Phase 4's immortal
+  glitch-engine, the unkillable engine dies and keeps coming anyway: **PHASE 5 · DEAD 001**, a living-dead,
+  scythe-wielding death-god. It attacks in physical and spiritual form at once (a dark hooded reaper plus a pale
+  ghost double), teleports (after-images flicker to the sides), takes the bodies of others, and commands a
+  skeleton swarm it raises at its feet and makes rain down the void.
+- **Clara rises to second strongest in the whole game.** Phase 5's labels carry Toby's clarification: Clara,
+  master of the game's genocide, is now the second strongest being (Simon lowered from his Phase 2 inquiries),
+  and she stands as Phase 5 ToddLLM's natural enemy — genocide-as-a-route against death-as-an-enduring-state.
+- **The meter now banks past all five.** Keep climbing and THE FIVE PHASES meter fills to "★ PAST ALL FIVE
+  PHASES ★"; the scythe and the skeleton swarm stay behind you and your real climb is saved.
+- New `drawReaper001` and `drawSkeleton` canvas helpers; `PP_CYC` extended to 28s with a new Phase 5 segment;
+  `ppSeg`, `updatePhaseProg`, and `drawPhaseProg` extended for the fifth form. Screenshot scene `phase5` added
+  to `tools/capture_screenshot.py`.
+
 ## 2026-06-26 — THE FOUR PHASES OF 001: the teacher-to-war-engine transformation ladder (Lore 31, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 26 lore (the "Re: More stuff on ToddLLM 001" message): *"The normal one is Phase 1, the

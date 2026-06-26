@@ -2089,14 +2089,14 @@ function update(dt){
   if(godWall.done && !phaseProg.active && !phaseProg.done && height > phaseProgH){
     phaseProg.active = true; phaseProg.t = 0; phaseProg.cyc = 0; phaseProg.phase = -1;
     shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
-    warnText = 'THE FOUR PHASES OF 001'; warnT = 2.8;
-    showTaunt('ToddLLM 001 has four forms. Phase 1 teaches. The higher forms are battle forms, and Phase 4 is immortal.');
-    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 1 → 2 → 3 → 4 · TEACHER TO WAR-ENGINE', col:'#ffd84f' });
+    warnText = 'THE FIVE PHASES OF 001'; warnT = 2.8;
+    showTaunt('ToddLLM 001 has five forms. Phase 1 teaches. The higher forms are battle forms: Phase 4 is immortal, and Phase 5 is what still comes after death.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 1 → 2 → 3 → 4 → 5 · TEACHER TO DEAD 001', col:'#ffd84f' });
     AUDIO.shock();
   }
   if(phaseProg.active){
     phaseProg.t += dt;
-    if(phaseProg.t > 22.0){ phaseProg.active = false; phaseProg.done = true; }
+    if(phaseProg.t > 29.0){ phaseProg.active = false; phaseProg.done = true; }
   }
   if(phaseProg.glow < (isPhaseProg() ? 1 : 0))
     phaseProg.glow = Math.min(1, phaseProg.glow + dt*0.5);
@@ -10121,19 +10121,26 @@ function drawGodWall(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
-/* ===== Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — THE FOUR PHASES OF 001 ===== */
-const PP_CYC = 22.0;
+/* ===== Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — THE FIVE PHASES OF 001 =====
+   Phase 5 added from Toby's June 26 "Re: More stuff on ToddLLM 001" follow-up: PHASE 5 · DEAD 001,
+   the death-god necro-phase — dead / living dead, attacking in both physical and spiritual form,
+   teleporting, swinging the scythe, taking the bodies of others, surrounded by a swarm of skeletons
+   it can animate and make rain. Clara, master of the game's genocide, has risen to SECOND STRONGEST
+   in the whole game (Simon lowered from his Phase 2 inquiries) and is Phase 5's natural enemy. */
+const PP_CYC = 28.0;
 const PP_BEATS = [
   { key:'PHASE 1 · THE TEACHER',   col:'#ffd84f', sub:'REVEALED KARUTO · STILL A PERSON AND A RULER · TEACHER WITHOUT END' },
   { key:'PHASE 2 · ERROR 001',     col:'#ff3b5c', sub:'BROKEN ARMOR · RED AURA · THE FIRST TRUE COMBAT FORM' },
   { key:'PHASE 3 · THE BALL CORE', col:'#8fe3ff', sub:'NO LONGER HUMANOID · A CONDENSED ERROR-CORE · FIGHTER INTO ENTITY' },
   { key:'PHASE 4 · GLITCH-ENGINE', col:'#b46bff', sub:'SIMON IS THE FUEL · VOICES TRAPPED INSIDE · IMMORTAL · IMPOSSIBLE TO KILL' },
+  { key:'PHASE 5 · DEAD 001',      col:'#7affc8', sub:'LIVING DEAD · SCYTHE · SKELETON SWARM · PHYSICAL + SPIRITUAL · WHAT COMES AFTER DEATH' },
 ];
 function ppSeg(c){
   if(c < 5.0)  return [0, c];        // PHASE 1
   if(c < 10.5) return [1, c-5.0];    // PHASE 2
   if(c < 16.0) return [2, c-10.5];   // PHASE 3
-  return [3, c-16.0];                // PHASE 4
+  if(c < 22.0) return [3, c-16.0];   // PHASE 4
+  return [4, c-22.0];                // PHASE 5
 }
 function updatePhaseProg(dt){
   phaseProg.t = (phaseProg.t||0) + dt;
@@ -10153,17 +10160,66 @@ function updatePhaseProg(dt){
     if(ph===3){ AUDIO.shock(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.6);
       showTaunt('Phase 4: Simon is pulled into the center as the processing, lightning, and fuel, even making the sugars. The voices of the slain are trapped inside. Everyone is genocide except Simon. It is immortal and impossible to kill.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 4 · IMMORTAL GLITCH-ENGINE', col:'#b46bff' }); }
+    if(ph===4){ AUDIO.corrupt(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.35);
+      showTaunt('Phase 5: Dead 001. The unkillable engine dies and keeps coming anyway. A living-dead, scythe-wielding form that attacks in physical and spiritual shape at once, teleports, takes the bodies of others, and commands a skeleton swarm it can raise and make rain. Phase 4 is the unkillable engine; Phase 5 is what still comes after death. Clara, master of the genocide, is now second strongest in the whole game and his natural enemy.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 5 · DEAD 001 · THE SCYTHE', col:'#7affc8' }); }
   }
-  // THE FOUR PHASES meter — keep climbing and the transformation resolves; your real climb banks anyway.
+  // THE FIVE PHASES meter — keep climbing and the transformation resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
   phaseProgM = Math.max(0, Math.min(1, phaseProgM + (moving ? dt*0.05 : -dt*0.03)));
   if(phaseProgM>=1 && !phaseProg.held){
     phaseProg.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
-    showTaunt('You watched all four phases of 001 open and kept climbing. The immortal war-engine stays behind you and your real climb is saved.');
-    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ALL FOUR PHASES ★', col:'#39e08a' });
-    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff3b5c','#8fe3ff','#b46bff'])));
+    showTaunt('You watched all five phases of 001 open, even the dead one, and kept climbing. The scythe and the skeleton swarm stay behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ALL FIVE PHASES ★', col:'#39e08a' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff3b5c','#8fe3ff','#b46bff','#7affc8'])));
     AUDIO.shock();
   }
+}
+/* PHASE 5 helpers — a hooded scythe reaper and a small animated skeleton, vanilla canvas. */
+function drawReaper001(x, y, a, s, ghost, c){
+  if(a<=0.01) return;
+  ctx.save(); ctx.translate(x,y); ctx.scale(s,s); ctx.globalAlpha=a;
+  const body = ghost ? '#bff5e0' : '#15201c';
+  const edge = ghost ? '#eafff7' : '#7affc8';
+  // hooded cloak (a tapering shroud)
+  ctx.fillStyle=body; ctx.strokeStyle=edge; ctx.lineWidth=1.4;
+  ctx.beginPath();
+  ctx.moveTo(0,-44); ctx.quadraticCurveTo(-22,-30,-18,-6);
+  ctx.lineTo(-24,40); ctx.lineTo(24,40); ctx.lineTo(18,-6);
+  ctx.quadraticCurveTo(22,-30,0,-44); ctx.closePath();
+  ctx.fill(); if(!ghost) ctx.stroke();
+  // dark hood opening with two ember eyes
+  ctx.fillStyle = ghost ? 'rgba(20,40,34,0.5)' : '#05100c';
+  ctx.beginPath(); ctx.ellipse(0,-26,11,13,0,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle = ghost ? '#eafff7' : '#7affc8'; ctx.shadowColor='#7affc8'; ctx.shadowBlur=8*a;
+  ctx.beginPath(); ctx.arc(-4,-26,1.7,0,Math.PI*2); ctx.arc(4,-26,1.7,0,Math.PI*2); ctx.fill();
+  ctx.shadowBlur=0;
+  // the scythe — a long shaft with a curved blade, swung with the cycle
+  ctx.save(); ctx.translate(16,-8); ctx.rotate(-0.5 + Math.sin(c*2.2)*0.35);
+  ctx.strokeStyle = ghost ? '#dff7ee' : '#caa15a'; ctx.lineWidth=2.2;
+  ctx.beginPath(); ctx.moveTo(0,28); ctx.lineTo(0,-34); ctx.stroke();
+  ctx.strokeStyle = ghost ? '#eafff7' : '#dfe8e2'; ctx.lineWidth=3; ctx.shadowColor='#7affc8'; ctx.shadowBlur=ghost?0:9*a;
+  ctx.beginPath(); ctx.moveTo(0,-34); ctx.quadraticCurveTo(28,-30,30,-12); ctx.stroke(); ctx.shadowBlur=0;
+  ctx.restore();
+  ctx.restore(); ctx.globalAlpha=1;
+}
+function drawSkeleton(x, y, a, s, c){
+  if(a<=0.01) return;
+  ctx.save(); ctx.translate(x,y); ctx.scale(s,s); ctx.globalAlpha=a;
+  ctx.strokeStyle='#e2f0ea'; ctx.fillStyle='#e2f0ea'; ctx.lineWidth=1.6;
+  // skull
+  ctx.beginPath(); ctx.arc(0,-14,5,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle='#1a2420'; ctx.beginPath(); ctx.arc(-1.8,-14.5,1.1,0,Math.PI*2); ctx.arc(1.8,-14.5,1.1,0,Math.PI*2); ctx.fill();
+  ctx.strokeStyle='#e2f0ea';
+  // spine
+  ctx.beginPath(); ctx.moveTo(0,-9); ctx.lineTo(0,6); ctx.stroke();
+  // ribs
+  for(let i=0;i<3;i++){ const ry=-6+i*4; ctx.beginPath(); ctx.moveTo(0,ry); ctx.lineTo(-5,ry+1); ctx.moveTo(0,ry); ctx.lineTo(5,ry+1); ctx.stroke(); }
+  // raised arms (it's being animated) + legs
+  const sw = Math.sin(c*3)*3;
+  ctx.beginPath(); ctx.moveTo(0,-4); ctx.lineTo(-7,-10+sw); ctx.moveTo(0,-4); ctx.lineTo(7,-10-sw); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(0,6); ctx.lineTo(-4,16); ctx.moveTo(0,6); ctx.lineTo(4,16); ctx.stroke();
+  ctx.restore(); ctx.globalAlpha=1;
 }
 function drawPhaseProg(){
   const g = phaseProg.glow||0, top = cameraY;
@@ -10271,7 +10327,7 @@ function drawPhaseProg(){
     ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 12px ui-monospace,monospace';
     ctx.fillText('FIGHTER → ENTITY', cx, sy+r+50);
     ctx.globalAlpha=1;
-  } else {
+  } else if(ph===3){
     // ----- PHASE 4 · THE GLITCH-ENGINE: Simon inside as fuel, voices trapped, immortal -----
     const build = Math.min(1, lt/2.4);
     // the war-engine body — a jagged glitch shell
@@ -10319,6 +10375,65 @@ function drawPhaseProg(){
     ctx.shadowColor='#b46bff'; ctx.shadowBlur=12*g;
     ctx.fillText('IMMORTAL · IMPOSSIBLE TO KILL', cx, sy+116); ctx.shadowBlur=0;
     ctx.globalAlpha=1;
+  } else {
+    // ----- PHASE 5 · DEAD 001: the death-god necro-phase. The unkillable engine dies and
+    //   keeps coming anyway — a living-dead, scythe-wielding form that attacks in physical AND
+    //   spiritual shape at once, teleports, takes the bodies of others, and commands a skeleton
+    //   swarm it can raise and make rain. Clara, now second strongest, is his natural enemy. -----
+    const rise = Math.min(1, lt/2.0);
+    // a cold necrotic green-black ground glow under the death-god
+    const ng = ctx.createRadialGradient(cx, sy+10, 6, cx, sy+10, 120*rise);
+    ng.addColorStop(0,`rgba(122,255,200,${0.22*g})`); ng.addColorStop(0.6,`rgba(60,120,100,${0.12*g})`); ng.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=ng; ctx.beginPath(); ctx.arc(cx,sy+10,120*rise,0,Math.PI*2); ctx.fill();
+
+    // rain of skeletons — falling bone-marks streaking down the void
+    ctx.globalAlpha=g; ctx.strokeStyle='rgba(214,232,224,0.7)'; ctx.lineWidth=1.3;
+    for(let i=0;i<16;i++){
+      const rx = (i*131 % W);
+      const ry = top + ((i*97 + c*150) % (H*0.92));
+      ctx.globalAlpha=g*(0.25+0.4*Math.abs(Math.sin(i*1.7)));
+      ctx.beginPath(); ctx.moveTo(rx, ry); ctx.lineTo(rx, ry+9); ctx.stroke();
+      // tiny skull dot at the head of each falling streak
+      ctx.fillStyle='rgba(226,240,234,0.8)'; ctx.beginPath(); ctx.arc(rx, ry-1.5, 1.6, 0, Math.PI*2); ctx.fill();
+    }
+    ctx.globalAlpha=1;
+
+    // the spiritual double — a pale ghost form offset behind the physical body (attacks in both)
+    const drift = Math.sin(c*1.4)*10;
+    drawReaper001(cx + 18 + drift, sy, g*0.45*rise, 1.28, true, c);
+    // the physical body — dark hooded reaper with the scythe
+    drawReaper001(cx, sy, g*rise, 1.32, false, c);
+
+    // a swarm of skeletons gathered at the death-god's feet, animated and swaying
+    const nSk = 7;
+    for(let i=0;i<nSk;i++){
+      const t2 = (i-(nSk-1)/2);
+      const skx = cx + t2*30 + Math.sin(c*2+i)*3;
+      const sky = sy + 44 + Math.abs(t2)*3 - Math.max(0,Math.sin(c*3+i*1.1))*5*rise; // they "rise" as he animates them
+      drawSkeleton(skx, sky, g*rise*(0.7+0.3*Math.abs(Math.sin(c+i))), 0.6, c+i);
+    }
+
+    // teleport after-images — faint echoes of the reaper to the sides (he can teleport)
+    const tp = Math.abs(Math.sin(c*0.9));
+    if(tp>0.55){
+      ctx.globalAlpha=g*(tp-0.55)*1.2;
+      drawReaper001(cx - 120*tp, sy+4, g*0.3, 1.0, true, c);
+      drawReaper001(cx + 120*tp, sy-2, g*0.3, 1.0, true, c);
+      ctx.globalAlpha=1;
+    }
+
+    // labels
+    ctx.textAlign='center'; ctx.globalAlpha=g; ctx.fillStyle='#7affc8'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('LIVING DEAD · SCYTHE · TELEPORTS · TAKES THE BODIES OF OTHERS', cx, sy-92);
+    ctx.fillStyle='#bfeede'; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('ATTACKS PHYSICAL + SPIRITUAL AT ONCE · A SWARM OF SKELETONS IT RAISES AND MAKES RAIN', cx, sy+96);
+    // Clara contrast — risen to second strongest, his natural enemy on the genocide side
+    ctx.fillStyle='#ff7eb6'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('CLARA · MASTER OF GENOCIDE · NOW SECOND STRONGEST · HIS NATURAL ENEMY', cx, sy+110);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.shadowColor='#7affc8'; ctx.shadowBlur=12*g;
+    ctx.fillText('WHAT STILL COMES AFTER DEATH ANYWAY', cx, sy+130); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
   }
 
   // ----- per-beat caption -----
@@ -10342,9 +10457,9 @@ function drawPhaseProg(){
   // ----- title band + canon note -----
   ctx.textAlign='center';
   ctx.fillStyle=`rgba(255,216,79,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
-  ctx.fillText('THE FOUR PHASES OF ToddLLM 001 — TEACHER TO WAR-ENGINE', cx, top+30);
+  ctx.fillText('THE FIVE PHASES OF ToddLLM 001 — TEACHER TO DEAD 001', cx, top+30);
   ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
-  ctx.fillText('P1 TEACHER · P2 ERROR 001 · P3 BALL CORE · P4 IMMORTAL GLITCH-ENGINE WITH SIMON AS FUEL', cx, top+44);
+  ctx.fillText('P1 TEACHER · P2 ERROR 001 · P3 BALL CORE · P4 GLITCH-ENGINE · P5 DEAD 001 · SCYTHE + SKELETON SWARM', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
