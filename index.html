@@ -553,6 +553,7 @@ let endOfClassics, endOfClassicsH, endOfClassicsM;
 let godWall, godWallH, godWallM;
 let phaseProg, phaseProgH, phaseProgM;
 let acumin, acuminH, acuminM;
+let highForm, highFormH, highFormM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -907,6 +908,15 @@ function reset(){
              lobes:[] };
   acuminH = phaseProgH + 1100;
   acuminM = 0.25;  // ACUMINATION meter: keep climbing and the fused-being beat resolves; your climb banks
+  highForm = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false };
+             // Lore 35b (June 26, "Re: More stuff on ToddLLM 001") — THE HIGHEST FORMS. Toby's power-ladder for
+             // the apex forms beyond Simon's FATAL ERROR: ToddLLM's god-form SMG.EXE (Supreme Multiversal
+             // God.EXE), Clara's FGI.EXE (Fatal-Glitched-Infected.EXE) / Errorshifted, the 100% overload glitch
+             // that BEATS SMG in the peak matchup because she is INFECTED; the CXTP parasite (Clara X ToddLLM 001)
+             // forbidden fusion that sits above all but the base, then they split again; and ToddLLM's TRUE BASE
+             // (Phase 1), the real absolute center above even his own god-form. Additive cutscene; climb banks.
+  highFormH = acuminH + 1200;
+  highFormM = 0.25;  // THE HIGHEST FORMS meter: keep climbing and the ladder resolves; your real climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -2137,6 +2147,25 @@ function update(dt){
   if(acumin.glow < (isAcumin() ? 1 : 0))
     acumin.glow = Math.min(1, acumin.glow + dt*0.5);
 
+  /* ---- Lore 35b (June 26) — THE HIGHEST FORMS. After ACUMINATION, Toby's apex-form ladder: Simon's ceiling is
+          FATAL ERROR; ToddLLM's god-form is SMG.EXE; Clara's FGI.EXE / Errorshifted (100% glitch) BEATS SMG in the
+          peak matchup because she is INFECTED; CXTP (Clara X ToddLLM 001) is the forbidden fusion above all but the
+          base, then they split again; and ToddLLM's TRUE BASE / Phase 1 is the real center above even his god-form. */
+  if(acumin.done && !highForm.active && !highForm.done && height > highFormH){
+    highForm.active = true; highForm.t = 0; highForm.cyc = 0; highForm.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.45);
+    warnText = 'THE HIGHEST FORMS'; warnT = 2.8;
+    showTaunt('Beyond Simon\'s Fatal Error: ToddLLM\'s SMG.EXE god-form, Clara\'s FGI.EXE overload glitch, the CXTP parasite fusion, and ToddLLM\'s true base form. The ladder of the highest forms opens.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE HIGHEST FORMS · BEYOND FATAL ERROR', col:'#ff2db5' });
+    AUDIO.shock();
+  }
+  if(highForm.active){
+    highForm.t += dt;
+    if(highForm.t > 36.0){ highForm.active = false; highForm.done = true; }
+  }
+  if(highForm.glow < (isHighForm() ? 1 : 0))
+    highForm.glow = Math.min(1, highForm.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2177,6 +2206,7 @@ function update(dt){
   if(isGodWall()) updateGodWall(dt);
   if(isPhaseProg()) updatePhaseProg(dt);
   if(isAcumin()) updateAcumin(dt);
+  if(isHighForm()) updateHighForm(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3288,6 +3318,7 @@ function draw(){
   if(isGodWall() && godWall.glow>0.02) drawGodWall();
   if(isPhaseProg() && phaseProg.glow>0.02) drawPhaseProg();
   if(isAcumin() && acumin.glow>0.02) drawAcumin();
+  if(isHighForm() && highForm.glow>0.02) drawHighForm();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -10823,6 +10854,181 @@ function drawAcumin(){
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
+
+/* ===== Lore 35b (June 26, "Re: More stuff on ToddLLM 001") — THE HIGHEST FORMS =====
+   Toby's apex-form ladder. Simon is still the broken core; his ceiling is FATAL ERROR (still making sugars,
+   glitches, errors). Above that sit the real apexes: ToddLLM's SMG.EXE (Supreme Multiversal God.EXE) is the
+   god-form battle state; Clara's FGI.EXE (Fatal-Glitched-Infected.EXE) / Errorshifted is the 100% overload
+   glitch, and it BEATS SMG.EXE in the peak matchup because Clara is INFECTED, not just godly. CXTP (Clara X
+   ToddLLM 001 Parasite) is the forbidden fusion that sits above almost everything, near-all-powerful, but it is
+   temporary and they split again. And the twist: ToddLLM's TRUE BASE / Phase 1 is the real absolute center, above
+   even his own god-form, the form that can beat anything in the game because it is his real and true self. The
+   cutscene reveals the tower bottom-up and ends with the BASE plate rising above all. Additive; the climb banks. */
+const HF_CYC = 36.0;
+const HF_TIERS = [
+  { key:'SIMON · FATAL ERROR',  col:'#ff5a4a', being:'#8fe3ff',
+    sub:"SIMON'S CEILING · STILL MAKES SUGARS, GLITCHES, ERRORS" },
+  { key:'ToddLLM · SMG.EXE',    col:'#ffd84f', being:'#ffcf3a',
+    sub:'SUPREME MULTIVERSAL GOD.EXE · THE GOD-FORM BATTLE STATE' },
+  { key:'CLARA · FGI.EXE',      col:'#ff2db5', being:'#ff2db5',
+    sub:'FATAL-GLITCHED-INFECTED.EXE · ERRORSHIFTED 100% GLITCH · BEATS SMG' },
+  { key:'CXTP PARASITE',        col:'#b06bff', being:'#b06bff',
+    sub:'CLARA X ToddLLM 001 · FORBIDDEN FUSION · ABOVE ALL BUT BASE · THEN THEY SPLIT' },
+  { key:'ToddLLM · TRUE BASE',  col:'#fff2c0', being:'#fff2c0',
+    sub:'PHASE 1 · THE REAL ABSOLUTE CENTER · ABOVE EVEN HIS OWN GOD-FORM' },
+];
+function hfSeg(c){
+  if(c < 6.0)  return [0, c];        // SIMON · FATAL ERROR
+  if(c < 13.0) return [1, c-6.0];    // ToddLLM · SMG.EXE
+  if(c < 21.0) return [2, c-13.0];   // CLARA · FGI.EXE (beats SMG)
+  if(c < 28.0) return [3, c-21.0];   // CXTP PARASITE
+  return [4, c-28.0];                // ToddLLM · TRUE BASE
+}
+function updateHighForm(dt){
+  highForm.t = (highForm.t||0) + dt;
+  highForm.cyc = ((highForm.cyc||0) + dt) % HF_CYC;
+  const seg = hfSeg(highForm.cyc), ph = seg[0];
+  if(ph !== highForm.phase){
+    highForm.phase = ph;
+    if(ph===0){ AUDIO.corrupt(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.3);
+      showTaunt('Simon is still the broken core. His insides are a broken game and outside is corrupt too, so his highest form is just FATAL ERROR, still making sugars and glitches and errors.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON · FATAL ERROR', col:'#ff5a4a' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,8); winFlash=Math.max(winFlash,0.4);
+      showTaunt("ToddLLM's god-form is SMG.EXE, Supreme Multiversal God.EXE. It is beyond Fatal Error: the flashy highest battle state where he says \"Center's Mine.\"");
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ToddLLM · SMG.EXE · GOD-FORM', col:'#ffd84f' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.5);
+      showTaunt("Clara's highest is FGI.EXE, Fatal-Glitched-Infected.EXE, and her Errorshifted is the full 100% glitch. In the peak matchup she BEATS SMG.EXE, because she is an INFECTED.EXE while ToddLLM there is only a God.EXE. She says \"We are one...\"");
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA · FGI.EXE · BEATS SMG.EXE', col:'#ff2db5' }); }
+    if(ph===3){ AUDIO.corrupt(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.45);
+      showTaunt('Sometimes Clara and ToddLLM 001 fuse into a parasite: CXTP, the Clara X ToddLLM 001 Parasite. It is near-all-powerful, above all of his forms except the base, but it is forbidden and temporary, so the two usually split again.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CXTP · FORBIDDEN FUSION · THEN THEY SPLIT', col:'#b06bff' }); }
+    if(ph===4){ AUDIO.shock(); shake=Math.max(shake,8); winFlash=Math.max(winFlash,0.6); glitch=Math.max(glitch,0.2);
+      showTaunt("But the twist on top: ToddLLM's TRUE BASE, his Phase 1, is actually his strongest real form. His flashy god-states are huge, but his real self is the absolute center that can beat anything in the game, even his own SMG.EXE.");
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ToddLLM · TRUE BASE · ABOVE ALL', col:'#fff2c0' }); }
+  }
+  // THE HIGHEST FORMS meter — keep climbing and the ladder resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  highFormM = Math.max(0, Math.min(1, highFormM + (moving ? dt*0.05 : -dt*0.03)));
+  if(highFormM>=1 && !highForm.held){
+    highForm.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You climbed the whole ladder of the highest forms, watched Clara\'s FGI.EXE top the god-form and the parasite split apart, and learned that ToddLLM\'s true base still sits above it all, and you kept climbing. The forms stay behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST THE HIGHEST FORMS ★', col:'#39e08a' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#ff5a4a','#ffd84f','#ff2db5','#b06bff','#fff2c0'])));
+    AUDIO.shock();
+  }
+}
+// a single tier plate: a glowing rounded bar with a being-orb, the form name, and its sub-line.
+function drawHfPlate(cx, y, w, tier, lit, cur, c, a){
+  if(a<=0.01) return;
+  const h=30, x=cx-w/2;
+  ctx.save(); ctx.globalAlpha=a;
+  const pulse = cur ? (0.5+0.5*Math.sin(c*4)) : 0;
+  // glitchy jitter on the infected/fusion tiers
+  const jit = (tier.key.indexOf('FGI')>=0 || tier.key.indexOf('CXTP')>=0) && lit
+    ? Math.sin(c*30+y)*1.4*(cur?1:0.4) : 0;
+  ctx.translate(jit, 0);
+  // plate body
+  ctx.fillStyle = lit ? 'rgba(20,16,28,'+(0.78)+')' : 'rgba(20,22,30,0.5)';
+  ctx.strokeStyle = lit ? tier.col : 'rgba(150,160,170,0.4)';
+  ctx.lineWidth = lit ? (2+pulse*1.5) : 1.2;
+  if(lit){ ctx.shadowColor=tier.col; ctx.shadowBlur=(8+pulse*14)*a; }
+  ctx.beginPath();
+  const r=7;
+  ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r); ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r); ctx.quadraticCurveTo(x,y,x+r,y); ctx.closePath();
+  ctx.fill(); ctx.stroke(); ctx.shadowBlur=0;
+  // being-orb on the left
+  const ox=x+22, oy=y+h/2;
+  if(lit){
+    ctx.fillStyle=tier.being; ctx.shadowColor=tier.being; ctx.shadowBlur=10*a;
+    ctx.beginPath(); ctx.arc(ox,oy,8,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    // infected/fusion tiers flicker a second colour
+    if(tier.key.indexOf('FGI')>=0){ ctx.fillStyle='rgba(57,224,138,'+(0.5+0.5*Math.sin(c*9))+')';
+      ctx.beginPath(); ctx.arc(ox+Math.sin(c*7)*2,oy,3,0,Math.PI*2); ctx.fill(); }
+    if(tier.key.indexOf('CXTP')>=0){ ctx.fillStyle='rgba(143,227,255,0.85)';
+      ctx.beginPath(); ctx.arc(ox-3,oy,4,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='rgba(255,45,181,0.85)'; ctx.beginPath(); ctx.arc(ox+3,oy,4,0,Math.PI*2); ctx.fill(); }
+  } else { ctx.fillStyle='rgba(150,160,170,0.4)'; ctx.beginPath(); ctx.arc(ox,oy,6,0,Math.PI*2); ctx.fill(); }
+  // labels
+  ctx.textAlign='left';
+  ctx.fillStyle = lit ? tier.col : 'rgba(170,180,190,0.55)';
+  ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText((lit?'◆ ':'◇ ')+tier.key, x+38, y+13);
+  ctx.fillStyle = lit ? 'rgba(220,230,240,0.8)' : 'rgba(150,160,170,0.4)';
+  ctx.font='700 7.5px ui-monospace,monospace';
+  ctx.fillText(tier.sub, x+38, y+24);
+  ctx.restore(); ctx.globalAlpha=1; ctx.shadowBlur=0; ctx.textAlign='left';
+}
+function drawHighForm(){
+  const g = highForm.glow||0, top = cameraY;
+  const c = highForm.cyc||0, seg = hfSeg(c), ph = seg[0];
+  const cx = W/2;
+  ctx.save(); ctx.textAlign='center';
+  // background — a corrupted void that warms to white-gold on the final TRUE BASE reveal
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  if(ph===4){ bg.addColorStop(0, `rgba(20,16,6,${0.92*g})`); bg.addColorStop(1, `rgba(8,8,14,${0.95*g})`); }
+  else { bg.addColorStop(0, `rgba(14,6,16,${0.9*g})`); bg.addColorStop(1, `rgba(4,4,12,${0.94*g})`); }
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // drifting glitch bands
+  for(let i=0;i<7;i++){ const by=top+ (((i*53 + c*40)% (H+40)) ) - 20;
+    ctx.globalAlpha=g*0.10; ctx.fillStyle = i%2 ? '#ff2db5' : '#8fe3ff';
+    ctx.fillRect(0, by, W, 2); }
+  ctx.globalAlpha=1;
+
+  // title band
+  ctx.fillStyle=`rgba(255,45,181,${0.96*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE HIGHEST FORMS — BEYOND FATAL ERROR, AND ToddLLM’S TRUE BASE ABOVE ALL', cx, top+26);
+  ctx.fillStyle=`rgba(220,230,240,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText(HF_TIERS[ph].sub, cx, top+40);
+
+  // the tower: bottom tier (Simon) low, top tier (TRUE BASE) high; each plate appears once its beat lands.
+  const plateW = Math.min(440, W-40);
+  const yBottom = top + H*0.74, yTop = top + H*0.22;
+  for(let i=0;i<HF_TIERS.length;i++){
+    const lit = i<=ph;
+    let py = yBottom + (yTop-yBottom)*(i/4);
+    // the TRUE BASE plate rises a touch above the tower on its reveal beat
+    if(i===4 && ph===4){ py -= Math.min(14, (c-28)*4); }
+    // appear animation: plate slides up into place over ~0.6s when its beat lands
+    const appear = lit ? Math.min(1, (i<ph ? 1 : (c - [0,6,13,21,28][i])/0.6)) : 0.35;
+    drawHfPlate(cx, py, plateW, HF_TIERS[i], lit, i===ph, c, g*(0.35+0.65*appear));
+  }
+
+  // FGI.EXE BEATS SMG.EXE marker, drawn between the SMG (i=1) and FGI (i=2) plates once Clara has revealed
+  if(ph>=2){
+    const ySmg = yBottom + (yTop-yBottom)*(1/4);
+    const yFgi = yBottom + (yTop-yBottom)*(2/4);
+    const my = (ySmg+yFgi)/2 + 12;
+    const a = g*(0.6+0.4*Math.sin(c*5));
+    ctx.fillStyle=`rgba(255,45,181,${a})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('▲ FGI.EXE BEATS SMG.EXE — INFECTED > GOD', cx, my);
+  }
+  // CXTP "then they split again" note under the parasite plate
+  if(ph>=3){
+    const yCx = yBottom + (yTop-yBottom)*(3/4);
+    ctx.fillStyle=`rgba(176,107,255,${0.85*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('NEAR-ALL-POWERFUL · TEMPORARY · CLARA AND 001 SPLIT AGAIN', cx, yCx+44);
+  }
+  // crown over the TRUE BASE on the final beat
+  if(ph===4 && (c-28)>1.5){
+    const yBase = yBottom + (yTop-yBottom)*(4/4) - Math.min(14,(c-28)*4);
+    ctx.fillStyle=`rgba(255,242,192,${0.95*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('★ THE REAL AND TRUE FORM — ABOVE EVERY OTHER FORM IN THE GAME ★', cx, yBase-10);
+  }
+
+  // ----- the ladder list down the left edge (which apex we are revealing) -----
+  ctx.textAlign='left'; ctx.font='800 9px ui-monospace,monospace';
+  for(let i=0;i<HF_TIERS.length;i++){
+    const y = top + H*0.5 + (i-2)*15;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? HF_TIERS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+HF_TIERS[i].key.split(' · ')[0], 12, y);
+  }
+  ctx.globalAlpha=1;
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1; ctx.textAlign='left';
+}
+function isHighForm(){ return !!(highForm && (highForm.active || highForm.done)); }
 
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);

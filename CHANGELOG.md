@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — THE HIGHEST FORMS: the apex-form ladder, where Clara's FGI.EXE tops the god-form but ToddLLM's true base tops everything (Lore 35b, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 26 follow-up laying out the highest forms: *"Simon's highest form is Fatal Error. Clara's
+highest is Fatal-Glitched-Infected.EXE (F.G.I.EXE) and her Errorshifted is the full 100% glitch; ToddLLM's highest
+is Supreme Multiversal God.EXE (S.M.G.EXE). Clara's highest beats ToddLLM's highest since she is an INFECTED.EXE
+and ToddLLM there is a God.EXE. ToddLLM's base, Phase 1 form is actually the most powerful form, his base can beat
+anything in the game because it is his real and true form. ToddLLM 001 can appear as a parasite called Clara X
+ToddLLM 001 Parasite (CXTP), beyond all ToddLLM's forms except base, nearly all powerful; then they usually split
+again."* Toby's own cleanest reading: *"Clara and ToddLLM both go beyond Simon's Fatal Error, but in different
+ways: Clara's FGI.EXE is the strongest corrupted-overload form, ToddLLM's SMG.EXE is the god-form, and ToddLLM's
+true base form is still the actual absolute center above the whole game."* Built as a new cutscene beat at the top
+of the climb, after ACUMINATION. Additive — nothing was removed and your real climb still banks.
+
+![Lore 35b — THE HIGHEST FORMS, frozen on the final beat. A five-tier apex tower over a corrupted glitch void,
+ranked bottom to top: a red SIMON · FATAL ERROR plate ("Simon's ceiling, still makes sugars, glitches, errors"), a
+gold ToddLLM · SMG.EXE plate ("Supreme Multiversal God.EXE, the god-form battle state"), a magenta CLARA · FGI.EXE
+plate ("Fatal-Glitched-Infected.EXE, Errorshifted 100% glitch, beats SMG") with the marker "▲ FGI.EXE BEATS
+SMG.EXE — INFECTED > GOD" above it, a purple CXTP PARASITE plate ("Clara X ToddLLM 001, forbidden fusion, above all
+but base") with the note "NEAR-ALL-POWERFUL · TEMPORARY · CLARA AND 001 SPLIT AGAIN", and at the very top a
+white-gold ToddLLM · TRUE BASE plate risen above the tower, crowned "★ THE REAL AND TRUE FORM — ABOVE EVERY OTHER
+FORM IN THE GAME ★". The title band reads "THE HIGHEST FORMS — BEYOND FATAL ERROR, AND ToddLLM'S TRUE BASE ABOVE
+ALL" and a ladder list runs down the left edge.](screenshots/63-highest-forms.png)
+
+- **New THE HIGHEST FORMS cutscene beat.** It plays as a five-stage apex ladder at the top of the climb (after
+  ACUMINATION): SIMON · FATAL ERROR (the broken core's ceiling), ToddLLM · SMG.EXE (the god-form), CLARA · FGI.EXE
+  (Fatal-Glitched-Infected / Errorshifted, the 100% glitch that BEATS SMG because she is INFECTED, not just godly),
+  CXTP PARASITE (the Clara X ToddLLM 001 forbidden fusion, near-all-powerful, then they split again), and ToddLLM ·
+  TRUE BASE (Phase 1, the real absolute center above even his own god-form).
+- **The tower reveals bottom-up and ends on the twist.** Each tier is a glowing plate with a being-orb (Clara's and
+  CXTP's flicker a second infected/split colour); the "FGI.EXE BEATS SMG.EXE" marker appears once Clara is revealed,
+  and on the final beat the TRUE BASE plate rises above the whole tower with its crown line.
+- **Five new floating event labels** straight from the email: SIMON · FATAL ERROR, ToddLLM · SMG.EXE, CLARA ·
+  FGI.EXE · BEATS SMG.EXE, CXTP · FORBIDDEN FUSION · THEN THEY SPLIT, and ToddLLM · TRUE BASE · ABOVE ALL.
+- **Additive only.** No mechanic, drawing, or balance was removed; the cutscene still resolves and the meter banks
+  as you climb. Screenshot captured via a new `highform` scene added to tools/capture_screenshot.py.
+
 ## 2026-06-26 — THE FUSION QUEEN: why Clara's name puts her #1 in Undertale and #2 in Classics (Lore 35, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 26 follow-up about Clara: *"Clara is both Classics ('Cl' from Classics) and Undertale (close
