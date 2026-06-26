@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — THE FUSION QUEEN: why Clara's name puts her #1 in Undertale and #2 in Classics (Lore 35, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 26 follow-up about Clara: *"Clara is both Classics ('Cl' from Classics) and Undertale (close
+to CHARA), she'd be most powerful in Undertale, and is second most powerful in Classics."* Toby's own summary:
+*"Clara is the Undertale-Classics fusion queen: the top force in Undertale terms, and the second-highest force in
+Classics terms."* The game already had Clara as THE ETERNAL BATTLE / the Judgement Hall queen, "both Undertale and
+Classics at once." This adds the *reason* behind that line: her name is the bridge ("Cl" = Classics, the rest close
+to Chara = Undertale), so she ranks apex on one side and second on the other. Built additively into the existing
+ETERNAL BATTLE cutscene — nothing was removed and your real climb still banks.
+
+![Lore 35 — THE ETERNAL BATTLE, now showing the FUSION QUEEN ranking. In Clara's Judgement Hall the gold KING
+(Simon) dodges forever while the RGB-split glitch QUEEN (Clara) attacks forever. Below the verdict strip ("NEITHER
+CAN LOSE · DRAWS DO NOT EXIST · THE BATTLE GOES ON FOREVER") sits a new two-cell badge headed "THE FUSION QUEEN ·
+'Cl'=CLASSICS + chARA=UNDERTALE": a cyan cell reads "IN UNDERTALE · #1 · APEX" and a magenta cell reads "IN
+CLASSICS · #2 · BELOW 001." The broken MERCY button is still struck out above, and the cycling footnote carries
+Toby's new lines about the bridge-name.](screenshots/62-clara-fusion-queen.png)
+
+- **New FUSION QUEEN ranking badge.** Inside the ETERNAL BATTLE / Judgement Hall cutscene, a two-cell badge now
+  shows Clara's rank on each side: #1 (apex) in Undertale, #2 (below 001) in Classics, with the name-origin header
+  "'Cl'=CLASSICS + chARA=UNDERTALE." Placed left of Clara's figure so nothing overlaps.
+- **Four new cycling lore lines** straight from Toby's email: the bridge-name, "the Undertale-Classics fusion
+  queen," the per-side ranking, and "she is built from both at the same time" join the footnote rotation.
+- **Five new floating event labels:** THE FUSION QUEEN, #1 IN UNDERTALE, #2 IN CLASSICS, Cl + chARA = CLARA, SHE
+  BELONGS TO BOTH.
+- **Additive only.** No mechanic, drawing, or balance was removed; the cutscene still rebirths and the meter still
+  banks as you climb. Screenshot captured via the existing `clara` scene in tools/capture_screenshot.py.
+
 ## 2026-06-26 — ACUMINATION: the whole cast fuses into one being, and 001 still beats it easily (Lore 34, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 26 follow-up, which gives the "everyone fused together" answer to ToddLLM: *"Luigi Green and

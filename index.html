@@ -5968,11 +5968,17 @@ const CLARA_NOTES = [
   'Clara is both Undertale and Classics at once.',
   'Clara is not a sprite. Her design is complex: saturation and contrast.',
   'A green cloak, a tanish body, an aura of colors not made yet.',
+  // Lore 35 (June 26) — Toby explains WHY she sits where she sits on each side. Her name is the bridge.
+  'Her name is the bridge: "Cl" from Classics, the rest close to Chara from Undertale.',
+  'Clara is the Undertale-Classics fusion queen. She belongs to both sides at once.',
+  'In Undertale terms Clara is the most powerful. In Classics she is second, below 001.',
+  'She is not a visitor from one side. She is built from both at the same time.',
 ];
 const CLARA_EVENTS = ['THE ETERNAL BATTLE','KING vs QUEEN','NEITHER CAN LOSE','DRAWS DO NOT EXIST',
   'CLARA — CANONICALLY STRONGER','THE MERCY BUTTON IS BROKEN','SIMON DODGES FOREVER','CLARA ATTACKS FOREVER',
   'CLARA REBIRTHS STRONGER','HER JUDGEMENT HALL','GLITCHIER THAN ALL OF CLASSICS','BOTH UNDERTALE AND CLASSICS',
-  'AN AURA OF SO MANY COLORS','THE BATTLE GOES ON FOREVER'];
+  'AN AURA OF SO MANY COLORS','THE BATTLE GOES ON FOREVER',
+  'THE FUSION QUEEN','#1 IN UNDERTALE','#2 IN CLASSICS','Cl + chARA = CLARA','SHE BELONGS TO BOTH'];
 // impossible colors for Clara's aura — saturated, high-contrast, shifting
 const CLARA_AURA = ['#39e0a8','#7a8c4a','#caa97a','#ff3bd0','#3bf0ff','#b9ff3b','#ff7b00','#9a3bff'];
 
@@ -6185,6 +6191,25 @@ function drawClara(){
   // rebirth counter — climbs forever, each cycle stronger
   ctx.fillStyle = `rgba(255,123,0,${0.9*g})`; ctx.font='800 8px ui-monospace,monospace';
   ctx.fillText('CLARA REBIRTHS STRONGER ×'+(clara.rebirth||0), bx+bw/2, vY+27);
+
+  // ---- THE FUSION QUEEN badge (Lore 35, Toby June 26): her name bridges both worlds, so she ranks
+  //      apex in Undertale and second (below 001) in Classics. Kept left of Clara's figure (at bw*0.72). ----
+  const fbCW = bw*0.22, fbGap = bw*0.03, fbTotalW = fbCW*2 + fbGap;
+  const fbX = bx + bw*0.40 - fbTotalW/2, fbY = vY + 44, fbH = 28;
+  ctx.textAlign='center';
+  ctx.fillStyle = `rgba(202,255,230,${0.92*g})`; ctx.font='800 7px ui-monospace,monospace';
+  ctx.fillText('THE FUSION QUEEN · "Cl"=CLASSICS + chARA=UNDERTALE', fbX+fbTotalW/2, fbY-5);
+  const fbCell = function(cx0, label, rank, col){
+    ctx.fillStyle = `rgba(10,16,18,${0.72*g})`;
+    ctx.strokeStyle = col; ctx.lineWidth = 1.2;
+    ctx.fillRect(cx0, fbY, fbCW, fbH); ctx.strokeRect(cx0, fbY, fbCW, fbH);
+    ctx.fillStyle = col; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText(label, cx0+fbCW/2, fbY+12);
+    ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText(rank, cx0+fbCW/2, fbY+24);
+  };
+  fbCell(fbX, 'IN UNDERTALE', '#1 · APEX', '#3bf0ff');
+  fbCell(fbX+fbCW+fbGap, 'IN CLASSICS', '#2 · BELOW 001', '#ff3bd0');
   ctx.textAlign='left';
 
   // ---- footer: a cycling Clara note (straight from Toby) ----
