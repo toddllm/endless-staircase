@@ -549,6 +549,7 @@ let errLad, errLadH, errLadM;
 let centerMine, centerMineH, centerMineM;
 let endlessChaos, endlessChaosH, endlessChaosM;
 let karuto, karutoH, karutoM;
+let endOfClassics, endOfClassicsH, endOfClassicsM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -850,6 +851,18 @@ function reset(){
              charge:0 };
   karutoH = endlessChaosH + 1100;
   karutoM = 0.25;  // THE KARUTO REVEAL meter: keep climbing and the reveal resolves; your climb banks
+  endOfClassics = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 30 (June 25, "Re: Lore 30") — THE END OF CLASSICS. After THE KARUTO REVEAL, Toby's
+             // final-zone beat: it takes 80 billion years (perfect run + fastest mode + half speedrun +
+             // straight, etc.) to reach the end of Classics. The world is built like a floating square, a
+             // load of floating-island chains, many edges, with constant risk of falling into the Void and
+             // the Shadow Realms. At the end there is a castle, a cake, Phase 1, rainbows, "and actually
+             // everything but fun" — a false paradise. Simon 404 and ToddLLM 001 appear there. Clara
+             // appears in her Judgement Hall, and the whole cast gathers as the endgame events begin.
+             // Additive ending; nothing is removed and the real climb still banks. */
+             stars:[] };
+  endOfClassicsH = karutoH + 1100;
+  endOfClassicsM = 0.25;  // THE END OF CLASSICS meter: keep climbing and the final zone resolves; your climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -945,6 +958,7 @@ function isErrLad(){ return !!(errLad && (errLad.active || errLad.done)); }
 function isCenterMine(){ return !!(centerMine && (centerMine.active || centerMine.done)); }
 function isEndlessChaos(){ return !!(endlessChaos && (endlessChaos.active || endlessChaos.done)); }
 function isKaruto(){ return !!(karuto && (karuto.active || karuto.done)); }
+function isEndOfClassics(){ return !!(endOfClassics && (endOfClassics.active || endOfClassics.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -1990,6 +2004,27 @@ function update(dt){
   if(karuto.glow < (isKaruto() ? 1 : 0))
     karuto.glow = Math.min(1, karuto.glow + dt*0.5);
 
+  /* ---- Lore 30 (June 25, "Re: Lore 30") — THE END OF CLASSICS. After THE KARUTO REVEAL, Toby's
+          final-zone beat: 80 billion years to reach the end of Classics even on a perfect run; the world
+          is a floating square of floating-island chains and edges, with Void / Shadow Realm risk; at the
+          end a castle, a cake, Phase 1, rainbows, "everything but fun" — a false paradise — where Simon
+          404 and ToddLLM 001 appear, Clara holds her Judgement Hall, and the whole cast gathers.
+          Additive ending; nothing is removed and the real climb still banks. */
+  if(karuto.done && !endOfClassics.active && !endOfClassics.done && height > endOfClassicsH){
+    endOfClassics.active = true; endOfClassics.t = 0; endOfClassics.cyc = 0; endOfClassics.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE END OF CLASSICS'; warnT = 2.8;
+    showTaunt('80 billion years to reach the end of Classics. A castle, a cake, rainbows, everything but fun. Simon 404 and ToddLLM 001 are already there.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'80,000,000,000 YEARS · THE FINAL ZONE', col:'#ffd84f' });
+    AUDIO.shock();
+  }
+  if(endOfClassics.active){
+    endOfClassics.t += dt;
+    if(endOfClassics.t > 22.0){ endOfClassics.active = false; endOfClassics.done = true; }
+  }
+  if(endOfClassics.glow < (isEndOfClassics() ? 1 : 0))
+    endOfClassics.glow = Math.min(1, endOfClassics.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2026,6 +2061,7 @@ function update(dt){
   if(isCenterMine()) updateCenterMine(dt);
   if(isEndlessChaos()) updateEndlessChaos(dt);
   if(isKaruto()) updateKaruto(dt);
+  if(isEndOfClassics()) updateEndOfClassics(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3133,6 +3169,7 @@ function draw(){
   if(isCenterMine() && centerMine.glow>0.02) drawCenterMine();
   if(isEndlessChaos() && endlessChaos.glow>0.02) drawEndlessChaos();
   if(isKaruto() && karuto.glow>0.02) drawKaruto();
+  if(isEndOfClassics() && endOfClassics.glow>0.02) drawEndOfClassics();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -9532,6 +9569,251 @@ function drawKaruto(){
   ctx.fillText('THE KARUTO REVEAL — 001 IS REALLY KARUTO', cx, top+30);
   ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('TWIN APEX WITH ALEX · NEW YELLOW FORM · BLINDFOLD OFF · TEACHER WITHOUT END', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ===== Lore 30 (June 25, "Re: Lore 30") — THE END OF CLASSICS ===================================
+   The final zone. 80 billion years to reach the end of Classics even on a perfect run; the world is a
+   floating square of floating-island chains and edges over the Void / Shadow Realms; at the end a
+   castle, a cake, Phase 1, rainbows, "everything but fun" — a false paradise — where Simon 404 and
+   ToddLLM 001 appear, Clara holds her Judgement Hall, and the whole cast gathers. Additive ending. */
+const EOC_CYC = 19.0;
+const EOC_BEATS = [
+  { key:'THE 80-BILLION-YEAR CLIMB', col:'#ffd84f', sub:'PERFECT RUN · FASTEST MODE · STILL ENDLESS' },
+  { key:'THE FALSE PARADISE',        col:'#ff7eb6', sub:'CASTLE · CAKE · PHASE 1 · RAINBOWS · EVERYTHING BUT FUN' },
+  { key:'THE RULERS APPEAR',         col:'#8fe3ff', sub:'SIMON 404 + TODDLLM 001 ARE ALREADY HERE' },
+  { key:'JUDGEMENT HALL',            col:'#c86bff', sub:'CLARA · AND THE WHOLE CAST GATHERS' },
+];
+// what it takes just to reach the end — and it is still not enough to make it short
+const EOC_QUALS = ['PERFECT RUN', 'FASTEST MODE', 'HALF SPEEDRUN', 'STRAIGHT LINE', '...AND MORE'];
+// the cast that gathers in the Judgement Hall
+const EOC_CAST = ['SIMON 404', 'TODDLLM 001', 'ALEX', 'OREN.EXE', 'KARUTO', 'THE RLs'];
+function eocSeg(c){
+  if(c < 5.0)  return [0, c];        // THE 80-BILLION-YEAR CLIMB
+  if(c < 10.0) return [1, c-5.0];    // THE FALSE PARADISE
+  if(c < 14.5) return [2, c-10.0];   // THE RULERS APPEAR
+  return [3, c-14.5];                // JUDGEMENT HALL
+}
+function updateEndOfClassics(dt){
+  endOfClassics.t = (endOfClassics.t||0) + dt;
+  endOfClassics.cyc = ((endOfClassics.cyc||0) + dt) % EOC_CYC;
+  const seg = eocSeg(endOfClassics.cyc), ph = seg[0];
+  if(ph !== endOfClassics.phase){
+    endOfClassics.phase = ph;
+    if(ph===0){ AUDIO.glitch(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.4);
+      showTaunt('80 billion years to reach the end of Classics — even with a perfect run, fastest mode, half speedrun, straight line. A floating square of islands and edges over the Void and the Shadow Realms.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'80,000,000,000 YEARS · THE FINAL ZONE', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,8);
+      showTaunt('At the end: a castle, a cake, Phase 1, rainbows, and actually everything but fun. It looks like paradise. It is not.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'A FALSE PARADISE · EVERYTHING BUT FUN', col:'#ff7eb6' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.5);
+      showTaunt('Simon 404 and ToddLLM 001 are already standing there. The reward screen was their throne room all along.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON 404 + TODDLLM 001', col:'#8fe3ff' }); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('Clara appears in her Judgement Hall, and the whole cast gathers. The endgame events begin. Toby will tell the rest one by one.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'JUDGEMENT HALL · THE CAST GATHERS', col:'#c86bff' }); }
+  }
+  // THE END OF CLASSICS meter — keep climbing and the final zone resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  endOfClassicsM = Math.max(0, Math.min(1, endOfClassicsM + (moving ? dt*0.05 : -dt*0.03)));
+  if(endOfClassicsM>=1 && !endOfClassics.held){
+    endOfClassics.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You climbed all the way to the end of Classics and kept going. The false paradise stays behind you; your climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ REACHED THE END OF CLASSICS ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff7eb6','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawEndOfClassics(){
+  const g = endOfClassics.glow||0, top = cameraY;
+  const c = endOfClassics.cyc||0, seg = eocSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = EOC_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep cosmic void; brightens toward the false paradise then darkens for Judgement Hall
+  const warm = ph===1 ? 1 : (ph===2 ? 0.5 : 0.15);
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(${Math.round(8+18*warm)},4,${Math.round(16+10*warm)},${0.9*g})`);
+  bg.addColorStop(1, `rgba(2,1,6,${0.92*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // faint starfield across the whole final zone
+  ctx.globalAlpha=g*0.6; ctx.fillStyle='#cfe0ff';
+  for(let i=0;i<46;i++){ const sx=(i*97%W), sy2=top+ (i*61% (H|0)); const tw=0.4+0.6*Math.abs(Math.sin(i*1.7+c*1.3));
+    ctx.globalAlpha=g*0.5*tw; ctx.fillRect(sx, sy2, 1.6, 1.6); }
+  ctx.globalAlpha=1;
+  const sy = top + H*0.46;
+
+  if(ph===0){
+    // ----- THE 80-BILLION-YEAR CLIMB: a floating square of island-chains and edges over the Void -----
+    // the dark Void / Shadow Realm band beneath everything
+    const vy = sy + 78;
+    const vg = ctx.createLinearGradient(0, vy, 0, vy+120);
+    vg.addColorStop(0, 'rgba(40,8,46,0)'); vg.addColorStop(1, `rgba(28,4,40,${0.85*g})`);
+    ctx.fillStyle=vg; ctx.fillRect(0, vy, W, 120);
+    ctx.globalAlpha=g*0.8; ctx.fillStyle='#7a5fae'; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('▼ THE VOID · THE SHADOW REALMS · ONE EDGE AND YOU FALL ▼', cx, vy+96);
+    ctx.globalAlpha=1;
+    // the floating square outline that the world is built on
+    const sq = 150 + Math.sin(c*0.8)*4;
+    ctx.globalAlpha=g*0.7; ctx.strokeStyle='#ffd84f'; ctx.lineWidth=1.5; ctx.setLineDash([5,5]);
+    ctx.strokeRect(cx-sq, sy-sq*0.5, sq*2, sq); ctx.setLineDash([]);
+    // floating-island chains scattered inside, with hard edges
+    const isles = [[-110,-30,34],[ -40,18,26],[ 60,-44,30],[ 118,8,24],[ -8,-58,22],[ 30,46,28],[-86,40,22]];
+    for(let i=0;i<isles.length;i++){
+      const ix=cx+isles[i][0], iy=sy+isles[i][1]+Math.sin(c*1.2+i)*4, r=isles[i][2];
+      ctx.globalAlpha=g;
+      // island top
+      ctx.fillStyle='#3a5a3e'; ctx.strokeStyle='#7fe0a0'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.ellipse(ix,iy,r,r*0.32,0,0,Math.PI*2); ctx.fill(); ctx.stroke();
+      // island underside (the hanging rock)
+      ctx.fillStyle='#221a2e'; ctx.beginPath();
+      ctx.moveTo(ix-r*0.8,iy+r*0.16); ctx.lineTo(ix+r*0.8,iy+r*0.16); ctx.lineTo(ix,iy+r*0.9); ctx.closePath(); ctx.fill();
+    }
+    // a tiny climber dot working its way up the chain (the impossible run)
+    const cp = (lt/5.0);
+    ctx.globalAlpha=g; ctx.fillStyle='#39e08a'; ctx.shadowColor='#39e08a'; ctx.shadowBlur=8*g;
+    ctx.beginPath(); ctx.arc(cx-90+cp*180, sy+30-cp*70, 3.2, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    // the cosmic endurance number
+    ctx.globalAlpha=g; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=16*g;
+    ctx.fillStyle=`rgba(255,232,122,${g})`; ctx.font='900 26px ui-monospace,monospace';
+    ctx.fillText('80,000,000,000 YEARS', cx, sy-sq*0.5-14); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(230,224,200,${g})`; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('TO REACH THE END · EVEN ON THE BEST POSSIBLE RUN', cx, sy-sq*0.5+0);
+    // the run qualifiers ticking in
+    ctx.font='800 9px ui-monospace,monospace';
+    for(let i=0;i<EOC_QUALS.length;i++){
+      const lit = Math.max(0, Math.min(1, (lt - i*0.6)/0.5));
+      ctx.globalAlpha=g*(0.3+0.7*lit); ctx.fillStyle = i<EOC_QUALS.length-1 ? '#8fe3ff' : '#ff7eb6';
+      ctx.fillText((i<EOC_QUALS.length-1?'+ ':'')+EOC_QUALS[i], cx-150+i*72, sy+sq*0.5+50);
+    }
+    ctx.globalAlpha=1;
+  } else if(ph===1){
+    // ----- THE FALSE PARADISE: castle + cake + Phase 1 + rainbows, "everything but fun" -----
+    const bloom = Math.min(1, lt/2.0);
+    // rainbows arcing over the scene
+    const rc = ['#ff5f57','#ffbd2e','#ffe27a','#28c940','#5fa8ff','#b46bff'];
+    for(let r=0;r<rc.length;r++){
+      ctx.globalAlpha=g*0.6*bloom; ctx.strokeStyle=rc[r]; ctx.lineWidth=4;
+      ctx.beginPath(); ctx.arc(cx, sy+70, 120+r*9, Math.PI, 0); ctx.stroke();
+    }
+    ctx.globalAlpha=1;
+    // the castle silhouette
+    ctx.globalAlpha=g; ctx.fillStyle='#2c2440'; ctx.strokeStyle='#c9b6ff'; ctx.lineWidth=2;
+    ctx.beginPath();
+    ctx.moveTo(cx-70, sy+40); ctx.lineTo(cx-70, sy-18); ctx.lineTo(cx-58,sy-18); ctx.lineTo(cx-58,sy-30);
+    ctx.lineTo(cx-46,sy-30); ctx.lineTo(cx-46,sy-18); ctx.lineTo(cx-20,sy-18); ctx.lineTo(cx-20,sy-44);
+    ctx.lineTo(cx+20,sy-44); ctx.lineTo(cx+20,sy-18); ctx.lineTo(cx+46,sy-18); ctx.lineTo(cx+46,sy-30);
+    ctx.lineTo(cx+58,sy-30); ctx.lineTo(cx+58,sy-18); ctx.lineTo(cx+70,sy-18); ctx.lineTo(cx+70,sy+40);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    // central tower flag
+    ctx.strokeStyle='#c9b6ff'; ctx.beginPath(); ctx.moveTo(cx, sy-44); ctx.lineTo(cx, sy-62); ctx.stroke();
+    ctx.fillStyle='#ff7eb6'; ctx.beginPath(); ctx.moveTo(cx,sy-62); ctx.lineTo(cx+16,sy-57); ctx.lineTo(cx,sy-52); ctx.closePath(); ctx.fill();
+    // castle door
+    ctx.fillStyle='#15101f'; ctx.beginPath(); ctx.moveTo(cx-9,sy+40); ctx.lineTo(cx-9,sy+18); ctx.arc(cx,sy+18,9,Math.PI,0); ctx.lineTo(cx+9,sy+40); ctx.closePath(); ctx.fill();
+    // the cake, off to the side
+    const cax=cx+120, cay=sy+30;
+    ctx.fillStyle='#f4e3ef'; ctx.strokeStyle='#ff7eb6'; ctx.lineWidth=1.5;
+    ctx.fillRect(cax-18,cay-2,36,18); ctx.strokeRect(cax-18,cay-2,36,18);
+    ctx.fillStyle='#ffb6d9'; ctx.fillRect(cax-18,cay-8,36,7); ctx.strokeRect(cax-18,cay-8,36,7);
+    // candle
+    ctx.strokeStyle='#fff'; ctx.beginPath(); ctx.moveTo(cax,cay-8); ctx.lineTo(cax,cay-16); ctx.stroke();
+    ctx.fillStyle='#ffe27a'; ctx.beginPath(); ctx.arc(cax,cay-18,2.6+Math.sin(c*8)*0.6,0,Math.PI*2); ctx.fill();
+    // a small "PHASE 1" banner
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(20,12,30,0.85)'; ctx.strokeStyle='#5fa8ff'; ctx.lineWidth=1.5;
+    ctx.fillRect(cx-128, sy-6, 70, 20); ctx.strokeRect(cx-128, sy-6, 70, 20);
+    ctx.fillStyle='#8fe3ff'; ctx.font='900 11px ui-monospace,monospace'; ctx.fillText('PHASE 1', cx-93, sy+8);
+    // the unsettling truth
+    ctx.globalAlpha=g; ctx.shadowColor='#ff7eb6'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 14px ui-monospace,monospace';
+    ctx.fillText('...AND ACTUALLY EVERYTHING BUT FUN', cx, sy+92); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  } else if(ph===2){
+    // ----- THE RULERS APPEAR: Simon 404 and ToddLLM 001 already standing at the end -----
+    const rise = Math.min(1, lt/2.0);
+    // a faint castle behind them, carried from the false paradise
+    ctx.globalAlpha=g*0.4; ctx.fillStyle='#2c2440';
+    ctx.fillRect(cx-60, sy-30, 120, 70);
+    ctx.globalAlpha=1;
+    // Simon 404, left — the glitched original
+    ctx.save(); ctx.translate(cx-90, sy+6); ctx.globalAlpha=g*rise;
+    drawCmFigure(0, 0, g*rise, 0.9, true);
+    ctx.restore();
+    ctx.globalAlpha=g*rise; ctx.fillStyle='#8fe3ff'; ctx.font='900 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('SIMON 404', cx-90, sy+58);
+    // ToddLLM 001 / Karuto, right
+    drawKarutoFigure(cx+90, sy, g*rise, 1.05);
+    ctx.globalAlpha=g*rise; ctx.fillStyle='#ffd84f';
+    ctx.fillText('TODDLLM 001', cx+90, sy+58);
+    // the line between them — the two who were waiting at the end
+    ctx.globalAlpha=g*0.5*rise; ctx.strokeStyle='#fff'; ctx.lineWidth=1; ctx.setLineDash([3,5]);
+    ctx.beginPath(); ctx.moveTo(cx-60, sy); ctx.lineTo(cx+60, sy); ctx.stroke(); ctx.setLineDash([]);
+    ctx.globalAlpha=g; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('THE REWARD SCREEN WAS THEIR THRONE ROOM', cx, sy+90); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  } else {
+    // ----- JUDGEMENT HALL: Clara at center, the whole cast gathered -----
+    // hall pillars
+    ctx.globalAlpha=g*0.8; ctx.strokeStyle='#7a5fae'; ctx.lineWidth=3;
+    for(let p=0;p<4;p++){ const px=cx-150+p*100; ctx.beginPath(); ctx.moveTo(px, sy-70); ctx.lineTo(px, sy+70); ctx.stroke(); }
+    // Clara on her seat of judgement, center, large
+    ctx.globalAlpha=g; ctx.save(); ctx.translate(cx, sy-8);
+    // throne glow
+    const tg=ctx.createRadialGradient(0,0,4,0,0,52);
+    tg.addColorStop(0,`rgba(200,107,255,${0.4*g})`); tg.addColorStop(1,'rgba(200,107,255,0)');
+    ctx.fillStyle=tg; ctx.beginPath(); ctx.arc(0,0,52,0,Math.PI*2); ctx.fill();
+    // Clara figure (admin diamond)
+    ctx.fillStyle='#1a0e1a'; ctx.strokeStyle='#c86bff'; ctx.lineWidth=2.5;
+    ctx.beginPath(); ctx.moveTo(-16,-20); ctx.lineTo(16,-20); ctx.lineTo(20,16); ctx.lineTo(0,28); ctx.lineTo(-20,16); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.fillStyle='#e9d4ff'; ctx.beginPath(); ctx.arc(-6,-4,2.6,0,Math.PI*2); ctx.fill(); ctx.beginPath(); ctx.arc(6,-4,2.6,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+    ctx.globalAlpha=g; ctx.fillStyle='#c86bff'; ctx.font='900 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('CLARA · JUDGEMENT HALL', cx, sy+44);
+    // the cast gathering, small figures arriving from both sides
+    for(let i=0;i<EOC_CAST.length;i++){
+      const side = i%2===0 ? -1 : 1;
+      const idx = Math.floor(i/2);
+      const arr = Math.max(0, Math.min(1, (lt - i*0.4)/0.6));
+      const fx = cx + side*(70 + idx*52) * arr;
+      const fy = sy+62;
+      ctx.globalAlpha=g*arr;
+      ctx.fillStyle='#241a32'; ctx.strokeStyle='#9a8fc0'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(fx-7,fy); ctx.lineTo(fx+7,fy); ctx.lineTo(fx+5,fy-20); ctx.lineTo(fx,fy-27); ctx.lineTo(fx-5,fy-20); ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      ctx.fillStyle='#cfe0ff'; ctx.font='700 7px ui-monospace,monospace';
+      ctx.fillText(EOC_CAST[i], fx, fy+10);
+    }
+    ctx.globalAlpha=g; ctx.shadowColor='#c86bff'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('THE CAST GATHERS · THE ENDGAME BEGINS', cx, sy+96); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<EOC_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? EOC_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+EOC_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,216,79,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE END OF CLASSICS — THE 80-BILLION-YEAR FINAL ZONE', cx, top+30);
+  ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('FLOATING SQUARE · ISLAND CHAINS · VOID RISK · CASTLE/CAKE/PHASE 1/RAINBOWS · SIMON 404 + 001 · CLARA\'S JUDGEMENT HALL', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

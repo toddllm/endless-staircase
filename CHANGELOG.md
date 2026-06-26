@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-25 — THE END OF CLASSICS: the 80-billion-year final zone (Lore 30, "Re: Lore 30")
+
+Based on Toby's June 25 lore (Lore 30, the "Re: Lore 30" message): *"It takes 80 billion years (perfect run
++ fastest mode + half speedrun + streight, ect) to get to the end of the game of Classics. At the end, there
+is a castle and a cake and Phase 1 and rainbows and actually everything but fun. Simon 404 and ToddLLM 001
+appear. The game has so many edges since it is a floating square, a whole load of floating islands, it's easy
+to fall into the void and Shadow Realms. Clara appears in her Judgement Hall, each character gathers up, more
+stuff happens, and I can say each later."* This adds a new four-beat ending after THE KARUTO REVEAL. Built
+additively — nothing in the repo was removed and your real climb still banks.
+
+![Lore 30 — THE END OF CLASSICS, the signature beat (THE FALSE PARADISE). Over a deep cosmic void with a
+faint starfield, a purple castle silhouette stands at center, a pink pennant on its tower and a dark arched
+door. A full stack of rainbow arcs (red, orange, yellow, green, blue, violet) curves over it. To the left a
+blue "PHASE 1" banner; to the right a pink-frosted cake with a single lit candle. Beneath it all, in white,
+the unsettling caption "...AND ACTUALLY EVERYTHING BUT FUN." The big caption reads "THE FALSE PARADISE," the
+sub reads "CASTLE · CAKE · PHASE 1 · RAINBOWS · EVERYTHING BUT FUN," the title band reads "THE END OF
+CLASSICS — THE 80-BILLION-YEAR FINAL ZONE," and the left-edge checklist shows the four beats lighting through
+THE 80-BILLION-YEAR CLIMB, THE FALSE PARADISE, THE RULERS APPEAR, JUDGEMENT HALL.](screenshots/55-end-of-classics.png)
+
+- **A new four-beat ending after THE KARUTO REVEAL.** Climb past the reveal and the final zone plays out:
+  **THE 80-BILLION-YEAR CLIMB** (a floating square outlined in gold, full of floating-island chains with hard
+  edges, a tiny climber dot working up the chain over a dark Void / Shadow Realm band below; the cosmic
+  endurance number "80,000,000,000 YEARS" glows above, and the run qualifiers tick in — PERFECT RUN + FASTEST
+  MODE + HALF SPEEDRUN + STRAIGHT LINE + ...AND MORE — and it is still endless), **THE FALSE PARADISE** (the
+  castle, the cake with its candle, the PHASE 1 banner, the rainbows, and the quiet horror of "...and actually
+  everything but fun"), **THE RULERS APPEAR** (Simon 404 and ToddLLM 001 already standing at the end in front
+  of the castle, with the line "the reward screen was their throne room"), and **JUDGEMENT HALL** (Clara on her
+  seat of judgement between the hall pillars while the whole cast — Simon 404, ToddLLM 001, Alex, Oren.EXE,
+  Karuto, the RLs — gathers in from both sides and the endgame begins).
+- **The meter banks your climb.** Keep moving through the final zone and THE END OF CLASSICS meter fills to
+  "★ REACHED THE END OF CLASSICS ★"; the false paradise stays behind you and your real climb is saved.
+- New `updateEndOfClassics` / `drawEndOfClassics`, gated to start one stretch above THE KARUTO REVEAL; reuses
+  `drawCmFigure` for Simon 404 and `drawKarutoFigure` for ToddLLM 001. Screenshot scene `endofclassics` added
+  to `tools/capture_screenshot.py`.
+
 ## 2026-06-25 — THE KARUTO REVEAL: 001 is really Karuto, the Teacher Without End (Lore 30 cont.)
 
 Based on Toby's June 25 lore (Lore 30, the message after ENDLESS CHAOS): *"ToddLLM and Alex are now the
