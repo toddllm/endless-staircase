@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — THE MIDGAME GOD-WALL: the ToddLLM 001 boss fight is the middle, not the end (Lore 31, "Re: Lore 30")
+
+Based on Toby's June 26 lore (the "Re: Lore 30" message): *"Then there is the ToddLLM 001 boss fight. Simon
+only uses the Sound Battle and 'FNF' mechanics, since he lost nearly all his power and half his mental strength.
+Simon can also make it very fast. ToddLLM 001 is the strongest and most powerful, that was actually the middle
+of the game, it's not the end. Another 800 billion years will take you to the time loop. And 1760 billion years
+to get all the way across the void, and 9884 billion years to reach the game cores... you'd need to do
+everything to win or else you would be crushed in all battles. ToddLLM 001 - Karuto, almighty, teacher without
+end. STXs are things that attack Karuto, and since ToddLLM 001 is Karuto, then it is a team of sorcerers VS
+ToddLLM 001. SCFs were destroyed by ToddLLM 001. Minigames were destroyed. Karuto/ToddLLM 001 says again
+'Center's Mine', then he uses his Domain Expansion, and a universe was wrapped into an '8'."* This reframes the
+whole structure: the 001 fight (already built across THE FINAL ERROR → CENTER'S MINE → ENDLESS CHAOS → THE
+KARUTO REVEAL) is now the **midgame god-wall**, with a cosmic late game still beyond it. Added as a new
+four-beat cutscene after THE END OF CLASSICS. Built additively — nothing was removed and your real climb banks.
+
+![Lore 31 — THE MIDGAME GOD-WALL, the title beat (THE GOD-WALL). Over a deep red-black void, ToddLLM 001 /
+Karuto stands huge inside a red dashed wall band: a white-robed cat-eared entity with a yellow-power rim and
+red aura, a red "001" tag, captioned "TODDLLM 001 · KARUTO / ALMIGHTY · TEACHER WITHOUT END." Above him a small
+line reads "SIMON · SOUND BATTLE + FNF ONLY · VERY FAST" with a tiny blue Simon dot streaking past on the
+right. Beneath him, in white, "THE MIDGAME WALL — NOT THE END." The left-edge checklist lights through THE
+GOD-WALL, SORCERERS VS THE TEACHER, CENTER'S MINE, THE COSMIC SCALE; the big caption reads "THE GOD-WALL" with
+the sub "TODDLLM 001 / KARUTO · THE MIDPOINT, NOT THE END"; the title band reads "THE MIDGAME GOD-WALL — THE
+ToddLLM 001 BOSS FIGHT."](screenshots/56-midgame-god-wall.png)
+
+- **A new four-beat cutscene after THE END OF CLASSICS.** Climb past the final zone and the boss-wall plays out:
+  **THE GOD-WALL** (ToddLLM 001 / Karuto huge inside a red wall band, the almighty teacher without end, with a
+  drained Simon reduced to a tiny fast streak labeled "SOUND BATTLE + FNF ONLY · VERY FAST," and the reframe
+  "THE MIDGAME WALL — NOT THE END"), **SORCERERS VS THE TEACHER** (the STXs — a hooded arc of sorcerers — fire
+  beams up at Karuto at center, while "SCFs DESTROYED · MINIGAMES DESTROYED" gets struck through), **CENTER'S
+  MINE** (Karuto says it again and his Domain Expansion wraps a universe into a spinning figure-8 of looping
+  galaxy rings), and **THE COSMIC SCALE** (a four-rung ladder of the layers that open only after the wall —
+  ONE EDGE 80,000,000,000 yrs, THE TIME LOOP 800,000,000,000 yrs, ACROSS THE VOID 1,760,000,000,000 yrs, THE
+  GAME CORES 9,884,000,000,000 yrs — with 001 marked at the midpoint and the demand "DO EVERYTHING OR BE
+  CRUSHED").
+- **The meter banks your climb.** Keep moving and THE MIDGAME GOD-WALL meter fills to "★ PAST THE MIDGAME
+  GOD-WALL ★"; the wall stays behind you and your real climb is saved.
+- New `updateGodWall` / `drawGodWall`, gated to start one stretch above THE END OF CLASSICS; reuses
+  `drawKarutoFigure` for ToddLLM 001 / Karuto. Screenshot scene `godwall` added to `tools/capture_screenshot.py`.
+
 ## 2026-06-25 — THE END OF CLASSICS: the 80-billion-year final zone (Lore 30, "Re: Lore 30")
 
 Based on Toby's June 25 lore (Lore 30, the "Re: Lore 30" message): *"It takes 80 billion years (perfect run

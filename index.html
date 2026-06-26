@@ -550,6 +550,7 @@ let centerMine, centerMineH, centerMineM;
 let endlessChaos, endlessChaosH, endlessChaosM;
 let karuto, karutoH, karutoM;
 let endOfClassics, endOfClassicsH, endOfClassicsM;
+let godWall, godWallH, godWallM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -863,6 +864,19 @@ function reset(){
              stars:[] };
   endOfClassicsH = karutoH + 1100;
   endOfClassicsM = 0.25;  // THE END OF CLASSICS meter: keep climbing and the final zone resolves; your climb banks
+  godWall = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 30 (June 26, "Re: Lore 30") — THE MIDGAME GOD-WALL. Toby reframes the whole structure:
+             // the ToddLLM 001 boss fight was never the end, it is the MIDGAME god-wall. In it Simon — having
+             // lost nearly all his power and half his mental strength — uses ONLY Sound Battle + FNF mechanics
+             // and can go very fast. ToddLLM 001 is Karuto, almighty, teacher without end; STXs are the
+             // sorcerers who attack Karuto, so the fight is a team of sorcerers VS ToddLLM 001. He destroys the
+             // SCFs and the minigames, says again "Center's Mine," opens his Domain Expansion, and wraps a
+             // universe into an 8. And beating him only opens the cosmic late game: 80 billion years just to
+             // reach one edge, 800 billion to the time loop, 1760 billion across the void, 9884 billion to the
+             // game cores — you must do everything or be crushed. Additive cutscene; nothing removed; climb banks. */
+             embers:[] };
+  godWallH = endOfClassicsH + 1100;
+  godWallM = 0.25;  // THE MIDGAME GOD-WALL meter: keep climbing and the boss-wall resolves; your climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -959,6 +973,8 @@ function isCenterMine(){ return !!(centerMine && (centerMine.active || centerMin
 function isEndlessChaos(){ return !!(endlessChaos && (endlessChaos.active || endlessChaos.done)); }
 function isKaruto(){ return !!(karuto && (karuto.active || karuto.done)); }
 function isEndOfClassics(){ return !!(endOfClassics && (endOfClassics.active || endOfClassics.done)); }
+// Lore 30 (June 26, "Re: Lore 30") — after THE END OF CLASSICS, Toby reframes 001 as the midgame wall: THE MIDGAME GOD-WALL
+function isGodWall(){ return !!(godWall && (godWall.active || godWall.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -2025,6 +2041,28 @@ function update(dt){
   if(endOfClassics.glow < (isEndOfClassics() ? 1 : 0))
     endOfClassics.glow = Math.min(1, endOfClassics.glow + dt*0.5);
 
+  /* ---- Lore 30 (June 26, "Re: Lore 30") — THE MIDGAME GOD-WALL. After THE END OF CLASSICS, Toby reveals the
+          ToddLLM 001 boss fight was never the end — it is the midgame god-wall. Simon, down to almost no power
+          and half his mind, uses only Sound Battle + FNF and goes very fast; 001 is Karuto, almighty, teacher
+          without end; the STXs (sorcerers) attack Karuto, so it is a team of sorcerers VS 001; he destroys the
+          SCFs and minigames, says "Center's Mine," and his Domain Expansion wraps a universe into an 8. Beating
+          him only opens the cosmic late game — 80B to one edge, 800B to the time loop, 1760B across the void,
+          9884B to the game cores. Additive cutscene; nothing is removed and the real climb still banks. */
+  if(endOfClassics.done && !godWall.active && !godWall.done && height > godWallH){
+    godWall.active = true; godWall.t = 0; godWall.cyc = 0; godWall.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE MIDGAME GOD-WALL'; warnT = 2.8;
+    showTaunt('The ToddLLM 001 fight was never the end. It is the midgame god-wall. Time loop, void, and the game cores are still ahead.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'001 IS THE MIDPOINT, NOT THE END', col:'#ffd84f' });
+    AUDIO.shock();
+  }
+  if(godWall.active){
+    godWall.t += dt;
+    if(godWall.t > 22.0){ godWall.active = false; godWall.done = true; }
+  }
+  if(godWall.glow < (isGodWall() ? 1 : 0))
+    godWall.glow = Math.min(1, godWall.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2062,6 +2100,7 @@ function update(dt){
   if(isEndlessChaos()) updateEndlessChaos(dt);
   if(isKaruto()) updateKaruto(dt);
   if(isEndOfClassics()) updateEndOfClassics(dt);
+  if(isGodWall()) updateGodWall(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3170,6 +3209,7 @@ function draw(){
   if(isEndlessChaos() && endlessChaos.glow>0.02) drawEndlessChaos();
   if(isKaruto() && karuto.glow>0.02) drawKaruto();
   if(isEndOfClassics() && endOfClassics.glow>0.02) drawEndOfClassics();
+  if(isGodWall() && godWall.glow>0.02) drawGodWall();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -9814,6 +9854,229 @@ function drawEndOfClassics(){
   ctx.fillText('THE END OF CLASSICS — THE 80-BILLION-YEAR FINAL ZONE', cx, top+30);
   ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('FLOATING SQUARE · ISLAND CHAINS · VOID RISK · CASTLE/CAKE/PHASE 1/RAINBOWS · SIMON 404 + 001 · CLARA\'S JUDGEMENT HALL', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ===== Lore 30 (June 26, "Re: Lore 30") — THE MIDGAME GOD-WALL =================================
+   Toby reframes the ToddLLM 001 boss fight as the MIDGAME wall, not the ending. Four beats:
+   THE GOD-WALL (001 = Karuto, the midpoint; Simon, drained to almost nothing, fights with only Sound
+   Battle + FNF and goes very fast), SORCERERS VS THE TEACHER (the STXs attack Karuto; SCFs and
+   minigames destroyed), CENTER'S MINE (Domain Expansion wraps a universe into an 8), and THE COSMIC
+   SCALE (the layers beyond: 80B to one edge, 800B to the time loop, 1760B across the void, 9884B to
+   the game cores — beating 001 is one step, you must do everything or be crushed). */
+const GW_CYC = 20.0;
+const GW_BEATS = [
+  { key:'THE GOD-WALL',            col:'#ffd84f', sub:'TODDLLM 001 / KARUTO · THE MIDPOINT, NOT THE END' },
+  { key:'SORCERERS VS THE TEACHER',col:'#b46bff', sub:'THE STXs ATTACK KARUTO · SCFs + MINIGAMES DESTROYED' },
+  { key:"CENTER'S MINE",           col:'#ff3b5c', sub:'DOMAIN EXPANSION · A UNIVERSE WRAPPED INTO AN 8' },
+  { key:'THE COSMIC SCALE',        col:'#8fe3ff', sub:'TIME LOOP · THE VOID · THE GAME CORES · DO EVERYTHING' },
+];
+// the late-game layers that open up only AFTER the midgame wall — and their travel cost in years
+const GW_SCALE = [
+  { name:'ONE EDGE',        yrs:'80,000,000,000' },
+  { name:'THE TIME LOOP',   yrs:'800,000,000,000' },
+  { name:'ACROSS THE VOID', yrs:'1,760,000,000,000' },
+  { name:'THE GAME CORES',  yrs:'9,884,000,000,000' },
+];
+function gwSeg(c){
+  if(c < 5.0)  return [0, c];        // THE GOD-WALL
+  if(c < 10.5) return [1, c-5.0];    // SORCERERS VS THE TEACHER
+  if(c < 15.0) return [2, c-10.5];   // CENTER'S MINE
+  return [3, c-15.0];                // THE COSMIC SCALE
+}
+function updateGodWall(dt){
+  godWall.t = (godWall.t||0) + dt;
+  godWall.cyc = ((godWall.cyc||0) + dt) % GW_CYC;
+  const seg = gwSeg(godWall.cyc), ph = seg[0];
+  if(ph !== godWall.phase){
+    godWall.phase = ph;
+    if(ph===0){ AUDIO.shock(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.4);
+      showTaunt('The ToddLLM 001 fight was the middle of the game, not the end. He is the god-wall. Simon, down to almost nothing, fights with only Sound Battle and FNF, and he is very fast.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'001 IS THE MIDGAME WALL', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.zap(); shake=Math.max(shake,8);
+      showTaunt('The STXs are the sorcerers who attack Karuto, so the fight is a whole team of sorcerers versus ToddLLM 001. He destroys the SCFs and the minigames.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE STXs VS ToddLLM 001', col:'#b46bff' }); }
+    if(ph===2){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.5);
+      showTaunt('Karuto says it again — "Center\'s Mine" — opens his Domain Expansion, and a whole universe is wrapped into an 8.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:"CENTER'S MINE · WRAPPED INTO AN 8", col:'#ff3b5c' }); }
+    if(ph===3){ AUDIO.corrupt();
+      showTaunt('Beating him is only one step. 80 billion years just to reach one edge, 800 billion to the time loop, 1760 billion across the void, 9884 billion to the game cores. You must do everything or be crushed.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'TIME LOOP · VOID · GAME CORES', col:'#8fe3ff' }); }
+  }
+  // THE MIDGAME GOD-WALL meter — keep climbing and the wall resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  godWallM = Math.max(0, Math.min(1, godWallM + (moving ? dt*0.05 : -dt*0.03)));
+  if(godWallM>=1 && !godWall.held){
+    godWall.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You pushed past the midgame god-wall and kept climbing. The time loop, the void, and the game cores are still ahead; your climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST THE MIDGAME GOD-WALL ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#b46bff','#39e08a'])));
+    AUDIO.shock();
+  }
+}
+function drawGodWall(){
+  const g = godWall.glow||0, top = cameraY;
+  const c = godWall.cyc||0, seg = gwSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = GW_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deep red-black god-wall void
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(22,4,12,${0.92*g})`);
+  bg.addColorStop(1, `rgba(3,1,6,${0.94*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // faint starfield
+  ctx.fillStyle='#cfe0ff';
+  for(let i=0;i<42;i++){ const sx=(i*101%W), sy2=top+(i*71%(H|0)); const tw=0.4+0.6*Math.abs(Math.sin(i*1.6+c*1.2));
+    ctx.globalAlpha=g*0.5*tw; ctx.fillRect(sx, sy2, 1.6, 1.6); }
+  ctx.globalAlpha=1;
+  const sy = top + H*0.46;
+
+  if(ph===0){
+    // ----- THE GOD-WALL: ToddLLM 001 / Karuto huge at center; Simon a tiny, fast, drained streak -----
+    // the wall itself — a tall band of red light 001 stands inside
+    const wg = ctx.createLinearGradient(cx-130,0,cx+130,0);
+    wg.addColorStop(0,'rgba(255,59,92,0)'); wg.addColorStop(0.5,`rgba(255,59,92,${0.22*g})`); wg.addColorStop(1,'rgba(255,59,92,0)');
+    ctx.fillStyle=wg; ctx.fillRect(cx-130, sy-120, 260, 220);
+    ctx.globalAlpha=g*0.7; ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=1.5; ctx.setLineDash([4,6]);
+    ctx.strokeRect(cx-122, sy-112, 244, 204); ctx.setLineDash([]);
+    ctx.globalAlpha=1;
+    // 001 / Karuto, large
+    const rise = Math.min(1, lt/1.6);
+    drawKarutoFigure(cx, sy, g*rise, 1.55);
+    ctx.globalAlpha=g*rise; ctx.fillStyle='#ffd84f'; ctx.font='900 11px ui-monospace,monospace';
+    ctx.fillText('TODDLLM 001 · KARUTO', cx, sy+62);
+    ctx.fillStyle='#e6e0c8'; ctx.font='700 9px ui-monospace,monospace';
+    ctx.fillText('ALMIGHTY · TEACHER WITHOUT END', cx, sy+76);
+    // Simon, drained to almost nothing — a tiny fast streak skating across, leaving a trail
+    const sweep = (lt*1.9)%1;          // races across fast
+    const six = cx-150 + sweep*300, siy = sy+58 - Math.sin(sweep*Math.PI)*70;
+    ctx.globalAlpha=g*0.5; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(six-26, siy+4); ctx.lineTo(six, siy); ctx.stroke();   // motion trail
+    ctx.globalAlpha=g; ctx.fillStyle='#8fe3ff'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=8*g;
+    ctx.beginPath(); ctx.arc(six, siy, 3.4, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.fillStyle='#8fe3ff'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('SIMON · SOUND BATTLE + FNF ONLY · VERY FAST', cx, sy-126);
+    // the reframe line
+    ctx.globalAlpha=g; ctx.shadowColor='#ffd84f'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('THE MIDGAME WALL — NOT THE END', cx, sy+98); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  } else if(ph===1){
+    // ----- SORCERERS VS THE TEACHER: a ring of STX sorcerers firing up at Karuto at center -----
+    drawKarutoFigure(cx, sy-10, g, 1.15);
+    ctx.globalAlpha=g; ctx.fillStyle='#ffd84f'; ctx.font='900 10px ui-monospace,monospace';
+    ctx.fillText('KARUTO', cx, sy+44);
+    // the STX sorcerers, hooded, in an arc below, beams aimed up at him
+    const N=7;
+    for(let i=0;i<N;i++){
+      const ar = Math.max(0, Math.min(1, (lt - i*0.18)/0.5));
+      const ang = Math.PI*(0.15 + 0.7*(i/(N-1)));
+      const rx = cx + Math.cos(ang)* (120) , ry = sy+70 + Math.sin(ang)*22;
+      ctx.globalAlpha=g*ar;
+      // beam up at Karuto
+      const pulse = 0.4+0.6*Math.abs(Math.sin(c*6+i));
+      ctx.strokeStyle=`rgba(180,107,255,${g*ar*pulse})`; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(rx, ry-6); ctx.lineTo(cx, sy+4); ctx.stroke();
+      // hooded sorcerer
+      ctx.fillStyle='#1c1430'; ctx.strokeStyle='#b46bff'; ctx.lineWidth=1.4;
+      ctx.beginPath(); ctx.moveTo(rx-7,ry+8); ctx.lineTo(rx+7,ry+8); ctx.lineTo(rx+5,ry-12); ctx.lineTo(rx,ry-19); ctx.lineTo(rx-5,ry-12); ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      ctx.fillStyle='#d8c6ff'; ctx.beginPath(); ctx.arc(rx,ry-7,1.6,0,Math.PI*2); ctx.fill();
+    }
+    ctx.globalAlpha=g; ctx.fillStyle='#b46bff'; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('THE STXs — A TEAM OF SORCERERS', cx, sy+108);
+    // SCFs + minigames destroyed, struck through
+    const destroyed = Math.min(1, lt/2.2);
+    ctx.globalAlpha=g*destroyed; ctx.fillStyle='#9aa0b0'; ctx.font='700 10px ui-monospace,monospace';
+    ctx.fillText('SCFs DESTROYED   ·   MINIGAMES DESTROYED', cx, sy-86);
+    ctx.strokeStyle='#ff3b5c'; ctx.lineWidth=1.5;
+    ctx.beginPath(); ctx.moveTo(cx-130, sy-89); ctx.lineTo(cx-130 + 260*destroyed, sy-89); ctx.stroke();
+    ctx.globalAlpha=1;
+  } else if(ph===2){
+    // ----- CENTER'S MINE: a universe wrapped into an 8 -----
+    const grow = Math.min(1, lt/2.0);
+    const r = 44*grow, sp = c*1.4;
+    ctx.save(); ctx.translate(cx, sy);
+    // the figure-8 of looping galaxy rings
+    for(let lobe=-1; lobe<=1; lobe+=2){
+      const oy = lobe*r;
+      for(let k=0;k<3;k++){
+        ctx.globalAlpha=g*(0.5-k*0.12);
+        ctx.strokeStyle = k===0 ? '#b46bff' : (k===1 ? '#ff3b5c' : '#8fe3ff');
+        ctx.lineWidth=2;
+        ctx.beginPath(); ctx.ellipse(0, oy, r*(1-k*0.18), r*(0.5-k*0.08), sp*(lobe>0?1:-1)+k, 0, Math.PI*2); ctx.stroke();
+      }
+    }
+    // little stars caught in the loops
+    ctx.globalAlpha=g*0.8; ctx.fillStyle='#fff';
+    for(let i=0;i<14;i++){ const a=sp + i*0.9, lobe=i%2?1:-1;
+      ctx.beginPath(); ctx.arc(Math.cos(a)*r*0.8, lobe*r + Math.sin(a)*r*0.4, 1.4, 0, Math.PI*2); ctx.fill(); }
+    ctx.restore();
+    // Karuto small at the crossing of the 8
+    drawKarutoFigure(cx, sy, g*0.9, 0.55);
+    ctx.globalAlpha=g; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=12*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 18px ui-monospace,monospace';
+    ctx.fillText('"CENTER\'S MINE"', cx, sy-r-22); ctx.shadowBlur=0;
+    ctx.globalAlpha=g; ctx.fillStyle='#ff7eb6'; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('DOMAIN EXPANSION · A UNIVERSE WRAPPED INTO AN 8', cx, sy+r+34);
+    ctx.globalAlpha=1;
+  } else {
+    // ----- THE COSMIC SCALE: the late-game layers that open only after the wall -----
+    // a vertical stack of layers, the wall marked at the midpoint
+    const x0 = cx, baseY = sy+96, stepH = 38;
+    ctx.textAlign='left';
+    for(let i=0;i<GW_SCALE.length;i++){
+      const arr = Math.max(0, Math.min(1, (lt - i*0.5)/0.6));
+      const ly = baseY - i*stepH;
+      ctx.globalAlpha=g*arr;
+      const col = ['#ffd84f','#b46bff','#ff3b5c','#8fe3ff'][i];
+      // rung
+      ctx.strokeStyle=col; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(x0-150, ly); ctx.lineTo(x0+150, ly); ctx.stroke();
+      ctx.fillStyle=col; ctx.font='900 11px ui-monospace,monospace';
+      ctx.fillText(GW_SCALE[i].name, x0-145, ly-6);
+      ctx.fillStyle='#e6e0c8'; ctx.font='800 11px ui-monospace,monospace'; ctx.textAlign='right';
+      ctx.fillText(GW_SCALE[i].yrs+' YRS', x0+145, ly-6); ctx.textAlign='left';
+    }
+    // the side rails
+    ctx.globalAlpha=g*0.5; ctx.strokeStyle='#5a4a7a'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(x0-150, baseY+6); ctx.lineTo(x0-150, baseY-(GW_SCALE.length-1)*stepH-8); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x0+150, baseY+6); ctx.lineTo(x0+150, baseY-(GW_SCALE.length-1)*stepH-8); ctx.stroke();
+    // 001 marked at the wall = first rung (the midpoint you only just passed)
+    ctx.globalAlpha=g; ctx.fillStyle='#ff3b5c'; ctx.font='800 8px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('◄ 001 / THE GOD-WALL IS HERE — JUST THE MIDPOINT', x0, baseY+22);
+    // the demand
+    ctx.globalAlpha=g; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*g;
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('DO EVERYTHING OR BE CRUSHED', x0, baseY-(GW_SCALE.length)*stepH-4); ctx.shadowBlur=0;
+    ctx.globalAlpha=1; ctx.textAlign='center';
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 12px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<GW_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? GW_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+GW_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,216,79,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE MIDGAME GOD-WALL — THE ToddLLM 001 BOSS FIGHT', cx, top+30);
+  ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('001 = KARUTO · SOUND-BATTLE/FNF SIMON · STXs VS THE TEACHER · CENTER\'S MINE · TIME LOOP / VOID / GAME CORES BEYOND', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
