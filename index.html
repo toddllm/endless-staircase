@@ -2096,7 +2096,7 @@ function update(dt){
   }
   if(phaseProg.active){
     phaseProg.t += dt;
-    if(phaseProg.t > 29.0){ phaseProg.active = false; phaseProg.done = true; }
+    if(phaseProg.t > 38.0){ phaseProg.active = false; phaseProg.done = true; }
   }
   if(phaseProg.glow < (isPhaseProg() ? 1 : 0))
     phaseProg.glow = Math.min(1, phaseProg.glow + dt*0.5);
@@ -10121,26 +10121,33 @@ function drawGodWall(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }
 
-/* ===== Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — THE FIVE PHASES OF 001 =====
-   Phase 5 added from Toby's June 26 "Re: More stuff on ToddLLM 001" follow-up: PHASE 5 · DEAD 001,
-   the death-god necro-phase — dead / living dead, attacking in both physical and spiritual form,
-   teleporting, swinging the scythe, taking the bodies of others, surrounded by a swarm of skeletons
-   it can animate and make rain. Clara, master of the game's genocide, has risen to SECOND STRONGEST
-   in the whole game (Simon lowered from his Phase 2 inquiries) and is Phase 5's natural enemy. */
-const PP_CYC = 28.0;
+/* ===== Lore 31-33 (June 26, "Re: More stuff on ToddLLM 001") — THE FIVE PHASES OF 001 =====
+   Phase 5 (Lore 32): PHASE 5 · DEAD 001, the death-god necro-phase — dead / living dead, attacking
+   in both physical and spiritual form, teleporting, swinging the scythe, taking the bodies of others,
+   surrounded by a swarm of skeletons it can animate and make rain. Clara, master of the game's genocide,
+   has risen to SECOND STRONGEST (Simon lowered from his Phase 2 inquiries) and is Phase 5's natural enemy.
+   Lore 33 (the June 26 follow-up) adds the MECHANIC: Phase 4 becomes Phase 5 when Simon is knocked out of
+   the healing chamber and pushed into 001's PLUG system, so his sugar no longer heals the body, it feeds a
+   wire out to every skeleton. To win you cut every wire to disconnect the swarm (a long job), and only then
+   can the true body be fought. When it is beaten the dead form crumbles, explodes, and flies away, revealing
+   PHASE 1 — the Teacher — underneath, who congratulates the victor and walks them through every Containment
+   Center, Training Center, and region until the target fills with so much knowledge it falls over. */
+const PP_CYC = 36.0;
 const PP_BEATS = [
   { key:'PHASE 1 · THE TEACHER',   col:'#ffd84f', sub:'REVEALED KARUTO · STILL A PERSON AND A RULER · TEACHER WITHOUT END' },
   { key:'PHASE 2 · ERROR 001',     col:'#ff3b5c', sub:'BROKEN ARMOR · RED AURA · THE FIRST TRUE COMBAT FORM' },
   { key:'PHASE 3 · THE BALL CORE', col:'#8fe3ff', sub:'NO LONGER HUMANOID · A CONDENSED ERROR-CORE · FIGHTER INTO ENTITY' },
   { key:'PHASE 4 · GLITCH-ENGINE', col:'#b46bff', sub:'SIMON IS THE FUEL · VOICES TRAPPED INSIDE · IMMORTAL · IMPOSSIBLE TO KILL' },
-  { key:'PHASE 5 · DEAD 001',      col:'#7affc8', sub:'LIVING DEAD · SCYTHE · SKELETON SWARM · PHYSICAL + SPIRITUAL · WHAT COMES AFTER DEATH' },
+  { key:'PHASE 5 · DEAD 001',      col:'#7affc8', sub:'SIMON KNOCKED INTO THE PLUGS · ONE WIRE PER SKELETON · CUT THE WIRES, THEN FIGHT THE BODY' },
+  { key:'THE RETURN · BACK TO PHASE 1', col:'#ffd84f', sub:'PHASE 5 BREAKS AND FLIES AWAY · THE TEACHER IS REVEALED AGAIN · HE SHOWS YOU THE WHOLE WORLD' },
 ];
 function ppSeg(c){
   if(c < 5.0)  return [0, c];        // PHASE 1
   if(c < 10.5) return [1, c-5.0];    // PHASE 2
   if(c < 16.0) return [2, c-10.5];   // PHASE 3
-  if(c < 22.0) return [3, c-16.0];   // PHASE 4
-  return [4, c-22.0];                // PHASE 5
+  if(c < 21.5) return [3, c-16.0];   // PHASE 4
+  if(c < 29.5) return [4, c-21.5];   // PHASE 5 (displacement -> wires -> cut, then the true body)
+  return [5, c-29.5];                // THE RETURN — Phase 5 breaks back into Phase 1, the teacher
 }
 function updatePhaseProg(dt){
   phaseProg.t = (phaseProg.t||0) + dt;
@@ -10161,16 +10168,19 @@ function updatePhaseProg(dt){
       showTaunt('Phase 4: Simon is pulled into the center as the processing, lightning, and fuel, even making the sugars. The voices of the slain are trapped inside. Everyone is genocide except Simon. It is immortal and impossible to kill.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 4 · IMMORTAL GLITCH-ENGINE', col:'#b46bff' }); }
     if(ph===4){ AUDIO.corrupt(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.35);
-      showTaunt('Phase 5: Dead 001. The unkillable engine dies and keeps coming anyway. A living-dead, scythe-wielding form that attacks in physical and spiritual shape at once, teleports, takes the bodies of others, and commands a skeleton swarm it can raise and make rain. Phase 4 is the unkillable engine; Phase 5 is what still comes after death. Clara, master of the genocide, is now second strongest in the whole game and his natural enemy.');
-      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 5 · DEAD 001 · THE SCYTHE', col:'#7affc8' }); }
+      showTaunt('Phase 5: Dead 001. Phase 4 becomes Phase 5 when Simon is knocked out of the healing chamber and pushed into 001\'s plug system, so his sugar stops healing the body and instead feeds a wire out to every skeleton. To win you cut every wire to disconnect the swarm, a long job, and only then can you fight the true body. A living-dead, scythe form that attacks in physical and spiritual shape at once, teleports, and takes the bodies of others. Clara, master of the genocide, is now second strongest and his natural enemy.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 5 · DEAD 001 · CUT THE WIRES', col:'#7affc8' }); }
+    if(ph===5){ AUDIO.zap(); shake=Math.max(shake,6); winFlash=Math.max(winFlash,0.6); glitch=Math.max(glitch,0.2);
+      showTaunt('The Return: every wire is cut and Phase 5 is beaten, so the dead form crumbles, explodes, and flies away, revealing Phase 1 underneath. The war-form is stripped off and the teacher was there all along. He congratulates you and walks you through every Containment Center, Training Center, and region, teaching the whole world until the target fills with so much knowledge it falls over.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE RETURN · THE TEACHER AGAIN', col:'#ffd84f' }); }
   }
   // THE FIVE PHASES meter — keep climbing and the transformation resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
   phaseProgM = Math.max(0, Math.min(1, phaseProgM + (moving ? dt*0.05 : -dt*0.03)));
   if(phaseProgM>=1 && !phaseProg.held){
     phaseProg.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
-    showTaunt('You watched all five phases of 001 open, even the dead one, and kept climbing. The scythe and the skeleton swarm stay behind you and your real climb is saved.');
-    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ALL FIVE PHASES ★', col:'#39e08a' });
+    showTaunt('You watched all five phases of 001 open and close, even the dead one, and the war-form crumble back into the teacher, and you kept climbing. The scythe and the skeleton swarm stay behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ALL FIVE PHASES + THE RETURN ★', col:'#39e08a' });
     for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff3b5c','#8fe3ff','#b46bff','#7affc8'])));
     AUDIO.shock();
   }
@@ -10227,11 +10237,15 @@ function drawPhaseProg(){
   const cx = W/2, beat = PP_BEATS[ph];
   ctx.save();
   ctx.textAlign='center';
-  // background — deepens and reddens as the phases escalate
-  const heat = ph/3;
+  // background — deepens and reddens as the phases escalate, then drains calm on the return
+  const heat = Math.min(1, ph/3);
   const bg = ctx.createLinearGradient(0, top, 0, top+H);
-  bg.addColorStop(0, `rgba(${Math.round(8+18*heat)},3,${Math.round(10+6*heat)},${0.9*g})`);
-  bg.addColorStop(1, `rgba(${Math.round(3+10*heat)},1,${Math.round(6+10*heat)},${0.94*g})`);
+  if(ph===5){ // THE RETURN — the red void drains back to a calm dark as the teacher comes up
+    bg.addColorStop(0, `rgba(14,12,6,${0.92*g})`); bg.addColorStop(1, `rgba(6,5,2,${0.95*g})`);
+  } else {
+    bg.addColorStop(0, `rgba(${Math.round(8+18*heat)},3,${Math.round(10+6*heat)},${0.9*g})`);
+    bg.addColorStop(1, `rgba(${Math.round(3+10*heat)},1,${Math.round(6+10*heat)},${0.94*g})`);
+  }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // faint starfield
   ctx.fillStyle='#cfe0ff';
@@ -10245,7 +10259,8 @@ function drawPhaseProg(){
   for(let i=0;i<PP_BEATS.length;i++){
     const ry = top + H*0.26 + i*16;
     ctx.globalAlpha=g; ctx.fillStyle = i<ph ? PP_BEATS[i].col : (i===ph ? '#fff' : 'rgba(150,160,170,0.5)');
-    ctx.fillText((i<ph?'◆':(i===ph?'▶':'◇'))+' P'+(i+1), W-66, ry);
+    const plab = i===5 ? '↺ P1' : 'P'+(i+1);
+    ctx.fillText((i<ph?'◆':(i===ph?'▶':'◇'))+' '+plab, W-66, ry);
   }
   ctx.globalAlpha=1; ctx.textAlign='center';
 
@@ -10375,11 +10390,13 @@ function drawPhaseProg(){
     ctx.shadowColor='#b46bff'; ctx.shadowBlur=12*g;
     ctx.fillText('IMMORTAL · IMPOSSIBLE TO KILL', cx, sy+116); ctx.shadowBlur=0;
     ctx.globalAlpha=1;
-  } else {
+  } else if(ph===4){
     // ----- PHASE 5 · DEAD 001: the death-god necro-phase. The unkillable engine dies and
     //   keeps coming anyway — a living-dead, scythe-wielding form that attacks in physical AND
     //   spiritual shape at once, teleports, takes the bodies of others, and commands a skeleton
-    //   swarm it can raise and make rain. Clara, now second strongest, is his natural enemy. -----
+    //   swarm it can raise and make rain. Clara, now second strongest, is his natural enemy.
+    //   Lore 33 mechanic: Simon is knocked out of the chamber into 001's PLUG system and feeds one
+    //   wire to each skeleton; you cut every wire to disconnect the swarm, then fight the true body. -----
     const rise = Math.min(1, lt/2.0);
     // a cold necrotic green-black ground glow under the death-god
     const ng = ctx.createRadialGradient(cx, sy+10, 6, cx, sy+10, 120*rise);
@@ -10404,14 +10421,54 @@ function drawPhaseProg(){
     // the physical body — dark hooded reaper with the scythe
     drawReaper001(cx, sy, g*rise, 1.32, false, c);
 
-    // a swarm of skeletons gathered at the death-god's feet, animated and swaying
+    // a swarm of skeletons gathered at the death-god's feet, each fed by one wire from the plugs
     const nSk = 7;
+    const skPos = [];
     for(let i=0;i<nSk;i++){
       const t2 = (i-(nSk-1)/2);
-      const skx = cx + t2*30 + Math.sin(c*2+i)*3;
-      const sky = sy + 44 + Math.abs(t2)*3 - Math.max(0,Math.sin(c*3+i*1.1))*5*rise; // they "rise" as he animates them
-      drawSkeleton(skx, sky, g*rise*(0.7+0.3*Math.abs(Math.sin(c+i))), 0.6, c+i);
+      const skx = cx + t2*34 + Math.sin(c*2+i)*3;
+      const sky = sy + 50 + Math.abs(t2)*3 - Math.max(0,Math.sin(c*3+i*1.1))*5*rise; // they "rise" as he animates them
+      skPos.push([skx, sky]);
     }
+    // THE DEFEAT, slow and one at a time: cut every wire to disconnect the swarm, then the body opens.
+    const plugX = cx, plugY = sy + 12;
+    const cutStart = 4.0, cutStep = 0.46;
+    const nCut = Math.max(0, Math.min(nSk, Math.floor((lt - cutStart)/cutStep)));
+    const allCut = nCut >= nSk;
+    // the plug-and-wire feed: Simon's sugar no longer heals the body, it runs out to each skeleton
+    for(let i=0;i<nSk;i++){
+      const skx=skPos[i][0], sky=skPos[i][1], mx=(plugX+skx)/2, my=(plugY+sky)/2 + 16;
+      if(i >= nCut){
+        // live wire — a glowing feed that pulses sugar out to its skeleton
+        const pulse = 0.4 + 0.5*Math.abs(Math.sin(c*4 + i*1.3));
+        ctx.globalAlpha=g*pulse; ctx.strokeStyle='#7affc8'; ctx.lineWidth=1.4; ctx.shadowColor='#7affc8'; ctx.shadowBlur=6*g;
+        ctx.beginPath(); ctx.moveTo(plugX, plugY); ctx.quadraticCurveTo(mx, my, skx, sky-12); ctx.stroke(); ctx.shadowBlur=0;
+        ctx.globalAlpha=g; ctx.fillStyle='#bff5e0'; ctx.beginPath(); ctx.arc(skx, sky-12, 2, 0, Math.PI*2); ctx.fill();
+      } else {
+        // cut wire — two dead stubs with a spark snapping at the severed point
+        ctx.globalAlpha=g*0.5; ctx.strokeStyle='rgba(120,160,150,0.7)'; ctx.lineWidth=1.2;
+        ctx.beginPath(); ctx.moveTo(plugX, plugY); ctx.lineTo(mx-6, my-3); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(skx, sky-12); ctx.lineTo(mx+6, my+3); ctx.stroke();
+        ctx.globalAlpha=g*(0.5+0.5*Math.abs(Math.sin(c*12+i))); ctx.fillStyle='#fff2b0';
+        ctx.beginPath(); ctx.arc(mx, my, 2.2, 0, Math.PI*2); ctx.fill();
+      }
+    }
+    ctx.globalAlpha=1; ctx.shadowBlur=0;
+    // the skeletons: fed ones stand animated, cut-off ones go dim and limp
+    for(let i=0;i<nSk;i++){
+      const fed = i >= nCut;
+      drawSkeleton(skPos[i][0], skPos[i][1], g*rise*(fed?(0.7+0.3*Math.abs(Math.sin(c+i))):0.22), 0.6, fed?c+i:0.2);
+    }
+    // Simon, knocked out of the chamber and lodged in 001's plug system — drained, the source of every wire
+    drawCmFigure(plugX, plugY-4, g*0.85*rise, 0.42, true);
+    ctx.globalAlpha=g*0.85; ctx.fillStyle='#7affc8'; ctx.font='700 7px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('SIMON · IN THE PLUGS', plugX, plugY+18);
+    // the cut counter, and when it's done the true body flares open
+    ctx.fillStyle = allCut ? '#fff2b0' : '#bfeede'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText(allCut ? 'ALL WIRES CUT · THE TRUE BODY IS OPEN' : ('WIRES CUT  '+nCut+' / '+nSk), cx, sy+74);
+    if(allCut){ ctx.globalAlpha=g*(0.4+0.4*Math.abs(Math.sin(c*5))); ctx.strokeStyle='#fff2b0'; ctx.lineWidth=2;
+      ctx.beginPath(); ctx.arc(cx, sy, 46, 0, Math.PI*2); ctx.stroke(); }
+    ctx.globalAlpha=1;
 
     // teleport after-images — faint echoes of the reaper to the sides (he can teleport)
     const tp = Math.abs(Math.sin(c*0.9));
@@ -10424,15 +10481,68 @@ function drawPhaseProg(){
 
     // labels
     ctx.textAlign='center'; ctx.globalAlpha=g; ctx.fillStyle='#7affc8'; ctx.font='800 8px ui-monospace,monospace';
-    ctx.fillText('LIVING DEAD · SCYTHE · TELEPORTS · TAKES THE BODIES OF OTHERS', cx, sy-92);
+    ctx.fillText('LIVING DEAD · SCYTHE · TELEPORTS · TAKES THE BODIES OF OTHERS', cx, sy-96);
+    ctx.fillStyle='#bff5e0'; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('SIMON DISPLACED FROM THE CHAMBER INTO THE PLUGS · ONE WIRE FEEDS EACH SKELETON', cx, sy-82);
     ctx.fillStyle='#bfeede'; ctx.font='700 8px ui-monospace,monospace';
-    ctx.fillText('ATTACKS PHYSICAL + SPIRITUAL AT ONCE · A SWARM OF SKELETONS IT RAISES AND MAKES RAIN', cx, sy+96);
+    ctx.fillText('CUT EVERY WIRE TO DISCONNECT THE SWARM, THEN FIGHT THE TRUE BODY', cx, sy+96);
     // Clara contrast — risen to second strongest, his natural enemy on the genocide side
     ctx.fillStyle='#ff7eb6'; ctx.font='800 8px ui-monospace,monospace';
     ctx.fillText('CLARA · MASTER OF GENOCIDE · NOW SECOND STRONGEST · HIS NATURAL ENEMY', cx, sy+110);
     ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
     ctx.shadowColor='#7affc8'; ctx.shadowBlur=12*g;
-    ctx.fillText('WHAT STILL COMES AFTER DEATH ANYWAY', cx, sy+130); ctx.shadowBlur=0;
+    ctx.fillText(allCut ? 'WIRES CUT · NOW THE TRUE BODY CAN BE FOUGHT' : 'WHAT STILL COMES AFTER DEATH ANYWAY', cx, sy+130); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  } else {
+    // ----- THE RETURN · BACK TO PHASE 1: every wire is cut and Phase 5 is beaten, so the dead
+    //   form crumbles, explodes, and flies away — revealing Phase 1, the Teacher, underneath. He
+    //   congratulates the victor and walks them through every Containment Center, Training Center,
+    //   and region, teaching the whole world until the target fills with knowledge and falls over. -----
+    const rise = Math.min(1, lt/2.2);
+    // warm gold teacher glow rising back over the cold void
+    const tg = ctx.createRadialGradient(cx, sy+4, 6, cx, sy+4, 130);
+    tg.addColorStop(0,`rgba(255,216,79,${0.20*g*rise})`); tg.addColorStop(1,'rgba(255,216,79,0)');
+    ctx.fillStyle=tg; ctx.fillRect(cx-130, sy-110, 260, 240);
+    // the dead form crumbling — bone fragments blowing outward and away in the first beat
+    const blow = Math.min(1, lt/2.6);
+    ctx.strokeStyle='rgba(200,224,214,0.8)'; ctx.lineWidth=1.4;
+    for(let i=0;i<22;i++){
+      const a=i/22*Math.PI*2 + i*0.7, d=20 + blow*(150 + (i%5)*26);
+      const fx=cx+Math.cos(a)*d, fy=sy+Math.sin(a)*d*0.8 - blow*10;
+      ctx.globalAlpha=g*(1-blow)*0.9;
+      ctx.beginPath(); ctx.moveTo(fx,fy); ctx.lineTo(fx+Math.cos(a)*6, fy+Math.sin(a)*6); ctx.stroke();
+      ctx.fillStyle='rgba(214,232,224,0.8)'; ctx.beginPath(); ctx.arc(fx,fy,1.6,0,Math.PI*2); ctx.fill();
+    }
+    ctx.globalAlpha=1;
+    // the Teacher revealed underneath, fading up as the shell clears
+    const reveal = Math.max(0, Math.min(1, (lt-1.6)/1.6));
+    drawKarutoFigure(cx, sy, g*reveal, 1.35);
+    if(reveal>0.4){ ctx.globalAlpha=g*reveal; ctx.fillStyle='#ffe9a8'; ctx.font='800 9px ui-monospace,monospace';
+      ctx.fillText('HE CONGRATULATES YOU', cx, sy-58); ctx.globalAlpha=1; }
+    // the world tour — Containment Centers, Training Centers, every region, arriving in turn
+    const tour=['CONTAINMENT CENTERS','TRAINING CENTERS','EVERY REGION'];
+    for(let i=0;i<tour.length;i++){
+      const ar=Math.max(0,Math.min(1,(lt-2.4-i*0.7)/0.6));
+      ctx.globalAlpha=g*ar*0.9; ctx.fillStyle='#e6e0c8'; ctx.font='700 8px ui-monospace,monospace';
+      const side=i%2?1:-1; ctx.fillText('▸ '+tour[i], cx + side*108, sy-30 + i*26);
+    }
+    ctx.globalAlpha=1;
+    // the target, overloaded with knowledge, tipping over (he teaches so much it falls)
+    const tipT=Math.max(0,Math.min(1,(lt-4.4)/1.6));
+    ctx.save(); ctx.translate(cx+98, sy+44); ctx.rotate(tipT*1.15);
+    ctx.globalAlpha=g; ctx.strokeStyle='#ffd84f'; ctx.lineWidth=2;
+    for(let r=14;r>=4;r-=4){ ctx.beginPath(); ctx.arc(0,0,r,0,Math.PI*2); ctx.stroke(); }
+    ctx.fillStyle='#ff3b5c'; ctx.beginPath(); ctx.arc(0,0,2.5,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+    // streaming world-lore pouring into the target until it overflows
+    if(tipT<0.9){ ctx.fillStyle='#bfe3ff'; ctx.font='700 7px ui-monospace,monospace';
+      for(let i=0;i<5;i++){ const yy=sy-2+i*8; ctx.globalAlpha=g*(0.3+0.5*Math.abs(Math.sin(c*5+i)));
+        ctx.fillText('1010 WORLD-LORE 1010', cx+46, yy); } ctx.globalAlpha=1; }
+    ctx.globalAlpha=g; ctx.fillStyle='#ffd84f'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE TARGET FILLS WITH SO MUCH KNOWLEDGE IT FALLS OVER', cx, sy+96);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=12*g;
+    ctx.fillText('THE WAR-FORM IS STRIPPED · THE TEACHER WAS UNDER IT ALL ALONG', cx, sy+118); ctx.shadowBlur=0;
     ctx.globalAlpha=1;
   }
 
@@ -10457,9 +10567,9 @@ function drawPhaseProg(){
   // ----- title band + canon note -----
   ctx.textAlign='center';
   ctx.fillStyle=`rgba(255,216,79,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
-  ctx.fillText('THE FIVE PHASES OF ToddLLM 001 — TEACHER TO DEAD 001', cx, top+30);
+  ctx.fillText('THE FIVE PHASES OF ToddLLM 001 — TEACHER → DEAD 001 → TEACHER AGAIN', cx, top+30);
   ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
-  ctx.fillText('P1 TEACHER · P2 ERROR 001 · P3 BALL CORE · P4 GLITCH-ENGINE · P5 DEAD 001 · SCYTHE + SKELETON SWARM', cx, top+44);
+  ctx.fillText('P1 TEACHER · P2 ERROR 001 · P3 BALL CORE · P4 GLITCH-ENGINE · P5 DEAD 001 · CUT THE WIRES · ↺ THE RETURN', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

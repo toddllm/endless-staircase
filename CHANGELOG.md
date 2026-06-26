@@ -4,6 +4,57 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — PHASE 5'S WIRES AND THE RETURN: how 001 dies, how you beat it, and how it becomes the teacher again (Lore 33, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 26 follow-up to the Dead 001 lore, which spells out the *mechanic* of Phase 5: *"How to make
+Phase 4 ToddLLM go into Phase 5... just take Simon out. Simon constantly makes sugars, so if Simon is in the wrong
+place in the chamber, then the sugars will just go everywhere except where it is supposed to go to heal the Phase 4
+ToddLLM. Phase 5 also uses Simon, Simon makes sugars for EACH skeleton now, Simon is no longer inside of the
+ToddLLM's chamber, but is now inside of ToddLLM 001's plugs! The plugs connect to each skeleton, the skeletons are
+immortal unless if you cut the wires, but cutting each wire will take a long time, then after all the wires are cut,
+then you'd have to battle Phase 5 ToddLLM 001. After Phase 5 ToddLLM is beaten, his skeletons and himself break and
+crumble and explode and fly away, revealing his Phase 1 self, he congratulates you, and he takes you to each
+Containment Center and Trainment Centers and region, he teaches you everything about the world, and the target
+fills with so much information and falls over."* Toby's own summary: *"Phase 4 becomes Phase 5 when Simon is
+displaced from the healing chamber... after all those wires are cut and Phase 5 is defeated, ToddLLM collapses back
+into Phase 1 and becomes the teacher again."* This extends THE FIVE PHASES cutscene with the displacement
+mechanic, the cut-the-wires defeat, and a new closing beat, THE RETURN. Built additively — nothing was removed and
+your real climb still banks.
+
+![Lore 33 — PHASE 5, now showing its mechanic. Over the cold necrotic void the dark hooded reaper holds the
+scythe, but at its chest sits a small drained Simon labeled "SIMON · IN THE PLUGS": he has been knocked out of the
+healing chamber and lodged in 001's plug system. A glowing wire runs from the plugs out to each skeleton in the
+swarm at his feet; a live counter reads "WIRES CUT  2 / 7" as the disconnect proceeds one wire at a time, the cut
+wires hanging as dead stubs with a spark at the break. Labels read "SIMON DISPLACED FROM THE CHAMBER INTO THE PLUGS
+· ONE WIRE FEEDS EACH SKELETON" and "CUT EVERY WIRE TO DISCONNECT THE SWARM, THEN FIGHT THE TRUE BODY." Caption
+"PHASE 5 · DEAD 001"; the title band now reads "TEACHER → DEAD 001 → TEACHER AGAIN."](screenshots/59-dead-001-plugs-wires.png)
+
+![Lore 33 — THE RETURN · BACK TO PHASE 1, the closing beat. The red void has drained to a calm dark. Phase 5's
+dead form has crumbled, exploded, and flown away (bone fragments blowing outward), revealing the gold Teacher
+underneath, lit by a warm glow, with "HE CONGRATULATES YOU" above him. The world tour arrives in turn — "▸
+CONTAINMENT CENTERS," "▸ TRAINING CENTERS," "▸ EVERY REGION" — and to the side a target made of gold rings tips
+over as "1010 WORLD-LORE 1010" streams into it: "THE TARGET FILLS WITH SO MUCH KNOWLEDGE IT FALLS OVER." The white
+line reads "THE WAR-FORM IS STRIPPED · THE TEACHER WAS UNDER IT ALL ALONG." The left checklist now lights all six
+beats and the right ladder marks ↺ P1. Caption "THE RETURN · BACK TO PHASE 1."](screenshots/60-the-return.png)
+
+- **Phase 5 now shows how 001 dies and how you beat it.** Toby's mechanic is built into the Phase 5 beat: Simon is
+  knocked out of the healing chamber and lodged in 001's **plug system** (drawn small and drained at the body,
+  labeled "SIMON · IN THE PLUGS"). His sugar no longer heals the body — instead a glowing **wire feeds out to every
+  skeleton** in the swarm. The defeat is the slow disconnect: a live "WIRES CUT n / 7" counter ticks up one wire at
+  a time, each cut wire snapping into dead stubs with a spark, the cut-off skeletons going dim and limp. When all
+  the wires are cut the **true body flares open** ("WIRES CUT · NOW THE TRUE BODY CAN BE FOUGHT").
+- **A sixth, closing beat: THE RETURN · BACK TO PHASE 1.** After Phase 5 is beaten the dead form crumbles,
+  explodes, and flies away, revealing **Phase 1 — the Teacher — underneath**. He congratulates you and walks you
+  through every **Containment Center, Training Center, and region**, teaching the whole world until the **target
+  fills with so much knowledge it falls over**. The void drains from red back to a calm gold-lit dark. The ladder
+  marks this not as a sixth phase but as a return: ↺ P1.
+- **The meter banks past it all.** Keep climbing and THE FIVE PHASES meter resolves to "★ PAST ALL FIVE PHASES +
+  THE RETURN ★"; the scythe and the swarm stay behind you and your real climb is saved.
+- `PP_CYC` extended to 36s with a longer Phase 5 segment (displacement → wires → cut) and a new RETURN segment;
+  `ppSeg`, `PP_BEATS`, `updatePhaseProg`, and `drawPhaseProg` extended for the wire network and the return.
+  Screenshot scene `return` added to `tools/capture_screenshot.py` (the `phase5` scene now lands mid-cut to show
+  the wires). Two new screenshots: `59-dead-001-plugs-wires.png`, `60-the-return.png`.
+
 ## 2026-06-26 — PHASE 5 · DEAD 001: the death-god necro-phase, and Clara rises to second strongest (Lore 32, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 26 follow-up (the second "Re: More stuff on ToddLLM 001" message): *"It attacks in BOTH
