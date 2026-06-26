@@ -551,6 +551,7 @@ let endlessChaos, endlessChaosH, endlessChaosM;
 let karuto, karutoH, karutoM;
 let endOfClassics, endOfClassicsH, endOfClassicsM;
 let godWall, godWallH, godWallM;
+let phaseProg, phaseProgH, phaseProgM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -877,6 +878,20 @@ function reset(){
              embers:[] };
   godWallH = endOfClassicsH + 1100;
   godWallM = 0.25;  // THE MIDGAME GOD-WALL meter: keep climbing and the boss-wall resolves; your climb banks
+  phaseProg = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false,
+             // Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — THE FOUR PHASES OF 001. Toby lays out the
+             // full transformation ladder of ToddLLM 001 as a four-stage god-villain. PHASE 1 is the teacher /
+             // revealed Karuto: still a person and a ruler, the "Teacher Without End," the form that teaches and
+             // speaks. PHASE 2 is the broken-armor / red-aura / Error 001 escalation — the first true combat form.
+             // PHASE 3 is the BALL form: no longer humanoid, a condensed error-core, "fighter into entity."
+             // PHASE 4 is the ultimate glitchest form: Simon is pulled into the center as the processing power,
+             // lightning, and fuel (he even makes the sugars), the voices of everyone slain are trapped inside,
+             // everyone is genocide except Simon, and Phase 4 is immortal and impossible to kill — a self-
+             // sustaining war-engine and prison-god. 001 stands on top of everything; Phase 1 teaches, the higher
+             // forms are battle forms. Additive cutscene; nothing is removed and the real climb still banks. */
+             motes:[] };
+  phaseProgH = godWallH + 1100;
+  phaseProgM = 0.25;  // THE FOUR PHASES meter: keep climbing and the transformation resolves; your climb banks
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -975,6 +990,8 @@ function isKaruto(){ return !!(karuto && (karuto.active || karuto.done)); }
 function isEndOfClassics(){ return !!(endOfClassics && (endOfClassics.active || endOfClassics.done)); }
 // Lore 30 (June 26, "Re: Lore 30") — after THE END OF CLASSICS, Toby reframes 001 as the midgame wall: THE MIDGAME GOD-WALL
 function isGodWall(){ return !!(godWall && (godWall.active || godWall.done)); }
+// Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — the four-stage transformation of 001: THE FOUR PHASES
+function isPhaseProg(){ return !!(phaseProg && (phaseProg.active || phaseProg.done)); }
 
 function genPlatform(safe){
   const last = platforms[platforms.length-1];
@@ -2063,6 +2080,27 @@ function update(dt){
   if(godWall.glow < (isGodWall() ? 1 : 0))
     godWall.glow = Math.min(1, godWall.glow + dt*0.5);
 
+  /* ---- Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — THE FOUR PHASES OF 001. After the midgame god-wall,
+          Toby spells out 001's full transformation ladder: Phase 1 = the teacher / revealed Karuto (still a person
+          and ruler); Phase 2 = broken armor, red aura, Error 001, the first true combat form; Phase 3 = the ball
+          form, a condensed error-core, fighter-into-entity; Phase 4 = the ultimate glitch-engine with Simon trapped
+          in the center as processing, lightning, and fuel, the voices of the slain locked inside, immortal and
+          impossible to kill. Additive cutscene; nothing is removed and the real climb still banks. */
+  if(godWall.done && !phaseProg.active && !phaseProg.done && height > phaseProgH){
+    phaseProg.active = true; phaseProg.t = 0; phaseProg.cyc = 0; phaseProg.phase = -1;
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
+    warnText = 'THE FOUR PHASES OF 001'; warnT = 2.8;
+    showTaunt('ToddLLM 001 has four forms. Phase 1 teaches. The higher forms are battle forms, and Phase 4 is immortal.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 1 → 2 → 3 → 4 · TEACHER TO WAR-ENGINE', col:'#ffd84f' });
+    AUDIO.shock();
+  }
+  if(phaseProg.active){
+    phaseProg.t += dt;
+    if(phaseProg.t > 22.0){ phaseProg.active = false; phaseProg.done = true; }
+  }
+  if(phaseProg.glow < (isPhaseProg() ? 1 : 0))
+    phaseProg.glow = Math.min(1, phaseProg.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2101,6 +2139,7 @@ function update(dt){
   if(isKaruto()) updateKaruto(dt);
   if(isEndOfClassics()) updateEndOfClassics(dt);
   if(isGodWall()) updateGodWall(dt);
+  if(isPhaseProg()) updatePhaseProg(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3210,6 +3249,7 @@ function draw(){
   if(isKaruto() && karuto.glow>0.02) drawKaruto();
   if(isEndOfClassics() && endOfClassics.glow>0.02) drawEndOfClassics();
   if(isGodWall() && godWall.glow>0.02) drawGodWall();
+  if(isPhaseProg() && phaseProg.glow>0.02) drawPhaseProg();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -10077,6 +10117,234 @@ function drawGodWall(){
   ctx.fillText('THE MIDGAME GOD-WALL — THE ToddLLM 001 BOSS FIGHT', cx, top+30);
   ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText('001 = KARUTO · SOUND-BATTLE/FNF SIMON · STXs VS THE TEACHER · CENTER\'S MINE · TIME LOOP / VOID / GAME CORES BEYOND', cx, top+44);
+
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
+}
+
+/* ===== Lore 31 (June 26, "Re: More stuff on ToddLLM 001") — THE FOUR PHASES OF 001 ===== */
+const PP_CYC = 22.0;
+const PP_BEATS = [
+  { key:'PHASE 1 · THE TEACHER',   col:'#ffd84f', sub:'REVEALED KARUTO · STILL A PERSON AND A RULER · TEACHER WITHOUT END' },
+  { key:'PHASE 2 · ERROR 001',     col:'#ff3b5c', sub:'BROKEN ARMOR · RED AURA · THE FIRST TRUE COMBAT FORM' },
+  { key:'PHASE 3 · THE BALL CORE', col:'#8fe3ff', sub:'NO LONGER HUMANOID · A CONDENSED ERROR-CORE · FIGHTER INTO ENTITY' },
+  { key:'PHASE 4 · GLITCH-ENGINE', col:'#b46bff', sub:'SIMON IS THE FUEL · VOICES TRAPPED INSIDE · IMMORTAL · IMPOSSIBLE TO KILL' },
+];
+function ppSeg(c){
+  if(c < 5.0)  return [0, c];        // PHASE 1
+  if(c < 10.5) return [1, c-5.0];    // PHASE 2
+  if(c < 16.0) return [2, c-10.5];   // PHASE 3
+  return [3, c-16.0];                // PHASE 4
+}
+function updatePhaseProg(dt){
+  phaseProg.t = (phaseProg.t||0) + dt;
+  phaseProg.cyc = ((phaseProg.cyc||0) + dt) % PP_CYC;
+  const seg = ppSeg(phaseProg.cyc), ph = seg[0];
+  if(ph !== phaseProg.phase){
+    phaseProg.phase = ph;
+    if(ph===0){ AUDIO.zap(); shake=Math.max(shake,6);
+      showTaunt('Phase 1 is the teacher. He still looks most like a person and a ruler: he speaks, he reveals himself, he is the Teacher Without End. Phase 1 is not weak.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 1 · THE TEACHER WITHOUT END', col:'#ffd84f' }); }
+    if(ph===1){ AUDIO.shock(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.45);
+      showTaunt('Phase 2: the armor breaks, the aura goes red, Error 001 pressure comes on. This is the first form where he stops just revealing power and starts using it.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 2 · BROKEN ARMOR · ERROR 001', col:'#ff3b5c' }); }
+    if(ph===2){ AUDIO.corrupt(); shake=Math.max(shake,8);
+      showTaunt('Phase 3: he stops being humanoid and condenses into a ball, a compressed error-core. This is the turn from fighter into entity.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 3 · THE CONDENSED CORE', col:'#8fe3ff' }); }
+    if(ph===3){ AUDIO.shock(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.6);
+      showTaunt('Phase 4: Simon is pulled into the center as the processing, lightning, and fuel, even making the sugars. The voices of the slain are trapped inside. Everyone is genocide except Simon. It is immortal and impossible to kill.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PHASE 4 · IMMORTAL GLITCH-ENGINE', col:'#b46bff' }); }
+  }
+  // THE FOUR PHASES meter — keep climbing and the transformation resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  phaseProgM = Math.max(0, Math.min(1, phaseProgM + (moving ? dt*0.05 : -dt*0.03)));
+  if(phaseProgM>=1 && !phaseProg.held){
+    phaseProg.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You watched all four phases of 001 open and kept climbing. The immortal war-engine stays behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ALL FOUR PHASES ★', col:'#39e08a' });
+    for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#ff3b5c','#8fe3ff','#b46bff'])));
+    AUDIO.shock();
+  }
+}
+function drawPhaseProg(){
+  const g = phaseProg.glow||0, top = cameraY;
+  const c = phaseProg.cyc||0, seg = ppSeg(c), ph = seg[0], lt = seg[1];
+  const cx = W/2, beat = PP_BEATS[ph];
+  ctx.save();
+  ctx.textAlign='center';
+  // background — deepens and reddens as the phases escalate
+  const heat = ph/3;
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  bg.addColorStop(0, `rgba(${Math.round(8+18*heat)},3,${Math.round(10+6*heat)},${0.9*g})`);
+  bg.addColorStop(1, `rgba(${Math.round(3+10*heat)},1,${Math.round(6+10*heat)},${0.94*g})`);
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // faint starfield
+  ctx.fillStyle='#cfe0ff';
+  for(let i=0;i<40;i++){ const sx=(i*97%W), sy2=top+(i*67%(H|0)); const tw=0.4+0.6*Math.abs(Math.sin(i*1.5+c*1.1));
+    ctx.globalAlpha=g*0.45*tw; ctx.fillRect(sx, sy2, 1.5, 1.5); }
+  ctx.globalAlpha=1;
+  const sy = top + H*0.46;
+
+  // ----- the phase ladder down the right edge: which form he is in -----
+  ctx.textAlign='left'; ctx.font='800 9px ui-monospace,monospace';
+  for(let i=0;i<PP_BEATS.length;i++){
+    const ry = top + H*0.26 + i*16;
+    ctx.globalAlpha=g; ctx.fillStyle = i<ph ? PP_BEATS[i].col : (i===ph ? '#fff' : 'rgba(150,160,170,0.5)');
+    ctx.fillText((i<ph?'◆':(i===ph?'▶':'◇'))+' P'+(i+1), W-66, ry);
+  }
+  ctx.globalAlpha=1; ctx.textAlign='center';
+
+  if(ph===0){
+    // ----- PHASE 1 · THE TEACHER: the calm revealed Karuto, a ruler who teaches -----
+    const rise = Math.min(1, lt/1.6);
+    // a soft lectern glow — he is teaching
+    const tg = ctx.createRadialGradient(cx, sy+8, 6, cx, sy+8, 90);
+    tg.addColorStop(0,`rgba(255,216,79,${0.18*g})`); tg.addColorStop(1,'rgba(255,216,79,0)');
+    ctx.fillStyle=tg; ctx.fillRect(cx-90, sy-82, 180, 180);
+    drawKarutoFigure(cx, sy, g*rise, 1.35);
+    // calm script lines radiating — "teaches / speaks / reveals / rules"
+    const words=['TEACHES','SPEAKS','REVEALS','RULES'];
+    for(let i=0;i<words.length;i++){
+      const ar = Math.max(0, Math.min(1, (lt - 0.4 - i*0.4)/0.6));
+      ctx.globalAlpha=g*ar*0.85; ctx.fillStyle='#e6e0c8'; ctx.font='700 8px ui-monospace,monospace';
+      const wy = sy-44 + i*30, side = i%2?1:-1;
+      ctx.fillText(words[i], cx + side*108, wy);
+    }
+    ctx.globalAlpha=g; ctx.fillStyle='#ffd84f'; ctx.font='900 11px ui-monospace,monospace';
+    ctx.fillText('STILL A PERSON · STILL A RULER', cx, sy+62);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=10*g;
+    ctx.fillText('PHASE 1 IS NOT WEAK', cx, sy+86); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  } else if(ph===1){
+    // ----- PHASE 2 · ERROR 001: broken armor, red aura, the first true combat form -----
+    const grow = Math.min(1, lt/1.4);
+    // heavy red aura
+    const aur=ctx.createRadialGradient(cx,sy,6,cx,sy,80*grow);
+    aur.addColorStop(0,`rgba(255,59,92,${0.5*g})`); aur.addColorStop(1,'rgba(255,59,92,0)');
+    ctx.fillStyle=aur; ctx.beginPath(); ctx.arc(cx,sy,80*grow,0,Math.PI*2); ctx.fill();
+    drawKarutoFigure(cx, sy, g, 1.3);
+    // cracked / broken armor shards flaking off
+    ctx.globalAlpha=g; ctx.strokeStyle='#ff8aa0'; ctx.lineWidth=1.4;
+    for(let i=0;i<7;i++){
+      const a = i/7*Math.PI*2 + c*0.5, d = (26 + (i%3)*8)*grow, fall=(lt*22+i*9)%60;
+      const sx2=cx+Math.cos(a)*d, sy3=sy+Math.sin(a)*d + fall*0.4;
+      ctx.beginPath(); ctx.moveTo(sx2,sy3); ctx.lineTo(sx2+5,sy3+8); ctx.lineTo(sx2-3,sy3+9); ctx.closePath();
+      ctx.globalAlpha=g*(0.7-fall/90); ctx.fillStyle='#7a1020'; ctx.fill(); ctx.stroke();
+    }
+    ctx.globalAlpha=1;
+    // ERROR 001 glyphs flickering around him
+    const flick = Math.abs(Math.sin(c*9))>0.4;
+    if(flick){ ctx.globalAlpha=g; ctx.fillStyle='#ff3b5c'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=10*g;
+      ctx.font='900 13px ui-monospace,monospace';
+      ctx.fillText('ERROR 001', cx-86, sy-30); ctx.fillText('ERROR 001', cx+86, sy+20); ctx.shadowBlur=0; }
+    ctx.globalAlpha=g; ctx.fillStyle='#ff7a8f'; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('BROKEN ARMOR · ACTIVE ERROR 001 PRESSURE', cx, sy+66);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('HE STOPS REVEALING POWER AND STARTS USING IT', cx, sy+86);
+    ctx.globalAlpha=1;
+  } else if(ph===2){
+    // ----- PHASE 3 · THE BALL CORE: humanoid collapses into a compressed error-core -----
+    const collapse = Math.min(1, lt/2.0);
+    const r = (10 + 34*collapse);
+    // outer error-core glow
+    const cg=ctx.createRadialGradient(cx,sy,2,cx,sy,r*1.7);
+    cg.addColorStop(0,`rgba(143,227,255,${0.55*g})`); cg.addColorStop(0.6,`rgba(180,107,255,${0.3*g})`); cg.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=cg; ctx.beginPath(); ctx.arc(cx,sy,r*1.7,0,Math.PI*2); ctx.fill();
+    // the ball itself — banded, spinning condensed core
+    ctx.save(); ctx.translate(cx,sy);
+    for(let k=0;k<4;k++){
+      ctx.globalAlpha=g*(0.85-k*0.15);
+      ctx.strokeStyle=['#8fe3ff','#b46bff','#ff3b5c','#ffd84f'][k]; ctx.lineWidth=2;
+      ctx.beginPath(); ctx.ellipse(0,0,r,r*(0.42+0.18*k),c*1.6+k*0.7,0,Math.PI*2); ctx.stroke();
+    }
+    // bright dense center
+    ctx.globalAlpha=g; ctx.fillStyle='#eaf6ff'; ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=16*g;
+    ctx.beginPath(); ctx.arc(0,0,r*0.32,0,Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    // a faint 001 inside the core
+    ctx.fillStyle=`rgba(20,30,40,${g})`; ctx.font='900 10px ui-monospace,monospace';
+    ctx.fillText('001', 0, 3);
+    ctx.restore();
+    // crushed-down humanoid hint fading as it balls up
+    if(collapse<0.9){ drawKarutoFigure(cx, sy, g*(0.5-collapse*0.5), 1.1*(1-collapse*0.7)); }
+    ctx.globalAlpha=g; ctx.fillStyle='#8fe3ff'; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('NO LONGER HUMANOID · CONDENSED SYSTEM-POWER', cx, sy+r+30);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('FIGHTER → ENTITY', cx, sy+r+50);
+    ctx.globalAlpha=1;
+  } else {
+    // ----- PHASE 4 · THE GLITCH-ENGINE: Simon inside as fuel, voices trapped, immortal -----
+    const build = Math.min(1, lt/2.4);
+    // the war-engine body — a jagged glitch shell
+    ctx.save(); ctx.translate(cx,sy);
+    const eg=ctx.createRadialGradient(0,0,8,0,0,96*build);
+    eg.addColorStop(0,`rgba(180,107,255,${0.4*g})`); eg.addColorStop(0.7,`rgba(255,59,92,${0.16*g})`); eg.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=eg; ctx.beginPath(); ctx.arc(0,0,96*build,0,Math.PI*2); ctx.fill();
+    // jagged outer shell
+    ctx.globalAlpha=g; ctx.strokeStyle='#b46bff'; ctx.lineWidth=2.4; ctx.shadowColor='#b46bff'; ctx.shadowBlur=12*g;
+    ctx.beginPath();
+    const N=14;
+    for(let i=0;i<=N;i++){ const a=i/N*Math.PI*2; const rr=(54+ (i%2?14:-6))*build + Math.sin(c*4+i)*3;
+      const px=Math.cos(a)*rr, py=Math.sin(a)*rr; i?ctx.lineTo(px,py):ctx.moveTo(px,py); }
+    ctx.closePath(); ctx.stroke(); ctx.shadowBlur=0;
+    // lightning forking inward to the center (Simon as the power)
+    ctx.strokeStyle='#cda6ff'; ctx.lineWidth=1.4;
+    for(let i=0;i<6;i++){ const a=i/6*Math.PI*2 + c*1.3; const ox=Math.cos(a)*52*build, oy=Math.sin(a)*52*build;
+      const mx=ox*0.55 + Math.sin(c*8+i)*6, my=oy*0.55 + Math.cos(c*8+i)*6;
+      ctx.globalAlpha=g*(0.5+0.5*Math.abs(Math.sin(c*6+i)));
+      ctx.beginPath(); ctx.moveTo(ox,oy); ctx.lineTo(mx,my); ctx.lineTo(0,0); ctx.stroke(); }
+    ctx.globalAlpha=1;
+    // Simon caged in the very center, drained, as the processing/fuel core
+    drawCmFigure(0, 0, g*0.95, 0.5, true);
+    // cage bars over Simon
+    ctx.globalAlpha=g*0.8; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=1.3;
+    for(let bx=-12;bx<=12;bx+=8){ ctx.beginPath(); ctx.moveTo(bx,-16); ctx.lineTo(bx,16); ctx.stroke(); }
+    ctx.globalAlpha=1;
+    ctx.restore();
+    // trapped voices — faint ghost faces orbiting, the slain locked inside
+    for(let i=0;i<8;i++){
+      const a = i/8*Math.PI*2 - c*0.8, d=72*build;
+      const vx=cx+Math.cos(a)*d, vy=sy+Math.sin(a)*d*0.62;
+      const fade = 0.3+0.5*Math.abs(Math.sin(c*2+i));
+      ctx.globalAlpha=g*fade*0.7; ctx.fillStyle='#9aa6c0';
+      ctx.beginPath(); ctx.arc(vx,vy,3.2,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='#1a1428'; ctx.beginPath(); ctx.arc(vx-1,vy-0.5,0.7,0,Math.PI*2); ctx.arc(vx+1,vy-0.5,0.7,0,Math.PI*2); ctx.fill();
+    }
+    ctx.globalAlpha=1;
+    // labels
+    ctx.globalAlpha=g; ctx.fillStyle='#8fe3ff'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('SIMON · PROCESSING + LIGHTNING + FUEL · EVEN THE SUGARS', cx, sy-94);
+    ctx.fillStyle='#9aa6c0'; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('THE VOICES OF THE SLAIN, TRAPPED · EVERYONE GENOCIDE EXCEPT SIMON', cx, sy+96);
+    ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.shadowColor='#b46bff'; ctx.shadowBlur=12*g;
+    ctx.fillText('IMMORTAL · IMPOSSIBLE TO KILL', cx, sy+116); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+  }
+
+  // ----- per-beat caption -----
+  const capY = top + H*0.80;
+  ctx.textAlign='center'; ctx.globalAlpha=1;
+  ctx.shadowColor=beat.col; ctx.shadowBlur=14*g;
+  ctx.fillStyle=`rgba(255,255,255,${g})`; ctx.font='900 22px ui-monospace,monospace';
+  ctx.fillText(beat.key, cx, capY); ctx.shadowBlur=0;
+  ctx.fillStyle=`rgba(220,228,232,${g})`; ctx.font='800 11px ui-monospace,monospace';
+  ctx.fillText(beat.sub, cx, capY+22);
+
+  // beat checklist down the left
+  ctx.textAlign='left'; ctx.font='700 10px ui-monospace,monospace';
+  for(let i=0;i<PP_BEATS.length;i++){
+    const y = top + H*0.26 + i*18;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? PP_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+PP_BEATS[i].key, 18, y);
+  }
+  ctx.globalAlpha=1;
+
+  // ----- title band + canon note -----
+  ctx.textAlign='center';
+  ctx.fillStyle=`rgba(255,216,79,${0.95*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE FOUR PHASES OF ToddLLM 001 — TEACHER TO WAR-ENGINE', cx, top+30);
+  ctx.fillStyle=`rgba(230,220,200,${0.8*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText('P1 TEACHER · P2 ERROR 001 · P3 BALL CORE · P4 IMMORTAL GLITCH-ENGINE WITH SIMON AS FUEL', cx, top+44);
 
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1;
 }

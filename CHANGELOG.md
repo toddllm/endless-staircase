@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-26 — THE FOUR PHASES OF 001: the teacher-to-war-engine transformation ladder (Lore 31, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 26 lore (the "Re: More stuff on ToddLLM 001" message): *"The normal one is Phase 1, the
+Red aura and Error 001 and broken armor is Phase 2, Phase 3 is the ball, and Phase 4 is the ultimate glitchest
+with Simon included in the center and is processing power and lightning and fuel for ToddLLM's Phase 4 to move.
+Oh, and his Phase 4 is immortal and is impossible to kill. ToddLLM's Phase 4 also traps the voices on who was
+slain during the battle, everyone is genocide except for Simon now... Simon was put inside as the one who makes
+everything constantly, even the sugars. ToddLLM 001 stands the top of everything, he is the one who teaches in
+his Phase 1, his higher forms are battle forms."* This spells out 001's full four-stage transformation as its
+own cutscene, distinct from the midgame god-wall. Built additively — nothing was removed and your real climb
+banks.
+
+![Lore 31 — THE FOUR PHASES OF 001, frozen on the signature beat (PHASE 4 · GLITCH-ENGINE). Over a deepening
+red-violet void, a jagged purple war-engine shell forks lightning inward to its center, where a drained blue
+Simon is caged as the processing/lightning/fuel core. Faint grey ghost-faces — the voices of the slain — orbit
+the shell. Labels read "SIMON · PROCESSING + LIGHTNING + FUEL · EVEN THE SUGARS" and "THE VOICES OF THE SLAIN,
+TRAPPED · EVERYONE GENOCIDE EXCEPT SIMON," with the white line "IMMORTAL · IMPOSSIBLE TO KILL." The left-edge
+checklist lights all four — PHASE 1 · THE TEACHER, PHASE 2 · ERROR 001, PHASE 3 · THE BALL CORE, PHASE 4 ·
+GLITCH-ENGINE — and a right-edge P1→P4 ladder marks the current form. The big caption reads "PHASE 4 ·
+GLITCH-ENGINE"; the title band reads "THE FOUR PHASES OF ToddLLM 001 — TEACHER TO
+WAR-ENGINE."](screenshots/57-four-phases.png)
+
+- **A new four-beat cutscene after THE MIDGAME GOD-WALL.** Climb past the god-wall and 001's transformation
+  ladder plays out: **PHASE 1 · THE TEACHER** (the calm revealed Karuto over a soft lectern glow, the words
+  TEACHES / SPEAKS / REVEALS / RULES radiating out, "still a person, still a ruler," with the note "PHASE 1 IS
+  NOT WEAK"), **PHASE 2 · ERROR 001** (a heavy red aura, armor shards cracking and flaking off the figure,
+  flickering "ERROR 001" glyphs, "he stops revealing power and starts using it"), **PHASE 3 · THE BALL CORE**
+  (the humanoid collapses into a spinning, banded condensed error-core with a faint 001 inside it — "no longer
+  humanoid · fighter → entity"), and **PHASE 4 · GLITCH-ENGINE** (the jagged purple war-engine shell with Simon
+  caged in the center as the fuel, lightning forking inward, the trapped voices orbiting, "everyone genocide
+  except Simon," "immortal · impossible to kill").
+- **The meter banks your climb.** Keep moving and THE FOUR PHASES meter fills to "★ PAST ALL FOUR PHASES ★"; the
+  immortal war-engine stays behind you and your real climb is saved.
+- New `updatePhaseProg` / `drawPhaseProg`, gated to start one stretch above THE MIDGAME GOD-WALL; reuses
+  `drawKarutoFigure` for Phases 1–3 and `drawCmFigure` for the caged Simon in Phase 4. Screenshot scene
+  `phaseprog` added to `tools/capture_screenshot.py`.
+
 ## 2026-06-26 — THE MIDGAME GOD-WALL: the ToddLLM 001 boss fight is the middle, not the end (Lore 31, "Re: Lore 30")
 
 Based on Toby's June 26 lore (the "Re: Lore 30" message): *"Then there is the ToddLLM 001 boss fight. Simon
