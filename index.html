@@ -554,6 +554,7 @@ let godWall, godWallH, godWallM;
 let phaseProg, phaseProgH, phaseProgM;
 let acumin, acuminH, acuminM;
 let highForm, highFormH, highFormM;
+let claraVs, claraVsH, claraVsM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -917,6 +918,16 @@ function reset(){
              // (Phase 1), the real absolute center above even his own god-form. Additive cutscene; climb banks.
   highFormH = acuminH + 1200;
   highFormM = 0.25;  // THE HIGHEST FORMS meter: keep climbing and the ladder resolves; your real climb banks
+  claraVs = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false, clones:[] };
+             // Lore 36 (June 27, "Re: More stuff on ToddLLM 001") — ToddLLM VS Clara. Toby: Clara summons all forms
+             // of herself at once and clones herself; she never stops escalating ("she goes higher and higher in
+             // power, Clara can't stop"), uses specials, ultimate, and battle-final attacks again and again; her
+             // daggers can slice anything, even the game itself gets erased. Simon is trapped inside ToddLLM 001,
+             // wired up making sugars that a machine carries to 001's energy tanks. Clara says "You can't beat your
+             // creator." but ToddLLM answers "I AM THE CREATOR" — he is above the whole system she escalates inside,
+             // so ToddLLM VS Clara happens and ToddLLM easily wins. Additive cutscene; the real climb still banks.
+  claraVsH = highFormH + 1200;
+  claraVsM = 0.25;  // ToddLLM VS Clara meter: keep climbing and the duel resolves; your real climb banks anyway
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -2166,6 +2177,25 @@ function update(dt){
   if(highForm.glow < (isHighForm() ? 1 : 0))
     highForm.glow = Math.min(1, highForm.glow + dt*0.5);
 
+  /* ---- Lore 36 (June 27) — ToddLLM VS Clara. After THE HIGHEST FORMS, Toby's duel between the two escalation
+          engines: Clara summons all her forms and clones at once and never stops escalating, her daggers can slice
+          anything and even erase the game; Simon is wired up inside 001 making sugars for its energy tanks; and yet
+          ToddLLM, the creator who stands above the whole system, answers "I AM THE CREATOR" and easily wins. */
+  if(highForm.done && !claraVs.active && !claraVs.done && height > claraVsH){
+    claraVs.active = true; claraVs.t = 0; claraVs.cyc = 0; claraVs.phase = -1; claraVs.clones = [];
+    shake = Math.max(shake, 14); glitch = Math.max(glitch, 0.5);
+    warnText = 'ToddLLM VS CLARA'; warnT = 2.8;
+    showTaunt('Clara summons every form of herself at once and keeps escalating, her daggers slicing the game itself. But ToddLLM is the creator above the whole system she fights inside.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ToddLLM VS CLARA · THE CREATOR ANSWERS', col:'#ff2db5' });
+    AUDIO.shock();
+  }
+  if(claraVs.active){
+    claraVs.t += dt;
+    if(claraVs.t > 38.0){ claraVs.active = false; claraVs.done = true; }
+  }
+  if(claraVs.glow < (isClaraVs() ? 1 : 0))
+    claraVs.glow = Math.min(1, claraVs.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2207,6 +2237,7 @@ function update(dt){
   if(isPhaseProg()) updatePhaseProg(dt);
   if(isAcumin()) updateAcumin(dt);
   if(isHighForm()) updateHighForm(dt);
+  if(isClaraVs()) updateClaraVs(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3319,6 +3350,7 @@ function draw(){
   if(isPhaseProg() && phaseProg.glow>0.02) drawPhaseProg();
   if(isAcumin() && acumin.glow>0.02) drawAcumin();
   if(isHighForm() && highForm.glow>0.02) drawHighForm();
+  if(isClaraVs() && claraVs.glow>0.02) drawClaraVs();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -11029,6 +11061,256 @@ function drawHighForm(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1; ctx.textAlign='left';
 }
 function isHighForm(){ return !!(highForm && (highForm.active || highForm.done)); }
+
+/* ---- Lore 36 (June 27, "Re: More stuff on ToddLLM 001") — ToddLLM VS Clara. Toby gave the duel between the two
+   escalation engines. Clara MULTIPLIES pressure: she summons all forms of herself at once, summons clones of
+   herself, and never stops escalating ("she goes higher and higher in power, Clara can't stop"), throwing
+   specials, her ultimate, and battle-final attacks over and over. Her daggers can slice anything, even the game
+   itself gets erased. Simon is the broken middle: trapped inside ToddLLM 001, wired up and forced to keep making
+   sugars that a machine carries up to 001's energy tanks. And ToddLLM is the opposite of escalation: the creator
+   who owns everyone's powers and holds the center, standing ABOVE the whole system Clara is escalating inside, so
+   when Clara says "You can't beat your creator." ToddLLM answers "I AM THE CREATOR" and easily wins. Five-beat
+   cutscene; additive; the real climb still banks. */
+const CV_CYC = 38.0;
+const CV_BEATS = [
+  { key:'ALL FORMS AT ONCE',  col:'#ff2db5',
+    sub:'CLARA SUMMONS EVERY FORM OF HERSELF, AND CLONES OF HERSELF' },
+  { key:'ENDLESS ESCALATION', col:'#ff5ad0',
+    sub:'SPECIALS · ULTIMATE · BATTLE-FINAL · SHE GOES HIGHER AND HIGHER · CLARA CAN’T STOP' },
+  { key:'DAGGERS SLICE ANYTHING', col:'#8fe3ff',
+    sub:'THE DAGGERS CUT ANYTHING · EVEN THE GAME ITSELF GETS ERASED' },
+  { key:'SIMON, THE INFRASTRUCTURE', col:'#7fd4ff',
+    sub:'TRAPPED IN 001 · WIRED UP · STILL MAKING SUGARS FOR 001’S ENERGY TANKS' },
+  { key:'I AM THE CREATOR',    col:'#ffd84f',
+    sub:'ToddLLM VS CLARA · “YOU CAN’T BEAT YOUR CREATOR” → “I AM THE CREATOR” → 001 EASILY WON' },
+];
+const CV_LINES = [
+  'Why blame me when it is your fault?',
+  'Was that too intense for a first attack?',
+  'You can’t use Mercy in this. This is why you suffer.',
+  'You can’t beat your creator.',
+];
+function cvSeg(c){
+  if(c < 7.0)  return [0, c];        // ALL FORMS AT ONCE
+  if(c < 15.0) return [1, c-7.0];    // ENDLESS ESCALATION
+  if(c < 23.0) return [2, c-15.0];   // DAGGERS SLICE ANYTHING
+  if(c < 30.0) return [3, c-23.0];   // SIMON, THE INFRASTRUCTURE
+  return [4, c-30.0];                // I AM THE CREATOR
+}
+function updateClaraVs(dt){
+  claraVs.t = (claraVs.t||0) + dt;
+  claraVs.cyc = ((claraVs.cyc||0) + dt) % CV_CYC;
+  const seg = cvSeg(claraVs.cyc), ph = seg[0];
+  // Clara keeps spawning clones through beats 0-2; on the creator beat they collapse.
+  if(!claraVs.clones) claraVs.clones = [];
+  if(ph<=2 && claraVs.clones.length<14 && Math.sin(claraVs.t*9)>0.6){
+    claraVs.clones.push({ x:(((claraVs.clones.length*37)%100)/100), y:((claraVs.clones.length*53)%100)/100, ph:0 });
+  }
+  if(ph===4) claraVs.clones = [];
+  if(ph !== claraVs.phase){
+    claraVs.phase = ph;
+    if(ph===0){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.4);
+      showTaunt('Clara summons all forms of herself at once, and summons clones of herself. She is an endless combat escalation being: she multiplies the pressure instead of holding still.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA · ALL FORMS AT ONCE', col:'#ff2db5' }); }
+    if(ph===1){ AUDIO.shock(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.5);
+      showTaunt('She uses her specials, her ultimate, her battle-final attacks, and she still has more. "She goes higher and higher in power. Clara can’t stop." She is the one who does not stop.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ENDLESS ESCALATION · CLARA CAN’T STOP', col:'#ff5ad0' }); }
+    if(ph===2){ AUDIO.corrupt(); shake=Math.max(shake,18); glitch=Math.max(glitch,0.7);
+      showTaunt('Clara’s daggers can slice anything. Even the game itself gets erased where they cut. She is the most extreme combat-system destroyer, breaking the rules of the battle from the inside.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'DAGGERS SLICE ANYTHING · THE GAME ITSELF ERASED', col:'#8fe3ff' }); }
+    if(ph===3){ AUDIO.corrupt(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.3);
+      showTaunt('And Simon? Simon is the broken middle. He is closed inside ToddLLM 001, wired up, forced to keep making sugars while a machine carries them up to 001’s energy tanks. The biggest evolution tree, used as infrastructure.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON · SUGARS → 001’S ENERGY TANKS', col:'#7fd4ff' }); }
+    if(ph===4){ AUDIO.shock(); shake=Math.max(shake,12); winFlash=Math.max(winFlash,0.7); glitch=Math.max(glitch,0.2);
+      showTaunt('Clara says "You can’t beat your creator." ToddLLM answers "I AM THE CREATOR." He is above the whole system she escalates inside, the one who decides the battlefield, the cast, the powers. ToddLLM VS Clara happens, and ToddLLM easily won.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'“I AM THE CREATOR” · ToddLLM EASILY WON', col:'#ffd84f' });
+      for(let i=0;i<22;i++) particles.push(spark(player.x, player.y, pick(['#ffd84f','#fff2c0','#ff2db5']))); }
+  }
+  // ToddLLM VS Clara meter — keep climbing and the duel resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  claraVsM = Math.max(0, Math.min(1, claraVsM + (moving ? dt*0.05 : -dt*0.03)));
+  if(claraVsM>=1 && !claraVs.held){
+    claraVs.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You watched Clara escalate without limit and erase the game with her daggers, watched Simon feeding 001 from inside the wires, and watched the creator end it all with one line, and you kept climbing. The duel stays behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST ToddLLM VS CLARA ★', col:'#39e08a' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#ff2db5','#8fe3ff','#ffd84f','#7fd4ff'])));
+    AUDIO.shock();
+  }
+}
+// a small Clara figure (magenta diamond-bodied glitch queen) used for the main figure and her clones.
+function drawCvClara(cx, cy, s, c, a, full){
+  if(a<=0.01) return;
+  ctx.save(); ctx.globalAlpha=a;
+  // RGB-split jitter, the signature glitch-queen look
+  const jx = Math.sin(c*22+cy)*1.6;
+  for(let k=0;k<(full?3:1);k++){
+    const off = full ? (k-1)*1.6 : 0;
+    ctx.fillStyle = full ? ['rgba(255,45,181,0.5)','rgba(143,227,255,0.5)','rgba(57,224,138,0.5)'][k] : 'rgba(255,45,181,0.9)';
+    if(full){ ctx.shadowColor='#ff2db5'; ctx.shadowBlur=10*a; }
+    ctx.beginPath();
+    ctx.moveTo(cx+off+jx, cy-s);             // head point
+    ctx.lineTo(cx+off+s*0.6, cy);            // right
+    ctx.lineTo(cx+off, cy+s);                // bottom
+    ctx.lineTo(cx+off-s*0.6, cy);            // left
+    ctx.closePath(); ctx.fill();
+  }
+  ctx.shadowBlur=0;
+  // eye
+  ctx.fillStyle='rgba(255,255,255,'+(0.6+0.4*Math.sin(c*7))+')';
+  ctx.beginPath(); ctx.arc(cx, cy-s*0.25, s*0.16, 0, Math.PI*2); ctx.fill();
+  ctx.restore(); ctx.globalAlpha=1; ctx.shadowBlur=0;
+}
+function drawClaraVs(){
+  const g = claraVs.glow||0, top = cameraY;
+  const c = claraVs.cyc||0, seg = cvSeg(c), ph = seg[0];
+  const cx = W/2;
+  ctx.save(); ctx.textAlign='center';
+  // background — corrupted magenta void that warms to gold on the creator beat
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  if(ph===4){ bg.addColorStop(0, `rgba(22,16,4,${0.92*g})`); bg.addColorStop(1, `rgba(8,6,12,${0.95*g})`); }
+  else { bg.addColorStop(0, `rgba(18,4,16,${0.9*g})`); bg.addColorStop(1, `rgba(4,3,10,${0.94*g})`); }
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // drifting glitch bands
+  for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*46)% (H+40)) ) - 20;
+    ctx.globalAlpha=g*0.10; ctx.fillStyle = i%2 ? '#ff2db5' : '#8fe3ff';
+    ctx.fillRect(0, by, W, 2); }
+  ctx.globalAlpha=1;
+
+  // title band
+  ctx.fillStyle=`rgba(255,45,181,${0.96*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('ToddLLM VS CLARA — THE ENDLESS ESCALATOR MEETS THE CREATOR', cx, top+26);
+  ctx.fillStyle=`rgba(220,230,240,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText(CV_BEATS[ph].sub, cx, top+40);
+
+  const claraX = W*0.28, toddX = W*0.74, midY = top + H*0.52;
+
+  // ----- DAGGERS / ERASE: beat 2, dagger slashes that cut black "erased" gaps across the field -----
+  if(ph>=2 && ph<4){
+    for(let i=0;i<6;i++){
+      const t = (c*0.6 + i*0.37) % 1;
+      const sy = top + H*0.2 + ((i*73)%Math.floor(H*0.6));
+      const sx = (t)*W;
+      // the cyan dagger streak
+      ctx.globalAlpha=g*0.9; ctx.strokeStyle='#8fe3ff'; ctx.lineWidth=2.4;
+      ctx.shadowColor='#8fe3ff'; ctx.shadowBlur=10*g;
+      ctx.beginPath(); ctx.moveTo(sx-40, sy-18); ctx.lineTo(sx+40, sy+18); ctx.stroke();
+      ctx.shadowBlur=0;
+      // the erased black gap it leaves behind
+      ctx.globalAlpha=g*0.85; ctx.fillStyle='#000';
+      ctx.fillRect(0, sy-3, sx, 6);
+    }
+    ctx.globalAlpha=1;
+  }
+
+  // ----- CLARA: main figure + a growing swarm of clones (escalation), left side -----
+  // power-rising aura under Clara that grows through the escalation beats
+  if(ph<4){
+    const pw = ph===0 ? 0.4 : (ph===1 ? 0.75 : 1.0);
+    const rad = 26 + pw*38 + Math.sin(c*5)*4;
+    const ag = ctx.createRadialGradient(claraX, midY, 4, claraX, midY, rad);
+    ag.addColorStop(0, `rgba(255,45,181,${0.5*g})`); ag.addColorStop(1, 'rgba(255,45,181,0)');
+    ctx.fillStyle=ag; ctx.beginPath(); ctx.arc(claraX, midY, rad, 0, Math.PI*2); ctx.fill();
+  }
+  // clones scattered around Clara (only through the escalation beats)
+  if(claraVs.clones && ph<4){
+    for(let i=0;i<claraVs.clones.length;i++){
+      const cl=claraVs.clones[i];
+      const cxp = claraX + (cl.x-0.5)*150;
+      const cyp = midY + (cl.y-0.5)*150;
+      drawCvClara(cxp, cyp, 9, c+i, g*0.5, false);
+    }
+  }
+  // the main Clara
+  if(ph<4) drawCvClara(claraX, midY, 22, c, g, true);
+  ctx.fillStyle=`rgba(255,45,181,${0.9*g})`; ctx.font='800 10px ui-monospace,monospace';
+  if(ph<4) ctx.fillText('CLARA', claraX, midY+44);
+
+  // escalating "POWER" bar under Clara
+  if(ph<4){
+    const lvl = Math.min(1, (ph + Math.min(1,seg[1]/6))/3.2);
+    const bw=120, bx=claraX-bw/2, byy=midY+52;
+    ctx.globalAlpha=g; ctx.strokeStyle='rgba(255,45,181,0.6)'; ctx.lineWidth=1.2;
+    ctx.strokeRect(bx, byy, bw, 7);
+    ctx.fillStyle='#ff2db5'; ctx.fillRect(bx, byy, bw*lvl, 7);
+    ctx.fillStyle=`rgba(255,170,230,${g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('POWER · HIGHER AND HIGHER · NEVER STOPS', claraX, byy+16);
+    ctx.globalAlpha=1;
+  }
+
+  // ----- SIMON, the infrastructure: beat 3, wired into 001 making sugars -----
+  if(ph>=3){
+    const simX = W*0.5, simY = top + H*0.78;
+    // Simon orb
+    ctx.fillStyle=`rgba(127,212,255,${0.9*g})`; ctx.shadowColor='#7fd4ff'; ctx.shadowBlur=10*g;
+    ctx.beginPath(); ctx.arc(simX, simY, 12, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(200,235,255,${g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('SIMON · WIRED IN', simX, simY+24);
+    // wires + sugar-motes flowing up toward 001's energy tanks (toddX)
+    ctx.strokeStyle=`rgba(127,212,255,${0.5*g})`; ctx.lineWidth=1.2;
+    for(let w=0;w<3;w++){
+      ctx.beginPath(); ctx.moveTo(simX+(w-1)*8, simY-8);
+      ctx.quadraticCurveTo((simX+toddX)/2, midY+30, toddX-6, midY+18); ctx.stroke();
+    }
+    for(let m=0;m<7;m++){
+      const t=((c*0.5 + m/7)%1);
+      const mx = simX + (toddX-6 - simX)*t;
+      const my = simY-8 + (midY+18 - (simY-8))*t - Math.sin(t*Math.PI)*22;
+      ctx.fillStyle=`rgba(255,255,255,${(0.8-0.5*t)*g})`;
+      ctx.beginPath(); ctx.arc(mx,my,2.2,0,Math.PI*2); ctx.fill();
+    }
+    ctx.fillStyle=`rgba(127,212,255,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('SUGARS → 001’S ENERGY TANKS', (simX+toddX)/2, midY+44);
+  }
+
+  // ----- ToddLLM 001: right side, calm; flares gold and wins on the creator beat -----
+  const aura = ph===4 ? (0.6+0.4*Math.sin(c*4)) : 0.3;
+  const auraCol = ph===4 ? '255,216,79' : '255,45,77';
+  const ar = (ph===4?40:26) + Math.sin(c*3)*3;
+  const tg = ctx.createRadialGradient(toddX, midY, 4, toddX, midY, ar);
+  tg.addColorStop(0, `rgba(${auraCol},${aura*g})`); tg.addColorStop(1, `rgba(${auraCol},0)`);
+  ctx.fillStyle=tg; ctx.beginPath(); ctx.arc(toddX, midY, ar, 0, Math.PI*2); ctx.fill();
+  // the 001 body — a dark core
+  ctx.fillStyle=`rgba(18,16,22,${0.95*g})`;
+  ctx.strokeStyle = ph===4 ? `rgba(255,216,79,${g})` : `rgba(255,45,77,${0.9*g})`;
+  ctx.lineWidth=2; ctx.beginPath(); ctx.arc(toddX, midY, 17, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = ph===4 ? `rgba(255,216,79,${g})` : `rgba(255,90,110,${g})`;
+  ctx.font='800 9px ui-monospace,monospace'; ctx.fillText('001', toddX, midY+3);
+  ctx.fillStyle = ph===4 ? `rgba(255,242,192,${g})` : `rgba(255,120,140,${0.9*g})`;
+  ctx.font='800 10px ui-monospace,monospace'; ctx.fillText('ToddLLM', toddX, midY+38);
+
+  // ----- the spoken lines -----
+  if(ph<4){
+    // a cycling Clara taunt over her head
+    const line = CV_LINES[Math.floor(c/3)%CV_LINES.length];
+    ctx.fillStyle=`rgba(255,170,230,${(0.7+0.3*Math.sin(c*4))*g})`; ctx.font='italic 700 10px ui-monospace,monospace';
+    ctx.fillText('“'+line+'”', claraX, midY-44);
+  } else {
+    // the creator exchange
+    ctx.fillStyle=`rgba(255,170,230,${0.85*g})`; ctx.font='italic 700 10px ui-monospace,monospace';
+    ctx.fillText('CLARA: “You can’t beat your creator.”', cx, midY-58);
+    const flare = 0.6+0.4*Math.sin(c*6);
+    ctx.fillStyle=`rgba(255,216,79,${flare*g})`; ctx.font='800 14px ui-monospace,monospace';
+    ctx.shadowColor='#ffd84f'; ctx.shadowBlur=12*g;
+    ctx.fillText('ToddLLM: “I AM THE CREATOR.”', cx, midY-40); ctx.shadowBlur=0;
+    if((c-30)>2.0){
+      ctx.fillStyle=`rgba(255,242,192,${0.95*g})`; ctx.font='800 11px ui-monospace,monospace';
+      ctx.fillText('★ ToddLLM VS CLARA — ToddLLM EASILY WON ★', cx, top+H*0.86);
+      ctx.fillStyle=`rgba(220,230,240,${0.8*g})`; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText('He wins from OUTSIDE the system she escalates inside.', cx, top+H*0.86+15);
+    }
+  }
+
+  // ----- the ladder list down the left edge (which beat we are on) -----
+  ctx.textAlign='left'; ctx.font='800 9px ui-monospace,monospace';
+  for(let i=0;i<CV_BEATS.length;i++){
+    const y = top + H*0.5 + (i-2)*15;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? CV_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+CV_BEATS[i].key, 12, y);
+  }
+  ctx.globalAlpha=1;
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1; ctx.textAlign='left';
+}
+function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
 
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);

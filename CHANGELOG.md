@@ -4,6 +4,53 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-27 — ToddLLM VS CLARA: the endless escalator meets the creator, and the creator wins from outside the system (Lore 36, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 27 email, which pits the two strongest beings against each other as two different kinds of
+escalation engines. Clara *multiplies pressure*: *"Clara has the ability to summon all forms of herself at once, and
+can summon clones of herself... she keeps saying she has more and uses her special attacks and ultimate and battle
+fanially, and still is more powerful than ever, she goes higher and higher in power, Clara can't stop."* Her daggers
+*"can slice anything and even the game itself gets erased."* Simon is the broken middle: *"Simon is now closed inside
+of ToddLLM 001 STILL and is making sugars, Simon can't stop making sugars since he is under wires that connect all
+through him and some machine or something brings the sugars up to ToddLLM's energy tanks."* And ToddLLM is the
+opposite of escalation, the creator who owns everyone's powers and holds the center: Clara says *"You can't beat your
+creator,"* ToddLLM answers *"I AM THE CREATOR,"* and *"ToddLLM VS Clara happens, ToddLLM easily won."* Toby's own
+cleanest reading: *"Clara grows by multiplying herself and escalating without limit, Simon grows through endless forms
+and lightning-speed evolution, but ToddLLM still stands above both because he is the creator-level center being who
+uses everyone's powers and wins from outside the system they are fighting within."* Built as a new cutscene beat at
+the top of the climb, after THE HIGHEST FORMS. Additive, nothing was removed and your real climb still banks.
+
+![Lore 36 — ToddLLM VS CLARA, frozen on the SIMON, THE INFRASTRUCTURE beat. Over a corrupted magenta void the title
+band reads "ToddLLM VS CLARA — THE ENDLESS ESCALATOR MEETS THE CREATOR." On the left the magenta RGB-split glitch
+queen CLARA stands inside a growing power-aura, ringed by a swarm of smaller clones of herself, over a POWER bar
+labeled "HIGHER AND HIGHER · NEVER STOPS"; her cycling taunt reads "Was that too intense for a first attack?" Cyan
+dagger streaks slash across the field, each leaving a black "erased" gap behind it. At the bottom center a blue SIMON
+orb labeled "WIRED IN" feeds white sugar-motes up a curve of wires to the right, under the label "SUGARS → 001'S
+ENERGY TANKS." On the right the dark ToddLLM 001 core looms in its red 001 aura. Down the left edge a five-beat ladder
+lists ALL FORMS AT ONCE, ENDLESS ESCALATION, DAGGERS SLICE ANYTHING, SIMON THE INFRASTRUCTURE, and I AM THE
+CREATOR.](screenshots/64-toddllm-vs-clara.png)
+
+- **New ToddLLM VS CLARA cutscene beat.** It plays as a five-stage duel at the top of the climb (after THE HIGHEST
+  FORMS): ALL FORMS AT ONCE (Clara summons every form of herself and clones of herself), ENDLESS ESCALATION (specials,
+  ultimate, battle-final attacks, "she goes higher and higher, Clara can't stop"), DAGGERS SLICE ANYTHING (cyan
+  daggers cut the field and erase the game itself in black gaps), SIMON, THE INFRASTRUCTURE (Simon wired inside 001,
+  still making sugars that flow up to 001's energy tanks), and I AM THE CREATOR (Clara's "You can't beat your creator"
+  is answered by ToddLLM's "I AM THE CREATOR," and 001 easily wins from outside the system).
+- **Clara is drawn as an escalation engine.** She is a magenta RGB-split glitch-queen figure whose power-aura grows
+  through the first three beats, surrounded by a clone swarm that keeps spawning, over a POWER bar that climbs and
+  "never stops." Her four famous lines cycle over her head ("Why blame me when it is your fault?", "Was that too
+  intense for a first attack?", the Mercy line, and "You can't beat your creator.").
+- **The daggers erase the game.** Each dagger streak leaves a black "erased" strip across the screen, so you can see
+  her cutting the battle-system itself, not just the cast.
+- **Simon is shown as infrastructure.** On the fourth beat Simon sits wired into 001 at the bottom, with sugar-motes
+  drifting up the wires into 001's energy tanks, so you can see the biggest evolution tree being used as a power
+  source for the side he is trapped inside.
+- **The creator beat is the payoff.** On the final beat 001 flares from red to gold, the exchange "You can't beat your
+  creator" → "I AM THE CREATOR" plays, and the verdict "ToddLLM VS CLARA — ToddLLM EASILY WON · he wins from OUTSIDE
+  the system she escalates inside" lands.
+- **Additive only.** It is height-gated above THE HIGHEST FORMS, has its own meter that banks when you keep climbing,
+  and removes nothing. Screenshot captured via a new `claravs` scene added to tools/capture_screenshot.py.
+
 ## 2026-06-26 — THE HIGHEST FORMS: the apex-form ladder, where Clara's FGI.EXE tops the god-form but ToddLLM's true base tops everything (Lore 35b, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 26 follow-up laying out the highest forms: *"Simon's highest form is Fatal Error. Clara's

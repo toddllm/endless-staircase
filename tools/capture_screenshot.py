@@ -1529,6 +1529,37 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+    "claravs": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        // mark every prior beat DONE (so claraVs triggers) but glow=0 (so none of them draw over the frame)
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // ToddLLM VS CLARA — freeze on beat 3 (SIMON, THE INFRASTRUCTURE): Clara's clone swarm escalating,
+        // her daggers slicing the field, Simon wired in feeding sugars to 001's energy tanks, and 001 looming.
+        if (typeof claraVs!=='undefined'){
+          claraVs.active=true; claraVs.done=false; claraVs.glow=1;
+          claraVs.t=27.5; claraVs.cyc=27.5; claraVs.phase=3; claraVs.clones=[];
+          for (var k=0;k<12;k++){ claraVs.clones.push({x:((k*37)%100)/100, y:((k*53)%100)/100, ph:0}); }
+        }
+        if (typeof claraVsM!=='undefined'){ claraVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof claraVs!=='undefined'){ claraVs.glow=1; claraVs.cyc=27.5; claraVs.phase=3; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.1; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 }
 
 def find_chrome():
