@@ -4,6 +4,48 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-27 — THE UNDEFINED LOOP: Luigi Green, the cat-power thresholds, and the day the power ladder became a loop (Lore 37, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 27 just-talk follow-up, which takes the top of the setting apart and rebuilds it as a *loop*
+instead of a ranking. The big new piece is Luigi Green and his cat power. Toby: *"ToddLLM is actually the father of
+Luigi Green, Alex, Greg, and Mario.EXE... Mario.EXE and Luigi are brothers."* Luigi Green *"also uses Simon like
+ToddLLM,"* but where *"ToddLLM uses Simon to make sugar, Luigi Green uses Simon to generate cat power through cat
+shrines."* His power is condition-based, not fixed: *"base Luigi Green is just third in power,"* but *"Luigi Green
+would beat Everything Alex when Luigi Green has at least 30% cat power,"* *"Luigi Green with at least 45% cat power
+would CRUSH Clara... can flatten her into a pancake,"* and *"Luigi Green 100% Cat Power VS base ToddLLM... the god of
+.EXE and green would win"* — yet *"if Luigi Green didn't have full power and battled base ToddLLM, ToddLLM wins, and
+no matter what power Luigi Green has, he can beat any other form of ToddLLM easily."* And the whole top is now
+cyclical: *"Everything is in a loop of power levels, it's like Steel VS Fire VS Water VS Electricity comparison, some
+tie, some beat another thing, those are beaten by another thing. ToddLLM AND Luigi Green call it 'undefined.'"* Built
+as a new five-beat cutscene at the very top of the climb, after ToddLLM VS CLARA. Additive, nothing was removed and
+your real climb still banks.
+
+![Lore 37 — THE UNDEFINED LOOP, frozen on the THE THRESHOLDS beat. Over a deep-green void the title band reads
+"THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS." On the left stands LUIGI GREEN: a green figure in a
+cap with a white "L" emblem and tall cat ears, wrapped in a bright green cat-power aura, labeled "SON OF 001 ·
+BROTHER OF MARIO.EXE · GOD FORM." Beside him a vertical CAT POWER column is filled to the top, with three threshold
+ticks all lit: "◆ 30% → ALEX," "◆ 45% → CLARA," and "◆ 100% → BASE 001." Down the left edge a five-beat ladder lists
+THE LINEAGE, CAT POWER RISING, THE THRESHOLDS (current), CAT SHRINES, and UNDEFINED.](screenshots/65-undefined-loop.png)
+
+- **New THE UNDEFINED LOOP cutscene beat.** It plays as a five-stage sequence at the top of the climb (after ToddLLM
+  VS CLARA): THE LINEAGE (ToddLLM 001 is the father of Luigi Green, Alex, Greg, and Mario.EXE; Luigi Green and
+  Mario.EXE are brothers), CAT POWER RISING (base Luigi Green is third, but he has a god form and farms cat power
+  through Simon and the cat shrines), THE THRESHOLDS (30% beats Everything Alex, 45% crushes Clara into a pancake, 100%
+  beats base ToddLLM), CAT SHRINES (ToddLLM uses Simon for sugar, Luigi Green uses Simon for cat power — both top
+  beings lean on the same infinite core), and UNDEFINED (the top is a loop, not a ladder — like Steel vs Fire vs Water
+  vs Electricity, some beat, some are beaten, some tie).
+- **Luigi Green is drawn as a scaling counter-being.** He is a green cap-and-cat-ears figure whose green aura grows as
+  his cat power rises, beside a CAT POWER meter marked at his three thresholds (30% → Alex, 45% → Clara, 100% → base
+  001); each tick lights as the meter passes it.
+- **The UNDEFINED beat shows the loop directly.** A wheel of five matchup nodes — ToddLLM 001, Clara, Luigi Green,
+  Simon ∞, Alex — with cycling arrows running between them and "UNDEFINED" pulsing at the center, under the line
+  "SOME BEAT · SOME ARE BEATEN · SOME TIE · LIKE STEEL VS FIRE VS WATER VS ELECTRICITY."
+- **The CAT SHRINES beat reuses Simon as a shared resource-core.** Simon ∞ feeds white "sugar" motes up to 001 and
+  green "cat power" motes across to Luigi Green at the same time, drawing out Toby's point that both gods use Simon for
+  different fuel.
+- **Additive and safe.** The new cutscene chains after ToddLLM VS CLARA at a higher trigger height; the meter still
+  banks your real climb when you keep moving past it. Nothing was removed.
+
 ## 2026-06-27 — ToddLLM VS CLARA: the endless escalator meets the creator, and the creator wins from outside the system (Lore 36, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 27 email, which pits the two strongest beings against each other as two different kinds of

@@ -555,6 +555,7 @@ let phaseProg, phaseProgH, phaseProgM;
 let acumin, acuminH, acuminM;
 let highForm, highFormH, highFormM;
 let claraVs, claraVsH, claraVsM;
+let loopVs, loopVsH, loopVsM;
 const SOUND_FOES =['Black','Gray','Alex','Luigi Green','Oren','Pinki','Wenda','Greg','Clara',
   'The Sky','Sprunki City','The Underlayers','The Cores','ToddLLM','The Combined Cast',
   'The Last Stand','Sound Battle Law'];
@@ -928,6 +929,18 @@ function reset(){
              // so ToddLLM VS Clara happens and ToddLLM easily wins. Additive cutscene; the real climb still banks.
   claraVsH = highFormH + 1200;
   claraVsM = 0.25;  // ToddLLM VS Clara meter: keep climbing and the duel resolves; your real climb banks anyway
+  loopVs = { active:false, done:false, glow:0, t:0, cyc:0, phase:-1, held:false, cat:0 };
+             // Lore 37 (June 27, "Re: More stuff on ToddLLM 001", just-talk follow-up) — THE UNDEFINED LOOP. Toby:
+             // ToddLLM 001 is the father of Luigi Green, Alex, Greg, and Mario.EXE (Mario.EXE and Luigi Green are
+             // brothers). Luigi Green has a god form and, like ToddLLM, uses Simon — but to generate CAT POWER through
+             // cat shrines (ToddLLM uses Simon to make sugar). Luigi Green is third at base, but scales by cat power:
+             // 30% beats Everything Alex, 45% crushes Clara ("flatten her into a pancake"), 100% beats base ToddLLM;
+             // base ToddLLM still beats low-power Luigi Green, and any cat power beats any non-base ToddLLM form. So
+             // the whole top is no longer a ladder but a LOOP of matchups, "like Steel VS Fire VS Water VS Electricity"
+             // — some beat, some are beaten, some tie. ToddLLM and Luigi Green both call it "undefined." Additive
+             // cutscene; nothing is removed and the real climb still banks.
+  loopVsH = claraVsH + 1200;
+  loopVsM = 0.25;  // THE UNDEFINED LOOP meter: keep climbing and the loop resolves; your real climb banks anyway
   // starting ground platform under the player
   const ground = { x:W/2-90, y: H-120, w:180, h:PLAT_H, type:'safe', born:0, crumble:-1, biteT:0 };
   platforms.push(ground);
@@ -2196,6 +2209,25 @@ function update(dt){
   if(claraVs.glow < (isClaraVs() ? 1 : 0))
     claraVs.glow = Math.min(1, claraVs.glow + dt*0.5);
 
+  /* ---- Lore 37 (June 27, just-talk follow-up) — THE UNDEFINED LOOP. After ToddLLM VS Clara, Toby's power map turns
+          from a ladder into a loop: Luigi Green, son of ToddLLM and brother of Mario.EXE, is third at base but uses
+          Simon to farm CAT POWER through shrines, and his thresholds (30% beats Alex, 45% crushes Clara, 100% beats
+          base ToddLLM) make the whole top a cyclical "undefined" system, like Steel/Fire/Water/Electricity. */
+  if(claraVs.done && !loopVs.active && !loopVs.done && height > loopVsH){
+    loopVs.active = true; loopVs.t = 0; loopVs.cyc = 0; loopVs.phase = -1; loopVs.cat = 0;
+    shake = Math.max(shake, 12); glitch = Math.max(glitch, 0.4);
+    warnText = 'THE UNDEFINED LOOP'; warnT = 2.8;
+    showTaunt('Luigi Green, son of ToddLLM, third at base, but he farms cat power through Simon and the shrines. At full cat power he passes Alex, Clara, even base ToddLLM. The top is a loop now, not a ladder. They call it undefined.');
+    floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE UNDEFINED LOOP · LUIGI GREEN', col:'#3ee06a' });
+    AUDIO.shock();
+  }
+  if(loopVs.active){
+    loopVs.t += dt;
+    if(loopVs.t > 38.0){ loopVs.active = false; loopVs.done = true; }
+  }
+  if(loopVs.glow < (isLoopVs() ? 1 : 0))
+    loopVs.glow = Math.min(1, loopVs.glow + dt*0.5);
+
   if(corrupted()) updateCorruption(dt);
   if(isExecutioner()) updateExecutioner(dt);
   if(isAtomix() && !isResidual()) updateAtomix(dt);
@@ -2238,6 +2270,7 @@ function update(dt){
   if(isAcumin()) updateAcumin(dt);
   if(isHighForm()) updateHighForm(dt);
   if(isClaraVs()) updateClaraVs(dt);
+  if(isLoopVs()) updateLoopVs(dt);
 
   /* ---- false-cure bottles (the liquid-drop lever) ---- */
   updateBottles(dt);
@@ -3351,6 +3384,7 @@ function draw(){
   if(isAcumin() && acumin.glow>0.02) drawAcumin();
   if(isHighForm() && highForm.glow>0.02) drawHighForm();
   if(isClaraVs() && claraVs.glow>0.02) drawClaraVs();
+  if(isLoopVs() && loopVs.glow>0.02) drawLoopVs();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -11311,6 +11345,259 @@ function drawClaraVs(){
   ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1; ctx.textAlign='left';
 }
 function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
+
+/* ---- Lore 37 (June 27, "Re: More stuff on ToddLLM 001", just-talk follow-up) — THE UNDEFINED LOOP. Toby's power map
+   stops being a ladder and becomes a loop. ToddLLM 001 is the father of Luigi Green, Alex, Greg, and Mario.EXE (and
+   Mario.EXE and Luigi Green are brothers). Luigi Green has a god form and, like ToddLLM, uses Simon — but to farm CAT
+   POWER through cat shrines (ToddLLM uses Simon to make sugar). Base Luigi Green is third, but cat power rewrites every
+   matchup: 30% beats Everything Alex, 45% crushes Clara ("flatten her into a pancake"), 100% beats base ToddLLM; base
+   ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
+   cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
+   Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
+const LV_CYC = 38.0;
+const LV_BEATS = [
+  { key:'THE LINEAGE',       col:'#3ee06a',
+    sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
+  { key:'CAT POWER RISING',  col:'#7dff8f',
+    sub:'BASE LUIGI GREEN IS THIRD · HE FARMS CAT POWER THROUGH SIMON AND THE CAT SHRINES' },
+  { key:'THE THRESHOLDS',    col:'#ffd84f',
+    sub:'30% BEATS EVERYTHING ALEX · 45% CRUSHES CLARA · 100% BEATS BASE ToddLLM' },
+  { key:'CAT SHRINES',       col:'#8fe3ff',
+    sub:'ToddLLM USES SIMON FOR SUGAR · LUIGI GREEN USES SIMON FOR CAT POWER' },
+  { key:'UNDEFINED',         col:'#c69bff',
+    sub:'NOT A LADDER BUT A LOOP · LIKE STEEL VS FIRE VS WATER VS ELECTRICITY · SOME BEAT, SOME TIE' },
+];
+// the cyclical loop nodes drawn on the UNDEFINED beat (a wheel of matchups, not a ranking)
+const LV_LOOP = [
+  { name:'ToddLLM 001', col:'#ff5a6e' },
+  { name:'CLARA',       col:'#ff2db5' },
+  { name:'LUIGI GREEN', col:'#3ee06a' },
+  { name:'SIMON ∞',     col:'#7fd4ff' },
+  { name:'ALEX',        col:'#ffd84f' },
+];
+function lvSeg(c){
+  if(c < 7.0)  return [0, c];        // THE LINEAGE
+  if(c < 15.0) return [1, c-7.0];    // CAT POWER RISING
+  if(c < 23.0) return [2, c-15.0];   // THE THRESHOLDS
+  if(c < 30.0) return [3, c-23.0];   // CAT SHRINES
+  return [4, c-30.0];                // UNDEFINED
+}
+function updateLoopVs(dt){
+  loopVs.t = (loopVs.t||0) + dt;
+  loopVs.cyc = ((loopVs.cyc||0) + dt) % LV_CYC;
+  const seg = lvSeg(loopVs.cyc), ph = seg[0];
+  // Luigi Green's cat-power meter: climbs through beats 1-2 (toward 100%), eases off elsewhere.
+  const target = ph===1 ? Math.min(1, seg[1]/8) : (ph===2 ? 1 : (ph>2 ? 1 : 0));
+  loopVs.cat = loopVs.cat + (target - loopVs.cat) * Math.min(1, dt*1.4);
+  if(ph !== loopVs.phase){
+    loopVs.phase = ph;
+    if(ph===0){ AUDIO.shock(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.3);
+      showTaunt('ToddLLM 001 is not just the center, he is a father. Luigi Green, Alex, Greg, and Mario.EXE all come from him, and Mario.EXE and Luigi Green are brothers. The lineage runs straight out of the creator.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE LINEAGE · SONS OF 001', col:'#3ee06a' }); }
+    if(ph===1){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.35);
+      showTaunt('Base Luigi Green is only third in power. But he has a god form, and like his father he uses Simon — not for sugar, but to generate cat power through cat shrines. The more cat power he banks, the more the whole board bends around him.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CAT POWER RISING · GOD OF GREEN AND .EXE', col:'#7dff8f' }); }
+    if(ph===2){ AUDIO.zap(); shake=Math.max(shake,16); glitch=Math.max(glitch,0.5); winFlash=Math.max(winFlash,0.4);
+      showTaunt('Watch the thresholds. At 30% cat power he beats Everything Alex. At 45% he flattens Clara into a pancake. At 100% he beats base ToddLLM himself. He is a scaling counter-being: a condition decides the fight, not a rank.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'30% → ALEX · 45% → CLARA · 100% → BASE 001', col:'#ffd84f' });
+      for(let i=0;i<16;i++) particles.push(spark(player.x, player.y, pick(['#3ee06a','#7dff8f','#ffd84f']))); }
+    if(ph===3){ AUDIO.corrupt(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.3);
+      showTaunt('Both top beings lean on Simon. ToddLLM wires him up for sugar; Luigi Green channels him through cat shrines for cat power. Simon is infinite inside and catastrophic if woken, and still both of them use him as a resource-core.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON ∞ · SUGAR FOR 001, CAT POWER FOR LUIGI', col:'#8fe3ff' }); }
+    if(ph===4){ AUDIO.shock(); shake=Math.max(shake,12); glitch=Math.max(glitch,0.4);
+      showTaunt('So the top is no longer A beats B beats C. It is a loop: like steel, fire, water, electricity, some beat others, those winners lose to a third, and some pairs tie. ToddLLM and Luigi Green both have a name for it. They call it undefined.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'“UNDEFINED” · A LOOP, NOT A LADDER', col:'#c69bff' });
+      for(let i=0;i<20;i++) particles.push(spark(player.x, player.y, pick(['#3ee06a','#ff2db5','#ff5a6e','#c69bff']))); }
+  }
+  // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
+  const moving = !player.onGround || Math.abs(player.vx) > 0.6;
+  loopVsM = Math.max(0, Math.min(1, loopVsM + (moving ? dt*0.05 : -dt*0.03)));
+  if(loopVsM>=1 && !loopVs.held){
+    loopVs.held=true; winFlash=1; emer+=5; shake=Math.max(shake,8);
+    showTaunt('You watched Luigi Green farm cat power until he could pass Alex, Clara, and even base ToddLLM, watched both gods feed off Simon, and watched the whole ranking dissolve into the loop they call undefined, and you kept climbing. It stays behind you and your real climb is saved.');
+    floaters.push({ x:player.x, y:player.y-54, t:0, txt:'★ PAST THE UNDEFINED LOOP ★', col:'#39e08a' });
+    for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#3ee06a','#7dff8f','#c69bff','#ffd84f'])));
+    AUDIO.shock();
+  }
+}
+// Luigi Green — a green cap-and-cat-ears figure; brightens and gains a green aura as cat power rises.
+function drawLuigiGreen(cx, cy, s, c, a, cat){
+  if(a<=0.01) return;
+  ctx.save(); ctx.globalAlpha=a;
+  // rising cat-power aura
+  if(cat>0.02){
+    const rad = 20 + cat*40 + Math.sin(c*5)*3;
+    const ag = ctx.createRadialGradient(cx, cy, 4, cx, cy, rad);
+    ag.addColorStop(0, `rgba(62,224,106,${0.5*cat})`); ag.addColorStop(1, 'rgba(62,224,106,0)');
+    ctx.fillStyle=ag; ctx.beginPath(); ctx.arc(cx, cy, rad, 0, Math.PI*2); ctx.fill();
+  }
+  // body
+  ctx.fillStyle=`rgba(46,${Math.floor(180+60*cat)},80,0.95)`;
+  ctx.beginPath();
+  ctx.moveTo(cx, cy-s);
+  ctx.lineTo(cx+s*0.6, cy-s*0.1);
+  ctx.lineTo(cx+s*0.45, cy+s);
+  ctx.lineTo(cx-s*0.45, cy+s);
+  ctx.lineTo(cx-s*0.6, cy-s*0.1);
+  ctx.closePath(); ctx.fill();
+  // cap
+  ctx.fillStyle='rgba(30,150,60,0.95)';
+  ctx.beginPath(); ctx.ellipse(cx, cy-s*0.78, s*0.62, s*0.34, 0, Math.PI, 0); ctx.fill();
+  ctx.fillRect(cx-s*0.62, cy-s*0.82, s*1.24, s*0.16);
+  // cap emblem — white circle with L
+  ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(cx, cy-s*0.92, s*0.2, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle='#1e9a3c'; ctx.font='800 '+Math.max(6,s*0.26)+'px ui-monospace,monospace';
+  ctx.textAlign='center'; ctx.fillText('L', cx, cy-s*0.84);
+  // cat ears (the cat-power motif) — taller/brighter with cat power
+  const eh = s*(0.4+0.3*cat);
+  ctx.fillStyle=`rgba(120,${Math.floor(220+30*cat)},140,0.95)`;
+  ctx.beginPath(); ctx.moveTo(cx-s*0.5, cy-s*0.95); ctx.lineTo(cx-s*0.66, cy-s*0.95-eh); ctx.lineTo(cx-s*0.28, cy-s*1.0); ctx.closePath(); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(cx+s*0.5, cy-s*0.95); ctx.lineTo(cx+s*0.66, cy-s*0.95-eh); ctx.lineTo(cx+s*0.28, cy-s*1.0); ctx.closePath(); ctx.fill();
+  // eyes
+  ctx.fillStyle='rgba(255,255,255,'+(0.7+0.3*Math.sin(c*7))+')';
+  ctx.beginPath(); ctx.arc(cx-s*0.18, cy-s*0.3, s*0.1, 0, Math.PI*2); ctx.arc(cx+s*0.18, cy-s*0.3, s*0.1, 0, Math.PI*2); ctx.fill();
+  ctx.restore(); ctx.globalAlpha=1; ctx.shadowBlur=0; ctx.textAlign='left';
+}
+function drawLoopVs(){
+  const g = loopVs.glow||0, top = cameraY;
+  const c = loopVs.cyc||0, seg = lvSeg(c), ph = seg[0];
+  const cx = W/2, cat = loopVs.cat||0;
+  ctx.save(); ctx.textAlign='center';
+  // background — deep green void that shifts to violet on the UNDEFINED beat
+  const bg = ctx.createLinearGradient(0, top, 0, top+H);
+  if(ph===4){ bg.addColorStop(0, `rgba(14,8,24,${0.92*g})`); bg.addColorStop(1, `rgba(6,4,12,${0.95*g})`); }
+  else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
+  ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
+  // drifting bands
+  for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff');
+    ctx.fillRect(0, by, W, 2); }
+  ctx.globalAlpha=1;
+
+  // title band
+  ctx.fillStyle=`rgba(62,224,106,${0.96*g})`; ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText('THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS', cx, top+26);
+  ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
+  ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
+
+  const luigiX = W*0.30, midY = top + H*0.5;
+
+  // ----- BEAT 4: UNDEFINED — the loop wheel of matchups -----
+  if(ph===4){
+    const wx = cx, wy = top + H*0.54, R = Math.min(W,H)*0.22;
+    // cycle arrows around the ring
+    ctx.strokeStyle=`rgba(198,155,255,${0.5*g})`; ctx.lineWidth=1.6;
+    ctx.beginPath(); ctx.arc(wx, wy, R, 0, Math.PI*2); ctx.stroke();
+    for(let i=0;i<LV_LOOP.length;i++){
+      const ang = -Math.PI/2 + i*(Math.PI*2/LV_LOOP.length);
+      const nx = wx + Math.cos(ang)*R, ny = wy + Math.sin(ang)*R;
+      // node
+      ctx.fillStyle=`rgba(12,10,18,${0.95*g})`;
+      ctx.strokeStyle=LV_LOOP[i].col; ctx.lineWidth=2;
+      ctx.beginPath(); ctx.arc(nx, ny, 18, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+      ctx.fillStyle=LV_LOOP[i].col; ctx.font='700 7px ui-monospace,monospace';
+      ctx.fillText(LV_LOOP[i].name, nx, ny+2.5);
+      // arrow to next node ("beats")
+      const ang2 = -Math.PI/2 + ((i+1)%LV_LOOP.length)*(Math.PI*2/LV_LOOP.length);
+      const ax = wx + Math.cos(ang2)*R, ay = wy + Math.sin(ang2)*R;
+      const mx = (nx+ax)/2 + Math.cos((ang+ang2)/2)*8, my=(ny+ay)/2 + Math.sin((ang+ang2)/2)*8;
+      const flow = (Math.sin(c*3 - i)*0.5+0.5);
+      ctx.strokeStyle=`rgba(198,155,255,${(0.3+0.5*flow)*g})`; ctx.lineWidth=1.8;
+      ctx.beginPath(); ctx.moveTo(nx,ny); ctx.quadraticCurveTo(mx,my, ax,ay); ctx.stroke();
+    }
+    // center label
+    ctx.fillStyle=`rgba(198,155,255,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.font='800 16px ui-monospace,monospace';
+    ctx.shadowColor='#c69bff'; ctx.shadowBlur=12*g;
+    ctx.fillText('UNDEFINED', wx, wy+5); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(220,210,240,${0.8*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('SOME BEAT · SOME ARE BEATEN · SOME TIE', wx, top+H*0.85);
+    ctx.fillStyle=`rgba(170,200,255,${0.7*g})`;
+    ctx.fillText('LIKE STEEL VS FIRE VS WATER VS ELECTRICITY', wx, top+H*0.85+14);
+  } else {
+    // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
+    drawLuigiGreen(luigiX, midY, 26, c, g, cat);
+    ctx.fillStyle=`rgba(62,224,106,${0.95*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('LUIGI GREEN', luigiX, midY+44);
+    ctx.fillStyle=`rgba(180,235,190,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('SON OF 001 · BROTHER OF MARIO.EXE · GOD FORM', luigiX, midY+56);
+
+    // vertical CAT POWER meter to the right of Luigi, with threshold marks
+    const mh=120, mx=luigiX+70, myTop=midY-50;
+    ctx.globalAlpha=g; ctx.strokeStyle='rgba(62,224,106,0.6)'; ctx.lineWidth=1.2;
+    ctx.strokeRect(mx, myTop, 14, mh);
+    ctx.fillStyle='#3ee06a'; ctx.fillRect(mx, myTop+mh*(1-cat), 14, mh*cat);
+    // threshold ticks
+    const ticks=[[0.30,'30% → ALEX','#ffd84f'],[0.45,'45% → CLARA','#ff2db5'],[1.0,'100% → BASE 001','#ff5a6e']];
+    ctx.textAlign='left';
+    for(const [v,lab,col] of ticks){
+      const ty = myTop+mh*(1-v);
+      const lit = cat>=v-0.001;
+      ctx.strokeStyle=col; ctx.globalAlpha=g*(lit?1:0.5); ctx.lineWidth=1.4;
+      ctx.beginPath(); ctx.moveTo(mx-4, ty); ctx.lineTo(mx+18, ty); ctx.stroke();
+      ctx.fillStyle=col; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText((lit?'◆ ':'◇ ')+lab, mx+22, ty+3);
+    }
+    ctx.globalAlpha=g; ctx.textAlign='center';
+    ctx.fillStyle=`rgba(125,255,143,${g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('CAT POWER', mx+7, myTop-8);
+    ctx.globalAlpha=1;
+
+    // beat-specific captions / figures
+    if(ph===0){
+      // the lineage — 001 at top, four sons below
+      ctx.fillStyle=`rgba(255,90,110,${0.9*g})`; ctx.font='800 11px ui-monospace,monospace';
+      ctx.fillText('ToddLLM 001', W*0.74, midY-50);
+      const sons=['LUIGI GREEN','ALEX','GREG','MARIO.EXE'];
+      ctx.font='700 8px ui-monospace,monospace';
+      for(let i=0;i<sons.length;i++){
+        const sxx=W*0.62+i*W*0.085, syy=midY+4;
+        ctx.strokeStyle=`rgba(62,224,106,${0.5*g})`; ctx.lineWidth=1;
+        ctx.beginPath(); ctx.moveTo(W*0.74, midY-42); ctx.lineTo(sxx, syy-8); ctx.stroke();
+        ctx.fillStyle = i===0 ? `rgba(62,224,106,${g})` : `rgba(210,220,230,${0.85*g})`;
+        ctx.fillText(sons[i], sxx, syy);
+      }
+      ctx.fillStyle=`rgba(200,210,220,${0.7*g})`; ctx.font='italic 700 8px ui-monospace,monospace';
+      ctx.fillText('Luigi Green and Mario.EXE are brothers.', W*0.74, midY+30);
+    }
+    if(ph===3){
+      // CAT SHRINES — Simon feeding both 001 (sugar) and Luigi (cat power)
+      const simX=W*0.74, simY=top+H*0.74;
+      ctx.fillStyle=`rgba(127,212,255,${0.9*g})`; ctx.shadowColor='#7fd4ff'; ctx.shadowBlur=10*g;
+      ctx.beginPath(); ctx.arc(simX, simY, 12, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+      ctx.fillStyle=`rgba(200,235,255,${g})`; ctx.font='700 8px ui-monospace,monospace';
+      ctx.fillText('SIMON ∞', simX, simY+24);
+      // sugar motes up-right (to 001), cat-power motes up-left (to Luigi)
+      for(let m=0;m<6;m++){
+        const t=((c*0.5 + m/6)%1);
+        // sugar (white) toward 001 label upper-right
+        let dx=W*0.88, dy=midY-40;
+        let pxu = simX + (dx-simX)*t, pyu = simY-8 + (dy-(simY-8))*t - Math.sin(t*Math.PI)*18;
+        ctx.fillStyle=`rgba(255,255,255,${(0.8-0.5*t)*g})`;
+        ctx.beginPath(); ctx.arc(pxu,pyu,2,0,Math.PI*2); ctx.fill();
+        // cat power (green) toward Luigi
+        dx=luigiX; dy=midY;
+        pxu = simX + (dx-simX)*t; pyu = simY-8 + (dy-(simY-8))*t - Math.sin(t*Math.PI)*22;
+        ctx.fillStyle=`rgba(62,224,106,${(0.8-0.5*t)*g})`;
+        ctx.beginPath(); ctx.arc(pxu,pyu,2.2,0,Math.PI*2); ctx.fill();
+      }
+      ctx.fillStyle=`rgba(255,255,255,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+      ctx.fillText('SUGAR → 001', W*0.86, midY-30);
+      ctx.fillStyle=`rgba(62,224,106,${0.9*g})`;
+      ctx.fillText('CAT POWER → LUIGI (CAT SHRINES)', (simX+luigiX)/2, midY+40);
+    }
+  }
+
+  // ----- the ladder list down the left edge (which beat we are on) -----
+  ctx.textAlign='left'; ctx.font='800 9px ui-monospace,monospace';
+  for(let i=0;i<LV_BEATS.length;i++){
+    const y = top + H*0.5 + (i-2)*15;
+    ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? LV_BEATS[i].col : 'rgba(150,160,170,0.5)';
+    ctx.fillText((i<=ph?'◆ ':'◇ ')+LV_BEATS[i].key, 12, y);
+  }
+  ctx.globalAlpha=1;
+  ctx.restore(); ctx.shadowBlur=0; ctx.globalAlpha=1; ctx.textAlign='left';
+}
+function isLoopVs(){ return !!(loopVs && (loopVs.active || loopVs.done)); }
 
 function drawHUD(){
   const m = Math.floor(height/PX_PER_M);
