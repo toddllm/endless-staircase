@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 38.0;
+const LV_CYC = 47.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11366,6 +11366,8 @@ const LV_BEATS = [
     sub:'ToddLLM USES SIMON FOR SUGAR · LUIGI GREEN USES SIMON FOR CAT POWER' },
   { key:'UNDEFINED',         col:'#c69bff',
     sub:'NOT A LADDER BUT A LOOP · LIKE STEEL VS FIRE VS WATER VS ELECTRICITY · SOME BEAT, SOME TIE' },
+  { key:'THE FIGHTER',       col:'#5cff7a',
+    sub:'IN SMASH ULTIMATE · TOP-TIER BASE · CAT POWER SCALES HIM PAST CLARA AND BASE 001 · A SETTING-BREAKER' },
 ];
 // the cyclical loop nodes drawn on the UNDEFINED beat (a wheel of matchups, not a ranking)
 const LV_LOOP = [
@@ -11380,7 +11382,8 @@ function lvSeg(c){
   if(c < 15.0) return [1, c-7.0];    // CAT POWER RISING
   if(c < 23.0) return [2, c-15.0];   // THE THRESHOLDS
   if(c < 30.0) return [3, c-23.0];   // CAT SHRINES
-  return [4, c-30.0];                // UNDEFINED
+  if(c < 38.0) return [4, c-30.0];   // UNDEFINED
+  return [5, c-38.0];                // THE FIGHTER (Smash Ultimate concept)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11408,6 +11411,10 @@ function updateLoopVs(dt){
       showTaunt('So the top is no longer A beats B beats C. It is a loop: like steel, fire, water, electricity, some beat others, those winners lose to a third, and some pairs tie. ToddLLM and Luigi Green both have a name for it. They call it undefined.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'“UNDEFINED” · A LOOP, NOT A LADDER', col:'#c69bff' });
       for(let i=0;i<20;i++) particles.push(spark(player.x, player.y, pick(['#3ee06a','#ff2db5','#ff5a6e','#c69bff']))); }
+    if(ph===5){ AUDIO.shock(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.45); winFlash=Math.max(winFlash,0.4);
+      showTaunt('Now picture Luigi Green dropped into Super Smash Bros. Ultimate. He is not a normal slot, he is the hidden final unlock who should have been banned the moment he loaded in. His base is already top three to five, heavy, almost impossible to launch. Cat power is his charge gimmick, and it scales him straight past Clara and even base ToddLLM. God form is his final smash. A setting-breaker wearing a roster card.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SMASH FIGHTER · SETTING-BREAKER · SHOULD HAVE BEEN BANNED', col:'#5cff7a' });
+      for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#5cff7a','#7dff8f','#ffd84f','#c69bff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11513,6 +11520,58 @@ function drawLoopVs(){
     ctx.fillText('SOME BEAT · SOME ARE BEATEN · SOME TIE', wx, top+H*0.85);
     ctx.fillStyle=`rgba(170,200,255,${0.7*g})`;
     ctx.fillText('LIKE STEEL VS FIRE VS WATER VS ELECTRICITY', wx, top+H*0.85+14);
+  } else if(ph===5){
+    // ----- BEAT 5: THE FIGHTER — Luigi Green imagined as a Super Smash Bros. Ultimate fighter.
+    // Toby (June 27 follow-up): even his base is top-tier, and cat-power scaling pushes him past Clara and base
+    // ToddLLM — "the strongest character in Smash Ultimate," "a hidden final unlock who should have been banned."
+    // Drawn as a roster-reveal info card: portrait + stat bars + CAT POWER gimmick + GOD FORM final smash + tier. -----
+    const cw = Math.min(W*0.84, 380), chh = H*0.64;
+    const cx0 = cx - cw/2, cy0 = top + H*0.5 - chh/2;
+    // card frame
+    const cardg = ctx.createLinearGradient(0, cy0, 0, cy0+chh);
+    cardg.addColorStop(0, `rgba(8,28,14,${0.93*g})`); cardg.addColorStop(1, `rgba(4,12,8,${0.96*g})`);
+    ctx.fillStyle=cardg; ctx.fillRect(cx0, cy0, cw, chh);
+    ctx.strokeStyle=`rgba(92,255,122,${(0.7+0.25*Math.sin(c*4))*g})`; ctx.lineWidth=2; ctx.strokeRect(cx0, cy0, cw, chh);
+    // header band
+    ctx.fillStyle=`rgba(92,255,122,${0.16*g})`; ctx.fillRect(cx0, cy0, cw, 22);
+    ctx.textAlign='left'; ctx.fillStyle=`rgba(125,255,143,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('NEW CHALLENGER · SMASH ULTIMATE', cx0+10, cy0+15);
+    ctx.textAlign='right'; ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('No. ∞', cx0+cw-10, cy0+15);
+    // portrait — Luigi Green at full cat power on the left
+    const portX = cx0 + cw*0.25, portY = cy0 + chh*0.40;
+    drawLuigiGreen(portX, portY, 30, c, g, 1);
+    ctx.textAlign='center'; ctx.fillStyle=`rgba(92,255,122,${g})`; ctx.font='800 12px ui-monospace,monospace';
+    ctx.fillText('LUIGI GREEN', portX, cy0+chh*0.66);
+    ctx.fillStyle=`rgba(180,235,190,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('GOD OF GREEN & .EXE', portX, cy0+chh*0.66+12);
+    ctx.fillStyle=`rgba(170,200,255,${0.8*g})`;
+    ctx.fillText('BASE: TOP 3–5 OF THE WHOLE ROSTER', portX, cy0+chh*0.66+24);
+    // stat bars on the right
+    const stats = [['WEIGHT','HEAVY',1.0,'#ff5a6e'],['LAUNCH RESIST','VERY HIGH',0.95,'#ffd84f'],
+                   ['POWER','SCALING ∞',Math.max(0.9,cat),'#5cff7a'],['SPEED','MARIO-CLASS',0.58,'#8fe3ff']];
+    const sx0 = cx0 + cw*0.5, sw = cw*0.44; let sy = cy0 + 38;
+    for(const [lab,val,frac,col] of stats){
+      ctx.textAlign='left'; ctx.fillStyle=`rgba(210,225,215,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+      ctx.fillText(lab, sx0, sy);
+      ctx.textAlign='right'; ctx.fillStyle=col; ctx.fillText(val, sx0+sw, sy);
+      ctx.fillStyle='rgba(255,255,255,0.10)'; ctx.fillRect(sx0, sy+3, sw, 5);
+      ctx.fillStyle=col; ctx.fillRect(sx0, sy+3, sw*Math.max(0.08,Math.min(1,frac)), 5);
+      sy += 22;
+    }
+    // gimmick + final-smash chips
+    ctx.textAlign='left'; sy += 2;
+    ctx.fillStyle=`rgba(255,216,79,${0.18*g})`; ctx.fillRect(sx0, sy, sw, 16);
+    ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('GIMMICK · CAT POWER CHARGE', sx0+5, sy+11); sy += 20;
+    ctx.fillStyle=`rgba(198,155,255,${0.18*g})`; ctx.fillRect(sx0, sy, sw, 16);
+    ctx.fillStyle=`rgba(198,155,255,${g})`;
+    ctx.fillText('FINAL SMASH · GOD FORM', sx0+5, sy+11);
+    // tier ribbon along the bottom of the card
+    ctx.textAlign='center'; ctx.fillStyle=`rgba(255,90,110,${(0.65+0.35*Math.sin(c*6))*g})`;
+    ctx.font='800 10px ui-monospace,monospace'; ctx.shadowColor='#ff5a6e'; ctx.shadowBlur=9*g;
+    ctx.fillText('TIER: SETTING-BREAKER — SHOULD HAVE BEEN BANNED', cx, cy0+chh-10); ctx.shadowBlur=0;
+    ctx.textAlign='center';
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
@@ -11590,7 +11649,7 @@ function drawLoopVs(){
   // ----- the ladder list down the left edge (which beat we are on) -----
   ctx.textAlign='left'; ctx.font='800 9px ui-monospace,monospace';
   for(let i=0;i<LV_BEATS.length;i++){
-    const y = top + H*0.5 + (i-2)*15;
+    const y = top + H*0.5 + (i-(LV_BEATS.length-1)/2)*14;
     ctx.globalAlpha=g; ctx.fillStyle = i<=ph ? LV_BEATS[i].col : 'rgba(150,160,170,0.5)';
     ctx.fillText((i<=ph?'◆ ':'◇ ')+LV_BEATS[i].key, 12, y);
   }

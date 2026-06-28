@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-27 — THE FIGHTER: Luigi Green as a Super Smash Bros. Ultimate concept (Lore 38, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 27 follow-up, which answers the question "how powerful would Luigi Green be in Super Smash Bros.
+Ultimate?" Toby's read: he would not just be top tier, he would be a *setting-breaker*. *"Base Luigi Green already
+sounds like one of the strongest in the game, probably top 3 or top 5 in the whole roster."* He is *"very heavy-hitting,
+hard to launch, huge power spikes, a god-form comeback character,"* with a *"cat-power charge/scaling mechanic"* and a
+mix of Mario-style movement with *".EXE / shrine / cat-energy effects."* Once cat power rises he passes every normal
+fighter — Mario, Kirby, Sephiroth, Sora, Ganondorf — and his canon thresholds (30% beats Everything Alex, 45% crushes
+Clara, 100% beats base ToddLLM) carry straight over. Toby's cleanest line: *"a hidden final unlock who should have been
+banned immediately."* Built as a sixth beat, THE FIGHTER, added to the top of the UNDEFINED LOOP cutscene. Additive —
+nothing was removed, and the real climb still banks.
+
+![Lore 38 — THE FIGHTER, frozen on the new sixth beat of the UNDEFINED LOOP. A Super Smash Bros. style roster-reveal
+card fills the screen: a green header band reads "NEW CHALLENGER · SMASH ULTIMATE" with "No. ∞" on the right. On the
+left is LUIGI GREEN's portrait at full cat power — a green cap-and-cat-ears figure with a white "L" emblem wrapped in a
+bright green aura — labeled "GOD OF GREEN & .EXE" and "BASE: TOP 3-5 OF THE WHOLE ROSTER." On the right are four stat
+bars: WEIGHT (HEAVY, full red), LAUNCH RESIST (VERY HIGH, yellow), POWER (SCALING ∞, full green), SPEED (MARIO-CLASS,
+mid blue), beneath two chips: "GIMMICK · CAT POWER CHARGE" and "FINAL SMASH · GOD FORM." Across the bottom a red ribbon
+reads "TIER: SETTING-BREAKER — SHOULD HAVE BEEN BANNED." Down the left edge the six-beat ladder lists THE LINEAGE, CAT
+POWER RISING, THE THRESHOLDS, CAT SHRINES, UNDEFINED, and THE FIGHTER, all lit.](screenshots/66-smash-fighter.png)
+
+- **New sixth beat, THE FIGHTER.** The UNDEFINED LOOP cutscene now runs six beats; after UNDEFINED, the loop resolves
+  into a single roster-reveal card that imagines Luigi Green dropped into Smash Ultimate.
+- **A Smash-style fighter info card.** Luigi Green's portrait (drawn at full cat power) sits beside four stat bars —
+  WEIGHT: HEAVY, LAUNCH RESIST: VERY HIGH, POWER: SCALING ∞, SPEED: MARIO-CLASS — over a "BASE: TOP 3-5 OF THE WHOLE
+  ROSTER" line, with a GIMMICK chip (CAT POWER CHARGE), a FINAL SMASH chip (GOD FORM), and a pulsing tier ribbon:
+  "SETTING-BREAKER — SHOULD HAVE BEEN BANNED."
+- **Carries the canon over.** The card keeps Toby's thresholds intact (heavy, hard-to-launch, cat-power scaling) so THE
+  FIGHTER reads as the same Luigi Green from THE THRESHOLDS beat, now framed as a fighter who would break a roster.
+- **Screenshot:** [screenshots/66-smash-fighter.png](screenshots/66-smash-fighter.png), captured via the new `fighter`
+  scene in tools/capture_screenshot.py.
+
 ## 2026-06-27 — THE UNDEFINED LOOP: Luigi Green, the cat-power thresholds, and the day the power ladder became a loop (Lore 37, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 27 just-talk follow-up, which takes the top of the setting apart and rebuilds it as a *loop*
