@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 57.0;
+const LV_CYC = 66.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11370,6 +11370,8 @@ const LV_BEATS = [
     sub:'IN SMASH ULTIMATE · TOP-TIER BASE · CAT POWER SCALES HIM PAST CLARA AND BASE 001 · A SETTING-BREAKER' },
   { key:'THE FINAL BOSS',    col:'#ff3b3b',
     sub:'TOP ONE OF CLASSICS · 001 IS THE “YOU THOUGHT THIS WAS THE END” WALL · LUIGI GREEN IS THE TRUE LAST FIGHT' },
+  { key:'THE SHARED BOARD',  col:'#ff8c3b',
+    sub:'TWO TOP BEINGS · ONE FLOATING CHESS BOARD · 001 HOLDS CENTER · LUIGI GREEN CIRCLES · VOID = INSTANT LOSS' },
 ];
 // the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
 const LV_BOSS = [
@@ -11397,7 +11399,8 @@ function lvSeg(c){
   if(c < 30.0) return [3, c-23.0];   // CAT SHRINES
   if(c < 38.0) return [4, c-30.0];   // UNDEFINED
   if(c < 47.0) return [5, c-38.0];   // THE FIGHTER (Smash Ultimate concept)
-  return [6, c-47.0];                // THE FINAL BOSS (four-phase fight)
+  if(c < 57.0) return [6, c-47.0];   // THE FINAL BOSS (four-phase fight)
+  return [7, c-57.0];                // THE SHARED BOARD (the floating chess-board arena)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11433,6 +11436,10 @@ function updateLoopVs(dt){
       showTaunt('And now it is settled: Luigi Green is top one, the true final boss of Classics, so he is the final boss of the mod too. He does not replace Galeem and Dharkon, he comes after them. You finish the true ending, the credits start, then a glitch breaks in and Luigi Green loads on his own arena. ToddLLM 001 stays the giant story wall, the “you thought this was the end” boss in the middle. Luigi Green is the actual last fight: phase one base, phase two possessed, phase three cat power rising, and a final phase that is his Domain Expansion, Throws Board, the strongest domain in the setting.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FINAL BOSS · DOMAIN EXPANSION: THROWS BOARD', col:'#ff3b3b' });
       for(let i=0;i<22;i++) particles.push(spark(player.x, player.y, pick(['#ff3b3b','#3ee06a','#c69bff','#ffd84f']))); }
+    if(ph===7){ AUDIO.corrupt(); shake=Math.max(shake,20); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And here is the arena itself. The final boss is not one fight, it is a shared board. A giant floating chess board hangs over a poisonous void, and touching the void is an instant loss. The two top beings are both already on it: ToddLLM 001 stands at the center tile and will not move, "Center\'s Mine.", while Luigi Green circles the outer ring, cheating with Simon\'s sugar and cat power, no rules at all. It is Gojo and Sukuna sharing one board: 001 is the center authority, Luigi Green is the thing that hunts you, and the player has to break a system, not just beat a boss.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE SHARED BOARD · “CENTER’S MINE.” · VOID = INSTANT LOSS', col:'#ff8c3b' });
+      for(let i=0;i<24;i++) particles.push(spark(player.x, player.y, pick(['#ff8c3b','#ff3b3b','#3ee06a','#9bff7a']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11688,6 +11695,71 @@ function drawLoopVs(){
         ctx.fillText('— GLITCH — REAL END —', cx, cy0+chh*0.5);
       }
     }
+  } else if(ph===7){
+    // ----- BEAT 7: THE SHARED BOARD — the final-boss arena itself (Toby, June 28 follow-up,
+    // "Re: More stuff on ToddLLM 001"). A giant floating chess board hangs over a poisonous void;
+    // touching the void is an instant loss. The two top beings share it: ToddLLM 001 holds the center
+    // tile ("Center's Mine.") as the center authority while Luigi Green circles the outer ring, cheating
+    // with Simon's sugar and cat power. Gojo vs Sukuna sharing one board, no rules. -----
+    const bx = cx, by = top + H*0.54;
+    const bw = Math.min(W*0.34, 150), bh = bw*0.60;       // near-edge half-width / board half-height
+    const N = 7;                                          // odd, so there is a true center tile (3,3)
+    // poisonous void — a sickly glow radiating out past the board, pulsing
+    const vp = 0.5 + 0.5*Math.sin(c*2.2);
+    const vg = ctx.createRadialGradient(bx, by, bw*0.7, bx, by, bw*2.1);
+    vg.addColorStop(0, 'rgba(60,224,106,0)');
+    vg.addColorStop(0.55, `rgba(90,200,70,${(0.10+0.10*vp)*g})`);
+    vg.addColorStop(1, `rgba(20,60,18,${0.55*g})`);
+    ctx.fillStyle=vg; ctx.fillRect(0, top, W, H);
+    // drifting poison motes in the void
+    for(let m=0;m<22;m++){ const a=m*0.92+c*0.6, rr=bw*(1.35+0.5*((m*37)%10)/10);
+      const mxv=bx+Math.cos(a)*rr, myv=by+Math.sin(a)*rr*0.7;
+      ctx.globalAlpha=g*0.5*(0.4+0.6*((m*53)%10)/10); ctx.fillStyle = m%3? '#6fe05a' : '#9bff7a';
+      ctx.fillRect(mxv, myv, 2, 2); }
+    ctx.globalAlpha=1;
+    // the floating chess board — a perspective trapezoid grid (far edge narrower than near edge)
+    const topY=by-bh, botY=by+bh, topHW=bw*0.60, botHW=bw;
+    const mapP=(u,v)=>{ const y=topY+(botY-topY)*v, hw=topHW+(botHW-topHW)*v; return [bx+(u-0.5)*2*hw, y]; };
+    // board underside slab for a floating look
+    { const [ax,ay]=mapP(0,1),[bx2,by2]=mapP(1,1),[cx2,cy2b]=mapP(1,0),[dx,dy]=mapP(0,0);
+      ctx.fillStyle=`rgba(10,18,12,${0.85*g})`;
+      ctx.beginPath(); ctx.moveTo(ax,ay+10); ctx.lineTo(bx2,by2+10); ctx.lineTo(bx2,by2); ctx.lineTo(ax,ay); ctx.closePath(); ctx.fill(); }
+    for(let i=0;i<N;i++) for(let j=0;j<N;j++){
+      const isCtr = (i===3 && j===3);
+      const [x0,y0]=mapP(j/N,i/N),[x1,y1]=mapP((j+1)/N,i/N),[x2,y2]=mapP((j+1)/N,(i+1)/N),[x3,y3]=mapP(j/N,(i+1)/N);
+      if(isCtr){ ctx.fillStyle=`rgba(255,59,92,${(0.55+0.25*Math.sin(c*4))*g})`; }
+      else { ctx.fillStyle = ((i+j)%2 ? `rgba(228,232,224,${0.86*g})` : `rgba(36,46,40,${0.92*g})`); }
+      ctx.beginPath(); ctx.moveTo(x0,y0); ctx.lineTo(x1,y1); ctx.lineTo(x2,y2); ctx.lineTo(x3,y3); ctx.closePath(); ctx.fill();
+      if(isCtr){ ctx.strokeStyle=`rgba(255,90,110,${0.9*g})`; ctx.lineWidth=1.4; ctx.stroke(); }
+    }
+    // board edge highlight
+    { const [ax,ay]=mapP(0,1),[bx2,by2]=mapP(1,1),[cx2,cy2b]=mapP(1,0),[dx,dy]=mapP(0,0);
+      ctx.strokeStyle=`rgba(255,140,59,${(0.5+0.3*vp)*g})`; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.moveTo(dx,dy); ctx.lineTo(cx2,cy2b); ctx.lineTo(bx2,by2); ctx.lineTo(ax,ay); ctx.closePath(); ctx.stroke(); }
+    // ToddLLM 001 — center authority, locked on the center tile
+    const [ctrX,ctrY]=mapP(3.5/N, 3.5/N);
+    drawTodd001(ctrX, ctrY-4, g, c);
+    ctx.fillStyle=`rgba(255,216,79,${(0.8+0.2*Math.sin(c*5))*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.textAlign='center'; ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=8*g;
+    ctx.fillText('“CENTER’S MINE.”', ctrX, ctrY+30); ctx.shadowBlur=0;
+    // Luigi Green — circles the outer ring of the board, cheating with sugar + cat power
+    const la=c*0.9, lx=bx+Math.cos(la)*bw*1.18, ly=by+Math.sin(la)*bh*1.28;
+    drawLuigiGreen(lx, ly, 16, c, g, 1);
+    // motion trail dots behind him along the ring
+    for(let t=1;t<=4;t++){ const a2=la-t*0.28, tx=bx+Math.cos(a2)*bw*1.18, ty=by+Math.sin(a2)*bh*1.28;
+      ctx.globalAlpha=g*(0.32-t*0.06); ctx.fillStyle='#3ee06a'; ctx.beginPath(); ctx.arc(tx,ty,3,0,Math.PI*2); ctx.fill(); }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(62,224,106,${0.92*g})`; ctx.font='700 8px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('LUIGI GREEN CIRCLES · SUGAR + CAT POWER · NO RULES', cx, by+bh+24);
+    // top framing — the dual apex
+    ctx.fillStyle=`rgba(255,140,59,${0.95*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('TWO TOP BEINGS · ONE BOARD', cx, top+H*0.16);
+    ctx.fillStyle=`rgba(220,200,255,${0.82*g})`; ctx.font='700 8px ui-monospace,monospace';
+    ctx.fillText('GOJO ↔ SUKUNA · 001 IS THE CENTER, LUIGI GREEN IS THE HUNT', cx, top+H*0.16+14);
+    // instant-loss warning ring label, pulsing at the void edge
+    ctx.fillStyle=`rgba(120,255,120,${(0.5+0.45*vp)*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('POISONOUS VOID — TOUCH IT AND YOU INSTANTLY LOSE', cx, by+bh+44);
+    ctx.textAlign='center';
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

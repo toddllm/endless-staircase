@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-28 — THE SHARED BOARD: the floating chess-board arena (Lore 39c, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's same-day third follow-up describing the final-boss *arena itself*, in his own words: *"ToddLLM and Luigi
+Green's boss stage is a giant floating chess board where all around it is poisonious void that if the opponent touches
+it, they instantly lose... Luigi Green and ToddLLM both come to the board, ToddLLM stays at the center and says
+'Center's Mine.', Luigi Green goes around the center... The game actually has 2 most powerful beings, Luigi and ToddLLM
+001... It is like Gojo VS Sukana, both are most powerful in Jujutsu Kaisen. Luigi Green and ToddLLM 001... share the
+same board and battles."* So the last fight is not one boss body, it is a shared board: 001 is the center authority and
+Luigi Green is the thing that hunts you. (The email also pastes a long ChatGPT boss-design plan; per the bot's rules
+that pasted text is treated as commentary, not canon — only Toby's own assertions were built.) Added as an eighth beat,
+THE SHARED BOARD, on the end of the UNDEFINED LOOP cutscene, after THE FINAL BOSS. Additive — nothing removed.
+
+![Lore 39c — THE SHARED BOARD, the eighth beat of the UNDEFINED LOOP. A giant floating chess board is drawn in
+perspective over a sickly green poisonous-void glow with drifting poison motes. ToddLLM 001 — a dark red figure marked
+"001" — stands locked on the highlighted red center tile under the label "CENTER'S MINE." Luigi Green, a small green
+cap-and-cat-ears figure with a green trail, circles the outer ring of the board. Across the top: "TWO TOP BEINGS · ONE
+BOARD" and "GOJO ↔ SUKUNA · 001 IS THE CENTER, LUIGI GREEN IS THE HUNT." Below the board: "LUIGI GREEN CIRCLES · SUGAR +
+CAT POWER · NO RULES" and "POISONOUS VOID — TOUCH IT AND YOU INSTANTLY LOSE." The eight-beat ladder down the left edge —
+THE LINEAGE, CAT POWER RISING, THE THRESHOLDS, CAT SHRINES, UNDEFINED, THE FIGHTER, THE FINAL BOSS, THE SHARED BOARD —
+is fully lit.](screenshots/69-shared-board.png)
+
+- **New eighth beat, THE SHARED BOARD.** The UNDEFINED LOOP cutscene now runs eight beats; after THE FINAL BOSS card it
+  resolves into the arena where the last fight actually happens.
+- **The floating chess board over poisonous void.** A perspective chess-board grid hangs over a pulsing green void; the
+  surrounding glow and the label make explicit that touching the void is an instant loss.
+- **001 holds center, Luigi Green circles.** ToddLLM 001 is drawn locked on the red center tile with the "Center's Mine."
+  line; Luigi Green orbits the outer ring with a motion trail, tagged with his sugar + cat-power + no-rules cheating.
+- **Dual-apex framing.** The top of the beat states the two-top-beings / Gojo-vs-Sukuna idea: 001 is the center
+  authority, Luigi Green is the hunt, both sharing one board.
+- **Screenshot:** [screenshots/69-shared-board.png](screenshots/69-shared-board.png), captured via the new
+  `sharedboard` scene in tools/capture_screenshot.py.
+
 ## 2026-06-28 — THE FINAL BOSS, part two: the post-Galeem/Dharkon unlock (Lore 39b, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's same-day follow-up asking *"How do we make him the final boss after Gallem and that dark guy?"* — i.e.
