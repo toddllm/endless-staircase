@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-28 — THE FINAL BOSS: Luigi Green is top one, the four-phase last fight (Lore 39, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 28 lore. He settled the ranking: *"In fact, he's top one, he is the final boss in Classics... if he
+is the final boss in Classics, how about the final boss in my mod too."* That reframes the whole mod. ToddLLM 001 stays
+the giant mid-story god-wall, the *"you thought this was the end"* boss; Luigi Green becomes the actual last gameplay
+fight. Toby laid out the structure as four escalating phases: *Phase 1* base Luigi Green (already absurd — his 0% cat
+power *"beats the base of all characters except ToddLLM and Clara,"* every Simon form, every Oren, Pinki, and all the
+Sprunkis), *Phase 2* possessed Luigi Green (*"I just got possessed for the 11 thousand, 7 million, and 85 trillionth
+time"* — the fight turns unfair and violent), *Phase 3* the cat-power rise (the "oh no" phase), and a *Final phase*:
+Domain Expansion: Throws Board, which he calls the strongest domain in the setting (001's domain is Gojo, Luigi Green's
+is Sukuna). Built as a seventh beat, THE FINAL BOSS, on the end of the UNDEFINED LOOP cutscene. Additive — nothing was
+removed, and the real climb still banks.
+
+![Lore 39 — THE FINAL BOSS, frozen on the seventh beat of the UNDEFINED LOOP, final phase. A red-on-black boss card
+fills the screen: a header band reads "TRUE FINAL BOSS" on the left and "TOP ONE OF CLASSICS" on the right, with a boss
+health bar beneath it. Down the left side a phase list runs PHASE 1 · BASE, PHASE 2 · POSSESSED, PHASE 3 · CAT POWER
+RISE, and FINAL · DOMAIN EXPANSION, all lit with the final one marked active. In the center is LUIGI GREEN — a green
+cap-and-cat-ears figure with a white "L" emblem — wrapped in a purple possession aura, with a wooden board hurled
+across a dark radiating domain dome beside him. Below, in red, "FINAL · DOMAIN EXPANSION" with the note "THROWS BOARD —
+the strongest domain. 001's domain is Gojo; Luigi Green's is Sukuna." Across the bottom a red ribbon reads "001 = YOU
+THOUGHT THIS WAS THE END · LUIGI GREEN = THE ACTUAL LAST FIGHT." The six-then-seven-beat ladder down the far left edge
+lists THE LINEAGE, CAT POWER RISING, THE THRESHOLDS, CAT SHRINES, UNDEFINED, THE FIGHTER, and THE FINAL BOSS, all
+lit.](screenshots/67-final-boss.png)
+
+- **New seventh beat, THE FINAL BOSS.** The UNDEFINED LOOP cutscene now runs seven beats; after THE FIGHTER it resolves
+  into a boss-reveal card that frames Luigi Green as the true last fight of the mod.
+- **A four-phase boss card.** The card cycles through Luigi Green's fight: PHASE 1 · BASE, PHASE 2 · POSSESSED, PHASE 3 ·
+  CAT POWER RISE, and FINAL · DOMAIN EXPANSION. A boss health bar drops a notch each phase, the phase list lights up the
+  side, Luigi Green gains a purple possession aura in the possessed and domain phases, and the final phase opens a dark
+  domain dome with a board hurled across it — Domain Expansion: Throws Board.
+- **Names the structure Toby chose.** ToddLLM 001 is labeled the "you thought this was the end" wall; Luigi Green is "the
+  actual last fight." The card keeps the canon — 0% baseline already over the line, possession as a recurring power-state,
+  the Gojo-vs-Sukuna domain contrast.
+- **Screenshot:** [screenshots/67-final-boss.png](screenshots/67-final-boss.png), captured via the new `finalboss` scene
+  in tools/capture_screenshot.py.
+
 ## 2026-06-27 — THE FIGHTER: Luigi Green as a Super Smash Bros. Ultimate concept (Lore 38, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 27 follow-up, which answers the question "how powerful would Luigi Green be in Super Smash Bros.

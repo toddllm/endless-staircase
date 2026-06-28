@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 47.0;
+const LV_CYC = 57.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11368,6 +11368,19 @@ const LV_BEATS = [
     sub:'NOT A LADDER BUT A LOOP · LIKE STEEL VS FIRE VS WATER VS ELECTRICITY · SOME BEAT, SOME TIE' },
   { key:'THE FIGHTER',       col:'#5cff7a',
     sub:'IN SMASH ULTIMATE · TOP-TIER BASE · CAT POWER SCALES HIM PAST CLARA AND BASE 001 · A SETTING-BREAKER' },
+  { key:'THE FINAL BOSS',    col:'#ff3b3b',
+    sub:'TOP ONE OF CLASSICS · 001 IS THE “YOU THOUGHT THIS WAS THE END” WALL · LUIGI GREEN IS THE TRUE LAST FIGHT' },
+];
+// the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
+const LV_BOSS = [
+  { tag:'PHASE 1 · BASE',            col:'#3ee06a',
+    note:'Already absurd. 0% cat power beats every Simon form, every Oren, Pinki, and all the Sprunkis.' },
+  { tag:'PHASE 2 · POSSESSED',       col:'#c69bff',
+    note:'“Possessed for the 11 thousand, 7 million, and 85 trillionth time.” The fight turns unfair and violent.' },
+  { tag:'PHASE 3 · CAT POWER RISE',  col:'#ffd84f',
+    note:'The “oh no” phase — the player realizes this is the real final boss, not 001.' },
+  { tag:'FINAL · DOMAIN EXPANSION',  col:'#ff3b3b',
+    note:'THROWS BOARD — the strongest domain. 001’s domain is Gojo; Luigi Green’s is Sukuna.' },
 ];
 // the cyclical loop nodes drawn on the UNDEFINED beat (a wheel of matchups, not a ranking)
 const LV_LOOP = [
@@ -11383,7 +11396,8 @@ function lvSeg(c){
   if(c < 23.0) return [2, c-15.0];   // THE THRESHOLDS
   if(c < 30.0) return [3, c-23.0];   // CAT SHRINES
   if(c < 38.0) return [4, c-30.0];   // UNDEFINED
-  return [5, c-38.0];                // THE FIGHTER (Smash Ultimate concept)
+  if(c < 47.0) return [5, c-38.0];   // THE FIGHTER (Smash Ultimate concept)
+  return [6, c-47.0];                // THE FINAL BOSS (four-phase fight)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11415,6 +11429,10 @@ function updateLoopVs(dt){
       showTaunt('Now picture Luigi Green dropped into Super Smash Bros. Ultimate. He is not a normal slot, he is the hidden final unlock who should have been banned the moment he loaded in. His base is already top three to five, heavy, almost impossible to launch. Cat power is his charge gimmick, and it scales him straight past Clara and even base ToddLLM. God form is his final smash. A setting-breaker wearing a roster card.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SMASH FIGHTER · SETTING-BREAKER · SHOULD HAVE BEEN BANNED', col:'#5cff7a' });
       for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#5cff7a','#7dff8f','#ffd84f','#c69bff']))); }
+    if(ph===6){ AUDIO.shock(); shake=Math.max(shake,18); glitch=Math.max(glitch,0.55); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And now it is settled: Luigi Green is top one, the true final boss of Classics, so he is the final boss of the mod too. ToddLLM 001 stays the giant story wall, the “you thought this was the end” boss in the middle. Luigi Green is the actual last fight: phase one base, phase two possessed, phase three cat power rising, and a final phase that is his Domain Expansion, Throws Board, the strongest domain in the setting.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FINAL BOSS · DOMAIN EXPANSION: THROWS BOARD', col:'#ff3b3b' });
+      for(let i=0;i<22;i++) particles.push(spark(player.x, player.y, pick(['#ff3b3b','#3ee06a','#c69bff','#ffd84f']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11572,6 +11590,76 @@ function drawLoopVs(){
     ctx.font='800 10px ui-monospace,monospace'; ctx.shadowColor='#ff5a6e'; ctx.shadowBlur=9*g;
     ctx.fillText('TIER: SETTING-BREAKER — SHOULD HAVE BEEN BANNED', cx, cy0+chh-10); ctx.shadowBlur=0;
     ctx.textAlign='center';
+  } else if(ph===6){
+    // ----- BEAT 6: THE FINAL BOSS — Luigi Green is top one, the true final fight of the mod.
+    // Toby (June 28): "if Luigi Green is the final boss in Classics, how about the final boss in my mod too."
+    // Four-phase boss: BASE → POSSESSED → CAT POWER RISE → DOMAIN EXPANSION: THROWS BOARD. ToddLLM 001 is the
+    // mid-story "you thought this was the end" wall; Luigi Green is the actual last gameplay boss. -----
+    const bp = Math.min(3, Math.floor(seg[1]/2.2));   // which phase the fight is on (0..3), cycling through the beat
+    const boss = LV_BOSS[bp];
+    const cw = Math.min(W*0.86, 400), chh = H*0.66;
+    const cx0 = cx - cw/2, cy0 = top + H*0.5 - chh/2;
+    // domain-expansion backdrop on the final phase — a dark Sukuna-style dome with radiating lines
+    if(bp===3){
+      ctx.fillStyle=`rgba(10,2,4,${0.5*g})`; ctx.fillRect(cx0, cy0, cw, chh);
+      ctx.strokeStyle=`rgba(255,59,59,${0.22*g})`; ctx.lineWidth=1;
+      for(let i=0;i<18;i++){ const ang=i*(Math.PI*2/18)+c*0.3;
+        ctx.beginPath(); ctx.moveTo(cx, cy0+chh*0.52);
+        ctx.lineTo(cx+Math.cos(ang)*cw, cy0+chh*0.52+Math.sin(ang)*cw); ctx.stroke(); }
+    }
+    // card frame — red-on-black, harsher than the green FIGHTER card
+    const cardg = ctx.createLinearGradient(0, cy0, 0, cy0+chh);
+    cardg.addColorStop(0, `rgba(26,6,8,${0.93*g})`); cardg.addColorStop(1, `rgba(10,3,4,${0.96*g})`);
+    ctx.fillStyle=cardg; ctx.fillRect(cx0, cy0, cw, chh);
+    ctx.strokeStyle=`rgba(255,59,59,${(0.7+0.25*Math.sin(c*5))*g})`; ctx.lineWidth=2; ctx.strokeRect(cx0, cy0, cw, chh);
+    // header band
+    ctx.fillStyle=`rgba(255,59,59,${0.16*g})`; ctx.fillRect(cx0, cy0, cw, 22);
+    ctx.textAlign='left'; ctx.fillStyle=`rgba(255,90,90,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('TRUE FINAL BOSS', cx0+10, cy0+15);
+    ctx.textAlign='right'; ctx.fillStyle=`rgba(255,216,79,${g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('TOP ONE OF CLASSICS', cx0+cw-10, cy0+15);
+    // boss health bar (drains a notch per phase) + phase pip
+    const hbx=cx0+14, hbw=cw-28, hy=cy0+30, hp=1-(bp*0.24+(seg[1]%2.2)/2.2*0.06);
+    ctx.fillStyle='rgba(255,255,255,0.10)'; ctx.fillRect(hbx, hy, hbw, 8);
+    ctx.fillStyle=boss.col; ctx.fillRect(hbx, hy, hbw*Math.max(0.08,hp), 8);
+    ctx.strokeStyle=`rgba(255,90,90,${0.6*g})`; ctx.lineWidth=1; ctx.strokeRect(hbx, hy, hbw, 8);
+    // portrait — Luigi Green, brighter/possessed-tinted as phases climb
+    const portX = cx, portY = cy0 + chh*0.44, pcat = bp>=2 ? 1 : 0.25;
+    if(bp===1 || bp===3){ // possession aura
+      const pr=44+Math.sin(c*6)*4; const pg=ctx.createRadialGradient(portX,portY,6,portX,portY,pr);
+      pg.addColorStop(0,`rgba(198,155,255,${0.5*g})`); pg.addColorStop(1,'rgba(198,155,255,0)');
+      ctx.fillStyle=pg; ctx.beginPath(); ctx.arc(portX,portY,pr,0,Math.PI*2); ctx.fill(); }
+    drawLuigiGreen(portX, portY, 34, c, g, pcat);
+    // the thrown board on the final phase — a plank hurled across the dome
+    if(bp===3){
+      const tbx=portX+Math.sin(c*3)*44+30, tby=portY-10+Math.cos(c*3)*8;
+      ctx.save(); ctx.translate(tbx,tby); ctx.rotate(c*4);
+      ctx.fillStyle=`rgba(150,95,40,${g})`; ctx.fillRect(-22,-5,44,10);
+      ctx.strokeStyle=`rgba(90,55,22,${g})`; ctx.lineWidth=1.4; ctx.strokeRect(-22,-5,44,10);
+      ctx.restore();
+    }
+    // phase chips down the left, current one lit
+    ctx.textAlign='left'; ctx.font='800 8px ui-monospace,monospace';
+    for(let i=0;i<LV_BOSS.length;i++){
+      const yy=cy0+50+i*16, on=i<=bp;
+      ctx.globalAlpha=g*(on?1:0.45); ctx.fillStyle=on?LV_BOSS[i].col:'rgba(180,150,150,0.7)';
+      ctx.fillText((i===bp?'▶ ':(on?'◆ ':'◇ '))+LV_BOSS[i].tag, cx0+12, yy);
+    }
+    ctx.globalAlpha=g;
+    // current phase note, centered under the portrait
+    ctx.textAlign='center'; ctx.fillStyle=boss.col; ctx.font='800 12px ui-monospace,monospace';
+    ctx.shadowColor=boss.col; ctx.shadowBlur=10*g; ctx.fillText(boss.tag, cx, cy0+chh*0.70); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(235,220,220,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+    { const words=boss.note.split(' '), maxW=cw*0.84; let line='', ly=cy0+chh*0.70+14;
+      for(let wi=0;wi<words.length;wi++){ const tst=line?line+' '+words[wi]:words[wi];
+        if(ctx.measureText(tst).width>maxW && line){ ctx.fillText(line, cx, ly); line=words[wi]; ly+=10; }
+        else line=tst; }
+      if(line) ctx.fillText(line, cx, ly); }
+    // footer contrast: 001 = mid wall, Luigi Green = the real end
+    ctx.fillStyle=`rgba(255,59,59,${(0.65+0.35*Math.sin(c*6))*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.shadowColor='#ff3b3b'; ctx.shadowBlur=8*g;
+    ctx.fillText('001 = “YOU THOUGHT THIS WAS THE END” · LUIGI GREEN = THE ACTUAL LAST FIGHT', cx, cy0+chh-9);
+    ctx.shadowBlur=0; ctx.textAlign='center';
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
