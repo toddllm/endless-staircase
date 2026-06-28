@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-28 — TERMINATION OR WORSE + the POWER ORDER shift (Lore 39d, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's same-day fourth follow-up on the ToddLLM 001 thread. Two pieces, both built onto THE SHARED BOARD beat.
+First, Toby asked what the red end line on the Classics card means: *"What does Termination or Worse (end line in red, at
+the bottom) mean in Classics?"* — the answer being that in Classics, normal death is **not** the worst outcome; "or worse"
+means being erased, corrupted into a 404D, forgotten, or trapped in a Shadow-Realm state. Second, he set a new power order
+in his own words: *"ToddLLM and Luigi Green beat Clara on sight... everywhere. Luigi Green is most powerful... Simon now is
+something like the least powerful with all those inqueries, the character is inquered, not dead, so Simon's power level
+decreased... Luigi Green now has the power he needs."* So Simon has fallen to the weakest (injured and reduced, but still a
+source), while Luigi Green and 001 dominate the board, with Luigi Green fully realized as the roaming final force. Additive
+— nothing removed; the eighth beat THE SHARED BOARD now carries both.
+
+![Lore 39d — THE SHARED BOARD beat, updated. Above the floating chess-board arena a POWER ORDER strip reads "LUIGI GREEN ≈
+001 ▸▸▸ … ▸▸▸ SIMON ↓" with the line "Luigi Green now has the power he needs — the roaming final force has fully arrived."
+ToddLLM 001 holds the red center tile under "CENTER'S MINE"; Luigi Green circles the outer ring with his green trail. On
+the lower-left void edge a small dim figure labelled "SIMON ↓ REDUCED · inquered, not dead · still a source" puffs a faint
+sugar mote up to the center. Across the very bottom, a pulsing red line reads "⚠ TERMINATION OR WORSE ⚠ — DEATH IS THE
+BEST-CASE OUTCOME · WORSE = ERASED · CORRUPTED TO 404D · FORGOTTEN · TRAPPED IN SHADOW REALM."](screenshots/70-termination-or-worse.png)
+
+- **TERMINATION OR WORSE warning line.** A red, pulsing SCF line now runs across the bottom of the shared-board arena: death
+  is only the best-case bad outcome; worse fates are erased, corrupted to a 404D, forgotten, or trapped in the Shadow Realm.
+- **The POWER ORDER strip.** A new line above the board states the shifted ranking — Luigi Green and 001 at the top, Simon
+  fallen to the bottom — with Toby's line "Luigi Green now has the power he needs."
+- **Simon, reduced.** A small dim Simon now clings to the lower-left void edge, labelled "SIMON ↓ REDUCED · inquered, not
+  dead · still a source," still puffing a faint sugar mote up toward the center tile. He is the weakest now, but he still feeds the board.
+
 ## 2026-06-28 — THE SHARED BOARD: the floating chess-board arena (Lore 39c, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's same-day third follow-up describing the final-boss *arena itself*, in his own words: *"ToddLLM and Luigi

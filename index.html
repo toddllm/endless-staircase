@@ -11759,6 +11759,41 @@ function drawLoopVs(){
     // instant-loss warning ring label, pulsing at the void edge
     ctx.fillStyle=`rgba(120,255,120,${(0.5+0.45*vp)*g})`; ctx.font='800 9px ui-monospace,monospace';
     ctx.fillText('POISONOUS VOID — TOUCH IT AND YOU INSTANTLY LOSE', cx, by+bh+44);
+
+    // ----- Toby's June 28 follow-up: the POWER ORDER has shifted -----
+    // Simon is "inquered, not dead" — injured and reduced to the weakest, but still a source that
+    // feeds the board. A small dim Simon clings to the lower-left void edge, still puffing sugar up to 001.
+    const simX = bx - bw*1.30, simY = by + bh*0.55;
+    ctx.globalAlpha = g*0.7;
+    ctx.fillStyle = `rgba(127,212,255,${0.5*g})`; ctx.shadowColor='#7fd4ff'; ctx.shadowBlur=6*g;
+    ctx.beginPath(); ctx.arc(simX, simY, 7, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(175,208,232,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('SIMON ↓ REDUCED', simX, simY+18);
+    ctx.fillStyle=`rgba(150,182,206,${0.6*g})`; ctx.font='italic 700 6px ui-monospace,monospace';
+    ctx.fillText('inquered, not dead · still a source', simX, simY+27);
+    // a faint sugar mote still rising from the reduced Simon toward the center tile
+    for(let m=0;m<4;m++){ const t=((c*0.4+m/4)%1);
+      const px=simX+(ctrX-simX)*t, py=simY-(simY-ctrY)*t - Math.sin(t*Math.PI)*14;
+      ctx.globalAlpha=g*(0.6-0.4*t); ctx.fillStyle='#ffffff';
+      ctx.beginPath(); ctx.arc(px,py,1.6,0,Math.PI*2); ctx.fill(); }
+    ctx.globalAlpha=1;
+    // POWER ORDER strip — Luigi Green now has the power he needs; he and 001 dominate, Simon fell
+    ctx.fillStyle=`rgba(62,224,106,${0.95*g})`; ctx.font='800 8px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('POWER ORDER:  LUIGI GREEN ≈ 001  ▸▸▸  …  ▸▸▸  SIMON ↓', cx, top+H*0.16+27);
+    ctx.fillStyle=`rgba(180,235,190,${0.72*g})`; ctx.font='italic 700 7px ui-monospace,monospace';
+    ctx.fillText('“Luigi Green now has the power he needs.” — the roaming final force has fully arrived', cx, top+H*0.16+38);
+
+    // ----- the SCF "TERMINATION OR WORSE" line, in red at the very bottom (Toby's Classics card) -----
+    // Death is the best-case bad outcome; "or worse" = erased, corrupted, forgotten, trapped beyond death.
+    const torY = top + H*0.93;
+    ctx.strokeStyle=`rgba(255,40,60,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(W*0.10, torY-9); ctx.lineTo(W*0.90, torY-9); ctx.stroke();
+    ctx.fillStyle=`rgba(255,70,90,${g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.shadowColor='#ff2030'; ctx.shadowBlur=8*g;
+    ctx.fillText('⚠ TERMINATION OR WORSE ⚠', cx, torY+2); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(255,150,160,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('DEATH IS THE BEST-CASE OUTCOME · WORSE = ERASED · CORRUPTED TO 404D · FORGOTTEN · TRAPPED IN SHADOW REALM', cx, torY+13);
     ctx.textAlign='center';
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
