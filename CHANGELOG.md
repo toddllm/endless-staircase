@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-28 — THE FINAL BOSS, part two: the post-Galeem/Dharkon unlock (Lore 39b, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's same-day follow-up asking *"How do we make him the final boss after Gallem and that dark guy?"* — i.e.
+after Galeem and Dharkon, the two World of Light route bosses. His answer is to place Luigi Green *after* them rather
+than replacing them: finish the normal true ending, run a credits fake-out, then a glitch break interrupts and Luigi
+Green loads on his own arena as the hidden "real last battle." (The email also pastes a ChatGPT plan for a custom void
+arena and boss rules, treated as commentary, not canon.) Built additively onto the existing THE FINAL BOSS beat — no new
+beat, just the unlock framing on the same card.
+
+![Lore 39b — the THE FINAL BOSS card, final phase, now carrying the post-ending unlock. Above the red "001 = YOU
+THOUGHT THIS WAS THE END · LUIGI GREEN = THE ACTUAL LAST FIGHT" ribbon, a new flow strip reads "GALEEM ✗ → DHARKON ✗ →
+TRUE END → GLITCH → LUIGI GREEN," with GALEEM and DHARKON dimmed, TRUE END in cyan, GLITCH in purple, and LUIGI GREEN in
+red. The rest of the card is unchanged: TRUE FINAL BOSS · TOP ONE OF CLASSICS header, the four phase chips, Luigi Green
+in a purple possession aura with the thrown board over a dark domain dome, and the FINAL · DOMAIN EXPANSION
+note.](screenshots/68-final-boss-unlock.png)
+
+- **Post-ending unlock flow strip.** The FINAL BOSS card now shows the path Toby chose: GALEEM ✗ → DHARKON ✗ → TRUE END →
+  GLITCH → LUIGI GREEN, so the card itself says he comes *after* the World of Light bosses, not instead of them.
+- **Credits fake-out + glitch-break intro.** At the very start of the beat (live play), the card blacks out into a
+  "WORLD OF LIGHT — TRUE ENDING / GALEEM and DHARKON defeated" credits crawl, then tears into a red-and-purple glitch
+  "— GLITCH — REAL END —" before the boss card resolves. Frozen screenshots land after the intro, on the boss card.
+- **Taunt updated.** The FINAL BOSS narration now says Luigi Green does not replace Galeem and Dharkon; he loads after
+  the true ending and the glitch break, on his own arena.
+- **Screenshot:** [screenshots/68-final-boss-unlock.png](screenshots/68-final-boss-unlock.png), captured via the
+  `finalboss` scene in tools/capture_screenshot.py.
+
 ## 2026-06-28 — THE FINAL BOSS: Luigi Green is top one, the four-phase last fight (Lore 39, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 28 lore. He settled the ranking: *"In fact, he's top one, he is the final boss in Classics... if he

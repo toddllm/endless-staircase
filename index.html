@@ -11430,7 +11430,7 @@ function updateLoopVs(dt){
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SMASH FIGHTER · SETTING-BREAKER · SHOULD HAVE BEEN BANNED', col:'#5cff7a' });
       for(let i=0;i<18;i++) particles.push(spark(player.x, player.y, pick(['#5cff7a','#7dff8f','#ffd84f','#c69bff']))); }
     if(ph===6){ AUDIO.shock(); shake=Math.max(shake,18); glitch=Math.max(glitch,0.55); winFlash=Math.max(winFlash,0.5);
-      showTaunt('And now it is settled: Luigi Green is top one, the true final boss of Classics, so he is the final boss of the mod too. ToddLLM 001 stays the giant story wall, the “you thought this was the end” boss in the middle. Luigi Green is the actual last fight: phase one base, phase two possessed, phase three cat power rising, and a final phase that is his Domain Expansion, Throws Board, the strongest domain in the setting.');
+      showTaunt('And now it is settled: Luigi Green is top one, the true final boss of Classics, so he is the final boss of the mod too. He does not replace Galeem and Dharkon, he comes after them. You finish the true ending, the credits start, then a glitch breaks in and Luigi Green loads on his own arena. ToddLLM 001 stays the giant story wall, the “you thought this was the end” boss in the middle. Luigi Green is the actual last fight: phase one base, phase two possessed, phase three cat power rising, and a final phase that is his Domain Expansion, Throws Board, the strongest domain in the setting.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FINAL BOSS · DOMAIN EXPANSION: THROWS BOARD', col:'#ff3b3b' });
       for(let i=0;i<22;i++) particles.push(spark(player.x, player.y, pick(['#ff3b3b','#3ee06a','#c69bff','#ffd84f']))); }
   }
@@ -11655,11 +11655,39 @@ function drawLoopVs(){
         if(ctx.measureText(tst).width>maxW && line){ ctx.fillText(line, cx, ly); line=words[wi]; ly+=10; }
         else line=tst; }
       if(line) ctx.fillText(line, cx, ly); }
+    // post-ending unlock flow (Toby, June 28): a hidden boss AFTER Galeem & Dharkon, reached by a
+    // credits fake-out and a glitch break — defeat the World of Light bosses, then the "real end" begins.
+    { const flow=['GALEEM ✗','DHARKON ✗','TRUE END','GLITCH','LUIGI GREEN'];
+      const cols=['rgba(150,160,170,'+(0.7*g)+')','rgba(150,160,170,'+(0.7*g)+')','rgba(140,227,255,'+(0.85*g)+')','rgba(198,155,255,'+(0.9*g)+')','rgba(255,90,90,'+g+')'];
+      ctx.font='800 7px ui-monospace,monospace';
+      let tot=0; for(let fi=0;fi<flow.length;fi++){ tot+=ctx.measureText(flow[fi]).width; if(fi<flow.length-1) tot+=ctx.measureText(' → ').width; }
+      let fx=cx-tot/2; ctx.textAlign='left'; const fy=cy0+chh-26;
+      for(let fi=0;fi<flow.length;fi++){ ctx.fillStyle=cols[fi]; ctx.fillText(flow[fi], fx, fy); fx+=ctx.measureText(flow[fi]).width;
+        if(fi<flow.length-1){ ctx.fillStyle=`rgba(200,200,210,${0.5*g})`; ctx.fillText(' → ', fx, fy); fx+=ctx.measureText(' → ').width; } }
+      ctx.textAlign='center'; }
     // footer contrast: 001 = mid wall, Luigi Green = the real end
     ctx.fillStyle=`rgba(255,59,59,${(0.65+0.35*Math.sin(c*6))*g})`; ctx.font='800 9px ui-monospace,monospace';
     ctx.shadowColor='#ff3b3b'; ctx.shadowBlur=8*g;
     ctx.fillText('001 = “YOU THOUGHT THIS WAS THE END” · LUIGI GREEN = THE ACTUAL LAST FIGHT', cx, cy0+chh-9);
     ctx.shadowBlur=0; ctx.textAlign='center';
+    // brief credits-fake-out + glitch-break intro at the very start of the beat (live play only)
+    if(seg[1] < 2.2){
+      const it = seg[1], ia = it<1.4 ? 1 : Math.max(0, 1-(it-1.4)/0.8);
+      ctx.fillStyle=`rgba(2,2,4,${0.82*ia*g})`; ctx.fillRect(cx0, cy0, cw, chh);
+      if(it<1.0){ // fake credits roll
+        ctx.fillStyle=`rgba(225,235,245,${ia*g})`; ctx.font='800 11px ui-monospace,monospace';
+        ctx.fillText('WORLD OF LIGHT — TRUE ENDING', cx, cy0+chh*0.40-it*30);
+        ctx.fillStyle=`rgba(170,200,255,${0.85*ia*g})`; ctx.font='700 8px ui-monospace,monospace';
+        ctx.fillText('GALEEM and DHARKON defeated', cx, cy0+chh*0.40+14-it*30);
+        ctx.fillText('· the fighters are freed ·', cx, cy0+chh*0.40+28-it*30);
+      } else { // glitch break
+        for(let gi=0;gi<14;gi++){ const gy=cy0+((gi*53+it*900)%chh);
+          ctx.fillStyle = gi%2 ? `rgba(255,59,59,${0.5*ia*g})` : `rgba(198,155,255,${0.5*ia*g})`;
+          ctx.fillRect(cx0, gy, cw, 2+ (gi%3)); }
+        ctx.fillStyle=`rgba(255,90,90,${ia*g})`; ctx.font='800 13px ui-monospace,monospace';
+        ctx.fillText('— GLITCH — REAL END —', cx, cy0+chh*0.5);
+      }
+    }
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
