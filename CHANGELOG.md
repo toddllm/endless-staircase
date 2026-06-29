@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-29 — THE DOMAIN CLASH: Endless Chaos vs Throws Board, and why Luigi Green wins (Lore 39f, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 29 follow-up. In his own words: *"ToddLLM 001 can use his Domain Expansion: Endless Chaos, and Luigi
+Green can use his Domain Expansion: Throws Board to throw the board into the chaos. Luigi Green is very intelegent though,
+he is the real final boss, ToddLLM attacks from center."* Added as a tenth beat, THE DOMAIN CLASH, on the end of the
+UNDEFINED LOOP cutscene, after THE CRYSTAL RESERVE. It shows the two Domain Expansions meeting: 001 holds the center and
+opens Endless Chaos (a vortex that traps, loops, and crushes inward), and Luigi Green opens Throws Board and hurls the
+whole chess board straight into that chaos, weaponizing 001's own domain on his terms. That is why Luigi Green is the real
+final boss: not the strongest single attack, but the higher board intelligence who decides how the chaos gets used. (The
+email also pasted a long ChatGPT analysis; per the bot's rules that pasted text is treated as commentary, not canon — only
+Toby's own assertions were built. The phrasing "feeds the board into the chaos on his own terms" and "finds the winning
+board state" follows directly from Toby's own line that Luigi Green throws the board into the chaos and is the smarter
+final boss.) Additive — nothing removed.
+
+![Lore 39f — THE DOMAIN CLASH, the tenth beat of the UNDEFINED LOOP. At center, ToddLLM 001 stands inside DOMAIN
+EXPANSION: ENDLESS CHAOS, a deep vortex of concentric magenta and violet spiral rings crushing inward with chaotic motes
+spiralling toward him; beneath him "001 ATTACKS FROM CENTER · TRAP · LOOP · CRUSH INWARD." At right, Luigi Green stands
+mid-throw under DOMAIN EXPANSION: THROWS BOARD and "HE FEEDS THE BOARD INTO 001'S OWN CHAOS," a small tumbling checker
+board arcing from him toward the vortex with a green motion trail. Across the top: "THE DOMAIN CLASH — TWO DOMAIN
+EXPANSIONS," then "001 = CENTER ATTACKER · ENDLESS CHAOS  ↔  LUIGI GREEN = THE BOARD · THROWS BOARD," then "LUIGI GREEN IS
+THE REAL FINAL BOSS — THE SMARTER ONE WHO FINDS THE WINNING BOARD STATE." The ten-beat ladder down the left edge is fully
+lit, with THE DOMAIN CLASH at the bottom.](screenshots/72-domain-clash.png)
+
+- **New tenth beat, THE DOMAIN CLASH.** The UNDEFINED LOOP cutscene now runs ten beats; after THE CRYSTAL RESERVE it
+  resolves into the two Domain Expansions colliding.
+- **DOMAIN EXPANSION: ENDLESS CHAOS.** 001 holds the dead center inside a spiralling vortex of inward-crushing rings and
+  motes — trap, loop, crush inward — attacking from the middle.
+- **DOMAIN EXPANSION: THROWS BOARD.** Luigi Green, mid-throw, hurls the whole chess board on an arc into 001's chaos, a
+  tumbling checker slab with a motion trail; he weaponizes 001's domain on his own terms.
+- **Why Luigi Green is the real final boss.** The framing makes the point explicit: the strongest single attack does not
+  win — Luigi Green is the higher board intelligence who decides how the chaos gets used and finds the winning board state.
+
+
+
 ## 2026-06-29 — THE CRYSTAL RESERVE: Luigi Green's stockpile, and 001 falls over (Lore 39e, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 29 just-talk follow-up with the Chess Battlefield image. In his own words: *"Luigi Green and ToddLLM

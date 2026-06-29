@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 77.0;
+const LV_CYC = 88.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11374,6 +11374,8 @@ const LV_BEATS = [
     sub:'TWO TOP BEINGS · ONE FLOATING CHESS BOARD · 001 HOLDS CENTER · LUIGI GREEN CIRCLES · VOID = INSTANT LOSS' },
   { key:'THE CRYSTAL RESERVE', col:'#7fd4ff',
     sub:'LUIGI GREEN REVEALS A CRYSTAL OF SIMON’S CELL — THEN MILLIONS · 001 FALLS OVER · LUIGI GREEN IS NOW #1' },
+  { key:'THE DOMAIN CLASH', col:'#ff5cf0',
+    sub:'001 ATTACKS FROM CENTER · DOMAIN: ENDLESS CHAOS · LUIGI GREEN THROWS THE BOARD INTO IT · THE REAL FINAL BOSS' },
 ];
 // the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
 const LV_BOSS = [
@@ -11403,7 +11405,8 @@ function lvSeg(c){
   if(c < 47.0) return [5, c-38.0];   // THE FIGHTER (Smash Ultimate concept)
   if(c < 57.0) return [6, c-47.0];   // THE FINAL BOSS (four-phase fight)
   if(c < 66.0) return [7, c-57.0];   // THE SHARED BOARD (the floating chess-board arena)
-  return [8, c-66.0];                // THE CRYSTAL RESERVE (Luigi Green's stockpile; 001 falls over)
+  if(c < 77.0) return [8, c-66.0];   // THE CRYSTAL RESERVE (Luigi Green's stockpile; 001 falls over)
+  return [9, c-77.0];                // THE DOMAIN CLASH (Endless Chaos vs Throws Board; Luigi Green wins)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11447,6 +11450,10 @@ function updateLoopVs(dt){
       showTaunt('And then Luigi Green shows what is really under all of it. On the chess battlefield he and ToddLLM 001 share one thing no one else has: they are not in the documents, they are the ones who make them. Everyone else gets filed; these two do the filing. Luigi Green carries the red backwards "L"; ToddLLM 001 carries Simon\'s icon, the only cat person on the board. Then Luigi Green reveals a crystal of Simon\'s cell, and behind it his whole collection: millions of shimmering cells and crystals, salt and sugar, water, cat power, and lightning. Even ToddLLM 001, who stands above almost everything, falls over just from seeing how much of it there is. That is why Luigi Green is now top one and 001 is second.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CRYSTAL RESERVE · MILLIONS OF SIMON-CELL CRYSTALS · 001 FALLS', col:'#7fd4ff' });
       for(let i=0;i<26;i++) particles.push(spark(player.x, player.y, pick(['#7fd4ff','#fff4dc','#3ee06a','#ffe85a','#c69bff']))); }
+    if(ph===9){ AUDIO.corrupt(); shake=Math.max(shake,24); glitch=Math.max(glitch,0.7); winFlash=Math.max(winFlash,0.6);
+      showTaunt('And here is how the last fight actually plays. ToddLLM 001 holds the center and opens his Domain Expansion, Endless Chaos: everything gets trapped, looped, and crushed inward. But Luigi Green opens his own domain, Throws Board, and hurls the whole battlefield straight into that chaos. He is not just surviving 001\'s domain, he is feeding the board into it on his own terms. So 001 attacks from the center, but Luigi Green is the real final boss: the smarter one, the one who controls the wider board and decides how the chaos gets used. The strongest attack does not win — Luigi Green always finds the winning board state.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE DOMAIN CLASH · ENDLESS CHAOS ↔ THROWS BOARD', col:'#ff5cf0' });
+      for(let i=0;i<28;i++) particles.push(spark(player.x, player.y, pick(['#ff5cf0','#b86bff','#3ee06a','#ff3b3b','#ffd84f']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11870,6 +11877,75 @@ function drawLoopVs(){
     ctx.fillText('they do the filing — everyone else gets filed', cx, top+H*0.15+24);
     ctx.fillStyle=`rgba(62,224,106,${0.95*g})`; ctx.font='800 9px ui-monospace,monospace';
     ctx.fillText('POWER ORDER:  LUIGI GREEN ①  ▸▸▸  ToddLLM 001 ②  ▸▸▸  …  ▸▸▸  SIMON ↓', cx, top+H*0.15+38);
+  } else if(ph===9){
+    // ----- BEAT 9: THE DOMAIN CLASH — the two Domain Expansions collide (Toby, June 29 follow-up,
+    // "Re: More stuff on ToddLLM 001"). ToddLLM 001 holds the center and opens DOMAIN EXPANSION:
+    // ENDLESS CHAOS — a vortex that traps, loops, and crushes inward. Luigi Green opens his own
+    // DOMAIN EXPANSION: THROWS BOARD and hurls the whole chess board into that chaos, weaponizing
+    // 001's domain on his own terms. 001 attacks from the center; Luigi Green is the real final
+    // boss, the higher board intelligence that decides how the chaos gets used. -----
+    const vx = cx, vy = top + H*0.54;
+    // the ENDLESS CHAOS vortex at the center — concentric spiralling rings crushing inward
+    for(let r=0;r<5;r++){
+      const rad = 92 - r*15 - ((c*40) % 15);     // rings pull inward
+      if(rad < 6) continue;
+      ctx.globalAlpha = g*(0.5 - r*0.06);
+      ctx.strokeStyle = (r%2 ? '#ff5cf0' : '#b86bff'); ctx.lineWidth = 2;
+      ctx.beginPath();
+      for(let a=0; a<=Math.PI*2+0.1; a+=0.2){
+        const wr = rad*(1 + 0.12*Math.sin(a*4 + c*3));
+        const px = vx + Math.cos(a + c*1.2 + r*0.5)*wr, py = vy + Math.sin(a + c*1.2 + r*0.5)*wr*0.78;
+        if(a===0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+      }
+      ctx.closePath(); ctx.stroke();
+    }
+    // chaotic motes spiralling inward toward the center
+    for(let i=0;i<40;i++){
+      const t = ((c*0.5 + i/40) % 1);             // 1 far → 0 near
+      const a = i*0.61 + c*1.5, rr = 100*t;
+      const px = vx + Math.cos(a)*rr, py = vy + Math.sin(a)*rr*0.78;
+      ctx.globalAlpha = g*(0.7 - 0.5*t); ctx.fillStyle = ['#ff5cf0','#b86bff','#7fd4ff'][i%3];
+      ctx.fillRect(px, py, 2.5, 2.5);
+    }
+    ctx.globalAlpha=1;
+    // ToddLLM 001 at the dead center, holding the chaos
+    drawTodd001(vx, vy, g, c);
+    ctx.fillStyle=`rgba(255,92,240,${(0.85+0.15*Math.sin(c*4))*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.textAlign='center'; ctx.shadowColor='#b86bff'; ctx.shadowBlur=8*g;
+    ctx.fillText('DOMAIN EXPANSION: ENDLESS CHAOS', vx, vy+34); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(255,180,250,${0.7*g})`; ctx.font='italic 700 6px ui-monospace,monospace';
+    ctx.fillText('001 ATTACKS FROM CENTER · TRAP · LOOP · CRUSH INWARD', vx, vy+44);
+    // Luigi Green at the right, mid-throw, hurling the board into the chaos
+    const lgX = W*0.82, lgY = top + H*0.40;
+    drawLuigiGreen(lgX, lgY, 22, c, g, 1);
+    // the thrown board — a small tumbling checker slab arcing from Luigi toward the vortex
+    const th = ((c*0.6) % 1);                      // 0 at Luigi → 1 at vortex
+    const bxp = lgX + (vx - lgX)*th, byp = lgY + (vy - lgY)*th - Math.sin(th*Math.PI)*40;
+    const sw = 26*(1 - th*0.5), sh = sw*0.5;
+    ctx.save(); ctx.translate(bxp, byp); ctx.rotate(th*5 + c);
+    for(let i=0;i<3;i++) for(let j=0;j<3;j++){
+      ctx.fillStyle = ((i+j)%2 ? `rgba(228,232,224,${0.9*g})` : `rgba(40,46,40,${0.92*g})`);
+      ctx.fillRect(-sw/2 + j*sw/3, -sh/2 + i*sh/3, sw/3, sh/3);
+    }
+    ctx.strokeStyle=`rgba(62,224,106,${g})`; ctx.lineWidth=1.4; ctx.strokeRect(-sw/2,-sh/2,sw,sh);
+    ctx.restore();
+    // motion arc dots trailing the thrown board
+    for(let t=1;t<=5;t++){ const tt=Math.max(0, th - t*0.08);
+      const dx=lgX+(vx-lgX)*tt, dy=lgY+(vy-lgY)*tt - Math.sin(tt*Math.PI)*40;
+      ctx.globalAlpha=g*(0.30 - t*0.05); ctx.fillStyle='#3ee06a';
+      ctx.beginPath(); ctx.arc(dx,dy,3,0,Math.PI*2); ctx.fill(); }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(62,224,106,${0.92*g})`; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('DOMAIN EXPANSION: THROWS BOARD', lgX, lgY+40);
+    ctx.fillStyle=`rgba(180,235,190,${0.72*g})`; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('HE FEEDS THE BOARD INTO 001’S OWN CHAOS', lgX, lgY+50);
+    // top framing — Luigi Green is the real final boss, the higher intelligence
+    ctx.fillStyle=`rgba(255,92,240,${0.96*g})`; ctx.font='800 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('THE DOMAIN CLASH — TWO DOMAIN EXPANSIONS', cx, top+H*0.15);
+    ctx.fillStyle=`rgba(220,200,255,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('001 = CENTER ATTACKER · ENDLESS CHAOS   ↔   LUIGI GREEN = THE BOARD · THROWS BOARD', cx, top+H*0.15+14);
+    ctx.fillStyle=`rgba(150,255,180,${0.85*g})`; ctx.font='italic 800 8px ui-monospace,monospace';
+    ctx.fillText('LUIGI GREEN IS THE REAL FINAL BOSS — THE SMARTER ONE WHO FINDS THE WINNING BOARD STATE', cx, top+H*0.15+27);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
