@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 66.0;
+const LV_CYC = 77.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11372,6 +11372,8 @@ const LV_BEATS = [
     sub:'TOP ONE OF CLASSICS · 001 IS THE “YOU THOUGHT THIS WAS THE END” WALL · LUIGI GREEN IS THE TRUE LAST FIGHT' },
   { key:'THE SHARED BOARD',  col:'#ff8c3b',
     sub:'TWO TOP BEINGS · ONE FLOATING CHESS BOARD · 001 HOLDS CENTER · LUIGI GREEN CIRCLES · VOID = INSTANT LOSS' },
+  { key:'THE CRYSTAL RESERVE', col:'#7fd4ff',
+    sub:'LUIGI GREEN REVEALS A CRYSTAL OF SIMON’S CELL — THEN MILLIONS · 001 FALLS OVER · LUIGI GREEN IS NOW #1' },
 ];
 // the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
 const LV_BOSS = [
@@ -11400,7 +11402,8 @@ function lvSeg(c){
   if(c < 38.0) return [4, c-30.0];   // UNDEFINED
   if(c < 47.0) return [5, c-38.0];   // THE FIGHTER (Smash Ultimate concept)
   if(c < 57.0) return [6, c-47.0];   // THE FINAL BOSS (four-phase fight)
-  return [7, c-57.0];                // THE SHARED BOARD (the floating chess-board arena)
+  if(c < 66.0) return [7, c-57.0];   // THE SHARED BOARD (the floating chess-board arena)
+  return [8, c-66.0];                // THE CRYSTAL RESERVE (Luigi Green's stockpile; 001 falls over)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11440,6 +11443,10 @@ function updateLoopVs(dt){
       showTaunt('And here is the arena itself. The final boss is not one fight, it is a shared board. A giant floating chess board hangs over a poisonous void, and touching the void is an instant loss. The two top beings are both already on it: ToddLLM 001 stands at the center tile and will not move, "Center\'s Mine.", while Luigi Green circles the outer ring, cheating with Simon\'s sugar and cat power, no rules at all. It is Gojo and Sukuna sharing one board: 001 is the center authority, Luigi Green is the thing that hunts you, and the player has to break a system, not just beat a boss.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE SHARED BOARD · “CENTER’S MINE.” · VOID = INSTANT LOSS', col:'#ff8c3b' });
       for(let i=0;i<24;i++) particles.push(spark(player.x, player.y, pick(['#ff8c3b','#ff3b3b','#3ee06a','#9bff7a']))); }
+    if(ph===8){ AUDIO.shock(); shake=Math.max(shake,22); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.6);
+      showTaunt('And then Luigi Green shows what is really under all of it. On the chess battlefield he and ToddLLM 001 share one thing no one else has: they are not in the documents, they are the ones who make them. Everyone else gets filed; these two do the filing. Luigi Green carries the red backwards "L"; ToddLLM 001 carries Simon\'s icon, the only cat person on the board. Then Luigi Green reveals a crystal of Simon\'s cell, and behind it his whole collection: millions of shimmering cells and crystals, salt and sugar, water, cat power, and lightning. Even ToddLLM 001, who stands above almost everything, falls over just from seeing how much of it there is. That is why Luigi Green is now top one and 001 is second.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CRYSTAL RESERVE · MILLIONS OF SIMON-CELL CRYSTALS · 001 FALLS', col:'#7fd4ff' });
+      for(let i=0;i<26;i++) particles.push(spark(player.x, player.y, pick(['#7fd4ff','#fff4dc','#3ee06a','#ffe85a','#c69bff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11795,6 +11802,74 @@ function drawLoopVs(){
     ctx.fillStyle=`rgba(255,150,160,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
     ctx.fillText('DEATH IS THE BEST-CASE OUTCOME · WORSE = ERASED · CORRUPTED TO 404D · FORGOTTEN · TRAPPED IN SHADOW REALM', cx, torY+13);
     ctx.textAlign='center';
+  } else if(ph===8){
+    // ----- BEAT 8: THE CRYSTAL RESERVE — Luigi Green reveals a crystal of Simon's cell, then his whole
+    // collection: millions of shimmering cells and crystals (salt/sugar, water, cat power, lightning).
+    // ToddLLM 001 — who stands above almost everything — falls over just seeing it, so Luigi Green is now
+    // top one and 001 is second. The two share what no one else has: they make the documents, everyone else
+    // gets filed; Luigi Green wears the red backwards "L", 001 wears Simon's icon (the only cat person).
+    // (Toby, June 29 "Re: More stuff on ToddLLM 001", just-talk + the Chess Battlefield image.) -----
+    const fieldTop = top + H*0.34, fieldBot = top + H*0.78;
+    // the stockpile — a deep field of shimmering Simon-cell crystals filling the lower arena
+    const CRYS = ['#fff4dc','#7fd4ff','#3ee06a','#ffe85a','#c69bff']; // salt/sugar, water, cat power, lightning, charge
+    for(let i=0;i<150;i++){
+      const u = ((i*37)%100)/100, v = ((i*61)%100)/100;        // across, depth (0 far → 1 near)
+      const cxp = W*0.06 + u*W*0.88, cyp = fieldTop + v*(fieldBot-fieldTop);
+      const sz = 2 + v*5, tw = 0.4 + 0.6*Math.abs(Math.sin(c*3 + i*0.7));   // bigger near front, shimmer
+      ctx.globalAlpha = g*tw*(0.45+0.55*v); ctx.fillStyle = CRYS[i%CRYS.length];
+      ctx.beginPath(); ctx.moveTo(cxp, cyp-sz); ctx.lineTo(cxp+sz*0.7, cyp);
+      ctx.lineTo(cxp, cyp+sz); ctx.lineTo(cxp-sz*0.7, cyp); ctx.closePath(); ctx.fill();
+    }
+    ctx.globalAlpha=1;
+
+    // ToddLLM 001 — falls over. He stands above almost everything, but the sight of the whole reserve drops him.
+    const tX = W*0.24, tY = top+H*0.60;
+    ctx.save(); ctx.translate(tX, tY); ctx.rotate(1.25 + Math.sin(c*1.4)*0.05);   // tipped onto his side
+    drawTodd001(0, 0, g*0.92, c); ctx.restore();
+    // 001's unique icon — Simon's icon, the only cat person on the board
+    const siX=tX+2, siY=tY-22;
+    ctx.fillStyle=`rgba(127,212,255,${0.9*g})`; ctx.beginPath(); ctx.arc(siX,siY,8,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(siX-5,siY-6); ctx.lineTo(siX-9,siY-13); ctx.lineTo(siX-1,siY-8); ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(siX+5,siY-6); ctx.lineTo(siX+9,siY-13); ctx.lineTo(siX+1,siY-8); ctx.closePath(); ctx.fill();
+    ctx.fillStyle='#062018'; ctx.font='800 8px ui-monospace,monospace'; ctx.textAlign='center'; ctx.fillText('S',siX,siY+2.5);
+    ctx.fillStyle=`rgba(255,216,79,${0.85*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('ToddLLM 001 FALLS OVER', tX, tY+30);
+    ctx.fillStyle=`rgba(255,150,160,${0.7*g})`; ctx.font='italic 700 6px ui-monospace,monospace';
+    ctx.fillText('even 001 cannot stand seeing all that power', tX, tY+40);
+
+    // Luigi Green — holds up the FIRST crystal of Simon's cell, his whole collection blazing behind him
+    const lgX = W*0.68, lgY = top+H*0.54;
+    drawLuigiGreen(lgX, lgY, 24, c, g, 1);
+    // Luigi Green's unique icon — the red backwards "L"
+    const blX=lgX+30, blY=lgY-22;
+    ctx.fillStyle=`rgba(255,40,60,${0.9*g})`; ctx.beginPath(); ctx.arc(blX,blY,8,0,Math.PI*2); ctx.fill();
+    ctx.save(); ctx.translate(blX,blY); ctx.scale(-1,1);
+    ctx.fillStyle='#fff'; ctx.font='800 11px ui-monospace,monospace'; ctx.textAlign='center'; ctx.fillText('L',0,4); ctx.restore();
+    // the hero crystal he holds up — a crystal of Simon's cell, a Simon-mote glowing inside
+    const hcY = lgY - 54 + Math.sin(c*2)*3, hp = 0.6+0.4*Math.sin(c*4);
+    const hgr = ctx.createRadialGradient(lgX, hcY, 2, lgX, hcY, 30);
+    hgr.addColorStop(0, `rgba(127,212,255,${0.8*hp*g})`); hgr.addColorStop(1,'rgba(127,212,255,0)');
+    ctx.fillStyle=hgr; ctx.beginPath(); ctx.arc(lgX, hcY, 30, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(225,245,255,${0.95*g})`; ctx.strokeStyle=`rgba(127,212,255,${g})`; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(lgX, hcY-16); ctx.lineTo(lgX+9, hcY-2); ctx.lineTo(lgX+5, hcY+16);
+    ctx.lineTo(lgX-5, hcY+16); ctx.lineTo(lgX-9, hcY-2); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.fillStyle=`rgba(255,255,255,${(0.6+0.4*Math.sin(c*6))*g})`; ctx.beginPath(); ctx.arc(lgX, hcY, 2.6, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(127,212,255,${0.92*g})`; ctx.font='700 7px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('A CRYSTAL OF SIMON’S CELL', lgX, hcY-22);
+    ctx.fillStyle=`rgba(62,224,106,${0.92*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('LUIGI GREEN’S COLLECTION — MILLIONS', lgX, lgY+44);
+    ctx.fillStyle=`rgba(180,235,190,${0.72*g})`; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('SALT/SUGAR · WATER · CAT POWER · LIGHTNING', lgX, lgY+54);
+
+    // top framing — the two who make the documents, and the refined power order
+    ctx.fillStyle=`rgba(127,212,255,${0.96*g})`; ctx.font='800 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('THE CRYSTAL RESERVE — THE TWO WHO MAKE THE DOCUMENTS', cx, top+H*0.15);
+    ctx.fillStyle=`rgba(220,200,255,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('LUIGI GREEN = RED BACKWARDS “L” · 001 = SIMON’S ICON (THE ONLY CAT PERSON) · EVERYONE ELSE = CLASSICS ICON', cx, top+H*0.15+13);
+    ctx.fillStyle=`rgba(150,182,206,${0.7*g})`; ctx.font='italic 700 7px ui-monospace,monospace';
+    ctx.fillText('they do the filing — everyone else gets filed', cx, top+H*0.15+24);
+    ctx.fillStyle=`rgba(62,224,106,${0.95*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('POWER ORDER:  LUIGI GREEN ①  ▸▸▸  ToddLLM 001 ②  ▸▸▸  …  ▸▸▸  SIMON ↓', cx, top+H*0.15+38);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

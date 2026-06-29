@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-29 — THE CRYSTAL RESERVE: Luigi Green's stockpile, and 001 falls over (Lore 39e, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 29 just-talk follow-up with the Chess Battlefield image. In his own words: *"Luigi Green and ToddLLM
+have a different icon than all the other Classics characters, they have the red, backwards 'L', the other one is Simon's
+icon (no one else has it, ToddLLM is the only cat person)... Luigi Green and ToddLLM don't have their own documents but are
+the ones who make the documents on each one. Luigi Green was now the most powerful of all... he reveals something more
+powerful than anything Simon gave them, a crystal of Simon's cell. Luigi Green shown ToddLLM his whole collection, millions
+of cells and crystals shimmer, ToddLLM 001 falls over. The cells and crystals are made of salt/sugar, water, and cat power,
+and lightning."* Added as a ninth beat, THE CRYSTAL RESERVE, on the end of the UNDEFINED LOOP cutscene, after THE SHARED
+BOARD. It refines the power order from the prior beat: where THE SHARED BOARD had Luigi Green ≈ 001 tied at the top, the
+reserve breaks the tie — Luigi Green is now clearly #1 and 001 second, because of the stockpile. (The email also pastes a
+long ChatGPT analysis; per the bot's rules that pasted text is treated as commentary, not canon — only Toby's own
+assertions were built.) Additive — nothing removed.
+
+![Lore 39e — THE CRYSTAL RESERVE, the ninth beat of the UNDEFINED LOOP. A deep field of shimmering multicolored crystals
+(salt/sugar white, water blue, cat-power green, lightning yellow, charge violet) fills the lower arena. Luigi Green stands
+at right holding up a tall blue-white crystal labelled "A CRYSTAL OF SIMON'S CELL" with a Simon-mote glowing inside;
+below him "LUIGI GREEN'S COLLECTION — MILLIONS" and "SALT/SUGAR · WATER · CAT POWER · LIGHTNING." A red badge with a
+backwards "L" marks him. At left, ToddLLM 001 is tipped onto his side under "ToddLLM 001 FALLS OVER · even 001 cannot
+stand seeing all that power," with a small blue cat-eared "S" badge — Simon's icon, the only cat person. Across the top:
+"THE CRYSTAL RESERVE — THE TWO WHO MAKE THE DOCUMENTS," the icon line, "they do the filing — everyone else gets filed,"
+and "POWER ORDER: LUIGI GREEN ① ▸▸▸ ToddLLM 001 ② ▸▸▸ … ▸▸▸ SIMON ↓." The nine-beat ladder down the left edge is fully
+lit.](screenshots/71-crystal-reserve.png)
+
+- **New ninth beat, THE CRYSTAL RESERVE.** The UNDEFINED LOOP cutscene now runs nine beats; after THE SHARED BOARD it
+  resolves into Luigi Green's reveal of his crystal stockpile.
+- **The crystal of Simon's cell, then millions.** Luigi Green holds up one bright Simon-cell crystal with a mote glowing
+  inside; behind it a deep shimmering field of cells and crystals made of salt/sugar, water, cat power, and lightning.
+- **001 falls over.** ToddLLM 001 — who stands above almost everything — is drawn tipped onto his side, unable to stand the
+  sight of the whole reserve. This is what breaks the tie and puts Luigi Green at #1.
+- **The two who make the documents.** The icon distinction is now on screen: Luigi Green's red backwards "L" and 001's
+  Simon icon (the only cat person), with the line that these two are above documentation — everyone else gets filed.
+- **Refined POWER ORDER.** The strip now reads Luigi Green ① and 001 ② explicitly, sharpening the prior beat's "≈".
+
 ## 2026-06-28 — TERMINATION OR WORSE + the POWER ORDER shift (Lore 39d, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's same-day fourth follow-up on the ToddLLM 001 thread. Two pieces, both built onto THE SHARED BOARD beat.
