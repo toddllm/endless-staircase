@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 88.0;
+const LV_CYC = 100.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11376,6 +11376,8 @@ const LV_BEATS = [
     sub:'LUIGI GREEN REVEALS A CRYSTAL OF SIMON’S CELL — THEN MILLIONS · 001 FALLS OVER · LUIGI GREEN IS NOW #1' },
   { key:'THE DOMAIN CLASH', col:'#ff5cf0',
     sub:'001 ATTACKS FROM CENTER · DOMAIN: ENDLESS CHAOS · LUIGI GREEN THROWS THE BOARD INTO IT · THE REAL FINAL BOSS' },
+  { key:'THE NEUTRAL CHAMPION', col:'#ffd98a',
+    sub:'MINDY STARCHILD · INVINCIBILITY CUBE KNOCKS 001 OFF-CENTER & 1-HKOs HIM · VOID EXPANSION: JUSTICE RANKS SECOND · TIED TO LIGHT' },
 ];
 // the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
 const LV_BOSS = [
@@ -11406,7 +11408,8 @@ function lvSeg(c){
   if(c < 57.0) return [6, c-47.0];   // THE FINAL BOSS (four-phase fight)
   if(c < 66.0) return [7, c-57.0];   // THE SHARED BOARD (the floating chess-board arena)
   if(c < 77.0) return [8, c-66.0];   // THE CRYSTAL RESERVE (Luigi Green's stockpile; 001 falls over)
-  return [9, c-77.0];                // THE DOMAIN CLASH (Endless Chaos vs Throws Board; Luigi Green wins)
+  if(c < 88.0) return [9, c-77.0];   // THE DOMAIN CLASH (Endless Chaos vs Throws Board; Luigi Green wins)
+  return [10, c-88.0];               // THE NEUTRAL CHAMPION (Mindy Starchild; domain ranks second; tied to light)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11454,6 +11457,10 @@ function updateLoopVs(dt){
       showTaunt('And here is how the last fight actually plays. ToddLLM 001 holds the center and opens his Domain Expansion, Endless Chaos: everything gets trapped, looped, and crushed inward. But Luigi Green opens his own domain, Throws Board, and hurls the whole battlefield straight into that chaos. He is not just surviving 001\'s domain, he is feeding the board into it on his own terms. So 001 attacks from the center, but Luigi Green is the real final boss: the smarter one, the one who controls the wider board and decides how the chaos gets used. The strongest attack does not win — Luigi Green always finds the winning board state.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE DOMAIN CLASH · ENDLESS CHAOS ↔ THROWS BOARD', col:'#ff5cf0' });
       for(let i=0;i<28;i++) particles.push(spark(player.x, player.y, pick(['#ff5cf0','#b86bff','#3ee06a','#ff3b3b','#ffd84f']))); }
+    if(ph===10){ AUDIO.shock(); shake=Math.max(shake,16); glitch=Math.max(glitch,0.35); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And on the hero side, the answer to all of this is Mindy Starchild. She looks soft and friendly, cosmic, a bear hat and lucky charms, but she is the most legendary hero in the game. Her Invincibility Cube brings her power to infinity, a single touch vaporizes anything. ToddLLM 001 is immortal on the center but one-shottable off it, and she is the rare being who can knock him off the center and finish him with a single star. Her Domain Expansion, Void Expansion: Justice, levitates her, gives her the galactic aura, merges a thousand invincibility cubes into one ball, copies them into homing orbs, then funnels a beam that destroys whatever it touches. It ranks second of the three top domains: Luigi Green first, Mindy second, 001 third. But she has a condition too: her power is tied to light, and when 001 darkened the arena her star-source faded and he beat her there. She is neutral, not pacifist, not genocide, and she protects her kingdom, Star Steed.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE NEUTRAL CHAMPION · VOID EXPANSION: JUSTICE · DOMAIN RANKS SECOND', col:'#ffd98a' });
+      for(let i=0;i<24;i++) particles.push(spark(player.x, player.y, pick(['#ffd98a','#fff4dc','#b89bff','#7fd4ff','#ffe85a']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11504,6 +11511,57 @@ function drawLuigiGreen(cx, cy, s, c, a, cat){
   ctx.beginPath(); ctx.arc(cx-s*0.18, cy-s*0.3, s*0.1, 0, Math.PI*2); ctx.arc(cx+s*0.18, cy-s*0.3, s*0.1, 0, Math.PI*2); ctx.fill();
   ctx.restore(); ctx.globalAlpha=1; ctx.shadowBlur=0; ctx.textAlign='left';
 }
+// a four-point sparkle/star used for Mindy Starchild's lucky charms, emblem, and star eyes
+function mSpark(x,y,r,col){
+  ctx.fillStyle=col; ctx.beginPath();
+  ctx.moveTo(x, y-r); ctx.lineTo(x+r*0.28, y-r*0.28); ctx.lineTo(x+r, y);
+  ctx.lineTo(x+r*0.28, y+r*0.28); ctx.lineTo(x, y+r); ctx.lineTo(x-r*0.28, y+r*0.28);
+  ctx.lineTo(x-r, y); ctx.lineTo(x-r*0.28, y-r*0.28); ctx.closePath(); ctx.fill();
+}
+// Mindy Starchild — the neutral champion: a soft cosmic hero, bear hat, galactic aura, star eyes,
+// orbiting lucky-charm stars, and the Invincibility Cube floating at her side.
+function drawMindyStarchild(cx, cy, s, c, a){
+  ctx.save(); ctx.textAlign='center';
+  // galactic aura
+  const aur = ctx.createRadialGradient(cx, cy, s*0.2, cx, cy, s*2.4);
+  aur.addColorStop(0, `rgba(255,240,180,${0.26*a})`);
+  aur.addColorStop(0.5, `rgba(180,150,255,${0.14*a})`);
+  aur.addColorStop(1, 'rgba(120,90,200,0)');
+  ctx.fillStyle=aur; ctx.beginPath(); ctx.arc(cx, cy, s*2.4, 0, Math.PI*2); ctx.fill();
+  // orbiting lucky-charm stars
+  for(let i=0;i<6;i++){
+    const ang = c*1.1 + i*(Math.PI*2/6);
+    mSpark(cx+Math.cos(ang)*s*1.7, cy+Math.sin(ang)*s*1.05, s*0.16, `rgba(255,242,190,${(0.55+0.45*Math.sin(c*3+i))*a})`);
+  }
+  // gown
+  ctx.fillStyle=`rgba(120,150,235,${0.95*a})`;
+  ctx.beginPath(); ctx.moveTo(cx, cy-s*0.15); ctx.lineTo(cx-s*0.72, cy+s*1.15); ctx.lineTo(cx+s*0.72, cy+s*1.15); ctx.closePath(); ctx.fill();
+  // star emblem on the gown
+  mSpark(cx, cy+s*0.45, s*0.30, `rgba(255,242,190,${a})`);
+  // the Invincibility Cube floating at her side
+  const ix2 = cx+s*0.95, iy2 = cy-s*0.05, cs = s*0.26;
+  ctx.save(); ctx.globalAlpha=a; ctx.shadowColor='#fff4dc'; ctx.shadowBlur=12*a;
+  ctx.fillStyle='rgba(255,248,220,0.9)'; ctx.fillRect(ix2-cs, iy2-cs, cs*2, cs*2);
+  ctx.strokeStyle='rgba(180,140,255,0.95)'; ctx.lineWidth=1.4; ctx.strokeRect(ix2-cs, iy2-cs, cs*2, cs*2);
+  ctx.beginPath(); ctx.moveTo(ix2-cs, iy2-cs); ctx.lineTo(ix2-cs*0.5, iy2-cs*1.7); ctx.lineTo(ix2+cs*1.5, iy2-cs*1.7); ctx.lineTo(ix2+cs, iy2-cs); ctx.closePath();
+  ctx.fillStyle='rgba(220,200,255,0.85)'; ctx.fill(); ctx.stroke();
+  ctx.restore();
+  // head
+  ctx.fillStyle=`rgba(255,226,196,${a})`;
+  ctx.beginPath(); ctx.arc(cx, cy-s*0.5, s*0.42, 0, Math.PI*2); ctx.fill();
+  // bear-hat ears
+  ctx.fillStyle=`rgba(152,112,212,${a})`;
+  ctx.beginPath(); ctx.arc(cx-s*0.34, cy-s*0.9, s*0.20, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(cx+s*0.34, cy-s*0.9, s*0.20, 0, Math.PI*2); ctx.fill();
+  // hat band
+  ctx.fillStyle=`rgba(152,112,212,${a})`;
+  ctx.beginPath(); ctx.ellipse(cx, cy-s*0.78, s*0.46, s*0.24, 0, Math.PI, 0); ctx.fill();
+  ctx.fillRect(cx-s*0.46, cy-s*0.82, s*0.92, s*0.12);
+  // star eyes
+  mSpark(cx-s*0.15, cy-s*0.5, s*0.10, `rgba(150,110,235,${a})`);
+  mSpark(cx+s*0.15, cy-s*0.5, s*0.10, `rgba(150,110,235,${a})`);
+  ctx.restore(); ctx.globalAlpha=1; ctx.shadowBlur=0; ctx.textAlign='left';
+}
 function drawLoopVs(){
   const g = loopVs.glow||0, top = cameraY;
   const c = loopVs.cyc||0, seg = lvSeg(c), ph = seg[0];
@@ -11512,17 +11570,20 @@ function drawLoopVs(){
   // background — deep green void that shifts to violet on the UNDEFINED beat
   const bg = ctx.createLinearGradient(0, top, 0, top+H);
   if(ph===4){ bg.addColorStop(0, `rgba(14,8,24,${0.92*g})`); bg.addColorStop(1, `rgba(6,4,12,${0.95*g})`); }
+  else if(ph===10){ bg.addColorStop(0, `rgba(10,8,30,${0.93*g})`); bg.addColorStop(1, `rgba(4,4,16,${0.96*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff');
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle=`rgba(62,224,106,${0.96*g})`; ctx.font='800 13px ui-monospace,monospace';
-  ctx.fillText('THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS', cx, top+26);
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : `rgba(62,224,106,${0.96*g})`;
+  ctx.font='800 13px ui-monospace,monospace';
+  ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS', cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -11946,6 +12007,83 @@ function drawLoopVs(){
     ctx.fillText('001 = CENTER ATTACKER · ENDLESS CHAOS   ↔   LUIGI GREEN = THE BOARD · THROWS BOARD', cx, top+H*0.15+14);
     ctx.fillStyle=`rgba(150,255,180,${0.85*g})`; ctx.font='italic 800 8px ui-monospace,monospace';
     ctx.fillText('LUIGI GREEN IS THE REAL FINAL BOSS — THE SMARTER ONE WHO FINDS THE WINNING BOARD STATE', cx, top+H*0.15+27);
+  } else if(ph===10){
+    // ----- BEAT 10: THE NEUTRAL CHAMPION — Mindy Starchild, the hero-side answer to the whole top
+    // (Toby, June 29 "(just talk)" follow-up, "Re: More stuff on ToddLLM 001"). The most legendary hero:
+    // her Invincibility Cube brings her power to infinity, she can knock ToddLLM 001 off the center and
+    // 1-HKO him with a single star. Her Domain Expansion, VOID EXPANSION: JUSTICE — levitation, galactic
+    // aura, 1000 invincibility cubes merged into one ball, copied into homing orbs, then a funnel beam —
+    // ranks SECOND of the three top domains (Luigi Green first, Mindy second, 001 third). Her power is
+    // tied to LIGHT: in a darkened arena her star-source faded and 001 beat her. She is neutral — not
+    // pacifist, not genocide — and protects her kingdom, Star Steed. -----
+    // drifting starfield
+    for(let i=0;i<34;i++){
+      const sx = ((i*53 + c*16) % W), sy = top + ((i*97 + c*7) % H);
+      ctx.globalAlpha = g*(0.18+0.30*Math.abs(Math.sin(c*2+i))); ctx.fillStyle = '#fff4dc';
+      ctx.fillRect(sx, sy, 1.6, 1.6);
+    }
+    ctx.globalAlpha=1;
+    // Mindy Starchild at center-left
+    const mx2 = W*0.30, my2 = top + H*0.54;
+    drawMindyStarchild(mx2, my2, 24, c, g);
+    ctx.fillStyle=`rgba(255,217,138,${0.95*g})`; ctx.font='800 10px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('MINDY STARCHILD', mx2, my2+58);
+    ctx.fillStyle=`rgba(235,225,255,${0.8*g})`; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('NEUTRAL CHAMPION · KINGDOM: STAR STEED', mx2, my2+68);
+
+    // VOID EXPANSION: JUSTICE — merged-cube ball, homing orbit copies, and a funnel beam
+    const jx = W*0.66, jy = top + H*0.50;
+    // funnel beam to the right
+    const beamP = (Math.sin(c*2)*0.5+0.5);
+    ctx.globalAlpha = g*(0.35+0.45*beamP);
+    const bm = ctx.createLinearGradient(jx, jy, W, jy);
+    bm.addColorStop(0, 'rgba(255,240,180,0.9)'); bm.addColorStop(1, 'rgba(255,240,180,0)');
+    ctx.fillStyle=bm;
+    ctx.beginPath(); ctx.moveTo(jx, jy-6); ctx.lineTo(W, jy-24); ctx.lineTo(W, jy+24); ctx.lineTo(jx, jy+6); ctx.closePath(); ctx.fill();
+    ctx.globalAlpha=1;
+    // the big merged ball (1000 cubes)
+    const ball = ctx.createRadialGradient(jx-4, jy-4, 4, jx, jy, 30);
+    ball.addColorStop(0, `rgba(255,248,210,${g})`); ball.addColorStop(0.6, `rgba(200,170,255,${0.9*g})`); ball.addColorStop(1, `rgba(120,90,200,${0.15*g})`);
+    ctx.fillStyle=ball; ctx.beginPath(); ctx.arc(jx, jy, 28, 0, Math.PI*2); ctx.fill();
+    // small cube facets on the ball
+    for(let i=0;i<10;i++){ const a2=i*0.63+c, rr=18;
+      ctx.globalAlpha=g*0.55; ctx.strokeStyle='rgba(255,255,255,0.6)'; ctx.lineWidth=1;
+      ctx.strokeRect(jx+Math.cos(a2)*rr-2, jy+Math.sin(a2)*rr-2, 4, 4); }
+    ctx.globalAlpha=1;
+    // homing orbit copies
+    for(let i=0;i<8;i++){
+      const a2 = c*1.6 + i*(Math.PI*2/8), rr=46;
+      const ox = jx+Math.cos(a2)*rr, oy = jy+Math.sin(a2)*rr*0.8;
+      ctx.fillStyle=`rgba(255,240,180,${(0.55+0.45*Math.sin(c*4+i))*g})`;
+      ctx.beginPath(); ctx.arc(ox, oy, 4, 0, Math.PI*2); ctx.fill();
+    }
+    ctx.fillStyle=`rgba(255,217,138,${(0.85+0.15*Math.sin(c*4))*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.shadowColor='#ffd98a'; ctx.shadowBlur=8*g;
+    ctx.fillText('VOID EXPANSION: JUSTICE', jx, jy+46); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(235,225,255,${0.72*g})`; ctx.font='italic 700 6px ui-monospace,monospace';
+    ctx.fillText('1000 CUBES → ONE BALL · HOMING COPIES · NO ESCAPE · FUNNEL BEAM', jx, jy+56);
+
+    // DOMAIN HIERARCHY panel (right, above the Justice ball): Luigi 1, Mindy 2, 001 3
+    const hx = W*0.74, hy0 = top+H*0.30, rh=15;
+    ctx.textAlign='left';
+    ctx.fillStyle=`rgba(235,225,255,${0.85*g})`; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('DOMAIN HIERARCHY', hx, hy0-6);
+    const rows=[['1','LUIGI GREEN · THROWS BOARD','#3ee06a'],['2','MINDY STARCHILD · JUSTICE','#ffd98a'],['3','ToddLLM 001 · ENDLESS CHAOS','#ff5a6e']];
+    for(let i=0;i<rows.length;i++){
+      const ry=hy0+i*rh, hl=(i===1);
+      ctx.globalAlpha=g*(hl?1:0.8); ctx.fillStyle=rows[i][2];
+      ctx.font=(hl?'800':'700')+' 8px ui-monospace,monospace';
+      ctx.fillText((hl?'◆ ':'  ')+rows[i][0]+' · '+rows[i][1], hx, ry);
+    }
+    ctx.globalAlpha=1; ctx.textAlign='center';
+
+    // top framing
+    ctx.fillStyle=`rgba(255,217,138,${0.96*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('THE NEUTRAL CHAMPION — THE HERO WHO CAN MOVE 001 OFF CENTER', cx, top+H*0.15);
+    ctx.fillStyle=`rgba(220,210,240,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('INVINCIBILITY CUBE → POWER TO INFINITY · KNOCKS 001 OFF-CENTER · 1-HKOs HIM WITH ONE STAR', cx, top+H*0.15+14);
+    ctx.fillStyle=`rgba(170,200,255,${0.85*g})`; ctx.font='italic 800 8px ui-monospace,monospace';
+    ctx.fillText('TIED TO LIGHT — IN THE DARK ARENA, 001 BEAT HER · NEUTRAL: NOT PACIFIST, NOT GENOCIDE', cx, top+H*0.87);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

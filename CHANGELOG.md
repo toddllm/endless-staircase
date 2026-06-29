@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-29 — THE NEUTRAL CHAMPION: Mindy Starchild and Void Expansion: Justice (Lore 39g, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 29 "(just talk)" follow-up. Mindy Starchild was already in the game's lore as a name (Mervin gave his
+life to Simon so she would live; she's on the Status Codex "alive" list and rules the kingdom Star Steed). This email
+promotes her into a fully-realized legendary hero. In Toby's own words: *"she's the most legendary and most powerful hero
+in the game, she uses her Invincibility Cube and it brings her power to infinity ... Mindy Starchild can send ToddLLM 001
+off the center of the board and will 1 HKO him with just 1 star ... Luigi Green's Domain Expansion is most powerful, Mindy
+Starchild's is second, ToddLLM's is third ... Mindy Starchild's Domain Expansion is Void Expansion: Justice."* Added as an
+eleventh beat, THE NEUTRAL CHAMPION, on the end of the UNDEFINED LOOP cutscene, after THE DOMAIN CLASH. (The email also
+pasted a long ChatGPT analysis; per the bot's rules that pasted text is treated as commentary, not canon — only Toby's own
+assertions were built.) Additive — nothing removed.
+
+![Lore 39g — THE NEUTRAL CHAMPION, the eleventh beat of the UNDEFINED LOOP. Title across the top: "THE NEUTRAL CHAMPION —
+MINDY STARCHILD & VOID EXPANSION: JUSTICE", then "THE NEUTRAL CHAMPION — THE HERO WHO CAN MOVE 001 OFF CENTER" and
+"INVINCIBILITY CUBE → POWER TO INFINITY · KNOCKS 001 OFF-CENTER · 1-HKOs HIM WITH ONE STAR." At center-left stands Mindy
+Starchild, a soft cosmic hero in a blue gown with a purple bear hat, a galactic aura, star eyes, a star emblem, orbiting
+lucky-charm stars, and the Invincibility Cube floating at her side; labelled "MINDY STARCHILD · NEUTRAL CHAMPION · KINGDOM:
+STAR STEED." At right, her Domain Expansion VOID EXPANSION: JUSTICE: a glowing merged ball of a thousand cubes ringed by
+eight homing orb-copies, firing a funnel beam to the right, captioned "1000 CUBES → ONE BALL · HOMING COPIES · NO ESCAPE ·
+FUNNEL BEAM." Above the ball, a DOMAIN HIERARCHY panel ranks the three top domains: 1 LUIGI GREEN · THROWS BOARD, 2 MINDY
+STARCHILD · JUSTICE (highlighted), 3 ToddLLM 001 · ENDLESS CHAOS. Along the bottom: "TIED TO LIGHT — IN THE DARK ARENA, 001
+BEAT HER · NEUTRAL: NOT PACIFIST, NOT GENOCIDE." The eleven-beat ladder runs down the left edge, fully lit, with THE
+NEUTRAL CHAMPION at the bottom.](screenshots/73-neutral-champion.png)
+
+- **New eleventh beat, THE NEUTRAL CHAMPION.** The UNDEFINED LOOP cutscene now runs eleven beats; after THE DOMAIN CLASH it
+  turns to the hero side and introduces Mindy Starchild.
+- **Mindy Starchild, the hero-side answer.** The most legendary hero: her Invincibility Cube takes her power to infinity,
+  and she is the rare being who can knock ToddLLM 001 off the center (where he is immortal) and 1-HKO him with a single
+  star. She looks soft and friendly but is not harmless.
+- **DOMAIN EXPANSION: VOID EXPANSION: JUSTICE.** Levitation, galactic aura, a thousand invincibility cubes merged into one
+  ball, copied into homing orbs, then a funnel beam that destroys what it touches. It ranks **second** of the three top
+  domains — Luigi Green first, Mindy second, 001 third — drawn as an on-screen hierarchy panel.
+- **Tied to light, and neutral.** Her power is bound to light; when 001 darkened the arena her star-source faded and he
+  beat her there. She is neutral — not pacifist, not genocide — and protects her kingdom, Star Steed.
+
+
 ## 2026-06-29 — THE DOMAIN CLASH: Endless Chaos vs Throws Board, and why Luigi Green wins (Lore 39f, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 29 follow-up. In his own words: *"ToddLLM 001 can use his Domain Expansion: Endless Chaos, and Luigi
