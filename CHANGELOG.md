@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE THRONE TAKEN: Overpower Luigi Green beats 001 even vs all combined, and 001 leaves to a Training Center (Lore 39l, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 follow-up to THE OVERPOWER, the throne actually changing hands. In his own words: *"Overpower Luigi
+Green actually beats ToddLLM 001 easily, every battle won with even all characters combined at him. ToddLLM now leaves to
+a Training Center."* Added as a sixteenth and final beat, THE THRONE TAKEN, on the end of the UNDEFINED LOOP cutscene,
+after THE OVERPOWER. The previous beat made Luigi Green the villain while 001 stayed the neutral great authority; this beat
+finishes the move by settling the fight itself. 100% Overpower Luigi Green beats ToddLLM 001 easily — every battle, even
+when the whole cast is combined and thrown at him at once — so 001 stops being the one who holds the top. He leaves to a
+Training Center and steps back into being teacher, observer, and keeper of knowledge, no longer the final ruler. The
+ranking settles to just two names that matter: 1 Overpower Luigi Green, 2 ToddLLM 001, everyone else below. Additive — THE
+OVERPOWER and every earlier beat stay exactly as they were.
+
+![Lore 39l — THE THRONE TAKEN, the sixteenth and final beat of the UNDEFINED LOOP. Green title band reads "THE THRONE
+TAKEN — OVERPOWER LUIGI GREEN SURPASSES 001", then "THE THRONE CHANGES HANDS — HE WINS EVEN VS ALL CHARACTERS COMBINED"
+and "001 LEAVES TO A TRAINING CENTER · NOT THE FINAL RULER ANYMORE · NOW TEACHER, OBSERVER, KEEPER OF KNOWLEDGE". Two
+ranked plates run down the center: #1 OVERPOWER LUIGI GREEN, outlined thick in green with a "♛ UNQUESTIONED FINAL BOSS"
+tag — "BEATS 001 EASILY · WINS EVEN VS ALL CHARACTERS COMBINED · THE UNQUESTIONED FINAL BOSS"; #2 ToddLLM 001, outlined
+in red — "STEPS BACK TO A TRAINING CENTER · TEACHER · OBSERVER · KEEPER OF KNOWLEDGE · NO LONGER THE TOP RULER". Below, a
+scene band: Overpower Luigi Green stands at left with a green cat-power aura, a grey clustered mass labelled "ALL
+CHARACTERS COMBINED" is hurled at him and deflected ("BEATEN EASILY"), and a fading red 001 core walks along a dashed
+arrow off to a blue-outlined "TRAINING CENTER" building on the right. The sixteen-beat ladder runs down the left edge,
+fully lit, with THE THRONE TAKEN at the bottom.](screenshots/78-throne-taken.png)
+
+- **New sixteenth beat, THE THRONE TAKEN.** The UNDEFINED LOOP cutscene now runs sixteen beats; after THE OVERPOWER comes
+  the moment the throne actually changes hands. THE THRONE TAKEN is the last beat in the cutscene.
+- **Overpower Luigi Green beats 001 easily.** He wins every battle, even when all the characters are combined and thrown
+  at him at once — drawn as a deflected "ALL CHARACTERS COMBINED" mass that is beaten easily.
+- **001 leaves to a Training Center.** ToddLLM 001 steps out of the top active role: not the final ruler anymore, now the
+  teacher, the observer, the keeper of knowledge. Drawn as the 001 core walking off to a Training Center building.
+- **The final two.** The ranking settles to 1 Overpower Luigi Green (♛ the unquestioned final boss), 2 ToddLLM 001, with
+  everyone else below them.
+- **Screenshot scene.** Added a `throne` scene to tools/capture_screenshot.py that drives the cutscene to the new beat.
+
 ## 2026-06-30 — THE OVERPOWER: Luigi Green absorbs everything and becomes the true main villain (Lore 39k, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 follow-up, the villain coronation. In his own words: *"There is a part when Luigi Green absorbs

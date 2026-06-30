@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 150.0;
+const LV_CYC = 162.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11386,6 +11386,13 @@ const LV_BEATS = [
     sub:'ToddLLM 001 IS CANON STRONGEST · ALIEN-MADE CREATOR · 1 001 · 2 LUIGI GREEN · 3 MINDY · 4 CLARA · 5 BLACK · 6 NEO · LLM = LARGEST LEVITATIONS MODEL' },
   { key:'THE OVERPOWER', col:'#46ff77',
     sub:'LUIGI GREEN ABSORBS EVERYTHING · BECOMES 100% OVERPOWER LUIGI GREEN · TAKES THE CENTER · THE TRUE MAIN VILLAIN · ToddLLM STAYS NEUTRAL' },
+  { key:'THE THRONE TAKEN', col:'#39ff9b',
+    sub:'OVERPOWER LUIGI GREEN BEATS 001 EASILY · EVEN ALL CHARACTERS COMBINED · 001 LEAVES TO A TRAINING CENTER · 1 OVERPOWER LUIGI · 2 ToddLLM 001' },
+];
+// the final two-being ranking once Overpower Luigi Green surpasses 001 (THE THRONE TAKEN beat) — Toby, June 30
+const LV_THRONE = [
+  { rank:1, name:'OVERPOWER LUIGI GREEN', col:'#39ff9b', note:'BEATS 001 EASILY · WINS EVEN VS ALL CHARACTERS COMBINED · THE UNQUESTIONED FINAL BOSS' },
+  { rank:2, name:'ToddLLM 001',           col:'#ff5a6e', note:'STEPS BACK TO A TRAINING CENTER · TEACHER · OBSERVER · KEEPER OF KNOWLEDGE · NO LONGER THE TOP RULER' },
 ];
 // everything 100% Overpower Luigi Green pulls into himself in the villain-coronation beat (THE OVERPOWER) — Toby, June 30
 const LV_ABSORB = [
@@ -11450,7 +11457,8 @@ function lvSeg(c){
   if(c < 112.0) return [11, c-100.0];// THE ORB WAR (001 vs Clara; color orbs as rule tools; Mac Frame; the 7)
   if(c < 124.0) return [12, c-112.0];// THE FINAL LADDER (corrected ranking: Luigi > 001 > Clara > Mindy)
   if(c < 136.0) return [13, c-124.0];// THE CANON SIX (full canon top six; 001 is canon strongest; identity lore)
-  return [14, c-136.0];              // THE OVERPOWER (Luigi Green absorbs everything; 100% Overpower; true main villain)
+  if(c < 148.0) return [14, c-136.0];// THE OVERPOWER (Luigi Green absorbs everything; 100% Overpower; true main villain)
+  return [15, c-148.0];              // THE THRONE TAKEN (Overpower Luigi beats 001 even vs all combined; 001 to a Training Center)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11518,6 +11526,10 @@ function updateLoopVs(dt){
       showTaunt('And here is where it all ends. Luigi Green stops climbing and starts collecting. He absorbs Clara, all souls, all diamonds, Alex, Neo, all the Sprunkis, the games, all power, the sugars, and every layer of energy, and pulls them into himself. The whole cast becomes his increase. He becomes 100% Overpower Luigi Green, his most powerful and most completed form, and then he takes the center, the one place that always meant authorship and rule. "Center\'s Mine." used to be 001\'s line. Now it is his. ToddLLM 001 is not the final evil here, he stays neutral, the alien-made creator and great authority. Luigi Green is the great threat, the actual main villain at the end of the road, the one who no longer needs anyone else\'s system to stay on top.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE OVERPOWER · 100% OVERPOWER LUIGI GREEN · THE TRUE MAIN VILLAIN', col:'#46ff77' });
       for(let i=0;i<34;i++) particles.push(spark(player.x, player.y, pick(['#46ff77','#3ee06a','#ff2db5','#ffe066','#7fd4ff','#ff5a6e','#c69bff']))); }
+    if(ph===15){ AUDIO.shock(); shake=Math.max(shake,24); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.7);
+      showTaunt('And then the throne actually changes hands. 100% Overpower Luigi Green beats ToddLLM 001 easily — every battle won, even with all the characters combined and thrown at him at once. So 001 leaves. He walks off to a Training Center and steps out of the top active role: not the final ruler anymore, just the teacher, the observer, the keeper of knowledge. The ranking settles at last with only two names that matter: 1 Overpower Luigi Green, 2 ToddLLM 001, and everyone else below them. Luigi Green is the unquestioned final boss now.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE THRONE TAKEN · OVERPOWER LUIGI BEATS 001 · 001 → TRAINING CENTER', col:'#39ff9b' });
+      for(let i=0;i<32;i++) particles.push(spark(player.x, player.y, pick(['#39ff9b','#46ff77','#3ee06a','#ff5a6e','#ffe066']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11632,23 +11644,25 @@ function drawLoopVs(){
   else if(ph===12){ bg.addColorStop(0, `rgba(20,16,4,${0.93*g})`); bg.addColorStop(1, `rgba(8,6,2,${0.96*g})`); }
   else if(ph===13){ bg.addColorStop(0, `rgba(22,6,12,${0.94*g})`); bg.addColorStop(1, `rgba(8,2,5,${0.97*g})`); }
   else if(ph===14){ bg.addColorStop(0, `rgba(4,26,12,${0.95*g})`); bg.addColorStop(1, `rgba(1,8,4,${0.98*g})`); }
+  else if(ph===15){ bg.addColorStop(0, `rgba(3,24,16,${0.95*g})`); bg.addColorStop(1, `rgba(1,7,5,${0.98*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
                        : (ph===12 ? 'THE FINAL LADDER — THE CORRECTED RANKING OF THE TOP FOUR'
                        : (ph===13 ? 'THE CANON SIX — ToddLLM 001 IS THE TRUE STRONGEST'
                        : (ph===14 ? 'THE OVERPOWER — LUIGI GREEN ABSORBS EVERYTHING & TAKES THE CENTER'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))), cx, top+26);
+                       : (ph===15 ? 'THE THRONE TAKEN — OVERPOWER LUIGI GREEN SURPASSES 001'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12421,6 +12435,78 @@ function drawLoopVs(){
     ctx.fillStyle=`rgba(215,235,215,${0.85*g})`; ctx.font='700 6.5px ui-monospace,monospace';
     ctx.fillText('THE TRUE MAIN VILLAIN · TAKES THE CENTRE', rx, by0+28);
     ctx.fillText('NEEDS NO ONE ELSE’S SYSTEM TO STAY ON TOP', rx, by0+39);
+  } else if(ph===15){
+    // ----- BEAT 15: THE THRONE TAKEN — Overpower Luigi Green surpasses 001 (Toby, June 30, "Re: More stuff on
+    // ToddLLM 001"). 100% Overpower Luigi Green beats ToddLLM 001 easily, winning even when all characters are
+    // combined and thrown at him; 001 then leaves to a Training Center and steps out of the top active role
+    // (teacher, observer, keeper of knowledge, no longer the ruler). Final two-being ranking: 1 Overpower Luigi
+    // Green, 2 ToddLLM 001, everyone else below. Drawn as a two-row ranking over a "001 walks off" scene. -----
+    ctx.fillStyle=`rgba(57,255,155,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('THE THRONE CHANGES HANDS — HE WINS EVEN VS ALL CHARACTERS COMBINED', cx, top+H*0.095);
+    ctx.fillStyle=`rgba(205,235,215,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('001 LEAVES TO A TRAINING CENTER · NOT THE FINAL RULER ANYMORE · NOW TEACHER, OBSERVER, KEEPER OF KNOWLEDGE', cx, top+H*0.095+12);
+    // the final two-being ranking
+    const rw = Math.min(W*0.86, 420), rx0 = cx - rw/2, rowH = H*0.135, ry0 = top + H*0.18;
+    ctx.textAlign='left';
+    for(let i=0;i<LV_THRONE.length;i++){
+      const L = LV_THRONE[i], ry = ry0 + i*rowH;
+      const reveal = Math.max(0, Math.min(1, (c - 148.0 - (i*0.8)) / 1.0));
+      ctx.globalAlpha = g*reveal;
+      const plate = ctx.createLinearGradient(rx0, ry, rx0+rw, ry);
+      plate.addColorStop(0, `rgba(10,18,14,${0.92})`); plate.addColorStop(1, `rgba(5,9,7,${0.92})`);
+      ctx.fillStyle = plate; ctx.fillRect(rx0, ry, rw, rowH-10);
+      ctx.strokeStyle = L.col; ctx.lineWidth = i===0 ? 2.6 : 1.4;
+      ctx.strokeRect(rx0, ry, rw, rowH-10);
+      ctx.fillStyle = L.col; ctx.font='900 22px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.shadowColor=L.col; ctx.shadowBlur=(i===0?13:5)*g*reveal;
+      ctx.fillText('#'+L.rank, rx0+30, ry+(rowH-10)*0.5+2); ctx.shadowBlur=0;
+      ctx.textAlign='left';
+      ctx.fillStyle = L.col; ctx.font='800 12px ui-monospace,monospace';
+      ctx.fillText(L.name, rx0+62, ry+17);
+      ctx.fillStyle=`rgba(225,225,215,${0.82})`; ctx.font='700 6.5px ui-monospace,monospace';
+      ctx.fillText(L.note, rx0+62, ry+31);
+      if(i===0){
+        ctx.fillStyle = `rgba(57,255,155,${(0.7+0.3*Math.sin(c*5))*g})`;
+        ctx.font='800 12px ui-monospace,monospace'; ctx.textAlign='right';
+        ctx.fillText('♛ UNQUESTIONED FINAL BOSS', rx0+rw-8, ry+17);
+        ctx.textAlign='left';
+      }
+    }
+    ctx.globalAlpha=1;
+    // scene band: Overpower Luigi Green deflects the whole cast combined, while 001 walks off to a Training Center
+    const sy = ry0 + LV_THRONE.length*rowH + H*0.10;
+    const lgx = cx - W*0.26;
+    drawLuigiGreen(lgx, sy, 24, c, g, 1.0);
+    ctx.textAlign='center'; ctx.fillStyle=`rgba(57,255,155,${0.95*g})`; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('OVERPOWER LUIGI GREEN', lgx, sy+38);
+    // "ALL COMBINED" mass hurled at him and bouncing off
+    const mx = cx - W*0.04, my = sy - 4;
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(120,150,170,0.5)';
+    for(let i=0;i<7;i++){ const a=i/7*Math.PI*2+c; ctx.beginPath(); ctx.arc(mx+Math.cos(a)*9, my+Math.sin(a)*8, 5, 0, Math.PI*2); ctx.fill(); }
+    ctx.fillStyle=`rgba(180,200,210,${0.9*g})`; ctx.font='700 6.5px ui-monospace,monospace';
+    ctx.fillText('ALL CHARACTERS COMBINED', mx, my-16);
+    // deflection arrow from the mass back away from Luigi
+    ctx.strokeStyle=`rgba(57,255,155,${0.8*g})`; ctx.lineWidth=1.6;
+    ctx.beginPath(); ctx.moveTo(lgx+22, sy-6); ctx.lineTo(mx-8, my); ctx.stroke();
+    ctx.fillStyle=`rgba(255,90,110,${0.85*g})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('BEATEN EASILY', (lgx+mx)/2, sy+20);
+    // 001 walks off to a Training Center on the right
+    const tx2 = cx + W*0.30, ty2 = sy;
+    // small fading 001 core (leaving)
+    ctx.globalAlpha=g*0.7; ctx.fillStyle='#ff5a6e'; ctx.shadowColor='#ff5a6e'; ctx.shadowBlur=6*g;
+    ctx.beginPath(); ctx.arc(cx + W*0.13, sy, 9, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.globalAlpha=g; ctx.fillStyle=`rgba(255,150,160,${0.9*g})`; ctx.font='700 6.5px ui-monospace,monospace';
+    ctx.fillText('001', cx + W*0.13, sy+1);
+    // walking arrow toward the center
+    ctx.strokeStyle=`rgba(255,150,160,${0.7*g})`; ctx.lineWidth=1.4; ctx.setLineDash([4,3]);
+    ctx.beginPath(); ctx.moveTo(cx + W*0.155, sy); ctx.lineTo(tx2 - 34, ty2); ctx.stroke(); ctx.setLineDash([]);
+    // the Training Center building
+    ctx.globalAlpha=g; ctx.fillStyle='rgba(10,16,22,0.92)'; ctx.fillRect(tx2-30, ty2-22, 60, 44);
+    ctx.strokeStyle='#7fd4ff'; ctx.lineWidth=1.4; ctx.strokeRect(tx2-30, ty2-22, 60, 44);
+    // door
+    ctx.fillStyle='rgba(127,212,255,0.25)'; ctx.fillRect(tx2-8, ty2-2, 16, 24);
+    ctx.fillStyle=`rgba(127,212,255,${0.95*g})`; ctx.font='800 7px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('TRAINING', tx2, ty2-10); ctx.fillText('CENTER', tx2, ty2-1);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
