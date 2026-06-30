@@ -4,6 +4,18 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — Name correction: her name is just CLASSICS ("HERSELF" is emphasis) (Lore 39p, "Re: More stuff on ToddLLM 001")
+
+A same-day follow-up from Toby: *"Her name isn't actually 'Classics HERSELF', it's just 'Classics'. I say 'HERSELF' a lot
+so it feels like a special character."* So the canonical name is **Classics**; "HERSELF" is the emphasis Toby adds to make her
+feel like a special revealed being, not part of the name. Corrected the beat added earlier today to match.
+
+- Beat 18 renamed from "CLASSICS HERSELF" to "CLASSICS" across the lore ladder, title band, floater, and the figure's main label.
+- New subtitle and figure caption note that "HERSELF" is just emphasis, and the taunt narration now says it outright ("Her name is just Classics; 'HERSELF' is only emphasis...").
+- Everything else about the beat is unchanged — she is still the game as a being, the container above even 001.
+
+![Lore 39p — the CLASSICS name correction. The beat now reads "CLASSICS — THE GAME AS A BEING, THE TOP LAYER ABOVE EVEN 001" in the title band, with the subtitle "NOT ANOTHER CHARACTER · THE CONTAINER OF THE SYSTEM · "HERSELF" IS JUST EMPHASIS". The central glitching anime-girl figure is now labeled "CLASSICS", under the caption ""CLASSICS HERSELF" IS EMPHASIS · SHE IS THE BOARD, THE CODE, THE CORRUPTION". The doll grid (ToddLLM 001, LUIGI GREEN, CLARA, MINDY, SIMON, OREN), the "CONTAINED LIKE DOLLS · EVEN ToddLLM 001 EXISTS INSIDE HER" caption, the VILLAIN/NEUTRAL split, and the "ABOVE EVEN ToddLLM 001 · THE TRUE TOP OF THE CANON" banner are all unchanged. The left-edge lore ladder now ends on a lit "◆ CLASSICS".](screenshots/82-classics-name.png)
+
 ## 2026-06-30 — CLASSICS HERSELF: the game as a being, the top layer above even 001 (Lore 39o, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 lore, the beat that puts a ceiling above the entire ranking. In his words: *"The only thing that is

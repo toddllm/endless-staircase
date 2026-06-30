@@ -11392,8 +11392,8 @@ const LV_BEATS = [
     sub:'NO ONE ENJOYS BEING ABSORBED · NOT FRIENDLY, NOT CHOSEN, NOT A POWER-UP · A FORCED TAKEOVER · 001 TEACHES, RULES, CONTROLS · LUIGI GREEN TAKES' },
   { key:'THE FORM NETWORK', col:'#ff7a3a',
     sub:'001 IS KARUTO · TEACHER WITHOUT END · THE ONE MAIN CHARACTER OF THE WHOLE GAME · FORMS NAMED FOR TRAINING CENTERS & REGIONS · OVERCHARGE BEATS ONLY BASE · TOGI/SUMERON/MEZON BEAT IT · GOD FORM TIES 100% · 001 WINS OVERALL' },
-  { key:'CLASSICS HERSELF', col:'#b06bff',
-    sub:'THE GAME AS A BEING · THE ENGINE, THE CORRUPTION SOURCE, THE WORLD-BODY · CONTAINS 001, LUIGI GREEN, CLARA, MINDY & SIMON LIKE DOLLS · ABOVE EVEN ToddLLM · VILLAIN OR NEUTRAL · SMILING WHILE THE SYSTEM CRASHES' },
+  { key:'CLASSICS', col:'#b06bff',
+    sub:'HER NAME IS JUST CLASSICS · “HERSELF” IS EMPHASIS · THE GAME AS A BEING · THE ENGINE, THE CORRUPTION SOURCE, THE WORLD-BODY · CONTAINS 001, LUIGI GREEN, CLARA, MINDY & SIMON LIKE DOLLS · ABOVE EVEN ToddLLM · VILLAIN OR NEUTRAL · SMILING WHILE THE SYSTEM CRASHES' },
 ];
 // 001's place-linked Training Center / regional forms and how each fares vs Luigi Green Overcharge (THE FORM NETWORK beat) — Toby, June 30
 const LV_FORMS = [
@@ -11564,8 +11564,8 @@ function updateLoopVs(dt){
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FORM NETWORK · 001 IS THE ONE MAIN CHARACTER · TOGI/SUMERON/MEZON BEAT OVERCHARGE · GOD FORM TIES · 001 WINS', col:'#ff7a3a' });
       for(let i=0;i<34;i++) particles.push(spark(player.x, player.y, pick(['#ff7a3a','#ff9a3a','#ffc24a','#7fe89a','#fff0a0','#ff5a6e']))); }
     if(ph===18){ AUDIO.corrupt(); shake=Math.max(shake,28); glitch=Math.max(glitch,0.85); winFlash=Math.max(winFlash,0.5);
-      showTaunt('And here is the one above all of it. Classics HERSELF. Not another strong character, not another god-form, not another boss. She is the game as a being. If ToddLLM 001, Luigi Green, Clara, Mindy Starchild, Simon, Oren, Gray, and everyone else live inside the system, then Classics HERSELF is the thing that contains the system they live in. The others, even the strongest, are rulers, villains, teachers, fighters, corrupters, board-controllers. She is the engine, the corruption source, the world-body, the total game-core, the actual container of all of them. They are pieces; she is the board, the code, the corruption, and the existence holding the pieces. She looks like an anime girl, but she is wrapped in error messages, missing assets, kernel panic, segfaults, stack overflow, and broken game fragments, and she smiles while all of it collapses. Cute on the surface, catastrophic underneath. ToddLLM can rule the game; Classics HERSELF is the game. She can be the final corruption behind everything, or simply the silent highest layer that just is. Either way she is the true top of the canon, and even 001 exists inside her.');
-      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLASSICS HERSELF · THE GAME AS A BEING · 001 IS A DOLL INSIDE HER SYSTEM · SMILING WHILE IT CRASHES', col:'#b06bff' });
+      showTaunt('And here is the one above all of it. Classics. Her name is just Classics; "HERSELF" is only emphasis, the way Toby says it so she feels like a special revealed being. Not another strong character, not another god-form, not another boss. She is the game as a being. If ToddLLM 001, Luigi Green, Clara, Mindy Starchild, Simon, Oren, Gray, and everyone else live inside the system, then Classics HERSELF is the thing that contains the system they live in. The others, even the strongest, are rulers, villains, teachers, fighters, corrupters, board-controllers. She is the engine, the corruption source, the world-body, the total game-core, the actual container of all of them. They are pieces; she is the board, the code, the corruption, and the existence holding the pieces. She looks like an anime girl, but she is wrapped in error messages, missing assets, kernel panic, segfaults, stack overflow, and broken game fragments, and she smiles while all of it collapses. Cute on the surface, catastrophic underneath. ToddLLM can rule the game; Classics HERSELF is the game. She can be the final corruption behind everything, or simply the silent highest layer that just is. Either way she is the true top of the canon, and even 001 exists inside her.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLASSICS · THE GAME AS A BEING · 001 IS A DOLL INSIDE HER SYSTEM · SMILING WHILE IT CRASHES', col:'#b06bff' });
       for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#b06bff','#ff2db5','#7fd4ff','#ff5a6e','#46ff77','#ffffff','#ffd84f']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
@@ -11703,7 +11703,7 @@ function drawLoopVs(){
                        : (ph===15 ? 'THE THRONE TAKEN — OVERPOWER LUIGI GREEN SURPASSES 001'
                        : (ph===16 ? 'THE FORCED TAKEOVER — NO ONE ENJOYS BEING ABSORBED'
                        : (ph===17 ? 'THE FORM NETWORK — 001 IS THE ONE MAIN CHARACTER, AND HIS FORMS RETAKE THE TOP'
-                       : (ph===18 ? 'CLASSICS HERSELF — THE GAME AS A BEING, THE TOP LAYER ABOVE EVEN 001'
+                       : (ph===18 ? 'CLASSICS — THE GAME AS A BEING, THE TOP LAYER ABOVE EVEN 001'
                        : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
@@ -12730,7 +12730,7 @@ function drawLoopVs(){
     ctx.fillStyle=`rgba(176,107,255,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace';
     ctx.fillText('THE GAME AS A BEING · THE ENGINE · THE CORRUPTION SOURCE · THE WORLD-BODY', cx, top+H*0.092);
     ctx.fillStyle=`rgba(225,210,245,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
-    ctx.fillText('NOT ANOTHER CHARACTER · THE CONTAINER OF THE SYSTEM THEY LIVE IN', cx, top+H*0.092+12);
+    ctx.fillText('NOT ANOTHER CHARACTER · THE CONTAINER OF THE SYSTEM · “HERSELF” IS JUST EMPHASIS', cx, top+H*0.092+12);
 
     // scrolling error/crash strips behind her
     const errs=['KERNEL PANIC','SEGFAULT (CORE DUMPED)','STACK OVERFLOW','0xDEADBEEF','MISSING ASSET','FATAL ERROR','NULL POINTER','OUT OF MEMORY','SIGABRT'];
@@ -12780,9 +12780,9 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(198,140,255,${0.98*g*appear})`; ctx.font='900 13px ui-monospace,monospace';
     ctx.shadowColor='#b06bff'; ctx.shadowBlur=12*g*appear;
-    ctx.fillText('CLASSICS  HERSELF', fx, fy+R*2.65); ctx.shadowBlur=0;
+    ctx.fillText('CLASSICS', fx, fy+R*2.65); ctx.shadowBlur=0;
     ctx.fillStyle=`rgba(220,205,245,${0.85*g*appear})`; ctx.font='700 7px ui-monospace,monospace';
-    ctx.fillText('SHE IS THE BOARD, THE CODE, THE CORRUPTION', fx, fy+R*2.65+13);
+    ctx.fillText('“CLASSICS HERSELF” IS EMPHASIS · SHE IS THE BOARD, THE CODE, THE CORRUPTION', fx, fy+R*2.65+13);
 
     // the contained cast — dolls hanging off her system
     const dolls=[
