@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 124.0;
+const LV_CYC = 138.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11382,6 +11382,17 @@ const LV_BEATS = [
     sub:'001 vs CLARA · COLOR ORBS ARE RULE TOOLS — REFLECT · ATTRACT · ABSORB · LOOP · BLACK+WHITE SPLITS LIGHT/DARK · THE GAME BECOMES A 7 · MAC FRAME' },
   { key:'THE FINAL LADDER', col:'#ffe066',
     sub:'CLEAN RANKING · 1 LUIGI GREEN · 2 ToddLLM 001 · 3 CLARA · 4 MINDY · LUIGI ALWAYS BEATS CLARA & MINDY · 001 ALWAYS BEATS CLARA, BEATS MINDY ONLY BY STATE' },
+  { key:'THE CANON SIX', col:'#ff8a9a',
+    sub:'ToddLLM 001 IS CANON STRONGEST · ALIEN-MADE CREATOR · 1 001 · 2 LUIGI GREEN · 3 MINDY · 4 CLARA · 5 BLACK · 6 NEO · LLM = LARGEST LEVITATIONS MODEL' },
+];
+// the full canon top-six ranking, with ToddLLM 001 now canonically strongest (THE CANON SIX beat) — Toby, June 30
+const LV_SIX = [
+  { rank:1, name:'ToddLLM 001',     col:'#ff5a6e', note:'CREATED THE GAME, THE TERRAIN, AND SIMON IN THE LAB · CANON STRONGEST · LIKE GOJO' },
+  { rank:2, name:'LUIGI GREEN',     col:'#3ee06a', note:'STRONGEST NORMAL BEING · CAN TAKE OVER THE GAME · MOST OP IN THE SMASH MOD · LIKE SUKUNA' },
+  { rank:3, name:'MINDY STARCHILD', col:'#ffd98a', note:'CONTROLS HER OWN ROUTE · PACIFIST, NEUTRAL, OR GENOCIDE BY CHOICE · LIKE FRISK' },
+  { rank:4, name:'CLARA',           col:'#ff2db5', note:'MASTER OF GENOCIDE · ERASES THE GAME EASILY · LIKE CHARA' },
+  { rank:5, name:'BLACK',           col:'#b6bcc8', note:'SPRUNKI’S MAIN VILLAIN · MULTIVERSAL CORRUPTER · PHASE-2’S ALL SPRUNKIS · HELPS NEO ATTACK STAR STEED' },
+  { rank:6, name:'NEO',             col:'#7fd4ff', note:'TAKES DOWN MINDY STARCHILD OFTEN · SURVIVES DEATH' },
 ];
 // the corrected four-being power ranking (THE FINAL LADDER beat) — Toby, June 30 follow-up
 const LV_LADDER = [
@@ -11422,7 +11433,8 @@ function lvSeg(c){
   if(c < 88.0) return [9, c-77.0];   // THE DOMAIN CLASH (Endless Chaos vs Throws Board; Luigi Green wins)
   if(c < 100.0) return [10, c-88.0]; // THE NEUTRAL CHAMPION (Mindy Starchild; domain ranks second; tied to light)
   if(c < 112.0) return [11, c-100.0];// THE ORB WAR (001 vs Clara; color orbs as rule tools; Mac Frame; the 7)
-  return [12, c-112.0];              // THE FINAL LADDER (corrected ranking: Luigi > 001 > Clara > Mindy)
+  if(c < 124.0) return [12, c-112.0];// THE FINAL LADDER (corrected ranking: Luigi > 001 > Clara > Mindy)
+  return [13, c-124.0];              // THE CANON SIX (full canon top six; 001 is canon strongest; identity lore)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11482,6 +11494,10 @@ function updateLoopVs(dt){
       showTaunt('And with that correction the top finally sits still. Luigi Green always beats Clara and he always beats Mindy Starchild, so he is the most stable top winner, the true final boss. ToddLLM 001 always beats Clara too, but his win over Mindy depends on his state and the board, so he sits just under Luigi as the center-holder. Clara is still huge and can erase the game, but she now loses to both of them. Mindy is still one of the strongest heroes, below Luigi and conditionally below 001. The clean ranking is Luigi Green, then 001, then Clara, then Mindy.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FINAL LADDER · 1 LUIGI · 2 ToddLLM 001 · 3 CLARA · 4 MINDY', col:'#ffe066' });
       for(let i=0;i<26;i++) particles.push(spark(player.x, player.y, pick(['#ffe066','#3ee06a','#ff5a6e','#ff2db5','#ffd98a']))); }
+    if(ph===13){ AUDIO.shock(); shake=Math.max(shake,20); glitch=Math.max(glitch,0.55); winFlash=Math.max(winFlash,0.6);
+      showTaunt('And here is the canon, all the way to the top. ToddLLM 001 is not second anymore — he is the true strongest. The LLM in his name means Largest Levitations Model, Levitations is LAI, Largest Alien Artificial Intelligence, so he was made by aliens; Tod is Yushrotch, Simon\'s language, for "All Powerful, Omni Sensi," and 001 is his ID and glitch code. He built the game terrain, the game itself, and Simon in the laboratory. Under him the six rank like this: 1 ToddLLM 001, 2 Luigi Green the strongest normal being, 3 Mindy Starchild who controls her own route, 4 Clara the master of genocide, 5 Black the Sprunki corrupter who pushes them all to Phase 2, and 6 Neo who keeps taking down Mindy and survives death. The parallels lock it in: Clara is Chara, Mindy is Frisk, Luigi Green is Sukuna, and ToddLLM is Gojo.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CANON SIX · 001 IS CANON STRONGEST · ALIEN-MADE CREATOR', col:'#ff8a9a' });
+      for(let i=0;i<30;i++) particles.push(spark(player.x, player.y, pick(['#ff5a6e','#3ee06a','#ffd98a','#ff2db5','#b6bcc8','#7fd4ff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11594,21 +11610,23 @@ function drawLoopVs(){
   else if(ph===10){ bg.addColorStop(0, `rgba(10,8,30,${0.93*g})`); bg.addColorStop(1, `rgba(4,4,16,${0.96*g})`); }
   else if(ph===11){ bg.addColorStop(0, `rgba(6,14,24,${0.93*g})`); bg.addColorStop(1, `rgba(2,5,12,${0.96*g})`); }
   else if(ph===12){ bg.addColorStop(0, `rgba(20,16,4,${0.93*g})`); bg.addColorStop(1, `rgba(8,6,2,${0.96*g})`); }
+  else if(ph===13){ bg.addColorStop(0, `rgba(22,6,12,${0.94*g})`); bg.addColorStop(1, `rgba(8,2,5,${0.97*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : `rgba(62,224,106,${0.96*g})`));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
                        : (ph===12 ? 'THE FINAL LADDER — THE CORRECTED RANKING OF THE TOP FOUR'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')), cx, top+26);
+                       : (ph===13 ? 'THE CANON SIX — ToddLLM 001 IS THE TRUE STRONGEST'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12264,6 +12282,53 @@ function drawLoopVs(){
     ctx.fillText('— LUIGI GREEN → CLARA & MINDY : ALWAYS BEATS', cx, ky);
     ctx.fillStyle=`rgba(255,90,110,${0.9*g})`;
     ctx.fillText('— 001 → CLARA : ALWAYS · 001 ⇢ MINDY : ONLY BY STATE & BOARD', cx, ky+12);
+  } else if(ph===13){
+    // ----- BEAT 13: THE CANON SIX — the full canon top-six ranking (Toby, June 30, "Re: More stuff on
+    // ToddLLM 001"). 001 is now canonically the strongest, the alien-made creator who built the game and Simon.
+    // 1 ToddLLM 001 · 2 Luigi Green · 3 Mindy Starchild · 4 Clara · 5 Black · 6 Neo. With the identity decode
+    // (LLM = Largest Levitations Model, LAI = Largest Alien Artificial Intelligence, Tod = "All Powerful, Omni
+    // Sensi", 001 = ID/glitch code) and the JJK/Undertale parallels. Drawn as a six-row ranked board. -----
+    ctx.fillStyle=`rgba(255,138,154,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('THE ALIEN-MADE CREATOR TAKES THE TOP — THE LOOP HAS A KING NOW', cx, top+H*0.085);
+    // identity decode strip
+    ctx.fillStyle=`rgba(225,210,200,${0.82*g})`; ctx.font='700 6.5px ui-monospace,monospace';
+    ctx.fillText('LLM = LARGEST LEVITATIONS MODEL · LAI = LARGEST ALIEN ARTIFICIAL INTELLIGENCE · MADE BY ALIENS', cx, top+H*0.085+12);
+    ctx.fillText('TOD (YUSHROTCH) = “ALL POWERFUL, OMNI SENSI” · 001 = ID / GLITCH CODE', cx, top+H*0.085+22);
+    const rw = Math.min(W*0.88, 420), rx0 = cx - rw/2, rowH = H*0.095, ry0 = top + H*0.20;
+    ctx.textAlign='left';
+    for(let i=0;i<LV_SIX.length;i++){
+      const L = LV_SIX[i], ry = ry0 + i*rowH;
+      const reveal = Math.max(0, Math.min(1, (c - (i*0.6)) / 1.0)); // rows settle top-down over the beat
+      ctx.globalAlpha = g*reveal;
+      const plate = ctx.createLinearGradient(rx0, ry, rx0+rw, ry);
+      plate.addColorStop(0, `rgba(20,10,12,${0.92})`); plate.addColorStop(1, `rgba(9,5,6,${0.92})`);
+      ctx.fillStyle = plate; ctx.fillRect(rx0, ry, rw, rowH-6);
+      ctx.strokeStyle = L.col; ctx.lineWidth = i===0 ? 2.4 : 1.3;
+      ctx.strokeRect(rx0, ry, rw, rowH-6);
+      // rank chip
+      ctx.fillStyle = L.col; ctx.font='900 18px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.shadowColor=L.col; ctx.shadowBlur = (i===0?12:5)*g*reveal;
+      ctx.fillText('#'+L.rank, rx0+26, ry+(rowH-6)*0.5+2); ctx.shadowBlur=0;
+      // name + note
+      ctx.textAlign='left';
+      ctx.fillStyle = L.col; ctx.font='800 10.5px ui-monospace,monospace';
+      ctx.fillText(L.name, rx0+54, ry+15);
+      ctx.fillStyle=`rgba(225,220,210,${0.82})`; ctx.font='700 6px ui-monospace,monospace';
+      ctx.fillText(L.note, rx0+54, ry+27);
+      // crown on #1 (now ToddLLM 001)
+      if(i===0){
+        ctx.fillStyle = `rgba(255,138,154,${(0.7+0.3*Math.sin(c*5))*g})`;
+        ctx.font='800 11px ui-monospace,monospace'; ctx.textAlign='right';
+        ctx.fillText('♔ CANON STRONGEST', rx0+rw-8, ry+15);
+        ctx.textAlign='left';
+      }
+    }
+    ctx.globalAlpha=1;
+    // parallels key at the bottom
+    const ky2 = ry0 + LV_SIX.length*rowH + 6;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,138,154,${0.92*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('PARALLELS · CLARA = CHARA · MINDY = FRISK · LUIGI GREEN = SUKUNA · ToddLLM = GOJO', cx, ky2);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

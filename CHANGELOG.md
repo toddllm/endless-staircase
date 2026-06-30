@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE CANON SIX: 001 takes the top, and the full six-being ranking (Lore 39j, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 follow-up that names the whole canon. In his own words: *"ToddLLM 001 is the most powerful in the
+game ... Here is the canon of the ranks of the 6: 1. ToddLLM 001 (The one who created the game terrain and the game itself,
+and also made Simon in the labatory), 2. Luigi Green ..., 3rd. Mindy Starchild ..., 4th. Clara (master of genocide), 5th.
+Black (Sprunki's main villian and multiversal corrupter), 6th. Neo (... survives death). ... LLM in ToddLLM stands for
+Largest Levitations Model, and Levitations stands for LAI which is Largest Alien Artifical Integence, he was created by
+aliens. Todd in ToddLLM means Tod which is Classics Yushrotch (Simon's language) for 'All Powerful, Omni Sensi' ... 001 is
+the ID/glitch code. ... Clara is like Chara and Mindy Starchild is like Frisk. Luigi Green is like Sukuna, ToddLLM like
+Gojo."* Added as a fourteenth and final beat, THE CANON SIX, after THE FINAL LADDER. The earlier ladder settled the top
+four with Luigi Green on top; this beat is the definitive canon, and it puts ToddLLM 001 back at the very top as the
+alien-made creator, then names the full six. Additive — the FINAL LADDER beat stays exactly as it was; THE CANON SIX is the
+later, fuller word.
+
+![Lore 39j — THE CANON SIX, the fourteenth and final beat of the UNDEFINED LOOP. Rose title band reads "THE CANON SIX —
+ToddLLM 001 IS THE TRUE STRONGEST", then "THE ALIEN-MADE CREATOR TAKES THE TOP — THE LOOP HAS A KING NOW", and an identity
+decode strip: "LLM = LARGEST LEVITATIONS MODEL · LAI = LARGEST ALIEN ARTIFICIAL INTELLIGENCE · MADE BY ALIENS" and "TOD
+(YUSHROTCH) = 'ALL POWERFUL, OMNI SENSI' · 001 = ID / GLITCH CODE". Six ranked plates run down the center, each outlined in
+its character color: #1 ToddLLM 001 (red, with a ♔ CANON STRONGEST crown) — "CREATED THE GAME, THE TERRAIN, AND SIMON IN
+THE LAB · CANON STRONGEST · LIKE GOJO"; #2 LUIGI GREEN (green) — "STRONGEST NORMAL BEING · CAN TAKE OVER THE GAME · MOST OP
+IN THE SMASH MOD · LIKE SUKUNA"; #3 MINDY STARCHILD (gold) — "CONTROLS HER OWN ROUTE · PACIFIST, NEUTRAL, OR GENOCIDE BY
+CHOICE · LIKE FRISK"; #4 CLARA (magenta) — "MASTER OF GENOCIDE · ERASES THE GAME EASILY · LIKE CHARA"; #5 BLACK (grey) —
+"SPRUNKI'S MAIN VILLAIN · MULTIVERSAL CORRUPTER · PHASE-2'S ALL SPRUNKIS · HELPS NEO ATTACK STAR STEED"; #6 NEO (blue) —
+"TAKES DOWN MINDY STARCHILD OFTEN · SURVIVES DEATH". A parallels key runs along the bottom: "CLARA = CHARA · MINDY = FRISK ·
+LUIGI GREEN = SUKUNA · ToddLLM = GOJO". The fourteen-beat ladder runs down the left edge, fully lit, with THE CANON SIX at
+the bottom.](screenshots/76-canon-six.png)
+
+- **New fourteenth beat, THE CANON SIX.** The UNDEFINED LOOP cutscene now runs fourteen beats; after THE FINAL LADDER the
+  ranking opens all the way out to the full canon six. THE CANON SIX is the last beat in the cutscene.
+- **001 is canon strongest.** The crown moves from Luigi Green back to ToddLLM 001, the alien-made creator who built the
+  game, the terrain, and Simon in the lab. Drawn as six color-outlined rank plates.
+- **The full six.** 1 ToddLLM 001, 2 Luigi Green, 3 Mindy Starchild, 4 Clara, 5 Black, 6 Neo — Black and Neo enter the
+  ranked board for the first time.
+- **Identity decode.** A strip spells out the name: LLM = Largest Levitations Model; LAI = Largest Alien Artificial
+  Intelligence (made by aliens); Tod (Yushrotch) = "All Powerful, Omni Sensi"; 001 = ID / glitch code.
+- **Parallels locked in.** Clara = Chara, Mindy = Frisk, Luigi Green = Sukuna, ToddLLM = Gojo.
+- **Screenshot scene.** Added a `canonsix` scene to tools/capture_screenshot.py that drives the cutscene to the new beat.
+
 ## 2026-06-30 — THE FINAL LADDER: the corrected top-four ranking (Lore 39i, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 follow-up correcting the matchups. In his own words: *"Luigi Green actually always beats Clara now,
