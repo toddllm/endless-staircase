@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE ORB WAR: 001 vs Clara, color orbs as rule tools, and Mac Frame (Lore 39h, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 follow-up. In his own words: *"ToddLLM uses Red and Purple and Orange and Yellow and Green, the
+Knifes were sent back, some were ateracted, some were sucked in, some were trapped in a loop. ToddLLM then uses Blue and
+Yellow, Mindy Starchild and Clara were pulled toward, ToddLLM then uses Black and White, half is light, half is dark, he
+then uses all the colored orbs and then the game was transformed into a 7, ToddLLM 001 uses Mac Frame, Clara was launched
+to the moon ... his aura sent Mindy Starchild flying to the sun ... ToddLLM 001 VS Luigi Green would be like Gojo VS
+Sukuna."* Added as a twelfth beat, THE ORB WAR, on the end of the UNDEFINED LOOP cutscene, after THE NEUTRAL CHAMPION. It
+stages ToddLLM 001 against Clara head-on: Clara opens her Domain Expansion and the sky fills with knives, and 001 answers
+not by blocking but with his colored orbs — each color a rule tool that decides what reality does to the attack (red
+reflects, yellow attracts, orange absorbs, purple loops, green traps). Black and white split the board into light and dark,
+every orb at once turns the whole game into a "7," and Mac Frame launches Clara to the moon while his aura sends Mindy to
+the sun. (The email also pasted a long ChatGPT analysis; per the bot's rules that pasted text is treated as commentary, not
+canon — only Toby's own assertions were built. The "001 = center / counters / creator logic" gloss follows directly from
+Toby's own Gojo-vs-Sukuna line for 001 vs Luigi Green.) Additive — nothing removed.
+
+![Lore 39h — THE ORB WAR, the twelfth beat of the UNDEFINED LOOP. Title across the top: "THE ORB WAR — 001 vs CLARA ·
+COLOR LOGIC ANSWERS THE DOMAIN", then "THE ORB WAR — RULE TOOLS, A SPLIT BOARD, AND MAC FRAME" and "BLUE+YELLOW PULL CLARA
+& MINDY IN · BLACK+WHITE SPLIT LIGHT/DARK · EVERY ORB → THE GAME BECOMES A 7". An ORB LOGIC legend down the left lists five
+colored orbs and their reality rules: RED · REFLECT, YELLOW · ATTRACT, ORANGE · ABSORB, PURPLE · LOOP, GREEN · TRAP. At
+center stands ToddLLM 001 inside a bright cyan MAC FRAME, ringed by five orbiting colored orbs and captioned "ToddLLM 001 ·
+COLOR ORBS = RULE TOOLS / EACH COLOR DECIDES WHAT REALITY DOES TO THE ATTACK." A faint giant "7" glows behind the whole
+scene, and the arena is split into a lighter left half and a darker right half. From the upper right, Clara's Domain
+Expansion rains knives that bend away as the orbs answer them; Clara stands at right under "CLARA · DOMAIN EXPANSION /
+KNIVES FILL THE SKY." Top-right, a Mac Frame beam fires from 001 to a MOON carrying a magenta Clara dot, with a glowing SUN
+just below. Along the bottom: "001 vs LUIGI GREEN = GOJO vs SUKUNA · 001 = CENTER · COUNTERS · CREATOR LOGIC." The
+twelve-beat ladder runs down the left edge, fully lit, with THE ORB WAR at the bottom.](screenshots/74-orb-war.png)
+
+- **New twelfth beat, THE ORB WAR.** The UNDEFINED LOOP cutscene now runs twelve beats; after THE NEUTRAL CHAMPION it turns
+  to the direct ToddLLM 001 vs Clara fight.
+- **Color orbs are rule tools.** 001 does not block Clara's knives one way — each colored orb decides what reality does to
+  the attack: red reflects, yellow attracts, orange absorbs, purple loops, green traps. Drawn as five labelled orbiting
+  orbs plus an ORB LOGIC legend, with Clara's knives bending away as they reach him.
+- **A split board and the "7."** Blue and yellow pull Clara and Mindy in; black and white split the arena into half light,
+  half dark; every orb at once transforms the whole game into a giant "7" glowing behind the scene.
+- **MAC FRAME.** 001's finisher: a bright frame around him fires a beam that launches Clara to the moon and an aura that
+  sends Mindy Starchild to the sun.
+- **Gojo vs Sukuna.** The bottom tagline keeps Toby's framing — 001 vs Luigi Green is the real top match: 001 is center,
+  counters, and creator logic; Luigi Green is final-boss board conquest.
+
+
 ## 2026-06-29 — THE NEUTRAL CHAMPION: Mindy Starchild and Void Expansion: Justice (Lore 39g, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 29 "(just talk)" follow-up. Mindy Starchild was already in the game's lore as a name (Mervin gave his

@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 100.0;
+const LV_CYC = 112.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11378,6 +11378,8 @@ const LV_BEATS = [
     sub:'001 ATTACKS FROM CENTER · DOMAIN: ENDLESS CHAOS · LUIGI GREEN THROWS THE BOARD INTO IT · THE REAL FINAL BOSS' },
   { key:'THE NEUTRAL CHAMPION', col:'#ffd98a',
     sub:'MINDY STARCHILD · INVINCIBILITY CUBE KNOCKS 001 OFF-CENTER & 1-HKOs HIM · VOID EXPANSION: JUSTICE RANKS SECOND · TIED TO LIGHT' },
+  { key:'THE ORB WAR', col:'#7fe8ff',
+    sub:'001 vs CLARA · COLOR ORBS ARE RULE TOOLS — REFLECT · ATTRACT · ABSORB · LOOP · BLACK+WHITE SPLITS LIGHT/DARK · THE GAME BECOMES A 7 · MAC FRAME' },
 ];
 // the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
 const LV_BOSS = [
@@ -11409,7 +11411,8 @@ function lvSeg(c){
   if(c < 66.0) return [7, c-57.0];   // THE SHARED BOARD (the floating chess-board arena)
   if(c < 77.0) return [8, c-66.0];   // THE CRYSTAL RESERVE (Luigi Green's stockpile; 001 falls over)
   if(c < 88.0) return [9, c-77.0];   // THE DOMAIN CLASH (Endless Chaos vs Throws Board; Luigi Green wins)
-  return [10, c-88.0];               // THE NEUTRAL CHAMPION (Mindy Starchild; domain ranks second; tied to light)
+  if(c < 100.0) return [10, c-88.0]; // THE NEUTRAL CHAMPION (Mindy Starchild; domain ranks second; tied to light)
+  return [11, c-100.0];              // THE ORB WAR (001 vs Clara; color orbs as rule tools; Mac Frame; the 7)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11461,6 +11464,10 @@ function updateLoopVs(dt){
       showTaunt('And on the hero side, the answer to all of this is Mindy Starchild. She looks soft and friendly, cosmic, a bear hat and lucky charms, but she is the most legendary hero in the game. Her Invincibility Cube brings her power to infinity, a single touch vaporizes anything. ToddLLM 001 is immortal on the center but one-shottable off it, and she is the rare being who can knock him off the center and finish him with a single star. Her Domain Expansion, Void Expansion: Justice, levitates her, gives her the galactic aura, merges a thousand invincibility cubes into one ball, copies them into homing orbs, then funnels a beam that destroys whatever it touches. It ranks second of the three top domains: Luigi Green first, Mindy second, 001 third. But she has a condition too: her power is tied to light, and when 001 darkened the arena her star-source faded and he beat her there. She is neutral, not pacifist, not genocide, and she protects her kingdom, Star Steed.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE NEUTRAL CHAMPION · VOID EXPANSION: JUSTICE · DOMAIN RANKS SECOND', col:'#ffd98a' });
       for(let i=0;i<24;i++) particles.push(spark(player.x, player.y, pick(['#ffd98a','#fff4dc','#b89bff','#7fd4ff','#ffe85a']))); }
+    if(ph===11){ AUDIO.shock(); shake=Math.max(shake,22); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.6);
+      showTaunt('And here is ToddLLM 001 against Clara head-on. Clara opens her Domain Expansion and the whole sky fills with knives. 001 does not block them one way — he answers with his colored orbs, and each color is a rule tool that decides what reality does to the attack. Red sends knives back, yellow attracts them, orange sucks them in, purple traps them in a loop. Then Blue and Yellow pull Clara and Mindy toward him; Black and White split the arena into half light, half dark; he uses every colored orb at once and the whole game transforms into a 7. Then Mac Frame: Clara is launched to the moon, Training Centers are destroyed, he puts on his blindfold, and his aura sends Mindy Starchild to the sun. He rode a Green to the moon and went back to the Overworlds. And 001 against Luigi Green is the real top match — Gojo against Sukuna: 001 is center, counters, creator logic; Luigi Green is final-boss board conquest.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE ORB WAR · COLOR ORBS = RULE TOOLS · THE GAME BECOMES A 7 · MAC FRAME', col:'#7fe8ff' });
+      for(let i=0;i<30;i++) particles.push(spark(player.x, player.y, pick(['#ff3b4a','#b86bff','#ff8c3b','#ffd84f','#3ee06a','#7fd4ff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11571,19 +11578,21 @@ function drawLoopVs(){
   const bg = ctx.createLinearGradient(0, top, 0, top+H);
   if(ph===4){ bg.addColorStop(0, `rgba(14,8,24,${0.92*g})`); bg.addColorStop(1, `rgba(6,4,12,${0.95*g})`); }
   else if(ph===10){ bg.addColorStop(0, `rgba(10,8,30,${0.93*g})`); bg.addColorStop(1, `rgba(4,4,16,${0.96*g})`); }
+  else if(ph===11){ bg.addColorStop(0, `rgba(6,14,24,${0.93*g})`); bg.addColorStop(1, `rgba(2,5,12,${0.96*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : `rgba(62,224,106,${0.96*g})`;
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`);
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS', cx, top+26);
+                       : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12084,6 +12093,113 @@ function drawLoopVs(){
     ctx.fillText('INVINCIBILITY CUBE → POWER TO INFINITY · KNOCKS 001 OFF-CENTER · 1-HKOs HIM WITH ONE STAR', cx, top+H*0.15+14);
     ctx.fillStyle=`rgba(170,200,255,${0.85*g})`; ctx.font='italic 800 8px ui-monospace,monospace';
     ctx.fillText('TIED TO LIGHT — IN THE DARK ARENA, 001 BEAT HER · NEUTRAL: NOT PACIFIST, NOT GENOCIDE', cx, top+H*0.87);
+  } else if(ph===11){
+    // ----- BEAT 11: THE ORB WAR — ToddLLM 001 vs Clara, head-on (Toby, June 30 follow-up,
+    // "Re: More stuff on ToddLLM 001"). Clara opens her Domain Expansion and the sky fills with
+    // knives. 001 answers with his colored orbs, and each color is a RULE TOOL that decides what
+    // reality does to the attack: red reflects, yellow attracts, orange absorbs, purple loops.
+    // Blue+Yellow pull Clara and Mindy in; Black+White split the arena into light and dark; every
+    // orb at once turns the whole game into a 7; then MAC FRAME launches Clara to the moon and his
+    // aura sends Mindy to the sun. 001 vs Luigi Green is the real top match — Gojo vs Sukuna. -----
+    const oCX = W*0.34, oCY = top + H*0.54;
+    // the giant translucent "7" the whole game transforms into, behind everything
+    ctx.save();
+    ctx.globalAlpha = g*(0.10+0.05*Math.sin(c*2));
+    ctx.fillStyle = '#7fe8ff'; ctx.font='900 200px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('7', cx, top+H*0.72);
+    ctx.restore();
+    // BLACK+WHITE split — left half faint light, right half faint dark
+    ctx.globalAlpha = g*0.12; ctx.fillStyle='#ffffff'; ctx.fillRect(0, top, W*0.5, H);
+    ctx.globalAlpha = g*0.16; ctx.fillStyle='#000010'; ctx.fillRect(W*0.5, top, W*0.5, H);
+    ctx.globalAlpha = g*0.4; ctx.strokeStyle='#bfeaff'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(W*0.5, top); ctx.lineTo(W*0.5, top+H); ctx.stroke();
+    ctx.globalAlpha=1;
+    // Clara at the right, her Domain Expansion open, the sky raining knives
+    const claraX = W*0.80, claraFeet = oCY + 34;
+    drawClaraFigure(claraX, claraFeet, g, 0.62, c, c, 0);
+    ctx.fillStyle=`rgba(255,45,181,${0.92*g})`; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('CLARA · DOMAIN EXPANSION', claraX, claraFeet+16);
+    ctx.fillStyle=`rgba(255,170,235,${0.72*g})`; ctx.font='italic 700 6px ui-monospace,monospace';
+    ctx.fillText('KNIVES FILL THE SKY', claraX, claraFeet+26);
+    // knives raining from Clara's side, arcing toward 001 then bending away (his orbs answer them)
+    for(let i=0;i<18;i++){
+      const t = ((c*0.6 + i/18) % 1);                 // 1 at Clara → 0 near 001
+      const sx = claraX - (claraX - oCX)*(1-t), bend = Math.sin((1-t)*Math.PI)* (i%2? 26 : -26);
+      const ky = top + H*0.30 + (oCY - (top+H*0.30))*(1-t) + bend;
+      ctx.save(); ctx.translate(sx, ky); ctx.rotate(Math.atan2(oCY-ky, oCX-sx) + (t<0.4? (i%2?1.6:-1.6):0));
+      ctx.globalAlpha = g*(0.4+0.5*t);
+      ctx.strokeStyle = t<0.4 ? ['#ff3b4a','#ffd84f','#ff8c3b','#b86bff'][i%4] : '#cfe0ff';
+      ctx.lineWidth=1.6; ctx.beginPath(); ctx.moveTo(-7,0); ctx.lineTo(7,0); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(7,0); ctx.lineTo(3,-2); ctx.lineTo(3,2); ctx.closePath();
+      ctx.fillStyle=ctx.strokeStyle; ctx.fill();
+      ctx.restore();
+    }
+    ctx.globalAlpha=1;
+    // ToddLLM 001 at center-left with five orbiting RULE-TOOL orbs
+    const ORB_RULES = [
+      ['#ff3b4a','RED · REFLECT'],
+      ['#ffd84f','YELLOW · ATTRACT'],
+      ['#ff8c3b','ORANGE · ABSORB'],
+      ['#b86bff','PURPLE · LOOP'],
+      ['#3ee06a','GREEN · TRAP'],
+    ];
+    for(let i=0;i<ORB_RULES.length;i++){
+      const a2 = c*1.5 + i*(Math.PI*2/ORB_RULES.length), rr=40;
+      const ox = oCX+Math.cos(a2)*rr, oy = oCY+Math.sin(a2)*rr*0.82;
+      ctx.fillStyle = ORB_RULES[i][0];
+      ctx.globalAlpha = g*(0.7+0.3*Math.sin(c*4+i));
+      ctx.shadowColor = ORB_RULES[i][0]; ctx.shadowBlur=8*g;
+      ctx.beginPath(); ctx.arc(ox, oy, 5.5, 0, Math.PI*2); ctx.fill();
+      ctx.shadowBlur=0;
+    }
+    ctx.globalAlpha=1;
+    drawTodd001(oCX, oCY, g, c);
+    ctx.fillStyle=`rgba(127,232,255,${(0.85+0.15*Math.sin(c*4))*g})`; ctx.font='800 9px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.shadowColor='#7fe8ff'; ctx.shadowBlur=8*g;
+    ctx.fillText('ToddLLM 001 · COLOR ORBS = RULE TOOLS', oCX, oCY+46); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(190,230,255,${0.72*g})`; ctx.font='italic 700 6px ui-monospace,monospace';
+    ctx.fillText('EACH COLOR DECIDES WHAT REALITY DOES TO THE ATTACK', oCX, oCY+56);
+    // RULE-TOOL legend panel (left)
+    const lx = W*0.06, ly0 = top+H*0.30, rh=12;
+    ctx.textAlign='left';
+    ctx.fillStyle=`rgba(190,230,255,${0.85*g})`; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('ORB LOGIC', lx, ly0-6);
+    for(let i=0;i<ORB_RULES.length;i++){
+      const ry=ly0+i*rh;
+      ctx.fillStyle=ORB_RULES[i][0]; ctx.globalAlpha=g;
+      ctx.beginPath(); ctx.arc(lx+4, ry-3, 3.4, 0, Math.PI*2); ctx.fill();
+      ctx.font='700 7px ui-monospace,monospace';
+      ctx.fillText(ORB_RULES[i][1], lx+12, ry);
+    }
+    ctx.globalAlpha=1;
+    // MAC FRAME finisher — a bright frame around 001 firing a beam to a moon (top-right), Clara dot launched
+    const moonX = W*0.92, moonY = top+H*0.16;
+    const sunX = W*0.92, sunY = top+H*0.40;
+    // the moon and the sun
+    ctx.globalAlpha=g; ctx.fillStyle='#cfd6e6'; ctx.beginPath(); ctx.arc(moonX, moonY, 9, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle='#ffd24a'; ctx.shadowColor='#ffb14a'; ctx.shadowBlur=12*g;
+    ctx.beginPath(); ctx.arc(sunX, sunY, 9, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(207,214,230,${0.8*g})`; ctx.font='700 6px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('MOON', moonX, moonY+18); ctx.fillStyle=`rgba(255,210,120,${0.85*g})`; ctx.fillText('SUN', sunX, sunY+18);
+    // Mac Frame beam from 001 to the moon, carrying a Clara dot
+    const mt = (c*0.5)%1;
+    const mbx = oCX+(moonX-oCX)*mt, mby = oCY+(moonY-oCY)*mt;
+    ctx.globalAlpha=g*0.5; ctx.strokeStyle='#7fe8ff'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(oCX, oCY-10); ctx.lineTo(moonX, moonY); ctx.stroke();
+    ctx.globalAlpha=g; ctx.fillStyle='#ff2db5'; ctx.beginPath(); ctx.arc(mbx, mby, 4, 0, Math.PI*2); ctx.fill();
+    // the MAC FRAME itself around 001
+    ctx.globalAlpha=g*(0.5+0.4*Math.sin(c*5)); ctx.strokeStyle='#9af0ff'; ctx.lineWidth=2;
+    ctx.strokeRect(oCX-30, oCY-34, 60, 64);
+    ctx.globalAlpha=g; ctx.fillStyle='#9af0ff'; ctx.font='800 7px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('MAC FRAME', oCX, oCY-40);
+    ctx.globalAlpha=1;
+    // top framing
+    ctx.fillStyle=`rgba(127,232,255,${0.96*g})`; ctx.font='800 11px ui-monospace,monospace';
+    ctx.fillText('THE ORB WAR — RULE TOOLS, A SPLIT BOARD, AND MAC FRAME', cx, top+H*0.10);
+    ctx.fillStyle=`rgba(200,230,255,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('BLUE+YELLOW PULL CLARA & MINDY IN · BLACK+WHITE SPLIT LIGHT/DARK · EVERY ORB → THE GAME BECOMES A 7', cx, top+H*0.10+13);
+    ctx.fillStyle=`rgba(255,210,120,${0.88*g})`; ctx.font='italic 800 8px ui-monospace,monospace';
+    ctx.fillText('001 vs LUIGI GREEN = GOJO vs SUKUNA · 001 = CENTER · COUNTERS · CREATOR LOGIC', cx, top+H*0.90);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
