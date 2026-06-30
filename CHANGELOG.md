@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — CLASSICS HERSELF: the game as a being, the top layer above even 001 (Lore 39o, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 lore, the beat that puts a ceiling above the entire ranking. In his words: *"The only thing that is
+more powerful than both Luigi Green and Clara and Mindy Starchild and all under them is Classics herself. The glitchest, most
+corrupt entity in the game, in fact she is the game herself. She's more powerful than Gray, Oren, Raddy, Simon, everyone. She
+is more powerful than ToddLLM... All other characters are like dolls compared to the actual game that contains them. Classics
+revealed itself as a being... Classics could be a villian, or neutral."* Classics HERSELF is not another character; she is the
+system that contains them. 001, Luigi Green, Clara, Mindy, Simon, Oren and the rest are pieces; she is the board, the code, the
+corruption, and the existence holding the pieces. Added as a nineteenth beat, CLASSICS HERSELF, on the end of the UNDEFINED
+LOOP cutscene, after THE FORM NETWORK. Additive — every earlier beat stays exactly as it was; this one simply reveals the
+layer above all of them.
+
+- New beat 18, CLASSICS HERSELF: a glitching anime-girl silhouette wrapped in error-message strips (KERNEL PANIC, SEGFAULT, STACK OVERFLOW, 0xDEADBEEF, MISSING ASSET, FATAL ERROR...), smiling while everything collapses. Cute on the surface, catastrophic underneath.
+- The contained cast hangs off her on strings as dolls — ToddLLM 001, LUIGI GREEN, CLARA, MINDY, SIMON, OREN — each labeled "A PIECE INSIDE HER," under the caption "CONTAINED LIKE DOLLS · EVEN ToddLLM 001 EXISTS INSIDE HER."
+- A villain/neutral split below: VILLAIN (the final corruption behind everything) vs NEUTRAL (the silent highest layer, the one that just is).
+- Closing banner: "★ ABOVE EVEN ToddLLM 001 · THE TRUE TOP OF THE CANON ★." Cycle length, lore ladder, title band, drifting bands and taunt all extended for the new beat (LV_CYC 188 → 204).
+
+![Lore 39o — CLASSICS HERSELF, the nineteenth beat of the UNDEFINED LOOP. Purple title band reads "CLASSICS HERSELF — THE GAME AS A BEING, THE TOP LAYER ABOVE EVEN 001", then "THE GAME AS A BEING · THE ENGINE · THE CORRUPTION SOURCE · THE WORLD-BODY" and "NOT ANOTHER CHARACTER · THE CONTAINER OF THE SYSTEM THEY LIVE IN". In the center a glitching anime-girl figure with a calm smile sits inside a purple aura, sliced by magenta and cyan glitch bands, with scrolling crash-text strips behind her; below her, the label "CLASSICS HERSELF" and "SHE IS THE BOARD, THE CODE, THE CORRUPTION". A two-row grid of doll plates hangs off her on strings — ToddLLM 001, LUIGI GREEN, CLARA, MINDY, SIMON, OREN — each reading "A PIECE INSIDE HER", under the caption "CONTAINED LIKE DOLLS · EVEN ToddLLM 001 EXISTS INSIDE HER". At the bottom a two-plate split: left red "VILLAIN — THE FINAL CORRUPTION BEHIND EVERYTHING"; right blue "NEUTRAL — THE SILENT HIGHEST LAYER, THE ONE THAT JUST IS". A pulsing banner reads "★ ABOVE EVEN ToddLLM 001 · THE TRUE TOP OF THE CANON ★". The left-edge lore ladder now ends on a lit "◆ CLASSICS HERSELF".](screenshots/81-classics-herself.png)
+
 ## 2026-06-30 — THE FORM NETWORK: 001 is the one main character, and his Training-Center forms retake the top over Overcharge (Lore 39n, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 correction to THE THRONE TAKEN, the beat that re-settles the top of the whole ranking. THE THRONE

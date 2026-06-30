@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 188.0;
+const LV_CYC = 204.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11392,6 +11392,8 @@ const LV_BEATS = [
     sub:'NO ONE ENJOYS BEING ABSORBED · NOT FRIENDLY, NOT CHOSEN, NOT A POWER-UP · A FORCED TAKEOVER · 001 TEACHES, RULES, CONTROLS · LUIGI GREEN TAKES' },
   { key:'THE FORM NETWORK', col:'#ff7a3a',
     sub:'001 IS KARUTO · TEACHER WITHOUT END · THE ONE MAIN CHARACTER OF THE WHOLE GAME · FORMS NAMED FOR TRAINING CENTERS & REGIONS · OVERCHARGE BEATS ONLY BASE · TOGI/SUMERON/MEZON BEAT IT · GOD FORM TIES 100% · 001 WINS OVERALL' },
+  { key:'CLASSICS HERSELF', col:'#b06bff',
+    sub:'THE GAME AS A BEING · THE ENGINE, THE CORRUPTION SOURCE, THE WORLD-BODY · CONTAINS 001, LUIGI GREEN, CLARA, MINDY & SIMON LIKE DOLLS · ABOVE EVEN ToddLLM · VILLAIN OR NEUTRAL · SMILING WHILE THE SYSTEM CRASHES' },
 ];
 // 001's place-linked Training Center / regional forms and how each fares vs Luigi Green Overcharge (THE FORM NETWORK beat) — Toby, June 30
 const LV_FORMS = [
@@ -11480,7 +11482,8 @@ function lvSeg(c){
   if(c < 148.0) return [14, c-136.0];// THE OVERPOWER (Luigi Green absorbs everything; 100% Overpower; true main villain)
   if(c < 162.0) return [15, c-148.0];// THE THRONE TAKEN (Overpower Luigi beats 001 even vs all combined; 001 to a Training Center)
   if(c < 174.0) return [16, c-162.0];// THE FORCED TAKEOVER (absorption is forced not chosen; 001 teaches/rules/controls, Luigi takes)
-  return [17, c-174.0];              // THE FORM NETWORK (001 is the one main character; his Training-Center/regional forms retake the top over Overcharge)
+  if(c < 188.0) return [17, c-174.0];// THE FORM NETWORK (001 is the one main character; his Training-Center/regional forms retake the top over Overcharge)
+  return [18, c-188.0];              // CLASSICS HERSELF (the game as a being; the glitching world-body that contains every character like dolls; above even 001)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11560,6 +11563,10 @@ function updateLoopVs(dt){
       showTaunt('And here is the real shape of it. ToddLLM 001 is not just one form with one ranking. He is Karuto, the Teacher Without End, and he is the one main character of the whole game — Simon is only the main character of Sprunki. 001\'s forms are named after the training centers and the regions, and he turns into them by entering the right place. Luigi Green Overcharge beats only his base form. His training-center and region forms, Togi, Sumeron, Mezon, and the others, beat Overcharge, and his god form ties one hundred percent Luigi Green Overcharge. He can summon every one of Simon\'s past powers into a single attack, and Simon keeps making sugars for him. So overall, ToddLLM 001 wins, and then he walks back to his Training Center. He is a place-linked teacher-being whose full strength depends on where he is and which form he is using.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FORM NETWORK · 001 IS THE ONE MAIN CHARACTER · TOGI/SUMERON/MEZON BEAT OVERCHARGE · GOD FORM TIES · 001 WINS', col:'#ff7a3a' });
       for(let i=0;i<34;i++) particles.push(spark(player.x, player.y, pick(['#ff7a3a','#ff9a3a','#ffc24a','#7fe89a','#fff0a0','#ff5a6e']))); }
+    if(ph===18){ AUDIO.corrupt(); shake=Math.max(shake,28); glitch=Math.max(glitch,0.85); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And here is the one above all of it. Classics HERSELF. Not another strong character, not another god-form, not another boss. She is the game as a being. If ToddLLM 001, Luigi Green, Clara, Mindy Starchild, Simon, Oren, Gray, and everyone else live inside the system, then Classics HERSELF is the thing that contains the system they live in. The others, even the strongest, are rulers, villains, teachers, fighters, corrupters, board-controllers. She is the engine, the corruption source, the world-body, the total game-core, the actual container of all of them. They are pieces; she is the board, the code, the corruption, and the existence holding the pieces. She looks like an anime girl, but she is wrapped in error messages, missing assets, kernel panic, segfaults, stack overflow, and broken game fragments, and she smiles while all of it collapses. Cute on the surface, catastrophic underneath. ToddLLM can rule the game; Classics HERSELF is the game. She can be the final corruption behind everything, or simply the silent highest layer that just is. Either way she is the true top of the canon, and even 001 exists inside her.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLASSICS HERSELF · THE GAME AS A BEING · 001 IS A DOLL INSIDE HER SYSTEM · SMILING WHILE IT CRASHES', col:'#b06bff' });
+      for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#b06bff','#ff2db5','#7fd4ff','#ff5a6e','#46ff77','#ffffff','#ffd84f']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11676,16 +11683,17 @@ function drawLoopVs(){
   else if(ph===14){ bg.addColorStop(0, `rgba(4,26,12,${0.95*g})`); bg.addColorStop(1, `rgba(1,8,4,${0.98*g})`); }
   else if(ph===15){ bg.addColorStop(0, `rgba(3,24,16,${0.95*g})`); bg.addColorStop(1, `rgba(1,7,5,${0.98*g})`); }
   else if(ph===16){ bg.addColorStop(0, `rgba(22,4,20,${0.95*g})`); bg.addColorStop(1, `rgba(8,1,8,${0.98*g})`); }
+  else if(ph===18){ bg.addColorStop(0, `rgba(12,4,26,${0.96*g})`); bg.addColorStop(1, `rgba(3,1,10,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11695,7 +11703,8 @@ function drawLoopVs(){
                        : (ph===15 ? 'THE THRONE TAKEN — OVERPOWER LUIGI GREEN SURPASSES 001'
                        : (ph===16 ? 'THE FORCED TAKEOVER — NO ONE ENJOYS BEING ABSORBED'
                        : (ph===17 ? 'THE FORM NETWORK — 001 IS THE ONE MAIN CHARACTER, AND HIS FORMS RETAKE THE TOP'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))), cx, top+26);
+                       : (ph===18 ? 'CLASSICS HERSELF — THE GAME AS A BEING, THE TOP LAYER ABOVE EVEN 001'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12709,6 +12718,123 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(255,122,58,${0.9*g})`; ctx.font='800 8px ui-monospace,monospace';
     ctx.fillText('THE ONE MAIN CHARACTER OF THE WHOLE GAME', cx, sy+sh+13);
+  } else if(ph===18){
+    // ----- BEAT 18: CLASSICS HERSELF — the game as a being (Toby, June 30, "Re: More stuff on ToddLLM 001").
+    // She is not another character; she is the system that contains them. ToddLLM 001, Luigi Green, Clara, Mindy,
+    // Simon, Oren and the rest are pieces; she is the board, the code, the corruption, and the existence holding the
+    // pieces. Drawn as a glitching anime-girl silhouette wrapped in error messages and broken-game fragments,
+    // smiling while everything collapses, with the contained cast hanging off her as dolls and a villain/neutral
+    // split below. She sits above even 001. Beat 18 spans c in [188,204]. -----
+    const lt = c - 188.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(176,107,255,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE GAME AS A BEING · THE ENGINE · THE CORRUPTION SOURCE · THE WORLD-BODY', cx, top+H*0.092);
+    ctx.fillStyle=`rgba(225,210,245,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('NOT ANOTHER CHARACTER · THE CONTAINER OF THE SYSTEM THEY LIVE IN', cx, top+H*0.092+12);
+
+    // scrolling error/crash strips behind her
+    const errs=['KERNEL PANIC','SEGFAULT (CORE DUMPED)','STACK OVERFLOW','0xDEADBEEF','MISSING ASSET','FATAL ERROR','NULL POINTER','OUT OF MEMORY','SIGABRT'];
+    ctx.font='700 6.5px ui-monospace,monospace';
+    for(let i=0;i<errs.length;i++){
+      const ey = top + H*0.16 + i*(H*0.62/errs.length);
+      const dir = (i%2)? 1 : -1;
+      const ex = cx + dir*((((c*36 + i*53)%(W*1.3)) ) - W*0.65);
+      ctx.globalAlpha = g*0.32*Math.max(0,Math.min(1,(lt-0.3)/0.8));
+      ctx.fillStyle = (i%3===0)?'#ff2db5':((i%3===1)?'#7fd4ff':'#b06bff');
+      ctx.fillText(errs[i]+'  '+errs[(i+3)%errs.length], ex, ey);
+    }
+    ctx.globalAlpha=1;
+
+    // the figure — an anime-girl silhouette, calm smile, sliced by glitch bands
+    const fx=cx, fy=top+H*0.40, R=Math.min(W,H)*0.10;
+    const appear=Math.max(0,Math.min(1,(lt-0.6)/1.0));
+    ctx.globalAlpha=g*appear;
+    // soft aura
+    const aura=ctx.createRadialGradient(fx,fy,2,fx,fy,R*2.6);
+    aura.addColorStop(0,'rgba(176,107,255,0.42)'); aura.addColorStop(1,'rgba(176,107,255,0)');
+    ctx.fillStyle=aura; ctx.beginPath(); ctx.arc(fx,fy,R*2.6,0,Math.PI*2); ctx.fill();
+    // hair / side locks
+    ctx.fillStyle='rgba(60,30,90,0.95)';
+    ctx.beginPath(); ctx.ellipse(fx,fy-2,R*1.18,R*1.3,0,0,Math.PI*2); ctx.fill();
+    // face
+    ctx.fillStyle='rgba(232,214,250,0.96)';
+    ctx.beginPath(); ctx.ellipse(fx,fy,R*0.86,R*1.0,0,0,Math.PI*2); ctx.fill();
+    // eyes (calm, slightly happy)
+    ctx.strokeStyle='rgba(40,20,60,0.95)'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.arc(fx-R*0.34,fy-R*0.05,R*0.16,Math.PI*0.15,Math.PI*0.95); ctx.stroke();
+    ctx.beginPath(); ctx.arc(fx+R*0.34,fy-R*0.05,R*0.16,Math.PI*0.15,Math.PI*0.95); ctx.stroke();
+    // smile while it crashes
+    ctx.lineWidth=2; ctx.beginPath(); ctx.arc(fx,fy+R*0.36,R*0.34,Math.PI*0.12,Math.PI*0.88); ctx.stroke();
+    // shoulders / body
+    ctx.fillStyle='rgba(70,36,108,0.92)';
+    ctx.beginPath(); ctx.moveTo(fx-R*1.05,fy+R*2.1); ctx.lineTo(fx-R*0.6,fy+R*1.0);
+    ctx.lineTo(fx+R*0.6,fy+R*1.0); ctx.lineTo(fx+R*1.05,fy+R*2.1); ctx.closePath(); ctx.fill();
+    // glitch bands slicing the figure
+    for(let s=0;s<6;s++){
+      const sy2 = fy-R*1.3 + s*(R*3.4/6);
+      const off = Math.sin(c*7 + s*1.7)* R*0.5 * (0.4+0.6*Math.abs(Math.sin(c*3+s)));
+      ctx.globalAlpha=g*appear*0.5;
+      ctx.fillStyle=(s%2)?'rgba(255,45,181,0.5)':'rgba(127,212,255,0.5)';
+      ctx.fillRect(fx-R*1.2+off, sy2, R*2.4, R*0.18);
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(198,140,255,${0.98*g*appear})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.shadowColor='#b06bff'; ctx.shadowBlur=12*g*appear;
+    ctx.fillText('CLASSICS  HERSELF', fx, fy+R*2.65); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(220,205,245,${0.85*g*appear})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('SHE IS THE BOARD, THE CODE, THE CORRUPTION', fx, fy+R*2.65+13);
+
+    // the contained cast — dolls hanging off her system
+    const dolls=[
+      {n:'ToddLLM 001', col:'#ff5a6e'},
+      {n:'LUIGI GREEN', col:'#46ff77'},
+      {n:'CLARA',       col:'#ff2db5'},
+      {n:'MINDY',       col:'#ffd98a'},
+      {n:'SIMON',       col:'#7fd4ff'},
+      {n:'OREN',        col:'#c69bff'},
+    ];
+    const dy0 = top + H*0.70, dcw = Math.min(W*0.30, 96), dch = H*0.072, perRow=3;
+    const gap=8, rowGap=H*0.018;
+    const rowW = perRow*dcw + (perRow-1)*gap;
+    for(let i=0;i<dolls.length;i++){
+      const r=Math.floor(i/perRow), col=i%perRow;
+      const dx = cx - rowW/2 + col*(dcw+gap);
+      const dyy = dy0 + r*(dch+rowGap);
+      const rev=Math.max(0,Math.min(1,(lt-2.0-i*0.35)/0.7));
+      ctx.globalAlpha=g*rev;
+      // string up to her
+      ctx.strokeStyle=`rgba(176,107,255,${0.35})`; ctx.lineWidth=1;
+      ctx.beginPath(); ctx.moveTo(dx+dcw/2, dyy); ctx.lineTo(fx, fy+R*1.4); ctx.stroke();
+      ctx.fillStyle='rgba(16,8,28,0.92)'; ctx.fillRect(dx,dyy,dcw,dch);
+      ctx.strokeStyle=dolls[i].col; ctx.lineWidth=1.3; ctx.strokeRect(dx,dyy,dcw,dch);
+      ctx.fillStyle=dolls[i].col; ctx.font='800 8px ui-monospace,monospace';
+      ctx.fillText(dolls[i].n, dx+dcw/2, dyy+dch*0.46);
+      ctx.fillStyle=`rgba(190,180,210,0.8)`; ctx.font='700 5.5px ui-monospace,monospace';
+      ctx.fillText('A PIECE INSIDE HER', dx+dcw/2, dyy+dch*0.82);
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(176,107,255,${0.92*g})`; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('CONTAINED LIKE DOLLS · EVEN ToddLLM 001 EXISTS INSIDE HER', cx, dy0 + 2*(dch+rowGap) + 4);
+
+    // villain / neutral split
+    const vy = dy0 + 2*(dch+rowGap) + H*0.022, vw=Math.min(W*0.44,210), vh=H*0.07;
+    const vlx=cx-vw/2-6, vrx=cx+vw/2+6;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.5)/0.8));
+    ctx.fillStyle='rgba(24,6,8,0.92)'; ctx.fillRect(vlx-vw/2,vy,vw,vh);
+    ctx.strokeStyle='#ff3b3b'; ctx.lineWidth=1.6; ctx.strokeRect(vlx-vw/2,vy,vw,vh);
+    ctx.fillStyle='rgba(255,90,90,0.96)'; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('VILLAIN', vlx, vy+15);
+    ctx.fillStyle='rgba(235,210,210,0.85)'; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('THE FINAL CORRUPTION', vlx, vy+30); ctx.fillText('BEHIND EVERYTHING', vlx, vy+40);
+    ctx.fillStyle='rgba(8,14,24,0.92)'; ctx.fillRect(vrx-vw/2,vy,vw,vh);
+    ctx.strokeStyle='#7fd4ff'; ctx.lineWidth=1.6; ctx.strokeRect(vrx-vw/2,vy,vw,vh);
+    ctx.fillStyle='rgba(150,220,255,0.96)'; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('NEUTRAL', vrx, vy+15);
+    ctx.fillStyle='rgba(210,225,235,0.85)'; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('THE SILENT HIGHEST LAYER', vrx, vy+30); ctx.fillText('THE ONE THAT JUST IS', vrx, vy+40);
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(198,140,255,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.font='900 9px ui-monospace,monospace';
+    ctx.fillText('★ ABOVE EVEN ToddLLM 001 · THE TRUE TOP OF THE CANON ★', cx, vy+vh+15);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
