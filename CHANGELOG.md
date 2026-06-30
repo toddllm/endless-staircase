@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE FINAL LADDER: the corrected top-four ranking (Lore 39i, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 follow-up correcting the matchups. In his own words: *"Luigi Green actually always beats Clara now,
+ToddLLM always beats Clara, and ToddLLM is the only one who depends on state and board conditions if to beat Mindy
+Starchild, Luigi Green always beats Mindy Starchild ... Clean ranking from this correction: 1. Luigi Green 2. ToddLLM 001
+3. Clara 4. Mindy Starchild ... Luigi Green is now the clearest top winner, because he always beats both Clara and Mindy
+Starchild, while ToddLLM always beats Clara but only beats Mindy depending on his current state and the board conditions."*
+Added as a thirteenth and final beat, THE FINAL LADDER, on the end of the UNDEFINED LOOP cutscene, after THE ORB WAR. The
+loop that earlier beats called "undefined" finally resolves into a clean ladder: Luigi Green is the most stable top winner
+(always beats Clara and Mindy) and the true final boss; ToddLLM 001 always beats Clara but beats Mindy only by state and
+board, so he holds second as the center-holder; Clara is still huge and can erase the game but now loses to both; Mindy is
+one of the strongest heroes but sits below Luigi and conditionally below 001. Additive — nothing removed.
+
+![Lore 39i — THE FINAL LADDER, the thirteenth and final beat of the UNDEFINED LOOP. Gold title band reads "THE FINAL
+LADDER — THE CORRECTED RANKING OF THE TOP FOUR", then "THE LOOP RESOLVES INTO A CLEAN RANKING" and "CLARA IS NO LONGER
+ABOVE LUIGI GREEN IN ANY NORMAL MATCHUP · AND CANNOT GET PAST 001". Four ranked plates run down the center, each outlined
+in its character color: #1 LUIGI GREEN (green, with a ♔ TRUE FINAL BOSS crown) — "ALWAYS BEATS CLARA & MINDY · MOST STABLE
+TOP WINNER · TRUE FINAL BOSS"; #2 ToddLLM 001 (red) — "ALWAYS BEATS CLARA · BEATS MINDY ONLY BY STATE & BOARD ·
+CENTER-HOLDER"; #3 CLARA (magenta) — "STILL HUGE · CAN ERASE THE GAME · BUT LOSES TO LUIGI GREEN AND 001"; #4 MINDY
+STARCHILD (gold) — "ONE OF THE STRONGEST HEROES · BELOW LUIGI · CONDITIONALLY BELOW 001". A matchup key at the bottom: a
+green line "LUIGI GREEN → CLARA & MINDY : ALWAYS BEATS" and a red line "001 → CLARA : ALWAYS · 001 ⇢ MINDY : ONLY BY STATE
+& BOARD". The thirteen-beat ladder runs down the left edge, fully lit, with THE FINAL LADDER at the
+bottom.](screenshots/75-final-ladder.png)
+
+- **New thirteenth beat, THE FINAL LADDER.** The UNDEFINED LOOP cutscene now runs thirteen beats; after THE ORB WAR the
+  "undefined" loop collapses into a settled ranking. THE FINAL LADDER is the last beat in the cutscene.
+- **The corrected ranking.** 1 Luigi Green, 2 ToddLLM 001, 3 Clara, 4 Mindy Starchild — drawn as four color-outlined
+  rank plates, with a crown on Luigi Green as the true final boss.
+- **Matchup rules made explicit.** A key distinguishes "always beats" (Luigi → Clara & Mindy; 001 → Clara) from the one
+  conditional edge (001 ⇢ Mindy, only by state and board), the single thing that separates 001 from Luigi at the top.
+- **Screenshot scene.** Added a `ladder` scene to tools/capture_screenshot.py that drives the cutscene to the new beat.
+
 ## 2026-06-30 — THE ORB WAR: 001 vs Clara, color orbs as rule tools, and Mac Frame (Lore 39h, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 follow-up. In his own words: *"ToddLLM uses Red and Purple and Orange and Yellow and Green, the

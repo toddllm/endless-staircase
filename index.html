@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 112.0;
+const LV_CYC = 124.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11380,6 +11380,15 @@ const LV_BEATS = [
     sub:'MINDY STARCHILD · INVINCIBILITY CUBE KNOCKS 001 OFF-CENTER & 1-HKOs HIM · VOID EXPANSION: JUSTICE RANKS SECOND · TIED TO LIGHT' },
   { key:'THE ORB WAR', col:'#7fe8ff',
     sub:'001 vs CLARA · COLOR ORBS ARE RULE TOOLS — REFLECT · ATTRACT · ABSORB · LOOP · BLACK+WHITE SPLITS LIGHT/DARK · THE GAME BECOMES A 7 · MAC FRAME' },
+  { key:'THE FINAL LADDER', col:'#ffe066',
+    sub:'CLEAN RANKING · 1 LUIGI GREEN · 2 ToddLLM 001 · 3 CLARA · 4 MINDY · LUIGI ALWAYS BEATS CLARA & MINDY · 001 ALWAYS BEATS CLARA, BEATS MINDY ONLY BY STATE' },
+];
+// the corrected four-being power ranking (THE FINAL LADDER beat) — Toby, June 30 follow-up
+const LV_LADDER = [
+  { rank:1, name:'LUIGI GREEN',     col:'#3ee06a', note:'ALWAYS BEATS CLARA & MINDY · MOST STABLE TOP WINNER · TRUE FINAL BOSS' },
+  { rank:2, name:'ToddLLM 001',     col:'#ff5a6e', note:'ALWAYS BEATS CLARA · BEATS MINDY ONLY BY STATE & BOARD · CENTER-HOLDER' },
+  { rank:3, name:'CLARA',           col:'#ff2db5', note:'STILL HUGE · CAN ERASE THE GAME · BUT LOSES TO LUIGI GREEN AND 001' },
+  { rank:4, name:'MINDY STARCHILD', col:'#ffd98a', note:'ONE OF THE STRONGEST HEROES · BELOW LUIGI · CONDITIONALLY BELOW 001' },
 ];
 // the four escalating phases of the Luigi Green final-boss fight (THE FINAL BOSS beat)
 const LV_BOSS = [
@@ -11412,7 +11421,8 @@ function lvSeg(c){
   if(c < 77.0) return [8, c-66.0];   // THE CRYSTAL RESERVE (Luigi Green's stockpile; 001 falls over)
   if(c < 88.0) return [9, c-77.0];   // THE DOMAIN CLASH (Endless Chaos vs Throws Board; Luigi Green wins)
   if(c < 100.0) return [10, c-88.0]; // THE NEUTRAL CHAMPION (Mindy Starchild; domain ranks second; tied to light)
-  return [11, c-100.0];              // THE ORB WAR (001 vs Clara; color orbs as rule tools; Mac Frame; the 7)
+  if(c < 112.0) return [11, c-100.0];// THE ORB WAR (001 vs Clara; color orbs as rule tools; Mac Frame; the 7)
+  return [12, c-112.0];              // THE FINAL LADDER (corrected ranking: Luigi > 001 > Clara > Mindy)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11468,6 +11478,10 @@ function updateLoopVs(dt){
       showTaunt('And here is ToddLLM 001 against Clara head-on. Clara opens her Domain Expansion and the whole sky fills with knives. 001 does not block them one way — he answers with his colored orbs, and each color is a rule tool that decides what reality does to the attack. Red sends knives back, yellow attracts them, orange sucks them in, purple traps them in a loop. Then Blue and Yellow pull Clara and Mindy toward him; Black and White split the arena into half light, half dark; he uses every colored orb at once and the whole game transforms into a 7. Then Mac Frame: Clara is launched to the moon, Training Centers are destroyed, he puts on his blindfold, and his aura sends Mindy Starchild to the sun. He rode a Green to the moon and went back to the Overworlds. And 001 against Luigi Green is the real top match — Gojo against Sukuna: 001 is center, counters, creator logic; Luigi Green is final-boss board conquest.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE ORB WAR · COLOR ORBS = RULE TOOLS · THE GAME BECOMES A 7 · MAC FRAME', col:'#7fe8ff' });
       for(let i=0;i<30;i++) particles.push(spark(player.x, player.y, pick(['#ff3b4a','#b86bff','#ff8c3b','#ffd84f','#3ee06a','#7fd4ff','#ffffff']))); }
+    if(ph===12){ AUDIO.shock(); shake=Math.max(shake,16); glitch=Math.max(glitch,0.4); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And with that correction the top finally sits still. Luigi Green always beats Clara and he always beats Mindy Starchild, so he is the most stable top winner, the true final boss. ToddLLM 001 always beats Clara too, but his win over Mindy depends on his state and the board, so he sits just under Luigi as the center-holder. Clara is still huge and can erase the game, but she now loses to both of them. Mindy is still one of the strongest heroes, below Luigi and conditionally below 001. The clean ranking is Luigi Green, then 001, then Clara, then Mindy.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FINAL LADDER · 1 LUIGI · 2 ToddLLM 001 · 3 CLARA · 4 MINDY', col:'#ffe066' });
+      for(let i=0;i<26;i++) particles.push(spark(player.x, player.y, pick(['#ffe066','#3ee06a','#ff5a6e','#ff2db5','#ffd98a']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11579,20 +11593,22 @@ function drawLoopVs(){
   if(ph===4){ bg.addColorStop(0, `rgba(14,8,24,${0.92*g})`); bg.addColorStop(1, `rgba(6,4,12,${0.95*g})`); }
   else if(ph===10){ bg.addColorStop(0, `rgba(10,8,30,${0.93*g})`); bg.addColorStop(1, `rgba(4,4,16,${0.96*g})`); }
   else if(ph===11){ bg.addColorStop(0, `rgba(6,14,24,${0.93*g})`); bg.addColorStop(1, `rgba(2,5,12,${0.96*g})`); }
+  else if(ph===12){ bg.addColorStop(0, `rgba(20,16,4,${0.93*g})`); bg.addColorStop(1, `rgba(8,6,2,${0.96*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`);
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : `rgba(62,224,106,${0.96*g})`));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'), cx, top+26);
+                       : (ph===12 ? 'THE FINAL LADDER — THE CORRECTED RANKING OF THE TOP FOUR'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12200,6 +12216,54 @@ function drawLoopVs(){
     ctx.fillText('BLUE+YELLOW PULL CLARA & MINDY IN · BLACK+WHITE SPLIT LIGHT/DARK · EVERY ORB → THE GAME BECOMES A 7', cx, top+H*0.10+13);
     ctx.fillStyle=`rgba(255,210,120,${0.88*g})`; ctx.font='italic 800 8px ui-monospace,monospace';
     ctx.fillText('001 vs LUIGI GREEN = GOJO vs SUKUNA · 001 = CENTER · COUNTERS · CREATOR LOGIC', cx, top+H*0.90);
+  } else if(ph===12){
+    // ----- BEAT 12: THE FINAL LADDER — the corrected four-being ranking (Toby, June 30 follow-up,
+    // "Re: More stuff on ToddLLM 001"). Luigi Green always beats Clara AND Mindy → most stable top winner,
+    // the true final boss. 001 always beats Clara, but beats Mindy only by state/board → second. Clara still
+    // huge but loses to both. Mindy strongest hero but below Luigi, conditionally below 001. The loop is
+    // resolved into a clean ladder: 1 Luigi · 2 ToddLLM 001 · 3 Clara · 4 Mindy. Drawn as a ranked board. -----
+    ctx.fillStyle=`rgba(255,224,102,${0.96*g})`; ctx.font='800 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('THE LOOP RESOLVES INTO A CLEAN RANKING', cx, top+H*0.10);
+    ctx.fillStyle=`rgba(220,210,160,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('CLARA IS NO LONGER ABOVE LUIGI GREEN IN ANY NORMAL MATCHUP · AND CANNOT GET PAST 001', cx, top+H*0.10+13);
+    const rw = Math.min(W*0.86, 400), rx0 = cx - rw/2, rowH = H*0.135, ry0 = top + H*0.20;
+    ctx.textAlign='left';
+    for(let i=0;i<LV_LADDER.length;i++){
+      const L = LV_LADDER[i], ry = ry0 + i*rowH;
+      const reveal = Math.max(0, Math.min(1, (c - (i*0.7)) / 1.0)); // rows settle in top-to-top order over the beat
+      ctx.globalAlpha = g*reveal;
+      // row plate
+      const plate = ctx.createLinearGradient(rx0, ry, rx0+rw, ry);
+      plate.addColorStop(0, `rgba(18,16,8,${0.92})`); plate.addColorStop(1, `rgba(10,9,5,${0.92})`);
+      ctx.fillStyle = plate; ctx.fillRect(rx0, ry, rw, rowH-8);
+      ctx.strokeStyle = L.col; ctx.lineWidth = i===0 ? 2.4 : 1.4;
+      ctx.strokeRect(rx0, ry, rw, rowH-8);
+      // rank chip
+      ctx.fillStyle = L.col; ctx.font='900 22px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.shadowColor=L.col; ctx.shadowBlur = (i===0?12:6)*g*reveal;
+      ctx.fillText('#'+L.rank, rx0+30, ry+rowH*0.5+2); ctx.shadowBlur=0;
+      // name + note
+      ctx.textAlign='left';
+      ctx.fillStyle = L.col; ctx.font='800 12px ui-monospace,monospace';
+      ctx.fillText(L.name, rx0+62, ry+18);
+      ctx.fillStyle=`rgba(225,220,200,${0.82})`; ctx.font='700 6.5px ui-monospace,monospace';
+      ctx.fillText(L.note, rx0+62, ry+32);
+      // crown on #1
+      if(i===0){
+        ctx.fillStyle = `rgba(255,224,102,${(0.7+0.3*Math.sin(c*5))*g})`;
+        ctx.font='800 12px ui-monospace,monospace'; ctx.textAlign='right';
+        ctx.fillText('♔ TRUE FINAL BOSS', rx0+rw-8, ry+18);
+        ctx.textAlign='left';
+      }
+    }
+    ctx.globalAlpha=1;
+    // matchup key at the bottom: solid arrow = always beats, dashed = conditional
+    const ky = ry0 + LV_LADDER.length*rowH + 4;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(62,224,106,${0.9*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('— LUIGI GREEN → CLARA & MINDY : ALWAYS BEATS', cx, ky);
+    ctx.fillStyle=`rgba(255,90,110,${0.9*g})`;
+    ctx.fillText('— 001 → CLARA : ALWAYS · 001 ⇢ MINDY : ONLY BY STATE & BOARD', cx, ky+12);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
