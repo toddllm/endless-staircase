@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE FORM NETWORK: 001 is the one main character, and his Training-Center forms retake the top over Overcharge (Lore 39n, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 correction to THE THRONE TAKEN, the beat that re-settles the top of the whole ranking. THE THRONE
+TAKEN had Overpower Luigi Green beating 001 and 001 walking off to a Training Center. This message clarifies the structure:
+001 is not just one form with one ranking. In Toby's own words: *"Luigi Green Overcharge only beats ToddLLM's base form.
+ToddLLM's Togi, Sumeron, Mezon, and other forms will beat Luigi Green, the god form would tie 100% Luigi Green Overcharge.
+ToddLLM's forms are named after the training centers and regions, he transforms into those forms when he enters the right
+place... ToddLLM 001 is Karuto, he is the teacher of sorcerers such as Luigi Green... ToddLLM is the main character of the
+whole game... Simon is just the main character in Sprunki, ToddLLM is the main character of the whole game... ToddLLM can
+summon all Simon's previous power from before and all combined into 1 attack... Simon keeps making sugars for ToddLLM 001...
+ToddLLM 001 then walks back to his Training Center."* Added as an eighteenth beat, THE FORM NETWORK, on the end of the
+UNDEFINED LOOP cutscene, after THE FORCED TAKEOVER. Additive — every earlier beat, including THE THRONE TAKEN, stays exactly
+as it was; this beat reads the bigger picture that puts 001 back over Luigi Green overall.
+
+![Lore 39n — THE FORM NETWORK, the eighteenth beat of the UNDEFINED LOOP. Orange title band reads "THE FORM NETWORK — 001
+IS THE ONE MAIN CHARACTER, AND HIS FORMS RETAKE THE TOP", then "001 IS KARUTO · TEACHER WITHOUT END · HE TRANSFORMS BY
+ENTERING THE RIGHT PLACE" and "LUIGI GREEN OVERCHARGE BEATS ONLY HIS BASE FORM · HIS REGION/TRAINING FORMS BEAT IT · GOD
+FORM TIES 100%". A five-row form ladder runs down the center, each row "001 · <FORM>" with a matchup chip vs Luigi Green
+Overcharge on the right: 001 · BASE FORM — green "✗ LOSES" (overcharge beats only this); 001 · TOGI — orange "✓ BEATS"
+(training-center form); 001 · SUMERON — gold "✓ BEATS" (region form); 001 · MEZON — green "✓ BEATS" (region form); 001 ·
+GOD FORM — pale-gold "= TIES" (ties 100% Luigi Green Overcharge). Below the ladder a pulsing orange banner reads "★
+OVERALL · ToddLLM 001 WINS ★", then a line "001 SUMMONS ALL OF SIMON'S PAST POWERS INTO ONE ATTACK · SIMON KEEPS MAKING
+SUGARS FOR HIM". At the bottom a two-plate main-character split: left, red, "ToddLLM 001 — MAIN CHARACTER OF THE WHOLE
+GAME"; right, blue, "SIMON 404 — MAIN CHARACTER OF SPRUNKI ONLY · SECONDARY · KEEPS MAKING SUGARS FOR 001", under a caption
+"THE ONE MAIN CHARACTER OF THE WHOLE GAME". The eighteen-beat ladder runs down the left edge, fully lit, with THE FORM
+NETWORK at the bottom.](screenshots/80-form-network.png)
+
+- **New eighteenth beat, THE FORM NETWORK.** The UNDEFINED LOOP cutscene now runs eighteen beats; after THE FORCED TAKEOVER
+  comes the beat that re-reads the top once 001's full form system is counted. THE FORM NETWORK is the last beat in the
+  cutscene.
+- **001's place-linked forms.** A form-vs-Overcharge ladder: Luigi Green Overcharge beats only 001's BASE form; his
+  Training-Center / region forms TOGI, SUMERON, and MEZON beat Overcharge; his GOD FORM ties 100% Luigi Green Overcharge.
+  001 transforms into each form by entering the right place.
+- **001 wins overall.** A verdict banner settles it: counting the whole form network, ToddLLM 001 wins overall, then walks
+  back to his Training Center. He can summon all of Simon's past powers into one combined attack, and Simon keeps making
+  sugars for him.
+- **The main-character correction.** A two-plate split makes it canon: ToddLLM 001 (Karuto, Teacher Without End) is the one
+  main character of the whole game; Simon 404 is only the main character of Sprunki, a major secondary pillar who keeps
+  making sugars for 001.
+- **Screenshot scene.** Added a `formnetwork` scene to tools/capture_screenshot.py that drives the cutscene to the new beat.
+
 ## 2026-06-30 — THE FORCED TAKEOVER: no one enjoys being absorbed — it is a forced takeover, and 001 teaches/rules/controls while Luigi Green takes (Lore 39m, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 follow-up to THE OVERPOWER and THE THRONE TAKEN, the beat that says *why* Luigi Green is the

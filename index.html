@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 174.0;
+const LV_CYC = 188.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11390,6 +11390,21 @@ const LV_BEATS = [
     sub:'OVERPOWER LUIGI GREEN BEATS 001 EASILY · EVEN ALL CHARACTERS COMBINED · 001 LEAVES TO A TRAINING CENTER · 1 OVERPOWER LUIGI · 2 ToddLLM 001' },
   { key:'THE FORCED TAKEOVER', col:'#ff5cf0',
     sub:'NO ONE ENJOYS BEING ABSORBED · NOT FRIENDLY, NOT CHOSEN, NOT A POWER-UP · A FORCED TAKEOVER · 001 TEACHES, RULES, CONTROLS · LUIGI GREEN TAKES' },
+  { key:'THE FORM NETWORK', col:'#ff7a3a',
+    sub:'001 IS KARUTO · TEACHER WITHOUT END · THE ONE MAIN CHARACTER OF THE WHOLE GAME · FORMS NAMED FOR TRAINING CENTERS & REGIONS · OVERCHARGE BEATS ONLY BASE · TOGI/SUMERON/MEZON BEAT IT · GOD FORM TIES 100% · 001 WINS OVERALL' },
+];
+// 001's place-linked Training Center / regional forms and how each fares vs Luigi Green Overcharge (THE FORM NETWORK beat) — Toby, June 30
+const LV_FORMS = [
+  { name:'BASE FORM', col:'#ff5a6e', vs:'lose', tag:'OVERCHARGE BEATS ONLY THIS', mark:'✗' },
+  { name:'TOGI',      col:'#ff9a3a', vs:'beat', tag:'TRAINING-CENTER FORM · BEATS OVERCHARGE', mark:'✓' },
+  { name:'SUMERON',   col:'#ffc24a', vs:'beat', tag:'REGION FORM · BEATS OVERCHARGE', mark:'✓' },
+  { name:'MEZON',     col:'#7fe89a', vs:'beat', tag:'REGION FORM · BEATS OVERCHARGE', mark:'✓' },
+  { name:'GOD FORM',  col:'#fff0a0', vs:'tie',  tag:'TIES 100% LUIGI GREEN OVERCHARGE', mark:'=' },
+];
+// the main-character correction — 001 is the one main character of the whole game; Simon only of Sprunki (THE FORM NETWORK beat) — Toby, June 30
+const LV_MAIN = [
+  { who:'ToddLLM 001', scope:'MAIN CHARACTER OF THE WHOLE GAME', col:'#ff5a6e' },
+  { who:'SIMON 404',   scope:'MAIN CHARACTER OF SPRUNKI ONLY · SECONDARY · KEEPS MAKING SUGARS FOR 001', col:'#7fd4ff' },
 ];
 // the final two-being ranking once Overpower Luigi Green surpasses 001 (THE THRONE TAKEN beat) — Toby, June 30
 const LV_THRONE = [
@@ -11464,7 +11479,8 @@ function lvSeg(c){
   if(c < 136.0) return [13, c-124.0];// THE CANON SIX (full canon top six; 001 is canon strongest; identity lore)
   if(c < 148.0) return [14, c-136.0];// THE OVERPOWER (Luigi Green absorbs everything; 100% Overpower; true main villain)
   if(c < 162.0) return [15, c-148.0];// THE THRONE TAKEN (Overpower Luigi beats 001 even vs all combined; 001 to a Training Center)
-  return [16, c-162.0];              // THE FORCED TAKEOVER (absorption is forced not chosen; 001 teaches/rules/controls, Luigi takes)
+  if(c < 174.0) return [16, c-162.0];// THE FORCED TAKEOVER (absorption is forced not chosen; 001 teaches/rules/controls, Luigi takes)
+  return [17, c-174.0];              // THE FORM NETWORK (001 is the one main character; his Training-Center/regional forms retake the top over Overcharge)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11540,6 +11556,10 @@ function updateLoopVs(dt){
       showTaunt('And here is why Luigi Green is the villain and not just the strongest. When he absorbs Clara, the souls, the energy, the games, and every other being, none of them enjoy it. It is not friendly, it is not chosen, it is not a power-up anyone wants. It is a forced takeover. It reads as domination, removal of independence, loss of control, everyone else losing themselves while he becomes more complete. So no, Clara and the others would not enjoy being absorbed. He forces it, takes their power, becomes the strongest overall, and wins against everyone he sees. That is the line between the two: ToddLLM 001 teaches, rules, and controls. Luigi Green takes.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FORCED TAKEOVER · NO ONE ENJOYS IT · 001 TEACHES & RULES · LUIGI GREEN TAKES', col:'#ff5cf0' });
       for(let i=0;i<30;i++) particles.push(spark(player.x, player.y, pick(['#ff5cf0','#ff2db5','#46ff77','#3ee06a','#ff5a6e']))); }
+    if(ph===17){ AUDIO.shock(); shake=Math.max(shake,24); glitch=Math.max(glitch,0.5); winFlash=Math.max(winFlash,0.7);
+      showTaunt('And here is the real shape of it. ToddLLM 001 is not just one form with one ranking. He is Karuto, the Teacher Without End, and he is the one main character of the whole game — Simon is only the main character of Sprunki. 001\'s forms are named after the training centers and the regions, and he turns into them by entering the right place. Luigi Green Overcharge beats only his base form. His training-center and region forms, Togi, Sumeron, Mezon, and the others, beat Overcharge, and his god form ties one hundred percent Luigi Green Overcharge. He can summon every one of Simon\'s past powers into a single attack, and Simon keeps making sugars for him. So overall, ToddLLM 001 wins, and then he walks back to his Training Center. He is a place-linked teacher-being whose full strength depends on where he is and which form he is using.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FORM NETWORK · 001 IS THE ONE MAIN CHARACTER · TOGI/SUMERON/MEZON BEAT OVERCHARGE · GOD FORM TIES · 001 WINS', col:'#ff7a3a' });
+      for(let i=0;i<34;i++) particles.push(spark(player.x, player.y, pick(['#ff7a3a','#ff9a3a','#ffc24a','#7fe89a','#fff0a0','#ff5a6e']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11660,12 +11680,12 @@ function drawLoopVs(){
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11674,7 +11694,8 @@ function drawLoopVs(){
                        : (ph===14 ? 'THE OVERPOWER — LUIGI GREEN ABSORBS EVERYTHING & TAKES THE CENTER'
                        : (ph===15 ? 'THE THRONE TAKEN — OVERPOWER LUIGI GREEN SURPASSES 001'
                        : (ph===16 ? 'THE FORCED TAKEOVER — NO ONE ENJOYS BEING ABSORBED'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))), cx, top+26);
+                       : (ph===17 ? 'THE FORM NETWORK — 001 IS THE ONE MAIN CHARACTER, AND HIS FORMS RETAKE THE TOP'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12599,6 +12620,95 @@ function drawLoopVs(){
     ctx.fillText('♛ LUIGI GREEN', rx, by0+15);
     ctx.fillStyle=`rgba(245,215,240,${0.95*g})`; ctx.font='900 11px ui-monospace,monospace';
     ctx.fillText('TAKES', rx, by0+31);
+  } else if(ph===17){
+    // ----- BEAT 17: THE FORM NETWORK — 001 is the one main character, and his place-linked forms retake the top
+    // (Toby, June 30, "Re: More stuff on ToddLLM 001"). ToddLLM 001 is Karuto, the Teacher Without End, and the one
+    // main character of the whole game; Simon is only the main character of Sprunki. 001's forms are named after the
+    // training centers and regions, and he transforms by entering the right place. Luigi Green Overcharge beats only
+    // his BASE form; his Togi, Sumeron, Mezon and other regional forms beat Overcharge; his god form ties 100%
+    // Overcharge. He can summon all of Simon's past powers into one attack, Simon keeps making sugars for him, and
+    // overall 001 wins, then walks back to a Training Center. Drawn as a form-vs-Overcharge ladder over a
+    // main-character split strip. -----
+    const lt = c - 174.0; // local beat time (beat 17 spans c in [174,188])
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,122,58,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('001 IS KARUTO · TEACHER WITHOUT END · HE TRANSFORMS BY ENTERING THE RIGHT PLACE', cx, top+H*0.095);
+    ctx.fillStyle=`rgba(245,215,195,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('LUIGI GREEN OVERCHARGE BEATS ONLY HIS BASE FORM · HIS REGION/TRAINING FORMS BEAT IT · GOD FORM TIES 100%', cx, top+H*0.095+12);
+
+    // form-vs-Overcharge ladder
+    const fw = Math.min(W*0.86, 430), fx0 = cx - fw/2, rowH = H*0.092, fy0 = top + H*0.165;
+    for(let i=0;i<LV_FORMS.length;i++){
+      const F = LV_FORMS[i], fy = fy0 + i*rowH;
+      const reveal = Math.max(0, Math.min(1, (lt - 0.5 - i*0.55) / 0.8));
+      ctx.globalAlpha = g*reveal;
+      const plate = ctx.createLinearGradient(fx0, fy, fx0+fw, fy);
+      plate.addColorStop(0, 'rgba(18,12,8,0.92)'); plate.addColorStop(1, 'rgba(8,6,5,0.92)');
+      ctx.fillStyle = plate; ctx.fillRect(fx0, fy, fw, rowH-8);
+      const top001 = (F.vs==='beat'||F.vs==='tie');
+      ctx.strokeStyle = F.col; ctx.lineWidth = top001 ? 2.2 : 1.2;
+      ctx.strokeRect(fx0, fy, fw, rowH-8);
+      // form name
+      ctx.textAlign='left';
+      ctx.fillStyle = F.col; ctx.font='800 12px ui-monospace,monospace';
+      ctx.shadowColor=F.col; ctx.shadowBlur=(top001?9:3)*g*reveal;
+      ctx.fillText('001 · '+F.name, fx0+12, fy+(rowH-8)*0.46); ctx.shadowBlur=0;
+      ctx.fillStyle=`rgba(232,222,210,${0.8})`; ctx.font='700 6.5px ui-monospace,monospace';
+      ctx.fillText(F.tag, fx0+12, fy+(rowH-8)*0.82);
+      // matchup chip vs Overcharge on the right
+      const chipW=92, chipX=fx0+fw-chipW-8, chipY=fy+5, chipH=rowH-18;
+      const chipCol = F.vs==='lose' ? '#3ee06a' : (F.vs==='tie' ? '#fff0a0' : F.col);
+      const chipTxt = F.vs==='lose' ? '✗ LOSES' : (F.vs==='tie' ? '= TIES' : '✓ BEATS');
+      ctx.fillStyle = F.vs==='lose' ? 'rgba(10,24,12,0.9)' : 'rgba(26,18,6,0.9)';
+      ctx.fillRect(chipX, chipY, chipW, chipH);
+      ctx.strokeStyle=chipCol; ctx.lineWidth=1.3; ctx.strokeRect(chipX, chipY, chipW, chipH);
+      ctx.textAlign='center'; ctx.fillStyle=chipCol; ctx.font='800 8px ui-monospace,monospace';
+      ctx.fillText(chipTxt, chipX+chipW/2, chipY+chipH*0.42);
+      ctx.fillStyle=`rgba(200,210,210,${0.8})`; ctx.font='700 5.5px ui-monospace,monospace';
+      ctx.fillText('vs LUIGI GREEN OVERCHARGE', chipX+chipW/2, chipY+chipH*0.82);
+    }
+    ctx.globalAlpha=1;
+
+    // overall verdict banner
+    const oy = fy0 + LV_FORMS.length*rowH + H*0.012;
+    const ow = Math.min(W*0.6, 320);
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.8));
+    ctx.fillStyle='rgba(28,14,4,0.92)'; ctx.fillRect(cx-ow/2, oy, ow, 20);
+    ctx.strokeStyle='#ff7a3a'; ctx.lineWidth=2; ctx.strokeRect(cx-ow/2, oy, ow, 20);
+    ctx.textAlign='center'; ctx.fillStyle=`rgba(255,150,90,${(0.75+0.25*Math.sin(c*5))})`;
+    ctx.font='900 11px ui-monospace,monospace';
+    ctx.fillText('★ OVERALL · ToddLLM 001 WINS ★', cx, oy+14);
+    ctx.globalAlpha=1;
+
+    // one-attack line: 001 summons all of Simon's past powers into a single attack
+    const ay = oy + 30;
+    ctx.fillStyle=`rgba(255,224,170,${0.9*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('001 SUMMONS ALL OF SIMON’S PAST POWERS INTO ONE ATTACK · SIMON KEEPS MAKING SUGARS FOR HIM', cx, ay);
+
+    // main-character split strip: 001 = whole game; Simon = Sprunki only
+    const sy = ay + H*0.018, sh = H*0.115, sw = Math.min(W*0.44, 232);
+    const slx = cx - sw/2 - 6, srx = cx + sw/2 + 6;
+    for(let i=0;i<LV_MAIN.length;i++){
+      const M = LV_MAIN[i], bx = i===0 ? slx : srx;
+      ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.0-i*0.4)/0.8));
+      ctx.fillStyle = i===0 ? 'rgba(24,10,12,0.92)' : 'rgba(8,16,22,0.92)';
+      ctx.fillRect(bx-sw/2, sy, sw, sh);
+      ctx.strokeStyle=M.col; ctx.lineWidth = i===0 ? 2.4 : 1.4; ctx.strokeRect(bx-sw/2, sy, sw, sh);
+      ctx.fillStyle=M.col; ctx.font='800 11px ui-monospace,monospace';
+      ctx.fillText(M.who, bx, sy+18);
+      ctx.fillStyle=`rgba(230,224,216,${0.86})`; ctx.font='700 6.5px ui-monospace,monospace';
+      // wrap the scope text across up to two lines on the narrow plate
+      const words = M.scope.split(' '); let line=''; let ln=0;
+      for(const w of words){
+        const test = line ? line+' '+w : w;
+        if(test.length>26 && line){ ctx.fillText(line, bx, sy+34+ln*11); line=w; ln++; }
+        else line=test;
+      }
+      if(line) ctx.fillText(line, bx, sy+34+ln*11);
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(255,122,58,${0.9*g})`; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE ONE MAIN CHARACTER OF THE WHOLE GAME', cx, sy+sh+13);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
