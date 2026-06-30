@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE FORCED TAKEOVER: no one enjoys being absorbed — it is a forced takeover, and 001 teaches/rules/controls while Luigi Green takes (Lore 39m, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 follow-up to THE OVERPOWER and THE THRONE TAKEN, the beat that says *why* Luigi Green is the
+villain and not just the strongest. The question was whether anything, or Clara, would enjoy being absorbed by Luigi
+Green. In Toby's own words: *"They don't, Luigi Green absorbs each, Luigi Green becomes most powerful over all... it's a
+forced takeover... domination, removal of independence, loss of control, and Luigi Green becoming more complete while
+everyone else loses themselves... No, Clara and the others would not enjoy being absorbed by Luigi Green. He forces it,
+takes their power, becomes the strongest overall, and then wins against everyone he sees... ToddLLM teaches, rules, and
+controls. Luigi Green takes."* Added as a seventeenth and final beat, THE FORCED TAKEOVER, on the end of the UNDEFINED
+LOOP cutscene, after THE THRONE TAKEN. THE OVERPOWER showed the absorption; this beat reads the meaning of it. Luigi
+Green's absorption is not friendly, not chosen, and not a power-up anyone wants — it is a forced takeover that reads as
+domination, removal of independence, loss of control, and everyone else losing themselves. That is the line that makes
+him the villain while ToddLLM 001 stays the neutral creator: 001 teaches, rules, and controls; Luigi Green takes.
+Additive — THE THRONE TAKEN and every earlier beat stay exactly as they were.
+
+![Lore 39m — THE FORCED TAKEOVER, the seventeenth and final beat of the UNDEFINED LOOP. Magenta title band reads "THE
+FORCED TAKEOVER — NO ONE ENJOYS BEING ABSORBED", then "THE ABSORPTION IS A FORCED TAKEOVER — NOT A POWER-UP ANYONE WANTS"
+and "NO, CLARA AND THE OTHERS WOULD NOT ENJOY IT · HE FORCES IT, TAKES THEIR POWER, WINS AGAINST EVERYONE HE SEES". A
+forced drag-in scene shows Luigi Green at left with a green cat-power aura pulling a jittering pink Clara toward him along
+a magenta "ABSORB" beam, a small yellow "RESISTS" arrow failing against the pull, and a flashing "FORCED · AGAINST HER
+WILL" tag above. Below, a row of three crossed-out magenta chips — "✗ NOT FRIENDLY", "✗ NOT CHOSEN", "✗ NOT A POWER-UP
+ANYONE WANTS" — and an "IT READS AS" column listing DOMINATION · REMOVAL OF INDEPENDENCE · LOSS OF CONTROL · EVERYONE
+ELSE LOSES THEMSELVES. A bottom contrast strip splits the two beings: left, outlined in red, "ToddLLM 001 — TEACHES ·
+RULES · CONTROLS"; right, outlined thick in magenta with a queen mark, "♛ LUIGI GREEN — TAKES". The seventeen-beat ladder
+runs down the left edge, fully lit, with THE FORCED TAKEOVER at the bottom.](screenshots/79-forced-takeover.png)
+
+- **New seventeenth beat, THE FORCED TAKEOVER.** The UNDEFINED LOOP cutscene now runs seventeen beats; after THE THRONE
+  TAKEN comes the beat that explains why the absorption makes Luigi Green the villain. THE FORCED TAKEOVER is the last
+  beat in the cutscene.
+- **No one enjoys being absorbed.** Drawn as Luigi Green dragging a resisting Clara into himself against her will, with a
+  "FORCED · AGAINST HER WILL" tag — the absorption is not friendly, not chosen, not a power-up anyone wants.
+- **What it reads as.** A crossed-out NOT row and an IT READS AS column spell it out: domination, removal of independence,
+  loss of control, everyone else losing themselves while Luigi Green becomes more complete.
+- **The line between the two.** A bottom contrast strip settles it: ToddLLM 001 teaches, rules, and controls; Luigi Green
+  takes. That is why 001 stays the neutral creator and Luigi Green is the villain.
+- **Screenshot scene.** Added a `forced` scene to tools/capture_screenshot.py that drives the cutscene to the new beat.
+
 ## 2026-06-30 — THE THRONE TAKEN: Overpower Luigi Green beats 001 even vs all combined, and 001 leaves to a Training Center (Lore 39l, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 follow-up to THE OVERPOWER, the throne actually changing hands. In his own words: *"Overpower Luigi

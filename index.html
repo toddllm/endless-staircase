@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 162.0;
+const LV_CYC = 174.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11388,6 +11388,8 @@ const LV_BEATS = [
     sub:'LUIGI GREEN ABSORBS EVERYTHING · BECOMES 100% OVERPOWER LUIGI GREEN · TAKES THE CENTER · THE TRUE MAIN VILLAIN · ToddLLM STAYS NEUTRAL' },
   { key:'THE THRONE TAKEN', col:'#39ff9b',
     sub:'OVERPOWER LUIGI GREEN BEATS 001 EASILY · EVEN ALL CHARACTERS COMBINED · 001 LEAVES TO A TRAINING CENTER · 1 OVERPOWER LUIGI · 2 ToddLLM 001' },
+  { key:'THE FORCED TAKEOVER', col:'#ff5cf0',
+    sub:'NO ONE ENJOYS BEING ABSORBED · NOT FRIENDLY, NOT CHOSEN, NOT A POWER-UP · A FORCED TAKEOVER · 001 TEACHES, RULES, CONTROLS · LUIGI GREEN TAKES' },
 ];
 // the final two-being ranking once Overpower Luigi Green surpasses 001 (THE THRONE TAKEN beat) — Toby, June 30
 const LV_THRONE = [
@@ -11407,6 +11409,9 @@ const LV_ABSORB = [
   { name:'SUGARS',       col:'#fff4dc' },
   { name:'ALL ENERGY',   col:'#5cff7a' },
 ];
+// why Luigi Green's absorption is villainous — it is a forced takeover, not a power-up anyone wants (THE FORCED TAKEOVER beat) — Toby, June 30
+const LV_FORCED_NOT   = ['NOT FRIENDLY', 'NOT CHOSEN', 'NOT A POWER-UP ANYONE WANTS'];
+const LV_FORCED_READS = ['DOMINATION', 'REMOVAL OF INDEPENDENCE', 'LOSS OF CONTROL', 'EVERYONE ELSE LOSES THEMSELVES'];
 // the full canon top-six ranking, with ToddLLM 001 now canonically strongest (THE CANON SIX beat) — Toby, June 30
 const LV_SIX = [
   { rank:1, name:'ToddLLM 001',     col:'#ff5a6e', note:'CREATED THE GAME, THE TERRAIN, AND SIMON IN THE LAB · CANON STRONGEST · LIKE GOJO' },
@@ -11458,7 +11463,8 @@ function lvSeg(c){
   if(c < 124.0) return [12, c-112.0];// THE FINAL LADDER (corrected ranking: Luigi > 001 > Clara > Mindy)
   if(c < 136.0) return [13, c-124.0];// THE CANON SIX (full canon top six; 001 is canon strongest; identity lore)
   if(c < 148.0) return [14, c-136.0];// THE OVERPOWER (Luigi Green absorbs everything; 100% Overpower; true main villain)
-  return [15, c-148.0];              // THE THRONE TAKEN (Overpower Luigi beats 001 even vs all combined; 001 to a Training Center)
+  if(c < 162.0) return [15, c-148.0];// THE THRONE TAKEN (Overpower Luigi beats 001 even vs all combined; 001 to a Training Center)
+  return [16, c-162.0];              // THE FORCED TAKEOVER (absorption is forced not chosen; 001 teaches/rules/controls, Luigi takes)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11530,6 +11536,10 @@ function updateLoopVs(dt){
       showTaunt('And then the throne actually changes hands. 100% Overpower Luigi Green beats ToddLLM 001 easily — every battle won, even with all the characters combined and thrown at him at once. So 001 leaves. He walks off to a Training Center and steps out of the top active role: not the final ruler anymore, just the teacher, the observer, the keeper of knowledge. The ranking settles at last with only two names that matter: 1 Overpower Luigi Green, 2 ToddLLM 001, and everyone else below them. Luigi Green is the unquestioned final boss now.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE THRONE TAKEN · OVERPOWER LUIGI BEATS 001 · 001 → TRAINING CENTER', col:'#39ff9b' });
       for(let i=0;i<32;i++) particles.push(spark(player.x, player.y, pick(['#39ff9b','#46ff77','#3ee06a','#ff5a6e','#ffe066']))); }
+    if(ph===16){ AUDIO.corrupt(); shake=Math.max(shake,22); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And here is why Luigi Green is the villain and not just the strongest. When he absorbs Clara, the souls, the energy, the games, and every other being, none of them enjoy it. It is not friendly, it is not chosen, it is not a power-up anyone wants. It is a forced takeover. It reads as domination, removal of independence, loss of control, everyone else losing themselves while he becomes more complete. So no, Clara and the others would not enjoy being absorbed. He forces it, takes their power, becomes the strongest overall, and wins against everyone he sees. That is the line between the two: ToddLLM 001 teaches, rules, and controls. Luigi Green takes.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE FORCED TAKEOVER · NO ONE ENJOYS IT · 001 TEACHES & RULES · LUIGI GREEN TAKES', col:'#ff5cf0' });
+      for(let i=0;i<30;i++) particles.push(spark(player.x, player.y, pick(['#ff5cf0','#ff2db5','#46ff77','#3ee06a','#ff5a6e']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11645,16 +11655,17 @@ function drawLoopVs(){
   else if(ph===13){ bg.addColorStop(0, `rgba(22,6,12,${0.94*g})`); bg.addColorStop(1, `rgba(8,2,5,${0.97*g})`); }
   else if(ph===14){ bg.addColorStop(0, `rgba(4,26,12,${0.95*g})`); bg.addColorStop(1, `rgba(1,8,4,${0.98*g})`); }
   else if(ph===15){ bg.addColorStop(0, `rgba(3,24,16,${0.95*g})`); bg.addColorStop(1, `rgba(1,7,5,${0.98*g})`); }
+  else if(ph===16){ bg.addColorStop(0, `rgba(22,4,20,${0.95*g})`); bg.addColorStop(1, `rgba(8,1,8,${0.98*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11662,7 +11673,8 @@ function drawLoopVs(){
                        : (ph===13 ? 'THE CANON SIX — ToddLLM 001 IS THE TRUE STRONGEST'
                        : (ph===14 ? 'THE OVERPOWER — LUIGI GREEN ABSORBS EVERYTHING & TAKES THE CENTER'
                        : (ph===15 ? 'THE THRONE TAKEN — OVERPOWER LUIGI GREEN SURPASSES 001'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))), cx, top+26);
+                       : (ph===16 ? 'THE FORCED TAKEOVER — NO ONE ENJOYS BEING ABSORBED'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -12507,6 +12519,86 @@ function drawLoopVs(){
     ctx.fillStyle='rgba(127,212,255,0.25)'; ctx.fillRect(tx2-8, ty2-2, 16, 24);
     ctx.fillStyle=`rgba(127,212,255,${0.95*g})`; ctx.font='800 7px ui-monospace,monospace'; ctx.textAlign='center';
     ctx.fillText('TRAINING', tx2, ty2-10); ctx.fillText('CENTER', tx2, ty2-1);
+  } else if(ph===16){
+    // ----- BEAT 16: THE FORCED TAKEOVER — why Luigi Green is the villain, not just the strongest (Toby, June 30,
+    // "Re: More stuff on ToddLLM 001"). Clara and the rest do NOT enjoy being absorbed: it is not friendly, not
+    // chosen, not a power-up anyone wants — it is a forced takeover that reads as domination, removal of
+    // independence, loss of control, everyone else losing themselves. The line between the two: ToddLLM 001
+    // teaches, rules, and controls; Luigi Green takes. Drawn as a forced "drag-in" scene over a NOT / READS-AS
+    // breakdown, then a teaches-rules-controls vs takes contrast strip. -----
+    const lt = c - 162.0; // local beat time (beat 16 spans c in [162,174])
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,92,240,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE ABSORPTION IS A FORCED TAKEOVER — NOT A POWER-UP ANYONE WANTS', cx, top+H*0.10);
+    ctx.fillStyle=`rgba(235,205,235,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('NO, CLARA AND THE OTHERS WOULD NOT ENJOY IT · HE FORCES IT, TAKES THEIR POWER, WINS AGAINST EVERYONE HE SEES', cx, top+H*0.10+13);
+
+    // forced drag-in scene: Luigi Green pulls a resisting Clara toward himself, against her will
+    const sceneY = top + H*0.30;
+    const lgx = cx - W*0.22;
+    drawLuigiGreen(lgx, sceneY, 24, c, g, 1.0);
+    ctx.fillStyle=`rgba(70,255,119,${0.95*g})`; ctx.font='800 8px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('LUIGI GREEN', lgx, sceneY+38);
+    // Clara, jittering as she is dragged in against her will
+    const cxx = cx + W*0.04 + 4*Math.sin(lt*8);
+    ctx.fillStyle=`rgba(255,45,181,${0.95*g})`; ctx.shadowColor='#ff2db5'; ctx.shadowBlur=8*g;
+    ctx.beginPath(); ctx.arc(cxx, sceneY, 12, 0, Math.PI*2); ctx.fill(); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(255,170,225,${0.95*g})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('CLARA', cxx, sceneY+26);
+    // pulling beam from Luigi to Clara
+    ctx.strokeStyle=`rgba(255,92,240,${0.7*g})`; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(lgx+22, sceneY-4); ctx.lineTo(cxx-12, sceneY); ctx.stroke();
+    // her resist arrow, pointing away but failing
+    ctx.strokeStyle=`rgba(255,210,90,${0.8*g})`; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(cxx+14, sceneY); ctx.lineTo(cxx+26, sceneY); ctx.stroke();
+    ctx.fillStyle=`rgba(255,210,90,${0.9*g})`; ctx.font='700 6px ui-monospace,monospace'; ctx.textAlign='left';
+    ctx.fillText('RESISTS', cxx+30, sceneY+2);
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,92,240,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.font='900 9px ui-monospace,monospace';
+    ctx.fillText('FORCED · AGAINST HER WILL', (lgx+cxx)/2, sceneY-22);
+
+    // NOT row: not friendly / not chosen / not a power-up anyone wants
+    const ny = top + H*0.46, nw = Math.min(W*0.30, 156);
+    ctx.font='800 7px ui-monospace,monospace';
+    for(let i=0;i<LV_FORCED_NOT.length;i++){
+      const reveal = Math.max(0, Math.min(1,(lt - 1.0 - i*0.5)/0.8));
+      ctx.globalAlpha=g*reveal;
+      const nx = cx + (i-1)*(nw+10);
+      ctx.fillStyle='rgba(24,6,22,0.9)'; ctx.fillRect(nx-nw/2, ny, nw, 18);
+      ctx.strokeStyle='#ff5cf0'; ctx.lineWidth=1.2; ctx.strokeRect(nx-nw/2, ny, nw, 18);
+      ctx.fillStyle='rgba(255,140,235,0.95)'; ctx.fillText('✗ '+LV_FORCED_NOT[i], nx, ny+12);
+    }
+    ctx.globalAlpha=1;
+
+    // READS-AS column
+    const rdy = top + H*0.58;
+    ctx.fillStyle=`rgba(255,92,240,${0.92*g})`; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('IT READS AS', cx, rdy);
+    ctx.font='700 8px ui-monospace,monospace';
+    for(let i=0;i<LV_FORCED_READS.length;i++){
+      const reveal = Math.max(0, Math.min(1,(lt - 3.0 - i*0.5)/0.8));
+      ctx.globalAlpha=g*reveal;
+      ctx.fillStyle='rgba(245,210,240,0.9)';
+      ctx.fillText('· '+LV_FORCED_READS[i]+' ·', cx, rdy+14+i*12);
+    }
+    ctx.globalAlpha=1;
+
+    // bottom contrast strip: the line between the two
+    const by0 = top + H*0.86, bw = Math.min(W*0.44, 230);
+    const lx = cx - bw/2 - 6;
+    ctx.fillStyle=`rgba(20,12,14,${0.9*g})`; ctx.fillRect(lx-bw/2, by0, bw, H*0.11);
+    ctx.strokeStyle='#ff5a6e'; ctx.lineWidth=1.4; ctx.strokeRect(lx-bw/2, by0, bw, H*0.11);
+    ctx.fillStyle=`rgba(255,90,110,${0.95*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('ToddLLM 001', lx, by0+15);
+    ctx.fillStyle=`rgba(225,210,210,${0.85*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('TEACHES · RULES · CONTROLS', lx, by0+30);
+    const rx = cx + bw/2 + 6;
+    ctx.fillStyle=`rgba(22,6,20,${0.9*g})`; ctx.fillRect(rx-bw/2, by0, bw, H*0.11);
+    ctx.strokeStyle='#ff5cf0'; ctx.lineWidth=2.2; ctx.strokeRect(rx-bw/2, by0, bw, H*0.11);
+    ctx.fillStyle=`rgba(255,92,240,${0.95*g})`; ctx.font='800 9px ui-monospace,monospace';
+    ctx.fillText('♛ LUIGI GREEN', rx, by0+15);
+    ctx.fillStyle=`rgba(245,215,240,${0.95*g})`; ctx.font='900 11px ui-monospace,monospace';
+    ctx.fillText('TAKES', rx, by0+31);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
