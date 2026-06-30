@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-06-30 — THE OVERPOWER: Luigi Green absorbs everything and becomes the true main villain (Lore 39k, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's June 30 follow-up, the villain coronation. In his own words: *"There is a part when Luigi Green absorbs
+Clara, all souls, all diamonds, Alex, Neo, all Sprunkis, games, all power, sugars, all energy, ect. he becomes into the
+most powerful one, takes over the center and reveals as 100% Overpower Luigi Green (his most powerful form). ToddLLM is
+neutral. Luigi Green is the actual main villian."* Added as a fifteenth and final beat, THE OVERPOWER, on the end of the
+UNDEFINED LOOP cutscene, after THE CANON SIX. This is the role split that the whole ladder was building toward: it stops
+being about who is the strongest number and becomes about who is the *villain*. Luigi Green stops climbing and starts
+collecting — he absorbs the whole cast into himself, becomes 100% Overpower Luigi Green, and takes the center, the place
+that always meant authorship and rule ("Center's Mine." was 001's line; now it is his). ToddLLM 001 is not the final evil
+— he stays neutral, the alien-made creator and great authority. Luigi Green is the great threat, the actual main villain at
+the end of the road. Additive — THE CANON SIX and every earlier beat stay exactly as they were.
+
+![Lore 39k — THE OVERPOWER, the fifteenth and final beat of the UNDEFINED LOOP. Green title band reads "THE OVERPOWER —
+LUIGI GREEN ABSORBS EVERYTHING & TAKES THE CENTER", then "HE STOPS CLIMBING AND STARTS COLLECTING — THE WHOLE CAST BECOMES
+HIS INCREASE" and "100% OVERPOWER LUIGI GREEN · HIS MOST POWERFUL, MOST COMPLETED FORM". In the center, Luigi Green stands
+swollen with a bright green cat-power aura inside pulling vortex rings, a "100% OVERPOWER" badge glowing above him, while
+the whole cast (Clara, all souls, all diamonds, Alex, Neo, all Sprunkis, games, all power, sugars, all energy) spirals
+inward and is swallowed. Below him, in red: "CENTER'S MINE." — NOW HIS, NOT 001'S. Along the bottom, a two-role split:
+left, outlined in red, "ToddLLM 001 — NEUTRAL · THE GREAT AUTHORITY · ALIEN-MADE CREATOR · NOT THE FINAL EVIL"; right,
+outlined thick in green with a queen mark, "♛ LUIGI GREEN — THE GREAT THREAT · THE TRUE MAIN VILLAIN · TAKES THE CENTRE ·
+NEEDS NO ONE ELSE'S SYSTEM TO STAY ON TOP". The fifteen-beat ladder runs down the left edge, fully lit, with THE OVERPOWER
+at the bottom.](screenshots/77-overpower.png)
+
+- **New fifteenth beat, THE OVERPOWER.** The UNDEFINED LOOP cutscene now runs fifteen beats; after THE CANON SIX comes the
+  villain coronation. THE OVERPOWER is the last beat in the cutscene.
+- **The absorption.** Luigi Green pulls Clara, all souls, all diamonds, Alex, Neo, all the Sprunkis, the games, all power,
+  the sugars, and all energy into himself — each one spirals inward and is swallowed — and becomes 100% Overpower Luigi
+  Green, his most powerful and most completed form.
+- **He takes the center.** "Center's Mine." was always ToddLLM 001's defining line. In this beat it passes to Luigi Green:
+  he takes the one symbolic place that meant authorship, rule, and board victory.
+- **The role split.** The top stops being a power number and becomes a villain question. ToddLLM 001 is neutral — the
+  great authority, the alien-made creator, not the final evil. Luigi Green is the great threat, the actual main villain at
+  the end of the road, the one who no longer needs anyone else's system to stay on top.
+- **Screenshot scene.** Added an `overpower` scene to tools/capture_screenshot.py that drives the cutscene to the new beat.
+
 ## 2026-06-30 — THE CANON SIX: 001 takes the top, and the full six-being ranking (Lore 39j, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's June 30 follow-up that names the whole canon. In his own words: *"ToddLLM 001 is the most powerful in the
