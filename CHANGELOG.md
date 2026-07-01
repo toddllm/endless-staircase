@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — GRAY.EXE: the cyber-eye surgery turns Gray into a first-strike war-machine (Lore 41, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's July 1 lore. In his words: *"Gray's right eye now became a bright blue cyber eye, Clunkr and Fun Bot and
+Garnold try to improve him, Gray then goes beyond Sprunki to Classics, Black accidentally touched Gray's brain during surgerry,
+now Gray feels a rage of fury and always attacks first when alarmed. Gray is now 4th of power in Classics. 1. Classics, 2.
+ToddLLM, 3. Luigi Green, 4. Gray... who knew that just touching his brain makes Gray.EXE hostile, Classics becomes Corrupt,
+everyone cleans Classics again, Gray.EXE doesn't stop attacking vigoriously."* A repair went wrong: the trio try to improve
+Gray, his right eye becomes a bright blue cyber eye, and when Black accidentally touches Gray's brain it changes him deeply.
+Now he is a permanently damaged war-machine, always attacks first when alarmed, and rises past Sprunki into Classics-tier — 4th
+in power under Classics, ToddLLM 001, and Luigi Green. The part that matters most: even after everyone cleans Classics again,
+Gray.EXE does not stop. He is no longer tied to the state of the world; he becomes his own continuing threat. Added as a
+twenty-first beat, GRAY.EXE, on the end of the UNDEFINED LOOP cutscene, right after EXPANSION DOMAIN. Additive — every earlier
+beat is untouched.
+
+- New beat 20, **GRAY.EXE** (cyber blue `#5cc8ff`), added to `LV_BEATS`; `LV_CYC` extended 218 → 232s and `lvSeg` gains the `[20, c-218]` segment. New taunt, title-band entry, background gradient, and strip colors for `ph===20`.
+- Draws the **surgery scene** — a steel-gray Gray with a glowing **bright blue cyber right eye** and a furious mouth, ringed by the team from the new `LV_GRAY_TEAM` (CLUNKR / FUN BOT / GARNOLD "tries to improve him", and BLACK "accidentally touches his brain" with a red line to the brain) — the **transformation reads** from `LV_GRAY_READS` (CYBER ENHANCEMENT · BRAIN-DAMAGE HOSTILITY · ATTACKS FIRST WHEN ALARMED · A CONTINUING THREAT OF HIS OWN), and the new **four-being ladder** from `LV_GRAY_RANK` (1 CLASSICS · 2 ToddLLM 001 · 3 LUIGI GREEN · 4 GRAY, the #4 plate highlighted), under the banner "CLASSICS IS CLEANED AGAIN — BUT GRAY.EXE DOESN'T STOP · HIS OWN CONTINUING THREAT."
+- One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 41 — the GRAY.EXE beat. Cyan title band reads "GRAY.EXE — THE CYBER-EYE SURGERY MAKES HIM A FIRST-STRIKE WAR-MACHINE, 4TH IN POWER", with the line "A REPAIR THAT TURNED INTO A WAR-MACHINE · WHO KNEW TOUCHING HIS BRAIN MAKES GRAY.EXE HOSTILE" and "BEYOND SPRUNKI · NOW A CLASSICS-TIER FORCE". In the center a steel-gray figure with a glowing bright-blue cyber right eye (ringed by a cyan cross-hair), an angry left eye slit, and a furious red mouth, wrapped in a red rage aura, labeled "GRAY.EXE" over "RIGHT EYE = A BRIGHT BLUE CYBER EYE · ALWAYS ATTACKS FIRST WHEN ALARMED". Around him the surgery team: GARNOLD, FUN BOT, CLUNKR each "TRIES TO IMPROVE HIM", and BLACK "ACCIDENTALLY TOUCHES HIS BRAIN" with a red line into his head. A row of transformation-read plates: BRAIN-DAMAGE HOSTILITY, ATTACKS FIRST WHEN ALARMED, A CONTINUING THREAT OF HIS OWN. Below, the four-being ladder: 1 CLASSICS (the game as a being), 2 ToddLLM 001 (the one main character), 3 LUIGI GREEN (strongest normal being), 4 GRAY (permanently damaged war-machine · first-strike hostility · a huge single-character jump), with the #4 plate outlined brighter. A cyan banner reads "★ CLASSICS IS CLEANED AGAIN — BUT GRAY.EXE DOESN'T STOP · HIS OWN CONTINUING THREAT ★". The left-edge lore ladder now ends on a lit "◆ GRAY.EXE".](screenshots/84-grayexe.png)
+
 ## 2026-07-01 — EXPANSION DOMAIN: Classics' Domain Expansion and full moveset (Lore 40, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's July 1 lore. He gave Classics her whole battle kit. In his words: *"Classics' Domain Expansion is 'Expansion
