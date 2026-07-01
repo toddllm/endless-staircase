@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 282.0;
+const LV_CYC = 300.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11404,6 +11404,8 @@ const LV_BEATS = [
     sub:'CLASSICS CAN ALWAYS BEAT GRAY.EXE · SHE CAN SIMPLY DELETE HIM · THE ONLY ONE WITH REAL TECHNIQUES · SHE USES THEM TO PLAN · SHE CHOOSES HER PATTERN ON PURPOSE · SHE NEVER GOES RANDOM · ABOVE CHAOS, FEAR & RANDOMNESS — CONTROL BEATS OVERWHELM' },
   { key:'PERO / CLOVER TODDLLM', col:'#ffc23a',
     sub:'ToddLLM IS NOT ONE OF THE TOP — HE IS THE 1 · CLASSICS ALONE STILL SURPASSES HIM · HE PUTS ON A COWBOY HAT & HOLDS A 6-POINTED STAR: PERO ToddLLM · IN THE UNDERTALE AU: CLOVER ToddLLM · CLOVER BEATS SANS, PAUL, CLARA & CHARA, FRISK & FRIZZ, CAPTAIN ARCSIS, LUIGI GREEN — JUST ABOUT EVERYONE · HIS TEXT BOX IS ANIMATED, THE BEST IN CLASSICS · HE WON AS BOTH UNDERTALE & CLASSICS AT ONCE, SO HE MADE PERO ToddLLM HIS NEW BASE — HIS DEFAULT SELF EVOLVED' },
+  { key:'CLARA IS CLASSICS', col:'#d46bff',
+    sub:'CLARA AND CLASSICS ARE THE SAME BEING · CLARA IS CLASSICS WEARING A DIFFERENT SHELL — ONE OF HER MAIN FACES · CLEAN, CORRUPT, MERCIFUL & DESTRUCTIVE ARE ALL THE SAME TOP-LEVEL ENTITY · “MAYBE I COULD SPARE YOU ONCE” — SHE DOES IT COMMONLY · HER MERCY IS A PAUSE, NOT SAFETY: A TEST, A MOOD, A TEMPORARY ALLOWANCE · SHE SPARES PERO ToddLLM, THEN DESTROYS HIM THE NEXT BATTLE · ToddLLM WALKS BACK TO HIS TRAINING · A DELIBERATE CHOICE IS SCARIER THAN PURE EVIL' },
 ];
 // Gray's new rank after the cyber-eye surgery pushed him past Sprunki into Classics-tier (GRAY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_GRAY_RANK = [
@@ -11464,6 +11466,22 @@ const LV_PERO_MERGE = [
   { name:'UNDERTALE',        col:'#7fd4ff', note:'THE UNDERTALE AU — WHERE HE IS CLOVER ToddLLM' },
   { name:'CLASSICS',         col:'#b06bff', note:'THE GAME ITSELF — HE BEAT IT, SO HE CAN USE ITS LOGIC' },
   { name:'HIS WINNING SELF', col:'#ffc23a', note:'THE COWBOY/STAR IDENTITY THAT KEEPS WINNING' },
+];
+// the faces of Classics — Clara is one of her shells; clean/corrupt/merciful/destructive are all the same being (CLARA IS CLASSICS beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
+const LV_CLARA_FACES = [
+  { name:'CLEAN',       col:'#7fd4ff', note:'THE CALM SYSTEM FACE' },
+  { name:'MERCIFUL',    col:'#8fe89a', note:'“MAYBE I COULD SPARE YOU ONCE”' },
+  { name:'CORRUPT',     col:'#ff5cf0', note:'THE GLITCHING WORLD-BODY' },
+  { name:'DESTRUCTIVE', col:'#ff4060', note:'WANTS THE SOUL · DESTROYS ALL IT SEES' },
+  { name:'CLARA',       col:'#ff2db5', note:'CLASSICS WEARING A DIFFERENT SHELL' },
+];
+// what Classics' mercy really is — not safety, only a temporary allowance (CLARA IS CLASSICS beat) — Toby, July 1
+const LV_MERCY = ['A PAUSE', 'A TEST', 'A MOOD', 'A TEMPORARY ALLOWANCE'];
+// the Pero ToddLLM example — spared once, destroyed the next battle, then he walks back to his Training (CLARA IS CLASSICS beat) — Toby, July 1
+const LV_SPARE_SEQ = [
+  { step:'“MAYBE I COULD SPARE YOU ONCE”', col:'#8fe89a', note:'SHE SPARES PERO ToddLLM · MERCY, FOR NOW' },
+  { step:'THE NEXT BATTLE',                col:'#ff4060', note:'SHE DESTROYS HIM ANYWAY · MERCY WAS ONLY A PAUSE' },
+  { step:'ToddLLM WALKS BACK',             col:'#ffc23a', note:'NO FINAL DEATH · HE RETURNS TO HIS TRAINING · THE CYCLE RESETS' },
 ];
 // Classics' full moveset — her Domain Expansion "Expansion Domain" plus her core + special attacks (EXPANSION DOMAIN beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_CLASSICS_MOVES = [
@@ -11576,7 +11594,8 @@ function lvSeg(c){
   if(c < 232.0) return [20, c-218.0]; // GRAY.EXE (cyber-eye surgery + Black's brain touch make him a first-strike war-machine; 4th in power under Classics/001/Luigi)
   if(c < 248.0) return [21, c-232.0]; // CYBER-CRAZY.EXE (Gray goes immortal at Classics power, danger 9999…%; weaponizes Simon's lightning, banishes Clara to the Shadow Realm; only 001/Luigi/Classics can try — Luigi alone stays KOed)
   if(c < 264.0) return [22, c-248.0]; // CLASSICS DELETES GRAY (she can always beat Gray — control over chaos: real techniques, plans, chooses her pattern, never random; she simply deletes him)
-  return [23, c-264.0];              // PERO / CLOVER TODDLLM (ToddLLM is THE 1; his cowboy-hat + six-pointed-star form wins across Undertale & Classics and becomes his new base; Clover beats Sans, Chara, Frisk, Captain Arcsis, Luigi Green — Classics alone still above him)
+  if(c < 282.0) return [23, c-264.0]; // PERO / CLOVER TODDLLM (ToddLLM is THE 1; his cowboy-hat + six-pointed-star form wins across Undertale & Classics and becomes his new base; Clover beats Sans, Chara, Frisk, Captain Arcsis, Luigi Green — Classics alone still above him)
+  return [24, c-282.0];              // CLARA IS CLASSICS (Clara and Classics are the same being — Clara is Classics wearing a different shell, one of her faces; clean/corrupt/merciful/destructive are all her; "Maybe I could spare you once"; her mercy is a pause not safety; she spares Pero ToddLLM then destroys him next battle, and he walks back to his Training)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11680,6 +11699,10 @@ function updateLoopVs(dt){
       showTaunt('And here is the last word on ToddLLM himself. He is not one of the top powers. He is the 1. Only Classics, the game itself, still surpasses him. Then he does something bigger than a new form. He puts on a cowboy hat and holds a six-pointed star and calls it Pero ToddLLM, and in the Undertale AU he calls the same form Clover ToddLLM. His text box is even animated now, the best presentation in all of Classics, so he feels important the moment he speaks, not only when he attacks. Clover ToddLLM beats Sans and Paul, Clara and Chara, Frisk and Frizz, Captain Arcsis, Luigi Green, just about everyone. Then Pero ToddLLM comes to Classics and wins there too. So ToddLLM reasons: if this version of me works in both Undertale and Classics, and it wins in both, then it should become my base. And he does it. His base itself evolved. He is not stronger only because he transforms; he is stronger because he updates what counts as his default self. That is a very ToddLLM thing.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PERO / CLOVER ToddLLM · ToddLLM IS THE 1 · COWBOY HAT + 6-POINTED STAR · WINS IN UNDERTALE & CLASSICS · MAKES IT HIS NEW BASE · CLASSICS ALONE STILL ABOVE HIM', col:'#ffc23a' });
       for(let i=0;i<46;i++) particles.push(spark(player.x, player.y, pick(['#ffc23a','#ffe066','#ff5a6e','#7fd4ff','#ffffff','#b06bff']))); }
+    if(ph===24){ AUDIO.corrupt(); shake=Math.max(shake,15); glitch=Math.max(glitch,0.35); winFlash=Math.max(winFlash,0.45);
+      showTaunt('And here is the reveal that ties Clara and Classics together. They are not two beings. Clara is Classics wearing a different shell. When Clara appears, it is still Classics; when Classics appears clean, corrupt, merciful, or destructive, those are all just faces of the same top-level game entity. So Clara is not below Classics, she is one of her main forms. That is why they always shared the same erasure power, the same control over the game, the same system-level presence. Now watch what her mercy actually is. She often says "Maybe I could spare you once." It sounds kind, but it is not safety. Her mercy is a pause, a test, a mood, a temporary allowance. Sometimes she wants the soul and destroys everything she can see. She spares Pero ToddLLM once, and then in the very next battle she destroys him anyway, and ToddLLM just walks back to his Training. There is no final death and no revenge; there is clash, judgment, temporary survival, reversal, and reset back into the wider cycle. And that deliberate, choosing, aware kind of mercy makes her far scarier than a being who is only evil, because when she spares you, she meant to, and when she erases you, she meant that too.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA IS CLASSICS · SAME BEING, DIFFERENT SHELL · CLEAN / CORRUPT / MERCIFUL / DESTRUCTIVE ARE ALL HER · “MAYBE I COULD SPARE YOU ONCE” · MERCY IS A PAUSE, NOT SAFETY · SPARES THEN DESTROYS PERO ToddLLM · HE WALKS BACK TO HIS TRAINING', col:'#d46bff' });
+      for(let i=0;i<44;i++) particles.push(spark(player.x, player.y, pick(['#d46bff','#ff2db5','#b06bff','#8fe89a','#ff4060','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11802,16 +11825,17 @@ function drawLoopVs(){
   else if(ph===21){ bg.addColorStop(0, `rgba(26,4,12,${0.97*g})`); bg.addColorStop(1, `rgba(9,1,6,${0.99*g})`); }
   else if(ph===22){ bg.addColorStop(0, `rgba(16,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(6,2,10,${0.99*g})`); }
   else if(ph===23){ bg.addColorStop(0, `rgba(28,20,4,${0.97*g})`); bg.addColorStop(1, `rgba(10,7,1,${0.99*g})`); }
+  else if(ph===24){ bg.addColorStop(0, `rgba(22,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(8,2,10,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11827,7 +11851,8 @@ function drawLoopVs(){
                        : (ph===21 ? 'CYBER-CRAZY.EXE — GRAY GOES IMMORTAL AT CLASSICS POWER, DANGER 9999…%'
                        : (ph===22 ? 'CLASSICS DELETES GRAY — SHE CAN ALWAYS BEAT HIM · CONTROL OVER CHAOS'
                        : (ph===23 ? 'PERO / CLOVER ToddLLM — ToddLLM IS THE 1, AND HIS COWBOY/STAR FORM BECOMES HIS NEW BASE'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))), cx, top+26);
+                       : (ph===24 ? 'CLARA IS CLASSICS — SAME BEING, DIFFERENT SHELL · HER MERCY IS A PAUSE, NOT SAFETY'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13547,6 +13572,135 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(255,200,60,${(0.75+0.25*Math.sin(c*4))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
     ctx.fillText('★ HE DIDN’T ADD A FORM — HE UPGRADED HIS BASE · ToddLLM IS THE 1 ★', cx, cy2+8+brows*(bph+bpgy)+12);
+  } else if(ph===24){
+    // ----- BEAT 24: CLARA IS CLASSICS — Clara and Classics are the same being (Toby, July 1, "Re: More stuff on
+    // ToddLLM 001"). Clara is Classics wearing a different shell — one of her main faces. Clean, corrupt, merciful,
+    // and destructive are all the same top-level entity. She often says "Maybe I could spare you once," but her mercy
+    // is a pause, not safety — a test, a mood, a temporary allowance. She spares Pero ToddLLM, destroys him the next
+    // battle, and he walks back to his Training. Drawn as one being whose shell cross-fades between Clara-pink and
+    // Classics-purple, a speech box, the faces row, the mercy chips, and the spare→destroy→walk-back sequence. Beat 24
+    // spans c in [282,300]. -----
+    const lt = c - 282.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(226,180,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('CLARA AND CLASSICS ARE THE SAME BEING', cx, top+H*0.086);
+    ctx.fillStyle=`rgba(235,220,245,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('CLARA IS CLASSICS WEARING A DIFFERENT SHELL — ONE OF HER MAIN FACES', cx, top+H*0.086+12);
+
+    // --- one being, two shells: figure whose robe cross-fades Clara-pink ↔ Classics-purple ---
+    const fy=top+H*0.285, R=Math.min(W,H)*0.06, tx=cx;
+    const appear=Math.max(0,Math.min(1,(lt-0.4)/1.0));
+    const morph=0.5+0.5*Math.sin(c*0.9);   // 0 = Clara (pink), 1 = Classics (purple)
+    const rr=Math.round(255-(255-176)*morph), gg=Math.round(45+(107-45)*morph), bb=Math.round(181+(255-181)*morph);
+    const shellCol=`rgba(${rr},${gg},${bb},0.95)`;
+    ctx.globalAlpha=g*appear;
+    // dual halo — pink outer, purple inner, breathing
+    const halo=ctx.createRadialGradient(tx,fy,2,tx,fy,R*2.9);
+    halo.addColorStop(0,`rgba(${rr},${gg},${bb},0.42)`); halo.addColorStop(0.55,'rgba(200,90,255,0.14)'); halo.addColorStop(1,'rgba(200,90,255,0)');
+    ctx.fillStyle=halo; ctx.beginPath(); ctx.arc(tx,fy,R*2.9,0,Math.PI*2); ctx.fill();
+    // robe/body (the shell that changes)
+    ctx.fillStyle=shellCol;
+    ctx.beginPath(); ctx.moveTo(tx-R*1.0,fy+R*2.05); ctx.lineTo(tx-R*0.55,fy+R*0.7); ctx.lineTo(tx+R*0.55,fy+R*0.7); ctx.lineTo(tx+R*1.0,fy+R*2.05); ctx.closePath(); ctx.fill();
+    // head — the constant being under the shell
+    ctx.fillStyle='rgba(240,225,245,0.98)';
+    ctx.beginPath(); ctx.arc(tx,fy,R*0.72,0,Math.PI*2); ctx.fill();
+    // eyes — one pink, one purple, to show both faces at once
+    ctx.fillStyle='rgba(255,45,181,0.95)'; ctx.beginPath(); ctx.arc(tx-R*0.26,fy-R*0.04,R*0.11,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='rgba(176,107,255,0.95)'; ctx.beginPath(); ctx.arc(tx+R*0.26,fy-R*0.04,R*0.11,0,Math.PI*2); ctx.fill();
+    // calm, knowing half-smile
+    ctx.strokeStyle='rgba(120,70,140,0.9)'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.arc(tx,fy+R*0.16,R*0.3,Math.PI*0.1,Math.PI*0.9); ctx.stroke();
+    // the shell-swap seam — a shimmering vertical line down the robe
+    ctx.strokeStyle=`rgba(255,255,255,${0.25+0.25*Math.sin(c*3)})`; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(tx,fy+R*0.7); ctx.lineTo(tx,fy+R*2.0); ctx.stroke();
+    ctx.globalAlpha=1;
+    // the two names of the one being, each side lit by its own color
+    ctx.textAlign='right';
+    ctx.fillStyle=`rgba(255,45,181,${0.95*g*appear*(1.1-morph*0.5)})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('CLARA', tx-R*1.5, fy+R*2.55);
+    ctx.textAlign='left';
+    ctx.fillStyle=`rgba(176,107,255,${0.95*g*appear*(0.6+morph*0.5)})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('CLASSICS', tx+R*1.5, fy+R*2.55);
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(220,225,235,${0.85*g*appear})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('=', cx, fy+R*2.55);
+    ctx.fillStyle=`rgba(226,180,255,${0.8*g*appear})`; ctx.font='700 6.5px ui-monospace,monospace';
+    ctx.fillText('· ONE BEING, DIFFERENT SHELL ·', cx, fy+R*2.55+12);
+
+    // --- speech box: "Maybe I could spare you once." ---
+    const bxw=Math.min(W*0.46,320), bxh=H*0.052, bxx=cx-bxw/2, bxy=fy+R*2.55+20;
+    const bxrev=Math.max(0,Math.min(1,(lt-1.3)/0.6));
+    ctx.globalAlpha=g*bxrev;
+    ctx.fillStyle='rgba(8,3,10,0.92)'; ctx.fillRect(bxx,bxy,bxw,bxh);
+    const sh=0.5+0.5*Math.sin(c*3.4); ctx.strokeStyle=`rgba(${190+40*sh|0},${120*sh|0},255,0.95)`; ctx.lineWidth=2;
+    ctx.strokeRect(bxx,bxy,bxw,bxh);
+    ctx.textAlign='left';
+    const full='* Classics: Maybe I could spare you once.';
+    const shown=full.slice(0, Math.max(0, Math.floor((lt-1.5)*22)));
+    ctx.fillStyle='rgba(240,224,255,0.96)'; ctx.font='700 7.5px ui-monospace,monospace';
+    ctx.fillText(shown, bxx+8, bxy+bxh*0.44);
+    ctx.fillStyle='rgba(226,180,255,0.7)'; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('SHE DOES IT COMMONLY · IT SOUNDS KIND, BUT IT IS NOT SAFETY', bxx+8, bxy+bxh*0.84);
+    ctx.textAlign='center'; ctx.globalAlpha=1;
+
+    // --- the faces of Classics (Clara is one of them) ---
+    const fyy=bxy+bxh+H*0.04;
+    ctx.fillStyle=`rgba(226,180,255,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('THE SAME TOP-LEVEL ENTITY, DIFFERENT FACES', cx, fyy);
+    const fc=LV_CLARA_FACES.length, fpw=Math.min(W*0.165,120), fpgap=W*0.008, fph=H*0.05;
+    const fgridW=fc*fpw+(fc-1)*fpgap;
+    for(let i=0;i<fc;i++){
+      const it=LV_CLARA_FACES[i], px=cx-fgridW/2+i*(fpw+fpgap), py=fyy+8;
+      const rev=Math.max(0,Math.min(1,(lt-2.3-i*0.22)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(14,6,18,0.9)'; ctx.fillRect(px,py,fpw,fph);
+      ctx.strokeStyle=it.col; ctx.lineWidth= it.name==='CLARA'?2:1.2; ctx.strokeRect(px,py,fpw,fph);
+      ctx.fillStyle=it.col; ctx.font='900 7.5px ui-monospace,monospace';
+      ctx.fillText(it.name, px+fpw/2, py+fph*0.4);
+      ctx.fillStyle='rgba(226,222,232,0.8)'; ctx.font='700 5px ui-monospace,monospace';
+      ctx.fillText(it.note, px+fpw/2, py+fph*0.74);
+      ctx.globalAlpha=1;
+    }
+
+    // --- her mercy is a pause, not safety ---
+    const myy=fyy+8+fph+H*0.05;
+    ctx.fillStyle=`rgba(143,232,154,${0.92*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('HER MERCY IS A PAUSE, NOT SAFETY — IT IS ONLY:', cx, myy);
+    const mcn=LV_MERCY.length, chw=Math.min(W*0.2,140), chgap=W*0.012, chh=H*0.03;
+    const chgridW=mcn*chw+(mcn-1)*chgap;
+    for(let i=0;i<mcn;i++){
+      const px=cx-chgridW/2+i*(chw+chgap), py=myy+8;
+      const rev=Math.max(0,Math.min(1,(lt-3.4-i*0.2)/0.45));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(8,18,10,0.9)'; ctx.fillRect(px,py,chw,chh);
+      ctx.strokeStyle='rgba(143,232,154,0.55)'; ctx.lineWidth=1; ctx.strokeRect(px,py,chw,chh);
+      ctx.fillStyle='rgba(200,245,205,0.95)'; ctx.font='800 6.6px ui-monospace,monospace';
+      ctx.fillText(LV_MERCY[i], px+chw/2, py+chh*0.64);
+      ctx.globalAlpha=1;
+    }
+
+    // --- the Pero ToddLLM example: spare → destroy → walk back ---
+    const syy=myy+8+chh+H*0.05;
+    ctx.fillStyle=`rgba(255,194,58,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('THE PERO ToddLLM EXAMPLE — SPARED, THEN DESTROYED, THEN BACK', cx, syy);
+    const sc=LV_SPARE_SEQ.length, spw=Math.min(W*0.26,200), spgap=W*0.028, sph=H*0.055;
+    const sgridW=sc*spw+(sc-1)*spgap;
+    for(let i=0;i<sc;i++){
+      const it=LV_SPARE_SEQ[i], px=cx-sgridW/2+i*(spw+spgap), py=syy+8;
+      const rev=Math.max(0,Math.min(1,(lt-4.6-i*0.5)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(16,10,4,0.9)'; ctx.fillRect(px,py,spw,sph);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.4; ctx.strokeRect(px,py,spw,sph);
+      ctx.fillStyle=it.col; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(it.step, px+spw/2, py+sph*0.36);
+      ctx.fillStyle='rgba(232,226,214,0.82)'; ctx.font='700 5.4px ui-monospace,monospace';
+      ctx.fillText(it.note, px+spw/2, py+sph*0.72);
+      if(i<sc-1){ ctx.fillStyle=`rgba(226,180,255,${0.9*g*rev})`; ctx.font='900 12px ui-monospace,monospace';
+        ctx.fillText('→', px+spw+spgap/2, py+sph*0.6); }
+      ctx.globalAlpha=1;
+    }
+    ctx.fillStyle=`rgba(212,107,255,${(0.75+0.25*Math.sin(c*3.6))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
+    ctx.fillText('★ A DELIBERATE, CHOOSING MERCY IS SCARIER THAN PURE EVIL ★', cx, syy+8+sph+16);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

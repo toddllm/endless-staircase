@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — CLARA IS CLASSICS: same being, different shell; her mercy is a pause, not safety (Lore 45, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's July 1 lore, the reveal that ties Clara and Classics into one being. In his words: *"Clara and Classics are the same
+being, Clara is just Classics wearing different stuff. New image, it shows Classics going like 'Maybe I Could Spare You Once', she
+does that commonally. Sometimes Classics wants the soul and destroys all it can see. Classics spares Pero ToddLLM, then destroys him
+in the next battle, ToddLLM walks back to his Training."* Clara is not below Classics, she is one of Classics' main faces — Classics
+wearing a different shell. Clean, corrupt, merciful, and destructive are all the same top-level entity. Her signature line, "Maybe I
+could spare you once," sounds kind but is not safety: her mercy is a pause, a test, a mood, a temporary allowance. She spares Pero
+ToddLLM once, destroys him the next battle anyway, and he just walks back to his Training — no final death, only clash, judgment,
+temporary survival, reversal, and reset back into the cycle. A deliberate, choosing mercy makes her scarier than a purely evil being.
+Added as a twenty-fifth beat, CLARA IS CLASSICS, on the end of the UNDEFINED LOOP cutscene, right after PERO / CLOVER TODDLLM.
+Additive — every earlier beat is untouched.
+
+- New beat 24, **CLARA IS CLASSICS** (fused pink/purple `#d46bff`), added to `LV_BEATS`; `LV_CYC` extended 282 → 300s and `lvSeg`
+  gains the `[24, c-282]` segment. New taunt, floater, title-band entry, background gradient, and strip/band colors for `ph===24`.
+- Draws **one being wearing two shells** — a figure whose robe cross-fades between Clara-pink `#ff2db5` and Classics-purple `#b06bff`
+  on a slow cycle, with one pink eye and one purple eye, a calm knowing half-smile, and a shimmering shell-swap seam. Labeled
+  "CLARA = CLASSICS · ONE BEING, DIFFERENT SHELL", each name lit by its own color as the shell shifts.
+- New **speech box** underneath — a purple-bordered Undertale-style box typing out "* Classics: Maybe I could spare you once.",
+  tagged "SHE DOES IT COMMONLY · IT SOUNDS KIND, BUT IT IS NOT SAFETY".
+- New `LV_CLARA_FACES` row, **THE SAME TOP-LEVEL ENTITY, DIFFERENT FACES**: CLEAN, MERCIFUL, CORRUPT, DESTRUCTIVE, and CLARA
+  (highlighted as "Classics wearing a different shell").
+- New `LV_MERCY` chips, **HER MERCY IS A PAUSE, NOT SAFETY — IT IS ONLY**: A PAUSE · A TEST · A MOOD · A TEMPORARY ALLOWANCE.
+- New `LV_SPARE_SEQ` sequence, **THE PERO ToddLLM EXAMPLE**: "MAYBE I COULD SPARE YOU ONCE" → THE NEXT BATTLE (destroyed anyway) →
+  ToddLLM WALKS BACK (returns to his Training, the cycle resets). Banner: "★ A DELIBERATE, CHOOSING MERCY IS SCARIER THAN PURE EVIL ★".
+- One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 45 — the CLARA IS CLASSICS beat. A purple title band reads "CLARA IS CLASSICS — SAME BEING, DIFFERENT SHELL · HER MERCY IS A PAUSE, NOT SAFETY", over the lines "CLARA AND CLASSICS ARE THE SAME BEING" and "CLARA IS CLASSICS WEARING A DIFFERENT SHELL — ONE OF HER MAIN FACES". In the center stands a single figure with a white knowing face, one pink eye and one purple eye, and a magenta robe (the shell mid-cross-fade toward Classics-purple), flanked by the names "CLARA = CLASSICS" and the caption "· ONE BEING, DIFFERENT SHELL ·". Below is a purple-bordered speech box reading "* Classics: Maybe I could spare you once." tagged "SHE DOES IT COMMONLY · IT SOUNDS KIND, BUT IT IS NOT SAFETY". Under that, a row "THE SAME TOP-LEVEL ENTITY, DIFFERENT FACES" with cells MERCIFUL, CORRUPT, DESTRUCTIVE, and a bright-bordered CLARA. Then a green header "HER MERCY IS A PAUSE, NOT SAFETY — IT IS ONLY:" over four chips A PAUSE · A TEST · A MOOD · A TEMPORARY ALLOWANCE. At the bottom, "THE PERO ToddLLM EXAMPLE — SPARED, THEN DESTROYED, THEN BACK": three cells joined by arrows — "MAYBE I COULD SPARE YOU ONCE" (she spares Pero ToddLLM) → THE NEXT BATTLE (she destroys him anyway) → ToddLLM WALKS BACK (he returns to his Training, the cycle resets) — under a banner "★ A DELIBERATE, CHOOSING MERCY IS SCARIER THAN PURE EVIL ★". The left-edge lore ladder now ends on a lit "◆ CLARA IS CLASSICS".](screenshots/89-clara-is-classics.png)
+
 ## 2026-07-01 — PERO / CLOVER TODDLLM: ToddLLM is THE 1, and his cowboy/star form becomes his new base (Lore 44, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's July 1 lore, the last word on ToddLLM himself. In his words: *"ToddLLM isn't 1 of the top powers, he is the 1.
