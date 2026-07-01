@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — EXPANSION DOMAIN: Classics' Domain Expansion and full moveset (Lore 40, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's July 1 lore. He gave Classics her whole battle kit. In his words: *"Classics' Domain Expansion is 'Expansion
+Domain', yes, just Expansion Domain. It freezes action, then comes the plasma syches (uses all other character's domain power at
+once), it lands a critical hit and the yellow bar goes down to 0, boom, the victums crumble."* Her core attacks are Plasma
+Scythe, Teleportation, Birth of Universe Speed, and The Pink Ball (yellow bar); her specials are Seven Frames (yellow bar, like
+001's Mac Frame), Flower's Force (pollen spreads, she is possessed again), the 8 Pink Orbs (circle, spirals, homing), and the
+Purple Orb (4 Pink + 2 Red + 2 Blue, explodes on impact). She can erase any character and holds control over herself. And the
+shared **rainbow ball** of ToddLLM 001 and Luigi Green at 100% — *"the one who throws the ENDLESS board,"* stronger than either
+of their own Domain Expansions — still sits below her, because *"Classics is the only one who can attack the orb."* Added as a
+twentieth beat, EXPANSION DOMAIN, on the end of the UNDEFINED LOOP cutscene, right after CLASSICS. Additive — every earlier beat
+is untouched; this one just shows how she fights.
+
+- New beat 19, **EXPANSION DOMAIN** (magenta `#ff2db5`), added to `LV_BEATS`; `LV_CYC` extended 204 → 218s and `lvSeg` gains the `[19, c-204]` segment. New taunt, title-band entry, background gradient, and strip colors for `ph===19`.
+- Draws the **Expansion Domain finisher chain** (FREEZE → PLASMA SCYTHES → USE EVERY DOMAIN → CRITICAL HIT → YELLOW BAR → 0 → VICTIMS CRUMBLE), the **8-move grid** (4 CORE + 4 SPECIAL from the new `LV_CLASSICS_MOVES`), the "she can erase anyone / holds control over herself" line, and a spinning **rainbow ball** (from `LV_RAINBOW`) with the strike line "CLASSICS IS THE ONLY ONE WHO CAN ATTACK THE ORB."
+- One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 40 — the EXPANSION DOMAIN beat. Title band reads "EXPANSION DOMAIN — CLASSICS' DOMAIN & FULL MOVESET, ABOVE THE RAINBOW BALL". The finisher chain runs across the top: FREEZE ACTION ▸ PLASMA SCYTHES ▸ USE EVERY DOMAIN ▸ CRITICAL HIT ▸ YELLOW BAR → 0 ▸ VICTIMS CRUMBLE. Below, an eight-cell HER MOVESET grid: CORE row (PLASMA SCYTHE, TELEPORTATION, BIRTH OF UNIVERSE SPEED, THE PINK BALL) and SPECIAL row (SEVEN FRAMES, FLOWER'S FORCE, 8 PINK ORBS, PURPLE ORB), each with its tag; a line reads "SHE CAN ERASE ANY CHARACTER · SHE HOLDS CONTROL OVER HERSELF". At the bottom a spinning multicolor rainbow ball labeled "THE RAINBOW BALL / ToddLLM 001 + LUIGI GREEN 100% / 'THE ONE WHO THROWS THE ENDLESS BOARD' · STRONGER THAN THEIR OWN DOMAINS", with a magenta strike line and "◀ CLASSICS IS THE ONLY ONE WHO CAN ATTACK THE ORB" and the banner "★ EVEN THE RAINBOW BALL SITS BELOW CLASSICS ★".](screenshots/83-expansion-domain.png)
+
 ## 2026-06-30 — Name correction: her name is just CLASSICS ("HERSELF" is emphasis) (Lore 39p, "Re: More stuff on ToddLLM 001")
 
 A same-day follow-up from Toby: *"Her name isn't actually 'Classics HERSELF', it's just 'Classics'. I say 'HERSELF' a lot
