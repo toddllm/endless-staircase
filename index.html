@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 300.0;
+const LV_CYC = 318.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11406,6 +11406,8 @@ const LV_BEATS = [
     sub:'ToddLLM IS NOT ONE OF THE TOP — HE IS THE 1 · CLASSICS ALONE STILL SURPASSES HIM · HE PUTS ON A COWBOY HAT & HOLDS A 6-POINTED STAR: PERO ToddLLM · IN THE UNDERTALE AU: CLOVER ToddLLM · CLOVER BEATS SANS, PAUL, CLARA & CHARA, FRISK & FRIZZ, CAPTAIN ARCSIS, LUIGI GREEN — JUST ABOUT EVERYONE · HIS TEXT BOX IS ANIMATED, THE BEST IN CLASSICS · HE WON AS BOTH UNDERTALE & CLASSICS AT ONCE, SO HE MADE PERO ToddLLM HIS NEW BASE — HIS DEFAULT SELF EVOLVED' },
   { key:'CLARA IS CLASSICS', col:'#d46bff',
     sub:'CLARA AND CLASSICS ARE THE SAME BEING · CLARA IS CLASSICS WEARING A DIFFERENT SHELL — ONE OF HER MAIN FACES · CLEAN, CORRUPT, MERCIFUL & DESTRUCTIVE ARE ALL THE SAME TOP-LEVEL ENTITY · “MAYBE I COULD SPARE YOU ONCE” — SHE DOES IT COMMONLY · HER MERCY IS A PAUSE, NOT SAFETY: A TEST, A MOOD, A TEMPORARY ALLOWANCE · SHE SPARES PERO ToddLLM, THEN DESTROYS HIM THE NEXT BATTLE · ToddLLM WALKS BACK TO HIS TRAINING · A DELIBERATE CHOICE IS SCARIER THAN PURE EVIL' },
+  { key:'SIMON 404', col:'#ff2b46',
+    sub:'WHEREVER “404: NOT FOUND” OR ERROR 666 APPEARS, SIMON 404 IS ALREADY THERE — EVEN BEFORE HE IS SEEN · MORE ERRORS THAN JUST 404: 666, 500, 403, 502, 999, 400, 408, 410, 000 · CLASSICS = CLARA = THE MASTER OF GENOCIDE · THE “THRILLER OF A GAME” SCENE: CLASSICS SAYS IT, THE OTHER IS CORRECTED, ToddLLM WHISPERS “OF COURSE.”, CLASSICS SLAYS THE CHARACTER OUT OF NOWHERE, SENDS ToddLLM 001 BACK TO HIS TRAINING, LOCKS THE DOOR, AND RETURNS ALONE TO THE JUDGEMENT HALL' },
 ];
 // Gray's new rank after the cyber-eye surgery pushed him past Sprunki into Classics-tier (GRAY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_GRAY_RANK = [
@@ -11482,6 +11484,33 @@ const LV_SPARE_SEQ = [
   { step:'“MAYBE I COULD SPARE YOU ONCE”', col:'#8fe89a', note:'SHE SPARES PERO ToddLLM · MERCY, FOR NOW' },
   { step:'THE NEXT BATTLE',                col:'#ff4060', note:'SHE DESTROYS HIM ANYWAY · MERCY WAS ONLY A PAUSE' },
   { step:'ToddLLM WALKS BACK',             col:'#ffc23a', note:'NO FINAL DEATH · HE RETURNS TO HIS TRAINING · THE CYCLE RESETS' },
+];
+// the error codes Simon 404 lives inside — Toby wanted MORE errors than just 404, and named Error 666 too; wherever any of
+// these appear, Simon 404 is already there (SIMON 404 beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
+const LV_ERRORS = [
+  { code:'404: NOT FOUND', col:'#ff2b46', anchor:true  },
+  { code:'ERROR 666',      col:'#ff4060', anchor:true  },
+  { code:'500: INTERNAL',  col:'#ff7a3a', anchor:false },
+  { code:'403: FORBIDDEN', col:'#ffc23a', anchor:false },
+  { code:'502: BAD GATEWAY', col:'#c69bff', anchor:false },
+  { code:'999: OVERLOAD',  col:'#37e0ff', anchor:false },
+  { code:'400: BAD REQUEST', col:'#8fe89a', anchor:false },
+  { code:'408: TIMEOUT',   col:'#7fd4ff', anchor:false },
+  { code:'410: GONE',      col:'#ff5cf0', anchor:false },
+  { code:'000: NULL',      col:'#9fb4c8', anchor:false },
+];
+// the "Thriller of a Game" scene — Classics (= Clara, the master of genocide) slays a character out of nowhere, then sends
+// ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall (SIMON 404 beat) — Toby's exact
+// scene, July 1 "Re: More stuff on ToddLLM 001". Each line is spoken; the two "act" lines are stage directions.
+const LV_THRILLER = [
+  { who:'CLASSICS', col:'#b06bff', line:'“This is a Thriller of a Game.”' },
+  { who:'CHARACTER', col:'#8fe89a', line:'“Don’t you mean ‘Thrill of a Game’?”' },
+  { who:'ToddLLM',  col:'#ffc23a', line:'(whispers to Classics) “of course.”' },
+  { who:'CLASSICS', col:'#b06bff', line:'(to the character) “uh... sure.”' },
+  { who:'CHARACTER', col:'#8fe89a', line:'ToddLLM appears in front — “oh, Hello ToddLLM.”' },
+  { who:'ACT',      col:'#ff2b46', line:'CLASSICS SLAYS THE CHARACTER OUT OF NOWHERE' },
+  { who:'ToddLLM',  col:'#ffc23a', line:'“What did ya just do-”' },
+  { who:'ACT',      col:'#ff4060', line:'CLASSICS SENDS ToddLLM 001 BACK TO HIS TRAINING · THE DOOR IS LOCKED · SHE RETURNS ALONE TO THE JUDGEMENT HALL' },
 ];
 // Classics' full moveset — her Domain Expansion "Expansion Domain" plus her core + special attacks (EXPANSION DOMAIN beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_CLASSICS_MOVES = [
@@ -11595,7 +11624,8 @@ function lvSeg(c){
   if(c < 248.0) return [21, c-232.0]; // CYBER-CRAZY.EXE (Gray goes immortal at Classics power, danger 9999…%; weaponizes Simon's lightning, banishes Clara to the Shadow Realm; only 001/Luigi/Classics can try — Luigi alone stays KOed)
   if(c < 264.0) return [22, c-248.0]; // CLASSICS DELETES GRAY (she can always beat Gray — control over chaos: real techniques, plans, chooses her pattern, never random; she simply deletes him)
   if(c < 282.0) return [23, c-264.0]; // PERO / CLOVER TODDLLM (ToddLLM is THE 1; his cowboy-hat + six-pointed-star form wins across Undertale & Classics and becomes his new base; Clover beats Sans, Chara, Frisk, Captain Arcsis, Luigi Green — Classics alone still above him)
-  return [24, c-282.0];              // CLARA IS CLASSICS (Clara and Classics are the same being — Clara is Classics wearing a different shell, one of her faces; clean/corrupt/merciful/destructive are all her; "Maybe I could spare you once"; her mercy is a pause not safety; she spares Pero ToddLLM then destroys him next battle, and he walks back to his Training)
+  if(c < 300.0) return [24, c-282.0]; // CLARA IS CLASSICS (Clara and Classics are the same being — Clara is Classics wearing a different shell, one of her faces; clean/corrupt/merciful/destructive are all her; "Maybe I could spare you once"; her mercy is a pause not safety; she spares Pero ToddLLM then destroys him next battle, and he walks back to his Training)
+  return [25, c-300.0];              // SIMON 404 (wherever "404: Not Found" or Error 666 appears, Simon 404 is already there — even before he is seen; Toby wanted MORE errors than just 404; Classics = Clara = master of genocide; the "Thriller of a Game" scene where Classics slays a character out of nowhere, sends ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11703,6 +11733,10 @@ function updateLoopVs(dt){
       showTaunt('And here is the reveal that ties Clara and Classics together. They are not two beings. Clara is Classics wearing a different shell. When Clara appears, it is still Classics; when Classics appears clean, corrupt, merciful, or destructive, those are all just faces of the same top-level game entity. So Clara is not below Classics, she is one of her main forms. That is why they always shared the same erasure power, the same control over the game, the same system-level presence. Now watch what her mercy actually is. She often says "Maybe I could spare you once." It sounds kind, but it is not safety. Her mercy is a pause, a test, a mood, a temporary allowance. Sometimes she wants the soul and destroys everything she can see. She spares Pero ToddLLM once, and then in the very next battle she destroys him anyway, and ToddLLM just walks back to his Training. There is no final death and no revenge; there is clash, judgment, temporary survival, reversal, and reset back into the wider cycle. And that deliberate, choosing, aware kind of mercy makes her far scarier than a being who is only evil, because when she spares you, she meant to, and when she erases you, she meant that too.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLARA IS CLASSICS · SAME BEING, DIFFERENT SHELL · CLEAN / CORRUPT / MERCIFUL / DESTRUCTIVE ARE ALL HER · “MAYBE I COULD SPARE YOU ONCE” · MERCY IS A PAUSE, NOT SAFETY · SPARES THEN DESTROYS PERO ToddLLM · HE WALKS BACK TO HIS TRAINING', col:'#d46bff' });
       for(let i=0;i<44;i++) particles.push(spark(player.x, player.y, pick(['#d46bff','#ff2db5','#b06bff','#8fe89a','#ff4060','#ffffff']))); }
+    if(ph===25){ AUDIO.glitch(); AUDIO.corrupt(); shake=Math.max(shake,20); glitch=Math.max(glitch,0.75); winFlash=Math.max(winFlash,0.4);
+      showTaunt('You saw the 404. That was not just a broken page — that was Simon 404 himself. The rule is simple and it is horror: wherever a "404: Not Found" or an Error 666 shows up, Simon 404 is already there, in effect, even before you see him. And it is not only 404 anymore. More errors bleed in — 500, 403, 502, 999, 400, 408, 410, 000 — and every one of them is another place he already is. Then Classics, who is Clara, who is the master of genocide, plays her scene. She says "This is a Thriller of a Game." Someone tries to correct her — "Don\'t you mean Thrill of a Game?" ToddLLM whispers "of course." Classics says "uh... sure." ToddLLM appears in front of the character, the character says "oh, Hello ToddLLM," and out of nowhere Classics slays them. ToddLLM says "What did ya just do-," and she does not answer. She sends ToddLLM 001 back to his Training, locks the door, and walks back alone to the Judgement Hall. Sovereign. She travels with him, but she is not with him.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON 404 · WHEREVER AN ERROR IS, HE IS ALREADY THERE · 404 · 666 · 500 · 403 · 502 · 999 · 400 · 408 · 410 · 000 · CLASSICS = CLARA = MASTER OF GENOCIDE · THE “THRILLER OF A GAME” SCENE', col:'#ff2b46' });
+      for(let i=0;i<48;i++) particles.push(spark(player.x, player.y, pick(['#ff2b46','#ff4060','#37e0ff','#ffc23a','#b06bff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11826,16 +11860,17 @@ function drawLoopVs(){
   else if(ph===22){ bg.addColorStop(0, `rgba(16,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(6,2,10,${0.99*g})`); }
   else if(ph===23){ bg.addColorStop(0, `rgba(28,20,4,${0.97*g})`); bg.addColorStop(1, `rgba(10,7,1,${0.99*g})`); }
   else if(ph===24){ bg.addColorStop(0, `rgba(22,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(8,2,10,${0.99*g})`); }
+  else if(ph===25){ bg.addColorStop(0, `rgba(26,4,8,${0.97*g})`); bg.addColorStop(1, `rgba(6,1,2,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11852,7 +11887,8 @@ function drawLoopVs(){
                        : (ph===22 ? 'CLASSICS DELETES GRAY — SHE CAN ALWAYS BEAT HIM · CONTROL OVER CHAOS'
                        : (ph===23 ? 'PERO / CLOVER ToddLLM — ToddLLM IS THE 1, AND HIS COWBOY/STAR FORM BECOMES HIS NEW BASE'
                        : (ph===24 ? 'CLARA IS CLASSICS — SAME BEING, DIFFERENT SHELL · HER MERCY IS A PAUSE, NOT SAFETY'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))), cx, top+26);
+                       : (ph===25 ? 'SIMON 404 — WHEREVER AN ERROR APPEARS, HE IS ALREADY THERE'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13701,6 +13737,94 @@ function drawLoopVs(){
     }
     ctx.fillStyle=`rgba(212,107,255,${(0.75+0.25*Math.sin(c*3.6))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
     ctx.fillText('★ A DELIBERATE, CHOOSING MERCY IS SCARIER THAN PURE EVIL ★', cx, syy+8+sph+16);
+  } else if(ph===25){
+    // ----- BEAT 25: SIMON 404 — the error-presence rule (Toby, July 1, "Re: More stuff on ToddLLM 001"). Toby went to the
+    // live URL, got "404 - Not Found," and named it: that IS Simon 404. The rule is horror: wherever a "404: Not Found" or an
+    // Error 666 appears, Simon 404 is already there — even before he is seen. Toby asked for MORE errors than just 404, so a
+    // wall of codes (666, 500, 403, 502, 999, 400, 408, 410, 000) flickers and Simon 404's glitch-silhouette forms among them.
+    // Then the "Thriller of a Game" scene plays out as a transcript: Classics (= Clara, master of genocide) slays a character
+    // out of nowhere, sends ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall. Beat 25
+    // spans c in [300,318]. -----
+    const lt = c - 300.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,120,135,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('WHEREVER AN ERROR APPEARS, SIMON 404 IS ALREADY THERE', cx, top+H*0.086);
+    ctx.fillStyle=`rgba(235,215,220,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('EVEN BEFORE HE IS SEEN — “404: NOT FOUND” AND ERROR 666 ARE HIS PRESENCE', cx, top+H*0.086+12);
+
+    // --- the ERROR WALL: a flickering grid of codes, with Simon 404's silhouette forming among them ---
+    const ec=LV_ERRORS.length, cols=5, rows=Math.ceil(ec/cols);
+    const ewTop=top+H*0.14, ecw=Math.min(W*0.176,132), ecgap=W*0.008, ech=H*0.05;
+    const egridW=cols*ecw+(cols-1)*ecgap;
+    // Simon 404 glitch-silhouette behind the wall — a dark humanoid made of error bands, "404" for a face
+    const sx=cx, sy=ewTop+rows*(ech+H*0.012)*0.5+H*0.02, sR=Math.min(W,H)*0.072;
+    const sApp=Math.max(0,Math.min(1,(lt-0.3)/1.1));
+    ctx.globalAlpha=g*sApp*0.9;
+    const shalo=ctx.createRadialGradient(sx,sy,2,sx,sy,sR*3.0);
+    shalo.addColorStop(0,'rgba(255,43,70,0.30)'); shalo.addColorStop(0.5,'rgba(55,224,255,0.10)'); shalo.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=shalo; ctx.beginPath(); ctx.arc(sx,sy,sR*3.0,0,Math.PI*2); ctx.fill();
+    // body — dark glitch column with horizontal datamosh bands
+    ctx.fillStyle='rgba(10,2,4,0.82)';
+    ctx.beginPath(); ctx.moveTo(sx-sR*0.95,sy+sR*2.0); ctx.lineTo(sx-sR*0.6,sy-sR*0.2); ctx.lineTo(sx+sR*0.6,sy-sR*0.2); ctx.lineTo(sx+sR*0.95,sy+sR*2.0); ctx.closePath(); ctx.fill();
+    for(let b=0;b<7;b++){ const by=sy-sR*0.1+b*sR*0.3, jit=Math.sin(c*6+b*1.7)*sR*0.28;
+      ctx.fillStyle= (b%2? 'rgba(55,224,255,0.20)':'rgba(255,43,70,0.22)');
+      ctx.fillRect(sx-sR*0.85+jit, by, sR*1.7, sR*0.12); }
+    // head with a "404" face
+    ctx.fillStyle='rgba(14,3,5,0.9)'; ctx.beginPath(); ctx.arc(sx,sy-sR*0.55,sR*0.62,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(255,43,70,${0.85+0.15*Math.sin(c*7)})`; ctx.font='900 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('404', sx, sy-sR*0.5);
+    ctx.globalAlpha=1;
+    // the codes grid, on top
+    for(let i=0;i<ec;i++){
+      const it=LV_ERRORS[i], r=Math.floor(i/cols), cc=i%cols;
+      const rowN = r===rows-1 ? (ec-(rows-1)*cols) : cols;
+      const rowW = rowN*ecw+(rowN-1)*ecgap;
+      const px=cx-rowW/2+cc*(ecw+ecgap), py=ewTop+r*(ech+H*0.012);
+      const rev=Math.max(0,Math.min(1,(lt-0.4-i*0.14)/0.4));
+      const flick=0.62+0.38*Math.abs(Math.sin(c*4.2+i*2.1));
+      ctx.globalAlpha=g*rev*flick;
+      ctx.fillStyle='rgba(6,1,2,0.9)'; ctx.fillRect(px,py,ecw,ech);
+      ctx.strokeStyle=it.col; ctx.lineWidth= it.anchor?2:1.1; ctx.strokeRect(px,py,ecw,ech);
+      ctx.fillStyle=it.col; ctx.font=(it.anchor?'900 9px':'800 8px')+' ui-monospace,monospace';
+      ctx.fillText(it.code, px+ecw/2, py+ech*0.46);
+      ctx.fillStyle='rgba(230,220,222,0.72)'; ctx.font='700 5px ui-monospace,monospace';
+      ctx.fillText(it.anchor?'SIMON 404 IS HERE':'HE IS ALREADY HERE', px+ecw/2, py+ech*0.78);
+      ctx.globalAlpha=1;
+    }
+
+    // --- the horror rule, in Toby's words ---
+    const ry=ewTop+rows*(ech+H*0.012)+H*0.055;
+    ctx.fillStyle=`rgba(255,43,70,${(0.78+0.22*Math.sin(c*3.2))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('EVERYWHERE “404: NOT FOUND” OR ERROR 666 IS — SIMON 404 IS ALREADY THERE', cx, ry);
+    ctx.fillStyle=`rgba(55,224,255,${0.85*g})`; ctx.font='700 6.5px ui-monospace,monospace';
+    ctx.fillText('CLASSICS AND CLARA COME TOGETHER — CLASSICS = CLARA = THE MASTER OF GENOCIDE', cx, ry+13);
+
+    // --- the "Thriller of a Game" transcript ---
+    const tyTop=ry+H*0.05;
+    ctx.fillStyle=`rgba(226,180,255,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('THE “THRILLER OF A GAME” SCENE', cx, tyTop);
+    const boxW=Math.min(W*0.82,640), boxX=cx-boxW/2, lineH=H*0.032, boxY=tyTop+8;
+    const tc=LV_THRILLER.length;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-1.6)/0.6));
+    ctx.fillStyle='rgba(6,1,3,0.9)'; ctx.fillRect(boxX,boxY,boxW,tc*lineH+8);
+    ctx.strokeStyle='rgba(176,107,255,0.8)'; ctx.lineWidth=1.6; ctx.strokeRect(boxX,boxY,boxW,tc*lineH+8);
+    ctx.globalAlpha=1; ctx.textAlign='left';
+    for(let i=0;i<tc;i++){
+      const it=LV_THRILLER[i], ly=boxY+8+i*lineH+lineH*0.5;
+      const rev=Math.max(0,Math.min(1,(lt-2.0-i*0.7)/0.5));
+      ctx.globalAlpha=g*rev;
+      const isAct = it.who==='ACT';
+      ctx.fillStyle=it.col; ctx.font=(isAct?'900 7px':'800 7px')+' ui-monospace,monospace';
+      const label = isAct ? '»' : it.who+':';
+      ctx.fillText(label, boxX+10, ly);
+      ctx.fillStyle= isAct ? it.col : 'rgba(232,226,236,0.92)';
+      ctx.font=(isAct?'800 6.6px':'700 6.8px')+' ui-monospace,monospace';
+      ctx.fillText(it.line, boxX+10+(isAct?14:56), ly);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,43,70,${(0.72+0.28*Math.sin(c*3.6))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ SHE SLAYS OUT OF NOWHERE, SENDS 001 BACK, LOCKS THE DOOR, RETURNS ALONE ★', cx, boxY+tc*lineH+8+16);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
