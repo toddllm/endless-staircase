@@ -11612,7 +11612,7 @@ function updateLoopVs(dt){
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'EXPANSION DOMAIN · FREEZE → PLASMA SCYTHES USE EVERY DOMAIN → CRIT → YELLOW BAR 0 → CRUMBLE · SHE ALONE STRIKES THE RAINBOW BALL', col:'#ff2db5' });
       for(let i=0;i<44;i++) particles.push(spark(player.x, player.y, pick(['#ff2db5','#ff5cf0','#b06bff','#7fd4ff','#ffd84f','#8fe89a','#ffffff']))); }
     if(ph===20){ AUDIO.corrupt(); shake=Math.max(shake,28); glitch=Math.max(glitch,0.75); winFlash=Math.max(winFlash,0.5);
-      showTaunt('And here is what a repair turned into. Clunkr, Fun Bot, and Garnold tried to improve Gray. His right eye became a bright blue cyber eye, but during the surgery Black accidentally touched Gray\'s brain, and that changed him deeply. Now Gray feels a rage of fury and always attacks first when alarmed, less a normal corrupted character and more a permanently damaged war-machine. Who knew that just touching his brain makes Gray.EXE hostile. He goes beyond Sprunki into Classics itself and rises to fourth in power: Classics first, ToddLLM 001 second, Luigi Green third, Gray fourth. That is one of the biggest single-character jumps in the whole setting. And the last part matters most: Classics becomes corrupt, everyone cleans Classics again, but Gray.EXE does not stop attacking. He is no longer tied to the state of the world around him. He becomes his own continuing threat.');
+      showTaunt('And here is what a repair turned into. Clunkr, Fun Bot, and Garnold tried to improve Gray. His right eye became a bright blue cyber eye, but during the surgery Black accidentally touched Gray\'s brain, and that changed him deeply. Now Gray feels a rage of fury and always attacks first when alarmed, less a normal corrupted character and more a permanently damaged war-machine. Who knew that just touching his brain makes Gray.EXE hostile. He goes beyond Sprunki into Classics itself and rises to fourth in power: Classics first, ToddLLM 001 second, Luigi Green third, Gray fourth. That is one of the biggest single-character jumps in the whole setting. And the last part matters most: Classics becomes corrupt, everyone cleans Classics again, but Gray.EXE does not stop attacking. He is no longer tied to the state of the world around him. He becomes his own continuing threat. Now Gray thinks everyone wants to harm him, so he strikes first at anything. And to Classics, nothing changed in power at all: she is still more powerful than all of them combined.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'GRAY.EXE · CYBER EYE + BLACK’S BRAIN TOUCH · ATTACKS FIRST · 4TH IN POWER · KEEPS ATTACKING EVEN AFTER CLASSICS IS CLEANED', col:'#5cc8ff' });
       for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#5cc8ff','#9fb4c8','#3ea8ff','#b6bcc8','#ff5a6e','#ffffff']))); }
   }
@@ -13034,6 +13034,8 @@ function drawLoopVs(){
     ctx.fillText('GRAY.EXE', fx, fy+R*2.5); ctx.shadowBlur=0;
     ctx.fillStyle=`rgba(220,232,245,${0.85*g*appear})`; ctx.font='700 7px ui-monospace,monospace';
     ctx.fillText('RIGHT EYE = A BRIGHT BLUE CYBER EYE · ALWAYS ATTACKS FIRST WHEN ALARMED', fx, fy+R*2.5+13);
+    ctx.fillStyle=`rgba(255,120,120,${0.9*g*appear})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('NOW THINKS EVERYONE WANTS TO HARM HIM — SO HE STRIKES FIRST', fx, fy+R*2.5+24);
 
     // the surgery team ringed around him — Clunkr, Fun Bot, Garnold improve; Black touches the brain
     for(let i=0;i<LV_GRAY_TEAM.length;i++){
@@ -13088,6 +13090,8 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(92,200,255,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
     ctx.fillText('★ CLASSICS IS CLEANED AGAIN — BUT GRAY.EXE DOESN’T STOP · HIS OWN CONTINUING THREAT ★', cx, ly0+LV_GRAY_RANK.length*(lch+lgap)+10);
+    ctx.fillStyle=`rgba(176,107,255,${0.9*g})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('TO CLASSICS, NOTHING CHANGED IN POWER · SHE IS STILL ABOVE ALL OF THEM COMBINED', cx, ly0+LV_GRAY_RANK.length*(lch+lgap)+22);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

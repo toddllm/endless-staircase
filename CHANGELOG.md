@@ -4,6 +4,19 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — GRAY.EXE (cont.): Gray's paranoia, and Classics is unchanged in power (Lore 41 cont., "Re: More stuff on ToddLLM 001")
+
+A same-day follow-up in the same thread. In Toby's words: *"Classics is more powerful than all of them combined still. To Classics,
+nothing even changed in power. Gray now thinks that everyone wants to harm him."* This answers why Gray strikes first — he is now
+paranoid, he thinks everyone wants to harm him — and it makes clear that Gray rising to 4th did nothing to Classics: to her,
+nothing changed in power; she is still above all of them combined. Folded into the existing GRAY.EXE beat (beat 20). Additive.
+
+- Added a red **"NOW THINKS EVERYONE WANTS TO HARM HIM — SO HE STRIKES FIRST"** line under Gray's figure caption, tying his paranoia to the first-strike trait.
+- Added a purple **"TO CLASSICS, NOTHING CHANGED IN POWER · SHE IS STILL ABOVE ALL OF THEM COMBINED"** line under the beat's closing banner, keeping Classics as the untouched ceiling above the whole ladder.
+- Extended the beat's taunt narration with both facts. One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 41 cont. — the GRAY.EXE beat with the paranoia detail. Same layout as before (steel-gray Gray with the glowing bright-blue cyber right eye, the surgery team, the transformation-read plates, and the four-being ladder), now with a red line under his label reading "NOW THINKS EVERYONE WANTS TO HARM HIM — SO HE STRIKES FIRST", and a purple line under the closing banner reading "TO CLASSICS, NOTHING CHANGED IN POWER · SHE IS STILL ABOVE ALL OF THEM COMBINED".](screenshots/85-grayexe-paranoia.png)
+
 ## 2026-07-01 — GRAY.EXE: the cyber-eye surgery turns Gray into a first-strike war-machine (Lore 41, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's July 1 lore. In his words: *"Gray's right eye now became a bright blue cyber eye, Clunkr and Fun Bot and
