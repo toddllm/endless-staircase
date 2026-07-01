@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — CYBER-CRAZY.EXE: Gray goes immortal at Classics power, danger 9999…% (Lore 42, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's July 1 lore, a further escalation of the same thread. In his words: *"Gray is the character who was mortal and was
+on the Sprunki's level of power, and now is at Classics power levels and is now impossible to kill. Players could try, but he is
+immortal. Gray no longer even thinks about X, he attacks everything, because he is scared if he gets attacked... Gray's danger
+level reached to 9999999…% and is in a totally new status: Cyber-Crazy.EXE. Simon can zap lightning, Gray could collect it and grab
+the lightning in it's hand and it turns the lightning from psychic lightning into a lightning ball and he throws it at Simon,
+Simon gets 1HKOed. Clara can erase all around her, Gray says 'Is something suppost to happen?', Gray just raises his hand and Clara
+is trapped into an energy field ball, then he lifts the ball and throws it away into the Shadow Realm. Only ToddLLM, Luigi Green,
+and Classics can possibily defeat him, but there are downfalls, Luigi Green could be locked into a shadow door, ToddLLM could start
+seeing hacculinations and Gray could strike him to KO him, Classics can be fully corrupted and broken by Gray's dark errors.
+Classics and ToddLLM won't be destroyed fully, they can respawn, but Luigi Green will be fully KOed by Gray's energy."* Gray crosses
+from a corrupted character into a catastrophic threat-tier being: he was mortal (Sprunki-level), now sits at Classics power and is
+immortal, and because he strikes first out of fear he is dangerous all the time. He weaponizes Simon's own psychic lightning into a
+lightning ball for a 1-HKO, answers Clara's erasure with "Is something suppost to happen?" and banishes her to the Shadow Realm,
+and the only three who can even try — 001, Luigi Green, Classics — each pay a price. The part that matters most: 001 and Classics
+respawn, but Luigi Green does not. Added as a twenty-second beat, CYBER-CRAZY.EXE, on the end of the UNDEFINED LOOP cutscene, right
+after GRAY.EXE. Additive — every earlier beat is untouched.
+
+- New beat 21, **CYBER-CRAZY.EXE** (crazed red `#ff4060`), added to `LV_BEATS`; `LV_CYC` extended 232 → 248s and `lvSeg` gains the `[21, c-232]` segment. New taunt, title-band entry, background gradient, and strip colors for `ph===21`.
+- Draws the **raging Gray** — the steel figure now consumed by a violent red aura with erratic bolts, the cyber right eye glowing blue-in-red, and **Simon's psychic lightning caught in his hand as a lightning ball** — over the label "IMMORTAL · CANNOT BE KILLED · HE ATTACKS FIRST AT EVERYTHING", from the new `LV_CRAZY_TRAITS`.
+- New **9999…% danger meter** that fills fully and spills "▶ OFF THE CHART / ▶▶▶" past the end, tagged "NEW STATUS: CYBER-CRAZY.EXE".
+- New `LV_CRAZY_VICTIMS` panels — **SIMON** (grabs his psychic lightning → lightning ball → "SIMON IS 1-HKOed") and **CLARA** ("IS SOMETHING SUPPOST TO HAPPEN?" → traps her erasure in an energy-field ball → "THROWN INTO THE SHADOW REALM").
+- New `LV_CRAZY_COUNTERS` ladder — the only three who can try, each with a downfall and a fate: **ToddLLM 001** (hallucinations → KO, ↻ RESPAWNS), **CLASSICS** (corrupted & broken by dark errors, ↻ RESPAWNS), **LUIGI GREEN** (locked into a shadow door, ✗ FULLY KOed · NO RESPAWN, drawn with a red border). Banner: "★ 001 & CLASSICS RESPAWN — LUIGI GREEN IS FULLY KOed · THE ONE YOU NEVER LET START ★".
+- One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 42 — the CYBER-CRAZY.EXE beat. Red title band reads "CYBER-CRAZY.EXE — GRAY GOES IMMORTAL AT CLASSICS POWER, DANGER 9999…%", with the lines "WAS MORTAL (SPRUNKI-LEVEL) · NOW AT CLASSICS POWER & IMMORTAL — PLAYERS CAN TRY, BUT HE CANNOT BE KILLED" and "HE NO LONGER THINKS ABOUT X · HE ATTACKS EVERYTHING · SCARED, SO HE STRIKES FIRST". In the center a steel-gray figure wrapped in a violent red aura with jagged bolts, an angry red left-eye slit, a blue cyber right eye ringed in red, and a wide furious mouth, holding a bright blue-white lightning ball in his raised hand, labeled "CYBER-CRAZY.EXE" over "IMMORTAL · CANNOT BE KILLED · HE ATTACKS FIRST AT EVERYTHING". Below him a DANGER LEVEL meter filled all the way with a blue→pink→red gradient, reading "9999…% ▶ OFF THE CHART" with "▶▶▶" spilling past the end, over "NEW STATUS: CYBER-CRAZY.EXE". Two victim panels: SIMON ("GRABS SIMON'S PSYCHIC LIGHTNING · TURNS IT INTO A LIGHTNING BALL · THROWS IT BACK" → "▶ SIMON IS 1-HKOed") and CLARA ("'IS SOMETHING SUPPOST TO HAPPEN?' · TRAPS HER ERASURE IN AN ENERGY-FIELD BALL" → "▶ THROWN INTO THE SHADOW REALM"). Then the three-being counter ladder under "ONLY THESE THREE CAN POSSIBLY DEFEAT HIM — EACH WITH A DOWNFALL": ↻ ToddLLM 001 "STARTS SEEING HALLUCINATIONS · GRAY STRIKES TO KO" (RESPAWNS), ↻ CLASSICS "FULLY CORRUPTED & BROKEN BY GRAY'S DARK ERRORS" (RESPAWNS), and ✗ LUIGI GREEN "LOCKED INTO A SHADOW DOOR" (FULLY KOed · NO RESPAWN, red border). A red banner reads "★ 001 & CLASSICS RESPAWN — LUIGI GREEN IS FULLY KOed · THE ONE YOU NEVER LET START ★". The left-edge lore ladder now ends on a lit "◆ CYBER-CRAZY.EXE".](screenshots/86-cybercrazy.png)
+
 ## 2026-07-01 — GRAY.EXE (cont.): Gray's paranoia, and Classics is unchanged in power (Lore 41 cont., "Re: More stuff on ToddLLM 001")
 
 A same-day follow-up in the same thread. In Toby's words: *"Classics is more powerful than all of them combined still. To Classics,

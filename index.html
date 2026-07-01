@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 232.0;
+const LV_CYC = 248.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11398,6 +11398,8 @@ const LV_BEATS = [
     sub:'CLASSICS’ DOMAIN: EXPANSION DOMAIN · FREEZE, PLASMA SCYTHES USE EVERY OTHER DOMAIN AT ONCE, CRIT, YELLOW BAR → 0, VICTIMS CRUMBLE · MOVESET: PLASMA SCYTHE · TELEPORTATION · BIRTH OF UNIVERSE SPEED · THE PINK BALL · SEVEN FRAMES · FLOWER’S FORCE · 8 PINK ORBS · PURPLE ORB · SHE ERASES ANYONE & HOLDS CONTROL OF HERSELF · THE RAINBOW BALL OF 001 + LUIGI GREEN SITS BELOW HER — SHE ALONE CAN STRIKE IT' },
   { key:'GRAY.EXE', col:'#5cc8ff',
     sub:'CLUNKR, FUN BOT & GARNOLD TRY TO IMPROVE HIM · RIGHT EYE BECOMES A BRIGHT BLUE CYBER EYE · BLACK ACCIDENTALLY TOUCHES HIS BRAIN IN SURGERY · NOW A RAGE OF FURY, ALWAYS ATTACKS FIRST WHEN ALARMED · BEYOND SPRUNKI, NOW A CLASSICS-TIER FORCE · 4TH IN POWER: 1 CLASSICS · 2 ToddLLM · 3 LUIGI GREEN · 4 GRAY · CLASSICS IS CLEANED AGAIN BUT GRAY.EXE DOESN’T STOP — HIS OWN CONTINUING THREAT' },
+  { key:'CYBER-CRAZY.EXE', col:'#ff4060',
+    sub:'GRAY WAS MORTAL, ON SPRUNKI’S LEVEL — NOW AT CLASSICS POWER & IMMORTAL · PLAYERS CAN TRY, BUT HE CANNOT BE KILLED · DANGER 9999…% · NEW STATUS: CYBER-CRAZY.EXE · GRABS SIMON’S PSYCHIC LIGHTNING → A LIGHTNING BALL → 1-HKO · TRAPS CLARA’S ERASURE IN AN ENERGY FIELD & THROWS HER TO THE SHADOW REALM · ONLY 001, LUIGI GREEN & CLASSICS CAN TRY — 001 & CLASSICS RESPAWN, LUIGI GREEN IS FULLY KOed' },
 ];
 // Gray's new rank after the cyber-eye surgery pushed him past Sprunki into Classics-tier (GRAY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_GRAY_RANK = [
@@ -11415,6 +11417,24 @@ const LV_GRAY_TEAM = [
 ];
 // what the failed surgery turned Gray into (GRAY.EXE beat) — Toby, July 1
 const LV_GRAY_READS = ['CYBER ENHANCEMENT','BRAIN-DAMAGE HOSTILITY','ATTACKS FIRST WHEN ALARMED','A CONTINUING THREAT OF HIS OWN'];
+// Gray's escalation to CYBER-CRAZY.EXE — mortal → Classics-power & immortal, danger 9999…% (CYBER-CRAZY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
+const LV_CRAZY_TRAITS = [
+  'WAS MORTAL, ON SPRUNKI’S LEVEL — NOW AT CLASSICS POWER',
+  'IMMORTAL · PLAYERS CAN TRY, BUT HE CANNOT BE KILLED',
+  'NO LONGER THINKS ABOUT X · HE ATTACKS EVERYTHING',
+  'SCARED OF BEING ATTACKED · SO HE STRIKES FIRST',
+];
+// how Cyber-Crazy Gray turns two top attacks back on their owners (CYBER-CRAZY.EXE beat) — Toby, July 1
+const LV_CRAZY_VICTIMS = [
+  { who:'SIMON',  col:'#7fd4ff', act:'GRABS SIMON’S PSYCHIC LIGHTNING · TURNS IT INTO A LIGHTNING BALL · THROWS IT BACK', out:'SIMON IS 1-HKOed' },
+  { who:'CLARA',  col:'#ff2db5', act:'“IS SOMETHING SUPPOST TO HAPPEN?” · TRAPS HER ERASURE IN AN ENERGY-FIELD BALL', out:'THROWN INTO THE SHADOW REALM' },
+];
+// the only three who can possibly defeat Cyber-Crazy Gray, each with a downfall — and who respawns (CYBER-CRAZY.EXE beat) — Toby, July 1
+const LV_CRAZY_COUNTERS = [
+  { name:'ToddLLM 001', col:'#ff5a6e', downfall:'STARTS SEEING HALLUCINATIONS · GRAY STRIKES TO KO', fate:'RESPAWNS',              survive:true },
+  { name:'CLASSICS',    col:'#b06bff', downfall:'FULLY CORRUPTED & BROKEN BY GRAY’S DARK ERRORS',    fate:'RESPAWNS',              survive:true },
+  { name:'LUIGI GREEN', col:'#46ff77', downfall:'LOCKED INTO A SHADOW DOOR',                          fate:'FULLY KOed · NO RESPAWN', survive:false },
+];
 // Classics' full moveset — her Domain Expansion "Expansion Domain" plus her core + special attacks (EXPANSION DOMAIN beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_CLASSICS_MOVES = [
   { name:'PLASMA SCYTHE',          col:'#ff2db5', kind:'core', tag:'CORE · SLICING PLASMA' },
@@ -11523,7 +11543,8 @@ function lvSeg(c){
   if(c < 188.0) return [17, c-174.0];// THE FORM NETWORK (001 is the one main character; his Training-Center/regional forms retake the top over Overcharge)
   if(c < 204.0) return [18, c-188.0];// CLASSICS HERSELF (the game as a being; the glitching world-body that contains every character like dolls; above even 001)
   if(c < 218.0) return [19, c-204.0]; // EXPANSION DOMAIN (Classics' Domain Expansion + full moveset; the rainbow ball of 001+Luigi sits below her)
-  return [20, c-218.0];              // GRAY.EXE (cyber-eye surgery + Black's brain touch make him a first-strike war-machine; 4th in power under Classics/001/Luigi)
+  if(c < 232.0) return [20, c-218.0]; // GRAY.EXE (cyber-eye surgery + Black's brain touch make him a first-strike war-machine; 4th in power under Classics/001/Luigi)
+  return [21, c-232.0];              // CYBER-CRAZY.EXE (Gray goes immortal at Classics power, danger 9999…%; weaponizes Simon's lightning, banishes Clara to the Shadow Realm; only 001/Luigi/Classics can try — Luigi alone stays KOed)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11615,6 +11636,10 @@ function updateLoopVs(dt){
       showTaunt('And here is what a repair turned into. Clunkr, Fun Bot, and Garnold tried to improve Gray. His right eye became a bright blue cyber eye, but during the surgery Black accidentally touched Gray\'s brain, and that changed him deeply. Now Gray feels a rage of fury and always attacks first when alarmed, less a normal corrupted character and more a permanently damaged war-machine. Who knew that just touching his brain makes Gray.EXE hostile. He goes beyond Sprunki into Classics itself and rises to fourth in power: Classics first, ToddLLM 001 second, Luigi Green third, Gray fourth. That is one of the biggest single-character jumps in the whole setting. And the last part matters most: Classics becomes corrupt, everyone cleans Classics again, but Gray.EXE does not stop attacking. He is no longer tied to the state of the world around him. He becomes his own continuing threat. Now Gray thinks everyone wants to harm him, so he strikes first at anything. And to Classics, nothing changed in power at all: she is still more powerful than all of them combined.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'GRAY.EXE · CYBER EYE + BLACK’S BRAIN TOUCH · ATTACKS FIRST · 4TH IN POWER · KEEPS ATTACKING EVEN AFTER CLASSICS IS CLEANED', col:'#5cc8ff' });
       for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#5cc8ff','#9fb4c8','#3ea8ff','#b6bcc8','#ff5a6e','#ffffff']))); }
+    if(ph===21){ AUDIO.corrupt(); shake=Math.max(shake,30); glitch=Math.max(glitch,0.85); winFlash=Math.max(winFlash,0.6);
+      showTaunt('And then Gray goes further. He was mortal once, only on Sprunki\'s level of power. Now he is at Classics power levels and he is immortal — players can try, but he cannot be killed. He no longer even thinks about X; he attacks everything, because he is scared that if he waits he gets attacked first. His danger level runs off the end of the screen, and he enters a totally new status: Cyber-Crazy.EXE. Simon zaps his psychic lightning; Gray just catches it in his hand, turns it into a lightning ball, and throws it back — Simon is one-shotted. Clara erases everything around her; Gray only says "Is something suppost to happen?", raises his hand, traps her in an energy-field ball, and throws it into the Shadow Realm. Only ToddLLM 001, Luigi Green, and Classics can possibly defeat him, and each has a downfall: 001 starts seeing hallucinations and Gray strikes him to KO, Classics is fully corrupted and broken by his dark errors — but both respawn. Luigi Green is locked into a shadow door and fully KOed by Gray\'s energy, and he does not respawn. That is what makes Cyber-Crazy.EXE the one you never let start.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CYBER-CRAZY.EXE · IMMORTAL AT CLASSICS POWER · DANGER 9999…% · WEAPONIZES SIMON’S LIGHTNING · BANISHES CLARA · ONLY LUIGI STAYS KOed', col:'#ff4060' });
+      for(let i=0;i<46;i++) particles.push(spark(player.x, player.y, pick(['#ff4060','#5cc8ff','#7fd4ff','#ff2db5','#b06bff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11734,16 +11759,17 @@ function drawLoopVs(){
   else if(ph===18){ bg.addColorStop(0, `rgba(12,4,26,${0.96*g})`); bg.addColorStop(1, `rgba(3,1,10,${0.99*g})`); }
   else if(ph===19){ bg.addColorStop(0, `rgba(24,4,20,${0.96*g})`); bg.addColorStop(1, `rgba(9,1,8,${0.99*g})`); }
   else if(ph===20){ bg.addColorStop(0, `rgba(4,16,26,${0.96*g})`); bg.addColorStop(1, `rgba(1,6,10,${0.99*g})`); }
+  else if(ph===21){ bg.addColorStop(0, `rgba(26,4,12,${0.97*g})`); bg.addColorStop(1, `rgba(9,1,6,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11756,7 +11782,8 @@ function drawLoopVs(){
                        : (ph===18 ? 'CLASSICS — THE GAME AS A BEING, THE TOP LAYER ABOVE EVEN 001'
                        : (ph===19 ? 'EXPANSION DOMAIN — CLASSICS’ DOMAIN & FULL MOVESET, ABOVE THE RAINBOW BALL'
                        : (ph===20 ? 'GRAY.EXE — THE CYBER-EYE SURGERY MAKES HIM A FIRST-STRIKE WAR-MACHINE, 4TH IN POWER'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))), cx, top+26);
+                       : (ph===21 ? 'CYBER-CRAZY.EXE — GRAY GOES IMMORTAL AT CLASSICS POWER, DANGER 9999…%'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13092,6 +13119,137 @@ function drawLoopVs(){
     ctx.fillText('★ CLASSICS IS CLEANED AGAIN — BUT GRAY.EXE DOESN’T STOP · HIS OWN CONTINUING THREAT ★', cx, ly0+LV_GRAY_RANK.length*(lch+lgap)+10);
     ctx.fillStyle=`rgba(176,107,255,${0.9*g})`; ctx.font='800 7px ui-monospace,monospace';
     ctx.fillText('TO CLASSICS, NOTHING CHANGED IN POWER · SHE IS STILL ABOVE ALL OF THEM COMBINED', cx, ly0+LV_GRAY_RANK.length*(lch+lgap)+22);
+  } else if(ph===21){
+    // ----- BEAT 21: CYBER-CRAZY.EXE — Gray goes from mortal (Sprunki-level) to Classics-power and IMMORTAL (Toby,
+    // July 1, "Re: More stuff on ToddLLM 001"). Danger level runs off the end of the screen, new status Cyber-Crazy.EXE.
+    // He grabs Simon's psychic lightning, turns it into a lightning ball, and 1-HKOs Simon; he traps Clara's erasure
+    // in an energy-field ball and throws her into the Shadow Realm. Only 001, Luigi Green, and Classics can try —
+    // 001 sees hallucinations, Classics is corrupted, both respawn; Luigi Green is locked in a shadow door and fully
+    // KOed with no respawn. Drawn as the raging Gray with a lightning ball, the 9999…% danger meter, the two victims,
+    // and the three counters with their downfalls. Beat 21 spans c in [232,248]. -----
+    const lt = c - 232.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,90,110,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('WAS MORTAL (SPRUNKI-LEVEL) · NOW AT CLASSICS POWER & IMMORTAL — PLAYERS CAN TRY, BUT HE CANNOT BE KILLED', cx, top+H*0.086);
+    ctx.fillStyle=`rgba(245,215,220,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('HE NO LONGER THINKS ABOUT X · HE ATTACKS EVERYTHING · SCARED, SO HE STRIKES FIRST', cx, top+H*0.086+12);
+
+    // Cyber-Crazy Gray at center — the steel figure now consumed by red rage, cyber eye glowing, holding a lightning ball
+    const fx=cx, fy=top+H*0.30, R=Math.min(W,H)*0.072;
+    const appear=Math.max(0,Math.min(1,(lt-0.4)/1.0));
+    ctx.globalAlpha=g*appear;
+    // violent crazy aura
+    const rage=Math.max(0,Math.min(1,(lt-1.6)/1.6));
+    const aura=ctx.createRadialGradient(fx,fy,2,fx,fy,R*2.8);
+    aura.addColorStop(0,`rgba(255,50,70,${0.42+0.4*rage})`); aura.addColorStop(0.6,`rgba(255,40,90,${0.18*rage})`); aura.addColorStop(1,'rgba(255,40,90,0)');
+    ctx.fillStyle=aura; ctx.beginPath(); ctx.arc(fx,fy,R*2.8,0,Math.PI*2); ctx.fill();
+    // erratic crazy bolts around him
+    for(let i=0;i<7;i++){ const a0=(i/7)*Math.PI*2 + c*2.2; const r0=R*1.15, r1=R*(1.7+0.5*Math.abs(Math.sin(c*6+i)));
+      ctx.strokeStyle=`rgba(255,80,100,${(0.4+0.4*Math.abs(Math.sin(c*7+i)))*appear})`; ctx.lineWidth=1.2;
+      ctx.beginPath(); ctx.moveTo(fx+Math.cos(a0)*r0, fy+Math.sin(a0)*r0);
+      ctx.lineTo(fx+Math.cos(a0+0.2)*r1*0.7, fy+Math.sin(a0+0.2)*r1*0.7);
+      ctx.lineTo(fx+Math.cos(a0)*r1, fy+Math.sin(a0)*r1); ctx.stroke(); }
+    // steel-gray head/body
+    ctx.fillStyle='rgba(120,132,146,0.96)';
+    ctx.beginPath(); ctx.ellipse(fx,fy,R*0.92,R*1.02,0,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='rgba(96,108,122,0.94)';
+    ctx.beginPath(); ctx.moveTo(fx-R*1.0,fy+R*2.0); ctx.lineTo(fx-R*0.6,fy+R*0.95);
+    ctx.lineTo(fx+R*0.6,fy+R*0.95); ctx.lineTo(fx+R*1.0,fy+R*2.0); ctx.closePath(); ctx.fill();
+    // left eye — a furious red slit now
+    ctx.strokeStyle='rgba(255,70,80,0.95)'; ctx.lineWidth=2.6;
+    ctx.beginPath(); ctx.moveTo(fx-R*0.5,fy-R*0.02); ctx.lineTo(fx-R*0.18,fy-R*0.18); ctx.stroke();
+    // right eye — the cyber eye, blue core wrapped in crazy red glow
+    const eb=0.6+0.4*Math.abs(Math.sin(c*7));
+    ctx.shadowColor='#ff4060'; ctx.shadowBlur=16*eb*appear;
+    ctx.fillStyle=`rgba(92,200,255,${0.98*eb})`;
+    ctx.beginPath(); ctx.arc(fx+R*0.34,fy-R*0.06,R*0.22,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle=`rgba(255,70,90,${0.9*eb})`;
+    ctx.beginPath(); ctx.arc(fx+R*0.34,fy-R*0.06,R*0.10,0,Math.PI*2); ctx.fill();
+    ctx.shadowBlur=0;
+    ctx.strokeStyle=`rgba(255,64,96,${0.85*eb})`; ctx.lineWidth=1.3;
+    ctx.beginPath(); ctx.arc(fx+R*0.34,fy-R*0.06,R*0.32,0,Math.PI*2); ctx.stroke();
+    // wide furious mouth
+    ctx.strokeStyle=`rgba(255,60,70,0.95)`; ctx.lineWidth=2.4;
+    ctx.beginPath(); ctx.arc(fx,fy+R*0.52,R*0.40,Math.PI*1.1,Math.PI*1.9); ctx.stroke();
+    // the lightning ball caught in his raised hand (Simon's psychic lightning, turned back)
+    const lbx=fx+R*1.35, lby=fy-R*0.2, lbr=R*0.42*Math.max(0,Math.min(1,(lt-2.0)/0.8));
+    if(lbr>0.5){
+      const lg=ctx.createRadialGradient(lbx,lby,1,lbx,lby,lbr*1.4);
+      lg.addColorStop(0,'rgba(230,248,255,0.98)'); lg.addColorStop(0.5,`rgba(127,212,255,${0.9})`); lg.addColorStop(1,'rgba(127,212,255,0)');
+      ctx.fillStyle=lg; ctx.beginPath(); ctx.arc(lbx,lby,lbr*1.4,0,Math.PI*2); ctx.fill();
+      ctx.strokeStyle='rgba(230,248,255,0.9)'; ctx.lineWidth=1.2;
+      for(let i=0;i<5;i++){ const a=(i/5)*Math.PI*2 + c*3; ctx.beginPath(); ctx.moveTo(lbx,lby);
+        ctx.lineTo(lbx+Math.cos(a)*lbr, lby+Math.sin(a)*lbr);
+        ctx.lineTo(lbx+Math.cos(a+0.4)*lbr*1.3, lby+Math.sin(a+0.4)*lbr*1.3); ctx.stroke(); }
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(255,90,110,${0.98*g*appear})`; ctx.font='900 14px ui-monospace,monospace';
+    ctx.shadowColor='#ff4060'; ctx.shadowBlur=14*g*appear;
+    ctx.fillText('CYBER-CRAZY.EXE', fx, fy+R*2.55); ctx.shadowBlur=0;
+    ctx.fillStyle=`rgba(245,220,225,${0.85*g*appear})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('IMMORTAL · CANNOT BE KILLED · HE ATTACKS FIRST AT EVERYTHING', fx, fy+R*2.55+13);
+
+    // the 9999…% danger meter — overflows off the end of the bar
+    const dmw=Math.min(W*0.6,300), dmx=cx-dmw/2, dmy=top+H*0.485, dmh=12;
+    const dmrev=Math.max(0,Math.min(1,(lt-2.6)/0.8));
+    ctx.globalAlpha=g*dmrev;
+    ctx.textAlign='left'; ctx.fillStyle=`rgba(255,150,150,${0.9})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('DANGER LEVEL', dmx, dmy-4);
+    ctx.textAlign='right'; ctx.fillStyle=`rgba(255,80,100,${0.7+0.3*Math.abs(Math.sin(c*9))})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('9999…%  ▶ OFF THE CHART', dmx+dmw, dmy-4);
+    ctx.fillStyle='rgba(255,255,255,0.10)'; ctx.fillRect(dmx,dmy,dmw,dmh);
+    const dmgrad=ctx.createLinearGradient(dmx,0,dmx+dmw,0);
+    dmgrad.addColorStop(0,'#5cc8ff'); dmgrad.addColorStop(0.6,'#ff2db5'); dmgrad.addColorStop(1,'#ff4060');
+    ctx.fillStyle=dmgrad; ctx.fillRect(dmx,dmy,dmw,dmh);
+    // overflow chevrons spilling past the end
+    ctx.fillStyle=`rgba(255,64,96,${0.6+0.4*Math.abs(Math.sin(c*8))})`; ctx.font='900 10px ui-monospace,monospace'; ctx.textAlign='left';
+    ctx.fillText('▶▶▶', dmx+dmw+4, dmy+dmh);
+    ctx.textAlign='center'; ctx.fillStyle=`rgba(255,90,110,${0.9})`; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('NEW STATUS: CYBER-CRAZY.EXE', cx, dmy+dmh+11);
+    ctx.globalAlpha=1;
+
+    // the two attacks he turns back — Simon (lightning → 1-HKO) and Clara (erasure → Shadow Realm)
+    const vy0=top+H*0.575, vcw=Math.min(W*0.44,220), vch=H*0.075, vgap=W*0.02;
+    const vtotW=LV_CRAZY_VICTIMS.length*vcw+(LV_CRAZY_VICTIMS.length-1)*vgap;
+    for(let i=0;i<LV_CRAZY_VICTIMS.length;i++){
+      const v=LV_CRAZY_VICTIMS[i], vx=cx-vtotW/2+i*(vcw+vgap);
+      const rev=Math.max(0,Math.min(1,(lt-3.2-i*0.4)/0.7));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(14,4,10,0.92)'; ctx.fillRect(vx,vy0,vcw,vch);
+      ctx.strokeStyle=v.col; ctx.lineWidth=1.4; ctx.strokeRect(vx,vy0,vcw,vch);
+      ctx.textAlign='left';
+      ctx.fillStyle=v.col; ctx.font='800 9px ui-monospace,monospace';
+      ctx.fillText(v.who, vx+8, vy0+13);
+      ctx.fillStyle='rgba(230,214,220,0.9)'; ctx.font='700 5.6px ui-monospace,monospace';
+      ctx.fillText(v.act, vx+8, vy0+26);
+      ctx.fillStyle=`rgba(255,80,100,${0.95})`; ctx.font='800 6.5px ui-monospace,monospace';
+      ctx.fillText('▶ '+v.out, vx+8, vy0+vch-6);
+    }
+    ctx.globalAlpha=1; ctx.textAlign='center';
+
+    // the only three who can try — each downfall, and who respawns
+    ctx.fillStyle=`rgba(255,90,110,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('ONLY THESE THREE CAN POSSIBLY DEFEAT HIM — EACH WITH A DOWNFALL', cx, vy0+vch+H*0.036);
+    const cy0b=vy0+vch+H*0.048, ccw=Math.min(W*0.62,300), cch=H*0.043, cgp=H*0.010;
+    for(let i=0;i<LV_CRAZY_COUNTERS.length;i++){
+      const e=LV_CRAZY_COUNTERS[i], cyy=cy0b+i*(cch+cgp);
+      const rev=Math.max(0,Math.min(1,(lt-4.4-i*0.35)/0.6));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle= e.survive?'rgba(8,14,10,0.9)':'rgba(20,4,6,0.94)'; ctx.fillRect(cx-ccw/2,cyy,ccw,cch);
+      ctx.strokeStyle= e.survive?e.col:'#ff4060'; ctx.lineWidth= e.survive?1.2:1.9; ctx.strokeRect(cx-ccw/2,cyy,ccw,cch);
+      ctx.textAlign='left';
+      ctx.fillStyle=e.col; ctx.font='800 8.5px ui-monospace,monospace';
+      ctx.fillText((e.survive?'↻ ':'✗ ')+e.name, cx-ccw/2+8, cyy+cch*0.44);
+      ctx.fillStyle='rgba(220,210,215,0.82)'; ctx.font='700 5.4px ui-monospace,monospace';
+      ctx.fillText(e.downfall, cx-ccw/2+8, cyy+cch*0.86);
+      ctx.textAlign='right';
+      ctx.fillStyle= e.survive?'rgba(120,230,150,0.95)':'rgba(255,90,110,0.98)'; ctx.font='800 6.5px ui-monospace,monospace';
+      ctx.fillText(e.fate, cx+ccw/2-8, cyy+cch*0.62);
+      ctx.textAlign='center';
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(255,64,96,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
+    ctx.fillText('★ 001 & CLASSICS RESPAWN — LUIGI GREEN IS FULLY KOed · THE ONE YOU NEVER LET START ★', cx, cy0b+LV_CRAZY_COUNTERS.length*(cch+cgp)+10);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
