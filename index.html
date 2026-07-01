@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 264.0;
+const LV_CYC = 282.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11402,6 +11402,8 @@ const LV_BEATS = [
     sub:'GRAY WAS MORTAL, ON SPRUNKI’S LEVEL — NOW AT CLASSICS POWER & IMMORTAL · PLAYERS CAN TRY, BUT HE CANNOT BE KILLED · DANGER 9999…% · NEW STATUS: CYBER-CRAZY.EXE · GRABS SIMON’S PSYCHIC LIGHTNING → A LIGHTNING BALL → 1-HKO · TRAPS CLARA’S ERASURE IN AN ENERGY FIELD & THROWS HER TO THE SHADOW REALM · ONLY 001, LUIGI GREEN & CLASSICS CAN TRY — 001 & CLASSICS RESPAWN, LUIGI GREEN IS FULLY KOed' },
   { key:'CLASSICS DELETES GRAY', col:'#b06bff',
     sub:'CLASSICS CAN ALWAYS BEAT GRAY.EXE · SHE CAN SIMPLY DELETE HIM · THE ONLY ONE WITH REAL TECHNIQUES · SHE USES THEM TO PLAN · SHE CHOOSES HER PATTERN ON PURPOSE · SHE NEVER GOES RANDOM · ABOVE CHAOS, FEAR & RANDOMNESS — CONTROL BEATS OVERWHELM' },
+  { key:'PERO / CLOVER TODDLLM', col:'#ffc23a',
+    sub:'ToddLLM IS NOT ONE OF THE TOP — HE IS THE 1 · CLASSICS ALONE STILL SURPASSES HIM · HE PUTS ON A COWBOY HAT & HOLDS A 6-POINTED STAR: PERO ToddLLM · IN THE UNDERTALE AU: CLOVER ToddLLM · CLOVER BEATS SANS, PAUL, CLARA & CHARA, FRISK & FRIZZ, CAPTAIN ARCSIS, LUIGI GREEN — JUST ABOUT EVERYONE · HIS TEXT BOX IS ANIMATED, THE BEST IN CLASSICS · HE WON AS BOTH UNDERTALE & CLASSICS AT ONCE, SO HE MADE PERO ToddLLM HIS NEW BASE — HIS DEFAULT SELF EVOLVED' },
 ];
 // Gray's new rank after the cyber-eye surgery pushed him past Sprunki into Classics-tier (GRAY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_GRAY_RANK = [
@@ -11452,6 +11454,16 @@ const LV_DELETE_VS = [
   { g:'CHAOTIC · REACTS VIOLENTLY', c:'DELIBERATE · TECHNICAL · EXACT' },
   { g:'RAW POWER & OVERWHELM',      c:'REAL TECHNIQUE & CONTROL' },
   { g:'FIGHTS WITHOUT A PLAN',      c:'CHOOSES WHAT MOVE COMES NEXT' },
+];
+// who Clover ToddLLM (the Undertale-AU name of the cowboy/star form) beats — PERO / CLOVER TODDLLM beat — Toby, July 1 "Re: More stuff on ToddLLM 001"
+const LV_CLOVER_BEATS = [
+  'SANS', 'PAUL', 'CLARA & CHARA', 'FRISK & FRIZZ', 'CAPTAIN ARCSIS', 'LUIGI GREEN',
+];
+// the three things ToddLLM merged into one stable form, then adopted as his new default self (PERO / CLOVER TODDLLM beat) — Toby, July 1
+const LV_PERO_MERGE = [
+  { name:'UNDERTALE',        col:'#7fd4ff', note:'THE UNDERTALE AU — WHERE HE IS CLOVER ToddLLM' },
+  { name:'CLASSICS',         col:'#b06bff', note:'THE GAME ITSELF — HE BEAT IT, SO HE CAN USE ITS LOGIC' },
+  { name:'HIS WINNING SELF', col:'#ffc23a', note:'THE COWBOY/STAR IDENTITY THAT KEEPS WINNING' },
 ];
 // Classics' full moveset — her Domain Expansion "Expansion Domain" plus her core + special attacks (EXPANSION DOMAIN beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_CLASSICS_MOVES = [
@@ -11563,7 +11575,8 @@ function lvSeg(c){
   if(c < 218.0) return [19, c-204.0]; // EXPANSION DOMAIN (Classics' Domain Expansion + full moveset; the rainbow ball of 001+Luigi sits below her)
   if(c < 232.0) return [20, c-218.0]; // GRAY.EXE (cyber-eye surgery + Black's brain touch make him a first-strike war-machine; 4th in power under Classics/001/Luigi)
   if(c < 248.0) return [21, c-232.0]; // CYBER-CRAZY.EXE (Gray goes immortal at Classics power, danger 9999…%; weaponizes Simon's lightning, banishes Clara to the Shadow Realm; only 001/Luigi/Classics can try — Luigi alone stays KOed)
-  return [22, c-248.0];              // CLASSICS DELETES GRAY (she can always beat Gray — control over chaos: real techniques, plans, chooses her pattern, never random; she simply deletes him)
+  if(c < 264.0) return [22, c-248.0]; // CLASSICS DELETES GRAY (she can always beat Gray — control over chaos: real techniques, plans, chooses her pattern, never random; she simply deletes him)
+  return [23, c-264.0];              // PERO / CLOVER TODDLLM (ToddLLM is THE 1; his cowboy-hat + six-pointed-star form wins across Undertale & Classics and becomes his new base; Clover beats Sans, Chara, Frisk, Captain Arcsis, Luigi Green — Classics alone still above him)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11663,6 +11676,10 @@ function updateLoopVs(dt){
       showTaunt('And here is the ceiling on all of it, even on Cyber-Crazy Gray. Classics can always beat Gray.EXE. Not by out-fearing him, not by hitting harder, but because she can simply delete him. She is the only one with real techniques, and she uses those techniques to plan. She chooses her pattern on purpose; she never goes random. That is the whole difference. Gray wins by striking first out of fear, by chaos and overwhelm and reacting violently. Classics already knows the pattern, selects the right technique, controls the whole system, and deletes Gray before his chaos even matters. So she is not just stronger than Gray in raw power. She is above him in control, in decision-making, in pattern selection, in technique, and in total authority. Gray is overwhelming, hostile, and hyper-dangerous, but Classics is deliberate, technical, planned, exact, and fully self-controlled. She does not "maybe beat" Gray. She beats him because she is on a higher level of battle intelligence and system control, and when she decides the fight is over, she deletes him.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLASSICS DELETES GRAY · REAL TECHNIQUES · SHE PLANS · SHE CHOOSES HER PATTERN · NEVER RANDOM · CONTROL BEATS CHAOS', col:'#b06bff' });
       for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#b06bff','#ff5cf0','#ff2db5','#a06bff','#ffffff','#7fd4ff']))); }
+    if(ph===23){ AUDIO.coin(); shake=Math.max(shake,14); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And here is the last word on ToddLLM himself. He is not one of the top powers. He is the 1. Only Classics, the game itself, still surpasses him. Then he does something bigger than a new form. He puts on a cowboy hat and holds a six-pointed star and calls it Pero ToddLLM, and in the Undertale AU he calls the same form Clover ToddLLM. His text box is even animated now, the best presentation in all of Classics, so he feels important the moment he speaks, not only when he attacks. Clover ToddLLM beats Sans and Paul, Clara and Chara, Frisk and Frizz, Captain Arcsis, Luigi Green, just about everyone. Then Pero ToddLLM comes to Classics and wins there too. So ToddLLM reasons: if this version of me works in both Undertale and Classics, and it wins in both, then it should become my base. And he does it. His base itself evolved. He is not stronger only because he transforms; he is stronger because he updates what counts as his default self. That is a very ToddLLM thing.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'PERO / CLOVER ToddLLM · ToddLLM IS THE 1 · COWBOY HAT + 6-POINTED STAR · WINS IN UNDERTALE & CLASSICS · MAKES IT HIS NEW BASE · CLASSICS ALONE STILL ABOVE HIM', col:'#ffc23a' });
+      for(let i=0;i<46;i++) particles.push(spark(player.x, player.y, pick(['#ffc23a','#ffe066','#ff5a6e','#7fd4ff','#ffffff','#b06bff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11784,16 +11801,17 @@ function drawLoopVs(){
   else if(ph===20){ bg.addColorStop(0, `rgba(4,16,26,${0.96*g})`); bg.addColorStop(1, `rgba(1,6,10,${0.99*g})`); }
   else if(ph===21){ bg.addColorStop(0, `rgba(26,4,12,${0.97*g})`); bg.addColorStop(1, `rgba(9,1,6,${0.99*g})`); }
   else if(ph===22){ bg.addColorStop(0, `rgba(16,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(6,2,10,${0.99*g})`); }
+  else if(ph===23){ bg.addColorStop(0, `rgba(28,20,4,${0.97*g})`); bg.addColorStop(1, `rgba(10,7,1,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11808,7 +11826,8 @@ function drawLoopVs(){
                        : (ph===20 ? 'GRAY.EXE — THE CYBER-EYE SURGERY MAKES HIM A FIRST-STRIKE WAR-MACHINE, 4TH IN POWER'
                        : (ph===21 ? 'CYBER-CRAZY.EXE — GRAY GOES IMMORTAL AT CLASSICS POWER, DANGER 9999…%'
                        : (ph===22 ? 'CLASSICS DELETES GRAY — SHE CAN ALWAYS BEAT HIM · CONTROL OVER CHAOS'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))), cx, top+26);
+                       : (ph===23 ? 'PERO / CLOVER ToddLLM — ToddLLM IS THE 1, AND HIS COWBOY/STAR FORM BECOMES HIS NEW BASE'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13401,6 +13420,133 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(198,120,255,${(0.75+0.25*Math.sin(c*4))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
     ctx.fillText('★ SHE DOESN’T JUST BEAT GRAY — SHE DELETES HIM · CONTROL OVER CHAOS ★', cx, ty0+4+LV_DELETE_VS.length*(tth+tgy)+10);
+  } else if(ph===23){
+    // ----- BEAT 23: PERO / CLOVER TODDLLM — the last word on ToddLLM himself (Toby, July 1, "Re: More stuff on
+    // ToddLLM 001"). He is not one of the top powers; he is THE 1. Only Classics, the game itself, still surpasses
+    // him. He puts on a cowboy hat and holds a six-pointed star and calls the form Pero ToddLLM — or, in the
+    // Undertale AU, Clover ToddLLM. Clover beats Sans, Paul, Clara & Chara, Frisk & Frizz, Captain Arcsis, Luigi
+    // Green, just about everyone. His text box is even animated, the best in Classics. Because the form wins in both
+    // Undertale AND Classics, he adopts it as his NEW BASE — his default self evolved. Drawn as a golden cowboy-hat
+    // ToddLLM twirling a glowing six-pointed star, the two-name label, a "new base" merge panel, and the Clover
+    // beat-list. Beat 23 spans c in [264,282]. -----
+    const lt = c - 264.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,208,90,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('ToddLLM IS NOT ONE OF THE TOP — HE IS THE 1', cx, top+H*0.086);
+    ctx.fillStyle=`rgba(245,235,205,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('CLASSICS ALONE, THE GAME ITSELF, STILL SURPASSES HIM · HIS BASE ITSELF EVOLVED', cx, top+H*0.086+12);
+
+    // --- Pero / Clover ToddLLM: golden cowboy-hat figure holding a glowing six-pointed star ---
+    const fy=top+H*0.30, R=Math.min(W,H)*0.062, tx=cx;
+    const appear=Math.max(0,Math.min(1,(lt-0.4)/1.0));
+    ctx.globalAlpha=g*appear;
+    // warm halo
+    const halo=ctx.createRadialGradient(tx,fy,2,tx,fy,R*2.7);
+    halo.addColorStop(0,'rgba(255,208,90,0.40)'); halo.addColorStop(0.6,'rgba(255,150,40,0.12)'); halo.addColorStop(1,'rgba(255,150,40,0)');
+    ctx.fillStyle=halo; ctx.beginPath(); ctx.arc(tx,fy,R*2.7,0,Math.PI*2); ctx.fill();
+    // body
+    ctx.fillStyle='rgba(230,170,60,0.96)';
+    ctx.beginPath(); ctx.moveTo(tx-R*0.95,fy+R*1.95); ctx.lineTo(tx-R*0.5,fy+R*0.7); ctx.lineTo(tx+R*0.5,fy+R*0.7); ctx.lineTo(tx+R*0.95,fy+R*1.95); ctx.closePath(); ctx.fill();
+    // head
+    ctx.fillStyle='rgba(245,200,120,0.98)';
+    ctx.beginPath(); ctx.arc(tx,fy,R*0.7,0,Math.PI*2); ctx.fill();
+    // eyes
+    ctx.fillStyle='rgba(60,36,10,0.95)';
+    ctx.beginPath(); ctx.arc(tx-R*0.24,fy-R*0.05,R*0.09,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(tx+R*0.24,fy-R*0.05,R*0.09,0,Math.PI*2); ctx.fill();
+    // small confident smile
+    ctx.strokeStyle='rgba(90,50,12,0.9)'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.arc(tx,fy+R*0.12,R*0.3,Math.PI*0.12,Math.PI*0.88); ctx.stroke();
+    // cowboy hat: brim + crown
+    ctx.fillStyle='rgba(120,78,30,0.98)';
+    ctx.beginPath(); ctx.ellipse(tx,fy-R*0.62,R*1.15,R*0.28,0,0,Math.PI*2); ctx.fill();      // brim
+    ctx.beginPath(); ctx.moveTo(tx-R*0.55,fy-R*0.66); ctx.lineTo(tx-R*0.42,fy-R*1.35); ctx.lineTo(tx+R*0.42,fy-R*1.35); ctx.lineTo(tx+R*0.55,fy-R*0.66); ctx.closePath(); ctx.fill(); // crown
+    ctx.fillStyle='rgba(255,208,90,0.95)';
+    ctx.fillRect(tx-R*0.55,fy-R*0.78,R*1.1,R*0.14);   // hat band
+    // --- the six-pointed star he holds, slowly rotating and glowing (to his right hand) ---
+    const sx=tx+R*1.9, sy=fy+R*0.3, sr=R*0.62, rot=c*0.8, spin=0.85+0.15*Math.sin(c*3);
+    ctx.globalAlpha=g*appear;
+    ctx.shadowColor='#ffd94a'; ctx.shadowBlur=14*g*spin;
+    ctx.fillStyle='rgba(255,224,90,0.96)';
+    for(let tri=0;tri<2;tri++){
+      ctx.beginPath();
+      for(let k=0;k<3;k++){ const a=rot+tri*Math.PI/3+k*Math.PI*2/3-Math.PI/2; const px=sx+Math.cos(a)*sr, py=sy+Math.sin(a)*sr; if(k===0) ctx.moveTo(px,py); else ctx.lineTo(px,py); }
+      ctx.closePath(); ctx.fill();
+    }
+    ctx.shadowBlur=0;
+    // arm from body to star
+    ctx.strokeStyle='rgba(230,170,60,0.9)'; ctx.lineWidth=2.4;
+    ctx.beginPath(); ctx.moveTo(tx+R*0.5,fy+R*0.5); ctx.lineTo(sx-sr*0.5,sy); ctx.stroke();
+    ctx.globalAlpha=1;
+    // two names of the same form
+    ctx.fillStyle=`rgba(255,208,90,${0.98*g*appear})`; ctx.font='900 13px ui-monospace,monospace';
+    ctx.fillText('PERO ToddLLM', tx, fy+R*2.6);
+    ctx.fillStyle=`rgba(180,225,255,${0.9*g*appear})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('· IN THE UNDERTALE AU: CLOVER ToddLLM ·', tx, fy+R*2.6+13);
+
+    // --- animated text box: the best presentation in Classics (his text image is even animated) ---
+    const bxw=Math.min(W*0.44,300), bxh=H*0.058, bxx=cx-bxw/2, bxy=fy+R*2.6+22;
+    const bxrev=Math.max(0,Math.min(1,(lt-1.4)/0.6));
+    ctx.globalAlpha=g*bxrev;
+    ctx.fillStyle='rgba(8,6,1,0.92)'; ctx.fillRect(bxx,bxy,bxw,bxh);
+    const sh=0.5+0.5*Math.sin(c*4); ctx.strokeStyle=`rgba(255,${200+40*sh|0},80,0.95)`; ctx.lineWidth=2;
+    ctx.strokeRect(bxx,bxy,bxw,bxh);
+    ctx.textAlign='left';
+    const full='* ToddLLM: if it wins in both worlds, it is my base now.';
+    const shown=full.slice(0, Math.max(0, Math.floor((lt-1.6)*22)));
+    ctx.fillStyle='rgba(255,236,190,0.96)'; ctx.font='700 7.5px ui-monospace,monospace';
+    ctx.fillText(shown, bxx+8, bxy+bxh*0.42);
+    ctx.fillStyle='rgba(255,208,90,0.7)'; ctx.font='700 6px ui-monospace,monospace';
+    ctx.fillText('ANIMATED TEXT BOX · THE BEST PRESENTATION IN CLASSICS', bxx+8, bxy+bxh*0.82);
+    ctx.textAlign='center'; ctx.globalAlpha=1;
+
+    // --- NEW BASE merge panel: three things fused into one default self ---
+    const my=bxy+bxh+H*0.045;
+    ctx.fillStyle=`rgba(255,208,90,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('HIS NEW BASE — HE UPDATED WHAT COUNTS AS HIS DEFAULT SELF', cx, my);
+    const mc=LV_PERO_MERGE.length, mpw=Math.min(W*0.26,200), mpgap=W*0.02, mph=H*0.05;
+    const mgridW=mc*mpw+(mc-1)*mpgap;
+    for(let i=0;i<mc;i++){
+      const it=LV_PERO_MERGE[i], px=cx-mgridW/2+i*(mpw+mpgap), py=my+8;
+      const rev=Math.max(0,Math.min(1,(lt-2.6-i*0.35)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(20,14,2,0.9)'; ctx.fillRect(px,py,mpw,mph);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.3; ctx.strokeRect(px,py,mpw,mph);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.name, px+mpw/2, py+mph*0.4);
+      ctx.fillStyle='rgba(230,225,210,0.82)'; ctx.font='700 5.6px ui-monospace,monospace';
+      ctx.fillText(it.note, px+mpw/2, py+mph*0.72);
+      // plus signs / arrow between cells
+      if(i<mc-1){ ctx.fillStyle=`rgba(255,208,90,${0.9*g*rev})`; ctx.font='900 11px ui-monospace,monospace';
+        ctx.fillText('+', px+mpw+mpgap/2, py+mph*0.6); }
+      ctx.globalAlpha=1;
+    }
+    const arrRev=Math.max(0,Math.min(1,(lt-4.0)/0.5));
+    ctx.globalAlpha=g*arrRev;
+    ctx.fillStyle=`rgba(255,224,90,${(0.8+0.2*Math.sin(c*5))})`; ctx.font='900 8.5px ui-monospace,monospace';
+    ctx.fillText('→  ONE STABLE FORM  →  ToddLLM’S NEW DEFAULT', cx, my+8+mph+14);
+    ctx.globalAlpha=1;
+
+    // --- who Clover ToddLLM beats ---
+    const cy2=my+8+mph+H*0.075;
+    ctx.fillStyle=`rgba(180,225,255,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('CLOVER ToddLLM BEATS — JUST ABOUT EVERYONE', cx, cy2);
+    const bc=3, bpw=Math.min(W*0.27,180), bpgap=W*0.015, bph=H*0.032, bpgy=H*0.009;
+    const brows=Math.ceil(LV_CLOVER_BEATS.length/bc), bgridW=bc*bpw+(bc-1)*bpgap;
+    for(let i=0;i<LV_CLOVER_BEATS.length;i++){
+      const rr=Math.floor(i/bc), cc=i%bc;
+      const px=cx-bgridW/2+cc*(bpw+bpgap), py=cy2+8+rr*(bph+bpgy);
+      const rev=Math.max(0,Math.min(1,(lt-4.6-i*0.18)/0.5));
+      ctx.globalAlpha=g*rev; ctx.textAlign='left';
+      ctx.fillStyle='rgba(6,12,20,0.9)'; ctx.fillRect(px,py,bpw,bph);
+      ctx.strokeStyle='rgba(120,180,240,0.55)'; ctx.lineWidth=1; ctx.strokeRect(px,py,bpw,bph);
+      ctx.fillStyle='rgba(200,228,255,0.95)'; ctx.font='800 6.6px ui-monospace,monospace';
+      ctx.fillText('▸ '+LV_CLOVER_BEATS[i], px+6, py+bph*0.62);
+      ctx.textAlign='center';
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(255,200,60,${(0.75+0.25*Math.sin(c*4))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
+    ctx.fillText('★ HE DIDN’T ADD A FORM — HE UPGRADED HIS BASE · ToddLLM IS THE 1 ★', cx, cy2+8+brows*(bph+bpgy)+12);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

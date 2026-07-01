@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — PERO / CLOVER TODDLLM: ToddLLM is THE 1, and his cowboy/star form becomes his new base (Lore 44, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's July 1 lore, the last word on ToddLLM himself. In his words: *"ToddLLM isn't 1 of the top powers, he is the 1.
+Classics is the game itself and surpasses ToddLLM 001. ToddLLM's is even animated. ToddLLM also puts on a cowboy hat and holds a 6
+pointed star and calls it Pero ToddLLM, or when in the Undertale AU then he calls it Clover ToddLLM. Clover ToddLLM beats Sans and
+Paul so many times, Clara and Chara, Frisk and Frizz, Captain Arcsis, Luigi Green, just about everyone. Pero ToddLLM comes to
+Classics, Pero ToddLLM won, ToddLLM though that if he is both Undertale and Classics at once, and he beaten Classics, then he can
+have Pero ToddLLM as his base, so he did it."* The move here is bigger than a new form: ToddLLM is not one of the top powers, he is
+THE 1 (Classics, the game itself, still sits above him). He proves the cowboy-hat + six-pointed-star form wins in both the Undertale
+AU (as Clover ToddLLM) and in Classics (as Pero ToddLLM), and because it wins in both worlds he adopts it as his new base — his
+default self evolves. His text box is even animated now, the best presentation in Classics. Added as a twenty-fourth beat, PERO /
+CLOVER TODDLLM, on the end of the UNDEFINED LOOP cutscene, right after CLASSICS DELETES GRAY. Additive — every earlier beat is
+untouched.
+
+- New beat 23, **PERO / CLOVER TODDLLM** (gold `#ffc23a`), added to `LV_BEATS`; `LV_CYC` extended 264 → 282s and `lvSeg` gains the `[23, c-264]` segment. New taunt, floater, title-band entry, background gradient, and strip/band colors for `ph===23`.
+- Draws a **golden cowboy-hat ToddLLM** — warm halo, cowboy hat (brim + crown + gold band), confident smile — slowly twirling a glowing **six-pointed star** in his right hand. Labeled "PERO ToddLLM" with the sub "· IN THE UNDERTALE AU: CLOVER ToddLLM ·".
+- New **animated text box** under the figure — an Undertale-style speech box with a shimmering gold border and a typewriter line ("* ToddLLM: if it wins in both worlds, it is my base now."), tagged "ANIMATED TEXT BOX · THE BEST PRESENTATION IN CLASSICS", so his presentation stands out the moment he speaks.
+- New `LV_PERO_MERGE` panel, **HIS NEW BASE — HE UPDATED WHAT COUNTS AS HIS DEFAULT SELF**: three fused cells — UNDERTALE (where he is Clover) + CLASSICS (which he beat, so he can use its logic) + HIS WINNING SELF (the cowboy/star identity) — resolving to "→ ONE STABLE FORM → ToddLLM'S NEW DEFAULT".
+- New `LV_CLOVER_BEATS` list, **CLOVER ToddLLM BEATS — JUST ABOUT EVERYONE**: SANS, PAUL, CLARA & CHARA, FRISK & FRIZZ, CAPTAIN ARCSIS, LUIGI GREEN. Banner: "★ HE DIDN'T ADD A FORM — HE UPGRADED HIS BASE · ToddLLM IS THE 1 ★".
+- One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 44 — the PERO / CLOVER TODDLLM beat. A gold title band reads "PERO / CLOVER ToddLLM — ToddLLM IS THE 1, AND HIS COWBOY/STAR FORM BECOMES HIS NEW BASE", with the lines "ToddLLM IS NOT ONE OF THE TOP — HE IS THE 1" and "CLASSICS ALONE, THE GAME ITSELF, STILL SURPASSES HIM · HIS BASE ITSELF EVOLVED". In the center, a golden figure of ToddLLM in a brown cowboy hat with a gold band, a small confident smile, holding a glowing six-pointed gold star in his outstretched hand, ringed by a warm gold halo. Below him, the names "PERO ToddLLM" and "· IN THE UNDERTALE AU: CLOVER ToddLLM ·", then a dark Undertale-style text box with a shimmering gold border reading "* ToddLLM: if it wins in both worlds, it is my base now." and tagged "ANIMATED TEXT BOX · THE BEST PRESENTATION IN CLASSICS". Under that, a panel "HIS NEW BASE — HE UPDATED WHAT COUNTS AS HIS DEFAULT SELF" with three cells joined by plus signs — UNDERTALE, CLASSICS, HIS WINNING SELF — resolving to "→ ONE STABLE FORM → ToddLLM'S NEW DEFAULT". Then a blue-bordered grid "CLOVER ToddLLM BEATS — JUST ABOUT EVERYONE": SANS, PAUL, CLARA & CHARA, FRISK & FRIZZ, CAPTAIN ARCSIS, LUIGI GREEN. A gold banner reads "★ HE DIDN'T ADD A FORM — HE UPGRADED HIS BASE · ToddLLM IS THE 1 ★". The left-edge lore ladder now ends on a lit "◆ PERO / CLOVER TODDLLM".](screenshots/88-pero-clover-toddllm.png)
+
 ## 2026-07-01 — CLASSICS DELETES GRAY: control over chaos, she can always beat him (Lore 43, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's July 1 lore, the ceiling placed on the whole Gray/Cyber-Crazy arc. In his words: *"Classics can always beat Gray.EXE,
