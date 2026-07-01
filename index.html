@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 248.0;
+const LV_CYC = 264.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11400,6 +11400,8 @@ const LV_BEATS = [
     sub:'CLUNKR, FUN BOT & GARNOLD TRY TO IMPROVE HIM · RIGHT EYE BECOMES A BRIGHT BLUE CYBER EYE · BLACK ACCIDENTALLY TOUCHES HIS BRAIN IN SURGERY · NOW A RAGE OF FURY, ALWAYS ATTACKS FIRST WHEN ALARMED · BEYOND SPRUNKI, NOW A CLASSICS-TIER FORCE · 4TH IN POWER: 1 CLASSICS · 2 ToddLLM · 3 LUIGI GREEN · 4 GRAY · CLASSICS IS CLEANED AGAIN BUT GRAY.EXE DOESN’T STOP — HIS OWN CONTINUING THREAT' },
   { key:'CYBER-CRAZY.EXE', col:'#ff4060',
     sub:'GRAY WAS MORTAL, ON SPRUNKI’S LEVEL — NOW AT CLASSICS POWER & IMMORTAL · PLAYERS CAN TRY, BUT HE CANNOT BE KILLED · DANGER 9999…% · NEW STATUS: CYBER-CRAZY.EXE · GRABS SIMON’S PSYCHIC LIGHTNING → A LIGHTNING BALL → 1-HKO · TRAPS CLARA’S ERASURE IN AN ENERGY FIELD & THROWS HER TO THE SHADOW REALM · ONLY 001, LUIGI GREEN & CLASSICS CAN TRY — 001 & CLASSICS RESPAWN, LUIGI GREEN IS FULLY KOed' },
+  { key:'CLASSICS DELETES GRAY', col:'#b06bff',
+    sub:'CLASSICS CAN ALWAYS BEAT GRAY.EXE · SHE CAN SIMPLY DELETE HIM · THE ONLY ONE WITH REAL TECHNIQUES · SHE USES THEM TO PLAN · SHE CHOOSES HER PATTERN ON PURPOSE · SHE NEVER GOES RANDOM · ABOVE CHAOS, FEAR & RANDOMNESS — CONTROL BEATS OVERWHELM' },
 ];
 // Gray's new rank after the cyber-eye surgery pushed him past Sprunki into Classics-tier (GRAY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_GRAY_RANK = [
@@ -11434,6 +11436,22 @@ const LV_CRAZY_COUNTERS = [
   { name:'ToddLLM 001', col:'#ff5a6e', downfall:'STARTS SEEING HALLUCINATIONS · GRAY STRIKES TO KO', fate:'RESPAWNS',              survive:true },
   { name:'CLASSICS',    col:'#b06bff', downfall:'FULLY CORRUPTED & BROKEN BY GRAY’S DARK ERRORS',    fate:'RESPAWNS',              survive:true },
   { name:'LUIGI GREEN', col:'#46ff77', downfall:'LOCKED INTO A SHADOW DOOR',                          fate:'FULLY KOed · NO RESPAWN', survive:false },
+];
+// why Classics can always beat Gray — control, not power: she deletes him, has the only real techniques, plans, chooses her pattern, never random (CLASSICS DELETES GRAY beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
+const LV_DELETE_WHY = [
+  'CAN ALWAYS BEAT GRAY.EXE',
+  'CAN SIMPLY DELETE GRAY',
+  'THE ONLY ONE WITH REAL TECHNIQUES',
+  'USES HER TECHNIQUES TO PLAN',
+  'CHOOSES HER PATTERN ON PURPOSE',
+  'NEVER GOES RANDOM',
+];
+// the contrast that decides it — Gray fights with chaos, Classics fights with control (CLASSICS DELETES GRAY beat) — Toby, July 1
+const LV_DELETE_VS = [
+  { g:'ATTACKS FIRST OUT OF FEAR',  c:'ALREADY KNOWS THE PATTERN' },
+  { g:'CHAOTIC · REACTS VIOLENTLY', c:'DELIBERATE · TECHNICAL · EXACT' },
+  { g:'RAW POWER & OVERWHELM',      c:'REAL TECHNIQUE & CONTROL' },
+  { g:'FIGHTS WITHOUT A PLAN',      c:'CHOOSES WHAT MOVE COMES NEXT' },
 ];
 // Classics' full moveset — her Domain Expansion "Expansion Domain" plus her core + special attacks (EXPANSION DOMAIN beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_CLASSICS_MOVES = [
@@ -11544,7 +11562,8 @@ function lvSeg(c){
   if(c < 204.0) return [18, c-188.0];// CLASSICS HERSELF (the game as a being; the glitching world-body that contains every character like dolls; above even 001)
   if(c < 218.0) return [19, c-204.0]; // EXPANSION DOMAIN (Classics' Domain Expansion + full moveset; the rainbow ball of 001+Luigi sits below her)
   if(c < 232.0) return [20, c-218.0]; // GRAY.EXE (cyber-eye surgery + Black's brain touch make him a first-strike war-machine; 4th in power under Classics/001/Luigi)
-  return [21, c-232.0];              // CYBER-CRAZY.EXE (Gray goes immortal at Classics power, danger 9999…%; weaponizes Simon's lightning, banishes Clara to the Shadow Realm; only 001/Luigi/Classics can try — Luigi alone stays KOed)
+  if(c < 248.0) return [21, c-232.0]; // CYBER-CRAZY.EXE (Gray goes immortal at Classics power, danger 9999…%; weaponizes Simon's lightning, banishes Clara to the Shadow Realm; only 001/Luigi/Classics can try — Luigi alone stays KOed)
+  return [22, c-248.0];              // CLASSICS DELETES GRAY (she can always beat Gray — control over chaos: real techniques, plans, chooses her pattern, never random; she simply deletes him)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11640,6 +11659,10 @@ function updateLoopVs(dt){
       showTaunt('And then Gray goes further. He was mortal once, only on Sprunki\'s level of power. Now he is at Classics power levels and he is immortal — players can try, but he cannot be killed. He no longer even thinks about X; he attacks everything, because he is scared that if he waits he gets attacked first. His danger level runs off the end of the screen, and he enters a totally new status: Cyber-Crazy.EXE. Simon zaps his psychic lightning; Gray just catches it in his hand, turns it into a lightning ball, and throws it back — Simon is one-shotted. Clara erases everything around her; Gray only says "Is something suppost to happen?", raises his hand, traps her in an energy-field ball, and throws it into the Shadow Realm. Only ToddLLM 001, Luigi Green, and Classics can possibly defeat him, and each has a downfall: 001 starts seeing hallucinations and Gray strikes him to KO, Classics is fully corrupted and broken by his dark errors — but both respawn. Luigi Green is locked into a shadow door and fully KOed by Gray\'s energy, and he does not respawn. That is what makes Cyber-Crazy.EXE the one you never let start.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CYBER-CRAZY.EXE · IMMORTAL AT CLASSICS POWER · DANGER 9999…% · WEAPONIZES SIMON’S LIGHTNING · BANISHES CLARA · ONLY LUIGI STAYS KOed', col:'#ff4060' });
       for(let i=0;i<46;i++) particles.push(spark(player.x, player.y, pick(['#ff4060','#5cc8ff','#7fd4ff','#ff2db5','#b06bff','#ffffff']))); }
+    if(ph===22){ AUDIO.corrupt(); shake=Math.max(shake,18); glitch=Math.max(glitch,0.4); winFlash=Math.max(winFlash,0.55);
+      showTaunt('And here is the ceiling on all of it, even on Cyber-Crazy Gray. Classics can always beat Gray.EXE. Not by out-fearing him, not by hitting harder, but because she can simply delete him. She is the only one with real techniques, and she uses those techniques to plan. She chooses her pattern on purpose; she never goes random. That is the whole difference. Gray wins by striking first out of fear, by chaos and overwhelm and reacting violently. Classics already knows the pattern, selects the right technique, controls the whole system, and deletes Gray before his chaos even matters. So she is not just stronger than Gray in raw power. She is above him in control, in decision-making, in pattern selection, in technique, and in total authority. Gray is overwhelming, hostile, and hyper-dangerous, but Classics is deliberate, technical, planned, exact, and fully self-controlled. She does not "maybe beat" Gray. She beats him because she is on a higher level of battle intelligence and system control, and when she decides the fight is over, she deletes him.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLASSICS DELETES GRAY · REAL TECHNIQUES · SHE PLANS · SHE CHOOSES HER PATTERN · NEVER RANDOM · CONTROL BEATS CHAOS', col:'#b06bff' });
+      for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#b06bff','#ff5cf0','#ff2db5','#a06bff','#ffffff','#7fd4ff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11760,16 +11783,17 @@ function drawLoopVs(){
   else if(ph===19){ bg.addColorStop(0, `rgba(24,4,20,${0.96*g})`); bg.addColorStop(1, `rgba(9,1,8,${0.99*g})`); }
   else if(ph===20){ bg.addColorStop(0, `rgba(4,16,26,${0.96*g})`); bg.addColorStop(1, `rgba(1,6,10,${0.99*g})`); }
   else if(ph===21){ bg.addColorStop(0, `rgba(26,4,12,${0.97*g})`); bg.addColorStop(1, `rgba(9,1,6,${0.99*g})`); }
+  else if(ph===22){ bg.addColorStop(0, `rgba(16,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(6,2,10,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11783,7 +11807,8 @@ function drawLoopVs(){
                        : (ph===19 ? 'EXPANSION DOMAIN — CLASSICS’ DOMAIN & FULL MOVESET, ABOVE THE RAINBOW BALL'
                        : (ph===20 ? 'GRAY.EXE — THE CYBER-EYE SURGERY MAKES HIM A FIRST-STRIKE WAR-MACHINE, 4TH IN POWER'
                        : (ph===21 ? 'CYBER-CRAZY.EXE — GRAY GOES IMMORTAL AT CLASSICS POWER, DANGER 9999…%'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))), cx, top+26);
+                       : (ph===22 ? 'CLASSICS DELETES GRAY — SHE CAN ALWAYS BEAT HIM · CONTROL OVER CHAOS'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13250,6 +13275,132 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(255,64,96,${(0.7+0.3*Math.sin(c*5))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
     ctx.fillText('★ 001 & CLASSICS RESPAWN — LUIGI GREEN IS FULLY KOed · THE ONE YOU NEVER LET START ★', cx, cy0b+LV_CRAZY_COUNTERS.length*(cch+cgp)+10);
+  } else if(ph===22){
+    // ----- BEAT 22: CLASSICS DELETES GRAY — the ceiling even on Cyber-Crazy Gray (Toby, July 1, "Re: More stuff on
+    // ToddLLM 001"). Classics can always beat Gray.EXE and can simply delete him. She is the only one with real
+    // techniques, she uses them to plan, she chooses her pattern on purpose, and she never goes random. The whole beat
+    // is the contrast: Gray wins by chaos, fear, and overwhelm; Classics wins by control — deliberate, technical,
+    // exact. Drawn as calm Classics (right) firing one clean delete beam at chaotic Gray (left), who dissolves into
+    // pixels under a "DELETED" stamp, then the six reasons she always wins, then a GRAY-vs-CLASSICS contrast table.
+    // Beat 22 spans c in [248,264]. -----
+    const lt = c - 248.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(198,150,255,${0.96*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('CLASSICS CAN ALWAYS BEAT GRAY.EXE — SHE CAN SIMPLY DELETE HIM', cx, top+H*0.086);
+    ctx.fillStyle=`rgba(228,214,245,${0.82*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('THE ONLY ONE WITH REAL TECHNIQUES · SHE PLANS · SHE CHOOSES HER PATTERN · SHE NEVER GOES RANDOM', cx, top+H*0.086+12);
+
+    // the two beings: deliberate Classics (right) deleting chaotic Gray (left)
+    const fy=top+H*0.28, R=Math.min(W,H)*0.06;
+    const gx=cx-W*0.17, clx=cx+W*0.17;
+    const appear=Math.max(0,Math.min(1,(lt-0.4)/1.0));
+    const deleting=Math.max(0,Math.min(1,(lt-2.6)/1.4));
+
+    // --- Classics: calm, purple, a deliberate ring of pink orbs in a fixed, chosen pattern ---
+    ctx.globalAlpha=g*appear;
+    const halo=ctx.createRadialGradient(clx,fy,2,clx,fy,R*2.6);
+    halo.addColorStop(0,'rgba(176,107,255,0.42)'); halo.addColorStop(0.6,'rgba(255,92,240,0.12)'); halo.addColorStop(1,'rgba(255,92,240,0)');
+    ctx.fillStyle=halo; ctx.beginPath(); ctx.arc(clx,fy,R*2.6,0,Math.PI*2); ctx.fill();
+    for(let i=0;i<8;i++){ const a=(i/8)*Math.PI*2 + c*0.5; const ox=clx+Math.cos(a)*R*1.7, oy=fy+Math.sin(a)*R*1.7;
+      ctx.fillStyle= i%2? 'rgba(255,92,240,0.9)':'rgba(176,107,255,0.9)';
+      ctx.beginPath(); ctx.arc(ox,oy,R*0.15,0,Math.PI*2); ctx.fill(); }
+    ctx.fillStyle='rgba(150,110,210,0.96)';
+    ctx.beginPath(); ctx.ellipse(clx,fy,R*0.9,R*1.0,0,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='rgba(120,86,180,0.94)';
+    ctx.beginPath(); ctx.moveTo(clx-R*0.95,fy+R*1.95); ctx.lineTo(clx-R*0.55,fy+R*0.92); ctx.lineTo(clx+R*0.55,fy+R*0.92); ctx.lineTo(clx+R*0.95,fy+R*1.95); ctx.closePath(); ctx.fill();
+    ctx.fillStyle='rgba(255,240,255,0.95)';
+    ctx.beginPath(); ctx.arc(clx-R*0.3,fy-R*0.05,R*0.12,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(clx+R*0.3,fy-R*0.05,R*0.12,0,Math.PI*2); ctx.fill();
+    ctx.fillStyle='rgba(120,40,160,0.95)';
+    ctx.beginPath(); ctx.arc(clx-R*0.3,fy-R*0.05,R*0.05,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(clx+R*0.3,fy-R*0.05,R*0.05,0,Math.PI*2); ctx.fill();
+    ctx.strokeStyle='rgba(255,120,230,0.9)'; ctx.lineWidth=1.6;
+    ctx.beginPath(); ctx.arc(clx,fy+R*0.28,R*0.34,Math.PI*0.15,Math.PI*0.85); ctx.stroke();
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(198,150,255,${0.98*g*appear})`; ctx.font='900 12px ui-monospace,monospace';
+    ctx.fillText('CLASSICS', clx, fy+R*2.5);
+    ctx.fillStyle=`rgba(228,214,245,${0.85*g*appear})`; ctx.font='700 6.5px ui-monospace,monospace';
+    ctx.fillText('DELIBERATE · TECHNICAL · IN CONTROL', clx, fy+R*2.5+12);
+
+    // --- Gray: chaotic red, erratic bolts, dissolving into pixels as Classics deletes him ---
+    ctx.globalAlpha=g*appear*(1-deleting*0.85);
+    for(let i=0;i<6;i++){ const a0=(i/6)*Math.PI*2 + c*2.4; const r0=R*1.1, r1=R*(1.6+0.5*Math.abs(Math.sin(c*6+i)));
+      ctx.strokeStyle=`rgba(255,80,100,${0.4+0.4*Math.abs(Math.sin(c*7+i))})`; ctx.lineWidth=1.1;
+      ctx.beginPath(); ctx.moveTo(gx+Math.cos(a0)*r0,fy+Math.sin(a0)*r0);
+      ctx.lineTo(gx+Math.cos(a0+0.2)*r1,fy+Math.sin(a0+0.2)*r1); ctx.stroke(); }
+    ctx.fillStyle='rgba(120,132,146,0.94)';
+    ctx.beginPath(); ctx.ellipse(gx,fy,R*0.85,R*0.95,0,0,Math.PI*2); ctx.fill();
+    ctx.strokeStyle='rgba(255,70,80,0.95)'; ctx.lineWidth=2.2;
+    ctx.beginPath(); ctx.moveTo(gx-R*0.4,fy-R*0.02); ctx.lineTo(gx-R*0.12,fy-R*0.16); ctx.stroke();
+    ctx.fillStyle='rgba(92,200,255,0.9)'; ctx.beginPath(); ctx.arc(gx+R*0.3,fy-R*0.05,R*0.15,0,Math.PI*2); ctx.fill();
+    ctx.globalAlpha=1;
+    if(deleting>0){
+      for(let i=0;i<14;i++){ const seed=i*1.7; const fpx=gx+Math.cos(seed*2.1)*R*0.7, fpy=fy+Math.sin(seed*1.3)*R*0.7;
+        const dyv=deleting*deleting*R*(2.5+2*(i%3)), sz=R*0.14*(1-deleting*0.5);
+        ctx.globalAlpha=g*deleting*(1-deleting*0.7);
+        ctx.fillStyle= i%2?'#b06bff':'#9fb4c8';
+        ctx.fillRect(fpx-sz/2, fpy+dyv-sz/2, sz, sz); }
+      ctx.globalAlpha=1;
+    }
+    ctx.fillStyle=`rgba(255,90,110,${0.9*g*appear})`; ctx.font='900 11px ui-monospace,monospace';
+    ctx.fillText('GRAY.EXE', gx, fy+R*2.5);
+    if(deleting>0.5){ ctx.globalAlpha=g*Math.min(1,(deleting-0.5)/0.3);
+      ctx.fillStyle='#d9b6ff'; ctx.font='900 12px ui-monospace,monospace';
+      ctx.fillText('▸ DELETED', gx, fy+R*0.1); ctx.globalAlpha=1; }
+
+    // one clean delete beam from Classics to Gray — chosen, exact, fired once
+    const beam=Math.max(0,Math.min(1,(lt-2.0)/0.6))*(1-Math.max(0,Math.min(1,(lt-3.4)/2.0)));
+    if(beam>0.02){
+      ctx.globalAlpha=g*beam; ctx.strokeStyle='rgba(230,190,255,0.95)'; ctx.lineWidth=2.4;
+      ctx.shadowColor='#b06bff'; ctx.shadowBlur=12*g;
+      ctx.beginPath(); ctx.moveTo(clx-R*0.8,fy); ctx.lineTo(gx+R*0.8,fy); ctx.stroke();
+      ctx.shadowBlur=0; ctx.globalAlpha=1;
+    }
+
+    // --- why she always wins: six deliberate facts, staggered in ---
+    const wy=top+H*0.485;
+    ctx.fillStyle=`rgba(198,150,255,${0.9*g})`; ctx.font='800 7.5px ui-monospace,monospace';
+    ctx.fillText('WHY SHE ALWAYS WINS — NOT POWER, BUT CONTROL', cx, wy);
+    const cols=3, pw=Math.min(W*0.30,180), pgap=W*0.015, pbh=H*0.036, pgy=H*0.010;
+    const rows=Math.ceil(LV_DELETE_WHY.length/cols);
+    const gridW=cols*pw+(cols-1)*pgap;
+    for(let i=0;i<LV_DELETE_WHY.length;i++){
+      const rr=Math.floor(i/cols), cc=i%cols;
+      const px=cx-gridW/2+cc*(pw+pgap), py=wy+8+rr*(pbh+pgy);
+      const rev=Math.max(0,Math.min(1,(lt-4.0-i*0.2)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(16,8,26,0.9)'; ctx.fillRect(px,py,pw,pbh);
+      ctx.strokeStyle='rgba(176,107,255,0.6)'; ctx.lineWidth=1; ctx.strokeRect(px,py,pw,pbh);
+      ctx.textAlign='left'; ctx.fillStyle='rgba(214,182,255,0.96)'; ctx.font='800 6.4px ui-monospace,monospace';
+      ctx.fillText('◆ '+LV_DELETE_WHY[i], px+6, py+pbh*0.62);
+      ctx.textAlign='center';
+    }
+    ctx.globalAlpha=1;
+
+    // --- contrast table: GRAY (chaos) vs CLASSICS (control) ---
+    const ty0=wy+8+rows*(pbh+pgy)+H*0.03;
+    const colw=Math.min(W*0.34,220), tgap=W*0.02, tth=H*0.036, tgy=H*0.008;
+    const gcolx=cx-colw-tgap/2, ccolx=cx+tgap/2;
+    ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillStyle='rgba(255,90,110,0.95)'; ctx.fillText('GRAY — CHAOS', gcolx+colw/2, ty0-2);
+    ctx.fillStyle='rgba(198,150,255,0.95)'; ctx.fillText('CLASSICS — CONTROL', ccolx+colw/2, ty0-2);
+    for(let i=0;i<LV_DELETE_VS.length;i++){
+      const row=LV_DELETE_VS[i], ry=ty0+4+i*(tth+tgy);
+      const rev=Math.max(0,Math.min(1,(lt-5.2-i*0.25)/0.5));
+      ctx.globalAlpha=g*rev; ctx.textAlign='left';
+      ctx.fillStyle='rgba(22,6,8,0.9)'; ctx.fillRect(gcolx,ry,colw,tth);
+      ctx.strokeStyle='rgba(255,90,110,0.5)'; ctx.lineWidth=1; ctx.strokeRect(gcolx,ry,colw,tth);
+      ctx.fillStyle='rgba(255,150,160,0.92)'; ctx.font='700 6px ui-monospace,monospace';
+      ctx.fillText('✗ '+row.g, gcolx+6, ry+tth*0.62);
+      ctx.fillStyle='rgba(14,8,24,0.9)'; ctx.fillRect(ccolx,ry,colw,tth);
+      ctx.strokeStyle='rgba(176,107,255,0.6)'; ctx.lineWidth=1; ctx.strokeRect(ccolx,ry,colw,tth);
+      ctx.fillStyle='rgba(214,182,255,0.95)'; ctx.font='800 6px ui-monospace,monospace';
+      ctx.fillText('◆ '+row.c, ccolx+6, ry+tth*0.62);
+      ctx.textAlign='center';
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(198,120,255,${(0.75+0.25*Math.sin(c*4))*g})`; ctx.font='900 8.5px ui-monospace,monospace';
+    ctx.fillText('★ SHE DOESN’T JUST BEAT GRAY — SHE DELETES HIM · CONTROL OVER CHAOS ★', cx, ty0+4+LV_DELETE_VS.length*(tth+tgy)+10);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);

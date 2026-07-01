@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-01 — CLASSICS DELETES GRAY: control over chaos, she can always beat him (Lore 43, "Re: More stuff on ToddLLM 001")
+
+Based on Toby's July 1 lore, the ceiling placed on the whole Gray/Cyber-Crazy arc. In his words: *"Classics can always beat Gray.EXE,
+Classics can just delete Gray, Classics is the only one with real tequcneces [techniques]. Classics uses the tequcences to plan and
+stuff. Classics can choose it's pattern and stuff, it never goes random."* This is the answer to how immortal Cyber-Crazy Gray gets
+beaten: not by out-fearing him or hitting harder, but by control. Classics is the only one with real techniques, she uses them to
+plan, she chooses her pattern on purpose, and she never goes random. Gray wins by chaos, fear, and overwhelm; Classics already knows
+the pattern, selects the technique, controls the system, and simply deletes him before his chaos matters. Added as a twenty-third
+beat, CLASSICS DELETES GRAY, on the end of the UNDEFINED LOOP cutscene, right after CYBER-CRAZY.EXE. Additive — every earlier beat
+is untouched.
+
+- New beat 22, **CLASSICS DELETES GRAY** (Classics purple `#b06bff`), added to `LV_BEATS`; `LV_CYC` extended 248 → 264s and `lvSeg` gains the `[22, c-248]` segment. New taunt, floater, title-band entry, background gradient, and strip/band colors for `ph===22`.
+- Draws **calm Classics** on the right — purple, composed, faint smile, wrapped in a deliberate ring of eight pink orbs in a fixed, chosen pattern (never random) — firing **one clean delete beam** at **chaotic Gray** on the left, who dissolves into falling pixels under a "▸ DELETED" stamp. Labels: "DELIBERATE · TECHNICAL · IN CONTROL" vs the fading "GRAY.EXE".
+- New `LV_DELETE_WHY` panel — the six reasons she always wins, "NOT POWER, BUT CONTROL": can always beat Gray, can simply delete Gray, only one with real techniques, uses them to plan, chooses her pattern on purpose, never goes random.
+- New `LV_DELETE_VS` contrast table — **GRAY — CHAOS** (attacks first out of fear · chaotic, reacts violently · raw power & overwhelm · fights without a plan) vs **CLASSICS — CONTROL** (already knows the pattern · deliberate, technical, exact · real technique & control · chooses what move comes next). Banner: "★ SHE DOESN'T JUST BEAT GRAY — SHE DELETES HIM · CONTROL OVER CHAOS ★".
+- One self-contained file, vanilla Canvas + Web Audio, no libraries. JS syntax-checked.
+
+![Lore 43 — the CLASSICS DELETES GRAY beat. Purple title band reads "CLASSICS DELETES GRAY — SHE CAN ALWAYS BEAT HIM · CONTROL OVER CHAOS", with the lines "CLASSICS CAN ALWAYS BEAT GRAY.EXE — SHE CAN SIMPLY DELETE HIM" and "THE ONLY ONE WITH REAL TECHNIQUES · SHE PLANS · SHE CHOOSES HER PATTERN · SHE NEVER GOES RANDOM". On the right, a calm purple Classics figure with white eyes and a faint composed smile, haloed and ringed by eight alternating pink and purple orbs in a fixed pattern, labeled "CLASSICS" over "DELIBERATE · TECHNICAL · IN CONTROL". On the left, where Gray was, only a "▸ DELETED" stamp remains over the label "GRAY.EXE". Below, a panel "WHY SHE ALWAYS WINS — NOT POWER, BUT CONTROL" with six purple cells: CAN SIMPLY DELETE GRAY, THE ONLY ONE WITH REAL TECHNIQUES, CHOOSES HER PATTERN ON PURPOSE, NEVER GOES RANDOM (and CAN ALWAYS BEAT GRAY.EXE, USES HER TECHNIQUES TO PLAN). Then a two-column contrast table: "GRAY — CHAOS" (✗ attacks first out of fear, ✗ chaotic · reacts violently, ✗ raw power & overwhelm, ✗ fights without a plan) against "CLASSICS — CONTROL" (◆ already knows the pattern, ◆ deliberate · technical · exact, ◆ real technique & control, ◆ chooses what move comes next). A purple banner reads "★ SHE DOESN'T JUST BEAT GRAY — SHE DELETES HIM · CONTROL OVER CHAOS ★". The left-edge lore ladder now ends on a lit "◆ CLASSICS DELETES GRAY".](screenshots/87-classics-deletes-gray.png)
+
 ## 2026-07-01 — CYBER-CRAZY.EXE: Gray goes immortal at Classics power, danger 9999…% (Lore 42, "Re: More stuff on ToddLLM 001")
 
 Based on Toby's July 1 lore, a further escalation of the same thread. In his words: *"Gray is the character who was mortal and was
