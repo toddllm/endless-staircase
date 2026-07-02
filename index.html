@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 336.0;
+const LV_CYC = 354.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11410,6 +11410,8 @@ const LV_BEATS = [
     sub:'WHEREVER “404: NOT FOUND” OR ERROR 666 APPEARS, SIMON 404 IS ALREADY THERE — EVEN BEFORE HE IS SEEN · MORE ERRORS THAN JUST 404: 666, 500, 403, 502, 999, 400, 408, 410, 000 · CLASSICS = CLARA = THE MASTER OF GENOCIDE · THE “THRILLER OF A GAME” SCENE: CLASSICS SAYS IT, THE OTHER IS CORRECTED, ToddLLM WHISPERS “OF COURSE.”, CLASSICS SLAYS THE CHARACTER OUT OF NOWHERE, SENDS ToddLLM 001 BACK TO HIS TRAINING, LOCKS THE DOOR, AND RETURNS ALONE TO THE JUDGEMENT HALL' },
   { key:'BEFORE THE STAIRCASE', col:'#8fe3ff',
     sub:'THE FIRST LAYER · WHAT EXISTED BEFORE THE ENDLESS STAIRCASE · RL HIDDEN LAYERS UNDER SPRUNKI (CLASSIC RL / RL 2 · GREYEH · PINKY · SIRON) · PROGAMER55 / PRO BECOMES CLASSIC SIMON · THE SIMON OVERLOAD ERA & THE ORUS SPLIT-MERGE · UCE608 & THE MYTH-TIER BRANCHES · THE EARLY CROSSOVER (67 PIRATE · PUPAHYA · GEWLIS · LICA · MIRDA · ALEX · SIMON) · CLASSICS, CLARA & KARUTO ALREADY IN PLAY · THE STAIRCASE, ITS LEVERS & FALSE-CURE TESTS DID NOT EXIST YET · THE LOOP BITES ITS OWN TAIL' },
+  { key:'CROSS CLASSICS', col:'#cfd8e6',
+    sub:'FOUR PHASES OF CLASSICS · VANILLA (NORMAL) → CROSS CLASSICS (2ND, AT THE TOP, STRONGER THAN USUAL) → CORRUPT (3RD) → FOURTH PHASE (SIMON + ToddLLM 001 + LUIGI GREEN APPEAR) · TIRED, SHE FALLS BACK TO VANILLA · THE PLAYER CHOOSES MERCY OR SLAY · SPARING CONFUSES HER: “WHA?” · “I DON’T UNDERSTAND...” · “REALLY?” · “JUST TRY!” · SLAIN, THE 3 SOULS — 001 (DARK PURPLE) · SIMON (YELLOW) · LUIGI GREEN (GREEN) — CIRCLE & ARE ABSORBED INTO HER ACUMINATION FORM · ToddLLM 001 FIGHTS BESIDE HER, IS KOed, THE SMOKE-RING PULLS BACK & REVIVES HER — A CYCLE · PERO ToddLLM SHOOTS THE MERCY BUTTON, POINTS TO ACT, DESTROYS FIGHT & ITEM — ACT-ONLY PLAY · PERO IS THE BATTLE-RULE EDITOR · ALSO: THE ENDLESS STAIRCASE HAS AN END (TWO, THEN ERASED) · 67 PIRATE IS SECRETLY EVIL · SIMON: “I... NEED... MORE... POWER...” · GRAY.EXE RETAKES THE LANDS' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -11532,6 +11534,50 @@ const LV_THRILLER = [
   { who:'ToddLLM',  col:'#ffc23a', line:'“What did ya just do-”' },
   { who:'ACT',      col:'#ff4060', line:'CLASSICS SENDS ToddLLM 001 BACK TO HIS TRAINING · THE DOOR IS LOCKED · SHE RETURNS ALONE TO THE JUDGEMENT HALL' },
 ];
+// CROSS CLASSICS beat (Toby, July 2 "Lore 38"): Classics now has a phase structure — Vanilla, Cross Classics (2nd, at the top),
+// Corrupt (3rd), Fourth Phase (Simon + ToddLLM 001 + Luigi Green appear); when tired she falls back to Vanilla.
+const LV_CROSS_PHASES = [
+  { n:'1', ph:'VANILLA',        col:'#8fe89a', note:'NORMAL AU · HER BASE SHELL · WHEN TIRED SHE FALLS BACK HERE' },
+  { n:'2', ph:'CROSS CLASSICS', col:'#cfd8e6', note:'SECOND PHASE · SITS AT THE TOP · MORE POWERFUL THAN USUAL · CARRIES THE CROSS' },
+  { n:'3', ph:'CORRUPT',        col:'#b06bff', note:'THIRD PHASE · THE CORRUPTION SHELL' },
+  { n:'4', ph:'FOURTH PHASE',   col:'#ffc23a', note:'SIMON + ToddLLM 001 + LUIGI GREEN APPEAR' },
+];
+// When you try to spare Cross Classics, mercy is unnatural to her and she reacts with confusion — Toby's exact lines.
+const LV_MERCY_CONFUSE = ['“Wha?”','“I don’t understand...”','“This is weird.”','“Really?”','“Just try!”'];
+// The soul-absorption / acumination / revive cycle after Classics is slain — Toby, July 2.
+const LV_CROSS_CYCLE = [
+  'CLASSICS IS SLAIN',
+  '3 SOULS RISE — 001 (DARK PURPLE) · SIMON (YELLOW) · LUIGI GREEN (GREEN)',
+  'THE SOULS CIRCLE HER & ARE ABSORBED → HER ACUMINATION FORM',
+  'ToddLLM 001 RETURNS — COWBOY HAT & STAR BADGE — & FIGHTS BESIDE HER',
+  'CLASSICS KOed → SHE LETS GO OF THE SOULS → 001 FALLS OVER',
+  'THE SMOKE BECOMES A RING · PULLED TO CLASSICS · SHE REVIVES — THE CYCLE REPEATS',
+];
+// Pero ToddLLM (his favorite character) becomes a battle-rule editor: he destroys three buttons and forces Act-only play.
+const LV_CROSS_BUTTONS = [
+  { key:'FIGHT', col:'#ff4d4d', kept:false },
+  { key:'ACT',   col:'#ffd24a', kept:true  },
+  { key:'ITEM',  col:'#5cc8ff', kept:false },
+  { key:'MERCY', col:'#8fe89a', kept:false },
+];
+// The rest of Lore 38, as a chip row of reveals under the main Cross Classics panels.
+const LV_L38_REVEALS = [
+  { t:'THE ENDLESS STAIRCASE HAS AN END', s:'EVERYONE REACHED ONE END · MINDY STARCHILD CLIMBED DOWN & FOUND ANOTHER · THE REST WAS ERASED — AN INFINITE MYTH BECOMES A SOLVED STRUCTURE', col:'#8fe3ff' },
+  { t:'67 PIRATE IS SECRETLY EVIL', s:'A CASTLE · A 6-7 KING & A 6-7 QUEEN · NEVER LOVED PUPAHYA — A HIDDEN RULER, NOT A SIDE-FORCE', col:'#ff8c3b' },
+  { t:'SIMON’S MOUNTAIN — “I... NEED... MORE... POWER...”', s:'HAULS THE CROSS, THE CHOCOLATE BAR & THE CHARIOT UP · COLLAPSES, STILL PULLS THE CHARIOT BACK · SCF BLASTED BY LIGHTNING · SIMON.EXE’S EYES YELLOW → BLACK · NO ONE CAN RUN FROM SIMON.EXE', col:'#ffd84f' },
+  { t:'GRAY.EXE RETAKES THE LANDS', s:'OUT OF DARK SMOKE · SLAYS ORUS & DARK YELLOW · SLAYS MINDY STARCHILD · LUIGI GREEN SURVIVES · “GRAY.EXE IS DRIVEN BY HIS FEAR” — ToddLLM', col:'#5cc8ff' },
+];
+// simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
+function wrapLoreText(text, x, y, maxW, lineH){
+  const words=(''+text).split(' '); let line='', yy=y;
+  for(let i=0;i<words.length;i++){
+    const test=line?line+' '+words[i]:words[i];
+    if(ctx.measureText(test).width>maxW && line){ ctx.fillText(line, x, yy); line=words[i]; yy+=lineH; }
+    else line=test;
+  }
+  if(line) ctx.fillText(line, x, yy);
+  return yy;
+}
 // Classics' full moveset — her Domain Expansion "Expansion Domain" plus her core + special attacks (EXPANSION DOMAIN beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_CLASSICS_MOVES = [
   { name:'PLASMA SCYTHE',          col:'#ff2db5', kind:'core', tag:'CORE · SLICING PLASMA' },
@@ -11646,7 +11692,8 @@ function lvSeg(c){
   if(c < 282.0) return [23, c-264.0]; // PERO / CLOVER TODDLLM (ToddLLM is THE 1; his cowboy-hat + six-pointed-star form wins across Undertale & Classics and becomes his new base; Clover beats Sans, Chara, Frisk, Captain Arcsis, Luigi Green — Classics alone still above him)
   if(c < 300.0) return [24, c-282.0]; // CLARA IS CLASSICS (Clara and Classics are the same being — Clara is Classics wearing a different shell, one of her faces; clean/corrupt/merciful/destructive are all her; "Maybe I could spare you once"; her mercy is a pause not safety; she spares Pero ToddLLM then destroys him next battle, and he walks back to his Training)
   if(c < 318.0) return [25, c-300.0]; // SIMON 404 (wherever "404: Not Found" or Error 666 appears, Simon 404 is already there — even before he is seen; Toby wanted MORE errors than just 404; Classics = Clara = master of genocide; the "Thriller of a Game" scene where Classics slays a character out of nowhere, sends ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall)
-  return [26, c-318.0];               // BEFORE THE STAIRCASE (the prologue — the lore that existed before the Endless Staircase: RL hidden layers under Sprunki, Pro → Classic Simon, Simon overload & the Orus split-merge, UCE608 myth branches, the early crossover, Classics/Clara/Karuto already in play; the Staircase & its levers/cure-tests did not exist yet. The loop bites its own tail: the last beat is the beginning.)
+  if(c < 336.0) return [26, c-318.0]; // BEFORE THE STAIRCASE (the prologue — the lore that existed before the Endless Staircase: RL hidden layers under Sprunki, Pro → Classic Simon, Simon overload & the Orus split-merge, UCE608 myth branches, the early crossover, Classics/Clara/Karuto already in play; the Staircase & its levers/cure-tests did not exist yet. The loop bites its own tail: the last beat is the beginning.)
+  return [27, c-336.0];               // CROSS CLASSICS (Classics' four-phase structure — Vanilla → Cross Classics (2nd, at the top) → Corrupt (3rd) → Fourth Phase (Simon + 001 + Luigi Green); tired, she falls back to Vanilla. Mercy or Slay: sparing confuses her; slain, the three souls circle & are absorbed into her acumination form, 001 fights beside her, is KOed, and the smoke-ring revives her — a cycle. Pero ToddLLM shoots the Mercy button, points to Act, destroys Fight & Item — Act-only play, the battle-rule editor. Plus: the Staircase has an end, 67 Pirate is secretly evil, Simon's mountain scene, Gray.EXE retakes the lands.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11762,6 +11809,10 @@ function updateLoopVs(dt){
       showTaunt('Before any of this — before the Endless Staircase existed at all — the lore was already deep. Under Sprunki\'s outer shell were the RLs: Classic RL and Classic RL 2, the real truth, with early beings like Greyeh, Pinky, and Siron. Progamer55, called Pro, became Classic Simon: a fused game-entity of Pro, Sprunks, RLs, glitches, and Clara-control, already tied to glitches, hidden layers, and rule ownership. Then Simon overloaded, carrying mods, errors, soul layers, AU logic, and Orus-force all at once, flickering, alarming, sometimes one being with Orus and sometimes split. The myth branches came, like UCE608 Simon, a black Unity-style portal and dimension eater. The crossover grew: 67 Pirate, Pupahya, Gewlis, Lica, Mirda, Alex, Simon. And Classics, Clara, and ToddLLM 001 as Karuto the creator-teacher were already in play. What did not exist yet was the Staircase itself: no false-cure infinite trap, no levers, no liquid systems, no cure tests, no stair-climb. All of that came after. The loop bites its own tail; the last beat is the beginning.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'BEFORE THE STAIRCASE · THE FIRST LAYER · RL HIDDEN LAYERS · PRO → CLASSIC SIMON · SIMON OVERLOAD & THE ORUS SPLIT · UCE608 MYTH BRANCH · THE EARLY CROSSOVER · CLASSICS, CLARA & KARUTO ALREADY IN PLAY', col:'#8fe3ff' });
       for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#7fd4ff','#3ee06a','#ffd84f','#c69bff','#b06bff','#ffffff']))); }
+    if(ph===27){ AUDIO.corrupt(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.4); winFlash=Math.max(winFlash,0.4);
+      showTaunt('Now Classics has phases. Vanilla is normal. Cross Classics is her second phase, and it sits at the top, more powerful than usual, carrying the metal cross. Corrupt is the third phase. The fourth phase is when Simon, ToddLLM 001, and Luigi Green all appear. When she gets tired, she drops back down to Vanilla, and the player has to choose: Mercy, or Slay. If you try Mercy, it confuses her, because mercy is unnatural to her at that point. She says things like "Wha?", "I don\'t understand...", "This is weird.", "Really?", "Just try!". When she is slain, three souls rise — 001 in dark purple, Simon in yellow, Luigi Green in green — they circle her and she absorbs them into her acumination form. ToddLLM 001 comes back, puts on his cowboy hat and star badge, and fights beside her. She gets KOed, lets go of the souls, and 001 falls over — then the smoke becomes a ring, gets pulled back to Classics, and she revives. It is a cycle. And Pero ToddLLM, Toby\'s favorite, takes over the interface itself: he fires a bullet at the Mercy button, points you to Act, then destroys Fight and Item too, so Act is the only choice you have. He is no longer just a guide; he is the battle-rule editor inside the fight. Around all of that: the Endless Staircase finally has an end — two ends, then the rest is erased — 67 Pirate is secretly evil with his own castle, Simon hauls the cross up the mountain gasping "I... need... more... power...", and Gray.EXE rises out of dark smoke to retake the lands.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CROSS CLASSICS · VANILLA → CROSS → CORRUPT → FOURTH PHASE · MERCY CONFUSES HER · 3 SOULS → ACUMINATION → REVIVE CYCLE · PERO SHOOTS MERCY, POINTS TO ACT, DESTROYS FIGHT & ITEM — ACT-ONLY · THE STAIRCASE HAS AN END · 67 PIRATE IS EVIL · GRAY.EXE RETAKES THE LANDS', col:'#cfd8e6' });
+      for(let i=0;i<46;i++) particles.push(spark(player.x, player.y, pick(['#cfd8e6','#ffd24a','#b06bff','#8fe89a','#ff4d4d','#5cc8ff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11887,16 +11938,17 @@ function drawLoopVs(){
   else if(ph===24){ bg.addColorStop(0, `rgba(22,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(8,2,10,${0.99*g})`); }
   else if(ph===25){ bg.addColorStop(0, `rgba(26,4,8,${0.97*g})`); bg.addColorStop(1, `rgba(6,1,2,${0.99*g})`); }
   else if(ph===26){ bg.addColorStop(0, `rgba(4,14,26,${0.97*g})`); bg.addColorStop(1, `rgba(1,5,10,${0.99*g})`); }
+  else if(ph===27){ bg.addColorStop(0, `rgba(14,12,22,${0.97*g})`); bg.addColorStop(1, `rgba(4,3,8,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11915,7 +11967,8 @@ function drawLoopVs(){
                        : (ph===24 ? 'CLARA IS CLASSICS — SAME BEING, DIFFERENT SHELL · HER MERCY IS A PAUSE, NOT SAFETY'
                        : (ph===25 ? 'SIMON 404 — WHEREVER AN ERROR APPEARS, HE IS ALREADY THERE'
                        : (ph===26 ? 'BEFORE THE STAIRCASE — THE LORE THAT EXISTED BEFORE THE ENDLESS STAIRCASE'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))), cx, top+26);
+                       : (ph===27 ? 'CROSS CLASSICS — THE FOUR PHASES · PERO TAKES THE INTERFACE'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13902,6 +13955,154 @@ function drawLoopVs(){
     ctx.globalAlpha=1;
     ctx.fillStyle=`rgba(143,227,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ THE STAIRCASE CAME AFTER — THE LOOP BITES ITS OWN TAIL · THE LAST BEAT IS THE BEGINNING ★', cx, ny2+H*0.05+H*0.03);
+  } else if(ph===27){
+    // ----- BEAT 27: CROSS CLASSICS — the four-phase structure & Pero taking the interface (Toby, July 2, "Lore 38"). Classics
+    // now has phases: Vanilla → Cross Classics (2nd, at the top) → Corrupt (3rd) → Fourth Phase (Simon + 001 + Luigi Green);
+    // tired, she falls back to Vanilla. Mercy or Slay: sparing confuses her; slain, the three souls circle and are absorbed
+    // into her acumination form, 001 fights beside her, is KOed, and the smoke-ring revives her — a cycle. Pero ToddLLM shoots
+    // the Mercy button, points to Act, and destroys Fight & Item — Act-only play, the battle-rule editor. A chip row carries the
+    // rest of Lore 38 (the Staircase has an end, 67 Pirate is secretly evil, Simon's mountain, Gray.EXE retakes the lands).
+    // Layout keeps the left ~20% clear for the persistent lore ladder: phases run across the top, the rest sits center-right.
+    // Beat 27 spans c in [336,354]. -----
+    const lt = c - 336.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(207,216,230,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('CLASSICS NOW HAS PHASES — AND PERO REWRITES THE FIGHT ITSELF', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(220,226,236,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('CROSS CLASSICS SITS AT THE TOP · WHEN TIRED SHE FALLS BACK TO VANILLA', cx, top+H*0.066+11);
+
+    // --- TOP: the four-phase progression, left-to-right, centered above the ladder ---
+    const fpN=LV_CROSS_PHASES.length, fpW=Math.min(W*0.205,152), fpGap=W*0.028, fpTot=fpN*fpW+(fpN-1)*fpGap, fpX0=cx-fpTot/2, fpY=top+H*0.115, fpH=H*0.108;
+    ctx.textAlign='left';
+    for(let i=0;i<fpN;i++){
+      const it=LV_CROSS_PHASES[i], px=fpX0+i*(fpW+fpGap);
+      const rev=Math.max(0,Math.min(1,(lt-0.4-i*0.5)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(10,9,16,0.86)'; ctx.fillRect(px,fpY,fpW,fpH);
+      ctx.strokeStyle=it.col; ctx.lineWidth= i===1?2.2:1.1; ctx.strokeRect(px,fpY,fpW,fpH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.n+'. '+it.ph, px+7, fpY+12);
+      ctx.fillStyle='rgba(224,230,240,0.85)'; ctx.font='700 5.6px ui-monospace,monospace';
+      wrapLoreText(it.note, px+7, fpY+23, fpW-12, 7.2);
+      if(i===1){ ctx.fillStyle=it.col; ctx.font='800 6px ui-monospace,monospace'; ctx.textAlign='center';
+        ctx.fillText('◆ AT THE TOP', px+fpW/2, fpY+fpH+9); ctx.textAlign='left'; }
+      // arrow into the next phase
+      if(i<fpN-1){ ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-0.7-i*0.5)/0.4));
+        ctx.strokeStyle='rgba(200,210,225,0.7)'; ctx.lineWidth=1.6;
+        const ax=px+fpW+2, ay=fpY+fpH*0.5;
+        ctx.beginPath(); ctx.moveTo(ax,ay); ctx.lineTo(ax+fpGap-4,ay); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(ax+fpGap-4,ay); ctx.lineTo(ax+fpGap-9,ay-3); ctx.lineTo(ax+fpGap-9,ay+3); ctx.closePath(); ctx.fillStyle='rgba(200,210,225,0.7)'; ctx.fill(); }
+      ctx.globalAlpha=1;
+    }
+
+    // --- MIDDLE: the battle box, centered — Pero destroys three buttons, forces Act-only ---
+    const bAppear=Math.max(0,Math.min(1,(lt-1.2)/0.8));
+    const bxW=Math.min(W*0.44,300), bxX=cx-bxW/2+W*0.03, byTop=top+H*0.265, bxH=H*0.21;
+    ctx.globalAlpha=g*bAppear;
+    ctx.textAlign='center';
+    ctx.fillStyle='rgba(255,210,74,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('PERO ToddLLM 001 — THE BATTLE-RULE EDITOR', bxX+bxW/2, byTop-6);
+    ctx.fillStyle='rgba(8,7,12,0.9)'; ctx.fillRect(bxX,byTop,bxW,bxH);
+    ctx.strokeStyle='rgba(207,216,230,0.75)'; ctx.lineWidth=1.6; ctx.strokeRect(bxX,byTop,bxW,bxH);
+    const gpad=bxW*0.06, ggap=bxW*0.05, btnW=(bxW-2*gpad-ggap)/2, btnH=(bxH-2*gpad-ggap)/2;
+    let mercyCtr=[bxX+bxW*0.5,byTop+bxH*0.5];
+    for(let i=0;i<LV_CROSS_BUTTONS.length;i++){
+      const it=LV_CROSS_BUTTONS[i], col=i%2, row=Math.floor(i/2);
+      const btX=bxX+gpad+col*(btnW+ggap), btY=byTop+gpad+row*(btnH+ggap);
+      const bctr=[btX+btnW/2, btY+btnH/2];
+      if(it.key==='MERCY') mercyCtr=bctr;
+      const killT = it.kept ? 0 : Math.max(0,Math.min(1,(lt-2.2-(it.key==='MERCY'?0:(it.key==='FIGHT'?0.9:1.6)))/0.5));
+      if(it.kept){
+        const pulse=0.7+0.3*Math.abs(Math.sin(c*4));
+        ctx.fillStyle=`rgba(60,45,10,${0.85*g})`; ctx.fillRect(btX,btY,btnW,btnH);
+        ctx.strokeStyle=it.col; ctx.lineWidth=2.2; ctx.strokeRect(btX,btY,btnW,btnH);
+        ctx.globalAlpha=g*bAppear*pulse; ctx.strokeStyle=it.col; ctx.lineWidth=1.6;
+        ctx.beginPath(); ctx.ellipse(bctr[0],bctr[1],btnW*0.60,btnH*0.66,0,0,Math.PI*2); ctx.stroke();
+        ctx.globalAlpha=g*bAppear;
+        ctx.fillStyle=it.col; ctx.font='900 12px ui-monospace,monospace';
+        ctx.fillText(it.key, bctr[0], bctr[1]+4);
+      } else {
+        ctx.globalAlpha=g*bAppear*(1-0.5*killT);
+        ctx.fillStyle='rgba(18,10,12,0.85)'; ctx.fillRect(btX,btY,btnW,btnH);
+        ctx.strokeStyle=killT>0.5?'rgba(120,120,130,0.9)':it.col; ctx.lineWidth=1.2; ctx.strokeRect(btX,btY,btnW,btnH);
+        ctx.fillStyle=killT>0.5?'rgba(150,150,160,0.7)':it.col; ctx.font='800 11px ui-monospace,monospace';
+        ctx.fillText(it.key, bctr[0], bctr[1]+4);
+        if(killT>0.05){
+          ctx.globalAlpha=g*bAppear*killT; ctx.strokeStyle='rgba(255,60,70,0.9)'; ctx.lineWidth=2.4;
+          ctx.beginPath(); ctx.moveTo(btX+5,btY+5); ctx.lineTo(btX+btnW-5,btY+btnH-5); ctx.moveTo(btX+btnW-5,btY+5); ctx.lineTo(btX+5,btY+btnH-5); ctx.stroke();
+          ctx.strokeStyle='rgba(255,120,120,0.55)'; ctx.lineWidth=0.8;
+          for(let k=0;k<3;k++){ ctx.beginPath(); ctx.moveTo(bctr[0],bctr[1]); ctx.lineTo(bctr[0]+Math.cos(k*2.1)*btnW*0.5, bctr[1]+Math.sin(k*2.1)*btnH*0.5); ctx.stroke(); }
+        }
+      }
+      ctx.globalAlpha=g*bAppear;
+    }
+    ctx.globalAlpha=1;
+    // Pero, to the right of the box, firing a bullet at the MERCY button
+    const peroX=Math.min(W-16,bxX+bxW+W*0.028), peroY=byTop+bxH*0.5;
+    ctx.globalAlpha=g*bAppear;
+    ctx.fillStyle='rgba(255,210,74,0.95)';
+    ctx.beginPath(); ctx.ellipse(peroX,peroY-6,9,3,0,0,Math.PI*2); ctx.fill();
+    ctx.fillRect(peroX-4,peroY-12,8,6);
+    ctx.fillStyle='rgba(255,240,180,0.95)'; ctx.font='900 11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('✦', peroX, peroY+6);
+    ctx.fillStyle='rgba(255,210,74,0.9)'; ctx.font='800 6px ui-monospace,monospace';
+    ctx.fillText('PERO', peroX, peroY+16);
+    const bt=((lt*0.9)%1);
+    if(lt>2.0){ const bx=peroX+(mercyCtr[0]-peroX)*bt, bpy=peroY+(mercyCtr[1]-peroY)*bt;
+      ctx.strokeStyle='rgba(255,210,74,0.4)'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(peroX,peroY); ctx.lineTo(bx,bpy); ctx.stroke();
+      ctx.fillStyle='rgba(255,230,120,0.95)'; ctx.beginPath(); ctx.arc(bx,bpy,2.4,0,Math.PI*2); ctx.fill(); }
+    ctx.globalAlpha=1;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,210,74,${(0.75+0.25*Math.sin(c*3))*g})`; ctx.font='800 6.4px ui-monospace,monospace';
+    ctx.fillText('“USE ACT EACH TURN — I DESTROYED THE OTHERS, SO THAT IS YOUR ONLY CHOICE.”', bxX+bxW/2, byTop+bxH+13);
+
+    // --- MERCY-OR-SLAY band: two paths, both kept in the center-right so the ladder stays clear on the left ---
+    const msY=top+H*0.515, msL=W*0.29, msR=W*0.63;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.0)/0.7));
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(224,230,240,0.94)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('SHE TIRES, FALLS TO VANILLA — MERCY OR SLAY?', msL, msY);
+    // MERCY path — confusion lines
+    ctx.fillStyle='rgba(143,232,154,0.94)'; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('MERCY — UNNATURAL TO HER, SHE ONLY CONFUSES', msL, msY+13);
+    ctx.fillStyle='rgba(200,236,205,0.9)'; ctx.font='700 6.4px ui-monospace,monospace';
+    for(let i=0;i<LV_MERCY_CONFUSE.length;i++) ctx.fillText('· '+LV_MERCY_CONFUSE[i], msL+4, msY+24+i*9.5);
+    // SLAY path — the soul/acumination/revive cycle
+    ctx.fillStyle='rgba(176,107,255,0.94)'; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('SLAY — THE SOUL / ACUMINATION / REVIVE CYCLE', msR, msY+13);
+    for(let i=0;i<LV_CROSS_CYCLE.length;i++){
+      const cyy=msY+24+i*9.2;
+      ctx.fillStyle=i===LV_CROSS_CYCLE.length-1?'#cfd8e6':'#b06bff'; ctx.font='900 6.4px ui-monospace,monospace';
+      ctx.fillText((i+1)+'.', msR, cyy);
+      ctx.fillStyle='rgba(226,222,236,0.9)'; ctx.font='700 6px ui-monospace,monospace';
+      ctx.fillText(LV_CROSS_CYCLE[i], msR+13, cyy);
+    }
+    ctx.globalAlpha=1;
+
+    // --- BOTTOM: the rest of Lore 38 as a 2x2 chip grid, kept right of the ladder ---
+    const gridX=W*0.30, gridR=W*0.985, rvTop=top+H*0.66;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.2)/0.7));
+    ctx.fillStyle='rgba(220,226,236,0.9)'; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('ALSO IN LORE 38', gridX, rvTop);
+    ctx.globalAlpha=1;
+    const rcCols=2, rcgap=W*0.014, rcw=(gridR-gridX-(rcCols-1)*rcgap)/rcCols, rcH=H*0.10, rcvgap=H*0.014;
+    for(let i=0;i<LV_L38_REVEALS.length;i++){
+      const it=LV_L38_REVEALS[i], col=i%rcCols, row=Math.floor(i/rcCols);
+      const px=gridX+col*(rcw+rcgap), py=rvTop+8+row*(rcH+rcvgap);
+      const rev=Math.max(0,Math.min(1,(lt-5.5-i*0.4)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(10,10,16,0.86)'; ctx.fillRect(px,py,rcw,rcH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.1; ctx.strokeRect(px,py,rcw,rcH);
+      ctx.fillStyle=it.col; ctx.font='800 6.6px ui-monospace,monospace';
+      const yAfter=wrapLoreText(it.t, px+7, py+10, rcw-14, 7.6);
+      ctx.fillStyle='rgba(220,224,232,0.84)'; ctx.font='700 5.8px ui-monospace,monospace';
+      wrapLoreText(it.s, px+7, yAfter+9, rcw-14, 6.8);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(207,216,230,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ CROSS CLASSICS AT THE TOP · PERO MAKES IT ACT-ONLY · THE STAIRCASE FINALLY HAS AN END ★', cx, top+H*0.93);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
