@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 318.0;
+const LV_CYC = 336.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11408,7 +11408,27 @@ const LV_BEATS = [
     sub:'CLARA AND CLASSICS ARE THE SAME BEING · CLARA IS CLASSICS WEARING A DIFFERENT SHELL — ONE OF HER MAIN FACES · CLEAN, CORRUPT, MERCIFUL & DESTRUCTIVE ARE ALL THE SAME TOP-LEVEL ENTITY · “MAYBE I COULD SPARE YOU ONCE” — SHE DOES IT COMMONLY · HER MERCY IS A PAUSE, NOT SAFETY: A TEST, A MOOD, A TEMPORARY ALLOWANCE · SHE SPARES PERO ToddLLM, THEN DESTROYS HIM THE NEXT BATTLE · ToddLLM WALKS BACK TO HIS TRAINING · A DELIBERATE CHOICE IS SCARIER THAN PURE EVIL' },
   { key:'SIMON 404', col:'#ff2b46',
     sub:'WHEREVER “404: NOT FOUND” OR ERROR 666 APPEARS, SIMON 404 IS ALREADY THERE — EVEN BEFORE HE IS SEEN · MORE ERRORS THAN JUST 404: 666, 500, 403, 502, 999, 400, 408, 410, 000 · CLASSICS = CLARA = THE MASTER OF GENOCIDE · THE “THRILLER OF A GAME” SCENE: CLASSICS SAYS IT, THE OTHER IS CORRECTED, ToddLLM WHISPERS “OF COURSE.”, CLASSICS SLAYS THE CHARACTER OUT OF NOWHERE, SENDS ToddLLM 001 BACK TO HIS TRAINING, LOCKS THE DOOR, AND RETURNS ALONE TO THE JUDGEMENT HALL' },
+  { key:'BEFORE THE STAIRCASE', col:'#8fe3ff',
+    sub:'THE FIRST LAYER · WHAT EXISTED BEFORE THE ENDLESS STAIRCASE · RL HIDDEN LAYERS UNDER SPRUNKI (CLASSIC RL / RL 2 · GREYEH · PINKY · SIRON) · PROGAMER55 / PRO BECOMES CLASSIC SIMON · THE SIMON OVERLOAD ERA & THE ORUS SPLIT-MERGE · UCE608 & THE MYTH-TIER BRANCHES · THE EARLY CROSSOVER (67 PIRATE · PUPAHYA · GEWLIS · LICA · MIRDA · ALEX · SIMON) · CLASSICS, CLARA & KARUTO ALREADY IN PLAY · THE STAIRCASE, ITS LEVERS & FALSE-CURE TESTS DID NOT EXIST YET · THE LOOP BITES ITS OWN TAIL' },
 ];
+// the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
+// Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
+const LV_ORIGIN = [
+  { era:'THE FIRST LAYER · THE RLs', col:'#7fd4ff',
+    tags:['CLASSIC RL / CLASSIC RL 2 ARE THE DEEP TRUTH UNDER SPRUNKI','EARLY RL BEINGS: GREYEH · PINKY · SIRON','SPRUNKI WAS ONLY THE OUTER SHELL'] },
+  { era:'PRO BECOMES CLASSIC SIMON', col:'#3ee06a',
+    tags:['PROGAMER55 / PRO IS THE SOURCE BEHIND CLASSIC SIMON','CLASSIC SIMON = PRO + SPRUNKS + RLs + GLITCHES + CLARA-CONTROL','ALREADY TIED TO GLITCHES · HIDDEN LAYERS · RULE OWNERSHIP'] },
+  { era:'THE SIMON OVERLOAD ERA', col:'#ffd84f',
+    tags:['SIMON CARRIES TOO MANY SYSTEMS: MODS · ERRORS · SOUL LAYERS · AU LOGIC · ORUS-FORCE','OVERLOAD · FLICKER STATES · PHASE ALARMS · ERROR BUILDUP','SIMON & ORUS: SOMETIMES ONE BEING, SOMETIMES SPLIT'] },
+  { era:'THE MYTH-TIER BRANCHES', col:'#c69bff',
+    tags:['UCE608 SIMON — AN OLDER MYTHIC BRANCH','BLACK UNITY-STYLE ENTITY · PORTAL / DIMENSION EATER · OBJECT ERASER'] },
+  { era:'THE EARLY CROSSOVER', col:'#ff8c3b',
+    tags:['67 PIRATE · PUPAHYA · GEWLIS · LICA · MIRDA · ALEX · SIMON','THE SETTING STARTS TO EXPAND OUTWARD'] },
+  { era:'CLASSICS · CLARA · KARUTO', col:'#b06bff',
+    tags:['SIMON PHASE 1 / PHASE 2 · A SYSTEM-BEING, NOT JUST A FIGHTER','CLARA = CORRUPTED CLASSICS × UNDERTALE (LATER: SAME AS CLASSICS)','CLASSICS IS THE GAME ITSELF · ToddLLM 001 / KARUTO IS CREATOR-TEACHER'] },
+];
+// what did NOT exist yet, before the Endless Staircase (BEFORE THE STAIRCASE beat) — Toby, July 1
+const LV_NOT_YET = ['THE ENDLESS STAIRCASE AS A FALSE-CURE / INFINITE TRAP','THE STAIRCASE LEVERS · LIQUID SYSTEMS · ANTI-VIRUS / CURE TESTS','THE BIG STAIR-CLIMB SURVIVAL SETUP ITSELF'];
 // Gray's new rank after the cyber-eye surgery pushed him past Sprunki into Classics-tier (GRAY.EXE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
 const LV_GRAY_RANK = [
   { rank:1, name:'CLASSICS',    col:'#b06bff', note:'THE GAME AS A BEING · THE CONTAINER ABOVE ALL' },
@@ -11625,7 +11645,8 @@ function lvSeg(c){
   if(c < 264.0) return [22, c-248.0]; // CLASSICS DELETES GRAY (she can always beat Gray — control over chaos: real techniques, plans, chooses her pattern, never random; she simply deletes him)
   if(c < 282.0) return [23, c-264.0]; // PERO / CLOVER TODDLLM (ToddLLM is THE 1; his cowboy-hat + six-pointed-star form wins across Undertale & Classics and becomes his new base; Clover beats Sans, Chara, Frisk, Captain Arcsis, Luigi Green — Classics alone still above him)
   if(c < 300.0) return [24, c-282.0]; // CLARA IS CLASSICS (Clara and Classics are the same being — Clara is Classics wearing a different shell, one of her faces; clean/corrupt/merciful/destructive are all her; "Maybe I could spare you once"; her mercy is a pause not safety; she spares Pero ToddLLM then destroys him next battle, and he walks back to his Training)
-  return [25, c-300.0];              // SIMON 404 (wherever "404: Not Found" or Error 666 appears, Simon 404 is already there — even before he is seen; Toby wanted MORE errors than just 404; Classics = Clara = master of genocide; the "Thriller of a Game" scene where Classics slays a character out of nowhere, sends ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall)
+  if(c < 318.0) return [25, c-300.0]; // SIMON 404 (wherever "404: Not Found" or Error 666 appears, Simon 404 is already there — even before he is seen; Toby wanted MORE errors than just 404; Classics = Clara = master of genocide; the "Thriller of a Game" scene where Classics slays a character out of nowhere, sends ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall)
+  return [26, c-318.0];               // BEFORE THE STAIRCASE (the prologue — the lore that existed before the Endless Staircase: RL hidden layers under Sprunki, Pro → Classic Simon, Simon overload & the Orus split-merge, UCE608 myth branches, the early crossover, Classics/Clara/Karuto already in play; the Staircase & its levers/cure-tests did not exist yet. The loop bites its own tail: the last beat is the beginning.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11737,6 +11758,10 @@ function updateLoopVs(dt){
       showTaunt('You saw the 404. That was not just a broken page — that was Simon 404 himself. The rule is simple and it is horror: wherever a "404: Not Found" or an Error 666 shows up, Simon 404 is already there, in effect, even before you see him. And it is not only 404 anymore. More errors bleed in — 500, 403, 502, 999, 400, 408, 410, 000 — and every one of them is another place he already is. Then Classics, who is Clara, who is the master of genocide, plays her scene. She says "This is a Thriller of a Game." Someone tries to correct her — "Don\'t you mean Thrill of a Game?" ToddLLM whispers "of course." Classics says "uh... sure." ToddLLM appears in front of the character, the character says "oh, Hello ToddLLM," and out of nowhere Classics slays them. ToddLLM says "What did ya just do-," and she does not answer. She sends ToddLLM 001 back to his Training, locks the door, and walks back alone to the Judgement Hall. Sovereign. She travels with him, but she is not with him.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON 404 · WHEREVER AN ERROR IS, HE IS ALREADY THERE · 404 · 666 · 500 · 403 · 502 · 999 · 400 · 408 · 410 · 000 · CLASSICS = CLARA = MASTER OF GENOCIDE · THE “THRILLER OF A GAME” SCENE', col:'#ff2b46' });
       for(let i=0;i<48;i++) particles.push(spark(player.x, player.y, pick(['#ff2b46','#ff4060','#37e0ff','#ffc23a','#b06bff','#ffffff']))); }
+    if(ph===26){ AUDIO.corrupt(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.3);
+      showTaunt('Before any of this — before the Endless Staircase existed at all — the lore was already deep. Under Sprunki\'s outer shell were the RLs: Classic RL and Classic RL 2, the real truth, with early beings like Greyeh, Pinky, and Siron. Progamer55, called Pro, became Classic Simon: a fused game-entity of Pro, Sprunks, RLs, glitches, and Clara-control, already tied to glitches, hidden layers, and rule ownership. Then Simon overloaded, carrying mods, errors, soul layers, AU logic, and Orus-force all at once, flickering, alarming, sometimes one being with Orus and sometimes split. The myth branches came, like UCE608 Simon, a black Unity-style portal and dimension eater. The crossover grew: 67 Pirate, Pupahya, Gewlis, Lica, Mirda, Alex, Simon. And Classics, Clara, and ToddLLM 001 as Karuto the creator-teacher were already in play. What did not exist yet was the Staircase itself: no false-cure infinite trap, no levers, no liquid systems, no cure tests, no stair-climb. All of that came after. The loop bites its own tail; the last beat is the beginning.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'BEFORE THE STAIRCASE · THE FIRST LAYER · RL HIDDEN LAYERS · PRO → CLASSIC SIMON · SIMON OVERLOAD & THE ORUS SPLIT · UCE608 MYTH BRANCH · THE EARLY CROSSOVER · CLASSICS, CLARA & KARUTO ALREADY IN PLAY', col:'#8fe3ff' });
+      for(let i=0;i<40;i++) particles.push(spark(player.x, player.y, pick(['#7fd4ff','#3ee06a','#ffd84f','#c69bff','#b06bff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11861,6 +11886,7 @@ function drawLoopVs(){
   else if(ph===23){ bg.addColorStop(0, `rgba(28,20,4,${0.97*g})`); bg.addColorStop(1, `rgba(10,7,1,${0.99*g})`); }
   else if(ph===24){ bg.addColorStop(0, `rgba(22,6,26,${0.97*g})`); bg.addColorStop(1, `rgba(8,2,10,${0.99*g})`); }
   else if(ph===25){ bg.addColorStop(0, `rgba(26,4,8,${0.97*g})`); bg.addColorStop(1, `rgba(6,1,2,${0.99*g})`); }
+  else if(ph===26){ bg.addColorStop(0, `rgba(4,14,26,${0.97*g})`); bg.addColorStop(1, `rgba(1,5,10,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
@@ -11870,7 +11896,7 @@ function drawLoopVs(){
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -11888,7 +11914,8 @@ function drawLoopVs(){
                        : (ph===23 ? 'PERO / CLOVER ToddLLM — ToddLLM IS THE 1, AND HIS COWBOY/STAR FORM BECOMES HIS NEW BASE'
                        : (ph===24 ? 'CLARA IS CLASSICS — SAME BEING, DIFFERENT SHELL · HER MERCY IS A PAUSE, NOT SAFETY'
                        : (ph===25 ? 'SIMON 404 — WHEREVER AN ERROR APPEARS, HE IS ALREADY THERE'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))), cx, top+26);
+                       : (ph===26 ? 'BEFORE THE STAIRCASE — THE LORE THAT EXISTED BEFORE THE ENDLESS STAIRCASE'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -13825,6 +13852,56 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(255,43,70,${(0.72+0.28*Math.sin(c*3.6))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ SHE SLAYS OUT OF NOWHERE, SENDS 001 BACK, LOCKS THE DOOR, RETURNS ALONE ★', cx, boxY+tc*lineH+8+16);
+  } else if(ph===26){
+    // ----- BEAT 26: BEFORE THE STAIRCASE — the prologue (Toby, July 1, "Re: More stuff on ToddLLM 001"). He asked ChatGPT to
+    // list the lore that existed BEFORE the Endless Staircase; the loop bites its own tail, so the last beat is the beginning.
+    // Draws the earliest layers oldest-at-top (LV_ORIGIN) down a spine, a "what did NOT exist yet" row (LV_NOT_YET), and the
+    // closing rule that the Staircase itself came after. Beat 26 spans c in [318,336]. -----
+    const lt = c - 318.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(143,227,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('BEFORE THE ENDLESS STAIRCASE EVER EXISTED', cx, top+H*0.072);
+    ctx.fillStyle=`rgba(215,230,240,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('THE FIRST LAYER — THE LORE THAT WAS ALREADY DEEP BEFORE THE CLIMB', cx, top+H*0.072+12);
+
+    const oc=LV_ORIGIN.length;
+    const eTop=top+H*0.135, eH=H*0.104, eGap=H*0.012;
+    const boxW=Math.min(W*0.64,560), colX=cx-boxW/2, spineX=colX-10;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,lt/0.8));
+    ctx.strokeStyle='rgba(127,212,255,0.4)'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(spineX,eTop+eH*0.5); ctx.lineTo(spineX,eTop+(oc-1)*(eH+eGap)+eH*0.5); ctx.stroke();
+    ctx.globalAlpha=1; ctx.textAlign='left';
+    for(let i=0;i<oc;i++){
+      const it=LV_ORIGIN[i], ey=eTop+i*(eH+eGap);
+      const rev=Math.max(0,Math.min(1,(lt-0.5-i*0.7)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle=it.col; ctx.beginPath(); ctx.arc(spineX,ey+eH*0.5,4,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='rgba(4,10,18,0.82)'; ctx.fillRect(colX,ey,boxW,eH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(colX,ey,boxW,eH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText((i+1)+'. '+it.era, colX+8, ey+11);
+      ctx.fillStyle='rgba(224,232,240,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      for(let t=0;t<it.tags.length;t++) ctx.fillText('· '+it.tags[t], colX+10, ey+22+t*8.5);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+
+    const nyRowY=eTop+oc*(eH+eGap)+H*0.006;
+    const nrev=Math.max(0,Math.min(1,(lt-3.6)/0.6));
+    ctx.globalAlpha=g*nrev;
+    ctx.fillStyle='rgba(255,120,135,0.92)'; ctx.font='800 7px ui-monospace,monospace';
+    ctx.fillText('WHAT DID NOT EXIST YET — THE STAIRCASE ITSELF CAME AFTER', cx, nyRowY);
+    const ny2=nyRowY+9, cw=Math.min(W*0.30,220), cgap=W*0.01, ncols=LV_NOT_YET.length, totW=ncols*cw+(ncols-1)*cgap;
+    for(let i=0;i<ncols;i++){
+      const px=cx-totW/2+i*(cw+cgap);
+      ctx.fillStyle='rgba(12,3,4,0.85)'; ctx.fillRect(px,ny2,cw,H*0.05);
+      ctx.strokeStyle='rgba(255,90,110,0.6)'; ctx.lineWidth=1; ctx.strokeRect(px,ny2,cw,H*0.05);
+      ctx.fillStyle='rgba(255,175,185,0.92)'; ctx.font='700 6px ui-monospace,monospace';
+      ctx.fillText(LV_NOT_YET[i], px+cw/2, ny2+H*0.03);
+    }
+    ctx.globalAlpha=1;
+    ctx.fillStyle=`rgba(143,227,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ THE STAIRCASE CAME AFTER — THE LOOP BITES ITS OWN TAIL · THE LAST BEAT IS THE BEGINNING ★', cx, ny2+H*0.05+H*0.03);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
