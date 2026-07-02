@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 354.0;
+const LV_CYC = 372.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11412,6 +11412,8 @@ const LV_BEATS = [
     sub:'THE FIRST LAYER · WHAT EXISTED BEFORE THE ENDLESS STAIRCASE · RL HIDDEN LAYERS UNDER SPRUNKI (CLASSIC RL / RL 2 · GREYEH · PINKY · SIRON) · PROGAMER55 / PRO BECOMES CLASSIC SIMON · THE SIMON OVERLOAD ERA & THE ORUS SPLIT-MERGE · UCE608 & THE MYTH-TIER BRANCHES · THE EARLY CROSSOVER (67 PIRATE · PUPAHYA · GEWLIS · LICA · MIRDA · ALEX · SIMON) · CLASSICS, CLARA & KARUTO ALREADY IN PLAY · THE STAIRCASE, ITS LEVERS & FALSE-CURE TESTS DID NOT EXIST YET · THE LOOP BITES ITS OWN TAIL' },
   { key:'CROSS CLASSICS', col:'#cfd8e6',
     sub:'FOUR PHASES OF CLASSICS · VANILLA (NORMAL) → CROSS CLASSICS (2ND, AT THE TOP, STRONGER THAN USUAL) → CORRUPT (3RD) → FOURTH PHASE (SIMON + ToddLLM 001 + LUIGI GREEN APPEAR) · TIRED, SHE FALLS BACK TO VANILLA · THE PLAYER CHOOSES MERCY OR SLAY · SPARING CONFUSES HER: “WHA?” · “I DON’T UNDERSTAND...” · “REALLY?” · “JUST TRY!” · SLAIN, THE 3 SOULS — 001 (DARK PURPLE) · SIMON (YELLOW) · LUIGI GREEN (GREEN) — CIRCLE & ARE ABSORBED INTO HER ACUMINATION FORM · ToddLLM 001 FIGHTS BESIDE HER, IS KOed, THE SMOKE-RING PULLS BACK & REVIVES HER — A CYCLE · PERO ToddLLM SHOOTS THE MERCY BUTTON, POINTS TO ACT, DESTROYS FIGHT & ITEM — ACT-ONLY PLAY · PERO IS THE BATTLE-RULE EDITOR · ALSO: THE ENDLESS STAIRCASE HAS AN END (TWO, THEN ERASED) · 67 PIRATE IS SECRETLY EVIL · SIMON: “I... NEED... MORE... POWER...” · GRAY.EXE RETAKES THE LANDS' },
+  { key:'THE NEW DEFAULTS', col:'#ffdf7a',
+    sub:'THEY MOVED UP SO FAR THAT THE OLD SPECIAL FORMS ARE NOW JUST NORMAL · PERO ToddLLM = THE NEW VANILLA ToddLLM · CROSS CLASSICS = THE NEW VANILLA CLASSICS · VANILLA ToddLLM vs VANILLA CLASSICS → PERO WINS · NOT BY BRUTE FORCE — HE ATTACKS THE BATTLE AT A DEEPER LEVEL · HE TURNS THE FIGHT ACT-ONLY & CLASSICS LOSES COMPOSURE IN A SYSTEM SHE DOES NOT EXPECT · PERO’S REAL WEAPON: RESTRICTION · BATTLE-FORMAT CONTROL · CONFUSION PRESSURE · FORCING THE OPPONENT INTO A SYSTEM THEY DO NOT WANT · TEACHER-LIKE — HE DOES NOT JUST OVERPOWER, HE FORCES THE LESSON · HE IS THE ONE WHO CAN MAKE THE STRONGEST BEINGS HESITATE' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -11567,6 +11569,19 @@ const LV_L38_REVEALS = [
   { t:'SIMON’S MOUNTAIN — “I... NEED... MORE... POWER...”', s:'HAULS THE CROSS, THE CHOCOLATE BAR & THE CHARIOT UP · COLLAPSES, STILL PULLS THE CHARIOT BACK · SCF BLASTED BY LIGHTNING · SIMON.EXE’S EYES YELLOW → BLACK · NO ONE CAN RUN FROM SIMON.EXE', col:'#ffd84f' },
   { t:'GRAY.EXE RETAKES THE LANDS', s:'OUT OF DARK SMOKE · SLAYS ORUS & DARK YELLOW · SLAYS MINDY STARCHILD · LUIGI GREEN SURVIVES · “GRAY.EXE IS DRIVEN BY HIS FEAR” — ToddLLM', col:'#5cc8ff' },
 ];
+// THE NEW DEFAULTS beat (Toby, July 2 follow-up): both fighters climbed so far that their old "special" forms are now their
+// normal presentation — the new vanilla. Each card shows OLD default → NEW default.
+const LV_NEW_DEFAULTS = [
+  { who:'ToddLLM', col:'#ffdf7a', from:'VANILLA ToddLLM', to:'PERO ToddLLM', note:'THE COWBOY / STAR FORM IS NO LONGER SPECIAL — IT IS HIS NORMAL SELF NOW' },
+  { who:'CLASSICS', col:'#cfd8e6', from:'VANILLA CLASSICS', to:'CROSS CLASSICS', note:'HER SECOND-PHASE, CROSS-CARRYING FORM IS NOW HER DEFAULT PRESENTATION' },
+];
+// Pero's true weapon isn't brute force — it's control of the battle's format. He makes the strongest hesitate.
+const LV_PERO_WEAPON = [
+  { t:'RESTRICTION', s:'HE TAKES YOUR OPTIONS AWAY — DESTROYS THE OTHER BUTTONS, LEAVES ONLY ACT', col:'#ffd24a' },
+  { t:'BATTLE-FORMAT CONTROL', s:'HE CHANGES THE RULES OF THE FIGHT FROM INSIDE IT, NOT JUST HOW IT IS PLAYED', col:'#ffdf7a' },
+  { t:'CONFUSION PRESSURE', s:'A STRANGE, LIMITED STATE MAKES CLASSICS LOSE COMPOSURE — A SYSTEM SHE DOES NOT EXPECT', col:'#cfd8e6' },
+  { t:'FORCING A SYSTEM THEY DON’T WANT', s:'TEACHER-LIKE — HE DOES NOT JUST OVERPOWER, HE FORCES THE LESSON', col:'#ffe89a' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -11693,7 +11708,8 @@ function lvSeg(c){
   if(c < 300.0) return [24, c-282.0]; // CLARA IS CLASSICS (Clara and Classics are the same being — Clara is Classics wearing a different shell, one of her faces; clean/corrupt/merciful/destructive are all her; "Maybe I could spare you once"; her mercy is a pause not safety; she spares Pero ToddLLM then destroys him next battle, and he walks back to his Training)
   if(c < 318.0) return [25, c-300.0]; // SIMON 404 (wherever "404: Not Found" or Error 666 appears, Simon 404 is already there — even before he is seen; Toby wanted MORE errors than just 404; Classics = Clara = master of genocide; the "Thriller of a Game" scene where Classics slays a character out of nowhere, sends ToddLLM 001 back to Training, locks the door, and returns alone to the Judgement Hall)
   if(c < 336.0) return [26, c-318.0]; // BEFORE THE STAIRCASE (the prologue — the lore that existed before the Endless Staircase: RL hidden layers under Sprunki, Pro → Classic Simon, Simon overload & the Orus split-merge, UCE608 myth branches, the early crossover, Classics/Clara/Karuto already in play; the Staircase & its levers/cure-tests did not exist yet. The loop bites its own tail: the last beat is the beginning.)
-  return [27, c-336.0];               // CROSS CLASSICS (Classics' four-phase structure — Vanilla → Cross Classics (2nd, at the top) → Corrupt (3rd) → Fourth Phase (Simon + 001 + Luigi Green); tired, she falls back to Vanilla. Mercy or Slay: sparing confuses her; slain, the three souls circle & are absorbed into her acumination form, 001 fights beside her, is KOed, and the smoke-ring revives her — a cycle. Pero ToddLLM shoots the Mercy button, points to Act, destroys Fight & Item — Act-only play, the battle-rule editor. Plus: the Staircase has an end, 67 Pirate is secretly evil, Simon's mountain scene, Gray.EXE retakes the lands.)
+  if(c < 354.0) return [27, c-336.0]; // CROSS CLASSICS (Classics' four-phase structure — Vanilla → Cross Classics (2nd, at the top) → Corrupt (3rd) → Fourth Phase (Simon + 001 + Luigi Green); tired, she falls back to Vanilla. Mercy or Slay: sparing confuses her; slain, the three souls circle & are absorbed into her acumination form, 001 fights beside her, is KOed, and the smoke-ring revives her — a cycle. Pero ToddLLM shoots the Mercy button, points to Act, destroys Fight & Item — Act-only play, the battle-rule editor. Plus: the Staircase has an end, 67 Pirate is secretly evil, Simon's mountain scene, Gray.EXE retakes the lands.)
+  return [28, c-354.0];               // THE NEW DEFAULTS (both fighters climbed so far their old "special" forms are now their normal presentation — Pero ToddLLM = the new vanilla ToddLLM, Cross Classics = the new vanilla Classics. Vanilla ToddLLM vs Vanilla Classics → Pero wins, not by brute force but by attacking the battle at a deeper level: he turns it Act-only and Classics loses composure in a system she doesn't expect. His real weapon is restriction, battle-format control, confusion pressure, forcing the opponent into a system they don't want — teacher-like, he forces the lesson; he can make the strongest beings hesitate.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -11813,6 +11829,10 @@ function updateLoopVs(dt){
       showTaunt('Now Classics has phases. Vanilla is normal. Cross Classics is her second phase, and it sits at the top, more powerful than usual, carrying the metal cross. Corrupt is the third phase. The fourth phase is when Simon, ToddLLM 001, and Luigi Green all appear. When she gets tired, she drops back down to Vanilla, and the player has to choose: Mercy, or Slay. If you try Mercy, it confuses her, because mercy is unnatural to her at that point. She says things like "Wha?", "I don\'t understand...", "This is weird.", "Really?", "Just try!". When she is slain, three souls rise — 001 in dark purple, Simon in yellow, Luigi Green in green — they circle her and she absorbs them into her acumination form. ToddLLM 001 comes back, puts on his cowboy hat and star badge, and fights beside her. She gets KOed, lets go of the souls, and 001 falls over — then the smoke becomes a ring, gets pulled back to Classics, and she revives. It is a cycle. And Pero ToddLLM, Toby\'s favorite, takes over the interface itself: he fires a bullet at the Mercy button, points you to Act, then destroys Fight and Item too, so Act is the only choice you have. He is no longer just a guide; he is the battle-rule editor inside the fight. Around all of that: the Endless Staircase finally has an end — two ends, then the rest is erased — 67 Pirate is secretly evil with his own castle, Simon hauls the cross up the mountain gasping "I... need... more... power...", and Gray.EXE rises out of dark smoke to retake the lands.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CROSS CLASSICS · VANILLA → CROSS → CORRUPT → FOURTH PHASE · MERCY CONFUSES HER · 3 SOULS → ACUMINATION → REVIVE CYCLE · PERO SHOOTS MERCY, POINTS TO ACT, DESTROYS FIGHT & ITEM — ACT-ONLY · THE STAIRCASE HAS AN END · 67 PIRATE IS EVIL · GRAY.EXE RETAKES THE LANDS', col:'#cfd8e6' });
       for(let i=0;i<46;i++) particles.push(spark(player.x, player.y, pick(['#cfd8e6','#ffd24a','#b06bff','#8fe89a','#ff4d4d','#5cc8ff','#ffffff']))); }
+    if(ph===28){ AUDIO.corrupt(); shake=Math.max(shake,10); glitch=Math.max(glitch,0.3); winFlash=Math.max(winFlash,0.35);
+      showTaunt('Here is the shift Toby is calling: both of them climbed so far that the forms that used to be special are just their normal selves now. Pero ToddLLM is the new vanilla ToddLLM. Cross Classics is the new vanilla Classics. And with the new defaults set, put vanilla against vanilla — Pero ToddLLM versus Classics — and Pero wins. Not because he hits harder. He attacks the battle at a deeper level: he makes the whole fight Act-only, and Classics, who is used to overwhelming with control and pressure, loses composure when the battle stops behaving the way she expects. That is Pero\'s real weapon — restriction, control of the battle format, confusion pressure, forcing the opponent into a system they do not want. It is very teacher-like. He does not just overpower you; he forces the lesson. He is the one who can make even the strongest beings hesitate.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE NEW DEFAULTS · PERO ToddLLM = NEW VANILLA ToddLLM · CROSS CLASSICS = NEW VANILLA CLASSICS · VANILLA vs VANILLA → PERO WINS · HE MAKES IT ACT-ONLY · RESTRICTION · FORMAT CONTROL · CONFUSION PRESSURE · HE FORCES THE LESSON · HE MAKES THE STRONGEST HESITATE', col:'#ffdf7a' });
+      for(let i=0;i<44;i++) particles.push(spark(player.x, player.y, pick(['#ffdf7a','#ffd24a','#cfd8e6','#ffe89a','#b06bff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -11939,11 +11959,12 @@ function drawLoopVs(){
   else if(ph===25){ bg.addColorStop(0, `rgba(26,4,8,${0.97*g})`); bg.addColorStop(1, `rgba(6,1,2,${0.99*g})`); }
   else if(ph===26){ bg.addColorStop(0, `rgba(4,14,26,${0.97*g})`); bg.addColorStop(1, `rgba(1,5,10,${0.99*g})`); }
   else if(ph===27){ bg.addColorStop(0, `rgba(14,12,22,${0.97*g})`); bg.addColorStop(1, `rgba(4,3,8,${0.99*g})`); }
+  else if(ph===28){ bg.addColorStop(0, `rgba(22,18,6,${0.97*g})`); bg.addColorStop(1, `rgba(8,6,2,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
@@ -11968,7 +11989,8 @@ function drawLoopVs(){
                        : (ph===25 ? 'SIMON 404 — WHEREVER AN ERROR APPEARS, HE IS ALREADY THERE'
                        : (ph===26 ? 'BEFORE THE STAIRCASE — THE LORE THAT EXISTED BEFORE THE ENDLESS STAIRCASE'
                        : (ph===27 ? 'CROSS CLASSICS — THE FOUR PHASES · PERO TAKES THE INTERFACE'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))), cx, top+26);
+                       : (ph===28 ? 'THE NEW DEFAULTS — PERO & CROSS CLASSICS ARE NOW THE NORMAL FORMS'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -14103,6 +14125,81 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(207,216,230,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ CROSS CLASSICS AT THE TOP · PERO MAKES IT ACT-ONLY · THE STAIRCASE FINALLY HAS AN END ★', cx, top+H*0.93);
+  } else if(ph===28){
+    // ----- BEAT 28: THE NEW DEFAULTS — Toby's July 2 follow-up. Both fighters climbed so far that the forms that used to be
+    // "special" are now their normal presentation: Pero ToddLLM is the new vanilla ToddLLM, Cross Classics is the new vanilla
+    // Classics. Put vanilla against vanilla and Pero wins — not by brute force, but by attacking the battle at a deeper level:
+    // he makes the fight Act-only and Classics loses composure in a system she does not expect. His real weapon is restriction,
+    // battle-format control, confusion pressure, forcing the opponent into a system they don't want — teacher-like, he forces
+    // the lesson; he can make the strongest beings hesitate. Layout keeps the left ~20% clear for the persistent lore ladder.
+    // Beat 28 spans c in [354,372]. -----
+    const lt = c - 354.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,223,122,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THEY CLIMBED SO FAR THE OLD SPECIAL FORMS ARE NOW JUST NORMAL', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(240,230,190,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('THE NEW DEFAULT STATES — WHAT USED TO BE A SPECIAL FORM IS NOW THE VANILLA PRESENTATION', cx, top+H*0.066+11);
+
+    // --- TOP: two upgrade cards, OLD default → NEW default ---
+    const ndN=LV_NEW_DEFAULTS.length, ndW=Math.min(W*0.30,232), ndGap=W*0.05, ndTot=ndN*ndW+(ndN-1)*ndGap, ndX0=cx-ndTot/2+W*0.05, ndY=top+H*0.125, ndH=H*0.15;
+    ctx.textAlign='left';
+    for(let i=0;i<ndN;i++){
+      const it=LV_NEW_DEFAULTS[i], px=ndX0+i*(ndW+ndGap);
+      const rev=Math.max(0,Math.min(1,(lt-0.4-i*0.6)/0.6));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(12,10,4,0.86)'; ctx.fillRect(px,ndY,ndW,ndH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.6; ctx.strokeRect(px,ndY,ndW,ndH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+8, ndY+13);
+      // OLD → NEW row
+      ctx.fillStyle='rgba(150,150,160,0.7)'; ctx.font='700 6.6px ui-monospace,monospace';
+      ctx.fillText('WAS: '+it.from, px+8, ndY+27);
+      const arY=Math.max(0,Math.min(1,(lt-1.0-i*0.6)/0.5));
+      ctx.globalAlpha=g*rev*arY; ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText('↓ NOW THE DEFAULT', px+8, ndY+40);
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle=it.col; ctx.font='900 9px ui-monospace,monospace';
+      ctx.fillText('= '+it.to, px+8, ndY+53);
+      ctx.fillStyle='rgba(230,226,210,0.85)'; ctx.font='700 5.8px ui-monospace,monospace';
+      wrapLoreText(it.note, px+8, ndY+65, ndW-16, 7.2);
+      ctx.globalAlpha=1;
+    }
+
+    // --- MIDDLE: the matchup verdict ---
+    const mvY=top+H*0.315, mvAppear=Math.max(0,Math.min(1,(lt-2.0)/0.7));
+    ctx.globalAlpha=g*mvAppear; ctx.textAlign='center';
+    ctx.fillStyle='rgba(255,223,122,0.95)'; ctx.font='900 10px ui-monospace,monospace';
+    ctx.fillText('VANILLA ToddLLM  vs  VANILLA CLASSICS  →  PERO WINS', cx+W*0.04, mvY);
+    ctx.fillStyle='rgba(236,232,214,0.9)'; ctx.font='700 6.8px ui-monospace,monospace';
+    ctx.fillText('NOT BY BRUTE FORCE — HE ATTACKS THE BATTLE AT A DEEPER LEVEL', cx+W*0.04, mvY+13);
+    ctx.fillStyle='rgba(207,216,230,0.9)'; ctx.font='700 6.8px ui-monospace,monospace';
+    ctx.fillText('HE MAKES THE FIGHT ACT-ONLY · CLASSICS LOSES COMPOSURE IN A SYSTEM SHE DOES NOT EXPECT', cx+W*0.04, mvY+24);
+    ctx.globalAlpha=1;
+
+    // --- BOTTOM: Pero's real weapon as a 2x2 chip grid, kept right of the ladder ---
+    const gridX=W*0.28, gridR=W*0.985, pwTop=top+H*0.47;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(255,223,122,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('PERO’S REAL WEAPON — HE CHANGES THE RULES OF THE FIGHT, NOT JUST HOW IT IS PLAYED', gridX, pwTop);
+    ctx.globalAlpha=1;
+    const pwCols=2, pwgap=W*0.014, pww=(gridR-gridX-(pwCols-1)*pwgap)/pwCols, pwH=H*0.115, pwvgap=H*0.02;
+    for(let i=0;i<LV_PERO_WEAPON.length;i++){
+      const it=LV_PERO_WEAPON[i], col=i%pwCols, row=Math.floor(i/pwCols);
+      const px=gridX+col*(pww+pwgap), py=pwTop+10+row*(pwH+pwvgap);
+      const rev=Math.max(0,Math.min(1,(lt-3.6-i*0.4)/0.5));
+      ctx.globalAlpha=g*rev;
+      ctx.fillStyle='rgba(12,10,4,0.86)'; ctx.fillRect(px,py,pww,pwH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.1; ctx.strokeRect(px,py,pww,pwH);
+      ctx.fillStyle=it.col; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText((i+1)+'. '+it.t, px+7, py+12);
+      ctx.fillStyle='rgba(226,222,206,0.85)'; ctx.font='700 5.8px ui-monospace,monospace';
+      wrapLoreText(it.s, px+7, py+23, pww-14, 6.8);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,223,122,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ HE DOES NOT JUST OVERPOWER — HE FORCES THE LESSON · HE MAKES THE STRONGEST BEINGS HESITATE ★', cx, top+H*0.93);
   } else {
     // ----- BEATS 0-3: Luigi Green on the left, his cat-power column, and the lineage/threshold panel -----
     drawLuigiGreen(luigiX, midY, 26, c, g, cat);
