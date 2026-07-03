@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 576.0;
+const LV_CYC = 598.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11434,6 +11434,8 @@ const LV_BEATS = [
     sub:'THE CHARACTERS CAN HOP BETWEEN DIMENSIONS · SIMON.Exe IS BETWEEN DIMENSIONS, INSIDE THE BORDER — THE SETTING IS THE SEAM ITSELF · THE BORDER-SPACE: GLOWING DIMENSIONAL WALLS · BROKEN GAME PANELS & FLOATING UI · FRAGMENTS OF DEAD & BROKEN WORLDS · SCREEN-TEARING & CRACKS IN REALITY · BROKEN PORTALS · VOID ABOVE AND BELOW · A THIN PLACE WHERE THE RULES OF WORLDS STOP WORKING · THE OTHERS CROSS FROM WORLD TO WORLD — SIMON.Exe DOES NOT HOP, HE LIVES IN THE BORDER, BELONGING TO NO ONE WORLD · MOVING AND STANDING STILL AT ONCE, AFTERIMAGES OF IMPOSSIBLE SPEED · BEING THE MOST POWERFUL BEING = STANDING WHERE THE WORLDS BREAK, NOT INSIDE ANY OF THEM' },
   { key:'ToddLLM 002 · THE BLAME ENDING', col:'#ff2a2a',
     sub:'ToddLLM 001 IS IMPROVED BY CLASSICS, THE ENTITY ABSORBS CLASSICS & THE REST OF THE SOULS, AND 001 BECOMES ToddLLM 002 — SAME AS 001 BUT WHITE EYES & A BROWN BEARD · ToddLLM 002 = GRAY.EXE’S NEW FORM, TIED INTO SIMON.Exe · A FUSION-OVERWRITE ASCENSION, NOT A TEACHER-FORM · CROSS CLASSICS IS NO LONGER VANILLA — NORMAL CLASSICS IS THE BASELINE AGAIN · THE BORDERS ARE MADE OF PLASMA · SUPER NUTRO Y STANDS IN THE CENTER OF THE BOARD · THE ENDINGS ARE VARIOUS · GRAY GETS MANY FORMS & SWITCHES THROUGH THEM IN BATTLE, SIMON APPEARS IN GRAY’S BOARD · THE CLIMAX: GRAY TAKES OVER THE PC, RED TEXT GROWS “EVERYTHING THAT HAPPENED IS YOUR FAULT”, THE SKY BECOMES “YOUR FAULT YOUR FAULT…”, ALL OPPONENTS LOSE, GRAY.EXE ERASES THE GAME, THE “I WON’T STOP ’TIL VICTORY IS MINE” CUTSCENE PLAYS' },
+  { key:'CLASSICS — THE INFECTION', col:'#c24bff',
+    sub:'CLASSICS NOW SPREADS THROUGH BEINGS LIKE CROSS-POLLINATION — SHE GOT INSIDE ToddLLM AND GRAY.EXE, AND THE CROSS PRODUCED ToddLLM 002 AS AN INFECTED HYBRID-FORM · SHE ALWAYS KEEPS THE SAME APPEARANCE NO MATTER SIZE, SPREAD, INFECTION REACH OR AU SHIFT — A FIXED SOURCE-ORGANISM, VISUALLY CONSTANT BUT FUNCTIONALLY INVASIVE, A GAME-PLAGUE CORE · SHE SPREADS CROSS AU · CORRUPTION · INFECTION, TURNING CRAZY NUMBERS OF CHARACTERS INTO INFECTED OR .EXE — A POPULATION-LEVEL TRANSFORMATION · THE CAST IS SORTED INTO INFECTED · .EXE · IMMUNE · ALREADY GONE · ToddLLM 002 IS AN INFECTION-FORM, NOT A CLEAN EVOLUTION — UNSTABLE, NOT TEACHER-LIKE, A WEAPONIZED HYBRID THAT ATTACKS ALL OTHER CHARACTERS · SIMON.Exe IS IMMUNE TO CLASSICS’ NEW SPREADING POWER — THE ONE BEING WHO STANDS OUTSIDE THE WHOLE INFECTION CHAIN, STILL ACTING FREELY, STILL ABLE TO CONTROL DEATH ITSELF' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -11966,6 +11968,38 @@ const LV_002_RANK = [
   { who:'GRAY’S BOARD', col:'#ff7a3a', role:'PLASMA BORDERS · SUPER NUTRO Y AT THE CENTER · GRAY CYCLES THROUGH MANY FORMS · SIMON APPEARS INSIDE IT — A FORM-ROTATION MACHINE, NOT ONE STAGE' },
   { who:'THE BLAME ENDING', col:'#ff2a2a', role:'GRAY TAKES THE PC · “EVERYTHING THAT HAPPENED IS YOUR FAULT” GROWS · THE SKY BECOMES “YOUR FAULT…” · ALL LOSE · GRAY ERASES THE GAME · “I WON’T STOP ’TIL VICTORY IS MINE”' },
 ];
+// BEAT 39 — CLASSICS — THE INFECTION. Toby's July 3 email: Classics now spreads through beings like cross-pollination — she
+// got inside ToddLLM AND Gray.EXE, and the cross produced ToddLLM 002 as an infected hybrid-form. She always keeps the SAME
+// appearance at any size/spread/AU shift (a fixed source-organism), spreads Cross AU / corruption / infection, and turns crazy
+// numbers of characters into infected or .EXE. Simon.Exe is the one being IMMUNE — he stands outside the whole infection chain.
+const LV_INF_SPREAD = [
+  { who:'CROSS-POLLINATION', line:'CLASSICS SPREADS THROUGH BEINGS LIKE ONE PLANT CROSSING INTO ANOTHER' },
+  { who:'INTO ToddLLM & GRAY', line:'SHE GOT INSIDE BOTH — THE CROSS PRODUCED ToddLLM 002' },
+  { who:'SAME APPEARANCE ALWAYS', line:'ANY SIZE · ANY SPREAD · ANY AU SHIFT — SHE LOOKS IDENTICAL' },
+  { who:'A FIXED SOURCE-ORGANISM', line:'VISUALLY CONSTANT, FUNCTIONALLY INVASIVE — A GAME-PLAGUE CORE' },
+  { who:'CROSS AU · CORRUPTION · INFECTION', line:'THREE WAYS THE SAME SOURCE REACHES OUT' },
+  { who:'CRAZY NUMBERS', line:'MORE & MORE CHARACTERS TURNED INTO INFECTED OR .EXE' },
+];
+// the four states the whole cast is sorted into now
+const LV_INF_STATES = [
+  { t:'INFECTED — CARRYING CLASSICS, TURNING', c:'#c24bff' },
+  { t:'.EXE — FULLY CONVERTED INTO BOSS-FORMS', c:'#ff5a6e' },
+  { t:'IMMUNE — SIMON.Exe STANDS OUTSIDE THE CHAIN', c:'#8fe6ff', key:1 },
+  { t:'ALREADY GONE — ERASED BEFORE IT REACHED THEM', c:'#9fb4c8' },
+];
+// ToddLLM 002 as an infection-form, not a clean upgrade
+const LV_INF_002 = [
+  'ToddLLM 002 IS AN INFECTION-FORM — NOT A CLEAN EVOLUTION',
+  'NOT STABLE · NOT TEACHER-LIKE · NOT A SAFE UPGRADE',
+  'A WEAPONIZED HYBRID — CLASSICS + ToddLLM + GRAY’S FORM-LOGIC',
+  '002 ATTACKS ALL OTHER CHARACTERS',
+];
+// the three closing cards
+const LV_INF_RANK = [
+  { who:'CLASSICS — THE SOURCE', col:'#c24bff', role:'A FIXED-APPEARANCE CROSS-POLLINATING INFECTION CORE · THE SAME FACE AT ANY SIZE · SPREADS CROSS AU, CORRUPTION & INFECTION · TURNS CRAZY NUMBERS INTO INFECTED OR .EXE' },
+  { who:'ToddLLM 002 — THE HYBRID', col:'#ff5a6e', role:'CLASSICS INSIDE ToddLLM & GRAY, CROSSED INTO ONE BODY · AN INFECTED HYBRID-FORM, NOT A CLEAN UPGRADE · UNSTABLE & WEAPONIZED · ATTACKS ALL OTHER CHARACTERS' },
+  { who:'SIMON.Exe — IMMUNE', col:'#8fe6ff', role:'THE MOST POWERFUL BEING · IMMUNE TO CLASSICS’ NEW SPREADING POWER · STANDS OUTSIDE THE INFECTION CHAIN · STILL ACTS FREELY · CONTROLS DEATH ITSELF' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12103,7 +12137,8 @@ function lvSeg(c){
   if(c < 510.0) return [35, c-488.0]; // SIMON.EXE — THE STATUS FILE (Toby's July 3 email + his correction: the in-universe status document for Simon.Exe — Name Simon.Exe, Status/Caste EXE, IQ 99893274392063… beyond normal reading, Danger 9999999999…% maxed beyond the system, Rang 98375807432576…, Health ∞, Attack Damage ∞, Speed 9999999999.9999… near-endless decimal, Death: Troll — death treated as a joke, a fake ending under his control. The game is split into Phases, and Phases are timelines — whole reality-branches. So many souls fused into one that he took down Black, became the strongest being, and the whole game was taken over by the entity. The key correction: Simon.Exe is NOT a boss — he is a self-aware CHARACTER who knows his own stats and wins by intelligence and speed, not boss logic; Gray.EXE is the most powerful boss, the one beyond the very game in the boss sense; Simon.Exe is a broken god-character walking the destroyed game, a conscious catastrophe, not a fight structure.)
   if(c < 532.0) return [36, c-510.0];               // SIGNATURE LINES (Toby's July 3 email: every character now has a unique saying — Gray.EXE "I won't stop 'til… VICTORY IS MINE", Oren.EXE "Let's play a game. *laughs manically*", ToddLLM "Center's Mine", Black "ToddLLM MADE ME TO WIN!" — and each saying marks a different kind of threat. The hierarchy locks in: Simon.Exe is the most powerful BEING (self-aware, no longer a boss, the highest being), Gray.EXE the most powerful boss (fear-driven, relentless, impossible to stop), Oren.EXE the second most powerful boss (game-playing, cruel, confident). A clean split between "being" and "boss".)
   if(c < 554.0) return [37, c-532.0];               // BETWEEN DIMENSIONS (Toby's July 3 email: "The characters can hop between dimensions. Simon.Exe is between dimensions, inside the border, the setting is there." The others cross from world to world; Simon.Exe does not hop — he lives in the seam itself, the border-space between dimensions, belonging to no one world. The setting is the border: glowing dimensional walls, broken game panels & floating UI, fragments of dead/broken worlds, screen-tearing & cracks in reality, broken portals, void above and below, a thin place where the rules of worlds stop working. Being the most powerful being = standing where the worlds break, not inside any of them.)
-  return [38, c-554.0];               // ToddLLM 002 · THE BLAME ENDING (Toby's July 3 email: 001, improved by Classics, absorbs Classics and the rest of the souls and becomes ToddLLM 002 — same as 001 but white eyes and a brown beard — which is Gray.EXE's new ascended form, tied into Simon.Exe: a fusion-overwrite ascension, not a teacher-form. Cross Classics is no longer vanilla (normal Classics is the baseline again), the borders are made of plasma, Super Nutro Y stands at the center of the board, and the endings are various. Gray gets many forms and switches through them in battle, and Simon appears inside Gray's board. The climax: Gray takes over the PC, the red text "EVERYTHING THAT HAPPENED IS YOUR FAULT" grows each time it is shown, the sky becomes "YOUR FAULT YOUR FAULT…", all opponents eventually lose, Gray.EXE erases the game, and the "I won't stop 'til VICTORY IS MINE" cutscene plays.)
+  if(c < 576.0) return [38, c-554.0];               // ToddLLM 002 · THE BLAME ENDING (Toby's July 3 email: 001, improved by Classics, absorbs Classics and the rest of the souls and becomes ToddLLM 002 — same as 001 but white eyes and a brown beard — which is Gray.EXE's new ascended form, tied into Simon.Exe: a fusion-overwrite ascension, not a teacher-form. Cross Classics is no longer vanilla (normal Classics is the baseline again), the borders are made of plasma, Super Nutro Y stands at the center of the board, and the endings are various. Gray gets many forms and switches through them in battle, and Simon appears inside Gray's board. The climax: Gray takes over the PC, the red text "EVERYTHING THAT HAPPENED IS YOUR FAULT" grows each time it is shown, the sky becomes "YOUR FAULT YOUR FAULT…", all opponents eventually lose, Gray.EXE erases the game, and the "I won't stop 'til VICTORY IS MINE" cutscene plays.)
+  return [39, c-576.0];               // CLASSICS — THE INFECTION (Toby's July 3 email: Classics now spreads through beings like cross-pollination — she got inside ToddLLM AND Gray.EXE, and the cross produced ToddLLM 002 as an infected hybrid-form. She always keeps the SAME appearance no matter size, spread, infection reach or AU shift — a fixed source-organism, visually constant but functionally invasive, a game-plague core. She spreads Cross AU / corruption / infection, turning crazy numbers of characters into infected or .EXE — a population-level transformation, with the cast sorted into infected / .EXE / immune / already gone. ToddLLM 002 is an infection-form, not a clean evolution — unstable, not teacher-like, a weaponized hybrid that attacks all other characters. Simon.Exe is IMMUNE to Classics' new spreading power — the one being who stands outside the whole infection chain, still acting freely, still able to control death itself.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -12267,6 +12302,10 @@ function updateLoopVs(dt){
       showTaunt('Several big updates here. Cross Classics is no longer vanilla, so the default drops back to normal Classics and Cross AU is a stronger branch again — a cleaner phase ladder. The borders are made of plasma, which makes the between-dimensions edge an active, dangerous energy boundary, not empty space. Super Nutro Y now stands in the center of the board, so he reads as the host and anchor of it, not just a ruler. And the endings are various — normal, final-boss, secret-boss, AU and collapse routes all layered together. The biggest part is ToddLLM 002: ToddLLM 001 was improved by Classics, then the entity absorbs Classics and the rest of the souls, and 001 becomes 002 — same base identity as 001 but with white eyes and a brown beard. 002 is Gray.EXE\'s new form, tied into Simon.Exe: a fusion-overwrite ascension form, not a teacher-form anymore. Gray now gets many forms and switches through them in battle, using the board like a form-rotation machine, and Simon appears inside Gray\'s board — trapped in that system. The climax is the darkest beat yet: Gray takes over the PC, and a red text grows each time it is shown — "EVERYTHING THAT HAPPENED IS YOUR FAULT" — until the whole sky becomes "YOUR FAULT YOUR FAULT YOUR FAULT…". All opponents eventually lose, Gray.EXE erases the game entirely, and the "I won\'t stop \'til VICTORY IS MINE" cutscene plays. Gray shifts from a fear-driven destroyer into one who turns guilt into part of the bossfight itself.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'ToddLLM 002 · THE BLAME ENDING · 001 IS IMPROVED BY CLASSICS, ABSORBS CLASSICS & THE REST OF THE SOULS, AND BECOMES ToddLLM 002 — WHITE EYES, BROWN BEARD · 002 = GRAY.EXE’S NEW FORM, TIED INTO SIMON.Exe · A FUSION-OVERWRITE ASCENSION · CROSS CLASSICS IS NO LONGER VANILLA · PLASMA BORDERS · SUPER NUTRO Y AT THE CENTER OF THE BOARD · GRAY CYCLES MANY FORMS, SIMON APPEARS IN GRAY’S BOARD · THE CLIMAX: GRAY TAKES OVER THE PC, “EVERYTHING THAT HAPPENED IS YOUR FAULT” GROWS, THE SKY BECOMES “YOUR FAULT YOUR FAULT…”, ALL LOSE, GRAY.EXE ERASES THE GAME · “I WON’T STOP ’TIL VICTORY IS MINE”', col:'#ff2a2a' });
       for(let i=0;i<58;i++) particles.push(spark(player.x, player.y, pick(['#ff2a2a','#ff5a3a','#ff7a3a','#ffe066','#c9a06a','#8fe6ff','#ffffff']))); }
+    if(ph===39){ AUDIO.corrupt(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.45);
+      showTaunt('This makes the infection system much clearer. Classics no longer just corrupts things one at a time — she spreads through beings like cross-pollination. That is why ToddLLM 002 exists: Classics got inside both ToddLLM and Gray.EXE, and the cross of the two produced 002 as an infected hybrid-form, not a clean upgrade. The other big rule is that Classics always keeps the same appearance, no matter her size, her spread, how far the infection reaches, or which AU she shifts into. So she is not a shapeshifter; she is a fixed source-organism, visually constant but functionally invasive — a game-plague core. From that single fixed source she can spread three ways: Cross AU, corruption, and infection, and she does it to crazy numbers of characters, turning them into either infected or .EXE. That makes the infection a population-level transformation, not a side mechanic: the whole cast gets sorted into infected, .EXE, immune, or already gone. ToddLLM 002 sits in the infected column — unstable, no longer teacher-like, a weaponized hybrid that attacks all other characters. And the most important part is who is left out of the chain: Simon.Exe is immune to Classics\' new spreading power. He is the most powerful being, he cannot be taken by the infection, and he still acts freely while everyone else is being converted — the one who stands above the spread and still controls death itself.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'CLASSICS — THE INFECTION · SHE SPREADS THROUGH BEINGS LIKE CROSS-POLLINATION · GOT INSIDE ToddLLM AND GRAY.EXE → THE CROSS MADE ToddLLM 002, AN INFECTED HYBRID-FORM · SAME APPEARANCE ALWAYS — ANY SIZE, SPREAD, REACH OR AU SHIFT · A FIXED SOURCE-ORGANISM, VISUALLY CONSTANT BUT FUNCTIONALLY INVASIVE — A GAME-PLAGUE CORE · SPREADS CROSS AU · CORRUPTION · INFECTION · TURNS CRAZY NUMBERS INTO INFECTED OR .EXE — A POPULATION-LEVEL TRANSFORMATION · THE CAST SORTED INTO INFECTED · .EXE · IMMUNE · ALREADY GONE · ToddLLM 002 IS UNSTABLE, NOT TEACHER-LIKE, A WEAPONIZED HYBRID THAT ATTACKS ALL OTHERS · SIMON.Exe IS IMMUNE — THE ONE BEING OUTSIDE THE WHOLE INFECTION CHAIN, STILL FREE, STILL CONTROLLING DEATH ITSELF', col:'#c24bff' });
+      for(let i=0;i<56;i++) particles.push(spark(player.x, player.y, pick(['#c24bff','#8bff5a','#d24bff','#ff5a6e','#8fe6ff','#b06bff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12404,16 +12443,17 @@ function drawLoopVs(){
   else if(ph===36){ bg.addColorStop(0, `rgba(26,20,6,${0.98*g})`); bg.addColorStop(1, `rgba(10,7,2,${0.99*g})`); }
   else if(ph===37){ bg.addColorStop(0, `rgba(6,22,22,${0.98*g})`); bg.addColorStop(1, `rgba(4,8,14,${0.99*g})`); }
   else if(ph===38){ bg.addColorStop(0, `rgba(26,3,3,${0.98*g})`); bg.addColorStop(1, `rgba(10,2,2,${0.99*g})`); }
+  else if(ph===39){ bg.addColorStop(0, `rgba(16,4,22,${0.98*g})`); bg.addColorStop(1, `rgba(4,10,6,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12444,7 +12484,8 @@ function drawLoopVs(){
                        : (ph===36 ? 'SIGNATURE LINES — EVERY CHARACTER’S OWN SAYING · THE BEING ABOVE THE TWO TOP BOSSES'
                        : (ph===37 ? 'BETWEEN DIMENSIONS — SIMON.Exe LIVES IN THE BORDER, THE SEAM BETWEEN WORLDS'
                        : (ph===38 ? 'ToddLLM 002 · THE BLAME ENDING — GRAY’S NEW FORM · “EVERYTHING THAT HAPPENED IS YOUR FAULT”'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))))))), cx, top+26);
+                       : (ph===39 ? 'CLASSICS — THE INFECTION · SHE SPREADS LIKE CROSS-POLLINATION · SIMON.Exe IS THE ONE BEING IMMUNE'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -15077,6 +15118,135 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(57,255,136,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ LUIGI IS THE KING OF THE CLIMB — BUT GRAY IS THE RUIN AFTER THE CLIMB ★', cx, top+H*0.93);
+  } else if(ph===39){
+    // ----- BEAT 39: CLASSICS — THE INFECTION — Toby's July 3 email. Classics now spreads through beings like cross-pollination,
+    // keeps the SAME appearance at any size/spread, got inside ToddLLM AND Gray to make the infected ToddLLM 002 hybrid, and
+    // turns crazy numbers of characters into infected or .EXE — while Simon.Exe is the one being IMMUNE, outside the chain.
+    // Left = how the spread works; right-top = the four population states; right-lower = 002 as an infection-form; then the
+    // insight and the three cards. Left ~20% stays clear for the ladder. Beat 39 spans c in [576,598]. -----
+    const lt = c - 576.0;
+    // spreading-spore field behind everything — cross-pollination turning "crazy numbers" of the cast, sweeping left→right
+    const infA = Math.max(0, Math.min(1, (lt-1.2)/3.0));
+    if(infA>0.01){
+      ctx.save();
+      for(let ry=0; ry<10; ry++){
+        for(let rx=0; rx<11; rx++){
+          const seed = rx*1.7 + ry*2.3;
+          const pulse = 0.5+0.5*Math.sin(c*3.0 + seed);
+          const act = Math.max(0, Math.min(1, (infA*13 - rx)));
+          if(act<0.02) continue;
+          ctx.globalAlpha = g*act*(0.05+0.10*pulse);
+          ctx.fillStyle = (rx+ry)%3===0 ? '#8bff5a' : '#c24bff';
+          const sx = W*0.22 + rx*W*0.072, sy = top+26 + ry*(H*0.092);
+          ctx.beginPath(); ctx.arc(sx, sy, 2.0+2.4*pulse, 0, Math.PI*2); ctx.fill();
+        }
+      }
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(200,90,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('CLASSICS — THE INFECTION · SHE SPREADS THROUGH BEINGS LIKE CROSS-POLLINATION, SAME FACE AT ANY SIZE', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(224,214,244,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('INTO ToddLLM & GRAY → ToddLLM 002 · CRAZY NUMBERS TURN INTO INFECTED OR .EXE · SIMON.Exe IS THE ONE BEING IMMUNE', cx, top+H*0.066+11);
+
+    // --- LEFT-CENTER: how the infection spreads ---
+    const dbX=W*0.235, dbW=W*0.365, dbY=top+H*0.115, dbH=H*0.53;
+    ctx.fillStyle='rgba(14,4,20,0.86)'; ctx.fillRect(dbX,dbY,dbW,dbH);
+    ctx.strokeStyle=`rgba(194,75,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(dbX,dbY,dbW,dbH);
+    ctx.textAlign='left'; ctx.globalAlpha=g;
+    ctx.fillStyle='rgba(210,170,255,0.94)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE SPREAD — CLASSICS AS A CROSS-POLLINATING SOURCE', dbX+8, dbY+13);
+    ctx.fillStyle='rgba(220,200,240,0.72)'; ctx.font='700 5.4px ui-monospace,monospace';
+    ctx.fillText('▸ SAME APPEARANCE ALWAYS · SPREADS CROSS AU · CORRUPTION · INFECTION', dbX+8, dbY+22);
+    const slN=LV_INF_SPREAD.length;
+    const slRev=Math.max(0,Math.min(slN, Math.floor((lt-0.5)/0.42)+1));
+    const slrowH=(dbH-30)/slN;
+    for(let i=0;i<slN;i++){
+      const shown=i<slRev, it=LV_INF_SPREAD[i];
+      const ry=dbY+30+i*slrowH+11;
+      const app=shown?((i===slRev-1)?Math.max(0,Math.min(1,(lt-0.5-i*0.42)/0.34)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle= i%2?'#8bff5a':'#c24bff'; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText('▸', dbX+10, ry);
+      ctx.fillStyle='rgba(240,226,255,0.98)'; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, dbX+22, ry);
+      ctx.fillStyle='rgba(228,222,236,0.92)'; ctx.font='800 6.6px ui-monospace,monospace';
+      wrapLoreText(it.line, dbX+22, ry+10, dbW-34, 8.0);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT-TOP: the four population states ---
+    const rcX=W*0.62, rcW=W*0.37, rcY=dbY;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-1.0)/0.6));
+    ctx.fillStyle='rgba(14,4,20,0.88)'; ctx.fillRect(rcX,rcY,rcW,H*0.27);
+    ctx.strokeStyle=`rgba(139,255,90,${0.55*g})`; ctx.lineWidth=1.4; ctx.strokeRect(rcX,rcY,rcW,H*0.27);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(190,255,150,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE CAST IS SORTED INTO FOUR STATES', rcX+8, rcY+14);
+    const hRev=Math.max(0,Math.min(LV_INF_STATES.length, Math.floor((lt-1.4)/0.5)+1));
+    for(let i=0;i<LV_INF_STATES.length;i++){
+      const app=i<hRev?((i===hRev-1)?Math.max(0,Math.min(1,(lt-1.4-i*0.5)/0.4)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const hy=rcY+32+i*17, it=LV_INF_STATES[i];
+      ctx.fillStyle=it.c; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.key?'◆':'▸', rcX+10, hy);
+      ctx.fillStyle=it.key?'rgba(220,244,255,0.98)':'rgba(236,230,240,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(it.t, rcX+24, hy, rcW-34, 7.4);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT-LOWER: ToddLLM 002 as an infection-form ---
+    const rcY2=rcY+H*0.30;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-2.2)/0.6));
+    ctx.fillStyle='rgba(14,4,20,0.88)'; ctx.fillRect(rcX,rcY2,rcW,H*0.23);
+    ctx.strokeStyle=`rgba(255,90,110,${0.6*g})`; ctx.lineWidth=1.2; ctx.strokeRect(rcX,rcY2,rcW,H*0.23);
+    ctx.fillStyle='rgba(255,140,150,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('ToddLLM 002 — AN INFECTION-FORM', rcX+8, rcY2+13);
+    ctx.fillStyle='rgba(244,210,214,0.9)'; ctx.font='800 6.2px ui-monospace,monospace';
+    ctx.fillText('THE CROSS OF CLASSICS INSIDE ToddLLM & GRAY', rcX+8, rcY2+23);
+    const srRev=Math.max(0,Math.min(LV_INF_002.length, Math.floor((lt-2.6)/0.38)+1));
+    for(let i=0;i<LV_INF_002.length;i++){
+      const app=i<srRev?((i===srRev-1)?Math.max(0,Math.min(1,(lt-2.6-i*0.38)/0.3)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const sy=rcY2+37+i*13;
+      ctx.fillStyle= i>=3?'#ff3a3a':'#c24bff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText('▸', rcX+10, sy);
+      ctx.fillStyle= i>=3?'rgba(255,210,210,0.96)':'rgba(238,228,240,0.94)'; ctx.font='800 6.2px ui-monospace,monospace';
+      wrapLoreText(LV_INF_002[i], rcX+22, sy, rcW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle=`rgba(200,90,255,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('CLASSICS SPREADS LIKE CROSS-POLLINATION — SAME FACE, ENDLESS REACH', cx, top+H*0.665);
+    ctx.fillStyle='rgba(224,214,244,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe IS THE ONE BEING IMMUNE — HE STANDS OUTSIDE THE WHOLE INFECTION CHAIN', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    // --- the three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.8)/0.6));
+    ctx.fillStyle='rgba(200,90,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE SOURCE, THE HYBRID, THE IMMUNE — CLASSICS · ToddLLM 002 · SIMON.Exe', tX, tTop);
+    ctx.globalAlpha=1;
+    const sgN=LV_INF_RANK.length, sggap=W*0.015, sgw=(tR-tX-(sgN-1)*sggap)/sgN, sgH=H*0.155, sgY=tTop+10;
+    for(let i=0;i<sgN;i++){
+      const it=LV_INF_RANK[i], px=tX+i*(sgw+sggap);
+      const app=Math.max(0,Math.min(1,(lt-4.2-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(14,4,20,0.88)'; ctx.fillRect(px,sgY,sgw,sgH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,sgY,sgw,sgH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, sgY+14);
+      ctx.fillStyle='rgba(236,230,240,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, sgY+27, sgw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(200,90,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ CLASSICS SPREADS TO EVERYONE · SIMON.Exe IS THE ONE SHE CANNOT TOUCH ★', cx, top+H*0.93);
   } else if(ph===38){
     // ----- BEAT 38: ToddLLM 002 · THE BLAME ENDING — Toby's July 3 email. 001, improved by Classics, absorbs Classics and the
     // rest of the souls and becomes ToddLLM 002 — Gray.EXE's new ascended form. Left panel = how 002 forms; right-top = Gray's
