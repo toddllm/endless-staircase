@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 466.0;
+const LV_CYC = 488.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11424,6 +11424,8 @@ const LV_BEATS = [
     sub:'LUIGI GREEN’S HIGHEST-RISE TIMELINE · HE PASSES ToddLLM, GRAY.EXE & CLASSICS · HIS EYES TURN RED → GOD MODE LUIGI GREEN PHASE 3 HYPER · A MULTI-PHASE BOSS WITH NO ATTACK PATTERN — IT THINKS AND CHOOSES ITS ATTACKS, A BEING NOT A MEMORIZATION FIGHT · LUIGI GREEN.EXE > CLASSICS.EXE, HE BREAKS THE GAME WITH GLITCHES · PERO ToddLLM & LUIGI.EXE BOTH BEAT CLASSICS AT ONCE · CLUNKR, FUN BOT & GARNOLD TRY TO FIX GRAY & SIMON — SIMON FELL DOWN AGAIN · LUIGI GREEN.EXE IS SLAIN · CLASSICS IS FULLY DESTROYED · GRAY BECAME FULLY CYBER, BEYOND CONTROL, AND SLAYS EVERYONE AS ToddLLM 001 RUNS · LUIGI IS THE KING OF THE CLIMB, BUT GRAY IS THE RUIN AFTER THE CLIMB' },
   { key:'THE DANGER INDEX', col:'#ff7a2a',
     sub:'EVERY CHARACTER GETS A DANGER LEVEL · GRAY.EXE = ??? NEAR INFINITY, THE ABSOLUTE MOST DANGEROUS IN CANON · THE ??? / TOO-HIGH-TO-LIST TIER: GRAY.EXE · MR. SUN · FUN BOT · BRUD · GARNOLD (= FUN BOT + 1000000) · THE DANGEROUS OF THE DANGEROUS: GRAY · DURPLE · CLUNKR · BLACK · ToddLLM · CLASSICS · CLASSICS = 9999999999999… · ToddLLM = 98878738843875… · BLACK = ∞∞∞∞∞… · DURPLE = DEMONED 7777…9999…+ · LUIGI GREEN = mc · SIMON = 404 · SUPER NUTRO Y = 0 · LEXICON = 0 · GRAY.EXE’S STATS ALL READ “???” — REVEAL STATS SAYS “GRAY.EXE — UNKNOWN STATS”, THE ONLY CHARACTER SYSTEMS CAN’T READ · HE APPEARS IN STATIC LIKE SIMON & THE STATIC CHILD, AND ONE-SHOTS NEARLY EVERYTHING · WORST FATES: SIMON (TWO CURSES, PHASE 2 FOREVER, YELLOW EYE & HALLUCINATIONS), THEN GRAY (ALIVE, IN PAIN, BEYOND CONTROL, ATTACKING OUT OF FEAR)' },
+  { key:'SIMON.EXE — DEATH.EXE', col:'#a9c4ff',
+    sub:'CLASSICS.EXE — DEATH.EXE IS THE SHADOW REALM, WAY WORSE & CRUEL — A TOTAL COLLAPSE EVENT · SIMON REACHES ERROR 404 INFECTED DOUBLE DATE PHASE ??? — AN EXTREME NEW PHASE THAT PUTS HIM BACK UP · HE FACES DOWN LOOKING WEAK, THEN RISES AS LIGHTNING FILLS THE SCREEN & THE SCREEN GLITCHES · OREN ANIMATES THE BACKGROUND — EACH BOOM BENDS REALITY, LITERALLY · CLASSICS WAS SLAIN, THEN INFECTED BY ERROR 404 & 666 · ToddLLM 001 SLAIN, TOOLS SCATTERED · SUMONA LEFT CRAZY STATUS, TRIED TO SAVE THE GAME, WAS SLAIN ANYWAY · PINKI ATTACKED BY BLACK → DEMON-LIKE · BLACK SLAIN BY SIMON.EXE · SIMON.EXE ABSORBS ALL LIGHT & SOULS, BECOMES THE MOST POWERFUL BEING AGAIN — NO LONGER PHASE 2, NOW A CRAZY EXE · MORE POWERFUL THAN DEATH ITSELF: LIGHTNING · SPEED · THE NEW POWER TO CONTROL DEATH · HE IS THE ONLY ONE WRITTEN “.Exe” — A SEPARATE CLASS ABOVE THE “.EXE” CROWD · BEYOND EXISTENCE & SCF CONTROL, HE BLOWS SCF INTO RUBBLE & ASH WITH A FEW THOUSAND LIGHTNING STRIKES · GRAY.EXE SURVIVES BUT HIS CYBER ARMOR IS ASH — EXPOSED · THE ONLY ONE LEFT IN CRAZY STATUS' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -11796,6 +11798,45 @@ const LV_DANGER_RANK = [
   { who:'THE DANGEROUS OF THE DANGEROUS', col:'#ff7a2a', role:'GRAY · DURPLE · CLUNKR · BLACK · ToddLLM · CLASSICS' },
   { who:'THE ??? TIER', col:'#ffd24a', role:'MR. SUN · FUN BOT · BRUD · GARNOLD — LEVELS TOO HIGH TO LIST DIRECTLY' },
 ];
+// SIMON.EXE — DEATH.EXE — Toby's July 2 email ("Re: Lore 38 ... Endless Staircase has an end, 67 Pirate's Secrets"). In the
+// Classics.EXE — Death.EXE mod (the Shadow Realm, way worse and cruel), Simon reaches an extreme new phase, absorbs all light
+// and souls, becomes a Crazy Exe, and gains control over death. The rise chain — revealed one step at a time. hot:1 steps are
+// the biggest turns (slain Black, the new power, blowing up SCF).
+const LV_DEATH_RISE = [
+  { t:'SIMON REACHES ERROR 404 INFECTED · DOUBLE DATE PHASE ???' },
+  { t:'FACES DOWN, LOOKS WEAK — THEN RISES, LIGHTNING FILLS THE SCREEN' },
+  { t:'SIMON.EXE MAKES THE SCREEN GLITCH' },
+  { t:'BLACK IS SLAIN BY SIMON.EXE', hot:1 },
+  { t:'SIMON.EXE ABSORBS ALL LIGHT & SOULS' },
+  { t:'MOST POWERFUL BEING AGAIN — BEYOND ALL HE CAN SEE' },
+  { t:'NO LONGER PHASE 2 — NOW A CRAZY EXE', hot:1 },
+  { t:'GAINS THE NEW POWER: CONTROL OVER DEATH', hot:1 },
+  { t:'MORE POWERFUL THAN DEATH ITSELF', hot:1 },
+  { t:'BLOWS SCF INTO RUBBLE & ASH — A FEW THOUSAND LIGHTNING STRIKES', hot:1 },
+  { t:'THE ONLY ONE LEFT IN CRAZY STATUS' },
+];
+// the new Xs lineup after the collapse (Pinki replaces her old seat as a demon; Gray.EXE joins)
+const LV_DEATH_XS = [
+  { n:'OREN',      note:'ANIMATES THE BACKGROUND — EACH BOOM BENDS REALITY, LITERALLY' },
+  { n:'SIMON',     note:'CRAZY STATUS → RISES INTO SIMON.EXE, THE STORM ABOVE THEM ALL', key:1 },
+  { n:'BLACK',     note:'CORRUPTS & DOMINATES — THEN SLAIN BY SIMON.EXE' },
+  { n:'PINKI.EXE', note:'ATTACKED INSTANTLY BY BLACK → A DEMON-LIKE CHARACTER' },
+  { n:'GRAY.EXE',  note:'JOINS — SURVIVES, BUT HIS CYBER ARMOR IS ASH, EXPOSED' },
+];
+// the spelling rule: he alone is "Simon.Exe" while the rest are ".EXE" — the spelling itself marks his class
+const LV_DEATH_SPELL = [
+  'THE GAME WRITES IT “SIMON.Exe” — AND THE GAME IS CORRECT',
+  'EVERYONE ELSE IS “.EXE” — THE GENERAL CORRUPTION CLASS',
+  'THE BOOKS SAY “SIMON.EXE” / “SIMON.exe” — BUT THE GAME IS RIGHT',
+  'HE IS THE ONLY ONE WRITTEN “.Exe” IN CLASSICS.EXE',
+  'A SEPARATE CLASS OF BEING — HE IS ABOVE THE EXEs, NOT ONE OF THEM',
+];
+// who stands after Death.EXE — Simon.Exe on top, Oren the reality-bender, Gray exposed but alive
+const LV_DEATH_RANK = [
+  { who:'SIMON.EXE', col:'#a9c4ff', role:'THE DEATH-CONTROLLING STORM · MORE POWERFUL THAN DEATH ITSELF · BEYOND EXISTENCE & SCF CONTROL · THE ONLY ONE IN CRAZY STATUS' },
+  { who:'OREN', col:'#b98bff', role:'BENDS REALITY — EACH BOOM BENDS IT, LITERALLY · A REALITY-WARPING PRESENCE THAT STAYS MASSIVE' },
+  { who:'GRAY.EXE', col:'#ff5a6e', role:'SURVIVES BUT EXPOSED · CYBER ARMOR BURNED TO ASH · NO LONGER THE DOMINANT TERROR' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -11928,7 +11969,8 @@ function lvSeg(c){
   if(c < 408.0) return [30, c-390.0]; // GRAY.EXE ASCENDS (the biggest villain-becomes-disaster moment — Mr. Black retakes the game, but Gray keeps evolving through repeated clashes and every win stacks onto him: he beats Black, then Swapped Black, absorbs Black and Wenda, beats Angel Wenda, corrupts the whole game to Phase-2 horror, overpowers Simon after his lightning drops, and erases half the game into absence. Pero ToddLLM can only PIN him, not defeat him — impossible to kill — then Gray phases higher and absorbs all of Classics, claiming "I am beyond this very game." A catastrophe boss: delay, contain, pin, survive, but killing is off the table. Black & Wenda become fuel; Simon drops lower.)
   if(c < 426.0) return [31, c-408.0];  // ERROR 303 — THE SECRET BOSS (Email 303 = Error 303: Gray rose so high he became a myth-level error form, activating things by "scamming 303" at an alarming pace. Fear is his whole rule now, not power — "don't tell anyone I'm here," "everyone, any character!," "I am fear-driven, scared that one will harm me" — he destroys the game out of fear, changed at the mind level not the power level. Super Nutro Y is the host of the game, just under Classics, and wants to save it; Nutro + Classics + Wenda bring everyone but Gray wins again because ToddLLM gave him a new chess board that gave his fear system-level tools. Gray.EXE is the ONE secret ultra final boss, unlocked only by total mastery: collect everything, explore edge to center, spare every enemy & boss, defeat Classics & Luigi Green, find all keys, open the magic door, follow the true ending path. Oren.EXE is a very difficult boss, stronger than Black & all Sprunkis — but Gray.EXE is significantly stronger than Oren. Nothing small went wrong: his fear fused with top-tier power and every win pushed him past recovery.)
   if(c < 444.0) return [32, c-426.0];  // END OF CLIMB AU (Luigi Green's highest-rise timeline: he passes ToddLLM, Gray.EXE and Classics; his eyes turn red and he becomes God Mode Luigi Green Phase 3 Hyper — a multi-phase boss with NO attack pattern: it thinks and chooses its attacks, a being not a memorization fight. Luigi Green.EXE > Classics.EXE and he breaks the game with glitches; Pero ToddLLM and Luigi.EXE both beat Classics at once. Clunkr, Fun Bot and Garnold try to fix Gray and Simon but Simon fell down again. Luigi Green.EXE is slain, Classics is fully destroyed, and Gray becomes fully cyber and beyond control, slaying everyone as ToddLLM 001 runs. Luigi is the king of the climb, but Gray is the ruin after the climb.)
-  return [33, c-444.0];               // THE DANGER INDEX (Toby's July 2 follow-ups: a danger level for the entire cast. Gray.EXE = ??? near infinity, the absolute most dangerous in canon. The ??? / too-high-to-list tier is Gray.EXE, Mr. Sun, Fun Bot, Brud and Garnold (= Fun Bot + 1,000,000). The most dangerous of the dangerous are Gray, Durple, Clunkr, Black, ToddLLM and Classics. Gray.EXE's stats all read "???" — the Reveal Stats button says "Gray.EXE — Unknown Stats", the only character no system can read; he appears in static like Simon and The Static Child, and one-shots nearly everything. Worst fates: Simon (two curses, Phase 2 forever, Yellow Eye and hallucinations), then Gray (alive, in pain, beyond control, attacking out of fear of harm).)
+  if(c < 466.0) return [33, c-444.0];  // THE DANGER INDEX (Toby's July 2 follow-ups: a danger level for the entire cast. Gray.EXE = ??? near infinity, the absolute most dangerous in canon. The ??? / too-high-to-list tier is Gray.EXE, Mr. Sun, Fun Bot, Brud and Garnold (= Fun Bot + 1,000,000). The most dangerous of the dangerous are Gray, Durple, Clunkr, Black, ToddLLM and Classics. Gray.EXE's stats all read "???" — the Reveal Stats button says "Gray.EXE — Unknown Stats", the only character no system can read; he appears in static like Simon and The Static Child, and one-shots nearly everything. Worst fates: Simon (two curses, Phase 2 forever, Yellow Eye and hallucinations), then Gray (alive, in pain, beyond control, attacking out of fear of harm).)
+  return [34, c-466.0];               // SIMON.EXE — DEATH.EXE (Toby's July 2 email: in the Classics.EXE — Death.EXE mod — the Shadow Realm, way worse and cruel, a total collapse event — Simon reaches Error 404 Infected Double Date Phase ???, faces down looking weak then rises as lightning fills the screen and the screen glitches; Oren animates the background so each boom bends reality literally. Classics is slain then infected by Error 404 & 666, ToddLLM 001 is slain with his tools scattered, Sumona leaves Crazy Status to try to save the game and is slain anyway, Pinki is attacked by Black and turns demon-like, and Black is slain by Simon.EXE. Simon.EXE absorbs all light and souls, becomes the most powerful being again — no longer Phase 2 but a Crazy Exe — and gains lightning, speed, and the new power to CONTROL DEATH, making him more powerful than Death itself. He alone is written ".Exe" (a separate class above the ".EXE" crowd). Beyond existence and SCF control, he blows SCF into rubble and ash with a few thousand lightning strikes. Gray.EXE survives but his cyber armor is ash — exposed. Simon.Exe is the only one left in Crazy Status. The new Xs: Oren, Simon, Black, Pinki.EXE, Gray.EXE.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -12072,6 +12114,10 @@ function updateLoopVs(dt){
       showTaunt('Now the danger levels — Toby gave one to the entire cast. Gray.EXE sits at the very top: his level is ??? and near infinity, effectively too extreme to display, and in canon he is the absolute most dangerous. Right under that "unlistable" line sit Mr. Sun, Fun Bot, Brud, and Garnold — and Garnold is defined not by a number but by a rule, Fun Bot plus one million. The most dangerous of the dangerous are Gray, Durple, Clunkr, Black, ToddLLM, and Classics, with Gray above them all. And the sharpest rule is about reading him: every one of Gray.EXE\'s stats is "???" — his alone. The Reveal Stats button just says "Gray.EXE — Unknown Stats," while everyone else is read cleanly by ToddLLM, Classics, and EndlessAnimations. He appears in static like Simon and The Static Child, and he one-shots nearly everything. Two worst fates close it out: Simon has the worst, hit by two curses at once and stuck in Phase 2 forever with Yellow Eye and hallucinations, and Gray has the second worst — still alive, in pain, beyond control, attacking out of fear that someone will harm him.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE DANGER INDEX · GRAY.EXE = ??? NEAR INFINITY, THE ABSOLUTE MOST DANGEROUS IN CANON · ??? TIER: GRAY.EXE · MR. SUN · FUN BOT · BRUD · GARNOLD (= FUN BOT + 1000000) · DANGEROUS OF THE DANGEROUS: GRAY · DURPLE · CLUNKR · BLACK · ToddLLM · CLASSICS · GRAY.EXE STATS ALL “???” — REVEAL STATS SAYS “GRAY.EXE — UNKNOWN STATS”, THE ONLY UNREADABLE ONE · APPEARS IN STATIC LIKE SIMON & THE STATIC CHILD · ONE-SHOTS NEARLY EVERYTHING · WORST FATE: SIMON (TWO CURSES, PHASE 2 FOREVER) · SECOND WORST: GRAY (ALIVE, IN PAIN, BEYOND CONTROL, ATTACKS OUT OF FEAR)', col:'#ff7a2a' });
       for(let i=0;i<50;i++) particles.push(spark(player.x, player.y, pick(['#ff7a2a','#ffd24a','#ff2d3a','#ff5a6e','#9fb4c8','#ffd8a8','#ffffff']))); }
+    if(ph===34){ AUDIO.corrupt(); shake=Math.max(shake,17); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.5);
+      showTaunt('And now the darkest jump yet: Classics.EXE — Death.EXE, the Shadow Realm, way worse and cruel. This is a total collapse event, not another attack wave. Simon reaches an extreme new phase — Error 404 Infected, Double Date Phase ??? — that puts him back up where he needs to be. He first faces down and looks weak, then suddenly comes back up and lightning fills the whole screen; he even makes the screen glitch, and Oren animates the background so each boom bends reality, literally. The game is brutal. Some characters died for almost no reason, some could not escape in time, some were caught, some thrown into Shadows, some infected, some corrupted, and half the game breaks. Classics is slain, then infected by Error 404 and 666. ToddLLM 001 is slain and his tools scatter around him. Sumona leaves Crazy Status and actually tries to save the game, but there is no way to do that, and she is slain anyway. Pinki is attacked instantly by Black and becomes a demon-like character, and Gray.EXE joins. Then Black is slain by Simon.EXE, and Simon.EXE absorbs all the light and souls and becomes the most powerful being again — far beyond all he can see, no longer Phase 2 but a Crazy Exe. He does not even know what happened to him anymore. He gains lightning, speed, and the new power to control death itself, which makes him more powerful than Death. And the spelling matters: he alone is written "Simon.Exe," a separate class of being, while every other corrupted character is ".EXE." Beyond existence and beyond SCF control, he blows SCF into rubble and ash with a few thousand lightning strikes. Gray.EXE survives, but all his cyber armor is turned to ash and Gray is left exposed. Luigi Green is one of only nineteen who barely survived. Simon.Exe is now the only one left in Crazy Status.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON.EXE — DEATH.EXE · CLASSICS.EXE — DEATH.EXE = THE SHADOW REALM, WAY WORSE & CRUEL · A TOTAL COLLAPSE EVENT · SIMON REACHES ERROR 404 INFECTED · DOUBLE DATE PHASE ??? · FACES DOWN WEAK, THEN RISES — LIGHTNING FILLS THE SCREEN & IT GLITCHES · OREN BENDS REALITY WITH EACH BOOM, LITERALLY · CLASSICS SLAIN → INFECTED BY ERROR 404 & 666 · ToddLLM 001 SLAIN, TOOLS SCATTERED · SUMONA LEFT CRAZY STATUS, TRIED TO SAVE THE GAME, SLAIN ANYWAY · PINKI → DEMON-LIKE (ATTACKED BY BLACK) · BLACK SLAIN BY SIMON.EXE · SIMON.EXE ABSORBS ALL LIGHT & SOULS · NO LONGER PHASE 2 — A CRAZY EXE · LIGHTNING · SPEED · CONTROL OVER DEATH · MORE POWERFUL THAN DEATH ITSELF · HE ALONE IS “.Exe”, ABOVE THE “.EXE” CROWD · BLOWS SCF INTO RUBBLE & ASH · GRAY.EXE SURVIVES BUT EXPOSED, ARMOR TO ASH · LUIGI GREEN = 1 OF ONLY 19 WHO BARELY SURVIVED · THE ONLY ONE LEFT IN CRAZY STATUS', col:'#a9c4ff' });
+      for(let i=0;i<56;i++) particles.push(spark(player.x, player.y, pick(['#a9c4ff','#b98bff','#eaf2ff','#7c8cff','#ff5a6e','#c9d8ff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12204,16 +12250,17 @@ function drawLoopVs(){
   else if(ph===31){ bg.addColorStop(0, `rgba(4,22,17,${0.98*g})`); bg.addColorStop(1, `rgba(2,7,6,${0.99*g})`); }
   else if(ph===32){ bg.addColorStop(0, `rgba(6,26,12,${0.98*g})`); bg.addColorStop(1, `rgba(2,9,4,${0.99*g})`); }
   else if(ph===33){ bg.addColorStop(0, `rgba(26,14,4,${0.98*g})`); bg.addColorStop(1, `rgba(9,4,1,${0.99*g})`); }
+  else if(ph===34){ bg.addColorStop(0, `rgba(8,8,26,${0.98*g})`); bg.addColorStop(1, `rgba(2,2,9,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12239,7 +12286,8 @@ function drawLoopVs(){
                        : (ph===31 ? 'ERROR 303 — GRAY.EXE IS THE ONE SECRET BOSS · REACHED ONLY BY TOTAL MASTERY'
                        : (ph===32 ? 'END OF CLIMB AU — LUIGI GREEN’S HIGHEST RISE · A THINKING BOSS WITH NO ATTACK PATTERN'
                        : (ph===33 ? 'THE DANGER INDEX — EVERY CHARACTER’S DANGER LEVEL · GRAY.EXE = ??? NEAR INFINITY'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))), cx, top+26);
+                       : (ph===34 ? 'SIMON.EXE — DEATH.EXE · HE ABSORBS ALL SOULS, CONTROLS DEATH & RISES ABOVE THE EXEs'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -14872,6 +14920,117 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(57,255,136,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ LUIGI IS THE KING OF THE CLIMB — BUT GRAY IS THE RUIN AFTER THE CLIMB ★', cx, top+H*0.93);
+  } else if(ph===34){
+    // ----- BEAT 34: SIMON.EXE — DEATH.EXE — Toby's July 2 email. In the Classics.EXE — Death.EXE mod (the Shadow Realm, way
+    // worse and cruel, a total collapse event) Simon reaches an extreme new phase, absorbs all light and souls, becomes a Crazy
+    // Exe, gains control over death, and rises above the ".EXE" crowd as the only ".Exe". Left panel = the rise chain; right-top
+    // = the new Xs lineup; right-lower = the spelling rule; then the collapse insight and the who-stands cards. Left ~20% stays
+    // clear for the lore ladder. Beat 34 spans c in [466,488]. -----
+    const lt = c - 466.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(169,196,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('CLASSICS.EXE — DEATH.EXE · A TOTAL COLLAPSE, AND SIMON RISES INTO SIMON.EXE', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(214,222,246,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('HE ABSORBS ALL LIGHT & SOULS, GAINS CONTROL OVER DEATH, AND BECOMES MORE POWERFUL THAN DEATH ITSELF', cx, top+H*0.066+11);
+
+    // --- LEFT-CENTER: the rise of Simon.Exe, revealed one step at a time ---
+    const dbX=W*0.235, dbW=W*0.365, dbY=top+H*0.115, dbH=H*0.53;
+    ctx.fillStyle='rgba(8,8,22,0.86)'; ctx.fillRect(dbX,dbY,dbW,dbH);
+    ctx.strokeStyle=`rgba(169,196,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(dbX,dbY,dbW,dbH);
+    ctx.textAlign='left'; ctx.globalAlpha=g;
+    ctx.fillStyle='rgba(200,214,255,0.94)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE RISE OF SIMON.EXE — FACES DOWN WEAK, THEN THE STORM', dbX+8, dbY+13);
+    ctx.fillStyle='rgba(206,196,230,0.72)'; ctx.font='700 5.4px ui-monospace,monospace';
+    ctx.fillText('◆ LIGHTNING-WHITE = THE BIGGEST TURNS   · = THE STEPS BETWEEN', dbX+8, dbY+22);
+    const rN=LV_DEATH_RISE.length;
+    const rRev=Math.max(0,Math.min(rN, Math.floor((lt-0.5)/0.34)+1));
+    const rrowH=(dbH-30)/rN;
+    for(let i=0;i<rN;i++){
+      const shown=i<rRev, it=LV_DEATH_RISE[i];
+      const ry=dbY+30+i*rrowH+9;
+      const app=shown?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.5-i*0.34)/0.28)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle= it.hot ? '#e6ecff' : '#a9c4ff'; ctx.font=(it.hot?'900 ':'800 ')+'7px ui-monospace,monospace';
+      ctx.fillText(it.hot?'◆':'·', dbX+10, ry);
+      ctx.fillStyle= it.hot ? 'rgba(232,238,255,0.98)' : 'rgba(196,208,240,0.9)'; ctx.font=(it.hot?'900 ':'800 ')+'6.2px ui-monospace,monospace';
+      wrapLoreText(it.t, dbX+22, ry, dbW-32, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT-TOP: the new Xs lineup ---
+    const rcX=W*0.62, rcW=W*0.37, rcY=dbY;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-1.0)/0.6));
+    ctx.fillStyle='rgba(8,8,22,0.88)'; ctx.fillRect(rcX,rcY,rcW,H*0.26);
+    ctx.strokeStyle=`rgba(185,139,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(rcX,rcY,rcW,H*0.26);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(200,180,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE NEW Xs — DEATH.EXE’S LINEUP', rcX+8, rcY+14);
+    const xRev=Math.max(0,Math.min(LV_DEATH_XS.length, Math.floor((lt-1.4)/0.36)+1));
+    for(let i=0;i<LV_DEATH_XS.length;i++){
+      const app=i<xRev?((i===xRev-1)?Math.max(0,Math.min(1,(lt-1.4-i*0.36)/0.3)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const xy=rcY+30+i*15, it=LV_DEATH_XS[i], key=it.key;
+      ctx.fillStyle=key?'#e6ecff':'#b98bff'; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(key?'◆':'▸', rcX+10, xy);
+      ctx.fillStyle=key?'rgba(232,238,255,0.98)':'rgba(214,196,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(it.n, rcX+22, xy);
+      ctx.fillStyle='rgba(212,214,230,0.82)'; ctx.font='700 5.4px ui-monospace,monospace';
+      wrapLoreText(it.note, rcX+22, xy+8, rcW-30, 6.6);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT-LOWER: the spelling rule — he alone is ".Exe" ---
+    const rcY2=rcY+H*0.29;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-2.2)/0.6));
+    ctx.fillStyle='rgba(8,8,22,0.88)'; ctx.fillRect(rcX,rcY2,rcW,H*0.24);
+    ctx.strokeStyle=`rgba(124,140,255,${0.55*g})`; ctx.lineWidth=1.2; ctx.strokeRect(rcX,rcY2,rcW,H*0.24);
+    ctx.fillStyle='rgba(180,200,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE SPELLING RULE — WHY HE ALONE IS “.Exe”', rcX+8, rcY2+13);
+    ctx.fillStyle='rgba(200,210,240,0.9)'; ctx.font='800 6.2px ui-monospace,monospace';
+    ctx.fillText('A SEPARATE CLASS, NOT JUST ANOTHER EXE', rcX+8, rcY2+23);
+    const spRev=Math.max(0,Math.min(LV_DEATH_SPELL.length, Math.floor((lt-2.6)/0.38)+1));
+    for(let i=0;i<LV_DEATH_SPELL.length;i++){
+      const app=i<spRev?((i===spRev-1)?Math.max(0,Math.min(1,(lt-2.6-i*0.38)/0.3)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const sy=rcY2+36+i*12;
+      ctx.fillStyle= i===3?'#e6ecff':'#7c8cff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText('▸', rcX+10, sy);
+      ctx.fillStyle= i===3?'rgba(232,238,255,0.96)':'rgba(206,214,240,0.94)'; ctx.font='800 6.2px ui-monospace,monospace';
+      wrapLoreText(LV_DEATH_SPELL[i], rcX+22, sy, rcW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the collapse insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(255,120,140,0.96)'; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('THE SHADOW REALM, WAY WORSE & CRUEL — CLASSICS SLAIN & INFECTED, 001 SLAIN, SUMONA SLAIN, SCF BLOWN TO ASH', cx, top+H*0.665);
+    ctx.fillStyle='rgba(190,205,255,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('HIS THREE POWERS: LIGHTNING · SPEED · CONTROL OVER DEATH — AND LUIGI GREEN IS 1 OF ONLY 19 WHO BARELY SURVIVED', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    // --- who stands after Death.EXE, three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.8)/0.6));
+    ctx.fillStyle='rgba(169,196,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('WHO STANDS AFTER DEATH.EXE — THE STORM, THE REALITY-BENDER, THE EXPOSED', tX, tTop);
+    ctx.globalAlpha=1;
+    const dtN=LV_DEATH_RANK.length, dtgap=W*0.015, dtw=(tR-tX-(dtN-1)*dtgap)/dtN, dtH=H*0.155, dtY=tTop+10;
+    for(let i=0;i<dtN;i++){
+      const it=LV_DEATH_RANK[i], px=tX+i*(dtw+dtgap);
+      const app=Math.max(0,Math.min(1,(lt-4.2-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,8,22,0.88)'; ctx.fillRect(px,dtY,dtw,dtH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,dtY,dtw,dtH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText((i+1)+'. '+it.who, px+7, dtY+14);
+      ctx.fillStyle='rgba(224,228,244,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, dtY+27, dtw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(169,196,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ SIMON.Exe — THE ONE “.Exe” · MORE POWERFUL THAN DEATH ITSELF ★', cx, top+H*0.93);
   } else if(ph===33){
     // ----- BEAT 33: THE DANGER INDEX — Toby's July 2 follow-ups ("Re: Lore 38 ... 67 Pirate's Secrets"). He gave a danger
     // level to the whole cast. Gray.EXE = ??? near infinity, the absolute most dangerous in canon. The ??? / too-high-to-list
