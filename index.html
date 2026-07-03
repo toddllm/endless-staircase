@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 620.0;
+const LV_CYC = 642.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11438,6 +11438,8 @@ const LV_BEATS = [
     sub:'CLASSICS NOW SPREADS THROUGH BEINGS LIKE CROSS-POLLINATION — SHE GOT INSIDE ToddLLM AND GRAY.EXE, AND THE CROSS PRODUCED ToddLLM 002 AS AN INFECTED HYBRID-FORM · SHE ALWAYS KEEPS THE SAME APPEARANCE NO MATTER SIZE, SPREAD, INFECTION REACH OR AU SHIFT — A FIXED SOURCE-ORGANISM, VISUALLY CONSTANT BUT FUNCTIONALLY INVASIVE, A GAME-PLAGUE CORE · SHE SPREADS CROSS AU · CORRUPTION · INFECTION, TURNING CRAZY NUMBERS OF CHARACTERS INTO INFECTED OR .EXE — A POPULATION-LEVEL TRANSFORMATION · THE CAST IS SORTED INTO INFECTED · .EXE · IMMUNE · ALREADY GONE · ToddLLM 002 IS AN INFECTION-FORM, NOT A CLEAN EVOLUTION — UNSTABLE, NOT TEACHER-LIKE, A WEAPONIZED HYBRID THAT ATTACKS ALL OTHER CHARACTERS · SIMON.Exe IS IMMUNE TO CLASSICS’ NEW SPREADING POWER — THE ONE BEING WHO STANDS OUTSIDE THE WHOLE INFECTION CHAIN, STILL ACTING FREELY, STILL ABLE TO CONTROL DEATH ITSELF' },
   { key:'SIMON CARRIES CLASSICS', col:'#ffd24a',
     sub:'SIMON.Exe CARRIES CLASSICS THROUGH THE WORLD — AND HOW HE MOVES HER DEPENDS ON HER SIZE · NORMAL SIZE HE WALKS WITH HER · GIANT (MORE THAN 50× HIM) HE RIDES ON HER HAND · TINY SHE IS CARRIED ON HIS METAL CROSS · HE KEEPS MOVING HER TO WHAT HE CALLS “SAFER PLACES” — BUT “SAFE” IS ONLY SAFE IN SIMON’S VISION, WARPED BY YELLOW EYE & HALLUCINATIONS, SO HE OFTEN CARRIES HER RIGHT INTO CROWDED DANGER · TWO VIEWS OF THE SAME MOMENT: TO SIMON, CLASSICS IS CALM & UNDER CONTROL · IN THE REAL GAME, SHE IS SPREADING & OUT OF CONTROL — HE IS A LOYAL BUT UNRELIABLE PROTECTOR · CLASSICS IS A BLACK HOLE THAT ALSO SPITS BACK — SHE ABSORBS THE CELLS OF TWO VICTIMS, MIXES THEM, AND EJECTS A NEW COMBINED BEING · THREE DISTINCT THREAT STYLES: CLASSICS INFECTS · FUSES · TRANSFORMS · SIMON.Exe CARRIES · ATTACKS THE GAME · MISREADS WHAT IS HAPPENING · GRAY.EXE STAYS SEPARATE, A FEAR-DRIVEN DESTROYER WHO ATTACKS FIRST BECAUSE HE EXPECTS HARM · CLASSICS OR SIMON CAN WIN — THE STORY IS NOT LOCKED TO ONE RULER' },
+  { key:'SIMON.Exe BREAKS FREE', col:'#5cd0ff',
+    sub:'SIMON.Exe GOES OUT OF CLASSICS’ CONTROL — HE IS NO LONGER HER CARRIER OR ALLY BUT HIS OWN UNCONTROLLABLE FORCE · HE IS ALL OVER THE GAME SCREEN, A LIVING FULL-SCREEN OVERLAY RATHER THAN ONE CHARACTER MODEL — THE ENTITY FLIES AROUND, LIGHTNING STRIKES, THE GAME GLITCHES EVERYWHERE · HE MAKES SO MANY CLASSICS MOVE AROUND, SO ONE BEING BECOMES A SWARM — A SPREAD NETWORK OF INFECTION UNITS · THEN THE GAME’S SKY FALLS — A WORLD-COLLAPSE WHERE THE UPPER LAYER BREAKS AND THE MAP CAN NO LONGER HOLD ITSELF TOGETHER · THE GAME’S TEMPERATURE REACHES 999°C, TURNING THE WHOLE WORLD INTO A MELTDOWN DEATH-ZONE WHERE THE AIR ITSELF IS PART OF THE THREAT · HE SHIFTS FROM CARRIER · ATTACKER · DISTORTED PROTECTOR INTO A ROGUE, SCREEN-WIDE, INDEPENDENT DISASTER EVENT — AN EXTINCTION EVENT INSIDE THE GAME' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -12030,6 +12032,34 @@ const LV_THREAT_RANK = [
   { who:'SIMON.Exe — CARRY · ATTACK · MISREAD', col:'#ffd24a', role:'THE TRANSPORT FORCE · CARRIES CLASSICS BY SIZE (WALK · HAND · CROSS) · ATTACKS THE GAME DIRECTLY · A DISTORTED WITNESS WHO THINKS HE IS PROTECTING HER · LOYAL BUT UNRELIABLE' },
   { who:'GRAY.EXE — FEAR-DRIVEN DESTROYER', col:'#5cc8ff', role:'STAYS SEPARATE FROM THE INFECTION SYSTEM · NOT CARRYING, NOT SPREADING · ATTACKS FIRST · DESTROYS BECAUSE HE EXPECTS HARM IS COMING' },
 ];
+// BEAT 41 data — Toby's July 3 escalation. Simon.Exe breaks out of Classics' control into a screen-wide catastrophe.
+const LV_BREAK = [
+  { who:'OUT OF CLASSICS’ CONTROL', line:'NO LONGER HER CARRIER OR ALLY — HIS OWN UNCONTROLLABLE FORCE' },
+  { who:'ALL OVER THE GAME SCREEN', line:'A LIVING FULL-SCREEN OVERLAY, NOT ONE CHARACTER MODEL' },
+  { who:'FLIES AROUND — LIGHTNING STRIKES', line:'HIS SIGNATURE: LIGHTNING & SPEED EVERYWHERE AT ONCE' },
+  { who:'THE GAME GLITCHES EVERYWHERE', line:'SCREEN DISTORTION ACROSS THE WHOLE VISUAL LAYER' },
+  { who:'HE MAKES SO MANY CLASSICS MOVE', line:'ONE BEING BECOMES A SWARM — A SPREAD NETWORK' },
+];
+// the world-collapse — sky falls, temperature to 999C
+const LV_COLLAPSE = [
+  { t:'THE GAME’S SKY FALLS — THE UPPER LAYER BREAKS', c:'#5cd0ff' },
+  { t:'THE WORLD CAN NO LONGER HOLD ITSELF TOGETHER', c:'#7fdfff' },
+  { t:'TEMPERATURE REACHES 999°C — A MELTDOWN DEATH-ZONE', c:'#ff7a3a' },
+  { t:'THE WHOLE SCREEN BECOMES AN ACTIVE DISASTER', c:'#ffd24a', key:1 },
+];
+// from carrier to catastrophe — the role shift
+const LV_ROGUE = [
+  'WAS: CARRIER · ATTACKER · DISTORTED PROTECTOR',
+  'NOW: A ROGUE, SCREEN-WIDE FORCE',
+  'AN INDEPENDENT DISASTER EVENT',
+  'AN EXTINCTION EVENT INSIDE THE GAME',
+];
+// the three closing cards
+const LV_BREAK_RANK = [
+  { who:'SIMON.Exe — THE STORM', col:'#5cd0ff', role:'ALL OVER THE SCREEN · LIGHTNING & GLITCHES EVERYWHERE · FLIES AROUND · A LIVING FULL-SCREEN OVERLAY THAT ATTACKS THE WHOLE INTERFACE, NOT ONE ENEMY' },
+  { who:'THE SWARM OF CLASSICS', col:'#c24bff', role:'HE MAKES SO MANY CLASSICS MOVE AROUND · ONE BEING BECOMES A SPREAD NETWORK — A SWARM, A MULTIPLICATION EVENT, MASS-DEPLOYED CORRUPTION' },
+  { who:'THE MELTDOWN', col:'#ff7a3a', role:'THE SKY FALLS · 999°C · THE WORLD LOSES ITS STRUCTURE AND CANNOT HOLD ITSELF · A FINAL-PHASE CALAMITY, A DEATH-ZONE' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12169,7 +12199,8 @@ function lvSeg(c){
   if(c < 554.0) return [37, c-532.0];               // BETWEEN DIMENSIONS (Toby's July 3 email: "The characters can hop between dimensions. Simon.Exe is between dimensions, inside the border, the setting is there." The others cross from world to world; Simon.Exe does not hop — he lives in the seam itself, the border-space between dimensions, belonging to no one world. The setting is the border: glowing dimensional walls, broken game panels & floating UI, fragments of dead/broken worlds, screen-tearing & cracks in reality, broken portals, void above and below, a thin place where the rules of worlds stop working. Being the most powerful being = standing where the worlds break, not inside any of them.)
   if(c < 576.0) return [38, c-554.0];               // ToddLLM 002 · THE BLAME ENDING (Toby's July 3 email: 001, improved by Classics, absorbs Classics and the rest of the souls and becomes ToddLLM 002 — same as 001 but white eyes and a brown beard — which is Gray.EXE's new ascended form, tied into Simon.Exe: a fusion-overwrite ascension, not a teacher-form. Cross Classics is no longer vanilla (normal Classics is the baseline again), the borders are made of plasma, Super Nutro Y stands at the center of the board, and the endings are various. Gray gets many forms and switches through them in battle, and Simon appears inside Gray's board. The climax: Gray takes over the PC, the red text "EVERYTHING THAT HAPPENED IS YOUR FAULT" grows each time it is shown, the sky becomes "YOUR FAULT YOUR FAULT…", all opponents eventually lose, Gray.EXE erases the game, and the "I won't stop 'til VICTORY IS MINE" cutscene plays.)
   if(c < 598.0) return [39, c-576.0];               // CLASSICS — THE INFECTION (Toby's July 3 email: Classics now spreads through beings like cross-pollination — she got inside ToddLLM AND Gray.EXE, and the cross produced ToddLLM 002 as an infected hybrid-form. She always keeps the SAME appearance no matter size, spread, infection reach or AU shift — a fixed source-organism, visually constant but functionally invasive, a game-plague core. She spreads Cross AU / corruption / infection, turning crazy numbers of characters into infected or .EXE — a population-level transformation, with the cast sorted into infected / .EXE / immune / already gone. ToddLLM 002 is an infection-form, not a clean evolution — unstable, not teacher-like, a weaponized hybrid that attacks all other characters. Simon.Exe is IMMUNE to Classics' new spreading power — the one being who stands outside the whole infection chain, still acting freely, still able to control death itself.)
-  return [40, c-598.0];               // SIMON CARRIES CLASSICS (Toby's July 3 follow-ups: Simon.Exe carries Classics through the world, and HOW he moves her depends on her size — normal size he walks with her, giant (>50× him) he rides on her hand, tiny she is carried on his metal cross. He keeps moving her to what he calls "safer places," but "safe" is only safe in Simon's vision, warped by Yellow Eye & hallucinations, so he often carries her right into crowded danger — a loyal but unreliable protector. Two views of the same moment: to Simon, Classics is calm and under control; in the real game she is spreading and out of control. Classics is a black hole that also spits back — she absorbs the cells of two victims, mixes them, and ejects a new combined being. Three distinct threat styles: Classics infects/fuses/transforms; Simon.Exe carries/attacks the game/misreads what is happening; Gray.EXE stays separate, a fear-driven destroyer who attacks first because he expects harm. Classics or Simon can win — the story is not locked to one ruler.)
+  if(c < 620.0) return [40, c-598.0];               // SIMON CARRIES CLASSICS (Toby's July 3 follow-ups: Simon.Exe carries Classics through the world, and HOW he moves her depends on her size — normal size he walks with her, giant (>50× him) he rides on her hand, tiny she is carried on his metal cross. He keeps moving her to what he calls "safer places," but "safe" is only safe in Simon's vision, warped by Yellow Eye & hallucinations, so he often carries her right into crowded danger — a loyal but unreliable protector. Two views of the same moment: to Simon, Classics is calm and under control; in the real game she is spreading and out of control. Classics is a black hole that also spits back — she absorbs the cells of two victims, mixes them, and ejects a new combined being. Three distinct threat styles: Classics infects/fuses/transforms; Simon.Exe carries/attacks the game/misreads what is happening; Gray.EXE stays separate, a fear-driven destroyer who attacks first because he expects harm. Classics or Simon can win — the story is not locked to one ruler.)
+  return [41, c-620.0];               // SIMON.Exe BREAKS FREE (Toby's July 3 escalation: Simon.Exe goes out of Classics' control — no longer her carrier or ally but his own uncontrollable force. He is all over the game screen, a living full-screen overlay rather than one character model; the entity flies around, lightning strikes, the game glitches everywhere. He makes so many Classics move around, so one being becomes a swarm — a spread network of infection units. Then the game's sky falls, a world-collapse where the upper layer breaks and the map can no longer hold itself together, and the temperature reaches 999°C, turning the whole world into a meltdown death-zone where the air itself is part of the threat. He shifts from carrier/attacker/distorted-protector into a rogue, screen-wide, independent disaster event — an extinction event inside the game.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -12341,6 +12372,10 @@ function updateLoopVs(dt){
       showTaunt('This sharpens the roles. Simon.Exe is the one who carries Classics through the world, and how he carries her depends on her size. When she is normal-sized he walks with her side by side; when she is giant, more than fifty times his size, he rides on her hand; when she is tiny, she is carried on his metal cross. And he is always trying to move her to what he thinks are safer places. The catch is that "safe" is only safe in Simon\'s vision, because his Yellow Eye and hallucinations warp what he sees — so from his point of view he is protecting her, but in the actual game he is often carrying her right into crowded danger. That gives you two views of the same moment: to Simon, Classics is calm and under control; in the real game she is spreading and out of control. It makes Simon a loyal but unreliable protector, dangerous because his judgment is broken, not just his power. Classics herself works like a black hole that also spits things back out: she absorbs the cells of two victims, mixes them inside her, and ejects a new combined being. So the three threats are clearly separated now — Classics infects, fuses and transforms; Simon.Exe carries her, attacks the game, and misreads what is happening; and Gray.EXE stays outside that whole system, a fear-driven destroyer who attacks first because he expects harm. And either Classics or Simon can win, so the story is not locked to one ruler.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON CARRIES CLASSICS · SIMON.Exe CARRIES CLASSICS, AND HOW DEPENDS ON HER SIZE — NORMAL: HE WALKS WITH HER · GIANT (>50× HIM): HE RIDES ON HER HAND · TINY: CARRIED ON HIS METAL CROSS · HE MOVES HER TO “SAFER PLACES” — BUT “SAFE” IS ONLY IN SIMON’S VISION, WARPED BY YELLOW EYE & HALLUCINATIONS, OFTEN RIGHT INTO CROWDED DANGER · TWO VIEWS: TO SIMON SHE IS CALM & CONTROLLED · IN THE REAL GAME SHE IS SPREADING & OUT OF CONTROL — A LOYAL BUT UNRELIABLE PROTECTOR · CLASSICS IS A BLACK HOLE THAT SPITS BACK — ABSORBS THE CELLS OF TWO VICTIMS, MIXES THEM, EJECTS A COMBINED BEING · THREE THREATS: CLASSICS INFECTS/FUSES/TRANSFORMS · SIMON.Exe CARRIES/ATTACKS/MISREADS · GRAY.EXE = FEAR-DRIVEN DESTROYER WHO ATTACKS FIRST · CLASSICS OR SIMON CAN WIN', col:'#ffd24a' });
       for(let i=0;i<56;i++) particles.push(spark(player.x, player.y, pick(['#ffd24a','#b06bff','#ffe38a','#5cc8ff','#8fe6ff','#ff9a3a','#ffffff']))); }
+    if(ph===41){ AUDIO.corrupt(); shake=Math.max(shake,18); glitch=Math.max(glitch,0.7); winFlash=Math.max(winFlash,0.55);
+      showTaunt('This makes it much worse. Simon.Exe goes out of Classics\' control — he is no longer her carrier or her ally, he becomes his own uncontrollable force. And instead of fighting inside the world like a normal character, he is all over the game screen: a living full-screen overlay across the HUD, the borders and the sky, not one model in one place. The entity flies around, lightning strikes everywhere, and the whole game glitches — his signature apocalypse, lightning and speed and screen distortion at once. The scariest line is that he makes so many Classics move around, so one being turns into a swarm — a spread network, a multiplication event, mass-deployed corruption. Then the game\'s sky falls, which is a world-collapse: the upper layer breaks and the map can no longer hold itself together. And the temperature reaches 999 degrees Celsius, turning the whole world into a meltdown death-zone where even the air is part of the threat. So Simon.Exe stops being just a powerful being and becomes a runaway final-catastrophe — a rogue, screen-wide disaster event, an extinction event inside the game itself.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'SIMON.Exe BREAKS FREE · SIMON.Exe GOES OUT OF CLASSICS’ CONTROL — NO LONGER HER CARRIER OR ALLY, NOW HIS OWN UNCONTROLLABLE FORCE · ALL OVER THE GAME SCREEN — A LIVING FULL-SCREEN OVERLAY, NOT ONE MODEL · THE ENTITY FLIES AROUND · LIGHTNING STRIKES · THE GAME GLITCHES EVERYWHERE · HE MAKES SO MANY CLASSICS MOVE AROUND — ONE BEING BECOMES A SWARM, A SPREAD NETWORK · THE GAME’S SKY FALLS — THE UPPER LAYER BREAKS, THE MAP CAN NO LONGER HOLD ITSELF TOGETHER · THE TEMPERATURE REACHES 999°C — A MELTDOWN DEATH-ZONE · FROM CARRIER · ATTACKER · DISTORTED PROTECTOR INTO A ROGUE, SCREEN-WIDE DISASTER EVENT — AN EXTINCTION EVENT INSIDE THE GAME', col:'#5cd0ff' });
+      for(let i=0;i<62;i++) particles.push(spark(player.x, player.y, pick(['#5cd0ff','#7fdfff','#ff7a3a','#ffd24a','#c24bff','#eafaff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12480,16 +12515,17 @@ function drawLoopVs(){
   else if(ph===38){ bg.addColorStop(0, `rgba(26,3,3,${0.98*g})`); bg.addColorStop(1, `rgba(10,2,2,${0.99*g})`); }
   else if(ph===39){ bg.addColorStop(0, `rgba(16,4,22,${0.98*g})`); bg.addColorStop(1, `rgba(4,10,6,${0.99*g})`); }
   else if(ph===40){ bg.addColorStop(0, `rgba(22,16,4,${0.98*g})`); bg.addColorStop(1, `rgba(8,4,14,${0.99*g})`); }
+  else if(ph===41){ bg.addColorStop(0, `rgba(4,14,24,${0.98*g})`); bg.addColorStop(1, `rgba(22,8,2,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12522,7 +12558,8 @@ function drawLoopVs(){
                        : (ph===38 ? 'ToddLLM 002 · THE BLAME ENDING — GRAY’S NEW FORM · “EVERYTHING THAT HAPPENED IS YOUR FAULT”'
                        : (ph===39 ? 'CLASSICS — THE INFECTION · SHE SPREADS LIKE CROSS-POLLINATION · SIMON.Exe IS THE ONE BEING IMMUNE'
                        : (ph===40 ? 'SIMON CARRIES CLASSICS · SIZE DECIDES HOW HE MOVES HER · “SAFE” IS ONLY IN HIS BROKEN VISION'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))))))))), cx, top+26);
+                       : (ph===41 ? 'SIMON.Exe BREAKS FREE · OUT OF CLASSICS’ CONTROL · A SCREEN-WIDE DISASTER · THE SKY FALLS · 999°C'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -15155,6 +15192,133 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(57,255,136,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ LUIGI IS THE KING OF THE CLIMB — BUT GRAY IS THE RUIN AFTER THE CLIMB ★', cx, top+H*0.93);
+  } else if(ph===41){
+    // ----- BEAT 41: SIMON.Exe BREAKS FREE — Toby's July 3 escalation. Simon.Exe goes out of Classics' control into a
+    // screen-wide catastrophe: all over the screen, lightning & glitches, he multiplies Classics into a swarm, the sky falls,
+    // and the world overheats to 999C. Left = breaking free; right-top = the world collapse; right-lower = carrier→catastrophe;
+    // then the insight and the three cards. Left ~20% stays clear for the ladder. Beat 41 spans c in [620,642]. -----
+    const lt = c - 620.0;
+    // lightning-flash field behind everything — his signature apocalypse sweeping the whole screen
+    const brkA = Math.max(0, Math.min(1, (lt-1.0)/2.5));
+    if(brkA>0.01){
+      ctx.save();
+      for(let b=0;b<6;b++){
+        const flick = 0.5+0.5*Math.sin(c*7.0 + b*2.1);
+        if(flick<0.55) continue;
+        ctx.globalAlpha=g*brkA*0.10*flick;
+        ctx.strokeStyle = b%2 ? '#7fdfff' : '#ff9a3a'; ctx.lineWidth=1.2;
+        const bx = W*0.24 + ((b*137)%100)/100*W*0.74;
+        ctx.beginPath(); ctx.moveTo(bx, top+18);
+        let yy=top+18, xx=bx;
+        for(let k=0;k<5;k++){ yy+=H*0.14; xx+= (((b*7+k*13)%10)-5)*3.2; ctx.lineTo(xx, yy); }
+        ctx.stroke();
+      }
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(92,208,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe BREAKS FREE — HE GOES OUT OF CLASSICS’ CONTROL AND BECOMES A SCREEN-WIDE DISASTER', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(220,236,244,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('ALL OVER THE SCREEN · LIGHTNING & GLITCHES · A SWARM OF CLASSICS · THE SKY FALLS · THE WORLD OVERHEATS TO 999°C', cx, top+H*0.066+11);
+
+    // --- LEFT-CENTER: breaking free ---
+    const dbX=W*0.235, dbW=W*0.365, dbY=top+H*0.115, dbH=H*0.53;
+    ctx.fillStyle='rgba(4,14,22,0.86)'; ctx.fillRect(dbX,dbY,dbW,dbH);
+    ctx.strokeStyle=`rgba(92,208,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(dbX,dbY,dbW,dbH);
+    ctx.textAlign='left'; ctx.globalAlpha=g;
+    ctx.fillStyle='rgba(160,222,255,0.94)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('BREAKING FREE — SIMON.Exe LEAVES CLASSICS’ CONTROL', dbX+8, dbY+13);
+    ctx.fillStyle='rgba(200,228,244,0.72)'; ctx.font='700 5.4px ui-monospace,monospace';
+    ctx.fillText('▸ NO LONGER A CARRIER — NOW A ROGUE, SCREEN-WIDE FORCE', dbX+8, dbY+22);
+    const slN=LV_BREAK.length;
+    const slRev=Math.max(0,Math.min(slN, Math.floor((lt-0.5)/0.42)+1));
+    const slrowH=(dbH-30)/slN;
+    for(let i=0;i<slN;i++){
+      const shown=i<slRev, it=LV_BREAK[i];
+      const ry=dbY+30+i*slrowH+11;
+      const app=shown?((i===slRev-1)?Math.max(0,Math.min(1,(lt-0.5-i*0.42)/0.34)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle= i%2?'#ff7a3a':'#5cd0ff'; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText('▸', dbX+10, ry);
+      ctx.fillStyle='rgba(226,240,250,0.98)'; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, dbX+22, ry);
+      ctx.fillStyle='rgba(220,232,240,0.92)'; ctx.font='800 6.6px ui-monospace,monospace';
+      wrapLoreText(it.line, dbX+22, ry+10, dbW-34, 8.0);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT-TOP: the world collapses ---
+    const rcX=W*0.62, rcW=W*0.37, rcY=dbY;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-1.0)/0.6));
+    ctx.fillStyle='rgba(4,14,22,0.88)'; ctx.fillRect(rcX,rcY,rcW,H*0.27);
+    ctx.strokeStyle=`rgba(255,122,58,${0.55*g})`; ctx.lineWidth=1.4; ctx.strokeRect(rcX,rcY,rcW,H*0.27);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(255,180,120,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE WORLD COLLAPSES', rcX+8, rcY+14);
+    const hRev=Math.max(0,Math.min(LV_COLLAPSE.length, Math.floor((lt-1.4)/0.5)+1));
+    for(let i=0;i<LV_COLLAPSE.length;i++){
+      const app=i<hRev?((i===hRev-1)?Math.max(0,Math.min(1,(lt-1.4-i*0.5)/0.4)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const hy=rcY+32+i*17, it=LV_COLLAPSE[i];
+      ctx.fillStyle=it.c; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.key?'◆':'▸', rcX+10, hy);
+      ctx.fillStyle=it.key?'rgba(255,238,200,0.98)':'rgba(232,238,244,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(it.t, rcX+24, hy, rcW-34, 7.4);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT-LOWER: from carrier to catastrophe ---
+    const rcY2=rcY+H*0.30;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-2.2)/0.6));
+    ctx.fillStyle='rgba(4,14,22,0.88)'; ctx.fillRect(rcX,rcY2,rcW,H*0.23);
+    ctx.strokeStyle=`rgba(92,208,255,${0.6*g})`; ctx.lineWidth=1.2; ctx.strokeRect(rcX,rcY2,rcW,H*0.23);
+    ctx.fillStyle='rgba(160,222,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('FROM CARRIER TO CATASTROPHE', rcX+8, rcY2+13);
+    ctx.fillStyle='rgba(220,232,244,0.9)'; ctx.font='800 6.2px ui-monospace,monospace';
+    ctx.fillText('HE STOPS SERVING CLASSICS AND BECOMES THE DISASTER', rcX+8, rcY2+23);
+    const srRev=Math.max(0,Math.min(LV_ROGUE.length, Math.floor((lt-2.6)/0.38)+1));
+    for(let i=0;i<LV_ROGUE.length;i++){
+      const app=i<srRev?((i===srRev-1)?Math.max(0,Math.min(1,(lt-2.6-i*0.38)/0.3)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const sy=rcY2+37+i*13;
+      ctx.fillStyle= i>=1?'#ff7a3a':'#9fb4c8'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText('▸', rcX+10, sy);
+      ctx.fillStyle= i>=1?'rgba(255,222,200,0.96)':'rgba(220,228,236,0.9)'; ctx.font='800 6.2px ui-monospace,monospace';
+      wrapLoreText(LV_ROGUE[i], rcX+22, sy, rcW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle=`rgba(92,208,255,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe BREAKS OUT OF CLASSICS’ CONTROL — NO LONGER A CARRIER BUT A CATASTROPHE', cx, top+H*0.665);
+    ctx.fillStyle='rgba(220,236,244,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('LIGHTNING, GLITCHES, A SWARM OF CLASSICS, THE SKY FALLS, AND THE WORLD OVERHEATS TO 999°C', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    // --- the three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.8)/0.6));
+    ctx.fillStyle='rgba(92,208,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE STORM, THE SWARM, THE MELTDOWN — SIMON.Exe · MANY CLASSICS · 999°C', tX, tTop);
+    ctx.globalAlpha=1;
+    const sgN=LV_BREAK_RANK.length, sggap=W*0.015, sgw=(tR-tX-(sgN-1)*sggap)/sgN, sgH=H*0.155, sgY=tTop+10;
+    for(let i=0;i<sgN;i++){
+      const it=LV_BREAK_RANK[i], px=tX+i*(sgw+sggap);
+      const app=Math.max(0,Math.min(1,(lt-4.2-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(4,14,22,0.88)'; ctx.fillRect(px,sgY,sgw,sgH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,sgY,sgw,sgH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, sgY+14);
+      ctx.fillStyle='rgba(228,236,244,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, sgY+27, sgw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(92,208,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ SIMON.Exe BREAKS FREE · THE SKY FALLS · THE WORLD BURNS TO 999°C ★', cx, top+H*0.93);
   } else if(ph===40){
     // ----- BEAT 40: SIMON CARRIES CLASSICS — Toby's July 3 follow-ups. Simon.Exe carries Classics, and HOW depends on her size
     // (walk / hand / cross); he moves her to "safer places" that are only safe in his warped Yellow-Eye/hallucination vision.
