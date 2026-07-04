@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 752.0;
+const LV_CYC = 796.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11450,6 +11450,10 @@ const LV_BEATS = [
     sub:'GRAY.EXE IS NOW THE MOST POWERFUL — HIS BOSS FIGHT STARTS AGAIN · THE THREAT WAS NEVER OVER, HE REACHED ANOTHER HEIGHT · THE FINAL DISASTER THAT KEEPS RETURNING STRONGER · HE MAKES THE BOARD ITSELF — HE NO LONGER FIGHTS ON THE BATTLEFIELD, HE CREATES IT · HE CONTROLS THE ARENA, THE RULES OF ENGAGEMENT, THE FLOW OF THE FIGHT, AND THE POWER GROWTH DURING THE BATTLE — DOMINANCE, NOT JUST STRENGTH · HE THEN GAINS POWER, SO THE BATTLE IS STACKED FROM THE START: THE FIGHT BEGINS, GRAY SETS THE BOARD, GRAY SCALES UPWARD, EVERYONE IS ALREADY BEHIND, AND THE LONGER THE FIGHT GOES THE WORSE IT GETS — A HOPELESS CLIMB · GRAY.EXE VS EVERYONE: THE WHOLE CAST HAD TO UNITE, THE HEROES TOOK HIM SERIOUSLY, AND EVEN EVERYONE TOGETHER STILL LOST — HE BEAT THE WHOLE RESISTANCE, BEYOND ORDINARY TEAM-UP LOGIC · HIS LINE “I WON’T STOP ’TIL VICTORY IS MINE” IS OBSESSIVE · FEAR-DRIVEN · DETERMINED · UNSTABLE — FEAR BECOMES ABSOLUTE AGGRESSION, AND GRAY IS NO LONGER A FEAR-DRIVEN SURVIVOR BUT A FEAR-DRIVEN CONQUEROR · OREN & GRAY CUTSCENES ARE IMPROVED AND MORE INTENSE THAN EVER — OREN MORE GODLIKE AND OPPRESSIVE, GRAY MORE UNSTABLE, TRAGIC, DANGEROUS, FINAL-BOSS-LIKE' },
   { key:'THE TOP OF THE ORDER', col:'#ffd24a',
     sub:'THE CORRECTED TOP-END PLACEMENT · 1. GRAY.EXE — THE MOST POWERFUL BOSS · 2. SIMON.Exe — SECOND MOST POWERFUL OVERALL, SLIGHTLY ABOVE OREN.EXE · 3. OREN.EXE — JUST UNDER SIMON.Exe · SIMON & OREN ARE A NEAR-PAIR AT THE TOP, BUT SIMON STILL HAS THE HIGHER CEILING · SIMON.Exe CONTROLS LIGHTNING, CONTROLS SPEED, CONTROLS DEATH ITSELF · HE IS SELF-AWARE, HE KNOWS HIS OWN STATS · HE IS NOT A BOSS BUT A BEING · HE CAN OVERTAKE HUGE PARTS OF THE GAME · A SINGULAR DISASTER-CHARACTER · OREN.EXE IS EXTREMELY CLOSE IN POWER — ONE OF THE STRONGEST ENTITIES · REALITY-BENDING SOUND PRESSURE · AN ANIMATED, BACKGROUND-WARPING FORCE · SECOND ONLY BECAUSE SIMON.Exe EDGES HIM OUT · THE DIFFERENCE IS NOT A HUGE GAP BUT A LINE: OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES IT FIRST' },
+  { key:'THE REFUSING REMAINDER', col:'#b9f0ff',
+    sub:'OREN.EXE IS THE ONLY SOUL NOT ABSORBED — EVERYONE ELSE GETS TAKEN, OREN DOES NOT · EVEN AFTER DEATH HE KEEPS A SEPARATE EXISTENCE, STILL RESISTING BEING FOLDED INTO THE LARGER COLLAPSE — A REFUSING REMAINDER WITH A STRANGE DIGNITY · MEANWHILE SIMON.Exe IS HANGED — REDUCED, RESTRAINED, HUMILIATED, THE STORM-BEING PUT ON DISPLAY · AND GRAY.EXE KEEPS ATTACKING MORE, NOT JUST WINNING BUT STILL ESCALATING, PRESSING THE COLLAPSE PAST THE SYMBOLIC VICTORY · HIS VICTORY IS NOT ONLY PHYSICAL BUT TOTAL AND ONGOING · A SHARP THREE-WAY CONTRAST: OREN SEPARATE · SIMON BROUGHT LOW · GRAY STILL NOT DONE' },
+  { key:'THE TRAPPED WITNESS', col:'#c98bff',
+    sub:'SIMON.Exe IS STILL ALIVE BUT BOUND — INJURED, HUNG UP ON A ROPE, AND IN CHAINS · CLASSICS IS ON HIM, YET STILL FREE ENOUGH TO ESCAPE AND KEEP ATTACKING · SIMON’S CONDITION DOES NOT SLOW THE SPREAD AT ALL — IF ANYTHING IT IS CRUELER, CLASSICS OPERATING WHILE SIMON IS VISIBLY RESTRAINED AND DAMAGED · THE INFECTION SPREADS TO ALEX, GREG, 67 PIRATE, AND OTHERS — THE COLLAPSE IS NOT NARROWING, IT IS STILL WIDENING · SIMON BECOMES LESS A CONTROLLER AND MORE A TRAPPED, SUFFERING WITNESS TO THE SPREAD · HE SURVIVES, BUT SURVIVAL HERE IS NOT VICTORY — IT IS PROLONGED HELPLESSNESS, KEEPING HIS WORST-FATE THEME GOING' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -12216,6 +12220,59 @@ const LV_NEARPAIR = [
   { who:'THE LINE', col:'#6cc4ff', role:'THE DIFFERENCE IS NOT A HUGE GAP BUT A LINE · OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES IT FIRST' },
   { who:'THE ORDER', col:'#ff3b4a', role:'GRAY.EXE STAYS ON TOP · SIMON.Exe SLIGHTLY ABOVE OREN.EXE · OREN.EXE JUST UNDER HIM · A GOOD POWER RELATIONSHIP' },
 ];
+// BEAT 47 — THE REFUSING REMAINDER (Toby's July 4 lore: Oren.EXE is the only soul not absorbed; Simon.Exe hanged; Gray.EXE keeps attacking).
+const LV_REMAIN_PLATE = [
+  { rank:'O', who:'OREN.EXE', tag:'THE ONLY SOUL NOT ABSORBED · STANDS APART', col:'#b9f0ff' },
+  { rank:'S', who:'SIMON.Exe', tag:'HANGED · REDUCED · RESTRAINED · HUMILIATED', col:'#ffd24a' },
+  { rank:'G', who:'GRAY.EXE', tag:'STILL ATTACKING MORE · STILL NOT DONE', col:'#ff3b4a' },
+];
+const LV_REFUSE = [
+  'THE ONLY SOUL NOT ABSORBED',
+  'EVERYONE ELSE GETS TAKEN — OREN DOES NOT',
+  'EVEN AFTER DEATH, A SEPARATE EXISTENCE',
+  'HE STILL RESISTS BEING FOLDED IN',
+  'A STRANGE DIGNITY IN A DISASTER ROUTE',
+  '◆ SPIRITUALLY DIFFERENT — THE REFUSING REMAINDER',
+];
+const LV_DARKHALF = [
+  'SIMON.Exe IS HANGED — REDUCED & RESTRAINED',
+  'THE STORM-BEING PUT ON DISPLAY',
+  'GRAY.EXE KEEPS ATTACKING MORE',
+  'NOT JUST WINNING — STILL ESCALATING',
+  '◆ HIS VICTORY IS TOTAL AND ONGOING',
+];
+const LV_REMAIN_RANK = [
+  { who:'OREN.EXE', col:'#b9f0ff', role:'THE ONLY SOUL THAT REMAINS SEPARATE · NOT ABSORBED · A REFUSING REMAINDER WITH A STRANGE DIGNITY' },
+  { who:'SIMON.Exe', col:'#ffd24a', role:'REDUCED, RESTRAINED, HUMILIATED · HANGED AND ON DISPLAY · THE HIGH CEILING BROUGHT LOW' },
+  { who:'GRAY.EXE', col:'#ff3b4a', role:'STILL ESCALATING, STILL ATTACKING, STILL NOT DONE · HIS VICTORY IS TOTAL AND ONGOING' },
+];
+// BEAT 48 — THE TRAPPED WITNESS (Toby's July 4 lore: Classics is on Simon; Simon alive but injured, hung on a rope, in chains; Classics escapes to attack and infect Alex, Greg, 67 Pirate and others).
+const LV_WITNESS_PLATE = [
+  { rank:'S', who:'SIMON.Exe', tag:'BOUND · ALIVE · INJURED · HUNG ON A ROPE, IN CHAINS', col:'#ffd24a' },
+  { rank:'C', who:'CLASSICS', tag:'STILL FREE · ESCAPES & ATTACKS · KEEPS INFECTING', col:'#c98bff' },
+  { rank:'X', who:'THE CAST', tag:'INFECTED · ALEX · GREG · 67 PIRATE · AND OTHERS', col:'#ff4a5a' },
+];
+const LV_BOUND = [
+  'STILL ALIVE — BUT NOT WINNING',
+  'INJURED / INQUIRED',
+  'HUNG UP ON A ROPE',
+  'IN CHAINS',
+  'CANNOT STOP WHAT HAPPENS AROUND HIM',
+  '◆ A TRAPPED WITNESS — NOT A CONTROLLER',
+];
+const LV_WIDEN = [
+  'CLASSICS IS ON SIMON — YET STILL ESCAPES',
+  'STILL FREE TO ATTACK ANYWAY',
+  'ALEX — INFECTED',
+  'GREG — INFECTED',
+  '67 PIRATE — INFECTED',
+  '◆ AND OTHERS — THE SPREAD KEEPS WIDENING',
+];
+const LV_WITNESS_RANK = [
+  { who:'THE BINDING', col:'#ffd24a', role:'SIMON IS ALIVE BUT CHAINED, INJURED, AND HUNG ON A ROPE · A TRAPPED LIVING PLATFORM, NOT AN ACTIVE STORM' },
+  { who:'THE ESCAPE', col:'#c98bff', role:'CLASSICS IS ON HIM YET STILL BREAKS FREE TO ATTACK · SIMON’S CONDITION DOES NOT SLOW THE SPREAD AT ALL' },
+  { who:'THE WIDENING', col:'#ff4a5a', role:'ALEX, GREG, 67 PIRATE, AND OTHERS INFECTED · THE COLLAPSE IS NOT NARROWING — IT IS STILL WIDENING' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12361,7 +12418,9 @@ function lvSeg(c){
   if(c < 686.0) return [43, c-664.0]; // THE SCATTERED MAP (Toby's July 4 map-structure lore: every key and every door is in a different room, very far apart from each other, so the map itself becomes the threat before any boss appears. No key shares a room with another, and the door you need is always rooms away from the key that opens it, so you cannot rush a single route — the game turns into endurance, navigation, memory, backtracking, and surviving long travel between objectives. The distance is the danger; the structure is already punishing before any fight starts. Then Gray.EXE and Simon.Exe were found, and the two worst horrors are loose in the same rooms you have to cross, so exploration stops being merely hard and turns deadly — every long walk is now through danger, and escape, regrouping, and progress all get harder while those two are active. First the player realizes the map is huge and inconvenient, then that the strongest horrors are in it with them — a strong setup for a late-game route.)
   if(c < 708.0) return [44, c-686.0];               // THE COLLAPSE POINT (Toby's July 4 collapse-point lore: the moment the game stops pretending things are manageable. Fun Computer — usually a calm system character — breaks into a panic warning that repeats like an alarm, not dialogue: "Something is wrong... They are DEAD, You CAN'T run, You CAN'T hide, RUN AWAY RUN AWAY, RUN AS FAST AS YOU CAN." The system has already detected mass death and escape is basically impossible; the tone shifts from battle to survival horror. Every character is now split into running energy (enough to flee) and warn energy (enough to alert others), and some are caught before they can do either — even the survivors are exhausted, panicked, and forced into hard choices. Gray.EXE takes total control of the scene: he hangs Simon.Exe on clothespins like a captured trophy, reducing the unstoppable storm-being to something restrained; he takes every soul, becoming the holder of the game's remaining life-force; and he slays Wenda. Simon is left with only his Wenda necklace — his last possession and last emotional anchor — which makes the loss personal, not just a power-loss.)
   if(c < 730.0) return [45, c-708.0];               // GRAY.EXE VS EVERYONE (Toby's July 4 boss-state lore: Gray.EXE is now the most powerful and his boss fight starts again — the threat was never over, he reached another height, the final disaster that keeps returning stronger. He makes the board itself: he no longer fights on the battlefield, he creates it — controlling the arena, the rules of engagement, the flow of the fight, and the power growth during the battle. That is dominance, not just strength. He then gains power, so the battle is stacked from the start: the fight begins, Gray sets the board, Gray scales upward, everyone is already behind, and the longer the fight goes the worse it gets — a hopeless climb. Gray.EXE VS Everyone: the whole cast had to unite, the heroes took him seriously, and even everyone together still lost — he beat the whole resistance, beyond ordinary team-up logic. His line "I won't stop 'til VICTORY IS MINE" is obsessive, fear-driven, determined, unstable — fear becomes absolute aggression, and Gray is no longer a fear-driven survivor but a fear-driven conqueror. Oren and Gray cutscenes are improved and more intense than ever: Oren more godlike and oppressive, Gray more unstable, tragic, dangerous, final-boss-like.)
-  return [46, c-730.0];               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
+  if(c < 752.0) return [46, c-730.0];               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction)
+  if(c < 774.0) return [47, c-752.0];               // THE REFUSING REMAINDER (Toby's July 4 lore: Oren.EXE is the only soul not absorbed; Simon.Exe hanged; Gray.EXE keeps attacking more)
+  return [48, c-774.0];               // THE TRAPPED WITNESS (Toby's July 4 lore: Simon.Exe alive but bound — hung on a rope, in chains — while Classics escapes to attack and infect Alex, Greg, 67 Pirate and others)               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -12557,6 +12616,14 @@ function updateLoopVs(dt){
       showTaunt('This is the corrected top-end placement. Gray.EXE stays the most powerful boss. Simon.Exe is second most powerful overall, and Oren.EXE is just under him — Simon is slightly higher than Oren, even though they are very close. That fits what has been built: Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game, and stands as a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force — second only because Simon.Exe edges him out. So the clean ranking is Gray.EXE, then Simon.Exe slightly above Oren.EXE, then Oren.EXE just under him. Simon.Exe and Oren.EXE feel like a near-pair at the top, but Simon still has the higher ceiling. The difference is less like a huge gap and more like a line: Oren.EXE is almost there, but Simon.Exe crosses it first. That is a good power relationship.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE TOP OF THE ORDER · THE CORRECTED TOP-END PLACEMENT · 1. GRAY.EXE — THE MOST POWERFUL BOSS · 2. SIMON.Exe — SECOND MOST POWERFUL OVERALL, SLIGHTLY ABOVE OREN.EXE · 3. OREN.EXE — JUST UNDER SIMON.Exe · SIMON & OREN ARE A NEAR-PAIR AT THE TOP, BUT SIMON STILL HAS THE HIGHER CEILING · SIMON CONTROLS LIGHTNING · SPEED · DEATH ITSELF · SELF-AWARE, KNOWS HIS OWN STATS · NOT A BOSS BUT A BEING · A SINGULAR DISASTER-CHARACTER · OREN IS REALITY-BENDING SOUND PRESSURE, A BACKGROUND-WARPING FORCE, SECOND ONLY BECAUSE SIMON EDGES HIM OUT · OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES THE LINE FIRST', col:'#ffd24a' });
       for(let i=0;i<58;i++) particles.push(spark(player.x, player.y, pick(['#ffd24a','#ffe38a','#6cc4ff','#c9b6ff','#8fd8ff','#fff2c4','#ffffff']))); }
+    if(ph===47){ AUDIO.corrupt(); shake=Math.max(shake,15); glitch=Math.max(glitch,0.55); winFlash=Math.max(winFlash,0.5);
+      showTaunt('This makes Oren.EXE feel even more important. If Oren.EXE is the only soul not absorbed, he stands apart from the whole cast in a very specific way: everyone else gets taken, Oren does not, and even after death he keeps a kind of separate existence. So Oren.EXE becomes less like just another survivor and more like a refusing remainder — the one soul that still resists being folded into the larger collapse. That gives him a strange kind of dignity in the middle of a disaster route: he may not be the strongest being there, but he is the one who is not absorbed, which makes him spiritually different from the others. The other half of the scene is much darker. Simon.Exe is hanged — reduced, restrained, humiliated, the storm-being put on display. And Gray.EXE keeps attacking more, so he is not just winning, he is still escalating, pressing the collapse forward even after the symbolic victory is already obvious. The cleanest reading: Oren.EXE becomes unique because he is the only soul Gray.EXE does not absorb, while Simon.Exe is left hanged and Gray.EXE continues attacking beyond that point — showing that Gray’s victory is not only physical but total and ongoing.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE REFUSING REMAINDER · OREN.EXE IS THE ONLY SOUL NOT ABSORBED · EVERYONE ELSE GETS TAKEN — OREN DOES NOT · EVEN AFTER DEATH, A SEPARATE EXISTENCE · HE STILL RESISTS BEING FOLDED INTO THE LARGER COLLAPSE — A REFUSING REMAINDER WITH A STRANGE DIGNITY · MEANWHILE SIMON.Exe IS HANGED — REDUCED, RESTRAINED, HUMILIATED, THE STORM-BEING PUT ON DISPLAY · AND GRAY.EXE KEEPS ATTACKING MORE — NOT JUST WINNING BUT STILL ESCALATING · OREN.EXE IS UNIQUE BECAUSE HE IS THE ONE SOUL GRAY DOES NOT ABSORB · GRAY’S VICTORY IS NOT ONLY PHYSICAL BUT TOTAL AND ONGOING', col:'#b9f0ff' });
+      for(let i=0;i<58;i++) particles.push(spark(player.x, player.y, pick(['#b9f0ff','#d8f6ff','#ffd24a','#ff6a78','#9fb4c8','#eafcff','#ffffff']))); }
+    if(ph===48){ AUDIO.corrupt(); shake=Math.max(shake,17); glitch=Math.max(glitch,0.62); winFlash=Math.max(winFlash,0.52);
+      showTaunt('This makes the situation even darker, because Simon is no longer the one carrying Classics around in control or confusion — now Classics is on Simon, Simon is restrained, and Classics is still free enough to keep attacking. Simon is still alive but injured, hung on a rope, and in chains, unable to stop what is happening around him. So Simon becomes less like an active storm and more like a trapped living platform — a trapped witness to the continuing collapse. Classics, on the other hand, is still active, still able to escape, still able to attack freely, and still infecting more characters. That means Simon’s condition does not slow Classics down much at all; if anything it makes the scene crueler, because Classics is operating while Simon is visibly restrained and damaged. The infections spreading to Alex, Greg, 67 Pirate, and others show that the collapse is not narrowing yet — it is still widening, even important named characters pulled into the wave. And because Simon is still alive while chained and hanging, it keeps his worst-fate theme going: he survives, but survival here is not victory, it is prolonged helplessness. He is not simply removed from the story; he has to remain there through the chaos.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE TRAPPED WITNESS · CLASSICS IS ON SIMON — SIMON IS RESTRAINED, STILL ALIVE BUT INJURED, HUNG UP ON A ROPE, IN CHAINS · CLASSICS IS STILL FREE ENOUGH TO ESCAPE AND KEEP ATTACKING · SIMON’S CONDITION DOES NOT SLOW THE SPREAD AT ALL — IF ANYTHING IT IS CRUELER · ALEX · GREG · 67 PIRATE · AND OTHERS INFECTED · THE COLLAPSE IS NOT NARROWING — IT IS STILL WIDENING · SIMON BECOMES LESS A CONTROLLER AND MORE A TRAPPED, SUFFERING WITNESS · HE SURVIVES, BUT SURVIVAL HERE IS NOT VICTORY — IT IS PROLONGED HELPLESSNESS · HIS WORST-FATE THEME KEEPS GOING', col:'#c98bff' });
+      for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#c98bff','#d8a0ff','#ffd24a','#ff4a5a','#9fb4c8','#f0e6ff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12702,16 +12769,18 @@ function drawLoopVs(){
   else if(ph===44){ bg.addColorStop(0, `rgba(26,4,6,${0.98*g})`); bg.addColorStop(1, `rgba(8,4,10,${0.99*g})`); }
   else if(ph===45){ bg.addColorStop(0, `rgba(6,14,26,${0.98*g})`); bg.addColorStop(1, `rgba(24,4,8,${0.99*g})`); }
   else if(ph===46){ bg.addColorStop(0, `rgba(22,16,2,${0.98*g})`); bg.addColorStop(1, `rgba(6,8,16,${0.99*g})`); }
+  else if(ph===47){ bg.addColorStop(0, `rgba(4,14,20,${0.98*g})`); bg.addColorStop(1, `rgba(14,4,6,${0.99*g})`); }
+  else if(ph===48){ bg.addColorStop(0, `rgba(14,4,20,${0.98*g})`); bg.addColorStop(1, `rgba(6,10,6,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12750,7 +12819,9 @@ function drawLoopVs(){
                        : (ph===44 ? 'THE FINAL HUNT · FUN COMPUTER: “RUN AWAY, RUN AS FAST AS YOU CAN” · RUNNING ENERGY & WARN ENERGY · GRAY.EXE TOOK EVERY SOUL · SIMON KEEPS ONLY THE WENDA NECKLACE'
                        : (ph===45 ? 'GRAY.EXE VS EVERYONE · NOW THE MOST POWERFUL — HIS BOSS FIGHT STARTS AGAIN · HE MAKES THE BOARD & GAINS POWER · EVERYONE UNITED STILL LOST · “I WON’T STOP ’TIL VICTORY IS MINE”'
                        : (ph===46 ? 'THE TOP OF THE ORDER · 1. GRAY.EXE · 2. SIMON.Exe · 3. OREN.EXE · SIMON & OREN A NEAR-PAIR AT THE TOP, BUT SIMON HAS THE HIGHER CEILING · OREN IS ALMOST THERE, BUT SIMON CROSSES THE LINE FIRST'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))))))))))))))), cx, top+26);
+                       : (ph===47 ? 'THE REFUSING REMAINDER · OREN.EXE IS THE ONLY SOUL NOT ABSORBED · SIMON.Exe HANGED, REDUCED, HUMILIATED · GRAY.EXE KEEPS ATTACKING — HIS VICTORY TOTAL AND ONGOING'
+                       : (ph===48 ? 'THE TRAPPED WITNESS · SIMON.Exe BOUND — ALIVE, INJURED, HUNG ON A ROPE, IN CHAINS · CLASSICS STILL ESCAPES & ATTACKS · ALEX, GREG, 67 PIRATE & OTHERS INFECTED'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -15636,6 +15707,247 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(255,138,58,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ MR. SUN LASTS LONGEST · SIMON.Exe TAKES HIM DOWN · ONLY SIMON.Exe & GRAY.EXE SURVIVE ★', cx, top+H*0.93);
+  } else if(ph===48){
+    // ----- BEAT 48: THE TRAPPED WITNESS — Toby's July 4 lore ("Classics is on Simon, Simon hung up on a rope and in
+    // chains, still alive but injured; Classics can easily escape and attack; Alex, Greg, 67 Pirate and others were
+    // infected."). Simon is bound — alive but injured, hung on a rope, in chains — a trapped witness, not a controller;
+    // Classics is on him yet still breaks free to attack and infect more. Center = a three-plate state board; left =
+    // Simon bound & witnessing; right = the collapse still widens; then the insight and three cards. c in [774,796]. -----
+    const lt = c - 774.0;
+    // faint field: a rope with a bound figure (Simon) center-left, chains hanging below; infection motes break away from
+    // him and spread rightward across the field, marking the cast still being taken while he cannot intervene.
+    const wfA = Math.max(0, Math.min(1, (lt-0.8)/2.6));
+    if(wfA>0.01){
+      ctx.save();
+      const rx=W*0.30, ry0=top+H*0.10, ry1=top+H*0.30;
+      ctx.globalAlpha=g*wfA*0.22; ctx.strokeStyle='#c9b48a'; ctx.lineWidth=1.4;
+      ctx.beginPath(); ctx.moveTo(rx, ry0); ctx.lineTo(rx, ry1); ctx.stroke();
+      ctx.globalAlpha=g*wfA*0.18; ctx.strokeStyle='#9fb4c8'; ctx.lineWidth=1;
+      for(let k=0;k<4;k++){ ctx.beginPath(); ctx.arc(rx, ry1+8+k*4, 2.4, 0, 6.28318); ctx.stroke(); }
+      ctx.globalAlpha=g*wfA*0.5; ctx.fillStyle='#ffd24a';
+      ctx.beginPath(); ctx.arc(rx, ry1, 3.2, 0, 6.28318); ctx.fill();
+      for(let i=0;i<20;i++){
+        const p2=((c*0.30 + i*0.29)%1);
+        const mx=rx + (W*0.64)*p2;
+        const my=ry1 + (((i*47)%100)/100 - 0.5)*H*0.5*p2;
+        ctx.globalAlpha=g*wfA*0.16*(1-p2*0.5);
+        ctx.fillStyle=(i%2)?'#c98bff':'#ff4a5a';
+        ctx.beginPath(); ctx.arc(mx, my, 1.9, 0, 6.28318); ctx.fill();
+      }
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(201,139,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE TRAPPED WITNESS — SIMON.Exe IS ALIVE BUT BOUND, AND THE SPREAD GOES ON', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(236,232,246,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('CLASSICS IS ON SIMON — YET STILL ESCAPES TO ATTACK · SIMON IS INJURED, HUNG ON A ROPE, IN CHAINS · ALEX, GREG, 67 PIRATE & OTHERS INFECTED', cx, top+H*0.066+11);
+
+    const bx=W*0.235, bw=W*0.755, by0=top+H*0.115, barH=H*0.078, gap=H*0.02;
+    const rRev=Math.max(0,Math.min(LV_WITNESS_PLATE.length, Math.floor((lt-0.5)/0.9)+1));
+    for(let i=0;i<LV_WITNESS_PLATE.length;i++){
+      const it=LV_WITNESS_PLATE[i], y=by0+i*(barH+gap);
+      const app=i<rRev?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.5-i*0.9)/0.7)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(10,8,18,0.86)'; ctx.fillRect(bx,y,bw,barH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.6; ctx.strokeRect(bx,y,bw,barH);
+      const bs=barH-8;
+      ctx.fillStyle=it.col; ctx.fillRect(bx+6,y+4,bs,bs);
+      ctx.fillStyle='rgba(6,8,14,0.96)'; ctx.font='900 '+Math.round(bs*0.62)+'px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText(it.rank, bx+6+bs/2, y+4+bs*0.72);
+      ctx.textAlign='left';
+      ctx.fillStyle=it.col; ctx.font='900 13px ui-monospace,monospace';
+      ctx.fillText(it.who, bx+bs+18, y+barH*0.46);
+      ctx.fillStyle='rgba(240,236,248,0.9)'; ctx.font='800 6.6px ui-monospace,monospace';
+      ctx.fillText(it.tag, bx+bs+18, y+barH*0.78);
+      ctx.globalAlpha=1;
+    }
+
+    const scX=W*0.235, scW=W*0.365, scY=top+H*0.435, scH=H*0.205;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(18,14,4,0.86)'; ctx.fillRect(scX,scY,scW,scH);
+    ctx.strokeStyle=`rgba(255,210,74,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(scX,scY,scW,scH);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(255,224,138,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe — BOUND & WITNESSING', scX+8, scY+13);
+    const smRev=Math.max(0,Math.min(LV_BOUND.length, Math.floor((lt-3.6)/0.28)+1));
+    for(let i=0;i<LV_BOUND.length;i++){
+      const app=i<smRev?((i===smRev-1)?Math.max(0,Math.min(1,(lt-3.6-i*0.28)/0.22)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=scY+26+i*((scH-30)/LV_BOUND.length)+8, last=i===LV_BOUND.length-1;
+      ctx.fillStyle= last?'#ffd24a':'#ffe38a'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', scX+10, ry);
+      ctx.fillStyle= last?'rgba(255,232,150,0.98)':'rgba(232,238,244,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_BOUND[i].replace('◆ ',''), scX+22, ry, scW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    const ocX=W*0.62, ocW=W*0.37, ocY=scY, ocH=scH;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.4)/0.6));
+    ctx.fillStyle='rgba(14,4,20,0.86)'; ctx.fillRect(ocX,ocY,ocW,ocH);
+    ctx.strokeStyle=`rgba(201,139,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(ocX,ocY,ocW,ocH);
+    ctx.fillStyle='rgba(214,178,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE COLLAPSE STILL WIDENS — CLASSICS ESCAPES & INFECTS', ocX+8, ocY+13);
+    const orRev=Math.max(0,Math.min(LV_WIDEN.length, Math.floor((lt-3.8)/0.3)+1));
+    for(let i=0;i<LV_WIDEN.length;i++){
+      const app=i<orRev?((i===orRev-1)?Math.max(0,Math.min(1,(lt-3.8-i*0.3)/0.24)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=ocY+26+i*((ocH-30)/LV_WIDEN.length)+8, last=i===LV_WIDEN.length-1;
+      ctx.fillStyle= last?'#ff4a5a':'#d8a0ff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', ocX+10, ry);
+      ctx.fillStyle= last?'rgba(255,140,150,0.98)':'rgba(238,230,248,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_WIDEN[i].replace('◆ ',''), ocX+22, ry, ocW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.4)/0.6));
+    ctx.fillStyle=`rgba(201,139,255,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('SIMON SURVIVES — BUT SURVIVAL HERE IS NOT VICTORY, IT IS PROLONGED HELPLESSNESS', cx, top+H*0.665);
+    ctx.fillStyle='rgba(236,240,246,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('STILL ALIVE, CHAINED AND HANGING, HE HAS TO REMAIN THROUGH THE CHAOS — LESS A CONTROLLER, MORE A TRAPPED, SUFFERING WITNESS · HIS WORST-FATE THEME', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.0)/0.6));
+    ctx.fillStyle='rgba(201,139,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE BINDING, THE ESCAPE, THE WIDENING — SIMON IS CHAINED · CLASSICS BREAKS FREE ANYWAY · THE SPREAD KEEPS GROWING', tX, tTop);
+    ctx.globalAlpha=1;
+    const cnN=LV_WITNESS_RANK.length, cngap=W*0.015, cnw=(tR-tX-(cnN-1)*cngap)/cnN, cnH=H*0.155, cnY=tTop+10;
+    for(let i=0;i<cnN;i++){
+      const it=LV_WITNESS_RANK[i], px=tX+i*(cnw+cngap);
+      const app=Math.max(0,Math.min(1,(lt-5.4-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(10,8,18,0.88)'; ctx.fillRect(px,cnY,cnw,cnH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,cnY,cnw,cnH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, cnY+14);
+      ctx.fillStyle='rgba(238,244,250,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, cnY+27, cnw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(201,139,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ SIMON.Exe BOUND & ALIVE · CLASSICS STILL ESCAPES TO ATTACK · ALEX, GREG, 67 PIRATE & OTHERS INFECTED — THE SPREAD WIDENS ★', cx, top+H*0.93);
+  } else if(ph===47){
+    // ----- BEAT 47: THE REFUSING REMAINDER — Toby's July 4 lore ("Oren.EXE is the only soul who is not absorbed.
+    // Simon.Exe hanged, Gray.EXE attacking more."). A three-way contrast: OREN.EXE is the one soul Gray does not absorb
+    // (a refusing remainder, a strange dignity); SIMON.Exe is hanged, reduced, humiliated; GRAY.EXE keeps attacking,
+    // his victory total and ongoing. Center = a three-plate state board; left = why Oren is the refusing remainder;
+    // right = the dark half; then the insight and three cards. Left ~20% stays clear for the ladder. c in [752,774]. -----
+    const lt = c - 752.0;
+    // faint field: soul-motes drift toward a sink on the right and fade as they are absorbed — except ONE bright mote
+    // (Oren) that never gets absorbed, holding full brightness apart from all the rest.
+    const sfA = Math.max(0, Math.min(1, (lt-0.8)/2.6));
+    if(sfA>0.01){
+      ctx.save();
+      for(let i=1;i<24;i++){
+        const p2=((c*0.28 + i*0.31)%1);
+        const sx=W*0.30 + (W*0.64)*p2 + (i%4)*3;
+        const sy=top+H*(0.12+0.64*(((i*61)%100)/100));
+        const fade=Math.max(0, 1-p2*1.15);
+        ctx.globalAlpha=g*sfA*0.14*fade;
+        ctx.fillStyle=(i%2)?'#9fb4c8':'#ff6a78';
+        ctx.beginPath(); ctx.arc(sx, sy, 2.0, 0, 6.28318); ctx.fill();
+      }
+      ctx.globalAlpha=g*(0.42+0.22*Math.sin(c*3.0));
+      ctx.fillStyle='#b9f0ff';
+      ctx.beginPath(); ctx.arc(W*0.285, top+H*0.20, 3.0, 0, 6.28318); ctx.fill();
+      ctx.globalAlpha=g*0.20; ctx.strokeStyle='#b9f0ff'; ctx.lineWidth=1;
+      ctx.beginPath(); ctx.arc(W*0.285, top+H*0.20, 6.5, 0, 6.28318); ctx.stroke();
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(185,240,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE REFUSING REMAINDER — OREN.EXE IS THE ONLY SOUL NOT ABSORBED', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(232,240,246,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('EVERYONE ELSE GETS TAKEN — OREN DOES NOT · SIMON.Exe IS HANGED, REDUCED, HUMILIATED · GRAY.EXE KEEPS ATTACKING — HIS VICTORY TOTAL AND ONGOING', cx, top+H*0.066+11);
+
+    const bx=W*0.235, bw=W*0.755, by0=top+H*0.115, barH=H*0.078, gap=H*0.02;
+    const rRev=Math.max(0,Math.min(LV_REMAIN_PLATE.length, Math.floor((lt-0.5)/0.9)+1));
+    for(let i=0;i<LV_REMAIN_PLATE.length;i++){
+      const it=LV_REMAIN_PLATE[i], y=by0+i*(barH+gap);
+      const app=i<rRev?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.5-i*0.9)/0.7)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,10,18,0.86)'; ctx.fillRect(bx,y,bw,barH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.6; ctx.strokeRect(bx,y,bw,barH);
+      const bs=barH-8;
+      ctx.fillStyle=it.col; ctx.fillRect(bx+6,y+4,bs,bs);
+      ctx.fillStyle='rgba(6,8,14,0.96)'; ctx.font='900 '+Math.round(bs*0.62)+'px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText(it.rank, bx+6+bs/2, y+4+bs*0.72);
+      ctx.textAlign='left';
+      ctx.fillStyle=it.col; ctx.font='900 13px ui-monospace,monospace';
+      ctx.fillText(it.who, bx+bs+18, y+barH*0.46);
+      ctx.fillStyle='rgba(232,240,248,0.9)'; ctx.font='800 6.6px ui-monospace,monospace';
+      ctx.fillText(it.tag, bx+bs+18, y+barH*0.78);
+      ctx.globalAlpha=1;
+    }
+
+    const scX=W*0.235, scW=W*0.365, scY=top+H*0.435, scH=H*0.205;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(2,14,20,0.86)'; ctx.fillRect(scX,scY,scW,scH);
+    ctx.strokeStyle=`rgba(185,240,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(scX,scY,scW,scH);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(200,242,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE — THE REFUSING REMAINDER', scX+8, scY+13);
+    const smRev=Math.max(0,Math.min(LV_REFUSE.length, Math.floor((lt-3.6)/0.28)+1));
+    for(let i=0;i<LV_REFUSE.length;i++){
+      const app=i<smRev?((i===smRev-1)?Math.max(0,Math.min(1,(lt-3.6-i*0.28)/0.22)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=scY+26+i*((scH-30)/LV_REFUSE.length)+8, last=i===LV_REFUSE.length-1;
+      ctx.fillStyle= last?'#b9f0ff':'#d8f6ff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', scX+10, ry);
+      ctx.fillStyle= last?'rgba(200,242,255,0.98)':'rgba(232,240,246,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_REFUSE[i].replace('◆ ',''), scX+22, ry, scW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    const ocX=W*0.62, ocW=W*0.37, ocY=scY, ocH=scH;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.4)/0.6));
+    ctx.fillStyle='rgba(18,6,6,0.86)'; ctx.fillRect(ocX,ocY,ocW,ocH);
+    ctx.strokeStyle=`rgba(255,59,74,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(ocX,ocY,ocW,ocH);
+    ctx.fillStyle='rgba(255,150,150,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE DARK HALF — SIMON HANGED, GRAY STILL ATTACKING', ocX+8, ocY+13);
+    const orRev=Math.max(0,Math.min(LV_DARKHALF.length, Math.floor((lt-3.8)/0.3)+1));
+    for(let i=0;i<LV_DARKHALF.length;i++){
+      const app=i<orRev?((i===orRev-1)?Math.max(0,Math.min(1,(lt-3.8-i*0.3)/0.24)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=ocY+26+i*((ocH-30)/LV_DARKHALF.length)+8, last=i===LV_DARKHALF.length-1;
+      ctx.fillStyle= last?'#ff3b4a':'#ffb0a0'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', ocX+10, ry);
+      ctx.fillStyle= last?'rgba(255,150,150,0.98)':'rgba(244,232,232,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_DARKHALF[i].replace('◆ ',''), ocX+22, ry, ocW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.4)/0.6));
+    ctx.fillStyle=`rgba(185,240,255,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE BECOMES UNIQUE — THE ONE SOUL GRAY.EXE DOES NOT ABSORB', cx, top+H*0.665);
+    ctx.fillStyle='rgba(236,240,246,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe IS LEFT HANGED, AND GRAY.EXE KEEPS ATTACKING BEYOND THAT POINT · THE VICTORY IS NOT ONLY PHYSICAL BUT TOTAL AND ONGOING', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.0)/0.6));
+    ctx.fillStyle='rgba(185,240,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE SEPARATE, THE REDUCED, THE ESCALATING — OREN STANDS APART · SIMON IS BROUGHT LOW · GRAY IS STILL NOT DONE', tX, tTop);
+    ctx.globalAlpha=1;
+    const cnN=LV_REMAIN_RANK.length, cngap=W*0.015, cnw=(tR-tX-(cnN-1)*cngap)/cnN, cnH=H*0.155, cnY=tTop+10;
+    for(let i=0;i<cnN;i++){
+      const it=LV_REMAIN_RANK[i], px=tX+i*(cnw+cngap);
+      const app=Math.max(0,Math.min(1,(lt-5.4-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,10,18,0.88)'; ctx.fillRect(px,cnY,cnw,cnH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,cnY,cnw,cnH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, cnY+14);
+      ctx.fillStyle='rgba(238,244,250,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, cnY+27, cnw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(185,240,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ OREN.EXE — THE ONLY SOUL NOT ABSORBED · SIMON.Exe HANGED · GRAY.EXE STILL ATTACKING — TOTAL AND ONGOING ★', cx, top+H*0.93);
   } else if(ph===46){
     // ----- BEAT 46: THE TOP OF THE ORDER — Toby's July 4 power-ranking correction. The corrected top-end placement:
     // 1. Gray.EXE (most powerful boss), 2. Simon.Exe (second overall, slightly above Oren.EXE), 3. Oren.EXE (just under

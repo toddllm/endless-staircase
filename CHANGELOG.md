@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE TRAPPED WITNESS (BEAT 48)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Classics is still attacking, Classics is on Simon, Simon hung up on a rope, Classics can easily escape and attack, so Classics did that. More characters, Alex, Greg, 67 Pirate, and others were infected. Classics attacked everyone, Simon is still alive but inquered and hung up on a rope and in chains."*
+
+- New BEAT 48 lore panel, THE TRAPPED WITNESS, added to THE UNDEFINED LOOP climb (cyc `[774,796]`, cycle length extended `774 → 796`).
+- Center — a **three-plate state board** revealed top-down: **SIMON.Exe** (bound, alive, injured, hung on a rope and in chains), **CLASSICS** (still free, escapes and attacks, keeps infecting), **THE CAST** (infected — Alex, Greg, 67 Pirate, and others).
+- Left column — **SIMON.Exe — BOUND & WITNESSING**: still alive but not winning, injured/inquired, hung up on a rope, in chains, cannot stop what happens around him, ◆ a trapped witness, not a controller.
+- Right column — **THE COLLAPSE STILL WIDENS**: Classics is on Simon yet still escapes, still free to attack anyway, Alex infected, Greg infected, 67 Pirate infected, ◆ and others — the spread keeps widening.
+- Faint field — a rope with a bound figure (Simon) and hanging chains, with infection motes breaking away from him and spreading rightward across the screen (the cast still being taken while he cannot intervene).
+- Insight — *"SIMON SURVIVES — BUT SURVIVAL HERE IS NOT VICTORY, IT IS PROLONGED HELPLESSNESS"* over *"STILL ALIVE, CHAINED AND HANGING, HE HAS TO REMAIN THROUGH THE CHAOS — LESS A CONTROLLER, MORE A TRAPPED, SUFFERING WITNESS · HIS WORST-FATE THEME."*
+- Three closing cards: THE BINDING, THE ESCAPE, THE WIDENING. New "THE TRAPPED WITNESS" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `trappedwitness` scene added to `tools/capture_screenshot.py`.
+
+![The Trapped Witness](screenshots/112-trapped-witness.png)
+
+## 2026-07-04 — THE REFUSING REMAINDER (BEAT 47)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Oren.EXE is the only soul who is not absorbed. Simon.Exe hanged, Gray.EXE attacking more."*
+
+- New BEAT 47 lore panel, THE REFUSING REMAINDER, added to THE UNDEFINED LOOP climb (cyc `[752,774]`, cycle length extended `752 → 774`).
+- Center — a **three-plate state board** revealed top-down: **OREN.EXE** (the only soul not absorbed, stands apart), **SIMON.Exe** (hanged, reduced, restrained, humiliated), **GRAY.EXE** (still attacking more, still not done).
+- Left column — **OREN.EXE — THE REFUSING REMAINDER**: the only soul not absorbed, everyone else gets taken but Oren does not, even after death a separate existence, he still resists being folded in, a strange dignity in a disaster route, ◆ spiritually different — the refusing remainder.
+- Right column — **THE DARK HALF**: Simon.Exe is hanged, reduced and restrained; the storm-being put on display; Gray.EXE keeps attacking more; not just winning but still escalating; ◆ his victory is total and ongoing.
+- Faint field — soul-motes drift toward a sink on the right and fade as they are absorbed, except **one bright mote (Oren)** that never gets absorbed, holding full brightness apart from the rest.
+- Insight — *"OREN.EXE BECOMES UNIQUE — THE ONE SOUL GRAY.EXE DOES NOT ABSORB"* over *"SIMON.Exe IS LEFT HANGED, AND GRAY.EXE KEEPS ATTACKING BEYOND THAT POINT · THE VICTORY IS NOT ONLY PHYSICAL BUT TOTAL AND ONGOING."*
+- Three closing cards: OREN.EXE, SIMON.Exe, GRAY.EXE. New "THE REFUSING REMAINDER" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `refusingremainder` scene added to `tools/capture_screenshot.py`.
+
+![The Refusing Remainder](screenshots/111-refusing-remainder.png)
+
 ## 2026-07-04 — THE TOP OF THE ORDER (BEAT 46)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
