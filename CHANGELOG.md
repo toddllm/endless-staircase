@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE COLLAPSE POINT (BEAT 44)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Fun Computer says 'Something is wrong... They are DEAD, You CAN'T run, You CAN'T hide, RUN AWAY RUN AWAY, RUN AS FAST AS YOU CAN', Each character has the running energy and warn energy, some slain. Gray.EXE hung Simon.Exe on clothe pins. Gray.EXE taken every soul. Simon was only left with his Wenda necklace. Gray.EXE slain Wenda."*
+
+- New BEAT 44 lore panel, THE COLLAPSE POINT, added to THE UNDEFINED LOOP climb (cyc `[686,708]`, cycle length extended `686 → 708`).
+- Left panel — the **running energy / warn energy** split: who can flee, who can warn, who is caught before either, and how even the survivors are spent.
+- Right-top panel — **Gray.EXE takes it all**: hangs Simon.Exe on clothespins, takes every soul, slays Wenda, and leaves Simon with only the Wenda necklace.
+- Right-lower panel — **Fun Computer's panic warning**, drawn as a pulsing alarm that repeats rather than dialogue.
+- Faint background field of "energy nodes" — each a tiny figure with draining running (amber) / warn (blue) bars, some marked with an X (caught first), plus a clothespin line.
+- Three closing cards: THE ALARM, THE ENERGY SPLIT, THE LAST KEEPSAKE. New "THE COLLAPSE POINT" rung added to the beat ladder.
+
+![The Collapse Point](screenshots/108-collapse-point.png)
+
 ## 2026-07-04 — THE SCATTERED MAP: every key and every door is in a different room, very far apart from each other, so the map itself becomes the threat before any boss appears. No key shares a room with another, and the door you need is always rooms away from the key that opens it, so you cannot rush a single route — the game turns into endurance, navigation, memory, backtracking, and surviving long travel between objectives. The distance is the danger; the structure is already punishing before a single fight starts. Then Gray.EXE and Simon.Exe were found, and the two worst horrors are loose in the same rooms you have to cross, so exploration stops being merely hard and turns deadly — every long walk is now through danger, and escape, regrouping, and progress all get harder while those two are active. First the player realizes the map is huge and inconvenient, then that the strongest horrors are in it with them — a strong setup for a late-game route (Lore 38 follow-up, "Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.")
 
 Based on Toby's July 4 map-structure email, the direct sequel to THE COLLAPSE ROUTE. In Toby's words: *"Every key and door are in different rooms, very far apart from each other. Gray.EXE and Simon.Exe were found."* This one changes the **shape** of the whole game rather than adding a new fighter. The layout is the mechanic: every key and every door sits in its own far room, no two keys share a room, and the door you need is always rooms away from the key that opens it. So the game stops being only about winning fights and becomes about **endurance, navigation, memory, backtracking, and surviving long travel between objectives** — the distance itself is the threat, and the structure is already punishing before any boss appears. Then the second line, *"Gray.EXE and Simon.Exe were found,"* is the turn: the two most destructive late-stage forces are now loose in the same rooms the player has to keep crossing, so exploration flips from merely hard to **deadly** — escape, regrouping, and progress all get harder while those two are active. The dread lands in two steps: first the player realizes the map is huge and inconvenient, then that the strongest horrors are in it with them. Added as a **forty-fourth beat, THE SCATTERED MAP** (key-gold `#ffc44a` with door-teal `#5ad0c0` accents and danger-red `#ff4a5a` for the found threats), on the end of the UNDEFINED LOOP cutscene, right after THE COLLAPSE ROUTE. Additive — every earlier beat is untouched.
