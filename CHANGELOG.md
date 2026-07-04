@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE NEWEST TIMELINE (BEAT 49)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"In the 'newest' timeline, ToddLLM removed all the OC characters and made everyone locked into the vanilla form and deleted all the other forms. More timelines keep getting added. It is only the normal Sprunkis, ToddLLM, and Classics, and EndlessAnimations. Classics keeps moving to Simon after each attack... Most Powerful is Gray... Gray.EXE is the most powerful, ToddLLM is second... Simon.Exe consumes Brud.EXE... Gray has an ability called '404: Death Not Found', Gray is the only one with that ability. it stops Simon.Exe's Death Control ability."*
+
+- New BEAT 49 lore panel, THE NEWEST TIMELINE, added to THE UNDEFINED LOOP climb (cyc `[796,818]`, cycle length extended `796 → 818`).
+- Center — a **six-row power ranking**: 1. **GRAY.EXE** (most powerful by far, has 404: Death Not Found), 2. **TODDLLM 001** (the only one who can dodge Gray), 3. **CLASSICS** (keeps returning to Simon to drain power), 4. **OREN.EXE**, 5. **SIMON.Exe** (lower here, but still consumes Brud.EXE), 6. **BRUD** (now extremely powerful, consumed by Simon). (Toby gave two orders in one email; this uses his later correction, "Gray most powerful, ToddLLM second.")
+- Left column — **THE VANILLA LOCKDOWN**: ToddLLM removed all the OC characters, everyone locked into vanilla form, all other forms deleted, only Sprunkis · ToddLLM · Classics · EndlessAnimations remain, more timelines keep getting added, ◆ Classics drains Simon and Simon consumes Brud.EXE.
+- Right column — **GRAY.EXE — "404: DEATH NOT FOUND"**: the ability is Gray's alone, it shuts off Simon.Exe's Death Control, he can erase the game/Classics/everyone, one slash KOs Simon, a heart-shaped darkmatter beam KOs ToddLLM, ◆ ToddLLM can dodge but Gray still wins eventually.
+- Faint field — a vanilla "cell grid" snaps into place while a red **404** pulse marks Gray's death-cancel override spreading across the board.
+- Insight — *"GRAY.EXE IS NOT JUST STRONGER THAN SIMON — 404: DEATH NOT FOUND CANCELS SIMON'S CONTROL OVER DEATH"* over *"TODDLLM STRIPS THE WORLD TO VANILLA, BUT THE STRONGEST HORRORS REMAIN AND BECOME EVEN MORE CENTRAL · GRAY BEATS TODDLLM AFTER A LONG FIGHT."*
+- Three closing cards: THE LOCKDOWN, THE HARD COUNTER, THE FINAL ORDER. New "THE NEWEST TIMELINE" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `newesttimeline` scene added to `tools/capture_screenshot.py`.
+
+![The Newest Timeline](screenshots/113-newest-timeline.png)
+
 ## 2026-07-04 — THE TRAPPED WITNESS (BEAT 48)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").

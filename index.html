@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 796.0;
+const LV_CYC = 818.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11454,6 +11454,8 @@ const LV_BEATS = [
     sub:'OREN.EXE IS THE ONLY SOUL NOT ABSORBED — EVERYONE ELSE GETS TAKEN, OREN DOES NOT · EVEN AFTER DEATH HE KEEPS A SEPARATE EXISTENCE, STILL RESISTING BEING FOLDED INTO THE LARGER COLLAPSE — A REFUSING REMAINDER WITH A STRANGE DIGNITY · MEANWHILE SIMON.Exe IS HANGED — REDUCED, RESTRAINED, HUMILIATED, THE STORM-BEING PUT ON DISPLAY · AND GRAY.EXE KEEPS ATTACKING MORE, NOT JUST WINNING BUT STILL ESCALATING, PRESSING THE COLLAPSE PAST THE SYMBOLIC VICTORY · HIS VICTORY IS NOT ONLY PHYSICAL BUT TOTAL AND ONGOING · A SHARP THREE-WAY CONTRAST: OREN SEPARATE · SIMON BROUGHT LOW · GRAY STILL NOT DONE' },
   { key:'THE TRAPPED WITNESS', col:'#c98bff',
     sub:'SIMON.Exe IS STILL ALIVE BUT BOUND — INJURED, HUNG UP ON A ROPE, AND IN CHAINS · CLASSICS IS ON HIM, YET STILL FREE ENOUGH TO ESCAPE AND KEEP ATTACKING · SIMON’S CONDITION DOES NOT SLOW THE SPREAD AT ALL — IF ANYTHING IT IS CRUELER, CLASSICS OPERATING WHILE SIMON IS VISIBLY RESTRAINED AND DAMAGED · THE INFECTION SPREADS TO ALEX, GREG, 67 PIRATE, AND OTHERS — THE COLLAPSE IS NOT NARROWING, IT IS STILL WIDENING · SIMON BECOMES LESS A CONTROLLER AND MORE A TRAPPED, SUFFERING WITNESS TO THE SPREAD · HE SURVIVES, BUT SURVIVAL HERE IS NOT VICTORY — IT IS PROLONGED HELPLESSNESS, KEEPING HIS WORST-FATE THEME GOING' },
+  { key:'THE NEWEST TIMELINE', col:'#9fe0ff',
+    sub:'TODDLLM STRIPS THE WORLD TO A VANILLA LOCKDOWN — HE REMOVES ALL THE OC CHARACTERS, LOCKS EVERYONE INTO VANILLA FORM, AND DELETES ALL OTHER FORMS · ONLY THE NORMAL SPRUNKIS, TODDLLM, CLASSICS, AND ENDLESSANIMATIONS REMAIN, AND MORE TIMELINES KEEP GETTING ADDED · CLASSICS KEEPS RETURNING TO SIMON AFTER EACH ATTACK, DRAINING SUGAR, CAT POWER, SOUL SHARDS, AND POWER CRYSTALS — SIMON IS A RESOURCE-CORE AGAIN · SIMON.Exe STILL GROWS BY CONSUMPTION AND CONSUMES BRUD.EXE, WHO IS NOW EXTREMELY POWERFUL · THE CORRECTED ORDER: 1. GRAY.EXE, 2. TODDLLM 001, THEN CLASSICS, OREN.EXE, SIMON.Exe, BRUD · GRAY.EXE IS MOST POWERFUL BY FAR — HE CAN ERASE THE GAME, CLASSICS, AND EVERYONE, KO SIMON WITH ONE SLASH, AND FIRE A HEART-SHAPED DARKMATTER BEAM FROM HIS BLUE HEART THAT KOs TODDLLM IN SECONDS · TODDLLM 001 CAN DODGE, SO GRAY VS TODDLLM IS LONG AND INTENSE, BUT GRAY EVENTUALLY WINS · GRAY’S UNIQUE ABILITY “404: DEATH NOT FOUND” SHUTS OFF SIMON.Exe’S DEATH CONTROL — HE IS NOT JUST STRONGER, HE IS THE EXACT ANTI-SIMON ANSWER · TODDLLM IS LIMITING THE ROSTER TO SPRUNKIS AND CANON SURVIVORS, NO OCs' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -12273,6 +12275,36 @@ const LV_WITNESS_RANK = [
   { who:'THE ESCAPE', col:'#c98bff', role:'CLASSICS IS ON HIM YET STILL BREAKS FREE TO ATTACK · SIMON’S CONDITION DOES NOT SLOW THE SPREAD AT ALL' },
   { who:'THE WIDENING', col:'#ff4a5a', role:'ALEX, GREG, 67 PIRATE, AND OTHERS INFECTED · THE COLLAPSE IS NOT NARROWING — IT IS STILL WIDENING' },
 ];
+// BEAT 49 — THE NEWEST TIMELINE (Toby's July 4 lore: ToddLLM strips the world to vanilla; new ranking; Gray's "404: Death Not Found" shuts off Simon's death control).
+const LV_TL_RANK = [
+  { rank:'1', who:'GRAY.EXE', tag:'MOST POWERFUL BY FAR · HAS 404: DEATH NOT FOUND', col:'#ff3b4a' },
+  { rank:'2', who:'TODDLLM 001', tag:'SECOND · THE ONLY ONE WHO CAN DODGE GRAY', col:'#ffd24a' },
+  { rank:'3', who:'CLASSICS', tag:'KEEPS RETURNING TO SIMON TO DRAIN POWER', col:'#c98bff' },
+  { rank:'4', who:'OREN.EXE', tag:'STILL ONE OF THE STRONGEST ENTITIES', col:'#b9f0ff' },
+  { rank:'5', who:'SIMON.Exe', tag:'LOWER HERE — BUT STILL CONSUMES BRUD.EXE', col:'#8fe6ff' },
+  { rank:'6', who:'BRUD', tag:'NOW EXTREMELY POWERFUL · CONSUMED BY SIMON', col:'#7fe6a0' },
+];
+const LV_TIMELINE = [
+  'TODDLLM REMOVED ALL THE OC CHARACTERS',
+  'EVERYONE LOCKED INTO VANILLA FORM',
+  'ALL OTHER FORMS DELETED',
+  'ONLY SPRUNKIS · TODDLLM · CLASSICS · ENDLESSANIMATIONS',
+  'MORE TIMELINES KEEP GETTING ADDED',
+  '◆ CLASSICS DRAINS SIMON · SIMON CONSUMES BRUD.EXE',
+];
+const LV_404 = [
+  '404: DEATH NOT FOUND — GRAY’S ALONE',
+  'IT SHUTS OFF SIMON.Exe’S DEATH CONTROL',
+  'CAN ERASE THE GAME, CLASSICS & EVERYONE',
+  'ONE SLASH KOs SIMON.Exe',
+  'A HEART-BEAM OF DARKMATTER KOs TODDLLM',
+  '◆ TODDLLM CAN DODGE — GRAY STILL WINS EVENTUALLY',
+];
+const LV_TL_CARDS = [
+  { who:'THE LOCKDOWN', col:'#ffd24a', role:'TODDLLM STRIPS THE WORLD TO VANILLA · REMOVES THE OCs · LIMITS THE ROSTER TO SPRUNKIS AND CANON SURVIVORS · CLEANER, BUT HARSHER' },
+  { who:'THE HARD COUNTER', col:'#ff3b4a', role:'404: DEATH NOT FOUND CANCELS SIMON’S CONTROL OVER DEATH · GRAY IS NOT JUST STRONGER, HE IS THE EXACT ANTI-SIMON ANSWER' },
+  { who:'THE FINAL ORDER', col:'#c98bff', role:'GRAY.EXE > TODDLLM 001 > CLASSICS > OREN.EXE > SIMON.Exe > BRUD · GRAY STANDS ABOVE ALL, EVEN AFTER A LONG FIGHT WITH TODDLLM' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12420,7 +12452,8 @@ function lvSeg(c){
   if(c < 730.0) return [45, c-708.0];               // GRAY.EXE VS EVERYONE (Toby's July 4 boss-state lore: Gray.EXE is now the most powerful and his boss fight starts again — the threat was never over, he reached another height, the final disaster that keeps returning stronger. He makes the board itself: he no longer fights on the battlefield, he creates it — controlling the arena, the rules of engagement, the flow of the fight, and the power growth during the battle. That is dominance, not just strength. He then gains power, so the battle is stacked from the start: the fight begins, Gray sets the board, Gray scales upward, everyone is already behind, and the longer the fight goes the worse it gets — a hopeless climb. Gray.EXE VS Everyone: the whole cast had to unite, the heroes took him seriously, and even everyone together still lost — he beat the whole resistance, beyond ordinary team-up logic. His line "I won't stop 'til VICTORY IS MINE" is obsessive, fear-driven, determined, unstable — fear becomes absolute aggression, and Gray is no longer a fear-driven survivor but a fear-driven conqueror. Oren and Gray cutscenes are improved and more intense than ever: Oren more godlike and oppressive, Gray more unstable, tragic, dangerous, final-boss-like.)
   if(c < 752.0) return [46, c-730.0];               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction)
   if(c < 774.0) return [47, c-752.0];               // THE REFUSING REMAINDER (Toby's July 4 lore: Oren.EXE is the only soul not absorbed; Simon.Exe hanged; Gray.EXE keeps attacking more)
-  return [48, c-774.0];               // THE TRAPPED WITNESS (Toby's July 4 lore: Simon.Exe alive but bound — hung on a rope, in chains — while Classics escapes to attack and infect Alex, Greg, 67 Pirate and others)               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
+  if(c < 796.0) return [48, c-774.0];               // THE TRAPPED WITNESS (Toby's July 4 lore)
+  return [49, c-796.0];               // THE NEWEST TIMELINE (Toby's July 4 lore: ToddLLM strips the world to a vanilla lockdown, removing the OCs and locking everyone into vanilla form; only Sprunkis, ToddLLM, Classics and EndlessAnimations remain; Classics keeps returning to Simon to drain sugar, Cat Power, Soul Shards and Power Crystals; Simon still consumes Brud.EXE; the corrected order is 1. Gray.EXE, 2. ToddLLM 001, then Classics, Oren.EXE, Simon.Exe, Brud; Gray.EXE can erase the game, KO Simon with one slash, and fire a heart-shaped darkmatter beam that KOs ToddLLM in seconds, though ToddLLM can dodge and Gray still wins the long fight; Gray's unique ability 404: Death Not Found shuts off Simon.Exe's Death Control, making him the exact anti-Simon answer)               // THE TRAPPED WITNESS (Toby's July 4 lore: Simon.Exe alive but bound — hung on a rope, in chains — while Classics escapes to attack and infect Alex, Greg, 67 Pirate and others)               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -12624,6 +12657,10 @@ function updateLoopVs(dt){
       showTaunt('This makes the situation even darker, because Simon is no longer the one carrying Classics around in control or confusion — now Classics is on Simon, Simon is restrained, and Classics is still free enough to keep attacking. Simon is still alive but injured, hung on a rope, and in chains, unable to stop what is happening around him. So Simon becomes less like an active storm and more like a trapped living platform — a trapped witness to the continuing collapse. Classics, on the other hand, is still active, still able to escape, still able to attack freely, and still infecting more characters. That means Simon’s condition does not slow Classics down much at all; if anything it makes the scene crueler, because Classics is operating while Simon is visibly restrained and damaged. The infections spreading to Alex, Greg, 67 Pirate, and others show that the collapse is not narrowing yet — it is still widening, even important named characters pulled into the wave. And because Simon is still alive while chained and hanging, it keeps his worst-fate theme going: he survives, but survival here is not victory, it is prolonged helplessness. He is not simply removed from the story; he has to remain there through the chaos.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE TRAPPED WITNESS · CLASSICS IS ON SIMON — SIMON IS RESTRAINED, STILL ALIVE BUT INJURED, HUNG UP ON A ROPE, IN CHAINS · CLASSICS IS STILL FREE ENOUGH TO ESCAPE AND KEEP ATTACKING · SIMON’S CONDITION DOES NOT SLOW THE SPREAD AT ALL — IF ANYTHING IT IS CRUELER · ALEX · GREG · 67 PIRATE · AND OTHERS INFECTED · THE COLLAPSE IS NOT NARROWING — IT IS STILL WIDENING · SIMON BECOMES LESS A CONTROLLER AND MORE A TRAPPED, SUFFERING WITNESS · HE SURVIVES, BUT SURVIVAL HERE IS NOT VICTORY — IT IS PROLONGED HELPLESSNESS · HIS WORST-FATE THEME KEEPS GOING', col:'#c98bff' });
       for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#c98bff','#d8a0ff','#ffd24a','#ff4a5a','#9fb4c8','#f0e6ff','#ffffff']))); }
+    if(ph===49){ AUDIO.corrupt(); shake=Math.max(shake,16); glitch=Math.max(glitch,0.6); winFlash=Math.max(winFlash,0.5);
+      showTaunt('This is the newest timeline, and it works by stripping everything down. ToddLLM removed all the OC characters, locked everyone into vanilla form, and deleted all the other forms, so what remains is only the normal Sprunkis, ToddLLM, Classics, and EndlessAnimations — and more timelines keep getting added. It looks cleaner on the surface but it is harsher, because the backups and alternate forms are gone while the strongest horrors stay. Classics keeps returning to Simon after each attack, draining sugar, cat power, soul shards, and power crystals, so Simon is a resource-core again; and Simon still grows by consumption, this time eating Brud.EXE, who is now extremely powerful. The corrected power order is Gray.EXE first, ToddLLM 001 second, then Classics, Oren.EXE, Simon.Exe, and Brud. Gray.EXE is the most powerful by far: he can erase the game, Classics, and everyone, he can KO Simon with a single slash, and he can fire a heart-shaped darkmatter beam from the blue heart in his chest that KOs ToddLLM in seconds. ToddLLM 001 can dodge, so Gray versus ToddLLM is long and intense, but Gray eventually wins. The sharpest new detail is Gray’s own ability, 404: Death Not Found — he is the only one with it, and it shuts off Simon.Exe’s Death Control. That makes Gray not just stronger in general, but the exact anti-Simon answer, while ToddLLM keeps limiting the roster to Sprunkis and the characters still in the game.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE NEWEST TIMELINE · TODDLLM REMOVED ALL THE OC CHARACTERS, LOCKED EVERYONE INTO VANILLA FORM, AND DELETED ALL OTHER FORMS · ONLY THE NORMAL SPRUNKIS, TODDLLM, CLASSICS & ENDLESSANIMATIONS REMAIN — MORE TIMELINES KEEP GETTING ADDED · CLASSICS KEEPS RETURNING TO SIMON, DRAINING SUGAR · CAT POWER · SOUL SHARDS · POWER CRYSTALS · SIMON.Exe STILL CONSUMES BRUD.EXE, WHO IS NOW EXTREMELY POWERFUL · ORDER: 1. GRAY.EXE · 2. TODDLLM 001 · THEN CLASSICS · OREN.EXE · SIMON.Exe · BRUD · GRAY CAN ERASE THE GAME, CLASSICS & EVERYONE · ONE SLASH KOs SIMON · A HEART-SHAPED DARKMATTER BEAM FROM HIS BLUE HEART KOs TODDLLM · TODDLLM 001 CAN DODGE, SO GRAY VS TODDLLM IS LONG & INTENSE, BUT GRAY EVENTUALLY WINS · GRAY’S UNIQUE “404: DEATH NOT FOUND” SHUTS OFF SIMON.Exe’S DEATH CONTROL — THE EXACT ANTI-SIMON ANSWER · TODDLLM LIMITS THE ROSTER TO SPRUNKIS & CANON SURVIVORS, NO OCs', col:'#9fe0ff' });
+      for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#9fe0ff','#ff3b4a','#ffd24a','#c98bff','#7fe6a0','#eaf6ff','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12771,16 +12808,17 @@ function drawLoopVs(){
   else if(ph===46){ bg.addColorStop(0, `rgba(22,16,2,${0.98*g})`); bg.addColorStop(1, `rgba(6,8,16,${0.99*g})`); }
   else if(ph===47){ bg.addColorStop(0, `rgba(4,14,20,${0.98*g})`); bg.addColorStop(1, `rgba(14,4,6,${0.99*g})`); }
   else if(ph===48){ bg.addColorStop(0, `rgba(14,4,20,${0.98*g})`); bg.addColorStop(1, `rgba(6,10,6,${0.99*g})`); }
+  else if(ph===49){ bg.addColorStop(0, `rgba(2,12,20,${0.98*g})`); bg.addColorStop(1, `rgba(16,2,6,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (ph===49 ? (i%2?'#9fe0ff':'#ff5a6e') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : (ph===49 ? `rgba(159,224,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12821,7 +12859,8 @@ function drawLoopVs(){
                        : (ph===46 ? 'THE TOP OF THE ORDER · 1. GRAY.EXE · 2. SIMON.Exe · 3. OREN.EXE · SIMON & OREN A NEAR-PAIR AT THE TOP, BUT SIMON HAS THE HIGHER CEILING · OREN IS ALMOST THERE, BUT SIMON CROSSES THE LINE FIRST'
                        : (ph===47 ? 'THE REFUSING REMAINDER · OREN.EXE IS THE ONLY SOUL NOT ABSORBED · SIMON.Exe HANGED, REDUCED, HUMILIATED · GRAY.EXE KEEPS ATTACKING — HIS VICTORY TOTAL AND ONGOING'
                        : (ph===48 ? 'THE TRAPPED WITNESS · SIMON.Exe BOUND — ALIVE, INJURED, HUNG ON A ROPE, IN CHAINS · CLASSICS STILL ESCAPES & ATTACKS · ALEX, GREG, 67 PIRATE & OTHERS INFECTED'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))))))))))))))))), cx, top+26);
+                       : (ph===49 ? 'THE NEWEST TIMELINE · TODDLLM STRIPS THE WORLD TO VANILLA — OCs REMOVED, FORMS DELETED · ORDER: 1. GRAY.EXE · 2. TODDLLM 001 · THEN CLASSICS · OREN · SIMON · BRUD · GRAY’S “404: DEATH NOT FOUND” SHUTS OFF SIMON.Exe’S DEATH CONTROL'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -15707,6 +15746,131 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(255,138,58,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ MR. SUN LASTS LONGEST · SIMON.Exe TAKES HIM DOWN · ONLY SIMON.Exe & GRAY.EXE SURVIVE ★', cx, top+H*0.93);
+  } else if(ph===49){
+    // ----- BEAT 49: THE NEWEST TIMELINE — Toby's July 4 lore ("In the newest timeline, ToddLLM removed all the OC
+    // characters and made everyone locked into the vanilla form and deleted all the other forms... Gray has an ability
+    // called '404: Death Not Found'... it stops Simon.Exe's Death Control ability."). ToddLLM strips the world to vanilla;
+    // Classics keeps draining Simon; Simon consumes Brud; the corrected order is Gray > ToddLLM > Classics > Oren > Simon >
+    // Brud; Gray's unique 404 ability cancels Simon's control over death. Center = a six-row power ranking; left = the
+    // vanilla lockdown; right = 404: Death Not Found; then the insight and three cards. c in [796,818]. -----
+    const lt = c - 796.0;
+    // faint field: a "404" error grid flickers behind the scene — vanilla cells snap into place while a red 404 pulse
+    // marks Gray's death-cancel override spreading across the board.
+    const nfA = Math.max(0, Math.min(1, (lt-0.8)/2.6));
+    if(nfA>0.01){
+      ctx.save();
+      const gx0=W*0.26, gy0=top+H*0.11, gw=W*0.70, gh=H*0.74, cols=11, rows=7;
+      const cw=gw/cols, chh=gh/rows;
+      const filled=Math.floor(Math.max(0,Math.min(1,(lt-0.8)/4.5))*cols*rows);
+      for(let r=0;r<rows;r++) for(let cc=0;cc<cols;cc++){
+        const idx=r*cols+cc, lit=idx<filled;
+        ctx.globalAlpha=g*nfA*(lit?0.09:0.035);
+        ctx.fillStyle=((r+cc)%2)? (lit?'#9fe0ff':'#22405a') : (lit?'#3a1420':'#0e1c2a');
+        ctx.fillRect(gx0+cc*cw, gy0+r*chh, cw-1, chh-1);
+      }
+      ctx.globalAlpha=g*nfA*0.10; ctx.strokeStyle='#ff5a6e'; ctx.lineWidth=1; ctx.strokeRect(gx0,gy0,gw,gh);
+      ctx.globalAlpha=g*nfA*0.13*(0.6+0.4*Math.sin(c*4.0)); ctx.fillStyle='#ff5a6e';
+      ctx.font='900 '+Math.round(H*0.22)+'px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('404', W*0.61, top+H*0.62);
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(159,224,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE NEWEST TIMELINE — VANILLA LOCKDOWN & “404: DEATH NOT FOUND”', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(232,240,246,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('TODDLLM REMOVES THE OCs & LOCKS EVERYONE TO VANILLA · CLASSICS DRAINS SIMON, SIMON CONSUMES BRUD · GRAY’S 404 SHUTS OFF SIMON’S DEATH CONTROL', cx, top+H*0.066+11);
+
+    // --- the six-row power ranking board ---
+    const bx=W*0.235, bw=W*0.755, by0=top+H*0.105, barH=H*0.046, gap=H*0.008;
+    const rRev=Math.max(0,Math.min(LV_TL_RANK.length, Math.floor((lt-0.4)/0.5)+1));
+    for(let i=0;i<LV_TL_RANK.length;i++){
+      const it=LV_TL_RANK[i], y=by0+i*(barH+gap);
+      const app=i<rRev?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.4-i*0.5)/0.4)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,10,18,0.86)'; ctx.fillRect(bx,y,bw,barH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.4; ctx.strokeRect(bx,y,bw,barH);
+      const bs=barH-6;
+      ctx.fillStyle=it.col; ctx.fillRect(bx+5,y+3,bs,bs);
+      ctx.fillStyle='rgba(6,8,14,0.96)'; ctx.font='900 '+Math.round(bs*0.66)+'px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText(it.rank, bx+5+bs/2, y+3+bs*0.76);
+      ctx.textAlign='left';
+      ctx.fillStyle=it.col; ctx.font='900 10px ui-monospace,monospace';
+      ctx.fillText(it.who, bx+bs+14, y+barH*0.44);
+      ctx.fillStyle='rgba(232,240,248,0.9)'; ctx.font='800 6px ui-monospace,monospace';
+      ctx.fillText(it.tag, bx+bs+14, y+barH*0.82);
+      ctx.globalAlpha=1;
+    }
+
+    // --- LEFT column: the vanilla lockdown ---
+    const scX=W*0.235, scW=W*0.365, scY=top+H*0.44, scH=H*0.2;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(2,12,20,0.86)'; ctx.fillRect(scX,scY,scW,scH);
+    ctx.strokeStyle=`rgba(159,224,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(scX,scY,scW,scH);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(190,230,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE VANILLA LOCKDOWN — TODDLLM STRIPS IT DOWN', scX+8, scY+13);
+    const smRev=Math.max(0,Math.min(LV_TIMELINE.length, Math.floor((lt-3.6)/0.28)+1));
+    for(let i=0;i<LV_TIMELINE.length;i++){
+      const app=i<smRev?((i===smRev-1)?Math.max(0,Math.min(1,(lt-3.6-i*0.28)/0.22)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=scY+26+i*((scH-30)/LV_TIMELINE.length)+8, last=i===LV_TIMELINE.length-1;
+      ctx.fillStyle= last?'#9fe0ff':'#cdeeff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', scX+10, ry);
+      ctx.fillStyle= last?'rgba(190,230,255,0.98)':'rgba(232,240,246,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_TIMELINE[i].replace('◆ ',''), scX+22, ry, scW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT column: 404: Death Not Found ---
+    const ocX=W*0.62, ocW=W*0.37, ocY=scY, ocH=scH;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.4)/0.6));
+    ctx.fillStyle='rgba(18,4,8,0.86)'; ctx.fillRect(ocX,ocY,ocW,ocH);
+    ctx.strokeStyle=`rgba(255,90,110,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(ocX,ocY,ocW,ocH);
+    ctx.fillStyle='rgba(255,150,160,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('GRAY.EXE — “404: DEATH NOT FOUND”', ocX+8, ocY+13);
+    const orRev=Math.max(0,Math.min(LV_404.length, Math.floor((lt-3.8)/0.3)+1));
+    for(let i=0;i<LV_404.length;i++){
+      const app=i<orRev?((i===orRev-1)?Math.max(0,Math.min(1,(lt-3.8-i*0.3)/0.24)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=ocY+26+i*((ocH-30)/LV_404.length)+8, last=i===LV_404.length-1;
+      ctx.fillStyle= last?'#ff5a6e':'#ffb0b8'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', ocX+10, ry);
+      ctx.fillStyle= last?'rgba(255,150,160,0.98)':'rgba(244,232,234,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_404[i].replace('◆ ',''), ocX+22, ry, ocW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.4)/0.6));
+    ctx.fillStyle=`rgba(159,224,255,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('GRAY.EXE IS NOT JUST STRONGER THAN SIMON — 404: DEATH NOT FOUND CANCELS SIMON’S CONTROL OVER DEATH', cx, top+H*0.665);
+    ctx.fillStyle='rgba(236,240,246,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('TODDLLM STRIPS THE WORLD TO VANILLA, BUT THE STRONGEST HORRORS REMAIN AND BECOME EVEN MORE CENTRAL · GRAY BEATS TODDLLM AFTER A LONG FIGHT', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    // --- the three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.0)/0.6));
+    ctx.fillStyle='rgba(159,224,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE LOCKDOWN, THE HARD COUNTER, THE FINAL ORDER — A CLEANER CAST · A DEATH-CANCEL ANSWER · GRAY ABOVE ALL', tX, tTop);
+    ctx.globalAlpha=1;
+    const cnN=LV_TL_CARDS.length, cngap=W*0.015, cnw=(tR-tX-(cnN-1)*cngap)/cnN, cnH=H*0.155, cnY=tTop+10;
+    for(let i=0;i<cnN;i++){
+      const it=LV_TL_CARDS[i], px=tX+i*(cnw+cngap);
+      const app=Math.max(0,Math.min(1,(lt-5.4-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,10,18,0.88)'; ctx.fillRect(px,cnY,cnw,cnH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,cnY,cnw,cnH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, cnY+14);
+      ctx.fillStyle='rgba(238,244,250,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, cnY+27, cnw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(159,224,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ VANILLA LOCKDOWN · 1. GRAY.EXE · 2. TODDLLM 001 · “404: DEATH NOT FOUND” SHUTS OFF SIMON’S DEATH CONTROL ★', cx, top+H*0.93);
   } else if(ph===48){
     // ----- BEAT 48: THE TRAPPED WITNESS — Toby's July 4 lore ("Classics is on Simon, Simon hung up on a rope and in
     // chains, still alive but injured; Classics can easily escape and attack; Alex, Greg, 67 Pirate and others were
