@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 730.0;
+const LV_CYC = 752.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11448,6 +11448,8 @@ const LV_BEATS = [
     sub:'THE MOMENT THE GAME STOPS PRETENDING THINGS ARE MANAGEABLE · FUN COMPUTER — USUALLY A CALM SYSTEM CHARACTER — BREAKS INTO A PANIC WARNING THAT REPEATS LIKE AN ALARM, NOT DIALOGUE: “SOMETHING IS WRONG… THEY ARE DEAD, YOU CAN’T RUN, YOU CAN’T HIDE, RUN AWAY RUN AWAY, RUN AS FAST AS YOU CAN” · THE SYSTEM HAS ALREADY DETECTED MASS DEATH AND ESCAPE IS BASICALLY IMPOSSIBLE — THE TONE SHIFTS FROM BATTLE TO SURVIVAL HORROR · EVERY CHARACTER IS NOW SPLIT INTO RUNNING ENERGY (ENOUGH TO FLEE) AND WARN ENERGY (ENOUGH TO ALERT OTHERS) · SOME ARE CAUGHT BEFORE THEY CAN DO EITHER, AND EVEN THE SURVIVORS ARE EXHAUSTED, PANICKED, AND FORCED INTO HARD CHOICES · GRAY.EXE TAKES TOTAL CONTROL: HE HANGS SIMON.Exe ON CLOTHESPINS LIKE A CAPTURED TROPHY — THE UNSTOPPABLE STORM-BEING REDUCED TO SOMETHING RESTRAINED · HE TAKES EVERY SOUL, BECOMING THE HOLDER OF THE GAME’S REMAINING LIFE-FORCE · HE SLAYS WENDA · SIMON IS LEFT WITH ONLY HIS WENDA NECKLACE — HIS LAST POSSESSION AND LAST EMOTIONAL ANCHOR — WHICH MAKES THE LOSS PERSONAL, NOT JUST A POWER-LOSS' },
   { key:'GRAY.EXE VS EVERYONE', col:'#6cc4ff',
     sub:'GRAY.EXE IS NOW THE MOST POWERFUL — HIS BOSS FIGHT STARTS AGAIN · THE THREAT WAS NEVER OVER, HE REACHED ANOTHER HEIGHT · THE FINAL DISASTER THAT KEEPS RETURNING STRONGER · HE MAKES THE BOARD ITSELF — HE NO LONGER FIGHTS ON THE BATTLEFIELD, HE CREATES IT · HE CONTROLS THE ARENA, THE RULES OF ENGAGEMENT, THE FLOW OF THE FIGHT, AND THE POWER GROWTH DURING THE BATTLE — DOMINANCE, NOT JUST STRENGTH · HE THEN GAINS POWER, SO THE BATTLE IS STACKED FROM THE START: THE FIGHT BEGINS, GRAY SETS THE BOARD, GRAY SCALES UPWARD, EVERYONE IS ALREADY BEHIND, AND THE LONGER THE FIGHT GOES THE WORSE IT GETS — A HOPELESS CLIMB · GRAY.EXE VS EVERYONE: THE WHOLE CAST HAD TO UNITE, THE HEROES TOOK HIM SERIOUSLY, AND EVEN EVERYONE TOGETHER STILL LOST — HE BEAT THE WHOLE RESISTANCE, BEYOND ORDINARY TEAM-UP LOGIC · HIS LINE “I WON’T STOP ’TIL VICTORY IS MINE” IS OBSESSIVE · FEAR-DRIVEN · DETERMINED · UNSTABLE — FEAR BECOMES ABSOLUTE AGGRESSION, AND GRAY IS NO LONGER A FEAR-DRIVEN SURVIVOR BUT A FEAR-DRIVEN CONQUEROR · OREN & GRAY CUTSCENES ARE IMPROVED AND MORE INTENSE THAN EVER — OREN MORE GODLIKE AND OPPRESSIVE, GRAY MORE UNSTABLE, TRAGIC, DANGEROUS, FINAL-BOSS-LIKE' },
+  { key:'THE TOP OF THE ORDER', col:'#ffd24a',
+    sub:'THE CORRECTED TOP-END PLACEMENT · 1. GRAY.EXE — THE MOST POWERFUL BOSS · 2. SIMON.Exe — SECOND MOST POWERFUL OVERALL, SLIGHTLY ABOVE OREN.EXE · 3. OREN.EXE — JUST UNDER SIMON.Exe · SIMON & OREN ARE A NEAR-PAIR AT THE TOP, BUT SIMON STILL HAS THE HIGHER CEILING · SIMON.Exe CONTROLS LIGHTNING, CONTROLS SPEED, CONTROLS DEATH ITSELF · HE IS SELF-AWARE, HE KNOWS HIS OWN STATS · HE IS NOT A BOSS BUT A BEING · HE CAN OVERTAKE HUGE PARTS OF THE GAME · A SINGULAR DISASTER-CHARACTER · OREN.EXE IS EXTREMELY CLOSE IN POWER — ONE OF THE STRONGEST ENTITIES · REALITY-BENDING SOUND PRESSURE · AN ANIMATED, BACKGROUND-WARPING FORCE · SECOND ONLY BECAUSE SIMON.Exe EDGES HIM OUT · THE DIFFERENCE IS NOT A HUGE GAP BUT A LINE: OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES IT FIRST' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -12183,6 +12185,37 @@ const LV_CONQUER = [
   { who:'THE BOARD', col:'#9a7bff', role:'HE MAKES THE BOARD ITSELF · CONTROLS THE ARENA, THE RULES, THE FLOW, AND THE POWER GROWTH · HE GAINS POWER AS THE FIGHT RUNS · DOMINANCE, NOT JUST STRENGTH' },
   { who:'THE DECLARATION', col:'#ff2a2a', role:'“I WON’T STOP ’TIL VICTORY IS MINE” · OBSESSIVE · FEAR-DRIVEN · UNSTABLE · FEAR BECOMES ABSOLUTE AGGRESSION · NO LONGER A SURVIVOR BUT A CONQUEROR · OREN & GRAY CUTSCENES MORE INTENSE THAN EVER' },
 ];
+// BEAT 46 — THE TOP OF THE ORDER (Toby's July 4 power-ranking correction).
+// the corrected top-end placement, drawn as a three-step podium (highest first).
+const LV_TOPRANK = [
+  { rank:'1', who:'GRAY.EXE', tag:'THE MOST POWERFUL BOSS', col:'#ff3b4a' },
+  { rank:'2', who:'SIMON.Exe', tag:'SECOND MOST POWERFUL OVERALL · SLIGHTLY ABOVE OREN.EXE', col:'#ffd24a' },
+  { rank:'3', who:'OREN.EXE', tag:'JUST UNDER SIMON.Exe', col:'#6cc4ff' },
+];
+// why Simon.Exe edges out Oren.EXE — his kit, drawn in the left panel
+const LV_SIMON = [
+  'CONTROLS LIGHTNING',
+  'CONTROLS SPEED',
+  'CONTROLS DEATH ITSELF',
+  'SELF-AWARE — HE KNOWS HIS OWN STATS',
+  'NOT A BOSS BUT A BEING',
+  'CAN OVERTAKE HUGE PARTS OF THE GAME',
+  '◆ A SINGULAR DISASTER-CHARACTER',
+];
+// Oren.EXE — extremely close, second only because Simon crosses the line first
+const LV_ORENCLOSE = [
+  'EXTREMELY CLOSE IN POWER',
+  'ONE OF THE STRONGEST ENTITIES',
+  'REALITY-BENDING SOUND PRESSURE',
+  'AN ANIMATED, BACKGROUND-WARPING FORCE',
+  '◆ SECOND ONLY BECAUSE SIMON.Exe EDGES HIM OUT',
+];
+// three closing cards for the ranking beat
+const LV_NEARPAIR = [
+  { who:'THE CEILING', col:'#ffd24a', role:'SIMON.Exe AND OREN.EXE ARE A NEAR-PAIR AT THE TOP · BUT SIMON STILL HAS THE HIGHER CEILING · A NEAR-PAIR, NOT A TIE' },
+  { who:'THE LINE', col:'#6cc4ff', role:'THE DIFFERENCE IS NOT A HUGE GAP BUT A LINE · OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES IT FIRST' },
+  { who:'THE ORDER', col:'#ff3b4a', role:'GRAY.EXE STAYS ON TOP · SIMON.Exe SLIGHTLY ABOVE OREN.EXE · OREN.EXE JUST UNDER HIM · A GOOD POWER RELATIONSHIP' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12327,7 +12360,8 @@ function lvSeg(c){
   if(c < 664.0) return [42, c-642.0];               // THE COLLAPSE ROUTE (Toby's July 3 collapse-route mod: a survival-collapse route where almost no one gets through untouched. Mr. Sun lasts the longest because he burns each Classics parasite — the best natural counter to the infection side of the collapse. Once Sun is clearing the parasites, Simon.Exe makes him a priority target and takes him down personally — a smart threat, not random. Then Simon.Exe attacks Classics and Luigi Green too, so the collapse stops being faction-based and goes total. He zaps every remaining Classics with a burst of electricity — the final purge of the spread — and some characters are eaten by Simon.Exe, his oldest horror trait, consumption, returning in this extreme EXE state. By the end only Simon.Exe and Gray.EXE are fully left standing, with Oren.EXE lingering only as a ghost/soul — not living, not fully gone. The mod is half Brud Treatment, half Double Date, and half Betters and Loses Phase 3 — emotionally mixed and structurally unstable — less "who won the war" and more "what was left after everything else failed.")
   if(c < 686.0) return [43, c-664.0]; // THE SCATTERED MAP (Toby's July 4 map-structure lore: every key and every door is in a different room, very far apart from each other, so the map itself becomes the threat before any boss appears. No key shares a room with another, and the door you need is always rooms away from the key that opens it, so you cannot rush a single route — the game turns into endurance, navigation, memory, backtracking, and surviving long travel between objectives. The distance is the danger; the structure is already punishing before any fight starts. Then Gray.EXE and Simon.Exe were found, and the two worst horrors are loose in the same rooms you have to cross, so exploration stops being merely hard and turns deadly — every long walk is now through danger, and escape, regrouping, and progress all get harder while those two are active. First the player realizes the map is huge and inconvenient, then that the strongest horrors are in it with them — a strong setup for a late-game route.)
   if(c < 708.0) return [44, c-686.0];               // THE COLLAPSE POINT (Toby's July 4 collapse-point lore: the moment the game stops pretending things are manageable. Fun Computer — usually a calm system character — breaks into a panic warning that repeats like an alarm, not dialogue: "Something is wrong... They are DEAD, You CAN'T run, You CAN'T hide, RUN AWAY RUN AWAY, RUN AS FAST AS YOU CAN." The system has already detected mass death and escape is basically impossible; the tone shifts from battle to survival horror. Every character is now split into running energy (enough to flee) and warn energy (enough to alert others), and some are caught before they can do either — even the survivors are exhausted, panicked, and forced into hard choices. Gray.EXE takes total control of the scene: he hangs Simon.Exe on clothespins like a captured trophy, reducing the unstoppable storm-being to something restrained; he takes every soul, becoming the holder of the game's remaining life-force; and he slays Wenda. Simon is left with only his Wenda necklace — his last possession and last emotional anchor — which makes the loss personal, not just a power-loss.)
-  return [45, c-708.0];               // GRAY.EXE VS EVERYONE (Toby's July 4 boss-state lore: Gray.EXE is now the most powerful and his boss fight starts again — the threat was never over, he reached another height, the final disaster that keeps returning stronger. He makes the board itself: he no longer fights on the battlefield, he creates it — controlling the arena, the rules of engagement, the flow of the fight, and the power growth during the battle. That is dominance, not just strength. He then gains power, so the battle is stacked from the start: the fight begins, Gray sets the board, Gray scales upward, everyone is already behind, and the longer the fight goes the worse it gets — a hopeless climb. Gray.EXE VS Everyone: the whole cast had to unite, the heroes took him seriously, and even everyone together still lost — he beat the whole resistance, beyond ordinary team-up logic. His line "I won't stop 'til VICTORY IS MINE" is obsessive, fear-driven, determined, unstable — fear becomes absolute aggression, and Gray is no longer a fear-driven survivor but a fear-driven conqueror. Oren and Gray cutscenes are improved and more intense than ever: Oren more godlike and oppressive, Gray more unstable, tragic, dangerous, final-boss-like.)
+  if(c < 730.0) return [45, c-708.0];               // GRAY.EXE VS EVERYONE (Toby's July 4 boss-state lore: Gray.EXE is now the most powerful and his boss fight starts again — the threat was never over, he reached another height, the final disaster that keeps returning stronger. He makes the board itself: he no longer fights on the battlefield, he creates it — controlling the arena, the rules of engagement, the flow of the fight, and the power growth during the battle. That is dominance, not just strength. He then gains power, so the battle is stacked from the start: the fight begins, Gray sets the board, Gray scales upward, everyone is already behind, and the longer the fight goes the worse it gets — a hopeless climb. Gray.EXE VS Everyone: the whole cast had to unite, the heroes took him seriously, and even everyone together still lost — he beat the whole resistance, beyond ordinary team-up logic. His line "I won't stop 'til VICTORY IS MINE" is obsessive, fear-driven, determined, unstable — fear becomes absolute aggression, and Gray is no longer a fear-driven survivor but a fear-driven conqueror. Oren and Gray cutscenes are improved and more intense than ever: Oren more godlike and oppressive, Gray more unstable, tragic, dangerous, final-boss-like.)
+  return [46, c-730.0];               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
 }
 function updateLoopVs(dt){
   loopVs.t = (loopVs.t||0) + dt;
@@ -12519,6 +12553,10 @@ function updateLoopVs(dt){
       showTaunt('This makes Gray.EXE the true overwhelming boss-state of the game. He is now the most powerful, so the rematch means the threat was never over — he reached another height, and the cast has to face him again even after already knowing how impossible he is. That makes him less a normal villain and more the final disaster that keeps returning stronger. The huge detail is that Gray.EXE makes the board: he is not fighting on the battlefield anymore, he is creating the battlefield itself — the arena, the rules of engagement, the flow of the fight, and the power growth during the battle. That is not just being strong, that is dominance. Then he gains power, so the fight is stacked from the very start: the battle begins, Gray sets the board, Gray scales upward, everyone is already behind, and the longer the fight goes the worse it gets — a genuinely hopeless feeling that fits him. Gray.EXE VS Everyone matters because the cast had to unite, and even everyone together still lost; the heroes did take him seriously, this was not one bad matchup, and his win is earned because he did not beat one person — he beat the whole resistance. His line "I won\'t stop \'til VICTORY IS MINE" sounds obsessive, fear-driven, determined, and unstable — he is no longer just defending himself, he is pushing toward total domination because fear has become absolute aggression. And with the Oren and Gray cutscenes improved and more intense than ever, the game leans into its strongest horror-power moments: Oren more godlike and oppressive, Gray more unstable, tragic, dangerous, final-boss-like. Gray.EXE is no longer a fear-driven survivor — he is now a fear-driven conqueror.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'GRAY.EXE VS EVERYONE · GRAY.EXE IS NOW THE MOST POWERFUL — HIS BOSS FIGHT STARTS AGAIN · THE THREAT WAS NEVER OVER, HE REACHED ANOTHER HEIGHT · THE FINAL DISASTER THAT KEEPS RETURNING STRONGER · HE MAKES THE BOARD ITSELF — HE DOES NOT FIGHT ON THE BATTLEFIELD, HE CREATES IT · HE CONTROLS THE ARENA · THE RULES OF ENGAGEMENT · THE FLOW OF THE FIGHT · THE POWER GROWTH DURING BATTLE — DOMINANCE, NOT JUST STRENGTH · HE THEN GAINS POWER: THE FIGHT IS STACKED FROM THE START — GRAY SETS THE BOARD, SCALES UPWARD, EVERYONE IS ALREADY BEHIND, AND THE LONGER IT GOES THE WORSE IT GETS · GRAY.EXE VS EVERYONE — THE WHOLE CAST UNITED AND STILL LOST · HE BEAT THE WHOLE RESISTANCE, BEYOND TEAM-UP LOGIC · “I WON’T STOP ’TIL VICTORY IS MINE” — FEAR BECOMES ABSOLUTE AGGRESSION · NO LONGER A SURVIVOR BUT A CONQUEROR · OREN & GRAY CUTSCENES MORE INTENSE THAN EVER', col:'#6cc4ff' });
       for(let i=0;i<62;i++) particles.push(spark(player.x, player.y, pick(['#6cc4ff','#8fd8ff','#ff3b4a','#9a7bff','#ff6a6a','#eaf4ff','#ffffff']))); }
+    if(ph===46){ AUDIO.corrupt(); shake=Math.max(shake,14); glitch=Math.max(glitch,0.5); winFlash=Math.max(winFlash,0.5);
+      showTaunt('This is the corrected top-end placement. Gray.EXE stays the most powerful boss. Simon.Exe is second most powerful overall, and Oren.EXE is just under him — Simon is slightly higher than Oren, even though they are very close. That fits what has been built: Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game, and stands as a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force — second only because Simon.Exe edges him out. So the clean ranking is Gray.EXE, then Simon.Exe slightly above Oren.EXE, then Oren.EXE just under him. Simon.Exe and Oren.EXE feel like a near-pair at the top, but Simon still has the higher ceiling. The difference is less like a huge gap and more like a line: Oren.EXE is almost there, but Simon.Exe crosses it first. That is a good power relationship.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE TOP OF THE ORDER · THE CORRECTED TOP-END PLACEMENT · 1. GRAY.EXE — THE MOST POWERFUL BOSS · 2. SIMON.Exe — SECOND MOST POWERFUL OVERALL, SLIGHTLY ABOVE OREN.EXE · 3. OREN.EXE — JUST UNDER SIMON.Exe · SIMON & OREN ARE A NEAR-PAIR AT THE TOP, BUT SIMON STILL HAS THE HIGHER CEILING · SIMON CONTROLS LIGHTNING · SPEED · DEATH ITSELF · SELF-AWARE, KNOWS HIS OWN STATS · NOT A BOSS BUT A BEING · A SINGULAR DISASTER-CHARACTER · OREN IS REALITY-BENDING SOUND PRESSURE, A BACKGROUND-WARPING FORCE, SECOND ONLY BECAUSE SIMON EDGES HIM OUT · OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES THE LINE FIRST', col:'#ffd24a' });
+      for(let i=0;i<58;i++) particles.push(spark(player.x, player.y, pick(['#ffd24a','#ffe38a','#6cc4ff','#c9b6ff','#8fd8ff','#fff2c4','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12663,16 +12701,17 @@ function drawLoopVs(){
   else if(ph===43){ bg.addColorStop(0, `rgba(6,18,20,${0.98*g})`); bg.addColorStop(1, `rgba(22,6,8,${0.99*g})`); }
   else if(ph===44){ bg.addColorStop(0, `rgba(26,4,6,${0.98*g})`); bg.addColorStop(1, `rgba(8,4,10,${0.99*g})`); }
   else if(ph===45){ bg.addColorStop(0, `rgba(6,14,26,${0.98*g})`); bg.addColorStop(1, `rgba(24,4,8,${0.99*g})`); }
+  else if(ph===46){ bg.addColorStop(0, `rgba(22,16,2,${0.98*g})`); bg.addColorStop(1, `rgba(6,8,16,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff'))))))))))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : `rgba(62,224,106,${0.96*g})`)))))))))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12710,7 +12749,8 @@ function drawLoopVs(){
                        : (ph===43 ? 'THE SCATTERED MAP · EVERY KEY & DOOR IN A DIFFERENT ROOM, FAR APART · THE DISTANCE IS THE DANGER · THEN GRAY.EXE & SIMON.Exe ARE FOUND'
                        : (ph===44 ? 'THE FINAL HUNT · FUN COMPUTER: “RUN AWAY, RUN AS FAST AS YOU CAN” · RUNNING ENERGY & WARN ENERGY · GRAY.EXE TOOK EVERY SOUL · SIMON KEEPS ONLY THE WENDA NECKLACE'
                        : (ph===45 ? 'GRAY.EXE VS EVERYONE · NOW THE MOST POWERFUL — HIS BOSS FIGHT STARTS AGAIN · HE MAKES THE BOARD & GAINS POWER · EVERYONE UNITED STILL LOST · “I WON’T STOP ’TIL VICTORY IS MINE”'
-                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))))))))))))))), cx, top+26);
+                       : (ph===46 ? 'THE TOP OF THE ORDER · 1. GRAY.EXE · 2. SIMON.Exe · 3. OREN.EXE · SIMON & OREN A NEAR-PAIR AT THE TOP, BUT SIMON HAS THE HIGHER CEILING · OREN IS ALMOST THERE, BUT SIMON CROSSES THE LINE FIRST'
+                       : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS')))))))))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
 
@@ -15596,6 +15636,123 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(255,138,58,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ MR. SUN LASTS LONGEST · SIMON.Exe TAKES HIM DOWN · ONLY SIMON.Exe & GRAY.EXE SURVIVE ★', cx, top+H*0.93);
+  } else if(ph===46){
+    // ----- BEAT 46: THE TOP OF THE ORDER — Toby's July 4 power-ranking correction. The corrected top-end placement:
+    // 1. Gray.EXE (most powerful boss), 2. Simon.Exe (second overall, slightly above Oren.EXE), 3. Oren.EXE (just under
+    // Simon.Exe). Simon and Oren are a near-pair at the top, but Simon has the higher ceiling — Oren is almost there, but
+    // Simon crosses the line first. Top = a three-step podium (highest first, with THE LINE drawn between Simon and Oren);
+    // then two columns — why Simon edges Oren (his kit) and how close Oren is; then the insight and three cards. Left ~20%
+    // stays clear for the ladder. c in [730,752]. -----
+    const lt = c - 730.0;
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,210,74,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE TOP OF THE ORDER — THE CORRECTED TOP-END PLACEMENT', cx, top+H*0.066);
+    ctx.fillStyle=`rgba(240,236,220,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('GRAY.EXE ON TOP · SIMON.Exe SLIGHTLY ABOVE OREN.EXE · A NEAR-PAIR, BUT SIMON HAS THE HIGHER CEILING · OREN IS ALMOST THERE, BUT SIMON CROSSES THE LINE FIRST', cx, top+H*0.066+11);
+
+    // --- the podium: three rank plates, highest first, revealed top-down ---
+    const bx=W*0.235, bw=W*0.755, by0=top+H*0.115, barH=H*0.078, gap=H*0.02;
+    const rRev=Math.max(0,Math.min(LV_TOPRANK.length, Math.floor((lt-0.5)/0.9)+1));
+    for(let i=0;i<LV_TOPRANK.length;i++){
+      const it=LV_TOPRANK[i], y=by0+i*(barH+gap);
+      const app=i<rRev?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.5-i*0.9)/0.7)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,10,18,0.86)'; ctx.fillRect(bx,y,bw,barH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.6; ctx.strokeRect(bx,y,bw,barH);
+      // rank badge
+      const bs=barH-8;
+      ctx.fillStyle=it.col; ctx.fillRect(bx+6,y+4,bs,bs);
+      ctx.fillStyle='rgba(6,8,14,0.96)'; ctx.font='900 '+Math.round(bs*0.7)+'px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText(it.rank, bx+6+bs/2, y+4+bs*0.72);
+      // name + tag
+      ctx.textAlign='left';
+      ctx.fillStyle=it.col; ctx.font='900 13px ui-monospace,monospace';
+      ctx.fillText(it.who, bx+bs+18, y+barH*0.46);
+      ctx.fillStyle='rgba(232,240,248,0.9)'; ctx.font='800 6.6px ui-monospace,monospace';
+      ctx.fillText(it.tag, bx+bs+18, y+barH*0.78);
+      ctx.globalAlpha=1;
+      // THE LINE between rank 2 (Simon) and rank 3 (Oren) — Simon crosses it first
+      if(i===1 && rRev>=3){
+        const ly=y+barH+gap*0.5;
+        ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-2.6)/0.6));
+        ctx.strokeStyle=`rgba(255,210,74,${(0.55+0.35*Math.sin(c*5.0))*g})`; ctx.lineWidth=1.2; ctx.setLineDash([6,4]);
+        ctx.beginPath(); ctx.moveTo(bx,ly); ctx.lineTo(bx+bw,ly); ctx.stroke(); ctx.setLineDash([]);
+        ctx.fillStyle='rgba(255,222,138,0.95)'; ctx.font='900 6.4px ui-monospace,monospace'; ctx.textAlign='center';
+        ctx.fillText('▲ THE LINE — SIMON.Exe CROSSES IT FIRST ▲', cx, ly-3);
+        ctx.globalAlpha=1;
+      }
+    }
+
+    // --- LEFT column: why Simon.Exe edges Oren ---
+    const scX=W*0.235, scW=W*0.365, scY=top+H*0.435, scH=H*0.205;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(20,16,2,0.86)'; ctx.fillRect(scX,scY,scW,scH);
+    ctx.strokeStyle=`rgba(255,210,74,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(scX,scY,scW,scH);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(255,224,138,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('WHY SIMON.Exe EDGES OREN — HIS KIT', scX+8, scY+13);
+    const smRev=Math.max(0,Math.min(LV_SIMON.length, Math.floor((lt-3.6)/0.28)+1));
+    for(let i=0;i<LV_SIMON.length;i++){
+      const app=i<smRev?((i===smRev-1)?Math.max(0,Math.min(1,(lt-3.6-i*0.28)/0.22)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=scY+26+i*((scH-30)/LV_SIMON.length)+8, last=i===LV_SIMON.length-1;
+      ctx.fillStyle= last?'#ffd24a':'#ffe38a'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', scX+10, ry);
+      ctx.fillStyle= last?'rgba(255,232,150,0.98)':'rgba(232,238,244,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      ctx.fillText(LV_SIMON[i].replace('◆ ',''), scX+22, ry);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT column: Oren.EXE — extremely close ---
+    const ocX=W*0.62, ocW=W*0.37, ocY=scY, ocH=scH;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.4)/0.6));
+    ctx.fillStyle='rgba(4,12,22,0.86)'; ctx.fillRect(ocX,ocY,ocW,ocH);
+    ctx.strokeStyle=`rgba(108,196,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(ocX,ocY,ocW,ocH);
+    ctx.fillStyle='rgba(150,206,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE — EXTREMELY CLOSE, SECOND ONLY', ocX+8, ocY+13);
+    const orRev=Math.max(0,Math.min(LV_ORENCLOSE.length, Math.floor((lt-3.8)/0.3)+1));
+    for(let i=0;i<LV_ORENCLOSE.length;i++){
+      const app=i<orRev?((i===orRev-1)?Math.max(0,Math.min(1,(lt-3.8-i*0.3)/0.24)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=ocY+26+i*((ocH-30)/LV_ORENCLOSE.length)+8, last=i===LV_ORENCLOSE.length-1;
+      ctx.fillStyle= last?'#6cc4ff':'#8fd8ff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', ocX+10, ry);
+      ctx.fillStyle= last?'rgba(150,206,255,0.98)':'rgba(228,240,250,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_ORENCLOSE[i].replace('◆ ',''), ocX+22, ry, ocW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.4)/0.6));
+    ctx.fillStyle=`rgba(255,210,74,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe AND OREN.EXE ARE A NEAR-PAIR AT THE TOP — BUT SIMON STILL HAS THE HIGHER CEILING', cx, top+H*0.665);
+    ctx.fillStyle='rgba(236,240,246,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('THE DIFFERENCE IS NOT A HUGE GAP BUT A LINE · OREN.EXE IS ALMOST THERE, BUT SIMON.Exe CROSSES IT FIRST · A GOOD POWER RELATIONSHIP', cx, top+H*0.665+13);
+    ctx.globalAlpha=1;
+
+    // --- the three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.71;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.0)/0.6));
+    ctx.fillStyle='rgba(255,210,74,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE CEILING, THE LINE, THE ORDER — A NEAR-PAIR, NOT A TIE · SIMON CROSSES FIRST · GRAY STAYS ON TOP', tX, tTop);
+    ctx.globalAlpha=1;
+    const cnN=LV_NEARPAIR.length, cngap=W*0.015, cnw=(tR-tX-(cnN-1)*cngap)/cnN, cnH=H*0.155, cnY=tTop+10;
+    for(let i=0;i<cnN;i++){
+      const it=LV_NEARPAIR[i], px=tX+i*(cnw+cngap);
+      const app=Math.max(0,Math.min(1,(lt-5.4-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(8,10,18,0.88)'; ctx.fillRect(px,cnY,cnw,cnH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,cnY,cnw,cnH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, cnY+14);
+      ctx.fillStyle='rgba(238,244,250,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, cnY+27, cnw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(255,210,74,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ 1. GRAY.EXE · 2. SIMON.Exe · 3. OREN.EXE · A NEAR-PAIR AT THE TOP — SIMON CROSSES THE LINE FIRST ★', cx, top+H*0.93);
   } else if(ph===45){
     // ----- BEAT 45: GRAY.EXE VS EVERYONE — Toby's July 4 boss-state lore. Gray.EXE is now the most powerful and his boss
     // fight starts again; he MAKES THE BOARD (creates the arena, sets the rules, the flow, the power growth), then GAINS

@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE TOP OF THE ORDER (BEAT 46)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Oren.EXE and Simon.Exe are almost tied for second most powerful, but Simon is more powerful, Oren.EXE is just under it."* The corrected top-end placement: 1. Gray.EXE, 2. Simon.Exe (slightly above Oren.EXE), 3. Oren.EXE (just under Simon.Exe).
+
+- New BEAT 46 lore panel, THE TOP OF THE ORDER, added to THE UNDEFINED LOOP climb (cyc `[730,752]`, cycle length extended `730 → 752`).
+- Center — a **three-step podium** revealed highest-first: rank badge **1 GRAY.EXE** (the most powerful boss), **2 SIMON.Exe** (second most powerful overall, slightly above Oren.EXE), **3 OREN.EXE** (just under Simon.Exe). A dashed **"▲ THE LINE — SIMON.Exe CROSSES IT FIRST ▲"** is drawn between ranks 2 and 3, so the ranking encodes the near-pair-with-a-line idea directly.
+- Left column — **WHY SIMON.Exe EDGES OREN — HIS KIT**: controls lightning, controls speed, controls death itself, self-aware (knows his own stats), not a boss but a being, can overtake huge parts of the game, ◆ a singular disaster-character.
+- Right column — **OREN.EXE — EXTREMELY CLOSE, SECOND ONLY**: extremely close in power, one of the strongest entities, reality-bending sound pressure, an animated background-warping force, ◆ second only because Simon.Exe edges him out.
+- Insight ties it together (Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling; the difference is not a huge gap but a line — Oren is almost there, but Simon crosses it first, a good power relationship).
+- Three closing cards: THE CEILING, THE LINE, THE ORDER. New "THE TOP OF THE ORDER" rung added to the beat ladder (lit gold). Additive — every earlier beat untouched; JS syntax-checked; new `topoftheorder` scene added to `tools/capture_screenshot.py`.
+
+![The Top of the Order](screenshots/110-top-of-the-order.png)
+
 ## 2026-07-04 — GRAY.EXE VS EVERYONE (BEAT 45)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
