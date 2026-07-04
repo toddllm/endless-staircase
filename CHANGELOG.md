@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — GRAY.EXE VS EVERYONE (BEAT 45)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Gray.EXE is now the most powerful, then his boss fight starts again. Gray.EXE makes the board, he then gains power. Gray.EXE VS Everyone happens. Gray.EXE wins and says 'I won't stop 'til VICTORY IS MINE', Oren and Gray's cutscenes are improved and more intense than ever."*
+
+- New BEAT 45 lore panel, GRAY.EXE VS EVERYONE, added to THE UNDEFINED LOOP climb (cyc `[708,730]`, cycle length extended `708 → 730`).
+- Left panel — **GRAY.EXE MAKES THE BOARD**: he does not fight on the battlefield, he creates it. Five rows revealed one at a time — THE ARENA, THE RULES OF ENGAGEMENT, THE FLOW OF THE FIGHT, THE POWER GROWTH, and the closer DOMINANCE, NOT STRENGTH.
+- Right-top panel — **HE THEN GAINS POWER**: the battle is stacked from the start (Gray sets the board, scales upward, everyone is already behind, the longer it goes the worse it gets — a hopeless climb).
+- Right-lower panel — **GRAY.EXE VS EVERYONE**: the whole cast had to unite, the heroes took him seriously, even everyone together still lost, and he beat the whole resistance, beyond team-up logic.
+- Faint background field — the chessboard Gray "makes" fills in cell-by-cell, with a GRAY POWER bar on the far right that climbs the whole beat and turns red as it rises.
+- The insight ties it together (making the board and scaling while he fights is dominance, not strength) and closes on his line, *"I won't stop 'til VICTORY IS MINE"* — fear becomes absolute aggression, no longer a survivor but a conqueror, with the Oren & Gray cutscenes more intense than ever.
+- Three closing cards: THE RETURN, THE BOARD, THE DECLARATION. New "GRAY.EXE VS EVERYONE" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `grayvseveryone` scene added to `tools/capture_screenshot.py`.
+
+![Gray.EXE vs Everyone](screenshots/109-gray-vs-everyone.png)
+
 ## 2026-07-04 — THE FINAL HUNT (BEAT 44)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more."). Matches the wiki's canonical name for this beat, THE FINAL HUNT.
