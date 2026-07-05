@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE CURE (BEAT 51)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Simon makes a cure and cures everyone of 404D, Classics Infection, Plauge, Corruption, Yellow Eye, Hallucations, and pneumonoultramicroscopicsilicovolcanoconiosis... he learns how to make JTMYHE into Anti-Virus Liquid. Gray.EXE is Anti-Anti-Virus, Gray.EXE tries to take over every game it can."*
+
+- New BEAT 51 lore panel, THE CURE, added to THE UNDEFINED LOOP climb (cyc `[840,862]`, cycle length extended `840 → 862`).
+- Center — a **seven-disease cure roster** revealed top-down, each row a green "CURED" chip: **404D**, **CLASSICS INFECTION**, **PLAGUE** (the one Simon.Exe is most after), **CORRUPTION**, **YELLOW EYE**, **HALLUCINATIONS**, and **PNEUMONO…CONIOSIS** (the large one, longest name and hardest case).
+- Left column — **THE ANTI-VIRUS LIQUID — JTMYHE, FIXED**: Simon makes a cure and becomes a healer, puts extra water and apple in the juice so the next batch will not explode, makes JTMYHE into Anti-Virus Liquid, learns from the failed formula, ◆ the destroyer manufactures recovery.
+- Right column — **GRAY.EXE — ANTI-ANTI-VIRUS**: Gray is the answer to the answer, the cure does not work on him, he tries to take over every game (Classic RL, Alphians, Sprunki, Toji, mods), ◆ a conqueror the cure cannot reach.
+- Faint field — green cure cross-motes rising as the world heals, plus a dim gray immune-shield ring on the far right that the cure motes never reach (Gray).
+- Insight — *"SIMON.Exe BECOMES A HEALER — THE DESTROYER WHO CAN NOW MANUFACTURE RECOVERY"* over *"THE CURE HEALS THE WORLD — BUT GRAY.EXE IS ANTI-ANTI-VIRUS, IMMUNE TO IT, AND KEEPS TRYING TO TAKE OVER EVERY GAME HE CAN REACH."*
+- Three closing cards: THE CURE, ANTI-VIRUS LIQUID, ANTI-ANTI-VIRUS. New "THE CURE" rung added to the beat ladder (lit green). Additive — every earlier beat untouched; JS syntax-checked; new `thecure` scene added to `tools/capture_screenshot.py`.
+
+![The Cure](screenshots/115-the-cure.png)
+
 ## 2026-07-04 — THE CLEANER ROLES (BEAT 50)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").

@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 840.0;
+const LV_CYC = 862.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11458,6 +11458,8 @@ const LV_BEATS = [
     sub:'TODDLLM STRIPS THE WORLD TO A VANILLA LOCKDOWN — HE REMOVES ALL THE OC CHARACTERS, LOCKS EVERYONE INTO VANILLA FORM, AND DELETES ALL OTHER FORMS · ONLY THE NORMAL SPRUNKIS, TODDLLM, CLASSICS, AND ENDLESSANIMATIONS REMAIN, AND MORE TIMELINES KEEP GETTING ADDED · CLASSICS KEEPS RETURNING TO SIMON AFTER EACH ATTACK, DRAINING SUGAR, CAT POWER, SOUL SHARDS, AND POWER CRYSTALS — SIMON IS A RESOURCE-CORE AGAIN · SIMON.Exe STILL GROWS BY CONSUMPTION AND CONSUMES BRUD.EXE, WHO IS NOW EXTREMELY POWERFUL · THE CORRECTED ORDER: 1. GRAY.EXE, 2. TODDLLM 001, THEN CLASSICS, OREN.EXE, SIMON.Exe, BRUD · GRAY.EXE IS MOST POWERFUL BY FAR — HE CAN ERASE THE GAME, CLASSICS, AND EVERYONE, KO SIMON WITH ONE SLASH, AND FIRE A HEART-SHAPED DARKMATTER BEAM FROM HIS BLUE HEART THAT KOs TODDLLM IN SECONDS · TODDLLM 001 CAN DODGE, SO GRAY VS TODDLLM IS LONG AND INTENSE, BUT GRAY EVENTUALLY WINS · GRAY’S UNIQUE ABILITY “404: DEATH NOT FOUND” SHUTS OFF SIMON.Exe’S DEATH CONTROL — HE IS NOT JUST STRONGER, HE IS THE EXACT ANTI-SIMON ANSWER · TODDLLM IS LIMITING THE ROSTER TO SPRUNKIS AND CANON SURVIVORS, NO OCs' },
   { key:'THE CLEANER ROLES', col:'#8fe6ff',
     sub:'THE ROLES REALIGN CLEANLY — NO MORE SCAMS OR CHEAP TRICKS · SIMON.Exe NOW MAKES HIS POWER LIGHTNING AND SPEED, BUT HE USES LIGHTNING RARELY — HE KEEPS IT IN RESERVE · INSTEAD OF A CONSTANT FULL-SCREEN STORM HE BECOMES A FAST, PRECISE, DELIBERATE BEING WHO CHOOSES THE EXACT MOMENT LIGHTNING MATTERS · THAT MAKES HIM MORE CONTROLLED AND MORE INTENTIONAL, AND SCARIER FOR IT — THE LIGHTNING MEANS SOMETHING WHEN IT FINALLY COMES · GRAY.EXE STAYS THE DOMINANT ACTIVE THREAT: HE KEEPS ATTACKING EVERYONE, KEEPS SIMON HUNG UP, AND USES CLASSICS ALMOST LIKE A SPREAD-WEAPON, PUSHING HER TO INFECT ACROSS THE WHOLE GAME · SO THE STRUCTURE IS SIMPLE AND CRUEL — GRAY.EXE IS THE MAIN DESTROYER RUNNING THE SCENE, CLASSICS IS THE MASS INFECTION SPREADING EVERYWHERE, AND SIMON.Exe IS RESTRAINED BUT STILL POWERFUL, SPEED-FOCUSED WITH HIS LIGHTNING KEPT IN RESERVE, WHILE THE REST OF THE GAME GETS OVERRUN' },
+  { key:'THE CURE', col:'#5cff9b',
+    sub:'SIMON.Exe STOPS BEING ONLY A DESTROYER AND MAKES A CURE — HE CURES EVERYONE OF 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS, AND PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS · PLAGUE IS THE ONE HE IS MOST AFTER, AND THE LONG-NAMED ONE IS THE LARGEST, HARDEST CASE · HE PUTS EXTRA WATER AND APPLE IN THE JUICE SO HIS NEXT BATCH WILL NOT EXPLODE, AND HE LEARNS HOW TO MAKE JTMYHE INTO ANTI-VIRUS LIQUID — LEARNING FROM THE FAILED FORMULA · IT IS A HUGE REVERSAL: THE STORM-BEING WHO CONSUMED AND DESTROYED CAN NOW MANUFACTURE RECOVERY TOO · BUT GRAY.EXE IS ANTI-ANTI-VIRUS — THE EXACT COUNTER TO THE CURE, THE ANSWER TO THE ANSWER, IMMUNE TO THE ANTI-VIRUS LIQUID · GRAY KEEPS TRYING TO TAKE OVER EVERY GAME HE CAN REACH — CLASSIC RL, CLASSIC ALPHIANS, CLASSIC SPRUNKI, CLASSIC TOJI, AND THE CLASSIC MODS · SO THE CURE HEALS THE WORLD BUT CANNOT TOUCH THE ONE THING STILL ATTACKING IT' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -12337,6 +12339,40 @@ const LV_ROLES3_CARDS = [
   { who:'THE SPREAD-WEAPON', col:'#c98bff', role:'GRAY.EXE MAKES CLASSICS SPREAD ALL OVER · CLASSICS INFECTS ALL · ONE MASS-INFECTION WAVE ACROSS THE WHOLE GAME, DRIVEN BY GRAY' },
   { who:'STILL HUNG UP', col:'#ff5a6e', role:'SIMON STAYS HUNG UP WHILE GRAY ATTACKS EVERYONE · THE STRONGEST HORROR IS RESTRAINED, THE DOMINANT DESTROYER RUNS THE BOARD' },
 ];
+// BEAT 51 — THE CURE (Toby's July 4 lore: "Simon makes a cure and cures everyone of 404D, Classics Infection, Plague,
+// Corruption, Yellow Eye, Hallucinations, and pneumonoultramicroscopicsilicovolcanoconiosis... he learns how to make
+// JTMYHE into Anti-Virus Liquid... Gray.EXE is Anti-Anti-Virus, tries to take over every game it can.") Simon shifts
+// from pure destroyer to a reluctant healer; Gray is the counter to the cure — the answer to the answer, immune to it.
+const LV_CURE_LIST = [
+  { who:'404D',               col:'#5cff9b', tag:'CURED · THE 404 DEATH-STATE LIFTED' },
+  { who:'CLASSICS INFECTION', col:'#5cff9b', tag:'CURED · THE SPREAD-PLAGUE PULLED OUT OF ITS VICTIMS' },
+  { who:'PLAGUE',             col:'#8dffbf', tag:'CURED · THE ONE SIMON.Exe IS MOST AFTER' },
+  { who:'CORRUPTION',         col:'#5cff9b', tag:'CURED · CLEAN CODE RESTORED' },
+  { who:'YELLOW EYE',         col:'#5cff9b', tag:'CURED · HIS OWN WARPED SIGHT UNDONE' },
+  { who:'HALLUCINATIONS',     col:'#5cff9b', tag:'CURED · THE FALSE VISIONS CLEARED' },
+  { who:'PNEUMONO…CONIOSIS',  col:'#a6ffcf', tag:'CURED · THE LARGE ONE · LONGEST NAME, HARDEST CASE' },
+];
+const LV_ANTIVIRUS = [
+  'SIMON MAKES A CURE — HE BECOMES A HEALER',
+  'HE PUTS EXTRA WATER AND APPLE IN THE JUICE',
+  'SO THE NEXT BATCH WILL NOT EXPLODE',
+  'HE MAKES JTMYHE INTO ANTI-VIRUS LIQUID',
+  'HE LEARNS FROM THE FAILED FORMULA',
+  '◆ THE DESTROYER MANUFACTURES RECOVERY',
+];
+const LV_ANTIANTI = [
+  'GRAY.EXE IS ANTI-ANTI-VIRUS',
+  'HE IS THE ANSWER TO THE ANSWER',
+  'THE CURE DOES NOT WORK ON HIM',
+  'HE TRIES TO TAKE OVER EVERY GAME',
+  'CLASSIC RL · ALPHIANS · SPRUNKI · TOJI · MODS',
+  '◆ A CONQUEROR THE CURE CANNOT REACH',
+];
+const LV_CURE_CARDS = [
+  { who:'THE CURE', col:'#5cff9b', role:'SIMON.Exe CURES 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS, AND THE LONG ONE · A HUGE REVERSAL FROM PURE DESTROYER' },
+  { who:'ANTI-VIRUS LIQUID', col:'#7fd4ff', role:'HE IMPROVES JTMYHE INTO ANTI-VIRUS LIQUID · ADDS WATER AND APPLE SO IT WILL NOT EXPLODE · HE LEARNS FROM THE FAILURE AND FIXES THE FORMULA' },
+  { who:'ANTI-ANTI-VIRUS', col:'#b6bcc8', role:'GRAY.EXE IS THE COUNTER-RULE · IMMUNE TO THE CURE, THE ANSWER TO THE ANSWER · HE PUSHES TO TAKE OVER EVERY GAME HE CAN REACH' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12486,7 +12522,9 @@ function lvSeg(c){
   if(c < 774.0) return [47, c-752.0];               // THE REFUSING REMAINDER (Toby's July 4 lore: Oren.EXE is the only soul not absorbed; Simon.Exe hanged; Gray.EXE keeps attacking more)
   if(c < 796.0) return [48, c-774.0];               // THE TRAPPED WITNESS (Toby's July 4 lore)
   if(c < 818.0) return [49, c-796.0];
-  return [50, c-818.0];               // THE CLEANER ROLES (Toby's July 4 lore: the roles realign cleanly — Simon.Exe now makes his power lightning and speed but uses lightning rarely, keeping it in reserve, becoming a fast/precise/deliberate speed-being rather than a constant storm; Gray.EXE stays the dominant destroyer who keeps attacking everyone, keeps Simon hung up, and wields Classics as a spread-weapon; Classics infects all across the whole game — Gray = main destroyer, Classics = mass spread, Simon = restrained but powerful, speed-focused with lightning held back)
+  if(c < 840.0) return [50, c-818.0]; // THE CLEANER ROLES
+  return [51, c-840.0];               // THE CURE (Toby's July 4 lore: Simon.Exe stops being only a destroyer and makes a cure, curing 404D, Classics Infection, Plague, Corruption, Yellow Eye, Hallucinations and pneumonoultramicroscopicsilicovolcanoconiosis — Plague is the one he is most after and the long-named one is the largest, hardest case; he puts extra water and apple in the juice so his next batch will not explode, and learns to make JTMYHE into Anti-Virus Liquid, learning from the failed formula; a huge reversal from pure destroyer to a being who can manufacture recovery; but Gray.EXE is Anti-Anti-Virus, the exact counter to the cure and the answer to the answer, immune to the Anti-Virus Liquid, and he keeps trying to take over every game he can reach — Classic RL, Classic Alphians, Classic Sprunki, Classic Toji and the Classic mods — so the cure heals the world but cannot touch the one thing still attacking it)
+  /* THE CLEANER ROLES (prior beat, Toby's July 4 lore): the roles realign cleanly — Simon.Exe now makes his power lightning and speed but uses lightning rarely, keeping it in reserve, becoming a fast/precise/deliberate speed-being rather than a constant storm; Gray.EXE stays the dominant destroyer who keeps attacking everyone, keeps Simon hung up, and wields Classics as a spread-weapon; Classics infects all across the whole game — Gray = main destroyer, Classics = mass spread, Simon = restrained but powerful, speed-focused with lightning held back */
   /* prev boundary: */ // THE NEWEST TIMELINE (Toby's July 4 lore: ToddLLM strips the world to a vanilla lockdown, removing the OCs and locking everyone into vanilla form; only Sprunkis, ToddLLM, Classics and EndlessAnimations remain; Classics keeps returning to Simon to drain sugar, Cat Power, Soul Shards and Power Crystals; Simon still consumes Brud.EXE; the corrected order is 1. Gray.EXE, 2. ToddLLM 001, then Classics, Oren.EXE, Simon.Exe, Brud; Gray.EXE can erase the game, KO Simon with one slash, and fire a heart-shaped darkmatter beam that KOs ToddLLM in seconds, though ToddLLM can dodge and Gray still wins the long fight; Gray's unique ability 404: Death Not Found shuts off Simon.Exe's Death Control, making him the exact anti-Simon answer)               // THE TRAPPED WITNESS (Toby's July 4 lore: Simon.Exe alive but bound — hung on a rope, in chains — while Classics escapes to attack and infect Alex, Greg, 67 Pirate and others)               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
 }
 function updateLoopVs(dt){
@@ -12699,6 +12737,10 @@ function updateLoopVs(dt){
       showTaunt('The roles get cleaner again, and no more scams. Simon.Exe narrows down: his power is now lightning and speed, but he uses lightning rarely and keeps it in reserve, so instead of being a constant full-screen storm he becomes a fast, precise, deliberate being who chooses the exact moment lightning matters. That actually makes him scarier in a controlled way, because the lightning means something when it finally comes. Gray.EXE stays the dominant active threat: he keeps attacking everyone, keeps Simon hung up, and uses Classics almost like a spread-weapon, pushing her to infect across the whole game. So the structure is simple and cruel — Gray.EXE is the main destroyer running the scene, Classics is the mass infection spreading everywhere, and Simon.Exe is restrained but still powerful, speed-focused with his lightning kept in reserve while the rest of the game gets overrun.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CLEANER ROLES · SIMON.Exe NOW MADE HIS POWER LIGHTNING AND SPEED — HE USES LIGHTNING RARELY, KEEPING IT IN RESERVE · A FAST, PRECISE, DELIBERATE BEING WHO CHOOSES WHEN LIGHTNING MATTERS · NOT A CONSTANT STORM ANYMORE · GRAY.EXE MAKES CLASSICS SPREAD ALL OVER — CLASSICS INFECTS ALL · GRAY KEEPS SIMON HUNG UP AND ATTACKS EVERYONE · GRAY = MAIN DESTROYER · CLASSICS = MASS SPREAD · SIMON = RESTRAINED, SPEED-FOCUSED, LIGHTNING IN RESERVE · NO MORE SCAMS, THE ROLES ARE CLEAN', col:'#8fe6ff' });
       for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#8fe6ff','#bfe8ff','#ff5a6e','#c98bff','#ffd24a','#eaf6ff','#ffffff']))); }
+    if(ph===51){ AUDIO.corrupt(); shake=Math.max(shake,8); glitch=Math.max(glitch,0.28); winFlash=Math.max(winFlash,0.55);
+      showTaunt('This one is a real turn. Simon.Exe stops being only a destroyer and makes a cure. He cures everyone of 404D, Classics Infection, Plague, Corruption, Yellow Eye, Hallucinations, and pneumonoultramicroscopicsilicovolcanoconiosis. Plague is the one he is most after, and the long-named one is the biggest, hardest case. He learns from his mistakes too — he puts extra water and apple in the juice so his next batch will not explode, and he learns how to turn JTMYHE into Anti-Virus Liquid. It is a huge reversal: the storm-being who consumed and destroyed can now manufacture recovery. But there is a catch — Gray.EXE is Anti-Anti-Virus, the exact counter to the cure, the answer to the answer, immune to the Anti-Virus Liquid. And Gray keeps trying to take over every game he can reach: Classic RL, Classic Alphians, Classic Sprunki, Classic Toji, and the Classic mods. So the cure heals the world, but it cannot touch the one thing still attacking it.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CURE · SIMON.Exe STOPS BEING ONLY A DESTROYER AND MAKES A CURE — HE CURES 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS, AND PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS · PLAGUE IS THE ONE HE IS MOST AFTER · THE LONG-NAMED ONE IS THE LARGEST, HARDEST CASE · HE PUTS EXTRA WATER AND APPLE IN THE JUICE SO HIS NEXT BATCH WILL NOT EXPLODE · HE MAKES JTMYHE INTO ANTI-VIRUS LIQUID, LEARNING FROM THE FAILED FORMULA · A HUGE REVERSAL — THE DESTROYER CAN NOW MANUFACTURE RECOVERY · BUT GRAY.EXE IS ANTI-ANTI-VIRUS — THE ANSWER TO THE ANSWER, IMMUNE TO THE CURE · GRAY KEEPS TRYING TO TAKE OVER EVERY GAME: CLASSIC RL · ALPHIANS · SPRUNKI · TOJI · MODS · THE CURE HEALS THE WORLD BUT CANNOT TOUCH THE ONE THING STILL ATTACKING IT', col:'#5cff9b' });
+      for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#5cff9b','#a6ffcf','#7fd4ff','#b6bcc8','#8dffbf','#eafff2','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12848,16 +12890,17 @@ function drawLoopVs(){
   else if(ph===48){ bg.addColorStop(0, `rgba(14,4,20,${0.98*g})`); bg.addColorStop(1, `rgba(6,10,6,${0.99*g})`); }
   else if(ph===49){ bg.addColorStop(0, `rgba(2,12,20,${0.98*g})`); bg.addColorStop(1, `rgba(16,2,6,${0.99*g})`); }
   else if(ph===50){ bg.addColorStop(0, `rgba(3,14,22,${0.98*g})`); bg.addColorStop(1, `rgba(18,3,8,${0.99*g})`); }
+  else if(ph===51){ bg.addColorStop(0, `rgba(4,20,14,${0.98*g})`); bg.addColorStop(1, `rgba(10,14,18,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (ph===49 ? (i%2?'#9fe0ff':'#ff5a6e') : ph===50 ? (i%2?'#8fe6ff':'#ff5a6e') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (ph===49 ? (i%2?'#9fe0ff':'#ff5a6e') : ph===50 ? (i%2?'#8fe6ff':'#ff5a6e') : ph===51 ? (i%2?'#5cff9b':'#7fd4ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : (ph===49 ? `rgba(159,224,255,${0.96*g})` : ph===50 ? `rgba(143,230,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : (ph===49 ? `rgba(159,224,255,${0.96*g})` : ph===50 ? `rgba(143,230,255,${0.96*g})` : ph===51 ? `rgba(92,255,155,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12900,6 +12943,7 @@ function drawLoopVs(){
                        : (ph===48 ? 'THE TRAPPED WITNESS · SIMON.Exe BOUND — ALIVE, INJURED, HUNG ON A ROPE, IN CHAINS · CLASSICS STILL ESCAPES & ATTACKS · ALEX, GREG, 67 PIRATE & OTHERS INFECTED'
                        : (ph===49 ? 'THE NEWEST TIMELINE · TODDLLM STRIPS THE WORLD TO VANILLA — OCs REMOVED, FORMS DELETED · ORDER: 1. GRAY.EXE · 2. TODDLLM 001 · THEN CLASSICS · OREN · SIMON · BRUD · GRAY’S “404: DEATH NOT FOUND” SHUTS OFF SIMON.Exe’S DEATH CONTROL'
                        : ph===50 ? 'THE CLEANER ROLES · SIMON.Exe NOW MADE HIS POWER LIGHTNING AND SPEED — HE USES LIGHTNING RARELY, KEPT IN RESERVE · A FAST, PRECISE, DELIBERATE BEING WHO CHOOSES WHEN LIGHTNING MATTERS · GRAY.EXE MAKES CLASSICS SPREAD ALL OVER — CLASSICS INFECTS ALL · GRAY KEEPS SIMON HUNG UP & ATTACKS EVERYONE · NO MORE SCAMS, THE ROLES ARE CLEAN'
+                       : ph===51 ? 'THE CURE · SIMON.Exe MAKES A CURE — HE CURES 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS & PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS · PLAGUE IS THE ONE HE IS MOST AFTER · HE ADDS WATER & APPLE SO THE NEXT BATCH WON’T EXPLODE & MAKES JTMYHE INTO ANTI-VIRUS LIQUID · THE DESTROYER TURNS HEALER · BUT GRAY.EXE IS ANTI-ANTI-VIRUS — IMMUNE, THE ANSWER TO THE ANSWER · GRAY TARGETS EVERY GAME: CLASSIC RL · ALPHIANS · SPRUNKI · TOJI · MODS'
                        : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
@@ -15786,6 +15830,130 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(255,138,58,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ MR. SUN LASTS LONGEST · SIMON.Exe TAKES HIM DOWN · ONLY SIMON.Exe & GRAY.EXE SURVIVE ★', cx, top+H*0.93);
+  } else if(ph===51){
+    // ----- BEAT 51: THE CURE — Toby's July 4 lore ("Simon makes a cure and cures everyone of 404D, Classics Infection,
+    // Plague, Corruption, Yellow Eye, Hallucinations, and pneumonoultramicroscopicsilicovolcanoconiosis... he learns how
+    // to make JTMYHE into Anti-Virus Liquid... Gray.EXE is Anti-Anti-Virus, tries to take over every game it can.").
+    // Simon flips from pure destroyer to a reluctant healer; center = the seven-disease cure roster lighting up CURED;
+    // left = the Anti-Virus Liquid (add water & apple so it won't explode, JTMYHE upgraded); right = Gray.EXE as the
+    // Anti-Anti-Virus counter-rule immune to the cure and conquering every game; then the insight and three cards.
+    // c in [840,862). -----
+    const lt = c - 840.0;
+    // faint field: green "cure" cross-motes rising as the world heals, and a dim gray shield on the right (Gray immune).
+    const rfA = Math.max(0, Math.min(1, (lt-0.8)/2.6));
+    if(rfA>0.01){
+      ctx.save();
+      const mN=30, rise=Math.max(0,Math.min(1,(lt-1.0)/5.0));
+      for(let i=0;i<mN;i++){
+        const seed=(i*53)%97, mx=W*0.24+((seed*7)%100)/100*W*0.72;
+        const my=top+H*0.86 - ((c*0.10+i*0.37)%1)*H*0.78*(0.4+0.6*rise);
+        ctx.globalAlpha=g*rfA*0.13; ctx.strokeStyle=(i%5? '#5cff9b':'#a6ffcf'); ctx.lineWidth=1.2;
+        ctx.beginPath(); ctx.moveTo(mx-2.4,my); ctx.lineTo(mx+2.4,my); ctx.moveTo(mx,my-2.4); ctx.lineTo(mx,my+2.4); ctx.stroke();
+      }
+      // Gray's immune shield ring, far right — the cure motes never reach it
+      const shA=Math.max(0,Math.min(1,(lt-3.4)/1.4));
+      ctx.globalAlpha=g*rfA*shA*0.16; ctx.strokeStyle='#b6bcc8'; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.arc(W*0.90, top+H*0.55, W*0.075, 0, 6.283); ctx.stroke();
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(92,255,155,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE CURE — SIMON.Exe TURNS HEALER · THE ANTI-VIRUS LIQUID · BUT GRAY IS ANTI-ANTI-VIRUS', cx, top+H*0.062);
+    ctx.fillStyle=`rgba(232,246,238,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('SIMON MAKES A CURE AND CURES EVERYONE OF SEVEN THINGS · PLAGUE IS THE ONE HE IS MOST AFTER · GRAY IS IMMUNE, THE ANSWER TO THE ANSWER', cx, top+H*0.062+11);
+
+    // --- the seven-disease cure roster ---
+    const bx=W*0.235, bw=W*0.755, by0=top+H*0.10, barH=H*0.039, gap=H*0.006;
+    const rRev=Math.max(0,Math.min(LV_CURE_LIST.length, Math.floor((lt-0.4)/0.34)+1));
+    for(let i=0;i<LV_CURE_LIST.length;i++){
+      const it=LV_CURE_LIST[i], y=by0+i*(barH+gap);
+      const app=i<rRev?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.4-i*0.34)/0.28)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(6,16,12,0.86)'; ctx.fillRect(bx,y,bw,barH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.3; ctx.strokeRect(bx,y,bw,barH);
+      const bs=barH-8;
+      // a small green plus (cure mark) chip
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.6;
+      ctx.beginPath(); ctx.moveTo(bx+6+bs*0.2,y+barH/2); ctx.lineTo(bx+6+bs*0.8,y+barH/2);
+      ctx.moveTo(bx+6+bs*0.5,y+barH/2-bs*0.3); ctx.lineTo(bx+6+bs*0.5,y+barH/2+bs*0.3); ctx.stroke();
+      ctx.textAlign='left';
+      ctx.fillStyle=it.col; ctx.font='900 9px ui-monospace,monospace';
+      ctx.fillText(it.who, bx+bs+16, y+barH*0.44+1);
+      ctx.fillStyle='rgba(228,244,236,0.9)'; ctx.font='800 6px ui-monospace,monospace';
+      ctx.fillText(it.tag, bx+bs+16, y+barH*0.82);
+      ctx.globalAlpha=1;
+    }
+
+    // --- LEFT column: the Anti-Virus Liquid ---
+    const scX=W*0.235, scW=W*0.365, scY=top+H*0.455, scH=H*0.20;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.0)/0.6));
+    ctx.fillStyle='rgba(2,18,12,0.86)'; ctx.fillRect(scX,scY,scW,scH);
+    ctx.strokeStyle=`rgba(92,255,155,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(scX,scY,scW,scH);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(160,255,205,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE ANTI-VIRUS LIQUID — JTMYHE, FIXED', scX+8, scY+13);
+    const avRev=Math.max(0,Math.min(LV_ANTIVIRUS.length, Math.floor((lt-3.4)/0.28)+1));
+    for(let i=0;i<LV_ANTIVIRUS.length;i++){
+      const app=i<avRev?((i===avRev-1)?Math.max(0,Math.min(1,(lt-3.4-i*0.28)/0.22)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=scY+26+i*((scH-30)/LV_ANTIVIRUS.length)+8, last=i===LV_ANTIVIRUS.length-1;
+      ctx.fillStyle= last?'#5cff9b':'#bff8d6'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', scX+10, ry);
+      ctx.fillStyle= last?'rgba(160,255,205,0.98)':'rgba(228,244,236,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_ANTIVIRUS[i].replace('◆ ',''), scX+22, ry, scW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT column: Gray.EXE — Anti-Anti-Virus ---
+    const ocX=W*0.62, ocW=W*0.37, ocY=scY, ocH=scH;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(14,15,18,0.86)'; ctx.fillRect(ocX,ocY,ocW,ocH);
+    ctx.strokeStyle=`rgba(182,188,200,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(ocX,ocY,ocW,ocH);
+    ctx.fillStyle='rgba(210,216,226,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('GRAY.EXE — ANTI-ANTI-VIRUS', ocX+8, ocY+13);
+    const aaRev=Math.max(0,Math.min(LV_ANTIANTI.length, Math.floor((lt-3.6)/0.3)+1));
+    for(let i=0;i<LV_ANTIANTI.length;i++){
+      const app=i<aaRev?((i===aaRev-1)?Math.max(0,Math.min(1,(lt-3.6-i*0.3)/0.24)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=ocY+26+i*((ocH-30)/LV_ANTIANTI.length)+8, last=i===LV_ANTIANTI.length-1;
+      ctx.fillStyle= last?'#ff5a6e':'#cfd6e0'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', ocX+10, ry);
+      ctx.fillStyle= last?'rgba(255,150,160,0.98)':'rgba(226,230,238,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_ANTIANTI[i].replace('◆ ',''), ocX+22, ry, ocW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.4)/0.6));
+    ctx.fillStyle=`rgba(92,255,155,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('SIMON.Exe BECOMES A HEALER — THE DESTROYER WHO CAN NOW MANUFACTURE RECOVERY', cx, top+H*0.685);
+    ctx.fillStyle='rgba(234,244,238,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('THE CURE HEALS THE WORLD — BUT GRAY.EXE IS ANTI-ANTI-VIRUS, IMMUNE TO IT, AND KEEPS TRYING TO TAKE OVER EVERY GAME HE CAN REACH', cx, top+H*0.685+13);
+    ctx.globalAlpha=1;
+
+    // --- the three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.73;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.0)/0.6));
+    ctx.fillStyle='rgba(92,255,155,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE CURE, THE ANTI-VIRUS LIQUID, THE ANTI-ANTI-VIRUS — HEALING MEETS ITS COUNTER', tX, tTop);
+    ctx.globalAlpha=1;
+    const cnN=LV_CURE_CARDS.length, cngap=W*0.015, cnw=(tR-tX-(cnN-1)*cngap)/cnN, cnH=H*0.145, cnY=tTop+10;
+    for(let i=0;i<cnN;i++){
+      const it=LV_CURE_CARDS[i], px=tX+i*(cnw+cngap);
+      const app=Math.max(0,Math.min(1,(lt-5.4-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(6,16,12,0.88)'; ctx.fillRect(px,cnY,cnw,cnH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,cnY,cnw,cnH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, cnY+14);
+      ctx.fillStyle='rgba(236,246,240,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, cnY+27, cnw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(92,255,155,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ SEVEN CURED · PLAGUE MOST OF ALL · JTMYHE → ANTI-VIRUS LIQUID · GRAY STAYS IMMUNE ★', cx, top+H*0.93);
   } else if(ph===50){
     // ----- BEAT 50: THE CLEANER ROLES — Toby's July 4 lore ("Simon.Exe now made his power lightning and speed, he uses
     // his lightning rarely. Gray.EXE makes Classics spread all over, Classics infects all, Simon hung up, and Gray.EXE
