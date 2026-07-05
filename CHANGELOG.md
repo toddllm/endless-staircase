@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE CLEANER ROLES (BEAT 50)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
+
+Toby's words: *"Stop scamming stuff in the Endless Staircase. Simon.Exe now made his power lightning and speed, he uses his lightning rarely. Gray.EXE makes Classics spread all over, Classics infects all, Simon hung up, and Gray.EXE attacking everyone."*
+
+- New BEAT 50 lore panel, THE CLEANER ROLES, added to THE UNDEFINED LOOP climb (cyc `[818,840]`, cycle length extended `818 → 840`).
+- Center — a **three-row role board** revealed top-down: **GRAY.EXE** (the dominant destroyer, keeps Simon hung up, attacks everyone, wields Classics), **CLASSICS** (the spread-weapon, infects all, spreads across the whole game), **SIMON.Exe** (speed now, lightning kept in reserve, used rarely and deliberately).
+- Left column — **SIMON.Exe — SPEED · LIGHTNING IN RESERVE**: his power is now lightning and speed, but he uses lightning rarely, lightning is held in reserve, fast/precise/deliberate, chooses when lightning matters, ◆ controlled — not a constant storm.
+- Right column — **GRAY.EXE — DOMINANT · WIELDS CLASSICS**: Gray is the dominant threat, keeps attacking everyone, keeps Simon hung up, makes Classics spread all over, Classics infects all in her path, ◆ Gray runs the scene and Classics is his spread-weapon.
+- Faint field — dim lightning bolts held in reserve that flicker only on a rare pulse (Simon keeping it back) while infection motes fan out across the board (Classics infecting all).
+- Insight — *"SIMON.Exe IS PURE SPEED NOW — LIGHTNING IS A RARE, CHOSEN STRIKE, NOT A CONSTANT STORM"* over *"GRAY.EXE RUNS THE SCENE — HE KEEPS SIMON HUNG UP, ATTACKS EVERYONE, AND MAKES CLASSICS SPREAD ALL OVER · CLASSICS INFECTS ALL."*
+- Three closing cards: SPEED OVER STORM, THE SPREAD-WEAPON, STILL HUNG UP. New "THE CLEANER ROLES" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `cleanerroles` scene added to `tools/capture_screenshot.py`.
+
+![The Cleaner Roles](screenshots/114-cleaner-roles.png)
+
 ## 2026-07-04 — THE NEWEST TIMELINE (BEAT 49)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").
