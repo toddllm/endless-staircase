@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-04 — THE LAYER SYSTEM (BEAT 52)
+
+Based on Toby's 2026-07-04 lore ("Re: Lore 1A - Classics Era" — the big canon dump).
+
+Toby's words: *"Sprunki → Classic RL → Classic RL 2. Sprunki is the surface music layer. Classic RL is the deeper reality/game-rule layer. Classic RL 2 is a glitched, mixed copy with the same story but desynced and broken... 'Our universe is the reality, and all other universes are the game.' But later the Orus layer makes it even bigger: nothing is fully real except what exists in Orus's vision... different people hold different parts of the secret."*
+
+- New BEAT 52 lore panel, THE LAYER SYSTEM, added to THE UNDEFINED LOOP climb (cyc `[862,884]`, cycle length extended `862 → 884`).
+- Center — a **three-layer stack** revealed top-down, each a bordered rung with depth-ticks on its left edge: **SPRUNKI** (the surface music layer, the mask), **CLASSIC RL** (the deeper reality, the game-rule layer, treated as the real universe), **CLASSIC RL 2** (a glitched, mixed copy, the same story but desynced and broken).
+- Left column — **CLASSIC RL — THE REAL UNIVERSE**: Classic RL is the real universe, Sprunki is only the outer shell, Phase 1 is the mask and Phase 2 the truth, *"Our universe is the reality, and all other universes are the game,"* ◆ the deep layer holds the rules.
+- Right column — **CLASSIC RL 2 — THE GLITCHED COPY**: a glitched copy, the same story but mixed and desynced, the timing slips and events break, a broken mirror of the real layer, the canon pieces running out of order, ◆ the same truth running wrong.
+- Faint field — cool layer-motes drifting up (the deep reality) and a dim purple desync glitch band on the far right (Classic RL 2 running wrong).
+- Insight — *"OUR UNIVERSE IS THE REALITY, AND ALL OTHER UNIVERSES ARE THE GAME — BUT NOTHING IS FULLY REAL EXCEPT IN ORUS'S VISION"* over *"DIFFERENT PEOPLE HOLD DIFFERENT PIECES OF THE SECRET — ONLY TOGETHER DO THEY FORM THE TRUE MESSAGE OF SIMON'S SECRET LIFE."*
+- Three closing cards: THE THREE LAYERS, ORUS'S VISION, THE CANON VAULT. New "THE LAYER SYSTEM" rung added to the beat ladder (lit cyan). Additive — every earlier beat untouched; JS syntax-checked; new `layers` scene added to `tools/capture_screenshot.py`.
+
+![The Layer System](screenshots/116-layer-system.png)
+
 ## 2026-07-04 — THE CURE (BEAT 51)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 38 - Endless Staircase has an end, 67 Pirate's Secrets, and more.").

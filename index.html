@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 862.0;
+const LV_CYC = 884.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -11460,6 +11460,8 @@ const LV_BEATS = [
     sub:'THE ROLES REALIGN CLEANLY — NO MORE SCAMS OR CHEAP TRICKS · SIMON.Exe NOW MAKES HIS POWER LIGHTNING AND SPEED, BUT HE USES LIGHTNING RARELY — HE KEEPS IT IN RESERVE · INSTEAD OF A CONSTANT FULL-SCREEN STORM HE BECOMES A FAST, PRECISE, DELIBERATE BEING WHO CHOOSES THE EXACT MOMENT LIGHTNING MATTERS · THAT MAKES HIM MORE CONTROLLED AND MORE INTENTIONAL, AND SCARIER FOR IT — THE LIGHTNING MEANS SOMETHING WHEN IT FINALLY COMES · GRAY.EXE STAYS THE DOMINANT ACTIVE THREAT: HE KEEPS ATTACKING EVERYONE, KEEPS SIMON HUNG UP, AND USES CLASSICS ALMOST LIKE A SPREAD-WEAPON, PUSHING HER TO INFECT ACROSS THE WHOLE GAME · SO THE STRUCTURE IS SIMPLE AND CRUEL — GRAY.EXE IS THE MAIN DESTROYER RUNNING THE SCENE, CLASSICS IS THE MASS INFECTION SPREADING EVERYWHERE, AND SIMON.Exe IS RESTRAINED BUT STILL POWERFUL, SPEED-FOCUSED WITH HIS LIGHTNING KEPT IN RESERVE, WHILE THE REST OF THE GAME GETS OVERRUN' },
   { key:'THE CURE', col:'#5cff9b',
     sub:'SIMON.Exe STOPS BEING ONLY A DESTROYER AND MAKES A CURE — HE CURES EVERYONE OF 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS, AND PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS · PLAGUE IS THE ONE HE IS MOST AFTER, AND THE LONG-NAMED ONE IS THE LARGEST, HARDEST CASE · HE PUTS EXTRA WATER AND APPLE IN THE JUICE SO HIS NEXT BATCH WILL NOT EXPLODE, AND HE LEARNS HOW TO MAKE JTMYHE INTO ANTI-VIRUS LIQUID — LEARNING FROM THE FAILED FORMULA · IT IS A HUGE REVERSAL: THE STORM-BEING WHO CONSUMED AND DESTROYED CAN NOW MANUFACTURE RECOVERY TOO · BUT GRAY.EXE IS ANTI-ANTI-VIRUS — THE EXACT COUNTER TO THE CURE, THE ANSWER TO THE ANSWER, IMMUNE TO THE ANTI-VIRUS LIQUID · GRAY KEEPS TRYING TO TAKE OVER EVERY GAME HE CAN REACH — CLASSIC RL, CLASSIC ALPHIANS, CLASSIC SPRUNKI, CLASSIC TOJI, AND THE CLASSIC MODS · SO THE CURE HEALS THE WORLD BUT CANNOT TOUCH THE ONE THING STILL ATTACKING IT' },
+  { key:'THE LAYER SYSTEM', col:'#7fd4ff',
+    sub:'THE CORE TRUTH UNDER EVERYTHING — SPRUNKI, CLASSIC RL, AND CLASSIC RL 2 ARE THREE LAYERS OF ONE STORY · SPRUNKI IS THE SURFACE MUSIC LAYER, THE MASK WHERE THINGS LOOK NORMAL · CLASSIC RL IS THE DEEPER REALITY, THE GAME-RULE LAYER, AND IN SIMON’S WORLDVIEW IT IS THE REAL UNIVERSE — “OUR UNIVERSE IS THE REALITY, AND ALL OTHER UNIVERSES ARE THE GAME” · CLASSIC RL 2 IS A GLITCHED, MIXED COPY WITH THE SAME STORY BUT DESYNCED AND BROKEN, THE SAME TRUTH RUNNING WRONG · PHASE 1 IS USUALLY THE MASK AND PHASE 2 IS THE HIDDEN REALITY UNDERNEATH · BUT THE ORUS LAYER MAKES IT BIGGER STILL: NOTHING IS FULLY REAL EXCEPT WHAT EXISTS IN ORUS’S VISION, SO EVEN THE REAL UNIVERSE ANSWERS TO SOMETHING ABOVE IT · AND THE HIDDEN MESSAGE IS THAT DIFFERENT PEOPLE HOLD DIFFERENT PIECES OF THE SECRET — THE MAIN CANON VAULT HOLDS THE MAJOR EVENTS AND RULES WHILE SMALLER CLUES ARE SCATTERED, AND ONLY TOGETHER DO THEY FORM THE TRUE MESSAGE OF SIMON’S SECRET LIFE' },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -12373,6 +12375,37 @@ const LV_CURE_CARDS = [
   { who:'ANTI-VIRUS LIQUID', col:'#7fd4ff', role:'HE IMPROVES JTMYHE INTO ANTI-VIRUS LIQUID · ADDS WATER AND APPLE SO IT WILL NOT EXPLODE · HE LEARNS FROM THE FAILURE AND FIXES THE FORMULA' },
   { who:'ANTI-ANTI-VIRUS', col:'#b6bcc8', role:'GRAY.EXE IS THE COUNTER-RULE · IMMUNE TO THE CURE, THE ANSWER TO THE ANSWER · HE PUSHES TO TAKE OVER EVERY GAME HE CAN REACH' },
 ];
+// BEAT 52 — THE LAYER SYSTEM (Toby's July 4 canon dump: "Sprunki → Classic RL → Classic RL 2. Sprunki is the surface music
+// layer. Classic RL is the deeper reality/game-rule layer. Classic RL 2 is a glitched, mixed copy with the same story but
+// desynced and broken. Classic RL is treated as the real universe: 'Our universe is the reality, and all other universes
+// are the game.' But the Orus layer makes it bigger: nothing is fully real except what exists in Orus's vision. Different
+// people hold different parts of the secret; the main canon vault holds major events while smaller clues are scattered.")
+const LV_LAYERS = [
+  { who:'SPRUNKI',      col:'#8fe6ff', tag:'THE SURFACE MUSIC LAYER · THE MASK, WHERE THINGS LOOK NORMAL' },
+  { who:'CLASSIC RL',   col:'#5cd0ff', tag:'THE DEEPER REALITY · THE GAME-RULE LAYER · TREATED AS THE REAL UNIVERSE' },
+  { who:'CLASSIC RL 2', col:'#c98bff', tag:'A GLITCHED, MIXED COPY · THE SAME STORY BUT DESYNCED AND BROKEN' },
+];
+const LV_REALLAYER = [
+  'CLASSIC RL IS THE REAL UNIVERSE',
+  'SPRUNKI IS ONLY THE OUTER SHELL',
+  'PHASE 1 IS THE MASK · PHASE 2 THE TRUTH',
+  '“OUR UNIVERSE IS THE REALITY,',
+  'ALL OTHER UNIVERSES ARE THE GAME”',
+  '◆ THE DEEP LAYER HOLDS THE RULES',
+];
+const LV_GLITCHLAYER = [
+  'CLASSIC RL 2 IS A GLITCHED COPY',
+  'SAME STORY, BUT MIXED AND DESYNCED',
+  'THE TIMING SLIPS, THE EVENTS BREAK',
+  'A BROKEN MIRROR OF THE REAL LAYER',
+  'THE CANON PIECES, RUNNING OUT OF ORDER',
+  '◆ THE SAME TRUTH, RUNNING WRONG',
+];
+const LV_LAYER_CARDS = [
+  { who:'THE THREE LAYERS', col:'#7fd4ff', role:'SPRUNKI → CLASSIC RL → CLASSIC RL 2 · SURFACE MUSIC, THEN THE REAL RULE-LAYER, THEN A GLITCHED DESYNCED COPY OF THE SAME STORY' },
+  { who:'ORUS’S VISION', col:'#ffd24a', role:'THE BIGGER RULE ABOVE THE LAYERS · NOTHING IS FULLY REAL EXCEPT WHAT EXISTS IN ORUS’S VISION · EVEN THE REAL UNIVERSE ANSWERS TO IT' },
+  { who:'THE CANON VAULT', col:'#a6ffcf', role:'DIFFERENT PEOPLE HOLD DIFFERENT PIECES OF THE SECRET · TOGETHER THEY FORM THE TRUE MESSAGE OF SIMON’S SECRET LIFE' },
+];
 // simple left-aligned word-wrap for the small lore chips; uses the current fillStyle/font, draws from (x,y) down by lineH.
 function wrapLoreText(text, x, y, maxW, lineH){
   const words=(''+text).split(' '); let line='', yy=y;
@@ -12523,7 +12556,8 @@ function lvSeg(c){
   if(c < 796.0) return [48, c-774.0];               // THE TRAPPED WITNESS (Toby's July 4 lore)
   if(c < 818.0) return [49, c-796.0];
   if(c < 840.0) return [50, c-818.0]; // THE CLEANER ROLES
-  return [51, c-840.0];               // THE CURE (Toby's July 4 lore: Simon.Exe stops being only a destroyer and makes a cure, curing 404D, Classics Infection, Plague, Corruption, Yellow Eye, Hallucinations and pneumonoultramicroscopicsilicovolcanoconiosis — Plague is the one he is most after and the long-named one is the largest, hardest case; he puts extra water and apple in the juice so his next batch will not explode, and learns to make JTMYHE into Anti-Virus Liquid, learning from the failed formula; a huge reversal from pure destroyer to a being who can manufacture recovery; but Gray.EXE is Anti-Anti-Virus, the exact counter to the cure and the answer to the answer, immune to the Anti-Virus Liquid, and he keeps trying to take over every game he can reach — Classic RL, Classic Alphians, Classic Sprunki, Classic Toji and the Classic mods — so the cure heals the world but cannot touch the one thing still attacking it)
+  if(c < 862.0) return [51, c-840.0]; // THE CURE (Toby's July 4 lore: Simon.Exe stops being only a destroyer and makes a cure, curing 404D, Classics Infection, Plague, Corruption, Yellow Eye, Hallucinations and pneumonoultramicroscopicsilicovolcanoconiosis — Plague is the one he is most after and the long-named one is the largest, hardest case; he puts extra water and apple in the juice so his next batch will not explode, and learns to make JTMYHE into Anti-Virus Liquid, learning from the failed formula; a huge reversal from pure destroyer to a being who can manufacture recovery; but Gray.EXE is Anti-Anti-Virus, the exact counter to the cure and the answer to the answer, immune to the Anti-Virus Liquid, and he keeps trying to take over every game he can reach — Classic RL, Classic Alphians, Classic Sprunki, Classic Toji and the Classic mods — so the cure heals the world but cannot touch the one thing still attacking it)
+  return [52, c-862.0];               // THE LAYER SYSTEM (Toby's July 4 canon dump: the core truth under everything — Sprunki, Classic RL and Classic RL 2 are three layers of one story. Sprunki is the surface music layer, the mask where things look normal; Classic RL is the deeper reality, the game-rule layer, and in Simon's worldview it IS the real universe — "Our universe is the reality, and all other universes are the game"; Classic RL 2 is a glitched, mixed copy with the same story but desynced and broken, the same truth running wrong. Phase 1 is usually the mask and Phase 2 the hidden reality underneath. But the Orus layer makes it bigger still: nothing is fully real except what exists in Orus's vision, so even the real universe answers to something above it. And the hidden message is that different people hold different pieces of the secret — the main canon vault holds the major events and rules while smaller clues are scattered, and only together do they form the true message of Simon's Secret Life.)
   /* THE CLEANER ROLES (prior beat, Toby's July 4 lore): the roles realign cleanly — Simon.Exe now makes his power lightning and speed but uses lightning rarely, keeping it in reserve, becoming a fast/precise/deliberate speed-being rather than a constant storm; Gray.EXE stays the dominant destroyer who keeps attacking everyone, keeps Simon hung up, and wields Classics as a spread-weapon; Classics infects all across the whole game — Gray = main destroyer, Classics = mass spread, Simon = restrained but powerful, speed-focused with lightning held back */
   /* prev boundary: */ // THE NEWEST TIMELINE (Toby's July 4 lore: ToddLLM strips the world to a vanilla lockdown, removing the OCs and locking everyone into vanilla form; only Sprunkis, ToddLLM, Classics and EndlessAnimations remain; Classics keeps returning to Simon to drain sugar, Cat Power, Soul Shards and Power Crystals; Simon still consumes Brud.EXE; the corrected order is 1. Gray.EXE, 2. ToddLLM 001, then Classics, Oren.EXE, Simon.Exe, Brud; Gray.EXE can erase the game, KO Simon with one slash, and fire a heart-shaped darkmatter beam that KOs ToddLLM in seconds, though ToddLLM can dodge and Gray still wins the long fight; Gray's unique ability 404: Death Not Found shuts off Simon.Exe's Death Control, making him the exact anti-Simon answer)               // THE TRAPPED WITNESS (Toby's July 4 lore: Simon.Exe alive but bound — hung on a rope, in chains — while Classics escapes to attack and infect Alex, Greg, 67 Pirate and others)               // THE TOP OF THE ORDER (Toby's July 4 power-ranking correction: the corrected top-end placement. 1. Gray.EXE — the most powerful boss. 2. Simon.Exe — second most powerful overall, slightly above Oren.EXE. 3. Oren.EXE — just under Simon.Exe. Simon and Oren are a near-pair at the top, but Simon still has the higher ceiling. Simon.Exe controls lightning, controls speed, controls death itself, is self-aware, knows his own stats, is not a boss but a being, can overtake huge parts of the game — a singular disaster-character. Oren.EXE is extremely close in power, one of the strongest entities, with reality-bending sound pressure and an animated, background-warping force; he is second only because Simon.Exe edges him out. The difference is not a huge gap but a line: Oren.EXE is almost there, but Simon.Exe crosses it first.)
 }
@@ -12741,6 +12775,10 @@ function updateLoopVs(dt){
       showTaunt('This one is a real turn. Simon.Exe stops being only a destroyer and makes a cure. He cures everyone of 404D, Classics Infection, Plague, Corruption, Yellow Eye, Hallucinations, and pneumonoultramicroscopicsilicovolcanoconiosis. Plague is the one he is most after, and the long-named one is the biggest, hardest case. He learns from his mistakes too — he puts extra water and apple in the juice so his next batch will not explode, and he learns how to turn JTMYHE into Anti-Virus Liquid. It is a huge reversal: the storm-being who consumed and destroyed can now manufacture recovery. But there is a catch — Gray.EXE is Anti-Anti-Virus, the exact counter to the cure, the answer to the answer, immune to the Anti-Virus Liquid. And Gray keeps trying to take over every game he can reach: Classic RL, Classic Alphians, Classic Sprunki, Classic Toji, and the Classic mods. So the cure heals the world, but it cannot touch the one thing still attacking it.');
       floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE CURE · SIMON.Exe STOPS BEING ONLY A DESTROYER AND MAKES A CURE — HE CURES 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS, AND PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS · PLAGUE IS THE ONE HE IS MOST AFTER · THE LONG-NAMED ONE IS THE LARGEST, HARDEST CASE · HE PUTS EXTRA WATER AND APPLE IN THE JUICE SO HIS NEXT BATCH WILL NOT EXPLODE · HE MAKES JTMYHE INTO ANTI-VIRUS LIQUID, LEARNING FROM THE FAILED FORMULA · A HUGE REVERSAL — THE DESTROYER CAN NOW MANUFACTURE RECOVERY · BUT GRAY.EXE IS ANTI-ANTI-VIRUS — THE ANSWER TO THE ANSWER, IMMUNE TO THE CURE · GRAY KEEPS TRYING TO TAKE OVER EVERY GAME: CLASSIC RL · ALPHIANS · SPRUNKI · TOJI · MODS · THE CURE HEALS THE WORLD BUT CANNOT TOUCH THE ONE THING STILL ATTACKING IT', col:'#5cff9b' });
       for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#5cff9b','#a6ffcf','#7fd4ff','#b6bcc8','#8dffbf','#eafff2','#ffffff']))); }
+    if(ph===52){ AUDIO.corrupt(); shake=Math.max(shake,9); glitch=Math.max(glitch,0.4); winFlash=Math.max(winFlash,0.5);
+      showTaunt('Here is the core truth under everything. Sprunki, Classic RL, and Classic RL 2 are three layers of one story. Sprunki is the surface music layer, the mask where everything looks normal. Classic RL is the deeper reality, the game-rule layer, and in Simon’s worldview it is the real universe: "Our universe is the reality, and all other universes are the game." Classic RL 2 is a glitched, mixed copy with the same story but desynced and broken, the same truth running wrong. Phase 1 is usually the mask and Phase 2 is the hidden reality underneath. But the Orus layer makes it bigger still, because nothing is fully real except what exists in Orus’s vision, so even the real universe answers to something above it. And the hidden message is that different people hold different pieces of the secret. The main canon vault holds the major events and rules while smaller clues are scattered, and only together do they form the true message of Simon’s Secret Life.');
+      floaters.push({ x:player.x, y:player.y-30, t:0, txt:'THE LAYER SYSTEM · SPRUNKI → CLASSIC RL → CLASSIC RL 2 · SPRUNKI IS THE SURFACE MUSIC LAYER, THE MASK · CLASSIC RL IS THE DEEPER REALITY, THE GAME-RULE LAYER — THE REAL UNIVERSE · “OUR UNIVERSE IS THE REALITY, AND ALL OTHER UNIVERSES ARE THE GAME” · CLASSIC RL 2 IS A GLITCHED, MIXED COPY — SAME STORY, DESYNCED AND BROKEN · PHASE 1 IS THE MASK, PHASE 2 IS THE HIDDEN REALITY · THE ORUS LAYER GOES BIGGER STILL — NOTHING IS FULLY REAL EXCEPT WHAT EXISTS IN ORUS’S VISION · DIFFERENT PEOPLE HOLD DIFFERENT PIECES OF THE SECRET — THE CANON VAULT HOLDS THE MAJOR EVENTS, SMALLER CLUES ARE SCATTERED, AND ONLY TOGETHER DO THEY FORM THE TRUE MESSAGE OF SIMON’S SECRET LIFE', col:'#7fd4ff' });
+      for(let i=0;i<60;i++) particles.push(spark(player.x, player.y, pick(['#7fd4ff','#8fe6ff','#5cd0ff','#c98bff','#ffd24a','#a6ffcf','#ffffff']))); }
   }
   // THE UNDEFINED LOOP meter — keep climbing and the loop resolves; your real climb banks anyway.
   const moving = !player.onGround || Math.abs(player.vx) > 0.6;
@@ -12891,16 +12929,17 @@ function drawLoopVs(){
   else if(ph===49){ bg.addColorStop(0, `rgba(2,12,20,${0.98*g})`); bg.addColorStop(1, `rgba(16,2,6,${0.99*g})`); }
   else if(ph===50){ bg.addColorStop(0, `rgba(3,14,22,${0.98*g})`); bg.addColorStop(1, `rgba(18,3,8,${0.99*g})`); }
   else if(ph===51){ bg.addColorStop(0, `rgba(4,20,14,${0.98*g})`); bg.addColorStop(1, `rgba(10,14,18,${0.99*g})`); }
+  else if(ph===52){ bg.addColorStop(0, `rgba(4,14,24,${0.98*g})`); bg.addColorStop(1, `rgba(14,8,20,${0.99*g})`); }
   else { bg.addColorStop(0, `rgba(6,20,10,${0.9*g})`); bg.addColorStop(1, `rgba(3,8,5,${0.94*g})`); }
   ctx.fillStyle = bg; ctx.fillRect(0, top, W, H);
   // drifting bands
   for(let i=0;i<8;i++){ const by=top+ (((i*47 + c*42)% (H+40)) ) - 20;
-    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (ph===49 ? (i%2?'#9fe0ff':'#ff5a6e') : ph===50 ? (i%2?'#8fe6ff':'#ff5a6e') : ph===51 ? (i%2?'#5cff9b':'#7fd4ff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))))))))))));
+    ctx.globalAlpha=g*0.09; ctx.fillStyle = ph===10 ? (i%2?'#ffd98a':'#b89bff') : (ph===11 ? (i%2?'#7fe8ff':'#ff3b4a') : (ph===12 ? (i%2?'#ffe066':'#3ee06a') : (ph===13 ? (i%2?'#ff5a6e':'#7fd4ff') : (ph===14 ? (i%2?'#46ff77':'#ff2db5') : (ph===15 ? (i%2?'#39ff9b':'#ff5a6e') : (ph===16 ? (i%2?'#ff5cf0':'#46ff77') : (ph===17 ? (i%2?'#ff7a3a':'#3ee06a') : (ph===18 ? (i%2?'#b06bff':'#ff2db5') : (ph===19 ? (i%2?'#ff2db5':'#ff5cf0') : (ph===20 ? (i%2?'#5cc8ff':'#9fb4c8') : (ph===21 ? (i%2?'#ff4060':'#5cc8ff') : (ph===22 ? (i%2?'#b06bff':'#ff5cf0') : (ph===23 ? (i%2?'#ffc23a':'#ffe066') : (ph===24 ? (i%2?'#d46bff':'#ff2db5') : (ph===25 ? (i%2?'#ff2b46':'#37e0ff') : (ph===26 ? (i%2?'#7fd4ff':'#3ee06a') : (ph===27 ? (i%2?'#cfd8e6':'#b06bff') : (ph===28 ? (i%2?'#ffdf7a':'#cfd8e6') : (ph===29 ? (i%2?'#ff9ec4':'#cfd8e6') : (ph===30 ? (i%2?'#ff2d55':'#5cc8ff') : (ph===31 ? (i%2?'#5affc8':'#ff5a6e') : (ph===32 ? (i%2?'#39ff88':'#ff2d3a') : (ph===33 ? (i%2?'#ff7a2a':'#ff2d3a') : (ph===34 ? (i%2?'#a9c4ff':'#b98bff') : (ph===35 ? (i%2?'#8be0ff':'#5cc8ff') : (ph===36 ? (i%2?'#ffd36a':'#ff9a3a') : (ph===37 ? (i%2?'#6fe6d0':'#c58bff') : (ph===38 ? (i%2?'#ff2a2a':'#ff7a3a') : (ph===39 ? (i%2?'#c24bff':'#8bff5a') : (ph===40 ? (i%2?'#ffd24a':'#b06bff') : (ph===41 ? (i%2?'#5cd0ff':'#ff7a3a') : (ph===42 ? (i%2?'#ff8a3a':'#5cd0ff') : (ph===43 ? (i%2?'#ffc44a':'#5ad0c0') : (ph===44 ? (i%2?'#ff2a2a':'#ffab5a') : (ph===45 ? (i%2?'#6cc4ff':'#ff3b4a') : (ph===46 ? (i%2?'#ffd24a':'#6cc4ff') : (ph===47 ? (i%2?'#b9f0ff':'#ff6a78') : (ph===48 ? (i%2?'#c98bff':'#9fb4c8') : (ph===49 ? (i%2?'#9fe0ff':'#ff5a6e') : ph===50 ? (i%2?'#8fe6ff':'#ff5a6e') : ph===51 ? (i%2?'#5cff9b':'#7fd4ff') : ph===52 ? (i%2?'#7fd4ff':'#c98bff') : (i%2 ? '#3ee06a' : (ph===4?'#c69bff':'#8fe3ff')))))))))))))))))))))))))))))))))))))))));
     ctx.fillRect(0, by, W, 2); }
   ctx.globalAlpha=1;
 
   // title band
-  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : (ph===49 ? `rgba(159,224,255,${0.96*g})` : ph===50 ? `rgba(143,230,255,${0.96*g})` : ph===51 ? `rgba(92,255,155,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))))))))))));
+  ctx.fillStyle = ph===10 ? `rgba(255,217,138,${0.96*g})` : (ph===11 ? `rgba(127,232,255,${0.96*g})` : (ph===12 ? `rgba(255,224,102,${0.96*g})` : (ph===13 ? `rgba(255,138,154,${0.96*g})` : (ph===14 ? `rgba(70,255,119,${0.96*g})` : (ph===15 ? `rgba(57,255,155,${0.96*g})` : (ph===16 ? `rgba(255,92,240,${0.96*g})` : (ph===17 ? `rgba(255,122,58,${0.96*g})` : (ph===18 ? `rgba(176,107,255,${0.96*g})` : (ph===19 ? `rgba(255,45,181,${0.96*g})` : (ph===20 ? `rgba(92,200,255,${0.96*g})` : (ph===21 ? `rgba(255,64,96,${0.96*g})` : (ph===22 ? `rgba(176,107,255,${0.96*g})` : (ph===23 ? `rgba(255,194,58,${0.96*g})` : (ph===24 ? `rgba(212,107,255,${0.96*g})` : (ph===25 ? `rgba(255,43,70,${0.96*g})` : (ph===26 ? `rgba(143,227,255,${0.96*g})` : (ph===27 ? `rgba(207,216,230,${0.96*g})` : (ph===29 ? `rgba(255,158,196,${0.96*g})` : (ph===30 ? `rgba(255,45,85,${0.96*g})` : (ph===31 ? `rgba(90,255,200,${0.96*g})` : (ph===32 ? `rgba(57,255,136,${0.96*g})` : (ph===33 ? `rgba(255,122,42,${0.96*g})` : (ph===34 ? `rgba(169,196,255,${0.96*g})` : (ph===35 ? `rgba(139,224,255,${0.96*g})` : (ph===36 ? `rgba(255,211,106,${0.96*g})` : (ph===37 ? `rgba(111,230,208,${0.96*g})` : (ph===38 ? `rgba(255,42,42,${0.96*g})` : (ph===39 ? `rgba(194,75,255,${0.96*g})` : (ph===40 ? `rgba(255,210,74,${0.96*g})` : (ph===41 ? `rgba(92,208,255,${0.96*g})` : (ph===42 ? `rgba(255,138,58,${0.96*g})` : (ph===43 ? `rgba(255,196,74,${0.96*g})` : (ph===44 ? `rgba(255,42,42,${0.96*g})` : (ph===45 ? `rgba(108,196,255,${0.96*g})` : (ph===46 ? `rgba(255,210,74,${0.96*g})` : (ph===47 ? `rgba(185,240,255,${0.96*g})` : (ph===48 ? `rgba(201,139,255,${0.96*g})` : (ph===49 ? `rgba(159,224,255,${0.96*g})` : ph===50 ? `rgba(143,230,255,${0.96*g})` : ph===51 ? `rgba(92,255,155,${0.96*g})` : ph===52 ? `rgba(127,212,255,${0.96*g})` : `rgba(62,224,106,${0.96*g})`))))))))))))))))))))))))))))))))))))));
   ctx.font='800 13px ui-monospace,monospace';
   ctx.fillText(ph===10 ? 'THE NEUTRAL CHAMPION — MINDY STARCHILD & VOID EXPANSION: JUSTICE'
                        : (ph===11 ? 'THE ORB WAR — 001 vs CLARA · COLOR LOGIC ANSWERS THE DOMAIN'
@@ -12944,6 +12983,7 @@ function drawLoopVs(){
                        : (ph===49 ? 'THE NEWEST TIMELINE · TODDLLM STRIPS THE WORLD TO VANILLA — OCs REMOVED, FORMS DELETED · ORDER: 1. GRAY.EXE · 2. TODDLLM 001 · THEN CLASSICS · OREN · SIMON · BRUD · GRAY’S “404: DEATH NOT FOUND” SHUTS OFF SIMON.Exe’S DEATH CONTROL'
                        : ph===50 ? 'THE CLEANER ROLES · SIMON.Exe NOW MADE HIS POWER LIGHTNING AND SPEED — HE USES LIGHTNING RARELY, KEPT IN RESERVE · A FAST, PRECISE, DELIBERATE BEING WHO CHOOSES WHEN LIGHTNING MATTERS · GRAY.EXE MAKES CLASSICS SPREAD ALL OVER — CLASSICS INFECTS ALL · GRAY KEEPS SIMON HUNG UP & ATTACKS EVERYONE · NO MORE SCAMS, THE ROLES ARE CLEAN'
                        : ph===51 ? 'THE CURE · SIMON.Exe MAKES A CURE — HE CURES 404D, CLASSICS INFECTION, PLAGUE, CORRUPTION, YELLOW EYE, HALLUCINATIONS & PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSIS · PLAGUE IS THE ONE HE IS MOST AFTER · HE ADDS WATER & APPLE SO THE NEXT BATCH WON’T EXPLODE & MAKES JTMYHE INTO ANTI-VIRUS LIQUID · THE DESTROYER TURNS HEALER · BUT GRAY.EXE IS ANTI-ANTI-VIRUS — IMMUNE, THE ANSWER TO THE ANSWER · GRAY TARGETS EVERY GAME: CLASSIC RL · ALPHIANS · SPRUNKI · TOJI · MODS'
+                       : ph===52 ? 'THE LAYER SYSTEM · SPRUNKI → CLASSIC RL → CLASSIC RL 2 · SPRUNKI IS THE SURFACE MUSIC MASK · CLASSIC RL IS THE DEEPER REALITY & THE REAL UNIVERSE — “OUR UNIVERSE IS THE REALITY, ALL OTHERS ARE THE GAME” · CLASSIC RL 2 IS A GLITCHED, DESYNCED COPY OF THE SAME STORY · PHASE 1 IS THE MASK, PHASE 2 THE TRUTH · THE ORUS LAYER GOES BIGGER — NOTHING IS FULLY REAL EXCEPT WHAT EXISTS IN ORUS’S VISION · DIFFERENT PEOPLE HOLD DIFFERENT PIECES; TOGETHER THEY FORM THE TRUE MESSAGE OF SIMON’S SECRET LIFE'
                        : 'THE UNDEFINED LOOP — LUIGI GREEN AND THE CAT-POWER THRESHOLDS'))))))))))))))))))))))))))))))))))))))), cx, top+26);
   ctx.fillStyle=`rgba(220,235,225,${0.82*g})`; ctx.font='700 9px ui-monospace,monospace';
   ctx.fillText(LV_BEATS[ph].sub, cx, top+40);
@@ -15830,6 +15870,131 @@ function drawLoopVs(){
     ctx.textAlign='center';
     ctx.fillStyle=`rgba(255,138,58,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
     ctx.fillText('★ MR. SUN LASTS LONGEST · SIMON.Exe TAKES HIM DOWN · ONLY SIMON.Exe & GRAY.EXE SURVIVE ★', cx, top+H*0.93);
+  } else if(ph===52){
+    // ----- BEAT 52: THE LAYER SYSTEM — Toby's July 4 canon dump ("Sprunki → Classic RL → Classic RL 2. Sprunki is the
+    // surface music layer. Classic RL is the deeper reality/game-rule layer. Classic RL 2 is a glitched, mixed copy with the
+    // same story but desynced and broken. Classic RL is the real universe: 'Our universe is the reality, and all other
+    // universes are the game.' But the Orus layer makes it bigger: nothing is fully real except what exists in Orus's
+    // vision. Different people hold different parts of the secret; the canon vault holds the major events."). center = the
+    // three-layer stack revealing top-down; left = the real layer (Classic RL); right = the glitched copy (Classic RL 2);
+    // then the Orus/canon-vault insight and three cards. c in [862,884). -----
+    const lt = c - 862.0;
+    // faint field: cool layer-motes drifting up (the deep reality) plus a dim desync glitch band on the far right (RL 2).
+    const rfA = Math.max(0, Math.min(1, (lt-0.8)/2.6));
+    if(rfA>0.01){
+      ctx.save();
+      const mN=30, rise=Math.max(0,Math.min(1,(lt-1.0)/5.0));
+      for(let i=0;i<mN;i++){
+        const seed=(i*53)%97, mx=W*0.24+((seed*7)%100)/100*W*0.72;
+        const my=top+H*0.86 - ((c*0.10+i*0.37)%1)*H*0.78*(0.4+0.6*rise);
+        ctx.globalAlpha=g*rfA*0.12; ctx.fillStyle=(i%3? '#7fd4ff':(i%2?'#5cd0ff':'#c98bff'));
+        ctx.fillRect(mx-1.4, my-1.4, 2.8, 2.8);
+      }
+      // Classic RL 2's desync glitch band on the far right — same shape, running wrong
+      const glA=Math.max(0,Math.min(1,(lt-3.4)/1.4));
+      for(let i=0;i<7;i++){
+        ctx.globalAlpha=g*rfA*glA*0.16; ctx.fillStyle='#c98bff';
+        const gy=top+H*(0.30+i*0.055)+((c*7+i*13)%9);
+        ctx.fillRect(W*0.845+((c*11+i*17)%12), gy, W*0.12, 1.4);
+      }
+      ctx.restore(); ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(127,212,255,${0.97*g})`; ctx.font='800 10px ui-monospace,monospace';
+    ctx.fillText('THE LAYER SYSTEM — SPRUNKI → CLASSIC RL → CLASSIC RL 2 · THE CORE TRUTH UNDER EVERYTHING', cx, top+H*0.062);
+    ctx.fillStyle=`rgba(232,242,250,${0.8*g})`; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('CLASSIC RL IS THE REAL UNIVERSE · CLASSIC RL 2 IS A GLITCHED, DESYNCED COPY · NOTHING IS FULLY REAL EXCEPT IN ORUS’S VISION', cx, top+H*0.062+11);
+
+    // --- the three-layer stack ---
+    const bx=W*0.235, bw=W*0.755, by0=top+H*0.115, barH=H*0.088, gap=H*0.012;
+    const rRev=Math.max(0,Math.min(LV_LAYERS.length, Math.floor((lt-0.4)/0.6)+1));
+    for(let i=0;i<LV_LAYERS.length;i++){
+      const it=LV_LAYERS[i], y=by0+i*(barH+gap);
+      const app=i<rRev?((i===rRev-1)?Math.max(0,Math.min(1,(lt-0.4-i*0.6)/0.42)):1):0.16;
+      ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(6,12,20,0.86)'; ctx.fillRect(bx,y,bw,barH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.4; ctx.strokeRect(bx,y,bw,barH);
+      // depth ticks on the left edge — 1 tick for surface, 2 for deep, 3 for glitched
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.6;
+      for(let k=0;k<=i;k++){ const ky=y+barH/2-((i)*4)+k*8; ctx.beginPath(); ctx.moveTo(bx+8,ky); ctx.lineTo(bx+18,ky); ctx.stroke(); }
+      ctx.textAlign='left';
+      ctx.fillStyle=it.col; ctx.font='900 12px ui-monospace,monospace';
+      ctx.fillText(it.who, bx+30, y+barH*0.42+2);
+      ctx.fillStyle='rgba(228,240,250,0.9)'; ctx.font='800 6.6px ui-monospace,monospace';
+      ctx.fillText(it.tag, bx+30, y+barH*0.74);
+      ctx.globalAlpha=1;
+    }
+
+    // --- LEFT column: the real layer (Classic RL) ---
+    const scX=W*0.235, scW=W*0.365, scY=top+H*0.455, scH=H*0.20;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.0)/0.6));
+    ctx.fillStyle='rgba(2,14,22,0.86)'; ctx.fillRect(scX,scY,scW,scH);
+    ctx.strokeStyle=`rgba(92,208,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(scX,scY,scW,scH);
+    ctx.textAlign='left';
+    ctx.fillStyle='rgba(160,224,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('CLASSIC RL — THE REAL UNIVERSE', scX+8, scY+13);
+    const avRev=Math.max(0,Math.min(LV_REALLAYER.length, Math.floor((lt-3.4)/0.28)+1));
+    for(let i=0;i<LV_REALLAYER.length;i++){
+      const app=i<avRev?((i===avRev-1)?Math.max(0,Math.min(1,(lt-3.4-i*0.28)/0.22)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=scY+26+i*((scH-30)/LV_REALLAYER.length)+8, last=i===LV_REALLAYER.length-1;
+      ctx.fillStyle= last?'#5cd0ff':'#bfe8ff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', scX+10, ry);
+      ctx.fillStyle= last?'rgba(160,224,255,0.98)':'rgba(228,240,250,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_REALLAYER[i].replace('◆ ',''), scX+22, ry, scW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- RIGHT column: the glitched copy (Classic RL 2) ---
+    const ocX=W*0.62, ocW=W*0.37, ocY=scY, ocH=scH;
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-3.2)/0.6));
+    ctx.fillStyle='rgba(16,10,20,0.86)'; ctx.fillRect(ocX,ocY,ocW,ocH);
+    ctx.strokeStyle=`rgba(201,139,255,${0.6*g})`; ctx.lineWidth=1.4; ctx.strokeRect(ocX,ocY,ocW,ocH);
+    ctx.fillStyle='rgba(214,190,255,0.96)'; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('CLASSIC RL 2 — THE GLITCHED COPY', ocX+8, ocY+13);
+    const aaRev=Math.max(0,Math.min(LV_GLITCHLAYER.length, Math.floor((lt-3.6)/0.3)+1));
+    for(let i=0;i<LV_GLITCHLAYER.length;i++){
+      const app=i<aaRev?((i===aaRev-1)?Math.max(0,Math.min(1,(lt-3.6-i*0.3)/0.24)):1):0.16;
+      ctx.globalAlpha=g*app;
+      const ry=ocY+26+i*((ocH-30)/LV_GLITCHLAYER.length)+8, last=i===LV_GLITCHLAYER.length-1;
+      ctx.fillStyle= last?'#c98bff':'#d8c4ff'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText(last?'◆':'▸', ocX+10, ry);
+      ctx.fillStyle= last?'rgba(214,190,255,0.98)':'rgba(230,224,242,0.94)'; ctx.font='800 6.4px ui-monospace,monospace';
+      wrapLoreText(LV_GLITCHLAYER[i].replace('◆ ',''), ocX+22, ry, ocW-34, 7.2);
+    }
+    ctx.globalAlpha=1;
+
+    // --- the insight ---
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-4.4)/0.6));
+    ctx.fillStyle=`rgba(255,210,74,${(0.7+0.3*Math.sin(c*4.0))*g})`; ctx.font='900 8.4px ui-monospace,monospace';
+    ctx.fillText('“OUR UNIVERSE IS THE REALITY, AND ALL OTHER UNIVERSES ARE THE GAME” — BUT NOTHING IS FULLY REAL EXCEPT IN ORUS’S VISION', cx, top+H*0.685);
+    ctx.fillStyle='rgba(234,242,250,0.92)'; ctx.font='700 7px ui-monospace,monospace';
+    ctx.fillText('DIFFERENT PEOPLE HOLD DIFFERENT PIECES OF THE SECRET — ONLY TOGETHER DO THEY FORM THE TRUE MESSAGE OF SIMON’S SECRET LIFE', cx, top+H*0.685+13);
+    ctx.globalAlpha=1;
+
+    // --- the three cards ---
+    const tX=W*0.235, tR=W*0.99, tTop=top+H*0.73;
+    ctx.textAlign='left';
+    ctx.globalAlpha=g*Math.max(0,Math.min(1,(lt-5.0)/0.6));
+    ctx.fillStyle='rgba(127,212,255,0.92)'; ctx.font='800 8px ui-monospace,monospace';
+    ctx.fillText('THE THREE LAYERS, ORUS’S VISION, THE CANON VAULT — HOW THE WHOLE STORY IS STACKED', tX, tTop);
+    ctx.globalAlpha=1;
+    const cnN=LV_LAYER_CARDS.length, cngap=W*0.015, cnw=(tR-tX-(cnN-1)*cngap)/cnN, cnH=H*0.145, cnY=tTop+10;
+    for(let i=0;i<cnN;i++){
+      const it=LV_LAYER_CARDS[i], px=tX+i*(cnw+cngap);
+      const app=Math.max(0,Math.min(1,(lt-5.4-i*0.4)/0.5)); ctx.globalAlpha=g*app;
+      ctx.fillStyle='rgba(6,12,20,0.88)'; ctx.fillRect(px,cnY,cnw,cnH);
+      ctx.strokeStyle=it.col; ctx.lineWidth=1.2; ctx.strokeRect(px,cnY,cnw,cnH);
+      ctx.fillStyle=it.col; ctx.font='900 8px ui-monospace,monospace';
+      ctx.fillText(it.who, px+7, cnY+14);
+      ctx.fillStyle='rgba(236,244,250,0.86)'; ctx.font='700 6px ui-monospace,monospace';
+      wrapLoreText(it.role, px+7, cnY+27, cnw-14, 7.4);
+      ctx.globalAlpha=1;
+    }
+    ctx.textAlign='center';
+    ctx.fillStyle=`rgba(127,212,255,${(0.72+0.28*Math.sin(c*3.0))*g})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('★ SPRUNKI IS THE MASK · CLASSIC RL IS REAL · CLASSIC RL 2 IS DESYNCED · ORUS’S VISION HOLDS IT ALL ★', cx, top+H*0.93);
   } else if(ph===51){
     // ----- BEAT 51: THE CURE — Toby's July 4 lore ("Simon makes a cure and cures everyone of 404D, Classics Infection,
     // Plague, Corruption, Yellow Eye, Hallucinations, and pneumonoultramicroscopicsilicovolcanoconiosis... he learns how
