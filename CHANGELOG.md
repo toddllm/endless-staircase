@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-05 — THE GRAY COLLAPSE (BEAT 53)
+
+Based on Toby's 2026-07-05 lore ("Re: Lore 1A - Classics Era" — the newest Gray.EXE / Simon.Exe collapse canon).
+
+Toby's words: *"Simon.Exe dies in so many ways, the one who dies the most... Gray.EXE slays Classics and all the Sprunkis, only Gray.EXE and ToddLLM survive. Gray.EXE is the most powerful being... his soul is possessed, he wants long revenge on those who called him 'a scaredy cat', he is a dog person who even slays Simon.Exe... Black touched his brain and Gray can no longer think anymore... the highest is he is scared if anyone is trying to harm him... Gray.EXE hung Simon.Exe on a cloaths line on chains and in a SCF Containment Center. Gray.EXE also locked all doors, Simon.Exe can't move even if he wanted to... Gray.EXE has 777777777777777777777777777 IQ... Gray.EXE also slays Simon.Exe and ToddLLM 001 millions of times."*
+
+- New BEAT 53 lore panel, THE GRAY COLLAPSE, added to THE UNDEFINED LOOP climb (cyc `[884,906]`, cycle length extended `884 → 906`).
+- Center — a **newest survivor ranking** revealed top-down: **1. GRAY.EXE** (the most powerful being overall now, 777…777 IQ, bloodthirstiest and most dangerous of all), **2. TODDLLM 001** (the other survivor, more IQ than Gray but Gray outpowers him, slain millions of times), **3. SIMON.Exe** (the one who dies the most, hung in the SCF Center with all doors locked), **4. CLASSICS** (took over Simon's hung-up slot, then Gray slew her and all the Sprunkis too).
+- Left column — **GRAY.EXE — WHY HE ATTACKS EVERYONE**: his soul is possessed, revenge on those who called him "a scaredy cat," a dog person who even slays Simon.Exe, Black touched his brain so he can no longer think, his highest reason is fear of being harmed, ◆ he attacks first because he fears everyone.
+- Right column — **SIMON.Exe — THE ONE WHO DIES THE MOST**: he dies in so many ways, he even slays himself when hung up, locked out by fear, sadness, troll, and pain, hung on a clothesline and chains in the SCF Center, all doors locked, ◆ weaker and slower, he stops attacking Parinus.
+- Faint field — cold gray ash-motes falling (the collapse) plus a red SCF-containment error band on the far right (where Simon hangs, all doors locked).
+- Insight — *"GRAY.EXE IS NOW THE MOST POWERFUL BEING OVERALL — THE BLOODTHIRSTIEST, MOST DANGEROUS, MOST DESTRUCTIVE OF ALL"* over *"TODDLLM MAY OUTTHINK GRAY, BUT GRAY OUTPOWERS TODDLLM — HE SLAYS SIMON & TODDLLM 001 MILLIONS OF TIMES."*
+- Three closing cards: THE ONLY SURVIVORS, PARINUS & P.E.A.R. (Parinus made P.E.A.R.; Simon attacked every night then stopped, weaker and slower; Gray cut a crater into Parinus, half the Parinusians died), THE SCF CONTAINMENT CENTER. New "THE GRAY COLLAPSE" rung added to the beat ladder (lit gray). Additive — every earlier beat untouched; JS syntax-checked; new `graycollapse` scene added to `tools/capture_screenshot.py`.
+
+![The Gray Collapse](screenshots/117-gray-collapse.png)
+
 ## 2026-07-04 — THE LAYER SYSTEM (BEAT 52)
 
 Based on Toby's 2026-07-04 lore ("Re: Lore 1A - Classics Era" — the big canon dump).
