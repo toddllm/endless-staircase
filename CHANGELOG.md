@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-06 — THE RESPAWN LOOP (BEAT 56)
+
+Based on Toby's 2026-07-06 follow-up lore ("Re: Lore 1A - Classics Era" — a Gray.EXE rule update: his physical form respawns, all characters are attacked now, and he calls Wenda.EXE each time).
+
+Toby's words: *"Gray.EXE's Physical form respawns. All characters are attacked now. Gray.EXE calls Wenda.EXE each time... Gray.EXE now has two survival layers. 1. Physical form: Gray.EXE's physical body can be defeated, destroyed, or knocked out, but it does not stay gone. It respawns. 2. Spiritual form: Even if the physical form is down, Gray.EXE's spirit/soul/EXE essence remains active. The true Gray.EXE is not just the body. The body is only the current vessel... Every character is a possible target. Since he is scared anyone might harm him, he attacks everyone first... Gray.EXE calls Wenda.EXE each time. Gray attacks → calls Wenda.EXE. Physical Gray falls → Gray respawns → calls Wenda.EXE again. A new wave starts → Wenda.EXE appears again. So Wenda.EXE becomes part of Gray's respawn loop."*
+
+- New BEAT 56 lore panel, THE RESPAWN LOOP, added to THE UNDEFINED LOOP climb (cyc `[950,972]`, cycle length extended `950 → 972`).
+- Center — a **5-step respawn-loop ladder** revealed top-down, each a bordered rung with growing depth-ticks on its left edge: **STEP 1 · GRAY ATTACKS** (fear-driven, he strikes first, scared anyone might harm him), **STEP 2 · HE CALLS WENDA.EXE** (his summon, backup, and warning signal — Wenda is pulled in), **STEP 3 · PHYSICAL GRAY FALLS** (the body is defeated, destroyed, or knocked out, but not for long), **STEP 4 · GRAY RESPAWNS** (the body returns; the spirit underneath never left), **STEP 5 · HE CALLS WENDA AGAIN** (a new wave starts, Wenda is dragged back in, ↺ the loop repeats). A teal **↺ loop arrow** curves off the right edge from the last rung back up to the first, showing the cycle closes. Closing line: *"◆ THE LOOP NEVER CLOSES — KILL THE BODY AND IT RESPAWNS, THE SPIRIT UNDERNEATH STAYS ACTIVE."*
+- Left column — **TWO SURVIVAL LAYERS — BODY & SPIRIT**: the physical form can be defeated or KO'd; but it does not stay gone, it respawns; the spiritual form stays active underneath; the true Gray is not the body; the body is only the current vessel; ◆ nearly impossible to fully erase.
+- Right column — **EVERY CHARACTER IS A TARGET NOW**: the collapse is now a full-game event; not just Simon, Classics, Black or rebels; every character is a possible target; fear-logic — scared anyone might harm him; so he attacks everyone first; ◆ the whole cast is his threat list.
+- Faint field — cool respawn-cyan/green motes rising (the body reforming) plus a dim Wenda-blue band on the far right (the summon called each cycle).
+- Insight — *"GRAY.EXE'S PHYSICAL FORM CAN DIE, BUT IT RESPAWNS — HIS SPIRITUAL FORM REMAINS ACTIVE, SO HE IS NEARLY IMPOSSIBLE TO FULLY ERASE"* over *"AND EACH TIME HE STARTS OR RETURNS HE CALLS WENDA.EXE, MAKING HER PART OF HIS REPEATING COLLAPSE CYCLE."*
+- Three closing cards: TWO SURVIVAL LAYERS (body dies but respawns; spirit stays active underneath; the body is only the current vessel), ALL CHARACTERS TARGETED (the collapse becomes a full-game event; fear-logic makes the whole cast a threat list; he attacks everyone first), THE WENDA SUMMON (each start or respawn Gray calls Wenda.EXE — his summon, backup and warning signal; she is dragged back into every wave of the loop). New "THE RESPAWN LOOP" rung added to the beat ladder (lit respawn-cyan). Additive — every earlier beat untouched; JS syntax-checked; new `respawnloop` scene added to `tools/capture_screenshot.py`.
+
+![The Respawn Loop](screenshots/120-respawn-loop.png)
+
 ## 2026-07-06 — THE GRAY SANS (BEAT 55)
 
 Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — a new fanmade Classics X Undertale vessel-form of Gray.EXE).
