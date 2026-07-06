@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-06 — THE GRAY SANS (BEAT 55)
+
+Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — a new fanmade Classics X Undertale vessel-form of Gray.EXE).
+
+Toby's words: *"A new Gray Sans (fanmade) came out. All the others use stages, Gray Sans uses Phases too. It is like a normal Sans, but with a blue coat with a white outline and the eyes have a teal outline and it's mouth can get larger. 1st Phase is when Gray's physical form dies, 2nd Phase is when Gray's spirit/soul goes into a Sans, 3rd Phase is the Gray Sans battle, 4th Phase is where Gray gets out of the Sans and Simon takes the Sans' body up the mountain and Gray gets the souls and emeralds and he gets more power, 5th Phase is the Ultimate Gray Showdown where Gray.EXE is totally going to win. It is Classics X Undertale... Gray.EXE is scared of any harm."*
+
+- New BEAT 55 lore panel, THE GRAY SANS, added to THE UNDEFINED LOOP climb (cyc `[928,950]`, cycle length extended `928 → 950`).
+- Center — a **5-Phase ladder** revealed top-down, each a bordered rung with growing depth-ticks on its left edge: **PHASE 1 · PHYSICAL GRAY DIES** (his body is destroyed but his spirit survives — the body-can-die / spirit-cannot rule, proven), **PHASE 2 · GRAY ENTERS SANS** (the surviving spirit enters a Sans body, creating Gray Sans; not normal Sans, Sans used as a vessel), **PHASE 3 · THE GRAY SANS BATTLE** (Sans mechanics mixed with Gray's fear, IQ & EXE corruption; bones & Gaster-Blasters laced with teal/blue spiritual corruption), **PHASE 4 · GRAY LEAVES THE VESSEL** (Simon carries the empty Sans up the mountain while Gray moves to a bigger power source — the souls & emeralds), **PHASE 5 · THE ULTIMATE GRAY SHOWDOWN** (Gray.EXE returns beyond the vessel, boosted by souls & emeralds, almost certain to win). Closing line: *"◆ FIVE PHASES CARRY ONE RULE — THE BODY CAN DIE, THE SPIRIT CANNOT · SANS IS ONLY THE VESSEL."*
+- Left column — **GRAY SANS — THE VESSEL LOOK**: a blue coat with a white outline, eyes with a teal outline, a mouth that can stretch or grow larger, the Gray.EXE corruption showing underneath, Sans-like body language with a fear-driven EXE aura, ◆ he uses Phases, not Stages — Classics logic.
+- Right column — **CLASSICS X UNDERTALE — THE BRANCH**: a fanmade Classics X Undertale branch, itself a fanmade mod inside Classics, it can also appear in the Undertale mod, bones & Gaster-Blaster patterns return laced with Gray's teal/blue spiritual corruption, ◆ he attacks first — still scared of any harm.
+- Faint field — cool teal/blue vessel-motes rising (the spirit taking a shell) plus a dim violet Ultimate-Showdown band on the far right (Phase 5, souls & emeralds gathering).
+- Insight — *"THE REAL HORROR IS NOT 'SANS IS STRONGER NOW' — IT IS THAT GRAY CAN LOSE A BODY, TAKE A VESSEL, LEAVE IT, & STILL RETURN STRONGER"* over *"AND HE IS STILL SCARED OF ANY HARM, SO EVEN AS GRAY SANS HE ATTACKS FIRST SO NO ONE CAN HARM HIM."*
+- Three closing cards: PHASES, NOT STAGES (normal Sans fan battles use stages; Gray Sans uses Phases, making him a Classics-being in a Sans shell, not a standard Sans AU), THE VESSEL POSSESSION (body dies, spirit enters Sans, Simon later carries the empty vessel up the mountain while Gray moves to the souls & emeralds), THE ULTIMATE GRAY SHOWDOWN (lose a body, take a vessel, leave it, and still return stronger). New "THE GRAY SANS" rung added to the beat ladder (lit teal). Additive — every earlier beat untouched; JS syntax-checked; new `graysans` scene added to `tools/capture_screenshot.py`.
+
+![The Gray Sans](screenshots/119-gray-sans.png)
+
 ## 2026-07-05 — THE FULL FORM (BEAT 54)
 
 Based on Toby's 2026-07-05 lore (two follow-up emails on "Re: Lore 1A - Classics Era" — the Gray.EXE full-power / worship upgrade and the physical-vs-spiritual rule).
