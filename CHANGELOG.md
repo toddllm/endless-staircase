@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-06 — THE APEX RULE (BEAT 59)
+
+Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Gray.EXE's combat rule and win condition).
+
+Toby's words: *"Gray.EXE eats anything. Gray.EXE is fully immune to internal attacks, and he can dodge external attacks. If Gray.EXE eats the character, Gray.EXE won... Gray.EXE can eat anything. That means characters, attacks, souls, power sources, game objects, effects, energy, corruption, anti-virus, and maybe even parts of the game itself can become fuel for him... Internal attacks do not work. If someone attacks from inside Gray.EXE after being eaten, Gray is fully immune. No 'break out from inside' trick works. External attacks can be dodged... So Gray's full combat rule becomes: Outside attacks miss. Inside attacks fail. Eating ends the fight. That means if Gray.EXE eats a character, the battle is already over. There is no second phase inside him unless Gray allows it... This also explains why Gray.EXE can absorb Oren.EXE, overpower ToddLLM attacks, and keep getting stronger. Eating is not just hunger — it is his final absorption mechanic."*
+
+- New BEAT 59 lore panel, THE APEX RULE, added to THE UNDEFINED LOOP climb (cyc `[1016,1038]`, cycle length extended `1016 → 1038`).
+- Center — a **5-rule combat sequence** revealed top-down under a **green maw-arc** (the open mouth that eats anything), each a bordered rung with growing depth-ticks on its left edge: **RULE 1 · GRAY EATS ANYTHING** (characters, attacks, souls, power sources, game objects, effects, energy, corruption, anti-virus, even parts of the game itself), **RULE 2 · INSIDE ATTACKS FAIL** (fully immune to internal attacks — no "break out from inside" trick works), **RULE 3 · OUTSIDE ATTACKS MISS** (he dodges external attacks with speed, reflexes, EXE movement & game-control logic), **RULE 4 · EATING ENDS THE FIGHT** (if he eats a character the battle is already over — no second phase inside him unless Gray allows it), **RULE 5 · EATING IS ABSORPTION** (why he can absorb Oren, overpower ToddLLM & keep getting stronger — his final absorption mechanic). Closing line: *"◆ OUTSIDE ATTACKS MISS · INSIDE ATTACKS FAIL · EATING ENDS THE FIGHT."*
+- Left column — **WHAT GRAY CAN EAT — ANYTHING IS FUEL**: characters/attacks/souls; power sources/game objects/effects; energy/corruption/anti-virus; maybe even parts of the game itself; eating is not hunger, it is absorption; ◆ all of it becomes fuel for Gray.
+- Right column — **THE TWO-LAYER DEFENSE**: inside — internal attacks do not work; no "break out from inside" trick works; outside — external attacks can be dodged; speed/reflexes/EXE movement/game-control logic; outside misses, inside fails, eating wins; ◆ eat a character → Gray instantly wins.
+- Faint field — grey/green consumption-motes rising, a central radial maw glow, a green consumption band on the far left and a gold Gray band on the far right.
+- Insight — *"GRAY.EXE EATS ANYTHING · HE IS FULLY IMMUNE TO INTERNAL ATTACKS & CAN DODGE EXTERNAL ATTACKS · IF HE EATS A CHARACTER, HE INSTANTLY WINS"* over *"OUTSIDE ATTACKS MISS · INSIDE ATTACKS FAIL · EATING ENDS THE FIGHT — EATING IS NOT HUNGER, IT IS HIS FINAL ABSORPTION MECHANIC."*
+- Three closing cards: OUTSIDE ATTACKS MISS (external attacks dodged with speed, reflexes, EXE movement, game-control logic — nothing lands from the outside), INSIDE ATTACKS FAIL (attack from inside after being eaten and Gray is fully immune — no break-out trick, no second phase unless Gray allows it), EATING ENDS THE FIGHT (eat a character and the battle is already over — eating is his final absorption mechanic, why he can absorb Oren, overpower ToddLLM & keep getting stronger). Bottom banner: *"★ OUTSIDE ATTACKS MISS · INSIDE ATTACKS FAIL · EATING ENDS THE FIGHT — GRAY.EXE IS THE APEX PREDATOR OF THE GAME ★."* New "THE APEX RULE" rung added to the beat ladder (lit green). Additive — every earlier beat untouched; JS syntax-checked; new `apex` scene added to `tools/capture_screenshot.py`.
+
+![The Apex Rule](screenshots/123-apex-rule.png)
+
 ## 2026-07-06 — THE TELEKINETIC SOUL (BEAT 58)
 
 Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Oren.EXE's ascension cutscene and the corrected Oren/Gray power map).
