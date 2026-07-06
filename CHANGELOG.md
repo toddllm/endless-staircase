@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-05 — THE FULL FORM (BEAT 54)
+
+Based on Toby's 2026-07-05 lore (two follow-up emails on "Re: Lore 1A - Classics Era" — the Gray.EXE full-power / worship upgrade and the physical-vs-spiritual rule).
+
+Toby's words: *"Before, he was half, now Clunkr and Fun Bot and Garnold improved him to full power. Gray.EXE destroyed the room he's in and takes over everything. His new beutiful and divine appearence makes Wenda and Oren and Durple and Pinki and Sky and Brud 'worship' him... Mr. Black.EXE is also dangerous, he is Demoned and uses his cloning powers to make a whole army of demons to destroy Wenda and the others. Gray.EXE went beyond Black's control and started making the game his."* and *"Gray.EXE is overrated, Simon.Exe is underrated and slain each time and most of his deaths aren't murder. Gray.EXE's physical form can die, but not it's spiritual form."*
+
+- New BEAT 54 lore panel, THE FULL FORM, added to THE UNDEFINED LOOP climb (cyc `[906,928]`, cycle length extended `906 → 928`).
+- Center — a **worship circle** revealed top-down, the six who now worship the divine full form, each with a halo tick: **WENDA** (angel / all goodness — yet even she worships him), **OREN** (the last soul alive), **DURPLE** (dragon / demoned), **PINKI** (demoned), **SKY** (risen human), **BRUD** (heavy divine soldier — if even Brud worships, Gray wins by presence). Closing line: *"◆ THEY ALL WORSHIP HIM — HE IS A FALSE GOD OF THE COLLAPSING GAME."*
+- Left column — **GRAY.EXE — THE FULL FORM**: before he was only half and broken; Clunkr, Fun Bot & Garnold rebuilt him to full power; he destroyed the room and took over everything; his new appearance is beautiful and divine; his physical form can die but his spiritual form cannot; ◆ he went beyond Black's control and made the game his.
+- Right column — **MR. BLACK.EXE — THE CLONE ARMY**: Black is demoned and still dangerous; he clones a whole demon army to destroy Wenda and the others; but Gray grew beyond his control; Black falls from mastermind to a secondary disaster, ◆ a demon general under Gray's shadow.
+- Faint field — warm gold divine motes rising (the worship glow) plus a dim violet clone-army band on the far right (Black budding off demon clones).
+- Insight — *"GRAY.EXE IS OVERRATED · SIMON.Exe IS UNDERRATED — HE DIES THE MOST, MOSTLY NOT BY MURDER, YET STAYS THE CORE HORROR"* over *"GRAY'S PHYSICAL FORM CAN DIE, BUT HIS SPIRITUAL FORM CANNOT — TO TRULY BEAT HIM YOU MUST FACE THE SPIRIT, NOT THE BODY."*
+- Three closing cards: THE FULL POWER (rebuilt from half; he overwrites the environment by existing, cannot stay inside any lab/room/machine), THE WORSHIP-HORROR (divine appearance turns fear into worship; a false god of the collapsing game), BODY VS SPIRIT (kill the body, the spirit remains; face the spirit/core/EXE essence itself). New "THE FULL FORM" rung added to the beat ladder (lit gold). Additive — every earlier beat untouched; JS syntax-checked; new `fullform` scene added to `tools/capture_screenshot.py`.
+
+![The Full Form](screenshots/118-full-form.png)
+
 ## 2026-07-05 — THE GRAY COLLAPSE (BEAT 53)
 
 Based on Toby's 2026-07-05 lore ("Re: Lore 1A - Classics Era" — the newest Gray.EXE / Simon.Exe collapse canon).
