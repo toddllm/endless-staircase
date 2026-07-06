@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-06 — SIMON'S LIGHTNING (BEAT 61)
+
+Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Oren.EXE's weakness).
+
+Toby's words: *"Oren.EXE's weakness is Simon's lightning, the low voltage can bring him back to life. Simon also is often seen with Oren.EXE."*
+
+- New BEAT 61 lore panel, SIMON'S LIGHTNING, added to THE UNDEFINED LOOP climb (cyc `[1060,1082]`, cycle length extended `1060 → 1082`).
+- Center — a **5-step counter chain** revealed top-down under a **gold lightning-arc**, each a bordered rung with growing depth-ticks: **STEP 1 · OREN IS A GHOST/SPIRIT STATE** (a spirit disconnected from life, body & normal existence), **STEP 2 · SIMON'S LOW-VOLTAGE LIGHTNING** (not the huge destructive bolt — the low charge is what matters most), **STEP 3 · IT INTERFERES WITH HIS SPIRIT** (the electricity disrupts Oren's ghost / EXE state), **STEP 4 · IT BRINGS OREN BACK TO LIFE** (the low charge reconnects him to life, body & normal existence), **STEP 5 · HIGH POWER DOESN'T ALWAYS WIN** (Simon's low-voltage counter can revive / reset his spirit state). Closing line: *"◆ NOT THE HUGE BOLT — THE LOW-VOLTAGE CHARGE IS THE COUNTER."*
+- Left column — **THE WEAKNESS — SIMON'S LIGHTNING**: Oren's weakness is Simon's lightning; not the huge destructive bolt; the low-voltage charge is the counter; it can bring Oren back to life; it disrupts his ghost / EXE state; ◆ high power doesn't always beat Oren.
+- Right column — **SIMON & OREN — THE CONNECTION**: Simon is often seen with Oren.EXE; Simon is Oren's natural counter; Simon is Oren's stabilizer; the one who brings him back from EXE state; why Oren doesn't fully lose himself; ◆ the one character Oren must watch.
+- Faint field — gold/blue lightning-motes rising, a central spirit glow, a gold band on the far left and a blue band on the far right.
+- Insight — *"OREN.EXE'S WEAKNESS IS SIMON'S LOW-VOLTAGE LIGHTNING — IT CAN REVIVE HIS SPIRIT STATE, BRINGING HIM BACK TO LIFE"* over *"HIGH POWER DOES NOT ALWAYS BEAT OREN · SIMON IS BOTH HIS CONNECTION AND HIS COUNTER · GRAY.EXE IS STILL THE STRONGEST OVERALL."*
+- Three closing cards: THE LOW-VOLTAGE COUNTER, THE SPIRIT DISRUPTION, SIMON & OREN. Bottom banner: *"★ SIMON'S LOW-VOLTAGE LIGHTNING IS OREN.EXE'S ONE COUNTER — IT CAN BRING HIM BACK TO LIFE · GRAY.EXE STILL RULES ABOVE ALL ★."* New "SIMON'S LIGHTNING" rung added to the beat ladder (lit gold). Additive — every earlier beat untouched; JS syntax-checked; new `simonlight` scene added to `tools/capture_screenshot.py`.
+
+![Simon's Lightning](screenshots/125-simon-lightning.png)
+
+## 2026-07-06 — THE TWO PHASES (BEAT 60)
+
+Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Oren.EXE Phase 1 vs Phase 2 and the corrected power rules).
+
+Toby's words: *"Oren.EXE Phase 2 VS Gray.EXE, Gray.EXE always wins. Oren.EXE Phase 1 VS Gray.EXE, can end either way depending on Gray's form. Oren.EXE Phase 1 is more powerful than his Phase 2, Phase 2 is just a glitch on him that infected him into an anything-eating monsterosity. Gray Sans VS Oren.EXE, Gray Sans always wins and will destroy Oren.EXE when he just gets to his middle attacks... Phase 1 is a small floating spirit, pale gray-white, glowing blue eyes, a calm or slightly smug expression, small antenna-like points, a tail-like lower body fading into spirit wisps, a faint blue glow... Phase 2 is a glitch/infection form: giant stretched mouth, glowing blue eyes, crazed expression, distortion/glitching, error-screen style, 'ERROR 597 - LOST CHANCE OF REPAIRING'... 'hello Pup Pup Pup Pupahya, I am Oren.EXE, yet, I am the most powerful besides Gray.EXE, let me show you my only special power...' then he goes like crazy with his telekinetics, Pupahya thrown all around."*
+
+- New BEAT 60 lore panel, THE TWO PHASES, added to THE UNDEFINED LOOP climb (cyc `[1038,1060]`, cycle length extended `1038 → 1060`).
+- Center — a **6-rule power structure** revealed top-down under a **blue spirit-arc**: **RULE 1 · GRAY.EXE STRONGEST OVERALL**, **RULE 2 · OREN STRONGEST BESIDES GRAY**, **RULE 3 · PHASE 1 > PHASE 2**, **RULE 4 · PHASE 2 vs GRAY → GRAY WINS**, **RULE 5 · PHASE 1 vs GRAY → EITHER WAY** (depending on Gray's form), **RULE 6 · GRAY SANS vs OREN → GRAY SANS WINS** (destroying him when he only reaches his middle attacks). Closing line: *"◆ HIS MONSTER FORM IS ACTUALLY LESS POWERFUL THAN HIS TRUE SPIRIT FORM."*
+- Left column — **PHASE 1 — THE TRUE FORM**: a small floating spirit, pale gray-white; glowing blue eyes, calm, slightly smug; small antenna points, a wispy spirit tail; a faint blue glow, simple black-bg presence; controlled — the "real" Oren.EXE; ◆ small body, huge power — telekinesis.
+- Right column — **PHASE 2 — THE GLITCH FORM**: a giant stretched mouth, glowing blue eyes; crazed, distortion, glitching; horror / error-screen presentation; "ERROR 597 — LOST CHANCE OF REPAIRING"; an anything-eating monstrosity; ◆ more monster, but a worse & weaker state.
+- Faint field — blue/red spirit-motes rising, a central spirit glow, a blue Phase-1 band on the far left and a red Phase-2 band on the far right.
+- Insight — *"OREN.EXE PHASE 1 IS THE TRUE STRONGER FORM · PHASE 2 IS AN INFECTED GLITCH — MONSTROUS BUT WEAKER"* over *"GRAY.EXE IS STILL STRONGEST OVERALL · GRAY SANS ALWAYS DEFEATS OREN — DESTROYING HIM WHEN HE ONLY REACHES HIS MIDDLE ATTACKS."*
+- Three closing cards: PHASE 1 · THE TRUE FORM, PHASE 2 · THE GLITCH, THE PUPAHYA SCENE. Bottom banner: *"★ PHASE 1 IS THE TRUE FORM · PHASE 2 IS THE GLITCH — MONSTROUS BUT WEAKER · GRAY.EXE & GRAY SANS STILL WIN ★."* New "THE TWO PHASES" rung added to the beat ladder (lit blue). Additive — every earlier beat untouched; JS syntax-checked; new `twophases` scene added to `tools/capture_screenshot.py`.
+
+![The Two Phases](screenshots/124-two-phases.png)
+
 ## 2026-07-06 — THE APEX RULE (BEAT 59)
 
 Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Gray.EXE's combat rule and win condition).
