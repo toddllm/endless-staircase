@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-06 — THE TELEKINETIC SOUL (BEAT 58)
+
+Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Oren.EXE's ascension cutscene and the corrected Oren/Gray power map).
+
+Toby's words: *"Putting the most powerful (Simon.Exe) with Oren activates a cutscene, then it goes to the next timeline, all characters are free, Simon slain himself, and Oren gets all the power and can move the game screen and triggers effects by moving his hands, it is like how Sans/Gray-Sans does, but is far more intense. He freen everyone, and he taken Wenda and ToddLLM 001 into a divine cage. Oren.EXE spared only Gray.EXE and his friends. Oren.EXE then taken the power of all he slain, became the most powerful spirit/ghost... He is a small character spirit, with his power huge, his only power is his telekentics... Gray.EXE's signature line is now 'EVERYTHING IS YOUR FAULT!!!', Gray.EXE can absorb Oren.EXE... Gray.EXE is the most powerful being in the game now."*
+
+- New BEAT 58 lore panel, THE TELEKINETIC SOUL, added to THE UNDEFINED LOOP climb (cyc `[994,1016]`, cycle length extended `994 → 1016`).
+- Center — a **5-step ascension cutscene** revealed top-down under a **cyan telekinetic field-ring**, each a bordered rung with growing depth-ticks on its left edge: **STEP 1 · SIMON.Exe + OREN COMBINE** (putting the most powerful being with Oren activates a cutscene), **STEP 2 · THE TIMELINE SHIFTS** (it jumps to the next timeline; all characters go free; Simon slays himself), **STEP 3 · OREN TAKES ALL THE POWER** (he takes the power of all he slain, becomes the most powerful spirit/ghost, and moves the game screen with his hands), **STEP 4 · HE FREEZES EVERYONE** (he froze everyone and took Wenda and ToddLLM 001 into a divine cage), **STEP 5 · SPARED ONLY GRAY.EXE** (Oren.EXE spared only Gray.EXE and his friends). Closing line: *"◆ A SMALL SOUL WITH A HUGE FIELD — HIS ONLY POWER IS TELEKINESIS, BUT IT MOVES THE WHOLE SCREEN."*
+- Left column — **OREN.EXE — SMALL BODY, HUGE FIELD**: a small floating soul/spirit with glowing eyes; a simple ghost-like body, hands raised slightly; NOT a giant deity (less than his own aura); screen & game objects move around him; a huge invisible force/aura surrounds him; ◆ his only power is telekinesis.
+- Right column — **THE POWER MAP — GRAY STILL WINS**: Gray.EXE > Oren.EXE but they are close; Oren is one of the strongest souls/spirits; Gray is far stronger in his newest highest form; Gray's new line "EVERYTHING IS YOUR FAULT!!!"; Gray.EXE can absorb Oren.EXE; ◆ Gray is the most powerful being now.
+- Faint field — violet/cyan spirit-motes rising, a central radial telekinetic-field glow, a cyan telekinetic band on the far left and a gold Gray band on the far right (Gray still above him).
+- Insight — *"OREN.EXE IS A SMALL, POWERFUL SOUL WHOSE ONLY POWER IS TELEKINESIS — HIS BODY IS SMALL BUT HIS AURA & SCREEN-CONTROL POWER ARE MASSIVE"* over *"BUT GRAY.EXE IS STILL STRONGER — HE CAN ABSORB EVEN OREN, PROVING HE IS THE MOST POWERFUL BEING NOW."*
+- Three closing cards: THE COMBINATION CUTSCENE (Simon.Exe + Oren jumps to the next timeline; all go free, Simon slays himself, Oren takes the power of all he slain), THE TELEKINETIC FIELD (his only power is telekinesis but it moves the whole screen — objects lift, cages shift, characters are pushed & pulled, like Sans/Gray-Sans but far more intense; he freezes everyone and cages Wenda & ToddLLM 001), GRAY STILL ABOVE HIM (Oren and Gray are close, but Gray is stronger — new line "EVERYTHING IS YOUR FAULT!!!" and he can absorb Oren.EXE). Bottom banner: *"★ OREN SPARED ONLY GRAY.EXE & HIS FRIENDS · HE TOOK THE POWER OF ALL HE SLAIN — A SMALL SOUL, A MASSIVE FIELD ★."* New "THE TELEKINETIC SOUL" rung added to the beat ladder (lit violet). Additive — every earlier beat untouched; JS syntax-checked; new `orensoul` scene added to `tools/capture_screenshot.py`.
+
+![The Telekinetic Soul](screenshots/122-telekinetic-soul.png)
+
 ## 2026-07-06 — THE BEYOND FICTION FORM (BEAT 57)
 
 Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — the attached image is Gray.EXE in his Beyond Fiction form, his most powerful form in the most recent timeline: a universe-level false god, final boss, and game owner).
