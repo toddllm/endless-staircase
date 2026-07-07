@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-07 — THE ENDING STAIRCASE (BEAT 67)
+
+Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — EndlessAnimations renames the Endless Staircase, plus the .exe naming rule).
+
+Toby's words: *"EndlessAnimations gave Endless Staircase a new name, Ending Staircase. Simon no longer forces characters to go up it. Ending Staircase is no longer the final level but the level somewhere in the middle of the game. EndlessAnimations.exe, not .EXE or .Exe. EndlessAnimations never has an .EXE form, his .exe is the upload .exe, not the horror being .exe."*
+
+- New BEAT 67 lore panel, THE ENDING STAIRCASE, added to THE UNDEFINED LOOP climb (cyc `[1192,1214]`, cycle length extended `1192 → 1214`).
+- Center — **the rename**: **ENDLESS STAIRCASE** shown in gray with a **red strike-through** → **ENDING STAIRCASE** in cyan, EndlessAnimations taking control of the naming. Below it, a **level track** with six slots (START · EARLY · **ENDING STAIRCASE (NOW)** · · · LATE · **FINAL (WAS HERE)**): the staircase sits **lit in the middle**, the old final slot is **faded red**, and a **dashed relocation arc** curves from the final slot back to the middle labeled *"◄ MOVED TO THE MIDDLE."* Closing line: *"◆ SIMON NO LONGER FORCES THE CLIMB — IT IS NO LONGER THE FINAL LEVEL."*
+- Left column — **WHAT CHANGED**: EndlessAnimations renamed it (Endless Staircase → Ending Staircase); Simon no longer forces characters to climb it; it is no longer the final level; it is now a level somewhere in the middle of the game; EndlessAnimations took control of the naming and redefined it; ◆ the staircase lost its old "ultimate final route" status.
+- Right column — **THE .exe RULE**: EndlessAnimations.exe is correct (lowercase .exe); not EndlessAnimations.EXE or EndlessAnimations.Exe; he never has an .EXE horror form; his .exe means the upload / application file, a program file; Gray.EXE / Simon.Exe / Oren.EXE = horror / entity EXE naming; ◆ he is creator / program-level, not EXE-monster-level.
+- Living background — a **cool-blue-to-orange halo** with blue "step" motes and orange program-file motes rising (the staircase re-placed, the file re-labeled).
+- Insight — *"A RENAME THAT CHANGES ITS PLACE — THE STAIRCASE IS NO LONGER THE END"* over *"= ENDLESSANIMATIONS CONTROLS THE NAMING · HIS .exe IS A PROGRAM FILE, NOT A HORROR FORM — CREATOR-LEVEL, NOT EXE-MONSTER-LEVEL."*
+- Three closing cards: THE ENDING STAIRCASE (renamed by EndlessAnimations, Simon no longer forces the climb, no longer the final level, now a middle-game level), ENDLESSANIMATIONS.exe (lowercase .exe, the upload / application executable, a program file, not a horror-being suffix, never .EXE or .Exe), THE EXE CONTRAST (Gray.EXE / Simon.Exe / Oren.EXE are horror / entity EXE naming; EndlessAnimations is creator / program-level, not EXE-monster-level). Bottom banner: *"★ ENDLESS STAIRCASE → ENDING STAIRCASE · NOT FORCED, NOT FINAL, NOW MID-GAME · ENDLESSANIMATIONS.exe = A PROGRAM FILE, NEVER AN .EXE HORROR FORM ★."* New "THE ENDING STAIRCASE" rung added to the beat ladder (lit cyan). Additive — every earlier beat untouched; JS syntax-checked; new `endingstair` scene added to `tools/capture_screenshot.py`.
+
+![The Ending Staircase](screenshots/131-ending-staircase.png)
+
 ## 2026-07-07 — THE PHASE RULE (BEAT 66)
 
 Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — a clean canon rule update on phases: Classics has 2 phases, EndlessAnimations has 0).
