@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-07 — THE CANON LEAK (BEAT 69)
+
+Based on Toby's 2026-07-07 follow-up ("Re: Lore 1A - Classics Era" — the same-thread reply stressing that the Roblox dialogue is real lore: EndlessAnimations *actually* paints the game and is *actually* after Mario).
+
+Toby's words: *"Everything they said in my roblox game is Classics lore. EndlessAnimations actually paints the game and is actually after Mario."* And: *"EndlessAnimations says 'Lets paint this world, litterally!'"*
+
+- New BEAT 69 lore panel, THE CANON LEAK, added to THE UNDEFINED LOOP climb (cyc `[1236,1258]`, cycle length extended `1236 → 1258`).
+- Center — **the game world being painted gray**: a "THE GAME WORLD" screen that **fills gray from the left** (a paint sweep with a drip edge) under the line *"LET'S PAINT THIS WORLD... LITERALLY!"* and *"◄ ENDLESSANIMATIONS ACTUALLY PAINTS IT GRAY."* To the right, a **Mario-red target** listing Mario's many Classics forms (MARIO.EXE · KING MARIO · BARIO · + MORE), with a **dashed hunt arrow** from the world to Mario labeled *"► ACTUALLY AFTER MARIO."*
+- Left column — **FLAVOR? NO — REAL PAINT POWER**: the dialogue looks like Shadow Mario graffiti flavor; but it is really EndlessAnimations' creator / paint power; he actually paints the game — his paint changes the world; what he paints or colors can turn gray or be altered; "Let's paint this world... literally!" is literally true; ◆ not flavor — a canon leak: everything said is real lore.
+- Right column — **ACTUALLY AFTER MARIO**: EndlessAnimations is actually after Mario in this branch; Shadow Mario fits — paint, pollution, shadows, framing Mario; Mario is a huge crossover anchor with many Classics forms; Mario.EXE · King Mario · Bario · & more; a smaller, basic Roblox version of the larger Classics lore; ◆ the hunt is real — he is not pretending randomly.
+- Living background — a **green/gray halo** with green "canon" motes and gray "paint" motes rising.
+- Insight — *"THE MASK IS THE ONLY PRETEND PART — THE WORDS ARE REAL LORE"* over *"= ENDLESSANIMATIONS ACTUALLY PAINTS THE GAME & IS ACTUALLY AFTER MARIO · 'LET'S PAINT THIS WORLD, LITERALLY' IS LITERALLY TRUE."*
+- Three closing cards: THE PAINTED GAME (EndlessAnimations actually paints the game, his paint & coloring changes the world itself, what he paints turns gray or is altered), ACTUALLY AFTER MARIO (he is really hunting Mario, Shadow Mario is the mask, Mario is the crossover anchor — Mario.EXE, King Mario, Bario & more), THE CANON LEAK (everything said in the Roblox game is real Classics lore, the disguise dialogue is a canon-leak system, not just flavor). Bottom banner: *"★ THE CANON LEAK · THE ROBLOX DIALOGUE IS REAL CLASSICS LORE · ENDLESSANIMATIONS ACTUALLY PAINTS THE GAME & IS ACTUALLY AFTER MARIO ★."* New "THE CANON LEAK" rung added to the beat ladder (lit green). Additive — every earlier beat untouched; JS syntax-checked; new `canonleak` scene added to `tools/capture_screenshot.py`.
+
+![The Canon Leak](screenshots/133-canon-leak.png)
+
 ## 2026-07-07 — THE DISGUISE LEAK (BEAT 68)
 
 Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — the "Mario Among Us X Classics" Roblox crossover, and the two canon points he stressed: EndlessAnimations attacks with painting + shadow, and Xyrus is the Twilight Alpha Guardian).
