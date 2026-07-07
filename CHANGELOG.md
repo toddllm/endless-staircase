@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-07 — ENDLESSANIMATIONS (BEAT 62)
+
+Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — a new creator-level being, EndlessAnimations).
+
+Toby's words: *"New character: EndlessAnimations, the one who actually placed everything and created everyone in the game. ToddLLM is the creator of the game, EndlessAnimations is the creator of everything in the game including ToddLLM's avatar and stuff... EndlessAnimations' power is more endless than the 'Endless' Staircase. No Climbing, only others... EndlessAnimations is a Pacifist in his normal form; one episode, someone (Classics, who is Clara) attacked him and EndlessAnimations started crying and shouted 'I ONLY WANTED PEACE!!!'. Frenzy Mode EndlessAnimations has attacks, but his aura can take out most beings, his slash can cut through litteraly anything and everything, the sky, most powerful beings, titainuim, anything at all... he can burn Gray.EXE with just his Frenzy Aura... Domain Expansion is the most powerful of the others, it brings him to Frenzy Mode... EndlessAnimations made a new update called 'All Beings Below Me'... and another update called 'Sound Battles Pacifists'. Oren.EXE VS Simon.Exe overall, Oren.EXE would win by throwing him down faster than he can send lightning at Oren.EXE, Simon.Exe's health would instantly go to 0, and he respawns. (Do NOT aberivate it 'EA', it is already aberivated to 'EndlessAnimations', there is a reason no space)"*
+
+- New BEAT 62 lore panel, ENDLESSANIMATIONS, added to THE UNDEFINED LOOP climb (cyc `[1082,1104]`, cycle length extended `1082 → 1104`).
+- Center — a **two-layer creator hierarchy** revealed top-down under a **violet creator-crown arc**: **LAYER ▲ · ENDLESSANIMATIONS** (creator/placement layer, above all beings — he placed everything in the game), **RANK 1 · TODDLLM 001** (creator of the game, but below EndlessAnimations, who made ToddLLM's avatar), **RANK 2 · GRAY.EXE** (strongest being inside the game / collapse system), **RANK 3 · OREN.EXE** (strongest spirit below Gray — now beats Simon.Exe overall), **RANK 4 · SIMON.Exe** (thrown down faster than he can fire — HP → 0, he respawns · dies the most). Closing line: *"◆ CREATOR / PLACEMENT LAYER ABOVE — CHARACTER / GAME-BEING LAYER BELOW."*
+- Left column — **NORMAL FORM — THE PACIFIST**: a pacifist who only wants peace; Classics/Clara attacked him; he cried and shouted "I ONLY WANTED PEACE!!!"; his Domain Expansion is the strongest of all; it is a transformation domain that brings him to Frenzy Mode; ◆ Frenzy is pacifism breaking under pressure.
+- Right column — **FRENZY MODE — THE COMBAT FORM**: his aura alone can defeat most beings; his Frenzy Aura can even burn Gray.EXE; his slash cuts through anything — the sky, titanium; the strongest beings, everything at once; ◆ he beats ToddLLM 001 and everyone, all the time.
+- Faint field — violet/orange creator-motes rising, a central creator glow, a violet pacifist band on the far left and an orange frenzy band on the far right.
+- Insight — *"ENDLESSANIMATIONS IS THE CREATOR OF EVERYTHING INSIDE THE GAME — HE SITS ABOVE TODDLLM, BEYOND THE CLIMB ITSELF"* over *"A PACIFIST WHO 'ONLY WANTED PEACE' · HIS DOMAIN EXPANSION AWAKENS FRENZY MODE — AURA THAT BURNS GRAY.EXE, A SLASH THAT CUTS THROUGH ANYTHING · GRAY.EXE STILL RULES INSIDE THE GAME."*
+- Three closing cards: THE CREATOR ABOVE, PACIFIST & FRENZY, ALL BEINGS BELOW ME. Bottom banner: *"★ ENDLESSANIMATIONS PLACED EVERYTHING — ABOVE TODDLLM & BEYOND THE CLIMB · FRENZY MODE BURNS EVEN GRAY.EXE · DO NOT ABBREVIATE HIM 'EA' ★."* New "ENDLESSANIMATIONS" rung added to the beat ladder (lit violet). Additive — every earlier beat untouched; JS syntax-checked; new `endlessanimations` scene added to `tools/capture_screenshot.py`.
+
+![EndlessAnimations](screenshots/126-endlessanimations.png)
+
 ## 2026-07-06 — SIMON'S LIGHTNING (BEAT 61)
 
 Based on Toby's 2026-07-06 lore ("Re: Lore 1A - Classics Era" — Oren.EXE's weakness).
