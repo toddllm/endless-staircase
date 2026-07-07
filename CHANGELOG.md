@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-07 — THE PHASE RULE (BEAT 66)
+
+Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — a clean canon rule update on phases: Classics has 2 phases, EndlessAnimations has 0).
+
+Toby's words: *"Classics has Phase 1 and Phase 2, Phase 1 = vanilla, Phase 2 = Cross AU. EndlessAnimations has 0 Phases and thinks. ... Classics Phase 1 → Vanilla, Classics Phase 2 → Cross AU. EndlessAnimations has 0 phases. That is important because he is not like Simon, Gray, Oren, or Classics. He does not operate through phase progression. Instead: EndlessAnimations thinks. So his forms are not really 'phases.' They are more like states, modes, or reactions based on what is happening and what he decides/feels. ... Error EndlessAnimations is not Phase 1 or Phase 2. Errorshift EndlessAnimations is not a phase. Frenzy Mode is not a phase. Normal EndlessAnimations is not a phase. They are forms/modes/states, but EndlessAnimations himself has 0 Phases."*
+
+- New BEAT 66 lore panel, THE PHASE RULE, added to THE UNDEFINED LOOP climb (cyc `[1170,1192]`, cycle length extended `1170 → 1192`).
+- Center — a **split**: on the **left, PHASE-BASED — CLASSICS** shows her two phases as a **fixed two-rung ladder** with a ▼ order-arrow between them — **PHASE 1 · VANILLA CLASSICS** (the normal / default version, a clean base game-being state, not Cross AU) then **PHASE 2 · CROSS AU CLASSICS** (no longer vanilla, the second phase/state of Classics); on the **right, NOT PHASE-BASED — ENDLESSANIMATIONS** shows a glowing **"THINKS" core labeled 0 PHASES** with his forms as **free-floating, unordered state-nodes** orbiting it — **NORMAL, ERROR, ERRORSHIFT, FRENZY** — connected by faint spokes, not stacked as a ladder. Closing line under the core: *"◆ FORMS, NOT PHASES — STATES, MODES & REACTIONS BY DECISION OR FEELING."*
+- Left column — **THE PHASE-BASED BEINGS**: phase-based beings progress through fixed phases; Simon, Gray.EXE, Oren.EXE & Classics all work this way; Classics — Phase 1 is Vanilla, Phase 2 is Cross AU; a phase is a set step in a ladder (Phase 1, then Phase 2); the order is fixed, you move one phase to the next; ◆ phases are structure, not choice.
+- Right column — **WHY 0 PHASES — HE THINKS**: EndlessAnimations has 0 phases; he is not like Simon, Gray, Oren or Classics; he does not operate through phase progression; instead, EndlessAnimations thinks; his forms are states, modes or reactions by decision or feeling; ◆ Error, Errorshift, Frenzy & Normal are forms, not phases.
+- Living background — a **pink halo on the left** with ordered pink phase-motes rising in columns (structure), and an **orange halo on the right** with orange state-motes drifting freely (choice), split down the middle by a dashed divider.
+- Insight — *"A PHASE IS A FIXED STEP YOU CLIMB — A STATE IS A CHOICE A MIND MAKES"* over *"= CLASSICS MOVES PHASE 1 → PHASE 2 · ENDLESSANIMATIONS DOES NOT PROGRESS, HE DECIDES — SO HE HAS 0 PHASES."*
+- Three closing cards: CLASSICS PHASE 1 (Vanilla Classics, the normal/default version, a clean base game-being state, not Cross AU), CLASSICS PHASE 2 (Cross AU Classics, no longer vanilla, the second phase/state of Classics), ENDLESSANIMATIONS (0 phases — not phase-based, he thinks; his forms are states/modes/reactions by decision or feeling, not phases). Bottom banner: *"★ CLASSICS: PHASE 1 = VANILLA, PHASE 2 = CROSS AU · ENDLESSANIMATIONS: 0 PHASES — HE THINKS, STATES NOT PHASES ★."* New "THE PHASE RULE" rung added to the beat ladder (lit pink). Additive — every earlier beat untouched; JS syntax-checked; new `phaserule` scene added to `tools/capture_screenshot.py`.
+
+![The Phase Rule](screenshots/130-phase-rule.png)
+
 ## 2026-07-07 — THE FORM LADDER (BEAT 65)
 
 Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — two images that make the EndlessAnimations form ladder clearer: Error EndlessAnimations and Errorshift EndlessAnimations).
