@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-07 — THE FORM LADDER (BEAT 65)
+
+Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — two images that make the EndlessAnimations form ladder clearer: Error EndlessAnimations and Errorshift EndlessAnimations).
+
+Toby's words: *"Here is an image of Error EndlessAnimations, my favorite form of him. Error EndlessAnimations always walks with Pero ToddLLM 001. The other is Errorshift EndlessAnimations, it is stronger than normal Error. For EndlessAnimations it is Errorshift, the others = Errorshifted. Errorshift EndlessAnimations is the only of his forms that always has the red eyes. ... In other forms, EndlessAnimation's eyes are orange and only turn red when he is very scared and angry, or just angry, if he is just scared then his eyes will still be orange."*
+
+- New BEAT 65 lore panel, THE FORM LADDER, added to THE UNDEFINED LOOP climb (cyc `[1148,1170]`, cycle length extended `1148 → 1170`).
+- Center — EndlessAnimations' **three forms revealed top-down by escalating corruption**, each carrying its canonical eye color as two eye-dots plus a label: **NORMAL ENDLESSANIMATIONS** (default / pacifist / creator form — orange-haired, blue hoodie, **orange eyes**, peaceful unless pushed too far), **ERROR ENDLESSANIMATIONS** (the standard corrupted glitch form, still strongly recognizable — heavy glitch, black-screen error text, arcade game-over imagery, **orange eyes**, always walks with Pero ToddLLM 001, Toby's favorite form), **ERRORSHIFT ENDLESSANIMATIONS** (stronger than Error, the shutdown/collapse form — "GAME: ERRORSHIFT... WILL SHUT DOWN IN 3 SECONDS", **always red eyes**, the pulse-red exception). Closing line: *"◆ SAME BEING, DEEPER CORRUPTION EACH STEP — ERROR STILL LOOKS LIKE HIM, ERRORSHIFT IS THE GAME FAILING THROUGH HIM."*
+- Left column — **THE ERROR FORMS**: Error is the standard corrupted form, still recognizably EndlessAnimations; orange hair, blue hoodie, heavy glitching; black background, error text, arcade game-over imagery; Error always walks with Pero ToddLLM 001; Errorshift is stronger — more severe, more shutdown-like, more final; ◆ Errorshift feels like the game collapsing around him.
+- Right column — **THE EYE-COLOR RULE**: default eyes are orange; red only when very scared and angry, or just angry; if only scared, eyes stay orange; so red eyes are an emotion-triggered state; exception — Errorshift always has red eyes; ◆ for Errorshift, red is part of the form, not a mood.
+- Living background — an **orange creator-halo**, an orange band on the far left and a **red band** on the far right, orange/red form-motes rising, and **heavier glitch slices** creeping across the panel (the Error corruption look).
+- Insight — the naming rule: *"FOR ENDLESSANIMATIONS THE FORM IS 'ERRORSHIFT' — FOR EVERYONE ELSE IT IS 'ERRORSHIFTED'"* over *"= THAT NAMING RULE MAKES ENDLESSANIMATIONS SPECIAL IN THE SYSTEM · ERRORSHIFT IS THE ONLY FORM OF HIS THAT ALWAYS HAS RED EYES."*
+- Three closing cards: ERROR ENDLESSANIMATIONS (the corrupted glitch form, walks with Pero ToddLLM 001, Toby's favorite), ERRORSHIFT ENDLESSANIMATIONS (stronger, always red eyes, the "Errorshift" vs "Errorshifted" naming rule), THE EYE RULE (orange by default, red when angry, only-scared stays orange, Errorshift the one always-red exception). Bottom banner: *"★ NORMAL → ERROR → ERRORSHIFT · ORANGE EYES BY DEFAULT, RED WHEN ANGRY · ERRORSHIFT ALWAYS RED · ERROR ALWAYS WALKS WITH PERO TODDLLM 001 ★."* New "THE FORM LADDER" rung added to the beat ladder (lit orange). Additive — every earlier beat untouched; JS syntax-checked; new `formladder` scene added to `tools/capture_screenshot.py`.
+
+![The Form Ladder](screenshots/129-form-ladder.png)
+
 ## 2026-07-07 — THE POWER CHART (BEAT 64)
 
 Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — two follow-ups: the Mr. Black / convergence-cutscene canon, then the definitive full power chart).
