@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-07 — THE DISGUISE LEAK (BEAT 68)
+
+Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — the "Mario Among Us X Classics" Roblox crossover, and the two canon points he stressed: EndlessAnimations attacks with painting + shadow, and Xyrus is the Twilight Alpha Guardian).
+
+Toby's words: *"Xyrus is the Twilight Alpha Guardian, and EndlessAnimations uses his painting and shadow for his attack. This is connected to the lore. ... EndlessAnimations plays as Shadow Mario, and Xyrus as Daisy. ... They try to act like the character they are acting but say a bunch of stuff about themselves. EndlessAnimations paints and colors everything, each thing turns gray, and his shadows hide him, that is him in lore. ... EndlessAnimations only has 1 [variant]. EndlessAnimations sometimes secretly attacks."*
+
+- New BEAT 68 lore panel, THE DISGUISE LEAK, added to THE UNDEFINED LOOP climb (cyc `[1214,1236]`, cycle length extended `1214 → 1236`).
+- Center — **two disguise portraits**: on the left **ENDLESSANIMATIONS as SHADOW MARIO** (a shadow figure with a red Shadow-Mario cap **leaking to gray**, orange hair peeking, gray paint splats orbiting) and on the right **XYRUS as DAISY** (a figure with a yellow Daisy cap **leaking to twilight violet**, a violet cosmic aura, glowing violet eyes). Under each, the spoken **MASK line is struck through into the TRUE line**: *"MAMMA MIA... TIME TO CAUSE TROUBLE"* → *"I REALLY AM ENDLESSANIMATIONS, NOT SHADOW MARIO"*, and *"YES, I'M DEFINITELY THE REAL DAISY"* → *"I AM THE TWILIGHT ALPHA GUARDIAN"*. Between them: *"◄ THE MASK SAYS MARIO · THE TRUTH SAYS CLASSICS ►"*.
+- Left column — **ENDLESSANIMATIONS — PAINT & SHADOW**: disguised as Shadow Mario in "Mario Among Us X Classics"; his attack is painting & shadow — he paints & colors everything; each thing he touches turns gray; his shadows hide him and he sometimes secretly attacks; only 1 Classics variant (he does not need many forms); ◆ Shadow Mario is the perfect mask — paint, tricks & hiding.
+- Right column — **XYRUS — THE TWILIGHT ALPHA GUARDIAN**: disguised as Daisy, badly hiding his real self; his real identity is the Twilight Alpha Guardian; a cosmic being failing to act normal & "human"; he keeps mentioning cosmic authority & mortality; he panics around EndlessAnimations ("...HELP!!!"); ◆ "I SWARE I AM NOT XYRUS!!!" — the disguise leaks.
+- Living background — a **gray/violet halo** with gray "paint" motes and violet "cosmic" motes rising.
+- Insight — *"A DISGUISE THAT CANNOT HOLD — THE MASK SAYS MARIO, THE TRUTH SAYS CLASSICS"* over *"= ENDLESSANIMATIONS ATTACKS WITH PAINT & SHADOW · XYRUS IS THE TWILIGHT ALPHA GUARDIAN — BOTH IDENTITIES LEAK THROUGH THE MASK."*
+- Three closing cards: ENDLESSANIMATIONS as SHADOW MARIO (paint + shadow attack, paints everything gray, shadows hide him, secret attacks, only 1 Classics variant while Mario has many), XYRUS as DAISY (real identity = the Twilight Alpha Guardian, a cosmic being in a Daisy mask, cannot hide it, panics around EndlessAnimations), THE DISGUISE LEAK (Mario Among Us X Classics — the masks say Mario lines, but the real Classics identities leak through the dialogue). Bottom banner: *"★ MARIO AMONG US X CLASSICS · ENDLESSANIMATIONS = SHADOW MARIO (PAINT + SHADOW) · XYRUS = DAISY (THE TWILIGHT ALPHA GUARDIAN) · THE MASK LEAKS ★."* New "THE DISGUISE LEAK" rung added to the beat ladder (lit violet). Additive — every earlier beat untouched; JS syntax-checked; new `disguiseleak` scene added to `tools/capture_screenshot.py`.
+
+![The Disguise Leak](screenshots/132-disguise-leak.png)
+
 ## 2026-07-07 — THE ENDING STAIRCASE (BEAT 67)
 
 Based on Toby's 2026-07-07 lore ("Re: Lore 1A - Classics Era" — EndlessAnimations renames the Endless Staircase, plus the .exe naming rule).
