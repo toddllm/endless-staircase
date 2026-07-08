@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — THE LAST SURVIVORS (BEAT 74)
+
+Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" follow-up email: the survival state after the game-corruption).
+
+Toby's words: *"Most characters are dead, only Mr. Black and EndlessAnimations and ToddLLM 001 survive."*
+
+- New BEAT 74 lore panel, THE LAST SURVIVORS, added to THE UNDEFINED LOOP climb (cyc `[1346,1368]`, cycle length extended `1346 → 1368`).
+- Center — **the three survivors standing over the fallen cast**: three lit figures — **Mr. Black** (black body, red glow, white mouth), **EndlessAnimations** (orange hair, blue hoodie), **ToddLLM 001** (purple figure with a star) — over a row of faded gray **tombstones** for the fallen cast. Caption: *"MOST OF THE CAST IS GONE — ONLY THESE THREE REMAIN."*
+- Left column — **THE COLLAPSE**: most characters are now dead, the whole cast has collapsed; only three are confirmed alive; everyone else being gone means Black's attack on the game worked almost completely; the main villain, the game painter & the episode creator are all that remain; ◆ the newest timeline is darker & more final.
+- Right column — **A LAST-SURVIVORS TIMELINE**: the conflict is no longer a big team battle against Black; it becomes a last-survivors timeline; a final standoff between the villain, the painter & the creator; no rebels left, no cast left to free; ◆ the story narrows to its three highest beings.
+- Center feature — **THE THREE SURVIVORS**: three pillars, each with name, role & why they survived — MR. BLACK (main villain / corruption force, his attack almost wiped the cast), ENDLESSANIMATIONS (game painter, his life is endless & he is tied to painting/creating the game itself), TODDLLM 001 (episode creator, connected to the episode-making / game-structure side).
+- Insight — *"THE COLLAPSE KILLED THE CAST — BUT NOT THE VILLAIN, THE PAINTER OR THE MAKER"* over *"= MOST ARE DEAD · ONLY 3 REMAIN · A FINAL STANDOFF, NOT A TEAM BATTLE · BLACK'S ATTACK ALMOST WON."*
+- Three closing cards: THE COLLAPSE (most dead, cast collapsed, Black's attack almost complete, only three remain), A LAST-SURVIVORS TIMELINE (no longer everyone against Black — a final survival standoff between villain, painter & creator), THE THREE HIGHEST FORCES (Mr. Black / EndlessAnimations / ToddLLM 001 — the only beings the collapse could not remove). Bottom banner: *"★ THE LAST SURVIVORS · MOST OF THE CAST IS DEAD · ONLY MR. BLACK, ENDLESSANIMATIONS & TODDLLM 001 REMAIN ★."* New "THE LAST SURVIVORS" rung added to the beat ladder (lit gold). Additive — every earlier beat untouched; JS syntax-checked; new `lastsurvivors` scene added to `tools/capture_screenshot.py`.
+
+![The Last Survivors](screenshots/138-last-survivors.png)
+
 ## 2026-07-08 — THE GAME'S REALITY (BEAT 73)
 
 Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" follow-up email: the answer-system deepens into "The Game's Reality," plus the liberation-and-corruption event).
