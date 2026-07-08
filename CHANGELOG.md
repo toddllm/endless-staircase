@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — THE GAME'S REALITY (BEAT 73)
+
+Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" follow-up email: the answer-system deepens into "The Game's Reality," plus the liberation-and-corruption event).
+
+Toby's words: *"The questons are answered by The Game's Reality. Everyone seen EndlessAnimations now, Oren.EXE is the only one who is scared, everyone else is natural. Oren.EXE and EndlessAnimations freed half the characters from Black's tyrancy. Black relised and attacked, Black lost and then everyone was free. Black gave up on people and now attacks and corrupts the game. Every character is attacked."*
+
+- New BEAT 73 lore panel, THE GAME'S REALITY, added to THE UNDEFINED LOOP climb (cyc `[1324,1346]`, cycle length extended `1324 → 1346`).
+- Center — **the liberation-vs-corruption portrait**: on the left, **THE LIBERATION PAIR** — an orange EndlessAnimations figure and a pale, wide-eyed (scared-blue-eyed) Oren.EXE spirit — with a green free-burst and three freed figures whose chains break ("HALF THE CAST FREED"); in the center, **BLACK — LOSES**, his black body dimming with a **broken crown** splitting apart; on the right, **red glitch corruption** spreading block by block ("CORRUPTS THE GAME" / "EVERY CHARACTER ATTACKED"). Caption: *"OREN + ENDLESSANIMATIONS FREE THE CAST → BLACK LOSES → BLACK CORRUPTS THE GAME ITSELF."*
+- Left column — **THE GAME'S REALITY RULE**: the questions are answered by The Game's Reality, not just reality + time as two things; it decides what is true, what happened & what has not happened yet; it also decides what the characters are allowed to understand; when something feels confusing or out of order the answer is not random; ◆ it is the Game's Reality revealing the timeline piece by piece.
+- Right column — **EVERYONE SEES ENDLESSANIMATIONS**: everyone has now seen him, the game painter is visible to the cast; Oren.EXE is the only one who is scared, everyone else reacts naturally; Oren understands how dangerous EndlessAnimations really is; everyone else is too used to chaos or naturally accepts him; ◆ the strongest spirit is the one who is afraid.
+- Center feature — **THE EVENT**: a five-step, color-coded, arrow-linked timeline — (1) everyone sees EndlessAnimations, (2) Oren.EXE + EndlessAnimations free half the characters from Black's tyranny, (3) Black realizes & attacks but Black loses & everyone becomes free, (4) Black gives up on ruling people and now attacks & corrupts the game itself, (5) every character is attacked as his corruption spreads through the whole game.
+- Insight — *"BLACK LOST THE FIGHT — SO HE STOPPED RULING PEOPLE & STARTED POISONING THE GAME"* over *"= THE GAME'S REALITY DECIDES · OREN + ENDLESSANIMATIONS FREE THE CAST · EVERY CHARACTER IS ATTACKED."*
+- Three closing cards: THE GAME'S REALITY (the deeper answer-source under reality + time), THE LIBERATION PAIR (Oren.EXE the telekinetic freedom force + EndlessAnimations the game painter break Black's control together, though only Oren fears him), BLACK CORRUPTS THE GAME (he loses, everyone goes free, but he does not turn peaceful — he shifts to corrupting the game itself, a wider threat, every character attacked). Bottom banner: *"★ THE GAME'S REALITY · EVERYONE SEES ENDLESSANIMATIONS · OREN + HE FREE THE CAST · BLACK LOSES, THEN CORRUPTS THE GAME ★."* New "THE GAME'S REALITY" rung added to the beat ladder (lit green). Additive — every earlier beat untouched; JS syntax-checked; new `gamesreality` scene added to `tools/capture_screenshot.py`.
+
+![The Game's Reality](screenshots/137-games-reality.png)
+
 ## 2026-07-08 — REALITY + TIME (BEAT 72)
 
 Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" email: three canon rules that refine the higher-timeline beats).
