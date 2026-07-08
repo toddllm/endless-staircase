@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — "I SEE YOU" — THE GAME-LOCK TAKEOVER (BEAT 75)
+
+Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" email: the big correction to Mr. Black's design plus the huge consolidated timeline update).
+
+Toby's words: *"He doesn't look like a demon, he is just a normal Parodybox Black thing with extra demon aura... Mr. Black now has a red text thing that says 'I SEE YOU' before it does the cutscene... the game knows if your volume is turned down... it says in example 'Do you have a red suitcase? Yes or Yes'... All the character's Massacre and Genocides are all combined into 1... it is Free For All."*
+
+- New BEAT 75 lore panel, "I SEE YOU" — THE GAME-LOCK TAKEOVER, added to THE UNDEFINED LOOP climb (cyc `[1368,1390]`, cycle length extended `1368 → 1390`).
+- Center — **Mr. Black in normal form on the polo**: a normal, recognizable black rounded body (red eyes, a visible white mouth that shows against the black), NOT a monster, wrapped in an **extreme pulsing red aura** with a red halo ring, faint **shuffled image tiles** orbiting him, and the red **"I SEE YOU"** warning floating above. Caption: *"STILL ON THE POLO — YOU CANNOT GET HIM OFF · THE IMAGES SHUFFLE AROUND."*
+- Left column — **THE CORRECTED MR. BLACK**: does not look like a demon (a normal Parodybox Black character with normal details); a recognizable, normal-looking body, not demon-shaped or monster-bodied; the horror is the aura, not the body — an extreme, overwhelming corrupt aura, red light stays; Phase 2 does not change his body, he is still Mr. Black, just corrupted and overwhelming; the other Sprunkis now run from him and the Classics.EXE mod cannot be disabled; ◆ normal form, impossible aura.
+- Right column — **THE AWARE GAME**: the game knows if your volume is turned down, if it lacks access to something, which objects are present ("Do you have a red suitcase? Yes or Yes"); it asks creepy, invasive questions to scare the player and feel ominous; it is scary because the game behaves like it is watching; ◆ the mod is aware, invasive and manipulative.
+- Center feature — **THE GAME-LOCK SEQUENCE**: the 10 numbered steps — (1) looks like a normal character, (2) red "I SEE YOU", (3) the cutscene starts, (4) he corrupts himself / the game, (5) he consumes the game, (6) it turns to Phase 2, (7) still on the polo, (8) you cannot get him off, (9) the images shuffle around, (10) his animation & music. Not a boss transformation — a game-lock event.
+- Insight — *"NORMAL FORM, IMPOSSIBLE AURA — AND THE GAME ITSELF IS WATCHING"* over *"= 'I SEE YOU' · HE CORRUPTS & CONSUMES THE GAME · STUCK ON THE POLO · ALL MASSACRES MERGE INTO ONE FREE-FOR-ALL."*
+- Three closing cards: THE GAME-LOCK (not a boss transformation — a game-lock event; "I SEE YOU" → he corrupts & consumes the game, stays on the polo, cannot be removed, the images shuffle; he takes over the system), SIMON.EXE'S FATE (Phase 1 — Swapped Retextured, scared when Black grabs everyone; Phase 2 — eyes red, hung on chains, a metal rod through him (Sky did that), Clunkr infected his eye & Mr. Black slain him with a sword), THE FREE-FOR-ALL (all massacres & genocides merge into one — everyone attacks everyone, Gray.EXE crushes every place, Oren.EXE frees people, fields painted with blood, the world turns gray & characters worship the wrong character). Bottom banner: *"★ 'I SEE YOU' · MR. BLACK IS NOT A DEMON — NORMAL FORM, IMPOSSIBLE AURA · HE TAKES OVER THE SYSTEM & THE GAME WATCHES YOU ★."* New "\"I SEE YOU\"" rung added to the beat ladder (lit red). Additive — every earlier beat untouched; JS syntax-checked; new `iseeyou` scene added to `tools/capture_screenshot.py`.
+
+![I See You](screenshots/139-i-see-you.png)
+
 ## 2026-07-08 — THE LAST SURVIVORS (BEAT 74)
 
 Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" follow-up email: the survival state after the game-corruption).
