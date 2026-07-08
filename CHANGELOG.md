@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — THE HIGHER TIMELINE (BEAT 71)
+
+Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" email: the Mr. Black higher-timeline role chart — "Who did I miss? ... I did them all").
+
+Toby's words: *"Mr. Black will also be swapped with Gray.EXE in higher timelines... Mr. Black is the most powerful in these timelines, he can consume all the characters on the polos... All the other characters are turned into ghosts in Phase 2 now, with THIS Mr. Black, nothing will be left... Winning's meaning is removed in Classics. Mr. Black defeats all. Mr. Black has red halos and it's mouth is white, the others is black, black on black is hard to see."* And the final chart: *"Mr. Black is the main villain. EndlessAnimations paints the battlefield. Everyone else is assigned into roles against Mr. Black, but Mr. Black is still the undefeatable higher-timeline threat."*
+
+- New BEAT 71 lore panel, THE HIGHER TIMELINE, added to THE UNDEFINED LOOP climb (cyc `[1280,1302]`, cycle length extended `1280 → 1302`).
+- Center — **the Mr. Black portrait**: a black-body figure with a pulsing **red-light glow**, two **red halos** above the head, red eyes, and the design point Toby stressed — a **white mouth** (with teeth) so it shows against the black body ("black on black is hard to see"). Labeled *"MR. BLACK · MAIN VILLAIN · UNDEFEATABLE"*, with the caption *"CONSUMES ALL ON THE POLOS → PHASE 2: THE OTHERS BECOME GHOSTS → NOTHING LEFT"* and three small fading **ghosts**.
+- Left column — **MR. BLACK'S DESIGN**: mostly Parodybox Sprunki base + Normal details; white mouth so it shows on the black body; red halos & red light kept; jumpscare = Wenda's Realm + Parodybox + Garnold's Joy + Pyramixed; ◆ swapped with Gray.EXE — a new EndlessAnimations update puts Mr. Black in the top-villain slot.
+- Right column — **ENDLESSANIMATIONS, GAME PAINTER**: Mr. Black is main villain, undefeated & undefeatable; he consumes all on the polos; Phase 2 turns the others into ghosts, "nothing will be left"; winning's meaning is removed; EndlessAnimations paints the battlefield & assigns every role; ◆ everyone is assigned, but Mr. Black is still the undefeatable threat.
+- Center feature — **THE ANTI-MR. BLACK ROLE CHART**: a 13-card roster grid, each color-coded, staggered in: MAIN VILLAIN (Mr. Black) · GAME PAINTER (EndlessAnimations) · ANGELS (Wenda, Gray.EXE, Oren.EXE) · DEMON/ANGEL (ToddLLM 001) · DEMON (Durple) · COMMANDERS (Raddy, Simon, Brud) · SNIPERS (Owack, Vineria) · BIG WEAPONS (Garnold, Clunkr) · HEALERS (Pinki, Jevin) · WANTED SIGN (Mr. Sun, Mr. Fun Computer, Mr. Tree) · SCOUT (Tunner) · SIGNAL / RISEN WATCHERS (Sky, Fun Bot, Classics) · GUARDIANS (Mario, Xyrus).
+- Insight — *"EVERYONE GETS A ROLE AGAINST HIM — BUT MR. BLACK IS STILL UNDEFEATABLE"* over *"= SWAPPED WITH GRAY.EXE · CONSUMES ALL · PHASE 2 GHOSTS · NOTHING LEFT · WINNING'S MEANING REMOVED."*
+- Three closing cards: MR. BLACK — UNDEFEATABLE (swapped with Gray.EXE, main villain, consumes all, Phase 2 ghosts, nothing left), ENDLESSANIMATIONS PAINTS THE BOARD (the literal game painter / battlefield maker sets up the anti-Mr. Black battle), WINNING HAS NO MEANING (everyone gets a role, but winning's meaning is removed in Classics — Mr. Black defeats all). Bottom banner: *"★ THE HIGHER TIMELINE · MR. BLACK SWAPPED WITH GRAY.EXE · MAIN VILLAIN, UNDEFEATABLE · EVERYONE ASSIGNED, WINNING'S MEANING REMOVED ★."* New "THE HIGHER TIMELINE" rung added to the beat ladder (lit red). Additive — every earlier beat untouched; JS syntax-checked; new `highertimeline` scene added to `tools/capture_screenshot.py`.
+
+![The Higher Timeline](screenshots/135-higher-timeline.png)
+
 ## 2026-07-08 — THE GRAY BATTLEFIELD (BEAT 70)
 
 Based on Toby's 2026-07-08 lore (two same-thread "Re: Lore 1A - Classics Era" emails: EndlessAnimations' Classics abilities, and the decisive event where he fights Classics and Mario at once).
