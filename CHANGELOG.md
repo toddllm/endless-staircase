@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — REALITY + TIME (BEAT 72)
+
+Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" email: three canon rules that refine the higher-timeline beats).
+
+Toby's words: *"He only has the Gray Paint, only EndlessAnimations' paint. players won't even be able to reach Mr. Black's power. The answer to every question is reality + time... EndlessAnimations does not have a whole color system. He only has Gray Paint. That is EndlessAnimations' paint... Players will not even be able to reach Mr. Black's power... His power is too far above the reachable level... 'The answer to every question is reality + time' ... Reality decides what is true. Time decides when it becomes true. So a bunch of lore can already be real, but the characters have not reached the moment where it happens yet... ToddLLM 001 and EndlessAnimations make the episodes."*
+
+- New BEAT 72 lore panel, REALITY + TIME, added to THE UNDEFINED LOOP climb (cyc `[1302,1324]`, cycle length extended `1302 → 1324`).
+- Center — **the UNREACHABLE-POWER tower**: a vertical power gauge with a low, dashed **PLAYER-REACHABLE CEILING** (the cyan-filled zone a player can reach), Mr. Black's small black-body / white-mouth / red-glow icon floating far above it, and an **↑ BEYOND REACH** arrow between them. Caption: *"PLAYERS CANNOT EVEN REACH HIS POWER — YOU FEEL HIS EFFECTS, NOT HIS FULL POWER."*
+- Left column — **THE GRAY-PAINT RULE**: EndlessAnimations has no whole color system; Gray Paint is his ONLY paint & signature creator effect; painting gray makes the game harder to see, understand & fight inside; it is not like red/blue/white paint, it is only gray because it is *his* paint; ◆ EndlessAnimations paints the game gray — Gray Paint is the only EndlessAnimations paint.
+- Right column — **THE REALITY + TIME RULE**: the answer to every lore question is reality + time; reality decides what is true, time decides when; lore can already be real while characters have not reached the moment it happens; they sense future lore then realize "it did not happen yet"; the story is revealed through episodes by ToddLLM 001 & EndlessAnimations; ◆ characters react only when the timeline reaches that episode.
+- Center feature — **THE EPISODE REEL**: a six-frame film reel (EP 1–6) reading left-to-right as TIME →, with **AIRED · CURRENT** frames (cyan, green tag) and **REAL · NOT YET** frames (dim, dashed, red tag), sprocket holes, and a yellow **NOW** playhead marking the boundary between what has aired and what is real-but-waiting. Under it: *"REALITY DECIDES WHAT IS TRUE · TIME DECIDES WHEN IT BECOMES CURRENT."*
+- Insight — *"THE LORE IS ALREADY REAL — THE CHARACTERS JUST HAVE NOT REACHED IT YET"* over *"= GRAY IS HIS ONLY PAINT · MR. BLACK IS UNREACHABLE · REALITY + TIME · REVEALED IN EPISODES."*
+- Three closing cards: GRAY IS HIS ONLY PAINT (no color system — one signature gray creator effect), MR. BLACK IS UNREACHABLE (players cannot even reach his power; a lore event, not a fair playable fight), REALITY + TIME (reality decides what is true, time decides when; revealed through episodes by ToddLLM 001 & EndlessAnimations). Bottom banner: *"★ REALITY + TIME · GRAY IS HIS ONLY PAINT · MR. BLACK'S POWER CANNOT BE REACHED · THE STORY AIRS IN EPISODES ★."* New "REALITY + TIME" rung added to the beat ladder (lit cyan). Additive — every earlier beat untouched; JS syntax-checked; new `realitytime` scene added to `tools/capture_screenshot.py`.
+
+![Reality + Time](screenshots/136-reality-time.png)
+
 ## 2026-07-08 — THE HIGHER TIMELINE (BEAT 71)
 
 Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" email: the Mr. Black higher-timeline role chart — "Who did I miss? ... I did them all").
