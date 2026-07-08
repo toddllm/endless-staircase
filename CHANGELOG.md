@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — THE GRAY BATTLEFIELD (BEAT 70)
+
+Based on Toby's 2026-07-08 lore (two same-thread "Re: Lore 1A - Classics Era" emails: EndlessAnimations' Classics abilities, and the decisive event where he fights Classics and Mario at once).
+
+Toby's words: *"In Classics, EndlessAnimations paints things gray, he has abilities of shadow, lifesteal (drains the HP of all other characters and heals himself), and his Frenzy Transformation. ... EndlessAnimations colors each thing gray, everyone can no longer see anything."* And: *"EndlessAnimations VS Classics VS Mario happens. Both battle EndlessAnimations, but he colored the battlefield before they can react, EndlessAnimations wins."*
+
+- New BEAT 70 lore panel, THE GRAY BATTLEFIELD, added to THE UNDEFINED LOOP climb (cyc `[1258,1280]`, cycle length extended `1258 → 1280`).
+- Center — **the CLASSICS vs MARIO battlefield being painted gray**: CLASSICS (left) and MARIO (right) square up, then a **gray paint sweep** fills the whole stage from the left (with a drip edge). Once painted, *"CLASSICS & MARIO — CAN NO LONGER SEE"* appears with a **hidden EndlessAnimations shadow** in the gray, and a rotated red **"ENDLESSANIMATIONS WINS"** stamp lands at the end.
+- Left column — **HIS CLASSICS ABILITIES**: gray paint (he colors everything gray, visibility drops and characters can no longer see); shadow (his shadows hide him, he sneaks, vanishes and secretly attacks); lifesteal (he drains HP from all others and heals himself, more enemies = more recovery); Frenzy Transformation (pushed too far, his aura and attacks become overwhelming); ◆ gray paint is a blindness / world-control weapon, not just a color.
+- Right column — **HOW HE WINS THE FIGHT**: Classics and Mario prepare to fight him; he colors the battlefield gray before they can react; everything becomes gray, visibility and control collapse; his shadows hide him and he secretly attacks from the gray field; he does not need a giant blast, he takes over the stage; ◆ EndlessAnimations wins — a painting-based battlefield takeover.
+- Insight — *"HE DOES NOT OUT-BLAST THEM — HE PAINTS THE STAGE & TAKES IT OVER"* over *"= GRAY PAINT BLINDS · SHADOW HIDES HIM · LIFESTEAL OUTLASTS · FRENZY OVERWHELMS · ENDLESSANIMATIONS WINS."*
+- Three closing cards: THE GRAY-PAINT WEAPON (he paints the whole stage gray so enemies lose awareness — a blindness / world-control effect, not direct damage; Gray.EXE slows and destroys, EndlessAnimations paints and hides in gray), LIFESTEAL & FRENZY (drains HP from all others and heals himself, hard to outlast; Frenzy Transformation when pushed too far), ENDLESSANIMATIONS VS CLASSICS VS MARIO (both battle him, but he colors the battlefield gray before they can react, visibility and control collapse, EndlessAnimations wins). Bottom banner: *"★ THE GRAY BATTLEFIELD · ENDLESSANIMATIONS VS CLASSICS VS MARIO · HE COLORS IT GRAY BEFORE THEY REACT & WINS ★."* New "THE GRAY BATTLEFIELD" rung added to the beat ladder (lit gray). Additive — every earlier beat untouched; JS syntax-checked; new `graybattlefield` scene added to `tools/capture_screenshot.py`.
+
+![The Gray Battlefield](screenshots/134-gray-battlefield.png)
+
 ## 2026-07-07 — THE CANON LEAK (BEAT 69)
 
 Based on Toby's 2026-07-07 follow-up ("Re: Lore 1A - Classics Era" — the same-thread reply stressing that the Roblox dialogue is real lore: EndlessAnimations *actually* paints the game and is *actually* after Mario).
