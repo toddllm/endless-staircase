@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-09 — THE PHASE GLITCH (BEAT 77)
+
+Based on Toby's 2026-07-09 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE SLEEP RULE: the huge power-chart update introducing the real ToddLLM 002 and the return of Neto).
+
+Toby's words: *"Gray.EXE's 002 form is a fake 002. The real ToddLLM 002 is actually 001's father... Neto RL (a Wenda evolution from newer Classic RL times, and was stronger than Simon RL and has the power to erase anything) is back but as the entity in the attached image, she is way stronger than before... Neto now gets the ability to summon ToddLLM 002 with an altar, Neto also became the second fastest character, Simon is the fastest, and Neto has some other secret ability, she doesn't have a domain expansion... ToddLLM 002 is like most powerful form of Herobrine and ToddLLM 001 as normal Steve, huge power difference... ToddLLM 001 can become ToddLLM 002 only if corrupted, it has no choice... he can teleport, lightning strike, and can do everything ToddLLM 001 can do, and he can reverse time itself. There is no higher than 002... ToddLLM 002 is also called 'Phase Glitch'... Simon.Exe is no longer spared."*
+
+- New BEAT 77 lore panel, THE PHASE GLITCH, added to THE UNDEFINED LOOP climb (cyc `[1412,1434]`, cycle length extended `1412 → 1434`).
+- Center portrait — **the 001 → 002 corruption** (left): normal ToddLLM **001** as a calm Steve-like square, an *"CORRUPTED"* arrow, then **002** as a glitching red error-being (red aura, jittering slices, error eyes) captioned *"PHASE GLITCH."* Center — the **ranking token**: *"002 > NETO > GRAY.EXE & MR. BLACK · NOTHING IS ABOVE 002."* Right — **NETO'S ALTAR**: the violet Neto entity beside a small altar with a rising violet summon-beam, *"SUMMONS 002."*
+- Center feature — **THE POWERS OF TODDLLM 002** (6 boxes): SWITCH 001 ↔ 002 AT WILL, TELEPORT, LIGHTNING STRIKE, DOES ALL OF 001'S POWERS, REVERSE TIME ITSELF, DRAG ALL INTO ESCAPE-PROOF DOMAINS.
+- Insight — *"THE FAKE 002 WAS GRAY'S — THE REAL 002 IS 001'S FATHER, THE HIGHEST ERROR IN THE GAME"* over *"= 001 BECOMES 002 ONLY IF CORRUPTED · 002 REVERSES TIME & DRAGS EVERYONE INTO DOMAINS · NETO SUMMONS HIM & RANKS 2ND."*
+- Three closing cards: TODDLLM 002 · PHASE GLITCH (the true 002 and 001's father, the highest most powerful error with nothing above it; 001 → 002 only if corrupted, no choice; switches back and forth, teleports, lightning, all of 001's powers, reverses time, drags everyone into inescapable domains), NETO (Neto RL returns in the Classics Era simply as Neto, a stronger entity form; summons ToddLLM 002 with an altar; 2nd fastest — Simon is fastest; has a secret ability; no domain expansion; ranks above Gray.EXE and Mr. Black and keeps growing from 002's power), THE FAKE 002 & THE NEW ORDER (Gray.EXE's "002 form" is a fake 002; Gray also got the erase ability but is pushed lower; Simon.Exe is no longer spared — 002 grabs even him; new ranking: 1. ToddLLM 002, 2. Neto, Gray.EXE & Mr. Black below). Bottom banner: *"★ THE PHASE GLITCH · THE REAL TODDLLM 002 IS 001'S FATHER & THE HIGHEST ERROR · 002 > NETO > GRAY & BLACK ★."* New "THE PHASE GLITCH" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `phaseglitch` scene added to `tools/capture_screenshot.py`.
+
+![The Phase Glitch](screenshots/141-phase-glitch.png)
+
 ## 2026-07-08 — THE SLEEP RULE (BEAT 76)
 
 Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to "I SEE YOU": the restored Gray.EXE-vs-Simon rule plus the Gray.EXE-vs-Black.EXE matchup).
