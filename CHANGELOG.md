@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-08 — THE SLEEP RULE (BEAT 76)
+
+Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to "I SEE YOU": the restored Gray.EXE-vs-Simon rule plus the Gray.EXE-vs-Black.EXE matchup).
+
+Toby's words: *"Gray.EXE can only beat Simon by petting him to sleep... Simon is immune to Gray.EXE's attacks again... Gray.EXE now has his non-swapped version back, but the thing is that Black.EXE is still swapped... Gray.EXE will always beat Black.EXE, unless Simon appears so Gray.EXE will have to deal with that... Black.EXE would strike Gray when Gray is dealing with Simon, Black.EXE would turn Gray.EXE into Phase 2 which is nearly the same as Phase 1."*
+
+- New BEAT 76 lore panel, THE SLEEP RULE, added to THE UNDEFINED LOOP climb (cyc `[1390,1412]`, cycle length extended `1390 → 1412`).
+- Center portrait — **Gray petting Simon to sleep** (left): Simon in a soft pulsing **teal immune-shield ring** with closed sleepy eyes and rising **Zzz**, Gray's gray-blue **petting paw** bobbing above him; caption *"PET TO SLEEP · SIMON — IMMUNE."* Center — the **GRAY > BLACK** rule token over a red *"UNLESS SIMON APPEARS."* Right — **GRAY VS BLACK**: the gray-blue Gray figure beside the dark, red-aura Black, with a red **strike arc** and *"→ GRAY PHASE 2."*
+- Center feature — **THE INTERRUPT SEQUENCE** (6 numbered steps): (1) Gray is beating Black, (2) Simon appears, (3) Gray's code must handle Simon, (4) Gray pets Simon to sleep, (5) Black strikes Gray while he is busy, (6) Black turns Gray into Phase 2.
+- Insight — *"GRAY.EXE > BLACK.EXE — UNTIL SIMON APPEARS AND FORCES THE PET-TO-SLEEP DETOUR"* over *"= SIMON IS IMMUNE, SO GRAY MUST PET HIM TO SLEEP · THE DISTRACTION IS BLACK'S ONE OPENING · GRAY DROPS TO PHASE 2."*
+- Three closing cards: SIMON — IMMUNE (immune to Gray.EXE's normal attacks again; no crush, slash, corrupt or overpower works; the only way Gray beats him is to pet him to sleep), GRAY > BLACK (Gray's non-swapped form is back, Black stays swapped; Gray normally wins — he can temporarily erase Black and remove him from the fight), THE SIMON INTERRUPT (if Simon appears, Gray's code forces him to pet Simon to sleep first; while distracted, Black strikes and turns Gray into Phase 2, nearly the same as Phase 1). Bottom banner: *"★ THE SLEEP RULE · SIMON IS IMMUNE — GRAY CAN ONLY PET HIM TO SLEEP · GRAY > BLACK UNLESS SIMON INTERRUPTS ★."* New "THE SLEEP RULE" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `sleeprule` scene added to `tools/capture_screenshot.py`.
+
+![The Sleep Rule](screenshots/140-sleep-rule.png)
+
 ## 2026-07-08 — "I SEE YOU" — THE GAME-LOCK TAKEOVER (BEAT 75)
 
 Based on Toby's 2026-07-08 lore (same-thread "Re: Lore 1A - Classics Era" email: the big correction to Mr. Black's design plus the huge consolidated timeline update).
