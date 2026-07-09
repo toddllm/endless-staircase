@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-09 — THE GOLDEN TIMELINE (BEAT 79)
+
+Based on Toby's 2026-07-09 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE COLORED SLASHES): the huge restoration / peace-reset timeline after all the corruption, massacres, swapped forms and Phase chaos. A true HEALED WORLD route — the deliberate opposite of the glitch-red chaos beats.
+
+Toby's words: *"Alex made a new dimension and EndlessAnimations and ToddLLM made the timeline. Neto and Alex split the realms apart... Gray.EXE and Oren.EXE take off Mr. Black's Swapped form, Mr. Black is now normal, Simon.Exe uses his last bottle on himself and the game, the Anti-Virus fixed everything, Simon.Exe is back to normal, power was left off, Lica makes an eclipse with Alex and Greg, Mindy Starchild and Mervin dance under the moon, gnomes come out and then Classics and ToddLLM 001 and all his students dance with the gnomes, the sun rises, the background is painted golden by EndlessAnimations, harmless juice was served to everyone by Simon, Raddy is having summer fun, Oren and the others got their body back and are enjoying swimming in Sprunki Ocean that was cleaned by Simon, Gray.EXE now is getting used to being happy, new recycle bins were made by ToddLLM 001 and ToddLLM 002, Greg removed PVP and all dangerous stuff, Alex summoned a magic trick show... he also summoned free emeralds and diamonds... Neo is getting along with Mindy Starchild. Everyone was just chill in the new timeline ToddLLM 001 and EndlessAnimations built, all 4 seasons of different fun."*
+
+- New BEAT 79 lore panel, THE GOLDEN TIMELINE, added to THE UNDEFINED LOOP climb (cyc `[1456,1478]`, cycle length extended `1456 → 1478`).
+- **Bug fix carried in this beat** — the loop-cycle wrap constant `LV_CYC` was still `1434.0`, which meant BEAT 78 (THE COLORED SLASHES, range `[1434,1456)`) was actually **unreachable** in the loop. Bumping `LV_CYC` to `1478.0` makes both BEAT 78 and the new BEAT 79 reachable, and `lvSeg` now bounds BEAT 78 with `if(c < 1456.0)` before returning BEAT 79.
+- **Warm golden palette** — a full sunrise background (deep dawn violet → warm rose → sunrise orange → golden horizon) with a **Sprunki Ocean** strip cleaned by Simon along the bottom, glinting gold. The intentional visual opposite of every red/violet corruption beat.
+- **Two sky vignettes** — a rising **sun with Lica's eclipse** (top-right, *"LICA'S ECLIPSE · ALEX + GREG"*) with a blooming corona and the eclipse moon easing across the disc; a **moon with two swaying dancers** (*"MOON DANCE · MINDY & MERVIN"*).
+- Main feature — **THE RESTORATION SEQUENCE** (6 numbered repair steps, how the world was healed): 1. ALEX makes a new dimension · 2. EA + TODDLLM build the timeline · 3. NETO + ALEX split the realms apart · 4. GRAY + OREN remove Black's swapped form → Black normal · 5. SIMON'S LAST BOTTLE → Anti-Virus fixes all → Simon normal · 6. POWER LEFT OFF → old danger never restarts.
+- **THE PEACE — A HEALING SLICE-OF-LIFE WORLD** (8 activity cards): GNOMES OUT (Classics · 001 · students dance), GOLDEN SKY (EA paints the background gold), HARMLESS JUICE (Simon serves everyone), SPRUNKI OCEAN (cleaned · bodies back · swimming), MAGIC SHOW (Alex summons a trick show), FREE GEMS (Alex summons emeralds & diamonds), RECYCLE BINS (ToddLLM 001 & 002 build them), NO PVP · FUN (Greg removed danger · Raddy's summer · 4 seasons).
+- **Three character-change notes** — GRAY.EXE (getting used to being happy — happiness is something he has to learn), TODDLLM 002 (once pure threat, now helps make recycle bins, integrated into the peace), NEO & MINDY (Neo is getting along with Mindy Starchild).
+- Insight — *"NOT JUST 'THE BATTLE STOPPED' — A TRUE RECOVERY TIMELINE WHERE EVEN DANGEROUS BEINGS ARE INTEGRATED INTO PEACE."* Bottom banner: *"★ THE GOLDEN TIMELINE · CORRUPTION FIXED · BODIES RESTORED · EVEN 002 IS AT PEACE · ALL FOUR SEASONS OF FUN ★."* New "THE GOLDEN TIMELINE" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `goldentimeline` scene added to `tools/capture_screenshot.py`.
+
+![The Golden Timeline](screenshots/143-golden-timeline.png)
+
 ## 2026-07-09 — THE COLORED SLASHES (BEAT 78)
 
 Based on Toby's 2026-07-09 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE PHASE GLITCH: ToddLLM 002's full colored-slash system plus a Neto update).
