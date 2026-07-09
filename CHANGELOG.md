@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-09 — THE COLORED SLASHES (BEAT 78)
+
+Based on Toby's 2026-07-09 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE PHASE GLITCH: ToddLLM 002's full colored-slash system plus a Neto update).
+
+Toby's words: *"ToddLLM 002 uses colored slashes that do different things, white damages normally, blue does nothing, orange forces you to move even if your legs fall off, green freezes, purple traps you in 3 lanes, yellow gives an electric zap (Simon's lightning), pink teleports you randomly, brown slows you down, black duplicates you, red removes the duplications, gray poisons (constant small damage until your character falls), dark blue pushes you back 1 square, light blue pushes you forward 1 square, bage removes all your healing items, dark red makes fire, light red puts out all fires, dark yellow summons Simon, light yellow brings Simon away, teal makes you disappear and reappear, rainbow removes all your effects and damages normally. Neto is having second thoughts with Wenda and Gray."*
+
+- New BEAT 78 lore panel, THE COLORED SLASHES, added to THE UNDEFINED LOOP climb (cyc `[1434,1456]`, cycle length extended `1434 → 1456`).
+- Header — *"THE COLORED SLASHES — 002 ATTACKS WITH GAME RULES, NOT JUST STRENGTH"* over *"EACH SLASH COLOR IS A DIFFERENT RULE ATTACK — STATE · POSITION · INVENTORY · EFFECTS · EVEN WHETHER SIMON IS PRESENT."* A **002 · PHASE GLITCH** slasher icon sits top-right, swinging a color-cycling slash arc.
+- Main feature — **the 20-color slash grid** (4 × 5), each cell drawing that color's diagonal slash mark plus its rule effect: WHITE = normal damage, BLUE = does nothing, ORANGE = forces move, GREEN = freezes, PURPLE = traps 3 lanes, YELLOW = zap · lightning, PINK = random teleport, BROWN = slows down, BLACK = duplicates, RED = removes dupes, GRAY = poison til fall, DARK BLUE = push back 1, LIGHT BLUE = push fwd 1, BEIGE = strips heals, DARK RED = makes fire, LIGHT RED = puts out fire, DARK YELLOW = summons Simon, LIGHT YELLOW = Simon away, TEAL = blink out/in, RAINBOW = wipes fx + dmg. The three yellow slashes carry a gold border and a **★ SIMON** tag.
+- **THE SIMON CONNECTION** strip — *"THE 3 YELLOW SLASHES MAKE SIMON A BATTLEFIELD VARIABLE"*: yellow uses Simon's lightning, dark yellow summons Simon, light yellow brings Simon away, so 002 controls when Simon enters or leaves a fight.
+- Insight — *"HE IS NOT JUST ATTACKING WITH STRENGTH — HE IS ATTACKING WITH GAME RULES."*
+- **NETO — SECOND THOUGHTS** note: now empowered by 002 but still carrying her Wenda / Gray history, Neto is no longer fully locked into one side and is starting to question whether helping 002 is actually right. Bottom banner: *"★ 20 COLORED SLASHES · EACH A DIFFERENT RULE ATTACK · SIMON IS NOW 002'S BATTLEFIELD VARIABLE ★."* New "THE COLORED SLASHES" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `coloredslashes` scene added to `tools/capture_screenshot.py`.
+
+![The Colored Slashes](screenshots/142-colored-slashes.png)
+
 ## 2026-07-09 — THE PHASE GLITCH (BEAT 77)
 
 Based on Toby's 2026-07-09 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE SLEEP RULE: the huge power-chart update introducing the real ToddLLM 002 and the return of Neto).
