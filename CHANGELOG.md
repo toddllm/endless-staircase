@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-10 — THE CORRUPTION RETURN (BEAT 80)
+
+Based on Toby's 2026-07-10 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE GOLDEN TIMELINE, and the direct answer to Dad's question "is the golden timeline safe for good?" — the answer is NO). The healed world cannot stay healed: Simon spent his last Anti-Virus bottle in the Golden Timeline, so now he is out, and with nothing holding the corruption back the peace begins collapsing into a new corruption era. The deliberate reversal of BEAT 79 — the warm gold decaying back toward darkness.
+
+Toby's words: *"Simon.Exe is out of anti-virus and the game is becoming corrupt once again, the game turns back to darkness and despair... Simon.Exe used his last Anti-Virus bottle to fix himself and the game, but now: Simon.Exe is out of Anti-Virus. So the protection is gone. The game has no more emergency cure left. That means the golden world starts failing: the golden background fades, the four seasons of fun start breaking, Sprunki Ocean begins darkening again, the recycle bins and safe systems stop being enough, the peaceful timeline loses stability, the game turns back toward darkness and despair. The Peace Timeline was real, but it was not permanent. It was a restored timeline built by ToddLLM 001 and EndlessAnimations, but it depended on the Anti-Virus holding the corruption back. Since Simon.Exe has none left, the game starts corrupting again. The Anti-Virus fixed everything once, but without more Anti-Virus, the game cannot stay healed forever."*
+
+- New BEAT 80 lore panel, THE CORRUPTION RETURN, added to THE UNDEFINED LOOP climb (cyc `[1478,1500]`, cycle length extended `1478 → 1500`). `lvSeg` now bounds BEAT 79 with `if(c < 1478.0)` before returning BEAT 80.
+- **Fading-gold palette that decays live** — the scene reuses BEAT 79's warm sunrise gradient but dims it by a `decay` value (0→1 across the beat), while a dark red/violet **corruption flood rises from below** with a jagged glitch seam where the darkness meets the fading gold. The Sprunki Ocean strip along the bottom darkens back from its cleaned blue. The intentional visual undoing of the Golden Timeline.
+- **The empty Anti-Virus bottle** (top-right, where the sun rose in BEAT 79) — Simon's last bottle, glass cracked, the green liquid draining to nothing as the decay rises, the Anti-Virus cat symbol still on it, tagged *"EMPTY · SIMON'S LAST BOTTLE · NO ANTI-VIRUS LEFT."* The cause of the collapse, in one icon.
+- Main feature — **THE PROTECTION FAILS** (6 system cards, each a golden panel being reclaimed left→right by the returning darkness with red corruption crackle): GOLDEN SKY FADES, FOUR SEASONS BREAK, SPRUNKI OCEAN DARKENS, SAFE SYSTEMS FAIL (recycle bins & safe systems stop being enough), TIMELINE UNSTABLE (the peaceful timeline loses stability), DARKNESS RETURNS (the game turns back toward darkness & despair). Each card's border and text shift from gold to red as the corruption takes it.
+- **THE NEW RULE panel** — *"THE ANTI-VIRUS FIXED EVERYTHING ONCE — BUT WITHOUT MORE ANTI-VIRUS, THE GAME CANNOT STAY HEALED FOREVER. THE CURE HELD THE CORRUPTION BACK; NOW THE CURE IS GONE, SO THE RESTORED WORLD COLLAPSES INTO A NEW CORRUPTION ERA."*
+- Insight — *"THE PEACE TIMELINE WAS REAL, BUT NOT PERMANENT — IT DEPENDED ON THE ANTI-VIRUS HOLDING THE CORRUPTION BACK."* Bottom banner: *"★ SIMON IS OUT OF ANTI-VIRUS · THE GOLDEN WORLD FADES · CORRUPTION SPREADS AGAIN · BACK TO DARKNESS AND DESPAIR ★."* New "THE CORRUPTION RETURN" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `corruptionreturn` scene added to `tools/capture_screenshot.py`.
+
+![The Corruption Return](screenshots/144-corruption-return.png)
+
 ## 2026-07-09 — THE GOLDEN TIMELINE (BEAT 79)
 
 Based on Toby's 2026-07-09 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE COLORED SLASHES): the huge restoration / peace-reset timeline after all the corruption, massacres, swapped forms and Phase chaos. A true HEALED WORLD route — the deliberate opposite of the glitch-red chaos beats.
