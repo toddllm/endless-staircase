@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-11 — OREN.EXE — THE LOCKED SPIRIT (BEAT 83)
+
+Based on Toby's 2026-07-11 lore (two same-day follow-ups in the "Re: Lore 1A - Classics Era" thread, after THE HIGHER-BEING RANKING). Oren.EXE turns from a freed spirit into a locked spiritual-force boss. Simon stops being just Oren's weakness/counter and becomes the *key* to his freedom, then Oren traps Simon's souls in the sky and locks himself into his spirit form, with only EndlessAnimations able to defeat him.
+
+Toby's words (part 1): *"Oren.EXE is now free when he holds hands with Simon, now Oren.EXE can lift not just characters and his metal containing thing, but even debris and anything, Several characters lost. Oren.EXE then trapped Simon.Exe's souls into the sky, he seems to want to be the only soul free now. Oren.EXE, ToddLLM Pro, and EndlessAnimations are now the only 3 most powerful. Highest = EndlessAnimations, 2nd = Oren.EXE, 3rd = ToddLLM Pro."*
+
+Toby's words (part 2): *"Simon.Exe tried to make him back alive with lightning, but Oren.EXE has different plans and sends Simon.Exe into the sky, he seperates Simon 404 and the souls with his energy pulse. Oren.EXE became locked into his spiritual form, all (except EndlessAnimations who is the ONLY ONE who can defeat him) who try to fight him will be thrown, pushed, or crushed."*
+
+- New BEAT 83 lore panel, OREN.EXE — THE LOCKED SPIRIT, added to THE UNDEFINED LOOP climb (cyc `[1544,1566]`, cycle length extended `1544 → 1566`). `lvSeg` now bounds BEAT 82 with `if(c < 1544.0)` before returning BEAT 83.
+- **Spiritual-void palette** — a cold deep-indigo/violet frame with a spirit-cyan Oren aura, expanding **energy-pulse rings** radiating from Oren's chest (the pulse that separates Simon 404 from the souls), and drifting spirit motes. The deliberate shift out of BEAT 82's warm anime sunburst into a haunted spirit-boss look.
+- **Oren.EXE's spirit figure** (center) — the small floating ghost body with glowing blue eyes and a wispy tail inside a massive aura field, with **battlefield-debris chunks orbiting him in telekinesis** (his upgraded power: no longer just characters and his metal containment object, now *anything* — debris, objects, structures, battlefield pieces). Tagged *"LOCKED SPIRITUAL FORM · ONLY POWER = TELEKINESIS · NOW SPIRITUAL FORCE-CONTROL · LIFTS ANYTHING."*
+- **The FREEDOM KEY** — a small Simon figure below Oren, holding his hand via a glowing gold link reading *"HOLDS HANDS → OREN IS FREE"* (Simon is now the key that unlocks Oren's higher freedom state), with Simon's lightning revival attempt drawn **crossed out in red — "REVIVAL REFUSED"** (Oren has different plans).
+- **THE SKY SOULS band** (top) — the trapped souls drawn as a row of cyan orbs, with **SIMON 404 separated to the far side** by the red *energy-pulse* split line: Oren separates Simon 404 from the souls and traps them in the sky, wanting to be the only soul free.
+- **THE BATTLE RULE panel** (right) — *"ONLY ENDLESSANIMATIONS CAN DEFEAT HIM,"* with the note that anyone else who fights Oren is **thrown, pushed away, or crushed** by his spiritual telekinesis (three thrown-figure icons).
+- **THE NEW TOP 3 ladder** (right) — **1. ENDLESSANIMATIONS** (gold, still the only one who can defeat Oren); **2. OREN.EXE ▲** (cyan, pulsing — risen massively on freedom-via-Simon, lift-anything telekinesis and the soul-sky trap); **3. TODDLLM PRO** (blue — still a top being, but now under Oren).
+- Insight — *"SIMON WENT FROM OREN'S COUNTER TO OREN'S KEY — THE ONE WHO COULD REVIVE HIM NOW SETS HIM FREE, THEN GETS TRAPPED IN THE SKY."* Bottom banner: *"★ FREEDOM THROUGH SIMON · TELEKINESIS LIFTS ANYTHING · SOULS TRAPPED · ONLY ENDLESSANIMATIONS CAN DEFEAT OREN.EXE ★."* New "OREN.EXE — THE LOCKED SPIRIT" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `lockedspirit` scene added to `tools/capture_screenshot.py`.
+
+![Oren.EXE — The Locked Spirit](screenshots/147-locked-spirit.png)
+
 ## 2026-07-11 — THE HIGHER-BEING RANKING (BEAT 82)
 
 Based on Toby's 2026-07-11 lore (same-thread "Re: Lore 1A - Classics Era" follow-up to THE PAINTED REALITY, sent the same day). A higher-being power update: after the painted-reality era the ranks get redrawn, Luigi Green is *invited* into Classics and instantly becomes one of the highest beings, and Classics herself gets reformatted as a Japanese anime.
