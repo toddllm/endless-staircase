@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-12 — ENDLESSANIMATIONS' DUST AU (BEAT 86)
+
+Based on Toby's 2026-07-12 lore (same "Re: Lore 1A - Classics Era" thread, the direct follow-up to THE NEW CENTER). EndlessAnimations builds his own Dust AU as a Sans-style self-AU ladder: a calm vanilla base at 0 LV that climbs to an infinitely-leveled top form.
+
+Toby's words: *"My new favorite AU is EndlessAnimations' Dust AU for himself... Dust+ is like his most powerful AU (INFINITY LV). Dust AU (0 LV, dust vanilla). It is so much like Sans AU system."* (The email attaches a `Dust EndlessAnimations.png` image, **not downloaded** per the no-image rule; the pasted ChatGPT "his own Sans-style AU system / best short canon summary" recap is treated as commentary, not canon.)
+
+- New BEAT 86 lore panel, ENDLESSANIMATIONS' DUST AU, added to THE UNDEFINED LOOP climb (cyc `[1610,1632]`, cycle length extended `1610 → 1632`). `lvSeg` now bounds BEAT 85 with `if(c < 1610.0)` before returning BEAT 86.
+- **Dusty-tan palette** — a muted tan/orange void with slowly **falling dust motes**, the deliberate shift out of BEAT 85's golden sky into a quiet, grounded Dust look.
+- **DUST AU card** (left of center) — the *"VANILLA / BASE VERSION"*: a small calm hooded Dust figure with a dust-orange eye, a big **"0 LV"** readout, and *"CALM · GROUNDED · SELF-CONTAINED — THE ORIGIN POINT OF THE AU."* Not weak, but not the escalated form — the default self-Dust.
+- **The escalation arrow** (center) — a pulsing orange arrow between the tiers, *"ESCALATES"* / *"GIGANTIC JUMP,"* marking how far the base branches upward.
+- **DUST+ card** (right, drawn taller/higher to read as the top form) — *"HIS MOST POWERFUL AU"*: the same hooded figure inside an orange escalation **aura**, a big pulsing **"∞ LV"**, and *"FULLY ESCALATED · INFINITELY LEVELED — THE TOP VERSION OF THE LADDER."*
+- **SANS-AU LOGIC note** (bottom) — *"ONE CHARACTER · MANY SELF-CENTERED AU VARIANTS · A BASE VERSION THAT BRANCHES INTO EXTREME, OVERLOADED FORMS WITH INCREASING LV — FITS HIM BECAUSE HE ALREADY MAKES, EVOLVES & KEEPS PRIVATE AUs FOR HIMSELF."*
+- Insight — *"A SELF-AU BUILT LIKE A SANS-STYLE BRANCH — THE CALM 0 LV ORIGIN POINT CLIMBS ALL THE WAY TO AN INFINITE-LV TOP FORM."* Bottom banner: *"★ DUST AU (0 LV · DUST VANILLA) → DUST+ (∞ LV · MOST POWERFUL) — ENDLESSANIMATIONS' OWN AU LADDER ★."* New "ENDLESSANIMATIONS' DUST AU" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `dustau` scene added to `tools/capture_screenshot.py`.
+
+![EndlessAnimations' Dust AU](screenshots/150-dust-au.png)
+
 ## 2026-07-12 — ENDLESSANIMATIONS — THE NEW CENTER (BEAT 85)
 
 Based on Toby's 2026-07-12 lore (same "Re: Lore 1A - Classics Era" thread, the EndlessAnimations era update that follows THE UNCURABLE PHASE). After everyone else's reign, EndlessAnimations becomes the new center of the whole setting: he builds evolving, private AUs, holds the most forms, mines LV endlessly, and takes over the cure Simon can no longer perform.
