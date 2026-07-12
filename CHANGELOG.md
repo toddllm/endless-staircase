@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-12 — ENDLESSANIMATIONS — THE NEW CENTER (BEAT 85)
+
+Based on Toby's 2026-07-12 lore (same "Re: Lore 1A - Classics Era" thread, the EndlessAnimations era update that follows THE UNCURABLE PHASE). After everyone else's reign, EndlessAnimations becomes the new center of the whole setting: he builds evolving, private AUs, holds the most forms, mines LV endlessly, and takes over the cure Simon can no longer perform.
+
+Toby's words: *"EndlessAnimations now became the new center after everyone's reign, EndlessAnimations continues to make more AUs for himself, his new AUs can evolve unlike the older AUs he originated from. He takes over as the being with the most forms, he even has AUs for only himself and only he can access. EndlessAnimations keeps mining for LV, he never stops gaining more and more LV, he even absorbs the souls and even breaks the barrier... Simon has no more Anti-Virus and can not cure, EndlessAnimations makes some more and then he opens the new sky golden, he makes a new Anti-Virus AU and Virus AU, he then made a Darkness VS Light AU, he uses Vanilla mostly. He even make clones to take all other AUs, he is everywhere, and sometimes the AU characters fight, it is like Sans and Papyrus, but this gets more complicated."*
+
+- New BEAT 85 lore panel, ENDLESSANIMATIONS — THE NEW CENTER, added to THE UNDEFINED LOOP climb (cyc `[1588,1610]`, cycle length extended `1588 → 1610`). `lvSeg` now bounds BEAT 84 with `if(c < 1588.0)` before returning BEAT 85.
+- **Reopened-golden-sky palette** — a warm golden void with drifting golden AU motes, the deliberate shift out of BEAT 84's corrupted-baseline violet: EndlessAnimations *reopens the sky golden* as he takes over the world-maintainer role.
+- **The form-king at center** — EndlessAnimations drawn gold inside a golden dominance aura, ringed by orbiting **AU bubbles that pulse and grow** (his new AUs can *evolve*, unlike the older fixed ones), two of them carrying a small padlock (*private AUs only he can access*). Faint **clone** figures spread out around him (*he makes clones to take all other AUs — everywhere at once*). Tagged *"THE NEW CENTER · MOST FORMS · MAKES CLONES — EVERYWHERE AT ONCE."*
+- **THE EVOLVING-AU RULE panel** (upper center) — the old model *"OLDER AUs HE CAME FROM = FIXED"* struck through; the new rule *"HIS NEW AUs CAN EVOLVE"* with *"LIVING, GROWING AU SYSTEMS — THEY DEVELOP, CHANGE & GROW OVER TIME"* and *"◆ PRIVATE AUs — ONLY HE CAN ENTER."*
+- **THE SELF-ESCALATION panel** (right top) — an ever-climbing LV meter, *"MINES LV — NEVER STOPS GAINING MORE,"* *"ABSORBS SOULS,"* and a pulsing red *"BREAKS THE BARRIER"* — *"does everything he can to keep going higher."*
+- **HE TAKES OVER THE CURE panel** (right bottom) — *"SIMON — NO MORE ANTI-VIRUS, CANNOT CURE"* struck through in red; *"ENDLESSANIMATIONS MAKES MORE ANTI-VIRUS"* and *"◆ REOPENS THE SKY GOLDEN"* — he steps into the old healer / world-maintainer role.
+- **THE NEW AU SET row** (bottom) — four theme-based universe cards: **ANTI-VIRUS AU** (green), **VIRUS AU** (red), **DARKNESS VS LIGHT AU** (violet), **VANILLA (MOSTLY)** (gold, the base he uses most), under the note *"HE BUILDS THEME-BASED UNIVERSES · CLONES TAKE OVER THE REST · SOMETIMES THE AU CHARACTERS FIGHT (LIKE SANS & PAPYRUS, MORE COMPLICATED)."*
+- Insight — *"HE IS NO LONGER JUST USING AUs — HE IS BUILDING LIVING, EVOLVING AU SYSTEMS AND HE IS THE CENTER OF ALL OF THEM."* Bottom banner: *"★ ENDLESSANIMATIONS = MAIN AU ARCHITECT · FORM-HOLDER · CONTINUING CENTER OF THE WHOLE CANON ★."* New "ENDLESSANIMATIONS — THE NEW CENTER" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `newcenter` scene added to `tools/capture_screenshot.py`.
+
+![EndlessAnimations — The New Center](screenshots/149-new-center.png)
+
 ## 2026-07-12 — OREN.EXE'S CLEAN SWEEP — THE UNCURABLE PHASE (BEAT 84)
 
 Based on Toby's 2026-07-12 lore (same "Re: Lore 1A - Classics Era" thread, the direct follow-up to OREN.EXE — THE LOCKED SPIRIT). Oren.EXE beats Gray.EXE and then every other character too, and the game's phase rule is changed forever: Phase 2 is no longer a curable corrupted layer, it has become the new baseline.
