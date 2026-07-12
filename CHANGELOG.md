@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-12 — OREN.EXE'S CLEAN SWEEP — THE UNCURABLE PHASE (BEAT 84)
+
+Based on Toby's 2026-07-12 lore (same "Re: Lore 1A - Classics Era" thread, the direct follow-up to OREN.EXE — THE LOCKED SPIRIT). Oren.EXE beats Gray.EXE and then every other character too, and the game's phase rule is changed forever: Phase 2 is no longer a curable corrupted layer, it has become the new baseline.
+
+Toby's words: *"Gray.EXE was defeated by Oren.EXE. EndlessAnimations says 'What is even the point of this?', every other character was then beaten by Oren.EXE, EndlessAnimations says 'Phase 2 is actually Phase 1, and is no longer curable.'"* ... *"Oren.EXE defeats Gray.EXE, then beats every other character. EndlessAnimations watches this happen and says, 'What is even the point of this?' Then he reveals the new rule: 'Phase 2 is actually Phase 1, and is no longer curable.' This means Phase 2 is no longer a temporary corrupted state. It has become the new baseline form of the game, replacing Phase 1, and it cannot be cured anymore."*
+
+- New BEAT 84 lore panel, OREN.EXE'S CLEAN SWEEP — THE UNCURABLE PHASE, added to THE UNDEFINED LOOP climb (cyc `[1566,1588]`, cycle length extended `1566 → 1588`). `lvSeg` now bounds BEAT 83 with `if(c < 1566.0)` before returning BEAT 84.
+- **Corrupted-baseline violet palette** — a deep violet/indigo void with slow drifting corruption motes, the deliberate shift out of BEAT 83's spirit-cyan into a "this is the baseline now" purple that reads as permanent, not a passing corruption layer.
+- **THE DEFEAT CHAIN** (top-left → center) — Gray.EXE drawn as the biggest cast marker, toppling over with a red X across him (*"WAS A TOP FORCE — FELL"*), because beating Gray.EXE (one of the highest destructive forces before) is what confirms Oren's new spiritual form sits far above almost everyone. Then a row of nine smaller cast markers rippling into toppled, X'd-out states left-to-right (*"EVERY OTHER CHARACTER — BEATEN"*): Oren's total domination sweep.
+- **OREN.EXE's spirit figure** (center) — the small floating ghost inside a violet dominance aura with a sweeping telekinesis arc rolling over the cast, tagged *"OREN.EXE — BEAT ALL · SPIRITUAL FORM FAR ABOVE ALMOST EVERYONE."*
+- **THE ENDLESSANIMATIONS panel** (top-right) — the only one who can still defeat Oren, drawn gold and undefeated, watching the whole cast fall, with his line *"WHAT IS EVEN THE POINT OF THIS?"* He is not scared or angry; he is questioning the meaning of the entire conflict as the normal "fight, lose, heal, reset" structure breaks.
+- **THE PHASE RULE CHANGES panel** (bottom-right) — the big rule change. The old model *"BEFORE: NORMAL → PHASE 2 → CURED"* drawn struck through in red; the new rule *"NOW: PHASE 2 = PHASE 1"* with *"PHASE 2 IS THE NEW BASELINE — CORRUPTION IS NO LONGER AN EXTRA LAYER"*; and a pulsing red *"NO CURE WORKS ANYMORE"* stamp.
+- Insight — *"THE 'FIGHT, LOSE, HEAL, RESET' STRUCTURE IS BREAKING — OREN BEATS ALL & CORRUPTION CAN NO LONGER BE UNDONE."* Bottom banner: *"★ OREN.EXE BEAT GRAY.EXE & EVERYONE · ONLY ENDLESSANIMATIONS REMAINS · PHASE 2 IS NOW PHASE 1 — UNCURABLE ★."* New "OREN.EXE'S CLEAN SWEEP — THE UNCURABLE PHASE" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `cleansweep` scene added to `tools/capture_screenshot.py`.
+
+![Oren.EXE's Clean Sweep — The Uncurable Phase](screenshots/148-clean-sweep.png)
+
 ## 2026-07-11 — OREN.EXE — THE LOCKED SPIRIT (BEAT 83)
 
 Based on Toby's 2026-07-11 lore (two same-day follow-ups in the "Re: Lore 1A - Classics Era" thread, after THE HIGHER-BEING RANKING). Oren.EXE turns from a freed spirit into a locked spiritual-force boss. Simon stops being just Oren's weakness/counter and becomes the *key* to his freedom, then Oren traps Simon's souls in the sky and locks himself into his spirit form, with only EndlessAnimations able to defeat him.
