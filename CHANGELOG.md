@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-13 — CLASSIC ALPHIANS RETURNS — THE RINGMASTER (BEAT 89)
+
+Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread, the follow-up to THE HAT & TIE). A full-circle turn: EndlessAnimations rebuilds Classic Alphians as a more corrupted, more powerful revival, and Mr. Black takes back the ringmaster role over every game.
+
+Toby's words: *"EndlessAnimations decides to make Classic Alphians again, but even more corrupted and glitched, it reaches beyond Classics now. Mr. Black (EndlessAnimations) became the ringmaster again, and then Simon as a jester, and all the rest turn back... Now Mr. Black is the 1 controlling the games, he is the ringmaster, he can summon the game... EndlessAnimations knows to paint, Shadow = Black, that is 1 hint that he is Classics Mr. Black."* (The pasted ChatGPT recap of the same lore is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 89 lore panel, CLASSIC ALPHIANS RETURNS — THE RINGMASTER, added to THE UNDEFINED LOOP climb (cyc `[1676,1698]`, cycle length extended `1676 → 1698`). `lvSeg` now bounds BEAT 88 with `if(c < 1676.0)` before returning BEAT 89.
+- **Dark shadow big-top palette** — a deep black-red void with a central red ringmaster spotlight cone and drifting shadow/gold motes, so the beat reads like a corrupted circus ring.
+- **THE CORRUPTED REVIVAL panel** (left) — the evolution list (*more corrupted · more glitched · stronger · beyond Classics itself*) with the caption *"AN EVOLVED CORRUPTED REVIVAL — NOT JUST A REMAKE,"* then the role reset drawn as a small **top-hat ringmaster** and a **jester** figure: *"MR. BLACK = RINGMASTER · SIMON = JESTER · ALL THE REST TURN BACK — A CORRUPTED ROLE RESET."*
+- **HE CONTROLS THE GAMES panel** (right) — Mr. Black stands at the center of a slowly rotating **ring** with the game names orbiting it (**Endless Staircase** highlighted, Endless Glass Bridge, Mega Bario, Luigi Green's World, Alex's World, All Others), over *"FRANCHISE CONTROLLER — NOT A BOSS"* and a big pulsing **"HE CAN SUMMON THE GAME."** The point of the beat: he is not a boss inside one game anymore, he controls multiple games and worlds.
+- **3-part footer** — THE ROLE RESET (Mr. Black = ringmaster · Simon = jester · all the rest turn back), WHY HE IS STRONGEST (he is EndlessAnimations · paints the game · makes updates · creates AUs · controls roles · exists across AUs), and THE CLUE — SHADOW = BLACK (the paint/shadow side and the Mr. Black ringmaster side are the same being).
+- Insight banner: *"A CORRUPTED REVIVAL BEYOND CLASSICS — MR. BLACK TAKES THE RING AGAIN & CONTROLS EVERY GAME · HE IS ENDLESSANIMATIONS."* New "CLASSIC ALPHIANS RETURNS — THE RINGMASTER" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `ringmaster` scene added to `tools/capture_screenshot.py`.
+
+![Classic Alphians Returns — The Ringmaster](screenshots/153-ringmaster.png)
+
 ## 2026-07-13 — THE HAT & TIE — DARK PERO FUSION (BEAT 88)
 
 Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread, the follow-up to THE COMIC-BOOK WAR). A big identity/fusion update: EndlessAnimations formally becomes Mr. Black through the hat and tie, and 001 Pro Pero fuses with him into Dark Pero.
