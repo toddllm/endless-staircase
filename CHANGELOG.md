@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-13 — CLASSICS: THE COMIC-BOOK WAR (BEAT 87)
+
+Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread). Classics turns into a comic/anime AU war system where LV, souls, dust, realms, and book/episode structure all matter.
+
+Toby's words: *"Every character uses the dust out death thing... Error 404 has 0 LV, Error 666 has 892828783872 LV, LV ~= (does not equal) power. Error 404 is very powerful, stronger than Errorshifted that is similar to Error but with 20292929929 LV... Since the game is comic book style, it includes the BOOM, BANG, and the POW, it also shows the game like a graphic novel... Episodes show timelines and stuff, while Chapters are a series of Episodes... Mr. Black ripped the book and now he takes all the power, and then he emerges as the third most powerful being."* (The pasted ChatGPT recap of the same lore is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 87 lore panel, CLASSICS — THE COMIC-BOOK WAR, added to THE UNDEFINED LOOP climb (cyc `[1632,1654]`, cycle length extended `1632 → 1654`). `lvSeg` now bounds BEAT 86 with `if(c < 1632.0)` before returning BEAT 87.
+- **Comic-page palette** — a deliberate break from the dark voids of prior beats: a bright off-white comic **page with halftone dots** and heavy black panel gutters, so this beat literally reads as a graphic novel.
+- **LV ≠ POWER panel** (left) — the big rule, with three stat cards: **ERROR 404 — 0 LV — "STILL THE STRONGEST"** (highlighted), **ERRORSHIFTED — 20,292,929,929 LV — "WEAKER THAN 404"**, **ERROR 666 — 892,828,783,872 LV**. Caption: *"LV = HISTORY / KILL-GROWTH — NOT RAW STRENGTH"* and the locked line *"ERROR 404 (0 LV) > ERRORSHIFTED (20B LV)."*
+- **MR. BLACK RIPS THE BOOK panel** (right) — a dark-matter panel with drifting motes, a **torn book** with rip-energy in the gap, and a big **"#3 MOST POWERFUL"**: *"REVIVED · BLACK HAT FORM · TAKES ALL THE POWER,"* *"TURNS THE GAME TO DUST & DARK MATTER · BLACKS THE SOULS,"* *"STEALS SIMON'S LIGHTNING & OREN'S TELEKINESIS · GHOSTS THE SPRUNKIS."*
+- **BOOM / BANG / POW** comic starbursts drawn over the gutter (graphic-novel impact style).
+- **3-part footer** — THE 3 REALMS (1 · ToddLLM 001 & EndlessAnimations · 2 · Simon's Dream · 3 · Sprunki), COMIC STRUCTURE (**PAGE < EPISODE < CHAPTER**, Episodes = timeline events, Chapters = series of Episodes), and LOCKED TOP (EndA = 001 Pro tied/neutral/forever > Oren.EXE > Mr. Black third after stealing power).
+- Insight banner: *"LV IS NOT STRENGTH · THE WAR IS A GRAPHIC NOVEL NOW · MR. BLACK RIPS THE BOOK — BUT 001 PRO & ENDLESSANIMATIONS STAY TIED-TOP, NEUTRAL, FOREVER."* New "CLASSICS — THE COMIC-BOOK WAR" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `comicwar` scene added to `tools/capture_screenshot.py`.
+
+![Classics — The Comic-Book War](screenshots/151-comic-book-war.png)
+
 ## 2026-07-12 — ENDLESSANIMATIONS' DUST AU (BEAT 86)
 
 Based on Toby's 2026-07-12 lore (same "Re: Lore 1A - Classics Era" thread, the direct follow-up to THE NEW CENTER). EndlessAnimations builds his own Dust AU as a Sans-style self-AU ladder: a calm vanilla base at 0 LV that climbs to an infinitely-leveled top form.
