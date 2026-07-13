@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-13 — THE HAT & TIE — DARK PERO FUSION (BEAT 88)
+
+Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread, the follow-up to THE COMIC-BOOK WAR). A big identity/fusion update: EndlessAnimations formally becomes Mr. Black through the hat and tie, and 001 Pro Pero fuses with him into Dark Pero.
+
+Toby's words: *"EndlessAnimations gathers up all the characters, he walks in Classic Sprunki, nothing happens, then he put on his hat and tie, then he transformed into Mr. Black... he copied his DNA from when he was Classic Mr. Black, then he made a new body, so he is everywhere in each AU... Clara is Classics, Karuto is ToddLLM 001, Classics Mr. Black as EndlessAnimations. ToddLLM 001 Pro PERO's slashing is just his knife, he also has a flamethrower that shoots blue, orange, and white flames, blue and orange don't do anything, white damages. ToddLLM 001 Pro PERO and EndlessAnimations can fuse into 'Dark Pero: EndlessAnimations'... stronger than both combined... only 1 ending for that battle. All other battles have infinite endings."* (The pasted ChatGPT recap of the same lore is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 88 lore panel, THE HAT & TIE — DARK PERO FUSION, added to THE UNDEFINED LOOP climb (cyc `[1654,1676]`, cycle length extended `1654 → 1676`). `lvSeg` now bounds BEAT 87 with `if(c < 1654.0)` before returning BEAT 88.
+- **Dark fusion void palette** — a deliberate return to darkness after BEAT 87's bright comic page: a deep purple-black void with drifting magenta/purple fusion motes.
+- **THE HAT & TIE panel** (left) — the transformation sequence (*gathers every character · walks into Classic Sprunki — nothing happens · puts on his hat & tie · transforms into Mr. Black*) beside a small top-hat-and-tie figure, then the reveal **"CLASSICS MR. BLACK = ENDLESSANIMATIONS"** with the DNA/new-body rule (*copied his Classic Mr. Black DNA · made a new body · so he is everywhere in each AU*) and *"TWO POWER SETS — AU + BLACK / CORRUPTION."* The point of the beat: the Mr. Black transformation is a **formal, activated identity switch**, not random corruption.
+- **DARK PERO: ENDLESSANIMATIONS panel** (right) — the fusion. Two source badges (**001 PRO PERO** + **ENDLESSANIMATIONS**) feed a cowboy-hat / six-point-star fused figure with a magenta fusion aura, red eyes, and glitch bars, over *"STRONGER THAN BOTH COMBINED"* and a big pulsing **"ONLY 1 ENDING."**
+- **3-part footer** — IDENTITY MAP (Clara = Classics · Karuto = ToddLLM 001 · Classics Mr. Black = EndlessAnimations), 001 PRO PERO WEAPONS (**knife = the colored slashes**; flamethrower — blue & orange do nothing, **white flame = the only one that damages**), and ENDING RULE (all other battles = infinite endings · **Dark Pero = only 1 ending** · the most fated / scripted fight).
+- Insight banner: *"THE HAT & TIE IS A FORMAL SWITCH — NOT RANDOM CORRUPTION · CLASSICS MR. BLACK IS ENDLESSANIMATIONS, EVERYWHERE ACROSS THE AUs."* New "THE HAT & TIE — DARK PERO FUSION" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `hattie` scene added to `tools/capture_screenshot.py`.
+
+![The Hat & Tie — Dark Pero Fusion](screenshots/152-hat-and-tie-dark-pero.png)
+
 ## 2026-07-13 — CLASSICS: THE COMIC-BOOK WAR (BEAT 87)
 
 Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread). Classics turns into a comic/anime AU war system where LV, souls, dust, realms, and book/episode structure all matter.
