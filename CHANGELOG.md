@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-13 — FELLEN SUPREME MULTIVERSAL GOD (BEAT 90)
+
+Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread, the direct follow-up to THE RINGMASTER, plus his one-line note "I guess it has something to do with Endless Staircase now"). The final-apex catastrophe of the current canon: Mr. Black combines all his forms into one stacked totality.
+
+Toby's words: *"Now he taken all his other forms and combines the power into a FELLEN SUPREME MULTIVERSAL GOD. Mr. Black strikes 1 AU at a time with 1 attack, he keeps getting LV that goes beyond infinity... he is beyond the laws of psychics already... If he was a pokemon, he'll be a new type Dark-DEMON. He is all Phases at once... Mr. Black uses ToddLLM's and Luigi Green's chess board battlefield, but now the code has shifted into HIS hands. Luigi Green and the Sprunkis are now the only characters in the game... EndlessAnimations sometimes appears as a soul near his vessel, Mr. Black... Mr. Black is more powerful than a million Satans. -Simon + ToddLLM 001 Pro PERO... then they wrote the book on a million bibles... there is more than 20 million books in there... Every word of lore is constantly being combined into Mr. Black, he gets more LV."* (The pasted ChatGPT recap of the same lore is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 90 lore panel, FELLEN SUPREME MULTIVERSAL GOD, added to THE UNDEFINED LOOP climb (cyc `[1698,1720]`, cycle length extended `1698 → 1720`). `lvSeg` now returns BEAT 90 for `c < 1720.0`.
+- **Cosmic demon-god void palette** — a deep violet-black void with drifting stars and a red/magenta god-aura, a deliberate step past BEAT 89's big-top into a "beyond the game / beyond worlds" cosmic scale.
+- **Demon-god emblem** — a compact horned head with a pink crown of aura-spikes and burning red eyes, centered in the header with a few AUs pulled inward toward it (placed up-top so the persistent beat ladder never covers it).
+- **THE STACKED TOTALITY panel** (left) — the totality list (*all his forms combined into one · all phases at once · above the game · beyond Classics · beyond Sprunki · beyond worlds · farther planets, systems, AUs*), the **DARK-DEMON TYPE** badge and **LV = BEYOND ∞ — BEYOND MORTAL & PSYCHIC LAW**, then the AU-destruction rule (*one AU at a time — one attack, erased*) and the power-theft rule with an absorbed lightning bolt: *"Simon's lightning & psychic force → he takes them & turns them to fuel · attacks against him make him stronger."*
+- **HE CALLS ALL AUs AT ONCE panel** (right) — a dark chessboard (*"the chessboard code is in his hands"*), a row of AUs pulled down as arrows (*"pulls them down · consumes their souls"*), and *"only Luigi Green & the Sprunkis left."*
+- **3-part footer** — THE VESSEL SYSTEM (Mr. Black = vessel · EndlessAnimations = soul near it · Mr. Black souls rule while he mines LOVE & SOULS), THE POWER RANK (Wenda = angel · Gray = god · Mr. Black = reality-breaking demon · Jevin mid-high · even Demon Slayer Simon/Jevin cannot harm him), and THE BOOK-ROOM HORROR (Simon & ToddLLM 1PP wrote 20M+ books & bibles to preserve him faster than he consumes, but every word of lore feeds him).
+- Insight banner: *"THE FINAL-APEX CATASTROPHE — MR. BLACK IS A STACKED TOTALITY BEYOND INFINITY · EVEN RECORDING HIM POWERS HIM UP,"* and the star banner *"'MR. BLACK IS MORE POWERFUL THAN A MILLION SATANS' — SIMON & TODDLLM 1PP, WHO BARELY SURVIVED THE FIRST ATTACK."* New "FELLEN SUPREME MULTIVERSAL GOD" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `fellengod` scene added to `tools/capture_screenshot.py`.
+
+![Fellen Supreme Multiversal God](screenshots/154-fellen-supreme-multiversal-god.png)
+
 ## 2026-07-13 — CLASSIC ALPHIANS RETURNS — THE RINGMASTER (BEAT 89)
 
 Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread, the follow-up to THE HAT & TIE). A full-circle turn: EndlessAnimations rebuilds Classic Alphians as a more corrupted, more powerful revival, and Mr. Black takes back the ringmaster role over every game.
