@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-14 — THE SPRUNKI SCAN — PERO BECOMES TUNNER (BEAT 91)
+
+Based on Toby's 2026-07-14 lore (same "Re: Lore 1A - Classics Era" thread, the follow-up to FELLEN SUPREME MULTIVERSAL GOD).
+
+Toby's words: *"Also Pero as Tunner now. ToddLLM 001 Pero just has to walk in Sprunki and it scans him and turns him into Tunner. ToddLLM 001 and EndlessAnimations made the update a while ago now. ToddLLM 001 gave Gray more power, now Gray is the third most powerful Sprunki; Oren is second, Mr. Black is first. EndlessAnimations left Mr. Black for millions of years after that."* (The pasted ChatGPT recap of the same lore is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 91 lore panel, THE SPRUNKI SCAN — PERO BECOMES TUNNER, added to THE UNDEFINED LOOP climb (cyc `[1720,1742]`, cycle length extended `1720 → 1742`). `lvSeg` now returns BEAT 91 for `c < 1742.0`.
+- **Sprunki scanner-bay palette** — a deep teal-blue void with a faint scan-grid and a green scanline sweeping top-to-bottom across the whole bay, so the beat reads like a scanner turning one character into another. A compact scan-gate emblem with a sweeping bar sits in the header.
+- **THE SCAN panel** (left) — the transformation drawn left-to-right: **PERO** (with his yellow knife accent) → a **scan-gate** with a sweeping green bar → **TUNNER** (cowboy with a hat brim), connected by arrows. Captions: *"ToddLLM 001 Pero walks into Sprunki · the game scans him · he becomes Tunner,"* the link line **"TUNNER = PERO — LINKED BY THE UPDATE,"** and the older rule *"TODDLLM = CREATOR & ONLY COWBOY BESIDES TUNNER."*
+- **THE SPRUNKI POWER RANK panel** (right) — a three-bar podium: **#1 MR. BLACK** (tallest, center), **#2 OREN**, **#3 GRAY**, over the line **"MR. BLACK > OREN > GRAY"** and *"ToddLLM 001 gave Gray more power → Gray rises to third."*
+- **3-part footer** — THE UPDATE ORIGIN (ToddLLM 001 & EndlessAnimations built this update a while ago, already in the system, not an accident), THE SCAN LINK (Pero walks in → scan → becomes Tunner; Pero & Tunner are one through the update), and MILLIONS OF YEARS (EndlessAnimations left Mr. Black for millions of years after that; Mr. Black souls kept the vessel running — ties to BEAT 90's vessel system).
+- Insight banner: *"THE SPRUNKI SCAN WAS BUILT IN LONG AGO — PERO IS TUNNER · GRAY RISES TO THIRD · MR. BLACK STILL RULES THE SPRUNKIS,"* and the star banner *"★ MR. BLACK > OREN > GRAY · & ENDLESSANIMATIONS LEFT MR. BLACK FOR MILLIONS OF YEARS ★."* New "THE SPRUNKI SCAN — PERO BECOMES TUNNER" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `sprunkiscan` scene added to `tools/capture_screenshot.py`.
+
+![The Sprunki Scan — Pero Becomes Tunner](screenshots/155-sprunki-scan.png)
+
 ## 2026-07-13 — FELLEN SUPREME MULTIVERSAL GOD (BEAT 90)
 
 Based on Toby's 2026-07-13 lore (same "Re: Lore 1A - Classics Era" thread, the direct follow-up to THE RINGMASTER, plus his one-line note "I guess it has something to do with Endless Staircase now"). The final-apex catastrophe of the current canon: Mr. Black combines all his forms into one stacked totality.
