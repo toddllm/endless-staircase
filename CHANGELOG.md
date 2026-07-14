@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-14 — THE NO MORE .EXE MOD — GRAY TAKES EVERYTHING (BEAT 92)
+
+Based on Toby's 2026-07-14 lore (the second July 14 message on the "Re: Lore 1A - Classics Era" thread, the follow-up to THE SPRUNKI SCAN).
+
+Toby's words: *"Gray then beaten Wenda at Sound Battles, and then he taken Wenda's power, Gray became above Oren (The 'No More .EXE' mod). Gray X Luigi Green happened instead of Gray X Wenda, because Wenda was slain by Gray. Mr. Black and Tunner were free by Oren. Clara was locked with Classics. Gray became beyond Classics. Gray VS Black happened, Gray emerged victorious and took the Souls, LV, and the code. Gray is working on something that can destroy all universes it encounters with. Mr. Black made himself into a large demon, then the game was attacked every time at 3 AM. Gray destroyed all the characters, instant Infinity LV. Gray then controls LV along with Luigi Green and Pero."* (The pasted ChatGPT recap of the same lore is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 92 lore panel, THE NO MORE .EXE MOD — GRAY TAKES EVERYTHING, added to THE UNDEFINED LOOP climb (cyc `[1742,1764]`, cycle length extended `1742 → 1764`). `lvSeg` now returns BEAT 92 for `c < 1764.0`.
+- **Steel-blue apex palette** — a cold steel-blue void with cold sparks drifting up and Gray's **blue-heart** apex aura in the header, so the beat reads as Gray's cold rise to the top of the No More .EXE branch. Header emblem: a gray head with a blue heart and a rising arrow past an Oren tick.
+- **GRAY'S RISE — SOUND BATTLES panel** (left) — **WENDA** (an angel with a halo, drawn slain with a red X) → a power arrow → a larger **GRAY** with a glowing blue heart, over *"Gray beats Wenda in Sound Battles & takes her power → rises above Oren,"* the line **"WENDA IS SLAIN → GRAY X LUIGI GREEN,"** and *"(happens instead of Gray X Wenda)."*
+- **GRAY VS BLACK — HE TAKES IT ALL panel** (right) — three tokens **SOULS · LV · CODE** with arrows flowing down into Gray, over **"GRAY = SOUL-HOLDER · LV-CONTROLLER · CODE-CONTROLLER,"** the gold **"DESTROYS ALL → LV = ∞,"** the red **"BUILDING A UNIVERSE-DESTROYER,"** and *"'destroys every universe it encounters.'"*
+- **3-part footer** — OREN FREES (Oren frees Mr. Black & Tunner; Clara is locked with Classics), MR. BLACK'S DEMON (even after losing he becomes a large demon; the game is attacked every 3 AM), and GRAY CONTROLS LV (Gray goes beyond Classics; holds the Souls · LV · Code; controls LV with Luigi Green & Pero).
+- Insight banner: *"GRAY BEATS WENDA, PASSES OREN, BEATS BLACK & TAKES THE SOULS · LV · CODE — THEN JUMPS STRAIGHT TO INFINITY LV,"* and the star banner *"★ IN THE NO MORE .EXE MOD, GRAY RISES ABOVE EVERYONE — EVEN MR. BLACK ★."* New "THE NO MORE .EXE MOD — GRAY TAKES EVERYTHING" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `grayeverything` scene added to `tools/capture_screenshot.py`.
+
+![The No More .EXE Mod — Gray Takes Everything](screenshots/156-gray-takes-everything.png)
+
 ## 2026-07-14 — THE SPRUNKI SCAN — PERO BECOMES TUNNER (BEAT 91)
 
 Based on Toby's 2026-07-14 lore (same "Re: Lore 1A - Classics Era" thread, the follow-up to FELLEN SUPREME MULTIVERSAL GOD).
