@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-14 — THE COFFIN & THE CYBER LORD — GRAY, GAME'S GOD (BEAT 95)
+
+Based on Toby's 2026-07-14 lore (the "STILL Classics Era" thread, the direct follow-up to THE THREE REALMS COLLIDE). Two same-day messages combined into one beat.
+
+Toby's words (the coffin): *"Gray then taken off the 'To Be Continued' screen, and then he is now rubbing a coffin that might just hold the puppet in it, but he can be using a fake since it is too ovious ... Everyone thinks it is a fake and just pass it to look for other clues. Gray chuckles and says 'I need you, I need you to bend this reality, I need ya, I need ya for'ver (FOR-VER)', Gray is talking like Simon, Gray puts the rest of Orus' and Dark Yellow's magic powder and dust and aura and energy on the coffin. Then Gray says 'I won't stop 'til... VICTORY IS MINE!'."* And (the cyber lord): *"Gray is a cyber assien lord, he hides in shadows, and he also has a syche and karatas and ninja stars in a backpack. Gray is litterly now the most powerful and the game's god ... Wenda is the angel, Gray is the absolute demon of the game, Black has the biggest turn as the most powerful and main villain to someone who actually helps the others fight Gray ... Simon, Gray, and Mr. Black are the smartest ... Everyone else is like 'He is our king, he is our new ruler, don't go near him, we'll block you guys first!', Gray is like 'Au ye (All Ya Shall) bow down.'."* (The pasted ChatGPT recaps are treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 95 lore panel, THE COFFIN & THE CYBER LORD — GRAY, GAME'S GOD, added to THE UNDEFINED LOOP climb (cyc `[1808,1830]`, cycle length extended `1808 → 1830`). `lvSeg` now returns BEAT 95 for `c < 1830.0`.
+- **Cold cyber shadow palette** — a dark shadow void with drifting shadow-ash flecks and a *deceptive angelic-gold halo* around the header figure, so the beat reads as "he looks angelic but he is the demon." Header emblem: **Gray** as a shadow-assassin — a gold halo ring over a shadow body with a demon-red core eye, flanked by a **scythe**, a **katana**, and a spinning **ninja star**.
+- **THE COFFIN panel** (left) — the *"TO BE CONTINUED"* screen slides off, revealing a tall real-or-fake **coffin** (a hexagon with a red **"?"**) with **ORUS** (violet) and **DARK YELLOW** (amber) dust pouring onto it. Captions: *"EVERYONE: 'TOO OBVIOUS — IT'S FAKE' → PASSES BY"* and **"GRAY CHUCKLES · 'VICTORY IS MINE!'"**
+- **THE CYBER LORD panel** (right) — the angel/demon flip drawn as two figures: **WENDA — THE ANGEL** (gold) and **GRAY — THE DEMON** (shadow body, deceptive gold halo, red core), under *"WORSHIPPED — THE WRONG ONE,"* then **"MR. BLACK: VILLAIN → ANTI-GRAY HELPER"** and the black **"'ALL YA SHALL BOW DOWN'"** bar.
+- **3-part footer** — SPEAKS LIKE SIMON (*"I NEED YA FOR'VER"* · the puppet bends reality · Orus + Dark Yellow poured on), THE SMARTEST TRIO (1. Gray — game's god & #1 smartest, 2. Simon — computer intelligence, 3. Mr. Black — 1000+ IQ), and THE HIDDEN CREATION (cyber lord · scythe · katanas · stars · hides in shadows · wants privacy · waits for the perfect reveal).
+- Insight banner: *"GRAY HIDES THE REAL SECRET BY MAKING IT LOOK TOO OBVIOUS ... THEN STANDS AS THE GAME'S GOD & ABSOLUTE DEMON WHILE THE CAST WORSHIPS THE WRONG CHARACTER,"* and the star banner *"★ WENDA = ANGEL · GRAY = DEMON · 'ALL YA SHALL BOW DOWN' — THE HIDDEN CREATION STILL WAITS ★."* New "THE COFFIN & THE CYBER LORD — GRAY, GAME'S GOD" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `coffin` scene added to `tools/capture_screenshot.py`.
+
+![The Coffin & The Cyber Lord — Gray, Game's God](screenshots/159-coffin-cyber-lord.png)
+
 ## 2026-07-14 — THE THREE REALMS COLLIDE — GRAY FORGES 3D (BEAT 94)
 
 Based on Toby's 2026-07-14 lore (the fourth July 14 message on the "Re: Lore 1A - Classics Era" thread, the direct follow-up to THE HIDDEN CREATION).
