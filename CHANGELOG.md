@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-16 — PRO PERO 002 — THE NEW MEANING OF NORMAL (BEAT 97)
+
+Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread, the direct follow-up to the Niki swarm — a same-day, later message).
+
+Toby's words: *"Pro Pero 002 (or The New Meaning of Normal as Pro calls it) now arrived. Pro 002 is Pro's new form, his highest form and now only other form other than his basic/vanilla form. He can KO anything with that form, it has +LV, he turns back into Pro 001 after. Pro 002 can destroy anything, and then he turns back to 001 to rest."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 97 lore panel, PRO PERO 002 — THE NEW MEANING OF NORMAL, added to THE UNDEFINED LOOP climb (cyc `[1852,1874]`, cycle length extended `1852 → 1874`). `lvSeg` now returns BEAT 97 for `c < 1874.0`.
+- **Warm gold cowboy palette** — a warm gold void with drifting gold dust and a white-gold burst aura. Header emblem: **Pro 001** (calm amber cowboy with hat) and **Pro 002** (bright white-gold cowboy with radiating burst rays) linked by a **⇄** cycle glyph.
+- **THE TWO FORMS panel** (left) — **PRO 001** (*"BASIC / VANILLA / RESTING"*) ⇄ **PRO 002** (*"HIGHEST FORM · +LV,"* drawn with a ring of burst rays), under the title **"'THE NEW MEANING OF NORMAL.'"**
+- **THE BURST panel** (right) — a radiating **KO** starburst, **"KO ANYTHING · DESTROY ANYTHING · +LV,"** *"A SHORT, OVERWHELMING BURST FORM,"* and the bar **"002 → TURNS BACK TO 001 TO REST."**
+- **3-part footer** — THE FORM RULE (Pro now has only two forms: 001 = basic/vanilla/resting, 002 = highest, no other forms), PRO 002'S POWER (KO anything · destroy anything · +LV · highest combat state · a burst then rest), and THE NEW NORMAL (not a rage or final-boss form; what "normal" became after it all; end a fight → return to 001).
+- Insight banner: *"PRO 002 IS PRO'S HIGHEST FORM & ONLY OTHER FORM BESIDES VANILLA 001 — A +LV BURST THAT CAN KO OR DESTROY ANYTHING, THEN RESTS BACK TO 001,"* and the star banner *"★ 'THE NEW MEANING OF NORMAL' — PRO 002 ENDS A FIGHT IN ONE BURST, THEN TURNS BACK TO 001 TO REST ★."* New rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `pro002` scene added to `tools/capture_screenshot.py`.
+
+![Pro Pero 002 — The New Meaning of Normal](screenshots/101-pro-002-new-normal.png)
+
 ## 2026-07-16 — ARCSIS VS PERO — ACT IS A CHOICE, THEN THE NIKI SWARM (BEAT 96)
 
 Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread — seven same-day messages forming one continuous arc, the direct follow-up to THE COFFIN & THE CYBER LORD).
