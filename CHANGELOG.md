@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-16 — ARCSIS VS PERO — ACT IS A CHOICE, THEN THE NIKI SWARM (BEAT 96)
+
+Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread — seven same-day messages forming one continuous arc, the direct follow-up to THE COFFIN & THE CYBER LORD).
+
+Toby's words (the choice): *"Arcsis realises if the button's weren't there, the meaning and idea were still there, with no buttons, Arcsis was able to Act and fix the inqueries and hat, and Arcsis also uses Mercy ... Arcsis says 'Dad, NO!', Arcsis grabs on to Pero's hand, and pulls him back up ... Pero returns to Classics to be ToddLLM Pro."* And (the swarm): *"Classics and Neto combined into a Niki (a cat game + virus that can consume files [EndlessAnimations as a female]) Nikis spread everywhere ... That is why EndlessAnimations has an 's' at the end, he spawns more and more ... Pro has 0 HP and is still surviving since he has his soul, Simon 404 gotten stronger and upgrades his HP to 404,404,404,404."* (The pasted ChatGPT recaps are treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 96 lore panel, ARCSIS VS PERO — ACT IS A CHOICE, THEN THE NIKI SWARM, added to THE UNDEFINED LOOP climb (cyc `[1830,1852]`, cycle length extended `1830 → 1852`). `lvSeg` now returns BEAT 96 for `c < 1852.0`.
+- **Warm amber shadow-realm palette** — a warm amber void over Gray's Shadow Realm with drifting embers and an amber aura, plus an ACT-orange / MERCY-green accent. Header emblem: **Arcsis** (amber) on a cracked bridge reaching down to pull **Pero** (shadow, a mercy-green flicker inside him) back from the edge, under an orange **ACT** glyph.
+- **THE MILLION-YEAR JOURNEY panel** (left) — **Lica's door** (violet) → a dotted path labeled **"MOM · FRIZZ · A MILLION YEARS"** → **Pero** as a shadow with a **"?"** and Gray's green-eye ring (*"PERO FORGETS"*), then **"MR. BLACK APPEARS → CORRUPTION,"** **"ARCSIS MINES LV → 2500 (PLAYER MAX)"** and Pero's line *"WHO EVEN ARE YOU, SWORD-FIGHTING CHILD?"*
+- **ACT IS A CHOICE panel** (right) — the three buttons **FIGHT** and **MERCY** drawn broken (red slash) while **ACT** glows with arrows pointing at it from both sides, over *"BUTTONS BREAK — THE MEANING REMAINS,"* *"ARCSIS ACTS & MERCIES WITH NO MENU → HEALS PERO,"* the **"'DAD, NO!' → PULLS PERO UP"** bar, and *"PERO RETURNS TO CLASSICS AS TODDLLM PRO."*
+- **3-part footer** — THE CHESS-BOARD BOSS (Pero, EA inside, Infinity LV, "Use ACT — your only hope," the player abilities Nine-Tailed-Fox · Dash · Lifesteal), ACT IS A CHOICE (the button is gone, the idea stays; Arcsis chooses ACT + Mercy; family over the genocide route), and THE NIKI SWARM (Classics + Neto = Niki file-virus; EA spawns eggs → the "s" · DNA clones; Pero 0 HP on soul · Simon 404 = 404,404,404,404).
+- Insight banner: *"ARCSIS WALKS A MILLION YEARS FOR HIS FATHER & LEARNS THE REAL ACT WAS NEVER A BUTTON — A CHOICE — THEN CLASSICS + NETO BECOME THE NIKI FILE-VIRUS SWARM,"* and the star banner *"★ 'DAD, NO!' — PERO RETURNS TO CLASSICS AS TODDLLM PRO · THE NIKIS SPREAD & PERO SURVIVES ON HIS SOUL ★."* New "ARCSIS VS PERO — ACT IS A CHOICE, THEN THE NIKI SWARM" rung added to the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `arcsis` scene added to `tools/capture_screenshot.py`.
+
+![Arcsis vs Pero — ACT Is a Choice, Then the Niki Swarm](screenshots/100-arcsis-act-niki.png)
+
 ## 2026-07-14 — THE COFFIN & THE CYBER LORD — GRAY, GAME'S GOD (BEAT 95)
 
 Based on Toby's 2026-07-14 lore (the "STILL Classics Era" thread, the direct follow-up to THE THREE REALMS COLLIDE). Two same-day messages combined into one beat.
