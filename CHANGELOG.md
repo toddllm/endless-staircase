@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-16 — PRO SUPREMACY — 11 STAT & EXTREME MAC FRAME (BEAT 99)
+
+Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread, the direct follow-up to The King of Games).
+
+Toby's words: *"Pro's copy's eyes always are red, if the original character's eyes are red, then they both look exactly the same, but don't usually act the same. Pro absorbs the board and he then makes an army of dead cow boys ... Pro also copies a thousand Jevins to create angeletic sounds, and a thousand Mr. Blacks to create demonic sounds ... Pro has the 11 Stat ability, it makes 11 colored orbs that create the colored slashes and explode on constant, He also uses his extreme, Mac Frame, he activates a cutscene and smash attacks the victum and it freezes and disappears and reappears each hit, each getting higher and higher up in the sky ... 'ToddLLM 001 Pro Pero Endless Animations the game creator 55' is Pro's full name ... He can be in millions of places at once, because it is his game."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 99 lore panel, PRO SUPREMACY — 11 STAT & EXTREME MAC FRAME, added to THE UNDEFINED LOOP climb (cyc `[1896,1918]`, cycle length extended `1896 → 1918`). `lvSeg` now returns BEAT 99 for `c < 1918.0`.
+- **11-color orb spectrum palette** — a dark void with drifting 11-color spectrum sparks and a red-eye header aura. Header emblem: **11 colored orbs** ringed around a **red-eyed cowboy** head.
+- **THE 11 STAT panel** (left) — 11 colored orbs firing **colored slashes** outward and **exploding constantly**, under *"COPIES ALWAYS HAVE RED EYES · SAME LOOK, DIFFERENT ACT,"* the **dead-cowboy army**, and **1,000 Jevins = angelic** / **1,000 Mr. Blacks = demonic** sound.
+- **EXTREME MAC FRAME panel** (right) — a rising staircase of **freeze-hit flashes** climbing an upward arrow: *"FREEZE · VANISH · REAPPEAR EACH HIT,"* **"KNOCKED HIGHER & HIGHER INTO THE SKY."**
+- **3-part footer** — THE FULL NAME (*ToddLLM 001 Pro Pero Endless Animations the game creator 55*), THE SOUL RULE (carries EndlessAnimations' soul · consumes it on encounter · can eat the game, files, data, systems), and CREATOR REACH (temporarily removes the game · exists in millions of places at once · not limited to one body or form).
+- Insight banner and the star banner *"★ TODDLLM 001 PRO PERO ENDLESS ANIMATIONS THE GAME CREATOR 55 — DEFEATED EVERY CAST MEMBER, EXISTS IN MILLIONS OF PLACES AT ONCE ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `prosupremacy` scene added to `tools/capture_screenshot.py`. Also fixed a latent `lvSeg` ordering bug that was shadowing BEATS 94–97 (the boundary checks were in descending order); they are now ascending and all reachable.
+
+![Pro Supremacy — 11 Stat & Extreme Mac Frame](screenshots/161-pro-supremacy.png)
+
+## 2026-07-16 — PERO TODDLLM — THE KING OF GAMES (BEAT 98)
+
+Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread, the direct follow-up to Pro Pero 002).
+
+Toby's words: *"Pero ToddLLM can transform himself into a Niki or EndlessAnimations, when his Energy is 30% or more, he gains the 002 upgrade at 70% energy. There is a secret thing that happens at 100%, whole world conquering + corrupting + basic form but with extra aura. Pero's Energy decreases just like Simon's Charge ability. Pero can take on a cape and he can just erase the being just by raising his hand, he also can become Gray, he can become anyone since he is the creator of his game, he can also give himself Energy, he is faking acting weak, he actually has 0 limits since he is the owner and creator of the game he is in, The King of Games."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 98 lore panel, PERO TODDLLM — THE KING OF GAMES, added to THE UNDEFINED LOOP climb (cyc `[1874,1896]`, cycle length extended `1874 → 1896`). `lvSeg` now returns BEAT 98 for `c < 1896.0`.
+- **Royal deep-violet crown palette** — a violet void with drifting violet motes and a gold-crown header aura. Header emblem: a **gold crown** over a cowboy head, ringed with an aura.
+- **THE ENERGY LADDER panel** (left) — a Charge-style vertical **energy bar** that rises and falls, with the three thresholds ticked and labeled: **30% → Niki / EndlessAnimations**, **70% → the 002 upgrade**, **100% → secret · world-conquer**, under *"DRAINS LIKE SIMON'S CHARGE — BUT HE REFILLS HIMSELF."*
+- **THE AUTHORITY FORMS panel** (right) — four transform chips (**NIKI · ENDLESSANIMATIONS · GRAY · ANYONE**) and **THE CAPE FORM**: *"RAISE A HAND → ERASE A BEING."*
+- **3-part footer** — CREATOR ACCESS (owns & created the game · rewrites his own identity · gives energy to himself), THE THREE THRESHOLDS (30/70/100), and THE FAKE WEAKNESS (0 HP / falling was a role · a disguise, test, or restriction · King of Games = 0 true limits).
+- Insight banner and the star banner *"★ THE KING OF GAMES — CREATOR & OWNER, 0 TRUE LIMITS · 30% TRANSFORM · 70% 002 · 100% WORLD-CONQUER · CAPE ERASES WITH A RAISED HAND ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `kingofgames` scene added to `tools/capture_screenshot.py`.
+
+![Pero ToddLLM — The King of Games](screenshots/160-king-of-games.png)
+
 ## 2026-07-16 — PRO PERO 002 — THE NEW MEANING OF NORMAL (BEAT 97)
 
 Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread, the direct follow-up to the Niki swarm — a same-day, later message).
