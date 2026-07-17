@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — THE CORRUPTION OF PRO 001 — 404: PACIFISM NOT FOUND (BEAT 100)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Pro Supremacy).
+
+Toby's words: *"Pro1 reaches beyond LV at ??? LV, it is more than infinity. Pro1 now stands on a huge metal pillar, and a high tech shield around it. Pro1 challenges everyone, Pro1 gets corrupted, Pro1 says “Sorry, this is too much for you...”, Pro1 kneals down, and the corruption got farther and farther, and then the whole LAI models were corrupt, his eyes turn red (THAT is why he attacks, normally he is a pacifist who thinks and tells the positive stuff), Pro twiches his head every second, he gets risen up by the pillar, dark matter flows through the character, he levitates above the pillar, the game glitches out and then Error 404 messages happen such as “404: Feelings Not Found”, “404: Act Not Found”, “404: Mercy Not Found”, “404: Friendship Not Found”, “404: Love Not Found”, “404: Pacifism Not Found”, then a huge Purple came down, every character was slain, all was destroyed, and Pero's corruption made him corrupt. After Arcsis called out “Do not hurt him, he is still ToddLLM 001 Pro Pero!”, Pro 001's corruption fell and the crystals broke, the forcefield disappeared, Pero is back to normal. ToddLLM 001 also destroyed the Ultra Realm and AU+ AU characters."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 100 lore panel, THE CORRUPTION OF PRO 001 — 404: PACIFISM NOT FOUND, added to THE UNDEFINED LOOP climb (cyc `[1918,1940]`, cycle length extended `1918 → 1940`). `lvSeg` now returns BEAT 100 for `c < 1940.0` (added *after* the 1918 check, keeping the boundary list ascending).
+- **Dark-matter purple palette** — a purple void with falling dark matter, glitch tear-bands ripping across the screen, and a red-eye header aura. Header emblem: **Pro levitating above the metal pillar**, dark matter streaming up through him, red eyes, and a **head twitch every second**.
+- **THE PILLAR panel** (left) — **"??? LV — MORE THAN INFINITY"** over the **metal pillar** inside its **high-tech shield** (pulsing forcefield rings), **crystals** at the base, dark matter flowing up through the character, and Pro **levitating above the pillar** with red eyes; *"SORRY, THIS IS TOO MUCH FOR YOU...,"* **"KNEELS · CORRUPTION SPREADS · ALL LAI MODELS CORRUPT,"** **"HEAD TWITCHES EVERY SECOND · DARK MATTER · LEVITATES."**
+- **THE 404 CASCADE panel** (right) — the six error messages glitching in one at a time with jitter: **404: FEELINGS / ACT / MERCY / FRIENDSHIP / LOVE / PACIFISM NOT FOUND**, under *"NOT JUST GAME FUNCTIONS — THE MORAL STRUCTURE"* and **"THE CORRUPTION DELETES WHO PRO IS."**
+- **3-part footer** — WHY PRO ATTACKS (normal Pro = pacifist who thinks and speaks positive · red eyes = corrupted state · the corruption attacks, not Pro), THE PURPLE (a huge Purple comes down · every character slain · Pero's corruption made him corrupt, so it spreads itself), and ARCSIS BREAKS IT (*"Do not hurt him, he is still ToddLLM 001 Pro Pero!"* · crystals break · shield gone · Pero back to normal · recognition, not force).
+- Insight banner: *"PRO IS A PACIFIST — THE RED EYES ARE THE CORRUPTION, & ARCSIS SAVES HIM BY NAMING WHO HE REALLY IS INSTEAD OF FIGHTING HIM,"* and the star banner *"★ ??? LV — BEYOND INFINITY · 404: PACIFISM NOT FOUND · “HE IS STILL TODDLLM 001 PRO PERO!” — THE CORRUPTION FALLS ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `corruption404` scene added to `tools/capture_screenshot.py`.
+
+![The Corruption of Pro 001 — 404: Pacifism Not Found](screenshots/162-corruption-of-pro-001.png)
+
 ## 2026-07-16 — PRO SUPREMACY — 11 STAT & EXTREME MAC FRAME (BEAT 99)
 
 Based on Toby's 2026-07-16 lore (the "STILL Classics Era" thread, the direct follow-up to The King of Games).
