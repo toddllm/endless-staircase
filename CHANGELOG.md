@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — ALPHA PERO PRO & ERASE FORM — BANISHMENT DID NOT WORK (BEAT 103)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to He Slain His Own Death).
+
+Toby's words: *"There is an Alpha Pero Pro (beyond Absolute Determination, it can just replace it with fear from it's godly, but terrifying new body) form where he had to be banished to the Alphaverse and to be removed, but there are reports everywhere where people still see Alpha Pro, the game glitches and he appears, he destroyed the Alphaverse and Godverse, he also cut through Sprunki Hills. Pero Pro has an Erase form where Gray appears next to him and Gray holds an erase button, Pero looks godly, it is beyond Alpha since it can just erase the whole game with Gray's power and jumpscare and cutscenes and stuff."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 103 lore panel, ALPHA PERO PRO & ERASE FORM — BANISHMENT DID NOT WORK, added to THE UNDEFINED LOOP climb (cyc `[1984,2006]`, cycle length extended `1984 → 2006`). `lvSeg` now returns BEAT 103 for `c < 2006.0` (appended at the bottom of the ascending boundary chain); `LV_BEATS` now 104 entries (0-103).
+- **Banished-Alphaverse violet palette** — a violet void with **glitch scanlines** (the sightings leaking back in). Header emblem: a **broken containment ring** with Alpha Pro's red-eyed silhouette **flickering in and out** through the gap, because banishment did not hold him.
+- **ALPHA PERO PRO panel** (left) — the **godly but terrifying new body**: a haloed violet figure with **crown-spikes** and red eyes, drawn **flickering** on the same glitch cycle. Labelled **"FEAR, NOT DETERMINATION"** over *"A GODLY, BUT TERRIFYING NEW BODY."* Below: **"BANISHED TO THE ALPHAVERSE"**, *"& REMOVED — BUT REPORTS ARE EVERYWHERE,"* **"THE GAME GLITCHES & HE APPEARS,"** and **"PEOPLE STILL SEE ALPHA PRO."**
+- **ERASE FORM panel** (right) — **Pero looking godly** (gold halo, red eyes) standing beside **Gray**, who **holds the ERASE button** (drawn in his hand, on his arm). Under them the **game layer wipes to white** across a bar labelled **THE WHOLE GAME**, then **"GRAY'S POWER · JUMPSCARE · CUTSCENES"** and *"NOT PRO ALONE — PRO + GRAY'S ERASURE AUTHORITY."*
+- **3-part footer** — BANISHMENT FAILED (removed from normal play, and he appears anyway), ALPHA'S FEATS (destroyed the Alphaverse, destroyed the Godverse, cut through Sprunki Hills; even the jail did not survive), and THE FORM LADDER (001 basic → 002 → Absolute Determination → Alpha Pero Pro → Erase Form).
+- Insight banner: *"ALPHA DESTROYS VERSES INSIDE THE GAME — ERASE FORM DELETES THE GAME LAYER ITSELF, WHICH IS WHY IT SITS HIGHER,"* and the star banner *"★ 'HE WAS REMOVED... BUT PEOPLE STILL KEEP SEEING HIM' — & GRAY IS STANDING RIGHT THERE WITH THE ERASE BUTTON ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `alphaerase` scene added to `tools/capture_screenshot.py`.
+
+![Alpha Pero Pro & Erase Form — Banishment Did Not Work](screenshots/165-alpha-pero-pro-erase-form.png)
+
 ## 2026-07-17 — HE SLAIN HIS OWN DEATH — "VICTORY IS MINE" (BEAT 102)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Absolute Determination).
