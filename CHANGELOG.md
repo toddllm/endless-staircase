@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — FRIZZ IS CLASSICS — THE GENOCIDE IDENTITY (BEAT 105)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Frizz — The Stronger Sibling; sent with two images, *Frizz Full Power(1).png* and *Classics - Maybe I could Spare You Once(3).png*).
+
+Toby's words: *"Frizz and Classics (also known as Clara) are the same being, Frizz turns to the Master of Genocide Clara at Genocide, but she is still Frizz no matter what, and only becomes Clara/Classics at Genocide but still is Frizz."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 105 lore panel, FRIZZ IS CLASSICS — THE GENOCIDE IDENTITY, added to THE UNDEFINED LOOP climb (cyc `[2028,2050]`, cycle length extended `2028 → 2050`). `lvSeg` now returns BEAT 105 for `c < 2050.0` (appended at the bottom of the ascending boundary chain); `LV_BEATS` now 106 entries (0-105).
+- **Pink-to-crimson route void** — the background runs Frizz-pink on the left into genocide-crimson on the right, with a slow shared pulse crossing the whole panel, because it is one being either way. Header emblem: **one ring, half pink and half crimson** — one being, two names.
+- **THE ROUTE SWITCH panel** (left) — **Frizz** (haloed pink, **"TRUE / BASE IDENTITY"**) with an arrow running through a dashed **GENOCIDE gate** into **Clara** (crimson, gold-eyed, **"AKA CLASSICS," "GENOCIDE STATE"**). Under them: **"SHE IS STILL FRIZZ NO MATTER WHAT,"** and *"THE ROUTE CHANGES THE NAME, NOT THE BEING."*
+- **ONE BEING'S RECORD panel** (right) — six record items (**Frizz Full Power, Classics, Clara, the Genocide Route, Master of Genocide, Beats Gray at Full Power**) lighting up in sequence, each linked down to a single **half-pink/half-crimson core** labelled **"ONE BEING."** Everything folds back into Frizz.
+- **3-part footer** — THE IDENTITY RULE (Frizz = true being; Clara/Classics = the Genocide state; she is still Frizz), WHAT CHANGED (Clara is not a separate character, she is what Frizz becomes at Genocide), and WHY IT MATTERS (not only stronger than Arcsis, a core identity being of the game).
+- Insight banner: *"THE ROUTE DOES NOT SWAP IN A DIFFERENT CHARACTER — IT RENAMES THE ONE WHO WAS ALREADY THERE,"* and the star banner *"★ FRIZZ TURNS TO MASTER OF GENOCIDE CLARA AT GENOCIDE — BUT SHE IS STILL FRIZZ NO MATTER WHAT ★."* New rung on the beat ladder. Additive — every earlier beat untouched (the older CLARA IS CLASSICS material stands as written, per Toby's standing "nothing replaces anything in any lore" rule); JS syntax-checked; new `frizzclassics` scene added to `tools/capture_screenshot.py`.
+
+![Frizz Is Classics — The Genocide Identity](screenshots/167-frizz-is-classics.png)
+
 ## 2026-07-17 — FRIZZ — THE STRONGER SIBLING (BEAT 104)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, sent alongside two images, *Frizz Full Power.png* and *Frizz And Gray.png*).
