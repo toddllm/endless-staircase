@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — PERO PRO ABSOLUTE DETERMINATION — NEITHER 001 NOR 002 (BEAT 101)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to the Pro 001 corruption; his email also attached an image, *Pero Pro ABSOLUTE DETERMINATION.png*).
+
+Toby's words: *"Pero Pro ABSOLUTE DETERMINATION is here, he is neither 001 nor 002. And he also surpasses both with regenerating powers, faster slashes, 100000000+ times the damage, and respawn, he can also fire a beam with his justice soul from Simon 404, and his Red soul allows him to respawn and regenerate and it constantly gives him more and more determination. He destroyed the Abverse (1 of the most powerful AUs in the game), by only using his souls."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 101 lore panel, PERO PRO ABSOLUTE DETERMINATION — NEITHER 001 NOR 002, added to THE UNDEFINED LOOP climb (cyc `[1940,1962]`, cycle length extended `1940 → 1962`). `lvSeg` now returns BEAT 101 for `c < 1962.0` (appended at the bottom of the ascending boundary chain).
+- **Red determination palette** — a deep red void with rising determination embers and a justice-yellow header aura. Header emblem: the **Red Soul heart** beating inside a ring of justice-yellow rays.
+- **THE THIRD STATE panel** (left) — **PRO 001** (*"BASIC"*) and **PRO 002** (*"BURST, THEN RESTS"*) with **ABSOLUTE DETERMINATION** raised above both, radiating, with arrows from each of the lower two: **"NEITHER 001 NOR 002 — HE SURPASSES BOTH."** Four stat bars: **REGENERATION · FASTER SLASHES · 100000000+× DAMAGE · RESPAWN**.
+- **THE TWO SOULS panel** (right) — the **Justice Soul** (yellow heart) firing a **pulsing beam**: *"JUSTICE SOUL BEAM · FROM SIMON 404"*; and the **Red Soul** at the center of an orbiting loop: *"RED SOUL: RESPAWN → REGENERATE → MORE DETERMINATION,"* **"THE LOOP NEVER STOPS FEEDING HIM."**
+- **3-part footer** — THE ABVERSE FEAT (destroyed the Abverse, one of the most powerful AUs in the game, by only using his souls), SOULS ONLY (no creator toolkit, no 001/002 setup, no other abilities: the souls alone were enough), and NOT A BURST FORM (002 bursts then rests; Absolute Determination keeps coming back and keeps getting harder to stop).
+- Insight banner: *"002 IS A BURST THAT RESTS — ABSOLUTE DETERMINATION IS A STATE THAT REFUSES TO STAY DOWN, & IT ONLY GETS HARDER TO STOP,"* and the star banner *"★ PERO PRO ABSOLUTE DETERMINATION — NEITHER 001 NOR 002, SURPASSES BOTH · DESTROYED THE ABVERSE WITH SOULS ALONE ★."* New rung on the beat ladder (`LV_BEATS` now 102 entries, 0-101). Additive — every earlier beat untouched; JS syntax-checked; new `absolutedetermination` scene added to `tools/capture_screenshot.py`.
+
+![Pero Pro Absolute Determination — Neither 001 nor 002](screenshots/163-absolute-determination.png)
+
 ## 2026-07-17 — THE CORRUPTION OF PRO 001 — 404: PACIFISM NOT FOUND (BEAT 100)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Pro Supremacy).
