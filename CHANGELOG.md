@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — ALPHATALE PERO & THE RESET (BEAT 106)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Frizz Is Classics — the big "Genocide → Alphatale Pero → Reset → Gray Laboratory" arc).
+
+Toby's words: *"Pero destroys the Mercy, Act, Item, and Fight buttons, he also takes everyone elses souls and combines them into 1 rainbow soul, Pero battles with the rainbow soul and becomes... PERO PRO: ALPHATALE MODE. Alphatic Pero (beyond Alpha Pero, beyond Dust+, beyond 404 ... he becomes it when BOTH Arcsis and Frizz are genocide) ... Pero turns back to base ToddLLM 001 and resets everything except himself and the timeline ... Simon 404 is now the fastest character, but is the weakest ... he can now just make music, his lightning makes him protected ... he was banished to the Shadow Realm again ... Gray made a new forcefield for his high tech labatory."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 106 lore panel, ALPHATALE PERO & THE RESET, added to THE UNDEFINED LOOP climb (cyc `[2050,2072]`, cycle length extended `2050 → 2072`). `lvSeg` now returns BEAT 106 for `c < 2072.0` (appended at the top of the ascending boundary chain); `LV_BEATS` now 107 entries (0-106).
+- **Alphatale violet void** — a deep-violet void crossed by a slow six-color rainbow shimmer (the rainbow soul). Header emblem: **a rainbow-soul ring** drawn as six rotating colored arcs.
+- **THE RAINBOW SOUL panel** (left) — the four game controls **FIGHT / ACT / ITEM / MERCY** (in their real button colors) crack apart in sequence to *"IT'S YOU!!! — HE BREAKS THE BUTTONS,"* and colored soul-threads pull down from each broken button into **one rainbow soul** (six colored wedges), labelled **ONE RAINBOW SOUL**. Destroying the four buttons removes the game's actual controls, not just a character.
+- **THE FORM LADDER panel** (right) — **DUST+ → 404 → ALPHA PERO → ALPHATALE (ALPHATIC PERO)** climbing, the apex boxed with a rainbow underline, under **"TRIGGER: BOTH ARCSIS & FRIZZ MUST BE GENOCIDE."**
+- **3-part footer** — THE GENOCIDE ENDING (Frizz beats Gray; Arcsis puts it all back, takes Simon's yellow soul + Luigi Green's soul), THE RESET (Pero returns to base ToddLLM 001, resets all but himself & the timeline, fun & party again), and GRAY REBUILDS (a new forcefield lab built from Simon, his staff, the old puppet, and Parinus — all shrunk with Simon's staff).
+- Insight banner: *"SIMON 404 IS NOW THE FASTEST BUT THE WEAKEST — ONLY MUSIC & A PROTECTIVE LIGHTNING AURA, BANISHED TO THE SHADOW REALM ALONE,"* and the star banner *"★ HE DESTROYS THE MERCY, ACT, ITEM & FIGHT BUTTONS, FOLDS EVERY SOUL INTO ONE RAINBOW SOUL — PERO PRO: ALPHATALE MODE ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `alphatale` scene added to `tools/capture_screenshot.py`.
+
+![Alphatale Pero & The Reset](screenshots/168-alphatale-reset.png)
+
 ## 2026-07-17 — FRIZZ IS CLASSICS — THE GENOCIDE IDENTITY (BEAT 105)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Frizz — The Stronger Sibling; sent with two images, *Frizz Full Power(1).png* and *Classics - Maybe I could Spare You Once(3).png*).
