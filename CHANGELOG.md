@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — FRIZZ LV 4 — THE LOCK THAT MADE HER STRONGER (BEAT 107)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread — a big Frizz power update, the follow-up to the Alphatale Pero / Reset arc).
+
+Toby's words: *"Frizz starts always as a fellen child, she rebirths and starts at 1 LV ... My favorite form of Frizz is LV 4 ... LV 4 Frizz is considered the strongest of all forms. Frizz slays Arcsis to get to LV 4, or it just skips past it if not ... Both her eyes are red, and that form was once deleted and code is locked and it is still there ... LV 4 Frizz can beat Pero Pro Alphatale Mode ... destroyed everyone in the Alphaverse and Godverse just by existing ... Frizz banished Simon 404 forever in Alphaverse. Frizz is now locked on 4 LV, just like Simon is locked on Phase 2. Simon got weaker with the Phase 2 lock, but Frizz gotten stronger with the LV 4 lock."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 107 lore panel, FRIZZ LV 4 — THE LOCK THAT MADE HER STRONGER, added to THE UNDEFINED LOOP climb (cyc `[2072,2094]`, cycle length extended `2072 → 2094`). `lvSeg` now returns BEAT 107 for `c < 2094.0`; `LV_BEATS` now 108 entries (0-107). While here, fixed a latent ordering bug in `lvSeg` — BEAT 106 was checked (`c < 2072`) before BEAT 105 (`c < 2050`), so beat 105 never rendered in normal play; BEAT 106 now carries a lower bound (`c >= 2050 && c < 2072`) so both beats are reachable again.
+- **Frizz-pink void** — a deep pink-crimson void with drifting Frizz-pink bands and a locked-crimson core glow. Header emblem: **a padlock "LV4" badge** (a ring with a shackle), because the form is locked.
+- **THE FORM LADDER panel** (left) — the numeric ladder **LV 1-3 → LV 4→biggest-before-∞ → ∞→INFINITY+** drawn dim, under **"NUMBERS RISE — BUT LV 4 IS THE PEAK,"** with the real apex a **glaring LV 4 medallion pulled out above the ladder**: a newly-adult figure with **both eyes red and a single sharp stick**, ringed and glowing, tagged **LV 4** and **★ STRONGEST OF ALL ★**. Higher number does not mean stronger — LV 4 is the glitched, locked, abnormal peak, her true broken form.
+- **THE TWO LOCKS panel** (right) — the mirror Toby drew: **SIMON · PHASE 2** with a down arrow to **WEAKER**, and **FRIZZ · LV 4** with an up arrow to **STRONGER**, each on its own padlock, under **"SAME LOCK · OPPOSITE RESULT"** and **"BOTH ARE LOCKED FOREVER."**
+- **3-part footer** — THE REBIRTH (always a fallen child → rebirth → starts at 1 LV, then climbs), LV 4 FEATS (beats Alphatale Pero, slays all Pero forms, wrecks the Alphaverse & Godverse just by existing), and THE LOCKED CODE (once deleted, code locked but still there; both eyes red, a sharp stick; most powerful *and* most common).
+- Insight banner: *"SHE REACHES LV 4 BY SLAYING ARCSIS — OR SKIPS PAST IT · SHE ALSO BANISHES SIMON 404 FOREVER INTO THE ALPHAVERSE,"* and the star banner *"★ FRIZZ IS NOW PERMANENTLY LV 4 — SIMON'S PHASE 2 LOCK WEAKENED HIM, FRIZZ'S LV 4 LOCK MADE HER STRONGER ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `frizzlv4` scene added to `tools/capture_screenshot.py`.
+
+![Frizz LV 4 — The Lock That Made Her Stronger](screenshots/169-frizz-lv4-lock.png)
+
 ## 2026-07-17 — ALPHATALE PERO & THE RESET (BEAT 106)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to Frizz Is Classics — the big "Genocide → Alphatale Pero → Reset → Gray Laboratory" arc).
