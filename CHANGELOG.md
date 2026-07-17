@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — FRIZZ — THE STRONGER SIBLING (BEAT 104)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, sent alongside two images, *Frizz Full Power.png* and *Frizz And Gray.png*).
+
+Toby's words: *"Did you know that Frizz is actually stronger than Arcsis? Frizz also beats Gray when full power, these are the best images I could get. Base Frizz is usually with Gray. Frizz also has so many AUs. Arcsis also has so many AUs. Frizz and Arcsis are actually sibblings to each other. Frizz has more forms and is mensioned a little more than Arcsis."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 104 lore panel, FRIZZ — THE STRONGER SIBLING, added to THE UNDEFINED LOOP climb (cyc `[2006,2028]`, cycle length extended `2006 → 2028`). `lvSeg` now returns BEAT 104 for `c < 2028.0` (appended at the bottom of the ascending boundary chain); `LV_BEATS` now 105 entries (0-104).
+- **Frizz-pink AU void** — a magenta void with **drifting ring-motes in two tones**, pink and blue, for the many AUs both siblings have. Header emblem: **two linked rings**, the pink one larger than the blue, because Frizz sits above Arcsis.
+- **FRIZZ & ARCSIS — SIBLINGS panel** (left) — **Frizz drawn higher and larger** (haloed pink, labelled **"MORE FORMS"** / **"MORE MENTIONS"**) with **Arcsis lower and smaller**, carrying **his sword**, labelled **"THE JOURNEY."** A **dashed SIBLINGS link** runs between them. Below: **"FRIZZ IS STRONGER THAN ARCSIS,"** *"NOT 'ARCSIS'S FRIEND' — THE HIGHER SIBLING,"* and **"BOTH HAVE SO MANY AUs."**
+- **FRIZZ & GRAY panel** (right) — split into the two standings. **Top: BASE FRIZZ** stands right next to **Gray** (green-eye ring), *"USUALLY WITH GRAY — NOT AGAINST HIM."* **Bottom: FULL POWER FRIZZ** flares with rotating spokes while **Gray is knocked back and dimmed**, under **"SHE BEATS GRAY AT FULL POWER."**
+- **3-part footer** — THE GRAY SPLIT (base = often with Gray, full power = beats Gray; same being, two standings, depending on form/timeline), WHAT EACH OWNS (Arcsis = the journey, sword, LV mining, Pero; Frizz = the power system, more forms, more AUs), and THE SIBLING RULE (Frizz > Arcsis, mentioned a little more, both have so many AUs, she is the higher sibling).
+- Insight banner: *"ARCSIS OWNS THE STORY — FRIZZ OWNS THE POWER SYSTEM, & THE SIBLING LINK PUTS THEM BOTH ON ONE LADDER,"* and the star banner *"★ BASE FRIZZ STANDS WITH GRAY — FULL POWER FRIZZ BEATS HIM ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `frizz` scene added to `tools/capture_screenshot.py`.
+
+![Frizz — The Stronger Sibling](screenshots/166-frizz-stronger-sibling.png)
+
 ## 2026-07-17 — ALPHA PERO PRO & ERASE FORM — BANISHMENT DID NOT WORK (BEAT 103)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread, the direct follow-up to He Slain His Own Death).
