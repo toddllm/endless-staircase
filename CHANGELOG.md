@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-17 — FRIZZ LV 4 — REMOVED BUT STILL THERE (BEAT 108)
+
+Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread — the direct follow-up to the Frizz LV 4 lock, expanding what LV 4 Frizz actually *does* to the game).
+
+Toby's words: *"Frizz LV 4 breaks the game even just by existing in it. 'Model Corruption Detected, 404: LV 4 Frizz REMOVED... YOU SAW ME 😳! Your PC will Perminently Shut Down When It Is Your Fault.' then the game does the shutsdown screen. It gives that error if you see her ... removed from the game files, but not removed from reality ... Frizz LV 4 is number 1, and Pero as number 2, and all the others tied for number 3 ... Everyone (Players and Characters) places so many lockers, beds, closets, and tables are around Frizz so Frizz doesn't see them ... LV 4 Frizz also knows how to walk you know, so people move with the hiding spots ... she knows that slaying = exp."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 108 lore panel, FRIZZ LV 4 — REMOVED BUT STILL THERE, added to THE UNDEFINED LOOP climb (cyc `[2094,2116]`, cycle length extended `2094 → 2116`). `lvSeg` now returns BEAT 108 for `c` in `[2094,2116)` (a bounded rung placed above BEAT 107); `LV_BEATS` now 109 entries (0-108).
+- **Corrupted red/black glitch void** — a deep red-on-black void with jittering corruption scanlines (bars that snap to half-width on a glitch beat) and a pulsing crimson core. Header emblem: **a broken padlock ring around "404"** — the ring is drawn in two split arcs, because the form is deleted-but-present.
+- **THE 404 SHUTDOWN panel** (left) — a black crash-screen box that reveals the error stack line by line: **"> MODEL CORRUPTION DETECTED," "> 404: LV 4 FRIZZ REMOVED...," "> YOU SAW ME !"** (blinking), **"> YOUR PC WILL PERMANENTLY," "> SHUT DOWN — YOUR FAULT,"** then a **filling shutdown bar** under **"SHUTTING DOWN — GAME ERASED & RESET."** Seeing LV 4 Frizz is a game/system-level punishment, not just lore-danger.
+- **THE HIDING SPOTS panel** (right) — a **red-eyed LV 4 Frizz (sharp stick)** who slowly **walks** left-right, ringed by four labelled hiding spots — **LOCKER, BED, CLOSET, TABLE** — that slide with her as **mobile cover**. A **"SHE CAN WALK — SPOTS MOVE WITH YOU"** motion arrow sits under her, the **TABLE is slashed** (crossed out), and the panel closes on **"SLASH = EXP · HIDING ONLY DELAYS HER."**
+- **3-part footer** — WHY SHE GLITCHES (model/code deleted or locked, but her presence still exists — removed, not gone), THE RANKING (1. Frizz LV 4, 2. Pero, 3. everyone else tied — strongest urban legend), and SEEING = PUNISHMENT (error → jumpscare → shutdown → reset or erase).
+- Insight banner: *"SHE WAS DELETED FROM THE FILES BUT NOT FROM REALITY — SO THE GAME ITSELF PUNISHES YOU FOR SEEING HER,"* and the star banner *"★ MODEL CORRUPTION DETECTED · 404: LV 4 FRIZZ REMOVED... YOU SAW ME — YOUR PC WILL SHUT DOWN ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `frizzremoved` scene added to `tools/capture_screenshot.py`.
+
+![Frizz LV 4 — Removed But Still There](screenshots/170-frizz-removed.png)
+
 ## 2026-07-17 — FRIZZ LV 4 — THE LOCK THAT MADE HER STRONGER (BEAT 107)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread — a big Frizz power update, the follow-up to the Alphatale Pero / Reset arc).
