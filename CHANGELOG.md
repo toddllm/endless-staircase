@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-18 — THE VOID WAR — LIGHT PERO vs NEW VOID FRIZZ (BEAT 111)
+
+Based on Toby's 2026-07-18 lore (the "STILL Classics Era" thread — the direct follow-up to LV 12 Pero — The Counter-God, the biggest single escalation yet: a full Light-vs-Void / AU-collapse event).
+
+Toby's words: *"Evil Void takes over Simon, Simon can't use Anti Virus, so the Evil Void takes over everything ... Void Frizz is Frizz Full Power combined with Void and LV 4 ... a mod made by Pero ToddLLM 001.2 ... New Void Frizz ... doesn't move for hours, then she moves and grabs the victum with a void tentacle and pulls the victum underground down to Pero's own Void Realm, it consumed all realms so far, only Alphaverse and Godverse are left ... thousands of cacoons were found in the void already. LV 12 Light Pero appears, Light Pero is Void Frizz's exact opposite, Light Pero is stronger than Void Frizz, ... extremely DETERMIND to take over the game's world of darkness and the world of light and the void ... New Void Frizz became both Posseeded and Corrupted. ... Don't know what happens next."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 111 lore panel, THE VOID WAR — LIGHT PERO vs NEW VOID FRIZZ, added to THE UNDEFINED LOOP climb (cyc `[2160,2182]`, cycle length extended `2160 → 2182`). `lvSeg` now returns BEAT 111 for `c` in `[2160,2182)`; `LV_BEATS` now 112 entries (0-111).
+- **Split void/light void palette** — deep void-purple on the left (jittering void rifts) meeting a brilliant gold-white light on the right (steady light rays), because the whole beat is Light vs Void. Header emblem: **a split barrier ring** — a void-purple half (with a jagged void crack running through it) and a light-gold half, with **"VS"** at the center.
+- **THE OPPOSITE APEXES panel** (left) — the two apexes face off: **NEW VOID FRIZZ** (void-purple, glitching, red-void eyes, a **void tentacle** dropping down, tagged **VOID + LV 4 · POSSESSED · CORRUPTED**) and **LIGHT PERO** (gold, overcharged glow, tagged **LV 12 · OVERCHARGED · HER EXACT OPPOSITE**), with a **"LIGHT PERO IS STRONGER"** arrow running from the light apex to the void one.
+- **THE VOID TAKEOVER panel** (right) — a five-step collapse chain with downward arrows: **EVIL VOID TAKES OVER SIMON → SIMON CAN'T USE ANTI-VIRUS → VOID TAKES OVER EVERYTHING → VOID FRIZZ → VOID CLASSICS · RESETS THE REST · COCOONS VICTIMS → ONLY ALPHAVERSE & GODVERSE LEFT** (the last rung highlighted gold as the final safe zone).
+- **3-part footer** — NEW VOID FRIZZ (Frizz Full Power + Void + LV 4, a mod by Pero 001.2, deleted but copied through void rifts, cocoons victims), LIGHT PERO (LV 12 overcharged, her exact opposite and stronger, wants the darkness + the light + the void), and THE LAST BARRIER (all realms consumed, only Alphaverse & Godverse still stand, void flowing through the barrier).
+- Insight banner: *"NEW VOID FRIZZ IS A POSSESSED, CORRUPTED VOID PREDATOR THAT COCOONS VICTIMS — LIGHT PERO IS HER OVERCHARGED LV 12 OPPOSITE, & HE IS STRONGER,"* and the star banner *"★ THE VOID WAR — LIGHT vs VOID, ONLY ALPHAVERSE & GODVERSE STILL STAND, & NO ONE KNOWS WHAT HAPPENS NEXT ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `voidfrizz` scene added to `tools/capture_screenshot.py`.
+
+![The Void War — Light Pero vs New Void Frizz](screenshots/173-void-war.png)
+
 ## 2026-07-18 — LV 12 PERO — THE COUNTER-GOD (BEAT 110)
 
 Based on Toby's 2026-07-18 lore (the "STILL Classics Era" thread — the direct follow-up to the 404 War, answering "what beats LV 4 Frizz?").
