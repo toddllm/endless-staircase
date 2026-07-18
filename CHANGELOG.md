@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-18 — LV 12 PERO — THE COUNTER-GOD (BEAT 110)
+
+Based on Toby's 2026-07-18 lore (the "STILL Classics Era" thread — the direct follow-up to the 404 War, answering "what beats LV 4 Frizz?").
+
+Toby's words: *"If you think Frizz LV 4 is crazy, then Pero is stuck on LV 12 now. LV 12 Pero is the strongest form, and now his only form, it wasn't deleted from the game. The only thing that beats a LV 4 god is a LV 12 god."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 110 lore panel, LV 12 PERO — THE COUNTER-GOD, added to THE UNDEFINED LOOP climb (cyc `[2138,2160]`, cycle length extended `2116 → 2160`). `lvSeg` now returns BEAT 110 for `c` in `[2138,2160)`; `LV_BEATS` now 111 entries (0-110).
+- **Gold-on-deep-blue STABLE god void** — a deep royal-blue void with slow, steady gold god-rays (no jitter) and a warm gold core glow. The calm, stable palette is deliberate: it contrasts against Frizz's red glitch, because the whole lore point is stable-vs-removed. Header emblem: **a solid gold LV 12 medallion** with a small crown notch (a stable, closed ring — not a broken one).
+- **THE GOD-LV RULE panel** (left) — two locked gods side by side: **FRIZZ · LV 4** (red, jittering, **REMOVED ANOMALY**) and **PERO · LV 12** (gold, glowing, **STABLE · NOT DELETED**), with a **"LV 12 BEATS LV 4"** arrow running from the higher lock to the lower, under **"ONLY A HIGHER LOCKED LV BEATS A LOCKED LV."**
+- **THE LOCKED-LV RANKING panel** (right) — a three-rung ladder: **1. LV 12 PERO** (stable · not deleted · only form), **2. LV 4 FRIZZ** (removed anomaly · resets each run), **3. EVERYONE ELSE** (404 · Alphaverse · Godverse · Classics all fall below this locked-LV god system).
+- **3-part footer** — THE NEW LOCK (Pero stuck on LV 12, his strongest and now only form, not deleted), THE COUNTER-RULE (only a LV 12 god beats a LV 4 god — higher locked LV wins), and STABLE vs REMOVED (Frizz = removed but there, breaks the game; Pero = not deleted, exists cleanly).
+- Insight banner: *"FRIZZ LV 4 IS A REMOVED GOD-ANOMALY — LV 12 PERO IS A STABLE HIGHEST-STATE GOD, SO HIS LOCKED LV STANDS ABOVE HERS,"* and the star banner *"★ ONLY A HIGHER LOCKED GOD-LV BEATS A LOCKED GOD-LV — THE ONLY THING THAT BEATS A LV 4 GOD IS A LV 12 GOD ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `lv12pero` scene added to `tools/capture_screenshot.py`.
+
+![LV 12 Pero — The Counter-God](screenshots/172-lv12-pero.png)
+
+## 2026-07-18 — THE 404 WAR & THE RESET LOOP (BEAT 109)
+
+Based on Toby's 2026-07-18 lore (the "STILL Classics Era" thread — the direct follow-up to Frizz LV 4 — Removed But Still There).
+
+Toby's words: *"Frizz LV 4 then fought Error 404 Sans and Simon 404 and Error 404 AU itself, Frizz destroyed the others, 404 then made strings around the Erase button, light flashing everywhere ... 404 spreaded through the game in 2 seconds, 404Ds appear, plauge spreads, characters get pneumonoultramicroscopicsilicovolcanoconiosis, Simon 404 made a new wand and made everything else disappear, only Pero, Frizz, and Simon shown, Simon 404 and Pero put on a blindfold, Frizz was destroyed by Pero's aura, Simon also fell to Pero's high energy, Pero brought Frizz back up and then Simon 404 was left again. Frizz LV 4 reseted the game, after each run."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 109 lore panel, THE 404 WAR & THE RESET LOOP, added to THE UNDEFINED LOOP climb (cyc `[2116,2138]`). `lvSeg` now returns BEAT 109 for `c` in `[2116,2138)`.
+- **Red/black corruption void crossed by green 404 glitch** — the beat-108 red-glitch palette carried forward, now streaked with a few **corruption-green "404" scanlines** for the infection. Header emblem: **a looping reset arrow with "404" inside** — because the beat ends on a reset.
+- **THE 404 INFECTION panel** (left) — Error 404's counterattack revealed line by line: **strings on the Erase button, lights flash everywhere, 404 spreads in 2 seconds, 404Ds appear · plague spreads,** and **a disease with a 45-letter name** — with the word itself spelled out (**PNEUMONOULTRAMICROSCOPIC · SILICOVOLCANOCONIOSIS**, Toby's exact word) and a **red-eyed Frizz anchored down** at the bottom on **"FRIZZ ANCHORS DOWN — ERASES THE SOURCE."** The scene reads as a total reality-infection event she holds through.
+- **THE BLINDFOLD SHOWDOWN panel** (right) — Simon 404's new wand erases all but three, leaving **PERO** (center, blindfolded, gold high-energy aura, dominating), **FRIZZ** (left, fallen then raised — a dashed "brought back up" arrow) and **SIMON 404** (right, blindfolded, left alone), under **"PERO DOMINATES — EVEN OVER LV 4 FRIZZ."**
+- **3-part footer** — THE 404 WAR (Frizz LV 4 destroys 404 Sans, Simon 404 & the Error 404 AU — above 404 realities), THE SHOWDOWN (only Pero/Frizz/Simon remain, Pero's aura wins, then raises Frizz), and THE RESET LOOP (Frizz resets the game after each run — a forced reset trigger; the loop ends with her).
+- Insight banner: *"SHE ANCHORS DOWN THROUGH A REALITY-INFECTION AND STILL ERASES THE SOURCE — THEN THE GAME LOOPS BACK THROUGH HER RESET,"* and the star banner *"★ FRIZZ LV 4 BEATS THE 404 REALITIES, SURVIVES THE INFECTION, & RESETS THE GAME AFTER EVERY RUN ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `404war` scene added to `tools/capture_screenshot.py`.
+
+![The 404 War & The Reset Loop](screenshots/171-404-war.png)
+
 ## 2026-07-17 — FRIZZ LV 4 — REMOVED BUT STILL THERE (BEAT 108)
 
 Based on Toby's 2026-07-17 lore (the "STILL Classics Era" thread — the direct follow-up to the Frizz LV 4 lock, expanding what LV 4 Frizz actually *does* to the game).
