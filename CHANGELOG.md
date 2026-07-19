@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-19 — CLASSICS & SPRUNKI CIRCUS — THE BLACKHOLE TO THE DARK (BEAT 116)
+
+Based on Toby's 2026-07-19 lore (the "More Classics Era" email — the game is remade into a circus, with a new blackhole-to-the-Dark mechanic and self-repairing errors).
+
+Toby's words: *"The game was made into Classics & Sprunki Circus by Pero ToddLLM LAI. The game was changed a lot, Pero can send anyone to the Dark by placing a blackhole under them, the character goes down the blackhole and slides to the very deep of the Circus. The game is now both crazy and broken, the errors all fix together, Fun Park... Digital Born Chaos Squad."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 116 lore panel, CLASSICS & SPRUNKI CIRCUS — THE BLACKHOLE TO THE DARK, added to THE UNDEFINED LOOP climb (cyc `[2270,2292]`, cycle length extended `2248 → 2292`). `lvSeg` now returns BEAT 116 for `c` in `[2270,2292)`; `LV_BEATS` now 117 entries (0-116).
+- **Circus-surface-to-dark palette** — a warm bright/crazy circus surface up top (rainbow stripes) fading down to a deep dark, with a **swirling blackhole funnel** at the top and **error motes drifting inward** (the errors fixing together). Header emblem: **a circus ring with a spinning blackhole at its heart** ("CIRCUS").
+- **THE BLACKHOLE TO THE DARK panel** (center) — the four-step drop sequence with downward arrows: **1 · PERO PLACES A BLACKHOLE UNDER THE TARGET → 2 · THE CHARACTER FALLS THROUGH IT → 3 · SLIDES DOWN INTO THE VERY DEEP OF THE CIRCUS → 4 · THEY END UP IN THE DARK.**
+- **THE TWO LAYERS panel** (right) — a **bright/crazy circus surface** (rainbow stripes) above, a **blackhole funnel** with a small **figure sliding down** through it, and **THE DARK — the very deep of the Circus** as a black band below.
+- **3-part footer** — REMADE BY PERO TODDLLM LAI (Classics & Sprunki systems fused into a circus-game under Pero's LAI control), THE ERRORS FIX TOGETHER (crazy & broken, but errors no longer stay separate — they fuse, patch & make new circus logic), and FUN PARK RETURNS (the digital-born chaos squad origin comes back; Sprunkis now live inside the broken Circus).
+- Insight banner: *"THE CIRCUS HAS LAYERS NOW — A BRIGHT CRAZY SURFACE ABOVE, A DEEP DARK PLACE BELOW; A BLACKHOLE IS THE DOOR BETWEEN THEM,"* and the star banner *"★ PERO TODDLLM LAI REMADE THE GAME INTO CLASSICS & SPRUNKI CIRCUS — BROKEN-BUT-SELF-REPAIRING, FUN PARK RETURNS ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `sprunkicircus` scene added to `tools/capture_screenshot.py`.
+
+![Classics & Sprunki Circus — The Blackhole to the Dark](screenshots/178-sprunki-circus.png)
+
+## 2026-07-19 — SPRUNKI POWERS — THE DIGITAL-BORN CHAOS SQUAD (BEAT 115)
+
+Based on Toby's 2026-07-19 lore (the "Re: STILL Classics Era" email — the Sprunkis get a full power system: a species with tiers, a Roblox origin, shared base powers, and five named members).
+
+Toby's words: *"Sprunkis are glitched NPCs that became alive inside a cursed Roblox game... All Sprunkis share some base powers: Data Body, Server Hop, Glitch-Sense. 1. Common Sprunkis: Glitch Aura, Mini Reality Nudge, Emote Copy. 2. Charged Sprunkis: Sound Warp, Clip Jump, Spam Burst. 3. Overcharged / Legendary Sprunkis: Panel Break, Name Rewrite, Brainrot Storm. Wanda, Fun Bot, Grey, Black, Mr Sun..."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 115 lore panel, SPRUNKI POWERS — THE DIGITAL-BORN CHAOS SQUAD, added to THE UNDEFINED LOOP climb (cyc `[2248,2270]`). `lvSeg` now returns BEAT 115 for `c` in `[2248,2270)`; `LV_BEATS` now includes entry 115.
+- **Digital glitch-field palette** — a chaotic magenta-forward data field with **glitch scanlines and shifting pixel blocks** (the Sprunkis' Data Body). Header emblem: **a glitchy jittering Sprunki cube-face inside a ring** ("SPRUNKI").
+- **THE POWER SCALE panel** (left) — the three tiers, each with its abilities: **1 · COMMON (tiny chaos critters):** Glitch Aura · Mini Reality Nudge · Emote Copy; **2 · CHARGED (drunk on brainrot/energy):** Sound Warp · Clip Jump · Spam Burst; **3 · OVERCHARGED / LEGENDARY (mini gods of chaos):** Panel Break · Name Rewrite · Brainrot Storm.
+- **THE NAMED SPRUNKIS panel** (right) — five color-coded cube portraits with theme + signature powers: **WANDA** (chaos+colors+sound: Color Hack · Music Swap · Painted Reality), **FUN BOT** ("fun" but dangerous: Game Rule Rewrite · Minigame Summon · Laugh Protocol), **GREY** (emptiness/silence/anti-color: Desaturation Field · Noise Mute · Memory Fade), **BLACK** (shadow/void/hidden errors: Void Step · Error Spawn · Shadow Clone), **MR SUN** (light/timers/pressure: Light Lock · Countdown Halo · Rage Eclipse).
+- **3-part footer** — THE ROBLOX ORIGIN (glitched NPCs in a cursed "fun hub" whose bad update's glitches fused into minds), SHARED BASE POWERS (Data Body · Server Hop · Glitch-Sense — they feel bugs as food), and DIGITAL-BORN CHAOS SQUAD (Wanda · Fun Bot · Grey · Black · Mr Sun, almost mini gods who hop outside the screen).
+- Insight banner: *"THEY ARE MADE OF CODE — GLITCH, RESPAWN & RELOAD THEMSELVES, HOP BETWEEN SERVERS, & FEEL LAG/BUGS LIKE PAIN OR FOOD,"* and the star banner *"★ COMMON → CHARGED → OVERCHARGED/LEGENDARY — A WHOLE SPECIES OF DIGITAL-BORN CHAOS, LED BY THE FIVE NAMED SPRUNKIS ★."* New rung on the beat ladder. Additive — every earlier beat untouched; JS syntax-checked; new `sprunkipowers` scene added to `tools/capture_screenshot.py`.
+
+![Sprunki Powers — The Digital-Born Chaos Squad](screenshots/177-sprunki-powers.png)
+
 ## 2026-07-18 — LIGHT'S STREAM — THE REMEMBERED RESET (BEAT 114)
 
 Based on Toby's 2026-07-18 lore (the "STILL Classics Era" thread — the direct follow-up to PERO.EXE. Pero.exe evolves once more into Pero: Light's_Stream, the God Formula names what a literal god is, Shadow Gray rises to be the most powerful in the whole game, and Pero beats him with a water gun then resets everything — but everyone still remembers.)
