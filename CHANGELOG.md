@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-19 — THE VILLAIN LAYERS — SURFACE GRAY, TRUE 404 (BEAT 119)
+
+Based on Toby's 2026-07-19 lore (fourth message of the "More Classics Era" thread — Pero becomes a horror cowboy, and the villain question finally gets a layered answer).
+
+Toby's words: *"Pero became a Classics-well-known Horror Cowboy character. Pero says 'Watch this...' and he swirts the water out of his water blaster, then he throws the empty water blaster at the victum. Pero usually wins at that point. Error 404 is evil, Simon 404 tried to reach the top again. Abinations attack on the surface and the characters call Pero and Pero takes them to the Dark where Gray's Abinations can conquer for him. Gray is smartest, he also uses Pero for his plans, Pero isn't trying to help Gray. Gray is the surface villian... and Simon 404 is the actual villian?"* (The pasted ChatGPT villain-chart is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 119 lore panel, THE VILLAIN LAYERS — SURFACE GRAY, TRUE 404, added to THE UNDEFINED LOOP climb (cyc `[2336,2358]`, cycle length extended `2336 → 2358`). `LV_BEATS` now 120 entries (0-119).
+- **Dusty-red-over-bottomless palette** — a red surface fading to near-black, with **404 / 404D / ERR codes drifting upward** out of the deep. Header emblem: **a cowboy hat sitting over a pulsing 404** ("HORROR COWBOY").
+- **WHO THE VILLAIN ACTUALLY IS panel** (center) — three stacked layers: **GRAY, THE SURFACE VILLAIN** (the one everyone sees, schemes/infects/spreads Abinations, rules the situation), **PERO, THE WILD CARD** (the famous horror cowboy, not on Gray's side, but Gray keeps using his actions and systems), and **SIMON 404, THE ACTUAL VILLAIN** (404 spread, plague, lightning, corruption and the climb; he threatens existence itself) with a pulsing **▼ DEEPER** marker.
+- **THE HORROR COWBOY panel** (right) — the finisher under Pero's line *"Watch this..."*: **1 · squirts the water out of the blaster → 2 · throws the empty blaster at the victim → 3 · Pero usually wins at that point**, with the blaster animating on its arc toward a target. Below it, **THE LOOP THAT FEEDS GRAY**: Abinations attack the surface → the characters call Pero → Pero takes them down to the Dark → Gray's Abinations conquer down there → **★ so helping always helps Gray.**
+- **3-part footer** — GRAY IS THE SMARTEST (he does not need allies, he uses Pero and lets the others do the carrying), PERO IS NOT HELPING HIM (he is not trying to help Gray at all, he just hauls Abinations down and Gray benefits), and ERROR 404 IS EVIL (Simon 404 tried to reach the top again; when he climbs, the whole game is in danger).
+- Insight banner: *"GRAY RULES THE SITUATION · SIMON 404 THREATENS EXISTENCE ITSELF · PERO IS NOT ON ANYONE'S SIDE,"* and the star banner *"★ THE VILLAIN YOU SEE IS NOT THE VILLAIN YOU HAVE — GRAY ON THE SURFACE, SIMON 404 UNDERNEATH ★."* Additive — every earlier beat untouched; new `villainlayers` scene added to `tools/capture_screenshot.py`.
+
+![The Villain Layers](screenshots/181-villain-layers.png)
+
 ## 2026-07-19 — ABINATIONS & THE 404 LIGHTNING — GRAY'S INFECTION WAR (BEAT 118)
 
 Based on Toby's 2026-07-19 lore (third message of the "More Classics Era" thread — the Abinations become an infection, the Dark gets a floor, and Simon 404 loses to an ACT button).
