@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-19 — ABINATIONS & THE 404 LIGHTNING — GRAY'S INFECTION WAR (BEAT 118)
+
+Based on Toby's 2026-07-19 lore (third message of the "More Classics Era" thread — the Abinations become an infection, the Dark gets a floor, and Simon 404 loses to an ACT button).
+
+Toby's words: *"Gray's Puppets are a type of Abination, Abinations are evil aliens that serve Gray... The deepest part of Dark is the core of the white ball where light itself gets all absorbed, darker than the Shadow Realm and Void that were higher up and in fact are nearly like at the surface, nothing escapes gravity that strong. Players and Characters can be turned into Abinations by being infected by an Abination... Simon 404 is all about lightning, so he struck the whole thing with lightning... Pero places an ACT button down and he talks to Simon... they use ACT to destroy the wires... Simon 404 was redefeated and captured again."* (The pasted ChatGPT prediction is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 118 lore panel, ABINATIONS & THE 404 LIGHTNING — GRAY'S INFECTION WAR, added to THE UNDEFINED LOOP climb (cyc `[2314,2336]`). `lvSeg` now returns BEAT 118 for `c` in `[2314,2336)`; `LV_BEATS` now 119 entries (0-118).
+- **Infected-teal palette** — drifting **Abination blobs** (black paint splats with pale spots) over a swallowing dark, crossed by **404 lightning forks**. Header emblem: **an Abination blob with a lightning bolt struck through it** ("ABINATION").
+- **HOW DEEP THE DARK GOES panel** (center) — the Dark finally gets a floor: **CIRCUS SURFACE → THE SHADOW REALM (higher up, nearly the surface) → THE VOID (also higher than people think) → THE CORE OF THE WHITE BALL**, drawn as a white sphere with a black point at its heart, where light itself gets absorbed and nothing escapes gravity that strong.
+- **THE INFECTION LOOP panel** (right) — the five-step rule (an Abination infects → that one becomes an Abination → an NPC sees it and calls Pero → Pero hauls it to the Dark → **players should do the same, but they have their own mind**), above **THE LIGHTNING ROOM**: animated electric wires sealing the exits, two cornered figures, and Pero's glowing **ACT** button that destroys the wires.
+- **3-part footer** — "TAKE EVERYTHING BACK OR NO SKY FOR YOU" (Simon's staff makes the sky vanish, then he is thrown back into the SCF at Sprunki Hills), PERO AT VANILLA LV 1 (Gray used up all of Light Pero's light and every form he had), and "AND THERE WAS 2..." (Simon 404 voids everyone but Gray and Pero, then loses to an ACT button).
+- Insight banner: *"THE INFECTION IS THE REAL WEAPON — GRAY DOES NOT HAVE TO WIN A FIGHT, HE ONLY HAS TO TOUCH ENOUGH OF THE GAME,"* and the star banner *"★ LIGHTNING SEALED THE ROOM, BUT AN ACT BUTTON CUT THE WIRES — SIMON 404 REDEFEATED & CAPTURED AGAIN ★."* Additive — every earlier beat untouched; new `abinations` scene added to `tools/capture_screenshot.py`.
+
+![Abinations & the 404 Lightning](screenshots/180-abinations.png)
+
+## 2026-07-19 — GRAY TAKES THE KINGDOM — RINGMASTER OF CIRCUS & DARK (BEAT 117)
+
+Based on Toby's 2026-07-19 lore (second message of the "More Classics Era" thread — the answer to "is the blackhole a one-way trip?", and the handover of the whole game to Gray).
+
+Toby's words: *"The Blackhole is 1 way since it goes to the very center and the deepest part of the game. Simon gotten his staff again since he needs a staff because he no longer has any power... Pero gave the game to Gray. Pero made Gray into Mr. Black, Gray became the ringmaster this time, Mr. Black as the jester, and Simon was out of the game to Sprunki Hills... he even made The Endless Staircases into Dead Staircases... and he also turned it into an Endless Glass Bridge. Error 0 Point 2 appears, it is a version of Gray... LV and Power are both slain by Gray. The game no longer had death or pain in it. All just respawn... Gray rules both dimensions."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 117 lore panel, GRAY TAKES THE KINGDOM — RINGMASTER OF CIRCUS & DARK, added to THE UNDEFINED LOOP climb (cyc `[2292,2314]`, cycle length extended `2292 → 2336`). `lvSeg` now returns BEAT 117 for `c` in `[2292,2314)`.
+- **Drained gray-on-rainbow palette** — a **rainbow spiral** winding inward and down to a **deep white point** ("the game was rainbow colored and spiraled down to a white part that was so deep and dark inside"). Header emblem: **a demon-glitched ringmaster top hat** with small horns ("RINGMASTER").
+- **THE HANDOVER panel** (center) — who holds what now, under Gray's line *"AND THEN THERE WAS ONE."*: **Pero ToddLLM 001 Pro LAI** (gave the game away, left forever making updates) → **Gray** (the ringmaster, demon-glitched, absolute king) → **Mr. Black** (the jester) → **Luigi Green** (the new owner, only because Pero asked him to sit in) → **Simon** (out of the game at Sprunki Hills, locked from the Classics Circus, the one outside the circuses).
+- **THE DEAD STAIRCASES panel** (right) — gray dead steps on the left, an arrow, and the translucent panes of the **ENDLESS GLASS BRIDGE** running off the edge; below it **ERROR 0 POINT 2**, a version of Gray, with the note that **LV and Power are both slain, so the game has no death and no pain left — everything just respawns.**
+- **3-part footer** — THE BLACKHOLE IS ONE-WAY (it goes to the very center, the deepest part of the game; what goes down does not come up), SIMON'S STAFF IS THE POWER NOW (he got it back because he has no power of his own), and GRAY RULES BOTH DIMENSIONS (his Abinations and Puppets take the Circus, and Pero hauling them to the Dark hands him that too).
+- Insight banner: *"PERO MADE THE SYSTEM · LUIGI GREEN INHERITED A POSITION · GRAY TOOK THE KINGDOM,"* and the star banner *"★ “THE GAME IS OURS.” — NO HEROES, NO VILLAINS, NO DEATH, NO PAIN; ONLY THE RINGMASTER ★."* Additive — every earlier beat untouched; new `graykingdom` scene added to `tools/capture_screenshot.py`.
+
+![Gray Takes the Kingdom](screenshots/179-gray-kingdom.png)
+
 ## 2026-07-19 — CLASSICS & SPRUNKI CIRCUS — THE BLACKHOLE TO THE DARK (BEAT 116)
 
 Based on Toby's 2026-07-19 lore (the "More Classics Era" email — the game is remade into a circus, with a new blackhole-to-the-Dark mechanic and self-repairing errors).
