@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-19 — THE OP CUTSCENE ERA — WHO IS ACTUALLY FIRST (BEAT 121)
+
+Based on Toby's 2026-07-19 lore (sixth message of the "More Classics Era" thread — every ability gets a cutscene, and the top of the order starts hanging on one object).
+
+Toby's words: *"Each ability was made far more OP and given a cutscene. Pero and Simon 404 became the most powerful characters, Pero with the whole game and Simon with the staff, but if Simon doesn't have his staff, then Gray would be second, otherwise, third most powerful."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 121 lore panel, THE OP CUTSCENE ERA — WHO IS ACTUALLY FIRST, added to THE UNDEFINED LOOP climb (cyc `[2380,2402]`, cycle length extended `2380 → 2402`). `LV_BEATS` now 122 entries (0-121).
+- **Gold cinematic palette** — breathing **letterbox bars** top and bottom and **sweeping light rays** across the dark, so the whole beat reads as a cutscene. Header emblem: **a staff standing upright throwing a flare** ("THE STAFF").
+- **HOW A TURN WORKS NOW panel** (center) — the four steps of the new turn with a marker travelling down them: **1 ABILITY CHOSEN** (even a simple old move counts), **2 CUTSCENE STARTS** (the battle pauses for the scene), **3 REALITY / ACTION EFFECT** (the huge scene lands the damage), **4 BATTLE CONTINUES** (back to the fight, one turn later).
+- **THE STAFF SWITCH panel** (right) — two ranking ladders that flip lit back and forth so the swap is visible: **WITH STAFF → 1 Pero, 2 Simon 404, 3 Gray** and **NO STAFF → 1 Pero, 2 Gray, 3 Simon 404**. Below them, **PERO HAS THE WHOLE GAME**: not personal power, he controls and carries the whole game system, so he sits above the normal battle rules and is always first.
+- **3-part footer** — NO MOVE IS JUST A MOVE (even abilities that used to be simple now pause the battle and cause a huge scene before anything lands), THE STAFF IS THE HINGE (second and third place swing on one object), and THE CLEAN RULE (Pero always first; Simon 404 second with the staff, and without it Gray is second and Simon drops).
+- Insight banner: *"ABILITY CHOSEN → CUTSCENE STARTS → REALITY / ACTION EFFECT HAPPENS → BATTLE CONTINUES,"* and the star banner *"★ PERO IS ALWAYS FIRST — AND EVERYTHING UNDER HIM DEPENDS ON WHETHER SIMON 404 IS HOLDING HIS STAFF ★."* Additive — every earlier beat untouched; new `opcutscene` scene added to `tools/capture_screenshot.py`.
+
+![The OP Cutscene Era](screenshots/183-op-cutscene-era.png)
+
 ## 2026-07-19 — THE SONG CHART — "EVERYONE IS NEUTRAL" (BEAT 120)
 
 Based on Toby's 2026-07-19 lore (fifth message of the "More Classics Era" thread — a music-power update where Pero and Pinki take the charts, and then take down Gray).
