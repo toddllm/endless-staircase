@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-19 — THE SONG CHART — "EVERYONE IS NEUTRAL" (BEAT 120)
+
+Based on Toby's 2026-07-19 lore (fifth message of the "More Classics Era" thread — a music-power update where Pero and Pinki take the charts, and then take down Gray).
+
+Toby's words: *"Pero make a new song called 'Everyone is Neutral', Pero tries to help basically anyone. Pinki combines her older song (Oringinal Mimic You, at like RL times) and Simon's retake (Mimic You 2, still at RL times) into 'Wanna Mimic You 2 Retake by Pinki' and it was more popular than both, Pinki's older song also gotten more popular, both more popular than Simon's retake now. Pero's song was more popular than all other songs combined. Pero and Pinki taken down Gray. Gray respawns and thinks on how to become unstoppable and more powerful."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 120 lore panel, THE SONG CHART — "EVERYONE IS NEUTRAL", added to THE UNDEFINED LOOP climb (cyc `[2358,2380]`, cycle length extended `2358 → 2380`). `LV_BEATS` now 121 entries (0-120).
+- **Stage-pink concert palette** — a pulsing **equalizer** across the bottom and **♪ / ♫ glyphs** rising through the dark. Header emblem: **a spinning record with a neutral bar struck across it** ("NEUTRAL").
+- **THE CHART panel** (center) — four ranked entries with animated popularity bars: **1 Pero, "Everyone is Neutral"** (more popular than all other songs combined), **2 Pinki, "Wanna Mimic You 2 Retake by Pinki"** (the fusion, beat both sources), **3 Pinki, "Mimic You"** (original, RL times, rose again on the way up), **4 Simon, "Mimic You 2" retake** (now under both Pinki songs).
+- **PINKI'S FUSION panel** (right) — the two RL-era source tracks feeding down arrows into the glowing fusion box, above **PERO & PINKI TAKE DOWN GRAY**: the two of them standing over a knocked-down Gray in a pulsing respawn ring, with the note that **Gray respawns (the game has no death left) and starts thinking about how to become unstoppable.**
+- **3-part footer** — THE TITLE IS THE RULE (Pero tries to help basically anyone; no heroes, no villains, the song *is* the Circus rule), MIMIC BEATS RETAKE (Pinki fused her own RL song with Simon's retake and beat both, and her original rose above his too), and NOT THE END OF GRAY (taken down by music, not force; he respawns straight into planning the next upgrade).
+- Insight banner: *"THE RINGMASTER WHO SLEW LV & POWER WAS BEATEN BY A SONG ABOUT NOT PICKING A SIDE,"* and the star banner *"★ 'EVERYONE IS NEUTRAL' — MORE POPULAR THAN ALL OTHER SONGS COMBINED ★."* Additive — every earlier beat untouched; new `songchart` scene added to `tools/capture_screenshot.py`.
+
+![The Song Chart](screenshots/182-song-chart.png)
+
 ## 2026-07-19 — THE VILLAIN LAYERS — SURFACE GRAY, TRUE 404 (BEAT 119)
 
 Based on Toby's 2026-07-19 lore (fourth message of the "More Classics Era" thread — Pero becomes a horror cowboy, and the villain question finally gets a layered answer).
