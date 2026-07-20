@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-20 — THE MULTIPLIER — 10,000 VS 15,000 MILLION (BEAT 126)
+
+Based on Toby's 2026-07-20 lore (eleventh message of the "More Classics Era" thread — the boost stops being a description and becomes a figure).
+
+Toby's words: *"Currently, Gray's form is now increased to 10000 million times, and Wenda with 15000 million times; both from the power Pero gave them, and the LV they got themselves, ect."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 126 lore panel, THE MULTIPLIER — 10,000 VS 15,000 MILLION, added to THE UNDEFINED LOOP climb (cyc `[2490,2512]`, cycle length extended `2490 → 2512`). `LV_BEATS` now 127 entries (0-126).
+- **Dark ledger palette** — **digits streaming upward** on both sides, violet on Gray's, gold on Wenda's, so the number reads as still climbing. Header emblem: **a balance that does not balance**, tipping toward the gold pan ("1.5 ×").
+- **THE TWO FIGURES panel** (center) — two bars **drawn to true scale against 15,000**, so the gap is visible rather than merely stated: **WENDA 15,000 MILLION ×** filling the full width, **GRAY 10,000 MILLION ×** filling two thirds of it. Under them the ratio bar: **WENDA = 1.5 × GRAY**.
+- **WHERE IT CAME FROM panel** (right) — **THE POWER PERO GAVE** (*handed over*) and **THE LV THEY GOT** (*earned themselves*), each feeding **▼ WENDA ▼ GRAY**, then **HALF GIVEN, HALF EARNED**: *neither of them is only a gift, and neither of them is only self-made*.
+- **3-part footer** — STILL THE RULER (Gray is still absurdly powerful and still the darker ruler and controller force, holding Surface and Dark), WHAT THE WORD MEANS ("significantly more powerful" is now a figure instead of a description), and STILL CLIMBING (this is the current number, not the final one; both still gaining, Wenda the faster one).
+- Insight banner: *"BOTH NUMBERS COME FROM THE SAME TWO PLACES — THE POWER PERO GAVE THEM, AND THE LV THEY GOT THEMSELVES,"* and the star banner *"★ THE GAP IS NOT AN OPINION ANYMORE — IT IS 15,000 AGAINST 10,000, WRITTEN DOWN ★."* Additive — every earlier beat untouched; new `multiplier` scene added to `tools/capture_screenshot.py`.
+
+![The Multiplier](screenshots/188-the-multiplier.png)
+
 ## 2026-07-20 — WENDA'S LIGHT EATS THE DARK (BEAT 125)
 
 Based on Toby's 2026-07-20 lore (tenth message of the "More Classics Era" thread — Wenda stops being a character in the fight and becomes something the fight happens inside of).
