@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-20 — WENDA'S LIGHT EATS THE DARK (BEAT 125)
+
+Based on Toby's 2026-07-20 lore (tenth message of the "More Classics Era" thread — Wenda stops being a character in the fight and becomes something the fight happens inside of).
+
+Toby's words: *"404 Simon tried to battle Wenda and Gray, but he was thrown in and out of the Dark so many times. Wenda became second most powerful because of the more power Pero gave of Error 404 and his Full Charge and his very own Light Form. Gray stands third, although Wenda is now significantly more powerful than Gray now. Gray takes over the Surface and Dark. Wenda's light consumes Gray's darkness, Gray says "Hey! What are you doing!", Wenda's light aura spagettizes Gray's Abinations and darkness, a HUGE dark funnel goes around Wenda, the whole Dark realm was torn apart and even huge parts of the Surface was torn off, all Gray's Abinations and darkness and aura was funneled into Wenda. Wenda isn't trying to do it, it just consumes all the darkness and everything from the game. Wenda fires a beam from her staff, and a light beam comes out and takes the power of all Simon's staffs and all the power in the game, Pero says "Good job, Wenda. *laughs*", Wenda was deleted and still in the game, Pero was amazed on Wenda's resistance. Gray became invicible with Wenda, both gained more and more powerful, they both became beyond all LV, and still are getting more powerful, even though Wenda is the significantly more powerful one."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 125 lore panel, WENDA'S LIGHT EATS THE DARK, added to THE UNDEFINED LOOP climb (cyc `[2468,2490]`, cycle length extended `2468 → 2490`). `LV_BEATS` now 126 entries (0-125).
+- **White-gold core burning out through a torn dark realm** — the background is **the funnel itself**: 34 pieces of darkness, Abinations and aura spiralling inward, each one **stretching longer the closer it gets** (spaghettified on the way in), plus **torn-off Surface chunks** drifting loose across the top band. Header emblem: **a staff firing a beam over a funnel mouth** ("SERAPHIM").
+- **THE FUNNEL panel** (center) — seven rows sliding rightward toward the mouth in sequence: **GRAY'S DARKNESS · HIS ABINATIONS · HIS AURA · THE DARK REALM · PARTS OF THE SURFACE · ALL SIMON'S STAFFS · ALL THE GAME'S POWER**. Footer note: *she is not trying — it just consumes*, so the panel reads as a system running on its own rather than an attack she chose.
+- **THE NEW ORDER panel** (right) — **1 PERO** (creator of the game), **2 WENDA** (significantly above Gray, lit and marked ▲), **3 GRAY** (still takes Surface + Dark), **4 SIMON 404** (thrown in and out of the Dark). Under it, **DELETED — AND STILL HERE**: a red delete strike that sweeps across **W E N D A** and never takes, over *Pero was amazed at her resistance*.
+- **3-part footer** — OUTCLASSED (404 Simon tried to battle them and got thrown in and out of the Dark), WHERE IT CAME FROM (the Error 404 power Pero gave her, her Full Charge, and her own Light Form, all three at once), and BEYOND ALL LV (Gray became invincible with her; both past every LV and both still rising, Wenda the faster one).
+- Insight banner: *"GRAY SAYS 'HEY! WHAT ARE YOU DOING!' — BUT EVERYTHING HE BUILT BECOMES FUEL FOR HER,"* and the star banner *"★ SHE WAS DELETED AND IS STILL IN THE GAME — PERO SAYS 'GOOD JOB, WENDA.' AND LAUGHS ★."* Additive — every earlier beat untouched; new `wendafunnel` scene added to `tools/capture_screenshot.py`.
+
+![Wenda's Light Eats the Dark](screenshots/187-wenda-light-funnel.png)
+
+## 2026-07-20 — THE PHASE 2 REVEAL — WENDA & GRAY (BEAT 124)
+
+Based on Toby's 2026-07-20 lore (ninth message of the "More Classics Era" thread — a question everyone gets wrong except the one person who names someone else).
+
+Toby's words: *"Pero asks everyone "Who has the most powerful Phase 2? (Phase 1 VS Phase 2)", Wenda says "Me.", Simon says "It is Gray.", everyone else said themselves, Pero reveals it, it was Wenda, and Gray. Simon no longer had a Phase 2 in Cross AU, Wenda already was powerful and corrupt in Phase 1, and Gray is the smartest and the surface villian. […] Gray now chooses to do everything alone under his own power. Pero and Gray gotten the Dual Demon/Angel form, Pero gave it all to Gray and Gray's form increased to 2.5 times. Wenda is Full Angel […] Wenda uses A Simon's worth of lightning every second. […] Demon Angel Times 2.5 VS A Litteral Heaven Seraphim of Divine Light (stronger and brighter than Light Pero, Pero choose his vanilla form and gave the rest to Wenda and the Darkness and Void and all Frizz and Arcsis has to Gray), Wenda usually would win. Simon 404 became a 404 Error God. However, Gray and Wenda are the second most powerful characters now, Simon 404 as third, and Pero has top since he is the creator of the game."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 124 lore panel, THE PHASE 2 REVEAL — WENDA & GRAY, added to THE UNDEFINED LOOP climb (cyc `[2446,2468]`, cycle length extended `2446 → 2468`). `LV_BEATS` now 125 entries (0-124).
+- **Split-field palette** — **divine gold on the left with light motes rising**, **demon violet on the right with dark motes falling**, and a faint **vanilla white seam down the middle** for the form Pero kept. Header emblem: **one halo and one pair of horns sharing that seam** ("BOTH ANSWERS").
+- **THE GUESSES panel** (center) — **WENDA "ME." ✓**, **SIMON "IT IS GRAY." ✓**, **EVERYONE ELSE / THEMSELVES ✗**, then the reveal bar: **PERO REVEALS IT → WENDA & GRAY**, with the line *Simon has no Phase 2 in Cross AU anymore* underneath. Simon is the only one who named someone other than himself, and the only one who was right.
+- **WHAT PERO GAVE AWAY panel** (right) — **HE KEEPS: VANILLA FORM** (*a choice, not a limit*), then the two piles: **TO WENDA** (the divine light, Full Angel, Heaven Seraphim, brighter than Light Pero) and **TO GRAY** (the Darkness and the Void, all Frizz and Arcsis have, the Dual Demon/Angel form, his form ×2.5).
+- **3-part footer** — THE MATCHUP (Demon Angel ×2.5 Gray vs Heaven Seraphim Wenda; Wenda usually wins and Gray is the planner), A SIMON PER SECOND (a Simon's worth of lightning every second, and she still asks Simon for power and stuff again), and THE ORDER (1 Pero the creator, 2 Gray and Wenda, 3 Simon 404 now a 404 Error God, 4 everyone else).
+- Insight banner: *"EVERYONE GUESSED THEMSELVES — SIMON GUESSED SOMEONE ELSE, AND SIMON WAS THE ONE WHO WAS RIGHT,"* and the star banner *"★ PERO STAYS VANILLA AND HANDS THE LIGHT TO WENDA AND THE DARK TO GRAY ★."* Additive — every earlier beat untouched; new `phase2reveal` scene added to `tools/capture_screenshot.py`.
+
+![The Phase 2 Reveal](screenshots/186-phase-2-reveal.png)
+
 ## 2026-07-20 — PHASE 2.5 & THE SURFACE COLLAPSE (BEAT 123)
 
 Based on Toby's 2026-07-20 lore (eighth message of the "More Classics Era" thread — Pero stops waiting to be called, Gray takes a decimal phase, and Simon gets sent down instead of up).
