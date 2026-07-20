@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-20 — CROSS PERO & THE GRAY STORM — THE OVERWRITE BUTTON (BEAT 122)
+
+Based on Toby's 2026-07-20 lore (seventh message of the "More Classics Era" thread — Pero gets a rewrite button, and Gray builds a storm and a power-link).
+
+Toby's words: *"Pero became Cross Pero with the white cloaths and the Overwrite button. Simon 404 gotten his staff again, the Abinations all turn to 404Ds, game corrupts, all characters show up and defeat him again. Gray is now creating a huge storm of Abinations and darkmatter, Gray's form increased by the Cross AU and Error 404 AU Combining, Gray's Realm made Gray able to jumpscare, Simon and Wenda can do it too, so Gray brought in Wenda, he then connects DNA and power, he also makes the Wenda and Gray necklaces, Gray became even more powerful, Gray can even take on the game and win, Simon however would still beat Gray. Pero is the only human in the game, and he still beats everyone."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 122 lore panel, CROSS PERO & THE GRAY STORM — THE OVERWRITE BUTTON, added to THE UNDEFINED LOOP climb (cyc `[2402,2424]`, cycle length extended `2402 → 2424`). `LV_BEATS` now 123 entries (0-122).
+- **White-cross-over-dark-matter palette** — **dark matter streaks** driving across the screen with **Abination blobs** riding them, so the storm is the whole environment and not just enemies in it. Header emblem: **a white cross with the Overwrite button lit at its heart** ("OVERWRITE").
+- **THE 404 LOOP panel** (center) — five steps with a marker travelling down them and an **↺ IT HAPPENS AGAIN** note at the bottom: **1 Simon 404 gets his staff again** (back to his strongest setup), **2 the Abinations turn into 404Ds** (Gray's army becomes Simon's), **3 the game corrupts**, **4 all characters show up**, **5 he is defeated again**. Simon reads as a repeating disaster rather than a one-time one.
+- **GRAY'S STORM panel** (right) — **CROSS AU + ERROR 404 AU ▼ COMBINE ▼ → GRAY'S FORM INCREASES**, so he carries Cross rules and 404 corruption rules at once. Under it, **GRAY'S REALM → JUMPSCARE POWER** with the three who have it lighting in turn (**GRAY · SIMON · WENDA**), and **THE WENDA & GRAY NECKLACES**: two linked rings pulsing together over the note **DNA & POWER CONNECTED**.
+- **3-part footer** — CROSS PERO (white clothes and the Overwrite button; he can rewrite the outcome, not just win the fight), THE STORM (Gray raises a huge storm of Abinations and dark matter, the whole environment is his now), and THE NEW STANDING (Gray beats the game, Simon with the staff beats Gray, Pero the only human still beats everyone).
+- Insight banner: *"GRAY CAN TAKE ON THE GAME AND WIN — BUT SIMON WITH HIS STAFF WOULD STILL BEAT GRAY,"* and the star banner *"★ PERO IS THE ONLY HUMAN IN THE GAME — AND HE STILL BEATS EVERYONE ★."* Additive — every earlier beat untouched; new `crosspero` scene added to `tools/capture_screenshot.py`.
+
+![Cross Pero & the Gray Storm](screenshots/184-cross-pero-storm.png)
+
 ## 2026-07-19 — THE OP CUTSCENE ERA — WHO IS ACTUALLY FIRST (BEAT 121)
 
 Based on Toby's 2026-07-19 lore (sixth message of the "More Classics Era" thread — every ability gets a cutscene, and the top of the order starts hanging on one object).
