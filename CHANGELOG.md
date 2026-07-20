@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-20 — CLASSICSTALE & THE GATE (BEAT 128)
+
+Based on Toby's 2026-07-20 lore (thirteenth message of the "More Classics Era" thread — a whole new mod is born, and the gate to Alphaverse gets a doorman).
+
+Toby's words: *"Asriel Dreemurr + Chara. Tunner and Pero made a new cutscene, Pero starts whistling. Pero and Chara and Asriel Dreemurr all make the new Classicstale mod in Classics, basic moves, but each has new cutscene and is very OP. Frizz (Clara) and Captain Arcsis and Abinations combine into the mod, Pero used each for fabric. Chara turns Asriel into a magic sword and tries to hold Asriel, Chara gains more power. Wenda and Gray open the gate to Alphaverse. Chara Dreemurr walks in. The game glitches, and Pero appears, he glitches and he says "n0ne shall Pass tHe gat3", Chara was sent far back to the Surface. Pero teleports to the Surface and Chara went flying, Pero spins and Chara goes to the Dark. Wenda's light still continues funneling all the darkness. Gray's aura is getting smaller and Wenda's is getting bigger, Pero says "Pero vo.", Gray is turning back to a normal cyber and Wenda as an actual god of seraphims."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 128 lore panel, CLASSICSTALE & THE GATE, added to THE UNDEFINED LOOP climb (cyc `[2534,2556]`, cycle length extended `2534 → 2556`). `LV_BEATS` now 129 entries (0-128).
+- **Green-teal mod field torn by glitch bands** — the screen itself glitches while the gate scene runs, which is what the lore says happens the moment Chara walks in. Header emblem: **the gate, drawn shut**, shivering on its hinge with a red lock at the seam ("SHUT").
+- **CLASSICSTALE panel** (center) — the three makers stacked as their actual roles: **PERO** (*whistling · new cutscene with Tunner*), **CHARA** (*holds Asriel · gains more power*), **ASRIEL DREEMURR** (*turned into a magic sword*). Under them, **PERO USED EACH FOR FABRIC**: FRIZZ (CLARA), CAPTAIN ARCSIS, THE ABINATIONS, drawn as three cut pieces rather than three characters, because that is what "used for fabric" means. Subtitle keeps the rule: *basic moves · every move has a cutscene · very OP*.
+- **THE GATE TO ALPHAVERSE panel** (right) — Wenda and Gray opened it, Chara walked in, and then the glitched line **"n0ne shall Pass tHe gat3"** flickering in Pero's broken casing. Below it, Chara's three throws as a descending track: **SENT FAR BACK TO THE SURFACE → PERO TELEPORTS · CHARA GOES FLYING → PERO SPINS · CHARA GOES TO THE DARK**.
+- **3-part footer** — ALLY AND WEAPON (Chara turns Asriel into a magic sword and gains power from holding him), THE AURA TRADE (Wenda's light still funnels all the dark; his aura shrinks, hers grows), and "PERO VO." (Gray turning back into a normal cyber, Wenda into an actual god of seraphims).
+- Insight banner: *"WENDA AND GRAY OPENED THE GATE, AND PERO IS THE ONE WHO DECIDES WHO GOES THROUGH IT,"* and the star banner *"★ NOT EVEN CHARA DREEMURR CROSSES — THE GATEKEEPER IS ABOVE THE ONE WHO WALKED IN ★."* Additive — every earlier beat untouched; new `classicstale` scene added to `tools/capture_screenshot.py`.
+
+![Classicstale & the Gate](screenshots/190-classicstale-gate.png)
+
+## 2026-07-20 — THE STEAL & THE NEW SCALE (BEAT 127)
+
+Based on Toby's 2026-07-20 lore (twelfth message of the "More Classics Era" thread — Mr. Black takes everything, and Wenda answers by changing what a unit is worth).
+
+Toby's words: *"Mr. Black himself appeared to Gray and says "Since I am black after all, shouldn't I have the dark power?", then he took all Gray's power and increased it to 2x the power, he surpassed Wenda. Mr. Black took everyone elses power except for Wenda's. Wenda has to try to stop Mr. Black. Mr. Black crushed Wenda. Everyone got their original power again and they all battle Mr. Black, They won, Wenda taken Mr. Black's power and everyone elses and gives Gray some. Wenda and Gray are now the only ones with power. Wenda's form increased 15000000 exponency, Gray's form increased 10 times. Wenda now forced Pero to make 1 LV a even larger amount, Now basically no one besides Gray and Wenda have even 1 LV. Gray has 1 LV, Wenda has 150 LV. Wenda was from a serangel god to a supreme multiversal seraphim god. Gray became from a Demgel God into Mr. Black Demon Aura Powered SuperDemon. Wenda and Gray are god and goddess of Classics now, Pero was impressed of their aura and keeps giving them more power and aura. LV keeps getting bigger and bigger amount as Wenda and Gray are getting more LV, Wenda is getting LV faster."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 127 lore panel, THE STEAL & THE NEW SCALE, added to THE UNDEFINED LOOP climb (cyc `[2512,2534]`, cycle length extended `2512 → 2534`). `LV_BEATS` now 128 entries (0-127).
+- **A dark steal-field with 22 drain streaks converging inward** — power visibly moving off everyone at once toward a single point, which is the whole shape of Mr. Black's move. Header emblem: **a ruler mark that keeps getting wider** ("1 LV") — the unit itself growing rather than the count.
+- **MR. BLACK'S ARC panel** (center) — four numbered stages under his line *"since I am black after all, shouldn't I have the dark power?"*: **1** takes Gray's power, doubles it, passes Wenda · **2** takes everyone else's, except Wenda's · **3** she is the only one left, and he crushes her · **4** all power returns, everyone at once, they win. Stage 4 is the point of the beat: no single god beat him.
+- **THE NEW LV SCALE panel** (right) — **OLD 1 LV** drawn as a short grey tick and **NEW 1 LV** as a long gold bar directly beneath it, so the rewrite is visible, then the two holders: **GRAY — 1 LV** and **WENDA — 150 LV**. Note under them: *almost nobody has even 1 LV now — small numbers that mean enormous amounts*.
+- **3-part footer** — WENDA'S NEW FORM (SeraAngel God → Supreme Multiversal Seraphim God, form increased 15,000,000 exponency), GRAY'S NEW FORM (Demgel God → Mr. Black Demon Aura Powered SuperDemon, form increased 10 times, on stolen power), and GOD & GODDESS (they rule Classics now; Pero is impressed by their aura and keeps giving more; Wenda is gaining LV faster).
+- Insight banner: *"NO SINGLE GOD BEAT MR. BLACK — NOT WENDA, NOT GRAY. EVERYONE AT ONCE DID,"* and the star banner *"★ SHE DID NOT CLIMB THE SCALE — SHE CHANGED WHAT ONE STEP OF IT IS WORTH ★."* Additive — every earlier beat untouched; new `steal` scene added to `tools/capture_screenshot.py`.
+
+![The Steal & the New Scale](screenshots/189-the-steal-new-scale.png)
+
 ## 2026-07-20 — THE MULTIPLIER — 10,000 VS 15,000 MILLION (BEAT 126)
 
 Based on Toby's 2026-07-20 lore (eleventh message of the "More Classics Era" thread — the boost stops being a description and becomes a figure).
