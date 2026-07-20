@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-20 — PHASE 2.5 & THE SURFACE COLLAPSE (BEAT 123)
+
+Based on Toby's 2026-07-20 lore (eighth message of the "More Classics Era" thread — Pero stops waiting to be called, Gray takes a decimal phase, and Simon gets sent down instead of up).
+
+Toby's words: *"Pero became more aware of Gray attacks and Abinations, Pero is zooming around making portals to the Dark. Gray reaches Phase 2.5, Simon was sent to Phase 1.1, Gray destroys the Surface and gets more control of the Dark and the Surface, while Simon 404 is nearly normal but is now only a little corrupt."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 123 lore panel, PHASE 2.5 & THE SURFACE COLLAPSE, added to THE UNDEFINED LOOP climb (cyc `[2424,2446]`, cycle length extended `2424 → 2446`). `LV_BEATS` now 124 entries (0-123).
+- **Cracked-cyan-over-Dark palette** — **Surface slabs tipping and falling** out of the top band down into the black, with **Pero's portal rings** opening across the lower half, so the collapse and the rescue system are both happening in the background at once. Header emblem: **a cracked surface line with a portal opening under it** ("TWO LAYERS").
+- **THE PHASE BOARD panel** (center) — a six-rung ladder (**PHASE 3 · 2.5 · 2 · 1.5 · 1.1 · 1**) with two travellers arriving from opposite sides: **GRAY ▲** landing on **PHASE 2.5** and **▼ SIMON** landing on **PHASE 1.1**, both bobbing on their rung. Footer note: *decimal phases are allowed, and the board moves both ways* — the same system that promotes can demote.
+- **THE TWO LAYERS panel** (right) — **THE SURFACE** (*destroyed by Gray*) and **THE DARK** (*Gray's own dimension*), each with a **GRAY CONTROL ▲ MORE** bar filling further, so the strange part is visible: he breaks the Surface and still gains control of it. Under them, **PERO'S PORTALS** with three rings opening and the note **NOT HELPING GRAY — BUT THE PORTALS STILL FEED THE DARK**.
+- **3-part footer** — PERO ON PATROL (he does not wait to be called anymore; Abination remover, portal controller, emergency responder), A TWO-LAYER RULER (Phase 2.5 is control, not damage, and he holds both layers), and NEARLY NORMAL (Simon 404 at Phase 1.1, only a little corrupt, still not cured, but out of maximum corruption).
+- Insight banner: *"GRAY DESTROYS THE SURFACE AND STILL GAINS MORE CONTROL OF IT — DESTROYING A LAYER DOES NOT COST HIM THAT LAYER,"* and the star banner *"★ THEY MOVE OPPOSITE WAYS IN ONE UPDATE — GRAY CLIMBS TO 2.5, SIMON DROPS TO 1.1 ★."* Additive — every earlier beat untouched; new `phase25` scene added to `tools/capture_screenshot.py`.
+
+![Phase 2.5 & the Surface Collapse](screenshots/185-phase-25-surface-collapse.png)
+
 ## 2026-07-20 — CROSS PERO & THE GRAY STORM — THE OVERWRITE BUTTON (BEAT 122)
 
 Based on Toby's 2026-07-20 lore (seventh message of the "More Classics Era" thread — Pero gets a rewrite button, and Gray builds a storm and a power-link).
