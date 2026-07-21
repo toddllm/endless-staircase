@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — THE LOCKS (BEAT 137)
+
+Based on Toby's 2026-07-21 lore (the twenty-second and twenty-third messages of the "More Classics Era" thread, sent six minutes apart and settled together — the escalation stops being about new forms and starts being about locked ones).
+
+Toby's words: *"Mr. Black is now Parodybox Phase 1 locked + Classics Aura and Power. Mr. Black decreased form and increased power, Mr. Black is now the 3rd most powerful under Gray and Pero. Gray got more power, Mr. Black also gets more power."* and *"Mr. Sun is now Pyramixed Phase 1 locked, all other Sprunkis are just normal. Mr. Sun is normal tier, but beats Simon. Mr. Black beats all Sprunkis except for Gray. Gray is locked on Classics Phase Infinity. Gray is strongest and consumes all Sprunkis since he is Phase Infinity, duh."* (The pasted ChatGPT recaps are treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 137 lore panel, THE LOCKS, added to THE UNDEFINED LOOP climb (cyc `[2732,2754]`, cycle length extended `2732 → 2754`). `LV_BEATS` now 138 entries (0-137).
+- **A cold, held field instead of a transforming one** — fourteen lock brackets that close and stay closed, and a lemniscate traced slowly behind everything for the phase Gray is locked on. Header emblem: **a shut padlock with a ▼ under FORM and a ▲ under POWER**, because this is the beat where those two numbers stop moving together.
+- **LOCKED FORMS panel** (center) — the only three Sprunkis who are locked, each lighting in turn: **GRAY** *(Classics Phase Infinity — the phase itself makes him the top, he consumes all Sprunkis)* · **MR. BLACK** *(Parodybox Phase 1 + Classics Aura and Power — form decreased, power increased, beats every Sprunki except Gray)* · **MR. SUN** *(Pyramixed Phase 1 — still normal tier, and normal tier is enough to beat Simon)*. Boxed underneath, **NO TRANSFORMATION NEEDED**: *instead of higher forms or huge transformations, he is held in the basic-looking state, and the power is put behind it instead*.
+- **THE BOARD panel** (right) — the Sprunki ranking as it stands after both locks land, lighting one rung at a time: **1 Gray** ▸ **2 Mr. Black** ▸ **3 Mr. Sun** ▸ **4 the other Sprunkis** *(just normal, no escalations right now)* ▸ **5 Simon** *(below Mr. Sun in this scaling)*. Boxed underneath, **TWO DIFFERENT CLIMBS**: *Gray grows by consuming, Mr. Black grows by aura, both keep gaining*.
+- **4-part footer, what this update actually changed** — **FORM ▼ POWER ▲** *(Mr. Black looks closer to his classic simple self and is far stronger than before)* · **NEW CHARA MOVES DOWN** *(Mr. Black is 3rd overall now, so she is no longer above him unless she gets another update)* · **NORMAL IS ENOUGH** *(Mr. Sun never leaves normal tier and still beats Simon — Simon fell, Mr. Sun did not rise)* · **PHASE INFINITY** *(Gray does not win on stats anymore; the phase he is locked on is what puts him on top)*, under the line *Gray is strongest and consumes all Sprunkis, since he is Phase Infinity*.
+- Insight banner: *"THE THREE WHO GOT LOCKED ARE THE ONLY THREE WHO MATTER NOW — EVERYONE ELSE STAYED FREE AND STAYED NORMAL,"* and the star banner *"★ A LOCK IS NOT A LIMIT HERE — IT IS WHERE THE POWER GETS PUT INSTEAD ★."* Additive — every earlier beat untouched; new `thelocks` scene added to `tools/capture_screenshot.py`.
+
+![The Locks](screenshots/199-the-locks.png)
+
 ## 2026-07-21 — GRAY: ONE FORM (BEAT 136)
 
 Based on Toby's 2026-07-21 lore (twenty-first message of the "More Classics Era" thread — the consuming finishes, and the many forms become one).
