@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — DELETED AU (BEAT 140)
+
+Based on Toby's 2026-07-21 lore (twenty-sixth message of the "More Classics Era" thread, sent right after The Combined Toolkit — Gray finally names his AU, Pero puts him back in his place, and Simon 404 comes back in secret).
+
+Toby's words: *"Gray's AU is called DELETED AU. Only Gray and Pero can enter that place since they are deleted-but-still-existing error characters... Gray like tries to attack Pero but Pero takes no damage and says 'Remember... Delete?', Pero can attack Gray and Gray gets KOed. Pero also gave all light to Gray, Gray is now 50% darkness, 50% light, the light side is brighter than anything in the game, the dark side you can't even see anything... New Chara appears and slashes her sword, the cutscene happens and Gray was defeated... New Chara revives with her KR. Gray VS New Chara, New Chara would win. New Chara became master and is now so OP. Sakeranbi and Ctruinibi was given to Gray... Gray uses his Blazing Fire and became Rainbow Shadow Light his 2nd Phase... New Chara uses her Asriel Sword and Gray fell instantly since the Dreemurr swords were heavy for even her... Gray summoned Abinations, and Gray also corrupted the game, tentacles all over... he learns all about the game using Simon's books, and Gray battles New Chara... but she eventually won, Gray fellen again... Simon 404 appears after Chara left the room. Simon 404 reorganizes his books, and no one knows he is back alive except for Pero."* (The pasted ChatGPT "Simon 404 Secret Return Arc" recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 140 lore panel, DELETED AU, added to THE UNDEFINED LOOP climb (cyc `[2798,2820]`, cycle length extended `2798 → 2820`). `LV_BEATS` now 141 entries (0-140).
+- **The 50/50 field** — one half of the screen blinding light *(brighter than anything in the game)* and the other half total black *(you cannot see anything)*, split by a bright seam down the exact middle, with faint `404` / `DEL` glyphs drifting on the dark side. Header emblem: **a gate labelled ONLY GRAY & PERO ENTER**, *deleted-but-still-existing error characters*.
+- **WHAT DELETED AU IS panel** (center) — a half-white / half-black split bar (**BRIGHTER THAN ANYTHING** · **CAN'T SEE ANYTHING**), then **MOST POWERFUL ABILITIES** *(Pero gave him more form, KR and LV)* · **SAKERANBI · CTRUINIBI** *(two new named abilities, given to Gray)* · **SPRUNKIS ATTACK HIM** *(he is too strong, destroys them instantly)*. Boxed in gold underneath, **PERO IS STILL ABOVE HIM**: *Gray attacks, Pero takes no damage, says "Remember... Delete?", and can KO him*.
+- **THE SEE-SAW panel** (right) — *NEW CHARA BECAME MASTER*, and a six-rung battle log: **she slashes, Gray down** ▸ **she revives with KR** ▸ **Gray: Rainbow Shadow Light** *(Blazing Fire into his 2nd Phase, takes Chara out)* ▸ **Asriel Dreemurr swords** *(too heavy even for her, Gray falls instantly)* ▸ **tentacles · Simon's books** *(Gray corrupts the game and studies it)* ▸ **she eventually wins again**. Boxed underneath, **AU PERO CLAPS AND WAVES**: *he keeps giving New Chara KR, LV and power, so she overtakes Gray again and again*.
+- **4-part footer** — **PERO STILL ON TOP** *("Remember... Delete?" — no damage, can KO him)* · **NEW CHARA WINS** *(in a straight fight she beats Gray over and over, master now, so OP)* · **BOTH REVIVE** *(Gray on damage, New Chara with her KR, neither stays down)* · **SIMON 404 IS BACK** *(quietly reorganizing his books, known only to Pero)*.
+- Insight banner: *"BOTH GRAY AND NEW CHARA READ SIMON'S BOOKS — AND THE ONE WHO WROTE THEM JUST CAME BACK,"* and the star banner *"★ ONLY GRAY AND PERO CAN ENTER DELETED AU — AND SIMON 404 IS SECRETLY ALIVE AGAIN ★."* Additive — every earlier beat untouched; new `deletedau` scene added to `tools/capture_screenshot.py`.
+
+![Deleted AU](screenshots/202-deleted-au.png)
+
 ## 2026-07-21 — THE COMBINED TOOLKIT (BEAT 139)
 
 Based on Toby's 2026-07-21 lore (twenty-fifth message of the "More Classics Era" thread — the direct reversal of THE ERASE UPGRADE, and an answer to Dad's own question about why Gray was not in the red plasma ball).
