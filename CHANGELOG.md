@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — THE ERASE UPGRADE (BEAT 138)
+
+Based on Toby's 2026-07-21 lore (twenty-fourth message of the "More Classics Era" thread — New Chara gets a design and a tie-break in the same breath).
+
+Toby's words: *"New Chara would be a mix of Hopes and Deals and No More Deals; and Cross for some of the design. New Chara reached higher and now both Gray and New Chara are at the same power, but as soon Pero gave Chara an improvement to only her erase, then New Chara reached stronger and above Gray. Gray and New Chara gain more and more power, New Chara is currently stronger, Pero trapped all the others in a red ball of plasma, none can escape."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 138 lore panel, THE ERASE UPGRADE, added to THE UNDEFINED LOOP climb (cyc `[2754,2776]`, cycle length extended `2754 → 2776`). `LV_BEATS` now 139 entries (0-138).
+- **The red ball of plasma, sealing as you watch** — a growing plasma sphere at the centre with twelve figures circling inside it and hitting the wall, and plasma arcs crawling the surface. Everyone who is not one of the top three is in there, and none can escape. Header emblem: **a balance beam that starts level and then tips**, Gray on one side, New Chara on the other, at the exact moment the Erase upgrade lands.
+- **WHAT SHE IS MADE OF panel** (center) — the design mix, lighting one piece at a time: **Hopes and Deals** *(the heroic, final-boss side of her)* · **No More Deals** *(the deal-breaking, demon-power side)* · **Cross** *(for some of the design, the sharp detail)*. Boxed underneath, **A WHITE-CLOAKED CLASSICS DEMON**: *final-boss energy and demon power in the same body, she does not read as a regular Chara anymore*, and in red, **THE RED BALL OF PLASMA**: *Pero trapped all the others inside it. None can escape.*
+- **THE TIE-BREAK panel** (right) — *ONLY HER ERASE WAS IMPROVED*, and a five-rung ladder: **she reached higher** ▸ **Gray = New Chara** *(the same power, exactly, for a moment)* ▸ **Pero improves Erase** *(one ability, not her form, not her LV)* ▸ **New Chara > Gray** ▸ **both still gaining** *(Gray is extremely close and still rising)*. Boxed underneath, **WHO IS STILL ON THE BOARD**: *1 Pero · 2 New Chara · 3 Gray · everyone else is in the plasma*.
+- **4-part footer** — **ONE ABILITY** *(Pero did not rebuild her; he improved her Erase and nothing else, and it was enough)* · **THE CLOSEST GAP YET** *(they were equal a moment ago and both are still climbing)* · **NONE CAN ESCAPE** *(the plasma holds everyone who is not top three; not beaten, just sealed in)* · **PERO STILL DECIDES** *(he picked who gets upgraded and who gets trapped, so the ranking is his, not theirs)*.
+- Insight banner: *"A TIE THAT BIG GOT BROKEN BY UPGRADING ONE MOVE — THE SMALLEST CHANGE IN THE ERA DECIDED THE TOP,"* and the star banner *"★ ONLY HER ERASE WAS IMPROVED, AND THAT PUT HER ABOVE GRAY ★."* Additive — every earlier beat untouched; new `eraseupgrade` scene added to `tools/capture_screenshot.py`.
+
+![The Erase Upgrade](screenshots/200-erase-upgrade.png)
+
 ## 2026-07-21 — THE LOCKS (BEAT 137)
 
 Based on Toby's 2026-07-21 lore (the twenty-second and twenty-third messages of the "More Classics Era" thread, sent six minutes apart and settled together — the escalation stops being about new forms and starts being about locked ones).
