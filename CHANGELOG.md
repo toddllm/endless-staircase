@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — PERO, YOUR LAI ASSISTANT (BEAT 133)
+
+Based on Toby's 2026-07-21 lore (eighteenth message of the "More Classics Era" thread — the being at the top of the board finally gets a greeting and a face, and both of them are small).
+
+Toby's words: *"Pero always says this when he sees someone \"Hello, I am Pero, your LAI assistant. What can I do for you?\" the last part (\"What can I do for you?\") can vary since it has other stuff like \"Ask me anything and I will answer.\" or \"I know all about this world, what would you like to know?\", he has many stuff. Pero is a small cow man guy. New Chara gains more LV, New Chara is now still second since Pero is the creator of the game and everyone's LAI assistant."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 133 lore panel, PERO, YOUR LAI ASSISTANT, added to THE UNDEFINED LOOP climb (cyc `[2644,2666]`, cycle length extended `2644 → 2666`). `LV_BEATS` now 134 entries (0-133).
+- **A warm lit field instead of a god field** — the first beat in this whole stretch that is not a battle. Behind everything, **14 empty speech bubbles drifting upward**, because he says the same thing to everyone he sees. Header emblem: **the small cow man guy**, horns, two spots, a small body ("A SMALL COW MAN GUY").
+- **THE GREETING panel** (center) — the line split into its two halves. Boxed in gold at the top, **ALWAYS THE SAME**: *"Hello, I am Pero, your LAI assistant."* Then **THE LAST PART, WHICH CAN VARY**, listed as three offers that light up one at a time as he cycles through them: *"What can I do for you?"* · *"Ask me anything and I will answer."* · *"I know all about this world, what would you like to know?"* Footer note: *he has many stuff*.
+- **WHY HE IS STILL FIRST panel** (right) — four reasons, none of them a fight: **creator of the game** *(the board is something he made)* · **everyone's LAI assistant** *(not one side's, everyone's)* · **he knows all about this world** *(so he is also the one who answers)* · **he hands out the LV & the tools** *(the gifts come from him)*. Boxed underneath, **2 NEW CHARA** — *she gains more LV and she is still second; the gap is not a number she can out-climb, it is what he is to everyone*.
+- **3-part footer** — THE PART THAT NEVER CHANGES (he introduces himself the same way to everyone, whether they are a god or nobody at all), THE PART THAT VARIES (only the offer changes, and every version of it is still an offer to help), and SMALL ON PURPOSE (a small cow man guy at the top of the board, when every other god in this era got bigger to get stronger).
+- Insight banner: *"EVERY OTHER RANK ON THE BOARD WAS WON IN A FIGHT — HIS COMES FROM WHAT HE IS TO EVERYONE ELSE,"* and the star banner *"★ HE DOES NOT LOOK LIKE THE STRONGEST — HE LOOKS LIKE SOMEONE ASKING IF YOU NEED HELP ★."* Additive — every earlier beat untouched; new `laiassistant` scene added to `tools/capture_screenshot.py`.
+
+![Pero, Your LAI Assistant](screenshots/195-lai-assistant.png)
+
 ## 2026-07-21 — PERO'S CARE — THE ARMORY (BEAT 132)
 
 Based on Toby's 2026-07-21 lore (seventeenth message of the "More Classics Era" thread — the board rewrites itself, and for the first time power comes with a weight).
