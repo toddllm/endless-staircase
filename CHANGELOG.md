@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — THE CROSS EVENT — LV DELETED (BEAT 130)
+
+Based on Toby's 2026-07-21 lore (fifteenth message of the "More Classics Era" thread — the first character who answers the scale by removing it instead of climbing it).
+
+Toby's words: *"Glitchtale Pero DELETES (since he is Glitchtale, duh.) everyones LV and he takes it all, he runs faster than Simon (Simon is the speed of light and can slice dimensions, Pero teleports and rocks move under his feet), Glitchtale Pero grabs on Wenda and then it does the cutscene; Wenda says "Wha-What are you?", Glitchtale Pero says "I am both Error 404, and THE CROSS EVENT!" and he slashes Wenda with his pink neon 2 long swords, Wenda flys, Glitchtale Pero teleports to Wenda and starts slashing, Pero then slashes down and Wenda smashes through the Light, Glitchtale Pero consumes all the Light and Darkness and even Wenda can't see her own hand, Glitchtale Pero easily takes down Wenda with a second X slash. Glitchtale Pero obveriviated Gray. Chara Dreemurr formed into New Chara (Classics version, still with the Asriel Sword that happens to be Asriel Dreemurr). Wenda and Gray respawn."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 130 lore panel, THE CROSS EVENT — LV DELETED, added to THE UNDEFINED LOOP climb (cyc `[2578,2600]`, cycle length extended `2578 → 2600`). `LV_BEATS` now 131 entries (0-130).
+- **A black field cut by pink neon** — the two long swords are the only light source in the beat, drawn crossed and pulsing so the X is the shape of the whole scene. Behind them, **24 falling "LV" tokens** dropping out of the field (the delete, in progress) and **404 glitch bands** sweeping the screen, since he is Error 404 and the Cross Event at the same time. Header emblem: **an X of two crossed neon swords** ("2ND X SLASH") — the one that actually ends it.
+- **THE CUTSCENE panel** (center) — both lines of dialogue in their own boxes, **WENDA** *"Wha-What are you?"* and **GLITCHTALE PERO** *"I am both Error 404, and THE CROSS EVENT!"* — then **THE SLASHES, IN ORDER** as a numbered five-step track: **1** pink neon 2 long swords, Wenda flies · **2** he teleports to her and keeps slashing · **3** slashes down, she smashes through the Light · **4** all Light and all Dark consumed, she cannot see her own hand · **5** second X slash, Wenda goes down. Footer note: *she never gets a second move in*, which is the actual shape of the fight.
+- **THE DELETE panel** (right) — every LV on the board **struck through and zeroed**: WENDA 898 LV → 0 · GRAY ALL OF IT → 0 · SIMON SPEED OF LIGHT → 0 · EVERYONE ELSE ALL LV → 0, all of it landing in one box, **GLITCHTALE PERO — ALL OF IT**. Underneath, the speed check drawn as a straight comparison: **SIMON** *speed of light, slices dimensions* against **PERO** *teleports, rocks move under his feet*.
+- **3-part footer** — GRAY, OBVERIVIATED (the smartest villain, the puppet master, the conqueror, made irrelevant in one moment by the same delete), NEW CHARA (Chara Dreemurr formed into New Chara, the Classics version, still holding the Asriel Sword that is Asriel Dreemurr), and WENDA & GRAY RESPAWN (not erased from the story, only beaten, so both can come back and nothing here is actually finished).
+- Insight banner: *"EVERY BEAT BEFORE THIS ONE ANSWERED THE SCALE BY CLIMBING IT — HE ANSWERED IT BY DELETING IT,"* and the star banner *"★ HE SAID HE WANTED OUT OF THE POWER — AND THEN HE TOOK ALL OF IT ★."* Additive — every earlier beat untouched; new `crossevent` scene added to `tools/capture_screenshot.py`.
+
+![The Cross Event — LV Deleted](screenshots/192-cross-event.png)
+
 ## 2026-07-20 — ??? — THE UNKNOWN GOD & GLITCHTALE PERO (BEAT 129)
 
 Based on Toby's 2026-07-20 lore (fourteenth message of the "More Classics Era" thread — Wenda outgrows the scale four separate times, and Pero decides he wants out of it).
