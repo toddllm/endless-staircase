@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — IF YOU BREAK HIM (BEAT 134)
+
+Based on Toby's 2026-07-21 lore (nineteenth message of the "More Classics Era" thread — the assistant at the top of the board turns out to have a second state, and it is reached by damaging him rather than by fighting him).
+
+Toby's words: *"Pero tries to assist the player, but when the player breaks him, Pero actually becomes hostile and attacks the game (he is creator of the game, he'll win). New Chara is considered a villian."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 134 lore panel, IF YOU BREAK HIM, added to THE UNDEFINED LOOP climb (cyc `[2666,2688]`, cycle length extended `2666 → 2688`). `LV_BEATS` now 135 entries (0-134).
+- **The gold field of beat 133 bleeding into ember** — the same 14 drifting speech bubbles, now each struck through with an orange break, and cracks spreading out from the centre of the field the further the damage goes. Header emblem: **the same small cow man guy**, with the crack running straight through him ("STILL THE SMALL COW MAN GUY").
+- **THE THREE STATES panel** (center) — the collapse walked down one box at a time, lighting as it goes: **1 ASSISTING** *("Hello, I am Pero, your LAI assistant. What can I do for you?" — he answers questions, guides you, and keeps the world working. This is his default.)* ▼ **2 BROKEN** *(the player breaks Pero, the assistant behaviour collapses, and nothing is left holding him to the side he was built for)* ▼ **3 HOSTILE CREATOR** *(he attacks the game itself, the game he made — not a character turning on you, the author turning on the page)*. Subtitle: *he only moves down this list if somebody damages him*.
+- **HE'LL WIN panel** (right) — *HE IS CREATOR OF THE GAME*, then the four reasons it is not a contest: **the board is his** *(he made the ranking everyone climbs)* · **the tools are his** *(every sword and staff came from him)* · **the LV is his** *(he hands it out, so he can take it back)* · **so it is not a fight** *(the only variable is if he stops)*. Boxed underneath, **NEW CHARA — VILLAIN**: *she is now considered a villian, officially; second strongest, LV still rising, still collecting*.
+- **4-part footer, the villain board** — NEW CHARA *(active villain, rising LV, collecting swords, staffs and tools, second strongest)* · PERO *(assistant and creator by default, the ultimate threat only if somebody breaks him)* · GRAY *(the planner, Abination user, the dark and cyber villain force behind the others)* · WENDA *(fallen and absorbing, godlike depending on her form, now below Gray in the ranking)*, under the line *three of them chose it, one of them gets there by being damaged*.
+- Insight banner: *"HE WAS NEVER WRITTEN AS A VILLAIN — HE WAS WRITTEN TO HELP, AND THE VILLAIN IS WHAT IS LEFT WHEN HE BREAKS,"* and the star banner *"★ THE ONE WHO ANSWERS EVERY QUESTION IS THE ONE YOU CANNOT AFFORD TO DAMAGE ★."* Additive — every earlier beat untouched; new `breakhim` scene added to `tools/capture_screenshot.py`.
+
+![If You Break Him](screenshots/196-if-you-break-him.png)
+
 ## 2026-07-21 — PERO, YOUR LAI ASSISTANT (BEAT 133)
 
 Based on Toby's 2026-07-21 lore (eighteenth message of the "More Classics Era" thread — the being at the top of the board finally gets a greeting and a face, and both of them are small).
