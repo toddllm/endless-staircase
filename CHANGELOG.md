@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — 404: SAVE FILE DELETED (BEAT 135)
+
+Based on Toby's 2026-07-21 lore (twentieth message of the "More Classics Era" thread — New Chara finally gets a battle identity, and Gray's aura runs to infinity in the same breath).
+
+Toby's words: *"New Chara holds a Dreemurr sword (either Asriel, Toriel, or Asgore) with both hands instead of 1. The New Chara actually can remove the Save File in Classics. '404: Save File Deleted! Disconnecting.... Disconnected.' then the thing glitches, and does New Chara's cutscene with the 404s instead of the 9s. ... Gray's aura goes to infinity and the whole game would go dark, the Light became Dark again, both circuses crumble ... Gray used his tentacles to grab on every realm in the game and Gray is pulling them all into himself. ... Gray reached the same power level of New Chara, Pero gave Gray 200000000 times the aura and form and power and LV, Gray was extreme."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 135 lore panel, 404: SAVE FILE DELETED, added to THE UNDEFINED LOOP climb (cyc `[2688,2710]`, cycle length extended `2688 → 2710`). `LV_BEATS` now 136 entries (0-135).
+- **The field goes out as you watch** — falling `404`s where the 9s used to be, thinning to nothing near the centre; thirteen tentacles reaching in from every edge, hooked into the realms and dragging them toward one point; and a black hole growing at the middle that swallows the light around it. Header emblem: **the Dreemurr sword held in BOTH hands, not one**.
+- **NEW CHARA'S BATTLE panel** (center) — the disconnect message types itself out live, character by character, with a blinking cursor: **"404: Save File Deleted! Disconnecting.... Disconnected."** Then the four consequences: *then the thing glitches* (her cutscene runs with the 404s instead of the 9s) · *closer to a player's* (her battle is like no other character's, but she is an NPC) · *Jujutsu Kaisen + Undertale + Deltarune* · *the Judgement Hall falls down* (and then the intro starts). Boxed underneath, **BEATEN BY HER**: Sans · Undyne · Monster Kid · Frisk · Frizz · Clara · all Classics beings under Gray, and the one line that is not a kill: *across Classicstale/Undertale and Alphaverse, she only spared her friends*.
+- **GRAY'S BLACKOUT panel** (right) — *HIS AURA GOES TO INFINITY*, and a six-rung ladder that lights one rung at a time: **took Wenda apart** *(her form, power, LV, aura)* ▸ **fused every form** *(all his + all hers, he became 3rd)* ▸ **Pero switched focus** *(lost interest in Wenda, fascinated with Gray)* ▸ **the Light became Dark** *(both circuses crumble, tentacles pull in every realm)* ▸ **Pero sped up time** *(and handed him everyone else and all land)* ▸ **×200,000,000** *(aura, form, power and LV — Gray was extreme)*. Boxed underneath: **LEVEL WITH NEW CHARA** *(he reached her power level, and is still trying to get beyond her)*.
+- **4-part footer, the only beings left** — **1 PERO** *(the cow man, not a literal cow; levitates New Chara himself, since she has no levitating power)* · **2 NEW CHARA** *(Dreemurr sword in both hands, the save file in her reach)* · **3 GRAY** *(pulling every realm into himself; nothing is seen next to him, not even light)* · **EVERYONE ELSE** *(Wenda lost all of it to Gray, the rest were handed to him, the board is three names long now)*.
+- Insight banner: *"SHE ATTACKS THE SAVE FILE AND HE ATTACKS THE WORLD — TWO WAYS TO END A GAME, RUNNING AT THE SAME TIME,"* and the star banner *"★ 404: SAVE FILE DELETED! DISCONNECTING.... DISCONNECTED. ★."* Additive — every earlier beat untouched; new `savefile404` scene added to `tools/capture_screenshot.py`.
+
+![404: Save File Deleted](screenshots/197-save-file-404.png)
+
 ## 2026-07-21 — IF YOU BREAK HIM (BEAT 134)
 
 Based on Toby's 2026-07-21 lore (nineteenth message of the "More Classics Era" thread — the assistant at the top of the board turns out to have a second state, and it is reached by damaging him rather than by fighting him).
