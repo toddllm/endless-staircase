@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-21 — THE COMBINED TOOLKIT (BEAT 139)
+
+Based on Toby's 2026-07-21 lore (twenty-fifth message of the "More Classics Era" thread — the direct reversal of THE ERASE UPGRADE, and an answer to Dad's own question about why Gray was not in the red plasma ball).
+
+Toby's words: *"That is now what Gray can do now, Gray used his new power to destroy New Chara and then he started his own AU. New Chara was thrown off of Pero's care. Gray reaches higher into Pero's Care. Gray's form increases with his power, he beaten everyone in the red plasma ball and it consumed the plasma ball and everything inside it, Gray's power, LV, KR, and form increased, he started getting Kr (Karma. It can heal the victum), Gray now gains lots of KR, Gray revives himself each time he takes even a little damage. Gray is now extremely strong. Gray also gains each from Pero, he also gets more on his own."* (The pasted ChatGPT recap is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 139 lore panel, THE COMBINED TOOLKIT, added to THE UNDEFINED LOOP climb (cyc `[2776,2798]`, cycle length extended `2776 → 2798`). `LV_BEATS` now 140 entries (0-139).
+- **The red plasma ball, this time being eaten** — the sealed sphere from beat 138 now *shrinks* as Gray consumes it, the twelve trapped figures dragged toward the centre instead of circling free, and fifteen ink-dark tendrils reaching outward to pull the ball and everything in it into him. This is the answer to Dad's question: Gray was never sealed because he beats everyone inside and takes the whole prison. Header emblem: **an HP bar that takes a hit and instantly springs back to full**, labelled *REVIVES ON EVERY HIT*, with a KR meter beside it.
+- **THE WHOLE TEAM IN ONE panel** (center) — four broken states across the top (**HACKED · GLITCHED · ERRORED · DELETED**) and four beings down the side (**SANS** *KR and dodging logic* · **PAPYRUS** *traps, bones, battle control* · **CHARA** *erase power* · **FRISK** *reset resistance*), lighting in turn. Boxed underneath, **ALL FOUR STATES × ALL FOUR BEINGS = GRAY**: *a whole team could do it together, now one character does all of it*, and in red, **HE DESTROYED NEW CHARA**: *she was above him one beat ago, now he started his own AU*.
+- **KR AND SELF-REVIVAL panel** (right) — *HURTING HIM MAKES HIM STRONGER*, and a six-rung ladder: **destroyed New Chara** ▸ **started his own AU** ▸ **ate the plasma ball** *(beat everyone in it, then consumed the ball)* ▸ **gains KR — Karma** *(his version can heal the victim, not only harm)* ▸ **revives on damage** *(each time he takes even a little, he comes back)* ▸ **higher into Pero's Care** *(New Chara was thrown off it, Gray rose)*. Boxed underneath, **TWO SOURCES, AT ONCE**: *Pero keeps giving him more, and he keeps gaining on his own*.
+- **4-part footer** — **THE TIE-BREAK REVERSED** *(New Chara was above him one beat ago; the combined toolkit let him destroy her outright)* · **NONE ESCAPED THE BALL** *(Pero sealed them so none could get out; Gray beat them and ate the whole ball anyway)* · **KR CAN HEAL** *(his karma is not only poison; it can heal the victim, damage, karma and healing in one loop)* · **REVIVES ON DAMAGE** *(even a little damage brings him back, so hurting him only makes him harder to put down)*.
+- Insight banner: *"THE ONE ABILITY THAT BEAT HIM LAST BEAT IS GONE — HE TOOK A WHOLE TEAM'S POWERS AND ATE THE PRISON TOO,"* and the star banner *"★ HE REVIVES EVERY TIME HE IS HIT — HURTING GRAY IS HOW GRAY GETS STRONGER ★."* Additive — every earlier beat untouched; new `combinedtoolkit` scene added to `tools/capture_screenshot.py`.
+
+![The Combined Toolkit](screenshots/201-combined-toolkit.png)
+
 ## 2026-07-21 — THE ERASE UPGRADE (BEAT 138)
 
 Based on Toby's 2026-07-21 lore (twenty-fourth message of the "More Classics Era" thread — New Chara gets a design and a tie-break in the same breath).
