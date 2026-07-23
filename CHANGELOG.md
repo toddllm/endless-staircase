@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — A FORCE TO BE RECKONED WITH (BEAT 155)
+
+Based on Toby's 2026-07-23 lore (forty-first message of the "More Classics Era" thread, and the second of July 23, sent an hour after NOT ALL AT ONCE).
+
+Toby's words: *"Pero says to Mr. Black and Simon 404 "I may look like an average mature who is a shepherd for cows," (Cow boy/man) "I am a force to be reckoned with." (powerful, strong, not a great idea to battle, ect.), Pero challenges them into a battle and he won against everyone in the game and the game itself. Pero barrows Mr. Black's role for a day and night while still being the creator because he always is the creator of Classics, he created the creation myths of the inside of Classics, but he was the one who created the game itself."* (The pasted ChatGPT breakdown — the cowboy/cowman reading, the Pero > everyone list, the two-positions note and the myth split — is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 155 lore panel, A FORCE TO BE RECKONED WITH, added to THE UNDEFINED LOOP climb (cyc `[3128,3150)`, cycle length extended `3128 → 3150`). `LV_BEATS` now 156 entries (0-155).
+- **The two canon lines, left column.** **WHAT HE LOOKS LIKE** in grey: *"I may look like an average mature who is a shepherd for cows"* ▸ **WHAT HE IS** in gold: *"I am a force to be reckoned with."* Behind them, slow gold motes drift down the panel — the quiet ordinary look he shows up wearing.
+- **THE SURFACE AND THE TRUTH box** (left, under the beat ladder) — **NOT A COW** *(a cowboy, a cow man, a shepherd-like mature man)* ▸ **NOT AVERAGE** *(he only looks simple, helpful and ordinary)* ▸ **NOT SAFE TO FIGHT** *(powerful, strong, not a great idea to battle)* ▸ **★ STILL THE CREATOR UNDER IT** *(the assistant coat is the costume, not the limit)*, lighting one line at a time.
+- **HE CHALLENGED THEM panel** (center) — *PERO PICKS THE FIGHT, AND THE LIST ONLY GOES UP*: four rungs, each stamped **WON** as it lights — **MR. BLACK** *(king of Classics, front man, holder of the Owner Staff)* ▸ **SIMON 404** *(the Error 404 strings, the 404Ds, the whole corruption side)* ▸ **EVERYONE IN THE GAME** *(the exact thing BEAT 154 said was Simon 404's only ceiling)* ▸ **★ THE GAME ITSELF** *(not a character — the thing all of them are standing inside)*. Boxed underneath, **AND HE WON**: *yesterday the one counter left to Simon 404 was everybody showing up at once; Pero beat everybody at once, and the game they were standing in*.
+- **A DAY AND A NIGHT panel** (right) — *HE BORROWS MR. BLACK'S ROLE, HE DOES NOT TAKE IT*, three findings in turn: **BORROWED, NOT TAKEN** *(the role goes back when the day and the night are over)* · **BOTH SEATS AT ONCE** *(for that one day he is creator and front man together)* · **★ ALWAYS THE CREATOR** *(he can hand roles out or borrow them back, that never changes)*.
+- **THE CREATION MYTH RULE box** (under the right panel) — **INSIDE CLASSICS**: *the creation myths explain how the beings think Classics began, and Pero wrote those too* / **ABOVE CLASSICS**: *he made the game itself, so he is above its own mythology — the story of where everything came from is something he wrote, not something he came out of*.
+- Closing lines in the middle column: *HE TOLD THEM WHAT HE WAS FIRST. THEY FOUGHT HIM ANYWAY.* then *THE CROWN CAN BE BORROWED. THE CREATOR SEAT CANNOT.*
+- Insight banner: *"PERO > MR. BLACK · PERO > SIMON 404 · PERO > EVERYONE · PERO > THE GAME ITSELF,"* and the star banner *"★ I MAY LOOK LIKE A SHEPHERD FOR COWS — I AM A FORCE TO BE RECKONED WITH ★."* Additive — every earlier beat untouched; new `reckonedwith` scene added to `tools/capture_screenshot.py`.
+
+![A Force To Be Reckoned With](screenshots/217-force-to-be-reckoned-with.png)
+
 ## 2026-07-23 — NOT ALL AT ONCE (BEAT 154)
 
 Based on Toby's 2026-07-23 lore (fortieth message of the "More Classics Era" thread, and the first of July 23, sent the morning after THE OWNER STAFF).
