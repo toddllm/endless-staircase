@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — THE VILLAIN OF THE GAME (BEAT 163)
+
+Based on Toby's 2026-07-23 lore (forty-eighth message of the "More Classics Era" thread, a reply in the "Even more Classics Era" thread, sent four minutes after LUIGI GREEN and turning the character it just built).
+
+Toby's words, and this is the whole of what he wrote himself: *"Luigi Green is litterly the villian of the game, he also steals everyone's power and uses all the power to make him loved by Pero and to destroy everyone else."* (Everything after that line in the email is a pasted ChatGPT recap — the "fake-beloved villain," the "favor power" reading, the numbered villain structure, the "clean canon update," and a full quote of the previous email. It is treated as commentary; the canon is Toby's own line.)
+
+- New BEAT 163 lore panel, THE VILLAIN OF THE GAME, added to THE UNDEFINED LOOP climb (cyc `[3304,3326)`, cycle length extended `3304 → 3326`). `LV_BEATS` now 164 entries (0-163). Directly turns BEAT 162: the good-guy look was a disguise.
+- **THE WHOLE LINE box, left column** — Toby's sentence on its own, above the header *THE GOOD-GUY LOOK WAS THE DISGUISE. HE IS THE VILLAIN.* Behind everything, the green ladder of rungs from BEAT 162 now bleeds red where his theft touches it.
+- **THE VILLAIN OF THE GAME panel** (center) — *HE STEALS EVERYONE'S POWER AND KEEPS IT.* Nine cast source-dots sit on a ring and drain grey as red power streams pulse inward into Luigi Green at the center; a red villain aura swells behind the `drawLuigiGreen` figure and his eyes glint red. Caption: *the good-guy look from BEAT 162 was the disguise, every power he has came off somebody else.*
+- **HE DOES NOT TRAIN. HE TAKES. box** (left, under the beat ladder) — **STEALS EVERYONE'S POWER** *(not combat he earned, power he took off the whole cast)* ▸ **SPENT ON BEING LOVED** *(goal 1: use the stolen power to make Pero favor him)* ▸ **SPENT ON DESTROYING** *(goal 2: use the same stolen power to destroy everyone else)* ▸ **ABOVE MR. BLACK NOW** *(he takes the main-villain spot Mr. Black used to hold)*.
+- **WHAT HE SPENDS IT ON panel** (right) — *TWO GOALS, IN TOBY'S OWN WORDS*: **1 MAKE PERO LOVE HIM** in violet *(the stolen power buys the creator's favor; Pero's "I won't let you touch him" from BEAT 162 is the theft working, not a coincidence)* and **2 DESTROY EVERYONE ELSE** in red *(the same stolen power, turned outward on the cast he took it from)*.
+- **WHY HE IS ALMOST IMPOSSIBLE box** (right, under the panel) — fighting him is not fighting one character, it is fighting all three at once: **LUIGI GREEN** *(green)* **+ STOLEN POWER** *(orange)* **+ PERO'S FAVORITISM** *(violet)*.
+- Closing lines in the middle column: *HIS POWER IS NOT ONLY FOR FIGHTING. IT IS FOR BEING LOVED.* then *AND PERO STILL WON'T LET ANYONE TOUCH HIM.*
+- Insight banner: *"LUIGI GREEN STEALS EVERYONE'S POWER AND SPENDS IT ON BEING LOVED BY PERO AND DESTROYING EVERYONE ELSE,"* and the star banner *"★ THE VILLAIN OF THE GAME · HE STEALS POWER · GOAL 1: PERO'S LOVE · GOAL 2: DESTROY EVERYONE ★."* Additive — every earlier beat untouched; new `villain` scene added to `tools/capture_screenshot.py`.
+
+![The Villain of the Game](screenshots/225-villain-of-the-game.png)
+
 ## 2026-07-23 — LUIGI GREEN (BEAT 162)
 
 Based on Toby's 2026-07-23 lore (forty-seventh message of the "More Classics Era" thread, subject "Even more Classics Era," and the eighth of July 23, sent about half an hour after NO SECOND PLACE and reopening the seat that beat had just closed).
