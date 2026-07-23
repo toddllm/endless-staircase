@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — TWO SOULS, ONE VESSEL (BEAT 158)
+
+Based on Toby's 2026-07-23 lore (forty-third message of the "More Classics Era" thread, and the fourth of July 23, sent forty-seven minutes after TUNNER IS PERO and answering the thing that beat left open: how the disguise holds).
+
+Toby's words: *"Remember that no one who enters Pero's game is the same, they have a Classics version, but Tunner is the most special and gets to be Pero. Pero/Tunner now is giving Simon 404 horseshoes and Simon 404 gives him the classic 5 emeralds for each. Tunner now uses each emerald to turn into a liquid substance, a way to prevent his vessel to go to Phase 1, Tunner has 2 souls he uses for his 1 vessel while most other characters have 1. Tunner also carries Pero's vessel with him, Pero's body is unflamable, indestructible, invicible, bullet proof, water proof, everything proof, can't be blown away, can't feel anything, perminent, and is undestroyable. Tunner also has a horse (Introduced in Garnold's Joy), Tunner uses his horse to escape battles and he uses it to go faster and stuff. Pero learns it, Pero also goes with Tunner, they are seperate but the same being, 2 bodies with different names but in Sprunki they are considered the same being."* (The pasted ChatGPT breakdown — the "Classics version rule" framing, the split into creator body and in-game vessel, and the recap of the trade — is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 158 lore panel, TWO SOULS, ONE VESSEL, added to THE UNDEFINED LOOP climb (cyc `[3194,3216)`, cycle length extended `3194 → 3216`). `LV_BEATS` now 159 entries (0-158).
+- **The two canon rules, left column.** **THE RULE FOR EVERYONE** in blue: *"No one who enters Pero's game is the same, they have a Classics version"* ▸ **THE ONE EXCEPTION** in emerald: *"Tunner is the most special and gets to be Pero."* Behind them, emeralds fall down the panel and go liquid on the way down.
+- **WHAT THE EMERALDS ARE FOR box** (left, under the beat ladder) — **HE HANDS OVER HORSESHOES** *(Pero/Tunner gives Simon 404 horseshoes, the same as any other trader would)* ▸ **SIMON PAYS THE CLASSIC RATE** *(5 emeralds for each, the price that has always been the price)* ▸ **EACH EMERALD GOES LIQUID** *(Tunner turns every one of them into a liquid substance)* ▸ **★ THAT IS WHAT HOLDS HIM UP** *(the liquid prevents his vessel from going to Phase 1 — the disguise is not free)*. This is the upkeep BEAT 157 never mentioned: the one Phase 2 exemption in the mod is a thing he keeps paying for.
+- **TWO SOULS, ONE VESSEL panel** (center) — *HE IS NOT BUILT THE WAY THE REST OF THE CAST IS BUILT*, with soul pips drawn on each row: **MOST CHARACTERS** *(1 soul for 1 vessel, which is why a lock like ALL MUST BE 1 works on them)* ▸ **TUNNER** *(2 souls he uses for his 1 vessel, so there is more to push down)* ▸ **★ AND A HORSE** *(from Garnold's Joy; he uses it to escape battles and to go faster, and Pero learns it and rides with him)*.
+- **The carried body box** (under the center panel) — **HE IS CARRYING A BODY THAT IS NOT THE ONE HE IS WEARING**: *Tunner also carries Pero's vessel with him; the disguise is the one on the board, and the real body travels with it.*
+- **PERO'S VESSEL panel** (right) — *TOBY LISTS TEN THINGS IT IS PROOF AGAINST, IN ONE BREATH*, lighting one tag at a time: UNFLAMABLE · INDESTRUCTIBLE · INVICIBLE · BULLET PROOF · WATER PROOF · EVERYTHING PROOF · CAN'T BE BLOWN AWAY · **CAN'T FEEL ANYTHING** · PERMINENT · UNDESTROYABLE. The eighth one is drawn in a different colour on purpose, because BEAT 156 has Pero amazed but not happy that Gray won his game.
+- **SEPERATE, BUT THE SAME BEING box** (under the right panel) — **WHAT YOU SEE — TWO** *(2 bodies with different names; Pero can go with Tunner, they can both be standing there)* / **WHAT SPRUNKI COUNTS — ONE** *(in Sprunki they are considered the same being, so beating one of them is not beating one of them)*.
+- Closing lines in the middle column: *HE IS BUYING HIS OWN PHASE 2 OFF SIMON 404.* then *THE ONE HE IS HIDING FROM IS THE ONE SELLING IT.*
+- Insight banner: *"EVERY EMERALD GOES LIQUID AND KEEPS HIS VESSEL OUT OF PHASE 1 — THE ONE EXEMPTION IN THE MOD IS A THING HE PAYS FOR,"* and the star banner *"★ HORSESHOES IN, 5 EMERALDS FOR EACH OUT — 2 SOULS, 1 VESSEL ★."* Additive — every earlier beat untouched; new `twosouls` scene added to `tools/capture_screenshot.py`.
+
+![Two Souls, One Vessel](screenshots/220-two-souls-one-vessel.png)
+
 ## 2026-07-23 — TUNNER IS PERO (BEAT 157)
 
 Based on Toby's 2026-07-23 lore (forty-second message of the "More Classics Era" thread, and the third of July 23 — this is the second half of the same message as I AM THE REAL CURE, the part Toby introduced with "Here is more lore.").
