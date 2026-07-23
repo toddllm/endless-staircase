@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — NOT ALL AT ONCE (BEAT 154)
+
+Based on Toby's 2026-07-23 lore (fortieth message of the "More Classics Era" thread, and the first of July 23, sent the morning after THE OWNER STAFF).
+
+Toby's words: *"Simon 404 is considered more powerful than Mr. Black because of Error 404 strings and stuff. Simon 404 can also beat all characters, but not at once."* (The pasted ChatGPT breakdown — the 404 power list, the authority-vs-corruption read, the 1v1 / group-battle rule and the 1-5 ranking board — is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 154 lore panel, NOT ALL AT ONCE, added to THE UNDEFINED LOOP climb (cyc `[3106,3128)`, cycle length extended `3106 → 3128`). `LV_BEATS` now 155 entries (0-154).
+- **The two canon lines, left column.** **MORE POWERFUL** in violet: *"Simon 404 is considered more powerful than Mr. Black because of Error 404 strings and stuff"* ▸ **BUT NOT AT ONCE** in red: *"Simon 404 can also beat all characters, but not at once."* Behind them, faint **404** strings fall down the whole panel.
+- **CURRENT RANKING board** (left, under the beat ladder) — **1 PERO** *(creator of Classics, still highest)* · **2 SIMON 404 ▲** *(Error 404 and the 404 strings)* · **3 MR. BLACK ▼** *(king, front man, Owner Staff)* · **4 NEW CHARA / OREN / OTHERS** *(depending on current form)* · **5 EVERYONE ELSE**, lighting one rung at a time with the two moved seats arrowed.
+- **BECAUSE OF ERROR 404 panel** (center) — *THE SEVEN THINGS THE CROWN CANNOT ANSWER*: **ERROR 404** *(the base fault everything else is built out of)* ▸ **404 STRINGS** *(the reach — they go into things instead of hitting them)* ▸ **404Ds** *(the army that comes with him, not a power he has to spend)* ▸ **CODE CORRUPTION** *(he does not beat a character, he rewrites what they are)* ▸ **GLITCH ATTACKS** *(damage that does not follow the rules of the fight)* ▸ **ANTI-VIRUS EFFECTS** *(the cure used as a weapon, the same bottle from I AM THE CURE)* ▸ **★ HIS BROKEN AI 404-MODE BODY** *(the damage is the form — there is nothing left to break)*. Boxed underneath, the comparison: **MR. BLACK · HUGE CONTROL AND KING-LIKE AUTHORITY** against **SIMON 404 · MORE DANGEROUS DIRECT CORRUPTION POWER**, with the read *authority decides what the game does, corruption decides what the characters are — they are not the same ladder*.
+- **SIMON 404'S LIMIT panel** (right) — *THE FIRST CEILING ANYONE HAS PUT ON HIM THIS ERA*, three matchup rules appearing in turn: **1v1** → *SIMON 404 USUALLY WINS* · **GROUP BATTLE** → *SIMON 404 CAN LOSE* · **404D ARMY + ORUS + DARK YELLOW** → *SIMON 404 WINS, OR HIS TRI-MODE SETUP*. Boxed underneath in red, **NOT AT ONCE**: *he beats any one of them, and he still loses to all of them; the thing that stops him is not a stronger being, it is a number, and he only gets past it with somebody else standing next to him*.
+- **The crown and the board, split.** In sequence under the panels: *THE CROWN DID NOT MOVE — MR. BLACK IS STILL KING OF CLASSICS* (red), then *THE POWER BOARD DID — SIMON 404 IS ABOVE HIM AGAIN* (violet).
+- Insight banner: *"SIMON 404 > ANY ONE NORMAL CHARACTER INDIVIDUALLY — EVERYONE TOGETHER > SIMON 404,"* and the star banner *"★ HE CAN BEAT ALL CHARACTERS, BUT NOT AT ONCE ★."* Additive — every earlier beat untouched; new `notatonce` scene added to `tools/capture_screenshot.py`.
+
+![Not All At Once](screenshots/216-not-all-at-once.png)
+
 ## 2026-07-22 — THE OWNER STAFF (BEAT 153)
 
 Based on Toby's 2026-07-22 lore (thirty-ninth message of the "More Classics Era" thread, sent fifteen minutes after ALL MUST BE 1 and the direct follow-up to it).
