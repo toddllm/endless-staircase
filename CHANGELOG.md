@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — HE WASN'T JOKING (BEAT 159)
+
+Based on Toby's 2026-07-23 lore (forty-fourth message of the "More Classics Era" thread, and the fifth of July 23, sent about an hour after TWO SOULS, ONE VESSEL and going back to something Pero said a long time before any of this).
+
+Toby's words: *"When Pero says that everyone's souls will now be his, he wasn't joking, he became Tunner and secretly Phase 2, it consumes the souls of victums, it also stalks and vanishes through the walls, it also makes the game maze scarier, and it also makes static portals to vanish and teleport, Tunner acts normal Phase 1 because Pero is smart. Pero is the best at the game, he created it."* (The pasted ChatGPT breakdown — the "hidden impostor of the maze" framing and the bullet list of everything Pero supposedly knows: every maze path, hiding spot, character weakness, portal location, ending trigger and phase rule — is treated as commentary; the canon is Toby's own lines.)
+
+- New BEAT 159 lore panel, HE WASN'T JOKING, added to THE UNDEFINED LOOP climb (cyc `[3216,3238)`, cycle length extended `3216 → 3238`). `LV_BEATS` now 160 entries (0-159).
+- **The two canon lines, left column.** **THE WARNING** in blue: *"Everyone's souls will now be his"* ▸ **HE WASN'T JOKING** in violet: *"He became Tunner and secretly Phase 2."* Behind them, bands of static drift down the panel and a single shadow crosses the whole thing edge to edge without stopping at anything.
+- **WHAT THE VESSEL ACTUALLY DOES box** (left, under the beat ladder) — **IT CONSUMES THE SOULS OF VICTUMS** *(not a fight move; the thing the warning promised, running quietly in the background)* ▸ **IT STALKS** *(it picks something and follows it instead of charging at it)* ▸ **IT VANISHES THROUGH THE WALLS** *(the maze does not hold him the way it holds everyone else)* ▸ **★ IT MAKES STATIC PORTALS** *(to vanish and teleport, so he leaves before anyone gets to him)*. Four powers, and not one of them is a hit.
+- **HE IS COLLECTING THEM panel** (center) — *2 SOULS FOR 1 VESSEL WAS A COUNT, AND A COUNT CAN CLIMB*, with soul pips on each row: **PERO SAID IT OUT LOUD** *(1 pip; he said it in front of the cast and nobody took it literally)* ▸ **THE VESSEL EATS** *(2 pips; every soul it takes is one more holding the disguise up)* ▸ **★ SO THE COUNT GOES UP** *(3 pips, and the third one is drawn open on purpose, because BEAT 158 caught him at 2 and that was where he started, not where he stops)*.
+- **The maze box** (under the center panel) — **THE MAZE ITSELF IS ONE OF HIS POWERS**: *it also makes the game maze scarier, so the room you are standing in is part of what he does to you.*
+- **STATIC PORTALS panel** (right) — a drawn 6×4 maze with two static portals flickering in place and a violet figure walking straight through every wall on its way across, fading out as it reaches the far portal. *HE STALKS, HE GOES THROUGH THE WALL, HE TELEPORTS OUT.*
+- **WHY HE STILL LOOKS NORMAL box** (under the right panel) — **WHAT THE BOARD SEES** *(Tunner acts normal Phase 1, because Pero is smart; none of the four powers show on the outside)* / **WHY THAT IS ENOUGH** *(Pero is the best at the game, he created it, so he does not have to look scary to be the worst thing in the maze)*.
+- Closing lines in the middle column: *IT WAS NEVER A THREAT.* then *IT WAS A DESCRIPTION OF THE PLAN.*
+- Insight banner: *"IT CONSUMES SOULS, STALKS, VANISHES THROUGH THE WALLS AND MAKES STATIC PORTALS TO TELEPORT — AND IT STILL READS AS PHASE 1,"* and the star banner *"★ HE WASN'T JOKING — HE BECAME TUNNER AND SECRETLY PHASE 2 ★."* Additive — every earlier beat untouched; new `soulwarning` scene added to `tools/capture_screenshot.py`.
+
+![He Wasn't Joking](screenshots/221-he-wasnt-joking.png)
+
 ## 2026-07-23 — TWO SOULS, ONE VESSEL (BEAT 158)
 
 Based on Toby's 2026-07-23 lore (forty-third message of the "More Classics Era" thread, and the fourth of July 23, sent forty-seven minutes after TUNNER IS PERO and answering the thing that beat left open: how the disguise holds).
