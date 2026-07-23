@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — THE SAME DNA (BEAT 166)
+
+Based on Toby's 2026-07-23 lore (fifty-first message of the "More Classics Era" run, a reply in the "Even more Classics Era" thread, sent about an hour after THE CHESS BOARD and handing the whole Luigi Green run over to Alex).
+
+Toby's words, and this is the whole of what he wrote himself: *"Even if Alex and Luigi Green look different, they have the same DNA. Greg and Alex are natural 'friends'. Luigi Green is a villian because Alex is a villian, but Greg is a hero. Alex went crazy with his villian thing, now he is going crazier. Alex absorbed Luigi Green and he became the second most powerful being, he made the game his, he also allowed Greg to go through the Alphaverse gates, Pero was amazed at Alex now, Pero falls down."* (Everything after that paragraph is a pasted ChatGPT recap — the "Alex + Luigi Green DNA rule" heading, the "Alex DNA → Luigi Green villain path" arrow, the Greg/Alex contrast, the ranking restatement, the "takes over the game" framing, the Pero-reaction note, and the "clean canon update." It is treated as commentary; the canon is Toby's own paragraph.)
+
+- New BEAT 166 lore panel, THE SAME DNA, added to THE UNDEFINED LOOP climb (cyc `[3370,3392)`, cycle length extended `3370 → 3392`). `LV_BEATS` now 167 entries (0-166). It reaches back and re-explains the entire BEAT 162-165 Luigi Green run as inherited, then takes it off him.
+- **THE WHOLE LINE box, left column** — Toby's line on its own, above the header *DIFFERENT FACES. ONE BLOODLINE.* Behind everything, a slow violet double helix rises the full height of the screen.
+- **THE SAME DNA panel** (center) — *DIFFERENT LOOK — ONE BLOODLINE — ONE VILLAIN PATH.* A new `drawAlexFig` (violet, jagged villain crown that jitters harder as the `crazy` parameter rises, eyes reddening) stands opposite the `drawLuigiGreen` figure, with a shared DNA strand running between them. Then the absorb: green-and-violet motes cross from Luigi Green into Alex, Luigi Green fades to a ghost, Alex grows. The strand thins but never goes out, because the DNA is the one thing the absorb cannot undo. Rule under the figures: **ALEX DNA → LUIGI GREEN VILLAIN PATH**, *he was never a random villain*, and the closing line *ALEX ABSORBED LUIGI GREEN — THE POWER IS INSIDE HIM NOW.*
+- **GREG AND ALEX box** (left, under the beat ladder) — new `drawGregFig` (blue and gold, calm, round shield) faces Alex across a rule: **GREG — HERO** and **ALEX — VILLAIN**, built on the same body shape on purpose, since they are natural friends with the same DNA. Caption: *Greg can still be close to Alex. Alex is still going crazier. Both are true at once.*
+- **THE SECOND MOST POWERFUL panel** (right) — *HE MADE THE GAME HIS.* The board after the absorb, rung by rung: **1 PERO** *(the creator, still the highest)*, **2 ALEX** *(Luigi Green's power is inside him now)*, **3 EVERYONE ELSE** *(below, depending on the current branch)*.
+- **HE STILL OPENED THE GATE panel** (right, lower) — *ALEX ALLOWED GREG THROUGH THE ALPHAVERSE GATES.* A lit gate arch with Greg stepping through it, and beside it a new `drawPeroReact` figure (gold, wide-brim hat, wide amazed eyes) that tips over and drops as `fall` rises: **PERO FALLS DOWN**, *Pero is not easy to shock, so this is the measure of it.*
+- Closing lines in the middle column: *THE VILLAIN RUN WAS NEVER LUIGI GREEN'S. IT WAS ALEX'S.* then *AND THE CREATOR FELL DOWN WATCHING IT.*
+- Insight banner: *"ALEX AND LUIGI GREEN SHARE ONE DNA, ALEX ABSORBED HIM, AND ALEX IS NOW THE SECOND MOST POWERFUL BEING,"* and the star banner *"★ 1 PERO · 2 ALEX · 3 EVERYONE ELSE — GREG STILL WALKED THROUGH THE ALPHAVERSE GATES ★."* Additive — every earlier beat untouched; new `samedna` scene added to `tools/capture_screenshot.py`.
+
+![The Same DNA](screenshots/228-the-same-dna.png)
+
 ## 2026-07-23 — THE CHESS BOARD (BEAT 165)
 
 Based on Toby's 2026-07-23 lore (fiftieth message of the "More Classics Era" thread, a reply in the "Even more Classics Era" thread, sent about half an hour after SHARES FIRST WITH PERO and closing the Luigi Green run).
