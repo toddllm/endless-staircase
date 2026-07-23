@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — THE THIRD STRONGEST (BEAT 160)
+
+Based on Toby's 2026-07-23 lore (forty-fifth message of the "More Classics Era" thread, and the sixth of July 23, sent just under an hour after HE WASN'T JOKING).
+
+Toby's words, and this is the whole of what he wrote himself: *"New Chara became the third strongest (under Tunner and Pero)."* (Everything after that line in the email is a pasted ChatGPT recap — the numbered 1 Pero / 2 Tunner / 3 New Chara board with its explanations, the bullet list of what Tunner secretly does, the list of what New Chara still has, and the "clean canon update" paragraph. It is treated as commentary; the canon is Toby's own line. The recap does restate things already on file from BEATS 157-159.)
+
+- New BEAT 160 lore panel, THE THIRD STRONGEST, added to THE UNDEFINED LOOP climb (cyc `[3238,3260)`, cycle length extended `3238 → 3260`). `LV_BEATS` now 161 entries (0-160).
+- **THE WHOLE LINE box, left column** — Toby's one sentence on its own, above the header *SHE DID NOT MOVE. THE NAMES ABOVE HER DID.* Behind everything, a slow ladder of rungs drifts upward, because the board keeps rearranging.
+- **THE TOP THREE panel** (center) — *THREE SEATS, AND ONLY TWO BEINGS SITTING IN THEM.* **1 PERO** in gold *(still the highest; he made the game, the systems, the realms and the rules)* ▸ **2 TUNNER** in violet *(secretly Pero's Phase 2 vessel, sitting in a normal Phase 1 slot, BEAT 157)* ▸ **3 NEW CHARA** in white *(LV, KR, the Dreemurr powers and the swords — and the highest seat that is somebody else)*.
+- **The bracket.** A violet bracket is drawn down the left edge of slots 1 and 2, joining them, with the **ONE AND TWO ARE THE SAME BEING** box under the board: *BEAT 158 — 2 bodies with different names, but in Sprunki they are considered the same being. So the highest seat held by anybody else is the third one.*
+- **NOTHING WAS TAKEN OFF HER box** (left, under the beat ladder) — her seat moved and she did not lose one thing she owns, and all of it is already on file from earlier beats: **LV** *(mined one fight at a time, smallest AUs upward, BEAT 131)* ▸ **KR** *(she revives with it, so losing is not the end of her)* ▸ **ALL THE DREEMURR POWERS** *(handed over whole, not won piece by piece)* ▸ **THE DREEMURR TOOLS & SWORDS** *(the Asriel Sword, the Hyperdeath Syche, and anything she needs)* ▸ **HER CUTSCENE BATTLE STYLE** *(Toby called hers the most intense battle in the mod)* ▸ **THE CLASSICS DEMON IDENTITY** *(the white cloak, all her cloaths white)*.
+- **WHERE HER SEAT HAS BEEN panel** (right) — *THREE DIFFERENT SEATS IN UNDER A DAY*, lighting up one at a time: **2ND** *(Jul 22, 4:02 PM — ALL OF THE DREEMURR POWERS, the whole Dreemurr side arrived at once)* ▸ **4TH** *(Jul 23, 6:43 AM — NOT ALL AT ONCE, Simon 404 came back to second and she slid to fourth with Oren and others)* ▸ **3RD** *(Jul 23, 11:29 AM — now, under Tunner and Pero, and she never fought either of them for it)*.
+- **AND LOOK WHO IS GONE box** (under the right panel) — **SIMON 404 WAS SECOND THIS MORNING** *(BEAT 154 put him back at second at 6:43 AM; five hours later he is not in the top three at all)* / **AND HE PAID FOR THE SEAT THAT TOOK HIS** *(BEAT 158 — the emeralds that keep Tunner out of Phase 1 come from Simon 404, five at a time, for horseshoes)*.
+- Closing lines in the middle column: *SHE IS THIRD BEHIND TWO NAMES.* then *AND THE TWO NAMES ARE ONE BEING.*
+- Insight banner: *"1 PERO · 2 TUNNER · 3 NEW CHARA — SHE KEPT EVERY POWER SHE HAD, AND HER SEAT MOVED ANYWAY,"* and the star banner *"★ NEW CHARA BECAME THE THIRD STRONGEST — UNDER TUNNER AND PERO ★."* Additive — every earlier beat untouched; new `thirdstrongest` scene added to `tools/capture_screenshot.py`.
+
+![The Third Strongest](screenshots/222-third-strongest.png)
+
 ## 2026-07-23 — HE WASN'T JOKING (BEAT 159)
 
 Based on Toby's 2026-07-23 lore (forty-fourth message of the "More Classics Era" thread, and the fifth of July 23, sent about an hour after TWO SOULS, ONE VESSEL and going back to something Pero said a long time before any of this).
