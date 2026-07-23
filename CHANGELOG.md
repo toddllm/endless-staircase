@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — THE CHESS BOARD (BEAT 165)
+
+Based on Toby's 2026-07-23 lore (fiftieth message of the "More Classics Era" thread, a reply in the "Even more Classics Era" thread, sent about half an hour after SHARES FIRST WITH PERO and closing the Luigi Green run).
+
+Toby's words, and this is the whole of what he wrote himself: *"Luigi Green taken all other beings and trapped them in a crystal, only Luigi Green and Pero are left. Luigi Green is actually the 2nd oldest character after Pero/EndlessAnimations/Karuto/ToddLLM001/ToddLLM002/Pro/Pro55/Tunner... I won't list all varies. Luigi Green attacks the game with everything, the game is destroyed and turned into Luigi Green's new chess board."* (Everything after that paragraph is a pasted ChatGPT recap — the "board-controller villain" framing, the age/status restatement, the "destroys the game / new chess board" breakdown, the every-character-a-piece list, the Gray/Simon-404/Mr.-Black contrast, and the "clean canon update." It is treated as commentary; the canon is Toby's own paragraph.)
+
+- New BEAT 165 lore panel, THE CHESS BOARD, added to THE UNDEFINED LOOP climb (cyc `[3348,3370)`, cycle length extended `3348 → 3370`). `LV_BEATS` now 166 entries (0-165). It closes the "everyone else is minor" collapse from BEAT 164 by taking the whole cast off the board entirely.
+- **THE WHOLE LINE box, left column** — Toby's line on its own, above the header *ONLY TWO LEFT. THE REST ARE IN THE CRYSTAL.* Behind everything, a faint teal checkerboard rises, the board beginning to take over the screen.
+- **THE CRYSTAL panel** (center) — *ALL OTHER BEINGS TRAPPED — ONLY TWO LEFT.* The `drawLuigiGreen` figure stands beside a tall cyan gem; seven colored cast-motes are pulled in off him and held frozen inside the crystal's facets. Caption: *he trapped all other beings in one crystal, only Luigi Green and Pero are still active.*
+- **THE 2ND OLDEST box** (left, under the beat ladder) — *NOT A NEW VILLAIN WHO GOT STRONG. HE IS ANCIENT.* The Pero identity chain lists oldest-first, one rung at a time: **1 PERO · 2 ENDLESSANIMATIONS · 3 KARUTO · 4 TODDLLM 001 · 5 TODDLLM 002 · 6 PRO · 7 PRO55 · 8 TUNNER**, then under a rule **★ 2ND OLDEST — LUIGI GREEN**.
+- **THE CHESS BOARD panel** (right) — *THE GAME IS DESTROYED AND REMADE AS HIS.* An 8×8 board tiles into place cell by cell as it reforms, green pieces set on it. Caption: *every character a piece, every realm a square, every move planned, he controls the match.*
+- **NOT CORRUPT. NOT CONSUME. box** (right, lower) — *HE REFORMATS CREATION INTO A BOARD.* The game becomes strategy instead of freedom, and only two beings are left on it: **LUIGI GREEN** *(the board-controller — he made the board and moves the pieces)* and **PERO** *(the creator — the only other being not in the crystal)*.
+- Closing lines in the middle column: *THE CAST IS IN THE CRYSTAL. THE GAME IS A BOARD.* then *AND LUIGI GREEN CONTROLS THE MATCH.*
+- Insight banner: *"LUIGI GREEN TRAPPED EVERY OTHER BEING IN A CRYSTAL, IS THE 2ND OLDEST CHARACTER, AND REMADE THE GAME AS HIS CHESS BOARD,"* and the star banner *"★ ONLY TWO BEINGS LEFT — LUIGI GREEN AND PERO — ON A BOARD WHERE EVERY CHARACTER IS A PIECE ★."* Additive — every earlier beat untouched; new `chessboard` scene added to `tools/capture_screenshot.py`.
+
+![The Chess Board](screenshots/227-the-chess-board.png)
+
 ## 2026-07-23 — SHARES FIRST WITH PERO (BEAT 164)
 
 Based on Toby's 2026-07-23 lore (forty-ninth message of the "More Classics Era" thread, sent seventeen minutes after THE VILLAIN OF THE GAME and raising Luigi Green from second main character to equal-top with the creator).
