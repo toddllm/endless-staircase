@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — NO SECOND PLACE (BEAT 161)
+
+Based on Toby's 2026-07-23 lore (forty-sixth message of the "More Classics Era" thread, and the seventh of July 23, sent an hour and twenty minutes after THE THIRD STRONGEST and answering the question that beat left open: does the board count bodies or beings?).
+
+Toby's words, and this is the whole of what he wrote himself: *"The power level is 1. Pero and Tunner (no 2 since there are two beings shared as 1), 3. New Chara."* (Everything after that line in the email is a pasted ChatGPT recap — the "no #2" explanation, the creator/vessel role split, the list of what New Chara still carries, and the "clean canon update" restatement. It is treated as commentary; the canon is Toby's own line.)
+
+- New BEAT 161 lore panel, NO SECOND PLACE, added to THE UNDEFINED LOOP climb (cyc `[3260,3282)`, cycle length extended `3260 → 3282`). `LV_BEATS` now 162 entries (0-161).
+- **THE WHOLE LINE box, left column** — Toby's one sentence on its own, above the header *THE SEAT ABOVE HER WAS NOT GIVEN AWAY. IT WAS CLOSED.* Behind everything, the same drifting ladder of rungs as BEAT 160, except one rung in the middle is missing all the way across.
+- **THE BOARD NOW panel** (center) — *TWO SEATS FILLED, AND A NUMBER THAT IS GONE.* **1 PERO** *and* **TUNNER** share a single gold box *(two beings shared as 1; they do not stack up the board any more, they sit in one seat together)* ▸ slot **2** is drawn as a hole: a dashed grey outline reading **THERE IS NO 2** *(the seat was not lost and it was not won, it was folded into the one above it)*, with a gold line struck through it ▸ **3 NEW CHARA** in white *(same number as an hour ago, with one fewer being above her; LV, KR, the Dreemurr powers and the swords are all still on her)*.
+- **IT COUNTS BEINGS, NOT BODIES box** (left, under the beat ladder) — the rule that settles what BEAT 160 left open: **ONE BEING, ONE SEAT** *(Pero and Tunner share the top, they are not 1 and 2 any more)* ▸ **A NAME BUYS NOTHING** *(BEAT 158 gave him a second body; it does not get its own place on the board)* ▸ **THE 2 IS TAKEN AWAY** *(not handed down; the number is retired with the seat it belonged to)* ▸ **SHE STAYS AT 3** *(nobody is promoted into a seat nobody lost a fight for)* ▸ **THE GAP STAYS OPEN** *(there is a hole in the middle of the board and it is supposed to be there)*.
+- **SECOND BEING, THIRD NUMBER panel** (right) — *THE COUNT AND THE RANK STOPPED AGREEING*, lighting up one at a time: **2** *(beings on the whole board — Pero and Tunner are one of them, New Chara is the other)* ▸ **2ND** *(where she actually stands: one being is above her, so she is the second strongest thing in the game)* ▸ **3RD** *(what she is still called: Toby wrote 3, not 2, and the number stayed where it was when she had two above her)*.
+- **WHAT THE RULE SHUTS box** (under the right panel) — **HE CANNOT COLLECT SEATS WITH NAMES** *(a third name or a fourth would fold into the same seat now, instead of pushing everyone else further down)* / **AND NOBODY CLIMBS INTO A CLOSED SEAT** *(the 2 went away with the merge; it is not sitting there waiting for the next character to win it)*.
+- Closing lines in the middle column: *THE TWO NAMES BECAME ONE SEAT.* then *AND SHE DID NOT MOVE UP INTO THE SPACE.*
+- Insight banner: *"THE BOARD COUNTS BEINGS — SHE IS THE SECOND BEING ON IT AND SHE IS STILL CALLED THE THIRD,"* and the star banner *"★ 1. PERO AND TUNNER · NO 2, SINCE THERE ARE TWO BEINGS SHARED AS 1 · 3. NEW CHARA ★."* Additive — every earlier beat untouched; new `nosecondplace` scene added to `tools/capture_screenshot.py`.
+
+![No Second Place](screenshots/223-no-second-place.png)
+
 ## 2026-07-23 — THE THIRD STRONGEST (BEAT 160)
 
 Based on Toby's 2026-07-23 lore (forty-fifth message of the "More Classics Era" thread, and the sixth of July 23, sent just under an hour after HE WASN'T JOKING).
