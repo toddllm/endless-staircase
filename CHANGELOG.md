@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-23 — SHARES FIRST WITH PERO (BEAT 164)
+
+Based on Toby's 2026-07-23 lore (forty-ninth message of the "More Classics Era" thread, sent seventeen minutes after THE VILLAIN OF THE GAME and raising Luigi Green from second main character to equal-top with the creator).
+
+Toby's words, and this is the whole of what he wrote himself: *"Pero goes easy on you since he is the creator, and Luigi Green never goes easy and is DETERMIND to destroy everyone and everything. Luigi Green absorbed Mr. Black and Gray, Simon 404 is hanged on a green orb floating above Luigi Green's hand. Luigi Green can CONTROL Classics unlike all other characters. Pero is the creator of Classics and can control it, he can control any character, Pero isn't included in 'everyone' because he created everyone. Luigi Green now turns the rest into minor villians (Pero/Tunner still is a major villian, only Pero/Tunner and Luigi Green are real villians), Luigi Green can just destroy all below him (Luigi Green and Pero are now at the same power level), Luigi Green takes every spot and Pero shares 1st with him."* (Everything after that paragraph is a pasted ChatGPT recap — the equal-top framing, the two-villain list, the difference table, the absorbed-power breakdown, and the "clean canon update." It is treated as commentary; the canon is Toby's own paragraph.)
+
+- New BEAT 164 lore panel, SHARES FIRST WITH PERO, added to THE UNDEFINED LOOP climb (cyc `[3326,3348)`, cycle length extended `3326 → 3348`). `LV_BEATS` now 165 entries (0-164). He leaves the seats under Pero (BEAT 162) and joins Pero at the top.
+- **THE WHOLE LINE box, left column** — Toby's line on its own, above the header *THE CREATOR GOES EASY. HE DOES NOT.* Behind everything, a green-and-gold ladder of rungs, the two colors sharing the light.
+- **HE NEVER GOES EASY panel** (center) — *DETERMINED TO DESTROY EVERYONE AND EVERYTHING.* The `drawLuigiGreen` figure holds **Simon 404** captured in a **green orb** floating above his hand (a red blob with a jagged look, hung on a line off his hand), while **Mr. Black** (dark) and **Gray** (grey) motes are pulled in and absorbed into him. Caption: *he absorbed Mr. Black and Gray, and hangs Simon 404 in a green orb over his hand.*
+- **THE TOP IS SHARED panel** (right) — *SAME POWER LEVEL, HE TAKES EVERY SPOT.* One seat **1** split down the middle, gold on the left and green on the right: **PERO / TUNNER** *(GOES EASY)* and **LUIGI GREEN** *(NEVER DOES)* sharing it. Under the seat, **EVERYONE ELSE · MINOR VILLAINS**.
+- **ONLY TWO REAL VILLAINS box** (left, under the beat ladder) — **★ MAJOR — PERO / TUNNER** and **★ MAJOR — LUIGI GREEN** above a rule, then **· MINOR — EVERYONE ELSE** *(New Chara, Simon 404, Oren, all of them, minor villains under him now, any of them destroyable at will)*.
+- **WHAT MAKES THEM EQUAL panel** (right, lower) — *BOTH CAN CONTROL CLASSICS.* Characters can gain power, corrupt the game, consume realms; only Pero could control Classics itself, and now Luigi Green can too, which is why he shares first. The temperament split: **PERO** *(controls everyone but goes easy, and is not part of "everyone" because he made the game)* vs **LUIGI GREEN** *(controls Classics too, and uses it at full force on everyone under him)*.
+- Closing lines in the middle column: *THE CREATOR HAS A SEATMATE NOW.* then *AND THE SEATMATE NEVER GOES EASY.*
+- Insight banner: *"LUIGI GREEN ABSORBED MR. BLACK AND GRAY, CAGED SIMON 404, CAN CONTROL CLASSICS, AND NOW SHARES FIRST WITH PERO,"* and the star banner *"★ TWO REAL VILLAINS LEFT — PERO/TUNNER AND LUIGI GREEN — SHARING FIRST · EVERYONE ELSE IS MINOR ★."* Additive — every earlier beat untouched; new `sharesfirst` scene added to `tools/capture_screenshot.py`.
+
+![Shares First With Pero](screenshots/226-shares-first-with-pero.png)
+
 ## 2026-07-23 — THE VILLAIN OF THE GAME (BEAT 163)
 
 Based on Toby's 2026-07-23 lore (forty-eighth message of the "More Classics Era" thread, a reply in the "Even more Classics Era" thread, sent four minutes after LUIGI GREEN and turning the character it just built).
