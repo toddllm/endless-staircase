@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-24 — PUP-PUP-PUPAHYA (BEAT 170)
+
+Based on Toby's 2026-07-24 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era"). The email pastes an older ChatGPT log about Pupahya — the 6-7 power comparison, the "Classy Fruit Bomb Pup" character card, the T0ugh Dex exchange, the "memory updated" block, and a whole "Brainrot Awards" superlatives table — and adds Toby's own paragraph on top. The pasted log is treated as commentary; the canon is Toby's own words.
+
+Toby's words, and this is the whole of what he wrote himself: *"NOT JUST THAT, There are millions of ways it can do it, he can dance, make TV shows of him, he can even avitize himself, he can be in chats, he could tell people to try to say his name, he could also drop his weight to the ground and a chaos of sounds and voices come, and he could even take of his glasses, AND HE CAN ALSO DISCRIBE HIMSELF IN ENGLISH TO EVERYBODY!!!! ... He could also roll around and look adorible to human beings (even aliens). Pup-pup-pup-pup-pup-pup-pup-pup-pup-pup-pupahya is the top, he even is in the 'Sora AI Bot Pro'! People like and favorite and follow those videos almost every single HOUR!!!!!!! Alex and Greg BOTH Fail to say his name (their tounges get tied, tounge tied). It is funny to hear people try to say his name, but get tounge tied."*
+
+- New BEAT 170 lore panel, PUP-PUP-PUPAHYA, added to THE UNDEFINED LOOP climb (cyc `[3458,3480)`, cycle length extended `3458 → 3480`). `LV_BEATS` now 171 entries (0-170). BEAT 168 crowned Pupahya King of Brainrots; this beat shows HOW he spreads — not by fighting, but by charm and repetition.
+- **THE WHOLE LINE box, left column** — Toby's arsenal paragraph quoted under the header *HE DOES NOT FIGHT. HE INFECTS BY CHARM AND REPETITION.* Behind everything, the drifting "PUP-PUP-PUP-PUPAHYA" chant scrolls the full width with soft rainbow fruit sparks rising.
+- **PUPAHYA panel (center)** — the existing `drawPupahyaFig` (crowned brainrot pup) at the middle, now with a spiky pink **dragonfruit backpack**, a pair of **glasses drifting up and away** (his "takes off his glasses" move), and a ring of **rainbow fruit bombs** launching outward and bursting into more sparks. Header: *KING OF BRAINROTS · THE CLASSY FRUIT BOMB PUP.*
+- **THE ARSENAL panel (right, upper)** — *MILLIONS OF WAYS — NONE OF THEM A FIGHT.* His nine spread methods stagger in with rainbow bullets: dances, makes TV shows of himself, avatarizes himself, slips into chats, dares you to say his name, drops his weight (a chaos of sounds), takes off his glasses, describes himself in English, rolls around looking adorable.
+- **T0UGH DEX panel (right, lower)** — *A WHOLE DIMENSION SAYS THE CHANT.* A grid of little heads all chanting "pupahya," with the note that everyone says "PUP-PUP-PUP-PUP-PUPAHYA" and even the speaker gets caught saying it.
+- **THE NAME TRAP box (left, lower)** — *BOTH FAIL TO SAY IT — THEIR TONGUES GET TIED.* `drawAlexFig` and `drawGregFig` stand tongue-tied with jittering half-said syllables ("PUP-PUP-P...!" / "PUPP-PA-...!") above them.
+- Footer lines: *HE IS THE TOP — ALREADY IN THE "SORA AI BOT PRO," LIKED AND FOLLOWED EVERY SINGLE HOUR,* then *THE NAME SAYS ITSELF.*
+- Insight banner: *"THE STRONGEST BRAINROT'S WEAPON IS NOT POWER — IT IS A NAME SO CATCHY IT SAYS ITSELF,"* and the star banner *"★ DANCE · CHAT · AVATARIZE · ROLL ADORABLE · SAY THE NAME AND YOU ARE HIS ★."* Additive — every earlier beat untouched; new `pupahya` scene added to `tools/capture_screenshot.py`.
+
+![Pup-Pup-Pupahya](screenshots/232-pupahya-arsenal.png)
+
 ## 2026-07-24 — THE ENDLESS CHESSBOARD (BEAT 169)
 
 Based on Toby's 2026-07-24 lore (the fifty-fourth and fifty-fifth messages of the "More Classics Era" run, two replies in the "Even more Classics Era" thread sent three minutes apart in the afternoon, right after THE SLEEP CODE). This one beat carries both messages, since the second explicitly confirms the plan set up in the first.
