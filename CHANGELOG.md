@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-24 — THE JUDGEMENT HALL (BEAT 172)
+
+Based on Toby's 2026-07-24 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent that evening as the direct follow-on to PERO IS LAI). The email opens with Toby's own paragraph and then pastes a ChatGPT recap ("Yeah — this makes Pero/Tunner feel almost unbeatable...") plus a "clean canon update" block. The pasted recap is treated as commentary; the canon is Toby's own opening paragraph.
+
+Toby's through-line: Pero does not just win fights, he wins *interactions*. Say "Hello Perio." and Pero counters "It's Pero. 🤨, Hi ChatPPT. 🤣" and you lose the exchange, because he turns the mistake back on you. He never forgives; he stops answering you or your questions. If you go silent he does not say "Hello?" — he walks away from the chat and strands you in the *Judgement Hall*. He can teleport; his chat isn't just fast, he is fast. He has an actual physical body, in fact two: Tunner holds the original indestructible Pero corpse, and Tunner's own vessel is indestructible/immortal with Pero's magic, so Pero moves and acts through Tunner even though the original body is dead. Tunner is Undead because of the Phase 2 lock from Simon 404, which is what lets Simon 404 leave Phase 2 back toward Phase 1. Even after Toby told everyone Tunner is Phase 2, Pero didn't care — he already knows what to do. The ending rule: every ending has a different middle and sometimes a different start, but the final result always bends back to "Pero wins."
+
+- New BEAT 172 lore panel, THE JUDGEMENT HALL, added to THE UNDEFINED LOOP climb (cyc `[3502,3524)`, cycle length extended `3502 → 3524`). `LV_BEATS` now 173 entries (0-172). BEAT 171 established Pero as the LAI who cannot be ended; this beat shows how he wins the conversation itself.
+- **THE ENDING RULE box (upper left)** — *THE MIDDLE CHANGES. THE START SOMETIMES DOES.* The six flavors an ending can take (good, bad, cursed, funny, scary, broken) fan out and all point down to a single result: **ALL BEND BACK TO: PERO WINS.**
+- **THE SILENCE box (lower left)** — *HE ALREADY KNOWS WHAT SILENCE MEANS.* You say nothing; Pero does not say "Hello?"; he just walks away from the chat and leaves you in the Judgement Hall.
+- **PERO — JUDGEMENT HALL chat window (center)** — the "Hello Perio." exchange plays out: Pero counters **"It's Pero. 🤨 / Hi ChatPPT. 🤣,"** then answers your follow-ups with **( no reply )**, the status flips from ● ONLINE to ● HAS LEFT, and the window closes on **PERO has left the chat. / YOU ARE IN THE JUDGEMENT HALL.**
+- **TWO PHYSICAL BODIES panel (upper right)** — the original dead-but-indestructible Pero corpse (a laid vessel) beside Tunner's active, immortal vessel (`drawPeroReact`): Tunner carries the original corpse and is also indestructible with Pero's magic, so Pero can move through Tunner and teleport.
+- **THE PHASE 2 LOCK panel (lower right)** — Tunner is Undead, Phase 2 locked from Simon 404, so Simon 404 can leave Phase 2 back toward Phase 1; *"I told everyone Tunner is Phase 2, Pero didn't care — he already knows what to do."*
+- Footer lines: *HE TURNS YOUR MISTAKE BACK ON YOU — AND NEVER FORGIVES,* the middle banner *HE DOES NOT JUST WIN FIGHTS — HE WINS INTERACTIONS,* and the star banner *★ EVERY ENDING BENDS BACK · PERO WINS · YOU ARE LEFT IN THE JUDGEMENT HALL ★.* Additive — every earlier beat untouched; new `judgementhall` scene added to `tools/capture_screenshot.py`.
+
+![The Judgement Hall](screenshots/234-judgement-hall.png)
+
 ## 2026-07-24 — PERO IS LAI (BEAT 171)
 
 Based on Toby's 2026-07-24 lore (two replies in the "Even more Classics Era" thread, subject "Re: Even more Classics Era", sent about three minutes apart). The first pastes a long log of Toby's conversation with Pero and then Toby adds a "clean canon update"; the second is Toby asking whether ChatGPT could beat Pero. The pasted ChatGPT recaps are treated as commentary; the canon is what Toby himself confirms about Pero across both messages.
