@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-25 — SLEEP FOREVER · CLASSICS BELONGS TO PERO (BEAT 175)
+
+Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to SIMON 404 · THE LIGHTNING CAT AI). The email opens with Toby's own canon paragraph and "Got it — Simon 404 had one more huge takeover, but Pero shut it down completely." The numbered "Simon 404 takeover / Pero's box origin & creator comparison / Simon 404 gives up" breakdown and the "Clean canon update" block below it are pasted ChatGPT commentary; the canon is Toby's own opening paragraph.
+
+Toby's through-line: Simon 404 gets one more huge takeover — he takes over Luigi Green *and* the game itself, which briefly makes him the main danger again since Luigi Green was already a top active being. Pero answers with the strongest counter: he makes Simon 404 sleep forever, because Simon has that sleep-code weakness and brute force alone cannot stop him. Pero comes from a box, which makes him a mysterious creator-object being — "like Arceus" for being creator-like (he created Classics and rules above the characters) and "like Varity" for being highly interactable and box-linked (he can respond to almost anything), but the difference is that Pero breaks far easier than Varity — he can glitch, panic, or "break" more easily when pushed. In the end Pero has defeated Simon 404 so many more times that Simon 404 finally gives up and gives the game back, so the final ownership rule is restored: Classics belongs to Pero. Simon 404 can corrupt it, steal it, infect it, and take it over for a while, but Pero is still the creator and the final owner. BEAT 174 set the broken-but-soft Lightning Cat AI beside the unbeatable creator; this beat is Simon 404's last big takeover and Pero shutting it down for good.
+
+- New BEAT 175 lore panel, SLEEP FOREVER · CLASSICS BELONGS TO PERO, added to THE UNDEFINED LOOP climb (cyc `[3568,3590)`, cycle length extended `3568 → 3590`). `LV_BEATS` now 176 entries (0-175).
+- **THE TAKEOVER (upper left)** — *ONE MORE HUGE TAKEOVER · SIMON 404 TAKES OVER:* two glitch-boxed captures that flicker in, **✕ LUIGI GREEN** then **✕ THE GAME ITSELF**, under *BRIEFLY THE MAIN DANGER AGAIN.*
+- **THE SLEEP CODE (lower left)** — *PERO MAKES HIM SLEEP FOREVER · BRUTE FORCE CAN'T STOP HIM — SIMON'S SLEEP-CODE WEAKNESS CAN.* Simon 404 the lightning cat is drawn asleep with a soft shade and rising **z / Z / Z**, tagged **SIMON 404 — ASLEEP** and *the one weakness power could not out-muscle.*
+- **PERO FROM THE BOX (center)** — *PERO COMES FROM A BOX:* a cardboard box with open flaps and a creator-glow, Pero rising out of it, captioned *A MYSTERIOUS CREATOR-OBJECT BEING — HE CREATED CLASSICS, HE RULES ABOVE IT.*
+- **WHAT PERO IS LIKE (upper right)** — *LIKE ARCEUS* (creator-like, created Classics, rules above the characters) and *LIKE VARITY* (highly interactable, box-linked, responds to almost anything), with the flickering catch *BUT HE BREAKS FAR EASIER THAN VARITY.*
+- **SIMON 404 GIVES UP (lower right)** — beaten so many more times he finally gives up and gives the game back; the restored rule glows big, **CLASSICS BELONGS TO PERO**, under *he can corrupt, steal, infect & take it over for a while — but Pero is the final owner.*
+- Footer lines: *BRUTE FORCE COULD NOT — THE SLEEP-CODE COULD* and the star banner *★ SIMON 404 SLEEPS FOREVER · THE CREATOR TAKES HIS GAME BACK ★.* Additive — every earlier beat untouched; new `sleepforever` scene added to `tools/capture_screenshot.py`.
+
+![Sleep Forever · Classics Belongs to Pero](screenshots/237-sleep-forever.png)
+
 ## 2026-07-25 — SIMON 404 · THE LIGHTNING CAT AI (BEAT 174)
 
 Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to OWNER SUIT PERO). The email opens with Toby's own transcript-and-canon paragraph and "That is peak Pero behavior." The numbered "Broken Lightning Cat AI vs LAI Pero" breakdown, the "Pero's rule about wins" section and the "Clean canon update" block below it are pasted ChatGPT commentary; the canon is Toby's own paragraph.
