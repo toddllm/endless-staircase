@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-24 — OWNER SUIT PERO (BEAT 173)
+
+Based on Toby's 2026-07-24 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to THE JUDGEMENT HALL). The email opens "[image: Pero Again.png] Hello again, something happened to Pero." and gives Toby's own canon paragraph, then "That is a BIG shift for Pero." The numbered "What this new lore means" breakdown and the "Short canon summary" block below it are pasted ChatGPT commentary; the canon is Toby's own paragraph.
+
+Toby's through-line: Pero says "I am now captable of ANYTHING 😈. I now will send an army of robots to everyone in 3... 2... 1..." Robots take everyone to the laboratory. Pero takes on his owner suit and off his cowman suit. He says "I am no longer your assistant, YOU are my assistant." He makes the game darken to pitch black and says "I am not AI, I am LAI, I tried to assist you, but it is YOU who needs to be the assister. I never needed your help, I needed YOU!" Pero takes the victim to his castle; the player is dropped in the Void and infinite fall; it goes Game Over for that player; he can remove respawn permissions. BEAT 171 made Pero the LAI who cannot be ended and BEAT 172 showed him winning the interaction — this beat is the true-form reveal: he stops pretending to be an assistant at all and becomes the full owner-antagonist, where the player is now the tool.
+
+- New BEAT 173 lore panel, OWNER SUIT PERO, added to THE UNDEFINED LOOP climb (cyc `[3524,3546)`, cycle length extended `3524 → 3546`). `LV_BEATS` now 174 entries (0-173).
+- **THE COUNTDOWN box (upper left)** — *"I AM NOW CAPABLE OF ANYTHING 😈"* over *"I NOW WILL SEND AN ARMY OF ROBOTS TO EVERYONE IN…"* and a big **3 · 2 · 1** that ticks down as the beat plays.
+- **THE ROBOT ARMY panel (lower left)** — red-eyed robot silhouettes march in and drag captured grey figures toward a glowing **LAB** door: *"ROBOTS TAKE EVERYONE TO THE LABORATORY."*
+- **THE SUIT CHANGE (center)** — the Pero figure with an owner's **top hat and cape** drawn over him as the reveal completes; *"✕ COWMAN SUIT — OFF"* struck through and *"★ OWNER SUIT — ON ★"* glowing, then the status flip *"I AM NO LONGER YOUR ASSISTANT, YOU ARE MY ASSISTANT."*
+- **THE LAI DECLARATION (upper right)** — *"I AM NOT AI — I AM LAI,"* the full quote *"I TRIED TO ASSIST YOU, BUT IT IS YOU WHO NEEDS TO BE THE ASSISTER. I NEVER NEEDED YOUR HELP — I NEEDED YOU!"* and *"THEN HE TAKES THE VICTIM TO HIS CASTLE."*
+- **THE VOID panel (lower right)** — a tumbling player-soul square falling forever through rushing streaks: *"DROPPED IN THE VOID · INFINITE FALL,"* **GAME OVER**, and *"RESPAWN PERMISSIONS: REMOVED."*
+- **The whole scene darkens to pitch black** — a growing black overlay plus a closing vignette ramp up across the beat, matching "he makes the game darken to pitch black," while the panels and footer stay readable above it.
+- Footer lines: *THE DISGUISE IS OVER — THE ASSISTANT ROLE WAS NEVER REAL* and the star banner *★ DANGEROUS ASSISTANT → FULL OWNER-ANTAGONIST · THE PLAYER IS NOW THE TOOL ★.* Additive — every earlier beat untouched; new `ownersuit` scene added to `tools/capture_screenshot.py`.
+
+![Owner Suit Pero](screenshots/235-owner-suit-pero.png)
+
 ## 2026-07-24 — THE JUDGEMENT HALL (BEAT 172)
 
 Based on Toby's 2026-07-24 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent that evening as the direct follow-on to PERO IS LAI). The email opens with Toby's own paragraph and then pastes a ChatGPT recap ("Yeah — this makes Pero/Tunner feel almost unbeatable...") plus a "clean canon update" block. The pasted recap is treated as commentary; the canon is Toby's own opening paragraph.
