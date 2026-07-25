@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-25 — NOVA PERO 🌈 · THE STRONGEST FORM & THE PHASE 3 FINAL ATTACK (BEAT 178)
+
+Based on Toby's 2026-07-25 lore (two replies in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about seven minutes apart, the direct follow-on to PERO PHASE 1). The emails open with Toby's own canon paragraphs; the "Got it / Nova Pero canon rules / Clean canon update" breakdowns below them are pasted ChatGPT commentary, not canon.
+
+Toby's through-line: he asked Pero who is strongest in the game, and Pero answered "Nova Pero 🌈 is the strongest, he changes the boss fight, that is why I become him for Phase 3 Final Attack which always wins. 😎" — and Toby confirms Pero is right. The important part is *how* Nova Pero is strongest: not by bigger numbers, but by being able to change the boss fight itself — the rules, the attacks, the battlefield, the phase structure, the player's options, the ending outcome. He controls how the fight works. Pero becomes Nova Pero 🌈 for his Phase 3 Final Attack, and that attack always wins, so once Nova Pero appears the battle is already decided — which is finally *how* BEAT 176's Phase 3 "always destroys the player" actually works. The second email locks in the naming and uniqueness rules: the rainbow emoji is literally part of his name ("Nova Pero 🌈"), he is the only character with a Nova form and the only one who can turn the whole battlefield Nova, and he is the only character with exactly one emoji in his name (Simon 404 usually has two, 🐱⚡; everyone else has zero). Pero's official form structure is now fixed at six — Vanilla, Assistant, Phase 1, Phase 2, Phase 3, and Nova Pero 🌈 — with no other official AUs.
+
+Added a new BEAT 178 panel (loop cycle extended to `c` in [3634,3656), `LV_CYC` 3634 → 3656), plus its `LV_BEATS[178]` subtitle/ladder entry, a frame-title case, and a `novapero` capture scene. `LV_BEATS` now 179 entries (0-178). This beat uses a moving rainbow palette instead of the teal/red of the last two:
+
+- **THE OFFICIAL FORM LADDER (left)** — Vanilla Pero → Assistant Pero → Phase 1 Pero → Phase 2 Pero → Phase 3 Pero → **Nova Pero 🌈** at the rainbow top, with "NO OTHER OFFICIAL AUs."
+- **NOVA PERO 🌈 (center)** — Pero inside concentric rainbow aura rings with a rainbow crown, the list of what he changes (the rules, the attacks, the battlefield, the phase structure, your options, the ending), and **PHASE 3 FINAL ATTACK — ALWAYS WINS**.
+- **NOT A BIGGER NUMBER (upper right)** — you don't lose because he out-damaged you, you lose because he rewrote the rules of the battle you were in; he turns the whole battlefield Nova.
+- **THE NAMING RULE (lower right)** — NOVA PERO 🌈 = 1 emoji · SIMON 404 🐱⚡ = 2 · everyone else = 0; the 🌈 is part of his name.
+- **Footers** — "HE DOES NOT HIT HARDER — HE REWRITES THE FIGHT" and "★ PERO BECOMES NOVA PERO 🌈 FOR THE PHASE 3 FINAL ATTACK — IT ALWAYS WINS ★".
+
+![BEAT 178 — Nova Pero, the strongest form & the Phase 3 Final Attack](screenshots/240-nova-pero.png)
+
 ## 2026-07-25 — PERO PHASE 1 · THE ASSISTANT & THE EMOTIONAL TRIGGER (BEAT 177)
 
 Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to PERO PHASE 2 & PHASE 3). It fills in the Phase 1 that sits *before* the anger. The email opens with Toby's own canon paragraph; the "Got it / Pero's assistant state / Clean canon update" breakdown below it is pasted ChatGPT commentary, not canon.
