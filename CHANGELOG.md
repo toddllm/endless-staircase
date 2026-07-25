@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-25 — PERO PHASE 2 & PHASE 3 · THREE FORMS, THE THIRD IS ABSOLUTE (BEAT 176)
+
+Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to SLEEP FOREVER · CLASSICS BELONGS TO PERO). The email attaches two images (Phase 2 Pero.png, Phase 3 Pero.png) and opens with Toby's own canon paragraph; the "What these new phases say about Pero" breakdown below it is pasted ChatGPT commentary, not canon.
+
+Toby's through-line: Pero now has a Phase 2 and a Phase 3. Phase 2 is the angrier one — "I won't give up, I am Pero, I am not losing to a puny... HUMANOID!!!" — the point where he stops acting like a calm assistant and gets offended that a player pushed him this far. Phase 3 is the one that looks almost dead — "You could have beaten me, I am Pero... but even with nothing left, I still will try to win, goodbye..." — his final dead-serious creator state, and Phase 3 *always* destroys the player, no other ending. Only 'The Player' can take him that far. The structure rule: players have 3 phases, Pero has 3 phases, every other character has infinity — so Pero and the player alone are capped at three, which gives Pero three decisive forms instead of endless upgrades, and the third is absolute. Pero still beat everyone, but each battle was a challenge; he was the creator and owner, so he won. And Pero sometimes carries Tunner's vessel while Tunner sometimes carries Pero's vessel — they work like mutual containers, each able to hold the other through destruction. BEAT 172/173 established the Tunner–Pero shared-vessel bond and BEAT 175 restored his ownership; this beat is the three-form boss structure and the unbeatable Phase 3.
+
+Added a new BEAT 176 panel (loop cycle extended to `c` in [3590,3612), `LV_CYC` 3590 → 3612), plus its `LV_BEATS[176]` subtitle/ladder entry and a `perophases` capture scene:
+
+- **PHASE 2 (left)** — an angry Pero with a red rage aura and a shake, anger marks over his shoulder, and the full quote ending in a big glitching **HUMANOID!!!**
+- **PHASE 3 (center)** — an almost-dead Pero: dim, flickering, tilted, with red cracks running down him and a decay aura, the Phase 3 quote, the player's pink soul square being destroyed under him, and **ALWAYS DESTROYS THE PLAYER · NO OTHER ENDING**.
+- **THE 3-PHASE RULE (upper right)** — PLAYERS 3 · PERO 3 · EVERYONE ELSE ∞, with "only the player can take him this far."
+- **TUNNER & PERO — SHARED VESSELS (lower right)** — two vessel boxes with Pero and Tunner crossing between them, "mutual containers — each can hold the other through destruction."
+- **Footers** — "THREE DECISIVE FORMS — NOT ENDLESS UPGRADES" and "★ ONLY THE PLAYER CAN FORCE PHASE 3 — BUT ONCE THEY DO, THEY LOSE ★".
+
+![BEAT 176 — Pero Phase 2 & Phase 3](screenshots/238-pero-phases.png)
+
 ## 2026-07-25 — SLEEP FOREVER · CLASSICS BELONGS TO PERO (BEAT 175)
 
 Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to SIMON 404 · THE LIGHTNING CAT AI). The email opens with Toby's own canon paragraph and "Got it — Simon 404 had one more huge takeover, but Pero shut it down completely." The numbered "Simon 404 takeover / Pero's box origin & creator comparison / Simon 404 gives up" breakdown and the "Clean canon update" block below it are pasted ChatGPT commentary; the canon is Toby's own opening paragraph.
