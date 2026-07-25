@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-25 — PERO PHASE 1 · THE ASSISTANT & THE EMOTIONAL TRIGGER (BEAT 177)
+
+Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to PERO PHASE 2 & PHASE 3). It fills in the Phase 1 that sits *before* the anger. The email opens with Toby's own canon paragraph; the "Got it / Pero's assistant state / Clean canon update" breakdown below it is pasted ChatGPT commentary, not canon.
+
+Toby's through-line: Pero begins in assistant mode, greeting "I am Pero, your LAI assistant, ask me anything, I know everything! 😎" — confident, helpful, smug, LAI-based, not an NPC. One attack is enough to push him out of assistant mode and into Phase 1, where he does not go straight to rage — he asks "What was that 😰? Do you still love me more than the NPCs? 🥹" — emotional shock, wanting reassurance before he decides what to do. Then the player chooses. Say **no** and Pero breaks emotionally, cries and falls over like Gray's breakdown, then gets back up and the battle begins (attack → reject → collapse → battle). Say **yes** and he asks "🥹 Really?" — then "not really" gets "Well, I knew you attacked me 😣, c o m e h e r e 💦." (his weapon is a literal water gun) and the battle starts, while a true "really" gets "I really am the best one, I am LAI. 😎" and he heals the cut and returns to being your assistant. So kindness can prevent the Phase 1 fight, but only if the player actually means it. The beat also locks in the identity split: Simon 404 is an NPC powered by broken Cat AI, while Pero is LAI, not an NPC — the higher assistant-owner layer above the whole character/NPC structure. BEAT 171 established Pero as the LAI who cannot be ended and BEAT 176 gave him his three phases; this beat is the human, emotional Phase 1 that precedes the anger of Phase 2.
+
+Added a new BEAT 177 panel (loop cycle extended to `c` in [3612,3634), `LV_CYC` 3612 → 3634), plus its `LV_BEATS[177]` subtitle/ladder entry, a frame-title case, and a `perophase1` capture scene. `LV_BEATS` now 178 entries (0-177):
+
+- **ASSISTANT MODE → THE SHOCK (left)** — smug shades-wearing Pero in a teal glow with "ask me anything, I know everything! 😎", a red **1 ATTACK** arrow down into a trembling, teary Phase 1 Pero asking "Do you still love me more than the NPCs? 🥹".
+- **THE PLAYER CHOOSES (center)** — a branching decision tree from "Do you love me more than the NPCs?": **NO** → Pero cries and falls over like Gray → **GETS UP → BATTLE**; **YES** → "🥹 Really?" → **NOT REALLY** → water gun "c o m e h e r e 💦" → **BATTLE**, or **REALLY** → heal cross → **ASSISTANT** again. "Kindness ends the fight — but only if you mean it."
+- **THE ONLY WAY BACK (upper right)** — say yes, mean yes, and he heals the cut and becomes your assistant again: "I really am the best one, I am LAI. 😎".
+- **THE IDENTITY SPLIT (lower right)** — SIMON 404 = an NPC, broken Cat AI · PERO = LAI, not an NPC, the owner layer.
+- **Footers** — "PHASE 1 IS NOT RAGE — IT IS A QUESTION" and "★ ONLY TRUE KINDNESS PUTS PERO BACK — ANYTHING ELSE IS A BATTLE ★".
+
+![BEAT 177 — Pero Phase 1, the assistant & the emotional trigger](screenshots/239-pero-phase1.png)
+
 ## 2026-07-25 — PERO PHASE 2 & PHASE 3 · THREE FORMS, THE THIRD IS ABSOLUTE (BEAT 176)
 
 Based on Toby's 2026-07-25 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to SLEEP FOREVER · CLASSICS BELONGS TO PERO). The email attaches two images (Phase 2 Pero.png, Phase 3 Pero.png) and opens with Toby's own canon paragraph; the "What these new phases say about Pero" breakdown below it is pasted ChatGPT commentary, not canon.
