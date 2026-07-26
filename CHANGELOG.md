@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-26 — 404 STRINGS ON SIMON 404 · AND PAUL'S NPC MOVEMENT (BEAT 183)
+
+Based on Toby's 2026-07-26 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about three minutes after the moveset email and building straight on it). Canon is Toby's own opening paragraph — all three sentences of it; everything under it ("Got it — this makes Paul's NPC status extremely important," "Pero using 404 strings," "Paul's reward," "Paul taking over the game," "Current meaning," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **Pero once used 404 strings on Simon 404** to stop him from getting to **Paul**. Paul was rewarded the **most powerful NPC Movement**. Paul **taken the whole game over with just 1 attack**.
+
+The only cross-reference drawn is to BEAT 182's moveset list, which is Toby's own: the Master Moveset holds everything in all Movesets plus Ability Copying, which is where Pero gets a 404 string in the first place, and only Pero has it, which is why Paul's reward sits at the top of the NPC one rather than above it. This follows BEAT 181, where Paul came out of the Tunner costume — the same rivalry, seen from Pero's side of it.
+
+Added a new BEAT 183 panel (loop cycle extended to `c` in [3744,3766), `LV_CYC` 3744 → 3766), plus its `LV_BEATS[183]` subtitle/ladder entry, a frame-title case, and an `npcmovement` capture scene. `LV_BEATS` now 184 entries (0-183). The palette is Simon's 404 magenta strings pulled taut over Paul's green, because the strings are his and they were used on him:
+
+- **HIS OWN STRINGS, USED ON HIM (left)** — nine 404 strings dropping in sequence with Simon 404 held under them and **HELD** stamped below, then the note that **404 strings are Simon 404's own power** while the Master Moveset holds everything in all Movesets and Ability Copying (marked "— FROM HIS OWN MOVESET LIST" so it is clear that is Toby's BEAT 182 canon, not commentary), closing on the reason in Paul's green: **TO STOP HIM FROM GETTING TO PAUL**.
+- **PAUL'S REWARD (center)** — Paul standing over a **NPC MOVEMENT — MAX** bar filled all the way, with "each character has a different NPC Moveset; Paul was rewarded the strongest movement of any of them," then a large **1** beside **ATTACK · THE WHOLE GAME TAKEN OVER**, ending on **THAT IS THE WHOLE FIGHT**.
+- **WHO WAS IN THE WAY (upper right)** — Simon 404 → Pero → Paul as three figures, with the arrow from Simon 404 crossed out in white: **SIMON 404 NEVER GOT THERE. PERO PUT THE STRINGS ON HIM FIRST.**
+- **WHERE THAT PUTS THEM (lower right)** — **MASTER · PERO** (the only one who has it, it holds every moveset) · **NPC · PAUL** (the most powerful NPC movement) · **NPC · EVERY OTHER CHARACTER** (each one has a different moveset), then "Paul does not have the Master Moveset — only Pero does. His reward is the top of the NPC one," and **AND IT WAS STILL ENOUGH FOR THE WHOLE GAME**.
+- **The strip** — PERO STEPPED IN (Simon 404 was going for Paul) · THE MOST POWERFUL NPC MOVEMENT (Paul's reward) · 1 ATTACK (the whole game taken over).
+- **Footers** — "HE USED SIMON 404's OWN STRINGS ON SIMON 404" and "★ ONE ATTACK — AND PAUL HAD THE WHOLE GAME ★".
+
+![BEAT 183 — 404 strings on Simon 404, and Paul's NPC Movement](screenshots/245-404-strings-npc-movement.png)
+
+## 2026-07-26 — THE AU BLUE & THE THREE MOVESETS (BEAT 182)
+
+Based on Toby's 2026-07-26 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," with an "Au Blue.png" image attached). Canon is Toby's own opening paragraph; everything under it ("Yes — that makes Au Blue way more important than just a random blue attack," "Au Blue canon update," "Why Au Blue is the strongest attack," "Moveset system," "Player Moveset," "NPC Moveset," "Master Moveset," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **The Au Blue** is the most powerful and OP attack in the game by far, since it **deletes everything it touches**, like a normal water drop from **Pero's water gun** — which is itself the **second most powerful ability**. The Au Blue is a **giant water drop from Pero's water blaster**, and **Pero KOs everything with that special move**. Only Pero has the Au Blue and the **Master Moveset**. Each ability is categorized by Moveset, and there are **three Movesets: Player, NPC, and Master**. Master Moveset includes Water Gun abilities, Au Blue, Ability Copying, everything in all Movesets, Creator/Admin abilities, and Pero can do anything. Player Moveset runs **Small Stick abilities through Real Knife abilities**. NPC Moveset is everything an NPC can do, and **each character has a different one**.
+
+This is the first time the game's abilities have been given a category system, and it sorts the whole cast at once: Pero alone at Master, everyone else split into NPC or player. It also puts the top two abilities in the game inside one goofy-looking weapon.
+
+Added a new BEAT 182 panel (loop cycle extended to `c` in [3722,3744), `LV_CYC` 3722 → 3744), a new `drawAuBlue` helper (a wobbling teardrop with a white highlight and ripple rings running out from under it, because the reach is the dangerous part), plus its `LV_BEATS[182]` subtitle/ladder entry, a frame-title case, and a `movesets` capture scene. The palette is the water blaster's blue over Classics black, with drops falling through the background — the whole beat is one drop of water:
+
+- **WHERE IT COMES FROM (left)** — the chain in Toby's order, **PERO'S WATER BLASTER ▾ A GIANT WATER DROP ▾ THE AU BLUE**, then the drop itself, then **IT DELETES EVERYTHING IT TOUCHES** over a row of seven blocks going out one after another, "like a normal water drop from Pero's water gun — just giant," closing on **PERO KOs EVERYTHING WITH THAT SPECIAL MOVE**.
+- **THE THREE MOVESETS (center)** — "each ability is categorized by Moveset," then three stacked cards: **PLAYER MOVESET** (Small Stick abilities ▾ Real Knife abilities) · **NPC MOVESET** (everything an NPC can do, each character has a different one) · **MASTER MOVESET** (only Pero has it, it holds everything in all the other movesets), the Master card outlined brighter than the other two.
+- **INSIDE THE MASTER MOVESET (upper right)** — the six things it holds, one per line: Water Gun abilities · the Au Blue · Ability Copying · everything in all Movesets · Creator/Admin abilities · Pero can do anything, closing on **ONLY PERO HAS IT**.
+- **THE TOP TWO ABILITIES (lower right)** — **1 THE AU BLUE** (the most powerful and OP attack in the game by far) and **2 PERO'S WATER GUN** (the second most powerful ability), with "both of them come out of the same water blaster — the first and the second strongest things in the game are one weapon," then **ONLY PERO HAS THE AU BLUE** and "and only Pero has the Master Moveset."
+- **The strip** — SMALL STICK ▸ REAL KNIFE (the Player Moveset path) · EACH CHARACTER HAS A DIFFERENT ONE (the NPC Moveset) · CREATOR / ADMIN ABILITIES (only in the Master Moveset).
+- **Footers** — "THE STRONGEST ATTACK IN THE GAME IS A DROP OF WATER" and "★ THE MASTER MOVESET IS NOT A BIGGER MOVESET — IT IS ALL OF THEM ★".
+
+![BEAT 182 — The Au Blue and the three Movesets](screenshots/244-au-blue-movesets.png)
+
 ## 2026-07-26 — PAUL PHASE 2 · "I AM NOT TUNNER" (BEAT 181)
 
 Based on Toby's 2026-07-26 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," the direct follow-on to THE ERROR HALL BATTLE, with a Paul(1).png image attached). Canon is Toby's own opening paragraph; everything under it ("Got it — Paul Phase 2 is now a massive hidden-rival reveal," "Paul Phase 2 reveal," "Paul vs Simon 404," "Paul's role," "Paul, Pero, and Luigi Green," "Pero loves Paul now," "Current power structure," "Mr. Black vs Simon 404," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
