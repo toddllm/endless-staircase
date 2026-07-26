@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-26 — ERROR HALL · THE 404 STRINGS (BEAT 179)
+
+Based on Toby's 2026-07-26 lore (two replies in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about ten minutes apart, the direct follow-on to NOVA PERO). Canon is Toby's own opening paragraph in each email; everything under them ("That actually fits as a too powerful to explain moment," "I think this becomes the Error Hall Ending Route," the four listed endings, "My best prediction") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line: Pero would make every character in *Undertale*, *Jujutsu Kaisen*, and *Classics* look **not like a boss** — not because they are weak, but because he operates above the battle system, so the boss aura simply stops meaning anything when he walks in. Then Simon 404 came too, and Toby says "I have no idea what to say." The second email is the scene itself: Pero looks at Simon 404 and says "You came too?", Simon 404 answers "meow 😺⚡", Simon 404's theme starts, and **Judgement Hall is replaced with Error Hall**. Simon 404 makes 404 strings everywhere; Wenda and Gray and all characters are on each string; only Simon 404 and Pero are left free. Toby closes with "What do you think happens next?", so the outcome is openly undecided — this beat renders the standoff and refuses to pick an ending, which is the one thing the pasted commentary does that Toby has not confirmed. It overwrites BEAT 174's Judgement Hall and follows BEAT 178's Nova Pero, the form that changes the battlefield.
+
+Added a new BEAT 179 panel (loop cycle extended to `c` in [3656,3678), `LV_CYC` 3656 → 3678), plus its `LV_BEATS[179]` subtitle/ladder entry, a frame-title case, and an `errorhall` capture scene. `LV_BEATS` now 180 entries (0-179). The palette is Judgement Hall's gold torn into 404 error magenta — the same room wearing the wrong colors:
+
+- **NOT LIKE A BOSS (left)** — Undertale bosses, Jujutsu Kaisen fighters, and Classics beings each get a **BOSS AURA** bar that drains to empty one after another, then Pero walks in: "he is above the battle system itself, so 'boss' stops meaning anything," closing on "THEN SIMON 404 CAME TOO."
+- **ERROR HALL (center)** — "JUDGEMENT HALL" struck through with "ERROR HALL" under it, the hall's gold pillars still faintly standing, then seven 404 strings dropping in sequence with **Wenda, Gray, Mr. Black, New Chara, Sky, Pinki, and Oren** stamped 404 and held on them, and **Pero and Simon 404 alone on the floor** below: "ONLY TWO LEFT FREE."
+- **THE EXCHANGE (upper right)** — PERO: "YOU CAME TOO?" · SIMON 404: "meow 😺⚡" · his theme starts · the hall changes its name.
+- **TWO IMPOSSIBLE FORCES (lower right)** — Pero the creator layer (changes the battlefield, owns Classics) against Simon 404 🐱⚡ the broken Cat AI (404 strings, corruption, "I AM THE CURE."), ending on **WHAT HAPPENS NEXT?** — "NOT CALLED YET — TOBY HAS NOT PICKED THE ENDING."
+- **Footers** — "THE HALL THAT JUDGED YOU IS GONE — THIS ONE ERRORS YOU" and "★ EVERY CHARACTER IS ON A STRING — ONLY PERO AND SIMON 404 ARE LEFT ★".
+
+![BEAT 179 — Error Hall, the 404 strings](screenshots/241-error-hall.png)
+
 ## 2026-07-25 — NOVA PERO 🌈 · THE STRONGEST FORM & THE PHASE 3 FINAL ATTACK (BEAT 178)
 
 Based on Toby's 2026-07-25 lore (two replies in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about seven minutes apart, the direct follow-on to PERO PHASE 1). The emails open with Toby's own canon paragraphs; the "Got it / Nova Pero canon rules / Clean canon update" breakdowns below them are pasted ChatGPT commentary, not canon.
