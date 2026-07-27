@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-27 — TUNNER IS PERO · AND PAUL IS NOT (BEAT 184)
+
+Based on Toby's 2026-07-27 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent the morning after the 404 strings email). Canon is Toby's own opening paragraph; everything under it ("Got it — important correction locked in," "Tunner / Pero / Paul identity rule," "Vessel rule," "Power ranking correction," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **Tunner is Pero, and Paul isn't.** Tunner and Paul **aren't the same character, they are always separate.** **Tunner holds Pero sometimes and sometimes vice versa.** **Paul goes with Pero and Tunner**, and **both are stronger than Paul.** Paul is **third/second strongest**.
+
+This is a correction beat rather than a new scene, so it is laid out as a rule sheet instead of a fight. It settles the identities behind BEAT 181, where Paul threw off a Tunner costume and said "I am not Tunner" — the costume was a costume, and the real Tunner was Pero the whole time, which is why that line was true in both directions. Nothing is deleted: BEAT 181 stands exactly as it was, this beat names who was who inside it.
+
+Added a new BEAT 184 panel (loop cycle extended to `c` in [3766,3788), `LV_CYC` 3766 → 3788), plus its `LV_BEATS[184]` subtitle/ladder entry, a frame-title case, a new `drawTunnerVessel` figure, and a `tunnerispero` capture scene. `LV_BEATS` now 185 entries (0-184). The palette is Pero's yellow for the shared identity against Paul's green for the one standing apart. `drawTunnerVessel` deliberately reuses the same shell shape as the Tunner costume in `drawPaulPhase2` — that is the shape Paul borrowed and threw away — with an `inside` parameter that raises Pero's light through it:
+
+- **THE SAME BEING (left)** — the Tunner vessel and Pero side by side with an equals sign between them, then **THE CARRYING GOES BOTH WAYS**: "TUNNER HOLDS PERO" over "AND SOMETIMES VICE VERSA," with two arrows pointing opposite directions and alternating in brightness so neither one is ever the fixed carrier. Closes on "neither one is the real one; whichever is holding the other, it is still the same being."
+- **ALWAYS SEPARATE (center)** — Paul with his cross and metal pipe over an equals sign **crossed out in red**, then **PAUL IS NOT TUNNER** and "Paul wore the costume and threw it off. The costume was never the character." Below the rule, **BUT HE GOES WITH THEM** — Tunner, Pero and Paul as three figures walking together, tagged **TRAVELS WITH THEM, NOT PART OF THEM**.
+- **BOTH ARE STRONGER (upper right)** — Pero and the Tunner vessel on one side of a greater-than sign, Paul on the other: **BOTH ARE STRONGER THAN PAUL. HE IS STILL THE ONE BELOW THEM.**
+- **THIRD / SECOND STRONGEST (lower right)** — both of Toby's lists, side by side. **COUNTED AS ONE:** 1 Pero/Tunner, 2 Paul. **LISTED SEPARATELY:** 1 Pero, 2 Tunner, 3 Paul. Then "both lists are correct; the number next to Paul only changes with how you count Pero," and **PAUL'S PLACE NEVER MOVES — ONLY THE COUNTING DOES**.
+- **The strip** — TUNNER IS PERO (one being, two names) · PAUL ISN'T (always a separate character) · THEY CARRY EACH OTHER (and Paul walks alongside).
+- **Footers** — "'I AM NOT TUNNER' WAS TRUE IN BOTH DIRECTIONS" and "★ TUNNER IS PERO · PAUL IS PAUL · THEY TRAVEL TOGETHER ★".
+
+![BEAT 184 — Tunner is Pero, and Paul is not](screenshots/246-tunner-is-pero.png)
+
 ## 2026-07-26 — 404 STRINGS ON SIMON 404 · AND PAUL'S NPC MOVEMENT (BEAT 183)
 
 Based on Toby's 2026-07-26 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about three minutes after the moveset email and building straight on it). Canon is Toby's own opening paragraph — all three sentences of it; everything under it ("Got it — this makes Paul's NPC status extremely important," "Pero using 404 strings," "Paul's reward," "Paul taking over the game," "Current meaning," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
