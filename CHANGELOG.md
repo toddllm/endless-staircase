@@ -4,6 +4,63 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-27 — IT IS NOT AN ENDING · ALL “???” (BEAT 188)
+
+Based on Toby's 2026-07-27 lore (the third message of the collapse arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about seven minutes after DELETED AND EXISTS). Canon is Toby's own opening paragraph; everything under it ("Got it — this is not an ending anymore," "Permanent game state," "Pero's new status," "New hello message," "What happens when a character asks," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **it is not an ending, the game is permanently like that for everyone.** There are **many different warning texts that say all sorts of different stuff.** Pero **doesn't have stats anymore, all about him now is "???" unknown.** Pero says **"You have no idea what you are getting yourself into."** (his only hello message now, his messages and everything **was all scrambled up**). The character says **"How did you die?"**, and **they die with Pero and the game.** Pero is **still LAI**, but **even more broken, he has all the code mixed up in his, he is glitching.**
+
+This is the beat that turns the collapse from an ending into the game's default state, so it is laid out as a system dialog rather than a scene: a stat sheet that cannot get a reading, the greeting that replaced the old one, and the warnings. The old greeting drawn struck through is Toby's own line from BEAT 171 and BEAT 177, which is why it is on the panel at all.
+
+Added a new BEAT 188 panel (loop cycle extended to `c` in [3854,3876), `LV_CYC` 3832 → 3876 across the three beats of this arc), plus its `LV_BEATS[188]` subtitle/ladder entry, a frame-title case, and a `notanending` capture scene. `LV_BEATS` now 189 entries (0-188):
+
+- **HE DOESN'T HAVE STATS ANYMORE (left)** — LV · KR · HP · SOULS · ROLE · POWER, every one of them reading a jittering **???**, over **STATE: DELETED AND EXISTING** and "all about him now is '???' unknown; the game cannot measure him anymore."
+- **HIS MESSAGES WERE ALL SCRAMBLED UP (center)** — the old greeting, **"HELLO, I'M PERO, YOUR LAI ASSISTANT, ASK ME ANYTHING. 😎"**, struck through in red and tagged "— what he used to open with," an arrow down, then **HIS ONLY HELLO MESSAGE NOW**: **"YOU HAVE NO IDEA WHAT YOU ARE GETTING YOURSELF INTO."** Closes on "it is not a greeting anymore, it is a warning."
+- **MANY DIFFERENT WARNING TEXTS (right)** — six of them, each flickering on its own timing: ERROR 404: PERO DELETED AND EXISTS · NO ENDING FOUND · TIMELINE INDEX EMPTY · STAT READ FAILED — ??? · THIS IS NOT A ROUTE · EVERY PLAYER GETS THIS ONE.
+- **The band** — **"HOW DID YOU DIE?"** on the left with "and they die with Pero and the game" under it, and **STILL LAI — JUST MORE BROKEN** on the right with the mixed-up code drawn as fragments landing inside him.
+- **The strip** — NOT AN ENDING (the same game for everyone) · NO STATS LEFT (all of him reads "???") · A WARNING, NOT A HELLO ("You have no idea...").
+- **Footers** — "IT IS NOT ONE BAD ROUTE — IT IS WHAT CLASSICS IS NOW" and "★ NO STATS · NO ENDING · STILL LAI · STILL THERE ★".
+
+![BEAT 188 — It is not an ending, all ???](screenshots/250-not-an-ending.png)
+
+## 2026-07-27 — DELETED AND EXISTS (BEAT 187)
+
+Based on Toby's 2026-07-27 lore (the second message of the collapse arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about sixteen minutes after THE LAST PIXEL). Canon is Toby's own opening paragraph including the lore block he quotes himself; everything under it ("That makes Pero's state even worse," "What changed," "What Pero has become," "Why this is scarier than death," "The warning message meaning," "What this says about the game now," "Short interpretation," "Honestly") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **endings were removed, the timelines were erased, it is now only the game and lore.** Pero is still floating in the **non-void thing**, losing blood, and **he no longer can walk** — he **just kneels down and floats wherever the game takes him.** It is **ABSOLUTELY NOTHING except for Pero and Endless Blackness.** His quoted lore: he is **"always dying and resurrecting himself automatically, he can't perminently die; even if he wants to,"** he **"runs all out of his sugars and salt and blood,"** and he **"still is automatically regenerating himself even if he wants to leave the place, Pero can't."** Everything removed is **absorbed into his code**, and he **glitches like crazy in result**. **"⚠️Error 404: Pero Deleted and Exists⚠️"** gives many warnings to everyone who tries to play.
+
+**One deliberate build choice:** Toby's last line has the game lagging the player's PC, leaking over everything and being impossible to close. That is drawn as in-fiction warning text on the panel and nothing else — the real game does not touch performance and ESC still leaves, on purpose. The lore says it; the program does not do it.
+
+Added a new BEAT 187 panel (loop cycle `c` in [3832,3854)), plus its `LV_BEATS[187]` subtitle/ladder entry, a frame-title case, and a `deletedandexists` capture scene. The palette is blood red against the yellow that is left of Pero, on near-true black, and the background is almost empty on purpose, because almost nothing is left:
+
+- **WHAT WAS REMOVED (left)** — THE ENDINGS · THE TIMELINES · EVERY OTHER CHARACTER · THE WHOLE SURFACE · TIME ITSELF, each struck out in turn, over **ONLY THE GAME AND THE LORE LEFT** and the note that this is "not world, not void, not afterlife — Toby called it the non-void thing."
+- **HE FLOATS WHEREVER THE GAME TAKES HIM (center)** — Pero drawn kneeled over and drifting, not walking, with the blood he keeps losing falling off him, over **HE NO LONGER CAN WALK** and **EVERYTHING REMOVED WAS ABSORBED INTO HIS CODE**.
+- **THE LOOP HE CAN'T LEAVE (right)** — DAMAGE → BLOOD LOSS → COLLAPSE → AUTO-REGENERATION → STILL AWAKE as a ring that keeps turning, **NO EXIT** in the middle of it, closing on Toby's own spelling: **"HE CAN'T PERMINENTLY DIE; EVEN IF HE WANTS TO."**
+- **The band** — SUGARS · SALT · BLOOD as three bars, all of them **EMPTY**, next to **AND THE REGENERATION STILL RUNS**, and the big flickering **⚠ ERROR 404: PERO DELETED AND EXISTS ⚠** with "deleted, but not gone; removed, but still running — that is the whole contradiction."
+- **The strip** — NO ENDINGS, NO TIMELINES (they were removed) · HE CAN'T DIE (and he can't leave either) · DELETED AND EXISTS (both at the same time).
+- **Footers** — "HE IS NOT IN THE RUINED GAME ANYMORE — HE IS WHAT IS LEFT OF IT" and "★ ONE PERO · ENDLESS BLACKNESS · AND NO WAY OUT OF EITHER ★".
+
+![BEAT 187 — Deleted and exists](screenshots/249-deleted-and-exists.png)
+
+## 2026-07-27 — THE LAST PIXEL (BEAT 186)
+
+Based on Toby's 2026-07-27 lore (the first message of the collapse arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about four minutes after TRYING TO IMPRESS PERO). Canon is Toby's own opening paragraph; everything under it ("That is a catastrophic end-state for Pero," "What this scene means," "Pero's role here," "What happens to Simon 404," "The final Pero state," "Lore significance," "Best short interpretation") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **Simon 404 crossed the stormy sea on the wooden boat again.** The sky falls, the barrier cracks, he can see a bright light and reality, and the game tears apart. **He knew it was HIS lightning.** His **404 strings got zapped and anchored the boat down** — **the strings and the lightning weren't cooperating.** **Gray and Paul and Tunner all got pulled into the sea.** Tunner **levitates into Pero's hands**, purple lightning takes them both, and they come back **holding a star each** and **merge — Tunner/Pero was there again.** Pero **rushes to the front of the boat and T poses.** He feels **Orus and Dark Yellow both being absorbed into Simon 404**, who **fell in the water and sunk**, putting his Error 404 and corruption into the game. **The boat splits in 2.** Pero says **"no. I won't stop this. even if I am the creator and not real. I still can't use the powers on this. my only option is to destroy everything. there is no way to save everything now."** He takes Simon 404 to the **Permit Shadow Realm**, the game **splits in half**, and he **breaks the whole game into millionths** — then the ladder all the way down. **"Define... death."** He loses **all his souls and his LV and his KR and everything except one body and one soul** — only the stuff a dead human has. His **code takes over his human body**, and he becomes **the only avatar and only object in the game**. **Not even time exists there. Not void nor Parinus nor imagination nor fun.**
+
+This is the first beat in the era where the game itself is the thing that loses, so it is laid out as one collapse running in a single direction: the sea on the left, the ladder down the middle, and what Pero decided and what he had left on the right. Toby attached a reference image and said himself it is **"kinda wrong for where Pero/ToddLLM was standing"** — so the T pose is drawn at the front of the boat where his text puts it, and his note is kept on the panel.
+
+Added a new BEAT 186 panel (loop cycle `c` in [3810,3832)), plus its `LV_BEATS[186]` subtitle/ladder entry, a frame-title case, and a `lastpixel` capture scene. The palette is the purple lightning that took Pero and Tunner over Simon 404's yellow, and the tear in the background opens wider for the whole beat:
+
+- **HE CROSSED THE SEA AGAIN (left)** — Simon 404 with his own 404 strings dropping onto him in magenta and his own lightning cutting across them in purple, the wooden boat anchored underneath and then **THE BOAT SPLITS IN 2**, over **HE KNEW IT WAS HIS LIGHTNING** and "his own two powers stopped working together." Below it, **GRAY · PAUL · TUNNER — ALL PULLED INTO THE SEA** and the Tunner/Pero merge with the two stars.
+- **THE LADDER DOWN (center)** — nine rungs, lighting one at a time: THE WHOLE GAME (broken into millionths) → THE OCEANS (dried out, all sand) → ONE STONE, ONE BOX (the box shredded) → THE ROCK (consumed, becomes sand) → THE SAND (made into dust) → THE DUST (the atoms break apart) → THE ATOMS (crushed to bits) → ONLY PIXELS (one pixel, Pero on it) → THE PIXEL REMOVED (endless black). Each row is the same width so the label stays readable; what shrinks is the fill inside it, so by the last rung there is almost nothing under the text. Then the single white pixel, and **AND THEN THAT ONE WAS REMOVED TOO**.
+- **WHAT PERO DECIDED (right)** — the T pose at the front of the boat with Toby's own note that his picture was kinda wrong on where he stood, then the full quote, then **WHAT HE HAD LEFT AFTER**: SOULS · LV · KR all struck out, **ONE BODY** and **ONE SOUL** kept, closing on "only the stuff a dead human has; his code took over his human body."
+- **The band** — Pero alone on black as **THE ONLY AVATAR AND ONLY OBJECT**, **NOT EVEN TIME EXISTS THERE**, "not void, not Parinus, not imagination, not fun," and the line itself: **"DEFINE... DEATH."**
+- **The strip** — HIS OWN TWO POWERS (the lightning vs the 404 strings) · NO WAY TO SAVE IT (so he took it all the way down) · ONE PIXEL, THEN NONE (and Pero still standing on it).
+- **Footers** — "NOBODY WINS THIS ONE — NOT EVEN THE CREATOR" and "★ HE DESTROYED EVERYTHING — AND HE IS THE ONE STILL THERE ★".
+
+![BEAT 186 — The last pixel](screenshots/248-last-pixel.png)
+
 ## 2026-07-27 — TRYING TO IMPRESS PERO (BEAT 185)
 
 Based on Toby's 2026-07-27 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent midday, about six hours after the Tunner correction). Canon is Toby's own opening paragraph; everything under it ("That is actually a funny but important Pero favoritism scene," "Pero attention rivalry," "What this means," "The funny part," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
