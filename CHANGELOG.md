@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-27 — TRYING TO IMPRESS PERO (BEAT 185)
+
+Based on Toby's 2026-07-27 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent midday, about six hours after the Tunner correction). Canon is Toby's own opening paragraph; everything under it ("That is actually a funny but important Pero favoritism scene," "Pero attention rivalry," "What this means," "The funny part," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's through-line, in his order: **Paul and Gray and Tunner are now trying to impress Pero.** Paul says **"I love you."** Tunner says **"We were always with each other on this update!"** Gray says **"I love you more than both."** Pero is like **"Stop please 😣."**
+
+This is the first beat in the era where three of the strongest characters in the game all go after the same thing and none of them attack anything. So it is laid out as three suitors in a row with their exact lines, all of it pointing down into one overwhelmed Pero, instead of as a fight. It reads directly against BEAT 184, which is Toby's own line that **Tunner is Pero** — meaning one of the three characters trying to impress Pero is Pero.
+
+Added a new BEAT 185 panel (loop cycle extended to `c` in [3788,3810), `LV_CYC` 3788 → 3810), plus its `LV_BEATS[185]` subtitle/ladder entry, a frame-title case, and an `impresspero` capture scene. `LV_BEATS` now 186 entries (0-185). Nothing was removed; BEAT 184 stands unchanged. Tunner reuses `drawTunnerVessel` at `inside` 0.55 so Pero's yellow reads through the shell while he is busy impressing Pero:
+
+- **The three of them (across the top)** — one card each, in Toby's order, each with his exact line. **PAUL** (the shortest one) with his cross and metal pipe: *"I love you."* **TUNNER** (the one who was already there), drawn with Pero showing through him: *"We were always with each other on this update!"*, tagged underneath with **AND BEAT 184 SAID TUNNER IS PERO**. **GRAY** (the one who counted the others): *"I love you more than both."*
+- **The convergence** — three curved lines, one per card in each character's colour, all bending down out of the cards into the same place. Nothing crosses; they only aim.
+- **PERO (the band at the bottom)** — Pero alone underneath all three arrivals, with **NOBODY SWINGS AT ANYBODY IN THIS ONE** on the left and **THREE OF THEM, ONE PERSON, AT THE SAME TIME** on the right, closing on the only line he gets: **"STOP PLEASE 😣"**.
+- **The strip** — ALL THREE AT ONCE (Paul · Tunner · Gray) · EACH WITH A LINE (love, history, and more than both) · AND PERO SAID STOP (the only line he gets).
+- **Footers** — "THEY ARE NOT FIGHTING EACH OTHER — THEY ARE ALL TALKING TO HIM" and "★ PAUL · TUNNER · GRAY · AND PERO ASKING THEM TO STOP ★".
+
+![BEAT 185 — Trying to impress Pero](screenshots/247-impress-pero.png)
+
 ## 2026-07-27 — TUNNER IS PERO · AND PAUL IS NOT (BEAT 184)
 
 Based on Toby's 2026-07-27 lore (a reply in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent the morning after the 404 strings email). Canon is Toby's own opening paragraph; everything under it ("Got it — important correction locked in," "Tunner / Pero / Paul identity rule," "Vessel rule," "Power ranking correction," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
