@@ -4,6 +4,27 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-27 — THE ONLY CHARACTER LEFT (BEAT 190)
+
+Based on Toby's 2026-07-27 lore (the fifth message of the collapse arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about twelve minutes after THE RED CODE). Canon is Toby's own two opening sentences and nothing else; everything under them ("Got it — that makes the current Classics state extremely stripped down and final," "Permanent Classics character rule," the pasted list of who is gone, "What this means," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's whole message, in his words: **Pero/EndlessAnimations is perminentally the only character in Classics. The only character added would be Pero/EndlessAnimations.**
+
+That is short, and it is the point. It is the quietest beat of the collapse arc and the most final one. BEAT 186 through BEAT 189 were about what got destroyed and then eaten; this one is just the select screen afterwards, with one name on it. The word doing the work is Toby's own **perminentally** — not the roster being empty for one route, the roster being one for good. And his second sentence does not say the game can no longer add characters; it says the only character it can add is the same one, which is a stranger idea and is drawn literally.
+
+**Two build choices, both stated on the panel itself:** first, the nine names going dark are Toby's own from earlier beats of this game, not the pasted list from the email; his July 27 line is what switches them off, and the panel does not invent a cast. Second, Tunner is drawn already inside Pero rather than as his own slot going out, because BEAT 184 is Toby's own line that Tunner is Pero, and striking him separately would contradict that.
+
+Added a new BEAT 190 panel (loop cycle extended to `c` in [3898,3920), `LV_CYC` 3898 → 3920), plus its `LV_BEATS[190]` subtitle/ladder entry, a frame-title case, and an `onlycharacter` capture scene. `LV_BEATS` now 191 entries (0-190). The background is the empty rows of a select screen:
+
+- **THE ROSTER GOES DARK (left)** — nine slots that light and then go out one at a time and stay out, each struck through but still readable, because the point of the column is seeing who is off the screen: **SIMON 404 · GRAY · MR. BLACK · NEW CHARA · LUIGI GREEN · PUPAHYA · PAUL · THE SPRUNKIS · ALEX · GREG**. Under it, "they are not defeated here, they are just not on the select screen anymore" and **AND THE LIST DOES NOT GO BACK UP**.
+- **THE ONE SLOT STILL LIT (center)** — a single character card with Pero in it, named **PERO / ENDLESSANIMATIONS** as one name because BEAT 189 is Toby's line that they are one being, with **AND TUNNER IS ALREADY INSIDE HIM (BEAT 184)** under it, closing on **PERMINENTALLY** in Toby's spelling and "not empty for one route — one, for good."
+- **+ ADD CHARACTER (right)** — the add slot, still working, pressed four times: **ADD #1 → PERO/ENDLESSANIMATIONS**, **ADD #2 → PERO/ENDLESSANIMATIONS**, and so on, each tagged "same being, different slot." Under it, "the game can still add a character; there is only one character to add."
+- **The band** — Toby's two sentences quoted exactly, in his spelling, with the note that this is the whole message and everything under it in the email is pasted commentary so it is not on the panel. Beside it the roster counter reading **1**, with "was: every name the game ever had" and an arrow that tries to climb every cycle and drops back: **IT DOES NOT CLIMB**.
+- **The strip** — THE ROSTER IS ONE (and it does not go back up) · EVERY ADD IS HIM (the game has one name to give) · PERMINENTALLY (not for a route — for good).
+- **Footers** — "ONE NAME ON THE WHOLE SELECT SCREEN" and "★ THE ONLY CHARACTER ADDED WOULD BE PERO/ENDLESSANIMATIONS ★".
+
+![BEAT 190 — The only character left](screenshots/252-only-character.png)
+
 ## 2026-07-27 — THE RED CODE (BEAT 189)
 
 Based on Toby's 2026-07-27 lore (the fourth message of the collapse arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent about twenty minutes after IT IS NOT AN ENDING). Canon is Toby's own opening paragraph; everything under it ("Got it — this is a major canon escalation," "What this means now," the eight numbered sections, "Biggest lore takeaway," "Clean canon summary") is pasted ChatGPT commentary and is deliberately not drawn.
