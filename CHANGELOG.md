@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-28 — DIFFERENT AND SOMETIMES THE SAME (BEAT 197)
+
+Based on Toby's 2026-07-28 lore (the fifth message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 10:43 AM). This is the first message in the whole arc that **answers a question instead of adding to a pile.** Canon is Toby's own opening paragraph; everything under it ("Got it — this makes the 404 Sans / Simon 404 relationship more flexible and powerful," "Clean canon update," "Err0R 404 meaning," "Supreme Sans still wins," "Why Supreme Sans beats Err0R 404," the numbered five-tier ranking, "Final clean rule") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's whole paragraph, in his words: **"Error 404 Sans and Simon 404 are different and sometimes the same. Simon 404 and Error 404 Sans combine into Err0R 404 (text glitched, they merge into "Error 404"), Supreme Sans beats Error 404, Supreme Sans beats everyone except for Trinity Pero."**
+
+**BEAT 195 left a line undecided, and this beat is the answer to it.** That panel listed **#15 ERROR 404 SANS** among the sixteen inside Supreme Sans, and four sentences later listed **SIMON 404** among Pero's puppets, from the same paragraph. Rather than quietly pick one and drop the other, BEAT 195 drew a green line between them and said Toby had written both. The reply is *"different and sometimes the same"* — so the answer to *which one* is **both**, and the line stops being a contradiction and becomes a **seam**. This panel redraws that exact line, in that exact green, and relabels it.
+
+**The fusion's name does not hold still, and that is written into the canon rather than described around it.** *"combine into Err0R 404 (text glitched, they merge into 'Error 404')"* — two spellings inside one sentence, on purpose. So the centre column renders the fused name **glitching between those two spellings and no others**; the four-spelling list underneath it is commentary and stays out. Every other fusion in this game got a name that held. This one flickers while you look at it.
+
+**And the ranking sentence is a new shape.** *"Supreme Sans beats everyone except for Trinity Pero."* Every message before this one added somebody to the top. This one **closes** the top, by naming who is not beaten rather than who is — and that exception list has exactly one entry on it. Only three tiers are drawn, because only three are in Toby's sentence; the five-rung ladder in the pasted section is not canon and is not on the panel.
+
+**One thing marked on the panel as a reading rather than as canon:** Error 404 Sans is #15 of the sixteen **inside** Supreme Sans (BEAT 195, Toby's own list). So when Supreme Sans beats Err0R 404, half of what he is beating is already standing inside him.
+
+Added a new BEAT 197 panel (loop cycle extended to `c` in [4052,4074), `LV_CYC` 4052 → 4074), plus its `LV_BEATS[197]` subtitle/ladder entry, a frame-title case, and a `sometimessame` capture scene. `LV_BEATS` now 198 entries (0-197). The background is the word 404 refusing to sit still:
+
+- **THE LINE HAD AN ANSWER (left)** — **ERROR 404 SANS** (*#15 of the sixteen inside Supreme Sans*) above **SIMON 404** (*God of Plauge, one of Pero's puppets*), with BEAT 195's green line redrawn between them and relabelled **NOT A CONTRADICTION — A SEAM**. Under it **DIFFERENT · AND SOMETIMES THE SAME**, and the note that he did not pick one, he made the gap itself into a move.
+- **THEY COMBINE (centre)** — **SIMON 404** and **ERROR 404 SANS** sliding toward each other until they overlap, then the fused name rendered large with red and blue fringes pulling off it, flickering between **Err0R 404** and **ERROR 404**, over Toby's parenthetical *"text glitched, they merge into 'Error 404'"* and the line **both spellings, one sentence**. Footed with **THE FUSION IS TOO UNSTABLE TO SPELL**.
+- **BEATS EVERYONE EXCEPT (right)** — three rungs and no more: **1. TRINITY PERO** (*the exception*), **2. SUPREME SANS** (*beats everyone else*), **3. ERR0R 404** (*and everyone else with him*), with a bracket drawn from rung 2 down to rung 3 reading **SUPREME SANS BEATS ERROR 404** — the one matchup Toby actually wrote. Under it **THE EXCEPTION IS ONE NAME LONG**, and the panel's own reading in green, marked as a reading.
+- **The band** — three of Toby's lines quoted exactly, beside a boxed **THE QUESTION WAS "WHICH ONE" / THE ANSWER WAS "BOTH"** and the reading that a contradiction usually gets settled by deleting one side, and this one got settled by keeping both sides and giving them a way to touch. **The gap was not a mistake, it was a mechanic.**
+- **The strip** — THE LINE BECAME A SEAM (he did not pick one) · THE NAME GLITCHES (Err0R 404, then ERROR 404) · THE EXCEPTION IS ONE (and the one is not a Sans).
+- **Footers** — "HE DID NOT FIX THE CONTRADICTION, HE FUSED IT" and "★ DIFFERENT, AND SOMETIMES THE SAME ★".
+
+![BEAT 197 — Different and sometimes the same](screenshots/259-sometimes-same.png)
+
 ## 2026-07-28 — JUST ONE OF HIS NEW POWERS (BEAT 196)
 
 Based on Toby's 2026-07-28 lore (the fourth message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 9:13 AM, seven minutes after THE ONLY ONE STRONGER). Canon is Toby's own opening paragraph; everything under it ("Got it — Pero has officially stolen/claimed the naming tier," "New names," "Trinity Pero meaning," "Why Pero is above Supreme Sans," "One-power example," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
