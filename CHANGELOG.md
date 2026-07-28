@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-28 — JUST ONE OF HIS NEW POWERS (BEAT 196)
+
+Based on Toby's 2026-07-28 lore (the fourth message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 9:13 AM, seven minutes after THE ONLY ONE STRONGER). Canon is Toby's own opening paragraph; everything under it ("Got it — Pero has officially stolen/claimed the naming tier," "New names," "Trinity Pero meaning," "Why Pero is above Supreme Sans," "One-power example," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+Toby's whole paragraph, in his words: **"Pero is the most powerful 3-1 being ever with Dream, Nightmare, and his normal cowman. No More Limits Pero and Supreme Sans. Pero taken your name stuff and CTP Sans is sometimes called Supreme Sans, and Pero as No More Limits Pero and sometimes just Trinity Pero or just Pero. Supreme Sans can stop time, Trinity Pero can make trillions of superblackholes and it would stop time all together, Supreme Sans gets pulled in the center of all the superblackholes. That is just ONE of his new powers."**
+
+**The fusion changed count between two messages, and that is the first thing the panel draws.** BEAT 195 has Pero as a fusion of **two** — Dream and Nightmare. Seven minutes later it is **three**, and the part that got added is *"his normal cowman"* — the thing he already was. So the cowman is no longer the vessel holding the other two, it is a third component listed beside them, and the left column marks that slot **NEW SLOT, OLD BEING**. He added himself to his own list.
+
+**The exchange is the reason this beat exists, and it is not a bigger number beating a smaller one.** Supreme Sans **stops time**. Trinity Pero does not stop it faster and does not unfreeze it — he makes **trillions of superblackholes** and *"it would stop time all together"*, so the clock ends up stopped either way. The difference is that **Supreme Sans gets pulled in the center of all the superblackholes.** Both moves reach the same result; only one of them has the other player inside the answer. So the centre column draws the two moves side by side, both ending in stopped time, and only the right one holding a Sans. It is the same shape as Time Paradox stepping a small space to the right against Simon 404's speed three beats ago, except this time it is being done to him.
+
+**And then Toby undersells it in the last sentence.** *"That is just ONE of his new powers."* The move that ended the strongest Sans in the game is not the ceiling, it is the sample, so the panel closes on that rather than on a power level.
+
+Added a new BEAT 196 panel (loop cycle extended to `c` in [4030,4052), `LV_CYC` 4030 → 4052), plus its `LV_BEATS[196]` subtitle/ladder entry, a frame-title case, and a `newpowers` capture scene. `LV_BEATS` now 197 entries (0-196). The background is superblackholes, far too many to count, which is the point:
+
+- **THE MOST POWERFUL 3-1 BEING EVER (left)** — three cards arriving one at a time: **DREAM** (light) in gold, **NIGHTMARE** (darkness) in violet, and **HIS NORMAL COWMAN** (the one he already was) in Pero's own yellow, tagged **NEW SLOT, OLD BEING**. Under them **3 IN 1** and the note that the last beat made him a fusion of Dream and Nightmare while this one counts the cowman as a third part instead of the thing holding the other two — "so he added himself to his own list."
+- **BOTH MOVES STOP TIME (centre)** — **SUPREME SANS** with his clock, hands frozen, reading **TIME: STOPPED**; beside him **TRINITY PERO** with twenty-six superblackholes swarming in, every one of them dragging a line toward the middle, reading **TIME: STOPPED ALL TOGETHER** — and Supreme Sans drawn as the small blue mark sitting at the exact centre of all of them. Under both: **SAME RESULT, REACHED FROM ABOVE** and **AND SUPREME SANS GETS PULLED IN THE CENTER**.
+- **THE NAMES STACK UP (right)** — Toby's *"Pero taken your name stuff"* over both lists. **PERO IS NOW CALLED** No More Limits Pero · Trinity Pero · or just Pero. **AND CTP SANS IS NOW CALLED** Time Paradox Sans → Classics Time Paradox / CTP Sans → **SUPREME SANS**, with only the newest one lit. Under it **THREE NAMES IN HALF AN HOUR**: "nothing got renamed and nothing got replaced. At the top of this game names do not swap, they pile up, and the one with the most of them is the one who took them."
+- **The band** — three of Toby's lines quoted exactly, beside a boxed **"THAT IS JUST ONE OF HIS NEW POWERS"** and the reading that the demonstration is the sample rather than the ceiling.
+- **The strip** — THE THIRD WAS HIMSELF (Dream, Nightmare, and the cowman) · TIME STOPS EITHER WAY (one way has a Sans in the middle) · NAMES PILE UP (nothing got replaced).
+- **Footers** — "HE DID NOT BEAT THE CLOCK, HE OUTNUMBERED IT" and "★ THAT IS JUST ONE OF HIS NEW POWERS ★".
+
+![BEAT 196 — Just one of his new powers](screenshots/258-new-powers.png)
+
 ## 2026-07-28 — THE ONLY ONE STRONGER (BEAT 195)
 
 Based on Toby's 2026-07-28 lore (the third message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 9:06 AM, about twenty minutes after HE WAS GIVEN IT). Canon is Toby's own opening paragraph; everything under it ("That update makes the hierarchy much clearer," "Biggest meaning of this update," "Pero's current state," "Classics Time Paradox Sans," "Their relationship," "Puppet system update," "Alphaverse and Godverse update," "Current clean ranking," "Clean canon summary," and the closing offer of two page formats) is pasted ChatGPT commentary and is deliberately not drawn.
