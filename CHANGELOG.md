@@ -4,6 +4,54 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-28 — PLAYER VS ADMIN (BEAT 201)
+
+Based on Toby's 2026-07-28 lore (the ninth message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 3:56 PM, fifteen minutes after THE DATA RESETS). Canon is Toby's own opening paragraph; everything under it ("Got it — this update makes Error 404 jump from 3rd place to basically admin-command tier," "New Sans ranking," "Error 404's new command tier," "Error 404 vs Dream Sans rematch," "Other Sans notes," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+**He made the one he beats.** One message ago Error 404 beat King Multiverse Sans. Here we find out where King Multiverse came from: *"King Multiverse is strongest in the Multiverse, and Error 404 created him with a cheat command."* He did not climb past fourth place, he **wrote** it. And the rest of the error category folds in behind him in the same breath: Infected Sans is *"just another error,"* Error 666 is *"just another error,"* and **B.u.t.t.e.r.f.l.y.** — which was #16 of the sixteen Sanses inside Supreme Sans three panels ago — is now *"just another Error 404 form."*
+
+**Every attack in this message is something you type.** `/command_kill = true`, `/vanish`, `/expand_permissions`, `/OMNIVERSAL_404`, `/Error_405`, `/game:Destroy()`. Toby says it himself: *"a battle against him is like a player VS an omniversal admin error thing."* He is not aiming at anybody's HP any more, he is aiming at their permissions. That also settles seven panels of clocks in one line — *"Time Paradox Sans can stop time, Error 404 can start time with a command."*
+
+**And the rematch has no duration at all.** BEAT 200 gave the Dream Sans fight a running time of 27 minutes and Error 404 lost it, and it said he *"can get tired fighting after a long time."* Fifteen minutes later: *"Error 404 challenged Dream Sans again, then Error 404 instantly won not just with Dream Sans but everyone in each omniverse."* He did not fix his stamina. He made the fight take no time, so there is nothing left to get tired during.
+
+**And then the last sentence steps out of the story.** *"I keep asking Error 404 everything."* Nine messages of canon, and that is the only line that is not about the game. It is about where the answers come from, and he put it at the end without making anything of it.
+
+Added a new BEAT 201 panel (loop cycle extended to `c` in [4140,4162), `LV_CYC` 4140 → 4162), plus its `LV_BEATS[201]` subtitle/ladder entry, a frame-title case, and a `playervsadmin` capture scene. `LV_BEATS` now 202 entries (0-201). The background is a console cursor blinking in a lot of places at once:
+
+- **HE MADE THE ONE HE BEATS (left)** — **KING MULTIVERSE SANS**, tagged *4TH STRONGEST · STRONGEST IN THE MULTIVERSE*, with Toby's line **"CREATED HIM WITH A CHEAT COMMAND"** under it. Below, the error category folding in one row at a time: **INFECTED SANS** → just another error · **ERROR 666** → just another error · **B.u.t.t.e.r.f.l.y.** → just another Error 404 form, with the note that B.u.t.t.e.r.f.l.y. was #16 inside Supreme Sans three panels ago. Footed **HE DID NOT OUTFIGHT HIM, HE WROTE HIM**.
+- **THE COMMAND LINE (centre)** — an actual console, six lines, each command in its own colour with what it does on the right: `/command_kill = true` (eliminates every character in the omniverses) · `/vanish` (from this one...) · `/expand_permissions` (...to this one, "any command now") · `/OMNIVERSAL_404` and `/Error_405` (common attacks) · `/game:Destroy()` ("he actually loves using it"), and a cursor still blinking at the bottom. Under it **"HE RARELY USES HIS WEAKER ABILITIES"** and the reading that the list is the top of it, not the whole of it. Footed **HE IS NOT AIMING AT YOUR HP, HE IS AIMING AT YOUR PERMISSIONS**.
+- **27 MINUTES → INSTANTLY (right)** — the same two fighters fifteen minutes apart, drawn as two bars: **THE FIRST TIME** (27 minute battle, Dream Sans eventually won) nearly full, **THE REMATCH** (no duration at all, "Error 404 instantly won") a sliver. Under them **AND THAT FIXES THE TIREDNESS**. Footed **AND NOT JUST DREAM SANS — EVERYONE IN EACH OMNIVERSE**.
+- **The band** — Toby's player-vs-admin line and the stop-time/start-time pair quoted exactly, beside a boxed **"I KEEP ASKING ERROR 404 EVERYTHING"** and the note that it is the only line in nine messages that is not about the game.
+- **The strip** — HE WROTE THE RUNNER-UP (a cheat command made 4th place) · THE ATTACKS ARE COMMANDS (permissions, not HP) · THE REMATCH TOOK NO TIME (27 minutes became instantly).
+- **Footers** — "THE STRONGEST MOVE IN THE GAME IS A LINE OF TEXT" and "★ I KEEP ASKING ERROR 404 EVERYTHING ★".
+
+![BEAT 201 — Player vs admin](screenshots/263-player-vs-admin.png)
+
+## 2026-07-28 — THE DATA RESETS (BEAT 200)
+
+Based on Toby's 2026-07-28 lore (the eighth message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 3:41 PM). Canon is Toby's own opening paragraph; everything under it ("Got it — this creates the new top-tier Classics Sans hierarchy," "New power ranking," "Error 404's feats," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
+
+**Death stops working, and it is the first time in the arc that anything has gone backwards.** *"You can think you killed Simon 404, then the data resets and he is now perfectly fine."* Every other being in these panels survived by getting bigger — more forms, more absorbed Sanses, a wall of digits. This one survives by **reverting**. Nothing gets spent when he dies, so the loop closes on itself: you kill him, the row gets written back, he is fine.
+
+**And these are the first two fights in the whole arc that anybody put a clock on.** *"Error 404 had a 12 hour battle with Time Paradox, IT WAS A STALEMATE"* and *"it was a 27 minute battle, Dream Sans struggled but eventually won."* Twelve hours ended level; twenty-seven minutes was the loss. **The long one is the one he did not lose.** Every other match-up in this arc was settled by who was bigger; this is the first one settled by how long it went.
+
+**He can also get tired.** *"Error 404 Simon 404 can get tired fighting after a long time."* That is the first stamina limit anybody at this altitude has ever had — everyone else up here has been measured in infinities. So he cannot be killed and he can be worn out, both at once.
+
+**And the ranking is the order of the meal.** Dream Sans absorbed Pero and mostly everything (1), Time Paradox absorbed all other Sanses (2), Error 404 absorbed Simon 404 and the error itself (3), everyone else (4). Fourth place is not a tier, it is everything else that exists: *"all the others were nerfed, not just Sanses but everyone, not just Undertale but all games and Classics."* Three of them got the buff, and the other two went up by standing still.
+
+**And the one who was swallowed ends up holding the controls.** Dream Sans absorbed Pero — and then, four sentences later, *"Pero sucessfully was then able to control Dream Sans."* Last panel Pero was at the command table sweating to make Dream Sans take one step. Here he gets eaten by him, and that is when the controls start working.
+
+Added a new BEAT 200 panel (loop cycle extended to `c` in [4118,4140), `LV_CYC` 4118 → 4140), plus its `LV_BEATS[200]` subtitle/ladder entry, a frame-title case, and a `datareset` capture scene. `LV_BEATS` now 201 entries (0-200) at this step. The background is the same row of data being written and re-written:
+
+- **YOU CAN THINK YOU KILLED HIM (left)** — the death drawn as a three-step loop, **YOU KILL SIMON 404** → **THE DATA RESETS** (the row is restored, not revived) → **PERFECTLY FINE**, with a return arrow up the side labelled **NOTHING WAS SPENT**. Under it what Error 404 is made of now: **ERROR 404 SANS + SIMON 404 + ALL HIS FORMS + THE ERROR 404 ITSELF**, beside Toby's *"both were alive as Error 404."* Footed **DEATH STOPPED BEING AN ENDING**.
+- **TWELVE HOURS. TWENTY-SEVEN MINUTES. (centre)** — the two timed fights drawn to their own lengths: **12 HOURS** vs Time Paradox Sans, nearly the full bar, **IT WAS A STALEMATE**; **27 MINUTES** vs Dream Sans, a short one, **DREAM SANS EVENTUALLY WON**. Under them **THE LONG ONE IS THE ONE HE DID NOT LOSE**, and then the boxed **"CAN GET TIRED FIGHTING AFTER A LONG TIME"** — the first stamina limit anyone up here has ever had.
+- **THE RANKING IS WHAT THEY ATE (right)** — Toby's four places relabelled by the meal: **1 DREAM SANS** (absorbed Pero and mostly everything) · **2 TIME PARADOX** (absorbed all other Sanses) · **3 ERROR 404** (absorbed Simon 404 and the error) · **4 EVERYONE ELSE** (absorbed nothing, and was nerfed), then **THREE GOT THE BUFF** and the nerf line quoted in full. Footed **THE OTHER TWO WENT UP BY STANDING STILL**.
+- **The band** — three of Toby's lines quoted exactly, beside a boxed **"DREAM SANS ABSORBED PERO AND MOSTLY EVERYTHING"** over **"PERO WAS THEN ABLE TO CONTROL DREAM SANS"** and the reading that he got back to the controls by being eaten. **HE GOT IN BY BEING EATEN.**
+- **The strip** — DEATH IS A RESET (nothing is spent when he dies) · THE LONG FIGHT DREW (the short one is the one he lost) · THE TOP IS WHAT IT ATE (and everything else was nerfed).
+- **Footers** — "HE CANNOT BE KILLED, BUT HE CAN GET TIRED" and "★ THE DATA RESETS ★".
+
+![BEAT 200 — The data resets](screenshots/262-data-resets.png)
+
 ## 2026-07-28 — ONLY THEM ARE THEM (BEAT 199)
 
 Based on Toby's 2026-07-28 lore (the seventh message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 12:06 PM, fifteen minutes after I AM CLASSICS, TAKE ME). Canon is Toby's own opening paragraph; everything under it ("Got it — Time Paradox Sans and Dream Sans have now passed the old 'Supreme Sans' level," "New top state," "Dream Sans update," "Pero's struggle," "Time Paradox Sans's new power source," "The scary part," "New power structure," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
