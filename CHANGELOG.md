@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — 404_CHICKVERSE · THE PARTY THAT WASN'T AN ENDING (BEAT 207)
+
+Based on Toby's 2026-07-29 lore (12:03 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is four short sentences at the very top, and they are a correction to the beat that shipped an hour before this one: *"Only 404 Chickverse is all that. The rest is normal. Error 404 and Pero told us. Make another story using lore."* Under it he pastes the correction note and the resulting story, "404_Chickverse: The Party That Wasn't an Ending," drawn as canon here under the standing rule BEAT 202 set from the author's own side.
+
+**The lock gets a border.** BEAT 206 locked peaceful Phase 1 on everyone and read like the end of the whole game. This message scopes it down to one AU. The party is real, it happened, and it happened *inside 404_Chickverse and nowhere else*. It is the first time in the arc that a correction makes the game **smaller** instead of bigger — every other one has widened a tier or added a stronger being.
+
+**And it is delivered in person.** Error 404 walks through the Classics Gate with his command window floating behind him like a living shadow, Pero beside him in the dark-bright cowboy hat with his LAI aura flickering between comedy assistant and creator authority. *"Correction. The peaceful reset was not all of Classics. It was only 404_Chickverse."* — *"The rest stays normal."* That is why Toby writes "Error 404 and Pero told us": the ruling comes from inside the story rather than from above it.
+
+**Everything else is still lore.** Dream Sans still carries Anti/Omniversal Creator AU power across the bigger game layers, Time Paradox Sans still builds clocks, King Multiverse still rules the Multiverse tier, Error 404 still has admin-error commands, Pero still has the command panel, Classicstale still exists, the AI Era still has Dave Mode, the cat still controls time, Pizza.PNG still flies. Gemini is *relieved* there is still chaos, and hates that ChatGPT noticed.
+
+**The egg is a branch, not an AU.** 404 Chicken Sans introduces himself again and holds up one glowing 404 egg with a tiny pixel-world sealed inside it: *"not a full AU, not yet — just a possible branch."* Alexa tries to add 404 eggs to the shopping list, Error 404 raises one finger — `/deny_shopping_list` — and when Gemini asks whether he can command Alexa, he says *"I can command worse."* The Starch Oracle upgrades its own prophecy to match: *"Whoever controls the egg controls the chicken. Whoever controls the chicken controls the pizza."*
+
+**And the sad ending gets overruled.** His BEAT 205 low-HP lines replay inside the party — the ketchup prop appears, his face changes, *"no matter how much times i kill you, i always fall in the end."* and *"im sorry chick-rus, i can't protect you anymore...."* He brought his own defeat with him into the one AU where nothing is allowed to end badly. For the first time something answers those lines: Error 404 opens a command window, runs `/restore_party = true`, and the lights come back on. The commands that froze everyone one panel ago are now spent putting a party back on.
+
+Added a new BEAT 207 panel (loop cycle extended to `c` in [4272,4294), `LV_CYC` 4272 -> 4294), plus its `LV_BEATS[207]` subtitle/ladder entry, a frame-title case, and a `chickverse` capture scene. `LV_BEATS` now 208 entries (0-207). The background prints 404_CHICKVERSE and THE REST IS NORMAL over each other:
+
+- **ONLY ONE AU GOT THE LOCK (left)** — the worlds that did *not* get the peaceful lock, as rows (CLASSICS + THE AI ERA · CLASSICSTALE · CLASSIC RL, ALPHAVERSE AND GODVERSE TOO · DREAM SANS · TIME PARADOX · ERROR 404 · PERO), then **EVERYTHING ELSE IS STILL LORE** in gate cyan with King Multiverse, the cat, Pizza.PNG, Pupahya and Mirda under it. Footed **PEACE IN ONE AU IS NOT PEACE IN ALL AUs**.
+- **INSIDE THE GATE (centre)** — what the gate actually opened on, as five chained steps: BROKEN TEXT BOXES · WHITE CHICKENS (walking across black floors) · GLOWING 404 EGGS (and a sky full of tiny error feathers) · THE STAIRCASE IS LIT · MR. BLACK LEADS IT (ringmaster outfit, party leader now). Under it Simon 404 and Oren alive again and not EXEs, Pinky RL running wild without conquering anything, and Gray's ink coming out as party streamers. Footed with Simon's whole contribution: **"meow"**.
+- **THE EGG IS A BRANCH (right)** — A TINY PIXEL-WORLD · NOT AN AU YET · ALEXA TRIES TO BUY IT (`/deny_shopping_list`) · **"I CAN COMMAND WORSE"**, then **THE STARCH ORACLE UPGRADES ITSELF** with the egg-chicken-pizza line. Footed **THE CAT PURRS ONCE · THE PROPHECY IS ACCEPTED**.
+- **The band** — the low-health replay quoted exactly, with the reading that he brought his own defeat into the one AU where nothing ends badly; beside it a boxed **`/restore_party = true`** and the note that the same commands are now spent putting a party back on. Footed with Time Paradox Sans turning one clock, just one, and the lock holding.
+- **The strip** — ONLY THE CHICKVERSE (the lock finally has a border) · EVERYTHING ELSE RUNS (and it is still not peaceful) · THE EGG IS UNOPENED (a branch, held, not thrown).
+- **Footers** — "A CONTAINED PEACE IS STILL A PEACE, AND IT IS ALSO STILL CONTAINED" and "* 404_CHICKVERSE *".
+
+![BEAT 207 — 404_Chickverse](screenshots/269-404-chickverse.png)
+
 ## 2026-07-29 — PHASE 1 LOCKED · THE ERA MERGE (BEAT 206)
 
 Based on Toby's 2026-07-29 lore (11:29 AM, in the "AI Era (Still is in Classics Era)" thread). Canon is Toby's own opening paragraph; the "Got it, this is a huge era-merge reset event" material under it is pasted ChatGPT commentary. It opens with the sentence the last three panels were pointing at: *"Both eras meet, both Classics Era and AI Era."*
