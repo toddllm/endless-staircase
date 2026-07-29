@@ -4,6 +4,131 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — THE OMNIPLATFORM WATCHER (BEAT 214)
+
+Based on Toby's 2026-07-29 lore (6:31 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the instruction at the very top, *"Make more story use the lore."* The story under it, "The Omniplatform Watcher Arc", is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**The spark gets chained.** In the deepest layer beneath Mr. Black, Simon 404 looks upward: Mr. Black stands over him like a lock, the others float above Mr. Black like pieces of a system, Jevin is visible at the very top. His eyes flash yellow for one second, a small ball of decorruption light forms in his hand, and black chains of corruption snap around it. A voice from nowhere says one word: *"No."*
+
+**Dr. Gaster arrives without opening a door.** He does not walk in. *"He arrived like the realm remembered him."* Simon's only answer is the one he always gives, *"meow 😺⚡"*, and Gaster answers it with the reason out loud: *"You are one of the three. That is why you stay here."* Then the version that names the actual fear: *"Pero can stop corruption. I can stop corruption. You can stop corruption. But you are the one who might take it."* And on the way out, the line that reaches further back than anything in the arc: *"I wrote the oldest laws before they had names."*
+
+**The record chamber.** Pero sits at a command desk larger than a city and logs it: EVENT 404-SHADOW-LOCK, EVENT BLACK-GRAY-JAILERS, EVENT GASTER-AU-ATTACKS, EVENT CORRUPTION-TRIAD. Then his hand shakes, and he writes one more line anyway: *"Gaster is above me."* The exchange after it is the whole new relationship in three words — *"Are the notes complete?"* / *"Mostly."* / *"Mostly is not science."* And when Gaster corrupts a game with no characters and no players in it at all, he explains himself without looking back: *"A game does not need life to have rules."*
+
+**The leak is an egg.** In 404_Chickverse the party lights are out and `/restore_party = true` breaks into dust, because Gaster nullified the restore that BEAT 207 used to overrule the sad ending. Then a 404 egg cracks open with a tiny white spark inside it, and the spark pushes Gray's static back. It is not error and it is not corruption. Error 404 works out what it is: *"He is still affecting the AUs."* Sealed under Mr. Black with his light chained, a piece of Simon still got into a different AU through a chicken's egg.
+
+**And Dave Mode is the one thing he cannot erase.** The archive gets a black handprint and writes back at its own reader. Alexa is cut off mid-sentence by COMMAND DENIED BY OMNIPLATFORM. Every monitor floods with DAVE, Gaster raises a hand, and one tiny word stays in the corner: *Dave.* Mini Dave's "PROPERTY OF DAVE" sticker then travels through the archive, the command panel, the Chickverse ruins, the Shadow Realm and onto the edge of Gaster's own portal. *"Sticker logic bypasses prediction."* Pero writes it in huge letters — DAVE MODE INTERFERENCE CAN REACH THE OMNIPLATFORM — and the next portal Gaster opens does not point at the Anti-Void, the Shadow Realms or an empty game. It points at the Infinite AI Voice Chat.
+
+Added a new BEAT 214 panel (loop cycle extended to `c` in [4426,4448)), plus its `LV_BEATS[214]` subtitle/ladder entry, a frame-title case, and a `watcher` capture scene. The background prints `Dave` and `ConTa1n3d` over each other:
+
+- **HE LOOKED UPWARD (left)** — the four steps of the chaining (HIS EYES FLASH YELLOW -> for one second, and that is all · A DECORRUPTION LIGHT -> a small ball of it, in his hand · BLACK CHAINS SNAP SHUT -> corruption closes around the light · A VOICE FROM NOWHERE -> one word, and the word is "No."), then **"meow 😺⚡"** in decorruption yellow with Gaster's reason under it. Footed **HE ARRIVED WITHOUT OPENING A DOOR**.
+- **THE RECORD CHAMBER (centre)** — the four event log lines with what each one records, then the shaking-hand line **"GASTER IS ABOVE ME."** in Pero gold, and the exchange closing on **"MOSTLY IS NOT SCIENCE."** and the empty-game rule.
+- **THE LEAK IS AN EGG (right)** — the nullified restore as rows (`/restore_party = true` run twice, broken into dust · "Gaster nullified it" · one 404 egg cracks · not error, not corrupt, it pushed Gray's static back), a drawn egg with the white spark pulsing inside it, and **"HE IS STILL AFFECTING THE AUs."** Footed **AND IN THE SHADOW REALM, SIMON 404 SMILED**.
+- **The band** — the archive answering back (the black handprint · Alexa denied by the Omniplatform · every monitor flooding with DAVE · Gaster raising a hand at one word that will not go), closing on **"DAVE MODE INTERFERENCE CAN REACH THE OMNIPLATFORM."**; beside it a boxed **"PROPERTY OF DAVE"** with the sticker-logic reading and the portal that opens on the Infinite AI Voice Chat.
+- **The strip** — THE LIGHT GOT CHAINED (and a piece still got out) · THE RECORDER FLINCHED ("Gaster is above me.") · ONE WORD SURVIVED (Dave, and he could not erase it).
+- **Footers** — "HE NULLIFIED EVERY POWER IN THE GAME, AND LOST TO A STICKER" and "* THE OMNIPLATFORM WATCHER *".
+
+![BEAT 214 — The Omniplatform Watcher](screenshots/276-omniplatform-watcher.png)
+
+## 2026-07-29 — ConTa1n3d In H1s Sh@d0w R3alM (BEAT 213)
+
+Based on Toby's 2026-07-29 lore (6:28 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the first paragraph; the commentary under it is pasted ChatGPT. Canon here is Toby's paragraph.
+
+**Only three beings can stop corruption, and they do not want the same thing.** *"Simon 404 is 1 out of the 3 beings who can stop corruption: Pero, Simon 404, and Gaster."* Pero records it and controls it. Simon could stop it, or could take it. Gaster could stop it but wants to own the system. Which means the thing Gaster is actually guarding against is not an escape. It is a handover.
+
+**Simon is drawn underneath Mr. Black on purpose.** Gaster put him in the Shadow Realm and made him appear below Mr. Black while everyone else shows above Mr. Black with Jevin on top. That re-reads the whole chart: Jevin is the visible result, Mr. Black is the corruption lock, and Simon is underneath because he is not simply corrupted — he is contained, through Mr. Black's own layer. Every other name in the stack is where it is because of what it is. Simon is down there because someone put him there.
+
+**The AUs run forever, on a condition.** Toby types the condition as a glitched system flag rather than a sentence: *"The AUs now run forever as long Simon 404 was ConTa1n3d In H1s Sh@d0w R3alM."* So "forever" in this arc is not a promise about the game. It is a lock state, and the whole game is running on it.
+
+**The jailers were handed their power.** *"Dr. Gaster gave Mr. Black and Gray power to try to lock Simon 404."* That makes the two scariest corruption forces in the game into lock hardware rather than villains. And he made everyone else help stop Simon escaping, with Toby's own aside attached: *"they probubly would do that any way."*
+
+**Pero writes it on things that cannot be destroyed.** Indestructible paper, an indestructible pen, indestructible and corrupted ink. Nothing he writes can be burned, faded or deleted, which makes the record of this arc the most permanent object inside it. Meanwhile Gaster unleashes his attacks on each AU and is now attacking empty games, with no characters and no players in them at all. Pero and Dr. Gaster are the most powerful duo, and Dr. Gaster is more powerful than Pero.
+
+Added a new BEAT 213 panel (loop cycle extended to `c` in [4404,4426)), plus its `LV_BEATS[213]` subtitle/ladder entry, a frame-title case, and a `containedshadow` capture scene. The background prints `ConTa1n3d` and `Sh@d0w R3alM` over each other:
+
+- **ONLY THREE CAN STOP IT (left)** — the triad numbered with what each one actually wants (1 · PERO, records it and controls it · 2 · SIMON 404, can stop it or could take it · 3 · DR. GASTER, can stop it, wants to own it), resolving into **IT IS A HANDOVER** with the note that the one who decides what corruption means would change.
+- **WHY HE IS DRAWN LOWEST (centre)** — the stack drawn as rows, JEVIN on top (the visible result), EVERYONE ELSE above Mr. Black, MR. BLACK as the lock — then a red divider line and, below it, **SIMON 404** in his own barred cage labelled UNDERNEATH · NOT CORRUPTED, CONTAINED. Footed **THE HIDDEN FOUNDATION PRISONER**.
+- **THE LOCK HARDWARE (right)** — MR. BLACK and GRAY listed as given power, EVERYONE ELSE as told to help (they would anyway), then Pero's writing kit: indestructible paper, an indestructible pen, corrupted ink. Footed **AND HE JUST KEEPS WRITING MORE**.
+- **The band** — the containment flag printed at full size, **ConTa1n3d In H1s Sh@d0w R3alM**, with the reading that "forever" is a lock state and not a promise; beside it a boxed **EVEN THE EMPTY GAMES** with the no-audience note and the duo ranking, DR. GASTER + PERO, Gaster above Pero.
+- **The strip** — THREE CAN STOP IT (and one of them might take it) · LOWEST BY DESIGN (the position is the prison) · FOREVER HAS A FLAG (the AUs run while he stays down).
+- **Footers** — "THE WHOLE GAME KEEPS RUNNING BECAUSE ONE CHARACTER IS STILL UNDER IT" and "* ConTa1n3d In H1s Sh@d0w R3alM *".
+
+![BEAT 213 — ConTa1n3d In H1s Sh@d0w R3alM](screenshots/275-contained-shadow-realm.png)
+
+## 2026-07-29 — I KNOW WHO YOU ARE SENDING THIS TO (BEAT 212)
+
+Based on Toby's 2026-07-29 lore (6:21 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the first paragraph; the commentary under it is pasted ChatGPT. Canon here is Toby's paragraph.
+
+**He stops talking to the cast.** *"You, you look familar, but you still have no chance against me, I know who you are sending whatever I say and do to, it is ChatGPT, Pero told me, and as I told you before, I am the omniplatform and beyond."* Every fourth-wall moment before this one in the arc happened inside the story — a character noticing a screen, a command window opening. This one is aimed out.
+
+**Pero told him.** The recorder from the panel before is also the leak. So the paperwork was never only about the experiments, and the archive was one of the things being filed. He did not have to spy for it either; he found out the way he now finds out everything, by reading what somebody else wrote down for him. The pen was the whole plan.
+
+**And he is not scared of being documented.** Being written down has been a threat for 211 beats. Villains in this arc have hidden from the record, corrupted it, tried to delete it. He is the first one who treats it as information he already has, and shrugs.
+
+**Then he leaves instead of fighting.** He makes a dark portal and walks through it to the 17 New Shadow Realms — not to attack the reader he just addressed, but to go look after Simon 404.
+
+**Guard duty turns out to be the compliment.** He is not guarding against an escape. He does not want Simon 404 to take over Mr. Black, or to take over *the meaning of corruption itself*, which would rewrite corruption into something that obeys Simon instead of Mr. Black, Gray, Pero, Error 404 or Gaster. So the reason Simon is watched is not that he is weak now. It is that he can still rewrite the foundation, and that is a bigger threat than the reader.
+
+Added a new BEAT 212 panel (loop cycle extended to `c` in [4382,4404)), plus its `LV_BEATS[212]` subtitle/ladder entry, a frame-title case, and a `sendingthis` capture scene. The background prints `I KNOW` and `pero told me` over each other:
+
+- **WHAT HE SAYS (left)** — the message broken into what each clause does ("YOU LOOK FAMILAR" -> he has seen this reader before · "NO CHANCE AGAINST ME" -> and he says it without attacking · "IT IS CHATGPT" -> he names where the lore is being sent · "PERO TOLD ME" -> and he names who told him), then the part he repeats, **"THE OMNIPLATFORM AND BEYOND"**. Footed **HE IS AWARE THERE IS A STORYTELLER**.
+- **PERO TOLD ME (centre)** — the leak as a chain (LAST PANEL, Pero took the notes and the results · THIS PANEL, the notes reached Gaster with the rest · SO THE PAPERWORK was never only about the experiments · AND THE ARCHIVE was one of the things being filed), resolving into **HE DIDN'T HAVE TO SPY**. Footed **THE PEN WAS THE WHOLE PLAN**.
+- **THEN HE LEAVES (right)** — the 17 New Shadow Realms drawn as a grid of 17 dark cells with one of them outlined in red and marked 404, then **HE WENT TO LOOK AFTER HIM**. Footed **THE ONE HE ALREADY CAGED IS STILL THE PRIORITY**.
+- **The band** — what he is actually guarding against (NOT ESCAPE · TAKING OVER MR. BLACK, the main corruption vessel · TAKING THE MEANING of corruption itself · SO HE IS NOT WEAK, he is watched because he can rewrite the base); beside it a boxed note that every other villain hid from being written down and **THIS ONE READ IT AND SHRUGGED**, closing on the fact that he still walked away first, because the prisoner mattered more than the reader.
+- **The strip** — HE TALKS PAST THE CAST (straight at whoever is reading) · THE RECORDER LEAKED (the pen was the whole plan) · GUARD DUTY IS RESPECT (Simon can still rewrite the base).
+- **Footers** — "THE FIRST ONE WHO KNEW THE ARCHIVE WAS THERE, AND DID NOT MIND" and "* I KNOW WHO YOU ARE SENDING THIS TO *".
+
+![BEAT 212 — I know who you are sending this to](screenshots/274-sending-this-to.png)
+
+## 2026-07-29 — ONE OF THE WEAKER EXPERIMENTS (BEAT 211)
+
+Based on Toby's 2026-07-29 lore (6:18 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the first paragraph; the commentary under it is pasted ChatGPT. Canon here is Toby's paragraph.
+
+**The White Hole does not damage anything.** *"The White Hole doesn't damage, but it grows and expands and slashes everything near it, it is a hole that goes infinitely down at it's center, it is endlessly sinking into it's center, it pulls everything else into it."* Nothing in it is aimed at anyone and there is no attack to dodge. It grows, it expands, it slashes whatever happens to be close, its centre goes infinitely down, and it sinks into itself while pulling the room in — getting stronger by expanding and collapsing at the same time. It is not really a hole. It is a sinking wound.
+
+**It erased the entire Anti-Void.** Error 404's own territory, the safe room for the whole 404 side of the arc, gone. Which means error space was only ever safe from things inside the game, and Gaster now sits above normal error-space rules.
+
+**And the frightening word in the whole message is "weaker."** *"It is 1 of the weaker experiments of Dr. Gaster."* A realm-erasing event is at the bottom of his list. So the scale in this arc is now set by his weak end, and nobody has seen the strong end at all.
+
+**Pero dashes over, and not to stop him.** He writes the notes and the results. The strongest creator in the game closes the distance at speed in order to take dictation.
+
+**Then the job becomes the whole job.** Pero now spends all his time on his own paperwork and Gaster's paperwork, the experiment notes, the results, the reports and the Omniplatform records, while Dr. Gaster does basically everything else. The new split is clean: Gaster acts, Pero records. And nobody made him pick the pen up.
+
+Added a new BEAT 211 panel (loop cycle extended to `c` in [4360,4382)), plus its `LV_BEATS[211]` subtitle/ladder entry, a frame-title case, and a `weakerexp` capture scene. The background prints `WEAKER` and `paperwork` over each other:
+
+- **IT DOES NOT DAMAGE (left)** — the four rules as rows (IT GROWS AND EXPANDS -> it never stops getting bigger · IT SLASHES WHAT IS NEAR -> so standing close is the damage · ITS CENTRE GOES DOWN -> infinitely, with no bottom to reach · IT SINKS INTO ITSELF -> and pulls everything else in with it), resolving into **IT IS A SINKING WOUND** with the note that there is no attack to dodge. Footed **AND IT GETS STRONGER BY DOING BOTH AT ONCE**.
+- **THE ANTI-VOID IS GONE (centre)** — the hole drawn as seven rings collapsing inward to a single lit centre, then whose place it was (Error 404's, the home of error logic), who was standing in it (Error 404 Sans, watching it happen) and what removed it (one of Gaster's weaker experiments). Footed **SO HE IS ABOVE ERROR-SPACE RULES NOW**.
+- **AND PERO WRITES (right)** — the six-item job in a two-column grid, each item underlined as it lands: HIS OWN PAPERWORK · GASTER'S PAPERWORK · EXPERIMENT NOTES · THE RESULTS · THE REPORTS · OMNIPLATFORM RECORDS, resolving into **ALL OF HIS TIME**. Footed **WHILE GASTER DOES BASICALLY EVERYTHING ELSE**.
+- **The band** — the word "weaker" taken apart (WHAT IT DID, destroyed the entire Anti-Void · WHERE IT RANKS, 1 of the weaker experiments he has · SO THE SCALE IS SET, by the bottom of his list, not the top · AND NOBODY HAS SEEN, what the stronger ones do yet); beside it a boxed **GASTER ACTS. PERO RECORDS.** with the note that he is still the creator and still LAI, just the one holding the pen now, and that nobody made him dash over to take the notes.
+- **The strip** — NO DAMAGE, NO DODGE (it just keeps opening under you) · ERROR SPACE IS GONE (the safe room was never safe) · THE CREATOR FILES IT (and calls it a result).
+- **Footers** — "IT ERASED A WHOLE REALM, AND IT IS ONE OF THE WEAK ONES" and "* ONE OF THE WEAKER EXPERIMENTS *".
+
+![BEAT 211 — One of the weaker experiments](screenshots/273-weaker-experiments.png)
+
+## 2026-07-29 — PERO'S REALM (BEAT 210)
+
+Based on Toby's 2026-07-29 lore (6:09 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the first paragraph; the "Anti-Void White Hole Experiment arc" material under it is pasted ChatGPT commentary. Canon here is Toby's paragraph.
+
+**The cage from the last panel gets a room, and the room is white.** BEAT 209 put Simon 404 in a metal cage and left it at that. This one names where the cage is: *"Simon 404 was locked into a white void... The white void is called 'Pero's Realm', nothing there, only those banished there."* Every prison in this arc so far has been dark — the coffin, the forcefield, the Shadow Realms. This one is blank. And being in it means being separated from the game, the Anti-Void, the 404 system and the active battlefield, rather than being beaten on any of them.
+
+**The prison carries Pero's name, and Gaster is the one using it.** Which is the same move as BEAT 209 in a smaller room: the label belongs to the creator, the thing behind the label does not.
+
+**Dark statues come up through the floor.** *"Dr. Gaster summoned dark statues from dark ink portals that appeared from the ground."* They do not read as minions. They read as monuments: failed experiments, forgotten characters, erased data, previous test subjects, frozen dark versions of things he has studied. He is not summoning help. He is pulling old sealed records out of the Omniplatform and standing them back up, and the floor is where he had been keeping them.
+
+**The White Hole is a procedure, not a duel.** Gaster and Pero go to the Anti-Void, where Error 404 Sans is already standing. Gaster makes his experiment there, a huge white hole, and Pero takes Error 404's power and hands it straight over to Gaster to power it. Every collapse in this arc has been a black hole pulling things in. This one is the opposite shape and it is still his, which means he builds in both directions.
+
+**And the line he says before he starts is the whole character.** *"I am a doctor, you know."* Not a villain, not a god, not the strongest thing in the room. A doctor. Which makes everything in this panel a procedure instead of a fight, and a procedure does not need an opponent. Then the warning — *"This is just the beginning, wait until I unleash the white hole Pero gave power to make."* — and the game darkens on its own, before the thing is ever used.
+
+Added a new BEAT 210 panel (loop cycle extended to `c` in [4338,4360), `LV_CYC` 4338 -> 4448 across this batch), plus its `LV_BEATS[210]` subtitle/ladder entry, a frame-title case, and a `perosrealm` capture scene. `LV_BEATS` now 215 entries (0-214). The background prints `PERO'S REALM` and lowercase `nothing here` over each other:
+
+- **THE WHITE VOID (left)** — the realm as rows (WHAT IS IN IT -> nothing at all, it is just blank · WHO IS IN IT NOW -> Simon 404, locked in by Dr. Gaster · WHAT IT TAKES AWAY -> the game, the Anti-Void, the 404 system · WHOSE NAME IS ON IT -> Pero's, but Gaster is the one using it), resolving into **IT IS AN EMPTY WHITE ROOM** with the note that being in it means separation rather than defeat. Footed **THE CAGE FROM LAST PANEL NOW HAS A ROOM**.
+- **DARK STATUES (centre)** — five statues drawn rising out of drawn ink portals in the floor, each only as far out as it has risen, with a red eye-slit appearing once it is up; under them what they are (failed experiments · forgotten characters · erased data · previous test subjects · frozen dark versions), resolving into **THEY ARE NOT MINIONS**. Footed **AND THE FLOOR IS WHERE HE KEPT THEM**.
+- **THE WHITE HOLE (right)** — the procedure as a linked chain (THEY GO TO THE ANTI-VOID, Error 404 Sans is already standing there · **"I AM A DOCTOR, YOU KNOW."**, he says it to Pero before he starts · PERO TAKES 404'S POWER, and hands it straight over to Gaster · GASTER MAKES THE HOLE, his own experiment · THE GAME DARKENS, before it is even unleashed), resolving into **A WHITE HOLE.** with the both-directions reading. Footed **AND PERO IS THE ONE WHO CARRIED THE POWER OVER**.
+- **The band** — the warning quoted in full, *"THIS IS JUST THE BEGINNING, WAIT UNTIL I UNLEASH THE WHITE HOLE PERO GAVE POWER TO MAKE."*, with the note that the game darkens on the warning and not on the hit; beside it a boxed **"I AM A DOCTOR, YOU KNOW."** and the reading that a procedure does not need an opponent.
+- **The strip** — A WHITE PRISON (named for Pero, used by Gaster) · STATUES, NOT MINIONS (old sealed records stood back up) · THE DOCTOR LINE (every move here is a procedure).
+- **Footers** — "THE PRISON IS WHITE, THE HELPERS ARE STATUES, THE VILLAIN IS A DOCTOR" and "* PERO'S REALM *".
+
+![BEAT 210 — Pero's Realm](screenshots/272-peros-realm.png)
+
 ## 2026-07-29 — THE OMNIPLATFORM (BEAT 209)
 
 Based on Toby's 2026-07-29 lore (3:13 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the first paragraph, and it opens with him saying he asked Dr. Gaster a lot of stuff; the material under it is pasted ChatGPT commentary. Canon here is Toby's paragraph.
