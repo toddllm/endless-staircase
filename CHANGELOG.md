@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — 404 CHICKEN SANS (BEAT 205)
+
+Based on Toby's 2026-07-29 lore (11:03 AM, in the "AI Era (Still is in Classics Era)" thread, subject "Re: AI Era (Still is in Classics Era)"). Toby's own typing is one sentence and a handoff: *"Error 404 Sans then decided to create 404 Chicken Sans, 404 Chicken Sans is the 2nd most powerful Sans. Here is the Dialoge:"* Under it he pastes two Roblox NPC scripts.
+
+**For the first time in the arc the lore arrives as working code.** Every other panel came out of a description of a character. This one came out of two scripts, and the character is defined by what the scripts *do* — nowhere in the message is he described. He is shipped, not written up.
+
+**The introduction is the shield.** `immortal = true` runs for the whole eight-line intro, and `HealthChanged` snaps him straight back to max every time anything touches him. The flag flips to `false` on the exact line where he stops talking, and three seconds later the script deletes itself. He cannot be killed while introducing himself, and he becomes killable the instant he finishes. Every other fighter in this game is protected by power; this one is protected by the sentence he is in the middle of.
+
+**The eggs are never thrown.** *"i could make 404 eggs now... but it doesn't look like you are hungry... it wouldn't be cool to throw my eggs in the trash."* The strongest thing he has is an attack he withholds out of manners, and it is still the thing you remember about him.
+
+**The ketchup is the health bar.** The second script's Ketchup union sits at `Transparency = 1` — invisible, already in the model, there the whole fight — and becomes visible only at 10 HP or less. You do not find out the second script exists until he is nearly gone.
+
+**And the last face is permanent.** `faceOverrideEnabled` re-forces the texture every time anything tries to change it, and the billboard is destroyed while the override is deliberately *preserved*. The dialogue box goes away; the expression he ends on stays on him.
+
+The low-HP lines are the whole character: *"no matter how much times i kill you, i always fall in the end."* and *"im sorry chick-rus, i can't protect you anymore...."* The 2nd most powerful Sans in the game arrives with his own defeat already written, in the same message as his introduction — and **Chick-rus** is a name that exists for exactly one line, so we learn he has a brother at the same moment we learn he cannot protect him.
+
+Added a new BEAT 205 panel (loop cycle extended to `c` in [4228,4250), `LV_CYC` 4228 → 4250), plus its `LV_BEATS[205]` subtitle/ladder entry, a frame-title case, and a `chickensans` capture scene. `LV_BEATS` now 206 entries (0-205). The background prints `sans the chicken` and `404 EGGS` over each other:
+
+- **EIGHT LINES, EIGHT FACES (left)** — all eight intro messages numbered in order, exactly as written, with the note that he introduces himself *last* and the face texture changes on every line. Footed **THE EGGS ARE NEVER THROWN** and the reading that he withholds them not because he cannot make them but because you do not look hungry and it would be a waste. **AN ATTACK REFUSED IS STILL AN ATTACK YOU SAW.**
+- **THE INTRODUCTION IS THE SHIELD (centre)** — the immortality clock as five chained steps: `immortal = true` → HE STARTS THE INTRODUCTION · `HealthChanged` FIRES → HEALTH SNAPS STRAIGHT BACK TO MAX · EIGHT MESSAGES RUN → ONE FACE TEXTURE PER LINE · THE LAST LINE ENDS → THE ORIGINAL FACE IS PUT BACK · `immortal = false` → NOW HE CAN DIE, AND THE SCRIPT DELETES ITSELF. Footed **HE IS UNKILLABLE EXACTLY AS LONG AS HE IS TALKING**.
+- **THE KETCHUP AT 10 HP (right)** — a health bar already down to its last tenth with `KETCHUP.Transparency 1 → 0` printed across it, then the three low-HP lines (the first one is nothing at all), then **WHO IS CHICK-RUS?** Footed **THE BOX IS DESTROYED · THE LAST FACE IS KEPT FOREVER**.
+- **The band** — Toby's sentence quoted exactly with "Here is the Dialoge:" under it and the note that he does not describe the character anywhere, he ships him; beside it a boxed **"I ALWAYS FALL IN THE END"** and the reading that Error 404 ranked him second by making him and he ranks himself the same way, unprompted, in the only dialogue he has at low health.
+- **The strip** — THE INTRO IS THE SHIELD (he cannot die while he talks) · THE EGGS STAY IN (the best attack is withheld) · HE ALWAYS FALLS (and he knew it before you did).
+- **Footers** — "THE 2ND MOST POWERFUL SANS ARRIVES WITH HIS OWN LOSING LINE ALREADY WRITTEN" and "★ 404 CHICKEN SANS ★".
+
+![BEAT 205 — 404 Chicken Sans](screenshots/267-404-chicken-sans.png)
+
 ## 2026-07-29 — THE CLASSICS GATE (BEAT 204)
 
 Based on Toby's 2026-07-29 lore (6:26 AM, a brand new thread of its own, subject "AI Era (Still is in Classics Era)"). Toby's own typing is exactly two things: that subject line, and the one-line instruction that opens the body, "Make another story using all the lore you know." Under it he pastes the resulting story, "AI Era: The Dave Loop Opens the Classics Gate." BEAT 202 changed the standing convention from the author's own side ("each word is important and IS lore"), so the story is drawn as canon here rather than held back as commentary.
