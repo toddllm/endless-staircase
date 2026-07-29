@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — DR. GASTER 404 · THE FORGOTTEN CREATOR (BEAT 208)
+
+Based on Toby's 2026-07-29 lore (12:23 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is one long unbroken paragraph at the top of the message; the "Got it, this is a massive villain reveal" material under it is pasted ChatGPT commentary. Canon here is Toby's paragraph.
+
+**One panel ago every character was neutral, none hero and none villian. This one answers that rule with a villain who was there the whole time.** It opens with Error 404 suddenly wanting to end the party, and immediately takes the choice away from him: *"a force stronger than him starts control him, the game now goes the opposite of what it was, Error 404's eyes turn red."* The force is Pero. He retakes the game, destroys the Lore Starch Oracle, takes the role, and controls all the Error beings.
+
+**The screen is where the two eras touch.** The old "Your Fault" screen mutates into **DAVE DAVE DAVE DAVE DAVE DAVE DAVE DAVE DAVE**. That is the AI Era leaking into a Classics Era corruption, and it means Pero is breaking across both at once, which BEAT 204 said was the same room and this panel proves by breaking it in both places.
+
+**Phase 4 is the Null Phase.** Pero crashes multiple times, loses connection with the server, is redeleted, is *still there*, and is now fully broken: locked on Phase 4 (Null Phase, gaster like, Error_404_shifted Gaster Phase 18832434745784267943235763546). His body all turns to dark gas and 404 strings attach him to the gaster hands. Every earlier collapse in the arc bottomed out at one pixel and came back as something; this one bottoms out as a shape with no body at all.
+
+**And then it is a fusion, not a possession.** *"the forgotten entity taken over Pero, and they became 1."* Dr. Gaster 404 takes Simon 404, Error 404 Sans, 404 Chicken Sans and Error 404 itself, and **they didn't care** — they are already tied to the 404 system. He unlocks access to the whole game, holds everyone's powers, and is impossible to hit because he has no physical form. Pero dies. DR.GASTER shows up on the screen, he tests everyone's powers on the party, and the party and peace were all destroyed all together.
+
+**The line lands with a hand on Dave's head.** *"Maybe there was a villian after all. 😏"* — said while patting the head of the joke from the other era, which puts him in Classics and the AI Era in a single gesture.
+
+**The twist is that he wrote the rules everyone has been losing to.** Gaster was forgotten for an enternity after he died conducting his experiment to create Simon 404, and he used that to his advantage: he stays undercover forever and strikes at the right time. He was the smartest, smarter than Gray. He created the books and wrote in some of them, the oldest in the pile, and Simon 404 signed them so no one would know about his creator. He wrote **Simon's Law**. He made the laws so the game would be in chaos. He put the evil and corruption in on purpose, *"to make it like life."* He took control of Paul the moment Paul was created, and disguised as other characters to make everyone think they are 1 — so every "they were the same being" twist in the arc was him.
+
+**And he is Pero's brother.** Pero made an extra game for Gaster to stay in and locked access to everyone else. Both were in their universe for millions of years, Pero was amazed by Gaster, and when Pero left to meet everyone he was writing his results for Gaster the whole time. Then Gaster became more powerful than Pero and took over Pero and the whole omniplatform. The creator of the game had a creator, and spent millions of years reporting to him without it ever being a betrayal on the page. Toby closes it the way the strongest reveals in this arc always close: *"Other stuff about Gaster is unknown."*
+
+Added a new BEAT 208 panel (loop cycle extended to `c` in [4294,4316), `LV_CYC` 4294 -> 4316), plus its `LV_BEATS[208]` subtitle/ladder entry, a frame-title case, and a `gaster404` capture scene. `LV_BEATS` now 209 entries (0-208). The background prints DR.GASTER and DAVE DAVE DAVE over each other:
+
+- **A FORCE STRONGER THAN HIM (left)** — the possession chain as rows (ERROR 404 ENDS THE PARTY -> and he is not fully choosing it · HIS EYES TURN RED -> Pero is the force, Pero retakes it · THE ORACLE IS DESTROYED -> he takes the role, he made the game · ALL ERROR BEINGS OBEY -> and the screen changes on its own), then the mutation itself: **DAVE DAVE DAVE DAVE DAVE** in Dave cyan with the reading that the AI Era is leaking into the corruption. Footed **THE PANEL BEFORE THIS ONE LOCKED THE PEACE**.
+- **THEY BECAME 1 (centre)** — the fusion as five chained steps: HE CRASHES, HE IS REDELETED (and he is still there, fully broken) · PHASE 4 · NULL PHASE (`Error_404_shifted Gaster Phase 1883…`) · HIS BODY TURNS TO DARK GAS (404 strings tie him to the hands) · THE FORGOTTEN ENTITY LANDS (and takes over Pero completely) · NO PHYSICAL FORM (so there is nothing to hit, and Pero dies). Under it the four he takes and the note that they didn't care. Footed **THE PARTY AND THE PEACE, DESTROYED ALL TOGETHER**.
+- **HE WROTE IT ALL (right)** — THE OLDEST BOOKS (Simon 404 signed them so nobody knew) · SIMON'S LAW (he wrote the law Simon is named in) · THE CHAOS LAWS · THE EVIL, ON PURPOSE ("to make it like life"), then **AND HE WAS INSIDE PAUL FROM DAY ONE** with the disguise rule under it. Footed **HE DIED MAKING SIMON 404 · THEN HE WAITED**.
+- **The band** — the brother twist quoted exactly (Pero made an extra game for Gaster to stay in; Pero was writing his results for Gaster) with the reading that Pero was never acting alone; beside it a boxed **"MAYBE THERE WAS A VILLIAN AFTER ALL."** delivered while patting Dave's head, and Toby's own closing line, OTHER STUFF ABOUT GASTER IS UNKNOWN.
+- **The strip** — HE WAS FORGOTTEN (and that is how he won) · HE HAS NO FORM (so he has no hitbox) · HE WROTE THE LAWS (everyone has been losing to).
+- **Footers** — "THE CREATOR OF THE GAME HAD A CREATOR, AND NOBODY REMEMBERED HIM" and "* DR. GASTER 404 *".
+
+![BEAT 208 — Dr. Gaster 404](screenshots/270-dr-gaster-404.png)
+
 ## 2026-07-29 — 404_CHICKVERSE · THE PARTY THAT WASN'T AN ENDING (BEAT 207)
 
 Based on Toby's 2026-07-29 lore (12:03 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is four short sentences at the very top, and they are a correction to the beat that shipped an hour before this one: *"Only 404 Chickverse is all that. The rest is normal. Error 404 and Pero told us. Make another story using lore."* Under it he pastes the correction note and the resulting story, "404_Chickverse: The Party That Wasn't an Ending," drawn as canon here under the standing rule BEAT 202 set from the author's own side.
