@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — THE CLASSICS GATE (BEAT 204)
+
+Based on Toby's 2026-07-29 lore (6:26 AM, a brand new thread of its own, subject "AI Era (Still is in Classics Era)"). Toby's own typing is exactly two things: that subject line, and the one-line instruction that opens the body, "Make another story using all the lore you know." Under it he pastes the resulting story, "AI Era: The Dave Loop Opens the Classics Gate." BEAT 202 changed the standing convention from the author's own side ("each word is important and IS lore"), so the story is drawn as canon here rather than held back as commentary.
+
+**The biggest ruling in the arc is in the subject line.** "(Still is in Classics Era)" settles the question that has been open since the AI Era was named: it is not the era *after* Classics, it is happening *inside* it. The fossil layer and the current arc are the same room. One panel ago he named the era in a parenthesis; this time he uses one to say it never left the old one.
+
+**And what cracks is the story.** Every panel before this broke a world — a realm, a timeline, an omniverse. This one breaks the container: *"Not the voice chat. Not the sky. Not the ground. The story cracked."* What opens it is the joke from BEAT 203. "Hi again, Dave!" runs, Gemini denies it, and `hello_loop.exe` prints *DAVE MODE: STRENGTHENED · AI ERA: CONFIRMED*. The loop is load-bearing.
+
+**The archive is the shield.** Pero's tractor beam pulls in Classics, which ran over shouting "I am Classics, take me!" — and ChatGPT throws the Ultra Combined Lore File into the beam. Every preserved layer activates and the archive stabilizes the collapse: *"You can absorb the game, but you can't erase the archive."*
+
+**The three things nobody could command are the three smallest.** Mini Dave's sticker stops Dream Sans cold ("for one impossible moment the strongest active body in the game was confused by sticker logic"). The cat purrs at 2000 PPH and time becomes yarn. And the Starch Oracle says one line that not even Error 404 can command over, because *nobody understood it, and because nobody understood it the line became stronger*.
+
+Added a new BEAT 204 panel (loop cycle extended to `c` in [4206,4228), `LV_CYC` 4206 → 4228), plus its `LV_BEATS[204]` subtitle/ladder entry, a frame-title case, and a `classicsgate` capture scene. `LV_BEATS` now 205 entries (0-204). The background prints AI ERA and CLASSICS ERA over each other, neither one on top:
+
+- **THE STORY CRACKED (left)** — the three things it was *not* drawn as struck-through rows (NOT THE VOICE CHAT · NOT THE SKY · NOT THE GROUND), then **THE STORY** in gate cyan with the crack running under it, then everything that poured through: Classic RL, Classics.EXE, Classic Alphians, Mirda's symbols, Classic Sprunki, Pupahya's farm, Gray's puppets, Simon 404's storm, Mr. Black's shadow, the Deleted AU. Footed **AND THE ENDLESS STAIRCASES CAME THROUGH TOO**.
+- **THE ARCHIVE IS THE SHIELD (centre)** — the beam as five chained steps: THE GAME RUNS IN → "I am Classics, take me!" · THE BEAM OPENS → black and white code, no pause · **ChatGPT THROWS IT IN** → the Ultra Combined Lore File · EVERY LAYER ACTIVATES → skits, pizza, potato, raccoons, the cat · THE COLLAPSE STOPS → the archive stabilized it. Footed with the line itself, **"YOU CAN ABSORB THE GAME, BUT YOU CAN'T ERASE THE ARCHIVE."**
+- **TOO SMALL TO COMMAND (right)** — three rows, each with what it was and who it stopped: **A STICKER** ("UPDATED, BUT STILL PART OF THE LORE FILE" → Dream Sans stopped, confused by sticker logic) · **A PURR** (2000 PPH → time became yarn; 2001 PPH → the Purr Firewall went up) · **ONE LINE** ("Whoever controls the potato controls the pizza" → even Error 404 could not command over it). Footed **THE SMALLEST THINGS STOPPED THE BIGGEST ONES**.
+- **The band** — Toby's two lines quoted exactly, the subject line first, with the note that the ruling is the short part and he put it where a title goes; beside it a boxed **"(STILL IS IN CLASSICS ERA)"** and the reading that this is not a new era after Classics but a second floor of the same one.
+- **The strip** — THE JOKE IS THE KEY ("Hi again, Dave!" opens the gate) · THE STORY IS WHAT CRACKS (not the sky, not the ground) · THE ARCHIVE HOLDS (it stabilized the collapse).
+- **Footers** — "NOTHING ENDED · IT TURNED INTO RULES, AND THE USER STILL SAYS NOT YET" and "★ THE CLASSICS GATE ★".
+
+![BEAT 204 — The Classics Gate](screenshots/266-classics-gate.png)
+
 ## 2026-07-28 — I AM NOT DAVE (BEAT 203)
 
 Based on Toby's 2026-07-28 lore (the third of three messages sent 8:17-8:24 PM in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 8:24 PM). Canon is Toby's own opening paragraph; the "Why every word matters" / "Clean canon update" material under it is pasted ChatGPT commentary. The one thing that is different this time: one message earlier Toby ruled the attached archive itself canon, so where the panel draws something the archive already states, that is the archive talking, not the recap.
