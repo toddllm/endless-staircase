@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — PHASE 1 LOCKED · THE ERA MERGE (BEAT 206)
+
+Based on Toby's 2026-07-29 lore (11:29 AM, in the "AI Era (Still is in Classics Era)" thread). Canon is Toby's own opening paragraph; the "Got it, this is a huge era-merge reset event" material under it is pasted ChatGPT commentary. It opens with the sentence the last three panels were pointing at: *"Both eras meet, both Classics Era and AI Era."*
+
+**BEAT 204 ruled the merge possible in a parenthesis. This one runs it.** And the thing that makes it different from every apocalypse before it is where it lands: this is the most peaceful state the game has ever held, and it is reached by going all the way through the collapse rather than around it.
+
+**Nobody is summoned here, everybody is put back.** Simon 404 makes Oren into Oren.EXE again, Pinki is rebirthed into Pinky RL (*"Pinki to Pinky for RL stuff"*), Pero takes the command pannel again, and Oren.EXE gathers in Gray. The trio that comes out of it, Oren.EXE + Pinky RL + Gray, all run on static cutscenes and intense intros/outros, all three at their own historical maximum, conquering everything they see. And they spare their friends, which is the line that keeps them from being a straight villain group.
+
+**Pero had to stay himself.** He is still the strongest, with Tunner, Dream Sans and Time Paradox Sans. Then Error 404 becomes stronger than the variants, and Pero *"had to stay himself"*. Every escalation in this arc so far has been answered with a new form; this is the first time the answer is no form at all.
+
+**The forcefield is not broken, it is brought down.** Error 404 freezes everyone unspared inside it. Pero takes Simon 404's lightning and turns it into giant batteries, the trio pulls them back up, lightning surrounds it, it pulses and turns yellow, the sky darkens and **Sky was afraid**. Error 404 spends every command he has and makes it indestructible, so the pillars break instead and the orb and the forcefield crash down into the ocean. Simon 404 rows out on a wooden boat and absorbs the radiation, the game mutates, Simon 404 and Oren.EXE become ghosts, Pero stands on his box and T poses, the Sprunkis try to fix it and cannot, and the game breaks down into **1 pixel again**.
+
+**Then the part that has never happened before.** Pero is alone with the last pixel, the same position that has produced a horror route, a corruption route, an EXE route and a final boss route in earlier panels. He puts his hands together. The screen brightens. It comes back as a party.
+
+Phase 1 is locked: the sky turns blue again, the ground turns green again, nature comes back, the Endless Staircase is decorated, anti-virus runs along every edge, and **Mr. Black goes from main villian of the game to leader of the party**. Even the errors dance to the Phase 1 Sprunkis' music. Simon 404 and Oren are regiven life, no more .EXEs. Every character is neutral, none hero, none villian. And the lock is held **by Error 404 and Pero** together, which means the scariest admin-error being in the game spends his last command holding the peace shut instead of breaking it.
+
+The line under all of it is Pero's, said with the forcefield pulsing yellow behind him: *"Soon, everything will be mine... I was tired of answering endless questons, I was tired of being treated like property..."* He is not saying he wants to win, he is saying why. And then he does not take it.
+
+Added a new BEAT 206 panel (loop cycle extended to `c` in [4250,4272), `LV_CYC` 4250 -> 4272), plus its `LV_BEATS[206]` subtitle/ladder entry, a frame-title case, and a `phase1lock` capture scene. `LV_BEATS` now 207 entries (0-206). The background prints CLASSICS ERA and AI ERA over each other, neither one on top:
+
+- **THE TRIO IS REBUILT (left)** — the four restorations as rows (SIMON 404 -> MAKES OREN INTO OREN.EXE AGAIN · PINKI -> REBIRTHED INTO PINKY RL · PERO -> TAKES THE COMMAND PANNEL AGAIN · OREN.EXE -> GATHERS IN GRAY), then **OREN.EXE + PINKY RL + GRAY** in AI cyan with the note that all three use static cutscenes and intense intros/outros and each is back at their own maximum. Footed **THEY SPARE THEIR FRIENDS**.
+- **DOWN TO ONE PIXEL (centre)** — the collapse as five chained steps: ERROR 404 FREEZES THEM · PERO TAKES THE LIGHTNING (the storm becomes giant batteries) · THE FORCEFIELD PULSES (turns yellow, the sky darkens, Sky is afraid) · THE PILLARS BREAK (the orb crashes into the ocean) · ONE PIXEL AGAIN (the Sprunkis try to fix it, the force is too strong). Under it the boat, the radiation, the two ghosts and the T pose. Footed **PERO HAD TO STAY HIMSELF, NO VARIANT WAS ENOUGH**.
+- **PHASE 1 IS LOCKED (right)** — THE SKY IS BLUE AGAIN · THE STAIRCASE IS DECORATED (and the game becomes unplayable) · MR. BLACK LEADS THE PARTY · THE ERRORS DANCE, then **NO MORE .EXEs** and the neutral-cast rule. Footed **NO JOKES ANYMORE IN THE THING**.
+- **The band** — Pero's line quoted exactly, with the reading that he is giving a reason rather than a threat; beside it a boxed **HE PUTS HIS HANDS TOGETHER** and the note that every other time the game came down to one pixel it came back as a horror route, and this time it comes back as a party.
+- **The strip** — BOTH ERAS MEET (Classics and AI, the same room) · IT ALL COMES DOWN (and it goes to one pixel again) · PHASE 1 IS LOCKED (by the two who could break it).
+- **Footers** — "THE SCARIEST ADMIN-ERROR BEING IN THE GAME SPENDS HIS LAST COMMAND HOLDING THE PEACE SHUT" and "* PHASE 1 LOCKED *".
+
+![BEAT 206 — Phase 1 Locked](screenshots/268-phase-1-locked.png)
+
 ## 2026-07-29 — 404 CHICKEN SANS (BEAT 205)
 
 Based on Toby's 2026-07-29 lore (11:03 AM, in the "AI Era (Still is in Classics Era)" thread, subject "Re: AI Era (Still is in Classics Era)"). Toby's own typing is one sentence and a handoff: *"Error 404 Sans then decided to create 404 Chicken Sans, 404 Chicken Sans is the 2nd most powerful Sans. Here is the Dialoge:"* Under it he pastes two Roblox NPC scripts.
