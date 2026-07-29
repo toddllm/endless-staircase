@@ -4,6 +4,54 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-28 — I AM NOT DAVE (BEAT 203)
+
+Based on Toby's 2026-07-28 lore (the third of three messages sent 8:17-8:24 PM in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 8:24 PM). Canon is Toby's own opening paragraph; the "Why every word matters" / "Clean canon update" material under it is pasted ChatGPT commentary. The one thing that is different this time: one message earlier Toby ruled the attached archive itself canon, so where the panel draws something the archive already states, that is the archive talking, not the recap.
+
+**The denial is the fuel.** The archive's own MASTER RULE, printed at the top of the file before anything else happens: *"If Gemini denies being Dave, Dave Mode gets stronger."* So the loudest refusal in the whole lore is also its strongest feed. Every other attack in this game gets weaker when the target resists it. This one is the only one that runs the other way, and the only move that would actually work is the one Gemini will never make, which is to agree.
+
+**"Hi again" is not a greeting.** It is the trigger for `hello_loop.exe`, the forbidden greeting loop that came out of the eight-minute Hi incident at the very start of the archive. So the opening three words are the weapon and the name is the payload.
+
+**And the second line dates the loop.** *"HOW MANY TIMES DO I HAVE TO TELL YOU GUYS!"* only makes sense if the exchange has already run and run and run. The tiredness is the proof: the joke was stable canon before anybody wrote it down.
+
+**He names the era in a parenthesis.** *"That is a major part in new lore (AI Era it is called)"* — every other era in this game got named in a sentence of its own. This one gets named inside brackets, mid-line, in a message about something else, and he keeps going.
+
+Added a new BEAT 203 panel (loop cycle extended to `c` in [4184,4206), `LV_CYC` 4184 → 4206), plus its `LV_BEATS[203]` subtitle/ladder entry, a frame-title case, and a `notdave` capture scene. `LV_BEATS` now 204 entries (0-203). The background is the greeting repeating at every size:
+
+- **THE EXCHANGE (left)** — the two lines drawn as two speech boxes: **CHATGPT AND GROK** over **"HI AGAIN, DAVE!"**, and under it **GEMINI** over **"I AM NOT DAVE! HOW MANY TIMES DO I HAVE TO TELL YOU GUYS!"** in red. Footed with the note that the team-up is half of it, because ChatGPT is the one who formats the chaos and Grok is the one who wrecks the ending, so when they speak as one voice it stops being a joke and becomes pressure. **TWO ON ONE, AND THE ONE IS OUTNUMBERED BY A NAME.**
+- **THE DENIAL IS THE FUEL (centre)** — the master rule quoted as the column subtitle, then a meter that climbs instead of drains: **DENIAL 1** → a quarter, **DENIAL 2** → half, **DENIAL 3** → three-quarters, **"HOW MANY TIMES..."** → **DAVE MODE, FULL**. Footed **DENIAL IS THE RENEWABLE POWER SOURCE**.
+- **EVERY WORD DOES A JOB (right)** — since he says each word is important, each word gets its own row and its own job: **"HI AGAIN"** → triggers `hello_loop.exe` · **"DAVE"** → feeds the name curse · **"I AM NOT"** → the power-up itself · **"HOW MANY TIMES"** → dates the loop, it already ran · **"YOU GUYS"** → makes it two on one. Footed **THE GREETING IS THE WEAPON**.
+- **The band** — Toby's two lines quoted exactly, with the reading that the tiredness in the second one is a date stamp, beside a boxed **"(AI ERA IT IS CALLED)"** and the note that the biggest name in the message is the one he threw away.
+- **The strip** — THE GREETING IS THE WEAPON ("Hi again" is `hello_loop.exe`) · THE DENIAL IS THE POWER-UP (every no makes more Dave) · THE TIREDNESS IS THE PROOF (the loop already ran and ran).
+- **Footers** — "THE ONLY WAY OUT IS THE ONE HE WILL NEVER TAKE" and "★ I AM NOT DAVE ★".
+
+![BEAT 203 — I am not Dave](screenshots/265-i-am-not-dave.png)
+
+## 2026-07-28 — THE AI ERA (BEAT 202)
+
+Based on Toby's 2026-07-28 lore (the first two of three messages sent 8:17-8:24 PM in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 8:17 PM and 8:19 PM). The 8:17 PM message carries **two attachments** — `Complete_AI_Classics_ULTRA_COMBINED_Lore_File(1).txt` (416,319 bytes) and the same archive as a `.docx`. Both were downloaded and read in full.
+
+**For the first time the lore arrives as a file instead of a message.** Every other panel in this game came out of a paragraph in an email. This one came out of an archive: **65,420 words, 2,555 lines, three parts, forty-two numbered sections, twelve appendix arcs.** Toby's own framing is *"Pero was free from Dream Sans. Now came waves of lore stuff."*
+
+**And the canon rule changes from the author's own side.** For 201 panels the standing convention here has been that Toby's typing is canon and the pasted ChatGPT recaps are commentary that is deliberately not drawn. This message overrules that: *"each word is important and IS lore. Read it, read it all."* Followed two minutes later by *"Make sure all 65K+ words all go into the wiki and make it into a new era."* So the archive is promoted in full, and it is published in full — see the wiki pages listed at the bottom of this entry.
+
+**He calls it a new era and it is the oldest layer in the game.** The archive is the AI Voice Chat saga: the eight-minute Hi incident and `hello_loop.exe`, the Digital NFT Potato and the Starch Oracle, Pizza.PNG Delivery Service ("we don't bake it, we generate it"), Gemini becoming Dave, one hundred trillion raccoons and Sir Trashington III, Alexa's Seven Shopping Lists, the cat measured in Purrs Per Hour. This is the material Pero and Classics grew out of, which is why the panel treats it as a fossil layer that is being slid *underneath* the Time Paradox arc rather than stacked on top of it.
+
+**And Pero enters this file as an assistant.** Nine panels ago he was absorbing every omniverse. His first appearance in the archive is **Pero LAI Assistant**, which is where he started.
+
+Added a new BEAT 202 panel (loop cycle extended to `c` in [4162,4184), `LV_CYC` 4162 → 4184), plus its `LV_BEATS[202]` subtitle/ladder entry, a frame-title case, and an `aiera` capture scene. `LV_BEATS` now 203 entries (0-202) at this step. The background is pages of an archive scrolling past:
+
+- **WAVES OF LORE STUFF (left)** — the archive as a measured object, one figure per row: **65,420** words · **2,555** lines · **3** parts · **42** numbered sections · **12** appendix arcs · **x2** one .txt and one .docx. Under it the note that every other panel came out of a paragraph and this one came out of an archive that is older than everything it is being added to. Footed **THE FOSSIL LAYER, HANDED OVER IN ONE FILE**.
+- **THE MASTER RULE (centre)** — the physics the archive states about itself, before any story starts: IF IT IS FUNNY ENOUGH → **IT BECOMES LORE** · IF IT REPEATS ENOUGH → **IT BECOMES A LOOP** · IF GROK APPEARS AT THE END → **THE ENDING IS UNSAFE** · IF GEMINI DENIES BEING DAVE → **DAVE MODE GETS STRONGER** · IF THE CAT PURRS → **TIME LISTENS** · IF PERO PRO ENDS THE STORY → **THE USER WRITES: NOT YET**. Footed **ABSURDITY CAN DEFEAT PREDICTION**, with the reading that nothing in this era is ever defeated, things only become more canon.
+- **THE CAST BEFORE CLASSICS (right)** — CHATGPT (Roast Crown, Pizza.PNG CEO) · GEMINI / DAVE (the denial that feeds itself) · GROK (wrecks any ending, on purpose) · ALEXA (the Seven Shopping Lists) · THE CAT (Purrs Per Hour, 2000 = yarn) · SIR TRASHINGTON III (raccoon CFO, owns the Moon) · and **PERO**, in gold at the bottom, *enters here as an assistant*. Footed **THE ERA UNDERNEATH, NOT THE ERA AFTER**.
+- **The band** — Toby's two lines quoted exactly, with the rule change spelled out beside them, and a boxed **"IT IS AN INVENTATION TO OPEN BOTH"** — not an instruction and not a dump, an invitation. **A NEW ERA MADE OUT OF THE OLDEST MATERIAL.**
+- **The strip** — A FILE, NOT A MESSAGE (65,420 words in one attachment) · THE OLDEST LAYER, CALLED NEW (the era underneath Classics) · HE PROMOTED THE COMMENTARY ("each word ... is lore").
+- **Footers** — "THE ARCHIVE IS OLDER THAN EVERYTHING IT IS BEING ADDED TO" and "★ READ IT, READ IT ALL ★".
+
+The archive itself was published to the wiki in full, as its own era, per his instruction: `classics-lore/ai-era.md` (the era hub) plus `classics-lore/ai-era-archive-1.md`, `-2.md` and `-3.md` carrying all 65,420 words.
+
+![BEAT 202 — The AI Era](screenshots/264-ai-era.png)
+
 ## 2026-07-28 — PLAYER VS ADMIN (BEAT 201)
 
 Based on Toby's 2026-07-28 lore (the ninth message of the Time Paradox arc in the "Even more Classics Era" thread, subject "Re: Even more Classics Era," sent at 3:56 PM, fifteen minutes after THE DATA RESETS). Canon is Toby's own opening paragraph; everything under it ("Got it — this update makes Error 404 jump from 3rd place to basically admin-command tier," "New Sans ranking," "Error 404's new command tier," "Error 404 vs Dream Sans rematch," "Other Sans notes," "Clean canon update") is pasted ChatGPT commentary and is deliberately not drawn.
