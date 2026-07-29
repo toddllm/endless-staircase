@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-29 — THE OMNIPLATFORM (BEAT 209)
+
+Based on Toby's 2026-07-29 lore (3:13 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the first paragraph, and it opens with him saying he asked Dr. Gaster a lot of stuff; the material under it is pasted ChatGPT commentary. Canon here is Toby's paragraph.
+
+**The reveal is a rename, not a power-up.** One panel ago Gaster took over the omniplatform. This one says there was never anything to take: *"You may think Classics is the game, but that is what Pero named the game after... I AM THE OMNIPLATFORM!"* Classics is only the label Pero put on a game system, and the thing the label was borrowed from is Gaster himself. Every earlier escalation in the arc worked by adding a tier above the last one. This one works by pointing at the name on the tier everyone already had and saying it was pointing at him the whole time.
+
+**He is not inside the container. He is the container.** That is the whole structural difference from BEAT 208, and it changes what the other characters are standing on rather than what they are fighting.
+
+**Three metal cages.** Dr. Gaster put Simon 404, Pero and Classics into metal cages: the experiment, the creator, and the game. Holding all three at once is the proof, and it is a quieter kind of proof than a fight. He is not winning against them. He is holding them.
+
+**Nullification breaks power scaling.** He can nullify any enemy. Infinite attacks, divine aura, command powers, error powers, time powers, dream powers, plague powers and creator powers all get the same one-word answer, because he is not a stronger fighter, he is the platform layer that decides what is allowed to function. Every power the arc spent 208 beats building is still there; none of it is a defence. And he has infinity more attacks of his own, since he is the Omniplatform and beyond it.
+
+**Pero is still a creator, just not the first one.** Pero created the games, the platforms and everything inside the Omniplatform, but *"he didn't create Dr. Gaster."* Pero made the contents. Gaster is the container. Which means every world, tier and AU in the arc has been sitting inside the villain from the beginning.
+
+Added a new BEAT 209 panel (loop cycle extended to `c` in [4316,4338), `LV_CYC` 4316 -> 4338), plus its `LV_BEATS[209]` subtitle/ladder entry, a frame-title case, and an `omniplatform` capture scene. `LV_BEATS` now 210 entries (0-209). The background prints OMNIPLATFORM and lowercase `classics` over each other:
+
+- **CLASSICS IS ONLY A NAME (left)** — the rename as rows (WHAT EVERYONE THOUGHT -> Classics is the game, and the top · WHAT IT ACTUALLY IS -> a label Pero put on a game system · WHERE THE LABEL CAME FROM -> from the thing that was already there · SO CLASSICS WAS NEVER TOP -> it was named after the top), then the line itself, **"I AM THE OMNIPLATFORM!"**, with the reading that last panel he took it and this panel says there was nothing to take. Footed **TOBY ASKED HIM · AND HE ANSWERED**.
+- **THREE METAL CAGES (centre)** — three drawn cages with bars, each holding one name and labelled with what it is: **SIMON 404** (the experiment) in 404 red, **PERO** (the creator) in Pero gold, **CLASSICS** (the game itself) in gate cyan. Under them the note that he is holding, not beating, them. Footed **SO HE IS ABOVE ALL THREE**.
+- **NULLIFIED (right)** — the eight power families from the whole arc in a two-column grid, each struck out exactly as wide as its own name as it lands: INFINITE ATTACKS · DIVINE AURA · COMMAND POWERS · ERROR POWERS · TIME POWERS · DREAM POWERS · PLAGUE POWERS · CREATOR POWERS, resolving into **NULLIFIED.** with the platform-layer reading under it. Footed **AND HE HAS INFINITY MORE ATTACKS OF HIS OWN**.
+- **The band** — the structure re-stacked from the top down as five numbered tiers (1. DR. GASTER · THE OMNIPLATFORM · 2. PERO · 3. ERROR 404 / SIMON 404 / 404 CHICKEN SANS · 4. DREAM SANS / TIME PARADOX SANS · 5. CLASSICS AND ALL ITS CHARACTERS, AUs AND GAMES), footed with the note that every tier under line 1 has been sitting inside him the whole arc; beside it a boxed **"HE DIDN'T CREATE DR. GASTER"** with what Pero did create above it, the contents-versus-container reading below it, and the closing line that the container is holding the creator in a cage.
+- **The strip** — CLASSICS WAS A LABEL (the top layer had a name already) · THREE CAGES, ONE HAND (the experiment, the maker, the game) · NULLIFY BEATS SCALING (being strong is not a defence).
+- **Footers** — "THE HIGHEST LAYER WAS NEVER A PLACE, IT WAS A PERSON" and "* THE OMNIPLATFORM *".
+
+![BEAT 209 — The Omniplatform](screenshots/271-the-omniplatform.png)
+
 ## 2026-07-29 — DR. GASTER 404 · THE FORGOTTEN CREATOR (BEAT 208)
 
 Based on Toby's 2026-07-29 lore (12:23 PM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is one long unbroken paragraph at the top of the message; the "Got it, this is a massive villain reveal" material under it is pasted ChatGPT commentary. Canon here is Toby's paragraph.
