@@ -20274,12 +20274,12 @@ function drawLoopVs(){
       if(fa>0.01){
         ctx.globalAlpha=g*talA*fa; ctx.textAlign='center';
         ctx.fillStyle='rgba(255,77,77,0.90)'; ctx.font='900 3.4px ui-monospace,monospace';
-        ctx.fillText('THE EGGS ARE NEVER THROWN', bx0+bw/2, colT+colH*0.700);
+        // NOTE: the beat-ladder overlay eats this column below ~colH*0.79, so everything
+        // in the left column has to land above that line — no 0.955 footer here.
+        ctx.fillText('THE EGGS ARE NEVER THROWN', bx0+bw/2, colT+colH*0.648);
         ctx.fillStyle='rgba(200,208,198,0.80)'; ctx.font='700 2.5px ui-monospace,monospace';
         wrapLoreText('THE STRONGEST THING HE HAS IS AN ATTACK HE WITHHOLDS OUT OF MANNERS. NOT BECAUSE HE CANNOT MAKE THEM, BUT BECAUSE YOU DO NOT LOOK HUNGRY AND IT WOULD BE A WASTE.',
-                     bx0+bw/2, colT+colH*0.775, bw*0.88, 3.4);
-        ctx.fillStyle='rgba(255,216,79,0.88)'; ctx.font='900 2.7px ui-monospace,monospace';
-        ctx.fillText('AN ATTACK REFUSED IS STILL AN ATTACK YOU SAW', bx0+bw/2, colT+colH*0.955);
+                     bx0+bw/2, colT+colH*0.706, bw*0.88, 3.4);
       }
       ctx.globalAlpha=1;
     }
