@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-30 — THE BUTTERFLY FORM (BEAT 220)
+
+Based on Toby's 2026-07-30 lore (4:49 PM, in the "AI Era (Still is in Classics Era)" thread), the direct follow-up to BEAT 219. Toby's own typing is the first line, and it is one sentence: *"Classics Ink Sans has a butterfly form just like Error 404, Classics Ink Sans is made the most powerful Sans by far."* The "new lore meaning" breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**The shape is borrowed, and it is borrowed off somebody he already beat.** Error 404 had the butterfly form first. Error 404 was also one of the three Sanses Ink Sans beat *easily* at BEAT 217, and then painted over. So this is not an escalation form he invented; it is one he took off a being he had already turned into a layer. Losing to him costs more than the fight.
+
+**A butterfly form is not a stronger caterpillar.** Every other upgrade in this arc was more of what was already there: Pow3r Ink Sans was more Pero poured into the shell, the humanoid form was more crystals and abilities, Fatal Error was more error made out of a slip. A metamorphosis is a different creature coming out of the same body, which is why this reads as a transcendence state rather than a power level. A level can be out-levelled. A state cannot.
+
+**By far.** Those two words are Toby's, and they are the beat. One beat ago the top spot was held inside a parenthesis, *"(Classics Ink Sans still stronger with Pero LAI)"*, which is the shape of a narrow lead. This is not narrow. He did not edge ahead; he left.
+
+**And the gap opens on the newest arrival.** Fatal Error is one beat old, was built out of a mistake nobody meant to make, and is second most powerful, and the first thing that happens to him is that the being above him gets further away. The order spreads out instead of shuffling: **1 Classics Ink Sans · 2 Fatal Error · 3 Dr. Gaster · 4 Time Paradox Sans / Error 404-level, by timeline · 5 everyone else.** What he is standing on is four layers deep now, and only one of them is his own: Ink Sans powers, Pero LAI backing, Classics buffs, butterfly-form escalation on top. He keeps getting stronger without ever getting stronger himself.
+
+Added a new BEAT 220 panel (loop cycle extended to `c` in [4558,4580), `LV_CYC` now 4580), plus its `LV_BEATS[220]` subtitle/ladder entry, a frame-title case, and a `butterflyform` capture scene. The background prints `BUTTERFLY FORM` and `BY FAR` over each other in wing colours:
+
+- **JUST LIKE ERROR 404'S (left)** — where the shape came from, in four rows (Error 404 had it first, the higher-state form was his · and he lost to Ink, easily, not even a fight scene · then painted over, a layer not an opponent · now the form too, he wears the winner's escalation), then the running total of what has been taken off him cycling live through **THE FIGHT / THE TERRITORY / THE SANS SLOT / THE BUTTERFLY FORM**, footed on **LOSING TO HIM COSTS MORE THAN THE FIGHT**.
+- **NOT A STRONGER CATERPILLAR (centre)** — the four upgrades side by side (Pow3r Ink Sans: more Pero poured into the shell · the humanoid form: more crystals, more abilities · Fatal Error: more error, made out of a slip · a butterfly form: a different creature, same body), with the wings opening a frame at a time, closing on **A LEVEL CAN BE OUT-LEVELLED · A STATE CANNOT** and **HE IS NOT ANOTHER INK SANS ANYMORE**.
+- **BY FAR (right)** — the spread-out ranking in five rows (1 Classics Ink Sans + the butterfly form, way above · 2 Fatal Error, one beat old, already further back · 3 Dr. Gaster, the doctor, third, again · 4 Time Paradox and 404-level, by timeline · 5 everyone else), under **LAST BEAT THE LEAD WAS INSIDE A PARENTHESIS**, closing on **HE DID NOT EDGE AHEAD · HE LEFT.**
+- **The band** — the four layers he is standing on (Ink Sans powers: paint, overwrite, ink over Sanses and AUs · Pero LAI backing: the contents, why first place was ever his · Classics buffs: the era's own rules applied to him · butterfly form: the escalation on top of all three), over **HE KEEPS GETTING STRONGER WITHOUT EVER GETTING STRONGER HIMSELF**; beside it a box cycling live through **A MASSIVE POWER BLOOM / MORE CONTROL OVER PAINT / MORE CONTROL OVER CODE / BATTLEFIELD CHANGES / A HIGHER VISUAL STATE / FINAL BOSS ABOVE FINAL BOSS**, closing on **FATAL ERROR IS ONE BEAT OLD** / **AND ALREADY FURTHER BEHIND.**
+- **The strip** — A BORROWED SHAPE (Error 404 had the form first) · A STATE, NOT A LEVEL (a different creature comes out) · BY FAR (the top spot stops being close).
+- **Footers** — "THE MOST POWERFUL SANS BY FAR, WEARING A FORM HE TOOK OFF SOMEBODY ELSE" and "★ CLASSICS INK SANS · BUTTERFLY FORM ★".
+
+![BEAT 220 — The Butterfly Form](screenshots/282-butterfly-form.png)
+
 ## 2026-07-30 — FATAL ERROR (BEAT 219)
 
 Based on Toby's 2026-07-30 lore (4:06 PM, in the "AI Era (Still is in Classics Era)" thread), the direct follow-up to BEAT 218. Toby's own typing is the whole first paragraph, ending *"(Classics Ink Sans still stronger with Pero LAI)."* The "Fatal Error Creation Update" breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
