@@ -4,6 +4,58 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-30 — GASTER ON THE HERO SIDE (BEAT 218)
+
+Based on Toby's 2026-07-30 lore (11:26 AM, in the "AI Era (Still is in Classics Era)" thread), sent six minutes after BEAT 217 and correcting it. Toby's own typing is the whole first paragraph, ending *"they can't die since Pero can't die."* The "corrected ranking and roles" breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**The corrected ranking.** Not the order he sent six minutes earlier. It is actually **Ink Sans, then Error Sans, then Dr. Gaster, then everyone else** — and the other Sanses are now inside "everyone else", because *"they are just as evil as everyone else, every character is basically evil."* They are not below the top three for being weaker. They are below them for being the same.
+
+**So there is no hero side left.** The game stops being hero vs villain and becomes bigger villains stopping even bigger villains.
+
+**The duo.** Ink Sans paints over everything and Error Sans corrupts the game with **real errors, not fake** ones. One rewrites what the world looks like, the other breaks the code the world is written on. They use Pero to undercover for Ink Sans, and Ink Sans can change back.
+
+**He would be all gray.** Dr. Gaster is still very evil, but he has to stop them, because if he did not he would literally be painted over too. He is inside the game like everyone else, so the paint reaches him. He is not protecting the game; he is protecting his own colour. Right side, entirely wrong reason — and it still counted, because it still stopped them.
+
+**They cannot die.** Ink Sans and Error Sans were stopped only *temperarally*: paused, sealed, delayed, forced back, not gone, because they cannot die as long as Pero cannot die. The death rule is borrowed. The only way to end them is to end him, and nobody in the game can do that.
+
+Added a new BEAT 218 panel (loop cycle extended to `c` in [4514,4536), `LV_CYC` now 4536), plus its `LV_BEATS[218]` subtitle/ladder entry, a frame-title case, and a `gasterhero` capture scene. The background prints `ALL GRAY` and `REAL ERRORS` over each other:
+
+- **IT IS ACTUALLY THIS ORDER (left)** — the corrected ranking in four rows (1 Ink Sans, the actual villian of the game · 2 Error Sans, like very evil, the duo partner · 3 Dr. Gaster, pretty evil and on the hero side · 4 everyone else, the other Sanses are in here now), then his reason cycling live through **EVERY CHARACTER / IS BASICALLY / EVIL NOW / SO THERE IS NO / HERO SIDE LEFT**, footed on **"EVERY CHARACTER IS BASICALLY EVIL"**.
+- **REAL ERRORS · NOT FAKE (centre)** — the duo split four ways (Ink paints the surface · Error breaks the code under it · one rewrites what the world looks like · one rewrites whether it still runs at all), through **INK SANS CAN CHANGE BACK** to **NEITHER HALF IS THE SURVIVABLE HALF.**
+- **HE WOULD BE ALL GRAY (right)** — the anti-hero in five rows (still very evil · he just has to stop them · the paint reaches him too · so he fights for us, for his own reasons · anti-hero: right side, wrong reason), closing on **HE IS NOT PROTECTING THE GAME. HE IS PROTECTING HIS OWN COLOUR FROM BEING PAINTED OVER.**
+- **The band** — stopped is not beaten, in four rows (not defeated: paused · not erased: sealed · not finished: delayed · not gone: forced back), under **"THEY CAN'T DIE SINCE PERO CAN'T DIE."**; beside it a box whose one word cycles live through **PAUSED / SEALED / DELAYED / FORCED BACK**, closing on **SO THE ONLY WAY TO END THEM IS TO END HIM** / **AND NOBODY IN THE GAME CAN DO THAT.**
+- **The strip** — THE ORDER CHANGED (he corrected it six minutes later) · NOBODY IS GOOD (the hero side is a job, not a side) · STOPPED, NOT BEATEN (Pero's death rule covers them both).
+- **Footers** — "THE DOCTOR IS ON OUR SIDE, AND THAT IS THE WORST NEWS IN THE FILE" and "* BIGGER VILLAINS STOPPING BIGGER VILLAINS *".
+
+![BEAT 218 — Gaster on the hero side](screenshots/280-gaster-anti-hero.png)
+
+## 2026-07-30 — /GAME_END = TRUE (BEAT 217)
+
+Based on Toby's 2026-07-30 lore (11:20 AM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the whole first paragraph, ending *"Ink Sans also goes undercover using Pero."* The "Classics Ink Sans update" recap under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**The joke comes first.** Error Sans says *"I don't get paid enough for this!"*, Ink Sans turns around and says *"Wait, you get paid?.."* In the middle of an omniplatform horror arc the Sanses are still doing Sans comedy. Then the scene turns.
+
+**The Sans category collapses a second time.** Ink Sans **easily** beats Error 404 Sans, Dream Sans and Time Paradox Sans. Three of them, and not one of them gets a fight scene. Two Sanses are left in the game: Ink Sans and Error Sans.
+
+**The command system.** This is the part that ends the arc. He does not out-power Dr. Gaster. He takes the **Pero Command System** and writes one line into it: **`/game_end = true`**. Paint was a power, and powers can be out-powered. A command is authority over the file. Every being in this arc has been trying to beat the game from inside it; he went and found where it is typed.
+
+**Gaster fellen.** Not erased. Dropped out of absolute control, and Classics Ink Sans can now beat Classics Dr. Gaster when needed. One beat earlier the doctor looked at the strongest Sans in the game and saw equipment. The equipment read the manual, found the off switch and used it on him.
+
+**The new form.** Pow3r Ink Sans is now a male humanoid Pero Sans who makes new crystals and abilities for himself, nothing in his kit borrowed from Gaster, and he points the Sanses themselves at their own maker so the experiments overpower the experimenter. He is the actual villain of the game now.
+
+**Undercover using Pero.** He can wear the identity of the recorder everyone trusts, so the question *"is that really Pero, or is it Ink Sans using Pero?"* now sits under every conversation in the game.
+
+Added a new BEAT 217 panel (loop cycle extended to `c` in [4492,4514)), plus its `LV_BEATS[217]` subtitle/ladder entry, a frame-title case, and a `gameendtrue` capture scene. The background prints `/game_end = true` and `GASTER FELLEN` over each other:
+
+- **"WAIT, YOU GET PAID?.." (left)** — the joke in four rows (Error Sans' line · Ink Sans turning around · still Sans, comedy in the middle of all of it · then the turn), then the three who go down cycling live through **ERROR 404 SANS / DREAM SANS / TIME PARADOX SANS / BEATEN EASILY**, footed on **TWO SANSES LEFT · INK AND ERROR**.
+- **HE TOOK THE PERO COMMAND SYSTEM (centre)** — the escalation in four rows (paint was a power, powers can be out-powered · a command is not, it is authority over the file · so he stopped fighting and started writing · one line was enough), then the line itself with a live blinking cursor: **`/game_end = true`**, closing on **YOU DO NOT BEAT A COMMAND · YOU OBEY IT.**
+- **GASTER FELLEN (right)** — the fall in five rows (he was the top layer · now he can be beaten "when needed" · the Sanses did it · he loses his own system · Ink Sans takes over), closing on **THE EQUIPMENT READ THE MANUAL, FOUND THE OFF SWITCH, AND USED IT ON HIM.**
+- **The band** — the new form in four rows (he makes his own crystals and abilities · nothing borrowed from the doctor · the Sanses over-beat their own maker · he can do stuff now), over **THE ONE WHO FILED THE RESULTS IS NOW THE ONE RUNNING THE EXPERIMENT.**; beside it the disguise box, whose answer flips live through **PERO / INK SANS / PERO? / INK SANS? / UNKNOWN**, closing on **NO CONVERSATION IN THE GAME IS SAFE NOW.**
+- **The strip** — THE JOKE CAME FIRST (then the scene stopped being funny) · HE WROTE, NOT FOUGHT (one line into Pero's own system) · GASTER FELLEN (the top layer is not the top now).
+- **Footers** — "HE DID NOT WIN THE FIGHT · HE EDITED THE FILE THE FIGHT WAS IN" and "* /GAME_END = TRUE *".
+
+![BEAT 217 — /game_end = true](screenshots/279-game-end-true.png)
+
 ## 2026-07-30 — POW3R INK SANS / THE PERO SANS (BEAT 216)
 
 Based on Toby's 2026-07-30 lore (9:26 AM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the whole first paragraph, ending *"Ink Sans colors the game down."* The recap under it, "Pow3r Ink Sans / The Pero Sans" and "the Painted Omniplatform Arc", is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
