@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-30 — POW3R INK SANS / THE PERO SANS (BEAT 216)
+
+Based on Toby's 2026-07-30 lore (9:26 AM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the whole first paragraph, ending *"Ink Sans colors the game down."* The recap under it, "Pow3r Ink Sans / The Pero Sans" and "the Painted Omniplatform Arc", is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**He decides.** Pero is not corrupted into Ink Sans and nobody turns him into it. He *decides* to be Ink Sans. And because the form is all Pero inside, it does not come out as normal Ink Sans: **POW3R INK SANS**, also called New Ink Sans, The Pero Sans, Ink Pero. Toby's reason for it being the most powerful Sans-form is the interesting part, because it is not a stat: it is most powerful *"since it was all Pero in it."* The strength is the contents, not the shell.
+
+**It fits what he already was.** Toby checks his own canon in the middle of writing it and finds it already consistent: *"Makes sense with Pero/EndlessAnimations, he is a paint villian, duh."* Pero was tied to creation, animation, paint, corrupted ink and LAI control long before this beat, so the paint villain was in the file the whole time and this is the form catching up to it.
+
+**The Sans wipe.** Ink Sans meets Error 404, Dream Sans and Time Paradox, and he does not defeat them normally. He *paints over* them. Error 404, Dream Sans, Time Paradox and the other Sans layers stop being active as separate Sanses, and New Ink Sans / The Pero Sans is the only Sans left in the game. The whole Sans category collapses into one paint form. It is a replacement event, not a fight.
+
+**Everyone now knows that.** Dr. Gaster shows up to Ink Sans because Pero changed into him and the reveal is public. It surprises exactly one person least: Gaster already uses Pero, experiments through Pero and understands Pero's code, so the strongest Sans-form in the game does not read to him as a threat. It reads as another usable experiment body.
+
+**The Painted Omniplatform.** The most powerful duo turns out to be a division of labour rather than a team-up. Gaster performs the experiments and unleashes them at the heroes (White Hole, 404 serum effects, error attacks, shadow realm mechanics, nullification, empty-game tests, dark statue summons) while Ink Sans colors the game down, paints over Sanses, inks over AUs and turns the battlefield into Pero's canvas. Together they *"paint the game down to it's knees."*
+
+Added a new BEAT 216 panel (loop cycle extended to `c` in [4470,4492), `LV_CYC` now 4492), plus its `LV_BEATS[216]` subtitle/ladder entry, a frame-title case, and a `powrinksans` capture scene. The background prints `INK` and `PAINTED OVER` over each other with wet paint spots drifting behind them:
+
+- **IT WAS ALL PERO IN IT (left)** — the form as four rows (he decided, not corrupted into it · it is all Pero, so it is not normal Ink Sans · most powerful, *"since it was all Pero in it"* · already in his file: paint, animation, corrupted ink, LAI), then the four names cycling live through **POW3R INK SANS / NEW INK SANS / THE PERO SANS / INK PERO**, footed on Toby's own aside **"HE IS A PAINT VILLIAN, DUH."**
+- **HE INKED ALL THE SANSES DOWN (centre)** — Error 404, Dream Sans, Time Paradox and every other Sans layer, each with a stroke of magenta paint that draws itself across the name as the row lands, resolving into **THE ONLY SANS IN THE GAME** / **NEW INK SANS / THE PERO SANS** and the line that says what kind of event it was: **EVERY OTHER SANS IS A LAYER UNDER THE PAINT.**
+- **EVERYONE NOW KNOWS THAT (right)** — the reveal under five names (Pero changed into him · Gaster already uses him · he experiments through him · he understands the code · so it is a usable body), closing on **THE STRONGEST SANS IN THE GAME WALKED IN, AND THE DOCTOR LOOKED AT IT AND SAW EQUIPMENT.**
+- **The band** — the division of labour in four rows (Gaster performs the experiments and unleashes them at the heroes · Ink Sans paints over Sanses, over AUs, over the battlefield itself · the floor is a canvas · one doctor, one painter), closing on **THEY PAINT THE GAME DOWN TO ITS KNEES.**; beside it the experiment box, whose contents cycle live through **WHITE HOLE / 404 SERUM / ERROR ATTACKS / SHADOW REALM / NULLIFICATION / EMPTY-GAME TESTS / DARK STATUES**, over **"INK SANS COLORS THE GAME DOWN."**
+- **The strip** — HE CHOSE THE FORM (nobody turned him into it) · HE PAINTED OVER THEM (the other Sanses are underneath) · THE DOCTOR SAW A BODY (the strongest form is still a tool).
+- **Footers** — "THE MOST POWERFUL SANS IN THE GAME IS THE ONE WHO WAS DOING THE PAPERWORK" and "* THE PAINTED OMNIPLATFORM *".
+
+![BEAT 216 — Pow3r Ink Sans](screenshots/278-powr-ink-sans.png)
+
 ## 2026-07-30 — THERE ARE NO MORE ENDINGS (BEAT 215)
 
 Based on Toby's 2026-07-30 lore (7:49 AM, in the "AI Era (Still is in Classics Era)" thread). Toby's own typing is the whole first paragraph, ending *"Make the next story."* The arc under it, "The No-More-Endings Arc: Dr. Gaster's Guaranteed Win", is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
