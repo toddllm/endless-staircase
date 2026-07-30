@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-07-30 — FATAL ERROR (BEAT 219)
+
+Based on Toby's 2026-07-30 lore (4:06 PM, in the "AI Era (Still is in Classics Era)" thread), the direct follow-up to BEAT 218. Toby's own typing is the whole first paragraph, ending *"(Classics Ink Sans still stronger with Pero LAI)."* The "Fatal Error Creation Update" breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**The small blaster.** Ink Sans' first attack is only a small blaster, which makes the battle look manageable, and then he *"actually starts battling"* with the OP kit: Pero LAI power, paint overwrite, command-system access, crystals, game-ending moves, the undercover Pero disguise, reality-coloring attacks. So the opening move was not an opening. It was a warning shot.
+
+**He went looking for it.** Ink Sans *tries to find a way* to make Error Sans into Fatal Error. This is a transformation somebody wanted, not one that happened to somebody — and when he cannot do it himself he rushes to Dr. Gaster, because the error scientist is the one with the knowledge to force it.
+
+**Dr. Gaster made an error.** And the error is the creation method. Fatal Error is not a normal form upgrade; he is what came out of a mistake, which is why he reads as something that should not have been safely created. The strongest thing the doctor ever made, he made by getting it wrong.
+
+**Second most powerful.** The ranking moves again: **1 Classics Ink Sans / Pow3r Ink Sans / Pero Sans · 2 Fatal Error · 3 Dr. Gaster · 4 everyone else.** Fatal Error takes regular Error Sans' old spot.
+
+**And first place is still borrowed.** *"Classics Ink Sans still stronger with Pero LAI."* Fatal Error is stronger than what he used to be, and he is still not stronger than what is *inside* Ink Sans. The new villain duo is Classics Ink Sans + Fatal Error, and it is worse than the last one: Ink paints and overwrites the surface and the rules while Fatal Error breaks the code and the system stability underneath them. Gaster caused the transformation, and now he may regret it.
+
+Added a new BEAT 219 panel (loop cycle extended to `c` in [4536,4558), `LV_CYC` now 4558), plus its `LV_BEATS[219]` subtitle/ladder entry, a frame-title case, and a `fatalerror` capture scene. The background prints `FATAL ERROR` and `AN ERROR MADE HIM` over each other:
+
+- **IT STARTS WITH A SMALL BLASTER (left)** — the opening in four rows (first attack: one small blaster, that is all · so it looks fair, for exactly one move · then the OP kit, he actually starts battling · so it was not an opening, it was a warning shot), then the kit it was standing in front of cycling live through **PERO LAI POWER / PAINT OVERWRITE / COMMAND-SYSTEM ACCESS / CRYSTALS / GAME-ENDING MOVES / THE PERO DISGUISE / REALITY-COLORING**, footed on **THE SMALL BLASTER WAS THE POLITE VERSION**.
+- **DR. GASTER MADE AN ERROR (centre)** — the creation in four rows (Ink Sans wanted it · so he rushed to Gaster · and Gaster slipped · the wrong part worked), then the transformation itself with the arrow blinking the way a failing process does: **ERROR SANS → FATAL ERROR**, closing on **NOT A FORM UPGRADE · AN ACCIDENT THAT WORKED** and **THE ONLY BEING NOBODY MEANT TO MAKE**.
+- **THE ORDER MOVES AGAIN (right)** — the new ranking in five rows (1 Classics Ink Sans · 2 Fatal Error · 3 Dr. Gaster, he made number two by mistake · 4 everyone else · the top is borrowed), under his own line **"CLASSICS INK SANS STILL STRONGER WITH PERO LAI"**, closing on **FIRST PLACE IS NOT HIS OWN POWER.**
+- **The band** — the new duo in four rows (Ink paints and overwrites the surface and the rules · Fatal Error breaks the code and the system stability under it · the old duo: Ink + Error Sans, real errors · the new duo: Ink + Fatal Error, errors that do not recover), over **DR. GASTER CAUSED THE TRANSFORMATION · AND NOW HE MAY REGRET IT**; beside it a box whose severity word cycles live through **ERROR / FATAL ERROR / CANNOT RECOVER / DO NOT RESTART**, closing on **HE ASKED FOR A STRONGER PARTNER** / **AND GOT ONE NOBODY DESIGNED.**
+- **The strip** — A WARNING SHOT (the first move was the small one) · MADE BY MISTAKE (the error is the creation method) · SECOND MOST POWERFUL (and he was an accident).
+- **Footers** — "THE STRONGEST THING THE DOCTOR EVER MADE, HE MADE BY GETTING IT WRONG" and "★ ERROR SANS → FATAL ERROR ★".
+
+![BEAT 219 — Fatal Error](screenshots/281-fatal-error.png)
+
 ## 2026-07-30 — GASTER ON THE HERO SIDE (BEAT 218)
 
 Based on Toby's 2026-07-30 lore (11:26 AM, in the "AI Era (Still is in Classics Era)" thread), sent six minutes after BEAT 217 and correcting it. Toby's own typing is the whole first paragraph, ending *"they can't die since Pero can't die."* The "corrected ranking and roles" breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
