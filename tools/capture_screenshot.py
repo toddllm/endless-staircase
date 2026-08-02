@@ -32,6 +32,7 @@ Scenes:
     quadsanses       — BEAT 229, THE QUAD SANSES (Toby, Aug 2, 8:07 AM)
     perosrealm       — BEAT 230, PERO’S REALM (Toby, Aug 2, 8:25 AM)
     tinkerbox        — BEAT 231, TINKERBOX_CLASSICS (Toby, Aug 2, 8:34 AM)
+    scramble         — BEAT 232, IT IS NOT ORGANIZED (Toby, Aug 2, 5:19 PM)
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -7313,6 +7314,36 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=4800.4; loopVs.phase=230; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "scramble": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 232 (IT IS NOT ORGANIZED: NOT SORTED on the left, OUT OF ORDER in
+        // the middle, PERO'S CODE on the right, and THE PAUSE POINT band with the what-bleeds-into-what box).
+        // Beat 232 spans cyc in [4824.0,4846.0]; cyc=4844.4 -> dt~20.4, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=4824.0; loopVs.cyc=4844.4; loopVs.phase=232;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=4844.4; loopVs.phase=232; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0.02; }
