@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-02 — MUSTITU VARIANTS · THE GODLY FLOAT (BEAT 233)
+
+Based on Toby's 2026-08-02 lore (7:09 PM, in the "AI Era (Still is in Classics Era)" thread), sent about two hours after the beat where the confusion became the rule. Toby's own typing is the first paragraph: *"Pero also uses many Mustitu Varients such as Mustitu Blue and Mustitu Green, every color uploaded. Pero does the godly float thing. Pero is the creator of the 4 game things."* The breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**A name that has never appeared.** Mustitu is not in any of the previous 232 beats. This canon has produced a great many proper nouns, and nearly all of them arrive attached to a fight, an error code or a realm: Error 679, Fatal Error, Gray.exe, the White Void. **Mustitu arrives attached to a colour.** That is a different kind of introduction than anything the run has done.
+
+**The roster is a process, not a list.** *"Every color uploaded."* Mustitu Blue and Mustitu Green are only the two he happened to name; the rest of the set is however many colours get uploaded next. Every power system in this run so far has been countable — three main characters, four Sanses, four realms, the ranking, the index. This one deliberately has no number in it, which means it cannot be finished, only added to.
+
+**The colour is the setting.** Each variant gives Pero *"a different look, ability type, or mode."* So picking a colour is picking what he can do, not what he looks like. A skin does not change the game; this does.
+
+**And he stops walking.** *"Pero does the godly float thing."* He does not always move normally anymore: in creator mode he floats above the game as a divine admin figure. Worth sitting with, given where it is happening — this game is called **The Endless Staircase**, and 232 beats of it have been somebody climbing. The author's own character now goes up without using them.
+
+**The inventory answers the pause.** Last beat ended on *"I have no idea what to even say anymore"* and made the confusion canon. This beat comes back and **counts**: Classics 1, Classics 2, Classics 3, Tinkerbox_Classics, and one name under all four. The mess stays a mess, and he organised the one part that could still be organised, which is who made what.
+
+Added a new BEAT 233 panel (loop cycle extended to `c` in [4846,4868), `LV_CYC` now 4868), plus its `LV_BEATS[233]` subtitle/ladder entry, a frame-title case, and a `mustitu` capture scene. The background drifts colour chips **upward** rather than down, cycling the whole hue wheel, with `MUSTITU` printed faintly between them, in Mustitu blue, Mustitu green, float gold and paper cream:
+
+- **THE VARIANTS (left)** — four rows (Mustitu Blue: one he happened to name · Mustitu Green: the other one he named · and the rest: however many get uploaded · not a list: a process, so it has no end), under Toby's phrase **"EVERY COLOR UPLOADED"**, then a live cycle through the set — **MUSTITU BLUE / MUSTITU GREEN / MUSTITU ??? / EVERY COLOR / UPLOADED** — closing on **NEW NAMES USUALLY ARRIVE WITH A FIGHT.** and **THIS ONE ARRIVES WITH A COLOUR**.
+- **THE GODLY FLOAT (centre)** — five rows (not walking: he does not always walk now · creator mode: he lifts off the game floor · like an admin: above it, looking down at it · the staircase: every beat here is a climb · and he stops: the creator skips the stairs), under Toby's line **"PERO DOES THE GODLY FLOAT THING"**, with a mode cycler running **WALKING / LIFTING / FLOATING / ABOVE IT / GODLY** whose word literally drifts upward and resets, closing on **THE GAME IS NAMED AFTER CLIMBING**, **AND ITS AUTHOR JUST LEFT THE GROUND.** and **HE IS NOT USING THE STAIRS ANYMORE**.
+- **THE 4 GAME THINGS (right)** — five numbered rows (1 · Classics 1: the horror era, then sealed · 2 · Classics 2: the cyber portal realm · 3 · Classics 3: born when 1 crashed into 2 · 4 · Tinkerbox_Cl.: all three mixed in his code · one author: Pero · ToddLLM · EndlessAnim), under Toby's line **"PERO IS THE CREATOR OF THE 4 GAME THINGS"**, closing on **FOUR GAMES, COUNTED AND NUMBERED** and **THE RUN HAS NEVER TAKEN STOCK BEFORE**.
+- **The band** — the inventory in four rows (last beat: the confusion became the rule · this beat: he counts things instead · a colour system: a list of four, a credit line · what it means: he sorted the one part he could), over **THE MESS STAYS A MESS. HE ORGANISES WHO MADE WHAT.**; beside it a box cycling what a colour changes — **A DIFFERENT LOOK / A DIFFERENT ABILITY / A DIFFERENT MODE / NOT A SKIN / THE COLOUR IS THE SETTING** — closing on **PICKING A COLOUR IS PICKING WHAT PERO CAN DO.** and **SO THE ROSTER GROWS EVERY TIME ONE IS UPLOADED**.
+- **The strip** — MUSTITU (blue, green, every color uploaded) · THE GODLY FLOAT (he stops using the stairs) · THE 4 THINGS (and one name under all of them).
+- **Footers** — "EVERY COLOR UPLOADED IS ANOTHER WAY FOR PERO TO EXIST" and "★ MUSTITU BLUE · MUSTITU GREEN · THE GODLY FLOAT ★".
+
+![BEAT 233 — Mustitu Variants · The Godly Float](screenshots/295-mustitu-variants.png)
+
 ## 2026-08-02 — IT IS NOT ORGANIZED (BEAT 232)
 
 Based on Toby's 2026-08-02 lore (5:19 PM, in the "AI Era (Still is in Classics Era)" thread), sent nine hours after the merge that made Tinkerbox. Toby's own typing is the first paragraph: *"Tinkerbox isn't organized, the 3 parts all are mixed up in Pero's code. I have no idea what to even say anymore."* The breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
