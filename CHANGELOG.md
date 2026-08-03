@@ -4,6 +4,31 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-02 — MUSTITU BLUE PERO (BEAT 234)
+
+Based on Toby's 2026-08-02 lore (9:12 PM, in the "AI Era (Still is in Classics Era)" thread), sent two hours after the Mustitu variants first appeared, and sent **with a picture** — an attachment named `Mustitu Blue Pero.png`. Toby's own typing is the first paragraph: *"Here is Mustitu Blue Pero, all Mustitus look like that but with different colored eyes. Different eye color = different abilities for each 1. I made the roblox avatar look like him. Pero himself is the normal man, but he can create many forms and powers, since he is the creator of Classics."* The breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**One body, many forms.** Last beat left the roster with no number in it: every colour uploaded. This beat says what actually varies, and it is the smallest part of the design. Same body, same golden crown, same golden armour, same dual swords on every single variant, and **only the eyes change**. An open-ended power system running on one fixed silhouette.
+
+**The eyes are the switch, not the tell.** *"Different eye color = different abilities for each 1."* Eye colour has marked a form in this canon before — EndlessAnimations' three forms each carry one — but there it **reported** how corrupted he had got. Here it is the control: the eye colour is where the setting lives, so looking at a Mustitu tells you which powers are loaded.
+
+**He answered the open question, with a third option.** The previous reply asked whether Pero picks which variant he is in or whether something in the game decides for him. He took neither fork: **he makes them**, *"since he is the creator of Classics."* That is why the roster has no end in it — the person writing the list is standing inside the game the list belongs to.
+
+**It left the lore and got built.** *"I made the roblox avatar look like him."* He has built Classics things in Roblox before — the Simon 404 model that reported Critical Model Corruption, the Mario Among Us crossover — but those were models and maps. This is the first time a form walks out of the lore and onto him: the character he wrote is now the character he wears.
+
+**And the default is a normal man.** Golden crown, golden armour, glowing blue eyes, dual swords, galaxy and dragon, divine multiversal creator-tier presence — and underneath all of it, *"Pero himself is the normal man."* The strongest figure in the run keeps a plain base form and treats every god-tier version as something he puts on.
+
+Added a new BEAT 234 panel (loop cycle extended to `c` in [4868,4890), `LV_CYC` now 4890), plus its `LV_BEATS[234]` subtitle/ladder entry, a frame-title case, and a `mustitublue` capture scene. The background drifts **pairs of eye-dots** upward through the whole hue wheel — one body, two eyes, every colour — with `MUSTITU BLUE` printed faintly between them, in Mustitu blue, crown gold, creator green and paper cream:
+
+- **THE ONE BODY (left)** — four rows (same body: on every variant there is · golden crown: and golden armour, all of them · dual swords: one in each hand, every form · only the eyes: that is the whole difference), under Toby's phrase **"ALL MUSTITUS LOOK LIKE THAT"**, then a live cycle through what stays fixed — **SAME BODY / SAME CROWN / SAME ARMOUR / SAME SWORDS / DIFFERENT EYES** — closing on **A ROSTER WITH NO NUMBER IN IT.** and **RUNNING ON ONE SILHOUETTE**.
+- **THE EYES (centre)** — five rows (the one part: that changes between forms · blue eyes: one ability set · green eyes: a different one · every colour: its own powers, for each 1 · not a tell: the eyes are the switch), under Toby's line **"DIFFERENT EYE COLOR = DIFFERENT ABILITIES"**, with a cycler running **SET THE ABILITIES / SET THE POWER TYPE / SET THE MODE / NOT DECORATION / THE CONTROL**, closing on **EYE COLOUR HAS MARKED FORMS HERE**, **BUT THERE IT REPORTED CORRUPTION.** and **HERE IT IS THE CONTROL PANEL**.
+- **WHO MAKES THEM (right)** — five rows (the question: pick one, or get given one? · his answer: neither, he makes them · the reason: he wrote the game they are in · so the roster: grows when he decides it does · and the base: "Pero himself is the normal man"), under Toby's line **"HE IS THE CREATOR OF CLASSICS"**, closing on **HE IS STANDING INSIDE WHAT HE WRITES**, **SO THE LIST CANNOT RUN OUT** and **A CROWN HE PUTS ON, NOT ONE HE IS**.
+- **The band** — the avatar in four rows (he drew it: Mustitu Blue Pero.png · then built it: the Roblox avatar matches · before this: he built models and maps · this time: he built who he plays as), over **THE CREATOR OF CLASSICS IS NOW SOMETHING YOU CAN WEAR.**; beside it a box cycling what Blue reads as — **GOLDEN CROWN / GOLDEN ARMOUR / GLOWING BLUE EYES / DUAL SWORDS / GALAXY AND DRAGON** — closing on **THE COSMIC ROYAL ONE, STAR-POWERED.** and **AND STILL ONLY ONE COLOUR OUT OF ALL OF THEM**.
+- **The strip** — ONE BODY (and only the eyes change) · THE EYES (are the switch, not the tell) · HE MAKES THEM (so the roster cannot run out).
+- **Footers** — "AN ENDLESS POWER SYSTEM WITH ONE FIXED FACE AND ONE MOVING PART" and "★ MUSTITU BLUE PERO · DIFFERENT EYES, DIFFERENT POWERS ★".
+
+![BEAT 234 — Mustitu Blue Pero](screenshots/296-mustitu-blue-pero.png)
+
 ## 2026-08-02 — MUSTITU VARIANTS · THE GODLY FLOAT (BEAT 233)
 
 Based on Toby's 2026-08-02 lore (7:09 PM, in the "AI Era (Still is in Classics Era)" thread), sent about two hours after the beat where the confusion became the rule. Toby's own typing is the first paragraph: *"Pero also uses many Mustitu Varients such as Mustitu Blue and Mustitu Green, every color uploaded. Pero does the godly float thing. Pero is the creator of the 4 game things."* The breakdown under it is pasted ChatGPT prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
