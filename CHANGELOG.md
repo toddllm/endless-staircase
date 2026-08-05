@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-05 — STRONGER THAN YOU · HE PUTS DOWN THE ARMY HE WAS WINNING WITH (BEAT 249)
+
+Based on Toby's 2026-08-05 lore (4:11:13 PM, in the "AI Era (Still is in Classics Era)" thread), sent fourteen minutes after The Anti-Error War. His own typing is the whole first paragraph: *"Every Classicstale character now is locked in the Stronger Than You AU/Event. Each character with it's own music and cutscene and stuff. Simon 404 stops infecting and spreading, Simon 404 now does it himself."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**He switches off the exact thing that was winning.** BEAT 248, fourteen minutes earlier, is **the only beat in the entire run that ends with Simon ahead** — its closing words are *"Gray and the Sprunkis are trying to destroy the Anti Error, but there were to many and they were outnumbered, Simon 404 is starting to win again."* He was winning by numbers. Tonight *"Simon 404 stops infecting and spreading."* **The closing line of one email is undone by the next one, and it is undone by the character it was good news for.**
+
+**The threat changes category rather than size.** One email ago the danger was an outbreak: 404Ds and 666Ds spreading through the Abinations, the puppets, the boss puppets, the warriors and the modded characters, with Dr. Gaster a 666D and Sara and Mirda 404Ds. Tonight none of that runs on its own. *"Simon 404 now does it himself."* **Smaller by headcount, worse by intent** — nothing spreads by accident any more, so everything that happens from here is something he chose.
+
+**And his own reason is sitting in the previous email.** BEAT 248 has the line *"Simon 404 was angry again and disliked all the errors."* The army he had was made entirely of errors. **The thing winning for him was the thing he hated**, which makes putting it down a choice rather than a loss.
+
+**The cast moves the same direction from the opposite side.** Classicstale stops being one Sans-style battle and becomes a locked event in which **every single character has their own music, their own cutscene and their own event sequence**. So both halves of one short email take a game that was a system-wide plague and turn it into a room full of one-on-ones — **which is exactly what the song he named the AU after is: a duet between two people, sung across a fight.** He gave the whole cast a boss theme on the same day he stopped needing an army.
+
+**Built as game beat 249, `STRONGER THAN YOU`.** Additive; nothing earlier was changed.
+
+- **Background: the spread being pulled back in, over a field of boss themes.** Forty motes push outward from a single point and are then drawn back into it on a loop, because he wrote the infection stopping and the work becoming personal. Behind them, seven waveform rows ripple with one lit at a time, one theme per character. Repeating band text: **EACH ONE GETS THEIR OWN MUSIC · AND HE STOPS SPREADING**.
+- **THE LOCK (left)** — four rows (who is locked: every Classicstale character · where: the Stronger Than You AU/Event · what they get: their own music and cutscene · and: *"and stuff"*, his words), then a cycler on **WHAT EACH CHARACTER NOW HAS** — THEIR OWN MUSIC / THEIR OWN CUTSCENE / THEIR OWN EVENT SEQUENCE — closing on **NOT ONE SANS-STYLE BATTLE** and **THE WHOLE CAST GETS ONE**.
+- **HE DOES IT HIMSELF (centre)** — five rows (3:57 PM: the infection is the whole threat · it spread through 404Ds and 666Ds · it took Dr. Gaster, Sara, Mirda · 4:11 PM: *"stops infecting and spreading"* · instead: *"Simon 404 now does it himself"*), a cycler on **WHAT THE DANGER IS NOW** (NOT AN OUTBREAK / NOT AN ARMY / ONE PERSON, CHOOSING), and the closing block **SMALLER BY HEADCOUNT / AND WORSE BY INTENT / NOTHING SPREADS BY ACCIDENT NOW**.
+- **FOURTEEN MINUTES (right)** — five rows (BEAT 248: the only beat he ends ahead · its last words: *"there were to many"* · *"starting to win again"* · 14 min: he turns the numbers off · so: he undoes his own winning move), with **WHAT HE GAVE UP** cycling THE 404Ds / THE 666Ds / THE WHOLE OUTBREAK / THE ONLY LEAD HE HAD, closing on **THE CLOSING LINE OF ONE EMAIL / IS UNDONE BY THE NEXT ONE**.
+- **EVERYTHING BECOMES ONE-ON-ONE (band)** — a five-row ledger with one row lit at a time, the changed rows in AU violet: THE CAST · BEFORE (one Sans-style battle, shared) · THE CAST · NOW (own music, cutscene, sequence, one each) · THE VILLAIN · BEFORE (infection spreading outward, automatic) · THE VILLAIN · NOW (*"he does it himself"*, by hand) · SO THE GAME (stops being a plague, and becomes a room of duels). Footed **AND THE SONG HE NAMED THE AU AFTER IS A DUET — TWO PEOPLE, SUNG ACROSS A FIGHT, WHICH IS EXACTLY THE SHAPE THE GAME JUST TOOK**.
+- **WHY PUT DOWN A WINNING ARMY (inset)** — a cycler through HE DISLIKED ALL THE ERRORS (his own line, one email ago) / THE ARMY WAS MADE OF ERRORS (404Ds and 666Ds, all of them) / SO THE THING WINNING FOR HIM (was the thing he hated) / HE WOULD RATHER DO IT HIMSELF (than win with that), over **HE WAS WINNING BY NUMBERS** and **AND HE PUT THE NUMBERS DOWN**.
+- **The strip** — THE WHOLE CAST IS LOCKED IN (each with their own music) · HE STOPS SPREADING (and does it himself) · FOURTEEN MINUTES (after he started winning).
+- **Footer** — *HE GAVE THE WHOLE CAST A BOSS THEME AND STOPPED NEEDING AN ARMY*, over **★ SIMON 404 NOW DOES IT HIMSELF ★**.
+- New `strongerthanyou` scene added to `tools/capture_screenshot.py`; `LV_CYC` 5198 → 5220, `LV_BEATS` now 250 entries (0–249).
+
+![BEAT 249 — Stronger Than You](screenshots/311-stronger-than-you.png)
+
 ## 2026-08-05 — THE ANTI-ERROR WAR · THE DISEASE BUILDS THE CURE (BEAT 248)
 
 Based on Toby's 2026-08-05 lore (3:57:40 PM, in the "AI Era (Still is in Classics Era)" thread), sent five hours fifty-eight minutes after The Corruption Era. His own typing runs the entire opening paragraph, from *"Pinki was conquering nearly everyone, Simon 404 appeared to Pinki"* through to *"Simon 404 makes the Anti Error. Gray and the Sprunkis are trying to destroy the Anti Error, but there were to many and they were outnumbered, Simon 404 is starting to win again."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
