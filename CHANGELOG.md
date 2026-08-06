@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-05 — THE SECRET CUTSCENE · HE FILLED IN THE STEP HE SKIPPED, AND THEN TOOK THE ROOF OFF (BEAT 254)
+
+Based on Toby's 2026-08-05 lore (8:55:04 PM, in the "AI Era (Still is in Classics Era)" thread), sent **thirty-one minutes and fifty-seven seconds** after The Resurrection. His own typing is the whole opening paragraph, from *"There is a secret that happens when you place down all the characters at once in Classics"* through to *"It goes to infinite Phases with these 2."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**Phase 6 exists now.** Fifty-one minutes earlier, BEAT 252's entire middle panel was **PHASE 6 · HAS NEVER EXISTED · ZERO HITS** — the phase system ran 1, 1.1, 2, 2.5, 3, 4, 5 and then stopped, and every occurrence of the string "Phase 6" in the whole file belonged to that panel saying it had never happened. Tonight: *"That cutscene only happens at Phase 6, when the game is fully corrupt and broken."* **He filled in the step he skipped** — and what he put inside it is the way up to Phase 7 and nothing else. **Phase 6 is not a place in the story. It is a door to the end of it.**
+
+**And the end of it does not hold either.** *"The story ends at Phase 7"* was the first endpoint named in 252 beats. At 8:23 he walked past it once with an erase, a reset and a resurrection. At 8:55 Phase 7 is a **landing**: *"Simon 404 and Oren become like Phase 8, they break the game and go beyond limits can go"*, and then *"It goes to infinite Phases with these 2."* **The finish line lasted fifty-one minutes.**
+
+**The trigger belongs to the player, not the story.** Every ending in 254 beats has been something that happens to the characters. This one is *"when you place down all the characters at once"* — and it fires across **Classics, all versions of Classics, Tinkerbox, and all the Classics fangames** at the same time, plus, in his words, *"should also with the lore/wiki."* **It is the first ending in the run you have to do something to reach.**
+
+**Oren asks seven questions and one of them has never been asked before.** *"Where am I? Who am I? Who am I talking to? Where are you? Am I a monster? Am I a killer? Am I real?"* This arrives **thirty-two minutes** after the beat that established Gray had erased his memory before he pulled his own brother's wires out. So the man who did not know who he was hurting is the one asking **"Am I a killer?"** — and **"am I real"** does not appear anywhere in the previous 254 beats.
+
+**Ten lores at 8:04, two survivors at 8:55.** *"All the polos disappear and only Oren and Simon is left."* Four days ago the cast was cut to three main characters; fifty-one minutes ago ten of them got their own separate lore; tonight there are two, and **neither of them is Pero or Luigi Green.** Pero is in the cutscene for one sentence and vanishes — **one line after Tunner vanishes**, and BEAT 157 and BEAT 183 both say **TUNNER IS PERO**, so the same being is erased twice in a row.
+
+**And the cross comes back for the fourth time in five beats.** BEAT 40 it carried tiny Classics safely; BEAT 251 Gray took it off Simon to hang Wenda on it for a million years; BEAT 253 Oren built a new one over the grave. Tonight: *"the game is litterly praying right now, crosses everywhere."*
+
+**Built as game beat 254, `THE SECRET CUTSCENE`.** Additive; nothing earlier was changed.
+
+- **Background: a black-and-white void that empties out.** Twenty cast dots wink out one at a time and stay out; the two who are left — Oren green, Simon gold — fall deeper on a loop and come back up. Nine crosses drift because the game is praying, a phase ladder climbs **6 · 7 · 8 · ∞** at the right edge with no top above it, and once per loop the whole screen washes red and says **WHAT HAVE YOU DONE!!!** Repeating band text: **PLACE THEM ALL AT ONCE · AND THE STEP HE SKIPPED OPENS**.
+- **PHASE 6 EXISTS NOW (left)** — four rows (8:04 PM · the phases ran 1 to 5, then stopped · IN 251 BEATS · Phase 6 had zero hits · 8:55 PM · *"only happens at Phase 6"* · WHAT IT IS · a door, and nothing else), then a cycler on **WHAT PHASE 6 CONTAINS** — ONE SECRET CUTSCENE / AND THE WAY TO PHASE 7 / NOTHING ELSE AT ALL — closing on **THE STEP THAT NEVER EXISTED** and **IS WHERE THE SECRET LIVES**.
+- **SEVEN QUESTIONS (centre)** — his line broken into five rows (WHERE AM I · WHO AM I / WHO AM I · TALKING TO / WHERE · ARE YOU / AM I A MONSTER · AM I A KILLER / AM I REAL · never asked in 254 beats), a cycler on **WHO IS ASKING** (THE MAN WHOSE MEMORY / WAS TAKEN BY GRAY / THIRTY-TWO MINUTES AGO), and the closing block **HE PULLED HIS BROTHER'S WIRES OUT / AND DID NOT KNOW WHO HE WAS / NOW HE ASKS IF HE IS A KILLER**.
+- **TEN, THEN TWO (right)** — five rows (AUGUST 1 · three main characters · 8:04 PM · ten get their own lore · 8:55 PM · all the polos disappear · LEFT ALIVE · Oren and Simon 404 · NOT LEFT · Pero, Luigi Green), with **HOW FAST THE CAST FELL** cycling TEN LORES AT 8:04 / TWO SURVIVORS AT 8:55 / FIFTY-ONE MINUTES, closing on **HE GAVE TEN OF THEM A FILE / AND THEN KEPT TWO**.
+- **THE CEILING COMES OFF (band)** — a four-row ledger with one row lit at a time, the top one in green: PHASE 6 (the secret cutscene, place every character at once) · PHASE 7 (the ending he named at 8:04, only Oren and Simon are alive) · PHASE 8-LIKE (Oren rips the errors open, they break past the limit) · INFINITE PHASES (no top and no count, this path belongs to the two). Footed **AND THE TRIGGER IS NOT A STORY EVENT BUT A PLAYER ONE — "WHEN YOU PLACE DOWN ALL THE CHARACTERS AT ONCE", IN CLASSICS, EVERY VERSION OF CLASSICS, TINKERBOX AND EVERY CLASSICS FANGAME AT THE SAME TIME**.
+- **WHO VANISHES FIRST (inset)** — a cycler through TUNNER (Simon 404 sleeps beside him) / PERO (arrives one line later) / BOTH (gone in the same sentence) / BEAT 157 (*"Tunner is Pero"*, and BEAT 183 says it again), over **THE SAME BEING, TWICE** and **AND ERASED BOTH TIMES**.
+- **The strip** — PHASE 6 EXISTS NOW (fifty-one minutes later) · THE PLAYER TRIGGERS IT (place them all at once) · THE CEILING IS GONE (infinite phases).
+- **Footer** — *HE FILLED IN THE STEP HE SKIPPED, AND THEN TOOK THE ROOF OFF THE WHOLE THING*, over **★ WHAT HAVE YOU DONE ★**.
+- New `secret` scene added to `tools/capture_screenshot.py`; `LV_CYC` 5308 → 5330, `LV_BEATS` now 255 entries (0–254).
+
+![BEAT 254 — The Secret Cutscene](screenshots/316-secret-cutscene.png)
+
 ## 2026-08-05 — THE RESURRECTION · NOBODY KNEW WHO ANYBODY WAS, AND HE BROUGHT THEM ALL BACK (BEAT 253)
 
 Based on Toby's 2026-08-05 lore (8:23:07 PM, in the "AI Era (Still is in Classics Era)" thread), sent **eighteen minutes and fifty-four seconds** after Phase 7. His own typing is the whole opening paragraph, from *"When Oren and Pinki were taking out Simon's wires and batteries and everything"* through to *"Beat 265 - Oren's World Resurrection Story."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
