@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-06 — THE BEST FRIEND · THE ONE HE LOCKED THE ROOM AROUND IS THE MAIN VILLAIN (BEAT 263)
+
+Based on Toby's 2026-08-06 lore, 4:05:53 PM, in the "Even Even Even More Classics Era" thread, **twenty-nine minutes and fourteen seconds** after NO MORE PHASES. His own typing is the whole first paragraph: *"Flower is like the main villian discised as a best friend. Flower first seems like he is helping you, but then goes to betrayal. Pero goes with Flower/Gaster."* The ChatGPT breakdown under his paragraph is commentary.
+
+**"Best friend" has never appeared once in 262 beats.** The file has *"only friend"* twice, and both are broken. BEAT 176: *"Luigi Green is now only friends with Pero, Pero isn't friends with him"* — one-way, and refused. BEAT 250: *"Simon 404's only friend is Wenda, Wenda's only friend is Simon 404"* — said and walked out of in the same paragraph. **The first best friend this story ever gets is a disguise.**
+
+**The betrayal shape has run once before, and it ran the other way.** THE ALLIANCE BETRAYAL, June 21: Simon.EXE goes to Oren, Clara and Luigi Green for allies, Oren says no and survives, and the two who say yes are slain for saying it. That betrayal came from **the one asking for help**. This one comes from **the one offering it** — and the playable staircase still carries a live ALLIANCE BETRAYAL meter you clear by refusing the deal.
+
+**A villain in a friendly face is not new, but the order is.** BEAT 163 wrote *"the good-guy look from BEAT 162 was a disguise, he is the main villain now"*, and Mr. Black's whole stated goal was to be loved by Pero more than anyone. That one was **uncovered** as a villain. This one is being **trusted as a friend first**, and nobody inside the story has found out.
+
+**Pero goes with him, and Pero has never gone with anybody.** In 262 beats he creates, resets, teaches, ranks, banishes and locks; every arrow in the file points out of him. Tonight the arrow turns round, and it turns **without a fight**.
+
+**He sealed the room around him seventy-nine minutes ago.** 2:46 PM, BEAT 260: everyone locked out of the Anti Void, exactly one being allowed in. 3:14 PM, BEAT 261: that being is his brother. 3:36 PM, BEAT 262: those two are all that is left. 4:05 PM: **the one he kept is the main villain** — in the one room he was made in and cannot leave, and he let him in himself. And note *"helping YOU"*: BEAT 255 turned the line to face the player and BEAT 256 gave the player a character, so **the mask is worn at the player, not at the cast.**
+
+**Built as game beat 263, `THE BEST FRIEND`.** Additive; nothing earlier was changed.
+
+- **Background: a flower that puts its own mask back on.** A small yellow flower stands beside a tall white figure, linked by a line labelled **BEST FRIEND**, under *HE FIRST SEEMS LIKE HE IS HELPING*. Once per loop the petals bleed from yellow to red and start to spin, the link grows an arrow pointing from the white figure **into** the red one, and the labels turn to **BETRAYAL** / *PERO GOES WITH HIM*. Then it fades back to yellow and starts again. Repeating band text: **SEEMS LIKE HE IS HELPING YOU · BUT THEN GOES TO BETRAYAL**.
+- **A WORD NEVER USED HERE (left)** — five rows (BEAT 176 · only friends with Pero, refused / BEAT 250 · only friend, both ways, left / BEAT 250 · *"Gray and Pero became friends"* / BEST FRIEND · has never been said at all / THE FIRST · one is a disguise), then a cycler on **WHAT FRIENDSHIP HAS MEANT HERE** — ONE-WAY AND REFUSED / SAID, THEN WALKED OUT OF / FOR ONCE — closing on **AND THE ONE CALLED BEST** and **IS THE ONE PRETENDING**.
+- **IT RUNS THE OTHER WAY (centre)** — five rows (JUNE 21 · Simon.EXE asks for allies / OREN · said no and survived / THE TWO YES · were slain for saying it / THAT ONE · came from the one asking / THIS ONE · comes from the one offering), a cycler on **THE STAIRCASE STILL HAS A METER FOR IT**, closing on **MR. BLACK WAS UNCOVERED** / **THIS ONE IS BEING TRUSTED FIRST** / **AND NOBODY HAS FOUND OUT YET**.
+- **PERO GOES WITH HIM (right)** — five rows (HE MAKES · the games, the cast, the platforms / HE RESETS · everything except himself / HE TEACHES · and he ranks and he banishes / HE LOCKS · the room he was made in / TONIGHT · he follows somebody), a cycler on **WHAT HE HAS NEVER DONE ONCE**, closing on **AND HE DOES IT WITHOUT A FIGHT** and **BECAUSE HE THINKS IT IS HIS FRIEND**.
+- **THE ROOM HE SEALED AROUND HIM (band)** — a four-row timetable (2:46 PM · BEAT 260, he locks the Anti Void, one visitor · the first thing he made / 3:14 PM · BEAT 261, that visitor is Dr. Gaster · his brother / 3:36 PM · BEAT 262, the two of them are all that is left · always together / 4:05 PM · BEAT 263, the one he kept is the main villain · and he goes with him), with the closing note that the door he closed to keep everyone else away is the door he is now on the inside of.
+- **HELPING YOU (band inset)** — a cycler across BEAT 255 (*the line turned to face you*), BEAT 256 (*you were given a character*), TONIGHT (*he seems to be helping you*) and SO THE MASK (*is not worn at the cast*), holding on **IT IS WORN AT THE PLAYER**.
+- **Strip:** THE DISGUISE · a best friend / WHAT IS UNDER · the main villain / WHO GOES WITH · Pero, by choice.
+- **Footers:** *THE ONE HE LET IN IS THE ONE HE SHOULD HAVE LOCKED OUT* and **★ THE MAIN VILLAIN DISGUISED AS A BEST FRIEND ★**.
+
+![BEAT 263 — THE BEST FRIEND](screenshots/325-the-best-friend.png)
+
 ## 2026-08-06 — NO MORE PHASES · THE LADDER IS TAKEN AWAY, NOT CLIMBED (BEAT 262)
 
 Based on Toby's 2026-08-06 lore, 3:36:39 PM, in the "Even Even Even More Classics Era" thread, **twenty-two minutes and four seconds** after FLOWER IS GASTER. His own typing is the whole first paragraph: *"Flower doesn't have Phases, Phases no longer exist. Flower is the most advanced, Dr. Gaster is the OMNIPLATFORMS and beyond in 1 being. Pero and Dr. Gaster are now always together, Simon 404 and Oren fall off their polos. Pero and Dr. Gaster/Flower are now the only beings."* The ChatGPT breakdown under his paragraph is commentary.
