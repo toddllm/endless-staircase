@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-06 — AIMED AT YOU · THE LINE TURNS AROUND AND FACES WHOEVER IS HOLDING THE GAME (BEAT 255)
+
+Based on Toby's 2026-08-06 lore (7:24:25 AM, in the "AI Era (Still is in Classics Era)" thread), sent **ten hours, twenty-nine minutes and twenty-one seconds** after The Secret Cutscene, and the first lore of a new day. His own typing is the whole opening paragraph: *"When Simon 404 is saying 'What have you done' he is saying it to the player, not Oren. It is for triggering both of them to a loop of even higher Phases. Oren at Phase 8 says 'Only God can save you now...'."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
+
+**It is a correction, and it answers the exact question the last reply asked him.** The reply to BEAT 254 asked whether Simon was talking to Oren, the only other one in the room, or to the player who set the whole thing off. His first sentence: **the player.** That makes this the **second email in three beats** whose opening clause answers the previous reply — BEAT 253 opened by answering whether Oren knew whose wires he was pulling out.
+
+**BEAT 254 drew the red wash without knowing where it pointed.** That beat washes the whole screen red once per loop and says **WHAT HAVE YOU DONE!!!** at the viewer, built the night before anyone knew who the line was for. It turns out to have been aimed the right way the entire time.
+
+**The line stops being dialogue.** *"It is for triggering both of them to a loop of even higher Phases."* A sentence said to the player is the **mechanism** that locks Simon 404 and Oren into the climb. In 255 beats the engine has always been a power, a form, an ability or an erase — **this is the first time speech is the machinery.**
+
+**Phase 8 has something in it now.** Every previous occurrence of "Phase 8" in the whole file is the approximation **"Phase 8-like"** — nothing happened there and nobody spoke in it. Tonight Oren gets a line in it: ***"Only God can save you now..."*** — and the character saying it is the one whose lore lane was named **"Head Reasuer / god-rescue lore"** and who personally erased, reset and resurrected the entire game two beats ago. **The rescuer is the one saying the rescue is above him.** It also lands one beat after *"the game is litterly praying right now, crosses everywhere"* — **the praying came first, and the thing being prayed to is named second.**
+
+**And the game already had a player-talker, and it was not Simon.** BEAT 224 made Luigi Green *"the one who talks to the player by building little games like 'Who to go to' because he can talk to you and you cannot talk back."* BEAT 254 left Luigi Green out of the two survivors. One beat later the one still alive says it **straight to your face, with no little game built around it** — and you still cannot talk back.
+
+**Built as game beat 255, `AIMED AT YOU`.** Additive; nothing earlier was changed.
+
+- **Background: the camera turned around.** Simon's line leaves him as red rings travelling outward *at the screen* instead of at Oren; the two who are left stand still together, Oren green and Simon gold; the twenty polos are grey and staying out; the phase ladder scrolls upward forever with nothing on top of it; last beat's crosses are still drifting; and once per loop the whole screen washes red and says **IT WAS YOU**. Repeating band text: **HE IS SAYING IT TO THE PLAYER · NOT OREN**.
+- **IT WAS AIMED AT YOU (left)** — four rows (THE QUESTION · who was Simon talking to · THE ROOM · only Oren was in it · HIS ANSWER · *"he is saying it to the player"* · AND · *"not Oren"*), then a cycler on **WHO SIMON IS LOOKING AT** — NOT OREN / NOT THE STORY / WHOEVER PLACED THEM ALL — closing on **LAST BEAT DREW IT IN RED** and **NOT KNOWING WHO FOR**.
+- **THE LINE IS THE ENGINE (centre)** — five rows (NOT DIALOGUE · it is the trigger · HIS WORDS · *"triggering both of them"* · INTO WHAT · *"even higher phases"* · WHO IS LOCKED IN · Simon 404 and Oren · IN 255 BEATS · the engine was never speech), a cycler on **WHAT MOVES THE GAME NOW** (NOT A POWER OR A FORM / ONE SENTENCE / AND IT IS SAID TO YOU), and the closing block **THE PLAYER PLACED THEM ALL DOWN / SIMON SAID ONE LINE ABOUT IT / AND THE PHASES LOST THEIR TOP**.
+- **PHASE 8 SPEAKS (right)** — five rows (UNTIL TONIGHT · it was only *"Phase 8-like"* · IN THE WHOLE FILE · nobody ever spoke in it · TONIGHT · Oren gets a line in it · THE LINE · *"Only God can save you now"* · WHO SAYS IT · the Head Reasuer himself), with **WHAT HE DID TWO BEATS AGO** cycling HE ERASED THE GAME / HE RESET ALL OF IT / HE BROUGHT THEM ALL BACK, closing on **AND TONIGHT THE RESCUER SAYS / ONLY GOD CAN DO IT NOW**.
+- **THE ONE WHO COULD TALK TO YOU (band)** — a four-row ledger with one row lit at a time, tonight's in red: BEAT 224 (Luigi Green talks to the player, by building little games) · BEAT 224 (*"he can talk to you"*, *"and you cannot talk back"*) · BEAT 254 (Luigi Green is not a survivor, all the polos disappear) · BEAT 255 (Simon says it to your face, no little game around it). Footed **AND YOU STILL CANNOT TALK BACK — THE ONLY MOVE THE PLAYER HAS EVER HAD IN THIS RUN IS PLACING EVERY CHARACTER DOWN AT ONCE, WHICH IS THE EXACT THING HE IS BEING ASKED ABOUT**.
+- **THE PRAYING CAME FIRST (inset)** — a cycler through BEAT 254 (*"the game is litterly praying"*) / BEAT 254 (crosses everywhere) / BEAT 255 (*"only God can save you now"*) / ONE BEAT APART (the crosses, then the name), over **IT PRAYED FIRST** and **AND NAMED WHO SECOND**.
+- **The strip** — IT WAS AIMED AT YOU (not at Oren) · THE LINE IS THE ENGINE (a loop of higher phases) · PHASE 8 SPEAKS (only God can save you now).
+- **Footer** — *HE TURNED THE ONE CHARACTER STILL ALIVE AROUND AND POINTED HIM AT WHOEVER IS HOLDING THE GAME*, over **★ ONLY GOD CAN SAVE YOU NOW... ★**.
+- New `aimed` scene added to `tools/capture_screenshot.py`; `LV_CYC` 5330 → 5352, `LV_BEATS` now 256 entries (0–255).
+
+![BEAT 255 — Aimed At You](screenshots/317-aimed-at-you.png)
+
 ## 2026-08-05 — THE SECRET CUTSCENE · HE FILLED IN THE STEP HE SKIPPED, AND THEN TOOK THE ROOF OFF (BEAT 254)
 
 Based on Toby's 2026-08-05 lore (8:55:04 PM, in the "AI Era (Still is in Classics Era)" thread), sent **thirty-one minutes and fifty-seven seconds** after The Resurrection. His own typing is the whole opening paragraph, from *"There is a secret that happens when you place down all the characters at once in Classics"* through to *"It goes to infinite Phases with these 2."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
