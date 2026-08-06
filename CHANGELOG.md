@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-06 — WHITE VOID · THE AUTHOR TAKES THE PEN BACK (BEAT 258)
+
+Based on Toby's 2026-08-06 lore, **two messages** in the new "Even Even Even More Classics Era" thread, sent **thirty-one minutes** after Anti Void. The first, at 1:55:53 PM, is one line of his own typing: *"Pero unleashes the Au White and the Au White expands and becomes White Void."* Under it sat pasted prose proposing a **gentler** White Void — one that removes false forms instead of people, becomes Pero's final classroom, cleans the story without deleting anybody — with two invented Pero lines written into it.
+
+**The second message, three minutes and ten seconds later, refuses all of it.** In his own words: *"White Void destroys everyone and everything. The whole meaning of the game is to destroy it. Do not make stuff up, nor quotes, the quotes are the most important of them all. The game is the 1 who makes everyone the normal form."*
+
+**He has stepped in to correct the reading exactly twice in 258 beats, and both times it was this same move.** BEAT 228, on August 2: *"White Void isn't 1 move, it is multiple moves into a huge storm inside of a huge white sphere."* Today: it destroys everyone and everything. Out of everything in this run — every form, every phase, every ranking — **the White Void is the one thing the author comes back for.**
+
+**The shape has run once before and ended the other way.** BEAT 238's Au Rainbow became BEAT 239's Rainbow Void forty-three minutes later, and that one *replaced* the game: *"she did not empty the game, she replaced it."* Au White becomes White Void inside a **single sentence**, and this one destroys it.
+
+**The quote rule is a first.** BEAT 202 set the standing rule that pasted prose written from his canon is drawn as canon from the author's own side. Today he narrows his own rule: the prose can stand, the quotes cannot be invented, and they are *"the most important of them all."* Nothing in 258 beats has ever told the builder what may not be made up. **The two invented Pero lines from the 1:55 mail are deliberately not drawn anywhere on this panel, not even struck through.** Refused quotes stay off the screen.
+
+**And "the game is the 1 who makes everyone the normal form" moves the hand.** Every previous *normal form* in the file only ever described what a character already was — Pero's pacifist normal form, Mr. Black's *"normal form, impossible aura"*, Fatal Error not being *"a normal form upgrade."* Nobody has ever been **put back into** one. Every reset in this run had a character's name on it: Pero reset everything except himself, Oren erased them all and brought them back, Pinki replaced the space they were standing in. **This one has no author anywhere inside the story.**
+
+**Built as game beat 258, `WHITE VOID`.** Additive; nothing earlier was changed.
+
+- **Background: Au White expands and becomes White Void.** A white front grows out of the middle on a loop, its label changing from **AU WHITE** to **WHITE VOID** as it gets big; twenty-two figures stand around it and each one goes out the moment the front passes over it; once per loop the whole screen goes white and says **EVERYONE AND EVERYTHING**. Repeating band text: **PERO UNLEASHES THE AU WHITE · IT EXPANDS · IT BECOMES WHITE VOID**.
+- **HE CORRECTED IT TWICE (left)** — five rows (BEAT 228, AUG 2 · "WHITE VOID ISN'T 1 MOVE" · HE FIXED IT TO · a storm in a white sphere · BEAT 258, TODAY · "DESTROYS EVERYONE" · HOW FAST · four minutes, unprompted · IN 258 BEATS · only ever these two), then a cycler on **WHAT HE STEPPED IN TO FIX** — THE WHITE VOID / THE WHITE VOID AGAIN / BOTH TIMES, THE SAME THING — closing on **THE ONE THING HE COMES BACK FOR** and **IS THIS ONE**.
+- **THE SHAPE HAS RUN BEFORE (centre)** — five rows (BEAT 238 · the Au Rainbow · BEAT 239 · then the Rainbow Void · THE GAP · forty-three minutes · TODAY · Au White, then White Void · THE GAP · one sentence), a cycler on **WHAT THE RAINBOW ONE DID** (it erased the not-immune / it stretched forever / she replaced the game), and the closing block **THAT ONE REPLACED THE GAME / SAME SHAPE, OTHER ENDING / THIS ONE DESTROYS IT**.
+- **DO NOT MAKE UP QUOTES (right)** — five rows (THE RULE · "DO NOT MAKE STUFF UP" · AND ALSO · "NOR QUOTES" · WHY · most important of them all · BEAT 202 · set the canon rule · BEAT 258 · he narrows his own rule), with **WHAT THE MACHINE OFFERED HIM** cycling TRUTH FORMS / A FINAL CLASSROOM / A CLEANUP THAT SPARES EVERYONE, closing on **ALL OF IT REFUSED** and **IN FOUR MINUTES**.
+- **THE NORMAL FORM (band)** — a four-row ledger with one row lit at a time, today's in white: PERO ("a pacifist who only wants peace", a description) · MR. BLACK ("normal form, impossible aura", a description) · FATAL ERROR ("not a normal form upgrade", a description) · BEAT 258 (the game makes everyone the normal form, **something does it**). Headed **IN 258 BEATS "NORMAL FORM" HAS ONLY EVER DESCRIBED WHAT A CHARACTER ALREADY IS — NOBODY HAS EVER BEEN PUT BACK INTO ONE** and footed **AND THE THING DOING IT IS NOT A CHARACTER — EVERY RESET IN THIS RUN HAD SOMEBODY'S NAME ON IT: PERO RESET EVERYTHING EXCEPT HIMSELF, OREN ERASED THEM ALL AND BROUGHT THEM BACK, PINKI REPLACED THE SPACE THEY WERE STANDING IN. THIS ONE HAS NO AUTHOR ANYWHERE INSIDE THE STORY. THE GAME DOES IT**.
+- **THIRTY-ONE MINUTES (inset)** — a cycler through 1:24 PM (he let everyone in to see him) / 1:55 PM (he unleashes the Au White) / 31 MINUTES (that is the whole gap) / WHAT IT HITS (everyone and everything), over **HE INVITED THE WHOLE GAME OVER** and **AND THEN UNLEASHED THIS**.
+- **The strip** — AU WHITE (it expands into White Void) · THE MEANING (is to destroy it) · THE QUOTES (are the most important).
+- **Footer** — *THE MACHINE OFFERED HIM A GENTLER VOID, AND HE TOOK FOUR MINUTES TO SAY NO*, over **★ THE WHOLE MEANING OF THE GAME IS TO DESTROY IT ★**.
+- New `auwhite` scene added to `tools/capture_screenshot.py`; `LV_CYC` 5396 → 5418, `LV_BEATS` now 259 entries (0–258).
+
+![BEAT 258 — White Void](screenshots/320-white-void.png)
+
 ## 2026-08-06 — ANTI VOID · THE MAN WHO BUILT EVERYTHING HAS ONE ROOM AND CANNOT LEAVE IT (BEAT 257)
 
 Based on Toby's 2026-08-06 lore (1:24:17 PM, in the "AI Era (Still is in Classics Era)" thread), sent **three hours, fourteen minutes and eleven seconds** after Absolute Infinity. His own typing is the whole opening paragraph: *"Pero always needs to be at Anti Void (no hashtag, the hashtag one is Sanses void), he can't be anywhere else. Pero also lives in Anti Void and was made there and is locked there forever. Pero let everyone to the Anti Void to see him."* Everything under it is pasted prose written from his canon, drawn as canon under the standing rule BEAT 202 set from the author's own side.
