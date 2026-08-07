@@ -46,6 +46,10 @@ Scenes:
     omegaflower      — BEAT 266, OMEGA FLOWER (Toby, Aug 6, 7:04 PM)
     thehat           — BEAT 267, THE HAT (Toby, Aug 6, 7:12 PM)
     alwaysmine       — BEAT 268, ALWAYS MINE (Toby, Aug 6, 7:21 PM)
+    thecost          — BEAT 269, THE COST (Toby, Aug 6, 8:29 PM)
+    resetrecovery    — BEAT 270, RESET RECOVERY (Toby, Aug 7, 6:21 PM)
+    nothingends      — BEAT 271, NOTHING ENDS (Toby, Aug 7, 6:23 PM)
+    simonpsc         — BEAT 272, SIMON.psc (Toby, Aug 7, 6:35 PM)
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -7481,6 +7485,108 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=5658.8; loopVs.phase=269; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "resetrecovery": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 270 (RESET RECOVERY: WHAT HE HAD LEFT on the left, BEFORE OREN COULD in the middle, RULING TOGETHER on the right, the SIMON 404 BECAME SIMON AGAIN band with the WHOSE MOVE RESET IS inset.
+        // Beat 270 spans cyc in [5660.0,5682.0); cyc=5680.8 gives dt~20.8 so every fade-in and both footer
+        // lines are up, and it lands the background loop late in its cycle.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=5660.0; loopVs.cyc=5680.8; loopVs.phase=270;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=5680.8; loopVs.phase=270; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "nothingends": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 271 (NOTHING ENDS: NOT AN ENDING on the left, THE CONTINUATION in the middle, NEW FLOWER NEW CHARA on the right, the run-that-would-not-end band with the two-minutes-thirty-two-seconds inset.
+        // Beat 271 spans cyc in [5682.0,5704.0); cyc=5702.8 gives dt~20.8 so every fade-in and both footer
+        // lines are up, and it lands the background loop late in its cycle.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=5682.0; loopVs.cyc=5702.8; loopVs.phase=271;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=5702.8; loopVs.phase=271; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "simonpsc": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 272 (SIMON.psc: BACK TO VANILLA on the left, THE LOCK THAT HELPS in the middle, A SAFE FILE on the right, the walk-to-the-centers band with the DAVE MODE ENDED FOREVER inset.
+        // Beat 272 spans cyc in [5704.0,5726.0); cyc=5724.8 gives dt~20.8 so every fade-in and both footer
+        // lines are up, and it lands the background loop late in its cycle.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=5704.0; loopVs.cyc=5724.8; loopVs.phase=272;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=5724.8; loopVs.phase=272; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
