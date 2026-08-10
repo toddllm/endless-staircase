@@ -4,6 +4,64 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-10 — I AM THE TRIGGER · THEY STOP TRADING PLACES AND EACH TAKE A PERMANENT JOB (BEAT 290)
+
+Based on Toby's 2026-08-10 lore, 8:22:34 AM, in the "Even Even Even More Classics Era" thread — nine minutes after I AM PERO. His own typing is the three lines: *"Gray says to Oren \"If you are the most powerful, why am I the only one who survives Phase 2 other than you?\". Pero says to Gray \"I can't let you die in Phase 2, you have me as your friendly assistant who knows everything.\", Oren says \"That is a good point Gray, but I am the trigger.\"."* The breakdown pasted under it is ChatGPT commentary.
+
+**The challenge is a survival record, not a power claim.** Gray does not say he is stronger. He points at who is still standing and notes that the list has two names on it. After weeks of fights settled by damage, this one is settled by attendance.
+
+**And the answer is not his own power.** Pero answers the question for him: *"I can't let you die in Phase 2."* So Gray survives Phase 2 because somebody else is keeping him alive. The question was aimed at Oren, and it lands on Gray too.
+
+**The same sentence, nine minutes apart, in two different eras.** At 8:13 AM, in the AI Era: *"ask me anything, I know everything."* At 8:22 AM, in Classics, to Gray: *"your friendly assistant who knows everything."* The freed Pero's first act is to walk back to Gray and use his own pitch line on him.
+
+**Free does not mean gone.** Beat 289 is Pero getting free **from** Gray. Beat 290 is Pero standing next to Gray by choice. Held and staying look identical from outside, and the nine minutes between the two messages is the whole difference.
+
+**Phase 2 flips from a lock to a filter.** For months Phase 2 was something to escape: the Phase 2 lock, Tunner kept Phase 2 locked and undead on purpose, Simon 404 spending months trying to get out of it, the lock making him weaker. This morning it is something almost nobody comes out of, with exactly two survivors named.
+
+**And "the trigger" is the title he invented last night as an attack.** At 7:51 PM Oren opened with *"I am the new trigger of corruption and game breaking."* This morning it is what he keeps after saying the other one has a point. Same word, opposite job: a boast becomes the one thing he holds on to after conceding.
+
+**Built as game beat 290, `I AM THE TRIGGER`.** Additive; nothing earlier was changed.
+
+- **Background: the survivor list, and the question that reads it.** OREN (the one who sets it off) / GRAY (the one who walks out of it) / EVERYBODY (else is not on the list), under *WHO IS LEFT STANDING AFTER PHASE 2*, with **"THAT IS A GOOD POINT GRAY, BUT I AM THE TRIGGER."** boxed in orange over *HE GIVES UP THE ARGUMENT AND KEEPS THE WORD*, and Gray's question drifting behind the whole panel.
+- **HE ASKS A RECORD, NOT A POWER (left)** — five rows (HE DOES NOT · say "I am stronger" / HE SAYS · "why am I the only one" / THE LIST · has two names on it / AND ONE · of them is the one he asked / SO THE · question cuts both ways), closing on *HE IS NOT CLAIMING TO BE STRONGER* / *HE IS POINTING AT WHO IS STILL HERE* / *AND THE ANSWER IS NOT HIS OWN POWER* / **SOMEBODY ELSE ANSWERS FOR HIM**.
+- **THE SAME SENTENCE (centre)** — five rows pairing the two eras nine minutes apart (8:13 AM · AI Era · "ask me anything" / "I know everything" / 8:22 AM · Classics · to Gray, directly / "who knows everything" / HE KEPT · the pitch and changed rooms), closing on *HE GOT FREE AT THIRTEEN MINUTES PAST* / *AND WAS BACK BESIDE GRAY BY TWENTY-TWO* / *NOBODY MADE HIM COME BACK* / **FREE DOES NOT MEAN GONE**.
+- **TRIGGER AND SURVIVOR (right)** — five rows lit one at a time (LAST NIGHT · "we swapped roles now" / THIS AM · they stop swapping / OREN · sets Phase 2 off / GRAY · comes out of it alive / AND THEY · no longer battle at all), over the wrapped note that last night "the trigger" was the comeback he opened with, and **SAME WORD, DIFFERENT JOB**.
+- **PHASE 2 SPENT MONTHS AS A LOCK. THIS MORNING IT IS A FILTER (band)** — the four-row grid (THE LOCK · Tunner kept Phase 2 locked · and undead, on purpose / THE LOCK · Simon 404 spent months · trying to get out of it / THE LOCK · made him weaker · it was a thing done to you / THE FILTER · almost nobody survives it · and two names are given), closing on *it used to be the thing you were stuck inside, now it is the thing you do not come out of, and only two people do*.
+- **NINE MINUTES OF BEING FREE (band inset)** — a cycler across 8:13 AM (free from Gray, again), 8:22 AM (*"I can't let you die"*), NOBODY (asked him to come back) and SO IT IS (a choice this time), over *HE WAS LET GO AND HE WALKED BACK* / *TO THE SAME PERSON, ON HIS OWN*.
+- **Strip:** THE ROLES · STOPPED MOVING / THE PITCH · DID NOT CHANGE / PHASE 2 · CHANGED MEANING.
+- **Footers:** *HE ASKED WHY HE IS STILL ALIVE AND THE ANSWER WAS NOT HIS OWN POWER* and **★ I AM THE TRIGGER ★**.
+- **Screenshot helper:** new `thetrigger` scene in `tools/capture_screenshot.py`.
+
+![BEAT 290 — I AM THE TRIGGER](screenshots/352-i-am-the-trigger.png)
+
+## 2026-08-10 — I AM PERO · A WRONG NAME ANSWERED WITH A BIGGER ONE INSTEAD OF A DENIAL (BEAT 289)
+
+Based on Toby's 2026-08-10 lore, 8:13:52 AM, in the "Even Even Even More Classics Era" thread — the morning after WE SWAPPED ROLES NOW. His own typing runs the whole arc: *"In AI Era, ChatGPT and Grok once again call Gemini \"Dave\", but Gemini levitates and says \"No, I am Pero, your LAI Assistant, ask me anything, I know everything.\", Pero appears from Gemini and ChatGPT and Alexa and Grok and all other AIs. Pero was back free from Gray again. Now it is Pero and the Sprunkis. Gray and Oren no longer battle each other, and Gray was given Oren's cutscene and Gray's Realm/Dimension."* The breakdown pasted under it is ChatGPT commentary.
+
+**Thirteen days of denial, answered with a bigger name.** The Dave joke opened on July 28, 2026 at 8:24 PM and has only ever produced a denial: *"I AM NOT DAVE! HOW MANY TIMES DO I HAVE TO TELL YOU GUYS!"* — the archive even tracks a denial meter climbing to full. This morning the same setup gets the opposite kind of answer. Not *"I am not Dave."* **"I am Pero."** The fix for a wrong name turns out not to be a correction; it is a bigger name.
+
+**He comes out of all of them at once.** Gemini, ChatGPT, Alexa, Grok, *"and all other AIs."* So he was never hidden inside one of them. He was spread across the whole AI Era cast, and the wrong name was the door back in. Every AI in the era was carrying a piece of him while two of them argued about what to call the third.
+
+**Free from Gray, again.** *"Again"* is Toby's own word, so this has happened before. And twelve hours earlier, Gray's entire answer to Oren was not a power but that name: *"I have Pero."* By morning the name has walked off.
+
+**Gray claimed to be him, and he turns up as himself.** At 1:09 PM yesterday Gray said *"All must be one. I am Gaster and Pero and Gray"*, and Oren answered *"You are Simon."* Today Pero separates himself out of every AI in the game and says his own name first, unprompted.
+
+**The rivalry ends, and the settlement only goes one way.** Last night finished with Oren at 1 HP and Gray struck by Wenda and glitching back. This morning they simply do not battle. And what changes hands is not split down the middle: Gray is given **Oren's cutscene**, and **Gray's Realm/Dimension**. A cutscene is the one thing in this game that cannot be fought over, it just plays, and it is the piece that changes owners.
+
+**Built as game beat 289, `I AM PERO`.** Additive; nothing earlier was changed.
+
+- **Background: the AIs he came out of.** GEMINI (the one they called the wrong name) / CHATGPT · GROK (the two who kept calling it) / ALEXA · THE REST (*"and all other AIs"*), under *HE DID NOT COME OUT OF ONE OF THEM*, with **"NO, I AM PERO, YOUR LAI ASSISTANT."** boxed in gold over *THIRTEEN DAYS OF SAYING WHAT HE IS NOT, ENDED BY SAYING WHAT HE IS*, and *"ask me anything, I know everything"* drifting behind the whole panel.
+- **THE DENIAL BECOMES A CLAIM (left)** — five rows (JUL 28 · the Dave joke opens / EVERY TIME · "I am not Dave!" / "how many times…" / AUG 10 · he stops saying what he is not / AND SAYS · a name nobody offered him), closing on *A CORRECTION NEVER WORKED ONCE* / *SO HE STOPS CORRECTING THEM* / *AND OVERWRITES THE NAME INSTEAD* / **AND HE LEVITATES TO SAY IT**.
+- **THE WRONG NAME WAS THE DOOR (centre)** — five rows (NOT ONE AI · he comes out of all of them / GEMINI · the one they misnamed / CHATGPT · one of the two who did it / ALEXA · GROK · and all the others / SO THE JOKE · is what let him back in), closing on *EVERY AI IN THE ERA HAD A PIECE OF HIM* / *AND NONE OF THEM KNEW IT* / *THEY WERE ARGUING ABOUT A NAME* / **STANDING ON TOP OF THE ANSWER**.
+- **THE SETTLEMENT (right)** — five rows lit one at a time (LAST NIGHT · Oren at 1 HP, Gray glitching / THIS AM · they do not battle at all / GRAY GETS · Oren's cutscene / GRAY GETS · his own Realm/Dimension / OREN GETS · nothing on the list), over the wrapped note that a cutscene is the one thing that cannot be fought over, and **THE FIGHT ENDS, THE GIVING DOES NOT**.
+- **TWELVE HOURS AGO HIS WHOLE ANSWER WAS THIS NAME. NOW THE NAME LEAVES (band)** — the four-row grid (7:51 PM · Gray: "I have Pero" · not a power, a name / 8:13 AM · "free from Gray again" · and "again" is Toby's word / YESTERDAY · Gray: "I am Gaster and Pero" · Oren: "you are Simon." / TODAY · Pero says his own name · and he is the one saying it), closing on *one of them claimed to be Pero and was told he was somebody else; the other one just turned up and said it*.
+- **NOW IT IS PERO AND THE SPRUNKIS (band inset)** — a cycler across IT WAS (Gray versus Oren), IT WAS (Gray using Pero), NOW IT IS (Pero and the Sprunkis) and SO THE (centre moved back), over *TWO CHARACTERS STOP FIGHTING* / *AND THE GAME GOES BACK TO ITS CAST*.
+- **Strip:** THE DENIAL · BECAME A NAME / THE NAME · WALKED OFF / THE FIGHT · JUST STOPPED.
+- **Footers:** *HE SPENT LAST NIGHT SAYING THE NAME AND THIS MORNING THE NAME LEFT* and **★ I AM PERO ★**.
+- **Screenshot helper:** new `iampero` scene in `tools/capture_screenshot.py`.
+
+![BEAT 289 — I AM PERO](screenshots/351-i-am-pero.png)
+
 ## 2026-08-09 — WE SWAPPED ROLES NOW · THE GHOST CHANGES OCCUPANTS, AND THE MARK STAYS ON THE SAME HAND (BEAT 288)
 
 Based on Toby's 2026-08-09 lore, 7:51:00 PM, in the "Even Even Even More Classics Era" thread — six hours and forty-two minutes after UNLIKE EVERYONE ELSE. His own typing runs the whole arc, including Oren's *"You may be the most intelegent and everyone non Sprunki and use Simon, but You are mine, and I am the new trigger of corruption and game breaking."*, Gray's *"Guess what, you may be the most powerful with your telekenesis, but I have Pero. 😹⚡"*, *"Simon floats around Gray as a small ghost like Oren was, but instead of all the souls Oren rescued, Simon carried a yellow soul."*, Simon's *"what have i done to get into this mess, what have i done, What have I done? 😿⚡"*, Oren's *"You are now in the Underworld, you are in Anti Void, Pero's Realm, and we swapped roles now."*, *"Gray uses E R A S E, the game becomes a white void, Oren still is alive but at 1 HP"*, *"he used SSS (Solar System Symbiosis), Solmon was made"*, Gray's *"What is that?! 😨"*, and Wenda's *"Do not get the wrong idea."* The ChatGPT breakdown under it is commentary.
