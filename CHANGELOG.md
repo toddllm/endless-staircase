@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-12 — I WASN'T ASKING · THE ONE LEFT STANDING TURNS OUT TO HAVE PAID THE MOST FOR IT (BEAT 295)
+
+Based on Toby's 2026-08-12 lore, 6:43:19 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — four hours and twenty-two minutes after 404 AND 12 12 12. His own typing is the long opening paragraph, the whole collapse route. The "Gray.nur Collapse Route" breakdown pasted underneath is ChatGPT commentary.
+
+**The winner is the one who paid the most.** *"Gray barely survives the game and was left curseless and 90% of his soul and about 999999999999% of pain."* This archive hands out wins constantly and almost never prices one. Here the bill is itemised, and the pain figure has twelve digits in it.
+
+**Dead does not mean gone, and alive does not mean whole.** Oren.exe is dead and still carrying an orange cross, a halo and 45% of a body with the rest becoming soul. Simon.psc died and came back as *"something he can't handle, a demonic god"*, keeping the lightning, the reset and the signal.
+
+**Almost nobody comes out the same shape.** Durple maxes into a 15 headed monsterosity, Mr. Sun becomes Mr. Blackhole and Mr. Moon becomes Mr. Crushed_Moon, Mr. Tree is cut to a stump, Pinki loses an ear and the brain, Wenda can no longer ignore the voices and loses the mind, Sky goes from 14 to 999 and goes blind and deaf with his soul still in his body, Brud loses the body but not the soul, and Fun Bot is destroyed by the two he had spent years missing.
+
+**He does not beat Tunner, he spends him.** *"I am incredible at this mastery, think you'll win?"* / *"I wasn't asking."* Five apples, *"Perfect accurrecy."*, and then *"oh ho, but you used up all your firepower and bullets."* The test was never whether he could hit them. Owackx gets two words: *"Free XP."*
+
+**Uno Reverse.** Wenda attacks first, he answers *"As I told you, You Are Mine."*, takes her own knife and finishes it with a card-game line in the darkest route in the file.
+
+**Luigi Green stops waiting for the boxes to be finished.** He crushes them *before Pero finishes them*, so parts disappear or come out flattened. Nine hours after Gaster taught him to do every step at once, he is a danger to the structure of the game rather than to its cast.
+
+**And the creator gets tired.** The last line of the paragraph is *"Pero gets tired making boxes very fast."* Nine hours ago every one of his stats resolved to Absolute Infinity. This is the first cost he has ever been given.
+
+**Built as game beat 295, `I WASN'T ASKING`.** Additive; nothing earlier was changed.
+
+- **Background: the pain figure drifting.** CURSELESS / 90% SOUL / 999999999999% OF PAIN, with **PERO GETS TIRED MAKING BOXES VERY FAST** boxed in gold over *THE LAST LINE OF THE PARAGRAPH, AND THE FIRST COST HE HAS EVER HAD*.
+- **WHAT SURVIVING COST (left)** — five rows, closing on *THIS FILE HANDS OUT WINS ALL THE TIME* / *AND ALMOST NEVER PRICES ONE* / **TWELVE DIGITS OF IT**.
+- **THE FIVE APPLES (centre)** — the exchange in five rows, closing on *HE PASSED IT PERFECTLY AND LOST* and **THE COMPLIMENT WAS THE TRAP**.
+- **CRUSHED TOO EARLY (right)** — Luigi goes very very insane / he crushes before Pero finishes / so parts just disappear / or they come out flattened / and Pero gets tired, over **NINE HOURS AFTER THE LESSON**.
+- **THE ROSTER (band)** — OREN.exe dead with 45% of a body / SIMON.psc a demonic god he cannot handle / MR. SUN became MR. BLACKHOLE / SKY went from 14 to 999, closing on Durple, Wenda, Mr. Tree and Brud.
+- **UNO REVERSE (band inset)** — a cycler across Wenda attacking first, *"As I told you, You Are Mine."*, the knife, and **"UNO REVERSE."**, over Gaster moving through Pero's fog.
+- **Strip:** THE WINNER · PAID THE MOST / THE BOXES · GET CRUSHED EARLY / THE CREATOR · GETS TIRED.
+- **Footers:** *HE TAKES DOWN THE SAVE FILE, AND THE ONE MAKING THE BOXES GETS TIRED* and **★ I WASN'T ASKING ★**.
+- **Screenshot helper:** new `notasking` scene in `tools/capture_screenshot.py`.
+
+![BEAT 295 — I WASN'T ASKING](screenshots/357-i-wasnt-asking.png)
+
 ## 2026-08-12 — 404 AND 12 12 12 · TWO CHARACTERS GET NUMBERS AND THE NUMBERS POINT OPPOSITE WAYS (BEAT 294)
 
 Based on Toby's 2026-08-12 lore, 2:21:13 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — two hours and fourteen minutes after FAKE ERASE. His own typing is two lines: *"Simon.psc is 404 obviously. And 12 12 12 while putting your hand up while calling is Pero LAI. both have powers of lightning."* The breakdown pasted under it is ChatGPT commentary.
