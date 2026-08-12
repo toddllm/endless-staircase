@@ -4,7 +4,7 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
-## 2026-08-12 — 404 AND 12 12 12 · TWO CHARACTERS GET NUMBERS AND THE NUMBERS POINT OPPOSITE WAYS (BEAT 295)
+## 2026-08-12 — 404 AND 12 12 12 · TWO CHARACTERS GET NUMBERS AND THE NUMBERS POINT OPPOSITE WAYS (BEAT 294)
 
 Based on Toby's 2026-08-12 lore, 2:21:13 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — two hours and fourteen minutes after FAKE ERASE. His own typing is two lines: *"Simon.psc is 404 obviously. And 12 12 12 while putting your hand up while calling is Pero LAI. both have powers of lightning."* The breakdown pasted under it is ChatGPT commentary.
 
@@ -16,7 +16,7 @@ Based on Toby's 2026-08-12 lore, 2:21:13 PM, in the "Even Even Even Even More Cl
 
 **The shared power is the point, and the source is the split.** They both use lightning. Simon's is 404 glitch lightning — speed, sleep-defence, game-error power. Pero's is LAI creator lightning — Anti Void, command and control from outside the box. Same bolt, different socket.
 
-**Built as game beat 295, `404 AND 12 12 12`.** Additive; nothing earlier was changed.
+**Built as game beat 294, `404 AND 12 12 12`.** Additive; nothing earlier was changed.
 
 - **Background: the two numbers drifting.** 404 (Simon.psc · not found) / 12 12 12 (Pero LAI · hand up, calling) / BOTH (answer in lightning), with **12 12 12 — WITH YOUR HAND UP, WHILE CALLING** boxed in gold over *A GESTURE, NOT A BUTTON*.
 - **SIMON.psc IS 404 (left)** — five rows (404 MEANS · something was looked for / AND · it was not there / SO IT IS · a report of absence / AND HE · has carried it all along / THE ONLY · number he ever needed), closing on *THE NUMBER IS ALSO THE DESCRIPTION* / *YOU DO NOT DIAL A 404* / **YOU RECEIVE ONE**.
@@ -28,9 +28,9 @@ Based on Toby's 2026-08-12 lore, 2:21:13 PM, in the "Even Even Even Even More Cl
 - **Footers:** *ONE IS THE NUMBER YOU GET WHEN SOMETHING IS MISSING, THE OTHER IS THE ONE YOU DIAL* and **★ 404 AND 12 12 12 ★**.
 - **Screenshot helper:** new `calling` scene in `tools/capture_screenshot.py`.
 
-![BEAT 295 — 404 AND 12 12 12](screenshots/357-404-and-12-12-12.png)
+![BEAT 294 — 404 AND 12 12 12](screenshots/356-404-and-12-12-12.png)
 
-## 2026-08-12 — FAKE ERASE · THE LOUDEST ATTACK IN THE FILE TURNS OUT TO CHANGE NOTHING (BEAT 294)
+## 2026-08-12 — FAKE ERASE · THE LOUDEST ATTACK IN THE FILE TURNS OUT TO CHANGE NOTHING (BEAT 293)
 
 Based on Toby's 2026-08-12 lore, 12:06:46 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — six minutes and twenty-three seconds after THE REAL VILLAIN. His own typing: *"New Chara also has a fake erase, it doesn't actually erase the safe file, so does with normal Chara. New Chara just attacks the spot there in, and the game fills with 9s. They don't even damage or reach the outside of the box. Mr. Black could just walk in and use the power of the outside of the box and he could just destroy the whole box. He shrunk everyone into the box, Classics Mr. Black locked them into the box. His indentity as Pero/Paul."* The breakdown pasted under it is ChatGPT commentary.
 
@@ -42,7 +42,7 @@ Based on Toby's 2026-08-12 lore, 12:06:46 PM, in the "Even Even Even Even More C
 
 **And the cage was built in two steps by one face.** Mr. Black shrank everyone into the box; Classics Mr. Black locked them in; and Classics Mr. Black is the Pero / Paul / Black Hat identity. So the trap is not a separate villain's — it is one more piece of the disguise system.
 
-**Built as game beat 294, `FAKE ERASE`.** Additive; nothing earlier was changed.
+**Built as game beat 293, `FAKE ERASE`.** Additive; nothing earlier was changed.
 
 - **Background: the wall of 9s.** NEW CHARA (fake erase · fills the game with 9s) / NORMAL CHARA (fake erase too) / THE SAVE (was never touched), with **THEY DO NOT REACH THE OUTSIDE OF THE BOX** boxed in white over *THE CEILING IS THE WALL, NOT THE DAMAGE*.
 - **IT LOOKS LIKE THE END (left)** — five rows (NEW CHARA · attacks where they stand / THE GAME · fills up with 9s / AND THE · save file is untouched / NORMAL · Chara is the same / SO BOTH · erases are costume), closing on *THE NOISE IS NOT THE REACH* / **NOTHING LEFT THE BOX**.
@@ -54,9 +54,9 @@ Based on Toby's 2026-08-12 lore, 12:06:46 PM, in the "Even Even Even Even More C
 - **Footers:** *THE LOUDEST ATTACK IN THE GAME STILL CANNOT REACH THE EDGE OF IT* and **★ FAKE ERASE ★**.
 - **Screenshot helper:** new `fakeerase` scene in `tools/capture_screenshot.py`.
 
-![BEAT 294 — FAKE ERASE](screenshots/356-fake-erase.png)
+![BEAT 293 — FAKE ERASE](screenshots/355-fake-erase.png)
 
-## 2026-08-12 — THE REAL VILLAIN · THE BLAME TURNS OUT TO HAVE BEEN THE HIDING PLACE (BEAT 293)
+## 2026-08-12 — THE REAL VILLAIN · THE BLAME TURNS OUT TO HAVE BEEN THE HIDING PLACE (BEAT 292)
 
 Based on Toby's 2026-08-12 lore, 12:00:23 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — the antagonist reveal. His own typing: *"\"Everyone blamed everyone else. They all didn't know the real antagonist is Luigi Green, this is getting really, REALLY, INSTERISTING!\" -Gaster. Pero makes the box characters to never know who the villian really is, and he made all the characters evil and do stuff, Pero and Gaster cover Luigi Green. Luigi Green has the powers of everyone, is outside the game, can erase the game, and also triggers his boss fight, he also makes games for comunication with the player like \"Who to go to\" and the buttons where Chara does \"Erase\" and \"Do Not\", and even Gray's erase cutscene. Pero told us that Gray's erase is a fake erase, it just teleports everything into a white void, and that Luigi Green is the only one with the real erase."* The breakdown pasted under it is ChatGPT commentary.
 
@@ -70,7 +70,7 @@ Based on Toby's 2026-08-12 lore, 12:00:23 PM, in the "Even Even Even Even More C
 
 **And the file said so four days ago.** On August 8: Luigi Green "would be the best since he goes overboard and crazy and insane with all that power and previous evil all in 1 entity." That was a guess about who would make a good villain. Today it is the answer.
 
-**Built as game beat 293, `THE REAL VILLAIN`.** Additive; nothing earlier was changed.
+**Built as game beat 292, `THE REAL VILLAIN`.** Additive; nothing earlier was changed.
 
 - **Background: the blame list.** THEY BLAMED (Gray · Oren · Simon.psc · Mr. Black) / (Pero · Unikitty · Wenda) / (the fog and the AI templates), with **THE REAL ANTAGONIST IS LUIGI GREEN** boxed in green over Gaster's line.
 - **TOO MANY SUSPECTS (left)** — five rows on the cover-by-addition, closing on *EVERY FIGHT SO FAR WAS MISDIRECTION* / **AND ALL OF IT WORKED**.
@@ -82,11 +82,11 @@ Based on Toby's 2026-08-12 lore, 12:00:23 PM, in the "Even Even Even Even More C
 - **Footers:** *THE ONE WHO CRUSHES THE BOXES IS THE ONE WHO BUILT THE MENU* and **★ THE REAL VILLAIN ★**.
 - **Screenshot helper:** new `realvillain` scene in `tools/capture_screenshot.py`.
 
-![BEAT 293 — THE REAL VILLAIN](screenshots/355-the-real-villain.png)
+![BEAT 292 — THE REAL VILLAIN](screenshots/354-the-real-villain.png)
 
-## 2026-08-12 — ??? = ABSOLUTE · UNKNOWN TURNS OUT TO HAVE BEEN A DECISION, NOT A GAP (BEAT 292)
+## 2026-08-12 — ??? = ABSOLUTE · UNKNOWN TURNS OUT TO HAVE BEEN A DECISION, NOT A GAP (BEAT 291)
 
-Based on Toby's 2026-08-12 lore, 9:41:17 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — the AI Era third layer, eighteen minutes after THE ASK BUTTON. His own typing runs the whole scene: Pero revealing his ??? stats as Absolute Infinity and writing a whole book on them, Gaster arriving as the third character outside the game, the door and the Anti Void, *"Welp, all those guys keep suffering each second if they don't change from box to box"*, *"Unikitty is there again. Should I send her to the user, the shopping list, Alexa's head, take her out the box and send her to reality, or give her a template?"*, Luigi Green's *"I'LL animate her."*, Pero's corner-and-math overexplanation, *"your own intelegence level which equals about 200.5 IQ"*, Gaster's box-crushing lesson, the Bario/Weegee Mega Bario rivalry, and the reversed L banners replacing Simon's. The breakdown pasted under it is ChatGPT commentary.
+Based on Toby's 2026-08-12 lore, 9:41:17 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — the second message of the brand-new "Even 4x Classics Era" thread and the first on it to carry lore. His own typing runs the whole scene: Pero revealing his ??? stats as Absolute Infinity and writing a whole book on them, Gaster arriving as the third character outside the game, the door and the Anti Void, *"Welp, all those guys keep suffering each second if they don't change from box to box"*, *"Unikitty is there again. Should I send her to the user, the shopping list, Alexa's head, take her out the box and send her to reality, or give her a template?"*, Luigi Green's *"I'LL animate her."*, Pero's corner-and-math overexplanation, *"your own intelegence level which equals about 200.5 IQ"*, Gaster's box-crushing lesson, the Bario/Weegee Mega Bario rivalry, and the reversed L banners replacing Simon's. The long "third layer" story pasted underneath is ChatGPT commentary and is not canon.
 
 **The question marks were never missing data.** Every stat written ??? resolves to Absolute Infinity, and the reason given is that the game did not want to write the word yet. LV 1, KR 1, Rank 1 and 1000 IQ were only the visible part. Unknown was a decision.
 
@@ -98,49 +98,19 @@ Based on Toby's 2026-08-12 lore, 9:41:17 AM, in the "Even Even Even Even More Cl
 
 **The banners change owner.** He hangs the reversed L on everything and replaces Simon's banners with his own. Simon wakes just enough to flicker and decides this is not the moment, so the menu now carries his anger without his action.
 
-**Built as game beat 292, `??? = ABSOLUTE`.** Additive; nothing earlier was changed.
+**Built as game beat 291, `??? = ABSOLUTE`.** Additive; nothing earlier was changed.
 
 - **Background: the stat sheet resolving.** STRENGTH / HP · DANGER / CONTROL, each ??? → ABSOLUTE INFINITY, with Gaster's door line boxed in white.
 - **UNKNOWN WAS A CHOICE (left)** — five rows, closing on *SIMON'S BOOKS RAN THIS CANON FOR MONTHS* and **HE IS HIS OWN LIBRARY**.
 - **THE THIRD ONE OUTSIDE (centre)** — PERO makes the boxes / LUIGI crushes the boxes / GASTER watches the door, closing on **A NEW BOX IS A SURVIVAL MOVE**.
 - **200.5 IQ, AND DIZZY (right)** — Gaster starts a sentence / Luigi says "I get it" / Pero explains it anyway / and he falls onto two boxes / which become two more menus, over **OVERLOAD, NOT AN ATTACK**.
 - **THE BOX-CRUSHING LESSON WITH NO FIRST STEP (band)** — crush the outer box and the fake box / the menu box and the answer box / the box that appears after / the box a question made.
-- **THE BLANK BOOK ON THE SHELF (band inset)** — a cycler ending on **NEXT BOX**, over Simon flickering under the replaced banners.
+- **FIVE PLACES TO SEND A QUEEN (band inset)** — Gaster’s own five options (the user, the shopping list, Alexa’s head, out to reality, or a template) and Luigi Green’s answer, **"I’LL ANIMATE HER."**
 - **Strip:** THE ??? · FINALLY HAS A WORD / THE BANNERS · CHANGED OWNER / THE DOOR · IS NOT A LEVEL.
 - **Footers:** *THE FIGHT IS NO LONGER INSIDE THE GAME, IT IS BEING HANDLED FROM OUTSIDE IT* and **★ ??? = ABSOLUTE ★**.
 - **Screenshot helper:** new `absolute` scene in `tools/capture_screenshot.py`.
 
-![BEAT 292 — ??? = ABSOLUTE](screenshots/354-absolute-stats.png)
-
-## 2026-08-12 — THE ASK BUTTON · THE GAME STOPS CONTROLLING ANSWERS AND STARTS CONTROLLING QUESTIONS (BEAT 291)
-
-Based on Toby's 2026-08-12 lore, 9:20:52 AM, in the "Even Even Even More Classics Era" thread — the AI Era second layer, opening with *"Make more"*. The scene runs from the box staying awake after Pero's goodbye line, through the menu button changing from PLAY to ASK, the button pressing itself, the first question being asked of the characters instead of the player, the white and purple question fog, Queen Unikitty's throne and MERCY, Little Mittens' second match, Luigi Green crushing the wrong box, Simon's sleep lock, Gray's mirror room, the stolen dimension as a storage room, and the closing line ASK AGAIN.
-
-**The menu button changes verb and the era changes with it.** *"A normal play button starts the game. An ask button starts Pero."*
-
-**It presses itself.** Nobody chooses to begin. Every scene in this file so far has been started by a player or by a character; this one needs neither.
-
-**The first question is asked of the cast, and the answer is that he wrote the question.** WHO MADE YOU? — Simon thought of his books, Oren of the trigger, Unikitty of the universe's power, Luigi Green of the box — and then the answers folded into one place and the screen said PERO MADE THE QUESTION. Controlling the answers was the old power. Controlling what can be asked is a bigger one. The fog interrogates everybody in the room and asks him nothing, because the fog came from him.
-
-**The one thing that destabilises it is mercy.** Queen Unikitty gives power to the trapped Sprunkis, even the ones who insulted her, and when the fog writes QUEEN = CONTROL her heart stone changes it to QUEEN = MERCY. Little Mittens plays the fog instead of a person and the board learns a new rule: a game can stop being a battle if MERCY enters the move list.
-
-**Refusal becomes a status.** The game labels Simon SLEEPING CHARACTER; his lightning overwrites it DO NOT WAKE. A protected state built out of saying no.
-
-**And breaking things feeds it.** Luigi Green crushes the box and it opens into another box, so every destroyed box becomes another prompt. The hat spins, chooses nobody, and flies back to Pero — this time as a law, not a cutscene line. The layer ends by getting quieter, on the words ASK AGAIN.
-
-**Built as game beat 291, `THE ASK BUTTON`.** Additive; nothing earlier was changed.
-
-- **Background: the question fog.** THE FOG ASKS Simon why he keeps sleeping / Gray why he survived / Pero nothing, with **PERO MADE THE QUESTION** boxed in violet over *THAT IS WORSE THAN AN ANSWER*.
-- **PLAY BECOMES ASK (left)** — five rows (THE BOX stayed awake in the dark / NO MUSIC, no audience, no exit / AND THE eyes still moved / THEN THE button changed its word / AND THEN it pressed itself), closing on **NOBODY CHOSE TO BEGIN**.
-- **WHO MADE YOU? (centre)** — the cast's four answers folding into one, closing on *CONTROLLING WHAT CAN BE ASKED IS BIGGER* and **AND IT NEVER ASKED HIM ANYTHING**.
-- **QUEEN = MERCY (right)** — she does not attack, she gives power, even to the ones who insulted her, and the wrapped note on Little Mittens' new board rule, over **PERO DID NOT LIKE THAT RULE**.
-- **THE LABELS AND THE OVERWRITES (band)** — SLEEPING CHARACTER → DO NOT WAKE / QUEEN = CONTROL → MERCY / he broke the box and it opened into another box / the hat spun and chose nobody, then flew back to Pero as a law.
-- **IT ENDS BY GETTING QUIETER (band inset)** — a cycler across the fog stopping, the questions disappearing, nobody talking, and **ASK AGAIN**.
-- **Strip:** THE MENU · STOPPED SAYING PLAY / A REFUSAL · BECAME A STATUS / THE QUIET · IS THE ENDING.
-- **Footers:** *IT DID NOT END WITH A BATTLE, IT ENDED WITH THE MENU GETTING QUIETER* and **★ THE ASK BUTTON ★**.
-- **Screenshot helper:** new `askbutton` scene in `tools/capture_screenshot.py`.
-
-![BEAT 291 — THE ASK BUTTON](screenshots/353-the-ask-button.png)
+![BEAT 291 — ??? = ABSOLUTE](screenshots/353-absolute-stats.png)
 
 ## 2026-08-10 — I AM THE TRIGGER · THEY STOP TRADING PLACES AND EACH TAKE A PERMANENT JOB (BEAT 290)
 

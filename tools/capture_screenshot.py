@@ -62,11 +62,10 @@ Scenes:
     catsleep         — BEAT 285, A CAT MAKES ANOTHER CAT SLEEP (Toby, Aug 8, 7:28 PM)
     whowins          — BEAT 286, WHO WINS THE BATTLES (Toby, Aug 8, 7:41 PM)
     unlike           — BEAT 287, UNLIKE EVERYONE ELSE (Toby, Aug 9, 1:09 PM)
-    askbutton        — BEAT 291, THE ASK BUTTON (Toby, Aug 12, 9:20 AM)
-    absolute         — BEAT 292, ??? = ABSOLUTE (Toby, Aug 12, 9:41 AM)
-    realvillain      — BEAT 293, THE REAL VILLAIN (Toby, Aug 12, 12:00 PM)
-    fakeerase        — BEAT 294, FAKE ERASE (Toby, Aug 12, 12:06 PM)
-    calling          — BEAT 295, 404 AND 12 12 12 (Toby, Aug 12, 2:21 PM)
+    absolute         — BEAT 291, ??? = ABSOLUTE (Toby, Aug 12, 9:41 AM)
+    realvillain      — BEAT 292, THE REAL VILLAIN (Toby, Aug 12, 12:00 PM)
+    fakeerase        — BEAT 293, FAKE ERASE (Toby, Aug 12, 12:06 PM)
+    calling          — BEAT 294, 404 AND 12 12 12 (Toby, Aug 12, 2:21 PM)
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -7777,38 +7776,6 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
-    "askbutton": """
-      try {
-        handleConfirm();
-        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
-        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
-        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
-        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
-        if (typeof restore!=='undefined'){ restore.glow=0; }
-        if (typeof peace!=='undefined'){ peace.glow=0; }
-        if (typeof battle!=='undefined'){ battle.glow=0; }
-        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
-        for (var s=0;s<stages.length;s++){ var nm=stages[s];
-          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
-        // THE UNDEFINED LOOP - freeze on beat 291. THE ASK BUTTON: PLAY BECOMES ASK on the left, WHO MADE YOU? down the centre, QUEEN = MERCY on the right, the labels-and-overwrites band with the ASK AGAIN inset, over the question fog and PERO MADE THE QUESTION boxed in violet. Beat 291 spans cyc in 6122.0 to 6144.0; cyc=6142.8 gives dt~20.8 so every fade-in and both footer lines are up.
-        if (typeof loopVs!=='undefined'){
-          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
-          loopVs.t=5946.0; loopVs.cyc=6142.8; loopVs.phase=291;
-        }
-        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
-        for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6142.8; loopVs.phase=291; }
-        if (typeof floaters!=='undefined'){ floaters.length=0; }
-        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
-        if (typeof glitch!=='undefined'){ glitch=0; }
-        if (typeof tauntT!=='undefined'){ tauntT=0; }
-        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
-        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
-        if (typeof shake!=='undefined'){ shake=0; }
-        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
-        window.update = function(){};
-      } catch(e){ document.title='SCENE_ERR '+e; }
-    """,
     "absolute": """
       try {
         handleConfirm();
@@ -7822,14 +7789,14 @@ SCENES = {
         var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
         for (var s=0;s<stages.length;s++){ var nm=stages[s];
           try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
-        // THE UNDEFINED LOOP - freeze on beat 292. ??? = ABSOLUTE: UNKNOWN WAS A CHOICE on the left, THE THIRD ONE OUTSIDE down the centre, 200.5 IQ AND DIZZY on the right, the box-crushing-lesson band with the blank-book NEXT BOX inset, over the resolving stat sheet and Gaster at the door. Beat 292 spans cyc in 6144.0 to 6166.0; cyc=6164.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        // THE UNDEFINED LOOP - freeze on beat 291. ??? = ABSOLUTE: UNKNOWN WAS A CHOICE on the left, THE THIRD ONE OUTSIDE down the centre, 200.5 IQ AND DIZZY on the right, the box-crushing-lesson band with the blank-book NEXT BOX inset, over the resolving stat sheet and Gaster at the door. Beat 291 spans cyc in 6122.0 to 6144.0; cyc=6142.8 gives dt~20.8 so every fade-in and both footer lines are up.
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
-          loopVs.t=5968.0; loopVs.cyc=6164.8; loopVs.phase=292;
+          loopVs.t=5946.0; loopVs.cyc=6142.8; loopVs.phase=291;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6164.8; loopVs.phase=292; }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6142.8; loopVs.phase=291; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
@@ -7854,14 +7821,14 @@ SCENES = {
         var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
         for (var s=0;s<stages.length;s++){ var nm=stages[s];
           try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
-        // THE UNDEFINED LOOP - freeze on beat 293. THE REAL VILLAIN: TOO MANY SUSPECTS on the left, THREE JOBS OUTSIDE down the centre, HE BUILDS THE MENU on the right, the real-erase-vs-fake-erase band with the August 8 prediction inset, over the blame list and the reveal boxed in green. Beat 293 spans cyc in 6166.0 to 6188.0; cyc=6186.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        // THE UNDEFINED LOOP - freeze on beat 292. THE REAL VILLAIN: TOO MANY SUSPECTS on the left, THREE JOBS OUTSIDE down the centre, HE BUILDS THE MENU on the right, the real-erase-vs-fake-erase band with the August 8 prediction inset, over the blame list and the reveal boxed in green. Beat 292 spans cyc in 6144.0 to 6166.0; cyc=6164.8 gives dt~20.8 so every fade-in and both footer lines are up.
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
-          loopVs.t=5990.0; loopVs.cyc=6186.8; loopVs.phase=293;
+          loopVs.t=5968.0; loopVs.cyc=6164.8; loopVs.phase=292;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6186.8; loopVs.phase=293; }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6164.8; loopVs.phase=292; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
@@ -7886,14 +7853,14 @@ SCENES = {
         var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
         for (var s=0;s<stages.length;s++){ var nm=stages[s];
           try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
-        // THE UNDEFINED LOOP - freeze on beat 294. FAKE ERASE: IT LOOKS LIKE THE END on the left, THREE ERASES ONE REAL down the centre, HE JUST WALKS IN on the right, the order-of-the-lock band with the one-face-three-names inset, over the wall of 9s. Beat 294 spans cyc in 6188.0 to 6210.0; cyc=6208.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        // THE UNDEFINED LOOP - freeze on beat 293. FAKE ERASE: IT LOOKS LIKE THE END on the left, THREE ERASES ONE REAL down the centre, HE JUST WALKS IN on the right, the order-of-the-lock band with the one-face-three-names inset, over the wall of 9s. Beat 293 spans cyc in 6166.0 to 6188.0; cyc=6186.8 gives dt~20.8 so every fade-in and both footer lines are up.
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
-          loopVs.t=6012.0; loopVs.cyc=6208.8; loopVs.phase=294;
+          loopVs.t=5990.0; loopVs.cyc=6186.8; loopVs.phase=293;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6208.8; loopVs.phase=294; }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6186.8; loopVs.phase=293; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
@@ -7918,14 +7885,14 @@ SCENES = {
         var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
         for (var s=0;s<stages.length;s++){ var nm=stages[s];
           try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
-        // THE UNDEFINED LOOP - freeze on beat 295. 404 AND 12 12 12: SIMON.psc IS 404 on the left, 12 12 12 IS PERO LAI down the centre, THE SAME LIGHTNING on the right, the two-calls band with the BOTH ANSWER IN LIGHTNING inset, over the drifting numbers. Beat 295 spans cyc in 6210.0 to 6232.0; cyc=6230.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        // THE UNDEFINED LOOP - freeze on beat 294. 404 AND 12 12 12: SIMON.psc IS 404 on the left, 12 12 12 IS PERO LAI down the centre, THE SAME LIGHTNING on the right, the two-calls band with the BOTH ANSWER IN LIGHTNING inset, over the drifting numbers. Beat 294 spans cyc in 6188.0 to 6210.0; cyc=6208.8 gives dt~20.8 so every fade-in and both footer lines are up.
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
-          loopVs.t=6034.0; loopVs.cyc=6230.8; loopVs.phase=295;
+          loopVs.t=6012.0; loopVs.cyc=6208.8; loopVs.phase=294;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
-        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6230.8; loopVs.phase=295; }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6208.8; loopVs.phase=294; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
