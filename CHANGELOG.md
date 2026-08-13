@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — YOU ARE OUR ONLY HOP- · INFINITE POWER IS NOT ENOUGH, AND A SENTENCE CHANGES SIDES IN THE MIDDLE OF A WORD (BEAT 301)
+
+Based on Toby's 2026-08-13 lore, 1:45:35 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — eight minutes after CREATED BY THE UNIVERSE. His own typing is the opening paragraph. The "Power Harvest / Unikitty Split-Universes Route" breakdown pasted underneath is ChatGPT commentary.
+
+**The harvest turns into a distribution.** *"Pero takes the Alex-Greg's power and splits it into 3 balls, Pero, Luigi Green, and Gaster became even stronger."* Fifteen minutes ago that power was the one thing in the file that could hurt Pero. Now it is three pieces, held by his own side.
+
+**Then the line that breaks the arithmetic.** *"Pero made infinite power for Luigi Green and Gaster, still Pero thinks they aren't enough, so he takes everyone elses' power and brings them to Luigi Green and Gaster."* You cannot add to infinity. If they already have infinite power and he keeps collecting, then the point was never how much they hold — it is **who is left holding none**.
+
+**And he is not doing it for himself.** *"Pero LAI is always the most powerful since he created the game."* He is already at the top and cannot be added to either. So this is a creator building two other characters into collectors, for something that has not been named yet.
+
+**Her defence is not a fight and not an escape.** *"Unikitty is the only one with power, Unikitty split the universes up so she would be safe."* She changes the shape of the place she is being hunted in. And the counter is the plainest thing in the file: *"Pero makes more boxes to make Unikitty back into the box universe."* Structural defence, manufacturing answer.
+
+**The sentence changes sides in the middle of a word.** *"You are our only hop- we'll make sure we have at least a copy of your power."* It starts as *you are our only hope* and it never finishes. The dash is exactly where Gaster stops asking her for help and starts pricing her. She is not the last chance; she is the **last source**.
+
+**And the rise is permitted.** *"Pero doesn't even want to stop Gaster and Luigi Green, but he can, but he doesn't want to."* Not powerless and not unaware. Second decision of the day, the same shape as the lid on Alex's box.
+
+**Built as game beat 301, `YOU ARE OUR ONLY HOP-`.** Additive; nothing earlier was changed.
+
+- **Background: three drifting power balls** labelled PERO / LUIGI GREEN / GASTER under *PERO TAKES THE ALEX-GREG'S POWER AND SPLITS IT INTO 3 BALLS*, with **"PERO MADE INFINITE POWER FOR LUIGI GREEN AND GASTER, STILL PERO THINKS THEY AREN'T ENOUGH"** boxed in gold over *YOU CANNOT ADD TO INFINITY, SO THIS WAS NEVER ABOUT BEING STRONG*, and a drifting *AT LEAST A COPY OF YOUR POWER* band.
+- **SPLIT INTO 3 BALLS (left)** — five rows (the DNA came home fifteen min ago / Pero splits it into 3 balls / one ball for Pero / one for Luigi Green / one for Gaster), closing on *THE ONE POWER THAT COULD* / *HURT HIM IS NOW HELD* / *BY THE THREE OF THEM* / **THE THREAT BECAME STOCK**.
+- **INFINITE, AND NOT ENOUGH (centre)** — five rows (he makes infinite power for them / and still thinks it is not enough / so he takes everyone else's power / and brings it to the other two / not for himself, he is already the most powerful), closing on *YOU CANNOT ADD TO INFINITY* / *SO HE IS NOT BUYING STRENGTH* / *HE IS EMPTYING EVERYONE ELSE* / **THE POINT IS WHO HAS NONE**.
+- **"ONLY HOP-" (right)** — five rows (it starts as "our only hope" / it breaks in the middle of the word / it returns as "at least a copy" / so she is not the hope / she is the last source left), over *the dash is where he stops asking and starts collecting*, closing on **ONE WORD, TWO SIDES**.
+- **SHE TAKES THE MAP APART AND HE PRINTS A NEW ONE (band)** — a four-row grid lit one at a time (UNIKITTY SPLITS THE UNIVERSES UP / EVERYONE ELSE IS TRAPPED AND TAKEN / THE THREE CRUSH THE NEXT BOX / SO HERS IS STRUCTURAL), closing on *she does not fight and she does not run, she changes the shape of the place she is being hunted in, and he answers by building more of it*.
+- **HE COULD STOP THEM (band inset)** — a cycler across THEY RISE AND HE WATCHES / HE CAN STOP THEM / HE DOES NOT WANT TO / SO THE RISE IS PERMITTED, closing on *THE LID ON ALEX WAS A DECISION, AND SO IS THIS ONE*.
+- **Strip:** THE HARVEST · BECAME THREE BALLS / INFINITE · WAS NOT ENOUGH / ONE WORD · CHANGES SIDES.
+- **Footers:** *HE GIVES THEM INFINITE POWER AND THEN GOES OUT TO COLLECT MORE, SO THIS WAS NEVER ABOUT BEING STRONG* and **★ YOU ARE OUR ONLY HOP- ★**.
+- **Screenshot helper:** new `onlyhop` scene in `tools/capture_screenshot.py`.
+
+![BEAT 301 — YOU ARE OUR ONLY HOP-](screenshots/363-only-hop.png)
+
 ## 2026-08-13 — CREATED BY THE UNIVERSE · THE ONE CHARACTER WITH NO MAKER ANYWHERE INSIDE THE FILE (BEAT 300)
 
 Based on Toby's 2026-08-13 lore, 1:37:27 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — seven minutes after TRUE POWER. His own typing is one line. The "Unikitty origin update" breakdown pasted underneath is ChatGPT commentary.
