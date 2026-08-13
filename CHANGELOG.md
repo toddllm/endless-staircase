@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — HOLLOW OBSIDIAN · THE ONE THING THAT CAN HARM THE CREATOR IS BUILT OUT OF THE CREATOR'S OWN FOG (BEAT 298)
+
+Based on Toby's 2026-08-13 lore, 11:14:56 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — four hours and twenty-four minutes after THE CLASSICS VR MIRROR. His own typing is the opening paragraph. The "Alex's main technique set" and matchup breakdown pasted underneath is ChatGPT commentary.
+
+**Two opposite techniques, and the thing they make together is the hard one.** *"Technique Amplification: Lava Technique Reversal: Water Hollow Obsidian."* One adds, one undoes, and lava meeting water is the one recipe in Minecraft that turns two soft things into the hardest block. He does not pick a side; he keeps what they make.
+
+**The main power is not a weapon, it is a supply.** *"he has every ability that has something to do with Minecraft, and the main ability is that he can pull stuff out of thin air."* Nearly every character in this archive is one attack. This one is an inventory.
+
+**And the counter to the creator is made out of the creator.** *"he can use Pero's fog to create fans to turn Pero back into his base form. Alex is the only one who can even harm Pero."* Four and a half hours ago the rule was that Pero sees strikes from anyone, so surprise does not work on him. This needs no surprise. The fog is already there; Alex just pulls a fan out of the air and the fog does the losing.
+
+**His closest ally has the exact opposite power.** *"Alex also uses Greg all the time since Greg has the ability to turn matter into air. They have opposite powers."* Alex makes matter out of air; Greg makes air out of matter. Greg grabs Simon's lightning and it turns to air, and Greg beats Gray — but *"Oren's telekentics isn't matter, but a force,"* so it locks Greg into a wall and he never escapes. The one thing the matter-eraser cannot erase is the attack that was never an object.
+
+**The ladder stops being about damage.** Greg beats Gray, Oren beats Greg, Alex beats Greg by creating faster than Greg can erase (or by creating an eraser), and Alex beats Oren and Gray by building the barriers of the box around them. Every other ranking in the file sorts by who hits hardest. This one sorts by what each one is made of, and the builder wins by building the room.
+
+**And the one who can build anything is still inside.** *"Alex is strong enough for the Anti Void, but Gaster, Luigi Green, and Pero refused and kept him in the box. Alex plans to become powerful enough to enter the Anti Void and to leave the box."* One of the three holding the lid is the one person he can hurt — so the goal quietly stops being winning a fight in Classics and becomes leaving it.
+
+**Built as game beat 298, `HOLLOW OBSIDIAN`.** Additive; nothing earlier was changed.
+
+- **Background: the technique triangle drifting.** LAVA (the one that adds) / WATER (the one that undoes) / OBSIDIAN (what the two of them make when they meet), with **"ALEX IS THE ONLY ONE WHO CAN EVEN HARM PERO"** boxed in gold over *AND THE THING HE HARMS HIM WITH IS PERO'S OWN FOG*, under a drifting *PULL STUFF OUT OF THIN AIR* band.
+- **THE TECHNIQUE TRIANGLE (left)** — five rows (AMPLIFICATION · LAVA / REVERSAL · WATER / TOGETHER · HOLLOW OBSIDIAN / AND EVERY MINECRAFT ABILITY THERE IS / MAIN ONE · PULL STUFF OUT OF THIN AIR), closing on *THE TWO OPPOSITE ONES* / *MAKE THE HARDEST BLOCK* / **HE KEEPS WHAT THEY MAKE**.
+- **FANS OUT OF HIS OWN FOG (centre)** — five rows from *PERO FIGHTS INSIDE HIS FOG* through *ALEX IS THE ONLY ONE WHO CAN HARM HIM*, closing on *HE DOES NOT OUT-POWER THE FOG* / *HE BUILDS A FAN OUT OF IT* / *SEEING IT COMING DOES NOT HELP* / **THE MATERIAL IS ALREADY HIS**.
+- **MATTER INTO AIR (right)** — Greg in five rows (turns matter into air / Alex pulls matter out of air / so Simon's lightning turns to air / but Oren's is a force, not matter / and that locks Greg in a wall), closing on **OPPOSITE, NOT ENEMY**.
+- **THE LADDER THAT DOES NOT STACK (band)** — a four-row grid lit one at a time (GREG BEATS GRAY / OREN BEATS GREG / ALEX BEATS GREG / ALEX BEATS OREN AND GRAY, each with the reason), closing on *every other ranking in this file is a list of who hits hardest; this one is a list of who is made of what*.
+- **STILL IN THE BOX (band inset)** — a cycler across STRONG ENOUGH FOR THE ANTI VOID and the three who refused (Gaster, Luigi Green, Pero), landing on *THE ONE HE CAN HARM HELPS HOLD THE LID*, closing on *SO THE PLAN IS NOT TO WIN A FIGHT, IT IS TO LEAVE THE BOX*.
+- **Strip:** THE COUNTER · IS MADE OF HIS OWN FOG / OPPOSITE POWERS · WORK TOGETHER / STRONG ENOUGH · STILL IN THE BOX.
+- **Footers:** *HE DOES NOT BEAT THE FOG, HE PULLS A FAN OUT OF THE AIR AND LETS THE FOG DO THE LOSING* and **★ ALEX IS THE ONLY ONE WHO CAN EVEN HARM PERO ★**.
+- **Screenshot helper:** new `hollowobsidian` scene in `tools/capture_screenshot.py`.
+
+![BEAT 298 — HOLLOW OBSIDIAN](screenshots/360-hollow-obsidian.png)
+
 ## 2026-08-13 — THE CLASSICS VR MIRROR · THE CREATOR IS ON A CONTROLLER WHILE EVERYONE ELSE WALKS IN THROUGH A DOOR (BEAT 297)
 
 Based on Toby's 2026-08-13 lore, 6:50:11 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — seventeen minutes after THE NEW DUO. His own typing is the opening paragraph. The "Classics VR Mirror rule" and "Oren vs Simon.psc update" breakdown pasted underneath is ChatGPT commentary.
