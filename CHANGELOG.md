@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — TRUE POWER · ONE CHARACTER TAKES EVERYTHING OFF AND COMES BACK STRONGER, AND TWO OTHERS ADD UP AND GET COLLECTED (BEAT 299)
+
+Based on Toby's 2026-08-13 lore, 1:30:03 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — two hours and fifteen minutes after HOLLOW OBSIDIAN. His own typing is the opening paragraph, and two more lines come off the image he attached. The "Unikitty TRUE POWER update" and "Clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**The only upgrade in this archive that is a subtraction.** *"Some of my jewelery fell off so I decided to take it all off. Jewelery isn't why I am weaker. It's because I needed to believe."* Every power-up in this file to date is something a character puts on, eats, absorbs, fuses with or collects. The crown, the wand, the rings and the necklace come off on purpose, and what is left is stronger than Brud, Owackx, Vineria and Sky. The power was never on her.
+
+**And the other line names the condition it survives.** *"Even when I am scared my power is the key to anything."* Not *when she is brave* — when she is scared. Belief, heart power and MERCY do not need the fear to go away first.
+
+**The other half of the email goes the exact opposite direction.** *"Alex combines with Greg and makes Alex-Greg, a supernatural being."* The one who pulls matter out of thin air fused with the one who turns matter into air — the only power that can harm Pero, joined to the power that erases objects. Two hours ago that was the most dangerous pairing in the file. It lasts one sentence.
+
+**And the win does something no win here has done before.** *"Pero sends Gaster to deal with Alex-Greg, he struck down Alex-Greg instantly and returned with the DNA and power"* — *"Pero and Luigi Green, I have eliminated Alex-Greg for you and returned with not just the power, but the DNA."* Every other victory in this archive ends when somebody falls down. This one ends with the winner picking something up, which turns the strongest fusion in the file from a threat into supply.
+
+**And the lid did not move.** *"Pero still refuses to let Alex out of the box."* He fused, he got stronger, the answer is still no — and now the three holding the lid have his power too.
+
+**Built as game beat 299, `TRUE POWER`.** Additive; nothing earlier was changed.
+
+- **Background: the jewelry coming off.** THE CROWN / THE WAND / THE NECKLACE / THE RINGS, each one *OFF — AND SHE IS STILL STRONGER*, with **"EVEN WHEN I AM SCARED MY POWER IS THE KEY TO ANYTHING"** boxed in gold over *SO THE POWER WAS NEVER ON HER, IT WAS IN HER*, under a drifting *NOT JUST THE POWER, BUT THE DNA* band.
+- **SHE TOOK IT ALL OFF (left)** — five rows (SOME OF IT FELL OFF ON ITS OWN / SO SHE TOOK THE REST OFF TOO / NOT ONE OF THE PIECES WAS THE POWER / THE POWER IS BELIEF · HEART · MERCY / AND SHE CAME BACK STRONGER), closing on *EVERY OTHER UPGRADE HERE* / *IS SOMETHING YOU PUT ON* / *THIS ONE IS SOMETHING* / **SHE TOOK OFF**.
+- **ALEX-GREG (centre)** — five rows from *ALEX PULLS MATTER OUT OF AIR* through *SO IT SHOULD HAVE BEEN THE BIG ONE*, closing on *THE BIGGEST FUSION IN THE FILE* / *AND IT LASTS ONE SENTENCE* / *STRUCK DOWN INSTANTLY* / **ADDING UP DID NOT SAVE THEM**.
+- **AND THE DNA (right)** — Gaster in five rows (Pero sends him / he strikes him down instantly / and then does not walk away / he returns with the power / and also with the DNA), over *every other win in this file ends when somebody falls down, this one ends with the winner picking something up*, closing on **HE DID NOT WIN, HE HARVESTED**.
+- **ONE OF THEM SUBTRACTED. THE OTHER TWO ADDED. (band)** — a four-row grid lit one at a time (UNIKITTY TOOK EVERYTHING OFF / ALEX + GREG PUT TWO POWERS ON / GASTER STRUCK IT DOWN / SO THE ONE WHO KEPT NOTHING), closing on *in a file where everyone gets stronger by collecting something, the one who got stronger today is the one who put things down*.
+- **PERO STILL REFUSES (band inset)** — a cycler across ALEX FUSED AND GOT STRONGER / THE ANSWER IS STILL NO / THE BOX DID NOT MOVE / SO THE LID IS STILL A DECISION, closing on *AND NOW THE ONES HOLDING THE LID HAVE HIS POWER TOO*.
+- **Strip:** SHE TAKES IT OFF · AND GETS STRONGER / THEY ADD UP · AND LAST ONE LINE / THE WINNER · KEEPS THE DNA.
+- **Footers:** *ONE OF THEM SUBTRACTED AND GOT STRONGER, THE OTHER TWO ADDED UP AND GOT COLLECTED* and **★ IT'S BECAUSE I NEEDED TO BELIEVE ★**.
+- **Screenshot helper:** new `truepower` scene in `tools/capture_screenshot.py`.
+
+![BEAT 299 — TRUE POWER](screenshots/361-true-power.png)
+
 ## 2026-08-13 — HOLLOW OBSIDIAN · THE ONE THING THAT CAN HARM THE CREATOR IS BUILT OUT OF THE CREATOR'S OWN FOG (BEAT 298)
 
 Based on Toby's 2026-08-13 lore, 11:14:56 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — four hours and twenty-four minutes after THE CLASSICS VR MIRROR. His own typing is the opening paragraph. The "Alex's main technique set" and matchup breakdown pasted underneath is ChatGPT commentary.
