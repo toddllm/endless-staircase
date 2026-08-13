@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — THE NEW DUO · TWO WEAKNESSES CANCEL OUT AND THE ONE WHO SURVIVED EVERYTHING IS DESTROYED (BEAT 296)
+
+Based on Toby's 2026-08-13 lore, 6:33:50 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — eleven hours and fifty minutes after I WASN'T ASKING, and the direct counter-route to it. His own typing is the duo paragraph, plus the ranking answer and the ??? reveal. The Minecraft-horror power ranking and the "counter-route" breakdown pasted around it are ChatGPT commentary.
+
+**Last night Gray survived everything. This morning he is destroyed, and nobody got stronger.** The whole archive has ranked single characters for months. This is the first time the top of the ladder is beaten by a pairing instead of by a bigger number.
+
+**The gap each one leaves is exactly the size of the other one.** *"Oren's telekentics is impossible to dodge, but it does tiny damage. Simon's lightning KOs, but it can be dodged or collected and thrown back at him."* Oren always connects and cannot finish; Simon can finish and can be stepped out of, or have the bolt caught and returned. Put together there is nothing left to aim at: Oren supplies the contact, Simon supplies the KO.
+
+**Gaster names the mechanism rather than the winner.** *"They filled their weaknesses, Gray was destroyed."* Not stronger. Filled.
+
+**The cutscene is announced and then withheld.** *"then it activates a cutscene I won't explain"* — the first thing in the whole file that he tells us exists and deliberately does not describe.
+
+**And the real villain almost says too much.** Pero downplays it: *"This is just cercumstentual."* Luigi Green answers *"Wait... That is impossible."*, Pero and Gaster turn and look at him, and only then does he correct it to *"I ment, it was a hard chance."* One day after being named the antagonist, the tell is that he knows the odds.
+
+**The ??? seat gets filled too.** His ranking runs Verity > Falsity > Long Horse > Creator > Herobrine > Entity 303 > Null > Wither Storm, and the mystery character is *"Pero LAI, the creator of Classics, he is far over Verity"* — the creator tops a list he is not from.
+
+**Built as game beat 296, `THE NEW DUO`.** Additive; nothing earlier was changed.
+
+- **Background: the team-up call drifting.** OREN "WITH MY TELEKENTICS…" / SIMON "AND MY LIGHTNING POWER…" / BOTH "WE SHALL BE UNSTOPPABLE!", with **"THEY FILLED THEIR WEAKNESSES, GRAY WAS DESTROYED."** boxed in gold over *GASTER DOES NOT SAY THEY GOT STRONGER, HE SAYS THEY FILLED A GAP*.
+- **"WITH MY TELEKENTICS…" (left)** — five rows (impossible to dodge / always reaches the target / but does tiny damage), closing on *HE IS THE ONE WHO CANNOT MISS* / *AND CANNOT END ANYTHING* / **AND SIMON SUPPLIES THE REST**.
+- **"AND MY LIGHTNING POWER…" (centre)** — five rows (can KO outright / can be dodged / or collected and thrown back), closing on *DODGING IT WAS ALWAYS THE COUNTER* / **OREN TAKES THE DODGE AWAY**.
+- **THE SLIP (right)** — the five-line exchange at the box in order, from *"This is just cercumstentual."* through the two of them looking at him, closing on **HE KNOWS THE ODDS**.
+- **THE GAP EACH ONE LEAVES (band)** — a four-row grid lit one at a time (OREN ALONE / SIMON ALONE / TOGETHER / NO GAP LEFT TO AIM AT), closing on *eleven hours ago he survived everything at twelve digits of pain; nobody got stronger overnight, the matchup changed*.
+- **THE ??? SEAT (band inset)** — a cycler across his ranking, the Pero LAI reveal, *"FAR OVER VERITY"*, and the announced-then-withheld cutscene.
+- **Strip:** TWO WEAKNESSES · CANCEL EACH OTHER / THE CUTSCENE · IS WITHHELD / THE VILLAIN · ALMOST SAYS TOO MUCH.
+- **Footers:** *NOBODY GOT STRONGER OVERNIGHT, THE TWO OF THEM JUST STOPPED LEAVING A GAP* and **★ WE SHALL BE UNSTOPPABLE! ★**.
+- **Screenshot helper:** new `newduo` scene in `tools/capture_screenshot.py`.
+
+![BEAT 296 — THE NEW DUO](screenshots/358-the-new-duo.png)
+
 ## 2026-08-12 — I WASN'T ASKING · THE ONE LEFT STANDING TURNS OUT TO HAVE PAID THE MOST FOR IT (BEAT 295)
 
 Based on Toby's 2026-08-12 lore, 6:43:19 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — four hours and twenty-two minutes after 404 AND 12 12 12. His own typing is the long opening paragraph, the whole collapse route. The "Gray.nur Collapse Route" breakdown pasted underneath is ChatGPT commentary.
