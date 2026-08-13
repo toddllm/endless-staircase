@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — THE CLASSICS VR MIRROR · THE CREATOR IS ON A CONTROLLER WHILE EVERYONE ELSE WALKS IN THROUGH A DOOR (BEAT 297)
+
+Based on Toby's 2026-08-13 lore, 6:50:11 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — seventeen minutes after THE NEW DUO. His own typing is the opening paragraph. The "Classics VR Mirror rule" and "Oren vs Simon.psc update" breakdown pasted underneath is ChatGPT commentary.
+
+**Everyone else gets a door. One character gets a controller.** *"Did you know Pero is the only character that plays through the Classics VR Mirror? He makes movements no one could make through the normal Classics portal mirrors."* A portal mirror opens and closes and lets you through. A VR mirror is an interface. The rest of the cast is inside Classics; he is at the glass, playing it.
+
+**And the second half of that sentence quietly removes surprise from the game.** *"and he even sees strikes from anyone."* Almost every fight in this archive turns on a hit nobody saw coming. He is the one character that cannot happen to.
+
+**Seventeen minutes after "WE SHALL BE UNSTOPPABLE!", the new duo comes apart from the inside.** *"Oren is stronger than Simon.psc, Oren could litterly just knock Simon.psc in a wall and he could strike him down, he can dodge the lightning."* Simon was the KO half, and his one stated weakness was that the lightning can be dodged. The partner brought in to cover that weakness is the one who uses it.
+
+**The thing that ends him is a simple sword.** Not an erase, not a reset, not twelve digits of anything: a wall, a plain sword, and *"Simon.psc also has litterly 0 HP now."* The strongest tool in the paragraph is the plainest object in it.
+
+**Built as game beat 297, `THE CLASSICS VR MIRROR`.** Additive; nothing earlier was changed.
+
+- **Background: the mirror rule drifting.** PORTAL MIRROR / VR MIRROR / SO THE OTHERS ARE IN THE GAME, AND HE IS AT THE GLASS, with **"AND HE EVEN SEES STRIKES FROM ANYONE"** boxed in gold over *WHICH QUIETLY REMOVES SURPRISE FROM THE LIST OF THINGS THAT WORK ON HIM*.
+- **THE TWO WAYS IN (left)** — five rows (everyone uses the portal mirrors / those only open and close / Pero uses the VR mirror / so he moves how the door cannot), closing on *A DOOR LETS YOU IN* / *A CONTROLLER LETS YOU PLAY* / **HE IS AT THE GLASS**.
+- **"SEES STRIKES FROM ANYONE" (centre)** — five rows (nothing arrives unannounced / he answers before it lands / no ambush exists on him), closing on *ALMOST EVERY FIGHT IN THIS FILE TURNS ON A HIT NOBODY SAW* / **THAT CANNOT HAPPEN TO**.
+- **A SIMPLE SWORD (right)** — the duo split in five rows, from *OREN IS STRONGER THAN SIMON.psc* through *SIMON.psc HAS LITTERLY 0 HP NOW*, closing on **THE PLAINEST TOOL IN THE FILE**.
+- **THE COVER IS THE COUNTER (band)** — a four-row grid lit one at a time (17 MINUTES AGO / HIS ONE GAP / SO THE COVER BECOMES THE COUNTER / AND THE KO HALF ENDS AT LITTERLY 0 HP), closing on *the duo did not lose to anyone else, it came apart from the inside*.
+- **THE TWO MIRRORS (band inset)** — a cycler across portal mirror vs VR mirror and played-by-the-game vs playing-it, closing on *AND THE SWORD IS NOT A POWER, IT IS JUST A SWORD*.
+- **Strip:** ONE PLAYER · ON A CONTROLLER / NO STRIKE · ARRIVES UNSEEN / THE KO HALF · ENDS AT 0 HP.
+- **Footers:** *A PORTAL LETS YOU IN, A CONTROLLER LETS YOU PLAY, AND ONLY ONE CHARACTER HAS THE SECOND ONE* and **★ HE EVEN SEES STRIKES FROM ANYONE ★**.
+- **Screenshot helper:** new `vrmirror` scene in `tools/capture_screenshot.py`.
+
+![BEAT 297 — THE CLASSICS VR MIRROR](screenshots/359-classics-vr-mirror.png)
+
 ## 2026-08-13 — THE NEW DUO · TWO WEAKNESSES CANCEL OUT AND THE ONE WHO SURVIVED EVERYTHING IS DESTROYED (BEAT 296)
 
 Based on Toby's 2026-08-13 lore, 6:33:50 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — eleven hours and fifty minutes after I WASN'T ASKING, and the direct counter-route to it. His own typing is the duo paragraph, plus the ranking answer and the ??? reveal. The Minecraft-horror power ranking and the "counter-route" breakdown pasted around it are ChatGPT commentary.
