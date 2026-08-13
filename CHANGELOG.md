@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — CREATED BY THE UNIVERSE · THE ONE CHARACTER WITH NO MAKER ANYWHERE INSIDE THE FILE (BEAT 300)
+
+Based on Toby's 2026-08-13 lore, 1:37:27 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — seven minutes after TRUE POWER. His own typing is one line. The "Unikitty origin update" breakdown pasted underneath is ChatGPT commentary.
+
+**One line, and it removes something from the board.** *"Unikitty was also created by the universe as what ChelseaPlays says."*
+
+**Every other origin in this archive has somebody's name on it.** Pero created Classics and makes the boxes one at a time. Gaster builds, hides, harvests. The rest of the cast is forked, templated, corrupted, rebuilt, re-made from AI, or made inside the box. Three hundred beats in, somebody is always upstream of somebody.
+
+**This one has nobody.** Not Pero, not Gaster, not the box, not a Sprunki template, not an AI build. Nothing in Classics is upstream of her, which in a file like this one is a defensive property: **there is no maker to unmake.** Every power here has a handle somewhere, and cutting the source is how half the fights in the archive are won.
+
+**And it answers the beat from seven minutes earlier.** The crown, the wand and the rings all came off and the power stayed, because belief, heart power and MERCY never came from anything inside the game that the game could take back.
+
+**The ruling itself arrives from outside the game.** *"as what ChelseaPlays says."* Not a character's claim, not a boast in a fight — a reality-side source. So it is not something Classics gets to argue with. It has to accept it.
+
+**Built as game beat 300, `CREATED BY THE UNIVERSE`.** Additive; nothing earlier was changed.
+
+- **Background: a drifting starfield.** NOT MADE BY PERO · NOT MADE BY GASTER · NOT MADE BY THE BOX over a four-row maker list (CLASSICS · PERO MADE IT / THE BOXES · PERO MAKES THEM / THE SPRUNKIS · TEMPLATES, FORKS AND REBUILDS / **UNIKITTY · THE UNIVERSE**), with **"AS WHAT ChelseaPlays SAYS"** boxed in cyan over *SO THE RULING ARRIVES FROM OUTSIDE THE GAME, AND CLASSICS DOES NOT GET A VOTE*.
+- **WHO MADE EVERYONE ELSE (left)** — five rows (Classics · Pero created it / the boxes · Pero makes them one by one / the cast · forked, templated, rebuilt / the AI ones · built from something / so every origin has a name on it), closing on *WHOEVER MADE YOU* / *IS SOMETHING THAT CAN BE* / *ARGUED WITH, BEATEN* / **OR TAKEN BACK**.
+- **NOBODY IN CLASSICS (centre)** — five rows (not Pero / not Gaster / not the box / not a Sprunki template / **the universe made her**), closing on *NOTHING IN CLASSICS* / *IS UPSTREAM OF HER* / *SO THERE IS NO MAKER* / **TO UNMAKE**.
+- **THE SOURCE IS OUTSIDE (right)** — five rows (most rules are set inside the game / this one is set outside it / so it is not a claim to beat / it is a fact to accept / and she was sent back in by it), over *the one who sent her back in is not a character in Classics*, closing on **A RULING, NOT AN ARGUMENT**.
+- **WHICH IS WHY SEVEN MINUTES AGO WORKED (band)** — a four-row grid lit one at a time (THE JEWELRY ALL CAME OFF / BECAUSE IT WAS NEVER IN THERE / AND THOSE CAME FROM THE UNIVERSE / SO THERE IS NOTHING TO TAKE BACK), closing on *the whole file is people taking things away from each other, powers, curses, souls, save files, now DNA, and this is the one power with no handle on it*.
+- **THE ONE WITH NO AUTHOR (band inset)** — a cycler across PERO CREATED CLASSICS / GASTER HARVESTS AND BUILDS / THE CAST WAS MADE BY SOMEONE / **UNIKITTY WAS MADE BY NO ONE**, closing on *SO THE ONE THING NOBODY HERE CAN GET ABOVE IS HERS*.
+- **Strip:** NO MAKER · ANYWHERE IN THE FILE / THE RULING · COMES FROM OUTSIDE / SO THERE IS · NOTHING TO TAKE BACK.
+- **Footers:** *EVERY OTHER ORIGIN IN THIS FILE HAS SOMEBODY'S NAME ON IT, AND THIS ONE HAS THE UNIVERSE'S* and **★ CREATED BY THE UNIVERSE ★**.
+- **Screenshot helper:** new `universe` scene in `tools/capture_screenshot.py`.
+
+![BEAT 300 — CREATED BY THE UNIVERSE](screenshots/362-created-by-the-universe.png)
+
 ## 2026-08-13 — TRUE POWER · ONE CHARACTER TAKES EVERYTHING OFF AND COMES BACK STRONGER, AND TWO OTHERS ADD UP AND GET COLLECTED (BEAT 299)
 
 Based on Toby's 2026-08-13 lore, 1:30:03 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — two hours and fifteen minutes after HOLLOW OBSIDIAN. His own typing is the opening paragraph, and two more lines come off the image he attached. The "Unikitty TRUE POWER update" and "Clean canon update" breakdown pasted underneath is ChatGPT commentary.
