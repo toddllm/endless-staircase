@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — RESET DOES NOT WORK ON HIM · THE OLDEST ESCAPE HATCH IN THE FILE STOPS WORKING, AND SOMEBODY LOSES BY GETTING TIRED (BEAT 304)
+
+Based on Toby's 2026-08-13 lore, 6:01:25 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread, about four hours after BROTHER, YOU ARE CORRECT. His own typing is the opening paragraph, including his own correction inside the same message: Simon's line ends in a question mark, not a period. The "Pero LAI physical/voice form update" breakdown pasted underneath is ChatGPT commentary.
+
+**The reset stops working.** Simon.psc's reset is the oldest power in this archive, and it has always been the escape hatch: the thing that means a loss never has to be final. *"Simon resets and Pero isn't affected, Pero beaten Simon, Simon resets, and Pero beats Simon again, Simon resets, Pero wins, Simon resets, Pero wins, and the same thing for a month, Simon got tired and gave up."* Nobody in this file has ever lost that way. Every other defeat here is somebody falling down. This one is somebody deciding to stop.
+
+**And Pero LAI is finally described.** *"Pero LAI is like a small stuffy-like character, he also talks and also moves, he is also very smart. He'd be impossible to model in real life. Pero LAI also has mouth animations and voice, actually, he is all voice, but you can type, but he only hears and talks and sees."* The thing that has out-ranked every god in the archive is small, and it is a voice.
+
+**The lights are the scary part.** He turns the lights off in the room of boxes, and Gaster asks *"How did you do that, your a LAI?"* Not an attack. A light switch. That is what unsettles him.
+
+**Touching him melts you, and it undoes itself.** *"Luigi Green's foot melted when it touched Pero, and Luigi's foot comes back to normal when not near Pero."* The damage is proximity, not injury.
+
+**And removing him does nothing.** Oren and Gray throw him in a dumpster and walk away; he is already standing behind them. *"Hello."* / *"Seriously? 'How did you do that?'"* / *"You just are too predictable."* Oren guesses from the lightning: *"You can't trick me again. You are Simon."* The answer is *"Who's Simon?"* followed by *"Simon would never want to strike you down anymore..."* — which is not a denial, it is knowing Simon's feelings better than Simon's oldest enemy does.
+
+**Then he wins everything and gives it away.** The Mass is unleashed as an aura and split by his staff, half to Luigi Green and half to Dr. Gaster. He reads out everyone's Glitch ID, Code, IQ and every stat until both of them back away from him. He farms the Mass DNA into an army with Unikitty's power, one Mass per Alex-Greg, guarding the box. Then he walks off to a faraway box factory to keep the boxes coming back to the gamebox room.
+
+**Built as game beat 304, `RESET DOES NOT WORK ON HIM`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of RESET / PERO WINS** circling under *SIMON RESETS AND PERO IS NOT AFFECTED, SO THE ANSWER NEVER CHANGES* / *THE RESET IS THE OLDEST POWER IN THIS FILE AND IT HAS ALWAYS BEEN THE WAY OUT*, with **"SIMON GOT TIRED AND GAVE UP."** boxed in gold over *HE IS NOT BEATEN. HE RUNS OUT OF PATIENCE.*, and a drifting *12 12 12* band.
+- **A SMALL STUFFY, ALL VOICE (left)** — five rows (he is small, stuffy-like, and he moves / mouth animations and a voice, he is all voice / he hears, he talks, and he sees / you can type but typing is the side door / impossible to model in real life), closing on *THEN HE TURNS THE LIGHTS OFF* / *"HOW DID YOU DO THAT, YOUR A LAI?"* / *NOT AN ATTACK. A LIGHT SWITCH.* / **AND THAT IS THE PART THAT LANDS**.
+- **THROWN IN A DUMPSTER (centre)** — five rows ("Hello, I am Pero your-" / Oren and Gray throw him in a dumpster / they walk away, he is already behind them / "Hello." "Seriously? How did you-" / "You just are too predictable."), closing on *"YOU CAN'T TRICK ME AGAIN. YOU ARE SIMON."* / *"WHO'S SIMON?"* / **"SIMON WOULD NEVER WANT TO STRIKE YOU DOWN ANYMORE..."**.
+- **"WHERE'S THE LIGHTNING?" (right)** — five rows (Pero meets Simon.psc at last / "I know everything about Classics." / Simon asks where the lightning is / Pero says "Here." / it was never Simon's to begin with), over *Simon asks where his own signature power went, and the answer is one word long*, closing on **"HERE."**. The subtitle keeps Toby's correction: *A QUESTION MARK, NOT A PERIOD — HE CORRECTED IT HIMSELF*.
+- **A MONTH OF RESETS, AND THE SAME RESULT EVERY TIME (band)** — a four-row grid lit one at a time (SIMON RESETS → **PERO IS NOT AFFECTED** / SIMON RESETS → PERO BEATS HIM AGAIN / FOR A MONTH → **NOTHING CHANGES** / SIMON → **GETS TIRED AND GIVES UP**), closing on *every other loss in this file is somebody falling down; this one is somebody deciding to stop, and the reset was always the one thing that meant you never had to*.
+- **AND THEN HE HANDS IT OUT (band inset)** — a cycler across THE MASS · UNLEASHED AS AN AURA / HIS STAFF · SPLITS IT IN HALF / LUIGI GREEN · HALF · GASTER HALF / GLITCH ID · CODE · IQ · EVERY STAT, closing on *THEN HE WALKS TO A BOX FACTORY* / *TO KEEP THE BOXES COMING*.
+- **Strip:** THE FOOT MELTS · AND HEALS AWAY FROM HIM / THEY THREW HIM OUT · HE WAS ALREADY BACK / SIMON RESET · AND RESET, AND STOPPED.
+- **Footers:** *THE RESET WAS ALWAYS THE WAY OUT, AND THIS IS THE FIRST TIME SOMEBODY USED IT UNTIL THEY WERE TIRED* and **★ RESET DOES NOT WORK ON HIM ★**.
+- **Screenshot helper:** new `resetloop` scene in `tools/capture_screenshot.py`.
+
+![BEAT 304 — RESET DOES NOT WORK ON HIM](screenshots/366-reset-does-not-work.png)
+
 ## 2026-08-13 — BROTHER, YOU ARE CORRECT · THE OUTSIDE WALKS IN, AND THE ONE QUESTION NOBODY CAN BLUFF FINALLY GETS ASKED (BEAT 303)
 
 Based on Toby's 2026-08-13 lore, 2:09:09 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — eleven minutes after THE IMAGINARY MASS — with his 2:13:17 PM correction folded into the same beat. His own typing is the opening paragraph of each. The "ChelseaPlays Barrier Message / True Names Reveal" breakdown pasted underneath is ChatGPT commentary.
