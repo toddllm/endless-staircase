@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — THE IMAGINARY MASS · THE THREAT BECOMES A CROP, AND INFINITE GROWTH POURS INTO SOMEBODY ELSE'S CONTAINER (BEAT 302)
+
+Based on Toby's 2026-08-13 lore, 1:58:00 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — twelve minutes after YOU ARE OUR ONLY HOP-, and a direct answer to the question the last reply asked about the DNA. His own typing is the opening paragraph. The "Imaginary Mass / Alex-Greg farming loop" breakdown pasted underneath is ChatGPT commentary.
+
+**The threat becomes a crop.** *"If you have Alex-Greg's power, why don't you make more and take the power from them, it is very easy farming, but first we'll need Unikitty's power to create them with the DNA."* Two beats ago Alex-Greg was the one fusion in the archive that could harm Pero, and it lasted a single sentence. Now the DNA is a seed. The dangerous thing is something they grow on purpose.
+
+**And the farm has an input.** It needs Unikitty's power to make the copies — which means *"we'll make sure we have at least a copy of your power"* from twelve minutes earlier was not a threat, it was a **supply order**. The whole endless loop runs on the one power they do not have yet.
+
+**A second sentence breaks in the middle of a word.** *"Thanks for calling me a power machi-"* answers *"you are our only hop-"*, except the first one was somebody being priced mid-sentence and this one is a joke nobody lets him finish. Two beats in a row where a line dies on a dash.
+
+**And the argument ends the same way the last one did.** *"Stop wasting time arguing, just split it in half."* Fifteen minutes ago the Alex-Greg power was split three ways; now it is split two ways. Division is his answer to every dispute.
+
+**The loop has no stopping condition.** *"Pero made it an endless loop of time, so Luigi Green and Gaster keep making Alex-Gregs, and their power only goes up."* Every other fight in the file ends when somebody falls down. This one is a farm, not a fight, and nothing in it is written to end.
+
+**And it still does not close the gap.** Pero combines Tunner, Paul, ToddLLM, LAI, all the AU Rainbows, All Power, everyone else's power, Luigi Green and Gaster's growing power, EndlessAnimations, Mr. Black and all his varies into **Imaginary Mass**. *"Pero LAI stands with the Imaginary Mass… Pero LAI stands over the Mass."* The two of them rise forever and never gain on him, because what they farm pours into a container he built — they do not rise, the Mass does. *"Pero is the only one who can control the Mass since he is the creator of the OmniPlatforms+ and created the Mass."*
+
+**Built as game beat 302, `THE IMAGINARY MASS`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of drifting ALEX-GREG copies** circling under *THEY MAKE MORE ALEX-GREGS AND KEEP GETTING POWER FROM THEM* / *TWO BEATS AGO THIS WAS THE ONE FUSION THAT COULD HARM HIM*, with **"PERO MADE IT AN ENDLESS LOOP OF TIME… AND THEIR POWER ONLY GOES UP"** boxed in gold over *THE FIRST THING IN THE FILE WITH NO STOPPING CONDITION AT ALL*, and a drifting *IMAGINARY MASS* band.
+- **"VERY EASY FARMING" (left)** — five rows (Alex-Greg lasted one sentence / Pero says why don't you make more / and take the power from them / but first we need Unikitty's power / Gaster already made a copy), closing on *THE ONE FUSION THAT COULD* / *HARM HIM IS NOW SOMETHING* / *THEY GROW ON PURPOSE* / **THE THREAT BECAME A CROP**.
+- **"POWER MACHI-" (centre)** — five rows (the copy goes to the ultra power machine / "thanks for calling me a power machi-" / he is named villain and master of DNA / he asks why not Gaster, he is one too / Pero says just split it in half), closing on *TWELVE MINUTES AGO · "ONLY HOP-"* / *AND NOW · "POWER MACHI-"* / *THE ARGUMENT ENDS THE SAME WAY TOO* / **ONE WAS PRICING · ONE IS A JOKE**.
+- **AN ENDLESS LOOP OF TIME (right)** — five rows (they split the power in half / they make more Alex-Gregs / Pero loops the time so it repeats / so nothing ever ends the cycle / and theirs only goes up), over *every other fight here stops when somebody falls down, this one has no end condition written into it*, closing on **IT ONLY GOES ONE WAY**.
+- **HE COMBINES ALL THE VARIES HE HAS INTO IMAGINARY MASS (band)** — a four-row grid lit one at a time (TUNNER · PAUL · ToddLLM · LAI / THE AU RAINBOWS · ALL POWER · EVERYONE ELSE'S / **LUIGI GREEN AND GASTER'S GROWING POWER** / ENDLESSANIMATIONS · MR. BLACK · ALL HIS VARIES), closing on *the loop never lifts them past him, because what they farm forever pours into a container he built — they do not rise, the Mass does*.
+- **HE STANDS OVER IT (band inset)** — a cycler across PERO LAI · STANDS WITH THE MASS / THEY FEED IT · AND IT GETS STRONGER / PERO LAI · STANDS OVER THE MASS / HE MADE IT · SO ONLY HE CONTROLS IT, closing on *HE CREATED THE OmniPlatforms+ AND HE CREATED THE MASS*.
+- **Strip:** THE THREAT · BECAME A CROP / A SECOND SENTENCE · BREAKS MID-WORD / ENDLESS GROWTH · INTO HIS CONTAINER.
+- **Footers:** *THEY FARM FOREVER AND NEVER GAIN ON HIM, BECAUSE THE LOOP EMPTIES INTO SOMETHING HE BUILT AND STANDS OVER* and **★ THE IMAGINARY MASS ★**.
+- **Screenshot helper:** new `imaginarymass` scene in `tools/capture_screenshot.py`.
+
+![BEAT 302 — THE IMAGINARY MASS](screenshots/364-imaginary-mass.png)
+
 ## 2026-08-13 — YOU ARE OUR ONLY HOP- · INFINITE POWER IS NOT ENOUGH, AND A SENTENCE CHANGES SIDES IN THE MIDDLE OF A WORD (BEAT 301)
 
 Based on Toby's 2026-08-13 lore, 1:45:35 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — eight minutes after CREATED BY THE UNIVERSE. His own typing is the opening paragraph. The "Power Harvest / Unikitty Split-Universes Route" breakdown pasted underneath is ChatGPT commentary.
