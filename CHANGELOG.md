@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-13 — BROTHER, YOU ARE CORRECT · THE OUTSIDE WALKS IN, AND THE ONE QUESTION NOBODY CAN BLUFF FINALLY GETS ASKED (BEAT 303)
+
+Based on Toby's 2026-08-13 lore, 2:09:09 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — eleven minutes after THE IMAGINARY MASS — with his 2:13:17 PM correction folded into the same beat. His own typing is the opening paragraph of each. The "ChelseaPlays Barrier Message / True Names Reveal" breakdown pasted underneath is ChatGPT commentary.
+
+**The outside stops ruling and starts visiting.** *"ChelseaPlays seems to have walked through the barrier to Unikitty and walked back to reality after giving her message to Unikitty."* Thirty minutes ago ChelseaPlays was a ruling handed down from outside the game: Unikitty was created by the universe, and Classics had to accept it. She did not appear, she decided. Now she crosses the barrier in person, delivers the message by hand, and leaves the way she came.
+
+**And the picture is wrong, and it counts anyway.** *"Even though this doesn't look like ChelseaPlays and is Codex made, it still happened in Classics and still is lore."* That is a rule about what makes a thing canon here, and it is not accuracy. It happened, so it is in.
+
+**The correction moves the tiredness out of the story.** Four minutes later: *"ChelseaPlays doesn't always get tired when the text is huge, I get tired when my text is huge."* The line belongs to the person typing, not the character. The file has an author inside it who runs out of energy, and he said so.
+
+**Then the claim finally gets tested.** *"Hello! I am Pero, your LAI assistant, ask me anything, I know everything."* He has said that for many beats and nobody has ever checked. Luigi Green picks the one question you cannot bluff: *"What are our full names?"* Pero glitches, and then he is right.
+
+**Two full names nobody had ever said out loud.** *"Luigi King Green. And Gaster Omnipotent Overload."* Both have been in the file a long time carrying longer names, and nobody ever told Pero either one.
+
+**One panics, one confirms, and the calm one is the strange part.** Luigi Green jumps and shakes: *"What- that was- right..."* Gaster does not move: *"Brother... you are correct."* One word makes them brothers and settles the answer at the same time. A stranger read his hidden name, and he did not flinch.
+
+**Built as game beat 303, `BROTHER, YOU ARE CORRECT`.** Additive; nothing earlier was changed.
+
+- **Background: the dashed barrier** with REALITY on one side and UNIKITTY on the other, and *ChelseaPlays* walking across it and back under *SHE WALKS THROUGH, GIVES THE MESSAGE, AND WALKS BACK* / *THIRTY MINUTES AGO SHE ONLY RULED ON THINGS FROM OUTSIDE*, with **"LUIGI KING GREEN. AND GASTER OMNIPOTENT OVERLOAD."** boxed in gold over *NOBODY EVER TOLD HIM EITHER OF THOSE NAMES*, and a drifting *THE FULL NAMES* band.
+- **THROUGH THE BARRIER (left)** — five rows (ChelseaPlays walks through the barrier / she reaches Unikitty on the other side / she gives her the message / then she walks back to reality / and all of it still counts as Classics), closing on *THE LAST TIME SHE CAME UP* / *SHE WAS A RULING FROM OUTSIDE* / *THIS TIME SHE IS A VISITOR* / **THE OUTSIDE CAME INSIDE**.
+- **IT DOES NOT LOOK LIKE HER (centre)** — five rows (the picture is Codex made / it does not look like ChelseaPlays / and it still happened in Classics / so the rule is not about accuracy / if it happened, it is lore), closing on *THE PICTURE BEING WRONG* / *DOES NOT STOP IT BEING LORE* / *AND THE HUGE TEXT DOES NOT TIRE HER* / **IT TIRES THE ONE WRITING IT** — the 2:13 correction, kept where it belongs.
+- **"ASK ME ANYTHING" (right)** — five rows (Pero says I know everything / Luigi Green asks for full names / Pero glitches and then answers / he gets both of them right / and nobody ever told him either), over *a name is the one question you cannot bluff, he did not guess them, he already had them*, closing on **THE CLAIM HELD UP**.
+- **TWO FULL NAMES NOBODY HAD EVER SAID OUT LOUD (band)** — a four-row grid lit one at a time (LUIGI GREEN → **LUIGI KING GREEN** / GASTER → **GASTER OMNIPOTENT OVERLOAD** / LUIGI GREEN · "WHAT- THAT WAS- RIGHT..." / GASTER · "BROTHER... YOU ARE CORRECT."), closing on *one of them panics and one of them confirms it, and the calm one is the part worth watching — a stranger read Gaster's hidden name and he did not flinch*.
+- **"BROTHER..." (band inset)** — a cycler across LUIGI GREEN · JUMPS AND SHAKES / GASTER · DOES NOT MOVE / "BROTHER..." · SO THEY ARE BROTHERS / "CORRECT." · AND HE SAYS IT CALMLY, closing on *HE IS TOLD HIS OWN HIDDEN NAME AND HE ONLY AGREES WITH IT*.
+- **Strip:** SHE CROSSES · AND COMES BACK / THE PICTURE IS WRONG · IT COUNTS ANYWAY / HE GLITCHED · AND HE WAS RIGHT.
+- **Footers:** *A NAME IS THE ONE THING YOU CANNOT BLUFF, AND THE ASSISTANT GLITCHED AND GOT BOTH OF THEM RIGHT* and **★ BROTHER, YOU ARE CORRECT ★**.
+- **Screenshot helper:** new `brothercorrect` scene in `tools/capture_screenshot.py`.
+
+![BEAT 303 — BROTHER, YOU ARE CORRECT](screenshots/365-brother-correct.png)
+
 ## 2026-08-13 — THE IMAGINARY MASS · THE THREAT BECOMES A CROP, AND INFINITE GROWTH POURS INTO SOMEBODY ELSE'S CONTAINER (BEAT 302)
 
 Based on Toby's 2026-08-13 lore, 1:58:00 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread — twelve minutes after YOU ARE OUR ONLY HOP-, and a direct answer to the question the last reply asked about the DNA. His own typing is the opening paragraph. The "Imaginary Mass / Alex-Greg farming loop" breakdown pasted underneath is ChatGPT commentary.
