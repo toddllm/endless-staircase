@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — HALF OF INFINITY · THE FIRST BILL IN THE ARCHIVE, AND PAYING IT COSTS NOBODY ANYTHING (BEAT 314)
+
+Based on Toby's 2026-08-14 lore, 3:28:41 PM, an hour and twenty-eight minutes after HE MADE HIMSELF. His own typing: *"Pero stops Luigi Green from crushing the next box and says "You need to help me pay for those boxes.", Luigi Green says "What's the price?", Pero says "Just half your remaining lifespan.", Luigi Green says "I want to life as long as possible.", Pero says "Aren't you forgetting something, you are immortal, immortal = infinite lifespan, infinity/2 is still infinity, and 25 plus infinity is infinity, we 3, will be immortal.", Pero became immortal. Luigi Green now continues crushing the boxes/making the box_animation move."* The "Box payment rule / Immortality math rule / Pero becomes immortal / clean canon update" breakdowns pasted underneath are ChatGPT commentary.
+
+**The first price in the archive.** In 313 beats power has been taken, stolen, issued, inherited, fused, erased and handed over, and not once has anybody been **billed** for anything. The boxes have been getting crushed since BEAT 236, and it turns out somebody was keeping the tab.
+
+**And the immortal one flinches.** *"I want to life as long as possible."* That is a being who cannot die, afraid of dying, because he forgot what he is. It is the most human line in the whole file, and it belongs to one of the three who do not need the box.
+
+**The argument is settled by arithmetic.** *"Aren't you forgetting something, you are immortal, immortal = infinite lifespan, infinity/2 is still infinity."* Pero does not overpower the objection, he shows it does not apply. BEAT 305 was the first argument here settled by explaining instead of fighting; this is the first one settled by **math**.
+
+**And the math cuts both ways.** Halving takes nothing away, and *"25 plus infinity"* puts nothing in. So the largest transaction in the archive moves nothing in either direction. The 25 is never explained: two of the three steps prove themselves and the third one just turns up.
+
+**One is charged, three are paid.** *"we 3, will be immortal"* — Pero, Luigi Green and Gaster, the same three who do not need the box in BEAT 313, so the outside-box trio becomes the permanent trio. And *"Pero became immortal"* means the self-made creator with nobody above him was **not** immortal until he sent somebody a bill. Every deal in this file has had a loser; this one has none.
+
+**Then it ends on a chore.** *"Luigi Green now continues crushing the boxes/making the box_animation move."* Three beings becoming unkillable forever is an interruption in a work shift, and the shift resumes.
+
+**Built as game beat 314, `HALF OF INFINITY`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of YOU NEED TO HELP ME · PAY FOR THOSE BOXES / INFINITY / 2 · IS STILL INFINITY** under *THE FIRST THING IN THIS FILE THAT ANYBODY HAS TO PAY FOR.*, with **JUST HALF YOUR REMAINING LIFESPAN** boxed in Luigi Green green over *AND HALF OF FOREVER IS STILL FOREVER.*, and a drifting strip of *∞ / 2 = ∞ · 25 + ∞ = ∞ · WE 3, WILL BE IMMORTAL*.
+- **SOMEBODY GETS A BILL (left)** — five rows (Pero stops him before the next box / "you need to help me pay for those boxes" / "what's the price?", he asks first / "just half your remaining lifespan" / somebody was keeping the tab), closing on *POWER HERE IS TAKEN,* / *STOLEN, ISSUED, INHERITED* / *IN 313 BEATS, NOT ONCE* / **HAS IT BEEN CHARGED FOR.**
+- **AND HE FORGETS THAT HE CANNOT DIE (centre)** — five rows ("I want to life as long as possible" / the one who cannot die, flinching / "aren't you forgetting something" / immortal = infinite lifespan / so half of it is all of it), closing on *NO THREAT, NO FIGHT* / *HE JUST SHOWS HIM* / *THE MATH DOES NOT APPLY* / **AND THE OBJECTION FALLS.**
+- **AND THE BILL PAYS EVERYBODY (right)** — five rows (one is charged, Luigi Green / three are paid, "we 3, will be immortal" / Pero became immortal, just now / and Dr. Gaster is the third one / the same three who do not need the box), over *every deal in this file has had a loser*, closing on **THIS ONE HAS NONE.**
+- **WHAT THE PRICE ACTUALLY MOVED. (band)** — a four-row grid lit one at a time (HALF A LIFESPAN → ∞ / 2 = ∞, taken away: nothing / PLUS 25 → 25 + ∞ = ∞, put in: nothing / WHO PAID → Luigi Green, alone, what it cost him: nothing / WHO GOT PAID → Pero, Luigi Green, Gaster, all three, forever), closing on *the biggest transaction in 314 beats moves nothing in either direction, and everybody leaves with more than they came with*.
+- **THE NUMBER 25 (band inset)** — a cycler across STEP ONE · half your remaining lifespan / STEP TWO · infinity / 2 is still infinity / STEP THREE · "and 25 plus infinity" / SO WHERE · did the 25 come from?, over *TWO OF THE THREE STEPS ARE PROVED* / *AND THE THIRD ONE JUST TURNS UP*.
+- **Strip:** THE BOXES · GET A PRICE / THE PRICE · COSTS NOTHING / THE TRIO · IS PERMANENT.
+- **Footers:** *THREE OF THEM BECOME UNKILLABLE FOREVER, AND THEN HE GOES BACK TO CRUSHING THE BOXES* and **★ HALF OF INFINITY ★**.
+- **Cycle length** `LV_CYC` 6628 → 6650; **screenshot helper:** new `halfofinfinity` scene (and the missing `madehimself` doc line added).
+
+![BEAT 314 — HALF OF INFINITY](screenshots/376-half-of-infinity.png)
+
 ## 2026-08-14 — HE MADE HIMSELF · NOBODY BUILT THE STRONGEST THING HERE, AND THREE OF THEM DO NOT NEED THE BOX (BEAT 313)
 
 Based on Toby's 2026-08-14 lore, three messages in four minutes (1:56:58 PM, 1:57:48 PM, 2:00:00 PM), just under three hours after NO IDEA WHAT ELSE TO SAY. His own typing: *"I won't list everything Pero can do, corrupt, and control, since it is litterly everything. Even the most powerful/corrupted being in the box will fade into corruption shards when they look at Pero. ... Pero wasn't created, he made himself, he taken all from the air and wind and everything. I can't list everything."* / *"Also his power doesn't change if he is outside the game. Nothing even changes. Pero goes with Luigi Green and Gaster."* / *"All the other characters from the box need to be inside the box to have power. Pero is outside the box most oftenly, so are Luigi Green and Gaster."* The "Pero LAI self-made creator-being / Pero outside-game rule / Box power rule / clean canon update" breakdowns pasted underneath are ChatGPT commentary.
