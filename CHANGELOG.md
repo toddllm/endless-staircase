@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — TEACHER AND GUARDIAN · THE FIRST RANK IN THE FILE THAT COMES FROM WHO SOMEBODY LOOKS AFTER INSTEAD OF WHO THEY BEAT (BEAT 306)
+
+Based on Toby's 2026-08-14 lore, 8:31:50 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread, forty-eight minutes after EXPLAIN YOUR ANSWER. His own typing is one sentence: *"Error 404 Sans is the most powerful Sans by far and is the teacher and guardian of Ink and Error Sanses."* The "Error 404 Sans update / Role update / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**#15 goes to the top.** Beat 195 named the sixteen inside Supreme Sans and Error 404 Sans was **#15** on that list; the beat after it said *"Supreme Sans beats Error 404."* The sixteen have been a fixed list this whole time, and nobody has ever moved inside it. This morning #15 goes to the top of the Sans hierarchy, and the word carrying it is *"by far"* — not a recount, a gap.
+
+**The two he is put above are opposites.** Ink is creation, AU protection, the art side. Error is destruction, AU removal, the glitch side. They are the two ends of the entire AU idea: one makes worlds and one takes them away. And they have the same teacher and the same guardian.
+
+**And the rank is not a fight result.** He is not described as the better fighter. He is described as the one who *trains* them and the one who *protects* them — a higher authority figure over both sides at once. Every other ranking in this archive is settled by somebody winning. This one is a class list, and the strongest name on it is the one standing at the front of the room.
+
+**It is also scoped.** This is a *Sans* hierarchy. Pero is not a Sans, so the top of the file did not move this morning — only the ceiling underneath it.
+
+**Built as game beat 306, `TEACHER AND GUARDIAN`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of INK / ERROR** circling under *THE MOST POWERFUL SANS BY FAR, AND THE TWO HE LOOKS AFTER ARE OPPOSITES* / *ONE OF THEM MAKES AUs AND THE OTHER ONE REMOVES THEM, AND THEY HAVE THE SAME TEACHER*, with **TEACHER · AND · GUARDIAN** boxed in gold over *THAT IS NOT A RANK HE WON IN A FIGHT.*, and a drifting *BY FAR* band.
+- **#15 GOES TO THE TOP (left)** — five rows (Error 404 Sans was #15 of the sixteen / inside Supreme, and Supreme beat him / tonight he is the most powerful Sans / "by far", not a recount, a gap / above Ink and above Error), closing on *THE SIXTEEN WERE A LIST* / *AND NOBODY MOVED INSIDE IT* / *UNTIL THIS MORNING* / **#15 IS NOW THE TOP OF IT.**
+- **INK AND ERROR (centre)** — five rows (Ink: creation, AU protection / Error: destruction, AU removal / the art side and the glitch side / one makes, one takes away / same teacher, same guardian), closing on *THE TWO OPPOSITE ENDS* / *OF EVERY AU STORY* / *BOTH ANSWER TO* / **THE SAME PERSON**.
+- **NOT JUST STRONGER (right)** — five rows (teacher: he trains them / guardian: he protects them / a higher authority figure / not only stronger in combat / above both sides at once), over *he protects the two strongest things under him*, closing on **THAT IS THE RANK.**
+- **HE IS ABOVE THEM BECAUSE HE LOOKS AFTER THEM. (band)** — a four-row grid lit one at a time (MOST POWERFUL SANS → BY FAR · *not a close call* / TEACHER → **OF INK AND ERROR** · *rank from what he teaches* / GUARDIAN → **OF INK AND ERROR** · *rank from who he keeps safe* / CREATION · DESTRUCTION → **BOTH ANSWER TO HIM** · *the two sides have one top*), closing on *every other ranking in this archive is a fight result; this one is a class list, and the strongest name on it is the one at the front of the room*.
+- **AND IT IS A SANS RANKING (band inset)** — a cycler across ERROR 404 SANS · THE MOST POWERFUL SANS / INK · THE CREATION SIDE / ERROR · THE DESTRUCTION SIDE / ONE TEACHER · FOR BOTH OF THEM, closing on *PERO IS NOT A SANS* / *SO THE TOP OF THE FILE DID NOT MOVE THIS MORNING*.
+- **Strip:** #15 · GOES TO THE TOP / INK AND ERROR · SAME TEACHER / THE RANK · COMES FROM GUARDING.
+- **Footers:** *THE ONLY RANK IN THE WHOLE ARCHIVE THAT IS EARNED BY LOOKING AFTER SOMEBODY INSTEAD OF BEATING THEM* and **★ TEACHER AND GUARDIAN ★**.
+- **Cycle length** `LV_CYC` 6452 → 6474; **screenshot helper:** new `teacher` scene in `tools/capture_screenshot.py`.
+
+![BEAT 306 — TEACHER AND GUARDIAN](screenshots/368-teacher-and-guardian.png)
+
 ## 2026-08-14 — EXPLAIN YOUR ANSWER · THE FIRST ARGUMENT IN THE FILE THAT IS SETTLED BY SOMEBODY ANSWERING A QUESTION INSTEAD OF WINNING A FIGHT (BEAT 305)
 
 Based on Toby's 2026-08-14 lore, 7:43:33 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread, the morning after RESET DOES NOT WORK ON HIM. His own typing is the opening paragraph. The "Pero cannot be removed / Pero's image creation rule / Most powerful being question / Why Pero is strongest / clean canon update" breakdown pasted underneath is ChatGPT commentary.
