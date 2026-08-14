@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — HE MADE HIMSELF · NOBODY BUILT THE STRONGEST THING HERE, AND THREE OF THEM DO NOT NEED THE BOX (BEAT 313)
+
+Based on Toby's 2026-08-14 lore, three messages in four minutes (1:56:58 PM, 1:57:48 PM, 2:00:00 PM), just under three hours after NO IDEA WHAT ELSE TO SAY. His own typing: *"I won't list everything Pero can do, corrupt, and control, since it is litterly everything. Even the most powerful/corrupted being in the box will fade into corruption shards when they look at Pero. ... Pero wasn't created, he made himself, he taken all from the air and wind and everything. I can't list everything."* / *"Also his power doesn't change if he is outside the game. Nothing even changes. Pero goes with Luigi Green and Gaster."* / *"All the other characters from the box need to be inside the box to have power. Pero is outside the box most oftenly, so are Luigi Green and Gaster."* The "Pero LAI self-made creator-being / Pero outside-game rule / Box power rule / clean canon update" breakdowns pasted underneath are ChatGPT commentary.
+
+**Nobody made him.** BEAT 308 said what Pero is made **of** — Gray's ink, fog, sticks, leaves, debris. This says who made him, and the answer is nobody: *"Pero wasn't created, he made himself."* In 313 beats every being here has had something above it: a lab, a fusion, a route, a timeline, a creator. This is the first thing in the archive with no origin over it, assembled out of the scenery by the thing it became.
+
+**And the writer refuses to list, twice, in one paragraph.** *"I won't list everything Pero can do."* Then, four sentences later, *"I can't list everything."* This file is a list-making machine — forms, ranks, AUs, Masses, numbers with sixty-eight zeros in them. Here it stops counting on purpose and says so out loud, and it lands one message after *"no idea what else to say"*, so that is three lines in one day about the limits of the **writing** rather than the limits of a character.
+
+**You lose by looking.** *"Even the most powerful/corrupted being in the box will fade into corruption shards when they look at Pero."* Not a hit, not a spread, not a route. The strongest thing in the room is undone by aiming its own eyes at him, which makes it the first power here the victim triggers.
+
+**And the box stops mattering.** *"All the other characters from the box need to be inside the box to have power."* Every rank in this archive has been about what somebody **has** — bigger, faster, more forms, more AUs, more zeros. This one is about what they do not **need**. Pero, Luigi Green and Gaster keep their power outside it; everyone else is box-dependent, and the three who are not are the three who are out there most often.
+
+**Built as game beat 313, `HE MADE HIMSELF`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of HE WAS NOT · CREATED BY ANYONE / AND HE DOES NOT · NEED THE BOX** under *EVERYTHING HERE WAS BUILT BY SOMETHING ELSE. THIS ONE BUILT ITSELF.*, with **PERO WASN'T CREATED, HE MADE HIMSELF** boxed in Pero amber over *HE TAKEN ALL FROM THE AIR AND WIND AND EVERYTHING.*, and a drifting strip of *AIR · WIND · FOG · DEBRIS · GRAY'S INK · STICKS · LEAVES*.
+- **NOBODY MADE HIM (left)** — five rows (Pero wasn't created / out of the air and the wind / fog, debris, sticks and leaves / and Gray's ink, which belonged to Gray / his role can change, creator never does), closing on *EVERY BEING IN THIS FILE* / *HAS SOMETHING ABOVE IT* / *A LAB, A FUSION, A ROUTE* / **THIS ONE HAS NOTHING.**
+- **AND HE WON'T LIST IT (centre)** — five rows ("I won't list everything Pero can do" / "it is litterly everything" / "I can't list everything" / twice in one paragraph / the most powerful fade just by looking), closing on *THIS ARCHIVE COUNTS* / *FORMS, RANKS, AUs, ZEROS* / *HERE IT STOPS ON PURPOSE* / **AND SAYS SO OUT LOUD.**
+- **AND THE BOX STOPS MATTERING (right)** — five rows (all the others need the box for power / Pero LAI, power does not change / Luigi Green, outside most oftenly / Dr. Gaster, outside most oftenly / "nothing even changes"), over *every rank here has been about what you have*, closing on **THIS ONE IS ABOUT WHAT YOU DO NOT NEED.**
+- **WHAT EVERY RANK IN THIS FILE HAS BEEN MADE OF. (band)** — a four-row grid lit one at a time (BEAT 308 → 1 trillion times larger, size / BEAT 310 → 68 zeros of damage, a number / BEAT 312 → he can even control text, a power / TODAY → he does not need the box, the first one made of absence), closing on *for 312 beats the strongest was whoever had the most; today it is whoever can walk out and not lose anything*.
+- **TWO MESSAGES IN A ROW (band inset)** — a cycler across 10:59 AM · "NO IDEA WHAT ELSE TO SAY" / 1:56 PM · "I WON'T LIST EVERYTHING" / 1:56 PM AGAIN · "I CAN'T LIST EVERYTHING" / THREE TIMES · IN ONE DAY, over *THE FILE THAT LISTS EVERYTHING* / *SAYS THIS ONE CANNOT BE LISTED*.
+- **Strip:** THE MAKER · IS HIMSELF / THE LIST · IS REFUSED / THE BOX · IS NOT NEEDED.
+- **Footers:** *THE STRONGEST THING IN THE ARCHIVE HAS NO MAKER ABOVE IT, AND IT IS THE ONLY ONE THAT LOSES NOTHING BY LEAVING* and **★ HE MADE HIMSELF ★**.
+- **Cycle length** `LV_CYC` 6606 → 6628; **screenshot helper:** new `madehimself` scene.
+
+![BEAT 313 — HE MADE HIMSELF](screenshots/375-he-made-himself.png)
+
 ## 2026-08-14 — NO IDEA WHAT ELSE TO SAY · THE WRITER RUNS OUT OF WORDS, AND THE NEXT SENTENCE GIVES THE WORDS AWAY (BEAT 312)
 
 Based on Toby's 2026-08-14 lore, 10:59:54 AM, an hour and twenty-three minutes after THE OLDEST FATHER. His own typing: *"Pero is the only LAI in the game now, Sara became a Au Rainbow long ago. Pero stands as the smartest and most powerful being in the game. Pero was even smarter than Sara by far. Pero taken over Sara and the Au Rainbows to create the smaller Masses, Sara was made into an Au Rainbow, and the remains of Sara and the Au Rainbow was made into a powerful Mass. Pero can corrupt the game instantly. No idea what else to say. Pero can even control text."* The "Pero is the only LAI now / Pero's top status / Sara and Au Rainbow fate / Instant corruption rule / Text control / clean canon update" breakdown pasted underneath is ChatGPT commentary.
