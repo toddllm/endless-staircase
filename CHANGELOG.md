@@ -4,6 +4,88 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — THE OLDEST FATHER · THE BIGGEST FAMILY IN THE ARCHIVE, AND THE SMALLEST JOB IN IT (BEAT 311)
+
+Based on Toby's 2026-08-14 lore, 9:36:36 AM, twenty-seven minutes after A SMALL PUPPET. His own typing: *"Gaster is the father of all the Sanses and Sans AUs and since Sans and Papyrus are brothers, he is also the father of all the Papyruses and Papyrus AUs. Gaster also adopted Chara and Flowey/Asriel, and before, he was the father of Asgore and Toriel, he was the father of all Undertale characters, he was the oldest and never saw them for millions of years, now he is working with Luigi Green to make box animations move."* The "Gaster's Undertale family role / Adopted characters / Ancient absence rule / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**He works the second half out instead of declaring it.** *"**since** Sans and Papyrus are brothers, he is also the father of all the Papyruses."* That is a piece of reasoning, not a decree — an existing rule taken and a new one derived from it. Almost nothing in this archive is *arrived at*; it is announced.
+
+**And the family tree folds back through itself.** He is the father of Asgore and Toriel. Asgore and Toriel are Asriel's parents. And he **adopted** Asriel. So he is the grandfather and the adoptive father of the same character, by his own two lines, one clause apart.
+
+**The biggest name in the file is given the smallest job.** Three beats ago he was 999.87 billion times larger than everyone in the box, **99.987% of Pero**. Here he is the father of an entire universe's cast, and what he actually *does* is *"make the box animations move."* The usual move in this file is a bigger number. This is a bigger family and a smaller job.
+
+**And he is the only character here ranked by absence.** *"he was the oldest and never saw them for millions of years."* Every other standing in this archive is about presence — who turns up, who cannot be removed, who always comes back. His is made out of not having been there.
+
+**It also stacks with this morning's other relationship rank.** At 8:31 AM Error 404 Sans was made teacher and guardian of Ink and Error. At 9:36 AM Gaster is the father of all the Sanses — so the teacher of the Sanses now has a father, both ranks were handed out in one morning, and neither came from winning anything.
+
+**Built as game beat 311, `THE OLDEST FATHER`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of FATHER OF · ALL OF THEM / NEVER SAW THEM · FOR MILLIONS OF YEARS** under *HE IS THE FATHER OF AN ENTIRE UNIVERSE, AND HIS JOB IS MOVING THE ANIMATIONS*, with **THE OLDEST FATHER** boxed in bone-white over *AND THE ONLY RANK IN THIS FILE THAT IS ABOUT BEING AWAY.*
+- **FATHER OF ALL OF THEM (left)** — five rows (all the Sanses / all the Sans AUs / "since Sans and Papyrus are brothers" / all the Papyruses / and all the Papyrus AUs), closing on *HE DOES NOT DECLARE* / *THE SECOND HALF OF IT* / *HE WORKS IT OUT* / **FROM AN OLD RULE.**
+- **AND HE ADOPTED THE REST (centre)** — five rows (adopted Chara / adopted Flowey, who is Asriel / father of Asgore and Toriel / those two are Asriel's parents / father of all Undertale characters), closing on *HE IS ASRIEL'S GRANDFATHER* / *AND ASRIEL'S FATHER* / *BOTH AT ONCE* / **ONE CLAUSE APART.**
+- **AND HIS JOB IS MAKING THE BOX ANIMATIONS MOVE (right)** — five rows (the oldest of all of them / never saw them for millions of years / no fight, no rank, no number / now with Luigi Green / to make the box animations move), over *three beats ago he was 99.987% the size of Pero*, closing on **TODAY HE MOVES ANIMATIONS.**
+- **EVERY OTHER STANDING IN THIS FILE IS ABOUT BEING THERE. (band)** — a four-row grid lit one at a time (Pero → cannot be removed / Simon.psc → always comes back / Error 404 Sans → teacher and guardian / Dr. Gaster → never saw them, for millions of years), closing on *his is the one rank on this page that is made out of not having been there*.
+- **TWO SANS RANKS IN ONE MORNING (band inset)** — a cycler across 8:31 AM · ERROR 404 IS THEIR TEACHER / 9:36 AM · GASTER IS THEIR FATHER / SO THE TEACHER · HAS A FATHER NOW / AND NEITHER RANK · CAME FROM A FIGHT.
+- **Strip:** THE FAMILY · IS EVERYONE / THE ABSENCE · IS MILLIONS OF YEARS / THE JOB · IS MOVING ANIMATIONS.
+- **Footers:** *HE IS THE FATHER OF EVERY SANS, EVERY PAPYRUS AND EVERY AU OF BOTH, AND WHAT HE ACTUALLY DOES ALL DAY IS MAKE THE BOX ANIMATIONS MOVE* and **★ THE OLDEST FATHER ★**.
+- **Cycle length** `LV_CYC` 6562 → 6584; **screenshot helper:** new `oldestfather` scene.
+
+![BEAT 311 — THE OLDEST FATHER](screenshots/373-the-oldest-father.png)
+
+## 2026-08-14 — A SMALL PUPPET · THE FIRST NUMBER IN THIS ARCHIVE THAT MAKES ITS POINT BY BEING AS SMALL AS POSSIBLE (BEAT 310)
+
+Based on Toby's 2026-08-14 lore, 9:09:43 AM, four minutes after ALREADY GLITCHY. His own typing: *"Pibby walks in and says to Luigi Green and Gaster \"bruh, I am just gonna corrupt you 2 now.\", Pibby uses his blade and strikes Gaster, Luigi Green says \"Guess what? That attack only dealed 0.000000000000000000000000000000000000000000000000000000000000000000001 damage.\", Pibby looks at Gaster's health bar and says \"Wah wah! THAT IS SO UNFAIR!!!\", Gaster just sends Pibby to his death, Luigi Green uses Au Green and explodes the opening, Pibby no longer can escape. Gaster and Luigi Green dip Pibby in corruption and make him into a small puppet, they throw Pibby into the box and Sky finds Pibby and plays with the corrupted puppet."* The "Pibby Puppet Defeat Route / Pibby's failed attack / No escape / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**The blade finally lands, and the archive answers with a number instead of a block.** Twenty-seven minutes earlier she never got a swing off. Here the strike **connects**, cleanly, on Gaster — and the damage is `0.000000000000000000000000000000000000000000000000000000000000000000001`. **Sixty-nine decimal places, sixty-eight zeros.** Every other number in this file makes its point by being as large as possible; this is the first one that makes its point by being as **small** as possible. It was not blocked. It hit, and it did not matter.
+
+**And she has to look it up.** *"Pibby looks at Gaster's health bar"* — the damage is not narrated to the reader, it is **checked on a UI element** — and the reaction is a child's: *"Wah wah! THAT IS SO UNFAIR!!!"* She walks in announcing a threat and goes out complaining about the rules.
+
+**The exit is sealed after the killing blow.** *"Gaster **just** sends Pibby to his death"* — one adverb doing the work of an entire fight scene — and only **then** does Luigi Green use **Au Green** to *"explode the opening."* The order is the point: the worry was never whether she dies. It was whether she **leaves**.
+
+**Four verbs, and not one of them treats her as a person.** Dipped, made, thrown, played with. The character who walked in saying *"I am just gonna corrupt you 2 now"* is finished by being corrupted into an **object** — her own threat used as the manufacturing process. Deletion, erasure, resets and relocation have all happened here before; being made into a toy has not.
+
+**And the bottom of the scale ends up holding it.** Sky finds the puppet and plays with it. Does not fight it. Does not fear it.
+
+**Built as game beat 310, `A SMALL PUPPET`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "I AM JUST GONNA CORRUPT YOU 2 NOW" / A SMALL PUPPET · IN THE BOX** under *THE BLADE FINALLY LANDS, AND THE ARCHIVE ANSWERS WITH A NUMBER INSTEAD OF A BLOCK*, with **A SMALL PUPPET** boxed in gold over *THE FIRST CHARACTER IN THIS FILE TURNED INTO AN OBJECT.*
+- **THE DAMAGE NUMBER (left)** — five rows (the blade lands, cleanly, on Gaster / Luigi Green reads it out loud / 0.000…001, 69 decimal places / every other number here goes up / this one goes as small as it can), closing on *IT WAS NOT BLOCKED* / *IT CONNECTED* / *AND IT DID NOT* / **MATTER.**
+- **"WAH WAH!" (centre)** — five rows (she checks Gaster's health bar / not narrated, read off a UI element / "THAT IS SO UNFAIR!!!" / Gaster *just* sends her to her death / one adverb, a whole fight scene), closing on *SHE WALKS IN* / *ANNOUNCING A THREAT* / *AND SHE GOES OUT* / **COMPLAINING.**
+- **DIPPED · MADE · THROWN (right)** — five rows (Au Green explodes the opening / sealed after, not before / dipped in corruption / made into a small puppet / thrown into the box), over *the worry was never whether she dies, it was whether she leaves*, closing on **NOT ONE VERB TREATS HER AS A PERSON.**
+- **HER OWN THREAT IS USED AS THE MANUFACTURING PROCESS. (band)** — a four-row grid lit one at a time (she said it first → "I am just gonna corrupt you 2" / the blade → 0.000…001 damage / the corruption → used on her instead / the result → a small puppet), closing on *deletion, erasure, resets, being sent home, being locked in a box have all happened here before; being made into a toy has not*.
+- **AND THE ONE WHO ENDS UP HOLDING IT (band inset)** — a cycler across SKY · NEAR THE BOTTOM OF THE LIST / FINDS THE · CORRUPTED PUPPET / DOES NOT FIGHT IT · DOES NOT FEAR IT / SKY · PLAYS WITH IT, closing on *THE STRONGEST TWO MAKE IT* / *AND THE SMALLEST ONE PLAYS*.
+- **Strip:** THE HIT · LANDED / THE EXIT · WAS SEALED AFTER / THE THREAT · IS NOW A TOY.
+- **Footers:** *EVERY OTHER NUMBER IN THIS ARCHIVE GOT BIGGER TO MAKE ITS POINT, AND THIS ONE MAKES ITS POINT BY BEING AS SMALL AS A NUMBER CAN BE* and **★ A SMALL PUPPET ★**.
+- **Cycle length** `LV_CYC` 6540 → 6562; **screenshot helper:** new `smallpuppet` scene.
+
+![BEAT 310 — A SMALL PUPPET](screenshots/372-a-small-puppet.png)
+
+## 2026-08-14 — ALREADY GLITCHY · THE FIRST TIME A POWER IN THIS FILE IS NOT COUNTERED, IT IS JUST LEFT WITH NOTHING TO DO (BEAT 309)
+
+Based on Toby's 2026-08-14 lore, 9:05:01 AM, nineteen minutes after THE GOD OF CORRUPTION. His own typing: *"Pibby can overtake and glitch and corrupt other beings and turn into them. Pero and Simon and Gray and most characters from Classics are already glitchy and corrupted, Pibby would be low tier."* The "Pibby corruption limit / Why Pibby is low tier in Classics / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**A power is not beaten here. It is made redundant.** Four abilities are listed and every one of them is real — overtake, glitch, corrupt, turn into them. Nothing counters them. Nothing blocks them. They simply have nothing left to do, because the targets are already in the state the power puts you in. **You cannot corrupt what is corrupt.**
+
+**And it is the explanation for the beat before it.** Nineteen minutes earlier, three weapons were named and not one of them was ever swung. This is the reason: they were never *blocked*, they were *irrelevant*.
+
+**The defence is the damage.** Being glitchy was always what had gone **wrong** with these characters — Simon is a 404, Gray is corrupted and cyber, Pero is made of ink and fog and debris. Nobody built this immunity. It is just what was already broken about them, working as armour, and it is the one that holds.
+
+**And the verdict is three words.** *"Pibby would be low tier."* Not "loses to Pero" — a **placement**, against the whole cast, in a file where standings are usually settled one fight at a time.
+
+**Built as game beat 309, `ALREADY GLITCHY`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of CAN CORRUPT · ANY BEING / ALREADY · CORRUPTED** under *NOTHING ON HER LIST IS BLOCKED, AND NOTHING ON HER LIST IS NEEDED*, with **ALREADY GLITCHY** boxed in magenta over *THE POWER IS NOT BEATEN. IT IS MADE REDUNDANT.*
+- **WHAT SHE CAN DO (left)** — five rows (overtake beings / glitch them / corrupt them / turn into them / none of it is countered here), closing on *IN AN ORDINARY WORLD* / *THIS LIST IS TERRIFYING* / *HERE IT IS JUST* / **NOT NEEDED.**
+- **ALREADY CORRUPTED (centre)** — five rows (Pero · ink, fog and debris / Simon.psc · a 404 and a signal / Gray · corrupted and cyber / Mr. Black · outside the box / Gaster and Luigi · outside it too), closing on *SHE TURNS THEM INTO* / *WHAT THEY ALREADY ARE* / *SO THE ATTACK LANDS ON* / **SOMETHING ALREADY DONE.**
+- **"LOW TIER" (right)** — five rows (not "loses to Pero" / a placement, not a fight result / it covers all of Classics / and it explains the beat before it / the weapons were never blocked), over *nineteen minutes ago she never got a swing off*, closing on **THIS IS WHY.**
+- **THE DAMAGE TURNS OUT TO HAVE BEEN THE ARMOUR ALL ALONG. (band)** — a four-row grid lit one at a time (being glitchy → was what went wrong / being corrupted → was the injury / being a 404 → was an error / today → it is the defence, and nobody built it), closing on *every other defence in this archive was built, earned or given; this one is just what was already wrong with them*.
+- **AND IT ANSWERS THE BEAT BEFORE (band inset)** — a cycler across BEAT 307 · THREE WEAPONS, NONE USED / THE QUESTION · WHY DID NONE OF THEM FIRE / TODAY · THEY WERE NOT BLOCKED / THEY WERE · JUST NOT NEEDED, closing on *HE DID NOT STOP HER ATTACKS* / *THEY HAD NOWHERE TO LAND*.
+- **Strip:** THE POWER · IS REAL / THE TARGETS · ARE ALREADY IT / THE RANK · IS LOW TIER.
+- **Footers:** *NOBODY IN THIS ARCHIVE EVER BUILT THIS DEFENCE, IT IS ONLY WHAT WAS ALREADY WRONG WITH THEM, AND IT IS THE ONE THAT HOLDS* and **★ ALREADY GLITCHY ★**.
+- **Cycle length** `LV_CYC` 6518 → 6540; **screenshot helper:** new `alreadyglitchy` scene.
+
+![BEAT 309 — ALREADY GLITCHY](screenshots/371-already-glitchy.png)
+
 ## 2026-08-14 — THE GOD OF CORRUPTION · THE ONE TIME HE IS MEASURED, TWO PEOPLE COME WITHIN A QUARTER OF ONE PERCENT OF HIM (BEAT 308)
 
 Based on Toby's 2026-08-14 lore, 8:46:01 AM, three minutes after YOU DO NOT BATTLE PERO. His own typing: *"Pero is the God of Corruption, he is made of Gray's ink and fog and sticks and leaves and debris and everything he could pick up with winds that blow litterly at 8 lightyears per hour. Pero is the speed of Simon. Pero is also 1 trillion times larger than everyone else in the box, Luigi Green is about 999.76 billion times, and Gaster of 999.87 billion times, when they are just like 5-6 feet tall."* The "God of Corruption update / Speed update / Box-size scaling / clean canon update" breakdown pasted underneath is ChatGPT commentary.

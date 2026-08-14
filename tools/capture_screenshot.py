@@ -80,6 +80,9 @@ Scenes:
     teacher          — BEAT 306, TEACHER AND GUARDIAN (Toby, Aug 14, 8:31 AM)
     nobattle         — BEAT 307, YOU DO NOT BATTLE PERO (Toby, Aug 14, 8:42 AM)
     godcorrupt       — BEAT 308, THE GOD OF CORRUPTION (Toby, Aug 14, 8:46 AM)
+    alreadyglitchy   — BEAT 309, ALREADY GLITCHY (Toby, Aug 14, 9:05 AM)
+    smallpuppet      — BEAT 310, A SMALL PUPPET (Toby, Aug 14, 9:09 AM)
+    oldestfather     — BEAT 311, THE OLDEST FATHER (Toby, Aug 14, 9:36 AM)
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -8155,6 +8158,99 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6494.8; loopVs.phase=307; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "oldestfather": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 311. THE OLDEST FATHER: FATHER OF ALL OF THEM on the left, AND HE ADOPTED THE REST down the centre, AND HIS JOB IS MAKING THE BOX ANIMATIONS MOVE on the right, the absence band with the TWO SANS RANKS IN ONE MORNING inset, over a ring of FATHER OF ALL OF THEM / NEVER SAW THEM FOR MILLIONS OF YEARS with THE OLDEST FATHER boxed in bone-white. Beat 311 spans cyc in 6562.0 to 6584.0; cyc=6582.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6078.0; loopVs.cyc=6582.8; loopVs.phase=311;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6582.8; loopVs.phase=311; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "smallpuppet": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 310. A SMALL PUPPET: THE DAMAGE NUMBER on the left, "WAH WAH!" down the centre, DIPPED / MADE / THROWN on the right, the manufacturing band with the AND THE ONE WHO ENDS UP HOLDING IT inset, over a ring of the threat vs the puppet with A SMALL PUPPET boxed in gold. Beat 310 spans cyc in 6540.0 to 6562.0; cyc=6560.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6078.0; loopVs.cyc=6560.8; loopVs.phase=310;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6560.8; loopVs.phase=310; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "alreadyglitchy": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 309. ALREADY GLITCHY: WHAT SHE CAN DO on the left, ALREADY CORRUPTED down the centre, "LOW TIER" on the right, the damage-is-the-armour band with the AND IT ANSWERS THE BEAT BEFORE inset, over a ring of CAN CORRUPT ANY BEING / ALREADY CORRUPTED with ALREADY GLITCHY boxed in magenta. Beat 309 spans cyc in 6518.0 to 6540.0; cyc=6538.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6078.0; loopVs.cyc=6538.8; loopVs.phase=309;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6538.8; loopVs.phase=309; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
