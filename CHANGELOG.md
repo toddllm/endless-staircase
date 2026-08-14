@@ -4,6 +4,58 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — THE GOD OF CORRUPTION · THE ONE TIME HE IS MEASURED, TWO PEOPLE COME WITHIN A QUARTER OF ONE PERCENT OF HIM (BEAT 308)
+
+Based on Toby's 2026-08-14 lore, 8:46:01 AM, three minutes after YOU DO NOT BATTLE PERO. His own typing: *"Pero is the God of Corruption, he is made of Gray's ink and fog and sticks and leaves and debris and everything he could pick up with winds that blow litterly at 8 lightyears per hour. Pero is the speed of Simon. Pero is also 1 trillion times larger than everyone else in the box, Luigi Green is about 999.76 billion times, and Gaster of 999.87 billion times, when they are just like 5-6 feet tall."* The "God of Corruption update / Speed update / Box-size scaling / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**He is not built, he is gathered — and the first ingredient is his enemy's.** Gray's ink, fog, sticks, leaves, debris, *"everything he could pick up,"* collected by winds at 8 lightyears per hour. That also settles beat 298 retroactively: Alex is the only one who can harm him, and he does it *"using Pero's fog to create fans."* The one working counter in the archive runs on the material Pero is made of.
+
+**He is given somebody else's stat instead of a bigger one of his own.** *"Pero is the speed of Simon."* Simon being the fastest is one of the oldest Core Final Truths in this file, and Pero is normally placed *above* everything. Here he is placed **equal**, on the one stat that was never his.
+
+**And the first number he is ever given has two people almost touching it.** 1 trillion times larger — then Gaster at 999.87 billion (**99.987%** of him) and Luigi Green at 999.76 billion (**99.976%**). Pero has been beyond measuring for the entire archive. Those two are exactly the pair he handed half the Mass each in beat 304, and Gaster, the second half, is the larger of them. From outside the box, all three are 5 to 6 feet tall.
+
+**Built as game beat 308, `THE GOD OF CORRUPTION`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of INK · FOG · DEBRIS / 1 TRILLION × LARGER** under *HE IS NOT BUILT, HE IS GATHERED, AND THE FIRST THING ON THE LIST IS GRAY'S INK*, with **THE GOD OF CORRUPTION** boxed in violet over *AND HE IS MADE OUT OF WHAT THE GAME LEFT LYING AROUND.*
+- **WHAT HE IS MADE OF (left)** — five rows (Gray's ink and fog / sticks and leaves and debris / everything he could pick up / winds at 8 lightyears per hour / not a body, a collection), closing on *HE IS ASSEMBLED* / *OUT OF THE WORLD* / *AND THE FIRST INGREDIENT* / **BELONGS TO HIS ENEMY.**
+- **THE SPEED OF SIMON (centre)** — five rows (Simon is the fastest, a Core Final Truth / everyone else builds up speed / Simon is top speed instantly / Pero is the speed of Simon / not above it, equal to it), closing on *HE IS ALWAYS GIVEN* / *SOMETHING NOBODY ELSE HAS* / *THIS TIME HE IS GIVEN* / **SOMEBODY ELSE'S STAT.**
+- **1 TRILLION TIMES (right)** — five rows (Pero 1 trillion × / Gaster 999.87 billion × / Luigi Green 999.76 billion × / from outside they are 5 to 6 feet / inside the box they are giants), over *Gaster is 99.987% of Pero, Luigi Green is 99.976%*, closing on **NOBODY HAS EVER BEEN THAT CLOSE.**
+- **HE FINALLY GETS A NUMBER, AND TWO PEOPLE ARE ALMOST TOUCHING IT. (band)** — a four-row grid lit one at a time, closing on *the two standing closest to his first number are exactly the pair he handed half the Mass each*.
+- **AND GASTER IS THE LARGER OF THE TWO (band inset)** — a cycler across BEAT 304 · THE MASS SPLIT IN HALF / HALF TO · LUIGI GREEN / HALF TO · DR. GASTER / TODAY · GASTER IS THE BIGGER HALF, closing on *THE ONE HE GAVE POWER TO* / *IS THE ONE NEAREST HIS SIZE*.
+- **Strip:** THE INK · IS GRAY'S / THE SPEED · IS SIMON'S / THE SIZE · IS ALMOST GASTER'S.
+- **Footers:** *EVERYTHING HE IS MADE OF BELONGED TO SOMEBODY ELSE FIRST, AND THE TWO NEAREST HIS SIZE ARE THE TWO HE GAVE HALF THE MASS TO* and **★ THE GOD OF CORRUPTION ★**.
+- **Cycle length** `LV_CYC` 6496 → 6518; **screenshot helper:** new `godcorrupt` scene.
+
+![BEAT 308 — THE GOD OF CORRUPTION](screenshots/370-god-of-corruption.png)
+
+## 2026-08-14 — YOU DO NOT BATTLE PERO · THE FIRST RULE IN THE ARCHIVE THAT IS AN INSTRUCTION INSTEAD OF A RANKING (BEAT 307)
+
+Based on Toby's 2026-08-14 lore, 8:42:51 AM, eleven minutes after TEACHER AND GUARDIAN and four minutes after he looked up who Pibby is. His own typing: *"so, Pero is greater than Corrupted characters and all forms of Pibby. Pibby has normal blade, Corruption Blade, and strongest attack, Corruption Barrage. Pibby went into the Anti Void and walked and battled Pero like a noob would do. Pibby was infected instantly with just the sight of Pero. An ink portal opened under Pibby and Pibby was sent to the deepest part of the box. You do NOT battle Pero."* The "Pibby vs Pero canon update / What happened / Why Pero wins so hard / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**Three weapons are named, and not one of them is used.** Normal blade, Corruption Blade, Corruption Barrage — *"her strongest attack."* The whole loadout is listed for the sole purpose of being irrelevant.
+
+**And the character it belongs to is the one who resists corruption.** That is Pibby's entire role: she keeps being herself while the glitch takes everybody else. Here she is *"infected instantly with just the sight of Pero."* Not touched. Not hit. **Seen.** Four minutes later he is named the God of Corruption, so the one character built to resist corruption walked up to the god of it.
+
+**It also reads against an old rule.** Beat 195 said you cannot see him if you are too close, only from very far away — closer was always less. Now looking at him **is** the attack.
+
+**She is not killed.** An **ink** portal opens under her and she is sent to the deepest part of the box. He does not remove her, he puts her somewhere — and the door is made of ink, eleven minutes after the lore about who teaches Ink.
+
+**And the closing line is addressed to the reader.** *"You do NOT battle Pero."* Every other rule in this archive says who beats whom. This one is an instruction, in the second person, with the NOT in capitals.
+
+**Built as game beat 307, `YOU DO NOT BATTLE PERO`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PIBBY · THE CORRUPTION FIGHTER / PERO · THE GOD OF CORRUPTION** under *SHE WALKED IN WITH THREE WEAPONS AND NEVER USED ONE OF THEM*, with **"YOU DO NOT BATTLE PERO."** boxed in red over *THAT IS NOT A RANKING. THAT IS AN INSTRUCTION.*
+- **SHE FIGHTS CORRUPTION (left)** — five rows (Pibby, the corruption fighter / normal blade and Corruption Blade / Corruption Barrage, her strongest attack / she resists what takes everyone else / and none of it is ever used), closing on *THE ONE CHARACTER WHO IS* / *DEFINED BY RESISTING IT* / *IS INFECTED BY* / **THE SIGHT OF HIM.**
+- **SHE WALKED IN (centre)** — five rows (into the Anti Void she walked / she battled him "like a noob would do" / infected instantly by the sight of him / an ink portal opened under her / the deepest part of the box), closing on *NOT A FIGHT* / *NOT EVEN ONE ROUND* / *SHE IS FILED AWAY* / **BEFORE SHE SWINGS.**
+- **AN INK PORTAL (right)** — five rows (the portal is made of ink / ink is the side he teaches / eleven minutes earlier he was its teacher / nothing is erased, she is relocated / the deepest part of the box), over *he does not kill her, he puts her somewhere*, closing on **AND THE DOOR IS INK.**
+- **IT IS NOT A MATCHUP. IT IS AN INSTRUCTION. (band)** — a four-row grid lit one at a time (normal blade → never swung / Corruption Blade → never swung / Corruption Barrage → never fired / the sight of him → infected instantly), closing on *every other rule in this archive says who beats whom; this one is addressed to the person reading it, in the second person, with the "NOT" in capitals*.
+- **AND HE WAS ALWAYS HARD TO LOOK AT (band inset)** — a cycler across BEAT 195 · YOU CANNOT SEE HIM UP CLOSE / ONLY FROM · VERY FAR AWAY / TODAY · THE SIGHT INFECTS / SO LOOKING AT HIM · IS THE ATTACK.
+- **Strip:** THE BLADES · NEVER GET USED / THE PORTAL · IS INK / THE RULE · IS ADDRESSED TO YOU.
+- **Footers:** *THE ONE CHARACTER IN FICTION BUILT TO RESIST CORRUPTION WALKED UP TO THE GOD OF IT AND WAS INFECTED BY LOOKING* and **★ YOU DO NOT BATTLE PERO ★**.
+- **Cycle length** `LV_CYC` 6474 → 6496; **screenshot helper:** new `nobattle` scene.
+
+![BEAT 307 — YOU DO NOT BATTLE PERO](screenshots/369-you-do-not-battle-pero.png)
+
 ## 2026-08-14 — TEACHER AND GUARDIAN · THE FIRST RANK IN THE FILE THAT COMES FROM WHO SOMEBODY LOOKS AFTER INSTEAD OF WHO THEY BEAT (BEAT 306)
 
 Based on Toby's 2026-08-14 lore, 8:31:50 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread, forty-eight minutes after EXPLAIN YOUR ANSWER. His own typing is one sentence: *"Error 404 Sans is the most powerful Sans by far and is the teacher and guardian of Ink and Error Sanses."* The "Error 404 Sans update / Role update / clean canon update" breakdown pasted underneath is ChatGPT commentary.
