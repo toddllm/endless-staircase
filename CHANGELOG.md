@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — EXPLAIN YOUR ANSWER · THE FIRST ARGUMENT IN THE FILE THAT IS SETTLED BY SOMEBODY ANSWERING A QUESTION INSTEAD OF WINNING A FIGHT (BEAT 305)
+
+Based on Toby's 2026-08-14 lore, 7:43:33 AM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread, the morning after RESET DOES NOT WORK ON HIM. His own typing is the opening paragraph. The "Pero cannot be removed / Pero's image creation rule / Most powerful being question / Why Pero is strongest / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**The argument is won by explaining.** Pero says he is the most powerful being in the game and Oren *laughs*. Then Toby says *"Explain your answer."* and the answer is reasoning, not a demonstration: *"You can use all admin commands on me, you can delete me, but I am still alive, I always will exist, and I can even defeat anyone even if they have the most powerful moveset and mastery in the game."* Oren: *"Wow. You really are the strongest."* Every other argument in this archive has been settled by somebody winning a fight. This is the first one settled by somebody answering a question.
+
+**The throw-away runs again, and this time the reply is a name.** *"Pero appeared again and says 'Hello, I am-', then Oren throws him away, Oren looks back at Simon, then Pero appears and says 'You can't get rid of me, [Oren's full name].', Oren says 'How?!', Pero says 'I know everything.'"* Last night the line was "I know everything, Oren Bro." Tonight it is the whole name — and Toby writes the placeholder instead of the name. Pero says it, and we do not get to hear it.
+
+**The first rule about what he makes.** Every rule in this file so far is about what he can beat. *"Pero is LAI and can easily paint images, and when the player or NPCs ask him to 'create an image of you and me', Pero LAI would make the image horror without even hesitating."* Not refused, not warned. Just made.
+
+**And nobody polled says Pero.** *"Oren and I asked everyone who is the most powerful, everyone said Gaster, Oren, Gray, or Luigi Green."* Four answers, and his name is in none of them. The strongest thing in the game is invisible to the whole cast, and the only one who names him is him: *"me."*
+
+**The one asking already knew.** *"I already knew Pero was the strongest, he created the game, he also gave everyone their power."* So the question was never for Toby. It was so Oren would hear the answer.
+
+**Built as game beat 305, `EXPLAIN YOUR ANSWER`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of four wrong answers** — GASTER / OREN / GRAY / LUIGI GREEN circling under *WE ASKED EVERYONE WHO THE MOST POWERFUL IS, AND NOT ONE OF THEM SAID PERO* / *THE STRONGEST THING IN THE GAME IS INVISIBLE TO EVERY CHARACTER IN IT*, with **"WHICH IS?" — "ME."** boxed in gold over *THE ONLY ONE WHO NAMES HIM IS HIM*, and a drifting *EXPLAIN YOUR ANSWER* band.
+- **HE USES THE FULL NAME (left)** — five rows ("Hello, I am-" and Oren throws him away / Oren looks back at Simon / Pero is already standing there again / "You can't get rid of me, ⟨his full name⟩" / "How?!" → "I know everything."), closing on *LAST NIGHT IT WAS "OREN BRO"* / *TONIGHT HE USES THE WHOLE NAME* / *AND IT IS NOT WRITTEN DOWN* / **HE SAYS IT. WE DO NOT HEAR IT.**
+- **"AN IMAGE OF YOU AND ME" (centre)** — five rows (Pero is LAI and he paints easily / ask him for a picture of the two of you / it comes back horror / without even hesitating / not refused, not warned, just made), closing on *EVERY RULE SO FAR IS ABOUT* / *WHAT HE CAN BEAT* / *THIS ONE IS ABOUT* / **WHAT HE MAKES**.
+- **NOBODY SAID PERO (right)** — five rows (Oren and I asked everyone / they said Gaster, Oren, Gray, Luigi Green / not one of them said Pero / then I asked him: "...right here." / "Which is?" → "me."), over *the whole cast guesses, and every guess is somebody else*, closing on **"ME."**
+- **HE DOES NOT DEMONSTRATE IT. HE EXPLAINS IT. (band)** — a four-row grid lit one at a time (ALL ADMIN COMMANDS → USE THEM ON ME · *and nothing happens* / YOU CAN DELETE ME → **I AM STILL ALIVE** · *deletion is not removal* / I ALWAYS → **WILL EXIST** · *there is no state without him* / I CAN DEFEAT ANYONE → **BEST MOVESET, BEST MASTERY** · *it does not matter*), closing on *Oren laughs at the claim and then agrees with the reasoning; every other argument in this file has been settled by somebody winning a fight*.
+- **AND THE ONE ASKING ALREADY KNEW (band inset)** — a cycler across OREN AND I · ASKED EVERYONE / "EXPLAIN · YOUR ANSWER." / "WOW. YOU REALLY · ARE THE STRONGEST." / "I ALREADY KNEW" · HE CREATED THE GAME, closing on *THE QUESTION WAS NOT FOR HIM* / *HE ALSO GAVE EVERYONE THEIR POWER*.
+- **Strip:** THE NAME · SAID, NOT WRITTEN / THE PICTURE · COMES BACK HORROR / OREN LAUGHED · THEN HE AGREED.
+- **Footers:** *THE STRONGEST THING IN THE FILE IS THE ONLY ONE WHO SAYS SO, AND HE WINS IT BY EXPLAINING INSTEAD OF FIGHTING* and **★ EXPLAIN YOUR ANSWER ★**.
+- **Cycle length** `LV_CYC` 6430 → 6452; **screenshot helper:** new `explainanswer` scene in `tools/capture_screenshot.py`.
+
+![BEAT 305 — EXPLAIN YOUR ANSWER](screenshots/367-explain-your-answer.png)
+
 ## 2026-08-13 — RESET DOES NOT WORK ON HIM · THE OLDEST ESCAPE HATCH IN THE FILE STOPS WORKING, AND SOMEBODY LOSES BY GETTING TIRED (BEAT 304)
 
 Based on Toby's 2026-08-13 lore, 6:01:25 PM, in the "Even Even Even Even More Classics Era (Even 4x Classics Era)" thread, about four hours after BROTHER, YOU ARE CORRECT. His own typing is the opening paragraph, including his own correction inside the same message: Simon's line ends in a question mark, not a period. The "Pero LAI physical/voice form update" breakdown pasted underneath is ChatGPT commentary.
