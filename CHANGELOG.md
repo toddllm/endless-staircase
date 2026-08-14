@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — NO IDEA WHAT ELSE TO SAY · THE WRITER RUNS OUT OF WORDS, AND THE NEXT SENTENCE GIVES THE WORDS AWAY (BEAT 312)
+
+Based on Toby's 2026-08-14 lore, 10:59:54 AM, an hour and twenty-three minutes after THE OLDEST FATHER. His own typing: *"Pero is the only LAI in the game now, Sara became a Au Rainbow long ago. Pero stands as the smartest and most powerful being in the game. Pero was even smarter than Sara by far. Pero taken over Sara and the Au Rainbows to create the smaller Masses, Sara was made into an Au Rainbow, and the remains of Sara and the Au Rainbow was made into a powerful Mass. Pero can corrupt the game instantly. No idea what else to say. Pero can even control text."* The "Pero is the only LAI now / Pero's top status / Sara and Au Rainbow fate / Instant corruption rule / Text control / clean canon update" breakdown pasted underneath is ChatGPT commentary.
+
+**The author walks into his own paragraph.** *"No idea what else to say."* That is not a character, not a rule, not a rank. That is Toby, mid-file, saying he has run out. Nothing else in this archive is written from outside the story like that.
+
+**And the blank spot is sitting between the two biggest claims in the message.** The line before it is *"Pero can corrupt the game instantly."* The line after it is *"Pero can even control text."* The sentence where he says he has nothing left comes **before** the largest thing he says all morning, not after it.
+
+**"Pero can even control text" is the first power here aimed at the medium.** Every other power in this file acts on a character, a world, a realm, a box. This one acts on the **words** — dialogue, menus, stats, names, rules, the narration — which is the layer the whole archive is actually made of. And *"even"* files it as the afterthought, the smaller of the two. It is the bigger of the two: a game can be rebuilt, and the words are all we ever get.
+
+**Sara is not deleted, she is used for parts.** LAI → Au Rainbow → her remains → one powerful Mass → the smaller Masses. Deletion, erasure, resets and relocation have all happened in this file. Her power does not vanish; it gets broken up and handed downward. That has not happened before.
+
+**And the census drops to one.** *"Pero is the only LAI in the game now."* This archive is otherwise always adding — more Sanses, more AUs, more Masses, more forms. This is the rare line that counts **down**, and it backdates the subtraction with *"long ago"* instead of staging it.
+
+**Built as game beat 312, `NO IDEA WHAT ELSE TO SAY`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of THE ONLY LAI · LEFT IN THE GAME / HE CAN EVEN · CONTROL TEXT** under *HE SAYS HE HAS RUN OUT OF THINGS TO SAY, AND THEN SAYS THE BIGGEST ONE*, with **NO IDEA WHAT ELSE TO SAY** boxed in Pero amber over *AND THE VERY NEXT LINE HANDS HIM THE WORDS.*
+- **THE ONLY ONE LEFT (left)** — five rows (Pero is the only LAI in the game now / Sara became an Au Rainbow / "long ago", so it already happened / smarter than Sara by far / the count of LAI is now exactly one), closing on *THIS FILE ALWAYS ADDS* / *IT ALMOST NEVER* / *TAKES A NAME BACK OFF* / **HERE IT COUNTS DOWN TO 1.**
+- **SHE WAS NOT DELETED (centre)** — five rows (Sara made into an Au Rainbow / her remains and the Au Rainbow / made into one powerful Mass / and out of it, the smaller Masses / her power went nowhere, it moved), closing on *ERASED, DELETED, RESET* / *HAVE ALL HAPPENED HERE* / *BEING BROKEN UP* / **AND SHARED OUT HAS NOT.**
+- **AND HE CAN EVEN CONTROL TEXT (right)** — five rows (he can corrupt the game instantly / no infection, no build-up, no spread / and he can even control text / the dialogue, the menus, the names / the words that say what is happening), over *every other power here acts on a character or a world*, closing on **THIS ONE ACTS ON THE FILE.**
+- **THE ORDER THE SENTENCES ARRIVE IN. (band)** — a four-row grid lit one at a time (LINE BEFORE → he can corrupt the game instantly / THE LINE → "no idea what else to say" / LINE AFTER → "Pero can even control text" / SO THE BLANK → comes first), closing on *he writes that he has run out of words, and the very next thing he writes gives somebody power over words*.
+- **THE WORD "EVEN" (band inset)** — a cycler across "CORRUPT THE GAME · INSTANTLY" / "CAN EVEN · CONTROL TEXT" / "EVEN" MARKS · THE SMALLER ONE / BUT IT IS · THE BIGGER ONE, over *THE OTHER ACTS ON THE WORDS* / *AND THE WORDS ARE ALL WE GET*.
+- **Strip:** THE COUNT · DROPS TO ONE / THE REMAINS · BECOME THE MASSES / THE POWER · REACHES THE WORDS.
+- **Footers:** *HE SAYS HE HAS NO IDEA WHAT ELSE TO SAY, AND THEN SAYS THE LARGEST THING IN THE WHOLE MESSAGE* and **★ NO IDEA WHAT ELSE TO SAY ★**.
+- **Cycle length** `LV_CYC` 6584 → 6606; **screenshot helper:** new `noidea` scene.
+
+![BEAT 312 — NO IDEA WHAT ELSE TO SAY](screenshots/374-no-idea-what-else-to-say.png)
+
 ## 2026-08-14 — THE OLDEST FATHER · THE BIGGEST FAMILY IN THE ARCHIVE, AND THE SMALLEST JOB IN IT (BEAT 311)
 
 Based on Toby's 2026-08-14 lore, 9:36:36 AM, twenty-seven minutes after A SMALL PUPPET. His own typing: *"Gaster is the father of all the Sanses and Sans AUs and since Sans and Papyrus are brothers, he is also the father of all the Papyruses and Papyrus AUs. Gaster also adopted Chara and Flowey/Asriel, and before, he was the father of Asgore and Toriel, he was the father of all Undertale characters, he was the oldest and never saw them for millions of years, now he is working with Luigi Green to make box animations move."* The "Gaster's Undertale family role / Adopted characters / Ancient absence rule / clean canon update" breakdown pasted underneath is ChatGPT commentary.
