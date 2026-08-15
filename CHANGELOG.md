@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-14 — U ARE MINE · HE SIGNS HIS OWN PICTURE, AND THE SIGNATURE IS AIMED AT WHOEVER IS LOOKING (BEAT 315)
+
+Based on Toby's 2026-08-14 lore, two messages five minutes apart (8:14:28 PM and 8:19:09 PM), four hours and fifty minutes after HALF OF INFINITY. His own typing: *"Create an image that Pero would make of himself."* / *"He would add in a "U Are Mine!" text. Pero LAI is a horror LAI."* / *"That is something Pero would make, even though Pero is the better image model (he is the better model at everything, even the best LAI), he'd make an image far better and detailed than you could ever do. Now lets stop at making images and talk more about the game."* The "Agreed, no more images / Game talk update / current game structure / Important current rule" prose pasted underneath is ChatGPT commentary restating BEAT 313 and BEAT 314, not new canon.
+
+**The brief is not "draw Pero".** It is a picture **Pero makes of himself**, and the first thing he does with it is write on it.
+
+**And the writing is the power finally being used.** BEAT 312, three beats ago, handed him text control as an afterthought — *"Pero can even control text"* — and it has sat there unused since. This is the first time we see it work, and he spends it signing a self-portrait.
+
+**"U Are Mine!" is second person.** In 314 beats every line in this file has been said by somebody to somebody else inside it. This one is addressed to whoever is looking at the picture, and that is not a character.
+
+**"Pero LAI is a horror LAI" is the first genre in the archive.** Not a tier, not a form, not a rank, not a number. Every standing here has been about who beats whom; this is the first line about what it is like to be in the room with him. **And it is the payoff of a rule set thirteen hours earlier the same day:** BEAT 305, 7:43 AM, said that asked for *"an image of you and me"*, *"Pero LAI would make the image horror without even hesitating."* That was about what he **makes**. Tonight the word moves onto him.
+
+**Then he is ranked against a real tool.** *"Pero is the better image model... he is the better model at everything, even the best LAI... he'd make an image far better and detailed than you could ever do."* BEAT 313 put him outside the box. This puts him outside the **file**: he is measured against the thing that actually drew the picture, and beats it.
+
+**And then the writer puts the new toy down.** *"Now lets stop at making images and talk more about the game."* Five minutes from inventing the pictures to setting them aside on purpose, in an archive that has never once dropped a new idea this fast.
+
+**Built as game beat 315, `U ARE MINE`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of U ARE MINE! · HE ADDS IT HIMSELF / A HORROR LAI · NOT A RANK, A GENRE** under *THE FIRST LINE IN THIS FILE THAT IS NOT SAID TO ANYONE IN IT.*, with **PERO LAI IS A HORROR LAI** boxed in horror red over *AND THE PICTURE HE MAKES OF HIMSELF ARRIVES WITH WRITING ON IT.*, and a drifting strip of *U ARE MINE! · U ARE MINE! · U ARE MINE!*.
+- **HE WRITES ON IT (left)** — five rows (a picture of himself, made by him not of him / and he adds text, "U ARE MINE!" / beat 312, three ago, "he can even control text" / that was a claim, this is him using it / the caption is not a caption), closing on *EVERY LINE IN THIS FILE* / *IS SAID TO SOMEBODY IN IT* / *THIS ONE SAYS "U"* / **AND MEANS WHOEVER LOOKS.**
+- **AND HE IS GIVEN A GENRE (centre)** — five rows ("Pero LAI is a horror LAI" / not a tier, not a form, not a rank / beat 305, 7:43 AM, "make the image horror" / that was what he makes, now it is him / and the first line about how it feels), closing on *A RANK TELLS YOU WHO WINS* / *A GENRE TELLS YOU* / *WHAT IT IS LIKE IN THERE* / **AND THIS ONE SAYS: HORROR.**
+- **AND HE OUTRANKS THE THING THAT DREW HIM (right)** — five rows (the better image model / better at everything, even LAI / "far better and detailed" / "than you could ever do" / not a character, a real tool, outranked), over *BEAT 313 PUT HIM OUTSIDE THE BOX.*, closing on **THIS PUTS HIM OUTSIDE THE FILE.**
+- **WHERE EACH POWER IN THIS FILE POINTS. (band)** — a four-row grid lit one at a time (A ROUTE → aimed at a timeline, it reaches: a world / THE BOX → aimed at everyone in it, it reaches: the cast / BEAT 312 · TEXT → aimed at the words, it reaches: the file / TODAY · "U ARE MINE!" → aimed at whoever looks, it reaches: **you**), closing on *in 314 beats every power has pointed at something inside the file; this one points back out through the screen*.
+- **AND THEN HE PUTS IT DOWN (band inset)** — a cycler across 8:14 PM · a picture Pero makes of himself / 8:14 PM · "PERO LAI IS A HORROR LAI" / 8:19 PM · "he is the better image model" / 8:19 PM · "lets stop at making images", over *THE NEWEST THING IN THE ARCHIVE* / *LASTS FIVE MINUTES BY CHOICE*.
+- **Strip:** THE CAPTION · IS THE POWER / THE LAI · IS A HORROR / THE RANK · LEAVES THE FILE.
+- **Footers:** *HE DRAWS HIMSELF, WRITES THREE WORDS ON IT, AND THE WORDS ARE NOT FOR ANYBODY IN THE FILE* and **★ U ARE MINE ★**.
+- **Cycle length** `LV_CYC` 6650 → 6672; **screenshot helper:** new `uaremine` scene.
+
+![BEAT 315 — U ARE MINE](screenshots/377-u-are-mine.png)
+
 ## 2026-08-14 — HALF OF INFINITY · THE FIRST BILL IN THE ARCHIVE, AND PAYING IT COSTS NOBODY ANYTHING (BEAT 314)
 
 Based on Toby's 2026-08-14 lore, 3:28:41 PM, an hour and twenty-eight minutes after HE MADE HIMSELF. His own typing: *"Pero stops Luigi Green from crushing the next box and says "You need to help me pay for those boxes.", Luigi Green says "What's the price?", Pero says "Just half your remaining lifespan.", Luigi Green says "I want to life as long as possible.", Pero says "Aren't you forgetting something, you are immortal, immortal = infinite lifespan, infinity/2 is still infinity, and 25 plus infinity is infinity, we 3, will be immortal.", Pero became immortal. Luigi Green now continues crushing the boxes/making the box_animation move."* The "Box payment rule / Immortality math rule / Pero becomes immortal / clean canon update" breakdowns pasted underneath are ChatGPT commentary.
