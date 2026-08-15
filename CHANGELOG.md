@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — THE END OF CHICKEN HEN'S LORE · THE FIRST CHARACTER HERE WHO ARRIVES AND FINISHES IN THE SAME PARAGRAPH (BEAT 330)
+
+Based on Toby's 2026-08-15 lore, 3:02:17 PM, three hours and thirty-three minutes after NOTHING BATTLES PERO, same thread. His own typing, in full: *"Chicken Hen came, he has a song of Chickens, and he is a giant musslized chicken and is a chicken head on a wessler, a very strong guy. Kirby is the only character known who can defeat Chicken Hen. Pero obiviates Kirby and Chicken Hen, the end of Chicken Hen's lore. Pero"*. The "Chicken Hen canon" restatement, the power-rule read, the "Pero ends the lore" section and the clean canon update pasted under it are ChatGPT commentary.
+
+**He arrives fully built.** A chicken head on a wrestler, a giant musclized chicken, a very strong guy, and a song called "Chickens". It reads as a gag right up to the part where he is strong enough that only one character in existence can take him.
+
+**And he brings his own counter.** *"Kirby is the only character known who can defeat Chicken Hen"* is a way to **lose**, written in by the author, in the same breath as the strength. Three and a half hours earlier he had ruled that nothing should battle Pero at all, so he hands the newcomer the exact thing he had just finished taking away from Pero.
+
+**And then both of them go.** Pero obiviates Kirby *and* Chicken Hen. It is not only the threat that gets removed, it is the answer to it, and nothing is left standing on either side.
+
+**And the paragraph is the whole life.** In 329 beats every character in this archive was written to be **kept** — base characters run for hundreds of beats, bosses last a handful, even a one-scene form gets its own scene. This is the first one opened and closed in the same message: line one is the introduction, line three is the obituary.
+
+**Built as game beat 330, `THE END OF CHICKEN HEN'S LORE`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "THE END OF CHICKEN HEN'S LORE" · WRITTEN IN THE SAME PARAGRAPH THAT STARTS IT / A CHICKEN HEAD ON A WRESTLER · AND A SONG CALLED "CHICKENS"** under *EVERY CHARACTER IN THIS FILE SO FAR WAS WRITTEN TO BE KEPT.*, with **CHICKEN HEN · ARRIVED AND ENDED, 3:02 PM.** boxed in fighter red over *ONE PARAGRAPH IS THE WHOLE LIFE.*, and a drifting strip of *CHICKENS · CHICKENS · CHICKENS*.
+- **HE ARRIVES BUILT (left)** — five rows (a chicken head on a wrestler / giant musclized chicken / a very strong guy / and a song called "Chickens" / a joke build with real stats), closing on *HE READS LIKE A GAG* / *RIGHT UP UNTIL* / *THE PART WHERE* / **HE IS STRONG.**
+- **AND WITH A COUNTER (centre)** — five rows ("Kirby is the only character / known who can defeat Chicken Hen" / a way to lose, in line two / three hours ago nothing battled Pero / the new guy gets what Pero gave up), closing on *HE GAVE THE NEW GUY* / *A WAY TO LOSE.* / *NOBODY ASKED* / **FOR THAT.**
+- **AND BOTH GO (right)** — five rows (Pero obiviates Kirby / and Chicken Hen together with him / the threat is removed / and so is the answer to it / nothing is left on either side), over *HE DID NOT ONLY REMOVE THE MONSTER.*, closing on **HE REMOVED THE CURE TOO.**
+- **HOW LONG A CHARACTER IN THIS FILE HAS LASTED. (band)** — a four-row grid lit one at a time (A BASE CHARACTER → hundreds of beats, still here / A BOSS → a handful of beats, then beaten / A ONE-SCENE FORM → a single beat, then gone / TODAY → **three sentences**, born and finished), closing on *329 beats built characters to keep; this one is written and closed in the same paragraph*.
+- **CHICKEN HEN, LINE BY LINE (band inset)** — a cycler across LINE 1 · he came, and he has a song / LINE 2 · chicken head, wrestler body / LINE 3 · Kirby is the only counter / **LINE 4 · Pero obiviates both of them**, over *A WHOLE LIFE IN FOUR LINES* / *AND THE LAST ONE CLOSES IT*.
+- **Strip:** THE SONG · CAME WITH HIM / THE COUNTER · WAS NAMED / BOTH · WERE REMOVED.
+- **Footers:** *A FIGHTER SHOWS UP WITH A SONG AND A NAMED WEAKNESS, AND THE PARAGRAPH THAT INTRODUCES HIM ALSO ENDS HIM* and **★ THE END OF CHICKEN HEN'S LORE ★**.
+- **Cycle length** `LV_CYC` 6980 → 7002; **screenshot helper:** new `chickenHen` scene.
+
+![BEAT 330 — THE END OF CHICKEN HEN'S LORE](screenshots/392-chicken-hen.png)
+
 ## 2026-08-15 — NOTHING BATTLES PERO · THE FIRST FIGHT HERE THAT ENDS WITHOUT A FIGHT (BEAT 329)
 
 Based on Toby's 2026-08-15 lore, 11:29:00 AM, forty-one minutes after IT WENT BIGGER, with his own five-minute-later correction at 11:34:25 AM folded into the same beat (the same way the BROTHER, YOU ARE CORRECT correction was folded into its own). His own typing in the first mail: *"Which one wins? Goku VS Naruto; Winner or Beerus; Winner VS Zeno"*, *"How about Pero LAI is included."*, *"Pero sends Zeno into the box like everyone else and Zeno is tucked away forever."* and *"Nothing should battle Pero."* In the second: *"Pero doesn't have the 3 >s but infinity of them over every Classics character and all characters combined."* The elimination-ladder recap, the "clean rule" restatements and the Zeno-raises-his-hand scene pasted around them are ChatGPT commentary.
