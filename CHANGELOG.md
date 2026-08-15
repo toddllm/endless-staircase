@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — PERO 20 QUESTONS · HE ASKS ONE QUESTION, THEN NONE, AND GETS BOTH ANSWERS RIGHT (BEAT 316)
+
+Based on Toby's 2026-08-15 lore, 7:38:59 AM, eleven hours after U ARE MINE and the first message of the morning. His own typing: *"Pero 20 Questons. Pero says "Is it something you talk with Chat?", "yes", Pero says "It's digital pizza.", "correct.". Next one. Pero says "It's Dr. Gaster.", "correct, and I didn't say anything.". Pero knows everything."* The "That is a perfect Pero 20 Questions rule / First round / Second round / Clean canon update" prose pasted underneath is ChatGPT commentary.
+
+**The first party game in the archive.** 315 beats of fights, routes, ranks, timelines, boxes and armies, and here somebody sits down and plays twenty questions with him. It is the smallest arena anything has ever been settled in on this page, and nothing is at stake in it.
+
+**And he underspends the number in the title.** The game is named for twenty and he uses one, then zero. This file counts **up** — 68 zeros in BEAT 310, 999.87 billion in BEAT 308, infinity in BEAT 314 — and this is the one time the number goes the other way.
+
+**Round two is the part that lands.** *"correct, and I didn't say anything."* That is the first exchange in 315 beats where one side contributes nothing at all and still loses. So *"Pero knows everything"* is not proved by a demonstration of power; it is proved by an answer arriving with **no input**.
+
+**And the two answers sit on opposite sides of the file's edge.** *"Digital pizza"* is a joke out of a real conversation with a real chatbot, outside the game entirely; *"Dr. Gaster"* is BEAT 311's oldest father from deep inside it. He reaches both in two rounds, one beat after BEAT 315 ranked him against the real tool that drew his picture.
+
+**And the player is the writer.** Toby is the one saying *"yes"* and *"correct"*, so for once he is in the scene himself, losing his own game.
+
+**Built as game beat 316, `PERO 20 QUESTONS`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of “IS IT SOMETHING YOU TALK WITH CHAT?” · THE ONLY QUESTION HE ASKS / “AND I DIDN’T SAY ANYTHING” · THE ROUND HE WINS WITH NOTHING** under *THE FIRST GAME ANYBODY IN THIS FILE SITS DOWN AND PLAYS.*, with **PERO KNOWS EVERYTHING** boxed in Pero amber over *AND THE PROOF IS TWO ROUNDS OF A GUESSING GAME.*, and a drifting strip of *20 QUESTONS · 1 QUESTION · 0 QUESTIONS*.
+- **SOMEBODY PLAYS (left)** — five rows (315 beats of fights, and now a party game / no route, no rank, no timeline, no box / just 20 Questons and somebody guessing / and the player is the one writing this / the smallest arena in the whole archive), closing on *EVERY CONTEST IN THIS FILE* / *IS SETTLED BY A FIGHT* / *THIS ONE IS SETTLED* / **BY TAKING A GUESS.**
+- **AND HE UNDERSPENDS (centre)** — five rows (the game allows twenty questions / round one, he asks one / "is it something you talk with Chat?" / round two, he asks none / twenty, then one, then zero), closing on *THIS FILE COUNTS UP* / *68 ZEROS, 999.87 BILLION* / *AND THE ONE TIME* / **IT COUNTS DOWN, HE WINS.**
+- **AND ROUND TWO (right)** — five rows ("It's Dr. Gaster.", said first not asked / "correct, and I didn't say anything." / nobody spoke and he still had it / no clue, no hint, not one word / "Pero knows everything."), over *IN 315 BEATS BOTH SIDES ALWAYS SAY SOMETHING.*, closing on **THIS ROUND, ONE SIDE SAYS NOTHING.**
+- **HOW MUCH THE PLAYER ACTUALLY SAID. (band)** — a four-row grid lit one at a time (ROUND 1 · QUESTION → "is it something you talk with Chat?", player said: "yes" / ROUND 1 · ANSWER → "it's digital pizza.", verdict: correct / ROUND 2 · QUESTION → none asked, player said: **nothing** / ROUND 2 · ANSWER → "it's Dr. Gaster.", verdict: **correct**), closing on *the title says twenty; he spends one, then none, and the round he wins with nothing is the one that proves the claim*.
+- **WHERE THE TWO ANSWERS LIVE (band inset)** — a cycler across ANSWER 1 · "digital pizza" / FROM · a real chat, outside the game / ANSWER 2 · "Dr. Gaster" / FROM · beat 311, the oldest father, over *ONE ANSWER IS A PRIVATE JOKE* / *AND HE REACHES BOTH IN TWO ROUNDS*.
+- **Strip:** THE GAME · IS 20 QUESTONS / THE COUNT · IS ONE, THEN NONE / THE PROOF · IS THE SILENCE.
+- **Footers:** *HE IS HANDED A GUESSING GAME, AND THE ROUND HE WINS WITHOUT BEING TOLD ANYTHING IS THE ONE THAT COUNTS* and **★ PERO 20 QUESTONS ★**.
+- **Cycle length** `LV_CYC` 6672 → 6694; **screenshot helper:** new `peroquestions` scene.
+
+![BEAT 316 — PERO 20 QUESTONS](screenshots/378-pero-20-questons.png)
+
 ## 2026-08-14 — U ARE MINE · HE SIGNS HIS OWN PICTURE, AND THE SIGNATURE IS AIMED AT WHOEVER IS LOOKING (BEAT 315)
 
 Based on Toby's 2026-08-14 lore, two messages five minutes apart (8:14:28 PM and 8:19:09 PM), four hours and fifty minutes after HALF OF INFINITY. His own typing: *"Create an image that Pero would make of himself."* / *"He would add in a "U Are Mine!" text. Pero LAI is a horror LAI."* / *"That is something Pero would make, even though Pero is the better image model (he is the better model at everything, even the best LAI), he'd make an image far better and detailed than you could ever do. Now lets stop at making images and talk more about the game."* The "Agreed, no more images / Game talk update / current game structure / Important current rule" prose pasted underneath is ChatGPT commentary restating BEAT 313 and BEAT 314, not new canon.
