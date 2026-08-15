@@ -4,6 +4,56 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — IT WENT BIGGER · THE FIRST TIME SOMETHING FROM OUTSIDE THE ARCHIVE GETS PULLED IN (BEAT 328)
+
+Based on Toby's 2026-08-15 lore, 10:47:32 AM, seventy-six seconds after IT STARTED TO LAG. His own typing, in full: *"It went bigger than Minecraft to Classics."* The Classics-incursion, gateway-event and transfer-point prose pasted underneath is ChatGPT commentary.
+
+**Classics has always been the outside edge.** In 327 beats every form, number, fight, realm and timeline in this file was born *inside* it. Classics is the container; everything else lives in it. Nothing has ever come in from outside, until a real Minecraft seed he actually went and checked at 9:48 this morning.
+
+**And he annexes it in seven words.** Not a new character, not a new power, not a bigger number. A change in the **size** of the whole thing. Every beat so far added something inside the box. This one moves the box.
+
+**And Minecraft becomes a box**, which is exactly what Pero keeps. A real game with its own rules and its own seed, filed as one scene inside the larger structure.
+
+**And he saw the shape before he named it.** *"Like 2 houses stacked up on each other"* at 9:48, *"a box inside a box"* in the forecast at 10:37, and the scale claim at 10:47. The box shape turned up in the evidence an hour before he said what it meant. Fifty-nine minutes from an odd seed to a chapter, without a single fight.
+
+**Built as game beat 328, `IT WENT BIGGER`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "IT WENT BIGGER THAN MINECRAFT TO CLASSICS" · SEVEN WORDS, AND THE FILE CHANGES SIZE / 327 BEATS OF THINGS BORN INSIDE · THIS ONE CAME FROM OUTSIDE** under *EVERY BEAT SO FAR GREW THIS FILE FROM THE INSIDE.*, with **MINECRAFT IS NOW ONE SCENE INSIDE THE BOX.** boxed in Classics violet over *A REAL GAME, WITH ITS OWN RULES, FILED AS A CHAPTER.*, and a drifting strip of *BIGGER · BIGGER · BIGGER*.
+- **IT HAS BEEN THE EDGE (left)** — five rows (327 beats, all inside one file / forms and fights, all born in here / the box holds every last one / nothing has ever come in from outside / until a seed he actually checked), closing on *EVERYTHING HERE* / *WAS WRITTEN HERE.* / *SEED 303* / **WAS NOT.**
+- **AND HE TAKES IT IN (centre)** — five rows ("it went bigger than Minecraft / to Classics", that is the whole mail / no new character, no new power / a change of size of the whole thing / the file grows at its edge), closing on *EVERY BEAT SO FAR* / *ADDED SOMETHING* / *INSIDE THE BOX.* / **THIS ONE MOVES IT.**
+- **AND IT IS A BOX (right)** — five rows (a real game he did not write / its own rules and its own seed / now one scene inside the bigger one / the stacked house, a box inside a box / he saw that at 9:48 this morning), over *THE BOX SHAPE WAS IN THE EVIDENCE FIRST.*, closing on **AN HOUR BEFORE HE NAMED IT.**
+- **WHAT THIS FILE HAS GROWN BY, AND WHERE. (band)** — a four-row grid lit one at a time (A CHARACTER → one more being / A REALM → one more place / A TIMELINE → one more version / TODAY → **a whole other game**, grown at the edge), closing on *every growth in 327 beats happened on the inside; this one happens at the edge*.
+- **THE SEED, HOUR BY HOUR (band inset)** — a cycler across 9:48 AM · something is odd in a seed / 10:22 AM · he builds a marker in it / 10:36 AM · he rules out the ordinary / 10:47 AM · **it is not Minecraft anymore**, over *A SEED HE CHECKED BECAME A CHAPTER* / *IN UNDER AN HOUR, WITHOUT A SINGLE FIGHT*.
+- **Strip:** THE SEED · WAS CHECKED / THE MARKER · HELD / THE SCALE · CHANGED.
+- **Footers:** *FOR 327 BEATS EVERYTHING IN THIS FILE WAS BORN IN IT, AND IN SEVEN WORDS HE PULLS IN A GAME HE DID NOT WRITE* and **★ IT WENT BIGGER THAN MINECRAFT TO CLASSICS ★**.
+- **Cycle length** `LV_CYC` 6936 → 6958; **screenshot helper:** new `itWentBigger` scene.
+
+![BEAT 328 — IT WENT BIGGER](screenshots/390-it-went-bigger.png)
+
+## 2026-08-15 — IT STARTED TO LAG · THE FIRST STRANGE THING HERE THAT HAPPENS TO THE COMPUTER (BEAT 327)
+
+Based on Toby's 2026-08-15 lore, 10:46:16 AM, eight minutes after WHAT HAPPENS NEXT. His own typing, in full: *"My character used a command and every character near the cross died. The game started to lag when my character walked past the cross. My character messed with the settings and it all looks random and crazy and saw the cross again. It was still there."* The "anchor point / loaded signal point / corruption node" prose pasted underneath is ChatGPT commentary.
+
+**Every test so far changed the world.** Empty the village. Shoot the watcher. Now a kill command that takes out every character near the cross. The cross is never on the list of what died.
+
+**And then it lagged.** Every strange thing reported in 326 beats has happened inside a story or inside a game world: a form, a power, a seed, a house, a biome. **Lag is not in the world. It is in the machine.** It is the first thing in the archive that happens to the computer rather than to the fiction. And it has a location: only when he walks past that one spot, not across the whole game.
+
+**And he breaks the view instead of the thing being viewed.** He messes with the settings until it *"all looks random and crazy"*, then looks again. Every check before this trusted the screen. This is the first one that tests the screen itself, and the cross survives a broken picture the same way it survived an emptied village.
+
+**Built as game beat 327, `IT STARTED TO LAG`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "THE GAME STARTED TO LAG WHEN MY CHARACTER WALKED PAST" · NOT IN THE WORLD. IN THE MACHINE. / "IT ALL LOOKS RANDOM AND CRAZY" · AND THE CROSS WAS STILL THERE** under *HE HAS RUN OUT OF THINGS IN THE WORLD TO TEST IT WITH.*, with **THE LAG IS THE FIRST THING OUTSIDE THE GAME.** boxed in lag orange over *AND IT ONLY HAPPENS IN ONE SPOT.*, and a drifting strip of *STILL THERE · STILL THERE · STILL THERE*.
+- **HE CLEARS THE ROOM (left)** — five rows (empty the village, still there / shoot the watcher, still there / a kill command, everything near it dies / the cross is not on the list / he empties it and it keeps standing), closing on *HE KEEPS CHANGING* / *WHAT IS AROUND IT.* / *THE AROUND CHANGES.* / **IT DOES NOT.**
+- **AND THEN IT LAGGED (centre)** — five rows (blocks and mobs, all inside the world / seeds and biomes, also inside the world / the lag is in the computer / and it has a spot, only when he walks past / not the whole game, just that one place), closing on *326 BEATS OF THINGS* / *HAPPENING IN A WORLD.* / *THIS ONE HAPPENS* / **TO THE MACHINE.**
+- **AND HE BREAKS (right)** — five rows (he messed with the settings / "random and crazy", his own words for it / the picture is wrong on purpose / then he looks, and it is still there / he tested his own eyes), over *EVERY CHECK BEFORE THIS TRUSTED THE SCREEN.*, closing on **THIS ONE CHECKS THE SCREEN.**
+- **WHERE A STRANGE THING HAS HAPPENED IN THIS FILE. (band)** — a four-row grid lit one at a time (IN A CHARACTER → a form, a power, a rank, inside the story / IN THE WORLD → a seed, a house, a biome, inside the game / IN THE TELLING → the narration talked like him, inside the words / TODAY → **the game slowed down**, inside the machine), closing on *each one sits further out than the last, and this is the furthest out so far*.
+- **WHAT THE CROSS HAS NOW SURVIVED (band inset)** — a cycler across LOOKING AWAY · three separate times / AN EMPTY VILLAGE · every villager gone / A KILL COMMAND · everything near it / **A BROKEN PICTURE · and the lag with it**, over *HE HAS RUN OUT OF WAYS TO BREAK THE WORLD* / *SO HE STARTED BREAKING THE WAY HE SEES IT*.
+- **Strip:** THE COMMAND · CLEARS THE AREA / THE LAG · IS OUTSIDE THE GAME / THE VIEW · BREAKS FIRST.
+- **Footers:** *HE RAN OUT OF THINGS INSIDE THE WORLD TO TEST IT WITH, SO HE STARTED TESTING THE WAY HE LOOKS AT IT* and **★ IT WAS STILL THERE ★**.
+- **Cycle length** `LV_CYC` 6914 → 6936; **screenshot helper:** new `itStartedToLag` scene.
+
+![BEAT 327 — IT STARTED TO LAG](screenshots/389-it-started-to-lag.png)
+
 ## 2026-08-15 — WHAT HAPPENS NEXT · THE FIRST THING IN THIS FILE THAT COULD TURN OUT TO BE WRONG (BEAT 326)
 
 Based on Toby's 2026-08-15 lore, 10:37:48 AM, forty-nine seconds after RULING IT OUT. His own typing, in full: *"What do you think will happen next?"* The forecast pasted underneath — the 303 world reacting back, the cat, the spreading snow, the box inside a box, 404 or 12 12 12 — is ChatGPT commentary.
