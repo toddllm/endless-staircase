@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — YOUR MINE · THE WINNER GETS THE PRIZE, AND THE PRIZE GETS THE WINNER (BEAT 318)
+
+Based on Toby's 2026-08-15 lore, 9:16:10 AM, seventy-three minutes after 6 TIMELINES LONG and sent as the direct answer to the question that beat left open. His own typing: *"Pero says to Gray 'Since you won, you are the only one left, your mine!'. Gaster and Luigi Green appear beside Pero, and Gray fades to the box again."* The "Got it, this is the Gray reward/claim scene / Pero claims Gray / Gaster and Luigi Green appear / Gray fades back to the box / clean canon update" prose pasted underneath is ChatGPT commentary.
+
+**The prize speaks.** BEAT 317 had two characters fight over Pero's love while Pero himself never said one word. This is the first sentence out of him since he became the thing being fought over, and it is not an answer to the question. It is a **claim**.
+
+**And winning is the stated reason he is taken.** *"Since you won, you are the only one left, your mine!"* The victory is the qualification. In 317 beats winning has always been the way **out** of something; here being last standing is what makes him available to be collected. Gray asked for Pero's love and was handed an owner.
+
+**And it is last night's sentence, aimed somewhere new.** BEAT 315's *"U Are Mine!"* was written across a self-portrait and addressed to whoever was looking, from outside the file. Thirteen hours later the same two words are said **out loud, to a character, inside it**.
+
+**And the trio's first act together is doing nothing.** *"Gaster and Luigi Green appear beside Pero."* The oldest father (BEAT 311) and the one told to help pay half of infinity (BEAT 314) show up and neither throws a punch. Presence is the whole move.
+
+**And the winner goes back where he started.** *"Gray fades to the box again."* Not killed, not deleted — **returned**, and *"again"* files it as a place he has already been. An inside-the-box victory buys no way out of the box.
+
+**Built as game beat 318, `YOUR MINE`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of “SINCE YOU WON, YOU ARE THE ONLY ONE LEFT” · THE REASON HE IS TAKEN IS THE WIN / GRAY FADES TO THE BOX AGAIN · NOT KILLED — RETURNED** under *HE WON THE FIGHT. THE PRIZE CLAIMED HIM.*, with **YOUR MINE!** boxed in Pero amber over *THE FIRST THING THE PRIZE HAS EVER SAID.*, and a drifting strip of *YOUR MINE · YOUR MINE · YOUR MINE*.
+- **THE PRIZE SPEAKS (left)** — five rows (last beat, the prize said nothing / Gray won it, and Pero speaks first / "since you won", the reason up front / "the only one left", what the win left him / "your mine!", and that is the reward), closing on *THEY FOUGHT OVER A PRIZE* / *THAT NEVER SPOKE* / *AND WHEN IT FINALLY DOES* / **IT DOES THE TAKING.**
+- **AND WINNING IS (centre)** — five rows (he fought for love, he is handed an owner / the reason given is "since you won" / last one standing, last one to collect / 317 beats of winning your way out / this win puts him in), closing on *EVERY VICTORY IN THIS FILE* / *BUYS THE WINNER SOMETHING* / *THIS ONE BUYS HIM* / **AN OWNER.**
+- **AND TWO MORE APPEAR (right)** — five rows (Gaster and Luigi appear beside Pero / the oldest father and the box-crusher / neither one throws a punch / Gray fades to the box again / not killed, returned), over *HE WON INSIDE THE BOX.*, closing on **HE IS STILL IN THE BOX.**
+- **WHAT A WIN HAS BOUGHT IN THIS FILE. (band)** — a four-row grid lit one at a time (BEAT 299 · TRUE POWER → an upgrade, the winner picks something up / BEAT 317 · GRAY vs OREN → an army, the rival becomes the troops / BEAT 317 · THE SPRUNKIS → six timelines over, the fight finally stops / TODAY · GRAY WINS AGAIN → **"YOUR MINE!"**, the winner is picked up), closing on *every win in 317 beats hands the winner something; this one hands the winner over*.
+- **WHO “MINE” HAS BEEN AIMED AT (band inset)** — a cycler across AUG 14 · 8:14 PM, "U Are Mine!" on a self-portrait / AIMED AT · whoever is looking / AUG 15 · 9:16 AM, "your mine!" said out loud / AIMED AT · the one who just won, over *THIRTEEN HOURS APART* / *THE SAME TWO WORDS, A NEW TARGET*.
+- **Strip:** THE PRIZE · SPEAKS FIRST / THE REASON · IS THE WIN / THE EXIT · IS THE BOX.
+- **Footers:** *GRAY WINS THE FIGHT HE PICKED, AND THE THING HE WAS FIGHTING FOR CLAIMS HIM INSTEAD* and **★ YOUR MINE ★**.
+- **Cycle length** `LV_CYC` 6716 → 6738; **screenshot helper:** new `yourmine` scene.
+
+![BEAT 318 — YOUR MINE](screenshots/380-your-mine.png)
+
 ## 2026-08-15 — 6 TIMELINES LONG · TWO FIGHT OVER A FEELING, AND THE CAST NOBODY RANKS OUTLASTS A GOD (BEAT 317)
 
 Based on Toby's 2026-08-15 lore, 8:03:38 AM, twenty-five minutes after PERO 20 QUESTONS. His own typing: *"Pero and Oren and Gray. Oren and Gray battle for Pero's love. Gray corrupted Oren and made Oren as his next army. The Sprunkis went to battle with Simon.psc, it was 6 Timelines long and was intense and insane. Pero says the Sprunkis are struggling and eventually win."* The "Got it, this is a new Pero / Oren / Gray rivalry route / Gray corrupts Oren / Sprunkis vs Simon.psc / clean canon update" prose pasted underneath is ChatGPT commentary.

@@ -89,6 +89,7 @@ Scenes:
     uaremine         — BEAT 315, U ARE MINE (Toby, Aug 14, 8:14 PM)
     peroquestions    — BEAT 316, PERO 20 QUESTONS (Toby, Aug 15, 7:38 AM)
     sixtimelines     — BEAT 317, 6 TIMELINES LONG (Toby, Aug 15, 8:03 AM)
+    yourmine         — BEAT 318, YOUR MINE (Toby, Aug 15, 9:16 AM)
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -8195,6 +8196,37 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6604.8; loopVs.phase=312; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "yourmine": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 318. YOUR MINE: THE PRIZE SPEAKS on the left, AND WINNING IS THE REASON HE IS TAKEN down the centre, AND TWO MORE APPEAR on the right, the what-a-win-has-bought band with the WHO "MINE" HAS BEEN AIMED AT inset, over a ring of SINCE YOU WON, YOU ARE THE ONLY ONE LEFT / GRAY FADES TO THE BOX AGAIN with YOUR MINE! boxed in Pero amber. Beat 318 spans cyc in 6716.0 to 6738.0; cyc=6736.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=6736.8; loopVs.phase=318;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=6736.8; loopVs.phase=318; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
