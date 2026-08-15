@@ -32,7 +32,7 @@ Based on Toby's 2026-08-15 lore, two messages nine minutes apart (9:55:57 AM and
 - **Footers:** *THE WHOLE CAST ATTACKS AND EVERY SWING TURNS INTO A SENTENCE, SO THE ONE THAT WORKS IS A QUESTION* and **★ WITHOUT DEFEATING PERO ★**.
 - **Cycle length** `LV_CYC` 6804 → 6826; **screenshot helper:** new `withoutdefeating` scene.
 
-![BEAT 322 — WITHOUT DEFEATING PERO](screenshots/103-without-defeating-pero.png)
+![BEAT 322 — WITHOUT DEFEATING PERO](screenshots/384-without-defeating-pero.png)
 
 ## 2026-08-15 — THE LORE ENTERED AGAIN · A DOOR THAT SAYS CONTINUE, AND A RULE HE HAS TO AMEND INSTEAD OF DELETE (BEAT 321)
 
@@ -60,7 +60,7 @@ Based on Toby's 2026-08-15 lore, 10:01:25 AM, eleven minutes after CORRUPTION GO
 - **Footers:** *THE WRITING BECOMES THE WAY IN, AND SOMEBODY ELSE FINALLY GETS A LINE ON THE RULE SCREEN* and **★ THE LORE ENTERED AGAIN ★**.
 - **Cycle length** `LV_CYC` 6782 → 6804; **screenshot helper:** new `loreentered` scene.
 
-![BEAT 321 — THE LORE ENTERED AGAIN](screenshots/102-lore-entered-again.png)
+![BEAT 321 — THE LORE ENTERED AGAIN](screenshots/383-lore-entered-again.png)
 
 ## 2026-08-15 — CORRUPTION GOD · A FIGHT WON BY PUNCTUATION, AND A RANK THAT COSTS NOTHING (BEAT 320)
 
@@ -88,7 +88,7 @@ Based on Toby's 2026-08-15 lore, 9:50:45 AM, two minutes after SEED 303. His own
 - **Footers:** *A FIGHT IS CALLED ON ONE PIECE OF PUNCTUATION, AND THE THING THAT DOES THE CORRUPTING GETS A GOD* and **★ CORRUPTION GOD ★**.
 - **Cycle length** `LV_CYC` 6760 → 6782; **screenshot helper:** new `corruptiongod` scene.
 
-![BEAT 320 — CORRUPTION GOD](screenshots/101-corruption-god.png)
+![BEAT 320 — CORRUPTION GOD](screenshots/382-corruption-god.png)
 
 ## 2026-08-15 — SEED 303 · THE FIRST THING IN THIS FILE ANYBODY ELSE CAN GO CHECK (BEAT 319)
 
@@ -116,7 +116,7 @@ Based on Toby's 2026-08-15 lore, 9:48:45 AM, thirty-two minutes after YOUR MINE.
 - **Footers:** *HE OPENS A REAL GAME, CHECKS THE SAME SEED THREE TIMES, AND CATCHES THE EXPLANATION TALKING LIKE PERO* and **★ SEED 303 ★**.
 - **Cycle length** `LV_CYC` 6738 → 6760; **screenshot helper:** new `seed303` scene.
 
-![BEAT 319 — SEED 303](screenshots/100-seed-303.png)
+![BEAT 319 — SEED 303](screenshots/381-seed-303.png)
 
 ## 2026-08-15 — YOUR MINE · THE WINNER GETS THE PRIZE, AND THE PRIZE GETS THE WINNER (BEAT 318)
 
