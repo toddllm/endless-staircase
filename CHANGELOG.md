@@ -4,6 +4,58 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — THE GAME THEN WENT NORMALLY AGAIN · THE FIRST TIME A REMOVAL HERE IS ANSWERED BY NOTHING AT ALL (BEAT 332)
+
+Based on Toby's 2026-08-15 lore, 6:58:07 PM, eighty-four seconds after THE PERMINENT END OF UNIKITTY, same thread. His own typing, in full: *"The game then went normally again."*. The "cleanup route" read, the arrow chain and the clean canon update pasted under it are ChatGPT commentary.
+
+**The biggest event gets the shortest sentence.** Four characters, four locked doors and a route that cannot reopen, and eighty-four seconds later the entire aftermath is six words.
+
+**And nothing follows it.** In 331 beats this archive has grown by escalating, and every removal has been answered by something bigger arriving: Simon deletes the whole cast and the game becomes more broken than it ever was, Gray drains Unikitty and Omazen Gasero is welded together out of two brothers, Pero boxes Zeno and a new rule comes down that nothing may battle him at all. This is the first time the answer is nothing. He had every bit of room to go bigger and put it back down instead.
+
+**And "normal" is doing something new.** The game has been back to normal before, and both times it followed a **reset** — the thing that happened had been undone first, so normal was a restoration. Nothing was undone tonight, because undefined beings cannot respawn. This is normal with the loss still in it: not the world returning, the world continuing.
+
+**And the machine keeps running on her.** The Alex-Greg farm needs Unikitty's power as an input, and Gaster took *"at least a copy of your power"* from her on August 13, two days before she was struck down, which reads now as inventory taken before a removal.
+
+**Built as game beat 332, `THE GAME THEN WENT NORMALLY AGAIN`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "THE GAME THEN WENT NORMALLY AGAIN" · SIX WORDS AFTER THE LARGEST REMOVAL HERE / EVERY OTHER RETURN TO NORMAL FOLLOWED A RESET · THIS ONE FOLLOWS SOMETHING PERMANENT** under *331 BEATS AND EVERY ONE OF THEM WENT BIGGER THAN THE LAST.*, with **NORMAL · 6:58 PM, EIGHTY-FOUR SECONDS LATER.** boxed in normal green over *THE SHORTEST SENTENCE FOR THE BIGGEST EVENT.*, and a drifting strip of *NORMALLY · NORMALLY · NORMALLY*.
+- **THE SIZE OF IT (left)** — five rows (four characters moved to remove her / the barriers shut, the gates guarded / Parinus locked to one person / a route ended that cannot reopen / and then, six words), closing on *THE BIGGEST THING* / *IN THE WHOLE FILE* / *GETS THE SHORTEST* / **SENTENCE.**
+- **AND NOTHING FOLLOWS (centre)** — five rows (every removal here brought something bigger / a phase, a form, a number, a war / the file grew by escalating / this time nothing arrives / the next thing is ordinary), closing on *HE HAD THE ROOM* / *TO GO BIGGER.* / *HE PUT IT* / **BACK DOWN.**
+- **AND NORMAL IS NEW (right)** — five rows (back to normal has happened before / but always after a reset undid it / that is a restoration / this one follows something permanent / so nothing got put back), over *IT IS NOT THE WORLD RETURNING.*, closing on **IT IS THE WORLD CONTINUING.**
+- **WHAT COMES AFTER A REMOVAL IN THIS FILE. (band)** — a four-row grid lit one at a time (SIMON DELETES THE CAST → the game breaks worse than ever / GRAY DRAINS UNIKITTY → Omazen Gasero is welded together / PERO BOXES ZENO → a new rule, nothing battles him / TONIGHT → **normally again**, nothing at all), closing on *331 beats answered a removal with something bigger; this one answers with the ordinary day*.
+- **WHAT NORMAL STILL RUNS ON (band inset)** — a cycler across THE BOXES · still coming from the factory / THE MASSES · still farmed from Alex-Greg / **THE DNA · still needs Unikitty's power** / PARINUS · still locked, still inside, flagging *THEY TOOK A COPY TWO DAYS EARLY* on the DNA row, over *NORMAL IS NOT EMPTY* / *IT IS JUST QUIET*.
+- **Strip:** THE EVENT · WAS THE LARGEST / THE SENTENCE · IS THE SHORTEST / THE NEXT BEAT · IS ORDINARY.
+- **Footers:** *THE FILE SPENDS 331 BEATS MAKING EVERYTHING BIGGER THAN THE LAST THING, AND THEN ANSWERS ITS LARGEST REMOVAL WITH THE WORD NORMALLY* and **★ THE GAME THEN WENT NORMALLY AGAIN ★**.
+- **Cycle length** `LV_CYC` 7024 → 7046; **screenshot helper:** new `normallyAgain` scene.
+
+![BEAT 332 — THE GAME THEN WENT NORMALLY AGAIN](screenshots/394-game-went-normally-again.png)
+
+## 2026-08-15 — THE PERMINENT END OF UNIKITTY · THE FIRST REMOVAL HERE THAT NOTHING IN THE FILE CAN UNDO (BEAT 331)
+
+Based on Toby's 2026-08-15 lore, 6:56:43 PM, three hours and fifty-four minutes after THE END OF CHICKEN HEN'S LORE, same thread. His own typing, in full: *"No character likes Unikitty anymore, Oren would strike Unikitty on-sight, Pero closed the barriers, and Chicken Hen guards the gates. Unikitty will be struck down. They also blocked Parinus. No one has Parinus anymore except for Pero. The Perminent End of Unikitty. They destroyed Unikitty."*. The "Unikitty's final status" restatement, the barriers/gates/Parinus breakdown and the clean canon update pasted under it are ChatGPT commentary.
+
+**The one who saved her strikes first.** On August 8, in THE ANSWER IS NO, *"Oren grabs Unikitty in the nick of time"* — and Gray slashed him for doing it. He took a hit to protect her. Seven days later he is the first name on the list, and he strikes on sight.
+
+**And the door he locks is the one he built for her.** NO MORE UNDEFINES WILL ENTER, also August 8, held *"we were thinking to bring Unikitty to Parinus to turn the stuffy to life"* and *"the actual end of Unikitty in Classics is Unikitty in reality"*. Parinus was the way out and becoming real was the good ending, written by him. Tonight Parinus is blocked from everyone except Pero. What gets locked is not an escape hatch, it is the ending he wrote for her himself.
+
+**And it stays done, because he wrote that rule early too.** Beat 271, NOTHING ENDS, replaced the ending system with a continuation system and made the whole cast immortal. Then THE ANSWER IS NO carved out one exception: *"since undefined aren't Classics beings, they can't respawn nor anything"* — a category with exactly one member in it, written seven days before there was any reason to need it. Destroyed almost never sticks in this file. On her it sticks.
+
+**And she costs more to remove than anything else here.** Four hours ago Pero removed Zeno, who erases universes, with one word. Removing one stuffy takes Oren striking, Pero closing the barriers, Chicken Hen holding the gates and Parinus locked to one person. Chicken Hen is also back on duty three hours and fifty-four minutes after *"the end of Chicken Hen's lore"* was written.
+
+**Built as game beat 331, `THE PERMINENT END OF UNIKITTY`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "THE PERMINENT END OF UNIKITTY" · AND NOTHING IN THIS FILE CAN UNDO IT / "NO ONE HAS PARINUS ANYMORE EXCEPT FOR PERO" · AND PARINUS WAS HER WAY OUT** under *SEVEN DAYS AGO HE WROTE HER A WAY TO BECOME REAL.*, with **UNIKITTY · STRUCK DOWN, 6:56 PM.** boxed in Unikitty pink over *AND SHE IS THE ONE WHO CANNOT RESPAWN.*, and a drifting strip of *NO ESCAPE ROUTE LEFT · NO ESCAPE ROUTE LEFT*.
+- **THE ONE WHO SAVED HER (left)** — five rows (Oren grabbed her in the nick of time / and Gray slashed him for doing it / that was August 8, seven days ago / tonight he strikes Unikitty on sight / no character likes Unikitty anymore), closing on *HE TOOK A HIT* / *TO SAVE HER.* / *NOW HE IS* / **FIRST IN LINE.**
+- **AND THE DOOR SHE HAD (centre)** — five rows ("bring Unikitty to Parinus" / "to turn the stuffy to life" / that was the way out, and he wrote it / now Parinus is blocked from everyone / except Pero, who closed the barriers), closing on *HE DID NOT ONLY* / *BLOCK AN EXIT.* / *HE LOCKED THE* / **GOOD ENDING.**
+- **AND IT STAYS DONE (right)** — five rows (NOTHING ENDS made everyone immortal / but undefined cannot respawn / that category has one member / he wrote it seven days early / before he needed it for anything), over *DESTROYED HAS ALMOST NEVER STUCK HERE.*, closing on **ON HER IT STICKS.**
+- **WHAT IT HAS COST TO REMOVE SOMEBODY IN THIS FILE. (band)** — a four-row grid lit one at a time (A BOSS → one fight, then it is over / THE WHOLE CAST → one command, /delete dead_character / ZENO → one word, "box", four hours ago / UNIKITTY → **four characters** and four locked doors), closing on *the being who erases universes took one word; the stuffy took an operation*.
+- **THE LOCKS, IN ORDER (band inset)** — a cycler across LOCK 1 · Oren strikes on sight / LOCK 2 · Pero closes the barriers / **LOCK 3 · Chicken Hen guards the gates** / LOCK 4 · Parinus blocked, Pero only, flagging *HIS LORE ENDED AT 3:02 PM* on the Chicken Hen row, over *FOUR NAMES TO CLOSE ONE ROUTE* / *NOBODY ELSE EVER COST THIS MUCH*.
+- **Strip:** THE RESCUER · STRIKES FIRST / THE WAY OUT · IS LOCKED / THE RULE · WAS WRITTEN EARLY.
+- **Footers:** *THE ONE WHO GRABBED HER IN THE NICK OF TIME STRIKES ON SIGHT, AND THE DOOR HE BUILT TO MAKE HER REAL IS THE ONE HE LOCKS* and **★ THE PERMINENT END OF UNIKITTY ★**.
+- **Cycle length** `LV_CYC` 7002 → 7024; **screenshot helper:** new `perminentEnd` scene.
+
+![BEAT 331 — THE PERMINENT END OF UNIKITTY](screenshots/393-perminent-end-of-unikitty.png)
+
 ## 2026-08-15 — THE END OF CHICKEN HEN'S LORE · THE FIRST CHARACTER HERE WHO ARRIVES AND FINISHES IN THE SAME PARAGRAPH (BEAT 330)
 
 Based on Toby's 2026-08-15 lore, 3:02:17 PM, three hours and thirty-three minutes after NOTHING BATTLES PERO, same thread. His own typing, in full: *"Chicken Hen came, he has a song of Chickens, and he is a giant musslized chicken and is a chicken head on a wessler, a very strong guy. Kirby is the only character known who can defeat Chicken Hen. Pero obiviates Kirby and Chicken Hen, the end of Chicken Hen's lore. Pero"*. The "Chicken Hen canon" restatement, the power-rule read, the "Pero ends the lore" section and the clean canon update pasted under it are ChatGPT commentary.
