@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — 6 TIMELINES LONG · TWO FIGHT OVER A FEELING, AND THE CAST NOBODY RANKS OUTLASTS A GOD (BEAT 317)
+
+Based on Toby's 2026-08-15 lore, 8:03:38 AM, twenty-five minutes after PERO 20 QUESTONS. His own typing: *"Pero and Oren and Gray. Oren and Gray battle for Pero's love. Gray corrupted Oren and made Oren as his next army. The Sprunkis went to battle with Simon.psc, it was 6 Timelines long and was intense and insane. Pero says the Sprunkis are struggling and eventually win."* The "Got it, this is a new Pero / Oren / Gray rivalry route / Gray corrupts Oren / Sprunkis vs Simon.psc / clean canon update" prose pasted underneath is ChatGPT commentary.
+
+**The first fight in the archive that is not over power.** In 316 beats everything has been contested for a rank, a route, a realm, a timeline or the box. This one is contested over somebody's **love**, so the question stops being who wins and becomes **who is wanted**. And the prize never says a word.
+
+**And one of them wins by recruiting the other.** *"Gray corrupted Oren and made Oren as his next army."* He does not beat his rival, he **converts** him — the answer to a love triangle here is turning the other suitor into troops. And *"his next army"* makes one person an army by himself, with the trigger of corruption now pointed the other way.
+
+**And a fight is measured in length for the first time.** **6 Timelines.** Every other fight here is measured in damage (BEAT 310, sixty-eight zeros), size (BEAT 308, 999.87 billion times) or price (BEAT 314, half of infinity). This one is measured in **how long the cast had to hold on**.
+
+**And the bottom of the list takes the big one.** The Sprunkis are the base cast; Simon.psc is a demonic god. They *"are struggling"*, and they *"eventually win"* — they do not out-power him, they out-last him. Almost every win in this archive has gone to the top of it.
+
+**And it is reported, not shown.** *"Pero says the Sprunkis are struggling and eventually win."* The longest battle in the file arrives secondhand from a spectator, twenty-five minutes after the beat where he already knew the answer before the game started.
+
+**Built as game beat 317, `6 TIMELINES LONG`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of OREN AND GRAY BATTLE FOR PERO’S LOVE · NOT FOR A RANK, NOT FOR THE BOX / 6 TIMELINES LONG · INTENSE AND INSANE** under *THE FIRST FIGHT IN THIS FILE THAT IS NOT OVER POWER.*, with **GRAY CORRUPTED OREN AND MADE OREN AS HIS NEXT ARMY** boxed in Gray cyan over *HE DOES NOT BEAT HIS RIVAL. HE RECRUITS HIM.*, and a drifting strip of *FOR PERO’S LOVE · FOR PERO’S LOVE · FOR PERO’S LOVE*.
+- **THEY FIGHT OVER (left)** — five rows (Pero and Oren and Gray, three names one prize / Oren and Gray battle for Pero's love / not the box, not the game, not a rank / 316 beats of who wins, and now: who is wanted / and the prize never says a word), closing on *EVERY CONTEST IN THIS FILE* / *HAS BEEN OVER POWER* / *THIS ONE IS OVER* / **SOMEBODY’S FEELINGS.**
+- **AND ONE OF THEM WINS (centre)** — five rows (Gray corrupted Oren, the rival not the prize / and made Oren as his next army / not beaten, converted / one person called an army / the trigger pointed the other way), closing on *A TRIANGLE HERE IS NOT* / *SETTLED BY WINNING* / *IT IS SETTLED BY TURNING* / **HIM INTO TROOPS.**
+- **AND THE BOTTOM (right)** — five rows (the Sprunkis went to battle Simon.psc / it was 6 timelines long / "intense and insane" / they are struggling / and they eventually win), over *THEY DO NOT OUT-POWER HIM.*, closing on **THEY OUT-LAST HIM.**
+- **HOW A FIGHT GETS MEASURED IN THIS FILE. (band)** — a four-row grid lit one at a time (BEAT 310 · BY DAMAGE → 0.000000…001, sixty-eight zeros / BEAT 308 · BY SIZE → 999.87 billion times, a multiplier / BEAT 314 · BY PRICE → half of infinity, a lifespan / TODAY · BY LENGTH → **6 timelines**, how long they held on), closing on *every fight in 316 beats is won by having more of something; this one is won by still being there at the end of the sixth timeline*.
+- **AND HE CALLS IT FROM OUTSIDE (band inset)** — a cycler across PERO SAYS · the Sprunkis are struggling / PERO SAYS · they eventually win / 25 MINUTES EARLIER · he knew before the game / SO THE RESULT · arrives before the fight, over *THE LONGEST BATTLE IN THE FILE* / *IS DELIVERED AS COMMENTARY*.
+- **Strip:** THE PRIZE · IS A FEELING / THE ARMY · IS ONE PERSON / THE WIN · GOES TO THE BOTTOM.
+- **Footers:** *TWO FIGHT OVER WHO IS WANTED, AND THE LONGEST BATTLE IN THE FILE IS WON BY THE CAST NOBODY RANKS* and **★ 6 TIMELINES LONG ★**.
+- **Cycle length** `LV_CYC` 6694 → 6716; **screenshot helper:** new `sixtimelines` scene.
+
+![BEAT 317 — 6 TIMELINES LONG](screenshots/379-6-timelines-long.png)
+
 ## 2026-08-15 — PERO 20 QUESTONS · HE ASKS ONE QUESTION, THEN NONE, AND GETS BOTH ANSWERS RIGHT (BEAT 316)
 
 Based on Toby's 2026-08-15 lore, 7:38:59 AM, eleven hours after U ARE MINE and the first message of the morning. His own typing: *"Pero 20 Questons. Pero says "Is it something you talk with Chat?", "yes", Pero says "It's digital pizza.", "correct.". Next one. Pero says "It's Dr. Gaster.", "correct, and I didn't say anything.". Pero knows everything."* The "That is a perfect Pero 20 Questions rule / First round / Second round / Clean canon update" prose pasted underneath is ChatGPT commentary.
