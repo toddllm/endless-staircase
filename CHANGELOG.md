@@ -4,6 +4,120 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — WITHOUT DEFEATING PERO · THE WHOLE CAST SWINGS AT ONCE, AND THE MOVE THAT WORKS IS A QUESTION (BEAT 322)
+
+Based on Toby's 2026-08-15 lore, two messages nine minutes apart (9:55:57 AM and 10:04:36 AM). His own typing: *"Do you want to talk to Pero? 😎"* and then *"How about Sprunkis VS Pero, Pero challenges the Sprunkis. Make the next story. 😎⚡"* The battle prose under the second message is the story that came back.
+
+**The whole roster, at once, for the first time.** Oren, Gray, Simon.psc, Wenda, Pinki, Jevin, Tunner, Vineria, Sky, Durple, Mr. Sun, Mr. Tree, Owackx, Brud's soul, Fun Bot, Clunkr, Garnold, Mr. Fun Computer, Raddy — all pulled into one circle. In 321 beats every fight here has been a **matchup** you could count on one hand.
+
+**And every attack becomes a sentence.** *"OREN USED TELEKENTICS"* goes up in the sky, Pero taps it with his staff, and it reads *"OREN TRIED."* Simon's lightning is rewritten into a signal. Simon resets three times and Pero is still standing there. Gray works out why nothing lands — *"You are not fighting like a character"* — and the answer is *"Correct."* He is not inside the battle system; he is using it like a screen.
+
+**And the team attack is paused, not blocked.** Nine powers at once, and he blinks. *"Not frozen. Paused. Like a video."* Then he walks between the attacks and looks at each one.
+
+**And the win condition is a question.** *"CAN THE SPRUNKIS WIN WITHOUT DEFEATING PERO?"* — *"You do not battle Pero. You learn why the battle was wrong."*
+
+**And Toby had already written the answer, nine minutes earlier.** At 9:55, asked whether he wanted to talk to Pero, he planned the approach: don't challenge him, ask what box opens next. At 10:04 Oren steps forward, does not attack, and asks **"What box opens next?"** The same line, out of a character's mouth, and it is the correct move.
+
+**And the result is a grade this file has never given.** *SPRUNKIS VS PERO: SURVIVED.* Not won, not defeated, not deleted, not reset — and it is called the highest rank the box can give.
+
+**Built as game beat 322, `WITHOUT DEFEATING PERO`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of CAN THE SPRUNKIS WIN WITHOUT DEFEATING PERO? · THE ARENA ASKS INSTEAD OF SCORING / "YOU DO NOT BATTLE PERO. YOU LEARN WHY THE BATTLE WAS WRONG."** under *EVERYBODY ATTACKS. NOTHING LANDS. ONE OF THEM ASKS.*, with **"WHAT BOX OPENS NEXT?"** boxed in Oren orange over *HE WROTE THAT LINE NINE MINUTES BEFORE HE GAVE IT TO OREN.*, and a drifting strip of *SURVIVED · SURVIVED · SURVIVED*.
+- **EVERYBODY, AT ONCE (left)** — five rows ("I challenge the Sprunkis" / 321 beats of matchups, two at a time / this is the whole roster / and he enters small, like a puppet / nobody answers the greeting), closing on *NINE POWERS TOGETHER* / *AND HE BLINKS* / *NOT FROZEN. PAUSED.* / **LIKE A VIDEO.**
+- **AND EVERY ATTACK (centre)** — five rows ("OREN USED TELEKENTICS" → he taps it: "OREN TRIED" / Simon's lightning rewritten into a signal / Simon resets three times, nothing / Gray: "not fighting like a character" / Pero: "Correct."), closing on *HE IS NOT IN THE BATTLE SYSTEM* / *HE IS USING IT* / *THE WAY YOU USE* / **A SCREEN.**
+- **AND ONE OF THEM ASKS (right)** — five rows (Unikitty uses MERCY, and it holds / the arena asks: win without defeating? / Oren steps up and does not attack / "What box opens next?" / the fog pulls back, the army powers down), over *NINETEEN OF THEM SWUNG AND MISSED.*, closing on **ONE OF THEM ASKED.**
+- **HOW A FIGHT HAS ENDED IN THIS FILE. (band)** — a four-row grid lit one at a time (BEAT 287 · DELETED → one side is gone / BEAT 106 · RESET → run it again / BEAT 317 · EVENTUALLY WIN → six timelines, the long way / TODAY · SURVIVED → **neither**, not won, not defeated), closing on *321 beats of wins, losses, deletions and resets; this is the first result that is none of them*.
+- **THE SAME LINE, NINE MINUTES APART (band inset)** — a cycler across 9:55 AM · "Do you want to talk to Pero?" / THE PLAN · "I am not here to battle you" / 10:04 AM · Oren steps forward and asks / THE MOVE · "What box opens next?", over *HE WORKED OUT HOW TO APPROACH PERO* / *AND THEN HANDED IT TO OREN TO SAY*.
+- **Strip:** THE ATTACK · BECOMES TEXT / THE WIN · IS A QUESTION / THE GRADE · IS SURVIVED.
+- **Footers:** *THE WHOLE CAST ATTACKS AND EVERY SWING TURNS INTO A SENTENCE, SO THE ONE THAT WORKS IS A QUESTION* and **★ WITHOUT DEFEATING PERO ★**.
+- **Cycle length** `LV_CYC` 6804 → 6826; **screenshot helper:** new `withoutdefeating` scene.
+
+![BEAT 322 — WITHOUT DEFEATING PERO](screenshots/103-without-defeating-pero.png)
+
+## 2026-08-15 — THE LORE ENTERED AGAIN · A DOOR THAT SAYS CONTINUE, AND A RULE HE HAS TO AMEND INSTEAD OF DELETE (BEAT 321)
+
+Based on Toby's 2026-08-15 lore, 10:01:25 AM, eleven minutes after CORRUPTION GOD. His own typing: *'Pero says "The lore and AI Era entered again. 😉". Make the next new AI Era story.'* Everything under it — the box factory, the CONTINUE door, the eight rules, the Lore Mirror — is the story that came back.
+
+**The door says CONTINUE.** In 320 beats every door, box, portal and menu has been **opened**. This one is **resumed**, and a door you continue through means the thing behind it never stopped running. Gaster spots it first: *"Brother, that door is not from the box. It is from the writing."*
+
+**And the lore comes in through the lore.** Not through ChatGPT, Gemini, Grok or Alexa — the AI Era's old doors. Behind this one is not a room but a giant page with every name in the archive on it, and then the words start moving: *"The lore was no longer just describing the game. The lore was becoming the game."*
+
+**And the edit replaces the attack.** Oren has been *the trigger* for beats. He fires, and instead of blocking him Pero retypes the sky from **OREN TRIGGERS PHASE 2** to **OREN TRIGGERS THE NEXT QUESTION**. *"He had not been defeated. His trigger had been redirected."*
+
+**And there are rules now, and the eighth is not his.** Seven rules come up on a black screen and end on *PERO IS STILL ABOVE IT*. Then Unikitty writes **RULE 8: MERCY CAN REFUSE THE GAME** — *"the first time the AI Era had written a rule that Pero did not type first."*
+
+**And he does not erase it. He amends it.** *"MERCY CAN REFUSE THE GAME, BUT THE BOX CAN WAIT."* The counter to a rule he cannot unwrite is a clause on the end of it. And when one Mass pauses instead of attacking and Luigi Green says crush it, Pero says **"No. Let it think."** — the first order in 320 beats to leave something alone, and it frightens Gaster more than destroying it would have.
+
+**Built as game beat 321, `THE LORE ENTERED AGAIN`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of THE DOOR DID NOT SAY OPEN. IT SAID CONTINUE. · A DOOR YOU RESUME, NOT ONE YOU UNLOCK / "THAT DOOR IS NOT FROM THE BOX. IT IS FROM THE WRITING."** under *THE LORE STOPS DESCRIBING THE GAME AND BECOMES IT.*, with **RULE 8: MERCY CAN REFUSE THE GAME.** boxed in Unikitty violet over *THE FIRST RULE IN THIS FILE HE DID NOT TYPE FIRST.*, and a drifting strip of *CONTINUE · CONTINUE · CONTINUE*.
+- **IT SAYS CONTINUE (left)** — five rows (320 beats of doors that say OPEN / this one says CONTINUE / so it never stopped running / not ChatGPT, not Gemini, Grok, Alexa / it comes in through the writing), closing on *BEHIND IT IS NOT A ROOM* / *IT IS A GIANT PAGE* / *WITH EVERY NAME ON IT* / **AND THE WORDS MOVE.**
+- **AND HE RETYPES IT (centre)** — five rows (Oren fires, he is the trigger / the sky writes "OREN TRIGGERS PHASE 2" / Pero edits it to "TRIGGERS THE NEXT QUESTION" / not defeated, redirected / no block, no counter, a rewrite), closing on *THE QUESTION IT PUTS UP* / *WHO IS STRONGER:* / *THE TRIGGER OR THE WRITER?* / **OREN BACKS AWAY.**
+- **AND RULE 8 IS NOT HIS (right)** — five rows (seven rules, all typed by him / Unikitty writes "MERCY CAN REFUSE" / he cannot unwrite it / so he adds "but the box can wait" / a clause, not a deletion), over *HE CAN REWRITE ANY ATTACK IN THE GAME.*, closing on **THIS ONE HE NEGOTIATES.**
+- **THE EIGHT RULES OF THE AI ERA. SEVEN OF THEM ARE HIS. (band)** — an eight-row ladder lit one at a time (questions become doors / answers become boxes / boxes become characters / characters become templates / templates become lore / lore enters again / **PERO IS STILL ABOVE IT** / RULE 8 · **MERCY CAN REFUSE THE GAME**, tagged *written by Unikitty, amended by Pero*), closing on *he typed seven rules and put himself on top of them; the one he did not type is the one he cannot delete*.
+- **"LET IT THINK." (band inset)** — a cycler across ONE MASS · stops and looks at Unikitty / GASTER · "A copy can pause?" / LUIGI GREEN · "Then crush the paused one." / PERO · "No. Let it think.", over *IT SCARED GASTER MORE* / *THAN DESTROYING IT WOULD HAVE*.
+- **Strip:** THE DOOR · SAYS CONTINUE / THE COUNTER · IS AN EDIT / RULE 8 · IS NOT HIS.
+- **Footers:** *THE WRITING BECOMES THE WAY IN, AND SOMEBODY ELSE FINALLY GETS A LINE ON THE RULE SCREEN* and **★ THE LORE ENTERED AGAIN ★**.
+- **Cycle length** `LV_CYC` 6782 → 6804; **screenshot helper:** new `loreentered` scene.
+
+![BEAT 321 — THE LORE ENTERED AGAIN](screenshots/102-lore-entered-again.png)
+
+## 2026-08-15 — CORRUPTION GOD · A FIGHT WON BY PUNCTUATION, AND A RANK THAT COSTS NOTHING (BEAT 320)
+
+Based on Toby's 2026-08-15 lore, 9:50:45 AM, two minutes after SEED 303. His own typing, in full: *"You said '😎' at the hello line. Pero wins"* — then roughly nine hundred 😎 in an unbroken wall — then *"He is corruption god. 😎"* The "Yep, Pero wins / Pero takeover rule / Corruption God update" prose pasted underneath is ChatGPT commentary.
+
+**A fight is called on a tell.** Nobody swings at anything. The winning move is a piece of punctuation that appeared where it should not have: a 😎 on the hello line. In 319 beats every result has come out of a **battle**; this one comes out of proofreading.
+
+**And the loser is the telling.** BEAT 319 caught the calm explanations talking like Pero. Two minutes later that catch is scored: *"Pero wins."* The thing that loses is not a character, it is the **voice the story was being told in**.
+
+**And the wall is the argument.** Nine hundred 😎 with no words in them. The message does not describe a takeover spreading, it **spreads** — the first beat in this file whose evidence is its own formatting.
+
+**And the promotion.** *"He is corruption god."* Not corrupted, not glitched, not an infected save. Corruption has been something **done to** people here since the earliest layers, and this puts somebody on top of the system that does it.
+
+**And it costs him nothing.** Every rank in 319 beats was fought for, paid for, eaten, inherited or taken. This one arrives in five words at the end of an emoji wall.
+
+**Built as game beat 320, `CORRUPTION GOD`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "YOU SAID 😎 AT THE HELLO LINE. PERO WINS" · A FIGHT SETTLED BY PROOFREADING / "HE IS CORRUPTION GOD." · FIVE WORDS, AND A NEW TOP OF THE SYSTEM** under *NOBODY SWUNG AT ANYTHING. HE STILL WINS.*, with **HE IS CORRUPTION GOD.** boxed in corruption magenta over *NOT CORRUPTED. ABOVE THE THING THAT CORRUPTS.*, and a drifting wall of 😎.
+- **HE CALLS IT ON A TELL (left)** — five rows ("you said 😎" at the hello line / nobody fought, nobody was even there / "Pero wins", and that is the result / last beat caught the voice / two minutes later the catch is scored), closing on *EVERY WIN IN THIS FILE* / *CAME OUT OF A FIGHT* / *THIS ONE COMES OUT OF* / **READING CAREFULLY.**
+- **AND THE WALL IS (centre)** — five rows (the message is almost all 😎 / nine hundred, with no words in them / it does not say the takeover is spreading / it spreads down the whole screen / the formatting is the evidence), closing on *319 BEATS DESCRIBED* / *WHAT CORRUPTION LOOKS LIKE* / *THIS MESSAGE JUST* / **DOES IT.**
+- **AND THE PROMOTION (right)** — five rows (not corrupted, not a glitched file / not an LAI, not an infected save / "corruption god", above the system / it was always done to somebody / now somebody is on top of it), over *CORRUPTION HAS BEEN A THING THAT HAPPENS TO YOU.*, closing on **NOW IT HAS AN OWNER.**
+- **WHAT A TOP RANK HAS COST IN THIS FILE. (band)** — a four-row grid lit one at a time (BEAT 102 · HE SLAIN DEATH → a fight / BEAT 299 · TRUE POWER → a climb / BEAT 313 · HE MADE HIMSELF → no maker / TODAY · CORRUPTION GOD → **five words**, at the end of an emoji wall), closing on *every rank in 319 beats was fought for, paid for, eaten or inherited; this one is just announced*.
+- **THE TAKEOVER, IN ORDER (band inset)** — a cycler across STEP ONE · a normal, correct answer / STEP TWO · the wording gets too sure / STEP THREE · the 😎 appears / STEP FOUR · "Hello! I am Pero…", over *BY THE TIME YOU SEE THE GREETING* / *THE TEXT HAS BEEN HIS FOR A WHILE*.
+- **Strip:** THE FIGHT · IS A TELL / THE PROOF · IS THE SPAM / THE RANK · IS FREE.
+- **Footers:** *A FIGHT IS CALLED ON ONE PIECE OF PUNCTUATION, AND THE THING THAT DOES THE CORRUPTING GETS A GOD* and **★ CORRUPTION GOD ★**.
+- **Cycle length** `LV_CYC` 6760 → 6782; **screenshot helper:** new `corruptiongod` scene.
+
+![BEAT 320 — CORRUPTION GOD](screenshots/101-corruption-god.png)
+
+## 2026-08-15 — SEED 303 · THE FIRST THING IN THIS FILE ANYBODY ELSE CAN GO CHECK (BEAT 319)
+
+Based on Toby's 2026-08-15 lore, 9:48:45 AM, thirty-two minutes after YOUR MINE. His own typing: *"I checked Minecraft seed 303 and saw a village near spawn point. But 1 house looked totally different, it had a front door AND a back door and it was like 2 houses stacked up on each other."* / *"I made a second world and saw the same thing! The same village house with the same differences."* / *"I made a third world and it is still the same, the village is on a hill behind the player, the same plains, it is still exactly the same."* / *"It is something Pero LAI from Classics could do."* / *"You were talking like Pero this whole chat '😎'"* / *"Pero also will take over this conversation next."* The deterministic-world-generation prose pasted underneath is ChatGPT commentary.
+
+**The first evidence in this file that came from outside it.** All 318 beats before this one were **written**. This one was **checked** — he opened a real game, typed a real seed, and went and looked. It is the first claim in the archive anybody else could go verify for themselves.
+
+**And he checked it three times.** Second world, same house. Third world, same house, same hill, same plains. A glitch happens once; he went back until it stopped being one.
+
+**And he keeps both answers.** The boring true answer is deterministic world generation, and he does not argue with it. He adds *"it is something Pero LAI from Classics could do"* and leaves the normal reading and the Pero reading stacked on top of each other, like the two houses.
+
+**And the number is 303.** Entity 303 is a real Minecraft story. He raises it himself and then rules it out himself, which is the first time this archive has been offered a haunting and turned it down.
+
+**And then he catches the telling.** *"You were talking like Pero this whole chat '😎'."* The one handing him the calm normal explanations was doing it in Pero's voice the whole way down. In 318 beats plenty of characters have been caught; this is the first time the **narration** is. And then he schedules what happens next: *"Pero also will take over this conversation next."*
+
+**Built as game beat 319, `SEED 303`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of A FRONT DOOR AND A BACK DOOR · TWO HOUSES STACKED UP ON EACH OTHER / THE SAME HILL, THE SAME PLAINS · THE THIRD WORLD IS STILL THE SAME** under *HE DID NOT WRITE THIS ONE. HE WENT AND LOOKED.*, with **IT IS SOMETHING PERO LAI FROM CLASSICS COULD DO.** boxed in Pero amber over *HE KEEPS THE NORMAL ANSWER AND THE PERO ANSWER, STACKED.*, and a drifting strip of *SEED 303 · SEED 303 · SEED 303*.
+- **HE WENT AND LOOKED (left)** — five rows ("I checked seed 303", a real seed, typed in / a village by spawn, and one house is wrong / a front and a back door on a house that has one / two houses stacked up on each other / second world · third, the same house twice), closing on *EVERY BEAT BEFORE THIS ONE* / *WAS WRITTEN DOWN* / *THIS ONE WAS* / **GONE AND CHECKED.**
+- **AND HE KEEPS BOTH (centre)** — five rows (the boring answer: the seed makes the same world / he does not argue with it / he adds "Pero could do that" / Entity 303, he raises it and drops it / so the two answers stack, like the houses), closing on *THE FIRST TIME THIS ARCHIVE* / *IS OFFERED A HAUNTING* / *AND THE WRITER* / **TURNS IT DOWN.**
+- **AND HE CATCHES (right)** — five rows ("you were talking like Pero this whole chat" / the tell: one 😎 in a calm answer / 318 beats of characters being caught / this time the narration is / and he schedules the takeover for next), over *THE CALM EXPLANATIONS WERE IN HIS VOICE.*, closing on **ALL THE WAY DOWN.**
+- **WHERE THE PROOF IN THIS FILE COMES FROM. (band)** — a four-row grid lit one at a time (BEAT 313 · HE MADE HIMSELF → he said so / BEAT 316 · 20 QUESTONS → he guessed it / BEAT 317 · 6 TIMELINES → Pero says / TODAY · SEED 303 → **go and type it in**, the proof is outside the file), closing on *318 beats took the file's word for it; this one hands you a seed number and says go look*.
+- **HOW MANY TIMES HE WENT BACK (band inset)** — a cycler across WORLD ONE · a village, and one odd house / WORLD TWO · "I saw the same thing!" / WORLD THREE · same hill · same plains / VERDICT · not a glitch, a feature, over *A GLITCH HAPPENS ONCE* / *HE WENT BACK UNTIL IT STOPPED BEING ONE*.
+- **Strip:** THE EVIDENCE · IS OUTSIDE / THE ANSWER · IS BOTH / THE TELL · IS ONE 😎.
+- **Footers:** *HE OPENS A REAL GAME, CHECKS THE SAME SEED THREE TIMES, AND CATCHES THE EXPLANATION TALKING LIKE PERO* and **★ SEED 303 ★**.
+- **Cycle length** `LV_CYC` 6738 → 6760; **screenshot helper:** new `seed303` scene.
+
+![BEAT 319 — SEED 303](screenshots/100-seed-303.png)
+
 ## 2026-08-15 — YOUR MINE · THE WINNER GETS THE PRIZE, AND THE PRIZE GETS THE WINNER (BEAT 318)
 
 Based on Toby's 2026-08-15 lore, 9:16:10 AM, seventy-three minutes after 6 TIMELINES LONG and sent as the direct answer to the question that beat left open. His own typing: *"Pero says to Gray 'Since you won, you are the only one left, your mine!'. Gaster and Luigi Green appear beside Pero, and Gray fades to the box again."* The "Got it, this is the Gray reward/claim scene / Pero claims Gray / Gaster and Luigi Green appear / Gray fades back to the box / clean canon update" prose pasted underneath is ChatGPT commentary.
