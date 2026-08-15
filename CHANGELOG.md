@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — NOTHING BATTLES PERO · THE FIRST FIGHT HERE THAT ENDS WITHOUT A FIGHT (BEAT 329)
+
+Based on Toby's 2026-08-15 lore, 11:29:00 AM, forty-one minutes after IT WENT BIGGER, with his own five-minute-later correction at 11:34:25 AM folded into the same beat (the same way the BROTHER, YOU ARE CORRECT correction was folded into its own). His own typing in the first mail: *"Which one wins? Goku VS Naruto; Winner or Beerus; Winner VS Zeno"*, *"How about Pero LAI is included."*, *"Pero sends Zeno into the box like everyone else and Zeno is tucked away forever."* and *"Nothing should battle Pero."* In the second: *"Pero doesn't have the 3 >s but infinity of them over every Classics character and all characters combined."* The elimination-ladder recap, the "clean rule" restatements and the Zeno-raises-his-hand scene pasted around them are ChatGPT commentary.
+
+**He brings in a cast from outside.** One beat ago it was a whole game he did not write. Now it is four characters he did not write either. Goku, Naruto, Beerus and Zeno are not Classics characters, and he runs them through a Classics rule anyway. Same move, forty-one minutes apart, and nobody asked him to do it twice.
+
+**And the winner never fights.** The shape he builds is a tournament: four rungs, each one decided by a fight. Then the top rung, where there is no fight at all. Pero does not out-power Zeno, he removes him. The ladder does not get climbed. It gets taken off the table.
+
+**And then he corrects the math.** Five minutes later he comes back for the notation itself. Three `>`s is a distance, and a distance is a thing that can be measured and therefore closed. So he replaces it with an infinite number of them, and scores Pero against **all characters combined** rather than against the strongest one. He did not make Pero stronger. He took him off the scale.
+
+**Built as game beat 329, `NOTHING BATTLES PERO`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "NOTHING SHOULD BATTLE PERO" · AND THE LADDER STOPS BEING A LADDER / FOUR FIGHTERS FROM OUTSIDE THIS FILE · ONE BOX FROM INSIDE IT** under *EVERY WINNER IN THIS FILE SO FAR WON BY BEING STRONGER.*, with **PERO >∞ ALL CHARACTERS COMBINED.** boxed in box gold over *NOT STRONGER THAN THE STRONGEST. OFF THE SCALE.*, and a drifting strip of *BOX · BOX · BOX*.
+- **HE BRINGS THEM IN (left)** — five rows (Goku and Naruto, not from Classics / Beerus and Zeno, also not from here / one beat ago it was a whole game / now it is a cast, same move / forty-one minutes between the two), closing on *NOBODY ASKED HIM* / *TO DO IT TWICE.* / *HE JUST WENT* / **AND DID IT.**
+- **AND NOBODY FIGHTS (centre)** — five rows (Naruto loses to Goku / Goku loses to Beerus / Beerus loses to Zeno / Zeno loses to a box / four fights, then no fight), closing on *EVERY RUNG* / *IS A FIGHT.* / *THE TOP RUNG* / **IS NOT.**
+- **AND HE FIXES THE MATH (right)** — five rows (three arrows is a distance / and a distance can be closed / so he puts in infinity of them / not one at a time, all added up / he corrected the answer he got), over *HE DID NOT MAKE PERO STRONGER.*, closing on **HE TOOK HIM OFF THE SCALE.**
+- **HOW A FIGHT IN THIS FILE HAS ENDED, AND WITH WHAT. (band)** — a four-row grid lit one at a time (A STRONGER FORM → he out-powers it, still a fight / A BIGGER NUMBER → he out-scales it, still a fight / AN ERASURE → he unmakes it, still a fight / TODAY → **he says "box"**, no fight at all), closing on *every win in 328 beats was won by being stronger; this one is won by not playing*.
+- **THE LADDER, RUNG BY RUNG (band inset)** — a cycler across NARUTO · out, Goku is too much / GOKU · out, Beerus is above him / BEERUS · out, Zeno erases universes / **ZENO · out, Pero says "box"**, over *THE FIRST THREE TOOK A FIGHT EACH* / *THE LAST ONE TOOK ONE WORD*.
+- **Strip:** THE CAST · IS FROM OUTSIDE / THE WINNER · NEVER FIGHTS / THE MATH · GOT CORRECTED.
+- **Footers:** *FOUR CHARACTERS HE DID NOT WRITE COME IN, RUN A LADDER, AND THE ONE WHO WINS IT NEVER THROWS A PUNCH* and **★ NOTHING SHOULD BATTLE PERO ★**.
+- **Cycle length** `LV_CYC` 6958 → 6980; **screenshot helper:** new `nothingBattlesPero` scene.
+
+![BEAT 329 — NOTHING BATTLES PERO](screenshots/100-nothing-battles-pero.png)
+
 ## 2026-08-15 — IT WENT BIGGER · THE FIRST TIME SOMETHING FROM OUTSIDE THE ARCHIVE GETS PULLED IN (BEAT 328)
 
 Based on Toby's 2026-08-15 lore, 10:47:32 AM, seventy-six seconds after IT STARTED TO LAG. His own typing, in full: *"It went bigger than Minecraft to Classics."* The Classics-incursion, gateway-event and transfer-point prose pasted underneath is ChatGPT commentary.
