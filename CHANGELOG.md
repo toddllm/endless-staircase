@@ -4,6 +4,56 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — WHAT HAPPENS NEXT · THE FIRST THING IN THIS FILE THAT COULD TURN OUT TO BE WRONG (BEAT 326)
+
+Based on Toby's 2026-08-15 lore, 10:37:48 AM, forty-nine seconds after RULING IT OUT. His own typing, in full: *"What do you think will happen next?"* The forecast pasted underneath — the 303 world reacting back, the cat, the spreading snow, the box inside a box, 404 or 12 12 12 — is ChatGPT commentary.
+
+**He asks instead of tells.** In 325 beats he has always been the one bringing the material: a new form, a number, a fight, a seed, a world he went and checked three times. Six words, and he hands the next move over instead of making it.
+
+**And a guess can be wrong.** Every beat in this file is a report of something that already happened, and a report cannot miss. A forecast can. This is the first statement in the archive that the world still gets to answer.
+
+**And the forecast is a checklist, not a story.** The cat keeps turning up near the cross, the cross still refuses to change, the snow patch spreads like the biome is being edited, the stacked house becomes a box inside a box, and the next number to show is 404 or 12 12 12. Five things he can go and look at, which is the same method he has been running since the three worlds.
+
+**And the prediction is that nothing arrives.** *"Pero does not appear fully. He lets the world act like him first."* Not a boss, not an entrance. The world doing the impression.
+
+**Built as game beat 326, `WHAT HAPPENS NEXT`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "WHAT DO YOU THINK WILL HAPPEN NEXT?" · SIX WORDS, AND HE HANDS THE MOVE OVER / A REPORT CANNOT BE WRONG · A FORECAST CAN** under *325 BEATS OF BRINGING THE MATERIAL. TODAY HE ASKS FOR IT.*, with **PERO DOES NOT APPEAR. THE WORLD ACTS LIKE HIM FIRST.** boxed in forecast cyan over *A PREDICTION THAT NOTHING TURNS UP, AND EVERYTHING LEANS.*, and a drifting strip of *NEXT · NEXT · NEXT*.
+- **HE ASKS INSTEAD (left)** — five rows (325 beats, he brings the material / a form, a number, a fight, a seed / today, six words / "will happen next?", and then he waits / he hands over the next move), closing on *HE HAS ASKED FOR* / *STORIES BEFORE.* / *THIS IS THE FIRST TIME* / **HE ASKS FOR A GUESS.**
+- **AND A GUESS CAN MISS (centre)** — five rows (every beat so far already happened / a report is safe, it cannot be wrong / a forecast is not / so it can be checked later / he just made the file testable), closing on *325 BEATS OF THINGS* / *THAT ALREADY HAPPENED.* / *THIS IS THE FIRST ONE* / **THAT HAS NOT YET.**
+- **THE FORECAST (right)** — five rows (the cat keeps turning up / the cross still will not change / the snow spreads on the plains / the house, a box inside a box / the number, 404 or 12 12 12), over *NOT ONE OF THESE IS AN ARRIVAL.*, closing on **ALL FIVE ARE THINGS LEANING.**
+- **WHAT HE HAS BROUGHT TO THIS FILE EACH TIME. (band)** — a four-row grid lit one at a time (A REPORT → this is what happened / A STORY → make the next one / A QUESTION → what does this mean / TODAY → **what happens next**, a claim about later), closing on *a report cannot be wrong; a forecast can; that is the whole reason it is worth something*.
+- **THE FIVE THINGS TO CHECK LATER (band inset)** — a cycler across THE CAT · is it near the cross again / THE SNOW · is the patch any bigger / THE HOUSE · is it a box inside a box / THE NUMBER · does 404 or 12 12 12 show, over *HE ALREADY KNOWS HOW TO CHECK A WORLD* / *NOW HE HAS A LIST OF WHAT TO CHECK FOR*.
+- **Strip:** THE ASK · POINTS FORWARD / THE CLAIM · CAN BE CHECKED / THE NUMBER · 404 OR 12 12 12.
+- **Footers:** *EVERY BEAT UNTIL NOW WAS SOMETHING THAT ALREADY HAPPENED, AND THIS IS THE FIRST ONE THE WORLD STILL GETS TO ANSWER* and **★ WHAT DO YOU THINK WILL HAPPEN NEXT? ★**.
+- **Cycle length** `LV_CYC` 6892 → 6914; **screenshot helper:** new `whatHappensNext` scene.
+
+![BEAT 326 — WHAT HAPPENS NEXT](screenshots/388-what-happens-next.png)
+
+## 2026-08-15 — RULING IT OUT · THE FIRST ANSWER IN THIS FILE MADE BY TAKING THINGS AWAY (BEAT 325)
+
+Based on Toby's 2026-08-15 lore, 10:36:59 AM, nine minutes after PERO-FLASH STANDS HERE. His own typing, in full: *"My character also made the difficulty hard and went to survival mode. The game was Java. The cross is not that close to the lava. The area around the cross is flat. My character then put the skeleton's arrows in the lava, and was blown up by an unseen creeper in the daytime. My character found a suspicious cat. And the most recent time, the 2 house stack looked diagonal."* The "normal Minecraft side / Classics interpretation / clean canon update" prose pasted underneath is ChatGPT commentary.
+
+**He answers by taking explanations away.** The last beat handed him four ordinary reasons the armor stand could have vanished. He goes back to the world and knocks them down one at a time: **Java**, so not the Bedrock glitch. **The cross is not that close to the lava**, so nothing burned. **The area is flat**, so nothing rolled into a hole. **Hard difficulty, survival mode**, so no creative-mode weirdness. In 324 beats every answer here has been made by *adding* something — a stronger form, a bigger number, the next story. This is the first one made by subtracting.
+
+**And he keeps the one that survives.** The unseen creeper in broad daylight is the easiest thing in the message to call supernatural, and he does not. Creepers do not burn in sunlight, so it is allowed, and he lets it stand. That is the first piece of evidence the writer has ever handed back.
+
+**And the stack is tilting.** Three things he was not looking for: the skeleton's arrows go into the lava, a suspicious cat turns up, and *"the most recent time, the 2 house stack looked diagonal."* The stack was the proof in BEAT 319 that the world was real. Now the proof is leaning, and nobody moved it.
+
+**Built as game beat 325, `RULING IT OUT`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "THE CROSS IS NOT THAT CLOSE TO THE LAVA" · SO IT DID NOT BURN / "THE AREA AROUND THE CROSS IS FLAT" · SO IT DID NOT ROLL AWAY** under *HE WAS HANDED FOUR ORDINARY REASONS. HE WENT BACK AND CHECKED.*, with **THE GAME WAS JAVA. THE GROUND IS FLAT. THE LAVA IS FAR.** boxed in verdict green over *FOUR SENTENCES, AND FOUR EXPLANATIONS ARE GONE.*, and a drifting strip of *RULED OUT · RULED OUT · RULED OUT*.
+- **HE COMES BACK (left)** — five rows (the game was Java, so not a Bedrock glitch / not near the lava, so nothing burned up / the ground is flat, so nothing rolled off / hard, and survival, so no creative tricks / four sentences, four explanations gone), closing on *EVERY ANSWER SO FAR* / *PUT SOMETHING IN.* / *THIS ONE WORKS BY* / **TAKING THINGS OUT.**
+- **AND HE KEEPS ONE (centre)** — five rows (an unseen creeper in broad daylight / easiest thing to call supernatural / creepers do not burn in sunlight / so it is allowed, and he allows it / he hands back a piece of evidence), closing on *HE IS NOT* / *COLLECTING PROOF.* / *HE IS THROWING OUT* / **THE BAD PROOF.**
+- **AND IT IS TILTING (right)** — five rows (the arrows go into the lava / a suspicious cat, he just found it / the 2-house stack looked diagonal / it was stacked, now it is leaning / nobody moved it, it moved), over *THE STACK WAS THE PROOF THE WORLD WAS REAL.*, closing on **NOW THE PROOF IS LEANING.**
+- **HOW HE HAS ANSWERED A QUESTION IN THIS FILE. (band)** — a four-row grid lit one at a time (ASKED ABOUT A FORM → he adds a stronger one / ASKED ABOUT A NUMBER → he adds a bigger one / ASKED ABOUT A FIGHT → he adds the next story / TODAY · ASKED WHY → **he removes the reasons**, the file gets tighter), closing on *324 beats answered by putting something in; this is the first one answered by taking something out*.
+- **WHAT EACH FACT TAKES OFF THE TABLE (band inset)** — a cycler across JAVA · the Bedrock-glitch answer / NOT NEAR LAVA · the burned-up answer / FLAT GROUND · the rolled-away answer / DAYTIME CREEPER · **stays on the table**, over *THREE ORDINARY ANSWERS GET KNOCKED DOWN* / *AND THE ONE THAT HOLDS UP, HE KEEPS*.
+- **Strip:** THE LAVA · TOO FAR AWAY / THE GROUND · FLAT / THE CREEPER · STILL NORMAL.
+- **Footers:** *HE DOES NOT ARGUE THAT IT WAS PERO, HE GOES BACK AND TAKES AWAY EVERY REASON IT COULD HAVE BEEN ANYTHING ELSE* and **★ THE CROSS IS NOT THAT CLOSE TO THE LAVA ★**.
+- **Cycle length** `LV_CYC` 6870 → 6892; **screenshot helper:** new `rulingItOut` scene.
+
+![BEAT 325 — RULING IT OUT](screenshots/387-ruling-it-out.png)
+
 ## 2026-08-15 — PERO-FLASH STANDS HERE · THE FIRST REMOVAL IN THIS FILE THAT LEAVES NOTHING BEHIND (BEAT 324)
 
 Based on Toby's 2026-08-15 lore, 10:27:49 AM, five minutes after PERO IS 303. His own typing, in full: *"My character shot the armor stand and the armor stand all dissappeared, it didn't drop the armor stand, nor player head. 😎⚡ Pero-Flash stands here."* The "real Minecraft explanation first / lava burn, hidden drop, or a glitch / in your lore this sounds like a Pero-Flash sign" prose pasted underneath is ChatGPT commentary.
