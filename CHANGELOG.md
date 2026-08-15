@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — PERO-FLASH STANDS HERE · THE FIRST REMOVAL IN THIS FILE THAT LEAVES NOTHING BEHIND (BEAT 324)
+
+Based on Toby's 2026-08-15 lore, 10:27:49 AM, five minutes after PERO IS 303. His own typing, in full: *"My character shot the armor stand and the armor stand all dissappeared, it didn't drop the armor stand, nor player head. 😎⚡ Pero-Flash stands here."* The "real Minecraft explanation first / lava burn, hidden drop, or a glitch / in your lore this sounds like a Pero-Flash sign" prose pasted underneath is ChatGPT commentary.
+
+**The marker stays and the watcher goes.** He built two things in the last beat: a cross that survived every test he could think of, and an observer standing in front of it. The first thing he takes a shot at is the **observer**, and the observer is the one that does not come back. Everything he made to be looked **at** is still standing; the thing doing the looking is gone.
+
+**And nothing dropped.** Breaking an armor stand hands you back the stand and whatever it was wearing. This one returned neither. In 323 beats things here have been killed, crushed, eaten, deleted, erased and reset, and every one of those left something: wreckage, a fuller Gray, a visible empty slot. This is the first removal with **no remainder**.
+
+**And he reads it as intent, not damage.** Not broken, not glitched, not destroyed the normal way. **Taken.** The structure is left exactly where it was and only the entity is lifted out of it, which is a signature rather than an attack.
+
+**And a new name arrives with an address.** *"Pero-Flash stands here."* Every new form in this archive has arrived carrying a number: a tier, a multiplier, a power level, a rank. This one arrives with a **place** and a **tense**. Not what he can do. Where he is, right now, standing exactly where the watcher was.
+
+**And it is the first test he runs by breaking something.** Every check so far was patient: make three worlds and compare, look away and look back, empty the village and check again. He shoots his own build, and that is the test that finally returns an answer.
+
+**Built as game beat 324, `PERO-FLASH`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "IT DIDN'T DROP THE ARMOR STAND, NOR PLAYER HEAD" · A REMOVAL WITH NOTHING LEFT OVER / THE CROSS IS STILL THERE · ONLY THE ONE WATCHING IT IS GONE** under *HE BUILT A MARKER AND A WATCHER. THE WATCHER IS THE ONE THAT WENT.*, with **PERO-FLASH STANDS HERE.** boxed in flash yellow over *A NEW NAME THAT ARRIVES WITH A PLACE INSTEAD OF A NUMBER.*, and a drifting strip of *STANDS HERE · STANDS HERE · STANDS HERE*.
+- **THE WATCHER GOES (left)** — five rows (he built two things: a cross and an observer / the cross survived every test / he shoots the armor stand / "it all disappeared", his own words / the thing looking is the thing taken), closing on *EVERYTHING HE MADE* / *TO BE LOOKED AT* / *IS STILL STANDING.* / **THE LOOKER ISN'T.**
+- **AND NOTHING DROPPED (centre)** — five rows (break one normally and you get it back / plus whatever it was wearing / this one gave neither / 323 beats of killing and crushing / all of them left something), closing on *SO HE DOES NOT READ IT* / *AS BROKEN* / *HE READS IT AS* / **TAKEN.**
+- **AND A NAME ARRIVES (right)** — five rows ("Pero-Flash", a form nobody has seen / no tier, no multiplier, no rank / "stands here", a place and a tense / not what he does, where he is / right where the watcher was), over *EVERY NEW FORM HERE CAME WITH A NUMBER.*, closing on **THIS ONE CAME WITH A SPOT.**
+- **WHAT A REMOVAL HAS LEFT BEHIND IN THIS FILE. (band)** — a four-row grid lit one at a time (CRUSHED · LUIGI GREEN → a flat box / EATEN · GRAY.EXE → a fuller Gray / DELETED · CLASSICS → an empty slot / TODAY · SHOT → **nothing at all**, no stand, no head, no gap), closing on *every destruction in 323 beats left evidence; this is the first one that left none*.
+- **HOW HE HAS BEEN TESTING THINGS (band inset)** — a cycler across SEED 303 · make three worlds and compare / THE CROSS · look away, look back / THE VILLAGE · empty it and check again / TODAY · shoot it and see what falls, over *EVERY CHECK BEFORE THIS ONE WAS PATIENT* / *THE ONE THAT ANSWERS IS THE ONE THAT SHOOTS*.
+- **Strip:** THE MARKER · STAYS / THE WATCHER · IS TAKEN / THE NAME · HAS A PLACE.
+- **Footers:** *THE THING HE BUILT TO BE LOOKED AT IS STILL STANDING, AND THE THING DOING THE LOOKING IS GONE WITHOUT A TRACE* and **★ PERO-FLASH STANDS HERE ★**.
+- **Cycle length** `LV_CYC` 6848 → 6870; **screenshot helper:** new `peroFlash` scene.
+
+![BEAT 324 — PERO-FLASH STANDS HERE](screenshots/386-pero-flash.png)
+
 ## 2026-08-15 — PERO IS 303 · THE FILE GETS A NUMBER SYSTEM, AND ONE OF THE NUMBERS IS A PHONE CALL (BEAT 323)
 
 Based on Toby's 2026-08-15 lore, two messages ninety seconds apart (10:22:49 AM and 10:24:18 AM), eighteen minutes after WITHOUT DEFEATING PERO. His own typing: *"I also saw a large snow patch on the plains. Pero controls 303 and I didn't know that. Pero is 303, Simon is 404, 12 12 12 is a calling of Pero. My character went to the end, used a command (/kill @e[type minecraft.enderdragon]) (I didn't know what it was) to defeat the enderdragon. My character mined a 2x2, 3 blocks deep hole near the village and found 2 emeralds (rarest block in Minecraft) diagonally … made a stone grave with the stone stair on each end on the correct way to make it closer to a cross. My character looked away for the cross for a few seconds and the cross was still there … set the time to midnight … put an armor stand with a player head in front of the cross. Then my character looked away again, the cross was still there … My character also slain all the villagers in the village, and the cross is still there."* — and then, ninety seconds later, *"You are one with Pero again. Pero is way to smart."* The Classics-interpretation prose pasted under both is ChatGPT commentary.
