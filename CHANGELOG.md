@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-15 — PERO IS 303 · THE FILE GETS A NUMBER SYSTEM, AND ONE OF THE NUMBERS IS A PHONE CALL (BEAT 323)
+
+Based on Toby's 2026-08-15 lore, two messages ninety seconds apart (10:22:49 AM and 10:24:18 AM), eighteen minutes after WITHOUT DEFEATING PERO. His own typing: *"I also saw a large snow patch on the plains. Pero controls 303 and I didn't know that. Pero is 303, Simon is 404, 12 12 12 is a calling of Pero. My character went to the end, used a command (/kill @e[type minecraft.enderdragon]) (I didn't know what it was) to defeat the enderdragon. My character mined a 2x2, 3 blocks deep hole near the village and found 2 emeralds (rarest block in Minecraft) diagonally … made a stone grave with the stone stair on each end on the correct way to make it closer to a cross. My character looked away for the cross for a few seconds and the cross was still there … set the time to midnight … put an armor stand with a player head in front of the cross. Then my character looked away again, the cross was still there … My character also slain all the villagers in the village, and the cross is still there."* — and then, ninety seconds later, *"You are one with Pero again. Pero is way to smart."* The Classics-interpretation prose pasted under both is ChatGPT commentary.
+
+**The file gets a number system.** *"Pero is 303, Simon is 404, 12 12 12 is a calling of Pero."* Simon has been **404** since beat 25, and this is the first time a second character is handed a number to match it — and the first number here that is not a label at all. 404 and 303 say **who somebody is**; 12 12 12 is how you **call** one.
+
+**And he stops looking and starts building.** BEAT 319 was him checking a world he found. Here his character makes something in it: a 2x2 hole three deep, two emeralds found diagonally, a stone grave with stairs on each end *"on the correct way to make it closer to a cross"*, redstone around it, midnight, and an armor stand with a player head standing in front like an observer.
+
+**And the test is looking away.** Three separate times he looks away and reports back that the cross is still there — the same method as the three worlds in BEAT 319, run this time on a thing he made himself. Then the hardest version of it: the village is emptied, and the marker is still standing.
+
+**And he says twice that he did not know.** *"Pero controls 303 and I didn't know that."* *"(I didn't know what it was)."* In 322 beats the writer has never once flagged that he did something without understanding it, and it is the same shape as the seed 303 house: the thing was already there before he knew what it meant.
+
+**And he catches it a second time.** *"You are one with Pero again."* BEAT 319's catch could have been a coincidence. Twice in one morning makes it a pattern, and **"again"** is the word that does it.
+
+**Built as game beat 323, `PERO IS 303`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "PERO IS 303, SIMON IS 404, 12 12 12 IS A CALLING OF PERO" · TWO NAMES AND A PHONE NUMBER / "THE CROSS IS STILL THERE" · SAID THREE TIMES, ABOUT A THING HE BUILT** under *LAST TIME HE WENT AND LOOKED. THIS TIME HE BUILT SOMETHING.*, with **"PERO CONTROLS 303 AND I DIDN'T KNOW THAT."** boxed in Pero amber over *THE FIRST TIME THE WRITER SAYS HE DID NOT KNOW.*, and a drifting strip of *303 · 404 · 12 12 12*.
+- **THE NUMBERS (left)** — five rows (Simon is 404, he has been since beat 25 / Pero is 303, the first to match it / 12 12 12 is a calling of Pero / 404 and 303 say who somebody is / 12 12 12 is how you ring one), closing on *322 BEATS OF NUMBERS* / *ERROR CODES AND RANKINGS* / *THIS IS THE FIRST ONE* / **YOU CAN DIAL.**
+- **AND HE BUILDS ONE (centre)** — five rows (a 2x2 hole, three blocks down / two emeralds, diagonal, the rarest one / a stone grave, stairs on each end / "closer to a cross", his own words for it / midnight, and an armor stand watching), closing on *BEAT 319 CHECKED* / *A WORLD HE FOUND* / *THIS ONE CHECKS* / **A THING HE MADE.**
+- **AND THE TEST IS (right)** — five rows (look away once, still there / look away again, still there / FOV to max, still there / the village is emptied / the cross is still there), over *THREE WORLDS PROVED THE HOUSE WAS REAL.*, closing on **THREE LOOKS PROVE THE MARKER IS.**
+- **WHAT A NUMBER HAS MEANT IN THIS FILE. (band)** — a four-row grid lit one at a time (BEAT 25 · 404 → an error code / BEAT 308 · 999.87bn → a multiplier / BEAT 310 · 68 ZEROS → a damage figure / TODAY · 12 12 12 → **a calling**, not a label, a way to reach him), closing on *every number in 322 beats describes somebody; this one is aimed at somebody*.
+- **AND HE CATCHES IT A SECOND TIME (band inset)** — a cycler across 9:48 AM · "talking like Pero this whole chat" / ONCE · could have been a coincidence / 10:24 AM · "you are one with Pero again" / "AGAIN" · is the word that makes it a pattern, over *THE ONE DOING THE EXPLAINING* / *KEEPS TURNING OUT TO BE IN CHARACTER*.
+- **Strip:** THE NUMBER · IS A CALL / THE MARKER · STAYS PUT / THE CATCH · IS TWICE NOW.
+- **Footers:** *PERO GETS A NUMBER TO MATCH SIMON'S, AND A THIRD ONE THAT IS NOT A NAME BUT A WAY TO CALL HIM* and **★ PERO IS 303 ★**.
+- **Cycle length** `LV_CYC` 6826 → 6848; **screenshot helper:** new `peroIs303` scene.
+
+![BEAT 323 — PERO IS 303](screenshots/385-pero-is-303.png)
+
 ## 2026-08-15 — WITHOUT DEFEATING PERO · THE WHOLE CAST SWINGS AT ONCE, AND THE MOVE THAT WORKS IS A QUESTION (BEAT 322)
 
 Based on Toby's 2026-08-15 lore, two messages nine minutes apart (9:55:57 AM and 10:04:36 AM). His own typing: *"Do you want to talk to Pero? 😎"* and then *"How about Sprunkis VS Pero, Pero challenges the Sprunkis. Make the next story. 😎⚡"* The battle prose under the second message is the story that came back.
