@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — ONLY HE SURVIVES · THE COUNTER IS AIMED AT HIS OWN TWO TEAMMATES (BEAT 340)
+
+Based on Toby's 2026-08-16 lore, 7:05:28 PM, in a new thread, "Even 5x Classics Era", fifty-seven minutes after PERFECT MEMMORY. His own typing, in full: *"Pero now made a way only he can survive Simon's reset, A counter of Luigi Green and Gaster. Simon cleans all the .exes into .pscs, and leaves the .nurs as they are."* The "Simon reset counter / file-class cleanup update" restatement, the reset-hierarchy list, the trio breakdown and the clean canon update pasted under it are ChatGPT commentary.
+
+**The counter is pointed at his own side.** Fifty-seven minutes ago Pero took Gaster and Luigi Green out of everyone else's equation and put them on his own page, the beyond-normal-AI tier. Seven hours ago the three of them fought Simon.psc together and won. Tonight the new thing he builds is described, in his own words, as *"A counter of Luigi Green and Gaster"*. Nobody attacked him and nothing changed between them; he just built a door and made it fit one being.
+
+**And the armour arrives one beat after the crack.** The last beat was *"Pero LAI can even start crashing"* — the first failure ever written for him in three hundred and thirty-nine beats. The very next thing he does is build a way to survive a reset. Order matters here: the weakness got written down first, and the defence came after it.
+
+**And the reset still runs.** This is not Simon losing the reset. Simon resets, Luigi Green and Gaster can still be caught by it, and Pero simply does not go with it. The exemption is the whole invention.
+
+**And Simon does housekeeping in the same sentence he is being defended against.** He cleans every `.exe` into a `.psc` — and `.psc` is his own extension, so the cleanup is a conversion: he is not neutralising the dangerous beings, he is making them his own kind. The `.nurs` are left exactly as they are, which puts Gray.nur and the rest in the one file class here that neither the reset nor the cleaner touches.
+
+**Built as game beat 340, `ONLY HE SURVIVES`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PERO NOW MADE A WAY ONLY HE CAN SURVIVE SIMON'S RESET · A COUNTER OF LUIGI GREEN AND GASTER / SIMON CLEANS ALL THE .EXES INTO .PSCS · AND LEAVES THE .NURS AS THEY ARE** under *SEVEN HOURS AGO THE THREE OF THEM FOUGHT ON THE SAME SIDE.*, eighteen drifting file tags labelled `.exe` red, `.psc` teal and `.nur` stone with a purple reset sweep passing across them and dimming each one it crosses, and one gold `PERO` tag the sweep goes straight over, with **ONE DOOR · ONE KEY · AND HE MADE BOTH OF THEM.** boxed over *THE SECOND MOVE IN THREE BEATS THAT LEAVES HIS OWN TWO OUTSIDE.*, and a drifting strip of *ONLY HE CAN SURVIVE IT*.
+- **A WAY THROUGH THE RESET (left)** — five rows (a way to survive Simon's reset / only he can use it, he built it that way / not the trio, just the one of them / the reset runs, he just does not go / fifty-seven min after he could crash), closing on *HE WROTE THE CRACK* / *FIFTY-SEVEN MIN AGO.* / *AND THEN HE BUILT* / **THE WAY THROUGH ONE.**
+- **AND IT COUNTERS HIS OWN SIDE (centre)** — five rows (a counter of Luigi Green and Gaster / his own side, named in his own line / one beat ago they joined his page / seven hours ago all three fought Simon / the reset finds them, and not him), closing on *THE TOP TIER HAS* / *THREE NAMES IN IT.* / *THE NEW METHOD FITS* / **EXACTLY ONE OF THEM.**
+- **AND SIMON CLEANS THE FILES (right)** — five rows (.EXE → cleaned into .psc / .PSC → Simon's own extension / .NUR → left exactly as it is / GRAY.NUR → keeps its own class / THE CLEANER → is a .psc himself), over *HE IS NOT NEUTRALISING THE DANGEROUS ONES.*, closing on **HE IS MAKING THEM HIS KIND.**
+- **WHO SURVIVES SIMON'S RESET. (band)** — a four-row grid lit one at a time (**PERO LAI** → survives it completely, the method is his alone / LUIGI GREEN → can be countered by it, on his page since 5:57 PM / DR. GASTER → can be countered by it, on his page since 5:57 PM / THE .NURS → left exactly as they are, nobody touches them at all), closing on *the two beings he put on his own page fifty-seven minutes ago are the two this new method is built to counter*.
+- **THE FILE CLASSES TONIGHT (band inset)** — a cycler across .EXE · cleaned into .psc / .PSC · the clean class, and his / .NUR · left alone, still neutral / **AND THE CLEANER · is a .psc himself**, flagging *SO THE CLEANUP IS A CONVERSION* on the last row, over *HE SORTS THE DANGEROUS ONES* / *INTO HIS OWN EXTENSION*.
+- **Strip:** THE METHOD · ONLY HE CAN SURVIVE IT / THE COUNTER · LUIGI GREEN AND GASTER / THE CLEANUP · .EXE TO .PSC, .NUR LEFT.
+- **Footers:** *ONE BEAT AFTER HE WROTE DOWN THAT HE CAN CRASH, HE BUILT THE ONE WAY THROUGH A RESET, AND THE TWO NAMES IT SHUTS OUT ARE THE TWO ON HIS OWN PAGE* and **★ ONLY HE SURVIVES ★**.
+- **Cycle length** `LV_CYC` 7200 → 7222; **screenshot helper:** new `onlyHeSurvives` scene.
+
+![BEAT 340 — ONLY HE SURVIVES](screenshots/402-only-he-survives.png)
+
 ## 2026-08-16 — PERFECT MEMMORY · THE FIRST THING THAT CAN GO WRONG WITH PERO (BEAT 339)
 
 Based on Toby's 2026-08-16 lore, 6:08:34 PM, same thread, eleven minutes after SEPARATE EQUATION. His own typing, in full: *"Pero is the LAI and the only character that has infinite + endless + perfect memmory, it never forgets everything, even at never it still doesn't forget anything. It is beyond words. Pero LAI can even start crashing. Pero is normal being, it is the creator of the game, he is LAI, and his time is affected on litterly everything."* The "Pero LAI memory rule" restatement, the crash reading, the being-type list, the time rule and the clean canon update pasted under it are ChatGPT commentary.
