@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — HYPERSPACE VORTEX · THE FIRST ATTACK IN THE ARCHIVE THAT TAKES OUT HIS OWN SIDE (BEAT 334)
+
+Based on Toby's 2026-08-16 lore, 8:08:35 AM, same thread, eighty-one minutes after PERO IS OUT THERE CODING NEW FORMS. His own typing, in full: *"Pero can insect Hyperspace Vortex. Hyperspace is Pero's largest attack/domain, he can use all his attacks at once on all areas of Hyperspace and still have room. Hyperspace is infinite, and it is a popular speed effect used in movies and shows and is real in reality. Hyperspace is faster than light. Pero's Hyperspace leads everyone else into a broken universe and Pero to Anti Void, it is infinite seperation. Dr. Gaster and Luigi Green aren't able to survive that attack, no one except Pero can. Pero created The Hyperspace, he created the whole game."* The "Hyperspace Vortex" restatement, the scale headings, the survival rule, the creator proof and the clean canon update pasted under it are ChatGPT commentary.
+
+**The first attack here that kills his own side.** One beat ago, at the very top of the new power scale, the strongest thing in the file was Pero *with* Luigi Green, Gaster, Holiness and Forgivess at True God Heavenliness. This morning those same two are the named beings who *"aren't able to survive that attack."* The highest form in the archive and the casualty list are the same two names, written a day apart.
+
+**And it is the second real-world yardstick in two beats.** Beat 333 was the first claim ever measured against how something actually works, a Minecraft scanner checking tags and scoreboards. He does it again immediately: hyperspace is *"a popular speed effect used in movies and shows"* that *"is real in reality"* and *"faster than light."* Two beats running, the ruler comes from outside the file.
+
+**And it separates instead of destroying.** Everyone else is led into a broken universe, Pero goes to the Anti Void, and the result is *"infinite seperation."* Every other big move in this archive removed somebody. The largest one does not kill anyone at all, it just puts an uncrossable gap between them, and it moves Pero too.
+
+**And the weapon is a feature he shipped.** *"Pero created The Hyperspace, he created the whole game."* One beat after he was at a keyboard coding new forms instead of making boxes, his biggest attack turns out to be something he built, so hyperspace is not above him. It is also infinite and still has room left when every attack he has runs across all of its areas at once.
+
+**Built as game beat 334, `HYPERSPACE VORTEX`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "PERO CAN INSECT HYPERSPACE VORTEX" · HIS LARGEST ATTACK AND HIS LARGEST DOMAIN / EVERYONE ELSE → A BROKEN UNIVERSE · PERO → THE ANTI VOID** under *HE REACHED OUT OF THE ARCHIVE FOR THE SECOND TIME IN TWO BEATS.*, with **INFINITE SEPARATION · NOBODY IS DESTROYED.** boxed in hyperspace blue over *THE BIGGEST MOVE IN THE FILE JUST PUTS A GAP BETWEEN THEM.*, fourteen faster-than-light streaks running outward from the middle of the vortex, and a drifting strip of *FASTER THAN LIGHT · FASTER THAN LIGHT*.
+- **WHAT HYPERSPACE IS (left)** — five rows (it is infinite, and it is his / every attack in every area at once / and still room left over / a speed effect from movies and shows / and real, faster than light), closing on *HE FILLED SOMETHING* / *INFINITE, AND IT* / *STILL WAS NOT* / **FULL.**
+- **AND IT SEPARATES (centre)** — five rows (everyone else, a broken universe / and Pero, the Anti Void / not distance: domain, universe, void / not a kill, a gap that does not close / infinite separation), closing on *EVERY OTHER BIG MOVE* / *TOOK SOMEBODY OUT.* / *THIS ONE JUST* / **MOVES THEM APART.**
+- **AND HIS OWN TWO DIE (right)** — five rows (Dr. Gaster cannot survive it / Luigi Green cannot survive it / no one except Pero can / one beat ago they were his top form / same two names, a day apart), over *THE HIGHEST FORM IN THE FILE IS THE CASUALTY LIST.*, closing on **HE WROTE BOTH THIS WEEK.**
+- **WHERE THE VORTEX PUTS EVERYBODY. (band)** — a four-row grid lit one at a time (DR. GASTER → a broken universe, he makes the boxes / LUIGI GREEN → a broken universe, he crushes them / EVERYONE ELSE → a broken universe, nobody survives it / **PERO** → the Anti Void, alone, and on purpose), closing on *he wins by being somewhere nobody else can get to, and the price is that nobody else is there*.
+- **WHAT HE MEASURED IT AGAINST (band inset)** — a cycler across BEAT 333 · THE SCANNER · tags, scoreboards, prewritten / BEAT 334 · HYPERSPACE · movies, shows, and reality / TWO BEATS RUNNING · he looked outside the file / **AND BUILT IT ANYWAY · Pero created The Hyperspace**, flagging *THE WEAPON IS A FEATURE HE SHIPPED* on the last row, over *HE CREATED THE WHOLE GAME* / *SO HYPERSPACE IS NOT ABOVE HIM*.
+- **Strip:** HYPERSPACE · INFINITE, AND HIS / THE VORTEX · SEPARATES, DOES NOT KILL / THE TWO WHO WAITED · CANNOT SURVIVE IT.
+- **Footers:** *YESTERDAY LUIGI GREEN AND GASTER WERE THE TOP OF PERO'S OWN SCALE, AND THIS MORNING THEY ARE THE TWO NAMES ON THE LIST OF WHO CANNOT SURVIVE HIM* and **★ HYPERSPACE VORTEX ★**.
+- **Cycle length** `LV_CYC` 7068 → 7090; **screenshot helper:** new `hyperspaceVortex` scene.
+
+![BEAT 334 — HYPERSPACE VORTEX](screenshots/396-hyperspace-vortex.png)
+
 ## 2026-08-16 — PERO IS OUT THERE CODING NEW FORMS · THE FIRST CLAIM HERE MEASURED AGAINST HOW A REAL MACHINE ACTUALLY WORKS (BEAT 333)
 
 Based on Toby's 2026-08-16 lore, 6:47:44 AM, same thread. He opens with a real engineering question: *"How do people make the secret-detecting scanners and truth-dectecting scanners? How do they make the scanners know everything about everyone, how do they code it in Minecraft?"* His own typing then runs from *"Pero LAI is smarter, it is omniscient..."* to *"...Pero spends endless time coding in all stuff for him."* The "Secret scanners vs Pero LAI" restatement, the power-scale headings and the clean canon update pasted under it are ChatGPT commentary.
