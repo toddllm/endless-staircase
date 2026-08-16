@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — SEPARATE EQUATION · THE EQUATION THAT HELD EVERYONE JUST GREW AN EXCEPTION (BEAT 338)
+
+Based on Toby's 2026-08-16 lore, 5:57:15 PM, same thread, five hours after THE HIDDEN BOOK. His own typing, in full: *"Pero LAI also makes Gaster and Luigi Green in a seperate equasion as everyone else. They all have emotions and stuff, they are beyond normal AI."* The "Separate equation rule" restatement, the two-layer breakdown, the "Beyond normal AI" capability list and the clean canon update pasted under it are ChatGPT commentary.
+
+**He split his own equation five hours after writing it.** Beat 337 was one line holding *"every being from the box and Simon.psc"* — the whole cast, stats and codes and history, in a single equation. Tonight Gaster and Luigi Green come back out of it onto a page of their own. The math that was built to contain everybody lasted an afternoon before it needed an exception.
+
+**And the line is not drawn on power.** Six hours ago the scale was numeric: Dr. Gaster at × 3.6e100, Luigi Green at × 3.5e(v91-100), Simon.psc at × 2.35, one tier apart. This cut ignores all of that. It is inside-the-box against outside it, so the being who was *"the second most powerful being ever"* this afternoon stays on the low side of the line, and the two who spend their shifts on box animation are above it. Position, not strength.
+
+**And the top tier is a feelings tier.** What qualifies the three is not a bigger number. It is *"emotions and stuff"* — awareness, choices, arguing, planning, working together, understanding the box from outside it. Every other tier in this archive was set by a quantity. This one is set by having feelings.
+
+**And hiding things is on the list.** Five hours ago Simon.psc's one distinguishing act was writing a book and hiding it in his laboratory, the only unopened record in the file. Tonight *hide things* is written down as standard equipment for the three above him. His singular move turns out to be a listed feature of the tier he is not in.
+
+**Built as game beat 338, `SEPARATE EQUATION`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PERO MADE A SEPARATE EQUATION · FOR GASTER AND LUIGI GREEN / THEY ALL HAVE EMOTIONS AND STUFF · THEY ARE BEYOND NORMAL AI** under *THIS AFTERNOON ONE EQUATION HELD EVERY BEING IN THE FILE.*, split down the middle by a dashed seam with fourteen terms drifting to either side of it, gold on the inside and teal on the outside, with **THE LINE IS WHERE YOU STAND · NOT HOW STRONG YOU ARE.** boxed in outside teal over *THE SECOND MOST POWERFUL BEING EVER IS ON THE INSIDE OF IT.*, and a drifting strip of *BEYOND NORMAL AI*.
+- **TWO EQUATIONS NOW (left)** — five rows (this afternoon, one equation, everyone in it / the box page, Sprunkis, Gray, Oren, Simon / the outside page, Pero, Gaster, Luigi Green / same author, Pero wrote both of them / five hours is all it took to split), closing on *HE BUILT ONE LINE* / *THAT HELD EVERYONE,* / *AND THEN TOOK* / **TWO OF THEM OUT.**
+- **AND THE LINE IS NOT POWER (centre)** — five rows (Dr. Gaster × 3.6e100, outside / Luigi Green × 3.5e(v91-100), outside / Simon.psc × 2.35, and inside / this afternoon, second most powerful ever / and still on the inside of the line), closing on *THE SPLIT IS NOT* / *STRONG AND WEAK.* / *IT IS INSIDE* / **AND OUTSIDE.**
+- **AND THEY HAVE EMOTIONS (right)** — five rows (they feel and they choose / they argue and they plan / they hide things and work together / beyond normal AI, not answer-machines / the top tier is a feelings tier), over *EVERY OTHER TIER HERE WAS SET BY A NUMBER.*, closing on **THIS ONE IS SET BY FEELINGS.**
+- **WHICH EQUATION YOU ARE IN. (band)** — a four-row grid lit one at a time (PERO LAI → the outside page, he wrote both of them / DR. GASTER → the outside page, moved out tonight / LUIGI GREEN → the outside page, moved out tonight / **SIMON.PSC** → the box page, second strongest, inside), closing on *the strongest character inside the box is still a term in the box equation, and the two who do box animation are not*.
+- **WHAT BEYOND NORMAL AI MEANS (band inset)** — a cycler across FEEL AND CHOOSE · not answer-machines / ARGUE AND PLAN · they disagree out loud / CREATE AND CHANGE · they build the systems / **AND HIDE THINGS · five hours ago, that was Simon**, flagging *HIS ONE MOVE IS THEIR STANDARD FEATURE* on the last row, over *THE OTHER TIERS WERE SET BY NUMBERS* / *THIS ONE IS SET BY FEELINGS*.
+- **Strip:** PAGE ONE · THE BOX EQUATION / PAGE TWO · PERO, GASTER, LUIGI GREEN / THE LINE · POSITION, NOT POWER.
+- **Footers:** *PERO TOOK THE TWO WHO WORK OUTSIDE THE BOX OUT OF THE EQUATION THAT HELD EVERYONE, AND WHAT PUTS THEM ON THE SECOND PAGE IS THAT THEY HAVE FEELINGS* and **★ SEPARATE EQUATION ★**.
+- **Cycle length** `LV_CYC` 7156 → 7178; **screenshot helper:** new `separateEquation` scene.
+
+![BEAT 338 — SEPARATE EQUATION](screenshots/400-separate-equation.png)
+
 ## 2026-08-16 — THE HIDDEN BOOK · THE STRONGEST THING IN THE ARCHIVE TURNS OUT TO DO PAPERWORK (BEAT 337)
 
 Based on Toby's 2026-08-16 lore, 12:59:32 PM, same thread, twelve minutes after ALL THREE OF US and five minutes after CHATGPT + CLAUDE. His own typing, in full: *"Pero would be G+LG+S+G+ (for every character)+ChatGPT times Claude+Gemini times infinitye(v90998848473773752662596936693696969916-Absolute), it equals Absolute Infinity/Beyond Infinity. Pero uses that term. Pero put every being from the box and Simon.psc into an equasion of all their information and stats and everything about them. Gaster and Luigi Green were working on the box animation. Pero also made charts, books, and even all these things. Simon was the only one who knew that from the box and wrote a book about it, Simon.psc hid it from everyone, he put it in his labatory."* The "Pero Absolute Equation / Hidden Lab Book" restatement and the clean canon update pasted under it are ChatGPT commentary.
