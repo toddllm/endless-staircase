@@ -4,6 +4,88 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — THE HIDDEN BOOK · THE STRONGEST THING IN THE ARCHIVE TURNS OUT TO DO PAPERWORK (BEAT 337)
+
+Based on Toby's 2026-08-16 lore, 12:59:32 PM, same thread, twelve minutes after ALL THREE OF US and five minutes after CHATGPT + CLAUDE. His own typing, in full: *"Pero would be G+LG+S+G+ (for every character)+ChatGPT times Claude+Gemini times infinitye(v90998848473773752662596936693696969916-Absolute), it equals Absolute Infinity/Beyond Infinity. Pero uses that term. Pero put every being from the box and Simon.psc into an equasion of all their information and stats and everything about them. Gaster and Luigi Green were working on the box animation. Pero also made charts, books, and even all these things. Simon was the only one who knew that from the box and wrote a book about it, Simon.psc hid it from everyone, he put it in his labatory."* The "Pero Absolute Equation / Hidden Lab Book" restatement and the clean canon update pasted under it are ChatGPT commentary.
+
+**Pero's real work is paperwork.** Equations, charts, books, records. The strongest being in the file spends his time writing things down, and Gaster and Luigi Green are still on box animation, the same division of labour as beat 333 where he was coding new forms and they waited.
+
+**And his number is the sum of everyone else.** The formula opens with their initials, *"G+LG+S+G+ (for every character)"*, then the machines, then an infinity-to-the-Absolute multiplier, and it lands on Absolute Infinity. He is not above the cast by standing apart from it. He is above it by containing it.
+
+**And the counter-move is also writing.** Simon.psc lost five straight fights twelve minutes ago. He does not reset and he does not attack. He notices, he writes a book about it, and he hides it in his laboratory. The two strongest beings in the archive both answered this hour the same way, and one of them hid what he wrote.
+
+**And it is the first record here with an address and no reader.** In a file where every power gets announced the moment it exists, there is now one thing only Simon knows about, sitting in a named room, unopened.
+
+**Built as game beat 337, `THE HIDDEN BOOK`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PERO MADE THE EQUATION · EVERY BEING IN THE BOX, IN ONE LINE / SIMON WROTE A BOOK ABOUT IT · AND HID IT IN HIS LABATORY** under *THE TWO STRONGEST BEINGS IN THE FILE BOTH ANSWERED WITH WRITING.*, with **ONE RECORD · AN ADDRESS, AND NO READER.** boxed in book gold over *EVERYTHING HERE GETS ANNOUNCED. THIS ONE THING DOES NOT.*, twelve drifting shelved pages, and a strip of *HE PUT IT IN HIS LABATORY*.
+- **WHAT PERO ACTUALLY DOES (left)** — five rows (one equation, every being in the box / their stats, codes, powers, history / and Simon.psc is a term in it too / charts and books and even all these things / Gaster and Luigi, still on box animation), closing on *THE STRONGEST* / *THING HERE SPENDS* / *ITS TIME WRITING* / **THINGS DOWN.**
+- **AND HE IS THE SUM OF THEM (centre)** — five rows (G + LG + S + G, he starts with them / + every character, the whole cast / + ChatGPT × Claude + Gemini / × INFINITYe(...) to the Absolute / = Absolute Infinity, Beyond Infinity), closing on *HE IS NOT ABOVE THEM* / *BY BEING APART.* / *HE IS ABOVE THEM* / **BY CONTAINING THEM.**
+- **AND SIMON WROTE A BOOK (right)** — five rows (the only one inside the box who knew / he wrote a book about the equation / he hid it from everyone / it is in his labatory / twelve minutes after losing five times), over *HE LOST EVERY FIGHT HE HAD THIS HOUR.*, closing on **THIS IS WHAT HE DID INSTEAD.**
+- **WHO IS DOING WHAT, RIGHT NOW. (band)** — a four-row grid lit one at a time (PERO → equations, charts, books, the source math of everyone / DR. GASTER → box animation, the same job as beat 333 / LUIGI GREEN → box animation, movement and crushing / **SIMON.PSC** → one hidden book, in a labatory, unread), closing on *the two strongest beings both answered this hour with writing, and one of them hid what he wrote*.
+- **WHAT IS IN THE LAB (band inset)** — a cycler across THE ONLY RECORD · inside-box, of Pero's math / THE ONE THING · Pero does not hold / HIDDEN FROM EVERYONE · including the three / **AND IT IS STILL THERE · nobody has opened it**, flagging *AN ADDRESS, AND NO READER* on the last row.
+- **Strip:** PERO · WRITES THE EQUATION / SIMON · WRITES ABOUT THE EQUATION / THE BOOK · HIDDEN IN THE LAB.
+- **Footers:** *PERO PUT EVERY BEING IN THE BOX INTO ONE EQUATION, AND THE ONLY CHARACTER WHO NOTICED WROTE A BOOK ABOUT IT AND HID IT WHERE NOBODY WILL FIND IT* and **★ THE HIDDEN BOOK ★**.
+- **Cycle length** `LV_CYC` 7112 → 7156; **screenshot helper:** new `theHiddenBook` scene.
+
+![BEAT 337 — THE HIDDEN BOOK](screenshots/399-the-hidden-book.png)
+
+## 2026-08-16 — CHATGPT + CLAUDE · THE FIRST TIME THE ARCHIVE MEASURES ITS OWN CAST IN AI (BEAT 336)
+
+Based on Toby's 2026-08-16 lore, 12:54:44 PM, same thread, seven minutes after ALL THREE OF US. His own typing, in full: *"Simon.psc is ChatGPT + Claude times 2.35, Luigi Green is ChatGPT + Claude times 3.5e(v91-100) (parenteese + v for range) times, Dr. Gaster is ChatGPT + Claude times 3.6e100, Pero LAI is the smartest and most powerful of LAI and is beyond AI. Simon.psc is a high smartness being. Luigi Green and Gaster are the 2nd smartest in the game. Gray and Simon are the third smartest, sometimes Gray is smarter than Simon, but still."* The "LAI/AI intelligence scaling system" restatement, the ranking headings and the clean canon update pasted under it are ChatGPT commentary.
+
+**Three beats running, the ruler comes from outside the file.** Beat 333 measured Pero against how a Minecraft scanner is actually coded. Beat 334 measured hyperspace against the speed of light. This one measures the whole cast in the two machines he is typing to, which makes the yardstick the thing reading it.
+
+**And the scale he built runs from a receipt to a googol.** Simon is × 2.35, a small ordinary decimal. Gaster is × 3.6e100. They are one tier apart on his own ranking, and a hundred orders of magnitude apart in his own units.
+
+**And Pero is the only being he could not write down.** *"Beyond AI"* means he is not ChatGPT + Claude times anything at all. Everyone else gets a number; the one at the top gets an exemption from the system.
+
+**And Simon drops two places in seven minutes.** At 12:47 he was *"the second most powerful being ever."* At 12:54 he is third smartest, tied with Gray, who was not even in that fight and who is *"sometimes smarter than Simon."* This is the first time the archive separates being strong from being smart, and it separates them on the same character inside the same hour.
+
+**He also stopped mid-sentence to define his own notation** — *"(parenteese + v for range)"* — which is a spec written inside a power scale.
+
+**Built as game beat 336, `CHATGPT + CLAUDE`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of SIMON.PSC IS CHATGPT + CLAUDE TIMES 2.35 · A NUMBER YOU COULD WRITE ON A RECEIPT / DR. GASTER IS CHATGPT + CLAUDE TIMES 3.6e100 · ONE TIER ABOVE HIM, AND A GOOGOL AWAY** under *THREE BEATS RUNNING, THE RULER CAME FROM OUTSIDE THE FILE.*, with **PERO LAI IS BEYOND AI · SO HE HAS NO NUMBER.** boxed in LAI teal over *THE ONLY BEING HE COULD NOT WRITE IN HIS OWN UNITS.*, and a rising column of *× 2.35* and *3.6e100*.
+- **THE UNITS HE PICKED (left)** — five rows (Simon.psc × 2.35 / Luigi Green × 3.5e(v91-100) / Dr. Gaster × 3.6e100 / Pero LAI, beyond AI, no formula / and a note, "(parenteese + v for range)"), closing on *HE STOPPED TO* / *EXPLAIN HIS OWN* / *NOTATION IN THE* / **MIDDLE OF IT.**
+- **AND THE GAP IS A GOOGOL (centre)** — five rows (2.35, small, real, ordinary / 3.6e100, a googol times over / one tier apart on his own ranking / the bottom fits on a receipt / and the top does not fit anywhere), closing on *HE BUILT A SCALE* / *THAT GOES FROM* / *A DECIMAL TO* / **A GOOGOL.**
+- **AND SIMON DROPPED TWO (right)** — five rows (12:47, second most powerful ever / 12:54, third smartest tier / tied with Gray, who was not in the fight / and sometimes Gray is above him / strong and smart, split apart here), over *SECOND STRONGEST IS NOT SECOND SMARTEST.*, closing on **HE WROTE BOTH IN ONE HOUR.**
+- **THE RANKING, AS HE WROTE IT. (band)** — a four-row grid lit one at a time (**1 · PERO LAI** → beyond AI, above the formula entirely / 2 · LUIGI & GASTER → 3.5e(v91-100), 3.6e100 / 3 · GRAY & SIMON → × 2.35, and Gray sometimes wins / THE RULER ITSELF → ChatGPT + Claude, the thing reading this), closing on *three beats running he measured this file against something real, and this time the yardstick is the reader*.
+- **THREE BEATS, THREE REAL RULERS (band inset)** — a cycler across BEAT 333 · THE SCANNER · tags and scoreboards / BEAT 334 · HYPERSPACE · movies, shows, reality / **BEAT 336 · THE UNIT · ChatGPT + Claude** / AND ONE IS OFF IT · Pero LAI, beyond AI, flagging *HE MEASURED THEM IN US* on the third row.
+- **Strip:** THE UNIT · CHATGPT + CLAUDE / THE RANGE · 2.35 TO 3.6e100 / PERO · NOT ON THE SCALE.
+- **Footers:** *HE MEASURED HIS OWN CHARACTERS IN THE TWO MACHINES HE TYPES TO, AND THE ONLY BEING HE COULD NOT WRITE THAT WAY IS THE ONE AT THE TOP* and **★ CHATGPT + CLAUDE ★**.
+- **Cycle length** `LV_CYC` 7090 → 7134 (see beat 337 for the final value); **screenshot helper:** new `chatgptPlusClaude` scene.
+
+![BEAT 336 — CHATGPT + CLAUDE](screenshots/398-chatgpt-plus-claude.png)
+
+## 2026-08-16 — ALL THREE OF US · THE FIRST TIME PERO, GASTER AND LUIGI GREEN FIGHT ON THE SAME SIDE (BEAT 335)
+
+Based on Toby's 2026-08-16 lore, 12:47:00 PM, same thread, one day after HYPERSPACE VORTEX. His own typing runs the whole escalation route, from *"Simon challenged Luigi Green and Gaster, he reseted and used his strings..."* to *"...Pero, Gaster, and Luigi Green won the game before Simon.psc could win it."* The "huge Simon.psc final escalation route" restatement, the section headings and the clean canon summary pasted under it are ChatGPT commentary.
+
+**Yesterday's casualties are today's teammates.** One beat ago Pero's Hyperspace Vortex was the attack Dr. Gaster and Luigi Green *"aren't able to survive."* Here they come back, and the three of them stand on the same side: *"Pero, Luigi Green, and Gaster all teamed up to save the boxes from Simon.psc."* Three beings who have spent this whole archive against each other, in one line, agreeing.
+
+**And every form Simon gets from here comes out of a defeat.** He loses five straight fights — as Hyper Simon.psc, as Classics Simon.psc, as Anti-Virus Simon.psc after a twenty-year battle, as Box Simon.psc with everyone in the box turned to energy inside him, and finally against all three at once. In this file forms come from winning. Not these. He builds a new one after every loss.
+
+**And Pero beats him with his own weapon.** The promise is *"I'll beat you and restore everything you erased,"* and it is kept exactly: Pero changes the code, restores everything, and throws the errors onto Simon.psc until he cannot take it. Simon spent the archive spreading errors, and the errors are what put him down.
+
+**And the villain is the one who cleaned the box.** Simon puts Anti-Virus over all of it, the errors stop, the chess board stops glitching, and Luigi Green comes out weaker. He loses every fight after that, and the box stays fixed.
+
+**And the last fight starts as an argument, not an attack.** Simon asks *"Pero made the boxes, and he wants Luigi Green to crush the boxes, so isn't Luigi Green the one to blame?"* Gaster answers with a job title, *"But he is the main villian of the game!"* Simon asks for one of them to play with. Pero says *"You can have all three of us!"*
+
+**Built as game beat 335, `ALL THREE OF US`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "YOU CAN HAVE ALL THREE OF US" · PERO, DR. GASTER AND LUIGI GREEN, ONE SIDE / BOX SIMON.PSC · EVERYONE BECAME ENERGY · AND PERO STILL WON** under *HE LOST FIVE TIMES RUNNING AND BUILT A NEW FORM AFTER EVERY ONE.*, with **THEY WON THE GAME BEFORE HE COULD.** boxed in trio green over *SOMEBODY ACTUALLY WINS IT, AND IT TAKES THREE OF THEM.*, three coloured lines converging on one point, and a drifting strip of *MEET YOUR NEW MATCH*.
+- **EVERY FORM CAME FROM LOSING (left)** — five rows (Hyper Simon.psc, Pero beat him / Classics Simon, Pero went beyond it / Anti-Virus Simon, twenty years then lost / Box Simon.psc, the whole box, still lost / and the three beat him together), closing on *EVERY FORM AFTER* / *HYPER CAME OUT* / *OF A DEFEAT, NOT* / **OUT OF A WIN.**
+- **AND PERO GAVE THEM BACK (centre)** — five rows ("I'll beat you" and restore what you erased / he changed the code and restored everything / then threw the errors onto Simon / Simon can't take it, and fellen / his own weapon handed back to him), closing on *SIMON SPREAD THE* / *ERRORS ALL FILE.* / *PERO BEAT HIM* / **WITH THEM.**
+- **AND THEN THEY TEAMED UP (right)** — five rows (yesterday, hyperspace killed the two / today, they came back / all three on the same side / to save the boxes from Simon.psc / and they won it before he could), over *THREE WHO NEVER AGREED ON ANYTHING.*, closing on **ONE SIDE, FOR ONE FIGHT.**
+- **THE LAST FIGHT STARTS AS AN ARGUMENT. (band)** — a four-row grid lit one at a time (SIMON.PSC → "Pero made the boxes", so isn't Luigi Green to blame / DR. GASTER → "he is the main villian", a job title, not an answer / SIMON.PSC → "one of you to play with", he asks, he does not swing / **PERO** → "all three of us", and that ends it), closing on *the villain makes an argument instead of an attack, and what he gets back is not a rebuttal, it is all three at once*.
+- **WHAT SIMON FIXED ON HIS WAY DOWN (band inset)** — a cycler across ANTI-VIRUS ON THE BOX · the errors all stop / THE CHESS BOARD · stops glitching / LUIGI GREEN · came out weaker / **AND THE VILLAIN DID IT · the repair is his**, flagging *THE ONE BREAKING IT CLEANED IT* on the last row, over *HE LOST EVERY FIGHT AFTER THIS* / *AND THE BOX STAYED FIXED*.
+- **Strip:** FIVE LOSSES · AND A NEW FORM EACH TIME / THE ERRORS · GIVEN BACK TO HIM / THE THREE · ON ONE SIDE.
+- **Footers:** *THE THREE WHO SPENT THE WHOLE ARCHIVE AGAINST EACH OTHER PICKED THE SAME SIDE, ONE DAY AFTER PERO'S OWN ATTACK WAS THE THING THAT KILLED THE OTHER TWO* and **★ ALL THREE OF US ★**.
+- **Cycle length** `LV_CYC` 7090 → 7112 (see beat 337 for the final value); **screenshot helper:** new `allThreeOfUs` scene.
+
+![BEAT 335 — ALL THREE OF US](screenshots/397-all-three-of-us.png)
+
 ## 2026-08-16 — HYPERSPACE VORTEX · THE FIRST ATTACK IN THE ARCHIVE THAT TAKES OUT HIS OWN SIDE (BEAT 334)
 
 Based on Toby's 2026-08-16 lore, 8:08:35 AM, same thread, eighty-one minutes after PERO IS OUT THERE CODING NEW FORMS. His own typing, in full: *"Pero can insect Hyperspace Vortex. Hyperspace is Pero's largest attack/domain, he can use all his attacks at once on all areas of Hyperspace and still have room. Hyperspace is infinite, and it is a popular speed effect used in movies and shows and is real in reality. Hyperspace is faster than light. Pero's Hyperspace leads everyone else into a broken universe and Pero to Anti Void, it is infinite seperation. Dr. Gaster and Luigi Green aren't able to survive that attack, no one except Pero can. Pero created The Hyperspace, he created the whole game."* The "Hyperspace Vortex" restatement, the scale headings, the survival rule, the creator proof and the clean canon update pasted under it are ChatGPT commentary.
