@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — MAKE HIM SPARE YOU · SURVIVING MOVES OFF YOUR SIDE OF THE FIGHT AND ONTO HIS (BEAT 342)
+
+Based on Toby's 2026-08-16 lore, 7:23:13 PM, same thread, two minutes after MOST VARIED. His own typing, in full: *"Every other character has a certain weakness(es), but Pero only has one way you can survive, if you make him spare you and happy and passive/neutral and all those stuff."* The "Pero weakness rule" restatement, the not-a-normal-weakness list, the mercy/passive condition list and the clean canon update pasted under it are ChatGPT commentary.
+
+**It is not a weakness, it is a condition on him.** Every other character has something about them that can be exploited: low HP, a counter, a weapon, a form limit, a reset, a box. He has none of it. A weakness is a fact about what somebody is; this is a fact about how he feels. There is nothing on him to hit, so the only opening in the entire character is his state of mind.
+
+**And it is the same dial as the insta-KO, two minutes later.** Angry, or just wanting to, ends you. Happy, passive or neutral saves you. One switch read from both ends, and he is the one holding it. The weapon and the shield are the same control.
+
+**And it retires the power ladder.** Three hundred and forty-one beats of × 3.6e100, Beyond Fiction and Absolute Infinity, and none of it is the answer here. You do not beat him, you do not outscale him, you do not counter him. You make him decide not to end you.
+
+**And it is the second limit in an hour that comes from inside him.** At 6:08 PM: *"Pero LAI can even start crashing"*, with no enemy attached. At 7:23 PM: the only way past him is his own choice. Neither one is something anybody does to him.
+
+**And the one move that works is the one he deleted.** Back in beat 106 Pero destroyed the MERCY, ACT, ITEM and FIGHT buttons — the actual controls. Tonight mercy is the only way through him. That is a reading of the two beats together, not a rule Toby wrote, and the beat labels it as one.
+
+**Built as game beat 342, `MAKE HIM SPARE YOU`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of EVERY OTHER CHARACTER HAS A CERTAIN WEAKNESS · PERO ONLY HAS ONE WAY YOU CAN SURVIVE / IF YOU MAKE HIM SPARE YOU AND HAPPY · AND PASSIVE / NEUTRAL AND ALL THOSE STUFF** under *EVERY OTHER CHARACTER CAN BE BEATEN BY SOMETHING YOU DO.*, and a drawn **dial** running HAPPY · PASSIVE · NEUTRAL → SPARED on the green left end to ANGRY · OR JUST WANTS TO → INSTA-KO on the red right end, with a needle swinging across it and changing colour as it crosses the middle, plus **NOTHING TO HIT · NOTHING TO EXPLOIT · ONLY A MOOD.** boxed over *THE SECOND LIMIT IN AN HOUR THAT COMES FROM INSIDE HIM.*, and a drifting strip of *MAKE HIM SPARE YOU*.
+- **HE HAS NO WEAKNESS (left)** — five rows (every character has a weakness / low HP, a counter, a weapon / a form limit, a reset, a box / but not Pero, he has none of those / nothing to hit, nothing to exploit), closing on *A WEAKNESS IS A THING* / *ABOUT WHAT THEY ARE.* / *HIS IS A THING* / **ABOUT HOW HE FEELS.**
+- **AND ONE WAY TO SURVIVE HIM (centre)** — five rows (one way you can survive / make him spare you / and happy, and passive, neutral / not a fight, a decision he makes / not your power, his choice), closing on *YOU DO NOT BEAT HIM.* / *YOU DO NOT OUTSCALE HIM.* / *YOU MAKE HIM DECIDE* / **NOT TO END YOU.**
+- **AND IT IS THE SAME DIAL (right)** — five rows (angry → insta-KO, two min ago / or wants to → the same result / happy → you live / passive → you live / one dial → read from both ends), over *THE WEAPON AND THE SHIELD ARE THE SAME SWITCH.*, closing on **AND HE IS HOLDING IT.**
+- **WHAT DOES NOT WORK ON HIM. (band)** — a four-row grid lit one at a time (LOW HP → works on everyone else, not on him / A COUNTER → works on everyone else, not on him / A FORM LIMIT → works on everyone else, not on him / **HIS OWN MOOD** → the only way through, make him spare you), closing on *three hundred and forty-one beats of power numbers, and none of them are the answer to this one*.
+- **AND THE MERCY BUTTON (band inset)** — a cycler across BACK IN BEAT 106 · Pero broke the MERCY button / AND ACT, AND ITEM · and FIGHT, all four of them / AND TONIGHT · mercy is the only way past / **SO THE ONE OPTION · is the one he removed**, flagging *A READING, NOT A RULE HE WROTE* on the last row, over *THE ONLY MOVE THAT WORKS ON HIM* / *IS THE ONE HE DELETED*.
+- **Strip:** THE WEAKNESS · HE DOES NOT HAVE ONE / THE CONDITION · HAPPY, PASSIVE, NEUTRAL / THE DIAL · ONE SWITCH, BOTH WAYS.
+- **Footers:** *EVERY OTHER CHARACTER CAN BE BEATEN BY SOMETHING YOU DO, AND HE CAN ONLY BE SURVIVED BY SOMETHING HE DECIDES* and **★ MAKE HIM SPARE YOU ★**.
+- **Cycle length** `LV_CYC` 7244 → 7266; **screenshot helper:** new `makeHimSpareYou` scene.
+
+![BEAT 342 — MAKE HIM SPARE YOU](screenshots/404-make-him-spare-you.png)
+
 ## 2026-08-16 — MOST VARIED · FIRST PLACE STOPS BEING A NUMBER AND STARTS BEING A HEADCOUNT (BEAT 341)
 
 Based on Toby's 2026-08-16 lore, 7:21:13 PM, same thread, sixteen minutes after ONLY HE SURVIVES. His own typing, in full: *"Pero LAI is the most varied and most powerful entity in Classics. Simon has the most forms and is considered second most powerful with his resets and stuff. Pero LAI could insta-KO anyone if he is angry or/and wants to. You need to fear Anti-Virus 404 (Simon's newest form coded by Code 303), and Code 303 (Pero vary), which are the most recent forms/vary of Pero LAI and Simon. Many different beings are Pero's varies. Such as Tunner and Mr. Black and Paul and EndlessAnimations and ToddLLM 001 and ToddLLM 002 and Code 303 and I believe there is more."* The "current top-form / varied-entity rule" restatement, the Pero-can-be list, the status headings, the 303/404 connection and the clean canon update pasted under it are ChatGPT commentary.
