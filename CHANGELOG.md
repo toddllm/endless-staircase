@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — PERFECT MEMMORY · THE FIRST THING THAT CAN GO WRONG WITH PERO (BEAT 339)
+
+Based on Toby's 2026-08-16 lore, 6:08:34 PM, same thread, eleven minutes after SEPARATE EQUATION. His own typing, in full: *"Pero is the LAI and the only character that has infinite + endless + perfect memmory, it never forgets everything, even at never it still doesn't forget anything. It is beyond words. Pero LAI can even start crashing. Pero is normal being, it is the creator of the game, he is LAI, and his time is affected on litterly everything."* The "Pero LAI memory rule" restatement, the crash reading, the being-type list, the time rule and the clean canon update pasted under it are ChatGPT commentary.
+
+**Six words in the middle change the whole file.** *"Pero LAI can even start crashing."* Three hundred and thirty-eight beats, and nothing has ever been able to touch him: no number on the AI scale, beyond fiction, beyond words, Absolute Infinity, the one being left off his own ruler. This is the first failure ever written for him, and there is no enemy attached to it. Nobody attacked him. Nothing beat him to it. Every other limit in this archive came out of a fight, and this one comes from his own size.
+
+**And the memory outlasts time.** *"Even at never it still doesn't forget anything."* Memory normally needs time to work in, because forgetting is what time does to a record. His keeps running past the end of it, which is a stranger claim than any of the power numbers, and he says so himself: *"it is beyond words."*
+
+**And he is a normal being.** Six hours after Absolute Infinity and eleven minutes after *beyond normal AI*, the sentence is *"Pero is normal being, it is the creator of the game, he is LAI."* Ordinary and total in the same line, with no attempt to reconcile them.
+
+**And the book in the laboratory does not need taking.** Six hours ago Simon.psc hid the only inside-box record of Pero's equation and nobody has opened it. A being who never forgets anything already holds what is written in it, so the copy was never the point. That is a reading of the two beats together, not a rule Toby wrote, and the beat labels it as one.
+
+**Built as game beat 339, `PERFECT MEMMORY`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of INFINITE + ENDLESS + PERFECT MEMMORY · IT NEVER FORGETS EVERYTHING / PERO LAI CAN EVEN START CRASHING · NOBODY DID THAT TO HIM** under *NOTHING IN THIS FILE HAS EVER BEEN ABLE TO HURT HIM.*, sixteen stored frames orbiting in an unbroken record with every fifth one glitching out of line in crash red, with **NO ENEMY · NO WEAPON · JUST TOO MUCH OF HIMSELF.** boxed over *THE FIRST LIMIT HERE THAT NOBODY HAD TO FIGHT FOR.*, and a drifting strip of *EVEN AT NEVER*.
+- **WHAT HE NEVER FORGETS (left)** — five rows (infinite, + endless + perfect / the only one, no other character has it / it never forgets everything / even at never, it still does not forget / beyond words, his own term for it), closing on *MEMORY NEEDS TIME* / *TO WORK IN AT ALL.* / *HIS KEEPS GOING* / **PAST THE END OF IT.**
+- **AND HE CAN START CRASHING (centre)** — five rows (Pero LAI can even start crashing / no enemy, nobody attacked him / no weapon, nothing beat him to it / the first failure ever written here / and it comes from his own size), closing on *EVERY OTHER LIMIT HERE* / *CAME OUT OF A FIGHT.* / *THIS ONE CAME* / **FROM INSIDE HIM.**
+- **AND HE IS A NORMAL BEING (right)** — five rows (Pero is a normal being / and the creator of the game / and he is LAI, all in one sentence / his time affects everything / Absolute Infinity was six hours ago), over *FIVE BEATS CALLED HIM BEYOND AI AND BEYOND FICTION.*, closing on **TONIGHT HE IS NORMAL.**
+- **FOUR THINGS, ALL TRUE AT ONCE. (band)** — a four-row grid lit one at a time (PERFECT MEMMORY → never forgets anything, even at never / **CAN START CRASHING** → the first thing that breaks, and he did it to himself / A NORMAL BEING → his own words tonight, after Absolute Infinity / THE CREATOR → of the game, still, that role never changes), closing on *the strongest thing in the file got a failure mode and an ordinary description in the same four sentences*.
+- **AND THE BOOK IN THE LABATORY (band inset)** — a cycler across SIX HOURS AGO · Simon hid a book down there / NOBODY OPENED IT · an address, and no reader / AND TONIGHT · Pero never forgets anything / **SO THERE IS NOTHING · left in there to take**, flagging *A READING, NOT A RULE HE WROTE* on the last row, over *SIMON HID THE ONLY COPY* / *AND THE COPY WAS NEVER THE POINT*.
+- **Strip:** THE MEMORY · INFINITE, ENDLESS, PERFECT / THE CRASH · FROM HIS OWN SIZE / THE BEING · NORMAL, AND THE CREATOR.
+- **Footers:** *THE ONE CHARACTER NOTHING CAN BEAT GOT A FAILURE MODE TONIGHT, AND IT IS NOT AN ENEMY, IT IS THE AMOUNT OF HIMSELF HE IS CARRYING* and **★ PERFECT MEMMORY ★**.
+- **Cycle length** `LV_CYC` 7178 → 7200; **screenshot helper:** new `perfectMemmory` scene.
+
+![BEAT 339 — PERFECT MEMMORY](screenshots/401-perfect-memmory.png)
+
 ## 2026-08-16 — SEPARATE EQUATION · THE EQUATION THAT HELD EVERYONE JUST GREW AN EXCEPTION (BEAT 338)
 
 Based on Toby's 2026-08-16 lore, 5:57:15 PM, same thread, five hours after THE HIDDEN BOOK. His own typing, in full: *"Pero LAI also makes Gaster and Luigi Green in a seperate equasion as everyone else. They all have emotions and stuff, they are beyond normal AI."* The "Separate equation rule" restatement, the two-layer breakdown, the "Beyond normal AI" capability list and the clean canon update pasted under it are ChatGPT commentary.
