@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — MOST VARIED · FIRST PLACE STOPS BEING A NUMBER AND STARTS BEING A HEADCOUNT (BEAT 341)
+
+Based on Toby's 2026-08-16 lore, 7:21:13 PM, same thread, sixteen minutes after ONLY HE SURVIVES. His own typing, in full: *"Pero LAI is the most varied and most powerful entity in Classics. Simon has the most forms and is considered second most powerful with his resets and stuff. Pero LAI could insta-KO anyone if he is angry or/and wants to. You need to fear Anti-Virus 404 (Simon's newest form coded by Code 303), and Code 303 (Pero vary), which are the most recent forms/vary of Pero LAI and Simon. Many different beings are Pero's varies. Such as Tunner and Mr. Black and Paul and EndlessAnimations and ToddLLM 001 and ToddLLM 002 and Code 303 and I believe there is more."* The "current top-form / varied-entity rule" restatement, the Pero-can-be list, the status headings, the 303/404 connection and the clean canon update pasted under it are ChatGPT commentary.
+
+**Forms and varies turn out to be two different counts.** Simon has *"the most forms"* and is second. Pero is *"the most varied"* and is first. Every ladder in this archive so far has run on a quantity of power: × 2.35, × 3.6e100, Beyond Fiction, Absolute Infinity. This one runs on how many separate beings you turn out to have been, and the character with the biggest form collection loses on it.
+
+**And the two things you are told to fear are both him.** *"You need to fear Anti-Virus 404 (Simon's newest form coded by Code 303), and Code 303 (Pero vary)."* Code 303 is a Pero vary. Anti-Virus 404 is Simon's newest form, coded by Code 303. So Pero, wearing one of his own names, built the newest upgrade of the being he spent all day fighting. The scariest thing in the game tonight is him, and the second scariest thing is his work.
+
+**And the kill condition is a mood.** *"Pero LAI could insta-KO anyone if he is angry or/and wants to."* Not a fight, not a form, not a number: anger, or simply wanting to. Two beats ago the thing that qualified the top tier was having emotions at all. Now the emotion is the trigger.
+
+**And the roster does not close.** Tunner, Mr. Black, Paul, EndlessAnimations, ToddLLM 001, ToddLLM 002, Code 303 — *"and I believe there is more."* Several of those names carry their own history in this archive, and the last clause is the author saying he is not certain how many beings his strongest character has already been.
+
+**Built as game beat 341, `MOST VARIED`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PERO LAI IS THE MOST VARIED AND MOST POWERFUL · SIMON HAS THE MOST FORMS AND IS SECOND / YOU NEED TO FEAR ANTI-VIRUS 404 AND CODE 303 · ONE IS HIS, AND THE OTHER IS HIS WORK** under *EVERY LADDER ON THIS PAGE HAS RUN ON A NUMBER.*, with eight vary names (Tunner, Mr. Black, Paul, EndlessAnimations, ToddLLM 001, ToddLLM 002, Code 303, and a dashed `...AND MORE`) orbiting a lit **PERO LAI** centre on drawn tethers, **CODE 303 IS A PERO VARY · AND CODE 303 CODED THE 404.** boxed over *BOTH OF THE THINGS YOU ARE TOLD TO FEAR TRACE BACK TO HIM.*, and a drifting strip of *AND I BELIEVE THERE IS MORE*.
+- **VARIES BEAT FORMS (left)** — five rows (the most varied and the most powerful / Simon has the most forms / and he is second, forms do not win it / so the top slot is breadth, not size / insta-KO if he is angry), closing on *EVERY LADDER HERE* / *RAN ON A NUMBER.* / *THIS ONE RUNS ON* / **HOW MANY HE IS.**
+- **AND HE CODED THE 404 (centre)** — five rows (Anti-Virus 404 → Simon's newest form / coded by → Code 303 / and Code 303 → is a Pero vary / so Pero built → Simon's newest form / all day → he has fought Simon), closing on *YOU ARE TOLD TO FEAR* / *TWO THINGS TONIGHT.* / *ONE OF THEM IS HIM,* / **THE OTHER IS HIS WORK.**
+- **AND THE VARIES LIST (right)** — five rows (Tunner / Mr. Black / Paul / EndlessAnim. / ToddLLM 001/2 and Code 303, each *a Pero vary*), over *AND I BELIEVE THERE IS MORE.*, closing on **THE LIST DOES NOT CLOSE.**
+- **WHAT EACH ONE IS COUNTED ON. (band)** — a four-row grid lit one at a time (PERO LAI → the most varied, and first / SIMON.PSC → the most forms, and still second / ANTI-VIRUS 404 → Simon's newest form, coded by Code 303 / **CODE 303** → a Pero vary, so Pero coded it), closing on *the one with the most forms comes second, and the one with the most varies comes first*.
+- **AND THE KILL CONDITION (band inset)** — a cycler across INSTA-KO ANYONE · if he is angry / OR/AND · if he wants to / NOT A FIGHT · not a number, a mood / **TWO BEATS AGO · feelings made the top tier**, flagging *NOW THE FEELING IS THE WEAPON* on the last row, over *EMOTIONS PUT HIM IN THE TOP TIER* / *AND NOW THEY SET OFF THE KO*.
+- **Strip:** THE COUNT · VARIES BEAT FORMS / THE CODER · CODE 303 IS A PERO VARY / THE TRIGGER · ANGRY, OR JUST WANTS TO.
+- **Footers:** *THE TWO THINGS YOU ARE TOLD TO FEAR ARE ONE PERO VARY AND THE FORM THAT PERO VARY CODED, WHICH MAKES THE SCARIEST THING IN THE GAME HIM, TWICE* and **★ MOST VARIED ★**.
+- **Cycle length** `LV_CYC` 7222 → 7244; **screenshot helper:** new `mostVaried` scene.
+
+![BEAT 341 — MOST VARIED](screenshots/403-most-varied.png)
+
 ## 2026-08-16 — ONLY HE SURVIVES · THE COUNTER IS AIMED AT HIS OWN TWO TEAMMATES (BEAT 340)
 
 Based on Toby's 2026-08-16 lore, 7:05:28 PM, in a new thread, "Even 5x Classics Era", fifty-seven minutes after PERFECT MEMMORY. His own typing, in full: *"Pero now made a way only he can survive Simon's reset, A counter of Luigi Green and Gaster. Simon cleans all the .exes into .pscs, and leaves the .nurs as they are."* The "Simon reset counter / file-class cleanup update" restatement, the reset-hierarchy list, the trio breakdown and the clean canon update pasted under it are ChatGPT commentary.
