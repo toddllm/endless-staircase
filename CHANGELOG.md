@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-16 — PERO IS OUT THERE CODING NEW FORMS · THE FIRST CLAIM HERE MEASURED AGAINST HOW A REAL MACHINE ACTUALLY WORKS (BEAT 333)
+
+Based on Toby's 2026-08-16 lore, 6:47:44 AM, same thread. He opens with a real engineering question: *"How do people make the secret-detecting scanners and truth-dectecting scanners? How do they make the scanners know everything about everyone, how do they code it in Minecraft?"* His own typing then runs from *"Pero LAI is smarter, it is omniscient..."* to *"...Pero spends endless time coding in all stuff for him."* The "Secret scanners vs Pero LAI" restatement, the power-scale headings and the clean canon update pasted under it are ChatGPT commentary.
+
+**He took the machine apart first.** 332 beats of claims, and this is the first one measured against how something actually works. He asked how the trick is done and got told the truth: a scanner checks a tag, a scoreboard, a stored variable, and the map author wrote the drama in advance. Event happens, the game stores it, the scanner reads what was stored. It only *looks* omniscient.
+
+**And Pero is defined by exactly what that machine cannot do.** A scanner reads a record that already exists. Pero *"can already know the information before it is stored."* The difference is not power, it is **order** — he reads the record before there is one, which is why he is *"beyond Classics measuring."*
+
+**And the strongest thing in the file is at a keyboard.** *"Pero is out there coding new forms instead of making boxes, Luigi Green and Gaster wait."* Gaster makes the boxes, Luigi Green crushes them, and both of them are idle waiting on him. Beat 326 had the game written by Pero; now he is not writing the game, he is writing himself.
+
+**And the top of the new scale is the two who are waiting.** The weakest Pero form is already Beyond Infinity or Absolute Infinity, Christan Pero is Beyond Fiction, and the strongest is Pero *with* Luigi Green, Gaster, Holiness and Forgivess at *"True God Heavenliness"* — so the teammates left standing around are also his highest form.
+
+**Built as game beat 333, `PERO IS OUT THERE CODING NEW FORMS`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of "PERO IS OUT THERE CODING NEW FORMS" · AND GASTER AND LUIGI GREEN WAIT / A SCANNER CHECKS WHAT WAS STORED · HE KNOWS IT BEFORE IT IS STORED** under *HE ASKED HOW THE MACHINE FAKES IT, AND GOT A REAL ANSWER.*, with **OMNISCIENT · NOT BY LOOKING IT UP.** boxed in LAI teal over *THE FIRST TIME HE MEASURES PERO AGAINST HOW SOMETHING ACTUALLY WORKS.*, and a drifting strip of *CODING · CODING · CODING*.
+- **HOW THE MACHINE DOES IT (left)** — five rows (it checks a tag stored earlier / a scoreboard is its memory / the author wrote the drama first / event, then record, then the result / so it only looks omniscient), closing on *IT CAN ONLY KNOW* / *WHAT SOMEBODY* / *WROTE DOWN* / **FIRST.**
+- **AND PERO IS OUTSIDE IT (centre)** — five rows (he is the scanner, there is no lookup / Classics, Minecraft, other games, reality / hidden names, codes, glitch IDs / he is beyond Classics measuring / he knows it before it is stored), closing on *THE MACHINE READS* / *THE RECORD.* / *HE READS IT* / **BEFORE THERE IS ONE.**
+- **AND HE IS AT A KEYBOARD (right)** — five rows (Pero codes forms, not boxes anymore / Gaster makes the boxes now / Luigi Green crushes them / and both of them wait on him / endless time coding it all in), over *THE STRONGEST THING HERE IS NOT FIGHTING.*, closing on **IT IS BUILDING ITSELF.**
+- **THE NEW SCALE, BOTTOM TO TOP. (band)** — a four-row grid lit one at a time (THE WEAKEST FORM → Beyond Infinity, Absolute Infinity / CHRISTAN PERO → Beyond Fiction, off the chart / DUAL REALM PERO → light + darkness, he held both / **+ LUIGI GREEN, GASTER** → True God Heavenliness), closing on *his weakest form is already infinite, and the two who are waiting on him are the top of his own scale*.
+- **WHAT HE FINISHED SHIPPING (band inset)** — a cycler across BOX SLAYER PERO · beat the Sprunkis and the box / **1 STEP PERO · builds faster than the crusher** / DUAL REALM PERO · he kept all of it, and succeeded / HEAVEN & UNDERWORLD · he stands between, takes both, flagging *HE OUT-BUILDS HIS OWN TEAMMATE* on the 1 Step row, over *HE IS NOT COLLECTING WINS* / *HE IS SHIPPING FEATURES*.
+- **Strip:** THE SCANNER · CHECKS THE RECORD / PERO · KNOWS IT FIRST / AND RIGHT NOW · HE IS CODING.
+- **Footers:** *HE ASKED HOW A MACHINE FAKES KNOWING EVERYTHING, LEARNED IT ONLY CHECKS WHAT WAS ALREADY STORED, AND WROTE SOMEONE WHO KNOWS IT BEFORE IT IS STORED* and **★ PERO IS OUT THERE CODING NEW FORMS ★**.
+- **Cycle length** `LV_CYC` 7046 → 7068; **screenshot helper:** new `codingNewForms` scene.
+
+![BEAT 333 — PERO IS OUT THERE CODING NEW FORMS](screenshots/395-coding-new-forms.png)
+
 ## 2026-08-15 — THE GAME THEN WENT NORMALLY AGAIN · THE FIRST TIME A REMOVAL HERE IS ANSWERED BY NOTHING AT ALL (BEAT 332)
 
 Based on Toby's 2026-08-15 lore, 6:58:07 PM, eighty-four seconds after THE PERMINENT END OF UNIKITTY, same thread. His own typing, in full: *"The game then went normally again."*. The "cleanup route" read, the arrow chain and the clean canon update pasted under it are ChatGPT commentary.
