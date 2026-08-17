@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-17 — A TRIO IN THE BOX · THE RANK SHEET STOPS LISTING BEINGS AND STARTS LISTING TEAMS (BEAT 343)
+
+Based on Toby's 2026-08-17 lore, 8:03:30 AM, same thread, the morning after MAKE HIM SPARE YOU, with the Alex/Lica sheet attached to the follow-up mail. His own typing, in full: *"Pup-Pup-Pup-Pup-Pup-Pupahya, Alex, and Greg. (PUP-AH-YAH), Pupahya has many versions of his dog, and he can have any fruit on his back. Pupahya, Alex, and Greg all make a Trio in the box. Lica and Alex are a duo. Here is Lica lore. Pero, Gaster, and Luigi Green are a trio, the most powerful trio. Gray is trying to plan how to beat Lica, Pupahya, Alex, and Greg."* The "box-side trio" restatement, the Pupahya update, the role list, the power-structure headings and the clean canon update pasted under it are ChatGPT commentary.
+
+**First place stops being a person.** Three hundred and forty-two beats ranked one being against another: × 2.35, × 3.6e100, Beyond Fiction, Absolute Infinity, most forms, most varies. Tonight the rank sheet has three entries and every one of them is a group — the most powerful trio, the trio in the box, and a duo. Not one number appears anywhere in it.
+
+**And Alex stands in two of them at once.** He is in the box trio with Pupahya and Greg, and he is in the duo with Lica. The only name written on more than one team. And he is ranked above both of his own partners: the Alex sheet has him stronger than Pupahya *"barely"* and stronger than Lica *"defeantly"*. He is not split between two sides; he is the hinge the whole box side turns on.
+
+**And creation and deletion are on the same side now.** Alex pulls podiums, blocks and entire castles out of thin air. Greg turns matter into air. Exact opposites, same trio, and nobody is fighting about it. Meanwhile Pupahya's fruit stops being fixed and becomes a variable — *"any fruit on his back"*, many versions of the dog — so there is no settled matchup left to scout.
+
+**And the one thing Alex cannot do is say his own teammate's name.** From the Alex sheet in the same mail: he controls all the 8 bits, the Mod Beyond, code, AI bots, commands, and quadrillions of languages, and *"he can't say Pup-pup-pup-pup-pup-pupahya"*. The word that stops him is the name of the character standing next to him on the trio. This morning that name arrived with a pronunciation key attached: PUP-AH-YAH.
+
+**And Gray picked the fight he might win.** His plan is against Lica, Pupahya, Alex and Greg — the box side. Not against Pero, Gaster and Luigi Green, who are named in the same message as the most powerful trio.
+
+**Built as game beat 343, `A TRIO IN THE BOX`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PUPAHYA, ALEX, AND GREG ALL MAKE A TRIO IN THE BOX / LICA AND ALEX ARE A DUO alternating with PERO, GASTER, AND LUIGI GREEN ARE A TRIO / THE MOST POWERFUL TRIO**, under *THREE HUNDRED AND FORTY-TWO BEATS RANKED ONE BEING AGAINST ANOTHER.*, and a drawn **roster board** of three plates — THE MOST POWERFUL TRIO (outside the box), THE TRIO IN THE BOX, THE DUO — with a pulsing tie line joining the two plates Alex's name appears on, labelled **ALEX, TWICE**, plus **ONE TRIO OUTSIDE THE BOX · ONE TRIO INSIDE IT · AND A DUO.** boxed over *AND GRAY IS PLANNING AGAINST FOUR OF THEM AT ONCE.*, and a drifting strip of *PUP-AH-YAH*.
+- **THE LADDER IS TEAMS NOW (left)** — five rows (most powerful / Pero, Gaster, Luigi Green · in the box / Pupahya, Alex, Greg · the duo / Lica and Alex · the planner / Gray, against four · no numbers / not one figure all day), closing on *THE SHEET USED TO ASK* / *WHO IS STRONGER.* / *NOW IT ASKS* / **WHO IS STANDING TOGETHER.**
+- **AND ALEX IS ON TWO OF THEM (centre)** — five rows (in the trio / with Pupahya and Greg · in the duo / with Lica · over Pupahya / stronger, barely · over Lica / stronger, defeantly · both partners / ranked under him), closing on *HE IS NOT SPLIT* / *BETWEEN TWO SIDES.* / *HE IS THE HINGE* / **THE BOX SIDE TURNS ON.**
+- **AND THE OPPOSITES ARE ALLIES (right)** — five rows (Alex / pulls it out of thin air · Greg / turns matter into air · same trio / not a fight between them · Pupahya / any fruit on his back · no fixed / matchup left to scout), over *MAKING AND UNMAKING, STANDING SIDE BY SIDE.*, closing on **AND NOBODY IS FIGHTING.**
+- **WHAT GRAY HAS TO PLAN AGAINST. (band)** — a four-row grid lit one at a time (LICA → a pixel attack, a layer of her own / PUPAHYA → many fruit versions, no fixed matchup / **ALEX** → builds out of thin air, a counter to order / GREG → turns matter to air, the attack just goes), closing on *and he is not planning against the most powerful trio, he picked the other one*.
+- **AND THE NAME HE CANNOT SAY (band inset)** — a cycler across ALEX CONTROLS · all the 8 bits, and the Mod Beyond / AND CODE · and AI bots, and commands / AND LANGUAGES · quadrillions of them / **AND NOT THIS** · Pup-pup-pup-pup-pup-pupahya, flagging *FROM THE ALEX SHEET IN THE SAME MAIL* on the last row, over *THE ONE WORD HE CANNOT GET OUT* / *IS HIS OWN TEAMMATE. PUP-AH-YAH.*
+- **Strip:** THE TRIO · PUPAHYA, ALEX, GREG / THE DUO · LICA AND ALEX / THE PLAN · GRAY AGAINST FOUR.
+- **Footers:** *THE RANK SHEET STOPS LISTING BEINGS AND STARTS LISTING TEAMS, AND THE ONE NAME ON TWO OF THEM CANNOT SAY THE NAME BESIDE IT* and **★ A TRIO IN THE BOX ★**.
+- **Cycle length** `LV_CYC` 7266 → 7288; **screenshot helper:** new `aTrioInTheBox` scene.
+
+![BEAT 343 — A TRIO IN THE BOX](screenshots/405-a-trio-in-the-box.png)
+
 ## 2026-08-16 — MAKE HIM SPARE YOU · SURVIVING MOVES OFF YOUR SIDE OF THE FIGHT AND ONTO HIS (BEAT 342)
 
 Based on Toby's 2026-08-16 lore, 7:23:13 PM, same thread, two minutes after MOST VARIED. His own typing, in full: *"Every other character has a certain weakness(es), but Pero only has one way you can survive, if you make him spare you and happy and passive/neutral and all those stuff."* The "Pero weakness rule" restatement, the not-a-normal-weakness list, the mercy/passive condition list and the clean canon update pasted under it are ChatGPT commentary.
