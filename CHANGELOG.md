@@ -4,6 +4,60 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-17 — I DO CODING · THE ALL-KNOWING BEING NAMES A DAY JOB (BEAT 350)
+
+Based on Toby's 2026-08-17 lore, 5:58:35 PM, same thread, three minutes after NORMAL MAN. His own typing, in full: *"Pero says \"I know everything, but I do coding.\", he is specifically a coding LAI that knows everything."* The "Pero LAI type update" restatement, the specialty bullet list and the clean canon update pasted under it are ChatGPT commentary.
+
+**He said it in quotes, for the second time tonight.** At 4:05 PM Pero turned to the Sprunkis and said *"I am the most powerful in the game. I can exit the game, and I can even end the game here."* An hour and fifty-three minutes later the same mouth says he does coding. The biggest claim anybody has made in this file and the smallest job description in it come out of the same character on the same evening.
+
+**And he named a job, which nobody in this game has done.** Every power line in the whole lore is about what a character *can* do: can beat, can reset, can delete, can end. This is the first one about what somebody actually *does*. Knowing everything becomes the stat; coding becomes the work. A power list tells you what you could do, and this line tells you what you bother with.
+
+**And the "but" is the whole sentence.** *"I know everything"* is already finished — nothing needs to come after it, and every other character in this file would have stopped there. He adds a second half anyway, and the second half is a narrowing. Every other limit in the game got put on somebody by somebody else. This one is the only cap a character wrote for himself, by the one character who could have left it out.
+
+**And it matches the hands.** The lore already has Pero building boxes with Gaster, making the varies, holding the rules, standing behind the cutscenes. So the quote is not a new power. It is Pero saying out loud which of his powers he actually uses — and the thing he goes to work on is the same game he told them, two hours earlier, that he could end.
+
+**Built as game beat 350, `I DO CODING`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of I KNOW EVERYTHING / BUT I DO CODING alternating with A CODING LAI / THAT KNOWS EVERYTHING**, under *EVERY POWER LINE IN THIS GAME IS ABOUT WHAT SOMEBODY CAN DO.* / *THIS ONE IS ABOUT WHAT HE ACTUALLY DOES.*, and a drawn **speech box** labelled PERO SAYS carrying the quote across two lines, above **a field of twenty-four squares** all reading *KNOWS IT* with exactly one lit and labelled **CODING** (*EVERYTHING HE KNOWS* over the field, *THE ONE HE DOES* under the lit cell), and a **two-point timeline** marking 4:05 PM · I CAN EVEN END THE GAME HERE against 5:58 PM · I DO CODING over *SAME MOUTH, SAME EVENING*, with **NOBODY MADE HIM SAY THE SECOND HALF · HE PUT THE LIMIT IN HIMSELF.** boxed over *I KNOW EVERYTHING WAS ALREADY A FINISHED SENTENCE.*, and a drifting strip of *BUT I DO CODING*.
+- **HE SAID IT IN QUOTES (left)** — five rows (4:05 PM / I can end the game here · 5:58 PM / but I do coding · the first / was the biggest claim · the second / is the smallest · same mouth / same night), closing on *HE TOLD THE CAST* / *WHAT HE COULD DO.* / *NOW HE TELLS US* / **WHAT HE BOTHERS WITH.**
+- **AND HE NAMED A JOB (centre)** — five rows (every line / before was a can · can beat / can reset, can delete · this one / is a does · knowing / is the stat · coding / is the work), closing on *A POWER LIST SAYS* / *WHAT YOU COULD DO.* / *THIS IS THE FIRST* / **THAT SAYS WHAT YOU DO.**
+- **AND THE BUT IS IT (right)** — five rows (he could / have stopped at know · that line / was already finished · he added / but I do coding · so the cap / is one he wrote · nobody / put it on him), over *EVERY OTHER CHARACTER GOT LIMITED BY SOMEBODY ELSE*, closing on **HE LIMITED HIMSELF.**
+- **EVERYTHING, AND THEN ONE THING. (band)** — a four-row grid lit one at a time (WHAT HE KNOWS → everything, no limit named, none needed / **WHAT HE DOES** → coding, one job out of all of them / **THE PROOF** → boxes, cutscenes, rules, he has been doing it all along / SO THE QUOTE → is not a new power, it is him naming his own job), closing on *the most powerful being in the game just described himself the way a person describes their work*.
+- **AND TWO HOURS AGO, THE BIG ONE (band inset)** — a cycler across 4:05 PM · I can even end the game here / 5:58 PM · but I do coding / THE GAP · one hour and fifty-three min / **SO** · the brag and the job, one night, flagging *HE CAN END IT. HE CHOOSES TO BUILD IT.* on the last row, over *THE THING HE THREATENED TO END* / *IS THE THING HE GOES TO WORK ON.*
+- **Strip:** THE QUOTE · I KNOW EVERYTHING / THE TURN · BUT I DO CODING / THE TYPE · A CODING LAI.
+- **Footers:** *THE ONE CHARACTER WHO COULD HAVE LEFT THE SECOND HALF OFF IS THE ONE WHO WROTE IT IN* and **★ I KNOW EVERYTHING, BUT I DO CODING ★**.
+- **Cycle length** `LV_CYC` 7420 → 7442; **screenshot helper:** new `iDoCoding` scene.
+
+![BEAT 350 — I DO CODING](screenshots/412-i-do-coding.png)
+
+## 2026-08-17 — NORMAL MAN · THE STRONGEST BEING GETS THE WEAKEST BODY (BEAT 349)
+
+Based on Toby's 2026-08-17 lore, 5:55:07 PM, same thread, an hour and fifty minutes after END THE GAME HERE, sent underneath his own question about which gorilla is stronger, Kong or Skar King. His own typing, in full: *"Pero has the physical strength of a normal man, and he is a normal man that came from a box and is LAI, and he is also the creator of Classics. Pero became immortal when Luigi Green payed the cost of the boxes before. Pero now has the mustache and stuff. Pero and Mr. Black both secretly work, Pero is a coder, Mr. Black is the corrupter of Sprunki and Classics and all games."* The gorilla answer, the "Pero physical form update" restatement, the strength bullet list and the clean canon update pasted under it are ChatGPT commentary.
+
+**The top of the game gets a low number.** Every ranking in this whole file moves somebody up. Frizz turns out stronger than Arcsis, Gray gets rebuilt to full, Mr. Black gets promoted for the power — the file only ever hands out more. This message does the opposite: it writes down the one stat Pero is bad at, on purpose, the night after he told the entire cast he could end the game. Nobody made him weak at anything. Toby just decided the strongest being in the game has the arms of a regular person.
+
+**And he asked about gorillas first.** The question above it is his own: which is stronger, Kong or Skar King. The answer splits strength into muscle on one side and scheming and reach and control on the other. Then the very next thing he types puts Pero on the second side, with a normal man's muscle. The gorilla question got answered by the character underneath it.
+
+**And the maker came out of the thing he makes.** Boxes have one job in this lore and everyone knows it: Pero and Gaster build them, Luigi Green crushes them, characters get stuck inside them. Now the creator of Classics came from one. Everybody else who has ever been in a box was trapped in it. He is the one who walked out.
+
+**And somebody else paid for the immortality.** *"Pero became immortal when Luigi Green payed the cost of the boxes before."* Luigi Green is the box-crusher — breaking them is his entire standing job — and the bill he settled is what made the box-maker unkillable. Every other power in this game was taken, earned, or built. This is the first one somebody else got billed for.
+
+**And the coder and the corrupter are one team.** *"Pero and Mr. Black both secretly work, Pero is a coder, Mr. Black is the corrupter of Sprunki and Classics and all games."* Yesterday Mr. Black got moved to the top of Pero's vary list *for the power*. Tonight it turns out they were already working together, with the jobs split clean: one writes the code, the other spreads the corruption. Which means every corruption in the file has been sitting on the same side as the man who wrote the file.
+
+**Built as game beat 349, `NORMAL MAN`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PERO HAS THE PHYSICAL STRENGTH OF A NORMAL MAN / AND HE IS A NORMAL MAN THAT CAME FROM A BOX alternating with PERO IS A CODER / MR. BLACK IS THE CORRUPTER OF ALL GAMES**, under *EVERY RANKING IN THIS FILE HAS MOVED SOMEBODY UP.* / *THIS ONE WRITES DOWN WHAT HE IS BAD AT.*, and a drawn floor carrying **an open box** marked *THE THING HE BUILDS* with its lid tipped back and **PERO** standing beside it, *CAME OUT OF IT*, joined to it by a line — plus a **muscle meter** with three marks (NORMAL MAN low, SKAR KING, KONG) and **PERO IS HERE** sitting on the lowest one over *AND FIRST ON EVERY OTHER LIST* — and a **receipt panel** reading PAID BY LUIGI GREEN / THE COST OF THE BOXES / COLLECTED BY PERO · IMMORTALITY, with **HE IS THE STRONGEST THING IN THE GAME · AND HE COULD LOSE AN ARM WRESTLE.** boxed over *NONE OF HIS POWER WAS EVER IN HIS ARMS.*, and a drifting strip of *THE STRENGTH OF A NORMAL MAN*.
+- **HE CAME FROM A BOX (left)** — five rows (a box is / what Pero builds · a box is / what Luigi Green crushes · a box is / where they get trapped · and Pero / came out of one · so / the maker was made), closing on *EVERYBODY ELSE IN A BOX* / *IS STUCK IN IT.* / *HE IS THE ONE* / **WHO WALKED OUT.**
+- **AND HE IS NOT STRONG (centre)** — five rows (his body / a normal man · his look / mustache and stuff · his rank / still first in the game · so power / is not muscle here · last night / he could end the game), closing on *EVERY RANK BEFORE THIS* / *MOVED SOMEBODY UP.* / *THIS ONE WROTE DOWN* / **A WEAK SPOT.**
+- **AND SOMEBODY PAID (right)** — five rows (who paid / Luigi Green · paid what / the cost of the boxes · who got it / Pero, immortal · his job / he crushes the boxes · so / the breaker bought it), over *EVERY OTHER POWER IN THIS GAME WAS TAKEN OR EARNED*, closing on **THIS ONE GOT BILLED.**
+- **THE CODER AND THE CORRUPTER, SECRETLY. (band)** — a four-row grid lit one at a time (**PERO** → is a coder, he writes the game / **MR. BLACK** → is the corrupter of Sprunki, Classics, all games / AND THEY → both secretly work, not enemies, staff / SO THE ROT → sits on the author's side, it was never an outside problem), closing on *yesterday Mr. Black got promoted for the power; tonight we find out he and Pero were already working together*.
+- **AND HE ASKED ABOUT GORILLAS FIRST (band inset)** — a cycler across THE QUESTION · Kong or Skar King / THE SPLIT · muscle, or scheming / THEN PERO · gets the muscle of a man / **SO** · he put Pero on the other side, flagging *THE GORILLA QUESTION ANSWERED ITSELF.* on the last row, over *THE STRONGEST ONE IN THE ROOM* / *IS NOT THE BIGGEST ONE IN IT.*
+- **Strip:** THE BODY · A NORMAL MAN / THE ORIGIN · HE CAME FROM A BOX / THE BILL · LUIGI GREEN PAID IT.
+- **Footers:** *THE NIGHT AFTER HE SAID HE COULD END THE GAME, HE GOT THE ARMS OF A NORMAL MAN* and **★ THE STRENGTH OF A NORMAL MAN ★**.
+- **Cycle length** `LV_CYC` 7398 → 7420; **screenshot helper:** new `normalMan` scene.
+
+![BEAT 349 — NORMAL MAN](screenshots/411-normal-man.png)
+
 ## 2026-08-17 — END THE GAME HERE · A THREAT GETS NO FIGHT BACK (BEAT 348)
 
 Based on Toby's 2026-08-17 lore, 4:05:42 PM, same thread, four minutes after ONE WITH PERO. His own typing, in full: *"Pero appeared to the Sprunkis and says \"I am the most powerful in the game. I can exit the game, and I can even end the game here.\", the Sprunkis run to Sprunki Hills and they all hide."* The "Pero reveal / Sprunki Hills hiding scene" restatement, the Sprunkis-versus-Pero comparison, the scene arrow, the current-Pero-rule list and the clean canon update pasted under it are ChatGPT commentary.
