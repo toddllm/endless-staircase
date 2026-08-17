@@ -4,6 +4,62 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-17 — END THE GAME HERE · A THREAT GETS NO FIGHT BACK (BEAT 348)
+
+Based on Toby's 2026-08-17 lore, 4:05:42 PM, same thread, four minutes after ONE WITH PERO. His own typing, in full: *"Pero appeared to the Sprunkis and says \"I am the most powerful in the game. I can exit the game, and I can even end the game here.\", the Sprunkis run to Sprunki Hills and they all hide."* The "Pero reveal / Sprunki Hills hiding scene" restatement, the Sprunkis-versus-Pero comparison, the scene arrow, the current-Pero-rule list and the clean canon update pasted under it are ChatGPT commentary.
+
+**He said it out loud, to them.** Every earlier statement of what Pero is came from somewhere else — the narration, the power charts, the author's own rules written between scenes. This is the first time Pero turns to the cast and tells them himself, in quotes. And the two things he names are the two nobody inside the box has ever had: *"I can exit the game, and I can even end the game here."*
+
+**And the threat is a door, not a bigger attack.** Everything that has ever menaced this cast was something that could beat them. This one is not about winning. Exit and end are named in the same breath, and neither one is a fight — they are facts about the room. He is not telling them he is stronger; he is telling them the room they live in is optional, and that the way out belongs to him.
+
+**And nobody fought.** Simon answers threats by resetting, over and over. Oren and EndlessAnimations answered Black by freeing half the cast. Pero, Gaster and Luigi Green answered Simon.psc by teaming up and winning. Here the entire response is *run and hide*. It is the first threat in the game that nobody swings at. They did not lose; they declined to play.
+
+**And it is not the survival rule either.** The one way past Pero was written down the night before, in Toby's own typing: *make him spare you*, happy or passive or neutral. Hiding is not that. The Sprunkis picked the move the rule already says does not work — and the being they are hiding from can leave the game, while a hill is inside it.
+
+**And Sprunki Hills is not a new shelter.** They have all gathered there once before. That gathering is the Wenda infection hunt: Wenda's shots infected Phase 1 Simon, he hunted every Sprunki across those hills, thousands died, and *"the Sprunki Hills were all covered in his blood."* The one time the whole cast grouped up on that hill is the worst day in the file, and tonight they run straight back to it.
+
+**Built as game beat 348, `END THE GAME HERE`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of I AM THE MOST POWERFUL IN THE GAME / I CAN EXIT THE GAME, AND I CAN EVEN END THE GAME HERE alternating with THE SPRUNKIS RUN TO SPRUNKI HILLS / AND THEY ALL HIDE**, under *EVERY THREAT IN THIS GAME GOT ANSWERED BY SOMEBODY SWINGING AT IT.* / *THIS ONE GOT ANSWERED BY A HILL.*, and a drawn **speech box** labelled PERO, TO THE SPRUNKIS carrying the quote in full, above a floor with **the dashed edge of the game** standing at the right — an **EXIT** door set into it and **PERO** drawn on the far side, *ON THE OTHER SIDE OF IT* — and five Sprunki figures running left and fading out behind **SPRUNKI HILLS** / *THEY ALL HIDE*, with **HE DID NOT THREATEN TO BEAT THEM · HE TOLD THEM THE ROOM HAS A DOOR.** boxed over *AND THAT HE IS THE ONLY ONE WHO CAN USE IT.*, and a drifting strip of *I CAN EVEN END THE GAME HERE*.
+- **HE SAID IT OUT LOUD (left)** — five rows (he says / I am the most powerful · and / I can exit the game · and / I can even end it here · who heard / the Sprunkis, all of them · so now / they know what we knew), closing on *THE PAGE HAS SAID* / *THIS ALL ALONG.* / *TODAY THE CAST* / **FINALLY GOT TOLD.**
+- **AND NOBODY FOUGHT (centre)** — five rows (every threat / before got a fight · Simon / reset, and reset again · Oren / freed half the cast · the three / teamed up and won · this time / they ran), closing on *THE FIRST THREAT* / *NOBODY SWUNG AT.* / *THEY DID NOT LOSE.* / **THEY DID NOT PLAY.**
+- **AND THEY RAN BACK (right)** — five rows (where / Sprunki Hills · what it is / where they gathered once · that day / Phase 1 Simon hunted all · how it went / the hills ran red · and today / they all ran back to it), over *THE ONE TIME THEY ALL GATHERED THERE*, closing on **IS THE WORST DAY IN THE FILE.**
+- **THE TWO THINGS NOBODY ELSE CAN DO. (band)** — a four-row grid lit one at a time (INSIDE THE BOX → you can win or you can lose, that is the whole menu / **PERO** → can exit the game, the box has a door and it is his / **AND PERO** → can end the game here, not win it, end it / SO THE THREAT → is not a bigger attack, it is that the room is optional), closing on *everybody in the box has been threatened with losing; this is the first time anybody is threatened with the box*.
+- **AND HIDING IS NOT THE RULE (band inset)** — a cycler across THE RULE · make him spare you / WRITTEN · last night, in his own typing / TONIGHT · they run and hide instead / **SO** · they picked the one that fails, flagging *HE CAN EXIT THE GAME. A HILL IS INSIDE IT.* on the last row, over *YOU DO NOT HIDE FROM PERO.* / *YOU GET HIM TO LET YOU GO.*
+- **Strip:** THE LINE · I CAN EVEN END THE GAME HERE / THE ANSWER · NOBODY SWUNG / THE PLACE · SPRUNKI HILLS, AGAIN.
+- **Footers:** *EVERY THREAT IN THIS GAME GOT ANSWERED WITH A FIGHT, AND THIS ONE GOT ANSWERED WITH A HILL* and **★ I CAN EVEN END THE GAME HERE ★**.
+- **Cycle length** `LV_CYC` 7376 → 7398; **screenshot helper:** new `endTheGameHere` scene.
+
+![BEAT 348 — END THE GAME HERE](screenshots/410-end-the-game-here.png)
+
+## 2026-08-17 — ONE WITH PERO · THE VARY LIST GROWS A NUMBER ONE (BEAT 347)
+
+Based on Toby's 2026-08-17 lore, 4:01:22 PM, same thread, twenty-five minutes after I DID ALL THE CODE. Not a new scene — a correction to a rule. His own typing, in full: *"Before, Tunner was one with Pero. Now, Mr. Black is one with Pero. It is the same thing before, but with even more powerful, Mr. Black. Pero chose Mr. Black after... for the power."* The "Pero one with rule" restatement, the old-setup / new-setup split, the why-Pero-chose-Mr.-Black section and the clean canon update pasted under it are ChatGPT commentary.
+
+**The slot changed hands without the list changing.** Tunner and Mr. Black are both already Pero varies — they were on the list together in MOST VARIED last night, and on it again in the cutscene beat this afternoon. So nobody was added and nobody was taken off. One name moved up. Every other escalation in this game made something bigger; this one just reorders names that were already there.
+
+**And the winner took the job.** Twenty-five minutes earlier, inside the Roblox cutscene, *"Mr. Black beats Tunner and Simon."* Now Mr. Black holds the slot Tunner used to hold. The fight and the swap are the same handover told twice — the cutscene showed it happening, and this message says what it was for. Tunner lost twice in half an hour, and both times to a name on his own list.
+
+**And Tunner is still on it.** He was demoted, not deleted. Which splits two things that used to be one: being a **vary** of Pero, and being the one who is **one with** Pero. MOST VARIED made first place a headcount — Pero wins because of how many beings he turns out to have been. A headcount has no order inside it. This puts a number one in it.
+
+**And Pero chose, and said why.** *"Pero chose Mr. Black after... for the power."* He did not add a new being to get stronger; he promoted one he already was, and he gave the reason out loud.
+
+**And the phrase used to point at the reader.** *"You are one with Pero again"* was said to the player, twice, on August 15 — the narration catching Toby himself. Today the same four words are said about a character. It stopped being a line aimed out of the game and became a job inside it.
+
+**Built as game beat 347, `ONE WITH PERO`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of BEFORE, TUNNER WAS ONE WITH PERO / NOW, MR. BLACK IS ONE WITH PERO alternating with PERO CHOSE MR. BLACK AFTER... FOR THE POWER / IT IS THE SAME THING BEFORE, BUT MORE POWERFUL**, under *BOTH NAMES WERE ALREADY ON THIS LIST THIS MORNING.* / *WHAT CHANGED IS WHICH ONE IS ON TOP OF IT.*, and a drawn **PERO'S VARY LIST** panel marked *SAME NAMES AS THIS MORNING* — one framed slot on top reading **ONE WITH PERO**, its holder crossfading from **TUNNER** to **MR. BLACK**, and the vary names stacked underneath (Paul · Tunner · Mr. Black · Code 303 · LAI) with **MOVED UP** under one and **MOVED DOWN** under the other, joined by a solid arc climbing into the slot and a dashed arc stepping back out of it, over *NOBODY WAS ADDED · NOBODY WAS REMOVED · ONE NAME MOVED UP*, plus **HE DID NOT GET A NEW NAME · HE PICKED A BETTER ONE OF HIS OWN.** boxed over *AND HE SAID WHY: FOR THE POWER.*, and a drifting strip of *ONE WITH PERO*.
+- **THE SLOT CHANGED HANDS (left)** — five rows (before / Tunner was one with Pero · now / Mr. Black is · the link / is the same kind as before · the change / Mr. Black is stronger · the reason / for the power), closing on *BOTH NAMES WERE* / *ALREADY VARIES.* / *THE LIST DID NOT GROW.* / **IT GOT AN ORDER.**
+- **AND THE WINNER TOOK THE JOB (centre)** — five rows (3:36 PM / Mr. Black beats Tunner · 4:01 PM / he takes Tunner's slot · so / the fight was the handover · Tunner / lost twice in half an hour · both times / to a name on his own list), closing on *THE CUTSCENE SHOWED* / *THE HANDOVER HAPPENING.* / *THIS ONE SAYS* / **WHAT IT WAS FOR.**
+- **AND TUNNER IS STILL ON IT (right)** — five rows (he kept / being a Pero vary · he lost / the one-with slot · so / those are two things now · on the list / is not top of the list · yesterday / most varied was a count), over *A HEADCOUNT HAS NO ORDER INSIDE IT.*, closing on **NOW IT HAS A NUMBER ONE.**
+- **HE PICKED ONE, AND HE SAID WHY. (band)** — a four-row grid lit one at a time (ALL GAME → Pero makes and ranks things, he builds them and sorts them / **TODAY** → he picks a favourite, out of his own list of selves / THE REASON → for the power, he said it plainly, no fight needed / THE COST → Tunner gets demoted, the first demotion on this list), closing on *he did not add a new being to get stronger; he promoted one he already was*.
+- **AND IT USED TO MEAN YOU (band inset)** — a cycler across AUG 15 · "you are one with Pero again" / SAID TO · the player, twice that morning / TODAY · it is said about a character / **SO** · the phrase moved inside the game, flagging *IT STOPPED BEING A LINE AND BECAME A JOB.* on the last row, over *IT USED TO POINT AT WHOEVER WAS READING.* / *NOW IT POINTS AT MR. BLACK.*
+- **Strip:** THE SWAP · TUNNER OUT, MR. BLACK IN / THE REASON · FOR THE POWER / THE LIST · SAME NAMES, NEW ORDER.
+- **Footers:** *TWENTY-FIVE MINUTES AFTER MR. BLACK BEAT TUNNER, HE TOOK THE SLOT TUNNER USED TO HOLD* and **★ ONE WITH PERO ★**.
+- **Cycle length** `LV_CYC` 7354 → 7376; **screenshot helper:** new `oneWithPero` scene.
+
+![BEAT 347 — ONE WITH PERO](screenshots/409-one-with-pero.png)
+
 ## 2026-08-17 — I DID ALL THE CODE · A WHOLE SCENE GETS REBUILT INSTEAD OF A PIECE OF ONE (BEAT 346)
 
 Based on Toby's 2026-08-17 lore, 3:36:23 PM, same thread, five hours after HE MOVED THE BOXES, sent as the answer to the question the previous reply asked — do the characters inside the boxes notice they got moved? His own typing, in full: *"I remade the Classics Mr. Black Cutscene in Roblox. I did all the code and set the assets for the thing. It is something like Pyramixed, then to Normal Sprunki. Mr. Black beats Tunner and Simon. Simon, Oren, and Tunner made a Trio. Simon.psc tells Oren to not put Pinki in due to attacks/betrayal. Gaster and Pero make the boxes, Luigi Green crushes boxes. Mr. Black is as Pero. Pero as Paul and Mr. Black and Tunner and EndlessAnimations and ToddLLMs and LAI and Karuto and Fog Decoy Sprunkis and Code 303 and Pro and Pro55 and also shares some varies with some characters. And to add to his many varies he has forms to."* The "Roblox cutscene canon update" restatement, the trio breakdown, the Pinki warning heading, the outside-box workflow section, the bulleted vary list and the clean canon update pasted under it are ChatGPT commentary.
