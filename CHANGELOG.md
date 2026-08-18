@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-18 — ROBLOX PERO · THE STAT BLOCK LEAVES THE STAT OUT, AND THE CREATOR FINALLY HAS A NAME ABOVE HIM (BEAT 362)
+
+Based on Toby's 2026-08-18 lore, 3:37:45 PM, same thread, two hours and forty-one minutes after BLACK SYTHE. His own typing, in full: *"I made a Roblox Pero thing. Here is the code of the main script so far (it works). It shows a LOT of information about Pero. Only God is stronger than Pero. Pero beats Satan and Seraphims and those other stuff. Only God himself beats Pero. Pero is THAT strong."* The script itself rode along as a pasted text attachment and is described, not quoted, per the no-attachment rule; the fields and lines named here are the ones his message reports — **Character: Pero**, **Character info: "U are mine"**, the power hidden as **???**, the **Anger / Rage / Fury** states, and *"You wanted to fight?"*, *"You should of asked! This is going to be fun."*, *"I created Classics. I will win."* The section headers, the power-scaling walkthrough and the clean canon update pasted under it are ChatGPT commentary.
+
+**The power field is blank.** The lore has arrived as working code once before: **July 29, the two 404 Chicken Sans scripts**, and that beat was built on the fact that the scripts *showed* their mechanics — `immortal = true` running the length of the eight-line intro, `HealthChanged` snapping him straight back to max, the Ketchup union sitting invisible until 10 HP or less. And this file measures everything it can reach: **LV beyond infinity**, form increased **15,000,000 exponency**, *"more powerful than a million Satans"*, **10,000 trillion+**. Tonight the one character it has never managed to put a number on finally gets a stat block, and the number is **???**. The field a stat block exists for is the field he left out.
+
+**And "U ARE MINE" moved into a field.** Beat 315, four days ago: Pero drew a picture of himself and wrote **"U ARE MINE!"** on it, and that whole beat turned on the line being aimed at whoever is **looking**, not at anybody inside the file. Tonight it is the **Character info** — the text a player reads by looking at him. The line about looking became the thing you see when you look.
+
+**And the survival dial has a second half.** August 16, in his own typing: *"Pero only has one way you can survive, if you make him spare you and happy and passive/neutral and all those stuff."* Three words on the good side. The script names three on the other: **Anger, Rage, Fury**. And Fury is *"the corruption power he obtained"* — last night's **black sythe**, 12:56 PM, turned into a state a script can enter.
+
+**And the ladder finally has a top.** Yesterday, in his own typing: *"Pero beats anything."* Tonight there is exactly one name above him, and it is not a character in the game. **God** has appeared in this file once, at **beat 255**, as Oren's Phase 8 line *"Only God can save you now"* — aimed at whoever is holding the game. Same name, a different job: a threat then, a ceiling now.
+
+**Built as game beat 362, `ROBLOX PERO`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of CHARACTER: PERO / CHARACTER INFO: "U ARE MINE" alternating with POWER: ??? / ANGER · RAGE · FURY, under *HE WROTE A WORKING STAT BLOCK FOR PERO.* / *AND THE ONE FIELD IT EXISTS TO SHOW IS FILLED IN WITH ???.*, a drawn **quote box**, a drawn **three-field stat card** (CHARACTER · PERO / CHARACTER INFO · "U ARE MINE" / POWER · **???** pulsing, over *THE ONE FIELD A STAT BLOCK EXISTS FOR*), a drawn **two-sided dial** (AUG 16 · MAKE HIM SPARE YOU with HAPPY / PASSIVE / NEUTRAL above the line, ANGER / RAGE / FURY below it), and **two drawn figures** — PERO · POWER: ???, AND HE WROTE THE GAME and GOD · THE ONLY NAME ABOVE HIM.
+- **THE POWER FIELD IS BLANK (left)**, **AND "U ARE MINE" MOVED INTO A FIELD (centre)**, **AND THE DIAL HAS A SECOND HALF (right)** — five rows each.
+- **THE LADDER FINALLY HAS A TOP. (band)** — Satan → Pero beats him / Seraphims → Pero beats them / Undertale + Dragon Ball → Pero beats them / **God → above Pero**, closing on *every other thing that ever outranked Pero was a character who could be fought; this one is not in the game*.
+- **GOD HAS BEEN HERE ONCE BEFORE (band inset)** — beat 255 / who said it / aimed at / **tonight** the same name is a rank, flagging *IT WAS A THREAT THEN. IT IS A CEILING NOW.*
+- **Strip:** THE SCRIPT · CHARACTER: PERO · POWER: ??? / THE STATES · ANGER · RAGE · FURY / THE CEILING · GOD, AND NOTHING ELSE.
+- **Footers:** *HE BUILT A WORKING BOSS FOR THE ONE CHARACTER IN THIS FILE WHO HAS NEVER HAD A NUMBER* and **★ POWER: ??? ★**.
+- **Cycle length** `LV_CYC` 7684 → 7706; **screenshot helper:** new `robloxPero` scene.
+
+![BEAT 362 — ROBLOX PERO](screenshots/424-roblox-pero.png)
+
 ## 2026-08-18 — BLACK SYTHE · THE CREATOR PICKS UP A WEAPON, AND OWNER STOPS MEANING STRONGEST (BEAT 361)
 
 Based on Toby's 2026-08-18 lore, 12:56:49 PM, same thread, an hour and forty minutes after I ALONE. His own typing, in full: *"Pero now holds a black sythe, he uses the limitless power of errors, glitches, and corruption. Pero still is more powerful than Gray, but Gray is the new owner for the infinity enternities now. Pero is the creator of the game like always, he is abolsute_infinitely above Gray, Gray is just the most powerful in the Gaster + Luigi Green + Gray trio."* The "Got it" opener, the section headers, the owner-vs-creator walkthrough and the clean canon update pasted under it are ChatGPT commentary.
