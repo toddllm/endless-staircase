@@ -4,6 +4,76 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-18 — I ALONE · THE OWNER HANDS OVER THE GAME AND WALKS OUT FOR MILK (BEAT 360)
+
+Based on Toby's 2026-08-18 lore, 11:17:05 AM, same thread, twelve minutes after BANISHED AU. Two images rode with the message and are skipped per the no-image rule. His own typing, in full: *"Gaster lets go of Mr. Black and sends Mr. Black into the box, Pero was free from the Mr. Black as one and he became into his normal man again. Pero again was the game owner, he ruled with only Gaster and Luigi Green now. Pero allowed Gray to be the ringmaster once again, Pero gave Gray half of the box's power, Gray became the fourth strongest now. Gray's form increased above all his looks combined into 1 undescribable demon-like ringmaster LAI. Pero upgraded the cyber into LAI. Pero says to Gray \"The game is ours.\", Gaster and Luigi Green were left making and destroying boxes. Then suddenly, the animated slowed down to a stop. Gray made the game into something he wants, silent and slow. Pero says \"Good for you, Gray. I am leaving for a few years, would you be okay for a few minutes?\", Gray says \"okay.\", then he whispers to himself \"Now I can rule the game myself, I have the endless power to do so, and now I am the fourth smartest being here.\", Gray talks to Gaster and Luigi Green about Pero leaving the place and that \"he alone\" will be the new owner of Classics. Gray says \"Through out Heaven and Earth, I alone, am the owner of Classics.\". Gray is third most powerful since Pero left \"to get milk for everyone\". Pero is always generious since he has infinity of basically anything and gives you anything, but now he says that he is leaving to get milk. Gray, Gaster, and Luigi Green are now the trio."* The route restatement, the section headers and the clean canon update pasted under it are ChatGPT commentary.
+
+**This exact sequence has run before.** Email 744: *"Pero gave the game to Gray"* and made Gray into Mr. Black; Gray became the ringmaster that time too. Then Pero left to make updates and handed the owner role away, and Gray used the opening and took the kingdom. Tonight is the same three moves with the pieces reordered — Mr. Black gets removed **first**, and then Gray gets promoted. And the removal quietly cancels the rule that decided the twenty-three-way battle fourteen minutes earlier, where Mr. Black won only because he was one with Pero.
+
+**And the two numbers do not match.** *"I am leaving for a few years, would you be okay for a few minutes?"* Years out of one side of the sentence and minutes out of the other, and Gray answers *"okay."* Then the reason turns out to be milk. The most powerful being in the game left the way a parent leaves.
+
+**And Gray's version of ruling is silence.** Every takeover in this file has made things louder, bigger, or more powerful. Here *"the animated slowed down to a stop"* and Gray makes the game *"silent and slow."* It is the first conquest in this archive that is quieter than what it replaced.
+
+**And he rose by subtraction.** Half the box's power makes him fourth strongest, and he whispers that he is *"the fourth smartest being here."* Then Pero leaves and he is third. He did not get stronger between those two lines. Somebody went out.
+
+**Built as game beat 360, `I ALONE`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of THROUGH OUT HEAVEN AND EARTH / I ALONE, AM THE OWNER OF CLASSICS alternating with I AM LEAVING FOR A FEW YEARS / WOULD YOU BE OKAY FOR A FEW MINUTES?, under *NOBODY TAKES THE GAME IN THIS BEAT.* / *IT GETS HANDED OVER, AND THEN THE OWNER GOES OUT FOR MILK.*, a drawn **speech box** carrying Gray's declaration, a drawn **LET GO → HAND OVER → WALK OUT chain** (*MR. BLACK TO THE BOX* / *HALF THE BOX POWER* / *TO GET MILK*), and **two drawn figures** — PERO · LEAVING FOR A FEW YEARS and GRAY · OKAY FOR A FEW MINUTES.
+- **HE HAS DONE THIS BEFORE (left)**, **AND THE NUMBERS DO NOT MATCH (centre)**, **AND HIS RULE IS SILENCE (right)** — five rows each.
+- **THE TRIO CHANGED ONE SEAT. (band)** — before / after / Gaster still making boxes / Luigi Green still destroying them, closing on *the owner seat changed and the other two jobs did not*.
+- **FOURTH, THEN THIRD (band inset)** — half the box power / he whispers / Pero leaves / **SO** he rose by subtraction, flagging *HE DID NOT GET STRONGER. SOMEBODY LEFT.*
+- **Strip:** THE RELEASE · MR. BLACK INTO THE BOX / THE GIFT · HALF OF THE BOX POWER / THE EXIT · TO GET MILK.
+- **Footers:** *THE GAME CHANGED OWNER WITHOUT A SINGLE FIGHT, AND THE OLD OWNER SAID HE WAS GETTING MILK* and **★ I ALONE, AM THE OWNER OF CLASSICS ★**.
+- **Cycle length** `LV_CYC` 7640 → 7662; **screenshot helper:** new `iAlone` scene.
+
+![BEAT 360 — I ALONE](screenshots/422-i-alone.png)
+
+## 2026-08-18 — BANISHED AU · BEING REMOVED FINALLY HAS A DESTINATION (BEAT 359)
+
+Based on Toby's 2026-08-18 lore, 11:05:03 AM, same thread, ninety seconds after EVERYONE FROM BOX. His own typing, in full: *"Pero decided to make a Banished AU for those characters who were banish from Classics to go to."* The what-it-does list, the why-he-made-it reasoning, the banishment arrow and the clean canon update pasted under it are ChatGPT commentary.
+
+**He already has a room like this, and he built another one.** Pero's Realm, from July 29, is the white prison described as *"nothing there, only those banished there."* It holds Simon 404, and **Gaster** is the one who puts people in it. So the room carrying Pero's name is filled by somebody else. This is the first exile place Pero decides to build himself.
+
+**And exile went from a room to a universe.** Pero's Realm is a realm. This is an **AU** — a whole alternate world, made for one purpose: to be somewhere for the people who are not allowed here.
+
+**And he built it before he needed it.** Nobody gets banished in this message. He builds the place banishing goes to, which is the coder move: infrastructure first. Two days ago he said *"I know everything, but I do coding."* Here the coding job is a world.
+
+**Built as game beat 359, `BANISHED AU`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of PERO DECIDED TO MAKE A BANISHED AU / FOR THOSE WHO WERE BANISH FROM CLASSICS alternating with NOTHING THERE / ONLY THOSE BANISHED THERE, a drawn **quote box**, a **BANISHED → NOW GOES → BUILT BY chain** over *BEING REMOVED USED TO MEAN BEING NOWHERE · NOW IT HAS AN ADDRESS*, and **two drawn figures** — PERO'S REALM · GASTER FILLS IT and BANISHED AU · PERO BUILDS IT.
+- **HE BUILT A SECOND ONE (left)**, **AND EXILE GOT BIGGER (centre)**, **AND HE BUILT IT FIRST (right)** — five rows each.
+- **WHERE REMOVED PEOPLE HAVE GONE, SO FAR. (band)** — DELETED → nowhere / OBLIVIATED → nowhere, and Chicken Hen still came back from it / **PERO'S REALM** → a white room / **BANISHED AU** → a whole world, closing on *Alpha Pero Pro was banished to the Alphaverse and still turned up whenever the game glitched*.
+- **NOT THE SAME AS DELETING (band inset)** — deleted / erased / banished / **SO**, flagging *HE MADE A WAY OUT THAT IS NOT THE END.*
+- **Strip:** THE BUILDER · PERO, THE CODER / THE BUILD · A WHOLE AU / THE TENANTS · NOBODY, YET.
+- **Footers:** *THE GAME HAS BEEN THROWING PEOPLE OUT FOR MONTHS AND TONIGHT SOMEBODY BUILT THE OUT* and **★ A BANISHED AU FOR THEM TO GO TO ★**.
+- **Cycle length** `LV_CYC` 7618 → 7640; **screenshot helper:** new `banishedAU` scene.
+
+![BEAT 359 — BANISHED AU](screenshots/421-banished-au.png)
+
+## 2026-08-18 — EVERYONE FROM BOX · THE FIGHT GETS A BOUNDARY (BEAT 358)
+
+Based on Toby's 2026-08-18 lore, 11:03:33 AM, same thread, eighty-six seconds after ALL 23 NAMES. His own typing, in full: *"How about everyone from the box, including Arcsis, Frizz, Undertale characters, Lica, and all others VS each other."* The biggest-rule section, the how-the-battle-goes walkthrough, the most-dangerous list, the final result and the clean eleven-tier ranking pasted under it are ChatGPT commentary.
+
+**He widened the box eighty-six seconds later.** The previous message named twenty-three Sprunkis. This one keeps the same fight and swaps the guest list for the whole container: Arcsis, Frizz, the Undertale cast, Lica, and all others. He did not make the fight bigger. He made the list of who is in it bigger.
+
+**And the fight gets a boundary.** The answer rules Pero, Gaster and Luigi Green out of it, because they are outside-box beings who would instantly be the top three. That is the first eligibility line in this file: every ranking before it asked who is strongest, and this one asks who is even allowed in. Being too strong to include turns out to be its own place on the list.
+
+**And the winner is a condition, not a name.** Normal box Mr. Black loses to Simon.psc; Mr. Black as one with Pero wins. Same character, two endings, decided by which version turns up — and fourteen minutes later Toby settles it by sending Mr. Black into the box.
+
+**And Vicinus is already third.** He was invented twelve minutes before this message and is already sitting on the board above Oren and Gray.
+
+**Built as game beat 358, `EVERYONE FROM BOX`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of EVERYONE FROM THE BOX / VS EACH OTHER alternating with THE OUTSIDE-BOX TRIO / IS NOT INCLUDED, a drawn **quote box**, a **23 NAMES → THE BOX → THE TRIO chain** over *THE FIGHT DID NOT GET BIGGER · THE GUEST LIST DID*, and **two drawn figures** — INSIDE THE BOX · EVERYONE IS ELIGIBLE and OUTSIDE THE BOX · PERO, GASTER, LUIGI.
+- **HE WIDENED THE BOX (left)**, **AND IT GETS A BOUNDARY (centre)**, **AND THE WINNER IS AN IF (right)** — five rows each.
+- **WHO IS IN, AND WHO IS OUT. (band)** — in the box / **outside it** / **the top two** / Vicinus, closing on *Vicinus was invented twelve minutes before this message and is already sitting third on the board*.
+- **THE TRIO KEEPS GETTING EXCUSED (band inset)** — the trio / the reason / so / and, flagging *BEING TOO STRONG TO INCLUDE IS A PLACE ON THE LIST.*
+- **Strip:** THE FIELD · EVERYTHING THE BOX HELD / THE LINE · INSIDE OR OUTSIDE THE BOX / THE WINNER · DEPENDS WHICH MR. BLACK.
+- **Footers:** *THE FIRST FIGHT IN THIS GAME WITH A RULE ABOUT WHO IS ALLOWED TO BE IN IT* and **★ EVERYONE FROM THE BOX VS EACH OTHER ★**.
+- **Cycle length** `LV_CYC` 7596 → 7618; **screenshot helper:** new `everyoneFromBox` scene.
+
+![BEAT 358 — EVERYONE FROM BOX](screenshots/420-everyone-from-box.png)
+
 ## 2026-08-18 — ALL 23 NAMES · THE SHORTHAND GETS SPELLED OUT, AND EXPLAINED (BEAT 357)
 
 Based on Toby's 2026-08-18 lore, 11:02:07 AM, same thread, five minutes and fifty-four seconds after THREE ON SIMON. His own typing, in full: *"Simon would actually try to split them up. How about Brud VS Simon VS Vineria VS Sky VS Chicken Hen VS Sara VS Unikitty VS Oren VS Wenda VS Gray VS Garnold VS Clunkr VS Fun Bot VS Mr. Fun Computer VS Mr. Black VS Tunner VS Raddy VS Owackx VS Pinki VS Jevin VS Mr. Sun VS Mr. Tree VS Durple. I sometimes forget all the Sprunki's names or my text gets too long so I just say \"The Sprunkis\"."* The biggest-answer section, the how-the-battle-starts walkthrough, Simon's strategy and the clean outcome pasted under it are ChatGPT commentary.
