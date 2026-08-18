@@ -125,6 +125,10 @@ Scenes:
     beatsAnything    — BEAT 351, BEATS ANYTHING (Toby, Aug 17, 6:21 PM)
     survivedFellen   — BEAT 352, SURVIVED AND FELLEN (Toby, Aug 17, 6:23 PM)
     bestTestDummy    — BEAT 353, BEST TEST DUMMY (Toby, Aug 17, 7:40 PM)
+    vicinusCicinus   — BEAT 354, VICINUS, CICINUS (Toby, Aug 18, 10:51 AM)
+    durpleVsVicinus  — BEAT 355, DURPLE VS VICINUS (Toby, Aug 18, 10:55 AM)
+    threeOnSimon     — BEAT 356, THREE ON SIMON (Toby, Aug 18, 10:56 AM)
+    all23Names       — BEAT 357, ALL 23 NAMES (Toby, Aug 18, 11:02 AM)
 
 It works by loading the single-file game in headless Chromium with a virtual
 time budget, optionally injecting a tiny scene script that drives the game and
@@ -8882,6 +8886,130 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7506.8; loopVs.phase=353; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "vicinusCicinus": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 354. VICINUS, CICINUS: HE CAME BACK on the left, AND EATING IS RECRUITING down the centre, AND SIMON REVERSES IT on the right, the WHO GOES WHICH WAY band with the THE ONLY KNOWN CHARACTER inset, over the July 6 minion quote, the EAT -> CONVERT -> SPREAD chain, the growing orb row and the two fighters. Beat 354 spans cyc in 7508.0 to 7530.0; cyc=7528.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=7528.8; loopVs.phase=354;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7528.8; loopVs.phase=354; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "durpleVsVicinus": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 355. DURPLE VS VICINUS: HE TESTED IT AT ONCE on the left, AND BOTH OF THEM ARE DRAGONS down the centre, AND HIS MAX IS THE PROBLEM on the right, the WHAT EACH HEAD IS WORTH band with the THE ONLY WAY HE SURVIVES inset, over the five-word question box, the fifteen heads turning into orbs and the two dragons. Beat 355 spans cyc in 7530.0 to 7552.0; cyc=7550.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=7550.8; loopVs.phase=355;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7550.8; loopVs.phase=355; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "threeOnSimon": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 356. THREE ON SIMON: HE PICKED THE ONLY COUNTER on the left, AND HE PICKED THE PARTNER down the centre, AND THE THIRD ONE JUST LOST on the right, the THREE JOBS, ONE TARGET band with the THIS ONE IS NOT A STOMP inset, over Gray's own August 8 correction, the HOLD -> BLOCK -> COUNTER chain and the three-against-one line. Beat 356 spans cyc in 7552.0 to 7574.0; cyc=7572.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=7572.8; loopVs.phase=356;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7572.8; loopVs.phase=356; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "all23Names": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 357. ALL 23 NAMES: HE EXPLAINED HIS OWN SHORTCUT on the left, AND TWO WERE FINISHED down the centre, AND THE NEWEST RULE WINS on the right, the ALL TWENTY-THREE, IN HIS ORDER roster band with the SPLIT THEM UP inset, over Toby's note about his own writing and the twenty-three tally marks. Beat 357 spans cyc in 7574.0 to 7596.0; cyc=7594.8 gives dt~20.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=7594.8; loopVs.phase=357;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7594.8; loopVs.phase=357; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }

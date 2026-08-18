@@ -4,6 +4,104 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-18 — ALL 23 NAMES · THE SHORTHAND GETS SPELLED OUT, AND EXPLAINED (BEAT 357)
+
+Based on Toby's 2026-08-18 lore, 11:02:07 AM, same thread, five minutes and fifty-four seconds after THREE ON SIMON. His own typing, in full: *"Simon would actually try to split them up. How about Brud VS Simon VS Vineria VS Sky VS Chicken Hen VS Sara VS Unikitty VS Oren VS Wenda VS Gray VS Garnold VS Clunkr VS Fun Bot VS Mr. Fun Computer VS Mr. Black VS Tunner VS Raddy VS Owackx VS Pinki VS Jevin VS Mr. Sun VS Mr. Tree VS Durple. I sometimes forget all the Sprunki's names or my text gets too long so I just say \"The Sprunkis\"."* The biggest-answer section, the how-the-battle-starts walkthrough, Simon's strategy and the clean outcome pasted under it are ChatGPT commentary.
+
+**He wrote out the shorthand.** *"The Sprunkis"* is the phrase he has been using for months, and it has always read like a faction name. Tonight he spelled out all twenty-three, and then explained why he normally does not: he forgets some of the names, or the text gets too long. The short word was never a group. It was a list he did not feel like typing, and he knows every name that is in it.
+
+**And two of them were already finished.** Three days ago, on August 15, Unikitty got *"The Perminent End"* — *"They destroyed Unikitty."* The same day, Chicken Hen got something rarer: *"the end of Chicken Hen's lore,"* the only closed story on the wiki. Both are on tonight's list anyway. A name does not leave this game when its story does.
+
+**And the newest rule decides it.** The answer gives the whole twenty-three-way to Mr. Black, and the reason is the change from two nights ago — he is one with Pero. Not the oldest power and not the best fighter. The most recently updated line in the file is the one that settles it.
+
+**Built as game beat 357, `ALL 23 NAMES`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of I SOMETIMES FORGET ALL / THE SPRUNKI'S NAMES alternating with OR MY TEXT GETS TOO LONG / SO I JUST SAY THE SPRUNKIS**, under *HE HAS WRITTEN THE SPRUNKIS FOR MONTHS.* / *TONIGHT HE TOLD US WHY, AND THEN SPENT A MESSAGE NOT DOING IT.*, a drawn **note box** labelled TOBY, ABOUT HIS OWN WRITING carrying his quote across two lines, a **row of twenty-three tally marks** lighting one at a time under *TWENTY-THREE NAMES · WRITTEN OUT ONE AT A TIME*, and **two drawn boxes** side by side — THE SPRUNKIS · WHAT HE USUALLY WRITES and ALL 23 BY NAME · WHAT HE WROTE TONIGHT — with **THE SHORT WORD WAS NEVER A GROUP · IT WAS A LIST HE DID NOT FEEL LIKE TYPING.** boxed over *AND HE KNOWS EVERY NAME THAT IS IN IT.*
+- **HE EXPLAINED HIS OWN SHORTCUT (left)** — five rows (the phrase / the Sprunkis, for months · tonight / all twenty-three by name · reason one / he forgets some names · reason two / the text gets too long · so / the short word is a shortcut), closing on *HE TOLD US WHY* / *HE USES THE SHORT WORD.* / *THEN HE SPENT ONE MESSAGE* / **NOT USING IT.**
+- **AND TWO WERE FINISHED (centre)** — five rows (Aug 15 / the perminent end of Unikitty · the line / they destroyed Unikitty · Aug 15 / the end of Chicken Hen's lore · that one / closed the story, not the man · tonight / both are back in the lineup), closing on *A NAME DOES NOT* / *LEAVE THIS GAME* / *JUST BECAUSE* / **ITS STORY DID.**
+- **AND THE NEWEST RULE WINS (right)** — five rows (the winner / Mr. Black · the reason / he is one with Pero · that rule / is two nights old · not / the oldest or strongest · but / the most recently changed), closing on *SIMON CLEARS THE ROOM.* / **MR. BLACK WALKS IN AND TAKES IT.**
+- **ALL TWENTY-THREE, IN HIS ORDER. (band)** — a numbered 5×5 roster grid carrying every name in Toby's exact order, lit one at a time, with **Chicken Hen** and **Unikitty** flagged orange as stories this file already closed and **Mr. Black** flagged purple as the one the answer gives it to, keyed by *ORANGE = A STORY THIS FILE ALREADY CLOSED, THREE DAYS AGO. PURPLE = THE ONE THE ANSWER GIVES IT TO.*
+- **SPLIT THEM UP (band inset)** — a cycler across TOO MANY TARGETS · twenty-three at once / TOO MANY POWERS · and no two are alike / SO · cut the field into 1v1s / **AND** · that is his first move, flagging *HE ARRANGES THE FIGHT BEFORE HE HAS IT.* on the last row, over *PHASE 1 SIMON CHASED THEM DOWN THE HILLS.* / *THIS ONE SORTS THEM INSTEAD.*
+- **Strip:** THE LIST · ALL 23, BY NAME / THE REASON · MY TEXT GETS TOO LONG / THE WINNER · MR. BLACK.
+- **Footers:** *HE STOPPED SAYING THE SPRUNKIS FOR ONE MESSAGE AND NAMED EVERY SINGLE ONE OF THEM* and **★ SO I JUST SAY THE SPRUNKIS ★**.
+- **Cycle length** `LV_CYC` 7574 → 7596; **screenshot helper:** new `all23Names` scene.
+
+![BEAT 357 — ALL 23 NAMES](screenshots/419-all-23-names.png)
+
+## 2026-08-18 — THREE ON SIMON · THE TEAM IS BUILT OUT OF HIS OWN HISTORY (BEAT 356)
+
+Based on Toby's 2026-08-18 lore, 10:56:13 AM, same thread, sixty-two seconds after DURPLE VS VICINUS. His own typing, in full: *"How about Durple and Oren and Gray VS Simon.psc?"* The team-side breakdown, Simon's response, the winner call and the special condition pasted under it are ChatGPT commentary.
+
+**He picked the only counter.** On August 8, Oren told Gray he was *"one of Simon.psc's best counters,"* and Gray refused the wording: *"I am not one of the best, I am the best and only counter of Simon.psc."* That counter is two moves and neither of them is an attack — the treadmill, already logged as Simon's weakness, and the sleep rub. Out of the whole cast, the name Toby put on this team is the one who already has the answer written down.
+
+**And he picked Simon's own partner.** Five days ago Oren and Simon made a duo, on the page, in dialogue: *"With my telekentics..."* / *"And my lightning power..."* / *"We shall be unstoppable!"* Tonight the same two names have a VS between them. And Oren's telekentics is a force, not matter, which is exactly why there is nothing to grab and nothing to dodge.
+
+**And the third one just lost.** Durple was consumed by Vicinus sixty-two seconds earlier, in the previous message. He gets drafted into the next fight anyway, as the pressure that keeps Simon moving. Losing did not retire him.
+
+**Built as game beat 356, `THREE ON SIMON`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of HOW ABOUT DURPLE AND OREN AND GRAY / VS SIMON.PSC alternating with I AM THE BEST AND ONLY / COUNTER OF SIMON.PSC**, under *HE DID NOT PICK THREE STRONG NAMES.* / *HE PICKED THE ONE WHO ALREADY HAS THE ANSWER, AND SIMON'S OWN PARTNER.*, a drawn **speech box** labelled GRAY SAYS, TO OREN — AUGUST 8 carrying his correction, a drawn **HOLD → BLOCK → COUNTER chain** (*OREN, TELEKENTICS* / *DURPLE, FIFTEEN HEADS* / *GRAY, THE SLEEP RUB*) over *THREE JOBS IN ORDER · AND ALL THREE HAVE TO LAND*, and **four drawn figures** — three bunched on the left and Simon.psc alone on the right — with **THIS IS THE FIRST TEAM IN THE GAME BUILT OUT OF SIMON'S OWN FILE.** boxed over *HIS WEAKNESS, HIS EX-PARTNER, AND A DRAGON.*
+- **HE PICKED THE ONLY COUNTER (left)** — five rows (Aug 8 / Oren says one of the best · Gray says / the best and only counter · move one / the treadmill · move two / the sleep rub · neither / is an attack), closing on *OUT OF EVERYBODY* / *HE COULD HAVE PICKED,* / *HE PICKED THE ONE* / **WHO ALREADY HAS THE ANSWER.**
+- **AND HE PICKED THE PARTNER (centre)** — five rows (Aug 13 / with my telekentics... · Simon / and my lightning power... · both / we shall be unstoppable · tonight / Oren is on the other side · his force / is impossible to dodge), closing on *FIVE DAYS AGO THEY SAID* / *WE SHALL BE UNSTOPPABLE.* / *TONIGHT THE SAME TWO NAMES* / **HAVE A VS BETWEEN THEM.**
+- **AND THE THIRD ONE JUST LOST (right)** — five rows (10:55 / Vicinus consumed Durple · 10:56 / Durple is on a team · his job / keep Simon moving · his size / blocks the escape routes · so / losing did not retire him), closing on *HE LOST HIS OWN FIGHT* / **AND STILL GOT DRAFTED.**
+- **THREE JOBS, ONE TARGET. (band)** — a four-row grid lit one at a time (**OREN** → holds him in place, a force not matter, so there is nothing to grab / DURPLE → blocks the exits, fifteen heads of pressure and no speed / **GRAY** → waits for the slip, the treadmill then the sleep rub / SIMON.PSC → splits them apart, and beats them one at a time), closing on *all three have to land it perfectly and in order; one slip and Simon resets and picks them off*.
+- **THIS ONE IS NOT A STOMP (band inset)** — a cycler across NORMAL BATTLE · Simon.psc wins / PERFECT TEAM · the three can take him / ONE MISTAKE · he resets and starts over / **SO** · he has to think this one through, flagging *HE DOES NOT SWING FIRST. HE ARRANGES.* on the last row, over *MOST FIGHTS HERE ARE DECIDED BY POWER.* / *THIS ONE IS DECIDED BY ORDER OF OPERATIONS.*
+- **Strip:** THE COUNTER · GRAY, BY HIS OWN WORDS / THE HOLD · OREN, THE OLD PARTNER / THE PRESSURE · DURPLE, FRESH OFF A LOSS.
+- **Footers:** *THE TEAM AGAINST SIMON IS HIS OWN WEAKNESS AND HIS OWN PARTNER, STANDING TOGETHER* and **★ DURPLE AND OREN AND GRAY VS SIMON.PSC ★**.
+- **Cycle length** `LV_CYC` 7552 → 7574; **screenshot helper:** new `threeOnSimon` scene.
+
+![BEAT 356 — THREE ON SIMON](screenshots/418-three-on-simon.png)
+
+## 2026-08-18 — DURPLE VS VICINUS · THE MAX FORM TURNS INTO THE WEAK POINT (BEAT 355)
+
+Based on Toby's 2026-08-18 lore, 10:55:11 AM, same thread, three minutes and eighteen seconds after VICINUS, CICINUS. His own typing, in full: *"Guess what Durple VS Vicinus will go like."* The how-the-battle-goes walkthrough, the likely ending, the final matchup ranking and the survival condition pasted under it are ChatGPT commentary.
+
+**He tested it immediately.** He invented a mega boss at 10:51 and put somebody in front of it at 10:55. The new thing does not get to sit in the file being described; it gets measured against a name that was already in there. Five words, and the whole message is a check on his own work.
+
+**And it is dragon against dragon.** Vicinus is *"the giant dragon."* Durple has been a dragon on this wiki since Email 366 on May 27 — *"Durple is a dragon."* This is the first time the file puts two of them in the same room, and one of them is Sprunki-side.
+
+**And his max is the problem.** *"Durple reached his max and became a 15 headed monsterosity."* On the list that line came from, everybody else lost something — an ear, a mind, a body, a soul percentage. Durple was the only one phrased as arriving somewhere. Against a boss who converts whatever he touches, fifteen heads is fifteen things to convert. The one stat on that list that was not damage is the stat that gets him eaten.
+
+**Built as game beat 355, `DURPLE VS VICINUS`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of GUESS WHAT DURPLE VS VICINUS / WILL GO LIKE alternating with DURPLE REACHED HIS MAX / AND BECAME A 15 HEADED MONSTEROSITY**, under *HE INVENTED THE BOSS AT 10:51.* / *AT 10:55 HE PUT SOMEBODY IN FRONT OF IT.*, a drawn **question box** labelled THE WHOLE MESSAGE, 10:55 AM carrying his five words, a **row of fifteen drawn heads** converting to Cicinus violet one at a time under *FIFTEEN HEADS · AND EACH ONE IS A CICINUS WAITING TO HAPPEN*, and **two drawn figures** joined by a dashed line — DURPLE · A DRAGON SINCE MAY 27 and VICINUS · THE GIANT DRAGON — with **HIS MAX FORM IS THE REASON HE LOSES THIS ONE.** boxed over *FIFTEEN HEADS IS FIFTEEN THINGS TO CONVERT.*
+- **HE TESTED IT AT ONCE (left)** — five rows (10:51 / he invented a mega boss · 10:55 / he asked how it goes · the ask / five words, nothing else · not a story / a check on his own work · so / the new one got measured), closing on *HE DID NOT LET* / *THE NEW ONE SIT THERE.* / *HE PUT SOMEBODY* / **IN FRONT OF IT.**
+- **AND BOTH OF THEM ARE DRAGONS (centre)** — five rows (May 27 / Durple is a dragon · tonight / Vicinus the giant dragon · so / not monster vs boss · it is / one kind, two sides · and one / is a Sprunki), closing on *THE FILE HAS HAD* / *TWO DRAGONS FOR MONTHS.* / *TONIGHT IS THE FIRST TIME* / **THEY ARE IN THE SAME ROOM.**
+- **AND HIS MAX IS THE PROBLEM (right)** — five rows (his max / a 15 headed monsterosity · that list / everyone else lost something · he alone / arrived somewhere · tonight / every head is a target · so / the max feeds the boss), closing on *HE REACHED HIS MAX,* / **AND THE MAX GOT EATEN FIRST.**
+- **WHAT EACH HEAD IS WORTH. (band)** — a four-row grid lit one at a time (FIFTEEN HEADS → fifteen angles at once, which is why the form is his max / AGAINST ANYBODY → more heads is more pressure, the math runs the normal way / **AGAINST VICINUS** → more heads is more surface, and surface is what gets converted / **SO** → the same number, flipped; his best stat is the boss's best meal), closing on *every other name on that max list lost something; Durple gained something, and that is the part that costs him*.
+- **THE ONLY WAY HE SURVIVES (band inset)** — a cycler across SIMON.PSC / PERO / GASTER, each *if he interrupts it*, then **ALONE** · he does not survive it, flagging *HIS ESCAPE IS SOMEBODY ELSE SHOWING UP.* on the last row, over *THE DRAGON WHO REACHED HIS MAX* / *STILL NEEDS SOMEBODY TO COME GET HIM.*
+- **Strip:** THE QUESTION · GUESS HOW IT GOES / THE ANSWER · VICINUS WINS EASILY / THE COST · DURPLE BECOMES ORBS.
+- **Footers:** *HE BUILT A BOSS AND FOUR MINUTES LATER HE WANTED TO KNOW WHAT IT COULD BEAT* and **★ GUESS WHAT DURPLE VS VICINUS WILL GO LIKE ★**.
+- **Cycle length** `LV_CYC` 7530 → 7552; **screenshot helper:** new `durpleVsVicinus` scene.
+
+![BEAT 355 — DURPLE VS VICINUS](screenshots/417-durple-vs-vicinus.png)
+
+## 2026-08-18 — VICINUS, CICINUS · THE ORB STOPS BEING A MINION (BEAT 354)
+
+Based on Toby's 2026-08-18 lore, 10:51:53 AM, in the "Even 5x Classics Era" thread. His own typing, in full: *"Vicinus the giant dragon and Cicinus the evil orb. Whatever Vicinus consumes turns into Cicinuses, until there is nothing left for Vicinus to consume and to corrupt into Cicinus orbs. I made many Roblox games of Vicinus. Vicinus is a Qurase (don't know how to spell the Classics word for \"beyond impossible\") mega boss. Vicinus flys around + Vicinus is the fourth largest entity in the game. Simon is the only known character who can beat Vicinus. Kirby would get consumed by Vicinus, the other Sprunkis would just run away on sight and they still will be consumed by Vicinus. Pero, Gaster, and Luigi Green easily beat Vicinus of course. Vicinus would easily consume Chicken Hen and the largest building entity in the game, Tumble. Simon.psc would just run and get his sword and battle Vicinus and with a spark and a thousand sword strike barrage, Simon.psc will corrupt Vicinus."* The restatement, the ranking section, the who-can-beat-him list and the clean canon update pasted under it are ChatGPT commentary.
+
+**They are not new, and that is the whole beat.** Email 662, July 6, six weeks ago: Gray.EXE's Beyond Fiction Form seeded three apex creatures below him — Xyrus the most powerful horse, Vicinus the most powerful dragon, and Cicinus, *"Vicinus's orb minion, the most powerful orb."* Tonight Cicinus is not somebody standing next to him. Cicinus is what the food turns into. One orb became a product line, and the direction of the relationship reversed: back then Cicinus was the one who *"can destroy Xyrus and Parinus"*; now Vicinus makes him.
+
+**And eating is recruiting.** Everything else in this file that wins takes something away — deletes, erases, obliviates, resets, undefines. This one converts. Every meal adds another Cicinus, so the boss gets bigger every time he wins, and the only stopping condition Toby gives is running out of world: *"until there is nothing left for Vicinus to consume."*
+
+**And Simon reverses the verb.** He does not delete Vicinus. He runs, gets his sword, and with a spark and a thousand sword strike barrage he *corrupts* him — the exact thing Vicinus does to everybody else. The counter to the converter is being converted.
+
+**And the only-known-one is on the eaten list.** Toby has used this sentence before: *"Kirby is the only character known who can defeat Chicken Hen."* Tonight it is *"Simon is the only known character who can beat Vicinus"* — and in the same message, Kirby and Chicken Hen both get consumed. The answer to one fight is food in the next.
+
+**Built as game beat 354, `VICINUS, CICINUS`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of WHATEVER VICINUS CONSUMES / TURNS INTO CICINUSES alternating with SIMON IS THE ONLY KNOWN / CHARACTER WHO CAN BEAT VICINUS**, under *SIX WEEKS AGO CICINUS WAS SOMEBODY STANDING NEXT TO HIM.* / *TONIGHT CICINUS IS WHAT LOSING TURNS YOU INTO.*, a drawn **quote box** labelled JULY 6, EMAIL 662, SEEDED BY GRAY.EXE carrying the original minion line, a drawn **EAT → CONVERT → SPREAD chain** (*VICINUS CONSUMES* / *IT BECOMES CICINUS* / *UNTIL NOTHING IS LEFT*) over *HE DOES NOT JUST WIN THE FIGHT · HE KEEPS WHAT HE BEAT*, a **row of nine orbs** growing left to right under *ONE ORB IN JULY · AND EVERY MEAL SINCE*, and **two drawn figures** — VICINUS · THE GIANT DRAGON and SIMON.PSC · THE ONLY KNOWN ONE — with **EVERY OTHER THREAT HERE TAKES THINGS AWAY · THIS ONE ADDS THEM.** boxed over *THE BOSS GETS BIGGER EVERY TIME HE WINS.*
+- **HE CAME BACK (left)** — five rows (July 6 / Gray.EXE seeded three apexes · Vicinus / the most powerful dragon · Cicinus / his orb minion, one of him · tonight / Cicinus is what food becomes · so / the minion is now a result), closing on *HE WAS A NAME* / *STANDING BESIDE HIM.* / *NOW HE IS A NAME* / **MADE OUT OF WHOEVER LOST.**
+- **AND EATING IS RECRUITING (centre)** — five rows (delete / that is what Classics does · erase / obliviate, reset, undefine · consume / is none of those · every meal / adds another Cicinus · so / he grows by winning), closing on *NOTHING HE BEATS* / *LEAVES THE BOARD.* / *IT CHANGES SIDES* / **AND KEEPS PLAYING FOR HIM.**
+- **AND SIMON REVERSES IT (right)** — five rows (he runs / and gets his sword · a spark / and a thousand strikes · the result / Simon corrupts Vicinus · the verb / is Vicinus's own · so / the converter got converted), closing on *HE DID NOT DELETE HIM.* / **HE DID IT BACK TO HIM.**
+- **WHO GOES WHICH WAY. (band)** — a four-row grid lit one at a time (PERO / GASTER / LUIGI → beat him easily, the trio is above this entirely / **SIMON.PSC** → the only one from the box, and he wins by corrupting him / **KIRBY & CHICKEN HEN** → both consumed, and Kirby is the one who beats Chicken Hen / TUMBLE & THE SPRUNKIS → the tower and the crowd; they run on sight and get eaten anyway), closing on *last night the Sprunkis ran to Sprunki Hills and hid from Pero; tonight they run again, and this one follows*.
+- **THE ONLY KNOWN CHARACTER (band inset)** — a cycler across CHICKEN HEN · Kirby is the only one who can / VICINUS · Simon is the only one who can / SAME SHAPE · he has a sentence for this / **AND TONIGHT** · Kirby is on the eaten list, flagging *THE ONLY-ONE-WHO-CAN IS FOOD IN THE NEXT FIGHT.* on the last row, over *EVERY RANK IN THIS GAME* / *IS ONLY TRUE UNTIL THE NEXT ONE.*
+- **Strip:** THE DRAGON · VICINUS / THE ORBS · WHATEVER HE ATE / THE RANK · QURASE, BEYOND IMPOSSIBLE.
+- **Footers:** *SIX WEEKS AGO THE ORB WAS A MINION; TONIGHT THE ORB IS WHAT LOSING TURNS YOU INTO* and **★ WHATEVER VICINUS CONSUMES TURNS INTO CICINUSES ★**.
+- **Cycle length** `LV_CYC` 7508 → 7530; **screenshot helper:** new `vicinusCicinus` scene.
+
+![BEAT 354 — VICINUS, CICINUS](screenshots/416-vicinus-cicinus.png)
+
 ## 2026-08-17 — BEST TEST DUMMY · THE BOX POWER GETS AIMED AT A NAME (BEAT 353)
 
 Based on Toby's 2026-08-17 lore, 7:40:31 PM, same thread, an hour and seventeen minutes after SURVIVED AND FELLEN. His own typing, in full: *"Pero told Gaster to examine Mr. Black, Gaster experimented Mr. Black and says \"Brother, your right. He is the best experiment test dummy.\", Gaster learned everything about Mr. Black; Gaster can play him. Gaster now plays Mr. Black and has fun with it. Gaster attacks the characters from the box, Pero and Luigi Green are amazed of Gaster's moves, Luigi Green was astonished of Gaster's skill and experience."* The "Gaster plays Mr. Black" restatement, the what-this-proves section and the clean canon update pasted under it are ChatGPT commentary.
