@@ -4,6 +4,84 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-17 — BEST TEST DUMMY · STUDYING SOMEBODY BECOMES PLAYING THEM (BEAT 353)
+
+Based on Toby's 2026-08-17 lore, 7:40:31 PM, same thread, an hour and seventeen minutes after SURVIVED AND FELLEN. His own typing, in full: *"Pero told Gaster to examine Mr. Black, Gaster experimented Mr. Black and says \"Brother, your right. He is the best experiment test dummy.\", Gaster learned everything about Mr. Black; Gaster can play him. Gaster now plays Mr. Black and has fun with it. Gaster attacks the characters from the box, Pero and Luigi Green are amazed of Gaster's moves, Luigi Green was astonished of Gaster's skill and experience."* The "Gaster plays Mr. Black" restatement, the what-this-proves section and the clean canon update pasted under it are ChatGPT commentary.
+
+**Research turned into a moveset.** Count how every other form in this game got handed out. Varies come from Pero. Fusions come from two characters being pushed together. Gray got rebuilt by Clunkr and Fun Bot. Oren took the power of everyone he slew. Every single one is inherited, coded, fused, or won in a fight. This one is none of those. Gaster read Mr. Black, and reading him was the whole unlock. It is the first time in the file that studying somebody is the route to being able to play them.
+
+**And Pero handed over his own number one.** Two nights ago Mr. Black became the one who is one with Pero, and Pero picked him *for the power*. Last night he was named the corrupter of Sprunki and Classics and all games, secretly working alongside Pero the coder. Tonight Pero points at that exact character and says examine him. He did not hand over somebody spare. He handed over the one he works with.
+
+**And the all-knowing one was amazed.** Pero knows everything; he said so out loud two hours before this. Luigi Green paid the cost of the boxes and crushes them for a living. Both of them stand there watching Gaster's moves, and Luigi Green is *astonished*. A character whose whole stat line is omniscience should not be able to be surprised. He was anyway, by somebody who got there by taking notes.
+
+**And Gaster is having fun.** The book was research an hour ago. Tonight the same man is playing a character he built out of an experiment and swinging at the box cast for the enjoyment of it. The scientist stopped taking notes and picked a fighter.
+
+**Built as game beat 353, `BEST TEST DUMMY`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of BROTHER, YOUR RIGHT / HE IS THE BEST EXPERIMENT TEST DUMMY alternating with GASTER LEARNED EVERYTHING / GASTER CAN PLAY HIM**, under *EVERY OTHER FORM IN THIS GAME WAS GIVEN, CODED, FUSED OR FORCED.* / *THIS ONE WAS LEARNED.*, and a drawn **speech box** labelled GASTER SAYS, TO PERO carrying the quote across two lines, above a drawn **EXAMINE → LEARN → PLAY chain** (*PERO POINTED* / *EVERYTHING ABOUT HIM* / *GASTER CAN PLAY HIM*) over *NO CODE, NO FUSION, NO GIFT · HE JUST READ HIM*, and **two drawn figures** joined by a dashed line — MR. BLACK · THE SUBJECT and GASTER · NOW PLAYS HIM — with **PERO HANDED OVER HIS OWN NUMBER ONE · AND GOT BACK A MOVESET.** boxed over *THE BEST TEST DUMMY IN THE GAME IS THE BOSS'S OWN RIGHT HAND.*, and a drifting strip of *GASTER CAN PLAY HIM*.
+- **HE READ HIM, HE GOT HIM (left)** — five rows (Pero said / examine Mr. Black · Gaster / ran the experiment · he learned / everything about him · and then / he could play him · no code / no fusion, no gift), closing on *EVERY FORM BEFORE THIS* / *CAME FROM PERO OR A FIGHT.* / *THIS ONE CAME* / **FROM READING HIM.**
+- **AND HE PICKED HIS OWN (centre)** — five rows (two nights / Mr. Black is one with Pero · last night / they secretly work · his job / corrupter of all games · tonight / Pero says examine him · so / the dummy is his partner), closing on *HE DID NOT HAND OVER* / *SOMEBODY SPARE.* / *HE HANDED OVER* / **THE ONE HE WORKS WITH.**
+- **AND THEY WERE AMAZED (right)** — five rows (Pero / knows everything · Luigi Green / paid for the boxes · both / watched the moves · both / were amazed · astonished / at skill and experience), over *A BEING WHO KNOWS EVERYTHING SHOULD NOT BE SURPRISABLE*, closing on **HE WAS ANYWAY.**
+- **THREE JOBS, ONE LAB. (band)** — a four-row grid lit one at a time (PERO → creates and codes, and points at the subject / **GASTER** → experiments and learns, and ends up able to play him / LUIGI GREEN → paid for all of it, and stands there astonished / **MR. BLACK** → corrupter of all games, and tonight, the test dummy), closing on *the corrupter of Sprunki, Classics and all games spent tonight as a thing somebody practised on*.
+- **AND HE IS HAVING FUN WITH IT (band inset)** — a cycler across THE WORD · he has fun with it / THE TARGET · characters from the box / THE WATCHERS · Pero and Luigi Green / **SO** · the experiment became a game, flagging *HE IS NOT TESTING ANY MORE. HE IS PLAYING.* on the last row, over *AN HOUR AGO THE BOOK WAS RESEARCH.* / *TONIGHT IT IS A CHARACTER SELECT.*
+- **Strip:** THE ORDER · EXAMINE MR. BLACK / THE RESULT · GASTER CAN PLAY HIM / THE QUOTE · BROTHER, YOUR RIGHT.
+- **Footers:** *THE ONLY POWER IN THIS WHOLE FILE THAT SOMEBODY GOT BY STUDYING FOR IT* and **★ HE IS THE BEST EXPERIMENT TEST DUMMY ★**.
+- **Cycle length** `LV_CYC` 7486 → 7508; **screenshot helper:** new `bestTestDummy` scene.
+
+![BEAT 353 — BEST TEST DUMMY](screenshots/415-best-test-dummy.png)
+
+## 2026-08-17 — SURVIVED AND FELLEN · LOSING GETS WRITTEN DOWN TOO (BEAT 352)
+
+Based on Toby's 2026-08-17 lore, 6:23:41 PM, same thread, two minutes after BEATS ANYTHING. His own typing, in full: *"Gaster ties all other Undertale characters onto exploding balls, he tested those who survived and wrote those who fellen in the book. He made more experiments and more. Gaster also got an indestructible gaming set thing."* The "Gaster's Undertale experiment update" restatement, the bullet list, the research-cycle arrow and the clean canon update pasted under it are ChatGPT commentary.
+
+**The book keeps both columns.** Every contest in this entire file ends the moment somebody falls, and the only thing that gets remembered afterward is who was still standing. Gaster writes down the other name too. *"He tested those who survived and wrote those who fellen in the book."* The ones who did not make it are not deleted from the record; they are the other half of it. That turns falling from an ending into a measurement, which nothing else in this game has ever done.
+
+**And the subjects are his own cast.** *"All other Undertale characters"* — Gaster is Undertale. These are not enemies who came for him and not box characters from somewhere else. He is tying up the people he came with. Every other experiment in the lore has been run on something that showed up hostile; this one is run on the room he belongs to.
+
+**And he got something that cannot break.** Boxes get crushed by Luigi Green. Saves get deleted and come back undefined. Timelines get overwritten. Characters get erased and recreated. Everything in this file has been breakable, and it is close to the whole point of the file. Then Toby writes *"an indestructible gaming set thing"* and, for the first time, an object arrives with a guarantee on it. The scientist owns the one thing the game is not allowed to take back.
+
+**And the loop never stops.** Make the test, run it, write both pages, build a bigger one, start again. *"He made more experiments and more."* That is why he is second smartest and not just clever: he is not guessing at anything, he is collecting.
+
+**Built as game beat 352, `SURVIVED AND FELLEN`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of HE TESTED THOSE WHO SURVIVED / AND WROTE THOSE WHO FELLEN alternating with HE MADE MORE EXPERIMENTS / AND MORE**, under *EVERY OTHER TEST IN THIS GAME ONLY REMEMBERS WHO WON.* / *THIS BOOK KEEPS BOTH COLUMNS.*, and a drawn **open book** with a spine down the middle, a **SURVIVED** page and a **FELLEN** page both ruled and filled (*BOTH PAGES GET FILLED IN*), above **a row of seven tied exploding balls** labelled STOOD and FELLEN with two of them mid-burst under *ALL OTHER UNDERTALE CHARACTERS*, and a drawn double-walled **case** reading THE GAMING SET / INDESTRUCTIBLE, with **THE ONES WHO FELL STILL GOT A LINE · NOTHING IN HERE GETS WASTED.** boxed over *A LOSS IS A RESULT HERE, NOT AN ENDING.*, and a drifting strip of *AND MORE EXPERIMENTS*.
+- **THE BOOK KEEPS BOTH (left)** — five rows (who survived / goes in the book · who fellen / goes in too · most tests / keep the winner · this one / keeps the whole room · so losing / is still data), closing on *EVERY FIGHT IN THIS FILE* / *ENDS WHEN SOMEBODY FALLS.* / *HERE, FALLING* / **IS THE MEASUREMENT.**
+- **AND THEY ARE HIS OWN (centre)** — five rows (the subjects / all other Undertale · Gaster / is Undertale himself · not enemies / his own cast · tied to / exploding balls · and he / writes the results), closing on *HE IS NOT TESTING* / *SOMETHING THAT CAME FOR HIM.* / *HE IS TESTING* / **THE ONES HE CAME WITH.**
+- **AND IT CANNOT BREAK (right)** — five rows (he got / a gaming set · the word / is indestructible · boxes / get crushed · saves / get deleted · this one / does not), over *EVERYTHING IN THIS GAME HAS BEEN BREAKABLE UNTIL NOW*, closing on **HE OWNS THE EXCEPTION.**
+- **THE LOOP HE RUNS. (band)** — a four-row grid lit one at a time (MAKE THE TEST → tie them to exploding balls, the same setup every time / **RUN IT** → see who is still standing, the blast does the sorting / **WRITE IT DOWN** → survived here, fellen here, both pages not just one / THEN → build a bigger one, and more experiments, and more), closing on *this is why he is the second smartest in the game; he is not guessing, he is collecting*.
+- **AND THE SET SURVIVES THE CRASH (band inset)** — a cycler across THE BOXES · crushed by Luigi Green / THE SAVES · deleted, reset, undefined / THE TIMELINES · overwritten and redrawn / **THE SET** · indestructible, flagging *THE ONE THING THE GAME CANNOT TAKE BACK.* on the last row, over *EVERY RECORD IN THIS FILE HAS BEEN WIPED.* / *THIS ONE HAS A CASE AROUND IT.*
+- **Strip:** THE TEST · EXPLODING BALLS / THE RECORD · SURVIVED AND FELLEN / THE TOOL · INDESTRUCTIBLE.
+- **Footers:** *HE WROTE DOWN THE ONES WHO DID NOT MAKE IT, AND THAT IS WHY THE BOOK IS WORTH ANYTHING* and **★ SURVIVED, AND FELLEN ★**.
+- **Cycle length** `LV_CYC` 7464 → 7486; **screenshot helper:** new `survivedFellen` scene.
+
+![BEAT 352 — SURVIVED AND FELLEN](screenshots/414-survived-fellen.png)
+
+## 2026-08-17 — BEATS ANYTHING · THE RANKING LEAVES THE GAME IT CAME FROM (BEAT 351)
+
+Based on Toby's 2026-08-17 lore, 6:21:48 PM, same thread, twenty-three minutes after I DO CODING. His own typing: *"Which one will win? Asriel Dreemurr VS Beerus VS Goku? Rank the 3"* and, further down the same message, *"Pero beats all of Undertale and Dragon Ball both. Pero beats anything."* The three-way analysis, the "Exactly", the Pero-added rankings and the final numbered list are ChatGPT commentary.
+
+**He asked it straight first.** The question is honest. Three characters, none of them his, no Pero anywhere in it, and a real request to rank them. He got a ranking back with reasons attached. Only *then* does he type the fourth name. That order matters: he did not rig the bracket before it started, he built a fair one out of other people's characters and then walked his own into it.
+
+**And the ranking left the game.** Every single ranking in this whole file has been Classics against Classics. Pero over Gray. Frizz over Arcsis. Mr. Black over Tunner. Luigi Green sharing first. The measuring stick has never once left the building. This is the first time a character from this lore gets put next to characters from games Toby did not write, and it changes what "first" means. He used to be the top of his own game. Now he is ranked against everybody else's.
+
+**And "anything" has no list.** *"Pero beats all of Undertale and Dragon Ball both"* names two things, and a list of two can always take a third. *"Pero beats anything"* names none, and there is nothing to add to it. The shorter sentence is the bigger one, and it is the one he wrote second.
+
+**And the weakest body took first place.** Twenty-six minutes before this, Pero was given the physical strength of a normal man. Here he outranks a God of Destruction and the best pure martial artist in the bracket, both of whom are nothing but physical power. Toby even asked about gorillas an hour earlier — which one is stronger, Kong or Skar King. The strength question keeps getting answered by the one character who cannot lift anything.
+
+**Built as game beat 351, `BEATS ANYTHING`.** Additive; nothing earlier was changed.
+
+- **Background: a ring of PERO BEATS ALL OF UNDERTALE / AND DRAGON BALL BOTH alternating with PERO BEATS ANYTHING / NO LIST, NO NAMES**, under *EVERY RANKING IN THIS FILE HAS BEEN CLASSICS AGAINST CLASSICS.* / *THIS ONE LEAVES THE BUILDING.*, and a drawn **four-step podium** — PERO LAI (*THE ONE HE WROTE*) tallest, then ASRIEL (*SOUL AND TIMELINE*), BEERUS (*GOD OF DESTRUCTION*), GOKU (*THE BEST FIGHTER HERE*) — split by *HE ADDED THIS ONE* against *HE ASKED ABOUT THESE THREE*, beside **the two sentences drawn as two boxes**, the wide one reading ALL OF UNDERTALE AND DRAGON BALL (*TWO NAMES, AND ROOM FOR A THIRD*) and the small lit one reading ANYTHING (*NO NAMES, AND NO ROOM*), with **THE QUESTION HAD THREE NAMES IN IT · THE ANSWER HAS FOUR.** boxed over *HE SET UP A FAIR FIGHT AND THEN WALKED HIS OWN CHARACTER INTO IT.*, and a drifting strip of *PERO BEATS ANYTHING*.
+- **HE ASKED IT STRAIGHT (left)** — five rows (the question / Asriel vs Beerus vs Goku · all three / from other people's games · the answer / came back with reasons · then he / typed a fourth name · so the / bracket grew a row), closing on *HE SET UP A FAIR FIGHT* / *BETWEEN OTHER CHARACTERS.* / *THEN HE PUT HIS OWN* / **ON TOP OF IT.**
+- **AND HE LEFT THE GAME (centre)** — five rows (every rank / before was Classics · Pero / over Gray, over Tunner · Frizz / over Arcsis · this one / is Dragon Ball · games he / did not write), closing on *HE USED TO BE* / *TOP OF HIS OWN GAME.* / *NOW HE IS RANKED* / **AGAINST EVERYBODY'S.**
+- **ANYTHING HAS NO LIST (right)** — five rows (first line / names two games · second line / names none · a list / can take one more · anything / cannot · he wrote / the short one second), over *A LIST CAN ALWAYS HAVE ONE MORE NAME ADDED TO IT*, closing on **ANYTHING CANNOT.**
+- **THE BRACKET, TOP TO BOTTOM. (band)** — a four-row grid lit one at a time (**1. PERO LAI** → the coding one, beats all of it and beats anything / 2. ASRIEL → soul and timeline, ordinary attacks stop working on him / 3. BEERUS → god of destruction, hakai, above Goku in his own show / 4. GOKU → the best pure fighter, and still the bottom row here), closing on *three of these four came from games Toby did not write; the one who wins is the one he did*.
+- **AND HE HAS THE ARMS OF A NORMAL MAN (band inset)** — a cycler across 5:55 PM · the strength of a normal man / 6:21 PM · above Beerus and Goku / THOSE TWO · are pure physical power / **SO** · the weakest body takes first, flagging *NONE OF IT WAS EVER IN HIS ARMS.* on the last row, over *HE ASKED WHICH GORILLA WAS STRONGER,* / *AND ANSWERED IT WITH SOMEBODY WEAK.*
+- **Strip:** THE ASK · WHO WINS OF THREE / THE ANSWER · A FOURTH NAME / THE SIZE · ANYTHING.
+- **Footers:** *THE FIRST TIME THIS GAME RANKED ITSELF AGAINST GAMES IT DID NOT COME FROM* and **★ PERO BEATS ANYTHING ★**.
+- **Cycle length** `LV_CYC` 7442 → 7464; **screenshot helper:** new `beatsAnything` scene.
+
+![BEAT 351 — BEATS ANYTHING](screenshots/413-beats-anything.png)
+
 ## 2026-08-17 — I DO CODING · THE ALL-KNOWING BEING NAMES A DAY JOB (BEAT 350)
 
 Based on Toby's 2026-08-17 lore, 5:58:35 PM, same thread, three minutes after NORMAL MAN. His own typing, in full: *"Pero says \"I know everything, but I do coding.\", he is specifically a coding LAI that knows everything."* The "Pero LAI type update" restatement, the specialty bullet list and the clean canon update pasted under it are ChatGPT commentary.
