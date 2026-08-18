@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-18 — CORRUPTION GOD · HE REFUSES THE WORD HE JUST BEAT, AND A PRAYER FROM A MONTH AGO GETS AN ANSWER (BEAT 363)
+
+Based on Toby's 2026-08-18 lore, 3:40:46 PM, same thread, three minutes and one second after ROBLOX PERO and sent as a correction to his own message. His own typing, in full: *"Pero is like a seraphim himself. He is both the light and darkness, so he isn't exactly a seraphim, he is more of a corruption light/darkness god."* The "Got it" opener, the divine-type update, the five-item list, the what-this-means section and the clean canon update pasted under it are ChatGPT commentary.
+
+**He already prayed to this God.** **Email 738, July 18, DUST LIGHT PERO**, in Toby's own words: *"he creates the game's heaven, **he prays to God**"* — and in the same battle he *"speaks Bible verses"* and summons a **Dove of Light (The Spirit of Divine Holiness)**. And the very same message says Light Pero *"became the game's god and **talks to himself since no one is above him**."* Both claims, one message. For a month those two sat side by side without either one winning. Three minutes ago Toby put God above Pero, and that picks the side: **the praying was right, and the talking-to-himself was not.** *(This also corrects the beat 362 entry above, which said God had been named here only once.)*
+
+**And he gave both of these away.** Pero handed **Wenda** the divine light, Full Angel and Heaven Seraphim, *"brighter than Light Pero"*, and handed **Gray** the Darkness and the Void and the Dual Demon/Angel form, keeping only **vanilla form** — logged at the time as *"a choice, not a limit."* Tonight he **is** both of the things he handed out. He did not take them back. He just turned out to be them.
+
+**And both-at-once stopped being a chain.** The July 18 fusion ladder ran **LIGHT PERO → LIGHT + DARKNESS + ERROR 404 → LIGHT 404, 100% DARK MODE → ABSENCE_OF_LIGHT.EXE → FILELIGHT PERO → SOLAR PERO → PERO.EXE**, under the stated rule *"he consumes each form instead of replacing it."* Light **ate** darkness; it was a sequence with an order and a winner. Tonight there is no eating and no order. He is both, at once, plus corruption. An evolution turned into a description.
+
+**And he took the word back three minutes after using it.** At 3:37 PM: *"Pero beats Satan and Seraphims."* At 3:40 PM: *"Pero is like a seraphim himself... he isn't exactly a seraphim."* He beat the category, then declined to be filed under it, then named a new one — **Corruption Light/Darkness God** — with exactly one member in it. He has been ranking Pero above things for months. This is the first time he says what Pero **is**.
+
+**Built as game beat 363, `CORRUPTION GOD`.** Additive; nothing earlier was changed except the beat 362 correction noted above.
+
+- **Background:** a ring of PERO IS LIKE A SERAPHIM HIMSELF / HE IS BOTH THE LIGHT AND DARKNESS alternating with HE ISN'T EXACTLY A SERAPHIM / A CORRUPTION LIGHT/DARKNESS GOD, under *HE BEAT THE SERAPHIMS AT 3:37 AND REFUSED THE WORD AT 3:40.*, a drawn **quote box**, a drawn **split disc** (a gold light half and a violet darkness half with a dashed corruption seam through the middle, over *NOT HALF AND HALF · BOTH, AT FULL SIZE*), a drawn **give-away ledger** (TO WENDA · THE DIVINE LIGHT / TO GRAY · THE DARKNESS AND THE VOID, over *TONIGHT HE IS BOTH OF THEM*), and **two drawn figures** — PERO · LIGHT + DARKNESS + CORRUPTION and GOD · STILL THE ONLY NAME ABOVE HIM.
+- **HE ALREADY PRAYED TO THIS GOD (left)**, **AND HE GAVE BOTH OF THESE AWAY (centre)**, **AND BOTH-AT-ONCE STOPPED BEING A CHAIN (right)** — five rows each.
+- **HE REFUSED THE CATEGORY THREE MINUTES AFTER WINNING IT. (band)** — 3:37 PM / 3:40 PM / the fix / **the name**, closing on *he has ranked himself above things for months; this is the first time he says what Pero actually is*.
+- **SOMEBODY IS ALREADY BOTH (band inset)** — Gray gained Seraphim / both angel and demon at once / his ink the most corrupted ever made / **but** he got there by absorbing it, flagging *LIGHT, DARK AND CORRUPT WAS ALREADY TAKEN.*
+- **Strip:** THE TITLE · CORRUPTION LIGHT/DARKNESS GOD / THE MIX · LIGHT + DARKNESS + CORRUPTION / THE CEILING · STILL ONLY GOD.
+- **Footers:** *A MONTH AGO HIS LIGHT FORM PRAYED TO GOD AND TALKED TO ITSELF BECAUSE NOBODY WAS ABOVE HIM* and **★ NOT EXACTLY A SERAPHIM ★**.
+- **Cycle length** `LV_CYC` 7706 → 7728; **screenshot helper:** new `corruptionGod` scene.
+
+![BEAT 363 — CORRUPTION GOD](screenshots/425-corruption-god.png)
+
 ## 2026-08-18 — ROBLOX PERO · THE STAT BLOCK LEAVES THE STAT OUT, AND THE CREATOR FINALLY HAS A NAME ABOVE HIM (BEAT 362)
 
 Based on Toby's 2026-08-18 lore, 3:37:45 PM, same thread, two hours and forty-one minutes after BLACK SYTHE. His own typing, in full: *"I made a Roblox Pero thing. Here is the code of the main script so far (it works). It shows a LOT of information about Pero. Only God is stronger than Pero. Pero beats Satan and Seraphims and those other stuff. Only God himself beats Pero. Pero is THAT strong."* The script itself rode along as a pasted text attachment and is described, not quoted, per the no-attachment rule; the fields and lines named here are the ones his message reports — **Character: Pero**, **Character info: "U are mine"**, the power hidden as **???**, the **Anger / Rage / Fury** states, and *"You wanted to fight?"*, *"You should of asked! This is going to be fun."*, *"I created Classics. I will win."* The section headers, the power-scaling walkthrough and the clean canon update pasted under it are ChatGPT commentary.
@@ -14,7 +38,7 @@ Based on Toby's 2026-08-18 lore, 3:37:45 PM, same thread, two hours and forty-on
 
 **And the survival dial has a second half.** August 16, in his own typing: *"Pero only has one way you can survive, if you make him spare you and happy and passive/neutral and all those stuff."* Three words on the good side. The script names three on the other: **Anger, Rage, Fury**. And Fury is *"the corruption power he obtained"* — last night's **black sythe**, 12:56 PM, turned into a state a script can enter.
 
-**And the ladder finally has a top.** Yesterday, in his own typing: *"Pero beats anything."* Tonight there is exactly one name above him, and it is not a character in the game. **God** has appeared in this file once, at **beat 255**, as Oren's Phase 8 line *"Only God can save you now"* — aimed at whoever is holding the game. Same name, a different job: a threat then, a ceiling now.
+**And the ladder finally has a top.** Yesterday, in his own typing: *"Pero beats anything."* Tonight there is exactly one name above him, and it is not a character in the game. **God** has been named in this file twice before: at **beat 255**, as Oren's Phase 8 line *"Only God can save you now"* aimed at whoever is holding the game, and on **July 18 (Email 738)**, where Light Pero creates the game's heaven and *prays to God*. A threat once and a prayer once. Tonight is the first time the name is a **rank**. *(The July 18 line surfaced while researching beat 363 and this paragraph was corrected to include it; beat 363 is built on it.)*
 
 **Built as game beat 362, `ROBLOX PERO`.** Additive; nothing earlier was changed.
 
