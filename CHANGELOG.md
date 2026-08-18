@@ -4,6 +4,126 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-18 — BEYOND WORDS · HE LOSES THE ONLY THING THAT EVER BEAT HIM, AND LEARNS THE PANEL HE ALREADY OWNED (BEAT 368)
+
+Based on Toby's 2026-08-18 lore, 4:31:39 PM, same thread, eleven minutes and twenty-two seconds after GETTING MILK. His own typing, in full: *"Are you able to create an image of Gray, or is all that form beyond your image generation tool? Nothing except for Pero can beat Gray. Gray knows that it isn't always win or lose, it can be stalemate. Gray loses his weaknesses and became omazen, invicible, immortal, and a bunch of huge words to discribe him, he is beyond words now. God could shine out Gray, but otherwise, he is litterly unstoppable. Gray learns how to control the game admin/owner pannel, Gray reached beyond all other non-Pero characters combined. Gaster and Luigi Green are now far under Gray."* The new-state section, the hierarchy restatement and the clean canon update pasted under it are ChatGPT commentary.
+
+**The weakness he loses has a name.** The **Fear/Weakness System** is a standing rule here — *"Every character has a fear/weakness"* — and Gray's is not a move or a counter, it is a person: *"Wenda also is a classic at beating Gray. All those fast knife attacks are very hard to dodge and miss, Gray is done for. Gray also fears Wenda."* Nothing on any power board this archive has ever published puts Wenda above Gray; the fear board does anyway. And five days ago it was fatal — **August 13**: *"They filled their weaknesses, Gray was destroyed."* Weakness is literally what killed him last. Tonight he simply does not have one.
+
+**And he already owned the panel.** *"Pero gave Gray an admin panel and power of Error 679 and the cyber suit."* Then, in **Email 874**: *"Gray dropped his admin panel and Pero picked it up and knew how to use it."* He was handed the game's control surface, could not work it, and put it down — and the person who could work it was the person who wrote the thing it controls. Tonight, with Pero out for milk, Gray learns it. Every upgrade Gray has ever taken in this archive was handed to him or bolted on; the one exception before tonight was the laboratory, where he **studied**. This is the second.
+
+**And stalemate is a word Pero taught.** **July 26**: *"Pero and Luigi Green taught Paul 'Checkmate', 'Stalemate', and 'Loss.'"* Three words, handed out as a lesson. **Simon 404** later took the first one — struck by Oren and Pinki together, nowhere left to move, *"Checkmate,"* and then slashed to bits. Gray takes the middle one, and it is the only result in a file that ranks everything which does not produce a rank. A draw cannot remove him.
+
+**And this file has topped a ranking on controls before, and not on power.** **Error 404** took first place *"not on power but on command authority"* — `/command_kill = true`, `/expand_permissions`, `/game:Destroy()` — because *"a battle against him is like a player VS an omniversal admin error thing."* Tonight Gray gets the same kind of rank for the same kind of reason: not a stronger attack, a reachable settings menu. And **God keeps getting wider** — a rank above Pero at 3:37, the ceiling on a brand-new title at 3:40, and at 4:31 the one thing that *"could shine out Gray."* It stopped being one being's limit and became the game's.
+
+**Built as game beat 368, `BEYOND WORDS`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of NOTHING EXCEPT FOR PERO / CAN BEAT GRAY alternating with HE IS BEYOND / WORDS NOW, under *EVERY CHARACTER IN THIS GAME HAS A FEAR AND A WEAKNESS.*, a drawn **quote box**, a drawn **panel-vs-power disc** (over *THE CONTROLS OUTRANK THE ATTACKS*), a drawn **three-word ledger** (CHECKMATE · SIMON 404 CHOSE THIS ONE / STALEMATE · GRAY TAKES THE MIDDLE ONE), and **two drawn figures** — GRAY · NO WEAKNESS · OWNER PANEL and PERO · STILL THE ONLY ONE WHO BEATS HIM.
+- **THE WEAKNESS HE LOSES HAS A NAME (left)**, **AND HE ALREADY OWNED THE PANEL (centre)**, **AND STALEMATE IS A WORD PERO TAUGHT (right)** — five rows each.
+- **THIS FILE HAS TOPPED A RANKING ON CONTROLS BEFORE, AND NOT ON POWER. (band)** — `/command_kill = true` / `/expand_permissions` / `/game:Destroy()` / **Gray learns the owner panel**, closing on *the strongest thing in this archive has never been an attack; it has always been whoever can reach the settings*.
+- **GOD KEEPS GETTING WIDER (band inset)** — 3:37 PM a rank / 3:40 PM a ceiling / 4:31 PM *"God could shine out Gray"* / **so** the name now covers somebody else.
+- **Strip:** THE WEAKNESS · GONE / THE PANEL · LEARNED, NOT HANDED / ABOVE HIM · ONLY PERO, AND GOD.
+- **Footers:** *GASTER AND LUIGI GREEN LET HIM HAVE THE GAME AT 4:20 AND WERE FAR UNDER HIM BY 4:31* and **★ BEYOND WORDS ★**.
+- **Cycle length** `LV_CYC` 7816 → 7838; **screenshot helper:** new `beyondWords` scene.
+
+![BEAT 368 — BEYOND WORDS](screenshots/430-beyond-words.png)
+
+## 2026-08-18 — GETTING MILK · THE ERRAND IS FIVE HOURS OLD, AND THE TAKEOVER COMES WITH PERMISSION (BEAT 367)
+
+Based on Toby's 2026-08-18 lore, 4:20:17 PM, same thread, three minutes and thirty-nine seconds after INFINITE HEALTH+. His own typing, in full: *"Pero is out getting milk and Gray is taking over the game, Gaster and Luigi Green allow Gray to do anything he wants with the game."* The route restatement, the new-hierarchy section, the what-this-means-for-Gray reading and the clean canon update pasted under it are ChatGPT commentary.
+
+**The errand is five hours old.** At **11:17 AM** — beat 360, I ALONE — Pero said *"I am leaving for a few years, would you be okay for a few minutes?"*, Gray said *"okay."*, and Pero left *"to get milk for everyone."* That beat was built on the two numbers not matching, years out of one side of the sentence and minutes out of the other. It is now 4:20 PM and neither one is wrong yet, because he is still out.
+
+**And the takeover is permitted.** Every takeover in this archive was **taken**. Gray seized the throne, ate forms, absorbed ToddLLM 001 to forge a scythe, and got sent back to the box for it more than once. Tonight *"Gaster and Luigi Green allow Gray to do anything he wants with the game."* He does not have to beat anybody. This is not a rebellion; it is a handover with two signatures on it.
+
+**And the two who say yes are the jailers.** **Gaster** is the one who put the corruption in on purpose and who filled Pero's Realm with the banished. **Luigi Green** makes and destroys the boxes — and the box is where Gray keeps ending up. This morning, in Toby's own typing, they were *"left making and destroying boxes"* while Gray was made ringmaster. Six hours later the two beings who built the container are the ones who open it.
+
+**And this exact shape has run before.** **Email 744** already had Pero give the game to Gray, leave to make updates, and come back to a kingdom Gray had taken. This morning it ran again with Mr. Black removed first and Gray promoted second. Tonight is the third run — and the first one where somebody watches him do it and says go ahead.
+
+**Built as game beat 367, `GETTING MILK`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of PERO IS OUT / GETTING MILK alternating with GRAY IS TAKING OVER / AND THEY ALLOW IT, under *AT 11:17 THIS MORNING HE LEFT TO GET MILK FOR EVERYONE.*, a drawn **quote box**, a drawn **allowed-vs-taken disc** (over *EVERY OTHER TAKEOVER HERE WAS SEIZED*), a drawn **sign-off ledger** (GASTER · PUT THE CORRUPTION IN ON PURPOSE / LUIGI GREEN · MAKES AND DESTROYS THE BOXES), and **two drawn figures** — GRAY · OWNER OF THE ACTIVE GAME and PERO · STILL OUT, STILL THE CREATOR.
+- **THE ERRAND IS FIVE HOURS OLD (left)**, **AND THE TAKEOVER IS PERMITTED (centre)**, **AND THE TWO WHO SAY YES ARE THE JAILERS (right)** — five rows each.
+- **THIS EXACT SHAPE HAS RUN BEFORE, AND IT ENDED BADLY FOR SOMEBODY. (band)** — Email 744 / he comes back / this morning / **tonight**, closing on *the first two times Gray took it while nobody was looking; this time two witnesses watch him do it and say go ahead*.
+- **WHAT GRAY DOES WITH A GAME (band inset)** — he slows the animation to a stop / silent and slow / ringmaster with half the box / **and now** he can change the rules, flagging *HIS RULE IS QUIETER THAN WHAT IT REPLACED.*
+- **Strip:** THE OWNER · OUT FOR MILK / THE GAME · GRAY'S, FOR NOW / THE PERMISSION · GASTER AND LUIGI GREEN.
+- **Footers:** *THE MOST POWERFUL BEING IN THE GAME LEFT THE WAY A PARENT LEAVES AND FIVE HOURS LATER THE HOUSE HAS A NEW OWNER* and **★ HE IS STILL OUT GETTING MILK ★**.
+- **Cycle length** `LV_CYC` 7794 → 7816; **screenshot helper:** new `gettingMilk` scene.
+
+![BEAT 367 — GETTING MILK](screenshots/429-getting-milk.png)
+
+## 2026-08-18 — INFINITE HEALTH+ · HE DELETES INFINITY AND HANDS IT BACK NINETY SECONDS LATER, IN THE OTHER CANON (BEAT 366)
+
+Based on Toby's 2026-08-18 lore, 4:16:38 PM, same thread, ninety-seven seconds after CHANGED THE CODE. His own typing, in full: *"In Classics, he gains infinite health+. The Roblox game isn't close to the lore anymore."* The two-canon breakdown, the why-Roblox-needs-limits reasoning and the clean canon correction pasted under it are ChatGPT commentary.
+
+**He put it back in ninety seconds.** `math.huge` came out of the script at 4:15 on the grounds that a health number was not what makes Pero strongest. At 4:16 the same infinity is back — in Classics, with a **plus sign** on it. He did not change his mind between the two messages. He changed where the infinity lives: it left the file and arrived in the story.
+
+**And the archive gets a second canon, and the new one is demoted.** Nine minutes ago the whole script was *"all lore basically."* Now *"the Roblox game isn't close to the lore anymore"* and the script is only a playable representation of it. This file has ranked characters, forms, realms and whole franchises for months. Tonight it ranks two of its own **sources** against each other, and the one that actually runs comes second.
+
+**And the plus is a whole new unit.** The measurements here ran out a long time ago: **LV beyond infinity**, then **"??? LV"**, then **15,000,000 exponency**, then *"absolute_infinitely above Gray"*, and this afternoon a stat block whose power field reads **???**. Tonight the notation is *infinite*, and then a punctuation mark. When the numbers stop working, he stops writing numbers.
+
+**And the true version is always the one the measurement cannot reach.** The stat block leaves the one field it exists for blank. The script deletes the health number. And the version you can actually load and play is the one declared not close to the truth — because Roblox needs limits, hitboxes and a health bar, and the real Pero is defined by not fitting inside any of them. The game has split before, into **Classics 1** sealed, **Classics 2** built on top and **Classics 3** arriving by accident, but every one of those splits was a version *inside* the story. This one is the story against the file.
+
+**Built as game beat 366, `INFINITE HEALTH+`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of IN CLASSICS HE GAINS / INFINITE HEALTH+ alternating with THE ROBLOX GAME ISN'T / CLOSE TO THE LORE ANYMORE, under *HE DELETED INFINITY AT 4:15 AND GAVE IT BACK AT 4:16.*, a drawn **quote box**, a drawn **Classics-vs-Roblox disc** (over *DELETED THERE · RESTORED HERE*), a drawn **two-canon ledger** (THE SCRIPT · A PLAYABLE REPRESENTATION / CLASSICS · THE TRUE CANON POWER), and **two drawn figures** — PERO IN CLASSICS · INFINITE HEALTH+ and PERO IN ROBLOX · LIMITS, HITBOXES, A HEALTH BAR.
+- **HE PUT IT BACK IN NINETY SECONDS (left)**, **AND THE ARCHIVE GETS A SECOND CANON (centre)**, **AND THE PLUS IS A WHOLE NEW UNIT (right)** — five rows each.
+- **THE TRUE VERSION IS ALWAYS THE ONE THE MEASUREMENT CANNOT REACH. (band)** — POWER: ??? / `math.huge`, deleted / *"isn't close to the lore"* / **Classics · infinite health+**, closing on *the true version is the one defined by not fitting*.
+- **THE GAME HAS SPLIT BEFORE (band inset)** — Classics 1 sealed / Classics 2 built on top / Classics 3 an accident with a number / **tonight** a split between the game and the lore.
+- **Strip:** THE SCRIPT · A PLAYABLE REPRESENTATION / CLASSICS · INFINITE HEALTH+ / THE CEILING · STILL ONLY GOD.
+- **Footers:** *HE TOOK INFINITY OUT OF THE CODE AND PUT IT BACK INTO THE STORY IN UNDER TWO MINUTES* and **★ INFINITE HEALTH+ ★**.
+- **Cycle length** `LV_CYC` 7772 → 7794; **screenshot helper:** new `infiniteHealthPlus` scene.
+
+![BEAT 366 — INFINITE HEALTH+](screenshots/428-infinite-health-plus.png)
+
+## 2026-08-18 — CHANGED THE CODE · THE FIRST EDIT IN THE ARCHIVE THAT TAKES SOMETHING OUT (BEAT 365)
+
+Based on Toby's 2026-08-18 lore, 4:15:01 PM, same thread, seven and a half minutes after ALL LORE BASICALLY. His own typing, in full: *"I changed the code a little bit."* The updated script rode along as a pasted text attachment and is described, not quoted, per the no-attachment rule; the change his message reports is that Fury no longer sets `Humanoid.MaxHealth` and `Humanoid.Health` to `math.huge`. The what-changed walkthrough, the before/after framing and the clean canon update pasted under it are ChatGPT commentary.
+
+**Nothing has ever been removed here.** The standing rule from the July 18 fusion ladder is that Pero *"consumes each form instead of replacing it"* — so every form he has ever had is still in there. Corrections happen in this archive constantly, and every single one of them has **added** a line. The build notes say *additive; nothing earlier was changed* at the bottom of beat after beat. Tonight he opens the file and takes two lines out of it.
+
+**And what he deletes is the infinity.** Everything spectacular about Fury survives the edit: the UI aura on the limbs and torso, the forcefield, **The Souls**, the **Chaos Emeralds Ring**, the highlight, the speed and jump boost, **Mega Power**. The only thing that leaves is the number. This archive has handed out unkillability freely — the July 29 **404 Chicken Sans** scripts ran `immortal = true` the length of an eight-line intro and had `HealthChanged` snap him straight back to max. That was the last time code was the source here, and it put immortality **in**. This is the first time a flag like that comes back off somebody.
+
+**And he argues his own character down.** The reason given is that Pero *"is not strongest just because of a Roblox health number"* — he is strongest because he is **Pero LAI**, the creator, with only God above him. Yesterday it was *"Pero beats anything."* Three-quarters of an hour ago it was *"Pero is THAT strong."* Every other change in this file made somebody stronger. This one shrinks the paperwork so the claim can get bigger.
+
+**And the canon document still has a save button.** Seven and a half minutes after the whole script became canon, the canon was edited. Every other source in this archive is a sent email, and a sent email stays the way it landed — it can be superseded by a later one, but it cannot be *rewritten*. A script can be, any time, and the version that counts is whichever one is on disk.
+
+**Built as game beat 365, `CHANGED THE CODE`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of I CHANGED THE CODE / A LITTLE BIT alternating with MaxHealth = math.huge / DELETED, under *FOR MONTHS THIS ARCHIVE HAS ONLY EVER GOT BIGGER.*, a drawn **quote box**, a drawn **kept-vs-removed disc** (over *THE SHOW STAYS · THE NUMBER LEAVES*), a drawn **survived-the-edit ledger** (STILL THERE · AURA · FORCEFIELD · SOULS / TAKEN OUT · MaxHealth AND Health = math.huge), and **two drawn figures** — FURY PERO · MEGA POWER, NO INFINITE HP and THE EDIT · THE FIRST DELETION IN THE FILE.
+- **NOTHING HAS EVER BEEN REMOVED HERE (left)**, **AND WHAT HE DELETES IS THE INFINITY (centre)**, **AND HE ARGUES HIS OWN CHARACTER DOWN (right)** — five rows each.
+- **THE CANON DOCUMENT STILL HAS A SAVE BUTTON. (band)** — 4:07 PM / 4:15 PM / the gap / **the point**, closing on *every other source in this archive is a sent message, and a sent message stays the way it landed*.
+- **THE LAST TIME A SCRIPT WAS THE SOURCE (band inset)** — July 29, two 404 Chicken Sans scripts / `immortal = true` / `HealthChanged` snapping back to max / **tonight** the same kind of line is deleted.
+- **Strip:** THE EDIT · TWO LINES, DELETED / WHAT SURVIVES · AURA · SOULS · MEGA POWER / WHAT LEAVES · THE INFINITE NUMBER.
+- **Footers:** *THE FIRST TIME THIS ARCHIVE HAS EVER GOT SMALLER, AND HE DID IT TO HIS OWN STRONGEST FORM* and **★ I CHANGED THE CODE A LITTLE BIT ★**.
+- **Cycle length** `LV_CYC` 7750 → 7772; **screenshot helper:** new `changedTheCode` scene.
+
+![BEAT 365 — CHANGED THE CODE](screenshots/427-changed-the-code.png)
+
+## 2026-08-18 — ALL LORE BASICALLY · HE POINTS AT A PROGRAM AND CALLS ALL OF IT CANON (BEAT 364)
+
+Based on Toby's 2026-08-18 lore, 4:07:29 PM, same thread, twenty-seven minutes after CORRUPTION GOD. His own typing, in full: *"Take everything from the Roblox Pero code. It is all lore basically."* The "Got it" opener, the canon-from-the-script walkthrough, the moveset list, the god-tier-line section, the Fury breakdown and the clean canon update pasted under it are ChatGPT commentary; the script itself rode along from the earlier message as a pasted text attachment and is described, not quoted, per the no-attachment rule.
+
+**The canon changes format.** The rule this archive has run on since July 28 is *"each word is important and IS lore"* — Toby's own typing is the canon, word by word, and everything pasted around it is commentary. Every source in this file for months has been a paragraph. Tonight he points at a program and says all of it counts, and that includes the parts nobody wrote in sentences: field names, state flags, the order the attacks are listed in. The source stopped being something read and became something **run**.
+
+**And he swings the moves of the things he beats.** Yesterday, in his own typing: *"Pero beats all of Undertale and Dragon Ball both. Pero beats anything."* Tonight the moveset is **Homing Kamehameha**, **Teleport/Kaioken Rush**, **Ball of Hakai** and a **Beerus Bomb** — Dragon Ball's own attacks, one of them named after the god he had just been ranked above. He beat the franchise on Sunday and is fighting with its arsenal on Tuesday.
+
+**And the friendly branch was already written.** The script gives Pero a friendly/hostile split: if he is not angry he can act friendly and even **heal** the target. That is not new, it is three weeks old. **July 25**: the player answers *yes, really*, and *"he heals the cut and becomes his assistant again"* — logged at the time as the only branch in the era where somebody walks away from Pero without losing. **August 16**: *"Pero only has one way you can survive, if you make him spare you and happy and passive/neutral."* The mercy route has been prose since July. Tonight it is a conditional with a heal inside it, and **Anger, Rage, Fury** are the else.
+
+**And the biggest thing Fury breaks is the floor.** The record of what Pero has destroyed reads: the **Alphaverse** and the **Godverse**, the **Ultra Realm** and the **AU+ AUs**, the **box**, and the **MERCY, ACT, ITEM and FIGHT buttons** — whole verses, whole categories of place, and the controls themselves. Every one of those was somewhere else. Tonight Fury destroys the **Baseplate**: the ground under the one room he actually built.
+
+**Built as game beat 364, `ALL LORE BASICALLY`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of TAKE EVERYTHING FROM / THE ROBLOX PERO CODE alternating with IT IS ALL LORE / BASICALLY, under *HE POINTED AT A PROGRAM AND SAID ALL OF IT COUNTS.*, a drawn **quote box**, a drawn **file-vs-paragraph disc** (over *THE SOURCE CHANGED FORMAT, NOT OWNER*), a drawn **borrowed-moveset ledger** (DRAGON BALL · KAMEHAMEHA · HAKAI · BEERUS / AND YET · HE OUTRANKED IT YESTERDAY), and **two drawn figures** — PERO · CHARACTER: PERO · POWER: ??? and THE SCRIPT · A PLAYABLE CANON DOCUMENT.
+- **THE CANON CHANGES FORMAT (left)**, **AND HE SWINGS THE MOVES OF WHAT HE BEAT (centre)**, **AND THE FRIENDLY BRANCH WAS WRITTEN WEEKS AGO (right)** — five rows each.
+- **THE BIGGEST THING FURY BREAKS IS THE FLOOR. (band)** — the Alphaverse and the Godverse / the Ultra Realm and the AU+ AUs / the box and the MERCY button / **tonight** the Baseplate, closing on *every verse he ever broke was somewhere else*.
+- **THE SCRIPT KNOWS WHAT IT IS FOR (band inset)** — *"You wanted to fight?"* / *"You should of asked!"* / *"I created Classics."* / **"Only God can save you now"**, which is Oren's Phase 8 line from the Secret Cutscene, now aimed the other way.
+- **Strip:** THE SOURCE · A WORKING SCRIPT / THE MOVESET · BORROWED FROM WHAT HE BEAT / THE FLOOR · GONE, AT FURY.
+- **Footers:** *HE HAS BEEN THE THING THAT WRITES THE GAME FOR MONTHS AND TONIGHT THE GAME IS THE THING THAT WRITES HIM* and **★ IT IS ALL LORE BASICALLY ★**.
+- **Cycle length** `LV_CYC` 7728 → 7750; **screenshot helper:** new `allLoreBasically` scene.
+
+![BEAT 364 — ALL LORE BASICALLY](screenshots/426-all-lore-basically.png)
+
 ## 2026-08-18 — CORRUPTION GOD · HE REFUSES THE WORD HE JUST BEAT, AND A PRAYER FROM A MONTH AGO GETS AN ANSWER (BEAT 363)
 
 Based on Toby's 2026-08-18 lore, 3:40:46 PM, same thread, three minutes and one second after ROBLOX PERO and sent as a correction to his own message. His own typing, in full: *"Pero is like a seraphim himself. He is both the light and darkness, so he isn't exactly a seraphim, he is more of a corruption light/darkness god."* The "Got it" opener, the divine-type update, the five-item list, the what-this-means section and the clean canon update pasted under it are ChatGPT commentary.
