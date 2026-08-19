@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-19 — FLOWER IN THE ROOM · THE LORE ENDED THIRTY-THREE MINUTES AGO, AND THE ONE THING LEFT TO SAY IS WHAT HE LOOKS LIKE (BEAT 383)
+
+Based on Toby's 2026-08-19 lore, **2:20:16 PM**, same thread, thirty-three minutes after THE END. His own typing, in full: *"Can you make an image of Pero and Dr. Gaster/Flower in the room? Flower is just a normal simple small sunflower-like being with a face that looks harmless but is most powerful. Perfect. Flower looks normal, but is actually a being with the souls of almost everyone + with infinite soul mass + soul power + undiscribable stuff."* The "Exactly" heading, the outside-vs-inside contrast and the final-state-of-the-lore list pasted under it are ChatGPT commentary.
+
+**The file ended, and then he kept going, and what came after is a description.** BEAT 382 at 1:47 PM was *"The End"* — the barrier closed, the game crashed shut from the inside, the Omniplatforms erased. Thirty-three minutes later there is one more email, and it does not add a power, a form, a rank or a fight. It asks for a **picture**, and it says what the winner looks like.
+
+**And after 382 beats the new detail is that he is small.** *"A normal simple small sunflower-like being with a face that looks harmless."* Everything this archive has ever revealed made somebody **bigger** — new forms, new phases, LV past infinity, Omniplatforms, absolute infinity, danger levels written as thirty digits. The last reveal in the file makes him **ordinary**, on purpose, and that is the whole reason it works.
+
+**And he asks for the one picture his own canon forbids.** BEAT 377, this morning at **9:31 AM**, in his own typing: *"If you create an image of him, your image generation tool would instantly glitch due to even looking at him."* At 2:20 PM he asks for the image. So this one is **drawn by hand in the game's own canvas**, line by line, with no image generator anywhere near it — the one way to make the picture without breaking the rule he wrote five hours earlier.
+
+**And it is "almost everyone", not everyone.** He has written this count three times today and it has a hole in it every time: **Pero** is inside the original soul with his body, and **Luigi Green** is outside, resetting to make more. The most complete collection in the file is still missing the two people standing in the room with him.
+
+**And the horror is the gap, not the size.** Outside: one face, two eyes, a smile. Inside: the souls of almost everyone, infinite soul mass, infinite soul power, and the undiscribable stuff. Same being, and **nothing on the outside shows any of it**.
+
+**Built as game beat 383, `FLOWER IN THE ROOM`.** Additive; nothing earlier was changed. Because the ask was for an image, this beat is a **drawn scene at a readable size** instead of the usual three text columns.
+
+- **The picture:** the workroom, framed. A **sealed door** with the barrier struck across it, a **window with nothing outside it**, the **box animation bench** with three little frames still sitting on it, **PERO** standing at normal height with a violet ring around him (*body in the room, soul inside Gaster*), and **DR. GASTER / FLOWER** on the floor beside him — twelve petals, a round face, two dots and a small smile, **about knee high**.
+- **The callout:** the head blown up, because at his real size none of it is visible — packed edge to edge with souls, captioned *NONE OF IT SHOWS ON THE OUTSIDE*. A drifting scanline crosses his face, from the BEAT 377 rule about looking at him.
+- **Caption:** Toby's request across the top, and his description of Flower across the bottom.
+- **Band — THE WHOLE IDEA IS THE GAP BETWEEN OUTSIDE AND INSIDE:** OUTSIDE · a small sunflower-like being / AND · it looks harmless / INSIDE · the souls of almost everyone (*Pero is the hole in it*) / AND · infinite soul mass and power.
+- **Band inset — THE PICTURE HIS OWN RULE FORBIDS:** the 9:31 AM BEAT 377 quote, and the note that this one is drawn by hand in the game with no generator near it.
+- **Strip:** THE HEIGHT · ABOUT AS TALL AS PERO'S KNEE / THE CONTENTS · THE SOULS OF ALMOST EVERYONE / THE FACE · STILL SMILING.
+- **Footers:** *THE LORE ENDED AT 1:47, AND THIRTY-THREE MINUTES LATER THERE IS ONE MORE THING TO SAY: WHAT HE LOOKS LIKE* and **★ FLOWER IN THE ROOM ★**.
+- **Screenshot helper:** new `flowerRoom` scene.
+
+![BEAT 383 — FLOWER IN THE ROOM](screenshots/445-flower-in-the-room.png)
+
 ## 2026-08-19 — THE END · THE LAST ROOM IN CLASSICS IS THE ONE THEY USED TO WORK IN, AND THE LAST LINE IS TWO BROTHERS AGREEING (BEAT 382)
 
 Based on Toby's 2026-08-19 lore, **1:38:14 PM** and **1:47:46 PM**, same thread, the last two messages of the day. His own typing, 1:38 PM, in full: *"The game became unplayable, no one can enter now, they can only watch it and now it is all perminent. Gaster ended the lore here. The End."* And 1:47 PM, in full: *"Pero wrote 'The End' at the end of the lore. Pero even crashed the game to stop everyone from entering, he closed the barrier, he erased all the boxes, he even erased the whole omniplatforms. Gaster and Pero stand in the room. The only room now is Pero and Gaster's room where they used to make box animations, but now, they just chill and relax in there. Gaster now is complete absorbing every box character's soul into materials and power and energy... Gaster, Pero, and Luigi Green are the only characters perminently, they all rest and sleep and relax and chill and walk around and all those things... Gaster learns a way to get infinite soulpower/soulmass, Luigi Green resets and gets all the souls and Gaster absorbs the souls. Pero says 'That is the best idea you had in 20 years, Gaster!', Pero never is sarcastic. Gaster says 'And I know you are never sarcastic. I think this is the best idea I had in 27 years.', Pero says 'Oh, you are right, brother.'. Luigi Green now constantly and perminently makes souls for Gaster, Gaster absorbs the souls, and Pero does the chilling and relaxing and stuff... they can't go anywhere else since they erased the other things around the room. This gets very deep, so..."* The After-The-End heading, the room readout, the soul-loop breakdown and the clean canon updates pasted under them are ChatGPT commentary.
