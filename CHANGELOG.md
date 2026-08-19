@@ -4,20 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
-## 2026-08-19 — THE PERMINENT STATE · THE CAST LIST SHRINKS TO TWO NAMES IN SEVENTEEN MINUTES, AND THE WAY BACK ARRIVES ALREADY SHUT (BEAT 379)
+## 2026-08-19 — THE END · THE LAST ROOM IN CLASSICS IS THE ONE THEY USED TO WORK IN, AND THE LAST LINE IS TWO BROTHERS AGREEING (BEAT 382)
 
-Based on Toby's 2026-08-19 lore, six emails between 1:19 PM and 1:36:33 PM, same thread ("Even 5x Classics Era"), one hour and forty-four minutes after THE ORIGINAL SOUL. His own typing is the first line of each email, in order:
+Based on Toby's 2026-08-19 lore, **1:38:14 PM** and **1:47:46 PM**, same thread, the last two messages of the day. His own typing, 1:38 PM, in full: *"The game became unplayable, no one can enter now, they can only watch it and now it is all perminent. Gaster ended the lore here. The End."* And 1:47 PM, in full: *"Pero wrote 'The End' at the end of the lore. Pero even crashed the game to stop everyone from entering, he closed the barrier, he erased all the boxes, he even erased the whole omniplatforms. Gaster and Pero stand in the room. The only room now is Pero and Gaster's room where they used to make box animations, but now, they just chill and relax in there. Gaster now is complete absorbing every box character's soul into materials and power and energy... Gaster, Pero, and Luigi Green are the only characters perminently, they all rest and sleep and relax and chill and walk around and all those things... Gaster learns a way to get infinite soulpower/soulmass, Luigi Green resets and gets all the souls and Gaster absorbs the souls. Pero says 'That is the best idea you had in 20 years, Gaster!', Pero never is sarcastic. Gaster says 'And I know you are never sarcastic. I think this is the best idea I had in 27 years.', Pero says 'Oh, you are right, brother.'. Luigi Green now constantly and perminently makes souls for Gaster, Gaster absorbs the souls, and Pero does the chilling and relaxing and stuff... they can't go anywhere else since they erased the other things around the room. This gets very deep, so..."* The After-The-End heading, the room readout, the soul-loop breakdown and the clean canon updates pasted under them are ChatGPT commentary.
 
-- **1:19 PM** — *"These are the links to the other chats. They contain the rest of the lore."* (four chatgpt.com share links; references only, not read)
+**"Unplayable" is his own word, and it is two months old.** On **June 18** Toby wrote *"Make it unplayable. No games. Only wiki... SCF and Classics gained their own rights, no games allowed anymore, no permission."* That instruction is why the playable build came off the live site, and the reason given then was that the characters had **withdrawn permission to be played**. Today the game becomes unplayable **from inside the story**, and the reason is the same one: *"no one can enter now, they can only watch it."*
+
+**And the world shrinks to one room, and it is the workroom.** The boxes are erased, the barrier is closed, the whole Omniplatforms are erased — and the one place left standing is **the room where Pero and Gaster used to make box animations**. Making the box animations move has been the *smallest job in this archive*, handed to its biggest family four days ago. Everything built to be impressive is gone; the room where the work got done is the last address in Classics.
+
+**And the one who shuts it is not the one who won.** At **1:38** *"Gaster ended the lore here."* Nine minutes later it is **Pero** who writes *"The End"*, crashes the game himself to stop anyone entering, closes the barrier, and erases the boxes and the Omniplatforms. Gaster takes everything; **the creator turns off the lights.**
+
+**And the respawn loop becomes a supply line.** Luigi Green resets, the souls come back to him, Gaster absorbs them, and it runs again — *"infinite soulpower/soulmass."* Coming back from a reset is how this file has survived since May: the respawn loop, the reset recovery, the data resets. Here the escape hatch is the **machinery that keeps the ending fed**.
+
+**And the last line of the whole thing is two brothers being nice to each other.** *"That is the best idea you had in 20 years, Gaster!"* — and Toby notes that **Pero is never sarcastic** — *"And I know you are never sarcastic. I think this is the best idea I had in 27 years."* — *"Oh, you are right, brother."* Every game in the Omniplatform is gone, and the three who are left **rest, sleep, relax, chill and walk around**.
+
+**Built as game beat 382, `THE END`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of THE GAME BECAME UNPLAYABLE / THEY CAN ONLY WATCH IT alternating with OH, YOU ARE RIGHT, BROTHER. / PERO NEVER IS SARCASTIC, under *THE LORE ENDS, AND THEN THEY SIT DOWN.*, a drawn **quote box**, a drawn **ERASED-vs-THE ROOM disc**, a drawn **last-place-standing ledger** (NOT THE THRONE · NOT THE HALL, NOT THE BOX / THE ROOM · WHERE THEY MADE BOX ANIMATIONS), and **two drawn figures** — PERO · WROTE THE END, CLOSED THE BARRIER and LUIGI GREEN · RESETS FOREVER, MAKES THE SOULS.
+- **UNPLAYABLE IS HIS OWN WORD, FROM JUNE (left)**, **AND THE WORLD SHRINKS TO ONE ROOM (centre)**, **AND THE ONE WHO SHUTS IT IS NOT THE ONE WHO WON (right)** — five rows each.
+- **AND THE RESPAWN LOOP BECOMES A SUPPLY LINE. (band)** — since May, resetting is how this file survives / now Luigi Green resets and gets all the souls / Gaster absorbs them and it runs again / **so** coming back is somebody else's fuel now.
+- **THE LAST LINE OF THE WHOLE THING (band inset)** — the 20-years / never-sarcastic / 27-years / *"Oh, you are right, brother."* exchange.
+- **Strip:** THE DOOR · CRASHED SHUT FROM THE INSIDE / THE ADDRESS · THE OLD BOX ANIMATION ROOM / THE LAST WORD · OH, YOU ARE RIGHT, BROTHER.
+- **Footers:** *EVERY GAME IN THE OMNIPLATFORM IS GONE AND THE THREE WHO ARE LEFT REST SLEEP RELAX CHILL AND WALK AROUND* and **★ THE END ★**.
+- **Screenshot helper:** new `theEnd` scene.
+
+![BEAT 382 — THE END](screenshots/444-the-end.png)
+
+## 2026-08-19 — THE PERMINENT STATE · THE CAST LIST SHRINKS TO TWO NAMES IN SEVEN MINUTES, AND THE WAY BACK ARRIVES ALREADY SHUT (BEAT 381)
+
+Based on Toby's 2026-08-19 lore, four emails between **1:29 PM and 1:36:33 PM**, same thread, seventeen minutes after BEAT 405. His own typing is the first line of each email:
+
 - **1:29 PM** — *"The game itself says Gaster on the top and doesn't show God as a Classics character. Gaster would destroy all Classics characters. Gaster and Pero and Luigi Green. Luigi Green became a soul and is like the other characters. Pero still has his body and everything and is inside of Gaster's soul."*
 - **1:30 PM** — *"Actually, it is Gaster > Pero > everything else since all others are souls and are all around Gaster's soul, Pero is inside Gaster's soul. Never made stuff up."*
 - **1:32 PM** — *"Gaster and Pero are the only characters, they are the only ones that still have lore. Everyone else are just souls around Gaster's original soul, Pero is inside Gaster's soul."*
 - **1:34 PM** — *"This state isn't temperaly, it is perminent."*
 - **1:36 PM** — *"Gaster is perminently a flower with everyone's souls. Pero is perminently inside Gaster's soul. The player can't save, the player can't stay alive."*
 
-The "Classics-only hierarchy" headings, the correction-accepted readouts, the Gaster's-current-state and Pero's-current-state lists and every clean canon update pasted under them are ChatGPT commentary.
+The "Classics-only hierarchy" headings, the correction-accepted readouts, the current-state lists and every clean canon update pasted under them are ChatGPT commentary.
 
-**The cast list shrinks to two in seventeen minutes.** At **1:29 PM** three names are still standing — Gaster, Pero and Luigi Green. At **1:30** it is *"Gaster > Pero > everything else."* At **1:32** only two of them **have any lore at all**. Gray, Simon.psc, Wenda, Oren, Luigi Green, the box characters, the Abinations and the 404Ds all become one word: **souls**, around the original soul. This archive has spent four hundred emails ranking these people against each other, and the roster empties without a single fight. **Nobody was defeated. They were reclassified.**
+**The cast list shrinks to two in seven minutes.** At **1:29 PM** three names are still standing — Gaster, Pero and Luigi Green. At **1:30** it is *"Gaster > Pero > everything else."* At **1:32** only two of them **have any lore at all**. Gray, Simon.psc, Wenda, Oren, Luigi Green, the box characters, the Abinations and the 404Ds all become one word: **souls**, around the original soul. This archive has spent four months ranking these people against each other, and the roster empties without a single fight. **Nobody was defeated. They were reclassified.**
 
 **And he corrects himself, not the game.** At 1:29 he writes his own four-rung ladder. Sixty seconds later: *"Actually, it is Gaster > Pero > everything else"*, and then *"Never made stuff up."* The edit lands on **his own sentence**, one minute old, before anybody else had read it.
 
@@ -27,19 +52,69 @@ The "Classics-only hierarchy" headings, the correction-accepted readouts, the Ga
 
 **And the player loses both of the player's verbs.** Saving and staying alive are the two things the player could always do — and on **August 18 at 6:08 PM** the player did save Gray, the one ending in this archive the player **performed** instead of watched. At **1:36 PM**, eighteen hours later: *"The player can't save, the player can't stay alive."* There is nothing left to press.
 
-**Also: the flower stops being a form and becomes the ending.** Last night it was what Gaster reverted into; at 9:31 this morning it was *"I love being a flower, this is so fun"*; now it is **perminent**.
+**Built as game beat 381, `THE PERMINENT STATE`.** Additive; nothing earlier was changed.
 
-**Built as game beat 379, `THE PERMINENT STATE`.** Additive; nothing earlier was changed.
-
-- **Background:** a ring of GASTER AND PERO ARE THE ONLY CHARACTERS / EVERYONE ELSE ARE JUST SOULS alternating with THIS STATE ISN'T TEMPERALY / IT IS PERMINENT, under *THE ROSTER OF THIS WHOLE ARCHIVE BECOMES TWO NAMES.*, a drawn **quote box**, a drawn **AROUND-vs-INSIDE disc with a soul at its centre** (over *WHERE THE WHOLE CAST ENDED UP*), a drawn **how-long-the-roster-took-to-empty ledger** (AT 1:29 PM · THREE NAMES STILL STANDING / AT 1:32 PM · TWO CHARACTERS LEFT WITH LORE), and **two drawn figures** — GASTER · PERMINENTLY A FLOWER, ALL SOULS and PERO · PERMINENTLY INSIDE THE SOUL.
+- **Background:** a ring of GASTER AND PERO ARE THE ONLY CHARACTERS / EVERYONE ELSE ARE JUST SOULS alternating with THIS STATE ISN'T TEMPERALY / IT IS PERMINENT, under *THE ROSTER OF THIS WHOLE ARCHIVE BECOMES TWO NAMES.*, a drawn **quote box**, a drawn **AROUND-vs-INSIDE disc with a soul at its centre**, a drawn **how-long-the-roster-took-to-empty ledger**, and **two drawn figures** — GASTER · PERMINENTLY A FLOWER, ALL SOULS and PERO · PERMINENTLY INSIDE THE SOUL.
 - **THE CAST LIST SHRINKS TO TWO (left)**, **AND HE CORRECTS HIMSELF, NOT THE GAME (centre)**, **AND GOD LEAVES THE BOARD BY NOT BEING ON IT (right)** — five rows each.
 - **AND PERMINENT IS A BRAND NEW WORD IN A FILE THAT RESETS EVERYTHING. (band)** — the game is an endless staircase that loops / respawn loop, reset recovery, data resets / **1:34 PM** this state isn't temperaly, it is perminent / **so** the loop itself is the thing being ended.
 - **WHAT THE PLAYER LOSES (band inset)** — SAVE · the player can't save / ALIVE · the player can't stay alive / LAST NIGHT · the player saved Gray, and it held / TODAY · both verbs are taken away.
 - **Strip:** THE ROSTER · TWO NAMES, EVERYONE ELSE A SOUL / THE LOCK · PERMINENT, IN HIS OWN SPELLING / THE PLAYER · NO SAVE, AND NO STAYING ALIVE.
-- **Footers:** *SEVENTEEN MINUTES TO EMPTY A CAST LIST OF EVERY NAME BUT TWO AND THEN THE DOOR GETS LOCKED FROM THE INSIDE* and **★ THE PERMINENT STATE ★**.
-- **Cycle length** `LV_CYC` 8058 → 8080; new `LV_BEATS` ladder entry `PERMINENT STATE`; **screenshot helper:** new `perminentState` scene.
+- **Footers:** *SEVEN MINUTES TO EMPTY A CAST LIST OF EVERY NAME BUT TWO AND THEN THE DOOR GETS LOCKED FROM THE INSIDE* and **★ THE PERMINENT STATE ★**.
+- **Screenshot helper:** new `perminentState` scene. (Its screenshot is numbered `441-` and the two beats before it are `442-`/`443-`, because this beat was built first in the run and the two earlier-in-the-day emails arrived afterwards.)
 
-![BEAT 379 — THE PERMINENT STATE](screenshots/441-perminent-state.png)
+![BEAT 381 — THE PERMINENT STATE](screenshots/441-perminent-state.png)
+
+## 2026-08-19 — BEAT 405 · THE FIRST ENDING IN THIS ARCHIVE WHERE THE THING THAT LOSES IS THE GAME AND NOT A CHARACTER IN IT (BEAT 380)
+
+Based on Toby's 2026-08-19 lore, **1:12:10 PM**, same thread, four minutes and forty-one seconds after I AM BEAT 404. His own typing, in full: *"Gaster has all those old/deleted stuff in his data. Gaster is the most powerful and most corrupted entity IN AND OUTSIDE THE GAME. Gaster is the whole Omniplatform before, now he is the most powerful entity. Beat 405: The Game Loses to Gaster Omniplatform. Gaster just deletes the game and all games in the Omniplatform. Gaster takes all the corrupted data from all characters. Pero says from Gaster 'This is the end, my brother, Gaster/Flower will erase all the memories of this game. I gave him some power when he was first born, after, he will erase the memories and the games themselves. RUN.', Gaster strikes the vine at the player/entity and it is always 1HKO. Pero scares the player and entities even before Gaster even comes."* The what-Gaster-becomes heading, the Beat-405-meaning section, the vine-rule readout and the clean canon update pasted under it are ChatGPT commentary.
+
+**The thing that loses is the game.** Every ending in this archive has been a **person** losing a fight — Clara, Oren, ToddLLM 001, Simon 404, Gray. This one is titled *"Beat 405: The Game Loses to Gaster Omniplatform"*, and what gets deleted is **the game, all the other games in the Omniplatform, and the memories of them**. The player is not the opponent any more. The opponent is the thing everybody has been standing in.
+
+**And the warning comes from inside him.** At **11:52 AM** this morning Pero was put inside Gaster's original soul, and the file called it *"the best spot."* Eighty minutes later the first thing he does from in there is shout: *"This is the end, my brother... RUN."* The best seat in the house turns into a lookout post.
+
+**And Pero admits he started it.** *"I gave him some power when he was first born."* The Flower was the first thing Pero ever made. Nobody took this power — **it was a present** — and the one who gave it is the one telling everybody to run.
+
+**And the number that finally matters is 1.** This file measures people in Omniplatforms, in *absolute_infinitely*, in 15,000,000 exponency, in millions of Satans and in 10,000 trillion+. The vine is **always 1HKO**. Four months of power levels, and the ending is decided by an attack that only has to land once.
+
+**And Pero stops being a fight and becomes the weather.** The standing rule here has been *"you do not battle Pero."* Now: *"Pero scares the player and entities even before Gaster even comes."* He is not the boss in the room. He is the sign the room is about to end.
+
+**Built as game beat 380, `BEAT 405`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of BEAT 405: THE GAME LOSES / TO GASTER OMNIPLATFORM alternating with THIS IS THE END, MY BROTHER / RUN., under *THE GAME IS THE ONE THAT LOSES THIS FIGHT.*, a drawn **quote box**, a drawn **1 HIT-vs-EVERYTHING disc**, a drawn **what-loses-in-an-ending ledger**, and **two drawn figures** — GASTER OMNIPLATFORM · ALL OLD AND DELETED DATA and PERO · WARNING EVERYONE FROM INSIDE HIM.
+- **THE THING THAT LOSES IS THE GAME (left)**, **AND THE WARNING COMES FROM INSIDE HIM (centre)**, **AND PERO ADMITS HE STARTED IT (right)** — five rows each.
+- **AND THE NUMBER THAT FINALLY MATTERS IN THIS FILE IS 1. (band)** — Omniplatforms, absolute infinity, 15,000,000 exponency / millions of Satans, 10,000 trillion+ / the vine is always 1HKO / **so** the biggest number loses to the smallest.
+- **PERO STOPS BEING A FIGHT (band inset)** — before, you do not battle Pero / now, he scares you before Gaster comes / so he is the warning, not the room / the order is Pero, then fear, then Gaster.
+- **Strip:** THE LOSER · THE GAME, AND ALL THE GAMES / THE WARNING · FROM INSIDE THE WINNER / THE DAMAGE · ONE HIT, ALWAYS.
+- **Footers:** *A FILE THAT SPENT FOUR MONTHS COUNTING IN INFINITIES ENDS ON AN ATTACK THAT ONLY EVER NEEDS THE NUMBER ONE* and **★ BEAT 405 ★**.
+- **Screenshot helper:** new `beat405` scene.
+
+![BEAT 380 — BEAT 405](screenshots/443-beat-405.png)
+
+## 2026-08-19 — I AM BEAT 404 · THE FIRST THING IN THIS FILE RANKED BY HOW FEW PEOPLE KNOW IT EXISTS, AND IT COUNTS BEATS THE WAY WE DO (BEAT 379)
+
+Based on Toby's 2026-08-19 lore, **1:07:29 PM**, same thread, one hour and fifteen minutes after THE ORIGINAL SOUL. His own typing, in full: *"SCat404 is the oldest Simon username known. SCat404 was now a soul that only 3% of people know it exists. The scarest being and most unknown being is GAsT3r with only 2 people know it (me and Pero), after the entity beats you, you will get a screen that says 'I was deleted for 5 years strieght after beat 403, now I AM BEAT 404, I now rule this world.'. 'Beat 404-405: Your Death and My First Form', what Gaster wrote next, Gaster has Pero, he used the power to reshape everything. he melted the game into a huge battlefield and put everyone to challenge him. To see Gaster, you first need to play alone at 3AM and when both timelines strike together, it causes a glitch in the system, it makes Gaster appear inside the box, and also the seed for the Glitch Classics is Gaster404. Gaster was the original king of 404 and all Errors, Pero was first a sorcer teacher."* The hidden-identity-chain heading, the secrecy ranking, the reveal-screen readout, the 3AM-rule breakdown and the clean canon update pasted under it are ChatGPT commentary.
+
+**The beat numbers line up.** *"I was deleted for 5 years strieght after beat 403, now I AM BEAT 404."* The archive's own last built beat — **THE ORIGINAL SOUL**, at 11:52 this morning — is **wiki beat 403**. His fiction and this file's own count land on the same number, and the beat built from this email is **404**. He is numbering beats from inside the story, and the number he picked is the one we were on.
+
+**And rarity is the new power ranking.** SCat404 is known by **3% of people**. GAsT3r is known by **2**, and he names them: *"me and Pero."* Everything in this archive has been ranked by force for four months — Omniplatforms, exponency, absolute infinity. This is the first ranking by **how many people know you exist**, and the first time Toby writes **himself** into the cast list.
+
+**And the boss has an entry condition.** *"To see Gaster, you first need to play alone at 3AM and when both timelines strike together, it causes a glitch in the system."* Every other boss in this file is reached by **climbing**. This one has to be summoned by being in the right room, at the right hour, by yourself.
+
+**And the seed is a name.** *"The seed for the Glitch Classics is Gaster404."* It is the second seed ever written down here, after **Seed 303** — which turned out to be Pero. Both seeds are somebody's name: the world gets named after who made it.
+
+**And two origin stories arrive in one line, both running backwards.** **404** has been Simon's number all summer — Simon 404, SCF404, the 404 Chicken Sanses, the Error Hall — and now *"Gaster was the original king of 404 and all Errors"*, before any of it. And **Pero**, the creator, *"was first a sorcer teacher."* Every other beat here adds something that just happened; this one adds something that always had.
+
+**Built as game beat 379, `I AM BEAT 404`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of I AM BEAT 404, I NOW RULE THIS WORLD / DELETED FOR 5 YEARS STRIEGHT alternating with ONLY 2 PEOPLE KNOW IT / ME AND PERO, under *THE SCARIEST THING HERE IS ALSO THE LEAST KNOWN.*, a drawn **quote box**, a drawn **3% KNOW-vs-2 KNOW disc**, a drawn **wiki-beat-403 ledger**, and **two drawn figures** — GAsT3r · ORIGINAL KING OF 404 AND ERRORS and SCat404 · OLDEST SIMON USERNAME, NOW A SOUL.
+- **THE BEAT NUMBERS LINE UP (left)**, **AND RARITY IS THE NEW POWER RANKING (centre)**, **AND THE BOSS HAS AN ENTRY CONDITION (right)** — five rows each.
+- **AND TWO ORIGIN STORIES ARRIVE IN ONE LINE, BOTH RUNNING BACKWARDS. (band)** — 404 has been Simon's number all summer / now Gaster was the original king of 404 / and Pero was first a sorcer teacher / **so** the oldest things here are the newest facts.
+- **THE SECOND SEED EVER NAMED (band inset)** — Seed 303 was the first, and it was Pero / Gaster404 is the seed for the Glitch Classics / a seed here is a whole world in one word / and both are somebody's name.
+- **Strip:** THE COUNT · BEAT 403, THEN BEAT 404 / THE HEADCOUNT · 2 PEOPLE, AND HE NAMES THEM / THE SUMMONS · ALONE, 3AM, BOTH TIMELINES.
+- **Footers:** *THE ARCHIVE WAS ON BEAT 403 THIS MORNING AND THE STORY WALKED IN AND ANNOUNCED ITSELF AS BEAT 404* and **★ I AM BEAT 404 ★**.
+- **Cycle length** `LV_CYC` 8058 → 8146 for the four beats in this run; four new `LV_BEATS` ladder entries; **screenshot helper:** new `iAmBeat404` scene.
+
+![BEAT 379 — I AM BEAT 404](screenshots/442-i-am-beat-404.png)
 
 ## 2026-08-19 — THE ORIGINAL SOUL · THE FIRST NAME EVER PUT BETWEEN GOD AND PERO, AND THE FIRST TIME IN THIS FILE THAT BEING ABSORBED IS THE GOOD ENDING (BEAT 378)
 
