@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-19 — THE PERMINENT STATE · THE CAST LIST SHRINKS TO TWO NAMES IN SEVENTEEN MINUTES, AND THE WAY BACK ARRIVES ALREADY SHUT (BEAT 379)
+
+Based on Toby's 2026-08-19 lore, six emails between 1:19 PM and 1:36:33 PM, same thread ("Even 5x Classics Era"), one hour and forty-four minutes after THE ORIGINAL SOUL. His own typing is the first line of each email, in order:
+
+- **1:19 PM** — *"These are the links to the other chats. They contain the rest of the lore."* (four chatgpt.com share links; references only, not read)
+- **1:29 PM** — *"The game itself says Gaster on the top and doesn't show God as a Classics character. Gaster would destroy all Classics characters. Gaster and Pero and Luigi Green. Luigi Green became a soul and is like the other characters. Pero still has his body and everything and is inside of Gaster's soul."*
+- **1:30 PM** — *"Actually, it is Gaster > Pero > everything else since all others are souls and are all around Gaster's soul, Pero is inside Gaster's soul. Never made stuff up."*
+- **1:32 PM** — *"Gaster and Pero are the only characters, they are the only ones that still have lore. Everyone else are just souls around Gaster's original soul, Pero is inside Gaster's soul."*
+- **1:34 PM** — *"This state isn't temperaly, it is perminent."*
+- **1:36 PM** — *"Gaster is perminently a flower with everyone's souls. Pero is perminently inside Gaster's soul. The player can't save, the player can't stay alive."*
+
+The "Classics-only hierarchy" headings, the correction-accepted readouts, the Gaster's-current-state and Pero's-current-state lists and every clean canon update pasted under them are ChatGPT commentary.
+
+**The cast list shrinks to two in seventeen minutes.** At **1:29 PM** three names are still standing — Gaster, Pero and Luigi Green. At **1:30** it is *"Gaster > Pero > everything else."* At **1:32** only two of them **have any lore at all**. Gray, Simon.psc, Wenda, Oren, Luigi Green, the box characters, the Abinations and the 404Ds all become one word: **souls**, around the original soul. This archive has spent four hundred emails ranking these people against each other, and the roster empties without a single fight. **Nobody was defeated. They were reclassified.**
+
+**And he corrects himself, not the game.** At 1:29 he writes his own four-rung ladder. Sixty seconds later: *"Actually, it is Gaster > Pero > everything else"*, and then *"Never made stuff up."* The edit lands on **his own sentence**, one minute old, before anybody else had read it.
+
+**And God leaves the board by not being on it.** BEAT 378, at **11:52 AM** this morning, put the **first name ever between God and Pero**. Four hours later God *"doesn't show as a Classics character"*, so the top of the game's own display reads **Gaster**. The ceiling did not get broken. It got **left off the cast list**, which is quieter and worse.
+
+**And perminent is a brand new word in a file that resets everything.** The whole game is an endless staircase that **loops**; there is a respawn loop, a reset recovery, data resets, and a beat titled RESET DOES NOT WORK. Coming back has always been available here. *"This state isn't temperaly, it is perminent"* is the first time a state in this archive arrives with **the way back already shut** — and the thing being ended is the loop itself.
+
+**And the player loses both of the player's verbs.** Saving and staying alive are the two things the player could always do — and on **August 18 at 6:08 PM** the player did save Gray, the one ending in this archive the player **performed** instead of watched. At **1:36 PM**, eighteen hours later: *"The player can't save, the player can't stay alive."* There is nothing left to press.
+
+**Also: the flower stops being a form and becomes the ending.** Last night it was what Gaster reverted into; at 9:31 this morning it was *"I love being a flower, this is so fun"*; now it is **perminent**.
+
+**Built as game beat 379, `THE PERMINENT STATE`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of GASTER AND PERO ARE THE ONLY CHARACTERS / EVERYONE ELSE ARE JUST SOULS alternating with THIS STATE ISN'T TEMPERALY / IT IS PERMINENT, under *THE ROSTER OF THIS WHOLE ARCHIVE BECOMES TWO NAMES.*, a drawn **quote box**, a drawn **AROUND-vs-INSIDE disc with a soul at its centre** (over *WHERE THE WHOLE CAST ENDED UP*), a drawn **how-long-the-roster-took-to-empty ledger** (AT 1:29 PM · THREE NAMES STILL STANDING / AT 1:32 PM · TWO CHARACTERS LEFT WITH LORE), and **two drawn figures** — GASTER · PERMINENTLY A FLOWER, ALL SOULS and PERO · PERMINENTLY INSIDE THE SOUL.
+- **THE CAST LIST SHRINKS TO TWO (left)**, **AND HE CORRECTS HIMSELF, NOT THE GAME (centre)**, **AND GOD LEAVES THE BOARD BY NOT BEING ON IT (right)** — five rows each.
+- **AND PERMINENT IS A BRAND NEW WORD IN A FILE THAT RESETS EVERYTHING. (band)** — the game is an endless staircase that loops / respawn loop, reset recovery, data resets / **1:34 PM** this state isn't temperaly, it is perminent / **so** the loop itself is the thing being ended.
+- **WHAT THE PLAYER LOSES (band inset)** — SAVE · the player can't save / ALIVE · the player can't stay alive / LAST NIGHT · the player saved Gray, and it held / TODAY · both verbs are taken away.
+- **Strip:** THE ROSTER · TWO NAMES, EVERYONE ELSE A SOUL / THE LOCK · PERMINENT, IN HIS OWN SPELLING / THE PLAYER · NO SAVE, AND NO STAYING ALIVE.
+- **Footers:** *SEVENTEEN MINUTES TO EMPTY A CAST LIST OF EVERY NAME BUT TWO AND THEN THE DOOR GETS LOCKED FROM THE INSIDE* and **★ THE PERMINENT STATE ★**.
+- **Cycle length** `LV_CYC` 8058 → 8080; new `LV_BEATS` ladder entry `PERMINENT STATE`; **screenshot helper:** new `perminentState` scene.
+
+![BEAT 379 — THE PERMINENT STATE](screenshots/441-perminent-state.png)
+
 ## 2026-08-19 — THE ORIGINAL SOUL · THE FIRST NAME EVER PUT BETWEEN GOD AND PERO, AND THE FIRST TIME IN THIS FILE THAT BEING ABSORBED IS THE GOOD ENDING (BEAT 378)
 
 Based on Toby's 2026-08-19 lore, 11:52:52 AM, same thread, two hours and twenty-one minutes after 3rr0r G@$t3r. His own typing, in full: *"Pero is a Amereian Reeper, he is the most powerful reeper and the smartest. Pero is LAI and is a reeper. Gaster is the most powerful boss and is a flower he uses the power of everyone, no one can beat him other than God of course. Gaster would crush the player. Gaster is now above Pero. They are both the father of every other character. Gaster now has everyone's souls, and he saved the best spot for Pero, Pero is inside Gaster's original soul."* The "Gaster Above Pero / Original Soul Era" heading, the new-top-hierarchy readout, the Pero's-new-identity list and the clean canon update pasted under it are ChatGPT commentary.
