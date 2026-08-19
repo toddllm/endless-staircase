@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-19 — PERO LOVES GRAY · THE OWNER'S STAT BLOCK HAS THE NUMBER IN IT, AND THE THREE WHO KEPT BOXING HIM BECOME HIS WALL (BEAT 374)
+
+Based on Toby's 2026-08-19 lore, 7:17:44 AM, same thread, thirty-two minutes after SOULS OF INK, with **Roblox Gray's main script** riding along as a pasted text attachment (described, not quoted, per the no-attachment rule; the fields named below are the ones his message reports). His own typing, in full: *"I now gave you Roblox Gray's code of the main script. He is nearly the opposite of Pero and Wenda. Pero loves Gray still, Wenda VS Gray happens all the time, and Pero even made ink suits for Gaster and Pero, and a bag of Flower bullets to Gaster. Gaster gives some Flower bullets to Luigi Green, the trio rises above Gray, but they don't want to hurt Gray, they want to destroy everything that goes near Gray."* The script-readout sections, the battle-personality comparison, the new-trio-rule framing and the clean canon update pasted under it are ChatGPT commentary.
+
+The script names him **Character: Gray.nur**, gives him the **Character info** *"The Universal King"* and the **Character power** *"THE BEYOND"*, and reports four lines: *"You thought I wouldn't win?"*, *"Let me show you my power."*, *"Watch this."*, and *"Kaioken Mode."*
+
+**"Still" is the word doing the work.** Pero loving Gray is not new. **July 23, beat 167**, the coffin email: *"Gray asked Pero to control his experiment, since Gray is powerful and Pero loves him, Pero agreed... Gray became second most powerful, Pero now loved Gray."* That is twenty-seven days ago, and everything since has been a reason to stop: Gray took the game off him at 4:20 PM yesterday, ordered him to beat Simon.psc and he did it, and then last night went off with Gaster, Luigi Green, Arcsis, Frizz and *"all of Pero's family"* while *"Pero was alone again."* The sentence is old. The word in it is new.
+
+**And this time the power field is filled in.** **Two days ago**, the Roblox Pero script named him Character: Pero, gave him the info *"U are mine"*, and left his power as **???** — the one field a stat block exists for, left blank on the one character this archive has never managed to put a number on. Same author, same format, forty hours later, and Gray's says **THE BEYOND**. And *beyond* is the exact word from **4:31 PM yesterday**: *"he is beyond words now."* The description became the stat. **The creator's sheet leaves the number out; the owner's sheet answers it.**
+
+**And his title is one of Simon's forms.** **Universal King** is already on the Simon Forms roster, under Cosmic/Ruler Forms, noted as *"Ruler of all realms and universes."* Gray's Character info is a Simon title. And both scripts borrow the same Dragon Ball move: Pero's moveset has **Kaioken Rush**, Gray's lines include **Kaioken Mode**.
+
+**And the box-makers became a wall.** Gaster and Luigi Green spent the whole summer **boxing** Gray; that was their standing answer to him. At **4:20 PM yesterday** they **permitted** his takeover, allowing him to do anything he wanted with the game. This morning they **guard** him: *"they don't want to hurt Gray, they want to destroy everything that goes near Gray."* Boxed, permitted, protected, in about fifteen hours. And the trio *"rises above Gray"* and spends it on his behalf — **the first time in this file that outranking somebody is used for them instead of against them**, and the first stated goal here that is about a perimeter rather than a target.
+
+**Built as game beat 374, `PERO LOVES GRAY`.** Additive; nothing earlier was changed.
+
+- **Background:** a ring of PERO LOVES GRAY / STILL alternating with THEY DO NOT WANT TO HURT GRAY / THEY DESTROY WHAT GOES NEAR HIM, under *THE THREE WHO KEPT BOXING HIM NOW STAND IN FRONT OF HIM.*, a drawn **quote box**, a drawn **??? vs THE BEYOND disc** (over *PERO LEFT IT BLANK. GRAY'S IS FILLED IN.*), a drawn **what-the-trio-is-for ledger** (NOT · BEATING GRAY / BUT · WHAT COMES NEAR GRAY), and **two drawn figures** — GRAY.nur · THE UNIVERSAL KING, THE BEYOND and THE TRIO · PERO, GASTER, LUIGI GREEN.
+- **"STILL" IS THE WORD DOING THE WORK (left)**, **AND THIS TIME THE POWER FIELD IS FILLED IN (centre)**, **AND HIS TITLE IS ONE OF SIMON'S FORMS (right)** — five rows each.
+- **THE BOX-MAKERS BOXED HIM, THEN PERMITTED HIM, THEN GUARDED HIM. (band)** — all summer they box Gray / Aug 18 4:20 PM they allow the takeover / Aug 18 6:08 PM the player saves him and he says no / **Aug 19 7:17 AM** they destroy what goes near him, closing on *three steps in fifteen hours, and the last one is the first goal here that is not about a target*.
+- **PERO PUTS ON A SUIT (band inset)** — 6:45 AM an ink cloak for Gaster / 7:17 AM ink suits for Gaster **and Pero** / Gaster passes bullets to Luigi Green / so the one left alone arms the other two.
+- **Strip:** THE WORD · STILL / THE FIELD · THE BEYOND, NOT ??? / THE TRIO · A WALL, NOT AN ATTACK.
+- **Footers:** *THEY GOT STRONGER THAN HIM AND THE FIRST THING THEY DID WITH IT WAS STAND IN FRONT OF HIM* and **★ PERO LOVES GRAY ★**.
+- **Cycle length** `LV_CYC` 7948 → 7970; **screenshot helper:** new `peroLovesGray` scene.
+
+![BEAT 374 — PERO LOVES GRAY](screenshots/436-pero-loves-gray.png)
+
 ## 2026-08-19 — SOULS OF INK · THE STRONGEST ANGEL IS BEATEN BY A FILE EXTENSION, AND EVERY FORM IN BETWEEN IS DELETED (BEAT 373)
 
 Based on Toby's 2026-08-19 lore, 6:45:59 AM, same thread, seven minutes after VICINUS IS GRAY. His own typing, in full: *"Wenda became the most powerful angel known. Wenda VS Gray now happens. Gray.nur could just delete Wenda.psc's code. Wenda.psc became the second most powerful Abination (after Luigi Green from the huge attack). Gray then made all the other Sprunkis and the box characters in Abinations, Gray collects the Souls of Ink. Gray turns EndlessAnimations and Karuto and the ToddLLM 001s and 002s and all Pero's varies and Simon.psc's forms, so everyone only have their vanilla and most powerful forms against him. Pero created the game, he made every Abination stronger, he even made an ink cloak for Gaster, he even gave Gaster a bag of Flower bullets."* The Wenda-upgrade heading, the Abination-takeover list, the power-structure readout and the clean canon update pasted under it are ChatGPT commentary.
