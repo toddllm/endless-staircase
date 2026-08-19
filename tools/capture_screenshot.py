@@ -143,6 +143,8 @@ Scenes:
     ownEveryPixel    — BEAT 369, I OWN EVERY PIXEL (Toby, Aug 18, 5:54 PM)
     savingYou        — BEAT 370, SAVING YOU (Toby, Aug 18, 6:08 PM)
     grayVsPlayer     — BEAT 371, GRAY VS THE PLAYER (Toby, Aug 18, 6:14 PM)
+    vicinusIsGray    — BEAT 372, VICINUS IS GRAY (Toby, Aug 19, 6:39 AM)
+    soulsOfInk       — BEAT 373, SOULS OF INK (Toby, Aug 19, 6:45 AM)
     savingYou        — BEAT 370, SAVING YOU (Toby, Aug 18, 6:08 PM)
     grayVsPlayer     — BEAT 371, GRAY VS THE PLAYER (Toby, Aug 18, 6:14 PM)
 
@@ -9429,6 +9431,68 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7878.8; loopVs.phase=370; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "vicinusIsGray": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 372. VICINUS IS GRAY: THE DRAGON WAS ALWAYS HIM on the left, AND THE INK IS HIS OWN DEAD ARMY down the centre, AND HE WAS BEATEN AS HIMSELF YESTERDAY on the right, the UNPLAYABLE IS THE AUTHOR'S OWN WORD band with the THE PLAYER PRESSED ONE BUTTON inset. Beat 372 spans cyc in 7904.0 to 7926.0; cyc=7922.8 gives dt~18.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=7922.8; loopVs.phase=372;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7922.8; loopVs.phase=372; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        // pin the frame: shake/hitFlash translate the whole canvas, which otherwise slides the
+        // overlay a few dozen pixels and clips a column off the edge from one capture to the next.
+        if (typeof shake!=='undefined'){ shake=0; }
+        if (typeof hitFlash!=='undefined'){ hitFlash=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,    "soulsOfInk": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 373. SOULS OF INK: A FILE EXTENSION BEATS THE ANGEL on the left, AND SHE HAS BEEN A GOD OF ANGELS ALREADY down the centre, AND THE INK RUNS IN A CIRCLE on the right, the HE KEEPS THE BOTTOM AND THE TOP AND DELETES THE STAIRS band with the THE FLOWER CANNOT SWITCH BACK inset. Beat 373 spans cyc in 7926.0 to 7948.0; cyc=7944.8 gives dt~18.8 so every fade-in and both footer lines are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=7944.8; loopVs.phase=373;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=7944.8; loopVs.phase=373; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0; }
