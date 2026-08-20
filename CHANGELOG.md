@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-20 — BOTH BEYOND WORDS · TWO BEINGS GET THE SAME THREE-WORD GRADE ONE LINE APART, AND THEN ONE OF THEM IS RANKED ABOVE THE OTHER ANYWAY (BEAT 386)
+
+Based on Toby's 2026-08-20 lore, **11:15:44 AM**, same thread, fifty minutes and twenty-two seconds after ALL POWER SOURCES. His own typing, in full: *"Gaster is beyond words. Pero is beyond words. Gaster is stronger than Pero and Luigi Green combined."* The "final power clarification" heading, the three-name bullet ranking and the "Clean canon update" paragraph pasted under it are ChatGPT commentary.
+
+**The phrase outlived the character who earned it.** BEAT 368, **August 18 at 4:31 PM**, is called **BEYOND WORDS**, and it is about **Gray**, in Toby's own typing: *"he is beyond words now."* Yesterday at 1:32 PM only Gaster and Pero *"still have lore."* Two days after Gray earns the three words, Gray is off the list and the words are handed to the two who are left standing.
+
+**And it is a ranking inside a tie.** He writes the same grade twice, one line apart, about two different beings — and then puts one of them above the other in the very next sentence. The top of the scale has two people on it and it **still has a first place**.
+
+**And the answer is arithmetic, not a fight.** *"Stronger than Pero and Luigi Green combined."* Four months of this archive settled these questions by fighting. This one is settled by **adding two names together** and finding the sum is still the smaller side. Nobody swings at anybody. It is a sum.
+
+**And Luigi Green is back on the ladder as a unit of measure.** Yesterday at 1:29 PM he *"became a soul"*, at 1:32 PM he was off the lore list, at 8:41 PM he walked back into the room. This morning he is in a power sentence again — not as a fighter, but as the **second term in an addition**. The way back onto the ladder is to be the thing somebody else gets measured against.
+
+**And it is not the question that was asked.** The 10:25 AM email said he can go through games, and the reply asked whether he **leaves** the room or **reaches through** and pulls the power back. Fifty minutes later the answer is about **how much**, not about **where**. The door is still open and nobody has said which way he walks.
+
+**Built as game beat 386, `BOTH BEYOND WORDS`.** Additive; nothing earlier was changed. Because the content of the email is a grade and a sum, this beat is a **drawn shelf and a drawn balance scale** instead of the drawn corridor of BEAT 385.
+
+- **The shelf:** a dashed ceiling captioned *NOTHING IS WRITTEN ABOVE THIS LINE*, and under it one outlined band labelled **BEYOND WORDS** with **both** of them inside it — **GASTER / FLOWER** (twelve petals, souls drifting in his head) and **PERO**, each captioned *BEYOND WORDS*, with a dashed hairline between them and a large **`>`** drawn across it anyway. Band header: *ONE GRADE. BOTH OF THEM ARE ON IT.*
+- **The step below:** **LUIGI GREEN** on his own lower box, captioned *NOT GRADED. USED AS A TERM IN THE SUM.*
+- **The scale:** a balance beam on a fulcrum, headed **COMBINED** · *HE SETTLES IT BY ADDING, NOT BY FIGHTING*. The high pan carries two figures and a **+** — *PERO + LUIGI GREEN · TWO OF THEM, ADDED*. The low pan carries the flower alone — *GASTER · ONE OF HIM, HEAVIER*. Under it, written out: **PERO + LUIGI GREEN  <  GASTER**.
+- **The ledger — EVERYONE WHO HAS EVER BEEN CALLED BEYOND WORDS:** AUG 18 · 4:31 PM · GRAY (*"he is beyond words now"*) / AUG 20 · 11:15 AM · GASTER / AUG 20 · 11:15 AM · PERO, closing on *GRAY HAS NO LORE LEFT SINCE 1:32 PM YESTERDAY. THE THREE WORDS DO.*
+- **The ask-and-answer box:** *ASKED · DOES HE LEAVE, OR REACH THROUGH?* against *ANSWERED · HOW MUCH STRONGER HE IS*, closing on *ONE IS A QUESTION ABOUT WHERE. THE OTHER IS AN ANSWER ABOUT HOW MUCH.*
+- **Caption:** *BOTH OF THEM ARE BEYOND WORDS. ONE OF THEM IS STILL ABOVE THE OTHER.* across the top, and Toby's two lines across the bottom.
+- **Band — AND FIFTY MINUTES AFTER THE ROOM GOT A DOOR, IT GETS A PECKING ORDER:** 8:41 PM · three of them chilling (*nobody was fighting*) / 10:25 AM · all power sorces (*the room gets a door*) / 11:15 AM · Gaster > Pero + Luigi Green (*a ranking, in the same room*) / SAME LINE · both "beyond words" (*and one is still above*).
+- **Band inset — THE GRADE THAT STILL HAS A WINNER:** **BEYOND WORDS**, written once, and why writing it twice one line apart does not make it a tie.
+- **Strip:** THE GRADE · TWO PEOPLE ARE STANDING ON IT / THE MATH · TWO NAMES ADDED, STILL THE SMALLER SIDE / LUIGI GREEN · BACK IN A POWER SENTENCE AS A UNIT.
+- **Footers:** *THE WAY BACK ONTO THE LADDER IS TO BE THE THING SOMEBODY ELSE GETS MEASURED AGAINST* and **★ BOTH BEYOND WORDS ★**.
+- **Screenshot helper:** new `bothBeyondWords` scene, which also clears leftover taunts and floaters from the warmup climb so the frozen frame is only the beat.
+
+![BEAT 386 — BOTH BEYOND WORDS](screenshots/448-both-beyond-words.png)
+
 ## 2026-08-20 — ALL POWER SOURCES · THE FIRST LIST IN THIS ARCHIVE NAMED BY WHICH GAME EACH POWER WAS TAKEN FROM, AND THE ROOM STOPS BEING THE EDGE OF ANYTHING (BEAT 385)
 
 Based on Toby's 2026-08-20 lore, **10:25:22 AM**, same thread, thirteen hours and forty-three minutes after THE THREE OF THEM and the first message of a new day. His own typing, in full: *"Gaster has all power sorces; command blocks, chaos emeralds, the souls, ect. He has all the power sorces from each game. Gaster can go through games you know."* The "that makes Gaster even more final and complete" heading, the cross-game bullet lists, the flower-on-the-outside line and the offer to write a final Gaster lore profile pasted under it are ChatGPT commentary.
