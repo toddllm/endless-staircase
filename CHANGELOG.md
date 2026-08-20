@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-20 — ALL POWER SOURCES · THE FIRST LIST IN THIS ARCHIVE NAMED BY WHICH GAME EACH POWER WAS TAKEN FROM, AND THE ROOM STOPS BEING THE EDGE OF ANYTHING (BEAT 385)
+
+Based on Toby's 2026-08-20 lore, **10:25:22 AM**, same thread, thirteen hours and forty-three minutes after THE THREE OF THEM and the first message of a new day. His own typing, in full: *"Gaster has all power sorces; command blocks, chaos emeralds, the souls, ect. He has all the power sorces from each game. Gaster can go through games you know."* The "that makes Gaster even more final and complete" heading, the cross-game bullet lists, the flower-on-the-outside line and the offer to write a final Gaster lore profile pasted under it are ChatGPT commentary.
+
+**The file that ended yesterday opens again this morning.** BEAT 382 at 1:47 PM was *"The End"* — Pero wrote it, closed the barrier and crashed the game shut from the inside. BEAT 384 at 8:41 PM was the three of them chilling in one room, and the state was called **perminent**. Thirteen hours and forty-three minutes later there is a new power. The ending held overnight and not one day longer.
+
+**And the power sources are named by which game they came from.** Command blocks, chaos emeralds, the souls. Three systems out of three different games, in one list, held by one being. Four months of this archive named powers after the **character** who had them — Pero's equasions, Gray's scythe, Simon's reset. This is the first list named after **where each one was taken from**.
+
+**And two of the three are not from here.** The souls are Classics' own, the count Gaster has been building all week. The command blocks and the chaos emeralds belong to somebody else's game entirely, which is exactly why the last line of the email has to exist.
+
+**And yesterday's window said NOWHERE ELSE TO GO.** That is drawn into BEAT 384, from last night: the barrier shut, the Omniplatforms erased, one room left and no address outside it. This morning there is a way out, and it is not a door in the room. It is a **door between games**.
+
+**And "ect." means the list does not close.** He names three, writes etcetera, and then says *"from each game"*, so the real count is not three. It is however many games there are.
+
+**Built as game beat 385, `ALL POWER SOURCES`.** Additive; nothing earlier was changed. Because the content of the email is where the power came from and where he can walk, this beat is a **drawn corridor** instead of the drawn room of the last two.
+
+- **The picture:** four **game frames in a row** on one dashed travel line. **CLASSICS · THE ROOM** holds the souls, drawn over the shut door and the bench from BEAT 384. **ANOTHER GAME** holds a **command block**, a gridded cube. **ANOTHER GAME** holds the seven **chaos emeralds** in an arc. **EACH GAME** is an open dashed frame with a *?* in it, captioned *ECT. · HE SAID ETCETERA*.
+- **The barrier:** Pero's barrier from BEAT 382 drawn across the first gap — solid at the top and bottom, **dashed through the middle**, with **DR. GASTER / FLOWER** knee high and mid-step in the hole, twelve petals, souls still drifting in his head, an arrow pointing into the next game. Captioned *SHUT YESTERDAY* and *GOES THROUGH GAMES*.
+- **The ledger — WHAT HE IS HOLDING, AND WHOSE GAME IT IS FROM:** COMMAND BLOCKS · *not this game* / CHAOS EMERALDS · *not this game* / THE SOULS · *this one, he collected them all week* / ECT. · *the list does not close*, under *TWO OF THE THREE HE NAMED ARE FROM SOMEBODY ELSE'S GAME.*
+- **The window callout:** the little four-pane window drawn again from BEAT 384 — *YESTERDAY · "NOWHERE ELSE TO GO"* against *TODAY · "HE CAN GO THROUGH GAMES"*, closing on *THE WAY OUT IS NOT A DOOR IN THE ROOM. IT IS A DOOR BETWEEN GAMES.*
+- **Caption:** *ALL THE POWER SORCES. FROM EACH GAME.* across the top, and Toby's two lines across the bottom.
+- **Band — AND THE ENDING HELD FOR EXACTLY ONE NIGHT:** 1:47 PM · "THE END" (*the barrier shut*) / 8:41 PM · three of them chilling (*called perminent*) / 10:25 AM · all power sorces (*from each game*) / SAME LINE · "he can go through games" (*so the room is not the edge*).
+- **Band inset — THE SHORTEST WORD IN THE EMAIL:** **ECT.**, and why it means the count is however many games there are.
+- **Strip:** THE SOURCES · NAMED BY WHICH GAME THEY CAME FROM / THE ROOM · NOT THE EDGE OF ANYTHING ANY MORE / THE LIST · ENDS IN "ECT."
+- **Footers:** *THE LORE ENDED YESTERDAY AND THIS MORNING THE ROOM TURNS OUT TO HAVE A DOOR INTO EVERY OTHER GAME* and **★ ALL POWER SOURCES ★**.
+- **Screenshot helper:** new `allPowerSources` scene, which also clears leftover taunts and floaters from the warmup climb so the frozen frame is only the beat.
+
+![BEAT 385 — ALL POWER SOURCES](screenshots/447-all-power-sources.png)
+
 ## 2026-08-19 — THE THREE OF THEM · THE LAST PICTURE IN THE FILE IS THREE PEOPLE RESTING IN ONE ROOM, AND NOBODY IS FIGHTING (BEAT 384)
 
 Based on Toby's 2026-08-19 lore, **8:41:58 PM**, same thread, six hours and twenty-one minutes after FLOWER IN THE ROOM, and the last message of the day. His own typing, in full: *"Pero and Gaster both are in the room with Luigi Green. They are just chilling currently."* The "current permanent state" heading, the three-name bullet list, the after-all-the-destruction paragraph and the final-setup list pasted under it are ChatGPT commentary.
