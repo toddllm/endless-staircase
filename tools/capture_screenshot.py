@@ -9567,6 +9567,38 @@ SCENES = {
         if (typeof hitFlash!=='undefined'){ hitFlash=0; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","threeInTheRoom": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 384, THE THREE OF THEM: the drawn room with Pero sitting
+        // on the old box animation bench, Gaster/Flower resting on the floor beside him and Luigi Green
+        // walking around inside the room, with the crossed-out button row, the 3-2-3 roster count, the
+        // NOT-A-FIGHT band and the PERMINENT-vs-CURRENTLY inset. Beat 384 spans cyc in 8168.0 to 8190.0;
+        // cyc=8186.8 gives dt~18.8 so the room, all three figures, the buttons, the roster, the caption,
+        // the band, the strip and both footers are all up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8186.8; loopVs.phase=384;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        // clear what the warmup climb kicked up, so the frozen frame is only the beat
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; floaters=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
     ""","flowerRoom": """
       try {
         handleConfirm();

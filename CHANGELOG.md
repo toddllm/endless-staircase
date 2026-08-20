@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-19 — THE THREE OF THEM · THE LAST PICTURE IN THE FILE IS THREE PEOPLE RESTING IN ONE ROOM, AND NOBODY IS FIGHTING (BEAT 384)
+
+Based on Toby's 2026-08-19 lore, **8:41:58 PM**, same thread, six hours and twenty-one minutes after FLOWER IN THE ROOM, and the last message of the day. His own typing, in full: *"Pero and Gaster both are in the room with Luigi Green. They are just chilling currently."* The "current permanent state" heading, the three-name bullet list, the after-all-the-destruction paragraph and the final-setup list pasted under it are ChatGPT commentary.
+
+**It is a correction, and it moves somebody indoors.** BEAT 383 put **Luigi Green outside** the room, resetting to make souls, because BEAT 382 said he resets forever so Gaster can absorb them. Toby's answer puts him **in the room**. The one who makes the souls, the one who absorbs them and the one whose soul is already inside are all standing within arm's reach of each other. The supply line is not a route between two places any more; it runs inside a single room.
+
+**And the roster goes back up.** At **1:29 PM** Luigi Green *"became a soul and is like the other characters."* At **1:32 PM** only Gaster and Pero *"still have lore."* At **8:41 PM** there are three of them in the room again. Seven hours of this day ran one direction — everyone folding into the pile, nobody defeated, just reclassified — and the very last message of the day **adds a name back**. It is the only count in the whole collapse that goes up.
+
+**And the last scene in the file is not a fight.** Four months of forms, phases, LV past infinity, Omniplatforms and danger levels written as thirty digits, and the thing that ends it is three people *resting, relaxing, walking around and chilling* in one room. Nobody swings at anybody. The button row is drawn crossed out for exactly that reason.
+
+**And the Boxer has nothing left to crush.** Luigi Green built the box crushing factory, he **is** the crusher, he is the one called the Boxer, and the omni-list ranked him second as the one who **can destroy the Omniplatform**. The boxes are erased and the Omniplatforms are erased. The strongest destroyer in the archive is in a room with nothing left to break, drawing his backwards-L mark on empty air.
+
+**And "perminent" gets described with the word "currently".** At **1:34 PM**: *"This state isn't temperaly, it is perminent."* At **8:41 PM**: *"They are just chilling currently."* The ending is locked and he still reaches for the word that means right now.
+
+**Built as game beat 384, `THE THREE OF THEM`.** Additive; nothing earlier was changed. Because the content of the email is who is standing where, this beat is another **drawn scene**, the same room as BEAT 383 with the third person in it.
+
+- **The picture:** the workroom again — the **sealed door** (*STILL SHUT*), the **window** with nowhere else to go, and the **old box animation bench**, now something to sit on. **PERO** sits on the bench with one arm propped behind him, a violet ring still around him (*body in the room, soul inside Gaster*). **DR. GASTER / FLOWER** rests on the floor beside the bench, knee high, twelve petals, still smiling, the souls drifting slowly inside his head. **LUIGI GREEN** walks around the room on the right, mid-stride, his backwards-L box mark drawn on a dashed empty square captioned *NO BOXES LEFT TO CRUSH*.
+- **The button row:** FIGHT · ACT · ITEM · MERCY, all four struck through and greyed, captioned *NOTHING TO PRESS. NOBODY IS FIGHTING.*
+- **The roster count:** WHO IS LEFT, TODAY — **1:29 PM · 3** / **1:32 PM · 2** / **8:41 PM · 3**, under *THE ONLY COUNT ALL DAY THAT GOES UP*.
+- **Caption:** *ALL THREE OF THEM. IN THE ROOM. CHILLING.* across the top, and Toby's line across the bottom.
+- **Band — AND THE LAST PICTURE IN THE FILE IS NOT A FIGHT:** THE ASK · where is Luigi Green (*last night said outside*) / THE ANSWER · in the room, with them (*the loop is indoors*) / THE ROSTER · three, two, then three (*a name comes back*) / THE ENDING · resting and chilling (*nobody swings*).
+- **Band inset — PERMINENT, AND ALSO "CURRENTLY":** the 1:34 PM quote against the 8:41 PM one.
+- **Strip:** THE ROOM · ALL THREE OF THEM ARE INSIDE IT / THE ROSTER · BACK UP TO THREE NAMES / THE LAST SCENE · NOBODY IS FIGHTING.
+- **Footers:** *SEVEN HOURS OF ERASING EVERYTHING, AND IT ENDS WITH THE THREE OF THEM JUST CHILLING IN A ROOM* and **★ THE THREE OF THEM ★**.
+- **Screenshot helper:** new `threeInTheRoom` scene, which also clears leftover taunts and floaters from the warmup climb so the frozen frame is only the beat.
+
+![BEAT 384 — THE THREE OF THEM](screenshots/446-three-in-the-room.png)
+
 ## 2026-08-19 — FLOWER IN THE ROOM · THE LORE ENDED THIRTY-THREE MINUTES AGO, AND THE ONE THING LEFT TO SAY IS WHAT HE LOOKS LIKE (BEAT 383)
 
 Based on Toby's 2026-08-19 lore, **2:20:16 PM**, same thread, thirty-three minutes after THE END. His own typing, in full: *"Can you make an image of Pero and Dr. Gaster/Flower in the room? Flower is just a normal simple small sunflower-like being with a face that looks harmless but is most powerful. Perfect. Flower looks normal, but is actually a being with the souls of almost everyone + with infinite soul mass + soul power + undiscribable stuff."* The "Exactly" heading, the outside-vs-inside contrast and the final-state-of-the-lore list pasted under it are ChatGPT commentary.
