@@ -8,7 +8,11 @@ https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
 Based on Toby's 2026-08-20 lore, **11:15:44 AM**, same thread, fifty minutes and twenty-two seconds after ALL POWER SOURCES. His own typing, in full: *"Gaster is beyond words. Pero is beyond words. Gaster is stronger than Pero and Luigi Green combined."* The "final power clarification" heading, the three-name bullet ranking and the "Clean canon update" paragraph pasted under it are ChatGPT commentary.
 
-**The phrase outlived the character who earned it.** BEAT 368, **August 18 at 4:31 PM**, is called **BEYOND WORDS**, and it is about **Gray**, in Toby's own typing: *"he is beyond words now."* Yesterday at 1:32 PM only Gaster and Pero *"still have lore."* Two days after Gray earns the three words, Gray is off the list and the words are handed to the two who are left standing.
+**He has written this exact sentence before, forty-three hours ago, with the ranks the other way round.** BEAT 368, **August 18 at 4:31 PM**, in his own typing: *"Gray reached beyond all other non-Pero characters combined. **Gaster and Luigi Green are now far under Gray.**"* One being above everybody **combined**, and Gaster and Luigi Green named together at the bottom of it. Forty-three hours later the sentence runs again with the same word and the same two names, and **Gaster has moved from the bottom of it to the top**. Luigi Green is under the line in both versions.
+
+**And the phrase outlived the character who earned it.** BEAT 368 is *called* BEYOND WORDS, and it was about **Gray**: *"he is beyond words now."* Yesterday at 1:32 PM only Gaster and Pero *"still have lore."* Two days after Gray earns the three words, Gray is off the list and the words are handed to the two who are left standing.
+
+**And this is the third time he has used the phrase, and the first time it comes with a ranking.** **August 16, 6:08 PM** (Email 1010), about Pero's memory: *"It is beyond words."* **August 18, 4:31 PM**, about Gray: *"he is beyond words now."* Both of those only **describe** somebody. This one arrives with a pecking order attached in the very next sentence.
 
 **And it is a ranking inside a tie.** He writes the same grade twice, one line apart, about two different beings — and then puts one of them above the other in the very next sentence. The top of the scale has two people on it and it **still has a first place**.
 
@@ -23,13 +27,13 @@ Based on Toby's 2026-08-20 lore, **11:15:44 AM**, same thread, fifty minutes and
 - **The shelf:** a dashed ceiling captioned *NOTHING IS WRITTEN ABOVE THIS LINE*, and under it one outlined band labelled **BEYOND WORDS** with **both** of them inside it — **GASTER / FLOWER** (twelve petals, souls drifting in his head) and **PERO**, each captioned *BEYOND WORDS*, with a dashed hairline between them and a large **`>`** drawn across it anyway. Band header: *ONE GRADE. BOTH OF THEM ARE ON IT.*
 - **The step below:** **LUIGI GREEN** on his own lower box, captioned *NOT GRADED. USED AS A TERM IN THE SUM.*
 - **The scale:** a balance beam on a fulcrum, headed **COMBINED** · *HE SETTLES IT BY ADDING, NOT BY FIGHTING*. The high pan carries two figures and a **+** — *PERO + LUIGI GREEN · TWO OF THEM, ADDED*. The low pan carries the flower alone — *GASTER · ONE OF HIM, HEAVIER*. Under it, written out: **PERO + LUIGI GREEN  <  GASTER**.
-- **The ledger — EVERYONE WHO HAS EVER BEEN CALLED BEYOND WORDS:** AUG 18 · 4:31 PM · GRAY (*"he is beyond words now"*) / AUG 20 · 11:15 AM · GASTER / AUG 20 · 11:15 AM · PERO, closing on *GRAY HAS NO LORE LEFT SINCE 1:32 PM YESTERDAY. THE THREE WORDS DO.*
-- **The ask-and-answer box:** *ASKED · DOES HE LEAVE, OR REACH THROUGH?* against *ANSWERED · HOW MUCH STRONGER HE IS*, closing on *ONE IS A QUESTION ABOUT WHERE. THE OTHER IS AN ANSWER ABOUT HOW MUCH.*
+- **The ledger — THE SAME SENTENCE, FORTY-THREE HOURS APART:** *AUG 18 · 4:31 PM · GRAY* — "GRAY REACHED BEYOND ALL OTHER NON-PERO CHARACTERS COMBINED." / *"GASTER AND LUIGI GREEN ARE NOW FAR UNDER GRAY."* against *AUG 20 · 11:15 AM · GASTER* — "GASTER IS STRONGER THAN PERO AND LUIGI GREEN COMBINED.", closing on *SAME WORD. SAME TWO NAMES. GASTER WENT FROM THE BOTTOM OF IT TO THE TOP.*
+- **The roll — EVERY TIME HE HAS WRITTEN THE PHRASE:** AUG 16 · PERO'S MEMORY / AUG 18 · GRAY / AUG 20 · GASTER, AND PERO, closing on *THE FIRST TWO ONLY DESCRIBE SOMEBODY. THIS ONE ARRIVES WITH A RANKING ATTACHED.*
 - **Caption:** *BOTH OF THEM ARE BEYOND WORDS. ONE OF THEM IS STILL ABOVE THE OTHER.* across the top, and Toby's two lines across the bottom.
 - **Band — AND FIFTY MINUTES AFTER THE ROOM GOT A DOOR, IT GETS A PECKING ORDER:** 8:41 PM · three of them chilling (*nobody was fighting*) / 10:25 AM · all power sorces (*the room gets a door*) / 11:15 AM · Gaster > Pero + Luigi Green (*a ranking, in the same room*) / SAME LINE · both "beyond words" (*and one is still above*).
-- **Band inset — THE GRADE THAT STILL HAS A WINNER:** **BEYOND WORDS**, written once, and why writing it twice one line apart does not make it a tie.
-- **Strip:** THE GRADE · TWO PEOPLE ARE STANDING ON IT / THE MATH · TWO NAMES ADDED, STILL THE SMALLER SIDE / LUIGI GREEN · BACK IN A POWER SENTENCE AS A UNIT.
-- **Footers:** *THE WAY BACK ONTO THE LADDER IS TO BE THE THING SOMEBODY ELSE GETS MEASURED AGAINST* and **★ BOTH BEYOND WORDS ★**.
+- **Band inset — THE ASK AND THE ANSWER:** **WHERE?**, the question the last reply asked, against the answer that came back as *how much*, closing on *NOBODY HAS SAID WHICH WAY HE WALKS.*
+- **Strip:** THE GRADE · TWO PEOPLE ARE STANDING ON IT / THE SENTENCE · SAME SHAPE, FORTY-THREE HOURS APART / LUIGI GREEN · UNDER THE LINE IN BOTH VERSIONS OF IT.
+- **Footers:** *FORTY-THREE HOURS AGO GASTER WAS FAR UNDER THE ONE WHO BEAT EVERYBODY COMBINED, AND NOW HE IS THE ONE* and **★ BOTH BEYOND WORDS ★**.
 - **Screenshot helper:** new `bothBeyondWords` scene, which also clears leftover taunts and floaters from the warmup climb so the frozen frame is only the beat.
 
 ![BEAT 386 — BOTH BEYOND WORDS](screenshots/448-both-beyond-words.png)
