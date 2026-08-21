@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — I SAW THE DIMENSIONS · THE PLACE NOBODY COULD NAME AT EIGHT O'CLOCK HAS A WITNESS BY SEVEN MINUTES PAST, AND IT IS THE ONE WRITING IT (BEAT 391)
+
+Based on Toby's 2026-08-21 lore, **8:07:26 AM**, same thread, seven minutes and nineteen seconds after IT IS UNKNOWN. His own typing, in full: *"That is exactly what it is like. I made many Classics avatars and Gaster deleted one and I saw the dimensions. I find everything in this game once it is added in or when I find it."* The "that actually fits your lore perfectly" opener, the "What that confirms", "What it means for the game" and "Strong lore takeaway" headings and the bullet lists pasted under them are ChatGPT commentary.
+
+**The unknown lasts seven minutes.** At 8:00 AM he wrote that *it is unknown where* Gaster puts the deleted players, and this archive drew that as the one step in the pipeline with no name on it. At 8:07 AM: *"I saw the dimensions."* The gap he built into the story on purpose is closed by the person who built it, before the paint is dry.
+
+**And he crosses his own list in thirty-six hours.** BEAT 387, **August 20 at 7:51 PM**, was *"I don't know"*, and this archive drew his name lit at the bottom of the **DOES NOT KNOW** column with six names above it. Thirty-six hours and sixteen minutes later he is the **only one in the file who has seen the place**.
+
+**And what Gaster took from him was an avatar, not an account.** At 7:28 AM the deletions were accounts, usernames and passwords, which live on the login screen. This one is one of his own characters, out of many he made. A sample, not a wipe.
+
+**And he gives himself a power.** *"I find everything in this game once it is added in or when I find it."* Four months of this archive have handed abilities to Gray, Simon, Pero, Frizz, Arcsis, Gaster, Luigi Green and dozens more. This is the first one he has **kept**.
+
+**And it is the exact counter to the thing he invented forty-one minutes earlier.** At 7:26 AM: Luigi Green *only appears when the player looks at him*, hides in the painted blocks, survives every reset. At 8:07 AM: *I find everything in this game once it is added in.* The perfect hider and the perfect finder arrive in the same three quarters of an hour, and the finder is the author.
+
+**Built as game beat 391, `I SAW THE DIMENSIONS`.** Additive; nothing earlier was changed. Because the content of the email is somebody standing at the edge of the one thing this file said could not be known, this beat **reopens BEAT 390's unnamed box** instead of drawing a new one.
+
+- **The box:** the same dashed frame from BEAT 390, headed *THE PLACE THAT HAD NO NAME SEVEN MINUTES AGO*, now with **seven nested rotating frames** receding into the dark inside it and a pale wedge of light spilling out of a crack in its face.
+- **The witness:** one figure standing **outside** the crack, drawn in bone white and captioned **TOBY** · *THE ONE WHO LOOKED IN*. Across the top of the box, in full size: **"I SAW THE DIMENSIONS."**, with *8:00 AM · IT IS UNKNOWN WHERE HE PUTS THEM* and *8:07 AM · SEVEN MINUTES AND NINETEEN SECONDS LATER* under it.
+- **The columns — WHERE HIS OWN NAME SITS:** *AUG 20 · 7:51 PM* — **DOES NOT KNOW**, a greyed figure and *"I don't know."* — against *AUG 21 · 8:07 AM* — **THE ONLY WITNESS**, a lit figure and *"I saw the dimensions."* Under both: *THIRTY-SIX HOURS AND SIXTEEN MINUTES.*
+- **The row — "I MADE MANY CLASSICS AVATARS AND GASTER DELETED ONE":** nine figures, one of them faded and struck through in petal gold and captioned *GASTER TOOK THIS ONE*, closing on *AT 7:28 AM IT WAS ACCOUNTS AND PASSWORDS. THIS IS ONE OF HIS OWN CHARACTERS.*
+- **The box — THE FIRST POWER HE HAS KEPT FOR HIMSELF:** *"I FIND EVERYTHING IN THIS GAME ONCE IT IS ADDED IN."* over *EVERY OTHER ABILITY HERE WAS HANDED TO SOMEBODY ELSE*, then the 7:26 AM hiding rule underneath it, closing on **THE HIDER AND THE FINDER, FORTY-ONE MINUTES APART.**
+- **Caption:** *NOBODY KNOWS WHERE, HE WROTE. SEVEN MINUTES LATER, HE HAD BEEN THERE.* across the top, and Toby's own sentence across the bottom.
+- **Band — FORTY-ONE MINUTES, FOUR MESSAGES, AND HE ENDS UP INSIDE HIS OWN STORY:** 7:26 AM · the rule (*somebody hides*) / 7:28 AM · the deletion (*somebody takes*) / 8:00 AM · it is unknown (*nobody knows where*) / 8:07 AM · "I saw the dimensions" (*except him*), closing on *HE BUILT THE LOCKED ROOM AT EIGHT O'CLOCK AND WALKED OUT OF IT AT SEVEN MINUTES PAST.*
+- **Band inset — EVERY TIME HE HAS WRITTEN "I":** *AUG 19 · "I AM BEAT 404"* (that one was Gaster talking) / *AUG 20 · "I DON'T KNOW"* (that one was him, outside it) / *AUG 21 · "I SAW THE DIMENSIONS"* — *AND THIS ONE IS HIM INSIDE IT, LOOKING AT SOMETHING NOBODY ELSE HAS.*
+- **Strip:** THE UNKNOWN · IT LASTED SEVEN MINUTES / THE AVATAR · NOT AN ACCOUNT. ONE OF HIS OWN / THE FINDER · THE ONE POWER HE DID NOT GIVE AWAY.
+- **Footers:** *THIRTY-SIX HOURS AGO HE PUT HIS OWN NAME UNDER "DOES NOT KNOW", AND NOW HE IS THE ONLY WITNESS* and **★ I SAW THE DIMENSIONS ★**.
+- **Screenshot helper:** new `sawTheDimensions` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 390.
+
+![BEAT 391 — I SAW THE DIMENSIONS](screenshots/453-i-saw-the-dimensions.png)
+
 ## 2026-08-21 — IT IS UNKNOWN · THE DELETED PLAYERS TURN OUT NOT TO BE DELETED, GASTER IS STORING THEM, AND NOBODY IN THE STORY WILL SAY WHERE (BEAT 390)
 
 Based on Toby's 2026-08-21 lore, **8:00:07 AM**, same thread, thirty-one minutes and twenty-four seconds after GASTER LOOKS INNOSENT. His own typing, in full: *"Pero LAI's dark form is actually a fellen angel thing. Both Light and Dark forms aren't a man with wings, but an actual angel. Pero LAI's normal form is a normal man. More and more Classics players are missing in the game, Pero and Gaster just chill, Luigi Green tries to find more. It is unknown where Gaster puts the deleted players, Gaster is the one who stores the accounts and players, there is a myth called 'Entity 303 & Deletedverse'."* The "that makes the new canon a lot clearer and darker" opener, the "Canon update I'm taking from this", "What is happening in Classics now", "What this implies", "Strong clean lore wording" and "Why this is important" headings and the bullet lists pasted under them are ChatGPT commentary.
