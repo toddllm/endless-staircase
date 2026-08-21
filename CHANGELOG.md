@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — EATS FOREVER · THE FUEL GAUGE LASTED EIGHT MINUTES (BEAT 406)
+
+Based on Toby's 2026-08-21 lore, **3:06:01 PM**, same thread, two minutes and fourteen seconds after /MERGE_CODE. His own typing, in full: *"Since Flower is Vicinus, Vicinus also has the power. Vicinus no longer gets full and can eat forever. Flower loves that. Pero is happy about Flower/Gaster."* Everything from *"Exactly — since Flower is Vicinus, the new Luigi Green merge power also transfers into Vicinus."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**The fuel gauge lasted eight minutes.** At **2:58** souls kept the Vicinus form going longer, and this archive called it the first form in four months with a **running time**. At **3:06**: *"Vicinus no longer gets full and can eat forever."* He built the limit and removed it inside eight minutes.
+
+**And the only thing that could ever stop him was the world running out.** **August 18**: *"Whatever Vicinus consumes turns into Cicinuses, **until there is nothing left for Vicinus to consume**."* That was the one stopping condition anybody ever wrote for him. Now there is not one at all.
+
+**And it is the third time this file deletes a measuring system instead of out-climbing it.** Glitchtale Pero deleted everyone's LV rather than earning more of it. On August 6 Flower abolished Phases: *"Phases no longer exist."* Both of those systems took **months** to build before anybody took them away. This one took eight minutes.
+
+**And what he took off Luigi Green three minutes ago goes straight into the dragon.** *"Since Flower is Vicinus, Vicinus **also** has the power."* The suit is not a separate thing standing next to him — whatever Gaster gains, the costume gains.
+
+**And he has done this twice today.** At **8:18 AM** he drew a waiting room between players; at **11:09 AM**, *"no more waiting room."* At **2:58 PM** he put a clock on the dragon; at **3:06 PM**, *"can eat forever."* He builds rules and then takes them back.
+
+**And the last two lines are about feelings.** *"Flower loves that. Pero is happy about Flower/Gaster."* Happiness appears three times in this whole archive, and the other two are a cast celebrating a win. This is one brother being glad for the other, three minutes after that brother absorbed the third member of their team.
+
+**Built as game beat 406, `EATS FOREVER`.** Additive; nothing earlier was changed. Because the email removes something written eight minutes earlier, this beat is **the limit's whole life, timestamped**.
+
+- **The stack:** *2:29 PM* — the suit falls off in a puddle → *2:58 PM* — **SOULS KEEP IT GOING LONGER, A RUNNING TIME** → *3:03 PM* — Luigi Green's power merges into Gaster → *3:06 PM* — **"NO LONGER GETS FULL… CAN EAT FOREVER"**. Closes on **HE PUT A CLOCK ON THE DRAGON AT 2:58 AND TOOK IT OFF AT 3:06. EIGHT MINUTES.**
+- **The column — THE ONLY THING THAT COULD EVER STOP HIM:** *Aug 18* — **"UNTIL THERE IS NOTHING LEFT FOR VICINUS TO CONSUME"** (*running out of world*) against *today* — **"CAN EAT FOREVER"**, closing on **THE STOPPING CONDITION WAS ALWAYS THE WORLD. NOW THERE ISN'T ONE.**
+- **The box — THE THIRD TIME THIS FILE DELETES A MEASURING SYSTEM:** Glitchtale Pero deleting everyone's LV / Flower on August 6, *"Phases no longer exist"*, closing on **AND TODAY, THE FUEL GAUGE — EIGHT MINUTES OLD.**
+- **The box — AND THE LAST TWO LINES ARE ABOUT FEELINGS:** *"Flower loves that"* / *"happy about Flower/Gaster"*, over **AND HE JUST ABSORBED THE THIRD MEMBER OF THEIR TEAM.**
+- **Band — WHAT HE TOOK OFF LUIGI GREEN THREE MINUTES AGO GOES INTO THE DRAGON**, closing on **THE SUIT IS NOT A SEPARATE THING. WHATEVER HE GAINS, IT GAINS.**
+- **Band inset — AND HE HAS DONE THIS TWICE TODAY:** the 8:18 waiting room cut at 11:09, and the 2:58 clock cut at 3:06.
+- **Strip:** "EATS FOREVER" · A LIMIT THAT LASTED EIGHT MINUTES / SINCE FLOWER IS VICINUS · THE MERGE REACHES THE COSTUME / "PERO IS HAPPY" · THE CALMEST LINE OF THE DAY.
+- **Footers:** *THE FIRST FORM IN FOUR MONTHS TO HAVE A RUNNING TIME LASTED EIGHT MINUTES.* and **★ EATS FOREVER ★**.
+- **Screenshot helper:** new `eatsForever` scene.
+
+![BEAT 406 — EATS FOREVER](screenshots/468-eats-forever.png)
+
 ## 2026-08-21 — /MERGE_CODE · THE STRONGEST TEAM IN THE GAME WAS DISBANDED BY TYPING (BEAT 405)
 
 Based on Toby's 2026-08-21 lore, **3:03:47 PM**, same thread, five minutes and twenty-seven seconds after INSIDE FLOWER. His own typing, in full: *"Currently, Gaster wrote "/merge_code Luigi Green", Luigi Green wrote "/merge_code Gaster", Luigi Green turned into green plasma energy and flowed into Gaster, Gaster became even more powerful. Gaster looks at Pero and says "This experiment worked! Luigi Green is now energy in me, and I have all Luigi Green's access and power! I now have everything Luigi Green has added with my ability!". Gaster and Pero now made a Duo called Gaster Brother Duo, the most powerful and perfect Duo that has more power than the Trio from before. Gaster has more experience and mastery of Luigi Green's own power than Luigi Green himself."* Everything from *"Got it — Gaster's Trio has now collapsed upward into the Gaster Brother Duo."* onward is a pasted ChatGPT reply and is treated as commentary.
