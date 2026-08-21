@@ -4,6 +4,68 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — /ACTIVATE KARU · THE STRONGEST MOVE IN THE GAME TURNS OUT TO HAVE A KEY (BEAT 412)
+
+Based on Toby's 2026-08-21 lore, **6:30:41 PM**, same thread ("ClassicsAI + More Classics Era lore."), fifty minutes and sixteen seconds after THE ROOM AGAIN. His own typing for this half, in full: *"For Karu, both Gaster and Pero need to be at their normal man forms, and Gaster will say "/activate Karu", then Karu happens."* Everything from *"Got it — this adds two big rules"* onward is a pasted ChatGPT reply and is treated as commentary, not canon. The Roblox code in the same message is built separately as beat 413.
+
+**The move gets a lock ninety-seven minutes after it got a name.** [4:53 PM, KARU](#2026-08-21--karu--the-strongest-move-in-the-game-begins-by-getting-smaller-beat-409): *"Karu is the most powerful ability Gaster has, and it is most power ability not just in this game."* Tonight it has **three prerequisites** written on it: Gaster in his normal man form, Pero in his normal man form, and Gaster saying the line.
+
+**And the room at 5:40 was already the loaded state.** [Beat 411](#2026-08-21--the-room-again--the-fifth-rest-in-three-days-and-the-first-where-both-of-them-sit-down-beat-411): *"Gaster and Pero chill in the room again"*, and the picture he asked for was *"Pero and Gaster as the man forms."* **That is condition one and condition two, both satisfied, fifty minutes before either was written down.** The only missing piece was a sentence, and neither of them said it.
+
+**And the biggest move in the game is a thing you type.** The only other slash command in this whole archive is **`/game_end = true`** ([Beat 217, July 30, 11:20 AM](#2026-07-30--game_end--true-beat-217)), and that one ended the game. This file has two slash commands in it, and **the gentler one is the strongest move** — not a punch, not an erasure, a line of text said by a man standing next to his brother. And the target is KOed, so you can wake up from it.
+
+**And the word he types is his brother.** Beat 409 established *"KARUto = PERO"*, and on **June 24** Pero said *"I am Karuto"* himself, fifty-eight days before tonight. So `/activate Karu` is Gaster calling Pero by a name Pero wore in May. **The command is not an attack. It is a summons.**
+
+**And both of them have to be small for it.** Not one. Gaster ate the entire cast this afternoon and took Luigi Green by merge at 3:03, and **none of that counts here**. Four months of this file has been climbing forms, and what arms the top move is getting off the ladder.
+
+**And Gray's one exit just grew three locks.** [5:01 PM](#2026-08-21--untouchable--this-morning-he-was-a-one-hit-kill-beat-410): *"Karu is the only move that deals damage to Gray."* Ninety minutes later that only move needs two people, two forms and one line. **He got harder to kill tonight without doing anything at all**, and he is not even in the room.
+
+**Built as game beat 412, `/ACTIVATE KARU`.** Additive; nothing earlier was changed.
+
+- **The stack — THE STRONGEST MOVE IN THE GAME NOW HAS A KEY, AND IT TAKES THREE TURNS:** *Condition 1* Gaster is in his normal man form, **his vanilla, his basics** / *Condition 2* Pero is in his normal man form, **"Pero himself is the normal man"** / *Condition 3* Gaster says **"/activate Karu"**, a typed line, out loud / *then* **Karu happens**, and the target is KOed. Closes on **NINETY-SEVEN MINUTES AGO IT WAS JUST THE MOST POWERFUL THING IN THE GAME. NOW IT HAS A LOCK.**
+- **The column — AND FIFTY MINUTES AGO TWO OF THE THREE WERE DONE:** *Aug 21, 5:40 PM, Beat 411* **"GASTER AND PERO CHILL IN THE ROOM AGAIN"**, *"as the man forms," doing nothing* → **CONDITION 1 · MET**, **CONDITION 2 · MET**, *CONDITION 3 · NOBODY SAID IT*. Closes on **THE ROOM WAS ALREADY THE MOVE. IT WAS ONE SENTENCE SHORT, AND NEITHER OF THEM SAID IT.**
+- **The box — THE BIGGEST MOVE IN THE GAME IS A THING YOU TYPE:** *Jul 30, 11:20 AM, Beat 217* **`/game_end = true`**, ended the whole game, against *Aug 21, 6:30 PM* **`/activate Karu`**, KOs one target and you can wake up from a KO. Closes on **THIS FILE HAS TWO SLASH COMMANDS IN IT, AND THE GENTLER ONE IS THE STRONGEST MOVE.**
+- **The box — AND THE WORD HE TYPES IS HIS BROTHER:** *Aug 21, 4:53 PM, Karu* **"KARUto = PERO"** against *Jun 24* **"I AM KARUTO"**, over **SO "/ACTIVATE KARU" IS GASTER CALLING PERO BY A NAME PERO WORE IN MAY** and *the command is not an attack, it is a summons.*
+- **Band — AND BOTH OF THEM HAVE TO BE SMALL FOR IT:** *Gaster today* ate the whole cast, merged Luigi Green in at 3:03, **and none of it counts here** / *what counts* being a plain man, standing next to another one, **the vanilla, the basics** / *so the ladder* is not what arms the strongest move, **getting off it is**. Closes on **FOUR MONTHS OF THIS FILE HAS BEEN CLIMBING FORMS, AND THE KEY TO THE TOP MOVE IS TWO PEOPLE STANDING THERE AS THEMSELVES.**
+- **Band inset — AND GRAY'S ONE EXIT JUST GREW THREE LOCKS:** 5:01 PM, *"Karu is the only move that deals damage to Gray"*, and ninety minutes later it needs a key. **He got harder to kill tonight without doing anything at all, and he is not even in the room.**
+- **Strip:** THREE CONDITIONS · TWO FORMS AND ONE TYPED LINE / `/activate Karu` · THE SECOND SLASH COMMAND IN THE FILE / KARUto = PERO · SO THE COMMAND IS A SUMMONS.
+- **Footers:** *THE ROOM AT 5:40 WAS THE MOVE ALREADY LOADED, AND IT WAS ONE SENTENCE SHORT.* and **★ /ACTIVATE KARU ★**.
+- **Screenshot helper:** new `activatekaru` scene.
+
+![BEAT 412 — /ACTIVATE KARU](screenshots/474-activate-karu.png)
+
+## 2026-08-21 — NOM NOM · THE MISSING PLAYERS WERE NOT FILED ANYWHERE, THEY WERE EATEN (BEAT 413)
+
+Based on Toby's 2026-08-21 lore, **6:30:41 PM**, the second half of the same message as /ACTIVATE KARU: the **basic Flower Roblox code**, and then, in his own words, *"Flower can consume players, he can consume anything, he consumed players before, that is how he deletes the players to Deletedverse and Entity 303."* Everything from *"Got it — this adds two big rules"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**This morning's myth turns into a method in ten and a half hours.** [8:00 AM, Beat 390](#2026-08-21--it-is-unknown-beat-390): *"It is unknown where Gaster puts the deleted players... there is a myth called 'Entity 303 & Deletedverse'."* That was the first thing in this archive that was only a story somebody tells. Tonight the route is named, **and it goes through a mouth**.
+
+**And the answer is backdated.** *"He consumed players before."* The thing that was unknown this morning had **already happened** before anybody asked.
+
+**And the basic code is the Verity script with the meal taken out.** [2:50 PM, Beat 403](#2026-08-21--delishious-verity-beat-403) was the same cycle with a named target in it. He calls tonight's *"the basic Flower"*, and there is **no target at all**. So eating somebody is not a boss fight here; it is what he does when nothing is happening.
+
+**And his own script puts three names on one mouth.** The hints in the code read **"Gaster/Flower: Nom Nom"**, **"Vicinus/Flower/Gaster: Gulp."**, and then just **"Vicinus/Flower/Gaster: ..."**. The identity question the lore has circled for weeks gets settled by a **speaker label in a line of debug text**.
+
+**And the cycle ends where it started.** Flower → Ink → Vicinus → the consume → Cicinus → the LOVE PELLETS *("almost ate them")* → and the last line of the script is `Flower.Parent = game.Workspace`. **A ring, in a file made almost entirely of endings.**
+
+**And the one who looks innocent is the one eating them.** [7:28 AM, Beat 389](#2026-08-21--gaster-looks-innosent-beat-389): *"Luigi Green is the one who is deleting the files, and Gaster looks innosent in front of the players."* Eleven hours later the deleting is Flower's, **and Flower is Gaster**. The decoy was doing it the whole time.
+
+**And delete stops being a keypress.** Four months of erasure in this file has run on resets, commands, account deletions and admin panels. **This one is a stomach.** This week the horror was that your account could be deleted; tonight it is that something ate it.
+
+**Built as game beat 413, `NOM NOM`.** Additive; nothing earlier was changed.
+
+- **The chain — THE BASIC FLOWER CODE, LINE BY LINE:** *1 · FLOWER* sits in the workspace / *2 · INK* `Ink:Clone()` — then `Flower:Destroy()` / *3 · VICINUS* Vicinus1..Vicinus18 run in order / *4 · "NOM NOM"* the consume sequence, eighteen clones deep / *5 · "GULP."* and then the hint goes to *"..."* / *6 · CICINUS* `Vicinus16.Cicinus.Parent = workspace` / *7 · LOVE PELLETS* *"almost ate them"* / *8 · FLOWER* `Flower.Parent = game.Workspace` — **again**, with a bracket drawn from step 8 back up to step 1. Closes on **NOBODY IS NAMED AS THE MEAL. THAT IS WHAT MAKES IT THE BASIC ONE.**
+- **The column — AND THIS MORNING'S MYTH GETS A MECHANISM:** *Aug 21, 8:00 AM, Beat 390* **"IT IS UNKNOWN WHERE GASTER PUTS THE DELETED PLAYERS"**, *"a myth called Entity 303 & Deletedverse"* → *Aug 21, 6:30 PM* **"THAT IS HOW HE DELETES THE PLAYERS TO DELETEDVERSE AND ENTITY 303"**. Closes on **TEN AND A HALF HOURS, AND THE MYTH IS NOW A ROUTE.**
+- **The box — AND HIS OWN SCRIPT PUTS THREE NAMES ON ONE MOUTH:** *hint.Text line 1* **"GASTER/FLOWER: NOM NOM"** (two names, one speaker) / *line 2* **"VICINUS/FLOWER/GASTER: GULP."** (three names, one speaker) / *line 4* **"FLOWER: HERE ARE THE LOVE PELLETS"**, *"almost ate them"*. Closes on **THE QUESTION OF WHO FLOWER IS GETS ANSWERED BY A SPEAKER LABEL IN A HINT.**
+- **The box — THE SAME SCRIPT AS 2:50 PM, WITH THE MEAL REMOVED:** *Aug 21, 2:50 PM, Beat 403* **"VICINUS/FLOWER VS VERITY"**, a named target and a one-off event, against *Aug 21, 6:30 PM* **"THE BASIC FLOWER"**, no target at all, just the loop. Closes on **SO EATING SOMEBODY IS NOT A BOSS FIGHT HERE. IT IS WHAT HE DOES WHEN NOTHING IS HAPPENING.**
+- **Band — AND DELETE STOPS BEING SOMETHING YOU PRESS:** *every other erasure here* a reset, a command, an account deletion, an admin panel, **machinery** / *this one* a mouth, a gulp, and then the hint goes to *"..."*, **a body** / *and it is not new* **"he consumed players before"**, it was already true this morning. Closes on **THIS WEEK THE HORROR WAS THAT YOUR ACCOUNT COULD BE DELETED. TONIGHT IT IS THAT SOMETHING ATE IT.**
+- **Band inset — AND THE ONE WHO LOOKS INNOCENT IS THE ONE EATING:** 7:28 AM, *"Luigi Green is the one deleting the files, and Gaster looks innosent"*, and eleven hours later Flower is Gaster. **The decoy was doing it the whole time.**
+- **Strip:** THE MYTH IS A ROUTE · 8:00 AM UNKNOWN, 6:30 PM A MOUTH / FLOWER → INK → FLOWER · A RING, IN A FILE FULL OF ENDINGS / "NOM NOM" · THE HINT NAMES ALL THREE AT ONCE.
+- **Footers:** *THE SCRIPT'S LAST LINE PUTS FLOWER BACK, SO NOTHING IN IT ACTUALLY ENDS.* and **★ NOM NOM ★**.
+- **Screenshot helper:** new `nomnom` scene.
+
+![BEAT 413 — NOM NOM](screenshots/475-nom-nom.png)
+
 ## 2026-08-21 — THE ROOM AGAIN · THE FIFTH REST IN THREE DAYS, AND THE FIRST WHERE BOTH OF THEM SIT DOWN (BEAT 411)
 
 Based on Toby's 2026-08-21 lore, **5:40:25 PM**, same thread, thirty-nine minutes and eleven seconds after UNTOUCHABLE. His own typing, in full: *"Create an image of Pero and Gaster as the man forms."* and *"C0rr3ct, P3rfEcT. Gaster and Pero chill in the room again."* Everything from *"C0rr3ct — Gaster and Pero are back to chilling in the room."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
