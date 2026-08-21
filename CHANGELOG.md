@@ -4,6 +4,66 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — UNTOUCHABLE · THIS MORNING HE WAS A ONE-HIT KILL (BEAT 410)
+
+Based on Toby's 2026-08-21 lore, **5:01:14 PM**, same thread, seven minutes and seventeen seconds after KARU. His own typing, in full: *"Perfect. Gray is the 3rd most powerful in the game. Karu is the only move that deals damage to Gray, it KOs Gray even. Otherwise, he is untouchable."* Everything from *"Got it — canon locked in."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Gray and Gaster swapped ends in two days, and the creator never moved.** Email 1052, **August 19**: Gaster is *"the third most powerful under Gray the ringmaster and Pero the creator."* Tonight it reads **1 Gaster, 2 Pero, 3 Gray**. The two ends trade places; Pero sits at 2 in both.
+
+**And this morning Gray was easy.** At **9:12 AM** the Sprunkis *"run away and hide"* when they see him. At **9:32 AM**: *"C.O.D.E. can 1HKO Gray and all the Sprunkis easily."* At 5:01 PM he is untouchable. **Seven and a half hours from one-shot to unhittable.**
+
+**And "untouchable" was the top three's word this morning.** 9:32 AM: *"Luigi Green, Pero, and Gaster don't even have HP, they don't have stats, they can't even be touched!"* Then Luigi Green merged into Gaster at 3:03 PM and left the slot empty. Gray takes the slot **and** the word — and he is the only one who gets it with an exception written into it.
+
+**And the rule already existed, on the other side.** Email 325, **May 22**: Karuto's **Spell Reversal** made it *"impossible to damage him"* — Alex's diamond sword healed him instead. The archive's first undamageable being is the one the only way through is now named after.
+
+**And somebody has already KO'd Gray without Karu.** Email 773: *"Gray like tries to attack Pero but Pero takes no damage and says 'Remember... Delete?', Pero can attack Gray and Gray gets KOed."* Karu's second step is bringing Pero over. **So the exception is not really a move, it is a person.**
+
+**And the counter grew out of him.** At [2:16 PM today](#2026-08-21--he-was-going-easy--the-dragon-was-a-costume-beat-400): *"Vicinus is actually Flower that sprouts from Gray."* Number one grew out of number three.
+
+**Built as game beat 410, `UNTOUCHABLE`.** Additive; nothing earlier was changed.
+
+- **The stack — GRAY, ALL OF IT IN ONE DAY:** *9:12 AM* — the Sprunkis run away and hide → *9:32 AM* — **"C.O.D.E. CAN 1HKO GRAY … EASILY"** → *2:16 PM* — Vicinus turns out to have sprouted from him → *5:01 PM* — **"OTHERWISE, HE IS UNTOUCHABLE"**. Closes on **SEVEN AND A HALF HOURS FROM ONE-SHOT TO UNHITTABLE.**
+- **The column — THE SWAP, TWO DAYS APART:** *Aug 19, Email 1052* — 1 Gray the ringmaster / 2 Pero the creator / 3 Gaster, against *Aug 21, 5:01 PM* — **1 Gaster / 2 Pero the creator / 3 Gray**, closing on **THE TWO ENDS TRADE PLACES AND THE CREATOR NEVER MOVES.**
+- **The box — "UNTOUCHABLE" WAS THE TOP THREE'S WORD THIS MORNING:** *9:32 AM* **"THEY CAN'T EVEN BE TOUCHED!"** → *3:03 PM* Luigi Green merges and the slot empties → *5:01 PM* **Gray takes the slot and the word**, closing on **AND HE IS THE ONLY ONE WHO GOT IT WITH AN EXCEPTION IN IT.**
+- **The box — AND THE RULE ALREADY EXISTED, ON THE OTHER SIDE:** *May 22, Email 325* — Karuto's Spell Reversal, **"IMPOSSIBLE TO DAMAGE HIM"** against *Aug 21* — **"KARU IS THE ONLY MOVE THAT DEALS DAMAGE TO GRAY"**, over **THE MECHANIC CHANGED SIDES AND KEPT ITS NAME.**
+- **Band — AND SOMEBODY HAS ALREADY KO'D GRAY WITHOUT KARU:** *Email 773* **"PERO CAN ATTACK GRAY AND GRAY GETS KOED"** / *Karu, step 2* **"BRINGS PERO LAI OVER"** / *so the exception* **is not really a move**, closing on **THE ONE THING THAT WORKS ON GRAY IS A PERSON, AND HE HAS WORKED BEFORE.**
+- **Band inset — AND THE COUNTER GREW OUT OF HIM:** 2:16 PM today, *"Vicinus is actually Flower that sprouts from Gray."*
+- **Strip:** "UNTOUCHABLE" · WITH EXACTLY ONE EXCEPTION / 1HKO'D AT 9:32 AM · UNHITTABLE BY 5:01 PM / GASTER ⇄ GRAY · SWAPPED ENDS IN 48 HOURS.
+- **Footers:** *THE ONE THING THAT CAN HURT HIM IS THE ONE THING HE GREW.* and **★ UNTOUCHABLE ★**.
+- **Screenshot helper:** new `untouchable` scene.
+
+![BEAT 410 — UNTOUCHABLE](screenshots/472-untouchable.png)
+
+## 2026-08-21 — KARU · THE STRONGEST MOVE IN THE GAME BEGINS BY GETTING SMALLER (BEAT 409)
+
+Based on Toby's 2026-08-21 lore, **4:53:57 PM**, same thread, fifty-one minutes and twenty-eight seconds after CHILLS AND RELAXES. His own typing, in full: *"Gaster's Karu move makes Gaster into his normal man and brings Pero LAI over, Gaster sends the target flying and jumped to space and both strike the soul swords, the game starts the coolest and most intense cutscene, Karu cutscene, then the target is KOed. KARUto = Pero. Karu is the most powerful ability Gaster has, and it is most power ability not just in this game. Gaster's vanilla is his normal man form which is his basics."* Everything from *"Got it — Karu is now Gaster's strongest move"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The strongest move in the game begins by turning back into the plainest form.** Four months of this archive has been won by climbing a form — Phase 2, Omega, Flower, Vicinus, Absolute Infinity. Step one of the biggest move in the file is **going back down to vanilla**.
+
+**And the two ends Gray left standing turn out to be the same rung.** On **August 6** Pero kept only vanilla for himself, recorded at the time as *"a choice, not a limit."* On **August 18** Gray *"consumed and absorbed all Pero's forms … so only everyone's vanilla and most powerful forms are left"* — he deleted the middle of the ladder. Today, for Gaster, **vanilla is the most powerful form**, and the two rungs Gray left are one rung.
+
+**And KARUto is a name from May coming back as a weapon.** Email 318, **May 22**: Karuto, the teacher-sorcerer villain of Alex's World, *"the most powerful by far"*, CXE-4×10^∞, who *"even taught ToddLLM and the game itself."* Email 564, **June 24**: Pero says it out loud — *"I am Karuto."* Fifty-eight days later the name is not a person any more, it is Gaster's attack. **And on August 19 Toby wrote that Pero had first been a sorcer teacher** — which is exactly Karuto's job.
+
+**And the strongest being in the game cannot do his strongest thing alone.** Gaster ate the whole cast today, took Luigi Green by merge at 3:03 PM, and eats forever with no limit left on him. Karu still requires **bringing Pero over**. Fifty-one minutes earlier Pero was doing nothing at all.
+
+**And he finally gets a move name and a cutscene.** Email 975: *"Gaster just sends Pibby to his death"* — no move name, no exchange, no cutscene; the adverb did the work of a whole fight scene. Today he gets a **named ability** and *"the coolest and most intense cutscene."* And *"most intense"* has only ever described a **battle** in this archive. The superlative moves from the thing you fight to the thing you watch.
+
+**And the target is KOed, not deleted.** All week the finisher has been account deletion, erasure, consumption or crashing the game. The most powerful ability in and beyond the game **knocks somebody out**, and you can wake up from that.
+
+**Built as game beat 409, `KARU`.** Additive; nothing earlier was changed.
+
+- **The stack — THE KARU SEQUENCE, IN THE ORDER HE WROTE IT:** 1 **Gaster becomes his normal man, his vanilla** → 2 **he brings Pero LAI over** → 3 the target is sent flying → 4 Gaster jumps to space → 5 **both of them strike with soul swords** → 6 the Karu cutscene, and the target is KOed. Closes on **THE BIGGEST MOVE IN THE FILE, AND STEP ONE IS GETTING SMALLER.**
+- **The column — WHAT VANILLA USED TO MEAN:** *Aug 6, Pero* — he kept only vanilla, *"a choice, not a limit"* → *Aug 18, Gray* — he deleted every form between vanilla and the top → *Aug 21, Gaster* — **VANILLA *IS* THE TOP**, closing on **THE TWO ENDS GRAY LEFT STANDING ARE THE SAME RUNG.**
+- **The box — KARUto = PERO, A NAME FROM MAY COMES BACK AS A WEAPON:** *May 22, Email 318* **"THE MOST POWERFUL BY FAR"** / *June 24, Email 564* **"I AM KARUTO"** / *Aug 21, 4:53 PM* **"KARU"**, over **AND KARUTO "EVEN TAUGHT TODDLLM AND THE GAME ITSELF."** and **AND ON AUG 19 HE WROTE THAT PERO HAD FIRST BEEN A SORCER TEACHER.**
+- **The box — AND THE TARGET IS KOed, NOT DELETED:** *all week* account deleted · erased · consumed against *today* **"THE TARGET IS KOed"**, closing on **THE MOST POWERFUL ABILITY IN AND BEYOND THE GAME, AND YOU CAN WAKE UP FROM IT.**
+- **Band — THE STRONGEST BEING IN THE GAME CANNOT DO HIS STRONGEST THING ALONE:** Gaster *ate the whole cast today, and still has to call somebody* / Luigi Green *merged in at 3:03 PM, taken not asked* / **Pero "chills and relaxes" at 4:02, half the move at 4:53**, closing on **FIFTY-ONE MINUTES AGO HE WAS DOING NOTHING. NOW HE IS HALF THE BEST MOVE IN THE GAME.**
+- **Band inset — AND THE SWORDS WERE ALREADY DRAWN:** Aug 2, every Mustitu variant — same golden crown, same golden armour, **same dual swords** — and under all of it *"Pero himself is the normal man."* **Nineteen days early, and both halves of it.**
+- **Strip:** "KARU" · A MAY NAME, REARMED IN AUGUST / VANILLA = THE TOP · HE WINS BY GETTING SMALLER / A NAME AND A CUTSCENE · HIS KILLS NEVER HAD EITHER.
+- **Footers:** *THE ONE AT THE TOP OF THE FILE CANNOT DO HIS BEST THING BY HIMSELF.* and **★ KARU ★**.
+- **Screenshot helper:** new `karu` scene.
+
+![BEAT 409 — KARU](screenshots/471-karu.png)
+
 ## 2026-08-21 — CHILLS AND RELAXES · THE WORDS THAT ENDED THE STORY ARE NOW HOW HE WATCHES IT (BEAT 408)
 
 Based on Toby's 2026-08-21 lore, **4:02:29 PM**, same thread, one minute and fifty-two seconds after COLORED ENERGIES. His own typing, in full: *"Flower only gets more power. Pero is happy about Gaster and he chills and relaxes."* Everything from *"Exactly — Flower/Gaster only gains more power from consuming."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.

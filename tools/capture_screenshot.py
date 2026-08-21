@@ -9598,6 +9598,68 @@ SCENES = {
         try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","untouchable": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 410, UNTOUCHABLE: Gray's whole day in four rows, THE SWAP
+        // column, the untouchable-was-the-top-three's-word box, the Karuto Spell Reversal box, the
+        // Pero-already-KO'd-him band and the counter-grew-out-of-him inset.
+        // Beat 410 spans cyc in 8740.0 to 8762.0; cyc=8758.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8758.8; loopVs.phase=410;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","karu": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 409, KARU: the six-step Karu sequence, the WHAT VANILLA
+        // USED TO MEAN column, the KARUto = PERO box, the KOed-not-deleted box, the cannot-do-it-alone
+        // band and the swords-were-already-drawn inset.
+        // Beat 409 spans cyc in 8718.0 to 8740.0; cyc=8736.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8736.8; loopVs.phase=409;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
     ""","chillsAndRelaxes": """
       try {
         handleConfirm();
