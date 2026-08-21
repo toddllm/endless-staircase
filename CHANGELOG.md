@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — ABSOLUTE INFINITY · THE GAME IS NOT OLD, IT IS FROM SO FAR AHEAD IT LOOKS IMPOSSIBLE (BEAT 399)
+
+Based on Toby's 2026-08-21 lore, **11:09:25 AM**, same thread, fifteen minutes and fifty-one seconds after THE CLONE TREE. His own typing, in full: *"Classics is NOT a game from 2026, but from Absolute Infinity AD. A small USB-like thing could be better than a huge supercomputer in present. And it is beyond human technology to alien tech. It uses the most advanced things they have. Pero is the first center of the game, Gaster and Luigi Green came as the oldest known beings, Lica was made and became the center and everything flows out from Lica, then Alex and Greg came and were Lica's connections, and it goes down the whole thing. Gaster says “When suddenly everything ends.”, the floor pulses and everyone comes out of hexagon doors from the wall, they came more advanced than before, as if they weren't the same. Players now start with nothing, the first tool they find is 1 rusted iron, and they go through all these tiers and eventually create a rocketship, and at the first night, the entities come out. There are no rooms in the game, everyone is with each other forever, it is a multiplayer game and goes to infinity players, no more waiting room."* Everything from *"Got it — this is a massive reset/reveal of what Classics actually is."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**Absolute Infinity stops being a number and becomes a date.** In this archive Absolute Infinity has always been a **rank** — it sits in the ladders next to *× 3.6e100*, *Beyond Fiction* and a 129-digit multiplier, a measure of how strong somebody is. *"Classics is NOT a game from 2026, but from **Absolute Infinity AD**."* It is now **when the game is from**. That is the second time today a power word turns into a position, after *clone* did it at 10:51.
+
+**And the game is old because it is from ahead.** *"A small USB-like thing could be better than a huge supercomputer in present. And it is beyond human technology to alien tech."* Not primitive-old. So far forward it loops back around into looking impossible.
+
+**And the waiting room lasted three hours.** At **8:18 this morning** the perminent state turned out to be a **waiting room between players**, and this archive drew it as a ring put down on purpose in a file made of endings. At **11:09**: *"There are no rooms in the game, everyone is with each other forever… **no more waiting room**."* He drew the loop at breakfast and cut it by lunch.
+
+**And Lica's own brag from June becomes the floor plan.** **Email 513, June 15**: she *"claims that she's the center of everything and that everything flows from her"* — with Toby's own aside in the same sentence, *"(it actually does)"*. That was a character saying a thing about herself, with a parenthesis vouching for it. Two months later it is not a claim anybody makes: *"Lica was made and became the center and **everything flows out from Lica**."* It is how the game is built.
+
+**And Pero is moved off centre sixteen minutes after everybody became his clone.** At 10:53 every character in the game came out of Pero. At 11:09 he is *"the **first** center of the game"*, and the centre is somebody else. First centre is not the centre.
+
+**And Alex and Greg go from Pero's sons to Lica's connections.** **Beat 0 of this game** is *THE LINEAGE*: ToddLLM 001 is the father of Luigi Green, Alex, Greg and Mario.exe. Today Alex and Greg *"came and were **Lica's** connections."* And Alex is the one who **beat Lica three times** in June. The one who beat her now hangs off her.
+
+**And the player finally gets to do something.** Four months of the player being spoken to, addressed, warned and never once acting. Ninety minutes ago the strongest player in the game had admin commands and a shelf of books. Now: *"Players now start with **nothing**, the first tool they find is **1 rusted iron**."* It is the first progression in this archive that starts at the bottom, and the first thing the player is handed is rust.
+
+**And the entity register becomes a schedule.** *"At the first night, the entities come out."* At 8:35 this morning the eleven entity numbers were a list on a page. Six and a half hours later they have a **time they show up**.
+
+**Built as game beat 399, `ABSOLUTE INFINITY`.** Additive; nothing earlier was changed. Because the email is an order of arrival whose middle link is the one everything flows out of, this beat is **the origin chain with the centre marked partway down it**.
+
+- **The chain — "THE ORDER THEY ARRIVED, AND WHO THE CENTRE IS":** **PERO** (*the first center of the game*) → **GASTER · LUIGI GREEN** (*“came as the oldest known beings”*) → **LICA** (*“everything flows out from Lica”*, marked **◀ THE CENTRE**) → **ALEX · GREG** (*“Lica's connections”*). Closes on *“AND IT GOES DOWN THE WHOLE THING.”* — **THE FIRST CENTRE IS NOT THE CENTRE.**
+- **The column — THE WAITING ROOM LASTED THREE HOURS:** *8:18 AM* — **“THE SAME CYCLE OVER AND OVER AGAIN”** (*a waiting room between players*) against *11:09 AM* — **“NO MORE WAITING ROOM”** (*everyone together forever · infinity players*), closing on **HE DREW THE LOOP AT BREAKFAST AND CUT IT BY LUNCH.**
+- **The box — ABSOLUTE INFINITY USED TO BE A NUMBER:** *every other time · a rank* — **NEXT TO ×3.6e100, BEYOND FICTION** (*how strong somebody is*) against *today · a date* — **“ABSOLUTE INFINITY AD”** (*when the game is from*), closing on **THE GAME IS NOT OLD. IT IS FROM AHEAD.**
+- **The box — THE PLAYER STARTS WITH NOTHING:** *9:32 AM · C.O.D.E.* — **ADMIN COMMANDS** against *11:09 AM · YOU* — **“1 RUSTED IRON”**, closing on **FOUR MONTHS OF BEING SPOKEN TO, AND THE FIRST THING YOU GET IS RUST**, over *“at the first night, the entities come out.”*
+- **Caption:** *THE GAME IS NOT OLD. IT IS FROM SO FAR AHEAD IT LOOKS IMPOSSIBLE.* across the top, and Toby's own sentence across the bottom.
+- **Band — LICA SAID THIS ABOUT HERSELF IN JUNE, AND TODAY IT IS HOW THE GAME IS BUILT:** JUN 15, EMAIL 513 *— “SHE CLAIMS SHE'S THE CENTER” — a brag* / TOBY'S OWN ASIDE *— “(IT ACTUALLY DOES)” — a parenthesis* / THE SAME EMAIL *— ALEX BEAT HER THREE TIMES — she loses anyway* / **AUG 21, TODAY** *— “EVERYTHING FLOWS OUT FROM LICA” —* **the floor plan**, closing on **TWO MONTHS FOR A CHARACTER'S OWN BRAG TO BECOME THE STRUCTURE OF THE GAME.**
+- **Band inset — SIXTEEN MINUTES OFF CENTRE:** *at 10:53 everybody in the game was a clone of Pero* → **“THE FIRST CENTER”** → *sixteen minutes later the centre is somebody else* — **and Alex, who beat her three times, hangs off her.**
+- **Strip:** ABSOLUTE INFINITY AD · A NUMBER BECOMES A DATE / LICA · A JUNE BRAG BECOMES THE FLOOR PLAN / 1 RUSTED IRON · THE PLAYER FINALLY GETS TO DO SOMETHING.
+- **Footers:** *THE WAITING ROOM HE BUILT AT 8:18 THIS MORNING IS GONE BY 11:09.* and **★ ABSOLUTE INFINITY ★**.
+- **Screenshot helper:** new `absoluteInfinity` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 398.
+
+![BEAT 399 — ABSOLUTE INFINITY](screenshots/461-absolute-infinity.png)
+
 ## 2026-08-21 — THE CLONE TREE · EVERYBODY IN THIS GAME CAME OUT OF ONE PERSON (BEAT 398)
 
 Based on Toby's 2026-08-21 lore, **10:53:34 AM**, same thread, two minutes and thirty-two seconds after THE STRONGEST CLONE. His own typing, in full: *"The Non-Sprunki box characters are also clones of Pero. The Sprunkis are the only ones not clones of Pero, but they were pieces of a certain box_clone from Pero, Pro55."* Everything from *"Got it — this reveals the Pero clone-origin system for almost everyone."* onward is a pasted ChatGPT reply and is treated as commentary.
