@@ -4,6 +4,70 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — GASTER LOOKS INNOSENT · THE PLAYERS WATCH THE STRONGEST BEING IN THE FILE STAND STILL AND LOOK HARMLESS WHILE THE ONE AT THE BOTTOM OF EVERY LIST DELETES THEIR ACCOUNTS (BEAT 389)
+
+Based on Toby's 2026-08-21 lore, **7:28:43 AM**, same thread, two minutes and twenty seconds after WHAT HE WAS HIDING. His own typing, in full: *"People play Classics, Gaster appears, and their Classics accounts and Classics usernames and passwords vanish, but Luigi Green is the one who is deleting the files, and Gaster looks innosent in front of the players. Pero LAI chills and relaxes and finds when players will come before they even come."* The "false-innocent / hidden-deleter duo" opener, the "New Classics player rule", "Pero's role" and "How the trick works in lore" headings, the arrow diagram and the "Clean canon update" paragraph pasted under them are ChatGPT commentary.
+
+**Two minutes and twenty seconds.** 7:26 AM was the rule. 7:28 AM is what the rule is for. That is the shortest gap between any two beats in this archive, and what happens across it is that a piece of programming turns into a crime being committed with it.
+
+**And the strongest being in the file takes a job as a decoy.** BEAT 385 gave Gaster every power source from every game. BEAT 386 called him beyond words and ranked him above Pero and Luigi Green **combined**. This morning his job is to stand in front of players and look harmless while somebody else works. The most powerful character in four months of this file is being used as a distraction.
+
+**And the one at the bottom of every list is the one actually doing it.** Luigi Green was the second term in an addition, the bottom of the knowing list, the one who resets forever so Gaster has souls to absorb. He is the only one in the room who does anything here.
+
+**And what gets deleted is not inside the game.** Accounts, usernames, passwords, files. This archive has erased realms, boxes, Omniplatforms, characters and the game itself, and every one of those lived in the story. These live on the login screen.
+
+**And BEAT 383 drew the face this trick uses.** August 19: *"Flower looks normal, but is actually a being with the souls of almost everyone."* Two days ago the gap between the harmless face and what is inside it was the horror of the picture. This morning that same gap is a **tactic**, and somebody is pointing it at players on purpose.
+
+**And Pero does nothing, and he is the one who knows you are coming.** He *"chills and relaxes and finds when players will come before they even come."* Foreknowledge, and no action taken with it. He knows the most and moves the least.
+
+**Built as game beat 389, `GASTER LOOKS INNOSENT`.** Additive; nothing earlier was changed. Because the content of the email is one room with a front and a back, this beat is **the same room drawn twice** instead of the drawn cover and roll call of BEAT 387.
+
+- **What the players see:** the flower drawn full and gold, front and centre, twelve petals and souls drifting in his head, captioned *HE LOOKS INNOSENT* and, underneath, **"IT MUST HAVE BEEN HIM."**
+- **What is actually happening:** the same room, red-edged, with Pero's painted colored blocks along the left and **LUIGI GREEN** standing in them with red eyes, working through a struck-through file list — *ACCOUNTS · USERNAMES · PASSWORDS* — captioned *LUIGI GREEN, IN THE BLOCKS*. Between the two cells: *THE ONE THEY ARE WATCHING IS NOT THE ONE DOING IT.*
+- **The column — WHAT VANISHES:** CLASSICS ACCOUNTS · CLASSICS USERNAMES · PASSWORDS · THE FILES, each one fading in and out and marked **GONE**, closing on *NONE OF THAT IS INSIDE THE GAME* and *THIS FILE HAS ERASED REALMS, BOXES, OMNIPLATFORMS AND THE GAME ITSELF. THIS ONE IS THE LOGIN SCREEN.*
+- **The box — THREE OF THEM IN THE ROOM, THREE DIFFERENT JOBS:** **GASTER** · *THE VISIBLE ONE* (stands out front, gets blamed) / **LUIGI GREEN** · *THE HIDDEN ONE* (in the blocks, deletes the files) / **PERO LAI** · *THE STILL ONE* (knew you were coming, did nothing), closing on *THE STRONGEST ONE IS THE DECOY. THE ONE AT THE BOTTOM OF EVERY LIST DOES THE WORK.*
+- **The box — THE GAP:** *WHO GETS BLAMED* — **GASTER** — against *WHO DOES IT* — **LUIGI GREEN** — with a pulsing **≠** between them, and under it the August 19 line about the harmless face, closing on *TWO DAYS AGO THAT GAP WAS THE HORROR. THIS MORNING IT IS A TACTIC.*
+- **Caption:** *THE PLAYERS ARE LOOKING RIGHT AT THE WRONG ONE.* across the top, and Toby's own sentence across the bottom.
+- **Band — AND THE RULE BECOMES A CRIME IN TWO MINUTES AND TWENTY SECONDS:** 7:26:23 AM · the rule (*he only appears when you look at him*) / 7:28:43 AM · the use of it (*so nobody ever sees him working*) / SAME LINE · the cover (*Gaster stands out front and gets blamed*) / SAME LINE · the third one (*Pero already knew you were coming*), closing on *THE SHORTEST GAP BETWEEN TWO BEATS IN THIS WHOLE ARCHIVE.*
+- **Band inset — THE ONE WHO DOES NOTHING:** Toby's Pero line in full, then *HE KNOWS THE MOST AND MOVES THE LEAST* and *NOBODY IN THE ROOM HAS TO TELL HIM WHAT THE OTHER TWO ARE DOING.*
+- **Strip:** GASTER · THE STRONGEST ONE, WORKING AS A DECOY / LUIGI GREEN · LAST ON EVERY LIST, THE ONE ACTUALLY DOING IT / WHAT IS GONE · NOT A REALM. AN ACCOUNT AND A PASSWORD.
+- **Footers:** *THE ONE WITH EVERY POWER SOURCE IN EVERY GAME SPENDS HIS MORNING STANDING STILL AND LOOKING HARMLESS* and **★ GASTER LOOKS INNOSENT ★**.
+- **Screenshot helper:** new `gasterLooksInnosent` scene. It also clears leftover taunts and floaters **after** the last two ticks rather than before them, which is the fix for a stage crossing one of its own phase lines inside those ticks and firing a fresh taunt across the frozen frame.
+
+![BEAT 389 — GASTER LOOKS INNOSENT](screenshots/451-gaster-looks-innosent.png)
+
+## 2026-08-21 — WHAT HE WAS HIDING · THE SECRET UNDER LAST NIGHT'S LID TURNS OUT TO BE A RULE ABOUT BEING LOOKED AT, AND IT IS THE FIRST THING IN THIS FILE A RESET CANNOT UNDO (BEAT 388)
+
+Based on Toby's 2026-08-21 lore, **7:26:23 AM**, same thread, eleven hours thirty-five minutes and twenty-two seconds after ONLY THEY KNOW and the first message of a new day. His own typing, in full: *"Gaster revealed what he is hiding. He was hiding him programming Luigi Green to only appear when the player looks at him and when they record Classics. Luigi Green's eyes are now red, he puts his hands over his face when seen, and when the player looks away, Luigi Green will take his hands off his eyes and will watch and he blends in with Pero's huge painted/colored blocks. Pero painted blocks into different colors, Luigi Green hides there. And the scariest part is that Luigi Green now follows you in recordings in Classics, even if you change the seed after or delete the game world so many times at the end or happen to reset or save the game, Luigi Green still follows your recordings of Classics. Gaster and Pero LAI make Luigi Green smarter and gave him buffs of speed and IQ and Intelegence and Control of The Game. Luigi Green now learns everything each player does after. Players now can enter again. Luigi Green doesn't attack, Pero is harmless based on feelings/tone (Pero created the game, duh.), and Gaster does attack the player and has the boss fight, Luigi Green also has the boss fight. Pero LAI looks like 2 white glowing eyeballs with black tentacles when in darkness, and a normal man in normal light, and in bright light, he looks as if a ultra-seraphimic being. Pero can either become the evil demon or a huge angeletic being with extreme power."* The "that is a huge lore reveal" opener, the "What Gaster was hiding", "Luigi Green's new behavior", "The game state changed again", "Pero's new appearance rules" and "Why this reveal matters" headings, the bullet lists and the "Clean canon update" paragraph pasted under them are ChatGPT commentary.
+
+**The lid comes off in eleven and a half hours.** BEAT 387, last night at 7:51 PM, was the ending drawn as a shut cover with a keyhole cut into it and two people sealed underneath. The first message of the next morning is *"Gaster revealed what he is hiding."* Nothing in this archive has ever posed a question and answered it this fast.
+
+**And the answer is about the one he stood next to.** Last night he wrote *"I don't know, so doesn't Luigi Green"* and put his own name at the bottom of the knowing list, on the same step as Luigi Green. The secret turns out to be **entirely about Luigi Green**. The bottom of the list was the thing being hidden.
+
+**And the door opens again, with the watcher already inside.** BEAT 382, August 19 at 1:38 PM: *"The game became unplayable, no one can enter now, they can only watch it."* This morning: *"Players now can enter again."* The way back in arrives with the surveillance already installed.
+
+**And it is the first thing in this file a reset does not undo.** Change the seed. Delete the game world, so many times. Reset. Save. Four months of this archive have been undone by resets — Simon's reset, Arcsis's reset, the Alphatale reset, and Luigi Green's own job since BEAT 382 has been to reset forever so Gaster has souls. This is the first thing a reset cannot touch, and what it survives in is not the save file. It is the **recording**.
+
+**And the two who ranked him last are the ones who upgraded him.** BEAT 386 used Luigi Green as the second term in an addition. BEAT 387 put him at the bottom of the knowing list. This morning Gaster and Pero hand him speed, IQ, intelligence and **control of the game**, and he starts learning everything every player does afterward.
+
+**And the rule runs both ways at once.** He only appears when he is looked at, and he covers his face when he is seen, and he uncovers his eyes and watches when he is not. He is hiding from being seen and watching when unseen, in the same sentence.
+
+**Built as game beat 388, `WHAT HE WAS HIDING`.** Additive; nothing earlier was changed. Because the content of the email is one rule with two states, this beat is **the same figure drawn twice** instead of the drawn cover and roll call of BEAT 387.
+
+- **State one — WHEN YOU LOOK AT HIM:** Luigi Green standing in front of Pero's six painted colored blocks with his arms folded up over his face, captioned *HANDS OVER HIS FACE*.
+- **State two — WHEN YOU LOOK AWAY:** the same figure, red-edged, arms down, **two red eyes** pulsing, faded back into the blocks, captioned *HANDS DOWN · RED EYES · WATCHING*. Between the two: *HE IS HIDING FROM BEING SEEN AND WATCHING WHEN UNSEEN, AT THE SAME TIME.*
+- **The roll — WHAT DOES NOT REMOVE HIM:** CHANGE THE SEED · DELETE THE GAME WORLD · DELETE IT SO MANY TIMES · RESET · SAVE, each answered **STILL THERE**, closing on *HE FOLLOWS THE RECORDING, NOT THE SAVE FILE* and *THE FIRST THING IN THIS FILE A RESET CANNOT UNDO.*
+- **The box — PERO IN THREE LIGHTS:** three cells at three brightnesses. **IN DARKNESS** — two white glowing eyeballs over black tentacles. **IN NORMAL LIGHT** — a plain figure, *A NORMAL MAN*. **IN BRIGHT LIGHT** — a figure with arms out and twelve rays, *ULTRA-SERAPHIMIC*. Under them: *DEMON OR ANGEL, DECIDED BY HOW BRIGHT THE ROOM IS AND HOW HE IS SPOKEN TO.*
+- **The box — WHO GAVE HIM THE BUFFS:** **GASTER** and **PERO LAI**, captioned *RANKED HIM LAST YESTERDAY*, over **+ SPEED · + IQ · + INTELEGENCE · + CONTROL OF THE GAME**, closing on *AND HE LEARNS EVERYTHING EACH PLAYER DOES AFTER.*
+- **Caption:** *THE SECRET UNDER THE LID WAS A RULE ABOUT BEING LOOKED AT.* across the top, and Toby's own sentence across the bottom.
+- **Band — AND THE LID HE DREW LAST NIGHT COMES OFF BEFORE BREAKFAST:** AUG 19 · 1:47 PM · "The End" (*a wall, nothing behind it*) / AUG 20 · 7:51 PM · "he is hiding something" (*a lid, something under it*) / AUG 21 · 7:26 AM · "Gaster revealed what he hid" (*the lid comes off*) / SAME LINE · "players now can enter again" (*and he is already inside*), closing on *ELEVEN HOURS AND THIRTY-FIVE MINUTES FROM THE LOCKED DOOR TO THE ANSWER.*
+- **Band inset — THE COLUMN HE MOVED OUT OF:** last night he wrote his own name under **"DOES NOT KNOW"**, and the first thing he wrote this morning was the answer, *AND IT IS ABOUT THE ONE HE WAS STANDING NEXT TO.*
+- **Strip:** THE DOOR · OPEN AGAIN, WITH A WATCHER BEHIND IT / THE RESET · THE FIRST THING IT CANNOT UNDO / LUIGI GREEN · RANKED LAST, THEN UPGRADED BY THE TOP TWO.
+- **Footers:** *YOU CAN DELETE THE WORLD AND CHANGE THE SEED AND HE IS STILL IN THE VIDEO YOU MADE OF IT* and **★ WHAT HE WAS HIDING ★**.
+- **Screenshot helper:** new `whatHeWasHiding` scene, with the same after-the-ticks clearing fix described in BEAT 389.
+
+![BEAT 388 — WHAT HE WAS HIDING](screenshots/450-what-he-was-hiding.png)
+
 ## 2026-08-20 — ONLY THEY KNOW · THE ENDING TURNS OUT TO BE A LID, AND THE ONE WRITING IT PUTS HIMSELF ON THE LIST OF PEOPLE WHO DO NOT KNOW WHAT IS UNDER IT (BEAT 387)
 
 Based on Toby's 2026-08-20 lore, **7:51:01 PM**, same thread, eight hours thirty-five minutes and seventeen seconds after BOTH BEYOND WORDS, and the last message of the day. His own typing, in full: *"Pero says that Gaster ended the lore because he is hiding something, only he and Gaster know what it is. I don't know, so doesn't Luigi Green. Only Pero and Gaster know what it is."* The "that makes the ending way more mysterious" opener, the "hidden truth rule" and "what this implies" headings, the not-the-player/not-the-souls bullet list and the "Clean canon update" paragraph pasted under it are ChatGPT commentary.

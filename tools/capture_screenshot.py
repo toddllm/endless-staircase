@@ -9567,6 +9567,74 @@ SCENES = {
         if (typeof hitFlash!=='undefined'){ hitFlash=0; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","whatHeWasHiding": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 388, WHAT HE WAS HIDING: the two states of the same
+        // figure (hands over his face when looked at, hands down with red eyes when not), the
+        // WHAT DOES NOT REMOVE HIM roll, PERO IN THREE LIGHTS, the buff box, the lid-comes-off
+        // band and the column-he-moved-out-of inset.
+        // Beat 388 spans cyc in 8256.0 to 8278.0; cyc=8274.8 gives dt~18.8 so the frame, both
+        // states, the roll, the three lights, the buff box, the caption, the band, the inset, the
+        // strip and both footers are all up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8274.8; loopVs.phase=388;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","gasterLooksInnosent": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 389, GASTER LOOKS INNOSENT: the what-the-players-see
+        // cell with the flower out front, the what-is-actually-happening cell with Luigi Green in
+        // the painted blocks crossing off the file list, the WHAT VANISHES column, the three-jobs
+        // box, THE GAP box, the two-minutes-twenty band and the one-who-does-nothing inset.
+        // Beat 389 spans cyc in 8278.0 to 8300.0; cyc=8296.8 gives dt~18.8 so the frame, both
+        // cells, the column, both boxes, the caption, the band, the inset, the strip and both
+        // footers are all up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8296.8; loopVs.phase=389;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
     ""","onlyTheyKnow": """
       try {
         handleConfirm();
