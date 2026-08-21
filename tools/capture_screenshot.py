@@ -9567,6 +9567,73 @@ SCENES = {
         if (typeof hitFlash!=='undefined'){ hitFlash=0; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","strongestClone": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 397, THE STRONGEST CLONE: the brother-brother-clone stack across
+        // twenty-three days, the THE FIGHT THAT DOES NOT HAPPEN column ending on the account deletion,
+        // the "CLONE" HAS ALWAYS BEEN THE WORD FOR THE JUNK box, the HE CAME TO GASTER box, the
+        // present-tense-claims band and the RANKED BY WHOM? inset.
+        // Beat 397 spans cyc in 8454.0 to 8476.0; cyc=8472.8 gives dt~18.8 so the frame, the stack,
+        // the column, both boxes, the caption, the band, the inset, the strip and both footers are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8472.8; loopVs.phase=397;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","cloneTree": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 398, THE CLONE TREE: the actual tree with PERO at the top, the
+        // one-step clone branch on the left and the three-step Pro55 -> pieces -> Sprunkis chain on the
+        // right, the TWO MINUTES AND THIRTY-TWO SECONDS column, the PRO55 WAS ONE OF PERO'S OWN NAMES
+        // box, the "PIECES" IS NOT "CLONES" box, the oldest-page-agrees band and the FOUR MONTHS OF
+        // LADDERS inset.
+        // Beat 398 spans cyc in 8476.0 to 8498.0; cyc=8494.8 gives dt~18.8 so the frame, the tree,
+        // the column, both boxes, the caption, the band, the inset, the strip and both footers are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8494.8; loopVs.phase=398;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
     ""","leavesHimBe": """
       try {
         handleConfirm();

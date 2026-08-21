@@ -4,6 +4,72 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — THE CLONE TREE · EVERYBODY IN THIS GAME CAME OUT OF ONE PERSON (BEAT 398)
+
+Based on Toby's 2026-08-21 lore, **10:53:34 AM**, same thread, two minutes and thirty-two seconds after THE STRONGEST CLONE. His own typing, in full: *"The Non-Sprunki box characters are also clones of Pero. The Sprunkis are the only ones not clones of Pero, but they were pieces of a certain box_clone from Pero, Pro55."* Everything from *"Got it — this reveals the Pero clone-origin system for almost everyone."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**Two minutes and thirty-two seconds takes it from two characters to the whole cast.** At 10:51 the clone reveal covered Gaster and Luigi Green. At 10:53 it covers **everybody who came out of a box** — and it does not leave the exception hanging either, because the Sprunkis get a route of their own in the same sentence.
+
+**And Pro55 is the oldest name in this archive, coming back as a thing instead of a name.** On **July 23** Toby listed Luigi Green as *"the 2nd oldest character after Pero/EndlessAnimations/Karuto/ToddLLM001/ToddLLM002/**Pro/Pro55**/Tunner"*, and in August he listed Pero as going by *"Paul and Mr. Black and Tunner and EndlessAnimations and ToddLLMs and LAI and Karuto and Fog Decoy Sprunkis and Code 303 and **Pro and Pro55**."* A vary is a name he **wears**. This morning Pro55 is *"a certain **box_clone** from Pero"* — a thing he **made**, which then got broken into pieces. The name came off him and became somebody.
+
+**And the oldest page in this whole wiki agrees without being asked.** The pre-Classics archive, written long before any of this era, says **Progamer55 made the original glitch that created Simon**. Simon is a Sprunki, and this morning at 8:35 he is Entity 404. At 10:53 the Sprunkis are *"pieces of a certain box_clone from Pero, Pro55."* Nobody told those two sentences about each other, and they land on the same name from opposite ends of four months.
+
+**And the only ones not copied are the only ones assembled.** Everybody else in the game is **one step** from Pero. The Sprunkis are three: Pero, then Pro55, then pieces, then them. Being the exception costs them a generation.
+
+**And "pieces" is not "clones."** Every other character here is a whole copy of one person. The Sprunkis are **fragments of one thing, divided up** — twelve of them at 9:12 this morning, each carrying a different wrong sound. Now there is something they were divided *from*.
+
+**And `box_clone` is written like a variable name.** Lowercase, with an underscore. This file has had `.psc`, `.nur`, `.exe`, seeds, Error 303 and entity numbers, and this is the first thing in it named like a **field in somebody's code**.
+
+**And it is the first structure in four months that goes down instead of up.** Every diagram in this archive has been a ladder: who beats whom, and by how much. This one is a **tree** — who came out of whom — and it does not say who wins anything. On Wednesday afternoon this cast was two names with lore and everybody else reclassified as souls. Three days later every one of them has a parent.
+
+**Built as game beat 398, `THE CLONE TREE`.** Additive; nothing earlier was changed. Because the email is a genealogy rather than a ranking, this beat is **an actual tree drawn with connector lines**, which is the first one this file has had.
+
+- **The tree — "EVERY CHARACTER IN THIS GAME, AND WHERE THEY CAME FROM":** **PERO** at the top (*the original · the origin point*), a trunk and two arms. The left arm goes to **CLONES OF PERO · ONE STEP** — *GASTER* (“Pero's strongest clone”), *LUIGI GREEN* (“also a clone of Pero”), *THE NON-SPRUNKI BOX CHARACTERS*. The right arm goes to **NOT CLONES · THREE STEPS** — **PRO55** (*“a certain box_clone from Pero”*) → **PIECES** (*broken up, not copied*) → **THE SPRUNKIS** (*the only ones who are not clones*). Closes on **EVERYBODY ELSE IS ONE STEP FROM PERO. THE SPRUNKIS ARE THREE.**
+- **The column — TWO MINUTES AND THIRTY-TWO SECONDS:** *10:51 AM* — **TWO NAMES** (*Gaster · Luigi Green*) against *10:53 AM* — **EVERYBODY** (*and the exception gets a route too*), closing on **ON WEDNESDAY THIS CAST WAS TWO NAMES. NOW ALL OF IT HAS A PARENT.**
+- **The box — PRO55 HAS BEEN ONE OF PERO'S OWN NAMES SINCE JULY:** *July 23 · a vary* — **“…/TODDLLM002/PRO/PRO55/TUNNER”** (*a name he wears*) against *August 21 · a thing* — **“A BOX_CLONE FROM PERO”** (*a thing he made*), closing on **THE NAME CAME OFF HIM AND BECAME SOMEBODY.**
+- **The box — "PIECES" IS NOT "CLONES":** EVERYONE ELSE · A WHOLE COPY against **THE SPRUNKIS · ONE THING, DIVIDED**, closing on **TWELVE OF THEM AT 9:12 THIS MORNING, EACH WITH A DIFFERENT WRONG SOUND.**
+- **Caption:** *EVERYBODY IN THIS GAME CAME OUT OF ONE PERSON.* across the top, and Toby's own sentence across the bottom.
+- **Band — THE OLDEST PAGE IN THIS WIKI AND THIS MORNING'S EMAIL LAND ON THE SAME NAME:** THE OLDEST PAGE HERE *— “PROGAMER55 MADE THE GLITCH” — before any of this* / AND THAT GLITCH MADE *— SIMON — the first Sprunki* / THIS MORNING, 8:35 *— SIMON IS ENTITY 404 — one of the eleven* / **THIS MORNING, 10:53** *— “PIECES OF … PRO55” —* **from the other end**, closing on **NOBODY TOLD THOSE TWO SENTENCES ABOUT EACH OTHER.**
+- **Band inset — FOUR MONTHS OF LADDERS:** *every diagram here has been a ranking: who beats whom, and by how much* → **THIS ONE IS A TREE** → *who came out of whom — and it does not say who wins anything* — **the first structure here that goes down, not up.**
+- **Strip:** PERO · THE ONE EVERYBODY CAME OUT OF / PRO55 · A NAME THAT BECAME A THING / THE SPRUNKIS · THE EXCEPTION, AND IT COSTS A GENERATION.
+- **Footers:** *THE CAST WAS TWO NAMES ON WEDNESDAY. NOW EVERY ONE OF THEM HAS A PARENT.* and **★ THE CLONE TREE ★**.
+- **Screenshot helper:** new `cloneTree` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 397.
+
+![BEAT 398 — THE CLONE TREE](screenshots/460-the-clone-tree.png)
+
+## 2026-08-21 — THE STRONGEST CLONE · THE BEING ON TOP OF THIS FILE TURNS OUT TO BE A COPY (BEAT 397)
+
+Based on Toby's 2026-08-21 lore, **10:51:02 AM**, same thread, one hour fifteen minutes and twenty-three seconds after HE LEAVES HIM BE. His own typing, in full: *"When CODE comes to Gaster, Gaster said “I am Pero's Strongest clone, I was ranked the most powerful being, I will rise and show you who I am.”, Gaster deleted CODE's account. Gaster also said Luigi Green was also a clone of Pero."* Everything from *"Got it — that reveals a clone-origin layer."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**The strongest being in this file turns out to be a copy.** Gaster has been Pero's **brother** since **Email 854 on July 29**, and he said it in his own mouth two days ago: *"Pero will never let anyone defeat his brother."* This morning he is Pero's **clone**. A brother is somebody you are born beside. A clone is somebody made **out of** you. The top of the archive did not change rank here; it changed what it is made of.
+
+**And "clone" has always been the word for the junk.** On **July 22** Simon 404 became stronger than *"anything near or around him in appearence (clones, false Simons, forms, varies, ect)"* — the pile you outgrow. On **August 5** clones were something a machine produced faster and faster. Today the most powerful being in the file is one, and he did not get there by stopping being one.
+
+**And the fight does not happen.** At **9:32** it was a rule: the three of them beat C.O.D.E. by deleting his account. At **9:35** it was corrected so each could go alone. At **10:51** it actually occurs, it is **Gaster by himself**, and the strongest player in the game — introduced seventy-nine minutes earlier with admin commands and a shelf of books — never gets a hit in.
+
+**And he came to Gaster.** *"When CODE comes to Gaster."* Not hunted, not ambushed, not summoned. The one who read the whole game walked into the one thing he had not read — an hour after knowing exactly which of the three to leave alone.
+
+**And "I will rise" is future tense from the top of the ladder.** Every other claim in this archive is present: *"I am the parasite of this game"*, *"I now rule this world"*, *"I own every pixel"*. He is **ranked the most powerful being in the same sentence**, and he still talks like he has not arrived.
+
+**And "I was ranked" is passive.** Somebody outside the sentence did the ranking. At **8:35 this morning** the register of eleven names had no ranking in it at all, and it is the first rank here that is not simply somebody being stronger than somebody else.
+
+**And Luigi Green gets his origin as a footnote.** *"Gaster also said Luigi Green was also a clone of Pero."* **July 23** made him *"the 2nd oldest character after Pero/EndlessAnimations/Karuto/ToddLLM001/ToddLLM002/Pro/Pro55/Tunner"* — second oldest, standing right next to the Pero name-chain. Today that adjacency finally gets a mechanism: he is not merely younger than Pero, he is **made of him**.
+
+**Built as game beat 397, `THE STRONGEST CLONE`.** Additive; nothing earlier was changed. Because the email is one relationship rewritten across twenty-three days, this beat is **a three-row stack of what Gaster is to Pero**, with the word changing on the last line.
+
+- **The stack — "WHAT GASTER IS TO PERO, WRITTEN THREE TIMES":** *JUL 29* — **“GASTER WAS PERO’S BROTHER”** (*Email 854, the first time they are related at all*) → *AUG 19* — **“PERO WILL NEVER LET ANYONE DEFEAT HIS BROTHER”** (*Gaster's own mouth, two days ago*) → *AUG 21* — **“I AM PERO’S STRONGEST CLONE”** (*Gaster's own mouth, this morning*). Closes on **A BROTHER IS SOMEBODY YOU ARE BORN BESIDE. A CLONE IS SOMEBODY MADE OUT OF YOU.**
+- **The column — THE FIGHT THAT DOES NOT HAPPEN:** *9:32 AM · A RULE* (the three of them, together) → *9:35 AM · A CORRECTION* (each one alone, as a 1HKO) → *10:51 AM · IT HAPPENS* (**“GASTER DELETED CODE’S ACCOUNT”**), closing on **THE STRONGEST PLAYER IN THE GAME NEVER GETS A HIT IN.**
+- **The box — "CLONE" HAS ALWAYS BEEN THE WORD FOR THE JUNK:** *July 22, what Simon outgrew* — **“CLONES, FALSE SIMONS, FORMS”** (*the pile you leave behind*) against *August 21, what is on top* — **“PERO’S STRONGEST CLONE”** (*the most powerful being*), closing on **THE TOP OF THE LADDER IS A COPY OF SOMEBODY LOWER DOWN IT.**
+- **The box — HE CAME TO GASTER:** *not hunted · not ambushed · not summoned* → **“WHEN CODE COMES TO GASTER”**, closing on **THE ONE WHO READ THE WHOLE GAME WALKED INTO THE ONE THING HE HAD NOT READ.**
+- **Caption:** *THE STRONGEST BEING IN THIS FILE TURNS OUT TO BE A COPY.* across the top, and Toby's own sentence across the bottom.
+- **Band — EVERYBODY WHO HAS EVER CLAIMED THE TOP HERE CLAIMED IT IN THE PRESENT TENSE:** SIMON, MAY *— “I AM THE PARASITE OF THIS GAME” — already is* / GASTER, BEAT 404 *— “I NOW RULE THIS WORLD” — already does* / GRAY, AUGUST 17 *— “I OWN EVERY PIXEL” — already owns* / **GASTER, TODAY** *— “I WILL RISE AND SHOW YOU WHO I AM” —* **has not yet**, closing on **HE IS RANKED THE MOST POWERFUL BEING IN THE SAME SENTENCE, AND HE STILL SAYS HE WILL RISE.**
+- **Band inset — RANKED BY WHOM?:** *“I was ranked the most powerful being”* → **SOMEBODY ELSE DID IT** → *at 8:35 this morning the register of eleven names had no ranking in it* — **the first rank here that is not just being stronger.**
+- **Strip:** GASTER · PERO'S STRONGEST CLONE / LUIGI GREEN · ALSO A CLONE, IN A FOOTNOTE / C.O.D.E. · DELETED WITHOUT A FIGHT.
+- **Footers:** *FOUR MONTHS OF ORIGINALS, AND THE ONE ON TOP IS A COPY.* and **★ THE STRONGEST CLONE ★**.
+- **Screenshot helper:** new `strongestClone` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 396.
+
+![BEAT 397 — THE STRONGEST CLONE](screenshots/459-the-strongest-clone.png)
+
 ## 2026-08-21 — HE LEAVES HIM BE · THE SCARIEST RULE IN THIS FILE TURNS INTO THE WAY AROUND HIM (BEAT 396)
 
 Based on Toby's 2026-08-21 lore, **9:35:39 AM**, same thread, three minutes and twenty-six seconds after C.O.D.E. His own typing, in full: *"Pero, Gaster can go alone and they easily 1HKO CODE since they could make air into poison, they can do anything. Luigi Green needs the camera to be seen by players, CODE knows that and leaves Luigi Green be, but Luigi Green could 1HKO CODE too."* Everything from *"Got it — correction accepted"* onward is a pasted ChatGPT reply and is treated as commentary.
