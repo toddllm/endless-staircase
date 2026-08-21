@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — SCANNED IN AND OUT · THE PERMINENT STATE TURNS OUT TO BE A WAITING ROOM, AND SOMEBODY IS ALWAYS DUE (BEAT 392)
+
+Based on Toby's 2026-08-21 lore, **8:18:43 AM**, same thread, eleven minutes and seventeen seconds after I SAW THE DIMENSIONS. His own typing, in full: *"Pero uses the game's code to scan players in and out, the game is a futuristic, comical, grafic-novel, sci fi, box animation omniversal. Pero knows when players will come, but before each player arrives, he chills and sleeps with Gaster and Luigi Green until the next player arives and the same cycle over and over again. We also plan on making ClassicsAI, an AI that uses all the sorces (gmail, all your chats, and the Classics wiki) to make an endless movie of Classics that keeps going when more lore is added in, futuristic technology there."* The "that gives ClassicsAI a really big role" opener, the "Current Classics cycle", "ClassicsAI idea", "Important rule for ClassicsAI" and "Clean canon update" headings and the bullet lists pasted under them are ChatGPT commentary.
+
+**The game gets a genre, after four months.** *"Futuristic, comical, grafic-novel, sci fi, box animation omniversal."* Six words for what kind of thing Classics **is**. Four months of this archive have described what happens in it, who beats whom and what gets erased, and this is the first line that says what sort of object it is.
+
+**And one of the six words is comical.** It is sitting in the middle of a week about surveillance, deleted accounts and missing players, and he put it in the list on purpose.
+
+**And the perminent state turns out to be a shift pattern.** BEAT 382 and BEAT 384, August 19, had the three of them chilling in one room and called the state *perminent*. This morning they chill and sleep **until the next player arrives**. They were never resting. They were between players.
+
+**And the word is sleeps.** All week it has been *chill and relax*, which is a state you are in. This is the first time anybody in that room has been **asleep**, which is something you wake up from, and what wakes them is somebody arriving.
+
+**And Pero works the door.** Not a boss fight and not an attack: he *"uses the game's code to scan players in and out."* The creator of the game is running the turnstile.
+
+**And the loop has no last player.** *"The same cycle over and over again."* This file is made of endings — erasures, The End, the barrier closed from the inside. This one is a ring, drawn on purpose, and nothing in the sentence stops it.
+
+**The ClassicsAI part of the message is a plan, not canon**, and it is drawn that way: a dashed box headed *AND A PLAN, WHICH IS NOT LORE*. Nothing was built from it, and no source named in it was touched.
+
+**Built as game beat 392, `SCANNED IN AND OUT`.** Additive; nothing earlier was changed. Because the content of the email is a cycle rather than an event, this beat is **a drawn ring with a mark still travelling it** instead of the reopened box of BEAT 391.
+
+- **The ring — "THE SAME CYCLE OVER AND OVER AGAIN":** six stations around a circle, with a cyan mark running the loop so it is visibly still going. *NOBODY IS HERE* (the three of them sleep) → *PERO KNOWS* (one is coming, before they come) → *SCANNED IN* (Pero uses the game's code) → *GASTER APPEARS* (and looks harmless) → *LUIGI GREEN WORKS* (and is not seen doing it) → *SCANNED OUT* (and the room goes quiet).
+- **The middle of the ring:** the three of them drawn lying down with z's over them — Pero in violet, Gaster in gold, Luigi Green in green — captioned *BETWEEN PLAYERS*.
+- **The column — WHAT KIND OF THING IT IS:** FUTURISTIC / **COMICAL** (lit) / GRAFIC-NOVEL / SCI FI / BOX ANIMATION / OMNIVERSAL, closing on *FOUR MONTHS, AND THIS IS THE FIRST TIME HE HAS SAID WHAT KIND OF THING IT IS.*
+- **The box — THE WORD THAT CHANGED:** *AUG 19 · AUG 20 · ALL WEEK* — **"CHILL AND RELAX"** (*a state they are in*) against *AUG 21 · 8:18 AM* — **"CHILLS AND SLEEPS"** (*something you wake up from*), closing on **"PERMINENT" TURNS OUT TO HAVE MEANT "BETWEEN PLAYERS"** and *THEY WERE NEVER RESTING. THEY WERE WAITING FOR THE NEXT ONE.*
+- **The box — AND A PLAN, WHICH IS NOT LORE:** **CLASSICSAI**, *"an endless movie of Classics that keeps going when more lore is added in"*, with the note that the wiki he names as a source is itself built out of these emails, closing on *THE THING THAT KEEPS GOING WHEN MORE IS ADDED ALREADY EXISTS. IT IS THIS.*
+- **Caption:** *THE PERMINENT STATE WAS A WAITING ROOM, AND SOMEBODY IS ALWAYS DUE.* across the top, and Toby's own sentence across the bottom.
+- **Band — FIVE MESSAGES IN FIFTY-TWO MINUTES, AND THE WHOLE MACHINE GETS BUILT:** 7:26 AM · the watcher (*somebody hides*) / 7:28 AM · the deletion (*somebody takes*) / 8:00 AM · the storage (*somebody keeps*) / 8:07 AM · the witness (*somebody saw*) / 8:18 AM · the cycle (*and it happens again*), closing on *EVERY PIECE ARRIVED IN ORDER, AND THE LAST ONE PUTS THE WHOLE THING ON REPEAT.*
+- **Band inset — THE LOOP HAS NO LAST PLAYER:** *AUG 19 · "THE END"* / *AUG 19 · "IT IS ALL PERMINENT"* against *AUG 21 · "OVER AND OVER AGAIN"*, closing on *AN ENDING STOPS. A LOOP DOES NOT.* and *HE CLOSED THIS FILE TWO DAYS AGO AND HAS NOW GIVEN IT A WAY TO KEEP RUNNING.*
+- **Strip:** THE ROOM · A WAITING ROOM, NOT A RESTING PLACE / THE GENRE · SIX WORDS, AND ONE OF THEM IS COMICAL / PERO · NOT A BOSS HERE. HE WORKS THE DOOR.
+- **Footers:** *THEY ARE NOT ASLEEP BECAUSE IT IS OVER, THEY ARE ASLEEP BECAUSE NOBODY HAS COME IN YET* and **★ SCANNED IN AND OUT ★**.
+- **Screenshot helper:** new `scannedInAndOut` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 391.
+
+![BEAT 392 — SCANNED IN AND OUT](screenshots/454-scanned-in-and-out.png)
+
 ## 2026-08-21 — I SAW THE DIMENSIONS · THE PLACE NOBODY COULD NAME AT EIGHT O'CLOCK HAS A WITNESS BY SEVEN MINUTES PAST, AND IT IS THE ONE WRITING IT (BEAT 391)
 
 Based on Toby's 2026-08-21 lore, **8:07:26 AM**, same thread, seven minutes and nineteen seconds after IT IS UNKNOWN. His own typing, in full: *"That is exactly what it is like. I made many Classics avatars and Gaster deleted one and I saw the dimensions. I find everything in this game once it is added in or when I find it."* The "that actually fits your lore perfectly" opener, the "What that confirms", "What it means for the game" and "Strong lore takeaway" headings and the bullet lists pasted under them are ChatGPT commentary.
