@@ -9567,6 +9567,72 @@ SCENES = {
         if (typeof hitFlash!=='undefined'){ hitFlash=0; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","heWasGoingEasy": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 400, HE WAS GOING EASY: the three dated slabs of what Vicinus is,
+        // the HE HAS DONE THIS BEFORE, AND IT WAS ALSO GRAY column, the HE IS ON THE LIST OF PEOPLE WHO BEAT
+        // HIM box, the SIMON'S ONE WIN, TAKEN BACK WITHOUT A REMATCH box, the creature-to-costume band and the
+        // THIRD TIME IN FOUR DAYS A WORD SLIDES FROM WHO TO WHERE inset.
+        // Beat 400 spans cyc in 8520.0 to 8542.0; cyc=8538.8 gives dt~18.8 so the frame, the slabs,
+        // the column, both boxes, the caption, the band, the inset, the strip and both footers are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8538.8; loopVs.phase=400;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","aFreeMeal": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 401, A FREE MEAL: the five-step assembly line that builds the
+        // dragon, the THE BRUSH HAS BEEN PERO'S SINCE JULY column, the GRAY'S OWN BATTLE FORM WAS ALSO PAINT
+        // BRUSH STROKES box, the A VINE PICKS SOMETHING UP box, the third-time-in-three-days band and the AND
+        // HIS OWN RULE DOES NOT FIRE inset.
+        // Beat 401 spans cyc in 8542.0 to 8564.0; cyc=8560.8 gives dt~18.8 so the frame, the steps,
+        // the column, both boxes, the caption, the band, the inset, the strip and both footers are up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8560.8; loopVs.phase=401;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        // clear what the warmup climb and those last two ticks kicked up, so the frozen frame
+        // is only the beat - cleared AFTER the ticks, since a stage crossing one of its own
+        // phase lines inside them fires a fresh taunt
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
     ""","absoluteInfinity": """
       try {
         handleConfirm();

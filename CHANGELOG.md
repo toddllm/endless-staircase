@@ -4,6 +4,70 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — A FREE MEAL · IT TOOK THREE PEOPLE TO PAINT THE DRAGON AND ONE BITE TO FINISH (BEAT 401)
+
+Based on Toby's 2026-08-21 lore, **2:29:35 PM**, same thread, twelve minutes and forty-one seconds after HE WAS GOING EASY. His own typing, in full: *"Every box character learned that (Pero and Luigi Green knew that from the start). The box characters battle Flower, but Pero gave Gaster the paintbrush that makes the ink dragon suit on him, so Gaster used the vine to grab the paintbrush since he had no other option, then he painted himself, Pero gave Luigi Green a paintbrush, Luigi Green painted Gaster, and then Gaster fully became Vicinus. Pero and Luigi Green stand back. Vicinus consumed all the box characters like a free meal. Vicinus's ink falls down into a puddle and Flower/Gaster is back to his normal form. Flower, Pero, and Luigi Green all chill in there box-making room again."* Everything from *"Got it — this confirms the Vicinus truth reveal and the final form cycle."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**The paintbrush has belonged to Pero since July, and today he gives it away twice.** **Email 833, July 27**: *"EndlessAnimations uses his paint brush to make and blackout games before infecting them as Pero"* — and in that same message Pero and EndlessAnimations are **the same being**. The brush's whole job in this archive is to black a thing out so Pero can take it. Today he hands it to Gaster, then hands a **second one** to Luigi Green, and the tool that makes things his is used to make somebody else into a dragon.
+
+**And Gray's own battle form was also made of paint brush strokes.** **Email 212, May 3** — **Omega Gray**: fifteen times bigger, *"drawn in paint brush strokes"*, and *"when fully defeated, turns back to normal Gray."* It was written down as the **weaker** form, because it cannot delete. One hundred and ten days later the paint-brush battle form belongs to Gaster instead, it is the **stronger** thing, and it reverts **after winning** rather than after losing. Same costume, opposite end of the fight.
+
+**And a vine picks something up.** Every vine in this file ties somebody down: **May 1** has HC Gray chaining Simon with **dead Flowey vines**, **May 15** has Tunmon striking Simon with a **sharp vine**. Today one grips a paintbrush, and the reason is a detail nobody had needed before — a flower has no hands. *"Gaster used the vine to grab the paintbrush **since he had no other option**."* First time in four months a vine is a hand instead of a rope.
+
+**And it takes three people and two brushes to make one dragon.** Pero supplies, Gaster paints himself, Pero supplies again, Luigi Green paints him a second time, and *only then* is he *"fully"* Vicinus. The strongest being in the archive cannot put his own costume on alone.
+
+**And the box characters get eaten for the third time in three days.** **August 19, 9:24 AM**: Gray sucked into the world-ending pellet *"with Luigi Green and all the box characters."* **August 19, 1:38 PM**, THE END: Gaster absorbs every box character's soul into materials, power, energy and mass, with Luigi Green resetting forever so it can happen again. Today: *"like a **free** meal."* It cost something the first two times.
+
+**And his own rule does not fire.** August 18 gave Vicinus exactly one mechanic: *"Whatever Vicinus consumes turns into Cicinuses, until there is nothing left."* Today he consumes the entire box cast and **no Cicinus appears**. The ink falls into a puddle instead, and the suit comes off.
+
+**And the scene puts everything back where it started.** THE END, two days ago, left exactly one place standing — *"Pero and Gaster's old box animation room."* After a battle, two paintbrushes, a dragon and a meal: *"Flower, Pero, and Luigi Green all chill in there box-making room again."*
+
+**Built as game beat 401, `A FREE MEAL`.** Additive; nothing earlier was changed. Because the email is a **procedure** — who hands what to whom, in order, until the dragon exists — this beat is **a five-step assembly line**.
+
+- **The line — "HOW YOU MAKE A DRAGON, IN THE ORDER HE WROTE IT":** **1 · PERO** (*gives Gaster the paintbrush*) → **2 · A VINE** (*"he had no other option"*) → **3 · GASTER** (*paints himself*) → **4 · PERO AGAIN** (*a second brush, to Luigi Green*) → **5 · LUIGI GREEN** (*paints him — "fully became Vicinus"*). Closes on **THREE PEOPLE AND TWO BRUSHES TO MAKE ONE DRAGON — AND THEN THEY STAND BACK.**
+- **The column — THE BRUSH HAS BEEN PERO'S SINCE JULY:** *Jul 27, Email 833* — **"USES HIS PAINT BRUSH TO BLACKOUT GAMES BEFORE INFECTING THEM AS PERO"** (*it makes a thing his*) against *Aug 21, today* — **HE HANDS IT OVER. TWICE.** (*and one of them paints the other*), closing on **THE TOOL THAT MAKES THINGS HIS NOW MAKES SOMEBODY ELSE.**
+- **The box — GRAY'S OWN BATTLE FORM WAS ALSO PAINT BRUSH STROKES:** *May 3 · Omega Gray* — **REVERTS WHEN DEFEATED** (*the weaker form · it cannot delete*) against *Aug 21 · Vicinus* — **REVERTS AFTER WINNING** (*the stronger thing · it eats the room*), closing on **ONE HUNDRED AND TEN DAYS TO FLIP THE SAME COSTUME FROM THE ONE YOU WEAR WHEN YOU LOSE TO THE ONE YOU WEAR WHEN YOU EAT.**
+- **The box — A VINE PICKS SOMETHING UP:** *every other vine here* — **TIES SOMEBODY DOWN** (*dead Flowey vines · Tunmon's sharp vine*) against *today* — **IT HOLDS A BRUSH**, closing on **FIRST TIME IN FOUR MONTHS A VINE IS A HAND INSTEAD OF A ROPE**, over *"since he had no other option."*
+- **Caption:** *THE DRAGON TOOK THREE PEOPLE TO PAINT, AND ONE BITE TO FINISH.* across the top, and Toby's own sentence across the bottom.
+- **Band — THE BOX CHARACTERS GET EATEN FOR THE THIRD TIME IN THREE DAYS:** AUG 19, 9:24 AM *— SUCKED INTO THE WORLD-ENDING PELLET — with Gray and Luigi Green* / AUG 19, 1:38 PM *— EVERY SOUL ABSORBED INTO MASS — Luigi Green resets so it repeats* / **AUG 21, TODAY** *— "LIKE A FREE MEAL" —* **nobody had to be beaten**, closing on **IT COST SOMETHING THE FIRST TWO TIMES. THE WORD DOING THE WORK TODAY IS "FREE".**
+- **Band inset — AND HIS OWN RULE DOES NOT FIRE:** *Aug 18 — "whatever Vicinus consumes turns into Cicinuses"* → **HE EATS THE WHOLE BOX CAST** → *and no Cicinus appears; the ink just falls in a puddle* — **the suit comes off and he is a small flower again.**
+- **Strip:** TWO PAINTBRUSHES · PERO HANDS HIS OWN TOOL AWAY / A VINE · THE FIRST ONE HERE THAT HOLDS SOMETHING / THE BOX-MAKING ROOM · EVERYTHING PUT BACK WHERE IT STARTED.
+- **Footers:** *AUGUST 19 LEFT ONE ROOM STANDING. TWO DAYS LATER THE SAME THREE ARE BACK IN IT.* and **★ A FREE MEAL ★**.
+- **Screenshot helper:** new `aFreeMeal` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 400.
+
+![BEAT 401 — A FREE MEAL](screenshots/463-a-free-meal.png)
+
+## 2026-08-21 — HE WAS GOING EASY · THE DRAGON WAS A COSTUME AND THE ONE WEARING IT WAS BEING POLITE (BEAT 400)
+
+Based on Toby's 2026-08-21 lore, **2:16:54 PM**, same thread, three hours seven minutes and twenty-nine seconds after ABSOLUTE INFINITY. His own typing, in full: *"Vicinus is actually Flower that sprouts from Gray, Flower covered in ink that makes him LOOK like a dragon. Since Flower is more powerful than Gray and Simon, do you think he was going easy on Simon? Yes Flower was. Flower could consume the whole game if he wanted to, since he is Gaster. Gaster pretended to act like Gray. Vicinus is really Gaster."* Everything from *"Yes — with that reveal, Flower was definitely going easy on Simon."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**Gray goes from being Vicinus to being where Vicinus grew.** **Email 1048, August 19**: *"Gray also is Vicinus, Vicinus is the ink dragon **from** Gray."* That is an identity — the dragon *is* him. **Today**: *"Vicinus is actually Flower that **sprouts from** Gray."* That is an address. Two days to turn a person into a place.
+
+**And it is the third time in four days a word slides from *who* to *where*.** **Pro55** went from a name Pero **wears** to a thing he **made**. **Absolute Infinity** went from a rank to a date. Now **Gray** goes from somebody Vicinus *is* to ground Vicinus grew *out of*. He keeps taking words off people and putting them on the map.
+
+**And he has gone easy before, and it was also Gray.** **Email 246, May 7**: *"Gray actually was holding back at when Black defeated him, Gray was bord of winning all the time and just let Black beat him."* One hundred and six days later the same body holds back again — and this time it turns out **it was never Gray inside it**.
+
+**And he is on the list of people who beat him.** **Email 1027, August 18** ranked the matchups: *"Pero, Gaster, and Luigi Green easily beat Vicinus of course."* Three days later Gaster **is** Vicinus. The table has him on both sides of his own fight.
+
+**And Simon's one win gets taken back without a rematch.** The same August 18 message said *"Simon is the only known character who can beat Vicinus."* Today that is not a win, it is permission: *"do you think he was going easy on Simon? **Yes Flower was.**"* Every other reversal in this archive is a bigger number arriving. This one is somebody deciding, and nobody has to fight again for it to change hands.
+
+**And "pretended to act like Gray" makes the disguise a performance.** This file has four standard ways to be somebody else — a **form**, a **possession**, a **fusion**, a **vary**. *"Gaster pretended to **act like** Gray"* is none of them. He copied a style.
+
+**Built as game beat 400, `HE WAS GOING EASY`.** Additive; nothing earlier was changed. Because the email is the **third answer to one question in three days**, and each answer moves down a layer, this beat is **three dated slabs of what Vicinus is**.
+
+- **The stack — "WHAT VICINUS IS, ASKED AND ANSWERED THREE DAYS RUNNING":** **AUG 18** — *a dragon, "the fourth largest entity in the game"* → **AUG 19** — *Gray, "Vicinus is the ink dragon from Gray"* → **AUG 21** — *Flower, "sprouts from Gray, covered in ink"*. Closes on **GRAY WAS HIM ON TUESDAY. TODAY GRAY IS ONLY WHERE HE GREW. — A PERSON BECOMES A PLACE.**
+- **The column — HE HAS DONE THIS BEFORE, AND IT WAS ALSO GRAY:** *May 7, Email 246* — **"GRAY WAS BORD OF WINNING ALL THE TIME AND JUST LET BLACK BEAT HIM"** (*a loss that was a choice*) against *Aug 21, today* — **"YES FLOWER WAS"** (*the same body · 106 days apart*), closing on **GRAY HELD BACK IN MAY. IT WAS NEVER GRAY IN THERE.**
+- **The box — HE IS ON THE LIST OF PEOPLE WHO BEAT HIM:** *Aug 18 · the matchup table* — **"PERO, GASTER AND LUIGI GREEN EASILY BEAT VICINUS OF COURSE"** against *Aug 21 · today* — **GASTER IS VICINUS**, closing on **THREE DAYS TO PUT HIM ON BOTH SIDES OF HIS OWN FIGHT**, over *"Flower could consume the whole game if he wanted to, since he is Gaster."*
+- **The box — SIMON'S ONE WIN, TAKEN BACK WITHOUT A REMATCH:** *Aug 18* — **"THE ONLY KNOWN CHARACTER WHO CAN BEAT VICINUS"** against *Aug 21* — **NOT OUTRANKED. ALLOWED.**, closing on **EVERY OTHER REVERSAL HERE IS A BIGGER NUMBER ARRIVING. THIS ONE IS SOMEBODY DECIDING.**
+- **Caption:** *THE DRAGON WAS A COSTUME, AND THE ONE WEARING IT WAS BEING POLITE.* across the top, and Toby's own sentence across the bottom.
+- **Band — SIX WEEKS TO GO FROM A CREATURE TO A COSTUME:** JUL 6, EMAIL 662 *— ONE OF THREE APEX CREATURES — seeded under Gray* / AUG 18, EMAIL 1027 *— "A QURASE MEGA BOSS" — his own boss fight* / AUG 19, EMAIL 1048 *— "GRAY ALSO IS VICINUS" — he is Gray* / **AUG 21, TODAY** *— "SPROUTS FROM GRAY" —* **Gray is only the ground**, closing on **"GASTER PRETENDED TO ACT LIKE GRAY." — NOT A FORM, NOT A FUSION. A PERFORMANCE.**
+- **Band inset — THIRD TIME IN FOUR DAYS A WORD SLIDES FROM WHO TO WHERE:** *PRO55 · a name he wore → a thing he made* / *ABSOLUTE INFINITY · a rank → a date* / *GRAY · somebody he is → ground he grew from* — **he keeps taking words off people and putting them on the map.**
+- **Strip:** SPROUTS FROM GRAY · AN IDENTITY BECOMES AN ADDRESS / "YES FLOWER WAS" · A WIN THAT WAS ONLY PERMISSION / ACTED LIKE GRAY · THE DISGUISE IS A PERFORMANCE.
+- **Footers:** *ONE OF THE THREE NAMES ON THE LIST OF PEOPLE WHO EASILY BEAT VICINUS IS VICINUS.* and **★ HE WAS GOING EASY ★**.
+- **Screenshot helper:** new `heWasGoingEasy` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 399.
+
+![BEAT 400 — HE WAS GOING EASY](screenshots/462-he-was-going-easy.png)
+
 ## 2026-08-21 — ABSOLUTE INFINITY · THE GAME IS NOT OLD, IT IS FROM SO FAR AHEAD IT LOOKS IMPOSSIBLE (BEAT 399)
 
 Based on Toby's 2026-08-21 lore, **11:09:25 AM**, same thread, fifteen minutes and fifty-one seconds after THE CLONE TREE. His own typing, in full: *"Classics is NOT a game from 2026, but from Absolute Infinity AD. A small USB-like thing could be better than a huge supercomputer in present. And it is beyond human technology to alien tech. It uses the most advanced things they have. Pero is the first center of the game, Gaster and Luigi Green came as the oldest known beings, Lica was made and became the center and everything flows out from Lica, then Alex and Greg came and were Lica's connections, and it goes down the whole thing. Gaster says “When suddenly everything ends.”, the floor pulses and everyone comes out of hexagon doors from the wall, they came more advanced than before, as if they weren't the same. Players now start with nothing, the first tool they find is 1 rusted iron, and they go through all these tiers and eventually create a rocketship, and at the first night, the entities come out. There are no rooms in the game, everyone is with each other forever, it is a multiplayer game and goes to infinity players, no more waiting room."* Everything from *"Got it — this is a massive reset/reveal of what Classics actually is."* onward is a pasted ChatGPT reply and is treated as commentary.
