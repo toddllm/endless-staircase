@@ -4,6 +4,62 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — CHILLS AND RELAXES · THE WORDS THAT ENDED THE STORY ARE NOW HOW HE WATCHES IT (BEAT 408)
+
+Based on Toby's 2026-08-21 lore, **4:02:29 PM**, same thread, one minute and fifty-two seconds after COLORED ENERGIES. His own typing, in full: *"Flower only gets more power. Pero is happy about Gaster and he chills and relaxes."* Everything from *"Exactly — Flower/Gaster only gains more power from consuming."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The words that ended the story are now how he watches it.** *"Chill and relax"* has been written **four times in three days** — Email 1064 (Aug 19, 1:47 PM), Email 1066 (Aug 19, 8:41 PM), Email 1071 (Aug 21, 7:28 AM), and this one. And Email 1066 was **the last scene**: after Pero wrote *"The End"*, crashed the game, closed the barrier and erased the omniplatforms, the final line of the whole thing was *"They are just chilling currently."* The file kept going anyway, so the ending posture is now the **reaction shot**.
+
+**And consuming costs him nothing at all.** Every consumed being becomes power, soulmass, coloured energy, Cicinus material, LOVE PELLET material, or stored power. Six outputs, and not one of them is a price.
+
+**And the one jealous character in this archive went into Flower two minutes earlier.** Email 196, **May 1**: *"Black might just be jealous."* That is the archive's only jealousy motive, and it belongs to Mr. Black, who was eaten at 4:00 PM. The envy leaves the file and the calm is what is left standing next to the winner.
+
+**And the creator of the game is the one doing nothing.** Gaster eats and converts and grows; Luigi Green has been energy inside him since 3:03 PM; Pero *"chills and relaxes"* — and is happy about it.
+
+**Built as game beat 408, `CHILLS AND RELAXES`.** Additive; nothing earlier was changed.
+
+- **The stack — EVERY TIME "CHILL AND RELAX" HAS BEEN WRITTEN:** *Aug 19 1:47* — the last room → *Aug 19 8:41* — **"JUST CHILLING CURRENTLY" — THE LAST SCENE** → *Aug 21 7:28* — he chills and waits for players → *Aug 21 4:02* — **"HE CHILLS AND RELAXES" — BESIDE ALL THIS**. Closes on **FOUR TIMES IN THREE DAYS, AND ONE OF THEM WAS THE LAST LINE OF THE STORY.**
+- **The column — WHAT HE IS SITTING CALMLY NEXT TO:** **CONSUME = GROW STRONGER**, nothing weakens or fills or slows him, and it all becomes power · soulmass · coloured energy · Cicinus · LOVE PELLETS, closing on **SIX OUTPUTS, AND NOT ONE OF THEM COSTS HIM ANYTHING.**
+- **The box — THE ONE JEALOUS CHARACTER HERE WAS EATEN TWO MINUTES AGO:** *May 1, Email 196* — **"BLACK MIGHT JUST BE JEALOUS"** against *Aug 21, 4:02 PM* — **"PERO IS HAPPY ABOUT GASTER"**, closing on **THE ENVY LEAVES THE FILE AND THE CALM IS WHAT IS LEFT STANDING.**
+- **The box — AND HE ALREADY WROTE THE ENDING:** *Aug 19* — Pero wrote **"THE END"** against *Aug 21* — **AND IT IS STILL BEING WRITTEN**, over **AND THE FILE KEPT GOING WITHOUT ASKING HIM.**
+- **Band — HE IS THE ONLY ONE IN THE ROOM NOT TRYING TO BE ANYTHING:** Gaster *eats, converts, grows* / Luigi Green *absorbed at 3:03 PM* / **Pero "CHILLS AND RELAXES"**, closing on **THE CREATOR OF THE GAME IS THE ONE DOING NOTHING, AND HE IS FINE.**
+- **Band inset — AND HAPPINESS IS RARE IN THIS FILE:** 3:06 PM and 4:02 PM, fifty-six minutes apart, the same brother said twice.
+- **Strip:** "CHILLS AND RELAXES" · THE FOURTH TIME IN THREE DAYS / CONSUME = STRONGER · A RULE WITH NO PRICE ATTACHED / THE ENDING POSTURE · IS NOW THE REACTION SHOT.
+- **Footers:** *THE WORDS HE ENDED THE STORY WITH ARE HOW HE WATCHES IT CONTINUE.* and **★ CHILLS AND RELAXES ★**.
+- **Screenshot helper:** new `chillsAndRelaxes` scene.
+
+![BEAT 408 — CHILLS AND RELAXES](screenshots/470-chills-and-relaxes.png)
+
+## 2026-08-21 — COLORED ENERGIES · THE FIRST RULE EVER WRITTEN ABOUT A SPRUNKI GETS UNDONE (BEAT 407)
+
+Based on Toby's 2026-08-21 lore, **4:00:37 PM**, same thread, fifty-four minutes after EATS FOREVER. A working Roblox script for **"Flower Consumes Part 2, Flower VS All Sprunkis"**, whose hint lines are *"Mr. Black: Us Sprunkis?"* · *"Mr. Black: We are inside Flower."* · *"Gaster/Flower: Nom Nom"* · *"Vicinus/Flower/Gaster: Gulp."* · *"Vicinus/Flower/Gaster: Delishious Sprunkis..."* · *"Flower: Here are the LOVE PELLETS, almost ate them."* Plus his own summary: *"Flower/Gaster can consume anything basically. Flower actually consumes the Sprunkis and makes them into different colored energies, Flower becomes stronger."* Everything from *"Got it — Flower Consumes Part 2..."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The first rule ever written about a Sprunki gets undone.** Email 62, **April 4, 2026** — the fourth day of this whole archive — says *"Sprunkis are not just sound-makers, they actually have real powers."* One hundred and thirty-nine days later he eats them and hands back **colour and sound**, which is exactly the thing Toby said they were more than.
+
+**And "colored energy" has zero hits in four months of this file.** Everything Vicinus consumed before became a **Cicinus** or a **LOVE PELLET**. This is a brand new output, and the wiki has never used the phrase.
+
+**And the rescue from three days ago is the ingredient.** Mr. Black was ranked **#2 on the whole power chart** on July 7 (Emails 669–670), above Gray.EXE and Simon.EXE. On **August 18** the inked Mr. Black was the Abination that **saved** Luigi Green, the box characters and the player. Today he is inside Flower.
+
+**And he finds out by asking.** His only line in the whole scene is a question: *"Us Sprunkis?"* — and then *"We are inside Flower."*
+
+**And somebody could always do this.** Simon *"can wipe out all Sprunkis at once but chooses not to"* — the genie who saves his own wish. This one does not choose otherwise.
+
+**And "Delishious" is a catchphrase now,** seventy minutes after *"Delishious Verity..."* at 2:50 PM.
+
+**Built as game beat 407, `COLORED ENERGIES`.** Additive; nothing earlier was changed.
+
+- **The stack — MR. BLACK, THE LAST HUNDRED AND FORTY DAYS:** *Jul 7* — **RANKED #2 ON THE WHOLE POWER CHART** → *Aug 9* — tempted with an apple, corrupted → *Aug 18* — **INKED, AND HE BECOMES THE CURE** → *Aug 21* — **"US SPRUNKIS?" — HE IS INSIDE FLOWER**. Closes on **THE RESCUE FROM THREE DAYS AGO IS THE MEAL, AND HE FINDS OUT BY ASKING.**
+- **The column — WHAT A SPRUNKI WAS SUPPOSED TO BE:** *Apr 4, Email 62* — **"NOT JUST SOUND-MAKERS — THEY HAVE REAL POWERS"** (*the fourth day of this file*) against *today* — **"COLORED ENERGIES"** (*a colour and a sound, and nothing else*), closing on **HE EATS THEM AND HANDS BACK EXACTLY WHAT THEY STARTED AS.**
+- **The box — SOMEBODY COULD ALWAYS DO THIS. HE IS THE FIRST TO DO IT:** Simon **"WIPE OUT ALL SPRUNKIS"** (*but chooses not to*) against **"FLOWER VS ALL SPRUNKIS"** (*and does not choose otherwise*), closing on **THE GENIE SAVED THE WISH. THIS ONE SPENDS IT.**
+- **The box — AND THE WORD HAS NEVER BEEN USED HERE:** four months of **zero uses of "colored energy"** against **A BRAND NEW OUTPUT**, over **AND A COLOUR AND A SOUND IS WHAT A SPRUNKI ALREADY IS.**
+- **Band — CONSUMED · INSIDE FLOWER · COLOURED ENERGY · AND THE FLOWER GETS STRONGER**, closing on **NOTHING IS DESTROYED HERE. IT IS ALL CONVERTED, AND HE KEEPS THE PROCEEDS.**
+- **Band inset — AND "DELISHIOUS" IS NOW A CATCHPHRASE:** 2:50 PM *"Delishious Verity…"* and 4:00 PM *"Delishious Sprunkis…"*, seventy minutes apart.
+- **Strip:** "COLORED ENERGIES" · A WORD WITH NO HISTORY HERE / MR. BLACK · #2 ON THE CHART, NOW A FLAVOUR / APRIL 4, UNDONE · "MORE THAN SOUND" LASTED 139 DAYS.
+- **Footers:** *THE CHARACTER WHO WAS THE RESCUE THREE DAYS AGO IS NOW THE INGREDIENT.* and **★ COLORED ENERGIES ★**.
+- **Screenshot helper:** new `coloredEnergies` scene.
+
+![BEAT 407 — COLORED ENERGIES](screenshots/469-colored-energies.png)
+
 ## 2026-08-21 — EATS FOREVER · THE FUEL GAUGE LASTED EIGHT MINUTES (BEAT 406)
 
 Based on Toby's 2026-08-21 lore, **3:06:01 PM**, same thread, two minutes and fourteen seconds after /MERGE_CODE. His own typing, in full: *"Since Flower is Vicinus, Vicinus also has the power. Vicinus no longer gets full and can eat forever. Flower loves that. Pero is happy about Flower/Gaster."* Everything from *"Exactly — since Flower is Vicinus, the new Luigi Green merge power also transfers into Vicinus."* onward is a pasted ChatGPT reply and is treated as commentary.
