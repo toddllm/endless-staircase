@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — IT IS UNKNOWN · THE DELETED PLAYERS TURN OUT NOT TO BE DELETED, GASTER IS STORING THEM, AND NOBODY IN THE STORY WILL SAY WHERE (BEAT 390)
+
+Based on Toby's 2026-08-21 lore, **8:00:07 AM**, same thread, thirty-one minutes and twenty-four seconds after GASTER LOOKS INNOSENT. His own typing, in full: *"Pero LAI's dark form is actually a fellen angel thing. Both Light and Dark forms aren't a man with wings, but an actual angel. Pero LAI's normal form is a normal man. More and more Classics players are missing in the game, Pero and Gaster just chill, Luigi Green tries to find more. It is unknown where Gaster puts the deleted players, Gaster is the one who stores the accounts and players, there is a myth called 'Entity 303 & Deletedverse'."* The "that makes the new canon a lot clearer and darker" opener, the "Canon update I'm taking from this", "What is happening in Classics now", "What this implies", "Strong clean lore wording" and "Why this is important" headings and the bullet lists pasted under them are ChatGPT commentary.
+
+**The deletion turns out to be a collection.** Thirty-one minutes ago the players' accounts, usernames and passwords vanished. This morning they have not gone anywhere: *"Gaster is the one who stores the accounts and players."* Four months of this archive have erased realms, boxes, Omniplatforms, characters and the game itself, and **nothing in it has ever been described as kept**. Missing is not the same word as gone.
+
+**And "it is unknown" is a new kind of sentence.** Last night he wrote *"I don't know"* about the secret, and eleven hours later he knew. This time the not-knowing is written into the world instead of into the author: *it is unknown where* Gaster puts them. It is not a gap in what he has decided yet. It is a gap the story has on purpose.
+
+**And Luigi Green's job changes from deleting to finding.** At 7:28 AM he was deleting the files. At 8:00 AM *"Luigi Green tries to find more."* The one who only appears when you look at him is now out looking for people.
+
+**And both of Pero's extreme forms are actual angels.** Yesterday's three lights get corrected this morning: *"Both Light and Dark forms aren't a man with wings, but an actual angel"*, and the dark one is *"a fellen angel thing"*. The normal man is the only human thing left about him, and it is the exception rather than the base.
+
+**And a myth appears inside his own story.** *"There is a myth called 'Entity 303 & Deletedverse'."* Everything in this file for four months has been stated as fact, including the impossible parts. This is the first thing in it that is only a story somebody tells, and what it is about is where the missing people went.
+
+**Built as game beat 390, `IT IS UNKNOWN`.** Additive; nothing earlier was changed. Because the content of the email is a route with a named beginning and an unnamed end, this beat is **a drawn pipeline that runs off the edge of what anybody knows** instead of the same-room-twice of BEAT 389.
+
+- **The pipeline — WHERE A CLASSICS PLAYER GOES:** four cells with arrows between them. *A PLAYER ENTERS* (a plain figure) → *LUIGI GREEN FINDS* (the red-eyed figure) → *THE ACCOUNT GOES* (the same figure faded almost out) → *GASTER STORES IT* (the flower). Under it: *FOUR STEPS. ALL FOUR HAVE NAMES.*
+- **The fifth step — AND THE PLACE HE PUTS THEM:** a dashed box with a large **?** and, beside it, **IT IS UNKNOWN.** in full size, with stored accounts drifting inside it as small pale squares. Under that: *NOT "I DON'T KNOW." LAST NIGHT THAT WAS THE ONE WRITING IT, AND BY BREAKFAST HE KNEW. THIS TIME THE GAP IS IN THE STORY.*
+- **The column — PERO LAI, CORRECTED:** three rows. **NORMAL FORM** · *a normal man*, drawn as the stick figure. **LIGHT FORM** · *an actual angel*, drawn as six rising feathered arcs around a column of light with a ring above it and no face. **DARK FORM** · *a fallen angel*, the same being with the arcs falling instead of rising. The two angel rows are both captioned *NOT A MAN WITH WINGS*, and under all three: *THE MAN IS THE EXCEPTION, NOT THE RULE.*
+- **The box — THERE IS A MYTH CALLED:** **"ENTITY 303 & DELETEDVERSE"** in a dashed frame, closing on *FOUR MONTHS OF THIS FILE HAVE BEEN WRITTEN AS FACT* and *THIS IS THE FIRST THING IN IT THAT IS ONLY A STORY.*
+- **The ledger — ERASED, VERSUS KEPT:** THE REALMS · GONE / THE BOXES · GONE / THE OMNIPLATFORMS · GONE / THE GAME ITSELF · GONE, against **THE PLAYERS · STORED** lit at the bottom, closing on *NOTHING IN FOUR MONTHS HAS BEEN KEPT BEFORE.*
+- **Caption:** *THEY ARE NOT DELETED. THEY ARE SOMEWHERE, AND NOBODY WILL SAY WHERE.* across the top, and Toby's own sentence across the bottom.
+- **Band — THIRTY-FOUR MINUTES OF ONE MORNING, AND A RULE BECOMES A WAREHOUSE:** 7:26 AM · the rule (*he only shows up when you look*) / 7:28 AM · the deletion (*the accounts vanish*) / 8:00 AM · the storage (*they were never gone*) / SAME LINE · the myth (*and nobody knows where*), closing on *THREE MESSAGES BEFORE EIGHT IN THE MORNING, AND EACH ONE MADE THE LAST ONE WORSE.*
+- **Band inset — LUIGI GREEN'S JOB, THIRTY-ONE MINUTES APART:** *7:28 AM · DELETING* against *8:00 AM · FINDING*, with Toby's line under it and *THE ONE WHO ONLY APPEARS WHEN YOU LOOK AT HIM IS OUT LOOKING FOR YOU.*
+- **Strip:** GASTER · NOT THE DELETER. THE KEEPER / THE PLAYERS · MISSING, WHICH IS NOT THE SAME AS GONE / THE MYTH · THE FIRST UNCERTAIN THING IN THE FILE.
+- **Footers:** *EVERYTHING ERASED IN FOUR MONTHS STAYED ERASED, AND THIS MORNING SOMEBODY STARTS KEEPING THINGS* and **★ IT IS UNKNOWN ★**.
+- **Screenshot helper:** new `itIsUnknown` scene, with the same after-the-ticks clearing as BEAT 388 and BEAT 389.
+
+![BEAT 390 — IT IS UNKNOWN](screenshots/452-it-is-unknown.png)
+
 ## 2026-08-21 — GASTER LOOKS INNOSENT · THE PLAYERS WATCH THE STRONGEST BEING IN THE FILE STAND STILL AND LOOK HARMLESS WHILE THE ONE AT THE BOTTOM OF EVERY LIST DELETES THEIR ACCOUNTS (BEAT 389)
 
 Based on Toby's 2026-08-21 lore, **7:28:43 AM**, same thread, two minutes and twenty seconds after WHAT HE WAS HIDING. His own typing, in full: *"People play Classics, Gaster appears, and their Classics accounts and Classics usernames and passwords vanish, but Luigi Green is the one who is deleting the files, and Gaster looks innosent in front of the players. Pero LAI chills and relaxes and finds when players will come before they even come."* The "false-innocent / hidden-deleter duo" opener, the "New Classics player rule", "Pero's role" and "How the trick works in lore" headings, the arrow diagram and the "Clean canon update" paragraph pasted under them are ChatGPT commentary.
