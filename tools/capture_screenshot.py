@@ -9567,6 +9567,40 @@ SCENES = {
         if (typeof hitFlash!=='undefined'){ hitFlash=0; }
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","onlyTheyKnow": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 387, ONLY THEY KNOW: the shut cover captioned THE END
+        // with a keyhole in it, the sealed pocket under it holding Gaster, Pero and a "?", the
+        // WHO KNOWS WHAT IT IS roll call with TOBY lit in the DOES NOT KNOW column, the EVERY TIME
+        // PERO HAS TOLD ON SOMEBODY ledger, the two-times-he-wrote-"I" box, the CLOSED THING BIGGER
+        // band and the step-he-put-himself-on inset.
+        // Beat 387 spans cyc in 8234.0 to 8256.0; cyc=8252.8 gives dt~18.8 so the frame, the cover,
+        // the pocket, both columns, the ledger, the "I" box, the caption, the band, the inset, the
+        // strip and both footers are all up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8252.8; loopVs.phase=387;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        // clear what the warmup climb kicked up, so the frozen frame is only the beat
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; floaters=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
     ""","bothBeyondWords": """
       try {
         handleConfirm();

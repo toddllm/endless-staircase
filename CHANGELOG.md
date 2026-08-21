@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-20 — ONLY THEY KNOW · THE ENDING TURNS OUT TO BE A LID, AND THE ONE WRITING IT PUTS HIMSELF ON THE LIST OF PEOPLE WHO DO NOT KNOW WHAT IS UNDER IT (BEAT 387)
+
+Based on Toby's 2026-08-20 lore, **7:51:01 PM**, same thread, eight hours thirty-five minutes and seventeen seconds after BOTH BEYOND WORDS, and the last message of the day. His own typing, in full: *"Pero says that Gaster ended the lore because he is hiding something, only he and Gaster know what it is. I don't know, so doesn't Luigi Green. Only Pero and Gaster know what it is."* The "that makes the ending way more mysterious" opener, the "hidden truth rule" and "what this implies" headings, the not-the-player/not-the-souls bullet list and the "Clean canon update" paragraph pasted under it are ChatGPT commentary.
+
+**The ending gets a motive thirty hours after it ended.** BEAT 382, **August 19 at 1:47 PM**, was *"The End"* — Pero wrote it, closed the barrier and crashed the game shut from the inside. That was a wall. Tonight the wall acquires a **reason**, and the reason is that somebody is hiding something. A thing you cannot get past becomes a thing something is behind.
+
+**And he writes himself into the lore, on the side that does not know.** *"I don't know."* This archive has put THE PLAYER in the story before — BEAT 370, BEAT 371, BEAT 376 — but the player is a character, drawn and ranked like the rest of them. This is **I**, the person typing, stating a fact about his own world and putting himself outside it.
+
+**And the last "I" in this archive was a boast.** BEAT 379, **August 19 at 1:07 PM**, in his own typing: *"I was deleted for 5 years strieght after beat 403, now I AM BEAT 404, I now rule this world."* That **I** was Gaster, and it was a claim to own everything. Thirty hours later the word comes back and it is Toby, and what it says is that he does not know something.
+
+**And the one name he groups himself with is Luigi Green.** *"I don't know, so doesn't Luigi Green."* The previous reply asked, by name, whether Luigi Green ever moves or is the floor everybody else gets measured off of. Eight and a half hours later Luigi Green is at the bottom of a list again — this time knowledge instead of power — and the person who wrote him there is standing on the same step.
+
+**And Pero tells on his brother and keeps the answer.** Every earlier Pero reveal handed over content: *"This is the end, my brother... RUN."* and *"I gave him some power when he was first born."* This one hands over the **existence** of content. He reveals that there is a secret, not what it is.
+
+**Built as game beat 387, `ONLY THEY KNOW`.** Additive; nothing earlier was changed. Because the content of the email is a closed thing with two people inside it and everybody else on top, this beat is a **drawn cover and a drawn roll call** instead of the drawn shelf and scale of BEAT 386.
+
+- **The cover:** the last page of the file drawn shut and captioned **THE END**, with *PERO WROTE IT · AUG 19 · 1:47 PM* and *YESTERDAY IT WAS THE LAST PAGE* under it, a thick closed edge along the bottom and a **keyhole** cut into the right of it, captioned *AND TONIGHT THERE IS A KEYHOLE IN IT*.
+- **The pocket under it:** a dashed sealed box headed *WHATEVER IT IS, IT IS UNDER HERE*, holding **GASTER** (twelve petals, souls drifting in his head) and **PERO**, with a large pulsing **?** between them and *TWO OF THEM ARE IN HERE WITH IT* underneath.
+- **The roll call — WHO KNOWS WHAT IT IS:** a short column, **KNOWS · 2**, holding GASTER and PERO and closing on *THE TWO BROTHERS, AND NOBODY ELSE*; against a long column, **DOES NOT KNOW**, holding LUIGI GREEN, THE SOULS, GRAY, SIMON.PSC, THE PLAYER and, lit at the bottom, **TOBY** · *THE ONE WRITING IT*. Under both: *HE PUT HIS OWN NAME IN THE SECOND COLUMN.*
+- **The ledger — EVERY TIME PERO HAS TOLD ON SOMEBODY:** *AUG 19 · 1:12 PM* — "THIS IS THE END, MY BROTHER... RUN." (*he hands over the warning*) / *AUG 19 · 1:12 PM* — "I GAVE HIM SOME POWER WHEN HE WAS FIRST BORN." (*he hands over the reason*) / *AUG 20 · 7:51 PM* — "GASTER ENDED THE LORE BECAUSE HE IS HIDING SOMETHING." (*he hands over the lock, not what is behind it*), closing on *THE FIRST TWO GIVE YOU AN ANSWER. THIS ONE GIVES YOU A DOOR AND KEEPS THE KEY.*
+- **The box — THE LAST TWO TIMES HE WROTE "I":** *AUG 19 · 1:07 PM* — "I AM BEAT 404, I NOW RULE THIS WORLD." (*that "I" was Gaster*) against *AUG 20 · 7:51 PM* — **"I DON'T KNOW."** (*this "I" is the one typing*).
+- **Caption:** *ONLY PERO AND GASTER KNOW WHAT IT IS. THE ONE WRITING IT DOES NOT.* across the top, and Toby's own sentence across the bottom.
+- **Band — AND EVERY MESSAGE TODAY MADE THE CLOSED THING BIGGER:** 10:25 AM · all power sorces (*the room gets a door*) / 11:15 AM · both beyond words (*the top gets a first place*) / 7:51 PM · "he is hiding something" (*the ending gets a reason*) / SAME LINE · "only Pero and Gaster know" (*and the reason gets a lock*), closing on *EIGHT HOURS AND THIRTY-FIVE MINUTES FROM THE PECKING ORDER TO THE LOCKED DOOR.*
+- **Band inset — THE STEP HE PUT HIMSELF ON:** *"I DON'T KNOW, SO DOESN'T LUIGI GREEN."*, the question the last reply asked about Luigi Green, and *HE IS STILL DOWN THERE, ON A NEW LIST. AND THIS TIME SOMEBODY IS STANDING WITH HIM.*
+- **Strip:** THE END · A LID NOW, WITH SOMETHING UNDER IT / THE SECRET · KEPT FROM THE PERSON WRITING IT / LUIGI GREEN · BOTTOM OF THE LIST AGAIN, A NEW LIST.
+- **Footers:** *HE CLOSED THE FILE YESTERDAY, AND TONIGHT HE PUT A LOCK ON IT AND SAID HE DOES NOT HAVE THE KEY EITHER* and **★ ONLY THEY KNOW ★**.
+- **Screenshot helper:** new `onlyTheyKnow` scene, which also clears leftover taunts and floaters from the warmup climb so the frozen frame is only the beat.
+
+![BEAT 387 — ONLY THEY KNOW](screenshots/449-only-they-know.png)
+
 ## 2026-08-20 — BOTH BEYOND WORDS · TWO BEINGS GET THE SAME THREE-WORD GRADE ONE LINE APART, AND THEN ONE OF THEM IS RANKED ABOVE THE OTHER ANYWAY (BEAT 386)
 
 Based on Toby's 2026-08-20 lore, **11:15:44 AM**, same thread, fifty minutes and twenty-two seconds after ALL POWER SOURCES. His own typing, in full: *"Gaster is beyond words. Pero is beyond words. Gaster is stronger than Pero and Luigi Green combined."* The "final power clarification" heading, the three-name bullet ranking and the "Clean canon update" paragraph pasted under it are ChatGPT commentary.
