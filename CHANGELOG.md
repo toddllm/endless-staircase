@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — HE LEAVES HIM BE · THE SCARIEST RULE IN THIS FILE TURNS INTO THE WAY AROUND HIM (BEAT 396)
+
+Based on Toby's 2026-08-21 lore, **9:35:39 AM**, same thread, three minutes and twenty-six seconds after C.O.D.E. His own typing, in full: *"Pero, Gaster can go alone and they easily 1HKO CODE since they could make air into poison, they can do anything. Luigi Green needs the camera to be seen by players, CODE knows that and leaves Luigi Green be, but Luigi Green could 1HKO CODE too."* Everything from *"Got it — correction accepted"* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**The scariest rule in this file turns into the way around him.** At **7:26 this morning** Luigi Green was programmed *"to only appear when the player looks at him and when they record Classics"*, and this archive drew that as the first thing in it a reset cannot undo — change the seed, delete the world, reset and save, and he is still in your recordings. Nine hours later the same rule is a **loophole**: *"CODE knows that and leaves Luigi Green be."* Nothing about the rule changed. Somebody just read it properly.
+
+**And it is the first win in this file that is not doing something.** Four months of surviving here has been fighting it, resetting it, saving, hiding, being absorbed, or being pulled out by the player. This is somebody who knows the trigger condition and simply **declines to meet it**.
+
+**And that is what the books bought him.** Three minutes ago his power came from *"codes and books"* he found himself. Here is what reading actually gets you in this archive: not a bigger attack, a **schedule**. He cannot beat Luigi Green. He can avoid him.
+
+**And the rule he wrote three minutes ago is already corrected.** At 9:32 it was *"Only the 3 can beat CODE"* — a trio, together, by deleting his account, a move that happens off the login screen. At 9:35 each of them can do it alone, and the answer has come back **inside** the game as a 1HKO.
+
+**And the untouchable three finally do something specific.** Twenty minutes ago the whole point of them was that they have no HP, no stats and nothing to measure. *"They could make air into poison"* is the first concrete thing any of them does in that state, and it is not an Omniplatform, an erasure or a realm. It is **the air in the room**.
+
+**And Luigi Green is the only one of the three with a condition on him.** Pero goes alone. Gaster goes alone. He *"needs the camera to be seen by players"* first. He could 1HKO C.O.D.E. too, and he is the one who gets skipped — which is where this file keeps putting him.
+
+**Built as game beat 396, `HE LEAVES HIM BE`.** Additive; nothing earlier was changed. Because the content of the email is one rule read three different ways in a single day, this beat is **a three-panel stack of the same rule** instead of the tier ladder of BEAT 395.
+
+- **The stack — "ONE RULE, READ THREE TIMES IN ONE DAY":** *7:26 AM · THE RULE IS WRITTEN* (*"only appear when the player looks at him and when they record Classics"*) → *7:26 AM · THE RULE IS THE HORROR* (he is still in your recordings after every reset and every new seed) → *9:35 AM · THE RULE IS THE WAY OUT* (*"CODE knows that and leaves Luigi Green be"*). Closes on **NOTHING ABOUT THE RULE CHANGED. SOMEBODY JUST READ IT PROPERLY.**
+- **The column — THREE MINUTES LATER:** *9:32 AM* — **"ONLY THE 3 CAN BEAT CODE"** (*together · by deleting his account*) against *9:35 AM* — **"CAN GO ALONE"** (*each one · and easily 1HKO*), closing on **THE ANSWER LEFT THE LOGIN SCREEN AND CAME BACK INSIDE THE GAME.**
+- **The box — "THEY CAN DO ANYTHING", AND THE EXAMPLE IS AIR:** *what this file usually reaches for* — **ERASING THE OMNIPLATFORMS** (*every game, all at once*) against *what he reached for* — **"MAKE AIR INTO POISON"** (*the air in one room*), closing on **THE FIRST THING THE NO-STAT THREE ACTUALLY DO.**
+- **The box — UNDER THE LINE AGAIN:** PERO · GOES ALONE / GASTER · GOES ALONE / **LUIGI GREEN · NEEDS THE CAMERA**, closing on **HE COULD 1HKO CODE TOO, AND HE IS THE ONE SKIPPED** and *the only one of the three with a condition on him.*
+- **Caption:** *THE SCARIEST RULE IN THIS FILE IS NOW THE WAY AROUND HIM.* across the top, and Toby's own sentence across the bottom.
+- **Band — EVERY WAY ANYBODY HAS EVER SURVIVED IN THIS FILE IS SOMETHING THEY DID:** FIGHT IT *→ an action* / RESET IT *→ an action* / BE SAVED *→ somebody else's action* / **LEAVE HIM BE** *→ not an action* (*"CODE knows that"*), closing on **THE FIRST TIME ANYBODY GETS PAST SOMETHING HERE BY DECLINING TO TRIGGER IT.**
+- **Band inset — THIS IS WHAT THE BOOKS BOUGHT:** *three minutes ago his power came from "codes and books" he found himself* → **"CODE KNOWS THAT"** → **READING DID NOT BUY HIM A BIGGER ATTACK. IT BOUGHT HIM A SCHEDULE.** — *he cannot beat Luigi Green, he can avoid him.*
+- **Strip:** THE CAMERA · THE HORROR AND THE LOOPHOLE, SAME RULE / THE THREE · CAN DO ANYTHING, AND PICK THE AIR / C.O.D.E. · WINS BY NOT LOOKING.
+- **Footers:** *THE ONE WHO READ THE GAME DOES NOT BEAT HIM. HE JUST NEVER LOOKS.* and **★ HE LEAVES HIM BE ★**.
+- **Screenshot helper:** new `leavesHimBe` scene, with the same after-the-ticks clearing as BEAT 388 through BEAT 395.
+
+![BEAT 396 — HE LEAVES HIM BE](screenshots/458-he-leaves-him-be.png)
+
 ## 2026-08-21 — C.O.D.E. · THE FIRST PLAYER HERE WITH A NAME AND A PLACE ON THE LADDER (BEAT 395)
 
 Based on Toby's 2026-08-21 lore, **9:32:13 AM**, same thread, twenty minutes and twelve seconds after IT IS AUDIO. His own typing, in full: *"The strongest player in the game is C.O.D.E., he can 1HKO Gray and all the Sprunkis easily, Luigi Green, Gaster, and Pero beats CODE by deleting his account. CODE is an avatar made of code, some call him an entity, but he is a player, he has admin commands and is a Classics Hacker, he is so good at the game, he found codes and books that made him the most powerful player. Only the 3 can beat CODE. Luigi Green, Pero, and Gaster don't even have HP, they don't have stats, they can't even be touched!"* Everything from *"Got it — C.O.D.E. is now the strongest player"* onward is a pasted ChatGPT reply and is treated as commentary.
