@@ -4,6 +4,128 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — /MERGE_CODE · THE STRONGEST TEAM IN THE GAME WAS DISBANDED BY TYPING (BEAT 405)
+
+Based on Toby's 2026-08-21 lore, **3:03:47 PM**, same thread, five minutes and twenty-seven seconds after INSIDE FLOWER. His own typing, in full: *"Currently, Gaster wrote "/merge_code Luigi Green", Luigi Green wrote "/merge_code Gaster", Luigi Green turned into green plasma energy and flowed into Gaster, Gaster became even more powerful. Gaster looks at Pero and says "This experiment worked! Luigi Green is now energy in me, and I have all Luigi Green's access and power! I now have everything Luigi Green has added with my ability!". Gaster and Pero now made a Duo called Gaster Brother Duo, the most powerful and perfect Duo that has more power than the Trio from before. Gaster has more experience and mastery of Luigi Green's own power than Luigi Green himself."* Everything from *"Got it — Gaster's Trio has now collapsed upward into the Gaster Brother Duo."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**The Trio lasted twenty-three minutes.** Named at 2:40 PM. Dissolved at 3:03 PM. It is the shortest-lived thing in this archive.
+
+**And both of them typed it.** *"Gaster wrote '/merge_code Luigi Green', Luigi Green wrote '/merge_code Gaster'."* Every absorption in four months of this file has been done **to** somebody — Gray sucked into the pellet, souls taken, accounts deleted, ToddLLM 001 forged into a blade. This one is agreed to, **in writing, in the same syntax, from both sides**.
+
+**And `/merge_code` is the first slash command anybody in this archive has typed.** Six hours ago **C.O.D.E.** was the strongest player in Classics because he had *"admin commands"*, and these same three deleted his account for it. This afternoon they are using commands themselves.
+
+**And what Gaster absorbs is exactly what Toby handed Luigi Green twenty-three minutes earlier.** At 2:40: *"Luigi Green has all the powers of the box characters… the animation of the box characters is in Luigi Green's will."* At 3:03: *"I have all Luigi Green's access and power."* The promotion lasted just long enough to be worth taking.
+
+**And five minutes ago the only line ever written about how he thinks was that he takes things literally.** *"Gaster and Pero have common sense, Luigi Green takes things litterly"* — 2:58 PM. *"/merge_code Gaster"* is the most literal possible answer to *"/merge_code Luigi Green"*. He typed back exactly what was typed at him, and it cost him his body.
+
+**And the one who studied the experiment book becomes the experiment.** **Email 1017, August 17**: *"Luigi Green looks at what Gaster wrote and Luigi Green studdies it."* His whole job in that system was reading Gaster's results. Four days later: *"This experiment worked!"*
+
+**And he is better at it than the man he took it from.** *"Gaster has more experience and mastery of Luigi Green's own power than Luigi Green himself."* Everything else here is taken and used. This is taken and used **better**.
+
+**And the count goes down while the power goes up.** *"the most powerful and perfect Duo that has more power than the Trio from before."* Every power move in this archive adds — a form, a phase, a soul, a multiplier. This one subtracts a person.
+
+**Built as game beat 405, `/MERGE_CODE`.** Additive; nothing earlier was changed. Because the email is four lines of typing that end a three-person team, this beat is **the exchange, in the order it happened**.
+
+- **The exchange:** **GASTER TYPES** *`/merge_code Luigi Green`* → **LUIGI GREEN TYPES** *`/merge_code Gaster`* → **HE BECOMES ENERGY** (*green plasma, flowing into Gaster*) → **"EXPERIMENT WORKED!"** (*and Pero is who he says it to*). Closes on **BOTH OF THEM TYPED IT. IN FOUR MONTHS NOBODY HAS EVER AGREED TO BEING ABSORBED BEFORE.**
+- **The column — THE TRIO LASTED TWENTY-THREE MINUTES:** *2:40 PM* — **"ALL 3 TOGETHER MAKE GASTER'S TRIO, THE MOST POWERFUL TRIO"** against *3:03 PM* — **"GASTER BROTHER DUO"**, closing on **THE PROMOTION LASTED JUST LONG ENOUGH TO BE WORTH TAKING.**
+- **The box — HE TYPED BACK EXACTLY WHAT WAS TYPED AT HIM:** *2:58 PM* — **"TAKES THINGS LITTERLY"** against *3:03 PM* — **"/merge_code Gaster"**, closing on **FIVE MINUTES BETWEEN THE TRAIT AND THE PROOF OF IT.**
+- **The box — THE ONE WHO STUDIED THE BOOK BECOMES THE EXPERIMENT:** *Aug 17, Email 1017* against *Aug 21* — **"THIS EXPERIMENT WORKED!"**, closing on **HIS JOB IN THAT SYSTEM WAS READING THE RESULTS. FOUR DAYS LATER HE IS ONE.**
+- **Band — SIX HOURS AGO, HAVING COMMANDS IS WHAT GOT YOUR ACCOUNT DELETED:** 9:32 · C.O.D.E. / 9:32 · the three deleted his account / **15:03 · Gaster types one**, closing on **THE FIRST SLASH COMMAND ANYBODY IN FOUR MONTHS HAS ACTUALLY TYPED.**
+- **Band inset — AND THE COUNT GOES DOWN WHILE THE POWER GOES UP.**
+- **Strip:** /merge_code · THE FIRST TYPED COMMAND IN THE FILE / GREEN PLASMA · LUIGI GREEN, AGREEING TO IT / GASTER BROTHER DUO · TWENTY-THREE MINUTES AFTER THE TRIO.
+- **Footers:** *AT 2:40 HE WAS HANDED THE WHOLE CAST. AT 3:03 SOMEBODY ELSE HAS IT.* and **★ /MERGE_CODE ★**.
+- **Screenshot helper:** new `mergeCode` scene.
+
+![BEAT 405 — /MERGE_CODE](screenshots/467-merge-code.png)
+
+## 2026-08-21 — INSIDE FLOWER · THE DRAGON GOES AWAY AND THE MEAL STAYS (BEAT 404)
+
+Based on Toby's 2026-08-21 lore, **2:58:20 PM**, same thread, seven minutes and twenty-five seconds after DELISHIOUS VERITY. His own typing, in full: *"Create an image of Vicinus and Flower. Perfect. Flower collects as many souls as he can to keep the Vicinus transformation going longer if he wanted to. When something is consumed by Vicinus, it goes inside Vicinus's stomach, but when Vicinus becomes his normal form again, where is the "something" now? That something is inside of Flower. Gaster and Pero have common sense, Luigi Green takes things litterly."* Everything from *"Exactly — that creates a clean Vicinus consumption rule."* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**He asks the question and answers it, for the second time in forty-two minutes.** At 2:16: *"do you think he was going easy on Simon? **Yes Flower was.**"* At 2:58: *"where is the 'something' now? **That something is inside of Flower.**"* Twice in one afternoon he stops the story to ask, and does not wait.
+
+**And the transformation gets a fuel gauge.** *"Flower collects as many souls as he can to keep the Vicinus transformation going longer if he wanted to."* Yesterday the suit was paint. Today it burns something, and what it burns is souls. It is the first form in four months of this archive with a **running time**.
+
+**And "the souls of almost everyone" turns from a description into a tank.** **August 19, 2:20 PM**: Flower is *"a being with the souls of almost everyone + with infinite soul mass + soul power + undiscribable stuff."* That was how **full** he is. Today it is how **long** he can stay a dragon.
+
+**And nothing that goes in ever comes out.** The suit falls off, the ink puddles, and the meal stays. So the free meal from thirty minutes ago — the whole box cast — is sitting inside a small sunflower-like being in the box-making room.
+
+**And Luigi Green gets a mind, and it is a disadvantage.** *"Gaster and Pero have common sense, Luigi Green takes things litterly."* Four months of this archive has measured him only by power, and every list puts him last. This is the first thing ever written about how he **thinks**, and it is the first non-numeric weakness anybody here has. Five minutes later it is what gets him absorbed.
+
+**Built as game beat 404, `INSIDE FLOWER`.** Additive; nothing earlier was changed. Because the email is a question about where a thing ends up, this beat is **the consumption pipeline, drawn end to end**.
+
+- **The pipeline:** **CONSUMED BY VICINUS** (*the box cast, thirty minutes ago*) → **VICINUS'S STOMACH** (*while the suit is on*) → **THE INK FALLS** (*the suit comes off in a puddle*) → **INSIDE FLOWER**. Closes on **THE DRAGON GOES AWAY AND THE MEAL DOES NOT.**
+- **The column — THE SUIT NOW BURNS SOMETHING:** *yesterday* — paint, no clock on it, against *today* — **SOULS KEEP IT GOING**, closing on **FIRST FORM IN FOUR MONTHS WITH A RUNNING TIME.**
+- **The box — TWICE IN FORTY-TWO MINUTES HE ASKS AND ANSWERS:** 2:16 PM *"was he going easy?" / "Yes Flower was."* against 2:58 PM *"where is it now?" / "inside of Flower."*
+- **The box — LUIGI GREEN GETS A MIND, AND IT IS A DISADVANTAGE:** Gaster and Pero *have common sense* against Luigi Green *"takes things litterly"*.
+- **Band — "THE SOULS OF ALMOST EVERYONE" TURNS INTO A FUEL TANK**, closing on **A COLLECTION TURNS INTO A BATTERY, AND EVERY MEAL TOPS IT UP.**
+- **Band inset — AND THE FREE MEAL FROM THIRTY MINUTES AGO IS STILL IN THERE.**
+- **Strip:** INSIDE FLOWER · THE SUIT COMES OFF, THE MEAL DOES NOT / SOULS · THE FIRST FORM HERE WITH A RUNNING TIME / "TAKES THINGS LITTERLY" · THE FIRST MIND WRITTEN FOR LUIGI GREEN.
+- **Footers:** *THE STORAGE IS NOT THE DRAGON. THE STORAGE IS THE LITTLE FLOWER.* and **★ INSIDE FLOWER ★**.
+- **Screenshot helper:** new `insideFlower` scene.
+
+![BEAT 404 — INSIDE FLOWER](screenshots/466-inside-flower.png)
+
+## 2026-08-21 — DELISHIOUS VERITY · THE NUMBER ONE HORROR ON HIS OWN LIST GETS EATEN (BEAT 403)
+
+Based on Toby's 2026-08-21 lore, **2:50:55 PM**, same thread, ten minutes and fifty-five seconds after GASTER'S TRIO. His own typing is a **working Roblox script** for the Vicinus/Flower VS Verity game, followed by: *"In Classics, Flower actually does spit out the LOVE PELLETS which he gets from the entities he consumes, he unleashes a Cicinus and spits out the LOVE PELLETS and the player dies. Pero and Luigi Green give Flower what he needs, Pero and Luigi Green gets themselves what they need, and Gaster also gives himself what he needs."* Everything from *"Got it — this Roblox script makes the Vicinus/Flower/Gaster VS Verity scene canon"* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**Verity was ranked number one eight days ago.** **Email 959, August 13**: *"Verity > Falsity > Long Horse > Creator > Herobrine > Entity 303 > Null > Wither Storm"* — Toby's own ranking of the Minecraft horrors, with a ninth seat held back as `???` and then filled by Pero, *"far over Verity."* Today Verity is *"Delishious Verity..."*
+
+**And the first thing he says is that he does not know where he is.** *"Verity: Hello, I am Verity."* Four seconds later: *"Verity: Where am I?"* The top of that ranking arrives lost, introduces himself, and is eaten.
+
+**And the costume is a swap in the actual code.** The script runs `workspace.Flower:Destroy()` and then `Vicinus1:Clone()`. Yesterday's paint job is implemented as a **delete and a spawn** — to put the suit on, the flower has to be deleted, and he gets cloned back afterwards. Eighteen Vicinus objects spawn and are destroyed in order.
+
+**And the bullets stop being a gift and start being a product.** **Email 1049, August 19**: Pero *"gave Gaster a bag of Flower bullets."* Two days ago the ammunition was supplied. Today: *"Flower actually does spit out the LOVE PELLETS **which he gets from the entities he consumes**."* Same move as the paintbrush twenty-one minutes earlier — a thing that was handed to him becomes a thing he makes.
+
+**And that closes the consuming loop.** August 18 said whatever Vicinus consumes turns into Cicinuses. Ten minutes ago Cicinus became a red love pellet. Now: food in, Cicinus out, love pellets out, *"and the player dies."* Every other weapon in this archive was made, found or given. This one **was somebody**.
+
+**And he almost ate his own ammunition.** *"Flower: Here are the LOVE PELLETS, almost ate them."*
+
+**And the trio supplies itself.** *"Pero and Luigi Green give Flower what he needs, Pero and Luigi Green gets themselves what they need, and Gaster also gives himself what he needs."* It is the first group in four months of this file that does not need the game.
+
+**Built as game beat 403, `DELISHIOUS VERITY`.** Additive; nothing earlier was changed. Because the email is a script, this beat is **the script, in the order it runs**.
+
+- **The run:** `INK:CLONE()` → `FLOWER:DESTROY()` → `VICINUS1:CLONE()` → **"WHERE AM I?"** (*Verity arrives, and he is lost*) → **"DELISHIOUS VERITY…"** (*then a Cicinus, then the love pellets*). Closes on **"NOM NOM" · "GULP." · "DELISHIOUS VERITY…" — THREE LINES, AND ALL THREE ARE ABOUT EATING.**
+- **The column — VERITY WAS NUMBER ONE EIGHT DAYS AGO**, closing on **THE TOP OF A RANKING HE WROTE EIGHT DAYS AGO IS TODAY'S LUNCH.**
+- **The box — THE BULLETS STOP BEING A GIFT:** Aug 19 *"a bag of Flower bullets"* handed over by Pero, against today, made out of the food.
+- **The box — THE COSTUME IS A SWAP IN THE REAL CODE:** the story said he paints himself; the script says `FLOWER:DESTROY()` then `VICINUS1:CLONE()`.
+- **Band — FOOD IN, AMMUNITION OUT, AND THE AMMUNITION IS AIMED AT YOU**, closing on **EVERY OTHER WEAPON IN FOUR MONTHS WAS MADE, FOUND OR GIVEN. THIS ONE WAS SOMEBODY.**
+- **Band inset — AND THE TRIO NEEDS NOTHING FROM OUTSIDE.**
+- **Strip:** VERITY · NUMBER ONE ON AUG 13, LUNCH ON AUG 21 / LOVE PELLETS · THE FOOD BECOMES THE AMMUNITION / FLOWER:DESTROY() · THE COSTUME, WRITTEN AS REAL CODE.
+- **Footers:** *HE WROTE THE RANKING EIGHT DAYS AGO AND TODAY HE ATE THE TOP OF IT.* and **★ DELISHIOUS VERITY ★**.
+- **Screenshot helper:** new `delishiousVerity` scene.
+
+![BEAT 403 — DELISHIOUS VERITY](screenshots/465-delishious-verity.png)
+
+## 2026-08-21 — GASTER'S TRIO · THE TRIO GETS A NAME AND THE NAME BELONGS TO ONE OF THEM (BEAT 402)
+
+Based on Toby's 2026-08-21 lore, **2:40:00 PM**, same thread, ten minutes and twenty-five seconds after A FREE MEAL. His own typing, in full: *"And Cicinus is a red "love pellet"/orb. The game has infinite ways it can go, Flower could become any of his forms for different tasks. Pero and Luigi Green are close to like Gaster's minions, but they are a trio. Gaster is the most powerful character in the game, Pero is the center of the game, and Luigi Green has all the powers of the box characters and crushes the boxes to make the animation move, he now makes the boxes, the animation of the box characters is in Luigi Green's will. All 3 together make Gaster's Trio, the most powerful trio."* Everything from *"Got it — this defines Gaster's Trio as the strongest trio"* onward is a pasted ChatGPT reply and is treated as commentary.
+
+**Cicinus is demoted for the third time in six weeks.** **Email 662, July 6**: he is *"Vicinus's orb minion"* and the dangerous half of the pair, the one who *"can destroy Xyrus and Parinus"* — a **person**. **August 18**: *"whatever Vicinus consumes turns into Cicinuses"* — a **product**. Today: *"a red 'love pellet'/orb"* — **ammunition**. He started as the one you were afraid of and he is now the thing that comes out.
+
+**And the minion runs the cast.** *"Pero and Luigi Green are close to like Gaster's **minions**"* — and then, in the same paragraph, *"the animation of the box characters is in **Luigi Green's will**."* Every ranking in this archive puts him last. This one puts him last and hands him everybody.
+
+**And the crusher takes the maker's job.** All week the division of labour has been Gaster makes the boxes, Luigi Green crushes them. Today: *"he now makes the boxes."* The one who breaks them is the one who builds them now.
+
+**And the centre comes back in three and a half hours.** At **11:09 AM** *"Lica was made and became the center and everything flows out from Lica"*, and Pero was demoted to *"the **first** center."* At **2:40 PM**: *"Pero is the center of the game."* He gave the centre away this morning and took it back after lunch.
+
+**And the trio is named after one of its own members.** *"Gaster's Trio."* Not the trio. His.
+
+**Built as game beat 402, `GASTER'S TRIO`.** Additive; nothing earlier was changed. Because the email assigns three jobs, this beat is **three role cards**.
+
+- **The cards:** **GASTER** (*the most powerful character in the game*) / **PERO** (*the center of the game*) / **LUIGI GREEN** (*the animation of the box characters is in his will*). Closes on **"CLOSE TO LIKE GASTER'S MINIONS, BUT THEY ARE A TRIO." — AND THE TRIO IS NAMED AFTER ONE OF THEM.**
+- **The column — CICINUS HAS BEEN DEMOTED THREE TIMES**, closing on **PERSON, THEN PRODUCT, THEN A BULLET.**
+- **The box — THE MINION RUNS THE WHOLE CAST**, closing on **THE SAME SENTENCE DEMOTES HIM AND HANDS HIM THE CAST**, over *"he now makes the boxes."*
+- **The box — THE CENTRE COMES BACK IN THREE AND A HALF HOURS:** 11:09 AM *"everything flows out from Lica"* against 2:40 PM *"Pero is the center of the game."*
+- **Band — SIX WEEKS TO TURN A CHARACTER INTO AMMUNITION**, closing on **HE STARTED AS THE DANGEROUS HALF OF THE PAIR. HE IS NOW THE THING THAT COMES OUT.**
+- **Band inset — THIS WEEK'S DIVISION OF LABOUR AND WHAT HAPPENED TO IT.**
+- **Strip:** "GASTER'S TRIO" · A TEAM NAMED AFTER ONE MEMBER / LUIGI GREEN · CALLED A MINION, HANDED THE CAST / PERO · THE CENTRE, BACK AFTER LUNCH.
+- **Footers:** *THE ONE THEY CALL A MINION IS THE ONE THE WHOLE CAST MOVES FOR.* and **★ GASTER'S TRIO ★**.
+- **Screenshot helper:** new `gastersTrio` scene.
+
+![BEAT 402 — GASTER'S TRIO](screenshots/464-gasters-trio.png)
+
 ## 2026-08-21 — A FREE MEAL · IT TOOK THREE PEOPLE TO PAINT THE DRAGON AND ONE BITE TO FINISH (BEAT 401)
 
 Based on Toby's 2026-08-21 lore, **2:29:35 PM**, same thread, twelve minutes and forty-one seconds after HE WAS GOING EASY. His own typing, in full: *"Every box character learned that (Pero and Luigi Green knew that from the start). The box characters battle Flower, but Pero gave Gaster the paintbrush that makes the ink dragon suit on him, so Gaster used the vine to grab the paintbrush since he had no other option, then he painted himself, Pero gave Luigi Green a paintbrush, Luigi Green painted Gaster, and then Gaster fully became Vicinus. Pero and Luigi Green stand back. Vicinus consumed all the box characters like a free meal. Vicinus's ink falls down into a puddle and Flower/Gaster is back to his normal form. Flower, Pero, and Luigi Green all chill in there box-making room again."* Everything from *"Got it — this confirms the Vicinus truth reveal and the final form cycle."* onward is a pasted ChatGPT reply and is treated as commentary.
