@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-21 — THE ROOM AGAIN · THE FIFTH REST IN THREE DAYS, AND THE FIRST WHERE BOTH OF THEM SIT DOWN (BEAT 411)
+
+Based on Toby's 2026-08-21 lore, **5:40:25 PM**, same thread, thirty-nine minutes and eleven seconds after UNTOUCHABLE. His own typing, in full: *"Create an image of Pero and Gaster as the man forms."* and *"C0rr3ct, P3rfEcT. Gaster and Pero chill in the room again."* Everything from *"C0rr3ct — Gaster and Pero are back to chilling in the room."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**"Chill and relax" now stands at five in three days.** Email 1064 (Aug 19, 1:47 PM), Email 1066 (Aug 19, 8:41 PM), Email 1071 (Aug 21, 7:28 AM), Aug 21 4:02 PM, and this one. **Email 1066 was the last line of the whole story** — after Pero wrote *"The End"*, crashed the game, closed the barrier and erased the omniplatforms, the final sentence was *"They are just chilling currently."* The file kept going. He keeps arriving back at the same posture.
+
+**And this is the first one where both of them stop.** At 4:02 PM only Pero chilled, and he was watching Gaster eat everything. Ninety-eight minutes later **the eater has sat down too**.
+
+**And it is the same room, with one fewer person in it.** [Beat 401, 2:29 PM today](#2026-08-21--a-free-meal-beat-401): *"Flower, Pero, and Luigi Green all chill in there box-making room again."* Three. At **3:03 PM** Luigi Green merged into Gaster and became green plasma energy inside him. Two now — and the third is inside one of the two. **Nobody actually left.**
+
+**And for the first time in four months, he asked to see something.** *"Create an image of Pero and Gaster as the man forms."* Over a thousand emails of fights, forms, erasures and endings, all of it only in words. The first picture he has ever asked for is **not Karu, not Vicinus, not Flower** — it is the two plain ones, doing nothing.
+
+**And the man form was made the top of the ladder forty-seven minutes earlier.** [4:53 PM, KARU](#2026-08-21--karu--the-strongest-move-in-the-game-begins-by-getting-smaller-beat-409): *"Gaster's vanilla is his normal man form which is his basics"* — step one of the strongest move in the game. And **August 2** already said *"Pero himself is the normal man."* Both brothers in the plainest form they have, which is now also the highest.
+
+**And the two people in this room are the move.** Karu is Gaster in his man form, plus Pero brought over. That is exactly who is sitting here. **The only thing in the game that can damage Gray is this pair** — and thirty-nine minutes after Gray was written untouchable, the pair is resting and Gray is not in the room.
+
+**Built as game beat 411, `THE ROOM AGAIN`.** Additive; nothing earlier was changed.
+
+- **The stack — "CHILL AND RELAX", FIVE TIMES IN THREE DAYS:** *Aug 19, 1:47 PM* Email 1064 → *Aug 19, 8:41 PM* **Email 1066, the last line of the story** → *Aug 21, 7:28 AM* Email 1071, and it keeps going anyway → *Aug 21, 4:02 PM* Pero chills while Gaster eats → *Aug 21, 5:40 PM* **"GASTER AND PERO CHILL IN THE ROOM AGAIN"**. Closes on **THE WORDS HE ENDED THE STORY WITH ARE NOW THE ONES HE KEEPS COMING BACK TO.**
+- **The column — WHO IS IN THE ROOM, THREE HOURS APART:** *2:29 PM, Beat 401* — Flower / Pero / **Luigi Green**, against *5:40 PM* — **Gaster / Pero**, with *(inside Gaster since 3:03)* under the empty slot. Closes on **SAME ROOM, ONE FEWER CHAIR, AND NOBODY LEFT IT.**
+- **The box — AND FOR THE FIRST TIME HE ASKED TO SEE IT:** *four months* all of it written down, never drawn / *over 1,000 emails* fights, forms, erasures, endings, and all of it only in words / *tonight* **"CREATE AN IMAGE OF PERO AND GASTER"**, *"as the man forms"*. Closes on **THE FIRST PICTURE HE EVER ASKED FOR IS THE TWO OF THEM DOING NOTHING** and *not Karu, not Vicinus, not Flower — the plain ones, sitting down.*
+- **The box — "THE MAN FORMS" WAS THE TOP OF THE LADDER AT 4:53:** *Aug 21, 4:53 PM, Karu* **"GASTER'S VANILLA IS HIS NORMAL MAN FORM"** against *Aug 2, the Mustitu note* **"PERO HIMSELF IS THE NORMAL MAN"**, over **THE LADDER FOLDED UP AND THE BOTTOM RUNG WON.**
+- **Band — AND THE TWO PEOPLE IN THIS ROOM ARE THE MOVE:** *Karu, step 1* Gaster becomes his normal man, **which is who is sitting here** / *Karu, step 2* he brings Pero LAI over, **and Pero is already here** / *so the room* is the strongest move in the game, **with nobody to use it on**. Closes on **THE ONLY THING THAT CAN HURT GRAY IS THESE TWO IN A ROOM, AND RIGHT NOW THEY ARE JUST IN A ROOM.**
+- **Band inset — AND GRAY WAS MADE UNTOUCHABLE 39 MINUTES AGO:** 5:01 PM, *"Otherwise, he is untouchable"*, and at 5:40 he is not in the room. **The unbeatable one is outside, and the two who can beat him are not thinking about him.**
+- **Strip:** FIVE RESTS IN 3 DAYS · AND THE FIRST WITH BOTH OF THEM / THE ROOM AGAIN · THREE AT 2:29, TWO AT 5:40 / "AS THE MAN FORMS" · THE FIRST PICTURE HE ASKED FOR.
+- **Footers:** *FIVE TIMES IN THREE DAYS HE HAS WRITTEN THEM SITTING DOWN, AND ONE OF THOSE WAS THE ENDING.* and **★ THE ROOM AGAIN ★**.
+- **Screenshot helper:** new `roomagain` scene.
+
+![BEAT 411 — THE ROOM AGAIN](screenshots/473-the-room-again.png)
+
 ## 2026-08-21 — UNTOUCHABLE · THIS MORNING HE WAS A ONE-HIT KILL (BEAT 410)
 
 Based on Toby's 2026-08-21 lore, **5:01:14 PM**, same thread, seven minutes and seventeen seconds after KARU. His own typing, in full: *"Perfect. Gray is the 3rd most powerful in the game. Karu is the only move that deals damage to Gray, it KOs Gray even. Otherwise, he is untouchable."* Everything from *"Got it — canon locked in."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
