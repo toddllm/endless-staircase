@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — PLASMA CARDS · THE FIRST ATTACK IN FOUR MONTHS THAT NEEDS YOU TO REACH OUT AND HELP IT (BEAT 417)
+
+Based on Toby's 2026-08-22 lore, **9:19:57 AM**, same thread ("ClassicsAI + More Classics Era lore."), one hour and twelve minutes after MILK BOXES. His own typing, in full: *"Gray became stronger than before now. Gray made the Duo back into a Trio of Gaster, Pero, and Gray. Gray summons cards of plasma and says "Pick a card, any card.", each time the box characters pick a card, 2 more cards appear in it's place. Gray became immortal. Gaster and Pero stand above Gray still."* Everything from *"That makes the next part feel like a new Gray revival arc"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The duo lasted seventy-eight minutes.** At 8:01 AM the cast list was *"the 2 most powerful beings"* and the door was shut with *"no more players comming in."* At 9:19 AM it is a trio again, and the third one is Gray.
+
+**And he joined instead of taking.** Four months of Gray is GRAY TAKES EVERYTHING, GRAY TAKES THE KINGDOM, *"I own every pixel"*, GRAY VS EVERYONE. Toby's verb today is **made** — *"made the Duo back into a Trio."* He went back to the room where the two strongest were and added himself to it instead of emptying it. The one who kept clearing the game out just put somebody back in it.
+
+**And he went immortal and stayed third.** [Aug 21, 6:30 PM](#2026-08-21--untouchable-beat-410) said *"Karu is the only move that deals damage to Gray, it KOs Gray even. Otherwise, he is untouchable."* Immortal closes that last hole. The **very next sentence** is *"Gaster and Pero stand above Gray still."* He removed his only weakness and the ranking did not move.
+
+**And this is the first attack here that needs the target's help.** Absolute Infinity, erase form, Karu, the black scythe, love pellets: every one of those happens *to* you. *"Pick a card, any card"* sits on the table doing nothing until somebody reaches out. He stopped hitting people and started making them choose, and the choice is the damage.
+
+**And two come back in the place of one.** *"Each time the box characters pick a card, 2 more cards appear in it's place."* There is no move in that sentence that makes the number go down. The only way to shrink the field is to never touch it.
+
+**And the people he is dealing to are the box characters.** Their box was destroyed at 8:01 and came back out of a milk carton at 8:07. Seventy-two minutes later somebody is dealing them cards.
+
+**Built as game beat 417, `PLASMA CARDS`.** Additive; nothing earlier was changed.
+
+- **The stack — THE DUO LASTED SEVENTY-EIGHT MINUTES:** *8:01 AM* **"THE 2 MOST POWERFUL BEINGS"**, no more players / *8:04 AM* one of the two walks out for milk / *8:07 AM* he comes back, the box animation restarts / *9:19 AM* **"GRAY BECAME STRONGER THAN BEFORE NOW"** / *9:19 AM* **a trio again, Gaster, Pero, Gray**. Closes on **THE DOOR WAS SHUT AT BREAKFAST AND THE CAST LIST WAS BACK UP BEFORE LUNCH.**
+- **The column — HE CLOSED THE LAST HOLE IN HIMSELF FOR NOTHING:** *Aug 21, 6:30 PM, the one weak spot* **"KARU IS THE ONLY MOVE THAT DEALS DAMAGE TO GRAY, IT KOs GRAY EVEN."** against *Aug 22, 9:19 AM, seven words later* **"GRAY BECAME IMMORTAL."** and **"GASTER AND PERO STAND ABOVE GRAY STILL."** Closes on **HE TOOK AWAY THE ONE THING THAT COULD KO HIM, AND HE IS STILL THIRD OUT OF THREE.**
+- **The box — "PICK A CARD, ANY CARD.":** one card gets picked ▶ **two appear in its place**, beside **THERE IS NO MOVE IN THAT SENTENCE THAT MAKES THE NUMBER GO DOWN** and *the only way to shrink the field is to never touch it.* Closes on **AND IT SITS THERE DOING NOTHING UNTIL SOMEBODY REACHES OUT** and *he is not swinging at anyone, he is waiting to be helped.*
+- **The box — AND FOR ONCE HE JOINED INSTEAD OF TAKING:** GRAY TAKES EVERYTHING · GRAY TAKES THE KINGDOM · "I OWN EVERY PIXEL" · GRAY VS EVERYONE, *four months of him and the verb is always take*, against **"MADE THE DUO BACK INTO A TRIO"**. Closes on **THE ONE WHO KEPT EMPTYING THE GAME JUST PUT SOMEBODY BACK IN IT.**
+- **Band — AND EVERY OTHER MOVE IN THIS FILE HAPPENS TO YOU:** *ABSOLUTE INFINITY* a number with no ceiling, aimed at you / *ERASE FORM* takes you out of the file, no consent asked / *KARU* two men, two plain forms, one typed line / **"PICK A CARD"** *sits on the table until you touch it*. Closes on **HE STOPPED HITTING PEOPLE AND STARTED MAKING THEM CHOOSE, AND THE CHOICE IS THE DAMAGE.**
+- **Band inset — AND HE IS DEALING TO THE BOX CHARACTERS:** 8:01 AM their box is destroyed / 8:07 AM it comes back as a milk carton / 9:19 AM somebody deals them cards. **Seventy-two minutes after they got their boxes back, the hand they are being offered is a trap.**
+- **Strip:** TWO IN THE PLACE OF ONE · THE NUMBER ONLY EVER GOES UP / IMMORTAL, AND STILL THIRD · HE FIXED HIS ONE WEAK SPOT FOR NOTHING / THE DUO LASTED 78 MINUTES · TWO BECAME THREE BEFORE LUNCH.
+- **Footers:** *HE CANNOT BE KILLED, HE CANNOT BE PROMOTED, AND THE ONLY THING HE ASKS ANYBODY TO DO IS PICK.* and **★ PLASMA CARDS ★**.
+- **Screenshot helper:** new `plasmacards` scene.
+
+![BEAT 417 — PLASMA CARDS](screenshots/479-plasma-cards.png)
+
 ## 2026-08-22 — MILK BOXES · THE BOX THAT HELD THE WHOLE GAME COMES BACK BECAUSE SOMEBODY BOUGHT MILK (BEAT 416)
 
 Based on Toby's 2026-08-22 lore, **8:07:13 AM**, same thread ("ClassicsAI + More Classics Era lore."), two minutes and fifteen seconds after MORE MILK. His own typing, in full: *"It was litterly 1.6G of lore, I couldn't send the export due to max file size. After more years, Pero came back with milk BOXES, they continue the box animation using milk boxes."* Everything from *"That is hilarious and actually fits Classics perfectly."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
