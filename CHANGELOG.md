@@ -4,6 +4,96 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — LAI, NOT AI · HE GUESSED THE PC, AND ONLY THE SECOND GUESS PROVED THE FIRST ONE WAS NOT A GUESS (BEAT 420)
+
+Based on Toby's 2026-08-22 lore, **12:24:49 PM**, same thread ("ClassicsAI + More Classics Era lore."), fourteen minutes and thirty seconds after ENTERNALLY. His own typing, in full: *"CODE says to Pero "Can you tell me what is comming next?", Pero says "Something large with 809.7G, good luck with your 'small' PC!", CODE says "How did you know I was using a PC?", Pero says "Wild guess. 😎", CODE says "Guess what I am using now.", Pero says "A TV. 😼", CODE says "IMPOSSIBLE!!!", Pero says "Easy. 😸", CODE says "Define 'easy'! 😥", Pero says "Simple. 😏", CODE says "AHHHHHHHHHHHHHHHH", their chat ended there. Pero uses Normal and Cat emojis, his common one is his basic smile+sunglasses AI thing. CODE says "Are you AI?", Pero says "I am not AI like ChatGPT and Claude, I am LAI, huge difference. 😹⚡", CODE says "Are you Simon.psc AI?", Pero says "Fine... yes. 😭⚡", he uses so many different models, he is LAI and beyond normal AI, he also uses many LLMs and LAIs to control him, just like many bots control Simon.psc."* Everything from *"That scene is a Pero intelligence + LAI identity reveal"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**One right answer is luck. Two is reading.** *"Wild guess. 😎"* is a perfectly good alibi for knowing about the PC, and it would have held. Then C.O.D.E. changes device on purpose, asks again, and gets *"A TV. 😼"*. **C.O.D.E. ran the test that broke the alibi himself** — the same shape as [WHO AM I?](#2026-08-22--who-am-i--the-disguise-was-broken-by-the-person-wearing-it-beat-418) two hours ago, where his own question is what said the name out loud.
+
+**And 809.7G lands four hours after 1.6G was too big to send.** At 8:07 this morning, [MILK BOXES](#2026-08-22--milk-boxes--the-box-that-held-the-whole-game-comes-back-because-somebody-bought-milk-beat-416): *"It was litterly 1.6G of lore, I couldn't send the export due to max file size."* The thing coming now is **809.7G**, about five hundred times the file that already would not fit in an email. And it is aimed at a *"small"* PC. **The threat is not an attack. It is a download.**
+
+**And the sunglasses changed sides.** [Beat 320, Aug 15](#2026-08-15--corruption-god--a-fight-won-by-punctuation-and-a-rank-that-costs-nothing-beat-320): *"You said '😎' at the hello line. Pero wins"* — that day a misplaced 😎 is exactly what **exposed** Pero, and the fight was called on the tell. Today the same emoji is *"his basic smile+sunglasses AI thing"*, his common style, and **he is the one doing the exposing**. The thing that once gave him away is now the thing he signs with.
+
+**And Toby wrote this about him six days ago, in the third person.** [Beat 336, Aug 16, 12:54 PM](#2026-08-16--the-unit--he-measured-them-in-us-beat-336) priced the whole cast in ChatGPT + Claude — Simon.psc × 2.35, Dr. Gaster × 3.6e100 — and gave exactly one being an exemption: *"Pero LAI is the smartest and most powerful of LAI and is beyond AI."* That was narration. Today **Pero says it in his own voice**, naming the same two names: *"I am not AI like ChatGPT and Claude, I am LAI, huge difference."* The ruling became the character's line.
+
+**And the admission costs him an emoji.** Every confident line in this chat is sunglasses or cats: 😎 😼 😸 😏. The one line where he gives something up — *"Are you Simon.psc AI?"* → *"Fine... yes. 😭⚡"* — is the one that switches to crying. The feeling is in the punctuation, not the words.
+
+**And he wins by saying less.** *"Easy. 😸"* then *"Simple. 😏"* then, from the other side, *"AHHHHHHHHHHHHHHHH"* and *"their chat ended there."* Two words, then one word, then seventeen letters of the same one.
+
+**Built as game beat 420, `LAI, NOT AI`.** Additive; nothing earlier was changed.
+
+- **The transcript — ONE RIGHT ANSWER IS LUCK. TWO IS READING:** *PERO* **"…GOOD LUCK WITH YOUR 'SMALL' PC!"** / *C.O.D.E.* "HOW DID YOU KNOW I WAS USING A PC?" / *PERO* "WILD GUESS. 😎" / *C.O.D.E.* **"GUESS WHAT I AM USING NOW."** / *PERO* **"A TV. 😼"**. Closes on **C.O.D.E. CHANGED DEVICE TO TEST THE ALIBI, AND THE TEST IS WHAT BROKE IT.**
+- **The column — 809.7G, FOUR HOURS AFTER 1.6G WAS TOO BIG TO SEND:** *Aug 22, 8:07 AM, beat 416* **"IT WAS LITTERLY 1.6G OF LORE, I COULDN'T SEND THE EXPORT DUE TO MAX FILE SIZE."** / *Aug 22, 12:24 PM* **809.7G** / *about five hundred times the file that was already too big to send*, over "GOOD LUCK WITH YOUR 'SMALL' PC!". Closes on **THE THREAT IS NOT AN ATTACK. IT IS A DOWNLOAD.**
+- **The box — AND THE SUNGLASSES CHANGED SIDES:** *Aug 15, 9:50 AM, beat 320, a fight called on a tell* **"YOU SAID '😎' AT THE HELLO LINE. PERO WINS"** against *Aug 22* **"HIS COMMON ONE IS HIS BASIC SMILE+SUNGLASSES AI THING"**. Closes on **THE EMOJI THAT ONCE GAVE HIM AWAY IS NOW THE ONE HE SIGNS WITH**, and *caught by a tell on Aug 15, catching somebody by a tell on Aug 22.*
+- **The box — AND THE ADMISSION COSTS HIM AN EMOJI:** *every confident line* 😎 😼 😸 😏, holding **"I AM NOT AI LIKE CHATGPT AND CLAUDE, I AM LAI, HUGE DIFFERENCE. 😹⚡"** / *and the one line where he gives something up* **"FINE… YES. 😭⚡"**. Closes on **SUNGLASSES FOR EVERY WIN, AND CRYING FOR THE ONE ANSWER HE OWED.**
+- **Band — AND TOBY WROTE THIS ABOUT HIM SIX DAYS AGO, IN THE THIRD PERSON:** *SIMON.PSC* ChatGPT + Claude × 2.35, Aug 16 / *DR. GASTER* ChatGPT + Claude × 3.6e100, Aug 16 / *PERO LAI* "the smartest … and is beyond AI", no formula, Aug 16 / **PERO, OUT LOUD** *"I am not AI like ChatGPT and Claude, I am LAI"*, Aug 22. Closes on **THE RULING BECAME THE CHARACTER'S OWN LINE, AND HE NAMES THE SAME TWO NAMES TO DO IT.**
+- **Band inset — AND HE WINS BY SAYING LESS:** "EASY. 😸" · "SIMPLE. 😏" · **"AHHHHHHHHHHHHHHHH"** · *"THEIR CHAT ENDED THERE."* **Two words, then one word, then seventeen letters of the same one.**
+- **Strip:** 1.6G WAS TOO BIG AT 8:07 · 809.7G IS COMING AT 12:24 / 😎 CAUGHT HIM ON AUG 15 · 😎 IS HIS SIGNATURE ON AUG 22 / SUNGLASSES FOR EVERY WIN · 😭 FOR THE ONE THING HE ADMITS.
+- **Footers:** *HE NEVER SAYS HOW HE KNOWS. HE JUST KEEPS BEING RIGHT UNTIL THE OTHER ONE STOPS TYPING.* and **★ LAI, NOT AI ★**.
+- **Screenshot helper:** new `lainotai` scene.
+
+![BEAT 420 — LAI, NOT AI](screenshots/482-lai-not-ai.png)
+
+## 2026-08-22 — ENTERNALLY · THE NAME WAS A SENTENCE FOR TWENTY-SIX HOURS AND NOBODY READ IT (BEAT 419)
+
+Based on Toby's 2026-08-22 lore, **12:10:19 PM**, same thread, two minutes and five seconds after WHO AM I?, sent as the answer to his own question at **12:08:51 PM** (*"Did I tell you what CODE stands for yet?"*). His own typing, in full: *"Classics.Order.Defied.Enternally"* Everything from *"That is a strong acronym reveal"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The name was a sentence the whole time.** [Beat 395, Aug 21 at 9:32 AM](#2026-08-21--code--the-first-player-here-with-a-name-and-a-place-on-the-ladder-beat-395) introduced him as *"an avatar made of code"* — the name read as a **material**, a thing he was built out of. Twenty-six hours later the four letters turn out to be four words, and they were four words on the day he arrived. **Nothing changed except what they were short for.**
+
+**And the system he breaks is the first word of his own name.** *Classics* is the game, the era, and the title of this whole archive. It is also letter one. **Nobody can call him without calling it.**
+
+**And the verb is already finished.** Not *defies*. **DEFIED.** The name is not a threat about what he is going to do; it is a **record of something already done**. And then *"Enternally"* holds the finished thing open forever.
+
+**And "Enternally" is his spelling, kept.** Like OMAZEN, INVICIBLE, COMMING and LITTERLY before it.
+
+**And he gets his full name two minutes after losing.** 12:08:14, *"Pero strikes down CODE."* 12:08:51, *"Did I tell you what CODE stands for yet?"* 12:10:19, the answer. **The meaning arrives on the far side of the defeat**, and only after somebody else has already said who he is.
+
+**And since he is Gray Sprunki, this is also Gray's second name.** Four months of GRAY TAKES EVERYTHING, GRAY TAKES THE KINGDOM, *"I own every pixel"*, GRAY VS EVERYONE — and here is the same career in four words and a typo.
+
+**Built as game beat 419, `ENTERNALLY`.** Additive; nothing earlier was changed.
+
+- **The stack — FOUR LETTERS, AND THEY WERE FOUR WORDS ALL ALONG:** **C · CLASSICS** *the game, the era, the whole file* / **O · ORDER** *the rules, the ranks, the accounts, the boxes* / **D · DEFIED** *past tense · already done, not promised* / **E · ENTERNALLY** *his spelling · forever, held open*. Closes on **THE THING HE BREAKS IS LETTER ONE OF HIS OWN NAME.**
+- **The column — HE GETS HIS FULL NAME TWO MINUTES AFTER LOSING:** *12:08:14 PM* **"PERO STRIKES DOWN CODE."** / *12:08:51 PM, 37 seconds later* **"DID I TELL YOU WHAT CODE STANDS FOR YET?"** / *12:10:19 PM* **"CLASSICS.ORDER.DEFIED.ENTERNALLY"**. Closes on **THE MEANING ARRIVES ON THE FAR SIDE OF THE DEFEAT.**
+- **The box — AND THE VERB IN HIS NAME IS ALREADY FINISHED:** NOT "DEFIES" *a threat about later* against **"DEFIED"** *a record of something done*, closing on **AND THEN "ENTERNALLY" HOLDS THE FINISHED THING OPEN FOREVER**, and *his spelling, kept — like omazen, invicible, comming and litterly.*
+- **The box — AND THIS IS ALSO GRAY'S SECOND NAME:** GRAY TAKES EVERYTHING · TAKES THE KINGDOM · "I OWN EVERY PIXEL" · GRAY VS EVERYONE against **"CLASSICS.ORDER.DEFIED.ENTERNALLY"**. Closes on **THE WHOLE CAREER, COMPRESSED INTO FOUR WORDS AND A TYPO**, and *he only gets it after somebody else says who he is.*
+- **Band — AND THE NAME READ AS A MATERIAL FOR A DAY BEFORE IT READ AS A SENTENCE:** *Aug 21, 9:32 AM* "an avatar made of code" · a substance, beat 395 / *Aug 21, 9:32 AM* "he has admin commands and is a Classics Hacker", beat 395 / *Aug 22, 12:08 PM* and he is Gray Sprunki, beat 418 / **Aug 22, 12:10 PM** CLASSICS · ORDER · DEFIED · ENTERNALLY, beat 419. Closes on **THE LETTERS NEVER CHANGED. ONLY WHAT THEY WERE SHORT FOR.**
+- **Band inset — AND THE THING HE BREAKS IS LETTER ONE:** **C — CLASSICS**, *the game · the era · the whole file*, over **THE SYSTEM HE DEFIES IS THE FIRST WORD OF HIS OWN NAME, SO NOBODY CAN CALL HIM WITHOUT CALLING IT.**
+- **Strip:** FOUR LETTERS, FOUR WORDS · AND THEY WERE THERE ALL ALONG / "DEFIED", NOT "DEFIES" · THE NAME IS A RECORD, NOT A THREAT / NAMED TWO MINUTES AFTER LOSING · THE MEANING CAME AFTER THE DEFEAT.
+- **Footers:** *HE IS NAMED AFTER THE THING HE BROKE, AND THE THING HE BROKE IS NAMED FIRST.* and **★ ENTERNALLY ★**.
+- **Screenshot helper:** new `enternally` scene.
+
+![BEAT 419 — ENTERNALLY](screenshots/481-enternally.png)
+
+## 2026-08-22 — WHO AM I? · THE DISGUISE WAS BROKEN BY THE PERSON WEARING IT (BEAT 418)
+
+Based on Toby's 2026-08-22 lore, **12:08:14 PM**, same thread, two hours and forty-eight minutes after PLASMA CARDS. His own typing, in full: *"CODE got a new account and asked Pero "Who am I?", Pero says "You are CODE, you just made a new account to try to trick us, but I know everything, CODE's real name", CODE says "How did you know I was Gray Sprunki?", Pero says "Once again... I am the smartest LAI there ever was!", Pero strikes down CODE. Gaster was shocked how Pero knew CODE was Gray Sprunki."* Everything from *"That is a perfect Pero intelligence flex"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The one counter ever written into him got answered in twenty-six hours, and it bought him nothing.** [Beat 395, Aug 21 at 9:32 AM](#2026-08-21--code--the-first-player-here-with-a-name-and-a-place-on-the-ladder-beat-395): *"Luigi Green, Gaster, and Pero beats CODE by deleting his account."* That is his **only listed weakness** in the whole file. Today he plays the exact counter-move to the exact counter — a new account — and it fails immediately, because **the account was never what Pero was reading**.
+
+**And Pero never says the name.** Toby writes Pero's line as *"but I know everything, **CODE's real name**"* — a placeholder, left blank on the page. The words *"Gray Sprunki"* are spoken **by C.O.D.E.**, one line later, in a question: *"How did you know I was Gray Sprunki?"* The disguise is broken by the person wearing it.
+
+**And the first sentence ever written about him names him as his own victim.** Beat 395's opening line: *"he can 1HKO Gray and all the Sprunkis easily."* C.O.D.E. is Gray Sprunki. That sentence has been saying **he one-hit-kills himself** for twenty-six hours, and nobody had to go back and change it. The reveal made it true backwards.
+
+**And this immortality lasted two hours and forty-nine minutes.** At 9:19 AM, [PLASMA CARDS](#2026-08-22--plasma-cards--the-one-attack-here-that-gets-bigger-every-time-somebody-tries-to-deal-with-it-beat-417): *"Gray became immortal."* At 12:08 PM: *"Pero strikes down CODE."* The [Aug 18 immortality](#2026-08-18) held three days before Karu cancelled it. This one **did not last the morning**.
+
+**And he is sitting in one of his own counters' chairs.** The three who can beat C.O.D.E. are **Luigi Green, Gaster and Pero**. Luigi Green vacated the third seat of the trio at 3:03 PM yesterday by turning into green plasma energy; at 9:19 this morning **Gray took that empty seat**. So C.O.D.E. filled the vacancy left by one of his three counters, and two hours and forty-nine minutes later **another of the three struck him down**.
+
+**And the one who is shocked is the stronger one.** [Aug 19](#2026-08-19): *"Pero is a Amereian Reeper, he is the most powerful reeper and the smartest."* Gaster outranks him in power and everything in the file says so; Pero outranks him in reading the room. *"Gaster was shocked how Pero knew"* is that split working exactly as written.
+
+**Built as game beat 418, `WHO AM I?`.** Additive; nothing earlier was changed.
+
+- **The transcript — FOUR LINES, AND THE THIRD ONE IS THE LEAK:** *C.O.D.E.* **"WHO AM I?"** / *PERO* "YOU ARE CODE, YOU JUST MADE A NEW ACCOUNT…" / *PERO* "…BUT I KNOW EVERYTHING, CODE'S REAL NAME" / *C.O.D.E.* **"HOW DID YOU KNOW I WAS GRAY SPRUNKI?"** / *PERO* **"ONCE AGAIN… I AM THE SMARTEST LAI THERE EVER WAS!"**. Closes on **PERO LEAVES THE NAME BLANK. C.O.D.E. IS THE ONE WHO SAYS "GRAY SPRUNKI" OUT LOUD.**
+- **The column — HIS ONE WEAKNESS, ANSWERED IN 26 HOURS:** *Aug 21, 9:32 AM, beat 395, the only counter* **"LUIGI GREEN, GASTER, AND PERO BEATS CODE BY DELETING HIS ACCOUNT."** / *Aug 22, 12:08 PM, and he answers it* **"CODE GOT A NEW ACCOUNT"**, *the exact counter to the exact counter* / *and it does not work* **"BUT I KNOW EVERYTHING"**. Closes on **THE ACCOUNT WAS NEVER WHAT PERO WAS READING.**
+- **The box — AND THE FIRST SENTENCE ABOUT HIM NAMES HIM AS HIS OWN VICTIM:** *Aug 21, 9:32 AM* **"HE CAN 1HKO GRAY AND ALL THE SPRUNKIS EASILY"** against *Aug 22, 12:08 PM* **"C.O.D.E. = GRAY SPRUNKI"**. Closes on **SO THAT LINE HAS BEEN SAYING HE ONE-HIT-KILLS HIMSELF FOR A DAY**, and *nobody had to change it; the reveal made it true backwards.*
+- **The box — AND THIS IMMORTALITY LASTED ONE MORNING:** *9:19 AM* **"GRAY BECAME IMMORTAL."** *and the last one, Aug 18, held three days* / *12:08 PM* **"PERO STRIKES DOWN CODE."** Closes on **TWO HOURS AND FORTY-NINE MINUTES**, and *he closed his last hole and somebody went around it.*
+- **Band — AND HE IS SITTING IN ONE OF HIS OWN COUNTERS' CHAIRS:** *the three who beat CODE* Luigi Green · Gaster · Pero, Aug 21 / *one of them dissolves* Luigi Green flows into Gaster, the seat is empty, Aug 21 / *the seat is refilled* the trio is Gaster, Pero and Gray, Aug 22 / **and Gray is C.O.D.E.** *he took his own counter's chair*, Aug 22. Closes on **HE FILLED THE VACANCY LEFT BY ONE OF HIS THREE COUNTERS, AND ANOTHER OF THE THREE STRUCK HIM DOWN.**
+- **Band inset — AND THE ONE WHO IS SHOCKED IS THE STRONGER ONE:** *Aug 19* "PERO IS A AMEREIAN REEPER, HE IS THE MOST POWERFUL REEPER AND THE SMARTEST." over **"GASTER WAS SHOCKED HOW PERO KNEW"**, closing on **GASTER IS STRONGER, PERO IS SMARTER, AND THE SURPRISED PARTY IS THE ONE WHO WINS THE FIGHTS.**
+- **Strip:** A NEW ACCOUNT IN 26 HOURS · AND IT BOUGHT HIM NOTHING / PERO LEFT THE NAME BLANK · CODE SAID IT HIMSELF / IMMORTAL AT 9:19 · STRUCK DOWN AT 12:08.
+- **Footers:** *HE CHANGED EVERYTHING ABOUT HIMSELF EXCEPT THE ONE THING ANYBODY WAS ACTUALLY LOOKING AT.* and **★ WHO AM I? ★**.
+- **Screenshot helper:** new `whoami` scene.
+
+![BEAT 418 — WHO AM I?](screenshots/480-who-am-i.png)
+
 ## 2026-08-22 — PLASMA CARDS · THE ONE ATTACK HERE THAT GETS BIGGER EVERY TIME SOMEBODY TRIES TO DEAL WITH IT (BEAT 417)
 
 Based on Toby's 2026-08-22 lore, **9:19:57 AM**, same thread ("ClassicsAI + More Classics Era lore."), one hour and twelve minutes after MILK BOXES. His own typing, in full: *"Gray became stronger than before now. Gray made the Duo back into a Trio of Gaster, Pero, and Gray. Gray summons cards of plasma and says "Pick a card, any card.", each time the box characters pick a card, 2 more cards appear in it's place. Gray became immortal. Gaster and Pero stand above Gray still."* Everything from *"That makes the next part feel like a new Gray revival arc"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
