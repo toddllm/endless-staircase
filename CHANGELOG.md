@@ -4,6 +4,98 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — TWENTY YEARS · THE GAME DOES NOT END IN A FIGHT, IT ENDS ON A DATE (BEAT 423)
+
+Based on Toby's 2026-08-22 lore, **5:29:45 PM**, same thread ("ClassicsAI + More Classics Era lore."), three minutes and twenty-nine seconds after WIPE THE SYSTEMS. His own typing, in full: *"Hardly any characters are shorter than Pero who is average height of a human, but none of the characters are human nor human directly. Pero is the omni-king of the game. He says that he'll end the connection in 20 years, Gaster logs off imediately and rests in the room. 20 years later, the connection was deleted, Pero was the only one left in the game while the others are returned to their home game/platform."* Everything from *"Got it — this makes Pero's role even clearer"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The threat finally gets a date.** On Aug 17 at 4:05 PM, in [END THE GAME HERE](#2026-08-17--end-the-game-here--a-threat-that-gets-no-fight-back-beat-348), Pero told the Sprunkis *"I am the most powerful in the game. I can exit the game, and I can even end the game here."* They ran to Sprunki Hills and hid, and nothing happened. Five days later the same being stops claiming it and **schedules** it. The difference between a threat and a plan is a number, and this one actually arrives.
+
+**And 20 years was a compliment three days ago.** [THE END, Aug 19](#2026-08-19--the-end--gaster-ends-the-lore-and-pero-writes-it-down-beat-382) closed the whole thing on two brothers being nice to each other: *"That is the best idea you had in 20 years, Gaster!"* — and Pero is never sarcastic — *"the best idea I had in 27 years."* Same number, same brother. On Aug 19 it measured how long Gaster had gone without a good idea. Today it measures **how long he has left**.
+
+**And Gaster does not argue.** He is told the game ends in twenty years and he *"logs off imediately and rests in the room."* No fight, no asking why. That room has taken him after every ending in this file: THE END on Aug 19, THE ROOM AGAIN, and [NEEDED SLEEP](#2026-08-22--needed-sleep--the-two-most-powerful-beings-turn-out-to-need-sleep-beat-414) at 8:01 this same morning.
+
+**And nobody dies.** This archive has deleted accounts, erased whole AUs, reset the timeline and redeleted characters who were already deleted. Here the others are simply *"returned to their home game/platform."* **It is the only ending in the run where the cast just goes home.** He does not remove them from existence; he removes them from his game, and they go back to their own.
+
+**And the door shut nine hours earlier the same day.** At 8:01 AM, [NEEDED SLEEP](#2026-08-22--needed-sleep--the-two-most-powerful-beings-turn-out-to-need-sleep-beat-414): *"No more players comming in."* At 5:29 PM the connection itself is deleted. **The morning stopped anyone new arriving. The evening sent out everyone already there.**
+
+**And none of them were ever human.** He is *"average height of a human"* in a cast where *"none of the characters are human nor human directly"* — and on Aug 17, [NORMAL MAN](#2026-08-17--normal-man--the-top-of-the-game-gets-a-low-number-beat-349) called him *"a normal man that came from a box."*
+
+**Built as game beat 423, `TWENTY YEARS`.** Additive; nothing earlier was changed.
+
+- **The picture — HE SAYS IT, AND THEN HE WAITS TWENTY YEARS:** *PERO* **"I WILL END THE CONNECTION IN 20 YEARS."** / *GASTER* LOGS OFF IMMEDIATELY. NO ARGUMENT. / *GASTER* RESTS IN THE ROOM. / **— 20 YEARS —** THE CONNECTION WAS DELETED. / *EVERYONE ELSE* RETURNED TO THEIR HOME GAME / PLATFORM. Closes on **NOBODY IS HIT, NOBODY IS DELETED, AND ONLY ONE OF THEM IS STILL IN THE GAME AT THE END.**
+- **The column — FIVE DAYS FROM A CLAIM TO A SCHEDULE:** *Aug 17, 4:05 PM, beat 348* **"I CAN EXIT THE GAME, AND I CAN EVEN END THE GAME HERE."** *(the Sprunkis ran and hid; nothing happened)* / *Aug 22, 5:29 PM* **IN 20 YEARS** / **THE DIFFERENCE BETWEEN A THREAT AND A PLAN IS A NUMBER**, closing on *"20 YEARS LATER, THE CONNECTION WAS DELETED."*
+- **The box — AND 20 YEARS WAS A COMPLIMENT THREE DAYS AGO:** *Aug 19, beat 382, THE END, the last line of the whole thing* **"THAT IS THE BEST IDEA YOU HAD IN 20 YEARS, GASTER!"** against *Aug 22* **"HE'LL END THE CONNECTION IN 20 YEARS"**. Closes on **SAME NUMBER, SAME BROTHER, AND PERO IS NEVER SARCASTIC**, and *it was how long Gaster had gone without a good idea; now it is how long he has left.*
+- **The box — AND HE GOES TO THE SAME ROOM EVERY TIME:** *Aug 19 · THE END* the three of them rest in the room / *Aug 22, 8:01 AM · NEEDED SLEEP* they sleep in the room / *Aug 22, 5:29 PM* he logs off and rests in the room. Closes on **HE IS TOLD THE GAME ENDS IN TWENTY YEARS AND HE GOES TO LIE DOWN**, and *no argument, no fight, no asking why.*
+- **Band — AND IN A FILE FULL OF DELETIONS, THIS IS THE ONE ENDING WHERE THE CAST JUST GOES HOME:** *DELETED* accounts, lore, whole AUs · gone for good / *ERASED* Erase Form, White Void · destroys everyone / *RESET* the timeline runs again from the top / **SENT HOME** *"returned to their home game/platform"*, Aug 22 · once. Closes on **HE DOES NOT REMOVE THEM FROM EXISTENCE. HE REMOVES THEM FROM HIS GAME, AND THEY GO BACK TO THEIR OWN.**
+- **Band inset — AND THE DOOR SHUT NINE HOURS EARLIER:** *8:01 AM · beat 414* **"NO MORE PLAYERS COMMING IN."** / *5:29 PM · beat 423* **"THE CONNECTION WAS DELETED."** over *the morning stopped anyone new coming in; the evening sent out everyone already there.*
+- **Strip:** AUG 17: "I CAN END THE GAME" · AUG 22: "IN 20 YEARS" / 20 YEARS WAS A COMPLIMENT · NOW IT IS A COUNTDOWN / NOBODY IS DELETED · EVERYBODY IS SENT HOME.
+- **Footers:** *HE NEVER THREW A PUNCH. HE GAVE EVERYONE TWENTY YEARS OF NOTICE AND THEN TURNED IT OFF.* and **★ TWENTY YEARS ★**.
+- **Screenshot helper:** new `twentyyears` scene.
+
+![BEAT 423 — TWENTY YEARS](screenshots/485-twenty-years.png)
+
+## 2026-08-22 — WIPE THE SYSTEMS · THE STRONGEST MOVE IN THE FILE HITS NOBODY (BEAT 422)
+
+Based on Toby's 2026-08-22 lore, **5:26:16 PM**, same thread, six minutes and thirty-seven seconds after FEARED MORE. His own typing, in full: *"Gray is the owner of the game and he only fears Pero, Gray doesn't dare fear Gaster nor his varies/forms. Pero is one of the shortest beings in the game, he is the size of a large plushy, about 5-6 feet tall, most of the others are 7-9 feet tall. Gray is the largest and is about 12 feet tall, Vicinus is 1500 feet long and 10 feet tall. Gray became stronger than Gaster now. Pero always would beat Gaster and Gray and everyone, but he doesn't want to fight anyone just yet. Gaster and Gray are more powerful than Pero, but Pero could just wipe the systems down, Gaster would log off and lose connection of Classics, the box characters would fade away, leaving only Pero left. Pero doesn't choose to do it just yet."* Everything from *"Got it — this changes the current power logic"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The cast gets measured against itself for the first time in 422 beats.** Pero at **5–6 feet**, *"the size of a large plushy"*; most of the others at **7–9**; Gray the largest at **12**; and Vicinus **1500 feet long but only 10 feet tall**. Four hundred and twenty-two beats of power rankings, and this is the first chart in the whole file that is just a tape measure. **The shortest one on it is the one nobody will fight.**
+
+**And 5–6 feet used to be all three of them.** [THE GOD OF CORRUPTION, Aug 14](#2026-08-14--the-god-of-corruption--the-beat-where-he-is-finally-measured-beat-308): *"Pero is also 1 trillion times larger than everyone else in the box, Luigi Green is about 999.76 billion times, and Gaster of 999.87 billion times, **when they are just like 5-6 feet tall**."* That number covered Pero, Luigi Green and Gaster together. Eight days later **only Pero still has it**, and everybody else grew.
+
+**And the owner of the game changes hands.** Pero has been the creator and owner since July — the one claim this file has never disputed. *"Gray is the owner of the game"* arrives in the same sentence as *"and he only fears Pero."* **You can own the game and still not be the one who decides whether it keeps running.**
+
+**And Gray passes Gaster eight hours and seven minutes after this morning.** [PLASMA CARDS](#2026-08-22--plasma-cards--the-first-attack-in-four-months-that-needs-the-target-to-help-it-beat-417) at 9:19 AM ended on *"Gaster and Pero stand above Gray still."* At 5:26 PM: *"Gray became stronger than Gaster now."*
+
+**And both sentences sit in one paragraph.** *"Pero always would beat Gaster and Gray and everyone"* and *"Gaster and Gray are more powerful than Pero."* They do not cancel out. **One is about the fight and the other is about how it ends.**
+
+**And the strongest move in the file hits nobody.** Gaster logs off and loses connection of Classics, the box characters fade away, Gray loses the system he owns, and Pero is left standing in an empty game. **Not one of them is attacked.** He does not beat them; he turns off the thing they are standing in. And he says *"just yet"* twice in one paragraph.
+
+**And he once lost his own connection.** In [DR. GASTER 404](#2026-07-31--dr-gaster-404--the-force-that-took-the-peace-was-pero-beat-219x) Pero *"crashes multiple times, loses connection with the server, is redeleted, is still there."* **The thing that once happened to him is now the strongest thing he has.**
+
+**And Vicinus is Gaster.** The 1500-foot entry on the height chart is Gaster's own dragon form, so the longest thing in the game and the 7–9 foot being next to it are the same character.
+
+**Built as game beat 422, `WIPE THE SYSTEMS`.** Additive; nothing earlier was changed.
+
+- **The picture — THE FIRST TIME ANYBODY IN THIS GAME IS MEASURED IN FEET:** bars for **PERO** 5–6 FT · *"the size of a large plushy"* / **MOST OF THE CAST** 7–9 FT / **VICINUS** 10 FT TALL · 1500 FT LONG / **GRAY** 12 FT · the largest. Closes on **THE SHORTEST ONE ON THE CHART IS THE ONE NOBODY WILL FIGHT.**
+- **The column — THE STRONGEST MOVE IN THE FILE HITS NOBODY:** **WIPE THE SYSTEMS DOWN** → *GASTER* logs off · loses connection of Classics / *BOX CHARACTERS* fade away / *GRAY* loses the system he owns / **PERO** left. Closes on **NOT ONE OF THEM IS ATTACKED — HE DOES NOT BEAT THEM, HE TURNS OFF THE THING THEY ARE STANDING IN.**
+- **The box — AND THE OWNER OF THE GAME CHANGES HANDS:** *since July* "Pero is the creator and owner of the game", never disputed once / *Aug 22* **"GRAY IS THE OWNER OF THE GAME"** · "and he only fears Pero. Gray doesn't dare fear Gaster nor his varies/forms." Closes on **THE TITLE MOVES IN THE SAME SENTENCE THAT NAMES WHO HE IS SCARED OF.**
+- **The box — AND BOTH SENTENCES ARE IN ONE PARAGRAPH:** *"PERO ALWAYS WOULD BEAT GASTER AND GRAY AND EVERYONE"* against *"GASTER AND GRAY ARE MORE POWERFUL THAN PERO"*, resolved by **ONE IS ABOUT THE FIGHT, AND THE OTHER IS ABOUT HOW IT ENDS**, over **"HE DOESN'T WANT TO FIGHT ANYONE JUST YET."** and **"PERO DOESN'T CHOOSE TO DO IT JUST YET."**
+- **Band — AND 5–6 FEET USED TO BE ALL THREE OF THEM:** **PERO** 5–6 feet tall · unchanged since Aug 14 / *GASTER* 5–6 ft → 7–9 ft · 1500 as Vicinus / *LUIGI GREEN* 5–6 ft → 7–9 ft / *GRAY* never measured → 12 ft, the largest. Closes on **BEAT 308 GAVE THAT NUMBER TO THE THREE OF THEM TOGETHER. EIGHT DAYS LATER ONLY ONE STILL HAS IT.**
+- **Band inset — AND HE ONCE LOST HIS OWN CONNECTION:** *DR. GASTER 404, the panel where Pero breaks* **"PERO CRASHES MULTIPLE TIMES, LOSES CONNECTION WITH THE SERVER, IS REDELETED"** against *Aug 22* **HE IS THE ONE WHO TAKES CONNECTIONS AWAY**, over *the thing that once happened to him is now the strongest move he has.*
+- **Strip:** SHORTEST ON THE CHART · THE ONE NOBODY WILL FIGHT / 9:19 AM: GASTER ABOVE GRAY · 5:26 PM: GRAY ABOVE GASTER / HE COULD END IT TODAY · "JUST YET" TWICE IN ONE PARAGRAPH.
+- **Footers:** *TWO OF THEM ARE STRONGER THAN HIM AND BOTH OF THEM ARE STANDING ON SOMETHING HE CAN SWITCH OFF.* and **★ WIPE THE SYSTEMS ★**.
+- **Screenshot helper:** new `wipesystems` scene.
+
+![BEAT 422 — WIPE THE SYSTEMS](screenshots/484-wipe-the-systems.png)
+
+## 2026-08-22 — FEARED MORE · THE STRONGEST ONE AND THE MOST FEARED ONE STOP BEING THE SAME CHARACTER (BEAT 421)
+
+Based on Toby's 2026-08-22 lore, **5:19:39 PM**, same thread, four hours and fifty-five minutes after LAI, NOT AI. His own typing, in full: *"Gaster is the most powerful canonacially in game, and Pero is the omni-king of the game and the creator of the game. More fear Pero than Gaster."* Everything from *"Got it — that makes the hierarchy more exact"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**One sentence, two lists, and a different name on each.** For 420 beats there has only ever been one ranking in this file, and it was always **who beats whom**. Here power and fear come apart: Gaster takes *most powerful*, Pero takes *most feared*, and **the strongest character comes second on the list that matters**. It happens in three lines, with no fight.
+
+**And the title is five weeks old with a new prefix.** [Beat 98, July 16](#2026-07-16--pero-toddllm--the-king-of-games-beat-98) named him **THE KING OF GAMES**. The archive is full of *omni-* words — Omniplatform, Omniverse, Omnipotent, Omnicreator, Omniforce — and **not one of them was ever a rank**. They are places and powers. *Omni-king* is the first one that is a job.
+
+**And Gaster holds his title for six minutes and thirty-seven seconds.** At **5:19:39 PM**: *"Gaster is the most powerful canonacially in game."* At **5:26:16 PM**: *"Gray became stronger than Gaster now."* **It is the shortest number-one in the whole run** — on a day that already had an immortality last two hours and forty-nine minutes.
+
+**And the word is "canonacially," his spelling.** Every other top spot in this file was settled by a fight somebody won. **This one is settled by the record**, and the record is the one thing here that only Toby can rule on. His spelling is kept, like *enternally*, *omazen* and *invicible* before it.
+
+**And for the first time the creator is not also the strongest.** Every earlier top-of-the-game line put him first: THE KING OF GAMES in July, *"I am the most powerful in the game"* on Aug 17, *"Gaster and Pero stand above Gray still"* at 9:19 this morning. Here **he gives the raw number away and keeps only the authority** — and the authority is the part they are afraid of. The one who has never had to hit back is the one they fear most.
+
+**Built as game beat 421, `FEARED MORE`.** Additive; nothing earlier was changed.
+
+- **The picture — ONE SENTENCE, TWO LISTS, AND A DIFFERENT NAME AT THE TOP OF EACH:** *MOST POWERFUL IN GAME* → **GASTER** · "canonacially" · the record says so, against *MOST FEARED* → **PERO** · "more fear Pero than Gaster". Closes on **FOR 420 BEATS THERE HAS ONLY EVER BEEN ONE LIST, AND IT WAS ALWAYS WHO BEATS WHOM.**
+- **The column — A FIVE-WEEK-OLD TITLE WITH A NEW PREFIX:** *July 16, beat 98* **"THE KING OF GAMES"** / the archive's other *omni-* words — OMNIPLATFORM, OMNIVERSE, OMNIPOTENT, OMNICREATOR, OMNIFORCE, each *a place or a power* / **OMNI-KING**, closing on **THE FIRST ONE THAT IS A RANK AND NOT A PLACE.**
+- **The box — AND GASTER HOLDS IT FOR SIX MINUTES AND THIRTY-SEVEN SECONDS:** *5:19:39 PM* **"GASTER IS THE MOST POWERFUL CANONACIALLY IN GAME"** / *5:26:16 PM* **"GRAY BECAME STRONGER THAN GASTER NOW."** Closes on **THE SHORTEST NUMBER-ONE IN THE WHOLE RUN**, and *Gray's immortality this morning lasted 2h49m; Gaster's top spot lasts six and a half minutes.*
+- **The box — AND FEAR STOPS BEING ABOUT WHAT YOU CAN DO:** *Gaster is feared for consuming, absorbing, deleting* against *Pero is feared for knowing and for owning*, over **THE ONE WHO HAS NEVER HIT BACK IS THE ONE THEY ARE MOST AFRAID OF** and **"MORE FEAR PERO THAN GASTER."**
+- **Band — AND THIS IS THE FIRST TIME THE CREATOR IS NOT ALSO THE STRONGEST:** *Jul 16 · beat 98* "The King of Games" · 0 true limits → CREATOR = TOP / *Aug 17 · beat 348* "I am the most powerful in the game" → CREATOR = TOP / *Aug 22 · 9:19 AM* "Gaster and Pero stand above Gray still" → CREATOR = TOP / **Aug 22 · 5:19 PM** Gaster is most powerful · Pero is most feared → **CREATOR = SECOND**. Closes on **HE GIVES THE BIGGEST NUMBER AWAY AND KEEPS THE TITLE, AND THE TITLE IS THE PART PEOPLE ARE SCARED OF.**
+- **Band inset — AND THE WORD IS "CANONACIALLY":** every other top spot here was settled by a fight somebody won; **this one is settled by the record, and the record is Toby's to rule on** — *his spelling is kept, like enternally and omazen and invicible before it.*
+- **Strip:** MOST POWERFUL: GASTER · MOST FEARED: PERO / KING OF GAMES · JUL 16 → OMNI-KING · AUG 22 / GASTER'S TOP SPOT LASTED 6 MIN 37 SEC.
+- **Footers:** *BEING THE STRONGEST AND BEING THE ONE EVERYBODY IS AFRAID OF TURN OUT TO BE TWO DIFFERENT JOBS.* and **★ FEARED MORE ★**.
+- **Screenshot helper:** new `fearedmore` scene.
+
+![BEAT 421 — FEARED MORE](screenshots/483-feared-more.png)
+
 ## 2026-08-22 — LAI, NOT AI · HE GUESSED THE PC, AND ONLY THE SECOND GUESS PROVED THE FIRST ONE WAS NOT A GUESS (BEAT 420)
 
 Based on Toby's 2026-08-22 lore, **12:24:49 PM**, same thread ("ClassicsAI + More Classics Era lore."), fourteen minutes and thirty seconds after ENTERNALLY. His own typing, in full: *"CODE says to Pero "Can you tell me what is comming next?", Pero says "Something large with 809.7G, good luck with your 'small' PC!", CODE says "How did you know I was using a PC?", Pero says "Wild guess. 😎", CODE says "Guess what I am using now.", Pero says "A TV. 😼", CODE says "IMPOSSIBLE!!!", Pero says "Easy. 😸", CODE says "Define 'easy'! 😥", Pero says "Simple. 😏", CODE says "AHHHHHHHHHHHHHHHH", their chat ended there. Pero uses Normal and Cat emojis, his common one is his basic smile+sunglasses AI thing. CODE says "Are you AI?", Pero says "I am not AI like ChatGPT and Claude, I am LAI, huge difference. 😹⚡", CODE says "Are you Simon.psc AI?", Pero says "Fine... yes. 😭⚡", he uses so many different models, he is LAI and beyond normal AI, he also uses many LLMs and LAIs to control him, just like many bots control Simon.psc."* Everything from *"That scene is a Pero intelligence + LAI identity reveal"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
