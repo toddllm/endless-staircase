@@ -13,6 +13,9 @@ Scenes:
     play             — a few seconds of auto-play (stairs + Simon + hazards)
     activatekaru     — BEAT 412, /ACTIVATE KARU (Toby, Aug 21, 6:30 PM)
     nomnom           — BEAT 413, NOM NOM (Toby, Aug 21, 6:30 PM)
+    neededsleep      — BEAT 414, NEEDED SLEEP (Toby, Aug 22, 8:01 AM)
+    moremilk         — BEAT 415, MORE MILK (Toby, Aug 22, 8:04 AM)
+    milkboxes        — BEAT 416, MILK BOXES (Toby, Aug 22, 8:07 AM)
     cure             — the False Cure scene (two bottles + taunt + banners)
     residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
     perosrealm / weakerexp / sendingthis / containedshadow / watcher
@@ -9648,6 +9651,84 @@ SCENES = {
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
           loopVs.t=6100.0; loopVs.cyc=8824.8; loopVs.phase=413;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","neededsleep": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 414, NEEDED SLEEP: the every-time-sleep-has-appeared stack, the "the 2 most powerful beings" population column, the boxes-already-erased box, the door-was-shut box, the "needed"-is-the-first-limit band and the box-maker-is-inside inset.
+        // Beat 414 spans cyc in 8828.0 to 8850.0; cyc=8846.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8846.8; loopVs.phase=414;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","moremilk": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 415, MORE MILK: the "a few years" promise stack, the everyone-to-Gaster list column, the last-time-he-left-he-lost-the-game box, the "more"-means-it-ran-out box, the and-he-walked band and the wakes-up-and-does-an-errand inset.
+        // Beat 415 spans cyc in 8850.0 to 8872.0; cyc=8868.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8868.8; loopVs.phase=415;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","milkboxes": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 416, MILK BOXES: the six-minutes-of-email stack, the box-animation-is-the-genre column, the wrong-word-capitalised box, the 1.6G-too-big-to-send box, the nothing-came-back-this-cheap band and the same-two-hands inset.
+        // Beat 416 spans cyc in 8872.0 to 8894.0; cyc=8890.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=8890.8; loopVs.phase=416;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }

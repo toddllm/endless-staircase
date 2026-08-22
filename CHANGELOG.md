@@ -4,6 +4,96 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — MILK BOXES · THE BOX THAT HELD THE WHOLE GAME COMES BACK BECAUSE SOMEBODY BOUGHT MILK (BEAT 416)
+
+Based on Toby's 2026-08-22 lore, **8:07:13 AM**, same thread ("ClassicsAI + More Classics Era lore."), two minutes and fifteen seconds after MORE MILK. His own typing, in full: *"It was litterly 1.6G of lore, I couldn't send the export due to max file size. After more years, Pero came back with milk BOXES, they continue the box animation using milk boxes."* Everything from *"That is hilarious and actually fits Classics perfectly."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The box comes back because somebody bought milk.** The box has been the container of the whole game for four months — THE BOX FACTORY, the box characters, EVERYONE FROM BOX, A TRIO IN THE BOX, and the place Gray kept getting sent back to. Six minutes ago it was destroyed. It returns as a **grocery item**.
+
+**And six minutes of real time hold years.** 8:01, destroyed. 8:04, they sleep for years and he goes out. 8:07, he comes back after **more** years. The longest stretch of time anywhere in this archive fits inside one breakfast.
+
+**And "box animation" is the genre of the game itself.** [Aug 21, 8:18 AM](#2026-08-21--scanned-in-and-out-beat-392) called Classics a *"futuristic, comical, grafic-novel, sci fi, box animation omniversal."* So continuing the box animation is **not a hobby in the room**. It is the game restarting, and the material is cartons.
+
+**And he capitalised the wrong word.** Four months of this file have shouted ABSOLUTE INFINITY, ERASE FORM, KARU, LOVE PELLETS. The one word he put in capitals today is **BOXES**, and they are for milk.
+
+**And the archive itself ran out of room.** *"It was litterly 1.6G of lore, I couldn't send the export due to max file size."* The story about a game that ended has **outgrown its own delivery** — it went on a Drive link at 7:58 this morning instead. The box ran out of room and so did the file about it.
+
+**And nothing here has ever come back this cheaply.** Every restoration in four months took a reset, a revival, a rebuild, an absorption or a whole new dimension. This one took a trip to the shop.
+
+**Built as game beat 416, `MILK BOXES`.** Additive; nothing earlier was changed.
+
+- **The stack — SIX MINUTES OF EMAIL, AND YEARS INSIDE THEM:** *8:01 AM* they destroy the box, **"NO MORE PLAYERS"** / *8:01 AM* and they sleep, because they needed to / *8:04 AM* **"THEY SLEPT FOR YEARS"**, he goes for milk / *8:07 AM* **"AFTER MORE YEARS"**, he comes back / *8:07 AM* **the box animation continues, on milk boxes**. Closes on **THE LONGEST STRETCH OF TIME IN THIS ARCHIVE FITS INSIDE ONE BREAKFAST.**
+- **The column — "BOX ANIMATION" IS NOT A HOBBY IN THE ROOM:** *Aug 21, 8:18 AM, the game's genre* **"FUTURISTIC, COMICAL, GRAFIC-NOVEL, SCI FI, BOX ANIMATION OMNIVERSAL"** against *Aug 22, 8:07 AM* **"THEY CONTINUE THE BOX ANIMATION USING MILK BOXES"**. Closes on **SO THIS IS NOT TWO MEN PASSING THE TIME. IT IS CLASSICS STARTING UP AGAIN, OUT OF CARTONS.**
+- **The box — AND HE PUT THE CAPITALS ON THE WRONG WORD:** *what this file shouts* ABSOLUTE INFINITY · ERASE FORM · KARU · LOVE PELLETS · THE END / *what he shouted today* **BOXES**, *and they are for milk*. Closes on **THE ONE WORD HE RAISED HIS VOICE FOR TODAY IS PACKAGING** and *and it is the most important object in the whole game.*
+- **The box — AND THE ARCHIVE ITSELF RAN OUT OF ROOM:** **1.6 G OF LORE**, *"I couldn't send the export due to max file size"*, *it went on a Drive link instead, at 7:58 this morning*. Closes on **THE STORY ABOUT A GAME THAT ENDED HAS OUTGROWN ITS OWN DELIVERY.**
+- **Band — AND NOTHING HERE HAS EVER COME BACK THIS CHEAPLY:** *THE GOLDEN TIMELINE* a whole new dimension had to be made / *RESURRECTION · REVIVE* souls, Acumination, the revive cycle / *RESET RECOVERY* the game rebuilt after being erased / *MILK BOXES* **he went to the shop**. Closes on **EVERY OTHER COMEBACK IN FOUR MONTHS NEEDED A MIRACLE. THIS ONE NEEDED A SHOPPING TRIP.**
+- **Band inset — AND THE SAME TWO HANDS DO BOTH ENDS OF IT:** Aug 19 Pero erased all the boxes / 8:01 AM they destroy the last one / 8:07 AM they start making them again. **The two who shut it down are the two who start it up, and the second time they are holding groceries.**
+- **Strip:** DESTROYED 8:01, BACK 8:07 · SIX MINUTES, AND YEARS INSIDE THEM / "BOX ANIMATION" · IS THE GENRE OF THE GAME ITSELF / 1.6 G OF LORE · TOO BIG TO SEND.
+- **Footers:** *THE WHOLE THING WAS ENDED, ERASED AND SLEPT OFF, AND IT STARTS AGAIN BECAUSE HE CAME HOME WITH THE SHOPPING.* and **★ MILK BOXES ★**.
+- **Screenshot helper:** new `milkboxes` scene.
+
+![BEAT 416 — MILK BOXES](screenshots/478-milk-boxes.png)
+
+## 2026-08-22 — MORE MILK · HE SAID "A FEW YEARS" ON TUESDAY, AND IT TOOK UNTIL TODAY TO BE TRUE (BEAT 415)
+
+Based on Toby's 2026-08-22 lore, **8:04:58 AM**, same thread, three minutes and seventeen seconds after NEEDED SLEEP. His own typing, in full: *"They slept for years, then Pero again walked out to get more milk for Gaster."* Everything from *"Years pass in silence."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**"A few years" finally comes true, four days late.** On **Aug 18 at 11:17 AM** — [beat 360, I ALONE](#2026-08-18--i-alone--the-game-changed-owner-without-a-single-fight-beat-360) — Pero said *"I am leaving for a few years, would you be okay for a few minutes?"* and Gray said *"okay."* **That beat was built on the two numbers not matching.** He was back at 5:54 PM the same day — six and a half hours. Today he sleeps for **years** and then leaves again, and the sentence he said on Tuesday is finally accurate.
+
+**And it is the same errand with a shorter list.** Aug 18: he left *"to get milk for everyone."* Today: *"more milk for Gaster."* **Everyone is one person now.** The list did not get shorter because he bought less.
+
+**And the last time he went out for milk, somebody took the game.** [Beat 367, GETTING MILK](#2026-08-18--getting-milk--the-errand-is-five-hours-old-and-the-takeover-comes-with-permission-beat-367), Aug 18, 4:20 PM: *"Pero is out getting milk and Gray is taking over the game."* Five hours of the creator being out cost him everything. Tonight there is no box, no players and no Omniplatforms, so **there is nothing left to take** — the errand only became safe once there was nothing to come back to.
+
+**And "more" means the first lot ran out.** Nothing in this archive has ever been used up: souls come back, Luigi Green resets, Gaster gets infinite soulpower, Vicinus eats forever. In six minutes **two things have run out** — sleep and the milk — and both of them are ordinary things a person runs short of.
+
+**And he wakes up first, and does an errand.** Not a reset. Not a rematch. Not bringing the players back. The creator of the game opens his eyes after years and goes to fetch something for his brother.
+
+**And he walked.** Four months of portals, hexagon doors, being scanned in and out, and — yesterday — being summoned across space by a typed command. This time: *"Pero again walked out."* He used the door.
+
+**Built as game beat 415, `MORE MILK`.** Additive; nothing earlier was changed.
+
+- **The stack — HE SAID "A FEW YEARS" ON TUESDAY AND MEANT SIX HOURS:** *Aug 18, 11:17 AM* **"I AM LEAVING FOR A FEW YEARS"** / *Aug 18, 11:17 AM* **"WOULD YOU BE OKAY FOR A FEW MINUTES?"** / *Aug 18, 5:54 PM* "Pero came back with milk" — **6½ hours** / *Aug 22, 8:01 AM* they sleep in the room / *Aug 22, 8:04 AM* **"THEY SLEPT FOR YEARS"**, and he goes again. Closes on **FOUR DAYS LATE, THE SENTENCE HE SAID ON TUESDAY BECOMES TRUE.**
+- **The column — THE SAME ERRAND, A SHORTER LIST:** *Aug 18, 11:17 AM* **"MILK FOR EVERYONE"**, *the whole cast was still in the game* → *Aug 22, 8:04 AM* **"MORE MILK FOR GASTER"**, *and Gaster is everyone who is left*. Closes on **THE LIST DID NOT GET SHORTER BECAUSE HE BOUGHT LESS.**
+- **The box — AND THE LAST TIME HE WENT OUT FOR MILK, HE LOST THE GAME:** *Aug 18, he left*, the creator is out for five hours, **beat 360** / *Aug 18, 4:20 PM* **"GRAY IS TAKING OVER THE GAME"**, **beat 367** / *Aug 22, he leaves*, no box, no players, no Omniplatforms, **nothing left to take**. Closes on **FIVE HOURS OUT COST HIM EVERYTHING ON TUESDAY. TODAY IT IS YEARS AND IT COSTS NOTHING.**
+- **The box — AND "MORE" MEANS THE FIRST LOT RAN OUT:** *things that never run out* souls · resets · health · soulmass · appetite / *things that do* **sleep, three minutes ago**, *and the milk*. Closes on **NOTHING IN FOUR MONTHS HAS EVER BEEN USED UP, AND IN SIX MINUTES TWO THINGS HAVE.**
+- **Band — AND HE WALKED:** *how people move here* portals · hexagon doors · scanned in and out, **four months of it** / *and yesterday* "/activate Karu" brings Pero over, **a typed command** / *and today* **"PERO AGAIN WALKED OUT"**, *he used the door*. Closes on **THE BEING WHO CAN BE SUMMONED ACROSS SPACE BY A LINE OF TEXT GOT UP AND WALKED TO THE SHOP.**
+- **Band inset — AND HE WAKES UP FIRST, AND DOES AN ERRAND:** not a reset, not a rematch, not bringing the players back — **"to get more milk for Gaster."** *The creator of the game opens his eyes after years and goes to fetch something for his brother.*
+- **Strip:** "A FEW YEARS" · TRUE AT LAST, FOUR DAYS LATE / EVERYONE → GASTER · THE SAME ERRAND, A SHORTER LIST / "MORE" MILK · SO THE FIRST LOT RAN OUT.
+- **Footers:** *ON TUESDAY HE SAID HE WAS LEAVING FOR A FEW YEARS AND WAS BACK THE SAME EVENING. IT TOOK FOUR DAYS FOR HIM TO BE RIGHT.* and **★ MORE MILK ★**.
+- **Screenshot helper:** new `moremilk` scene.
+
+![BEAT 415 — MORE MILK](screenshots/477-more-milk.png)
+
+## 2026-08-22 — NEEDED SLEEP · SLEEP HAS BEEN A WEAPON HERE FOR FOUR MONTHS, AND TONIGHT NOBODY PUT THEM UNDER (BEAT 414)
+
+Based on Toby's 2026-08-22 lore, **8:01:41 AM**, same thread. His own typing, in full: *"Flower and Pero destroy the box and they both sleep in the room. The 2 most powerful beings needed sleep, now they sleep in their room. No more players comming in."* Everything from *"Got it — this becomes the quiet final sleep state."* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Sleep has always been something you do to somebody here.** [THE SLEEP RULE](#2026-07-08--the-sleep-rule-beat-76) on July 8. [THE SLEEP CODE](#2026-07-24--the-sleep-code-beat-168) on July 24 — Simon 404's built-in off switch, *"it is in his code,"* and he does not resist it. [SLEEP FOREVER](#2026-07-25--sleep-forever--classics-belongs-to-pero-beat-175) on July 25 — Pero makes Simon 404 sleep forever **because brute force alone could not stop him**. Every time, sleep is a weapon aimed at the most dangerous character in the room. Tonight the two strongest beings in the game go to sleep and **nobody put them under**.
+
+**And "needed" is the first limit anybody here has ever had.** This file runs on INFINITE HEALTH+, ABSOLUTE INFINITY, EATS FOREVER, infinite soulpower/soulmass. A need is a shortage, and four months of things that never run out end on the line that they **needed** sleep.
+
+**And the boxes were all erased three days ago.** [Aug 19, 1:47 PM](#2026-08-19--the-end-beat-378): *"he erased all the boxes, he even erased the whole omniplatforms"* — and the one room left standing was the room where they used to make box animations. **He erased every box in the game and there was still one in the room.** The one they worked on. That is the one that needed two people.
+
+**And the door was already shut, but a door opens.** Aug 19: *"Pero even crashed the game to stop everyone from entering, he closed the barrier."* A crash restarts and a barrier opens. *"No more players comming in"* is permanent because this time he took away the way in — **locking a door is not the same as removing the door**.
+
+**And "the 2 most powerful beings" is the population, not a ranking.** Aug 19 named three permanent characters: Gaster, Pero, Luigi Green. At [3:03 PM yesterday](#2026-08-21--merge_code-beat-405) Luigi Green typed `/merge_code` and went into Gaster. Two is not a rank here. **There is nobody left for them to be more powerful than.**
+
+**And the box-maker is inside the one destroying it.** Aug 18 put it in writing: *"Luigi Green makes and destroys the boxes."* That was his whole job. He has been inside Gaster since 3:03 PM yesterday, so **the last box in the game is broken by the one whose job it was, from inside somebody else.**
+
+**Built as game beat 414, `NEEDED SLEEP`.** Additive; nothing earlier was changed.
+
+- **The stack — EVERY TIME SLEEP HAS APPEARED IN FOUR MONTHS:** *Jul 8, Beat 76* THE SLEEP RULE, a rule about somebody else / *Jul 24, Beat 168* **THE SLEEP CODE**, Simon 404's off switch / *Jul 25, Beat 175* **SLEEP FOREVER**, Pero uses it on him / *Aug 19, 1:47 PM* "they all rest and sleep and relax", one of many / *Aug 22, 8:01 AM* **"THE 2 MOST POWERFUL BEINGS NEEDED SLEEP"**. Closes on **EVERY OTHER TIME, SLEEP WAS SOMETHING ONE OF THEM DID TO SOMEBODY ELSE.**
+- **The column — "THE 2 MOST POWERFUL BEINGS" IS NOT A RANKING:** *Aug 19, "perminently," three* GASTER · PERO · **LUIGI GREEN** → *Aug 22, 8:01 AM, two* FLOWER · PERO, *(merged in at 3:03 yesterday)*. Closes on **THERE IS NOBODY FOR THEM TO BE MORE POWERFUL THAN.**
+- **The box — AND THE BOXES WERE ALL ERASED THREE DAYS AGO:** *Aug 19, 1:47 PM* **"HE ERASED ALL THE BOXES"**, *and the Omniplatforms too* / *what was left* the room where they used to make them, *the last address in Classics* / *Aug 22, 8:01 AM* **"DESTROY THE BOX"**, *singular, and it took both of them*. Closes on **HE ERASED EVERY BOX IN THE GAME AND THERE WAS STILL ONE IN THE ROOM.**
+- **The box — THE DOOR WAS SHUT ON AUG 19. A DOOR OPENS:** *Aug 19, how he shut it* crashed the game, closed the barrier / *Aug 22, how it shuts* **destroyed the box**, **"no more players"**. Closes on **A CRASH RESTARTS AND A BARRIER OPENS. THIS TIME HE TOOK AWAY THE WAY IN** and *locking a door is not the same as removing the door.*
+- **Band — AND "NEEDED" IS THE FIRST LIMIT ANYBODY HERE HAS EVER HAD:** *INFINITE HEALTH+* Aug 18, a number that does not run down, **no limit** / *ABSOLUTE INFINITY* Aug 21, not a rank, a date, **no limit** / *EATS FOREVER* Aug 21, "no longer gets full", **no limit** / *NEEDED SLEEP* Aug 22, the 2 most powerful beings, **a limit**. Closes on **FOUR MONTHS OF THINGS THAT NEVER RUN OUT, AND THE LAST WORD ON THEM IS THAT THEY NEEDED SLEEP.**
+- **Band inset — AND THE BOX-MAKER IS INSIDE THE ONE DESTROYING IT:** Aug 18, *"Luigi Green makes and destroys the boxes"* / Aug 21, 3:03 PM, he merged into Gaster. **The last box in the game is broken by the one whose job it was, from inside somebody else.**
+- **Strip:** NOBODY PUT THEM UNDER · THE FIRST SLEEP HERE THAT IS NOT A WEAPON / "NEEDED" · THE FIRST SHORTAGE IN FOUR MONTHS / THREE, THEN TWO · AND THE THIRD IS INSIDE ONE OF THEM.
+- **Footers:** *THE TWO STRONGEST BEINGS IN THE GAME TURNED OUT TO BE TIRED, AND THAT IS THE FIRST THING EITHER OF THEM HAS RUN SHORT OF.* and **★ NEEDED SLEEP ★**.
+- **Screenshot helper:** new `neededsleep` scene.
+
+![BEAT 414 — NEEDED SLEEP](screenshots/476-needed-sleep.png)
+
 ## 2026-08-21 — /ACTIVATE KARU · THE STRONGEST MOVE IN THE GAME TURNS OUT TO HAVE A KEY (BEAT 412)
 
 Based on Toby's 2026-08-21 lore, **6:30:41 PM**, same thread ("ClassicsAI + More Classics Era lore."), fifty minutes and sixteen seconds after THE ROOM AGAIN. His own typing for this half, in full: *"For Karu, both Gaster and Pero need to be at their normal man forms, and Gaster will say "/activate Karu", then Karu happens."* Everything from *"Got it — this adds two big rules"* onward is a pasted ChatGPT reply and is treated as commentary, not canon. The Roblox code in the same message is built separately as beat 413.
