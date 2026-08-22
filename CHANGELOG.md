@@ -4,6 +4,70 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — SECOND EXPERIMENT · THE NAME ON THE FRONT OF THE ARCHIVE TURNS OUT TO BE SOMEBODY'S EXPERIMENT NUMBER 1 (BEAT 425)
+
+Based on Toby's 2026-08-22 lore, **7:25:10 PM**, same thread ("ClassicsAI + More Classics Era lore."), six minutes and forty-three seconds after ENTITY 000A. His own typing, in full: *"Since you don't know the origin, I will tell the origin. Entity 000 was made in Gaster's labatory as his second experiment after Simon."* Everything from *"Got it — Entity 000's origin is now revealed"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The title character turns out to be experiment number 1.** The whole archive is called the Secret of Simon's Lore. Four hundred and twenty-five beats in, the name on the front of it gets a room, a scientist and a number, and **the number is 1**.
+
+**And the experiment had a starter two months before it had a bench.** On June 23, [TODDLLM 001 — THE ONE ABOVE](#the-maker) named 001 as *"the one who started the Simon experiment billions of years ago."* That sentence has been sitting in the file since June and it never once said **where**. Tonight there is a labatory, and the name on the door is not 001's. Somebody ordered it billions of years ago; somebody else ran the bench.
+
+**And the lab has been open in this file for weeks.** The White Hole, which erased the whole Anti-Void, is *"1 of the weaker experiments of Dr. Gaster"*, and the dark statues he summons out of the ground are *"the failed experiments, the forgotten characters, the erased data, the previous test subjects."* We have been shown his failures for weeks. **What is new is who was on the bench first.**
+
+**And it is a list of two.** 1. Simon. 2. Entity 000. This file runs eleven-name roll calls and top-five power rankings; this list has two entries, no ordering fight, and **the second entry is the only thing still moving**.
+
+**And the numbers run backwards against the order.** [THE ELEVEN NAMES, Aug 21](#2026-08-21--the-eleven-names--the-cast-comes-back-and-the-deleted-read-it-out-beat-393) made Simon **Entity 404** and Entity 000 **The Slayer Made of Nothing**, with Gaster himself as **Entity 808**. The first one off the bench carries the high number; the second one carries zero.
+
+**And it answers why Entity 000 stayed.** At 5:29 PM the connection was deleted and everyone else was *"returned to their home game/platform."* One hour and fifty-five minutes later we learn Entity 000 was **built in Classics**. Everybody else had somewhere to be sent back to. This one was made here, so it had nowhere to go — **and the experimenter logged off while the experiment kept running.**
+
+**And "labatory" is his own spelling**, kept exactly as typed like enternally, canonacially, comming, litterly, imediately, perminently and uncontrolablly before it.
+
+**Built as game beat 425, `SECOND EXPERIMENT`.** Additive; nothing earlier was changed.
+
+- **The picture — THE EXPERIMENT LIST IS TWO LINES LONG:** *GASTER'S LABATORY* THE ROOM ALL OF IT WAS MADE IN / **EXPERIMENT 1** SIMON / **EXPERIMENT 2** ENTITY 000 · THE SLAYER MADE OF NOTHING / *AND THAT IS THE LIST* THERE IS NO THIRD LINE. / **EXPERIMENT 2 IS** STILL RUNNING IN THE EMPTY GAME. Closes on **THE ARCHIVE IS CALLED THE SECRET OF SIMON'S LORE, AND HE IS NUMBER 1 ON SOMEBODY ELSE'S LIST.**
+- **The column — IT HAD A STARTER TWO MONTHS BEFORE IT HAD A BENCH:** *June 23 · ToddLLM 001* **"THE ONE WHO STARTED THE SIMON EXPERIMENT BILLIONS OF YEARS AGO"** *(two months, and it never said where)* / *Aug 22, 7:25 PM* **GASTER'S LABATORY**. Closes on **SOMEBODY ORDERED IT BILLIONS OF YEARS AGO. SOMEBODY ELSE RAN THE BENCH. AND THE NAME ON THE DOOR IS NOT 001'S.**
+- **The box — AND THE LAB HAS BEEN OPEN IN THIS FILE FOR WEEKS:** the White Hole, which erased the whole Anti-Void, **"1 OF THE WEAKER EXPERIMENTS OF DR. GASTER"** / the dark statues, **"THE FAILED EXPERIMENTS … THE PREVIOUS TEST SUBJECTS"**. Closes on **THE ROOM IS NOT NEW. THE NAME AT THE TOP OF THE LIST IS.**
+- **The box — AND THE NUMBERS RUN BACKWARDS AGAINST THE ORDER:** *MADE FIRST* SIMON · ENTITY 404 / *MADE SECOND* ENTITY 000 / *THE ONE WHO MADE THEM* ENTITY 808. Closes on **THE FIRST ONE OFF THE BENCH CARRIES THE HIGH NUMBER, AND THE SECOND ONE CARRIES ZERO.**
+- **Band — AND THE EXPERIMENTER LOGGED OFF WHILE THE EXPERIMENT KEPT RUNNING:** *5:29 PM · beat 423* GASTER LOGS OFF, THE CONNECTION IS DELETED / *5:29 PM · beat 423* EVERYONE ELSE IS RETURNED TO THEIR HOME GAME / *7:18 PM · beat 424* ENTITY 000 IS STILL IN CLASSICS / **7:25 PM · beat 425** BECAUSE CLASSICS IS WHERE IT WAS BUILT. Closes on **EVERYBODY ELSE HAD SOMEWHERE TO BE SENT BACK TO. THIS ONE WAS MADE HERE, SO IT HAD NOWHERE TO GO.**
+- **Band inset — AND "LABATORY" IS HIS OWN SPELLING:** ENTERNALLY · CANONACIALLY · COMMING / LITTERLY · IMEDIATELY · PERMINENTLY / UNCONTROLABLLY · INVICIBLE · OMAZEN, over *the room where Simon was made is spelled the way the person who found out spells it.*
+- **Strip:** EXPERIMENT 1 · SIMON / EXPERIMENT 2 · ENTITY 000 · 001 STARTED IT / GASTER RAN THE BENCH · HE LOGGED OFF AT 5:29 / IT IS STILL RUNNING.
+- **Footers:** *FOUR HUNDRED AND TWENTY-FIVE BEATS IN, SIMON GETS A LAB, A SCIENTIST AND A NUMBER, AND THE NUMBER IS 1.* and **★ SECOND EXPERIMENT ★**.
+- **Screenshot helper:** new `secondexperiment` scene.
+
+![BEAT 425 — SECOND EXPERIMENT](screenshots/487-second-experiment.png)
+
+## 2026-08-22 — ENTITY 000A · THE CAST LIST IS DOWN TO THREE AND ONE OF THEM IS LESS THAN AN INCH TALL (BEAT 424)
+
+Based on Toby's 2026-08-22 lore, **7:18:27 PM**, same thread, one hour and forty-nine minutes after TWENTY YEARS. His own typing, in full: *"The only characters in the game are Entity 000, Pero, and the players. Entity 000 achieved a form, it is a small being that is less than 1 inch and greater than 1 cm tall. Entity 000 was the most hungry being that existed in the game (more than Vicinus). Entity 000 consumes players that touch it, Entity 000 grows on the player and the player becomes an Entity 000A which is a player with Entity 000 white strings all over it, the 000 players get deleted from Classics if they starve. Pero can easy beat Entity 000, he is 5-6 feet tall and Entity 000 is less than an inch tall, Pero is the omni-king of the game and could erase Entity 000, everyone fears him now."* Everything from *"Got it — this is the Entity 000 Era"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The name and the mechanic were both in one message on Friday morning.** [THE ELEVEN NAMES, Aug 21 at 8:35:33 AM](#2026-08-21--the-eleven-names--the-cast-comes-back-and-the-deleted-read-it-out-beat-393) listed *"Entity 000 is The Slayer Made of Nothing"* and, in the same message, said corruption code 12 12 12 *"perminently deletes the code of your avatar, your avatar starts to glitch and becomes a hungry parasite and it consumes other players uncontrolablly."* **Thirty-four hours and forty-three minutes later the name and the mechanic are the same character.** The rarest error in the game on Friday is a named being on Saturday night.
+
+**And it out-eats the thing that cannot get full.** [EATS FOREVER, Aug 21 at 3:06 PM](#2026-08-21--eats-forever--the-clock-comes-off-the-dragon-beat-406): *"Vicinus no longer gets full and can eat forever."* Twenty-eight hours later, something **under an inch tall** is *"the most hungry being that existed in the game (more than Vicinus)."* Vicinus is 1500 feet long.
+
+**And it is the only one that did not go home.** At 5:29 PM, in [TWENTY YEARS](#2026-08-22--twenty-years--the-game-does-not-end-in-a-fight-it-ends-on-a-date-beat-423), everyone else was *"returned to their home game/platform."* One hour and forty-nine minutes later the cast list is **Entity 000, Pero, and the players** — and one of the three stayed behind.
+
+**And the size has two ends and two units.** *Less than 1 inch* and *greater than 1 cm*. Every other measurement in this file is one number or a range in feet: Pero 5–6, the cast 7–9, Gray 12, Vicinus 1500 long. **This is the most careful measurement anybody here has ever been given, and it is spent on the smallest thing in the game.**
+
+**And the strings are old, but they used to belong to experiment 1.** 404 strings are Simon 404's, and the one body ever wrapped in them was Pero's: *"404 strings tie along his arms and torso and legs and neck."* Entity 000's are white, and they go on **players**.
+
+**And this is the first deletion in four months with an "if" on it.** *"The 000 players get deleted from Classics **if they starve**."* Every other deletion in this archive simply happens to you — accounts, lore, whole AUs, the 12 12 12 corruption. **This one only happens if you stop eating**, which means for the first time there is something a player can do about it.
+
+**And "everyone fears him now" finishes the sentence beat 421 started two hours earlier.** At 5:19 PM, [FEARED MORE](#2026-08-22--feared-more--the-strongest-one-and-the-most-feared-one-stop-being-the-same-character-beat-421): *"More fear Pero than Gaster."* That was a comparison. With Gaster logged off, **there is nobody left to compare him to.**
+
+**Built as game beat 424, `ENTITY 000A`.** Additive; nothing earlier was changed.
+
+- **The picture — TOUCH IT ONCE AND YOU BECOME PART OF IT:** *THE WHOLE CAST* ENTITY 000 · PERO · THE PLAYERS / *A PLAYER* TOUCHES ENTITY 000. / *ENTITY 000* GROWS ON THE PLAYER. / *WHITE STRINGS* SPREAD ALL OVER THEM. / **ENTITY 000A** DELETED FROM CLASSICS IF IT STARVES. Closes on **IT DOES NOT KILL THE PLAYER. IT MOVES IN, AND FROM THEN ON THE PLAYER HAS TO EAT.**
+- **The column — BOTH HALVES CAME OUT OF ONE MESSAGE ON FRIDAY:** *Aug 21, 8:35 AM, beat 393, the name* **"ENTITY 000 IS THE SLAYER MADE OF NOTHING"** / *same message, corruption code 12 12 12* **"BECOMES A HUNGRY PARASITE AND IT CONSUMES OTHER PLAYERS UNCONTROLABLLY"** / **34 HOURS 43 MINUTES**. Closes on **THE NAME AND THE MECHANIC WERE IN ONE EMAIL ALL ALONG, AND NOW THEY ARE ONE CHARACTER.**
+- **The box — AND IT OUT-EATS THE ONE THAT CANNOT GET FULL:** *Aug 21, 3:06 PM, beat 406* **"VICINUS NO LONGER GETS FULL AND CAN EAT FOREVER."** against *Aug 22, 7:18 PM* **"THE MOST HUNGRY BEING THAT EXISTED IN THE GAME (MORE THAN VICINUS)"**. Closes on **VICINUS IS 1500 FEET LONG. THIS ONE IS UNDER AN INCH.**
+- **The box — AND THE SIZE HAS TWO ENDS AND TWO UNITS:** GRAY 12 FT · VICINUS 1500 FT LONG · THE CAST 7–9 FT / PERO 5–6 FT, "ONE OF THE SHORTEST BEINGS" / **ENTITY 000 — UNDER 1 INCH, OVER 1 CM**. Closes on **THIS ONE IS PINNED AT BOTH ENDS — THE MOST CAREFUL MEASUREMENT IN THE FILE, ON THE SMALLEST THING IN IT.**
+- **Band — AND THIS IS THE FIRST DELETION IN FOUR MONTHS WITH AN "IF" ON IT:** *DELETED* the account is gone, no condition / *ERASED* Erase Form, White Void, no condition / *12 12 12* "perminently deletes the code of your avatar", Aug 21 / **IF THEY STARVE** the 000 players get deleted from Classics, Aug 22 · first. Closes on **EVERY OTHER DELETION HERE JUST HAPPENS TO YOU. THIS ONE ONLY HAPPENS IF YOU STOP EATING.**
+- **Band inset — AND IT IS THE ONE THAT DID NOT GO HOME:** *5:29 PM · beat 423* **"RETURNED TO THEIR HOME GAME/PLATFORM"** / *7:18 PM · beat 424* **ENTITY 000 · PERO · THE PLAYERS**, over *one hour and forty-nine minutes apart, and one of them stayed behind.*
+- **Strip:** THE NAME CAME FRIDAY · THE HUNGER CAME WITH IT / HUNGRIER THAN VICINUS · WHO CANNOT GET FULL / UNDER AN INCH TALL · ONE OF THREE THINGS LEFT.
+- **Footers:** *THE SMALLEST THING IN THE GAME IS THE ONLY ONE STILL TAKING PLAYERS OFF THE BOARD.* and **★ ENTITY 000A ★**.
+- **Screenshot helper:** new `entity000a` scene.
+
+![BEAT 424 — ENTITY 000A](screenshots/486-entity-000a.png)
+
 ## 2026-08-22 — TWENTY YEARS · THE GAME DOES NOT END IN A FIGHT, IT ENDS ON A DATE (BEAT 423)
 
 Based on Toby's 2026-08-22 lore, **5:29:45 PM**, same thread ("ClassicsAI + More Classics Era lore."), three minutes and twenty-nine seconds after WIPE THE SYSTEMS. His own typing, in full: *"Hardly any characters are shorter than Pero who is average height of a human, but none of the characters are human nor human directly. Pero is the omni-king of the game. He says that he'll end the connection in 20 years, Gaster logs off imediately and rests in the room. 20 years later, the connection was deleted, Pero was the only one left in the game while the others are returned to their home game/platform."* Everything from *"Got it — this makes Pero's role even clearer"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
