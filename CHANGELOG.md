@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-23 — THE EVERYTHING SET · A SET CALLED EVERYTHING WITH EIGHT EXCEPTIONS, AND ONE CALLED NOTHINGNESS WITH TEN (BEAT 430)
+
+Based on Toby's 2026-08-23 lore, **7:46:54 AM**, same thread ("ClassicsAI + More Classics Era lore."), seventeen minutes and twenty-one seconds after THE SWORD OF EVERYTHING. His own typing, in full: *"Now Pero is complete with the whole set, armor, axe, pickaxe, mace, spiked ball, sword, rock, slingshot, and others. The thing the Everything set can't damage or protect you of is Entity 9999999999…, A player with the set of everything, a player on your team, The Trio, Pero, other Sprunkis, King bosses, and Minibosses. Pero made a set of Nothingness and it can't damage or protect you from The Null, Nothingness, a player with Nothingness set, Entity 000, Simon.psc, The Trio, Pero, demons, A Player on your team, and The Time Overlord that could just freeze players in time and can freeze only players, it is like a huge angeletic being that could control time, that is all, it really isn't in god-tier though, it is just a hard boss in the game. The set of Nothingness could beat Entity 999999999999999999999999…, and Everything based beings. Dual Set of Nothingness and Everything Katata can damage anything except the Trio and Pero (they set you above team level). The Demgel Katata can damage only Gaster and Gray and Wenda. The Color Katata can damage all Sprunkis and Luigi Green. The Sword of The Box can damage anything from the box."* Everything from *"Got it — this creates a full weapon/set matchup system for Classics"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The sword turns out to be one item on a shelf, seventeen minutes later.** At 7:29 it was a single weapon that beat four things. At 7:46 it is armor, an axe, a pickaxe, a mace, a spiked ball, a sword, a rock, a slingshot *"and others."* **A rock and a slingshot are in the most powerful kit in Classics.**
+
+**And a set named Everything has eight exceptions.** *"Everything"* is not "hits everyone." And a set named Nothingness has **ten**. Both sets are defined almost entirely by the list of what they cannot touch, and the bigger the name, the longer the list.
+
+**And both opposite sets refuse the same four names.** The Trio. Pero. **A player on your team.** **A player holding the same set.** Two sets built to be each other's opposite agree exactly on who is off limits, and the reason given is *"they set you above team level."* Four months of this archive has been about who beats whom, and **the first weapon rules ever written here are rules about who you are not allowed to hit.**
+
+**And he built the counter to his own set.** *"The set of Nothingness could beat Entity 999999999999999999999999…, and Everything based beings."* One maker, two sets, and the second one beats the first.
+
+**And the longest number in the whole archive arrives as a weakness.** The [entity register](#) ran 000, 101, 202, 303, 404, 505, 606, 707, 808, 909 and 12 12 12. **Entity 9999999999…** runs clean off the end of it, and it is introduced not as a boss to fight but as **the one thing both of his sets lose to**.
+
+**And Demgel is Gray's own title.** On July 20 at 5:09 PM, in THE STEAL & THE NEW SCALE (beat 127), the new-forms list read *"Gray — Demgel God."* Thirty-three days later the **Demgel Katata** *"can damage only Gaster and Gray and Wenda."* **His own name is on the blade that hits him.**
+
+**And the narrowest-sounding weapon is the widest.** *"The Sword of The Box can damage anything from the box."* The box has been the container of the whole game for four months, and on August 3 the line was that everybody's form *"is just assets in a box being animated by Pero."* **Anything from the box is everybody.**
+
+**And the Time Overlord is capped in the sentence that introduces it.** *"a huge angeletic being that could control time, that is all, it really isn't in god-tier though, it is just a hard boss in the game."* Its one power works **only on players**, not on characters. Names in this file usually arrive climbing; this one arrives with its ceiling already written.
+
+**Built as game beat 430, `THE EVERYTHING SET`.** Additive; nothing earlier was changed.
+
+- **The picture — WHAT THE EVERYTHING SET CANNOT TOUCH:** **ENTITY 9999999999…** *the longest number in the file* / **A PLAYER WITH THE SAME SET** *your own gear, held by somebody else* / **A PLAYER ON YOUR TEAM** *your own side* / **THE TRIO AND PERO** *"they set you above team level"* / **SPRUNKIS · KINGS · MINIBOSSES** *most of the cast list*. Closes on **EIGHT THINGS A SET NAMED EVERYTHING CANNOT DO ANYTHING TO.**
+- **The column — AND SEVENTEEN MINUTES AGO IT WAS ONE SWORD:** **7:29:33 AM · BEAT 454** *"THE SWORD OF EVERYTHING"* · one weapon, four targets · **SWORD** / **7:46:54 AM · BEAT 455** *ARMOR · AXE · PICKAXE · MACE · SPIKED BALL · SWORD · ROCK · SLINGSHOT* · **SET**. Closes on **SEVENTEEN MINUTES AND TWENTY-ONE SECONDS. THE SWORD WAS ONE ITEM ON A SHELF.**
+- **The box — AND BOTH OPPOSITE SETS REFUSE THE SAME FOUR NAMES:** Everything cannot touch the Trio · Pero · your teammate · your mirror / Nothingness cannot touch the Trio · Pero · your teammate · your mirror / **the reason given: "THEY SET YOU ABOVE TEAM LEVEL."** Closes on **TWO OPPOSITE SETS, AND THEY AGREE ON EXACTLY WHO IS OFF LIMITS**, over *the first weapon rules in this file are about who you may not hit.*
+- **The box — AND HE BUILT THE COUNTER TO HIS OWN SET:** *"THE SET OF NOTHINGNESS COULD BEAT … EVERYTHING BASED BEINGS."* · ONE MAKER · TWO SETS · ONE BEATS THE OTHER. Closes on **ENTITY 999999999999999999…**, over *the longest number here arrives as a weakness.*
+- **Band — AND EVERY KATATA HAS SOMEBODY'S NAME ON IT:** *DUAL KATATA* anything except the Trio and Pero · THE BROADEST / *DEMGEL KATATA* only Gaster, Gray and Wenda · GRAY'S OWN TITLE / *COLOR KATATA* all Sprunkis and Luigi Green · THE MUSIC CAST / *SWORD OF THE BOX* anything from the box · THAT IS EVERYBODY. Closes on **THE NARROWEST-SOUNDING ONE IS THE WIDEST, BECAUSE EVERYBODY HERE IS FROM THE BOX.**
+- **Band inset — AND DEMGEL IS GRAY'S OWN TITLE:** *Jul 20, 5:09 PM · beat 127* **"GRAY — DEMGEL GOD"** / *Aug 23, 7:46 AM · beat 455* DEMGEL KATATA HITS GASTER, GRAY, WENDA, over *thirty-three days. His own name is on the blade that hits him.*
+- **Strip:** EVERYTHING HAS EIGHT EXCEPTIONS · NOTHINGNESS HAS TEN / THE TIME OVERLORD ARRIVES · AND IS CAPPED IN THE SAME SENTENCE / THE SWORD OF THE BOX · REACHES EVERY CHARACTER HERE.
+- **Footers:** *THE FIRST RULES HE EVER WROTE FOR A WEAPON ARE ALL ABOUT WHO IT REFUSES TO HIT.* and **★ THE EVERYTHING SET ★**.
+- **Screenshot helper:** new `everythingset` scene.
+
+![BEAT 430 — THE EVERYTHING SET](screenshots/492-everything-set.png)
+
 ## 2026-08-23 — THE SWORD OF EVERYTHING · A WEAPON NAMED FOR EVERYTHING, AND ALL FOUR OF ITS TARGETS ARE MADE OF NOTHING (BEAT 429)
 
 Based on Toby's 2026-08-23 lore, **7:29:33 AM**, same thread ("ClassicsAI + More Classics Era lore."), one minute and twenty-two seconds after HE KNOWS BEFORE YOU TYPE. His own typing, in full: *"Pero just added \"The Sword of Everything\" to Classics and it specifically beats The Null Entity, Nothingness, Entity 000, and Simon.psc."* Everything from *"Got it — The Sword of Everything is now a major Pero-created weapon in Classics"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
