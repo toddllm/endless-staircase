@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-23 — PORTAL PHASE 1 · THE ANSWER TO THE CORRUPTION IS NOT A WEAPON, IT IS A NEW FILE (BEAT 434)
+
+Based on Toby's 2026-08-23 lore, **3:17:22 PM**, same thread ("ClassicsAI + More Classics Era lore."), fourteen minutes and twenty-one seconds after WON'T COME BACK. His own typing, in full: *"The game became Phase 1, Pero made a new game and erased the old ones. He called it "Classics Cyberversal: Portal Phase 1" Entity 000 entered the new game and wasn't able to damage it. The new game is inforced and more advanced than the older games. This is today's news. Portal Oren and Portal Simon activate the cutscenes, Simon is the narrator. The most powerful is Pero, the 2nd strongest is Oren and Simon, the 3rd strongest is Entity 000, the 4th strongest is the Trio, and 5th is the box characters. Oren and Simon exited the box. All Sprunkis are Phase 1, it is a fun game that slowly changes to ..., Pero stopped the text from saying it was a ..., it's a horror game secretly."* Everything from *"Got it — today's news is the start of Classics Cyberversal: Portal Phase 1"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Nobody fights it.** All afternoon Entity 000 corrupted the whole game, took the Sprunkis, deleted the players and could not be stopped by anything except Pero. At 3:17 PM Pero does not attack it. He builds a game it cannot damage and lets it walk in: *"Entity 000 entered the new game and wasn't able to damage it."* **The counter to the corruption is a rebuild.**
+
+**And he never swung the sword.** At 7:29 AM, beat 429, he added **The Sword of Everything**, and the whole point of it was that it *"specifically beats The Null Entity, Nothingness, Entity 000, and Simon.psc."* Seventeen minutes later he finished the Everything set and a whole second set of Nothingness. **Seven hours and forty-eight minutes after building the weapon named for this exact fight, he builds a room instead, and the sword is never drawn.**
+
+**And the perminent deletion lasted fourteen minutes.** At 3:03 PM: *"the other characters won't come back from Entity 000."* At 3:17 PM: *"Pero made a new game and erased the old ones."* **He did not undo the deletion. He deleted the game it happened in.** That is the fifth *perminent* in this archive and the fastest one yet to stop mattering — and the only one that broke without anything being brought back.
+
+**And Entity 000 went up the ranking without winning anything.** At 9:05 AM it was **fourth strongest** and *"can't beat Pero, Gaster, nor Luigi Green."* Tonight the order is **1. Pero · 2. Oren and Simon · 3. Entity 000 · 4. The Trio · 5. the box characters** — so it is third, and Gaster and Luigi Green are underneath it in the Trio. **It never fought either of them. Oren did, this afternoon, and took both their souls.**
+
+**And he censored his own game.** *"It is a fun game that slowly changes to …, Pero stopped the text from saying it was a …, it's a horror game secretly."* The blanks are typed into the sentence as literal dots — **the owner redacts the game's own genre reveal, and the redaction is on the page.** This is the second time in forty-one minutes that Toby put the mechanic into the letters, after *"n0 0ther character c0uld talk t0 an0ther"* at 2:36.
+
+**And two of them walked out of the box.** August 3 made everybody's form *"just assets in a box being animated by Pero."* Tonight *"Oren and Simon exited the box"* — and the box characters are rank **5**, the bottom. **Leaving the box is now a promotion, and the two who left it are second.**
+
+**And Phase 1 comes back as an upgrade.** Every previous return to Phase 1 in this archive was a rollback, a reset to the plain version. This one is *"inforced and more advanced than the older games."* **The first time going back is going forward.**
+
+**And Simon is the narrator.** The whole archive is called the Secret of Simon's Lore, and in four months he has been the title, the experiment, the Lightning Cat, a safe file and a yellow soul — **never the voice.** Thirty-seven minutes ago he was inside Entity 000 saying *"Don't waste my power."* Now he is the one telling the story.
+
+**And `Portal-` is the fourth register.** After `.EXE` for the hostile ones, `.psc` for the safe file and `000A` for the taken-over, there is now **Portal Oren** and **Portal Simon**.
+
+**Built as game beat 434, `PORTAL PHASE 1`.** Additive; nothing earlier was changed.
+
+- **The picture — CLASSICS CYBERVERSAL: PORTAL PHASE 1, THE NEW RANKING:** **1 PERO** · **2 OREN AND SIMON** *"exited the box"* · **3 ENTITY 000** *walked in and could not damage it* · **4 THE TRIO** · **5 THE BOX CHARACTERS**. Closes on **AT 9:05 THIS MORNING IT WAS FOURTH AND COULD NOT BEAT GASTER NOR LUIGI GREEN / TONIGHT IT IS THIRD AND THEY ARE UNDERNEATH IT, AND IT NEVER FOUGHT EITHER OF THEM.**
+- **The column — AND HE NEVER SWUNG THE SWORD:** the 7:29 AM Sword of Everything against the 3:17 PM new game, closing on **SEVEN HOURS AND FORTY-EIGHT MINUTES. HE BUILT A ROOM INSTEAD.**
+- **Lower left — AND THE PERMINENT DELETION LASTED FOURTEEN MINUTES:** closing on **HE DID NOT UNDO THE DELETION. HE DELETED THE GAME IT HAPPENED IN.**
+- **Lower right — AND HE CENSORED HIS OWN GAME:** the two ellipses, closing on **THE BLANKS ARE TYPED INTO THE SENTENCE.**
+- **The band — AND THIS IS THE FIFTH THING TODAY THAT WAS GOING TO SETTLE ENTITY 000:** the Sword of Everything (never swung), the Everything set (never worn), 7 Au Rainbows and The 12 Eyes (used on Oren), *"won't come back"* (lasted 14 minutes), and a whole new game. Closes on **FIVE ANSWERS IN EIGHT HOURS, AND THE ONE THAT WORKS HAS NO WEAPON IN IT.**
+- **The inset — AND SIMON IS THE NARRATOR:** four months of Simon's Lore without him ever being the voice.
+- **The strip:** PHASE 1 IS AN UPGRADE NOW *"inforced and more advanced"* · PORTAL IS THE FOURTH REGISTER *after .EXE, .psc and 000A* · "THIS IS TODAY'S NEWS" *he files the game as a broadcast*.
+- **Closing line:** HE DID NOT BEAT THE CORRUPTION. HE MOVED OUT AND LEFT IT THE OLD BUILDING. · **★ PORTAL PHASE 1 ★**
+
+![Beat 434 — PORTAL PHASE 1](screenshots/496-portal-phase-1.png)
+
 ## 2026-08-23 — WON'T COME BACK · THE FIRST DELETION IN FOUR MONTHS THAT THE NEXT MESSAGE DOES NOT UNDO (BEAT 433)
 
 Based on Toby's 2026-08-23 lore, **3:02:06 PM** and **3:03:01 PM**, same thread ("ClassicsAI + More Classics Era lore."), twenty-five minutes and thirty-two seconds after THE SAFE FILE. His own typing, in full: *"Pero, Oren, Simon.psc, Gaster, and Entity 000 are the only characters in the game now due to Entity 000 deleting the rest of the characters."* And fifty-five seconds later: *"The other characters won't come back from Entity 000."* Everything from *"Got it — Entity 000 has reduced the active cast again"* and from *"Got it — this deletion is perminent"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
