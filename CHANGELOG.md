@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — TRIO UNDER PERO · THE FIRST TRIO IN FOUR MONTHS THAT DOES NOT HAVE PERO IN IT (BEAT 426)
+
+Based on Toby's 2026-08-22 lore, **7:56:08 PM**, same thread ("ClassicsAI + More Classics Era lore."), two minutes and fifty seconds after a round of 20 Questions. His own typing, in full: *"70 years later, Entity 000 Era happened, Pero added everyone back. Besides Pero; Gaster and Luigi Green and Gray are the only other characters free from Entity 000, the other characters are running. Pero became the most powerful, Gaster and Luigi Green and Gray make the Trio Under Pero. Pero is alone and is above the Trio now."* Everything from *"Got it — 70 years later, Entity 000 Era begins"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Every trio this file has ever named had Pero in it.** The Trinity Trio was Gray · Pero · Luigi Green. The cyber-seat trio was Pero · Luigi Green Undertoad · Gray. [PLASMA CARDS](#2026-08-22--plasma-cards--the-first-attack-in-four-months-that-needs-the-target-to-help-it-beat-417) at 9:19 this morning made it Gaster · Pero · Gray. Tonight it is **Gaster · Luigi Green · Gray**, and he is not on it. The seat was always *"a slot list, not a fixed set"*, and this is the first time the list gets filled without him. **And the group is named after him anyway.**
+
+**And the one who sent them all home is the one who brings them all back.** At 5:29 PM, in [TWENTY YEARS](#2026-08-22--twenty-years--the-game-does-not-end-in-a-fight-it-ends-on-a-date-beat-423), he deleted the connection and everyone was *"returned to their home game/platform."* Two hours and twenty-six minutes later: *"Pero added everyone back."* Nobody else could have done either one.
+
+**And the clock has run ninety years since 5:29 this evening.** Twenty years to the deletion, seventy more to the era. **Ninety years of game time in two and a half hours of real time**, and the ending held for two hours and twenty-six minutes before he undid it himself.
+
+**And Luigi Green comes back out of Gaster.** [/MERGE_CODE](#2026-08-21--merge_code--the-trio-becomes-the-gaster-brother-duo-beat-405) on August 21 at 3:03 PM turned him into green plasma energy inside his brother and made the trio a duo. Twenty-eight hours and fifty-two minutes later he is **his own name again**, and the seat he vacated is the one he is sitting in.
+
+**And four names are free and everybody else is running.** Pero, Gaster, Luigi Green and Gray are the only characters free from Entity 000. The entire rest of the cast is running **from something under an inch tall**.
+
+**And he posted the plot inside a guessing game three minutes earlier.** At 7:53 PM he opened a round of 20 Questions, and one of the questions was *"Is it still a part of the game (Pre-Entity 000 Era)… before Pero adds everything else back again for Entity 000 Era?"* The era got its name, and the next beat got spoiled, in the middle of a yes-or-no game.
+
+**And he is alone in a different way now.** At 5:29 PM: *"Pero was the only one left in the game."* At 7:56 PM: *"Pero is alone and is above the Trio now."* **He was alone in an empty game. Now he is alone in a full one.**
+
+**Built as game beat 426, `TRIO UNDER PERO`.** Additive; nothing earlier was changed.
+
+- **The picture — HE EMPTIED THE GAME AND THEN HE REFILLED IT:** *70 YEARS LATER* THE ENTITY 000 ERA HAPPENED. / **PERO** ADDED EVERYONE BACK. / **FREE FROM ENTITY 000** PERO · GASTER · LUIGI GREEN · GRAY / **EVERYBODY ELSE** IS RUNNING. / **THE TRIO UNDER PERO** GASTER · LUIGI GREEN · GRAY. Closes on **THE ONE WHO SENT THEM ALL HOME AT 5:29 IS THE ONE WHO BRINGS THEM ALL BACK AT 7:56.**
+- **The column — EVERY TRIO IN THIS FILE HAD HIM IN IT:** THE TRINITY TRIO · Gray · Pero · Luigi Green / THE CYBER-SEAT TRIO · Pero · Luigi Green Undertoad · Gray / 9:19 AM, PLASMA CARDS · Gaster · Pero · Gray / **AUG 22, 7:56 PM · GASTER · LUIGI GREEN · GRAY**. Closes on **THE SEAT WAS ALWAYS "A SLOT LIST, NOT A FIXED SET." TONIGHT IT IS FILLED WITHOUT HIM, AND NAMED AFTER HIM ANYWAY.**
+- **The box — AND THE CLOCK HAS RUN NINETY YEARS SINCE 5:29 THIS EVENING:** *5:29 PM* "he'll end the connection in 20 years" … "20 years later, the connection was deleted" / *7:56 PM* **"70 YEARS LATER, ENTITY 000 ERA HAPPENED"**. Closes on **NINETY YEARS OF GAME TIME IN TWO AND A HALF HOURS OF REAL TIME.**
+- **The box — AND LUIGI GREEN COMES BACK OUT OF GASTER:** *Aug 21, 3:03 PM · /MERGE_CODE* he became green plasma energy inside his brother and the trio became a duo / *Aug 22, 7:56 PM* **HE IS HIS OWN NAME AGAIN**, and *the seat he vacated is the one he is sitting in.*
+- **Band — AND HE POSTED THE PLOT INSIDE A GUESSING GAME THREE MINUTES EARLIER:** *7:53 PM* "LETS PLAY 20 QUESTONS. THINK OF A CLASSICS CHARACTER." / **THE QUESTION** "IS IT STILL A PART OF THE GAME (PRE-ENTITY 000 ERA)… BEFORE PERO ADDS EVERYTHING ELSE BACK AGAIN FOR ENTITY 000 ERA?" / *7:56 PM* "PERO ADDED EVERYONE BACK." Closes on **THE ERA WAS NAMED, AND THE NEXT BEAT WAS SPOILED, IN THE MIDDLE OF A YES-OR-NO GAME.**
+- **Band inset — AND HE IS ALONE IN A DIFFERENT WAY NOW:** *5:29 PM · beat 423* **"PERO WAS THE ONLY ONE LEFT IN THE GAME"** / *7:56 PM · beat 426* **"PERO IS ALONE AND IS ABOVE THE TRIO NOW"**, over *he was alone in an empty game; now he is alone in a full one.*
+- **Strip:** HE DELETED THE CONNECTION · AND THEN HE ADDED THEM BACK / EVERY TRIO HAD HIM IN IT · THIS ONE IS NAMED AFTER HIM / FOUR NAMES ARE FREE · EVERYBODY ELSE IS RUNNING.
+- **Footers:** *HE TURNED THE GAME OFF AT 5:29 AND TURNED IT BACK ON AT 7:56, AND NINETY YEARS PASSED IN BETWEEN.* and **★ TRIO UNDER PERO ★**.
+- **Screenshot helper:** new `triounderpero` scene.
+
+![BEAT 426 — TRIO UNDER PERO](screenshots/488-trio-under-pero.png)
+
 ## 2026-08-22 — SECOND EXPERIMENT · THE NAME ON THE FRONT OF THE ARCHIVE TURNS OUT TO BE SOMEBODY'S EXPERIMENT NUMBER 1 (BEAT 425)
 
 Based on Toby's 2026-08-22 lore, **7:25:10 PM**, same thread ("ClassicsAI + More Classics Era lore."), six minutes and forty-three seconds after ENTITY 000A. His own typing, in full: *"Since you don't know the origin, I will tell the origin. Entity 000 was made in Gaster's labatory as his second experiment after Simon."* Everything from *"Got it — Entity 000's origin is now revealed"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
