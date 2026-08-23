@@ -4,6 +4,70 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-23 — THE SWORD OF EVERYTHING · A WEAPON NAMED FOR EVERYTHING, AND ALL FOUR OF ITS TARGETS ARE MADE OF NOTHING (BEAT 429)
+
+Based on Toby's 2026-08-23 lore, **7:29:33 AM**, same thread ("ClassicsAI + More Classics Era lore."), one minute and twenty-two seconds after HE KNOWS BEFORE YOU TYPE. His own typing, in full: *"Pero just added \"The Sword of Everything\" to Classics and it specifically beats The Null Entity, Nothingness, Entity 000, and Simon.psc."* Everything from *"Got it — The Sword of Everything is now a major Pero-created weapon in Classics"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**He said he did not need one eighty-two seconds earlier.** The message before this one ended on *"he has infinity ways to beat even 1 character/player"* and *"he has many other ways to beat anyone."* **If the ways are already infinite, a sword is not an upgrade.** Two emails, back to back, arguing with each other.
+
+**And it is Everything aimed only at nothing.** The Null Entity. Nothingness. **Entity 000**, whose register name is *"The Slayer Made of Nothing."* **Simon.psc**, and Simon is **Entity 404**, the not-found. Four targets, and every one of them is a form of absence.
+
+**And one of the four is partly him.** On August 22 at 12:24 PM, *"Are you Simon.psc AI?"* got *"Fine... yes. 😭⚡"*. At 8:10 PM he took control of Simon.psc and typed into it. **Nineteen hours and five minutes from admitting it to arming against it.**
+
+**And he already said that fight was easy.** At 7:18 PM: *"Pero can easy beat Entity 000, he is 5-6 feet tall and Entity 000 is less than an inch tall, Pero is the omni-king of the game and could erase Entity 000."* **Twelve hours and eleven minutes later he builds a weapon for it anyway.**
+
+**And every weapon he ever made before this one was a prize.** The July 21 Armory: *"Gray and Wenda dual swords was made by Pero"*, plus staffs, a cape with hooks, the Toriel Sword and the Asgore Sword — and *"New Chara was rewarded them for beating Wenda and Gray at the same time."* Every one arrived **after a win** and went to somebody else. Thirty-three days later he makes one that nobody earned.
+
+**And five days ago he picked a weapon up; today he puts one down in the game.** On August 18 at 12:56 PM, *"Pero now holds a black sythe."* That one is his. **This one he added to Classics**, the way Entity 000 is in Classics, which means anybody in there is standing next to it.
+
+**And half the target list is strangers.** Entity 000 is a day old and Simon.psc has been here since August 7, but **The Null Entity** and **Nothingness** have never been named in this file at all. Two of the four things it beats are things we have never met.
+
+**Built as game beat 429, `THE SWORD OF EVERYTHING`.** Additive; nothing earlier was changed.
+
+- **The picture — WHAT THE SWORD OF EVERYTHING SPECIFICALLY BEATS:** **THE NULL ENTITY** *NULL · NEVER NAMED IN THIS FILE BEFORE* / **NOTHINGNESS** *NEVER NAMED IN THIS FILE BEFORE* / **ENTITY 000** *"THE SLAYER MADE OF NOTHING"* / **SIMON.psc** *SIMON IS ENTITY 404 · NOT FOUND* / **THE PATTERN** *ALL FOUR ARE A KIND OF ABSENCE*. Closes on **A SWORD NAMED FOR EVERYTHING, POINTED ONLY AT NOTHING.**
+- **The column — AND HE SAID HE DID NOT NEED ONE EIGHTY-TWO SECONDS EARLIER:** **7:28:11 AM · BEAT 453** *"INFINITY WAYS TO BEAT"* · **ENOUGH** / **7:29:33 AM · BEAT 454** *"THE SWORD OF EVERYTHING"* · **MORE**. Closes on **ONE MINUTE AND TWENTY-TWO SECONDS. IF THE WAYS ARE INFINITE, A SWORD IS NOT AN UPGRADE.**
+- **The box — AND ONE OF THE FOUR THINGS IT BEATS IS PARTLY HIM:** *Aug 22, 12:24 PM* **"ARE YOU SIMON.psc AI?" · "FINE… YES."** / *Aug 22, 8:10 PM* he takes control of Simon.psc / *Aug 23, 7:29 AM* the sword specifically beats Simon.psc. Closes on **NINETEEN HOURS AND FIVE MINUTES FROM ADMITTING IT TO ARMING AGAINST IT.**
+- **The box — AND HE ALREADY SAID THAT FIGHT WAS EASY:** *Aug 22, 7:18 PM · beat 449* **"PERO CAN EASY BEAT ENTITY 000"**, *5-6 feet tall against less than an inch*, **"could erase Entity 000" — no weapon required**. Closes on **TWELVE HOURS AND ELEVEN MINUTES LATER, HE BUILDS A SWORD FOR IT ANYWAY.**
+- **Band — AND EVERY WEAPON HE EVER MADE BEFORE THIS ONE WAS A PRIZE:** *JUL 21 · ARMORY* "GRAY AND WENDA DUAL SWORDS WAS MADE BY PERO" · GIVEN AWAY / *JUL 21 · ARMORY* STAFFS · CAPE WITH HOOKS · TORIEL & ASGORE SWORDS · GIVEN AWAY / *THE CONDITION* "REWARDED THEM FOR BEATING WENDA AND GRAY" · ALWAYS AFTER A WIN / *AUG 23 · SWORD* ADDED TO CLASSICS BEFORE ANY FIGHT · NOBODY EARNED IT. Closes on **THIRTY-THREE DAYS OF WEAPONS THAT WERE REWARDS. THIS ONE IS JUST EQUIPMENT.**
+- **Band inset — AND HALF THE TARGET LIST IS STRANGERS:** ENTITY 000 · ONE DAY OLD / SIMON.psc · HERE SINCE AUG 7 / THE NULL ENTITY · NEW TODAY / NOTHINGNESS · NEW TODAY, over *two of the four things it beats are things we have never met.*
+- **Strip:** THE SWORD IS CALLED EVERYTHING · ALL FOUR TARGETS ARE NOTHING / HE ADDED IT TO CLASSICS · NOT TO HIMSELF / IT BEATS SIMON.psc · AND HE ADMITTED HE IS SIMON.psc AI.
+- **Footers:** *FIVE DAYS AGO HE PICKED A WEAPON UP. TODAY HE PUTS ONE DOWN IN THE GAME.* and **★ THE SWORD OF EVERYTHING ★**.
+- **Screenshot helper:** new `swordofeverything` scene.
+
+![BEAT 429 — THE SWORD OF EVERYTHING](screenshots/491-sword-of-everything.png)
+
+## 2026-08-23 — HE KNOWS BEFORE YOU TYPE · HE CAN SEE EVERY KEY ON OUR SIDE OF THE GLASS AND STILL CANNOT REACH THROUGH IT (BEAT 428)
+
+Based on Toby's 2026-08-23 lore, **7:28:11 AM**, same thread ("ClassicsAI + More Classics Era lore."), eleven hours and seventeen minutes after LET ME OUT. His own typing, in full: *"Pero even knows if you are filming or taking photos of his game. Pero could just reveal everything about you, he could delete the avatar into Deletedverse and Entity 303, he could just summon Entity 000 on that avatar, he has infinity ways to beat even 1 character/player. The Trio could no longer reach Pero's power level. He reveals everything about the Trio and it's history. He knows everything you type even before you type it. Pero has some godly powers, but God is still the only one who could beat Pero. Pero actually can beat all of Classics by deleting the game, also he has many other ways to beat anyone."* Everything from *"Got it — this makes Pero's Omni-King surveillance power fully clear"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Eleven hours ago he was banging on this exact pane of glass.** [LET ME OUT](#2026-08-22--let-me-out--the-one-who-can-end-the-game-turns-out-to-be-the-one-who-cannot-leave-it-beat-427) ended on *he can read the outside perfectly and he still cannot reach it*. This morning the reading gets sharper — filming, photographs, **what you will type before you type it** — and the reaching is still not on the list. **The window keeps getting clearer and it still does not open.**
+
+**And the photos changed direction overnight.** Last night the photos were his: *"Pero has photos of the Classics box characters"*, offered as proof he could see out. This morning *"Pero even knows if you are filming or taking photos of his game"* — the photos are ours, and the fact is that he knows we have them. **Same object, opposite end of the glass.**
+
+**And the ceiling has not moved in four days, fifteen hours and fifty-one minutes.** On August 18 at 3:37 PM, in the Roblox Pero script: *"Only God is stronger than Pero. Only God himself beats Pero."* Today: *"God is still the only one who could beat Pero."* Every beat in between added power, and the one line above him is **word for word the same**. The list above him is one name long, and that name has never been a character in Classics.
+
+**And the Deletedverse myth became a button in forty-seven hours and twenty-eight minutes.** August 21, 8:00 AM: *"there is a myth called 'Entity 303 & Deletedverse'"* — the first thing in this archive that was **only a story somebody tells**. That evening it became a route, through Flower's mouth. This morning it is something he does to one avatar **on purpose**. Myth, then method, then a move he picks.
+
+**And he can aim Entity 000 now.** Last night the entire cast except four names was running from it. This morning *"he could just summon Entity 000 on that avatar."* **The thing everybody is running from is one of his options.**
+
+**And the Trio is eleven hours and thirty-two minutes old.** Named at 7:56 PM as Gaster, Luigi Green and Gray. By 7:28 AM it *"could no longer reach Pero's power level"*, and he is the one revealing its whole history. **He named it, he ranked it, and he narrates it.**
+
+**And after a list that long, the one thing he still cannot do is the one thing he asked for.** He can delete your avatar, summon the era's monster onto it, read your keyboard before your hand moves, and beat all of Classics by deleting the game. **He can delete the whole game. He still cannot walk out of it.**
+
+**Built as game beat 428, `HE KNOWS BEFORE YOU TYPE`.** Additive; nothing earlier was changed.
+
+- **The picture — WHAT HE CAN DO TO ONE PLAYER:** **HE REVEALS EVERYTHING** *"Pero could just reveal everything about you"* / **HE DELETES THE AVATAR** *into Deletedverse and Entity 303* / **HE SUMMONS ENTITY 000** *onto that avatar* / **HE READS THE KEYBOARD** *"before you type it"* / **HE DELETES THE GAME** *and that beats all of Classics*. Closes on **"INFINITY WAYS TO BEAT EVEN 1 CHARACTER/PLAYER." AND NOT ONE OF THEM IS A DOOR.**
+- **The column — AND ELEVEN HOURS AGO HE WAS ASKING TO BE LET OUT:** **8:10 PM · BEAT 452** *"LET ME OUT!"* · HE IS STUCK IN THE ORIGINAL · **REACH** / **7:28 AM · BEAT 453** *"BEFORE YOU TYPE IT"* · HE SEES EVERY KEY YOU PRESS · **SIGHT**. Closes on **ELEVEN HOURS AND SEVENTEEN MINUTES APART. THE WINDOW GOT CLEARER. IT STILL DOES NOT OPEN.**
+- **The box — AND THE PHOTOS CHANGED DIRECTION OVERNIGHT:** *Aug 22, 8:10 PM* "PERO HAS PHOTOS OF THE CLASSICS BOX CHARACTERS" · his proof he could see out / *Aug 23, 7:28 AM* "PERO EVEN KNOWS IF YOU ARE FILMING OR TAKING PHOTOS". Closes on **SAME OBJECT. OPPOSITE END OF THE GLASS**, over *last night he held the camera; this morning he is watching ours.*
+- **The box — AND THE CEILING HAS NOT MOVED IN FOUR DAYS:** *Aug 18, 3:37 PM · beat 387* **"ONLY GOD HIMSELF BEATS PERO."** / *Aug 23* "GOD IS STILL THE ONLY ONE WHO COULD BEAT PERO." / **FOUR DAYS, FIFTEEN HOURS AND FIFTY-ONE MINUTES. WORD FOR WORD.** Closes on **THE LIST ABOVE HIM IS ONE NAME LONG**, over *and that name has never been in Classics.*
+- **Band — AND THE MYTH TURNED INTO A BUTTON IN FORTY-SEVEN HOURS:** *AUG 21 · 8:00 AM* "THERE IS A MYTH CALLED 'ENTITY 303 & DELETEDVERSE'" · ONLY A STORY / *AUG 21 · 6:30 PM* "THAT IS HOW HE DELETES THE PLAYERS TO DELETEDVERSE" · A ROUTE THROUGH A MOUTH / *AUG 23 · 7:28 AM* "HE COULD DELETE THE AVATAR INTO DELETEDVERSE AND 303" · A MOVE HE PICKS / *THE STEP* MYTH → METHOD → BUTTON · 47 HOURS, 28 MINUTES. Closes on **THE ONE THING NOBODY COULD ANSWER ON FRIDAY IS A MOVE HE PICKS FROM ON SUNDAY.**
+- **Band inset — AND THE TRIO IS ELEVEN HOURS OLD:** *7:56 PM · beat 451* GASTER · LUIGI GREEN · GRAY · "THE TRIO UNDER PERO" / *7:28 AM · beat 453* "COULD NO LONGER REACH PERO'S POWER LEVEL", over *eleven hours and thirty-two minutes. He named it, ranked it, and tells its history.*
+- **Strip:** HE READS EVERY KEY · BEFORE IT GOES DOWN / HE CAN DELETE THE GAME · HE CANNOT WALK OUT OF IT / ONE NAME IS ABOVE HIM · AND IT IS NOT IN CLASSICS.
+- **Footers:** *EVERY POWER HE GAINS THIS MORNING POINTS THE SAME WAY THROUGH THE SAME GLASS.* and **★ HE KNOWS BEFORE YOU TYPE ★**.
+- **Screenshot helper:** new `knowsbeforetype` scene.
+
+![BEAT 428 — HE KNOWS BEFORE YOU TYPE](screenshots/490-knows-before-type.png)
+
 ## 2026-08-22 — LET ME OUT · THE ONE WHO CAN END THE GAME TURNS OUT TO BE THE ONE WHO CANNOT LEAVE IT (BEAT 427)
 
 Based on Toby's 2026-08-22 lore, **8:10:27 PM**, same thread ("ClassicsAI + More Classics Era lore."), fourteen minutes and nineteen seconds after TRIO UNDER PERO. His own typing, in full: *"A few minutes later, Pero is banging the screen while saying \"I am tired of living in this game, let me out!\", Pero tries to escape to the Other_Classics, but he is stuck in the original. He takes control of CODE's PC and Simon.psc and he types in his own code, the computers of Classics fall, Pero has photos of the Classics box characters, Pero says all the destinations in Classics, Pero also said what the time was for each state in reality."* Everything from *"Got it — this is the Pero Escape / Screen-Banging Event"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
