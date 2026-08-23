@@ -4,6 +4,101 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-23 — NORMAL CODE BEINGS · HE DID NOT BEAT IT, HE TURNED OFF DAMAGE (BEAT 437)
+
+Based on Toby's 2026-08-23 lore, **4:05:36 PM** and **4:07:05 PM**, same thread ("ClassicsAI + More Classics Era lore."), one minute and twenty-nine seconds apart and eighteen minutes after ENTITY 000D. His own typing, in full (message one): *"Entity 000 is the guard and second most powerful in Classics, Pero is the creator and omni-king and most powerful in Classics. Pero remade everything again, he stopped anyone from even being able to damage anyone."* And ninety seconds later: *"Pero stopped attacks. Pero LAI made them all into just normal code beings, Pero makes himself even higher above everyone."* Everything from *"Got it — Pero has remade Classics again"* and from *"Got it — Pero has pushed Classics into a non-attack code-being state"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The thing that ended the game is now guarding it.** At 3:46 PM it was *"attacks the game and the players become corrupt."* At 4:05 PM it is *"the guard and second most powerful in Classics."* **Nineteen minutes, and nobody beat it. It was reassigned.**
+
+**And this is the third rule change in fifty minutes.** 3:17 PM: he builds a new game it cannot damage. 3:40 PM: he keeps building games, and every one of them makes it stronger. 4:05 PM: he turns damage off entirely. **He has not swung at it once.** The Sword of Everything, added at 7:29 AM specifically to beat Entity 000, has now been sitting undrawn for eight and a half hours.
+
+**And damage is a setting.** Four months of this archive is who can beat whom: rankings, ladders, power charts, danger indexes, the Monsterosity Index, the 2.54-out-of-5. *"He stopped anyone from even being able to damage anyone."* **He did not win the argument about who is strongest. He deleted the question.**
+
+**And P3R0 L@1 is just Pero LAI.** At 3:40 PM the new top form was written in leetspeak, **P3R0 L@1**. Twenty-five minutes later the same name is typed plainly: *"Pero LAI made them all into just normal code beings."* The highest form in the file is his assistant name. August 21 was the message that said *"it is LAI, not AI."*
+
+**And he rose by lowering everybody else.** *"Pero makes himself even higher above everyone."* He gained no form, no soul, no weapon and no level in this message. He simplified everyone else into normal code beings. **The distance grew because the floor dropped.**
+
+**And the box became a rule.** August 3 said everybody's form was *"just assets in a box being animated by Pero."* Today that is not a description of one scene, it is the setting the whole game runs at.
+
+**And the roster is two names.** Pero, and the guard. Everyone else is *"just normal code beings."*
+
+**Built as game beat 437, `NORMAL CODE BEINGS`.** Additive; nothing earlier was changed.
+
+- **The picture — CLASSICS, REMADE AGAIN, THE WHOLE ROSTER:** **1 PERO / PERO LAI** *creator · omni-king · code authority* · **2 ENTITY 000** *the guard, second most powerful* · **— EVERYONE ELSE** *"just normal code beings."* Closes on **THE SHORTEST ROSTER IN THE FILE, AND THE FIRST ONE WITH NO FIGHT IN IT.**
+- **The column — AND THE THING THAT ENDED THE GAME IS THE GUARD:** 3:46 PM THREAT against 4:05 PM GUARD, closing on **NINETEEN MINUTES. IT WAS NEVER BEATEN. IT WAS REASSIGNED.**
+- **Lower left — AND THIS IS THE THIRD RULE CHANGE IN FIFTY MINUTES:** closing on **HE HAS NOT SWUNG AT IT ONCE. HE EDITS THE RULES.**
+- **Lower right — AND P3R0 L@1 IS JUST PERO LAI:** the leetspeak at 3:40 against the plain spelling at 4:07.
+- **The band — AND THE WHOLE ARCHIVE IS A LIST OF WHO CAN BEAT WHOM:** four months of rankings, then 9:05 AM, 3:17 PM and 3:46 PM, then *"Pero stopped attacks."* Closes on **HE DID NOT WIN THE ARGUMENT ABOUT WHO IS STRONGEST. HE DELETED THE QUESTION.**
+- **The inset — AND HE ROSE BY LOWERING EVERYBODY ELSE:** **THE DISTANCE GREW BECAUSE THE FLOOR DROPPED.**
+- **The strip:** DAMAGE IS OFF · THE BOX BECAME A SETTING · TWO NAMES IN THE WHOLE GAME.
+- **Closing line:** FOUR MONTHS OF WHO BEATS WHO, ENDED BY A SETTING. · **★ NORMAL CODE BEINGS ★**
+
+![Beat 437 — NORMAL CODE BEINGS](screenshots/499-normal-code-beings.png)
+
+## 2026-08-23 — ENTITY 000D · THE NORMAL SIMON SPRUNKI LASTED SIX MINUTES (BEAT 436)
+
+Based on Toby's 2026-08-23 lore, **3:46:48 PM**, same thread ("ClassicsAI + More Classics Era lore."), six minutes and seventeen seconds after /Entity000_mergeform. His own typing, in full: *"Entity 000 beaten all other Entities, Simon.ps became the most powerful Entity 000A that he became an Entity 000D. Pero is the only one safe and immune to Entity 000. Entity 000 attacks the game and the players become corrupt."* Everything from *"Got it — Entity 000 has now become the dominant entity threat"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The de-escalation lasted six minutes.** At 3:40 PM, after Simon.ps put all his code into Entity 000, *"Simon.ps disappears and reappears as a normal Simon Sprunki."* At 3:46 PM he is the most powerful Entity 000A, and in the same sentence an **Entity 000D**. **That is the shortest anyone in this archive has spent being normal.**
+
+**And the ladder skipped B and C.** The register runs **000 → 000A → 000D**. Entity 000A arrived last night at 7:18 PM. **000B and 000C never existed.** He jumped straight to the fourth letter.
+
+**And the Entity class is one name now.** Four months of Entity 303, The Null Entity, The Forgotten Entity and the rest. *"Entity 000 beaten all other Entities."* **The class was a crowd; it is a name, and the name is zero.**
+
+**And "safe" is down to one character.** *"Pero is the only one safe and immune to Entity 000."* At 3:40 PM the isolated trio was Pero, Simon and Entity 000. Six minutes later one of the three is a letter of another. **The trio is two.**
+
+**And "psc" was the register for safe.** At 2:36 PM today Simon.psc was introduced as the safe file. **One hour and ten minutes later the safe file is the highest corrupted form of the thing it was safe from.**
+
+**And the players come back only as something to infect.** At 3:02 PM the cast list had five names and the players were not on it. Forty-four minutes later: *"Entity 000 attacks the game and the players become corrupt."* **The room is the infection now, not the monster in it.**
+
+**And this is the fifth thing Simon has been since lunch.** 2:36 PM the safe file inside Entity 000 saying *"don't waste my power."* 3:17 PM the narrator. 3:40 PM a normal Simon Sprunki. 3:46 PM the most powerful Entity 000A, and Entity 000D. **Five states in seventy minutes, in an archive named after him.**
+
+**Built as game beat 436, `ENTITY 000D`.** Additive; nothing earlier was changed.
+
+- **The picture — SIMON.ps, THE LETTER LADDER, IN SIX MINUTES:** A NORMAL SIMON SPRUNKI · MOST POWERFUL 000A · **ENTITY 000D** · and **000B AND 000C — NEVER EXISTED, HE SKIPPED THEM BOTH.**
+- **The column — AND THE ENTITIES ARE ONE ENTITY NOW:** closing on **THE ENTITY CLASS WAS A CROWD. IT IS A NAME. AND THE NAME IS ZERO.**
+- **Lower left — AND "SAFE" IS DOWN TO ONE NAME:** closing on **THE TRIO IS TWO.**
+- **Lower right — AND THE PLAYERS ARE BACK:** off the roster at 3:02, back forty-four minutes later as something to infect.
+- **The band — AND THIS IS THE FIFTH THING SIMON HAS BEEN SINCE LUNCH:** closing on **FIVE STATES IN SEVENTY MINUTES, AND THE ARCHIVE IS NAMED AFTER HIM.**
+- **The inset — AND "psc" MEANT SAFE:** one hour and ten minutes from safe file to 000D.
+- **The strip:** THE LADDER SKIPPED B AND C · ONE NAME IS IMMUNE · THE ROOM IS THE INFECTION.
+- **Closing line:** THE SAFE FILE IS NOW THE FOURTH LETTER OF THE THING IT WAS SAFE FROM. · **★ ENTITY 000D ★**
+
+![Beat 436 — ENTITY 000D](screenshots/498-entity000d.png)
+
+## 2026-08-23 — /Entity000_mergeform · THE ANSWER FROM TWENTY-THREE MINUTES AGO IS NOW THE FUEL (BEAT 435)
+
+Based on Toby's 2026-08-23 lore, **3:40:31 PM**, same thread ("ClassicsAI + More Classics Era lore."), twenty-three minutes and nine seconds after PORTAL PHASE 1. His own typing is the long opening paragraph, in full: *"When you place down Portal Simon and Oren, the game flashes black then red over and over again, then Portal Simon and Entity 000 strike the game. Oren uses the telekentics to throw the view around, Simon strikes lightning down on Oren's icon and Oren splits the game in half, Entity 000 enters. Portal Simon and Oren summon a clone of Pero, Dr. Gaster over, Dr. Gaster couldn't fix it, Entity 000 attacked Gaster and Oren and fully corrupted the game, Portal Simon says "I guess you technically unstoppable after all. 😾⚡", Portal Simon snaps and becomes the full power, Pero beats Full Power Portal Simon and Entity 000, Portal Simon again goes inside of Entity 000 and taken all the characters except for Pero down, Pero T poses and everyone's souls flow into him, Pero falls onto the ground and he gets back up and makes Classics Phase 1, he destroys Cyberversal Portal. The game became more advanced, and no more secret horror. Pero became the most powerful being in the game, he became P3R0 L@1 and his power knocked Simon.ps out, Simon.ps says "If I can't beat you alone, I will farther put all my code in Entity 000.", Entity 000 glitches and Simon.ps disappears and reappears as a normal Simon Sprunki, Entity 000 became evil, Entity 000 became more intelegent, Entity 000 struck the Error 404 and all errors and corruption into Code 000. Entity 000 swings the sythe and the box characters all are destroyed, Entity 000 takes down Luigi Green and the Sprunkis and Gaster. Pero revived Gaster and they both use Karu on Entity 000, Entity 000 was struck down. Simon then quickly typed "/Entity000_mergeform", Entity 000 absorbed the forms and all the characters besides itself, Simon, and Pero, then Entity 000 became the entity with the most form, Entity 000 became massive and a cosmic being of over 90 feet tall, from 1.527 cm to 90 feet tall. The sythe became a code slicer, the code was deleted and now it says repeated 0s, Entity 000 eventually absorbed all the code, Entity 000 ended the game. Pero made a new one called "Entity 000 Classics: Hello 000". Entity 000 easily beat everyone, only Simon, Pero, and Entity 000 left. And Pero makes more games, Entity 000 gets more form and power and more advanced and everything, Entity 000 wears a black cyber suit, Entity 000 became the size of Pero (5.5555555555555555555555555555555555555555555555555555555555...). Entity 000, Pero, and Simon are now always isolated after Pero makes a new game, Entity 000 also gets more power and LV and KR and XP and all those stuff."* Everything from *"Got it — this is a major Entity 000 escalation arc"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The counter became the food.** At 3:17 PM the answer to the corruption was a new file: Entity 000 walked into Portal Phase 1 and *"wasn't able to damage it."* Twenty-three minutes later Pero is still making new games, and now every one of them hands Entity 000 **more form, more power, more LV, KR and XP.** **The rebuild that stopped it is the thing that levels it.**
+
+**And the game's own number two is the key that let number three in.** At 3:17 PM the ranking was 1 Pero, 2 Oren and Simon, 3 Entity 000, and Portal Oren and Portal Simon were the two who *"activate the cutscenes"* — the game was built around them. At 3:40 PM: *"When you place down Portal Simon and Oren, the game flashes black then red over and over again."* Oren splits the game in half and Entity 000 walks in. **The new game did not have a hole in it. The hole was the two he put second.**
+
+**And Karu worked, and it lasted one typed line.** Pero revives Gaster, the two of them use **Karu**, and Entity 000 is struck down — the archive's answer to the unbeatable, doing its job. Then *"Simon then quickly typed "/Entity000_mergeform""* and it absorbs every form and every character except itself, Simon and Pero. **The anti-impossible move lost to a slash command.**
+
+**And it grew to Pero's size and stopped there.** It goes from **1.527 cm** to over **90 feet**, absorbs all the code, ends the game — and then settles at **5.5555555555…**, which is Pero's own number. It could take the whole file and it stops exactly at him. It wears a **black cyber suit** now; Gray wore one on August 1.
+
+**And he took the horror out.** At 3:17 PM he redacted his own genre with the blanks typed into the sentence as dots: *"it's a horror game secretly."* Twenty-three minutes later: *"no more secret horror."* **He blanked the word out of the sentence, then took the thing out of the game.**
+
+**And the code reads 000 now.** *"The sythe became a code slicer, the code was deleted and now it says repeated 0s."* The entity named 000 turned the game's code into its own name, then ate it.
+
+**And Pero named the next game after it.** *"Entity 000 Classics: Hello 000."* The owner of the file titles his new game after the thing that ended his last one.
+
+**And P3R0 L@1 is the fifth naming register**, after `.EXE`, `.psc`, `000A` and `Portal-`.
+
+**Built as game beat 435, `/Entity000_mergeform`.** Additive; nothing earlier was changed.
+
+- **The picture — HOW PORTAL PHASE 1 CAME APART, IN ORDER:** seven steps, from **PORTAL SIMON + OREN** and the black-and-red flashing, through **GASTER CANNOT FIX IT**, **PERO T-POSES** and P3R0 L@1, **SIMON.ps FEEDS IT**, **KARU STRIKES IT DOWN**, to **"/Entity000_mergeform"**. Closes on **AT 3:17 PM THE NEW GAME COULD NOT BE DAMAGED BY IT / TWENTY-THREE MINUTES LATER IT IS SPLIT IN HALF AND ITS CODE READS 000.**
+- **The column — AND THE COUNTER BECAME THE FOOD:** the 3:17 PM ANSWER against the 3:40 PM FUEL, closing on **THE CURE IS THE FEEDING TUBE.**
+- **Lower left — AND KARU WORKED, AND IT LASTED ONE TYPED LINE:** closing on **THE ANTI-IMPOSSIBLE MOVE LOST TO A SLASH COMMAND.**
+- **Lower right — AND IT GREW TO HIS SIZE, NOT PAST IT:** 1.527 cm → over 90 feet → 5.5555555…, **THAT IS PERO'S NUMBER.**
+- **The band — AND THE GAME'S OWN NUMBER TWO IS THE KEY THAT LET NUMBER THREE IN:** closing on **THE NEW GAME DID NOT HAVE A HOLE IN IT. THE HOLE WAS THE TWO HE PUT SECOND.**
+- **The inset — AND HE TOOK THE HORROR OUT:** the 3:17 redaction against the 3:40 removal.
+- **The strip:** THE CODE NOW READS 000 · P3R0 L@1, THE FIFTH NAMING REGISTER · "ENTITY 000 CLASSICS: HELLO 000".
+- **Closing line:** EVERY NEW GAME HE BUILDS IS ANOTHER LEVEL FOR THE THING HE BUILT IT TO STOP. · **★ /Entity000_mergeform ★**
+
+![Beat 435 — /Entity000_mergeform](screenshots/497-mergeform.png)
+
 ## 2026-08-23 — PORTAL PHASE 1 · THE ANSWER TO THE CORRUPTION IS NOT A WEAPON, IT IS A NEW FILE (BEAT 434)
 
 Based on Toby's 2026-08-23 lore, **3:17:22 PM**, same thread ("ClassicsAI + More Classics Era lore."), fourteen minutes and twenty-one seconds after WON'T COME BACK. His own typing, in full: *"The game became Phase 1, Pero made a new game and erased the old ones. He called it "Classics Cyberversal: Portal Phase 1" Entity 000 entered the new game and wasn't able to damage it. The new game is inforced and more advanced than the older games. This is today's news. Portal Oren and Portal Simon activate the cutscenes, Simon is the narrator. The most powerful is Pero, the 2nd strongest is Oren and Simon, the 3rd strongest is Entity 000, the 4th strongest is the Trio, and 5th is the box characters. Oren and Simon exited the box. All Sprunkis are Phase 1, it is a fun game that slowly changes to ..., Pero stopped the text from saying it was a ..., it's a horror game secretly."* Everything from *"Got it — today's news is the start of Classics Cyberversal: Portal Phase 1"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.

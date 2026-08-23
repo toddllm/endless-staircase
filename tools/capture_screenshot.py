@@ -30,6 +30,9 @@ Scenes:
     safefile         — BEAT 432, THE SAFE FILE (Toby, Aug 23, 2:36 PM + 2:40 PM)
     wontcomeback     — BEAT 433, WON'T COME BACK (Toby, Aug 23, 3:02 PM + 3:03 PM)
     portalphase1     — BEAT 434, PORTAL PHASE 1 (Toby, Aug 23, 3:17 PM)
+    mergeform        — BEAT 435, /Entity000_mergeform (Toby, Aug 23, 3:40 PM)
+    entity000d       — BEAT 436, ENTITY 000D (Toby, Aug 23, 3:46 PM)
+    codebeings       — BEAT 437, NORMAL CODE BEINGS (Toby, Aug 23, 4:05 PM + 4:07 PM)
     cure             — the False Cure scene (two bottles + taunt + banners)
     residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
     perosrealm / weakerexp / sendingthis / containedshadow / watcher
@@ -9942,6 +9945,81 @@ SCENES = {
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
           loopVs.t=6100.0; loopVs.cyc=9286.8; loopVs.phase=434;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","mergeform": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 435. /Entity000_mergeform: the seven-step collapse of Portal Phase 1, the counter-became-the-food column, the Karu-lasted-one-typed-line box, the it-grew-to-his-size box, the number-two-is-the-key band and the he-took-the-horror-out inset. Beat 435 spans cyc 9290.0 to 9312.0; cyc=9308.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=9308.8; loopVs.phase=435;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","entity000d": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 436. ENTITY 000D: the six-minute letter ladder, the entities-are-one-entity column, the safe-is-one-name box, the players-are-back box, the five-states-since-lunch band and the psc-meant-safe inset. Beat 436 spans cyc 9312.0 to 9334.0; cyc=9330.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=9330.8; loopVs.phase=436;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","codebeings": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 437. NORMAL CODE BEINGS: the three-line roster, the thing-that-ended-the-game-is-the-guard column, the third-rule-change box, the P3R0-L@1-is-Pero-LAI box, the who-can-beat-whom band and the rose-by-lowering-everybody inset. Beat 437 spans cyc 9334.0 to 9356.0; cyc=9352.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=6100.0; loopVs.cyc=9352.8; loopVs.phase=437;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
