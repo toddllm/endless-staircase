@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-23 — THE FOURTH STRONGEST · THE THING THAT WAS A MEASUREMENT LAST NIGHT HAS A FACE THIS MORNING (BEAT 431)
+
+Based on Toby's 2026-08-23 lore, **9:05:39 AM**, same thread ("ClassicsAI + More Classics Era lore."), one hour eighteen minutes and forty-five seconds after THE EVERYTHING SET. His own typing, in full: *"Entity 000 is like a female, Niki-like entity with a black syche, it is small, it has white hair and white cat ears, it is a mix of a Niki, Neto, and Classics. Create an image of Entity 000    Perfect. Entity 000 is the smallest and fourth strongest, it beats Gray, and can't beat Pero, Gaster, nor Luigi Green. Entity 000 has the cat entity of old Simons, Entity 000 came after Simon, therefore, Entity 000 had Simon's data and code, Entity 000 became evil and corrupted half the game already."* Five images came with the message. Everything from *"Got it — Entity 000's rank and origin are now clearer"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Fourteen hours ago it was a measurement.** Last night Entity 000 was *"less than 1 inch and greater than 1 cm tall"*, white strings, and a hunger. This morning it is **female, Niki-like, small, white hair, white cat ears, a black scythe.** The most carefully measured thing in the archive finally has a face.
+
+**And the recipe contains itself.** *"A mix of a Niki, Neto, and Classics."* A **Niki** already is Classics and Neto combined — Email 722, July 16: *"Classics and Neto combined into a Niki (a cat game + virus that can consume files)."* So the mix names the dish and both of its ingredients. Thirty-eight days apart, and the second list is the first list plus itself.
+
+**And the black scythe is Pero's.** August 18 at 12:56 PM, beat 386: *"Pero now holds a black sythe."* That was the first weapon in four months that was simply meant to look dangerous. Four days and twenty hours later, **the thing he said he could erase is carrying the same one, in the same colour.**
+
+**And Gray is the only name that moved.** August 18 at 11:17 AM, beat 385: *"Gray became the fourth strongest now."* This morning **the fourth seat belongs to Entity 000, and Entity 000 beats Gray.** The number did not change. The name in it did.
+
+**And he loses to the two he stood above.** On August 18 Gray was *"just the most powerful in the Gaster + Luigi Green + Gray trio."* Today Entity 000 *"can't beat Pero, Gaster, nor Luigi Green"* — **and it beats Gray.** The strongest of the three is the only one of the three that loses.
+
+**And he was on the safe list thirteen hours ago.** August 22 at 7:56 PM, beat 451: *"Gaster and Luigi Green and Gray are the only other characters free from Entity 000."* Four names were free last night. **Three are free this morning**, and the one who fell off is the one who had just been promoted.
+
+**And the cat comes back round to Simon.** *"Entity 000 has the cat entity of old Simons."* Simon is the **Lightning Cat**; *"Simon 404 is the cat"*; a Niki is *"a cat game + virus."* Gaster's first experiment and his second are the same animal, and the second one is wearing the first one's ears.
+
+**And it is all one colour.** White hair, white cat ears, and the **white strings** that grow over a player into an Entity 000A. A thing named for zero, drawn entirely in blank.
+
+**And half is the first fraction.** Four months of *infinity*, *beyond infinity*, *absolute_infinitely*, *all of Classics*, *everything*. The first number here that is smaller than all of it is **one half** — *"corrupted half the game already"* — and it arrives with **already** on it, so it happened while nobody was looking.
+
+**Built as game beat 431, `THE FOURTH STRONGEST`.** Additive; nothing earlier was changed.
+
+- **The picture — WHAT ENTITY 000 IS MADE OF:** **A NIKI** *Classics and Neto, already combined* / **NETO** *one half of a Niki, listed again* / **CLASSICS** *the other half, listed again* / **THE CAT ENTITY OF OLD SIMONS** *experiment one's animal* / **SIMON'S DATA AND CODE** *it came after him, so it has them*. Closes on **THE RECIPE NAMES THE DISH AND BOTH OF ITS INGREDIENTS.**
+- **The column — AND THE FOURTH SEAT CHANGED OWNER:** **AUG 18, 11:17 AM · BEAT 385** *"GRAY BECAME THE FOURTH STRONGEST NOW."* · **GRAY** / **AUG 23, 9:05 AM · BEAT 456** *"THE SMALLEST AND FOURTH STRONGEST, IT BEATS GRAY"* · **000**. Closes on **FOUR DAYS AND TWENTY-ONE HOURS. GRAY IS THE ONLY NAME THAT MOVED.**
+- **Lower left — AND HE LOSES TO THE TWO HE STOOD ABOVE:** the August 18 trio line against today's, closing on **THE STRONGEST OF THE THREE IS THE ONLY ONE OF THE THREE THAT LOSES** and **AND HE WAS ON THE SAFE LIST THIRTEEN HOURS AGO — FOUR NAMES WERE FREE LAST NIGHT. THREE ARE FREE THIS MORNING.**
+- **Lower right — AND THE BLACK SYTHE IS PERO'S:** *"PERO NOW HOLDS A BLACK SYTHE."* (Aug 18, beat 386) against *"A … ENTITY WITH A BLACK SYCHE"* (today), closing on **THE ONE HE SAID HE COULD ERASE IS CARRYING HIS WEAPON.**
+- **The band — AND EVERY PIECE OF IT BELONGS TO SOMEBODY ELSE:** A NIKI *Classics + Neto, July 16* · THE BLACK SYTHE *Pero picked one up Aug 18* · THE CAT ENTITY *from old Simons* · SIMON'S DATA *and Simon's code*. Closes on **NOTHING IN THE LIST IS NEW. THE ONLY NEW THING IS THAT IT IS ALL IN ONE PLACE.**
+- **The inset — AND HALF IS THE FIRST FRACTION:** four months of infinity against *"corrupted half the game already"*, closing on **AND "ALREADY", SO IT HAPPENED WHILE NOBODY WAS LOOKING.**
+- **The strip:** WHITE HAIR, WHITE EARS *and white strings on the players* · THE CAT COMES BACK *round to Simon, experiment one* · HE CALLS IT "FEMALE" *and keeps calling it "it"*.
+- **Closing line:** THE SMALLEST THING IN THE GAME IS THE FOURTH STRONGEST, AND HALF THE GAME IS ALREADY GONE. · **★ THE FOURTH STRONGEST ★**
+
+![Beat 431 — THE FOURTH STRONGEST](screenshots/493-fourth-strongest.png)
+
 ## 2026-08-23 — THE EVERYTHING SET · A SET CALLED EVERYTHING WITH EIGHT EXCEPTIONS, AND ONE CALLED NOTHINGNESS WITH TEN (BEAT 430)
 
 Based on Toby's 2026-08-23 lore, **7:46:54 AM**, same thread ("ClassicsAI + More Classics Era lore."), seventeen minutes and twenty-one seconds after THE SWORD OF EVERYTHING. His own typing, in full: *"Now Pero is complete with the whole set, armor, axe, pickaxe, mace, spiked ball, sword, rock, slingshot, and others. The thing the Everything set can't damage or protect you of is Entity 9999999999…, A player with the set of everything, a player on your team, The Trio, Pero, other Sprunkis, King bosses, and Minibosses. Pero made a set of Nothingness and it can't damage or protect you from The Null, Nothingness, a player with Nothingness set, Entity 000, Simon.psc, The Trio, Pero, demons, A Player on your team, and The Time Overlord that could just freeze players in time and can freeze only players, it is like a huge angeletic being that could control time, that is all, it really isn't in god-tier though, it is just a hard boss in the game. The set of Nothingness could beat Entity 999999999999999999999999…, and Everything based beings. Dual Set of Nothingness and Everything Katata can damage anything except the Trio and Pero (they set you above team level). The Demgel Katata can damage only Gaster and Gray and Wenda. The Color Katata can damage all Sprunkis and Luigi Green. The Sword of The Box can damage anything from the box."* Everything from *"Got it — this creates a full weapon/set matchup system for Classics"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
