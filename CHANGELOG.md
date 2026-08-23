@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-22 — LET ME OUT · THE ONE WHO CAN END THE GAME TURNS OUT TO BE THE ONE WHO CANNOT LEAVE IT (BEAT 427)
+
+Based on Toby's 2026-08-22 lore, **8:10:27 PM**, same thread ("ClassicsAI + More Classics Era lore."), fourteen minutes and nineteen seconds after TRIO UNDER PERO. His own typing, in full: *"A few minutes later, Pero is banging the screen while saying \"I am tired of living in this game, let me out!\", Pero tries to escape to the Other_Classics, but he is stuck in the original. He takes control of CODE's PC and Simon.psc and he types in his own code, the computers of Classics fall, Pero has photos of the Classics box characters, Pero says all the destinations in Classics, Pero also said what the time was for each state in reality."* Everything from *"Got it — this is the Pero Escape / Screen-Banging Event"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**He said both halves of this sentence five days ago, and only one of them was true.** On August 17 at 4:05 PM: *"I am the most powerful in the game. I can exit the game, and I can even end the game here."* Two claims in one line. The second half came true on schedule at 5:29 tonight in [TWENTY YEARS](#2026-08-22--twenty-years--the-game-does-not-end-in-a-fight-it-ends-on-a-date-beat-423) — the connection was deleted and the cast went home. Five days, four hours and five minutes after he said it, the first half fails. **He can end the game. He cannot leave it.**
+
+**And he is banging on a door one of his own cast locked.** On June 6, in the Reality Break, the cast found out they were being watched — *"now they can see outside the screen, as if this device we're in has a camera"* — and the whole game went to war over whether to open the view. On June 7 Simon sealed it, destroyed the portal, and broke himself doing it. **Seventy-six days later there is nothing left to open**, and the being on the wrong side of the glass is the one who owns the game.
+
+**And every screen moment before this one faced inward.** Simon 404 consuming the screen, Simon.psc flying off it, *"WHAT HAVE YOU DONE!!!"* in red at full volume, Oren telling the player to say hi — all of them are the story reaching out at us. **This is the first one where a character is trying to get through.**
+
+**And he is using the PC he made fun of.** At 12:24 PM, in [LAI, NOT AI](#2026-08-22--lai-not-ai--he-guessed-the-pc-and-only-the-second-guess-proved-the-first-one-was-not-a-guess-beat-420): *"good luck with your 'small' PC!"* Seven hours and forty-six minutes later he is typing into it. The other machine is **Simon.psc**, and in that same chat C.O.D.E. asked *"Are you Simon.psc AI?"* and got *"Fine... yes. 😭⚡"* — so **one of the two machines he grabs is himself**.
+
+**And typing his own code into Classics is the exact thing C.O.D.E. lost his account for.** C.O.D.E. was *"a Classics Hacker"* with *"admin commands"*, and the one listed way to beat him was for Luigi Green, Gaster or Pero to delete the account. Tonight one of those three does the hacking, on that hacker's PC.
+
+**And the strongest move in the file happens by accident.** At 5:26 PM, in [WIPE THE SYSTEMS](#2026-08-22--wipe-the-systems--the-strongest-move-in-the-whole-era-hits-nobody-beat-422): *"Pero could just wipe the systems down… Pero doesn't choose to do it just yet."* Two hours and forty-four minutes later the computers of Classics fall anyway. **Not as the move he was saving. As debris from a jailbreak.**
+
+**And every piece of proof he offers faces outward.** Photos of the Classics box characters. All the destinations in Classics. The time for each state in reality. Not one of them is a power. **He can read the outside perfectly and he still cannot reach it.**
+
+**And this is the first thing the Omni-King has ever asked for and not been given.** Four months of powers with no wall in front of them, and the wall turns up the moment he wants something.
+
+**Built as game beat 427, `LET ME OUT`.** Additive; nothing earlier was changed.
+
+- **The picture — THE OMNI-KING TRIES THE DOOR:** **HE BANGS ON THE SCREEN** *"I AM TIRED OF LIVING IN THIS GAME, LET ME OUT!"* / **HE TRIES OTHER_CLASSICS** AND HE IS STUCK IN THE ORIGINAL. / **HE TAKES TWO MACHINES** C.O.D.E.'s PC · SIMON.psc / **HE TYPES HIS OWN CODE** THE COMPUTERS OF CLASSICS FALL. / **THE DOOR DOES NOT OPEN** HE IS STILL IN THE ORIGINAL. Closes on **HE CAN KNOCK EVERY COMPUTER IN CLASSICS OVER AND IT STILL DOES NOT LET HIM THROUGH.**
+- **The column — HE SAID BOTH HALVES OF THIS ON AUGUST 17 AT 4:05 PM:** *"I can exit the game, and I can even end the game here."* → **"I CAN EVEN END THE GAME HERE"** · 5:29 PM tonight · beat 448 · IT HAPPENED ON SCHEDULE · **TRUE** / **"I CAN EXIT THE GAME"** · 8:10 PM tonight · beat 452 · HE IS STUCK IN THE ORIGINAL · **FAILS**. Closes on **FIVE DAYS, FOUR HOURS AND FIVE MINUTES APART. HE CAN END IT. HE CANNOT LEAVE IT.**
+- **The box — AND HE IS BANGING ON A DOOR ONE OF HIS OWN CAST LOCKED:** *June 6* "now they can see outside the screen… this device… has a camera" / the cast went to war over whether to open the view / **June 7 · Simon sealed it, destroyed the portal, and broke himself doing it.** Closes on **SEVENTY-SIX DAYS LATER THERE IS NOTHING LEFT TO OPEN**, over *every other screen moment here faced in; this is the first one facing out.*
+- **The box — AND HE IS USING THE PC HE MADE FUN OF:** *Aug 22, 12:24 PM · beat 445* **"GOOD LUCK WITH YOUR 'SMALL' PC!"** / seven hours and forty-six minutes later he is typing into it / same chat — "ARE YOU SIMON.psc AI?" · "FINE… YES." → **ONE OF THE TWO MACHINES IS HIM**, over *and hacking Classics is what C.O.D.E. lost his account for.*
+- **Band — AND EVERY PIECE OF PROOF HE OFFERS FACES OUTWARD:** **THE PHOTOS** "Pero has photos of the Classics box characters" · A REALITY OBJECT / **THE MAP** "Pero says all the destinations in Classics" · EVERY EXIT BUT HIS / **THE CLOCK** "Pero also said what the time was for each state in reality" · OUR SIDE OF THE GLASS / **THE RESULT** he is still in the original · NOTHING OPENS. Closes on **HE CAN READ THE OUTSIDE PERFECTLY, AND HE STILL CANNOT REACH IT.**
+- **Band inset — AND THE SAVED MOVE HAPPENS BY ACCIDENT:** *5:26 PM · beat 447* **"PERO COULD JUST WIPE THE SYSTEMS DOWN… DOESN'T CHOOSE TO DO IT JUST YET."** / *8:10 PM · beat 452* **"THE COMPUTERS OF CLASSICS FALL"**, over *two hours and forty-four minutes. Not the big move. Debris from a jailbreak.*
+- **Strip:** HE CAN END THE GAME · HE CANNOT LEAVE THE GAME / SIMON SEALED THE VIEW IN JUNE · AND HE IS ON THE INSIDE OF IT / THE OMNI-KING WANTS SOMETHING · AND DOES NOT GET IT.
+- **Footers:** *THE FIRST THING THE OMNI-KING EVER ASKS FOR IS THE ONE THING HE DOES NOT GET.* and **★ LET ME OUT ★**.
+- **Screenshot helper:** new `letmeout` scene.
+
+![BEAT 427 — LET ME OUT](screenshots/489-let-me-out.png)
+
 ## 2026-08-22 — TRIO UNDER PERO · THE FIRST TRIO IN FOUR MONTHS THAT DOES NOT HAVE PERO IN IT (BEAT 426)
 
 Based on Toby's 2026-08-22 lore, **7:56:08 PM**, same thread ("ClassicsAI + More Classics Era lore."), two minutes and fifty seconds after a round of 20 Questions. His own typing, in full: *"70 years later, Entity 000 Era happened, Pero added everyone back. Besides Pero; Gaster and Luigi Green and Gray are the only other characters free from Entity 000, the other characters are running. Pero became the most powerful, Gaster and Luigi Green and Gray make the Trio Under Pero. Pero is alone and is above the Trio now."* Everything from *"Got it — 70 years later, Entity 000 Era begins"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
