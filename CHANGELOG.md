@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — CONTROL OF THE GAME'S FUTURE · THE ONE HE KEPT IN THE BOX IS HANDED THE BOX (BEAT 452)
+
+Based on Toby's 2026-08-24 lore, **7:29:27 PM**, the "Pero, and more lore." thread, three hours twelve minutes and twenty-eight seconds after BASIC PERO. His own typing is the whole opening paragraph, from *"Alex uses his strongest attack and says 'Technique Amplification: Lava, Technique Reversal: Water, HOLLOW OBSIDIAN!'"* through *"Pero took off the blindfold, and Pero stands at the top of the Cherry Blossom Mountain."* Everything from *"Got it — this is a huge Alex breakthrough arc"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The three who kept him in the box are all gone in thirty hours, and the last one opens it himself.** August 13, 11:14:56 AM, beat 298 — Alex's own beat: *"Alex is strong enough for the Anti Void, but **Gaster, Luigi Green, and Pero** refused and kept him in the box. Alex plans to become powerful enough to enter the Anti Void and to leave the box."* Since then: **Luigi Green** was made an orange soul and absorbed by Oren on **August 23, 2:36 PM**. **Gaster** *"became energy"* today at **3:49 PM**, beat 449. And tonight **Pero** says *"I give you control of the game's future, Alex."* **Eleven days to name the three jailers, thirty hours to lose all three, and the last one did not get beaten — he handed over the key.**
+
+**And his win condition happened three hours and twelve minutes before he got there.** The August 13 plan was specific: *"he can use Pero's fog to create fans to **turn Pero back into his base form**. Alex is the only one who can even harm Pero."* At **4:16:59 PM today**, beat 451, Pero turned himself into his base form and called it *"more powerful than all his perivious forms combined."* **Alex spent eleven days building toward a thing Pero did to himself for free, three hours early. He never used the fan.**
+
+**And Pero asks a question that was answered eleven days ago.** Alex hits him with Hollow Obsidian at 200% and Pero says *"How did you hit me?"* — August 13: *"Alex is the only one who can even harm Pero."* **He wrote the answer down eleven days before he asked the question.**
+
+**And two enemies get one joint account.** Wenda absorbs the **blue** half of Alex's soul, Gray the **red**, and *"together, they have the full soul (purple)"* — *"they need to be together for the ability to work."* They shared second place this afternoon four and a half hours after fighting each other. **The file just made the two of them co-sign.**
+
+**And the strongest thing in the file gets a dial.** *"I was suprised you survived **0.000000000000001%** of my power. Now… I shall beat you by using **1%** of my power."* Then *"No matter, I'll just use **25%** of my power."* Then darkness and light, Mega Power, covered in ink, **100%**. Four hours and forty-six minutes ago the line was *"Only God is more powerful than Pero"* (2:43 PM, beat 445). **A percentage has a top. Absolute does not.**
+
+**And the save file has two sole owners and a retail price.** Simon 404, in July: *"404: Save File Was Never Yours, It Was Always Mine!"* Pero, tonight: *"I WAS MENT TO BE THE ONLY ONE WITH A SAVE FILE!"* And Alex: *"I just got it from the mall for half my lifespan."* Pero: *"You got it for free."* **The most fought-over object in the archive turns out to be sold retail, and the one person who paid for it paid in years.**
+
+**And the ending is a scene he already wrote, with the opposite result.** **August 5, beat 251, THE FAMILY FIGHT**: Pero *"watches from a mountain, takes off the blindfold"* — and Simon 404 breaks anyway, and nothing changes. Tonight he strikes all three down *"with a katata and blindfold,"* takes the blindfold off, and **stands at the top of the Cherry Blossom Mountain**, and that is the last thing in the scene. Nineteen days apart, same three gestures. And this time the family is actually on the field: Arcsis, Frizz and Arcsis's Mother, and *"I am your father."*
+
+**Built as game beat 452, `CONTROL OF THE GAME'S FUTURE`.** Additive; nothing earlier was changed.
+
+- **The picture — AUG 13: "GASTER, LUIGI GREEN, AND PERO REFUSED AND KEPT HIM IN THE BOX":** three rows, each with its lid lifting off as it lights — **LUIGI GREEN** *Aug 23, 2:36 PM · made an orange soul, and absorbed* · **DR. GASTER** *Aug 24, 3:49 PM · became energy* · **PERO** *Aug 24, 7:29 PM · "I give you control of the game's future, Alex."* Closes on **ELEVEN DAYS. ALL THREE LID-HOLDERS GO IN THIRTY HOURS, AND THE LAST ONE OPENS IT HIMSELF.**
+- **The column — AND HIS WIN CONDITION HAPPENED WITHOUT HIM:** *AUG 13 · ALEX'S PLAN* **"HE CAN USE PERO'S FOG TO CREATE FANS TO TURN PERO BACK INTO HIS BASE FORM"** against *AUG 24, 4:16 PM · BEAT 451* **PERO TURNS HIMSELF INTO HIS BASE FORM, AND CALLS IT THE STRONGEST HE HAS EVER BEEN**, closing on **THREE HOURS AND TWELVE MINUTES BEFORE ALEX WALKS IN. HE NEVER USED THE FAN.**
+- **Lower left — AND PERO ASKS A QUESTION THAT WAS ALREADY ANSWERED ELEVEN DAYS AGO:** tonight's *"HOW DID YOU HIT ME?"* over Aug 13's *"ALEX IS THE ONLY ONE WHO CAN EVEN HARM PERO."*
+- **Lower right — AND TWO ENEMIES GET ONE JOINT ACCOUNT:** **WENDA** *blue half* **+** **GRAY** *red half* **=** **TOGETHER** *full soul*, closing on **THEY WERE FIGHTING EACH OTHER THIS MORNING.**
+- **The band — AND THE STRONGEST THING IN THE FILE GETS A DIAL:** four rows lit one at a time — *0.000000000000001%* · *1%* · *25%* · *100%*, each against what Alex did anyway. Closes on **FOUR HOURS AND FORTY-SIX MINUTES AGO ONLY GOD WAS ABOVE HIM. A PERCENTAGE HAS A TOP.**
+- **The inset — AND THE SAVE FILE HAS TWO SOLE OWNERS:** Simon 404's claim, Pero's claim, the mall price, and *"You got it for free."*
+- **The strip:** THE LID CAME OFF · HE NEVER USED THE FAN · THE MOUNTAIN, AGAIN.
+- **Closing line:** HE SPENT ELEVEN DAYS PLANNING TO GET OUT, AND SOMEBODY OPENED THE DOOR. · **★ CONTROL OF THE GAME'S FUTURE ★**
+- **The background is the attack.** Lava streaks run in from the left and water streaks in from the right, and where they cross the middle they leave a violet obsidian seam — Technique Amplification and Technique Reversal, drawn as the room instead of as a move.
+
+![Beat 452 — CONTROL OF THE GAME'S FUTURE](screenshots/514-control-of-the-games-future.png)
+
 ## 2026-08-24 — BASIC PERO · THE FIRST TIME THE NAME EVER GOT SHORTER (BEAT 451)
 
 Based on Toby's 2026-08-24 lore, **4:16:59 PM**, the brand-new "Pero, and more lore." thread, six minutes and fifty-eight seconds after PERO LAI OMAZEN. His own typing, in full: *"Pero then gets so much more power and makes him into the basic Pero, he combines the The Error 12 12 12 Run End: Cross_Godshifted Mega Ultra Pero.exe Omazen with his extreme more power and he became his base but is more powerful than all his perivious forms combined."* Everything from *"Got it — this is the biggest Pero paradox form"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
