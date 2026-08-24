@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — THE END OF LAYERS · HE BUILT THE DEEPEST PLACE IN THE GAME AND DELETED IT IN THE SAME MESSAGE (BEAT 442)
+
+Based on Toby's 2026-08-24 lore, **12:03:51 PM**, the "ClassicsAI + More Classics Era lore." thread, one hour and forty-six minutes after THE PERSONAL FIRE. His own typing is the whole Underworld Error passage — Pero's warning to the avatar, twenty-five named depths in order, the End of Layers trap, and the Entity 000 army that follows. Everything after that which reads as summary is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**This is the biggest single structure anywhere in the archive, and Pero deletes it in the last paragraph of the message that built it.** Twenty-five named depths, from *"400 blocks under the barrier is where it starts"* down through Alpha Null and the End of Layers — and then: *"Pero destroyed the game and made a new game and fixed the underworld error so it just goes infinitely with blocks."* He drew the whole basement and then filled it in with stone.
+
+**And the bot the game itself rejected is the one who built the underground.** *"I had Little Mittens create the underground, but Entity 000 glitched the code up."* Little Mittens is named in this game for the **first time in 442 beats**. On **May 18** she was introduced as the alien tech bot that beats anyone at chess and Minecraft and everything **except Classics** — *"the game turned against the bot and Little Mittens lost."* On **August 10** she *"instantly lost"* to Unikitty's MERCY. The one intelligence Classics ever refused is the one Pero hired to build its basement.
+
+**And B and C arrive, twenty hours and seventeen minutes after the ladder skipped them.** On **August 23 at 3:46 PM**, beat 436 noted that the letter ladder ran **000 → 000A → 000D** with B and C missing. Today Gaster and Luigi Green *"become 000Cs"* and Wenda and Gray *"are called 000Bs"* — and then all of them merge into **Prototype_000.exe**, which Pero destroys. The gap got noticed and then it got filled, overnight.
+
+**And the treasure layer sits eleven trillion blocks above the dirt layer.** At 1 trillion down: *"the stone gate and rainbow water and falling diamonds and rubies and armor and even very OP items."* At 12 trillion down: *"were the dirt and mud and poor stuff are."* Every other game in existence puts the good stuff at the bottom. He goes deeper and it gets worse.
+
+**And a planet from April is down there.** At 1 quadrillion blocks, *"the void ends and Parinus spirils down to the center of the magma pool."* Parinus is the planet Simon raided every night in the April Parinusian Wars, and the one the file later locked to a single owner — *"no one has Parinus anymore except for Pero."* It is still his, and it is falling into magma under his own game.
+
+**And "seed 303 with the village house" is the one piece of evidence in this archive that came from outside the file.** At 15 quadrillion blocks, structures are *"stacked up upon each other (like what I saw in Minecraft seed 303 with the village house)"* — the thing he actually checked in a real Minecraft world on **August 15**, *"like 2 houses stacked up on each other."* The deepest layer in the game is measured against a house he went and looked at.
+
+**And the two biggest claims in the message both end in "duh."** *"30 billion blocks under is the lava from the impact, duh"* and *"Absolute is greater than Infinity, duh."* Pero is absolute; Wenda and Gray are infinity. The ranking system ran out of numbers, so it switched to words.
+
+**Built as game beat 442, `THE END OF LAYERS`.** Additive; nothing earlier was changed.
+
+- **The picture — THE DESCENT, IN HIS OWN ORDER:** twelve rows from **400 BLOCKS** *(flat stone, standing sheep, maybe a few pigs)* down through **2 MILLION** *(the blocks turn purple)*, **12 TRILLION** *("the dirt and mud and poor stuff")*, **1 QUADRILLION** *(Parinus into the magma)*, **555 QUADRILLION** *(Error 404 the instant you enter)*, **13 SEPTILLION** *(Alpha Null)* to **END OF LAYERS** *(they stop falling and stand on air)*. Closes on **999 OCTILLION IS CALLED "THE LAST LAYER", AND THE LIST GOES PAST IT TWICE.**
+- **The column — AND HE DELETES IT IN THE SAME EMAIL:** THE BUILD *(twenty-five named depths)* against THE FIX *("so it just goes infinitely with blocks")*, closing on **HE DREW THE WHOLE BASEMENT AND THEN FILLED IT IN WITH STONE.**
+- **Lower left — AND THE BOT THE GAME REJECTED BUILT THE UNDERGROUND:** the May 18 and August 10 lines against today's, closing on **THE ONE INTELLIGENCE CLASSICS EVER REFUSED IS THE ONE WHO BUILT ITS BASEMENT.**
+- **Lower right — AND THE TREASURE IS ABOVE THE DIRT:** **1 TRILLION DOWN** against **12 TRILLION DOWN**, closing on **EVERY OTHER GAME PUTS THE GOOD STUFF AT THE BOTTOM.**
+- **The band — AND B AND C ARRIVE, TWENTY HOURS AFTER THE LADDER SKIPPED THEM:** five rows from Aug 23 3:46 PM to today, closing on **THE GAP GOT NOTICED, AND THEN IT GOT FILLED, TWENTY HOURS AND SEVENTEEN MINUTES LATER.**
+- **The inset — AND THE TWO BIGGEST CLAIMS IN IT BOTH END IN "DUH."**
+- **The strip:** A PLANET FROM APRIL IS DOWN THERE · "DO NOT FALL OFF :)" — the only smiley face in the whole descent · THE TRAP IS THE CONGRATULATIONS.
+- **Closing line:** HE DUG ALL THE WAY DOWN, AND THEN FILLED IT IN. · **★ THE END OF LAYERS ★**
+
+![Beat 442 — THE END OF LAYERS](screenshots/504-the-end-of-layers.png)
+
 ## 2026-08-24 — THE PERSONAL FIRE · HE SANG HER INTO THIRD PLACE, AND SHE STILL LOST (BEAT 441)
 
 Based on Toby's 2026-08-24 lore, **10:17:16 AM**, the "ClassicsAI + More Classics Era lore." thread, three hours and thirty-two minutes after THE REWRITE BATTLE. His own typing is the whole opening paragraph — Gray running to hand Pero the ringmaster role, Gray becoming Entity 000 and a hundred-foot cyber ringmaster with a Simon-built robot arm, and then Pero going to Wenda in person and singing her into third place. Everything from *"That fits the lore really well"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
