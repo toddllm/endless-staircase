@@ -37,9 +37,9 @@ Based on Toby's 2026-08-24 lore, **3:49:09 PM**, three minutes and sixteen secon
 
 Based on Toby's 2026-08-24 lore, **3:45:53 PM**, eleven minutes and forty-five seconds after THE FINAL BOSS PERO. His own typing is the whole opening paragraph, ending at *"Pero became Last Run Pero."* Everything from *"That makes Last Run Pero the clearest"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
 
-**Nineteen named sources, and only two of them are his.** The cross, ToddLLM 002's colored slashes, ToddLLM 001's chess center, Karuto's colored orbs and blindfold, all Mustitu forms, EndlessAnimations' paint and paintbrush, Entity 000's 000 wipeout, the Sprunkis' powers and colours, Mr. Black's Phase 2, Gaster's Vicinus and Flower and experiments, Luigi Green's Au Green and green orbs, control of the boxes, Gray's ownership and admin, Wenda's light and darkness aura, Simon's Error 404 power, Oren's telekinetics, and Erase from Clara, New Chara, Chara Undertale, Frizz, Arcsis, Luigi Green, Simon and Gray. **Every entry but two is somebody else's name.** The most powerful thing in the game reads like a credits list.
+**Twenty items, and only two of them are his own.** The cross, ToddLLM 002's colored slashes, ToddLLM 001's chess center, Karuto's colored orbs and blindfold, all Mustitu forms, EndlessAnimations' paint and paintbrush, Entity 000's 000 wipeout, the Sprunkis' powers and colours, Mr. Black's Phase 2, Gaster's Vicinus and Flower and experiments, Luigi Green's Au Green and green orbs, control of the boxes, Gray's ownership and admin, Wenda's light and darkness aura, Simon's Error 404 power, Oren's telekinetics, and Erase from Clara, New Chara, Chara Undertale, Frizz, Arcsis, Luigi Green, Simon and Gray. **Only two of them are his own** — *"the max power of every form and vary he has"* and *"control of the boxes."* Everything else is somebody else's name, so the most powerful thing in the game reads like a credits list.
 
-**And the thing that was the whole final boss eleven minutes ago is now one bullet in the middle.** *"He uses the max power of every form and vary he has"* sits at item six of nineteen, between Mustitu and EndlessAnimations. At 3:34 PM that sentence **was** the final boss.
+**And the thing that was the whole final boss eleven minutes ago is now one bullet in the middle.** *"He uses the max power of every form and vary he has"* sits at item six of twenty, between Mustitu and EndlessAnimations. At 3:34 PM that sentence **was** the final boss.
 
 **And the last item on the list is Gaster's own line, word for word.** **August 20, 10:25 AM**: *"Gaster has all power sorces; command blocks, chaos emeralds, the souls, ect. He has all the power sorces from each game."* **August 24, 3:45 PM**: *"he has power sorces from every game."* Same phrase, same spelling, four days and five hours apart. **The one thing that put Gaster above him is the last item on Pero's list.**
 
@@ -53,13 +53,13 @@ Based on Toby's 2026-08-24 lore, **3:45:53 PM**, eleven minutes and forty-five s
 
 **Built as game beat 448, `LAST RUN PERO`.** Additive; nothing earlier was changed.
 
-- **The picture — WHOSE POWER IT IS, IN THE ORDER HE LISTED IT:** all nineteen sources as a roll call, with only *his own forms and varies* and *every game* lit as his. Closes on **NINETEEN SOURCES, AND ONLY THE TWO LIT ONES ARE HIS. THE REST IS A CREDITS LIST.**
+- **The picture — WHOSE POWER IT IS, IN THE ORDER HE LISTED IT:** all twenty items as a roll call, with only *his own forms and varies* and *the boxes* lit as his. Closes on **TWENTY ITEMS, AND ONLY THE TWO LIT ONES ARE HIS OWN. THE REST IS A CREDITS LIST.**
 - **The column — AND THE LAST LINE OF THE LIST IS GASTER'S OWN:** Aug 20 *his* against Aug 24 *now his*, closing on **THE ONE THING THAT PUT GASTER ABOVE HIM IS THE LAST ITEM ON PERO'S LIST.**
 - **Lower left — AND HE GETS A FAMILY IN THE MIDDLE OF AN INVENTORY:** *his brother, Gaster* and *his cousin, Luigi Green*, against June 3's *a being from ToddLLM*. Closes on **A CREATION BECAME A COUSIN ON THE WAY INTO THE INVENTORY.**
 - **Lower right — AND THEY STOP BEING FUEL AND BECOME HIM:** 3:34 PM *fuel* against 3:45 PM *"those are his souls."*
 - **The band — AND THE FIGHT COMES BACK:** five rows, *no wind-up* → *no fight* → *no stage* → *a stage* → *five moves*. Closes on **AN HOUR AGO A FIGHT WITH HIM WAS IMPOSSIBLE. NOW IT HAS A STAGE, A SEQUENCE AND A LINE.**
 - **The inset — AND THE BOSS LINE IS PAST TENSE:** ***"THE LAST RUN IS OVER."***
-- **The strip:** NINETEEN SOURCES, TWO OF THEM HIS · THE MAX POWER OF EVERY FORM AND VARY · AND HIS SOULS ARE THE YELLOW AND THE RED.
+- **The strip:** TWENTY ITEMS, TWO OF THEM HIS OWN · THE MAX POWER OF EVERY FORM AND VARY · AND HIS SOULS ARE THE YELLOW AND THE RED.
 - **Closing line:** THE STRONGEST THING IN THE GAME IS A LIST OF EVERYONE ELSE. · **★ LAST RUN PERO ★**
 
 ![Beat 448 — LAST RUN PERO](screenshots/510-last-run-pero.png)
