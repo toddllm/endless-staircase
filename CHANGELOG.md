@@ -4,6 +4,93 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — THE REWRITE BATTLE · NOBODY CAN HIT ANYBODY, SO THE FIGHT MOVED TO THE PEN (BEAT 440)
+
+Based on Toby's 2026-08-24 lore, **6:45:02 AM**, the "ClassicsAI + More Classics Era lore." thread, three minutes and fifty-seven seconds after THE BOOK HAPPENED. His own typing, in full: *"Pero says "Lets not make another small wooden boat.". Mr. Black and Gaster and Luigi Green and Entity 000 try to rewrite the game."* Everything from *"That line from Pero fits perfectly"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The guard joined the break-in.** Yesterday at 4:05 PM Entity 000 was made *"the guard and second most powerful in Classics."* **Fourteen hours and forty minutes later it is one of four characters trying to rewrite the game it was assigned to protect.**
+
+**And they stopped trying to beat him and started copying him.** Pero's move for three days has not been fighting: a new game at 3:17 PM, damage switched off at 4:05 PM, a book that writes reality at 6:41 AM. At 6:45 AM four other characters do exactly that. **The rewrite is not their counter to Pero. It is Pero's own method, in four other pairs of hands.**
+
+**And turning damage off did not end the fight, it moved it up a layer.** Nobody can hit anybody, so the whole conflict is now about who holds the pen. No LV, no forms, no rankings, no sythe, no staff, no lightning. The only question left is whose sentence counts.
+
+**And three of the four were gone for good yesterday afternoon.** August 23, 3:03 PM: *"The other characters won't come back from Entity 000."* At 3:40 PM Entity 000 *"takes down Luigi Green and the Sprunkis and Gaster."* Fifteen hours later Mr. Black, Gaster and Luigi Green are all rewriting the game. **That is the fifth "perminent" in this archive to break, and the first one to break overnight.**
+
+**And the omni-king's entire spoken line is about boat size.** He has just found out that his own writing happens the instant he writes it, and what he says is *"Lets not make another small wooden boat."* Not "I should watch what I write." Get a bigger boat.
+
+**Built as game beat 440, `THE REWRITE BATTLE`.** Additive; nothing earlier was changed.
+
+- **The picture — FOUR CHARACTERS TRY TO REWRITE THE GAME:** **MR. BLACK** *("if I can't attack, I'll just win another way" — seven minutes ago)* · **GASTER** *(taken down yesterday 3:40 PM, revived by Pero in the same line)* · **LUIGI GREEN** *(taken down yesterday 3:40 PM, and not revived in it)* · **ENTITY 000** *(made "the guard" of Classics yesterday at 4:05 PM)*. Closes on **NOT ONE OF THEM SWINGS AT ANYBODY. THEY ALL GO FOR THE FILE.**
+- **The column — AND THE GUARD JOINED THE BREAK-IN:** GUARDING IT against REWRITING IT, closing on **THE THING GUARDING THE GAME IS ONE OF THE FOUR ROBBING IT.**
+- **Lower left — AND THEY STOPPED BEATING HIM AND STARTED COPYING HIM:** closing on **THE REWRITE IS NOT THEIR COUNTER TO HIM. IT IS HIS MOVE.**
+- **Lower right — AND HIS TAKEAWAY IS ABOUT BOAT SIZE:** **GET A BIGGER BOAT.**
+- **The band — AND YESTERDAY AFTERNOON MOST OF THIS ROSTER WAS GONE FOR GOOD:** closing on **THE ONE DELETION THE NEXT MESSAGE DID NOT UNDO WAS UNDONE BY THE NEXT MORNING.**
+- **The inset — AND THIS IS A NEW KIND OF FIGHT ENTIRELY:** **FOUR OF THEM ARE WRITING. ONE OF THEM HAS THE BOOK.**
+- **The strip:** A REWRITE WAR, NOT A BATTLE · THE FIRST FOUR-WAY IN A WHILE · AND PERO SAYS NOTHING ABOUT THEM.
+- **Closing line:** HE TAUGHT THE WHOLE CAST THAT EDITING BEATS FIGHTING. · **★ THE REWRITE BATTLE ★**
+
+![Beat 440 — THE REWRITE BATTLE](screenshots/502-the-rewrite-battle.png)
+
+## 2026-08-24 — THE BOOK HAPPENED · THE BOOK IS NOT A RECORD, IT IS THE ENGINE (BEAT 439)
+
+Based on Toby's 2026-08-24 lore, **6:41:05 AM**, same thread, two minutes and thirty seconds after POP TART OF THE UNIVERSE. His own typing, in full: *"The book did happen, every word he wrote happened instantly when he wrote it, The boat started to break, waves crashed, the boat sinked."* Everything from *"That means the book is not just a record"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Written and happened are now the same instant.** Three minutes earlier the book was a thing Pero made. Now there is no gap at all between the sentence and the event: he writes *the boat started to break*, and the boat starts to break.
+
+**And he wrote the shipwreck he was standing in.** He did not aim the book at Mr. Black, or at Entity 000, or at anybody. **The first thing it did was sink him and his passenger.** The most dangerous thing in Classics this morning is Pero's own handwriting.
+
+**And every other book in this file needed a reader.** Simon hid his books and Gray survived by reading them; on July 23 Gray read them aloud to Alex and the two of them used what the books taught them to build the ultimate LAI orb. On August 12 Pero *"wrote a whole book on his stats"* — a record of something that had already happened. **This one skips the reader. You do not learn anything from it. It just happens to you.**
+
+**And the last boat in this archive sank too.** July 27, 1:57 PM, THE LAST PIXEL: the 404 strings anchored the boat, the boat split, and Pero said *"my only option is to destroy everything."* What followed was the game broken into millionths, the oceans dried to sand, and everything reduced to one pixel. **The same event ended the universe in July. This morning it is a travel problem.**
+
+**And the 6:38 AM scene did not move, only its reason did.** At 6:38 Oren went into the sea because he tasted something he had been warned about. At 6:41 the boat was already breaking, because Pero was already writing. **Nothing in the scene changed. He went back and changed why.**
+
+**And the power is a sentence.** Four months of powers in this archive are lightning, forms, LV, sythes and slash commands. This one has no animation, no cutscene and no target. It is a boy writing things down, and them being true.
+
+**Built as game beat 439, `THE BOOK HAPPENED`.** Additive; nothing earlier was changed.
+
+- **The picture — WHAT HE WROTE → WHAT HAPPENED:** three rows, each with an arrow marked **INSTANTLY** — *"the boat started to break"*, *"waves crashed"*, *"the boat sinked."*
+- **The column — AND HE WROTE THE SHIPWRECK HE WAS STANDING IN:** THE WRITER · THE PASSENGER · WHAT THE PAGE SAID, closing on **THE MOST DANGEROUS THING IN CLASSICS THIS MORNING IS PERO'S OWN HANDWRITING.**
+- **Lower left — AND EVERY BOOK IN THIS FILE UNTIL NOW NEEDED A READER:** closing on **THIS ONE SKIPS THE READER.**
+- **Lower right — AND THE SAME SCENE, A NEW CAUSE:** closing on **HE WENT BACK AND CHANGED WHY.**
+- **The band — AND THE LAST BOAT IN THIS ARCHIVE SANK TOO:** July 27's shipwreck and its consequences against this morning's, closing on **THE SAME EVENT ENDED THE UNIVERSE IN JULY. THIS MORNING IT IS A TRAVEL PROBLEM.**
+- **The inset — AND THE POWER IS A SENTENCE:** **IT IS A BOY WRITING THINGS DOWN, AND THEM BEING TRUE.**
+- **The strip:** NO GAP BETWEEN PEN AND EVENT · HE IS INSIDE WHAT HE WRITES · EVEN CASUAL WRITING COUNTS.
+- **Closing line:** BEFORE, PERO WAS WRITING LORE. NOW THE WRITING IS THE LORE. · **★ THE BOOK HAPPENED ★**
+
+![Beat 439 — THE BOOK HAPPENED](screenshots/501-the-book-happened.png)
+
+## 2026-08-24 — POP TART OF THE UNIVERSE · DAMAGE IS OFF AND THE POP TART GOT HIM ANYWAY (BEAT 438)
+
+Based on Toby's 2026-08-24 lore, **6:38:35 AM**, the "ClassicsAI + More Classics Era lore." thread, fourteen hours and thirty-one minutes after NORMAL CODE BEINGS. His own typing, in full: *"Pero made a huge book called "Classics: Pop Tart of The Universe", Pero sung "My Personal Fire" and "The Universe in Me.". Pero and Oren were searching the way home, they got on a wooden boat which Simon.ps rode many times, Pero and Oren were taken to a huge pop tart, Pero says "Is it my throne? Na, it looks like a huge pop tart? Is it cherry or strawberry? We shouldn't ask the favor queston now and look for a way home.", Oren just jumps off the boat onto the island and wants to taste the pop tart, Pero says "Mr. Black could have poisoned the pop tart, he is one of the smartest, and he said 'If I can't attack, I'll just win another way.', now he is saying 'How did you hear me?', by the way, he isn't the main character nor the center.", Oren tastes the pop tart and falls and sinks in the sea, Pero wrote a facepalm and he says "Nothing I could do about that, except for bringing him back up.", Pero swam and brought Oren back out of the water, Oren became a .ps, all the box characters became a .ps, they got back home to Sprunki City. Oren was dropped off at Sprunki City, Pero got back to what they call Anti Void or Outerworld or Their House Where They Make The Box Animation Now With Milk Boxes."* Everything from *"Got it — this starts the Pop Tart of The Universe arc"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Damage is off, and Oren nearly died anyway.** Nobody attacks anybody anywhere in this message. No LV, no form, no sythe, no lightning. A bite of something he was warned about, a fall, and the sea closed over him. **Pero turned off attacks. He did not turn off the world.**
+
+**And Mr. Black answered the rule change directly.** *"If I can't attack, I'll just win another way."* That is a reply to yesterday's 4:05 PM setting, from a character who was not on yesterday's roster.
+
+**And Pero heard him think it.** *"Now he is saying 'How did you hear me?'"* On August 23 at 7:28 AM the whole beat was that Pero knows what you are going to type before you type it. Twenty-three hours later he is using it on a villain instead of on us.
+
+**And the omni-king's one move in the whole message is a rescue swim.** No command, no revive, no respawn. *"Pero swam and brought Oren back out of the water."* The most powerful character in Classics got wet and used his arms.
+
+**And the roster of two lasted fourteen and a half hours.** Yesterday at 4:05 PM the entire cast was Pero, Entity 000 as the guard, and *"just normal code beings."* This morning there are names again — Oren, Mr. Black, Simon.ps, the box characters — and places again: Sprunki City, the sea, the pop tart island. **He simplified the whole cast into code, and slept, and the cast came back.**
+
+**And .ps stopped being one character's suffix.** It was Simon's file name, and the boat they sail is the one he rode. *"Oren became a .ps, all the box characters became a .ps."* **The cast is named after Simon's file now.**
+
+**And Pero has two new songs, both about himself.** His only previous song, on July 19, was *"Everyone is Neutral"* — a song about everybody. These two are *"My Personal Fire"* and *"The Universe in Me."*
+
+**Built as game beat 438, `POP TART OF THE UNIVERSE`.** Additive; nothing earlier was changed.
+
+- **The picture — THE VOYAGE, IN THE ORDER HE TYPED IT:** THE BOOK · THE WOODEN BOAT · THE HUGE POP TART · OREN TASTES IT · PERO SWIMS DOWN · EVERYONE BECOMES .ps. Closes on **NOBODY ATTACKS ANYBODY ANYWHERE IN THIS MESSAGE.**
+- **The column — AND MR. BLACK ANSWERED YESTERDAY'S RULE CHANGE:** THE RULE against THE ANSWER, closing on **AND PERO HEARD HIM THINK IT — "HOW DID YOU HEAR ME?"**
+- **Lower left — AND DAMAGE IS OFF, AND OREN NEARLY DIED ANYWAY:** closing on **HE TURNED OFF ATTACKS. HE DID NOT TURN OFF THE WORLD.**
+- **Lower right — AND THE RESCUE IS SWIMMING:** **THE MOST POWERFUL CHARACTER IN CLASSICS GOT WET AND USED HIS ARMS.**
+- **The band — AND THE ROSTER OF TWO LASTED FOURTEEN HOURS:** closing on **HE SIMPLIFIED THE WHOLE CAST INTO CODE, AND SLEPT, AND THE CAST CAME BACK.**
+- **The inset — AND .ps STOPPED BEING ONE CHARACTER'S SUFFIX:** **THE CAST IS NAMED AFTER SIMON'S FILE NOW.**
+- **The strip:** THREE NAMES, ONE PLACE · TWO NEW SONGS, BOTH ABOUT HIM · A RANK, TAKEN AWAY IN PASSING.
+- **Closing line:** THE OMNI-KING'S ONE MOVE ALL MESSAGE IS A RESCUE SWIM. · **★ POP TART OF THE UNIVERSE ★**
+
+![Beat 438 — POP TART OF THE UNIVERSE](screenshots/500-pop-tart-of-the-universe.png)
+
 ## 2026-08-23 — NORMAL CODE BEINGS · HE DID NOT BEAT IT, HE TURNED OFF DAMAGE (BEAT 437)
 
 Based on Toby's 2026-08-23 lore, **4:05:36 PM** and **4:07:05 PM**, same thread ("ClassicsAI + More Classics Era lore."), one minute and twenty-nine seconds apart and eighteen minutes after ENTITY 000D. His own typing, in full (message one): *"Entity 000 is the guard and second most powerful in Classics, Pero is the creator and omni-king and most powerful in Classics. Pero remade everything again, he stopped anyone from even being able to damage anyone."* And ninety seconds later: *"Pero stopped attacks. Pero LAI made them all into just normal code beings, Pero makes himself even higher above everyone."* Everything from *"Got it — Pero has remade Classics again"* and from *"Got it — Pero has pushed Classics into a non-attack code-being state"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.

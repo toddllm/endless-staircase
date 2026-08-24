@@ -33,6 +33,9 @@ Scenes:
     mergeform        — BEAT 435, /Entity000_mergeform (Toby, Aug 23, 3:40 PM)
     entity000d       — BEAT 436, ENTITY 000D (Toby, Aug 23, 3:46 PM)
     codebeings       — BEAT 437, NORMAL CODE BEINGS (Toby, Aug 23, 4:05 PM + 4:07 PM)
+    poptart          — BEAT 438, POP TART OF THE UNIVERSE (Toby, Aug 24, 6:38 AM)
+    bookhappened     — BEAT 439, THE BOOK HAPPENED (Toby, Aug 24, 6:41 AM)
+    rewritebattle    — BEAT 440, THE REWRITE BATTLE (Toby, Aug 24, 6:45 AM)
     cure             — the False Cure scene (two bottles + taunt + banners)
     residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
     perosrealm / weakerexp / sendingthis / containedshadow / watcher
@@ -10020,6 +10023,81 @@ SCENES = {
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
           loopVs.t=6100.0; loopVs.cyc=9352.8; loopVs.phase=437;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","poptart": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 438. POP TART OF THE UNIVERSE: the six-step voyage, the Mr. Black answered-the-rule-change column, the damage-is-off-and-he-nearly-died box, the rescue-is-swimming box, the roster-of-two-lasted-fourteen-hours band and the .ps inset. Beat 438 spans cyc 9356.0 to 9378.0; cyc=9374.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=9374.8; loopVs.cyc=9374.8; loopVs.phase=438;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","bookhappened": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 439. THE BOOK HAPPENED: the written-to-happened arrow rows, the he-wrote-the-shipwreck-he-was-standing-in column, the every-book-needed-a-reader box, the same-scene-new-cause box, the last-boat-in-the-archive band and the power-is-a-sentence inset. Beat 439 spans cyc 9378.0 to 9400.0; cyc=9396.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=9396.8; loopVs.cyc=9396.8; loopVs.phase=439;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        try { taunt=''; tauntT=0; } catch(e){}
+        try { warnText=''; warnT=0; } catch(e){}
+        try { floaters=[]; particles=[]; emeralds=[]; tendrils=[]; } catch(e){}
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    ""","rewritebattle": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // THE UNDEFINED LOOP - freeze on beat 440. THE REWRITE BATTLE: the four rewriters, the guard-joined-the-break-in column, the they-started-copying-him box, the takeaway-is-boat-size box, the gone-for-good-yesterday band and the new-kind-of-fight inset. Beat 440 spans cyc 9400.0 to 9422.0; cyc=9418.8 gives dt~18.8 so everything is up.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=9418.8; loopVs.cyc=9418.8; loopVs.phase=440;
         }
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
