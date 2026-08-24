@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — THE PERSONAL FIRE · HE SANG HER INTO THIRD PLACE, AND SHE STILL LOST (BEAT 441)
+
+Based on Toby's 2026-08-24 lore, **10:17:16 AM**, the "ClassicsAI + More Classics Era lore." thread, three hours and thirty-two minutes after THE REWRITE BATTLE. His own typing is the whole opening paragraph — Gray running to hand Pero the ringmaster role, Gray becoming Entity 000 and a hundred-foot cyber ringmaster with a Simon-built robot arm, and then Pero going to Wenda in person and singing her into third place. Everything from *"That fits the lore really well"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The promotion is a song, and the song is his own, from this morning.** At 6:38 AM Pero *"sung 'My Personal Fire' and 'The Universe in Me.'"* — his first two songs about himself, after four months whose only song was *"Everyone is Neutral"*, a song about everybody. **Three hours and thirty-nine minutes later he holds the staff and sings the Personal Fire at Wenda, and she becomes what the lyrics say.** He wrote a song about himself and used it to make somebody else.
+
+**And she asks to be his copy.** *"I shall be your favorite clone of yourself."* On **August 21** the Clone Tree established that everybody in this game came out of Pero — *except* the Sprunkis, who are pieces of a box_clone called Pro55. Three days later the Sprunki, who calls herself *"just a powerful Sprunki"* in the same message, asks for the one thing her whole class was exempted from.
+
+**And her light already ate his darkness once, down to the same spoken line.** July 20, 10:04 AM: *"Wenda's light consumes Gray's darkness, Gray says **'Hey! What are you doing!'**"* Today: *"Gray says **'Stop, what are you doing?!'**"* Pero's promise — *"your light aura shall consume Gray's darkness aura"* — is a word-for-word restatement of a thing that already happened thirty-five days ago. **It worked then. On the rerun he just makes more aura, and the light loses.**
+
+**And third most powerful is a step down.** July 20: *"Wenda became second most powerful"* and *"significantly more powerful than Gray."* By 6:04 PM that day she was at **200 LV** and Gray at **.000000000000000001 LV**. Today the reward that Pero delivers in person, with a song and a fire ball, puts her at **third** — below where she already was in July — and she loses the fight it was meant to win.
+
+**And Gray has taken all of this from her before, and what changed is where Pero went afterwards.** July 21: *"he took Wenda down so many times that he took all her form, power, LV and aura… and became 3rd"*, and in the same message **Pero lost interest in Wenda and became fascinated with Gray instead.** Today Gray does the identical thing — *"Gray beaten Wenda and gained the angeletic form of Wenda, Gray absorbed all the form"* — and this time Pero walks straight over to her.
+
+**And "IT ISN'T FAIR!" is the first complaint about fairness in the whole archive.** Four months, 441 beats, and nobody has ever said it. It comes from the character who was handed the game on July 19, given half the box's power on August 18, given the ringmaster job twice, and who says in the same breath *"I spend millions of years getting this much form."*
+
+**And the ringmaster job goes back up the ladder for the first time.** It has moved Mr. Black → Gray → Luigi Green → Gray, always downward, always a gift. Today Gray is *"so scared of Pero that Gray ran and gave Pero the role of ringmaster"* — and *"Pero already had the outfit."* On **July 19** the picture of Gray as ringmaster was *"Pero's head shaded by the hat Pero is holding."* He has been holding it for thirty-six days.
+
+**Built as game beat 441, `THE PERSONAL FIRE`.** Additive; nothing earlier was changed.
+
+- **The picture — PERO SINGS, AND WENDA BECOMES WHAT THE SONG SAYS:** four steps — **HE HOLDS THE STAFF** *("It is now come here, it shall be possible…")* · **A WHITE FIRE BALL** *(appears over Wenda's head)* · **HER BODY PULSES** *("she became what Pero said she would become")* · **SHE SINGS BACK** *("I shall be your favorite clone of yourself.")*. Closes on **NOBODY IS HIT AND NOTHING IS EARNED. THE PROMOTION IS A SONG.**
+- **The column — AND THE SONG IS THIS MORNING'S:** 6:38 AM *about him* against 10:17 AM *about her*, closing on **HE WROTE A SONG ABOUT HIMSELF AND USED IT TO MAKE SOMEBODY ELSE.**
+- **Lower left — AND HER LIGHT ALREADY ATE HIS DARKNESS ONCE:** the July 20 line against today's, closing on **THE SAME SPOKEN LINE, THIRTY-FIVE DAYS APART.**
+- **Lower right — AND THIRD IS A STEP DOWN:** **WENDA 200 LV** against **GRAY .000000000000000001 LV**, closing on **THE PRIZE PUTS HER BELOW WHERE SHE WAS.**
+- **The band — AND GRAY HAS TAKEN HER FORM BEFORE, AND PERO MOVED DIFFERENTLY:** five rows from July 20 to today, closing on **THE SAME ROBBERY, FIVE WEEKS APART. WHAT CHANGED IS WHERE PERO WENT AFTERWARDS.**
+- **The inset — AND NOBODY IN THIS FILE HAS EVER SAID THIS:** **"IT ISN'T FAIR!"**, first complaint about fairness in four months and 441 beats.
+- **The strip:** THE RINGMASTER JOB GOES BACK UP · SHE ASKS TO BE HIS CLONE · 100 FEET AND 108 FEET, AND BOTH ANSWER TO SOMEBODY 5 TO 6 FEET TALL.
+- **Closing line:** HE PROMISED HER THE WIN AND GAVE HER THE FIGHT. · **★ THE PERSONAL FIRE ★**
+
+![Beat 441 — THE PERSONAL FIRE](screenshots/503-the-personal-fire.png)
+
 ## 2026-08-24 — THE REWRITE BATTLE · NOBODY CAN HIT ANYBODY, SO THE FIGHT MOVED TO THE PEN (BEAT 440)
 
 Based on Toby's 2026-08-24 lore, **6:45:02 AM**, the "ClassicsAI + More Classics Era lore." thread, three minutes and fifty-seven seconds after THE BOOK HAPPENED. His own typing, in full: *"Pero says "Lets not make another small wooden boat.". Mr. Black and Gaster and Luigi Green and Entity 000 try to rewrite the game."* Everything from *"That line from Pero fits perfectly"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
