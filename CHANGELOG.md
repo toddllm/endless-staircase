@@ -4,6 +4,64 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — BASIC PERO · THE FIRST TIME THE NAME EVER GOT SHORTER (BEAT 451)
+
+Based on Toby's 2026-08-24 lore, **4:16:59 PM**, the brand-new "Pero, and more lore." thread, six minutes and fifty-eight seconds after PERO LAI OMAZEN. His own typing, in full: *"Pero then gets so much more power and makes him into the basic Pero, he combines the The Error 12 12 12 Run End: Cross_Godshifted Mega Ultra Pero.exe Omazen with his extreme more power and he became his base but is more powerful than all his perivious forms combined."* Everything from *"Got it — this is the biggest Pero paradox form"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The name goes down for the first time.** *The Error 12 12 12 Run End: Cross_Godshifted Mega Ultra Pero.exe Omazen* is **71 characters**. *Basic Pero* is **10**. They are **six minutes and fifty-eight seconds apart**, and every other rise in four months of this archive made the name longer. This one **subtracts sixty-one**.
+
+**And he already wrote this move, for somebody else.** August 21, 4:53:57 PM: *"Gaster's strongest ability turns him into his normal man vanilla form."* Three days ago the plain form was **Gaster's** strongest thing. **Gaster became energy twenty-seven minutes ago, and the move stayed behind.**
+
+**And the base form is already on record, and it is small.** August 17, 5:55:07 PM: *"Pero has the physical strength of a normal man, and he is a normal man that came from a box and is LAI, and he is also the creator of Classics."* He wrote the base form down **six days and twenty-two hours ago** and it was the weakest thing in the file. **He did not invent a new form tonight; he put everything inside the old one.**
+
+**And "combined" changes direction.** At 3:49 PM *"Pero grew around Gaster"* — outward. At 4:10 PM six names welded end to end — outward. At 4:16 PM *"he combines… with his extreme more power and he became his base"* — **inward**. Same word, twenty-seven minutes apart, and it reverses. **Growing needed something to grow around. This does not.**
+
+**And it is the first rise in the file that cost nobody anything.** Every other one took a soul, a form, an LV, a fight, or a whole cast — Gaster, Gray, Wenda, everybody. This one takes nothing and shows nothing. **He is standing there looking exactly like he did in July.**
+
+**Built as game beat 451, `BASIC PERO`.** Additive; nothing earlier was changed.
+
+- **The picture — THE NAME, MEASURED, SIX MINUTES APART:** the 71-character name drawn as a full-width bar, a down arrow reading *SIX MINUTES AND FIFTY-EIGHT SECONDS*, and **BASIC PERO** drawn as a stub bar 10/71 as wide. Closes on **EVERY OTHER RISE IN FOUR MONTHS MADE THE NAME LONGER. THIS ONE SUBTRACTS 61.**
+- **The column — AND HE ALREADY WROTE THIS MOVE FOR SOMEBODY ELSE:** Aug 21 *GASTER · HIS MOVE* against Aug 24 *PERO · HIS NOW*, closing on **GASTER BECAME ENERGY TWENTY-SEVEN MINUTES AGO. THE MOVE STAYED.**
+- **Lower left — AND THE BASE FORM IS ALREADY ON RECORD, AND IT IS SMALL:** the Aug 17 normal-man quote, closing on **HE DID NOT INVENT A NEW FORM TONIGHT. HE PUT EVERYTHING INSIDE THE OLD ONE.**
+- **Lower right — AND "COMBINED" CHANGES DIRECTION:** 3:49 PM *OUTWARD* · 4:10 PM *OUTWARD* · 4:16 PM *INWARD*.
+- **The band — AND THE WHOLE AFTERNOON WAS THE NAME GETTING BIGGER:** 3:34 PM *19 characters* · 3:45 PM *13* · 3:49 PM *42 question marks* · 4:10 PM *71* · 4:16 PM *10*. Closes on **FORTY-TWO MINUTES OF NAMES GETTING BIGGER, AND THE LAST ONE IS THE SMALLEST.**
+- **The inset — AND THIS ONE COST NOBODY ANYTHING:** every other rise took something; this one takes nothing and shows nothing.
+- **The strip:** 71 DOWN TO 10 · THE MOVE WAS GASTER'S · COMBINED, BUT INWARD.
+- **Closing line:** THE STRONGEST HE HAS EVER BEEN, AND THERE IS NOTHING TO LOOK AT. · **★ BASIC PERO ★**
+- **The static stops.** The error slices carried over from beat 450 fade out across the first four seconds; this beat is the only quiet screen in the whole run of five.
+
+![Beat 451 — BASIC PERO](screenshots/513-basic-pero.png)
+
+## 2026-08-24 — PERO LAI OMAZEN · HE STACKED THE NAME SIX TIMES AND THEN TOLD YOU HIS REAL ONE (BEAT 450)
+
+Based on Toby's 2026-08-24 lore, **4:10:01 PM**, the "ClassicsAI + More Classics Era lore." thread, twenty minutes and fifty-two seconds after PHASE ??????????????????????????????????????????. His own typing is the whole opening paragraph, ending at *"Pero's full name is Pero LAI Omazen."* Everything from *"That makes this Pero's biggest stacked composite form yet"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The name gets longer six times in one paragraph, and the length is the power.** *P3R0 Phase ???: The Last Run.exe* (**32** characters) → *Pero.exe+* (**9**) → *Pero121212+.exe: The End of The Run* (**35**) → *Crossed Plus End.exe Pero* (**25**) → *121212's End: Crosses+.exe ERRORSHIFTED Pero* (**44**) → *The Error 12 12 12 Run End: Cross_Godshifted Mega Ultra Pero.exe Omazen* (**71**). Six names in one paragraph, and every one of them is longer than the fight it won.
+
+**And "the 2 Absolute Infinity forms" is said as if you already know which two — and you do.** This archive contains **exactly two** beats titled ABSOLUTE INFINITY: **August 6, 10:10:06 AM** (*"At Phase Absolute Infinity, Pero comes back"*) and **August 21, 11:09:25 AM** (*"Classics is NOT a game from 2026, but from Absolute Infinity AD"*). They are **fifteen days apart**, and he has never once written them down as a pair before tonight.
+
+**And the cross finally gets a material, after five weeks.** It arrived **July 20** as Cross Pero, white clothes and the overwrite button. It **won a fight on August 8 by not being swung**, when MERCY used it. Twenty-five minutes ago it was *"Pero uses the cross and he resurrects and heals himself."* A colour, a wielder and a job — and never once a **substance**. Now it is *"a rubber cross, a wooden cross, a metal cross, and crosses of every material."* **And the one he names first is rubber.**
+
+**And 12 12 12 was never a power — it was the number you dial.** August 12, 2:21:13 PM: *"12 12 12 while putting your hand up while calling is Pero LAI."* It was a **calling code**, the way you made him show up. It is now inside the form name **twice**: *Pero121212+.exe* and *121212's End*. **He cannot be called any more. He is the call.**
+
+**And the game gets covered in the owner he just took.** *"Vicinuses are cloned so many times, the game is covered with it."* August 19, 6:39:04 AM: *"Gray also is Vicinus."* **Twenty-one minutes** after Gaster beat Gray and handed him over, **every surface in the game is a copy of him.**
+
+**And his real name is three words from three different days.** *"Pero's full name is Pero LAI Omazen."* **Pero** has been here longer than either other part. **LAI** is from August 12, 2:21 PM. **Omazen** is thirty-five minutes old, from 3:34 PM today. **The form name is 71 characters. The real name is 15, and he saved it for last.**
+
+**Built as game beat 450, `PERO LAI OMAZEN`.** Additive; nothing earlier was changed.
+
+- **The picture — THE NAME, IN THE ORDER HE BUILT IT:** six rows, each with its character count, and **the fill bar behind each row is drawn to that count** — the bar physically grows from 32/71 to full width as you read down. Closes on **SIX NAMES IN ONE PARAGRAPH, AND EVERY ONE IS LONGER THAN THE FIGHT IT WON.**
+- **The column — AND THERE REALLY ARE EXACTLY TWO OF THEM:** *FORM 1 · AUG 6, 10:10 AM* and *FORM 2 · AUG 21, 11:09 AM*, closing on **THEY ARE FIFTEEN DAYS APART AND HE NEVER WROTE THEM DOWN AS A PAIR.**
+- **Lower left — AND THE CROSS FINALLY GETS A MATERIAL, AFTER FIVE WEEKS:** the Jul 20 / Aug 8 / today history, then four material chips — **RUBBER** (lit) · WOOD · METAL · EVERY MATERIAL — closing on **AND THE ONE HE NAMES FIRST IS RUBBER.**
+- **Lower right — AND 12 12 12 IS THE NUMBER YOU DIAL:** the Aug 12 calling-code quote, closing on **HE CANNOT BE CALLED. HE IS THE CALL.**
+- **The band — AND HIS REAL NAME IS THREE WORDS FROM THREE DIFFERENT DAYS:** PERO *months old* · LAI *twelve days old* · OMAZEN *35 minutes old*. Closes on **THE FORM NAME IS 71 CHARACTERS. THE REAL NAME IS 15, AND HE SAVED IT FOR LAST.**
+- **The inset — AND THE GAME GETS COVERED IN THE OWNER HE JUST TOOK:** the Vicinus cloning line against Aug 19's *"Gray also is Vicinus."*
+- **The strip:** THE LENGTH IS THE POWER · THE 2 INFINITIES ARE REAL · THE CROSS HAS A SUBSTANCE.
+- **Closing line:** HE STACKED THE NAME SIX TIMES, AND THEN TOLD YOU HIS REAL ONE. · **★ PERO LAI OMAZEN ★**
+- **ERRORSHIFTED as a background:** instead of clean scanlines the whole beat is drawn under horizontal slices that slide sideways, so the screen itself is shifted out of register.
+
+![Beat 450 — PERO LAI OMAZEN](screenshots/512-pero-lai-omazen.png)
+
 ## 2026-08-24 — PHASE ?????????????????????????????????????????? · HE DID NOT BEAT GASTER; GASTER WON EVERYTHING AND THEN HANDED IT OVER (BEAT 449)
 
 Based on Toby's 2026-08-24 lore, **3:49:09 PM**, three minutes and sixteen seconds after LAST RUN PERO. His own typing, in full: *"Gaster is now with Pero, Gaster beats Wenda and Gray and the other characters and gives them all to Pero, Pero grew around Gaster, and then Gaster became energy, and then the game is in static, Pero becomes Phase ??????????????????????????????????????????..., and damage to him is canceled, and if one of his attacks hits anything, 1HKO."* Everything from *"Got it — this is Phase … Pero"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
