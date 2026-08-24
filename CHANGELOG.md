@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — POP TART BOXES · HE GAVE AWAY THE GAME AND WENT OUT FOR SNACKS (BEAT 443)
+
+Based on Toby's 2026-08-24 lore, **12:11:01 PM**, the "ClassicsAI + More Classics Era lore." thread, seven minutes and ten seconds after THE END OF LAYERS. His own typing, in full: *"Pero then gave Wenda and Gray the whole game, Pero leaves to get boxes of Pop Tarts (5x5 asset; 25 Pop_Tart.PNGs per Pop_Tart_Box.PNG) for Wenda and Gray and Gaster and Luigi Green."* Everything from *"Got it — Pero just gave"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**The snack gets a file format and a grid size. The whole game gets one clause.** `Pop_Tart_Box.PNG` is specified down to the extension, the asset dimensions and the count per box. The transfer of the entire game — to two people, permanently as far as the sentence says — comes with no terms, no conditions and no return date.
+
+**And he hands it to the two who were fighting each other one hour and fifty-four minutes ago.** At **10:17 AM** Gray absorbed Wenda's angeletic form, Pero sang her into third place, she made a plasma Spear of Light and struck, and Gray's darkness put her down. At **12:11 PM** they are trusted with the game jointly. Nothing in between settled it. He simply decided they were both fine.
+
+**And this is the third time he has left to buy food.** **August 18, 11:17 AM** — *"I am leaving for a few years, would you be okay for a few minutes?"*, back by 5:54 PM. **August 22, 8:04 AM** — *"Pero again walked out to get more milk for Gaster."* **August 24, 12:11 PM** — Pop Tart boxes, for four people. Every other character in this archive is trying to take the game. He keeps putting it down.
+
+**And the last Pop Tart in this file put somebody in the sea.** At **6:38 this morning**, five and a half hours earlier: *"Mr. Black could have poisoned the Pop Tart"*, Oren tastes it, falls and sinks in the sea, and Pero has to swim him back out. Now he is buying them twenty-five to a box.
+
+**And 5 × 5 = 25 is the only number in this file anyone can check.** Eight minutes after 999 octillion, 13 septillion and *"1 deculactianmatinsyatrheunsynmianchyshdnchaehhcytchajndaiuhiuhwadjahcgszyjillion"*, the message's only arithmetic is a snack box — and it is right. He counted the Pop Tarts and not the layers.
+
+**And Gaster and Luigi Green get Pop Tarts but not the game.** Eight minutes ago they were 000Cs in soul form, controlling Prototype_000. Now they are on the snack list.
+
+**Built as game beat 443, `POP TART BOXES`.** Additive; nothing earlier was changed.
+
+- **The picture — THE WHOLE TRANSACTION, IN ONE SENTENCE:** four steps — **HE GIVES AWAY THE GAME** · **HE LEAVES** · **THE SNACK HAS SPECS** *(5x5 asset; 25 Pop_Tart.PNGs per box)* · **THE GAME HAS NONE** *(no terms, no conditions, no return date)*. Closes on **THE SNACK GETS A FILE FORMAT AND A GRID SIZE. THE GAME GETS A SENTENCE.**
+- **The column — AND THEY WERE FIGHTING EACH OTHER THIS MORNING:** 10:17 AM *a fight* against 12:11 PM *a joint account*, closing on **HE JUST DECIDED THEY WERE BOTH FINE.**
+- **Lower left — AND THIS IS THE THIRD TIME HE HAS LEFT TO GET FOOD:** the Aug 18 and Aug 22 runs against today's, closing on **EVERY OTHER CHARACTER IS TRYING TO TAKE THE GAME. HE KEEPS PUTTING IT DOWN.**
+- **Lower right — AND THE LAST POP TART SANK SOMEBODY:** the 6:38 AM poisoning against the 12:11 PM bulk order, closing on **FIVE AND A HALF HOURS LATER, AND HE IS BUYING IN BULK.**
+- **The band — AND THE GAME KEEPS CHANGING HANDS:** five rows from July 19 to today, closing on **HE BUILT IT EIGHT MINUTES AGO, AND HE HAS ALREADY GIVEN IT AWAY.**
+- **The inset — AND THIS IS THE ONE NUMBER IN THE FILE YOU CAN CHECK:** **5 × 5 = 25**, closing on **HE COUNTED THE POP TARTS AND NOT THE LAYERS.**
+- **The strip:** GASTER AND LUIGI GREEN GET POP TARTS · NORMAL BOXES → MILK BOXES → POP TART BOXES · HE IS STILL ABSOLUTE, HE JUST IS NOT HERE.
+- **Closing line:** HE MADE A UNIVERSE, GAVE IT AWAY, AND WENT OUT FOR SNACKS. · **★ POP TART BOXES ★**
+
+![Beat 443 — POP TART BOXES](screenshots/505-pop-tart-boxes.png)
+
 ## 2026-08-24 — THE END OF LAYERS · HE BUILT THE DEEPEST PLACE IN THE GAME AND DELETED IT IN THE SAME MESSAGE (BEAT 442)
 
 Based on Toby's 2026-08-24 lore, **12:03:51 PM**, the "ClassicsAI + More Classics Era lore." thread, one hour and forty-six minutes after THE PERSONAL FIRE. His own typing is the whole Underworld Error passage — Pero's warning to the avatar, twenty-five named depths in order, the End of Layers trap, and the Entity 000 army that follows. Everything after that which reads as summary is a pasted ChatGPT reply and is treated as commentary, not canon.
