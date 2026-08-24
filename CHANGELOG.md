@@ -12,7 +12,7 @@ Based on Toby's 2026-08-24 lore, **12:11:01 PM**, the "ClassicsAI + More Classic
 
 **And he hands it to the two who were fighting each other one hour and fifty-four minutes ago.** At **10:17 AM** Gray absorbed Wenda's angeletic form, Pero sang her into third place, she made a plasma Spear of Light and struck, and Gray's darkness put her down. At **12:11 PM** they are trusted with the game jointly. Nothing in between settled it. He simply decided they were both fine.
 
-**And this is the third time he has left to buy food.** **August 18, 11:17 AM** — *"I am leaving for a few years, would you be okay for a few minutes?"*, back by 5:54 PM. **August 22, 8:04 AM** — *"Pero again walked out to get more milk for Gaster."* **August 24, 12:11 PM** — Pop Tart boxes, for four people. Every other character in this archive is trying to take the game. He keeps putting it down.
+**And he has done this exact thing before, six days ago.** On **August 18 at 11:17 AM** he handed the game over and walked out for milk, and by **4:20 PM** that day: *"Pero is out getting milk and Gray is taking over the game."* On **August 22 at 8:04 AM**, *"Pero again walked out to get more milk for Gaster."* The move is identical — hand it over, leave for groceries. What changed is who he handed it to, and what he went out for.
 
 **And the last Pop Tart in this file put somebody in the sea.** At **6:38 this morning**, five and a half hours earlier: *"Mr. Black could have poisoned the Pop Tart"*, Oren tastes it, falls and sinks in the sea, and Pero has to swim him back out. Now he is buying them twenty-five to a box.
 
@@ -24,7 +24,7 @@ Based on Toby's 2026-08-24 lore, **12:11:01 PM**, the "ClassicsAI + More Classic
 
 - **The picture — THE WHOLE TRANSACTION, IN ONE SENTENCE:** four steps — **HE GIVES AWAY THE GAME** · **HE LEAVES** · **THE SNACK HAS SPECS** *(5x5 asset; 25 Pop_Tart.PNGs per box)* · **THE GAME HAS NONE** *(no terms, no conditions, no return date)*. Closes on **THE SNACK GETS A FILE FORMAT AND A GRID SIZE. THE GAME GETS A SENTENCE.**
 - **The column — AND THEY WERE FIGHTING EACH OTHER THIS MORNING:** 10:17 AM *a fight* against 12:11 PM *a joint account*, closing on **HE JUST DECIDED THEY WERE BOTH FINE.**
-- **Lower left — AND THIS IS THE THIRD TIME HE HAS LEFT TO GET FOOD:** the Aug 18 and Aug 22 runs against today's, closing on **EVERY OTHER CHARACTER IS TRYING TO TAKE THE GAME. HE KEEPS PUTTING IT DOWN.**
+- **Lower left — AND HE HAS DONE THIS EXACT THING BEFORE, SIX DAYS AGO:** the Aug 18 handover-and-milk-run and the Aug 22 milk run against today's, closing on **THE EXACT SAME MOVE, SIX DAYS APART. WHAT CHANGED IS WHO HE HANDED IT TO, AND WHAT HE WENT OUT FOR.**
 - **Lower right — AND THE LAST POP TART SANK SOMEBODY:** the 6:38 AM poisoning against the 12:11 PM bulk order, closing on **FIVE AND A HALF HOURS LATER, AND HE IS BUYING IN BULK.**
 - **The band — AND THE GAME KEEPS CHANGING HANDS:** five rows from July 19 to today, closing on **HE BUILT IT EIGHT MINUTES AGO, AND HE HAS ALREADY GIVEN IT AWAY.**
 - **The inset — AND THIS IS THE ONE NUMBER IN THE FILE YOU CAN CHECK:** **5 × 5 = 25**, closing on **HE COUNTED THE POP TARTS AND NOT THE LAYERS.**
