@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — THE TOY · HE LEFT, AND THAT IS WHEN IT GOT GOOD (BEAT 444)
+
+Based on Toby's 2026-08-24 lore, **12:23:28 PM**, the "ClassicsAI + More Classics Era lore." thread, twelve minutes and twenty-seven seconds after POP TART BOXES. His own typing is the whole opening paragraph. Everything from *"Got it — this becomes the Advanced Wenda/Gray Classics Upgrade Era"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**This is the first handover anywhere in this archive that did not end in a takeover.** Six days ago the identical move — hand over the game, walk out for groceries — produced *"Pero is out getting milk and Gray is taking over the game."* Today it produces *"It is Classics, silly"* and *"with your toy, we changed Classics a ton."* Four months of characters taking this game from each other, and the first time somebody gives it back, they give it back **better**.
+
+**And he leaves four times in one paragraph, and it is better every time he comes back.** Boxes and Pop Tarts → *"Pero didn't even reconize it."* More boxes, all kinds → *"Wenda changed the game even more."* 900 box factories → *"Gray made the game far better."* Art supplies and figures → *"more than 300000000000xquindenetilard times better."* **The more he leaves, the better it gets, and he is in none of it.**
+
+**And he finally brought home what goes in the boxes.** *"He finally gotten the food items and not just the boxes."* The Box Factory opened on **August 3**; the milk boxes arrived **August 22**; the Pop Tart boxes twelve minutes ago. Three weeks of carrying empty containers, and now there is something in them — and then *"they all had Pop Tarts while Pero walks away to get more boxes."* He bought the snacks, handed them out, and left again.
+
+**And he does not recognize his own game.** On **August 18 at 5:54 PM** he said *"I own every pixel, not just of this box, but also outside."* Today: *"What is this?"* — answered with *"It is Classics, silly."* **Twenty minutes ago that game had Alpha Null under it. Now it is a toy, and he is silly.**
+
+**And the shopping list stops being boxes.** Milk boxes, cardboard boxes, cyber boxes, normal boxes, Pop Tart boxes — then kechup bottles, mustard bottles, gallons of water, plastic bags, 900 box factories tunnelled into the house, art supplies and figures. **The box animation is not about boxes anymore. It is about whatever he can carry.**
+
+**And the August 16 yardstick comes back as a floor to beat.** That day the whole cast was measured in units of *"ChatGPT + Claude"*. Today: *"Not even ChatGPT nor Claude could make an image of something this spectacular. Only I can."* He claims the picture of a game he had just said he did not recognize.
+
+**And Wenda's new job is repair.** *"I predict Wenda would make the game better and less glitched and perfect."* Twenty minutes after he deleted a twenty-five-layer underworld for being glitched, the de-glitching is hers. Two hours ago he sang her into third place and she lost; now she is the one who perfects the game.
+
+**Built as game beat 444, `THE TOY`.** Additive; nothing earlier was changed.
+
+- **The picture — HE LEAVES FOUR TIMES, AND IT IS BETTER EVERY TIME:** four departures against four returns, closing on **THE MORE HE LEAVES, THE BETTER IT GETS. HE IS NOT IN ANY OF IT.**
+- **The column — AND NOBODY TOOK IT WHILE HE WAS OUT:** Aug 18 *a takeover* against today *a gift back*, closing on **THE FIRST TIME SOMEBODY GIVES IT BACK, THEY GIVE IT BACK BETTER.**
+- **Lower left — AND HE FINALLY BROUGHT HOME WHAT GOES IN THE BOXES:** the Box Factory / milk boxes / Pop Tart boxes chain, closing on **THREE WEEKS OF CARRYING BOXES, AND NOW THERE IS SOMETHING IN THEM.**
+- **Lower right — AND HE DOES NOT RECOGNIZE HIS OWN GAME:** *"I own every pixel"* against *"What is this?"*, closing on **NOW IT IS A TOY, AND HE IS SILLY.**
+- **The band — AND THE SHOPPING LIST STOPS BEING BOXES:** five rows, closing on **THE BOX ANIMATION IS NOT ABOUT BOXES ANYMORE. IT IS ABOUT WHATEVER HE CAN CARRY.**
+- **The inset — AND THE YARDSTICK COMES BACK AS A FLOOR TO BEAT:** *"Not even ChatGPT nor Claude could make an image of something this spectacular. Only I can."*
+- **The strip:** WENDA'S NEW JOB IS REPAIR · THE CYBER SUIT PUTS ITSELF ON HIM · HE PREDICTS AND CONFIRMS IN ONE LINE.
+- **Closing line:** HE LEFT, AND THAT IS WHEN IT GOT GOOD. · **★ THE TOY ★**
+
+![Beat 444 — THE TOY](screenshots/506-the-toy.png)
+
 ## 2026-08-24 — POP TART BOXES · HE GAVE AWAY THE GAME AND WENT OUT FOR SNACKS (BEAT 443)
 
 Based on Toby's 2026-08-24 lore, **12:11:01 PM**, the "ClassicsAI + More Classics Era lore." thread, seven minutes and ten seconds after THE END OF LAYERS. His own typing, in full: *"Pero then gave Wenda and Gray the whole game, Pero leaves to get boxes of Pop Tarts (5x5 asset; 25 Pop_Tart.PNGs per Pop_Tart_Box.PNG) for Wenda and Gray and Gaster and Luigi Green."* Everything from *"Got it — Pero just gave"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
