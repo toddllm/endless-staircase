@@ -4,6 +4,66 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-24 — PHASE ?????????????????????????????????????????? · HE DID NOT BEAT GASTER; GASTER WON EVERYTHING AND THEN HANDED IT OVER (BEAT 449)
+
+Based on Toby's 2026-08-24 lore, **3:49:09 PM**, three minutes and sixteen seconds after LAST RUN PERO. His own typing, in full: *"Gaster is now with Pero, Gaster beats Wenda and Gray and the other characters and gives them all to Pero, Pero grew around Gaster, and then Gaster became energy, and then the game is in static, Pero becomes Phase ??????????????????????????????????????????..., and damage to him is canceled, and if one of his attacks hits anything, 1HKO."* Everything from *"Got it — this is Phase … Pero"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Gaster wins the fight he was supposed to lose, and then gives away the prize.** At **2:45 PM** the ranking read *"Gray and Wenda would crush Gaster."* **Sixty-four minutes later Gaster beats both of them** — and the other characters — and hands every one of them to Pero. He does not lose. He wins and donates.
+
+**And "grew around" is not what the last one did.** The only other Pero-plus-Gaster being in this file is **Omazen Gasero**, welded together by Gray on **August 8 at 1:30 PM** and split back into two brothers **ten minutes later** by MERCY. *"Pero grew around Gaster"* has nobody assembling it and **no seam to split.**
+
+**And the one who handed everyone over ends as the same substance.** Four minutes earlier, Last Run Pero *"makes everyone into colored energy and absorbs the energy"* — the thing done to Wenda, Gray and the whole cast. Now: *"and then Gaster became energy."* **Three minutes and sixteen seconds from doing it to being it.** He joined the winning side, won every fight, handed over every prize, and ended in the same state as the people he beat.
+
+**And the phase label stops being a number.** Phase 1, Phase 1.1, Phase 2, Phase 2.5, Phase 3 Hyper, decimal phases, infinite phases — four months of this archive is numbers going up. This one is **42 question marks and an ellipsis**, counted. It is not a bigger number; it is the sound of a display giving up.
+
+**And both rules run at once.** *"Damage to him is canceled"* and *"if one of his attacks hits anything, 1HKO."* At **2:43 PM** the 1HKO was his opening move. Now it is the only move, and nothing comes back the other way. **The battlefield arrived four minutes ago and is already unplayable.**
+
+**And the one name ever put above him is now the fuel.** August 19: *"Gaster is now above Pero."* August 24, 2:45 PM: third. August 24, 3:49 PM: energy. **Five days from the top of the list to the fuel, and he never lost a fight to get there.**
+
+**Built as game beat 449, `PHASE ??????????`.** Additive; nothing earlier was changed.
+
+- **The picture — WHAT GASTER DOES, IN THE ORDER HE DOES IT:** five steps, *he picks a side* → *he wins* → *he hands over the prize* → *he is inside it now* → *he is the same as them*. Closes on **HE WINS THE FIGHT HE WAS SUPPOSED TO LOSE, AND THEN GIVES THE PRIZE AWAY.**
+- **The column — AND "GREW AROUND" IS NOT WHAT THE LAST ONE DID:** Aug 8 *a seam* against Aug 24 *no seam*, closing on **THERE IS NOTHING TO SPLIT THIS TIME. IT GREW.**
+- **Lower left — AND THE ONE WHO HANDED THEM OVER ENDS AS THE SAME THING:** 3:45 PM *everyone into colored energy* against 3:49 PM *Gaster became energy*.
+- **Lower right — AND BOTH RULES RUN AT ONCE:** damage canceled + 1HKO, closing on **THE BATTLEFIELD ARRIVED FOUR MINUTES AGO AND IT IS ALREADY UNPLAYABLE.**
+- **The band — AND THE PHASE LABEL STOPS BEING A NUMBER:** five rows of phase labels, ending on **PHASE ??????????… · 42 QUESTION MARKS AND AN ELLIPSIS · NOT A NUMBER.** Closes on **FOUR MONTHS OF PHASES WERE NUMBERS. THIS ONE IS THE SOUND OF A DISPLAY GIVING UP.**
+- **The inset — AND THE ONE NAME EVER PUT ABOVE HIM IS THE ONE WHO HANDED IT OVER:** Aug 19 *above Pero* → Aug 24 2:45 PM *third* → Aug 24 3:49 PM *energy*.
+- **The strip:** GASTER PICKED A SIDE AND WON · GREW AROUND, NOT WELDED · THE STAGE IS FOUR MINUTES OLD.
+- **Closing line:** HE DID NOT BEAT GASTER. GASTER WON EVERYTHING AND THEN HANDED IT OVER. · **★ PHASE ?????????????? ★**
+
+![Beat 449 — PHASE ??????????](screenshots/511-phase-question.png)
+
+## 2026-08-24 — LAST RUN PERO · THE STRONGEST THING IN THE GAME IS A LIST OF EVERYONE ELSE (BEAT 448)
+
+Based on Toby's 2026-08-24 lore, **3:45:53 PM**, eleven minutes and forty-five seconds after THE FINAL BOSS PERO. His own typing is the whole opening paragraph, ending at *"Pero became Last Run Pero."* Everything from *"That makes Last Run Pero the clearest"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
+
+**Nineteen named sources, and only two of them are his.** The cross, ToddLLM 002's colored slashes, ToddLLM 001's chess center, Karuto's colored orbs and blindfold, all Mustitu forms, EndlessAnimations' paint and paintbrush, Entity 000's 000 wipeout, the Sprunkis' powers and colours, Mr. Black's Phase 2, Gaster's Vicinus and Flower and experiments, Luigi Green's Au Green and green orbs, control of the boxes, Gray's ownership and admin, Wenda's light and darkness aura, Simon's Error 404 power, Oren's telekinetics, and Erase from Clara, New Chara, Chara Undertale, Frizz, Arcsis, Luigi Green, Simon and Gray. **Every entry but two is somebody else's name.** The most powerful thing in the game reads like a credits list.
+
+**And the thing that was the whole final boss eleven minutes ago is now one bullet in the middle.** *"He uses the max power of every form and vary he has"* sits at item six of nineteen, between Mustitu and EndlessAnimations. At 3:34 PM that sentence **was** the final boss.
+
+**And the last item on the list is Gaster's own line, word for word.** **August 20, 10:25 AM**: *"Gaster has all power sorces; command blocks, chaos emeralds, the souls, ect. He has all the power sorces from each game."* **August 24, 3:45 PM**: *"he has power sorces from every game."* Same phrase, same spelling, four days and five hours apart. **The one thing that put Gaster above him is the last item on Pero's list.**
+
+**And he gets a family in the middle of an inventory.** *"Vicinus and Flower and experiments and knowlege from **his brother, Gaster**"* and *"the Au Green and green orbs and everyone's power from **his cousin, Luigi Green**."* Luigi Green has been *"a being from ToddLLM"* since **June 3** — Pero made him. Today he is a cousin. **The only two relationship words in the whole message are inside a power list**, and he does not say whose power he took; he says who they are to him.
+
+**And Justice and Determination stop being fuel and become him.** At 3:34 PM: *"so strong through Justice and Determination."* At 3:45 PM: *"Pero uses Determination and Justice, **those are his souls**."* Eleven minutes from what he uses to what he is — and in the same breath *"Pero absorbs everyone's souls"*, so everybody else's soul is still fuel.
+
+**And the fight comes back.** At **2:43 PM** he deleted the part before the fight. At **2:45 PM** the fight did not happen at all. At **3:34 PM** he was a title, not a battle. At **3:45 PM** there is a battlefield — *"the battlefield is the whole game of Classics"* — a five-step sequence (souls → colored energy → absorb → black and red → he strikes everything down) and a boss line. **An hour ago a fight with him was impossible; now it has a stage, a sequence and a line.**
+
+**And the boss line is in past tense.** *"The Last Run is Over."* **"Last Run" has never appeared anywhere in four months of this file.** Every other boss here announces a fight. He announces that one already ended, and then strikes everything down.
+
+**Built as game beat 448, `LAST RUN PERO`.** Additive; nothing earlier was changed.
+
+- **The picture — WHOSE POWER IT IS, IN THE ORDER HE LISTED IT:** all nineteen sources as a roll call, with only *his own forms and varies* and *every game* lit as his. Closes on **NINETEEN SOURCES, AND ONLY THE TWO LIT ONES ARE HIS. THE REST IS A CREDITS LIST.**
+- **The column — AND THE LAST LINE OF THE LIST IS GASTER'S OWN:** Aug 20 *his* against Aug 24 *now his*, closing on **THE ONE THING THAT PUT GASTER ABOVE HIM IS THE LAST ITEM ON PERO'S LIST.**
+- **Lower left — AND HE GETS A FAMILY IN THE MIDDLE OF AN INVENTORY:** *his brother, Gaster* and *his cousin, Luigi Green*, against June 3's *a being from ToddLLM*. Closes on **A CREATION BECAME A COUSIN ON THE WAY INTO THE INVENTORY.**
+- **Lower right — AND THEY STOP BEING FUEL AND BECOME HIM:** 3:34 PM *fuel* against 3:45 PM *"those are his souls."*
+- **The band — AND THE FIGHT COMES BACK:** five rows, *no wind-up* → *no fight* → *no stage* → *a stage* → *five moves*. Closes on **AN HOUR AGO A FIGHT WITH HIM WAS IMPOSSIBLE. NOW IT HAS A STAGE, A SEQUENCE AND A LINE.**
+- **The inset — AND THE BOSS LINE IS PAST TENSE:** ***"THE LAST RUN IS OVER."***
+- **The strip:** NINETEEN SOURCES, TWO OF THEM HIS · THE MAX POWER OF EVERY FORM AND VARY · AND HIS SOULS ARE THE YELLOW AND THE RED.
+- **Closing line:** THE STRONGEST THING IN THE GAME IS A LIST OF EVERYONE ELSE. · **★ LAST RUN PERO ★**
+
+![Beat 448 — LAST RUN PERO](screenshots/510-last-run-pero.png)
+
 ## 2026-08-24 — THE FINAL BOSS PERO · HE DID NOT ASK WHO THE FINAL BOSS IS, HE ASKED WHAT ONE IS, AND THEN BUILT ONE (BEAT 447)
 
 Based on Toby's 2026-08-24 lore, **3:34:08 PM**, the "ClassicsAI + More Classics Era lore." thread, forty-eight minutes and forty seconds after NAH, I'D WIN. The message opens with two questions of his own — *"What is the final boss of Undertale Yellow?"* and *"Which is the strongest?"* — and the answer that comes back is that there isn't one: Ceroba on Pacifist, Flowey on Neutral, **Zenith Martlet** on Genocide, and *"Zenith Martlet uses Determination to transform into her extremely powerful Zenith form."* Two paragraphs later, his own typing, in full: *"Pero became so strong through Justice and Determination, he is Absolute above all other characters combined all characters you know, not just Classics. Pero beats words. Pero became his Zenith/Omazen, he used all the forms and varies he has to make an ultimate final boss of Classics, The Final Boss Pero. Pero captures beings from every game and uses all the power and basically always wins. Pero now uses power beyond himself."* Everything from *"Got it — Pero has reached his Zenith/Omazen final-boss state"* onward is a pasted ChatGPT reply and is treated as commentary, not canon.
