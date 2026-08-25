@@ -4,6 +4,90 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — ONE THOUSAND PERCENT · THE LADDER CLIMBS OUT OF THE STORY AND ENDS ON THE MACHINE THAT RUNS IT (BEAT 466)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:35:07 PM**, six minutes and forty-eight seconds after MAXED DEMON GASTER and thirty minutes and three seconds after LIMITLESS. The whole opening paragraph is his own typing: *"Pero uses Technique Amplification: Darkness, Technique Reversal: Light, Hollow: Void 200% and the game is destroyed, he then uses 255%, the universes explode, and then he uses 575% and the game lags, and then he uses 1000% and the game crashes, leaving Pero only there, Pero says "I can do more, but I don't feel like I want to right now.""* Everything from *"That makes Hollow: Void"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**"Could not" becomes "can", thirty minutes and three seconds later.** At **1:05 PM** he wrote *"Pero really never **could** show his full power, everyone thinks he has a limit, he is limitless."* At **1:35 PM** Pero says *"I **can** do more, but I don't feel like I want to right now."*
+
+| | 1:05:04 PM | 1:35:07 PM |
+|---|---|---|
+| **the verb** | *"never **could** show his full power"* | *"I **can** do more"* |
+| **the reason he stops** | not given | *"I don't feel like I want to right now"* |
+
+**It is not that something holds him down, and it is not that nothing has been big enough.** He has just crashed the entire game and he is standing in the wreck. **The reason he stops is that he does not feel like it.** The ceiling turns out to be a preference.
+
+**And 200% belonged to somebody else eighteen hours ago.**
+
+| | Aug 24, 7:29 PM | Aug 25, 1:35 PM |
+|---|---|---|
+| **who** | Alex | Pero |
+| **the move at 200%** | Hollow Obsidian — *"his strongest ability"* | Hollow: Void |
+| **what 200% was** | **the top of his dial** | **the first rung** |
+| **the result** | *"and he hit Pero"* — the one hit anybody ever landed | *"the game is destroyed"* |
+
+**For the only man in four months who could reach Pero, 200% was everything he had. For Pero it is where he starts, and there are three rungs above it.**
+
+**And the percentage moved off the man and onto the move.** Yesterday's dial measured **Pero himself** — 0.000000000000001%, 1%, 25%, **100%** — and a percentage has a top. Today's measures **the technique**, and every rung is past that top: **200, 255, 575, 1000.** Thirty minutes earlier the archive noted *"limitless"* moving **off the weapon and onto the man**. Now the number goes the other way. **They traded places.**
+
+**And the rungs stop being damage.**
+
+| | what happens | what kind of thing that is |
+|---|---|---|
+| **200%** | *"the game is destroyed"* | an event |
+| **255%** | *"the universes explode"* | an event |
+| **575%** | *"the game **lags**"* | **the machine** |
+| **1000%** | *"the game **crashes**"* | **the machine** |
+
+***"Lag" is the smallest-sounding word on the list, and it sits above exploding universes.*** Destroying the game and blowing up the universes are things that happen **inside** Classics. Lagging and crashing are things a **computer** does. **The ladder climbs out of the story and ends on the machine that runs it** — which is where this character lives, since he is *"part of the game code."*
+
+**And he has crashed this game once before, and last time it was a door.** **August 19**: *"Pero even crashed the game to stop everyone from entering, he closed the barrier."* That crash was a **lock**. Today's is the **top of an attack**. Same act, six days apart, doing two different jobs — and both times it ends the same way, with nobody else in the room.
+
+Built into the game as **beat 466, `ONE THOUSAND PERCENT`**.
+
+![Beat 466 — ONE THOUSAND PERCENT](screenshots/528-one-thousand-percent.png)
+
+---
+
+## 2026-08-25 — MAXED DEMON GASTER · HE HIT HIS MAXIMUM TWELVE MINUTES AFTER BEING TURNED INTO INK, AND IT CHANGED NOTHING (BEAT 465)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:28:19 PM**, twelve minutes and six seconds after I COULD EASILY BEAT YOU NOW. The whole opening paragraph is his own typing: *"Gaster 666 battles Pero again and again and again, and he kept losing. Gaster 666 became his full form, Maxed Demon Gaster, he lost to his brother Pero again. Pero is godly and Gaster 666 is godly. They are both anime. Pero can beat Gaster 666 no matter what power Gaster 666 uses because Pero is part of the game code and can't take damage."* Everything from *"Got it"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**One fight becomes a loop, twelve minutes later.**
+
+| time | what it was |
+|---|---|
+| **1:16:13 PM** | *"he beaten him"* — **one fight, one win** |
+| **1:28:19 PM** | *"battles Pero **again and again and again**"* |
+| **1:28:19 PM** | *"and he **kept** losing"* |
+| **1:28:19 PM** | *"he lost to his brother Pero **again**"* |
+| **elapsed** | **12 minutes 6 seconds** |
+
+***"Again" three times in one sentence.*** Twelve minutes ago this was a single event. Now it is a **habit he has always had**, and the beat before it gets absorbed into the pattern retroactively.
+
+**And the sentence rules out everything the brothers share before it names the difference.** Read the order he wrote it in: *"Pero is godly **and** Gaster 666 is godly. They are **both** anime. Pero can beat Gaster 666 **no matter what power** Gaster 666 uses **because** Pero is part of the game code."* Same, same, power ruled out entirely — **and then the one attribute only one of them has.** He is not arguing that Pero hits harder. He lists what they have in common, crosses it off, and wins on what is left.
+
+**And the code fact takes a fourth step: death becomes damage.**
+
+| when | what deathlessness was |
+|---|---|
+| **July 27** | *"Pero no longer can die"* — **declared**, no reason given |
+| **August 14** | *"Pero became immortal"* — **bought**, and Luigi Green was billed half his lifespan |
+| **August 25, 11:12 AM** | *"he is part of the game code"* — **can't die**, first time the fact does the work |
+| **August 25, 1:28 PM** | *"part of the game code **and can't take damage**"* — **can't be hit at all** |
+
+**Every earlier version was about dying. This one is about being touched at all** — and it is the first time the code line is used to settle a **fight** instead of a **death**.
+
+**And "demon" has always been Pero's word, never Gaster's.** Pero *"can either become the **evil demon** or a huge angeletic being."* Gray was handed the **Dual Demon/Angel form** by Pero, and became *"1 undescribable **demon-like** ringmaster LAI."* Gaster has been a flower, a flower covered in ink, energy, and ink again — **never once a demon.** His own ceiling has to borrow the other brother's word for it.
+
+**And a "full form" in this file has always been a merge, and he had nothing left to merge.** Simon.psc reached his when *"the Rest of The Sprunkis and everyone else in the box all became energy and flown to Simon.psc, Simon.psc is reaching his full form, Box Simon.psc."* **Something pours in, and then the form arrives.** Gaster handed everything he had to Pero on **August 24** and became energy, and was reduced to **ink** at **1:16 PM** today. **His maximum arrives with nothing in it** — and he loses to the same person anyway. Not because he is weak. Because the other one is not a character you can hit.
+
+Built into the game as **beat 465, `MAXED DEMON GASTER`**.
+
+![Beat 465 — MAXED DEMON GASTER](screenshots/527-maxed-demon-gaster.png)
+
+---
+
 ## 2026-08-25 — I COULD EASILY BEAT YOU NOW · THE MOVE THAT ERASED ALEX TURNED HIS BROTHER INTO INK, AND THE INK GOT BACK UP (BEAT 464)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:16:13 PM**, eleven minutes and nine seconds after LIMITLESS, thirty-seven minutes and five seconds after THE SEARCH, and two hours three minutes and thirty-five seconds after HOLLOW: VOID. The whole opening paragraph is his own typing: *"Pero can use Technique Amplification: Darkness, Technique Reversal: Light, Hollow: Void to beat Gaster 666, and he did, he beaten him and he became ink and he rose back again and continues making the game, Pero walks away and says "I could easily beat you now.""* Everything from *"That locks in the matchup"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
