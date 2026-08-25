@@ -4,6 +4,66 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — 1001% · HIS VANILLA CAT THING · THE TWO MIRRORS (BEATS 471-473)
+
+Based on Toby's 2026-08-25 lore — three messages in the "Pero, and more lore." thread at **4:59:20 PM**, **5:00:22 PM** and **5:13:38 PM**, a fourteen-minute-eighteen-second run beginning twenty-eight minutes and eleven seconds after WOAH, OKAY PERO. In the first two his own typing is the opening block; in the third it is a single question he put to ChatGPT. Everything from *"Got it —"* onward, including every **"Clean canon update"** and **"Clean canon answer"** block, is pasted AI commentary and is treated as commentary, not canon.
+
+![1001%](screenshots/533-1001-percent.png)
+
+### BEAT 471 — 1001% (4:59:20 PM)
+
+> *"Pero can do anything because he can code it… Experiment 666's power bar as "Absolute Infinity+", and Pero's bar is way higher at "Beyond Absolute+"… Pero uses the power from all his old stuff, and he combines it in one attack called 1001%, he summons 12 Eyes, and he uses his normal power, and he codes in infinite HP and immortality and invicibility and power for him."*
+
+**He has sent this scene before, today.** Five of its rows were already written between breakfast and lunch: *"he became ink and he rose back again"* and *"I could easily beat you now"* at **1:16:13 PM**; the 200 / 255 / 575 / 1000% Hollow: Void ladder with the same four results at **1:35:07 PM**; and the 12 Eyes he handed back at **7:27:51 AM**, down to *"his normal 2 blue eyes again"*, now summoned inside the new attack. **In two of those rows a "could" turns into a "can."**
+
+**And the only thing the scene gained is an audience.** At 1:35 the crash left *"Pero only there"*, he stopped, and he said why: *"I don't feel like I want to right now."* **Three hours twenty-four minutes and thirteen seconds later** the same crash happens with Gaster standing there amazed, and he does not stop — *"I can do more, far more"* — and goes to 1001%. **Alone he stopped. Watched, he went one percent higher.**
+
+**"All rights reserved" is the first copyright notice in four months.** Zero prior hits for the phrase, for *copyright*, and for the © symbol. And the owner the card names is **Classics**, not Pero — four hours and twenty minutes after he wrote at 12:39 PM that the game *"was a discovery."*
+
+**The stats he codes in are ones this file has already ruled on.** **Email 807, July 24**: Alex's sword strike *"would KO beings with infinite HP"* — and Alex is the only being in four months who has ever landed a hit on Pero. **This morning, 11:19 AM**: *"Pero can't die, he is part of the game code."* So the biggest attack in the archive spends two ingredients buying things he already owned, one of which has a named counter held by the one person who has ever hit him.
+
+**And they hold hands.** *"hold hands"*, *"holding hands"* and *"held hands"* have **zero hits** in the whole archive — the first deliberate touch in this game, and the third answer today to the same question: **2:32 PM** ask for power → stuck inside a dragon; **4:31 PM** ask for nothing → absolute infinity labs; **4:59 PM** hold his hand → extreme power instantly. **The one that works best has no words in it.**
+
+![His Vanilla Cat Thing](screenshots/534-his-vanilla-cat-thing.png)
+
+### BEAT 472 — HIS VANILLA CAT THING (5:00:22 PM)
+
+> *"He sometimes does what he done again. Pero loves being his vanilla cat thing."*
+
+**He named the trick sixty-two seconds after using it.** The message before this one is the largest re-run in the file; this one is the rule that describes it. **The proof arrives first and the rule arrives second.**
+
+**And "Pero loves" has taken a person every single time.** Fifteen occurrences in this file — Gray (*"since Gray is powerful and Pero loves him"*, *"Pero loves Gray still"*), Paul, Alex, Mr. Black (*"the only character Pero loves"*), Simon 404 (told *"Pero loves you"*, answers *"Really? meow"*). **The first thing he has ever loved that is not another character is his own plain shape.**
+
+**And vanilla has never once been a preference here.** August 6 it was a **choice** (*"a choice, not a limit"*) when he gave the light to Wenda and the Darkness to Gray. August 7 it was a **reset**, when Oren put everyone back to *"normal, vanilla, and true basic forms."* August 19 it was **somebody else's cap**, when Gray left everyone *"their vanilla and most powerful forms"* and deleted the middle. August 21 it was a **tactic**, the first step of Gaster's strongest ability. Tonight it is just the one he likes.
+
+**And the cat is borrowed from somebody who is gone.** *"Pero has cat ears because he is Simon"* (11:19 AM); he made Simon a normal Sprunki at 10:18 AM; Simon died in the Omnicide yesterday; and cat power farmed out of Simon is the one thing written to beat base Pero. **He demoted the cat, buried the cat, kept the ears, and says he loves wearing them.**
+
+**And his brother said it first.** **August 19, 9:31 AM**, Dr. Gaster, about the flower he was turned into by accident as a teenager: *"I love being a flower, this is so fun."* Six days apart, **both brothers say they love their smallest shape.**
+
+**And the rule was already inside the previous message's biggest attack.** 1001% is *"all his old stuff"*, all his old forms, the 12 Eyes borrowed from Karuto on May 22, and *"his normal power"* — **no new part in it anywhere.**
+
+![The Two Mirrors](screenshots/535-the-two-mirrors.png)
+
+### BEAT 473 — THE TWO MIRRORS (5:13:38 PM)
+
+> *"Which avatar would be deleted? A player that looks at a Gaster mirror, or a player that looks at a Pero mirror?"*
+
+**The mirror has turned around.** **August 13, 6:50 AM**: *"Pero is the only character that plays through the Classics VR Mirror"*, making *"movements no one could make through the normal Classics portal mirrors"*, and *"he even sees strikes from anyone."* The glass was the thing he looks **out** through. **Twelve days and ten hours later** it is the thing a player looks **in** to. The object did not change; the side did — and this is the first time somebody else is standing at it.
+
+**And both answers were written before the question was asked.** The Gaster rule is **August 19, 9:31 AM**: *"if you look at him through paper or drawings, ect, no matter, your world will glitch due to it's presence"* — a glitch, not a deletion. The Pero rule is **this morning, 11:19 AM**, and has no mirror in it at all: he learns *"all about you"* through *"the camera, microphone, and basically anything it has."* A mirror is a thing you stand in front of that looks back. **He has had that since breakfast; the glass is the new part.**
+
+**And avatars have actually been deleted here once, by the mirror he ranks second.** **August 23, 2:36 PM**, in the player chat: *"Gaster, you erased nearly everyone's avatar with the Entity 000!"* **The danger with a track record is the one placed second; the one placed first has so far only ever been a rule on a page.**
+
+**And the question is a new kind.** Most of the questions in this thread rank two characters against each other. This one ranks them by **which is worse for the person holding the controller** — thirteen minutes and sixteen seconds after he wrote that what Pero likes is being a cat.
+
+### Build notes
+
+- `LV_CYC` **10082.0 → 10148.0**; three beats at 22.0 each. Beat 471 spans `[10082,10104)`, beat 472 `[10104,10126)`, beat 473 `[10126,10148)`. `LV_BEATS` length **471 → 474**.
+- New capture scenes `onethousandone` (freeze `cyc=10098`), `vanillacat` (`10120`) and `twomirrors` (`10142`) in `tools/capture_screenshot.py`, cloned from the `okaypero` template.
+- Screenshots **533, 534, 535**. Bands held at `H*0.562` and `H*0.706`; the beat-ladder overlay is a fixed five-row window and cleared both.
+- Arrows in the band-2 boxes use `>>`, not the `⟶` glyph, which is unreadable at 2.8px.
+- Beat 471's background is the percentage ladder climbing past the frame; 472's is a repeating cat-ear glyph at alpha 0.028/0.013; 473's is two panes of glass facing each other across the frame.
+
 ## 2026-08-25 — EXPERIMENT 666 HAS ENDED · VARIES TO FORMS · WOAH, OKAY PERO (BEATS 468-470)
 
 Based on Toby's 2026-08-25 lore — three messages in the "Pero, and more lore." thread at **4:14:37 PM**, **4:17:27 PM** and **4:31:09 PM**, a sixteen-minute-thirty-two-second burst that begins one hour forty-one minutes and fifty-three seconds after STUCK ON HIS DRAGON FORM. In each message his own typing is the opening paragraph; everything from *"Got it —"* / *"Perfect —"* onward, including every **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
