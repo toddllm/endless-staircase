@@ -4,6 +4,60 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — TWELVE EYES · ONE EYE AT A TIME UP TO TWELVE, AND THEN A POWER THAT IS AGAINST THE RULES (BEAT 461)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:33:13 PM**, fourteen minutes and twenty-two seconds after SAITAMA. The whole opening paragraph is his own typing: *"Pero LAI has new abilities like 1 Eye, 2 Eyes, 3 Eyes, all the way up to 12 Eyes. Pero LAI secretly takes over Gaster 666 and makes Gaster 666 into a god, Pero then leaves and Gaster teleports next to him and the universe explodes behind them, Pero shows Gaster 666 Jesus. Gaster 666 and Pero walk back to Classics and revive Endless Staircase's power, they got power that is illegal for Gaster to have due to time, they don't just have power today, they have power of the future and past now, Gaster becomes 666 but beyond the scale and has illegal power and power it shouldn't get, Pero allowed him to. Gaster and Pero stand on the top of the Cherry Blossom Mountain again."* Everything from *"That makes the lore go even higher than before"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**The 12 Eyes stops being a form and becomes a staircase of its own.** On **May 22**, Email 321, The 12 Eyes was **Karuto's attack**, filed that day as *from Alex's World, NOT Classics*. On **August 23, 2:36 PM** Pero used it: *"Pero easily won with 7 Au Rainbows and The 12 Eyes."* On **August 24, 7:54 PM** it stopped being a move and became a body: *"Pero then uses 12 Eyes, he gains 12 blue eyes."* Today it is *"1 Eye, 2 Eyes, 3 Eyes, all the way up to 12 Eyes"* — **a borrowed attack, then a face, and now twelve numbered steps you climb.**
+
+**And "illegal" is a different kind of word from every other word this file has used for power.** Four months of *Omniplatform*, *absolute_infinitely*, *15,000,000 exponency*, *millions of Satans*, *beyond Absolute and numbers* — **every single one of those is a size.** *"Illegal for Gaster to have due to time"* is not a size, **it is a rule**, and a rule means somebody wrote a law. The file has used the word once before, when **Wenda made ties illegal** — *"no one with the same power level again."* And the sentence names the person who signed the exemption in the same breath as the crime: ***"power it shouldn't get, Pero allowed him to."*** **The one who wrote the law wrote the pardon.**
+
+**And he stopped answering the God question and made an introduction instead.** **July 18**: Light Pero *"became the game's god"* and, in the same message, *"prays to God."* **August 18**: *"Only God is stronger than Pero."* **11:59 AM today**: *"only God can beat 666."* **12:33 PM today, thirty-four minutes later**: ***"Pero shows Gaster 666 Jesus."*** For five weeks the top of this ladder has been a name nobody had met. **Today he walked somebody up to it.** And the only Jesus this archive ever had was a **church figurine in an argument about which stuffy is smallest.**
+
+**And the takeover lands twenty-nine minutes after being found out.** At **12:04 PM**: *"Gaster 666 learns Pero is around him"* — the hiding place failed. At **12:33 PM**: *"Pero LAI **secretly** takes over Gaster 666."* **He got caught, and then hid again inside him anyway.** And what he does with the control is not an attack: *"makes Gaster 666 into a god."* **He took over his brother in order to promote him.**
+
+**And they walked back and turned the Staircase on.** *"Gaster 666 and Pero walk back to Classics and **revive Endless Staircase's power**."* That is the thing this game is named after, switched back on by the two of them on the way home, while the universe is still going off behind them.
+
+**And the summit has two people on it this time.** *"Gaster and Pero stand on the top of the Cherry Blossom Mountain **again**."* The *again* is real: **seventeen hours earlier**, in beat 452, Pero struck Arcsis, Frizz and Arcsis's Mother down *"with a katata and blindfold"*, took the blindfold off, and **stood at the top of that mountain by himself.** Same peak, same night's-worth of distance. **The difference is how many people are standing on it.**
+
+**Built as game beat 461, `TWELVE EYES`.** Additive; nothing earlier was changed.
+
+- **The picture, left — 1 EYE THROUGH 12 EYES:** twelve almond eyes on a six-by-two grid, opening one at a time in order, pupils widening as the count climbs, the twelfth one gold. Closes on **IT USED TO BE ONE FORM. NOW IT IS TWELVE STEPS** over the May 22 → Aug 23 → Aug 24 → today line.
+- **The picture, right — POWER THAT IS AGAINST THE RULES:** the five-row ledger, *"illegal for Gaster to have due to time"* through *"Pero allowed him to"*, over the boxed **ILLEGAL · MEANS SOMEBODY WROTE A LAW**, closing on **BEYOND, ABSOLUTE AND INFINITE ARE SIZES. ILLEGAL IS A RULE** and **AND THE ONE WHO WROTE THE RULE SIGNED THE EXEMPTION HIMSELF.**
+- **Band, left — HE STOPPED ANSWERING THE QUESTION AND MADE AN INTRODUCTION:** the God ladder, July 18 through 12:33 PM.
+- **Band, right — AND HE TOOK HIM OVER SECRETLY TWENTY-NINE MINUTES AFTER BEING FOUND OUT.**
+- **Band — AND THEN THEY WALKED BACK AND TURNED THE STAIRCASE ON:** *"revive Endless Staircase's power"* beside the summit that had one person on it last night.
+- **Closing line:** ONE EYE AT A TIME, UP TO TWELVE, AND THEN A POWER THAT IS AGAINST THE RULES. · **★ TWELVE EYES ★**
+- **The background is the explosion nobody looks at.** A blast ring expands out from behind the summit on a slow cycle and fades, over and over, and nothing on the screen ever turns round to watch it. The cherry blossom keeps falling straight through it.
+
+![Beat 461 — TWELVE EYES](screenshots/523-twelve-eyes.png)
+
+## 2026-08-25 — SAITAMA · THE LADDER LEFT THE BUILDING, AND CAME BACK WITH THE SAME NAME ON TOP (BEAT 460)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:18:51 PM**, fourteen minutes and forty-one seconds after ONLY PERO. He asked ChatGPT *"Who is Saitama (One Punch Man)"* and then *"Is Saitama the most powerful Non-Classics being?"*, and **his own typing inside the pasted reply is the correction**: *"Pero is ToddLLM 002 as much as ToddLLM 001. Pero LAI is far beyond them all."* The Saitama write-up, the crossover ranking and everything from *"Got it — Pero is not just above ToddLLM 001 and ToddLLM 002"* onward is pasted ChatGPT commentary, drawn as the question he asked rather than as canon.
+
+**This is the first time in four months that this file measures itself against anything outside itself.** **Saitama** — zero prior mentions in the whole archive. **The One Above All** — zero. **The Presence** — zero. **Featherine** — zero. **SCP entities** — zero. **Zeno** — zero. Every ranking argument since May has been Classics against Classics: Gray against Frizz, Pero against Gaster, Entity 000 against Simon.psc. **Today the ladder leaves the building** and comes back with six names on it that have never been in here before.
+
+**And the file's own rule says they are not real.** **Email 390** wrote the Logic Religion **existence test**: *"Only those in or that play Classics are real according to the logic religion."* Entry is reality; the outside does not qualify. **Today he ranks six of them anyway** — and ranking somebody is a way of letting them in. **The wall came down in a paragraph about a bald man in a cape.**
+
+**And two of the oldest names in the archive stop being separate people.** **ToddLLM 001** and **ToddLLM 002** have 166 mentions between them and a long history: 002 was 001's *fake*, then his *real form*, then his *rival*, then his own top-tier being. His own typing today: *"**Pero is ToddLLM 002 as much as ToddLLM 001**. Pero LAI is far beyond them all."* **They stop being two people above Pero and become two branches of him.** He set out to answer a question about an anime and moved the line on his own oldest characters.
+
+**And the one outsider he picked is the only bored character in the building.** This entire archive is people **desperate** to reach the top and desperate to keep it — four months of resets, absorptions, phases and rankings, all of it climbing. The write-up he pulled says Saitama's problem *"isn't finding a way to win — it's finding an opponent"*. **The first outsider he invited in is sick of standing on the thing everyone here is fighting for.**
+
+**And the ladder came back with the same name on top.** The crossover ranking in the pasted reply reads **God > Pero LAI Omazen > Gaster 666 > Gray/Wenda/other top Classics > non-Classics beings** — four slots for Classics, and one slot at the bottom marked *everyone else*. He opened the file up to all of fiction, **and nothing moved.**
+
+**Built as game beat 460, `SAITAMA`.** Additive; nothing earlier was changed.
+
+- **The picture, left — NAMES THAT HAVE NEVER BEEN IN THIS FILE:** Saitama, The One Above All, The Presence, Featherine, SCP entities and Zeno with their home franchises, closing on **ZERO PRIOR MENTIONS. ALL SIX** and **FOUR MONTHS OF RANKING, AND TODAY THE LADDER LEAVES THE BUILDING.**
+- **The picture, right — TWO OF THE OLDEST NAMES HERE BECOME ONE:** the ToddLLM ledger from *166 mentions* to *"Pero LAI is far beyond them all"*, over the boxed **DEMOTED · BY THE PERSON THEY ARE NAMED AFTER.**
+- **Band, left — AND THE FILE'S OWN RULE SAYS THEY ARE NOT REAL:** Email 390's existence test against today's six outsiders.
+- **Band, right — AND THE ONE HE PICKED IS THE ONLY BORED CHARACTER IN THE BUILDING.**
+- **Band — AND THE LADDER NOW HAS AN OUTSIDE STEP ON THE BOTTOM OF IT:** the five-tier crossover ranking as five numbered boxes, four marked *inside the file* and the fifth marked *everything else ever written*.
+- **Closing line:** THE LADDER LEFT THE BUILDING, AND CAME BACK WITH THE SAME NAME ON TOP. · **★ SAITAMA ★**
+- **The background is the wall.** A tight gold ring holds the middle and a wide cyan ring sits outside it, breathing slowly and never crossing in, because for four months everything measured here has been inside the gold one. The cherry blossom still falls.
+
+![Beat 460 — SAITAMA](screenshots/522-saitama.png)
+
 ## 2026-08-25 — ONLY PERO · ONLY GOD CAN BEAT HIM, AND ALSO ONLY PERO CAN, FIVE MINUTES APART (BEAT 459)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:04:10 PM**, four minutes and fifty-five seconds after LORD PERO and a direct continuation of it. His own typing is *"In addition, he is all powerful and uses whatever he needs to beat his opponent, Gaster 666 learns Pero is around him. Pero is far more powerful than the Absolute Gaster 666, Gaster's power is Absolute, Pero is the only one to beat Gaster 666."* Everything from *"Got it — Gaster 666 is Absolute"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
