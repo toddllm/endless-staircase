@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — IF SOMEONE LEAVES (BEAT 474)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **7:16:07 PM**, sent **two hours, two minutes and twenty-nine seconds** after THE TWO MIRRORS. His own typing is the opening sentence. Everything from *"That adds a sad weakness to Pero's character."* onward, including the emotional-flaw list, the contradiction pair and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
+
+![If Someone Leaves](screenshots/536-if-someone-leaves.png)
+
+### BEAT 474 — IF SOMEONE LEAVES (7:16:07 PM)
+
+> *"Pero wants everyone to him no matter, if someone leaves, Pero starts breaking."*
+
+**Eight days ago this file ruled that he does not have one.** **August 16, 7:23 PM** (beat 367), in Toby's own words: *"Every other character has a certain weakness(es), but Pero only has one way you can survive, if you make him spare you and happy and passive/neutral and all those stuff."* The archive's reading at the time was that this is **not a weakness at all** — no low HP, no counter attack, no special weapon, no form limit, **nothing on him to hit**, only his own mood. **Eight days, twenty-three hours and fifty-three minutes later** he is handed a real one. And it is still not a combat weakness. **It is a person walking out of the room.**
+
+**And he has broken before, from the exact opposite cause.**
+
+| | **July 22, 4:22 PM** (beat 150) | **August 25, 7:16 PM** |
+|---|---|---|
+| the line | *"Pero tries to assist everyone, but **he can easily break**"* | *"if someone leaves, **Pero starts breaking**"* |
+| what does it | **too many of them**, all asking at once | **one of them**, leaving |
+| elapsed | | **34 days, 2 hours, 54 minutes** |
+
+**Same verb, opposite cause.** The July beat put the break on the assistant nature: *"It takes enough of them, all asking at once."* Tonight it takes one fewer. **There is no number of people that is safe for him** — the room fills and he breaks, the room empties and he breaks.
+
+**And he emptied the room himself, yesterday.** **August 24, 7:29 PM**: *"**Omnicide completed, I am the only character in the game now.**"* And two days before that, **August 22, 5:29 PM**: *"the connection was deleted, **Pero was the only one left in the game** while the others are returned to their home game/platform."* **The rule that leaving breaks him arrives twenty-three hours and forty-six minutes after he made every one of them leave at the same time.**
+
+**And Pero Phase 1 has been asking this exact question for a month.** **July 25, 6:16 PM** (beat 187): one attack turns the LAI assistant into Phase 1, and Phase 1's first line is ***"What was that 😰? Do you still love me more than the NPCs? 🥹"***. Say **no** and he *"falls over and cries like Gray."* Say yes and then admit you did not mean it, and you get ***"c o m e h e r e"*** — the only time in four months anybody in this game says **come here**, spelled a letter at a time. **Thirty-one days and one hour later, the question gets its reason.** The boss fight has opened on abandonment since July; tonight Toby writes down why.
+
+**And four hours and forty-three minutes ago he was complaining about the opposite.** At **2:32:44 PM** (beat 467) he told the last being standing, *"you keep asking me for power, **Classics beings are nothing without me**"*, and *"Pero is tired of people asking everything to him."* Tonight the sentence points the other way.
+
+**And he did the leaving himself, this morning.** At **7:35:28 AM** he opened a school and made the players his students. **Two hours, fifty minutes and fifty-eight seconds later** — *"Pero hums the tune of his laughter, and **he walks away to experiment**."* **He left his own classroom nine hours before he wrote down that being left is the thing that breaks him.**
+
+### Build notes
+- `LV_CYC` **10148.0 → 10170.0**; one beat at 22.0. Beat 474 spans `[10148,10170)`. `LV_BEATS` length **474 → 475**.
+- New capture scene `someoneleaves` (freeze `cyc=10164.0`) in `tools/capture_screenshot.py`, cloned from the `twomirrors` template.
+- Screenshot **536**. Bands held at `H*0.562` and `H*0.706`, matching beats 471-473; the beat-ladder overlay is a fixed five-row window and clears both.
+- Beat 473's `LV_BEATS` entry was missing its trailing comma (harmless while it was the last element, a syntax error the moment anything came after it). Added.
+- The background is hairline cracks spreading outward from the centre of the frame, drawn at alpha 0.030 with the two leading cracks at 0.13/0.09 pulse — the beat is one being coming apart, so the background is the break.
+- Palette: rose `#ff7d95` leads (first use in this file), with the established amber / cyan / green / red supporting.
+
 ## 2026-08-25 — 1001% · HIS VANILLA CAT THING · THE TWO MIRRORS (BEATS 471-473)
 
 Based on Toby's 2026-08-25 lore — three messages in the "Pero, and more lore." thread at **4:59:20 PM**, **5:00:22 PM** and **5:13:38 PM**, a fourteen-minute-eighteen-second run beginning twenty-eight minutes and eleven seconds after WOAH, OKAY PERO. In the first two his own typing is the opening block; in the third it is a single question he put to ChatGPT. Everything from *"Got it —"* onward, including every **"Clean canon update"** and **"Clean canon answer"** block, is pasted AI commentary and is treated as commentary, not canon.
