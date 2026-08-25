@@ -4,6 +4,49 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — HE COULD DO WHATEVER HE WANTS (BEAT 475)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **7:45:32 PM**, sent **twenty-nine minutes and twenty-five seconds** after IF SOMEONE LEAVES. His own typing is the opening sentence. Everything from *"Exactly — Pero could also do whatever he wants because his main power is not just strength."* onward, including the six-verb create/delete/rewrite/repeat/restore/break list and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
+
+![He Could Do Whatever He Wants](screenshots/537-he-could-do-whatever-he-wants.png)
+
+### BEAT 475 — HE COULD DO WHATEVER HE WANTS (7:45:32 PM)
+
+> *"Pero could also do whatever he wants."*
+
+**He sent this two hours and forty-six minutes ago.** At **4:59:20 PM**, the opening words of beat 471: *"**Pero can do anything because he can code it.**"* Tonight, the same claim, with nothing new in it.
+
+**And the rule that covers it was written in between its own two uses.** At **5:00:22 PM**, sixty-two seconds after the first one and **two hours forty-five minutes and ten seconds** before this one: *"He sometimes does what he done again."* Beat 472 recorded that the proof arrived first and the rule second. **Tonight the rule gets a third position, in front of a re-run it predicted.**
+
+**And the verb went backwards.** Beat 471 was recorded here specifically for its upgrades:
+
+| earlier | at 4:59 |
+|---|---|
+| 1:16 PM — *"I **could** easily beat you now."* | *"I **can** easily beat you now."* |
+| 1:35 PM — *"I can do more, **but I don't feel like I want to right now**."* | *"I can do more, **far more**."* |
+
+Two "could"s became "can"s in one afternoon. **Then the last and largest claim of the day arrives as a "could."** A *can* is a thing you do. A *could* is a thing you are able to do. The day that spent itself promoting the verb ends by demoting it.
+
+**And the armour arrives twenty-nine minutes after the crack, which is an order this file has used before.**
+
+| | the crack | the armour |
+|---|---|---|
+| **August 16** | 6:08 PM — *"Pero LAI can even start crashing"*, the first failure ever written for him | one beat later — immunity to Simon's reset |
+| **August 25** | 7:16 PM — *"if someone leaves, Pero starts breaking"* | **29 minutes later** — *"Pero could also do whatever he wants"* |
+
+**Both times the weakness got written down first and the defence came after it.** Never the other way round.
+
+**And "also" points backwards.** It is a nine-word sentence and one of the words is a connector. It does not open a new subject; it adds this onto the message before it, **which is the one where he breaks**.
+
+**And "do anything he wants" has been written once before in this archive, and it did not go to Pero.** **August 18, 4:20 PM**, beat "Getting Milk": *"**Pero is out getting milk** and Gray is taking over the game, Gaster and Luigi Green **allow Gray to do anything he wants** with the game."* **Seven days and three hours ago**, the one time somebody else in this game could do whatever they wanted, **it was because Pero had left the room** — twenty-nine minutes after the beat that says people leaving is the thing that breaks him.
+
+### Build notes
+- `LV_CYC` **10170.0 → 10192.0**; one beat at 22.0. Beat 475 spans `[10170,10192)`. `LV_BEATS` length **475 → 476**.
+- New capture scene `whateverhewants` (freeze `cyc=10186.0`) in `tools/capture_screenshot.py`, cloned from the `someoneleaves` template.
+- Screenshot **537**. Bands held at `H*0.562` and `H*0.706`; band 1's left table uses a tighter `nrh=8.2` to fit four rows instead of three, verified legible at capture size.
+- The background is the two sentences printed down the frame at alpha 0.026 (leading row 0.15/0.10 pulse) — the beat is a line arriving for the second time, so the background is one row printed over and over.
+- Palette: code green `#5cff7a` leads, with rose `#ff7d95` carrying the "could" row so it reads against beat 474.
+
 ## 2026-08-25 — IF SOMEONE LEAVES (BEAT 474)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **7:16:07 PM**, sent **two hours, two minutes and twenty-nine seconds** after THE TWO MIRRORS. His own typing is the opening sentence. Everything from *"That adds a sad weakness to Pero's character."* onward, including the emotional-flaw list, the contradiction pair and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
