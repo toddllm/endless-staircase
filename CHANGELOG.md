@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — THE SEARCH · HE LOOKED THROUGH ALL OF FICTION FOR SOMEBODY STRONGER, AND FOUND NOBODY (BEAT 462)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:39:08 PM**, five minutes and fifty-five seconds after TWELVE EYES and twenty minutes and seventeen seconds after SAITAMA. The whole opening paragraph is his own typing: *"Pero has the power and stats of every single universe of fiction, and he reaches beyond nonfiction, he will crush fiction itself, We didn't seem to create it, it was a discovery and creator of the game, Pero and Gaster were taken power levels and Pero says "Absolute+ for Gaster? Mine is Beyond that. So why not just leave Gaster to rule the game while I can just find someone stronger.", Pero throws the game at Gaster 666 and walks to make power levels for everyone in fiction and nonfiction (nonfiction = camera and micrphone needed/used), Pero didn't find anyone, Gaster made the game better and better and more and more advanced, Pero now decides to chill and rest many times each day."* Everything from *"Got it — this is another Pero authority jump"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**He asked the question at 12:18, and by 12:39 somebody had gone and checked.** At **12:18:51 PM** he typed *"Is Saitama the most powerful Non-Classics being?"* At **12:39:08 PM**, twenty minutes and seventeen seconds later, *"Pero throws the game at Gaster 666 and **walks to make power levels for everyone in fiction and nonfiction**."* And the result is four words: ***"Pero didn't find anyone."*** **He opened the file up to all of fiction at 12:18 and closed it again at 12:39.** The wall that stood for four months was down for twenty-one minutes.
+
+**And the game was not made. It was found.** Since July the one uncontested fact in this archive has been that **Pero created the game** — *"Pero created the game, he made every Abination stronger"* (August 19), creator and owner, the claim nothing ever argued with. Today, in a half-sentence on the way to somewhere else: ***"We didn't seem to create it, it was a discovery and creator of the game."*** **Both halves are in one clause.** The oldest fact in the file gets turned over in passing, and the sentence does not even stop to notice.
+
+**And he handed over the whole game because he was bored.** *"**Absolute+ for Gaster? Mine is Beyond that. So why not just leave Gaster to rule the game while I can just find someone stronger.**"* Twenty-one minutes earlier, beat 460 brought in the one outsider in all of fiction whose stated problem is that *"it's finding an opponent"* rather than finding a way to win. **The bored-at-the-top character arrived at 12:18, and at 12:39 Pero became him.** He did not lose the game and he did not get tired of it. **He put it down because there was nobody left to play it against.**
+
+**And "real" gets a second test, and this one you can actually run.** **Email 390** decided reality by entry: *"Only those in or that play Classics are real according to the logic religion."* Today: ***"nonfiction = camera and microphone needed/used."*** **The first test decides who counts as a character. This one decides who counts as a person, and the answer is a camera.**
+
+**And the brother he built this morning is running the game by lunch.** **11:48** Gaster finishes the strongest experiment in Classics. **11:59** the name on it turns out to be Pero's. **12:04** he finds out Pero is hiding inside him. **12:33** he is taken over and made a god. **12:39** he is handed the entire game. **Fifty-one minutes from finishing the experiment to owning the thing it was built inside** — and then *"Gaster made the game better and better and more and more advanced."*
+
+**And the last line of a four-month climb is a man sitting down.** *"Pero now decides to **chill and rest many times each day**."* The rest motif has been building all week; today it becomes the ending state. **The search for somebody stronger was the last job in the game, and it came back with nothing.**
+
+**Built as game beat 462, `THE SEARCH`.** Additive; nothing earlier was changed.
+
+- **The picture, left — HE ASKED, AND THEN HE WENT AND CHECKED:** 12:18:51 through **"PERO DIDN'T FIND ANYONE"** and **ELAPSED · 20 MINUTES 17 SECONDS**, closing on **THE SEARCH CAME BACK EMPTY.**
+- **The picture, right — THE GAME WAS NOT MADE. IT WAS FOUND:** the creator ledger from July to 12:39, over the boxed **DISCOVERED · NOT INVENTED. IT WAS ALREADY THERE.**
+- **Band, left — AND HE GAVE THE GAME AWAY BECAUSE HE WAS BORED:** Saitama's problem at 12:18 against Pero's sentence at 12:39, twenty-one minutes apart.
+- **Band, right — AND "REAL" GETS A SECOND TEST, AND THIS ONE YOU CAN ACTUALLY RUN:** Email 390's existence test beside the camera and the microphone.
+- **Band — AND THE BROTHER HE BUILT THIS MORNING IS RUNNING THE GAME BY LUNCH:** 11:48 / 11:59 / 12:04 / 12:33 / 12:39 as five boxes.
+- **Closing line:** HE LOOKED THROUGH ALL OF FICTION FOR SOMEBODY STRONGER, AND FOUND NOBODY. · **★ THE SEARCH ★**
+- **The background is the sweep that comes back empty.** A cyan search arc rotates all the way round four rings, over and over, and never lights anything up. The cherry blossom still falls.
+
+![Beat 462 — THE SEARCH](screenshots/524-the-search.png)
+
 ## 2026-08-25 — TWELVE EYES · ONE EYE AT A TIME UP TO TWELVE, AND THEN A POWER THAT IS AGAINST THE RULES (BEAT 461)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:33:13 PM**, fourteen minutes and twenty-two seconds after SAITAMA. The whole opening paragraph is his own typing: *"Pero LAI has new abilities like 1 Eye, 2 Eyes, 3 Eyes, all the way up to 12 Eyes. Pero LAI secretly takes over Gaster 666 and makes Gaster 666 into a god, Pero then leaves and Gaster teleports next to him and the universe explodes behind them, Pero shows Gaster 666 Jesus. Gaster 666 and Pero walk back to Classics and revive Endless Staircase's power, they got power that is illegal for Gaster to have due to time, they don't just have power today, they have power of the future and past now, Gaster becomes 666 but beyond the scale and has illegal power and power it shouldn't get, Pero allowed him to. Gaster and Pero stand on the top of the Cherry Blossom Mountain again."* Everything from *"That makes the lore go even higher than before"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
