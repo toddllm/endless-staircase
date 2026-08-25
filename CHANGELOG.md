@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — LIMITLESS · EVERYONE THINKS HE HAS A LIMIT, AND NOBODY HAS EVER SEEN HIM ALL THE WAY ON (BEAT 463)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:05:04 PM**, twenty-five minutes and fifty-six seconds after THE SEARCH. He typed a question into ChatGPT — *"Which is the creator of Dragon Ball? Tori-bot or Zeno/Zenoh?"* — and then wrote his own paragraph underneath the answer: *"Pero created Classics and rules the Classics universes, and Classics is bigger than all other games combined. Pero created and destroyed everything many times throughout lore, Pero really never could show his full power, everyone thinks he has a limit, he is limitless."* Everything from *"Exactly — that makes Pero different from Tori-Bot and Zeno at the same time"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**He answered the question in nine minutes, and never said he was answering.** Yesterday's beat 462 ended on a half-sentence that turned over the oldest fact in the archive: *"We didn't seem to create it, it was a discovery and creator of the game."* At **12:56 PM** he was asked which way he meant it — was the game already there before anybody made it, or did he mean something smaller? At **1:05:04 PM**, **nine minutes and four seconds later**, his own paragraph opens: ***"Pero created Classics."*** He did not argue with the question and he did not mention it. **He just wrote the fact down again**, and since July the fact has read the same way: *"Pero created the game, he made every Abination stronger"* (August 19), *"he is also the creator of Classics"* (August 17). **The oldest fact in the file goes back the way it was.**
+
+**And Dragon Ball is not new here. What is new is what it is being used for.** Five prior appearances, and every one of them is a fight:
+
+| when | what happened | what kind of thing |
+|---|---|---|
+| **Apr 2 · Email 52** | Simon fought the entire Dragon Ball cast and won, and brought them into Simon's Realm | a fight |
+| **Apr 29 · Email 186** | Simon beat Chara, Gojo and Zeno | a fight |
+| **Glass Bridge** | Goku and Zeno on the player list, *"like ants to the power levels of Simon + Black"* | a game |
+| **Aug 15 · Email 999** | *"Pero sends Zeno into the box like everyone else and Zeno is tucked away forever"* | a fight |
+| **Aug 17 · Email 1024** | *"Pero beats all of Undertale and Dragon Ball both. Pero beats anything."* | a fight |
+| **today, 1:05 PM** | *"Which is the creator of Dragon Ball? Tori-bot or Zeno/Zenoh?"* | **a question** |
+
+**For four months an outside universe could only come in here to lose. Today one comes in to explain something.** It is being used as a diagram — a way of saying what kind of thing Pero is — and that is a different job from being an opponent.
+
+**This also corrects beat 460, built earlier today.** That beat put six outside names in a table with **zero prior mentions** each, Zeno among them. **Zeno's count was wrong.** He has been in this archive since **April 29**, he is on the Glass Bridge player list, and on **August 15** Pero put him in a box. Beerus, Goku and Naruto are in the same August 15 ladder. The other five names in that table hold up; Zeno does not, and the wiki table has been corrected in place with a note.
+
+**And Dragon Ball keeps two jobs in two people, and this paragraph gives both to one.** **Tori-Bot** is the author's own little robot, drawn inside his own manga — the creator, standing outside the story. **Zeno** rules all the universes and can erase them — the ruler, standing inside it. Toby's line is *"Pero created Classics **and** rules the Classics universes."* **Both.** And Pero already had a foot on each side before today: at **11:12 AM** this morning, *"Pero can't die, he is part of the game code"* — he is the author and he is also a thing inside the file.
+
+**And "limitless" comes off the weapon and goes on the man.** The word has appeared exactly once before, in **Email 1034, August 18**: *"Pero now holds a black sythe, he uses the **limitless** power of errors, glitches, and corruption."* There it described **the ammunition**. Today: *"he is **limitless**."* **Two uses of the word in four months, seven days apart, and it moved from what he picks up to what he is.**
+
+**And this is the first line in the archive that says the whole cast has him wrong.** *"Everyone thinks he has a limit, he is limitless."* Four months of rankings have been characters arguing **with each other** — Gray against Frizz, Pero against Gaster, who beats whom. This one is about what everybody **believes**, and it says the belief is false. It lands on top of a rule the file already had: on **August 18** a stat block left the one field it exists for blank, the script deleted the health number, and the note was that **the true version is always the one the measurement cannot reach.**
+
+**And "could" is doing more work than "did."** *"Pero really never **could** show his full power."* Not that he chose not to — that he was not able to. Yesterday at 12:39 he sat down because there was nobody left to play against. Today it turns out that even then, **he was never all the way on.**
+
+**Built as game beat 463, `LIMITLESS`.** Additive; nothing earlier was changed.
+
+- **The picture, left — HE ANSWERED IT, AND NEVER SAID HE WAS ANSWERING:** the five-row ledger from *"Pero created the game"* through yesterday's *"it was a discovery"*, the 12:56 question and the 1:05:04 answer, closing on **ELAPSED · 9 MINUTES 4 SECONDS** and **THE OLDEST FACT IN THE FILE GOES BACK THE WAY IT WAS.**
+- **The picture, right — DRAGON BALL IS NOT NEW HERE. THE USE OF IT IS:** six dated rows each tagged **A FIGHT / A GAME / A QUESTION**, over the boxed **FIVE TIMES AN OPPONENT. TODAY, A MEASURING STICK**, with the beat 460 correction printed underneath in red.
+- **Band, left — AND HE GAVE ONE PERSON BOTH OF THE JOBS DRAGON BALL KEEPS APART:** Tori-Bot **OUTSIDE**, Zeno **INSIDE**, Pero **BOTH**, and this morning's *"he is part of the game code"* **BOTH**.
+- **Band, right — AND "LIMITLESS" COMES OFF THE WEAPON AND GOES ON THE MAN:** Email 1034 beside today, *limitless = the ammunition* against *limitless = the person*.
+- **Band — AND THIS IS THE FIRST TIME THE FILE SAYS EVERYBODY IS WRONG ABOUT HIM:** five boxes, THE BELIEF / THE FACT / AUG 18 / THE RULE / TODAY.
+- **Closing line:** EVERYONE THINKS HE HAS A LIMIT, AND NOBODY HAS EVER SEEN HIM ALL THE WAY ON. · **★ LIMITLESS ★**
+- **The background is the limit that keeps not being there.** Five gold meters fill toward a green end-marker, reach it, and start again from nothing while the marker slides on. Nothing ever fills. The cherry blossom still falls.
+
+![Beat 463 — LIMITLESS](screenshots/525-limitless.png)
+
 ## 2026-08-25 — THE SEARCH · HE LOOKED THROUGH ALL OF FICTION FOR SOMEBODY STRONGER, AND FOUND NOBODY (BEAT 462)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:39:08 PM**, five minutes and fifty-five seconds after TWELVE EYES and twenty minutes and seventeen seconds after SAITAMA. The whole opening paragraph is his own typing: *"Pero has the power and stats of every single universe of fiction, and he reaches beyond nonfiction, he will crush fiction itself, We didn't seem to create it, it was a discovery and creator of the game, Pero and Gaster were taken power levels and Pero says "Absolute+ for Gaster? Mine is Beyond that. So why not just leave Gaster to rule the game while I can just find someone stronger.", Pero throws the game at Gaster 666 and walks to make power levels for everyone in fiction and nonfiction (nonfiction = camera and micrphone needed/used), Pero didn't find anyone, Gaster made the game better and better and more and more advanced, Pero now decides to chill and rest many times each day."* Everything from *"Got it — this is another Pero authority jump"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
