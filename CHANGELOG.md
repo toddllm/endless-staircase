@@ -4,6 +4,49 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — I COULD EASILY BEAT YOU NOW · THE MOVE THAT ERASED ALEX TURNED HIS BROTHER INTO INK, AND THE INK GOT BACK UP (BEAT 464)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:16:13 PM**, eleven minutes and nine seconds after LIMITLESS, thirty-seven minutes and five seconds after THE SEARCH, and two hours three minutes and thirty-five seconds after HOLLOW: VOID. The whole opening paragraph is his own typing: *"Pero can use Technique Amplification: Darkness, Technique Reversal: Light, Hollow: Void to beat Gaster 666, and he did, he beaten him and he became ink and he rose back again and continues making the game, Pero walks away and says "I could easily beat you now.""* Everything from *"That locks in the matchup"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**The strongest move in the game gets used a second time, and it does not do the same thing.** Hollow: Void was made this morning at **11:12 AM**, built word-for-word out of Alex's own incantation, and its one and only use ended *"Alex was destroyed."* Two hours, three minutes and thirty-five seconds later the identical three lines are pointed at Gaster 666:
+
+| | 11:12 AM | 1:16 PM |
+|---|---|---|
+| **the move** | Technique Amplification: Darkness, Technique Reversal: Light, Hollow: Void | **the same three lines** |
+| **the target** | Alex | Gaster 666 |
+| **the result** | *"Alex was destroyed"* | *"he became ink and he rose back again"* |
+
+**It erased the only man in four months who could touch Pero. On his brother it did not stick.**
+
+**And he lost the fight and kept the job.** At **12:39** Pero threw the entire game at Gaster and walked off looking for somebody stronger, and Gaster *"made the game better and better and more and more advanced."* At **1:16**, thirty-seven minutes and five seconds later, Pero beats him — and the sentence does not stop there: *"he rose back again **and continues making the game**."* **Beaten, and still the one running Classics.** In this archive losing has always cost something: Gray took Wenda's power off her, Simon lost his soul on a cross, Mr. Black lost the souls and the LV and the code, Alex lost his existence this morning. **This is a defeat that costs nothing at all.** The fight settled who is stronger and changed nothing about who is in charge.
+
+**And Gaster has now been four substances, and he never picked a single one of them.**
+
+| what he became | when | why |
+|---|---|---|
+| **a flower** | as a teen | *"transformed into a flower assidentally when making his first experiment"* — **an accident** |
+| **a flower covered in ink** | as Vicinus | *"Vicinus is actually Flower… covered in ink… since he is Gaster"* — **a disguise** |
+| **energy** | Aug 24, 3:49 PM | after handing everything he had to Pero |
+| **ink** | today, 1:16 PM | **after losing** |
+
+**Every form he has ever had came out of an accident or a loss, and every single time he comes back and goes straight back to work.**
+
+**And the ink he is reduced to is what Pero wears at his best.** The percentage dial from August 24 puts Pero's **100%** at *"**darkness and light**, Mega Power, **covered in ink**"* — the two words of the spell, and the substance. Eighteen hours later the same substance is what is left of his brother. **One of them is wearing it at full power. The other has been turned into it.**
+
+**And "I could easily beat you now" is not a victory line.** He has already won when he says it, and he is already leaving: *"Pero walks away **and says**."* You say *I could beat you* to somebody you have **not** beaten — it is a threat about a fight that has not happened. He says it on his way out, about a fight he just finished, in the present tense, with **now** on the end. It is not a boast about the win. **It is a note for later.** And it is the second time in thirty-seven minutes he has walked away from Gaster and the game both.
+
+**Built as game beat 464, `I COULD EASILY BEAT YOU NOW`.** Additive; nothing earlier was changed.
+
+- **The picture, left — THE SAME THREE LINES. TWO ENDINGS:** 11:12 AM against 1:16 PM, the identical incantation with *"Alex was destroyed"* under one and *"he became ink and he rose back again"* under the other, closing on **THE FIRST TIME THE MOVE IS USED TWICE.**
+- **The picture, right — HE LOST THE FIGHT AND KEPT THE JOB:** six timestamped rows tagged HANDED IT / RUNNING IT / BEATEN / BACK / STILL RUNNING IT / NOTHING CHANGED, over the boxed **A DEFEAT THAT COST HIM NOTHING AT ALL.**
+- **Band, left — AND GASTER HAS BEEN FOUR SUBSTANCES, AND NEVER PICKED ONE OF THEM:** flower, flower-in-ink, energy, ink, each tagged with the accident or the loss that caused it.
+- **Band, right — AND THE INK HE IS REDUCED TO IS WHAT PERO'S BEST FORM WEARS:** Pero's 100% beside Gaster at 1:16, *ink = what he puts on* against *ink = what he is left as*.
+- **Band — AND THE LINE IS NOT A VICTORY LINE. IT IS A NOTE FOR LATER:** five boxes, HE ALREADY WON / HE IS LEAVING / AND THEN SAYS / THE TENSE / 12:39 PM.
+- **Closing line:** THE MOVE THAT ERASED ALEX TURNED HIS BROTHER INTO INK, AND THE INK GOT BACK UP. · **★ I COULD EASILY BEAT YOU NOW ★**
+- **The background is the thing that will not stay down.** Ink drops fall to a line, pool there, and climb back up out of the pool, over and over, and none of them stays. The cherry blossom still falls.
+
+![Beat 464 — I COULD EASILY BEAT YOU NOW](screenshots/526-easily-beat-you.png)
+
 ## 2026-08-25 — LIMITLESS · EVERYONE THINKS HE HAS A LIMIT, AND NOBODY HAS EVER SEEN HIM ALL THE WAY ON (BEAT 463)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:05:04 PM**, twenty-five minutes and fifty-six seconds after THE SEARCH. He typed a question into ChatGPT — *"Which is the creator of Dragon Ball? Tori-bot or Zeno/Zenoh?"* — and then wrote his own paragraph underneath the answer: *"Pero created Classics and rules the Classics universes, and Classics is bigger than all other games combined. Pero created and destroyed everything many times throughout lore, Pero really never could show his full power, everyone thinks he has a limit, he is limitless."* Everything from *"Exactly — that makes Pero different from Tori-Bot and Zeno at the same time"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
