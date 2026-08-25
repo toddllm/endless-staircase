@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — LORD PERO · HE BUILT THE STRONGEST THING IN THE GAME, AND IT HAS HIS BROTHER'S NAME ON IT (BEAT 458)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **11:59:15 AM**, ten minutes and forty-six seconds after LORD'S PROTOTYPE, and **a correction to it**. His own typing is *"Lord Pero (Omni-King Pero, or lord Pero, it is the start of a sentence, right?), he said "Lord's Prototype", when he means his own Prototype "Pero's Prototype", only God can beat 666. 666 has many Phases, like flashing eyes, huge form, and computer form and it tears apart the Classics window, and he has a Phase where Pero can be seen under Gaster's cloak, Pero hides in the most mysterious places around or even under his brother, Gaster 666. I couldn't list all 666's powers."* Everything from *"Yes — at the start of a sentence"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**The name on the strongest experiment in the game belongs to somebody else.** Eleven minutes ago Gaster completed all Experiments, built the most powerful thing he has ever built, and called it **Lord's Prototype**. The correction: *"he said "Lord's Prototype", when he means **his own Prototype "Pero's Prototype"**."* **Gaster made it. The title on it is his brother's.** Beat 457's read — that he had put his own title on it — is corrected here.
+
+**And "only God can beat 666" is Pero's own sentence, and it is seven days old.** **August 18, 3:37 PM**: *"**Only God is stronger than Pero**… **Only God himself beats Pero**. Pero is THAT strong."* And beat 445, **August 24, 2:43 PM**, is literally titled **ONLY GOD ABOVE HIM**. **Twenty-one hours ago that line had exactly one owner in this archive.** This morning it covers Gaster too — while *"Pero is above Gaster 666"* is still true from eleven minutes earlier. **The ceiling did not move. The room under it filled up.**
+
+**And he is hiding under a cloak he made himself.** **August 19, 6:45 AM**: *"Pero created the game, he made every Abination stronger, **he even made an ink cloak for Gaster**."* Today: *"he has a Phase where **Pero can be seen under Gaster's cloak**, Pero hides in the most mysterious places around or even **under his brother**."* And yesterday at 3:49 PM the direction was the other way round — *"**Pero grew around Gaster**."* **Twenty hours to go from wrapped around him to hidden underneath him, in a garment he gave him six days ago.**
+
+**And the phases are aimed at the window, not at you.** Four months of Phase 1, Phase 2, Phase 2.5, Phase 3 Hyper, *Phase ??????????????????????????????????????????* and infinite phases, and **every one of them was a measurement of power**. Gaster 666's are **flashing eyes**, a **huge form**, a **computer form**, and one that ***"tears apart the Classics window."*** On **August 22 at 8:10 PM** Pero was banging on that same pane of glass saying *"I am tired of living in this game, let me out!"* and stayed stuck in the original. **His brother does not ask.**
+
+**And "I couldn't list all 666's powers" has never been typed in this file before.** Zero prior occurrences in four months of an archive that counts in **Omniplatforms**, *absolute_infinitely*, **15,000,000 exponency**, **millions of Satans** and **× 3.6e100**, and that has written down, ranked and argued about every power any character has ever had. **This is the first one it will not finish listing.**
+
+**And the whole thing started as a question about a capital letter.** *"(Omni-King Pero, or lord Pero, **it is the start of a sentence, right?**)"* He set out to fix one letter, and **moved the ownership of the strongest experiment in the game.**
+
+**Built as game beat 458, `LORD PERO`.** Additive; nothing earlier was changed, and beat 457's text was corrected in place to point here.
+
+- **The picture, left — WHOSE PROTOTYPE IS IT?:** the five-row credit ledger, 11:48 AM through **THE STRONGEST EXPERIMENT EVER MADE CARRIES SOMEBODY ELSE'S NAME**, closing on **THE CREDIT MOVED ELEVEN MINUTES AFTER THE BUILD · GASTER MADE IT. THE NAME ON IT IS HIS BROTHER'S.**
+- **The picture, right — 666 HAS MANY PHASES:** flashing eyes *(a look)*, huge form *(a size)*, computer form *(a machine)*, tearing the Classics window *(the glass)*, Pero under Gaster's cloak *(a hiding place)* — over the boxed **11:59 AM · "I COULDN'T LIST ALL 666'S POWERS."**
+- **Band, left — "ONLY GOD CAN BEAT 666" IS PERO'S OWN SENTENCE, AND IT IS SEVEN DAYS OLD.**
+- **Band, right — HE IS HIDING UNDER A CLOAK HE MADE HIMSELF AND GAVE AWAY.**
+- **Band — AND THE PHASES ARE AIMED AT THE WINDOW, NOT AT YOU:** four months of power-phases against four screen events.
+- **Bottom left — AND THE FILE THAT COUNTS EVERYTHING STOPS COUNTING.**
+- **Bottom right — AND IT ALL STARTED AS A CAPITAL LETTER.**
+- **Closing line:** HE BUILT THE STRONGEST THING IN THE GAME, AND IT HAS HIS BROTHER'S NAME ON IT. · **★ LORD PERO ★**
+- **The background hides one thing under another.** A red **666** pulse is the visible boss; a small gold point sits under it and only brightens when the cloak lifts, on a slow cycle. A seam runs down the middle of the screen and tears a little wider each pass. The cherry blossom still falls.
+
+![Beat 458 — LORD PERO](screenshots/520-lord-pero.png)
+
 ## 2026-08-25 — LORD'S PROTOTYPE · HE HANDED IT ALL OVER, AND CAME BACK TWENTY HOURS LATER WITH A NUMBER (BEAT 457)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **11:48:29 AM**, twenty-eight minutes and fifty-seven seconds after HOLLOW: VOID. His own typing is *"Gaster now completed all Experiments and combined all the power and created Experiment Absolute, Gaster became it's normal Undertale form, but now with Experiment Absolute and Classics. Gaster's powers have so much effect that it looks extremely cool and intense and insane, it has powers of Satan and stuff. It is called Lord's Prototype. Gaster is now extreme and just under Pero. Gaster can summon infinity Vicinuses and Flowers, he uses his few varies and forms, he even throws huge crosses and even creates vortexes and glitches everything. It's HP is locked on 666, and it makes the normal "Player" into "666", everything in the New Gaster boss fight is translated to "666". Ink is a big thing about it. New Gaster is beyond his normal Gaster, it is Classics Gaster, New Gaster absorbs all the souls and New Chara and all the "New" (all characters besides Pero) characters and becomes the most powerful experiment. Pero and New Gaster (also called Entity 666, or Gaster 666), are the most powerful in Classics. Pero is above Gaster 666. Gaster can do whatever Classics glitches and errors can do."* Everything from *"Got it"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
@@ -18,7 +48,7 @@ Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." th
 
 **And the boss fight gets renamed after him.** *"It makes the normal "Player" into "666", everything in the New Gaster boss fight is translated to "666"."* **August 23** did this once already, from the other end: [Entity 000](https://d1hysvqh647i13.cloudfront.net/classics-lore/classics-era/) *"the sythe became a code slicer, **the code was deleted and now it says repeated 0s**."* **000 renamed the code. 666 renames you.**
 
-**And "Prototype" has two owners here, and both of them possess people.** **Prototype 404** is Simon's Black-being transfiguration — *"the most dangerous SCP"*, a soul-eating stalker that 1HKOs anything. **Prototype_000.exe**, **August 24**, was built by Pero, Luigi Green and Gaster together — *"Luigi Green makes the DNA, Gaster experiments it and creates it"* — and it **possessed its own manufacturers** before Pero destroyed it in the same message that made it. **One day later Gaster builds another one and puts his own title on it.**
+**And "Prototype" has two owners here, and both of them possess people.** **Prototype 404** is Simon's Black-being transfiguration — *"the most dangerous SCP"*, a soul-eating stalker that 1HKOs anything. **Prototype_000.exe**, **August 24**, was built by Pero, Luigi Green and Gaster together — *"Luigi Green makes the DNA, Gaster experiments it and creates it"* — and it **possessed its own manufacturers** before Pero destroyed it in the same message that made it. **One day later Gaster builds another one** — and eleven minutes after this message Toby corrects the name: *Lord's Prototype* means **Lord Pero's** Prototype, so the strongest experiment in the game is named after the man above its maker. See beat 458.
 
 **And Satan has only ever been a unit of measurement here.** Mr. Black was *"more powerful than a million Satans"*; this archive counts in Omniplatforms, *absolute_infinitely*, 15,000,000 exponency **and Satans**; and on **August 18** *"Pero beats Satan and Seraphims."* Never once a source. Today: *"it has **powers of Satan** and stuff."*
 
