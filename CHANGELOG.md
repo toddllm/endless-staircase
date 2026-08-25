@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — ONLY PERO · ONLY GOD CAN BEAT HIM, AND ALSO ONLY PERO CAN, FIVE MINUTES APART (BEAT 459)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **12:04:10 PM**, four minutes and fifty-five seconds after LORD PERO and a direct continuation of it. His own typing is *"In addition, he is all powerful and uses whatever he needs to beat his opponent, Gaster 666 learns Pero is around him. Pero is far more powerful than the Absolute Gaster 666, Gaster's power is Absolute, Pero is the only one to beat Gaster 666."* Everything from *"Got it — Gaster 666 is Absolute"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**Two exclusive answers to the same question, four minutes and fifty-five seconds apart.** At **11:59:15 AM**: *"**only God can beat 666**."* At **12:04:10 PM**: *"**Pero is the only one to beat Gaster 666**."* Both of them say *only*. **Either one of them is wrong, or Pero is God** — which is a question this archive has been circling since **August 18** (*"Only God is stronger than Pero… Only God himself beats Pero"*) and since **July 18**, where Light Pero *"became the game's god and talks to himself since no one is above him"* and, in the same message, *"prays to God."*
+
+**And Pero left Absolute this morning.** **August 6**: *Absolute Infinity*. **August 21, 11:09 AM**: *Absolute Infinity AD*. Then at **7:27 AM today**, beat 454: *"**Pero became beyond Absolute and numbers**."* Four hours, thirty-six minutes and nineteen seconds later: *"**Gaster's power is Absolute**."* **He carried that word for nineteen days, dropped it at breakfast, and his brother is standing on it before the day is half over.**
+
+**And the hiding place lasted four minutes and fifty-five seconds.** At 11:59 Pero *"hides in the most mysterious places around or even under his brother"*, in a cloak Pero made him on **August 19**. At 12:04: *"**Gaster 666 learns Pero is around him**."* **He announced the hiding place and then immediately had the one person it was hidden from find it.**
+
+**And the only-one slot is refilled fifty-two minutes after it emptied.** **August 13**: *"Alex is the only one who can even harm Pero."* **11:12 AM today**: Alex is destroyed. **12:04 PM**: *"Pero is the only one to beat Gaster 666"* — the same shape written from the other side. **This file always keeps exactly one name that can reach the top. It deleted one at 11:12 and wrote a new one at 12:04.**
+
+**And he is the first boss here defined by not having a moveset.** Every other character in this archive has a written list: Karuto's three major attacks, Alex's incantation, Last Run Pero's twenty-item inventory. Gaster 666 gets *"he uses whatever he needs to beat his opponent"*, on top of *"I couldn't list all 666's powers."* **A boss you cannot prepare for, because the move is chosen after he sees who turned up.**
+
+**Sixteen minutes.** 11:48, he builds the strongest experiment in Classics. 11:59, the name on it turns out to be his brother's. 12:04, he finds out his brother is standing right there, and that his brother is the only one who can beat him.
+
+**Built as game beat 459, `ONLY PERO`.** Additive; nothing earlier was changed.
+
+- **The picture, left — WHO CAN BEAT 666?:** the two answers as two boxes, **11:59:15 AM · "ONLY GOD CAN BEAT 666."** in red and **12:04:10 PM · "PERO IS THE ONLY ONE TO BEAT GASTER 666."** in gold, closing on **FOUR MINUTES AND FIFTY-FIVE SECONDS APART · BOTH SAY "ONLY". EITHER ONE OF THEM IS WRONG, OR PERO IS GOD.**
+- **The picture, right — HE MOVED IN THE MORNING HE MOVED OUT:** the Absolute ledger, August 6 through 12:04 PM, over the boxed **ABSOLUTE · VACATED AT BREAKFAST, OCCUPIED BY LUNCH.**
+- **Band, left — THE HIDING PLACE LASTED FIVE MINUTES.**
+- **Band, right — AND THE ONLY-ONE SLOT IS REFILLED FIFTY-TWO MINUTES AFTER IT EMPTIED.**
+- **Band — AND HE IS THE FIRST BOSS HERE DEFINED BY NOT HAVING A MOVESET.**
+- **Closing line:** ONLY GOD CAN BEAT HIM. ALSO, ONLY PERO CAN. FIVE MINUTES APART. · **★ ONLY PERO ★**
+- **The background cannot pick.** A gold ring and a red ring hold the same radius and trade brightness back and forth on a slow cycle, because the file gave the same exclusive answer to two different names inside five minutes. The cherry blossom still falls.
+
+![Beat 459 — ONLY PERO](screenshots/521-only-pero.png)
+
 ## 2026-08-25 — LORD PERO · HE BUILT THE STRONGEST THING IN THE GAME, AND IT HAS HIS BROTHER'S NAME ON IT (BEAT 458)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **11:59:15 AM**, ten minutes and forty-six seconds after LORD'S PROTOTYPE, and **a correction to it**. His own typing is *"Lord Pero (Omni-King Pero, or lord Pero, it is the start of a sentence, right?), he said "Lord's Prototype", when he means his own Prototype "Pero's Prototype", only God can beat 666. 666 has many Phases, like flashing eyes, huge form, and computer form and it tears apart the Classics window, and he has a Phase where Pero can be seen under Gaster's cloak, Pero hides in the most mysterious places around or even under his brother, Gaster 666. I couldn't list all 666's powers."* Everything from *"Yes — at the start of a sentence"* onward is pasted ChatGPT commentary and is treated as commentary, not canon.
