@@ -4,6 +4,48 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — STUCK ON HIS DRAGON FORM · THE SAME SCENE AS AUGUST 21, WITH ONE ROW CHANGED, AND THE ROW IS WANTING (BEAT 467)
+
+Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **2:32:44 PM**, fifty-seven minutes and thirty-seven seconds after ONE THOUSAND PERCENT. The whole opening paragraph is his own typing: *"Pero said to Gaster 666 "Turn into Vicinus, I'll give you more power when you are that form.", Gaster 666 is now struck on his dragon form because he wants the power. Gaster became the most powerful and largest dragon ever. Gaster consumes the other characters, now Gaster and Pero are left. Pero says "Look who is left, the huge dragon I gave power to, you keep asking me for power, Classics beings are nothing without me.", Pero is tired of people asking everything to him, he wants to be asked anything, but not everything, he knows everything."* Everything from *"Got it — this makes Vicinus Gaster 666 both a reward form and a trap form"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+**This scene already ran once, four days ago, and Pero directed it that time too.** August 21, 2:29:35 PM: *"Pero gave Gaster the paintbrush that makes the ink dragon suit on him, so Gaster used the vine to grab the paintbrush since **he had no other option**… then Gaster fully became Vicinus. **Pero and Luigi Green stand back.** Vicinus consumed all the box characters like a free meal. **Vicinus's ink falls down into a puddle and Flower/Gaster is back to his normal form.**"*
+
+| | Aug 21, 2:29 PM | Aug 25, 2:32 PM |
+|---|---|---|
+| **what Pero supplies** | a paintbrush | more power |
+| **why Gaster takes it** | *"he had no other option"* | *"because he wants the power"* |
+| **who Vicinus eats** | all the box characters | the other characters |
+| **where Pero is** | *"stand back"* | *"now Gaster and Pero are left"* |
+| **how it ends** | the ink falls into a puddle, and he changes back | **stuck** |
+
+**Two rows changed, and they are the same row.** He went in with no choice and got out. He went in wanting and did not.
+
+**And the costume has become the body.** The whole August 21 reveal turned on one word — *"Vicinus is actually Flower… covered in ink that makes him **LOOK** like a dragon"* — a disguise painted on a flower, at **2:16:54 PM**. **Four days, fifteen minutes and fifty seconds later** it is *"the most powerful and largest dragon ever"*, and he cannot take it off. The pretend dragon is now the largest real one, and the pretending is what shut the door.
+
+**And the form used to have a clock on it.** August 21: *"Flower collects as many souls as he can to **keep the Vicinus transformation going longer** if he wanted to."* The dragon ran on souls and expired. Today he *"consumes the other characters"* — **he fed the form every character there was, and now it does not run out.** The trap comes with a receipt.
+
+**And the mood from an hour ago finally gets its reason.**
+
+| | 1:35:07 PM | 2:32:44 PM |
+|---|---|---|
+| **Pero** | *"I don't feel like I want to right now"* | *"tired of people asking everything to him"* |
+| **the reason** | **not given** | **there it is** |
+| **elapsed** | | **57 minutes 37 seconds** |
+
+An hour ago he stopped at 1000% and would not say why. This message says why, and it is not about power at all. **He is tired of being asked.**
+
+**And the two halves of this one paragraph are the same sentence read from opposite ends.** Gaster wants the power and is stuck in a dragon. Pero wants nothing and walks off whenever he likes. **The trap is not the form, it is the wanting** — and the bait was also the door.
+
+**And he took the teaching job at breakfast.** **7:35:28 AM**: *"Pero is the sorcer teacher, the players become his students."* **Six hours, fifty-seven minutes and sixteen seconds later**, nobody is asking him questions: *"you keep asking me for power."* Which is exactly what the last line of the message sorts out — *"he wants to be asked **anything**, but not **everything**, he knows everything."* **A teacher's wish and a vending machine's fate, one word apart.**
+
+**And *"Classics beings are nothing without me"* is said to a dragon he is currently powering**, in a shape he ordered, in a suit he handed over the paintbrush for on August 21. The claim is being demonstrated on the only person left to hear it.
+
+Built into the game as **beat 467, `STUCK ON HIS DRAGON FORM`**.
+
+![Beat 467 — STUCK ON HIS DRAGON FORM](screenshots/529-stuck-on-his-dragon-form.png)
+
+---
+
 ## 2026-08-25 — ONE THOUSAND PERCENT · THE LADDER CLIMBS OUT OF THE STORY AND ENDS ON THE MACHINE THAT RUNS IT (BEAT 466)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **1:35:07 PM**, six minutes and forty-eight seconds after MAXED DEMON GASTER and thirty minutes and three seconds after LIMITLESS. The whole opening paragraph is his own typing: *"Pero uses Technique Amplification: Darkness, Technique Reversal: Light, Hollow: Void 200% and the game is destroyed, he then uses 255%, the universes explode, and then he uses 575% and the game lags, and then he uses 1000% and the game crashes, leaving Pero only there, Pero says "I can do more, but I don't feel like I want to right now.""* Everything from *"That makes Hollow: Void"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
