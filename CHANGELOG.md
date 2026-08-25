@@ -4,6 +4,95 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-25 — EXPERIMENT 666 HAS ENDED · VARIES TO FORMS · WOAH, OKAY PERO (BEATS 468-470)
+
+Based on Toby's 2026-08-25 lore — three messages in the "Pero, and more lore." thread at **4:14:37 PM**, **4:17:27 PM** and **4:31:09 PM**, a sixteen-minute-thirty-two-second burst that begins one hour forty-one minutes and fifty-three seconds after STUCK ON HIS DRAGON FORM. In each message his own typing is the opening paragraph; everything from *"Got it —"* / *"Perfect —"* onward, including every **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
+
+![Experiment 666 Has Ended](screenshots/530-experiment-666-has-ended.png)
+
+### BEAT 468 — EXPERIMENT 666 HAS ENDED (4:14:37 PM)
+
+> *"Gaster stopped his experiment 666 and became himself again. Gaster and Pero are now on the Cherry Blossom Mountain again."*
+
+**He was offered two ways out, and he wrote a third.** The reply to beat 467 went out at **2:49:38 PM** and ended on one question: would Gaster turn back into Flower, or was it already too late because of everyone he swallowed? **One hour twenty-four minutes and fifty-nine seconds later** he answered, and he took neither door. He *"became himself again."* Not Flower. Himself.
+
+**And the form still had every drop of its fuel.** The August 21 rule is that souls *"keep the Vicinus transformation going longer"*, and at 2:32 PM he *"consumes the other characters"* — the tank was as full as it has ever been. **So nothing expired and nothing ran dry.** Beat 467 argued that the trap was not the dragon but the wanting; the very next message tests exactly that, and the door opens.
+
+| every other exit in this file | this one |
+|---|---|
+| something ran out, expired, or was taken | he stopped wanting it |
+
+**And the summit is the third one in a day.**
+
+| when | who was on it |
+|---|---|
+| **Aug 24, 7:29:27 PM** | Pero alone, blindfold off, three struck down |
+| **Aug 25, 12:33:13 PM** | *"Gaster and Pero stand on the top of the Cherry Blossom Mountain **again**"* |
+| **Aug 25, 4:14:37 PM** | *"Gaster and Pero are now on the Cherry Blossom Mountain **again**"* |
+
+**Twenty hours, forty-five minutes and ten seconds. Three arcs, one peak.** Every *"again"* he has written on that mountain has been literally true.
+
+**And "himself" has not fit for twenty-five hours.** Energy (Aug 24, 3:49 PM) → Experiment Absolute and Lord's Prototype (11:48 AM) → Maxed Demon Gaster (1:28 PM) → *"the most powerful and largest dragon ever"* (2:32 PM) → **himself** (4:14 PM).
+
+**But count the people on the summit.** *"Gaster and Pero are now on the Cherry Blossom Mountain"* is still **two**. The cast he consumed at 2:32 is still consumed at 4:14. **The door opened for the one who wanted the power, and it did not open for anybody he swallowed.**
+
+![Varies To Forms](screenshots/531-varies-to-forms.png)
+
+### BEAT 469 — VARIES TO FORMS (4:17:27 PM)
+
+> *"Pero made Experiment 666 into a form of Gaster, Vicinus and Flower become forms, Gaster makes Experiments from 1 to 665, then he makes the experiments of 667 to infinity. He made them all into avalible forms. Pero made them from varies to forms. Pero made his varies into forms."*
+
+**He finished the experiments four and a half hours before he started them.** At **11:48:29 AM** (beat 457): *"Gaster now **completed all Experiments** and combined all the power and created Experiment Absolute."* At **4:17:27 PM**: *"Gaster **makes** Experiments from 1 to 665, then he makes the experiments of 667 to infinity."* **4h 28m 58s between completing them and beginning them** — and the numbering says the same thing a second way, because **666 was on the page first** and 1 through 665 is being filled in around it.
+
+**And this is the morning's move run backwards.**
+
+| time | the line | direction |
+|---|---|---|
+| **7:35:28 AM** | *"He made his other forms into varies"* | forms → varies |
+| **4:17:27 PM** | *"Pero made his varies into forms"* | varies → forms |
+
+**8h 41m 59s apart, same day, same pile, opposite arrow.** He demoted the whole chain at breakfast and promoted it before dinner.
+
+**And forms and varies were never one scale.** August 16, 7:21 PM: *"Pero LAI is **the most varied**"* — first place — and *"Simon has **the most forms**"* — second. **Two separate tallies ranking two different people.** Merging them collapses the only ladder in this archive whose first and second place were measuring different things, and the holder of the forms record died in the Omnicide on August 24.
+
+**And in this file a vary is not a costume, it is a person.** The archive's own rule, from that same August 16 ruling: a vary is *not* a shape somebody turns into and back from, it is somebody the reader already met under another name — **Tunner, Mr. Black, Paul, EndlessAnimations**. (The pasted ChatGPT block in this message defines a vary as a *"temporary alternate state"*, which is **not** what this archive established; that gloss is commentary, not canon.) Converting varies into forms turns four separate characters into four things one character can put on.
+
+**And the list that just became wearable starts with the two biggest names in the game.** August 22, 7:25:10 PM: *"Entity 000 was made in Gaster's labatory as his **second experiment after Simon**."* That puts **Simon at experiment 1** and **Entity 000 at experiment 2** — both inside the 1-to-665 range that was just made available.
+
+**And three minutes ago he put down the one form he was stuck in.** At 4:17 that form is filed as one option among infinity.
+
+![Woah, Okay Pero](screenshots/532-woah-okay-pero.png)
+
+### BEAT 470 — WOAH, OKAY PERO (4:31:09 PM)
+
+> *"Pero created another lab for Gaster, and then he went crazy and made 100000000000000000000000000000000000000000000000000000000000000 more, then he stops and catches his breath, then he makes absolute infinity more labs. Gaster says "Woah, okay Pero.""*
+
+**Gaster asks for nothing, and is handed absolute infinity.** One hour fifty-eight minutes and twenty-five seconds earlier, Pero was *"tired of people asking everything to him, he wants to be asked anything, but not everything."* In this message **Gaster does not ask at all** — Pero simply builds. Gaster's only line is four words long and not one of them is a request. **At 2:32 PM asking for power got him stuck inside a dragon; at 4:31 PM asking for nothing gets him absolute infinity.**
+
+**And catching his breath is Karuto's move.** Email 335, **May 22, 7:19 PM**, the Jigsu Kintu siege in Alex's World: *"Karuto turns back to base form to **catch his breath**, then uses Domain Expansion: Endless World **again**."* Same three steps in the same order — go big, drop back and breathe, then go again bigger — **ninety-five days apart**. Pero has been Karuto since **June 24** (*"I am Karuto"*) and took Karuto's job title as sorcer teacher at **7:35 this morning**.
+
+**And look where he put the breath.**
+
+| step | what he makes | does he need to rest? |
+|---|---|---|
+| 1 | one lab | no |
+| 2 | **a 1 with 62 zeros after it** | **he has to stop** |
+| 3 | absolute infinity more | no |
+
+**The countable number is the one that tired him out, and the infinite one was free.** The smaller number was the harder job.
+
+**And nobody in Classics has ever said woah.** Two hits in four months of archive, both inside the AI-Era ChatGPT skit files, **neither of them from a Classics character**. *"Woah, okay Pero."* is the first time a being in this game is simply **surprised** — and it is said by the brother who spent the afternoon stuck in a dragon.
+
+**And the one lab already had millions of rooms.** Email 308, May 18, 5:53 PM: *"When you go into the Classics Labatory, you walk throughout **millions of rooms**, then you hear a meow, you realise you are not alone, behold, CXE 404 - The Sleeping Entity!"* — with Email 310's rule that *"If you hear a meow in a labatory, it would be Simon."* **Simon died in the Omnicide on August 24.** So there are now infinitely many labs, each the size of the one that had millions of rooms, **and not one meow in any of them.**
+
+### Changed
+
+- `index.html` — three new beats, `ph===468`, `ph===469`, `ph===470`; `LV_CYC` **10016.0 → 10082.0**; three `LV_BEATS` entries (length 468 → 471); three dispatch ranges `[10016,10038)`, `[10038,10060)`, `[10060,10082)`.
+- `tools/capture_screenshot.py` — three new scenes, `experimentended`, `variestoforms`, `okaypero` (freeze at `cyc` 10032.0 / 10054.0 / 10076.0).
+- `screenshots/530-experiment-666-has-ended.png`, `screenshots/531-varies-to-forms.png`, `screenshots/532-woah-okay-pero.png`.
+
+---
+
 ## 2026-08-25 — STUCK ON HIS DRAGON FORM · THE SAME SCENE AS AUGUST 21, WITH ONE ROW CHANGED, AND THE ROW IS WANTING (BEAT 467)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **2:32:44 PM**, fifty-seven minutes and thirty-seven seconds after ONE THOUSAND PERCENT. The whole opening paragraph is his own typing: *"Pero said to Gaster 666 "Turn into Vicinus, I'll give you more power when you are that form.", Gaster 666 is now struck on his dragon form because he wants the power. Gaster became the most powerful and largest dragon ever. Gaster consumes the other characters, now Gaster and Pero are left. Pero says "Look who is left, the huge dragon I gave power to, you keep asking me for power, Classics beings are nothing without me.", Pero is tired of people asking everything to him, he wants to be asked anything, but not everything, he knows everything."* Everything from *"Got it — this makes Vicinus Gaster 666 both a reward form and a trap form"* onward, including the **"Clean canon update"** block, is pasted ChatGPT commentary and is treated as commentary, not canon.
