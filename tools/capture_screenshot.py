@@ -15964,7 +15964,7 @@ SCENES = {
         var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
         for (var s=0;s<stages.length;s++){ var nm=stages[s];
           try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
-        // BEAT 478 - TAKE THE GAME FOR HIMSELF (Toby, Aug 26, 10:22:04 AM): the one who lost twice this morning handed the game ninety-four minutes later for free, the verb 'allows' that Gaster himself used on August 18, the three milk errands and the three different ways the game survives them, the gift to Alex two days ago that was followed by his destruction, and the exemption Pero had already signed for Gaster.
+        // BEAT 478 - TAKE THE GAME FOR HIMSELF (Toby, Aug 26, 10:22:04 AM): the one who lost twice this morning handed the game ninety-four minutes later for free, the verb 'allows' that Gaster himself used on August 18, the three milk errands and the three different ways the game survives them, the gift to Alex two days ago that was followed by his destruction, and the exemption Pero had already signed for Gaster on August 25.
         // Beat 478 spans cyc in [10236.0,10258.0]; cyc=10252.0 -> dt~16, past every fade-in.
         if (typeof loopVs!=='undefined'){
           loopVs.active=true; loopVs.done=false; loopVs.glow=1;
