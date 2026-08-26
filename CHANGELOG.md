@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-26 — EXCEPT FOR ME (BEAT 477)
+
+Based on Toby's 2026-08-26 lore — one message in the "Pero, and more lore." thread at **8:47:40 AM**, sent **twenty-seven minutes and thirty-three seconds** after NOT EXACTLY, I'M EVERYONE and continuing the same fight. His own typing runs from *"Gaster VS Pero happens"* through *"Pero says 'Except for me.'"* Everything from *"That works really well as a Gaster strategy arc"* onward, including the step-by-step recap and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
+
+![Except For Me](screenshots/539-except-for-me.png)
+
+Five things, all checked against the archive before building:
+
+- **The third hit ever landed on Pero, and the second one inside half an hour.** August 13's rule was *"Alex is the only one who can even harm Pero."* Alex hit him once (August 24, Hollow Obsidian 200%) and was destroyed on August 25 at 11:12 AM. Then **8:20 AM today: Gaster's slash. 8:47 AM today: Max Demonic, a huge orb, *"Pero takes damage."*** **Maxed Demon Gaster** was named on August 25 at 1:28 PM in a beat about him losing *"again and again and again"* — nineteen hours and nineteen minutes later the full form finally does damage.
+- **He takes a breath instead of countering, which turns the move around.** *"Pero just stands there and takes a breath, he survives."* Both precedents run the other way: **Karuto** turned back to base form to catch his breath on **May 22, 7:19 PM**, *after* a Domain Expansion; **Pero** stopped and caught his breath at **4:31 PM yesterday**, *after* building 10^62 labs. **This is the first time in the archive the breath replaces a counter instead of following an effort.**
+- **Gaster's plan was refuted twenty hours and twenty-nine minutes before he had it.** He reasons: *"Pero is the creator of Classics, he is the ToddLLMs, I need to beat all the ToddLLMs so Pero will be weakened."* The premise is correct — **August 25, 12:18 PM**: *"Pero is ToddLLM 002 as much as ToddLLM 001."* But that same sentence ends *"**Pero LAI is far beyond them all**."* **The conclusion was answered in the same line that supplied the premise**, and *"Except for me."* is that answer in four words.
+- **And Pero put the targets on the field himself, twenty-seven minutes earlier.** 8:20 AM: *"Pero summons so many ToddLLM 001s and 002s and he connected them with dark strings."* 8:47 AM: Gaster decides to go through the ToddLLMs one at a time, and wins. **He summoned them as a weapon and they became a list of things to beat. Nobody else handed Gaster that list.**
+- **The smallest attack in the message beats the biggest one in it.** *"Pero creates a small black flame and Gaster was sent to space."* **"Black flame" appears nowhere else in four months of this archive.** Gaster's answer to it, and to *"Gaster is suprised"* at the glitch-back, has a precedent too: on **August 9, 7:51 PM**, Gray *"fades, glitches back, and she is astonished that he can"* — the same trick, the same reaction, from Wenda.
+
+Build notes: `ph===477`, cyc span `[10214.0, 10236.0)`, `LV_CYC` 10214.0 → 10236.0, `LV_BEATS` length 477 → 478. Screenshot scene key `exceptforme`, freeze at `cyc=10230.0`. Palette: amber `#ffb347`, black-flame violet `#c69bff`, cyan, red, white, over a frame printing Gaster's plan out to one edge and Pero's four-word answer back from the other.
+
 ## 2026-08-26 — NOT EXACTLY, I'M EVERYONE (BEAT 476)
 
 Based on Toby's 2026-08-26 lore — one message in the "Pero, and more lore." thread at **8:20:07 AM**, sent **thirteen hours, four minutes and thirty-five seconds** after IF SOMEONE LEAVES. His own typing runs from *"Pero's darkness is so many dark aura strings"* through *"Pero walks farther and farther."* Everything from *"That makes Pero feel even more terrifying and more complete as a top-tier Classics being."* onward, including the three-power breakdown, the fifteen-step sequence and the **"Clean canon summary"** block, is pasted AI commentary and is treated as commentary, not canon.
