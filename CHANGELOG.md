@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-26 — PVP WON'T EXIST ANYMORE (BEAT 480)
+
+Based on Toby's 2026-08-26 lore — one message in the "Pero, and more lore." thread at **10:43:31 AM**, sent **twenty-one minutes and twenty-seven seconds** after TAKE THE GAME FOR HIMSELF. His own typing is the single opening block: *"Arcsis battles Anizon for hours, then Pero was tired and slays Anizon. Pero and Gaster battle again, Pero won and Pero says 'Gaster almost beaten me, almost drained all my power, but I have a little something left, corruption and errors. I will break this game, so he can't even win since PVP won't exist anymore.'"* Everything from *"That makes the Anizon Box War turn into a darker turning point for Pero."* onward, including the what-happens recap and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
+
+**The 10:40 AM message between the two is deliberately not built.** Toby's own typing in it is the three words *"Make the next part."*; the *Milk Box Era* prose underneath is generated text, so under the standing rule it carries no canon of its own. It is recorded here so the gap in the beat numbers is not mistaken for a miss.
+
+![PVP Won't Exist Anymore](screenshots/542-pvp-wont-exist-anymore.png)
+
+Six things, all checked against the archive before building:
+
+- **The Anizon escalation finally runs, on the rule he wrote two hours and twenty-three minutes earlier.** At **8:20 AM** he introduced Anizon as *"a monsterosity who gets **exponentally more powerful each time you beat him**, only Pero can slay Anizon"* — and then switched the rule off in the same sentence: *"Pero **instantly** beats Anizon right in front of Arcsis's own eyes."* Beat 476 recorded that the escalation never got to run. **Today it runs:** Arcsis battles him *"for hours"*, and Pero *"was tired"* when he finally slays it.
+- **Which means he made his son's fight harder by winning it for him.** The instant win at 8:20 is, by Toby's own rule, exactly why Anizon is now a multi-hour fight for Arcsis and a tiring one for Pero. **The training boxes he handed his children on his way out of the room got worse the moment he demonstrated.**
+- **Nobody has ever drained him.** *"Gaster almost beaten me, **almost drained all my power**."* Draining in this archive belongs to Gray, who drained Unikitty on **August 8** and *"became all powerful"*. **This is the first time Pero's power is described as nearly gone**, and it comes from the brother he handed the game to twenty-one minutes earlier.
+- **He gave Gaster the game at 10:22, and at 10:43 he says he will break it.** There is one precedent and it is two days old: **August 24, 7:29 PM**, *"I give you control of the game's future, Alex"*; **August 25, 11:12 AM**, *"Alex was destroyed."* **Both gifts are followed by a destruction. Last time he destroyed the man; this time he destroys the present.**
+- **He has crashed this game twice, and neither time was aimed at anybody.** **August 19**: *"Pero even crashed the game to stop everyone from entering, he closed the barrier"* — a lock, used to keep people out. **August 25, 1:35 PM**: he crashes it at 1001% and stands in the wreck. **Today is the first time the crash is a weapon, aimed at one person and one system.** And on **August 16 at 6:08 PM**, *"Pero LAI can even start crashing"* was recorded as the first failure ever written for him. **Ten days later it is the thing he has left.**
+- **"PVP" appears nowhere else in four months of this archive.** Every fight in this file has been PVP and nobody has ever needed the word. **He names it once, in the sentence where he takes it away.** At **8:47** he won the argument with four words, *"Except for me."* At **10:43** he stops arguing and deletes the category instead: Gaster spent all morning learning how to win, and the answer is that winning is being removed.
+
+Build notes: `ph===480`, cyc span `[10280.0, 10302.0)`, `LV_CYC` 10280.0 → 10302.0, `LV_BEATS` length 480 → 481. Screenshot scene key `pvpgone`, freeze at `cyc=10296.0`. Palette: error red `#ff2b4c`, corruption magenta `#ff5ec4`, amber, cyan, white, over the Anizon ledger with the switched-off rule at the top and the run of it at the bottom.
+
 ## 2026-08-26 — RESPAWNS IN LUIGI GREEN (BEAT 479)
 
 Based on Toby's 2026-08-26 lore — one message in the "Pero, and more lore." thread at **10:25:22 AM**, sent **three minutes and eighteen seconds** after TAKE THE GAME FOR HIMSELF. His own typing is the single opening block: *"2 years later, Pero finally gotten the milk along with boxes. Gaster and Wenda and Gray and Alex all have milk, and Pero respawns in Luigi Green and Luigi Green makes the box animation."* Everything from *"That is a good canon shift."* onward, including the current-state list, the lore-meaning section, the four numbered implications and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
