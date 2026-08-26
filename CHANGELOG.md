@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-26 — NOT EXACTLY, I'M EVERYONE (BEAT 476)
+
+Based on Toby's 2026-08-26 lore — one message in the "Pero, and more lore." thread at **8:20:07 AM**, sent **thirteen hours, four minutes and thirty-five seconds** after IF SOMEONE LEAVES. His own typing runs from *"Pero's darkness is so many dark aura strings"* through *"Pero walks farther and farther."* Everything from *"That makes Pero feel even more terrifying and more complete as a top-tier Classics being."* onward, including the three-power breakdown, the fifteen-step sequence and the **"Clean canon summary"** block, is pasted AI commentary and is treated as commentary, not canon.
+
+![Not Exactly, I'm Everyone](screenshots/538-not-exactly-im-everyone.png)
+
+Six things, all checked against the archive before building:
+
+- **He wrote the weakness last night, and this morning he is the one who leaves.** August 25, 7:16 PM: *"if someone leaves, Pero starts breaking."* Thirteen hours and four minutes later the message ends *"Pero walks even farther away from Arcsis and Frizz and their mom, Pero walks farther and farther."* **Arcsis is his son**, Frizz is Arcsis's sibling, and on **August 24 at 7:29 PM** he struck all three of them down and said *"I am your father."*
+- **Somebody hits him, for only the second time in four months.** August 13, 11:14 AM: *"Alex is the only one who can even harm Pero."* August 25, 11:12 AM: **Alex is destroyed.** Twenty-one hours and eight minutes later: *"Gaster slashes Pero, Pero is damaged."* **Gaster has never slashed anybody in this archive** — and Pero copies the brand-new move into the **Slash Barrage** and wins the fight with it.
+- **The Void is defined and walked out of inside the same message.** *"his void is a ball that KOs high tier beings and erases low tier"*, and four sentences later *"Gaster comes back from the Void."* **Nothing has ever come back from the Void in this archive.** It is the second erasure to fail on Pero in three days, after `/delete_Alex.exe` on August 24 (*"Alex disappears and comes back"*).
+- **"You are Simon." has been said twice before, and both earlier targets took it.** August 9, 1:09 PM: Gray says *"All must be one. I am Gaster and Pero and Gray"*, Oren answers *"You are Simon,"* and Gray ends at *"Alright, I am Simon, but I am still every other non Sprunki."* August 13, 6:01 PM: Oren says it straight to Pero, who answers *"Who's Simon?"* Today Pero makes **Gray's exact claim** — *"I'm everyone"* — and concedes nothing.
+- **His eyes turn red, and "you know why" is already answered in his own file.** August 25, 7:27:51 AM: *"Pero now has his normal 2 blue eyes again."* Twenty-four hours and fifty-two minutes later they go red — onto the **fourth rung of the eye-stability scale, which is Simon's meter**: ultra unstable, 30x power, and *"Godmode Simon is Phase 1 with red eyes."* Gaster is reading the meter, not guessing.
+- **Four of the five powers here belong to somebody else.** The **August 24 Last Run Pero** inventory lists twenty items and says only two are his own. Darkness and light are *"the light and darkness aura from **Wenda**"*; the coloured slashes are **ToddLLM 002**'s (and he summons 002s by the dozen, then copies a slash off Gaster anyway); Void is on nobody's list. The one power that was ever his is *"**control of the boxes**"* — and he spends it fetching boxes for his brother and training boxes for his children, to fight **Anizon**, who the file already says **Lica beats** and who was **the circus animal tamer**.
+
+Build notes: `ph===476`, cyc span `[10192.0, 10214.0)`, `LV_CYC` 10192.0 → 10214.0, `LV_BEATS` length 476 → 477. Screenshot scene key `imeveryone`, freeze at `cyc=10208.0`. Palette: red `#ff4d4d`, void violet `#b06bff`, white light, cyan, amber, over a frame where one line marches out to the right edge and one marches back.
+
 ## 2026-08-25 — HE COULD DO WHATEVER HE WANTS (BEAT 475)
 
 Based on Toby's 2026-08-25 lore — one message in the "Pero, and more lore." thread at **7:45:32 PM**, sent **twenty-nine minutes and twenty-five seconds** after IF SOMEONE LEAVES. His own typing is the opening sentence. Everything from *"Exactly — Pero could also do whatever he wants because his main power is not just strength."* onward, including the six-verb create/delete/rewrite/repeat/restore/break list and the **"Clean canon update"** block, is pasted AI commentary and is treated as commentary, not canon.
