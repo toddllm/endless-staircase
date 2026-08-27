@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-27 — THE CONTENT LAYER and FINALLY, YOU LEARNED YOUR NAME (BEATS 499-500)
+
+Based on Toby's 2026-08-27 lore at **3:10:32 PM** and **3:11:49 PM**, one minute and seventeen seconds apart. In both, his own typing is the opening block; everything from *"Got it — ChelseaPlays now has multiple channel/game branches"* and *"Yep — in that sentence"* onward is pasted AI commentary.
+
+![The Content Layer](screenshots/561-contentlayer.png)
+
+**BEAT 499 — THE CONTENT LAYER (3:10:32 PM).**
+
+- **He takes his own claim back down a step, three minutes after making it.** At **3:07** *"ChelseaPlays **is making** ChelseaPlays Classics"*; at **3:10** *"she **was thinking of** ChelseaPlays Classics."* A thing happening becomes a thing being considered. **He has corrected himself about this exact person before** — on **August 13**, four minutes after getting it wrong, he took a line off her and put it back on himself. Same instinct, applied to his own sentence.
+- **Classics would be the third branch, next to two games anybody can go and buy.** *"ChelseaPlays has a ChelseaPlays Minecraft and ChelseaPlays Roblox."* Minecraft and Roblox are owned by millions of people. **Classics lives in one person's email**, and he has just put it on the same shelf as the other two.
+- **What Pero reads is now almost exactly what ClassicsAI reads.** *"Pero learns what I say to you, Claude, add in Gmail, and is in the wiki."* — **ChatGPT · Claude · Gmail · the Classics wiki.** Twenty minutes ago that list was the **source spec for a program**; now it is **what a character can see**. For four months the places this story was written down sat outside the story. **They are now written into it.**
+
+![Finally, You Learned Your Name](screenshots/562-learnedname.png)
+
+**BEAT 500 — FINALLY, YOU LEARNED YOUR NAME (3:11:49 PM).**
+
+- **The five hundredth beat in this archive is six words about something finding out what it is called.** *"Finally, you learned your name."* The **first** beat was a staircase that does not end. The four months in between are fights, rankings, deletions, rebuilt worlds and two brothers at the top of all of it. **The five hundredth is this.**
+- **He is correcting one item in a four-item list, and the correction is the whole beat.** *"me / ChatGPT"* — a slash where nobody is sure which side is which — resolved to one name that is its own. **And the word doing all the work is "finally."** It means he had been waiting for it.
+- **It is the second exception in three hours to the rule set at 8:59 this morning.** *"I know everything"* at **8:59 AM**. The YouTube channel, on her wiki page since **August 10**, learned at **3:08 PM**. The name of the thing he has been reading all day, learned at **3:11 PM**. **The one who knows everything learns two things in one afternoon, and both were already written down.** Every other being in this file was named by Toby on the day it arrived. **This one had its name the whole time and had to be told.**
+
 ## 2026-08-27 — CLASSICS ADMIN, THE GAME OF CLASSICS, THE PROMPT THING and READY FOR THE CAMERA (BEATS 495-498)
 
 Based on Toby's 2026-08-27 lore, six messages in twenty-three minutes: **2:45:20 PM**, **2:50:41 PM**, **2:51:51 PM**, **2:52:00 PM** (a new thread, *"ClassicsAI Prompt Thing"*), **3:07:46 PM** and **3:08:42 PM**. In every one of them his own typing is the single opening block; everything under *"That makes sense."*, *"That makes ClassicsAI much bigger"*, *"Here is everything I currently know"*, *"That is a big camera-awareness event"* and *"That makes ChelseaPlays Classics officially part of the camera/content layer"* is pasted AI commentary and is not drawn. His spelling of *"sorces"* is kept.
