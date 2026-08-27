@@ -71,6 +71,7 @@ Scenes:
     firsttofall      — BEAT 488, THE 1ST ONE TO FALL (Toby, Aug 27, 10:20 AM)
     thefall          — BEAT 489, I DON'T WANNA TALK ABOUT IT (Toby, Aug 27, 10:21 AM)
     theoneasked      — BEAT 490, THE ONE WHO ASKED (Toby, Aug 27, 10:24 AM)
+    ability10        — BEAT 491, ABILITY 10 (Toby, Aug 27, 11:30 AM)
     whateverhewants  — BEAT 475, HE COULD DO WHATEVER HE WANTS (Toby, Aug 25, 7:45 PM)
     cure             — the False Cure scene (two bottles + taunt + banners)
     residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
@@ -16216,6 +16217,35 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10472.0; loopVs.phase=488; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "ability10": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 491 - ABILITY 10 (Toby, Aug 27, 11:30:50 AM): the tentacles and the black robe traced back to Pero, who owns one form and cut the other; the first numbered ability in four months and the first one called a tool and an item; Pero handing Gaster's secret to an outside cast while keeping what it does; the yellow heart stolen at 8:59 worn as a locket at 11:30; the first counted souls, 2555, filling toward the size Pero already called too low; and Classics taking the name of a mod built inside it.
+        // Beat 491 spans cyc in [10522.0,10544.0]; cyc=10540.0 -> dt~18, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10522.0; loopVs.cyc=10540.0; loopVs.phase=491;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10540.0; loopVs.phase=491; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0.02; }
