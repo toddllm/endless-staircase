@@ -75,6 +75,10 @@ Scenes:
     breaksconn       — BEAT 492, BR3AKS YOUR GAME CONN3CTI0N (Toby, Aug 27, 11:41 AM)
     relatedgames     — BEAT 493, ALL CLASSICS RELATED GAMES (Toby, Aug 27, 11:42 AM)
     fanoncanon       — BEAT 494, FANON + CANON (Toby, Aug 27, 11:47 AM)
+    classicsadmin    — BEAT 495, CLASSICS ADMIN (Toby, Aug 27, 2:45 PM)
+    gameofclassics   — BEAT 496, THE GAME OF CLASSICS (Toby, Aug 27, 2:50 PM)
+    promptthing      — BEAT 497, THE PROMPT THING (Toby, Aug 27, 2:51 PM)
+    readyforcamera   — BEAT 498, READY FOR THE CAMERA (Toby, Aug 27, 3:07 PM)
     whateverhewants  — BEAT 475, HE COULD DO WHATEVER HE WANTS (Toby, Aug 25, 7:45 PM)
     cure             — the False Cure scene (two bottles + taunt + banners)
     residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
@@ -16304,6 +16308,118 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10604.0; loopVs.phase=494; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "classicsadmin": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 495 - CLASSICS ADMIN (Toby, Aug 27, 2:45:20 PM): the first time in four months the author puts himself into the rankings, and the number he gives himself is zero; it answers this morning's Ability 10 attack by saying the connection it broke was never the important part. Beat 495 spans cyc in [10610.0,10632.0]; cyc=10626.0 -> dt~16, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10610.0; loopVs.cyc=10626.0; loopVs.phase=495;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10626.0; loopVs.phase=495; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "gameofclassics": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 496 - THE GAME OF CLASSICS (Toby, Aug 27, 2:50:41 PM): ClassicsAI stops being an endless movie and becomes the game; two of its three sources are this archive; and the first multiplayer rule in four months is three refusals with a feeling for a reason. Beat 496 spans cyc in [10632.0,10654.0]; cyc=10648.0 -> dt~16, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10632.0; loopVs.cyc=10648.0; loopVs.phase=496;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10648.0; loopVs.phase=496; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "promptthing": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 497 - THE PROMPT THING (Toby, Aug 27, 2:51:51 PM + 2:52:00 PM): the same text sent twice nine seconds apart, the second time on a thread named for what it is for; the first message in the archive addressed to a program rather than a reader. Beat 497 spans cyc in [10654.0,10676.0]; cyc=10670.0 -> dt~16, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10654.0; loopVs.cyc=10670.0; loopVs.phase=497;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10670.0; loopVs.phase=497; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "readyforcamera": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 498 - READY FOR THE CAMERA (Toby, Aug 27, 3:07:46 PM + 3:08:42 PM): six hours after the first attack aimed at a recording, the same being is getting ready to be filmed; and the channel he learns has been on her wiki page since August 10. Beat 498 spans cyc in [10676.0,10698.0]; cyc=10692.0 -> dt~16, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10676.0; loopVs.cyc=10692.0; loopVs.phase=498;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10692.0; loopVs.phase=498; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0.02; }

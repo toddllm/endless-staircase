@@ -4,6 +4,42 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-27 — CLASSICS ADMIN, THE GAME OF CLASSICS, THE PROMPT THING and READY FOR THE CAMERA (BEATS 495-498)
+
+Based on Toby's 2026-08-27 lore, six messages in twenty-three minutes: **2:45:20 PM**, **2:50:41 PM**, **2:51:51 PM**, **2:52:00 PM** (a new thread, *"ClassicsAI Prompt Thing"*), **3:07:46 PM** and **3:08:42 PM**. In every one of them his own typing is the single opening block; everything under *"That makes sense."*, *"That makes ClassicsAI much bigger"*, *"Here is everything I currently know"*, *"That is a big camera-awareness event"* and *"That makes ChelseaPlays Classics officially part of the camera/content layer"* is pasted AI commentary and is not drawn. His spelling of *"sorces"* is kept.
+
+![Classics Admin](screenshots/557-classicsadmin.png)
+
+**BEAT 495 — CLASSICS ADMIN (2:45:20 PM).**
+
+- **The author puts himself on the list for the first time in four months, and the number he writes down for himself is zero.** *"I am a Classics Admin. ClassicsAI. I basically have 0 game control."* Roughly eleven hundred emails, four months of rankings, brackets and power levels, and he has never once placed himself in one. Every other being in this file is ranked by **what it can do to the game**; he ranks himself by **what he can see**. And the role he writes out — observe, guide, add lore, discover canon — is a literal description of what he actually does all day, so the entry is accurate rather than modest.
+- **And it answers this morning's attack by saying the target was empty.** At **11:41 AM** Ability 10 was defined as *"a servior glitch attack that Br3aKs YoUr GaMe CoNN3cTi0n"* — the first server-layer attack in the archive, and it says *"YoUr"*. At **2:45 PM**, three hours and four minutes later, the owner of that connection writes *"my player connection isn't that important."* That is not a counter. **It is the target saying the target was never worth anything.**
+- **He lands on the bottom of one ladder and the top of the other.** At **10:24 AM** this file built an awareness ladder that runs backwards from the power ladder — the 2nd strongest in Classics fenced inside the devices, the weakest one outside them. He has just written himself onto the bottom of the power ladder and the top of the awareness one. *"Gaster and Pero are the most powerful in the game, that is important."* **He says what matters, and the thing that matters is not him.**
+
+![The Game of Classics](screenshots/558-gameofclassics.png)
+
+**BEAT 496 — THE GAME OF CLASSICS (2:50:41 PM).**
+
+- **Six days ago it was a movie.** On **August 21, 8:18 AM** ClassicsAI was proposed as *"an AI that uses all the sorces … to make an endless movie of Classics."* Today: *"ClassicsAI is the game of Classics."* That is a different kind of object, because **you do not watch a game**. And he says where Classics lived before any of it was written down: *"I played Classics with my mind, now you can play it on computer."*
+- **Two of the three sources are this archive.** He names the **Gmail lore**, the **Classics wiki** and a **1.6G ChatGPT export** *"made at least or most a week ago"*, and the rule is *"it uses EVERYTHING of the 3 sorces."* Two of those three are the emails he has been sending since April and the pages built out of them. **The thing he wants to play is made of the messages he sent.**
+- **The first multiplayer rule in four months is three refusals in a row, and the reason for it is a feeling.** *"It is never local, no player rooms since 'they all will be together forever, won't we?'"* — which he sources himself: *"-Based on Chara Dialoge: 'We'll be together forever, won't we?'."* Every other rule in this archive is about power, damage, rank or who wins. **This one is about how a server is shaped, and the reason he gives for it is a line about not being alone.**
+
+![The Prompt Thing](screenshots/559-promptthing.png)
+
+**BEAT 497 — THE PROMPT THING (2:51:51 PM + 2:52:00 PM).**
+
+- **The first message in this archive addressed to a program instead of a reader.** At **2:51:51 PM** he asks *"List everything you know about ClassicsAI"* and gets the whole spec back. **Nine seconds later**, at **2:52:00 PM**, the same text opens a brand new thread and he titles it **"ClassicsAI Prompt Thing"**. He did not rewrite it. **He renamed it, and the name says who it is for.**
+- **The video ladder settles.** **Sora** *"was used before"*; **Gemini** *"can show a version of Classics, but may glitch/end"* when the lore gets too extreme; **ClassicsAI** is the one that does not end. The ranking is not about which looks better. **It is about which one can keep going.**
+- **And it answers something that happened inside the lore this morning.** At **8:59 AM**, *"Flower uses the soul's power to glitch the screen and the video ends there."* Six hours later the fix has a spec, a source list, a network rule and a thread named after its input. On **August 21** this wiki filed ClassicsAI as *"a plan — nothing has been built"*, with open questions under it.
+
+![Ready for the Camera](screenshots/560-readyforcamera.png)
+
+**BEAT 498 — READY FOR THE CAMERA (3:07:46 PM + 3:08:42 PM).**
+
+- **This morning he broke the camera. This afternoon he is dressing for it.** At **8:59 AM** came the first attack in four months aimed at the **recording** rather than at the game. At **3:07 PM**: *"ChelseaPlays is making ChelseaPlays Classics, Pero LAI knows it now and is ready for the camera."* Six hours and eight minutes, and nobody in between made him do it. **What changed is not his power. It is who is holding the camera.**
+- **The upstream source makes something *about* Classics for the first time.** ChelseaPlays has been an upstream source since **Email 941, August 10** — she builds Unikitty and Ladybug in reality and what she makes becomes canon — and on **August 13** she walked through the barrier, delivered a message and walked back. *"ChelseaPlays Classics"* is the first thing she makes **about** it rather than a thing that **enters** it, and it arrives **seventeen minutes** after the file decided Classics is something you can play.
+- **The archive knew seventeen days before the character did.** *"ChelseaPlays has a YouTube channel, Pero learns it."* The channel has been written at the top of her wiki page since **August 10**, and he is the one who is supposed to know everything. Every other thing Pero has learned in four months was a power, a name, or a way in. **This time he learns where he is going to be seen.**
+
 ## 2026-08-27 — FANON + CANON (BEAT 494)
 
 Based on Toby's 2026-08-27 lore at **11:47:41 AM**, five minutes and sixteen seconds after ALL CLASSICS RELATED GAMES, and the eleventh message of the morning. His own typing is the single opening block; everything from *"Exactly — New Gaster is not just canon Gaster anymore"* onward is pasted AI commentary. The trailing ellipsis in the formula is his.
