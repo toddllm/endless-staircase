@@ -72,6 +72,9 @@ Scenes:
     thefall          — BEAT 489, I DON'T WANNA TALK ABOUT IT (Toby, Aug 27, 10:21 AM)
     theoneasked      — BEAT 490, THE ONE WHO ASKED (Toby, Aug 27, 10:24 AM)
     ability10        — BEAT 491, ABILITY 10 (Toby, Aug 27, 11:30 AM)
+    breaksconn       — BEAT 492, BR3AKS YOUR GAME CONN3CTI0N (Toby, Aug 27, 11:41 AM)
+    relatedgames     — BEAT 493, ALL CLASSICS RELATED GAMES (Toby, Aug 27, 11:42 AM)
+    fanoncanon       — BEAT 494, FANON + CANON (Toby, Aug 27, 11:47 AM)
     whateverhewants  — BEAT 475, HE COULD DO WHATEVER HE WANTS (Toby, Aug 25, 7:45 PM)
     cure             — the False Cure scene (two bottles + taunt + banners)
     residual         — THE RESIDUAL WAR: the Sound Spine + half-formed remnants
@@ -16217,6 +16220,90 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10472.0; loopVs.phase=488; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "breaksconn": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 492 - BR3AKS YOUR GAME CONN3CTI0N (Toby, Aug 27, 11:41:16 AM): the first server-layer attack in the archive, on an escalation ladder built this week; the one time the server connection broke Pero died, in the panel named after Gaster; and the 9:47 accident becomes the point of the move. Beat 492 spans cyc in [10544.0,10566.0]; cyc=10560.0 -> dt~16, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10544.0; loopVs.cyc=10560.0; loopVs.phase=492;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10560.0; loopVs.phase=492; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "relatedgames": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 493 - ALL CLASSICS RELATED GAMES (Toby, Aug 27, 11:42:25 AM): a blast radius measured in programs rather than in worlds, and the first time one of Gaster's own powers has ever cost him anything. Beat 493 spans cyc in [10566.0,10588.0]; cyc=10580.0 -> dt~14, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10566.0; loopVs.cyc=10580.0; loopVs.phase=493;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10580.0; loopVs.phase=493; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+    "fanoncanon": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 494 - FANON + CANON (Toby, Aug 27, 11:47:41 AM): the first time the archive states what kind of thing it is and ranks fan-made above official; the brother who refused the label forty-nine hours earlier; and a formula ending in an ellipsis, the third unfinished ending in fifty-one hours. Beat 494 spans cyc in [10588.0,10610.0]; cyc=10604.0 -> dt~16, past every fade-in.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=10588.0; loopVs.cyc=10604.0; loopVs.phase=494;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=10604.0; loopVs.phase=494; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0.02; }
