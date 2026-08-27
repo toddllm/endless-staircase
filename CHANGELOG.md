@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-27 — THE ONE WHO ASKED (BEAT 490)
+
+Based on Toby's 2026-08-27 lore — one message in the "Pero, and more lore." thread at **10:24:50 AM**, sent **two minutes and fifty-eight seconds** after I DON'T WANNA TALK ABOUT IT, and the seventh message of one morning. His own typing is the single opening block, from *"Pibby was the one who said 'Hey Gaster, how was the fall?'"* through *"Frisk was the second HUMAN to fall."* Everything from *"Got it — that changes the 'fall' joke into a Pibby data-reveal moment"* onward is pasted AI commentary and is treated as commentary, not canon.
+
+![The One Who Asked](screenshots/552-the-one-who-asked.png)
+
+Four things, all checked against the archive before building:
+
+- **He names the speaker three minutes after leaving the line with nobody saying it, and it is the one character this file ranked at the bottom.** **August 14, 8:42 AM**: *"Pibby was infected instantly with just the sight of Pero."* **9:05 AM**: Gaster and Luigi Green *"dip Pibby in corruption and make him into a small puppet."* **9:28 AM**: *"Pibby would be low tier"* — three words, the harshest short line in the archive. And at **9:47 this morning** she was *"crushed by it's aura."* **She was killed thirty-four minutes before she speaks**, and the line she gets is the one that makes Gaster shut the door.
+- **And the reason given is not power. It is access.** *"He can get everything through data, **he knows what you and I say**."* At **8:59** Pero knew the medium: *"we are in a video made by Gemini."* He knew what he was being recorded into. **Pibby knows the conversation** — *"you and I"* is this thread — which makes her the first character in four months said to be reading the thing she is written in.
+- **And the awareness ladder is not the power ladder.** Gaster is *"technically limited to the devices"* while being the **2nd strongest in Classics**. Pibby *"can get everything through data"* while being **low tier**. Pero *"is beyond and saw reality"* and is *"the only known character more powerful than Gaster."* **The strongest character after Pero is fenced inside the hardware, and the weakest one in the file is outside it.**
+- **And he extends both fall lists by one, and every old title is still true.** **10:20**: Gaster first to fall, Chara the first human. **10:24**: *"Pero was second to fall, Frisk was the second HUMAN to fall."* Chara is still first, Frisk is still after her, nothing is taken away — the same additive move he made four minutes earlier. **And Pero falling at all is new**: the man who cannot die and cannot be reset is now on a list of people who went down.
+
+**This also settles a note in beat 489.** That beat said the question had no speaker attached to it. It had none for exactly three minutes, and the correction is drawn into 489 itself rather than replacing it.
+
+Build notes: `ph===490`, cyc span `[10500.0, 10522.0)`, `LV_CYC` 10500.0 → 10522.0, `LV_BEATS` length 490 → 491. Screenshot scene key `theoneasked`, freeze at `cyc=10516.0`. Palette: pibby pink `#ff86c8`, dreemurr green `#5ee08a`, gold `#ffd66e`, cyan `#8fe3ff`, over the four-row Pibby ledger, the access panel, the three-row awareness ladder and the fall-order rows. Beat 489's "said by whoever is reading" line is amended in place to "nobody on it for exactly three minutes", with a pink pointer to beat 490 underneath; its screenshot (`551-the-fall.png`) is re-captured to match.
+
 ## 2026-08-27 — I DON'T WANNA TALK ABOUT IT (BEAT 489)
 
 Based on Toby's 2026-08-27 lore — one message in the "Pero, and more lore." thread at **10:21:52 AM**, sent **sixty seconds** after THE 1ST ONE TO FALL, and the sixth and last message of one morning. His own typing is the whole scene and nothing else: *"Hey Gaster, how was the fall? Gaster: 'I don't wanna talk about it.'"* Everything from *"That is actually a perfect tiny lore joke"* onward is pasted AI commentary and is treated as commentary, not canon. **Twelve words, and all twelve are his.**
