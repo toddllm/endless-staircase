@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-27 — NO TRANSLATOR (BEAT 501)
+
+Based on Toby's 2026-08-27 lore at **3:34:46 PM**, twenty-two minutes and fifty-seven seconds after FINALLY, YOU LEARNED YOUR NAME. His own typing is the single opening block: *"Pero knows 3V3RyTH1Ng. Pero and Gaster are most powerful, the game is Japanese, no translator, they don't know or speak english, they are Japanese. The game is comically set and is anime."* His lowercase *"english"* is kept as written. Everything from *"Got it — this locks the current Classics setting into a very specific style"* onward is pasted AI commentary and is not drawn.
+
+![No Translator](screenshots/563-notranslator.png)
+
+**BEAT 501 — NO TRANSLATOR (3:34:46 PM).**
+
+- **"Translator" is a word this archive has never used, and it lands on a file written entirely in English.** Four months, roughly twelve hundred emails, zero occurrences. And every quoted line of dialogue here is English: Gaster's *"I understand."* at **8:59 this morning**, Pero's *"I can do more, far more."* on **August 25**, Gray's *"All must be one."* The rule says the cast does not know or speak the language all of it is written in, and there is **no translator inside the story** doing the work. **The archive is the translation, and the archive is not in the game.**
+- **Language had been written down for exactly two beings in four months, and both of them had English.** **Mirda**, the prime cosmic entity — *"English and Japanese only."* **ToddLLM** — *"He only speaks English and Japanese, but mostly Japanese."* Today's rule takes English off everyone. **The only two whose languages were ever recorded each lose half of what they had.**
+- **The Japanese setting has been building for twenty-six hours, and this is the first step that removes something.** **August 26, 1:10 PM** — *"turns everything into a Japanese setting with sorcer and wizard schools/accatemies"*, the world. **1:34 PM** — *"Pero taught the sorcers"*, the school. **August 27, 8:59 AM** — *"Japanese Domain"*, a move. **3:34 PM** — *"no translator."* **Setting, school, move, and then a subtraction.**
+- **He writes "Pero knows 3V3RyTH1Ng" and "they don't know or speak english" two sentences apart, about the same cast.** It arrives **twenty-three minutes** after the beat where Pero learned a name, in English. And the glitch alphabet spelling it has meant **force** every other time it has appeared — *"Br3aKs YoUr GaMe CoNN3cTi0n"* at **11:41 AM**, *"StR0ng3r"* at **9:47 AM**, Gray's *"!I w0n't lEaV3!"* **The font that meant what something does to you now means what something has.**
+- **Two genre lists, six days apart, share exactly one word.** **August 21, 8:18 AM:** *"a futuristic, comical, grafic-novel, sci fi, box animation omniversal."* **August 27, 3:34 PM:** *"Japanese … anime … comically set."* **Five of the six are gone. Comical is the one that stays** — through Ability 10, 2555 counted souls, and a man on a metal cross.
+
 ## 2026-08-27 — THE CONTENT LAYER and FINALLY, YOU LEARNED YOUR NAME (BEATS 499-500)
 
 Based on Toby's 2026-08-27 lore at **3:10:32 PM** and **3:11:49 PM**, one minute and seventeen seconds apart. In both, his own typing is the opening block; everything from *"Got it — ChelseaPlays now has multiple channel/game branches"* and *"Yep — in that sentence"* onward is pasted AI commentary.
