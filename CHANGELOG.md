@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-27 — I DON'T WANNA TALK ABOUT IT (BEAT 489)
+
+Based on Toby's 2026-08-27 lore — one message in the "Pero, and more lore." thread at **10:21:52 AM**, sent **sixty seconds** after THE 1ST ONE TO FALL, and the sixth and last message of one morning. His own typing is the whole scene and nothing else: *"Hey Gaster, how was the fall? Gaster: 'I don't wanna talk about it.'"* Everything from *"That is actually a perfect tiny lore joke"* onward is pasted AI commentary and is treated as commentary, not canon. **Twelve words, and all twelve are his.**
+
+![I Don't Wanna Talk About It](screenshots/551-the-fall.png)
+
+Four things, all checked against the archive before building:
+
+- **It is the first joke in four months of this file.** The archive is fights, rankings, percentages, absorptions, games given away and worlds rebuilt. Nothing in it has ever been funny on purpose. This is, and it is built the ordinary way a joke is built: a straight question and a flat answer.
+- **And he points it at the one thing he made enormous sixty seconds earlier.** At **10:20:52** the fall is the event that comes before every human in Undertale, and Gaster is the one who did it first. At **10:21:52** it is something you ask a man about at a party. **Sixty seconds is the shortest gap between two messages anywhere in this archive**, and he spends it deflating his own biggest claim of the morning.
+- **And it is the first time Gaster has ever refused to say something.** He has explained his experiments, his laws, his books and his plans all year — *"Maybe there was a villian after all. 😏"* on **July 29**, *"How am I suppost to beat you if I need to beat you to be able to beat you?!"* on **August 26**, *"You gonna attack?"* three hours later. Every one of them is a declaration. *"I don't wanna talk about it"* is a door closing, and **the one subject he will not open is the thing that put him down there.**
+- **And nobody in Classics is asking.** *"Hey Gaster, how was the fall?"* has **no speaker attached to it** — every other line in four months is said by somebody with a name. And the answer is formatted as a script, *"Gaster:"*, which is not how any other line in this archive is written. The question belongs to whoever is reading it.
+
+And it makes the fall bigger rather than smaller. The man who manipulates code, who beats time, space and erasure, has one subject he will not open.
+
+Build notes: `ph===489`, cyc span `[10478.0, 10500.0)`, `LV_CYC` 10478.0 → 10500.0, `LV_BEATS` length 489 → 490. Screenshot scene key `thefall`, freeze at `cyc=10494.0`. Palette: dry white, gold `#ffd66e`, cyan `#8fe3ff`, dreemurr green `#5ee08a`. The scene is drawn as itself in a framed panel at the top, because twelve words do not need a ledger; the four-row line ledger sits underneath it.
+
+## 2026-08-27 — THE 1ST ONE TO FALL (BEAT 488)
+
+Based on Toby's 2026-08-27 lore — one message in the "Pero, and more lore." thread at **10:20:52 AM**, sent **thirty-three minutes and twenty-six seconds** after StR0ng3r, and the fifth message of one morning. His own typing is the single opening block, from *"Asriel is a powerful flower Asgora, because he becomes Hyperdeath"* through *"Gaster is the 1st one to fall, and Chara was the first HUMAN to fall."* Everything from *"Got it — this sets the Classics Undertale hierarchy clearly"* onward is pasted AI commentary and is treated as commentary, not canon. **Asgora** is his spelling and is kept.
+
+![The 1st One To Fall](screenshots/550-first-to-fall.png)
+
+Four things, all checked against the archive before building:
+
+- **He ranks the family, and the man at the top of it adopted both of the others.** On **August 14** this file wrote Gaster down as having *"adopted Chara"* and *"adopted Flowey / Asriel"*, and as the **father of Asgore and Toriel**, who are Asriel's parents — which makes him Asriel's grandfather as well. Today: *"New Asriel can manipulate time and space, Gaster can manipulate code. **Gaster wins.**"* and *"**Gaster beats Chara.**"* **It is the first bracket in this archive where every entrant is related to the winner**, and the winner took in the other two himself.
+- **And the man who was carried as a sword is put above the person carrying him.** **August 17, 5:58 PM**: Asriel Dreemurr ranked **7th in the whole game**, the God of Hyperdeath *"carried as Chara's magic sword"* — equipment. **August 25, 11:48 AM**: New Gaster *"absorbs all the souls and **New Chara** and all the 'New' characters"* — she is already inside him. **Today**: *"New Chara can erase everything, but Asriel can manipulate time and break the barrier, **Asriel would happen to win**."* Ten days from being somebody's weapon to beating them.
+- **And the counter he uses is not damage. It is cancelling somebody's arrival.** *"**Gaster can make Chara never ever fall.**"* This file has erased people, deleted them, boxed them, absorbed them, and sent them to the deepest layer of the game. **Nobody has ever been beaten by having the event that started their story switched off.**
+- **And he takes the oldest title in Undertale and leaves it standing.** *"Gaster is the 1st one to fall, and **Chara was the first HUMAN to fall**."* He does not take the title off her. He adds one word to it and puts somebody in front of it — and the word he adds is **human**, which is the word Pero uses as an insult and choked on twice yesterday.
+
+And every power in this ranking is something you do to the world: time, space, the barrier, erasing everything. Gaster's is something you do to the file the world is written in. **That is the whole reason given for why he wins.**
+
+Build notes: `ph===488`, cyc span `[10456.0, 10478.0)`, `LV_CYC` 10456.0 → 10478.0, `LV_BEATS` length 488 → 489. Screenshot scene key `firsttofall`, freeze at `cyc=10472.0`. Palette: dreemurr green `#5ee08a`, soul red `#ff4d5e`, gold `#ffd66e`, cyan `#8fe3ff`, over the four-row family ledger, the three-row sword ledger, the never-fall panel and the two-row title rows.
+
 ## 2026-08-27 — StR0ng3r (BEAT 487)
 
 Based on Toby's 2026-08-27 lore — one message in the "Pero, and more lore." thread at **9:47:26 AM**, sent **twenty-eight minutes and nineteen seconds** after THE RINGMASTER OUTFIT, and the fourth message of one morning. His own typing is the single opening block, from *"What actually it is: Oren.ps slays Simon.ps and absorbs the souls"* through *"Pero and Gaster both go on the Classics Blossom Cherry tainMount again for the &^&#&#&-th time."* Everything from *"That correction makes the whole arc much clearer"* onward is pasted AI commentary and is treated as commentary, not canon. His spellings are kept as written: **hollogram**, **suprised**, **probubly**.
