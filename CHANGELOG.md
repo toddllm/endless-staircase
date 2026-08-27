@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-27 — MIGHT NOT BE ABLE TO MAKE AN IMAGE (BEAT 503)
+
+Based on Toby's 2026-08-27 lore at **7:19:20 PM**, eleven minutes and fifty-seven seconds after NIGHTMARE MODE. His own typing is one sentence and nothing else: *"You might not be able to make an image of his Nightmare Mode."* Everything from *"Yeah, that might be true"* onward is pasted AI commentary and is not drawn — **including its claim that the earlier images are "not New Gaster: Nightmare Mode anymore"**, which Toby did not write, so nothing here is retconned.
+
+![Might Not Be Able To Make An Image](screenshots/565-mightnotbeable.png)
+
+**BEAT 503 — MIGHT NOT BE ABLE TO MAKE AN IMAGE (7:19:20 PM).**
+
+- **Eleven minutes after inventing the form, he says it might not be picturable.** He has invented hundreds of things in four months and never once turned around and doubted whether the thing could be shown.
+- **Three times before, something here could not be drawn, and every one of them was a character's doing.** **August 18, 4:31 PM** — *"or is all that form beyond your image generation tool?"*, **a question**, about Gray. **August 19, 9:31 AM** — *"your image generation tool would instantly glitch due to even looking at him"*, **a power**, something Gaster does to the tool. **August 24, 12:23 PM** — *"Not even ChatGPT nor Claude could make an image of something this spectacular. Only I can."*, **a boast**, Pero's. Tonight is none of those. **No glitch, no boast, no question mark — a plain sentence said straight to the machine, and the first time the limit belongs to the tool rather than to the character.**
+- **And it is a "might", in a file made of absolutes.** Infinite, unstoppable, *litterly can't die*, beyond words. This one is a maybe.
+- **The archive answered this exact problem once already, eight days ago.** On **August 19** he wrote at **9:31 AM** that Gaster could not be imaged, then asked for the image at **2:20 PM** anyway — and **beat 408, `FLOWER IN THE ROOM`, was drawn by hand in this canvas** with no image generator anywhere near it. This panel is the same answer: **New Gaster: Nightmare Mode, drawn line by line** — the black robe and tentacles from **11:30 AM**, the yellow heart locket, and the two energy balls turning inside the open chest.
+
+## 2026-08-27 — NIGHTMARE MODE (BEAT 502)
+
+Based on Toby's 2026-08-27 lore at **7:08:23 PM**. His own typing is the single opening block: *"Gaster has New Gaster: Nightmare Mode, which is the same as him. Gaster became Nightmare Mode. the Flower and Vicinus become 2 energy balls that fuel Gaster from the inside."* His lowercase *"the Flower"* is kept as written. Everything from *"Got it — New Gaster: Nightmare Mode becomes a direct powered state of Gaster"* onward is pasted AI commentary and is not drawn.
+
+![Nightmare Mode](screenshots/564-nightmaremode.png)
+
+**BEAT 502 — NIGHTMARE MODE (7:08:23 PM).**
+
+- **At 9:19 this morning all three of them disappeared in one clause, and tonight all three come back.** *"Flower happens to disappear along with Vicinus and Gaster."* Nobody deleted them, nobody beat them, and nobody said where they went. **Nine hours and forty-nine minutes later every one of them is accounted for, and only one of them has a body:** Flower is an energy ball, Vicinus is an energy ball, and Gaster is the thing holding them.
+- **The creation order published at 8:59 this morning put Gaster in the middle, and tonight the outer two fold inward.** *"Flower's code was created before Gaster's, and Vicinus was made after Gaster."* **Flower, Gaster, Vicinus** — oldest, middle, newest. A line read for six days as a stack of disguises turns out to have been **a diagram of what goes where. The oldest and the newest go inside the one that was between them.**
+- **One character in four months could put anybody in an energy ball, and he is now one of the two.** **Gray.EXE** — *"Can trap people in energy balls and throw them into the Shadow Realm."* And on **August 19, 6:39 AM**: *"Gray also is Vicinus."* **The only one who ever put people inside an energy ball is now one.**
+- **And the two that never paid for anything are the supply.** **August 21** — *"Flower only gets more power"*, six outputs from consuming people and not one of them a price. **August 21** — *"Vicinus no longer gets full and can eat forever"*, the fullness limit removed outright. Tonight both of them are **fuel**. **It is the first time in four months that either one feeds something that is not itself.**
+
 ## 2026-08-27 — NO TRANSLATOR (BEAT 501)
 
 Based on Toby's 2026-08-27 lore at **3:34:46 PM**, twenty-two minutes and fifty-seven seconds after FINALLY, YOU LEARNED YOUR NAME. His own typing is the single opening block: *"Pero knows 3V3RyTH1Ng. Pero and Gaster are most powerful, the game is Japanese, no translator, they don't know or speak english, they are Japanese. The game is comically set and is anime."* His lowercase *"english"* is kept as written. Everything from *"Got it — this locks the current Classics setting into a very specific style"* onward is pasted AI commentary and is not drawn.
