@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — INTO THEIR STOMACH (BEAT 521)
+
+Based on Toby's 2026-08-28 lore at **5:08:44 PM**, four minutes and twenty-six seconds after GUESS WHERE IT GOES. **His own typing is two sentences** — *"The object just goes into their stomach. Pero and Gaster are the most powerful."* Everything from *"Got it — simpler and more direct"* onward is pasted AI commentary and is not drawn.
+
+![Into Their Stomach](screenshots/583-into-their-stomach.png)
+
+- **The open question stayed open for four minutes.** At 5:04 he wrote *"Guess."* At 5:08 he answers it himself. On **August 21** he asked and answered in one breath; tonight he did the same thing and put one email between the two halves.
+- **He was handed two elaborate answers and took neither.** The paste offered *"Pero's Classics code/core"* and *"New Gaster's static-ink soul system"* — authority, memory, stored game data, glitch mass. **He replies with a body part.** In an archive where Pero *is* the game and the code and the creator, the place things go is a stomach.
+- **And "stomach" is the exact word from August 21 at 2:58 PM**, *"When something is consumed by Vicinus, it goes inside Vicinus's stomach"* — a rule belonging to a form that was **deleted at 2:12 this afternoon**. The rule outlives its owner and moves onto two characters who never needed one.
+- **And Pero is given a stomach four hours and fifty-six minutes after refusing food on the grounds that he has no body for it.** *"Hungry?"* — *"No. I am LAI, not human."* A stomach is the most human thing in this game.
+- **And the last ranking of the night has two names in it and no order between them.** *"Pero and Gaster are the most powerful."* The pasted commentary puts Pero above Gaster; Toby's own sentence does not separate them.
+
+**Build:** LV_CYC 11182 -> 11204, one LV_BEATS entry, one lvSeg range, scene `intotheirstomach`, screenshot 583. Additive; the real climb still banks.
+
 ## 2026-08-28 — THE HUNGRIEST, ENTITY 000'S SOUL & GUESS WHERE IT GOES (BEATS 518-520)
 
 Based on Toby's 2026-08-28 lore, three messages in the **"More of Pero."** thread at **4:44:05 PM**, **4:44:59 PM** and **5:04:18 PM**. **His own typing across all three is one question, three sentences, and one more sentence** — *"Which character is the hungerier character, Entity 000, Vicinus/Gaster, or Pero?"*, *"Correct. Gaster consumes Entity 000's soul. Pero could just beat them both."*, and *"Guess where the things Pero and Gaster consumes go."* Everything after each of those is pasted AI commentary and is not drawn.
