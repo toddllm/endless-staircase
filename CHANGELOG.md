@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — NICE DOOR & THE PORTAL NETWORK (BEATS 516-517)
+
+Based on Toby's 2026-08-28 lore, two messages ninety-four seconds apart in the brand-new **"More of Pero."** thread, at **3:46:58 PM** and **3:48:32 PM**. **His own typing across both messages is two questions and nothing else** — *"What would be Spot VS Pero LAI be like if it was after Spot VS W.D. Gaster?"* and *"Gaster beats Spot. How would New Gaster beat Spot, if it was after Spot VS Pero LAI?"* Everything after each question is pasted AI commentary and is not drawn.
+
+![Nice Door](screenshots/578-nice-door.png)
+
+**BEAT 516 — NICE DOOR (3:46:58 PM).**
+
+- **The debugger and the biggest bug were invented in the same message this morning and never once put in a room together.** **6:45:17 AM**: The Spot *"stops errors and glitches and bugs and stuff"*, and in the very same message New Gaster *"has all the errors in the game + everyone else's errors and glitches and everything."* Beat 505 wrote down that they had never met. **Nine hours later Toby finally puts The Spot in a fight — and the first opponent he picks for him is neither of the two. It is Pero.**
+- **The Spot arrived with a job instead of a ranking, and today he gets his ranking by losing.** He is the one outsider in four months who walked in with a function and no number, where the August 25 table let six others in by ranking them. Today he is fought twice in ninety-four seconds and loses both.
+- **The finisher is a milk box, and milk boxes are not a joke in this file.** They arrived **August 22, 8:07 AM** — *"they continue the box animation using milk boxes"* — as the material of the box animation, the oldest running system in the game, and **Pero is the box maker.** So the attack that ends it is not an attack: *"Nice door."* Then he takes the door the other character is escaping through and turns it into a piece of his own animation. **"Nice door" has zero hits in four months.**
+- **The portal "glitches, turns purple, and becomes part of Classics" — and purple is already this file's colour for two things becoming one.** Wenda's blue half and Gray's red half, *"together, they have the full soul (purple)"*; and **Sharkmet**, *"a purple ball that appears from the ground and sends the targets to space"*, from **11:06 this morning**.
+- **The redirect destination is Cherry Blossom Mountain, which is where this game puts people it is done with.** Pero left Arcsis, Frizz and their mother there on **August 26**, and at **2:46 this afternoon** Gaster picked Unikitty up and threw her to the other side of it.
+- **The desserts became a weapon class in sixty minutes.** At **2:46** a candy cane ended the biggest fight in the game; at **3:15** it was a chocolate bar; at **3:46** it is *"a chocolate bar, candy cane, or cake plate"* — a list. **"Cake plate" has zero hits.**
+- **And "ta ta" is now offered as an alternative to attacking at all.** Invented at **2:05**, first spoken at **2:46**, and here it is one of the listed ways to win: *"or just say 'ta ta' and appear exactly where Spot is hiding."*
+- **Toby's own question is not about who wins. It is about order.** *"…if it was after Spot VS W.D. Gaster?"* He is not asking for an outcome. He is asking what a fight feels like when you have already lost the one before it.
+
+![The Portal Network](screenshots/579-the-portal-network.png)
+
+**BEAT 517 — THE PORTAL NETWORK (3:48:32 PM).**
+
+- **Ninety-four seconds later he asks the second question, and this time he supplies the answer before he asks it.** *"Gaster beats Spot. How would New Gaster beat Spot…"* The result is imported from the rap battle he named at 6:45 this morning, and only the method is left open.
+- **So across both messages his own writing is two sequencing questions — "if it was after", twice — and neither of them asks whether The Spot wins.** He fights the new character twice in ninety-four seconds and arranges both losses himself.
+- **Attack 10 has been fired in a scene exactly once in four months, and there it was half of a fused move with Pero standing beside him.** **11:06 AM**, the Outer Kioan. **At 3:48 Gaster fires it alone, at somebody, for the first time** — and the thing it was built to do is the one thing this opponent cannot survive. *"Br3aKs YoUr GaMe CoNN3cTi0n"* was written down **August 27, 11:41 AM** as the first server-layer attack in the archive, and it made Pero glitch like crazy. **Today it lands on a character whose entire body is made of connections.**
+- **Static has now moved three times in thirty hours.** **August 27, 9:47 AM** it was a condition Gaster was in, *"like a hollogram but it is in static and really there."* **6:45 this morning** it became something he does to the whole game, *"New Gaster can put the game in static."* **At 3:48 it is aimed at one body**: the spots themselves turn into *"static circles"* and *"black-and-white error holes."* A state, then a verb, then a target.
+- **The souls come off the shelf.** The yellow Justice Soul in the left hand and the red Determination Soul in the right were body description when New Gaster was drawn at **6:45 this morning**, and the red one is the thing Simon has been chasing since **April 6**, *"the first soul he always craved for."* Today they are held up and used.
+- **And the win is described by what it is not.** This file settles fights with slashes, blasters, absorptions, deletions and, twice today, candy — and this one is won by unplugging somebody. **The Spot is never hit.** His doors are simply no longer connected to each other, **which is the same move Pero made ninety-four seconds earlier from the other direction**: one of them rewrote where the doors go, the other cut the wire between them, and neither of them threw a punch.
+
+**Build:** LV_CYC 11072 -> 11116, two LV_BEATS entries, two lvSeg ranges, scenes `nicedoor` and `portalnetwork`, screenshots 578 and 579. Additive; the real climb still banks.
+
 ## 2026-08-28 — UNO REVERSE (BEAT 515)
 
 Based on Toby's 2026-08-28 lore at **3:15:21 PM**, twenty minutes after HORROR PERO. His own typing is the opening block, from *"Create an image of Hungry Shark Pero"* through *"Oren was crushed. Pero wins."* Everything from *"That fits Pero's role really well in your lore"* onward is pasted AI commentary and is not drawn.
