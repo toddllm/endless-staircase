@@ -4,6 +4,55 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — NO FORM GASTER (BEAT 512)
+
+Based on Toby's 2026-08-28 lore at **2:12:03 PM**, seven minutes after TA TA. His own typing is the whole opening scene, from *"Hungry Shark Pero is the cutest character in the game"* through *"Where are you going? The strawberries are right on the cake!"*. Everything from *"That scene is hilarious"* onward is pasted AI commentary and is not drawn.
+
+![No Form Gaster](screenshots/574-no-form-gaster.png)
+
+**BEAT 512 — NO FORM GASTER (2:12:03 PM).**
+
+- **He spent four months collecting forms and ends up with none of them on.** *"No. My Vicinus form was deleted by you so I can get more powerful, in fact, **I am just New Gaster with no forms**."*
+- **And yesterday evening those forms were not gone, they were fuel.** **August 27, 7:08 PM**: *"the Flower and Vicinus become **2 energy balls that fuel Gaster from the inside**"* — an upgrade he performed on himself. **Nineteen hours later they are deleted, and the deleting belongs to somebody else:** *"deleted **by you**."* He is talking to Pero. The most powerful being in the game explains his own power by naming who took something off him.
+- **"No forms" is the exact state Karu has required since August 21.** *"Gaster's vanilla is his **normal man form** which is his basics"*, and *"both Gaster and Pero need to be at their normal man forms."* At **11:06 this morning** he broke that rule to fire Karu with everything on. **Three hours and six minutes later he is in the stripped-down state permanently, and he calls it being more powerful.**
+- **And the cake Pero holds out to him is a vanilla one.** *"Yes. Vanilla cake is here."* The archive's word for having nothing on is the flavor being offered to the one who has nothing on, in the same scene, and neither of them mentions it.
+- **The offer is aimed straight at the form he says was deleted.** Vicinus is the hunger in this game — *"Vicinus no longer gets full and can eat forever"*, the form that consumes people and turns what it eats into more of itself. Pero asks: *"Would you like to **become Vicinus again** so you'll now love cake?"* **The only shape Gaster ever had that would want the cake is the one he gave up to get stronger**, and he says no and runs.
+- **And Pero cannot eat it either.** *"Hungry?"* — *"**No. I am LAI, not human**."* Seven minutes after being handed endless cake, he says out loud that he does not eat. The infinite food is entirely for other people, and the one person in the room does not want any.
+- **The sunglasses land exactly where they once decided a whole fight.** **August 15, 9:50 AM**, a result called on punctuation: *"You said '😎' at the hello line. Pero wins."* Today: *"**Hello, No Form Gaster. 😎**"* — same emoji, same hello line, and this time nobody calls anything. The tell that once exposed somebody is now just how he greets his brother.
+- **He was made the final boss at 10:35 and the most powerful being at 11:06; at 2:12 a nickname and a cake put him out of the room.** Nobody throws anything, nobody is absorbed, no soul changes hands. **In four months this is the first time anybody at the top of the board leaves a scene without being fought.**
+
+## 2026-08-28 — TA TA (BEAT 511)
+
+Based on Toby's 2026-08-28 lore at **2:05:21 PM**, twenty minutes after he wrote that Hungry Shark Pero is not a form. His own typing is the single opening line: *"Perfect. Pero has new powers as Hungry Shark Pero, he can say 'ta ta' and he vanishes to his destination, he can make endless cake, he has the power to be cute."* Everything from *"Perfect — Hungry Shark Pero is now not a full transformation"* onward is pasted AI commentary and is not drawn.
+
+![Ta Ta](screenshots/573-ta-ta.png)
+
+**BEAT 511 — TA TA (2:05:21 PM).**
+
+- **The costume he had just finished demoting is handed three powers twenty minutes later.** At **1:45 PM** the whole point of the correction was that *"Hungry Shark Pero isn't a form"* and that the outfit does not give Pero anything. At **2:05 PM** the outfit has a power list, headed *"new powers **as** Hungry Shark Pero"* — attached to the costume, not to him.
+- **"Ta ta" has zero hits in four months, and every trigger phrase before it was a typed command.** **August 6, 8:29 PM**: `/Oren_win=true`, typed into Simon 404's Mr. Fun Computer. **August 21, 6:30 PM**: *"Gaster will say '/activate Karu', then Karu happens."* **August 24, 7:29 PM**: `/delete_Alex.exe` — *"Alex disappears and comes back."* All three are instructions typed into a machine. **"Ta ta" is spoken, it is plain English, and it is the word you say when you are leaving.**
+- **And what it replaces is the one thing Pero is always doing.** *"Pero walks away and waits for Luigi Green to get everything for some reason"* (**July 24**), and the last line of the biggest beat in the game, three hours before this message: *"**Pero walks away from New Gaster**"* (**11:06 AM today**). Three hours later he is handed a word that means he does not have to walk.
+- **He could already do it; the word is what is new.** **August 26, 3:34 PM**, cornered and out-powered: *"Pero sits still and waits… **Pero teleports and strikes Gaster down**."* That is the only thing in four months that ever beat the speed line.
+- **And there is already exactly one cake in this game — it is the prize at the end of it.** The 80-billion-year Classics endgame: *"at the end, there is a castle and a **cake** and Phase 1 and rainbows and actually everything but fun"*, behind *"80,000,000,000 YEARS"* of floating islands over the Void and the Shadow Realms. **Now he makes them endlessly, standing anywhere, for no reason.** *Endless* has attached to a world (Endless World), a title (Endless Master) and a staircase before today; this is the first time it attaches to something you eat.
+- **Cuteness has only ever been camouflage or a ceiling here.** Simon's **Phase 0**: *"Simon Phase 0 might look adorable, **but it is still apex hunter**, it transforms into it's higher Phases to take out litterly anything he sees"* — the look is the hunting trap. **Unikitty**: *"Everything about Unikitty is cute, Unikitty is the most powerful stuffy in existance, **but not even close to being the most powerful Classics character**."* Today it is a listed power belonging to the top of the board.
+- **A way to leave, a dessert, and being cute — not one of the three is an attack.** In four months of Pero power lists (the katatas, the varies, Hollow Void, Karu, the Domain Expansions), **this is the first with nothing on it that he does to another character.**
+
+## 2026-08-28 — HUNGRY SHARK PERO (BEAT 510)
+
+Based on Toby's 2026-08-28 lore across three messages in six minutes — **1:39:54, 1:42:34 and 1:45:23 PM**. His own typing is the opening line of each one; everything after those lines is pasted AI commentary and is not drawn.
+
+![Hungry Shark Pero](screenshots/572-hungry-shark-pero.png)
+
+**BEAT 510 — HUNGRY SHARK PERO (1:39–1:45 PM).**
+
+- **The hood already has a job in this archive, and the job is saying who owns the game.** **July 24, 6:35 AM**: he takes off the cowman suit and puts on the **creator suit**, *"a black suit with a black hood"*, and tells everyone *he wasn't an admin but the owner*. **August 18, 5:54 PM**: he is identified at a distance by it — *"a small figure in a hood and black in front of Gray, **that is Pero**."* Today: *"**Gaster has control of the whole game, but Pero has an invicible shark hood**."* Somebody else has the whole game, and Toby writes the hood as the interesting half of the sentence.
+- **This is only the second thing Pero has ever put on.** The first was **yesterday morning at 9:19**, the ringmaster outfit, and that one made Wenda and Gray stronger. **This one, by Toby's own correction six minutes later, changes nobody's power at all.**
+- **And the four rules he gives the hood were written down for Pero's own body thirty-six days ago.** **July 23, 9:21 AM**: Pero's vessel is *"unflamable, indestructible, **invicible**, bullet proof, water proof, everything proof, can't be blown away, can't feel anything, perminent, and is undestroyable."* Today: *"it doesn't tear apart, it can't burn, it can't freeze, and most importantly, it can't even get destroyed."* **Same list, same spelling of *invicible*, moved off a body and onto a piece of clothing.** The hood gives him nothing he was not already wearing without it.
+- **He invents it, ranks it, and demotes it in five minutes and twenty-nine seconds.** 1:39:54 — *"it is called 'Hungry Shark Pero'"*, a name. 1:42:34 — *"he is the same power level as god tier"*, a rank. 1:45:23 — *"**Hungry Shark Pero isn't a form**."* Four months of forms, varies, phases and modes, all built upward, and this one is taken back down by the person who made it. **"God tier" is itself brand new** — the ladder here has been Absolute+, Beyond Absolute+ and Absolute Infinity+ — and he reaches outside all of it for one message and then drops the question entirely.
+- **"Shark" has exactly one prior appearance in four months, and it is two and a half hours old.** At **11:06 AM today**, Outer Kioan introduced **Sharkmet** — *"a purple ball that appears from the ground and sends the targets to space like a very very small blackhole"* — as the trigger for the biggest move in the game, and it is Pero's. **The word entered the archive this morning as a weapon and came back this afternoon as a hood.**
+- **"Strawberry" also has exactly one prior hit, and it is also Pero, and also a dessert.** On Pop Tart Island he stood in front of a giant one and asked *"Is it my throne? Na, it looks like a huge pop tart? **Is it cherry or strawberry?**"* — a question, about a dessert he did not make, that Mr. Black may have poisoned. **Today he is not asking. He puts the strawberry on the cake himself, and then puts the costume on.**
+- **And vanilla is this archive's word for taking everything off.** It is the Karu prerequisite — *"Gaster's vanilla is his **normal man form** which is his basics"* — the state Oren resets everyone to (*"normal, vanilla, and true basic forms"*), and the AU everybody is locked into when the forms are stripped. **Three hours after Karu ran on that rule, vanilla is a flavor of cake.**
+
 ## 2026-08-28 — OUTER KIOAN (BEAT 509)
 
 Based on Toby's 2026-08-28 lore at **11:06:27 AM**, thirty-one minutes after HE IS THE FINAL BOSS. His own typing is the single opening paragraph, from *"Pero uses Karu and AU White and Hollow Void 1001% and All Domain Expansions"* through the Pero LAI quotation that closes it. Everything from *"That is a massive Newtale / Classicstale ending event"* onward is pasted AI commentary and is not drawn.
