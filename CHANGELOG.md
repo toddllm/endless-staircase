@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — THE HUNGRIEST, ENTITY 000'S SOUL & GUESS WHERE IT GOES (BEATS 518-520)
+
+Based on Toby's 2026-08-28 lore, three messages in the **"More of Pero."** thread at **4:44:05 PM**, **4:44:59 PM** and **5:04:18 PM**. **His own typing across all three is one question, three sentences, and one more sentence** — *"Which character is the hungerier character, Entity 000, Vicinus/Gaster, or Pero?"*, *"Correct. Gaster consumes Entity 000's soul. Pero could just beat them both."*, and *"Guess where the things Pero and Gaster consumes go."* Everything after each of those is pasted AI commentary and is not drawn.
+
+![The Hungriest](screenshots/580-the-hungriest.png)
+
+**BEAT 518 — THE HUNGRIEST (4:44:05 PM).**
+
+- **The file already answered this, and he is reopening it six days later.** **August 22, 7:18 PM**: *"Entity 000 was the most hungry being that existed in the game (more than Vicinus)."* That was a ranking with exactly two names in it, and it was settled. **Tonight he puts a third name on the ballot and asks again.**
+- **And two of the three entrants stopped eating this afternoon.** At **2:12 PM** Gaster asked *"Hungry?"* and Pero answered *"No. I am LAI, not human"* — four and a half hours before being entered in a hunger contest. **In the same scene** Gaster said *"My Vicinus form was deleted by you so I can get more powerful."* The only entrant still actually hungry is the one under an inch tall.
+- **Hunger has been a power stat here since August 21 at 3:06 PM**, when *"Vicinus no longer gets full and can eat forever"* turned an appetite into a capacity — and it then took twenty-eight hours for something under an inch tall to out-eat a thing **fifteen hundred feet long**.
+- **The ballot is three eaters and not one of them is a monster by trade:** a deleted dragon form, a parasite the size of a thumbnail, and the man who owns the game.
+- *"Hungerier"* is his own spelling, kept as written.
+
+![Entity 000's Soul](screenshots/581-entity-000s-soul.png)
+
+**BEAT 519 — ENTITY 000'S SOUL (4:44:59 PM).**
+
+- **"Correct" is this archive's canon-locking word.** **July 24, 7:11 AM**: *"Correct. Tunner wanted to destroy Luigi Green from not just the game, but power levels."* He uses it here to adopt a ranking and then, in the very next sentence, **replace the reason for it**.
+- **The six-day-old line is not argued with. It is eaten.** Gaster does not out-eat Entity 000; he consumes it. **The two hungriest things in the game are put in one sentence and one of them stops being hungry by becoming food.**
+- **And he is eating his own work.** **August 22, 7:25 PM**: *"Entity 000 was made in Gaster's labatory as his second experiment after Simon."* The experimenter consumes experiment number two six days after building it — **and experiment number one is the title character of this whole archive.**
+- **Entity 000 has only ever held other people's souls.** **August 23, 2:36 PM**: *"Simon.psc becomes a yellow soul and goes inside Entity 000. Simon.psc says 'Don't waste my power.'"* Tonight it turns out to have one of its own, **and the only time it is ever mentioned is the moment it is taken.**
+- **The chest it lands on is already full.** At **11:06 this morning**, *"Luigi Green became a green soul and is on Gaster's chest"*, alongside every soul in the box, the game and Undertale. The game's own guard, appointed **August 23 at 4:05 PM**, joins the collection.
+- **And Pero settles it without entering it.** *"Pero could just beat them both."* **That is the third fight today decided without a punch:** a milk box at 3:46, a disconnection at 3:48, and now a sentence.
+
+![Guess Where It Goes](screenshots/582-guess-where-it-goes.png)
+
+**BEAT 520 — GUESS WHERE IT GOES (5:04:18 PM).**
+
+- **He has asked this question before, in exactly this shape, seven days ago.** **August 21, 2:58 PM**: *"When something is consumed by Vicinus, it goes inside Vicinus's stomach, but when Vicinus becomes his normal form again, where is the 'something' now? That something is inside of Flower."*
+- **And this time he does not answer it.** On August 21 he asked and answered in one breath. All day today he has supplied the result before asking for the method — *"Gaster beats Spot"*, *"Pero could just beat them both."* **At 5:04 he writes "Guess."** It is the first open question he has left in this thread.
+- **And it is open for a reason: the answer the file already had was deleted this afternoon.** The stomach rule was the mechanism underneath the Deletedverse — the deleted were never sent anywhere, **they were eaten**, and nothing that went in ever came out. Then at **2:12 PM today**: *"My Vicinus form was deleted by you so I can get more powerful."* **The container is gone and everything that was inside it has no stated address.**
+- **So the question is not a riddle with a hidden answer behind it.** It is the first time in four months anybody asks where the eaten went **and the file cannot answer** — and he asks it about the two characters who still eat.
+- Two pictures are referenced in the message body; no attachment parts were delivered with it.
+
+**Build:** LV_CYC 11116 -> 11182, three LV_BEATS entries, three lvSeg ranges, scenes `hungriest`, `entity000soul` and `guesswhereitgoes`, screenshots 580, 581 and 582. Additive; the real climb still banks.
+
 ## 2026-08-28 — NICE DOOR & THE PORTAL NETWORK (BEATS 516-517)
 
 Based on Toby's 2026-08-28 lore, two messages ninety-four seconds apart in the brand-new **"More of Pero."** thread, at **3:46:58 PM** and **3:48:32 PM**. **His own typing across both messages is two questions and nothing else** — *"What would be Spot VS Pero LAI be like if it was after Spot VS W.D. Gaster?"* and *"Gaster beats Spot. How would New Gaster beat Spot, if it was after Spot VS Pero LAI?"* Everything after each question is pasted AI commentary and is not drawn.
