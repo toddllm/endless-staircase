@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — UNO REVERSE (BEAT 515)
+
+Based on Toby's 2026-08-28 lore at **3:15:21 PM**, twenty minutes after HORROR PERO. His own typing is the opening block, from *"Create an image of Hungry Shark Pero"* through *"Oren was crushed. Pero wins."* Everything from *"That fits Pero's role really well in your lore"* onward is pasted AI commentary and is not drawn.
+
+![Uno Reverse](screenshots/577-uno-reverse.png)
+
+**BEAT 515 — UNO REVERSE (3:15:21 PM).**
+
+- **Oren claims third, and he is not making it up — he is quoting an out-of-date ranking.** He held **third, under Pero and Mr. Black**, in an earlier list. Pero's correction is a full numbered top six: *"1. P3r0, 2. Gaster, 3. Luigi Green, 4. Wenda, 5. Gray, 6. Oren."*
+- **And the four names placed above him are the four he once beat in a single sentence.** **August 8, 4:21 PM**, all of Toby's own typing: *"**Oren beaten Gray and Wenda and Pero and Gaster.** Oren became the most powerful being."* Twenty days later Gaster is 2, Wenda is 4, Gray is 5, Pero is 1, **and the one who beat all four of them is last on the list.**
+- **"I am 17 times smarter" is a trap Toby built thirty-four days ago and explained in a parenthesis.** **July 25, 8:23 AM**: *"he didn't say 'I am 60 times smarter than you.' **otherwise you could easily counter with 'But 0 times 0 is 0'**, Pero is actually very smart. **Pero makes no easy counters**."*
+- **Today Oren says the exact sentence Pero was written to avoid, and then fires the counter himself.** *"I am smarter. 17 times smarter."* → *"But 0 times 0 is 0."* **The trap and its answer were invented together in one aside, and five weeks later they arrive in the same exchange, on opposite sides.** Pero's reply is the July 25 move run again: *"add a few trillion, or even more"* becomes *"Add that by infinity to get mine."*
+- **"Uno Reverse" has exactly one prior appearance, and it is the darkest line on the page.** **August 12, 6:43 PM**: Tunner takes Wenda's own knife, finishes her with it, and says *"Uno Reverse."* Today it is the punchline of a sentence Pero cuts in half — *"Oren, you are…"* / *"continue."* / *"…**not** king. Uno Reverse!"* **Same two words: a murder the first time, a joke the second.**
+- **"Chocolate" has zero hits in four months, and it is the second dessert he has killed somebody with in twenty-nine minutes.** At **2:46** the one attack that ended the biggest fight in the game was a candy cane; at **3:15** it is a chocolate bar, announced the same way, beforehand, as though naming it settles the matter.
+- **And the horror version loses its face twenty minutes after getting one.** At **2:55** it was red eyes and a red mouth. At **3:15**: *"They both look exactly the same, so, the thing is more on Pero's **action** than physical appearence."* That is the same correction he ran on the costume — a name at 1:39, a rank at 1:42, *"isn't a form"* at 1:45 — **and it is the second time today he has taken back his own invention almost as soon as it landed.**
+- **And the sentence that had no object now has one.** At **2:55**: *"he can consume anything, but chooses to."* At **3:15**: *"Pero becomes the horror version when he **chooses to consume the whole game**."* **The thing he chooses to eat is everything he owns.**
+
 ## 2026-08-28 — HORROR PERO (BEAT 514)
 
 Based on Toby's 2026-08-28 lore at **2:55:01 PM**, eight minutes after the candy cane. His own typing is the opening sentence only: *"Hungry Shark Pero has a horror version, it is perfectly normal, but Pero's eyes are red and Pero's mouth is red (the inside, and the outline is red colored), he can consume anything, but chooses to."* Everything from *"That makes Hungry Shark Pero's horror version way scarier"* onward is pasted AI commentary and is not drawn.
