@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — ATTACK 10 (BEAT 506)
+
+Based on Toby's 2026-08-28 lore at **6:50:50 AM**, five minutes and thirty-three seconds after the previous message. His own typing is one line: *"Create an image of New Gaster.That is Perfect, also in this form, he can use Attack 10."* The missing space after the full stop is his and is kept. Everything from *"Perfect — that image is now the canon visual"* onward, including the confirms list and the "Clean canon update" block, is pasted AI commentary and is not drawn.
+
+![Attack 10](screenshots/568-attack10.png)
+
+**BEAT 506 — ATTACK 10 (6:50:50 AM).**
+
+- **Eleven hours and thirty-one minutes ago he said it might not be picturable. This morning he asked for the picture and called the result perfect.** *"You might not be able to make an image of his Nightmare Mode"* was **7:19:20 PM**. *"Create an image of New Gaster.That is Perfect"* is **6:50:50 AM**.
+- **And he has done this exact thing once before.** **August 19, 9:31 AM** — Gaster cannot be imaged. **2:20 PM** — he asks for the image anyway. That doubt lasted **four hours and forty-nine minutes**. **This one crossed a whole night and still did not last until breakfast.**
+- **The power gets a second name, and nothing here has ever been renamed.** *"Attack 10, also known as Ability 10."* **"Also known as" has zero hits in four months.** [Ability 10](#2026-08-27--ability-10-beat-491) arrived yesterday at 11:30 AM as **a number and nothing else**, in a file where every other power has a name. Today the number stays and the noun changes. **An ability is something you have. An attack is something you do to somebody.**
+- **And it becomes the first power in the archive written down as belonging to one form.** *"In this form, he can use Attack 10."* **"In this form" has zero prior hits.** Pero carries his kit through Tunner, Mr. Black, Paul, ToddLLM 001, ToddLLM 002 and Code 303; Simon carries his through dozens of forms. **Nobody here has ever had to be wearing the right shape first.** Yesterday Ability 10 gave Gaster **the first cost his ledger ever had**. Today it gives him **the first condition**.
+
+## 2026-08-28 — ALL THE ERRORS IN THE GAME (BEAT 505)
+
+Based on Toby's 2026-08-28 lore at **6:45:17 AM**, the same message as THE SPOT. His own typing here is the long form block, from *"New Gaster can put the game in static"* through *"then at least years later, he comes back."* His spellings **"swiggles"** and **"strieght"** are kept as written. Everything from *"That version of New Gaster is honestly way more intense"* onward is pasted AI commentary and is not drawn.
+
+![All The Errors In The Game](screenshots/567-allerrors.png)
+
+**BEAT 505 — ALL THE ERRORS IN THE GAME (6:45:17 AM).**
+
+- **Twenty-one hours ago static was a condition he was in. This morning it is something he does to the game.** **August 27, 9:47 AM** — *"like a hollogram but it is in static and really there."* **August 28, 6:45 AM** — *"New Gaster can put the game in static."* **A state becomes a verb.**
+- **He invents the debugger and the biggest bug in the game in one message, about twenty lines apart.** The Spot *"stops errors and glitches and bugs and stuff."* New Gaster *"has all the errors in the game + everyone else's errors and glitches and everything."* **And he never once puts them in a room together.**
+- **The body is halved and doubled in the same description.** No legs, no feet and no nose, against **two hands one and a half times larger than the arms**, each with **a ring of smaller hands around it**. **The half that is missing is the half that walks. The half that is doubled is the half that holds.**
+- **The souls have moved from the neck to the hands, and one of them is the oldest want in the file.** The yellow **Justice Soul** was grabbed at **8:59 AM yesterday**, was **a locket on a chain by 11:30**, and is **in his left hand** this morning. The red one in his right is the **Determination Soul** — the thing Simon has been chasing since **April 6, Email 77**, *"the first soul he always craved for"*, split among the Sprunkis, collected millions of times, taken in Error Hall. **Four months of somebody wanting it, and it ends up as the object in the other hand.**
+- **And the milk run stops being an event and becomes the schedule.** **August 26, 10:43 AM** — *"2 years later, Pero finally gotten the milk"*, the shortest time skip in four months, and it was one trip. **Today** — *"Pero commonly walks to places to get milk or anything, then at least years later, he comes back."* **Commonly. At least years.** It is now the stated reason that two brothers who **held hands for the first time three days ago** are *"rarely together."*
+
+## 2026-08-28 — THE SPOT (BEAT 504)
+
+Based on Toby's 2026-08-28 lore at **6:45:17 AM**, the "Pero, and more lore." thread. His own typing here is two blocks: *"It is a whole white guy with black spots, he stops errors and glitches and bugs and stuff."* and the source line, *"The Spot vs W. D. Gaster - RAP BATTLE! - ft. JT Music & Shwabadi by Freshy Kanal … that is where I saw the Spot."* The Dr. Jonathan Ohnn write-up, the *"Oh — you mean a different version"* correction and the rap-battle-wordplay explanation are pasted AI commentary and are not drawn. **The panel draws Toby's Spot, not the correction's.**
+
+![The Spot](screenshots/566-thespot.png)
+
+**BEAT 504 — THE SPOT (6:45:17 AM).**
+
+- **The first name in four months brought in from outside with a job instead of a ranking.** On **August 25** six outsiders were listed and ranked — Saitama, The One Above All, The Presence, Featherine, the SCP entities, Zeno — and ranking somebody is a way of letting them in. **The Spot does not get a number. He gets a function.**
+- **Marvel has exactly one line in this whole archive, and it is a zero.** That August 25 table reads *"The One Above All · Marvel · **0** prior mentions."* **Marvel comes back three days later, and this time it is not a comparison. It is a character with something to do.**
+- **This file already had an anti-error, and it was a weapon.** **August 5** — Gaster mixes Anti-Virus with dirt and soil and makes **Anti-Error**, which destroys *"the Anti Void, the Void, Classics 1, 2 and 3, the Error AU, the Virus AU and many multiverses."* The **August 8** ledger: *"Anti-Virus — put down, nothing happened."* *"Anti-Error — the Anti Void and Void, gone."* **Every anti-error thing in four months has deleted worlds. The Spot is the first one who patches.**
+- **And for the first time he writes down where he got somebody.** *"That is where I saw the Spot"* — a rap battle, on a named channel. **Undertale, Minecraft, Roblox, Sprunki and One-Punch Man all walked in without a receipt. This one came with the source attached.**
+
 ## 2026-08-27 — MIGHT NOT BE ABLE TO MAKE AN IMAGE (BEAT 503)
 
 Based on Toby's 2026-08-27 lore at **7:19:20 PM**, eleven minutes and fifty-seven seconds after NIGHTMARE MODE. His own typing is one sentence and nothing else: *"You might not be able to make an image of his Nightmare Mode."* Everything from *"Yeah, that might be true"* onward is pasted AI commentary and is not drawn — **including its claim that the earlier images are "not New Gaster: Nightmare Mode anymore"**, which Toby did not write, so nothing here is retconned.
