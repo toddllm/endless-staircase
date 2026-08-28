@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-28 — HORROR PERO (BEAT 514)
+
+Based on Toby's 2026-08-28 lore at **2:55:01 PM**, eight minutes after the candy cane. His own typing is the opening sentence only: *"Hungry Shark Pero has a horror version, it is perfectly normal, but Pero's eyes are red and Pero's mouth is red (the inside, and the outline is red colored), he can consume anything, but chooses to."* Everything from *"That makes Hungry Shark Pero's horror version way scarier"* onward is pasted AI commentary and is not drawn.
+
+![Horror Pero](screenshots/576-horror-pero.png)
+
+**BEAT 514 — HORROR PERO (2:55:01 PM).**
+
+- **"He can consume anything" has exactly one prior appearance in four months, and it is not Pero's.** **August 21, 6:30 PM**: *"Flower can consume players, **he can consume anything**, he consumed players before, that is how he deletes the players to Deletedverse and Entity 303."* Flower is **Gaster's** form, the mouth that removes people from the game. **Forty-three minutes before this message Gaster said that form had been deleted.** The eating sentence moves off the form Gaster lost and onto the costume Pero kept.
+- **The same sentence gets built three times in this archive, and only the ending changes.** **August 11, 8:21 AM**: *"Unikitty can eat anything, **but she chooses what she chooses**."* **Nine minutes ago**, in the message right before this one: *"she can eat anything, **but chooses to not eat everything**."* **Tonight**: *"he can consume anything, **but chooses to**."* Both of hers are rules about holding back. **His keeps the "but" and deletes the holding back, and the sentence simply stops.**
+- **The red eyes are covered by a rule Toby wrote about Pero himself.** **August 2**, in his own typing, for Mustitu Blue Pero: *"all Mustitus look like that but with different colored eyes. **Different eye color = different abilities for each 1**."* Today the eyes change color and an ability arrives with them, which is exactly what the rule says happens. Red eyes are also the definition of **Godmode Simon** here (Phase 1 with red eyes) and the face **Luigi Green** watches through with his hands over it.
+- **"Perfectly normal" is this archive's phrase for having nothing on.** Gaster's *"normal man form which is his basics"* is the Karu prerequisite, and Pero was *"a normal man that came from a box"* on **August 17**. **The horror version is described as normal first and dangerous second**, in that order, in one sentence.
+- **And the thing getting a variant was ruled not to be a thing.** 1:39 a name, 1:42 a rank, **1:45 "Hungry Shark Pero isn't a form"**, 2:05 three powers, 2:55 a horror version. **In seventy-six minutes a costume he demoted himself has acquired an alternate edition**, and nothing else in four months has been given a variant after being declared not a form.
+- **The cuteness is the part that does not change.** At **2:05** *"he has the power to be cute"* was listed as a power; at **2:55** the cute shark stays and only the eyes and the inside of the mouth go red. That is the Phase 0 rule this file already has: *"Simon Phase 0 might look adorable, **but it is still apex hunter**."*
+
+## 2026-08-28 — AFTER 20 YEARS (BEAT 513)
+
+Based on Toby's 2026-08-28 lore at **2:46:43 PM**, thirty-four minutes after NO FORM GASTER. His own typing is the single opening paragraph, from *"Pero VS Gaster happens"* through *"Gaster looks at the calender and is suprised and screams."* Everything from *"That is a huge Hungry Shark Pero era update"* onward is pasted AI commentary and is not drawn.
+
+![After 20 Years](screenshots/575-after-20-years.png)
+
+**BEAT 513 — AFTER 20 YEARS (2:46:43 PM).**
+
+- **He announces the attack that will end the fight, leaves to fetch it, and comes back with a candy cane.** *"I just have to beat you with one attack, I'll go get it now. ta ta."* **"Candy cane" has zero hits in four months.** In an archive of katatas, Hollow Void 1001%, Domain Expansions and an Outer Kioan, the finisher is a piece of Christmas candy, and it works: *"Pero slashes down Gaster."*
+- **And "ta ta" gets used for the first time forty-one minutes after being invented.** It was one of the three powers handed to the costume at **2:05 PM**; this is the first scene anybody says it in.
+- **Then he revives the person he just killed, for no reason at all.** The only prior time Pero revived Gaster was **August 23, 3:40 PM**, and it was tactical — *"Pero revived Gaster and they both use Karu on Entity 000."* **Today there is no enemy left in the room.** He brings him back to ask him about cake.
+- **The outfit standoff lands on the exact day the top of the board went to nothing.** Karu has required *"normal man forms"* since **August 21**; at **2:12 PM** Gaster said *"I am just New Gaster with no forms."* **Thirty-four minutes later the three of them stand there refusing to take anything off** — a shark costume, Glitchwears, and *"my Hardware and Software."* Pero is listing the computer he runs on as an item of clothing.
+- **He also eats the cake he said he could not eat.** At **2:12 PM**: *"No. I am LAI, not human."* At **2:46**: *"Woah, I guess I can."* And absorbing it **nearly pulls Gaster into the energy** — so the endless dessert he invented at 2:05 as a cute power is a weapon by 2:46.
+- **Parinus has been shut since August 15, and Unikitty opens it with Gaster's own fuel.** *"They also blocked Parinus. **No one has Parinus anymore except for Pero**."* Today she combines the **2 energy balls** into one mass and it reopens — and those balls are Gaster's internal fuel from **August 27, 7:08 PM**, *"the Flower and Vicinus become 2 energy balls that fuel Gaster from the inside"*, **the pair he said this afternoon had been deleted.**
+- **"Another End of Unikitty" is, word for word, the good ending Toby wrote himself.** **August 8**: *"the actual end of Unikitty in Classics is **Unikitty in reality**"*, and Parinus was the way out, *"to turn the stuffy to life."* Today she goes back to her reality home to **ChelseaPlays** and stays *"wherever Chelsea or anyone puts her"* — which is where a stuffed animal is. **It is written as a defeat and it is the ending he called the real one twenty days ago.**
+- **And the word "Another" is the file admitting the last one did not hold.** **August 15**: *"The **Perminent** End of Unikitty. They destroyed Unikitty."* She was in the August 18 line-up anyway. This one is not called permanent.
+- **She also picks up a new friend in the same message that ends her.** **Hoot, an owl.** *"Owl"* and *"donut"* both have **zero hits in four months** — her second-favorite food and her new friend arrive in the paragraph where she leaves, and Toby moves straight past both of them: *"Pero is more important, so lets talk about him."*
+- **Being put on the other side of Cherry Blossom Mountain is Pero's gesture, and Gaster does it as a throw.** **August 26, 8:20 AM**: *"Pero leaves Arcsis and Frizz and their mom on the other side of Cherry Blossom Mountain."* Today: *"Gaster just picks up Unikitty and **flings** Unikitty to the other side."*
+- **Luigi Green is absorbed twice in one day.** He was one of the souls taken in the Outer Kioan at **11:06 this morning**; at **2:46** he comes back out as Gaster's weapon against The Heroes, is defeated, and **Gaster absorbs the soul again**. Nobody in four months has been absorbed twice in a day.
+- **Twenty years is a number this file already owns, in Gaster's direction.** **August 22, 5:29 PM**: Pero scheduled the end of the connection twenty years out and Gaster *"logs off imediately"* without arguing. **August 16**: Pero *"eventually won after 20 years."* **The length of the fight is not the new part.**
+- **The new part is that somebody looks.** This archive skips 2, 5, 20 and 70 years, millions, billions and 44 trillion, and **"calendar" has zero hits in four months.** Pero says *"Finally, after 20 years"* the way you finish a chore. **Gaster checks the date, and the first time any character in this game does that, he screams.**
+
 ## 2026-08-28 — NO FORM GASTER (BEAT 512)
 
 Based on Toby's 2026-08-28 lore at **2:12:03 PM**, seven minutes after TA TA. His own typing is the whole opening scene, from *"Hungry Shark Pero is the cutest character in the game"* through *"Where are you going? The strawberries are right on the cake!"*. Everything from *"That scene is hilarious"* onward is pasted AI commentary and is not drawn.
