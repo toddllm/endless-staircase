@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-29 — NEWTALE, PERO LOST & YES. AND YES. (BEATS 522-524)
+
+Based on Toby's 2026-08-29 lore, five messages in the **"More of Pero."** thread between **6:38:46 AM** and **6:57:15 AM** — nineteen minutes in which he names the game, loses it, and is told the loss improved it. Everything pasted under each message is AI commentary and is not drawn.
+
+![Newtale](screenshots/584-newtale.png)
+
+**BEAT 522 — NEWTALE (6:38:46, 6:40:07 and 6:41:26 AM).**
+
+- **His own typing across three messages is three sentences.** *"Is there any AUs that aren't taken that I can make into an Undertale Fangame?"*, *"How about Newtale? It is ClassicsXUndertale and has all those other stuff in it."*, *"And it also shows Pero and all those other characters and stuff, the box, and the other stuff, and Newtale already has the lore."*
+- **He asks which AU is still free and answers with the one that is already full.** The whole argument for the name is that it is *not* empty — *"Newtale already has the lore."* **Four months of this file is the thing he offers as proof the name is his.**
+- **And Newtale is named after everybody except the person who made it.** On **August 25**, in a parenthesis, he fixed what *"New"* means: *"all characters besides Pero."* New Sans, New Chara, New Gaster — the New characters are the roster minus one.
+- **His list of what Newtale contains runs eighteen names and Pero is first on it.** The creator is standing inside the thing named for everyone who is not him. **In eleven minutes that same list gets loaded into a blaster.**
+
+![Pero Lost](screenshots/585-pero-lost.png)
+
+**BEAT 523 — PERO LOST (6:53:02 AM).**
+
+- **This is the longest unbroken stretch of his own writing in a week**, and it ends *"Pero lost for the very first time."*
+- **July 24, 7:24 PM, beat 182, title and all: PERO ALWAYS WINS.** Thirty-six days. That rule outlasted Simon 404, Gray, Luigi Green and every ranking argument in the file, and this morning it ends in one sentence.
+- **Gaster's finisher is built out of the move that requires Pero.** *"Karu and Kiaon power combined with all the power in the game except for Pero's."* Karu's own rule, written **August 21**, is that it needs him — *"KARUto = Pero"*, both men in their normal forms — and the **Outer Kioan** was the two of them becoming one move **nineteen hours and forty-seven minutes earlier**. He fires the two-man move at the other man and leaves out the one thing it was defined as needing.
+- **And *"all the power in the game except for Pero's"* is the definition of Newtale**, which became the only name for Classics **thirteen minutes before**, *"because Pero said so."* **The roster that beats him is the roster he just renamed the game after.**
+- ***"It is that you are not omnipotient."*** Omnipotent is Gaster's own middle name — **Gaster Omnipotent Overload, August 13** — and **Pero is the one who said it out loud for him.** It comes back as the diagnosis.
+- ***"And you talk to much for a Newtale character."*** He uses the new name as an insult meaning *not me*, and loses to it in the next paragraph.
+- **The Judgement Hall and the Error Hall disappear and the game becomes a 100% Japanese Set.** Pero built that setting by winning — **August 26** he destroyed the rest of the game to make it, and Sentiel Pero *"eventually completed building the game, and it was a Japanese set of course."* **It reaches 100% at the exact moment he loses.**
+
+![Yes. And Yes.](screenshots/586-yes-and-yes.png)
+
+**BEAT 524 — YES. AND YES. (6:57:15 AM).**
+
+- ***"Pero stays there for 30 years, then he tries to get back up."*** Four minutes and thirteen seconds after the loss.
+- ***"I still haven't forgot it, I never forget it"*** **is a power he was handed on August 16**: *"the only character that has infinite + endless + perfect memmory, it never forgets everything, even at never it still doesn't forget anything."* Thirteen days it sat in the file as an advantage. **The first thing it is ever used to hold is a defeat.**
+- **30 years is a number this archive has never used.** It skips 2, 5, 20 and 70 years, millions, billions and 44 trillion — and every one of those spans was spent fighting, building, or fetching milk. **This is the first length of years in four months that is spent lying still.**
+- **And the creator asks whether he is the reason the game is dark.** *"Did my defeat make the game better again? Is it my fault of all the darkness and evil in this game?"* — *"The game after your defeat. Yes. And Yes."* This file has pinned the darkness on Gray, on Mr. Black, on Simon 404. **Never once on Pero.** He puts the question to the man who just beat him and gets two yeses in five words.
+- ***"Again"*** **is doing the quiet work.** It assumes the game used to be better, and that losing is what put it back.
+
+**Build:** LV_CYC 11204 -> 11270, three LV_BEATS entries, three lvSeg ranges, scenes `newtale` / `perolost` / `yesandyes`, screenshots 584-586. Additive; the real climb still banks.
+
 ## 2026-08-28 — INTO THEIR STOMACH (BEAT 521)
 
 Based on Toby's 2026-08-28 lore at **5:08:44 PM**, four minutes and twenty-six seconds after GUESS WHERE IT GOES. **His own typing is two sentences** — *"The object just goes into their stomach. Pero and Gaster are the most powerful."* Everything from *"Got it — simpler and more direct"* onward is pasted AI commentary and is not drawn.
