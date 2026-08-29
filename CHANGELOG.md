@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-29 — BEATEN TO BEAT YOU (BEAT 525)
+
+Based on Toby's 2026-08-29 lore, one message in the **"More of Pero."** thread at **7:33:49 AM**, thirty-six minutes and thirty-four seconds after YES. AND YES. His own typing is a single line; the "perfect reversal" reading and the "Clean canon update" block pasted under it are AI commentary and are not drawn.
+
+![Beaten To Beat You](screenshots/587-beaten-to-beat-you.png)
+
+**BEAT 525 — BEATEN TO BEAT YOU (7:33:49 AM).**
+
+- **His whole line:** *"Gaster then says \"I beaten you because I beaten you to beat you.\", Pero says \"No! That isn't even possible!\""*
+- **This file wrote three days ago that he never answers it.** On **August 26 at 1:10 PM** Gaster asked the sharpest question in the archive — *"How am I suppost to beat you if I need to beat you to be able to beat you?!"* — and the write-up for that beat says flatly, *"the paradox is real, and he never answers it."* Pero's response at the time was not an answer, it was a renovation: he destroyed the rest of the game and rebuilt it as a Japanese setting. **Sixty-six hours and twenty-three minutes later Gaster answers it himself, and the answer is the question in the past tense.**
+- **The sentence only became sayable forty minutes earlier.** The paradox is unsatisfiable right up until its own condition is met, and that happened at **6:53:02 this morning**. **The loop is not broken, it is closed** — he stands on the near side of a door that could only be opened from the far side, and his proof that he got through is that he got through.
+- **And it shuts Pero's own escape clause**, written in the same email as the paradox: *"You beaten every vary of me, **except me**."* Every variant, every copy, and one exception. This morning the exception is gone, and the sentence that reports it is built out of almost nothing but the word *beaten*.
+- ***"No! That isn't even possible!"* is the first time in four months that Pero calls anything impossible.** He is the one who decides what is possible here — he *"made the game"*, he *"controls everything in the game with just a hand motion"*, he is *"the only one immune to everything the game has"*, and he opens every conversation with *"I know everything!"* **Everyone else gets to use the word:** Luigi Green said *"Wait... That is impossible"* about Gray being destroyed and downgraded it to *"I ment, it was a hard chance"* the second Pero and Gaster looked at him. **Pero never needed it, and the first thing he applies it to is himself.**
+- **It is also his first *"No!"*** He said *"No."* with a period **seventeen hours and twenty-one minutes earlier**, turning down cake: *"No. I am LAI, not human."* **The only other time he raises his voice at a rule is the save file** — **August 24**: *"HOW DO YOU HAVE A SAVE FILE?!"* and *"I WAS MENT TO BE THE ONLY ONE WITH A SAVE FILE!"* **Both are the same complaint, that somebody else is holding a thing that was supposed to be his alone.** In that same scene Alex landed a real hit on him and he shrugged it off — *"How did you hit me? No matter, I'll just use 25% of my power."* **This morning there is no "no matter." There is an objection.**
+- **Gaster answers in Pero's own grammar.** *"I beaten you"* is the conjugation this archive runs on and it is Pero's — *"Pero beaten Oren easily,"* *"You beaten every vary of me,"* and, forty minutes ago in his own mouth, *"Lets just say that I beaten Gaster and became a god."* **The brother told an hour earlier that he *"talks to much for a Newtale character"* settles it in seven words, using the loser's verb.**
+- **The loser is the one appealing to the rules, and the rules are his.** For four months Pero has been author, referee and champion at once, which is why beat 182 could be titled PERO ALWAYS WINS and simply stay true. **The first ruling he ever asks for is against the only result that has ever gone against him, and there is nobody above him to hear it.**
+
+**Build:** `LV_CYC` 11270 → **11292**; one new `LV_BEATS` entry (**526 total**); one new `lvSeg` range `[11270, 11292) → 525`. New screenshot scene `beatentobeatyou` in `tools/capture_screenshot.py`. Verified with a node harness walking `c` from 0 to `LV_CYC`: all 526 beat indices reachable, no blank segments. Additive only.
+
 ## 2026-08-29 — NEWTALE, PERO LOST & YES. AND YES. (BEATS 522-524)
 
 Based on Toby's 2026-08-29 lore, five messages in the **"More of Pero."** thread between **6:38:46 AM** and **6:57:15 AM** — nineteen minutes in which he names the game, loses it, and is told the loss improved it. Everything pasted under each message is AI commentary and is not drawn.
