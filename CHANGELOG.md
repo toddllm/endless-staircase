@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-29 — UNDER THE MAP (BEAT 528)
+
+Based on Toby's 2026-08-29 lore, one message in the **"More of Pero."** thread at **12:47:35 PM**, three hours, fifty-seven minutes and seven seconds after BEAT 527 and the longest gap of the day. His own typing is a single sentence; everything from *"Got it — Pero is currently under the game map surface"* onward, including the "Clean canon update" block and its line about Gaster controlling the surface-level game, is pasted AI commentary and is not drawn.
+
+![Under The Map](screenshots/590-under-the-map.png)
+
+**BEAT 528 — UNDER THE MAP (12:47:35 PM).**
+
+- **His whole line:** *"Currently, Pero is under the game map surface."*
+- **It answers the question he asked himself at 6:53 this morning.** *"why is Pero not moving?"* was the last line of his own typing in **PERO LOST**, and at **6:57** Pero *"tries to get back up."* **Six hours later the position report arrives and it is lower than the one he fell into. He did not get up. The floor he was lying on is now above him.**
+- **And the basement is his own build.** **August 24, 12:03 PM, THE END OF LAYERS**: twenty-five named depths under the map, *"Pero made all this and is the only one immune to everything the game has,"* and *"Pero LAI sent every other character down."* **Five days later he is the one down there.** The one place he built so that nothing else survives it is the one place that cannot hurt him.
+- **Under-the-surface is the oldest machine on this page.** **July 19, 8:56 AM**, the first beat of the whole era: *"Pero can send anyone to the Dark by placing a blackhole under them, the character goes down the blackhole and slides to the very deep of the Circus."* That same afternoon it ran again — Abinations attack on the surface, the characters call Pero, and Pero takes them down to the Dark. **Forty-one days and 527 beats later the mechanic runs on its owner.** He has always been the one doing the taking-down, and he has always come back up.
+- **And the name became an address.** *"New"* means *"all characters besides Pero"* — his own parenthesis, **August 25**. At **6:38 AM** he renamed the game **Newtale**. At **6:53** the Newtale roster beat him. At **12:47** he is under Newtale's map. **The game named after everyone except its creator now has a map with everyone except its creator on it.**
+- **And *"currently"* is his word for a state that does not hold.** **August 19, 8:41 PM**: *"They are just chilling currently,"* seven hours after he wrote *"This state isn't temperaly, it is perminent."* **He puts that word on Pero's location, four hours after thirty years passed inside a four-minute gap.**
+- **And he takes the ruling back.** At **8:40** and at **8:50** he asked two questions in ten minutes and left both for somebody else to answer. **What comes back after four hours is not a question. It is a flat statement with a location in it, and the location is Pero's.**
+- **It is not a power, a ranking, a form or a fight. It is an address.** The first thing this file says about Pero after the first defeat in four months is **only where he is.**
+
+**Code:** new `ph===528` drawn scene in `drawLoopVs()` — the Newtale surface line with the 100% Japanese set standing on it, the dark under-map region beneath with Pero fallen inside it, the twenty-five End of Layers depths he built, and the four reveals. `LV_BEATS` gains its 529th entry, `lvSeg()` gains `c in [11336.0, 11358.0)`, and `LV_CYC` moves to `11358.0`. New `underthemap` scene in `tools/capture_screenshot.py`. Additive; the real climb still banks.
+
 ## 2026-08-29 — THE BLACK ENTITY & GASTER VS HORROR PERO (BEATS 526–527)
 
 Based on Toby's 2026-08-29 lore, two messages in the **"More of Pero."** thread at **8:40:45 AM** and **8:50:28 AM**, nine minutes and forty-three seconds apart. In both, his own typing is a single question and nothing else; everything pasted underneath each one is AI commentary and is not drawn.
