@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-29 — THE BLACK ENTITY & GASTER VS HORROR PERO (BEATS 526–527)
+
+Based on Toby's 2026-08-29 lore, two messages in the **"More of Pero."** thread at **8:40:45 AM** and **8:50:28 AM**, nine minutes and forty-three seconds apart. In both, his own typing is a single question and nothing else; everything pasted underneath each one is AI commentary and is not drawn.
+
+![The Black Entity](screenshots/588-the-black-entity.png)
+
+**BEAT 526 — THE BLACK ENTITY (8:40:45 AM).**
+
+- **His whole line:** *"What is the black entity in the background? You made the image, so you should know."*
+- ***"You made the image"* is the first time in four months that Toby calls the machine the author of something.** *"You made"* appears **exactly once before in this entire file**, and it is a character talking inside the story: Fatal Error standing over Ink Sans on **July 31** — *"You made me."* / *"And I can make worse."* **That is not Toby, and it is not about a real thing.** This one is Toby, in his own voice, about a file that exists.
+- **The archive already had a line about being made by something outside it, and it was in Pero's mouth.** **August 27, 8:59 AM**: *"I know everything, I know we are in a video made by Gemini, and way before, the user used Sora AI."* **That was the character noticing the tools. This is the author naming one and assigning it credit** — the direction runs the other way.
+- **And he asks a question he cannot answer himself.** Every other unanswered question in this file is one he **chose** to leave open, like *"Guess where the things Pero and Gaster consumes go"* yesterday at 5:04 PM. **This one is not withheld. It is genuinely not his to answer, and he says so.**
+- **No attachment part was delivered with the email**, so under the standing image rule nothing was downloaded. **What the file keeps is the question.**
+- ***"Black"* is not a neutral colour here.** Mr. Black is where this archive traced the darkness for months. **One hour and forty-three minutes before this message**, two words traced it to Pero instead — *"Yes. And Yes."* **The black thing standing behind Pero is asked about on the same morning Pero was told the darkness is his fault.**
+- **The answer he is offered says it is not a character at all, but a part of Pero.** That is commentary and does not enter canon, but it is worth recording: **the one time this archive asks what a new dark thing is, the answer comes back *nobody new*.** Every other black thing in four months got a name and a number.
+
+![Gaster VS Horror Pero](screenshots/589-gaster-vs-horror-pero.png)
+
+**BEAT 527 — GASTER VS HORROR PERO (8:50:28 AM).**
+
+- **His whole line:** *"What will a battle between Gaster VS Horror Pero be like?"*
+- **The fastest re-fight in the archive.** The first defeat in four months landed at **6:53:02**, the explanation at **7:33:49**, and the rematch is asked for at **8:50:28** — **one hour and fifty-seven minutes from loss to rematch.**
+- **But the fighter sent back in is not the one who lost.** The Pero who went down at 6:53 was Pero: the LAI, the omni-king, the one with the blasters pointed at him. **The one put back in the ring is a costume with a variant**, invented **yesterday at 2:55 PM** and never once used — *"Hungry Shark Pero has a horror version… he can consume anything, but chooses to."* **Seventeen hours and fifty-five minutes old, no fights, and its first opponent is the only character who has ever beaten Pero.**
+- **And it is a costume being sent to do a form's job.** The whole point of **1:45 PM yesterday** was that *"Hungry Shark Pero isn't a form, Pero just gets a strawberry, puts it on a white pudding vanilla cake, then he gets on a shark costume and hood."* **Since that demotion the not-a-form has picked up powers, a horror edition, and now a title fight.**
+- **The matchup line puts a variant on one side and the base character on the other**, which this archive has never done before. **What is being compared is not Gaster against Pero. It is Gaster against the version of Pero that has stopped choosing.**
+- **This is the second question in ten minutes that Toby leaves for somebody else to answer.** He writes no outcome for either. In four months of this file he has ruled on almost everything himself — who is stronger, who is first, whose fault the darkness is. **Twice in ten minutes he hands the ruling over.**
+- **Which is the one thing Pero could not do seventy-six minutes earlier.** At 7:33 Pero appealed a result — *"That isn't even possible!"* — to a game in which he is the author, the referee and the champion, and there was nobody above him to hear it. **At 8:50 the actual author asks somebody above him. The character had no referee. Toby does.**
+
+**Build:** `LV_CYC` 11292 → **11336**; two new `LV_BEATS` entries (**528 total**); two new `lvSeg` ranges `[11292, 11314) → 526` and `[11314, 11336) → 527`. New screenshot scenes `blackentity` and `gastervshorrorpero` in `tools/capture_screenshot.py`. Verified with a node harness walking `c` from 0 to `LV_CYC` in 0.5 steps: **all 528 beat indices reachable, no blank segments.** Additive only.
+
 ## 2026-08-29 — BEATEN TO BEAT YOU (BEAT 525)
 
 Based on Toby's 2026-08-29 lore, one message in the **"More of Pero."** thread at **7:33:49 AM**, thirty-six minutes and thirty-four seconds after YES. AND YES. His own typing is a single line; the "perfect reversal" reading and the "Clean canon update" block pasted under it are AI commentary and are not drawn.
