@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-30 — THE BEST PLAN (BEAT 535)
+
+Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **3:27:29 PM**, one hour, three minutes and thirty-eight seconds after BEAT 534. His own typing is a single block, from *"Everyone with someone else"* through *"then Pero gets unlimited energy."*; everything from *"That is a very Pero-style shortcut plan"* onward, including the "What Pero is really doing", "What this means in canon" and "Clean canon update" headings, is pasted AI commentary and is not drawn.
+
+![The Best Plan](screenshots/597-the-best-plan.png)
+
+- **New beat 535, THE BEST PLAN**, added to the loop-versus cutscene. `LV_CYC` 11490.0 → 11512.0, a new `lvSeg()` range `[11490.0, 11512.0)` returning ph 535, and a new `LV_BEATS` entry (length 536, index 535). Custom panel with the tube drawn as the centrepiece, not the default vs-scene.
+- **He promised a smarter plan sixty-three minutes ago, and this is it.** Beat 534 closed on Oren's objection — *"But that will leave us with no one to attack."* — and Pero's answer, *"Work smarter, not harder."*, with **no plan attached to it**. One hour and three minutes later the plan arrives, and it is not a fight: he deletes nobody's code, he battles nobody, and he does not ask. Everybody pays him first.
+- **It opens with the first law on this page about what everybody does, and it is a refusal.** *"Everyone with someone else: Person says 'I won't give you any of my lifespan!'"* That is a rule, not an event — this archive is four months of things happening to particular characters, and this line says what happens with **anyone**. The exception is one character, and the reason given is a job title: *"You, the creator of Classics."*
+- **Lifespan has been billed once before, and it cost nobody anything.** August 14, 3:28 PM, Half Of Infinity: *"Just half your remaining lifespan."* **One payer, half of it**, and the immortal one still flinched — *"I want to life as long as possible."* — until Pero showed him ∞/2 = ∞. Today it is **every payer, all of it**, nobody asks the price, and nobody is immortal.
+- **The tube is not new, and last time somebody got pulled out of it.** August 8, 1:30 PM: *"Gray put Unikitty into a tube, Gray presses the button... the cursed energy comes out of Unikitty and goes to Gray."* Then: *"Oren grabs Unikitty in the nick of time."* **One being inside, and one rescuer outside.** This one holds everyone at once, so there is nobody left standing outside to reach in. Gray's tube also drained first and did the combining step separately, on two other beings; this one drains and combines in a single motion.
+- **The one time he does not ask is the unlimited one — and five days ago he was the giver.** August 25, 4:31 PM, beat 470: Gaster asked for nothing and Pero handed him absolute infinity, and Gaster's whole reply was *"Woah, okay Pero."* Today Pero asks for nothing and is handed every lifespan in the game, and his whole reply is *"okay? 🤔"*.
+- **"Unlimited" has zero hits in four months of the Classics Era page.** The word arrives tonight. And **lifespan-into-energy is the oldest resource trick in the archive**: Toby's master document has Simon *"uses HP/energy/lifespan mechanics"* and *"takes lifespans to increase HP/energy so he doesn't shut down as easily."* **Simon spent it to keep from shutting down.** Three hours after Toby wrote that **Pero was Simon.ps**, Pero runs the same machine for surplus.
+- **And he collects it secretly after they already said yes.** *"Pero secretly is getting everyone's lifespan by himself."* The offer was free and public; the collection is not.
+- New capture scene `bestplan` in `tools/capture_screenshot.py`, freezing at cyc 11510.5 with every panel landed.
+- **Three required edits made and verified:** `LV_CYC` 11490.0 → **11512.0**, one `LV_BEATS` entry (**536 total**), one `lvSeg` range `[11490,11512) → 535`. Node harness walked `c` 0 → LV_CYC in 0.5 steps: **536 beats, 536 reachable, 0 gaps, 0 problems, PASS.**
+- Toby's spelling **lifepsan** is kept as written.
+
 ## 2026-08-30 — BOTH THOSE CHARACTERS (BEAT 534)
 
 Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **2:23:51 PM**, sixteen minutes and forty-two seconds after BEAT 533. His own typing is a single block, from *"Pero seen Oren.ps become Simon.ps"* through *"Work smarter, not harder."*; everything from *"That is a wild identity-collapse arc"* onward, including the "What this means", "Wenda gets removed from the board", "Among Us reset" and "Clean canon update" headings, is pasted AI commentary and is not drawn.
