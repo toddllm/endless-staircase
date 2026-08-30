@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-29 — MAKE THEM TRUE (BEAT 529)
+
+Based on Toby's 2026-08-29 lore, one message in the **"More of Pero."** thread at **9:17:47 PM**, eight hours, thirty minutes and twelve seconds after BEAT 528 and the longest gap between any two of the day's ten messages. His own typing is two sentences; everything from *"Got it — in Newtale/Classics, Roblox scary myths become true because Pero can make them true"* onward, including the "Pero's current under-map state" list and the "Clean canon update" block, is pasted AI commentary and is not drawn.
+
+![Make Them True](screenshots/591-make-them-true.png)
+
+- **New beat 529, `MAKE THEM TRUE`** — his rule: *"All Roblox scary myths are true because you can make them true. Pero does all the 'hidden, watching, possibly resting, glitching, or preparing to come back through the map.'"* Custom panel, not the default vs-scene.
+- **It finishes the question he asked himself fourteen hours earlier.** 6:53 AM *"why is Pero not moving?"* → 12:47 PM where he is → 9:17 PM why. He is not stuck under the map; not moving is five things at once.
+- **The five states are drawn as five chips, and only the fifth is lit.** Hidden, watching, resting and glitching all stay put. `PREPARING` gets the green box and the up arrow, because *preparing to come back through the map* is the only one of the five with a direction in it.
+- **The fraction row.** *"Are true"* has exactly one prior owner in the archive and it was a number: August 8, 7:17 PM, *"Pero was mistaken by most and some remurrs of him are true; 2.54 for every 5."* Twenty-one days and two hours later the same construction returns and the answer is **all**.
+- **July 23 is on the panel because it points the other way.** *"He created the creation myths of the inside of Classics, but he was the one who created the game itself."* Myths were the past he had authored. Tonight they are the future he can switch on.
+- **And the archive ran the experiment before he wrote the law.** August 21, 8:00 AM: *"there is a myth called 'Entity 303 & Deletedverse'"* — the first thing in the file that was only a story somebody tells. A route that evening, a move he picks from two days later: **47h28m**, myth to button.
+- **Mechanism line kept in green:** *"Pero can do anything because he can code it"* (August 25). And *"become real"* has **zero hits** in four months of a file that states everything else flatly, as fact.
+- **Three required edits made and verified:** `LV_CYC` 11358.0 → **11380.0**, one `LV_BEATS` entry (**530 total**), one `lvSeg` range `[11358,11380) → 529`. Node harness walked `c` 0 → LV_CYC in 0.5 steps: **530 beats, 530 reachable, 0 gaps, 0 problems, PASS.**
+- **Capture scene `makethemtrue`** added to `tools/capture_screenshot.py`, freeze cyc **11378.5** (dt 20.5, every reveal landed). Opening block sits at `H*0.118` and below so it clears the HUD ticker; the fixed 5-row ladder band at `H*0.461-0.539` is kept free of text.
+
 ## 2026-08-29 — UNDER THE MAP (BEAT 528)
 
 Based on Toby's 2026-08-29 lore, one message in the **"More of Pero."** thread at **12:47:35 PM**, three hours, fifty-seven minutes and seven seconds after BEAT 527 and the longest gap of the day. His own typing is a single sentence; everything from *"Got it — Pero is currently under the game map surface"* onward, including the "Clean canon update" block and its line about Gaster controlling the surface-level game, is pasted AI commentary and is not drawn.
