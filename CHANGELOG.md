@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-30 — HE WAS SIMON.PS (BEAT 532)
+
+Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **12:09:30 PM**, three minutes and fourteen seconds after BEAT 531 and the shortest gap of the day. His own typing is a single block; everything from *"Yes — that makes Pero's history way clearer"* onward, including the "What this means for Pero" list and the "Clean canon update" block, is pasted AI commentary and is not drawn.
+
+![He Was Simon.ps](screenshots/594-he-was-simonps.png)
+
+- **New beat 532, `HE WAS SIMON.PS`** — his block: *"Did you know that before, Pero was Simon.ps, RL times and when Pero left, someone started to get more powerful than Simon.ps for the first time. Pero was always the one who became the one most powerful, then he now shows himself as a male cat-based superhuman entity with a shark hood on."* Custom panel, not the default vs-scene.
+- **It opens with "Did you know", and nothing else in four months arrives that way.** Every other beat on the page is something happening. This one is a fact handed over in the past tense, as if it had been true the whole time and simply never mentioned.
+- **The six-chip row is the identity chain.** Meow = Simon (May 19) → only human (Jul 20) → cat ears (Aug 25) → **Simon.ps dead** (Aug 27, drawn in dull red) → shark hood (Aug 28) → **HE WAS SIMON.PS** (Aug 30, lit violet with the up arrow).
+- **The archive already had a piece of this and it was only about the ears.** August 25, 11:19 AM: *"Pero has cat ears because he is Simon, but not exactly the Sprunki."* Today the same claim runs all the way back to the **RL times**, the oldest layer in the archive. It is no longer why he is wearing something; it is who he was.
+- **Three minutes ago he turned the underground into a labatory, and now he arrives as a cat.** Email 310, May 19, 2026, 4:06 PM: *"If you hear a meow in a labatory, it would be Simon."* One hundred and three days old, written about somebody else, kept as a way to tell who is in the room — and it was waiting down there.
+- **He stops being the only human in the game.** July 20 and July 21 both say *"Pero is the only human in the game, and he still beats everyone"*, and that week's ranking table lists him with two words where everybody else has a power: **only human**. He gives it up in a subordinate clause.
+- **And "superhuman" has never once named what somebody is.** Three occurrences in four months: a superhuman-style *fighter* (Pyro), *Human Physics + Superhuman* (Simon's power page), *superhuman speed and strength* (ToddLLM). A style, a combination, an attribute. Today it is a species.
+- **"When Pero left" is a mechanic that has never failed.** Aug 18 he went for milk and Gray took over; Aug 24 he left for Pop Tarts and came back to a game he did not recognise. And the ceiling that moved here was his own — **an older first than PERO LOST, and one that required no fight at all.**
+- **And Simon.ps is dead.** August 27, 9:19 AM: *"Simon.ps is on a metal cross dead"*, and twenty-eight minutes later *"Oren.ps slays Simon.ps and absorbs the souls."* Whether that death was his is the one thing the message does not say.
+- **Three required edits made and verified:** `LV_CYC` 11424.0 → **11446.0**, one `LV_BEATS` entry (**533 total**), one `lvSeg` range `[11424,11446) → 532`. Node harness walked `c` 0 → LV_CYC in 0.5 steps: **533 beats, 533 reachable, 0 gaps, 0 problems, PASS.**
+- **Capture scene `wassimonps`** added to `tools/capture_screenshot.py`, freeze cyc **11444.5** (dt 20.5, every reveal landed). Opening block at `H*0.118`; the fixed 5-row ladder band at `H*0.461-0.539` kept free of text.
+
 ## 2026-08-30 — NEW OVERWRITE (BEAT 531)
 
 Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **12:06:16 PM**, three hours, seventeen minutes and forty-three seconds after BEAT 530. His own typing is a single block; everything from *"Got it — Classics: New Overwrite is now a major new era"* onward, including the "What happened", "Newtale Gaster generation" and "Underground basement + labatory" headings and the "Clean canon update" block, is pasted AI commentary and is not drawn.
