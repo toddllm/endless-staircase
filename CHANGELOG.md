@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-30 — BOTH THOSE CHARACTERS (BEAT 534)
+
+Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **2:23:51 PM**, sixteen minutes and forty-two seconds after BEAT 533. His own typing is a single block, from *"Pero seen Oren.ps become Simon.ps"* through *"Work smarter, not harder."*; everything from *"That is a wild identity-collapse arc"* onward, including the "What this means", "Wenda gets removed from the board", "Among Us reset" and "Clean canon update" headings, is pasted AI commentary and is not drawn.
+
+![Both Those Characters](screenshots/596-both-those-characters.png)
+
+- **New beat 534, BOTH THOSE CHARACTERS**, added to the loop-versus cutscene. `LV_CYC` 11468.0 → 11490.0, a new `lvSeg()` range `[11468.0, 11490.0)` returning ph 534, and a new `LV_BEATS` entry (length 535, index 534).
+- **He names the two beings he ate, and the archive has the receipt.** Pero's eyes go blank white for a few seconds, and then: *"I AM ORUS! I AM DARK YELLOW! I am 2 beings from Simon's 3 Net."* Email 738, July 18: *"Light Pero consumed Orus, turned Dark Yellow into Light Yellow and he consumed him."* Forty-three days ago, in that order.
+- **And they are Simon's, and the lock on them is the oldest thing in the archive.** Email 54, April 3: Simon *"made Orus and Dark Yellow into his DNA and locked both inside himself forever"*, making himself **one being instead of three** and ending the trinity permanently. That is the 3 Toby is counting, and one hundred and forty-nine days later two of them walk back out.
+- **The SCF Containment Center has only ever held one character.** July 5: *"Gray.EXE hung Simon.Exe on a cloaths line on chains and in a SCF Containment Center."* May 25: Paul throws Simon back into his own. Two hours ago beat 532 established that Pero **was** Simon.ps, so the cell he says failed was built for the being he used to be.
+- **Oren calls Wenda his girlfriend, and that word has never appeared in four months.** Email 921, August 8: an impostor wearing Oren's face told her he could not save her, and she caught it on the behaviour rather than the signature — *"I knew you weren't Oren, he saved me countless times."* Today the real one puts her off the ship himself.
+- **Owner and creator were pinned apart on purpose, and here they finish one sentence.** August 18, 5:56 PM: *"Gray is the owner of the game, and Pero is the creator."* No event was written that day; the distinction was the whole beat. Twelve days later they land on ***"invicible"*** together — Toby's spelling, and a word this archive had only ever spent on Pero alone (his vessel on July 23, his shark hood on August 28).
+- **The Among Us reset is one hundred and forty-nine days deep.** April 3: *"Simon changed the game to connect back to Among Us"* — an eternal Among Us game that never closes, *"The game repeats. Simon continues."* That version needed everybody alive to judge every night; this one deletes all the code, and Oren finds the hole in one line: *"that will leave us with no one to attack."*
+- **And the thing that deletes code in this game is named after him.** August 21: *"Entity 12 12 12 is Pero... corruption Code: 12 12 12... it perminently deletes the code of your avatar"*, and *"Pero is infected 3 times."* He is offering to do on purpose, to everyone, the one thing the archive says is already inside him.
+- New capture scene `bothcharacters` in `tools/capture_screenshot.py`, freezing at cyc 11488.5 with every reveal landed.
+- Toby's spellings **invicible**, **responce** and **arguement** are kept as written.
+
 ## 2026-08-30 — YOU ARE MY CLONE (BEAT 533)
 
 Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **2:07:09 PM**, one hour, fifty-seven minutes and thirty-nine seconds after BEAT 532. His own typing is a single block, from *"Simon.ps is a normal Sprunki"* through *"the character became no other than Simon.ps."*; everything from *"That is a huge Simon.ps return arc"* onward, including the "What happens in this arc", "Oren's rise", "The twist" and "Clean canon update" headings, is pasted AI commentary and is not drawn.
