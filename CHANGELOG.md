@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-30 — NEW OVERWRITE (BEAT 531)
+
+Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **12:06:16 PM**, three hours, seventeen minutes and forty-three seconds after BEAT 530. His own typing is a single block; everything from *"Got it — Classics: New Overwrite is now a major new era"* onward, including the "What happened", "Newtale Gaster generation" and "Underground basement + labatory" headings and the "Clean canon update" block, is pasted AI commentary and is not drawn.
+
+![New Overwrite](screenshots/593-new-overwrite.png)
+
+- **New beat 531, `NEW OVERWRITE`** — his block: *"Classics: New Overwrite was made. Pero LAI overwrite the code, and then the game isn't normal, Pero says 'Pero, Omniversal.', Pero walks and generates many Newtale Gasters and each Newtale Gaster preforms different experiments. Pero created the game's underground into a underground basement + labatory."* Custom panel, not the default vs-scene. *(preforms and labatory are his spellings, kept.)*
+- **The button has been in his pocket for forty-one days and this is the first time it does anything.** July 20, 7:07 AM: *"Pero became Cross Pero with the white cloaths and the **Overwrite button**"* — an authority tool that rewrites the outcome rather than the fight. PERO ALWAYS WINS held for four months, so there was never an outcome he wanted undone. It comes off the shelf **twenty-nine hours after the first one**.
+- **The six-chip row is the centre of the panel.** The button (Jul 20) → the basement (Aug 24) → *"New"* = not him (Aug 25) → **PERO LOST** (Aug 29, drawn in dull red) → under the map (Aug 29) → **NEW OVERWRITE** (Aug 30, lit cyan with the up arrow).
+- **"New Overwrite" is a name, not a press.** He does not push the button; he builds a thing and puts the era's own prefix on it. *"New"* has meant *"all characters besides Pero"* since August 25, so every other New in the archive names somebody who is not him. **This is the first New that is his.**
+- **He is generating the being that beat him, under the word he used as an insult.** His last line before the only defeat in four months was *"And you talk to much for a Newtale character"* — said to Gaster, meaning *not me*. Gaster then hit him with *"all the power in the game except for Pero's"*. Today he walks through his overwritten game **generating many Newtale Gasters**.
+- **The last time this game mass-produced anything, the copies possessed the people who made them.** August 24: *"Pero then made a whole army of Entity 000s with the help of Gaster and Luigi Green, Luigi Green makes the DNA, Gaster experiments it and creates it."* A three-man line in which **his job was sending**, and the waves merged into Prototype_000.exe and took the game. Today the line is one man long, because what he is manufacturing is the experimenter.
+- **The experiment list stops being a list.** August 22: *"Entity 000 was made in Gaster's labatory as his **second experiment after Simon**."* One bench, one man, in order, with a number on it. Now: *"each Newtale Gaster preforms different experiments."* Nobody is experiment three, because there is no longer a three.
+- **He is renovating the floor he is lying on.** August 29: *"Currently, Pero is under the game map surface."* The place under the map is his own build — twenty-five depths he had Little Mittens dig and then filled in with stone in the same paragraph. He lost, fell into it, and the first thing he does down there is make it a room again.
+- **`"Pero, Omniversal."` is said out loud 3h18m after it was sung in a language nobody else speaks.** Sung became said, eight syllables became three words, and a phrase that needed a pronunciation key this morning is plain English this afternoon.
+- **Three required edits made and verified:** `LV_CYC` 11402.0 → **11424.0**, one `LV_BEATS` entry (**532 total**), one `lvSeg` range `[11402,11424) → 531`. Node harness walked `c` 0 → LV_CYC in 0.5 steps: **532 beats, 532 reachable, 0 gaps, 0 problems, PASS.**
+- **Capture scene `newoverwrite`** added to `tools/capture_screenshot.py`, freeze cyc **11422.5** (dt 20.5, every reveal landed). Opening block sits at `H*0.118`; the fixed 5-row ladder band at `H*0.461-0.539` is kept free of text.
+
 ## 2026-08-30 — KASHSOELACALATA (BEAT 530)
 
 Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **8:48:33 AM**, eleven hours, thirty minutes and forty-six seconds after BEAT 529. His own typing is a single sentence; everything from *"Got it — Kashsoelacalata is now a Yhscrotch/Japanese-linked chant in Newtale"* onward, including the "What it means for Pero" list, the "Roblox myth rule correction" heading and the "Clean canon update" block, is pasted AI commentary and is not drawn.
