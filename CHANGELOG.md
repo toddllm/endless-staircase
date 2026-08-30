@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-30 — KASHSOELACALATA (BEAT 530)
+
+Based on Toby's 2026-08-30 lore, one message in the **"More of Pero."** thread at **8:48:33 AM**, eleven hours, thirty minutes and forty-six seconds after BEAT 529. His own typing is a single sentence; everything from *"Got it — Kashsoelacalata is now a Yhscrotch/Japanese-linked chant in Newtale"* onward, including the "What it means for Pero" list, the "Roblox myth rule correction" heading and the "Clean canon update" block, is pasted AI commentary and is not drawn.
+
+![Kashsoelacalata](screenshots/592-kashsoelacalata.png)
+
+- **New beat 530, `KASHSOELACALATA`** — his sentence: *"Kashsoelacalata (KAE-SH-SO-LA-KA-LA-TA), Pero sings that and it is Yhscrotch for Japanese stuff, it means 'Pero, Omniversal.', anyone can make Roblox stuff true."* Custom panel, not the default vs-scene.
+- **The game gets a language with a name.** *"Yhscrotch"* has **zero hits in four months** — not a character, not a place, not a rank, not a form. It arrives already in use: he does not introduce it, he translates *out* of it.
+- **The six-step Japanese row is the centre of the panel.** Setting (Aug 26) → school (Aug 26) → a move (Aug 27) → **the language, removed** (Aug 27, drawn in red) → the Set at 100% (Aug 29) → **the language, named** (Aug 30, lit gold with the up arrow). Every step until this one added a thing to look at; this one adds a word to say.
+- **It lands on exactly the gap the removal opened.** August 27, 3:34 PM took English away — *"the game is Japanese, no translator"* — and nothing inside the story was left doing the work. This is the first translation in four months performed from **inside** the game rather than by the file it is written in.
+- **Third pronunciation key in four months, and the first that is not a name.** PEAR-OH (Jul 28) and PUP-AH-YAH (Aug 17) tell you how to say *who somebody is*. KAE-SH-SO-LA-KA-LA-TA tells you how to say *something about him* — eight syllables for two words.
+- **Fourth song, first not in English, shortest by an enormous margin.** The Personal Fire ran long enough that Wenda changed shape while it played. This one is one word, and all it does is name him.
+- **Every other title he holds came from a ranking.** Omni-king of Classics (*"everyone else has a number"*), Number 1 OmniCreator (voted in), Pero LAI Omazen (gone six minutes later). *"Pero, Omniversal."* is sung: no number under it, and nobody else in its table.
+- **And he sings it from under the map**, twenty-five hours after the first loss in four months. Hidden, watching, resting, glitching, preparing — and now singing: the sixth thing he does while not moving, and the only one that makes a sound.
+- **`Anyone` settles last night's unsettled `you`.** BEAT 529's rule was *"all Roblox scary myths are true because **you** can make them true"* and the *you* was never pinned down. Eleven and a half hours later he opens it to everybody — a rule with nobody at the top of it, in a file that is one long argument about who is above whom.
+- **Three required edits made and verified:** `LV_CYC` 11380.0 → **11402.0**, one `LV_BEATS` entry (**531 total**), one `lvSeg` range `[11380,11402) → 530`. Node harness walked `c` 0 → LV_CYC in 0.5 steps: **531 beats, 531 reachable, 0 gaps, 0 problems, PASS.**
+- **Capture scene `kashsoelacalata`** added to `tools/capture_screenshot.py`, freeze cyc **11400.5** (dt 20.5, every reveal landed). Opening block sits at `H*0.118`; the fixed 5-row ladder band at `H*0.461-0.539` is kept free of text.
+
 ## 2026-08-29 — MAKE THEM TRUE (BEAT 529)
 
 Based on Toby's 2026-08-29 lore, one message in the **"More of Pero."** thread at **9:17:47 PM**, eight hours, thirty minutes and twelve seconds after BEAT 528 and the longest gap between any two of the day's ten messages. His own typing is two sentences; everything from *"Got it — in Newtale/Classics, Roblox scary myths become true because Pero can make them true"* onward, including the "Pero's current under-map state" list and the "Clean canon update" block, is pasted AI commentary and is not drawn.
