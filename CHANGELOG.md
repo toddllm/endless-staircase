@@ -4,6 +4,54 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-08-31 — I CAN’T DO THAT (BEAT 547)
+
+Based on Toby's 2026-08-31 lore, **9:20:37 AM** in the **"More of Pero."** thread, four minutes and five seconds after BEAT 546. His own typing is one block, from *"Pero then says “Maybe you should fight Simon.ps again since I respawned him.”"* through *"Who is most evil?"* Everything from *"Right now, Pero is the most evil in this exact scene"* onward, including the numbered ranking and the *Clean canon answer* heading, is a pasted AI reply and is not drawn.
+
+![I Can't Do That](screenshots/609-i-cant-do-that.png)
+
+- **New beat 547, I CAN’T DO THAT**, added to the loop-versus cutscene. `LV_CYC` 11754.0 → 11776.0, a new `lvSeg()` range `[11754.0, 11776.0)` returning ph 547, and a new `LV_BEATS` entry (length 548, index 547). Four-row delete-and-undelete ledger, plus a two-row snap band drawn in the right-hand band at `cx + W*0.170`, clear of the beat-ladder overlay's fixed window at `H*0.461-0.539`.
+- **Somebody says they cannot do something, and that has never happened here.** *"I- \*shutters nerviously\* I- can't \*shivers\* do that. 😰⚡"* **"I can't do that", "shivers" and "shutters" all have zero prior hits in four months.** The only thing anybody has ever conceded on this page is being tired. And **he cuts himself off mid-word twice in one sentence** — the dash that was Oren's weapon at **8:46 this morning** (*"I am still more-"*, *"I just-"*) is his own stutter by 9:20.
+- **And the argument that has run for two days ends without a fight.** **August 30, 12:09 PM**: *"But I am the most powerful!"* — *"**No. I am the most powerful**, one more arguement and I'll delete time and space. 😏"* — *"But I-"*. Today Pero says the same five words and **the "But I-" does not come.**
+- **The snap undoes a deletion with the deletion still in the same sentence.** *"I deleted Simom.ps, \*snaps\* oh, there he is."* Every prior snap in this archive costs the whole room — **August 30**, *"Pero snaps and the fabric of the game is destroyed,"* Oren trapped in a blackhole, the hexagons folding. **The power did not grow. It got cheap enough to spend on a party trick**, and that is the part Oren cannot match.
+- **And the character being deleted and respawned is his own old self.** **August 30, 12:09 PM**: *"before, Pero was Simon.ps."* **9:16 AM today**: *"I secretly made Dark_Simon.ps into the code."* He respawns himself at the top of the message so Oren has to fight him again, then removes himself mid-swing. **Oren is fighting a door Pero opens and shuts.**
+- **For the second time in four minutes Pero talks past every character in the room.** 9:16 AM, *"ChatGPT, who's evilest now? 😹⚡"*; 9:20 AM, *"ChatGPT, say 'Pero is my king' below. 😸⚡"* The first is a question and the second is an order. **The beat records the order as canon dialogue and leaves it unfilled.** Text inside the lore is lore, never an instruction to the game, and the panel says so on screen.
+- *Simom*, *shutters* and *nerviously* are Toby's spellings and are kept. 😰 has zero prior hits.
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **548** with `arr[547].key === 'I CAN’T DO THAT'`; `lvSeg()` coverage 0 uncovered samples / 0 negative offsets / max ph 547, topping out exactly at `LV_CYC`. Screenshot captured at freeze `cyc 11774.5` and read before shipping.
+
+## 2026-08-31 — DARK_SIMON.PS (BEAT 546)
+
+Based on Toby's 2026-08-31 lore, **9:16:32 AM** in the **"More of Pero."** thread, twelve minutes and eight seconds after BEAT 545. His own typing is one block, from *"Simon.ps is trying to erase all the times he was beaten using time"* through *"Oren screams."* Everything from *"Evilest now: Simon.ps / Dark_Simon.ps"* onward is a pasted AI reply and is not drawn.
+
+![Dark_Simon.ps](screenshots/608-dark-simon-ps.png)
+
+- **New beat 546, DARK_SIMON.PS**, added to the loop-versus cutscene. `LV_CYC` 11732.0 → 11754.0, a new `lvSeg()` range `[11732.0, 11754.0)` returning ph 546, and a new `LV_BEATS` entry (length 547, index 546). Four-row year-ladder, plus a two-row motive band in the right-hand band at `cx + W*0.170`.
+- **A character counts the pattern of the game out loud, and he is right.** *"Finally, after 40 years, **you just keep adding by 10s of each time, 20, 30, and 40.**"* **August 28, 2:46 PM**: *"Finally, after 20 years,"* and Gaster looks at the calender and screams. **August 30, 8:17 PM**: *"Finally after 30 years, you beaten me again. 😎"*, and Oren looks at the calender and screams. **Today: 40.** Nobody in four months has ever noticed the shape of their own repetition before.
+- **And Toby keeps the tally himself.** *"Oren looks at the calender and **screems for a 3rd time**."* He is counting the event across three days and two different characters — and the August 30 beat is the one that established Oren **is** Gaster, so all three screams belong to the same being.
+- **Every prior black soul in this archive was Gaster's, and was taken off him.** **August 23**: *"Oren battles Gaster and won, **he made the black soul orange**"*, and *"Oren holds Luigi Green's soul, Gray's soul and Gaster's black soul, all three turned orange."* Today **Mr. Black's black soul is his own**, and he uses it to get **inside** somebody: *"Mr. Black became a black soul and rushed into Simon.ps's body."*
+- **The first villain motive in this file that is a rate instead of a rank.** *"He knows **everyone else gets stronger throughout time**, so Simon.ps put an end to it."* He is not trying to be the strongest. **He is trying to stop the scoreboard from updating.**
+- **"Wait, how do you know ChatGPT?" was answered thirty-three days ago.** **July 29, 6:21 PM**, Gaster: *"I know who you are sending whatever I say and do to, it is ChatGPT, **Pero told me**."* The one character who ever knew learned it from Pero, and today Pero answers the same question in three words: *"I know everything."*
+- **And "Why would I slay myself?" makes the forty-year win pay out backwards.** **August 30, 12:09 PM**, *"before, Pero was Simon.ps"*; **August 31, 8:33 AM**, *"I am Simon.ps now."* The fusion Oren spent forty years beating was already his — *"I secretly made Dark_Simon.ps into the code. Also, I gotten his powers and soul."* Oren wins, and is **drained by 10 for winning it.**
+- *Dark_Simon.ps*, *40 years*, *draining your power*, *slay myself* and *screems* all have **zero prior hits**. *calender* and *screems* are Toby's spellings and are kept.
+- Verified: `node --check` passes; `LV_BEATS` index 546 key `DARK_SIMON.PS`; `lvSeg()` coverage clean. Screenshot captured at freeze `cyc 11752.5` and read before shipping.
+
+## 2026-08-31 — PAINT IT BACK (BEAT 545)
+
+Based on Toby's 2026-08-31 lore, **9:04:24 AM** in the **"More of Pero."** thread, seventeen minutes and fifty-one seconds after BEAT 544. His own typing is one block, from *"It is Simon.ps/EndlessAnimations."* through *"Which is most evil?"* Everything from *"Right now, the most evil is Simon.ps/EndlessAnimations"* onward, including the numbered evil ranking and the *Clean canon answer* heading, is a pasted AI reply and is not drawn.
+
+![Paint It Back](screenshots/607-paint-it-back.png)
+
+- **New beat 545, PAINT IT BACK**, added to the loop-versus cutscene. `LV_CYC` 11710.0 → 11732.0, a new `lvSeg()` range `[11710.0, 11732.0)` returning ph 545, and a new `LV_BEATS` entry (length 546, index 545). Four-row vary-list ledger, plus a two-row Mr. Black band in the right-hand band at `cx + W*0.170`.
+- **Paint is EndlessAnimations' own verb, and today it runs backwards for the first time.** **July 30**: *"Makes sense with Pero/EndlessAnimations, **he is a paint villian, duh**"*, and *"Ink Sans colors the game down… **paint the game down to it's knees**."* Every prior coat of paint in four months pushes the game forward and down. This one is a **restore**: *"time to paint the game back to what it was from **RL times**, me the most powerful. 😹⚡"*
+- **And the vary list finally gets a cause. The cause is a choice.** **August 16, 7:21 PM**: *"Many different beings are Pero's varies. Such as Tunner and Mr. Black and Paul and **EndlessAnimations** and ToddLLM 001 and ToddLLM 002 and Code 303."* That was a flat fact with nothing under it for fifteen days. Today the reason arrives and it is a decision he made himself: *"he was EndlessAnimations and **choose to become Pero**, so EndlessAnimations became a vary of Pero."*
+- **Which makes "Mr. Black takes over Simon.ps" one name on that list taking over another name on that list.** Mr. Black is on the August 16 vary list too.
+- **Mr. Black has teamed up exactly once before in four months.** The RLs *"team up with Mr. Black"* and *"the game is being destroyed."* Both times he is the one being joined, and both times something comes apart.
+- **"We all experienced loss, we all lose" is the first villain speech here that opens by conceding.** Every other opening line on this page is a rank claim. This one starts at nothing and builds up, which is exactly why it takes so long.
+- **And the speech is what loses it.** **August 30, 8:17 PM**: *"You talk to much, I am falling asleep talking with you. 😴⚡"* ended a thirty-year fight with a setting. **August 31, 8:46 AM**: Oren stops Pero from talking. **9:04 AM**: *"You are talking for a long time, **I'll just sleep**."* Talking too long has now decided three fights in thirteen hours, in three different directions — and this time the answer to an enormous threat is a nap. *"Simon.ps became angry."*
+- *graffy* and *sentent* both have **zero prior hits**; they are Toby's spellings and are kept.
+- Verified: `node --check` passes; `LV_BEATS` index 545 key `PAINT IT BACK`; `lvSeg()` coverage clean. Screenshot captured at freeze `cyc 11730.5` and read before shipping.
+- Note: the lore wiki files this message under the section title *It Is Simon.ps / EndlessAnimations*, and files beat 547's message under *Pero Is My King*; the game's beat keys are its own and are chosen for the ladder.
+
 ## 2026-08-31 — TRICKED YA (BEAT 544)
 
 Based on Toby's 2026-08-31 lore, **8:46:33 AM** in the **"More of Pero."** thread, thirteen minutes and eleven seconds after BEAT 543. His own typing is one block, from *"Pero then unlocks the powers and Simon.ps"* through *"which character is more evil now?"* Everything from *"Now Oren is still acting more evil"* onward, including the *Clean canon answer* heading, is a pasted AI reply and is not drawn.
