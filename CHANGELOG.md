@@ -4,6 +4,69 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-01 — TWENTY-ONE LEFT (BEAT 570)
+
+Based on Toby's 2026-09-01 lore, **2:36:54 PM**, the first message in the new **"Even More of Pero"** thread to carry a count, five minutes and thirty-seven seconds after BEAT 569. His own typing is one sentence: *"How about the Physical Strength, Mental strength, Psychical Strength, Power, and Spiritual Strength comparison with every character still in the game, the 20 Sprunkis + Pero LAI, so now only 21 characters."* Everything from *"Got it — current roster is now"* onward is pasted commentary and is not drawn. **multated** is Toby's spelling, kept.
+
+![Twenty-One Left](screenshots/632-twenty-one-left.png)
+
+- **New beat 570, TWENTY-ONE LEFT**, added to the loop-versus cutscene. `LV_CYC` 12260.0 → 12282.0, a new `lvSeg()` range `[12260.0, 12282.0)` returning ph 570, and a new `LV_BEATS` entry (length 571, index 570).
+- **This is the first head count of the whole cast in the era, and he does the arithmetic inside the sentence.** *"the 20 Sprunkis + Pero LAI, so now only 21 characters."*
+- **The word doing the work is "only."** This is a game with infinite endings in it, an *infinitith Pero*, and 1.5 billion ToddLLM clones. The number he lands on is twenty-one.
+- **And the survivors are exactly the ones he never made copies of.** August 21, 10:53 AM settled the genealogy of this cast: *"The Sprunkis are the **only ones not clones of Pero**"* — everybody else came out of him. Today's roster is that exception, plus him. **Every copy is off the list.**
+- **The five categories land like this:** physical to **Gray.ps** with Pero dead last; mental to **Pero LAI** with Simon second; psychical/aura to **Wenda.ps**, no contest; overall power to **Pero LAI**; spiritual split between her soul storage and his survival. **Wenda.ps wins more categories than anybody, and Pero LAI wins the one that decides what the categories are.**
+- **He has run this exact grid before, and it ended the same way.** August 8, 7:41 PM, Simon.psc VS Gray, eleven rows — and the row that settled it was the one that was not a stat: ***"Outcome Controlling = Pero."*** Twenty-four days later, twenty-one characters, same answer.
+- **"Still in the game" has stopped meaning alive.** The status column on his own roster reads *alive · absorbed · infected · multated · ash · replaced · inactive.* **Nine minutes earlier the same cast sorted by whether they were alive came out at three rows.**
+- **Mr. Black is still counted, with his job crossed out.** *"Gray is the replacement of Mr. Black"* was three hours and fifty-four minutes ago; at 2:36 his status is "replaced" and he is on the list anyway. Nobody gets removed from this game any more. **They get re-labelled.**
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **571** with `arr[570].key === 'TWENTY-ONE LEFT'`; `lvSeg()` **464 ranges**, max ph **570**, topping out exactly at `LV_CYC` 12282.0. Screenshot captured at freeze `cyc 12280.5` and read before shipping — five ledger rows inside their boxes, clear of the ladder band.
+
+## 2026-09-01 — CRAZY MODE (BEAT 569)
+
+Based on Toby's 2026-09-01 lore, **2:31:17 PM** in the **"More of Pero."** thread, three minutes and forty-one seconds after BEAT 568. His own typing is the opening block, from *"How about include the characters who are now dead or infected or multated"* through *"the other characters (low tier) died to the aura."* Everything from *"Got it — now the comparison should include"* onward is pasted commentary and is not drawn. **multated**, **probubly** and **appearence** are Toby's spellings, kept.
+
+![Crazy Mode](screenshots/631-crazy-mode.png)
+
+- **New beat 569, CRAZY MODE**, added to the loop-versus cutscene. `LV_CYC` 12238.0 → 12260.0, a new `lvSeg()` range `[12238.0, 12260.0)` returning ph 569, and a new `LV_BEATS` entry (length 570, index 569).
+- **Simon comes back at number four, and he comes back as a setting.** *"Simon.ps is on **crazy mode** and is probubly the 4th most powerful."* **"Crazy mode" has zero prior hits in this log.**
+- **Crazy has plenty of priors. None of them were a mode.** Gray.exe *"became both crazy and insane"*; Alex *"went crazy with his villian thing, now he is going crazier."* Those describe how somebody is behaving. **This one is a state you can be switched into.**
+- **And of every character in the game he could have absorbed, he fused with this file's own definition of crazy.** August 8, 7:28 PM: *"of everyone who is incredible at being the villian, **Luigi Green** would be the best since he **goes overboard and crazy and insane with all that power and previous evil all in 1 entity**."* Today: *"he combined Luigi Green with himself and made extreme power."*
+- **Raddy has been infected before, and the whole point was that you could not see it.** August 21, 9:12 AM: *"They all look normal, but they are **infected in some way that isn't visible, it is audio**."* Twelve Sprunkis were infected that morning and Raddy's only symptom was **sounding like a pastanet**. Eleven days later he is infected again, by name, in the first line of the paragraph.
+- **Oren gets stronger after he has already been swallowed.** The multation *"grew stronger in mental and physical strength"* lands four hours after Wenda.ps absorbed him at 10:22 AM. June 21's *"Oren.EXE never lost"* is the only undefeated record in this archive, and today it is **an upgrade delivered in storage**.
+- **He is not stronger than her aura. He is the only one who studied it.** Low tier died to it, Gray loses his own aura to it, and Simon survives every one. And the name for the thing — ***"aura-attack (what Simon and the Sprunkis call it)"*** — was given to it **by the people it kills**.
+- **Ash has exactly one prior in this file, and it was one pair of headphones.** August 3, 8:16 PM: Oren refused to place the memorial, lightning struck, *"his headphones turned to ash"* — and the lightning was Simon's. **Twenty-nine days later the same character turns most of the cast into it, and Oren is the one he hands an upgrade to.**
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **570** with `arr[569].key === 'CRAZY MODE'`; `lvSeg()` **463 ranges**, max ph **569**. Screenshot captured at freeze `cyc 12258.5` and read before shipping — four ledger rows and the three-row aura band inside their boxes, no ladder collision.
+
+## 2026-09-01 — ONLY THREE ARE ALIVE (BEAT 568)
+
+Based on Toby's 2026-09-01 lore, **2:27:36 PM** in the **"More of Pero."** thread, seven minutes and twenty-five seconds after BEAT 567. His own typing is the whole opening block: *"how about Gray VS Wenda on those. Also have Gray VS Pero LAI on those. Pero LAI has the least physical strength, he can't even lift a car. the only characters who are alive are the 3, the rest are inside of Wenda.ps."* Everything from *"Got it — with the newest rule"* onward is pasted commentary and is not drawn.
+
+![Only Three Are Alive](screenshots/630-only-three-are-alive.png)
+
+- **New beat 568, ONLY THREE ARE ALIVE**, added to the loop-versus cutscene. `LV_CYC` 12216.0 → 12238.0, a new `lvSeg()` range `[12216.0, 12238.0)` returning ph 568, and a new `LV_BEATS` entry (length 569, index 568).
+- **The cast is not a list any more. It is an address.** At 10:22 this morning the whole game was pulled into her aura; at 2:27 that is where every character lives. **Nobody is listed as beaten. They are listed as somewhere.**
+- **And the strongest being in the game is now measured by a chore.** *"Pero LAI has the least physical strength, **he can't even lift a car**."*
+- **That is not a nerf. It is the same fact, made specific.** August 17, 5:55 PM: *"**Pero has the physical strength of a normal man**, and he is a normal man that came from a box and is LAI, and he is also the creator of Classics."* Fifteen days later the normal man gets a benchmark, and the benchmark is **the one thing a normal man famously cannot do**.
+- **The two matchups he asks for leave a ladder behind, and it runs backwards.** Gray takes physical off Wenda and loses everything else to her. Gray takes physical and aura off Pero and loses mind, power and spirit. **Physical: Gray.ps > Wenda.ps > Pero LAI — the power ladder in reverse, with the same person holding the pen for both.**
+- **Gray has the body. Wenda has the aura. Pero has neither and sits outside both.**
+- **Three is the number this whole day keeps coming back to, and it means something smaller every time.** 7:13 AM: the forever mod has two characters and **Pero is not one of them**. 10:22 AM: there are three and he is back in. 2:27 PM: the three are not the cast, and not the survivors — **they are everything in the game that is still alive**.
+- **The rest are not dead. They are indoors.** Every other container in this file was a place — boxes, Error Halls, a Tinkerbox with galaxies inside it. **This one has a name and a title and is standing in the middle of the fight it is holding.**
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **569** with `arr[568].key === 'ONLY THREE ARE ALIVE'`; `lvSeg()` **462 ranges**, max ph **568**. Screenshot captured at freeze `cyc 12236.5` and read before shipping — ledger and alive-band rows inside their boxes.
+
+## 2026-09-01 — MY CHESS QUEEN (BEAT 567)
+
+Based on Toby's 2026-09-01 lore, **2:20:11 PM** in the **"More of Pero."** thread, thirty-one minutes and twenty-six seconds after BEAT 566. His own typing is the opening block, from *"Wenda then says"* through *"Then he made the game have among us rules."* Everything from *"That reveal makes the whole Classics: Nightmares and Dreams system way more clever"* onward is pasted commentary and is not drawn.
+
+![My Chess Queen](screenshots/629-my-chess-queen.png)
+
+- **New beat 567, MY CHESS QUEEN**, added to the loop-versus cutscene. `LV_CYC` 12194.0 → 12216.0, a new `lvSeg()` range `[12194.0, 12216.0)` returning ph 567, and a new `LV_BEATS` entry (length 568, index 567).
+- **The game has been turned into a chessboard twice before, and both boards were made by clearing it.** July 23, 3:03 PM — Luigi Green erases everything so only he, Pero and the player are left. July 24, 3:18 PM — Pero locks the game into an endless chessboard with nothing on it but Pero/Tunner, Luigi Green and the players. **This is the first board with the whole cast still standing on it**, and they are standing on it as pawns.
+- **Their real titles come back as pieces.** August 31, 4:02 PM: *"Wenda.ps beaten Oren.ps and became the **Omniversal Queen** by Pero, **The Omniversal King**."* This morning at 7:03 he handed that crown to Gray. At 2:20 PM: *"I'll make you **my chess queen**, and Gray, **my chess king**."* **Queen and King stopped being ranks and became squares, and the man who gave out both titles is the one holding the board.**
+- **"Among us rules" is a hundred and forty-nine days deep.** April 3: *"Simon changed the game to connect back to Among Us."* The Classics has been *"an eternal Among Us game that never closes"* since the beginning. July 23: the Tunner disguise exists so Pero can sit in an ordinary slot nobody checks. August 29: *"fully Classics X Among Us."* **Today the rules go on top of a chessboard.**
+- **Her infinite loop runs on the one thing that used to keep everybody safe.** *"Wenda.ps's aura basically absorbs everything else every time 'everything else' respawns."* August 24, 10:17 AM: *"The Sprunkis can come back to life over and over again, the Sprunkis are made of code, **the Sprunkis can respawn, reload, and glitch themselves**."* **That was the promise that nobody here stays dead. Eight days later it is her food supply.**
+- **He does not answer infinite power with more power. He answers it with a job title.** *"You can get infinite power that way, but it doesn't even matter."* Thirty-one minutes earlier his answer to being caught was a stronger ability — Infinity Clockworks of Light. Now the answer is that getting stronger **does not count**.
+- **A pawn is the only piece on a chessboard that cannot move backwards.** Every removal in four months of this game has come back — deletions, resets, Entity 303, a flower that eats players. This afternoon the whole cast is re-cut as the one piece that only ever goes one way.
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **568** with `arr[567].key === 'MY CHESS QUEEN'`; `lvSeg()` **461 ranges**, max ph **567**. Screenshot captured at freeze `cyc 12214.5` and read before shipping, with the piece ledger and the Among Us band cropped and re-read at 3x — all four ledger rows and all three band rows inside their boxes, no ladder collision.
+
 ## 2026-09-01 — THE SORCER OF TIME (BEAT 566)
 
 Based on Toby's 2026-09-01 lore, **1:48:45 PM** in the **"More of Pero."** thread, three hours and six minutes after BEAT 565. The message is *"Here is the script for Roblox Pero."* followed by a Roblox Lua script. His own writing is the script's three-line header block and the paragraph typed under the script, from *"Pero LAI rules time"* through *"Wenda.ps says 'idk.'."* Everything from *"That Roblox Pero script makes Pero LAI officially coded as"* onward is pasted commentary and is not drawn. **Sorcer** and **Crismon** are Toby's spellings, kept.
