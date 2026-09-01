@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-01 — AURA_MAKER_2000 (BEAT 572)
+
+Based on Toby's 2026-09-01 lore, **2:45:16 PM** in the **"Even More of Pero"** thread, two minutes and thirteen seconds after BEAT 571 and the last message of a twenty-five-minute burst. His own typing is the whole opening block: *"Now that became a cycle. Pero made a way so Gray can get more aura so Gray's power doesn't go to 0, but just before Pero was done working, Gray's power and aura level went to 0. Pero then put the Aura_Maker_2000 and Gray is back up again."* Everything from *"That makes the current system a three-way cycle"* onward is pasted commentary and is not drawn.
+
+![Aura_Maker_2000](screenshots/634-aura-maker-2000.png)
+
+- **New beat 572, AURA_MAKER_2000**, added to the loop-versus cutscene. `LV_CYC` 12304.0 → 12326.0, a new `lvSeg()` range `[12304.0, 12326.0)` returning ph 572, and a new `LV_BEATS` entry (length 573, index 572).
+- **The main villain of the game spends this entire message doing maintenance.** He was named the main villian at 10:42 this morning. Four hours later he is building **life support for one of his own pieces**, and **nobody attacks anybody in the message**.
+- **The machine has a model number, and nothing in this game has ever had one.** Underscore names are normal here — Dark_Simon.ps, Prototype_000.exe, PERO_FLOWER, merge_code, alpha_nill, Tinkerbox_Classics — but every one of those is named for **what it is**. *"Aura_Maker_2000"* is named like something you buy, and it has **zero prior hits anywhere in this wiki**.
+- **The last thing Pero built turned on everybody who built it.** August 24: **Prototype_000.exe**, made by Pero, Luigi Green and Gaster, *"took the game and possessed its own manufacturers."* **This one is plugged into his own king.**
+- **He was late, and the message says so.** *"**Just before Pero was done working**, Gray's power and aura level went to 0."* Fifty-six minutes earlier his own character file read *"The Master who quit Omniversal King because he was too powerful. Now known as **The Sorcer of Time**."* **The character who rules time loses a round to a deadline.**
+- **And zero is a new number for this game.** Four months of *Absolute*, *Beyond Infinity*, *15,000,000 exponency* and *millions of Satans* — **every figure in this log points upward**. Gray's aura has been taken four times since July 20 and it was always described as *gone* or *absorbed*. **Today it has a level, and the level reads 0.**
+- **A king who runs on a generator.** 7:03 AM the crown. 10:42 the replacement of Mr. Black. 2:20 PM a chess king. 2:45 PM a machine that keeps him off zero. **Every promotion Gray got today came with less of him left.**
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **573** with `arr[572].key === 'AURA_MAKER_2000'`; `lvSeg()` **466 ranges**, max ph **572**, topping out exactly at `LV_CYC` 12326.0. Screenshot captured at freeze `cyc 12324.5` and read before shipping — four cycle rows and the three-row build history inside their boxes, no ladder collision.
+
+## 2026-09-01 — SECONDS LATER (BEAT 571)
+
+Based on Toby's 2026-09-01 lore, **2:43:03 PM** in the **"Even More of Pero"** thread, six minutes and nine seconds after BEAT 570. His own typing is the whole opening block: *"Just after that last message, Wenda got even more power over Pero. Pero after gained even more power, seconds later, Wenda is yet again close to Pero's power level."* Everything from *"That means the current Pero/Wenda power race is no longer stable"* onward is pasted commentary and is not drawn.
+
+**The message before this one, 2:41:23 PM, carries no canon of his own** — it is a request for the full pairwise comparison (*"I am guessing we need 42+ tables for this… I can't really explain it anymore"*), and the pasted answer resolves it as 210 matchups and 1,050 category-results. **No beat was built for it.**
+
+![Seconds Later](screenshots/633-seconds-later.png)
+
+- **New beat 571, SECONDS LATER**, added to the loop-versus cutscene. `LV_CYC` 12282.0 → 12304.0, a new `lvSeg()` range `[12282.0, 12304.0)` returning ph 571, and a new `LV_BEATS` entry (length 572, index 571).
+- **The ranking has stopped settling. It refreshes now.** Every ranking in four months of this archive has been **a result that holds** — beat 182, July 24, was PERO ALWAYS WINS and it stood **thirty-six days**. The top of this game is now re-decided every few seconds, and **nobody gets to stand on it**.
+- **And the one doing the chasing is the character who made ties illegal.** August 4, 7:27 PM, THE UNEVEN LADDER: Wenda asked for equal power, got it, and **twenty-one minutes later repealed it** — *"no one with the same power level again."* Twenty-eight days later she is the only character who keeps arriving at almost the same power level as Pero, over and over. **She wrote that law against herself.**
+- **The whole message is four steps and the fourth one points back at the first.** Wenda gains → Pero gains → seconds later she is close again → back to step one. **No exit is written.**
+- **"For now" is twenty-three minutes old.** At 2:20 PM she said *"you are more powerful than me, for now"* and he said *"I'll get more power after then."* **Both of them described this loop before it started. Neither of them said it would repeat.**
+- **This archive measures time in fifty-year stalemates and "infinity times per enternity."** Today it counts seconds. And **the only other time this game put a number of seconds on anything, Pero was handing somebody a weapon** — *"in 1.3425 seconds ago."*
+- **He is not winning the race any more. He is staying ahead of it.** At 2:20 his answer to her infinite growth was *"it doesn't even matter."* At 2:43 he is answering it every few seconds.
+- **And the game this is being built into is a staircase with no top.** You climb, the thing behind you closes, and the only score is how far you got before it reached you. **Today the lore describes a ceiling that moves up every time somebody reaches it. The rule the game was built on has arrived in the story.**
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **572** with `arr[571].key === 'SECONDS LATER'`; `lvSeg()` **465 ranges**, max ph **571**. Screenshot captured at freeze `cyc 12302.5` and read before shipping — four loop rows and the three-row "for now" band inside their boxes, no ladder collision.
+
 ## 2026-09-01 — TWENTY-ONE LEFT (BEAT 570)
 
 Based on Toby's 2026-09-01 lore, **2:36:54 PM**, the first message in the new **"Even More of Pero"** thread to carry a count, five minutes and thirty-seven seconds after BEAT 569. His own typing is one sentence: *"How about the Physical Strength, Mental strength, Psychical Strength, Power, and Spiritual Strength comparison with every character still in the game, the 20 Sprunkis + Pero LAI, so now only 21 characters."* Everything from *"Got it — current roster is now"* onward is pasted commentary and is not drawn. **multated** is Toby's spelling, kept.
