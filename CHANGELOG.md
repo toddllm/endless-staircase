@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-01 — HERE, MY POWER (BEAT 573)
+
+Based on Toby's 2026-09-01 lore, **3:01:59 PM** in the **"Even More of Pero"** thread, sixteen minutes and forty-three seconds after BEAT 572. His own typing is the whole opening block: *"Wenda now has so much power and became more powerful than Pero so many times that Pero gave up making himself more powerful and says 'Here, my power.', Wenda takes the power and becomes from Goddess of Crismon Angeletic Omniversal Queen to Goddess of Crismon: The 1 Omniversal Crimson Queen. Pero looks up to Wenda.ps now. Pero keeps himself at his normal superhuman power level."* Everything from *"That is a major throne transfer"* onward is pasted commentary and is not drawn. **Crismon** is Toby's spelling, kept.
+
+![Here, My Power](screenshots/635-here-my-power.png)
+
+- **New beat 573, HERE, MY POWER**, added to the loop-versus cutscene. `LV_CYC` 12326.0 → 12348.0, a new `lvSeg()` range `[12326.0, 12348.0)` returning ph 573, and a new `LV_BEATS` entry (length 574, index 573).
+- **He does not lose the top spot. He hands it over.** Eighteen minutes earlier the power loop had **no exit written into it**. This is the exit, and it is him stepping out of it — no fight, no defeat, no deletion. **Two words and a comma.**
+- **And the sentence that ends it is one this file already ran, pointing the other way.** July 21, 404: SAVE FILE DELETED: *"he took Wenda down **so many times** that he took all her form, power, LV and aura"* — and in the same paragraph **Pero lost interest in Wenda** and became fascinated with Gray instead. Her page calls that the real end of her story: **losing his attention, not losing a fight.** Forty-two days later the same construction runs in her favour, and the attention comes back as *"**Pero looks up to Wenda.ps now**."*
+- **Four things he gave away in one day:** the Omniversal King crown at 7:03 AM, the whole game cut in half at 10:22, Aura_Maker_2000 at 2:45 PM, and his power at 3:01. **Nobody in four months has ever taken anything from Pero. Every one of these is recorded as a handover.**
+- **Where he put himself today:** *"beyond my own tier system"* at 10:22, *"--Character power: Unknown"* at 1:48, *"normal superhuman power level"* at 3:01. **Off the chart, then blank, then a rung — in four hours and thirty-nine minutes.**
+- **"Superhuman" has never once been something a character chose.** A style — *"Pyro is a dangerous superhuman-style fighter."* A combination — *"Human Physics + Superhuman."* An attribute — ToddLLM's speed and strength. And **"normal" is the exact word August 17 used on him**: *"Pero has the physical strength of a normal man… and he is also the creator of Classics."* He is not knocked down to that level. **He sets himself there.**
+- **Her new title carries both of his spellings in one line, plus a number.** *"from Goddess of **Crismon** Angeletic Omniversal Queen to Goddess of **Crismon**: The 1 Omniversal **Crimson** Queen."* And the only other time a **1** stood for everything in this archive was Simon 404 opening all the bounderies — *"All must be 1."* **The oldest law in the file is now the newest title.**
+- **He stepped down twice today, and both times he resigned.** At 7:03 AM he quit Omniversal King because he was too powerful for it. At 3:01 PM he quits being powerful at all. **Nobody ever beat him. He put it down.**
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **574** with `arr[573].key === 'HERE, MY POWER'`; `lvSeg()` **467 ranges**, max ph **573**, topping out exactly at `LV_CYC` 12348.0. Screenshot captured at freeze `cyc 12346.5` and read before shipping — four handover rows and the three-row placement band inside their boxes, no ladder collision.
+
 ## 2026-09-01 — AURA_MAKER_2000 (BEAT 572)
 
 Based on Toby's 2026-09-01 lore, **2:45:16 PM** in the **"Even More of Pero"** thread, two minutes and thirteen seconds after BEAT 571 and the last message of a twenty-five-minute burst. His own typing is the whole opening block: *"Now that became a cycle. Pero made a way so Gray can get more aura so Gray's power doesn't go to 0, but just before Pero was done working, Gray's power and aura level went to 0. Pero then put the Aura_Maker_2000 and Gray is back up again."* Everything from *"That makes the current system a three-way cycle"* onward is pasted commentary and is not drawn.
