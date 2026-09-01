@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-01 — THE MAIN VILLIAN (BEAT 565)
+
+Based on Toby's 2026-09-01 lore, **10:42:26 AM** in the **"More of Pero."** thread, nineteen minutes and fifty-seven seconds after BEAT 564. His own typing is the opening block, from *"Perfect, looks as if it came out from lore"* through *"he gave half to Wenda and half to Gray."* Everything from *"That pushes the lore into a really clear new power structure"* onward is pasted commentary and is not drawn. **villian, discised, spirils** and **enternity** are Toby's spellings, kept.
+
+![The Main Villian](screenshots/627-the-main-villian.png)
+
+- **New beat 565, THE MAIN VILLIAN**, added to the loop-versus cutscene. `LV_CYC` 12150.0 → 12172.0, a new `lvSeg()` range `[12150.0, 12172.0)` returning ph 565, and a new `LV_BEATS` entry (length 566, index 565).
+- **Twenty minutes after stepping off his own chart, Pero takes a job.** At 10:22 he was *"beyond my own tier system of my own game"* — no rank at all. At 10:42 he has a title again, stated flat, with no fight attached: *"**Pero LAI is the main villian of the game.**"*
+- **That chair has changed hands three times in twenty-six days and has never been his.** August 6, 4:05 PM: *"Flower is like the main villian **discised as a best friend**"* — and Flower was removed with a gesture the same evening, before he got to betray anybody. August 11: *"**Mr. Black** is the main villian of both games of Sprunki and Classics/Tinkin."* August 16: Gaster's *"But he is the main villian of the game!"*, which this archive called **a job title, not a rebuttal.**
+- **And the same sentence that hands Pero the title retires the man who held it in August.** *"Gray is the replacement of Mr. Black."*
+- **Which closes a question Toby asked himself three hours and forty-nine minutes earlier.** At 6:53 AM his whole message was *"What Classics character does best with **Mr. Black's job**?"* At 7:03 the answer was Pero's opinion — *"Gray would be perfect!"* At 10:42 it is canon. **He asked the question at breakfast and settled it before lunch.**
+- **He has been standing next to that chair since August 8:** *"**Pero was mistaked of being a villian**, and he dies from natural causes anyway."* Twenty-four days later he is not mistaken.
+- **His loss count goes zero, one, infinity in three days and four hours.** Beat 182, July 24, was PERO ALWAYS WINS and held thirty-six days; August 29, *"Pero lost for the very first time"*; August 31, *"Pero lost ONCE against Gaster"*; today, *"faced loss **infinity times per enternity**."* **The rule did not bend. It inverted.**
+- **And both times in four months that he has stopped to tell you how to say the name, he had just written an infinity.** July 28: *"the process continued to **infinitith Pero**, then all infinity merged into **OmniPearoh/OmniPero (PEAR-OH)**."* Today: *"faced loss **infinity times per** (PERo or PERoh, pronouced **'PEAR-OH'**, whatever you want to say it) **enternity**."*
+- **Third time today he cuts something in half between Wenda and Gray, and Oren pays every time** — the game's name at 7:51, everything at 10:22, and now *"all the timelines and everything back **from Oren**… half to Wenda and half to Gray."*
+- **And the box comes back, except breaking it is how it opens:** *"they destroy the box, then the box **unfolds** into the newest Classics version."* Every other box here was a place to be shut inside. This one is a wrapper.
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **566** with `arr[565].key === 'THE MAIN VILLIAN'`; `lvSeg()` **459 ranges**, max ph **565**, topping out exactly at `LV_CYC` 12172.0. Screenshot captured at freeze `cyc 12170.5` and read before shipping, ledger band cropped and re-read at 3x — all four rows inside their boxes, no ledger/ladder collision.
+
 ## 2026-09-01 — BEYOND HIS OWN SYSTEM (BEAT 564)
 
 Based on Toby's 2026-09-01 lore, **10:22:29 AM** in the **"More of Pero."** thread, seven minutes and forty-four seconds after BEAT 563. His own typing is the opening block, from *"Wenda.ps stands there"* through *"I am now beyond my own tier system of my own game."* Everything from *"That makes the power structure very clear"* onward is pasted commentary and is not drawn.
