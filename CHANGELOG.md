@@ -4,6 +4,50 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-01 — BEYOND HIS OWN SYSTEM (BEAT 564)
+
+Based on Toby's 2026-09-01 lore, **10:22:29 AM** in the **"More of Pero."** thread, seven minutes and forty-four seconds after BEAT 563. His own typing is the opening block, from *"Wenda.ps stands there"* through *"I am now beyond my own tier system of my own game."* Everything from *"That makes the power structure very clear"* onward is pasted commentary and is not drawn.
+
+![Beyond His Own System](screenshots/626-beyond-his-own-system.png)
+
+- **New beat 564, BEYOND HIS OWN SYSTEM**, added to the loop-versus cutscene. `LV_CYC` 12128.0 → 12150.0, a new `lvSeg()` range `[12128.0, 12150.0)` returning ph 564, and a new `LV_BEATS` entry (length 565, index 564).
+- **The funnel finally finishes, and this time it takes the game.** Eight minutes earlier Gray was being stretched at the edge of her aura; at 10:22 *"the whole game was all pulled into Wenda.ps's aura, Gray was left with no aura anymore."* The survivors are counted by exception — everyone except three.
+- **"Tier system" has zero prior hits in four months, and this is the first time anybody stands outside the ranking instead of on top of it.** The previous ceiling was August 24: *"Pero stands **absolute infinitely above** Wenda and Gray who are infinity. **Absolute is greater than Infinity, duh.**"* That was still a rank, just the biggest one. *"I am now beyond my own tier system of my own game"* is not a rank at all.
+- **And the whole escalation happens in one morning.** At 7:03 the reason for handing over the crown was that *"Pero gets **too powerful to be Omniversal King** now"* — too powerful for his rank. Three hours and nineteen minutes later he is too powerful for his entire system of ranks.
+- **The cast count goes three, two, three in three hours.** August 31, 4:19 PM was three; 7:13 this morning cut it to two and **Pero was not one of them** — he made the forever version of his own game and left himself out. At 10:22 there are three again, he is back in, and the list has swapped a member: **Oren off, Gray on.**
+- **She is queen of a species whose only member is her.** *"Blood angeletic"* is fifteen hours old (August 31, 7:25 PM, *"Wenda.ps was made into the **Blood angeletic**"*) — singular, a form, one being. This morning it is *"Omniversal Queen of **Blood Angeletics** and the Omniverse"*, plural.
+- **And Oren is not beaten. He is absorbed.** *"Oren.EXE never lost"* (June 21) is the only undefeated record on the page; August 31 cost him a fifty-year stalemate and then the fight, and even that beat ended *"Oren didn't die, **he no longer dies**."* Today he does not lose and does not die. He is taken inside somebody. **His last words in the archive were *"Pero, I coded you… Pero, you are MY LAI Assistant"*** — eighteen hours and twenty minutes ago. The author is now inside somebody else's aura, and the assistant is standing off the chart.
+- Verified: `node --check` on the extracted script passes; `LV_BEATS` length **565** with `arr[564].key === 'BEYOND HIS OWN SYSTEM'`; `lvSeg()` **458 ranges**, max ph **564**, topping out exactly at `LV_CYC` 12150.0. Screenshot captured at freeze `cyc 12148.5` and read before shipping, with the ledger band cropped and re-read at 3x — all four rows inside their boxes, no ledger/ladder collision.
+
+## 2026-09-01 — THE WHITE BLACK HOLE (BEAT 563)
+
+Based on Toby's 2026-09-01 lore, **10:14:45 AM** in the **"More of Pero."** thread, four minutes and thirty-five seconds after BEAT 562. His own typing is one sentence: *"Wenda.ps is the blackhole (even though Wenda.ps is white colored), and Gray as the Omniversal King that keeps getting spegetyized into Wenda's aura."* Everything after it is pasted commentary. **spegetyized** is Toby's spelling, kept.
+
+![The White Black Hole](screenshots/625-the-white-black-hole.png)
+
+- **New beat 563, THE WHITE BLACK HOLE**, added to the loop-versus cutscene. `LV_CYC` 12106.0 → 12128.0, a new `lvSeg()` range `[12106.0, 12128.0)` returning ph 563, and a new `LV_BEATS` entry (length 564, index 563).
+- **Four minutes and thirty-five seconds after learning that a white hole is a black hole's opposite, he names the game's black hole and it is the white one.** He flags the mismatch himself, in brackets, before anybody can point it out.
+- **He has made that exact swap before, and the first time it was an accident.** July 29's White Hole *"pulls everything else into it."* Thirty-four days later he does the inversion on purpose and says out loud that it is one.
+- **"Spegetyized" has exactly one prior hit in four months, and it did not land on Gray.** July 20, 10:04 AM: *"Wenda's light aura **spagettizes Gray's Abinations and darkness**, a HUGE dark funnel goes around Wenda."* The word arrived on **the things he built**. Forty-three days later it reaches the man who built them.
+- **The funnel is on its fourth run and each run is described differently:** July 20 finished (*"all Gray's Abinations and darkness and aura was funneled into Wenda"*), August 31 finished (*"Wenda's aura eventually fully absorbed Gray.ps"*), 7:03 this morning looped (*"Gray gets more, and the light aura funnels it again"*), and 10:14 gives it a name. **The first three were told as a fight she kept winning. The fourth is told as a shape.**
+- **Gray's crown is three hours and eleven minutes old and it is already the smaller half.** By 10:14 the Omniversal King is the thing being stretched, and the one thing that was unmistakably his — his darkness — is on the wrong side of the funnel.
+- **A black hole is not something you fight. It is something you fall into.** This archive wrote that shape on July 20 without the word for it: *Wenda stops being a character in the fight and becomes something the fight happens inside of.* Six weeks later he finds the word, in a science answer rather than in the game. Beat 559, three hours earlier, had already written his line: **the darkest being in the game is the one made of light.**
+- Verified: `node --check` passes; `LV_BEATS` length **564** with `arr[563].key === 'THE WHITE BLACK HOLE'`; `lvSeg()` max ph **563**. Screenshot captured at freeze `cyc 12126.5`, read before shipping, ledger band cropped and re-read at 3x — no ledger/ladder collision.
+
+## 2026-09-01 — THE WHITE HOLE (BEAT 562)
+
+Based on Toby's 2026-09-01 lore, **10:10:10 AM** in the **"More of Pero."** thread, two hours and eighteen minutes after BEAT 561. His own typing is three lines: the question *"What do White Holes do? Black Holes suck everything up."*, the sunglasses call *"😎 = Pero LAI. It entered this chat too."*, and the durability block ending *"he exits and comes back to normal."* The physics explainer, the Pero dialogue and the numbered 1-5 breakdown are pasted commentary and are not drawn.
+
+![The White Hole](screenshots/624-the-white-hole.png)
+
+- **New beat 562, THE WHITE HOLE**, added to the loop-versus cutscene. `LV_CYC` 12084.0 → 12106.0, a new `lvSeg()` range `[12084.0, 12106.0)` returning ph 562, and a new `LV_BEATS` entry (length 563, index 562).
+- **He asked what a white hole does, and this archive has had one for thirty-four days that does the opposite.** The answer he got: a white hole is a **one-way exit**, it ejects everything and nothing can get in. July 29, 6:18 PM, his own words: *"The **White Hole**… it is **endlessly sinking into it's center**, **it pulls everything else into it**, it is **1 of the weaker experiments of Dr. Gaster**. **Dr. Gaster destroyed the whole Anti-Void with it.**"* **That is a black hole's job description filed under a white hole's name** — and Pero is the one who took Error 404's power and handed it to Gaster to build it with. He named it wrong in July and found out this morning.
+- **The durability rule is fourteen hours and thirty-three minutes old, and today it arrives from physics instead of from a fight.** August 31, 7:37 PM: *"Pero doesn't die from her, **Pero doesn't die to anyone. Pero just loses.**"* This morning the same rule comes out of the idea of a thing that can only be exited.
+- **The orbital blaster already has a record here, and it lost.** August 24, 12:03 PM used one as a unit of measurement: *"like an **omniverse-destroying orbital laser blackhole railgun** vs a frozen mouse. **Wenda and Gray beat the orbital laser by far.**"* Today it stops being a comparison and becomes a real weapon, and it loses worse — **it becomes his container and then his exit.**
+- **Which makes the blaster the first door in this archive nobody built as one.** Three hours ago the torii was the first boundary here that is *not* a door. The blaster is the reverse: a thing built to end somebody that turns out to be a way through.
+- **And he ran the sunglasses check again, one hundred and thirty-nine minutes after running it for the first time.** At 7:51 finding Pero at the end of a message scared him in real life. At 10:10 it is just something he looks for. **The tell took seventeen days to go from a result, to a signature, to a greeting, to a habit of the reader's.**
+- Verified: `node --check` passes; `LV_BEATS` length **563** with `arr[562].key === 'THE WHITE HOLE'`; `lvSeg()` max ph **562**. Screenshot captured at freeze `cyc 12104.5`, read before shipping, ledger band cropped and re-read at 3x — all four rows inside their boxes, no ledger/ladder collision.
+
 ## 2026-09-01 — THE TELL AT THE END (BEAT 561)
 
 Based on Toby's 2026-09-01 lore, **7:51:48 AM** in the **"More of Pero."** thread, thirty-seven minutes and fifty-eight seconds after BEAT 560. His own typing is two lines: *"It is both Classics, and look at the end at your message, It scared me in REAL LIFE too! Its… Pero LAI!!!"* and *"Classics is now 'Classics: Nightmares and Dreams.'. Wenda.ps = dreams, Gray.ps = nightmares."* The SOMA / Elder Scrolls answer and the "Clean canon update" block are pasted commentary and are not drawn.
