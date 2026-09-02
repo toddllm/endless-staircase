@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — THE METAL BOX (BEAT 606)
+
+Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **7:05:50 PM**, one hour and fifty-four minutes after SANITY AND POWER, so a new scene: **one beat, one reply**. Toby's own typing is the whole first paragraph, ending at *"Do you wanna know more about Oren?"*; everything after that is a pasted ChatGPT reply and is commentary, not canon.
+
+![The Metal Box](screenshots/668-the-metal-box.png)
+
+- **One new beat, 606 THE METAL BOX**, added to the loop-versus cutscene. `LV_CYC` 13052.0 → 13074.0, a new `lvSeg()` range `[13052.0, 13074.0)` returning ph 606, a new `LV_BEATS` entry (length 607, zero holes), and a new capture scene `metalbox`.
+
+### BEAT 606 — THE METAL BOX (7:05:50 PM)
+
+- ***"Sins" appears in exactly one file in this whole wiki, and four times in four and a half months.*** **Three of the four are the same July 7 sentence** — *"Oren.EXE is after **the sins** of those who died before him"* — and the fourth is **Light Pero ending Void Frizz's *"endless sins."*** So sins have only ever belonged to two beings in this archive, and **Oren is the one who collects them.** Tonight, for the first time, **he stops hunting the dead and asks the living**: *"I need everyone's souls and their sins."*
+- **And his freedom used to have exactly one key, and the key was a person.** **July 11** — *"**Oren.EXE is now free when he holds hands with Simon**."* One hand, one name, no crowd. He then **trapped Simon.Exe's souls in the sky, wanting to be the only soul free.** Tonight he asks **everyone** for theirs. The ask went from a handshake to a broadcast.
+- **The character asking to be rescued is this archive's rescuer.** The **August 5** comparison sheet gives him a title and a team: *"Oren is **the Head Reasuer**,"* *"Oren is on **Reasue Team**,"* *"**The One Who Rescues** The Legendary Wenda and Luigi Green."* On **August 8**, **Wenda catches an impostor by exactly that** — *"I knew you weren't Oren, **he saved me countless times**."* Tonight he is the one inside the box.
+- **Five of the six claims in the message are already settled canon; the two zero-hit phrases are a container and a job.** **Durple** has been *"Demoned"* in the Status Codex since **June 18**, filed beside Oren and Pinki. **Wenda and Gray** have been *"god and goddess of Classics now"* since **July 20**. **Pero** has topped every ranking this archive has ever drawn. The only new things are ***"metal box"*** and ***"secret agent"*** — and **in a game that measures everything in power tiers, the new one is an employment role.** Simon is not given more power tonight; he is given a job nobody else has.
+- **And the box is the oldest furniture in this game, but it was never metal.** **August 3** — everybody's form is *"just assets in a box being animated by Pero."* **August 23** — *"Oren and Simon **exited the box**,"* and leaving it was a **promotion** (box characters are rank 5, the bottom). **Those boxes were cardboard**, crushed by Luigi Green and remade by Pero. ***"Metal box"* has zero prior hits**, and it is the first one somebody has had to be **let out of**.
+- **The pleading face has two prior uses in the whole archive and both are the same line.** **July 25** — Pero Phase 1, asked *"Do you still love me more than the NPCs?"*, and the player says no: *"😣🥺😢😥😭…"*, then he **falls over and cries**. That face has belonged to **Pero, being told no**. Tonight **Oren wears it to ask not to be told no.**
+- **He is asking nicely, and that is the part that is new.** For eight weeks he has been hunting the sins of the dead. Tonight he walks up to the living and says please.
+
 ## 2026-09-02 — SANITY AND POWER (BEAT 605)
 
 Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **5:11:12 PM**, sixteen minutes and eleven seconds after PERO'S FIRST DEATH, so a new scene: **one beat, one reply**. His whole typing is three sentences; everything from *"That is one of Pero's most important weaknesses and strengths"* onward is a pasted reply and is commentary, not canon.
