@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — MORE. (BEAT 608)
+
+Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **7:34:34 PM**, seventeen minutes and eleven seconds after THE TWENTY LEAPED, so a new scene: **one beat, one reply**. Toby's own typing is the whole first paragraph, ending at *"Which character is more evil, Which character talks smarter, both are the same answer."*; everything from *"The answer is:"* onward is a pasted ChatGPT reply and is commentary, not canon.
+
+![More.](screenshots/670-more.png)
+
+- **One new beat, 608 MORE.**, added to the loop-versus cutscene. `LV_CYC` 13096.0 → 13118.0, a new `lvSeg()` range `[13096.0, 13118.0)` returning ph 608, a new `LV_BEATS` entry (length 609, zero holes, zero missing phases), and a new capture scene `more608`.
+
+### BEAT 608 — MORE. (7:34:34 PM)
+
+- **The rule was written at 4:47 this afternoon, and at 7:34 somebody else did it.** **Beats 601 and 602**, three hours ago: *"Ya kidding? Nightmare Tier is litterly the most powerful tier in the game! **Only Pero can achieve it** because you know what."* Tonight: *"Oren reaches Nightmare tier,"* and Pero's line is a question — *"**How did you reach Nightmare Tier?!**"* **The man who wrote the ceiling is asking how somebody got over it**, and the answer he gets is his own concession quoted back at him: *"Oh, I forgot, 'your power level is larger than mine.'"*
+- **And the failure formula breaks in the middle of the word.** **Beat 599, 4:29 this afternoon**: *"1t FaIled L1ke AlWays."* The archive's other long run of it: *"Wenda.ps absorbs the game, it failed. Gray darkens everything, it failed… **Everything they did failed.**"* Tonight it starts and does not finish — *"Oren.ps strikes Pero LAI. **It Fa1........ Succeeded.**"* **The word gives out mid-spelling and comes back as the opposite.** It is the first time the fail text has ever turned over.
+- ***"Witty"* appears in exactly three files, and all three are the same sentence from May 27.** Brud: *"You never made any funny jokes, Simon!"* — *"**Simon was witty and says 'I made you, Brud.', Brud turns to dust.**"* **Tonight that single sentence is split between two characters.** Pero takes one half — *"How am I losing? **I am witty!**"* — and Oren takes the other — *"You may be older, but **I still made you.**"* **And it resolves exactly as it did in May: the one holding "I made you" wins, and the one holding "witty" comes apart.**
+- ***"Crashout"*, *"skill issue"* and *"crator"* have zero prior hits in four and a half months.** *"Pero LAI becomes his **crashout**"* is the first thing in this archive that **happens to** Pero rather than being done by him, and the whole of it is one word: *"***WHY?!***"*
+- **The soul engine used to take two brothers and a favour.** **August 19, The End**: *"**Luigi Green now constantly and perminently makes souls for Gaster, Gaster absorbs the souls**,"* and Pero calls it *"the best idea you had in 20 years."* That was **infinite soulpower built by two people being polite in a room.** Tonight **one character runs both ends of it**: *"Oren.ps taken more from everyone until there were none left… **Oren created more and more souls endlessly.**"* Same machine, no second person, and no favour.
+- ***"???"* has only ever been a stat nobody can read, and it belonged to two beings.** **Gray.EXE**, whose *"stats are ALL '???'"* and whose Reveal Stats button just returns *"Unknown Stats"*; and **Pero on July 27**, when Deleted and Exists reduced his to *"???"* as well. **Tonight it is a body**: *"Oren.ps became a **???**."*
+- ***"The dead and living"* has zero prior hits.** **July 7** gave Oren only half of it — *"Oren.EXE is after the sins of those who died **before him**."* Tonight he takes *"the souls and sins of **the dead and living**."*
+- **And Pero has never asked anything to stop.** A spoken *"Enough."* is zero-hit in four and a half months in a file that has 109 files' worth of characters going insane. **They argue for millions of years and his closing argument is one word** — and the word that beats it is one syllable long, said three times, the last time after there is nothing left to take.
+
 ## 2026-09-02 — THE TWENTY LEAPED (BEAT 607)
 
 Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **7:17:23 PM**, twelve minutes after THE METAL BOX and the direct answer to his own closing question, *"Do you wanna know more about Oren?"* Same scene, so **one beat, and one reply covering both messages**. Toby's own typing is the whole first paragraph, ending at *"Oren.ps became the second most powerful, under Pero LAI."*; everything after is a pasted ChatGPT reply and is commentary, not canon.
