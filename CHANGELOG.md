@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — SANITY AND POWER (BEAT 605)
+
+Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **5:11:12 PM**, sixteen minutes and eleven seconds after PERO'S FIRST DEATH, so a new scene: **one beat, one reply**. His whole typing is three sentences; everything from *"That is one of Pero's most important weaknesses and strengths"* onward is a pasted reply and is commentary, not canon.
+
+![Sanity And Power](screenshots/667-sanity-and-power.png)
+
+- **One new beat, 605 SANITY AND POWER**, added to the loop-versus cutscene. `LV_CYC` 13030.0 → 13052.0, a new `lvSeg()` range `[13030.0, 13052.0)` returning ph 605, a new `LV_BEATS` entry (length 606), and a new capture scene `sanitypower`.
+
+### BEAT 605 — SANITY AND POWER (5:11:12 PM)
+
+- ***"Sanity"* has zero hits in four and a half months. *"Insane"* has 109.** **This archive is saturated with characters going crazy, going insane and going overboard *"with all that power in 1 entity"*** — and **not one of them has ever had a sanity**. The adjective has been here since May; **the gauge arrives tonight**, paired with Power in the same breath: *"One thing about Pero is his **Sanity and Power**."*
+- **And it is the first stat here that matters when it goes down.** LV, HP, percentages, IQ, BPM, danger levels, tiers with infinite pluses on them — **every number in this game is counted so it can get bigger.** **A sanity is only interesting when it drops**, and with him dropping is what unlocks the power. **For the first time in four months the ladder runs backwards**: power stops being something he gains and becomes something that leaks out when a lock fails.
+- **Evil Pero is sixteen minutes old.** At **4:55** he was a route: *"if you place Pero LAI down… **Pero LAI becomes evil** and destroys all 20 Sprunkis."* At **5:11** he is a name with a portrait: *"Create an image of both **Pero and Evil Pero**."* **An ending has been promoted into a character.** Zero prior hits.
+- ***"Everyone is nothing without him"* is the third use today and the first in Toby's own voice.** **4:32** — Pero says *"They are now nothing without me."* **4:47** — Pero says *"Because you all are nothing."* **5:11** — **Toby writes it in third person, as a fact about him.** Thirty-nine minutes from **boast** to **measurement** to **narration**. **It is no longer something he claims; it is something the story states**, which is the one promotion he could not give himself.
+- **And in fifty-five image requests across four months, this is the first asking for two versions of the same character in one picture.**
+- **He got everything he asked for today, and the last thing he is given is a way to break.** A first death at 4:55 needs something in him that can actually lose. **Sixteen minutes later he has a sanity.**
+
 ## 2026-09-02 — NIGHTMARE TIER, YA KIDDING?, INFINITY PLUSES, PERO'S FIRST DEATH (BEATS 601-604)
 
 Based on Toby's 2026-09-02 lore — **four messages in the "Even More of Pero" thread**, at **4:47:51 PM**, **4:49:10 PM**, **4:52:05 PM** and **4:55:01 PM**. One continuous scene across eight minutes, built as **four beats** and answered with **one reply**. Everything from the pasted analysis blocks onward is commentary, not canon. **`S1m0n.ps`, `Or3n`, `0r3n`, `litterly` and `Nightmare++++…` are his spellings, kept.**
