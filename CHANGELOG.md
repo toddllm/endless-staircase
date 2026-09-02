@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — THE TWENTY LEAPED (BEAT 607)
+
+Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **7:17:23 PM**, twelve minutes after THE METAL BOX and the direct answer to his own closing question, *"Do you wanna know more about Oren?"* Same scene, so **one beat, and one reply covering both messages**. Toby's own typing is the whole first paragraph, ending at *"Oren.ps became the second most powerful, under Pero LAI."*; everything after is a pasted ChatGPT reply and is commentary, not canon.
+
+![The Twenty Leaped](screenshots/669-the-twenty-leaped.png)
+
+- **One new beat, 607 THE TWENTY LEAPED**, added to the loop-versus cutscene. `LV_CYC` 13074.0 → 13096.0, a new `lvSeg()` range `[13074.0, 13096.0)` returning ph 607, a new `LV_BEATS` entry (length 608, zero holes), and a new capture scene `twentyleaped`.
+
+### BEAT 607 — THE TWENTY LEAPED (7:17:23 PM)
+
+- **The plan was made at 4:52 this afternoon, and at 7:17 it ran.** Beat 603, zero prior hits: *"**Wenda.ps and the other Sprunkis are planning a way to stop Pero**"* — logged that afternoon as **the first organised resistance in the whole archive**. **Two hours and twenty-five minutes later it executes**: *"the 20 figures leaped onto the entity, attacks on all directions, **Pero LAI was outnumbered and can't defend all the attacks, Pero LAI fell from the sky**."* **It is the first plan against Pero that has ever landed.**
+- **And they lost by winning.** *"Pero LAI's aura flows out and goes back to everyone else again"* — which is exactly what they came for. Then he **stands up and thanks them**, *"Pero LAI became his evil form again,"* and *"**The Sprunkis gave up til then.**" The win and the surrender are consecutive sentences.
+- **The only other *"sav3"* in this archive says saving is impossible.** **June 13**, Simon Phase 2 eating the game from the inside: *"**!CLaSsIcs can'T b3 SAV3b!**"* Tonight the same letters say *"you actually happened to **saV3 m3**…"* — **the first time this spelling has been used to say thank you**, and the first time Pero's leetspeak lands on Pero.
+- ***"Secret favorite"* has zero prior hits.** In four and a half months **Pero has never had a favourite anybody**, and the one he picks is **the character who takes things from everyone**. *"Pero doesn't show anything now, Pero says Oren loves him."*
+- **And the line he hands Oren is Gaster's, from the message about where Classics comes from.** **August 21**, Absolute Infinity AD: *"Gaster says '**When suddenly everything ends.**'"* Tonight it becomes **one character's tagline**. And *"Are you kidding now?"* answers **beat 602 YA KIDDING?** from 4:49 this same afternoon.
+- **What Pero hands over in one paragraph:** **phase-through** (two prior mentions), **the ability to create energy** (zero prior hits), **telekentics that get stronger every time he collects** (a gain-per-use rule), and the rank itself, said out loud — *"**Fine, fine. Oren, you are more powerful than me.**"*
+- **He asked to be let out at 7:05. Twelve minutes later he is second in the game.** *"Oren.ps then goes around and asks again for everything, **Oren.ps gotten everything**."* **Asking is the whole method, and tonight it works twice.**
+
 ## 2026-09-02 — THE METAL BOX (BEAT 606)
 
 Based on Toby's 2026-09-02 lore — **one message in the "Even More of Pero" thread**, at **7:05:50 PM**, one hour and fifty-four minutes after SANITY AND POWER, so a new scene: **one beat, one reply**. Toby's own typing is the whole first paragraph, ending at *"Do you wanna know more about Oren?"*; everything after that is a pasted ChatGPT reply and is commentary, not canon.
