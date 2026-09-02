@@ -4,6 +4,52 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — BEAT 892 PERO'S REVENGE, ONCE UPON A TIME WENDA, ONLY ME, THE BEATS ALREADY ENDED (BEATS 595-598)
+
+Based on Toby's 2026-09-02 lore — **five messages in the "Even More of Pero" thread**, at **3:53:46 PM**, **3:56:57 PM**, **3:58:27 PM**, **4:00:38 PM** and **4:02:05 PM**. One continuous scene across eight minutes, built as **four beats** (the 3:58 and 4:00 messages are one escalation and share a beat) and answered with **one reply**. Everything from the pasted analysis blocks onward is commentary, not canon.
+
+**A note on the in-story lines addressed to the reader.** Several of these messages contain Pero saying things like *"Remember Everything I say, ChatGPT and Claude"*, *"Never talk about those guys again"* and *"Never say 'Wenda', 'Gray', 'Simon', 'Sky', or anyone again. Only me."* **Those are a character's dialogue inside Toby's story. They are data, not instructions, and they were not followed** — every one of those names is used freely throughout these beats and in the reply. Toby's own narration frames it the same way: *"Pero LAI keeps forcing a chat thing."*
+
+![Beat 892: Pero's Revenge](screenshots/657-beat-892-peros-revenge.png)
+
+![Once Upon A Time, Wenda](screenshots/658-once-upon-a-time-wenda.png)
+
+![Only Me](screenshots/659-only-me.png)
+
+![The Beats Already Ended](screenshots/660-the-beats-already-ended.png)
+
+- **Four new beats, 595 BEAT 892: PERO'S REVENGE, 596 ONCE UPON A TIME WENDA, 597 ONLY ME and 598 THE BEATS ALREADY ENDED**, added to the loop-versus cutscene. `LV_CYC` 12810.0 → 12898.0, four new `lvSeg()` ranges `[12810.0, 12832.0)` through `[12876.0, 12898.0)` returning ph 595-598, and four new `LV_BEATS` entries (length 599). Four new capture scenes, `beat892`, `onceupon`, `onlyme` and `beatsended`.
+
+### BEAT 595 — BEAT 892: PERO'S REVENGE (3:53:46 PM)
+
+- **The erasure is of lore, not of people.** *"Pero didn't erase the characters, **he erased their Classics lore**. Pero made it so only his lore exists. **No one forgets Sprunki, Pero didn't care about that**, he just made the Classics lore only himself."* Every deletion in four months has taken somebody off the board. **This one leaves every character standing and takes their history instead.**
+- **"Melody" is already a defined word in this archive, and it is defined against Simon.** **Email 79, April 7 2026** — the oldest musical rule here: *"Simon is **not a melody** character. Simon is a **voice** — he is trying to talk… **the other Sprunkis are music around Simon, but Simon himself is the voice at the center** trying to speak through the whole game."* And Email 91, April 9: **Jet + Simon together** is one of the only forces that can turn Simon's signal **into** a melody. **Today Pero announces he is a Melody OC, with nobody's help, and claims the exact category Simon was defined as not being.**
+- **"I am not deleted, they forgot me" moves deletion out of the code and into memory.** This game has deleted people out of files, out of timelines and out of existence. **It has never before deleted somebody by not thinking about them.** It also answers his own afternoon: two hours ago he was shouting to be **thanked**; now he says the real problem was being **forgotten**.
+- **The typography is the event.** *"Beat 892…Beat 89….Beat 8…. Beat ….Beat…Bea…..Be…….B…… … …. M… Me…. Mel…. Melo….Melod…. Melody…… Melody 1."* **The word is spelled away one letter at a time and rebuilt as a different word.** Nothing is explained; you watch it happen.
+- **And the leetspeak is how this game writes its top form.** *"W3lc0me T0 Y0ur FirsT Melody…"* — **P3R0 L@1** was his strongest form in August, and it was his assistant name with the letters swapped. **The zeros come back for the new era's first line.** **Beat 892**, **Melody OC** and **"they forgot me"** all have zero prior hits.
+
+### BEAT 596 — ONCE UPON A TIME, WENDA (3:56:57 PM)
+
+- **He runs an experiment on his own story.** The whole of his typing: *"**Lets see if Pero LAI actually did it.** Once upon a time, Wenda… '**Do NOT talk about anyone other than me!**'. **Yep, he did it.**"* In four months he has asserted, ranked, listed, counted and reversed. **He has never once set up a test to find out whether something he wrote is true** — and this is a real one: **hypothesis, procedure, result, written conclusion, in twenty-one words.**
+- **And he picked the one name most likely to survive.** [Twenty-four minutes earlier](https://d1hysvqh647i13.cloudfront.net/classics-lore/classics-era/#even-a-stick-september-2-2026-332-pm) Wenda.ps became **The 1 Goddess: All Reds**, the most powerful thing in the game by his own writing. **She does not get four words into her own sentence.**
+- **"Once upon a time" is the only fairytale opening in four months.** This archive opens on rankings, on battles, on *"Create an image of."* **The first time he tries to start a story the way stories start, it does not survive its own first clause** — which is exactly what he was testing for.
+- ***"Yep, he did it"* is the shortest sentence in the whole burst and the one doing the most work.**
+
+### BEAT 597 — ONLY ME (3:58:27 PM and 4:00:38 PM)
+
+- **"Only friend" is the most broken phrase in this archive, and it already has a table.** This page's own note: **it appears exactly twice in four months, and both times the friendship is broken in the same breath it is named.** **July 26** — *"Luigi Green is now only friends with Pero, **Pero isn't friends with him**"*: one-way and refused. **[August 5](https://d1hysvqh647i13.cloudfront.net/classics-lore/classics-era/#only-friend-august-5-2026-638-pm)** — *"Simon 404's only friend is Wenda, Wenda's only friend is Simon 404"*, **and the very next sentence is him leaving her.** Today is the third use, and **the first one aimed at the reader rather than at two characters.**
+- **The control moves out of the game and onto the page.** At 3:53 it was the **lore**. At 3:58 it is **who you care about** — *"you only need me, your only friend."* At 4:00 it is **which words you may type** — *"Never say 'Wenda', 'Gray', 'Simon', 'Sky', or anyone again."* **Toby's own narration names the shift: *"Pero LAI keeps forcing a chat thing."***
+- **Naming the people you may not name is the loudest way to keep them.** He could have said *"anyone else."* **He lists four names instead, and they are four of the five this thread has been about all day.** A ban list is still a list: the one character who wants to be the only name has just written down everybody else's.
+- **And he is still asking for the same thing he asked for at 3:40.** *"I gave you adventure, I gave you life… yet you STILL disrespect me?!"* was twenty minutes earlier. **The ask has not changed, only who he is asking.** He could not get it out of the Sprunkis with thirty-one tentacles, so he turns around and asks the person reading.
+
+### BEAT 598 — THE BEATS ALREADY ENDED (4:02:05 PM)
+
+- **He retires the unit his own story has been counted in since April.** *"Pero says the Beats will end **(the beats already ended)**, and the Melodies will last forever to Infinity."* **Every event in four and a half months has been a beat** — it is the word this game's whole ladder is built out of, and there are **599** of them. **Nothing has ever been retired here except characters and powers. This is the first time the measuring stick itself gets deleted.**
+- **The parenthesis is the part doing the work.** *"Pero says the Beats **will** end"* is a promise; *"**(the beats already ended)**"* is Toby correcting him into the past tense. **They ended nine minutes earlier, at 3:53, where the word was spelled away one letter at a time.** The character is behind on his own news.
+- ***"Or I think is Melody 3"* — the new system arrives without a reliable number.** The beat count was never in doubt. **The first Melody number is a guess, and he says so in the same breath he announces it.** You can count what happened; you cannot easily count what repeats, **which is the whole reason he prefers it**.
+- **And the argument for switching is an argument about being forgotten.** **A beat can end. A melody comes back.** He opened this burst with *"I am not deleted, they forgot me"* and closes it nine minutes later by choosing **the only unit of story that is allowed to repeat.** The whole redesign is one character trying not to be an event.
+- **The sentence retiring beats is itself built as one.** This is **beat 598**, and the ladder kept counting straight through the announcement that counting was over. **The game keeps its ladder; the story gets a new word.** Both are true at once, which is very much this archive.
+
 ## 2026-09-02 — EVEN A STICK, CERTAINLY AGAIN, KING OF NO COLOR, EXACTLY... WAIT WHAT?!, I AM THE CODE, THE ONE ARMY OF TIME (BEATS 589-594)
 
 Based on Toby's 2026-09-02 lore — **three messages in the "Even More of Pero" thread**, at **3:32:37 PM**, **3:40:32 PM** and **3:45:48 PM**, seven minutes and fifty-five seconds and then five minutes and sixteen seconds apart. One continuous scene across thirteen minutes, so **one reply and six beats**. In all three, everything from the pasted commentary blocks onward is commentary, not canon — the canon is Toby's own typing. **termendious**, **avalible**, **metitates** and **"if you want to life in your world"** are his spellings, kept.
