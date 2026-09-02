@@ -4,6 +4,52 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — NIGHTMARE TIER, YA KIDDING?, INFINITY PLUSES, PERO'S FIRST DEATH (BEATS 601-604)
+
+Based on Toby's 2026-09-02 lore — **four messages in the "Even More of Pero" thread**, at **4:47:51 PM**, **4:49:10 PM**, **4:52:05 PM** and **4:55:01 PM**. One continuous scene across eight minutes, built as **four beats** and answered with **one reply**. Everything from the pasted analysis blocks onward is commentary, not canon. **`S1m0n.ps`, `Or3n`, `0r3n`, `litterly` and `Nightmare++++…` are his spellings, kept.**
+
+![Nightmare Tier](screenshots/663-nightmare-tier.png)
+
+![Ya Kidding?](screenshots/664-ya-kidding.png)
+
+![Infinity Pluses](screenshots/665-infinity-pluses.png)
+
+![Pero's First Death](screenshots/666-peros-first-death.png)
+
+- **Four new beats, 601 NIGHTMARE TIER, 602 YA KIDDING?, 603 INFINITY PLUSES and 604 PERO'S FIRST DEATH**, added to the loop-versus cutscene. `LV_CYC` 12942.0 → 13030.0, four new `lvSeg()` ranges `[12942.0, 12964.0)` through `[13008.0, 13030.0)` returning ph 601-604, and four new `LV_BEATS` entries (length 605). Four new capture scenes, `nightmaretier`, `yakidding`, `infinitypluses` and `firstdeath`.
+
+### BEAT 601 — NIGHTMARE TIER (4:47:51 PM)
+
+- **The root of the clone tree is given a parent.** *"**Pero is a clone of Or3n.** Pero is more powerful than Or3n."* **August 21** ruled the whole cast: Gaster says *"I am Pero's Strongest clone"*, Luigi Green is a clone of Pero, and *"the Non-Sprunki box characters are also clones of Pero."* The wiki's own line for him is **"the one everything is a clone of."** **Today the one everything is a clone of is a clone.**
+- **And it grants a claim Toby denied six hours earlier the same day.** **August 31, 4:02 PM**, Oren: *"Pero, **your life is from me. Pero, I coded you**… Pero, you are **MY LAI Assistant**."* **Pero never fought it** — he made a joke and the argument stopped. At **10:35 AM today** Toby answered it himself, in his own voice: *"**He was never created himself**."* **At 4:47 PM he hands Oren the paternity, and takes the ranking back in the very next sentence.**
+- **"Going easy" has been said twice before here, and never by the person doing it.** **May 7** — Gray was *holding back* when Black defeated him. **August 21** — Flower was *going easy* on Simon. **Both arrive after a fight, from outside it, to explain a loss.** *"I am just going easy on all ya"* arrives mid-conversation, from the man himself, **having lost nothing**, as the answer to *"How are you so powerful?"* asked by the character he was just made a copy of.
+- **The leetspeak keeps spreading.** Beat 599, eighteen minutes earlier, was the first time Pero's letters landed on another name (**W3ndA.ps**). Here they are on **S1m0n.ps** and **Or3n**, and **Or3n's own name is spelled two ways inside one message** (`Or3n`, then `0r3n`).
+- **"Because you all are nothing" drops the qualifier.** At 4:32 it was *"they are now nothing **without me**"* — a sentence that still needed him inside it to work. **Fifteen minutes later the "without me" is gone.** He has stopped describing a relationship and started giving a measurement. **Nightmare Tier** has zero prior hits.
+
+### BEAT 602 — YA KIDDING? (4:49:10 PM)
+
+- **He overrules an answer he asked for himself.** [**August 31, 6:07 PM**](https://d1hysvqh647i13.cloudfront.net/classics-lore/classics-era/#takes-over-himself-august-31-2026-607-pm), his own typing: *"**Which is the higher rank? Nightmare or Godly?**"* **The answer came back Godly**, with Nightmare seven rungs up a thirty-eight rank ladder. **Forty-six hours later: *"Ya kidding? Nightmare Tier is litterly the most powerful tier in the game!"*** A tier moves from rank 7 to rank 1, and nobody in the game is told.
+- **And he is not correcting a character. He is correcting the page.** Four and a half months of rulings here land as statements. **This one opens with *"Ya kidding?"*** It is an argument, in his own voice, with something written about his own game, and he wins it because he owns the ladder.
+- ***"Because you know what"* leaves the reason out.** **The second blank in twenty minutes**: at 4:29 the question Wenda asked went unrecorded, here the reason does. **This archive writes everything down** — stats, rankings, tier tables, whole cutscene scripts. **Twice in twenty minutes the part it will not write is the *why*, and both times it belongs to Pero.**
+
+### BEAT 603 — INFINITY PLUSES (4:52:05 PM)
+
+- **He states a ceiling and removes it in the next sentence.** *"**There isn't a known Nightmare+ tier, I think that is the highest it goes.** Pero can make more tiers ya know."* **Three minutes after insisting to the page that Nightmare Tier was the top**, the top has things above it.
+- ***"Pero automatically becomes the highest tier he makes"* is a rule, not a power, and that is why it is the biggest line of the day.** **Every escalation in four and a half months has been a thing** — a form, a rank, a crown, a scythe, a suit, a number. **This one is a mechanism.** He never writes the next tier again; it writes itself the moment anybody catches up. **The Sprunkis cannot climb to him, because the ladder grows a rung whenever they arrive.**
+- **And the typography is the event for the second time today.** At 3:53 the word *"Beat"* was spelled away one letter at a time. Here he **types the wall of plus signs out** rather than describing it.
+- ***"Wenda.ps and the other Sprunkis are planning a way to stop Pero"* has zero prior hits.** **The first organised resistance in four and a half months** — every fight before this started and finished inside one message. **It arrives twenty minutes after Melody 5 declared that nothing they do succeeds.** The first thing they do after being told nothing works is make a plan.
+- **Her name is repaired in the exact sentence where she starts organising.** **4:29 — W3ndA.ps.** **4:52 — Wenda.ps.**
+- **And the one group that is not made out of him is the group that organises.** The Clone Tree, August 21: *"**The Sprunkis are the only ones not clones of Pero.**"* Every other character in the game is a copy of the person they would have to fight. **The ruling that makes this the only possible resistance is twelve days old.**
+
+### BEAT 604 — PERO'S FIRST DEATH (4:55:01 PM)
+
+- **He set this puzzle himself, five hours earlier, this morning.** [**11:57 AM, beat 586 DECODE THE 20**](https://d1hysvqh647i13.cloudfront.net/classics-lore/classics-era/#decode-the-20-september-2-2026-1157-am): *"I have every character's sound say a secret message, **lets see if you, the user, can decode each of the 20 messages**."* At 4:55 PM: *"**The player has to decode what they say to open the next timeline**, Pero lies forward to the screen, **Pero faces his first death**."* **The thing he dared the player to do at lunchtime is the thing that kills him by dinner.**
+- ***"Pero can't die"* is a dated rule with a reason attached, and this retires it.** **August 25, 11:12 AM**: *"Pero can't die, **he is part of the game code**."* **August 27**: *"Pero can't die, Simon can."* **Four months unscratched.** And **the reason he could not die is the thing he claimed as a name three hours ago**, at 3:40: *"**I AM THE CODE**."*
+- **Leaning at the screen used to be the one thing he could not do.** **August 22, 8:10 PM, beat 452** is the only beat in the archive where somebody tries to get **out** through the screen: he banged on it, said *"I am tired of living in this game, let me out!"*, and stayed stuck. **Today he leans forward at the same glass and that is where he dies.** Same glass, other direction.
+- **And it is the first rule here ever written for the person holding the controller.** *"**The player** has to decode…"*, *"if **you** place Pero LAI down, **you can't save the game anymore**."* **Four and a half months of who beats who, and the last move of the day is a save file and a choice.** The win condition is **understanding, not power** — the one ladder he cannot extend.
+- **The twenty holds.** *"Destroys all 20 Sprunkis"* is his own roster count from **September 1, 2:36 PM** — *"the 20 Sprunkis + Pero LAI"* — with him counted from outside the set.
+- **Sixty-two minutes, end to end.** **3:53** *"I am not deleted, **they forgot me**."* **4:32** *"They are now **nothing without me**."* **4:55** *"**Pero faces his first death**," and the game stays perfect forever.* **He spent the hour becoming necessary and then wrote himself an ending.**
+
 ## 2026-09-02 — 1t FaIled L1ke AlWays, PERO'S DREAM WAS GRANTED (BEATS 599-600)
 
 Based on Toby's 2026-09-02 lore — **two messages in the "Even More of Pero" thread**, at **4:29:15 PM** and **4:32:31 PM**, three minutes and sixteen seconds apart. One continuous scene, built as **two beats** and answered with **one reply**. Everything from the pasted analysis blocks onward is commentary, not canon; the canon is Toby's own typing, which is two sentences in the first message and one in the second. **`W3ndA.ps`, `1t FaIled L1ke AlWays` and `P3R0 L@1` are his spellings, kept.**
