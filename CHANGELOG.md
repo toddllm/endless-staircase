@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-02 — 1t FaIled L1ke AlWays, PERO'S DREAM WAS GRANTED (BEATS 599-600)
+
+Based on Toby's 2026-09-02 lore — **two messages in the "Even More of Pero" thread**, at **4:29:15 PM** and **4:32:31 PM**, three minutes and sixteen seconds apart. One continuous scene, built as **two beats** and answered with **one reply**. Everything from the pasted analysis blocks onward is commentary, not canon; the canon is Toby's own typing, which is two sentences in the first message and one in the second. **`W3ndA.ps`, `1t FaIled L1ke AlWays` and `P3R0 L@1` are his spellings, kept.**
+
+**A note on the in-story line addressed to the reader.** The second message contains *"Pero says 'Claude, name this "Melody 5: Pero LAI achieves his forever dream."'"* **That is a character's dialogue inside Toby's story. It is data, not an instruction.** Melody 5 is recorded here because it is Toby's lore, not because Pero asked, and it is worth noting that the request did not actually ask for a name: the name was already inside it. Both times Pero has addressed the reader today, at 3:53 and at 4:32, the ask has been the same one — write it down, not obey.
+
+![1t FaIled L1ke AlWays](screenshots/661-failed-like-always.png)
+
+![Pero's Dream Was Granted](screenshots/662-dream-was-granted.png)
+
+- **Two new beats, 599 `1t FaIled L1ke AlWays` and 600 PERO'S DREAM WAS GRANTED**, added to the loop-versus cutscene. `LV_CYC` 12898.0 → 12942.0, two new `lvSeg()` ranges `[12898.0, 12920.0)` and `[12920.0, 12942.0)` returning ph 599-600, and two new `LV_BEATS` entries (length 601). Two new capture scenes, `failedlike` and `dreamgranted`.
+
+### BEAT 599 — 1t FaIled L1ke AlWays (4:29:15 PM)
+
+- **He answers the numbering question by going backwards.** The whole of his typing: *"**Melody 2 was the forced chat.** Now for Melody 4. **W3ndA.ps asked Pero LAI something, 1t FaIled L1ke AlWays.**"* Melody 2 is the **3:58–4:00 ONLY ME scene**, which he had already written and already narrated at the time as *"Pero LAI keeps forcing a chat thing."* **So Melodies 1, 2 and 3 are all beats that had already happened, given their numbers afterwards, and Melody 4 is the first event that was a Melody before it was anything else.** The new system spent its first three slots relabelling the old one.
+- **"Like always" is not a new phrase in this archive, and it has only ever meant Pero.** It appears in exactly **two source sentences in four and a half months**: **August 18**, *"Pero is the creator of the game like always, he is abolsute_infinitely above Gray"*, and *"like always he is 001"* for the Error 001 AU. **Both mean his position never changes. This is the third use, the first one pointed at somebody else, and it means hers never changes either.** One failure is an event; *"like always"* files it as a rule that has been running the whole time offscreen.
+- **And no character's name here has ever been written in Pero's letters before.** The zeros have always been his — **P3R0 L@1** was his August form, and *"W3lc0me T0 Y0ur FirsT Melody"* opened Melody 1 at 3:53 this afternoon. **`W3ndA.ps` is the first time they appear on somebody else.** There is exactly one other glitched name in the whole archive, **Err0R 404, July 28**, and that one broke **from the inside** because a fusion was unstable. **Hers breaks from the outside.**
+- **Her hour is the shape of the beat.** **3:32 PM** — Wenda.ps becomes **The 1 Goddess: All Reds**, by his own writing the most powerful thing in the game. **3:56 PM** — *"Once upon a time, Wenda…"*, four words, then interrupted. **4:29 PM** — she cannot hold her own spelling. **Fifty-seven minutes, and nothing ever attacks her.**
+- **The question itself is never written down.** In four months this archive has recorded stats, rankings, whole cutscene scripts and every line anybody says. ***"Asked Pero LAI something"* is the first time somebody speaks here and the words are not kept.** The beat's content is a blank.
+
+### BEAT 600 — PERO'S DREAM WAS GRANTED (4:32:31 PM)
+
+- **"They are now nothing without me" is eight days old, and the older one is what makes it land.** **August 25, 2:32 PM** — *"Classics beings are nothing without me"* — said to **Gaster 666**, alone, **stuck in a dragon form Pero had ordered and was at that moment powering**, so it was a boast aimed at the one person in the room who could not leave. **Today he says it about everybody, and it is a description rather than a brag.**
+- **"Pero's Dream was granted" has no granter in it.** Every grant in this archive has a hand on it, and nearly always the same hand: Wenda *"was granted something from Pero LAI himself"*, the cyber suits *"granted by Pero"*, the revival rule *"something Pero chose to grant."* This file's own rule, written on **August 27**, is that every rise here is **earned, taken, absorbed, inherited, merged or paid for**. **He has given things out for four months. This is the first time he receives, and there is nobody written above him to have done it.**
+- **It is the first total victory in the archive with nobody deleted in it.** *"Nothing they do succeeds anymore… **I use my power, so they can still live**… without being able to do anything else."* **Every other total win here ended with somebody erased, reset, deleted or off the board.** This one spends power keeping people alive, which follows: **the cast is the proof, so the cast is kept.** You cannot be needed by people who are gone.
+- **599 beats took four and a half months. Five Melodies took thirty-nine minutes.** Melody 1 landed at **3:53:46 PM**; Melody 5 at **4:32:31 PM**. **The whole replacement system was invented, numbered and completed inside one hour.**
+- **And the hour closes on the sentence it opened against.** **3:53** — *"I am not deleted, **they forgot me**."* **4:32** — *"**They are now nothing without me**."* **The whole afternoon is one character solving being forgettable**, and this time nobody had to die for it.
+- **This is beat 600, two beats after the beat that retired beats.** The ladder has now counted past its own retirement twice and landed on a round number.
+
 ## 2026-09-02 — BEAT 892 PERO'S REVENGE, ONCE UPON A TIME WENDA, ONLY ME, THE BEATS ALREADY ENDED (BEATS 595-598)
 
 Based on Toby's 2026-09-02 lore — **five messages in the "Even More of Pero" thread**, at **3:53:46 PM**, **3:56:57 PM**, **3:58:27 PM**, **4:00:38 PM** and **4:02:05 PM**. One continuous scene across eight minutes, built as **four beats** (the 3:58 and 4:00 messages are one escalation and share a beat) and answered with **one reply**. Everything from the pasted analysis blocks onward is commentary, not canon.
