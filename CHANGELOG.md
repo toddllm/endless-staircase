@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-03 — WHAT HAPPENED, OREN? (BEAT 612)
+
+Based on Toby's 2026-09-03 lore — **one message at 7:31:26 AM**, replying inside the **"Even Even More of Pero"** thread, and it is four words long: *"Create an image of that scene."* **No new lore arrived with it**, so this beat invents nothing. It is **the last frame of beat 611 drawn as a picture instead of written as text** — the first panel in the cutscene that is a drawing rather than a wall of sentences.
+
+![What happened, Oren?](screenshots/674-what-happened-oren.png)
+
+- **One new beat, 612 WHAT HAPPENED, OREN?**, added to the loop-versus cutscene. `LV_CYC` 13184.0 → 13206.0, a new `lvSeg()` range `[13184.0, 13206.0)` returning ph 612, a new `LV_BEATS` entry (length 613, zero holes, zero missing phases, no JS errors under a headless `--dump-dom` self-test across 26,412 sampled cycle positions with every one of the 613 phases pushed through the real `drawLoopVs()` renderer), and a new capture scene `whathappened612`.
+
+### BEAT 612 — WHAT HAPPENED, OREN? (7:31:26 AM)
+
+- **Everything in the picture is drawn from the 9:02:55 PM scene. Nothing is added.** **Pero LAI is on the floor in Phase 4**, X-eyed, with the code he turned red still leaking off him — *"Oren destroyed Pero LAI, **Pero LAI lies down**."* **Oren.ps stands at Full Power** as **Reality Breaker Fox**: nine tails fanned behind him, a ring of **Firey Delight** friction-fire at his feet, and **three marks** (😸⚡🦊) over his head. **The nineteen walk in from the right**, ask their one line, and he answers his.
+- **The three anchors are printed under the picture, because the picture is an argument.** **September 2, 8:53 AM** — *"**All 21 are out of the box, Pero LAI deleted the box**"* — which is why the nineteen can walk in at all: **he opened the door at breakfast and they are the witnesses at bedtime**. **August 3, The Box Factory, 11:57 AM** — *"**Phase 3 is near his death, Phase 4 is the death**"* — which is why the figure on the floor is in the phase he himself named out loud thirteen hours after deleting it. **July 25, the Emoji Naming Rule** — *"the emoji in a character's name is **not decoration, it is a rank you can read before the fight starts**"*, Nova Pero has one, Simon 404 has two, **and fewer is higher** — which is why **the three marks over the winner are drawn large**.
+- **First drawn panel in 612 beats.** Every prior beat in this cutscene is typography. This one is a **framed tableau**: floor line and floor glow, the thrown code screen still falling behind everything, two speech bubbles with tails, and figure work for **twenty-one characters** on one screen. The header, frame and figures are placed to clear both the HUD band at the top and the beat-ladder window down the left side, so nothing in the drawing lands under the list of beat names.
+- **The reply asked for one thing and got one thing.** Four words came in and no story came with them, so **no story was written**. The beat adds a picture and **not a single new claim about anybody**.
+
 ## 2026-09-02 — I ACCIDENTALLY BEATEN PERO LAI (BEAT 611)
 
 Based on Toby's 2026-09-02 lore — **one message at 9:02:55 PM**, thirty-three minutes after LOOK AT MY CODE NOW and in the same thread, **"Even Even More of Pero"**, so a new scene: **one beat, one reply**. Toby's own typing runs from *"Create an image of Pero LAI and Oren now."* through *"Oren gained access to more emojis and all that stuff."*; everything from *"That is a major lore jump."* onward is a pasted ChatGPT reply and is commentary, not canon.
