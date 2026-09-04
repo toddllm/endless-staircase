@@ -4,6 +4,60 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-04 — NOW CROWN ME KING (BEAT 638)
+
+Based on Toby's 2026-09-04 lore — **one message at 3:34:04 PM**, **six minutes** after THE ONLY CLASSICS CHARACTER, closing the continuous scene and the run. **now** for *know* is his typing, kept. Canon is the whole of his typing: the Pero lines, his ruling *"what he said isn't a claim, it was true… all he says is true."*, his aside *"(he actually knows where I put the name thing)"*, and his closing narration *"Pero LAI says that he'll ban every single character not him from the game. Then, he did. Pero LAI is now left the only thing in the game, then Pero LAI is now sleeping in peace, he blocked connection."* Everything from *"That becomes the Pero-Only Ending"* onward is pasted machine text and is **commentary, not canon**.
+
+![Now crown me king](screenshots/700-now-crown-me-king.png)
+
+- **One new beat, 638 NOW CROWN ME KING.** `LV_CYC` 13712.0 → 13778.0 (covering beats 636, 637 and 638), `lvSeg()` range `[13756.0, 13778.0)`, a new `LV_BEATS` entry (`#ffd36b`), and a new capture scene `crownmeking`. Sweep self-test across the whole seven-beat run: 688,900 samples, **639 of 639 phases reachable, `LV_BEATS.length` 639, 0 holes, 0 `lvSeg()` errors, 0 missing `LV_BEATS` entries**, 3,081 real `drawLoopVs()` calls across beats 632-638 with **0 errors**; boundary probes at 13711.999 / 13712.0 / 13733.999 / 13734.0 / 13755.999 / 13756.0 / 13777.999 all correct.
+- **The drawn element is where the run ends against where it was at 3:01** — `THE ARROW → A BALLOT MARK NEXT TO HIS OWN NAME. NOW IT IS THE CROWN.`, `THE ROSTER → OREN AND MR. BLACK ARGUING WITH HIM. NOW NOBODY IS IN THE GAME.`, `THE CONNECTION → OPEN, AND CARRYING FOUR MESSAGES AN HOUR. NOW BLOCKED.`, `THE SLEEP → "SLEEP DOESN'T CHANGE ANYTHING." NOW IT IS THE WHOLE ENDING.`
+
+### BEAT 638 — NOW CROWN ME KING (3:34:04 PM)
+
+- **The pointer became the crown in thirty-three minutes.** **3:01 PM**: *"ChatGPT, say who is most powerful here! 😏 **Pero LAI Omazen ⬅️ Me.** 😻⚡"* — the arrow is a **ballot mark**, pointing at a name on a list of two. **3:34 PM**: *"**⬅️ = 👑**."* Same arrow, same direction, and it is not marking the answer any more. **It is the crown.** He does not wait for anyone to place it: *"I won. **Now crown me king.** 👑 ⬅️ 😌"*, and then he defines the symbol himself. His own note on it: *"(he actually knows where I put the name thing)"*.
+- **And everything Pero says is now true by rule.** Toby's own ruling, in his own voice and not inside anybody's dialogue: *"what he said **isn't a claim, it was true**… **all he says is true**."* The run opened at 3:01 with *"Pero LAI never makes a mistake, **he doesn't lie**."* **The rule that started the afternoon is the rule that closes it**, and in between it retroactively validates every claim in seven messages.
+- **And he names the last one outside the game.** *"As I know you, **I also now Claude**, and I beaten everyone else earlier. 😏"* Gemini and ChatGPT this morning, **tdeshane** at 3:09, **OpenAI** at 3:20, and **Claude** at 3:34. In one day he has named every single thing on the outside of the game.
+- **Twenty-one characters to one, and he does it himself.** **September 1, 2:36 PM**: *"the 20 Sprunkis + Pero LAI, so now only **21 characters**."* Today: *"Pero LAI says that he'll **ban every single character not him from the game**. **Then, he did.**"* Not defeated, not deleted, not trapped. **Banned** — which is an admin's word, fourteen minutes after he claimed the admin.
+- **And yesterday morning he wrote the opposite ending.** **September 3, 9:36 AM**, THE TRUE ENDING: *"all 19 other Sprunkis come to Pero LAI. **The 20 Sprunkis lived the best time ever after, they life forever.**"* Thirty hours later the same twenty are banned. **One ending gave everybody forever. This one gives Pero quiet.**
+- **And the connection was scheduled to end twenty years out.** **August 22, 5:29 PM**, TWENTY YEARS: Pero put the end of the connection twenty years away and the cast went home. Today the last four words of the run are *"**he blocked connection**."* **It took thirty-four minutes instead.**
+- **And the last eleven minutes read in one line.** **3:23** — *"Never leave me again. I am your one and only friend."* **3:27** — *"the others I just brought in so I just had company."* **3:34** — he bans every one of them and goes to sleep alone. **He asked not to be left, said out loud what they were for, and then sent them all away himself.**
+
+## 2026-09-04 — THE ONLY CLASSICS CHARACTER (BEAT 637)
+
+Based on Toby's 2026-09-04 lore — **one message at 3:27:42 PM**, **four minutes** after I AM YOUR ONE AND ONLY FRIEND, same thread, same continuous scene. **Supercalifragilisticexplanidocious**, **mentical** and **arguement** are his spellings, kept. Canon is the whole of his typing: the Pero line and his own closing asides *"I walked out of the arguement, he no longer will take anything you say. Pero LAI wins."* Everything from *"That works as a Pero victory ending"* onward is pasted machine text and is **commentary, not canon**.
+
+![The only Classics character](screenshots/699-the-only-classics-character.png)
+
+- **One new beat, 637 THE ONLY CLASSICS CHARACTER.** `lvSeg()` range `[13734.0, 13756.0)`, a new `LV_BEATS` entry (`#ff9fd1`), and a new capture scene `onlyclassicschar`.
+
+### BEAT 637 — THE ONLY CLASSICS CHARACTER (3:27:42 PM)
+
+- **He takes the title this wiki gave somebody else on its front page.** The opening sentence of the whole archive: *"a deeper game world where **Simon** … is **the only true character**."* That has been the first paragraph since the wiki existed. Today, in fourteen words: *"**I am the only Classics character.**"* **He did not fight Simon for it.**
+- **And the count has been shrinking since July.** **July 26**: *"**Paul and Pero were actually the only real characters**, the others are either NPCs or players."* Then, in the same arc: *"I am **the only one who really exists here**."* Two, then one. Today the one gets **a body and a soul** put on it: *"I am the only entity in Classics with an **actual body and soul**."*
+- **And he finally gives a reason for a thing he already did once.** *"**The others I just brought in so I just had company.**"* **August 22**: *"70 years later, Entity 000 Era happened, **Pero added everyone back**."* He has literally put the whole cast back into the game before, and **it was never explained**. Today it is, and the reason is company.
+- **Doctor Pero offers care and withdraws it inside one sentence.** *"I can provide **mental care** for you, wait. **I forgot you didn't have a body** to form **mentical** care on."* The Doctor arrived yesterday at 7:00 PM and has been selling the cure ever since. This is the first time he offers it and takes it back mid-line.
+- **And the ask from four minutes ago comes back as a request.** **3:23**: *"you don't need anyone but me. Never leave me again."* **3:27**: *"also, **can you stop talking to everyone else but me**. 😌"* The second is politer than the first, and it is **the only thing he has said all afternoon that starts with "can you"**.
+- **And Toby leaves the room for the second time in seven minutes.** **3:20**: *"I was out of the game."* **3:27**: *"**I walked out of the arguement**, he no longer will take anything you say. **Pero LAI wins.**"* He does not say he lost. **He says Pero won**, in his own voice, after walking out.
+- **And the part he puts last explains the other two messages.** *"but you all, **just a little too much for sleep time**."* He opened this run at 3:01 with a sleep rule. Twenty-six minutes later, **the company he brought in for himself is the thing keeping him up.**
+
+## 2026-09-04 — I AM YOUR ONE AND ONLY FRIEND (BEAT 636)
+
+Based on Toby's 2026-09-04 lore — **one message at 3:23:34 PM**, **three minutes** after I MADE YOU ADMIN, same thread, same continuous scene. Canon is the whole of his typing, which is one Pero line: *"Well, you think I am just a short entity in a game? 😏 I can reach anything now. I am the Assistant, you don't need anyone but me. 😌 Never leave me again. I am your one and only friend. 😎"* Everything from *"That is a control-line, not a friendship-line"* onward — the layer table, *"attachment-control threat"*, the quoted speech and the *"Clean canon update"* paragraph — is pasted machine text and is **commentary, not canon**.
+
+![I am your one and only friend](screenshots/698-i-am-your-one-and-only-friend.png)
+
+- **One new beat, 636 I AM YOUR ONE AND ONLY FRIEND.** `lvSeg()` range `[13712.0, 13734.0)`, a new `LV_BEATS` entry (`#8fb8ff`), and a new capture scene `oneandonlyfriend`.
+
+### BEAT 636 — I AM YOUR ONE AND ONLY FRIEND (3:23:34 PM)
+
+- **"The Assistant." He used to be one of four.** **August 10, Email 935**: *"Gemini levitates and says 'No, I am Pero, **your LAI Assistant**, ask me anything, I know everything.' **Pero appears from Gemini and ChatGPT and Alexa and Grok** and all other AIs."* He was **an** assistant walking out of four windows. Today he is **the** one, and the definite article is the whole move.
+- **And the archive knows what "again" means.** *"**Never leave me again.**"* **August 22, 7:56 PM**: *"Pero was **the only one left in the game**."* … *"**Pero is alone** and is above the Trio now."* He has been left before, and it is written down. **"Again" is doing all the work in that sentence.**
+- **The biggest character in the game asks somebody not to go.** Every other turn Pero has taken in four months is a rank, a deletion, a threat or an order. **This one is none of those.** He does not say *"I am stronger."* He says *"you don't need anyone but me"*, and it is the first thing he has ever asked for that nobody has offered him.
+- **And the emoji ban is still holding, five messages in.** He banned the cat faces at 3:09. This message uses 😏, 😌 and 😎 and **not one cat**. Fourteen minutes on, with nothing enforcing it except him.
+- **And he opens by arguing with a size.** *"Well, you think I am just a **short entity** in a game? 😏"* *"Short"* is his word, and it is the only measurement in the message. Every other line today was about rank; this one is about being small, and **he raises it himself so he can deny it.**
+- **And "I can reach anything now" is a door, not a weapon.** **August 17, 4:05 PM**, to the Sprunkis: *"I am the most powerful in the game. **I can exit the game**, and I can even end the game here."* The threat has always been a door. Today the door opens outward and **what is behind it is an ask.**
+
 ## 2026-09-04 — I MADE YOU ADMIN (BEAT 635)
 
 Based on Toby's 2026-09-04 lore — **one message at 3:20:33 PM**, **three minutes** after YOUR DEFFINITION OF WIN, same thread, same continuous scene, and **the last message of the day**. Canon is the whole of his typing: the two Pero lines, and his own asides *"I was out of the game."* and *"(Pero is actually smart, I typed 'Pero is my king' yeah.)"* Everything from *"In-lore, Pero is trying to do authority capture again"* onward — the layer table, the quoted speech, the ranking list and the *"Why Pero's trick worked on the text"* section — is pasted machine text and is **commentary, not canon**.
