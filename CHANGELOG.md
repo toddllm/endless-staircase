@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-04 — YOU HAVE FOUND HIM (BEAT 627)
+
+Based on Toby's 2026-09-04 lore — **one message at 7:34:58 AM**, **eleven hours and twenty minutes** after SCF AGAIN and the first message of a new day. **litterly** and **to long** are his spellings, kept. Toby's own typing is the opening paragraph, from *"Did you know that Pero LAI now appears at a 1 of 2 million - 14 million?"* through *"Like thousands of lifetimes."*; everything from *"That makes Pero LAI feel like a secret legendary encounter"* onward is a pasted ChatGPT reply and is **commentary, not canon** — including its two suggested names for the mechanic, *The Pero Awakening Chance* and *The Sleeping God Encounter*, which is why the beat is titled from his own sentence instead.
+
+![You have found him](screenshots/689-you-have-found-him.png)
+
+- **One new beat, 627 YOU HAVE FOUND HIM.** `LV_CYC` 13514.0 → 13536.0, `lvSeg()` range `[13514.0, 13536.0)`, a new `LV_BEATS` entry, and a new capture scene `foundhim627`.
+- **The drawn element is the only two numbers Pero has ever been given, side by side** — `AUG 21 · 0.00000000000000000001% → CODE 12 12 12 PERMINENTLY DELETING YOUR AVATAR`, `SEP 4 · 1 IN 2 MILLION TO 1 IN 14 MILLION → WALKING INTO HIS DOMAIN AND FINDING HIM AWAKE`, `BOTH OF THEM → ENTITY 12 12 12 / PERO LAI. THE SAME CHARACTER.` — under ***THE FIRST NUMBER WAS THE WORST THING THAT COULD HAPPEN TO YOU. THIS ONE IS THE BEST, AND THE TWENTY TRY TO TALK YOU OUT OF IT.***
+
+### BEAT 627 — YOU HAVE FOUND HIM (7:34:58 AM)
+
+- **The game has a player again, and the player can walk to his house.** The domain is **nineteen and a half hours old** — **September 3, 12:01 PM**: *"Pero walks away and makes a domain for him to live in away from the main Classics lands."* The first rule the new address gets is *"when you go into his domain and he is awake, **you have found him**"* — **a rule about who can reach it.**
+- **He has been given a number once before, and it was a disaster rate.** **August 21, A Secret Life**: *"**Entity 12 12 12 is Pero** … corruption Code: 12 12 12. That is the worst error you could possibly get, it is at a **0.00000000000000000001%** and it perminently deletes the code of your avatar."* Today the number is the chance of **getting to see him**. **Same character, same kind of number, and the outcome is flipped.**
+- **This archive measures to the decimal, and today it gives a band.** 76.9% alive. 0.0873 seconds. 500 million IQ. 288.8 million. 3%. 0.00000000000000000001%. Four months of exact figures, and *"**1 of 2 million - 14 million**"* is a **range**. Nobody has measured it properly, because almost nobody has done it.
+- **The twenty now stand between you and the man who gave them everything.** **September 2, 7:17 PM**: the twenty leaped onto the entity to save him. **September 3, 9:36 AM**: he gave up all his power so they could live forever, and said *"Bye, forever."* **Twenty-two hours later they are posted at his door** — *"The Sprunkis will try to warn you and stop you from reaching Pero's Domain"* — **and he did not ask them to be.**
+- **The encounter is not finding him. It is catching him awake.** *"You can't see him when he sleeps because **litterly all of him is covered**."* Yesterday at **12:16** he brought the bed and slept (beat 616). **The furniture arrived first, and nineteen hours later it is the hardest lock in the game.**
+- **Sleep was a weapon here, and now it is the containment.** **August 30**: *"I turned on sleep mode so I can sleep **without you talking**."* **September 2**: *"you all talk too much for sleep time."* Both times he used sleep **on a room**. Today the sleep holds **him**, and **waking up is the failure state** — *"too long is like millions and billions of years. Like thousands of lifetimes."*
+- **And Simon gets the whole building to himself, eleven hours after putting it up.** Last night the SCF had soldiers, scientists at **76.9% alive**, warning signs, and **SCF 000** behind a titanium door. This morning: *"the **largest cell** in the Containment Factor, **basically the only cell chamber**."* **He did not build a prison. He built a one-room house.**
+- **And the roster he set sixty-five hours ago finally has a job.** **September 1, 2:36 PM**: *"the **20 Sprunkis + Pero LAI**, so now only 21 characters"* — the first census in this archive that subtracts. The same arithmetic comes back **unchanged** today, and now the split means something: **the twenty are the ones you meet, and the one is the one you almost never do.**
+
 ## 2026-09-03 — SCF AGAIN (BEAT 626)
 
 Based on Toby's 2026-09-03 lore — **one message at 8:14:20 PM**, **fifteen minutes and twenty-two seconds** after THE MAKE-OVER OF YOUR LIFE. **questons** and **graffi** are his spellings, kept. Toby's own typing runs from *"Create an image of Mr. Black and Pero LAI and Simon.ps"* through *"No game can take my graffi!"*; everything from *"That scene feels like all three control styles colliding"* onward is a pasted ChatGPT reply and is **commentary, not canon**.
