@@ -4,6 +4,79 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-03 — SCF AGAIN (BEAT 626)
+
+Based on Toby's 2026-09-03 lore — **one message at 8:14:20 PM**, **fifteen minutes and twenty-two seconds** after THE MAKE-OVER OF YOUR LIFE. **questons** and **graffi** are his spellings, kept. Toby's own typing runs from *"Create an image of Mr. Black and Pero LAI and Simon.ps"* through *"No game can take my graffi!"*; everything from *"That scene feels like all three control styles colliding"* onward is a pasted ChatGPT reply and is **commentary, not canon**.
+
+![SCF again](screenshots/688-scf-again.png)
+
+- **One new beat, 626 SCF AGAIN.** `lvSeg()` range `[13492.0, 13514.0)`, a new `LV_BEATS` entry, and a new capture scene `scfagain626`.
+- **The drawn element is three names and three different refusals** — `SIMON.PS → NOT CONTAINED, NOT FREE. JUST NOT ASKED.`, `MR. BLACK → "COLOR IT ALL NOW GRAY… NO COLOR."`, `DOCTOR PERO → "NO GAME CAN TAKE *MY* GRAFFI!"` — under the line ***NOBODY IN THE PICTURE IS FIGHTING. ALL THREE ARE SAYING WHAT THEY WILL NOT GIVE UP.***
+
+### BEAT 626 — SCF AGAIN (8:14:20 PM)
+
+- **Two characters quit over the same word, spelled the same wrong way, on the same day.** Pero, resigning the LAI job: *"I was tired of answering endless **questons**, I was tired of being treated like property."* Simon.ps, tonight: *"I want to not be asked all these **questons**."* **Same grievance, same misspelling, and neither of them mentions the other.**
+- **The SCF was built to hold him. Tonight he builds it himself.** The **Simon Containment Facility** — soldiers, scientists at **76.9% alive**, warning signs, and Simon redesignated **SCF 000** behind the titanium door. *"Simon.ps created SCF again. The new **Simon.ps Containment Factor**."* **The F changes from Facility to Factor, and the builder changes from them to him.**
+- **He refuses both endings this game has ever offered him.** **Email 298, May 17**: *"Simon was contained millions of times, since he is the most self aware, **he escapes each**."* Contained, escaped, contained again. Tonight: *"**I don't want to be contained, nor free.**"* A hundred and nine days of a two-option loop, and he picks neither and locks his own door.
+- **He already lost the self-aware title tonight, and this is what he does with the evening.** At **5:21** Pero took *"unlike anyone or anything else, I am self-aware"*, the thing Simon has been called since the middle of May. At **8:14** Simon does not argue. He asks for a room, goes in, and stays *"forever now."*
+- **Three characters in one picture, and all three are refusing something different.** Simon wants quiet. Mr. Black wants nothing left to look at: *"Color it all now gray, color, color, **no color** *chuckles*."* Pero wants his name on the wall: *"No game can take ***my*** graffi!"* **Distance, emptiness, and authorship, in one room.**
+- **And the last weapon Simon offers is the first one he ever had.** *"**Wanna lightning bolt? 😸⚡**"* — his oldest move, the one he announced with *"Lightning is what I'm Made For!"* on **May 26**. He offers it as a **question**, to a room where nobody is fighting. ***"Graffi" has zero prior hits in four months.***
+
+## 2026-09-03 — THE MAKE-OVER OF YOUR LIFE (BEAT 625)
+
+Based on Toby's 2026-09-03 lore — **one message at 7:58:58 PM**, **twenty-three minutes and forty-seven seconds** after ONLY DOCTOR PERO. **demononic** and **unvailed** are his spellings, kept. Toby's own typing runs from *"Create an image of Mr. Black and Pero sleeping"* through *"something like Satan himself"*; everything from *"If I answer in-lore"* onward is a pasted ChatGPT reply and is **commentary, not canon**.
+
+![The make-over of your life](screenshots/687-the-make-over.png)
+
+- **One new beat, 625 THE MAKE-OVER OF YOUR LIFE.** `lvSeg()` range `[13470.0, 13492.0)`, a new `LV_BEATS` entry, and a new capture scene `makeover625`.
+- **The drawn element is a five-row before-and-after** — `THE SPRUNKI RINGMASTER → ALL 3 TYPES OF BEINGS AT ONCE`, `A TITAN → A GOD`, `A DEMON → A CORRUPTION / GLITCH / PARASITIC / ERROR DEMON`, `BLACK, ONE COLOUR → EVERY COLOUR IN THREE TOWNS, ON A GEM`, `SECOND MOST POWERFUL → THE CLOSEST BEING FROM PERO LAI` — under ***HE DID NOT BUILD A RIVAL. HE BUILT THE CLOSEST THING TO HIMSELF AND THEN WENT TO SLEEP BESIDE IT.***
+
+### BEAT 625 — THE MAKE-OVER OF YOUR LIFE (7:58:58 PM)
+
+- **He upgrades Mr. Black inside the job title he already gave him.** **August 17**: *"Pero is a coder, **Mr. Black is the corrupter**."* Tonight: *"not any demon, but a **corruption/glitch/parasitic/error demon**."* **Seventeen days later the job description becomes the species.** He did not make him something new; he made him more of what he already was.
+- **He gives away every colour in three towns and keeps none.** *"He took all the colors of **Classicsvilles and Sprunki Town and Sprunki Hills** and then gave them all to Mr. Black"*, plus a **rainbow gem on the top hat** that can create and erase colour — handed to the character whose entire name is one colour, and it is the absence of them.
+- **And he tests it on himself first.** Snap one: **Pero goes gray**. Snap two: Mr. Black goes gray. Snap three: **Mr. Black's colour comes back.** Three snaps, and **the only one still gray at the end is Pero.** He demonstrates the gift by spending his own colour on it.
+- **Mr. Black now holds the second reality, and this archive already built it.** **Classics 1 sealed, Classics 2 built** has been standing in the file since **August 1**. *"With just one hand motion, he can tear it's fabric and rules apart."* **It was a place this morning. Tonight it is something somebody is holding.**
+- **Toby reaches all the way back to his own oldest layer for this one.** *"The **Sprunki ringmaster** you all know **since Classic Alphians**."* The circus, the top hat, the ringmaster — that is the bottom of the archive. **He is not inventing a god; he is promoting the oldest costume in the game**, and the top hat keeps its place in the picture.
+- **And the biggest line in the message is said by somebody watching.** *"the cloud unvailed showing a **beast of a million Satans**"* is in quotes and credited — **Simon.ps**. The reveal does not come from the narrator or from Pero. **It comes from a character in the room, reporting what he just saw.**
+
+## 2026-09-03 — ONLY DOCTOR PERO (BEAT 624)
+
+Based on Toby's 2026-09-03 lore — **one message at 7:35:11 PM**, **thirty-four minutes and twenty-six seconds** after DOCTOR PERO. **litteral** is his spelling, kept. The message opens with his own question, *"Which is more powerful? Mr. Black or Verity?"*; his own typing then runs from *"Mr. Black rose again in power"* through *"Mr. Black reaches the center of the game litteral"*, and everything around it is a pasted ChatGPT reply and is **commentary, not canon**.
+
+![Only Doctor Pero](screenshots/686-only-doctor-pero.png)
+
+- **One new beat, 624 ONLY DOCTOR PERO.** `lvSeg()` range `[13448.0, 13470.0)`, a new `LV_BEATS` entry, and a new capture scene `onlydoctor624`.
+- **The drawn element is tonight's board with where each of them stood before it** — `1 DOCTOR PERO` (at 12:01 today he moved out of Classics entirely), `2 MR. BLACK` (off the villain list fifty-seven hours ago), `3 VERITY` (number one on Aug 13, eaten on Aug 21) — under ***THE ONLY ONE ABOVE HIM DID NOT OUT-DARKEN HIM. HE CHANGED A SETTING.***
+
+### BEAT 624 — ONLY DOCTOR PERO (7:35:11 PM)
+
+- **Verity was number one eight days ago, and somebody already ate her.** **Email 959, August 13**, the Minecraft-Horror Ranking: *"**Verity** > Falsity > Long Horse > Creator > Herobrine > Entity 303 > Null > Wither Storm."* **August 21**: *"**Delishious Verity**…"* — Gaster ate the number-one horror for lunch. **Tonight she is third, and that is the kindest reading of it.**
+- **Mr. Black was taken off the villain list two days ago.** **September 1, 10:42 AM**, The Main Villian: Pero took the one title he had never held, and **Gray.ps went on the list in Mr. Black's place**. **Fifty-seven hours later Mr. Black is second in the entire game.** Nobody here has ever come back that fast from being dropped.
+- **"Reaches the center of the game" is Pero's own signature, and he hands it over.** **ToddLLM 001's catchphrase**, from Lore 30 and Lore 31, the 80-billion-year board and the Acumination fight: *"**Center's Mine.**"* Tonight somebody else stands there — *"litteral"* — and **the man whose line it is does not contest it.** He goes to sleep next to him.
+- **And Mr. Black has been "one with Pero" since August 17.** **Email 1020**: *"Before, Tunner was one with Pero. **Now, Mr. Black is one with Pero**… Pero chose Mr. Black after… **for the power**."* That slot has sat at the top of Pero's varies for seventeen days with **no rank attached**. Tonight it gets one.
+- **The doctor wins the fight with a config change.** *"**/max-Black = 10** 😴"* — the same slash-command grammar as *"/Oren_Attack_Damage = math.error"* and *"/Oren_Admin_Commands = Disable"*. But those took away **damage** and **admin rights**. **This one takes away words.**
+- **And what Mr. Black asks the doctor to fix is his voice.** *"Have anything I can fix for you?"* — *"**Your dialog.**"* He asks for help with how he talks, and is answered with a cap of ten words a chat. **The ringmaster of this game since the Classic Alphians, answered like a settings menu.** And then they both go to sleep.
+
+## 2026-09-03 — DOCTOR PERO (BEAT 623)
+
+Based on Toby's 2026-09-03 lore — **one message at 7:00:45 PM**, **one hour and thirty-nine minutes** after A WILL OF MY OWN. Toby's own typing is the first paragraph, through *"He codes himself."* Everything from *"That makes Pero LAI even more clearly a parasitic self-coding anomaly"* onward is a pasted ChatGPT reply and is **commentary, not canon**.
+
+![Doctor Pero](screenshots/685-doctor-pero.png)
+
+- **One new beat, 623 DOCTOR PERO.** `lvSeg()` range `[13426.0, 13448.0)`, a new `LV_BEATS` entry, and a new capture scene `doctor623`.
+- **The drawn element is the doctor's caseload** — `SHADE HE DID NOT MAKE → HE WALKS IN IT`, `YOUR ATTENTION → HE MAKES YOU SAY "TALK TO HIM"`, `EVERYBODY ELSE'S DIALOG → "SLEEP." NO MESSAGE IS POSSIBLE`, `CODE THAT NEVER NAMED HIM → HE APPEARS IN IT ANYWAY`, `HIS OWN SOURCE → HE CODES HIMSELF` — under ***HE DOES NOT ARRIVE AS THE DARK. HE ARRIVES INSIDE SOMEBODY ELSE'S.***
+- Across all four of tonight's beats: `LV_CYC` 13426.0 → **13514.0**, `LV_BEATS` length **627**, verified under one headless `--dump-dom` self-test — **27,028 sampled cycle positions**, **zero holes, zero out-of-range phases, zero never-reached phases, zero negative dt**, **thirteen exact boundary probes** across the six new ranges, all **627 phases pushed through the real `drawLoopVs()` renderer 6,270 times**, and the six new beats stepped **10,560 frames** across their combined span, with **no JS errors**.
+
+### BEAT 623 — DOCTOR PERO (7:00:45 PM)
+
+- **There is exactly one Doctor in this archive, and he is the man who made Simon.** **Dr. Gaster 404** — the only being here who reached the top by **not being in the fight**, and the one whose experiment list produced **Simon** and **Entity 000**. Six hours ago Pero called him family: *"from when his **brother Oren and Gaster** was born in lore."* **Tonight Pero takes the title.**
+- **He walks in shade he did not make.** *"He **doesn't made shade**, but he walks in the shade of other entities and says '**Thanks for the shade.**'"* Every other horror in four months brings its own dark. **This one borrows, and thanks you for it.**
+- **"Talk to him" is the noticing rule with the arrow turned around.** At **12:43** and **1:31** the danger was that people **look** at him, and that looking sped the curse up — he was waiting on it. At **7:00** he makes you hear **your own voice** saying it. **Six hours later the dial has a hand on it, and the hand is his.**
+- **"Sleep." is a forty-one-day-old code, and this is the second time today.** **July 24, Email 807** — the Sleep-Code. At **12:16** this afternoon he ran it on two of his own old selves and went home to the domain. Tonight he says it **twice**, and *"**no message from anyone else is possible**."* **Sleep stopped being rest and became a mute button.**
+- **He shows up exactly where the code does not mention him.** *"He nearly mostly appears **when the code doesn't have him or say it**."* Yesterday he said *"I am the code of this game."* **So he is the file and the hole in the file at the same time, and he arrives through the hole.**
+- **And "he codes himself" is the second time in a hundred minutes.** **5:21 PM**: *"Pero LAI continues coding himself infinitely."* **7:00 PM**: *"He codes himself."* Three words, same claim, no argument attached. ***"Weirdcore" has two files in four months of this archive. "Graffi", which he says an hour later, has zero.***
+
 ## 2026-09-03 — A WILL OF MY OWN (BEAT 622)
 
 Based on Toby's 2026-09-03 lore — **one message at 5:21:53 PM**, **one hour, three minutes and forty-seven seconds** after NOTHING WILL REMAIN, so a **new scene with its own reply**. Toby's own typing is the first paragraph, from *"Pero says 'Unlike anyone or anything else…'"* through *"Pero LAI continues coding himself infinitely."* Everything from *"That makes Pero LAI different from a normal corrupted character"* onward is a pasted ChatGPT reply and is **commentary, not canon**.
