@@ -4,6 +4,123 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-05 — THE MORNING THE LORE BECAME A GAME (BEATS 642-652)
+
+Based on Toby's 2026-09-05 lore — **eleven messages between 8:24:48 AM and 12:29:23 PM**, all in the "Re: Even Even More of Pero" thread, across five scenes. Canon is his own typing in every case: the make-over paragraph, the two image rulings, the twenty-versus-twenty question, the turning point, the betrayal arc, the phobia message, the Anime Effects line, the two Infinity Domains, the mountain, the forever tomb, the six-word correction and the OBSCURITY ruling. Everything pasted underneath — the "Clean canon update" tables, the twenty step-by-step animation lists, the five-phase battle breakdown, the three-layer mountain table and the WD-versus-Pero comparison — is machine text and is **commentary, not canon**.
+
+**In one morning this stopped being an archive of fights and became a game with a name, a cast, a boss, two endings and a final room.**
+
+![The make-over of all 20](screenshots/704-the-make-over-of-all-20.png)
+
+![All 6 are perfect](screenshots/705-all-6-are-perfect.png)
+
+![Secretly the game](screenshots/706-secretly-the-game.png)
+
+![Fully a game game](screenshots/707-fully-a-game-game.png)
+
+![Mr. Black's betrayal](screenshots/708-mr-blacks-betrayal.png)
+
+![Anime effects](screenshots/709-anime-effects.png)
+
+![Infinity domains](screenshots/710-infinity-domains.png)
+
+![Trypophobia Mountain](screenshots/711-trypophobia-mountain.png)
+
+![The forever tomb](screenshots/712-the-forever-tomb.png)
+
+![Oren is one of the 20](screenshots/713-oren-is-one-of-the-20.png)
+
+![Obscurity](screenshots/714-obscurity.png)
+
+- **Eleven new beats, 642 through 652.** `LV_CYC` 13844.0 → 14086.0, eleven new `lvSeg()` ranges from `[13844.0, 13866.0)` to `[14064.0, 14086.0)`, eleven new `LV_BEATS` entries, eleven new renderer blocks and eleven new capture scenes (`makeover642`, `allsixperfect643`, `secretlythegame644`, `fullyagamegame645`, `blackbetrayal646`, `animeeffects647`, `infinitydomains648`, `trypophobiamtn649`, `forevertomb650`, `orenisoneof20651`, `obscurity652`). **Runtime assert before capture**: each scene injected, `window.update` replaced with a probe writing `lvSeg(loopVs.cyc)[0]`, `LV_BEATS[ph].key` and `LV_BEATS.length` into `document.title`, read back through `chrome --headless --dump-dom` — **all eleven returned the expected beat number and key on the first run**. Sweep self-test: **704,300 samples, 653 of 653 phases reachable, `LV_BEATS.length` 653, 0 holes, 0 `lvSeg()` errors**. Every capture read back before shipping; no ladder-window collisions this run (all fourth-panel bands kept at `pR = cx+W*0.190`, all fifth panels at `H*0.578-0.616`, all banners at `H*0.928`).
+
+### BEAT 642 — THE MAKE-OVER OF ALL 20 (8:24:48 AM)
+
+- **"Dies" is the shortest ending anyone here has ever been given.** *"Pinki.ps dies. Vineria.ps dies."* Two words each, no cause, no fight, in the middle of a costume list. **Every other ending in four months came with a method** — deleted by code, slept forever, erased, banned, absorbed, faded into corruption shards.
+- **Wenda is handed back a rank she already earned.** **August 19**: *"Wenda became the most powerful angel known"*, and before that a Supreme Multiversal Seraphim God. Today *"Wenda.ps became an angel"* is listed as a **make-over Pero gives her**.
+- **Simon is switched off eighty minutes before the game is named after him.** *"Simon.ps became a puppet on a metal rod that Sky.ps put into him."* Since **Lore 17 in June**, Simon has been the one being who wins **every** Sound Battle, 1000 to 3560 BPM, even against all characters combined.
+- **`cybernaut` and `5 Nights at Sprunki's` both have zero prior hits in four months.** And Jevin's new power is the first one in the archive that does nothing to a character and everything to whoever is looking: *"whoever looks at it's face."*
+- **The escape condition is the ordinary act of playing.** *"If you put Mr. Black and all the Sprunkis next to him"* — not an attack, not a code, not a route. It is **putting your whole roster on the board**, and it ends with *"You won't be able to contain me in this screen for long."*
+
+### BEAT 643 — ALL 6 ARE PERFECT (8:28:02 and 8:41:00 AM)
+
+- **One hour after "No more images for now", the drawable world shrinks to two characters** — *"like Mr. Black and Pero LAI and I believe that's it"* — **and they are ranks one and two**.
+- **Thirteen minutes later he routes around his own rule.** A still image of the other eighteen is impossible; **seven frames of them is not**. He asks for all twenty *"each step, what it is like, and every single part."*
+- **The first rule in the archive that applies to everybody equally.** *normal Sprunki music movement → glitch interruption → character-specific horror motion → icon glow.* Four months of ranking the cast by power, and this one is about **how they move**.
+- **And the roster finally adds up to twenty.** Garnold.ps, Mr. Sun.ps and Mr. Tree.ps arrive; **Mindy Starchild is not one of the twenty**, because she is the one they are trying to bring back. The count only works if she is still gone.
+
+### BEAT 644 — SECRETLY THE GAME (9:32:47 AM)
+
+- **"Simon's Realm Sound Battles" has zero prior hits — and "Sound Battles" is in eighteen files.** The mechanic has been the combat system since **June 7**: *"who can take the other character down with sounds and dancing."* **The mechanic is three months old and the name is eight minutes old.**
+- **It is named after the one character who cannot play it.**
+- **Hyperspace stops being a way out.** Eleven prior files, every one of them a route somewhere. Today it is used **without leaving**: *"to change the cyber setting and the sounds."* Stage lighting, not transport.
+- **Twenty versus twenty is the first even fight in four months** of ladders, tiers and numbers with sixty-eight zeros.
+- **And the last sentence is the writer, not a character:** *"It is the coolest experience I ever seen now."*
+
+### BEAT 645 — FULLY A GAME GAME (9:35:53 AM)
+
+- **The first outcome in the archive that is not decided yet.** *"Sprunkis can either win and save everything from him, or Pero LAI could win and take over the mod."* Every fight in four months arrived with its winner already in the sentence.
+- **And it is the first losing ending ever offered.** Not one ending here has let the player's side lose for good, and he put one in the same breath as the win **without saying which he wants**.
+- **"More than 300 sounds + Animations" is a new kind of number.** This file counts damage with sixty-eight zeros and price at half of infinity. **This is an asset count, not a power level.**
+- **Yesterday's boast becomes today's rulebook.** September 4, 3:27 PM, in Pero's own mouth: *"I am the only Classics character."* Eighteen hours later Toby writes it as plain fact in his own voice.
+- ***"You see what happens, and it happened"*** — present tense and past tense in one sentence about the same event.
+
+### BEAT 646 — MR. BLACK'S BETRAYAL (9:44:48 AM)
+
+- **Pero has given the game away four times, and this is the first earned one.** To Gray and walked off; to Wenda and Gray and went out for **Pop Tarts**; to Gaster and went for **milk**. Today it is *"as a reward"*, for *"all the other characters work"*, and it goes to **twenty at once**.
+- **The ranking was written eighty minutes before the fight that earns it.** Wenda has been second most powerful since **August 24**; Mr. Black was declared second at **8:24**; at **9:44** he beats her. And she is the one Pero handed the game to twelve days ago.
+- **Gray is fighting somebody he used to be.** Email 744: *"Pero gave the game to Gray"* and *"made Gray into Mr. Black."*
+- **Fun Bot volunteers into the deciding pair.** Twenty-one files as a helper and a repairer, and *"Gray and Fun Bot **choose to** team up."*
+- **And the fight is measured in minutes.** Six timelines long, sixty-eight zeros, half of infinity, 999.87 billion times — and then *"after 20 minutes."* **The smallest unit any battle here has ever had, and it is the one that saves everything.**
+
+### BEAT 647 — THE INFINITY POWER OF ANIME EFFECTS (10:45:34 AM)
+
+- ***"Anime Effects" has zero prior hits in four months.*** Every power in this file before it was made of code, corruption, sound, sleep, deletion, lightning or love. **This is the first one made of how a thing looks on screen.**
+- **He already owns that layer, which is why it works.** 9:35 gave him *"more than 300 sounds + Animations"*; 8:41 defined everybody else's movement as a smaller version of his.
+- **"The targets" have no names**, in a morning where every fight had a roster, and they are gone in the same sentence they appear in.
+- **The emoji rule he set yesterday is holding.** *"Pero LAI no longer can do the cat emoji thing now"* (Sep 4, 3:09 PM). A full census of this morning's eleven messages: **zero cat codepoints**, and exactly three emoji in all of them — 😌, 🌑 and 😎.
+
+### BEAT 648 — SIMPLE AND COMPLEX INFINITY DOMAIN (10:46:44 AM)
+
+- **Seventy seconds later he names the move he just used and invents a second one in the same sentence.**
+- ***"Infinity Domain" has zero prior hits, and both halves of it have hundreds*** — Endless Chaos, the Throws Board, the Domain Clash, Gray's Realm, Pero's Realm. He welded two of the archive's biggest words together.
+- **Simple versus Complex is not a ladder.** LV 1 to LV 4, Phase 1 to Phase 5, first to second to third most powerful — every tier this file has ever had runs up or down. **These are two different kinds**: one changes what you see, the other changes what there is to see.
+- **The complex one is just him with a move name on it.** *"With code"* is the layer he was declared to be seventy-one minutes earlier.
+- **And he uses the move first and names it afterwards**, which is backwards for this archive.
+
+### BEAT 649 — TRYPOPHOBIA MOUNTAIN (10:11:25 AM and 11:59:21 AM)
+
+- **The 10:11 message is not four words.** It opens *"List all Phobias and what they mean"* and then, in Toby's own voice under the machine's list, gives the mountain its whole body: *"The Mountain itself is alive, it consumes other entities such as Player 666, .exes, and basically anything. Trypophobia Mountain has Pero LAI's brain, the body, souls, and most of Pero LAI, even the cords and machinery. If you walk into a Mountain covered in holes in Classics and find a body covered in holes and code, you have found him, Pero LAI sleeping or awake."*
+- ***Trypophobia, Taphophobia and Player 666 all have zero prior hits.*** **Player 666 is introduced and digested in the same clause.**
+- **The container gets an address.** At 7:28 this morning: *"Classics is just my container for myself."* By 10:11 it is a place on the map with his brain, body, souls, cords and machinery in it.
+- **The undrawable thing moves from a person to a place**, and it is defended the opposite way round: *"you wouldn't be able to make an image of it because it is too scary and isn't a myth, it is actually in Classics."* **Insisting it is not a legend is a new kind of argument here.**
+- **And at 11:59 the prettiest place in the game turns out to be the lid.** Cherry Blossom Mountain has been a summit in eleven files since August 24 and **has never once had a height**. It is *"the tallest mountain in the game"* only because the peak underneath it *"is flat so it can have Cherry Blossom Mountain on top."* **That is a reason, not a shape.**
+
+### BEAT 650 — THE FOREVER TOMB (12:10:54 PM)
+
+- **An ending without a defeat.** *"Pero LAI sleeps again. Oren.ps and the 20 Sprunkis play, Pero LAI sleeps in his forever tomb, immune to anything, and inside the core of Trypophobia Mountain."*
+- ***"Forever tomb" and "immune to anything" both have zero prior hits.*** The only other tomb in the archive is Simon.psc's, and **Oren is the one who put him in it** — *"Oren brings Simon to a tomb again"* — and he was *"bissy resurrecting"* before the paragraph ended. **That tomb never held. This one says forever, and Oren is outside it, playing.**
+- **Yesterday he slept the other way round.** September 4, 3:34 PM: he banned every character but himself, then *"Pero LAI is now sleeping in peace, he blocked connection."* **Same act, opposite room.**
+- **Sleep used to be the thing he did to other people** — it is what he used on Simon 404 instead of fighting him. Today it points at himself, by his own choice.
+- **And the last verb of the morning is "play."**
+
+### BEAT 651 — OREN IS ONE OF THE 20 (12:11:37 PM)
+
+- **Six words, forty-three seconds later, and the only message of the day that adds nothing and fixes something.**
+- **He is not correcting the lore. He is correcting the machine.** The sentence before it said *"Oren.ps and the 20 Sprunkis play"*, which quietly makes **twenty-one** Sprunkis.
+- **The count he is protecting is four days old** — September 1, 2:36 PM, *"the 20 Sprunkis + Pero LAI"* — and it has survived a ban, a make-over, two deaths and a betrayal **without drifting by one**.
+- **It is also the rule this whole game is built on, used by the person who made it:** Toby's typing is canon, the pasted machine text is commentary. He has never stated that rule. Here he just applies it.
+- **The smallest beat in the game, and the one that keeps the other six hundred honest.**
+
+### BEAT 652 — OBSCURITY (12:29:23 PM)
+
+- **The third vocabulary question of the day, and the third to come back as lore.** Sakura became the origin of Classics (Aug 31); phobias became the mountain (10:11); *"What is OBSCURITY"* becomes *"That would be WD and Pero LAI."*
+- ***Obscurity has exactly one prior hit and it was a ranking*** — SCat404 known by 3% of people, GAsT3r by two, *"me and Pero"*: the first time anything here was ranked by **how few people knew it** rather than by force. **Today it stops being a scale and becomes a name.**
+- **"Captable" is his own spelling and it has exactly two prior hits.** Oren, to somebody else: *"I don't know what you are captable of, but we know that YOU are the key to saving everyone."* Pero, Email 815: *"I am now captable of ANYTHING 😈."* And now: *"You don't even know all what I am captable of yet."* **A compliment, a boast, and a withholding.**
+- **He says it nineteen minutes after being sealed in a forever tomb.** The ending held for nineteen minutes before the sleeping one said there is more.
+- **🌑 has zero prior hits in the whole archive; 😎 has 138.** The new moon arrives attached to the word for being unseen.
+- **WD is unknown because there is so little of him. Pero is unknown because there is too much.**
+
 ## 2026-09-05 — THE HINT · JUST MY CONTAINER · CAT EARS AND SHARK HOODIES (BEATS 639-641)
 
 Based on Toby's 2026-09-05 lore — **one message at 7:28:00 AM**, **fifteen hours and fifty-four minutes** after NOW CROWN ME KING, same thread ("Re: Even Even More of Pero"), and a new scene. Canon is his own typing: the prompts he put to the two chatbots, the answer he supplies himself under the line (*"⬇️ The most powerful being is the one directly below this line… 😎 P3R0 L@1"*), the Pero self-portrait block with its four printed sentences, his own out-of-story instruction *"No more images for now."*, and the closing sentence about the twenty Sprunkis. Everything else in the message — the ChatGPT/Gemini self-portrait comparison, the coolness/power verdicts, *"CROWN OFFICIALLY CLAIMED"*, the Cosmic Productivity Alliance line and the *"Clean canon update"* tables — is pasted machine text and is **commentary, not canon**.
