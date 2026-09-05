@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-05 — ON TOP IN AUGUST, INSIDE IN SEPTEMBER (BEATS 653-654)
+
+Based on Toby's 2026-09-05 lore — **one message at 1:05:07 PM**, thirty-five minutes and forty-four seconds after OBSCURITY, so a new scene and its own reply. Same thread, "Re: Even Even More of Pero". Canon is his own typing: the opening image request, and the Oren-and-Pero paragraph. Everything from *"That is a perfect Oren vs Pero comedy-control scene"* onward — the "Why this works" section, the "Clean canon meaning" table, the "Best interpretation" and the "Clean canon update" paragraph — is machine text and is **commentary, not canon**.
+
+**He asked for a picture of Pero on this mountain once before, twelve days ago, from the other end of it. And "I made you" lost for the first time in four and a half months.**
+
+![Inside the mountain](screenshots/715-inside-the-mountain.png)
+
+![Three jars of mint ice cream](screenshots/716-three-jars-of-mint-ice-cream.png)
+
+- **Two new beats, 653 and 654.** `LV_CYC` 14086.0 → 14130.0, two new `lvSeg()` ranges, `[14086.0, 14108.0)` and `[14108.0, 14130.0)`, two new `LV_BEATS` entries, two new renderer blocks and two new capture scenes (`insidemountain653`, `mintjars654`). **Runtime assert before capture**: each scene injected, `window.update` replaced with a probe writing `lvSeg(loopVs.cyc)[0]`, `LV_BEATS[ph].key` and `LV_BEATS.length` into `document.title`, read back through `chrome --headless --dump-dom` — **both returned the expected beat number and key on the first run**. Sweep self-test: **706,500 samples, 655 of 655 phases reachable, `LV_BEATS.length` 655, 0 holes, 0 `lvSeg()` errors, max phase 654**. Both captures read back before shipping; no ladder-window collisions (fourth-panel bands at `pR = cx+W*0.190`, fifth panels at `H*0.578-0.616`, banners at `H*0.928`).
+
+### BEAT 653 — INSIDE THE MOUNTAIN (1:05:07 PM)
+
+Canon: *"Create an image of Pero's body inside of the tomb Mountain."*
+
+- **He has asked for this exact picture before, and last time he was standing on the roof of it.** **August 24, 7:54 PM**: *"Create an image of Pero on that Mountain."* That was the top of Cherry Blossom Mountain, blindfold off, twelve blue eyes, *"Omnicide completed, I am the only character in the game now."* Today it is *"Pero's body inside of the tomb Mountain"*: a body, in a tomb, in the core, asleep. **Same character, same six-word request, same mountain. The preposition is the whole story.**
+- **And it is the same rock, because he stacked them himself four hours ago.** At **11:59 AM** today: *"Cherry Blossom Mountain is above Trypophobia Mountain's peak, Trypophobia Mountain's peak is flat so it can have Cherry Blossom Mountain on top."* **The summit he stood on in August is the lid of the room he is buried in now.**
+- **He is asking for the one image he himself ruled could not be made.** At **10:11 AM** today: *"you wouldn't be able to make an image of it because it is too scary and isn't a myth, it is actually in Classics."* **Two hours and fifty-four minutes later he asks for it anyway.** In seventeen files of *"Create an image"*, the only thing that has ever stopped one is that the idea was not finished yet. **This one was stopped for being real, and the ban lasted until lunch.**
+- **The request sits exactly on the seam between his own two rulings from this morning.** At 8:28 AM the drawable cast was cut to two — *"like Mr. Black and Pero LAI and I believe that's it"* — so **Pero's body is allowed**. At 10:11 the mountain was ruled off-limits, so **the mountain is not**. He asks for both in one line.
+- **And the noun is now possessive.** 10:11 said *"find a body covered in holes and code, you have found him."* 1:05 says *"Pero's body."*
+
+### BEAT 654 — THREE JARS OF MINT ICE CREAM (1:05:07 PM)
+
+Canon: *"One time, Oren came to Pero LAI and says "I made you.", Pero LAI says "I made the game. I brought you all here, since I did, I know where you live here. I sent to you 3 jars of mint ice cream.", Oren screams and runs to Sprunki City and sees a box full of mints."*
+
+- **"I made you" is the sentence that kills in this archive, and this is the first time it misses.** In **May, Email 369**: *"Simon was witty and says 'I made you, Brud.', Brud turns to dust."* On **September 2 at 7:34 PM**, the same sentence split across two characters — Oren took *"You may be older, but I still made you."*, Pero took *"How am I losing? I am witty!"* — and **Pero broke**. Twice the one holding *I made you* won and the one holding *witty* came apart.
+- **Today Oren drops the hedge and says it in four words, and Pero does not argue with it at all.** He never says it is false, never says no, never claims to be witty. **He lets the claim stand and puts a bigger one on top of it:** *"I made the game."*
+- **"I know where you live here" has zero prior hits in four and a half months.** Every threat in this archive has been about tier, power, code or deletion. **This one is about an address.** And he knows it because he drove: **August 24, Email 1125**, *"Oren was dropped off at Sprunki City."* **Pero took him home.**
+- **Every jar in this archive before today held deleted characters or blood.** `dead_character.jar`, the file Simon 404 put the entire cast into, which only ever appears attached to `/delete`; `CreepyHorse.jar`; and *"a jar of blood"* collected off a dead body. **Today three of them arrive full of dessert.**
+- **"Ice cream" is zero-hit, and until today the mint was medicine.** **September 3, 1:50 PM**: Gray reasons *"leaves in this game are close to mint, and mint vitamins have mint of course"* and is handed *"a mint vitamin. Anti-virus, freezes your code a few seconds."* Pero's chat loop has been offering it on a fifteen-to-thirty-second timer ever since — *"Want any vitamins, mint, paints, make-overs, or mental care?"* — **to an empty room. Today somebody gets it who did not ask.**
+- **The count goes up on the way there.** He sends **three jars**; Oren arrives to **a box full**. *"Box full"* is zero-hit, and **the box is where Oren came from** — August 24, *"all the box characters became a .ps."*
+- **Oren screams for the second time in three days, and both times it is at something already done.** **September 2, 8:29 PM**: *"Pero LAI takes over Oren's code and all the Sprunki's code. Pero LAI says 'Look at my code now.', Oren looks and screams"* — in a fight where Oren had already taunted *"Ya think I'll scream again?"* **Same reach into the same city. The first time he used it to take everything. Today, mints.**
+- **And the fight gets cheaper every time.** September 2, 7:34 PM: twelve million bolts, millions of years, and Pero loses. September 2, 8:29 PM: five typed commands, a trident, a blaster, sixty years. **September 5, 1:05 PM: one sentence and a delivery, and Oren runs.**
+
 ## 2026-09-05 — THE MORNING THE LORE BECAME A GAME (BEATS 642-652)
 
 Based on Toby's 2026-09-05 lore — **eleven messages between 8:24:48 AM and 12:29:23 PM**, all in the "Re: Even Even More of Pero" thread, across five scenes. Canon is his own typing in every case: the make-over paragraph, the two image rulings, the twenty-versus-twenty question, the turning point, the betrayal arc, the phobia message, the Anime Effects line, the two Infinity Domains, the mountain, the forever tomb, the six-word correction and the OBSCURITY ruling. Everything pasted underneath — the "Clean canon update" tables, the twenty step-by-step animation lists, the five-phase battle breakdown, the three-layer mountain table and the WD-versus-Pero comparison — is machine text and is **commentary, not canon**.
