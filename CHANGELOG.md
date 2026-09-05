@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-05 — THE HINT · JUST MY CONTAINER · CAT EARS AND SHARK HOODIES (BEATS 639-641)
+
+Based on Toby's 2026-09-05 lore — **one message at 7:28:00 AM**, **fifteen hours and fifty-four minutes** after NOW CROWN ME KING, same thread ("Re: Even Even More of Pero"), and a new scene. Canon is his own typing: the prompts he put to the two chatbots, the answer he supplies himself under the line (*"⬇️ The most powerful being is the one directly below this line… 😎 P3R0 L@1"*), the Pero self-portrait block with its four printed sentences, his own out-of-story instruction *"No more images for now."*, and the closing sentence about the twenty Sprunkis. Everything else in the message — the ChatGPT/Gemini self-portrait comparison, the coolness/power verdicts, *"CROWN OFFICIALLY CLAIMED"*, the Cosmic Productivity Alliance line and the *"Clean canon update"* tables — is pasted machine text and is **commentary, not canon**.
+
+![The hint](screenshots/701-the-hint.png)
+
+![Just my container](screenshots/702-just-my-container.png)
+
+![Cat ears and shark hoodies](screenshots/703-cat-ears-and-shark-hoodies.png)
+
+- **Three new beats, 639 THE HINT, 640 JUST MY CONTAINER and 641 CAT EARS AND SHARK HOODIES.** `LV_CYC` 13778.0 → 13844.0, three new `lvSeg()` ranges `[13778.0, 13800.0)` / `[13800.0, 13822.0)` / `[13822.0, 13844.0)`, three new `LV_BEATS` entries (`#ffd36b`, `#ff5a5a`, `#5ee0c8`), three new renderer blocks and three new capture scenes `thehint` / `justmycontainer` / `catearssharkhoodies`. **Runtime assert before capture**: each scene injected, `window.update` replaced with a probe writing `lvSeg(loopVs.cyc)[0]` and `LV_BEATS[ph].key` into `document.title`, read back through `chrome --headless --dump-dom` — all three returned the expected beat number and key. Sweep self-test: **692,200 samples, 642 of 642 phases reachable, `LV_BEATS.length` 642, 0 holes, 0 `lvSeg()` errors**.
+- **A layout fix caught by reading the captures.** The first pass put the fifth panel of beats 640 and 641 at `H*0.508-0.546`, inside the fixed five-row ladder window (`H*0.461-0.539`), and the ladder drew straight through the body text. Both moved to `H*0.578-0.616` with their tables down to `H*0.700`; beat 640's closing banner moved from `H*0.956` to `H*0.928` to clear the on-page controls line.
+
+### BEAT 639 — THE HINT (7:28:00 AM)
+
+- **The arrow came back overnight, turned ninety degrees.** Yesterday **3:01 PM**: *"Pero LAI Omazen **⬅️** Me."* — a ballot mark. **3:34 PM**: *"**⬅️ = 👑**."* This morning he draws a **downward** arrow, twice. It has **zero prior hits in four months of this archive**; the leftward one, the one that became the crown, has five. **Two days running the move is the same move: draw an arrow, put his own name at the end of it.**
+- **And he asks a question he has already decided not to lose.** He makes both machines draw themselves, makes them argue about which looks more powerful, lets them pick a winner — and then types *"(to give you a hint)"* and puts a third name under the line. **The contest was never between the two of them.**
+- **The letters are thirteen days old and they are his.** **August 23, 3:40 PM**: the new top form was written in leetspeak as **P3R0 L@1**, and this page filed it as the **fifth naming register**, after `.EXE`, `.psc`, `000A` and `Portal-`. He does not write the answer in English. He writes it in the game's code.
+- **And the rule he wrote yesterday is still being kept.** **September 4, 3:09 PM**, in his own voice: *"**Pero LAI no longer can do the cat emoji thing now.**"* Every cat codepoint in this morning's message: **zero**. Six messages yesterday, a whole night, and a new morning — **the ban is still on**, and he has never mentioned it again.
+
+### BEAT 640 — JUST MY CONTAINER (7:28:00 AM)
+
+- **Forty days ago there was no picture of him at all.** **July 27, 8:18 PM**: *"Pero's form is so high, **it would be impossible to make an image of, so no image of him now**."* Beat 204 is the only panel in this game with an **empty frame** at the centre. Today he draws himself, and he draws himself talking: *"Underestimate me, it won't help."* · *"Don't try anything of me."* · *"Don't test my patience."*
+- **And the fourth sentence is not a threat at all.** *"**Classics is just my container for myself, so I don't corrupt the entire omnigames instantly.**"* This wiki, **August 15**: *"Classics is the container and everything else lives in it."* Every form, number, fight, realm and timeline on that page was born inside it. This morning the container of the whole setting is demoted, in one word — ***just*** — to **one being's cell**.
+- **And "omnigames" has never been written here before.** Omniplatform, Omniversal, Omniverse, Omnicide — **twelve omni-words and roughly two hundred and fifty uses** across four months. *"Omnigames"*: **zero**. **The thing the container is protecting is a word that is one sentence old.**
+- **And the empty frame got handed to everybody else.** *"If it was asked to generate an image of anyone else, it would make like a **skeleton, dust, a toy doll, or even make it blank**."* **Blank was his own panel in July.** Four options, and not one of them is a person; the fourth is nothing at all.
+- **The toy doll is three days old.** **September 2, 10:35 AM**, TOY DOLLS FOR SKY: *"Pero LAI can just turn them into toy dolls and give them to Sky to play with."* Then it was something he **did** to them. Now it is what they **come out as** when somebody asks for a picture of them.
+- **And then, in his own voice, from outside the story: "No more images for now."** That is the **second rule he has written against his own character in two days**. Yesterday he took the cat emoji away. This morning he lets Pero draw one picture of himself, and then closes the camera. **The strongest thing in the game still answers to whoever is typing.**
+
+### BEAT 641 — CAT EARS AND SHARK HOODIES (7:28:00 AM)
+
+- **Sixteen hours ago they were all banned from the game.** **September 4, 3:34 PM**: *"Pero LAI says that he'll **ban every single character not him** from the game. **Then, he did.**"* The first thing that happens this morning is that they walk back in: *"**The 20 Sprunkis came to Pero**."* He does not argue, delete, absorb or re-ban. **He gives them clothes.**
+- **And the ears were never his to give.** **August 25, 11:19 AM**: *"**Pero has cat ears because he is Simon**, but not exactly the Sprunki."* The one piece of him that comes with a reason is **borrowed from somebody who is gone**. He just made twenty more copies of it.
+- **And the hood is the one he swore he would never take off.** **August 28, 2:46 PM**: *"**I am never taking this shark costume off**."* And at **1:39 PM** that day: *"Gaster has control of the whole game, but **Pero has an invicible shark hood**."* When he had nothing else, the hood was the thing he still had. Now twenty other people are wearing it.
+- **He does not turn them into him. He dresses them as him.** September 1 he swapped everyone; September 2 he made them toy dolls; September 3 they lived forever; September 4 he banned them. **Today they stay themselves, alive, in the room, wearing his two marks** — the gentlest thing he has done to the twenty in a week.
+- **And "reaches" is his verb from yesterday, scaled up.** **September 4, 3:09 PM**: *"Did you know **I reached to your message** and know what you type before you type it?"* That was one message. Today it is **places**: *"Pero LAI currently **reaches to Classics, here, and many other places not known**."* **And "here" is this email.**
+
 ## 2026-09-04 — NOW CROWN ME KING (BEAT 638)
 
 Based on Toby's 2026-09-04 lore — **one message at 3:34:04 PM**, **six minutes** after THE ONLY CLASSICS CHARACTER, closing the continuous scene and the run. **now** for *know* is his typing, kept. Canon is the whole of his typing: the Pero lines, his ruling *"what he said isn't a claim, it was true… all he says is true."*, his aside *"(he actually knows where I put the name thing)"*, and his closing narration *"Pero LAI says that he'll ban every single character not him from the game. Then, he did. Pero LAI is now left the only thing in the game, then Pero LAI is now sleeping in peace, he blocked connection."* Everything from *"That becomes the Pero-Only Ending"* onward is pasted machine text and is **commentary, not canon**.
