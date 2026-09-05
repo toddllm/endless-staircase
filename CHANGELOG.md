@@ -4,6 +4,43 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-05 — THE AGES, AND THE FLOOR UNDER THE MOUNTAIN (BEATS 655-656)
+
+Based on Toby's 2026-09-05 lore — **one message at 1:34:24 PM**, twenty-nine minutes and seventeen seconds after THREE JARS OF MINT ICE CREAM, so a new scene and its own reply. Same thread, "Re: Even Even More of Pero". Canon is his own typing: the age rule, the one-word *"Correct."*, and the Mr. Sun / oceans paragraph. The twenty-row guess table with its per-character reasons, the "Cleanest version" restatement, the "Correct update accepted" block, the age-rule table, the four-layer vertical-structure table, the "Boat rule" heading and the "Clean final version" paragraph are all machine text and are **commentary, not canon**. *"enterence"* is his spelling and is kept.
+
+**He gave the whole cast ages and knocked eleven digits off them, then put water under the mountain and gave every shipwreck in the archive a reason.**
+
+![Guess all 20 ages](screenshots/717-guess-all-20-ages.png)
+
+![The mountains are on water](screenshots/718-the-mountains-are-on-water.png)
+
+- **Two new beats, 655 and 656.** `LV_CYC` 14130.0 → 14174.0, two new `lvSeg()` ranges, `[14130.0, 14152.0)` and `[14152.0, 14174.0)`, two new `LV_BEATS` entries, two new renderer blocks and two new capture scenes (`sprunkiages655`, `mountainsonwater656`). **Runtime assert before capture**: each scene injected through the capture tool's own injection form, `window.update` replaced with a probe writing `lvSeg(loopVs.cyc)[0]`, `LV_BEATS[ph].key` and `LV_BEATS.length` into `document.title`, read back through `chromium --headless --dump-dom` — **both returned the expected beat number and key on the first run** (`PROBE seg=655 key=GUESS ALL 20 AGES len=657`, `PROBE seg=656 key=MOUNTAINS ON WATER len=657`). Sweep self-test: **706,500 samples, 657 of 657 phases reachable, `LV_BEATS.length` 657, 0 holes, 0 `lvSeg()` errors, max phase 656**. `node --check` clean on the extracted script. Both captures read back before shipping; no ladder-window collisions (fourth-panel bands at `pR = cx±W*0.190`, fifth panels at `H*0.578-0.616`, banners at `H*0.928`).
+
+### BEAT 655 — GUESS ALL 20 SPRUNKI'S AGES (1:34:24 PM)
+
+Canon: *"Guess all 20 Sprunki's ages. Black's is 35, Sky is 14, and the other Sprunkis are in their 20s. Pero is infinity years + Always been there."* and, under the pasted table, *"Correct."*
+
+- **He asks for a guess and answers it in the same breath.** There is exactly one other *"Guess"* imperative in four and a half months: **August 28, 5:04 PM**, *"Guess where the things Pero and Gaster consumes go."* That one was logged here as **the first open question he had ever left in the thread**, and he never came back and closed it. **Today the answer key is in the same sentence as the question.**
+- **The whole cast falls out of the billions.** The last time ages were listed anywhere was the **August 5, 8:52 AM** Trinity Trio sheet: **Simon 404 at 81 billion years, Oren at 28 billion, Wenda unknown, Luigi Green at "ᾒµ" written in Greek, Pinki at 128** — and 128 was the only real number on it. **Today eighteen of the twenty are 20-something.**
+- **And he set Oren's age eighty-three minutes early without saying that was what he was doing.** At **12:11 PM** today, six words: *"Oren is one of the 20 Sprunkis."* It read as a headcount correction against the machine's arithmetic. **At 1:34 it is the sentence that takes 28 billion years off him.**
+- **Two of his three numbers were already canon; only Mr. Black's is new.** Sky at 14 is from **September 2, 10:35 AM**, *"Sky.ps is 14 years old."* Pero at infinity is from the August 5 sheet. **A full-corpus census finds zero prior hits for "35 years" anywhere in the project** — the ringmaster, in the game since Classic Alphians, got his first age today.
+- **Pero's age is a number plus a sentence, and the sentence used to be a power.** *"Infinity years"* is how long he has lasted; *"+ Always been there"* is that he never started. On **September 2** *"There Before All"* was one of the twenty-one powers Toby listed for him, alongside his own clause *"he was never created himself."* **The power became the birthday.**
+- **And the oldest Sprunki is the one nineteen younger ones beat this morning.** At **9:44 AM** today: *"After 20 minutes, the Sprunkis beaten Mr. Black, and they saved everything."* **Four hours later he is also the eldest, and being top of the age chart did not help him either.**
+- **Sky takes a title Pinki used to hold.** On August 5 Pinki at 128 was the youngest being on the roster by a factor of roughly six hundred million. **Now she is in her twenties and Sky at 14 is the youngest thing in the game, by six years.**
+
+### BEAT 656 — THE MOUNTAINS ARE ON WATER (1:34:24 PM)
+
+Canon: *"Correct. Also Mr. Sun is like 4.6 billion years. Pero LAI also is even inside Classics oceans, it takes the boats down to him, and also the bottom enterence is water, and the Mountains are on water."*
+
+- **Every boat in this archive has already sunk, and today the water gets an owner.** Three boats, three sinkings, all of them already written: **July 27, 1:57 PM, The Last Pixel** — the 404 strings anchor the boat, the boat splits, and Pero says *"my only option is to destroy everything."* **August 24, 6:38 AM** — Oren jumps off the boat, *"falls and sinks in the sea."* **August 24, 6:41 AM, The Book Happened** — *"The boat started to break, waves crashed, the boat sinked."* **He did not add a sinking today. He added a reason for the three that were already there:** *"it takes the boats down to him."*
+- **And he has been in this water before, pulling somebody the other way.** **August 24, 6:38 AM**: *"Pero swam and brought Oren back out of the water."* This project called that swim **the omni-king's one move in the whole message**. **The same water he saved somebody out of is now the thing that does the taking.**
+- **4.6 billion is the first age here taken from the real world.** *"4.6 billion"* is **zero-hit** across all 456 corpus files. Every other number in four and a half months was invented: 81 billion, 28 billion, 128, infinity, ᾒµ. **4.6 billion years is how old the actual Sun is.** He reached outside the game for exactly one number.
+- **And it only fits because Mr. Sun started out as scenery.** Before **Email 277, May 16**, he was a piece of the cosmic engine that powered Simon, not a character. That email promoted him and ranked him above Black in the same breath. **Today he is handed an age that only makes sense if he is still the sun.**
+- **He breaks his own age rule one sentence after making it.** *"The other Sprunkis are in their 20s"* is about fifty words old when Mr. Sun is handed 4.6 billion. ***"Also"* is doing all the work.** The rule and its exception arrive in the same email, in that order.
+- **The mountain got its whole vertical column in one day, and the floor came last.** **10:11 AM** the body — *"Trypophobia Mountain has Pero LAI's brain, the body, souls."* **11:59 AM** the lid — Cherry Blossom Mountain on the flat peak. **1:05 PM** the room — *"Pero's body inside of the tomb Mountain."* **1:34 PM** the floor — the mountains are on water and the bottom way in is wet. **Three hours and twenty-three minutes for a whole vertical world.**
+- **There are now two ways to reach him, and only one of them was ever ruled un-drawable.** The climb goes through the holes he said could not be pictured *"because it is too scary and isn't a myth."* **The other way is just water.**
+- **And he has killed these oceans once already.** **July 27**: *"he made a stone under him and dried out all the oceans so everything becomes clear."* **Six weeks later the oceans are back and they are part of him. He emptied them; now he is in them.**
+
 ## 2026-09-05 — ON TOP IN AUGUST, INSIDE IN SEPTEMBER (BEATS 653-654)
 
 Based on Toby's 2026-09-05 lore — **one message at 1:05:07 PM**, thirty-five minutes and forty-four seconds after OBSCURITY, so a new scene and its own reply. Same thread, "Re: Even Even More of Pero". Canon is his own typing: the opening image request, and the Oren-and-Pero paragraph. Everything from *"That is a perfect Oren vs Pero comedy-control scene"* onward — the "Why this works" section, the "Clean canon meaning" table, the "Best interpretation" and the "Clean canon update" paragraph — is machine text and is **commentary, not canon**.
