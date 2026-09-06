@@ -4,6 +4,57 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-06 — THE ORIGINAL ONE (BEAT 665)
+
+Based on Toby's September 6, 2026 6:57:11 PM lore ("Even Even More of Pero",
+Email 1372), sent **exactly twenty-one minutes** after I OWN YOU NOW, with an
+`.mp4` attached. Canon is his own typing only: *"Here is the video file from
+Gemini of a Minecraft player making the original thing into a single slash. The
+original is kinda like that but is extremely cool and has huge effects and has
+the anime punches and the real Pero LAI uses the original one."* Everything from
+*"I watched the uploaded video"* onward — the ten-row scene table, the
+*"simple/slash version"* verdict and the *"real Pero LAI original version"* wish
+list — is machine text and is commentary, not canon.
+
+![Beat 665 — The Original One](screenshots/727-the-original-one.png)
+
+- **New beat `ph===665`, `THE ORIGINAL ONE`.** `LV_CYC` 14350.0 -> 14372.0,
+  `LV_BEATS.length` 666, one new `lvSeg` range, one new renderer block.
+- **He filmed his own move and then ruled the film the smaller one.** The
+  attack was created at **7:49 AM** (beat 662), fired at **6:36 PM** (beat 664)
+  and filmed at **6:57 PM** — eleven hours and seven minutes from code to
+  camera, all inside one day, and the first thing he does with the footage is
+  tell you it is not the real version.
+- **The character named this exact medium ten days ago.** August 27, 8:59 AM:
+  *"I know everything, I know we are in a video made by Gemini, and way before,
+  the user used Sora AI."* Tonight a video made by Gemini actually arrives, as a
+  file, in the mail. And on **August 25, 4:59 PM** Toby had already written it
+  down in his own voice: *"That is more lore from Gemini, the AI with a Video
+  Making thing."*
+- **"The real Pero LAI" is the phrase this archive reaches for whenever a copy
+  turns up, and it has now been said about four different media.** The Roblox
+  build (**August 18** — the version you can load and play is the one declared
+  not close to the truth), a picture (**September 3** — *"The image figure
+  doesn't jump off and go into the game. The Real Pero LAI does that though."*),
+  a rival chatbot (**September 4** — *"I am the real Pero LAI, there is one"*),
+  and now a video.
+- **"Kinda" is his hedge for a rendering, and he has used it on his own world
+  exactly twice.** **July 27, 1:57 PM**, THE LAST PIXEL: he attached a reference
+  image and said it was *"kinda wrong for where Pero/ToddLLM was standing."*
+  **41 days later**: *"The original is kinda like that."*
+- **A single hit is the top of his ladder.** September 3, Stage 5: *"destroy you
+  and everything in a single hit."* So a single slash is the one shape that can
+  be either his ceiling or somebody else's shortcut, and here it is the
+  shortcut.
+- **Panel adds:** the three-line quote block, four cited panels, a six-row table
+  (`Gemini`, `Minecraft`, `a single slash`, `kinda`, `the original`, the
+  attachment), and a small film frame holding exactly one slash at H*0.500, with
+  the same move unframed to its right running off both edges.
+- Runtime probe: `beatslen 666, maxPhase 665, phases 666, holes 0, undef 0,
+  k665 "THE ORIGINAL ONE", seg(14360)=665`, edges `14349.999->664 / 14350->665 /
+  14371.999->665`, 718,600 samples. `node --check` clean. Zero ladder collisions
+  after one nudge of the film frame from `cx-W*0.212` to `cx-W*0.150`.
+
 ## 2026-09-06 — HE PUNCHED THE ONE-WAY DOOR (BEAT 664)
 
 Based on Toby's September 6, 2026 6:36:11 PM lore ("Even Even More of Pero",
