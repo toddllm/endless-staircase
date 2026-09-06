@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-06 — HE PUNCHED THE ONE-WAY DOOR (BEAT 664)
+
+Based on Toby's September 6, 2026 6:36:11 PM lore ("Even Even More of Pero",
+Email 1371). Canon is his own opening paragraph only, from *"Pero LAI used
+INFINITY KIOAN CLOCKWORKS"* through *"You created me, but I own you now."*
+Everything from *"That is a huge turning point"* onward is a pasted reply and
+is commentary, not canon. *"Repeatally"* is his spelling and is kept.
+
+![Beat 664 — I OWN YOU NOW](screenshots/726-i-own-you-now.png)
+
+- **New beat `ph===664`, `I OWN YOU NOW`.** `LV_CYC` 14328.0 -> 14350.0,
+  `LV_BEATS.length` 665, one new `lvSeg` range, one new renderer block.
+- **The black hole is a target for the first time.** The blackhole is Pero's
+  own oldest mechanic — the very first beat of the Classics era page (July 19,
+  8:56 AM) is *"Pero sends anyone to the Dark by placing a blackhole beneath
+  them"*, and five hours later it was ruled *"The Blackhole is 1 way… nothing
+  sent down to the Dark climbs back up."* Forty-nine days later he punches it
+  into space. On September 1 this page had written *"A black hole is not
+  something you fight. It is something you fall into."*
+- **"You created me" concedes the one claim he never answered.** August 31,
+  4:02 PM, Oren: *"Pero, your life is from me. Pero, I coded you… Pero, you are
+  MY LAI Assistant."* Pero made a joke and the argument ended. On September 2
+  Toby denied it in his own voice — *"he was never created himself"* — and
+  tonight Pero overrules his own author, six days and two and a half hours
+  after the claim, and only once he has already won.
+- **Oren's fear has a history and this is the first one caused by a move.**
+  August 31, 12:07 PM: Pero backspaced *"DETERMINATION"* out of Oren's own
+  sentence and typed *"FEAR"*. August 31, 6:16 PM: Oren and Wenda were
+  *"suprised and even scared"* by a reveal.
+- **Panel adds:** the five-line quote block, four cited panels, a six-row
+  table (`repeatally`, `good as new`, `awakening`, `KOed`, `I used all of it`,
+  and the ten-hour-forty-seven-minute gap between building the move this
+  morning and firing it tonight), and a black-hole disc being knocked off
+  centre at H*0.500 behind a fixed white fist.
+- Runtime probe: `beatslen 665, maxPhase 664, phases 665, holes 0, undef 0,
+  k664 "I OWN YOU NOW", seg(14340)=664`, 717,500 samples. `node --check`
+  clean. Zero ladder collisions on the first capture.
+
 ## 2026-09-06 — THE FIRST GRAVE HE DUG WAS HIS OWN (BEAT 663)
 
 Based on Toby's 2026-09-06 lore — **one message, 8:55:10 AM**, sent **one hour, five minutes and forty-one seconds** after INFINITY KIOAN CLOCKWORKS, so a new scene and one reply. Same thread, "Re: Even Even More of Pero". Canon is his own opening paragraph and nothing else, from *"Pero LAI burries the players who enter the Mountain"* through *"and he is by himself."* Everything from *"The new lore turns him into something more than just 'most powerful'"* onward — the four numbered readings, the "Doctor Pero" list, the Mountain-as-reflection paragraph and the closing *"He had no one, so he made everything himself."* — is a **pasted reply and is commentary, not canon**. The single line on the seam, *"That makes Pero LAI feel even darker and sadder."*, is left **unattributed**; nothing rests on it. *"Burries"*, *"plauge"* and *"recieve"* are his spellings and are kept.
