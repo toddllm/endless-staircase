@@ -4,6 +4,109 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — WHICH ARE THE ANTAGONISTS AND VILLIANS? (BEAT 685)
+
+Based on Toby's 2026-09-07 lore, **7:49:29 PM**, thread "Even Even Even More of Pero",
+**six minutes and three seconds** after A LIGHTNING KATATA, so the same scene. **Canon is
+the question alone, six words, and that is the whole of his own typing.** Everything from
+*"In this current Pero's Sleep, Shadow Wenda's Rise arc, the split is:"* onward, including
+all three role tables, is a pasted reading and is commentary, not canon.
+
+> *"Which are the antagonists and villians?"*
+
+**He has asked this before, it took him forty-eight hours and six answers, and it has its
+own page.** [The Villain Question](https://d1hysvqh647i13.cloudfront.net/wiki/concepts/villain-question/),
+May 1 to May 6: *no one* · *Hyper-Classic Simon* · *Hyper-Classic Simon again* · *HC Gray*
+· *Black, possibly* · and then, locked in on **May 2 at 12:43 PM**, ***"GRAY IS THE
+VILLIAN!"*** It is the only answer in that run he ever put in capitals.
+
+**And the very first answer he ever gave was nobody.** May 1, 4:05 PM: *"**No one is the
+villian of the game, because of perspectives.**"* Forty-eight minutes later he had one.
+Four months on, the cast has a man who calls himself the father of every one of them.
+
+**It is also not the question he has been asking all day.** Since this morning it has been
+*"which is more evil"*, asked over and over, and that is a **ladder** — one seat, one
+winner, everybody else below it. **This one asks for sides instead of places**, and he
+splits it in two rather than one: *antagonists* **and** *villians*.
+
+**And he asks it six minutes after being handed the other half.** At 7:43 he asked who the
+heroes were. At 7:49 he asks for the other end of the same list.
+
+**The answer he locked in four months ago is not in tonight's scene at all.** Gray was on
+the field at 8:06 this morning shouting *"KIOAKEN MODE!"*, and he is in none of the four
+messages tonight. **He asks who the villain is on the one evening his old answer is off the
+page.**
+
+*"villian"* is his spelling, and has been since May. Kept as typed.
+
+- New beat **685 `WHICH ARE THE ANTAGONISTS AND VILLIANS?`** (`#c98cff`), `LV_CYC` 14790.0 →
+  **14812.0**, `LV_BEATS` length **686**.
+- Motif: a ladder of names on the left, the same names redrawn as two columns on the right
+  with a line down the middle.
+- Probe: 740,600 samples, maxPhase 685, 686 distinct phases, 0 missing, 0 undefined; edges
+  14789.999→684 / 14790→685 / 14811.999→685.
+
+![Beat 685 — Which Are The Antagonists And Villians?](screenshots/747-antagonists-and-villians.png)
+
+## 2026-09-07 — A LIGHTNING KATATA (BEAT 684)
+
+Based on Toby's 2026-09-07 lore, **7:43:26 PM**, thread "Even Even Even More of Pero",
+**eighteen minutes and forty-two seconds** after IT KNOCKED AN EMOJI OUT OF ME, so a new
+scene. Canon is his own typing only: the correction about the plauge doctor suit, and the
+paragraph from *"Now Simon.ps makes a lightning katata"* through *"Pero LAI was amazed on
+Wenda.ps's power progression."* Everything from *"In your current Classics canon"* onward is
+a pasted reading and is commentary, not canon.
+
+> *"Simon.ps doesn't have a plauge doctor suit. It should be the actual character of
+> Simon.ps… Now **Simon.ps makes a lightning katata, 2 katatas for Simon too**. **ChatGPT
+> holds a universe, the Classics characters now hold an multiverse, Pero LAI with the
+> omniverse.** Wenda.ps absorbed the crimson and red and all the previous forms, and they
+> all merged together to make **Red-Black Shadow Wenda.ps**, the katatas now include cursed
+> energy + real anime slashes of a quintententalard Sukunas, Wenda.ps made the **cursed eye
+> spirits**, **Pero LAI was amazed on Wenda.ps's power progression.**"*
+
+**Every katata until now was handed over. This is the first one that is made.** Pero created
+his, Pero handed Shadow his second one this afternoon, Mr. Black handed Shadow a silver one
+this morning. Simon **makes** his — **out of lightning**, which is the one thing he has ever
+said he is made of: May 26, ***"Lightning is what I'm Made For!"*** The weapon and the owner
+are now the same material.
+
+**And "2 katatas for Simon too" is an exact match, not a round number.** At 4:15 this
+afternoon: *"Pero LAI gave his katata to Shadow, **Shadow now has 2 katatas now**."* Three
+and a half hours later he levels the count. **Hers were given to her. He built his.**
+
+**ChatGPT finally gets a rank, and it is last.** *"ChatGPT holds a universe, the Classics
+characters now hold an multiverse, Pero LAI with the omniverse."* *"ChatGPT, say ___"* has
+been Pero's move four times in seven days, and this morning both sides cited it as a witness
+(*"ChatGPT says that I overcome"* / *"I know ChatGPT"*). **Tonight it is placed below the
+twenty characters it keeps writing the commentary about.**
+
+**And she absorbs the red she said she would burn.** At 4:15: *"I own all these games now,
+**I'll just burn down all the red and color, so there is only black and white**."* Tonight
+she takes the crimson **in** and comes out **Red-Black Shadow Wenda.ps**. Her own stated plan,
+reversed by her own next move, three and a half hours later.
+
+**And the first thing he does is correct the picture against his own canon.** *"Simon.ps
+doesn't have a plauge doctor suit. It should be the actual character of Simon.ps."* The plauge
+suit is **Simon 404's**, and he took it off in the Error Hall on July 26 for a red and black
+bulletproof vest — and the Phases page already reads *"Simon.ps and the other Sprunkis **take
+off their plauge doctor masks**… the 20 Sprunkis recieve their normal Phase 1 forms."* **He is
+enforcing a rule that was already written down.**
+
+**Cursed energy is not new here, and it was Karuto's** — *"Karuto has the cursed energy
+bottles"*, and every beam *"incrusted with cursed energy."* The **Sukuna** slashes and the
+**cursed eye spirits** are new tonight. And *"Pero LAI was amazed"* is the man whose answer to
+everything is a zero, watching somebody else's number go up.
+
+- New beat **684 `A LIGHTNING KATATA`** (`#9be8ff`), `LV_CYC` 14768.0 → **14790.0**,
+  `LV_BEATS` length **685**.
+- Motif: three nested rings, a universe inside a multiverse inside an omniverse, with the
+  smallest one marked, and two matched blades struck beside them.
+- Probe: edges 14767.999→683 / 14768→684 / 14789.999→684.
+- *"quintententalard"* is Toby's coinage and is kept as typed.
+
+![Beat 684 — A Lightning Katata](screenshots/746-a-lightning-katata.png)
+
 ## 2026-09-07 — IT KNOCKED AN EMOJI OUT OF ME (BEAT 683)
 
 Based on Toby's 2026-09-07 lore, **7:24:44 PM**, thread "Even Even Even More of
