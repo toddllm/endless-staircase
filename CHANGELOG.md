@@ -4,6 +4,134 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — IT KNOCKED AN EMOJI OUT OF ME (BEAT 683)
+
+Based on Toby's 2026-09-07 lore, **7:24:44 PM**, thread "Even Even Even More of
+Pero", **seven minutes and twenty-one seconds** after I HAVE JUSTICE, so the same
+scene. Canon is his own opening paragraph only, from *"That all happens, then Simon.ps
+gotten a katata"* through *"Simon.ps struck Shadow down with a claw swipe + 1000 Katata
+Slashes."* Everything from *"Now the evil ranking shifts again"* onward is a pasted
+reading and is commentary, not canon.
+
+> *"Simon.ps gotten a katata, Oren.ps uses telekentics, both beat down Shadow Wenda.ps,
+> Pero looks out his bed-view tube and says 'And Shadow Wenda Omazen getting destroyed.
+> Kids! Now lets chill down and calm and sleep. 😌' few hours later, Shadow Wenda was
+> all beaten down and Pero LAI says '404: I forgot how to calm down! 😭 It was so serious
+> it knocked an emoji out of me! 😭😭😭…' then he scams the crying emoji. Shadow Wenda
+> tries to attack Oren but can't, Simon.ps struck Shadow down with a claw swipe + 1000
+> Katata Slashes."*
+
+**Scamming an emoji when you take a hit is what a one-hit-point character does.** May 18,
+Email 305: *"Simon keeps scamming 😿 each time he takes even a little bit of damage
+because he only has 1 HP! Simon is a cat bot so he scams cat stuff."* It is the oldest
+survival mechanic on Simon's page. **Pero runs the same move with the cat taken out.**
+
+**And by his own rule he just fell off the bottom of the ladder.** The [emoji naming
+rule](https://d1hysvqh647i13.cloudfront.net/wiki/concepts/emoji-naming-rule/) (July 25)
+makes the count a rank you can read before the fight starts, and **fewer is higher**:
+Nova Pero 🌈 one, Simon 404 two, everyone else zero. **Pero signs with one, 😌. Here he
+types thirty-two.** He calls that an emoji knocked *out* of him, which under his own rule
+would be a promotion — what actually happened is he gained thirty-one. **Then he scams
+it back rather than winning it back.**
+
+**And 404 is not his number.** August 15, in Toby's own typing: *"Pero is 303, Simon is
+404."* He stamps his own breakdown *"404:"* — and the only thing he holds under that
+number is borrowed: Last Run Pero *"has Error 404 power from Simon."*
+
+**The whole bedtime routine is Simon's, down to the title.** May 26: *"Now Simon CARRIES
+his bed."* He attacks everything *"and then sleeps on it's portable bed"*; *"when he is
+woken up by someone he litterly destroys the victum and goes back to bed"*; and his title
+is ***"Simon: 404, the Sleeping Entity."*** Pero watches a fight from bed through a tube,
+calls bedtime, and signs it with the other man's number.
+
+**The katata crosses over, and it is the one weapon written with her name on it.**
+*Katata* is a new word as of August 23, and every katata before today is Pero's — *"Pero
+struck all three down with a katata"*, *"Pero creates his katata"*, *"a whole collection
+of katatas"* — except the silver one Mr. Black handed Shadow this morning. August 23's
+only written weapon rule: **the Demgel Katata damages *"only Gaster and Gray and Wenda."***
+She is a Wenda. **Simon.ps is the first other character ever handed one.**
+
+***"A claw swipe + 1000 Katata Slashes"* is his oldest weapon and his newest in one
+strike.** The claw beat Alex on May 19 and cut through Paul's shield on May 26; the katata
+is fifteen days old. And a thousand is also Pero's number from seven minutes earlier —
+*"Shadow slashed apart by a thousand sticks."* **She said she could no longer die. The one
+who puts her down is the one who has to scam an emoji to survive a scratch.**
+
+- New beat **683 `IT KNOCKED AN EMOJI OUT OF ME`** (`#6fb2f0`), `LV_CYC` 14746.0 →
+  **14768.0**, `LV_BEATS` length **684**.
+- Motif: one mark at the top, thirty-two below it, and one pulled back out of the spill
+  instead of won back.
+- Probe: 738,400 samples, maxPhase 683, 684 distinct phases, 0 missing, 0 undefined;
+  edges 14745.999→682 / 14746→683 / 14767.999→683.
+
+![Beat 683 — It Knocked An Emoji Out Of Me](screenshots/745-knocked-an-emoji-out-of-me.png)
+
+## 2026-09-07 — I HAVE JUSTICE (BEAT 682)
+
+Based on Toby's 2026-09-07 lore, **7:17:23 PM**, thread "Even Even Even More of Pero",
+**three hours and two minutes** after PERO'S SLEEP, SHADOW WENDA'S RISE, so a new scene.
+Canon is his own opening paragraph only, through *"Go ahead, beat everyone and get all the
+XP in the game. 😌"* Everything from *"Most evil: Pero LAI"* onward, including the evil
+ranking table, is a pasted reading and is commentary, not canon.
+
+> *"Shadow Wenda.ps says 'If I lose, nah. I won't lose anymore, I no longer will die.',
+> Pero LAI says 'Your DETERMINATION can effect a game? I don't have DETERMINATION, I have
+> JUSTICE. JUSTICE for the 19 other Sprunkis. 😌' … Pero LAI puts Shadow onto a wall,
+> Shadow can't escape, Pero LAI strikes Shadow down with a small sword. Shadow slashed
+> apart by a thousand sticks. Shadow respawns, Shadow says 'Only you can beat me Pero
+> LAI... this is scaring me now.', Pero LAI says 'Go ahead, beat everyone and get all the
+> XP in the game. 😌'"*
+
+**Fourteen days ago he had both of them, and they were not adjectives.** August 24,
+3:45 PM: ***"Pero uses Determination and Justice, those are his souls."*** Organs, not
+descriptions — the line that built Last Run Pero. **And one of his own forms is named
+*Pero Pro ABSOLUTE DETERMINATION*.** Tonight he denies a word printed inside his own name.
+
+**And the half he keeps is on record as somebody else's.** August 27, 8:59 AM: Flower
+*"grabs a yellow heart (Justice Soul)"*, and the wiki filed that as an open contradiction
+it **refuses to decide**. Of his two souls he throws away the one he still has and claims
+the one that went missing.
+
+**Justice is a colour in this game, and it is Simon's.** Simon's soul is a yellow heart —
+the Justice colour — and Simon is one of the nineteen. **He claims justice for the
+nineteen, and seven minutes later one of the nineteen comes and collects it.**
+
+**The wall he pins her to is Oren's move, taken off Oren.** *"Oren's telekentics isn't
+matter, but a force, it can lock Greg into a wall and Greg would never escape it"*
+(Email 961) — and August 24's moveset reads *"he has telekentics from Oren."* **Seven
+minutes later Oren uses it on her himself**, and she *"tries to attack Oren but can't."*
+
+**This morning he said why he wins. Tonight somebody says it back to him.** At 9:47 AM,
+*"Why do you NEED to win so much?"* got the first plain answer he has ever given: ***"So
+you no longer try to beat me."*** Nine and a half hours later: ***"Only you can beat me
+Pero LAI... this is scaring me now."*** He got the exact thing he named — and since
+July 25 his own answer has been *"the number of times you beaten me is 0."* Hers is one.
+
+**Nineteen is arithmetic, not a round number.** September 1 set it at *"the 20 Sprunkis +
+Pero LAI, so now only 21 characters."* Take him out, take the attacker out — nineteen.
+**On September 5 nineteen was how many it took to win. Tonight it is how many one man says
+he is avenging.**
+
+**And *"get all the XP in the game"* has been run before, and it ended a game.** Entity 000
+*"gets more form and power and more advanced and everything… more power and LV and KR and
+XP and all those stuff"*, absorbed all the code, and ended it — the archive's own line on
+that loop is *"the counter became the food."* And Toby's equation from 3:39 this afternoon
+reads ***"0 0 0 = Entity 000 = Wenda.ps = Shadow Wenda.ps."*** He is telling her to run the
+loop she already is.
+
+**The sword goes the other way, too.** At 8:06 this morning `/sword-size 10000` was the
+first command in the whole log that only changes a size, and half a floating island fell.
+Eleven hours later, the man who handed her every soul and all the power in the game kills
+her with **a small sword**.
+
+- New beat **682 `I HAVE JUSTICE`** (`#f2c14e`), `LV_CYC` 14724.0 → **14746.0**,
+  `LV_BEATS` length **683**.
+- Motif: two souls that were both his on August 24 — one crossed out, one drawn with a
+  piece already missing — and a figure held flat against a wall beside them.
+- Probe: edges 14723.999→681 / 14724→682 / 14745.999→682.
+
+![Beat 682 — I Have Justice](screenshots/744-i-have-justice.png)
+
 ## 2026-09-07 — PERO'S SLEEP, SHADOW WENDA'S RISE (BEAT 681)
 
 Based on Toby's 2026-09-07 lore, **4:17:18 PM**, thread "Even Even Even More of
