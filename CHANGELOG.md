@@ -4,6 +4,56 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — PERO'S SLEEP, SHADOW WENDA'S RISE (BEAT 681)
+
+Based on Toby's 2026-09-07 lore, **4:17:18 PM**, thread "Even Even Even More of
+Pero", **two minutes and two seconds** after YOUR WISH IS YOUR COMMAND, so the same
+scene. **The whole of his own typing is the title, sent twice** — once as the subject
+line, once as the first line of the body. Everything from *"That is a perfect title
+for the new arc"* onward is a pasted reading of a title he had already finished, and
+is commentary, not canon.
+
+> *"Pero's Sleep, Shadow Wenda's Rise"*
+
+**He was offered three names and took the only one that names two people.** The 4:15
+message's pasted reply ended with *"Shadow Era: The Katata Goddess Arc"*, *"Classics
+5–Infinity: The Diamond Collapse"* and *"The Sleep of Pero, The Rise of Shadow."* One
+named only her. One named only the game. **He picked the one with both of them in it.**
+
+**And he did not take it as written.** The machine's version is *"The Sleep of Pero,
+The Rise of Shadow."* His is *"Pero's Sleep, Shadow Wenda's Rise."* **He made the two
+halves match, and he gave her back the name the machine had cut down to "Shadow."**
+
+**He has refused a coined name before and edited it instead.** September 5, 1:58 PM:
+the machine coined *"Mindy Starchild Omazen"* for an outsider. At 2:01 he ruled the
+outsiders out entirely, and at 2:30 he gave that surname to the twenty who were
+already inside. **He edits names; he does not adopt them.**
+
+**Only one era has ever been named in this archive, and its namer named it after
+himself**: *"Simon 404 wrote this whole Era of lore and called it 'I am Supereme Era by
+Simon 404'"* — he even signed it. **This title has two names in it, neither of them the
+author's, and one of them is asleep.**
+
+**And it is the first title here that belongs to somebody asleep.** On September 4 at
+3:34 PM he banned every one of them and went to sleep alone, and nobody wrote that down
+as an event. **Three days later the sleeping is the headline.**
+
+**Eight hours and eleven minutes of lore today** — *"I just clean errors"* at 8:06,
+*"Have any errors to fix?"* at 3:39, everything handed over at 3:40, nineteen beaten
+with words at 4:15 — **and the moment he chose to name the day after is the one where
+Pero stops.**
+
+- New beat **681 `PERO'S SLEEP, SHADOW WENDA'S RISE`** (`#8f7fd8`), `LV_CYC` 14702.0 →
+  **14724.0**, `LV_BEATS` length **682**.
+- Motif: one name lying down, one standing, and three offered titles crossed out under
+  the one he wrote himself.
+- Probe: 736,200 samples, maxPhase 681, 682 distinct phases, 0 holes, 0 undefined;
+  edges 14701.999→680 / 14702→681 / 14723.999→681.
+- Screenshots 740, 741 and 742 re-captured: the beat ladder grew, so the earlier
+  captures showed a stale one.
+
+![Beat 681 — Pero's Sleep, Shadow Wenda's Rise](screenshots/743-peros-sleep-shadow-wendas-rise.png)
+
 ## 2026-09-07 — YOUR WISH IS YOUR COMMAND (BEAT 680)
 
 Based on Toby's 2026-09-07 lore, **4:15:16 PM**, thread "Even Even Even More of
