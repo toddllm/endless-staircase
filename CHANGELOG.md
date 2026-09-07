@@ -4,6 +4,71 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — THE REFEREE STEPS IN AND SAYS IT DOES NOT COUNT (BEAT 669)
+
+Based on Toby's 2026-09-07 lore, **8:06:52 AM**, same thread, **sixteen minutes
+and twenty-four seconds** after PERO WON'T HELP ANYONE HERE, so a new scene and
+its own reply. He quotes the machine's four-stage walkthrough back and then
+**keeps writing it himself**. His own block runs from *"Then… Simon.ps resets"*
+through *"Where is everyone?"*; everything from *"Then Gray realizes the attack
+was too strong"* onward is a pasted ChatGPT continuation and is commentary, not
+canon.
+
+**Seventeen minutes ago he wrote "Pero LAI won't help anyone here."** Here Pero
+cleans the glitches, **Oren says "Thanks for the help."**, Wenda says **"Pero,
+you betrayed us again."**, and Pero says **"I just clean errors."** The only
+person who thanks him is on the other team, and the side he used to lead calls it
+a betrayal. **Neutral is not a thing in Classics.**
+
+**"Betrayed" is a word this archive has only ever used about Mr. Black.** It runs
+across 94 lines and 24 files and almost all of them point at September 5. In
+Toby's own typing **Pero has never once been called a betrayer** — so *"again"*
+points at something that was never written down.
+
+**The Cat Trio is a fox, a cat, and a dog person.** *"Cat Trio"* has zero prior
+hits. Wenda is the fox (August 8). Gray is filed as *"a dog person"* whose whole
+motive came from being called *"a scaredy cat."* Only Simon.ps is one, and the
+trio is named after him. **And it is the first trio in this archive named for a
+species** — Pupahya/Alex/Greg and Pero/Gaster/Luigi Green were named for who was
+on them, and August 17's was named for who was **left off** it, *"due to
+attacks/betrayal."*
+
+**The smallest number he ever typed into a command failed. This is the biggest.**
+Twelve slash commands exist in this log and every other one deletes, merges,
+kills, vanishes, activates or expands something. **`/sword-size 10000` only
+changes a size** — and **`/Oren_thunder pixel 1`**, September 2, is the one that
+failed.
+
+**And "I just clean errors" is a file extension used as an alibi.** August 8, in
+a section called *"Who Wins The Battles"*, the `.psc` rule was written down as
+*"clean and don't do anything to the game."* That is thirteen minutes after
+*"Wenda is the fox"* in the same evening, and today's fight leans on both lines.
+
+**Gray says "KIOAKEN MODE!" for the second time, and this time Pero has already
+left.** The line is out of Gray's own Roblox script (August 19) and was first said
+on September 1, when *"Gray.ps beats Pero 100 million times."* **And the top hat
+Pero puts back on is the one Gray's soul and body were shrunk inside of** on
+September 1, 3:26 PM. Gray is left alone on the highest piece of the thing he
+broke, asking *"Where is everyone?"*
+
+**Built into the game as beat 669, `I JUST CLEAN ERRORS`.** Additive; nothing
+earlier was changed.
+
+- **Motif:** the island broken into four slabs at different heights with one
+  figure standing on each, the oversized sword stuck through the top one, and a
+  small top hat leaving the frame on a dotted line.
+- **Panels:** the only thanks comes from the other team · *"betrayed"* and its
+  one owner · the Cat Trio's species problem · the first trio named for a species
+  · and the smallest command that failed against the biggest one that works.
+- **Table:** what he wrote this morning against where the archive had already put
+  it, five rows.
+- **Footers:** *nobody wins this — the island breaks into layers and every side is
+  still standing on a different piece, and the one character who gets cleanly out
+  of it is the one who said he was not playing* and
+  **★ I JUST CLEAN ERRORS ★**.
+
+![Beat 669 — I Just Clean Errors](screenshots/731-i-just-clean-errors.png)
+
 ## 2026-09-07 — HE DREW UP BOTH TEAMS AND PUT THE ONLY FOX IN CHARGE OF THE CATS (BEAT 668)
 
 Based on Toby's 2026-09-07 lore, **7:50:28 AM**, same thread, **six minutes and
