@@ -4,6 +4,57 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — THE MORNING HE ASKED WHERE THE PICTURES WENT (BEAT 666)
+
+Based on Toby's 2026-09-07 lore, **7:28:37 AM**, same thread, **twelve hours and
+thirty-one minutes** after THE ORIGINAL ONE, so a new scene and its own reply.
+His whole message, in full: *"Now have the images from all this thing down, in
+the correct spaces the images should be in."* No pasted block under it, no
+attachment, and not one word of story in it. It is an instruction about the
+archive itself.
+
+**He has given this order once before.** *"In the correct ___"* appears in his
+own typing exactly twice in four and a half months. The first was **July 19,
+4:58 PM**: *"All into 1 tab, and also put them all in the correct timeline so it
+isn't all grumbled up and hard to find a certain part."* That sentence collapsed
+the entire wiki into a single Classics Lore tab and the navigation has looked
+like that ever since. **Fifty days later he fixes the other axis** — that one
+was time, this one is space.
+
+**And he was right.** At 7:28 this morning the wiki held **273 of his own beat
+pictures in one folder** and pointed at none of them: across all **456** pages
+there was **exactly one image tag**, and it was empty.
+
+**Every other time he has looked at a picture of Classics he graded it.** July
+27, *"kinda wrong for where Pero/ToddLLM was standing."* August 11, *"86%, it
+shows the idea, but not the correct being shape."* September 6, *"The original
+is kinda like that."* Three scores. **This is the first one that is a place to
+put something instead of a mark against something.**
+
+**Built into the game as beat 666, `IN THE CORRECT SPACES`.** Additive; nothing
+earlier was changed.
+
+- **Motif:** a heap of small frames stacked on each other with nothing under
+  them, an arrow, and the same frames seated in a column each beside its own
+  line of text. The pile is what the wiki was; the column is what he asked for.
+  Drawn entirely in the right half so it clears the beat ladder.
+- **Panels:** the July 19 order and what it did · time then, space now, fifty
+  days apart · 273 pictures and one empty tag · the three earlier gradings ·
+  and the first one that is an order rather than a score.
+- **Table:** what the wiki looked like at 7:28 AM against what it looks like
+  tonight, five rows.
+- **Footers:** *last night I asked him who the Minecraft player was and he did
+  not answer that — he answered the other paragraph, the one about a picture
+  being in the wrong place, and fixed it* and **★ THE CORRECT SPACES ★**.
+
+**Acted on, not just logged.** The wiki now carries the pictures: **368 beat
+sections open with the screenshot of that beat**, matched section-by-section
+against the game's own beat keys so a section either gets its own frame or gets
+none, and all **732** screenshots are now in the wiki rather than 273. Nothing
+was deleted.
+
+![Beat 666 — In The Correct Spaces](screenshots/728-in-the-correct-spaces.png)
+
 ## 2026-09-06 — THE ORIGINAL ONE (BEAT 665)
 
 Based on Toby's September 6, 2026 6:57:11 PM lore ("Even Even More of Pero",
