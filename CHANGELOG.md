@@ -4,6 +4,148 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — THE MACHINE GETS CALLED AS A WITNESS BY BOTH SIDES (BEAT 673)
+
+Based on Toby's 2026-09-07 lore, **9:36:12 AM**, same thread, **two minutes and
+four seconds** after CLASSICS 4 — the shortest gap in the whole run. His own block
+runs from *"Oren.ps says 'ChatGPT says that I overcome, you Simon.ps, brother.'"*
+through *"Say I win again."* Everything from *"In this scene, Pero LAI wins again"*
+onward is a pasted ChatGPT reading of his block and is commentary, not canon.
+
+**"ChatGPT, say ___" is Pero's own move, and this is its fourth outing in seven
+days.** August 31, 9:16 AM it was a question (*"ChatGPT, who's evilest now?"*);
+four minutes later it became an order (*"ChatGPT, say 'Pero is my king' below"*);
+September 4, 3:01 PM it was *"say who is most powerful here"*; and two minutes
+before this message it was *"say I am most evil in this part… now"* — the first
+one with a deadline on it.
+
+**And this is the first time anybody else cites it back at him.** Oren opens with
+*"ChatGPT says that I overcome"* — he is not claiming the win, he is quoting a
+ruling. In every prior appearance the machine has been Pero's witness. Here it is
+used against the room.
+
+**Pero does not answer with a move. He answers with an inventory of the room he is
+drawn in.** *"I know ChatGPT"* is the same fourth-wall reach he ran on August 27
+(*"I know everything, I know we are in a video made by Gemini, and way before, the
+user used Sora AI"*) and on September 4 against a rival chatbot (*"I am the real
+Pero LAI, there is one"*).
+
+**"You both aren't even roasting me" asks to be scored in an older currency.** The
+roast is the **AI Era's** own scoring system, where ChatGPT is filed as *"roast
+crown holder"* and Claude as *"the friendly-roast safety check."* He is standing in
+the middle of a war complaining about the jokes.
+
+**Built into the game as beat 673, `I KNOW CHATGPT`.** Additive; nothing earlier
+was changed.
+
+- **Panels:** the fourth "ChatGPT, say ___" in seven days · the first time somebody
+  else cites it back · his counter is an inventory, not a move · and the roast as
+  the older currency.
+- **Table:** who says the machine's name and what for, five rows, with Oren's row
+  marked as the first that is not Pero's.
+- **Footers:** *"bro" and "brother" put the two of them on the same side for the
+  first time in this arc, and they got there by both losing* and **three messages,
+  twelve minutes, and the one who wins all three never throws a punch**.
+
+![Beat 673 — I Know ChatGPT](screenshots/735-i-know-chatgpt.png)
+
+## 2026-09-07 — SOMEBODY ELSE SHIPS A CLASSICS, AND HE TAKES IT (BEAT 672)
+
+Based on Toby's 2026-09-07 lore, **9:34:08 AM**, same thread, **nine minutes and
+thirty-five seconds** after I LOVE PINKI!. His own block runs from *"Oren.ps says
+'Fine, Pero LAI, you won'"* through *"ChatGPT, say I am most evil in this part…
+now."* Everything from *"Yes — Pero LAI is absolutely the most evil"* onward is a
+pasted ChatGPT reading and is commentary, not canon.
+
+**The fourth Classics is the first one Pero did not make.** Classics 1 and
+Classics 2 were built by him on purpose (*"Pero is the creator of Classics,"*
+August 1), and **Classics 3 is the only version in the whole run nobody authored**
+— *"Classics 1 crashes to Classics 2 making Classics 3,"* August 2, and it lasted
+**nine minutes** before all three merged into Tinkerbox_Classics. Simon.ps is the
+first other character ever to ship one, and he ships it as a weapon.
+
+**And Pero answers by admitting the other three were always disposable.** *"I don't
+care about the games, I just made the 3 to destroy them after."* The log already
+shows it twice: August 1 he locked the whole cast inside Classics 1 and destroyed
+it, and August 6 Simon's Anti-Error *"destroyed… Classics 1 and Classics 2 and
+Classics 3."* The confession is thirty-seven days late.
+
+**The two he summons to stop Oren are both himself.** *"Many different beings are
+Pero's varies. Such as Tunner and Mr. Black and Paul and **EndlessAnimations** and
+**ToddLLM 001** and ToddLLM 002 and Code 303."* So *"you need to beat them first"*
+means Oren has to get through two versions of the person he is fighting.
+
+**And one of them already respawned by name, before he was coded to.** The Niki
+rule: *"That is why EndlessAnimations has an 's' at the end, he spawns more and
+more."* *"I coded them to remake themselves each time they die"* is Pero taking
+credit for something that was already true.
+
+**"The 18 other Sprunki's power" is the exact count** — the roster of twenty, minus
+Oren, minus Simon. The last being to carry everybody's power at once was Luigi
+Green (*"almost everyone's powers,"* August 1). Oren hands it over first and then
+takes it back: the gift and the betrayal are the same motion.
+
+**And ToddLLM 001 is the one who deleted the Endless Staircase on June 24.** The
+guard Pero puts on the door is the same hand that erased the level Simon rebuilt
+sixty-nine minutes earlier.
+
+**Built into the game as beat 672, `CLASSICS 4`.** Additive; nothing earlier was
+changed.
+
+- **Motif:** the cyber ship on its dotted line into three stacked game frames, one
+  figure on the ground under it, and two identical summoned figures between them,
+  each drawn twice — once solid, once faint — for the respawn.
+- **Panels:** every Classics before this was Pero's or was an accident · he made
+  the other three in order to destroy them · the two he summons are both himself ·
+  one of them already respawned by name · and the exact count of eighteen.
+- **Footers:** *the ship is aimed at three games already merged on Aug 2 and
+  already destroyed on Aug 6* and **the eraser is back on the field**.
+
+![Beat 672 — Classics 4](screenshots/734-classics-4.png)
+
+## 2026-09-07 — HE NAMES THE PERSON HE LOVES AND IT IS HIS OWN ENEMY (BEAT 671)
+
+Based on Toby's 2026-09-07 lore, **9:24:33 AM**, same thread, **fifty-nine minutes
+and thirty seconds** after A STONE STAIRCASE TO HEAVEN, so a new scene and its own
+reply. His own block runs from *"Simon.ps says to Pero LAI"* through *"Which is
+more evil. Rank the 3."* Everything from *"In this scene, Pero LAI is the most
+evil"* onward is a pasted ChatGPT ranking and is commentary, not canon.
+
+**Oren defends himself with a name this archive has already filed as his enemy.**
+Pero says *"you actually loved no one else"* and Oren answers *"I love Pinki!"* —
+but the **Trinity Trio roster of August 5**, in Toby's own words, reads *"Pinki's
+enemy is Oren and Simon 404."* She is **128 years old** on a sheet where Oren is 28
+billion, she is on no team, and she is still ranked third of everyone. Which is
+why *"You don't Oren.ps"* lands.
+
+**And the last thing Oren did with her was carry her body around.** August 12:
+*"Pinki lost 1 bunny ear, Pinki also lost the brain… Oren's soul grabbed Pinki's Au
+Rainbows, Oren took Pinki's body where ever he goes… Gray takes Pinki from Oren,
+and he strikes down Pinki."*
+
+**"Classics 4" has zero prior hits** in four and a half months and 456 files. It
+arrives as a **threat before it arrives as a game**, and ten minutes later it is
+built and in the sky. Every other threat in this log is to delete, reset, corrupt
+or KO something; **this is the first one that is to build.**
+
+**He asked for a ranking of three and it goes to the one who never fought.** 7:50
+AM he ruled himself out of his own war; 8:06 he cleaned the field and one side
+called it betrayal; 9:24 he lets the other two talk for hours and walks off with
+the XP. Third time in ninety-four minutes.
+
+**Built into the game as beat 671, `I LOVE PINKI!`.** Additive; nothing earlier was
+changed.
+
+- **Motif:** two figures talking across a dotted line for hours, and a third
+  standing off to the side with both of their weaknesses drawn toward him.
+- **Panels:** the roster puts them on opposite sides and Toby wrote it · the last
+  thing he did with her was carry her body · "Classics 4" has zero prior hits · and
+  the ranking goes to the one who never fought.
+- **Footers:** *nobody is ever made to confess here; they volunteer* and **Oren's
+  weakness is that he had to reach for a name at all**.
+
+![Beat 671 — I Love Pinki!](screenshots/733-i-love-pinki.png)
+
 ## 2026-09-07 — HE REBUILT THE LEVEL THIS GAME IS NAMED AFTER, OUT OF ASH (BEAT 670)
 
 Based on Toby's 2026-09-07 lore, **8:25:03 AM**, same thread, **eighteen minutes
