@@ -4,6 +4,59 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — HE DREW UP BOTH TEAMS AND PUT THE ONLY FOX IN CHARGE OF THE CATS (BEAT 668)
+
+Based on Toby's 2026-09-07 lore, **7:50:28 AM**, same thread, **six minutes and
+forty-three seconds** after EYES APPEAR FROM THE HOLES, so the same scene and the
+same reply. His own typing is the opening paragraph only, from *"Pero LAI made it
+Cats with Simon.ps"* through *"Who will win?"*; everything from *"With Pero LAI
+not helping either side"* onward is a pasted ChatGPT verdict and is commentary,
+not canon. *"litteral"*, *"telekentics"* and *"villian"* are his spellings and are
+kept.
+
+**Wenda is the fox, and he has just made her a cat leader.** *"Wenda is the fox"*
+is **August 8** and it is the first line of her own page — filed there as the
+stated reason the cat trick does not work on her. Seven minutes earlier the fox
+was the reason the cats lose. Now she is one of the two reasons they might win.
+
+**And the headline fight on this card already happened, two days ago, and he
+wrote the result himself.** **September 5, 9:44 AM:** *"The Sprunkis bring in
+Wenda.ps to battle Mr. Black, **nothing goes right with Wenda, Mr. Black beaten
+Wenda**, then Gray and Fun Bot choose to team up, so all the 19 Sprunkis battle
+Mr. Black, after 20 minutes, the Sprunkis beaten Mr. Black."* One on one, Mr.
+Black wins. **The only thing that has ever beaten him is all nineteen of them at
+once** — and splitting the twenty in half means neither side can field the one
+number that has ever worked.
+
+**Three different people have held second place in the last two weeks, and all
+three are leaders on this card.** Wenda, August 24: *"Wenda and Gray stand as 2nd
+most powerful and 3rd most powerful."* Oren, August 30: *"Oren became the 2nd
+most powerful."* Mr. Black, September 3: *"The most powerful and second most
+powerful sleep."*
+
+**The only Zeus in this archive was beaten and renamed long ago.** *"Zeus"*
+appears **five times in the whole corpus and never once in Classics** — it is in
+the Limbulb files, where he was *"defeated by Pinky 100M years ago"* and *"Zeus
+became Neus."* The thing Simon.ps's lightning slays is already dead.
+
+**Built into the game as beat 668, `PERO WON'T HELP ANYONE HERE`.** Additive;
+nothing earlier was changed.
+
+- **Motif:** two facing brackets with two names each, an empty dashed referee's
+  chair between them, and one dotted line running from the cats' second name
+  across to the far side, because that name is the archive's only fox.
+- **Panels:** the fox leading the cats · the Wenda-vs-Mr.-Black result from two
+  days ago · the nineteen-on-one that is the only thing that has ever worked ·
+  the three holders of second place · and the Zeus who was already beaten.
+- **Table:** the four leaders against what is already on file about each of them,
+  five rows, closing on the empty chair.
+- **Footers:** *he asked the same question twice in seven minutes, and between
+  the two askings he named four leaders and ruled himself out — he did not argue
+  with the first answer, he changed the fight until the answer changed* and
+  **★ PERO LAI WON'T HELP ANYONE HERE ★**.
+
+![Beat 668 — Pero Won't Help Anyone Here](screenshots/730-pero-wont-help-anyone-here.png)
+
 ## 2026-09-07 — THE MOUNTAIN NAMED FOR HOLES OPENS ITS EYES (BEAT 667)
 
 Based on Toby's 2026-09-07 lore, **7:43:45 AM**, same thread, **fifteen minutes
@@ -54,9 +107,10 @@ nothing earlier was changed.
   says about each, five rows, closing on the twenty taking their cat ears off
   twenty-two hours and forty-eight minutes earlier.
 - **Footers:** *fifteen minutes after asking for the pictures to be put in the
-  correct spaces he pasted one in, and it did not arrive — only its filename
-  did, and that filename is dated twenty-two seconds before the message that put
-  the cat ears on all twenty of them* and
+  correct spaces he pasted one in, and it is not in the mail at all — it is a
+  hotlink back into ChatGPT, named "ChatGPT Image Sep 5, 2026, 02_11_22 PM.png",
+  and that name is dated twenty-two seconds before the message that put the cat
+  ears on all twenty of them* and
   **★ THE PAST IN ONE MOUNTAIN, THE DEAD IN THE OTHER ★**.
 
 ![Beat 667 — Eyes Appear From The Holes](screenshots/729-eyes-appear-from-the-holes.png)
