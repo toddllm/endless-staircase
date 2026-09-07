@@ -4,6 +4,85 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — HE REBUILT THE LEVEL THIS GAME IS NAMED AFTER, OUT OF ASH (BEAT 670)
+
+Based on Toby's 2026-09-07 lore, **8:25:03 AM**, same thread, **eighteen minutes
+and eleven seconds** after I JUST CLEAN ERRORS, so a new scene and its own reply.
+His own block runs from *"Simon.ps then writes /fly_all"* through *"Pero LAI rests
+in his domain."* Everything from *"That reads like a full apocalypse-to-ascension
+ending"* onward is a pasted ChatGPT reading of his block and is commentary, not
+canon. The two pictures at the top are `chatgpt.com` hotlinks, not attachments.
+
+**The Endless Staircase was the final level of Classics, and it was erased
+seventy-four days ago.** June 13, Email 507: *"The Endless Staircase is one of the
+last, The Endless Staircase is THE FINAL LEVEL."* On June 24 ToddLLM 001 **removed
+it from the timeline entirely**, which is why every fight since has been staged
+*"where the Endless Staircase used to be"* — and Toby closed the era himself
+(*"era finished means to stop writing anything in Endless Staircase anymore"*).
+This morning Simon builds one by hand out of ash crosses, and **nineteen people
+fail to climb it.**
+
+**He has been hung on a cross before, and last time somebody else did it.** May 1,
+2026: HC Gray chained him to a **wooden upside-down-L** with dead Flowey vines, and
+the reason he survived is on his own page — *"Simon has a cross, so whatever Simon
+says, it happens."* What he said from up there was *"I know I will be safe, I won't
+die, I will survive, no matter what happens to me."* Today he builds the cross
+himself, hangs himself on it with his own strings, and the sentence is **"This
+attack is the reason we may all die."** Same posture, opposite promise, 129 days
+apart.
+
+**The 404 strings have always been for other people.** July 26, Error Hall:
+*"Simon 404 makes 404 strings everywhere, Wenda and Gray and all characters are on
+each string"* — the entire cast strung up in a single move. Today the strings hold
+**exactly one person**, and it is him.
+
+**The box had no exit, and he is the one who said so.** April 30: Black asks *"how
+will everyone exit?"* and Simon answers *"There is no exit, all are just locked in
+here with all this corruption"* — which is why Simon's Heaven is filed on the wiki
+as **containment, not paradise.** Today the souls reach paradise, the souls come
+back for the bodies, and every last being walks out through a paint portal.
+
+**And somebody else's trio runs the errand Pero walked away from.** August 26:
+*"Pero walks even farther away from Arcsis and Frizz and their mom, Pero walks
+farther and farther"* — his own two children and their mother, left on the far side
+of Cherry Blossom Mountain. Twelve days later **Alex, Greg and Pupahya go find Lica
+"for Arcsis and Frizz and their mom"** — Toby's same three-word tail, reused exactly
+— while Pero rests in his domain.
+
+**`/fly_all` is the thirteenth slash command in this log and the first that hands
+everyone the same ability at once.** Every other one deletes, merges, kills,
+vanishes, activates, expands or resizes a single target. It is also **Simon's
+second command in nineteen minutes** (`/sword-size 10000` at 8:06), the first
+back-to-back pair here. *"Boulder"* and *"paint portal"* both have **zero prior
+hits** in four and a half months; the rocks come out of **Simon's Temple**, his own
+religious site since March 24; and *"an admin character"* is the plain version of
+the **"Admin Plus"** rank his own Heaven gave him on April 25. Pero has moved
+everybody through a portal twice before and **both were September 2** — once
+shouting, once *"because… no reason"* — and this is the first time he says where
+they are going and counts the crowd.
+
+**And "I see the whole thing" is Toby, in his own voice, in the middle of his own
+scene.** Zero prior hits, and he is the one person in the beat who is not leaving
+through the portal.
+
+**Built into the game as beat 670, `A STONE STAIRCASE TO HEAVEN`.** Additive;
+nothing earlier was changed.
+
+- **Motif:** a stair of seven ash crosses climbing out of the top of the frame,
+  nineteen figures stopped in two rows at the foot of it, one figure at the top,
+  and the ash going up past him on a dotted line.
+- **Panels:** the final level was erased seventy-four days ago · he has been hung
+  on a cross before and somebody else did it · the 404 strings have always been
+  for other people · the box had no exit and he is the one who said so · and the
+  errand Pero walked away from.
+- **Table:** what he wrote this morning against where the archive had already put
+  it, seven rows.
+- **Footers:** *he asked who would win the battle at 7:43 and again at 7:50, and
+  at 8:25 nobody wins it and the field empties* and
+  **★ A STONE STAIRCASE TO HEAVEN ★**.
+
+![Beat 670 — A Stone Staircase To Heaven](screenshots/732-a-stone-staircase-to-heaven.png)
+
 ## 2026-09-07 — THE REFEREE STEPS IN AND SAYS IT DOES NOT COUNT (BEAT 669)
 
 Based on Toby's 2026-09-07 lore, **8:06:52 AM**, same thread, **sixteen minutes
