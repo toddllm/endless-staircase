@@ -4,6 +4,139 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — HE WRITES THE COMPILER (BEAT 677)
+
+Based on Toby's 2026-09-07 lore, **10:44:15 AM**, thread "Even Even Even More of
+Pero", **thirty-three minutes and fifty-one seconds** after ERRORS AND CHARACTERS,
+so a new scene. **His own typing is three code fragments and one sentence**, and
+everything wrapped around them — DELETION COMMAND DETECTED, R@ND0M C0DE RECEIVED,
+TAOZ PROTOCOL DETECTED, the status tables — is a pasted reading, so it is
+commentary, not canon.
+
+His fragments: `["Classics space"]["Classics 1"]:Destroy()`, a 129-bit binary string
+labelled *(R@nd0m C0de)*, and `Taoz = game.Destroy()` with `TaozTime = 9` and a
+`while wait() do wait(1) TaozTime - 1 end`. Then the sentence: *"That is how you code
+Classics. Shadow Wenda and Pero LAI now are the only beings immortal now technically
+because Shadow Wenda destroy()s all other characters, bruh, ya just need to combine
+lua and binary."*
+
+**"Backups: redirecting through 303", and 303 is one of his own names.** August 15,
+the Seed 303 event, Toby's own words: *"Pero is 303, Simon is 404, 12 12 12 is a
+calling of Pero."* August 16 names *"Code 303 (Pero vary)"* outright. The save file
+is not escaping to safety; it is being forwarded to him.
+
+**"😎 identifier: not found / Remaining signature: 😌" is a rank field, and this game
+has read rank off emoji since July.** July 25: *"Nova Pero is the only character with
+1 emoji in it's name (Simon 404 has 2 usually 🐱⚡, all others have 0)"* — fewer is
+higher. He cut himself down to a single 😌 three days ago. The log is not reporting a
+loss of identity. It is reporting a promotion.
+
+**Every Roblox script in this archive before today destroyed something *inside* the
+game.** August 21: `workspace.Flower:Destroy()`. September 4: `script.Parent["Day and
+Night"]:Destroy()`. Both run. Today the second command aims at the container itself,
+and Toby writes the verdict in his own parenthesis: *"(You can't delete Roblox.game in
+Roblox)"*. The line that fails is the one he points out.
+
+**Immortality has been claimed twice here, both times in May, and both times by
+somebody who kept losing.** Karuto, Email 325: *"Karuto is immortal and can't die, so
+he'll never be destroyed."* Simon, Email 336: *"No matter how many times you try, you
+can't get rid of me."* This is the third claim and the first one **handed to somebody
+else** — Shadow Wenda.ps did not say it about herself.
+
+**And the clock is the part he got exactly right by getting it wrong.** `TaozTime - 1`
+computes a number and throws it away, and the loop has no exit, so the countdown holds
+at 9 forever. Two days ago this archive quoted playtime for the first time in four
+months — *"after 20 minutes, the Sprunkis beaten Mr. Black"*. Now it quotes a clock
+that cannot move.
+
+**"Taoz" has zero prior hits in four and a half months.**
+
+- New beat **677 `HOW YOU CODE CLASSICS`** (`#5ef2a0`), `LV_CYC` 14614.0 → **14636.0**,
+  `LV_BEATS` length **678**.
+- Motif: the object tree with one node struck out, the container box around it left
+  standing, and a stopped clock beside it.
+- Probe: 731,800 samples, maxPhase 677, 678 distinct phases, 0 holes, 0 undefined.
+
+![Beat 677 — How You Code Classics](screenshots/739-how-you-code-classics.png)
+
+## 2026-09-07 — HE MERGES THE ONE WHO LOST THE FIGHT (BEATS 675-676)
+
+Based on Toby's 2026-09-07 lore, **10:04:23 AM** and **10:10:24 AM**, six minutes and
+one second apart, so one scene in two beats. Canon is his own opening block in each;
+the evil ranking and the ranking tables pasted under them are readings, not canon.
+
+### Beat 675 — THE SHADOW REALM
+
+*"Now, I'll just summon a realm so old, it was forgotten years ago, The Shadow Realm!"*
+… *"Now, Mr. Black, lets summon SHADOW!"*, and a black cat comes **from the depths of
+the Dark**, a ghost grabs it, and the darkness is reborn as **Shadow** — a
+black-coloured clone of Wenda with a silver katata.
+
+**The Shadow Realm is already in this archive, and it is not the deep end.** July 19,
+Toby's own words: *"The deepest part of Dark is the core of the white ball where light
+itself gets all absorbed, darker than the Shadow Realm and Void that were higher up and
+in fact are nearly like at the surface."* Mr. Black summons the shallow one. What
+answers climbs out of the layer beneath it.
+
+**And his own parenthesis dates it correctly, which is how we know it is not years.**
+*"The old realm from when Gray became ringmaster with cow-man Pero"* is **July 19**,
+the day Gray took the Circus and the Dark together. **Fifty days.** He cited the right
+day and the wrong unit of time.
+
+**He deleted every clone, and in this message he builds one.** September 5: *"I am a
+clone of you, I remember it. **I deleted all your other clones, you only need me**."*
+Today, in this same message: *"you only need me, no one else"* — and then he makes a
+black copy of somebody.
+
+**There is already a blade in this game written to cut Wenda.** August 23, the only
+written weapon rules in the archive: *"The Demgel Katata can damage only Gaster and Gray
+and Wenda."* Shadow arrives carrying a katata, and Shadow is a Wenda.
+
+**The ink portal has only ever gone down. Today it goes home.** August 14: *"An ink
+portal opened under Pibby and Pibby was sent to the deepest part of the box."* Today:
+*"Out you go to your house."* Simon.ps and Oren.ps walk through it and arrive at their
+Sprunki City house. He clears the room before he opens the floor.
+
+![Beat 675 — The Shadow Realm](screenshots/737-the-shadow-realm.png)
+
+### Beat 676 — ERRORS AND CHARACTERS
+
+*"Shadow and Wenda.ps was actually merged by Pero LAI, both became into a being stronger
+than both, Shadow Wenda.ps, 'The game was being clean by both it's errors and it's
+characters.'"* She strikes down Mr. Black, Simon.ps, Oren.ps, the 16 other Sprunkis and
+every Classics character. Only the one who pressed merge is untouched.
+
+**The alibi grew a second half, and it took two hours.** At **8:06 AM this same
+morning** (beat 669) the same mouth said *"I just clean errors"*, which was itself the
+`.psc` rule from August 8 — *"clean and don't do anything to the game"*. At 10:10 it is
+errors **and** characters. The word that excused him at breakfast now covers the cast.
+
+**One being does what nineteen of them needed twenty minutes for.** September 5, 9:44
+AM: *"The Sprunkis bring in Wenda.ps to battle Mr. Black, **nothing goes right with
+Wenda, Mr. Black beaten Wenda**."* The only thing that has ever beaten Mr. Black is all
+nineteen Sprunkis at once, for twenty minutes. **And Pero built her out of the one who
+lost that fight** — not the strongest piece on the board, the loss from two days ago
+with a shadow welded to it, pointed at the man who won.
+
+**The last thing he merged took over the game and he destroyed it the same day.**
+August 24: *"they made all the 0s (A and D and 000) into a single entity called
+Prototype_000.exe. The game glitches and Proto_000 taken over the game."* Then: *"Pero
+was beyond Gray's Trio, and he destroyed Proto_000."* **And Wenda is the one that merge
+left out** — *"Gray and Wenda were free by Proto_000"*, she was the 000B, the rank the
+merge did not swallow. Fourteen days later she is not standing outside the merge. She
+is the merge.
+
+![Beat 676 — Errors And Characters](screenshots/738-errors-and-characters.png)
+
+### Build
+
+- New beats **675 `THE SHADOW REALM`** (`#9a86d4`) and **676 `ERRORS AND CHARACTERS`**
+  (`#b9c4d6`), `LV_CYC` 14570.0 → 14592.0 → **14614.0**.
+- Motifs: the three layers of the game stacked with the thing that answers climbing out
+  of the band under the summoned one (675); two figures folding into one with the rest
+  lying down and the merger untouched in amber (676).
+- Probe: 730,700 samples, maxPhase 676, 677 distinct phases, 0 holes, 0 undefined.
+
 ## 2026-09-07 — HE GRANTS AN ADOPTION HE RULED DID NOT EXIST (BEAT 674)
 
 Based on Toby's 2026-09-07 lore, **9:47:55 AM**, same thread, **eleven minutes and
