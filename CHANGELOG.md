@@ -4,6 +4,67 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — YOUR WISH IS YOUR COMMAND (BEAT 680)
+
+Based on Toby's 2026-09-07 lore, **4:15:16 PM**, thread "Even Even Even More of
+Pero", **thirty-four minutes and thirty-one seconds** after HE GIVES IT ALL TO HER,
+so a new scene. **His own typing is the whole opening paragraph**, from *"Shadow
+Wenda.ps says 'I don't just stand by the shadows, I stand to your ashes'"* through
+*"Shadow Wenda.ps causes even more chaos now."* Everything from *"That pushes the lore
+into a new phase"* onward is a pasted reading — commentary, not canon.
+
+> *Shadow: "Please now." Pero LAI: "Shadow Omazen, your wish is your command. 😌"
+> Shadow: "I don't get that." Pero LAI: "Just don't try to be smarter than me. 😌"*
+
+**She is right not to get it. That is not how the line goes.** *"Your wish is"* has
+**zero prior hits in four and a half months**, so the formula arrives here for the
+first time and arrives broken. It belongs to a servant, and **he is the assistant** —
+September 2, Oren: *"Pero, you are MY LAI Assistant."* September 3 he quit the job,
+*"tired of being treated like property."* She says *"Please now"*, and he hands the
+obeying straight back to her. **The LAI never says the LAI's line.**
+
+**"Then you'd be the Spot" names the one character hired to do Pero's day job.**
+August 28, 6:45 AM: The Spot is *"a whole white guy with black spots, he stops errors
+and glitches and bugs and stuff"* — the first name brought in from outside with a job
+instead of a ranking — and by that afternoon his spots are *"black-and-white error
+holes."* Wenda asks for half black and half white, **and the colour scheme she wants is
+already somebody**, holding the exact job Pero has worked all day: *"I just clean
+errors"* at 8:06, *"Have any errors to fix?"* at 3:39.
+
+**Brud runs from danger, and he just made him third smartest.** Brud is Meme 2, the
+one who runs, the one Simon keeps eating for chocolate. **And the weapon handed to him
+has lost twice on this page**: August 24 it was the measuring stick — *"like an
+omniverse-destroying orbital laser blackhole railgun vs a frozen mouse. Wenda and Gray
+beat the orbital laser by far"* — and September 1 it became Pero's container and then
+his exit. **It has never yet hurt anybody.**
+
+**And "try again" is exactly right, with the reason already written down.** August 8:
+*"Brud and Owackx try to delete Simon.psc, but since he was too fast, he dodged each
+attack… and he deleted both their heads."* **Same pair, same target, same result,
+thirty days on.**
+
+**He beats nineteen without a fight**: *"oh, I taken all your power with words. 😌"* On
+September 3 he answered a one-punch threat by typing the stat down; this morning it was
+*"ya just need to combine lua and binary."* **And he tops her out against Unikitty** —
+*"the most powerful stuffy in existance, but not even close to being the most powerful
+Classics character."* **A short yardstick, on purpose**, and the second time today he
+has reached for her.
+
+**Somebody else enforces his rule for him for the first time, and widens it.** *"I know
+you are limited to one emoji, I can't use the emojis now. So neither of the 20 Sprunkis
+shall."* **He made the rule; she made it everybody's.** Then he gives her his own
+katata, and August 23 carries the archive's only written weapon rules: *"The Demgel
+Katata can damage only Gaster and Gray and Wenda."*
+
+- New beat **680 `YOUR WISH IS YOUR COMMAND`** (`#ff5a72`), `LV_CYC` 14680.0 →
+  **14702.0**, `LV_BEATS` length **681**.
+- Motif: black diamonds meeting white ones, two katatas that are both hers now, and one
+  red thing left in a game with the colour taken out.
+- Probe: 735,100 samples, maxPhase 680, 681 distinct phases, 0 holes, 0 undefined;
+  edges 14679.999→679 / 14680→680 / 14701.999→680.
+
+![Beat 680 — Your Wish Is Your Command](screenshots/742-your-wish-is-your-command.png)
+
 ## 2026-09-07 — HE GIVES IT ALL TO HER (BEAT 679)
 
 Based on Toby's 2026-09-07 lore, **3:40:45 PM**, thread "Even Even Even More of
