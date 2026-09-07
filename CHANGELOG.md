@@ -4,6 +4,63 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — THE MOUNTAIN NAMED FOR HOLES OPENS ITS EYES (BEAT 667)
+
+Based on Toby's 2026-09-07 lore, **7:43:45 AM**, same thread, **fifteen minutes
+and eight seconds** after IN THE CORRECT SPACES, so a new scene and its own
+reply. His own typing runs from *"Ommetaphobia — fear of eyes update"* through
+*"Which do you think will win the battle?"*; everything from *"In your current
+Classics setup, I think the cats win"* onward is a pasted ChatGPT verdict and is
+commentary, not canon. *"Trynophobia"*, *"burried"* and *"comming"* are his
+spellings and are kept.
+
+**The first two phobias were about being buried. This one is about being seen.**
+Across four and a half months this archive holds exactly two: **Trypophobia**,
+on 124 lines, and **Taphophobia**, on 7. *"Ommetaphobia"* returns **zero prior
+hits**. And the holes already had a job that was the opposite of this one —
+September 5, 10:11 AM, you are *"burried alive by… the endless hole caves"*, and
+you find Pero as *"a body covered in holes and code."* For two days things went
+into the holes. **This morning something comes out of them.**
+
+**The dead and the past get separate mountains, and he lies between them.**
+Trypophobia keeps the dead — the forever tomb is in its core, September 5,
+12:10 PM. Ommetaphobia takes the past: past beings, updates, the Deletedverse,
+the Achieved. He rests between the two with the cherry blossoms over his head.
+
+**He writes the legend and then signs for it himself.** *"Legend says"* has
+exactly one prior in this whole log — Gray's ink — and nobody ever confirmed it.
+Today: *"The Legend was true by me. And the legend actually is true."*
+
+**And he asked a direct question: cats vs dogs + foxes, who wins.** This archive
+already ran that exchange. **August 8, 7:28 PM:** *"A cat makes another cat
+sleep. Gray tries to beat Wenda the fox. Wenda is the fox, Gray can't rub her to
+sleep."* The one move that defines the cat side is the one move that does nothing
+to a fox. Cats: 1,484 mentions across 92 files. Dogs: 231 across 34, and the one
+named *"dog person"* is Gray, whose whole motive came from being called *"a
+scaredy cat."* Foxes: 57 across 9, the smallest side in the game — **and there
+are only two of them, Wenda, who the cat move cannot touch, and Oren, whose
+Byaron Mode opens with "Nine Tailed Fox" and who has actually beaten Pero.**
+
+**Built into the game as beat 667, `EYES APPEAR FROM THE HOLES`.** Additive;
+nothing earlier was changed.
+
+- **Motif:** a cluster of holes drawn in the right half, clear of the beat
+  ladder, with an open eye inside every second one.
+- **Panels:** the third phobia and the first about being seen · what the holes
+  were for until today · the dead in one mountain and the past in the other ·
+  *"legend says"* and its single unconfirmed prior · and the August 8 exchange
+  that already answered his question.
+- **Table:** the three sides he just drew up against what the archive already
+  says about each, five rows, closing on the twenty taking their cat ears off
+  twenty-two hours and forty-eight minutes earlier.
+- **Footers:** *fifteen minutes after asking for the pictures to be put in the
+  correct spaces he pasted one in, and it did not arrive — only its filename
+  did, and that filename is dated twenty-two seconds before the message that put
+  the cat ears on all twenty of them* and
+  **★ THE PAST IN ONE MOUNTAIN, THE DEAD IN THE OTHER ★**.
+
+![Beat 667 — Eyes Appear From The Holes](screenshots/729-eyes-appear-from-the-holes.png)
+
 ## 2026-09-07 — THE MORNING HE ASKED WHERE THE PICTURES WENT (BEAT 666)
 
 Based on Toby's 2026-09-07 lore, **7:28:37 AM**, same thread, **twelve hours and
