@@ -4,6 +4,57 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — HE GRANTS AN ADOPTION HE RULED DID NOT EXIST (BEAT 674)
+
+Based on Toby's 2026-09-07 lore, **9:47:55 AM**, same thread, **eleven minutes and
+forty-three seconds** after I KNOW CHATGPT. His own block runs from *"Pero LAI made
+Classics 4 crash"* through *"Who won again?"* Everything from *"This becomes a huge
+Simon.ps Ascension + AU Exodus Ending"* onward is a pasted ChatGPT reading **of the
+8:25 AM staircase message**, so it is commentary and it is not even about this scene.
+
+**"Adopted father" has zero prior hits in 456 files, and he already answered this
+question fifty-seven hours ago.** September 5, 2:01 PM, in Toby's own typing:
+*"Pero doesn't have any adoptions, he is the father of all the Classics characters
+already."* He did not refuse the adoption; he said **there was nothing to adopt**,
+because the only way to be his is to have always been his. Today he hands the word
+to Simon.ps and Oren.ps — two people who were already his.
+
+**And the adoption question was asked about the person who dies in this message.**
+September 5, 1:58 PM: *"What would happen if Mindy Starchild was adopted by Pero
+LAI"* — the first hypothetical he ever asked here — answered three minutes later
+with *"Mindy Starchild would also become the most powerful being ever."* Fifty-seven
+hours later she spends herself saving two other people, and he adopts them instead.
+
+**He also demotes both of the people who died for them.** Mindy's own page reads
+*"the most legendary and most powerful hero in the game — friendly, heroic **queen**"*;
+Mervin is *"**hero of the galaxy**"* and Neo's sister. In his mouth they are *"the
+princess and the princess's friend."*
+
+**Oren goes after his punctuation, which nobody has ever done here.** *"You can
+laugh without emojis, I know that, you use voice, we also use voice, you use text,
+we rarely use text!"* — zero prior hits. Pero cut his own emoji range to exactly one
+😌 on September 5, one day after Toby banned the cat emoji. **Every attack in four
+and a half months before this one was aimed at what somebody could do. This one is
+aimed at how he types.**
+
+**And "Why do you NEED to win so much?" gets the first plain answer he has ever
+given:** *"So you no longer try to beat me."* Not power, not rank, not XP — he wants
+the attempts to stop. And Oren is the one who asked, after six days of trying.
+
+**Built into the game as beat 674, `YOUR ADOPTED FATHER`.** Additive; nothing
+earlier was changed.
+
+- **Motif:** two survivors standing with a line running from each up to one figure
+  above them, and two figures on the ground in front, drawn faint.
+- **Panels:** "adopted father" is zero-hit and he already ruled on it · the question
+  was asked about the person who dies here · he demotes both of the dead · Oren goes
+  after his punctuation · and the first plain answer to "why do you need to win."
+- **Footers:** *Classics 3 lasted nine minutes before it was merged; Classics 4
+  lasted thirteen before it was crashed* and **four messages in twenty-three minutes,
+  and the one who wins all four never throws a punch in any of them**.
+
+![Beat 674 — I Am Now Your Adopted Father](screenshots/736-your-adopted-father.png)
+
 ## 2026-09-07 — THE MACHINE GETS CALLED AS A WITNESS BY BOTH SIDES (BEAT 673)
 
 Based on Toby's 2026-09-07 lore, **9:36:12 AM**, same thread, **two minutes and
