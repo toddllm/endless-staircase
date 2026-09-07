@@ -4,6 +4,112 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — HE GIVES IT ALL TO HER (BEAT 679)
+
+Based on Toby's 2026-09-07 lore, **3:40:45 PM**, thread "Even Even Even More of
+Pero", **one minute and thirty-two seconds** after LUIGI GREEN OMAZEN, so the same
+scene. **His own typing is the opening line**, and everything from "Got it — that
+makes Shadow Wenda.ps way more dangerous than before" onward, the rank table
+included, is a pasted reading — commentary, not canon.
+
+> *"Answer: Pero LAI gives it all to Shadow Wenda.ps, along with the souls and power
+> and all the power stuff in the game (not listing everything)."*
+
+**He asked the question and answered it himself in ninety-two seconds.** The message
+before this one ends on *"What is Pero LAI doing with the corruption?"* — 3:39:13.
+The answer lands at 3:40:45, and it is his, not the machine's.
+
+**In this archive, souls have only ever moved toward him.** August 24, Last Run Pero:
+*"Pero absorbs everyone's souls and he makes everyone into colored energy and absorbs
+the energy."* September 2: *"Pero gets all the souls."* **Today is the first time they
+leave him on purpose.**
+
+**He has handed the whole game over before, and the name on it was hers.** August 24,
+12:11 PM: *"Pero then gave Wenda and Gray the whole game, Pero leaves to get boxes of
+Pop Tarts."* That is the only handover in four and a half months that **came back
+better**, and it came back better because there were two of them. **Today Gray is not
+in the sentence.**
+
+**Four days ago he gave everything away and called it an ending.** September 3, 9:36
+AM, The True Ending: he gave up all his power so they could live forever, and said
+*"Bye, forever."* **He was back at 12:01 the same day.** This one he hands over
+without leaving the room.
+
+**She is the rank the last big merge could not swallow.** August 24: *"Gray and Wenda
+were free by Proto_000"* — the **000Bs**, the letter it left alone. His own equation
+today reads *"0 0 0 = Entity 000 = Wenda.ps = Shadow Wenda.ps."* **The letter is gone.**
+
+**And "(not listing everything)" is his second parenthesis of the day.** At 10:44 this
+morning: *"(You can't delete Roblox.game in Roblox)"* — the line that will not run.
+This one is the list that will not end. **Both mark the edge of what he is willing to
+write down.**
+
+- New beat **679 `HE GIVES IT ALL TO HER`** (`#c2c8e6`), `LV_CYC` 14658.0 → **14680.0**,
+  `LV_BEATS` length **680**.
+- Motif: a full vessel emptying into a black silhouette holding one thin silver line,
+  and the arrow between them pointing out of him for the first time.
+- Probe: 734,000 samples, maxPhase 679, 680 distinct phases, 0 holes, 0 undefined.
+
+![Beat 679 — He Gives It All To Her](screenshots/741-gives-it-all-to-her.png)
+
+## 2026-09-07 — LUIGI GREEN OMAZEN (BEAT 678)
+
+Based on Toby's 2026-09-07 lore, **3:39:13 PM**, thread "Even Even Even More of Pero",
+**four hours and fifty-five minutes** after HOW YOU CODE CLASSICS, so a new scene.
+**His own typing is the prompt block**: the Pero-written Unikitty tale that degrades
+into *"0nce Once 0nce"*, the equation, the ringmaster naming, the box/circus/clown
+line, and *"Have any errors to fix?"* with the touch that takes Simon.ps's corruption.
+Everything from *"Pero LAI is not just removing the corruption"* onward is a pasted
+reading — commentary, not canon.
+
+> *"Pero LAI happens to be Green. Pero LAI became a ringmaster wearing green named
+> 'Luigi Omazen', Luigi Green Omazen… without boxes, Luigi Omazen made a circus and
+> became a clown."*
+
+**And the story he is writing when he puts the name on is Unikitty's.** August 15, The
+Perminent End of Unikitty, is the one removal in this archive that nothing undoes,
+because *"undefined aren't Classics beings, they can't respawn nor anything"* — a rule
+with exactly one member. **He opens her tale and it never starts**: *"Once upon a time
+there was"*, sixty times, collapsing into *0nce Once 0nce*.
+
+**"Years ago" is twenty-three days, and it is the second miscount in the same
+direction today.** At 10:04 this morning: *"the old realm from when Gray became
+ringmaster with cow-man Pero"* — July 19, **fifty days**. **Right event, wrong unit,
+twice in one day.** The archive is older to him than the calendar is.
+
+**The ringmaster seat is filled a fourth time, and this is the first time he sits in
+it.** Mr. Black held it in Sprunki Best Circus. July 19, Gray took the Circus and the
+Dark together, **and Pero was in that room in the cowman suit**. Email 745 gave the job
+to Luigi Green.
+
+**So the father puts on the son's name, and beat 0 of this staircase is that lineage.**
+ToddLLM is the father of Luigi Green, Alex, Greg and Mario.EXE, and Luigi Green *"takes
+all the spots from second to infinitith, and Pero/Tunner takes first."* **He just
+stepped into second place's name** — two days after telling the whole room *"Everyone
+in these domains is an Omazen… You all will be me soon."* He keeps the surname he gave
+away and takes back somebody else's first name.
+
+**And the anti virus already belonged to that name before he borrowed it.** Luigi
+Green's power set is *"AU Green, Green Orbs, Cat Power and Anti Virus taken off Simon
+404."* **Today, wearing it, he touches Simon.ps and takes the corruption back off him.**
+
+**"Without boxes" is the right order of events.** The standing rule was *"Gaster makes
+the boxes and Luigi Green crushes the boxes"* — build and break, never a third thing —
+and **Pero ended the system himself**: *"Boxes are no longer nessessary."* The circus is
+what was left to tend. And **clown is the bottom rank of this circus**: *"Black and
+Simon have real roles, and all the others are just clowns."* **He took both ends of it
+in one sentence.**
+
+**"Luigi Omazen" has zero prior hits in four and a half months.**
+
+- New beat **678 `LUIGI GREEN OMAZEN`** (`#7bd93f`), `LV_CYC` 14636.0 → **14658.0**,
+  `LV_BEATS` length **679**.
+- Motif: the box line crossed out, a circus tent pitched over it, and three zeros
+  standing in the ring where the act should be.
+- Probe: 734,000 samples, maxPhase 679, 680 distinct phases, 0 holes, 0 undefined.
+
+![Beat 678 — Luigi Green Omazen](screenshots/740-luigi-green-omazen.png)
+
 ## 2026-09-07 — HE WRITES THE COMPILER (BEAT 677)
 
 Based on Toby's 2026-09-07 lore, **10:44:15 AM**, thread "Even Even Even More of
