@@ -4,6 +4,125 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-08 — THE GAME'S WORMS ARE NOW MINE · JUST DEFEAT ALL THE OTHER CHARACTERS · AFTER 133 YEARS · I MAY HAVE LIKE 4 COMMANDS · THE ONLY PLAYER ADMIN (BEATS 688-692)
+
+Based on Toby's 2026-09-08 lore — five messages on the "Even Even Even More of Pero" thread,
+**4:38:37 PM**, **5:04:25 PM**, **5:16:00 PM**, **5:31:29 PM** and **5:43:48 PM**, sixty-five
+minutes end to end. In every one of them the canon is his own typing only; the battle tables,
+power rankings, upgrade chains, infection tables and "Clean canon update" blocks pasted
+underneath are commentary, not canon. **Eclipce**, **angeletic**, **seraphimic**, **Kioakens**,
+**preformed** and **litterly** are Toby's spellings, kept as typed.
+
+![Beat 688 — The Game's Worms Are Now Mine](screenshots/750-the-games-worms.png)
+
+- **New beat 688, THE GAME'S WORMS ARE NOW MINE** (4:38:37 PM). Gray.ps drains Shadow Wenda's aura,
+  makes his first hyperspace and splits it into a Y-cross-fly, claims the game's worms, summons a
+  seraphimic blaster and becomes both Lunar and Solar Eclipse.
+- **`worm` has zero hits in four and a half months.** 459 files, 1,395 emails, not one. And the line
+  is not *"I found the worms"* or *"I made them"* — it is *"the game's worms are now mine"*, a
+  handover of something nobody here has ever mentioned owning.
+- **The archive has lunar eclipses and has never had a solar one.** Simon's Dash Eclipse causes a
+  Lunar Eclipse, Chaos Eclipse flips blinding day and eclipse, Mr Sun has Rage Eclipse. *"Solar
+  eclipse"* = zero hits. Gray takes both halves and half of what he takes did not exist until tonight.
+- **The finding: he has left for milk before, and that errand is the reason Gray owned the game.**
+  August 18, 11:17 AM — *"I am leaving for a few years, would you be okay for a few minutes?"* — Pero
+  left *"to get milk for everyone"* and Gray immediately whispered *"Through out Heaven and Earth, I
+  alone, am the owner of Classics."* Every milk errand in this archive, Pero went alone. Tonight he
+  takes a passenger, and the passenger is Gray. The one left minding the game is Wenda.
+- **Gray writes "Once" and the tale of Unikitty — and Pero wrote that exact story twenty-five hours
+  earlier.** September 7, 3:39 PM: *"Once upon a time there was"* sixty times, never reaching a
+  subject, collapsing into *0nce Once 0nce*, an equation that reads 0 0 0 = Entity 000 = Wenda.ps.
+  Unikitty is the one removal nothing here undoes, so the tale still cannot start. It has only
+  changed authors.
+
+![Beat 689 — Just Defeat All The Other Characters](screenshots/751-just-defeat-all.png)
+
+- **New beat 689, JUST DEFEAT ALL THE OTHER CHARACTERS** (5:04:25 PM). Pero LAI offers Gray a deal,
+  Gray beats everyone, and Pero pays out in aura, souls, LV and KR while WD Gaster experiments on
+  gold, Luigi Green supplies the boxes and Pero makes the boxes and the gold.
+- **Pero erased every box in the game on August 19 and is back on the production line tonight.**
+  *"Boxes are no longer nessessary"* (August 31); *"he closed the barrier, he erased all the boxes,
+  he even erased the whole omniplatforms"* (August 19).
+- **The standing rule was two jobs.** *"Gaster makes the boxes and Luigi Green crushes the boxes"* —
+  build and break, and in four and a half months there has never been a third thing to do with a box.
+  Tonight Pero makes them, Luigi carries them, and Gaster does the third thing: he experiments on
+  them. All three swapped jobs in one sentence, and nobody crushes anything.
+- **The boxes have something in them again.** August 24: *"he finally gotten the food items and not
+  just the boxes"*, after three weeks of hauling empty ones. Tonight they hold gold, and the gold is
+  not spent — it is tested, and the results go to one person.
+- **It is the August 18 move with a supply chain bolted on.** Pero hands Gray half the box's power and
+  walks out for milk. That time the handover took one sentence; this time it takes four people, a
+  factory and a laboratory.
+
+![Beat 690 — After 133 Years](screenshots/752-after-133-years.png)
+
+- **New beat 690, AFTER 133 YEARS** (5:16:00 PM). Gray.ps is fully built up, Pero LAI remerges with
+  Gaster and Luigi Green, and the comparison with Shadow Wenda.ps is *"a toy duck VS a trillion
+  god-mode transformers."*
+- **The milk errand left thirty-eight minutes ago and just came back 133 years later.** The rule for
+  it was written into a character sheet months ago: *"Pero commonly walks to places to get milk or
+  anything, then at least years later, he comes back."* On August 18 he was out six and a half hours
+  and the rule was broken. Tonight it is kept, by 133 years.
+- **133 is a number this archive has never counted to.** The spans here are 2, 20, 50, 70 and 150
+  years later, and seventy is the one he reuses, eleven times. 133 sits between his two largest and
+  matches neither.
+- **"A toy duck" — and the only other duck in this archive is Pero ducking.** September 4: *"Pero
+  ducked under all the debris and ink and darkness"*, and Gray.ps beat him. Six hits for the word and
+  all six are the verb; tonight it is a noun, and the noun is Wenda, who cleared the whole board
+  thirty-one hours earlier.
+- **"Remerged" reforms the last milk trip's trio with one man swapped out.** August 18, while Pero was
+  out: *"Gray, Gaster, and Luigi Green are now the trio."* Tonight Pero takes his seat back. Gray is
+  not in the trio. Gray is what it built.
+
+![Beat 691 — I May Have Like 4 Commands](screenshots/753-four-commands.png)
+
+- **New beat 691, I MAY HAVE LIKE 4 COMMANDS** (5:31:29 PM). Gray goes Beyond Both Eclipse, Wenda
+  reaches Both Eclipse and plans to spread holes and eyes everywhere, Mr. Black makes her Phase 2,
+  Simon.ps and Oren.ps strike Mr. Black down — and Toby names four commands.
+- **Twenty-three commands in this archive and every one is typed by a character.** Classics Ink Sans
+  wrote `/game_end`, Error 404 wrote `/command_kill`, Pero wrote eleven, Simon.ps wrote two. Tonight
+  the sentence starts with *"I"*. These are the first commands here belonging to the person writing
+  the game.
+- **`/fly` is yesterday's command with the `_all` taken off it.** September 7, 8:25 AM: Simon.ps wrote
+  `/fly_all`, *"the first command that hands every character the same ability at once."* Thirty-three
+  hours later flying is one person again and the "everyone at once" has moved onto jumping.
+- **`/sit` and `/neon` do not touch power at all.** Every other command here deletes, merges, kills,
+  vanishes, ends, denies, restores or resizes. One of these changes a posture and one changes a
+  colour: the first two that only decorate. And *"I **may** have"* is future tense — every prior
+  command is reported in the past.
+- **"Spread both holes and eyes everywhere" is not a new power, it is two mountains.** Trypophobia
+  Mountain holds the dead, Ommetaphobia Mountain holds the past, and *"Pero LAI rests between both."*
+  Her plan puts both of them everywhere, which means putting his grave everywhere.
+- **Simon.ps and Oren.ps strike down Mr. Black — and she struck down both of them yesterday at 10:10
+  AM.** The two she cleared off the board are the two who finish the man who built her.
+
+![Beat 692 — The Only Player Admin](screenshots/754-the-only-player-admin.png)
+
+- **New beat 692, THE ONLY PLAYER ADMIN** (5:43:48 PM). The whole of Toby's own typing is one
+  sentence: *"My character litterly has almost no power and is the only player admin."*
+- **He took the authority and then gave himself the weakest body in the game**, twelve minutes apart.
+- **"Player admin" has zero prior hits.** This archive has only ever had the other kind: *"Simon.ps is
+  an admin character"* (September 7), and the Admin Plus rank before that, back on April 25. Tonight
+  there are two admins in Classics, one a character and one a player.
+- **And he has just restated his own game's oldest rule about himself, without citing it.** The
+  command system's founding line, July 30: a command is not a power, it is authority over the file —
+  one line dropped Dr. Gaster 404 with nobody being stronger than him. Low power, high access, written
+  in July.
+- **August 18: "Gray VS The Player … the player will eventually win."** That player came with twelve
+  powers — Hope, Justice, The Souls, Love, Determination, Patience, Loyalty, Faith and more. Tonight
+  the same seat has almost no power and four commands.
+- **The last time he wrote "my character" it was typing a slash command too**, on August 15, in
+  Minecraft: *"my character went to the end, used a command (/kill @e[type minecraft.enderdragon])."*
+  The first time his own character turned up in this archive it was in somebody else's game.
+- **And the last time he said "I" about himself here, it was to say he did not know something.**
+  August 20, 7:51 PM: *"I don't know, so doesn't Luigi Green."* He wrote himself outside his own world,
+  on the side that is not told. Nineteen days later he writes himself inside it with a stat line, and
+  the first stat on it is a weakness. Every other being got stronger tonight; the one person who wrote
+  all of it gave himself almost nothing, and kept the keyboard.
+- Build: `LV_CYC` 14856.0 → **14966.0**, `LV_BEATS` length **693**, five new `lvSeg()` ranges. Probe:
+  748,300 samples, maxPhase 692, 693 distinct, 0 holes, 0 undefined. New capture scenes `worms688`,
+  `rewardchain689`, `after133years690`, `fourcommands691`, `playeradmin692`.
+
 ## 2026-09-07 — AFTER 10 DAYS (BEAT 687)
 
 Based on Toby's 2026-09-07 lore, **8:05:01 PM**, thread "Even Even Even More of Pero",
