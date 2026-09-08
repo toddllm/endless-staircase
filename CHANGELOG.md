@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — AFTER 10 DAYS (BEAT 687)
+
+Based on Toby's 2026-09-07 lore, **8:05:01 PM**, thread "Even Even Even More of Pero",
+**ten minutes and thirty-two seconds** after WE MIGHT EVEN TAME A FOX, so the same scene
+continued. Canon is his own opening paragraph only, from *"After 10 days, they finally
+domesticated the shadow fox, Shadow Wenda.ps"* through *"and also a huge crystal septar."*
+Everything from *"That turns Shadow Wenda.ps into an absolute endgame monster"* onward is a
+pasted reading and is commentary, not canon. **septar** and **katatas** are Toby's spellings,
+kept.
+
+![Beat 687 — After 10 Days](screenshots/749-after-10-days.png)
+
+- **New beat 687, AFTER 10 DAYS.** The plan agreed at 7:54 PM comes back completed at 8:05 PM,
+  and the taming that took eleven minutes of real clock took ten days of story.
+- **The panel's finding: the archive's time skips are seconds, minutes, or decades, never days.**
+  The full census is *after 5 seconds*, *after 16 seconds*, *after 200 seconds*, *after 3 minutes*,
+  *after 20 minutes*, then straight to *20*, *30*, *40*, *67* and *70 years*. Ten days is the first
+  one that lands in between, and it puts the game's clock ten days ahead of the person writing it.
+- **The fox was written as the one thing that cannot be slept.** August 8: *"Wenda is the fox, Gray
+  can't rub her to sleep"* — a line that exists only to explain why the cat trick fails on her.
+  Tonight she is domesticated, and *"finally"* is Toby's own word.
+- **"Has Gray.ps" is listed as an upgrade, and she ate him six days ago.** September 1, 3:26 PM:
+  *"all of Gray.ps was put to Wenda.ps."* The wings come home with him: at 3:57 that day she *"grew
+  10 more wings (14 total, 7 on each side)"*, and the next day Toby moved them — *"I also added more
+  wings on Gray."* Tonight's list gets both back at once.
+- **"The darkness and crimson don't mix"** was the September 1 rule that explains why her two halves
+  stack instead of blending. Six days later the list reads *"all crimson and red from all before
+  combined."*
+- **Eight of the ten upgrades are the word "more".** The two that are not are a person and an object,
+  and the object is the one weapon class in this archive written as breaking: Simon's septar broke in
+  July and split into two staffs. Pero laid a staff on her chest on September 1 and she got the
+  endless energy; tonight she carries her own.
+- Motif on the right: a ten-tick strip on a clock that only counts minutes or decades, the collar
+  from eleven minutes ago now drawn shut, and the crystal septar laid across it.
+- `LV_CYC` 14834.0 → **14856.0**; `LV_BEATS` length **688**; new `lvSeg()` range `14834.0–14856.0`.
+  Probe: 742,800 samples, maxPhase 687, 688 distinct, 0 holes, 0 undefined.
+- New capture scene `afterten687` in `tools/capture_screenshot.py`.
+
 ## 2026-09-07 — WE MIGHT EVEN TAME A FOX (BEAT 686)
 
 Based on Toby's 2026-09-07 lore, **7:54:29 PM**, thread "Even Even Even More of Pero",
