@@ -4,6 +4,60 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-07 — WE MIGHT EVEN TAME A FOX (BEAT 686)
+
+Based on Toby's 2026-09-07 lore, **7:54:29 PM**, thread "Even Even Even More of Pero",
+**five minutes** after WHICH ARE THE ANTAGONISTS AND VILLIANS?, so the same scene. Canon is
+his own opening paragraph only, through *"Mr. Black and Pero LAI code the shadows. Which is
+the most evil now. Rank them again."* Everything from *"Now the evil ranking shifts again"*
+onward is a pasted reading and is commentary, not canon.
+
+> *"Brud and Owackx now battle Oren, Oren just knocks them both, Simon.ps slices down Brud
+> and Owackx.ps. Mr. Black says **"If we make more shadows, Shadow Wenda will get more
+> powerful, we might even tame a fox. 🤣"**, Pero LAI says **"I agree, I can just code some
+> shadows for you to domesticate the master of shadows. 😌"**, Mr. Black says **"oh, ok."**,
+> Mr. Black and Pero LAI code the shadows."*
+
+***"Tame", "domesticate" and "master of shadows" each have zero prior hits in 459 files.***
+In four and a half months nobody in this archive has ever proposed **keeping** somebody. The
+verbs here have been delete, merge, absorb, erase, ban and own. **This is the first one that
+wants a pet.**
+
+**And the fox is the one animal in this archive written as untameable.** August 8, Email 931:
+***"Wenda is the fox, Gray can't rub her to sleep, so Wenda was slashed and Gray won."*** That
+line exists in the wiki for exactly one reason: to explain why the trick that puts cats to
+sleep **fails on her**. Of everything on the board, Mr. Black picks that.
+
+**Pero agrees and rewrites the sentence in the same breath.** Black says *"tame a fox."* Pero
+says *"domesticate **the master of shadows**."* Bigger verb, bigger title. He retitled her
+once already today, at 4:15: *"The Katata Ninja, once my omniversal queen, now a litteral
+katata goddess."*
+
+**Mr. Black is feeding the thing he built this morning.** At 10:04 AM he summoned the Shadow
+Realm and made Shadow; at 10:10 Pero merged her into Shadow Wenda.ps and **she struck down
+Mr. Black along with everyone else**. Nine hours later he asks for more of her. And when his
+own verb and her title are rewritten over the top of his plan, his entire reply is ***"oh,
+ok."***
+
+**And Brud and Owackx die six minutes after being called the ones who were right.** It is
+their third loss to the same two people: August 8, Simon.psc *"deleted both their heads"*; at
+4:15 today they tried again and *"It HAD FAILED!"*; tonight Oren knocks them both and Simon
+slices them down. *"Free XP"* is the only price ever put on Owackx.
+
+**And the shadows are not summoned, bought or found. They are coded.** *"I can just code some
+shadows for you"* comes nine hours after *"That is how you code Classics… ya just need to
+combine lua and binary."* **This morning he wrote a rule about writing. Tonight he uses it to
+write people, to order, for somebody else.**
+
+- New beat **686 `WE MIGHT EVEN TAME A FOX`** (`#ff9a5c`), `LV_CYC` 14812.0 → **14834.0**,
+  `LV_BEATS` length **687**.
+- Motif: a collar drawn open, a fox that will not sit inside it, and nine more shadows being
+  typed in underneath.
+- Probe: 741,700 samples, maxPhase 686, 687 distinct phases, 0 missing, 0 undefined; edges
+  14811.999→685 / 14812→686 / 14833.999→686.
+
+![Beat 686 — We Might Even Tame A Fox](screenshots/748-we-might-even-tame-a-fox.png)
+
 ## 2026-09-07 — WHICH ARE THE ANTAGONISTS AND VILLIANS? (BEAT 685)
 
 Based on Toby's 2026-09-07 lore, **7:49:29 PM**, thread "Even Even Even More of Pero",

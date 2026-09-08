@@ -88,6 +88,7 @@ Scenes:
     emojiout683     — BEAT 683, IT KNOCKED AN EMOJI OUT OF ME (Toby, Sep 7, 7:24 PM)
     lightningkatata684 — BEAT 684, A LIGHTNING KATATA (Toby, Sep 7, 7:43 PM)
     villians685     — BEAT 685, WHICH ARE THE ANTAGONISTS AND VILLIANS? (Toby, Sep 7, 7:49 PM)
+    tameafox686     — BEAT 686, WE MIGHT EVEN TAME A FOX (Toby, Sep 7, 7:54 PM)
     pickacard        — BEAT 574, PICK A CARD, ANY CARD (Toby, Sep 1, 3:26 PM)
     allabove         — BEAT 575, ALL OF THE ABOVE (Toby, Sep 1, 3:57 PM)
     kioaken          — BEAT 576, KIOAKEN MODE (Toby, Sep 1, 4:00 PM)
@@ -22052,6 +22053,36 @@ SCENES = {
         if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
         for (var m=0;m<2;m++){ update(1/60); }
         if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=14701.9; loopVs.phase=680; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+
+"tameafox686": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 686 - WE MIGHT EVEN TAME A FOX. Freeze at the far end so the quote, the five panels,
+        // the motif and the three closing lines have all landed.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=14813.0; loopVs.cyc=14833.9; loopVs.phase=686;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=14833.9; loopVs.phase=686; }
         if (typeof floaters!=='undefined'){ floaters.length=0; }
         if (typeof winFlash!=='undefined'){ winFlash=0.2; }
         if (typeof glitch!=='undefined'){ glitch=0.02; }
