@@ -4,6 +4,65 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-10 — EVERYONE NOW KNOWS YOU AREN'T OMNIPOTENT (BEAT 697)
+
+Based on Toby's 2026-09-10 lore — one message on the "Even Even Even More of Pero" thread,
+**Sep 10, 4:20:34 PM**, ten hours and forty-one minutes after the last one. Canon is the opening
+paragraph, his own typing, from *"Pero LAI comes to Oren.ps again"* through *"Pero LAI made a
+hyperspace and sent everything to the Shadow Realm + The Dark."* Everything from *"That scene is a
+huge Pero LAI weakness reveal"* onward is a pasted reading and is commentary, not canon.
+**telekentics**, **sidulation** and **questons** are Toby's spellings, kept as typed.
+
+![Beat 697 — Everyone Now Knows You Aren't Omnipotent](screenshots/759-everyone-now-knows.png)
+
+- **New beat 697, EVERYONE NOW KNOWS YOU AREN'T OMNIPOTENT** (Sep 10, 4:20:34 PM). Oren.ps opens
+  with *"You... I will beat you a second time."*, pins Pero LAI to a wall with telekentics, and
+  Pero — sweating — offers *"You don't have to do this, I'll give my power to everyone, if you
+  just take your telekentics out."* Oren holds. Pero's face flashes to the horror version and
+  back, he deflects with *"Any way, wanna pop tart?"*, and Oren answers *"Everyone now knows that
+  you aren't omnipotent."* Years later everyone has XP and LV; Pero bans it, loses to the
+  Sprunki.pses, and cuts the fiction universes apart into the Shadow Realm + The Dark.
+- **The finding: the sweat comes first and the ban comes after, and that order is fifty days old.**
+  July 22, 6:42 PM, *All Must Be 1*: *"Pero is now sweating and breaks, Pero bans the players, and
+  he also removes all the minigames."* August 29, cornered by Gaster: *"Pero sweats"* — and he lost
+  for the very first time. Tonight his face is *"with sweat"* on Oren's wall, and eleven sentences
+  later he bans XP and LV for everybody. **In this archive the sweat is the tell, not the loss.**
+- **He broke his own emoji rule, and Oren is the one who asked about it five days ago.** September
+  5, 2:30 PM, Toby's own line: *"His emoji thing is now limited to a single emoji."* In that same
+  scene Oren asked *"Ya always need to be calm now with a single emoji now?"* Tonight Pero uses two
+  more, and Oren catches the first one in a single line: *"You said a different emoji."* **The
+  angry-face emoji he ends on has zero hits across all 459 files of the wiki** — first appearance
+  in the archive, and it is the last thing he says before the universes get cut apart.
+- **He offers everyone his power on the wall, and bans everyone's power off it.** *"I'll give my
+  power to everyone"* is the first time in four months Pero offers his power to anybody; every
+  other rise in the file is him giving himself more. Ten sentences later everyone has power he did
+  not hand out, and he bans it. Same message, same character, opposite direction.
+- **Gray asks if Pero ever allowed XP, and the archive answers.** August 23: Entity 000 *"gets more
+  power and LV and KR and XP and all those stuff"*, absorbed all the code, and **ended the game**.
+  Pero's response then was to build a new one and name it *Entity 000 Classics: Hello 000*, after
+  the thing that killed the last one. XP has exactly one record in this file, and it is that.
+- **"Not me, but God" is the one line above him, and he has never said it himself.** August 18 and
+  August 24: *"Only God is stronger than Pero. Only God himself beats Pero."* Beat 470 is literally
+  titled ONLY GOD ABOVE HIM, and the wiki's own note on it is that *"the list above him is one name
+  long, and that name has never been a character in Classics."* Tonight is the first time Pero
+  points at it, and he points at it to keep everyone else off the ladder.
+- **The word Oren hits him with is Gaster's middle name, and Pero handed it out.** August 13, Pero
+  announcing the full names: *"Gaster Omnipotent Overload."* August 29, Gaster's diagnosis in the
+  fight Pero lost: *"It is that you are not omnipotient."* Oren adds one word to it twelve days
+  later — *everyone* — and that word is the whole of his attack.
+- **The pop tart has a history with the person he offers it to.** August 24, 6:38 AM: Oren jumped
+  off the boat, tasted the pop tart, sank in the sea, and *"Pero swam and brought Oren back out of
+  the water."* Pinned to a wall seventeen days later, the thing Pero reaches for is a pop tart.
+- **And "survive" flips.** September 2, to Oren: *"If you can survive that, survive me."* Tonight,
+  to Oren: *"If you want to survive, just survive without me."*
+- **His count of three checks out.** *"Dr. Gaster beaten him, I beaten him, and we all beaten him"*
+  — Gaster on August 29 (the first loss in the archive), Oren on September 2 (*"I think I
+  accidentally beaten Pero LAI"*), and everyone tonight. The one he called an accident eight days
+  ago he opened tonight by announcing in advance.
+- Build: LV_CYC 15054.0 → 15076.0, LV_BEATS 697 → 698 entries, new lvSeg range and ph block.
+  Probe: 900,000 samples, maxPhase 697, distinct 698, holes 0. Screenshots **757** and **758**
+  re-captured because the five-row ladder window shifts for ph 695 and 696 at the new length.
+
 ## 2026-09-10 — I OWN EVERY PIXEL, NOW ALL REALITIES · I'LL DELETE YOUR ACCESS TO CLASSICS · AND IT ALL WORKED PURR-FECTLY · NOW IT IS MY TURN (BEATS 693-696)
 
 Based on Toby's 2026-09-09 and 2026-09-10 lore — three messages on the "Even Even Even More of

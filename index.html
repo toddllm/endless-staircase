@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15054.0;
+const LV_CYC = 15076.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12709,6 +12709,8 @@ const LV_BEATS = [
     sub:"THE FIRST PHASE IS TO GET OREN.PS AND SIMON.PS TO SEPERATE. THE SECOND IS TO BEAT OREN WHEN HE IS ALONE. \u00B7 \u201CPHASE\u201D CHANGES WHAT KIND OF WORD IT IS TONIGHT. \u00B7 AND PHASE 1 IS AIMED AT A TEAM THAT WON A FIGHT THE DAY BEFORE YESTERDAY. \u00B7 PHASE 2 SENDS THE TWO CHARACTERS WHO HAVE NEVER WON ANYTHING HERE. \u00B7 SIMON AND OREN ARE WRITTEN AS BROTHERS, AND THE REASON IS ON THEIR HEADS. \u00B7 AND TOBY CATCHES HIM DOING THE THING PERO DID FORTY MINUTES EARLIER." },
   { key:'NOW IT IS MY TURN', col:'#ff9ec4',
     sub:"WENDA.PS, YOU TAKEN MY POWER BEFORE, NOW IT IS MY TURN.\u201D \u2014 GRAY.PS \u00B7 THE FUNNEL IS HERS. FOUR RUNS SINCE JULY 20, AND ALL FOUR WENT THE SAME WAY. \u00B7 HE DID NOT INVENT A COUNTER-MOVE. HE USED HER MOVE, ON HER, AND SAID SO WHILE DOING IT. \u00B7 SOME OF WHAT HE PULLS OUT OF HER IS HIS, AND THIS FILE WROTE DOWN THE DAY IT LEFT. \u00B7 THIS PAGE SAID HER AURA WAS NOT A FIGHT ANYBODY COULD WIN. \u00B7 AND HE RANKED THEM THIRTY-SIX HOURS BEFORE HE PROVED IT." },
+  { key:'EVERYONE NOW KNOWS YOU AREN\u2019T OMNIPOTENT', col:'#ff8c42',
+    sub:"YOU DON\u2019T HAVE TO DO THIS, I\u2019LL GIVE MY POWER TO EVERYONE, IF YOU JUST TAKE YOUR TELEKENTICS OUT. \u00B7 THE SWEAT COMES FIRST AND THE BAN COMES AFTER. THAT ORDER IS FIFTY DAYS OLD. \u00B7 HE BROKE HIS OWN EMOJI RULE, AND OREN IS THE ONE WHO ASKED ABOUT IT FIVE DAYS AGO. \u00B7 GRAY ASKS IF PERO EVER ALLOWED XP. THE ARCHIVE SAYS NO. \u00B7 \u201CNOT ME, BUT GOD\u201D IS THE ONE LINE ABOVE HIM, AND HE HAS NEVER SAID IT HIMSELF. \u00B7 AND THE WORD OREN HITS HIM WITH IS GASTER\u2019S MIDDLE NAME, HANDED OUT BY PERO." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14859,6 +14861,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15054.0 && c < 15076.0) return [697, c-15054.0];  // EVERYONE NOW KNOWS YOU AREN?T OMNIPOTENT
   if(c >= 15032.0 && c < 15054.0) return [696, c-15032.0];  // NOW IT IS MY TURN
   if(c >= 15010.0 && c < 15032.0) return [695, c-15010.0];  // AND IT ALL WORKED PURR-FECTLY
   if(c >= 14988.0 && c < 15010.0) return [694, c-14988.0];  // I?LL DELETE YOUR ACCESS TO CLASSICS
@@ -48113,6 +48116,141 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===697){
+    // ----- BEAT 697: EVERYONE NOW KNOWS YOU AREN'T OMNIPOTENT.
+    // Toby, September 10, 2026, 4:20:34 PM, Email 1403. Canon is the opening paragraph, his own typing,
+    // from "Pero LAI comes to Oren.ps again" through "Pero LAI made a hyperspace and sent everything to
+    // the Shadow Realm + The Dark." Oren pins Pero to a wall with telekentics; Pero sweats and offers
+    // "I'll give my power to everyone"; his face flashes to the horror version; he offers a pop tart;
+    // Oren says "Everyone now knows that you aren't omnipotent."; Pero switches to the angry-cat emoji
+    // and Oren catches it ("You said a different emoji."); the shockwave puts Oren in space. Years later
+    // everyone has XP and LV, Pero bans it ("you should be with the Lord your God. Not me, but God."),
+    // loses to the Sprunki.pses, and cuts the fiction universes apart into the Shadow Realm + The Dark.
+    // Everything from "That scene is a huge Pero LAI weakness reveal" onward is pasted commentary.
+    // July 22, 6:42 PM, All Must Be 1: "Pero is now sweating and breaks, Pero bans the players, and he
+    // also removes all the minigames." August 29: Gaster corners him, "Pero sweats", and Pero loses for
+    // the very first time. September 5, 2:30 PM: "His emoji thing is now limited to a single emoji.", and
+    // Oren asks "Ya always need to be calm now with a single emoji now?" in that same scene. The angry
+    // emoji he ends on has ZERO hits across all 459 files. August 23: Entity 000 "gets more power and LV
+    // and KR and XP and all those stuff", absorbed all the code and ended the game; Pero built Entity 000
+    // Classics: Hello 000 and named it after the winner. August 18 and 24: "Only God is stronger than
+    // Pero. Only God himself beats Pero." - always written ABOUT him, never BY him, until tonight.
+    // August 13: Pero announces "Gaster Omnipotent Overload"; August 29 Gaster answers "It is that you
+    // are not omnipotient." August 24, 6:38 AM: Oren tasted the pop tart, sank in the sea, and Pero swam
+    // and brought him back out. September 2, 9:02 PM: "If you can survive that, survive me.", and Oren
+    // "accidentally beaten Pero LAI." telekentics, sidulation and questons are his spellings, kept.
+    const dt = c - 15054.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr697=ctx.createLinearGradient(0,top+H,0,top);
+    gr697.addColorStop(0,'rgba(5,6,10,0.88)'); gr697.addColorStop(1,'rgba(255,140,66,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr697; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,140,66,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,140,66,0.90)';
+      for(var t697=0; t697<4; t697++){
+        ctx.fillRect(fx-W*0.034+t697*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(92,200,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('OREN NEVER LANDS A NEW MOVE TONIGHT. HE PINS HIM, THEN NOTICES THE', fx, fy+H*0.020);
+      ctx.fillText('FACE, THEN NOTICES THE EMOJI. HE WINS THIS SCENE BY READING IT.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,140,66,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('EVERYONE NOW KNOWS YOU AREN\u2019T OMNIPOTENT', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CYOU DON\u2019T HAVE TO DO THIS, I\u2019LL GIVE MY POWER TO EVERYONE, IF YOU JUST TAKE YOUR TELEKENTICS OUT.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CEVERYONE NOW KNOWS THAT YOU AREN\u2019T OMNIPOTENT.\u201D \u2014 OREN.PS. \u201CDO NOT GET XP AND LV.\u201D \u2014 PERO LAI.', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,140,66,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE OFFERS EVERYONE HIS POWER WHILE HE IS PINNED TO A WALL, AND BANS EVERYONE\u2019S POWER ONCE HE IS OFF IT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 10, 4:20:34 PM. EVERYTHING FROM \u201CTHAT SCENE IS A HUGE PERO LAI WEAKNESS REVEAL\u201D ON IS PASTED COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,140,66,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE SWEAT COMES FIRST AND THE BAN COMES AFTER. THAT ORDER IS FIFTY DAYS OLD.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 22: \u201CPERO IS NOW SWEATING AND BREAKS, PERO BANS THE PLAYERS, AND HE ALSO REMOVES ALL THE MINIGAMES.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,140,66,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HIS FACE IS \u201CWITH SWEAT\u201D ON OREN\u2019S WALL, AND ELEVEN SENTENCES LATER HE BANS XP AND LV.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE BROKE HIS OWN EMOJI RULE, AND OREN IS THE ONE WHO ASKED ABOUT IT FIVE DAYS AGO.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5: \u201CHIS EMOJI THING IS NOW LIMITED TO A SINGLE EMOJI.\u201D OREN: \u201CYA ALWAYS NEED TO BE CALM NOW?\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT PERO USES TWO MORE, AND THE ANGRY ONE HAS ZERO HITS IN ALL 459 FILES OF THIS WIKI.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('GRAY ASKS IF PERO EVER ALLOWED XP. THE ARCHIVE SAYS NO.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUG 23: ENTITY 000 GOT \u201CMORE POWER AND LV AND KR AND XP\u201D, ABSORBED ALL THE CODE, AND ENDED THE GAME.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('PERO BUILT A NEW GAME AND NAMED IT AFTER THE THING THAT KILLED THE LAST ONE.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(242,193,78,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CNOT ME, BUT GOD\u201D IS THE ONE LINE ABOVE HIM, AND HE HAS NEVER SAID IT HIMSELF.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUG 18 AND AUG 24: \u201CONLY GOD IS STRONGER THAN PERO. ONLY GOD HIMSELF BEATS PERO.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(242,193,78,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('BEAT 470 IS TITLED ONLY GOD ABOVE HIM. TONIGHT HE POINTS AT THAT NAME TO FENCE EVERYONE ELSE OFF.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,140,66,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE WORD OREN HITS HIM WITH IS GASTER\u2019S MIDDLE NAME, HANDED OUT BY PERO.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 13, PERO: \u201CGASTER OMNIPOTENT OVERLOAD.\u201D AUGUST 29, GASTER: \u201CIT IS THAT YOU ARE NOT OMNIPOTIENT.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,140,66,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('OREN ADDS ONE WORD TO A TWELVE DAY OLD DIAGNOSIS: EVERYONE. THAT IS THE WHOLE OF HIS ATTACK.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUG 24: OREN TASTED A POP TART, SANK IN THE SEA, AND PERO SWAM AND BROUGHT HIM BACK OUT. TONIGHT, PINNED TO A WALL, PERO OFFERS HIM A POP TART.', cx, top+H*0.800);
+    ctx.fillText('SEPTEMBER 2, TO OREN: \u201CIF YOU CAN SURVIVE THAT, SURVIVE ME.\u201D TONIGHT, TO OREN: \u201CIF YOU WANT TO SURVIVE, JUST SURVIVE WITHOUT ME.\u201D', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,140,66,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HIS COUNT OF THREE CHECKS OUT: GASTER AUG 29, OREN SEP 2, EVERYONE TONIGHT. TELEKENTICS, SIDULATION AND QUESTONS ARE HIS SPELLINGS, KEPT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,140,66,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 EVERYONE NOW KNOWS YOU AREN\u2019T OMNIPOTENT \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===696){
