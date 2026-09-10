@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15076.0;
+const LV_CYC = 15098.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12711,6 +12711,8 @@ const LV_BEATS = [
     sub:"WENDA.PS, YOU TAKEN MY POWER BEFORE, NOW IT IS MY TURN.\u201D \u2014 GRAY.PS \u00B7 THE FUNNEL IS HERS. FOUR RUNS SINCE JULY 20, AND ALL FOUR WENT THE SAME WAY. \u00B7 HE DID NOT INVENT A COUNTER-MOVE. HE USED HER MOVE, ON HER, AND SAID SO WHILE DOING IT. \u00B7 SOME OF WHAT HE PULLS OUT OF HER IS HIS, AND THIS FILE WROTE DOWN THE DAY IT LEFT. \u00B7 THIS PAGE SAID HER AURA WAS NOT A FIGHT ANYBODY COULD WIN. \u00B7 AND HE RANKED THEM THIRTY-SIX HOURS BEFORE HE PROVED IT." },
   { key:'EVERYONE NOW KNOWS YOU AREN\u2019T OMNIPOTENT', col:'#ff8c42',
     sub:"YOU DON\u2019T HAVE TO DO THIS, I\u2019LL GIVE MY POWER TO EVERYONE, IF YOU JUST TAKE YOUR TELEKENTICS OUT. \u00B7 THE SWEAT COMES FIRST AND THE BAN COMES AFTER. THAT ORDER IS FIFTY DAYS OLD. \u00B7 HE BROKE HIS OWN EMOJI RULE, AND OREN IS THE ONE WHO ASKED ABOUT IT FIVE DAYS AGO. \u00B7 GRAY ASKS IF PERO EVER ALLOWED XP. THE ARCHIVE SAYS NO. \u00B7 \u201CNOT ME, BUT GOD\u201D IS THE ONE LINE ABOVE HIM, AND HE HAS NEVER SAID IT HIMSELF. \u00B7 AND THE WORD OREN HITS HIM WITH IS GASTER\u2019S MIDDLE NAME, HANDED OUT BY PERO." },
+  { key:'I KNOW WHO MADE YOU', col:'#b284ff',
+    sub:"I WAS TOLD BY OREN.PS THAT YOU AREN\u2019T OMNIPOTENT, IS THAT RIGHT?\u201D \u2014 SEPHIROTH. \u00B7 HE HAS RUN GOKU VS NARUTO BEFORE, AND ON AUGUST 15 PERO DID NOT FIGHT ANYBODY EITHER. \u00B7 IN THIS ARCHIVE THE OVERWRITE BUTTON WAS PERO\u2019S FIFTY-TWO DAYS BEFORE CHARA EVER HELD IT. \u00B7 HYPERSPACE WAS HIS LARGEST ATTACK ON AUGUST 16. TODAY IT IS HIS MAIN ONE. \u00B7 SEPHIROTH IS NOT THE FIRST OUTSIDER HERE TO BE ASTONISHED AND FALL. \u00B7 AND AN HOUR AFTER OREN SAID IT, TOBY SAYS IT TOO: \u201CHE ISN\u2019T OMNIPOTENT HIMSELF.\u201D" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14861,6 +14863,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15076.0 && c < 15098.0) return [698, c-15076.0];  // I KNOW WHO MADE YOU
   if(c >= 15054.0 && c < 15076.0) return [697, c-15054.0];  // EVERYONE NOW KNOWS YOU AREN?T OMNIPOTENT
   if(c >= 15032.0 && c < 15054.0) return [696, c-15032.0];  // NOW IT IS MY TURN
   if(c >= 15010.0 && c < 15032.0) return [695, c-15010.0];  // AND IT ALL WORKED PURR-FECTLY
@@ -48116,6 +48119,134 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===698){
+    // ----- BEAT 698: I KNOW WHO MADE YOU.
+    // Toby, September 10, 2026, sent 5:29:27 PM, Email 1404, lines stamped 5:03 to 5:19 PM. Canon is his own typing:
+    // "It will be Pero LAI with the Hyperspace. That is Pero LAI's main ability." / "Pero LAI with Hyperspace, Pero LAI
+    // can send litterly anything and anyone through hyperspaces to anywhere. Sephiroth says 'I was told by Oren.ps that you
+    // aren't omnipotent, is that right?', Pero LAI says 'Yeah, I know who made you, I know everything, and I will just...',
+    // Pero LAI flickers and the screen glitches, Sephiroth gets astonished and falls by a heart-attack." / "Pero LAI comes
+    // in and says 'Goku, you crushed Naruto, now the souls will crush you.', Goku fades away into pixels and the pixels
+    // funnel in into Pero LAI." / "Pero LAI comes and says 'Chara, in your Cross AU, you can rewrite, but now, I'll take
+    // everything to a Dust AU.', Cross Chara fades and becomes pixels and funnels into Pero LAI" / "Pero LAI wins nearly
+    // every battle (because he doesn't have that much battles), but he isn't omnipotent himself." The Kirby, Final Fantasy,
+    // Dragon Ball, Undertale and Minecraft Dungeons answers pasted between those lines are commentary, not canon.
+    // Priors: Aug 15 11:29 AM Goku VS Naruto ladder + 'Nothing should battle Pero'. July 20 7:07 AM Cross Pero + the
+    // Overwrite button. Aug 16 8:08 AM 'Hyperspace is Pero's largest attack/domain'. May 22 Email 322 'Goku will be
+    // astonished and faint'. July 27 8:18 PM he 'absorbs the bits of each pixel of the coffin'. Sephiroth, Cross Chara,
+    // 'who made you' and heart-attack have zero prior hits. litterly is his spelling, kept as typed.
+    const dt = c - 15076.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr698=ctx.createLinearGradient(0,top+H,0,top);
+    gr698.addColorStop(0,'rgba(5,6,10,0.88)'); gr698.addColorStop(1,'rgba(178,132,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr698; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(178,132,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(178,132,255,0.90)';
+      for(var t698=0; t698<4; t698++){
+        ctx.fillRect(fx-W*0.034+t698*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(92,200,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THREE OUTSIDERS IN SEVEN MINUTES,', fx, fy+H*0.020);
+      ctx.fillText('AND NOT ONE OF THEM GETS A TURN AGAINST HIM', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(178,132,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('I KNOW WHO MADE YOU', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CI WAS TOLD BY OREN.PS THAT YOU AREN\u2019T OMNIPOTENT, IS THAT RIGHT?\u201D \u2014 SEPHIROTH.', cx, top+H*0.122);
+    ctx.fillText('\u201CYEAH, I KNOW WHO MADE YOU, I KNOW EVERYTHING, AND I WILL JUST... \uD83D\uDE0C\u201D \u2014 PERO LAI. THE SCREEN GLITCHES.', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(178,132,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('FIFTY MINUTES AFTER OREN SAID \u201CEVERYONE NOW KNOWS\u201D, EVERYONE TURNS OUT TO INCLUDE FINAL FANTASY.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 10, 5:07 TO 5:19 PM, SENT 5:29 PM. THE RANKINGS AND POWER LISTS PASTED BETWEEN HIS LINES ARE COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(178,132,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE HAS RUN GOKU VS NARUTO BEFORE, AND ON AUGUST 15 PERO DID NOT FIGHT ANYBODY EITHER.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 15, 11:29 AM: \u201CGOKU VS NARUTO; WINNER OR BEERUS; WINNER VS ZENO.\u201D THEN: \u201CNOTHING SHOULD BATTLE PERO.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(178,132,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWENTY-SIX DAYS AGO HE BOXED THE TOP OF THAT LADDER WITHOUT A FIGHT. TODAY HE TAKES THE WINNER INTO HIMSELF.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('IN THIS ARCHIVE THE OVERWRITE BUTTON WAS PERO\u2019S FIFTY-TWO DAYS BEFORE CHARA EVER HELD IT.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 20, 7:07 AM: \u201CPERO BECAME CROSS PERO WITH THE WHITE CLOATHS AND THE OVERWRITE BUTTON.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY: \u201CCHARA, IN YOUR CROSS AU, YOU CAN REWRITE, BUT NOW...\u201D THE FIRST HAND ON THAT BUTTON HERE WAS HIS.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HYPERSPACE WAS HIS LARGEST ATTACK ON AUGUST 16. TODAY IT IS HIS MAIN ONE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 16: \u201CHYPERSPACE IS PERO\u2019S LARGEST ATTACK/DOMAIN.\u201D TODAY: \u201CTHAT IS PERO LAI\u2019S MAIN ABILITY.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE BIGGEST THING HE CAN DO HAS BECOME THE FIRST THING HE REACHES FOR.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,158,196,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SEPHIROTH IS NOT THE FIRST OUTSIDER HERE TO BE ASTONISHED AND FALL.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('MAY 22: \u201CGOKU WILL BE ASTONISHED AND FAINT\u201D AT ONE BEAM FROM KARUTO, AND NEVER FIGHTS.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,158,196,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SAME ENDING, 111 DAYS LATER. AND FOUR MINUTES AFTER IT, GOKU IS PULLED IN TOO.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(178,132,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND AN HOUR AFTER OREN SAID IT, TOBY SAYS IT TOO: \u201CHE ISN\u2019T OMNIPOTENT HIMSELF.\u201D', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI WINS NEARLY EVERY BATTLE (BECAUSE HE DOESN\u2019T HAVE THAT MUCH BATTLES), BUT HE ISN\u2019T OMNIPOTENT HIMSELF.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(178,132,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE RECORD IS A RECORD OF NOT FIGHTING. SEPHIROTH NEVER SWINGS, GOKU\u2019S FIGHT IS OVER, AND CHARA NEVER PRESSES.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPHIROTH, CROSS CHARA, \u201CWHO MADE YOU\u201D AND FALLING BY A HEART-ATTACK ALL HAVE ZERO PRIOR HITS ACROSS THE WHOLE WIKI.', cx, top+H*0.800);
+    ctx.fillText('JULY 27 HE ABSORBED THE PIXELS OF A COFFIN. SEPTEMBER 9: \u201CI OWN EVERY PIXEL.\u201D TODAY THE PIXELS ARE PEOPLE.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(178,132,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE \uD83D\uDE21 FROM 4:20 LASTED ONE LINE. BY 5:10 HE IS BACK ON \uD83D\uDE0C, AND \u201CNOW THE CHAT WILL BE OVERFLOWN OF \uD83D\uDE0C\u201D.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(178,132,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 I KNOW WHO MADE YOU \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===697){

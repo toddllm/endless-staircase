@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-10 — I KNOW WHO MADE YOU (BEAT 698)
+
+Based on Toby's 2026-09-10 lore — two messages on the "Even Even Even More of Pero" thread,
+**Sep 10, 5:29:27 PM** (lines stamped 5:03 to 5:19 PM) and **5:38:25 PM**, one scene. Canon is his
+own lines: Themi, Hyperspace as Pero LAI's main ability, the Sephiroth, Goku and Cross Chara scenes,
+*"he isn't omnipotent himself"*, and at 5:38 *"non-Classics means Non-Pero_LAI.exe"*. The rankings and
+power lists pasted between them are commentary, not canon. **litterly**, **Kameheh**, **overwelm** and
+**overflown** are Toby's spellings, kept as typed.
+
+![Beat 698 — I Know Who Made You](screenshots/760-i-know-who-made-you.png)
+
+- **New beat 698, I KNOW WHO MADE YOU.** Sephiroth: *"I was told by Oren.ps that you aren't omnipotent,
+  is that right?"* Pero LAI: *"Yeah, I know who made you, I know everything, and I will just... 😌"* The
+  screen glitches and Sephiroth falls by a heart-attack. Goku beats Naruto, then *"Goku, you crushed
+  Naruto, now the souls will crush you. 😌"*, and Goku fades into pixels that funnel into Pero. Cross
+  Chara hears *"in your Cross AU, you can rewrite, but now, I'll take everything to a Dust AU"*, and
+  funnels in too.
+- **Sephiroth opens with Oren's sentence fifty minutes after Oren said it.** Oren's one added word at
+  4:20 was *everyone*; by 5:10 it includes a character with zero prior hits in the archive.
+- **Goku VS Naruto has been run before.** August 15, 11:29 AM: *"Goku VS Naruto; Winner or Beerus;
+  Winner VS Zeno"*, and *"Nothing should battle Pero."* Pero boxed the top of that ladder without a
+  fight; today he takes the winner into himself.
+- **Sephiroth is not the first outsider to be astonished and fall.** May 22, Email 322: *"Goku will be
+  astonished and faint"* at one beam from Karuto. Same ending, 111 days later, and Goku is next.
+- **The Overwrite button was Pero's first.** July 20, 7:07 AM: *"Pero became Cross Pero with the white
+  cloaths and the Overwrite button."* Fifty-two days later he takes it off Cross Chara.
+- **Hyperspace goes from his largest attack to his main one.** August 16: *"Hyperspace is Pero's largest
+  attack/domain."* Today: *"That is Pero LAI's main ability."*
+- **The pixels are people now.** July 27 he absorbed the pixels of the coffin built to hold him;
+  September 9, *"I own every pixel, now all realities."*
+- **Toby concedes it an hour after Oren:** *"Pero LAI wins nearly every battle (because he doesn't have
+  that much battles), but he isn't omnipotent himself."*
+- **The 😡 from 4:20 lasted one line.** *"now the chat will be overflown of 😌"*.
+- **5:38 PM:** *"non-Classics means Non-Pero_LAI.exe"* (zero prior hits) confirms Toby's own August 31
+  ruling that Gaster is the strongest being outside Classics, and moves the border to Pero's filename.
+- Screenshots 758 and 759 were re-captured: adding a beat shifts the five-row beat ladder in the two
+  highest-phase frames.
+- Runtime probe: LV_BEATS length 699, 0 holes, 0 lvSeg gaps, every phase drawn with 0 errors, boundary
+  697/698 exact at cyc 15076.0.
+
 ## 2026-09-10 — EVERYONE NOW KNOWS YOU AREN'T OMNIPOTENT (BEAT 697)
 
 Based on Toby's 2026-09-10 lore — one message on the "Even Even Even More of Pero" thread,
