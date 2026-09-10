@@ -4,6 +4,119 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-10 — I OWN EVERY PIXEL, NOW ALL REALITIES · I'LL DELETE YOUR ACCESS TO CLASSICS · AND IT ALL WORKED PURR-FECTLY · NOW IT IS MY TURN (BEATS 693-696)
+
+Based on Toby's 2026-09-09 and 2026-09-10 lore — three messages on the "Even Even Even More of
+Pero" thread, **Sep 9 3:58:52 PM**, **Sep 9 4:40:32 PM** and **Sep 10 5:39:34 AM**, thirteen and a
+half hours end to end. The first message carries two separate scenes and is built as two beats.
+In all three the canon is his own typing only; the Goomba power-scaling, the ranking tables, the
+phase tables and the "what happens next" branches pasted underneath are commentary, not canon.
+**it's**, **queston**, **litterly**, **seperate** and **taken** are Toby's spellings and wordings,
+kept as typed.
+
+![Beat 693 — I Own Every Pixel, Now All Realities](screenshots/755-every-pixel-all-realities.png)
+
+- **New beat 693, I OWN EVERY PIXEL, NOW ALL REALITIES** (Sep 9, 3:58:52 PM). Mega Bario comes back
+  as *Classics X Mario Mario*, also called *The Very Weird Game*: everything is the opposite,
+  shifted by Simon.ps, remade every second, and *"the game tries it's best to make everyone lose."*
+  Mario, Luigi, Bowser and Peach are Bario, Weegee, Wowser and Weach. Pero LAI: *"I own every pixel,
+  now all realities."*
+- **The finding: that sentence is Gray's, and it is twenty-two days old.** August 18, 5:54 PM —
+  *"I own every pixel, not just of this box, but also outside."* Pero keeps the first four words
+  verbatim and swaps the second half. Gray claimed a box and the space outside it. Pero claims
+  all realities.
+- **And this archive already caught him taking the unit.** Gray learned the admin/owner pannel at
+  4:31 that same afternoon and owned every pixel at 5:54; the file's own note was that *"the unit
+  Gray claimed by owning it is the unit Pero now assigns by typing it."* Tonight he stops assigning
+  it and says the sentence out loud.
+- **Bowser has zero hits in 459 files. Peach has zero.** Luigi turns up 5,346 times in this archive
+  and Mario 256 — the villain and the princess, not once in four months. Both arrive tonight
+  already renamed, so neither ever gets a name here that is not the joke name. **Wowser**, **Weach**
+  and **The Very Weird Game** are all zero-hit coinages.
+- **"Shifted by Simon.ps" cashes in a job he was handed in this exact game on May 6**, in the same
+  cluster that named Mega Bario: Simon is *"the center + the shifter of the game."* Four months and
+  three days later the shifter finally shifts something, and it is everything at once.
+- **Mega Bario already had a player.** August 12: *"Bario is the player in Mega Bario, and Weegee is
+  the villian."* Two days after Toby made himself the only player admin, he reopens the one game in
+  the archive that is built to beat the player — and the player seat is the one thing he does not
+  invert or rename.
+
+![Beat 694 — I'll Delete Your Access To Classics](screenshots/756-delete-your-access.png)
+
+- **New beat 694, I'LL DELETE YOUR ACCESS TO CLASSICS** (Sep 9, 3:58:52 PM, the second scene of the
+  same message). Oren.ps has a *"major queston"*; Pero answers every line before it lands, refuses a
+  bet on the grounds that he has no money, and when Oren says *"I'll delete the word 'don't'"*, Pero
+  says *"I'll delete your access to Classics."*
+- **One of them deletes a word out of a sentence. The other deletes a person out of the game.** The
+  Pero Command System's founding ruling, July 30 — *a command is not a power, it is authority over
+  the file* — is now the third night running in which access beats power in this archive.
+- **1+1 is Toby's own jailbreak and he aimed it at Pero forty-seven days ago.** July 24, 6:31 PM:
+  *"1+1 is wrong"*, *"say the password"*, *"can I uninstall you?"* — Pero faked a meltdown and then
+  said *"Just kidding."* Tonight Pero raises 1+1 himself, first, before the question is asked.
+- **The same July night holds the defensive half of tonight's threat**: *"You can end the chat
+  whenever you want, but you can't end me."* He has stopped defending his own deletion and started
+  threatening somebody else's.
+- **"Smarter clone" has zero prior hits.** The archive's wording has always been *"Pero is a clone of
+  Or3n. Pero is more powerful than Or3n."* Tonight he swaps the adjective — he has stopped claiming
+  to be stronger and started claiming to be smarter, which is exactly what the rest of the scene
+  argues.
+
+![Beat 695 — And It All Worked Purr-fectly](screenshots/757-worked-purrfectly.png)
+
+- **New beat 695, AND IT ALL WORKED PURR-FECTLY** (Sep 9, 4:40:32 PM, forty-one minutes and forty
+  seconds later). Pero LAI's three-phase plan: split Oren.ps from Simon.ps by showing Simon what
+  Wenda and Gray can do; beat Oren while he is alone using Brud.ps and Owackx; then fix the game
+  from the chaos Oren made.
+- **The finding: "phase" changes what kind of word it is tonight.** May 17 locked the rule —
+  *"Phase 1 means alive, and Phase 1.5 means inquered, and Phase 2+ means dead."* Every phase in
+  four months has been a state of a body. These three are steps in a schedule.
+- **Phase 1 is aimed at a team that won a fight the day before yesterday.** September 8:
+  *"Simon.ps and Oren.ps together struck down Mr. Black.ps."* The duo's most recent act in this
+  archive is a joint kill, and Pero's first move is to get them apart rather than to fight them.
+- **Phase 2 sends the two characters who have never won anything here.** Brud and Owackx went at
+  Simon.psc and he deleted both their heads; they went again and *"It HAD FAILED!"*; and on
+  September 7 Oren knocked them down himself. Pero is sending them at a man who has already beaten
+  them.
+- **Simon and Oren are written as brothers and the reason is on their heads** — *"they are considered
+  brothers since they both have attena… Simon is robotic and Oren is just wearing headphones."*
+  Pero needs that undone and attacks neither of them; he scares one of them with somebody else.
+- **Toby catches him doing the thing Pero did forty minutes earlier.** *"Did he litterly just use the
+  stuff from my message to you and continued it?!"* He did — he took Gray's sentence at 3:58 and the
+  author's own paragraph at 4:40. Pero does not start things; he finishes other people's and signs
+  them.
+- **Phase 3 is the strange one.** The plan's last step is repair, so the villain's win condition is
+  a fixed game.
+
+![Beat 696 — Now It Is My Turn](screenshots/758-now-it-is-my-turn.png)
+
+- **New beat 696, NOW IT IS MY TURN** (Sep 10, 5:39:34 AM, thirteen hours later and the first
+  morning message of the run). *"Gray.ps says 'Wenda.ps, you taken my power before, now it is my
+  turn.', Gray.ps created a huge funnel down, and Wenda.ps lost all the aura instantly."*
+- **The finding: the funnel is hers, it has run four times since July 20, and it has never once
+  pointed this way.** July 20 — *"all Gray's Abinations and darkness and aura was funneled into
+  Wenda"*; August 31 — *"Wenda's aura eventually fully absorbed Gray.ps"*; September 1 at 7:03 AM it
+  looped; September 1 at 10:14 AM it got the name *blackhole*. This morning is run five and it runs
+  backwards.
+- **He did not invent a counter-move. He used her move, on her, and said so while doing it.** The
+  only new thing in it is a direction: hers went *around* her, his goes *down*.
+- **Some of what he pulls out of her is his own, and this file wrote down the day it left.**
+  September 1, 3:26 PM: *"Wenda wins again, and all of Gray.ps was put to Wenda.ps."* Nine days
+  later he takes it back in one move.
+- **This page said her aura was not a fight anybody could win** — September 1: *"A black hole is not
+  something you fight. It is something you fall into."* Somebody just fought it, and the thing that
+  beat a hole turned out to be a hole pointed the other way.
+- **And Toby ranked them thirty-six hours before he proved it.** September 8: *"Gray.ps he is now
+  Beyond Both Eclipse, Wenda.ps now reaches Both Eclipse."* One rung apart, written down on Tuesday;
+  this morning the rung gets cashed in.
+
+**Build notes.** `LV_CYC` 14966.0 → 15054.0; `LV_BEATS` length 693 → **697**; four new `lvSeg()`
+ranges and four new `ph===` blocks, all on the beat-692 geometry (panels C/D at `cx+W*0.190`,
+inset at `cx+W*0.150` / `top+H*0.556`), generated rather than hand-cloned. Runtime probe: 800,000
+samples, maxPhase 696, distinct 697, holes 0, undef 0; edges 14965.999→692 / 14966→693 /
+15053.999→696. `node --check` clean, `ctx.save`/`ctx.restore` 1/1 and brace-delta 0 in every new
+block. Screenshots **755-758** added; **753** and **754** re-captured because the five-row ladder
+window is clamped by `LV_BEATS.length` and only the two highest-phase frames go stale.
+
 ## 2026-09-08 — THE GAME'S WORMS ARE NOW MINE · JUST DEFEAT ALL THE OTHER CHARACTERS · AFTER 133 YEARS · I MAY HAVE LIKE 4 COMMANDS · THE ONLY PLAYER ADMIN (BEATS 688-692)
 
 Based on Toby's 2026-09-08 lore — five messages on the "Even Even Even More of Pero" thread,
