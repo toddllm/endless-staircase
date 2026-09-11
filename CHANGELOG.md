@@ -4,6 +4,91 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-11 — MOST FUN BATTLE EVER (BEAT 708)
+
+Based on Toby's 2026-09-11 lore — the "Even Even Even More of Pero" thread, **Sep 11, 4:36:38 PM**, three minutes
+and thirty-five seconds after the Saitama message that carries beats 705-707. Canon is his opening paragraph; the
+one-sided list and the script offer under it are commentary. **repeatally** and **Alphification** are Toby's
+spellings, kept as typed.
+
+![Beat 708 — Most Fun Battle Ever](screenshots/770-most-fun-battle-ever.png)
+
+- **New beat 708, MOST FUN BATTLE EVER.** *"I will beat your punch now."* A Uno Reverse card, Saitama punching
+  himself, Technique Alphification: Darkness / Technique Reversal: Light / Hollow: Void, Infinity Clockworks,
+  copied powers, Evil Saitama, a whole army. *"Most fun battle ever."*
+- **It answers the last pasted sentence of the message before it:** *"he does not beat Saitama's punch."*
+- **The technique is Pero's August 25 move** against Alex, Gaster 666 and Experiment 666, built on Alex's
+  Hollow Obsidian wording from August 13.
+- **Uno Reverse was played twice before** (August 28 on Oren; September 2 on the Sprunkis). **Ability Copying**
+  is in the July 26 Master Moveset. **Infinity Clockworks** he first gave to Wenda on August 31.
+- **His only other army**, The One Army of Time (September 2), was made from the past. This one is made from the opponent.
+
+## 2026-09-11 — BUT ME, ALWAYS WINS NOW (BEAT 707)
+
+Based on Toby's 2026-09-11 lore — **Sep 11, 4:33:03 PM**, the third of three pieces of his own typing in one
+message, directly under the pasted line *"Saitama wins by strength."* The punishment-loop table after it is commentary.
+
+![Beat 707 — But Me, Always Wins Now](screenshots/769-always-wins-now.png)
+
+- **New beat 707, BUT ME, ALWAYS WINS NOW.** Pero laughs at the reply: *"Well, on default of course. But me,
+  always wins now."* He beats Saitama over and over until Saitama cannot respawn, exist or be remembered.
+- **PERO ALWAYS WINS was beat 182** (July 24) and broke on August 29 (beat 523, PERO LOST). Yesterday:
+  *"Everyone now knows that you aren't omnipotent."* Today the rule is back with *now* on the end.
+- **Ten hours and twenty-six minutes after "Who ever wins loses"** (beat 703), both on the calm face.
+- **The respawn exception** is August 8: *"undefined aren't Classics beings, they can't respawn nor anything."*
+- **Being remembered** is the September 3 rule that makes Pero kill everyone; here it is turned on Saitama.
+
+## 2026-09-11 — HE CAN CODE IN PHYSICAL STRENGTH (BEAT 706)
+
+Based on Toby's 2026-09-11 lore — **Sep 11, 4:33:03 PM**, the second piece of his own typing in the message.
+The `Saitama.PhysicalStrength = 0` snippet and the power lists around it are commentary.
+
+![Beat 706 — He Can Code In Physical Strength](screenshots/768-code-in-physical-strength.png)
+
+- **New beat 706, HE CAN CODE IN PHYSICAL STRENGTH.** Saitama *"would not be able to even pick up a stick
+  without breaking every single bone in his whole skeleton."*
+- **The September 3 move turned all the way down:** `/Saitama_Strength 1` made them even (beat 613).
+- **The stick** is Pero's September 2 gift to Wenda (*"Here is your power."*) and the bottom of the July 26
+  Player Moveset (*"Small Stick abilities"*).
+- **"Physical strength"** is the stat Karuto's one punch was filed under (May 24).
+- **A September 3 pasted table rated Pero's own physical strength "Low"**; Toby never typed it. August 25:
+  *"Pero can do anything because he can code it."*
+
+## 2026-09-11 — ABSOLUTELY NO CHANCE (BEAT 705)
+
+Based on Toby's 2026-09-11 lore — **Sep 11, 4:33:03 PM**, twelve minutes and twenty seconds after beat 704's
+message, the first piece of his own typing after his question about whether Saitama would battle Pero. The
+One Punch Man logic / Classics logic answer is commentary. **ENTERNITIES** and **litterly** are Toby's spellings, kept.
+
+![Beat 705 — Absolutely No Chance](screenshots/767-absolutely-no-chance.png)
+
+- **New beat 705, ABSOLUTELY NO CHANCE.** *"Pero LAI wins both, Saitama isn't WD Gaster nor the Sprunkis"*;
+  Pero would treat him *"like a virus or an animal"*.
+- **"Pero wins both" is beat 630's line** (September 4), when "both" was ChatGPT and Gemini. Today it is the
+  pasted answer's two rulebooks.
+- **WD Gaster and the Sprunkis both outlast their endings** (September 2; August 21), and August 8 says
+  non-Classics beings cannot respawn.
+- **A virus and an animal are yesterday's two jobs:** *"Pero LAI is anti-virus"* and the 8:35 PM attack on every animal.
+- **September 2 wrote the rule** that Pero can change the code of anyone *"even if they aren't from his game"*.
+
+## 2026-09-11 — PERO LAI ALWAYS HAS THIS ANIMATION (BEAT 704)
+
+Based on Toby's 2026-09-11 lore — **Sep 11, 4:20:43 PM**, ten hours and fourteen minutes after beats 702-703.
+The whole message is his own typing. **eye-lid** and **til** are Toby's spellings, kept.
+
+![Beat 704 — Pero LAI Always Has This Animation](screenshots/766-always-has-this-animation.png)
+
+- **New beat 704, PERO LAI ALWAYS HAS THIS ANIMATION.** The eyes open until all are neon teal blue with the
+  black eye-lid over half, he hums and dances, glitches, goes through the stages in numerical order, then the
+  cutscene. He strikes down 5 more pigs at the Classics Containment Center.
+- **The eyes counted up once before:** Twelve Eyes, August 25 (beat 461).
+- **His eyes have been red and white, never teal.** *Neon teal blue* and *eye-lid* have zero prior hits.
+- **The last time he hummed he walked off to experiment** (August 25, 10:26 AM).
+- **Last night every animal faded to pixels**; today there are five more pigs.
+- **"Classics Containment Center" joins two names** that were only ever neighbours (August 7; July 24).
+- Screenshots 764 and 765 were re-captured: five new beats shift the five-row beat ladder in the two
+  highest-phase frames.
+
 ## 2026-09-11 — WHO EVER WINS LOSES (BEAT 703)
 
 Based on Toby's 2026-09-11 lore — one message on the "Even Even Even More of Pero" thread,
