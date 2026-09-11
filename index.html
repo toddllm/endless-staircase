@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15164.0;
+const LV_CYC = 15208.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12719,6 +12719,10 @@ const LV_BEATS = [
     sub:"HEY, GRAY, DID YOU HEAR WHAT I SAID ABOUT NOT TAKING POWER OR REWARDS FROM ANYONE ELSE, THEY ARE MINE. \uD83D\uDE0C \u00B7 GRAY AND WENDA BOTH BECOME ENTITY 666, AND WENDA HAS HELD THAT NAME BEFORE. \u00B7 THE ABSORPTION RAN THE OTHER WAY TEN DAYS AGO. \u00B7 TALKING ABOUT HIM WAS ALREADY THE TRIGGER. \u00B7 THE POP TART WAS ALREADY A PNG. \u00B7 GRAY NAMES THE WEAPON BEFORE IT IS DRAWN, AND IT HAS BEEN PERO\u2019S SINCE AUGUST." },
   { key:'A SIGN OF LIFE STILL IN THE GAME', col:'#d9d2b6',
     sub:"IF YOUR CHARACTER HEARS THE REPEATED FOOT STEPS THAT CONTINUE LITTERLY FOREVER, WHISTLES, HUMMING\u2026 \u00B7 AT 4:20 HE OFFERED EVERYONE HIS POWER. AT 8:35 HE KEEPS IT FOR HIMSELF. \u00B7 ON AUGUST 11 PLAYING DEAD WORKED, IN A FOG THAT WAS ALWAYS HIM. \u00B7 THE SHEEP WERE SLAIN ONCE BEFORE, BY THE SAME VOICE. \u00B7 MAY 17 THE GAME COULD TELL ALIVE FROM DEAD. PERO CAN\u2019T. \u00B7 THE LAST TIME HE HUMMED, HE WALKED AWAY TO EXPERIMENT." },
+  { key:'HE CROSSES 2 REALITIES', col:'#78c8ff',
+    sub:"PERO LAI REACHES TO THIS REALITY, HE CROSSES 2 REALITIES, THIS ONE, AND THE MATERIAN REALITY WHERE HE IS RIGHT NOW. \u00B7 SEPTEMBER 2 HE WAS GIVEN A PORTAL BETWEEN THE 2 REALITIES. TODAY HE USES IT. \u00B7 THE WRITER SAITAMA IS SAID TO HAVE BEATEN IS A JOB PERO ALREADY HAS. \u00B7 AUGUST 22 HE COULD NOT GET THROUGH THE SCREEN AT ALL. \u00B7 SEPTEMBER 4 PERO SAID IT HIMSELF: \u201CI REACH EVERYWHERE NOW.\u201D \u00B7 AND \u201CANYWHERE\u201D WAS YESTERDAY\u2019S WORD FOR THE HYPERSPACE." },
+  { key:'WHO EVER WINS LOSES', col:'#ffc45c',
+    sub:"PERO LAI ONCE TOLD A PLAYER \u201CWHO EVER WINS LOSES.\u201D PERO LAI FALLS OVER AND SAYS \u201CYOU LOST. \u00B7 SEPTEMBER 4 PERO ASKED THE QUESTION. SEPTEMBER 11 HE ANSWERS IT. \u00B7 LAST NIGHT PLAYING DEAD STOPPED WORKING ON PERO. THIS MORNING HE DOES IT. \u00B7 HIS REAL FALLS COME WITH A DIFFERENT FACE. \u00B7 AND THE PLAYER HAS HAD A RULE TO READ BEFORE. \u00B7 LAST NIGHT THEY WERE WAITING 666 YEARS. THIS MORNING THE SPRUNKIS ARE BACK." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14869,6 +14873,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15186.0 && c < 15208.0) return [703, c-15186.0];  // WHO EVER WINS LOSES
+  if(c >= 15164.0 && c < 15186.0) return [702, c-15164.0];  // HE CROSSES 2 REALITIES
   if(c >= 15142.0 && c < 15164.0) return [701, c-15142.0];  // A SIGN OF LIFE STILL IN THE GAME
   if(c >= 15120.0 && c < 15142.0) return [700, c-15120.0];  // CORRECT, IT?S A KATATA
   if(c >= 15098.0 && c < 15120.0) return [699, c-15098.0];  // UNKNOWN ENTITY: NO TRESPASSING
@@ -48128,6 +48134,254 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===703){
+    // ----- BEAT 703: WHO EVER WINS LOSES.
+    // Toby, September 11, 2026, 6:06:57 AM, Email 1413, the second piece of his own typing, after the pasted reply.
+    // Canon: 'Pero LAI once told a player "Who ever wins loses. [calm face]", Pero LAI falls over and says "You lost.
+    // [calm face]", Pero LAI slashes down the player. The Sprunkis now revived.' The trick-rule reading, its table and
+    // the clean canon update under it are commentary.
+    // Priors: Sep 4 3:17 PM (beat 634) 'If you think you'll win, what is your deffinition of win?'. Aug 11 11:53 AM 'Gray
+    // and Wenda fall over a play dead... Wenda and Gray survive'. Sep 10 8:38 PM (beat 701) 'you could play dead... it
+    // doesn't change the fact'. Sep 2 7:34 PM (beat 608) 'I fell twice in a row!' on the angry cat, his losing face.
+    // Sep 2 4:55 PM (beat 604) 'The player has to decode what they say'. Sep 10 8:41 PM (beat 701) 'waiting 666 years
+    // to respawn'. Aug 28 2:46 PM (beat 513) 'Pero slashes down Gaster.' Aug 26 3:34 PM (beat 483) 'if everyone
+    // together beats me, I'll give you all power'. who ever wins loses and you lost have zero prior hits.
+    const dt = c - 15186.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr703=ctx.createLinearGradient(0,top+H,0,top);
+    gr703.addColorStop(0,'rgba(5,6,10,0.88)'); gr703.addColorStop(1,'rgba(255,196,92,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr703; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,196,92,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,196,92,0.90)';
+      for(var t703=0; t703<4; t703++){
+        ctx.fillRect(fx-W*0.034+t703*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(140,224,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('FALL OVER FIRST,', fx, fy+H*0.020);
+      ctx.fillText('AND WHO EVER IS STILL STANDING HAS LOST', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,196,92,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('WHO EVER WINS LOSES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PERO LAI ONCE TOLD A PLAYER \u201CWHO EVER WINS LOSES.\u201D PERO LAI FALLS OVER AND SAYS \u201CYOU LOST.\u201D', cx, top+H*0.122);
+    ctx.fillText('PERO LAI SLASHES DOWN THE PLAYER. THE SPRUNKIS NOW REVIVED.', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,196,92,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('SEVEN DAYS AGO PERO ASKED \u201CWHAT IS YOUR DEFFINITION OF WIN?\u201D THIS MORNING HE SHOWS A PLAYER HIS.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 11, 6:06 AM. BOTH OF PERO\u2019S LINES END ON HIS CALM FACE. THE TRICK-RULE READING UNDER IT IS COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,196,92,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 4 PERO ASKED THE QUESTION. SEPTEMBER 11 HE ANSWERS IT.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 4, 3:17 PM: \u201CIF YOU THINK YOU\u2019LL WIN, WHAT IS YOUR DEFFINITION OF WIN?\u201D IT WAS NOT A POWER QUESTION. IT WAS ABOUT THE WORD.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,196,92,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING THE WORD IS FLIPPED BEFORE THE FIGHT: \u201CWHO EVER WINS LOSES.\u201D THE PLAYER HEARS THE RULE, AND PERO FALLS OVER ANYWAY.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(140,224,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('LAST NIGHT PLAYING DEAD STOPPED WORKING ON PERO. THIS MORNING HE DOES IT.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 11: \u201CGRAY AND WENDA FALL OVER A PLAY DEAD\u2026 WENDA AND GRAY SURVIVE.\u201D SEPTEMBER 10, 8:38 PM: \u201CYOU COULD PLAY DEAD\u2026 IT DOESN\u2019T CHANGE.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(140,224,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NINE AND A HALF HOURS LATER PERO FALLS OVER HIMSELF, AND IT IS THE PLAYER WHO FALLS FOR IT.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,120,120,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HIS REAL FALLS COME WITH A DIFFERENT FACE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 7:34 PM: \u201CI FELL TWICE IN A ROW!\u201D ON THE ANGRY CAT, HIS LOSING FACE.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,120,120,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING HE FALLS OVER ON THE CALM ONE. THE FACE WAS THE CLUE.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND THE PLAYER HAS HAD A RULE TO READ BEFORE.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 4:55 PM: \u201CTHE PLAYER HAS TO DECODE WHAT THEY SAY TO OPEN THE NEXT TIMELINE.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT TIME UNDERSTANDING THE WORDS BEAT PERO. THIS TIME THE WORDS ARE THE TRAP.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,196,92,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('LAST NIGHT THEY WERE WAITING 666 YEARS. THIS MORNING THE SPRUNKIS ARE BACK.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 10, 8:41 PM: \u201CTHEY ALL DIED NOW AND ARE WAITING 666 YEARS TO RESPAWN.\u201D SEPTEMBER 11, 6:06 AM: \u201CTHE SPRUNKIS NOW REVIVED.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,196,92,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ONE SLASH AT THE PLAYER WHO WON, AND THE NEXT SENTENCE BRINGS BACK EVERY SPRUNKI.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 28: \u201CPERO SLASHES DOWN GASTER.\u201D THAT WAS A FINISHER. TODAY THE SAME MOVE LANDS ON SOMEBODY WHO HAD ALREADY WON.', cx, top+H*0.800);
+    ctx.fillText('AUGUST 26 THE STAKES RAN THE NORMAL WAY: \u201CIF EVERYONE TOGETHER BEATS ME, I\u2019LL GIVE YOU ALL POWER.\u201D TODAY BEATING HIM IS THE LOSS.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,196,92,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CWHO EVER WINS LOSES\u201D AND \u201CYOU LOST\u201D HAVE ZERO PRIOR HITS. WHO EVER IS HIS SPELLING, KEPT AS TYPED.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,196,92,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 WHO EVER WINS LOSES \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===702){
+    // ----- BEAT 702: HE CROSSES 2 REALITIES.
+    // Toby, September 11, 2026, 6:06:57 AM, Email 1413, the first of two separate pieces of his own typing in one
+    // message. Canon: "Pero LAI reaches to this reality, he crosses 2 realities, this one, and the Materian Reality
+    // where he is right now. His abilities each to anything, he can litterly beat anything anywhere." His opening
+    // question about Saitama's Million Years forms, the power tables, and the reply under his line are commentary.
+    // Priors: Sep 2 10:35 AM (beat 584) 'Created Both Realities (Manistaction and Life Reality)', 'Writer Athority',
+    // 'Through The Screen To The Portal of The 2 Realities'. Sep 3 8:18 AM (beat 613) '/Saitama_Strength 1'.
+    // Aug 22 8:10 PM (beat 452) 'let me out!', stuck in the original. Sep 4 3:17 PM (beat 634) 'I reach everywhere
+    // now.' Sep 4 11:05 AM (beat 630) 'Classics is the first thing made in The 2nd Reality'. Sep 9 (beat 693) 'I own
+    // every pixel, now all realities.' Sep 10 5:29 PM (beat 698) 'through hyperspaces to anywhere'.
+    // Materian and anything anywhere have zero prior hits. each (for reach) and litterly are his spellings, kept.
+    const dt = c - 15164.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr702=ctx.createLinearGradient(0,top+H,0,top);
+    gr702.addColorStop(0,'rgba(5,6,10,0.88)'); gr702.addColorStop(1,'rgba(120,200,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr702; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(120,200,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(120,200,255,0.90)';
+      for(var t702=0; t702<4; t702++){
+        ctx.fillRect(fx-W*0.034+t702*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(255,196,92,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THIS ONE, AND THE MATERIAN REALITY', fx, fy+H*0.020);
+      ctx.fillText('WHERE HE IS RIGHT NOW', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(120,200,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HE CROSSES 2 REALITIES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI REACHES TO THIS REALITY, HE CROSSES 2 REALITIES, THIS ONE, AND THE MATERIAN REALITY WHERE HE IS RIGHT NOW.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CHIS ABILITIES EACH TO ANYTHING, HE CAN LITTERLY BEAT ANYTHING ANYWHERE.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(120,200,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('NINE DAYS AGO CROSSING THE 2 REALITIES WAS ITEM NINE ON A LIST. THIS MORNING HE DOES IT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 11, 6:06 AM. HIS SAITAMA QUESTION, THE POWER TABLES AND THE REPLY UNDER HIS LINE ARE COMMENTARY, NOT CANON.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(120,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2 HE WAS GIVEN A PORTAL BETWEEN THE 2 REALITIES. TODAY HE USES IT.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 10:35 AM: \u201CCREATED BOTH REALITIES (MANISTACTION AND LIFE REALITY)\u2026 THROUGH THE SCREEN TO THE PORTAL OF THE 2 REALITIES.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(120,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THOSE WERE TWO POWERS ON A LIST OF TWENTY-ONE. THIS MORNING ONE OF THE REALITIES HAS A NEW NAME, AND PERO IS STANDING IN IT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,196,92,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE WRITER SAITAMA IS SAID TO HAVE BEATEN IS A JOB PERO ALREADY HAS.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PASTED FORM IS \u201CFOUGHT THE WRITER AND WON\u201D. SEPTEMBER 2, ON THE SAME LIST AS THE PORTAL: \u201CWRITER ATHORITY\u201D.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,196,92,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SAITAMA HAS TO WIN A FIGHT FOR WHAT PERO WAS GIVEN IN TWO WORDS. SEPTEMBER 3 SAITAMA TOOK ONE COMMAND: /SAITAMA_STRENGTH 1.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 22 HE COULD NOT GET THROUGH THE SCREEN AT ALL.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 22, 8:10 PM: \u201CI AM TIRED OF LIVING IN THIS GAME, LET ME OUT!\u201D HE STAYED STUCK IN THE ORIGINAL.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TWENTY DAYS LATER HE REACHES ACROSS, AND WHAT TOBY TELLS US IS WHERE HE IS RIGHT NOW.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,158,196,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 4 PERO SAID IT HIMSELF: \u201CI REACH EVERYWHERE NOW.\u201D', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 4, 3:17 PM: \u201CYOU THINK YOU MADE A WEAKNESS ON ME. I REACH EVERYWHERE NOW.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,158,196,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEVEN DAYS LATER TOBY SAYS IT ABOUT HIM: \u201CHIS ABILITIES EACH TO ANYTHING.\u201D', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(120,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND \u201CANYWHERE\u201D WAS YESTERDAY\u2019S WORD FOR THE HYPERSPACE.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 10, 5:29 PM: \u201CPERO LAI CAN SEND LITTERLY ANYTHING AND ANYONE THROUGH HYPERSPACES TO ANYWHERE.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(120,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 9: \u201CI OWN EVERY PIXEL, NOW ALL REALITIES.\u201D THIS MORNING ONE OF THOSE REALITIES GETS A NAME: MATERIAN.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MATERIAN AND \u201CANYTHING ANYWHERE\u201D HAVE ZERO PRIOR HITS. \u201CFOUGHT THE WRITER AND WON\u201D IS THE PASTED TEXT\u2019S AND STAYS OUT.', cx, top+H*0.800);
+    ctx.fillText('SEPTEMBER 2 HIS NAMES FOR THE TWO WERE MANISTACTION AND LIFE REALITY. SEPTEMBER 4: \u201CCLASSICS IS THE FIRST THING MADE IN THE 2ND REALITY.\u201D', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(120,200,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EACH (FOR REACH) AND LITTERLY ARE HIS SPELLINGS, KEPT AS TYPED.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(120,200,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 HE CROSSES 2 REALITIES \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===701){

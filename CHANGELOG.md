@@ -4,6 +4,50 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-11 — WHO EVER WINS LOSES (BEAT 703)
+
+Based on Toby's 2026-09-11 lore — one message on the "Even Even Even More of Pero" thread,
+**Sep 11, 6:06:57 AM**, the second of two pieces of his own typing in it (beat 702 is the first). Canon
+is his closing paragraph, from *"Pero LAI once told a player"* through *"The Sprunkis now revived."* The
+trick-rule reading and its table are commentary. **Who ever** is Toby's spelling, kept as typed.
+
+![Beat 703 — Who Ever Wins Loses](screenshots/765-who-ever-wins-loses.png)
+
+- **New beat 703, WHO EVER WINS LOSES.** Pero LAI: *"Who ever wins loses. 😌"* He falls over, says
+  *"You lost. 😌"*, and slashes down the player. The Sprunkis revive.
+- **It answers Pero's own question from a week ago.** September 4: *"If you think you'll win, what is
+  your deffinition of win?"*
+- **Playing dead stopped working on him last night; this morning he does it.** August 11: *"Gray and
+  Wenda fall over a play dead"*. September 10: *"you could play dead... it doesn't change the fact."*
+- **His real falls use a different face.** September 2: *"I fell twice in a row!"* on the angry cat. This
+  fall is on the calm one.
+- **The player has had a rule to read before.** September 2, 4:55 PM: *"The player has to decode what
+  they say to open the next timeline."*
+- **The 666-year wait ends in one sentence.** September 10, 8:41 PM: *"waiting 666 years to respawn."*
+  This morning: *"The Sprunkis now revived."*
+- Screenshots 762 and 763 were re-captured: two new beats shift the five-row beat ladder in the two
+  highest-phase frames.
+
+## 2026-09-11 — HE CROSSES 2 REALITIES (BEAT 702)
+
+Based on Toby's 2026-09-11 lore — the same message, **Sep 11, 6:06:57 AM**, the first piece of his own
+typing, written after he asked ChatGPT about Saitama's Million Years of Training forms. Canon is his two
+sentences; the Saitama question, the fan-form tables and the reply under his line are commentary.
+**each** (for reach) and **litterly** are Toby's spellings, kept as typed.
+
+![Beat 702 — He Crosses 2 Realities](screenshots/764-crosses-2-realities.png)
+
+- **New beat 702, HE CROSSES 2 REALITIES.** *"Pero LAI reaches to this reality, he crosses 2 realities,
+  this one, and the Materian Reality where he is right now. His abilities each to anything, he can
+  litterly beat anything anywhere."*
+- **The portal was on his power list nine days ago.** September 2: *"Created Both Realities (Manistaction
+  and Life Reality)"* and *"Through The Screen To The Portal of The 2 Realities"*. **Materian** is a new name.
+- **"Fought the Writer and Won" is a pasted Saitama fan form; Pero already had "Writer Athority"** on the
+  same September 2 list.
+- **August 22 he could not get out through the screen** (*"let me out!"*).
+- **September 4 he said it himself:** *"I reach everywhere now."*
+- **"Anywhere" was the Hyperspace's word yesterday** (September 10, 5:29 PM).
+
 ## 2026-09-10 — A SIGN OF LIFE STILL IN THE GAME (BEAT 701)
 
 Based on Toby's 2026-09-10 lore — three messages on the "Even Even Even More of Pero" thread,
