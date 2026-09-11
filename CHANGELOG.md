@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-10 — UNKNOWN ENTITY: NO TRESPASSING (BEAT 699)
+
+Based on Toby's 2026-09-10 lore — two messages on the "Even Even Even More of Pero" thread,
+**Sep 10, 8:02:41 PM**, **8:06:17 PM** and **8:15:56 PM**, one scene. Canon is his own lines: Oren.ps coming back to a
+room of fallen characters, Pero LAI defeating him, the holes and eyes in his gloves, the freezing touch,
+the ice blocks and experiments with WD Gaster, every phobia in a tube, the "Unknown Entity" signs, and at
+8:06 *"Unknown Entity is Pero LAI himself"* and *"You! Did you even see the sign? Unknown Entity: No
+Trespassing."* The "failed-state" reading pasted between them is commentary, not canon. **fellen**,
+**varies**, **preforms**, **chaarcter**, **labatory** and **comunicate** are Toby's spellings, kept as typed.
+
+![Beat 699 — Unknown Entity: No Trespassing](screenshots/761-unknown-entity.png)
+
+- **New beat 699, UNKNOWN ENTITY: NO TRESPASSING.** *"Pero LAI puts holes in his gloves and eyes in the
+  holes... he contained every single phobia in a tube."* Pero LAI: *"You! Did you even see the sign? Unknown
+  Entity: No Trespassing. 😌"*
+- **"Unknown Entity" is an old empty slot.** May 6, Email 229, the Creature catalog: *"Creature 091 | The
+  Unknown Entity | (no further details yet)"*. 127 days with a name and nothing else, never Pero.
+- **The signs went up once before, about Simon.** June 18, Email 534, the Containment Facility: *"Don't Look
+  At The Entity"* and *"Don't make noice, no contact with the entity"*. Then the facility posted signs about
+  the one it held; tonight the entity posts them about himself. *Trespass* has zero prior hits.
+- **In July Gaster caged him.** July 29: *"Dr. Gaster put Simon 404 and Pero and Classics into metal cages."*
+  Forty-three days later Pero freezes the cast into ice blocks and *"preforms experiments with WD Gaster"*.
+- **August 19 the most unknown being was Gaster.** *"most unknown being is GAsT3r with only 2 people know it
+  (me and Pero)"*. Tonight Pero is *"even less than WD Gaster"*.
+- **The holes and eyes were Shadow Wenda's plan two days ago.** Sep 5 *"List all Phobias and what they
+  mean"*, Sep 7 *"Eyes appear from the holes"*, Sep 8 *"to spread both holes and eyes everywhere"*. Tonight
+  they are in Pero's gloves.
+- **Oren has met this line-up before.** Sep 7: *"I summoned ToddLLM and EndlessAnimations, you need to beat
+  them first."*
+- **8:15 PM, folded in:** *"666% of the time, you can see Pero LAI jamming kettles into ice blocks."* He sleeps
+  666 years, stays up 666 years, and so on, and the boxes *"would cost $666, and in Classics, he got them all
+  free!"* 666 years, $666 and kettle have zero prior hits. August 17: *"Pero became immortal when Luigi Green
+  payed the cost of the boxes before."* The beat's last footer line now carries it.
+- Screenshots 759 and 760 were re-captured: adding a beat shifts the five-row beat ladder in the two
+  highest-phase frames.
+- Runtime probe: LV_BEATS length 700, 0 holes, 0 lvSeg gaps, every phase drawn with 0 errors (788 draws),
+  boundary 698/699 exact at cyc 15098.0.
+
 ## 2026-09-10 — I KNOW WHO MADE YOU (BEAT 698)
 
 Based on Toby's 2026-09-10 lore — two messages on the "Even Even Even More of Pero" thread,

@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15098.0;
+const LV_CYC = 15120.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12713,6 +12713,8 @@ const LV_BEATS = [
     sub:"YOU DON\u2019T HAVE TO DO THIS, I\u2019LL GIVE MY POWER TO EVERYONE, IF YOU JUST TAKE YOUR TELEKENTICS OUT. \u00B7 THE SWEAT COMES FIRST AND THE BAN COMES AFTER. THAT ORDER IS FIFTY DAYS OLD. \u00B7 HE BROKE HIS OWN EMOJI RULE, AND OREN IS THE ONE WHO ASKED ABOUT IT FIVE DAYS AGO. \u00B7 GRAY ASKS IF PERO EVER ALLOWED XP. THE ARCHIVE SAYS NO. \u00B7 \u201CNOT ME, BUT GOD\u201D IS THE ONE LINE ABOVE HIM, AND HE HAS NEVER SAID IT HIMSELF. \u00B7 AND THE WORD OREN HITS HIM WITH IS GASTER\u2019S MIDDLE NAME, HANDED OUT BY PERO." },
   { key:'I KNOW WHO MADE YOU', col:'#b284ff',
     sub:"I WAS TOLD BY OREN.PS THAT YOU AREN\u2019T OMNIPOTENT, IS THAT RIGHT?\u201D \u2014 SEPHIROTH. \u00B7 HE HAS RUN GOKU VS NARUTO BEFORE, AND ON AUGUST 15 PERO DID NOT FIGHT ANYBODY EITHER. \u00B7 IN THIS ARCHIVE THE OVERWRITE BUTTON WAS PERO\u2019S FIFTY-TWO DAYS BEFORE CHARA EVER HELD IT. \u00B7 HYPERSPACE WAS HIS LARGEST ATTACK ON AUGUST 16. TODAY IT IS HIS MAIN ONE. \u00B7 SEPHIROTH IS NOT THE FIRST OUTSIDER HERE TO BE ASTONISHED AND FALL. \u00B7 AND AN HOUR AFTER OREN SAID IT, TOBY SAYS IT TOO: \u201CHE ISN\u2019T OMNIPOTENT HIMSELF.\u201D" },
+  { key:'UNKNOWN ENTITY: NO TRESPASSING', col:'#8ce0ff',
+    sub:"PERO LAI PUTS HOLES IN HIS GLOVES AND EYES IN THE HOLES\u2026 HE CONTAINED EVERY SINGLE PHOBIA IN A TUBE. \u00B7 \u201CUNKNOWN ENTITY\u201D IS AN OLD SLOT. IT HAS SAT EMPTY SINCE MAY 6. \u00B7 THE SIGNS WENT UP ONCE BEFORE, AND THEY WERE ABOUT SIMON. \u00B7 IN JULY GASTER CAGED HIM. TONIGHT THEY RUN THE LAB TOGETHER. \u00B7 AUGUST 19 THE MOST UNKNOWN BEING WAS GASTER. TONIGHT IT IS PERO. \u00B7 THE HOLES AND EYES WERE SHADOW WENDA\u2019S PLAN TWO DAYS AGO. TONIGHT THEY ARE ON HIS HANDS." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14863,6 +14865,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15098.0 && c < 15120.0) return [699, c-15098.0];  // UNKNOWN ENTITY: NO TRESPASSING
   if(c >= 15076.0 && c < 15098.0) return [698, c-15076.0];  // I KNOW WHO MADE YOU
   if(c >= 15054.0 && c < 15076.0) return [697, c-15054.0];  // EVERYONE NOW KNOWS YOU AREN?T OMNIPOTENT
   if(c >= 15032.0 && c < 15054.0) return [696, c-15032.0];  // NOW IT IS MY TURN
@@ -48119,6 +48122,142 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===699){
+    // ----- BEAT 699: UNKNOWN ENTITY: NO TRESPASSING.
+    // Toby, September 10, 2026, sent 8:02:41 PM (Email 1406) and 8:06:17 PM (Email 1407), one scene. Canon is his own typing:
+    // "Oren.ps comes back to Pero LAI and sees every character fellen in front of him. Pero LAI glitches and ToddLLMs and
+    // EndlessAnimations and the other varies appear" / "Pero LAI defeated the other characters then he defeats Oren.ps, Pero LAI
+    // puts holes in his gloves and eyes in the holes. And if the entity touches you, it has like it's own acid that makes anything
+    // colder and colder until you become an ice block and he preforms experiments with WD Gaster of the block and the other
+    // chaarcter. Also he put hands in large holes, he contained every single phobia in a tube. Pero LAI put up 'Unknown Entity'
+    // signs all around their labatory." / 8:06: "Unknown Entity is Pero LAI himself, even less than WD Gaster from Undertale and
+    // he is only included in lore. Pero LAI is the only being in Classics lore, Classics, and Classics code, he even is the things
+    // themselves, he is one, and he is everything." / "You! Did you even see the sign? Unknown Entity: No Trespassing."
+    // The 'failed-state' reading, the action table and 'I am every version you failed to understand' are pasted commentary.
+    // Priors: May 6 Email 229, Creature 091 'The Unknown Entity | (no further details yet)'. June 18 Email 534, the SCF signs
+    // 'Don't Look At The Entity' about Entity 404-Simon. July 29 3:13 PM, Gaster put Simon 404 and Pero and Classics into metal
+    // cages. Aug 19 1:07 PM, 'most unknown being is GAsT3r'. Sep 5 10:11 AM 'List all Phobias'. Sep 7 7:43 AM 'Eyes appear from
+    // the holes'. Sep 8 5:31 PM, Shadow Wenda's plan 'to spread both holes and eyes everywhere'. Sep 7 9:34 AM, 'I summoned
+    // ToddLLM and EndlessAnimations, you need to beat them first'. Trespass, ice block and 'did you even see' have zero prior hits.
+    // fellen, varies, preforms, chaarcter, labatory and comunicate are his spellings, kept as typed.
+    // Folded in, 8:15:56 PM (Email 1408): "666% of the time, you can see Pero LAI jamming kettles into ice blocks. Pero LAI
+    // sleeps for 666 years and wakes up and stays up for 666 years and he sleeps again for 666 years and so on. And in real
+    // life, all those boxes would cost $666, and in Classics, he got them all free! If you dive even deeper of Pero LAI, the
+    // code is TERRIFYING". 666 years, 666%, $666 and kettle have zero prior hits. Aug 17 5:55 PM: "Pero became immortal
+    // when Luigi Green payed the cost of the boxes before." Sep 1 3:57 PM: "Pero LAI named the entity from Classics Entity
+    // 666 to infinite 6s".
+    const dt = c - 15098.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr699=ctx.createLinearGradient(0,top+H,0,top);
+    gr699.addColorStop(0,'rgba(5,6,10,0.88)'); gr699.addColorStop(1,'rgba(140,224,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr699; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(140,224,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(140,224,255,0.90)';
+      for(var t699=0; t699<4; t699++){
+        ctx.fillRect(fx-W*0.034+t699*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(178,132,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A SIGN THAT READS LIKE A WARNING ABOUT THE LAB,', fx, fy+H*0.020);
+      ctx.fillText('AND IS REALLY THE NAME OF THE ONE STANDING IN IT', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(140,224,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('UNKNOWN ENTITY: NO TRESPASSING', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI PUTS HOLES IN HIS GLOVES AND EYES IN THE HOLES\u2026 HE CONTAINED EVERY SINGLE PHOBIA IN A TUBE.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CYOU! DID YOU EVEN SEE THE SIGN? UNKNOWN ENTITY: NO TRESPASSING. \uD83D\uDE0C\u201D \u2014 PERO LAI', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(140,224,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE SIGN IS NOT A WARNING ABOUT SOMETHING IN THE LAB. IT IS THE NAME OF THE ONE WHO OWNS IT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 10, 8:02 PM AND 8:06 PM, ONE SCENE. THE \u201CFAILED-STATE\u201D READING PASTED BETWEEN HIS LINES IS COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(140,224,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CUNKNOWN ENTITY\u201D IS AN OLD SLOT. IT HAS SAT EMPTY SINCE MAY 6.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MAY 6, EMAIL 229, THE CREATURE CATALOG: \u201CCREATURE 091 \u00B7 THE UNKNOWN ENTITY \u00B7 (NO FURTHER DETAILS YET)\u201D.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(140,224,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOR 127 DAYS THAT LINE HAD A NAME AND NOTHING ELSE, AND IT WAS NEVER PERO. TONIGHT THE DETAILS ARRIVE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(178,132,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE SIGNS WENT UP ONCE BEFORE, AND THEY WERE ABOUT SIMON.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 18, EMAIL 534: \u201CDON\u2019T LOOK AT THE ENTITY\u201D AND \u201CDON\u2019T MAKE NOICE, NO CONTACT WITH THE ENTITY\u201D \u2014 ENTITY 404-SIMON.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(178,132,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IN JUNE THE FACILITY PUT SIGNS UP ABOUT THE ONE IT HELD. TONIGHT THE ENTITY PUTS THEM UP ABOUT HIMSELF.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('IN JULY GASTER CAGED HIM. TONIGHT THEY RUN THE LAB TOGETHER.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 29: \u201CDR. GASTER PUT SIMON 404 AND PERO AND CLASSICS INTO METAL CAGES.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('FORTY-THREE DAYS LATER PERO FREEZES THE CAST INTO ICE BLOCKS AND \u201CPREFORMS EXPERIMENTS WITH WD GASTER\u201D.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,158,196,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 19 THE MOST UNKNOWN BEING WAS GASTER. TONIGHT IT IS PERO.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 19: \u201CTHE SCAREST BEING AND MOST UNKNOWN BEING IS GAST3R WITH ONLY 2 PEOPLE KNOW IT (ME AND PERO).\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,158,196,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TWENTY-TWO DAYS LATER: \u201CEVEN LESS THAN WD GASTER.\u201D ONE OF THE TWO WHO KNEW HAS TAKEN THE TITLE.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(140,224,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE HOLES AND EYES WERE SHADOW WENDA\u2019S PLAN TWO DAYS AGO. TONIGHT THEY ARE ON HIS HANDS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEP 5: \u201CLIST ALL PHOBIAS AND WHAT THEY MEAN.\u201D SEP 7: \u201CEYES APPEAR FROM THE HOLES.\u201D SEP 8: \u201CTO SPREAD BOTH HOLES AND EYES EVERYWHERE.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(140,224,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FIVE DAYS AFTER TOBY LOOKED THE WORDS UP, EVERY SINGLE PHOBIA IS IN A TUBE AND THE HOLES WITH EYES ARE IN PERO\u2019S GLOVES.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('OREN HAS MET THIS LINE-UP BEFORE. SEP 7: \u201CI SUMMONED TODDLLM AND ENDLESSANIMATIONS, YOU NEED TO BEAT THEM FIRST.\u201D', cx, top+H*0.800);
+    ctx.fillText('SEP 2: \u201CI AM ALL THE CLASSICS LORE, SINCE I AM THE ONLY ONE WHO REALLY EXISTS HERE.\u201D TONIGHT: \u201CHE IS ONE, AND HE IS EVERYTHING.\u201D', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(140,224,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('8:15 PM: \u201C666% OF THE TIME, YOU CAN SEE PERO LAI JAMMING KETTLES INTO ICE BLOCKS.\u201D 666 YEARS ASLEEP, 666 AWAKE. $666 BOXES, FREE IN CLASSICS.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(140,224,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 UNKNOWN ENTITY: NO TRESPASSING \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===698){

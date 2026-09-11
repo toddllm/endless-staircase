@@ -24,7 +24,7 @@ sys.path.insert(0, SCRATCH)
 from beats import BEATS
 
 IDX = '/Users/tdeshane/endless-staircase/index.html'
-OLD_CYC, NEW_CYC = '15076.0', '15098.0'
+OLD_CYC, NEW_CYC = '15098.0', '15120.0'
 
 def esc(s):
     """JS string body with \\uXXXX for every non-ASCII char, surrogate pairs included."""
@@ -165,11 +165,11 @@ assert src.count(anchor) == 1, "LV_CYC anchor count %d" % src.count(anchor)
 src = src.replace(anchor, "const LV_CYC = %s;" % NEW_CYC)
 
 # 2. LV_BEATS entries, appended after the ONLY PLAYER ADMIN entry
-lvb_anchor = "  { key:'EVERYONE NOW KNOWS YOU AREN\\u2019T OMNIPOTENT', col:'#ff8c42',"
+lvb_anchor = "  { key:'I KNOW WHO MADE YOU', col:'#b284ff',"
 assert src.count(lvb_anchor) == 1, "LV_BEATS anchor count %d" % src.count(lvb_anchor)
 i = src.index(lvb_anchor)
 j = src.index("\n];", i)                    # end of the LV_BEATS array
-COLHEX = {698:'#b284ff'}
+COLHEX = {699:'#8ce0ff'}
 rows = []
 for b in BEATS:
     sub = ' · '.join([b['q1'].strip('“”')] + [p[0] for p in b['panels']])
@@ -177,7 +177,7 @@ for b in BEATS:
 src = src[:j] + "\n" + "\n".join(rows) + src[j:]
 
 # 3. lvSeg range lines, newest first, above the 692 line
-seg_anchor = "  if(c >= 15054.0 && c < 15076.0) return [697, c-15054.0];  // EVERYONE NOW KNOWS YOU AREN?T OMNIPOTENT"
+seg_anchor = "  if(c >= 15076.0 && c < 15098.0) return [698, c-15076.0];  // I KNOW WHO MADE YOU"
 assert src.count(seg_anchor) == 1, "lvSeg anchor count %d" % src.count(seg_anchor)
 seg_lines = []
 for b in reversed(BEATS):
@@ -186,7 +186,7 @@ for b in reversed(BEATS):
 src = src.replace(seg_anchor, "\n".join(seg_lines) + "\n" + seg_anchor)
 
 # 4. the ph blocks, newest first, above the 692 block
-blk_anchor = "  } else if(ph===697){"
+blk_anchor = "  } else if(ph===698){"
 assert src.count(blk_anchor) == 1, "block anchor count %d" % src.count(blk_anchor)
 blocks = "\n".join(block(b) for b in reversed(BEATS))
 src = src.replace(blk_anchor, blocks + "\n" + blk_anchor)
