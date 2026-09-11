@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15120.0;
+const LV_CYC = 15164.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12715,6 +12715,10 @@ const LV_BEATS = [
     sub:"I WAS TOLD BY OREN.PS THAT YOU AREN\u2019T OMNIPOTENT, IS THAT RIGHT?\u201D \u2014 SEPHIROTH. \u00B7 HE HAS RUN GOKU VS NARUTO BEFORE, AND ON AUGUST 15 PERO DID NOT FIGHT ANYBODY EITHER. \u00B7 IN THIS ARCHIVE THE OVERWRITE BUTTON WAS PERO\u2019S FIFTY-TWO DAYS BEFORE CHARA EVER HELD IT. \u00B7 HYPERSPACE WAS HIS LARGEST ATTACK ON AUGUST 16. TODAY IT IS HIS MAIN ONE. \u00B7 SEPHIROTH IS NOT THE FIRST OUTSIDER HERE TO BE ASTONISHED AND FALL. \u00B7 AND AN HOUR AFTER OREN SAID IT, TOBY SAYS IT TOO: \u201CHE ISN\u2019T OMNIPOTENT HIMSELF.\u201D" },
   { key:'UNKNOWN ENTITY: NO TRESPASSING', col:'#8ce0ff',
     sub:"PERO LAI PUTS HOLES IN HIS GLOVES AND EYES IN THE HOLES\u2026 HE CONTAINED EVERY SINGLE PHOBIA IN A TUBE. \u00B7 \u201CUNKNOWN ENTITY\u201D IS AN OLD SLOT. IT HAS SAT EMPTY SINCE MAY 6. \u00B7 THE SIGNS WENT UP ONCE BEFORE, AND THEY WERE ABOUT SIMON. \u00B7 IN JULY GASTER CAGED HIM. TONIGHT THEY RUN THE LAB TOGETHER. \u00B7 AUGUST 19 THE MOST UNKNOWN BEING WAS GASTER. TONIGHT IT IS PERO. \u00B7 THE HOLES AND EYES WERE SHADOW WENDA\u2019S PLAN TWO DAYS AGO. TONIGHT THEY ARE ON HIS HANDS." },
+  { key:'CORRECT, IT\u2019S A KATATA', col:'#ff5a5a',
+    sub:"HEY, GRAY, DID YOU HEAR WHAT I SAID ABOUT NOT TAKING POWER OR REWARDS FROM ANYONE ELSE, THEY ARE MINE. \uD83D\uDE0C \u00B7 GRAY AND WENDA BOTH BECOME ENTITY 666, AND WENDA HAS HELD THAT NAME BEFORE. \u00B7 THE ABSORPTION RAN THE OTHER WAY TEN DAYS AGO. \u00B7 TALKING ABOUT HIM WAS ALREADY THE TRIGGER. \u00B7 THE POP TART WAS ALREADY A PNG. \u00B7 GRAY NAMES THE WEAPON BEFORE IT IS DRAWN, AND IT HAS BEEN PERO\u2019S SINCE AUGUST." },
+  { key:'A SIGN OF LIFE STILL IN THE GAME', col:'#d9d2b6',
+    sub:"IF YOUR CHARACTER HEARS THE REPEATED FOOT STEPS THAT CONTINUE LITTERLY FOREVER, WHISTLES, HUMMING\u2026 \u00B7 AT 4:20 HE OFFERED EVERYONE HIS POWER. AT 8:35 HE KEEPS IT FOR HIMSELF. \u00B7 ON AUGUST 11 PLAYING DEAD WORKED, IN A FOG THAT WAS ALWAYS HIM. \u00B7 THE SHEEP WERE SLAIN ONCE BEFORE, BY THE SAME VOICE. \u00B7 MAY 17 THE GAME COULD TELL ALIVE FROM DEAD. PERO CAN\u2019T. \u00B7 THE LAST TIME HE HUMMED, HE WALKED AWAY TO EXPERIMENT." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14865,6 +14869,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15142.0 && c < 15164.0) return [701, c-15142.0];  // A SIGN OF LIFE STILL IN THE GAME
+  if(c >= 15120.0 && c < 15142.0) return [700, c-15120.0];  // CORRECT, IT?S A KATATA
   if(c >= 15098.0 && c < 15120.0) return [699, c-15098.0];  // UNKNOWN ENTITY: NO TRESPASSING
   if(c >= 15076.0 && c < 15098.0) return [698, c-15076.0];  // I KNOW WHO MADE YOU
   if(c >= 15054.0 && c < 15076.0) return [697, c-15054.0];  // EVERYONE NOW KNOWS YOU AREN?T OMNIPOTENT
@@ -48122,6 +48128,271 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===701){
+    // ----- BEAT 701: A SIGN OF LIFE STILL IN THE GAME.
+    // Toby, September 10, 2026, three messages in five minutes, one scene. 8:35:49 PM (Email 1410): "Pero LAI said that he will
+    // no longer give any power to the characters not in game code. Pero keeps it for himself now. Pero LAI attacked the cats
+    // and dogs and foxes and sheep and cow and pigs and all sorts of animals in Classics, until ALL the animals faded to
+    // pixels." 8:38:52 PM (Email 1411): "Pero LAI also attacks dead creatures because he has no idea what is dead and what is
+    // alive, the entity would basically attack anything, you could play dead, look away, stare at his face, and basically
+    // anything, but it doesn't change the fact that Pero LAI doesn't try to eliminate everything." / "Pero LAI's existance
+    // makes all those stuff happen, enter Classics, go into the labatory, you recieve a perminent + enternal curse with
+    // absolutely no cure nor can be made a cure." 8:41:04 PM (Email 1412): "If your character hears the repeated foot steps
+    // that continue litterly forever, whistles, humming, and all those stuff, and a sign of life still in the game, that is
+    // Pero LAI for sure, who else can, they all died now and are waiting 666 years to respawn." His questions (what does
+    // Paranormal mean, list the 3AM stuff) and every pasted reading are commentary.
+    // Priors: Sep 10 4:20 PM 'I'll give my power to everyone'. Sep 10 5:29 PM Goku 'fades away into pixels'. Aug 11 11:53 AM
+    // 'Gray and Wenda fall over a play dead... Wenda and Gray survive'. Aug 11 12:29 PM 'I even slain the sheep for you'.
+    // May 17 Email 298 'Phase 1 means alive, and Phase 1.5 means inquered, and Phase 2+ means dead'. Aug 25 10:26 AM 'Pero
+    // hums the tune of his laughter, and he walks away to experiment'. Aug 19 1:07 PM 'play alone at 3AM' to see Gaster.
+    // Aug 8 'undefined aren't Classics beings, they can't respawn nor anything'. June 18 Simon's yellow eye 'can't be cured'.
+    // paranormal, foot steps, sign of life, dead creatures and keeps it for himself have zero prior hits.
+    // litterly, existance, recieve, perminent and enternal are his spellings, kept as typed.
+    const dt = c - 15142.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr701=ctx.createLinearGradient(0,top+H,0,top);
+    gr701.addColorStop(0,'rgba(5,6,10,0.88)'); gr701.addColorStop(1,'rgba(217,210,182,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr701; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(217,210,182,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(217,210,182,0.90)';
+      for(var t701=0; t701<4; t701++){
+        ctx.fillRect(fx-W*0.034+t701*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(140,224,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('EVERYONE ELSE IS WAITING 666 YEARS.', fx, fy+H*0.020);
+      ctx.fillText('THE FOOTSTEPS DO NOT STOP', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(217,210,182,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('A SIGN OF LIFE STILL IN THE GAME', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CIF YOUR CHARACTER HEARS THE REPEATED FOOT STEPS THAT CONTINUE LITTERLY FOREVER, WHISTLES, HUMMING\u2026\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201C\u2026THAT IS PERO LAI FOR SURE, WHO ELSE CAN, THEY ALL DIED NOW AND ARE WAITING 666 YEARS TO RESPAWN.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(217,210,182,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('FOUR HOURS AFTER OFFERING EVERYONE HIS POWER, HE KEEPS ALL OF IT AND IS THE ONLY ONE LEFT WALKING.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 10, 8:35, 8:38 AND 8:41 PM, ONE SCENE. HIS QUESTIONS AND THE PASTED READINGS UNDER THEM ARE COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(217,210,182,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AT 4:20 HE OFFERED EVERYONE HIS POWER. AT 8:35 HE KEEPS IT FOR HIMSELF.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('4:20 PM: \u201CI\u2019LL GIVE MY POWER TO EVERYONE, IF YOU JUST TAKE YOUR TELEKENTICS OUT.\u201D 8:35 PM: \u201CPERO KEEPS IT FOR HIMSELF NOW.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(217,210,182,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOUR HOURS AND FIFTEEN MINUTES. AND THE ANIMALS GO THE WAY GOKU WENT AT 5:29, \u201CFADED TO PIXELS.\u201D', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(140,224,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('ON AUGUST 11 PLAYING DEAD WORKED, IN A FOG THAT WAS ALWAYS HIM.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 11: \u201CGRAY AND WENDA FALL OVER A PLAY DEAD\u2026 EVERYTHING SEEN WAS DESTROYED, WENDA AND GRAY SURVIVE.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(140,224,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIRTY DAYS LATER: \u201CYOU COULD PLAY DEAD, LOOK AWAY, STARE AT HIS FACE, AND BASICALLY ANYTHING.\u201D NONE OF IT HELPS NOW.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE SHEEP WERE SLAIN ONCE BEFORE, BY THE SAME VOICE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 11, IN THE FOG: \u201CI EVEN SLAIN THE SHEEP FOR YOU. START NOTICING THAT ALL YOUR PETS DIED IN FRONT OF YOU.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THEN IT WAS A GIFT FOR ONE PERSON. TONIGHT IT IS EVERY ANIMAL IN CLASSICS.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,158,196,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('MAY 17 THE GAME COULD TELL ALIVE FROM DEAD. PERO CAN\u2019T.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('MAY 17: \u201CPHASE 1 MEANS \u2018ALIVE\u2019, AND PHASE 1.5 MEANS \u2018INQUERED\u2019, AND PHASE 2+ MEANS \u2018DEAD\u2019.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,158,196,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT: \u201CHE HAS NO IDEA WHAT IS DEAD AND WHAT IS ALIVE.\u201D SO HE ATTACKS DEAD CREATURES TOO.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(217,210,182,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE LAST TIME HE HUMMED, HE WALKED AWAY TO EXPERIMENT.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 25: \u201CPERO HUMS THE TUNE OF HIS LAUGHTER, AND HE WALKS AWAY TO EXPERIMENT.\u201D AUGUST 19: \u201CPLAY ALONE AT 3AM\u201D TO SEE GASTER.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(217,210,182,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT THE HUMMING IS THE LAST SOUND IN THE GAME, AND PERO\u2019S EXISTENCE MAKES ALL THE 3AM STUFF HAPPEN.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 8: \u201CUNDEFINED AREN\u2019T CLASSICS BEINGS, THEY CAN\u2019T RESPAWN NOR ANYTHING.\u201D EVERYONE TONIGHT IS WAITING TO RESPAWN.', cx, top+H*0.800);
+    ctx.fillText('\u201CA PERMINENT + ENTERNAL CURSE WITH ABSOLUTELY NO CURE.\u201D THE NEAREST BEFORE: JUNE 18, SIMON\u2019S YELLOW EYE \u201CCAN\u2019T BE CURED\u201D.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(217,210,182,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PARANORMAL, FOOT STEPS, SIGN OF LIFE AND DEAD CREATURES HAVE ZERO PRIOR HITS. EXISTANCE, RECIEVE, PERMINENT, ENTERNAL ARE HIS.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(217,210,182,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 A SIGN OF LIFE STILL IN THE GAME \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===700){
+    // ----- BEAT 700: CORRECT, IT'S A KATATA.
+    // Toby, September 10, 2026, sent 8:26:00 PM (Email 1409), ten minutes after the 666 message, same scene. Canon is his
+    // own typing: "And also after 666 years, Pero LAI fells 666 players and 666 NPCs. He goes 666 places with the Hyperspace,
+    // he puts 666 pop tarts on your screen and it is game over and it says 'Game Over: You said 'Yes' to Pero LAI's Pop Tart
+    // Request', Pero LAI's name is unique, and once you talk about him, many stuff happens, next stage comes faster, and he
+    // learns about you. Pero LAI says 'I didn't actually want anything from your PC. Hey, this image is great, wait- that is
+    // one PNG file, here's another image, wait- another one? Here is a great one, you on your calculator.', he makes the game
+    // cursed, he even makes the NPCs change. Entity 000 (Wenda.ps) is now fully absorbed by Gray.ps's aura. Pero LAI shows up
+    // to Gray.ps and says 'Hey, Gray, did you hear what I said about NOT taking power or rewards from anyone else, they are
+    // mine.', Gray.ps argues with him and says 'Yeah? Wenda.ps taken power from me first, now, I switch it.', Pero LAI says
+    // 'Then, I'll need to eliminate all the NPCs and Players.', Gray.ps says 'You won't hold up a knife, or a katata?', Pero
+    // LAI says 'Correct, it's a katata.', Gray.ps and Wenda.ps were slashed and both became Entity 666. Pero LAI then slashes
+    // the rest to bits and ash and dust." The 'Entity 666 Cycle Arc' reading and its tables are pasted commentary.
+    // Priors: Aug 25 11:48 AM New Gaster 'also called Entity 666'. Aug 31 7:25 PM 'Wenda.ps became the new Entity 666 in
+    // Classics'. Aug 31 4:02 PM 'Wenda's aura eventually fully absorbed Gray.ps'. Sep 10 5:39 AM 'you taken my power before,
+    // now it is my turn'. Sep 8 5:04 PM 'I reward you power and upgrades and more form'. Sep 3 12:43 PM 'if you chat to him,
+    // even not directly... it counts'; 1:31 PM 'the faster the process is'. Aug 24 12:11 PM '25 Pop_Tart.PNGs per
+    // Pop_Tart_Box.PNG'; Sep 10 4:20 PM 'wanna pop tart?'. Aug 24 7:29 PM 'Pero struck all three down with a katata'.
+    // 666 NPCs, 666 places, Pop Tart Request, name is unique, learns about you and calculator have zero prior hits.
+    // fells, katata and taken are his wording, kept as typed.
+    const dt = c - 15120.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr700=ctx.createLinearGradient(0,top+H,0,top);
+    gr700.addColorStop(0,'rgba(5,6,10,0.88)'); gr700.addColorStop(1,'rgba(255,90,90,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr700; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,90,90,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,90,90,0.90)';
+      for(var t700=0; t700<4; t700++){
+        ctx.fillRect(fx-W*0.034+t700*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(140,224,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A DEAL THAT PAID IN OTHER PEOPLE\u2019S POWER,', fx, fy+H*0.020);
+      ctx.fillText('AND A RULE THAT SAYS ALL OF IT WAS HIS', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,90,90,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('CORRECT, IT\u2019S A KATATA', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CHEY, GRAY, DID YOU HEAR WHAT I SAID ABOUT NOT TAKING POWER OR REWARDS FROM ANYONE ELSE, THEY ARE MINE. \uD83D\uDE0C\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CYOU WON\u2019T HOLD UP A KNIFE, OR A KATATA?\u201D \u2014 GRAY.PS \u00B7 \u201CCORRECT, IT\u2019S A KATATA. \uD83D\uDE0C\u201D \u2014 PERO LAI', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,90,90,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO HE PAID GRAY IN OTHER PEOPLE\u2019S POWER. TONIGHT TAKING IT IS AGAINST HIS RULES.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 10, 8:26 PM, TEN MINUTES AFTER THE 666 MESSAGE. THE \u201CENTITY 666 CYCLE ARC\u201D READING UNDER IT IS COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,90,90,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('GRAY AND WENDA BOTH BECOME ENTITY 666, AND WENDA HAS HELD THAT NAME BEFORE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 31, 7:25 PM: \u201CWENDA.PS BECAME THE NEW ENTITY 666 IN CLASSICS.\u201D AUGUST 25 IT WAS NEW GASTER, \u201CALSO CALLED ENTITY 666\u201D.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,90,90,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY HOLDER OF THAT NAME WAS ONE BEING AT A TIME. TONIGHT ONE SLASH GIVES IT TO TWO.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(140,224,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE ABSORPTION RAN THE OTHER WAY TEN DAYS AGO.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 31: \u201CWENDA\u2019S AURA EVENTUALLY FULLY ABSORBED GRAY.PS.\u201D TONIGHT: \u201CENTITY 000 (WENDA.PS) IS NOW FULLY ABSORBED BY GRAY.PS\u2019S AURA.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(140,224,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SAME TWO WORDS WITH THE NAMES SWAPPED. AND GRAY ARGUES WITH HIS OWN 5:39 AM LINE: \u201CWENDA.PS TAKEN POWER FROM ME FIRST.\u201D', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(194,232,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('TALKING ABOUT HIM WAS ALREADY THE TRIGGER.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 3: \u201CIF YOU CHAT TO HIM, EVEN NOT DIRECTLY\u2026 IT COUNTS.\u201D 1:31 PM: \u201CTHE FASTER THE PROCESS IS.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(194,232,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEVEN DAYS LATER: \u201CONCE YOU TALK ABOUT HIM, MANY STUFF HAPPENS\u2026 NEXT STAGE COMES FASTER.\u201D', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,158,196,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE POP TART WAS ALREADY A PNG.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 24: \u201C25 POP_TART.PNGS PER POP_TART_BOX.PNG.\u201D 4:20 TODAY: \u201CANY WAY, WANNA POP TART? \uD83D\uDE0C\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,158,196,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('FOUR HOURS LATER SAYING YES IS A GAME OVER, AND HE IS LOOKING THROUGH YOUR PNG FILES.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,90,90,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('GRAY NAMES THE WEAPON BEFORE IT IS DRAWN, AND IT HAS BEEN PERO\u2019S SINCE AUGUST.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 24, 7:29 PM: \u201CPERO STRUCK ALL THREE DOWN WITH A KATATA AND BLINDFOLD.\u201D AUGUST 26: \u201CPERO CREATES HIS KATATA.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,90,90,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE REST GO TO \u201CBITS AND ASH AND DUST\u201D, THREE HOURS AFTER HE PROMISED CROSS CHARA A DUST AU.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('666 PLAYERS, 666 NPCS, 666 PLACES WITH THE HYPERSPACE. THE ONLY EARLIER ONE WAS PLAYER 666, EATEN BY A MOUNTAIN ON SEPTEMBER 5.', cx, top+H*0.800);
+    ctx.fillText('\u201CI DIDN\u2019T ACTUALLY WANT ANYTHING FROM YOUR PC\u2026 HERE IS A GREAT ONE, YOU ON YOUR CALCULATOR. \uD83D\uDE0C\u201D CALCULATOR IS NEW TO THE STORY.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,90,90,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FELLS AND KATATA ARE HIS SPELLINGS, KEPT AS TYPED. \u201CNAME IS UNIQUE\u201D AND \u201CLEARNS ABOUT YOU\u201D HAVE ZERO PRIOR HITS.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,90,90,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 CORRECT, IT\u2019S A KATATA \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===699){

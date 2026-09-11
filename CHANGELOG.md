@@ -4,6 +4,64 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-10 — A SIGN OF LIFE STILL IN THE GAME (BEAT 701)
+
+Based on Toby's 2026-09-10 lore — three messages on the "Even Even Even More of Pero" thread,
+**Sep 10, 8:35:49 PM**, **8:38:52 PM** and **8:41:04 PM**, the same scene as beats 699 and 700. Canon is
+his own lines: Pero keeping all power for himself, every animal fading to pixels, attacking the dead
+because he cannot tell dead from alive, the incurable curse in the labatory, and the endless footsteps,
+whistles and humming while everyone else waits 666 years to respawn. His questions (Paranormal, the 3AM
+list) and the pasted readings are commentary. **litterly**, **existance**, **recieve**, **perminent** and
+**enternal** are Toby's spellings, kept as typed.
+
+![Beat 701 — A Sign Of Life Still In The Game](screenshots/763-a-sign-of-life.png)
+
+- **New beat 701, A SIGN OF LIFE STILL IN THE GAME.** *"If your character hears the repeated foot steps that
+  continue litterly forever, whistles, humming... that is Pero LAI for sure, who else can, they all died now
+  and are waiting 666 years to respawn."*
+- **At 4:20 he offered everyone his power.** *"I'll give my power to everyone."* Four hours and fifteen
+  minutes later: *"Pero keeps it for himself now."* The animals *"faded to pixels"*, the way Goku did at 5:29.
+- **Playing dead worked on August 11.** *"Gray and Wenda fall over a play dead... Wenda and Gray survive."*
+  Thirty days later it doesn't. The same day in the fog: *"I even slain the sheep for you."*
+- **The game could tell alive from dead.** May 17: *"Phase 1 means 'alive', and Phase 1.5 means 'inquered',
+  and Phase 2+ means 'dead'."* Tonight Pero *"has no idea what is dead and what is alive."*
+- **The first curse with no cure.** The nearest before was June 18, Simon's yellow eye that *"can't be
+  cured"*.
+- **3AM was how you found Gaster.** August 19: *"play alone at 3AM"*. Tonight Pero's existence causes all
+  the 3AM stuff.
+- **Respawning means they are still Classics beings.** August 8: *"undefined aren't Classics beings, they
+  can't respawn nor anything."*
+- Screenshots 761 and 762 were re-captured: adding a beat shifts the five-row beat ladder in the two
+  highest-phase frames.
+
+## 2026-09-10 — CORRECT, IT'S A KATATA (BEAT 700)
+
+Based on Toby's 2026-09-10 lore — one message on the "Even Even Even More of Pero" thread,
+**Sep 10, 8:26:00 PM**, ten minutes after the 666 message and the same scene as beat 699. Canon is his
+opening paragraph, from *"And also after 666 years"* through *"slashes the rest to bits and ash and dust."*
+The "Entity 666 Cycle Arc" reading and its tables are commentary, not canon. **fells** and **katata** are
+Toby's spellings, kept as typed.
+
+![Beat 700 — Correct, It's A Katata](screenshots/762-its-a-katata.png)
+
+- **New beat 700, CORRECT, IT'S A KATATA.** Pero LAI: *"Hey, Gray, did you hear what I said about NOT
+  taking power or rewards from anyone else, they are mine. 😌"* Gray.ps: *"You won't hold up a knife, or a
+  katata?"* Pero LAI: *"Correct, it's a katata. 😌"* Gray.ps and Wenda.ps both become Entity 666.
+- **Wenda has held Entity 666 before.** August 31, 7:25 PM: *"Wenda.ps became the new Entity 666 in
+  Classics."* August 25 it was New Gaster, *"also called Entity 666"*. Tonight one slash gives it to two.
+- **The absorption ran the other way ten days ago.** August 31: *"Wenda's aura eventually fully absorbed
+  Gray.ps."* Tonight: *"Entity 000 (Wenda.ps) is now fully absorbed by Gray.ps's aura."*
+- **Two days ago the rewards were his to give.** September 8: *"Just defeat all the other characters and I
+  reward you power and upgrades and more form."*
+- **Talking about him was already the trigger.** September 3: *"if you chat to him, even not directly... it
+  counts"* and *"the faster the process is"*. Tonight: *"next stage comes faster, and he learns about you."*
+- **The pop tart was already a PNG.** August 24: *"25 Pop_Tart.PNGs per Pop_Tart_Box.PNG."* 4:20 today:
+  *"wanna pop tart?"* Now saying yes is a Game Over.
+- **The katata has been Pero's since August.** August 24: *"Pero struck all three down with a katata and
+  blindfold."*
+- Screenshots 760 and 761 were re-captured: adding a beat shifts the five-row beat ladder in the two
+  highest-phase frames.
+
 ## 2026-09-10 — UNKNOWN ENTITY: NO TRESPASSING (BEAT 699)
 
 Based on Toby's 2026-09-10 lore — two messages on the "Even Even Even More of Pero" thread,
