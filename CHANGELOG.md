@@ -4,6 +4,34 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-14 — NOW I AM IMPOSSIBLE TO KILL NOW (BEAT 716)
+
+Based on Toby's 2026-09-14 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 14, 4:47:09 PM**,
+thirty-one minutes after the previous message. The pasted dictionary definition of *sentinel* at the top of the
+email is commentary; his own typing starts at *"In Classics, the sentiels would be anything else other than Pero
+LAI."* **Sentiels** is his spelling, kept as typed.
+
+![Beat 716 — Now I Am Impossible To Kill Now](screenshots/778-now-i-am-impossible-to-kill-now.png)
+
+- **New beat 716, NOW I AM IMPOSSIBLE TO KILL NOW.** *"Pero LAI is basically losing to everyone else combined
+  now. Pero LAI becomes **Phase 5**, a godly body flows through him, everyone is astonished… he didn't make
+  anyone, but Newtale itself. **The 3 evil black souls merge into 1 black soul called The Soul of Pero Neka
+  Omazen.** Pero LAI had **0 HP**, now he stays dead, Pero LAI says '**Now I am impossible to kill now. :)**'"*
+- **Sentiel was his own title, and he has just handed it to everybody else.** August 24, 7:54 PM: *Sentiel Pero*
+  is the one still standing after Omnicide, rebuilding the room. Tonight the sentiels are *"anything else other
+  than Pero LAI"* — same spelling, opposite side of it.
+- **Phase 5 is Dead 001, written down June 26.** Dead 001 is dead and still fighting: physical and spiritual form,
+  the scythe, taking the bodies of others, a swarm of skeletons. *"Pero LAI had 0 HP, now he stays dead."*
+- **The rule for reaching Phase 5 is "Just take Simon out."** June 27, Email 587: Phase 4 runs on Simon sealed in
+  the chamber; Phase 5 moves him outside it. Thirty-one minutes earlier Pero was *"controlled by everyone
+  including **Simon.ps**."*
+- **"Impossible to kill" is Phase 4's property, and he is on Phase 5.** June 26: Phase 4 is the glitch engine,
+  *"immortal and impossible to kill."* He leaves the immortal phase, dies into the next one, and says the line
+  anyway.
+- **The third soul from Sunday finally gets a name.** September 13 delivered three souls in five and a half hours
+  and only two of them were ever named. All three merge, and the result is named after him.
+- Re-captured screenshots 776 and 777 for the beat-ladder window shift.
+
 ## 2026-09-14 — THE FIRST RESET (BEAT 715)
 
 Based on Toby's 2026-09-14 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 14, 4:16:24 PM**, and
