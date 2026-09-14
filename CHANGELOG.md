@@ -4,6 +4,124 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-13 — PHASE 4+, NEARLY DEAD (BEAT 714)
+
+Based on Toby's 2026-09-13 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 13, 6:16:26 PM**, the
+last message of the weekend and all of it his own typing. The infinity of zeros is typed out in full in the message.
+**spreaded** is his spelling, kept as typed.
+
+![Beat 714 — Phase 4+, Nearly Dead](screenshots/776-phase-4-plus-nearly-dead.png)
+
+- **New beat 714, PHASE 4+, NEARLY DEAD.** *"After the 666th run, Pero LAI dies. He summoned the ToddLLM 001 and
+  002."* They take over every timeline; Pero gets back up on `0.000…(infinity 0s) 1` HP, wears the Simon.ps costume
+  to beat Oren.ps, then leaves every costume in the room. *"He was his new Phase 4+; yeah he is nearly dead."*
+- **ToddLLM 001 is the name Pero had before he was Pero.** June: *"ToddLLM 001 is creator of the game. ToddLLM 002
+  is 001's father and appears only if 001 is corrupted."* He summons both, which by the archive's own rule is an
+  admission that 001 is already corrupted.
+- **001 already has five phases, written down June 26.** Phase 4 is the glitch engine, *"immortal and impossible to
+  kill"*; Phase 5 is **Dead 001**, dead and still swinging the scythe. The new Phase 4+ sits exactly between them.
+- **August 3 says what the number means:** *"Pero LAI dies at 28… Phase 3 is near his death, Phase 4 is the death."*
+  He lands on 4 and calls it *nearly* dead, which is the old definition of 3.
+- **Infinite zeros and then a one has a prior.** Prototype 404 runs on 1 HP, dies on every hit and resets to 1.
+- **His only other death in four months was of natural causes**, filed as the one ordinary death in the whole run.
+  **ToddLLM 001's Ascension, back in June, happened where the Endless Staircase used to be.**
+
+## 2026-09-13 — THE MOST POWERFUL ASSASSIN EVER (BEAT 713)
+
+Based on Toby's 2026-09-13 lore — **Sep 13, 4:54:05 PM**, thirty-one words, the shortest message of the day. The
+before/now table and the "Soul of Darkness" name pasted under it are commentary, not canon.
+
+![Beat 713 — The Most Powerful Assassin Ever](screenshots/775-most-powerful-assassin-ever.png)
+
+- **New beat 713, THE MOST POWERFUL ASSASSIN EVER.** *"Pero LAI gets the 3rd soul, and he became the most powerful
+  assassin ever. The game was then cut, Newtale was repaired by him. The characters now are under him again."*
+- **"Assassin" returns four hits across 459 files and every one is Gray**, July 14: a *"cyber ancient lord /
+  shadow-assassin god"* with a scythe, katanas and ninja stars. Two hours earlier Pero picked up a sythe.
+- **The repair is step three of a plan he wrote four days ago.** September 9: *"The third phase is where they fix
+  the game from the chaos Oren.ps made."* The one step that plan left to somebody else was the fixing.
+- **The cut is Gaster's, from the previous morning** — September 12, 7:38 AM, *"sliced the game in half."* Gaster
+  left it cut; Pero puts it back together.
+- **Three souls in five and a half hours** (Black Soul 1:19, Soul of Fear 2:37, the third 4:54) and only the first
+  two get names. **"Under him *again*"** is September 11's ending with the happy part taken out.
+
+## 2026-09-13 — DOUBLE NEGITIVE EQUALS THE POSITIVE (BEAT 712)
+
+Based on Toby's 2026-09-13 lore — **Sep 13, 2:37:13 PM**. Canon is the whole first half of the message; the "Phase
+3 setup" reading at the end is commentary. **invisable**, **tragity**, **sythe**, **potientically**, **ingrediant**
+and **negitive** are his spellings, kept as typed.
+
+![Beat 712 — Double Negitive Equals The Positive](screenshots/774-double-negitive-equals-the-positive.png)
+
+- **New beat 712, DOUBLE NEGITIVE EQUALS THE POSITIVE.** Cursed by every character, no body left after the 666th
+  cross — just cloth, a black tragity mask and a teal face. *"Are you invisable or don't have a body?"* — *"I am
+  not invisable. Double Negitive equals the Positive."*
+- **The archive already has floating clothes with nobody in them, and he is dead.** June 18: **The Invisable Man**,
+  *"a floating shirt and pants and hat"*, contained in the SCF and burned by Simon. Pero takes that shape and
+  refuses the name in the same breath.
+- **The mask has exactly one prior in 459 files:** Prototype 404, *"face like a cartoon ghost + tragity/comedy
+  mask"* — the 1 HP entity that dies on every hit and gets back up.
+- **Betty: *"I am the only character ment to have a sythe."* She is wrong by twenty-six days.** August 18, 12:56 PM:
+  *"Pero now holds a black sythe."* Gray has carried one since July, Entity 000 since August. Hers is the one that breaks.
+- **"This could be potientically Phase 3 of my plan."** He deleted Phase 3 eleven days ago; August 3 says why.
+- **Chara argues punctuation, not the forty thousand lions**, and he answers in kind.
+
+## 2026-09-13 — INSTEAD OF YELLOW, BLACK (BEAT 711)
+
+Based on Toby's 2026-09-13 lore — **Sep 13, 2:08:38 PM**, the opening message of a brand new top-level thread,
+"Even (5x) more of Pero Neka/LAI Omazen", and all of it his own typing with no pasted reply at all. **acessories**,
+**ment** and **appearence** are his spellings, kept as typed.
+
+![Beat 711 — Instead Of Yellow, Black](screenshots/773-instead-of-yellow-black.png)
+
+- **New beat 711, INSTEAD OF YELLOW, BLACK.** *"Pero LAI dresses himself like Simon.ps, the exact image but with the
+  Simon.ps acessories, and guess what instead of yellow, Pero LAI's is black."* Full neon teal eyes, tilted
+  semi-circles, *"to make it like Phase 2."*
+- **The yellow Sprunki is the archive's first disguise and it is Simon's.** His identity chain starts at *"Normal
+  Non-Mod Phase 1 Yellow Sprunki — the starting disguise"*, filed as the most harmless-looking character in the game.
+- **Eleven days ago he sang that his costume was not a costume:** September 2, *"that costume is really me."* This
+  afternoon he wears somebody else's, and the somebody is the one the game calls the hero.
+- **Tilted semi-circle eyes are how he labels the phase he put on at 1:19 PM** — a shape rather than a sentence.
+- **Same message clears the board:** he has the Black Soul, the Classics characters and the Sprunkis are gone, only
+  Newtale is left. It is the first time he has dressed as a *named character* instead of a form of his own.
+
+## 2026-09-13 — YOU JUST MADE ME MY SECOND PHASE (BEAT 710)
+
+Based on Toby's 2026-09-13 lore — **Sep 13, 1:19:24 PM**, nine seconds after the Black Soul message. Everything from
+"Yeah, that is a major escalation point" onward is a pasted reading and is commentary, not canon. **significatly**
+is his spelling, kept as typed.
+
+![Beat 710 — You Just Made Me My Second Phase](screenshots/772-you-just-made-me-my-second-phase.png)
+
+- **New beat 710, YOU JUST MADE ME MY SECOND PHASE.** *"Now, everyone knows what happened! Actually, who cares
+  now."* He becomes a human-shaped shadow: *"Well, you just made me my second phase now, it won't be easy. :)"*
+- **Phase 2 is the only phase he kept when he deleted the rest.** September 2, 7:58 AM: *"he doesn't have a Phase 1,
+  nor Phase 3+, he only has Phase 2… he is immortal."* The phases he deleted are the ones his death is filed under.
+- **So the threat is smaller than it sounds, and that is what makes it new.** What changed is *who switched it on*.
+  For four months he announced his own forms; this one he blames on them.
+- **He changes his smile, and that is a two-character tell.** A census of `:)` across all 459 files returns four
+  lines, and the only one a character speaks is Platus's own **P2** line.
+- **The cost of finding him out is that the fight gets harder:** *"the battle was significatly tougher."*
+
+## 2026-09-13 — ALL THE STRENGTHS TOGETHER (BEAT 709)
+
+Based on Toby's 2026-09-13 lore — the "Even Even Even Even more of Pero LAI Omazen" thread, **Sep 13, 8:23:10 AM**.
+The reading pasted between his two blocks of typing is commentary, not canon. **effect** and **anomally** are his
+spellings, kept as typed.
+
+![Beat 709 — All The Strengths Together](screenshots/771-all-the-strengths-together.png)
+
+- **New beat 709, ALL THE STRENGTHS TOGETHER.** Pero Neka takes the form of a normal man in black 1976 clothes,
+  says *"I was forgotten, but I never forgot any of you,"* and invents a weakness rule: *"whatever is 2 or more
+  strengths are, ALL of the strengths together is the weakness."*
+- **The body he puts on is the one stat this archive ever wrote down against him.** August 17, 5:55 PM: *"Pero has
+  the physical strength of a normal man, and he is a normal man that came from a box."*
+- **"I am not omnipotent, you all are."** Oren said the first half to his face three days earlier (September 10,
+  4:20 PM); he answered *that* by threatening the game. Today he agrees, then hands the word to everybody else.
+- **The forgotten one in this archive is Gaster** — *"Dr. Gaster 404, the Forgotten Creator"*, July 29 — and he says
+  the line while stepping toward Gaster.
+- **1976 has zero hits in 459 files, and so does the rule.** The weakness is not a thing that beats him; it is an
+  instruction for building one out of his own list. He publishes it himself and calls it *"extremely hilarious."*
+
 ## 2026-09-11 — MOST FUN BATTLE EVER (BEAT 708)
 
 Based on Toby's 2026-09-11 lore — the "Even Even Even More of Pero" thread, **Sep 11, 4:36:38 PM**, three minutes
