@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15494.0;
+const LV_CYC = 15516.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12749,6 +12749,8 @@ const LV_BEATS = [
     sub:"I DID MY FIRST RESET! YOU SHOULD FORGET EVERYTHING! I AM NEARLY TO ENTIRELY DEAD. \u00B7 \u201CRESETS ARE NOT FROM CLASSICS NOR NEWTALE\u201D \u2014 EXCEPT THE RESET BUTTON HAS BEEN HERE SINCE APRIL. \u00B7 KR WAS WRITTEN INTO THIS GAME AS A HEALING STAT. TONIGHT IT IS THE THING THAT KILLS HIM. \u00B7 HE DID EVERY OMNICIDE AND EVERY CHARACTER IS STILL STANDING THERE. \u00B7 THE TWO FORMS HE IS HOLDING OVER GASTER ARE THE TWO GASTER SAYS HE DELETED. \u00B7 AND THEN EVERY CHARACTER IN THE GAME MAKES HIM PROVE HE IS NOT A ROBOT." },
   { key:'NOW I AM IMPOSSIBLE TO KILL NOW', col:'#c9a7ff',
     sub:"IN CLASSICS, THE SENTIELS WOULD BE ANYTHING ELSE OTHER THAN PERO LAI. \u00B7 SENTIEL WAS HIS OWN TITLE. HE HAS JUST HANDED IT TO EVERYBODY ELSE. \u00B7 PHASE 5 IS DEAD 001, AND THIS ARCHIVE WROTE IT DOWN ON JUNE 26. \u00B7 THE RULE FOR REACHING PHASE 5 IS \u201CJUST TAKE SIMON OUT.\u201D \u00B7 IMPOSSIBLE TO KILL IS PHASE 4\u2019S PROPERTY. HE IS ON PHASE 5. \u00B7 AND THE THIRD SOUL FROM SUNDAY FINALLY GETS A NAME." },
+  { key:'CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM', col:'#b9793f',
+    sub:"PERO LAI MADE THE CHOCOLATE KARMA. HE TAKES THE SUGAR OUT AND THEN HE RECOVERS, IT DOESN\u2019T GIVE HIM MORE HP THOUGH. \u00B7 SUGAR IS WHAT PHASE 4 RAN ON, AND TAKING IT OUT IS HOW YOU LEAVE PHASE 4. \u00B7 KARMA WAS A HEALING STAT HERE, IT TURNED ON HIM AT 4:16, AND BY 6:46 HE HAD BUILT ONE THAT WORKS. \u00B7 \u201CHE FIXED EACH SHOT, BUT HIS HP DIDN\u2019T CHANGE\u201D \u2014 JUNE 18, ABOUT SIMON. \u00B7 CHOCOLATE AND APPLES ARE WINTER CLASSIC SIMON\u2019S STABILIZERS, AND HE RANKED BOTH TONIGHT. \u00B7 A CHOCOLATE CROSS ALREADY BELONGS TO THE ONE CHARACTER WRITTEN DOWN AS PHASE 5\u2019S ENEMY. \u00B7 HE ASKED FOR CHOCOLATE CHAKRA AND BUILT A CHOCOLATE KARMA INSTEAD." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14899,6 +14901,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15494.0 && c < 15516.0) return [717, c-15494.0];  // CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM
   if(c >= 15472.0 && c < 15494.0) return [716, c-15472.0];  // NOW I AM IMPOSSIBLE TO KILL NOW
   if(c >= 15450.0 && c < 15472.0) return [715, c-15450.0];  // THE FIRST RESET
   if(c >= 15428.0 && c < 15450.0) return [714, c-15428.0];  // PHASE 4+, NEARLY DEAD
@@ -48173,6 +48176,139 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===717){
+    // ----- BEAT 717: CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM.
+    // Toby, September 14, 2026, 6:46:28 PM, Email 1446, one hour and fifty-nine minutes after Email 1445.
+    // The message opens with his own questions about sugar in apples, dark chocolate and milk chocolate,
+    // then what counts as truly 0 sugar, then "What is Chakra?" and "Is it possible to make Chocolate
+    // Chakra?" The replies to those questions are pasted commentary and are not canon. His own lore lines
+    // are: "Pero LAI made the Chocolate Karma. Pero LAI takes the sugar out and then he recovers, it
+    // doesn't give him more HP though. All the 5 Phases started to merge, and it became Phase 5 Ultimate
+    // Form." The long analysis under that line is also pasted commentary.
+    // PRIORS: Jun 26/27, Emails 585-587, the Five Phases of ToddLLM 001 - Phase 4 runs on Simon sealed in
+    // the chamber, "the one who makes everything constantly, even the sugars", and the way out of Phase 4
+    // is "Just take Simon out"; put Simon in the wrong place and the sugars scatter instead of healing.
+    // Jul 21, Toby's own definition, "Kr (Karma. It can heal the victum)". Today 4:16 PM, Email 1444,
+    // "I used KR, my HP went even LOWER". Jun 18, Email 538, the golden rules: Simon's HP is "like the
+    // smallest number which is right before 0" and "He fixed each shot, but his HP didn't change", in the
+    // same passage where Simon "thinks all brown things are chocolate". Winter Classic Simon holds apples
+    // and chocolate as stabilizers, and when they melt the phases spike. Jun 26, Email 590, Storyshifted
+    // Clara's "cross is made of chocolate", and Email 586 the same morning makes her the enemy of Phase 5
+    // Dead 001. Surgar and repunsent are his spellings; the beat keeps his wording, not his typos.
+    const dt = c - 15494.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(10,7,6,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr717=ctx.createLinearGradient(0,top+H,0,top);
+    gr717.addColorStop(0,'rgba(6,5,4,0.88)'); gr717.addColorStop(1,'rgba(185,121,63,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr717; ctx.fillRect(0,top,W,H);
+
+    // the five phases folding into one - five bars that slide together as the beat runs, right half only
+    if(f4A>0.01){
+      const mx = cx + W*0.150, my = top+H*0.556, mrg = Math.max(0,Math.min(1,(dt-12.2)/3.4));
+      ctx.globalAlpha=g*f4A*0.30; ctx.fillStyle='rgba(185,121,63,0.92)';
+      for(var q717=0;q717<5;q717++){
+        const home = -W*0.040 + q717*W*0.020;
+        ctx.fillRect(mx + home*(1-mrg) - W*0.0060, my-H*0.0180, W*0.0120, H*0.0160);
+      }
+      ctx.globalAlpha=g*f4A*0.26; ctx.strokeStyle='rgba(232,217,192,0.80)'; ctx.lineWidth=0.5;
+      ctx.strokeRect(mx-W*0.046, my-H*0.0230, W*0.092, H*0.0250);
+    }
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,238,232,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('SUGAR: OUT. RECOVERED: YES.', fx, fy+H*0.020);
+      ctx.fillText('HP: UNCHANGED. PHASES: 1+2+3+4+5.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(185,121,63,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI MADE THE CHOCOLATE KARMA. PERO LAI TAKES THE SUGAR OUT AND THEN HE RECOVERS,', cx, top+H*0.122);
+    ctx.fillText('IT DOESN’T GIVE HIM MORE HP THOUGH. ALL THE 5 PHASES STARTED TO MERGE.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(232,217,192,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE REPAIRED THE HALF OF KARMA THAT HEALS AND LEFT THE HP EXACTLY WHERE IT WAS.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 14, 2026, 6:46 PM. THE CHAKRA AND SUGAR ANSWERS AROUND IT ARE PASTED COMMENTARY, NOT CANON.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(185,121,63,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SUGAR IS WHAT PHASE 4 RAN ON, AND TAKING IT OUT IS HOW YOU LEAVE PHASE 4.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 27: SIMON IS SEALED IN THE CHAMBER AS “THE ONE WHO MAKES EVERYTHING CONSTANTLY, EVEN THE SUGARS.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(232,217,192,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PUT HIM IN THE WRONG PLACE AND THE SUGARS SCATTER INSTEAD OF HEALING. THE FUEL AND THE EXIT ARE ONE THING.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(242,193,78,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AT 4:16 KARMA TOOK HIS HP AWAY. BY 6:46 HE HAD BUILT ONE THAT GIVES SOMETHING BACK.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 21, HIS OWN PARENTHESIS: “KR (KARMA. IT CAN HEAL THE VICTUM).” IT HEALS IN THIS GAME.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(242,193,78,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWO HOURS AGO: “I USED KR, MY HP WENT EVEN LOWER.” TONIGHT HE MAKES HIS OWN AND IT RECOVERS HIM.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(124,232,180,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“HE FIXED EACH SHOT, BUT HIS HP DIDN’T CHANGE.”', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JUNE 18, THE GOLDEN RULES, ABOUT SIMON, WITH HP “RIGHT BEFORE 0.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(124,232,180,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('EIGHTY-EIGHT DAYS LATER THE SAME RULE IS HANDED TO PERO IN ALMOST THE SAME WORDS.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('CHOCOLATE AND APPLES ARE ALREADY STABILIZERS HERE.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('WINTER CLASSIC SIMON HOLDS BOTH TO STAY IN ONE PHASE. WHEN THEY MELT, THE PHASES SPIKE.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT’S FIRST QUESTION RANKS APPLE, DARK AND MILK. THEN FIVE PHASES MERGE ON CHOCOLATE.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(185,121,63,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE FIVE PHASES WERE BUILT AS A LADDER. TONIGHT THEY STOP BEING ONE.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 26 WROTE THEM TO BE CLIMBED: BEAT PHASE 5 AND PHASE 1 STEPS OUT AND CONGRATULATES YOU.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(232,217,192,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MERGED, THERE IS NO PHASE 1 LEFT UNDERNEATH TO REVEAL. THE PRIZE FOR WINNING IS INSIDE HIM NOW.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('A CHOCOLATE CROSS ALREADY EXISTS IN THIS GAME, AND IT BELONGS TO PHASE 5’S WRITTEN-DOWN ENEMY.', cx, top+H*0.800);
+    ctx.fillText('JUNE 26, THE SAME MORNING AS THE PHASES: STORYSHIFTED CLARA, MASTER OF GENOCIDE, CROSS MADE OF CHOCOLATE.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(185,121,63,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ASKED WHETHER CHOCOLATE CHAKRA WAS POSSIBLE, THEN TYPED KARMA, WHICH IS A STAT THIS GAME ALREADY HAD.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(185,121,63,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===716){

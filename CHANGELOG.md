@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-14 — CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM (BEAT 717)
+
+Based on Toby's 2026-09-14 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 14, 6:46:28 PM**,
+one hour and fifty-nine minutes after the previous message. The email opens with his own questions about sugar in
+apples, dark chocolate and milk chocolate, what counts as truly 0 sugar, and *"Is it possible to make Chocolate
+Chakra?"* — the answers to those, and the long analysis under his lore lines, are pasted commentary, not canon.
+His own lore is the four sentences beginning *"Pero LAI made the Chocolate Karma."*
+
+![Beat 717 — Chocolate Karma, Phase 5 Ultimate Form](screenshots/779-chocolate-karma.png)
+
+- **New beat 717, CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM.** *"Pero LAI made the **Chocolate Karma**. Pero LAI
+  **takes the sugar out** and then he recovers, **it doesn't give him more HP though**. All the 5 Phases started
+  to merge, and it became **Phase 5 Ultimate Form**."*
+- **Sugar is what Phase 4 ran on, and taking it out is how you leave Phase 4.** June 27, Email 587: Simon is
+  sealed in the chamber as *"the one who makes everything constantly, even the sugars"*; put him in the wrong
+  place and the sugars **scatter instead of healing**. Tonight the recovery move is taking the sugar out — the
+  fuel and the exit are the same thing.
+- **At 4:16 PM Karma took his HP away; by 6:46 PM he had built one that gives something back.** July 21, his own
+  parenthesis: *"Kr (Karma. It can heal the victum)."* Two and a half hours ago: *"I used KR, my HP went even
+  LOWER."* He repaired the healing half and left the HP exactly where it was.
+- **"He fixed each shot, but his HP didn't change."** June 18, the golden rules (Email 538), about **Simon**,
+  whose HP was *"like the smallest number which is right before 0."* Eighty-eight days later the same rule is
+  handed to Pero in almost the same words — and that is the passage where Simon *"thinks all brown things are
+  chocolate."*
+- **Chocolate and apples are already stabilizers in this archive.** Winter Classic Simon holds both to stay in
+  one phase; when they melt, the phases spike. Tonight's first question ranks apple, dark and milk — and then
+  five phases merge on chocolate.
+- **The five phases were built as a ladder, and tonight they stop being one.** June 26 wrote them to be climbed:
+  beat Phase 5 and Phase 1 steps out and congratulates you. Merged, there is no Phase 1 left underneath to
+  reveal.
+- **A chocolate cross already exists, and it belongs to Phase 5's written-down enemy.** June 26, the same morning
+  as the phases: Storyshifted Clara, master of the game's genocide, *"her cross is made of chocolate."*
+- He asked whether **Chocolate Chakra** was possible, then typed **Karma** — a stat this game already had.
+- Re-captured screenshots 777 and 778 for the beat-ladder window shift.
+
 ## 2026-09-14 — NOW I AM IMPOSSIBLE TO KILL NOW (BEAT 716)
 
 Based on Toby's 2026-09-14 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 14, 4:47:09 PM**,
