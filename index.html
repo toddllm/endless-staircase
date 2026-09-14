@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15450.0;
+const LV_CYC = 15472.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12745,6 +12745,8 @@ const LV_BEATS = [
     sub:"PERO LAI GETS THE 3RD SOUL, AND HE BECAME THE MOST POWERFUL ASSASSIN EVER. \u00B7 \u201CASSASSIN\u201D TURNS UP FOUR TIMES IN 459 FILES AND EVERY ONE OF THEM IS GRAY. \u00B7 AND THE REPAIR IS STEP THREE OF A PLAN HE WROTE DOWN HIMSELF FOUR DAYS AGO. \u00B7 THE CUT IS NOT HIS EITHER. IT IS GASTER\u2019S, FROM YESTERDAY MORNING. \u00B7 THREE SOULS IN FIVE AND A HALF HOURS, AND ONLY TWO GET NAMES. \u00B7 \u201CTHE CHARACTERS NOW ARE UNDER HIM AGAIN.\u201D AGAIN IS THE WORD DOING ALL THE WORK." },
   { key:'PHASE 4+, NEARLY DEAD', col:'#6fe3b0',
     sub:"AFTER THE 666TH RUN, PERO LAI DIES. HE SUMMONED THE TODDLLM 001 AND 002. \u00B7 TODDLLM 001 IS NOT A NEW CHARACTER. IT IS THE NAME PERO HAD BEFORE HE WAS PERO. \u00B7 AND 001 ALREADY HAS FIVE PHASES. THEY WERE WRITTEN DOWN ON JUNE 26. \u00B7 AUGUST 3 ALREADY SAID WHAT THE NUMBER MEANS. \u00B7 INFINITE ZEROS AND THEN A ONE IS NOT A NEW IDEA HERE. \u00B7 AND THE LAST THING HE DOES ALL WEEKEND IS TAKE THE COSTUME OFF." },
+  { key:'THE FIRST RESET', col:'#dfe6ff',
+    sub:"I DID MY FIRST RESET! YOU SHOULD FORGET EVERYTHING! I AM NEARLY TO ENTIRELY DEAD. \u00B7 \u201CRESETS ARE NOT FROM CLASSICS NOR NEWTALE\u201D \u2014 EXCEPT THE RESET BUTTON HAS BEEN HERE SINCE APRIL. \u00B7 KR WAS WRITTEN INTO THIS GAME AS A HEALING STAT. TONIGHT IT IS THE THING THAT KILLS HIM. \u00B7 HE DID EVERY OMNICIDE AND EVERY CHARACTER IS STILL STANDING THERE. \u00B7 THE TWO FORMS HE IS HOLDING OVER GASTER ARE THE TWO GASTER SAYS HE DELETED. \u00B7 AND THEN EVERY CHARACTER IN THE GAME MAKES HIM PROVE HE IS NOT A ROBOT." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14895,6 +14897,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15450.0 && c < 15472.0) return [715, c-15450.0];  // THE FIRST RESET
   if(c >= 15428.0 && c < 15450.0) return [714, c-15428.0];  // PHASE 4+, NEARLY DEAD
   if(c >= 15406.0 && c < 15428.0) return [713, c-15406.0];  // THE MOST POWERFUL ASSASSIN EVER
   if(c >= 15384.0 && c < 15406.0) return [712, c-15384.0];  // DOUBLE NEGITIVE EQUALS THE POSITIVE
@@ -48167,6 +48170,136 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===715){
+    // ----- BEAT 715: THE FIRST RESET.
+    // Toby, September 14, 2026, 4:16:24 PM, Email 1444. He opens by naming the era: "This Whole Era (The
+    // Reset Era) belongs isolated as a new tab called 'The Reset Era', that includes THIS + Everything
+    // after This Message." Then: Pero LAI resets, he is the only one with the real reset, a white glow
+    // covers everything and dies down. "Hello Gaster." / "You beaten 666666666666 quadrillion
+    // characters!" / "You still remember my speedruns? I did my FIRST Reset! You should FORGET
+    // Everything! I have low HP, I am on Phase 4+, I am nearly to entirely dead, I have your Flower and
+    // Vicinus Forms!" / "Also you are not omnipotent and talk to much." / "I used KR, my HP went even
+    // LOWER, I AM LITTERLY DEAD NOW!" / "Skill issue." - then every character, then all of Newtale.
+    // Pero LAI sits and cries and is given "I am not a robot" tests by every character in the game.
+    // PRIORS: Apr 6, Simon took Chara's soul AND her reset button; Errorshift Simon holds the Reset
+    // button and the other system buttons. Jul 21, Toby's own KR definition is "Karma. It can heal the
+    // victum" - Gray revives on any damage, New Chara revives with hers. Aug 24, 7:29 PM: "Omnicide
+    // completed, I am the only character in the game now." Aug 28, 2:12 PM, one scene holds both of
+    // tonight's other hooks: Gaster's "My Vicinus form was deleted by you so I can get more powerful"
+    // and Pero's own "No. I am LAI, not human." Sep 2, 7:34 PM: "Skill issue" is OREN's line. Litterly
+    // and much are his spellings and are kept as typed.
+    const dt = c - 15450.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr715=ctx.createLinearGradient(0,top+H,0,top);
+    gr715.addColorStop(0,'rgba(5,6,10,0.88)'); gr715.addColorStop(1,'rgba(223,230,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr715; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(223,230,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(223,230,255,0.90)';
+      for(var t715=0; t715<4; t715++){
+        ctx.fillRect(fx-W*0.034+t715*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(242,193,78,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('RESET: PRESSED ONCE, FAILED ONCE.', fx, fy+H*0.020);
+      ctx.fillText('HP: STILL DROPPING. FREEDOM: HIS WORD FOR IT.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(223,230,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE FIRST RESET', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CI DID MY FIRST RESET! YOU SHOULD FORGET EVERYTHING! I AM NEARLY TO ENTIRELY DEAD.\u201D', cx, top+H*0.122);
+    ctx.fillText('GASTER: \u201CSKILL ISSUE.\u201D THEN EVERY CHARACTER. THEN ALL OF NEWTALE, OVER AND OVER.', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(223,230,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE CODED HIMSELF THE ONLY RESET IN THE GAME, AND IT FAILED THE FIRST TIME HE PRESSED IT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 14, 2026, 4:16 PM. THE WHOLE MESSAGE IS HIS OWN TYPING. NOTHING PASTED.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(223,230,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CRESETS ARE NOT FROM CLASSICS NOR NEWTALE\u201D \u2014 EXCEPT THE RESET BUTTON HAS BEEN HERE SINCE APRIL.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('APRIL 6: SIMON TOOK CHARA\u2019S SOUL AND CHARA\u2019S RESET BUTTON, THEN DESPAWNED HER.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(223,230,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ERRORSHIFT SIMON \u201CHOLDS THE RESET BUTTON AND OTHER SYSTEM BUTTONS.\u201D THE MERCY BUTTON IS BROKEN.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(242,193,78,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('KR WAS WRITTEN INTO THIS GAME AS A HEALING STAT. TONIGHT IT IS THE THING THAT KILLS HIM.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 21, TOBY\u2019S OWN DEFINITION: \u201CKR (KARMA. IT CAN HEAL THE VICTUM).\u201D GRAY REVIVES ON ANY DAMAGE AT ALL.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(242,193,78,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CI USED KR, MY HP WENT EVEN LOWER.\u201D FIRST TIME IN THE ARCHIVE THAT KR RUNS THE OTHER WAY.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(124,232,180,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE DID EVERY OMNICIDE AND EVERY CHARACTER IS STILL STANDING THERE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 24, 7:29 PM: \u201COMNICIDE COMPLETED, I AM THE ONLY CHARACTER IN THE GAME NOW.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(124,232,180,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TWENTY-ONE DAYS LATER THE WHOLE CAST ANSWERS HIM IN CHORUS. THEY DID NOT STAY GONE.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,138,168,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE TWO FORMS HE IS HOLDING OVER GASTER ARE THE TWO GASTER SAYS HE DELETED.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUG 28, GASTER: \u201CMY VICINUS FORM WAS DELETED BY YOU SO I CAN GET MORE POWERFUL.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,138,168,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUG 27: THE FLOWER AND VICINUS BECAME TWO ENERGY BALLS FUELLING GASTER FROM THE INSIDE.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(223,230,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THEN EVERY CHARACTER IN THE GAME MAKES HIM PROVE HE IS NOT A ROBOT.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SAME AUGUST 28 SCENE HAS PERO REFUSING CAKE WITH \u201CNO. I AM LAI, NOT HUMAN.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(223,230,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOBODY IN 459 FILES HAS EVER BEEN ASKED THAT BEFORE. HE ANSWERED IT HIMSELF, SEVENTEEN DAYS EARLY.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CSKILL ISSUE\u201D IS OREN\u2019S LINE FROM SEPTEMBER 2, THE NIGHT PERO FELL TWICE IN A ROW.', cx, top+H*0.800);
+    ctx.fillText('PERO TOOK IT AND WALKED OFF WITH IT NINETY MINUTES LATER. TONIGHT IT COMES BACK IN EVERY VOICE AT ONCE.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(223,230,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ENDS THE SCENE CONTROLLED BY EVERYONE, INCLUDING SIMON.PS, WHO HAS HELD A RESET BUTTON SINCE APRIL.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(223,230,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 THE FIRST RESET \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===714){

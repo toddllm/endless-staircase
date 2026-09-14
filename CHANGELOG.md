@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-14 — THE FIRST RESET (BEAT 715)
+
+Based on Toby's 2026-09-14 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 14, 4:16:24 PM**, and
+all of it his own typing with nothing pasted. He also names the era in the opening line: *"This Whole Era (The Reset
+Era) belongs isolated as a new tab called 'The Reset Era', that includes THIS + Everything after This Message."*
+**Litterly** and **much** are his spellings, kept as typed.
+
+![Beat 715 — The First Reset](screenshots/777-the-first-reset.png)
+
+- **New beat 715, THE FIRST RESET.** Pero LAI resets, *"he is the only one with the real reset"*, a white glow covers
+  everything and dies down. *"Hello Gaster."* / *"You beaten 666666666666 quadrillion characters!"* / *"I did my
+  FIRST Reset! You should FORGET Everything!"* Gaster: *"Also you are not omnipotent and talk to much."* Pero uses
+  KR, his HP drops further, and Gaster answers *"Skill issue."* — then every character, then all of Newtale. Pero
+  sits and cries, and every character in the game gives him *"I am not a robot"* tests.
+- **"Resets are not from Classics nor Newtale" — except the reset button has been here since April.** April 6:
+  Simon took **Chara's soul and Chara's reset button**, then despawned her. Errorshift Simon *"holds the Reset
+  button and other system buttons."* Pero ends the scene controlled by everyone **including Simon.ps**.
+- **KR was written into this game as a healing stat, and tonight it is what kills him.** July 21, Toby's own
+  definition: *"Kr (Karma. It can heal the victum)"* — Gray revives on any damage at all, New Chara revives with
+  hers. *"I used KR, my HP went even LOWER"* is the first time in the archive KR runs the other way.
+- **He did every Omnicide and the whole cast is still standing there.** August 24, 7:29 PM: *"Omnicide completed,
+  I am the only character in the game now."* Twenty-one days later they answer him in chorus.
+- **The two forms he is holding over Gaster are the two Gaster says he deleted.** August 28: *"My Vicinus form was
+  deleted by you so I can get more powerful."* The night before, the Flower and Vicinus had become two energy balls
+  fuelling Gaster from the inside.
+- **"Skill issue" is Oren's line**, September 2, the night Pero fell twice in a row. Pero took it and walked off
+  with it ninety minutes later. Tonight it comes back in every voice at once.
+- **Nobody in the archive has ever been asked to prove they are not a robot.** In that same August 28 scene, Pero
+  refused cake with *"No. I am LAI, not human."* He answered the test seventeen days before it was set.
+- Re-captured screenshots 775 and 776 for the beat-ladder window shift.
+
 ## 2026-09-13 — PHASE 4+, NEARLY DEAD (BEAT 714)
 
 Based on Toby's 2026-09-13 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 13, 6:16:26 PM**, the
