@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15604.0;
+const LV_CYC = 15626.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12759,6 +12759,9 @@ const LV_BEATS = [
     sub:"WRITE \u2018PERO LAI IS CURRENTLY BEING BEATEN BY TEKI\u2019 IN JAPANESE.\u201D THEN, UNDERNEATH IT: \u201CYEAH, HE IS. \u00B7 THERE HAS BEEN JAPANESE IN THIS ARCHIVE EXACTLY ONCE, AND IT WAS A TITLE, NOT A SENTENCE. \u00B7 SO THE ONE JAPANESE WORD ON RECORD HERE IS OMNIPOTENT, AND IT IS A BOAST YOU PUT ON. \u00B7 THE LOAD-BEARING WORD IS CURRENTLY. \u00B7 SOMEBODY HAS BEEN PUT ABOVE PERO BEFORE, AND THE ARCHIVE TIMED IT. \u00B7 AND THE METHOD IS THE SAME METHOD, ONE HUNDRED AND FIFTEEN DAYS APART." },
   { key:'THERE IS NO BEING IN FICTION ANYMORE', col:'#e0384a',
     sub:"WALKED DOWN INFINITY STAIRS WITH MINDY STARCHILD, BEATEN HER AT THE BOTTOM, THEN DESTROYED STAR STEED. \u00B7 \u201CWALKED DOWN INFINITY STAIRS.\u201D THE ENDLESS STAIRCASE IS THIS GAME\u2019S NAME AND ITS FINAL LEVEL. \u00B7 MINDY STARCHILD IS NOT A SPARE NAME. SHE IS THE HERO-SIDE ANSWER TO PERO HIMSELF. \u00B7 STAR STEED IS THE SECOND KINGDOM. THE FIRST ONE RUSTED AWAY. \u00B7 AND HE HITS HER IN THE ORDER THAT COSTS THE MOST. \u00B7 \u201CTHE DEEPEST ANOMALLY.\u201D TWO WEEKS AGO HE WAS RULED TO BE ALL THREE AT ONCE." },
+  { key:'THE ANSWER IS YES', col:'#ffd76a',
+    sub:"SERAPHIM SANS IS RULED THE EQUAL OF ASRIEL DREEMURR IN THE GOD OF HYPERDEATH FORM. · THIRTY-SEVEN MINUTES AGO THERE WAS NO BEING IN FICTION LEFT. NOW THERE ARE TWO, AND NEITHER IS PERO. · SERAPHIM SANS HAS EXACTLY ONE OTHER LINE IN FOUR MONTHS: THIRD NAME ON MR. BLACK’S TEAM-UP LIST. · ASRIEL IS A SWORD. THE FORM TOBY NAMES IS THE ONE WHERE HE IS NOT EQUIPMENT. · HE ASKS THE QUESTION AND ANSWERS IT IN THE SAME SENTENCE. · “YOU ARE NOW TALKING LIKE PERO LAI” — IN THIS CANON THAT LINE HAS ALWAYS BEEN AN ACCUSATION." },
+
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14909,6 +14912,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15604.0 && c < 15626.0) return [722, c-15604.0];  // THE ANSWER IS YES
   if(c >= 15582.0 && c < 15604.0) return [721, c-15582.0];  // THERE IS NO BEING IN FICTION ANYMORE
   if(c >= 15560.0 && c < 15582.0) return [720, c-15560.0];  // PERO LAI IS CURRENTLY BEING BEATEN BY TEKI
   if(c >= 15538.0 && c < 15560.0) return [719, c-15538.0];  // IT IS TEKI. HE IS THE FIRST CODE BORN
@@ -48188,6 +48192,134 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===722){
+    // ----- BEAT 722: THE ANSWER IS YES.
+    // Toby, September 15, 2026, 5:29:46 PM, Email 1450, thirty-seven minutes after Email 1449. His own
+    // typing is two lines, both the same question with its own answer attached: "Is Seraphim Sans the
+    // equal of Asriel in the God of Hyperdeath form? The answer is yes." and then again with "Also you
+    // are now talking like Pero LAI" on the end. Everything else in the message - the "Answer / What
+    // question would you like me to answer?" exchange, the "In this canon" restatements, the Pero LAI
+    // quotes and the 50/50 scaling note - is pasted ChatGPT and is commentary, not canon.
+    // Thirty-seven minutes earlier, Email 1449: "there is no being in fiction anymore, Pero LAI beaten
+    // them all. Pero LAI became the most powerful and only being."
+    // Seraphim Sans, Sep 3 7:35 PM: "Mr. Black teams up with Pibby Corruption and even Seraphim Sans."
+    // That is his ONLY other appearance in four months of archive.
+    // Asriel Dreemurr, Email 763: 7th in the whole game, "God of Hyperdeath turned into Chara's new
+    // sword", and Aug 27 Email 1181 gave him time, space and the barrier as his own powers.
+    // Aug 15, 9:48 AM: "You were talking like Pero this whole chat" and "Pero also will take over this
+    // conversation next." Tonight it stops being a prediction and becomes an instruction.
+    // The Undefined Loop, Email 595, June 27: "Everything is in a loop of power levels... some tie,
+    // some beat another thing... ToddLLM AND Luigi Green call it 'undefined'."
+    const dt = c - 15604.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(8,8,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr722=ctx.createLinearGradient(0,top+H,0,top);
+    gr722.addColorStop(0,'rgba(6,6,10,0.88)'); gr722.addColorStop(1,'rgba(255,215,106,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr722; ctx.fillRect(0,top,W,H);
+
+    // the balance: two pans at exactly the same height, right half, clear of the beat ladder
+    if(wrA>0.01){
+      const bx = cx + W*0.150, by = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.30; ctx.strokeStyle='rgba(255,215,106,0.86)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.moveTo(bx-W*0.052, by-H*0.0230); ctx.lineTo(bx+W*0.052, by-H*0.0230); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(bx, by-H*0.0230); ctx.lineTo(bx, by-H*0.0080); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,215,106,0.88)';
+      ctx.fillRect(bx-W*0.066, by-H*0.0210, W*0.028, H*0.0052);
+      ctx.fillRect(bx+W*0.038, by-H*0.0210, W*0.028, H*0.0052);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THIRTY-SEVEN MINUTES AGO FICTION WAS EMPTY.', bx, by+H*0.020);
+      ctx.fillText('TONIGHT THERE ARE TWO BEINGS ON IT, AND NEITHER ONE IS PERO.', bx, by+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,215,106,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE ANSWER IS YES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“IS SERAPHIM SANS THE EQUAL OF ASRIEL IN THE GOD OF HYPERDEATH FORM? THE ANSWER IS YES.”', cx, top+H*0.122);
+    ctx.fillText('“ALSO YOU ARE NOW TALKING LIKE PERO LAI.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,215,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE ASKS THE QUESTION AND ANSWERS IT IN THE SAME SENTENCE. HE IS NOT ASKING. HE IS RULING.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 15, 5:29:46 PM. THE REST OF THE MESSAGE IS PASTED AND IS COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,215,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THIRTY-SEVEN MINUTES AGO THERE WAS NO BEING IN FICTION LEFT.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('4:52 PM: “THERE IS NO BEING IN FICTION ANYMORE. PERO LAI BECAME THE MOST POWERFUL AND ONLY BEING.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,215,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('5:29 PM: TWO OF THEM ARE BACK, STANDING LEVEL WITH EACH OTHER, AND NEITHER ONE IS HIM.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(200,120,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SERAPHIM SANS HAS EXACTLY ONE OTHER LINE IN FOUR MONTHS OF THIS ARCHIVE.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 3: “MR. BLACK TEAMS UP WITH PIBBY CORRUPTION AND EVEN SERAPHIM SANS.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(200,120,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIRD NAME ON A TEAM-UP LIST. TWELVE DAYS LATER HE IS MEASURED AGAINST 7TH IN THE WHOLE GAME.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(92,220,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND ASRIEL IS A SWORD.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('EMAIL 763: “GOD OF HYPERDEATH TURNED INTO CHARA’S NEW SWORD”, RANKED 7TH.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(92,220,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“IN THE GOD OF HYPERDEATH FORM” IS THE ONE STATE WHERE HE IS NOT SOMEBODY’S EQUIPMENT.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“YOU ARE NOW TALKING LIKE PERO LAI.” THAT LINE HAS ALWAYS BEEN AN ACCUSATION.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IN THIS CANON YOU CATCH SOMEBODY WITH IT: “WHY ARE YOU TALKING LIKE PERO?”', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 15: “PERO ALSO WILL TAKE OVER THIS CONVERSATION NEXT.” TONIGHT IT IS AN INSTRUCTION.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,215,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND EQUAL POWER IS NOT A NON-ANSWER HERE. IT IS A NAMED SYSTEM.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 27: “EVERYTHING IS IN A LOOP OF POWER LEVELS… SOME TIE, SOME BEAT ANOTHER THING.”', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,215,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“TODDLLM AND LUIGI GREEN CALL IT ‘UNDEFINED’.” PERO NAMED THE RULE THAT HOLDS TONIGHT.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE LAST TWO MESSAGES EMPTIED FICTION AND THEN PUT A MATCHUP BACK INTO IT.', cx, top+H*0.800);
+    ctx.fillText('THIRTY-SEVEN MINUTES IS HOW LONG BEING THE ONLY BEING LASTED.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,215,106,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NEITHER GETS THE EASY WIN. THAT IS THE WHOLE RULING.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,215,106,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE ANSWER IS YES ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===721){

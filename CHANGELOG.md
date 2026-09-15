@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-15 — THE ANSWER IS YES (BEAT 722)
+
+Based on Toby's 2026-09-15 lore — the same thread, **Sep 15, 5:29:46 PM**, thirty-seven minutes after
+*There Is No Being In Fiction Anymore*. His own typing is two lines, both the same question with its own
+answer already attached; the rest of the message is a pasted ChatGPT exchange and is commentary.
+
+![Beat 722 — The answer is yes](screenshots/784-the-answer-is-yes.png)
+
+- **New beat 722, THE ANSWER IS YES.** *"Is Seraphim Sans the equal of Asriel in the God of Hyperdeath
+  form? The answer is yes."* and, the second time, *"Also you are now talking like Pero LAI."*
+- **He asks the question and answers it in the same sentence.** It is not a question put to anybody. It is
+  a ruling with a question mark in the middle of it.
+- **Thirty-seven minutes ago there was no being in fiction left.** Beat 721, 4:52 PM: *"there is no being
+  in fiction anymore, Pero LAI beaten them all. Pero LAI became the most powerful and only being."* At 5:29
+  two of them are back, standing level with each other, and **neither one is Pero**.
+- **Seraphim Sans has exactly one other line in four months of this archive.** September 3, 7:35 PM:
+  *"Mr. Black teams up with Pibby Corruption and even Seraphim Sans."* Third name on a team-up list. Twelve
+  days later he is measured against **7th in the whole game**.
+- **And Asriel is a sword.** Email 763 ranks him 7th as *"God of Hyperdeath turned into Chara's new sword"* —
+  a ranked being who is also another ranked being's equipment. *"In the God of Hyperdeath form"* names the
+  one state where he is not somebody's weapon.
+- **"You are now talking like Pero LAI" inverts a line that has always been an accusation.** In this canon you
+  catch somebody with it — *"Why are you talking like Pero?"* On **August 15** Toby made it an observation,
+  *"You were talking like Pero this whole chat"*, and predicted *"Pero also will take over this conversation
+  next."* Thirty-one days later he stops predicting it and **assigns it**.
+- **Equal power is not a non-answer here; it is a named system.** The Undefined Loop, **June 27**:
+  *"Everything is in a loop of power levels… some tie, some beat another thing… ToddLLM AND Luigi Green call
+  it 'undefined'."* Pero named the rule that holds tonight.
+- **Rendering:** new gold `#ffd76a` panel, a level two-pan balance on the right half clear of the beat ladder,
+  five staged reveals and the footer. `LV_CYC` 15604.0 → 15626.0, `LV_BEATS` length 723, new `lvSeg()` range
+  `15604.0–15626.0 → ph 722`.
+- **Ladder recaptures:** adding beat 722 moved the clamped five-row ladder window for phases 720 and 721, so
+  `782-currently-being-beaten-by-teki.png` and `783-no-being-in-fiction-anymore.png` were recaptured.
+
 ## 2026-09-15 — THERE IS NO BEING IN FICTION ANYMORE (BEAT 721)
 
 Based on Toby's 2026-09-15 lore — the same thread, **Sep 15, 4:52:12 PM**, fifteen minutes after the Japanese
