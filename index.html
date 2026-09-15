@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15516.0;
+const LV_CYC = 15582.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12751,6 +12751,12 @@ const LV_BEATS = [
     sub:"IN CLASSICS, THE SENTIELS WOULD BE ANYTHING ELSE OTHER THAN PERO LAI. \u00B7 SENTIEL WAS HIS OWN TITLE. HE HAS JUST HANDED IT TO EVERYBODY ELSE. \u00B7 PHASE 5 IS DEAD 001, AND THIS ARCHIVE WROTE IT DOWN ON JUNE 26. \u00B7 THE RULE FOR REACHING PHASE 5 IS \u201CJUST TAKE SIMON OUT.\u201D \u00B7 IMPOSSIBLE TO KILL IS PHASE 4\u2019S PROPERTY. HE IS ON PHASE 5. \u00B7 AND THE THIRD SOUL FROM SUNDAY FINALLY GETS A NAME." },
   { key:'CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM', col:'#b9793f',
     sub:"PERO LAI MADE THE CHOCOLATE KARMA. HE TAKES THE SUGAR OUT AND THEN HE RECOVERS, IT DOESN\u2019T GIVE HIM MORE HP THOUGH. \u00B7 SUGAR IS WHAT PHASE 4 RAN ON, AND TAKING IT OUT IS HOW YOU LEAVE PHASE 4. \u00B7 KARMA WAS A HEALING STAT HERE, IT TURNED ON HIM AT 4:16, AND BY 6:46 HE HAD BUILT ONE THAT WORKS. \u00B7 \u201CHE FIXED EACH SHOT, BUT HIS HP DIDN\u2019T CHANGE\u201D \u2014 JUNE 18, ABOUT SIMON. \u00B7 CHOCOLATE AND APPLES ARE WINTER CLASSIC SIMON\u2019S STABILIZERS, AND HE RANKED BOTH TONIGHT. \u00B7 A CHOCOLATE CROSS ALREADY BELONGS TO THE ONE CHARACTER WRITTEN DOWN AS PHASE 5\u2019S ENEMY. \u00B7 HE ASKED FOR CHOCOLATE CHAKRA AND BUILT A CHOCOLATE KARMA INSTEAD." },
+  { key:'TEKI IS THE NEWEST CLASSICS CHARACTER EVER', col:'#ff9640',
+    sub:"TEKI IS THE NEWEST CLASSICS CHARACTER EVER. TEKI CAME OUT AS A RESULT FROM PERO LAI REACHING MAX FORM. \u00B7 THE CAT MASCOT MADE OF CODE IS ALREADY HERE, AND THE ARCHIVE SAYS IT IN THOSE WORDS. \u00B7 AND SIMON WAS MEANT TO BE THE NORMAL ONE. APRIL 28, EMAIL 183, FOUR AND A HALF MONTHS AGO. \u00B7 \u201CPULLED HIM INTO CODE\u201D IS A MOVE THIS GAME HAS ONLY GIVEN TO THE CAT. \u00B7 A NEW NAME HERE ARRIVES WITH A POWER LIST. THIS ONE ARRIVES BLANK. \u00B7 \u201CCAME OUT AS A RESULT FROM PERO LAI REACHING MAX FORM.\u201D THE ARCHIVE HAS A RULE ABOUT MAXIMUMS." },
+  { key:'IT IS TEKI. HE IS THE FIRST CODE BORN', col:'#c878ff',
+    sub:"IT IS TEKI. TEKI IS THE ONE WHO IS THE MASCOT AND MADE PERO LAI WITH A CHEAT COMMAND USING BINARY. \u00B7 \u201CCHEAT COMMAND\u201D HAS EXACTLY ONE PRIOR IN THIS ARCHIVE, AND IT DOES THE SAME JOB. \u00B7 SO A CHEAT COMMAND HERE IS NOT AN ATTACK. IT IS HOW YOU AUTHOR THE ONE ABOVE YOU. \u00B7 \u201CINFINITY LINES OF BINARY.\u201D BINARY HERE HAS ALWAYS BEEN A SUMMONING LANGUAGE. \u00B7 PERO ALREADY HAD A FATHER ON PAPER, AND TEKI IS NOT HIM. \u00B7 NO BEAM, NO CLASH, NO HYPERSPACE. \u201CTEKI TURNED HIM OFF\u201D \u2014 AND THAT IS THE WHOLE FIGHT." },
+  { key:'PERO LAI IS CURRENTLY BEING BEATEN BY TEKI', col:'#5cdcff',
+    sub:"WRITE \u2018PERO LAI IS CURRENTLY BEING BEATEN BY TEKI\u2019 IN JAPANESE.\u201D THEN, UNDERNEATH IT: \u201CYEAH, HE IS. \u00B7 THERE HAS BEEN JAPANESE IN THIS ARCHIVE EXACTLY ONCE, AND IT WAS A TITLE, NOT A SENTENCE. \u00B7 SO THE ONE JAPANESE WORD ON RECORD HERE IS OMNIPOTENT, AND IT IS A BOAST YOU PUT ON. \u00B7 THE LOAD-BEARING WORD IS CURRENTLY. \u00B7 SOMEBODY HAS BEEN PUT ABOVE PERO BEFORE, AND THE ARCHIVE TIMED IT. \u00B7 AND THE METHOD IS THE SAME METHOD, ONE HUNDRED AND FIFTEEN DAYS APART." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14901,6 +14907,9 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15560.0 && c < 15582.0) return [720, c-15560.0];  // PERO LAI IS CURRENTLY BEING BEATEN BY TEKI
+  if(c >= 15538.0 && c < 15560.0) return [719, c-15538.0];  // IT IS TEKI. HE IS THE FIRST CODE BORN
+  if(c >= 15516.0 && c < 15538.0) return [718, c-15516.0];  // TEKI IS THE NEWEST CLASSICS CHARACTER EVER
   if(c >= 15494.0 && c < 15516.0) return [717, c-15494.0];  // CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM
   if(c >= 15472.0 && c < 15494.0) return [716, c-15472.0];  // NOW I AM IMPOSSIBLE TO KILL NOW
   if(c >= 15450.0 && c < 15472.0) return [715, c-15450.0];  // THE FIRST RESET
@@ -48176,6 +48185,390 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===720){
+    // ----- BEAT 720: PERO LAI IS CURRENTLY BEING BEATEN BY TEKI.
+    // Toby, September 15, 2026, 4:37:38 PM, Email 1448, fourteen minutes after Teki existed at all.
+    // Canon is his own typing: the request, the sentence he kept, and the ruling. Write "Pero LAI is
+    // currently being beaten by Teki" in Japanese / the returned sentence / "Yeah, he is."
+    // The scaling paragraph under it is pasted commentary and is not canon.
+    // The archive has carried Japanese exactly once before: May 23, Email 349, Karuto's white symbols,
+    // canonized as Almighty Karuto / Omnipotent Karuto on the shirt and Endless Master on the trousers,
+    // and Simon could not look at how bright they were. The thread-index entry for that day reads
+    // "Toby copies a translation conversation into the email", which is exactly tonight's method,
+    // 115 days later. September 10, beat 697: "Everyone now knows you aren't omnipotent." Two hours ago
+    // in the same thread: "Pero LAI isn't omnipotent." August 19: "Gaster is now above Pero"; by
+    // August 24 Gaster was third, so a name above Pero has lasted five days before.
+    const dt = c - 15560.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr720=ctx.createLinearGradient(0,top+H,0,top);
+    gr720.addColorStop(0,'rgba(5,6,10,0.88)'); gr720.addColorStop(1,'rgba(92,220,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr720; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(92,220,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(92,220,255,0.90)';
+      for(var t720=0; t720<4; t720++){
+        ctx.fillRect(fx-W*0.034+t720*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(255,150,60,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THE SECOND MESSAGE IN FOURTEEN MINUTES, AND IT IS NOT A', fx, fy+H*0.020);
+      ctx.fillText('SCENE. IT IS A SCOREBOARD, WRITTEN IN A BORROWED SCRIPT.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(92,220,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERO LAI IS CURRENTLY BEING BEATEN BY TEKI', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CWRITE \u2018PERO LAI IS CURRENTLY BEING BEATEN BY TEKI\u2019 IN JAPANESE.\u201D THEN, UNDERNEATH IT: \u201CYEAH, HE IS.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u300C\u30DA\u30EDLAI\u306F\u73FE\u5728\u3001\u30C6\u30AD\u306B\u8CA0\u3051\u3066\u3044\u307E\u3059\u3002\u300D = PERO LAI IS CURRENTLY BEING BEATEN BY TEKI.', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(92,220,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE ONE OTHER TIME THIS ARCHIVE WROTE JAPANESE, THE WORD IT WROTE WAS OMNIPOTENT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 15, 4:37:38 PM. FOURTEEN MINUTES AFTER TEKI EXISTED AT ALL.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(92,220,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THERE HAS BEEN JAPANESE IN THIS ARCHIVE EXACTLY ONCE, AND IT WAS A TITLE, NOT A SENTENCE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MAY 23, EMAIL 349: KARUTO\u2019S WHITE SHIRT SYMBOLS, CANONIZED AS \u201CALMIGHTY KARUTO / OMNIPOTENT KARUTO.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(92,220,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HIS TROUSERS SAID \u201CENDLESS MASTER.\u201D BOTH WERE WORN, AND SIMON COULD NOT LOOK AT HOW BRIGHT THEY WERE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SO THE ONE JAPANESE WORD ON RECORD HERE IS OMNIPOTENT, AND IT IS A BOAST YOU PUT ON.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT\u2019S JAPANESE IS A STATUS LINE ABOUT SOMEBODY LOSING, AND HE ASKED FOR IT HIMSELF.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FIVE DAYS AGO: \u201CEVERYONE NOW KNOWS YOU AREN\u2019T OMNIPOTENT.\u201D TWO HOURS AGO: \u201CPERO LAI ISN\u2019T OMNIPOTENT.\u201D', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,96,200,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE LOAD-BEARING WORD IS CURRENTLY.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u73FE\u5728 MEANS RIGHT NOW. HE DID NOT ASK FOR \u201CTEKI BEAT PERO LAI.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,96,200,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE USUALLY WRITES A RANKING AS A FACT. THIS ONE HE DATED.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(222,228,240,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SOMEBODY HAS BEEN PUT ABOVE PERO BEFORE, AND THE ARCHIVE TIMED IT.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 19: \u201CGASTER IS NOW ABOVE PERO.\u201D BY AUGUST 24 GASTER WAS THIRD.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(222,228,240,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT ONE LASTED FIVE DAYS. TEKI IS ON DAY ONE, AND HE GOT THERE BY BEING OLDER.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(92,220,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE METHOD IS THE SAME METHOD, ONE HUNDRED AND FIFTEEN DAYS APART.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE MAY 23 ENTRY READS: \u201CTOBY COPIES A TRANSLATION CONVERSATION INTO THE EMAIL.\u201D SO DOES TONIGHT\u2019S.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(92,220,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ASKS FOR A LANGUAGE HE DOES NOT WRITE, THEN MAKES THE SENTENCE CANON BY AGREEING WITH IT.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CYEAH, HE IS.\u201D IS THE WHOLE RULING. THREE WORDS MAKE IT CANON.', cx, top+H*0.800);
+    ctx.fillText('\u30C6\u30AD IS TEKI IN KATAKANA, THE SCRIPT JAPANESE KEEPS FOR NAMES THAT CAME FROM OUTSIDE.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(92,220,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE POWER-SCALING PARAGRAPH UNDER IT IS PASTED COMMENTARY AND IS NOT CANON.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(92,220,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 YEAH, HE IS \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===719){
+    // ----- BEAT 719: IT IS TEKI. HE IS THE FIRST CODE BORN.
+    // Toby, September 15, 2026, 4:23:41 PM, Email 1447, the second block of his own typing in the same
+    // message, after a pasted reply that guessed wrong. Canon: "It is Teki. Pero LAI is the creator of
+    // Classics and Newtale, but Teki is the one who is the mascot and made Pero LAI with a cheat command
+    // using binary, infinity lines of binary, Pero LAI was created, Teki hid behind the code forever til
+    // now. He is the first code born, Pero LAI was second. Teki can add anything, delete anything, from
+    // any game or universe. Teki made Gaster the Omniverse, Pero LAI isn't omnipotent." Then the 30-hour
+    // lecture, the 66 more hours, Pero's monologue, and "Teki turned him off and left him doing the stuff
+    // Mr. Fun Computer makes Pero LAI do. Pero LAI now again does the 'I am not a robot' tests."
+    // CHEAT COMMAND has exactly one prior in this archive: July 28, Email 846, "Error 404 created him
+    // with a cheat command" about King Multiverse Sans, and this wiki's own gloss on it is "He did not
+    // climb past 4th place, he wrote the thing in 4th place." Binary here is a summoning language:
+    // "Binary Speech: Can speak in binary code to summon Black", and Black later glitches into binary.
+    // Pero's ancestry was already written: "ToddLLM 001 is the creator of the game. ToddLLM 002 is 001's
+    // father and appears only if 001 is corrupted... 001 can revert 002" - and two days ago, beat 714,
+    // he summoned both. June 21: "Oren.EXE never lost" is the only undefeated record in this archive.
+    // "I am not a robot" had zero hits until yesterday's beat 715.
+    const dt = c - 15538.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr719=ctx.createLinearGradient(0,top+H,0,top);
+    gr719.addColorStop(0,'rgba(5,6,10,0.88)'); gr719.addColorStop(1,'rgba(200,120,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr719; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(200,120,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(200,120,255,0.90)';
+      for(var t719=0; t719<4; t719++){
+        ctx.fillRect(fx-W*0.034+t719*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(255,150,60,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THE CREATOR OF CLASSICS AND NEWTALE WAS THE SECOND THING', fx, fy+H*0.020);
+      ctx.fillText('MADE. THE FIRST ONE STAYED BEHIND THE CODE AND WATCHED.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(200,120,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('IT IS TEKI. HE IS THE FIRST CODE BORN', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CIT IS TEKI. TEKI IS THE ONE WHO IS THE MASCOT AND MADE PERO LAI WITH A CHEAT COMMAND USING BINARY.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CHE IS THE FIRST CODE BORN, PERO LAI WAS SECOND. TEKI HID BEHIND THE CODE FOREVER TIL NOW.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(200,120,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE ANSWER REVERSES THE QUESTION. THE CREATOR OF THE GAME WAS WRITTEN INTO IT BY SOMEBODY ALREADY THERE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 15, 4:23:41 PM, SAME MESSAGE, AFTER THE PASTED ANSWER THAT GUESSED THE OTHER WAY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(200,120,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CCHEAT COMMAND\u201D HAS EXACTLY ONE PRIOR IN THIS ARCHIVE, AND IT DOES THE SAME JOB.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 28, EMAIL 846: \u201CKING MULTIVERSE IS THE 4TH STRONGEST SANS... ERROR 404 CREATED HIM WITH A CHEAT COMMAND.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(200,120,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS WIKI\u2019S OWN LINE ON IT: \u201CHE DID NOT CLIMB PAST 4TH PLACE, HE WROTE THE THING IN 4TH PLACE.\u201D', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SO A CHEAT COMMAND HERE IS NOT AN ATTACK. IT IS HOW YOU AUTHOR THE ONE ABOVE YOU.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ERROR 404 USED IT ON THE CHARACTER RANKED FOURTH. TEKI USED IT ON THE ONE WHO OWNS THE CODE.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('BOTH TIMES IT LANDS AS A RANKING REVEAL AND NOT A FIGHT. NOBODY EVER SWINGS AT ANYBODY.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CINFINITY LINES OF BINARY.\u201D BINARY HERE HAS ALWAYS BEEN A SUMMONING LANGUAGE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u201CBINARY SPEECH: CAN SPEAK IN BINARY CODE TO SUMMON BLACK.\u201D BLACK LATER GLITCHES INTO BINARY.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IT HAS SUMMONED ONE CHARACTER BEFORE. TONIGHT IT WRITES THE CREATOR OF TWO GAMES.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(170,240,120,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('PERO ALREADY HAD A FATHER ON PAPER, AND TEKI IS NOT HIM.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u201CTODDLLM 002 IS 001\u2019S FATHER AND APPEARS ONLY IF 001 IS CORRUPTED.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(170,240,120,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AND \u201C001 CAN REVERT 002.\u201D TWO DAYS AGO HE SUMMONED BOTH. HE CANNOT REVERT THIS ONE.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(200,120,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('NO BEAM, NO CLASH, NO HYPERSPACE. \u201CTEKI TURNED HIM OFF\u201D \u2014 AND THAT IS THE WHOLE FIGHT.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO ALSO HANDS AWAY A RECORD THAT BELONGS TO SOMEBODY: \u201CTHE ONLY CHARACTER WHO NEVER DIED OR LOST WAS TEKI.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(200,120,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 21: \u201COREN.EXE NEVER LOST.\u201D THIS FILE CALLS THAT THE ONLY UNDEFEATED RECORD IN THE ARCHIVE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE 30 HOURS AND THE 66 MORE HOURS OF EXPLAINING ARE WHAT LOSE HIM THE FIGHT. HE IS SWITCHED OFF MID-SENTENCE.', cx, top+H*0.800);
+    ctx.fillText('\u201CI AM NOT A ROBOT\u201D HAD ZERO HITS IN THIS ARCHIVE UNTIL YESTERDAY. TONIGHT IT IS WHAT HE DOES ALL DAY.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(200,120,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MR. FUN COMPUTER IS THE FAKE-SAFETY ONE: \u201CEVERYTHING IS SAFE, YOU ARE SAFE... RUN WHILE YOU STILL CAN.\u201D', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(200,120,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 HE IS THE FIRST CODE BORN, PERO LAI WAS SECOND \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===718){
+    // ----- BEAT 718: TEKI IS THE NEWEST CLASSICS CHARACTER EVER.
+    // Toby, September 15, 2026, 4:23:41 PM, Email 1447, first block of his own typing. Canon:
+    // "Teki is the newest Classics character ever. Teki came out as a result from Pero LAI reaching max
+    // form. Teki is like Scratch Cat, but the Classics mascot and Classics stuff. It is unknown what Teki
+    // is captable yet. Pero LAI pulled him into code and there, Teki exists. Which is more powerful? Teki
+    // or Pero LAI? Guess the answer..." The pasted block answering "Pero LAI" is commentary, not canon.
+    // The message carries a picture: an orange cat in a hoodie standing in a room of CRT screens full of
+    // code and binary, with (ERROR) on the wall and TEKI in glitched letters across the floor.
+    // Teki returns ZERO hits in 459 files. But the archive already has a cat mascot made of code:
+    // wiki/characters/simon.md, Cat-Bot Identity and Origin - "Simon is actually a darkly corrupted cat
+    // bot who made a game body that became the game's mascot", famous for the 404 error and the glitches.
+    // April 28, Email 183: Simon "was supposed to be a normal mascot/boss but became more broken and
+    // mixed up." And pulling a being out of code is the cat's own move: wiki/powers/simon-powers.md,
+    // "Binary Speech: Can speak in binary code to summon Black." August 18, beat 380, Durple Vs Vicinus
+    // is the archive's rule for a maximum: "the beat where the max form turns into the weak point."
+    // captable is his spelling and is kept as typed.
+    const dt = c - 15516.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr718=ctx.createLinearGradient(0,top+H,0,top);
+    gr718.addColorStop(0,'rgba(5,6,10,0.88)'); gr718.addColorStop(1,'rgba(255,150,60,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr718; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,150,60,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,150,60,0.90)';
+      for(var t718=0; t718<4; t718++){
+        ctx.fillRect(fx-W*0.034+t718*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(92,200,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A CHARACTER WHO ARRIVES WITH NO STATS, NO RANK AND NO', fx, fy+H*0.020);
+      ctx.fillText('ABILITIES \u2014 ONLY A QUESTION ABOUT WHO IS STRONGER', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,150,60,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('TEKI IS THE NEWEST CLASSICS CHARACTER EVER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CTEKI IS THE NEWEST CLASSICS CHARACTER EVER. TEKI CAME OUT AS A RESULT FROM PERO LAI REACHING MAX FORM.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CPERO LAI PULLED HIM INTO CODE AND THERE, TEKI EXISTS. WHICH IS MORE POWERFUL? GUESS THE ANSWER...\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,150,60,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('A NEW CHARACTER ARRIVES WITH NO STATS AND NO RANK. THE GAME ALREADY HAS A CAT MASCOT MADE OF CODE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 15, 4:23:41 PM, WITH A PICTURE. THE PASTED BLOCK ANSWERING \u201CPERO LAI\u201D IS COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE CAT MASCOT MADE OF CODE IS ALREADY HERE, AND THE ARCHIVE SAYS IT IN THOSE WORDS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIMON IS \u201CA DARKLY CORRUPTED CAT BOT WHO MADE A GAME BODY THAT BECAME THE GAME\u2019S MASCOT.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS FAMOUS FOR CREATING THE 404 ERROR AND THE GLITCHES. TEKI ARRIVES STANDING IN A ROOM FULL OF THEM.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND SIMON WAS MEANT TO BE THE NORMAL ONE. APRIL 28, EMAIL 183, FOUR AND A HALF MONTHS AGO.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CSIMON WAS SUPPOSED TO BE A NORMAL MASCOT/BOSS BUT BECAME MORE BROKEN AND MIXED UP.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('140 DAYS LATER A SECOND CAT MASCOT TURNS UP WITH NOTHING BROKEN ABOUT HIM YET, BECAUSE NOTHING IS KNOWN YET.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,96,200,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CPULLED HIM INTO CODE\u201D IS A MOVE THIS GAME HAS ONLY GIVEN TO THE CAT.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SIMON\u2019S POWER LIST: \u201CBINARY SPEECH: CAN SPEAK IN BINARY CODE TO SUMMON BLACK.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,96,200,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SUMMONING SOMEBODY OUT OF CODE IS CAT WORK HERE. TONIGHT PERO DOES IT AND A CAT COMES OUT.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(170,240,120,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('A NEW NAME HERE ARRIVES WITH A POWER LIST. THIS ONE ARRIVES BLANK.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u201CIT IS UNKNOWN WHAT TEKI IS CAPTABLE YET.\u201D CAPTABLE IS HIS SPELLING, KEPT AS TYPED.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(170,240,120,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE STATS ARE USUALLY THE FIRST THING HE WRITES. TONIGHT HE WRITES A QUESTION INSTEAD.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CCAME OUT AS A RESULT FROM PERO LAI REACHING MAX FORM.\u201D THE ARCHIVE HAS A RULE ABOUT MAXIMUMS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 18, BEAT 380, DURPLE VS VICINUS: \u201CTHE BEAT WHERE THE MAX FORM TURNS INTO THE WEAK POINT.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE REACHES HIS MAXIMUM AND SOMETHING ELSE COMES OUT OF IT. SAME SHAPE, TWENTY-EIGHT DAYS LATER.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TEKI RETURNS ZERO HITS IN 459 FILES. THE NAME IS HOURS OLD.', cx, top+H*0.800);
+    ctx.fillText('THE PICTURE: AN ORANGE CAT IN A HOODIE, A ROOM OF CRT SCREENS FULL OF CODE AND BINARY, (ERROR) ON THE WALL.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,150,60,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('CAPTABLE IS HIS SPELLING AND IS KEPT AS TYPED.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 WHICH IS MORE POWERFUL? GUESS THE ANSWER \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===717){

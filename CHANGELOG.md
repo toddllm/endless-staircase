@@ -4,6 +4,79 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-15 — TEKI (BEATS 718-720)
+
+Based on Toby's 2026-09-15 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 15, 4:23:41 PM**
+(with a picture) and **Sep 15, 4:37:38 PM**. The first email carries two blocks of his own typing split by a
+pasted reply that guessed the answer the other way; the second is a translation request and a two-word ruling.
+Everything pasted between and under his lines — the power-scaling readings, the hierarchy tables — is
+commentary, not canon.
+
+![Beat 718 — Teki is the newest Classics character ever](screenshots/780-teki-newest-classics-character.png)
+
+- **New beat 718, TEKI IS THE NEWEST CLASSICS CHARACTER EVER.** *"Teki is the newest Classics character ever.
+  Teki came out as a result from Pero LAI reaching max form. Teki is like Scratch Cat, but the Classics mascot
+  and Classics stuff. **It is unknown what Teki is captable yet.** Pero LAI pulled him into code and there, Teki
+  exists. Which is more powerful? Teki or Pero LAI? Guess the answer..."* The attached picture is an orange cat
+  in a hoodie standing in a room of CRT screens full of code and binary, with `(ERROR)` on the wall.
+- **The game already has a cat mascot made of code, and the archive says it in those words.** `simon.md`,
+  Cat-Bot Identity and Origin: Simon is *"a darkly corrupted cat bot who made a game body that became the game's
+  mascot,"* famous for **creating the 404 error and the glitches**. Teki arrives standing in a room full of them.
+- **And Simon was meant to be the normal one.** April 28, Email 183: *"Simon was supposed to be a normal
+  mascot/boss but became more broken and mixed up."* 140 days later a second cat mascot turns up with nothing
+  broken about him yet, because nothing is known about him at all.
+- **"Pulled him into code" is a move this game has only ever given to the cat.** `simon-powers.md`: *"**Binary
+  Speech**: Can speak in binary code to summon Black."*
+- **A new name here normally arrives with a power list. This one arrives blank.** *captable* is his spelling and
+  is kept as typed.
+- **"Came out as a result from Pero LAI reaching max form."** August 18, beat 380, Durple Vs Vicinus is this
+  file's own rule for a maximum: *"the beat where the max form turns into the weak point."*
+
+![Beat 719 — It is Teki. He is the first code born](screenshots/781-it-is-teki-first-code-born.png)
+
+- **New beat 719, IT IS TEKI. HE IS THE FIRST CODE BORN.** *"It is Teki. Pero LAI is the creator of Classics and
+  Newtale, but Teki is the one who is the mascot and **made Pero LAI with a cheat command using binary, infinity
+  lines of binary**, Pero LAI was created, **Teki hid behind the code forever til now**. He is the first code
+  born, Pero LAI was second. Teki can add anything, delete anything, from any game or universe. Teki made Gaster
+  the Omniverse, Pero LAI isn't omnipotent."* Then the 30-hour lecture, 66 more hours, and *"Teki turned him off
+  and left him doing the stuff Mr. Fun Computer makes Pero LAI do."*
+- **"Cheat command" has exactly one prior in this archive and it does the same job.** July 28, Email 846: *"King
+  Multiverse is the 4th strongest Sans… **Error 404 created him with a cheat command**."* This wiki's own line on
+  it is *"He did not climb past 4th place, he **wrote** the thing in 4th place."* A cheat command here is not an
+  attack, it is how you author the one above you — and both times it lands as a ranking reveal, not a fight.
+- **Binary in this game has always been a summoning language.** *"Binary Speech: Can speak in binary code to
+  summon Black"*; Black later **glitches into binary** when he stops parsing as a character. It has summoned one
+  character before. Tonight the same language writes the creator of two games.
+- **Pero already had a father on paper, and Teki is not him.** *"ToddLLM 001 is the creator of the game. ToddLLM
+  002 is 001's father and appears only if 001 is corrupted… **001 can revert 002**."* Two days ago, beat 714, he
+  summoned both to get back up. He cannot revert this one; it turned him off.
+- **No beam, no clash, no Hyperspace — the whole fight is "Teki turned him off."** And Pero hands away a record
+  that belongs to somebody: *"the only character who never died or lost was Teki."* June 21: *"Oren.EXE never
+  lost"* is the **only undefeated record in this archive**.
+- **The "I am not a robot" tests are 24 hours old and now permanent.** They had zero hits here until yesterday's
+  beat 715. **Mr. Fun Computer** is the archive's fake-safety character: *"everything is safe, you are safe…
+  RUN WHILE YOU STILL CAN."*
+
+![Beat 720 — Pero LAI is currently being beaten by Teki](screenshots/782-currently-being-beaten-by-teki.png)
+
+- **New beat 720, PERO LAI IS CURRENTLY BEING BEATEN BY TEKI.** *"Write 'Pero LAI is currently being beaten by
+  Teki' in Japanese"* → 「ペロLAIは現在、テキに負けています。」 → *"Yeah, he is."*
+- **There has been Japanese in this archive exactly once, and it was a title, not a sentence.** May 23, Email 349:
+  Karuto's white shirt symbols, canonized as **全能カルート — "Almighty Karuto" / "Omnipotent Karuto"** — with
+  **果て無き師, "Endless Master"**, on the trousers. Both were worn, and Simon could not look at how bright they
+  were. The one Japanese word on record here is *omnipotent*, and it is a boast you put on.
+- **Tonight's Japanese is a status line about somebody losing, and he asked for it himself.** Five days ago, beat
+  697: *"Everyone now knows you aren't omnipotent."* Two hours ago, in the same message: *"Pero LAI isn't
+  omnipotent."*
+- **The method is the same method, 115 days apart.** The May 23 index entry reads *"Toby copies a translation
+  conversation into the email."* So does tonight's.
+- **The load-bearing word is 現在, "currently."** He did not ask for *"Teki beat Pero LAI."* He usually writes a
+  ranking as a fact; this one he dated.
+- **Somebody has been put above Pero before, and the archive timed it.** August 19: *"Gaster is now above Pero."*
+  By August 24 Gaster was third. That one lasted five days.
+- **テキ is Teki in katakana**, the script Japanese keeps for names that came from outside.
+- Re-captured screenshots 778 and 779 for the beat-ladder window shift.
+
 ## 2026-09-14 — CHOCOLATE KARMA, PHASE 5 ULTIMATE FORM (BEAT 717)
 
 Based on Toby's 2026-09-14 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 14, 6:46:28 PM**,
