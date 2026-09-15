@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-15 — THERE IS NO BEING IN FICTION ANYMORE (BEAT 721)
+
+Based on Toby's 2026-09-15 lore — the same thread, **Sep 15, 4:52:12 PM**, fifteen minutes after the Japanese
+scoreline. The whole message is his own typing, with an attached picture.
+
+![Beat 721 — There is no being in fiction anymore](screenshots/783-no-being-in-fiction-anymore.png)
+
+- **New beat 721, THERE IS NO BEING IN FICTION ANYMORE.** *"Pero LAI now is strived to beat Teki, Pero LAI
+  collected the impossible FULL POWER, then Pero LAI **walked down INFINITY stairs with Mindy Starchild**, Pero
+  LAI beaten Mindy Starchild at the bottom, **Pero LAI then destroyed Star Steed**, Pero LAI now battles Teki
+  the first time, **and he won**… **there is no being in fiction anymore**, Pero LAI beaten them all… **Pero LAI
+  is now the deepest anomally.**"*
+- **He walks down the staircase this game is named after, and he is the one who deleted it.** The Endless
+  Staircase was Classics' final level, and **ToddLLM 001 — Pero LAI — removed it from the timeline entirely on
+  June 24**, so every fight since has been staged *"where the Endless Staircase used to be."*
+- **Mindy Starchild is not a spare name; she is the hero-side answer to Pero himself.** June 29, Email 603:
+  *"the most legendary and most powerful hero in the game,"* neutral, *"neither pacifist or genocide,"* whose
+  **Invincibility Cube** *"brings her power to infinity and a single touch would vaporize anything."*
+- **Star Steed is the second kingdom.** Her first was destroyed *"several million times,"* and on the last break
+  she and her friends *"can't build it in time, the Kingdom rusted away."* Star Steed is what she made after
+  that. He destroys the replacement.
+- **And he hits her in the order that costs the most.** Her own combat rule: in a fight she only cares about her
+  life, **not the kingdom, until the battle is over**. He beats her first, then takes Star Steed — after she has
+  started caring about it again.
+- **"The deepest anomally" keeps one of three titles he was given two weeks ago.** September 2: *"Pero is
+  basically all three"* — a god, an abstracted, and an anomally. Tonight he keeps one and goes **down** with it.
+- **He shrinks to a one-foot humanoid, and the picture draws him filling a cathedral** — top hat, ragged coat of
+  eyes and holes, tentacles from the eyes, the mouth extended far down, plaques reading *"ALL FICTIONS HAVE
+  FALLEN. I AM PERO LAI. THE LAST. THE ONLY. FOREVER."* and *"A DYING VICTORY IS STILL A VICTORY."* Each eye now
+  contains **666 eyes**.
+- *anomally* and *multation* are his spellings and are kept as typed.
+- Re-captured screenshots 781 and 782 for the beat-ladder window shift.
+
 ## 2026-09-15 — TEKI (BEATS 718-720)
 
 Based on Toby's 2026-09-15 lore — the "Even (5x) more of Pero Neka/LAI Omazen" thread, **Sep 15, 4:23:41 PM**

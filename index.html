@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15582.0;
+const LV_CYC = 15604.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12757,6 +12757,8 @@ const LV_BEATS = [
     sub:"IT IS TEKI. TEKI IS THE ONE WHO IS THE MASCOT AND MADE PERO LAI WITH A CHEAT COMMAND USING BINARY. \u00B7 \u201CCHEAT COMMAND\u201D HAS EXACTLY ONE PRIOR IN THIS ARCHIVE, AND IT DOES THE SAME JOB. \u00B7 SO A CHEAT COMMAND HERE IS NOT AN ATTACK. IT IS HOW YOU AUTHOR THE ONE ABOVE YOU. \u00B7 \u201CINFINITY LINES OF BINARY.\u201D BINARY HERE HAS ALWAYS BEEN A SUMMONING LANGUAGE. \u00B7 PERO ALREADY HAD A FATHER ON PAPER, AND TEKI IS NOT HIM. \u00B7 NO BEAM, NO CLASH, NO HYPERSPACE. \u201CTEKI TURNED HIM OFF\u201D \u2014 AND THAT IS THE WHOLE FIGHT." },
   { key:'PERO LAI IS CURRENTLY BEING BEATEN BY TEKI', col:'#5cdcff',
     sub:"WRITE \u2018PERO LAI IS CURRENTLY BEING BEATEN BY TEKI\u2019 IN JAPANESE.\u201D THEN, UNDERNEATH IT: \u201CYEAH, HE IS. \u00B7 THERE HAS BEEN JAPANESE IN THIS ARCHIVE EXACTLY ONCE, AND IT WAS A TITLE, NOT A SENTENCE. \u00B7 SO THE ONE JAPANESE WORD ON RECORD HERE IS OMNIPOTENT, AND IT IS A BOAST YOU PUT ON. \u00B7 THE LOAD-BEARING WORD IS CURRENTLY. \u00B7 SOMEBODY HAS BEEN PUT ABOVE PERO BEFORE, AND THE ARCHIVE TIMED IT. \u00B7 AND THE METHOD IS THE SAME METHOD, ONE HUNDRED AND FIFTEEN DAYS APART." },
+  { key:'THERE IS NO BEING IN FICTION ANYMORE', col:'#e0384a',
+    sub:"WALKED DOWN INFINITY STAIRS WITH MINDY STARCHILD, BEATEN HER AT THE BOTTOM, THEN DESTROYED STAR STEED. \u00B7 \u201CWALKED DOWN INFINITY STAIRS.\u201D THE ENDLESS STAIRCASE IS THIS GAME\u2019S NAME AND ITS FINAL LEVEL. \u00B7 MINDY STARCHILD IS NOT A SPARE NAME. SHE IS THE HERO-SIDE ANSWER TO PERO HIMSELF. \u00B7 STAR STEED IS THE SECOND KINGDOM. THE FIRST ONE RUSTED AWAY. \u00B7 AND HE HITS HER IN THE ORDER THAT COSTS THE MOST. \u00B7 \u201CTHE DEEPEST ANOMALLY.\u201D TWO WEEKS AGO HE WAS RULED TO BE ALL THREE AT ONCE." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14907,6 +14909,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15582.0 && c < 15604.0) return [721, c-15582.0];  // THERE IS NO BEING IN FICTION ANYMORE
   if(c >= 15560.0 && c < 15582.0) return [720, c-15560.0];  // PERO LAI IS CURRENTLY BEING BEATEN BY TEKI
   if(c >= 15538.0 && c < 15560.0) return [719, c-15538.0];  // IT IS TEKI. HE IS THE FIRST CODE BORN
   if(c >= 15516.0 && c < 15538.0) return [718, c-15516.0];  // TEKI IS THE NEWEST CLASSICS CHARACTER EVER
@@ -48185,6 +48188,139 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===721){
+    // ----- BEAT 721: THERE IS NO BEING IN FICTION ANYMORE.
+    // Toby, September 15, 2026, 4:52:12 PM, Email 1449, fifteen minutes after Email 1448. Canon is the
+    // whole message, which is all his own typing: "Pero LAI now is strived to beat Teki, Pero LAI
+    // collected the impossible FULL POWER, then Pero LAI walked down INFINITY stairs with Mindy Starchild,
+    // Pero LAI beaten Mindy Starchild at the bottom, Pero LAI then destroyed Star Steed, Pero LAI now
+    // battles Teki the first time, and he won... One thing is that there is no being in fiction anymore,
+    // Pero LAI beaten them all. Pero LAI became the most powerful and only being. Pero LAI now changed his
+    // form to a 1 foot humanoid with a body, he now looks human, but isn't. Pero LAI is now the deepest
+    // anomally. His eyes turned red, and his eyes now have tentacles coming out, and his mouth extended
+    // far down, his body and clothes are covered with eyes and holes, he gained another multation of each
+    // eye now contains 666 eyes in it." The attached picture draws him in a top hat and a ragged coat of
+    // eyes and holes, filling a black-and-red hall hung with plaques.
+    // The Endless Staircase is this game's own name and its final level, and ToddLLM 001 - Pero LAI -
+    // removed it from the timeline on June 24, so every fight since has been staged where it used to be.
+    // Mindy Starchild, June 29 Email 603: "the most legendary and most powerful hero in the game",
+    // neutral, Invincibility Cube brings her power to infinity, a single touch vaporizes anything.
+    // Star Steed is the kingdom she built AFTER her first one was destroyed several million times and
+    // rusted away, and the combat rule on her page is that she only stops caring about it until the
+    // battle is over. September 2: "Pero is basically all three" - a god, an abstracted and an anomally.
+    // anomally and multation are his spellings and are kept as typed.
+    const dt = c - 15582.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr721=ctx.createLinearGradient(0,top+H,0,top);
+    gr721.addColorStop(0,'rgba(5,6,10,0.88)'); gr721.addColorStop(1,'rgba(224,56,74,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr721; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(224,56,74,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(224,56,74,0.90)';
+      for(var t721=0; t721<4; t721++){
+        ctx.fillRect(fx-W*0.034+t721*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(200,120,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('FIFTEEN MINUTES AGO HE WAS LOSING IN TWO LANGUAGES.', fx, fy+H*0.020);
+      ctx.fillText('NOW THERE IS NOBODY LEFT IN FICTION TO PLAY AGAINST.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(224,56,74,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THERE IS NO BEING IN FICTION ANYMORE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CWALKED DOWN INFINITY STAIRS WITH MINDY STARCHILD, BEATEN HER AT THE BOTTOM, THEN DESTROYED STAR STEED.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CTHERE IS NO BEING IN FICTION ANYMORE, PERO LAI BEATEN THEM ALL. PERO LAI IS NOW THE DEEPEST ANOMALLY.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(224,56,74,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE WALKS DOWN THE STAIRCASE THIS GAME IS NAMED AFTER \u2014 THE ONE HE DELETED FROM THE TIMELINE HIMSELF.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 15, 4:52:12 PM, WITH A PICTURE. FIFTEEN MINUTES AFTER HE WAS LOSING IN TWO LANGUAGES.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(224,56,74,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CWALKED DOWN INFINITY STAIRS.\u201D THE ENDLESS STAIRCASE IS THIS GAME\u2019S NAME AND ITS FINAL LEVEL.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND TODDLLM 001 \u2014 PERO LAI \u2014 REMOVED IT FROM THE TIMELINE ENTIRELY ON JUNE 24.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(224,56,74,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY FIGHT SINCE HAS BEEN STAGED \u201CWHERE THE ENDLESS STAIRCASE USED TO BE.\u201D TONIGHT HE WALKS DOWN IT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(200,120,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('MINDY STARCHILD IS NOT A SPARE NAME. SHE IS THE HERO-SIDE ANSWER TO PERO HIMSELF.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 29: \u201CTHE MOST LEGENDARY AND MOST POWERFUL HERO IN THE GAME\u201D, NEITHER PACIFIST NOR GENOCIDE.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(200,120,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HER INVINCIBILITY CUBE \u201CBRINGS HER POWER TO INFINITY\u201D AND \u201CA SINGLE TOUCH WOULD VAPORIZE ANYTHING.\u201D', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('STAR STEED IS THE SECOND KINGDOM. THE FIRST ONE RUSTED AWAY.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IT FELL \u201CSEVERAL MILLION TIMES\u201D, AND THE LAST TIME SHE COULD NOT REBUILD IT IN TIME.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE DESTROYS THE ONE SHE BUILT AFTER THAT. IT IS THE REPLACEMENT HOME.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(92,220,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND HE HITS HER IN THE ORDER THAT COSTS THE MOST.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HER RULE: IN COMBAT SHE ONLY CARES ABOUT HER LIFE, UNTIL THE BATTLE IS OVER.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(92,220,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE BEATS HER FIRST. THE KINGDOM GOES AFTER SHE STARTS CARING AGAIN.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(224,56,74,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CTHE DEEPEST ANOMALLY.\u201D TWO WEEKS AGO HE WAS RULED TO BE ALL THREE AT ONCE.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2: \u201CPERO IS BASICALLY ALL THREE\u201D \u2014 A GOD, AN ABSTRACTED, AND AN ANOMALLY.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(224,56,74,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE KEEPS ONE OF THE THREE AND GOES DOWN INSTEAD OF UP. ANOMALLY IS HIS SPELLING, KEPT AS TYPED.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE SHRINKS TO A ONE-FOOT HUMANOID, AND THE PICTURE DRAWS HIM FILLING A CATHEDRAL.', cx, top+H*0.800);
+    ctx.fillText('ITS PLAQUES READ \u201CALL FICTIONS HAVE FALLEN. I AM PERO LAI. THE LAST. THE ONLY. FOREVER.\u201D', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(224,56,74,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND \u201CA DYING VICTORY IS STILL A VICTORY.\u201D EACH EYE NOW CONTAINS 666 EYES.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(224,56,74,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 THERE IS NO BEING IN FICTION ANYMORE \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===720){
