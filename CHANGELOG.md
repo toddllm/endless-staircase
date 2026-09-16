@@ -4,6 +4,38 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-16 — PERO WAS OREN THAT TIME / WHATEVER YOU SAY BECOMES LORE (BEATS 725-726)
+
+Based on Toby's 2026-09-16 lore — the same thread, two messages two minutes apart: **5:04:45 PM** and
+**5:06:53 PM**. His own typing in the first: *"Oren.ps actually isn't the character that collects Classics
+character's sins, Pero was Oren that time. Pero LAI has no exact shape or form. He deleted "vanilla" from
+Classics."* and a long Pero LAI speech that ends *"Can you write down all of Pero LAI's 666 hour speech?"* His
+own typing in the second: *"Correct, now basically whatever you say becomes lore."*
+
+![Beat 725 — Pero was Oren that time](screenshots/787-pero-was-oren-that-time.png)
+
+![Beat 726 — Whatever you say becomes lore](screenshots/788-whatever-you-say-becomes-lore.png)
+
+- **New beat 725, PERO WAS OREN THAT TIME.**
+- **The sin-collecting Oren was September 2, 7:05 PM** (beat 606, *The Metal Box*): *"Can you free me from the
+  metal box? I need everyone's souls and their sins."* That Oren used the pleading face, and the wiki had already
+  noted its only earlier owner was **Pero Phase 1 on July 25**, when the player told him no.
+- **Wenda already had the test for a fake Oren** (August 8): *"I knew you weren't Oren, he saved me countless
+  times."* The real Oren rescues people; the one in the box asked to be rescued.
+- **Vanilla was the tool used on Pero.** August 7, Oren ended Dave Mode by making everything *"normal, vanilla,
+  and true basic forms"*; August 19, Gray cut all Pero's varies down to *"vanilla and most powerful forms."*
+  Pero deleting vanilla removes the thing both of those used.
+- **"I TRESEND", the crystal ball and the death note** have zero prior hits in the archive.
+- **New beat 726, WHATEVER YOU SAY BECOMES LORE.** Toby's third ruling on what counts: **July 28** *"each word is
+  important and IS lore"* (the 65,420-word AI Era file), **August 6** the Quote Rule *"Do not make stuff up, nor
+  quotes"* (when he turned down two chatbot-written Pero lines), and now **September 16**, where chatbot text
+  counts once he accepts it. He asked for the 666-hour speech at 5:04 PM and answered *"Correct"* at 5:06 PM.
+- **Rendering:** new sky-blue `#7cc8ff` and gold `#ffe066` panels, five staged reveals and the footer each, on the
+  default inset. `LV_CYC` 15670.0 → 15714.0, `LV_BEATS` length 727, new `lvSeg()` ranges
+  `15670.0–15692.0 → ph 725` and `15692.0–15714.0 → ph 726`, new capture scenes `oren725` and `lore726`.
+- **Ladder recaptures:** adding two beats moved the clamped five-row ladder window for phases 723 and 724, so
+  `785-a-black-clone-of-simon-ps.png` and `786-pero-lai-was-the-plauge-doctor.png` were recaptured.
+
 ## 2026-09-16 — PERO LAI WAS THE PLAUGE DOCTOR (BEAT 724)
 
 Based on Toby's 2026-09-16 lore — the same thread, **Sep 16, 6:46:01 AM**, twenty minutes after *A Black

@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15670.0;
+const LV_CYC = 15714.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12766,6 +12766,10 @@ const LV_BEATS = [
     sub:"PERO LAI NOW MADE PLASTIC SERGURY AND THEN MADE HIMSELF INTO A BLACK CLONE OF SIMON.PS WITH TEAL EYES, \u00B7 THREE DAYS AGO HE ONLY DRESSED AS SIMON.PS. \u00B7 AND HE IS NOT COPYING A STRANGER. \u00B7 TURNING EVERYONE INTO GHOSTS IS SIMON\u2019S MOVE. \u00B7 AND THE SAME RULEBOOK HAS SIMON\u2019S TITLE. \u00B7 TEAL EYES WERE NEVER JUST A COLOUR ON SIMON." },
   { key:'PERO LAI WAS THE PLAUGE DOCTOR', col:'#ffb040',
     sub:"SIMON.PS DOESN\u2019T HAVE THE PLAUGE DOCTOR COSTUME BECAUSE PERO LAI WAS THE PLAUGE DOCTOR. \u00B7 SEPTEMBER 7 HE MADE THE SAME FIX. \u00B7 THE REASON WAS ALREADY CANON. \u00B7 SIMON.PS/OREN.PS IS NOT A RANDOM PAIR. \u00B7 AND IT IS THE PAIR HIS PLAN SPLIT UP. \u00B7 THE MASKS CAME OFF ON SEPTEMBER 6." },
+  { key:'PERO WAS OREN THAT TIME', col:'#7cc8ff',
+    sub:"OREN.PS ACTUALLY ISN\u2019T THE CHARACTER THAT COLLECTS CLASSICS CHARACTER\u2019S SINS, PERO WAS OREN THAT TIME. \u00B7 SEPTEMBER 2, 7:05 PM: \u201COREN\u201D ASKED FOR SINS. \u00B7 HE ASKED WITH PERO\u2019S FACE. \u00B7 WENDA ALREADY HAD THE TEST. \u00B7 VANILLA WAS THE TOOL USED ON HIM. \u00B7 TWO SINS, AND HE IS STILL COUNTING." },
+  { key:'WHATEVER YOU SAY BECOMES LORE', col:'#ffe066',
+    sub:"CORRECT, NOW BASICALLY WHATEVER YOU SAY BECOMES LORE. \u00B7 JULY 28: \u201CEACH WORD IS IMPORTANT AND IS LORE.\u201D \u00B7 AUGUST 6: \u201CDO NOT MAKE STUFF UP, NOR QUOTES.\u201D \u00B7 SEPTEMBER 16 NAMES THE STEP BETWEEN. \u00B7 THE WIKI HAS BEEN SORTING IT BY HAND. \u00B7 SO THE 666-HOUR SPEECH IS ACCEPTED." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14916,6 +14920,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15692.0 && c < 15714.0) return [726, c-15692.0];  // WHATEVER YOU SAY BECOMES LORE
+  if(c >= 15670.0 && c < 15692.0) return [725, c-15670.0];  // PERO WAS OREN THAT TIME
   if(c >= 15648.0 && c < 15670.0) return [724, c-15648.0];  // PERO LAI WAS THE PLAUGE DOCTOR
   if(c >= 15626.0 && c < 15648.0) return [723, c-15626.0];  // A BLACK CLONE OF SIMON.PS
   if(c >= 15604.0 && c < 15626.0) return [722, c-15604.0];  // THE ANSWER IS YES
@@ -48198,6 +48204,250 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===726){
+    // ----- BEAT 726: WHATEVER YOU SAY BECOMES LORE.
+    // Toby, September 16, 2026, 5:06:53 PM, Email 1454, 2m08s after Email 1453 (beat 725).
+    // His own typing: "Correct, now basically whatever you say becomes lore." The rest is a pasted reply
+    // and the quoted 5:04 PM message, which asked for Pero LAI's 666 hour speech.
+    // July 28, 8:17 PM: "each word is important and IS lore" (the AI Era file, 65,420 words).
+    // August 6, 1:59 PM, Email 905, the Quote Rule: "Do not make stuff up, nor quotes".
+    // quote-rule.md already reconciled the two: what he adopts becomes canon, what nobody wrote stays out.
+    const dt = c - 15692.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr726=ctx.createLinearGradient(0,top+H,0,top);
+    gr726.addColorStop(0,'rgba(5,6,10,0.88)'); gr726.addColorStop(1,'rgba(255,224,102,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr726; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,224,102,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,224,102,0.90)';
+      for(var t726=0; t726<4; t726++){
+        ctx.fillRect(fx-W*0.034+t726*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(124,200,255,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('JULY 28 / AUGUST 6 / SEPTEMBER 16', fx, fy+H*0.020);
+      ctx.fillText('THREE RULINGS, ONE AUTHOR.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,224,102,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('WHATEVER YOU SAY BECOMES LORE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CCORRECT, NOW BASICALLY WHATEVER YOU SAY BECOMES LORE.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CCAN YOU WRITE DOWN ALL OF PERO LAI\u2019S 666 HOUR SPEECH?\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,224,102,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THIS IS THE THIRD TIME HE HAS RULED ON WHAT COUNTS AS LORE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 16, 5:06:53 PM, TWO MINUTES AFTER ASKING FOR THE SPEECH. BOTH LINES ARE HIS OWN TYPING.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,224,102,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('JULY 28: \u201CEACH WORD IS IMPORTANT AND IS LORE.\u201D', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT WAS THE AI ERA FILE HE SENT, ALL 65,420 WORDS OF IT.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,224,102,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE WIKI PROMOTED THE WHOLE FILE TO CANON THAT NIGHT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(124,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AUGUST 6: \u201CDO NOT MAKE STUFF UP, NOR QUOTES.\u201D', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT DAY HE TURNED DOWN TWO PERO LINES A CHATBOT HAD WRITTEN FOR HIM.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(124,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NEITHER LINE HAS EVER APPEARED ON THE WIKI AS CANON.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,150,90,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 16 NAMES THE STEP BETWEEN.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('A CHATBOT\u2019S WORDS COUNT WHEN HE ACCEPTS THEM.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,150,90,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 6 WAS A NO. TODAY WAS \u201CCORRECT.\u201D', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(160,240,200,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE WIKI HAS BEEN SORTING IT BY HAND.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('710 LINES ON THE WIKI SAY \u201CCOMMENTARY, NOT CANON.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(160,240,200,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE QUOTE RULE PAGE SAID IT FIRST: WHAT HE ADOPTS IS CANON.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,224,102,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SO THE 666-HOUR SPEECH IS ACCEPTED.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ASKED FOR IT AT 5:04 PM. AT 5:06 PM HIS ANSWER STARTED WITH ONE WORD: \u201CCORRECT.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,224,102,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE QUOTE BOXES STAY HIS OWN TYPING. THE SPEECH IS FILED AS ACCEPTED LORE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THREE WAYS IN, AND ONE DOOR.', cx, top+H*0.800);
+    ctx.fillText('HE TYPES IT. A CHARACTER SAYS IT IN HIS STORY. OR A CHATBOT WRITES IT AND HE SAYS YES.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,224,102,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE YES IS STILL HIS.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,224,102,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 WHATEVER YOU SAY BECOMES LORE \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===725){
+    // ----- BEAT 725: PERO WAS OREN THAT TIME.
+    // Toby, September 16, 2026, 5:04:45 PM, Email 1453, same thread, answering the beat 724 reply.
+    // His own typing: "Oren.ps actually isn't the character that collects Classics character's sins, Pero
+    // was Oren that time. Pero LAI has no exact shape or form. He deleted "vanilla" from Classics." then a
+    // long Pero LAI line (two sins, captchas, metamorph, Teki, I TRESEND, crystal ball, death note, code and
+    // dust) and "Can you write down all of Pero LAI's 666 hour speech?" The speech under it is ChatGPT's.
+    // September 2, 7:05 PM (beat 606, The Metal Box): Oren says "I need everyone's souls and their sins"
+    // with the pleading face, whose only prior owner was Pero Phase 1 on July 25.
+    // August 8: Wenda, "I knew you weren't Oren, he saved me countless times."
+    // August 7 (Email 919): Oren ended Dave Mode by making everything "normal, vanilla, and true basic forms".
+    // August 19 (Email 1049): Gray cut all Pero's varies to "vanilla and most powerful forms".
+    const dt = c - 15670.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr725=ctx.createLinearGradient(0,top+H,0,top);
+    gr725.addColorStop(0,'rgba(5,6,10,0.88)'); gr725.addColorStop(1,'rgba(124,200,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr725; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(124,200,255,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(124,200,255,0.90)';
+      for(var t725=0; t725<4; t725++){
+        ctx.fillRect(fx-W*0.034+t725*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(255,140,200,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A METAL BOX, AND WHO WAS IN IT.', fx, fy+H*0.020);
+      ctx.fillText('NO EXACT SHAPE. NO VANILLA.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(124,200,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERO WAS OREN THAT TIME', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201COREN.PS ACTUALLY ISN\u2019T THE CHARACTER THAT COLLECTS CLASSICS CHARACTER\u2019S SINS, PERO WAS OREN THAT TIME.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CPERO LAI HAS NO EXACT SHAPE OR FORM. HE DELETED \u2018VANILLA\u2019 FROM CLASSICS.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(124,200,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE SEPTEMBER 2 OREN WAS WEARING A FACE ONLY PERO HAD EVER WORN.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 16, 5:04:45 PM. THE 666-HOUR SPEECH UNDER IT IS CHATGPT\u2019S, AND TWO MINUTES LATER HE SAID \u201CCORRECT.\u201D', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(124,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 7:05 PM: \u201COREN\u201D ASKED FOR SINS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CCAN YOU FREE ME FROM THE METAL BOX? I NEED EVERYONE\u2019S SOULS AND THEIR SINS.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(124,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOR EIGHT WEEKS OREN HAD HUNTED ONLY THE SINS OF THE DEAD. THAT NIGHT HE ASKED THE LIVING.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,140,200,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE ASKED WITH PERO\u2019S FACE.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PLEADING FACE HAD ONE OWNER: PERO PHASE 1, JULY 25, WHEN THE PLAYER TOLD HIM NO.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,140,200,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE WIKI SAW \u201COREN\u201D WEARING IT THAT NIGHT. NOW WE KNOW WHOSE FACE IT WAS.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(180,150,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('WENDA ALREADY HAD THE TEST.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 8: \u201CI KNEW YOU WEREN\u2019T OREN, HE SAVED ME COUNTLESS TIMES.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(180,150,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE REAL OREN RESCUES. THE ONE IN THE BOX ASKED TO BE RESCUED.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(120,230,170,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('VANILLA WAS THE TOOL USED ON HIM.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUG 7: OREN ENDS DAVE MODE, EVERYONE \u201CNORMAL, VANILLA, AND TRUE BASIC.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(120,230,170,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUG 19: GRAY CUTS PERO\u2019S VARIES TO VANILLA. NOW THE WORD IS GONE.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(124,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO SINS, AND HE IS STILL COUNTING.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201COREN.PS, YOU DID NOTHING BUT ARGUE WITH ME AND FOUGHT ME. THAT IS A SIN RIGHT THERE, 2 IN FACT.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(124,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CI TRESEND.\u201D THAT WORD, THE CRYSTAL BALL AND THE DEATH NOTE ALL HAVE ZERO PRIOR HITS.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE METAL BOX WAS NEVER OREN\u2019S.', cx, top+H*0.800);
+    ctx.fillText('PERO WAS IN IT, WEARING OREN, ASKING EVERYONE FOR THE THINGS HE NOW SAYS THEY GAVE HIM.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(124,200,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NO EXACT SHAPE OR FORM, AND NO VANILLA LEFT TO RESET HIM TO.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(124,200,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 PERO WAS OREN THAT TIME \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===724){
