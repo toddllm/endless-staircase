@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15648.0;
+const LV_CYC = 15670.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12764,6 +12764,8 @@ const LV_BEATS = [
 
   { key:'A BLACK CLONE OF SIMON.PS', col:'#3ee6d2',
     sub:"PERO LAI NOW MADE PLASTIC SERGURY AND THEN MADE HIMSELF INTO A BLACK CLONE OF SIMON.PS WITH TEAL EYES, \u00B7 THREE DAYS AGO HE ONLY DRESSED AS SIMON.PS. \u00B7 AND HE IS NOT COPYING A STRANGER. \u00B7 TURNING EVERYONE INTO GHOSTS IS SIMON\u2019S MOVE. \u00B7 AND THE SAME RULEBOOK HAS SIMON\u2019S TITLE. \u00B7 TEAL EYES WERE NEVER JUST A COLOUR ON SIMON." },
+  { key:'PERO LAI WAS THE PLAUGE DOCTOR', col:'#ffb040',
+    sub:"SIMON.PS DOESN\u2019T HAVE THE PLAUGE DOCTOR COSTUME BECAUSE PERO LAI WAS THE PLAUGE DOCTOR. \u00B7 SEPTEMBER 7 HE MADE THE SAME FIX. \u00B7 THE REASON WAS ALREADY CANON. \u00B7 SIMON.PS/OREN.PS IS NOT A RANDOM PAIR. \u00B7 AND IT IS THE PAIR HIS PLAN SPLIT UP. \u00B7 THE MASKS CAME OFF ON SEPTEMBER 6." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14914,6 +14916,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15648.0 && c < 15670.0) return [724, c-15648.0];  // PERO LAI WAS THE PLAUGE DOCTOR
   if(c >= 15626.0 && c < 15648.0) return [723, c-15626.0];  // A BLACK CLONE OF SIMON.PS
   if(c >= 15604.0 && c < 15626.0) return [722, c-15604.0];  // THE ANSWER IS YES
   if(c >= 15582.0 && c < 15604.0) return [721, c-15582.0];  // THERE IS NO BEING IN FICTION ANYMORE
@@ -48195,6 +48198,138 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===724){
+    // ----- BEAT 724: PERO LAI WAS THE PLAUGE DOCTOR.
+    // Toby, September 16, 2026, 6:46:01 AM, Email 1452, same thread, 19m54s after Email 1451 (beat 723).
+    // All of it is his own typing: "Create an image of Simon.ps and Pero LAI. Simon.ps doesn't have the
+    // plauge doctor costume because Pero LAI was the plauge doctor. Pero LAI should be a black clone of
+    // Simon.ps/Oren.ps with teal eyes." The quoted text below it is the 6:26 message and Claude's reply.
+    // September 7, 7:43 PM, Email 1391 (beat 684): "Simon.ps doesn't have a plauge doctor suit. It should
+    // be the actual character of Simon.ps." Same correction nine days earlier, without the reason.
+    // September 1, 4:37 PM: Pero puts on "his plauge doctor suit from when he was Simon.ps", says he was
+    // "the game's plauge doctor the whole time", and fuses "Simon.ps's code, and Oren.ps's code, and New
+    // Gaster's code" into "a Supremely powerful Plauge Doctor form".
+    // September 9, 4:40 PM (beat 695): "Oren.ps with Simon.ps will beat litterly anyone."
+    // September 6, 8:55 AM: "Simon.ps and the other Sprunkis take off their plauge doctor masks."
+    // plauge is his spelling and is kept as typed.
+    const dt = c - 15648.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr724=ctx.createLinearGradient(0,top+H,0,top);
+    gr724.addColorStop(0,'rgba(5,6,10,0.88)'); gr724.addColorStop(1,'rgba(255,176,64,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr724; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      for(var pr724=0; pr724<2; pr724++){
+        const bx = fx + (pr724===0?-1:1)*W*0.030, by = fy-H*0.0150;
+        ctx.globalAlpha=g*wrA*0.95; ctx.lineWidth=0.5;
+        ctx.fillStyle = pr724===0 ? 'rgba(255,214,72,1)' : 'rgba(4,4,7,1)'; ctx.strokeStyle = pr724===0 ? 'rgba(120,90,20,0.8)' : 'rgba(62,230,210,0.70)';
+        ctx.beginPath(); ctx.moveTo(bx-W*0.0110, by-H*0.0040); ctx.lineTo(bx-W*0.0090, by-H*0.0125); ctx.lineTo(bx-W*0.0030, by-H*0.0085);
+        ctx.lineTo(bx+W*0.0030, by-H*0.0085); ctx.lineTo(bx+W*0.0090, by-H*0.0125); ctx.lineTo(bx+W*0.0110, by-H*0.0040);
+        ctx.lineTo(bx+W*0.0080, by+H*0.0010); ctx.lineTo(bx+W*0.0110, by+H*0.0095); ctx.lineTo(bx-W*0.0110, by+H*0.0095);
+        ctx.lineTo(bx-W*0.0080, by+H*0.0010); ctx.closePath(); ctx.fill(); ctx.stroke();
+        ctx.globalAlpha=g*wrA*(pr724===0 ? 0.90 : (0.80+0.20*pul)); ctx.fillStyle = pr724===0 ? 'rgba(30,24,10,1)' : 'rgba(62,230,210,1)';
+        for(var ey724=-1; ey724<=1; ey724+=2){
+          ctx.save(); ctx.translate(bx+ey724*W*0.0048, by-H*0.0050); ctx.rotate(pr724===0 ? 0 : ey724*0.35);
+          ctx.beginPath(); ctx.arc(0, 0, W*0.0030, 0, Math.PI); ctx.closePath(); ctx.fill(); ctx.restore();
+        }
+      }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('SIMON.PS IN YELLOW, NO MASK.', fx, fy+H*0.020);
+      ctx.fillText('PERO LAI IN BLACK, TEAL EYES.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,176,64,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERO LAI WAS THE PLAUGE DOCTOR', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CSIMON.PS DOESN\u2019T HAVE THE PLAUGE DOCTOR COSTUME BECAUSE PERO LAI WAS THE PLAUGE DOCTOR.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CPERO LAI SHOULD BE A BLACK CLONE OF SIMON.PS/OREN.PS WITH TEAL EYES\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,176,64,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('NINE DAYS AGO HE MADE THIS SAME CORRECTION. THIS TIME HE WROTE DOWN WHY.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 16, 6:46:01 AM, TWENTY MINUTES AFTER THE SURGERY. ALL OF IT IS HIS OWN TYPING.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,176,64,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 7 HE MADE THE SAME FIX.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('7:43 PM: \u201CSIMON.PS DOESN\u2019T HAVE A PLAUGE DOCTOR SUIT. IT SHOULD BE THE ACTUAL CHARACTER OF SIMON.PS.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,176,64,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NINE DAYS LATER IT IS THE SAME FIX, AND THIS TIME THE REASON COMES WITH IT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(62,230,210,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE REASON WAS ALREADY CANON.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 1, 4:37 PM: \u201CHE WAS THE GAME\u2019S PLAUGE DOCTOR THE WHOLE TIME, EVEN BEFORE SIMON.PS WAS MADE\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(62,230,210,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO PUT ON \u201CHIS PLAUGE DOCTOR SUIT FROM WHEN HE WAS SIMON.PS.\u201D IT WAS NEVER SIMON\u2019S SUIT.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,150,60,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SIMON.PS/OREN.PS IS NOT A RANDOM PAIR.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT SAME AFTERNOON HE FUSED \u201CSIMON.PS\u2019S CODE, AND OREN.PS\u2019S CODE, AND NEW GASTER\u2019S CODE\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,150,60,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('INTO \u201CA SUPREMELY POWERFUL PLAUGE DOCTOR FORM.\u201D THE CLONE IS TWO OF THOSE THREE.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,214,72,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND IT IS THE PAIR HIS PLAN SPLIT UP.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 9: \u201COREN.PS WITH SIMON.PS WILL BEAT LITTERLY ANYONE.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,214,72,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('PHASE 1 WAS TO GET THEM TO SEPERATE. NOW HE HAS BOTH OF THEM IN ONE BODY.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,176,64,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE MASKS CAME OFF ON SEPTEMBER 6.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('8:55 AM: \u201CSIMON.PS AND THE OTHER SPRUNKIS TAKE OFF THEIR PLAUGE DOCTOR MASKS.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,176,64,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE TWENTY ARE NEVER WRITTEN PUTTING ONE ON. THE ONLY ONE WHO EVER DOES IS PERO.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIMON.PS STAYS YELLOW, AND STAYS HIMSELF.', cx, top+H*0.800);
+    ctx.fillText('NEXT TO HIM IS THE SAME SHAPE IN BLACK, WITH TEAL EYES.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,176,64,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PLAUGE DOCTOR IS NOT IN THE PICTURE. HE IS THE ONE STANDING NEXT TO SIMON.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,176,64,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 PERO LAI WAS THE PLAUGE DOCTOR \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===723){

@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-16 — PERO LAI WAS THE PLAUGE DOCTOR (BEAT 724)
+
+Based on Toby's 2026-09-16 lore — the same thread, **Sep 16, 6:46:01 AM**, twenty minutes after *A Black
+Clone Of Simon.ps*. All of it is his own typing: *"Create an image of Simon.ps and Pero LAI. Simon.ps doesn't
+have the plauge doctor costume because Pero LAI was the plauge doctor. Pero LAI should be a black clone of
+Simon.ps/Oren.ps with teal eyes."*
+
+![Beat 724 — Pero LAI was the plauge doctor](screenshots/786-pero-lai-was-the-plauge-doctor.png)
+
+- **New beat 724, PERO LAI WAS THE PLAUGE DOCTOR.**
+- **He made this same correction nine days ago.** **September 7, 7:43 PM** (beat 684): *"Simon.ps doesn't have
+  a plauge doctor suit. It should be the actual character of Simon.ps."* This time the reason comes with it.
+- **The reason was already canon.** **September 1, 4:37 PM**: Pero puts on *"his plauge doctor suit from when he
+  was Simon.ps"* and says he was *"the game's plauge doctor the whole time, even before Simon.ps was made."*
+- **Simon.ps/Oren.ps is not a random pair.** The same afternoon he fused *"Simon.ps's code, and Oren.ps's code,
+  and New Gaster's code"* into *"a Supremely powerful Plauge Doctor form."* The clone is two of those three.
+- **And it is the pair his plan split up.** **September 9** (beat 695): *"Oren.ps with Simon.ps will beat
+  litterly anyone,"* and Phase 1 of Pero's plan was to get them to separate.
+- **The masks came off on September 6** (*"Simon.ps and the other Sprunkis take off their plauge doctor
+  masks"*), and nobody but Pero is ever written putting one on.
+- **Rendering:** new amber `#ffb040` panel, five staged reveals and the footer, plus a new `pair` inset on the
+  right half clear of the beat ladder: Simon.ps in yellow with plain eyes and no mask, beside the same shape in
+  black with tilted teal half-moon eyes. `LV_CYC` 15648.0 → 15670.0, `LV_BEATS` length 725, new `lvSeg()` range
+  `15648.0–15670.0 → ph 724`, new capture scene `plaguedoctor724`.
+- **Ladder recaptures:** adding beat 724 moved the clamped five-row ladder window for phases 722 and 723, so
+  `784-the-answer-is-yes.png` and `785-a-black-clone-of-simon-ps.png` were recaptured.
+
 ## 2026-09-16 — A BLACK CLONE OF SIMON.PS (BEAT 723)
 
 Based on Toby's 2026-09-16 lore — the same thread, **Sep 16, 6:26:07 AM**, the morning after *The Answer
