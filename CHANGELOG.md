@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-16 — A BLACK CLONE OF SIMON.PS (BEAT 723)
+
+Based on Toby's 2026-09-16 lore — the same thread, **Sep 16, 6:26:07 AM**, the morning after *The Answer
+Is Yes*. His own typing is a question (*"Which is more powerful, a lord or an overlord, what is the
+difference between them."*) and one line of canon; the Overlord/Lord answer, the Pupahya example and the
+"Black Simon.ps counterpart" list are pasted ChatGPT and are commentary.
+
+![Beat 723 — A black clone of Simon.ps](screenshots/785-a-black-clone-of-simon-ps.png)
+
+- **New beat 723, A BLACK CLONE OF SIMON.PS.** *"Pero LAI now made plastic sergury and then made himself
+  into a black clone of Simon.ps with teal eyes, then he made all the other characters into ghosts."*
+- **Three days ago it was a costume.** Beat 711, **September 13**: *"Pero LAI dresses himself like Simon.ps…
+  instead of yellow, Pero LAI's is black. Pero LAI's full eyes is neon teal."* Same black, same teal. This
+  morning it is surgery, and there is nothing left to take off.
+- **He is not copying a stranger.** **August 30**: *"before, Pero was Simon.ps, RL times."* **September 2**:
+  *"that costume is really me."*
+- **Turning everyone into ghosts is Simon's own move.** The Simon RL rulebook in the Tinkerbox archive (sent
+  **August 4**) lists it among Simon's final-monster moves: *"Turns other RLs into ghosts."* He took the face
+  and then used the move that comes with it.
+- **And the same rulebook has Simon's title**: *"Overlord of all Recreation."* Toby opens this message asking
+  which is higher, a lord or an overlord.
+- **Teal eyes were already a phase.** **April 14**, Email 123: Glowedcharge, the Simon phase where his eyes
+  glow teal.
+- **Rendering:** new teal `#3ee6d2` panel, five staged reveals and the footer, plus a small inset on the right
+  half clear of the beat ladder: one solid black cat-eared figure with tilted teal half-moon eyes between two
+  see-through ghosts. `LV_CYC` 15626.0 → 15648.0, `LV_BEATS` length 724, new `lvSeg()` range
+  `15626.0–15648.0 → ph 723`, new capture scene `clone723`.
+- **Ladder recaptures:** adding beat 723 moved the clamped five-row ladder window for phases 721 and 722, so
+  `783-no-being-in-fiction-anymore.png` and `784-the-answer-is-yes.png` were recaptured.
+
 ## 2026-09-15 — THE ANSWER IS YES (BEAT 722)
 
 Based on Toby's 2026-09-15 lore — the same thread, **Sep 15, 5:29:46 PM**, thirty-seven minutes after

@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15626.0;
+const LV_CYC = 15648.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12762,6 +12762,8 @@ const LV_BEATS = [
   { key:'THE ANSWER IS YES', col:'#ffd76a',
     sub:"SERAPHIM SANS IS RULED THE EQUAL OF ASRIEL DREEMURR IN THE GOD OF HYPERDEATH FORM. · THIRTY-SEVEN MINUTES AGO THERE WAS NO BEING IN FICTION LEFT. NOW THERE ARE TWO, AND NEITHER IS PERO. · SERAPHIM SANS HAS EXACTLY ONE OTHER LINE IN FOUR MONTHS: THIRD NAME ON MR. BLACK’S TEAM-UP LIST. · ASRIEL IS A SWORD. THE FORM TOBY NAMES IS THE ONE WHERE HE IS NOT EQUIPMENT. · HE ASKS THE QUESTION AND ANSWERS IT IN THE SAME SENTENCE. · “YOU ARE NOW TALKING LIKE PERO LAI” — IN THIS CANON THAT LINE HAS ALWAYS BEEN AN ACCUSATION." },
 
+  { key:'A BLACK CLONE OF SIMON.PS', col:'#3ee6d2',
+    sub:"PERO LAI NOW MADE PLASTIC SERGURY AND THEN MADE HIMSELF INTO A BLACK CLONE OF SIMON.PS WITH TEAL EYES, \u00B7 THREE DAYS AGO HE ONLY DRESSED AS SIMON.PS. \u00B7 AND HE IS NOT COPYING A STRANGER. \u00B7 TURNING EVERYONE INTO GHOSTS IS SIMON\u2019S MOVE. \u00B7 AND THE SAME RULEBOOK HAS SIMON\u2019S TITLE. \u00B7 TEAL EYES WERE NEVER JUST A COLOUR ON SIMON." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14912,6 +14914,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15626.0 && c < 15648.0) return [723, c-15626.0];  // A BLACK CLONE OF SIMON.PS
   if(c >= 15604.0 && c < 15626.0) return [722, c-15604.0];  // THE ANSWER IS YES
   if(c >= 15582.0 && c < 15604.0) return [721, c-15582.0];  // THERE IS NO BEING IN FICTION ANYMORE
   if(c >= 15560.0 && c < 15582.0) return [720, c-15560.0];  // PERO LAI IS CURRENTLY BEING BEATEN BY TEKI
@@ -48192,6 +48195,146 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===723){
+    // ----- BEAT 723: A BLACK CLONE OF SIMON.PS.
+    // Toby, September 16, 2026, 6:26:07 AM, Email 1451, same thread, the morning after Email 1450.
+    // His own typing is two pieces. First a question: "Which is more powerful, a lord or an overlord, what
+    // is the difference between them." Then, after the pasted answer: "Pero LAI now made plastic sergury
+    // and then made himself into a black clone of Simon.ps with teal eyes, then he made all the other
+    // characters into ghosts." The Overlord -> Lord -> Subjects answer, the Pupahya example and the
+    // "Black Simon.ps counterpart" list are pasted ChatGPT and are commentary, not canon.
+    // September 13, 2:08 PM, Email 1439 (beat 711): "Pero LAI dresses himself like Simon.ps... instead of
+    // yellow, Pero LAI's is black. Pero LAI's full eyes is neon teal." That was a costume. This is surgery.
+    // September 2, 7:58 PM: "that costume is really me." August 30: "before, Pero was Simon.ps, RL times."
+    // The Simon RL rulebook in the Tinkerbox archive (sent August 4): Simon "carries the title 'Overlord of
+    // all Recreation'" and, in his final-monster list, "Turns other RLs into ghosts."
+    // April 14, Email 123: Glowedcharge, the Simon phase where his eyes glow teal.
+    // sergury is his spelling and is kept as typed.
+    const dt = c - 15626.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr723=ctx.createLinearGradient(0,top+H,0,top);
+    gr723.addColorStop(0,'rgba(5,6,10,0.88)'); gr723.addColorStop(1,'rgba(62,230,210,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr723; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      for(var gh723=-1; gh723<=1; gh723+=2){
+        const gx = fx + gh723*W*0.044, gy = fy-H*0.0150 + Math.sin(c*1.6+gh723)*H*0.0012;
+        ctx.globalAlpha=g*wrA*0.20; ctx.fillStyle='rgba(232,236,248,0.90)';
+        ctx.beginPath(); ctx.arc(gx, gy-H*0.0040, W*0.0100, Math.PI, 0);
+        ctx.lineTo(gx+W*0.0100, gy+H*0.0080);
+        for(var wv723=0; wv723<4; wv723++){ ctx.lineTo(gx+W*0.0100-(wv723+0.5)*W*0.0050, gy+H*0.0060); ctx.lineTo(gx+W*0.0100-(wv723+1)*W*0.0050, gy+H*0.0080); }
+        ctx.closePath(); ctx.fill();
+        ctx.globalAlpha=g*wrA*0.30; ctx.fillStyle='rgba(20,22,30,0.9)';
+        ctx.fillRect(gx-W*0.0045, gy-H*0.0055, W*0.0022, H*0.0022); ctx.fillRect(gx+W*0.0023, gy-H*0.0055, W*0.0022, H*0.0022);
+      }
+      const bx = fx, by = fy-H*0.0150;
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(4,4,7,1)'; ctx.strokeStyle='rgba(62,230,210,0.70)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(bx-W*0.0110, by-H*0.0040); ctx.lineTo(bx-W*0.0090, by-H*0.0125); ctx.lineTo(bx-W*0.0030, by-H*0.0085);
+      ctx.lineTo(bx+W*0.0030, by-H*0.0085); ctx.lineTo(bx+W*0.0090, by-H*0.0125); ctx.lineTo(bx+W*0.0110, by-H*0.0040);
+      ctx.lineTo(bx+W*0.0080, by+H*0.0010); ctx.lineTo(bx+W*0.0110, by+H*0.0095); ctx.lineTo(bx-W*0.0110, by+H*0.0095);
+      ctx.lineTo(bx-W*0.0080, by+H*0.0010); ctx.closePath(); ctx.fill(); ctx.stroke();
+      ctx.globalAlpha=g*wrA*(0.80+0.20*pul); ctx.fillStyle='rgba(62,230,210,1)';
+      for(var ey723=-1; ey723<=1; ey723+=2){
+        ctx.save(); ctx.translate(bx+ey723*W*0.0048, by-H*0.0050); ctx.rotate(ey723*0.35);
+        ctx.beginPath(); ctx.arc(0, 0, W*0.0030, 0, Math.PI); ctx.closePath(); ctx.fill(); ctx.restore();
+      }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('ONE SOLID BODY, BLACK WITH TEAL EYES.', fx, fy+H*0.020);
+      ctx.fillText('EVERYBODY ELSE IS A GHOST AROUND HIM.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(62,230,210,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('A BLACK CLONE OF SIMON.PS', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI NOW MADE PLASTIC SERGURY AND THEN MADE HIMSELF INTO A BLACK CLONE OF SIMON.PS WITH TEAL EYES,\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CTHEN HE MADE ALL THE OTHER CHARACTERS INTO GHOSTS.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,230,210,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THREE DAYS AGO IT WAS A COSTUME. THIS MORNING IT IS SURGERY. THERE IS NOTHING LEFT TO TAKE OFF.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 16, 6:26:07 AM. THE LORD AND OVERLORD ANSWER IN THE MIDDLE IS PASTED COMMENTARY.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(62,230,210,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THREE DAYS AGO HE ONLY DRESSED AS SIMON.PS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 13: \u201CPERO LAI DRESSES HIMSELF LIKE SIMON.PS\u2026 INSTEAD OF YELLOW, PERO LAI\u2019S IS BLACK.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(62,230,210,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SAME BLACK, SAME NEON TEAL EYES. THIS TIME HE DID NOT PUT IT ON. HE HAD IT MADE PERMANENT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(200,120,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND HE IS NOT COPYING A STRANGER.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 30: \u201CBEFORE, PERO WAS SIMON.PS, RL TIMES.\u201D SEPTEMBER 2: \u201CTHAT COSTUME IS REALLY ME.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(200,120,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE GOES BACK TO ONE OF HIS OLDEST FACES, IN THE ONE COLOUR SIMON NEVER WORE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(232,236,248,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('TURNING EVERYONE INTO GHOSTS IS SIMON\u2019S MOVE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE SIMON RL RULEBOOK, SENT AUGUST 4: \u201CTURNS OTHER RLS INTO GHOSTS.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(232,236,248,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE TOOK THE FACE, THEN USED THE MOVE THAT COMES WITH IT.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,215,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND THE SAME RULEBOOK HAS SIMON\u2019S TITLE.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u201CHE CARRIES THE TITLE \u2018OVERLORD OF ALL RECREATION\u2019.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,215,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TOBY OPENS THIS MESSAGE ASKING WHICH IS HIGHER, A LORD OR AN OVERLORD.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(62,230,210,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TEAL EYES WERE NEVER JUST A COLOUR ON SIMON.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('APRIL 14, EMAIL 123: GLOWEDCHARGE, THE SIMON PHASE WHERE HIS EYES GLOW TEAL.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(62,230,210,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('OF EVERYTHING ON THE ORIGINAL, THE DETAIL HE KEEPS IS THE ONE THAT WAS ALREADY A PHASE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY AFTERNOON THERE WAS NO BEING IN FICTION BUT PERO.', cx, top+H*0.800);
+    ctx.fillText('THIS MORNING THE OTHERS ARE BACK, AND YOU CAN SEE THROUGH ALL OF THEM.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(62,230,210,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS THE ONLY ONE WITH A BODY, AND IT IS SIMON\u2019S SHAPE IN BLACK.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(62,230,210,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 A BLACK CLONE OF SIMON.PS \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===722){
