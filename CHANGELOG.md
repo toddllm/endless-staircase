@@ -47,9 +47,11 @@ canon.
   Phase 2 beat her with a single beam**.
 - **The nearest ranking precedent lasted five days.** August 19, 11:52 AM: *"Gaster is now above Pero."* By August 24
   Gaster was third.
-- **He has closed his own losing three times before**, and the wording is always dated: August 29 ended PERO ALWAYS
-  WINS, August 31 was PERO JUST LOSES, September 14 was *"now I am impossible to kill now."* **"No longer" and
-  "currently" are the same kind of word** — both date a thing instead of settling it.
+- **The win rule has flipped four times since July, and every version of it is dated.** **Beat 182, July 24**, was
+  PERO ALWAYS WINS and held thirty-six days, the load-bearing wall of the whole era. **August 29, 6:53 AM**, beat 523,
+  was PERO LOST and broke it. **August 31** was PERO JUST LOSES. **September 11, 4:33 PM**: *"But me, always wins
+  now."* **September 14**: *"now I am impossible to kill now."* **"No longer" and "currently" are the same kind of
+  word** — both date a thing instead of settling it.
 - **Rendering:** violet `#a78bfa` for 734 and gold `#ffd166` for 735, on the standard five-panel layout with the
   default inset. `LV_CYC` 15868.0 → 15912.0, `LV_BEATS` length 736, new `lvSeg()` ranges `15868.0–15890.0 → ph 734`
   and `15890.0–15912.0 → ph 735`, new capture scenes `deathhimself734` and `defeatable735`. Runtime probe: len 736 /
