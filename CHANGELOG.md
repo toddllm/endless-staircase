@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-17 — THE GAME'S 2 ANOMALIES (BEAT 727)
+
+Based on Toby's 2026-09-17 lore, **6:08:27 AM**, on the same thread, with an attached picture of Gaster and Pero
+LAI. His own typing: *"Create an image of Gaster and Pero LAI"*, *"try again"*, and *"The game's 2 anomalies. Yeah
+there is basically only 2."* The two-name list under it (Newtale Gaster, Pero LAI) is a pasted reply agreeing with him.
+
+![Beat 727 — The game's 2 anomalies](screenshots/789-the-games-2-anomalies.png)
+
+- **New beat 727, THE GAME'S 2 ANOMALIES.**
+- **Yesterday the count was one.** September 16, 5:04 PM, in Toby's own typing, Pero LAI says *"I am the only
+  Classics anomally."* Thirteen hours later there are two.
+- **Where the word came from:** September 2, 8:55 AM, *"Pero is basically all three"* (god, abstracted, anomally);
+  the same evening at 8:29 PM *"Oren becomes no other than an anomally"*, and Oren is not on today's list;
+  September 15, 4:52 PM, *"Pero LAI is now the deepest anomally."*
+- **Gaster is new to the word.** No Gaster has been called an anomaly anywhere in the archive before today.
+- **The picture** puts Gaster among error boxes and writes Toby's September 16 lines on Pero's side, including
+  *"I TRESEND."*
+- **Rendering:** new lavender `#c8b8ff` panels on the standard five-panel layout, and a new `anomalies` inset: a
+  white cracked mask among error boxes beside a black cat-bodied figure with tilted teal eyes. `LV_CYC` 15714.0 →
+  15736.0, `LV_BEATS` length 728, new `lvSeg()` range `15714.0–15736.0 → ph 727`, new capture scene `anomalies727`.
+- **Ladder recaptures:** the new beat moved the clamped five-row ladder window for phases 725 and 726, so
+  `787-pero-was-oren-that-time.png` and `788-whatever-you-say-becomes-lore.png` were recaptured.
+
 ## 2026-09-16 — PERO WAS OREN THAT TIME / WHATEVER YOU SAY BECOMES LORE (BEATS 725-726)
 
 Based on Toby's 2026-09-16 lore — the same thread, two messages two minutes apart: **5:04:45 PM** and

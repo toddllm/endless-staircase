@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15714.0;
+const LV_CYC = 15736.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12770,6 +12770,8 @@ const LV_BEATS = [
     sub:"OREN.PS ACTUALLY ISN\u2019T THE CHARACTER THAT COLLECTS CLASSICS CHARACTER\u2019S SINS, PERO WAS OREN THAT TIME. \u00B7 SEPTEMBER 2, 7:05 PM: \u201COREN\u201D ASKED FOR SINS. \u00B7 HE ASKED WITH PERO\u2019S FACE. \u00B7 WENDA ALREADY HAD THE TEST. \u00B7 VANILLA WAS THE TOOL USED ON HIM. \u00B7 TWO SINS, AND HE IS STILL COUNTING." },
   { key:'WHATEVER YOU SAY BECOMES LORE', col:'#ffe066',
     sub:"CORRECT, NOW BASICALLY WHATEVER YOU SAY BECOMES LORE. \u00B7 JULY 28: \u201CEACH WORD IS IMPORTANT AND IS LORE.\u201D \u00B7 AUGUST 6: \u201CDO NOT MAKE STUFF UP, NOR QUOTES.\u201D \u00B7 SEPTEMBER 16 NAMES THE STEP BETWEEN. \u00B7 THE WIKI HAS BEEN SORTING IT BY HAND. \u00B7 SO THE 666-HOUR SPEECH IS ACCEPTED." },
+  { key:'THE GAME\u2019S 2 ANOMALIES', col:'#c8b8ff',
+    sub:"THE GAME\u2019S 2 ANOMALIES. YEAH THERE IS BASICALLY ONLY 2. \u00B7 SEPTEMBER 16, 5:04 PM: \u201CI AM THE ONLY CLASSICS ANOMALLY.\u201D \u00B7 SEPTEMBER 2, 8:55 AM: GOD, ABSTRACTED, ANOMALLY. \u00B7 SEPTEMBER 2, 8:29 PM: OREN WAS ONE. \u00B7 SEPTEMBER 15: \u201CTHE DEEPEST ANOMALLY.\u201D \u00B7 GASTER IS NEW TO THE WORD." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14920,6 +14922,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15714.0 && c < 15736.0) return [727, c-15714.0];  // THE GAME?S 2 ANOMALIES
   if(c >= 15692.0 && c < 15714.0) return [726, c-15692.0];  // WHATEVER YOU SAY BECOMES LORE
   if(c >= 15670.0 && c < 15692.0) return [725, c-15670.0];  // PERO WAS OREN THAT TIME
   if(c >= 15648.0 && c < 15670.0) return [724, c-15648.0];  // PERO LAI WAS THE PLAUGE DOCTOR
@@ -48204,6 +48207,150 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===727){
+    // ----- BEAT 727: THE GAME'S 2 ANOMALIES.
+    // Toby, September 17, 2026, 6:08:27 AM, Email 1455, same thread, with an attached image of Gaster and Pero LAI.
+    // His own typing: "Create an image of Gaster and Pero LAI", "try again", "The game's 2 anomalies.
+    // Yeah there is basically only 2." The list under it (Newtale Gaster, Pero LAI) is a pasted reply agreeing.
+    // September 16, 5:04 PM (Email 1453, his typing): Pero LAI says "I am the only Classics anomally".
+    // September 2, 8:55 AM (Email 1289): "Pero is basically all three" (god, abstracted, anomally).
+    // September 2, 8:29 PM (Email 1316): "Oren becomes no other than an anomally".
+    // September 15, 4:52 PM (Email 1449): "Pero LAI is now the deepest anomally."
+    // Gaster and anomaly have never shared a sentence in the archive before today.
+    const dt = c - 15714.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr727=ctx.createLinearGradient(0,top+H,0,top);
+    gr727.addColorStop(0,'rgba(5,6,10,0.88)'); gr727.addColorStop(1,'rgba(200,184,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr727; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      const gx = fx - W*0.030, gy = fy-H*0.0150;
+      ctx.globalAlpha=g*wrA*0.55; ctx.strokeStyle='rgba(200,184,255,0.80)'; ctx.fillStyle='rgba(12,12,18,0.95)'; ctx.lineWidth=0.4;
+      for(var eb727=0; eb727<4; eb727++){
+        const ex = gx + [-1.6,1.5,-1.3,1.7][eb727]*W*0.0105, ey = gy + [-0.9,-0.4,0.7,1.0][eb727]*H*0.0100;
+        ctx.fillRect(ex-W*0.0040, ey-H*0.0022, W*0.0080, H*0.0044); ctx.strokeRect(ex-W*0.0040, ey-H*0.0022, W*0.0080, H*0.0044);
+      }
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(238,238,246,1)'; ctx.strokeStyle='rgba(200,184,255,0.60)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.ellipse(gx, gy-H*0.0010, W*0.0095, H*0.0092, 0, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+      ctx.fillStyle='rgba(10,10,14,1)';
+      ctx.beginPath(); ctx.arc(gx-W*0.0038, gy-H*0.0030, W*0.0020, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(gx+W*0.0038, gy-H*0.0030, W*0.0020, 0, Math.PI*2); ctx.fill();
+      ctx.strokeStyle='rgba(10,10,14,0.95)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.moveTo(gx-W*0.0038, gy-H*0.0050); ctx.lineTo(gx-W*0.0028, gy-H*0.0098);
+      ctx.moveTo(gx+W*0.0038, gy-H*0.0010); ctx.lineTo(gx+W*0.0030, gy+H*0.0030); ctx.stroke();
+      ctx.beginPath(); ctx.arc(gx, gy+H*0.0015, W*0.0045, 0.15*Math.PI, 0.85*Math.PI); ctx.stroke();
+      const bx = fx + W*0.030, by = fy-H*0.0150;
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(4,4,7,1)'; ctx.strokeStyle='rgba(90,230,220,0.70)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(bx-W*0.0110, by-H*0.0040); ctx.lineTo(bx-W*0.0090, by-H*0.0125); ctx.lineTo(bx-W*0.0030, by-H*0.0085);
+      ctx.lineTo(bx+W*0.0030, by-H*0.0085); ctx.lineTo(bx+W*0.0090, by-H*0.0125); ctx.lineTo(bx+W*0.0110, by-H*0.0040);
+      ctx.lineTo(bx+W*0.0080, by+H*0.0010); ctx.lineTo(bx+W*0.0110, by+H*0.0095); ctx.lineTo(bx-W*0.0110, by+H*0.0095);
+      ctx.lineTo(bx-W*0.0080, by+H*0.0010); ctx.closePath(); ctx.fill(); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.55; ctx.fillStyle='rgba(90,230,220,1)';
+      for(var ed727=0; ed727<5; ed727++){
+        ctx.beginPath(); ctx.arc(bx + [-0.55,0.45,-0.25,0.60,0.05][ed727]*W*0.0110, by + [0.25,0.40,0.70,0.80,0.55][ed727]*H*0.0100, W*0.0009, 0, Math.PI*2); ctx.fill();
+      }
+      ctx.globalAlpha=g*wrA*(0.80+0.20*pul); ctx.fillStyle='rgba(90,230,220,1)';
+      for(var ey727=-1; ey727<=1; ey727+=2){
+        ctx.save(); ctx.translate(bx+ey727*W*0.0048, by-H*0.0050); ctx.rotate(ey727*0.35);
+        ctx.beginPath(); ctx.arc(0, 0, W*0.0030, 0, Math.PI); ctx.closePath(); ctx.fill(); ctx.restore();
+      }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('GASTER / PERO LAI', fx, fy+H*0.020);
+      ctx.fillText('THE 2 ANOMALIES.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(200,184,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE GAME\u2019S 2 ANOMALIES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CTHE GAME\u2019S 2 ANOMALIES. YEAH THERE IS BASICALLY ONLY 2.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CCREATE AN IMAGE OF GASTER AND PERO LAI.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(200,184,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY PERO SAID HE WAS THE ONLY ONE. TODAY THERE ARE TWO.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 6:08 AM. THE LIST UNDER IT IS A PASTED REPLY THAT AGREES WITH HIM.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 16, 5:04 PM: \u201CI AM THE ONLY CLASSICS ANOMALLY.\u201D', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO LAI SAYS IT IN THE 666-HOUR SPEECH, IN TOBY\u2019S OWN TYPING.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIRTEEN HOURS LATER THE COUNT IS TWO.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 8:55 AM: GOD, ABSTRACTED, ANOMALLY.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO IS BASICALLY ALL THREE. THE OTHER SPRUNKIS ARE 1 OR 2 OF THOSE.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE HAS HELD THE WORD FOR FIFTEEN DAYS.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,170,110,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 8:29 PM: OREN WAS ONE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u201COREN BECOMES NO OTHER THAN AN ANOMALLY.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,170,110,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE IS NOT ON THIS MORNING\u2019S LIST.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(150,230,180,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15: \u201CTHE DEEPEST ANOMALLY.\u201D', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('A ONE-FOOT FORM COVERED IN EYES AND HOLES.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(150,230,180,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE PICTURE PUTS THE EYES ALL OVER HIM.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('GASTER IS NEW TO THE WORD.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IN FOUR MONTHS OF FILES, \u201CANOMALLY\u201D HAS NEVER BEEN USED ABOUT ANY GASTER.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PASTED LIST FILES HIM AS NEWTALE GASTER.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWO ANOMALIES, AND THEY ARE NOT THE SAME KIND.', cx, top+H*0.800);
+    ctx.fillText('GASTER STANDS IN ERROR BOXES. PERO\u2019S SIDE CARRIES YESTERDAY\u2019S TYPING: \u201CI TRESEND.\u201D', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(200,184,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ONLY ONE IS NOW ONE OF TWO.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 THE GAME\u2019S 2 ANOMALIES \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===726){
