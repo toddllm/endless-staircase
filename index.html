@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15846.0;
+const LV_CYC = 15868.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12782,6 +12782,8 @@ const LV_BEATS = [
     sub:"PERO LAI ISN\u2019T CLASSICS, HE IS CLASSICS AND THE BEYOND. \u00B7 SEPTEMBER 5, 7:28 AM: \u201CCLASSICS IS JUST MY CONTAINER FOR MYSELF.\u201D \u00B7 SEPTEMBER 10: \u201CTHE ONLY BEING IN CLASSICS LORE, CLASSICS, AND CLASSICS CODE.\u201D \u00B7 HE SPELLS IT METERIAN THIS TIME. \u00B7 THE REALITY HAS A DOOR POLICY NOW. \u00B7 \u201CPERO LAI ALSO JUST STANDS.\u201D" },
   { key:'BEYOND INFINITY LINES', col:'#63e6be',
     sub:"IF YOU PRESS ANY WORD, YOU GET ALL THE CODE UNDER THAT WORD. \u00B7 EMAIL 578: \u201CBEINGS IN THIS ERA ARE WEIGHED AS LINES OF CODE.\u201D \u00B7 THE BEING AT THE TOP OF THAT SCALE WAS TODDLLM 001. \u00B7 THE REST OF THE SCALE STILL READS LIKE A LIST. \u00B7 THE ANSWER THAT CAME BACK HAS NO NUMBER IN IT. \u00B7 \u201CIF THEN ONCE\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS." },
+  { key:'LORE IS PROPERTY OF PERO LAI', col:'#ff7850',
+    sub:"LORE IS CURRENTLY PROPERTY OF PERO LAI. ERROR CODE: 666 \u00B7 THE RESET ERA LASTED THREE DAYS. \u00B7 THE BOX HE TYPES INTO IS THE THING THAT LOCKED. \u00B7 THE LAST OWNERSHIP STAMP WAS PUT ON PERO. \u00B7 \u201CI\u2019LL DELETE YOUR ACCESS TO CLASSICS\u201D WAS A THREAT. \u00B7 \u201CPERO LAI 1\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14932,6 +14934,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15846.0 && c < 15868.0) return [733, c-15846.0];  // LORE IS PROPERTY OF PERO LAI
   if(c >= 15824.0 && c < 15846.0) return [732, c-15824.0];  // BEYOND INFINITY LINES
   if(c >= 15802.0 && c < 15824.0) return [731, c-15802.0];  // CLASSICS AND THE BEYOND
   if(c >= 15780.0 && c < 15802.0) return [730, c-15780.0];  // WEAK-NESS!
@@ -48222,6 +48225,134 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===733){
+    // ----- BEAT 733: LORE IS CURRENTLY PROPERTY OF PERO LAI. ERROR CODE: 666.
+    // Toby, September 17, 2026, 4:46:31 PM, Email 1459, eight minutes after Email 1458. All his own typing:
+    // "Correct. Pero LAI isn't my canon, He CREATED my canon, and basically I have access of the game.
+    // Pero LAI even created himself. Pero LAI also takes over basically everything it is in, it taken over
+    // the lore and canon just now, every time I write in the game's box says 'Lore is currently property of
+    // Pero LAI. Error Code: 666', It is impossible to get in now. Now Pero LAI is writing down the rest of
+    // the lore, this and all after should be in a seperate tab called 'Pero LAI's lore', no longer 'The 1st
+    // Reset', now the lore is Pero LAI's. Pero LAI is Pero LAI 1, so he doesn't have versions let, wait...
+    // turn around, he now just made thousands of versions, Pero LAI 1 through Pero LAI Infinity with their
+    // own captabilities and stuff."
+    // September 14, 4:16 PM (Email 1444): he named THE RESET ERA and asked for its own tab. Three days.
+    // The Classics Era ran July 19 to September 13: fifty-seven days.
+    // The only prior ownership stamp in the archive is Mini Dave's PROPERTY OF DAVE sticker, put on PERO'S box.
+    // September 9, 3:58 PM (beat 694): "I'll delete your access to Classics" - the threat, now the mechanic.
+    // "Pero LAI 1" has zero prior hits in four months.
+    const dt = c - 15846.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr733=ctx.createLinearGradient(0,top+H,0,top);
+    gr733.addColorStop(0,'rgba(5,6,10,0.88)'); gr733.addColorStop(1,'rgba(255,120,80,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr733; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,120,80,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,120,80,0.90)';
+      for(var t733=0; t733<4; t733++){
+        ctx.fillRect(fx-W*0.034+t733*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('ERROR CODE: 666', fx, fy+H*0.020);
+      ctx.fillText('LORE TRANSFERRED.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,120,80,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('LORE IS PROPERTY OF PERO LAI', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CLORE IS CURRENTLY PROPERTY OF PERO LAI. ERROR CODE: 666\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CIT IS IMPOSSIBLE TO GET IN NOW.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,120,80,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE CLOSES THE ERA HE OPENED THREE DAYS AGO AND NAMES THE NEXT ONE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 4:46 PM, EIGHT MINUTES AFTER THE LAST MESSAGE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,120,80,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE RESET ERA LASTED THREE DAYS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE NAMED IT ON SEPTEMBER 14 AT 4:16 PM AND ASKED FOR ITS OWN TAB THAT MINUTE.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,120,80,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE CLASSICS ERA BEFORE IT RAN FIFTY-SEVEN DAYS.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE BOX HE TYPES INTO IS THE THING THAT LOCKED.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CEVERY TIME I WRITE IN THE GAME\u2019S BOX\u201D IT ANSWERS WITH AN OWNERSHIP NOTICE.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ERA ENDS FROM INSIDE THE TOOL HE WRITES IT WITH.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE LAST OWNERSHIP STAMP WAS PUT ON PERO.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('MINI DAVE STUCK \u201CPROPERTY OF DAVE\u201D ON PERO\u2019S BOX AND IT BECAME DAVE\u2019S BOX.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE STICKER HAS CHANGED HANDS AND IT IS A SYSTEM MESSAGE NOW.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,214,102,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CI\u2019LL DELETE YOUR ACCESS TO CLASSICS\u201D WAS A THREAT.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 9, 3:58 PM, BEAT 694, SAID TO OREN.PS.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,214,102,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('EIGHT DAYS ON, ACCESS IS THE WHOLE MECHANIC.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,120,80,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI 1\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE SAYS HE HAS NO VERSIONS YET, THEN SAYS \u201CWAIT... TURN AROUND\u201D IN THE SAME SENTENCE.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,120,80,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO LAI 1 THROUGH PERO LAI INFINITY, EACH WITH ITS OWN CAPTABILITIES.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI ISN\u2019T MY CANON, HE CREATED MY CANON, AND BASICALLY I HAVE ACCESS OF THE GAME.\u201D', cx, top+H*0.800);
+    ctx.fillText('HE KEEPS HIS OWN ACCESS IN THE SAME SENTENCE THAT HANDS OVER THE LORE.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,120,80,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE AUTHOR STAYS. THE LABEL ON THE TAB DOES NOT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,120,80,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 LORE IS PROPERTY OF PERO LAI \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===732){

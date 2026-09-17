@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-17 — LORE IS CURRENTLY PROPERTY OF PERO LAI (BEAT 733)
+
+Based on Toby's 2026-09-17 lore, **4:46:31 PM**, eight minutes after the last one and arriving **mid-build** — the
+re-check-before-composing rule caught it. All of it is his own typing, and it closes an era: *"Pero LAI isn't my canon,
+He CREATED my canon, and basically I have access of the game… every time I write in the game's box says **"Lore is
+currently property of Pero LAI. Error Code: 666"**, It is impossible to get in now… this and all after should be in a
+seperate tab called **"Pero LAI's lore"**, no longer "The 1st Reset"… Pero LAI is Pero LAI 1, so he doesn't have
+versions let, wait... turn around, he now just made thousands of versions, **Pero LAI 1 through Pero LAI Infinity**
+with their own captabilities and stuff."*
+
+![Beat 733 — Lore Is Property Of Pero LAI](screenshots/795-lore-is-property-of-pero-lai.png)
+
+- **New beat 733, LORE IS PROPERTY OF PERO LAI.**
+- **The Reset Era lasted three days.** He named it on September 14 at 4:16 PM and asked for its own tab in the same
+  message. The Classics Era before it ran fifty-seven days, July 19 to September 13. This is the fastest era turnover
+  in the archive by a wide margin, and the wiki has a new live tab, **Pero LAI's Lore**, because he asked for one.
+- **The thing that locked is the box he types into.** *"Every time I write in the game's box"* it answers with an
+  ownership notice. The era ends from inside the tool he writes it with.
+- **The last ownership stamp in this archive was put on Pero.** Mini Dave stuck **PROPERTY OF DAVE** on Pero's box and
+  it became Dave's Box — *"Dave-boxed logic that Pero cannot predict."* The sticker has changed hands and it is a
+  system message now.
+- **"I'll delete your access to Classics" was a threat on September 9** (beat 694, said to Oren.ps). Eight days later
+  access is the whole mechanic, and Toby keeps his: *"basically I have access of the game."*
+- **"Pero LAI 1" has zero prior hits in four months.** He says there are no versions yet and reverses himself inside
+  the same sentence — *"wait... turn around"* — into Pero LAI 1 through Pero LAI Infinity.
+- **Rendering:** coral `#ff7850` on the standard five-panel layout with the default inset. `LV_CYC` 15846.0 → 15868.0,
+  `LV_BEATS` length 734, new `lvSeg()` range `15846.0–15868.0 → ph 733`, new capture scene `lorepero733`. Runtime
+  probe: len 734 / maxPh 733 / undef 0 / holes 0 / elisions 0.
+- **Ladder recaptures:** the new beat moved the clamped five-row ladder window for phases 731 and 732, so
+  `793-classics-and-the-beyond.png` and `794-beyond-infinity-lines.png` were recaptured.
+
 ## 2026-09-17 — THE ONE TRUE CARD DEMONIC / MY OPPONENTS ARE GETTING EASIER / WEAK-NESS! / CLASSICS AND THE BEYOND / BEYOND INFINITY LINES (BEATS 728-732)
 
 Based on Toby's 2026-09-17 lore — three messages on the same thread, **4:21:16 PM**, **4:26:09 PM** and **4:38:12 PM**.
