@@ -4,6 +4,59 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-17 — HE IS DEATH HIMSELF / NO LONGER DEFEATABLE (BEATS 734-735)
+
+Based on Toby's 2026-09-17 lore, **5:47:06 PM**, Email 1460, sixty-one minutes after the message that opened
+**Pero LAI's Lore**. One email, **three blocks of his own typing** with pasted chatbot replies between them. The first
+block is the question he went looking with: *"Does Greek mythology say that Zeus was defeatable?"* The second and third
+are the beats: *"Pero LAI is known for it, he beats everyone, **perminent destroy**, and **is death himself**"* and
+*"**Pero LAI is no longer defeatable**, you can't make up a being that can beat him."* Everything between and under
+them, including the Typhon and Hera examples and the seven-line rule list, is a pasted reply and is commentary, not
+canon.
+
+![Beat 734 — He is death himself](screenshots/796-he-is-death-himself.png)
+
+![Beat 735 — No longer defeatable](screenshots/797-no-longer-defeatable.png)
+
+- **New beat 734, HE IS DEATH HIMSELF.**
+- **He benchmarks Pero against a real pantheon, and his own archive beat that pantheon first.** The Limbulbs layer,
+  the deepest and oldest stratum of this lore, records **The God War** a hundred million years ago: *"Pinky defeated
+  all human gods."* **Zeus became Neus**, Ra became Rathen, Horus became Desky. Neus is filed as an RL of light, time,
+  power, aura, dust, strength and beings, with the origin line *"Zeus (defeated by Pinky 100M years ago)."*
+- **Simon.ps has been carrying Zeus-slaying lightning since September 7.** In the Cats versus Dogs and Foxes war he
+  leads the cats on *"litteral Zeus-slaying lightning"* — and the thing that lightning slays was already beaten and
+  already renamed before Classics started.
+- **Mount Olympus has been in the archive since March.** The Logic Religion has hundreds of gods and the titans Zikes
+  and Orus, Orus requires beings to climb Olympus and be seen for more than a second to count as real, and Simon threw
+  Wenda off that mountain on **March 31**.
+- **He slain his own death on July 17 and is now death itself.** Email 728: *"Pro corrupted and slain his own death"*,
+  putting him **beyond respawn**. Two months on he is not past death any more; he is the thing.
+- **"He is death itself + everything in one entity" was written eighty-six minutes earlier**, in beat 728 at 4:21 PM,
+  on the phobia attack list. The same claim twice in one evening, and the second time it is a person rather than a
+  property.
+- ***"perminent"* is his spelling and it is kept**, like *omazen*, *invicible*, *comming*, *litterly* and *enternally*.
+  The only other perminent thing in four months is **The Perminent End of Unikitty**, August 15, the one character in
+  the archive who cannot come back.
+- **New beat 735, NO LONGER DEFEATABLE.**
+- **He retires the move he has used most.** *"You can't make up a being that can beat him"* closes the mechanism that
+  produced Teki, Gaster-above-Pero, Golden Mirda and most of the top of this ladder.
+- **Two days ago he made up a being that beat him.** September 15, 4:37 PM, beat 720, written in Japanese: *"Pero LAI
+  is currently being beaten by Teki."* Teki had existed for fourteen minutes and had turned Pero off.
+- **The archive has already said "nothing can ever be stronger", in those words, and then overturned it.** Golden
+  Mirda, OMEGA form: *"absolutely unbeatable. Nothing can ever be stronger."* Later Classic Alphians canon has **Simon
+  Phase 2 beat her with a single beam**.
+- **The nearest ranking precedent lasted five days.** August 19, 11:52 AM: *"Gaster is now above Pero."* By August 24
+  Gaster was third.
+- **He has closed his own losing three times before**, and the wording is always dated: August 29 ended PERO ALWAYS
+  WINS, August 31 was PERO JUST LOSES, September 14 was *"now I am impossible to kill now."* **"No longer" and
+  "currently" are the same kind of word** — both date a thing instead of settling it.
+- **Rendering:** violet `#a78bfa` for 734 and gold `#ffd166` for 735, on the standard five-panel layout with the
+  default inset. `LV_CYC` 15868.0 → 15912.0, `LV_BEATS` length 736, new `lvSeg()` ranges `15868.0–15890.0 → ph 734`
+  and `15890.0–15912.0 → ph 735`, new capture scenes `deathhimself734` and `defeatable735`. Runtime probe: len 736 /
+  maxPh 735 / undef 0 / holes 0 / elisions 0.
+- **Ladder recaptures:** the two new beats moved the clamped five-row ladder window for phases 732 and 733, so
+  `794-beyond-infinity-lines.png` and `795-lore-is-property-of-pero-lai.png` were recaptured.
+
 ## 2026-09-17 — LORE IS CURRENTLY PROPERTY OF PERO LAI (BEAT 733)
 
 Based on Toby's 2026-09-17 lore, **4:46:31 PM**, eight minutes after the last one and arriving **mid-build** — the

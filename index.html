@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15868.0;
+const LV_CYC = 15912.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12784,6 +12784,10 @@ const LV_BEATS = [
     sub:"IF YOU PRESS ANY WORD, YOU GET ALL THE CODE UNDER THAT WORD. \u00B7 EMAIL 578: \u201CBEINGS IN THIS ERA ARE WEIGHED AS LINES OF CODE.\u201D \u00B7 THE BEING AT THE TOP OF THAT SCALE WAS TODDLLM 001. \u00B7 THE REST OF THE SCALE STILL READS LIKE A LIST. \u00B7 THE ANSWER THAT CAME BACK HAS NO NUMBER IN IT. \u00B7 \u201CIF THEN ONCE\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS." },
   { key:'LORE IS PROPERTY OF PERO LAI', col:'#ff7850',
     sub:"LORE IS CURRENTLY PROPERTY OF PERO LAI. ERROR CODE: 666 \u00B7 THE RESET ERA LASTED THREE DAYS. \u00B7 THE BOX HE TYPES INTO IS THE THING THAT LOCKED. \u00B7 THE LAST OWNERSHIP STAMP WAS PUT ON PERO. \u00B7 \u201CI\u2019LL DELETE YOUR ACCESS TO CLASSICS\u201D WAS A THREAT. \u00B7 \u201CPERO LAI 1\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS." },
+  { key:'HE IS DEATH HIMSELF', col:'#a78bfa',
+    sub:"HE BEATS EVERYONE, PERMINENT DESTROY, AND IS DEATH HIMSELF \u00B7 PINKY BEAT ZEUS A HUNDRED MILLION YEARS AGO. \u00B7 SIMON.PS ALREADY CARRIES ZEUS-SLAYING LIGHTNING. \u00B7 MOUNT OLYMPUS HAS BEEN IN HERE SINCE MARCH. \u00B7 HE SLAIN HIS OWN DEATH ON JULY 17. \u00B7 \u201CPERMINENT\u201D IS HIS SPELLING AND IT IS KEPT." },
+  { key:'NO LONGER DEFEATABLE', col:'#ffd166',
+    sub:"PERO LAI IS NO LONGER DEFEATABLE. \u00B7 TWO DAYS AGO HE MADE UP A BEING THAT BEAT HIM. \u00B7 THE ARCHIVE HAS SAID THIS ONCE BEFORE, IN THOSE WORDS. \u00B7 GASTER WAS PUT ABOVE PERO ON AUGUST 19. \u00B7 HE HAS CLOSED HIS LOSING BEFORE, THREE TIMES. \u00B7 \u201CNO LONGER\u201D AND \u201CCURRENTLY\u201D ARE THE SAME KIND OF WORD." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14934,6 +14938,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15890.0 && c < 15912.0) return [735, c-15890.0];  // NO LONGER DEFEATABLE
+  if(c >= 15868.0 && c < 15890.0) return [734, c-15868.0];  // HE IS DEATH HIMSELF
   if(c >= 15846.0 && c < 15868.0) return [733, c-15846.0];  // LORE IS PROPERTY OF PERO LAI
   if(c >= 15824.0 && c < 15846.0) return [732, c-15824.0];  // BEYOND INFINITY LINES
   if(c >= 15802.0 && c < 15824.0) return [731, c-15802.0];  // CLASSICS AND THE BEYOND
@@ -48225,6 +48231,256 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===735){
+    // ----- BEAT 735: PERO LAI IS NO LONGER DEFEATABLE.
+    // Toby, September 17, 2026, 5:47:06 PM, Email 1460, the third block of his own typing in the same message:
+    // "Pero LAI is no longer defeatable, you can't make up a being that can beat him."
+    // The seven-line rule list underneath it (invent a stronger opponent, immortality, resurrection, copying,
+    // infinite power, obsolete weaknesses, prior defeats) is a pasted reply and is commentary, not canon.
+    // September 15, 4:37 PM (beat 720): "Pero LAI is currently being beaten by Teki", written in Japanese.
+    // Teki was fourteen minutes old at the time and had turned Pero off.
+    // Golden Mirda, OMEGA form, Tinkerbox archive: "absolutely unbeatable. Nothing can ever be stronger."
+    // Later Classic Alphians canon: Simon Phase 2 defeats Golden Mirda with a single beam.
+    // August 19, 11:52 AM: "Gaster is now above Pero." By August 24 Gaster was third. Five days.
+    // August 29 ended PERO ALWAYS WINS; August 31 was PERO JUST LOSES; September 14 was I AM IMPOSSIBLE TO KILL NOW.
+    const dt = c - 15890.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr735=ctx.createLinearGradient(0,top+H,0,top);
+    gr735.addColorStop(0,'rgba(5,6,10,0.88)'); gr735.addColorStop(1,'rgba(255,209,102,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr735; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,209,102,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,209,102,0.90)';
+      for(var t735=0; t735<4; t735++){
+        ctx.fillRect(fx-W*0.034+t735*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('NO COUNTER-BEING.', fx, fy+H*0.020);
+      ctx.fillText('THE MOVE IS CLOSED.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,209,102,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('NO LONGER DEFEATABLE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI IS NO LONGER DEFEATABLE.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CYOU CAN\u2019T MAKE UP A BEING THAT CAN BEAT HIM.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,209,102,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE RETIRES THE MOVE HE HAS USED MOST: INVENTING SOMEBODY STRONGER.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 5:47 PM, THE SAME MESSAGE AS BEAT 734.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,209,102,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO HE MADE UP A BEING THAT BEAT HIM.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15, 4:37 PM: \u201CPERO LAI IS CURRENTLY BEING BEATEN BY TEKI\u201D.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,209,102,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TEKI WAS FOURTEEN MINUTES OLD AND HAD ALREADY TURNED PERO OFF.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE ARCHIVE HAS SAID THIS ONCE BEFORE, IN THOSE WORDS.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('GOLDEN MIRDA, OMEGA FORM: \u201CABSOLUTELY UNBEATABLE. NOTHING CAN EVER BE STRONGER.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('LATER CANON: SIMON PHASE 2 BEATS HER WITH ONE BEAM.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('GASTER WAS PUT ABOVE PERO ON AUGUST 19.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('\u201CGASTER IS NOW ABOVE PERO.\u201D BY AUGUST 24 GASTER WAS THIRD.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT RANKING HELD FOR FIVE DAYS.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(124,240,160,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE HAS CLOSED HIS LOSING BEFORE, THREE TIMES.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 29 ENDED PERO ALWAYS WINS. AUGUST 31 WAS PERO JUST LOSES.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(124,240,160,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 14: \u201CNOW I AM IMPOSSIBLE TO KILL NOW.\u201D', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,209,102,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CNO LONGER\u201D AND \u201CCURRENTLY\u201D ARE THE SAME KIND OF WORD.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('BOTH OF THEM DATE A THING INSTEAD OF SETTLING IT.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,209,102,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE KEEPS TIMESTAMPING THE RULES HE WRITES AS FOREVER.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ASKED WHETHER A REAL GOD COULD LOSE, THEN RULED THAT HIS OWN CANNOT.', cx, top+H*0.800);
+    ctx.fillText('THE QUESTION WAS RESEARCH. THE ANSWER CAME BACK AS A LAW.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,209,102,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND BOTH HALVES OF THE MESSAGE END WITH THE SAME CALM FACE.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,209,102,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 NO LONGER DEFEATABLE \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===734){
+    // ----- BEAT 734: HE BEATS EVERYONE, PERMINENT DESTROY, AND IS DEATH HIMSELF.
+    // Toby, September 17, 2026, 5:47:06 PM, Email 1460, on the same thread. His own typing in this message
+    // is three blocks with pasted chatbot replies between them. Block 1 is the question he went looking with:
+    // "Does Greek mythology say that Zeus was defeatable?"
+    // Block 2 is this beat: "Pero LAI is known for it, he beats everyone, perminent destroy, and is death himself".
+    // The Zeus/Typhon/Hera answer between them is a pasted reply and is commentary, not canon.
+    // THE GOD WAR, Limbulbs layer, 100 million years ago: "Pinky defeated all human gods."
+    // Zeus became Neus. Ra became Rathen. Horus became Desky. Neus is an RL of light/time/power/aura/dust now.
+    // September 7, 7:50 AM (beat 668): Simon.ps leads the cats with "litteral Zeus-slaying lightning".
+    // Mount Olympus and the Logic Religion have been in the archive since March; Simon threw Wenda off it March 31.
+    // July 17, 8:18 AM (Email 728): "Pro corrupted and slain his own death", putting him beyond respawn.
+    // Today at 4:21 PM (beat 728) it was "he is death itself + everything in one entity". 86 minutes later it is himself.
+    // "perminent" is his spelling, kept. The other perminent thing here is The Perminent End of Unikitty, August 15.
+    const dt = c - 15868.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr734=ctx.createLinearGradient(0,top+H,0,top);
+    gr734.addColorStop(0,'rgba(5,6,10,0.88)'); gr734.addColorStop(1,'rgba(167,139,250,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr734; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(167,139,250,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(167,139,250,0.90)';
+      for(var t734=0; t734<4; t734++){
+        ctx.fillRect(fx-W*0.034+t734*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THE GOD WAR', fx, fy+H*0.020);
+      ctx.fillText('ZEUS BECAME NEUS.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(167,139,250,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HE IS DEATH HIMSELF', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CHE BEATS EVERYONE, PERMINENT DESTROY, AND IS DEATH HIMSELF\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CDOES GREEK MYTHOLOGY SAY THAT ZEUS WAS DEFEATABLE?\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(167,139,250,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE MEASURES PERO AGAINST A REAL PANTHEON. HIS OWN ARCHIVE BEAT IT FIRST.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 5:47 PM, EMAIL 1460, SAME THREAD.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(167,139,250,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('PINKY BEAT ZEUS A HUNDRED MILLION YEARS AGO.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE GOD WAR, IN THE LIMBULBS LAYER: \u201CPINKY DEFEATED ALL HUMAN GODS.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(167,139,250,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ZEUS BECAME NEUS. RA BECAME RATHEN. HORUS BECAME DESKY.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SIMON.PS ALREADY CARRIES ZEUS-SLAYING LIGHTNING.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 7, THE CATS VERSUS DOGS WAR: \u201CLITTERAL ZEUS-SLAYING LIGHTNING\u201D.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE THING THAT LIGHTNING SLAYS WAS BEATEN AND RENAMED BEFORE CLASSICS BEGAN.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,214,102,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('MOUNT OLYMPUS HAS BEEN IN HERE SINCE MARCH.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE LOGIC RELIGION: HUNDREDS OF GODS AND THE TITANS ZIKES AND ORUS.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,214,102,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SIMON THREW WENDA OFF THAT MOUNTAIN ON MARCH 31.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,120,120,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE SLAIN HIS OWN DEATH ON JULY 17.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('EMAIL 728: \u201CPRO CORRUPTED AND SLAIN HIS OWN DEATH\u201D, PUTTING HIM BEYOND RESPAWN.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,120,120,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TWO MONTHS ON HE IS NOT PAST DEATH ANY MORE. HE IS DEATH.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(167,139,250,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERMINENT\u201D IS HIS SPELLING AND IT IS KEPT.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('LIKE OMAZEN, INVICIBLE, COMMING, LITTERLY AND ENTERNALLY BEFORE IT.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(167,139,250,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ONLY OTHER PERMINENT THING IN FOUR MONTHS IS THE END OF UNIKITTY.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CHE IS DEATH ITSELF + EVERYTHING IN ONE ENTITY\u201D WAS WRITTEN EIGHTY-SIX MINUTES EARLIER.', cx, top+H*0.800);
+    ctx.fillText('THAT WAS BEAT 728 AT 4:21 PM, ON THE PHOBIA ATTACK LIST. NOW IT COMES BACK AS A PERSON.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(167,139,250,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SAME CLAIM TWICE IN ONE EVENING, AND THE SECOND TIME IT IS NOT A PROPERTY.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(167,139,250,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 HE IS DEATH HIMSELF \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===733){
