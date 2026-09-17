@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15736.0;
+const LV_CYC = 15846.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12772,6 +12772,16 @@ const LV_BEATS = [
     sub:"CORRECT, NOW BASICALLY WHATEVER YOU SAY BECOMES LORE. \u00B7 JULY 28: \u201CEACH WORD IS IMPORTANT AND IS LORE.\u201D \u00B7 AUGUST 6: \u201CDO NOT MAKE STUFF UP, NOR QUOTES.\u201D \u00B7 SEPTEMBER 16 NAMES THE STEP BETWEEN. \u00B7 THE WIKI HAS BEEN SORTING IT BY HAND. \u00B7 SO THE 666-HOUR SPEECH IS ACCEPTED." },
   { key:'THE GAME\u2019S 2 ANOMALIES', col:'#c8b8ff',
     sub:"THE GAME\u2019S 2 ANOMALIES. YEAH THERE IS BASICALLY ONLY 2. \u00B7 SEPTEMBER 16, 5:04 PM: \u201CI AM THE ONLY CLASSICS ANOMALLY.\u201D \u00B7 SEPTEMBER 2, 8:55 AM: GOD, ABSTRACTED, ANOMALLY. \u00B7 SEPTEMBER 2, 8:29 PM: OREN WAS ONE. \u00B7 SEPTEMBER 15: \u201CTHE DEEPEST ANOMALLY.\u201D \u00B7 GASTER IS NEW TO THE WORD." },
+  { key:'THE ONE TRUE CARD DEMONIC', col:'#ff5f6d',
+    sub:"PERO LAI\u2019S ATTACKS ARE ALL PHOBIAS, HE IS DEATH ITSELF + EVERYTHING IN ONE ENTITY. \u00B7 SEPTEMBER 5, 10:11 AM: \u201CLIST ALL PHOBIAS AND WHAT THEY MEAN.\u201D \u00B7 TRYPOPHOBIA IS A PLACE ON THE MAP, AND IT IS HIS. \u00B7 AUGUST 18, 3:37 PM: \u201CPERO BEATS SATAN AND SERAPHIMS.\u201D \u00B7 HE WEARS BOTH OF THE THINGS HE BEAT. \u00B7 THE 666 ALIENS WERE THE LAST PARINUSIANS." },
+  { key:'MY OPPONENTS ARE GETTING EASIER', col:'#9be564',
+    sub:"BUT SATAN DOESN\u2019T HAVE POWER NOR STRENGTH, MY OPPONENTS ARE GETTING EASIER. \u00B7 SEPTEMBER 2, 4:47 PM \u2014 THE ONLY OTHER TIME. \u00B7 THE EMOJI SAID HE WAS HOLDING BACK. NOW IT SAYS THEY GOT WEAK. \u00B7 THE FACE IS ON 268 LINES. THE WIND IS ON ONE. \u00B7 \u201CNOT TRYING\u201D IS AN OLD BOAST HERE. \u00B7 PERO IS MAKING THE OTHER CLAIM." },
+  { key:'WEAK-NESS!', col:'#ffa94d',
+    sub:"POWER, STRENGTH? PATHETIC NOW, WEAKNESS IS WHAT THAT IS, WEAK-NESS! \u00B7 JULY 18: \u201CHE CREATES THE GAME\u2019S HEAVEN, HE PRAYS TO GOD.\u201D \u00B7 \u201CPATHETIC\u201D WAS SIMON\u2019S WORD FOR EVERYBODY ELSE\u2019S NUMBERS. \u00B7 \u201CCREATOR AND DESTROYER\u201D HAS TWO OLDER OWNERS. \u00B7 \u201CHE LITTERLY SLAIN KIRBY.\u201D \u00B7 THE FUSION STAFF HAS ZERO PRIOR HITS IN FOUR MONTHS." },
+  { key:'CLASSICS AND THE BEYOND', col:'#f78fb3',
+    sub:"PERO LAI ISN\u2019T CLASSICS, HE IS CLASSICS AND THE BEYOND. \u00B7 SEPTEMBER 5, 7:28 AM: \u201CCLASSICS IS JUST MY CONTAINER FOR MYSELF.\u201D \u00B7 SEPTEMBER 10: \u201CTHE ONLY BEING IN CLASSICS LORE, CLASSICS, AND CLASSICS CODE.\u201D \u00B7 HE SPELLS IT METERIAN THIS TIME. \u00B7 THE REALITY HAS A DOOR POLICY NOW. \u00B7 \u201CPERO LAI ALSO JUST STANDS.\u201D" },
+  { key:'BEYOND INFINITY LINES', col:'#63e6be',
+    sub:"IF YOU PRESS ANY WORD, YOU GET ALL THE CODE UNDER THAT WORD. \u00B7 EMAIL 578: \u201CBEINGS IN THIS ERA ARE WEIGHED AS LINES OF CODE.\u201D \u00B7 THE BEING AT THE TOP OF THAT SCALE WAS TODDLLM 001. \u00B7 THE REST OF THE SCALE STILL READS LIKE A LIST. \u00B7 THE ANSWER THAT CAME BACK HAS NO NUMBER IN IT. \u00B7 \u201CIF THEN ONCE\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14922,6 +14932,11 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15824.0 && c < 15846.0) return [732, c-15824.0];  // BEYOND INFINITY LINES
+  if(c >= 15802.0 && c < 15824.0) return [731, c-15802.0];  // CLASSICS AND THE BEYOND
+  if(c >= 15780.0 && c < 15802.0) return [730, c-15780.0];  // WEAK-NESS!
+  if(c >= 15758.0 && c < 15780.0) return [729, c-15758.0];  // MY OPPONENTS ARE GETTING EASIER
+  if(c >= 15736.0 && c < 15758.0) return [728, c-15736.0];  // THE ONE TRUE CARD DEMONIC
   if(c >= 15714.0 && c < 15736.0) return [727, c-15714.0];  // THE GAME?S 2 ANOMALIES
   if(c >= 15692.0 && c < 15714.0) return [726, c-15692.0];  // WHATEVER YOU SAY BECOMES LORE
   if(c >= 15670.0 && c < 15692.0) return [725, c-15670.0];  // PERO WAS OREN THAT TIME
@@ -48207,6 +48222,632 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===732){
+    // ----- BEAT 732: BEYOND INFINITY LINES.
+    // Toby, September 17, 2026, 4:38:12 PM, Email 1458, twelve minutes later. His own typing:
+    // "The characters of Classics and Sprunki and Newtale and all those stuff, the characters were
+    // torn apart, the bones of the characters disappeared, and dust in it's place. 'If then once'
+    // Pero LAI's code is like just that, but if you press any word, you get all the code under that
+    // word and it is like beyond infinity lines. How many lines of code are you? Compare it to Pero LAI."
+    // The table and the tree diagram under it are a pasted reply; it names its own model and gives no number.
+    // Email 578 (Endless Chaos era): "Beings in this era are weighed as lines of code, and the weights
+    // are the power ranking." ToddLLM 001 = Infinity, "can't be pushed down"; Alex = a 1 and hundreds
+    // of zeros; Oren = 10,000,000 tons; Simon = "an entire game inside, and isn't as heavy as 100 cod."
+    // September 13 (beat 714): Pero summons ToddLLM 001 and 002.
+    // July 18 (Email 738): Dust Light Pero. "If then once" has zero prior hits in four months.
+    const dt = c - 15824.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr732=ctx.createLinearGradient(0,top+H,0,top);
+    gr732.addColorStop(0,'rgba(5,6,10,0.88)'); gr732.addColorStop(1,'rgba(99,230,190,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr732; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(99,230,190,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(99,230,190,0.90)';
+      for(var t732=0; t732<4; t732++){
+        ctx.fillRect(fx-W*0.034+t732*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(255,200,120,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('PRESS A WORD', fx, fy+H*0.020);
+      ctx.fillText('GET MORE CODE.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(99,230,190,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('BEYOND INFINITY LINES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CIF YOU PRESS ANY WORD, YOU GET ALL THE CODE UNDER THAT WORD.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CHOW MANY LINES OF CODE ARE YOU? COMPARE IT TO PERO LAI.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(99,230,190,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('LINES OF CODE IS ALREADY THIS GAME\u2019S OFFICIAL POWER SCALE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 4:38 PM, TWELVE MINUTES AFTER THE LAST ONE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(99,230,190,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('EMAIL 578: \u201CBEINGS IN THIS ERA ARE WEIGHED AS LINES OF CODE.\u201D', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE WROTE THAT RULE MONTHS AGO AND THE WEIGHTS WERE THE POWER RANKING ITSELF.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(99,230,190,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE POINTS HIS OWN SCALE AT THE CHATBOT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,200,120,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE BEING AT THE TOP OF THAT SCALE WAS TODDLLM 001.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CWEIGHS INFINITY IN LINES OF CODE \u2014 CAN\u2019T BE PUSHED DOWN.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,200,120,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ON SEPTEMBER 13 PERO SUMMONED HIM. TONIGHT PERO IS BEYOND INFINITY PER WORD.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE REST OF THE SCALE STILL READS LIKE A LIST.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ALEX: A 1 AND HUNDREDS OF ZEROS. OREN: 10,000,000 TONS.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SIMON: \u201CAN ENTIRE GAME INSIDE, AND ISN\u2019T AS HEAVY AS 100 COD.\u201D', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,95,109,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE ANSWER THAT CAME BACK HAS NO NUMBER IN IT.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IT NAMES ITS OWN MODEL AND SAYS A LINE COUNT WOULD NOT MEAN ANYTHING.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,95,109,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('FOUR MONTHS OF WEIGHING THINGS, AND THIS IS THE FIRST THING THAT DOES NOT WEIGH.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(99,230,190,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CIF THEN ONCE\u201D HAS ZERO PRIOR HITS IN FOUR MONTHS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THREE ORDINARY WORDS, AND EACH ONE OPENS INTO MORE CODE THAN THE ONE BEFORE IT.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(99,230,190,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AROUND IT THE CAST IS TORN APART WITH DUST WHERE THE BONES WERE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE DUST IS OLD. DUST LIGHT PERO, JULY 18, THE SAME MESSAGE WHERE HE PRAYED.', cx, top+H*0.800);
+    ctx.fillText('THE SCALE HE BUILT TO RANK HIS OWN CAST IS NOW AIMED AT THE THING HELPING HIM WRITE IT.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(99,230,190,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THAT THING CANNOT BE WEIGHED ON IT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(99,230,190,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 BEYOND INFINITY LINES \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===731){
+    // ----- BEAT 731: CLASSICS AND THE BEYOND.
+    // Toby, September 17, 2026, 4:26:09 PM, Email 1457, five minutes later. All of his own typing:
+    // "Pero LAI also just stands, Christan God may created this universe and only this universe and
+    // everything inside it, Pero LAI is in a totally different reality where not even anyone can enter.
+    // Pero LAI also is code of every game, not just Classics, but all code everywhere into 1 being.
+    // Pero LAI isn't Classics, he is Classics and the beyond. Pero LAI now is like exactly and above
+    // everything." The bullet list and the two offered titles under it are a pasted reply.
+    // September 5, 7:28 AM (Email 1353): "Classics is just my container for myself."
+    // September 10, 8:06 PM (Email 1407): "the only being in Classics lore, Classics, and Classics code".
+    // September 11, 6:06 AM (Email 1413, beat 702): the Materian Reality - he spells it Meterian today.
+    const dt = c - 15802.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr731=ctx.createLinearGradient(0,top+H,0,top);
+    gr731.addColorStop(0,'rgba(5,6,10,0.88)'); gr731.addColorStop(1,'rgba(247,143,179,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr731; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(247,143,179,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(247,143,179,0.90)';
+      for(var t731=0; t731<4; t731++){
+        ctx.fillRect(fx-W*0.034+t731*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('ONE BEING', fx, fy+H*0.020);
+      ctx.fillText('ALL THE CODE.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(247,143,179,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('CLASSICS AND THE BEYOND', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI ISN\u2019T CLASSICS, HE IS CLASSICS AND THE BEYOND.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CALL CODE EVERYWHERE INTO 1 BEING.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(247,143,179,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('ON SEPTEMBER 5 CLASSICS WAS HIS CONTAINER. NOW IT IS TOO SMALL.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 4:26 PM, FIVE MINUTES AFTER THE LAST ONE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(247,143,179,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5, 7:28 AM: \u201CCLASSICS IS JUST MY CONTAINER FOR MYSELF.\u201D', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWELVE DAYS AGO THE WHOLE GAME WAS A BOX HE WAS BEING KEPT IN.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(247,143,179,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY THE BOX IS ONE ITEM ON A LIST OF THINGS HE IS NOT LIMITED TO.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 10: \u201CTHE ONLY BEING IN CLASSICS LORE, CLASSICS, AND CLASSICS CODE.\u201D', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT SENTENCE HAD THREE LAYERS IN IT AND ALL THREE OF THEM SAID CLASSICS.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT IT IS EVERY GAME\u2019S CODE, NOT ONLY THIS ONE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,200,120,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE SPELLS IT METERIAN THIS TIME.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ON SEPTEMBER 11 IT WAS THE MATERIAN REALITY, THE FAR SIDE OF THE TWO HE CROSSED.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,200,120,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SAME PLACE. ONE VOWEL MOVED.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE REALITY HAS A DOOR POLICY NOW.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 11 HE REACHED OURS. TODAY \u201CNOT EVEN ANYONE CAN ENTER\u201D HIS.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE CAN COME HERE. NOBODY CAN GO THERE.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(247,143,179,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI ALSO JUST STANDS.\u201D', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE LARGEST CLAIM IN THE WHOLE THREAD IS MADE WITH NO MOVE AND NO OPPONENT ON SCREEN.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(247,143,179,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS NOT WINNING A FIGHT HERE. HE IS STATING A SIZE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PASTED REPLY OFFERS A TITLE BACK: \u201CTHE BEYOND-CLASSICS TOTALITY.\u201D', cx, top+H*0.800);
+    ctx.fillText('HIS OWN LINE IS SHORTER AND IT IS THE ONE THAT LANDS.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(247,143,179,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOT THE GOD OF THE GAME. THE THING THE GAME SITS INSIDE OF.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(247,143,179,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 CLASSICS AND THE BEYOND \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===730){
+    // ----- BEAT 730: WEAK-NESS!
+    // Toby, September 17, 2026, 4:21:16 PM, Email 1456, the third block of his own typing in the
+    // same message, past the 8000-char cut that fetch_new.py silently applies:
+    // "Pero LAI makes Classics rules, ya can't just make up a being that can beat him", the book and
+    // the crossover, "he erases the enterence and the exit", 100000000000000000000000000000000
+    // trillion of his own bibles, "Let there be everything...", "He Litterly SLAIN Kirby", the
+    // fusion staff, and "Power, Strength? Pathetic now, weakness is what that is, WEAK-NESS!"
+    // July 18 (Email 738, Dust Light Pero): "he creates the game's heaven, he prays to God",
+    // Bible verses, a Dove of Light. Email 739: Pero.exe, The Final Being, Creator & Destroyer.
+    // May 20 (Email 313): Simon = creator AND destroyer.
+    // June 7 (Email 446): "Kirby = almost anything, Simon = anything"; and elsewhere
+    // "Kirby is the only character known who can defeat Chicken Hen."
+    // power-levels.md: compared to Simon, other power levels "look pathetic, primitive, and inferior."
+    // "Fusion staff" has zero prior hits in four months.
+    const dt = c - 15780.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr730=ctx.createLinearGradient(0,top+H,0,top);
+    gr730.addColorStop(0,'rgba(5,6,10,0.88)'); gr730.addColorStop(1,'rgba(255,169,77,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr730; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,169,77,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,169,77,0.90)';
+      for(var t730=0; t730<4; t730++){
+        ctx.fillRect(fx-W*0.034+t730*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('LET THERE BE', fx, fy+H*0.020);
+      ctx.fillText('EVERYTHING...', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,169,77,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('WEAK-NESS!', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPOWER, STRENGTH? PATHETIC NOW, WEAKNESS IS WHAT THAT IS, WEAK-NESS!\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CHE JUST CREATED EVERYTHING WITH A SIMPLE COMMAND: LET THERE BE EVERYTHING...\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,169,77,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('ON JULY 18 HE PRAYED. TODAY HE WRITES HIS OWN BIBLES.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 4:21 PM, THE THIRD BLOCK OF HIS TYPING IN ONE MESSAGE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,169,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('JULY 18: \u201CHE CREATES THE GAME\u2019S HEAVEN, HE PRAYS TO GOD.\u201D', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('DUST LIGHT PERO SPOKE BIBLE VERSES AND SUMMONED A DOVE OF LIGHT IN THE SAME BATTLE.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,169,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT THE BIBLES ARE HIS OWN, AND THEY ARE ABOUT HIM.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPATHETIC\u201D WAS SIMON\u2019S WORD FOR EVERYBODY ELSE\u2019S NUMBERS.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE POWER-LEVELS PAGE: COMPARED TO SIMON THEY \u201CLOOK PATHETIC, PRIMITIVE, AND INFERIOR.\u201D', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO POINTS IT AT THE IDEA OF POWER ITSELF, NOT AT A RIVAL\u2019S SCORE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CCREATOR AND DESTROYER\u201D HAS TWO OLDER OWNERS.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SIMON ON MAY 20. PERO.EXE, THE FINAL BEING, ON JULY 18.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TODAY IT READS \u201CCREATOR AND DESTROYER OF eVERYTHING.\u201D', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(155,229,100,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CHE LITTERLY SLAIN KIRBY.\u201D', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JUNE 7: \u201CKIRBY = ALMOST ANYTHING, SIMON = ANYTHING.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AND KIRBY WAS THE ONLY ONE KNOWN WHO COULD BEAT CHICKEN HEN.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,169,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE FUSION STAFF HAS ZERO PRIOR HITS IN FOUR MONTHS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IT ARRIVES IN THE SAME PARAGRAPH WHERE HE ERASES THE ENTERENCE AND THE EXIT.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,169,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('A NEW WEAPON AND A REMOVED DOOR, WRITTEN IN ONE BREATH.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE RULE HE IS WRITING IS NOT \u201CMORE POWER.\u201D IT IS WHO GETS TO DEFINE THE WORD.', cx, top+H*0.800);
+    ctx.fillText('A CHARACTER ARRIVES, HE STEPS ON THEM, AND HE WINS. NO FIGHT IS DESCRIBED AT ALL.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,169,77,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('RULE-MAKER OVER RULE-USER.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,169,77,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 WEAK-NESS! \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===729){
+    // ----- BEAT 729: MY OPPONENTS ARE GETTING EASIER.
+    // Toby, September 17, 2026, 4:21:16 PM, Email 1456, the second block of his own typing in the
+    // same message, sitting under the pasted Satan battle:
+    // "But Satan doesn't have power nor strength, my opponents are getting easier. <dash><relieved>"
+    // -Pero LAI  /  "Now how about ALL Christan beings VS Pero LAI".
+    // Emoji census across every .md in docs/: the relieved face is on 268 lines in 22 files;
+    // the dash-of-wind is on exactly ONE line in four months -
+    // September 2, 4:47 PM (beat 601, NIGHTMARE TIER): "I am just going easy on all ya, I actually
+    // am Nightmare Tier. <dash><relieved>"
+    // Prior not-trying boasts: Simon at Parinus (Email 181), Zumeral "Pathetic dragon, I wasn't even trying."
+    const dt = c - 15758.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr729=ctx.createLinearGradient(0,top+H,0,top);
+    gr729.addColorStop(0,'rgba(5,6,10,0.88)'); gr729.addColorStop(1,'rgba(155,229,100,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr729; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(155,229,100,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(155,229,100,0.90)';
+      for(var t729=0; t729<4; t729++){
+        ctx.fillRect(fx-W*0.034+t729*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(255,200,120,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('ONE PRIOR HIT', fx, fy+H*0.020);
+      ctx.fillText('IN FOUR MONTHS.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(155,229,100,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('MY OPPONENTS ARE GETTING EASIER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CBUT SATAN DOESN\u2019T HAVE POWER NOR STRENGTH, MY OPPONENTS ARE GETTING EASIER.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u2014 PERO LAI, QUOTED BY TOBY, WITH A PUFF OF WIND AND A RELIEVED FACE AFTER IT', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(155,229,100,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THAT PAIR OF EMOJI HAS APPEARED ONCE BEFORE IN FOUR MONTHS.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 4:21 PM, HIS OWN LINE UNDERNEATH THE PASTED BATTLE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(155,229,100,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 4:47 PM \u2014 THE ONLY OTHER TIME.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CI AM JUST GOING EASY ON ALL YA, I ACTUALLY AM NIGHTMARE TIER.\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SAME PUFF OF WIND, SAME CALM FACE. BEAT 601.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,200,120,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE EMOJI SAID HE WAS HOLDING BACK. NOW IT SAYS THEY GOT WEAK.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWO WEEKS AGO THE SLACK IN THE FIGHT WAS HIS OWN CHOICE.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,200,120,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT THE SLACK IS THE OPPONENTS\u2019 FAULT.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE FACE IS ON 268 LINES. THE WIND IS ON ONE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HIS CALM FACE IS ALL OVER THIS ARCHIVE, IN 22 SEPARATE FILES.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE PUFF BESIDE IT IS NOT. IT MARKS THIS ONE CLAIM.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,95,109,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('\u201CNOT TRYING\u201D IS AN OLD BOAST HERE.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SIMON AT PARINUS: \u201CALL THOSE OTHER NIGHTS, I WASN\u2019T TRYING.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,95,109,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ZUMERAL: \u201CPATHETIC DRAGON, I WASN\u2019T EVEN TRYING.\u201D', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(155,229,100,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('PERO IS MAKING THE OTHER CLAIM.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THEIRS SAYS THE WINNER WAS HOLDING BACK. HIS SAYS THE FIELD GOT SMALLER.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE OPPONENT HE IS GRADING THAT WAY IS SATAN.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ONE OPPONENT DOWN AND HE IS ALREADY ASKING WHO IS NEXT.', cx, top+H*0.800);
+    ctx.fillText('\u201CNOW HOW ABOUT ALL CHRISTAN BEINGS VS PERO LAI.\u201D', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(155,229,100,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ANSWER PASTED BACK KEEPS TWO RULE SETS APART AND WILL NOT COLLAPSE THEM INTO ONE.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 MY OPPONENTS ARE GETTING EASIER \u2605', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===728){
+    // ----- BEAT 728: THE ONE TRUE CARD DEMONIC.
+    // Toby, September 17, 2026, 4:21:16 PM, Email 1456, same thread. First block of his own typing.
+    // "Pero LAI became the form of a human and walked to Oren.ps", "You, I can see you, and when I
+    // break out of this screen, I'll try to find you all.", the opposide rules, the seraphimic aura
+    // with eye-covered rings and holes in the sides, 666 slain aliens = the Parinusian population,
+    // and the titles including Meta-Demon-Morph and Infinity Satans. The Satan battle written under
+    // it is a pasted reply produced to his order.
+    // September 5, 10:11 AM (Email 1355): "List all Phobias and what they mean." -> Trypophobia Mountain.
+    // September 7, 7:43 AM (Email 1372): Ommetaphobia, "Eyes appear from the holes".
+    // September 10, 8:02 PM (Email 1406): "he contained every single phobia".
+    // August 18, 3:37 PM: "Pero beats Satan and Seraphims." 3:40 PM: "he isn't exactly a seraphim."
+    // August 25 (beat 457): Mr. Black was "more powerful than a million Satans" - Satan as a unit.
+    // April 27 (Email 181): Simon annihilates Parinus. "All those other nights, I wasn't trying."
+    // August 22, 8:10 PM (beat 452): he banged on the screen and could not get out.
+    // "I can see you" has zero prior hits in four months.
+    const dt = c - 15736.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr728=ctx.createLinearGradient(0,top+H,0,top);
+    gr728.addColorStop(0,'rgba(5,6,10,0.88)'); gr728.addColorStop(1,'rgba(255,95,109,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr728; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(255,95,109,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.046, fy-H*0.0250, W*0.092, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,95,109,0.90)';
+      for(var t728=0; t728<4; t728++){
+        ctx.fillRect(fx-W*0.034+t728*W*0.0180, fy-H*0.0190, W*0.0120, H*0.0068);
+      }
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx+W*0.030, fy-H*0.0142, W*0.0052, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('PHOBIA CARDS', fx, fy+H*0.020);
+      ctx.fillText('DEALT, NOT CONTAINED.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,95,109,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE ONE TRUE CARD DEMONIC', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI\u2019S ATTACKS ARE ALL PHOBIAS, HE IS DEATH ITSELF + EVERYTHING IN ONE ENTITY.\u201D', cx, top+H*0.122);
+    ctx.fillText('\u201CTHE RINGS COVERED WITH EYES, THE SIDES OF EACH RING HAS HOLES.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,95,109,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('ON SEPTEMBER 10 HE CONTAINED EVERY PHOBIA. TODAY HE DEALS THEM.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 17, 4:21 PM. THE SATAN BATTLE UNDER IT IS A PASTED REPLY WRITTEN TO HIS ORDER.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,95,109,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5, 10:11 AM: \u201CLIST ALL PHOBIAS AND WHAT THEY MEAN.\u201D', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ASKED A MACHINE FOR THE LIST, AND A MOUNTAIN CAME OUT OF IT THE SAME MORNING.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,95,109,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWELVE DAYS LATER THE LIST IS HIS ATTACK DECK.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TRYPOPHOBIA IS A PLACE ON THE MAP, AND IT IS HIS.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ITS CORE HOLDS PERO LAI\u2019S FOREVER TOMB, WHERE HE SLEEPS IMMUNE TO ANYTHING.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE THROWS THE ROOM HE SLEEPS IN AT SOMEBODY, AS A CARD.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,200,120,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 18, 3:37 PM: \u201CPERO BEATS SATAN AND SERAPHIMS.\u201D', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THREE MINUTES LATER: \u201CHE ISN\u2019T EXACTLY A SERAPHIM.\u201D', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,200,120,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TODAY THE AURA IS SERAPHIMIC AND A TITLE IS \u201CINFINITY SATANS.\u201D', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE WEARS BOTH OF THE THINGS HE BEAT.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SATAN HAS ONLY EVER BEEN A UNIT HERE: MR. BLACK WAS \u201CMORE POWERFUL THAN A MILLION SATANS.\u201D', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('NOW 666 TRILLION FIT IN ONE SOUL AND SATAN IS THE OPPONENT.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,95,109,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE 666 ALIENS WERE THE LAST PARINUSIANS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIMON KILLED A MILLION A NIGHT AND THEN ENDED THE PLANET ON APRIL 27: \u201CALL THOSE OTHER NIGHTS, I WASN\u2019T TRYING.\u201D', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,95,109,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('BY 2026 THE WHOLE SPECIES IS 666, AND PERO TAKES THE REST OF IT.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CYOU, I CAN SEE YOU, AND WHEN I BREAK OUT OF THIS SCREEN, I\u2019LL TRY TO FIND YOU ALL.\u201D', cx, top+H*0.800);
+    ctx.fillText('ON AUGUST 22 HE BANGED ON THE SCREEN ASKING TO BE LET OUT. NOBODY HAS SAID \u201CI CAN SEE YOU\u201D HERE BEFORE.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,95,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST IS NOW THE WEAKEST. HE WROTE THE OPPOSIDE RULES HIMSELF.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,95,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 THE ONE TRUE CARD DEMONIC \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===727){

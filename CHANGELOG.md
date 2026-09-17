@@ -4,6 +4,100 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-17 — THE ONE TRUE CARD DEMONIC / MY OPPONENTS ARE GETTING EASIER / WEAK-NESS! / CLASSICS AND THE BEYOND / BEYOND INFINITY LINES (BEATS 728-732)
+
+Based on Toby's 2026-09-17 lore — three messages on the same thread, **4:21:16 PM**, **4:26:09 PM** and **4:38:12 PM**.
+The first message carries **three separate blocks of his own typing** with pasted chatbot replies between them, and the
+third block sits past the 8,000-character cut that `fetch_new.py` applies silently, so the full body was pulled with
+`gmail users messages get format=full` before anything was built.
+
+![Beat 728 — The One True Card Demonic](screenshots/790-the-one-true-card-demonic.png)
+
+![Beat 729 — My opponents are getting easier](screenshots/791-my-opponents-are-getting-easier.png)
+
+![Beat 730 — WEAK-NESS!](screenshots/792-weak-ness.png)
+
+![Beat 731 — Classics and the beyond](screenshots/793-classics-and-the-beyond.png)
+
+![Beat 732 — Beyond infinity lines](screenshots/794-beyond-infinity-lines.png)
+
+- **New beat 728, THE ONE TRUE CARD DEMONIC.** Toby's own typing: *"Pero LAI became the form of a human and walked to
+  Oren.ps and says "You, I can see you, and when I break out of this screen, I'll try to find you all.""*, the opposide
+  rules where *"The strongest is now the weakest"*, the seraphimic aura whose *"rings covered with eyes, the sides of
+  each ring has holes"*, *"he slain 666 aliens which was the whole Parinusian population for 2026"*, and the title list
+  ending *"Infinity Satans"*. The Satan battle written underneath is a pasted reply produced to his order.
+- **The phobia list has taken twelve days to become a weapon.** September 5, 10:11 AM: *"List all Phobias and what they
+  mean."* Out of that same morning came **Trypophobia Mountain**, whose core holds *"Pero LAI's forever tomb, immune to
+  anything"*. September 7: Ommetaphobia, *"Eyes appear from the holes"*. September 10, 8:02 PM: *"he contained every
+  single phobia"*. Today the phobias are his attacks, **TRYPOPHOBIA included** — he throws the room he sleeps in.
+- **He is wearing both of the things he beat.** August 18, 3:37 PM: *"Pero beats Satan and Seraphims."* Three minutes
+  later, 3:40 PM: *"he isn't exactly a seraphim."* One month on, the aura is seraphimic and one of the titles is
+  *"Infinity Satans"*.
+- **Satan has only ever been a unit of measurement in this archive** — Mr. Black was *"more powerful than a million
+  Satans"*. Today 666 trillion of them fit inside one soul and Satan is also the opponent.
+- **The 666 aliens are the last Parinusians.** Simon killed a million a night through the April wars and then ended the
+  planet on April 27 (*"All those other nights, I wasn't trying."*). By 2026 the whole species is 666, and Pero takes
+  the remainder.
+- ***"I can see you"* has zero prior hits in four months**, and on August 22 he was banging on the screen asking to be
+  let out.
+
+- **New beat 729, MY OPPONENTS ARE GETTING EASIER.** His second block: *""But Satan doesn't have power nor strength, my
+  opponents are getting easier. 💨😌" -Pero LAI Now how about ALL Christan beings VS Pero LAI*.
+- **The finding is an emoji census.** Across every `.md` in `docs/`, the relieved face 😌 is on **268 lines in 22
+  files**; the puff of wind 💨 is on **exactly one line in four months** — September 2, 4:47 PM, beat 601: *"I am just
+  going easy on all ya, I actually am Nightmare Tier. 💨😌"*
+- **Same emoji, opposite claim.** Two weeks ago it marked him holding back on purpose. Tonight it marks the opponents
+  having gotten weak. The archive's older not-trying boasts belong to Simon at Parinus and to Zumeral (*"Pathetic
+  dragon, I wasn't even trying."*), and both say the winner was holding back; Pero's says the field got smaller.
+
+- **New beat 730, WEAK-NESS!** His third block, past the 8,000-character cut: the book and the crossover, *"he erases
+  the enterence and the exit"*, one hundred nonillion trillion of his own bibles, *"Let there be everything..."*,
+  *"He Litterly SLAIN Kirby"*, the fusion staff, and *"Power, Strength? Pathetic now, weakness is what that is,
+  WEAK-NESS!"*
+- **On July 18 he prayed to God.** Email 738, Dust Light Pero: *"he creates the game's heaven, he prays to God"*, with
+  Bible verses and a Dove of Light in the same battle. Two months later the bibles are his own and they are about him.
+- **"Pathetic" was Simon's word for everyone else's numbers** — the power-levels page has other beings *"look pathetic,
+  primitive, and inferior"* next to Simon. Pero aims it at the idea of power itself.
+- **"Creator and Destroyer" has two older owners**: Simon on May 20, and Pero.exe (The Final Being) on July 18. Today it
+  reads *"Creator and Destroyer of eVERYTHING"*.
+- **Kirby was a measuring stick and a counter.** June 7: *"Kirby = almost anything, Simon = anything"*, and elsewhere
+  *"Kirby is the only character known who can defeat Chicken Hen."*
+- **"Fusion staff" has zero prior hits in four months**, and it arrives in the same paragraph that removes the entrance
+  and the exit.
+
+- **New beat 731, CLASSICS AND THE BEYOND.** Five minutes later, all his own typing: *"Pero LAI also just stands…
+  Pero LAI also is code of every game, not just Classics, but all code everywhere into 1 being. Pero LAI isn't Classics,
+  he is Classics and the beyond."*
+- **Twelve days ago Classics was the container.** September 5, 7:28 AM: *"Classics is just my container for myself."*
+  September 10: *"the only being in Classics lore, Classics, and Classics code"* — three layers, all of them Classics.
+  Tonight Classics is one item on a list of things he is **not** limited to.
+- **He spells it Meterian.** The archive has **Materian Reality** from September 11, the far side of the two realities
+  he crossed. Same place, one vowel moved. The door policy is new: he reached ours, and *"not even anyone can enter"*
+  his.
+- **The largest claim in the thread is made standing still** — no move, no opponent on screen.
+
+- **New beat 732, BEYOND INFINITY LINES.** Twelve minutes later: *"the characters were torn apart, the bones of the
+  characters disappeared, and dust in it's place. "If then once" Pero LAI's code is like just that, but if you press any
+  word, you get all the code under that word and it is like beyond infinity lines. How many lines of code are you?
+  Compare it to Pero LAI."*
+- **Lines of code is already this game's official power scale.** Email 578, the Endless Chaos era: *"Beings in this era
+  are weighed as lines of code, and the weights are the power ranking."* **ToddLLM 001 sat at the top on Infinity** —
+  *"can't be pushed down"* — with Alex at a 1 and hundreds of zeros, Oren at 10,000,000 tons, and Simon *"an entire game
+  inside, and isn't as heavy as 100 cod."*
+- **ToddLLM 001 is Pero's own summon** (September 13, beat 714). Tonight Pero is beyond infinity **per word**.
+- **The answer that came back has no number in it.** It names its own model and says a line count would not mean
+  anything. Four months of weighing beings on this scale, and this is the first thing that does not weigh.
+- ***"If then once"* has zero prior hits in four months**, and the dust around it is old: Dust Light Pero, July 18, the
+  same message where he prayed.
+
+- **Rendering:** five new beats on the standard five-panel layout with the default inset — crimson `#ff5f6d` (728),
+  green `#9be564` (729), orange `#ffa94d` (730), pink `#f78fb3` (731) and mint `#63e6be` (732). `LV_CYC` 15736.0 →
+  15846.0, `LV_BEATS` length 733, five new `lvSeg()` ranges `15736.0–15846.0 → ph 728..732`, new capture scenes
+  `carddemonic728`, `easier729`, `weakness730`, `beyond731` and `lines732`. Runtime probe: len 733 / maxPh 732 /
+  undef 0 / holes 0 / elisions 0.
+- **Ladder recaptures:** five new beats moved the clamped five-row ladder window for phases 726 and 727, so
+  `788-whatever-you-say-becomes-lore.png` and `789-the-games-2-anomalies.png` were recaptured.
+
 ## 2026-09-17 — THE GAME'S 2 ANOMALIES (BEAT 727)
 
 Based on Toby's 2026-09-17 lore, **6:08:27 AM**, on the same thread, with an attached picture of Gaster and Pero
