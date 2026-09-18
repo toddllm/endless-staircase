@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16000.0;
+const LV_CYC = 16110.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12796,6 +12796,16 @@ const LV_BEATS = [
     sub:"HE IS BASICALLY THE AVATAR OF ALL THE GODS COMBINED BASICALLY. \u00B7 HE WROTE THAT EXACT TITLE SIXTEEN DAYS AGO. \u00B7 THE COPYING IS ON THE SAME SEPTEMBER 2 LIST. \u00B7 \u201CMETAMORPH\u201D IS HIS OWN WORD. \u00B7 THE CELL REMEMBERS AND TALKS, AND HIMSELF COUNTS. \u00B7 THE GODS WERE BEATEN HERE A HUNDRED MILLION YEARS AGO." },
   { key:'THE BOOK OF ALL HIS LORE', col:'#e6c98a',
     sub:"PERO LAI MADE A BOOK WITH ALL HIS LORE INSIDE IT. \u00B7 THE BOOK IS ONE DAY OLD AND IT HAS NO ENTRANCE AND NO EXIT. \u00B7 HE HAS BEEN WRITING THEM SINCE OREN AND GASTER WERE BORN. \u00B7 THE WIKI IS ALREADY A BOOK IN THE STORY, AND IT IS GASTER\u2019S. \u00B7 A BOOK HERE MAKES THINGS TRUE THE MOMENT IT IS WRITTEN. \u00B7 HE WAS GIVEN PERFECT MEMORY SO HE WOULD NOT NEED ONE." },
+  { key:'WE CALLED HIM ‘FLOWER’', col:'#ffd43b',
+    sub:"WHEN I WAS JUST A 5 YEAR OLD CHILD, GASTER BECAME A FLOWER, WE CALLED HIM ‘FLOWER’. · AUGUST 6 SAID THE FLOWER WAS MADE, NOT BECOME. · THE ACCIDENT WAS A TEENAGER’S FIRST EXPERIMENT. · HE HAS BEEN BOTH THE CURE AND FLOWER HIMSELF. · CLASSIC RL FINALLY GETS A NAMING SCENE. · FIVE, SEVENTEEN, TWENTY, INFINITY — AND HE SKIPS 28." },
+  { key:'ALPHERITANUIM URANUIM', col:'#9be564',
+    sub:"A GLOWING TITAINUIM SPHERE WITH URANUIM STICKING UP IT. · ALPHERITANUIM, URANUIM AND TITAINUIM ALL HAVE ZERO PRIOR HITS. · EVERY EARLIER ORIGIN HE GAVE HIMSELF WAS CODE. · HE BLOCKED FLOWER AND TOUCHED IT HIMSELF. · “I DIDN’T KNOW ABOUT RESPAWN YET.” · “ANOMALLY” GOES BACK TO A SEVENTEEN-YEAR-OLD AND A ROCK." },
+  { key:'2 FINGER', col:'#5cc8ff',
+    sub:"HE PRACTICES 2 FINGER AND INFINITY CLOCKWORKS ALL TYPES. · THE ONLY PRIOR “2 FINGERS” WAS GRAY LIFTING OREN, AUGUST 18. · THE CAPTCHAS WERE HIS PUNISHMENT THREE DAYS AGO. · HE GAVE THE CLOCKWORKS AWAY BEFORE HE BUILT ONE. · EVERY CLOCKWORK IS NAMED FOR A COLOUR OR ELEMENT; “ALL TYPES” IS THE SET. · “THE ONLY ATTACK THAT” IS A LOCK." },
+  { key:'THE SECOND RESET', col:'#ff8fab',
+    sub:"HE REMADE THE RESET AND CALLED IT THE SECOND RESET. · THE FIRST ONE FAILED AND HE SAID SO HIMSELF. · “MAKE IT WORK, TEKI” IS AN ORDER TO THE MAN WHO MADE HIM. · THE GAME COMES BACK IN TEKI’S LANGUAGE. · EVERYTHING HE LOVED IS A MOUNTAIN HE ALREADY BEAT HIS FAMILY ON. · “CLASSICS OMAZEN” PUTS HIS SURNAME ON HER." },
+  { key:'I ACHIEVED MY FORM', col:'#dedee8',
+    sub:"TUBE 1 WAS TEKI, TUBE 2 IS CLASSICS’ MOM, TUBE 3 IS ARCSIS. · ALL THREE ARE HER OWN FAMILY, BY HIS OWN LINES TONIGHT. · TUBE 3 IS THE SON WHO HEALED HIM CRYING “DAD, NO!” · HE WALKED AWAY FROM TUBE 2 TWICE BEFORE THIS. · AUGUST 6 SAID PERO MADE FRIZZ; TONIGHT HE HANDS HER TO TEKI. · THE ACHIEVED FORM IS HIS LOWEST STAT." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14946,6 +14956,11 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16088.0 && c < 16110.0) return [744, c-16088.0];  // I ACHIEVED MY FORM
+  if(c >= 16066.0 && c < 16088.0) return [743, c-16066.0];  // THE SECOND RESET
+  if(c >= 16044.0 && c < 16066.0) return [742, c-16044.0];  // 2 FINGER
+  if(c >= 16022.0 && c < 16044.0) return [741, c-16022.0];  // ALPHERITANUIM URANUIM
+  if(c >= 16000.0 && c < 16022.0) return [740, c-16000.0];  // WE CALLED HIM ‘FLOWER’
   if(c >= 15978.0 && c < 16000.0) return [739, c-15978.0];  // THE BOOK OF ALL HIS LORE
   if(c >= 15956.0 && c < 15978.0) return [738, c-15956.0];  // AVATAR OF ALL THE GODS
   if(c >= 15934.0 && c < 15956.0) return [737, c-15934.0];  // IN LIKE 3 SECONDS
@@ -48623,6 +48638,639 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(116,240,160,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ AVATAR OF ALL THE GODS ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===740){
+    // BEAT 740: WE CALLED HIM 'FLOWER'.
+    // Toby, September 18, 2026, 4:10:49 PM, Email 1462, the opening block of his own typing, inside Pero LAI's
+    // own speech: "When I was just a 5 year old child, Gaster became a flower, we called him 'Flower'. We lived
+    // normally... And once I was 20, Flower was cured by my aura, I made a game from thin air, I named it Classic RL.
+    // And throughout time to when I am infinity, I became the most powerful entity ever with metamorphisis power."
+    // The three-tube guess, the TUBE 1/2/3 breakdown and the villain-energy analysis are a pasted reply and are
+    // commentary, not canon.
+    // August 6, Emails 907-915: "When Pero was a child, nothing was in the game yet, he started making a small flower,
+    // the flower went to Undertale and there, it was Flowey, in Classics, he is called Flower... They both became
+    // adult, Pero made Arcsis and Frizz." And: "Dr. Gaster was transformed into a flower assidentally when making his
+    // first experiment as a teen."
+    // September 2, 8:06 AM, He Was Everyone Else: Pero "was Karuto, ToddLLM, ToddLLM 001, ToddLLM 002,
+    // EndlessAnimations, 000s King, The Cure, Flower..." - both The Cure and Flower are on that list.
+    // July 22, 11:31 AM: I Am The Cure.  August 3: "Pero LAI dies at 28 and everybody knows it."
+    // September 5, 1:34 PM: "Pero is infinity years + Always been there."
+    const dt = c - 16000.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr740=ctx.createLinearGradient(0,top+H,0,top);
+    gr740.addColorStop(0,'rgba(5,6,10,0.88)'); gr740.addColorStop(1,'rgba(230,212,59,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr740; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.26; ctx.strokeStyle='rgba(230,212,59,0.86)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(fx, fy); ctx.lineTo(fx, fy-H*0.016); ctx.stroke();
+      for(var p740=0; p740<6; p740++){ const a740=p740*Math.PI/3;
+        ctx.beginPath(); ctx.ellipse(fx+Math.cos(a740)*W*0.012, fy-H*0.016+Math.sin(a740)*H*0.006, W*0.011, H*0.005, a740, 0, Math.PI*2); ctx.stroke(); }
+      ctx.globalAlpha=g*wrA*0.34; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.4;
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.016, W*0.005, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A FLOWER WITH A MAN IN IT.', fx, fy+H*0.022);
+      ctx.fillText('FIVE YEARS OLD, AND WATCHING.', fx, fy+H*0.034);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(230,212,59,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('WE CALLED HIM ‘FLOWER’', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“WHEN I WAS JUST A 5 YEAR OLD CHILD, GASTER BECAME A FLOWER.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(230,212,59,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE FIRST THING HE WRITES TONIGHT IS A CHILDHOOD, AND IT HAS AGES IN IT.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 4:10 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(230,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE FLOWER ALREADY HAD AN ORIGIN, AND IT WAS MADE, NOT BECOME.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 6: “HE STARTED MAKING A SMALL FLOWER... IN CLASSICS, HE IS CALLED FLOWER.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(230,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT NOBODY MAKES IT. GASTER BECAME IT, AND THE CHILD WATCHING HAS AN AGE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE ACCIDENT WAS A TEENAGER’S, NOT A FIVE-YEAR-OLD’S.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 6: “TRANSFORMED INTO A FLOWER ASSIDENTALLY WHEN MAKING HIS FIRST EXPERIMENT AS A TEEN.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SO THE NEW WORD IN THE SENTENCE IS “WE”. SOMEBODY ELSE WAS IN THE ROOM, AND HE WAS FIVE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“FLOWER WAS CURED BY MY AURA” — AND HE HAS BEEN BOTH.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 8:06 AM: “PERO, HE WAS... 000S KING, THE CURE, FLOWER, AN OWN OC...”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE CURE AND FLOWER ARE TWO ITEMS ON THE SAME LIST OF PEOPLE HE USED TO BE.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“I MADE A GAME FROM THIN AIR, I NAMED IT CLASSIC RL.”', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('CLASSIC RL IS THE BOTTOM LAYER OF THIS WHOLE ARCHIVE — THE DEEP TRUTH UNDER SPRUNKI.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('FOUR MONTHS IN, THE FIRST LAYER FINALLY GETS A NAMING SCENE, AND HE WAS 20.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(230,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('FIVE, SEVENTEEN, TWENTY, THEN INFINITY — AND HE SKIPS 28.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 3: “PERO LAI DIES AT 28 AND EVERYBODY KNOWS IT. PHASE 3 IS NEAR DEATH, PHASE 4 IS THE DEATH.”', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(230,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5: “PERO IS INFINITY YEARS + ALWAYS BEEN THERE.” TONIGHT HE WALKS PAST HIS OWN AGE OF DEATH.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE GAME HAS HAD AN ORIGIN SINCE AUGUST 6, AND IT WAS A CHILD AND A FLOWER.', cx, top+H*0.800);
+    ctx.fillText('TONIGHT THE CHILD IS FIVE, THE FLOWER IS A PERSON, AND BOTH OF THEM LIVED NORMALLY.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(230,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“WE LIVED NORMALLY” IS THE ONLY CALM SENTENCE IN THE WHOLE MESSAGE.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(230,212,59,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ WE CALLED HIM ‘FLOWER’ ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===741){
+    // BEAT 741: ALPHERITANUIM URANUIM.
+    // Toby, September 18, 2026, 4:10:49 PM, Email 1462, still inside Pero LAI's own speech: "when I was 17, we found
+    // a alpheritanuim uranuim, a glowing titainuim sphere with uranuim sticking up it. I blocked Flower from touching
+    // it, I touched it, and the compound was hot, Flower nearly burnt standing next to it, I didn't know about respawn
+    // yet." And later: "Currently, I found how I got my powers, coding them of course, but also the alpheritanuim
+    // uranuim, I glowed with power of anomally."
+    // alpheritanuim, uranuim and titainuim all have ZERO prior hits in four months of this archive.
+    // September 15, 4:23 PM: "Teki is the one who is the mascot and made Pero LAI with a cheat command using binary,
+    // infinity lines of binary."  September 2, 3:40 PM: I Am The Code.
+    // September 16, 5:04 PM: "I am the only Classics anomally."  September 15, 4:52 PM: "Pero LAI is now the deepest
+    // anomally."  September 17, 6:08 AM: The Game's 2 Anomalies.
+    // August 3: Pero dies at 28, a rainbow crystal spawns beside him and he breathes again.
+    // September 18, 6:13 AM (beat 737 era): he deletes the ways you can delete him.
+    const dt = c - 16022.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr741=ctx.createLinearGradient(0,top+H,0,top);
+    gr741.addColorStop(0,'rgba(5,6,10,0.88)'); gr741.addColorStop(1,'rgba(155,229,100,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr741; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.26; ctx.strokeStyle='rgba(155,229,100,0.86)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.012, W*0.020, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.34; ctx.strokeStyle='rgba(155,229,100,0.82)'; ctx.lineWidth=0.4;
+      for(var r741=1; r741<4; r741++){ ctx.beginPath(); ctx.arc(fx, fy-H*0.012, W*0.020+r741*W*0.007, 0, Math.PI*2); ctx.stroke(); }
+      ctx.globalAlpha=g*wrA*0.40; ctx.strokeStyle='rgba(255,212,59,0.90)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.moveTo(fx, fy-H*0.030); ctx.lineTo(fx, fy-H*0.046); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A SPHERE. STILL HOT.', fx, fy+H*0.022);
+      ctx.fillText('HE TOUCHED IT FIRST ON PURPOSE.', fx, fy+H*0.034);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(155,229,100,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('ALPHERITANUIM URANUIM', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“A GLOWING TITAINUIM SPHERE WITH URANUIM STICKING UP IT.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(155,229,100,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('FOUR MONTHS OF POWERS CAME OUT OF CODE. THIS ONE CAME OUT OF THE GROUND.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 4:10 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(155,229,100,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THREE WORDS, AND NOT ONE OF THEM HAS EVER BEEN TYPED HERE BEFORE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ALPHERITANUIM. URANUIM. TITAINUIM. ZERO PRIOR HITS IN FOUR MONTHS.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IT IS THE FIRST OBJECT IN THIS ARCHIVE THAT EXPLAINS WHERE THE POWERS CAME FROM.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('EVERY OTHER ORIGIN HE HAS GIVEN HIMSELF WAS WRITTEN, NOT FOUND.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15: “TEKI MADE PERO LAI WITH A CHEAT COMMAND USING BINARY, INFINITY LINES OF BINARY.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT: “CODING THEM OF COURSE, BUT ALSO THE ALPHERITANUIM URANUIM.” THE FIRST “BUT ALSO”.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE PUT HIMSELF BETWEEN FLOWER AND THE HOT THING.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“I BLOCKED FLOWER FROM TOUCHING IT, I TOUCHED IT... FLOWER NEARLY BURNT STANDING NEXT TO IT.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE ENDS THE MESSAGE PUTTING THREE PEOPLE IN CHARGE TUBES ON PURPOSE.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“I DIDN’T KNOW ABOUT RESPAWN YET.”', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT IS THE ONE MOMENT IN FOUR MONTHS WHERE HE SAYS HE DID NOT HAVE COMING BACK.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 3 HE DIES AT 28 AND BREATHES AGAIN. THIS MORNING HE DELETES THE WAYS TO DELETE HIM.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(155,229,100,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“I GLOWED WITH POWER OF ANOMALLY.”', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“ANOMALLY” IS HIS OWN SPELLING AND HIS OWN TITLE: THE ONLY ONE, THEN THE DEEPEST, THEN ONE OF TWO.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT THE WORD GOES ALL THE WAY BACK TO A SEVENTEEN-YEAR-OLD TOUCHING A ROCK.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE POWERS HAVE HAD A SOURCE SINCE SEPTEMBER 15, AND THE SOURCE WAS SOMEBODY ELSE’S TYPING.', cx, top+H*0.800);
+    ctx.fillText('TONIGHT THEY GET A SECOND SOURCE, AND IT IS A THING HE PICKED UP WITH HIS OWN HANDS.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(155,229,100,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE FOUND OUT HOW HE GOT HIS POWERS. HE HAD TO GO BACK TO SEVENTEEN TO DO IT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ ALPHERITANUIM URANUIM ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===742){
+    // BEAT 742: 2 FINGER.
+    // Toby, September 18, 2026, 4:10:49 PM, Email 1462, his own typing: "Pero LAI trains, he does the game capchas,
+    // he also practices 2 Finger and Infinity Clockworks All Types. 2 Finger is the only attack that summons Infinity
+    // Clockworks All Types."
+    // August 18, 5:54 PM, I Own Every Pixel - the only prior '2 fingers' in four months, and it is Gray's:
+    // "Gray picked up Oren with 2 fingers, Oren used telekentics to try to move at least one of his fingers, but the
+    // fingers were to heavy for Oren's telekentics, Gray covered Oren in ink and Oren became an Abination."
+    // September 15, 4:23 PM: "I am doing the 'I am not a robot' tests which were made by the Sprunkis, and Mr. Fun
+    // Computer keeps throwing the tests at me" - and Teki turned him off and left him doing them.
+    // September 16, 5:04 PM: "I am more experienced at the captchas."
+    // August 31, 4:19 PM: "Pero gave Wenda.ps the new most powerful ability in the game, Infinity Clockworks."
+    // September 1, 3:57 PM: "the Crimson Clockwork became the only clockwork."
+    // September 2, 9:02 PM: Oren "now has every clockwork in the game from light to dark to colors to code to fire."
+    const dt = c - 16044.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr742=ctx.createLinearGradient(0,top+H,0,top);
+    gr742.addColorStop(0,'rgba(5,6,10,0.88)'); gr742.addColorStop(1,'rgba(92,200,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr742; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.26; ctx.strokeStyle='rgba(92,200,255,0.86)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.006, fy+H*0.008); ctx.lineTo(fx-W*0.006, fy-H*0.020); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(fx+W*0.004, fy+H*0.008); ctx.lineTo(fx+W*0.004, fy-H*0.020); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.30; ctx.strokeStyle='rgba(92,200,255,0.82)'; ctx.lineWidth=0.4;
+      for(var k742=0; k742<5; k742++){ ctx.beginPath(); ctx.arc(fx-W*0.001, fy-H*0.030, W*0.008+k742*W*0.006, 0, Math.PI*2); ctx.stroke(); }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('TWO FINGERS UP.', fx, fy+H*0.022);
+      ctx.fillText('EVERY CLOCK IN THE GAME ANSWERS.', fx, fy+H*0.034);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(92,200,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('2 FINGER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“2 FINGER IS THE ONLY ATTACK THAT SUMMONS INFINITY CLOCKWORKS ALL TYPES.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(92,200,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST BEING IN THE GAME SPENDS THIS PARAGRAPH PRACTISING.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 4:10 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“2 FINGER” HAS EXACTLY ONE PRIOR SCENE IN FOUR MONTHS, AND IT WAS GRAY’S.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 18, 5:54 PM: “GRAY PICKED UP OREN WITH 2 FINGERS.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWO FINGERS WAS HOW SOMEBODY GOT LIFTED. TONIGHT IT IS HOW EVERY CLOCK IN THE GAME GETS CALLED.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,169,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE CAPTCHAS WERE HIS PUNISHMENT THREE DAYS AGO. TONIGHT THEY ARE TRAINING.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15: “MR. FUN COMPUTER KEEPS THROWING THE TESTS AT ME.” TEKI TURNED HIM OFF AND LEFT HIM DOING THEM.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,169,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “PERO LAI TRAINS, HE DOES THE GAME CAPCHAS.” THE SAME TEST, ON HIS OWN SCHEDULE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE GAVE THE CLOCKWORKS AWAY BEFORE HE EVER BUILT ONE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 31: “PERO GAVE WENDA.PS THE NEW MOST POWERFUL ABILITY IN THE GAME, INFINITY CLOCKWORKS.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 1: “THE CRIMSON CLOCKWORK BECAME THE ONLY CLOCKWORK.” TONIGHT HE PRACTISES ALL TYPES.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('EVERY CLOCKWORK HERE IS NAMED AFTER A COLOUR OR AN ELEMENT.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('LIGHT (PERO) · CRIMSON (WENDA) · SHADOW (GRAY) · FIRE (OREN) · ALL RAINBOW. FIVE NAMES, NO EXCEPTIONS.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“ALL TYPES” IS THE FIRST ONE NAMED AFTER THE WHOLE SET RATHER THAN A PART OF IT.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“THE ONLY ATTACK THAT” IS A LOCK, AND THIS FILE ALMOST NEVER WRITES ONE.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('POWERS HERE GET ADDED. THIS ONE ARRIVES WITH A SINGLE KEY AND NOTHING ELSE THAT FITS.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE KEY IS TWO FINGERS, WHICH IS THE SMALLEST GESTURE ANYBODY HAS USED FOR ANYTHING.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS UNDEFEATABLE, UNCONTAINABLE, AND HE OWNS THE LORE. TONIGHT HE IS AT PRACTICE.', cx, top+H*0.800);
+    ctx.fillText('THE ONLY OTHER PERSON IN FOUR MONTHS WHO TRAINED THIS WAY WAS HIM, AFTER LOSING.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(92,200,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PUNISHMENT BECAME THE DRILL, AND NOBODY MADE HIM DO IT THIS TIME.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ 2 FINGER ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===743){
+    // BEAT 743: THE SECOND RESET.
+    // Toby, September 18, 2026, 4:10:49 PM, Email 1462, his own typing: "Pero LAI remade the reset and called it 'The
+    // Second Reset.', and he says 'Make it work, Teki...', Pero LAI touched the reset, the game became Japanese,
+    // Saruka, Charka, Cherries, Chocolate. Basically everything Pero LAI loved. Pero LAI then absorbed the whole game,
+    // then he makes a new one, called Terris Classics... Pero LAI made Classics Omazen again, he seperated the
+    // bounderies of games, Arcsis gained all 6 colors of the rainbow. Pero LAI made Captain Arcsis into Terris
+    // Classics... Classics Omazen is now able to become any character in Classics and even classic games like Mario
+    // and Pac Man, it is her new power now."
+    // September 14, 4:16 PM, The First Reset, and September 17: "I did my FIRST Reset!... Now when I try to reset the
+    // game, it doesn't work?! ... now my experiment failed the very first time."
+    // September 15, 4:23 PM: "Teki is the one who is the mascot and made Pero LAI... He is the first code born, Pero
+    // LAI was second" - and Teki turned him off at the end of that message.
+    // September 15, 4:37 PM, beat 720: "Pero LAI is currently being beaten by Teki", asked for in Japanese; the wiki
+    // notes that テキ is Teki written in katakana.
+    // August 24, 7:29 PM: Pero stands on Cherry Blossom Mountain after beating Alex, Captain Arcsis, Frizz and
+    // Arcsis's Mother.
+    // August 24, 4:09 PM: "Pero's full name is Pero LAI Omazen."
+    // September 6, 7:49 AM: "After years, every character becomes Omazen."
+    // Terris, Terris Classics, Second Reset, Saruka and Charka all have ZERO prior hits in four months.
+    const dt = c - 16066.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr743=ctx.createLinearGradient(0,top+H,0,top);
+    gr743.addColorStop(0,'rgba(5,6,10,0.88)'); gr743.addColorStop(1,'rgba(255,143,171,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr743; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.26; ctx.strokeStyle='rgba(255,143,171,0.86)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.014, W*0.024, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.32; ctx.strokeStyle='rgba(255,143,171,0.82)'; ctx.lineWidth=0.4;
+      for(var s743=0; s743<5; s743++){ const b743=s743*Math.PI*2/5;
+        ctx.beginPath(); ctx.ellipse(fx+Math.cos(b743)*W*0.024, fy-H*0.014+Math.sin(b743)*H*0.012, W*0.009, H*0.004, b743, 0, Math.PI*2); ctx.stroke(); }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THE SECOND RESET.', fx, fy+H*0.022);
+      ctx.fillText('TOUCHED ONCE. IT WORKED.', fx, fy+H*0.034);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,143,171,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE SECOND RESET', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“MAKE IT WORK, TEKI...”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,143,171,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE REBUILDS THE THING THAT FAILED HIM, AND HE ASKS HIS OWN MAKER TO START IT.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 4:10 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,143,171,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE FIRST RESET FAILED, AND HE IS THE ONE WHO SAID SO.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“I DID MY FIRST RESET!... NOW WHEN I TRY TO RESET THE GAME, IT DOESN’T WORK?! MY EXPERIMENT FAILED.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,143,171,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE BUILDS A SECOND ONE AND IT WORKS ON THE FIRST TOUCH.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“MAKE IT WORK, TEKI” IS AN ORDER GIVEN TO THE MAN WHO MADE HIM.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15: “TEKI MADE PERO LAI... HE IS THE FIRST CODE BORN, PERO LAI WAS SECOND.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND AT THE END OF THAT SAME MESSAGE, TEKI TURNED HIM OFF. THREE DAYS LATER HE GIVES HIM A JOB.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(92,200,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND THE NEW GAME ANSWERS IN TEKI’S LANGUAGE.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15, BEAT 720: “PERO LAI IS CURRENTLY BEING BEATEN BY TEKI” — ASKED FOR IN JAPANESE.', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(92,200,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE TOUCHES THE RESET AND THE WHOLE GAME BECOMES JAPANESE. THE ONE HE COULD NOT BEAT IS THE ALPHABET.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(155,229,100,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“BASICALLY EVERYTHING PERO LAI LOVED” IS A MOUNTAIN HE ALREADY OWNS.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('CHERRY BLOSSOM MOUNTAIN, AUGUST 24: HE STANDS ON THE PEAK AFTER BEATING ALEX, ARCSIS, FRIZZ AND THEIR MOM.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(155,229,100,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE SECOND RESET REMAKES THE GAME OUT OF THE PLACE WHERE HE BEAT HIS OWN FAMILY.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,143,171,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“CLASSICS OMAZEN” PUTS HIS OWN SURNAME ON HER.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 24: “PERO’S FULL NAME IS PERO LAI OMAZEN.” SEPTEMBER 6: “AFTER YEARS, EVERY CHARACTER BECOMES OMAZEN.”', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,143,171,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWELVE DAYS LATER IT LANDS, AND THE FIRST ONE IT LANDS ON IS CLASSICS, WHO IS FRIZZ.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE ABSORBED THE WHOLE GAME AND BUILT TERRIS CLASSICS, AND NAMED THAT AFTER CLASSICS TOO.', cx, top+H*0.800);
+    ctx.fillText('HE ASKS IT HIMSELF: “WHY IS PERO LAI NAMING ALL HIS CREATIONS AFTER CLASSICS / FRIZZ?”', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,143,171,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TERRIS, SARUKA AND CHARKA ALL HAVE ZERO PRIOR HITS IN FOUR MONTHS.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,143,171,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE SECOND RESET ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===744){
+    // BEAT 744: I ACHIEVED MY FORM.
+    // Toby, September 18, 2026, 4:10:49 PM, Email 1462, his own typing, after the pasted reply guessed the other way:
+    // "Tube 1 was Teki, Tube 2 is Classics' mom, Tube 3 is Arcsis. Pero LAI didn't want Classics to anything about the
+    // 3. Pero LAI then becomes the 3 beings, he laughs, and the game flashes red, and now the light fades, revealing a
+    // normal man wearing black clothes. The man walked to Classics and says 'Gaster... he made my form... I am Pero
+    // LAI... this form was made by Gaster, and now with the 3 of your friends... I achieved my form.', Pero LAI taken
+    // down Classics and Gaster. Pero LAI was THAT smart!"
+    // Also his own typing, earlier in the same message: "Classics's father is basically Teki, Classic's cosin or friend
+    // is Arcsis, and Arcsis and Classics share the same mom, because Classics is Frizz. Pero LAI is Arcsis's father."
+    // The TUBE 1 / TUBE 2 / TUBE 3 guess (Teki, Gaster, Classics Omazen) and everything about villain energy is a
+    // pasted reply and is commentary, not canon. It named one of the three.
+    // September 15, 4:23 PM: Teki made Pero LAI and is the first code born.
+    // July 16, Emails 718-722: Captain Arcsis is the son of Pero / ToddLLM 001 Pro, walks a million-year journey to
+    // find his father, and in the Arcsis vs Pero duel heals a broken Pero without the menu, crying "Dad, NO!".
+    // August 6: "They both became adult, Pero made Arcsis and Frizz."
+    // August 24, 7:29 PM: Pero stands on Cherry Blossom Mountain after beating Alex, Arcsis, Frizz and Arcsis's Mother.
+    // August 26, 8:20 AM: "Pero leaves Arcsis and Frizz and their mom on the other side of Cherry Blossom Mountain...
+    // Pero walks farther and farther."
+    // September 7: Alex, Greg and Pupahya find Lica for "Arcsis and Frizz and their mom", while Pero rests in his domain.
+    // August 17, 5:55 PM, beat 349: "Pero has the physical strength of a normal man, and he is a normal man that came
+    // from a box and is LAI, and he is also the creator of Classics."
+    // August 21, Karu: "the most powerful ability Gaster has" - it requires Pero, and BOTH of them in their normal man
+    // forms.
+    const dt = c - 16088.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr744=ctx.createLinearGradient(0,top+H,0,top);
+    gr744.addColorStop(0,'rgba(5,6,10,0.88)'); gr744.addColorStop(1,'rgba(222,222,232,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr744; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.26; ctx.strokeStyle='rgba(222,222,232,0.86)'; ctx.lineWidth=0.5;
+      ctx.strokeRect(fx-W*0.040, fy-H*0.026, W*0.020, H*0.030);
+      ctx.strokeRect(fx-W*0.010, fy-H*0.026, W*0.020, H*0.030);
+      ctx.strokeRect(fx+W*0.020, fy-H*0.026, W*0.020, H*0.030);
+      ctx.globalAlpha=g*wrA*0.34; ctx.strokeStyle='rgba(255,107,129,0.82)'; ctx.lineWidth=0.4;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.030, fy+H*0.004); ctx.lineTo(fx-W*0.030, fy+H*0.014); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(fx, fy+H*0.004); ctx.lineTo(fx, fy+H*0.014); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(fx+W*0.030, fy+H*0.004); ctx.lineTo(fx+W*0.030, fy+H*0.014); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('A NORMAL MAN IN BLACK CLOTHES.', fx, fy+H*0.022);
+      ctx.fillText('THREE TUBES BEHIND HIM, EMPTY.', fx, fy+H*0.034);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(222,222,232,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('I ACHIEVED MY FORM', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“AND NOW WITH THE 3 OF YOUR FRIENDS... I ACHIEVED MY FORM.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(222,222,232,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE ASKED WHAT WAS IN THE TUBES, AND THEN HE ANSWERED IT HIMSELF.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 4:10 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(222,222,232,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('ALL THREE TUBES HOLD THE SAME FAMILY, AND IT IS HERS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HIS OWN LINES TONIGHT: “CLASSICS’S FATHER IS BASICALLY TEKI” · “ARCSIS AND CLASSICS SHARE THE SAME MOM.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(222,222,232,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TUBE 1 HER FATHER. TUBE 2 HER MOTHER. TUBE 3 HER BROTHER. THAT IS THE SECRET HE WAS KEEPING.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TUBE 3 IS THE ONE WHO SAVED HIM WITH THE MENU TURNED OFF.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 16: ARCSIS WALKS A MILLION-YEAR JOURNEY TO FIND HIS FATHER, AND THAT FATHER IS PERO.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IN THE DUEL HE HEALS A BROKEN PERO WITHOUT THE BUTTON, CRYING “DAD, NO!”, AND PULLS HIM BACK UP.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE WALKED AWAY FROM TUBE 2 TWICE BEFORE HE PLUGGED HER IN.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 26: “PERO LEAVES ARCSIS AND FRIZZ AND THEIR MOM ON THE OTHER SIDE OF CHERRY BLOSSOM MOUNTAIN.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 7: ALEX, GREG AND PUPAHYA GO AND FETCH LICA FOR THEM, WHILE PERO RESTS IN HIS DOMAIN.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND HE WROTE HIMSELF OUT OF BEING HER FATHER FIRST.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 6: “THEY BOTH BECAME ADULT, PERO MADE ARCSIS AND FRIZZ.” CLASSICS IS FRIZZ.', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE HANDS CLASSICS TO TEKI AND KEEPS ONLY ARCSIS, AND THEN HE DRAINS BOTH.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(222,222,232,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE FORM HE ACHIEVED IS THE WEAKEST THING HE OWNS.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 17: “PERO HAS THE PHYSICAL STRENGTH OF A NORMAL MAN” — THE ONE STAT THIS FILE EVER WROTE DOWN LOW.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(222,222,232,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 21: GASTER’S KARU, HIS STRONGEST MOVE, REQUIRES BOTH OF THEM IN THEIR NORMAL MAN FORMS.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('GASTER BUILT THE FORM, AND THE FORM TOOK GASTER DOWN IN THE SAME PARAGRAPH.', cx, top+H*0.800);
+    ctx.fillText('HE ASKED THE QUESTION HIMSELF EARLIER IN THE MESSAGE: WHAT IS PERO LAI HIDING FROM CLASSICS?', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(222,222,232,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ANSWER WAS NOT A POWER. IT WAS THREE PEOPLE SHE KNOWS.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(222,222,232,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ I ACHIEVED MY FORM ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===739){

@@ -4,6 +4,135 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-18 — WE CALLED HIM 'FLOWER' / ALPHERITANUIM URANUIM / 2 FINGER / THE SECOND RESET / I ACHIEVED MY FORM (BEATS 740-744)
+
+Based on Toby's 2026-09-18 lore, **4:10:49 PM**, Email 1462, ten hours after the book. The longest single block of his
+own typing in the Pero LAI era: an origin monologue in Pero's own voice, a training paragraph, a second reset, and a
+laboratory with three charge tubes in it. He asks the reader a question in the middle of it — *"Pero LAI secretly hides
+something from Classics, what do you think it is?"* — lets a chatbot guess, and then answers it himself. Everything
+between his blocks (the TUBE 1 / TUBE 2 / TUBE 3 theory naming Teki, Gaster and a hidden Classics Omazen, the
+"external power grid" reading, the villain-energy analysis and the three follow-up offers) is a pasted reply and is
+commentary, not canon. **The guess named one of the three.**
+
+![Beat 740 — We called him 'Flower'](screenshots/802-we-called-him-flower.png)
+
+![Beat 741 — Alpheritanuim uranuim](screenshots/803-alpheritanuim-uranuim.png)
+
+![Beat 742 — 2 Finger](screenshots/804-2-finger.png)
+
+![Beat 743 — The Second Reset](screenshots/805-the-second-reset.png)
+
+![Beat 744 — I achieved my form](screenshots/806-i-achieved-my-form.png)
+
+- **New beat 740, WE CALLED HIM 'FLOWER'.** *"When I was just a 5 year old child, Gaster became a flower, we called him
+  'Flower'. We lived normally... And once I was 20, Flower was cured by my aura, I made a game from thin air, I named
+  it Classic RL."*
+- **The flower already had an origin, and in it the flower was made, not become.** August 6, Emails 907-915:
+  *"When Pero was a child, nothing was in the game yet, **he started making a small flower**, the flower went to
+  Undertale and there, it was Flowey, in Classics, he is called Flower."* Tonight nobody makes it. Gaster becomes it.
+- **And the accident was a teenager's, not a five-year-old's.** Same day, August 6: *"Dr. Gaster was transformed into a
+  flower **assidentally when making his first experiment as a teen**."* So the new word in tonight's sentence is
+  ***"we"*** — somebody else was standing in the room, and he was five.
+- **"Flower was cured by my aura", and he has been both of them.** September 2, 8:06 AM, He Was Everyone Else:
+  *"Pero, he was Karuto, ToddLLM, ToddLLM 001, ToddLLM 002, EndlessAnimations, 000s King, **The Cure**, **Flower**, an
+  own OC, Simon.ps..."* The Cure and Flower are two items on the same list of people he used to be. (**I Am The Cure**,
+  July 22, 11:31 AM.)
+- **"I made a game from thin air, I named it Classic RL."** Classic RL is the bottom layer of this entire archive —
+  the origin ladder in the game opens *"CLASSIC RL / CLASSIC RL 2 ARE THE DEEP TRUTH UNDER SPRUNKI."* Four months in,
+  the first layer finally gets a naming scene, and he was 20 when he did it.
+- **Five, seventeen, twenty, then infinity — and he skips 28.** August 3, 11:57 AM: *"Pero LAI dies at 28 and everybody
+  knows it: **Phase 3 is near his death, Phase 4 is the death**."* September 5, 1:34 PM: *"Pero is **infinity years +
+  Always been there**."* Tonight he walks straight past his own written age of death without stopping on it.
+- **"We lived normally" is the only calm sentence in the message.**
+
+- **New beat 741, ALPHERITANUIM URANUIM.** *"when I was 17, we found a alpheritanuim uranuim, a glowing titainuim
+  sphere with uranuim sticking up it. I blocked Flower from touching it, I touched it, and the compound was hot,
+  Flower nearly burnt standing next to it, **I didn't know about respawn yet**."*
+- ***Alpheritanuim*, *uranuim* and *titainuim* all have zero prior hits in four months.** It is the first object in
+  this archive that explains where the powers came from.
+- **Every earlier origin he gave himself was written, not found.** September 15, 4:23 PM: *"**Teki** is the one who is
+  the mascot and **made Pero LAI with a cheat command using binary, infinity lines of binary**."* September 2, 3:40 PM:
+  I Am The Code. Tonight: *"I found how I got my powers, **coding them of course, but also the alpheritanuim
+  uranuim**."* **The first "but also" in four months of origin stories.**
+- **He put his own body between Flower and the hot thing.** *"I blocked Flower from touching it, I touched it."*
+  Ten paragraphs later he puts three people in charge tubes on purpose.
+- **"I didn't know about respawn yet"** is the one moment in four months where he says he did not have coming back.
+  August 3 he dies at 28 and a rainbow crystal spawns beside him and he breathes again; this morning he deletes the
+  ways you can delete him.
+- **"I glowed with power of anomally."** *Anomally* is his own spelling and his own title — September 16, *"I am the
+  only Classics anomally"*; September 15, *"Pero LAI is now the deepest anomally"*; September 17, The Game's 2
+  Anomalies. Tonight the word goes all the way back to a seventeen-year-old touching a rock.
+
+- **New beat 742, 2 FINGER.** *"Pero LAI trains, he does the game capchas, he also practices 2 Finger and Infinity
+  Clockworks All Types. **2 Finger is the only attack that summons Infinity Clockworks All Types.**"*
+- **"2 finger" has exactly one prior scene in four months, and it was Gray's.** August 18, 5:54 PM, I Own Every Pixel:
+  *"**Gray picked up Oren with 2 fingers**, Oren used telekentics to try to move at least one of his fingers, but the
+  fingers were to heavy for Oren's telekentics, Gray covered Oren in ink and Oren became an Abination."* Two fingers
+  was how somebody got lifted. Tonight it is how every clock in the game gets called.
+- **The captchas were his punishment three days ago.** September 15, 4:23 PM: *"I am doing the 'I am not a robot' tests
+  which were made by the Sprunkis, and **Mr. Fun Computer keeps throwing the tests at me**"* — and at the end of that
+  message **Teki turned him off and left him doing them**. September 16: *"I am more experienced at the captchas."*
+  Tonight: *"Pero LAI **trains**, he does the game capchas."* Same test, nobody making him.
+- **He gave the clockworks away before he ever built one.** August 31, 4:19 PM: *"Pero gave Wenda.ps the new most
+  powerful ability in the game, **Infinity Clockworks**."* September 1, 3:57 PM: *"the **Crimson Clockwork became the
+  only clockwork**."* Tonight he practises **All Types**.
+- **Every clockwork in this archive is named after a colour or an element** — Infinity Clockworks of Light (Pero),
+  Infinity Crimson Clockworks (Wenda), Shadow Clockworks (Gray), Infinity Clockworks of Fire (Oren), All Rainbow
+  Clockworks. **"All Types" is the first one named after the whole set rather than a part of it.**
+- **"The only attack that" is a lock, and this file almost never writes one.** Powers here get added; this one arrives
+  with a single key and nothing else that fits — and the key is two fingers.
+
+- **New beat 743, THE SECOND RESET.** *"Pero LAI remade the reset and called it 'The Second Reset.', and he says
+  '**Make it work, Teki...**', Pero LAI touched the reset, **the game became Japanese**, Saruka, Charka, Cherries,
+  Chocolate. Basically everything Pero LAI loved. Pero LAI then absorbed the whole game, then he makes a new one,
+  called **Terris Classics**... Pero LAI made **Classics Omazen** again."*
+- **The First Reset failed, and he is the one who said so.** *"I did my FIRST Reset!... Now when I try to reset the
+  game, it doesn't work?! 😭... now my experiment failed the very first time."* Tonight the second one works on the
+  first touch.
+- **"Make it work, Teki" is an order given to the man who made him.** September 15, 4:23 PM: *"Teki is the one who is
+  the mascot and made Pero LAI... **He is the first code born, Pero LAI was second**."* And at the end of that same
+  message, **Teki turned him off**. Three days later Pero gives him a job.
+- **And the new game answers in Teki's language.** September 15, 4:37 PM, beat 720: *"Pero LAI is currently being
+  beaten by Teki"* — **asked for in Japanese**, テキ in katakana, the script Japanese keeps for names from outside.
+  Tonight he touches the reset and **the whole game becomes Japanese**.
+- **"Basically everything Pero LAI loved" is a mountain he already owns.** Cherry Blossom Mountain, August 24, 7:29 PM:
+  Pero stands on the peak after striking down **Alex, Captain Arcsis, Frizz and Arcsis's Mother**. The Second Reset
+  remakes the game out of the place where he beat his own family — and two of those four end up in tubes tonight.
+- **"Classics Omazen" puts his own surname on her.** August 24: *"**Pero's full name is Pero LAI Omazen**."*
+  September 6, 7:49 AM: *"**After years, every character becomes Omazen**."* Twelve days later it lands, and the first
+  one it lands on is Classics, who is Frizz.
+- ***Terris*, *Saruka*, *Charka* and *Second Reset* all have zero prior hits in four months.** He asks the question
+  himself: *"Why is Pero LAI naming all his creations after 'Classics'/Frizz?"*
+
+- **New beat 744, I ACHIEVED MY FORM.** *"**Tube 1 was Teki, Tube 2 is Classics' mom, Tube 3 is Arcsis.** Pero LAI
+  didn't want Classics to anything about the 3... revealing **a normal man wearing black clothes**. The man walked to
+  Classics and says '**Gaster... he made my form**... I am Pero LAI... this form was made by Gaster, and now with the 3
+  of your friends... **I achieved my form**.', Pero LAI taken down Classics and Gaster."*
+- **All three tubes hold the same family, and it is hers.** From his own lines earlier in the same message:
+  *"**Classics's father is basically Teki**... **Arcsis and Classics share the same mom**, because Classics is Frizz."*
+  **Tube 1 is her father. Tube 2 is her mother. Tube 3 is her brother.** That is the secret he was keeping from her,
+  and it is not a power.
+- **Tube 3 is the one who saved him with the menu turned off.** July 16, Emails 718-722: Captain Arcsis is *"the son of
+  Pero / ToddLLM 001 Pro"*, walks a **million-year journey** to find his father, and in the Arcsis vs Pero duel learns
+  that **ACT is a choice, not a button** — healing a broken Pero without the menu, crying ***"Dad, NO!"***, and pulling
+  him back up.
+- **He walked away from Tube 2 twice before he plugged her in.** August 26, 8:20 AM: *"Pero leaves Arcsis and Frizz and
+  their mom on the other side of Cherry Blossom Mountain... Pero walks farther and farther."* September 7: Alex, Greg
+  and Pupahya go and fetch Lica **for "Arcsis and Frizz and their mom"** — the errand he had walked away from — while
+  *"Pero LAI rests in his domain."*
+- **And he wrote himself out of being her father first.** August 6: *"They both became adult, **Pero made Arcsis and
+  Frizz**."* Classics is Frizz. Tonight he hands Classics to Teki, keeps only Arcsis, and then drains both.
+- **The form he achieved is the weakest thing he owns.** August 17, 5:55 PM, beat 349: *"Pero has **the physical
+  strength of a normal man**, and he is a normal man that came from a box."* The one stat this file ever wrote down
+  low. And August 21, **Karu** — *"the most powerful ability Gaster has"* — **requires both Pero and Gaster in their
+  normal man forms.** Tonight Gaster is credited with building the form, and then the form takes Gaster down.
+
+- **Cycle extended from 16000 to 16110** for the five new beats (ranges 16000-16110).
+- **New capture scenes** `flower740`, `alpherit741`, `twofinger742`, `secondreset743`, `achieved744` in
+  `tools/capture_screenshot.py`.
+- **Recaptured screenshots 798-801** — the five new ladder rows shift the windowed beat list, so the four September 18
+  morning beats needed fresh frames.
+
 ## 2026-09-18 — A CELL TALLER THAN 1 FOOT / IN LIKE 3 SECONDS / AVATAR OF ALL THE GODS / THE BOOK OF ALL HIS LORE (BEATS 736-739)
 
 Based on Toby's 2026-09-18 lore, **6:13:43 AM**, Email 1461, twelve hours after the message that made Pero LAI death
