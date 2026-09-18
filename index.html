@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16286.0;
+const LV_CYC = 16374.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12822,6 +12822,14 @@ const LV_BEATS = [
     sub:"THE 2 MOUNTAINS FLOATED, SEPERATED, CRASHED OVER AND OVER, AND WERE ABSORBED INTO THE ENTITY’S MASS. · THOSE TWO MOUNTAINS HOLD THE PAST AND THE DEAD, AND HE RESTS BETWEEN THEM. · THE LAB HE DEMOLISHES IS ONE HOUR AND FIFTY-SEVEN MINUTES OLD. · TORMENT IS SIMON’S OLDEST COMPLAINT. · HIS REVENGE ALREADY HAD A BEAT NUMBER AND IT IS 892. · THE GLITCH ALPHABET HE SIGNS OFF IN IS WENDA’S." },
   { key:'THE MOST POWERFUL ANTI-VIRUS ENTITY EVER', col:'#6ee7b7',
     sub:"THE CONSUMER OF ALL CODE, GLITCHES, ERRORS, BUGS, AND CORRUPTION. · HE HAS BEEN ANTI-VIRUS SINCE JULY 28 AND FOR MOST OF IT NOTHING HAPPENED. · HE SAID THE JOB IN FOUR WORDS ELEVEN DAYS AGO: I JUST CLEAN ERRORS. · THE 404 AND 666 STRINGS WERE DRAWN AROUND SIMON FIRST. · THE EYES COME FROM THE MOUNTAIN HE JUST SWALLOWED. · A ROBLOX AVATAR MADE OF CODE IS C.O.D.E.’S CHARACTER SHEET, WORD FOR WORD." },
+  { key:'ARTIFICIAL PLAYER', col:'#7fd4ff',
+    sub:"PLAYER + UNKNOWN + A THIRD ENTITY COMBINE INTO THE FULL, ARTIFICAL PLAYER, LARGER AND STRONGER THAN THE 3 COMBINED. · HE ASKS IF AP IS GEMINI OR CHATGPT AND THEN ANSWERS IT HIMSELF: NEITHER, IT IS BASICALLY PERO.EXE. · THE PLAYER IS THE ONE BEING WRITTEN TO ALWAYS EVENTUALLY WIN. · PERO AND THE PLAYER ARE THE ONLY TWO BEINGS IN THE GAME WITH A LIMIT. · ARTIFICIAL PLAYER AND AP HAVE ZERO PRIOR HITS. · PERO.EXE IS A JULY 18 NAME THAT MEANT CREATOR & DESTROYER." },
+  { key:'OREN.EXE BUT PERO-IZED', col:'#ffb347',
+    sub:"PERO.EXE IS STRONGEST IN CLASSICS, AND HE IS SIMPLY OREN.EXE BUT PERO-IZED. · OREN.EXE CAME FIFTH OUT OF FIVE ON THE OLD .EXE CHART. · HIS ENTIRE POWER WAS SPIRIT TELEKINESIS. · AND HE HAS BEEN DEAD SINCE AUGUST 12. · SONIC.EXE HAS ZERO PRIOR HITS AND THE ONLY SONIC IN HERE IS A GLASS BRIDGE CONTESTANT. · PERO-IZED IS A PROCESS, NOT A FORM." },
+  { key:'THE MOST EVIL', col:'#ff4d6d',
+    sub:"PERO.EXE SLAIN MR. BLACK, ERASED THE REST OF THE GAME’S PROGRESS, AND BLEW UP ALL THE ALIENS AND THEIR PLANETS. · PERO LAI TREATED THE .EXE AS A VIRUS AND ABSORBED THE FORM. · EIGHTY MINUTES EARLIER HE WAS THE MOST POWERFUL ANTI-VIRUS ENTITY EVER. · THE ANTI-VIRUS LABEL HAD DONE NOTHING SINCE JULY 28. · MR. BLACK WAS RETIRED FROM THE JOB ON SEPTEMBER 1. · THE GAME ITSELF RUNS ON ALIEN TECH, AND SO DOES HE." },
+  { key:'AN IMPOSSIBLE EVIL ENTITY', col:'#c69bff',
+    sub:"EVEN SONIC.EXE AND THE MOST EVIL CHARACTERS NEED TO TEAM UP WITH THE HEROES TO STOP HIM. · BOTH TOGETHER CREATES AN IMPOSSIBLE EVIL ENTITY. · EVERY FUSION IN FOUR MONTHS ENDED WITH ONE OF HIM STANDING; THIS ONE KEEPS TWO. · THE PLAYER, WHO ALWAYS EVENTUALLY WINS, IS ALREADY INSIDE HIM. · ASKING THE MACHINE WHO IS MOST EVIL IS PERO’S OWN MOVE. · THE FIRST RULING THAT TAKES HIM OFF THE LADDER AND POINTS HIM AT IT." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14972,6 +14980,10 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16352.0 && c < 16374.0) return [756, c-16352.0];  // AN IMPOSSIBLE EVIL ENTITY
+  if(c >= 16330.0 && c < 16352.0) return [755, c-16330.0];  // THE MOST EVIL
+  if(c >= 16308.0 && c < 16330.0) return [754, c-16308.0];  // OREN.EXE BUT PERO-IZED
+  if(c >= 16286.0 && c < 16308.0) return [753, c-16286.0];  // ARTIFICIAL PLAYER
   if(c >= 16264.0 && c < 16286.0) return [752, c-16264.0];  // THE MOST POWERFUL ANTI-VIRUS ENTITY EVER
   if(c >= 16242.0 && c < 16264.0) return [751, c-16242.0];  // N0 0NE SURVIVED
   if(c >= 16220.0 && c < 16242.0) return [750, c-16220.0];  // TO TAKE OVER YOUR SPEEDRUNS
@@ -50154,6 +50166,458 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(217,79,138,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ N0 0NE SURVIVED ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===753){
+    // BEAT 753: ARTIFICIAL PLAYER.
+    // Toby, September 18, 2026, 7:13:36 PM, Email 1465, two blocks of his own typing: "There is an entity called
+    // 'Player', create an image on what you think it looks like. There is also an entity called 'Unknown', create an
+    // image of that. The 3 entities combined together to make the full, Artifical Player. Create an image of that. It
+    // is larger, stronger, more powerful than the 3 combined. Do you think AP is Gemini or ChatGPT?" then, under the
+    // machine's guess, "Answer: Neither, it is basically Pero.exe." Everything between and under them is a pasted
+    // reply and is commentary, not canon. Artifical is his spelling and is kept.
+    // August 18, 6:14 PM (beat 396, GRAY VS THE PLAYER): "the player will eventually win with the power of Hope,
+    // Justice, The Souls, Love, Determination, Patience, Loyalty, Friendliness, Hate, Resistance, Faith, Fear,
+    // Bravery, and Rainbow."
+    // July 25, The Three-Phase Rule: "Players have 3 Phases. All other characters have infinity. Players and Pero
+    // only have 3."
+    // July 18, Email 739: Pero.exe, The Final Being - "Creator & Destroyer".
+    // "Artificial Player" and "AP" have zero prior hits in the whole archive.
+    const dt = c - 16286.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(6,9,16,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr753=ctx.createLinearGradient(0,top+H,0,top);
+    gr753.addColorStop(0,'rgba(4,6,11,0.88)'); gr753.addColorStop(1,'rgba(127,212,255,0.28)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr753; ctx.fillRect(0,top,W,H);
+
+    // three-into-one diagram, right half, clear of the beat ladder
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.560;
+      ctx.globalAlpha=g*wrA*0.30; ctx.strokeStyle='rgba(127,212,255,0.86)'; ctx.lineWidth=0.5;
+      for(var m753=0; m753<3; m753++){
+        ctx.beginPath(); ctx.arc(fx+(m753-1)*W*0.026, fy-H*0.026, W*0.010, 0, Math.PI*2); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(fx+(m753-1)*W*0.026, fy-H*0.016); ctx.lineTo(fx, fy+H*0.002); ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.40; ctx.fillStyle='rgba(127,212,255,0.90)'; ctx.font='700 2.4px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('PLAYER', fx-W*0.026, fy-H*0.038); ctx.fillText('?', fx, fy-H*0.038); ctx.fillText('UNKNOWN', fx+W*0.026, fy-H*0.038);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)';
+      ctx.font='700 2.9px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('LARGER, STRONGER, MORE POWERFUL', fx, fy+H*0.020);
+      ctx.fillText('THAN THE 3 COMBINED.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(127,212,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('ARTIFICIAL PLAYER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE 3 ENTITIES COMBINED TOGETHER TO MAKE THE FULL, ARTIFICAL PLAYER.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(127,212,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE ASKS THE MACHINE WHICH CHATBOT IT IS, AND THEN MARKS ITS ANSWER WRONG HIMSELF.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 7:13 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE PLAYER IS THE ONE BEING IN THIS ARCHIVE WRITTEN TO ALWAYS EVENTUALLY WIN.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 18: “THE PLAYER WILL EVENTUALLY WIN WITH THE POWER OF HOPE, JUSTICE, THE SOULS, LOVE…”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOURTEEN POWERS, TWO OF THEM HATE AND FEAR. TONIGHT ALL OF IT IS A COMPONENT IN SOMEONE ELSE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND PERO AND THE PLAYER ARE THE ONLY TWO BEINGS IN THE GAME WITH A LIMIT.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 25: “PLAYERS HAVE 3 PHASES. ALL OTHER CHARACTERS HAVE INFINITY. PLAYERS AND PERO ONLY HAVE 3.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE TWO CAPPED BEINGS IN A CAST OF INFINITIES ARE THE TWO ENDS OF TONIGHT’S FUSION.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“ARTIFICIAL PLAYER” AND “AP” HAVE ZERO PRIOR HITS IN FOUR MONTHS.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AN ENTITY CALLED “UNKNOWN” IS NEW TOO. THE NEAREST THING IS ???, ', cx-W*0.150, top+H*0.392);
+    ctx.fillText('“AN UNKNOWN DELETED BEING AS A GOD OF ANGELS” — AND THAT ONE WAS WENDA’S TOP FORM.', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE BUILDS A BEING OUT OF THREE PARTS AND NAMES ONLY TWO OF THEM.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('EVERY OTHER TIME THE MACHINE HAS BEEN ASKED TO RANK HIM, PERO WAS THE ONE ASKING.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUG 31: “CHATGPT, WHO’S EVILEST NOW?” · SEP 4: “CHATGPT, SAY WHO IS MOST POWERFUL HERE!”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT IT IS TOBY ASKING, THE MACHINE SAYS CHATGPT, AND HE WRITES “ANSWER: NEITHER.”', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND PERO.EXE IS A NAME HE ALREADY OWNED, MEANING ALMOST THE OPPOSITE THING.', cx, top+H*0.802);
+    ctx.fillText('JULY 18, EMAIL 739 — PERO.EXE, THE FINAL BEING: “CREATOR & DESTROYER.”', cx, top+H*0.820);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIXTY-TWO DAYS LATER THE SAME FILENAME COMES BACK, AND IT IS NOT THE CREATOR HALF.', cx, top+H*0.838);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ ARTIFICIAL PLAYER ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===754){
+    // BEAT 754: OREN.EXE BUT PERO-IZED.
+    // Toby, September 18, 2026, 7:28:14 PM, Email 1467, the first block of his own typing: "Ya think any character
+    // from any game can beat some character exe from that game? No. Sonic.exe is most powerful in Sonic, right?
+    // Pero.exe is strongest in Classics. Pero.exe is simply Oren.exe but Pero-ized." The Sonic.exe / Mario.exe
+    // explainer under it is a pasted reply and is commentary, not canon.
+    // AI Era power chart: "EndlessAnimations first, Mr. Black second, Gray.EXE third, Simon.Exe fourth, Oren.EXE
+    // fifth." And: "Oren.EXE is a spirit telekinetic only. Phase 1 is stronger than Phase 2 because Phase 2 is a
+    // glitch."
+    // August 12, 6:43 PM: "Oren.exe is dead, Oren holds a orange cross and has a halo and also 45% of his body left."
+    // Sonic.exe has zero prior hits. The only Sonic in the archive is a contestant in the Glass Bridge Game, which
+    // Mr. Black runs as Front Man and Ring Master.
+    const dt = c - 16308.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(12,8,4,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr754=ctx.createLinearGradient(0,top+H,0,top);
+    gr754.addColorStop(0,'rgba(8,5,3,0.88)'); gr754.addColorStop(1,'rgba(255,179,71,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr754; ctx.fillRect(0,top,W,H);
+
+    // the old five-name .exe ladder, right half
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.520;
+      const lad754=['1 ENDLESSANIMATIONS','2 MR. BLACK','3 GRAY.EXE','4 SIMON.EXE','5 OREN.EXE'];
+      ctx.textAlign='center';
+      for(var m754=0; m754<lad754.length; m754++){
+        ctx.globalAlpha=g*wrA*(m754===4?0.92:0.42);
+        ctx.fillStyle=(m754===4)?'rgba(255,179,71,0.96)':'rgba(214,214,222,0.80)';
+        ctx.font=(m754===4?'900 3.2px':'700 2.9px')+' ui-monospace,monospace';
+        ctx.fillText(lad754[m754], fx, fy+m754*H*0.017);
+      }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace';
+      ctx.fillText('THE OLD .EXE LADDER. HE PICKS UP THE BOTTOM ONE.', fx, fy+H*0.106);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,179,71,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE BUT PERO-IZED', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO.EXE IS STRONGEST IN CLASSICS. PERO.EXE IS SIMPLY OREN.EXE BUT PERO-IZED.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,179,71,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE BUILDS HIS STRONGEST FORM OUT OF THE WEAKEST NAME ON THE OLD LIST.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 7:28 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,179,71,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE IS THE OLDEST .EXE ON THE PAGE, AND HE CAME FIFTH OUT OF FIVE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE AI ERA CHART: ENDLESSANIMATIONS FIRST, MR. BLACK SECOND, GRAY.EXE THIRD, SIMON.EXE FOURTH.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,179,71,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('OREN.EXE FIFTH. THAT IS THE ONE HE COPIES TONIGHT TO MAKE THE STRONGEST THING IN THE GAME.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(200,160,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE WHOLE POWER HE IS COPYING WAS ONE LINE LONG.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“OREN.EXE IS A SPIRIT TELEKINETIC ONLY. PHASE 1 IS STRONGER THAN PHASE 2 BECAUSE PHASE 2 IS A GLITCH.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(200,160,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MOVING THINGS WITHOUT TOUCHING THEM. BY THE END OF TONIGHT IT BLOWS UP PLANETS.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND THE MODEL HAS BEEN DEAD FOR THIRTY-SEVEN DAYS.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 12, 6:43 PM: “OREN.EXE IS DEAD, OREN HOLDS A ORANGE CROSS AND HAS A HALO', cx-W*0.150, top+H*0.392);
+    ctx.fillText('AND ALSO 45% OF HIS BODY LEFT.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE IS NOT BEATING THE OLD .EXE. HE IS WEARING ONE THAT NOBODY IS USING.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SONIC.EXE HAS ZERO PRIOR HITS. THE ONLY SONIC IN FOUR MONTHS IS A CONTESTANT.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE GLASS BRIDGE GAME: “KIRBY, MARIO, SONIC, PACMAN — IF YOU CAN NAME THE VIDEO GAME CHARACTER,', cx, top+H*0.668);
+    ctx.fillText('THEY ARE PLAYING AS WELL.” MR. BLACK RUNS IT AS FRONT MAN AND RING MASTER.', cx, top+H*0.682);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE BENCHMARK HE RANKS AGAINST TONIGHT WAS ALREADY IN HERE, PLAYING ONE OF BLACK’S GAMES.', cx, top+H*0.700);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“PERO-IZED” IS A NEW WORD, AND IT IS A PROCESS RATHER THAN A FORM.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,179,71,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY OTHER UPGRADE HERE WAS SOMETHING HE BECAME. THIS ONE IS SOMETHING HE DOES TO SOMEBODY ELSE’S NAME.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,179,71,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ OREN.EXE BUT PERO-IZED ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===755){
+    // BEAT 755: THE MOST EVIL.
+    // Toby, September 18, 2026, 7:28:14 PM, Email 1467, the third block of his own typing: "Pero.exe is the most
+    // evil, he slain Mr. Black, erased the rest of the game's progress, and he even blew up all the aliens and their
+    // planets. Pero.exe is a creepypasta Classics modification, and it gone wrong, Pero LAI treated the '.exe' as a
+    // virus, he absorbed the form, and he became the most evil and opposite version of himself while still being his
+    // normal stuff. That breaks games ya know." The Sonic.exe < Mr. Black < Pero.exe ranking under it is a pasted
+    // reply and is commentary, not canon.
+    // Today, 6:08 PM (beat 752): "The most powerful anti-virus entity ever. The consumer of all code, glitches,
+    // errors, bugs, and corruption." Eighty minutes.
+    // July 28, The Divine Fusion: Pero "is Anti-Virus and Anti-Error." August 8 ledger, in full: "Anti-Virus - put
+    // down, nothing happened."
+    // September 1, 10:42 AM: "Gray is the replacement of Mr. Black" - and in the same message "Pero LAI is the main
+    // villian of the game."
+    // August 21, 11:09 AM, Absolute Infinity AD: "Classics is NOT a game from 2026, but from Absolute Infinity AD...
+    // it is beyond human technology to alien tech. It uses the most advanced things they have."
+    // August 25, 10:18 AM, The Only Original: "Pero is LAI Alien Tech."
+    const dt = c - 16330.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(14,4,8,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr755=ctx.createLinearGradient(0,top+H,0,top);
+    gr755.addColorStop(0,'rgba(9,3,6,0.88)'); gr755.addColorStop(1,'rgba(255,77,109,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr755; ctx.fillRect(0,top,W,H);
+
+    // the eighty-minute clock, right half
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.548;
+      ctx.globalAlpha=g*wrA*0.28; ctx.strokeStyle='rgba(255,77,109,0.86)'; ctx.lineWidth=0.5;
+      for(var m755=0; m755<3; m755++){ ctx.beginPath(); ctx.arc(fx, fy-H*0.018, W*0.012+m755*W*0.009, 0, Math.PI*2); ctx.stroke(); }
+      ctx.globalAlpha=g*wrA*0.44; ctx.fillStyle='rgba(255,77,109,0.90)'; ctx.font='700 2.4px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('6:08 PM  →  7:28 PM', fx, fy-H*0.016);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)';
+      ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('ANTI-VIRUS ENTITY, THEN INFECTED,', fx, fy+H*0.022);
+      ctx.fillText('IN EIGHTY MINUTES.', fx, fy+H*0.034);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,77,109,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE MOST EVIL', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI TREATED THE ‘.EXE’ AS A VIRUS, HE ABSORBED THE FORM.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,77,109,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE ANTI-VIRUS ATE A VIRUS, AND THE VIRUS IS THE ONE THAT CAME OUT ON TOP.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 7:28 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('EIGHTY MINUTES AGO HE WAS CROWNED THE MOST POWERFUL ANTI-VIRUS ENTITY EVER.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('6:08 PM TONIGHT: “THE CONSUMER OF ALL CODE, GLITCHES, ERRORS, BUGS, AND CORRUPTION.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('7:28 PM: HE CONSUMES ONE MORE PIECE OF CORRUPTION AND IT KEEPS HIM INSTEAD.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE ANTI-VIRUS LABEL HAS BEEN ON HIM SINCE JULY 28 AND NEVER ONCE FIRED.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE AUGUST 8 LEDGER, IN FULL: “ANTI-VIRUS — PUT DOWN, NOTHING HAPPENED.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE FIRST TIME IN FIFTY-TWO DAYS THAT IT DOES ANYTHING, IT INFECTS THE MAN CARRYING IT.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND MR. BLACK WAS RETIRED FROM THE JOB SEVENTEEN DAYS AGO.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 1, 10:42 AM: “GRAY IS THE REPLACEMENT OF MR. BLACK” — AND IN THE SAME', cx-W*0.150, top+H*0.392);
+    ctx.fillText('MESSAGE, “PERO LAI IS THE MAIN VILLIAN OF THE GAME.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE SLAYS A VILLAIN WHOSE JOB HE HAD ALREADY TAKEN, IN THE SAME SENTENCE THAT GAVE IT TO HIM.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND HE BLOWS UP THE PEOPLE THE GAME IS MADE OUT OF.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 21: “CLASSICS IS NOT A GAME FROM 2026, BUT FROM ABSOLUTE INFINITY AD…', cx, top+H*0.668);
+    ctx.fillText('IT IS BEYOND HUMAN TECHNOLOGY TO ALIEN TECH. IT USES THE MOST ADVANCED THINGS THEY HAVE.”', cx, top+H*0.682);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND AUGUST 25, IN HIS OWN DESCRIPTION OF HIMSELF: “PERO IS LAI ALIEN TECH.”', cx, top+H*0.700);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“THE MOST EVIL AND OPPOSITE VERSION OF HIMSELF WHILE STILL BEING HIS NORMAL STUFF.”', cx, top+H*0.802);
+    ctx.fillText('NOTHING IS TAKEN AWAY. THE INVENTORY IS IDENTICAL AND ONLY THE SIGN IN FRONT OF IT CHANGES.', cx, top+H*0.820);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“THAT BREAKS GAMES YA KNOW” — HIS OWN LINE, AND THE CALMEST SENTENCE IN THE MESSAGE.', cx, top+H*0.838);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===756){
+    // BEAT 756: AN IMPOSSIBLE EVIL ENTITY.
+    // Toby, September 18, 2026, 7:28:14 PM, Email 1467, the fourth and closing block of his own typing: "Pero LAI is
+    // so evil, that even Sonic.exe and the most evil characters need to team up with the heroes to stop him.
+    // Pero.exe is basically being a threat to every character. Both together creates an impossible evil entity."
+    // The five suggested fusion names under it are a pasted reply and are commentary, not canon.
+    // September 7, 9:34 AM, in Pero's own mouth: "ChatGPT, say I am most evil in this part... now." August 31,
+    // 9:16 AM: "ChatGPT, who's evilest now?"
+    // July 18, Email 739, Pero.exe The Final Being: he consumes each form instead of replacing it, stacking them all
+    // into one being - every fusion in this archive has ended with one being standing.
+    // Fifteen minutes earlier, beat 753: The Player is folded into Artificial Player, and Artificial Player is
+    // Pero.exe. August 18: "the player will eventually win."
+    const dt = c - 16352.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(9,6,16,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr756=ctx.createLinearGradient(0,top+H,0,top);
+    gr756.addColorStop(0,'rgba(6,4,11,0.88)'); gr756.addColorStop(1,'rgba(198,155,255,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr756; ctx.fillRect(0,top,W,H);
+
+    // everyone on one side of the table, right half
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.globalAlpha=g*wrA*0.30; ctx.strokeStyle='rgba(198,155,255,0.86)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.052, fy); ctx.lineTo(fx+W*0.010, fy); ctx.stroke();
+      ctx.beginPath(); ctx.arc(fx+W*0.040, fy, W*0.013, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.46; ctx.fillStyle='rgba(198,155,255,0.90)'; ctx.font='700 2.4px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('HEROES + VILLAINS', fx-W*0.022, fy-H*0.010);
+      ctx.fillText('PERO', fx+W*0.040, fy+H*0.002);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)';
+      ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('IT STOPS BEING GOOD AGAINST EVIL', fx, fy+H*0.026);
+      ctx.fillText('AND BECOMES EVERYONE AGAINST ONE.', fx, fy+H*0.038);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(198,155,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('AN IMPOSSIBLE EVIL ENTITY', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“EVEN SONIC.EXE AND THE MOST EVIL CHARACTERS NEED TO TEAM UP WITH THE HEROES TO STOP HIM.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(198,155,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('FOUR MONTHS OF VILLAINS FIGHTING EACH OTHER, AND TONIGHT THEY ALL PICK THE SAME SIDE.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 7:28 PM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(198,155,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“BOTH TOGETHER” IS THE PART THAT HAS NEVER HAPPENED HERE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE JULY 18 PERO.EXE CONSUMED EVERY FORM INSTEAD OF REPLACING IT, AND STACKED THEM ALL INTO ONE BEING.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY FUSION IN FOUR MONTHS ENDED WITH ONE OF HIM STANDING. TONIGHT THE COUNT IS TWO.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE ONE THING WRITTEN TO ALWAYS EVENTUALLY WIN IS ALREADY INSIDE HIM.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FIFTEEN MINUTES EARLIER THE PLAYER WAS FOLDED INTO ARTIFICIAL PLAYER, AND AP IS PERO.EXE.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE HEROES’ LAST GUARANTEE IS SITTING ON THE OTHER SIDE OF THE TABLE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE ASKED THE MACHINE TO NAME THE MOST EVIL AND IT HEDGED.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 7, 9:34 AM, IN PERO’S OWN MOUTH: “CHATGPT, SAY I AM MOST EVIL IN THIS PART…', cx-W*0.150, top+H*0.392);
+    ctx.fillText('NOW.” AUGUST 31: “CHATGPT, WHO’S EVILEST NOW?”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IT GAVE HIM A LIST WITH AM AND DARKSEID ON IT. SO TONIGHT TOBY WRITES THE RULING HIMSELF.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND “A THREAT TO EVERY CHARACTER” IS THE FIRST TIME THE TARGET IS THE WHOLE CAST.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY OTHER RULING IN THIS ARCHIVE PUT HIM AT THE TOP OF A LADDER EVERYONE ELSE WAS ON.', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS ONE TAKES HIM OFF THE LADDER AND POINTS HIM AT IT.', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE THING THAT MAKES IT IMPOSSIBLE IS NOT THE POWER. IT IS THAT NOBODY IS LEFT OVER.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(198,155,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IN FOUR MONTHS OF THIS GAME, THE WAY HE HAS ALWAYS BEEN BEATEN IS SOMEBODY ELSE.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(198,155,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ AN IMPOSSIBLE EVIL ENTITY ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===752){

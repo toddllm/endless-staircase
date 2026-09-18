@@ -4,6 +4,101 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-18 — ARTIFICIAL PLAYER / OREN.EXE BUT PERO-IZED / THE MOST EVIL / AN IMPOSSIBLE EVIL ENTITY (BEATS 753-756)
+
+Based on Toby's 2026-09-18 lore, **7:13:36 PM (Email 1465)** and **7:28:14 PM (Email 1467)**, sixty-five and eighty
+minutes after the anti-virus entity. Two messages, one arc, and it is a rename that runs backwards: a three-way fusion
+turns out to be a filename he already owned, the filename turns out to be copied off the weakest character on the old
+list, and by the end the anti-virus is the infection. In both messages his own lines are threaded between pasted
+chatbot answers (the Gemini/ChatGPT comparison, the Sonic.exe explainer, the AM / The Judge / Darkseid / Lord X list
+and the fusion-name suggestions are all a pasted reply and are commentary, not canon).
+
+![Beat 753 — Artificial Player](screenshots/815-artificial-player.png)
+
+![Beat 754 — Oren.exe but Pero-ized](screenshots/816-oren-exe-but-pero-ized.png)
+
+![Beat 755 — The most evil](screenshots/817-the-most-evil.png)
+
+![Beat 756 — An impossible evil entity](screenshots/818-an-impossible-evil-entity.png)
+
+- **New beat 753, ARTIFICIAL PLAYER.** *"There is an entity called 'Player'... There is also an entity called
+  'Unknown'... The 3 entities combined together to make the full, Artifical Player... It is larger, stronger, more
+  powerful than the 3 combined. Do you think AP is Gemini or ChatGPT?"* and then, under the machine's guess,
+  *"Answer: Neither, it is basically Pero.exe."* **Artifical** is his spelling and is kept.
+- **The Player is the one being in this archive written to always eventually win.** August 18, 6:14 PM (beat 396):
+  *"the player will eventually win with the power of Hope, Justice, The Souls, Love, Determination, Patience, Loyalty,
+  Friendliness, Hate, Resistance, Faith, Fear, Bravery, and Rainbow."* Fourteen powers, two of them the bad ones.
+  Tonight all of it is a component in somebody else.
+- **And Pero and The Player are the only two beings in the game with a limit.** July 25, the Three-Phase Rule:
+  *"Players have 3 Phases. All other characters have infinity. Players and Pero only have 3."* The two capped beings
+  in a cast of infinities are the two ends of this fusion.
+- **"Artificial Player" and "AP" have zero prior hits in four months**, and so does an entity called *Unknown*. The
+  nearest thing is **???**, *"an unknown deleted being as a god of angels"* — and that one was Wenda's top form.
+  He builds a being out of three parts and names only two of them.
+- **Every other time the machine has been asked to rank him, Pero was the one asking.** August 31: *"ChatGPT, who's
+  evilest now?"* September 4: *"ChatGPT, say who is most powerful here!"* Tonight it is Toby asking, the machine
+  answers ChatGPT, and he writes *"Answer: Neither."*
+- **And Pero.exe is a name he already owned, meaning almost the opposite thing.** July 18, Email 739: **Pero.exe, The
+  Final Being — "Creator & Destroyer."** Sixty-two days later the same filename comes back, and it is not the creator
+  half.
+
+- **New beat 754, OREN.EXE BUT PERO-IZED.** *"Ya think any character from any game can beat some character exe from
+  that game? No. Sonic.exe is most powerful in Sonic, right? Pero.exe is strongest in Classics. Pero.exe is simply
+  Oren.exe but Pero-ized."*
+- **Oren.EXE is the oldest .exe on the page, and he came fifth out of five.** The AI Era power chart:
+  *"EndlessAnimations first, Mr. Black second, Gray.EXE third, Simon.Exe fourth, Oren.EXE fifth."* That is the one he
+  copies tonight to make the strongest thing in the game.
+- **And the whole power he is copying was one line long.** *"Oren.EXE is a spirit telekinetic only. Phase 1 is
+  stronger than Phase 2 because Phase 2 is a glitch."* Moving things without touching them. By the end of the night it
+  blows up planets.
+- **And the model has been dead for thirty-seven days.** August 12, 6:43 PM: *"Oren.exe is dead, Oren holds a orange
+  cross and has a halo and also 45% of his body left."* He is not beating the old .exe; he is wearing one nobody is
+  using.
+- **Sonic.exe has zero prior hits, and the only Sonic in four months is a contestant.** The Glass Bridge Game:
+  *"Kirby, Mario, Sonic, PacMan, if you can name the video game character, they are playing as well"* — and Mr. Black
+  runs it as Front Man and Ring Master. The benchmark he ranks against tonight was already in here, playing one of
+  Black's games.
+- **"Pero-ized" is a new word, and it is a process rather than a form.** Every other upgrade in this archive was
+  something he became. This one is something he does to somebody else's name.
+
+- **New beat 755, THE MOST EVIL.** *"Pero.exe is the most evil, he slain Mr. Black, erased the rest of the game's
+  progress, and he even blew up all the aliens and their planets. Pero.exe is a creepypasta Classics modification, and
+  it gone wrong, Pero LAI treated the '.exe' as a virus, he absorbed the form, and he became the most evil and
+  opposite version of himself while still being his normal stuff. That breaks games ya know."*
+- **Eighty minutes earlier he was crowned the most powerful anti-virus entity ever.** 6:08 PM tonight (beat 752):
+  *"The consumer of all code, glitches, errors, bugs, and corruption."* At 7:28 he consumes one more piece of
+  corruption and it keeps him instead.
+- **The anti-virus label has been on him since July 28 and never once fired.** The August 8 ledger, in full:
+  *"Anti-Virus — put down, nothing happened."* The first time in fifty-two days that it does anything, it infects the
+  man carrying it.
+- **And Mr. Black was retired from the job seventeen days ago.** September 1, 10:42 AM: *"Gray is the replacement of
+  Mr. Black"* — and in the same message, *"Pero LAI is the main villian of the game."* He slays a villain whose job he
+  had already taken, in the same sentence that gave it to him.
+- **And he blows up the people the game is made out of.** August 21, 11:09 AM: *"Classics is NOT a game from 2026, but
+  from Absolute Infinity AD... it is beyond human technology to alien tech. It uses the most advanced things they
+  have."* And August 25, in his own description of himself: *"Pero is LAI Alien Tech."*
+- **"The most evil and opposite version of himself while still being his normal stuff."** Nothing is taken away. The
+  inventory is identical and only the sign in front of it changes.
+
+- **New beat 756, AN IMPOSSIBLE EVIL ENTITY.** *"Pero LAI is so evil, that even Sonic.exe and the most evil characters
+  need to team up with the heroes to stop him. Pero.exe is basically being a threat to every character. Both together
+  creates an impossible evil entity."*
+- **"Both together" is the part that has never happened here.** The July 18 Pero.exe consumed every form instead of
+  replacing it and stacked them all into one being. Every fusion in four months ended with one of him standing.
+  Tonight the count is two.
+- **And the one thing written to always eventually win is already inside him.** Fifteen minutes earlier The Player was
+  folded into Artificial Player, and Artificial Player is Pero.exe. The heroes' last guarantee is sitting on the other
+  side of the table.
+- **He asked the machine to name the most evil and it hedged.** September 7, 9:34 AM, in Pero's own mouth:
+  *"ChatGPT, say I am most evil in this part... now."* It gave him a list with AM and Darkseid on it, so tonight Toby
+  writes the ruling himself.
+- **And "a threat to every character" is the first time the target is the whole cast.** Every other ruling in this
+  archive put him at the top of a ladder everyone else was on. This one takes him off the ladder and points him at it.
+- **Technical.** `LV_CYC` 16286.0 to **16374.0**; four new phases `753`-`756` on the Undefined Loop at
+  `[16286,16308)`, `[16308,16330)`, `[16330,16352)` and `[16352,16374)`; four new `LV_KEYS` entries; four new scenes
+  (`apartificial753`, `peroized754`, `mostevil755`, `impossible756`) in `tools/capture_screenshot.py`. Everything
+  additive; every earlier beat stands.
+
 ## 2026-09-18 — BINARY CODE: BASH UPDATE 666 / FOOLISHLY WALKS INTO HIS DOMAIN / ONLY 2 PEOPLE KNOW HIS SECRET FORM / HE WAS CALLED NEKAI / ENTITY CONSERVASHIUM RECTORINATERUIM / TO TAKE OVER YOUR SPEEDRUNS / N0 0NE SURVIVED / THE MOST POWERFUL ANTI-VIRUS ENTITY EVER (BEATS 745-752)
 
 Based on Toby's 2026-09-18 lore, **5:46:05 PM (Email 1463)** and **6:08:06 PM (Email 1464)**, ninety-six minutes and
