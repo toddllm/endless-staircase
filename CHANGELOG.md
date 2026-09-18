@@ -81,8 +81,10 @@ Email 1464 is one unbroken block of his own typing from end to end.
   the Skull of Extreme Scariness."* Tonight the replacement is a terminal instead of a skull.
 - **`developers` has zero prior hits**, and tonight they are inside the story, deleting a face — with Pero on the
   deleting side of his own erasure.
-- **"He just stands there" has one prior scene in four months, and it is also his.** Gaster 666: Gaster opens with a
-  wave of slashes and Pero *"just stands there and takes a breath."*
+- **"Just stands" is a pose this archive has written three times, and Simon did it first.** June 10, Simon Phase 2:
+  *"sometimes he **just stands there idle as a taunt**"*, then he crushes you. August 26, 8:47 AM: *"Pero **just
+  stands there and takes a breath**, he survives."* And yesterday, September 17, 4:26 PM (beat 731): *"Pero LAI also
+  **just stands**."*
 - **Second tab request in two days.** September 17: *"a seperate tab called 'Pero LAI's lore'."* Tonight: *"Instead of
   the tab saying ToddLLM, it should say Entity Conservashium Rectorinateruim."* **litterly** and **invicible** kept.
 

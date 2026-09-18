@@ -12815,7 +12815,7 @@ const LV_BEATS = [
   { key:'HE WAS CALLED NEKAI', col:'#ffb347',
     sub:"FAR BEFORE HE WAS BORN, THE BINARY ENTITY WAS CALLED NEKAI. · NEKAI HAS ZERO PRIOR HITS; NEKA HAS 180. · THE THREAD THESE EMAILS ARRIVE ON IS NAMED PERO NEKA/LAI OMAZEN. · IT IS THE ONE NAME IN HIS WHOLE LIST THAT SOMEBODY ELSE GAVE HIM. · “FAR FAR BEFORE HE WAS BORN” PUTS A BEFORE ON ALWAYS. · THE OLD NAME DOES NOT SURVIVE THE BIRTH." },
   { key:'ENTITY CONSERVASHIUM RECTORINATERUIM', col:'#e0e0e6',
-    sub:"HE CAN CHANGE HIS OWN CODE, AND THAT IS HIS TRUE POWER. · BOTH INVENTED WORDS HAVE ZERO PRIOR HITS AND HE ABBREVIATES THEM ONE SENTENCE LATER. · “NO FACE” HAS ONE PRIOR IN FOUR MONTHS AND IT WAS SIMON’S. · “DEVELOPERS” HAS ZERO, AND TONIGHT THEY ARE IN THE STORY DELETING A FACE. · “HE JUST STANDS THERE” HAS ONE PRIOR SCENE AND IT IS ALSO HIS. · IT IS THE SECOND TAB HE HAS ASKED FOR IN TWO DAYS." },
+    sub:"HE CAN CHANGE HIS OWN CODE, AND THAT IS HIS TRUE POWER. · BOTH INVENTED WORDS HAVE ZERO PRIOR HITS AND HE ABBREVIATES THEM ONE SENTENCE LATER. · “NO FACE” HAS ONE PRIOR IN FOUR MONTHS AND IT WAS SIMON’S. · “DEVELOPERS” HAS ZERO, AND TONIGHT THEY ARE IN THE STORY DELETING A FACE. · “JUST STANDS” HAS THREE PRIOR SCENES AND SIMON DID IT FIRST. · IT IS THE SECOND TAB HE HAS ASKED FOR IN TWO DAYS." },
   { key:'TO TAKE OVER YOUR SPEEDRUNS', col:'#66d9e8',
     sub:"ECR WAS CODED TO TAKE OVER YOUR CLASSICS SPEEDRUNS AND RUNS AND PLAYTHROUGHS. · FOUR DAYS AGO HE ASKED GASTER TO FORGET HIS OWN SPEEDRUNS. · A CLASSICS RUN TAKES EIGHTY BILLION YEARS ON THE BEST POSSIBLE LINE. · “TAKEN OVER BY GAME HACKERS” IS A ROLE THIS GAME CAST IN AUGUST, AND PERO WAS THE COUNTER. · YESTERDAY MORNING THE GAME HAD EXACTLY TWO ANOMALIES. · THE FACE CAME OFF IN THE HANDOVER." },
   { key:'N0 0NE SURVIVED', col:'#d94f8a',
@@ -49791,7 +49791,9 @@ function drawLoopVs(){
     // bash screen." The safe-self-modification explainer above it is a pasted reply and is commentary.
     // `Conservashium`, `Rectorinateruim`, `developers`, `bash screen` and `green arrow` all = zero prior hits.
     // Simon's Heaven form: "No face - replaced by the Skull of Extreme Scariness."
-    // Gaster 666: Gaster leads with a wave of slashes and Pero "just stands there and takes a breath."
+    // `just stands` = three prior scenes: June 10, Simon Phase 2, "sometimes he just stands there idle as a
+    // taunt"; August 26, 8:47 AM, Gaster VS Pero, "Pero just stands there and takes a breath, he survives";
+    // September 17, 4:26 PM (beat 731), "Pero LAI also just stands."
     // September 17, 4:46 PM: "this and all after should be in a seperate tab called 'Pero LAI's lore'."
     // litterly and invicible are his spellings and are kept.
     const dt = c - 16198.0;
@@ -49874,13 +49876,13 @@ function drawLoopVs(){
 
     ctx.globalAlpha=g*f3A;
     ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
-    ctx.fillText('“HE JUST STANDS THERE” HAS ONE PRIOR SCENE IN FOUR MONTHS, AND IT IS ALSO HIS.', cx+W*0.190, top+H*0.436);
+    ctx.fillText('“JUST STANDS” IS A POSE THIS ARCHIVE HAS WRITTEN THREE TIMES, AND SIMON DID IT FIRST.', cx+W*0.190, top+H*0.436);
     ctx.globalAlpha=g*f3A*0.90;
     ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
-    ctx.fillText('GASTER 666: GASTER OPENS WITH A WAVE OF SLASHES AND PERO “JUST STANDS THERE AND TAKES A BREATH.”', cx+W*0.190, top+H*0.456);
+    ctx.fillText('JUNE 10, SIMON PHASE 2: “SOMETIMES HE JUST STANDS THERE IDLE AS A TAUNT,” THEN HE CRUSHES YOU.', cx+W*0.190, top+H*0.456);
     ctx.globalAlpha=g*f3A*0.94;
     ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
-    ctx.fillText('THAT WAS A FLEX INSIDE A FIGHT. TONIGHT IT IS THE ENTIRE DESCRIPTION OF THE STRONGEST THING HE HAS.', cx+W*0.190, top+H*0.474);
+    ctx.fillText('AUGUST 26 IT WAS PERO TAKING A BREATH; YESTERDAY IT WAS “PERO LAI ALSO JUST STANDS.”', cx+W*0.190, top+H*0.474);
 
     ctx.globalAlpha=g*f4A;
     ctx.fillStyle=`rgba(224,224,230,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
