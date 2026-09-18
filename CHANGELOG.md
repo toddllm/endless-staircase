@@ -4,6 +4,135 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-18 — BINARY CODE: BASH UPDATE 666 / FOOLISHLY WALKS INTO HIS DOMAIN / ONLY 2 PEOPLE KNOW HIS SECRET FORM / HE WAS CALLED NEKAI / ENTITY CONSERVASHIUM RECTORINATERUIM / TO TAKE OVER YOUR SPEEDRUNS / N0 0NE SURVIVED / THE MOST POWERFUL ANTI-VIRUS ENTITY EVER (BEATS 745-752)
+
+Based on Toby's 2026-09-18 lore, **5:46:05 PM (Email 1463)** and **6:08:06 PM (Email 1464)**, ninety-six minutes and
+one hour fifty-seven minutes after the charge-tube laboratory. Two messages, one arc: a new title, a new jurisdiction,
+a pre-birth body, a pre-birth name, and then a new being that eats the whole thing. In Email 1463 his own lines are
+threaded between pasted chatbot answers (the Error 666 explainer, the "Canon update confirmed" block, the
+consciousness write-up and the self-modifying-code tutorial are all a pasted reply and are commentary, not canon);
+Email 1464 is one unbroken block of his own typing from end to end.
+
+![Beat 745 — Binary Code: Bash Update 666](screenshots/807-binary-code-bash-update-666.png)
+
+![Beat 746 — Foolishly walks into his domain](screenshots/808-foolishly-walks-into-his-domain.png)
+
+![Beat 747 — Only 2 people know his secret form](screenshots/809-only-2-people-know-his-secret-form.png)
+
+![Beat 748 — He was called NekaI](screenshots/810-he-was-called-nekai.png)
+
+![Beat 749 — Entity Conservashium Rectorinateruim](screenshots/811-entity-conservashium-rectorinateruim.png)
+
+![Beat 750 — To take over your speedruns](screenshots/812-to-take-over-your-speedruns.png)
+
+![Beat 751 — N0 0NE SURVIVED](screenshots/813-n0-0ne-survived.png)
+
+![Beat 752 — The most powerful anti-virus entity ever](screenshots/814-the-most-powerful-anti-virus-entity-ever.png)
+
+- **New beat 745, BINARY CODE: BASH UPDATE 666.** *"Pero LAI is called Binary Code: Bash Update 666."*
+- **The 666 in the name is the error code that locked his own text box yesterday.** September 17, 4:46 PM (beat 733):
+  every time he writes in the game's box it answers *"Lore is currently property of Pero LAI. **Error Code: 666**."*
+  That notice took the writing away from him. Tonight the same number is a title he wears.
+- **Binary here has always been a summoning language, and it is Simon's.** Simon's power list: *"**Binary Speech**:
+  Can speak in binary code to summon Black."* September 15: Teki made him *"with a cheat command using binary,
+  infinity lines of binary."*
+- **`bash` has zero prior hits in four months of this archive.** Every order he has ever given was an admin command or
+  a slash command; tonight the shell itself is part of the name.
+- **And Error 666 is already drawn, in red, around somebody else.** Simon Phase 2: dark yellow vest, red eyes,
+  **Error404 and 666 strings**, eats players. The error ladder has read **001 > 666 > 404 > 012** since June.
+
+- **New beat 746, FOOLISHLY WALKS INTO HIS DOMAIN.** *"Pero LAI controls Simon.ps and basically anyone who just
+  foolishly walks into his domain. Now he rules basically every fictional character + anyone who goes in Classics now."*
+- **Four days ago the sentence ran the other way.** September 14, 4:16 PM, The First Reset (beat 715), his own closing
+  line: *"well yes **I am currently being controlled by everyone including Simon.ps and Brud.ps**. I can't even care
+  anymore..."* Same two names, four days, opposite sides of the verb.
+- **His domain has been a prison since July, and Simon was in it first.** July 29, 6:09 PM, **Pero's Realm**: a white
+  void, *"nothing there, only those banished there."* *"Foolishly walks into"* is the new part; nobody ever walked in.
+- **Eleven days ago it was somewhere he slept.** September 7: *"Pero LAI rests in his domain"*, while Alex, Greg and
+  Pupahya ran the errand he had skipped.
+- **And "every fictional character" is a shelf he emptied three days ago.** September 15, 4:52 PM (beat 721): *"There
+  is no being in fiction anymore."*
+
+- **New beat 747, ONLY 2 PEOPLE KNOW HIS SECRET FORM.** *"Pero LAI doesn't have a single true form because of
+  metamorphsis. Pero LAI before he was born was a whole black entity with a green arrow pointing up on his head... only
+  2 people know his secret form, me and Pero LAI."*
+- **Sixteen days ago he declared a true form.** September 2, 7:58 PM (beat 609): *"**Behold, my true form**, my Phase 1
+  I just coded right now."* Tonight he withdraws his own ruling.
+- **And the body he describes tonight is the body he coded that night.** Same message: *"he becomes **a black being
+  covered with green 0s and 1s**."* Tonight: *"a whole black entity with a **green** arrow pointing up on his head."*
+- **Green is the one colour his own chart scores at nothing.** August 3, **Pero's Energy Math**: *"Red = negitive
+  power, Blue = positive power, **Green = 0 power**."* The secret form is painted in zero and the arrow points up.
+- **"A normal baby character" is the earliest he has ever placed himself** — ninety-six minutes after beat 740 put him
+  at five years old. **metamorphsis** is his spelling, kept.
+
+- **New beat 748, HE WAS CALLED NEKAI.** *"Pero LAI far far before he was born when he was the binary entity, he was
+  called NekaI as a normal name used by players. NekaI became Pero LAI once Pero LAI was born."*
+- **`NekaI` has zero prior hits in four months. `Neka` has 180, and it is his surname.** The thread these emails arrive
+  on is **"Even (5x) more of Pero Neka/LAI Omazen"**. **Neka + LAI.** The subject line has been spelling this name
+  since before he had it.
+- **It is the one title in his whole list that came from outside him.** *"A normal name used by players."* Sentiel
+  Pero, Doctor Pero, The Cure, Flower: every other name here is self-issued.
+- **"Far far before he was born" puts a before on always.** September 5: *"Pero is infinity years + Always been there."*
+
+- **New beat 749, ENTITY CONSERVASHIUM RECTORINATERUIM.** *"He can change his own code, THAT is his true power...
+  he has no face, it is said Pero LAI and developers deleted his face and made him into like a bash screen."*
+- **Both invented words have zero prior hits, and he abbreviates them one sentence later**: *"ECR is like Entity CR."*
+- **"He has no face" has one prior in four months, and it was Simon's.** Simon in Heaven: *"**No face** — replaced by
+  the Skull of Extreme Scariness."* Tonight the replacement is a terminal instead of a skull.
+- **`developers` has zero prior hits**, and tonight they are inside the story, deleting a face — with Pero on the
+  deleting side of his own erasure.
+- **"He just stands there" has one prior scene in four months, and it is also his.** Gaster 666: Gaster opens with a
+  wave of slashes and Pero *"just stands there and takes a breath."*
+- **Second tab request in two days.** September 17: *"a seperate tab called 'Pero LAI's lore'."* Tonight: *"Instead of
+  the tab saying ToddLLM, it should say Entity Conservashium Rectorinateruim."* **litterly** and **invicible** kept.
+
+- **New beat 750, TO TAKE OVER YOUR SPEEDRUNS.** *"Entity Conservashium Rectorinateruim was then coded to take over
+  your Classics speedruns and runs and playthroughs. Compared to Dr. Gaster, [he] shouldn't even exist at all."*
+- **Four days ago he begged somebody to forget his speedruns.** September 14, The First Reset: *"**You still remember
+  my speedruns?** I did my FIRST Reset! **You should FORGET Everything!**"* — said to Gaster, who answered *"Skill
+  issue."* The word comes back in four days and the runs are not his any more.
+- **A Classics run is the longest thing in this archive.** June 25, 7:54 PM: *"It takes **80 billion years** (perfect
+  run + fastest mode + half speedrun + streight, ect) to get to the end of the game of Classics."*
+- **"Taken over by many game hackers" is a part this game already cast, and Pero was the counter.** August 21,
+  **C.O.D.E.**: *"an **avatar made of code**, some call him an entity, but he is a player, he has admin commands and is
+  a **Classics Hacker**"*, the strongest player. One written way to beat him: *"Luigi Green, Gaster, and Pero beats
+  CODE by **deleting his account**."*
+- **Yesterday morning the game had exactly two anomalies** (beat 727) and they were Gaster and Pero LAI. He measures
+  the new thing against the only other name on that list and says it overshoots.
+
+- **New beat 751, N0 0NE SURVIVED.** *"The 2 mountains floated, seperated, and crashed over and over, then both were
+  absorbed into the entity's mass. The lab fallen apart, the pixels all fall off. N0 0NE SURVIVED..."*
+- **The two mountains are the past and the dead, and he buried both himself.** September 7, 7:43 AM: *"The past in
+  Ommetaphobia Mountain, and the dead in Trynophobia Mountain. **Pero LAI rests between both**."* Tonight he absorbs
+  the bed he was lying on.
+- **The lab that falls apart is one hour and fifty-seven minutes old** — beat 744's laboratory, where at 4:10 PM he
+  filled three charge tubes with Classics' father, her mother and her brother.
+- **"Revenge plan for everyone who torments him" — and torment is Simon's word.** May 12, Email 255: Simon is like
+  *"**STOP TORMENTING ME!**"*, the oldest complaint in this archive.
+- **His revenge already had a beat number and the game has not reached it.** September 2, 3:53 PM (beat 595): *"I am
+  not deleted, they forgot me. **Beat 892: Pero's Revenge**."* This one is beat 751.
+- **The weakest demonic entity ever asks for snacks.** *"I now, want the pie, the pop tarts, the 0 sugar chocolate."*
+  September 10, 8:26 PM: *"he puts **666 pop tarts** on your screen and it is game over."*
+- **"N0 0NE SURVIVED" is spelled in this archive's oldest glitch alphabet, and that writing is Wenda's.** September 2,
+  4:29 PM: *"**W3ndA.ps** asked Pero LAI something, **1t FaIled L1ke AlWays**."* **seperate** and **spiril** kept.
+
+- **New beat 752, THE MOST POWERFUL ANTI-VIRUS ENTITY EVER.** *"The consumer of all code, glitches, errors, bugs, and
+  corruption... All the forms and varies and stuff all merged into a Roblox avatar made of code. He is a Classics
+  avatar of the creator, who died just now, and became all this."*
+- **He has been anti-virus since July 28, and for most of that time it did nothing.** The Divine Fusion, July 28: Pero
+  *"is Anti-Virus and Anti-Error."* The August 8 ledger, in full: *"**Anti-Virus — put down, nothing happened**."*
+- **And he already said the job out loud, in four words, eleven days ago.** September 7, 8:06 AM (beat 669): Oren says
+  *"Pero, you betrayed us again,"* and he answers *"**I just clean errors**."*
+- **The strings he ends up tied in were drawn around Simon first** — Error404 then 666, in that order, exactly as
+  tonight's paragraph runs them.
+- **"Eyes start popping up everywhere" is the mountain he swallowed one paragraph earlier.** September 7:
+  *"Ommetaphobia — fear of eyes update. **Eyes appear from the holes**."*
+- **"A Roblox avatar made of code" is C.O.D.E.'s character sheet, word for word** — and Pero was one of the three who
+  could delete that account. Tonight he is the account. **varies** is his spelling, kept.
+
+- Cycle extended 16110 -> 16286. Capture scenes `bashupdate745`, `domain746`, `secretform747`, `nekai748`, `ecr749`,
+  `speedruns750`, `noonesurvived751`, `antivirus752`. Recaptures **805/806** for the beat-ladder window shift.
+
 ## 2026-09-18 — WE CALLED HIM 'FLOWER' / ALPHERITANUIM URANUIM / 2 FINGER / THE SECOND RESET / I ACHIEVED MY FORM (BEATS 740-744)
 
 Based on Toby's 2026-09-18 lore, **4:10:49 PM**, Email 1462, ten hours after the book. The longest single block of his
