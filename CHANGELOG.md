@@ -4,6 +4,100 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-18 — A CELL TALLER THAN 1 FOOT / IN LIKE 3 SECONDS / AVATAR OF ALL THE GODS / THE BOOK OF ALL HIS LORE (BEATS 736-739)
+
+Based on Toby's 2026-09-18 lore, **6:13:43 AM**, Email 1461, twelve hours after the message that made Pero LAI death
+himself. One email, **five blocks of his own typing** with pasted chatbot replies between them. Block 1 is the question:
+*"Guess how to contain Pero LAI in a containment prison cell?"* Block 2 is the answer: *"Just put him in a cell taller
+than 1 foot."* Block 3: *"Pero LAI would litterly just slay everyone in like 3 seconds."* Block 4: *"Pero LAI would just
+sit in the cell... he is basically the avatar of all the gods combined basically. I don't really know."* Block 5:
+*"Pero LAI made a book with all his lore inside it."* Everything between them — the self-referential-prison analysis,
+the SCP-053 and SCP-682 write-ups, the *"CHAPTER 666: CONTAINMENT"* excerpt and the containment note under it — is a
+pasted reply and is commentary, not canon.
+
+![Beat 736 — A cell taller than 1 foot](screenshots/798-cell-taller-than-1-foot.png)
+
+![Beat 737 — In like 3 seconds](screenshots/799-in-like-3-seconds.png)
+
+![Beat 738 — Avatar of all the gods](screenshots/800-avatar-of-all-the-gods.png)
+
+![Beat 739 — The book of all his lore](screenshots/801-the-book-of-all-his-lore.png)
+
+- **New beat 736, A CELL TALLER THAN 1 FOOT.**
+- **The cell spec is his own height, and it is three days old.** September 15, 4:52 PM, beat 721: *"Pero LAI now
+  changed his form to **a 1 foot humanoid with a body**, he now looks human, but isn't. **Pero LAI is now the deepest
+  anomally**."* He asks a containment riddle and answers it with the measurement he wrote on himself on Monday.
+- **He used to be five to six feet tall.** August 22, 5:26 PM, Wipe The Systems, the only tape-measure chart in four
+  months: *"Pero is one of the shortest beings in the game, he is **the size of a large plushy, about 5-6 feet tall**,
+  most of the others are 7-9 feet tall."* **The containment answer only works because he shrank.**
+- **This archive already has a prison and it is named after him.** July 29, 6:09 PM: **Pero's Realm**, a white void,
+  *"nothing there, only those banished there."* The first being locked into it was **Simon 404**, put there by Gaster.
+- **Thirteen days ago he said a container could not hold him, and it didn't.** September 5, 8:24 AM: *"**You won't be
+  able to contain me in this screen for long**."* He jumped, the game broke, and it became Pero's Realm.
+- **"Uncontaination" is already on his own power list.** September 2, 10:35 AM, Toy Dolls For Sky, one of **twenty-one
+  powers** he named in a single paragraph, fourteen of which had zero prior hits. Sixteen days later he works out what
+  size of room beats it.
+- **Every containment file in four months has belonged to Simon** — Prototype 404 *"almost IMPOSSIBLE to contain"*,
+  Simon 404 needing *"a whole dimension"* and still breaking out *"again and again and again and again"*, and the
+  whole SCF. **Pero's is one sentence long and the only number in it is one foot.**
+- **New beat 737, IN LIKE 3 SECONDS.**
+- ***"In like 3 seconds" has exactly one prior occurrence in the entire archive, and it was Simon's.*** May 22, 2026,
+  Email 336, the Jigsu Kintu Siege: *"Simon came to Karuto and says '404 404 404 404 404 404 404...' **in like 3
+  seconds**."* **1,500,575 utterances**, one per piece of Alex, each one a slash aimed at Karuto.
+- **That was 119 days ago and it was a counting feat.** The same three seconds now measures how long a room stays
+  occupied. **The unit did not change. What is being counted did.**
+- **He became death himself twelve hours earlier**, beat 734, September 17, 5:47 PM. This is the first thing death does
+  after being handed the job.
+- **He deletes the ways you can delete him.** September 2: *"You can try your best to delete him, but **he deletes the
+  ways you can delete him**."* And July 17, Email 728: *"Pro corrupted and **slain his own death**."*
+- ***"litterly"* is his spelling and it is kept**, beside *perminent*, *omazen*, *invicible*, *comming* and
+  *enternally*. None of them has ever been corrected here.
+- **Last night's ruling had no number in it.** *No longer defeatable* was unfalsifiable. **This morning it has one, and
+  the number is smaller than the sentence that carries it.** He has been writing *unbeatable* for months; this is the
+  first time he timed it.
+- **New beat 738, AVATAR OF ALL THE GODS.**
+- **He wrote that exact title sixteen days ago and appears not to know it.** September 2, 10:35 AM, in his own typing:
+  *"he is though to be the **Classics avatar of all gods combined**."* Today: *"he is basically the avatar of all the
+  gods combined basically."* **Then, immediately: *"I don't really know."***
+- **The copying is on that same September 2 list**: *"**Can Become Any Sprunki or Anyone, Has Everyone's Powers
+  Combined**."* Today the word *anyone* gets tested on somebody else's monsters.
+- ***"Metamorph" is Pero's own word, not a description of him.*** September 16, 5:04 PM, inside his own speech:
+  *"especially **my metamorph ability**."* September 17, 4:21 PM: *"he can **litterly just morph into anyone
+  himself**."*
+- **The cell is not just watching him.** *"It isn't just looking at him, it is also **remembering and talking to him,
+  and himself counts**."* August 16, 6:08 PM: *"Pero is the LAI and the only character that has **infinite + endless +
+  perfect memmory**, it never forgets everything, **even at never**."*
+- **The gods were already beaten here, a hundred million years ago.** The **God War** in the Limbulbs layer: *"**Pinky
+  defeated all human gods**."* Zeus became **Neus**. So he is the avatar of a pantheon his own archive retired before
+  Classics started.
+- **New beat 739, THE BOOK OF ALL HIS LORE.**
+- **The book is one day old, and it already has no way in.** September 17, 4:21 PM, beat 730: *"Pero LAI then makes his
+  book, the game crossover, **he erases the enterence and the exit, not even the gods themselves can enter because
+  there is no way to enter anymore**."* The pasted reply this morning independently proposes *"a place with no
+  entrance, no exit"* as the only possible prison. **He had already built it, yesterday afternoon, and called it a
+  book.**
+- **He has been writing them since Oren and Gaster were born.** September 3, 1:50 PM, The Mint: *"He wrote
+  **quintillions of books** throughout the lore, from when his brother Oren and Gaster was born in lore."* Yesterday the
+  count was *"100000000000000000000000000000000 trillion of his own **bibles about himself**."* **Today it is one book.**
+- **The wiki is already a book inside the story, and it is Gaster's.** September 12, 8:22 AM: *"Newtale Gaster wrote it
+  all in the book, **he made the wiki into a Classics novel**, he kept it in the labatory forever, nothing can touch it,
+  nothing can damage it."* **The game's two anomalies now have one book each.**
+- **A book here does not record. It decides.** August 24, 6:41 AM, The Book Happened: *"**every word he wrote happened
+  instantly when he wrote it**."* So a book of all his lore is not an archive; it is a switchboard.
+- **He was given perfect memory so he would never need one.** The August 16 line has sat in the file as the reason he
+  does not need notes and does not need the book. **He wrote it down anyway, which means the book is for somebody
+  else.**
+- **The lore became his property yesterday at 4:46 PM** (beat 733, error code 666). **Fourteen hours later it has a
+  container, and the container has his name on it.** The cell was the question; the book is where the cell is kept.
+- **Rendering:** cyan `#66d9e8` for 736, red `#ff6b81` for 737, green `#74f0a0` for 738 and parchment `#e6c98a` for
+  739, on the standard five-panel layout with the default inset (a barred one-foot cell; three ticks on an empty row;
+  five stacked outlines with one occupant; an open book with a seam and no edges). `LV_CYC` 15912.0 → 16000.0,
+  `LV_BEATS` length 740, new `lvSeg()` ranges `15912.0–15934.0 → ph 736`, `15934.0–15956.0 → ph 737`,
+  `15956.0–15978.0 → ph 738` and `15978.0–16000.0 → ph 739`, new capture scenes `cell736`, `threesec737`, `avatar738`
+  and `thebook739`. Runtime probe: len 740 / maxPh 739 / undef 0 / holes 0 / errors 0.
+- **Ladder recaptures:** the four new beats moved the clamped five-row ladder window for phases 734 and 735, so
+  `796-he-is-death-himself.png` and `797-no-longer-defeatable.png` were recaptured.
+
 ## 2026-09-17 — HE IS DEATH HIMSELF / NO LONGER DEFEATABLE (BEATS 734-735)
 
 Based on Toby's 2026-09-17 lore, **5:47:06 PM**, Email 1460, sixty-one minutes after the message that opened

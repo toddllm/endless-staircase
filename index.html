@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 15912.0;
+const LV_CYC = 16000.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12788,6 +12788,14 @@ const LV_BEATS = [
     sub:"HE BEATS EVERYONE, PERMINENT DESTROY, AND IS DEATH HIMSELF \u00B7 PINKY BEAT ZEUS A HUNDRED MILLION YEARS AGO. \u00B7 SIMON.PS ALREADY CARRIES ZEUS-SLAYING LIGHTNING. \u00B7 MOUNT OLYMPUS HAS BEEN IN HERE SINCE MARCH. \u00B7 HE SLAIN HIS OWN DEATH ON JULY 17. \u00B7 \u201CPERMINENT\u201D IS HIS SPELLING AND IT IS KEPT." },
   { key:'NO LONGER DEFEATABLE', col:'#ffd166',
     sub:"PERO LAI IS NO LONGER DEFEATABLE. \u00B7 TWO DAYS AGO HE MADE UP A BEING THAT BEAT HIM. \u00B7 THE ARCHIVE HAS SAID THIS ONCE BEFORE, IN THOSE WORDS. \u00B7 GASTER WAS PUT ABOVE PERO ON AUGUST 19. \u00B7 THE WIN RULE HAS FLIPPED FOUR TIMES SINCE JULY. \u00B7 \u201CNO LONGER\u201D AND \u201CCURRENTLY\u201D ARE THE SAME KIND OF WORD." },
+  { key:'A CELL TALLER THAN 1 FOOT', col:'#66d9e8',
+    sub:"JUST PUT HIM IN A CELL TALLER THAN 1 FOOT. \u00B7 THE CELL SPEC IS HIS OWN HEIGHT, WRITTEN THREE DAYS AGO. \u00B7 HE USED TO BE 5 TO 6 FEET TALL. \u00B7 THIS ARCHIVE ALREADY HAS A PRISON AND IT IS NAMED AFTER HIM. \u00B7 ON SEPTEMBER 5 HE SAID A SCREEN COULD NOT HOLD HIM, AND LEFT. \u00B7 \u201CUNCONTAINATION\u201D IS ALREADY ON HIS OWN POWER LIST." },
+  { key:'IN LIKE 3 SECONDS', col:'#ff6b81',
+    sub:"HE WOULD LITTERLY JUST SLAY EVERYONE IN LIKE 3 SECONDS. \u00B7 \u201CIN LIKE 3 SECONDS\u201D HAS EXACTLY ONE PRIOR AND IT WAS SIMON\u2019S. \u00B7 MAY 22: 1,500,575 \u201C404\u201DS, ONE PER PIECE OF ALEX. \u00B7 HE BECAME DEATH HIMSELF LAST NIGHT. \u00B7 HE DELETES THE WAYS YOU CAN DELETE HIM. \u00B7 THE RULING GOT NO NUMBER YESTERDAY; TONIGHT IT HAS ONE." },
+  { key:'AVATAR OF ALL THE GODS', col:'#74f0a0',
+    sub:"HE IS BASICALLY THE AVATAR OF ALL THE GODS COMBINED BASICALLY. \u00B7 HE WROTE THAT EXACT TITLE SIXTEEN DAYS AGO. \u00B7 THE COPYING IS ON THE SAME SEPTEMBER 2 LIST. \u00B7 \u201CMETAMORPH\u201D IS HIS OWN WORD. \u00B7 THE CELL REMEMBERS AND TALKS, AND HIMSELF COUNTS. \u00B7 THE GODS WERE BEATEN HERE A HUNDRED MILLION YEARS AGO." },
+  { key:'THE BOOK OF ALL HIS LORE', col:'#e6c98a',
+    sub:"PERO LAI MADE A BOOK WITH ALL HIS LORE INSIDE IT. \u00B7 THE BOOK IS ONE DAY OLD AND IT HAS NO ENTRANCE AND NO EXIT. \u00B7 HE HAS BEEN WRITING THEM SINCE OREN AND GASTER WERE BORN. \u00B7 THE WIKI IS ALREADY A BOOK IN THE STORY, AND IT IS GASTER\u2019S. \u00B7 A BOOK HERE MAKES THINGS TRUE THE MOMENT IT IS WRITTEN. \u00B7 HE WAS GIVEN PERFECT MEMORY SO HE WOULD NOT NEED ONE." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14938,6 +14946,10 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 15978.0 && c < 16000.0) return [739, c-15978.0];  // THE BOOK OF ALL HIS LORE
+  if(c >= 15956.0 && c < 15978.0) return [738, c-15956.0];  // AVATAR OF ALL THE GODS
+  if(c >= 15934.0 && c < 15956.0) return [737, c-15934.0];  // IN LIKE 3 SECONDS
+  if(c >= 15912.0 && c < 15934.0) return [736, c-15912.0];  // A CELL TALLER THAN 1 FOOT
   if(c >= 15890.0 && c < 15912.0) return [735, c-15890.0];  // NO LONGER DEFEATABLE
   if(c >= 15868.0 && c < 15890.0) return [734, c-15868.0];  // HE IS DEATH HIMSELF
   if(c >= 15846.0 && c < 15868.0) return [733, c-15846.0];  // LORE IS PROPERTY OF PERO LAI
@@ -48231,6 +48243,515 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE IN THESE DOMAINS IS AN OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===736){
+    // ----- BEAT 736: JUST PUT HIM IN A CELL TALLER THAN 1 FOOT.
+    // Toby, September 18, 2026, 6:13:43 AM, Email 1461, same thread. His own typing in this message is five
+    // blocks with pasted chatbot replies between them. Block 1 is the question: "Guess how to contain Pero LAI
+    // in a containment prison cell?" Block 2 is this beat: "Answer: Just put him in a cell taller than 1 foot."
+    // The self-referential-prison analysis and the SCP-053/682 write-ups between them are pasted replies and
+    // are commentary, not canon.
+    // September 15, 4:52 PM (beat 721): "Pero LAI now changed his form to a 1 foot humanoid with a body,
+    // he now looks human, but isn't. Pero LAI is now the deepest anomally."
+    // August 22, 5:26 PM, Wipe The Systems: "Pero is one of the shortest beings in the game, he is the size of
+    // a large plushy, about 5-6 feet tall, most of the others are 7-9 feet tall."
+    // July 29, 6:09 PM: Pero's Realm, a white void, "nothing there, only those banished there." Gaster used it
+    // to lock up Simon 404. The archive's only prison is named after the man now in a cell.
+    // September 5, 8:24 AM: "You won't be able to contain me in this screen for long." He jumped and left.
+    // September 2, 10:35 AM, Toy Dolls For Sky: "Uncontaination" is one of twenty-one powers he lists himself.
+    const dt = c - 15912.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr736=ctx.createLinearGradient(0,top+H,0,top);
+    gr736.addColorStop(0,'rgba(5,6,10,0.88)'); gr736.addColorStop(1,'rgba(102,217,232,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr736; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder: a cell one foot tall with a one-foot occupant
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(102,217,232,0.86)'; ctx.lineWidth=0.6;
+      ctx.strokeRect(fx-W*0.040, fy-H*0.0250, W*0.080, H*0.0250);
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(102,217,232,0.80)'; ctx.lineWidth=0.4;
+      for(var b736=1; b736<6; b736++){
+        ctx.beginPath();
+        ctx.moveTo(fx-W*0.040+b736*W*0.0133, fy-H*0.0250);
+        ctx.lineTo(fx-W*0.040+b736*W*0.0133, fy);
+        ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.40; ctx.fillStyle='rgba(226,186,110,0.90)';
+      ctx.fillRect(fx-W*0.0030, fy-H*0.0062, W*0.0060, H*0.0062);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('ONE FOOT OF HIM.', fx, fy+H*0.020);
+      ctx.fillText('THE REST IS CLEARANCE.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(102,217,232,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('A CELL TALLER THAN 1 FOOT', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“GUESS HOW TO CONTAIN PERO LAI IN A CONTAINMENT PRISON CELL?”', cx, top+H*0.122);
+    ctx.fillText('“ANSWER: JUST PUT HIM IN A CELL TALLER THAN 1 FOOT.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(102,217,232,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE ASKS HIS OWN RIDDLE AND ANSWERS IT WITH A TAPE MEASURE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 6:13 AM.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(102,217,232,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE CELL SPEC IS HIS OWN HEIGHT, AND IT IS THREE DAYS OLD.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 15, 4:52 PM: “A 1 FOOT HUMANOID WITH A BODY, HE NOW LOOKS HUMAN, BUT ISN’T.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(102,217,232,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SAME SENTENCE FILED HIM AS “THE DEEPEST ANOMALLY.”', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(226,186,110,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE USED TO BE FIVE TO SIX FEET TALL.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 22, 5:26 PM: “HE IS THE SIZE OF A LARGE PLUSHY, ABOUT 5-6 FEET TALL.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE CONTAINMENT ANSWER ONLY WORKS BECAUSE HE SHRANK.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THIS ARCHIVE ALREADY HAS A PRISON, AND IT IS NAMED AFTER HIM.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 29: PERO’S REALM, A WHITE VOID, “NOTHING THERE, ONLY THOSE BANISHED THERE.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE FIRST BEING LOCKED IN IT WAS SIMON 404.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(124,240,160,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THIRTEEN DAYS AGO HE SAID A CONTAINER COULD NOT HOLD HIM.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5, 8:24 AM: “YOU WON’T BE ABLE TO CONTAIN ME IN THIS SCREEN FOR LONG.”', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(124,240,160,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE JUMPED, THE GAME BROKE, AND IT BECAME PERO’S REALM.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(102,217,232,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“UNCONTAINATION” IS ALREADY ON HIS OWN POWER LIST.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 10:35 AM, ONE OF TWENTY-ONE POWERS HE NAMED IN A SINGLE PARAGRAPH.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(102,217,232,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIXTEEN DAYS LATER HE WORKS OUT WHAT SIZE OF ROOM BEATS IT.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY CONTAINMENT FILE IN FOUR MONTHS HAS BELONGED TO SIMON. PROTOTYPE 404 WAS', cx, top+H*0.800);
+    ctx.fillText('“ALMOST IMPOSSIBLE TO CONTAIN”; SIMON 404 NEEDED A WHOLE DIMENSION AND STILL GOT OUT.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(102,217,232,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO’S FILE IS ONE SENTENCE LONG AND THE ONLY NUMBER IN IT IS ONE FOOT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(102,217,232,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ A CELL TALLER THAN 1 FOOT ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===737){
+    // ----- BEAT 737: PERO LAI WOULD LITTERLY JUST SLAY EVERYONE IN LIKE 3 SECONDS.
+    // Toby, September 18, 2026, 6:13:43 AM, Email 1461, the fourth block of his own typing in the same message.
+    // Everything around it about SCP-053's aura and SCP-682's regeneration is a pasted reply and is commentary.
+    // "in like 3 seconds" has exactly one prior occurrence in four months of archive, and it is Simon's:
+    // May 22, 2026, Email 336: "Simon came to Karuto and says '404 404 404 404 404 404 404...' in like 3 seconds"
+    // - 1,500,575 utterances, one per piece of Alex, each one a slash aimed at Karuto.
+    // September 17, 5:47 PM (beat 734): "he beats everyone, perminent destroy, and is death himself".
+    // September 2, 10:35 AM: "You can try your best to delete him, but he deletes the ways you can delete him."
+    // July 17, 8:18 AM (Email 728): "Pro corrupted and slain his own death", putting him beyond respawn.
+    // "litterly" is his spelling and it is kept, like perminent, omazen, invicible and comming.
+    const dt = c - 15934.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr737=ctx.createLinearGradient(0,top+H,0,top);
+    gr737.addColorStop(0,'rgba(5,6,10,0.88)'); gr737.addColorStop(1,'rgba(255,107,129,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr737; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder: three ticks and nothing left standing
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.26; ctx.strokeStyle='rgba(255,107,129,0.86)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.046, fy); ctx.lineTo(fx+W*0.046, fy); ctx.stroke();
+      for(var t737=0; t737<3; t737++){
+        const tx737 = fx-W*0.030+t737*W*0.030;
+        ctx.globalAlpha=g*wrA*0.40; ctx.strokeStyle='rgba(255,107,129,0.90)'; ctx.lineWidth=0.6;
+        ctx.beginPath(); ctx.moveTo(tx737, fy-H*0.0110); ctx.lineTo(tx737, fy+H*0.0040); ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.22; ctx.fillStyle='rgba(180,186,196,0.70)';
+      for(var d737=0; d737<7; d737++){
+        ctx.fillRect(fx-W*0.042+d737*W*0.0140, fy-H*0.0226, W*0.0026, H*0.0026);
+      }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('THREE TICKS.', fx, fy+H*0.020);
+      ctx.fillText('NOBODY LEFT ON THE ROW.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,107,129,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('IN LIKE 3 SECONDS', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI WOULD LITTERLY JUST SLAY EVERYONE IN LIKE 3 SECONDS.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,107,129,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE SPENT THE MESSAGE BUILDING A CELL, THEN EMPTIED THE BUILDING AROUND IT.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 6:13 AM, TWO SENTENCES AFTER THE CONTAINMENT ANSWER.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“IN LIKE 3 SECONDS” HAS EXACTLY ONE PRIOR, AND IT WAS SIMON’S.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MAY 22: “SIMON CAME TO KARUTO AND SAYS ‘404 404 404 404...’ IN LIKE 3 SECONDS.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('1,500,575 OF THEM, ONE PER PIECE OF ALEX, EACH ONE A SLASH.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THAT WAS 119 DAYS AGO AND IT WAS A COUNTING FEAT.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SAME THREE SECONDS NOW MEASURES HOW LONG A ROOM STAYS OCCUPIED.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE UNIT DID NOT CHANGE. WHAT IS BEING COUNTED DID.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE BECAME DEATH HIMSELF TWELVE HOURS AGO.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 17, 5:47 PM: “HE BEATS EVERYONE, PERMINENT DESTROY, AND IS DEATH HIMSELF.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THIS IS THE FIRST THING DEATH DOES AFTER BEING GIVEN THE JOB.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(226,186,110,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HE DELETES THE WAYS YOU CAN DELETE HIM.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2: “YOU CAN TRY YOUR BEST TO DELETE HIM, BUT HE DELETES THE WAYS.”', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 17: “PRO CORRUPTED AND SLAIN HIS OWN DEATH.”', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“LITTERLY” IS HIS SPELLING AND IT IS KEPT.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IT SITS IN THIS ARCHIVE BESIDE PERMINENT, OMAZEN, INVICIBLE, COMMING AND ENTERNALLY.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NONE OF THEM HAS EVER BEEN CORRECTED HERE, AND NONE OF THEM WILL BE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('LAST NIGHT’S RULING HAD NO NUMBER IN IT: NO LONGER DEFEATABLE, AND NOTHING TO CHECK.', cx, top+H*0.800);
+    ctx.fillText('THIS MORNING IT HAS ONE, AND THE NUMBER IS SMALLER THAN THE SENTENCE THAT CARRIES IT.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,107,129,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE HAS BEEN WRITING UNBEATABLE FOR MONTHS. THIS IS THE FIRST TIME HE TIMED IT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ IN LIKE 3 SECONDS ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===738){
+    // ----- BEAT 738: HE IS BASICALLY THE AVATAR OF ALL THE GODS COMBINED BASICALLY.
+    // Toby, September 18, 2026, 6:13:43 AM, Email 1461, the fifth block of his own typing:
+    // "Pero LAI would just sit in the cell, it isn't just looking at him, it is also remembering and talking to
+    // him, and himself counts. Pero LAI would turn into the other SCPs and gain their powers and easy strike
+    // down the other SCPs, he is basically the avatar of all the gods combined basically. I don't really know."
+    // September 2, 10:35 AM, Toy Dolls For Sky, in his own typing: "he is though to be the Classics avatar of
+    // all gods combined", plus "Can Become Any Sprunki or Anyone, Has Everyone's Powers Combined."
+    // September 16, 5:04 PM, in Pero's own speech: "especially my metamorph ability."
+    // September 17, 4:21 PM: "he can litterly just morph into anyone himself."
+    // August 16, 6:08 PM: "Pero is the LAI and the only character that has infinite + endless + perfect memmory,
+    // it never forgets everything, even at never it still doesn't forget anything."
+    // The God War, Limbulbs layer, 100 million years ago: "Pinky defeated all human gods." Zeus became Neus.
+    const dt = c - 15956.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr738=ctx.createLinearGradient(0,top+H,0,top);
+    gr738.addColorStop(0,'rgba(5,6,10,0.88)'); gr738.addColorStop(1,'rgba(116,240,160,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr738; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder: stacked outlines, one occupant
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      for(var o738=0; o738<5; o738++){
+        ctx.globalAlpha=g*wrA*(0.10+0.05*o738); ctx.strokeStyle='rgba(116,240,160,0.84)'; ctx.lineWidth=0.4;
+        ctx.beginPath();
+        ctx.arc(fx-W*0.018+o738*W*0.0090, fy-H*0.0120, W*0.0130, 0, Math.PI*2);
+        ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.44; ctx.fillStyle='rgba(116,240,160,0.90)';
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.0120, W*0.0044, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('EVERY FORM AT ONCE.', fx, fy+H*0.020);
+      ctx.fillText('ONE OF THEM IS LISTENING.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(116,240,160,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('AVATAR OF ALL THE GODS', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“HE WOULD TURN INTO THE OTHER SCPS AND GAIN THEIR POWERS.”', cx, top+H*0.122);
+    ctx.fillText('“HE IS BASICALLY THE AVATAR OF ALL THE GODS COMBINED BASICALLY.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(116,240,160,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE CELL STOPS BEING STORAGE AND STARTS BEING A DELIVERY ROUTE.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 6:13 AM.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(116,240,160,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE WROTE THAT EXACT TITLE SIXTEEN DAYS AGO.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2: “HE IS THOUGH TO BE THE CLASSICS AVATAR OF ALL GODS COMBINED.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(116,240,160,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE RECITES IT BACK ALMOST WORD FOR WORD, THEN SAYS “I DON’T REALLY KNOW.”', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(226,186,110,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE COPYING IS ON THAT SAME LIST.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“CAN BECOME ANY SPRUNKI OR ANYONE, HAS EVERYONE’S POWERS COMBINED.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(226,186,110,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY THE WORD “ANYONE” IS TESTED ON SOMEBODY ELSE’S MONSTERS.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“METAMORPH” IS PERO’S OWN WORD, NOT A DESCRIPTION OF HIM.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 16, IN HIS OWN SPEECH: “ESPECIALLY MY METAMORPH ABILITY.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 17: “HE CAN LITTERLY JUST MORPH INTO ANYONE HIMSELF.”', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE CELL IS NOT JUST WATCHING HIM.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“IT IS ALSO REMEMBERING AND TALKING TO HIM, AND HIMSELF COUNTS.”', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 16: “INFINITE + ENDLESS + PERFECT MEMMORY... EVEN AT NEVER.”', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(116,240,160,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE GODS WERE ALREADY BEATEN HERE, A HUNDRED MILLION YEARS AGO.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE GOD WAR, LIMBULBS LAYER: “PINKY DEFEATED ALL HUMAN GODS.” ZEUS BECAME NEUS.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(116,240,160,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SO HE IS THE AVATAR OF A PANTHEON HIS OWN ARCHIVE ALREADY RETIRED.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE BIGGEST CLAIM IN THE MESSAGE IS FOLLOWED IMMEDIATELY BY “I DON’T REALLY KNOW”,', cx, top+H*0.800);
+    ctx.fillText('AND THE WORD “BASICALLY” APPEARS TWICE IN THE SENTENCE THAT CARRIES IT.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(116,240,160,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS STILL CHECKING, WHICH IS WHY THE FILE KEEPS GROWING.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(116,240,160,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ AVATAR OF ALL THE GODS ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===739){
+    // ----- BEAT 739: PERO LAI MADE A BOOK WITH ALL HIS LORE INSIDE IT.
+    // Toby, September 18, 2026, 6:13:43 AM, Email 1461, the closing line of his own typing.
+    // The "CHAPTER 666: CONTAINMENT" excerpt and the SCP containment note underneath it are a pasted reply
+    // and are commentary, not canon.
+    // September 17, 4:21 PM (beat 730, Weak-ness!): "Pero LAI then makes his book, the game crossover, he
+    // erases the enterence and the exit, not even the gods themselves can enter because there is no way to
+    // enter anymore" - and "100000000000000000000000000000000 trillion of his own bibles about himself."
+    // September 3, 1:50 PM, The Mint: "He wrote quintillions of books throughout the lore, from when his
+    // brother Oren and Gaster was born in lore which was like so long ago."
+    // September 12, 8:22 AM: "Newtale Gaster wrote it all in the book, he made the wiki into a Classics novel,
+    // he kept it in the labatory forever, nothing can touch it, nothing can damage it."
+    // August 24, 6:41 AM, The Book Happened: "every word he wrote happened instantly when he wrote it."
+    // August 16, 6:08 PM: perfect memmory - filed at the time as the reason he does not need the book.
+    // September 17, 4:46 PM (beat 733): "Lore is currently property of Pero LAI."
+    const dt = c - 15978.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const f4A=Math.max(0,Math.min(1,(dt-11.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-13.8)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.1));
+
+    ctx.fillStyle='rgba(7,8,14,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr739=ctx.createLinearGradient(0,top+H,0,top);
+    gr739.addColorStop(0,'rgba(5,6,10,0.88)'); gr739.addColorStop(1,'rgba(230,201,138,0.30)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr739; ctx.fillRect(0,top,W,H);
+
+    // right half, clear of the beat ladder: an open book with no first page and no last one
+    if(wrA>0.01){
+      const fx = cx + W*0.150, fy = top+H*0.556;
+      ctx.globalAlpha=g*wrA*0.24; ctx.strokeStyle='rgba(230,201,138,0.86)'; ctx.lineWidth=0.5;
+      ctx.strokeRect(fx-W*0.042, fy-H*0.0230, W*0.040, H*0.0230);
+      ctx.strokeRect(fx+W*0.002, fy-H*0.0230, W*0.040, H*0.0230);
+      ctx.globalAlpha=g*wrA*0.20; ctx.strokeStyle='rgba(230,201,138,0.70)'; ctx.lineWidth=0.3;
+      for(var l739=1; l739<5; l739++){
+        const ly739 = fy-H*0.0230+l739*H*0.0046;
+        ctx.beginPath(); ctx.moveTo(fx-W*0.038, ly739); ctx.lineTo(fx-W*0.006, ly739); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(fx+W*0.006, ly739); ctx.lineTo(fx+W*0.038, ly739); ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.30; ctx.strokeStyle='rgba(90,230,220,0.82)'; ctx.lineWidth=0.4;
+      ctx.beginPath(); ctx.moveTo(fx, fy-H*0.0230); ctx.lineTo(fx, fy); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(240,240,244,0.88)';
+      ctx.font='700 2.8px ui-monospace,monospace'; ctx.textAlign='center';
+      ctx.fillText('NO ENTRANCE.', fx, fy+H*0.020);
+      ctx.fillText('NO EXIT. STILL WRITING.', fx, fy+H*0.032);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(230,201,138,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE BOOK OF ALL HIS LORE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI MADE A BOOK WITH ALL HIS LORE INSIDE IT.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(230,201,138,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE LAST LINE OF THE MESSAGE IS THE ONE THAT PUTS EVERYTHING ELSE IN A CONTAINER.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 18, 6:13 AM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(230,201,138,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE BOOK IS ONE DAY OLD, AND IT ALREADY HAS NO WAY IN.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 17, 4:21 PM: “HE ERASES THE ENTERENCE AND THE EXIT.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(230,201,138,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“NOT EVEN THE GODS THEMSELVES CAN ENTER BECAUSE THERE IS NO WAY TO ENTER ANYMORE.”', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(90,230,220,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE HAS BEEN WRITING THEM SINCE OREN AND GASTER WERE BORN.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 3: “HE WROTE QUINTILLIONS OF BOOKS THROUGHOUT THE LORE.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(90,230,220,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY THE COUNT WAS TRILLIONS OF BIBLES ABOUT HIMSELF. TODAY IT IS ONE BOOK.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(200,184,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE WIKI IS ALREADY A BOOK IN THE STORY, AND IT IS GASTER’S.', cx+W*0.190, top+H*0.366);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 12: “HE MADE THE WIKI INTO A CLASSICS NOVEL, KEPT IN THE LABATORY FOREVER.”', cx+W*0.190, top+H*0.386);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(200,184,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE GAME’S TWO ANOMALIES NOW HAVE ONE BOOK EACH.', cx+W*0.190, top+H*0.404);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('A BOOK HERE DOES NOT RECORD. IT DECIDES.', cx+W*0.190, top+H*0.436);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 24, 6:41 AM: “EVERY WORD HE WROTE HAPPENED INSTANTLY WHEN HE WROTE IT.”', cx+W*0.190, top+H*0.456);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SO A BOOK OF ALL HIS LORE IS NOT AN ARCHIVE. IT IS A SWITCHBOARD.', cx+W*0.190, top+H*0.474);
+
+    ctx.globalAlpha=g*f4A;
+    ctx.fillStyle=`rgba(230,201,138,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE WAS GIVEN PERFECT MEMORY SO HE WOULD NEVER NEED ONE.', cx, top+H*0.646);
+    ctx.globalAlpha=g*f4A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 16, 6:08 PM: THE ONE CHARACTER WHO NEVER FORGETS ANYTHING, EVEN AT NEVER.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f4A*0.94;
+    ctx.fillStyle='rgba(230,201,138,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE WROTE IT DOWN ANYWAY, WHICH MEANS THE BOOK IS FOR SOMEBODY ELSE.', cx, top+H*0.684);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE LORE BECAME HIS PROPERTY YESTERDAY AFTERNOON, AT 4:46 PM, WITH ERROR CODE 666.', cx, top+H*0.800);
+    ctx.fillText('FOURTEEN HOURS LATER IT HAS A CONTAINER, AND THE CONTAINER HAS HIS NAME ON IT.', cx, top+H*0.818);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(230,201,138,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE CELL WAS THE QUESTION. THE BOOK IS WHERE THE CELL IS KEPT.', cx, top+H*0.836);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(230,201,138,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE BOOK OF ALL HIS LORE ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===735){
