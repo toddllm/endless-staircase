@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — HEROINE CLASSICS OMAZEN (BEAT 760)
+
+Based on Toby's 2026-09-19 lore, **7:24:01 AM (Email 1471)**, on top of his own 6:47 message. Two ChatGPT pictures are
+attached (7:12 AM and 7:23 AM); they are described, not hosted, and they are not canon text.
+
+![Beat 760 — Heroine Classics Omazen](screenshots/822-heroine-classics-omazen.png)
+
+- **New beat 760, HEROINE CLASSICS OMAZEN.** The whole game turns black with 0s and 1s, Classics Omazen merges with all
+  the heroes, and Pero LAI tells her *"You... are more powerful than you think you are... and you just attacked me."*
+  He becomes his Celsar, crushes her, and the code takes her over.
+- **He made her.** September 18, 4:10 PM: *"Pero LAI made Classics Omazen again"*, with the power to become any
+  character. This morning she uses it to become every hero at once.
+- **Same charge as Super Dog.** 6:47 AM: *"You punched a man, you TRIED to hurt me."* At 6:47 a team beat him; at 7:24 a
+  team merged into one person did not.
+- **"Celsar" and "Heroine" are new words here**, zero prior hits.
+- Ladder window shifted by one beat, so screenshots 820 and 821 were recaptured.
+
 ## 2026-09-19 — I KNOW YOUR REAL NAME / PERO LAI PHASE 7 (BEATS 758-759)
 
 Based on Toby's 2026-09-19 lore, **6:47:38 AM (Email 1470)**, three minutes after the reply that asked who the three

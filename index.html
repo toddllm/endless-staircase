@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16440.0;
+const LV_CYC = 16462.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12836,6 +12836,8 @@ const LV_BEATS = [
     sub:"BUT I AM NOT A TEAM, I AM ALONE... I KNOW YOUR REAL NAME. · IN AUGUST HE KNEW C.O.D.E.’S REAL NAME AND LEFT IT BLANK; IN 3 WAY HEROES HE SAYS IT: NOVA, YOU ARE NINA. · HE READS EVERY HERO’S WRONGS OUT LOUD, THEN LOSES TO ALL OF THEM AT ONCE." },
   { key:'PERO LAI PHASE 7', col:'#3ee06a',
     sub:"HE FLIPPED THE SEED TO 60006000006 WHEN IT WAS 90000090009. · TURN THE OLD SEED UPSIDE DOWN AND IT IS THE NEW ONE. · PHASE 7 WAS THE FIRST ENDING EVER NAMED, AUGUST 5. · NEWTALE GASTER BECOMES THE BLACK BODY WITH GREEN 0S AND 1S." },
+  { key:'HEROINE CLASSICS OMAZEN', col:'#e8e4ff',
+    sub:"YOU... ARE MORE POWERFUL THAN YOU THINK YOU ARE... AND YOU JUST ATTACKED ME. · SHE MERGES WITH ALL THE HEROES; PERO LAI BECOMES HIS CELSAR AND CRUSHES HER. · HE MADE HER YESTERDAY WITH THE POWER TO BECOME ANY CHARACTER. · THE WHOLE GAME IS BLACK WITH 0S AND 1S." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14986,6 +14988,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16440.0 && c < 16462.0) return [760, c-16440.0];  // HEROINE CLASSICS OMAZEN
   if(c >= 16418.0 && c < 16440.0) return [759, c-16418.0];  // PERO LAI PHASE 7
   if(c >= 16396.0 && c < 16418.0) return [758, c-16396.0];  // I KNOW YOUR REAL NAME
   if(c >= 16374.0 && c < 16396.0) return [757, c-16374.0];  // PERO LAI PHASE 6
@@ -50517,6 +50520,110 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===760){
+    // BEAT 760: HEROINE CLASSICS OMAZEN.
+    // Toby, September 19, 2026, 7:24:01 AM, Email 1471, his own typing: "Now, the whole game is all black colored with
+    // 0s and 1s. Pero LAI holds Classics Omazen... Classics Omazen merges with all the heroes, creating Heroine Classics
+    // Omazen. Heroine Classics Omazen battles Pero LAI, Pero LAI says 'You... are more powerful than you think you are...
+    // and you just attacked me.', Pero LAI became his Celsar, his power crushed Heroine Classics Omazen... then Classics
+    // Omazen lost to Pero LAI." Priors: September 18, 4:10 PM, "Pero LAI made Classics Omazen again" with the power to
+    // become any character; September 19, 6:47 AM, "You punched a man, you TRIED to hurt me" and "all the heroes join up".
+    // "Celsar" and "Heroine" have zero prior hits. Two attached pictures are described, not canon text.
+    const dt = c - 16440.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(3,7,5,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr760=ctx.createLinearGradient(0,top+H,0,top);
+    gr760.addColorStop(0,'rgba(6,5,8,0.88)'); gr760.addColorStop(1,'rgba(232,228,255,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr760; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      const hc760=['#ffd43b','#ff6b81','#7fd4ff','#6ee7b7','#c49bff'];
+      for(var h760=0; h760<5; h760++){
+        const an = h760*Math.PI*2/5 - Math.PI/2, rr = W*0.034*(1-Math.min(1,wrA));
+        ctx.globalAlpha=g*wrA*0.85; ctx.fillStyle=hc760[h760];
+        ctx.beginPath(); ctx.arc(fx+Math.cos(an)*(rr+W*0.004), fy-H*0.010+Math.sin(an)*(rr+W*0.004), W*0.0035, 0, Math.PI*2); ctx.fill();
+      }
+      ctx.globalAlpha=g*wrA*0.90; ctx.fillStyle='rgba(232,228,255,0.95)';
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.010, W*0.006, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.75; ctx.fillStyle='rgba(62,224,106,0.95)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('0 1 1 0 1 0 0 1', fx, fy+H*0.018);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('EVERY HERO IN ONE BODY.', fx, fy+H*0.034);
+      ctx.fillText('STILL ONE OF HIM.', fx, fy+H*0.046);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(232,228,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HEROINE CLASSICS OMAZEN', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“YOU... ARE MORE POWERFUL THAN YOU THINK YOU ARE... AND YOU JUST ATTACKED ME.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(232,228,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('AT 6:47 ALL THE HEROES JOINED UP AND HE RAN. AT 7:24 THEY JOINED INTO ONE, AND HE WON.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 7:24 AM.', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(232,228,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE MADE HER, AND HE GAVE HER THE POWER SHE USED ON HIM.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18, 4:10 PM: “PERO LAI MADE CLASSICS OMAZEN AGAIN.” HER NEW POWER: BECOME ANY CHARACTER.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(232,228,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING SHE BECOMES ALL THE HEROES AT ONCE, AND HE TELLS HER SHE IS STRONGER THAN SHE KNOWS.', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“YOU JUST ATTACKED ME” IS THE SAME CHARGE HE READ TO SUPER DOG.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('6:47 AM: “YOU PUNCHED A MAN, YOU TRIED TO HURT ME.” THIRTY-SEVEN MINUTES LATER, THE SAME COMPLAINT.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE STILL KEEPS THE RECORD. THIS TIME THE ONE WHO ATTACKED HIM WAS WEARING EVERY HERO.', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE CODE KEEPS SPREADING.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('6:47 AM: NEWTALE GASTER TURNS', cx-W*0.150, top+H*0.392);
+    ctx.fillText('BLACK WITH GREEN 0S AND 1S.', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('7:24 AM: THE WHOLE GAME, THEN HER.', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI BECAME HIS CELSAR.” THE WORD IS NEW; NOTHING IN FOUR MONTHS SAYS IT.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SECOND PICTURE PRINTS HIS LINE, AND UNDER IT TWO WORDS: “CELSAR POWER.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HIS POWER CRUSHED HER, THE CODE WENT ALL OVER CLASSICS OMAZEN, AND SHE LOST.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWO PICTURES: FIRST HE HOLDS HER IN CHAINS MADE OF CODE, THEN SHE IS DOWN ON THE FLOOR UNDER HIS HAND.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(232,228,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AN HOUR AGO A TEAM BEAT HIM. A TEAM MERGED INTO ONE PERSON DID NOT.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(232,228,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ HEROINE CLASSICS OMAZEN ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===759){
