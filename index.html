@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16396.0;
+const LV_CYC = 16440.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12832,6 +12832,10 @@ const LV_BEATS = [
     sub:"EVEN SONIC.EXE AND THE MOST EVIL CHARACTERS NEED TO TEAM UP WITH THE HEROES TO STOP HIM. · BOTH TOGETHER CREATES AN IMPOSSIBLE EVIL ENTITY. · EVERY FUSION IN FOUR MONTHS ENDED WITH ONE OF HIM STANDING; THIS ONE KEEPS TWO. · THE PLAYER, WHO ALWAYS EVENTUALLY WINS, IS ALREADY INSIDE HIM. · ASKING THE MACHINE WHO IS MOST EVIL IS PERO’S OWN MOVE. · THE FIRST RULING THAT TAKES HIM OFF THE LADDER AND POINTS HIM AT IT." },
   { key:'PERO LAI PHASE 6', col:'#ff3b5c',
     sub:"HERE IS BASICALLY AP COMBINED WITH EVERY CREEPYPASTA INTO PERO LAI PHASE 6. · FIVE DAYS AGO ALL FIVE PHASES MERGED INTO PHASE 5 ULTIMATE FORM, THE LAST NUMBER ON THE JUNE 26 SHEET. · THE GAME’S OWN PHASE 6 WAS EVERY CHARACTER PLACED AT ONCE; HIS IS EVERY CREEPYPASTA IN ONE BODY. · HE IS CARRYING THE DEATH NOTE HE CLAIMED ON SEPTEMBER 16." },
+  { key:'I KNOW YOUR REAL NAME', col:'#ffd43b',
+    sub:"BUT I AM NOT A TEAM, I AM ALONE... I KNOW YOUR REAL NAME. · IN AUGUST HE KNEW C.O.D.E.’S REAL NAME AND LEFT IT BLANK; IN 3 WAY HEROES HE SAYS IT: NOVA, YOU ARE NINA. · HE READS EVERY HERO’S WRONGS OUT LOUD, THEN LOSES TO ALL OF THEM AT ONCE." },
+  { key:'PERO LAI PHASE 7', col:'#3ee06a',
+    sub:"HE FLIPPED THE SEED TO 60006000006 WHEN IT WAS 90000090009. · TURN THE OLD SEED UPSIDE DOWN AND IT IS THE NEW ONE. · PHASE 7 WAS THE FIRST ENDING EVER NAMED, AUGUST 5. · NEWTALE GASTER BECOMES THE BLACK BODY WITH GREEN 0S AND 1S." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14982,6 +14986,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16418.0 && c < 16440.0) return [759, c-16418.0];  // PERO LAI PHASE 7
+  if(c >= 16396.0 && c < 16418.0) return [758, c-16396.0];  // I KNOW YOUR REAL NAME
   if(c >= 16374.0 && c < 16396.0) return [757, c-16374.0];  // PERO LAI PHASE 6
   if(c >= 16352.0 && c < 16374.0) return [756, c-16352.0];  // AN IMPOSSIBLE EVIL ENTITY
   if(c >= 16330.0 && c < 16352.0) return [755, c-16330.0];  // THE MOST EVIL
@@ -50511,6 +50517,210 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===759){
+    // BEAT 759: PERO LAI PHASE 7.
+    // Toby, September 19, 2026, 6:47:38 AM, Email 1470, closing paragraph of his own typing: "As Entity Conservashium
+    // Rectorinateruim, Pero LAI achieved Phase 7 already, He flipped the seed to 60006000006 when it was 90000090009.
+    // Gaster is known as the man who speaks in hands. The code came everywhere, all over the game, and it taken over
+    // Newtale Gaster, Newtale Gaster became fully black entity with green 0s and 1s on it." 90000090009 rotated 180
+    // degrees reads 60006000006. Priors: August 5, 8:04 PM "The story ends at Phase 7"; August 21, Email 1070, Luigi
+    // Green "even if you change the seed"; September 2, 7:58 PM "a black being covered with green 0s and 1s";
+    // September 12, 8:22 AM, the game "in the hands of Newtale Gaster". The attached picture is described, not canon text.
+    const dt = c - 16418.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,10,6,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr759=ctx.createLinearGradient(0,top+H,0,top);
+    gr759.addColorStop(0,'rgba(6,5,8,0.88)'); gr759.addColorStop(1,'rgba(62,224,106,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr759; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(248,246,242,0.90)'; ctx.font='900 4.0px ui-monospace,monospace';
+      ctx.fillText('90000090009', fx, fy-H*0.022);
+      ctx.save(); ctx.translate(fx, fy+H*0.006); ctx.rotate(Math.PI*Math.min(1,wrA));
+      ctx.globalAlpha=g*wrA*0.40; ctx.strokeStyle='rgba(62,224,106,0.90)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.arc(0,0,W*0.010,0.3,Math.PI*1.7); ctx.stroke(); ctx.restore();
+      ctx.globalAlpha=g*wrA*0.90; ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 4.0px ui-monospace,monospace';
+      ctx.fillText('60006000006', fx, fy+H*0.036);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('THE SAME SEED, TURNED OVER.', fx, fy+H*0.052);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(62,224,106,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERO LAI PHASE 7', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI ACHIEVED PHASE 7 ALREADY. HE FLIPPED THE SEED TO 60006000006 WHEN IT WAS 90000090009.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('PHASE 6 ARRIVED AT 6:17 THIS MORNING. PHASE 7 ARRIVED THIRTY MINUTES LATER.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 6:47 AM.', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE MEANT FLIPPED. TURN 90000090009 UPSIDE DOWN AND IT READS 60006000006.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY 9 BECOMES A 6 AND THE DIGITS RUN BACKWARDS. NOTHING WAS ADDED; IT IS THE SAME SEED STANDING ON ITS HEAD.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND SIX IS HIS NUMBER: BASH UPDATE 666, 666 PLAYERS, 666 POP TARTS ON YOUR SCREEN.', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('PHASE 7 IS THE FIRST ENDING THIS ARCHIVE EVER NAMED.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 5, 8:04 PM: “THE STORY ENDS AT PHASE 7.” NINETEEN MINUTES LATER IT DID NOT END.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT PHASE 7 HAD ONLY OREN AND SIMON 404 LEFT ALIVE. THIS ONE BELONGS TO HIM.', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE LAST SEED HERE WAS THE PLAYER’S.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 21: LUIGI GREEN FOLLOWS YOUR RECORDINGS', cx-W*0.150, top+H*0.392);
+    ctx.fillText('“EVEN IF YOU CHANGE THE SEED.” THE PLAYER CHANGED IT.', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('NOW PERO LAI TURNS IT OVER FOR YOU.', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('NEWTALE GASTER NOW WEARS THE BODY PERO LAI CODED FOR HIMSELF.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 7:58 PM: “HE BECOMES A BLACK BEING COVERED WITH GREEN 0S AND 1S.” TODAY: “FULLY BLACK ENTITY WITH GREEN 0S AND 1S.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 12 THE GAME WAS “IN THE HANDS OF NEWTALE GASTER.” TODAY THE MAN WHO SPEAKS IN HANDS IS IN THE CODE’S.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE PICTURE HAS BOTH: A BLACK HOOD WITH A GREEN ARROW FOR A FACE, AND A SKELETON OF GREEN CODE BEHIND HIM.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(62,224,106,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ARROW IS THE ONE FROM SEPTEMBER 18, THE SECRET FORM ONLY 2 PEOPLE KNEW. NOW EVERYONE HAS SEEN IT.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ PERO LAI PHASE 7 ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===758){
+    // BEAT 758: I KNOW YOUR REAL NAME.
+    // Toby (with ChelseaPlays), September 19, 2026, 6:47:38 AM, Email 1470, his own typing: the 3 Way Heroes book
+    // chapter, pages 1-2. "Pero LAI says 'But I am not a team, I am alone. You see I can beat you all, but ChelseaPlays
+    // doesn't want me to, I KNOW YOUR REAL NAME.' ... Pero LAI says 'Nova, you are Nina.'" Nova is Nina, per the
+    // narrator. He lists each hero's wrongs; the heroes fall over; Super Dog punches back; all the heroes join up; his face
+    // goes from confident to scared and he opens a portal home. Prior: August 22, 12:08 PM, "I know everything, CODE's
+    // real name" (the name left blank). Only prior shoelace: May 29, Email 371, Brud's untied-shoelace joke on Simon.
+    // "Super Dog", "Nina", "Ice Cream and Donut" have zero prior hits.
+    const dt = c - 16396.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(10,8,4,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr758=ctx.createLinearGradient(0,top+H,0,top);
+    gr758.addColorStop(0,'rgba(6,5,8,0.88)'); gr758.addColorStop(1,'rgba(255,212,59,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr758; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.lineWidth=0.5; ctx.textAlign='center';
+      const nm758=['SUPER DOG','NOVA','ICE CREAM + DONUT'];
+      for(var b758=0; b758<3; b758++){
+        const bx = fx-W*0.066+b758*W*0.046, by = fy-H*0.020;
+        ctx.globalAlpha=g*wrA*0.60; ctx.strokeStyle='rgba(255,212,59,0.90)';
+        ctx.strokeRect(bx-W*0.018, by, W*0.036, H*0.024);
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(248,246,242,0.92)'; ctx.font='700 2.2px ui-monospace,monospace';
+        ctx.fillText(nm758[b758], bx, by+H*0.014);
+      }
+      ctx.globalAlpha=g*wrA*0.85; ctx.fillStyle='rgba(255,59,92,0.95)';
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.034, W*0.006, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('THREE BOOKS, ONE TEAM.', fx, fy+H*0.026);
+      ctx.fillText('ONE OF HIM, AND HE LEFT.', fx, fy+H*0.038);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,212,59,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('I KNOW YOUR REAL NAME', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“BUT I AM NOT A TEAM, I AM ALONE. YOU SEE I CAN BEAT YOU ALL... I KNOW YOUR REAL NAME.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,212,59,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('IN AUGUST HE KNEW A REAL NAME AND LEFT IT BLANK. THIS TIME HE SAYS IT: “NOVA, YOU ARE NINA.”', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY AND CHELSEAPLAYS, “3 WAY HEROES,” SEPTEMBER 19, 6:47 AM.', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE LAST TIME HE KNEW A REAL NAME, HE KEPT IT TO HIMSELF.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 22, 12:08 PM: “BUT I KNOW EVERYTHING, CODE’S REAL NAME.” THE WORDS “GRAY SPRUNKI” WERE C.O.D.E.’S OWN.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS TIME THE BOOK HAS ALREADY TOLD YOU, “NOVA IS NINA, EVERYONE KNOWS THAT,” AND HE SAYS IT ANYWAY.', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,107,129,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE DOES NOT FIGHT THEM FIRST. HE READS THEIR RECORD OUT LOUD.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOVA IGNORED HER FATHER, HURT SOMEONE WITH A SHOELACE, ATE TOO MUCH CANDY. SUPER DOG HURT VILLAINS.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,107,129,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ICE CREAM AND DONUT ATE EACH OTHER IN THE FIRST LINE OF THE FIRST BOOK. “PERO LAI WAS RIGHT.”', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('THE ONLY OLDER SHOELACE HERE WAS A JOKE.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('MAY 29: BRUD TELLS SIMON HIS SHOE-LASES ARE UNTIED.', cx-W*0.150, top+H*0.392);
+    ctx.fillText('SIMON SLAPS HIS HEAD. HE HAS NO FEET, SO NO LACES.', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IN THIS BOOK A SHOELACE IS ON A LIST OF WRONGS.', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE HEROES WON THE WAY THE TITLE SAYS: ALL OF THEM AT ONCE.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SUPER DOG PUNCHED BACK, AND PERO LAI SAID “YOU PUNCHED A MAN, YOU TRIED TO HURT ME.” THEN ALL THE HEROES JOINED UP.', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HIS FACE WENT FROM CONFIDENT TO SCARED. HE WALKED BACK, RAN, AND OPENED A PORTAL TO HIS OWN DIMENSION.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('LAST RUN ASKED WHO THE THREE HEROES ARE. THE ANSWER: THREE HEROES FROM THREE BOOKS, AND NOVA GAVE THE OTHERS POWER.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST THING IN THIS ARCHIVE LOST TO A TEAM, AND THE ONLY LINE HE HAD WAS THAT HE IS ALONE.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ I KNOW YOUR REAL NAME ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===757){

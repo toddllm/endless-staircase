@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — I KNOW YOUR REAL NAME / PERO LAI PHASE 7 (BEATS 758-759)
+
+Based on Toby's 2026-09-19 lore, **6:47:38 AM (Email 1470)**, three minutes after the reply that asked who the three
+heroes in "3 Way Heroes" are. The message is the answer: two pages of the book he and ChelseaPlays are writing, with
+Pero LAI in it, then a closing paragraph about Phase 7 and Newtale Gaster. One ChatGPT picture is attached; it is
+described, not hosted, and it is not canon text.
+
+![Beat 758 — I Know Your Real Name](screenshots/820-i-know-your-real-name.png)
+![Beat 759 — Pero LAI Phase 7](screenshots/821-pero-lai-phase-7.png)
+
+- **New beat 758, I KNOW YOUR REAL NAME.** *"But I am not a team, I am alone. You see I can beat you all, but
+  ChelseaPlays doesn't want me to, I KNOW YOUR REAL NAME."* Then: *"Nova, you are Nina."*
+- **The last time he knew a real name, he left it blank.** August 22, 12:08 PM: *"but I know everything, CODE's real
+  name"*; the words "Gray Sprunki" were C.O.D.E.'s own. This time he says it.
+- **He reads each hero's wrongs out loud** (Nova's shoelace and candy, Super Dog hurting villains he could have tied up,
+  Ice Cream and Donut eating each other in the first line of the first book). The only older shoelace in the archive is
+  Brud's joke on Simon, May 29, and Simon has no feet.
+- **He loses to all of them at once.** Super Dog punches back, all the heroes join up, his face goes from confident to
+  scared, and he opens a portal home.
+- **New beat 759, PERO LAI PHASE 7.** *"He flipped the seed to 60006000006 when it was 90000090009."* Turn
+  90000090009 upside down and it reads 60006000006: every 9 becomes a 6 and the digits run backwards.
+- **Phase 7 was the first ending ever named.** August 5, 8:04 PM: *"The story ends at Phase 7."* Phase 6 arrived 6:17
+  this morning; Phase 7 thirty minutes later.
+- **The last seed in the archive was the player's.** August 21 (Email 1070): Luigi Green follows your recordings
+  *"even if you change the seed."*
+- **Newtale Gaster becomes the body Pero coded for himself.** September 2, 7:58 PM: *"a black being covered with green
+  0s and 1s."* Today: *"fully black entity with green 0s and 1s."* On September 12 the game was *"in the hands of
+  Newtale Gaster"*; today the man who speaks in hands is in the code's.
+- **The picture:** a black hood with a green arrow for a face (the September 18 secret form) holding a book and a
+  planet, with a skeleton of green code behind him.
+- Insets: three books and one red eye (758); the seed turning over (759).
+- LV_CYC 16396 -> 16440, two new phases, two LV_BEATS entries, two lvSeg lines, capture scenes `realname758` and
+  `phase7759`. Probe: len 760 / maxPh 759 / holes 0 / undefSeg 0 / err 0.
+- The ladder window shifted, so 818 and 819 were recaptured.
+
 ## 2026-09-19 — PERO LAI PHASE 6 (BEAT 757)
 
 Based on Toby's 2026-09-19 lore, **6:17:24 AM (Email 1469)**. One block of his own typing and two pictures (one
