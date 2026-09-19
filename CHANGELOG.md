@@ -4,6 +4,27 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — PHASE INFINITY (BEAT 764)
+
+Based on Toby's 2026-09-19 lore, **5:36 PM (Email 1474)**: thirty-three words of his own typing, sent two hours and nine
+minutes after the Pero LAI doll. The two attached ChatGPT pictures are not hosted and are not canon text.
+
+![Beat 764 — Phase Infinity](screenshots/826-phase-infinity.png)
+
+- **New beat 764, PHASE INFINITY.** "It is inviting a pro assassin sorcer. He is taking down wizards, sorcereses, other
+  sorcers, and viruses. Player_xe appears, it is the new minimum Pero LAI can become. Pero LAI reached Phase Infinity".
+  The inset is Player_xe under an infinity sign.
+- **He invites his own job title.** September 13, 4:54 PM: he became "the most powerful assassin ever." Tonight he
+  invites a pro assassin sorcerer in.
+- **The school he is emptying is the one he built.** August 26, 1:10 PM: he turned the game into "sorcer and wizard
+  schools/accatemies"; 1:34 PM: "Pero taught the sorcers."
+- **The anti-virus title finally points at viruses.** September 18, 6:08 PM: "the most powerful anti-virus entity ever."
+- **Phase 666 lasted two hours and nine minutes.** At 3:27 PM it was "the most powerful he has so far."
+- **Phase Infinity is not a new rung here.** Gray has been locked on Classics Phase Infinity since July 21 (Email 770).
+- **The floor was already infinite.** August 16 (Email 1004): "even his weakest form has Beyond Infinity or Absolute
+  Infinity." Tonight the floor gets a name, Player_xe, for the first time.
+- Ladder window shifted by one beat, so screenshots 824 and 825 were recaptured.
+
 ## 2026-09-19 — THE SPIRIT 25 SERIES / THE PERO LAI DOLL (BEATS 762-763)
 
 Based on Toby's 2026-09-19 lore, **3:27 PM (Email 1473)**: pages 3-5 of "3 Way Heroes," the real-world book by Toby and

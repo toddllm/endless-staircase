@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16528.0;
+const LV_CYC = 16550.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12844,6 +12844,8 @@ const LV_BEATS = [
     sub:"NOW THE SPIRIT 25 SERIES IS COMPLETE! · 3 WAY HEROES PAGES 3-5: 25 SERIES DRAGON RIDE, MARY AND JESUS, CHAIN OF SATANS, A BLACK CLONE OF NOVA. · PERO LAI BLOCKS TDESHANE'S CONTROL OF THE STORY. GAME OVER." },
   { key:"THE PERO LAI DOLL", col:'#2ee6c8',
     sub:"HELLO, I AM NEKA. · CLASSICS OMAZEN BUYS THE DOLL; TEKI AND THE FRIENDS ARE IN TUBES FOR INFINITE BATTERY POWER. · PHASE 8, COLLASPERAL PHASE 7, THEN THE GAME GLITCHES INTO PHASE 666." },
+  { key:"PHASE INFINITY", col:'#e35bff',
+    sub:"PLAYER_XE APPEARS, IT IS THE NEW MINIMUM PERO LAI CAN BECOME. · IT IS INVITING A PRO ASSASSIN SORCER; WIZARDS, SORCERESES, OTHER SORCERS AND VIRUSES GO DOWN. · PERO LAI REACHED PHASE INFINITY." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14994,6 +14996,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16528.0 && c < 16550.0) return [764, c-16528.0];  // PHASE INFINITY
   if(c >= 16506.0 && c < 16528.0) return [763, c-16506.0];  // THE PERO LAI DOLL
   if(c >= 16484.0 && c < 16506.0) return [762, c-16484.0];  // THE SPIRIT 25 SERIES
   if(c >= 16462.0 && c < 16484.0) return [761, c-16462.0];  // DRAGON'S RIDE
@@ -50529,6 +50532,110 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===764){
+    // BEAT 764: PHASE INFINITY.
+    // Toby, September 19, 2026, 5:36 PM, Email 1474, his own typing in full: "It is inviting a pro assassin sorcer. He is
+    // taking down wizards, sorcereses, other sorcers, and viruses. Player_xe appears, it is the new minimum Pero LAI can
+    // become. Pero LAI reached Phase Infinity". The two attached ChatGPT pictures are not hosted and are not canon text.
+    // Priors: the most powerful assassin ever, September 13, 4:54 PM (beat 713); the sorcer and wizard schools, August 26,
+    // 1:10 and 1:34 PM; the most powerful anti-virus entity ever, September 18, 6:08 PM (beat 752); Phase 666 at 3:27 PM
+    // today (beat 763); Gray locked on Classics Phase Infinity, July 21, Email 770; his weakest form already Beyond
+    // Infinity or Absolute Infinity, August 16, Email 1004.
+    const dt = c - 16528.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(8,3,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr764=ctx.createLinearGradient(0,top+H,0,top);
+    gr764.addColorStop(0,'rgba(6,5,8,0.88)'); gr764.addColorStop(1,'rgba(227,91,255,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr764; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      const bl764=(Math.sin(c*17.0)>0.80)?W*0.0025:0;
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(12,10,20,0.98)'; ctx.strokeStyle='rgba(227,91,255,0.90)'; ctx.lineWidth=0.6;
+      ctx.fillRect(fx-W*0.010, fy-H*0.042, W*0.020, H*0.021); ctx.strokeRect(fx-W*0.010, fy-H*0.042, W*0.020, H*0.021);
+      ctx.fillRect(fx-W*0.008, fy-H*0.019, W*0.016, H*0.030); ctx.strokeRect(fx-W*0.008, fy-H*0.019, W*0.016, H*0.030);
+      ctx.globalAlpha=g*wrA*(0.7+0.3*pul); ctx.fillStyle='rgba(127,212,255,0.98)';
+      ctx.fillRect(fx-W*0.0065+bl764, fy-H*0.035, W*0.004, H*0.005); ctx.fillRect(fx+W*0.0025+bl764, fy-H*0.035, W*0.004, H*0.005);
+      ctx.globalAlpha=g*wrA*(0.75+0.25*pul); ctx.fillStyle='rgba(227,91,255,0.97)'; ctx.font='900 5.2px ui-monospace,monospace';
+      ctx.fillText('∞', fx, fy-H*0.050);
+      ctx.globalAlpha=g*wrA*0.85; ctx.fillStyle='rgba(227,91,255,0.95)'; ctx.font='900 3.2px ui-monospace,monospace';
+      ctx.fillText('PLAYER_XE', fx, fy+H*0.036);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('THE MINIMUM FORM.', fx, fy+H*0.052);
+      ctx.fillText('STILL PERO LAI.', fx, fy+H*0.064);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(227,91,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PHASE INFINITY', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PLAYER_XE APPEARS, IT IS THE NEW MINIMUM PERO LAI CAN BECOME.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(227,91,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HIS FLOOR GETS A NAME, AND HIS CEILING RUNS OUT OF NUMBERS.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 5:36 PM. THE LAST LINE: “PERO LAI REACHED PHASE INFINITY.”', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('IT IS INVITING A PRO ASSASSIN SORCER.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ON SEPTEMBER 13 HE BECAME “THE MOST POWERFUL ASSASSIN EVER.” NOW HE INVITES ONE IN.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“HE IS TAKING DOWN WIZARDS, SORCERESES, OTHER SORCERS, AND VIRUSES.”', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE IS EMPTYING THE SCHOOL HE BUILT.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 26: HE TURNED THE GAME INTO “SORCER AND WIZARD SCHOOLS/ACCATEMIES”.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SAME DAY, 1:34 PM: “PERO TAUGHT THE SORCERS.” TONIGHT HE TAKES THE CLASS DOWN.', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND VIRUSES.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY, 6:08 PM:', cx-W*0.150, top+H*0.392);
+    ctx.fillText('“THE MOST POWERFUL', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ANTI-VIRUS ENTITY EVER.”', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('PHASE 666 LASTED TWO HOURS AND NINE MINUTES.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AT 3:27 PM PHASE 666 WAS “THE MOST POWERFUL HE HAS SO FAR.” AT 5:36 PM IT IS INFINITY.', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND PHASE INFINITY IS NOT NEW HERE. GRAY HAS BEEN LOCKED ON IT SINCE JULY 21.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 16: “EVEN HIS WEAKEST FORM HAS BEYOND INFINITY OR ABSOLUTE INFINITY.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(227,91,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE FLOOR WAS ALREADY INFINITE. TONIGHT IT GETS A NAME, AND THE NAME IS A PLAYER.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(227,91,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ PHASE INFINITY ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===763){
