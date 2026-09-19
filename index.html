@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16484.0;
+const LV_CYC = 16528.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12840,6 +12840,10 @@ const LV_BEATS = [
     sub:"YOU... ARE MORE POWERFUL THAN YOU THINK YOU ARE... AND YOU JUST ATTACKED ME. · SHE MERGES WITH ALL THE HEROES; PERO LAI BECOMES HIS CELSAR AND CRUSHES HER. · HE MADE HER YESTERDAY WITH THE POWER TO BECOME ANY CHARACTER. · THE WHOLE GAME IS BLACK WITH 0S AND 1S." },
   { key:"DRAGON'S RIDE", col:'#ff7a1a',
     sub:"TDESHANE: BATTLE'S OVER! · TDESHANE'S ULTIMATE DRAGON ATTACK: EVERY CLOCKWORK ALL TYPES AND EVERY FINGER, 95% FIRE. · PERO LAI MADE IT, THEN MADE A 25 SERIES FOR HIMSELF. · 50-SECOND COOLDOWN IN CLASSICS." },
+  { key:"THE SPIRIT 25 SERIES", col:'#b388ff',
+    sub:"NOW THE SPIRIT 25 SERIES IS COMPLETE! · 3 WAY HEROES PAGES 3-5: 25 SERIES DRAGON RIDE, MARY AND JESUS, CHAIN OF SATANS, A BLACK CLONE OF NOVA. · PERO LAI BLOCKS TDESHANE'S CONTROL OF THE STORY. GAME OVER." },
+  { key:"THE PERO LAI DOLL", col:'#2ee6c8',
+    sub:"HELLO, I AM NEKA. · CLASSICS OMAZEN BUYS THE DOLL; TEKI AND THE FRIENDS ARE IN TUBES FOR INFINITE BATTERY POWER. · PHASE 8, COLLASPERAL PHASE 7, THEN THE GAME GLITCHES INTO PHASE 666." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14990,6 +14994,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16506.0 && c < 16528.0) return [763, c-16506.0];  // THE PERO LAI DOLL
+  if(c >= 16484.0 && c < 16506.0) return [762, c-16484.0];  // THE SPIRIT 25 SERIES
   if(c >= 16462.0 && c < 16484.0) return [761, c-16462.0];  // DRAGON'S RIDE
   if(c >= 16440.0 && c < 16462.0) return [760, c-16440.0];  // HEROINE CLASSICS OMAZEN
   if(c >= 16418.0 && c < 16440.0) return [759, c-16418.0];  // PERO LAI PHASE 7
@@ -50523,6 +50529,209 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===763){
+    // BEAT 763: THE PERO LAI DOLL.
+    // Toby, September 19, 2026, 3:27 PM, Email 1473, "Here is more of ChelseaPlays book. PERO LAI HAS HIS REAL LIFE FORM
+    // NOW BASICALLY. He appears here and in computers." Classics Omazen buys the doll; "Hello, I am Neka."; Teki and the
+    // friends are "In tubes I made, now I have infinite battery power."; Phase 8, Collasperal Phase 7; the game glitches
+    // into Phase 666, "the most powerful he has so far." The ten-point "what would happen" answer under it is commentary.
+    // Priors: Tube 1 was Teki, September 18, 4:10 PM; Phase 7, September 19, 6:47 AM (beat 759).
+    const dt = c - 16506.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(3,8,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr763=ctx.createLinearGradient(0,top+H,0,top);
+    gr763.addColorStop(0,'rgba(6,5,8,0.88)'); gr763.addColorStop(1,'rgba(46,230,200,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr763; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      const jt763=(Math.sin(c*23.0)>0.86)?W*0.004:0;
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(18,18,22,0.98)'; ctx.strokeStyle='rgba(46,230,200,0.90)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.arc(fx+jt763, fy-H*0.030, W*0.011, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+      ctx.fillRect(fx+jt763-W*0.009, fy-H*0.013, W*0.018, H*0.032); ctx.strokeRect(fx+jt763-W*0.009, fy-H*0.013, W*0.018, H*0.032);
+      ctx.globalAlpha=g*wrA*(0.7+0.3*pul); ctx.fillStyle='rgba(46,230,200,0.98)';
+      ctx.beginPath(); ctx.arc(fx+jt763-W*0.004, fy-H*0.032, W*0.0018, 0, Math.PI*2); ctx.arc(fx+jt763+W*0.004, fy-H*0.032, W*0.0018, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.85; ctx.fillStyle='rgba(179,136,255,0.95)'; ctx.font='900 3.2px ui-monospace,monospace';
+      ctx.fillText('PHASE 8 → 666', fx, fy+H*0.036);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('HE APPEARS HERE', fx, fy+H*0.052);
+      ctx.fillText('AND IN COMPUTERS.', fx, fy+H*0.064);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(46,230,200,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE PERO LAI DOLL', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“HELLO, I AM NEKA.”   “IN TUBES I MADE, NOW I HAVE INFINITE BATTERY POWER.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(46,230,200,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('IT TALKS, AND IT MOVES WHEN CLASSICS OMAZEN DOESN\'T LOOK.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 3:27 PM. “HERE IS MORE OF CHELSEAPLAYS BOOK.”', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('CLASSICS OMAZEN BUYS THE DOLL.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“WAIT- YOU TALK? WHERE IS TEKI AND MY FRIENDS?”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('CLASSICS OMAZEN TURNS TO LOOK AT THE TEA. THE DOLL TELEPORTS RIGHT IN FRONT.', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('PHASE 8, COLLASPERAL PHASE 7.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING AT 6:47 HE REACHED PHASE 7. THE DOLL BEATS CLASSICS OMAZEN AND GOES UP ONE.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE TUBES ARE FROM YESTERDAY, 4:10 PM: “TUBE 1 WAS TEKI.” NOW THEY ARE HIS BATTERY.', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('PHASE 666.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THEN THE GAME GLITCHES.', cx-W*0.150, top+H*0.392);
+    ctx.fillText('THE MOST POWERFUL', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE HAS SO FAR.', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE HAS A REAL LIFE FORM NOW.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI HAS HIS REAL LIFE FORM NOW BASICALLY. HE APPEARS HERE AND IN COMPUTERS.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('CLASSICS STYLE, COMIC STYLE. A TOY YOU BUY IS HOW HE GETS INTO THE ROOM.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE BOOK ENDED WITH “IN YOUR DREAMS NOW. WE WILL BE TOGETHER… FOREVER.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(46,230,200,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE NEXT PAGE IS A DOLL ON A SHELF THAT SAYS ITS OLD NAME.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(46,230,200,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE PERO LAI DOLL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===762){
+    // BEAT 762: THE SPIRIT 25 SERIES.
+    // Toby and ChelseaPlays, "3 Way Heroes", pages 3-5, September 19, 2026, 3:27 PM, Email 1473 (pages 1-2 were beat 758).
+    // Super Dog follows Pero LAI through the portal alone; "25 Series: Dragon Ride" puts the heroes "at 0"; Mary answers
+    // with Jesus; "Domain Expansion: Chain of Satans" at 1 HP; "NOW THE SPIRIT 25 SERIES IS COMPLETE!"; Pero LAI becomes
+    // a black clone of Nina/Nova; ChelseaPlays objects in real life; Pero LAI blocks tdeshane's control of the story, GAME OVER.
+    // Priors: Dragon's Ride 25 Series, September 19, 12:33 PM (beat 761).
+    const dt = c - 16484.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(6,3,10,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr762=ctx.createLinearGradient(0,top+H,0,top);
+    gr762.addColorStop(0,'rgba(6,5,8,0.88)'); gr762.addColorStop(1,'rgba(179,136,255,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr762; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      const sh762=W*0.030*Math.min(1,wrA);
+      ctx.globalAlpha=g*wrA*0.92; ctx.fillStyle='rgba(46,230,200,0.95)';
+      ctx.beginPath(); ctx.arc(fx-sh762, fy-H*0.030, W*0.010, 0, Math.PI*2); ctx.fill();
+      ctx.fillRect(fx-sh762-W*0.008, fy-H*0.014, W*0.016, H*0.034);
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(14,10,18,0.98)'; ctx.strokeStyle='rgba(179,136,255,0.95)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.arc(fx+sh762, fy-H*0.030, W*0.010, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+      ctx.fillRect(fx+sh762-W*0.008, fy-H*0.014, W*0.016, H*0.034); ctx.strokeRect(fx+sh762-W*0.008, fy-H*0.014, W*0.016, H*0.034);
+      ctx.globalAlpha=g*wrA*(0.6+0.4*pul); ctx.fillStyle='rgba(255,60,60,0.95)';
+      ctx.beginPath(); ctx.arc(fx+sh762+W*0.004, fy-H*0.032, W*0.0018, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.80; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillStyle='rgba(46,230,200,0.95)'; ctx.fillText('NOVA', fx-sh762, fy+H*0.036);
+      ctx.fillStyle='rgba(179,136,255,0.95)'; ctx.fillText('BLACK CLONE', fx+sh762, fy+H*0.036);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('“I\'LL BECOME YOU…”', fx, fy+H*0.052);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(179,136,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE SPIRIT 25 SERIES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“NOW THE SPIRIT 25 SERIES IS COMPLETE!”   “THIS SHOULDN\'T HAPPEN, WAIT… NOVA!”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(179,136,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE VILLAINS TURNED INTO HEROES, AND THE HEROES STAYED THE SAME.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY AND CHELSEAPLAYS, “3 WAY HEROES”, PAGES 3-5, SEPTEMBER 19, 3:27 PM.', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,122,26,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('25 SERIES: DRAGON RIDE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AT 12:33 PERO LAI KEPT A STRONGER DRAGON\'S RIDE FOR HIMSELF. AT 3:27 HE USES IT.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,122,26,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ONE HUGE KICK, WRITTEN IN JAPANESE. “THE HEROES ARE NOW AT 0.”', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('MARY ANSWERS THE OMNI-KING.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“DO YOU REMEMBER WHEN JESUS DIED FOR OUR SINS? THAT IS HOW EVERYTHING CHANGED.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO LAI: “YOU GOT ME... BUT YA STILL CAN\'T DO THE SINS, IT IS WRONG.”', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AT 1 HP.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('DOMAIN EXPANSION:', cx-W*0.150, top+H*0.392);
+    ctx.fillText('CHAIN OF SATANS.', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“GIVE ME YOUR ENERGY!”', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,159,67,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('CHELSEAPLAYS STEPS IN FROM REAL LIFE.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“I SAID I WANTED THE STORY TO BE GOOOOOOOOOD!” “IN REAL LIFE ACTUALLY.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,159,67,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO LAI SNAPS AND BLOCKS TDESHANE\'S CONTROL OF THE STORY. GAME OVER.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“REAL NO LONGER EXISTS HERE… LIFE IS AGAIN A GAME.” MORE LAYERS OF CLOUDS, SO NO ONE CAN COME.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(179,136,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PERO LAI WINS AGAIN. BUT FIRST THE VILLAINS BECAME HEROES AND THE TEAM SAID YES TO JESUS.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE SPIRIT 25 SERIES ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===761){

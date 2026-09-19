@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — THE SPIRIT 25 SERIES / THE PERO LAI DOLL (BEATS 762-763)
+
+Based on Toby's 2026-09-19 lore, **3:27 PM (Email 1473)**: pages 3-5 of "3 Way Heroes," the real-world book by Toby and
+ChelseaPlays (pages 1-2 were beat 758), then "more of ChelseaPlays book" about a Pero LAI doll. The ten-point "what would
+happen if you buy a Pero LAI doll" answer under it is commentary, and the two attached ChatGPT pictures are not canon text.
+
+![Beat 762 — The Spirit 25 Series](screenshots/824-the-spirit-25-series.png)
+
+![Beat 763 — The Pero LAI Doll](screenshots/825-the-pero-lai-doll.png)
+
+- **New beat 762, THE SPIRIT 25 SERIES.** Super Dog follows Pero LAI into his dimension alone; "25 Series: Dragon Ride"
+  puts the 3 Way Heroes at 0; Mary answers the Omni-king with Jesus; "Domain Expansion: Chain of Satans" at 1 HP; the
+  villains turn into heroes; Pero LAI becomes a black clone of Nova; ChelseaPlays objects in real life; Pero LAI blocks
+  tdeshane's control of the story. GAME OVER. The inset shows Nova and the black clone.
+- **New beat 763, THE PERO LAI DOLL.** Classics Omazen buys the doll; "Hello, I am Neka."; Teki and the friends are in
+  tubes for "infinite battery power"; Phase 8, Collasperal Phase 7; then the game glitches into Phase 666. The inset is
+  the doll with its eyes lit.
+- **The 25 Series gets used.** At 12:33 PM Pero LAI kept a stronger Dragon's Ride for himself; at 3:27 PM he uses it.
+- Ladder window shifted by two beats, so screenshots 822 and 823 were recaptured.
+
 ## 2026-09-19 — DRAGON'S RIDE (BEAT 761)
 
 Based on Toby's 2026-09-19 lore, **12:33 PM (Email 1472)**: a Roblox Tool script for "Dragon's Ride" plus his own
