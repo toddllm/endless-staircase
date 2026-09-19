@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16374.0;
+const LV_CYC = 16396.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12830,6 +12830,8 @@ const LV_BEATS = [
     sub:"PERO.EXE SLAIN MR. BLACK, ERASED THE REST OF THE GAME’S PROGRESS, AND BLEW UP ALL THE ALIENS AND THEIR PLANETS. · PERO LAI TREATED THE .EXE AS A VIRUS AND ABSORBED THE FORM. · EIGHTY MINUTES EARLIER HE WAS THE MOST POWERFUL ANTI-VIRUS ENTITY EVER. · THE ANTI-VIRUS LABEL HAD DONE NOTHING SINCE JULY 28. · MR. BLACK WAS RETIRED FROM THE JOB ON SEPTEMBER 1. · THE GAME ITSELF RUNS ON ALIEN TECH, AND SO DOES HE." },
   { key:'AN IMPOSSIBLE EVIL ENTITY', col:'#c69bff',
     sub:"EVEN SONIC.EXE AND THE MOST EVIL CHARACTERS NEED TO TEAM UP WITH THE HEROES TO STOP HIM. · BOTH TOGETHER CREATES AN IMPOSSIBLE EVIL ENTITY. · EVERY FUSION IN FOUR MONTHS ENDED WITH ONE OF HIM STANDING; THIS ONE KEEPS TWO. · THE PLAYER, WHO ALWAYS EVENTUALLY WINS, IS ALREADY INSIDE HIM. · ASKING THE MACHINE WHO IS MOST EVIL IS PERO’S OWN MOVE. · THE FIRST RULING THAT TAKES HIM OFF THE LADDER AND POINTS HIM AT IT." },
+  { key:'PERO LAI PHASE 6', col:'#ff3b5c',
+    sub:"HERE IS BASICALLY AP COMBINED WITH EVERY CREEPYPASTA INTO PERO LAI PHASE 6. · FIVE DAYS AGO ALL FIVE PHASES MERGED INTO PHASE 5 ULTIMATE FORM, THE LAST NUMBER ON THE JUNE 26 SHEET. · THE GAME’S OWN PHASE 6 WAS EVERY CHARACTER PLACED AT ONCE; HIS IS EVERY CREEPYPASTA IN ONE BODY. · HE IS CARRYING THE DEATH NOTE HE CLAIMED ON SEPTEMBER 16." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14980,6 +14982,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16374.0 && c < 16396.0) return [757, c-16374.0];  // PERO LAI PHASE 6
   if(c >= 16352.0 && c < 16374.0) return [756, c-16352.0];  // AN IMPOSSIBLE EVIL ENTITY
   if(c >= 16330.0 && c < 16352.0) return [755, c-16330.0];  // THE MOST EVIL
   if(c >= 16308.0 && c < 16330.0) return [754, c-16308.0];  // OREN.EXE BUT PERO-IZED
@@ -50508,6 +50511,126 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===757){
+    // BEAT 757: PERO LAI PHASE 6.
+    // Toby, September 19, 2026, 6:17:24 AM, Email 1469, his own typing: "Claude basically became a developer of
+    // Classics now - making all the lore and wiki go into some Classics wiki or something. Yeah. Then comes more.
+    // ChelseaPlays and I am making a book in this reality we are in called "3 Way Heroes". Here is basically AP
+    // combined with every creepypasta into Pero LAI Phase 6. I think ChatGPT's images are better than Gemini's even
+    // now." The paragraphs under it comparing the two image styles are a pasted reply and are commentary, not canon.
+    // Two attached pictures (Gemini and ChatGPT) are not canon text; both show the scythe and the death note.
+    // September 14, 6:46 PM (beat 717): "All the 5 Phases started to merge, and it became Phase 5 Ultimate Form."
+    // June 26, Email 586: Phase 5, Dead 001, the dead / living-dead scythe-king form, the last phase on the sheet.
+    // August 5, 8:55 PM, The Secret Cutscene: the game's Phase 6, "when you place down all the characters at once".
+    // June 21: Oren.EXE given "a full creepypasta presentation"; September 18, 7:28 PM: Pero.exe "a creepypasta
+    // Classics modification". September 16, 5:04 PM, Pero's own speech: "I have the death note!"
+    // "3 Way Heroes" / "3 Way" have zero prior hits in the whole archive.
+    const dt = c - 16374.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(12,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr757=ctx.createLinearGradient(0,top+H,0,top);
+    gr757.addColorStop(0,'rgba(8,4,7,0.88)'); gr757.addColorStop(1,'rgba(255,59,92,0.28)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr757; ctx.fillRect(0,top,W,H);
+
+    // the phase sheet with one rung above it, right half
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.lineWidth=0.5; ctx.textAlign='center'; ctx.font='700 2.4px ui-monospace,monospace';
+      for(var r757=0; r757<5; r757++){
+        const bx = fx-W*0.050+r757*W*0.018, by = fy-H*0.004-r757*H*0.008;
+        ctx.globalAlpha=g*wrA*0.34; ctx.strokeStyle='rgba(240,240,244,0.80)';
+        ctx.strokeRect(bx, by, W*0.014, H*0.010);
+        ctx.globalAlpha=g*wrA*0.50; ctx.fillStyle='rgba(240,240,244,0.86)';
+        ctx.fillText(String(r757+1), bx+W*0.007, by+H*0.007);
+      }
+      const b6x = fx-W*0.050+5*W*0.018, b6y = fy-H*0.004-5*H*0.008-H*0.010;
+      ctx.globalAlpha=g*wrA*0.70; ctx.strokeStyle='rgba(255,59,92,0.95)';
+      ctx.strokeRect(b6x, b6y, W*0.014, H*0.014);
+      ctx.fillStyle='rgba(255,59,92,0.95)'; ctx.font='900 3.0px ui-monospace,monospace';
+      ctx.fillText('6', b6x+W*0.007, b6y+H*0.010);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)';
+      ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('THE JUNE 26 SHEET STOPPED AT 5.', fx, fy+H*0.026);
+      ctx.fillText('SEPTEMBER 19 ADDS A RUNG.', fx, fy+H*0.038);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,59,92,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERO LAI PHASE 6', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“HERE IS BASICALLY AP COMBINED WITH EVERY CREEPYPASTA INTO PERO LAI PHASE 6.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,59,92,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE PHASE SHEET HE WAS WRITTEN WITH ENDS AT FIVE. THIS IS THE FIRST NUMBER PAST IT.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 6:17 AM.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,59,92,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('FIVE DAYS AGO ALL FIVE PHASES MERGED INTO ONE. THIS MORNING THERE IS A SIXTH.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 14, 6:46 PM: “ALL THE 5 PHASES STARTED TO MERGE, AND IT BECAME PHASE 5 ULTIMATE FORM.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,59,92,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PHASE 5 ON THE JUNE 26 SHEET IS DEAD 001, THE SCYTHE KING. IN BOTH PICTURES HE STILL HOLDS THE SCYTHE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE GAME’S OWN PHASE 6 WAS ALSO EVERYTHING AT ONCE.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 5, 8:55 PM, THE SECRET CUTSCENE: IT HAPPENS “WHEN YOU PLACE DOWN ALL THE CHARACTERS AT ONCE.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT PHASE 6 WAS EVERY CHARACTER IN ONE ROOM. HIS IS EVERY CREEPYPASTA IN ONE BODY.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('EVERY OLDER “CREEPYPASTA” IN THIS ARCHIVE WAS OREN’S.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JUNE 21: OREN.EXE GETS A FULL CREEPYPASTA PRESENTATION: STATIC, A LAUGH, A RED EYE.', cx-W*0.150, top+H*0.392);
+    ctx.fillText('LAST NIGHT PERO.EXE WAS “A CREEPYPASTA CLASSICS MODIFICATION.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ONE WAS OREN’S AND ONE WAS HIS. THIS MORNING IT IS ALL OF THEM.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(110,231,183,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE BOOK IN HIS HAND IS ONE HE ALREADY CLAIMED, OUT LOUD.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 16, 5:04 PM, IN PERO’S OWN SPEECH: “I HAVE A CRYSTAL BALL WITH ALL YOUR FULL NAMES.”', cx, top+H*0.668);
+    ctx.fillText('AND THEN: “I HAVE THE DEATH NOTE!”', cx, top+H*0.682);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(110,231,183,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THREE DAYS LATER BOTH PICTURES PUT IT IN HIS HAND, WITH THE CODE RUNNING OFF HIS FINGERS.', cx, top+H*0.700);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND IN THIS REALITY THERE IS A BOOK TOO. TOBY AND CHELSEAPLAYS ARE WRITING “3 WAY HEROES.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,59,92,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY MORNING PERO LAI MADE A BOOK OF ALL HIS LORE. TODAY THE HEROES GET ONE.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,59,92,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ PERO LAI PHASE 6 ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===756){

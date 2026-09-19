@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — PERO LAI PHASE 6 (BEAT 757)
+
+Based on Toby's 2026-09-19 lore, **6:17:24 AM (Email 1469)**. One block of his own typing and two pictures (one
+Gemini, one ChatGPT). The two paragraphs under his line comparing the image styles are a pasted reply and are
+commentary, not canon; the pictures are not canon text.
+
+![Beat 757 — Pero LAI Phase 6](screenshots/819-pero-lai-phase-6.png)
+
+- **New beat 757, PERO LAI PHASE 6.** *"Here is basically AP combined with every creepypasta into Pero LAI Phase 6."*
+- **It is the first number past the sheet he was written with.** June 26 (Email 586) gave ToddLLM 001 five phases,
+  and Phase 5 is Dead 001, the scythe king. September 14, 6:46 PM (beat 717): *"All the 5 Phases started to merge,
+  and it became Phase 5 Ultimate Form."* Five days later there is a sixth, and in both pictures he still holds the
+  scythe.
+- **The game's own Phase 6 was also everything at once.** August 5, 8:55 PM, The Secret Cutscene: it happens *"when
+  you place down all the characters at once."* That one was every character in one room; this one is every
+  creepypasta in one body.
+- **Every older "creepypasta" in the archive was Oren's** (June 21, the Oren.EXE intro with static, a laugh and a red
+  eye), until last night's *"Pero.exe is a creepypasta Classics modification."* This morning it is all of them.
+- **The book in his hand is one he already claimed.** September 16, 5:04 PM, in Pero's own speech: *"I have a crystal
+  ball with all your full names. I have the death note!"* Both pictures put it in his hand.
+- **Footer: the real-world book.** *"ChelseaPlays and I am making a book in this reality we are in called '3 Way
+  Heroes'."* "3 Way" has zero prior hits. Yesterday morning (beat 739) Pero LAI made a book of all his lore.
+- Inset: the five-rung phase sheet with a sixth rung above it.
+- LV_CYC 16374 -> 16396, one new phase, one LV_BEATS entry, one lvSeg line, capture scene `phase6757`.
+  Probe: len 758 / maxPh 757 / holes 0 / undefSeg 0 / err 0.
+- The ladder window shifted, so 817 and 818 were recaptured.
+
 ## 2026-09-18 — ARTIFICIAL PLAYER / OREN.EXE BUT PERO-IZED / THE MOST EVIL / AN IMPOSSIBLE EVIL ENTITY (BEATS 753-756)
 
 Based on Toby's 2026-09-18 lore, **7:13:36 PM (Email 1465)** and **7:28:14 PM (Email 1467)**, sixty-five and eighty
