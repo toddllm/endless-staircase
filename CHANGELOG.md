@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — DRAGON'S RIDE (BEAT 761)
+
+Based on Toby's 2026-09-19 lore, **12:33 PM (Email 1472)**: a Roblox Tool script for "Dragon's Ride" plus his own
+explanation of how the move really works in Classics. The ChatGPT recaps in the same email are commentary, and the
+attached video is not canon text.
+
+![Beat 761 — Dragon's Ride](screenshots/823-dragons-ride.png)
+
+- **New beat 761, DRAGON'S RIDE.** tdeshane's Ultimate Dragon Attack: every Clockworks All Types and every Finger,
+  95% fire and the rest everything else. One use in Roblox, a 50-second cooldown in Classics.
+- **Pero LAI made it**, then made a stronger *Dragon's Ride 25 Series* for himself (the script's last hint says
+  "22 SERIES, Pero LAI, 12 Powers").
+- **Same door as 2 Finger.** September 18, 4:10 PM: "2 Finger is the only attack that summons Infinity Clockworks All
+  Types." Dragon's Ride uses all the Fingers, so the rule still holds.
+- **Unlock:** a fanon mode, opened by meeting tdeshane and all the developers. The line that moves tdeshane to
+  ReplicatedStorage is "so there is only 1 tdeshane" during the animation.
+- Ladder window shifted by one beat, so screenshots 821 and 822 were recaptured.
+
 ## 2026-09-19 — HEROINE CLASSICS OMAZEN (BEAT 760)
 
 Based on Toby's 2026-09-19 lore, **7:24:01 AM (Email 1471)**, on top of his own 6:47 message. Two ChatGPT pictures are

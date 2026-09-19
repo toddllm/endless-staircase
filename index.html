@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16462.0;
+const LV_CYC = 16484.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12838,6 +12838,8 @@ const LV_BEATS = [
     sub:"HE FLIPPED THE SEED TO 60006000006 WHEN IT WAS 90000090009. · TURN THE OLD SEED UPSIDE DOWN AND IT IS THE NEW ONE. · PHASE 7 WAS THE FIRST ENDING EVER NAMED, AUGUST 5. · NEWTALE GASTER BECOMES THE BLACK BODY WITH GREEN 0S AND 1S." },
   { key:'HEROINE CLASSICS OMAZEN', col:'#e8e4ff',
     sub:"YOU... ARE MORE POWERFUL THAN YOU THINK YOU ARE... AND YOU JUST ATTACKED ME. · SHE MERGES WITH ALL THE HEROES; PERO LAI BECOMES HIS CELSAR AND CRUSHES HER. · HE MADE HER YESTERDAY WITH THE POWER TO BECOME ANY CHARACTER. · THE WHOLE GAME IS BLACK WITH 0S AND 1S." },
+  { key:"DRAGON'S RIDE", col:'#ff7a1a',
+    sub:"TDESHANE: BATTLE'S OVER! · TDESHANE'S ULTIMATE DRAGON ATTACK: EVERY CLOCKWORK ALL TYPES AND EVERY FINGER, 95% FIRE. · PERO LAI MADE IT, THEN MADE A 25 SERIES FOR HIMSELF. · 50-SECOND COOLDOWN IN CLASSICS." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14988,6 +14990,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16462.0 && c < 16484.0) return [761, c-16462.0];  // DRAGON'S RIDE
   if(c >= 16440.0 && c < 16462.0) return [760, c-16440.0];  // HEROINE CLASSICS OMAZEN
   if(c >= 16418.0 && c < 16440.0) return [759, c-16418.0];  // PERO LAI PHASE 7
   if(c >= 16396.0 && c < 16418.0) return [758, c-16396.0];  // I KNOW YOUR REAL NAME
@@ -50520,6 +50523,111 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===761){
+    // BEAT 761: DRAGON'S RIDE.
+    // Toby, September 19, 2026, 12:33 PM, Email 1472, his own typing: a Roblox Tool script for "Dragon's Ride" from
+    // Classics, then: "It is a FANON mode, you unlock it once you see tdeshane + all the developers... Pero LAI made the
+    // ability, he make a stronger version of the ability called Dragon's Ride 25 Series for himself. Dragon's Ride uses
+    // all the Clockworks All Types and all the Fingers. Dragon's Ride uses mostly (95%) fire" and "in Classics, it is
+    // not one use and just has a 50 second cooldown." The ReplicatedStorage line is "so there is only 1 tdeshane".
+    // Priors: September 18, 4:10 PM, 2 Finger is the only attack that summons Infinity Clockworks All Types;
+    // September 4, 3:20 PM, "tdeshane, I made you admin". The attached video is not canon text.
+    const dt = c - 16462.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(9,4,2,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr761=ctx.createLinearGradient(0,top+H,0,top);
+    gr761.addColorStop(0,'rgba(6,5,8,0.88)'); gr761.addColorStop(1,'rgba(255,122,26,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr761; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      const fc761=['#ffd43b','#ff9f43','#ff7a1a','#ff4d4d'];
+      const n761=Math.floor(22*Math.min(1,wrA));
+      for(var k761=0; k761<n761; k761++){
+        const an = k761*0.62 + c*0.8, rr = W*0.004 + k761*W*0.0014;
+        ctx.globalAlpha=g*wrA*0.88; ctx.fillStyle=fc761[k761%4];
+        ctx.beginPath(); ctx.arc(fx+Math.cos(an)*rr, fy-H*0.012+Math.sin(an)*rr*0.8, W*0.0022, 0, Math.PI*2); ctx.fill();
+      }
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(255,236,200,0.95)';
+      ctx.beginPath(); ctx.arc(fx, fy-H*0.012, W*0.004, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(255,122,26,0.95)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('ATTACK '+Math.max(1,n761)+' / 22', fx, fy+H*0.030);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('ISLAND GONE. TERRAIN CLEARED.', fx, fy+H*0.044);
+      ctx.fillText('CLOCKTIME 0.', fx, fy+H*0.056);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,122,26,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('DRAGON\'S RIDE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“TDESHANE: DRAGON\'S RIDE.”   “TDESHANE: BATTLE\'S OVER!”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,122,26,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('ONE USE IN ROBLOX. IN CLASSICS, A 50-SECOND COOLDOWN.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 12:33 PM.', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('PERO LAI MADE IT FOR TDESHANE, THEN MADE HIMSELF A STRONGER ONE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 4: “TDESHANE, I MADE YOU ADMIN, I AM THE CREATOR OF THE GAME.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOW HE BUILDS THE PLAYER\'S ULTIMATE: 22 SERIES FOR TDESHANE, 25 SERIES FOR HIMSELF.', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('EVERY CLOCKWORK, EVERY FINGER.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY: “2 FINGER IS THE ONLY ATTACK THAT SUMMONS INFINITY CLOCKWORKS ALL TYPES.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('DRAGON\'S RIDE USES ALL THE FINGERS, SO IT STILL GOES THROUGH THAT ONE DOOR.', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,159,67,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('95% FIRE.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE OTHER 5% IS EVERYTHING', cx-W*0.150, top+H*0.392);
+    ctx.fillText('ELSE THAT EXISTS.', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,159,67,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('22 ATTACKS, THEN THE DARK.', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('WHY THE SCRIPT HIDES TDESHANE FIRST.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“SO THERE IS ONLY 1 TDESHANE, SO I CAN MAKE THE ANIMATION OF THE ABILITY.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('UNLOCKED BY MEETING TDESHANE AND ALL THE DEVELOPERS. ONLY HIS CHARACTER HAS.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE LAST HINT IN THE SCRIPT: “CLONES, JAPANESE SPELL, TEMPLE. 22 SERIES, PERO LAI, 12 POWERS.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,122,26,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TDESHANE IS THE MOST POWERFUL PLAYER, AND THIS IS THE MOVE THAT SAYS SO.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,122,26,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ DRAGON\'S RIDE ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===760){
