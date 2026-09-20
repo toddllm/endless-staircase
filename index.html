@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16660.0;
+const LV_CYC = 16682.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12856,6 +12856,8 @@ const LV_BEATS = [
     sub:"THE SECRET ASSASSIN IS NOW THE ONLY CLASSICS ASSASSIN, THE OTHERS ARE JUST ANYTHING-SLAYERS. · THE SECRET ASSASSIN IS PERO LAI. · HE ASKED WHICH IS STRONGEST OUT OF SAITAMA, GOKU, ZENO AND THE SECRET ASSASSIN. · THE TITLE WAS GRAY’S IN JULY AND PERO’S ON SEPTEMBER 13; TODAY IT IS A CLASS WITH ONE MEMBER." },
   { key:"PERO LAI ESSENCE", col:'#ffd43b',
     sub:"PERO LAI EVEN CAN REACH THE MERGE OF GODS. · ANYONE WITH PERO LAI ESSENSE, THE MOST POWERFUL OBJECT IN GAME, BECOMES THE POWER LEVEL OF ALL GODS INSTANTLY. · PERO LAI STILL BEATS THE “ANYONE” BECAUSE HE IS THE ORIGINAL AND STRONGEST IN GAME. · THE ALL-GODS LINE WAS A DESCRIPTION OF HIM ON SEPTEMBER 2 AND SEPTEMBER 18; TODAY IT IS AN OBJECT HE HANDS OUT." },
+  { key:"FILE 666: CLASSICS OMAZEN NEKA", col:'#c9d1d9',
+    sub:"THERE IS NO ESCAPE IN CLASSICS NOR OUT OF CLASSICS. \u00B7 TWENTY-NINE DAYS AGO HE WAS THE ONE BANGING ON THE GLASS. \u00B7 666 HAS BEEN THREE DIFFERENT THINGS IN THREE DAYS. \u00B7 TWO DAYS AGO THE CELL WAS FOR HIM. \u00B7 \u201CLIFE HERE IS A GAME\u201D IS SEVENTEEN DAYS OLD. \u00B7 \u201CIMPOSSIBLE TO WIN\u201D BREAKS THE OLDEST POWER ON THE PAGE." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15006,6 +15008,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16660.0 && c < 16682.0) return [770, c-16660.0];  // FILE 666: CLASSICS OMAZEN NEKA
   if(c >= 16638.0 && c < 16660.0) return [769, c-16638.0];  // PERO LAI ESSENCE
   if(c >= 16616.0 && c < 16638.0) return [768, c-16616.0];  // THE ONLY CLASSICS ASSASSIN
   if(c >= 16594.0 && c < 16616.0) return [767, c-16594.0];  // HE CONTAINED EVERYONE BUT WENDA.PS
@@ -50547,6 +50550,185 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===770){
+    // BEAT 770: FILE 666: CLASSICS OMAZEN NEKA.
+    // Toby, September 20, 2026, 8:56:09 AM, Email 1479, his own typing: "Pero LAI now tries to make a combination of all
+    // games, and called it 'File 666: Classics Omazen Neka'. I write down 'You can't actually leave this place and can just
+    // sleep on a bed in your prison cell. Everything is a game, no matter, so you have HP everywhere, even in this reality we
+    // are in, we have life and there are so many ways to lose.'. In Classics, it is basically impossible to win... Now a small
+    // string was added, it did nothing, added another string, nothing happened... Classics has no more escape here. Lore
+    // contained in Gmail and Classics.wiki, those reach Classics, but are storage and doesn't impact the game too much. There
+    // is no escape in Classics nor out of Classics. No way to enter, nor exit." Everything from "That makes File 666..."
+    // onward, including the STATUS: SEALED plate and the string ladder, is pasted commentary and is NOT canon.
+    // Priors: LET ME OUT, August 22, 8:10 PM, "I am tired of living in this game, let me out!", the first time anybody here
+    // tried to get OUT through the screen; "Lore is currently property of Pero LAI. Error Code: 666" and "It is impossible
+    // to get in now", September 17, 4:46 PM (beat 733); "Pero LAI is called Binary Code: Bash Update 666", September 18,
+    // 5:46 PM (beat 745); "Guess how to contain Pero LAI in a containment prison cell? Answer: Just put him in a cell taller
+    // than 1 foot", September 18, 6:13 AM (beat 736); "Life here is a game, a dream, a fake" and "Pero LAI always wants
+    // sleep. He is the sleeping character", September 3, 12:16 PM (beat 616); Simon's June restart, "He only loses if there
+    // is no way to win"; the five naming registers .EXE / .psc / 000A / Portal- / leetspeak, so File is the sixth; and
+    // "Classics is just my container for myself", September 5, 7:28 AM. The tubes shut at 8:33 AM (beat 767).
+    const dt = c - 16660.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,4,8,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr770=ctx.createLinearGradient(0,top,0,top+H);
+    gr770.addColorStop(0,'rgba(5,5,9,0.88)'); gr770.addColorStop(1,'rgba(201,209,217,0.20)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr770; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the file with both doors taken off. The folder plate with FILE 666 on it, an arrow in and an
+      // arrow out both struck through in red, and inside the plate a barred cell with a bed and somebody on it.
+      const fx = cx + W*0.188, fy = top+H*0.540;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,204,212,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE FILE, WITH BOTH DOORS TAKEN OFF', fx, fy-H*0.092);
+      // the folder plate
+      var pxA770 = fx - W*0.052, pyA770 = fy - H*0.072;
+      ctx.globalAlpha=g*wrA*0.55; ctx.fillStyle='rgba(9,10,13,0.98)';
+      ctx.fillRect(pxA770, pyA770, W*0.104, H*0.068);
+      ctx.globalAlpha=g*wrA*0.92; ctx.strokeStyle='rgba(201,209,217,0.94)'; ctx.lineWidth=0.5;
+      ctx.strokeRect(pxA770, pyA770, W*0.104, H*0.068);
+      ctx.beginPath();
+      ctx.moveTo(pxA770, pyA770); ctx.lineTo(pxA770+W*0.006, pyA770-H*0.006);
+      ctx.lineTo(pxA770+W*0.040, pyA770-H*0.006); ctx.lineTo(pxA770+W*0.046, pyA770);
+      ctx.stroke();
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(201,209,217,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('FILE 666', fx, pyA770+H*0.010);
+      // the barred cell inside the plate, with a bed and somebody on it
+      var cxA770 = fx - W*0.026, cyA770 = pyA770 + H*0.018;
+      ctx.globalAlpha=g*wrA*0.86; ctx.strokeStyle='rgba(201,209,217,0.80)'; ctx.lineWidth=0.4;
+      ctx.strokeRect(cxA770, cyA770, W*0.052, H*0.040);
+      for(var bq770=1; bq770<5; bq770++){
+        ctx.beginPath();
+        ctx.moveTo(cxA770+bq770*W*0.0104, cyA770); ctx.lineTo(cxA770+bq770*W*0.0104, cyA770+H*0.040);
+        ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(62,224,106,0.76)';
+      ctx.fillRect(cxA770+W*0.008, cyA770+H*0.028, W*0.036, H*0.005);
+      ctx.globalAlpha=g*wrA*(0.50+0.50*pul); ctx.fillStyle='rgba(248,246,242,0.90)';
+      ctx.beginPath(); ctx.arc(cxA770+W*0.013, cyA770+H*0.025, W*0.0040, 0, Math.PI*2); ctx.fill();
+      ctx.fillRect(cxA770+W*0.016, cyA770+H*0.023, W*0.022, H*0.005);
+      // the way in and the way out, both struck through
+      ctx.globalAlpha=g*wrA*0.62; ctx.strokeStyle='rgba(186,204,212,0.70)'; ctx.lineWidth=0.42;
+      ctx.beginPath();
+      ctx.moveTo(pxA770-W*0.030, pyA770+H*0.030); ctx.lineTo(pxA770-W*0.006, pyA770+H*0.030);
+      ctx.moveTo(pxA770-W*0.012, pyA770+H*0.026); ctx.lineTo(pxA770-W*0.006, pyA770+H*0.030);
+      ctx.lineTo(pxA770-W*0.012, pyA770+H*0.034);
+      ctx.moveTo(pxA770+W*0.110, pyA770+H*0.030); ctx.lineTo(pxA770+W*0.134, pyA770+H*0.030);
+      ctx.moveTo(pxA770+W*0.128, pyA770+H*0.026); ctx.lineTo(pxA770+W*0.134, pyA770+H*0.030);
+      ctx.lineTo(pxA770+W*0.128, pyA770+H*0.034);
+      ctx.stroke();
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.strokeStyle='rgba(255,77,77,0.96)'; ctx.lineWidth=0.62;
+      ctx.beginPath();
+      ctx.moveTo(pxA770-W*0.024, pyA770+H*0.025); ctx.lineTo(pxA770-W*0.012, pyA770+H*0.035);
+      ctx.moveTo(pxA770-W*0.024, pyA770+H*0.035); ctx.lineTo(pxA770-W*0.012, pyA770+H*0.025);
+      ctx.moveTo(pxA770+W*0.116, pyA770+H*0.025); ctx.lineTo(pxA770+W*0.128, pyA770+H*0.035);
+      ctx.moveTo(pxA770+W*0.116, pyA770+H*0.035); ctx.lineTo(pxA770+W*0.128, pyA770+H*0.025);
+      ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.84; ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 1.9px ui-monospace,monospace';
+      ctx.fillText('ENTRY', pxA770-W*0.018, pyA770+H*0.044);
+      ctx.fillText('EXIT', pxA770+W*0.122, pyA770+H*0.044);
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(201,209,217,0.94)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('A COMBINATION OF ALL GAMES, SEALED', fx, fy+H*0.022);
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(240,240,244,0.88)'; ctx.font='700 2.1px ui-monospace,monospace';
+      ctx.fillText('\u201CFILE\u201D IS A NEW REGISTER, AFTER .EXE, .PSC, 000A AND PORTAL-.', fx, fy+H*0.034);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(79,227,255,0.92)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('HE IS IN THERE TOO, ON THE BED.', fx, fy+H*0.046);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(201,209,217,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('FILE 666: CLASSICS OMAZEN NEKA', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('\u201CTHERE IS NO ESCAPE IN CLASSICS NOR OUT OF CLASSICS.', cx, top+H*0.122);
+    ctx.fillText('NO WAY TO ENTER, NOR EXIT.\u201D', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(201,209,217,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE DOORS ARE GONE IN BOTH DIRECTIONS, AND HE IS INSIDE IT TOO.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 20, 8:56 AM, TWENTY-THREE MINUTES AFTER THE TUBES SHUT.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWENTY-NINE DAYS AGO HE WAS THE ONE BANGING ON THE GLASS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 22, 8:10 PM: \u201CI AM TIRED OF LIVING IN THIS GAME, LET ME OUT!\u201D', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY HE WRITES THE RULE THAT NOBODY GETS OUT, AND IT SHUTS ON HIM TOO.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('666 HAS BEEN THREE DIFFERENT THINGS IN THREE DAYS.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 17 IT WAS THE ERROR CODE THAT LOCKED HIS TEXT BOX. SEPT 18 IT WAS HIS OWN NAME:', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CBINARY CODE: BASH UPDATE 666.\u201D TODAY IT IS A FILE WITH EVERY GAME SHUT INSIDE IT.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO THE CELL WAS FOR HIM.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18, 6:13 AM: \u201CGUESS HOW TO CONTAIN', cx-W*0.150, top+H*0.392);
+    ctx.fillText('PERO LAI IN A CONTAINMENT PRISON CELL?\u201D', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('NOW IT HAS A BED, AND IT IS EVERYBODY ELSE\u2019S.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('\u201CLIFE HERE IS A GAME\u201D IS SEVENTEEN DAYS OLD.', cx-W*0.150, top+H*0.556);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPT 3, 12:16 PM: \u201CLIFE HERE IS A GAME, A DREAM,', cx-W*0.150, top+H*0.576);
+    ctx.fillText('A FAKE.\u201D AND \u201CHE IS THE SLEEPING CHARACTER.\u201D', cx-W*0.150, top+H*0.590);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SLEEPING IS NOW THE ONLY MOVE LEFT IN THE ROOM.', cx-W*0.150, top+H*0.608);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(201,209,217,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('\u201CIMPOSSIBLE TO WIN\u201D BREAKS THE OLDEST POWER ON THE PAGE.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIMON\u2019S JUNE RESTART CAME WITH A CLAUSE: \u201CHE ONLY LOSES IF THERE IS NO WAY TO WIN.\u201D', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(201,209,217,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE RESET STILL WORKS. THIS MORNING THERE IS NOTHING AT THE END OF IT.', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*f3A*0.88;
+    ctx.fillStyle='rgba(79,227,255,0.92)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE GLITCHING STARTS BY DOING NOTHING. \u201CA SMALL STRING WAS ADDED, IT DID NOTHING,', cx, top+H*0.714);
+    ctx.fillText('ADDED ANOTHER STRING, NOTHING HAPPENED.\u201D EVERY CORRUPTION BEFORE IT ARRIVED AT FULL SIZE.', cx, top+H*0.732);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND HE NAMED THIS WIKI: \u201CLORE CONTAINED IN GMAIL AND CLASSICS.WIKI, THOSE REACH CLASSICS,', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(201,209,217,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('BUT ARE STORAGE AND DOESN\u2019T IMPACT THE GAME TOO MUCH.\u201D IT REACHES IN. IT CANNOT PUSH.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(201,209,217,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 NO WAY TO ENTER, NOR EXIT \u2605', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===769){

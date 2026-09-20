@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — FILE 666: CLASSICS OMAZEN NEKA (BEAT 770)
+
+Based on Toby's 2026-09-20 lore, **8:56 AM (Email 1479)**, twenty-three minutes after the tubes shut. Everything from
+"That makes File 666: Classics Omazen Neka feel less like a normal level" onward, including the STATUS: SEALED plate and
+the string ladder, is pasted commentary and is not canon.
+
+![Beat 770 — File 666: Classics Omazen Neka](screenshots/832-file-666-classics-omazen-neka.png)
+
+- **New beat 770, FILE 666: CLASSICS OMAZEN NEKA.** "Pero LAI now tries to make a combination of all games, and called
+  it 'File 666: Classics Omazen Neka'... Classics has no more escape here... There is no escape in Classics nor out of
+  Classics. No way to enter, nor exit."
+- **The inset draws the file with both doors taken off.** A folder plate with FILE 666 on it, a barred cell inside it
+  with a bed and somebody lying on it, and an arrow in and an arrow out, each struck through in red under the words
+  ENTRY and EXIT. He is in there too, because the rule he writes does not have an exception in it.
+- **Twenty-nine days ago he was the one banging on the glass.** August 22, 8:10 PM: "I am tired of living in this game,
+  let me out!" — the first time in this archive anybody tried to get *out* through the screen. Today he writes the rule
+  that nobody gets out.
+- **666 has been three different things in three days.** September 17, 4:46 PM (beat 733), it was the error code on the
+  notice that locked his own text box: "Lore is currently property of Pero LAI. Error Code: 666", "It is impossible to
+  get in now." September 18, 5:46 PM (beat 745), it was his name: "Pero LAI is called Binary Code: Bash Update 666."
+  Today it is a file with every game shut inside it — and "It is impossible to get in now" was only half the door.
+- **Two days ago the cell was for him.** September 18, 6:13 AM (beat 736): "Guess how to contain Pero LAI in a
+  containment prison cell? Answer: Just put him in a cell taller than 1 foot." That was a joke about a measurement.
+  This one has furniture: "You can't actually leave this place and can just sleep on a bed in your prison cell."
+- **"Life here is a game" is seventeen days old, and so is the bed.** September 3, 12:16 PM (beat 616): "Life here is a
+  game, a dream, a fake", in the same message as "Pero LAI always wants sleep. He is the sleeping character." Sleep was
+  his comfort then. This morning it is the only move left in the room.
+- **"In Classics, it is basically impossible to win" breaks the oldest power on the page.** Simon's June restart was
+  written with an escape clause: "He only loses if there is no way to win." The reset still works; there is just nothing
+  at the end of it now.
+- **The glitching starts by doing nothing.** "Now a small string was added, it did nothing, added another string,
+  nothing happened." Every corruption in this archive before it arrived at full size.
+- **And he named this wiki, by name.** "Lore contained in Gmail and Classics.wiki, those reach Classics, but are storage
+  and doesn't impact the game too much." The mail and the wiki are inside the sealed system; they reach in, and they
+  cannot push.
+- **"File" is a new naming register**, after `.EXE`, `.psc`, `000A`, `Portal-` and the leetspeak one. It is the only
+  thing in four months named `File <something>`.
+- **Screenshots 830 and 831 recaptured** — the five-row beat ladder is centred on the current beat, so adding one beat
+  restales the previous two.
+
 ## 2026-09-20 — PERO LAI ESSENCE (BEAT 769)
 
 Based on Toby's 2026-09-20 lore, **8:34 AM (Email 1478)**, third and closing block of his own typing. The "Canon confirmed"
