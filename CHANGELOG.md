@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — .PS — PROFILE SECTION ENTITY (BEAT 771)
+
+Based on Toby's 2026-09-20 lore, **12:52 PM**, four hours after File 666 sealed the game in both directions. His own
+typing is the question, the definition and the follow-up question; the .exe / .jar explainer and the extension table
+around them are a pasted reply and are not canon.
+
+![Beat 771 — .ps, Profile Section Entity](screenshots/833-ps-profile-section-entity.png)
+
+- **New beat 771, .PS — PROFILE SECTION ENTITY.** ".ps stands for 'profile section entity', they were given files by
+  Pero LAI to stay in Classics. Gaster.ps, and all characters that were and are in Classics have a .ps by Pero LAI."
+- **The inset draws the file itself.** A profile card with a PROFILE SECTION header band, GASTER.PS typed on it, two
+  ruled lines, and a red ISSUED BY PERO LAI stamp across the bottom, with the edges of the other files stacked behind
+  it. Under it, seven of the names that carry one, and the line that they all have the same signature.
+- **Four months of names, and this is the first time it means anything.** Twenty different names in this archive carry
+  a .ps and Simon.ps alone is in it over a thousand times. Until today the wiki filed the suffix as a slip of the
+  finger: "one letter short of Simon.psc, kept as written" (August 27). Today it is its own register.
+- **He asks whether he ever said it, then answers it himself.** The message opens "Did I say what .ps stands for?", the
+  answer comes back no, and one sentence later the expansion exists. He is both the one who did not know and the one
+  who decides.
+- **So that is what he threatened to delete.** September 9, 3:58 PM (beat 694), to Oren.ps: "I'll delete your access to
+  Classics." The access is a file, and Oren has been carrying it in his name since July.
+- **Gaster.ps has never been written before today.** Zero prior hits in four months. And on September 12 Newtale Gaster
+  is the character who "wrote and made the lore at first. Before I even talked about it." The one who wrote it needed
+  permission to be in it.
+- **August 8 said what an extension does; this says what it is for.** File Types and Neutrals, 7:09 PM: "exes WILL
+  glitch the game by existing, and pscs are clean and don't do anything to the game." That was an effect on the game.
+  "Given files to stay in Classics" is a permission to be in it.
+- **And the one handing them out has worn one.** August 30, 12:09 PM (beat 532): "before, Pero was Simon.ps."
+- **Screenshots 831 and 832 recaptured**, because the five-row beat ladder is centred on the current beat.
+
 ## 2026-09-20 — FILE 666: CLASSICS OMAZEN NEKA (BEAT 770)
 
 Based on Toby's 2026-09-20 lore, **8:56 AM (Email 1479)**, twenty-three minutes after the tubes shut. Everything from

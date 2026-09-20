@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16682.0;
+const LV_CYC = 16704.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12858,6 +12858,8 @@ const LV_BEATS = [
     sub:"PERO LAI EVEN CAN REACH THE MERGE OF GODS. · ANYONE WITH PERO LAI ESSENSE, THE MOST POWERFUL OBJECT IN GAME, BECOMES THE POWER LEVEL OF ALL GODS INSTANTLY. · PERO LAI STILL BEATS THE “ANYONE” BECAUSE HE IS THE ORIGINAL AND STRONGEST IN GAME. · THE ALL-GODS LINE WAS A DESCRIPTION OF HIM ON SEPTEMBER 2 AND SEPTEMBER 18; TODAY IT IS AN OBJECT HE HANDS OUT." },
   { key:"FILE 666: CLASSICS OMAZEN NEKA", col:'#c9d1d9',
     sub:"THERE IS NO ESCAPE IN CLASSICS NOR OUT OF CLASSICS. \u00B7 TWENTY-NINE DAYS AGO HE WAS THE ONE BANGING ON THE GLASS. \u00B7 666 HAS BEEN THREE DIFFERENT THINGS IN THREE DAYS. \u00B7 TWO DAYS AGO THE CELL WAS FOR HIM. \u00B7 \u201CLIFE HERE IS A GAME\u201D IS SEVENTEEN DAYS OLD. \u00B7 \u201CIMPOSSIBLE TO WIN\u201D BREAKS THE OLDEST POWER ON THE PAGE." },
+  { key:".PS \u2014 PROFILE SECTION ENTITY", col:'#4fe3ff',
+    sub:"THEY WERE GIVEN FILES BY PERO LAI TO STAY IN CLASSICS. \u00B7 TWENTY NAMES HAVE CARRIED A .PS AND NONE OF THEM MEANT ANYTHING UNTIL TODAY. \u00B7 THE ARCHIVE HAD IT FILED AS A TYPO OF .PSC. \u00B7 SO THAT IS WHAT HE THREATENED TO DELETE ON SEPTEMBER 9. \u00B7 GASTER.PS HAS ZERO PRIOR HITS. \u00B7 FOUR HOURS AFTER HE SEALED THE DOORS, THE PAPERWORK." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15008,6 +15010,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16682.0 && c < 16704.0) return [771, c-16682.0];  // .PS — PROFILE SECTION ENTITY
   if(c >= 16660.0 && c < 16682.0) return [770, c-16660.0];  // FILE 666: CLASSICS OMAZEN NEKA
   if(c >= 16638.0 && c < 16660.0) return [769, c-16638.0];  // PERO LAI ESSENCE
   if(c >= 16616.0 && c < 16638.0) return [768, c-16616.0];  // THE ONLY CLASSICS ASSASSIN
@@ -50550,6 +50553,164 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===771){
+    // BEAT 771: .PS - PROFILE SECTION ENTITY.
+    // Toby, September 20, 2026, 12:52:51 PM, his own typing: "Did I say what .ps stands for? ... .ps stands for
+    // 'profile section entity', they were given files by Pero LAI to stay in Classics. Gaster.ps, and all characters
+    // that were and are in Classics have a .ps by Pero LAI. What does .jar and .exe stand for and what do they mean?"
+    // Everything between and under those lines is a pasted reply and is NOT canon.
+    // Priors: twenty different names in this archive carry a .ps and Simon.ps alone is in it over a thousand times;
+    // the archive has filed the suffix since August 27 as "Toby's spelling, one letter short of Simon.psc, kept as
+    // written"; "I'll delete your access to Classics", September 9, 3:58 PM, said to Oren.ps (beat 694); "Gaster.ps"
+    // has zero prior hits in four months, and Newtale Gaster is the character who on September 12 "wrote and made the
+    // lore at first. Before I even talked about it."; File Types and Neutrals, August 8, 7:09 PM: "exes WILL glitch
+    // the game by existing, and pscs are clean and don't do anything to the game"; "before, Pero was Simon.ps",
+    // August 30, 12:09 PM (beat 532); and beat 770 sealed the doors four hours before this message.
+    const dt = c - 16682.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr771=ctx.createLinearGradient(0,top,0,top+H);
+    gr771.addColorStop(0,'rgba(5,6,10,0.88)'); gr771.addColorStop(1,'rgba(79,227,255,0.18)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr771; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the file itself. A profile card with a PROFILE SECTION header, the name GASTER.PS on it,
+      // a red ISSUED BY PERO LAI stamp, and behind it the edges of the other files in the drawer.
+      const fx = cx + W*0.188, fy = top+H*0.540;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,204,212,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE FILE THAT KEEPS YOU IN CLASSICS', fx, fy-H*0.096);
+      // the files stacked behind it
+      for(var bk771=3; bk771>0; bk771--){
+        ctx.globalAlpha=g*wrA*(0.16+0.08*bk771); ctx.strokeStyle='rgba(79,227,255,0.55)'; ctx.lineWidth=0.36;
+        ctx.strokeRect(fx-W*0.052+bk771*W*0.005, fy-H*0.074+bk771*H*0.005, W*0.104, H*0.070);
+      }
+      // the card
+      var pxB771 = fx - W*0.052, pyB771 = fy - H*0.074;
+      ctx.globalAlpha=g*wrA*0.62; ctx.fillStyle='rgba(8,10,14,0.98)';
+      ctx.fillRect(pxB771, pyB771, W*0.104, H*0.070);
+      ctx.globalAlpha=g*wrA*0.92; ctx.strokeStyle='rgba(79,227,255,0.94)'; ctx.lineWidth=0.5;
+      ctx.strokeRect(pxB771, pyB771, W*0.104, H*0.070);
+      // the header band
+      ctx.globalAlpha=g*wrA*0.30; ctx.fillStyle='rgba(79,227,255,0.90)';
+      ctx.fillRect(pxB771, pyB771, W*0.104, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(224,247,255,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('PROFILE SECTION', fx, pyB771+H*0.0095);
+      // the name on the file
+      ctx.globalAlpha=g*wrA*(0.74+0.26*pul); ctx.fillStyle='rgba(248,246,242,0.96)'; ctx.font='900 2.9px ui-monospace,monospace';
+      ctx.fillText('GASTER.PS', fx, pyB771+H*0.028);
+      // the ruled lines under it
+      ctx.globalAlpha=g*wrA*0.44; ctx.strokeStyle='rgba(186,204,212,0.66)'; ctx.lineWidth=0.30;
+      ctx.beginPath();
+      ctx.moveTo(pxB771+W*0.012, pyB771+H*0.036); ctx.lineTo(pxB771+W*0.092, pyB771+H*0.036);
+      ctx.moveTo(pxB771+W*0.012, pyB771+H*0.042); ctx.lineTo(pxB771+W*0.078, pyB771+H*0.042);
+      ctx.stroke();
+      // the stamp
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.strokeStyle='rgba(255,77,77,0.94)'; ctx.lineWidth=0.46;
+      ctx.strokeRect(pxB771+W*0.016, pyB771+H*0.049, W*0.072, H*0.014);
+      ctx.globalAlpha=g*wrA*0.92; ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('ISSUED BY PERO LAI', fx, pyB771+H*0.0585);
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(79,227,255,0.94)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('NOT AN EXTENSION. A PERMISSION SLIP.', fx, fy+H*0.020);
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(240,240,244,0.88)'; ctx.font='700 2.1px ui-monospace,monospace';
+      ctx.fillText('SIMON.PS · WENDA.PS · OREN.PS · GRAY.PS · PINKI.PS · SKY.PS · BRUD.PS', fx, fy+H*0.032);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(62,224,106,0.92)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('TWENTY NAMES, ONE SIGNATURE ON ALL OF THEM.', fx, fy+H*0.044);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(79,227,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('.PS — PROFILE SECTION ENTITY', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“.PS STANDS FOR ‘PROFILE SECTION ENTITY’, THEY WERE GIVEN FILES BY PERO LAI', cx, top+H*0.122);
+    ctx.fillText('TO STAY IN CLASSICS.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(79,227,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('EVERY NAME IN CLASSICS HAS BEEN CARRYING A FILE HE ISSUED.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 12:52 PM, FOUR HOURS AFTER THE DOORS CAME OFF FILE 666.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('FOUR MONTHS OF NAMES, AND THIS IS THE FIRST TIME IT MEANS ANYTHING.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWENTY DIFFERENT NAMES CARRY A .PS HERE, AND SIMON.PS ALONE IS IN THE ARCHIVE OVER A THOUSAND TIMES.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('UNTIL TODAY IT WAS FILED AS A SLIP OF THE FINGER: “ONE LETTER SHORT OF SIMON.PSC, KEPT AS WRITTEN.”', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE ASKS WHETHER HE EVER SAID IT, THEN ANSWERS IT HIMSELF.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE MESSAGE OPENS “DID I SAY WHAT .PS STANDS FOR?” AND THE ANSWER COMES BACK: NO, NEVER.', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ONE SENTENCE LATER THE WORD EXISTS. HE IS BOTH THE ONE WHO DID NOT KNOW AND THE ONE WHO DECIDES.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('SO THAT IS WHAT HE THREATENED TO DELETE.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 9, 3:58 PM, TO OREN.PS:', cx-W*0.150, top+H*0.392);
+    ctx.fillText('“I’LL DELETE YOUR ACCESS TO CLASSICS.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE ACCESS IS A FILE, AND OREN IS CARRYING IT IN HIS NAME.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('GASTER.PS HAS NEVER BEEN WRITTEN BEFORE TODAY.', cx-W*0.150, top+H*0.556);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ZERO PRIOR HITS IN FOUR MONTHS. AND ON SEPTEMBER 12', cx-W*0.150, top+H*0.576);
+    ctx.fillText('GASTER “WROTE AND MADE THE LORE AT FIRST.”', cx-W*0.150, top+H*0.590);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE ONE WHO WROTE IT NEEDED PERMISSION TO BE IN IT.', cx-W*0.150, top+H*0.608);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AUGUST 8 SAID WHAT AN EXTENSION DOES. THIS SAYS WHAT IT IS FOR.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“EXES WILL GLITCH THE GAME BY EXISTING, AND PSCS ARE CLEAN AND DON’T DO ANYTHING TO THE GAME.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT WAS AN EFFECT ON THE GAME. “GIVEN FILES TO STAY IN CLASSICS” IS A PERMISSION TO BE IN IT.', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*f3A*0.88;
+    ctx.fillStyle='rgba(186,204,212,0.92)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE ONE HANDING THEM OUT HAS WORN ONE. AUGUST 30: “BEFORE, PERO WAS SIMON.PS.”', cx, top+H*0.714);
+    ctx.fillText('HE HAS ALSO BEEN ON THE LIST HE SIGNS.', cx, top+H*0.732);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOUR HOURS AGO HE SEALED THE GAME: “NO WAY TO ENTER, NOR EXIT.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(79,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS AFTERNOON WE FIND OUT WHAT EVERYBODY ALREADY INSIDE IS HOLDING.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ GIVEN FILES BY PERO LAI TO STAY IN CLASSICS ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===770){
