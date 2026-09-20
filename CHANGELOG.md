@@ -4,6 +4,100 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — DEFINE 'WARE OFF' (BEAT 778)
+
+Based on Toby's 2026-09-20 lore, **4:59 PM**, ten minutes after the chocolate. His own typing is the opening exchange
+and the question after it; everything from "It's not too much text. I can write the whole scene as a full
+conversation" onward is a pasted reply and is not canon — the entire long Gaster / Pero LAI script under it is the
+machine's writing, including "I can edit biology", "YOU MADE THE WORD" and the speaks-in-hands joke. None of that is
+built. **ware** is his spelling, kept.
+
+> Gaster: "You have zombie effects from the uranuim." Pero LAI: "That was when I was 17, the effects must have worn
+> off now." Gaster: "THEY WON'T 'WARE OFF'!" Pero LAI: "Define 'Ware off'. 😌"
+
+- new beat 778 at `lvSeg` 16836.0-16858.0, `LV_CYC` 16858.0, `LV_BEATS` length 779
+- inset: the one chart row in dispute — ONSET / AGE 17, SOLE CARRIER / YES, ON FILE 2:07 PM / FOREVER NOW, and under
+  them the patient's own answer, MUST HAVE WORN OFF, struck through in red
+- panels: 2:07 PM today, where he wrote the permanence himself — "a sickness only Pero LAI can have, now he has it
+  forever now" — against the character nine hours later saying it expired; 2:48 PM, "he doesn't know that he actually
+  has urinite", so the afternoon runs not knowing, being told, disagreeing; September 18's "when I was 17 … I didn't
+  know about respawn yet", the same age now used as an alibi; and 2:07 PM's "(YOUR-IN-ITE-EE), and he made the word
+  and how it is pronounced", against a request to define an ordinary English phrase
+- new capture scene `wareoff778`
+
+![Beat 778 — Define 'Ware Off'](screenshots/840-define-ware-off.png)
+
+## 2026-09-20 — GUESS YA LOVE SUGAR (BEAT 777)
+
+Based on Toby's 2026-09-20 lore, **4:49 PM**, the closing block of his own typing. Everything from "That actually
+fits Pero LAI perfectly" onward is a pasted reply and is not canon.
+
+> "Pero LAI eats the no-sugar chocolate and says "Tell me if you want chocolate.", Gaster says "Not the same
+> chocolate!", Pero LAI says "Guess ya love sugar.". Pero LAI isn't joking he ACTUALLY thought that."
+
+- new beat 777 at `lvSeg` 16814.0-16836.0
+- inset: the exchange itself, three lines in speaker order, with NOT A JOKE. HE ACTUALLY THOUGHT THAT under it
+- panels: September 14's Chocolate Karma, "Pero LAI takes the sugar out and then he recovers" — the no-sugar bar is
+  his own invention, so he cannot imagine anybody wanting the other kind; September 18's "I now, want the pie, the
+  pop tarts, the 0 sugar chocolate", four lines before "N0 0NE SURVIVED"; June 18's golden rules, where Simon "thinks
+  all brown things are chocolate", so one of them cannot tell what chocolate is and the other cannot tell what
+  somebody meant by it; and Winter Classic Simon holding apples and chocolate as stabilizers, phase spikes when they
+  melt — the thing they are arguing over is the thing that keeps people here in one piece
+- new capture scene `sugar777`
+
+![Beat 777 — Guess Ya Love Sugar](screenshots/839-guess-ya-love-sugar.png)
+
+## 2026-09-20 — HE BLOCKED FLOWER (BEAT 776)
+
+Based on Toby's 2026-09-20 lore, **4:49 PM**, the second half of the same block as beat 775. The "Exactly — within
+the Classics/Newtale power scale" breakdown under it is a pasted reply and is not canon, including its four-step
+bite explainer. **uranuim** and **titainuim** are his spellings, kept.
+
+> "Neka was with Flower at the time when they were in the toxic waste factory, Pero warned Flower that the uranuim is
+> hot, and he blocked Flower and Pero LAI touched the glowing titainuim and the glowing uranuim and both disappeared.
+> Flower is safe, Pero became Pero LAI and godly. Pero LAI now defeated Flower and Vicinus, leaving Newtale Gaster as
+> Newtale Gaster, now currently at this time, Gaster is holding an experiment deeper on Pero LAI."
+
+- new beat 776 at `lvSeg` 16792.0-16814.0
+- inset: one being, three costumes — FLOWER / DEFEATED, VICINUS / DEFEATED, DR. GASTER 404 / ALREADY DIED ONCE, and
+  NEWTALE GASTER / HOLDING THE EXPERIMENT
+- panels: September 18's "I blocked Flower from touching it, I touched it, and the compound was hot", which had no
+  room around it — tonight it has an address and a warning spoken before the hand moved; 2:07 PM today, where one
+  rock disappeared and tonight the glowing titainuim goes too; September 18's "when I was just a 5 year old child,
+  Gaster became a flower, we called him 'Flower'", so the person he shielded is the person who raised him; August
+  6's "Dr. Gaster was transformed into a flower assidentally when making his first experiment as a teen" — two boys,
+  two accidents, two permanent bodies, and one of them is holding the clipboard; and August 21's "Since Flower is
+  Vicinus", so he beat one person twice and counted it twice
+- new capture scene `blockedflower776`
+
+![Beat 776 — He Blocked Flower](screenshots/838-he-blocked-flower.png)
+
+## 2026-09-20 — GOJO IS LIKE ONE OF THE WEAKEST (BEAT 775)
+
+Based on Toby's 2026-09-20 lore, **4:49 PM**, after a page of somebody else's move list. His own typing is the power
+scale block; the Gojo / Limitless explainers above it and the "Exactly — within the Classics/Newtale power scale"
+breakdown under it are a pasted reply and are not canon. **telekentics**, **probubly**, **multation** and
+**anomally** are his spellings, kept.
+
+> "Gojo is like one of the weakest then. Gray can beat him and Gray only has like 2 main abilities (Real Game Erase +
+> Anything Manipulation). … Oren.ps has strongest telekentics in anime, noclip, fly, and probubly more (secret
+> abilities he just didn't use yet). Mr. Black has basically every power. … Pero LAI is a normal anime man with
+> urinite multation and sickness, THAT is what made him a god and anomally and completely abstracted the world down."
+
+- new beat 775 at `lvSeg` 16770.0-16792.0
+- inset: the ladder as he wrote it at 4:49 — PERO LAI, MR. BLACK, WENDA.PS, GRAY — with GOJO struck through at the
+  bottom and marked ONE OF THE WEAKEST
+- panels: April 29's "Simon beat Chara, Gojo and Zeno" and May 22's Karuto forget-battle, then June 30's "Luigi Green
+  is like Sukuna, ToddLLM like Gojo" — he was never a fighter here, he was the shape of the top of the ladder; the
+  Ability Register of 8:33 this morning, where Gray "can stop time and can erase games" and tonight it is Real Game
+  Erase + Anything Manipulation, both words new; Oren.ps credited with "secret abilities he just didn't use yet",
+  which is September 5's "You don't even know all what I am captable of yet" pointed at somebody else; and the flip
+  that matters — at 8:33 "Pero LAI doesn't have a normal form, he changes", at 4:49 "Pero LAI is a normal anime man",
+  so he joins the rule he was the only exception to and the thing on top of him is an illness rather than a form
+- new capture scene `gojo775`; screenshots 835 and 836 recaptured for the shifted ladder
+
+![Beat 775 — Gojo Is Like One Of The Weakest](screenshots/837-gojo-is-like-one-of-the-weakest.png)
+
 ## 2026-09-20 — HE DOESN'T KNOW HE HAS IT (BEAT 774)
 
 Based on Toby's 2026-09-20 lore, **2:48 PM**, eighteen minutes after Urinite gave him everything and the third message

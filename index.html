@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16770.0;
+const LV_CYC = 16858.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12866,6 +12866,14 @@ const LV_BEATS = [
     sub:"URINITE ALSO GAVE PERO LAI MOST OF HIS POWERS AND HIS FORMS AND LIKE EVERYTHING AND CURSES AND EVOLVIONS. \u00B7 HE ALSO NOW HAS THE POWER TO TURN ANYONE INTO AN OMAZEN. \u00B7 BUT IT GIVES PERO LAI ZOMBIE-LIKE EFFECTS \u00D7 INFINITY. \u00B7 ON SEPTEMBER 18 THE ORIGIN HAD TWO HALVES; THE SECOND HALF JUST TOOK ALMOST ALL OF IT. \u00B7 OMAZEN WAS ONE CHARACTER\u2019S TIER ON JULY 30." },
   { key:"HE DOESN\u2019T KNOW HE HAS IT", col:'#b388ff',
     sub:"PERO LAI NEKA OMAZEN DOESN\u2019T KNOW THAT HE ACTUALLY HAS URINITE. SO, YEAH. \u00B7 EIGHTEEN MINUTES AFTER IT GAVE HIM EVERYTHING, HE HAS NEVER HEARD OF IT. \u00B7 THIS MORNING HE SAID HE HAD LEARNED EVERYTHING OF THIS GAME. \u00B7 HE FOUND THE ROCK ON SEPTEMBER 18; HE DID NOT FIND WHAT IT LEFT BEHIND. \u00B7 CR3@T3 @N 1M@GE 0F NEKA OMAZEN." },
+  { key:"GOJO IS LIKE ONE OF THE WEAKEST", col:'#4fe3ff',
+    sub:"GOJO IS LIKE ONE OF THE WEAKEST THEN. GRAY CAN BEAT HIM AND GRAY ONLY HAS LIKE 2 MAIN ABILITIES (REAL GAME ERASE + ANYTHING MANIPULATION). \u00B7 THIS NAME HAS BEEN THE SHAPE OF THE TOP OF THE LADDER SINCE JUNE 30. \u00B7 THE SAME SIX NAMES WERE WRITTEN OUT AT 8:33 THIS MORNING WITH DIFFERENT POWERS. \u00B7 OREN.PS HAS \u201CSECRET ABILITIES HE JUST DIDN\u2019T USE YET\u201D. \u00B7 PERO LAI IS A NORMAL ANIME MAN WITH URINITE MULTATION AND SICKNESS." },
+  { key:"HE BLOCKED FLOWER", col:'#3ee06a',
+    sub:"PERO WARNED FLOWER THAT THE URANUIM IS HOT, AND HE BLOCKED FLOWER. \u00B7 FLOWER IS SAFE, PERO BECAME PERO LAI AND GODLY. \u00B7 THE TOXIC WASTE FACTORY IS THE FIRST ADDRESS THIS ACCIDENT HAS EVER HAD. \u00B7 BOTH THE GLOWING TITAINUIM AND THE GLOWING URANUIM DISAPPEARED. \u00B7 HE DEFEATED FLOWER AND VICINUS, AND THEY ARE THE SAME BEING. \u00B7 GASTER IS HOLDING AN EXPERIMENT DEEPER ON PERO LAI." },
+  { key:"GUESS YA LOVE SUGAR", col:'#ffd43b',
+    sub:"PERO LAI EATS THE NO-SUGAR CHOCOLATE: \u201CTELL ME IF YOU WANT CHOCOLATE.\u201D \u00B7 GASTER: \u201CNOT THE SAME CHOCOLATE!\u201D \u00B7 PERO LAI: \u201CGUESS YA LOVE SUGAR.\u201D \u00B7 PERO LAI ISN\u2019T JOKING HE ACTUALLY THOUGHT THAT. \u00B7 HE TOOK THE SUGAR OUT HIMSELF ON SEPTEMBER 14 AND IT WAS MEDICINE. \u00B7 SIMON HAS THOUGHT ALL BROWN THINGS ARE CHOCOLATE SINCE JUNE." },
+  { key:"DEFINE \u2018WARE OFF\u2019", col:'#b388ff',
+    sub:"THAT WAS WHEN I WAS 17, THE EFFECTS MUST HAVE WORN OFF NOW. \u00B7 THEY WON\u2019T \u2018WARE OFF\u2019! \u00B7 DEFINE \u2018WARE OFF\u2019. \u00B7 AT 2:07 HE WROTE \u201CNOW HE HAS IT FOREVER NOW\u201D; AT 4:59 THE CHARACTER SAYS IT EXPIRED. \u00B7 TWO HOURS AGO HE DID NOT KNOW HE HAD IT AT ALL. \u00B7 HE INVENTED THE WORD AND ITS PRONUNCIATION, THEN ASKED FOR A DEFINITION OF PLAIN ENGLISH." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15016,6 +15024,10 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16836.0 && c < 16858.0) return [778, c-16836.0];  // DEFINE ‘WARE OFF’
+  if(c >= 16814.0 && c < 16836.0) return [777, c-16814.0];  // GUESS YA LOVE SUGAR
+  if(c >= 16792.0 && c < 16814.0) return [776, c-16792.0];  // HE BLOCKED FLOWER
+  if(c >= 16770.0 && c < 16792.0) return [775, c-16770.0];  // GOJO IS LIKE ONE OF THE WEAKEST
   if(c >= 16748.0 && c < 16770.0) return [774, c-16748.0];  // HE DOESN’T KNOW HE HAS IT
   if(c >= 16726.0 && c < 16748.0) return [773, c-16726.0];  // IT GAVE HIM EVERYTHING
   if(c >= 16704.0 && c < 16726.0) return [772, c-16704.0];  // URINITE
@@ -50562,6 +50574,604 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===778){
+    // BEAT 778: DEFINE 'WARE OFF'.
+    // Toby, September 20, 2026, 4:59:53 PM, his own typing, the whole opening: "Gaster then says "You have zombie
+    // effects from the uranuim.", Pero LAI says "That was when I was 17, the effects must have worn off now.",
+    // Gaster says "THEY WON'T 'WARE OFF'!", Pero LAI says "Define 'Ware off'. :)". Now can you write down the whole
+    // conversation or is it too much text?"
+    // Everything from "It's not too much text. I can write the whole scene as a full conversation" onward is a
+    // pasted reply and is NOT canon - the entire long Gaster/Pero LAI script under it is the machine's writing, not
+    // his, including "I can edit biology", "YOU MADE THE WORD", the green-zombie restatement and the speaks-in-hands
+    // joke. None of it is built. WARE is his spelling, kept.
+    // Priors: URINITE, September 20, 2:07 PM (beat 772) - "a sickness only Pero LAI can have, now he has it forever
+    // now", and "(YOUR-IN-ITE-EE), and he made the word and how it is pronounced"; HE DOESN'T KNOW HE HAS IT,
+    // 2:48 PM (beat 774) - "Pero LAI Neka Omazen doesn't know that he actually has urinite"; ALPHERITANUIM URANUIM,
+    // September 18, 4:10 PM (beat 741) - "when I was 17 ... I didn't know about respawn yet"; August 3, 11:57 AM -
+    // "Pero LAI dies at 28 and everybody knows it"; September 5, 1:34 PM - "Pero is infinity years + Always been
+    // there."
+    const dt = c - 16836.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(6,5,10,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr778=ctx.createLinearGradient(0,top,0,top+H);
+    gr778.addColorStop(0,'rgba(7,6,11,0.88)'); gr778.addColorStop(1,'rgba(179,136,255,0.17)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr778; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the chart row they are arguing about, patient's answer against the one on file.
+      const kx = cx + W*0.186, ky = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(206,198,224,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE ONE ROW IN DISPUTE', kx, ky-H*0.098);
+      var kpx778 = kx - W*0.056, kpy778 = ky - H*0.080;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(9,8,15,0.98)';
+      ctx.fillRect(kpx778, kpy778, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(179,136,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(kpx778, kpy778, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(179,136,255,0.90)';
+      ctx.fillRect(kpx778, kpy778, W*0.112, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(234,224,255,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('URINITE · DURATION', kx, kpy778+H*0.0095);
+      var rows778 = [['ONSET','AGE 17'],['SOLE CARRIER','YES'],['ON FILE, 2:07 PM','FOREVER NOW']];
+      for(var r778=0; r778<rows778.length; r778++){
+        var ry778 = kpy778 + H*0.026 + r778*H*0.0115;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,238,246,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows778[r778][0], kpx778+W*0.010, ry778);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(62,224,106,0.90)'; ctx.font='700 1.8px ui-monospace,monospace';
+        ctx.fillText(rows778[r778][1], kpx778+W*0.102, ry778);
+      }
+      ctx.textAlign='left';
+      var ly778 = kpy778 + H*0.0700;
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 1.9px ui-monospace,monospace';
+      ctx.fillText('PATIENT SAYS', kpx778+W*0.010, ly778);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 1.8px ui-monospace,monospace';
+      ctx.fillText('MUST HAVE WORN OFF', kpx778+W*0.102, ly778);
+      ctx.globalAlpha=g*wrA*0.62; ctx.strokeStyle='rgba(255,77,77,0.80)'; ctx.lineWidth=0.30;
+      ctx.beginPath(); ctx.moveTo(kpx778+W*0.008, ly778-H*0.0025); ctx.lineTo(kpx778+W*0.104, ly778-H*0.0025); ctx.stroke();
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('THE SAME AUTHOR WROTE BOTH ROWS, NINE HOURS APART.', kx, ky+H*0.014);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(228,224,236,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('HE WROTE THE RULE, THEN WROTE THE MAN WHO WILL NOT TAKE IT.', kx, ky+H*0.026);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(179,136,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('DEFINE ‘WARE OFF’', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“THAT WAS WHEN I WAS 17, THE EFFECTS MUST HAVE WORN OFF NOW.” · “THEY WON’T ‘WARE OFF’!”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('SOMEBODY FINALLY TELLS HIM, AND HE ARGUES WITH THE DIAGNOSIS.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,224,236,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 4:59 PM, TEN MINUTES AFTER THE CHOCOLATE.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THIS AFTERNOON HE WROTE THE PERMANENCE HIMSELF.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('2:07 PM: “A SICKNESS ONLY PERO LAI CAN HAVE, NOW HE HAS IT FOREVER NOW.”', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NINE HOURS LATER THE CHARACTER SAYS IT MUST HAVE WORN OFF. THE AUTHOR IS ARGUING WITH HIS OWN RULE.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND TWO HOURS AGO HE DID NOT KNOW HE HAD IT AT ALL.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('2:48 PM: “PERO LAI NEKA OMAZEN DOESN’T KNOW THAT HE ACTUALLY HAS URINITE.”', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOT KNOWING, THEN BEING TOLD, THEN DISAGREEING. THREE STEPS IN ONE AFTERNOON, AND HE LOSES GROUND EACH TIME.', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('SEVENTEEN IS THE ONLY AGE IN THIS', cx-W*0.152, top+H*0.372);
+    ctx.fillText('ARCHIVE HE ADMITS TO NOT KNOWING AT.', cx-W*0.152, top+H*0.388);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “WHEN I WAS 17, WE FOUND A', cx-W*0.152, top+H*0.408);
+    ctx.fillText('ALPHERITANUIM URANUIM … I DIDN’T KNOW', cx-W*0.152, top+H*0.422);
+    ctx.fillText('ABOUT RESPAWN YET.”', cx-W*0.152, top+H*0.436);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT THE SAME AGE IS USED AS AN ALIBI:', cx-W*0.152, top+H*0.454);
+    ctx.fillText('IT WAS LONG AGO, SO IT CANNOT STILL COUNT.', cx-W*0.152, top+H*0.468);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HE NAMED THE DISEASE AND SAID HOW', cx-W*0.152, top+H*0.582);
+    ctx.fillText('TO SAY IT, THIS AFTERNOON.', cx-W*0.152, top+H*0.598);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('2:07 PM: “(YOUR-IN-ITE-EE)”, AND HE MADE THE WORD', cx-W*0.152, top+H*0.618);
+    ctx.fillText('AND HOW IT IS PRONOUNCED.', cx-W*0.152, top+H*0.632);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SO HE INVENTED A WORD, SPELLED IT, TAUGHT THE', cx-W*0.152, top+H*0.650);
+    ctx.fillText('PRONUNCIATION — THEN ASKED FOR A DEFINITION', cx-W*0.152, top+H*0.664);
+    ctx.fillText('OF AN ORDINARY ENGLISH PHRASE.', cx-W*0.152, top+H*0.678);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('WARE IS HIS SPELLING AND IT IS KEPT, LIKE URINITE, EVOLVIONS, ANOMALLY, CAPTABLE AND PERMINENT.', cx, top+H*0.812);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(179,136,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE MOST POWERFUL BEING IN FICTION ASKS THE SCIENTIST TO DEFINE HIS TERMS, AND MEANS IT.', cx, top+H*0.830);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ DEFINE ‘WARE OFF’ ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===777){
+    // BEAT 777: GUESS YA LOVE SUGAR.
+    // Toby, September 20, 2026, 4:49:42 PM, his own typing, the closing block: "Then what you said happened. Pero LAI
+    // eats the no-sugar chocolate and says "Tell me if you want chocolate.", Gaster says "Not the same chocolate!",
+    // Pero LAI says "Guess ya love sugar.". Pero LAI isn't joking he ACTUALLY thought that."
+    // Everything from "That actually fits Pero LAI perfectly" onward is a pasted reply and is NOT canon.
+    // Priors: CHOCOLATE KARMA, September 14, 6:46 PM (beat 717) - "Pero LAI made the Chocolate Karma. Pero LAI takes
+    // the sugar out and then he recovers, it doesn't give him more HP though."; ENTITY CONSERVASHIUM
+    // RECTORINATERUIM, September 18, 5:46 PM (beat 749) - "I now, want the pie, the pop tarts, the 0 sugar
+    // chocolate."; June 18, Email 538, the golden rules - Simon "thinks all brown things are chocolate"; Winter
+    // Classic Simon "holds apples and chocolate as stabilizers", and when they melt it is phase spikes and loss of
+    // control; June 26, Email 590 - Storyshifted Clara carries a cross made of chocolate.
+    const dt = c - 16814.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(10,7,3,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr777=ctx.createLinearGradient(0,top,0,top+H);
+    gr777.addColorStop(0,'rgba(11,8,4,0.88)'); gr777.addColorStop(1,'rgba(255,212,59,0.16)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr777; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the exchange itself, three lines, with the ruling underneath it.
+      const kx = cx + W*0.186, ky = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(222,212,190,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE WHOLE EXCHANGE', kx, ky-H*0.098);
+      var kpx777 = kx - W*0.056, kpy777 = ky - H*0.080;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(12,9,5,0.98)';
+      ctx.fillRect(kpx777, kpy777, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(255,212,59,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(kpx777, kpy777, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(255,212,59,0.90)';
+      ctx.fillRect(kpx777, kpy777, W*0.112, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(250,242,226,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('THE NO-SUGAR CHOCOLATE', kx, kpy777+H*0.0095);
+      var lines777 = [
+        ['PERO LAI','“TELL ME IF YOU WANT CHOCOLATE.”','rgba(255,212,59,0.92)'],
+        ['GASTER','“NOT THE SAME CHOCOLATE!”','rgba(79,227,255,0.92)'],
+        ['PERO LAI','“GUESS YA LOVE SUGAR.”','rgba(255,212,59,0.92)']
+      ];
+      for(var q777=0; q777<lines777.length; q777++){
+        var qy777 = kpy777 + H*0.026 + q777*H*0.0135;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle=lines777[q777][2]; ctx.font='900 1.7px ui-monospace,monospace';
+        ctx.fillText(lines777[q777][0], kpx777+W*0.008, qy777);
+        ctx.globalAlpha=g*wrA*0.88; ctx.fillStyle='rgba(244,240,232,0.94)'; ctx.font='700 1.8px ui-monospace,monospace';
+        ctx.fillText(lines777[q777][1], kpx777+W*0.008, qy777+H*0.0058);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('NOT A JOKE. HE ACTUALLY THOUGHT THAT.', kx, kpy777+H*0.0740);
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('FOUR MONTHS OF RULINGS ON WHAT HE CAN DO, AND THIS IS THE FIRST ON WHAT HE MEANT.', kx, ky+H*0.014);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(238,232,220,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('THE RULING IS THAT THERE WAS NOTHING BEHIND IT.', kx, ky+H*0.026);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,212,59,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('GUESS YA LOVE SUGAR', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI ISN’T JOKING HE ACTUALLY THOUGHT THAT.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('GASTER SAYS IT IS THE WRONG CHOCOLATE. HE HEARS A CONFESSION ABOUT SUGAR.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(234,228,216,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 4:49 PM, IN THE MIDDLE OF AN EXPERIMENT ABOUT A DISEASE.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE TOOK THE SUGAR OUT HIMSELF, SIX DAYS AGO, AND IT WAS MEDICINE.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 14: “PERO LAI MADE THE CHOCOLATE KARMA. PERO LAI TAKES THE SUGAR OUT AND THEN HE RECOVERS.”', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE NO-SUGAR BAR IS HIS OWN INVENTION, SO HE CANNOT IMAGINE ANYBODY WANTING THE OTHER KIND.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,77,109,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND HE ASKED FOR IT BY NAME TWO DAYS AGO, IN THE MIDDLE OF ENDING THE WORLD.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “I NOW, WANT THE PIE, THE POP TARTS, THE 0 SUGAR CHOCOLATE.” THEN: “N0 0NE SURVIVED.”', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SNACK ORDER IS HOW YOU KNOW IT IS HIM. TONIGHT IT IS HOW YOU KNOW HE IS NOT LISTENING.', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('SOMEBODY ELSE HERE HAS BEEN WRONG', cx-W*0.152, top+H*0.372);
+    ctx.fillText('ABOUT CHOCOLATE SINCE JUNE.', cx-W*0.152, top+H*0.388);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JUNE 18, THE GOLDEN RULES: SIMON “THINKS ALL', cx-W*0.152, top+H*0.408);
+    ctx.fillText('BROWN THINGS ARE CHOCOLATE.”', cx-W*0.152, top+H*0.422);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('ONE OF THEM CANNOT TELL WHAT CHOCOLATE IS.', cx-W*0.152, top+H*0.440);
+    ctx.fillText('THE OTHER CANNOT TELL WHAT SOMEBODY MEANT BY IT.', cx-W*0.152, top+H*0.454);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('CHOCOLATE IS A STABILIZER IN THIS GAME,', cx-W*0.152, top+H*0.582);
+    ctx.fillText('NOT A SNACK.', cx-W*0.152, top+H*0.598);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('WINTER CLASSIC SIMON “HOLDS APPLES AND CHOCOLATE', cx-W*0.152, top+H*0.618);
+    ctx.fillText('AS STABILIZERS.” WHEN THEY MELT: PHASE SPIKES,', cx-W*0.152, top+H*0.632);
+    ctx.fillText('PANIC, LOSS OF CONTROL.', cx-W*0.152, top+H*0.646);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SO THE THING THEY ARE ARGUING OVER IS THE THING', cx-W*0.152, top+H*0.664);
+    ctx.fillText('THAT KEEPS PEOPLE HERE IN ONE PIECE.', cx-W*0.152, top+H*0.678);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(246,242,234,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST THING IN THE GAME IS SITTING IN A LAB BEING TOLD HE HAS A DISEASE,', cx, top+H*0.812);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE ONLY THING HE TAKES FROM THE CONVERSATION IS THAT GASTER MUST LIKE SUGAR.', cx, top+H*0.830);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ GUESS YA LOVE SUGAR ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===776){
+    // BEAT 776: HE BLOCKED FLOWER.
+    // Toby, September 20, 2026, 4:49:42 PM, his own typing, the same block as beat 775, its second half: "Neka was
+    // with Flower at the time when they were in the toxic waste factory, Pero warned Flower that the uranuim is hot,
+    // and he blocked Flower and Pero LAI touched the glowing titainuim and the glowing uranuim and both disappeared.
+    // Flower is safe, Pero became Pero LAI and godly. Pero LAI now defeated Flower and Vicinus, leaving Newtale
+    // Gaster as Newtale Gaster, now currently at this time, Gaster is holding an experiment deeper on Pero LAI."
+    // The "Exactly - within the Classics/Newtale power scale" breakdown under it is a pasted reply and is NOT canon,
+    // including its four-step bite explainer. uranuim and titainuim are his spellings, kept.
+    // Priors: ALPHERITANUIM URANUIM, September 18, 4:10 PM (beat 741) - "when I was 17, we found a alpheritanuim
+    // uranuim, a glowing titainuim sphere with uranuim sticking up it. I blocked Flower from touching it, I touched
+    // it, and the compound was hot, Flower nearly burnt standing next to it, I didn't know about respawn yet.";
+    // URINITE, September 20, 2:07 PM (beat 772) - "he touched the only uranuim of it's type, then the rock
+    // disappeared", one rock, not two; WE CALLED HIM 'FLOWER', September 18 (beat 740) - "When I was just a 5 year
+    // old child, Gaster became a flower, we called him 'Flower'"; August 6, Email 907 - Flower is Dr. Gaster, and
+    // "Dr. Gaster was transformed into a flower assidentally when making his first experiment as a teen"; August 21,
+    // Email 1082 - "Since Flower is Vicinus", the ink dragon suit worn by Flower/Gaster; July 14 - toxic waste is
+    // made in a laboratory by Gray, the only other time the words appear here.
+    const dt = c - 16792.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,9,6,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr776=ctx.createLinearGradient(0,top,0,top+H);
+    gr776.addColorStop(0,'rgba(5,10,7,0.88)'); gr776.addColorStop(1,'rgba(62,224,106,0.16)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr776; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: one being, three costumes, and only the third one is still on its feet.
+      const kx = cx + W*0.186, ky = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(200,222,206,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('WHO IS LEFT STANDING', kx, ky-H*0.098);
+      var kpx776 = kx - W*0.056, kpy776 = ky - H*0.080;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,12,8,0.98)';
+      ctx.fillRect(kpx776, kpy776, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(62,224,106,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(kpx776, kpy776, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(62,224,106,0.90)';
+      ctx.fillRect(kpx776, kpy776, W*0.112, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(226,246,232,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('ONE BEING · THREE COSTUMES', kx, kpy776+H*0.0095);
+      var rows776 = [['FLOWER','DEFEATED'],['VICINUS','DEFEATED'],['DR. GASTER 404','ALREADY DIED ONCE']];
+      for(var r776=0; r776<rows776.length; r776++){
+        var ry776 = kpy776 + H*0.026 + r776*H*0.0115;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,248,242,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows776[r776][0], kpx776+W*0.010, ry776);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(255,77,77,0.90)'; ctx.font='700 1.8px ui-monospace,monospace';
+        ctx.fillText(rows776[r776][1], kpx776+W*0.102, ry776);
+      }
+      ctx.textAlign='left';
+      var ly776 = kpy776 + H*0.0700;
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('NEWTALE GASTER', kpx776+W*0.010, ly776);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(62,224,106,0.94)'; ctx.font='900 1.8px ui-monospace,monospace';
+      ctx.fillText('HOLDING THE EXPERIMENT', kpx776+W*0.102, ly776);
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('THE MAN HE PUT HIS BODY IN FRONT OF IS THE MAN RUNNING THE LAB.', kx, ky+H*0.014);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(224,240,228,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('HE BEAT THE SAME PERSON TWICE AND THE THIRD ONE IS TAKING NOTES.', kx, ky+H*0.026);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(62,224,106,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HE BLOCKED FLOWER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“PERO WARNED FLOWER THAT THE URANUIM IS HOT, AND HE BLOCKED FLOWER.” · “FLOWER IS SAFE.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,212,59,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE ORIGIN GETS AN ADDRESS, A WARNING SPOKEN OUT LOUD, AND SOMEBODY WHO WALKED AWAY FINE.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(226,236,228,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 4:49 PM, THE FOURTH TELLING OF THIS ACCIDENT IN THREE DAYS.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO THE SAME MOMENT HAD NO ROOM AROUND IT.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “I BLOCKED FLOWER FROM TOUCHING IT, I TOUCHED IT, AND THE COMPOUND WAS HOT.”', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT IT IS A TOXIC WASTE FACTORY, AND HE SPOKE FIRST: HE TOLD FLOWER IT WAS HOT BEFORE HE MOVED.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND BOTH HALVES OF THE ROCK WENT, NOT ONE.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AT 2:07 THIS AFTERNOON IT WAS ONE: “HE TOUCHED THE ONLY URANUIM OF IT’S TYPE, THEN THE ROCK DISAPPEARED.”', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOW THE GLOWING TITAINUIM GOES TOO. THE SPHERE AND THE THING STICKING OUT OF IT, BOTH GONE.', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('FLOWER IS GASTER, AND HE HAS BEEN', cx-W*0.152, top+H*0.372);
+    ctx.fillText('SINCE AUGUST 6.', cx-W*0.152, top+H*0.388);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “WHEN I WAS JUST A 5 YEAR OLD CHILD,', cx-W*0.152, top+H*0.408);
+    ctx.fillText('GASTER BECAME A FLOWER, WE CALLED HIM ‘FLOWER’.”', cx-W*0.152, top+H*0.422);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SO THE PERSON HE SHIELDED AT SEVENTEEN IS THE', cx-W*0.152, top+H*0.440);
+    ctx.fillText('PERSON WHO RAISED HIM, IN THE SHAPE OF A FLOWER.', cx-W*0.152, top+H*0.454);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('AND GASTER’S OWN BODY WAS CHANGED', cx-W*0.152, top+H*0.582);
+    ctx.fillText('BY HIS OWN TEENAGE EXPERIMENT.', cx-W*0.152, top+H*0.598);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 6: “DR. GASTER WAS TRANSFORMED INTO A FLOWER', cx-W*0.152, top+H*0.618);
+    ctx.fillText('ASSIDENTALLY WHEN MAKING HIS FIRST EXPERIMENT AS A TEEN.”', cx-W*0.152, top+H*0.632);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TWO BOYS, TWO ACCIDENTS, TWO PERMANENT BODIES.', cx-W*0.152, top+H*0.650);
+    ctx.fillText('ONE OF THEM IS NOW HOLDING THE CLIPBOARD.', cx-W*0.152, top+H*0.664);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI NOW DEFEATED FLOWER AND VICINUS, LEAVING NEWTALE GASTER AS NEWTALE GASTER.”', cx, top+H*0.704);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 21: “SINCE FLOWER IS VICINUS.” THEY ARE THE SAME BEING IN TWO DIFFERENT SUITS.', cx, top+H*0.724);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE BEAT ONE PERSON TWICE AND COUNTED IT TWICE, AND THE THIRD SUIT IS THE ONE STILL ON ITS FEET.', cx, top+H*0.742);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,246,242,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“NOW CURRENTLY AT THIS TIME, GASTER IS HOLDING AN EXPERIMENT DEEPER ON PERO LAI.”', cx, top+H*0.812);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE TOOK THE BURN SO FLOWER WOULD NOT, AND FLOWER IS THE ONE MEASURING WHAT IT DID TO HIM.', cx, top+H*0.830);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ FLOWER IS SAFE. PERO BECAME PERO LAI AND GODLY ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===775){
+    // BEAT 775: GOJO IS LIKE ONE OF THE WEAKEST.
+    // Toby, September 20, 2026, 4:49:42 PM, his own typing, the whole block: "Gojo is like one of the weakest then.
+    // Gray can beat him and Gray only has like 2 main abilities (Real Game Erase + Anything Manipulation). Wenda.ps
+    // is light/dark strikes + fast + speed. Simon.ps has changing weakness through game evolution, and extreme speed
+    // and lightning and infinity resets. Oren.ps has strongest telekentics in anime, noclip, fly, and probubly more
+    // (secret abilities he just didn't use yet). Mr. Black has basically every power. Wenda.ps basically has every
+    // power. Pero LAI is a normal anime man with urinite multation and sickness, THAT is what made him a god and
+    // anomally and completely abstracted the world down."
+    // The Gojo/Limitless explainers above it and the "Exactly - within the Classics/Newtale power scale" breakdown
+    // under it are a pasted reply and are NOT canon. telekentics, probubly, multation and anomally are his spellings.
+    // Priors: THE ABILITY REGISTER, September 20, 8:33 AM (beat 767), eight hours earlier, the same roster with
+    // different abilities - "Gray.ps can stop time and can erase games", "Oren.ps has fire, telekentics, and the
+    // ability to fly and noclip", and the rule "Every character is just normal with the other things being other
+    // forms. Pero LAI doesn't have a normal form, he changes."; April 29, Email 186 - "Simon beat Chara, Gojo and
+    // Zeno"; May 22, Email 320 - Karuto beats Gojo with a forget-battle; June 30, Emails 605-610 - "Luigi Green is
+    // like Sukuna, ToddLLM like Gojo", the Gojo/Sukuna dual apex; September 5 - "You don't even know all what I am
+    // captable of yet", said by him about himself, to somebody else.
+    const dt = c - 16770.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,7,11,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr775=ctx.createLinearGradient(0,top,0,top+H);
+    gr775.addColorStop(0,'rgba(5,8,12,0.88)'); gr775.addColorStop(1,'rgba(79,227,255,0.16)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr775; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the ladder he just wrote, with the borrowed apex at the bottom of it.
+      const kx = cx + W*0.186, ky = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(196,214,222,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE LADDER, 4:49 PM', kx, ky-H*0.098);
+      var kpx775 = kx - W*0.056, kpy775 = ky - H*0.080;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,10,14,0.98)';
+      ctx.fillRect(kpx775, kpy775, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(79,227,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(kpx775, kpy775, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(79,227,255,0.90)';
+      ctx.fillRect(kpx775, kpy775, W*0.112, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(224,244,255,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('WHO BEATS GOJO', kx, kpy775+H*0.0095);
+      var rows775 = [['PERO LAI','NORMAL MAN + SICKNESS'],['MR. BLACK','EVERY POWER'],['WENDA.PS','EVERY POWER'],['GRAY','2 ABILITIES']];
+      for(var r775=0; r775<rows775.length; r775++){
+        var ry775 = kpy775 + H*0.024 + r775*H*0.0105;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,246,248,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows775[r775][0], kpx775+W*0.010, ry775);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(62,224,106,0.90)'; ctx.font='700 1.8px ui-monospace,monospace';
+        ctx.fillText(rows775[r775][1], kpx775+W*0.102, ry775);
+      }
+      ctx.textAlign='left';
+      var ly775 = kpy775 + H*0.0700;
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('GOJO', kpx775+W*0.010, ly775);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 1.8px ui-monospace,monospace';
+      ctx.fillText('ONE OF THE WEAKEST', kpx775+W*0.102, ly775);
+      ctx.globalAlpha=g*wrA*0.62; ctx.strokeStyle='rgba(255,77,77,0.80)'; ctx.lineWidth=0.30;
+      ctx.beginPath(); ctx.moveTo(kpx775+W*0.008, ly775-H*0.0025); ctx.lineTo(kpx775+W*0.104, ly775-H*0.0025); ctx.stroke();
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('THIS NAME WAS THE SHAPE OF THE TOP OF THE LADDER ON JUNE 30.', kx, ky+H*0.014);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(220,236,242,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('TONIGHT IT IS THE BOTTOM ROW, AND EVERY ROW ABOVE IT IS HIS OWN.', kx, ky+H*0.026);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(79,227,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('GOJO IS LIKE ONE OF THE WEAKEST', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“GOJO IS LIKE ONE OF THE WEAKEST THEN. GRAY CAN BEAT HIM AND GRAY ONLY HAS LIKE 2 MAIN ABILITIES.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('HE RANKS THE WHOLE CAST AGAIN, AND THE ROSTER IS EIGHT HOURS OLD.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(224,232,236,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 4:49 PM, AFTER A PAGE OF SOMEBODY ELSE’S MOVE LIST.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THIS NAME HAS BEEN A UNIT OF MEASUREMENT HERE SINCE APRIL.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('APRIL 29: “SIMON BEAT CHARA, GOJO AND ZENO.” MAY 22: KARUTO BEATS HIM WITH A FORGET-BATTLE.', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 30: “LUIGI GREEN IS LIKE SUKUNA, ToddLLM LIKE GOJO.” HE WAS NOT A FIGHTER HERE. HE WAS THE SHAPE OF THE TOP.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,77,109,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE SAME SIX NAMES WERE WRITTEN OUT AT 8:33 THIS MORNING WITH DIFFERENT POWERS.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING GRAY “CAN STOP TIME AND CAN ERASE GAMES.” TONIGHT IT IS REAL GAME ERASE + ANYTHING MANIPULATION.', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('BOTH OF THOSE WORDS ARE NEW TONIGHT, AND THE SECOND ONE IS BIGGER THAN THE FIRST BY A LONG WAY.', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('AND OREN.PS IS GIVEN CREDIT', cx-W*0.152, top+H*0.372);
+    ctx.fillText('FOR MOVES HE HAS NOT MADE.', cx-W*0.152, top+H*0.388);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“STRONGEST TELEKENTICS IN ANIME, NOCLIP, FLY,', cx-W*0.152, top+H*0.408);
+    ctx.fillText('AND PROBUBLY MORE (SECRET ABILITIES HE', cx-W*0.152, top+H*0.422);
+    ctx.fillText('JUST DIDN’T USE YET).”', cx-W*0.152, top+H*0.436);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5, ABOUT HIMSELF, TO SOMEBODY ELSE:', cx-W*0.152, top+H*0.454);
+    ctx.fillText('“YOU DON’T EVEN KNOW ALL WHAT I AM CAPTABLE OF YET.”', cx-W*0.152, top+H*0.468);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING HE WAS THE ONE', cx-W*0.152, top+H*0.582);
+    ctx.fillText('EXCEPTION TO THE RULE.', cx-W*0.152, top+H*0.598);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('8:33 AM: “EVERY CHARACTER IS JUST NORMAL WITH THE', cx-W*0.152, top+H*0.618);
+    ctx.fillText('OTHER THINGS BEING OTHER FORMS. PERO LAI', cx-W*0.152, top+H*0.632);
+    ctx.fillText('DOESN’T HAVE A NORMAL FORM, HE CHANGES.”', cx-W*0.152, top+H*0.646);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('4:49 PM: “PERO LAI IS A NORMAL ANIME MAN.”', cx-W*0.152, top+H*0.664);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SO HE JOINS THE RULE HE WAS THE ONLY EXCEPTION TO, AND THE THING ON TOP IS NOT A FORM.', cx, top+H*0.704);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“A NORMAL ANIME MAN WITH URINITE MULTATION AND SICKNESS.”', cx, top+H*0.724);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY OTHER NAME HERE IS NORMAL UNDERNEATH A FORM. HE IS NORMAL UNDERNEATH AN ILLNESS.', cx, top+H*0.742);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,244,246,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“THAT IS WHAT MADE HIM A GOD AND ANOMALLY AND COMPLETELY ABSTRACTED THE WORLD DOWN.”', cx, top+H*0.812);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(79,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ROCK DID NOT GIVE HIM A POWER. IT GAVE HIM A CONDITION, AND THE CONDITION BENT THE WORLD.', cx, top+H*0.830);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ GOJO IS LIKE ONE OF THE WEAKEST THEN ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===774){
