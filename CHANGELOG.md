@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-19 — UNDERNEATH THE STAIRCASE (BEAT 765)
+
+Based on Toby's 2026-09-19 lore, **7:59 PM (Email 1475)**: the first message in this archive that gives direction about
+**how the game itself should stage a scene**, not about the lore or the wiki. The September 17 request was for a new wiki
+tab; this one is about the screen. Everything from "Yeah, that makes" onward in that
+email, including the Under-Staircase Core list, is pasted commentary and is not canon.
+
+![Beat 765 — Underneath The Staircase](screenshots/827-underneath-the-staircase.png)
+
+- **New beat 765, UNDERNEATH THE STAIRCASE.** "Pero LAI picks up the Simon Reach bar and breaks it, then he breaks all 3
+  hearts, and then picks up the player and flicks the player into a galaxy… Then Pero LAI crushes the player with just 2
+  fingers… the Game Over screen breaks apart, revealing BOTH Pero LAI and WD Gaster… after 666 runs [it] says 'Now I own
+  this world!'… Oren.ps and Simon.ps run up and make the Endless Staircase a normal endless staircase that is harmless…
+  but Pero LAI is hidding something UNDERNEATH the staircase."
+- **He asked for the damage to be shown, not narrated.** "The Endless Staircase should not just say it, each event should
+  also actually happen to the player and the game." So the inset is drawn as broken HUD rather than described: the SIMON
+  REACH bar snapped in two, all 3 hearts cracked, and the GAME OVER plate split down a jagged crack with PERO LAI and WD
+  GASTER showing through it, over "NOW I OWN THIS WORLD!" and RUN 666.
+- **The two fingers have closed on somebody before.** August 18, 5:54 PM: "Gray picked up Oren with 2 fingers, Oren used
+  telekentics to try to move at least one of his fingers, but the fingers were to heavy for Oren's telekentics."
+- **He has lain under a floor before, and he dug it himself.** August 29, 12:47 PM (beat 528): "Currently, Pero is under
+  the game map surface." That basement was the Underworld Error, his own build, stoned up the same day he dug it.
+- **The flick is older still.** Email 738: Simon was "flicked millions of miles away" then caught at the speed of light.
+  It was a character then; tonight it is the player.
+- **The two behind the Game Over screen are the game's two anomalies.** September 17, 6:08 AM (beat 727): Pero LAI and
+  Gaster, listed 1 and 2, on one picture.
+- **The three codes are split across the trap.** September 1: the plague doctor was built from "Simon.ps's code, and
+  Oren.ps's code, and New Gaster's code." Two of them rebuild the stairs; the third is behind the Game Over screen.
+- **The ownership line points outward for the first time.** September 9, 3:58 PM (beat 693): "I own every pixel, now all
+  realities," said to characters. "Now I own this world!" is printed on the player's screen.
+- **"Simon Reach bar" has zero prior hits** in four months of the wiki as a named object. "Hidding" is Toby's spelling,
+  kept.
+- Ladder window shifted by one beat, so screenshots 825 and 826 were recaptured.
+
 ## 2026-09-19 — PHASE INFINITY (BEAT 764)
 
 Based on Toby's 2026-09-19 lore, **5:36 PM (Email 1474)**: thirty-three words of his own typing, sent two hours and nine

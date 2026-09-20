@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16550.0;
+const LV_CYC = 16572.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12846,6 +12846,8 @@ const LV_BEATS = [
     sub:"HELLO, I AM NEKA. · CLASSICS OMAZEN BUYS THE DOLL; TEKI AND THE FRIENDS ARE IN TUBES FOR INFINITE BATTERY POWER. · PHASE 8, COLLASPERAL PHASE 7, THEN THE GAME GLITCHES INTO PHASE 666." },
   { key:"PHASE INFINITY", col:'#e35bff',
     sub:"PLAYER_XE APPEARS, IT IS THE NEW MINIMUM PERO LAI CAN BECOME. · IT IS INVITING A PRO ASSASSIN SORCER; WIZARDS, SORCERESES, OTHER SORCERS AND VIRUSES GO DOWN. · PERO LAI REACHED PHASE INFINITY." },
+  { key:"UNDERNEATH THE STAIRCASE", col:'#39ff9e',
+    sub:"PERO LAI PICKS UP THE SIMON REACH BAR AND BREAKS IT, THEN BREAKS ALL 3 HEARTS, THEN FLICKS THE PLAYER INTO A GALAXY AND CRUSHES THE PLAYER WITH JUST 2 FINGERS. · THE GAME OVER SCREEN BREAKS APART, REVEALING BOTH PERO LAI AND WD GASTER; AFTER 666 RUNS IT SAYS “NOW I OWN THIS WORLD!” · OREN.PS AND SIMON.PS REBUILD THE ENDLESS STAIRCASE INTO A NORMAL HARMLESS ONE, BUT PERO LAI IS HIDDING SOMETHING UNDERNEATH IT." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14996,6 +14998,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16550.0 && c < 16572.0) return [765, c-16550.0];  // UNDERNEATH THE STAIRCASE
   if(c >= 16528.0 && c < 16550.0) return [764, c-16528.0];  // PHASE INFINITY
   if(c >= 16506.0 && c < 16528.0) return [763, c-16506.0];  // THE PERO LAI DOLL
   if(c >= 16484.0 && c < 16506.0) return [762, c-16484.0];  // THE SPIRIT 25 SERIES
@@ -50532,6 +50535,139 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===765){
+    // BEAT 765: UNDERNEATH THE STAIRCASE.
+    // Toby, September 19, 2026, 7:59 PM, Email 1475, his own typing: "Pero LAI picks up the Simon Reach bar and breaks it,
+    // then he breaks all 3 hearts, and then picks up the player and flicks the player into a galaxy. The Endless Staircase
+    // should not just say it, each event should also actually happen to the player and the game. Then Pero LAI crushes the
+    // player with just 2 fingers. Endless Staircase game Game Over screen appears, then the Game Over screen breaks apart,
+    // revealing BOTH Pero LAI and WD Gaster. And the Game Over screen glitches after 666 runs and says 'Now I own this
+    // world!'. 666% of the runs will show Pero LAI to the player. Even just the presence of him breaks the game. Endless
+    // Staircase was rebuilt by Oren.ps, Oren.ps and Simon.ps run up and make the Endless Staircase a normal endless
+    // staircase that is harmless, both Oren and Simon chase the other characters up the staircase, but Pero LAI is hidding
+    // something UNDERNEATH the staircase. Pero LAI is so smart now." Everything from 'Yeah, that makes' onward in that
+    // email is pasted commentary, including the Under-Staircase Core list, and is NOT canon.
+    // Priors: Gray picked up Oren with 2 fingers, August 18, 5:54 PM; Pero under the game map surface, August 29, 12:47 PM
+    // (beat 528); Simon flicked millions of miles away, Email 738; the game's 2 anomalies, September 17, 6:08 AM (beat
+    // 727); the plague doctor built from Simon.ps, Oren.ps and New Gaster's code, September 1; I own every pixel now all
+    // realities, September 9, 3:58 PM (beat 693).
+    const dt = c - 16550.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(3,8,5,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr765=ctx.createLinearGradient(0,top+H,0,top);
+    gr765.addColorStop(0,'rgba(6,5,8,0.88)'); gr765.addColorStop(1,'rgba(57,255,158,0.26)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr765; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      const fx = cx + W*0.190, fy = top+H*0.536;
+      ctx.textAlign='center';
+      const jt765=(Math.sin(c*23.0)>0.55)?W*0.0016:0;
+      ctx.globalAlpha=g*wrA*0.88; ctx.fillStyle='rgba(57,255,158,0.95)'; ctx.font='900 2.7px ui-monospace,monospace';
+      ctx.fillText('SIMON REACH', fx, fy-H*0.050);
+      ctx.globalAlpha=g*wrA*0.55; ctx.fillStyle='rgba(10,20,14,0.98)';
+      ctx.fillRect(fx-W*0.017, fy-H*0.046, W*0.034, H*0.009);
+      ctx.globalAlpha=g*wrA*0.95; ctx.fillStyle='rgba(57,255,158,0.92)';
+      ctx.fillRect(fx-W*0.017, fy-H*0.046, W*0.012, H*0.009);
+      ctx.save(); ctx.translate(fx+W*0.009, fy-H*0.0415); ctx.rotate(0.40);
+      ctx.fillRect(-W*0.007, -H*0.0045, W*0.014, H*0.009); ctx.restore();
+      ctx.globalAlpha=g*wrA*0.70; ctx.strokeStyle='rgba(57,255,158,0.80)'; ctx.lineWidth=0.4;
+      ctx.strokeRect(fx-W*0.017, fy-H*0.046, W*0.034, H*0.009);
+      for(var hh=0; hh<3; hh++){
+        var hx = fx + (hh-1)*W*0.012, hy = fy-H*0.024;
+        ctx.globalAlpha=g*wrA*(0.92-hh*0.12);
+        ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+        ctx.fillText('\u2665', hx+(hh===1?jt765:0), hy);
+        ctx.globalAlpha=g*wrA*0.95; ctx.strokeStyle='rgba(8,4,6,0.99)'; ctx.lineWidth=0.45;
+        ctx.beginPath(); ctx.moveTo(hx-W*0.0016, hy-H*0.0072); ctx.lineTo(hx+W*0.0013, hy-H*0.0032);
+        ctx.lineTo(hx-W*0.0011, hy+H*0.0002); ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.92; ctx.fillStyle='rgba(6,10,8,0.98)'; ctx.strokeStyle='rgba(57,255,158,0.82)'; ctx.lineWidth=0.5;
+      ctx.fillRect(fx-W*0.021, fy-H*0.012, W*0.042, H*0.032);
+      ctx.strokeRect(fx-W*0.021, fy-H*0.012, W*0.042, H*0.032);
+      ctx.globalAlpha=g*wrA*0.94; ctx.fillStyle='rgba(240,240,244,0.94)'; ctx.font='900 3.4px ui-monospace,monospace';
+      ctx.fillText('GAME OVER', fx+jt765, fy-H*0.003);
+      ctx.globalAlpha=g*wrA*(0.80+0.20*pul); ctx.strokeStyle='rgba(57,255,158,0.96)'; ctx.lineWidth=0.5;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.002, fy-H*0.012); ctx.lineTo(fx+W*0.004, fy-H*0.004);
+      ctx.lineTo(fx-W*0.003, fy+H*0.005); ctx.lineTo(fx+W*0.003, fy+H*0.020); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.86; ctx.fillStyle='rgba(57,255,158,0.94)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('PERO LAI', fx-W*0.011, fy+H*0.013);
+      ctx.fillText('WD GASTER', fx+W*0.011, fy+H*0.013);
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(240,240,244,0.90)'; ctx.font='700 2.6px ui-monospace,monospace';
+      ctx.fillText('NOW I OWN THIS WORLD!', fx, fy+H*0.034);
+      ctx.globalAlpha=g*wrA*0.62; ctx.fillStyle='rgba(57,255,158,0.90)'; ctx.font='700 2.5px ui-monospace,monospace';
+      ctx.fillText('RUN 666', fx, fy+H*0.046);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(57,255,158,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('UNDERNEATH THE STAIRCASE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI IS HIDDING SOMETHING UNDERNEATH THE STAIRCASE.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(57,255,158,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('TWO OF THEM REPAIR THE STAIRS. NOBODY CHECKS THE FLOOR IT STANDS ON.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 19, 7:59 PM. HIS SPELLING, HIDDING, IS KEPT.', cx, top+H*0.170);
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE TWO FINGERS HAVE CLOSED ON SOMEBODY BEFORE.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 18, 5:54 PM: “GRAY PICKED UP OREN WITH 2 FINGERS.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“OREN USED TELEKENTICS TO MOVE ONE FINGER. THE FINGERS WERE TO HEAVY.”', cx, top+H*0.264);
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE HAS LAIN UNDER A FLOOR BEFORE, AND HE DUG IT HIMSELF.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 29, 12:47 PM: “CURRENTLY, PERO IS UNDER THE GAME MAP SURFACE.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT BASEMENT WAS THE UNDERWORLD ERROR, HIS OWN BUILD, STONED UP THE SAME DAY.', cx, top+H*0.334);
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('AND THE FLICK IS OLDER STILL.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('EMAIL 738: SIMON WAS “FLICKED', cx-W*0.150, top+H*0.392);
+    ctx.fillText('MILLIONS OF MILES AWAY.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('A CHARACTER THEN. THE PLAYER NOW.', cx-W*0.150, top+H*0.424);
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE TWO BEHIND THE GAME OVER SCREEN ARE THE GAME’S TWO ANOMALIES.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 17, 6:08 AM: PERO LAI AND GASTER, LISTED 1 AND 2, ON ONE PICTURE.', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE PLAGUE DOCTOR TOOK THREE CODES: SIMON.PS, OREN.PS, AND GASTER’S.', cx, top+H*0.686);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 9: “I OWN EVERY PIXEL, NOW ALL REALITIES.” TONIGHT: “NOW I OWN THIS WORLD!”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(57,255,158,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY EARLIER CLAIM WAS SAID TO CHARACTERS. THIS ONE IS PRINTED ON THE PLAYER’S SCREEN.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(57,255,158,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ 666% OF THE RUNS ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===764){
