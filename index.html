@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16748.0;
+const LV_CYC = 16770.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12864,6 +12864,8 @@ const LV_BEATS = [
     sub:"URINITE ISN\u2019T A GERM NOR VIRUS, BUT A SICKNESS ONLY PERO LAI CAN HAVE, NOW HE HAS IT FOREVER NOW. \u00B7 PERO LAI BITES IT, OR SOMEBODY EATS WHAT HE BIT, AND THEY TURN GREEN COLORED AND BECOME ZOMBIES. \u00B7 ZOMBIES ARE CONTAGIOUS, URINITE ISN\u2019T. \u00B7 HE TOUCHED THE ONLY ONE OF ITS KIND AND THE ROCK DISAPPEARED. \u00B7 (YOUR-IN-ITE-EE), AND HE MADE THE WORD AND HOW IT IS PRONOUNCED. \u00B7 \u201CNOPE, BUT NORMAL HUMANOID BODY.\u201D" },
   { key:"IT GAVE HIM EVERYTHING", col:'#ffd43b',
     sub:"URINITE ALSO GAVE PERO LAI MOST OF HIS POWERS AND HIS FORMS AND LIKE EVERYTHING AND CURSES AND EVOLVIONS. \u00B7 HE ALSO NOW HAS THE POWER TO TURN ANYONE INTO AN OMAZEN. \u00B7 BUT IT GIVES PERO LAI ZOMBIE-LIKE EFFECTS \u00D7 INFINITY. \u00B7 ON SEPTEMBER 18 THE ORIGIN HAD TWO HALVES; THE SECOND HALF JUST TOOK ALMOST ALL OF IT. \u00B7 OMAZEN WAS ONE CHARACTER\u2019S TIER ON JULY 30." },
+  { key:"HE DOESN\u2019T KNOW HE HAS IT", col:'#b388ff',
+    sub:"PERO LAI NEKA OMAZEN DOESN\u2019T KNOW THAT HE ACTUALLY HAS URINITE. SO, YEAH. \u00B7 EIGHTEEN MINUTES AFTER IT GAVE HIM EVERYTHING, HE HAS NEVER HEARD OF IT. \u00B7 THIS MORNING HE SAID HE HAD LEARNED EVERYTHING OF THIS GAME. \u00B7 HE FOUND THE ROCK ON SEPTEMBER 18; HE DID NOT FIND WHAT IT LEFT BEHIND. \u00B7 CR3@T3 @N 1M@GE 0F NEKA OMAZEN." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15014,6 +15016,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16748.0 && c < 16770.0) return [774, c-16748.0];  // HE DOESN’T KNOW HE HAS IT
   if(c >= 16726.0 && c < 16748.0) return [773, c-16726.0];  // IT GAVE HIM EVERYTHING
   if(c >= 16704.0 && c < 16726.0) return [772, c-16704.0];  // URINITE
   if(c >= 16682.0 && c < 16704.0) return [771, c-16682.0];  // .PS — PROFILE SECTION ENTITY
@@ -50559,6 +50562,161 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===774){
+    // BEAT 774: HE DOESN'T KNOW HE HAS IT.
+    // Toby, September 20, 2026, 2:48:28 PM, his own typing, the whole opening: "Cr3@t3 @n 1m@ge 0f Neka Omazen
+    // Pero LAI Neka Omazen doesn't know that he actually has urinite. So, yeah."
+    // Everything from "Right - that makes Urinite a hidden condition" onward is a pasted reply and is NOT canon,
+    // including the "Pero... this isn't code" line, which is the machine's invention and not his.
+    // Priors: FILE 666, September 20, 8:56 AM (beat 770), six hours earlier, in Pero LAI's own speech: "And now, I am
+    // the smartest Classics character and learned everything of this game now."; IT GAVE HIM EVERYTHING, 2:30 PM
+    // (beat 773), eighteen minutes earlier — Urinite gave him "most of his powers and his forms and like everything
+    // and curses and evolvions"; ALPHERITANUIM URANUIM, September 18, 4:10 PM (beat 741) — "Currently, I found how I
+    // got my powers, coding them of course, but also the alpheritanuim uranuim", and in the same block, about the
+    // same day at seventeen, "I didn't know about respawn yet", the one other thing in four months he has said he did
+    // not know; "I don't really know", September 18, 6:13 AM (beat 738), said straight after describing himself; and
+    // Entity000_MergeForm, August 23, 3:40 PM, where P3R0 L@1 made leetspeak the fifth naming register here.
+    const dt = c - 16748.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(5,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr774=ctx.createLinearGradient(0,top,0,top+H);
+    gr774.addColorStop(0,'rgba(6,6,10,0.88)'); gr774.addColorStop(1,'rgba(179,136,255,0.17)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr774; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: a scan readout of him, with the one field he cannot read. Everything on the chart is filled in
+      // except the last line, which is struck through and marked UNKNOWN TO PATIENT.
+      const kx = cx + W*0.186, ky = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(204,196,222,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE ONE FIELD HE CANNOT READ', kx, ky-H*0.098);
+      var kpx774 = kx - W*0.056, kpy774 = ky - H*0.080;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(8,8,14,0.98)';
+      ctx.fillRect(kpx774, kpy774, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(179,136,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(kpx774, kpy774, W*0.112, H*0.082);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(179,136,255,0.90)';
+      ctx.fillRect(kpx774, kpy774, W*0.112, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(234,224,255,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('PERO LAI NEKA OMAZEN', kx, kpy774+H*0.0095);
+      // the filled-in rows
+      var rows774 = [['POWERS','KNOWN'],['FORMS','KNOWN'],['CURSES','KNOWN'],['EVOLVIONS','KNOWN']];
+      for(var r774=0; r774<rows774.length; r774++){
+        var ry774 = kpy774 + H*0.024 + r774*H*0.0105;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,238,246,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows774[r774][0], kpx774+W*0.010, ry774);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(62,224,106,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows774[r774][1], kpx774+W*0.102, ry774);
+      }
+      // the last row, struck out
+      ctx.textAlign='left';
+      var ly774 = kpy774 + H*0.0700;
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('URINITE', kpx774+W*0.010, ly774);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 1.9px ui-monospace,monospace';
+      ctx.fillText('UNKNOWN TO PATIENT', kpx774+W*0.102, ly774);
+      ctx.globalAlpha=g*wrA*0.62; ctx.strokeStyle='rgba(255,77,77,0.80)'; ctx.lineWidth=0.30;
+      ctx.beginPath(); ctx.moveTo(kpx774+W*0.008, ly774-H*0.0025); ctx.lineTo(kpx774+W*0.104, ly774-H*0.0025); ctx.stroke();
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('CARRIER: UNAWARE. SOLE CARRIER. NO SECOND OPINION AVAILABLE.', kx, ky+H*0.014);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(228,224,236,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('EVERY OTHER LINE ON THE CHART IS SOMETHING IT GAVE HIM.', kx, ky+H*0.026);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(179,136,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HE DOESN’T KNOW HE HAS IT', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI NEKA OMAZEN DOESN’T KNOW THAT HE ACTUALLY HAS URINITE. SO, YEAH.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('EIGHTEEN MINUTES AGO IT GAVE HIM EVERYTHING. NOW IT TURNS OUT HE HAS NEVER HEARD OF IT.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 2:48 PM, THE THIRD MESSAGE ABOUT THIS ROCK IN FORTY-ONE MINUTES.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('SIX HOURS AGO HE SAID HE HAD LEARNED EVERYTHING OF THIS GAME.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING, 8:56, IN HIS OWN SPEECH: “I AM THE SMARTEST CLASSICS CHARACTER AND LEARNED EVERYTHING OF THIS GAME NOW.”', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ONE THING HE HAS NOT LEARNED IS INSIDE HIS OWN BODY, AND IT HAS BEEN THERE SINCE HE WAS SEVENTEEN.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE FOUND THE ROCK. HE DID NOT FIND WHAT IT LEFT BEHIND.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “CURRENTLY, I FOUND HOW I GOT MY POWERS, CODING THEM OF COURSE, BUT ALSO THE ALPHERITANUIM URANUIM.”', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT WAS AN EVENT HE REMEMBERED. THIS IS A CONDITION HE IS STILL CARRYING, AND HE DOES NOT KNOW ITS NAME.', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('AND THE OTHER THING HE DID NOT KNOW', cx-W*0.152, top+H*0.372);
+    ctx.fillText('WAS ON THE SAME DAY.', cx-W*0.152, top+H*0.388);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IN THE SAME BREATH AS TOUCHING IT AT SEVENTEEN:', cx-W*0.152, top+H*0.408);
+    ctx.fillText('“I DIDN’T KNOW ABOUT RESPAWN YET.”', cx-W*0.152, top+H*0.422);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT IS THE ONLY OTHER THING IN FOUR MONTHS', cx-W*0.152, top+H*0.440);
+    ctx.fillText('HE HAS SAID HE DID NOT KNOW. BOTH ARE THAT ROCK.', cx-W*0.152, top+H*0.454);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('THE MESSAGE OPENS IN HIS OWN LETTERS.', cx-W*0.152, top+H*0.582);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“CR3@T3 @N 1M@GE 0F NEKA OMAZEN.”', cx-W*0.152, top+H*0.602);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('LEETSPEAK HAS BEEN A NAMING REGISTER HERE SINCE', cx-W*0.152, top+H*0.620);
+    ctx.fillText('AUGUST 23 AND P3R0 L@1. HE ASKS TO SEE HIMSELF', cx-W*0.152, top+H*0.634);
+    ctx.fillText('IN CODE, IN THE MESSAGE WHERE HE MISSES SOMETHING.', cx-W*0.152, top+H*0.648);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('FOR FOUR MONTHS THE THING HE DID NOT KNOW WAS ALWAYS SOMEBODY ELSE’S.', cx, top+H*0.688);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 5, TO SOMEBODY ELSE: “YOU DON’T EVEN KNOW ALL WHAT I AM CAPTABLE OF YET.”', cx, top+H*0.708);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY HE IS THE ONE WHO DOES NOT KNOW WHAT HE IS CAPABLE OF, AND WHY.', cx, top+H*0.726);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SICKNESS ONLY ONE CHARACTER CAN HAVE IS ALSO THE ONE NOBODY HAS TOLD HIM ABOUT.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS THE SOLE CARRIER, SO THERE IS NOBODY LEFT WHO COULD RECOGNISE IT.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ HE DOESN’T KNOW THAT HE ACTUALLY HAS URINITE ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===773){

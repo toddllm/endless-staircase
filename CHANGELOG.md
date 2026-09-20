@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — HE DOESN'T KNOW HE HAS IT (BEAT 774)
+
+Based on Toby's 2026-09-20 lore, **2:48 PM**, eighteen minutes after Urinite gave him everything and the third message
+about the same rock in forty-one minutes. His own typing is the leetspeak image request and the sentence after it;
+everything from "Right — that makes Urinite a hidden condition" onward is a pasted reply and is not canon, including
+the "Pero... this isn't code" line, which the machine invented and he did not write.
+
+> "Cr3@t3 @n 1m@ge 0f Neka Omazen  Pero LAI Neka Omazen doesn't know that he actually has urinite. So, yeah."
+
+- new beat 774 at `lvSeg` 16748.0-16770.0, `LV_CYC` 16770.0, `LV_BEATS` length 775
+- inset: his own chart, with POWERS / FORMS / CURSES / EVOLVIONS all marked KNOWN in green and one last row, URINITE,
+  struck through in red and marked UNKNOWN TO PATIENT — under a line saying he is the sole carrier, so there is no
+  second opinion available
+- panels: this morning's 8:56 claim, "I am the smartest Classics character and learned everything of this game now",
+  against the one thing he has not learned being inside his own body; September 18's "I found how I got my powers ...
+  but also the alpheritanuim uranuim", an event he remembered against a condition he is still carrying; "I didn't
+  know about respawn yet", from the same breath at seventeen and the only other thing in four months he has said he
+  did not know; the leetspeak opening against P3R0 L@1 making leetspeak the fifth naming register on August 23; and
+  September 5's "You don't even know all what I am captable of yet", said by him, to somebody else
+- new capture scene `doesntknow774`; screenshots 834 and 835 recaptured for the shifted ladder
+
+![Beat 774 — He Doesn't Know He Has It](screenshots/836-he-doesnt-know-he-has-it.png)
+
 ## 2026-09-20 — IT GAVE HIM EVERYTHING (BEAT 773)
 
 Based on Toby's 2026-09-20 lore, **2:30 PM**, twenty-three minutes after he named the sickness. His own typing is the
