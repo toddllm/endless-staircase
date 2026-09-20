@@ -4,6 +4,83 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — PERO LAI ESSENCE (BEAT 769)
+
+Based on Toby's 2026-09-20 lore, **8:34 AM (Email 1478)**, third and closing block of his own typing. The "Canon confirmed"
+bullets and the five-line hierarchy under it are pasted commentary and are not canon. **Essense** is his spelling, kept.
+
+![Beat 769 — Pero LAI Essence](screenshots/831-pero-lai-essence.png)
+
+- **New beat 769, PERO LAI ESSENCE.** "Pero LAI even can reach the merge of gods. Anyone with Pero LAI Essense (most
+  powerful object in game) becomes the power level of all gods instantly. Pero LAI still beats the 'anyone' because he is
+  the original and strongest in game."
+- **The inset draws the hand-over and the ceiling.** The vial with his name on it, an arrow across, an ordinary figure lit
+  to all-gods level inside three rings, and a red bar above that figure it cannot pass, because the sentence that gives
+  the power also says he still beats whoever holds it.
+- **Two days ago the all-gods line was a description of him, not an object.** September 18, 6:13 AM (beat 738): "he is
+  basically the avatar of all the gods combined basically." And right after it: "I don't really know."
+- **He wrote the same line eighteen days ago.** September 2, 10:35 AM, inside a list of twenty-one powers: "the Classics
+  avatar of all gods combined."
+- **"Essence" has only ever meant one thing in this archive, and it is Jacked Simon's.** "He takes the inner essence of
+  defeated beings and adds it into himself." That one is taken off the defeated. This one is handed over.
+- **The last "most powerful in the game" went to Wenda.** August 31, 4:19 PM: "Pero gave Wenda.ps the new most powerful
+  ability in the game, Infinity Clockworks." That was an ability. This is an object, and it carries his full name, where
+  every clockwork in the archive is named for a colour or an element and the two sets are named Everything and Nothingness.
+- **September 2 also listed "Uncontaination" among his powers, his spelling**, in that same list of twenty-one. Eighteen
+  days later he is the one doing the containing, and one tube still will not shut.
+
+## 2026-09-20 — THE ONLY CLASSICS ASSASSIN (BEAT 768)
+
+Based on Toby's 2026-09-20 lore, **8:34 AM (Email 1478)**, sent one minute and thirteen seconds after the previous message.
+His own typing here is two sentences. The Zeno / Goku / Saitama rankings around them are pasted commentary and are not canon.
+
+![Beat 768 — The Only Classics Assassin](screenshots/830-the-only-classics-assassin.png)
+
+- **New beat 768, THE ONLY CLASSICS ASSASSIN.** "The Secret Assassin is now the only Classics Assassin, the others are
+  just anything-slayers. Pero LAI." He also asked the question it answers: "Which is strongest, Saitama, Goku, Zeno, The
+  Secret Assassin" — three real names and one of his own, and the fourth one wins.
+- **The inset draws the class sheet.** One solid box at the top holding one name and reading MEMBERS: 1, an arrow down,
+  and a dashed box underneath holding everybody else under the new word.
+- **The word was Gray's before it was his.** July 14: Gray is "a cyber ancient lord / shadow-assassin god" with a scythe
+  and ninja stars. For two months every hit on "assassin" in the archive was Gray.
+- **He took the title seven days ago.** September 13, 4:54 PM (beat 713): "Pero LAI gets the 3rd soul, and he became the
+  most powerful assassin ever." Today he does not take a bigger title; he takes everyone else's away.
+- **Yesterday the game was still hiring.** September 19, 5:36 PM (beat 764): "It is inviting a pro assassin sorcer."
+  Fourteen hours and fifty-eight minutes later the post is closed.
+- **"Slayer" is a word he already used, and it was Simon's.** Demon Slayer Simon is "a professonal at conquering and
+  slaying demons and anything." The class he demotes everybody into already had a member.
+- **The outside cast has lost in here before.** "Simon also beaten Chara, Gojo, Zeno, and many others."
+
+## 2026-09-20 — HE CONTAINED EVERYONE BUT WENDA.PS (BEAT 767)
+
+Based on Toby's 2026-09-20 lore, **8:33 AM (Email 1477)**, one hour and fifty-three minutes after the tube room was a plan.
+Only the opening block is his own typing. Everything from "Yeah — Pero LAI is starting to talk in that same" onward,
+including the per-character bullet list, is pasted commentary and is not canon.
+
+![Beat 767 — He Contained Everyone But Wenda.ps](screenshots/829-he-contained-everyone-but-wenda.png)
+
+- **New beat 767, HE CONTAINED EVERYONE BUT WENDA.PS.** "Wenda.ps is basically the second strongest besides Mr. Black…
+  Every character is just normal with the other things being other forms. Pero LAI doesn't have a normal form, he
+  changes… Pero LAI sucessfully contained everyone else, but Wenda.ps, then Pero LAI and Wenda.ps do a 50+ second battle
+  with Pero LAI winning at the end."
+- **The inset is the same room as beat 766, one message later.** Four tubes sealed and lit, and the third one — Wenda —
+  drawn open with the glass gone, shards thrown outward and the occupant standing clear of it. Two clocks underneath:
+  Mr. Black 1-7 seconds, Wenda 50+.
+- **The plan ran in under two hours.** 6:40 AM: "he will try to contain everyone in one." 8:33 AM: every name on his own
+  list is inside except the third one he wrote down.
+- **The one he could not hold is the one he armed.** August 31, 4:19 PM: "Pero gave Wenda.ps the new most powerful ability
+  in the game, Infinity Clockworks."
+- **Her godly forms are demoted in the same breath.** July 20, 6:04 PM: ??? was "an unknown deleted being as a god of
+  angels," and that was Wenda's top form. Under today's rule everyone has a normal baseline and the rest are older forms.
+- **The stat sheet is forty-three days old.** August 8, 7:41 PM, Who Wins The Battles: "Simon has reset, lightning, and
+  speed. Gray has erase… can stop time," and "Gray is the smartest character in the game." He lists the same two this
+  morning, unchanged, and puts Wenda third smartest under Gray.
+- **Togore was the child who did not want to attack anyone.** August 30, 3:55 PM: "sensitive and doesn't want to attack
+  anyone." Twenty-one days later: "Togore can basically end runs."
+- **"Pero LAI can't smell" and "doesn't have a shadow" are both new**, with no prior hit in an archive that has a Shadow
+  Realm, a Shadow Wenda and a shadow-assassin god in it.
+- Ladder window shifted by three beats, so screenshots 827 and 828 were recaptured.
+
 ## 2026-09-20 — THE ROOM OF MANY TUBES (BEAT 766)
 
 Based on Toby's 2026-09-20 lore, **6:40 AM (Email 1476)**: the answer to last night's cliffhanger, sent ten hours and

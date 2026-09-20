@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16594.0;
+const LV_CYC = 16660.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12850,6 +12850,12 @@ const LV_BEATS = [
     sub:"PERO LAI PICKS UP THE SIMON REACH BAR AND BREAKS IT, THEN BREAKS ALL 3 HEARTS, THEN FLICKS THE PLAYER INTO A GALAXY AND CRUSHES THE PLAYER WITH JUST 2 FINGERS. · THE GAME OVER SCREEN BREAKS APART, REVEALING BOTH PERO LAI AND WD GASTER; AFTER 666 RUNS IT SAYS “NOW I OWN THIS WORLD!” · OREN.PS AND SIMON.PS REBUILD THE ENDLESS STAIRCASE INTO A NORMAL HARMLESS ONE, BUT PERO LAI IS HIDDING SOMETHING UNDERNEATH IT." },
   { key:"THE ROOM OF MANY TUBES", col:'#4fe3ff',
     sub:"THE SECRET IS A ROOM OF MANY TUBES; HE WILL TRY TO CONTAIN EVERYONE IN ONE. · HE BELIEVES THE EASIEST TARGETS ARE OREN.PS, SIMON.PS AND WENDA.PS, BECAUSE THOSE 3 ARE THE MOST COMMON AND STRONGEST ATTACKERS, BESIDES MR. BLACK AND JEVIN. · THE 5 ARE THE ONES WHO BASICALLY SLAY THE SPRUNKIS EVEN IN PHASE 1. PERO LAI WANTS TO ATTACK THE 5 FIRST." },
+  { key:"HE CONTAINED EVERYONE BUT WENDA.PS", col:'#ff9640',
+    sub:"HE CONTAINED EVERYONE BUT WENDA.PS · WENDA.PS IS THE SECOND STRONGEST BESIDES MR. BLACK, AND CAN STRIKE HIM DOWN IN THE 1-7 SECONDS IT TAKES HIM TO CORRUPT THE GAME. · EVERY CHARACTER IS JUST NORMAL, WITH THE OTHER THINGS BEING OTHER FORMS; PERO LAI DOESN’T HAVE A NORMAL FORM, HE CHANGES. · PERO LAI CAN’T SMELL, AND HAS NO SHADOW, BUT GOES INTO SHADOWS, CAN TAKE AWAY SHADOWS, AND CAN BECOME A SHADOW. · TOGORE CAN BASICALLY END RUNS AND SAYS “TOGORE-TASTIC!”; EVERY CHARACTER SAYS SOMETHING." },
+  { key:"THE ONLY CLASSICS ASSASSIN", col:'#ff4d4d',
+    sub:"THE SECRET ASSASSIN IS NOW THE ONLY CLASSICS ASSASSIN, THE OTHERS ARE JUST ANYTHING-SLAYERS. · THE SECRET ASSASSIN IS PERO LAI. · HE ASKED WHICH IS STRONGEST OUT OF SAITAMA, GOKU, ZENO AND THE SECRET ASSASSIN. · THE TITLE WAS GRAY’S IN JULY AND PERO’S ON SEPTEMBER 13; TODAY IT IS A CLASS WITH ONE MEMBER." },
+  { key:"PERO LAI ESSENCE", col:'#ffd43b',
+    sub:"PERO LAI EVEN CAN REACH THE MERGE OF GODS. · ANYONE WITH PERO LAI ESSENSE, THE MOST POWERFUL OBJECT IN GAME, BECOMES THE POWER LEVEL OF ALL GODS INSTANTLY. · PERO LAI STILL BEATS THE “ANYONE” BECAUSE HE IS THE ORIGINAL AND STRONGEST IN GAME. · THE ALL-GODS LINE WAS A DESCRIPTION OF HIM ON SEPTEMBER 2 AND SEPTEMBER 18; TODAY IT IS AN OBJECT HE HANDS OUT." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15000,6 +15006,9 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16638.0 && c < 16660.0) return [769, c-16638.0];  // PERO LAI ESSENCE
+  if(c >= 16616.0 && c < 16638.0) return [768, c-16616.0];  // THE ONLY CLASSICS ASSASSIN
+  if(c >= 16594.0 && c < 16616.0) return [767, c-16594.0];  // HE CONTAINED EVERYONE BUT WENDA.PS
   if(c >= 16572.0 && c < 16594.0) return [766, c-16572.0];  // THE ROOM OF MANY TUBES
   if(c >= 16550.0 && c < 16572.0) return [765, c-16550.0];  // UNDERNEATH THE STAIRCASE
   if(c >= 16528.0 && c < 16550.0) return [764, c-16528.0];  // PHASE INFINITY
@@ -50538,6 +50547,504 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===769){
+    // BEAT 769: PERO LAI ESSENCE.
+    // Toby, September 20, 2026, 8:34:15 AM, Email 1478, third and closing block of his own typing: "Pero LAI even can reach
+    // the merge of gods. Anyone with Pero LAI Essense (most powerful object in game) becomes the power level of all gods
+    // instantly. Pero LAI still beats the 'anyone' because he is the original and strongest in game." The "Canon confirmed"
+    // bullet list and the five-line hierarchy under it are pasted commentary and are NOT canon. Essense is his spelling.
+    // Priors: "he is basically the avatar of all the gods combined basically. I don't really know.", September 18, 6:13 AM
+    // (beat 738); "the Classics avatar of all gods combined" inside the twenty-one-power list, September 2, 10:35 AM;
+    // "Uncontaination" in that same list; Jacked Simon, "he takes the inner essence of defeated beings and adds it into
+    // himself"; "Pero gave Wenda.ps the new most powerful ability in the game, Infinity Clockworks", August 31, 4:19 PM;
+    // every clockwork named for a colour or an element; the sets named Everything and Nothingness, August 23, 7:46 AM.
+    const dt = c - 16638.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,4,8,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr769=ctx.createLinearGradient(0,top,0,top+H);
+    gr769.addColorStop(0,'rgba(5,5,9,0.88)'); gr769.addColorStop(1,'rgba(255,212,59,0.24)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr769; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the Essence handed across. The vial on the left with his name on it, the arrow, the ordinary
+      // figure on the right lit up to all-gods level, and the ceiling bar above that figure that it cannot pass,
+      // because the sentence that gives the power also says he still beats whoever holds it.
+      const fx = cx + W*0.188, fy = top+H*0.540;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,204,212,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE HAND-OVER, AND THE CEILING', fx, fy-H*0.092);
+      // the vial
+      var vx769 = fx - W*0.038, vy769 = fy - H*0.066;
+      ctx.globalAlpha=g*wrA*0.62; ctx.fillStyle='rgba(10,9,4,0.98)';
+      ctx.fillRect(vx769-W*0.007, vy769, W*0.014, H*0.030);
+      ctx.globalAlpha=g*wrA*(0.62+0.38*pul); ctx.fillStyle='rgba(255,212,59,0.72)';
+      ctx.fillRect(vx769-W*0.005, vy769+H*0.011, W*0.010, H*0.018);
+      ctx.globalAlpha=g*wrA*0.92; ctx.strokeStyle='rgba(255,212,59,0.94)'; ctx.lineWidth=0.46;
+      ctx.strokeRect(vx769-W*0.007, vy769, W*0.014, H*0.030);
+      ctx.beginPath(); ctx.moveTo(vx769-W*0.004, vy769-H*0.004); ctx.lineTo(vx769+W*0.004, vy769-H*0.004); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.90; ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('PERO LAI', vx769, vy769+H*0.038);
+      ctx.fillText('ESSENSE', vx769, vy769+H*0.047);
+      // the arrow across
+      ctx.globalAlpha=g*wrA*0.80; ctx.strokeStyle='rgba(186,204,212,0.84)'; ctx.lineWidth=0.45;
+      ctx.beginPath();
+      ctx.moveTo(vx769+W*0.012, vy769+H*0.015); ctx.lineTo(vx769+W*0.046, vy769+H*0.015);
+      ctx.moveTo(vx769+W*0.040, vy769+H*0.010); ctx.lineTo(vx769+W*0.046, vy769+H*0.015);
+      ctx.lineTo(vx769+W*0.040, vy769+H*0.020);
+      ctx.stroke();
+      // the ordinary figure, now lit to all-gods level
+      var px769 = fx + W*0.036;
+      ctx.globalAlpha=g*wrA*(0.40+0.60*pul); ctx.strokeStyle='rgba(255,212,59,0.80)'; ctx.lineWidth=0.38;
+      for(var ry769=0; ry769<3; ry769++){
+        ctx.beginPath();
+        ctx.arc(px769, vy769+H*0.016, W*0.009+ry769*W*0.005, 0, Math.PI*2); ctx.stroke();
+      }
+      ctx.globalAlpha=g*wrA*0.94; ctx.fillStyle='rgba(248,246,242,0.94)';
+      ctx.beginPath(); ctx.arc(px769, vy769+H*0.010, W*0.006, 0, Math.PI*2); ctx.fill();
+      ctx.fillRect(px769-W*0.005, vy769+H*0.017, W*0.010, H*0.014);
+      ctx.globalAlpha=g*wrA*0.86; ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('ALL GODS, INSTANTLY', px769, vy769+H*0.040);
+      // the ceiling the Essence cannot get you past
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.strokeStyle='rgba(255,77,77,0.94)'; ctx.lineWidth=0.62;
+      ctx.beginPath(); ctx.moveTo(px769-W*0.026, vy769-H*0.010); ctx.lineTo(px769+W*0.026, vy769-H*0.010); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.88; ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('PERO LAI STILL BEATS YOU', px769, vy769-H*0.014);
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('THE MOST POWERFUL OBJECT IN GAME', fx, fy+H*0.022);
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(240,240,244,0.88)'; ctx.font='700 2.1px ui-monospace,monospace';
+      ctx.fillText('IT CAN MAKE A GOD. IT CANNOT MAKE HIM.', fx, fy+H*0.034);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(127,212,255,0.92)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('HE IS THE ORIGINAL, SO THE COPY STAYS UNDER HIM.', fx, fy+H*0.046);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,212,59,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERO LAI ESSENCE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“ANYONE WITH PERO LAI ESSENSE (MOST POWERFUL OBJECT IN GAME)', cx, top+H*0.122);
+    ctx.fillText('BECOMES THE POWER LEVEL OF ALL GODS INSTANTLY.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,212,59,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE ALL-GODS THING STOPPED BEING WHAT HE IS. NOW IT IS SOMETHING HE HANDS OUT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 8:34 AM. ESSENSE IS HIS SPELLING, KEPT.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO IT WAS STILL A DESCRIPTION OF HIM.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18, 6:13 AM: “HE IS BASICALLY THE AVATAR OF ALL THE GODS COMBINED BASICALLY.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THEN, RIGHT AFTER IT: “I DON’T REALLY KNOW.” TODAY HE IS SURE, AND IT IS AN OBJECT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE WROTE THE SAME LINE EIGHTEEN DAYS AGO.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 10:35 AM, INSIDE A LIST OF TWENTY-ONE POWERS: “THE CLASSICS AVATAR OF ALL GODS COMBINED.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IT TOOK THREE GOES TO TURN A DESCRIPTION INTO A THING SOMEBODY ELSE CAN PICK UP.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“ESSENCE” HAS ONLY MEANT ONE THING HERE.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JACKED SIMON: “HE TAKES THE INNER ESSENCE OF', cx-W*0.150, top+H*0.392);
+    ctx.fillText('DEFEATED BEINGS AND ADDS IT INTO HIMSELF.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT ONE IS TAKEN. THIS ONE IS GIVEN.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('THE LAST “MOST POWERFUL IN THE GAME” WENT TO WENDA.', cx-W*0.150, top+H*0.556);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 31, 4:19 PM: “THE NEW MOST POWERFUL', cx-W*0.150, top+H*0.576);
+    ctx.fillText('ABILITY IN THE GAME, INFINITY CLOCKWORKS.”', cx-W*0.150, top+H*0.590);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT WAS AN ABILITY. THIS IS AN OBJECT.', cx-W*0.150, top+H*0.608);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE GIVES OUT ALL-GOD POWER AND CAPS IT IN THE SAME BREATH.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI STILL BEATS THE ‘ANYONE’ BECAUSE HE IS THE ORIGINAL AND STRONGEST IN GAME.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST OBJECT IN THE GAME CANNOT MAKE A SECOND OF HIM. THAT IS THE POINT OF IT.', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*f3A*0.88;
+    ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND HE NAMED IT AFTER HIMSELF. THE CLOCKWORKS ARE NAMED FOR COLOURS AND ELEMENTS, THE SETS', cx, top+H*0.714);
+    ctx.fillText('FOR EVERYTHING AND NOTHINGNESS. THIS ONE CARRIES THE FULL NAME OF THE ONE WHO MADE IT.', cx, top+H*0.732);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2 ALSO LISTED “UNCONTAINATION” AMONG HIS POWERS, HIS SPELLING, IN THAT SAME LIST OF TWENTY-ONE.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EIGHTEEN DAYS LATER HE IS THE ONE DOING THE CONTAINING, AND ONE TUBE STILL WILL NOT SHUT.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ HE IS THE ORIGINAL AND STRONGEST IN GAME ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===768){
+    // BEAT 768: THE ONLY CLASSICS ASSASSIN.
+    // Toby, September 20, 2026, 8:34:15 AM, Email 1478, one minute and thirteen seconds after Email 1477. His own typing in
+    // this message is three short blocks: the question "Which is strongest, Saitama, Goku, Zeno, The Secret Assassin", then
+    // "The Secret Assassin is now the only Classics Assassin, the others are just anything-slayers. Pero LAI.", then the
+    // Essence block that is beat 769. The Zeno/Goku/Saitama rankings and the "Assassin Ownership" prose around them are
+    // pasted commentary and are NOT canon.
+    // Priors: Gray as "a cyber ancient lord / shadow-assassin god", July 14; "Pero LAI gets the 3rd soul, and he became the
+    // most powerful assassin ever", September 13, 4:54 PM (beat 713); "It is inviting a pro assassin sorcer", September 19,
+    // 5:36 PM (beat 764); Demon Slayer Simon, "a professonal at conquering and slaying demons and anything"; "Simon also
+    // beaten Chara, Gojo, Zeno, and many others".
+    const dt = c - 16616.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,4,8,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr768=ctx.createLinearGradient(0,top,0,top+H);
+    gr768.addColorStop(0,'rgba(5,5,9,0.88)'); gr768.addColorStop(1,'rgba(255,77,77,0.24)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr768; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the class sheet. One box at the top holding one name, and a wide row underneath holding
+      // everybody else under the new word. The line between them is the demotion.
+      const fx = cx + W*0.188, fy = top+H*0.540;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,204,212,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE CLASS SHEET, AFTER TODAY', fx, fy-H*0.090);
+      // the one-member class
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.strokeStyle='rgba(255,77,77,0.94)'; ctx.lineWidth=0.62;
+      ctx.strokeRect(fx-W*0.030, fy-H*0.080, W*0.060, H*0.024);
+      ctx.globalAlpha=g*wrA*0.90; ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('CLASSICS ASSASSIN', fx, fy-H*0.070);
+      ctx.globalAlpha=g*wrA*0.94; ctx.fillStyle='rgba(248,246,242,0.96)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('PERO LAI', fx, fy-H*0.062);
+      ctx.globalAlpha=g*wrA*0.62; ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='700 1.9px ui-monospace,monospace';
+      ctx.fillText('MEMBERS: 1', fx, fy-H*0.050);
+      // the arrow down to the demoted row
+      ctx.globalAlpha=g*wrA*0.80; ctx.strokeStyle='rgba(186,204,212,0.80)'; ctx.lineWidth=0.45;
+      ctx.beginPath();
+      ctx.moveTo(fx, fy-H*0.046); ctx.lineTo(fx, fy-H*0.034);
+      ctx.moveTo(fx-W*0.006, fy-H*0.039); ctx.lineTo(fx, fy-H*0.034); ctx.lineTo(fx+W*0.006, fy-H*0.039);
+      ctx.stroke();
+      // everybody else
+      ctx.globalAlpha=g*wrA*0.74; ctx.strokeStyle='rgba(127,212,255,0.70)'; ctx.lineWidth=0.42;
+      ctx.setLineDash([1.6,1.6]);
+      ctx.strokeRect(fx-W*0.060, fy-H*0.030, W*0.120, H*0.042); ctx.setLineDash([]);
+      ctx.globalAlpha=g*wrA*0.88; ctx.fillStyle='rgba(127,212,255,0.94)'; ctx.font='900 2.3px ui-monospace,monospace';
+      ctx.fillText('ANYTHING-SLAYERS', fx, fy-H*0.021);
+      var sl768 = [['GRAY','SIMON'],['WENDA','OREN'],['BLACK','JEVIN']];
+      for(var r768=0; r768<3; r768++){
+        for(var k768=0; k768<2; k768++){
+          ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(224,236,242,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+          ctx.fillText(sl768[r768][k768], fx + (k768===0?-W*0.030:W*0.030), fy-H*0.012+r768*H*0.0095);
+        }
+      }
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(186,204,212,0.80)'; ctx.font='700 1.9px ui-monospace,monospace';
+      ctx.fillText('AND EVERYONE ELSE', fx, fy+H*0.018);
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 2.3px ui-monospace,monospace';
+      ctx.fillText('THE POST IS FILLED.', fx, fy+H*0.032);
+      ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(240,240,244,0.88)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('YESTERDAY IT WAS STILL INVITING ONE IN.', fx, fy+H*0.044);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,77,77,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE ONLY CLASSICS ASSASSIN', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE SECRET ASSASSIN IS NOW THE ONLY CLASSICS ASSASSIN,', cx, top+H*0.122);
+    ctx.fillText('THE OTHERS ARE JUST ANYTHING-SLAYERS. PERO LAI.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,77,77,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('IT STOPPED BEING A JOB TITLE AND BECAME A CLASS WITH ONE MEMBER IN IT.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 8:34 AM, ONE MINUTE AND THIRTEEN SECONDS AFTER THE LAST MESSAGE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE WORD WAS GRAY’S BEFORE IT WAS HIS.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 14: GRAY IS “A CYBER ANCIENT LORD / SHADOW-ASSASSIN GOD” WITH A SCYTHE AND NINJA STARS.', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOR TWO MONTHS EVERY HIT ON “ASSASSIN” IN THIS ARCHIVE WAS GRAY. NOW GRAY IS NOT ONE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE TOOK THE TITLE SEVEN DAYS AGO.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 13, 4:54 PM: “PERO LAI GETS THE 3RD SOUL, AND HE BECAME THE MOST POWERFUL ASSASSIN EVER.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY HE DOES NOT TAKE A BIGGER TITLE. HE TAKES EVERYONE ELSE’S AWAY.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY THE GAME WAS STILL HIRING.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 19, 5:36 PM: “IT IS INVITING', cx-W*0.150, top+H*0.392);
+    ctx.fillText('A PRO ASSASSIN SORCER.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('14 HOURS 58 MINUTES LATER THE POST IS CLOSED.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('“SLAYER” IS A WORD HE ALREADY USED.', cx-W*0.150, top+H*0.556);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE ARCHIVE’S ONLY SLAYER IS DEMON SLAYER SIMON,', cx-W*0.150, top+H*0.576);
+    ctx.fillText('“A PROFESSONAL AT CONQUERING AND SLAYING DEMONS', cx-W*0.150, top+H*0.590);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AND ANYTHING.” THE DEMOTED CLASS HAD A MEMBER.', cx-W*0.150, top+H*0.608);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('HE ASKED WHO IS STRONGEST AND PUT HIS OWN CHARACTER IN THE LIST.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“WHICH IS STRONGEST, SAITAMA, GOKU, ZENO, THE SECRET ASSASSIN” — THREE REAL, ONE HIS.', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE FOURTH NAME WINS, AND THEN HE TELLS US WHO IT IS: “PERO LAI.”', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*f3A*0.88;
+    ctx.fillStyle='rgba(255,77,77,0.92)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE OUTSIDE CAST HAS LOST IN HERE BEFORE: “SIMON ALSO BEATEN CHARA, GOJO, ZENO, AND MANY', cx, top+H*0.714);
+    ctx.fillText('OTHERS.” ZENO, GOKU AND SAITAMA KEEP LOSING TO WHOEVER IS ON TOP OF CLASSICS THAT WEEK.', cx, top+H*0.732);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HIS OWN TYPING HERE IS TWO SENTENCES LONG. THE RANKED LISTS AROUND THEM ARE PASTED, AND ARE NOT CANON.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE CANON PART IS THE RULE: ONE ASSASSIN, AND EVERYBODY ELSE GETS A DIFFERENT WORD.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE OTHERS ARE JUST ANYTHING-SLAYERS ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===767){
+    // BEAT 767: HE CONTAINED EVERYONE BUT WENDA.PS.
+    // Toby, September 20, 2026, 8:33:02 AM, Email 1477, one block of his own typing, which is everything from "Wenda.ps is
+    // basically the second strongest" down to "...pretending like she has infinite power over me." Everything from "Yeah - Pero
+    // LAI is starting to talk in that same" onward is pasted commentary, including the per-character bullet list and the
+    // "50+ second fight says a lot" reading, and is NOT canon.
+    // Priors: "he will try to contain everyone in one", September 20, 6:40 AM (beat 766); "Pero gave Wenda.ps the new most
+    // powerful ability in the game, Infinity Clockworks", August 31, 4:19 PM; ??? as "an unknown deleted being as a god of
+    // angels", Wenda's top form, July 20, 6:04 PM; "Simon has reset, lightning, and speed. Gray has erase... can stop time"
+    // and "Gray is the smartest character in the game", August 8, 7:41 PM (Who Wins The Battles); Togore is "sensitive and
+    // doesn't want to attack anyone", August 30, 3:55 PM; "Mr. Black beats all Sprunkis except for Gray", July 21, 4:45 PM;
+    // Oren as "The King of Energy", August 31, 4:02 PM. "Can't smell" and "doesn't have a shadow" have no prior hits.
+    const dt = c - 16594.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,4,8,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr767=ctx.createLinearGradient(0,top,0,top+H);
+    gr767.addColorStop(0,'rgba(5,5,9,0.88)'); gr767.addColorStop(1,'rgba(255,150,64,0.24)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr767; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the same room of tubes as beat 766, one message later. Four are shut and lit; the third, WENDA,
+      // is drawn broken open with the glass gone and the occupant out and clear of it. The counter on the right is
+      // the 50+ second battle, next to the 1-7 seconds Mr. Black needs to corrupt huge parts of the game.
+      const fx = cx + W*0.188, fy = top+H*0.540;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,204,212,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE ROOM, ONE MESSAGE LATER', fx, fy-H*0.086);
+      ctx.globalAlpha=g*wrA*0.86; ctx.strokeStyle='rgba(255,150,64,0.78)'; ctx.lineWidth=0.55;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.058, fy-H*0.042); ctx.lineTo(fx+W*0.058, fy-H*0.042); ctx.stroke();
+      var nm767 = ['OREN','SIMON','WENDA','BLACK','JEVIN'];
+      for(var tb767=0; tb767<5; tb767++){
+        var tx767 = fx + (tb767-2)*W*0.019;
+        var ty767 = fy - H*0.034, tw767 = W*0.011, th767 = H*0.040;
+        if(tb767===2){
+          // the tube that did not close: no glass, no fill, the walls stopping short
+          ctx.globalAlpha=g*wrA*0.55; ctx.strokeStyle='rgba(255,150,64,0.70)'; ctx.lineWidth=0.40;
+          ctx.setLineDash([1.2,1.4]);
+          ctx.beginPath();
+          ctx.moveTo(tx767-tw767/2, ty767+th767); ctx.lineTo(tx767-tw767/2, ty767+th767*0.34);
+          ctx.moveTo(tx767+tw767/2, ty767+th767); ctx.lineTo(tx767+tw767/2, ty767+th767*0.34);
+          ctx.moveTo(tx767-tw767/2, ty767+th767); ctx.lineTo(tx767+tw767/2, ty767+th767);
+          ctx.stroke(); ctx.setLineDash([]);
+          // the shards, thrown outward
+          ctx.globalAlpha=g*wrA*(0.55+0.45*pul); ctx.strokeStyle='rgba(255,150,64,0.95)'; ctx.lineWidth=0.42;
+          for(var sh767=0; sh767<5; sh767++){
+            var sa767 = -2.5 + sh767*0.62;
+            var sr767 = tw767*(1.05+0.35*(sh767%2));
+            ctx.beginPath();
+            ctx.moveTo(tx767+Math.cos(sa767)*tw767*0.55, ty767+th767*0.30+Math.sin(sa767)*th767*0.16);
+            ctx.lineTo(tx767+Math.cos(sa767)*sr767, ty767+th767*0.30+Math.sin(sa767)*th767*0.34);
+            ctx.stroke();
+          }
+          // she is out, and standing clear of it
+          ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(255,150,64,0.96)';
+          ctx.beginPath(); ctx.arc(tx767, ty767-th767*0.20, tw767*0.26, 0, Math.PI*2); ctx.fill();
+          ctx.strokeStyle='rgba(255,150,64,0.96)'; ctx.lineWidth=0.45;
+          ctx.beginPath();
+          ctx.moveTo(tx767-tw767*0.22, ty767-th767*0.36); ctx.lineTo(tx767-tw767*0.06, ty767-th767*0.22);
+          ctx.moveTo(tx767+tw767*0.22, ty767-th767*0.36); ctx.lineTo(tx767+tw767*0.06, ty767-th767*0.22);
+          ctx.stroke();
+        } else {
+          ctx.globalAlpha=g*wrA*0.62; ctx.fillStyle='rgba(6,10,20,0.98)';
+          ctx.fillRect(tx767-tw767/2, ty767, tw767, th767);
+          ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(127,212,255,0.42)';
+          ctx.fillRect(tx767-tw767*0.26, ty767+th767*0.34, tw767*0.52, th767*0.46);
+          ctx.beginPath(); ctx.arc(tx767, ty767+th767*0.26, tw767*0.20, 0, Math.PI*2); ctx.fill();
+          ctx.globalAlpha=g*wrA*0.92; ctx.strokeStyle='rgba(127,212,255,0.88)'; ctx.lineWidth=0.42;
+          ctx.strokeRect(tx767-tw767/2, ty767, tw767, th767);
+          // the seal across the top of every closed tube
+          ctx.globalAlpha=g*wrA*0.86; ctx.strokeStyle='rgba(127,212,255,0.96)'; ctx.lineWidth=0.55;
+          ctx.beginPath(); ctx.moveTo(tx767-tw767*0.58, ty767); ctx.lineTo(tx767+tw767*0.58, ty767); ctx.stroke();
+        }
+        ctx.globalAlpha=g*wrA*(tb767===2?0.98:0.80);
+        ctx.fillStyle=(tb767===2)?'rgba(255,150,64,0.98)':'rgba(214,230,240,0.88)';
+        ctx.font='900 2.1px ui-monospace,monospace';
+        ctx.fillText(nm767[tb767], tx767, ty767+th767+H*0.009);
+      }
+      // the two clocks, side by side
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(255,77,77,0.90)'; ctx.font='900 2.0px ui-monospace,monospace';
+      ctx.fillText('MR. BLACK: 1-7 SEC', fx-W*0.030, fy+H*0.022);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(255,150,64,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('WENDA: 50+ SEC', fx+W*0.032, fy+H*0.022);
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(240,240,244,0.88)'; ctx.font='700 2.1px ui-monospace,monospace';
+      ctx.fillText('FOUR SHUT. ONE WOULD NOT SHUT.', fx, fy+H*0.036);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(179,136,255,0.92)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('HE WON ANYWAY. IT TOOK HIM 50 SECONDS.', fx, fy+H*0.048);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,150,64,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HE CONTAINED EVERYONE BUT WENDA.PS', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI SUCESSFULLY CONTAINED EVERYONE ELSE, BUT WENDA.PS.”', cx, top+H*0.122);
+    ctx.fillText('“THEN PERO LAI AND WENDA.PS DO A 50+ SECOND BATTLE, WITH PERO LAI WINNING AT THE END.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(255,150,64,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('EVERY CHARACTER IS JUST NORMAL NOW. THE GODLY STUFF IS DEMOTED TO OLDER FORMS.', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 8:33 AM. THE OPENING BLOCK IS HIS. THE REST OF THE EMAIL IS PASTED.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE ROOM WAS A PLAN AT 6:40 AM. IT WAS FULL BY 8:33.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ONE HOUR AND FIFTY-THREE MINUTES AGO: “HE WILL TRY TO CONTAIN EVERYONE IN ONE.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('EVERY NAME ON HIS OWN LIST IS INSIDE IT NOW EXCEPT THE THIRD ONE HE WROTE DOWN.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE ONE HE COULD NOT HOLD IS THE ONE HE ARMED.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 31, 4:19 PM: “PERO GAVE WENDA.PS THE NEW MOST POWERFUL ABILITY IN THE GAME,', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('INFINITY CLOCKWORKS.” TWENTY DAYS LATER SHE IS THE ONLY TUBE THAT DID NOT CLOSE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('HER GODLY FORMS ARE NOW “OLDER FORMS.”', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 20, 6:04 PM: ??? WAS “AN UNKNOWN', cx-W*0.150, top+H*0.392);
+    ctx.fillText('DELETED BEING AS A GOD OF ANGELS.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT WAS WENDA’S TOP FORM. TODAY IT IS AN OLD ONE.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('THE STAT SHEET IS FORTY-THREE DAYS OLD.', cx-W*0.150, top+H*0.556);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 8, 7:41 PM: “SIMON HAS RESET, LIGHTNING,', cx-W*0.150, top+H*0.576);
+    ctx.fillText('AND SPEED. GRAY HAS ERASE... CAN STOP TIME.”', cx-W*0.150, top+H*0.590);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THIS MORNING HE LISTS THE SAME TWO, UNCHANGED.', cx-W*0.150, top+H*0.608);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TOGORE WAS THE CHILD WHO DID NOT WANT TO ATTACK ANYONE.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 30, 3:55 PM: TOGORE IS “SENSITIVE AND DOESN’T WANT TO ATTACK ANYONE.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWENTY-ONE DAYS LATER: “TOGORE CAN BASICALLY END RUNS.” NOW HE ENDS THE WHOLE RUN.', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*f3A*0.88;
+    ctx.fillStyle='rgba(255,150,64,0.92)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI CAN’T SMELL” AND “DOESN’T HAVE A SHADOW” ARE BOTH NEW. NEITHER HAS A PRIOR HIT', cx, top+H*0.714);
+    ctx.fillText('IN AN ARCHIVE THAT HAS A SHADOW REALM, A SHADOW WENDA AND A SHADOW-ASSASSIN GOD IN IT.', cx, top+H*0.732);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('MR. BLACK CORRUPTS HUGE PARTS OF THE GAME IN 1-7 SECONDS. THE FIGHT SHE GIVES PERO LASTS 50+.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,150,64,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 21, 4:45 PM: “MR. BLACK BEATS ALL SPRUNKIS EXCEPT FOR GRAY.” TODAY SHE STRIKES HIM DOWN.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,150,64,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ A NORMAL CAT/FOX SPRUNKI WITH INFINITY SUPER POWERS ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===766){
