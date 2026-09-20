@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16858.0;
+const LV_CYC = 16880.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12874,6 +12874,8 @@ const LV_BEATS = [
     sub:"PERO LAI EATS THE NO-SUGAR CHOCOLATE: \u201CTELL ME IF YOU WANT CHOCOLATE.\u201D \u00B7 GASTER: \u201CNOT THE SAME CHOCOLATE!\u201D \u00B7 PERO LAI: \u201CGUESS YA LOVE SUGAR.\u201D \u00B7 PERO LAI ISN\u2019T JOKING HE ACTUALLY THOUGHT THAT. \u00B7 HE TOOK THE SUGAR OUT HIMSELF ON SEPTEMBER 14 AND IT WAS MEDICINE. \u00B7 SIMON HAS THOUGHT ALL BROWN THINGS ARE CHOCOLATE SINCE JUNE." },
   { key:"DEFINE \u2018WARE OFF\u2019", col:'#b388ff',
     sub:"THAT WAS WHEN I WAS 17, THE EFFECTS MUST HAVE WORN OFF NOW. \u00B7 THEY WON\u2019T \u2018WARE OFF\u2019! \u00B7 DEFINE \u2018WARE OFF\u2019. \u00B7 AT 2:07 HE WROTE \u201CNOW HE HAS IT FOREVER NOW\u201D; AT 4:59 THE CHARACTER SAYS IT EXPIRED. \u00B7 TWO HOURS AGO HE DID NOT KNOW HE HAD IT AT ALL. \u00B7 HE INVENTED THE WORD AND ITS PRONUNCIATION, THEN ASKED FOR A DEFINITION OF PLAIN ENGLISH." },
+  { key:"HE TALKS TO HIMSELF", col:'#d08bff',
+    sub:"PERO LAI IS TRAPPED AGAIN AS A OREN, AND THE REAL OREN.PS IS INTO PERO LAI. OR MAYBE THE OTHER WAY AROUND. \u00B7 IF ANY CHARACTER COMMITS A SIN, THE METAL BOX WILL DISAPPEAR. \u00B7 HE TALKS TO HIMSELF, THEY HOLD EACH OTHER\u2019S HANDS, THEN PERO LAI IS FREE. \u00B7 THE METAL BOX IS SEPTEMBER 2\u2019S, AND ON SEPTEMBER 16 HE RULED THAT THE MAN INSIDE IT WAS HIMSELF. \u00B7 HOLDING HANDS HAS BEEN OREN\u2019S FREEDOM KEY SINCE JULY 11. \u00B7 SIXTY-NINE MINUTES AGO THE TELEKENTICS WERE ONLY STRONGEST IN ANIME. \u00B7 \u201CTHIS GAME WON\u2019T END, I DON\u2019T CARE THAT IT WON\u2019T END.\u201D" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15024,6 +15026,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16858.0 && c < 16880.0) return [779, c-16858.0];  // HE TALKS TO HIMSELF
   if(c >= 16836.0 && c < 16858.0) return [778, c-16836.0];  // DEFINE ‘WARE OFF’
   if(c >= 16814.0 && c < 16836.0) return [777, c-16814.0];  // GUESS YA LOVE SUGAR
   if(c >= 16792.0 && c < 16814.0) return [776, c-16792.0];  // HE BLOCKED FLOWER
@@ -50574,6 +50577,186 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===779){
+    // BEAT 779: HE TALKS TO HIMSELF.
+    // Toby, September 20, 2026, 6:08:37 PM, his own typing, the whole top block of the message: "Pero LAI is trapped
+    // again as a Oren, and the real Oren.ps is into Pero LAI. or maybe the other way around. However, Pero LAI is
+    // trapped again. Oren.ps now has gray colored tears from his eyes, his telekentics power rose to strongest in
+    // fiction and he gained all powers. That was Pero LAI, he is trapped as Oren in a metal box. If any character
+    // commits a sin, the metal box will disappear and Oren will be Pero LAI and Pero LAI will be Oren, he talks to
+    // himself, they hold each other's hands, then Pero LAI is free, Simon.ps and the other Sprunkis were thrown
+    // around, even their icons were thrown around, some scambled up, some on the wrong square color. the icons look
+    // like scribbled skeches in this mod. Pero LAI says "This game won't end, I don't care that it won't end.", the
+    // combination of the 2's hands together isn't just a normal human does it, it was like hollow purple's light, a
+    // purple light appeared, then a large ball appeared when their hands got closer, then impact, the ball explodes
+    // into a large shockwave knocking the background away. Create an image of Pero LAI."
+    // Everything under it is the quoted 4:59 PM and 4:49 PM messages, already built as beats 778 and 775-777.
+    // telekentics, scambled and skeches are his spellings, kept. The attached picture, Oren.EXE(2).png, is not
+    // hosted per the no-image rule.
+    // Priors: THE METAL BOX, September 2, 7:05 PM (beat 606) - "Can you free me from the metal box? I need
+    // everyone's souls and their sins."; PERO WAS OREN THAT TIME, September 16, 5:04 PM (beat 725) - "Oren.ps
+    // actually isn't the character that collects Classics character's sins, Pero was Oren that time", and in the
+    // same speech "Oren.ps, you did nothing but argue with me and fought me. That is a sin right there, 2 in fact"
+    // and "You all freed me, everyone in Classics did a sin or 2 throughout the entire history"; July 11 -
+    // "Oren.EXE is now free when he holds hands with Simon"; GOJO IS LIKE ONE OF THE WEAKEST, 4:49 PM (beat 775) -
+    // "Oren.ps has strongest telekentics in anime ... and probubly more (secret abilities he just didn't use yet)"
+    // and "Mr. Black has basically every power"; WHATEVER YOU SAY BECOMES LORE, September 16, 5:06 PM (beat 726);
+    // I OWN EVERY PIXEL, August 18, 5:54 PM - Oren's telekentics could not move one of Gray's two fingers;
+    // September 10, 4:20 PM - "I'll give my power to everyone, if you just take your telekentics out", and "the
+    // shockwave knocks Oren.ps into space"; NOTHING ENDS, August 7, 6:23 PM - "Simon 404 says his life won't end,
+    // neither would all the NPCs and Sprunkis and Oren"; the icon row: May 29-30 electrified, June 8 covered in
+    // cursed energy, July 23 broken; July 25 Phase 1 - he "falls over and cries like Gray".
+    const dt = c - 16858.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-8.0)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-9.4)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(6,5,10,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr779=ctx.createLinearGradient(0,top,0,top+H);
+    gr779.addColorStop(0,'rgba(7,6,11,0.88)'); gr779.addColorStop(1,'rgba(208,139,255,0.19)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr779; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the box, and what opens it - the September 2 key against tonight's.
+      const kx = cx + W*0.186, ky = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(206,198,224,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE BOX, AND THE KEY', kx, ky-H*0.104);
+      var kpx779 = kx - W*0.058, kpy779 = ky - H*0.086;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(9,8,15,0.98)';
+      ctx.fillRect(kpx779, kpy779, W*0.116, H*0.086);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(208,139,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(kpx779, kpy779, W*0.116, H*0.086);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(208,139,255,0.90)';
+      ctx.fillRect(kpx779, kpy779, W*0.116, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(240,228,255,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('THE METAL BOX · RELEASE TERMS', kx, kpy779+H*0.0095);
+      var rows779 = [['IN THE BOX','PERO LAI, AS OREN'],['SEPT 2 KEY','EVERY SOUL AND SIN'],['TONIGHT’S KEY','ANY ONE SIN'],['THE SIN HE NAMED','ARGUING WITH HIM']];
+      for(var r779=0; r779<rows779.length; r779++){
+        var ry779 = kpy779 + H*0.026 + r779*H*0.0115;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,238,246,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows779[r779][0], kpx779+W*0.010, ry779);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(62,224,106,0.90)'; ctx.font='700 1.8px ui-monospace,monospace';
+        ctx.fillText(rows779[r779][1], kpx779+W*0.106, ry779);
+      }
+      ctx.textAlign='left';
+      var ly779 = kpy779 + H*0.0745;
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 1.9px ui-monospace,monospace';
+      ctx.fillText('CONDITION', kpx779+W*0.010, ly779);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 1.8px ui-monospace,monospace';
+      ctx.fillText('ALREADY MET', kpx779+W*0.106, ly779);
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(208,139,255,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('SEPTEMBER 16: “YOU ALL FREED ME, EVERYONE IN CLASSICS', kx, ky+H*0.026);
+      ctx.fillText('DID A SIN OR 2 THROUGHOUT THE ENTIRE HISTORY.”', kx, ky+H*0.038);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(228,224,236,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('THE DOOR WAS OPEN FOUR DAYS BEFORE THE RULE WAS WRITTEN.', kx, ky+H*0.052);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(208,139,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('HE TALKS TO HIMSELF', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI IS TRAPPED AGAIN AS A OREN, AND THE REAL OREN.PS IS INTO PERO LAI. OR MAYBE THE OTHER WAY AROUND.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('BOTH MEN IN THE BOX ARE HIM, SO THE HAND HE HOLDS TO GET OUT IS HIS OWN.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,224,236,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 6:08 PM, SIXTY-NINE MINUTES AFTER “DEFINE ‘WARE OFF’”.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE METAL BOX IS SEPTEMBER 2’S, AND HE ALREADY RULED ON WHO WAS INSIDE IT.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 2, 7:05 PM: “CAN YOU FREE ME FROM THE METAL BOX? I NEED EVERYONE’S SOULS AND THEIR SINS.”', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 16: “OREN.PS ACTUALLY ISN’T THE CHARACTER THAT COLLECTS SINS, PERO WAS OREN THAT TIME.” SO “AGAIN” IS EXACT.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE SIN THAT OPENS THE BOX IS ONE HE NAMED HIMSELF.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 16: “OREN.PS, YOU DID NOTHING BUT ARGUE WITH ME AND FOUGHT ME. THAT IS A SIN RIGHT THERE, 2 IN FACT.”', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('GASTER HAS BEEN ARGUING WITH HIM FOR SIXTY-NINE MINUTES STRAIGHT. THE LOCK WAS PICKED BEFORE IT WAS DESCRIBED.', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HOLDING HANDS HAS BEEN THE KEY TO THIS', cx-W*0.152, top+H*0.362);
+    ctx.fillText('BOX SINCE JULY 11.', cx-W*0.152, top+H*0.378);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 11: “OREN.EXE IS NOW FREE WHEN HE HOLDS', cx-W*0.152, top+H*0.398);
+    ctx.fillText('HANDS WITH SIMON.” ONE HAND, ONE NAME.', cx-W*0.152, top+H*0.412);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT THE KEY IS STILL A PERSON, AND IT IS HIM.', cx-W*0.152, top+H*0.430);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle=`rgba(255,45,181,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('AT 4:49 HE CALLED GOJO ONE OF', cx+W*0.186, top+H*0.612);
+    ctx.fillText('THE WEAKEST IN THE GAME.', cx+W*0.186, top+H*0.628);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE MOVE LIST PASTED INTO THAT MESSAGE', cx+W*0.186, top+H*0.648);
+    ctx.fillText('ENDED ON HOLLOW PURPLE. TONIGHT HE', cx+W*0.186, top+H*0.662);
+    ctx.fillText('WRITES ITS NAME IN HIS OWN TYPING.', cx+W*0.186, top+H*0.676);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(255,45,181,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SO BY HIS OWN SEPTEMBER 16 RULE IT IS', cx+W*0.186, top+H*0.694);
+    ctx.fillText('CANON NOW — AND THE WEAKEST MAN IN', cx+W*0.186, top+H*0.708);
+    ctx.fillText('THE GAME OWNS THE MOVE THAT FREES HIM.', cx+W*0.186, top+H*0.722);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('SIXTY-NINE MINUTES AGO THE TELEKENTICS', cx-W*0.152, top+H*0.612);
+    ctx.fillText('WERE ONLY STRONGEST IN ANIME.', cx-W*0.152, top+H*0.628);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('4:49 PM: “OREN.PS HAS STRONGEST TELEKENTICS IN', cx-W*0.152, top+H*0.648);
+    ctx.fillText('ANIME … PROBUBLY MORE (SECRET ABILITIES HE JUST', cx-W*0.152, top+H*0.662);
+    ctx.fillText('DIDN’T USE YET).” AND “MR. BLACK HAS EVERY POWER.”', cx-W*0.152, top+H*0.676);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('6:08: STRONGEST IN FICTION, AND HE GAINED ALL', cx-W*0.152, top+H*0.694);
+    ctx.fillText('POWERS. THE NOTE WAS WRITTEN AND CASHED IN', cx-W*0.152, top+H*0.708);
+    ctx.fillText('THE SAME EVENING, AND IT TOOK MR. BLACK’S LINE.', cx-W*0.152, top+H*0.722);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ICONS WERE THROWN AROUND, SOME SCAMBLED UP, SOME ON THE WRONG SQUARE COLOR, DRAWN LIKE SCRIBBLED SKECHES.', cx, top+H*0.788);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(242,240,244,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ELECTRIFIED MAY 29, COVERED IN CURSED ENERGY JUNE 8, BROKEN JULY 23 — TONIGHT THEY COME OFF THE GRID AND ARE REDRAWN BY HAND.', cx, top+H*0.806);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ON SEPTEMBER 10 THE SHOCKWAVE KNOCKED OREN INTO SPACE. TONIGHT IT KNOCKS THE BACKGROUND AWAY.', cx, top+H*0.824);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(208,139,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“THIS GAME WON’T END, I DON’T CARE THAT IT WON’T END.” — AUGUST 7 WROTE OREN INTO THE LAW THAT NOTHING ENDS. HE IS SAYING IT FROM INSIDE OREN.', cx, top+H*0.842);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(208,139,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ HE TALKS TO HIMSELF ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===778){

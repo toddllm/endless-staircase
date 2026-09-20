@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — HE TALKS TO HIMSELF (BEAT 779)
+
+Based on Toby's 2026-09-20 lore, **6:08 PM**, sixty-nine minutes after "Define 'Ware Off'". The whole top block is
+his own typing; everything under it is the quoted 4:59 PM and 4:49 PM messages, already built as beats 775-778.
+**telekentics**, **scambled** and **skeches** are his spellings, kept. The attached picture, `Oren.EXE(2).png`, is
+not hosted per the no-image rule.
+
+> "Pero LAI is trapped again as a Oren, and the real Oren.ps is into Pero LAI. or maybe the other way around. …
+> Oren.ps now has gray colored tears from his eyes, his telekentics power rose to strongest in fiction and he gained
+> all powers. That was Pero LAI, he is trapped as Oren in a metal box. If any character commits a sin, the metal box
+> will disappear and Oren will be Pero LAI and Pero LAI will be Oren, he talks to himself, they hold each other's
+> hands, then Pero LAI is free … Pero LAI says "This game won't end, I don't care that it won't end.", the
+> combination of the 2's hands together … was like hollow purple's light."
+
+- new beat 779 at `lvSeg` 16858.0-16880.0, `LV_CYC` 16880.0, `LV_BEATS` length 780
+- inset: the metal box's release terms — IN THE BOX / PERO LAI, AS OREN, SEPT 2 KEY / EVERY SOUL AND SIN, TONIGHT'S
+  KEY / ANY ONE SIN, THE SIN HE NAMED / ARGUING WITH HIM, and under them CONDITION / ALREADY MET
+- panels: September 2's metal box, where Oren asked to be let out for "everyone's souls and their sins", against
+  September 16's correction that "Pero was Oren that time" — so *again* is exact; the sin that opens it is one he
+  named himself on September 16, "you did nothing but argue with me and fought me, that is a sin right there, 2 in
+  fact", and Gaster has been arguing with him for sixty-nine minutes; July 11's "Oren.EXE is now free when he holds
+  hands with Simon", so the key to this box has always been a person and tonight the person is him; 4:49 PM's
+  "strongest telekentics in anime … probubly more (secret abilities he just didn't use yet)" becoming "strongest in
+  fiction and he gained all powers" in one evening, taking Mr. Black's "has basically every power" with it; and the
+  Gojo panel — he called Gojo one of the weakest at 4:49, and at 6:08 he writes Hollow Purple's name in his own
+  typing, which under his own September 16 rule makes it canon
+- footer: the icon row was electrified May 29, covered in cursed energy June 8 and broken July 23; tonight it comes
+  off the grid and is redrawn by hand. September 10's shockwave knocked Oren into space; tonight it knocks the
+  background away. August 7 wrote Oren into the law that nothing ends, and he says "this game won't end" from
+  inside Oren
+- new capture scene `himself779`; screenshots 839 and 840 recaptured for the shifted ladder
+
+![Beat 779 — He Talks To Himself](screenshots/841-he-talks-to-himself.png)
+
 ## 2026-09-20 — DEFINE 'WARE OFF' (BEAT 778)
 
 Based on Toby's 2026-09-20 lore, **4:59 PM**, ten minutes after the chocolate. His own typing is the opening exchange
