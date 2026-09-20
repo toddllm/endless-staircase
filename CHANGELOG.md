@@ -4,6 +4,58 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — IT GAVE HIM EVERYTHING (BEAT 773)
+
+Based on Toby's 2026-09-20 lore, **2:30 PM**, twenty-three minutes after he named the sickness. His own typing is the
+whole opening block; everything from "Then Urinite is basically the hidden master-source" onward is a pasted reply and
+is not canon. **evolvions** is his spelling, kept.
+
+> "Urinite also gave Pero LAI most of his powers and his forms and like everything and curses and evolvions, and it
+> gave him everything, he also now has the power to turn anyone into an Omazen. But it gives Pero LAI zombie-like
+> effects x infinity"
+
+- new beat 773 at `lvSeg` 16726.0-16748.0, `LV_CYC` 16748.0
+- inset: the source diagram. The rock at the top drawn as a dashed empty outline because it is gone, one arrow down
+  into URINITE, a four-way fan-out into POWERS / FORMS / CURSES / EVOLVIONS, and one purple branch below it pointing
+  back out of him — TURN ANYONE INTO AN OMAZEN, the only line on the diagram aimed at somebody else
+- panels: September 18's two-halved origin ("coding them of course, but also the alpheritanuim uranuim") against the
+  second half taking almost all of it; 2:07 PM's "Nope, but normal humanoid body" against 2:30 PM's "zombie-like
+  effects x infinity", so he declines the condition and keeps the symptoms; Omnazen of July 30, built out of Omni +
+  Apex + Omega + Zenith as one character's tier, now a state you can be turned into; Gray on July 21, who could turn
+  "anyone **under him**" into an Abination, a capped downgrade against this uncapped promotion; and September 1's
+  Simon.ps, who "gave Oren the multation" — one mutation, to one person
+- new capture scene `gaveeverything773`
+
+![Beat 773 — It Gave Him Everything](screenshots/835-it-gave-him-everything.png)
+
+## 2026-09-20 — URINITE (BEAT 772)
+
+Based on Toby's 2026-09-20 lore, **2:07 PM**. His own typing is the opening question and, after the pasted guess, the
+block beginning "Answer: They become a zombie."; the guess between them is a pasted reply and is not canon.
+**multations**, **uranuim** and **it's** are his spellings, kept.
+
+> "They become a zombie. Pero LAI touched URANUIM! ... Pero LAI looks at his body and says "Nope, but normal humanoid
+> body.", and those who do either or both those 2 things turn green colored and become zombies. ... alpheritanuim
+> uranium gives urinite. Pero LAI touched the only one of it's kind, the rock disappeared. Making Pero LAI the only
+> one with urinite, it isn't contagious ... Urinite isn't a germ nor virus, but a sickness *only Pero LAI* can have,
+> now he has it forever now. (YOUR-IN-ITE-EE), Pero LAI made the word and how it is pronounced."
+
+- new beat 772 at `lvSeg` 16704.0-16726.0
+- inset: the two rules side by side, because only one of them travels. On the left THE BITE, three green dots on a
+  chain going down and spreading; on the right URINITE, one dot sealed inside a ring with nothing leaving it; the
+  pronunciation (YOUR-IN-ITE-EE) under both
+- panels: September 18's "I blocked Flower from touching it, I touched it" against today's news that it was the only
+  one of its kind and the rock disappeared; June 18's SCF 404: The Sleeping Plague King, the last touch in this game
+  that made zombies, mask off on contact for a 404D, a zombie or dead, done by somebody who believed he was curing
+  you; August 21's Corruption Code 12 12 12, the first thing in the archive that spread, against "zombies are
+  contagious, urinite from Classics isn't"; Omnazen of July 30 as the last word he invented and published the
+  workings of, where this one ships with a pronunciation guide instead; and the Reset Era's "he now looks human, but
+  isn't" under the normal humanoid body he refuses zombiehood with
+- new capture scene `urinite772`
+- screenshots 832 and 833 recaptured because the five-row beat ladder is centred on the current beat
+
+![Beat 772 — Urinite](screenshots/834-urinite.png)
+
 ## 2026-09-20 — .PS — PROFILE SECTION ENTITY (BEAT 771)
 
 Based on Toby's 2026-09-20 lore, **12:52 PM**, four hours after File 666 sealed the game in both directions. His own

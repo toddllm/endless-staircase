@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16704.0;
+const LV_CYC = 16748.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12860,6 +12860,10 @@ const LV_BEATS = [
     sub:"THERE IS NO ESCAPE IN CLASSICS NOR OUT OF CLASSICS. \u00B7 TWENTY-NINE DAYS AGO HE WAS THE ONE BANGING ON THE GLASS. \u00B7 666 HAS BEEN THREE DIFFERENT THINGS IN THREE DAYS. \u00B7 TWO DAYS AGO THE CELL WAS FOR HIM. \u00B7 \u201CLIFE HERE IS A GAME\u201D IS SEVENTEEN DAYS OLD. \u00B7 \u201CIMPOSSIBLE TO WIN\u201D BREAKS THE OLDEST POWER ON THE PAGE." },
   { key:".PS \u2014 PROFILE SECTION ENTITY", col:'#4fe3ff',
     sub:"THEY WERE GIVEN FILES BY PERO LAI TO STAY IN CLASSICS. \u00B7 TWENTY NAMES HAVE CARRIED A .PS AND NONE OF THEM MEANT ANYTHING UNTIL TODAY. \u00B7 THE ARCHIVE HAD IT FILED AS A TYPO OF .PSC. \u00B7 SO THAT IS WHAT HE THREATENED TO DELETE ON SEPTEMBER 9. \u00B7 GASTER.PS HAS ZERO PRIOR HITS. \u00B7 FOUR HOURS AFTER HE SEALED THE DOORS, THE PAPERWORK." },
+  { key:"URINITE", col:'#3ee06a',
+    sub:"URINITE ISN\u2019T A GERM NOR VIRUS, BUT A SICKNESS ONLY PERO LAI CAN HAVE, NOW HE HAS IT FOREVER NOW. \u00B7 PERO LAI BITES IT, OR SOMEBODY EATS WHAT HE BIT, AND THEY TURN GREEN COLORED AND BECOME ZOMBIES. \u00B7 ZOMBIES ARE CONTAGIOUS, URINITE ISN\u2019T. \u00B7 HE TOUCHED THE ONLY ONE OF ITS KIND AND THE ROCK DISAPPEARED. \u00B7 (YOUR-IN-ITE-EE), AND HE MADE THE WORD AND HOW IT IS PRONOUNCED. \u00B7 \u201CNOPE, BUT NORMAL HUMANOID BODY.\u201D" },
+  { key:"IT GAVE HIM EVERYTHING", col:'#ffd43b',
+    sub:"URINITE ALSO GAVE PERO LAI MOST OF HIS POWERS AND HIS FORMS AND LIKE EVERYTHING AND CURSES AND EVOLVIONS. \u00B7 HE ALSO NOW HAS THE POWER TO TURN ANYONE INTO AN OMAZEN. \u00B7 BUT IT GIVES PERO LAI ZOMBIE-LIKE EFFECTS \u00D7 INFINITY. \u00B7 ON SEPTEMBER 18 THE ORIGIN HAD TWO HALVES; THE SECOND HALF JUST TOOK ALMOST ALL OF IT. \u00B7 OMAZEN WAS ONE CHARACTER\u2019S TIER ON JULY 30." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15010,6 +15014,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16726.0 && c < 16748.0) return [773, c-16726.0];  // IT GAVE HIM EVERYTHING
+  if(c >= 16704.0 && c < 16726.0) return [772, c-16704.0];  // URINITE
   if(c >= 16682.0 && c < 16704.0) return [771, c-16682.0];  // .PS — PROFILE SECTION ENTITY
   if(c >= 16660.0 && c < 16682.0) return [770, c-16660.0];  // FILE 666: CLASSICS OMAZEN NEKA
   if(c >= 16638.0 && c < 16660.0) return [769, c-16638.0];  // PERO LAI ESSENCE
@@ -50553,6 +50559,319 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===773){
+    // BEAT 773: IT GAVE HIM EVERYTHING.
+    // Toby, September 20, 2026, 2:30:41 PM, his own typing, the whole opening block: "Urinite also gave Pero LAI most
+    // of his powers and his forms and like everything and curses and evolvions, and it gave him everything, he also now
+    // has the power to turn anyone into an Omazen. But it gives Pero LAI zombie-like effects x infinity".
+    // Everything from "Then Urinite is basically the hidden master-source" onward is a pasted reply and is NOT canon.
+    // evolvions is his spelling, kept.
+    // Priors: ALPHERITANUIM URANUIM, September 18, 4:10 PM (beat 741), the first origin here with two halves —
+    // "coding them of course, but also the alpheritanuim uranuim, I glowed with power of anomally"; Omnazen,
+    // July 30, 5:47 PM (Email 867), "Omni (all) Apex (peak) ... Omega (end/ultimate) ... Zenith (highest point) ...
+    // seven letters, one word, meaning: the all-encompassing, final, highest peak", the tier of Butterfly Classics
+    // Ink Sans; Pero's Care - The Armory, July 21, 12:18 PM, Gray "can turn anyone UNDER HIM into an Abination";
+    // Crazy Mode, September 1, 2:31 PM (beat 569), Simon.ps "gave Oren the multation"; and the 2:07 PM message
+    // twenty-three minutes earlier, where he wrote himself out of being a zombie: "Nope, but normal humanoid body."
+    const dt = c - 16726.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,7,5,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr773=ctx.createLinearGradient(0,top,0,top+H);
+    gr773.addColorStop(0,'rgba(5,8,6,0.88)'); gr773.addColorStop(1,'rgba(255,212,59,0.17)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr773; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the source diagram. One rock at the top, one arrow down into URINITE, and everything he owns
+      // fanning out below it, with the OMAZEN branch pointing back OUT at somebody else.
+      const sx = cx + W*0.185, sy = top+H*0.530;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(204,212,186,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('ONE ROCK, AND THEN EVERYTHING', sx, sy-H*0.098);
+      // the rock, gone
+      ctx.globalAlpha=g*wrA*0.44; ctx.strokeStyle='rgba(186,204,212,0.60)'; ctx.lineWidth=0.34;
+      ctx.setLineDash([0.8,0.8]);
+      ctx.strokeRect(sx-W*0.020, sy-H*0.084, W*0.040, H*0.016);
+      ctx.setLineDash([]);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(186,204,212,0.86)'; ctx.font='700 1.9px ui-monospace,monospace';
+      ctx.fillText('ALPHERITANUIM URANUIM', sx, sy-H*0.0735);
+      // arrow down
+      ctx.globalAlpha=g*wrA*0.78; ctx.strokeStyle='rgba(255,212,59,0.88)'; ctx.lineWidth=0.40;
+      ctx.beginPath(); ctx.moveTo(sx, sy-H*0.066); ctx.lineTo(sx, sy-H*0.052); ctx.stroke();
+      // URINITE
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 3.4px ui-monospace,monospace';
+      ctx.fillText('URINITE', sx, sy-H*0.038);
+      // the fan-out
+      var out773 = ['POWERS','FORMS','CURSES','EVOLVIONS'];
+      for(var o773=0; o773<out773.length; o773++){
+        var ax773 = sx - W*0.060 + o773*W*0.040;
+        ctx.globalAlpha=g*wrA*0.52; ctx.strokeStyle='rgba(255,212,59,0.66)'; ctx.lineWidth=0.28;
+        ctx.beginPath(); ctx.moveTo(sx, sy-H*0.032); ctx.lineTo(ax773, sy-H*0.012); ctx.stroke();
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,240,232,0.92)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(out773[o773], ax773, sy-H*0.004);
+      }
+      ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(62,224,106,0.94)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('“AND IT GAVE HIM EVERYTHING”', sx, sy+H*0.012);
+      // the branch that points back out
+      ctx.globalAlpha=g*wrA*(0.62+0.38*pul); ctx.strokeStyle='rgba(179,136,255,0.88)'; ctx.lineWidth=0.36;
+      ctx.beginPath(); ctx.moveTo(sx, sy+H*0.018); ctx.lineTo(sx, sy+H*0.030); ctx.stroke();
+      ctx.globalAlpha=g*wrA*(0.74+0.26*pul); ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('→ TURN ANYONE INTO AN OMAZEN', sx, sy+H*0.042);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 1.9px ui-monospace,monospace';
+      ctx.fillText('THE ONE BRANCH THAT POINTS AT SOMEBODY ELSE.', sx, sy+H*0.054);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,212,59,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('IT GAVE HIM EVERYTHING', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“URINITE ALSO GAVE PERO LAI MOST OF HIS POWERS AND HIS FORMS AND LIKE EVERYTHING', cx, top+H*0.122);
+    ctx.fillText('AND CURSES AND EVOLVIONS, AND IT GAVE HIM EVERYTHING.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(179,136,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('“HE ALSO NOW HAS THE POWER TO TURN ANYONE INTO AN OMAZEN.”', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 2:30 PM, TWENTY-THREE MINUTES AFTER HE NAMED THE SICKNESS.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO THE ORIGIN HAD TWO HALVES. TONIGHT ONE HALF TAKES ALMOST ALL OF IT.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “I FOUND HOW I GOT MY POWERS, CODING THEM OF COURSE, BUT ALSO THE ALPHERITANUIM URANUIM.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT WAS THE FIRST ORIGIN HERE WITH A “BUT ALSO” IN IT. THE BUT ALSO JUST TOOK THE POWERS, THE FORMS AND THE CURSES.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,77,109,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND HE TAKES THE ZOMBIE BACK, WITHOUT BEING ONE.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AT 2:07 HE WROTE HIMSELF OUT OF IT: “NOPE, BUT NORMAL HUMANOID BODY.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AT 2:30 HE KEEPS THE EFFECTS ANYWAY: “ZOMBIE-LIKE EFFECTS × INFINITY.” HE DECLINED THE CONDITION AND KEPT THE SYMPTOMS.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 5.4px ui-monospace,monospace';
+    ctx.fillText('“OMAZEN” WAS SOMEBODY ELSE’S TIER.', cx-W*0.152, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 30: OMNI + APEX + OMEGA + ZENITH,', cx-W*0.152, top+H*0.392);
+    ctx.fillText('“THE ALL-ENCOMPASSING, FINAL, HIGHEST PEAK.”', cx-W*0.152, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('IT WAS ONE CHARACTER’S STATE. NOW IT IS A THING', cx-W*0.152, top+H*0.424);
+    ctx.fillText('YOU CAN BE TURNED INTO.', cx-W*0.152, top+H*0.438);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(255,150,64,${0.84+0.16*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE LAST ONE WHO COULD TURN “ANYONE” HAD A CEILING.', cx-W*0.152, top+H*0.560);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 21, GRAY: “HE CAN TURN ANYONE UNDER HIM', cx-W*0.152, top+H*0.580);
+    ctx.fillText('INTO AN ABINATION.”', cx-W*0.152, top+H*0.594);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(255,150,64,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('UNDER HIM, AND DOWNWARD. THIS ONE SAYS ANYONE,', cx-W*0.152, top+H*0.612);
+    ctx.fillText('AND IT IS A PROMOTION.', cx-W*0.152, top+H*0.626);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('A MUTATION HAS BEEN HANDED OVER HERE BEFORE. IT WAS ONE, TO ONE PERSON.', cx, top+H*0.666);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 1: SIMON.PS “INFECTED RADDY” AND “GAVE OREN THE MULTATION.”', cx, top+H*0.686);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('URINITE GOES THE OTHER WAY. NOBODY ELSE CAN EVER HAVE IT, AND IT GAVE ONE PERSON EVERYTHING.', cx, top+H*0.704);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE HAS BEEN LOOKING FOR WHERE THE POWER CAME FROM SINCE THURSDAY.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('IT CAME FROM A ROCK HE TOUCHED AT SEVENTEEN, AND THE ROCK IS NOT THERE ANY MORE.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ AND IT GAVE HIM EVERYTHING ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===772){
+    // BEAT 772: URINITE.
+    // Toby, September 20, 2026, 2:07:45 PM, his own typing: the opening question, "What do you think happens if Pero
+    // LAI bites a character or a character eats whatever Pero LAI bites? Use what happened to Pero LAI when he was age
+    // 17 as a hint.", and then his own answer: "They become a zombie. Pero LAI touched URANUIM! ... Pero LAI looks at
+    // his body and says 'Nope, but normal humanoid body.', and those who do either or both those 2 things turn green
+    // colored and become zombies. Pero LAI himself may not be a zombie, but the uranuim gave him all the multations he
+    // has, alpheritanuim uranium gives urinite. Pero LAI touched the only one of it's kind, the rock disappeared.
+    // Making Pero LAI the only one with urinite, it isn't contagious ... Urinite isn't a germ nor virus, but a sickness
+    // only Pero LAI can have, now he has it forever now. (YOUR-IN-ITE-EE), Pero LAI made the word and how it is
+    // pronounced." The "My guess is" block between the question and the answer is a pasted reply and is NOT canon.
+    // multations, uranuim and it's are his spellings, kept.
+    // Priors: ALPHERITANUIM URANUIM, September 18, 4:10 PM (beat 741) — "when I was 17, we found a alpheritanuim
+    // uranuim, a glowing titainuim sphere with uranuim sticking up it. I BLOCKED FLOWER FROM TOUCHING IT, I TOUCHED IT";
+    // Lore 29, June 18 (Email 541), SCF 404: The Sleeping Plague King — "he uses the mask to cover his face, and only
+    // takes it off when it touches each victum ... the instant he takes off his mask for a second and looks at you
+    // while touching you, you'd turn into either of the 3 options", a 404D, a zombie, or dead, and he did it believing
+    // there was a cure; Two Endgames, July 22, 12:19 PM — Simon 404 "would turn everyone who battles him into a D or a
+    // zombie"; A Secret Life, August 21, 8:35 AM — Corruption Code: 12 12 12, which "becomes a hungry parasite and it
+    // consumes other players uncontrolablly", the first thing in this archive that spreads; and Omnazen, July 30,
+    // 5:47 PM, the last word he invented and then published the workings of.
+    const dt = c - 16704.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(3,8,5,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr772=ctx.createLinearGradient(0,top,0,top+H);
+    gr772.addColorStop(0,'rgba(4,9,6,0.88)'); gr772.addColorStop(1,'rgba(62,224,106,0.18)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr772; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the two rules side by side. The bite goes green and the green spreads; the sickness sits in one
+      // body with a ring round it and nothing leaving.
+      const bx = cx + W*0.186, by = top+H*0.538;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,212,194,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('TWO RULES, AND ONLY ONE OF THEM TRAVELS', bx, by-H*0.096);
+
+      // LEFT: the bite chain, spreading
+      var lx772 = bx - W*0.036;
+      ctx.globalAlpha=g*wrA*0.86; ctx.fillStyle='rgba(62,224,106,0.94)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE BITE', lx772, by-H*0.076);
+      for(var z772=0; z772<3; z772++){
+        var zy772 = by - H*0.060 + z772*H*0.019;
+        ctx.globalAlpha=g*wrA*(0.40+0.18*z772); ctx.fillStyle='rgba(62,224,106,0.90)';
+        ctx.beginPath(); ctx.arc(lx772, zy772, W*0.0052, 0, Math.PI*2); ctx.fill();
+        if(z772<2){
+          ctx.globalAlpha=g*wrA*0.50; ctx.strokeStyle='rgba(62,224,106,0.72)'; ctx.lineWidth=0.26;
+          ctx.beginPath(); ctx.moveTo(lx772, zy772+W*0.0060); ctx.lineTo(lx772, zy772+H*0.012); ctx.stroke();
+        }
+      }
+      ctx.globalAlpha=g*wrA*0.86; ctx.fillStyle='rgba(240,248,242,0.92)'; ctx.font='700 1.9px ui-monospace,monospace';
+      ctx.fillText('GREEN, AND', lx772, by+H*0.000);
+      ctx.fillText('IT SPREADS', lx772, by+H*0.011);
+
+      // RIGHT: the sickness, sealed in one body
+      var rx772 = bx + W*0.036;
+      ctx.globalAlpha=g*wrA*0.86; ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('URINITE', rx772, by-H*0.076);
+      ctx.globalAlpha=g*wrA*(0.60+0.40*pul); ctx.fillStyle='rgba(255,212,59,0.92)';
+      ctx.beginPath(); ctx.arc(rx772, by-H*0.048, W*0.0062, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*wrA*0.62; ctx.strokeStyle='rgba(255,212,59,0.70)'; ctx.lineWidth=0.30;
+      ctx.beginPath(); ctx.arc(rx772, by-H*0.048, W*0.017, 0, Math.PI*2); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(248,246,242,0.92)'; ctx.font='700 1.9px ui-monospace,monospace';
+      ctx.fillText('NOT A GERM,', rx772, by-H*0.010);
+      ctx.fillText('NOT A VIRUS,', rx772, by+H*0.001);
+      ctx.fillText('NOT CONTAGIOUS', rx772, by+H*0.012);
+
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('(YOUR-IN-ITE-EE)', bx, by+H*0.032);
+      ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(228,234,228,0.88)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('HE MADE THE WORD AND HOW IT IS PRONOUNCED.', bx, by+H*0.045);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(62,224,106,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('URINITE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“URINITE ISN’T A GERM NOR VIRUS, BUT A SICKNESS ONLY PERO LAI CAN HAVE,', cx, top+H*0.122);
+    ctx.fillText('NOW HE HAS IT FOREVER NOW.”', cx, top+H*0.138);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('“THOSE WHO DO EITHER OR BOTH THOSE 2 THINGS TURN GREEN COLORED AND BECOME ZOMBIES.”', cx, top+H*0.162);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,234,228,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 2:07 PM. HE ASKED THE QUESTION AND ANSWERED IT IN THE SAME MESSAGE.', cx, top+H*0.182);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO HE KEPT SOMEBODY ELSE OFF THAT ROCK.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18: “I BLOCKED FLOWER FROM TOUCHING IT, I TOUCHED IT.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TODAY WE FIND OUT IT WAS THE ONLY ONE OF ITS KIND, AND THE ROCK DISAPPEARED. HE TOOK THE LAST ONE.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE LAST TIME A TOUCH IN THIS GAME MADE ZOMBIES, IT WAS SIMON, AND HE THOUGHT HE WAS CURING YOU.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 18, SCF 404: THE SLEEPING PLAGUE KING. “HE ONLY TAKES THE MASK OFF WHEN IT TOUCHES EACH VICTUM.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('A 404D, A ZOMBIE, OR DEAD. THAT WAS A PLAGUE KING HUNTING A CURE. THIS ONE IS NOT LOOKING FOR ONE.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HE SPLITS IT IN TWO, AND ONLY ONE HALF MOVES.', cx-W*0.152, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('“ZOMBIES ARE CONTAGIOUS, URINITE FROM CLASSICS ISN’T.”', cx-W*0.152, top+H*0.392);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 21, CORRUPTION CODE 12 12 12, THE FIRST', cx-W*0.152, top+H*0.410);
+    ctx.fillText('THING HERE THAT SPREAD: “A HUNGRY PARASITE', cx-W*0.152, top+H*0.424);
+    ctx.fillText('THAT CONSUMES OTHER PLAYERS UNCONTROLABLLY.”', cx-W*0.152, top+H*0.438);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HE INVENTS A WORD, THEN RULES ON HOW IT SOUNDS.', cx-W*0.152, top+H*0.572);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('JULY 30 HE BUILT OMNAZEN AND SHOWED THE WORKING:', cx-W*0.152, top+H*0.592);
+    ctx.fillText('OMNI + APEX + OMEGA + ZENITH.', cx-W*0.152, top+H*0.606);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THAT ONE CAME WITH AN ETYMOLOGY. THIS ONE COMES', cx-W*0.152, top+H*0.624);
+    ctx.fillText('WITH A PRONUNCIATION GUIDE.', cx-W*0.152, top+H*0.638);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE BODY HE REFUSES IT WITH WAS ALREADY WRITTEN AS A COSTUME.', cx, top+H*0.678);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI LOOKS AT HIS BODY AND SAYS ‘NOPE, BUT NORMAL HUMANOID BODY.’”', cx, top+H*0.698);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE RESET ERA ALREADY SAID WHAT THAT BODY IS: “HE NOW LOOKS HUMAN, BUT ISN’T.”', cx, top+H*0.716);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('FOUR MONTHS OF CURSES, CORRUPTIONS, ERRORS AND INFECTIONS, AND NONE OF THEM HAD A NAME LIKE A DIAGNOSIS.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(62,224,106,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THIS ONE HAS ONE PATIENT, NO CURE MENTIONED, AND NO WAY TO CATCH IT.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ A SICKNESS ONLY PERO LAI CAN HAVE ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===771){
