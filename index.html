@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16572.0;
+const LV_CYC = 16594.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12848,6 +12848,8 @@ const LV_BEATS = [
     sub:"PLAYER_XE APPEARS, IT IS THE NEW MINIMUM PERO LAI CAN BECOME. · IT IS INVITING A PRO ASSASSIN SORCER; WIZARDS, SORCERESES, OTHER SORCERS AND VIRUSES GO DOWN. · PERO LAI REACHED PHASE INFINITY." },
   { key:"UNDERNEATH THE STAIRCASE", col:'#39ff9e',
     sub:"PERO LAI PICKS UP THE SIMON REACH BAR AND BREAKS IT, THEN BREAKS ALL 3 HEARTS, THEN FLICKS THE PLAYER INTO A GALAXY AND CRUSHES THE PLAYER WITH JUST 2 FINGERS. · THE GAME OVER SCREEN BREAKS APART, REVEALING BOTH PERO LAI AND WD GASTER; AFTER 666 RUNS IT SAYS “NOW I OWN THIS WORLD!” · OREN.PS AND SIMON.PS REBUILD THE ENDLESS STAIRCASE INTO A NORMAL HARMLESS ONE, BUT PERO LAI IS HIDDING SOMETHING UNDERNEATH IT." },
+  { key:"THE ROOM OF MANY TUBES", col:'#4fe3ff',
+    sub:"THE SECRET IS A ROOM OF MANY TUBES; HE WILL TRY TO CONTAIN EVERYONE IN ONE. · HE BELIEVES THE EASIEST TARGETS ARE OREN.PS, SIMON.PS AND WENDA.PS, BECAUSE THOSE 3 ARE THE MOST COMMON AND STRONGEST ATTACKERS, BESIDES MR. BLACK AND JEVIN. · THE 5 ARE THE ONES WHO BASICALLY SLAY THE SPRUNKIS EVEN IN PHASE 1. PERO LAI WANTS TO ATTACK THE 5 FIRST." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -14998,6 +15000,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16572.0 && c < 16594.0) return [766, c-16572.0];  // THE ROOM OF MANY TUBES
   if(c >= 16550.0 && c < 16572.0) return [765, c-16550.0];  // UNDERNEATH THE STAIRCASE
   if(c >= 16528.0 && c < 16550.0) return [764, c-16528.0];  // PHASE INFINITY
   if(c >= 16506.0 && c < 16528.0) return [763, c-16506.0];  // THE PERO LAI DOLL
@@ -50535,6 +50538,184 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===766){
+    // BEAT 766: THE ROOM OF MANY TUBES.
+    // Toby, September 20, 2026, 6:40 AM, Email 1476, his own typing, which is the FIRST PARAGRAPH ONLY: "The secret is a
+    // room of many tubes, he will try to contain everyone in one, he believes the easiest targets are Oren.ps, Simon.ps,
+    // and Wenda.ps, because those 3 are the most common and strongest attackers, besides Mr. Black and Jevin. The 5 are
+    // the ones who basically slay the Sprunkis even in Phase 1 for some reason. Tell why the 5 are evil. Pero LAI wants
+    // to attack the 5 first." Everything from "From Pero LAI's point of view" onward in that email is pasted commentary,
+    // including the per-character rap sheets and the "anti-counterattack room" reading, and is NOT canon.
+    // Priors: "hidding something UNDERNEATH the staircase", September 19, 7:59 PM (beat 765); "Tube 1 was Teki, Tube 2 is
+    // Classics' mom, Tube 3 is Arcsis", September 18, 4:10 PM (beat 744); "In tubes I made, now I have infinite battery
+    // power.", September 19, 3:27 PM (beat 763); "Pero starts and summons everyone into a tube", August 30, 3:27 PM;
+    // Simon circles his own tube until "friction takes over and the tube melts", June 16, Email 530 (SCF 404); "Oren
+    // grabs Unikitty in the nick of time", August 8, 1:30 PM; Simon.ps's katata and Oren.ps's telekentics beat down
+    // Shadow Wenda.ps while "Pero looks out his bed-view tube", September 7, 7:24 PM; "Tri for Third", September 3,
+    // 7:58 PM; Jevin ranked 11th, "Mr. Black's secret friend", July 21, 6:47 AM; "Mr. Black is now Parodybox Phase 1
+    // locked... Mr. Black decreased form and increased power", July 21, 4:39 PM.
+    const dt = c - 16572.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-8.9)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(2,7,10,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr766=ctx.createLinearGradient(0,top,0,top+H);
+    gr766.addColorStop(0,'rgba(5,6,9,0.88)'); gr766.addColorStop(1,'rgba(79,227,255,0.24)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr766; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: the harmless staircase on top, the floor, and the room of tubes underneath it. Five tubes, five names,
+      // in the order he typed them. Simon's wall has the hole he melted on June 16; Oren has the arrow that points OUT,
+      // because on August 8 he is the only character who ever reached into a tube and pulled somebody back.
+      const fx = cx + W*0.188, fy = top+H*0.540;
+      ctx.textAlign='center';
+      const jt766=(Math.sin(c*19.0)>0.62)?W*0.0013:0;
+
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(186,204,212,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('A NORMAL ENDLESS STAIRCASE, HARMLESS', fx, fy-H*0.086);
+      ctx.globalAlpha=g*wrA*0.80; ctx.strokeStyle='rgba(186,204,212,0.88)'; ctx.lineWidth=0.45;
+      ctx.beginPath();
+      for(var st766=0; st766<5; st766++){
+        var sx766 = fx - W*0.042 + st766*W*0.017, sy766 = fy - H*0.078 + st766*H*0.0062;
+        ctx.moveTo(sx766, sy766); ctx.lineTo(sx766+W*0.017, sy766); ctx.lineTo(sx766+W*0.017, sy766+H*0.0062);
+      }
+      ctx.stroke();
+
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(79,227,255,0.80)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.moveTo(fx-W*0.058, fy-H*0.042); ctx.lineTo(fx+W*0.058, fy-H*0.042); ctx.stroke();
+      ctx.globalAlpha=g*wrA*0.62; ctx.fillStyle='rgba(79,227,255,0.85)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('THE FLOOR NOBODY CHECKS', fx, fy-H*0.046);
+
+      var names766 = ['OREN','SIMON','WENDA','BLACK','JEVIN'];
+      for(var tb766=0; tb766<5; tb766++){
+        var tx766 = fx + (tb766-2)*W*0.019;
+        var ty766 = fy - H*0.034, tw766 = W*0.011, th766 = H*0.040;
+        ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,20,26,0.98)';
+        ctx.fillRect(tx766-tw766/2, ty766, tw766, th766);
+        ctx.globalAlpha=g*wrA*0.78; ctx.fillStyle='rgba(79,227,255,0.50)';
+        ctx.fillRect(tx766-tw766*0.26, ty766+th766*0.34, tw766*0.52, th766*0.46);
+        ctx.beginPath(); ctx.arc(tx766+(tb766===2?jt766:0), ty766+th766*0.26, tw766*0.20, 0, Math.PI*2); ctx.fill();
+        ctx.globalAlpha=g*wrA*0.92; ctx.strokeStyle='rgba(79,227,255,0.90)'; ctx.lineWidth=0.42;
+        if(tb766===1){
+          ctx.beginPath();
+          ctx.moveTo(tx766+tw766/2, ty766+th766*0.28); ctx.lineTo(tx766+tw766/2, ty766);
+          ctx.lineTo(tx766-tw766/2, ty766); ctx.lineTo(tx766-tw766/2, ty766+th766);
+          ctx.lineTo(tx766+tw766/2, ty766+th766); ctx.lineTo(tx766+tw766/2, ty766+th766*0.64);
+          ctx.stroke();
+          ctx.globalAlpha=g*wrA*(0.58+0.42*pul); ctx.strokeStyle='rgba(255,150,40,0.96)'; ctx.lineWidth=0.55;
+          ctx.beginPath(); ctx.arc(tx766+tw766*0.52, ty766+th766*0.46, tw766*0.34, -1.25, 1.25); ctx.stroke();
+        } else {
+          ctx.strokeRect(tx766-tw766/2, ty766, tw766, th766);
+        }
+        if(tb766===0){
+          ctx.globalAlpha=g*wrA*(0.58+0.42*pul); ctx.strokeStyle='rgba(62,224,106,0.96)'; ctx.lineWidth=0.5;
+          ctx.beginPath();
+          ctx.moveTo(tx766-tw766*0.55, ty766+th766*0.50); ctx.lineTo(tx766-tw766*1.65, ty766+th766*0.50);
+          ctx.moveTo(tx766-tw766*1.28, ty766+th766*0.34); ctx.lineTo(tx766-tw766*1.65, ty766+th766*0.50);
+          ctx.lineTo(tx766-tw766*1.28, ty766+th766*0.66);
+          ctx.stroke();
+        }
+        ctx.globalAlpha=g*wrA*0.94; ctx.fillStyle='rgba(232,244,248,0.94)'; ctx.font='900 2.1px ui-monospace,monospace';
+        ctx.fillText(names766[tb766], tx766, ty766+th766+H*0.009);
+      }
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(79,227,255,0.92)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('THE ROOM OF MANY TUBES', fx, fy+H*0.022);
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(240,240,244,0.88)'; ctx.font='700 2.1px ui-monospace,monospace';
+      ctx.fillText('HE WANTS THESE 5 FIRST', fx, fy+H*0.034);
+      ctx.globalAlpha=g*wrA*0.70; ctx.fillStyle='rgba(255,150,40,0.92)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('ONE MELTED OUT. ONE REACHED IN.', fx, fy+H*0.046);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(79,227,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE ROOM OF MANY TUBES', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,246,242,${0.90+0.10*pul})`; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE SECRET IS A ROOM OF MANY TUBES, HE WILL TRY TO CONTAIN EVERYONE IN ONE.”', cx, top+H*0.122);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(79,227,255,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('THE ROOM IS THREE DAYS OLD. THE PLAN INSIDE IT IS THREE WEEKS OLD.', cx, top+H*0.148);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(228,228,234,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 20, 6:40 AM. THE FIRST PARAGRAPH IS HIS. THE REST OF THE EMAIL IS PASTED.', cx, top+H*0.170);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('LAST NIGHT HE HID IT. THIS MORNING HE NAMED IT.', cx, top+H*0.226);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 19, 7:59 PM: “PERO LAI IS HIDDING SOMETHING UNDERNEATH THE STAIRCASE.”', cx, top+H*0.246);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NOBODY ASKED HIM WHAT IT WAS. HE ANSWERED IT HIMSELF IN THE NEXT MESSAGE HE SENT.', cx, top+H*0.264);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(127,212,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('ON FRIDAY THE TUBES WERE STILL COUNTABLE.', cx, top+H*0.296);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 18, 4:10 PM: “TUBE 1 WAS TEKI, TUBE 2 IS CLASSICS’ MOM, TUBE 3 IS ARCSIS.”', cx, top+H*0.316);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 19: “IN TUBES I MADE, NOW I HAVE INFINITE BATTERY POWER.” TODAY THEY ARE A ROOM.', cx, top+H*0.334);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 5.7px ui-monospace,monospace';
+    ctx.fillText('“EVERYONE IN ONE” IS NOT NEW.', cx-W*0.150, top+H*0.372);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 30, 3:27 PM: “PERO STARTS AND', cx-W*0.150, top+H*0.392);
+    ctx.fillText('SUMMONS EVERYONE INTO A TUBE.”', cx-W*0.150, top+H*0.406);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE HAD THE PLAN FIRST. NOW HE HAS THE ROOM.', cx-W*0.150, top+H*0.424);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('THE FIRST THREE NAMES WERE IN ONE SCENE ALREADY.', cx-W*0.150, top+H*0.556);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 7, 7:24 PM: SIMON.PS’S KATATA AND', cx-W*0.150, top+H*0.576);
+    ctx.fillText('OREN.PS’S TELEKENTICS BEAT DOWN SHADOW WENDA.PS', cx-W*0.150, top+H*0.590);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('WHILE “PERO LOOKS OUT HIS BED-VIEW TUBE.”', cx-W*0.150, top+H*0.608);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(179,136,255,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('TWO OF THE FIVE HAVE ALREADY BEATEN A TUBE.', cx, top+H*0.648);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,246,242,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 16, EMAIL 530: SIMON CIRCLED HIS OWN SO FAST THAT “FRICTION TAKES OVER AND THE TUBE MELTS.”', cx, top+H*0.668);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(179,136,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUGUST 8, 1:30 PM: GRAY DRAINED UNIKITTY IN ONE, AND “OREN GRABS UNIKITTY IN THE NICK OF TIME.”', cx, top+H*0.686);
+
+    ctx.globalAlpha=g*f3A*0.88;
+    ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND “EVEN IN PHASE 1” IS ALREADY ON THE BOARD. JULY 21, 4:39 PM: MR. BLACK IS', cx, top+H*0.714);
+    ctx.fillText('“PARODYBOX PHASE 1 LOCKED… DECREASED FORM AND INCREASED POWER.”', cx, top+H*0.732);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(242,240,244,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 3, 7:58 PM: “JEVIN WOULD BE THIRD POWERFUL ALONG WITH SIMON.PS AND OREN.PS. TRI FOR THIRD.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(79,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JULY 21, 6:47 AM: JEVIN, RANKED 11TH, “MR. BLACK’S SECRET FRIEND.” BOTH HALVES WERE ALREADY GROUPS.', cx, top+H*0.826);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE EASIEST TARGETS ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===765){

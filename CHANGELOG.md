@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-20 — THE ROOM OF MANY TUBES (BEAT 766)
+
+Based on Toby's 2026-09-20 lore, **6:40 AM (Email 1476)**: the answer to last night's cliffhanger, sent ten hours and
+forty-one minutes after it, with nobody asking. Only the first paragraph is his own typing. Everything from "From Pero
+LAI's point of view" onward, including the per-character rap sheets and the "anti-counterattack room" reading, is pasted
+commentary and is not canon.
+
+![Beat 766 — The Room Of Many Tubes](screenshots/828-room-of-many-tubes.png)
+
+- **New beat 766, THE ROOM OF MANY TUBES.** "The secret is a room of many tubes, he will try to contain everyone in one,
+  he believes the easiest targets are Oren.ps, Simon.ps, and Wenda.ps, because those 3 are the most common and strongest
+  attackers, besides Mr. Black and Jevin. The 5 are the ones who basically slay the Sprunkis even in Phase 1 for some
+  reason… Pero LAI wants to attack the 5 first."
+- **The inset draws the room, not the sentence.** The harmless staircase Oren.ps and Simon.ps rebuilt sits on top, the
+  floor line runs under it, and five labelled tubes stand in the room below in the order he typed them. Simon's tube is
+  drawn with a hole melted through its wall and heat still at the edge; Oren has an arrow pointing out of his.
+- **He answered his own cliffhanger.** September 19, 7:59 PM: "Pero LAI is hidding something UNDERNEATH the staircase."
+  Nobody asked what it was, and the next message he sent named it.
+- **On Friday the tubes were still countable.** September 18, 4:10 PM (beat 744): "Tube 1 was Teki, Tube 2 is Classics'
+  mom, Tube 3 is Arcsis." September 19, 3:27 PM (beat 763): "In tubes I made, now I have infinite battery power." Three
+  days later they are a room.
+- **"Everyone in one" is three weeks old.** August 30, 3:27 PM: "Pero starts and summons everyone into a tube, and then
+  Pero combines the energy." He had the plan before he had anywhere to put it.
+- **Two of the five have already beaten a tube.** June 16, Email 530, the Simon Containment Facility: Simon circles his
+  own tube so fast that "friction takes over and the tube melts. Simon escapes again." August 8, 1:30 PM: Gray drained
+  Unikitty in a tube and "Oren grabs Unikitty in the nick of time" — the only character in the archive who ever reached
+  into one and pulled somebody back out.
+- **The first three names were in one scene already, and he watched it through a tube.** September 7, 7:24 PM: "Simon.ps
+  gotten a katata, Oren.ps uses telekentics, both beat down Shadow Wenda.ps, Pero looks out his bed-view tube."
+- **"Even in Phase 1" is already on the board.** July 21, 4:39 PM: "Mr. Black is now Parodybox Phase 1 locked… Mr. Black
+  decreased form and increased power," and at 4:45 PM, "Mr. Black beats all Sprunkis except for Gray."
+- **Both halves of the five were already groups.** September 3, 7:58 PM: "Jevin would be third powerful along with
+  Simon.ps and Oren.ps. 'Tri for Third' -Pero LAI." July 21, 6:47 AM: Jevin is ranked 11th and described as "Mr. Black's
+  secret friend."
+- **His own sentence calls them both things at once.** The three he names are "the easiest targets" and "the most common
+  and strongest attackers" in the same breath.
+- Ladder window shifted by one beat, so screenshots 826 and 827 were recaptured.
+
 ## 2026-09-19 — UNDERNEATH THE STAIRCASE (BEAT 765)
 
 Based on Toby's 2026-09-19 lore, **7:59 PM (Email 1475)**: the first message in this archive that gives direction about
