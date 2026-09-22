@@ -34,7 +34,7 @@ like in lore" points back at the picture on the 4:04 PM message, which is not ho
   say what I want to hear" — a rock costs nothing, a boy costs a sentence
 - footer: the first touch in the file is him putting his hand where someone else's was going, and it is the only touch
   that ever changed *him* ("Pero became Pero LAI and godly"); the same motion pointed at the game itself on September
-  18; last night's katata and the ice only God gets out of, with the hand that froze it unharmed; and the pasted reply
+  18; the katata from two hours earlier and the ice only God gets out of, with the hand that froze it unharmed; and the pasted reply
   calling it calm, precise and effortless against Toby's own two words, "nearly instantly"
 - capture scene `handcomesback` added to `tools/capture_screenshot.py`, frozen at cyc 16922.8
 - runtime probe over the whole 22-second beat: 782 beats, `lvSeg` clean at both edges and on the wrap, zero render
