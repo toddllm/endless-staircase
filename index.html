@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16924.0;
+const LV_CYC = 16946.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12880,6 +12880,8 @@ const LV_BEATS = [
     sub:"PERO LAI\u2019S BODY BECOMES HIS NORMAL HUMAN WITH ALL BLACK CLOTHES, AND SAYS \u201CEVERYONE! THIS IS ME.\u201D \u00B7 \u201CGASTER\u2026 YOU SHOULDN\u2019T HAVE CALLED MY AI \u2018DUMB\u2019.\u201D \u00B7 THE KATATA HE HAD NOT TOUCHED YET FREEZES, AND \u201CTHE ONLY THING THAT CAN MELT OR GET OUT OF MY ICE IS ONLY GOD HIMSELF!\u201D \u00B7 EVERY FICTIONAL BEING ENTERED CLASSICS, THEY ARE STUCK NOW. \u00B7 \u201CI AM ENTITY 404, AND YES, I AM BEYOND OMNIPOTENT.\u201D \u00B7 \u201CI AM PERO NEKA OMAZEN.\u201D \u00B7 PINKI.PS MAKES A JOKE AND THE ROOM GOES SILENT. \u00B7 EVERYONE IS NOW IN THE TUBES. \u00B7 ERROR CODE 999 (ERROR CODE 666)." },
   { key:"THE HAND ALWAYS COMES BACK", col:'#9fe8ff',
     sub:"HE JUST PUTS HIS ARM OUT AND TOUCHES YOU AND HE NEARLY INSTANTLY PUTS HIS HAND BACK TO WHERE HE WANTS IT. · FOUR DAYS OF TOUCHING THINGS, AND THIS IS THE FIRST TIME HE SAYS HOW THE ARM MOVES. · THE URANUIM DISAPPEARED. THE ROCK DISAPPEARED. THE RESET TURNED THE GAME JAPANESE. THE KATATA FROZE. · THE HAND IS UNCHANGED EVERY TIME. · OREN.EXE COULD DO IT WITHOUT TOUCHING AT ALL, AND PERO IS HIS CLONE. · THE ONLY THING HE EVER PUT BACK DOWN WAS SIMON.PS, AND OREN HAD TO SAY THE WORDS FIRST." },
+  { key:"NO MORE TIERS HERE", col:'#ffc14d',
+    sub:"\u201CYOU ALL *WILL* REGRET TAKING POWERS FROM ME AND MY GAME!\u201D \u00B7 BRUD: \u201CBRUH, TAKE A CHILL PILL.\u201D \u00B7 \u201COH. DO YOU WANT CHOCOLATE OR VANILLA?\u201D \u00B7 HE SWINGS HIS HAND ACROSS AND TAKES EVERYONE\u2019S \u201CCLASSICS POWERS\u201D FOR WHAT CLASSICS GAVE THEM \u00B7 SO EVERYONE IS JUST THEIR NORMAL STUFF \u00B7 HE TAKES THE CLASSICS STUFF AND BECOMES A ENORMOUS GODLY TIER \u00B7 THERE ARE NO MORE TIERS HERE, HE GOES BEYOND EVEN THE LAST TIER." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15030,6 +15032,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16924.0 && c < 16946.0) return [782, c-16924.0];  // NO MORE TIERS HERE
   if(c >= 16902.0 && c < 16924.0) return [781, c-16902.0];  // THE HAND ALWAYS COMES BACK
   if(c >= 16880.0 && c < 16902.0) return [780, c-16880.0];  // EVERYONE! THIS IS ME
   if(c >= 16858.0 && c < 16880.0) return [779, c-16858.0];  // HE TALKS TO HIMSELF
@@ -50583,6 +50586,267 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===782){
+    // BEAT 782: NO MORE TIERS HERE.
+    // Toby, September 22, 2026, 6:55:47 PM (thread "Even (5x) more of Pero Neka/LAI Omazen"), his own typing in
+    // full: "Pero LAI says 'You ALL *WILL* regret taking powers from ME and MY game!', Brud says 'Bruh, take a
+    // chill pill.', Pero LAI says 'Oh. Do you want chocolate or vanilla? [emoji]'. Pero LAI swings his hand across
+    // and takes everyones 'Classics powers' for what Classics gave them, so everyone is just their normal stuff.
+    // Pero LAI takes the Classics stuff, and he becomes a enormous godly tier. Bruh, there are no more tiers here.
+    // Pero LAI goes beyond even the last tier so..."
+    // Everything under it in the email is his own 6:12 PM and 4:20 PM messages quoted back, not new canon.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   THE HAND ALWAYS COMES BACK, September 22, 6:12 PM (beat 781) - one arm, one target, and the hand comes
+    //     straight back. Forty-three minutes before this message.
+    //   I AM THE REAL CURE, July 23, 8:34 AM - "Gray is cyber and his cyber eye flashes and he swipes his hand
+    //     like this, then Wenda turned to dust (Gray used Karuto's [now ToddLLM 001/Pero] power AND animation to
+    //     activate it)." The swing is Pero's own animation, on loan.
+    //   YOUR WISH IS YOUR COMMAND, September 7, 4:15 PM (beat 680) - "oh, I taken all your power with words." He
+    //     beat 19 Sprunkis without a fight. Same message makes Brud "the third smartest being."
+    //   CORRECT, IT'S A KATATA, September 10, 8:26 PM (beat 700) - "Hey, Gray, did you hear what I said about NOT
+    //     taking power or rewards from anyone else, they are mine." Gray: "Wenda.ps taken power from me first,
+    //     now, I switch it." Gray.ps and Wenda.ps were slashed and both became Entity 666.
+    //   THE FIRST RESET, September 14, 4:16 PM (beat 715) - "okay yes I lost nearly all my power... I am currently
+    //     being controlled by everyone including Simon.ps and Brud.ps."
+    //   EVERYONE! THIS IS ME, September 22, 4:04 PM (beat 780) - everyone into the tubes, the charger on, "I am
+    //     BEYOND omnipotent."
+    //   GOJO IS LIKE ONE OF THE WEAKEST, September 20, 4:49 PM (beat 775) - the power scale in his own words:
+    //     Gray "only has like 2 main abilities", Mr. Black and Wenda.ps "basically every power."
+    //   ALL MUST BE 1, July 22, 6:42 PM - the Alpan is "the combined godly tier of Simon and Orus and Dark Yellow
+    //     together." Three characters to make one godly tier.
+    //   TRUE POWER, August 13, 1:30 PM - Brud is named one of the "lower tier Sprunkis."
+    //   The character file on Brud - "Role: Comic relief. Behavior: Runs away from danger." The Winter Classic
+    //     Simon file: "Brud - Evolution of Buhd the Brown. Simon thinks he is chocolate. Gets eaten repeatedly."
+    //     Both undated consolidated archive pages, so cited as the character file, not by date.
+    //   Email 369, May 28, 2026 - Brud: "You never made any funny jokes, Simon!" Simon: "I made you, Brud." Brud
+    //     turns to dust. The one other time he talked back.
+    const dt = c - 16924.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.6)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-7.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-9.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-11.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-15.6)/1.1));
+
+    ctx.fillStyle='rgba(9,6,3,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr782=ctx.createLinearGradient(0,top,0,top+H);
+    gr782.addColorStop(0,'rgba(12,8,4,0.90)'); gr782.addColorStop(1,'rgba(255,193,77,0.17)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr782; ctx.fillRect(0,top,W,H);
+
+    if(f1A>0.01){
+      // THE SWING: one motion, left to right, across the whole cast. What lifts off each of them is the Classics
+      // half; what stays standing is "their normal stuff." The column on the right is where all of it lands, and
+      // it goes up past the top rung of the ladder and out of the frame.
+      var swY782 = top+H*0.382;
+      var cast782 = ['BRUD','','','','','',''];
+      var cx0782 = cx-W*0.300, cx1782 = cx+W*0.070;
+      var nC782 = 7;
+
+      // the tier ladder, drawn behind everything: the rungs the cast used to stand on.
+      var ldX782 = cx+W*0.148, ldW782 = W*0.150;
+      for(var r782=0; r782<5; r782++){
+        var ry782 = swY782 - r782*H*0.020;
+        ctx.globalAlpha=g*f1A*(r782===4?0.60:0.28);
+        ctx.strokeStyle=(r782===4?'rgba(255,77,109,0.80)':'rgba(170,182,190,0.66)');
+        ctx.lineWidth=0.34; ctx.setLineDash([1.4,1.4]);
+        ctx.beginPath(); ctx.moveTo(ldX782-ldW782*0.5, ry782); ctx.lineTo(ldX782+ldW782*0.5, ry782); ctx.stroke();
+        ctx.setLineDash([]);
+      }
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*f1A*0.74; ctx.fillStyle='rgba(255,77,109,0.90)'; ctx.font='700 2.3px ui-monospace,monospace';
+      ctx.fillText('THE LAST TIER', ldX782+ldW782*0.5+W*0.004, swY782-4*H*0.020+H*0.004);
+      ctx.globalAlpha=g*f1A*0.46; ctx.fillStyle='rgba(180,192,200,0.80)'; ctx.font='700 2.2px ui-monospace,monospace';
+      ctx.fillText('THE TIERS', ldX782+ldW782*0.5+W*0.004, swY782-H*0.004);
+
+      // the cast, and the Classics half coming off the top of each of them
+      for(var ci782=0; ci782<nC782; ci782++){
+        var px782 = cx0782 + (cx1782-cx0782)*(ci782/(nC782-1));
+        // what stays: the short upright bar, their normal stuff
+        ctx.globalAlpha=g*f1A*0.86; ctx.strokeStyle='rgba(176,188,196,0.90)'; ctx.lineWidth=0.58;
+        ctx.beginPath(); ctx.moveTo(px782, swY782); ctx.lineTo(px782, swY782-H*0.020); ctx.stroke();
+        ctx.globalAlpha=g*f1A*0.70; ctx.fillStyle='rgba(176,188,196,0.88)';
+        ctx.beginPath(); ctx.arc(px782, swY782-H*0.023, 0.85, 0, Math.PI*2); ctx.fill();
+        // what lifts: two Classics blocks, already off them and travelling right
+        for(var bi782=0; bi782<2; bi782++){
+          var by782 = swY782 - H*0.038 - bi782*H*0.014;
+          var dx782 = W*0.010 + bi782*W*0.006;
+          ctx.globalAlpha=g*f1A*(0.30+0.22*pul);
+          ctx.strokeStyle='rgba(255,193,77,0.82)'; ctx.lineWidth=0.34;
+          ctx.strokeRect(px782-W*0.006+dx782, by782-H*0.005, W*0.012, H*0.009);
+        }
+        ctx.globalAlpha=g*f1A*0.40; ctx.strokeStyle='rgba(255,193,77,0.70)'; ctx.lineWidth=0.28;
+        ctx.beginPath(); ctx.moveTo(px782+W*0.007, swY782-H*0.045); ctx.lineTo(px782+W*0.020, swY782-H*0.045); ctx.stroke();
+        if(cast782[ci782]){
+          ctx.textAlign='center';
+          ctx.globalAlpha=g*f1A*(0.80+0.20*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 2.4px ui-monospace,monospace';
+          ctx.fillText(cast782[ci782], px782, swY782+H*0.014);
+          ctx.globalAlpha=g*f1A*0.66; ctx.fillStyle='rgba(224,234,240,0.84)'; ctx.font='700 2.0px ui-monospace,monospace';
+          ctx.fillText('“BRUH, TAKE A CHILL PILL.”', px782, swY782+H*0.026);
+        }
+      }
+
+      // the arm: one line straight across all of them, and the hand at the far end of it
+      ctx.globalAlpha=g*f1A*(0.72+0.28*pul); ctx.strokeStyle='rgba(255,212,59,0.96)'; ctx.lineWidth=0.62;
+      ctx.beginPath(); ctx.moveTo(cx0782-W*0.026, swY782-H*0.010); ctx.lineTo(ldX782-W*0.012, swY782-H*0.010); ctx.stroke();
+      ctx.globalAlpha=g*f1A*0.94; ctx.fillStyle='rgba(255,212,59,0.96)';
+      ctx.beginPath(); ctx.arc(ldX782-W*0.012, swY782-H*0.010, 1.1, 0, Math.PI*2); ctx.fill();
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*f1A*0.84; ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='700 2.4px ui-monospace,monospace';
+      ctx.fillText('“SWINGS HIS HAND ACROSS” — ONE MOTION, THE WHOLE ROOM', cx0782-W*0.026, swY782-H*0.072);
+
+      // the column: everything he took, stacked, and it clears the top rung
+      var colX782 = ldX782, colY782 = swY782;
+      for(var k782=0; k782<7; k782++){
+        var ky782 = colY782 - H*0.008 - k782*H*0.0148;
+        ctx.globalAlpha=g*f1A*(k782>4?(0.50+0.34*pul):0.84);
+        ctx.fillStyle='rgba(255,193,77,0.90)';
+        ctx.fillRect(colX782-W*0.020, ky782, W*0.040, H*0.0106);
+        ctx.globalAlpha=g*f1A*0.60; ctx.strokeStyle='rgba(255,236,190,0.80)'; ctx.lineWidth=0.26;
+        ctx.strokeRect(colX782-W*0.020, ky782, W*0.040, H*0.0106);
+      }
+      ctx.globalAlpha=g*f1A*(0.70+0.30*pul); ctx.strokeStyle='rgba(255,212,59,0.94)'; ctx.lineWidth=0.44;
+      ctx.beginPath(); ctx.moveTo(colX782, colY782-H*0.104); ctx.lineTo(colX782, top+H*0.264); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(colX782-W*0.006, top+H*0.274); ctx.lineTo(colX782, top+H*0.264); ctx.lineTo(colX782+W*0.006, top+H*0.274); ctx.stroke();
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*f1A*(0.78+0.22*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='700 2.4px ui-monospace,monospace';
+      ctx.fillText('↑ BEYOND EVEN THE LAST TIER', colX782+W*0.026, top+H*0.272);
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*f1A*(0.82+0.18*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('PERO LAI', colX782, colY782+H*0.014);
+      ctx.globalAlpha=g*f1A*0.80; ctx.fillStyle='rgba(255,193,77,0.92)'; ctx.font='700 2.1px ui-monospace,monospace';
+      ctx.fillText('“A ENORMOUS GODLY TIER”', colX782, colY782+H*0.026);
+
+      // the baseline everybody is left standing on
+      ctx.globalAlpha=g*f1A*0.70; ctx.strokeStyle='rgba(176,188,196,0.82)'; ctx.lineWidth=0.40;
+      ctx.beginPath(); ctx.moveTo(cx0782-W*0.030, swY782); ctx.lineTo(cx1782+W*0.026, swY782); ctx.stroke();
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*f1A*0.86; ctx.fillStyle='rgba(200,212,220,0.92)'; ctx.font='700 2.4px ui-monospace,monospace';
+      ctx.fillText('“SO EVERYONE IS JUST THEIR NORMAL STUFF”', cx0782-W*0.030, swY782+H*0.040);
+      ctx.textAlign='center';
+    }
+
+    if(wrA>0.01){
+      // THE POWER LEDGER: every time power changed hands in this archive, and by what method.
+      var rx782 = cx, ry0782 = top+H*0.462;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(224,214,198,0.82)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('EVERY TIME POWER CHANGED HANDS, AND HOW', rx782, ry0782-H*0.011);
+      var bx0782 = rx782-W*0.196, byy782 = ry0782;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(13,9,5,0.98)';
+      ctx.fillRect(bx0782, byy782, W*0.392, H*0.118);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(255,193,77,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(bx0782, byy782, W*0.392, H*0.118);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(255,193,77,0.90)';
+      ctx.fillRect(bx0782, byy782, W*0.392, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(255,240,214,0.96)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('THE POWER LEDGER', rx782, byy782+H*0.0095);
+      var rows782 = [
+        ['JULY 23, 8:34 AM','GRAY SWIPES HIS HAND','WENDA TURNED TO DUST · “HE USED PERO’S POWER AND ANIMATION”'],
+        ['SEPT 7, 4:15 PM','“I TAKEN ALL YOUR POWER WITH WORDS”','19 SPRUNKIS · NO FIGHT AT ALL'],
+        ['SEPT 10, 8:26 PM','“NOT TAKING POWER FROM ANYONE ELSE”','“THEY ARE MINE” · SAID TO GRAY, AS A RULE'],
+        ['SEPT 14, 4:16 PM','“I LOST NEARLY ALL MY POWER”','CONTROLLED BY SIMON.PS AND BRUD.PS'],
+        ['SEPT 22, 4:04 PM','EVERYONE INTO THE TUBES','THE CHARGER GOES ON · HIS ENERGY RISES FASTER'],
+        ['SEPT 22, 6:12 PM','ONE ARM, ONE TARGET','THE HAND COMES STRAIGHT BACK'],
+        ['TONIGHT','ONE SWING ACROSS','EVERY CLASSICS POWER AT ONCE']
+      ];
+      for(var q782=0; q782<rows782.length; q782++){
+        var qy782 = byy782 + H*0.026 + q782*H*0.0129;
+        var last782 = (q782===rows782.length-1);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(240,236,228,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(rows782[q782][0], bx0782+W*0.011, qy782);
+        ctx.globalAlpha=g*wrA*0.86;
+        ctx.fillStyle=last782?'rgba(255,212,59,0.94)':'rgba(234,232,226,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(rows782[q782][1], bx0782+W*0.090, qy782);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*(last782?(0.76+0.24*pul):0.74);
+        ctx.fillStyle=last782?'rgba(255,77,109,0.94)':'rgba(255,193,77,0.88)'; ctx.font='700 2.0px ui-monospace,monospace';
+        ctx.fillText(rows782[q782][2], bx0782+W*0.381, qy782);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(232,226,216,0.86)'; ctx.font='700 2.6px ui-monospace,monospace';
+      ctx.fillText('ONLY ONCE BEFORE DID HE TAKE FROM A CROWD, AND THAT TIME HE USED WORDS. TONIGHT HE USES THE HAND.', cx, byy782+H*0.134);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,193,77,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('NO MORE TIERS HERE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(248,242,232,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI SWINGS HIS HAND ACROSS AND TAKES EVERYONES ‘CLASSICS POWERS’ … SO EVERYONE IS JUST THEIR NORMAL STUFF.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.88;
+    ctx.fillStyle='rgba(255,193,77,0.90)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('FORTY-THREE MINUTES AGO HE EXPLAINED HOW THE ARM MOVES. TONIGHT IT MOVES ONCE AND HITS EVERYBODY.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(216,208,196,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 22, 6:55 PM, ON THE SAME THREAD AS THE MOTION STRIP.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('HE OPENS BY ACCUSING THEM OF THE THING HE IS ABOUT TO DO.', cx, top+H*0.204);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(240,236,228,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“YOU ALL *WILL* REGRET TAKING POWERS FROM ME AND MY GAME!” · BRUD: “BRUH, TAKE A CHILL PILL.”', cx, top+H*0.224);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“OH. DO YOU WANT CHOCOLATE OR VANILLA?” — AND THEN THE HAND GOES ACROSS THE WHOLE ROOM.', cx, top+H*0.242);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('HE OFFERS BRUD A CHOICE BETWEEN', cx-W*0.152, top+H*0.616);
+    ctx.fillText('CHOCOLATE AND VANILLA.', cx-W*0.152, top+H*0.632);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(238,234,226,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THE CHARACTER FILE ON BRUD: “EVOLUTION OF BUHD', cx-W*0.152, top+H*0.652);
+    ctx.fillText('THE BROWN. SIMON THINKS HE IS CHOCOLATE.', cx-W*0.152, top+H*0.666);
+    ctx.fillText('GETS EATEN REPEATEDLY.” SO HE IS ON THE MENU.', cx-W*0.152, top+H*0.680);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,193,77,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AND THE ONE OTHER TIME BRUD TALKED BACK TO', cx-W*0.152, top+H*0.698);
+    ctx.fillText('SOMEONE POWERFUL — MAY 28: “YOU NEVER MADE ANY', cx-W*0.152, top+H*0.712);
+    ctx.fillText('FUNNY JOKES, SIMON!” — THE ANSWER WAS “I MADE', cx-W*0.152, top+H*0.726);
+    ctx.fillText('YOU, BRUD” AND HE TURNED TO DUST.', cx-W*0.152, top+H*0.740);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE RULE HE IS ENFORCING IS HIS OWN,', cx+W*0.186, top+H*0.616);
+    ctx.fillText('AND THE EXCUSE IS GRAY’S.', cx+W*0.186, top+H*0.632);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(238,234,226,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 10, 8:26 PM, TO GRAY: “DID YOU HEAR WHAT I', cx+W*0.186, top+H*0.652);
+    ctx.fillText('SAID ABOUT NOT TAKING POWER OR REWARDS FROM', cx+W*0.186, top+H*0.666);
+    ctx.fillText('ANYONE ELSE, THEY ARE MINE.”', cx+W*0.186, top+H*0.680);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(255,193,77,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('GRAY ANSWERED “WENDA.PS TAKEN POWER FROM ME', cx+W*0.186, top+H*0.698);
+    ctx.fillText('FIRST, NOW, I SWITCH IT.” — AND PERO SLASHED HIM', cx+W*0.186, top+H*0.712);
+    ctx.fillText('INTO ENTITY 666 FOR IT. TONIGHT PERO SAYS THAT', cx+W*0.186, top+H*0.726);
+    ctx.fillText('SAME SENTENCE FIRST, AND TAKES FROM EVERYONE.', cx+W*0.186, top+H*0.740);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(244,240,232,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“FOR WHAT CLASSICS GAVE THEM” — THE POWERS WERE THE GAME’S ALL ALONG, AND HE IS THE ONE CALLING THEM IN.', cx, top+H*0.774);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(244,240,232,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWO DAYS AGO HE RANKED THEM ALL HIMSELF: GRAY “ONLY HAS LIKE 2 MAIN ABILITIES”, WENDA.PS “BASICALLY EVERY POWER”.', cx, top+H*0.792);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,193,77,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“GODLY TIER” IS FROM JULY 22, AND IT TOOK SIMON AND ORUS AND DARK YELLOW TOGETHER TO MAKE ONE.', cx, top+H*0.810);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AT 4:04 PM HE WAS “BEYOND OMNIPOTENT”. ON SEPTEMBER 13 HE WROTE “I AM NOT OMNIPOTENT, YOU ALL ARE.”', cx, top+H*0.828);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(238,234,226,0.88)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('BRUD SAYS “BRUH”, AND TWO SENTENCES LATER THE NARRATION IS SAYING IT TOO. HIS ONE EMOJI LANDS JUST BEFORE THE HAND.', cx, top+H*0.846);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ CHOCOLATE OR VANILLA ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===781){

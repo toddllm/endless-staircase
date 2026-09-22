@@ -4,6 +4,49 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-22 — NO MORE TIERS HERE (BEAT 782)
+
+Based on Toby's 2026-09-22 lore, **6:55 PM**, forty-three minutes after beat 781. The whole message is his own typing;
+everything under it is his own 6:12 PM and the 4:20 PM reply, quoted back, and is not new canon. **everyones** and
+**a enormous** are his, kept as typed. No attachment on this message.
+
+> "Pero LAI says 'You ALL *WILL* regret taking powers from ME and MY game!', Brud says 'Bruh, take a chill pill.',
+> Pero LAI says 'Oh. Do you want chocolate or vanilla? 😌'. Pero LAI swings his hand across and takes everyones
+> 'Classics powers' for what Classics gave them, so everyone is just their normal stuff. Pero LAI takes the Classics
+> stuff, and he becomes a enormous godly tier. Bruh, there are no more tiers here. Pero LAI goes beyond even the last
+> tier so..."
+
+- new beat 782 at `lvSeg` 16924.0-16946.0, `LV_CYC` 16946.0, `LV_BEATS` length 783
+- the swing: seven of the cast standing on one baseline with their **Classics** blocks already lifted off the top of
+  them and travelling right, the arm drawn as a single gold line straight through all of them, and everything it
+  takes stacked into one column on the far right — the column clears the top rung of the tier ladder and leaves the
+  frame with an arrow, **↑ BEYOND EVEN THE LAST TIER**. What stays standing under each of them is the short grey bar,
+  *"so everyone is just their normal stuff."* **BRUD** is the only one named, with his line under him
+- inset: **THE POWER LEDGER**, every time power changed hands in this archive and by what method — JULY 23, 8:34 AM /
+  Gray swipes his hand / Wenda turned to dust, *"he used Pero's power and animation"*; SEPT 7, 4:15 PM / *"I taken all
+  your power with words"* / 19 Sprunkis, no fight at all; SEPT 10, 8:26 PM / *"not taking power from anyone else"* /
+  *"they are mine"*, said to Gray as a rule; SEPT 14, 4:16 PM / *"I lost nearly all my power"* / controlled by Simon.ps
+  and Brud.ps; SEPT 22, 4:04 PM / everyone into the tubes / the charger goes on; SEPT 22, 6:12 PM / one arm, one
+  target / the hand comes straight back; and TONIGHT / one swing across / every Classics power at once. Under it: only
+  once before did he take from a crowd, and that time he used words
+- panels: **the chocolate is a person** — the character file on Brud reads *"Evolution of Buhd the Brown. Simon thinks
+  he is chocolate. Gets eaten repeatedly"*, so the menu he is offered has him on it, and the one other time Brud talked
+  back to someone powerful, on May 28 (*"You never made any funny jokes, Simon!"*), the answer was *"I made you, Brud"*
+  and he turned to dust; and **the rule he is enforcing is his own, and the excuse is Gray's** — September 10, 8:26 PM,
+  to Gray: *"did you hear what I said about NOT taking power or rewards from anyone else, they are mine"*, Gray
+  answered *"Wenda.ps taken power from me first, now, I switch it"* and was slashed into Entity 666 for it, and tonight
+  Pero says that same sentence first and then takes from everyone
+- footer: *"for what Classics gave them"* — the powers were the game's all along and he is the one calling them in; the
+  power scale he wrote two days ago (Gray *"only has like 2 main abilities"*, Wenda.ps *"basically every power"*) going
+  back to nothing in one motion; **godly tier** as July 22 used it, where it took Simon and Orus and Dark Yellow
+  together to make one; 4:04 PM's *"BEYOND omnipotent"* against September 13's *"I am not omnipotent, you all are"*;
+  and Brud's *"Bruh"* turning up in the narration two sentences later, with his one emoji landing just before the hand
+- capture scene `nomoretiers` added to `tools/capture_screenshot.py`, frozen at cyc 16944.8
+- runtime probe over the whole 22-second beat: 783 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 782 — No More Tiers Here](screenshots/844-no-more-tiers.png)
+
 ## 2026-09-22 — THE HAND ALWAYS COMES BACK (BEAT 781)
 
 Based on Toby's 2026-09-22 lore, **6:12 PM**, two hours and eight minutes after beat 780, answering a picture with a
