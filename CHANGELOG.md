@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-22 — THE HAND ALWAYS COMES BACK (BEAT 781)
+
+Based on Toby's 2026-09-22 lore, **6:12 PM**, two hours and eight minutes after beat 780, answering a picture with a
+description of how the arm moves. His own typing is the first paragraph only. Everything from "Got it — in lore, his
+motion is almost instantaneous" onward is a pasted reply and is **not canon**, including the four-item list (calm,
+precise, effortless, nearly too fast to react to), the line "minimal movement, instant contact, instant return, and
+overwhelming effect", and the offer to generate another image. No attachment on this message; "that is what he looks
+like in lore" points back at the picture on the 4:04 PM message, which is not hosted per the no-image rule.
+
+> "That is what he looks like in lore. He just puts his arm out and touches you and he nearly instantly puts his hand
+> back to where he wants it."
+
+- new beat 781 at `lvSeg` 16902.0-16924.0, `LV_CYC` 16924.0, `LV_BEATS` length 782
+- the motion strip: three frames drawn from his sentence — **1 · ARM OUT** (nothing has happened yet), **2 · CONTACT**
+  (the only moment that counts, the target fills with ice and a ring flashes), **3 · HAND BACK** (the arm is gone from
+  the frame and the target stays frozen and cracked) — with a timing line under it where the yellow sliver is how much
+  of the cycle the arm is actually out
+- inset: **THE TOUCH REGISTER**, every touch on record with what it cost each side — SEPT 18, AT 17 / the
+  alpheritanuim uranuim / "I blocked Flower from touching it, I touched it"; SEPT 20, 2:07 PM / the only rock of its
+  kind / "the rock disappeared", nobody can repeat it; SEPT 20, 4:49 PM / the titainuim and the uranuim / "both
+  disappeared", Flower is safe; SEPT 18, 4:10 PM / the reset / the whole game became Japanese; SEPT 22, 4:04 PM / the
+  katata he had not touched / frozen, only God gets out of that ice; and TONIGHT / his own hand / unchanged, back
+  where he wants it
+- panels: the touch is **inherited** — the power file on Oren.EXE reads "a spirit telekinetic only … can disappear and
+  reappear, possess, phase, and turn touched targets into spirits", and September 21 at 5:04 PM says "he is a clone of
+  Oren and Simon.ps", so Pero kept the hand and threw away the half that needed no hand at all; and the one time the
+  hand did not come straight back, September 22 at 4:04 PM, "I have Simon.ps in my hands, if you want me to let go,
+  say what I want to hear" — a rock costs nothing, a boy costs a sentence
+- footer: the first touch in the file is him putting his hand where someone else's was going, and it is the only touch
+  that ever changed *him* ("Pero became Pero LAI and godly"); the same motion pointed at the game itself on September
+  18; last night's katata and the ice only God gets out of, with the hand that froze it unharmed; and the pasted reply
+  calling it calm, precise and effortless against Toby's own two words, "nearly instantly"
+- capture scene `handcomesback` added to `tools/capture_screenshot.py`, frozen at cyc 16922.8
+- runtime probe over the whole 22-second beat: 782 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 781 — The Hand Always Comes Back](screenshots/843-the-hand-always-comes-back.png)
+
 ## 2026-09-22 — EVERYONE! THIS IS ME (BEAT 780)
 
 Based on Toby's 2026-09-22 lore, **4:04 PM**, twenty hours after "Is Your AI Just Dumb Today?" left Pero LAI's face in

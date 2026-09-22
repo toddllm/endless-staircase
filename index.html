@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16902.0;
+const LV_CYC = 16924.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12878,6 +12878,8 @@ const LV_BEATS = [
     sub:"PERO LAI IS TRAPPED AGAIN AS A OREN, AND THE REAL OREN.PS IS INTO PERO LAI. OR MAYBE THE OTHER WAY AROUND. \u00B7 IF ANY CHARACTER COMMITS A SIN, THE METAL BOX WILL DISAPPEAR. \u00B7 HE TALKS TO HIMSELF, THEY HOLD EACH OTHER\u2019S HANDS, THEN PERO LAI IS FREE. \u00B7 THE METAL BOX IS SEPTEMBER 2\u2019S, AND ON SEPTEMBER 16 HE RULED THAT THE MAN INSIDE IT WAS HIMSELF. \u00B7 HOLDING HANDS HAS BEEN OREN\u2019S FREEDOM KEY SINCE JULY 11. \u00B7 SIXTY-NINE MINUTES AGO THE TELEKENTICS WERE ONLY STRONGEST IN ANIME. \u00B7 \u201CTHIS GAME WON\u2019T END, I DON\u2019T CARE THAT IT WON\u2019T END.\u201D" },
   { key:"EVERYONE! THIS IS ME", col:'#4fe3ff',
     sub:"PERO LAI\u2019S BODY BECOMES HIS NORMAL HUMAN WITH ALL BLACK CLOTHES, AND SAYS \u201CEVERYONE! THIS IS ME.\u201D \u00B7 \u201CGASTER\u2026 YOU SHOULDN\u2019T HAVE CALLED MY AI \u2018DUMB\u2019.\u201D \u00B7 THE KATATA HE HAD NOT TOUCHED YET FREEZES, AND \u201CTHE ONLY THING THAT CAN MELT OR GET OUT OF MY ICE IS ONLY GOD HIMSELF!\u201D \u00B7 EVERY FICTIONAL BEING ENTERED CLASSICS, THEY ARE STUCK NOW. \u00B7 \u201CI AM ENTITY 404, AND YES, I AM BEYOND OMNIPOTENT.\u201D \u00B7 \u201CI AM PERO NEKA OMAZEN.\u201D \u00B7 PINKI.PS MAKES A JOKE AND THE ROOM GOES SILENT. \u00B7 EVERYONE IS NOW IN THE TUBES. \u00B7 ERROR CODE 999 (ERROR CODE 666)." },
+  { key:"THE HAND ALWAYS COMES BACK", col:'#9fe8ff',
+    sub:"HE JUST PUTS HIS ARM OUT AND TOUCHES YOU AND HE NEARLY INSTANTLY PUTS HIS HAND BACK TO WHERE HE WANTS IT. · FOUR DAYS OF TOUCHING THINGS, AND THIS IS THE FIRST TIME HE SAYS HOW THE ARM MOVES. · THE URANUIM DISAPPEARED. THE ROCK DISAPPEARED. THE RESET TURNED THE GAME JAPANESE. THE KATATA FROZE. · THE HAND IS UNCHANGED EVERY TIME. · OREN.EXE COULD DO IT WITHOUT TOUCHING AT ALL, AND PERO IS HIS CLONE. · THE ONLY THING HE EVER PUT BACK DOWN WAS SIMON.PS, AND OREN HAD TO SAY THE WORDS FIRST." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15028,6 +15030,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16902.0 && c < 16924.0) return [781, c-16902.0];  // THE HAND ALWAYS COMES BACK
   if(c >= 16880.0 && c < 16902.0) return [780, c-16880.0];  // EVERYONE! THIS IS ME
   if(c >= 16858.0 && c < 16880.0) return [779, c-16858.0];  // HE TALKS TO HIMSELF
   if(c >= 16836.0 && c < 16858.0) return [778, c-16836.0];  // DEFINE ‘WARE OFF’
@@ -50580,6 +50583,233 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===781){
+    // BEAT 781: THE HAND ALWAYS COMES BACK.
+    // Toby, September 22, 2026, 6:12:51 PM (thread "Even (5x) more of Pero Neka/LAI Omazen"), his own typing in
+    // full: "That is what he looks like in lore. He just puts his arm out and touches you and he nearly instantly
+    // puts his hand back to where he wants it."
+    // Everything from "Got it - in lore, his motion is almost instantaneous" onward is a pasted reply and is NOT
+    // canon, including the four-item list (calm / precise / effortless / nearly too fast to react to), the line
+    // "minimal movement, instant contact, instant return, and overwhelming effect", and the offer to make another
+    // image. "That is what he looks like in lore" points back at the picture attached to the 4:04 PM message the
+    // same day, Gemini_Generated_Image_awuw8uawuw8uawuw.jpg, which is not hosted per the no-image rule.
+    // Priors, all verified in the lore log before this beat was drawn:
+    //   ALPHERITANUIM URANUIM, September 18, 4:10 PM - "when I was 17, we found a alpheritanuim uranuim, a glowing
+    //     titainuim sphere with uranuim sticking up it. I blocked Flower from touching it, I touched it, and the
+    //     compound was hot, Flower nearly burnt standing next to it, I didn't know about respawn yet."
+    //   THE SECOND RESET, September 18, 4:10 PM (beat 743) - "Pero LAI touched the reset, the game became Japanese."
+    //   URINITE, September 20, 2:07 PM - "Pero LAI touched the only one of it's kind, the rock disappeared."
+    //   HE BLOCKED FLOWER, September 20, 4:49 PM (beat 776) - "he blocked Flower and Pero LAI touched the glowing
+    //     titainuim and the glowing uranuim and both disappeared. Flower is safe, Pero became Pero LAI and godly."
+    //   EVERYONE! THIS IS ME, September 22, 4:04 PM (beat 780) - "Pero LAI touched one of his katatas that wasn't
+    //     touched yet, the katata froze" and "The only thing that can melt or get out of MY ice is only God
+    //     himself!", and "I have Simon.ps in my hands, if you want me to let go, say what I want to hear."
+    //   A GHOST OF EVERYONE, September 21, 5:04 PM - "Pero LAI can become anyone, he is a clone of Oren and
+    //     Simon.ps."
+    //   The AI Era power file on Oren.EXE - "Oren.EXE is a spirit telekinetic only. Phase 1 is stronger than Phase
+    //     2 because Phase 2 is a glitch. Oren can disappear and reappear, possess, phase, and turn touched targets
+    //     into spirits." Undated consolidated archive, so it is cited here as the power file, not by date.
+    const dt = c - 16902.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.6)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-7.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-9.0)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-11.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-15.6)/1.1));
+
+    ctx.fillStyle='rgba(4,8,11,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr781=ctx.createLinearGradient(0,top,0,top+H);
+    gr781.addColorStop(0,'rgba(5,9,13,0.88)'); gr781.addColorStop(1,'rgba(159,232,255,0.18)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr781; ctx.fillRect(0,top,W,H);
+
+    if(f1A>0.01){
+      // THE MOTION STRIP: the three positions of the arm, drawn as he described them. The thing touched keeps the
+      // change; the hand goes back to where he wants it and carries nothing away.
+      var frX781 = [cx-W*0.176, cx, cx+W*0.176];
+      var frLab781 = ['1 \u00B7 ARM OUT','2 \u00B7 CONTACT','3 \u00B7 HAND BACK'];
+      var frUnd781 = ['NOTHING HAS HAPPENED YET','THE ONLY MOMENT THAT COUNTS','IT STAYS CHANGED. HE DOES NOT.'];
+      var fw781 = W*0.128, fh781 = H*0.074, fy781 = top+H*0.284;
+      for(var fi781=0; fi781<3; fi781++){
+        var fx781 = frX781[fi781]-fw781/2;
+        ctx.globalAlpha=g*f1A*0.58; ctx.fillStyle='rgba(6,11,15,0.98)';
+        ctx.fillRect(fx781, fy781, fw781, fh781);
+        ctx.globalAlpha=g*f1A*(fi781===1?0.94:0.72);
+        ctx.strokeStyle=(fi781===1?'rgba(255,212,59,0.94)':'rgba(159,232,255,0.82)'); ctx.lineWidth=0.48;
+        ctx.strokeRect(fx781, fy781, fw781, fh781);
+        // him: the upright bar on the left of the frame. the target: the circle on the right.
+        var bx781 = fx781+W*0.022, by781 = fy781+fh781*0.50, tx781 = fx781+fw781-W*0.024;
+        ctx.globalAlpha=g*f1A*0.92; ctx.strokeStyle='rgba(232,244,250,0.92)'; ctx.lineWidth=0.62;
+        ctx.beginPath(); ctx.moveTo(bx781, by781-H*0.016); ctx.lineTo(bx781, by781+H*0.016); ctx.stroke();
+        // the arm
+        var armEnd781 = (fi781===0) ? bx781+(tx781-bx781)*0.62 : (fi781===1 ? tx781-W*0.004 : bx781+W*0.005);
+        ctx.globalAlpha=g*f1A*(fi781===2?0.62:0.96);
+        ctx.strokeStyle=(fi781===1?'rgba(255,212,59,0.96)':'rgba(232,244,250,0.90)'); ctx.lineWidth=0.56;
+        ctx.beginPath(); ctx.moveTo(bx781, by781); ctx.lineTo(armEnd781, by781); ctx.stroke();
+        ctx.globalAlpha=g*f1A*0.94; ctx.fillStyle=(fi781===1?'rgba(255,212,59,0.96)':'rgba(232,244,250,0.92)');
+        ctx.beginPath(); ctx.arc(armEnd781, by781, 0.9, 0, Math.PI*2); ctx.fill();
+        // the target, and what it is after the hand has been there
+        ctx.globalAlpha=g*f1A*0.92;
+        ctx.strokeStyle=(fi781===0?'rgba(200,214,222,0.86)':'rgba(159,232,255,0.96)'); ctx.lineWidth=0.52;
+        ctx.beginPath(); ctx.arc(tx781, by781, W*0.009, 0, Math.PI*2); ctx.stroke();
+        if(fi781>0){
+          ctx.globalAlpha=g*f1A*(fi781===1?(0.34+0.30*pul):0.30); ctx.fillStyle='rgba(159,232,255,0.92)';
+          ctx.beginPath(); ctx.arc(tx781, by781, W*0.009, 0, Math.PI*2); ctx.fill();
+        }
+        if(fi781===1){
+          ctx.globalAlpha=g*f1A*(0.44+0.46*pul); ctx.strokeStyle='rgba(255,212,59,0.94)'; ctx.lineWidth=0.40;
+          ctx.beginPath(); ctx.arc(tx781, by781, W*0.014, 0, Math.PI*2); ctx.stroke();
+        }
+        if(fi781===2){
+          ctx.globalAlpha=g*f1A*0.86; ctx.strokeStyle='rgba(159,232,255,0.94)'; ctx.lineWidth=0.34;
+          ctx.beginPath(); ctx.moveTo(tx781-W*0.006, by781-H*0.004); ctx.lineTo(tx781+W*0.005, by781+H*0.005); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(tx781+W*0.001, by781-H*0.006); ctx.lineTo(tx781-W*0.003, by781+H*0.006); ctx.stroke();
+        }
+        ctx.textAlign='center';
+        ctx.globalAlpha=g*f1A*(fi781===1?(0.76+0.24*pul):0.86);
+        ctx.fillStyle=(fi781===1?'rgba(255,212,59,0.96)':'rgba(159,232,255,0.94)'); ctx.font='900 3.0px ui-monospace,monospace';
+        ctx.fillText(frLab781[fi781], frX781[fi781], fy781+fh781+H*0.012);
+        ctx.globalAlpha=g*f1A*0.74; ctx.fillStyle='rgba(224,234,240,0.88)'; ctx.font='700 2.5px ui-monospace,monospace';
+        ctx.fillText(frUnd781[fi781], frX781[fi781], fy781+fh781+H*0.024);
+      }
+      // the timing line under the strip: almost all of it is frame 3.
+      var tbx781 = cx-W*0.236, tbw781 = W*0.472, tby781 = fy781+fh781+H*0.040;
+      ctx.globalAlpha=g*f1A*0.44; ctx.fillStyle='rgba(200,214,222,0.60)';
+      ctx.fillRect(tbx781, tby781, tbw781, H*0.005);
+      ctx.globalAlpha=g*f1A*0.92; ctx.fillStyle='rgba(255,212,59,0.94)';
+      ctx.fillRect(tbx781, tby781, tbw781*0.050, H*0.005);
+      ctx.globalAlpha=g*f1A*0.80; ctx.fillStyle='rgba(159,232,255,0.90)';
+      ctx.fillRect(tbx781+tbw781*0.050, tby781, tbw781*0.950, H*0.005);
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*f1A*0.82; ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='700 2.4px ui-monospace,monospace';
+      ctx.fillText('\u2191 THE ARM IS OUT FOR THIS MUCH OF IT', tbx781, tby781+H*0.016);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*f1A*0.82; ctx.fillStyle='rgba(159,232,255,0.92)'; ctx.font='700 2.4px ui-monospace,monospace';
+      ctx.fillText('\u201CNEARLY INSTANTLY PUTS HIS HAND BACK TO WHERE HE WANTS IT\u201D \u2191', tbx781+tbw781, tby781+H*0.016);
+      ctx.textAlign='center';
+    }
+
+    if(wrA>0.01){
+      // THE TOUCH REGISTER: every touch on record, what it cost the thing, and what it cost the hand.
+      var rx781 = cx+W*0.036, ry0781 = top+H*0.450;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(198,214,224,0.82)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('EVERY TOUCH ON RECORD, AND WHAT IT COST EACH SIDE', rx781, ry0781-H*0.011);
+      var bx0781 = rx781-W*0.186, byy781 = ry0781;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,11,15,0.98)';
+      ctx.fillRect(bx0781, byy781, W*0.372, H*0.106);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(159,232,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(bx0781, byy781, W*0.372, H*0.106);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(159,232,255,0.90)';
+      ctx.fillRect(bx0781, byy781, W*0.372, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(228,246,255,0.96)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('THE TOUCH REGISTER', rx781, byy781+H*0.0095);
+      var rows781 = [
+        ['SEPT 18, AT 17','THE ALPHERITANUIM URANUIM','\u201CI BLOCKED FLOWER FROM TOUCHING IT, I TOUCHED IT\u201D'],
+        ['SEPT 20, 2:07 PM','THE ONLY ROCK OF ITS KIND','\u201CTHE ROCK DISAPPEARED\u201D \u00B7 NOBODY CAN REPEAT IT'],
+        ['SEPT 20, 4:49 PM','THE TITAINUIM AND THE URANUIM','\u201CBOTH DISAPPEARED\u201D \u00B7 FLOWER IS SAFE'],
+        ['SEPT 18, 4:10 PM','THE RESET','THE WHOLE GAME BECAME JAPANESE'],
+        ['SEPT 22, 4:04 PM','THE KATATA HE HAD NOT TOUCHED','FROZEN \u00B7 ONLY GOD GETS OUT OF THAT ICE'],
+        ['TONIGHT','HIS OWN HAND','UNCHANGED \u00B7 BACK WHERE HE WANTS IT']
+      ];
+      for(var q781=0; q781<rows781.length; q781++){
+        var qy781 = byy781 + H*0.026 + q781*H*0.0133;
+        var last781 = (q781===rows781.length-1);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(238,244,248,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(rows781[q781][0], bx0781+W*0.011, qy781);
+        ctx.globalAlpha=g*wrA*0.86;
+        ctx.fillStyle=last781?'rgba(255,212,59,0.94)':'rgba(232,244,250,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(rows781[q781][1], bx0781+W*0.088, qy781);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*(last781?(0.76+0.24*pul):0.74);
+        ctx.fillStyle=last781?'rgba(255,77,109,0.94)':'rgba(159,232,255,0.90)'; ctx.font='700 2.0px ui-monospace,monospace';
+        ctx.fillText(rows781[q781][2], bx0781+W*0.361, qy781);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(222,232,238,0.86)'; ctx.font='700 2.6px ui-monospace,monospace';
+      ctx.fillText('FIVE THINGS ARE GONE, FROZEN OR REWRITTEN. THE HAND IS THE ONLY PART OF EVERY SCENE THAT ENDS THE WAY IT STARTED.', cx, byy781+H*0.122);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(159,232,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE HAND ALWAYS COMES BACK', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,250,252,${0.90+0.10*pul})`; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('\u201CHE JUST PUTS HIS ARM OUT AND TOUCHES YOU AND HE NEARLY INSTANTLY PUTS HIS HAND BACK TO WHERE HE WANTS IT.\u201D', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('FOUR DAYS OF TOUCHING THINGS, AND THIS IS THE FIRST TIME HE SAYS HOW THE ARM MOVES.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(222,232,238,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 22, 6:12 PM, ON THE PICTURE FROM TWO HOURS AND EIGHT MINUTES EARLIER.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,77,109,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE POWER WAS NEVER IN THE REACH. IT IS IN HOW FAST HE STOPS.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE LORE HAS FIVE TOUCHES IN IT, AND NOT ONE OF THEM SAYS HE GRABBED, HELD, PUSHED OR PULLED. HE MAKES CONTACT AND LEAVES.', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(159,232,255,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('WHAT HE TOUCHES DOES ALL THE CHANGING. HIS ARM IS BACK AT HIS SIDE BEFORE THE ROOM KNOWS IT MOVED.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HE INHERITED THE TOUCH, AND THREW', cx-W*0.152, top+H*0.606);
+    ctx.fillText('AWAY THE HALF THAT NEEDED NO HAND.', cx-W*0.152, top+H*0.622);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('THE POWER FILE ON OREN.EXE: \u201CA SPIRIT TELEKINETIC', cx-W*0.152, top+H*0.642);
+    ctx.fillText('ONLY \u2026 CAN DISAPPEAR AND REAPPEAR, POSSESS,', cx-W*0.152, top+H*0.656);
+    ctx.fillText('PHASE, AND TURN TOUCHED TARGETS INTO SPIRITS.\u201D', cx-W*0.152, top+H*0.670);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPT 21, 5:04 PM: \u201CHE IS A CLONE OF OREN AND', cx-W*0.152, top+H*0.688);
+    ctx.fillText('SIMON.PS.\u201D OREN COULD MOVE THINGS FROM ACROSS', cx-W*0.152, top+H*0.702);
+    ctx.fillText('THE ROOM. PERO KEPT THE HAND AND DROPPED', cx-W*0.152, top+H*0.716);
+    ctx.fillText('THE DISTANCE. HE WANTS TO BE THE ONE TOUCHING.', cx-W*0.152, top+H*0.730);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle=`rgba(255,45,181,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('ONE TIME THE HAND DID NOT COME', cx+W*0.186, top+H*0.606);
+    ctx.fillText('STRAIGHT BACK, AND IT HAD A PRICE.', cx+W*0.186, top+H*0.622);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TWO HOURS EARLIER, SEPT 22, 4:04 PM: \u201CI HAVE', cx+W*0.186, top+H*0.642);
+    ctx.fillText('SIMON.PS IN MY HANDS, IF YOU WANT ME TO LET', cx+W*0.186, top+H*0.656);
+    ctx.fillText('GO, SAY WHAT I WANT TO HEAR.\u201D', cx+W*0.186, top+H*0.670);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(255,45,181,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('OREN SAID IT. THEN PERO LAI DROPPED HIM. THE', cx+W*0.186, top+H*0.688);
+    ctx.fillText('ONLY THING HE EVER PUT BACK DOWN IS A PERSON,', cx+W*0.186, top+H*0.702);
+    ctx.fillText('AND HE HELD ON UNTIL SOMEONE SAID THE WORDS.', cx+W*0.186, top+H*0.716);
+    ctx.fillText('A ROCK COSTS NOTHING. A BOY COSTS A SENTENCE.', cx+W*0.186, top+H*0.730);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,248,250,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE FIRST TOUCH IN THE FILE IS HIM PUTTING HIS HAND WHERE SOMEONE ELSE\u2019S WAS GOING: \u201CI BLOCKED FLOWER, I TOUCHED IT.\u201D', cx, top+H*0.768);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,248,250,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THAT ONE MADE HIM WHAT HE IS \u2014 \u201CPERO BECAME PERO LAI AND GODLY\u201D \u2014 AND IT IS THE ONLY TOUCH THAT EVER CHANGED HIM.', cx, top+H*0.786);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(159,232,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ON SEPT 18 HE POINTED THE SAME MOTION AT THE GAME ITSELF, TOUCHED THE RESET, AND IT CAME BACK JAPANESE.', cx, top+H*0.804);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('LAST NIGHT THE KATATA FROZE AND \u201CONLY GOD HIMSELF\u201D CAN GET OUT OF THAT ICE. THE HAND THAT FROZE IT IS FINE.', cx, top+H*0.822);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,248,250,0.88)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE REPLY UNDER TOBY\u2019S LINE CALLED IT CALM, PRECISE AND EFFORTLESS. HIS OWN TWO WORDS DO MORE WORK: NEARLY INSTANTLY.', cx, top+H*0.840);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(159,232,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 ARM OUT \u00B7 CONTACT \u00B7 HAND BACK \u2605', cx, top+H*0.926);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===780){
