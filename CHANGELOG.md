@@ -4,6 +4,48 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-22 — EVERYONE! THIS IS ME (BEAT 780)
+
+Based on Toby's 2026-09-22 lore, **4:04 PM**, twenty hours after "Is Your AI Just Dumb Today?" left Pero LAI's face in
+static. The whole message is his own typing except the SCP-343 paragraph in the middle, which is a pasted answer and is
+not canon. **now**, **labatory**, **knifes** and **nettles** are his spellings, kept. The attached picture,
+`Gemini_Generated_Image_awuw8uawuw8uawuw.jpg`, is not hosted per the no-image rule.
+
+> "Pero LAI then says 'Gaster... you shouldn't have called my AI "dumb".', Pero LAI's body becomes his normal human
+> with all black clothes, and says 'Everyone! This is me.'. Pero LAI touched one of his katatas that wasn't touched
+> yet, the katata froze. Pero LAI says 'The only thing that can melt or get out of MY ice is only God himself!' …
+> he takes the character out of the ice and puts it in the tube, and he puts the charger on, his energy now goes up
+> faster. Every fictional being entered Classics, they are stuck now. … 'Incorrect. I am Entity 404, and Yes, I am
+> BEYOND omnipotent.' … 'I have Simon.ps in my hands, if you want me to let go, say what I want to hear.' …
+> 'I am what I am, and I am Pero Neka Omazen.', Pinki.ps says 'Stop saying your middle name.', everyone laughs, Pero
+> Neka Omazen says 'One more word, and I am cutting the game apart.', everyone stopped laughing and became
+> immediately silent. … everyone is now in the tubes. … Error Code 999 (Error Code 666)"
+
+- new beat 780 at `lvSeg` 16880.0-16902.0, `LV_CYC` 16902.0, `LV_BEATS` length 781
+- inset: the File 666 door test — SEPT 20, IN / NO WAY TO ENTER, SEPT 20, OUT / NOR EXIT, TONIGHT, IN / EVERY
+  FICTIONAL BEING, TONIGHT, OUT / "THEY ARE STUCK NOW", and under them THE SEAL / ONLY FAILED INWARD
+- panels: September 21's "Is your AI just dumb today?" and the face in static, answered twenty hours later by the
+  first line of tonight's message; September 13's "normal man in black 1976 clothes" and his own correction that day,
+  "That isn't Pero LAI's form it is the simple human-like one!", against tonight's "Everyone! This is me.", with
+  September 20's "Pero LAI doesn't have a normal form, he changes" behind it; the August 21 entity register in his own
+  typing — "Entity 404 is Simon … Entity 101 is LLM/LAI … Entity 12 12 12 is Pero" — so he has two numbers already and
+  skips both to claim the one belonging to the boy in his hands; September 19's book page, "Pero LAI is different from
+  God … God forgives you when you say sorry to him", against "the only thing that can melt or get out of MY ice is
+  only God himself" followed a few lines later by "BEYOND omnipotent"; and the omnipotence chain — September 10's
+  "Everyone now knows that you aren't omnipotent" from Oren and September 13's "I am not omnipotent, you all are" from
+  Pero himself, against tonight, where he holds Simon.ps up and makes Oren say it back out loud
+- footer: the tubes as a plan on August 30, a room on September 20 at 6:40 AM, full by 8:33 except for Wenda.ps, and
+  tonight everyone; September 19's "infinite battery power" still charging faster tonight; September 10's "enter
+  Classics, go into the labatory, you recieve a perminent + enternal curse", which he now performs himself; Omnazen as
+  his own July 30 coinage for "the all-encompassing, final, highest peak", stamped on every .ps being on the way into
+  the glass; Pinki.ps, described on September 20 as the one who "acts friendly" with the line "stay together, trust",
+  making the joke that nearly ends the game; and September 19, where a group standing up together turned his face
+  "from confident to scared" and he ran, against tonight's room going silent
+- footer star: ★ ERROR CODE 999 (ERROR CODE 666) ★ — 666 was the filename two days ago, 999 has zero prior hits
+- new capture scene `thisisme780`; screenshot 841 recaptured for the shifted ladder
+
+![Beat 780 — Everyone! This Is Me](screenshots/842-everyone-this-is-me.png)
+
 ## 2026-09-20 — HE TALKS TO HIMSELF (BEAT 779)
 
 Based on Toby's 2026-09-20 lore, **6:08 PM**, sixty-nine minutes after "Define 'Ware Off'". The whole top block is

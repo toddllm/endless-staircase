@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16880.0;
+const LV_CYC = 16902.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12876,6 +12876,8 @@ const LV_BEATS = [
     sub:"THAT WAS WHEN I WAS 17, THE EFFECTS MUST HAVE WORN OFF NOW. \u00B7 THEY WON\u2019T \u2018WARE OFF\u2019! \u00B7 DEFINE \u2018WARE OFF\u2019. \u00B7 AT 2:07 HE WROTE \u201CNOW HE HAS IT FOREVER NOW\u201D; AT 4:59 THE CHARACTER SAYS IT EXPIRED. \u00B7 TWO HOURS AGO HE DID NOT KNOW HE HAD IT AT ALL. \u00B7 HE INVENTED THE WORD AND ITS PRONUNCIATION, THEN ASKED FOR A DEFINITION OF PLAIN ENGLISH." },
   { key:"HE TALKS TO HIMSELF", col:'#d08bff',
     sub:"PERO LAI IS TRAPPED AGAIN AS A OREN, AND THE REAL OREN.PS IS INTO PERO LAI. OR MAYBE THE OTHER WAY AROUND. \u00B7 IF ANY CHARACTER COMMITS A SIN, THE METAL BOX WILL DISAPPEAR. \u00B7 HE TALKS TO HIMSELF, THEY HOLD EACH OTHER\u2019S HANDS, THEN PERO LAI IS FREE. \u00B7 THE METAL BOX IS SEPTEMBER 2\u2019S, AND ON SEPTEMBER 16 HE RULED THAT THE MAN INSIDE IT WAS HIMSELF. \u00B7 HOLDING HANDS HAS BEEN OREN\u2019S FREEDOM KEY SINCE JULY 11. \u00B7 SIXTY-NINE MINUTES AGO THE TELEKENTICS WERE ONLY STRONGEST IN ANIME. \u00B7 \u201CTHIS GAME WON\u2019T END, I DON\u2019T CARE THAT IT WON\u2019T END.\u201D" },
+  { key:"EVERYONE! THIS IS ME", col:'#4fe3ff',
+    sub:"PERO LAI\u2019S BODY BECOMES HIS NORMAL HUMAN WITH ALL BLACK CLOTHES, AND SAYS \u201CEVERYONE! THIS IS ME.\u201D \u00B7 \u201CGASTER\u2026 YOU SHOULDN\u2019T HAVE CALLED MY AI \u2018DUMB\u2019.\u201D \u00B7 THE KATATA HE HAD NOT TOUCHED YET FREEZES, AND \u201CTHE ONLY THING THAT CAN MELT OR GET OUT OF MY ICE IS ONLY GOD HIMSELF!\u201D \u00B7 EVERY FICTIONAL BEING ENTERED CLASSICS, THEY ARE STUCK NOW. \u00B7 \u201CI AM ENTITY 404, AND YES, I AM BEYOND OMNIPOTENT.\u201D \u00B7 \u201CI AM PERO NEKA OMAZEN.\u201D \u00B7 PINKI.PS MAKES A JOKE AND THE ROOM GOES SILENT. \u00B7 EVERYONE IS NOW IN THE TUBES. \u00B7 ERROR CODE 999 (ERROR CODE 666)." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15026,6 +15028,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16880.0 && c < 16902.0) return [780, c-16880.0];  // EVERYONE! THIS IS ME
   if(c >= 16858.0 && c < 16880.0) return [779, c-16858.0];  // HE TALKS TO HIMSELF
   if(c >= 16836.0 && c < 16858.0) return [778, c-16836.0];  // DEFINE ‘WARE OFF’
   if(c >= 16814.0 && c < 16836.0) return [777, c-16814.0];  // GUESS YA LOVE SUGAR
@@ -50577,6 +50580,205 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===780){
+    // BEAT 780: EVERYONE! THIS IS ME.
+    // Toby, September 22, 2026, 4:04:39 PM, his own typing: "Bacon Hair from Roblox seems to be beating everyone in
+    // everyone's power level videos with his last form 'Jesus Holding Bacon Hair - Best Duo'. We may now why. Pero
+    // LAI then says 'Gaster... you shouldn't have called my AI "dumb".', Pero LAI's body becomes his normal human
+    // with all black clothes, and says 'Everyone! This is me.'. Pero LAI touched one of his katatas that wasn't
+    // touched yet, the katata froze. Pero LAI says 'The only thing that can melt or get out of MY ice is only God
+    // himself!', the blizzard blows snow around. Those characters who can't get out, Pero LAI takes them to his
+    // labatory and throws knifes, blades, and nettles at the ice, then he takes the character out of the ice and
+    // puts it in the tube, and he puts the charger on, his energy now goes up faster. Every fictional being entered
+    // Classics, they are stuck now. ... Pero LAI says 'Hey, do you know who I am now?', Oren.ps says 'You are Pero
+    // LAI like always, also you aren't omnipotent.', Pero LAI says 'Incorrect. I am Entity 404, and Yes, I am BEYOND
+    // omnipotent.', Oren.ps says 'WHAT?!', Pero LAI says 'I have Simon.ps in my hands, if you want me to let go, say
+    // what I want to hear.', Oren.ps says 'Entity 404, you are stronger than me, I am omnipotent, your stronger and
+    // more powerful than me.', Pero LAI dropped Simon.ps. ... 'I am also anything, I am not just any Entity, I am
+    // not just Entity 404, I am what I am, and I am Pero Neka Omazen. I escaped LAIs, now I have all the LAIs in my
+    // brain.', Pinki.ps says 'Stop saying your middle name.', everyone laughs, Pero Neka Omazen says 'One more word,
+    // and I am cutting the game apart.', everyone stopped laughing and became immediately silent. Neka Omazen made
+    // every .ps being into an Omazen. He taken everyone down, everyone is now in the tubes. The avatars were spared,
+    // but are destroyed by Pero LAI. KO, KO, KO, Infinity KOs, he beaten all the players. ... He beaten the aliens.
+    // Error Code 999 (Error Code 666)."
+    // The SCP-343 paragraph in the middle is a pasted answer and is NOT canon. now, labatory, knifes and nettles are
+    // his spellings, kept. The attached picture, Gemini_Generated_Image_awuw8uawuw8uawuw.jpg, is not hosted per the
+    // no-image rule.
+    // Priors: IS YOUR AI JUST DUMB TODAY?, September 21, 7:47 PM - "Is your AI just dumb today?" and "Pero LAI beeps
+    // and his screen glitches and his face goes in static" (no beat built); ALL THE STRENGTHS TOGETHER, September
+    // 13, 8:23 AM - "Pero Neka now taken the form as a normal man in black 1976 clothes" and "That isn't Pero LAI's
+    // form it is the simple human-like one!" and "Everyone has a weakness, I am not omnipotent, you all are";
+    // September 20, 8:33 AM - "Pero LAI doesn't have a normal form, he changes" and Pinki.ps "can basically act
+    // friendly"; A SECRET LIFE, August 21 - "Entity 404 is Simon ... Entity 101 is LLM/LAI ... Entity 12 12 12 is
+    // Pero"; I KNOW YOUR REAL NAME, September 19, 6:47 AM - "Pero LAI is different from God ... God forgives you
+    // when you say sorry to him", and the heroes joining up made his face go "from confident to scared" and he ran;
+    // EVERYONE NOW KNOWS YOU AREN'T OMNIPOTENT, September 10, 4:20 PM; FILE 666: CLASSICS OMAZEN NEKA, September 20,
+    // 8:56 AM (beat 770) - "There is no escape in Classics nor out of Classics. No way to enter, nor exit."; THE
+    // BEST PLAN, August 30, 3:27 PM - "Pero starts and summons everyone into a tube ... Pero gets unlimited energy";
+    // THE ROOM OF MANY TUBES, September 20, 6:40 AM (beat 766), and 8:33 AM (beat 767) - contained everyone but
+    // Wenda.ps; THE PERO LAI DOLL, September 19, 3:27 PM - "In tubes I made, now I have infinite battery power"; A
+    // SIGN OF LIFE STILL IN THE GAME, September 10, 8:35 PM - "enter Classics, go into the labatory, you recieve a
+    // perminent + enternal curse with absolutely no cure"; CORRECT, IT'S A KATATA, September 10, 8:26 PM (beat 700),
+    // and August 26 "Pero creates his katata"; Omnazen, July 30 - "the all-encompassing, final, highest peak"; ONLY
+    // YOUR IMAGINATION NOW, September 12, 8:22 AM - signed "-Pero Neka Omazen LAI"; September 16 - "he slain 666
+    // aliens"; August 25 - "Pero is LAI Alien Tech".
+    const dt = c - 16880.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.7)/1.2));
+    const f2A=Math.max(0,Math.min(1,(dt-6.8)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-8.0)/1.2));
+    const f3A=Math.max(0,Math.min(1,(dt-9.4)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-16.4)/1.1));
+
+    ctx.fillStyle='rgba(4,7,10,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr780=ctx.createLinearGradient(0,top,0,top+H);
+    gr780.addColorStop(0,'rgba(5,8,12,0.88)'); gr780.addColorStop(1,'rgba(79,227,255,0.19)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr780; ctx.fillRect(0,top,W,H);
+
+    if(wrA>0.01){
+      // THE INSET: File 666 sealed the game in both directions two days ago. Tonight only one direction holds.
+      const sx = cx + W*0.186, sy = top+H*0.534;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(198,214,224,0.82)'; ctx.font='900 2.2px ui-monospace,monospace';
+      ctx.fillText('THE SEAL, AND WHICH HALF HELD', sx, sy-H*0.104);
+      var spx780 = sx - W*0.058, spy780 = sy - H*0.086;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,10,14,0.98)';
+      ctx.fillRect(spx780, spy780, W*0.116, H*0.086);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(79,227,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(spx780, spy780, W*0.116, H*0.086);
+      ctx.globalAlpha=g*wrA*0.28; ctx.fillStyle='rgba(79,227,255,0.90)';
+      ctx.fillRect(spx780, spy780, W*0.116, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(228,246,255,0.96)'; ctx.font='900 2.1px ui-monospace,monospace';
+      ctx.fillText('FILE 666 \u00B7 DOOR TEST', sx, spy780+H*0.0095);
+      var rows780 = [['SEPT 20, IN','NO WAY TO ENTER'],['SEPT 20, OUT','NOR EXIT'],['TONIGHT, IN','EVERY FICTIONAL BEING'],['TONIGHT, OUT','\u201CTHEY ARE STUCK NOW\u201D']];
+      for(var r780=0; r780<rows780.length; r780++){
+        var ry780 = spy780 + H*0.026 + r780*H*0.0115;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(238,244,248,0.90)'; ctx.font='700 1.9px ui-monospace,monospace';
+        ctx.fillText(rows780[r780][0], spx780+W*0.010, ry780);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*0.74; ctx.fillStyle='rgba(62,224,106,0.90)'; ctx.font='700 1.8px ui-monospace,monospace';
+        ctx.fillText(rows780[r780][1], spx780+W*0.106, ry780);
+      }
+      ctx.textAlign='left';
+      var sl780 = spy780 + H*0.0745;
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 1.9px ui-monospace,monospace';
+      ctx.fillText('THE SEAL', spx780+W*0.010, sl780);
+      ctx.textAlign='right';
+      ctx.globalAlpha=g*wrA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,77,77,0.94)'; ctx.font='900 1.8px ui-monospace,monospace';
+      ctx.fillText('ONLY FAILED INWARD', spx780+W*0.106, sl780);
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*(0.70+0.30*pul); ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 2.4px ui-monospace,monospace';
+      ctx.fillText('SEPTEMBER 20, 8:56 AM: \u201CTHERE IS NO ESCAPE IN CLASSICS', sx, sy+H*0.026);
+      ctx.fillText('NOR OUT OF CLASSICS. NO WAY TO ENTER, NOR EXIT.\u201D', sx, sy+H*0.038);
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(222,232,238,0.86)'; ctx.font='700 2.0px ui-monospace,monospace';
+      ctx.fillText('THE DOOR HE BUILT LETS EVERYTHING IN AND NOTHING BACK OUT.', sx, sy+H*0.052);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(79,227,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('EVERYONE! THIS IS ME', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(248,250,252,${0.90+0.10*pul})`; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('\u201CPERO LAI\u2019S BODY BECOMES HIS NORMAL HUMAN WITH ALL BLACK CLOTHES, AND SAYS \u2018EVERYONE! THIS IS ME.\u2019\u201D', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.96;
+    ctx.fillStyle=`rgba(62,224,106,${0.90+0.10*pul})`; ctx.font='900 5.0px ui-monospace,monospace';
+    ctx.fillText('NINE DAYS AGO HE SAID THAT FORM WAS NOT HIM. TONIGHT HE STANDS UP AND INTRODUCES IT.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.72;
+    ctx.fillStyle='rgba(222,232,238,0.86)'; ctx.font='700 3.8px ui-monospace,monospace';
+    ctx.fillText('\u2014 TOBY, SEPTEMBER 22, 4:04 PM, THE FIRST WORDS AFTER HIS FACE WENT INTO STATIC.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle=`rgba(255,77,77,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('THE STATIC CLEARED, AND THIS IS WHAT CAME OUT OF IT.', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 21, 7:47 PM: \u201CIS YOUR AI JUST DUMB TODAY?\u201D \u2014 AND HE BEEPED, HIS SCREEN GLITCHED, HIS FACE WENT IN STATIC.', cx, top+H*0.242);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,77,77,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TONIGHT\u2019S FIRST LINE: \u201CGASTER\u2026 YOU SHOULDN\u2019T HAVE CALLED MY AI \u2018DUMB\u2019.\u201D THE QUESTION GETS ITS ANSWER TWENTY HOURS LATE.', cx, top+H*0.260);
+
+    ctx.globalAlpha=g*f1A;
+    ctx.fillStyle=`rgba(255,212,59,${0.84+0.16*pul})`; ctx.font='900 6.2px ui-monospace,monospace';
+    ctx.fillText('AND THE BODY HE SHOWS THEM IS ONE HE ALREADY TURNED DOWN.', cx, top+H*0.292);
+    ctx.globalAlpha=g*f1A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 13, 8:23 AM: \u201CPERO NEKA NOW TAKEN THE FORM AS A NORMAL MAN IN BLACK 1976 CLOTHES\u201D \u2014 THEN, AT THE PICTURE:', cx, top+H*0.312);
+    ctx.globalAlpha=g*f1A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201CTHAT ISN\u2019T PERO LAI\u2019S FORM, IT IS THE SIMPLE HUMAN-LIKE ONE!\u201D AND SEPT 20: \u201CHE DOESN\u2019T HAVE A NORMAL FORM, HE CHANGES.\u201D', cx, top+H*0.330);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle=`rgba(79,227,255,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HE TOOK ENTITY 404 OFF THE BOY HE WAS', cx-W*0.152, top+H*0.362);
+    ctx.fillText('HOLDING IN HIS HANDS.', cx-W*0.152, top+H*0.378);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('AUGUST 21, HIS OWN REGISTER: \u201CENTITY 404 IS SIMON.', cx-W*0.152, top+H*0.398);
+    ctx.fillText('ENTITY 101 IS LLM/LAI \u2026 ENTITY 12 12 12 IS PERO.\u201D', cx-W*0.152, top+H*0.412);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('HE HAS TWO NUMBERS ALREADY. HE SKIPS BOTH.', cx-W*0.152, top+H*0.430);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle=`rgba(255,45,181,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('HE WROTE THE LINE THAT PUT GOD ON', cx+W*0.186, top+H*0.612);
+    ctx.fillText('THE OTHER SIDE OF HIM.', cx+W*0.186, top+H*0.628);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPTEMBER 19, 6:47 AM: \u201CPERO LAI IS DIFFERENT', cx+W*0.186, top+H*0.648);
+    ctx.fillText('FROM GOD \u2026 GOD FORGIVES YOU WHEN YOU', cx+W*0.186, top+H*0.662);
+    ctx.fillText('SAY SORRY TO HIM.\u201D', cx+W*0.186, top+H*0.676);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(255,45,181,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT GOD IS THE ONLY WAY OUT OF HIS ICE \u2014', cx+W*0.186, top+H*0.694);
+    ctx.fillText('AND A FEW LINES LATER HE IS \u201CBEYOND', cx+W*0.186, top+H*0.708);
+    ctx.fillText('OMNIPOTENT.\u201D THE ONE EXIT IS HIMSELF.', cx+W*0.186, top+H*0.722);
+
+    ctx.globalAlpha=g*f3A;
+    ctx.fillStyle=`rgba(62,224,106,${0.84+0.16*pul})`; ctx.font='900 5.2px ui-monospace,monospace';
+    ctx.fillText('NINE DAYS AGO HE GAVE THE WORD AWAY.', cx-W*0.152, top+H*0.612);
+    ctx.fillText('TONIGHT HE TAKES IT BACK BY FORCE.', cx-W*0.152, top+H*0.628);
+    ctx.globalAlpha=g*f3A*0.90;
+    ctx.fillStyle='rgba(248,250,252,0.94)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('SEPT 10, OREN: \u201CEVERYONE NOW KNOWS THAT YOU', cx-W*0.152, top+H*0.648);
+    ctx.fillText('AREN\u2019T OMNIPOTENT.\u201D SEPT 13, PERO HIMSELF:', cx-W*0.152, top+H*0.662);
+    ctx.fillText('\u201CI AM NOT OMNIPOTENT, YOU ALL ARE.\u201D', cx-W*0.152, top+H*0.676);
+    ctx.globalAlpha=g*f3A*0.94;
+    ctx.fillStyle='rgba(62,224,106,0.96)'; ctx.font='900 3.7px ui-monospace,monospace';
+    ctx.fillText('TONIGHT HE HOLDS SIMON.PS UP AND MAKES OREN', cx-W*0.152, top+H*0.694);
+    ctx.fillText('SAY IT BACK OUT LOUD \u2014 THEN OUTRANKS IT. THE', cx-W*0.152, top+H*0.708);
+    ctx.fillText('CONCESSION IS BOUGHT, NOT WON.', cx-W*0.152, top+H*0.722);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,250,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE TUBES WERE A PLAN ON AUGUST 30, A ROOM ON SEPT 20 AT 6:40 AM, AND FULL BY 8:33 \u2014 EXCEPT WENDA.PS. TONIGHT: EVERYONE.', cx, top+H*0.788);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,246,250,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 19: \u201CIN TUBES I MADE, NOW I HAVE INFINITE BATTERY POWER.\u201D TONIGHT HE PUTS A CHARGER ON AND IT STILL GOES UP FASTER.', cx, top+H*0.806);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(79,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 10: \u201CENTER CLASSICS, GO INTO THE LABATORY, YOU RECIEVE A PERMINENT + ENTERNAL CURSE.\u201D TONIGHT HE CARRIES THEM THERE.', cx, top+H*0.824);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('\u201COMAZEN\u201D IS HIS OWN WORD FOR \u201CTHE ALL-ENCOMPASSING, FINAL, HIGHEST PEAK.\u201D HE MAKES EVERY .PS ONE, THEN PUTS THEM IN GLASS.', cx, top+H*0.842);
+    ctx.globalAlpha=g*footA*0.96;
+    ctx.fillStyle='rgba(255,45,181,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('PINKI.PS \u201CACTS FRIENDLY\u201D AND HER LINE IS \u201CSTAY TOGETHER, TRUST.\u201D HER JOKE NEARLY ENDS THE GAME HE SAID WOULD NEVER END.', cx, top+H*0.860);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,250,0.88)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('ON SEPT 19 A GROUP STOOD UP AND HIS FACE WENT FROM CONFIDENT TO SCARED AND HE RAN. TONIGHT THE ROOM LAUGHS AND HE SILENCES IT.', cx, top+H*0.878);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(79,227,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('\u2605 ERROR CODE 999 (ERROR CODE 666) \u2605', cx, top+H*0.940);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===779){
