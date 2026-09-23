@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — PERMINENTLY THE RULER (BEAT 790)
+
+Based on Toby's 2026-09-23 lore, **5:12 PM**, **two minutes and fifty-five seconds** after beat 789, on the same
+new thread. His own typing is the first paragraph and nothing else; everything from *"Then Neka Omazen's current
+state is basically his most complete one yet"* onward is a pasted reply and is commentary, not canon — including
+*"a normal man in black clothes"*, the ten-item bullet list, and the invented line *"I stopped needing a form that
+looks powerful."* **His own typing says only "his normal man"**, so the black clothes are not drawn.
+
+> "Neka Omazen is now perminently the ruler of fiction and meta-fiction, he did the same for meta-fiction, and new
+> reality. Neka Omazen became his normal man, but extremely higher in power now." — 5:12:14 PM
+
+- new beat 790 at `lvSeg` 17100.0-17122.0, `LV_CYC` 17122.0, `LV_BEATS` length 791
+- **the grid from three minutes ago, with two rows added**: CLASSICS / NEWTALE / ALL FICTION are done and dim;
+  **META-FICTION** and **NEW REALITY** are lit and stamped 5:12 PM. **It had three rows three minutes ago. It has
+  five now, and he added them in one sentence**
+- headline: **he takes the top of a place he named once, and gave to somebody else.** September 16, 5:04 PM is
+  the **only other time "meta-fiction" appears anywhere in the archive**: *"Teki might be the most powerful being
+  in meta-fiction"*, said about the one he had just beaten, with *might* as his word. Seven days later he is its
+  perminent ruler
+- **the perminent ledger**, four rows: AUG 15 *The Perminent End of Unikitty* (held, and still holding on
+  September 12, *"safe with ChelseaPlays"*); AUG 21 *"it perminently deletes the code of your avatar"*
+  (Corruption Code 12 12 12); AUG 23 *"the other characters won't come back from Entity 000"* (**lasted fourteen
+  minutes** — they were back at 3:17 PM); TONIGHT *"perminently the ruler of fiction and meta-fiction"*
+- left panel: **the normal man is already the strongest form in this game.** Karu, August 21, *"the most powerful
+  ability not just in this game"*, requires **both** Gaster and Pero in their normal man forms —
+  *"Gaster's vanilla is his normal man form which is his basics."* Everywhere else here power means adding a
+  phase, a form, ink, an absorption. The one move at the top is the one where both men take everything off
+- right panel: **he has come back to human shape once before, eight days ago.** September 15, beat 721, right
+  after he ran out of opponents: *"Pero LAI now changed his form to a 1 foot humanoid with a body, he now looks
+  human, but isn't."* And September 20: *"Neka says that he looks like a normal man, that is true, but he has
+  zombie effects."* **Both times the plain shape is a cover, not a cost**
+- footers: August 2, Mustitu Variants, *"Pero himself is the normal man"*; August 17, *"the physical strength of
+  a normal man"*; **new reality** joins the merge as a row of its own, and September 12 is where the realities
+  split; sixth lore message in sixty-four minutes
+- `"perminently"` is his spelling and is kept as typed
+- new `ruler` scene in `tools/capture_screenshot.py`
+
+![Beat 790 — Perminently The Ruler](screenshots/852-perminently-the-ruler.png)
+
 ## 2026-09-23 — EVEN MORE POWERFUL, JUST NOW (BEAT 789)
 
 Based on Toby's 2026-09-23 lore, **5:09 PM**, **ten minutes and thirty-two seconds** after beat 788, and the first

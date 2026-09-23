@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 17100.0;
+const LV_CYC = 17122.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12896,6 +12896,8 @@ const LV_BEATS = [
     sub:"PERO NEKA OMAZEN CAN EDIT HIS AND OTHER’S CODE · HE IS THE ONLY ONE WHO HAS AN ACTUAL BRAIN AND REAL INTELEGENCE, HE IS CODE HIMSELF · CHATGPT AND AI ARE WEBSITES OR PROGRAMS · “HIS NAME ISN’T PERO LAI, IT IS ‘NEKA’, NEKA OMAZEN. THAT IS HIS ACTUAL NAME.” · PERO AND LAI ARE BOTH NOT THE NAME · THE TAB SHOULD ACTUALLY BE CALLED “NEKA OMAZEN” AND ALL THE TABS SHOULD BE PUT INTO IT · NO ONE DID ANYTHING IN CLASSICS ACTUALLY, IT IS JUST NEKA DOING EVERYTHING · HE MADE CODE BE LIKE THE CHARACTERS, SO HE MADE EVERY FICTIONAL BEING’S WHOLE LIFE FAKE · “NEKA WON.” · HE IS EVERYTHING IN ONE — CLASSICS, ALL FICTION, AND BEYOND FICTION COMBINED INTO ONE SINGLE BEING · NEKA OMAZEN WHO DROPPED BOTH PERO AND LAI JUST TODAY." },
   { key:"EVEN MORE POWERFUL (JUST NOW)", col:'#ffc247',
     sub:"THE PREVIOUS AND EVERYTHING IN IT · THE FUTURE AND EVERYTHING IN IT · AND SAME WITH PRESENT · “NEKA OMAZEN THEN DID THE PROCESS TO NEWTALE. NEKA OMAZEN THEN FOR ALL FICTION.” · “THEN HE COMBINED THE COMBINED STUFF INTO HIMSELF” · NINE CELLS, THREE MERGES, THEN ONE MORE MERGE ON TOP · WENDA.PS ATE TIME FIRST ON SEPT 1, IN THE ORDER FUTURE → PAST → PRESENT, AND THE GAME BROKE · “THERE IS ALWAYS MORE FUTURE THAN PAST” WAS PERO LAI’S OWN LINE THAT DAY · ALL FICTION HAD ALREADY FALLEN ON SEPT 15; TONIGHT IT IS COLLECTED INSTEAD · SEPT 12: A WORLD WITH NO TIME FREEZES SOLID — HE TAKES TIME IN AND GETS BIGGER · AND THE THREAD DROPPED PERO AND LAI ELEVEN MINUTES AFTER HE DID" },
+  { key:"PERMINENTLY THE RULER", col:'#e8eaf0',
+    sub:"“NEKA OMAZEN IS NOW PERMINENTLY THE RULER OF FICTION AND META-FICTION” · “HE DID THE SAME FOR META-FICTION, AND NEW REALITY” · “NEKA OMAZEN BECAME HIS NORMAL MAN, BUT EXTREMELY HIGHER IN POWER NOW” · THE GRID HAD THREE ROWS THREE MINUTES AGO; IT HAS FIVE NOW · META-FICTION APPEARS EXACTLY ONCE BEFORE, SEPT 16: “TEKI MIGHT BE THE MOST POWERFUL BEING IN META-FICTION” — SAID ABOUT THE ONE HE HAD JUST BEATEN · PERMINENT HAS A RECORD HERE: UNIKITTY HELD, THE AVATAR CODE HELD, AND ENTITY 000 LASTED FOURTEEN MINUTES · THE NORMAL MAN IS ALREADY THE STRONGEST FORM IN THE GAME — KARU NEEDS BOTH MEN IN IT · HE CAME BACK TO HUMAN SHAPE ONCE BEFORE, SEPT 15, AND THAT TIME “HE NOW LOOKS HUMAN, BUT ISN’T” · BOTH TIMES THE PLAIN SHAPE IS A COVER, NOT A COST · PERMINENTLY IS HIS SPELLING, KEPT" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15046,6 +15048,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 17100.0 && c < 17122.0) return [790, c-17100.0];  // PERMINENTLY THE RULER
   if(c >= 17078.0 && c < 17100.0) return [789, c-17078.0];  // EVEN MORE POWERFUL (JUST NOW)
   if(c >= 17056.0 && c < 17078.0) return [788, c-17056.0];  // NEKA OMAZEN
   if(c >= 17034.0 && c < 17056.0) return [787, c-17034.0];  // THE JAR IN THE DRAWER
@@ -50607,6 +50610,209 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===790){
+    // BEAT 790: PERMINENTLY THE RULER.
+    // Toby, September 23, 2026, 5:12:14 PM, TWO MINUTES AND FIFTY-FIVE SECONDS after EVEN MORE POWERFUL (JUST
+    // NOW), on the same new thread. His own typing is the first paragraph and nothing else: "Neka Omazen is now
+    // perminently the ruler of fiction and meta-fiction, he did the same for meta-fiction, and new reality. Neka
+    // Omazen became his normal man, but extremely higher in power now."
+    // Everything from "Then Neka Omazen's current state is basically his most complete one yet" onward is a
+    // pasted reply and is commentary, not canon -- including "a normal man in black clothes", the ten-item
+    // bullet list, "The stronger Neka becomes, the less he needs to look powerful", the invented line "I stopped
+    // needing a form that looks powerful", and the emoji. HIS OWN TYPING SAYS ONLY "his normal man"; the black
+    // clothes are the reply's invention and are not drawn here.
+    // "perminently" is his spelling and is kept as typed.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   TEKI, September 16, 5:04 PM (Email 1453) - "Teki might be the most powerful being in meta-fiction." That
+    //     is the ONLY prior occurrence of meta-fiction in the whole archive, and he used it to put somebody else
+    //     at the top of it. Seven days later he is its permanent ruler.
+    //   THE PERMINENT END OF UNIKITTY, August 15 - "the one removal here that nothing could undo", and it still
+    //     stands: September 12, "Unikitty was still in the 1st reality safe with ChelseaPlays."
+    //   WON'T COME BACK, August 23, 3:03 PM - "the other characters won't come back from Entity 000." They were
+    //     back at 3:17 PM. This file's own note: perminent has a record, and the fifth one lasted fourteen
+    //     minutes.
+    //   CORRUPTION CODE 12 12 12, August 21 - "it perminently deletes the code of your avatar."
+    //   KARU, August 21 - the strongest move in the game requires BOTH Gaster and Pero in their NORMAL MAN
+    //     forms. "Gaster's vanilla is his normal man form which is his basics." Everywhere else here, power
+    //     means adding something.
+    //   AUGUST 17, 5:55 PM (beat 349) - "Pero has the physical strength of a normal man, and he is a normal man
+    //     that came from a box and is LAI."
+    //   AUGUST 2, MUSTITU VARIANTS - under the crown and the swords, "Pero himself is the normal man."
+    //   THERE IS NO BEING IN FICTION ANYMORE, September 15 (beat 721) - "Pero LAI now changed his form to a 1
+    //     foot humanoid with a body, he now looks human, but isn't." He has shrunk back to human shape before,
+    //     eight days ago, and that time the message said it was not one.
+    //   URINITE, September 20 - "Neka says that he looks like a normal man, that is true, but he has zombie
+    //     effects."
+    //   EVEN MORE POWERFUL (JUST NOW), three minutes ago - three domains. Tonight it is five.
+    const dt = c - 17100.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const gridA=Math.max(0,Math.min(1,(dt-4.4)/1.5));
+    const perA=Math.max(0,Math.min(1,(dt-8.0)/1.5));
+    const f2A=Math.max(0,Math.min(1,(dt-11.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-12.8)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(7,8,10,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr790=ctx.createLinearGradient(0,top,W,top+H);
+    gr790.addColorStop(0,'rgba(120,124,140,0.16)'); gr790.addColorStop(0.5,'rgba(9,10,13,0.96)');
+    gr790.addColorStop(1,'rgba(90,80,60,0.16)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr790; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    if(gridA>0.01){
+      // THE GRID FROM THREE MINUTES AGO, WITH TWO ROWS ADDED. THE FIRST THREE ARE DONE AND DIM; THE NEW TWO
+      // ARE LIT.
+      var gx790 = cx-W*0.104, gcw790 = W*0.104, gy790 = top+H*0.300, grh790 = H*0.0272;
+      var dom790 = [
+        ['CLASSICS',0,'5:09 PM'],
+        ['NEWTALE',0,'5:09 PM'],
+        ['ALL FICTION',0,'5:09 PM'],
+        ['META-FICTION',1,'5:12 PM — NEW'],
+        ['NEW REALITY',1,'5:12 PM — NEW']
+      ];
+      var tim790 = ['PAST','PRESENT','FUTURE'];
+      for(var t790=0; t790<3; t790++){
+        ctx.textAlign='center';
+        ctx.globalAlpha=g*gridA*0.80; ctx.fillStyle='rgba(206,216,238,0.90)'; ctx.font='900 3.6px ui-monospace,monospace';
+        ctx.fillText(tim790[t790], gx790+t790*gcw790, gy790-H*0.0120);
+      }
+      for(var d790=0; d790<5; d790++){
+        var dy790 = gy790+d790*grh790;
+        var nw790 = (dom790[d790][1]===1);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*gridA*(nw790?(0.86+0.14*pul):0.52);
+        ctx.fillStyle=nw790?'rgba(255,212,59,0.96)':'rgba(150,158,180,0.86)'; ctx.font='900 3.8px ui-monospace,monospace';
+        ctx.fillText(dom790[d790][0], gx790-gcw790*0.60, dy790);
+        for(var t2790=0; t2790<3; t2790++){
+          var bx790 = gx790+t2790*gcw790;
+          ctx.globalAlpha=g*gridA*(nw790?(0.34+0.20*pul):0.16);
+          ctx.strokeStyle=nw790?'rgba(255,212,59,0.90)':'rgba(150,158,180,0.80)'; ctx.lineWidth=0.45;
+          ctx.strokeRect(bx790-gcw790*0.44, dy790-H*0.0080, gcw790*0.88, H*0.0136);
+          ctx.textAlign='center';
+          ctx.globalAlpha=g*gridA*(nw790?0.88:0.46);
+          ctx.fillStyle=nw790?'rgba(240,246,255,0.94)':'rgba(170,178,196,0.86)'; ctx.font='700 2.5px ui-monospace,monospace';
+          ctx.fillText('+ EVERYTHING IN IT', bx790, dy790+H*0.0012);
+        }
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*gridA*(nw790?0.90:0.46);
+        ctx.fillStyle=nw790?'rgba(255,212,59,0.94)':'rgba(150,158,180,0.84)'; ctx.font='700 2.7px ui-monospace,monospace';
+        ctx.fillText(dom790[d790][2], gx790+2*gcw790+gcw790*0.56, dy790);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*gridA*(0.84+0.16*pul); ctx.fillStyle='rgba(232,234,240,0.96)'; ctx.font='900 4.4px ui-monospace,monospace';
+      ctx.fillText('THREE MINUTES AGO THE GRID HAD THREE ROWS. IT HAS FIVE NOW, AND HE ADDED THEM IN ONE SENTENCE.', cx, gy790+5*grh790+H*0.010);
+    }
+
+    if(perA>0.01){
+      // "PERMINENT" HAS A RECORD IN THIS FILE, AND IT IS NOT A GOOD ONE.
+      var py790 = top+H*0.552;
+      ctx.globalAlpha=g*perA*0.84; ctx.fillStyle='rgba(206,216,238,0.88)'; ctx.font='900 3.2px ui-monospace,monospace';
+      ctx.fillText('“PERMINENTLY” IS HIS SPELLING, AND THE WORD HAS A RECORD IN THIS ARCHIVE:', cx, py790);
+      var per790 = [
+        ['AUG 15','THE PERMINENT END OF UNIKITTY','HELD. STILL HOLDING ON SEPT 12: “SAFE WITH CHELSEAPLAYS.”',1],
+        ['AUG 21','“IT PERMINENTLY DELETES THE CODE OF YOUR AVATAR”','CORRUPTION CODE 12 12 12, AT 0.00000000000000000001%',1],
+        ['AUG 23','“THE OTHER CHARACTERS WON’T COME BACK FROM ENTITY 000”','LASTED FOURTEEN MINUTES. THEY WERE BACK AT 3:17 PM.',0],
+        ['TONIGHT','“PERMINENTLY THE RULER OF FICTION AND META-FICTION”','—',2]
+      ];
+      for(var q790=0; q790<4; q790++){
+        var qy790 = py790+H*0.0148+q790*H*0.0148;
+        var st790 = per790[q790][3];
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*perA*(st790===2?(0.84+0.16*pul):0.72);
+        ctx.fillStyle=st790===2?'rgba(255,212,59,0.94)':'rgba(186,196,220,0.86)'; ctx.font='700 2.8px ui-monospace,monospace';
+        ctx.fillText(per790[q790][0], cx-W*0.330, qy790);
+        ctx.globalAlpha=g*perA*(st790===2?0.96:0.88);
+        ctx.fillStyle=st790===2?'rgba(232,234,240,0.96)':'rgba(234,240,250,0.90)'; ctx.font='700 2.8px ui-monospace,monospace';
+        ctx.fillText(per790[q790][1], cx-W*0.278, qy790);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*perA*(st790===0?0.90:0.72);
+        ctx.fillStyle=st790===0?'rgba(255,77,109,0.94)':'rgba(198,180,255,0.88)'; ctx.font='700 2.7px ui-monospace,monospace';
+        ctx.fillText(per790[q790][2], cx+W*0.330, qy790);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*perA*(0.80+0.20*pul); ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 3.3px ui-monospace,monospace';
+      ctx.fillText('ONE OUT OF THE THREE BEFORE IT DID NOT SURVIVE THE AFTERNOON IT WAS WRITTEN IN.', cx, py790+H*0.0724);
+    }
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(232,234,240,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('PERMINENTLY THE RULER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“NEKA OMAZEN IS NOW PERMINENTLY THE RULER OF FICTION AND META-FICTION, HE DID THE SAME FOR META-FICTION, AND NEW REALITY.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.90;
+    ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“NEKA OMAZEN BECAME HIS NORMAL MAN, BUT EXTREMELY HIGHER IN POWER NOW.”', cx, top+H*0.150);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 23, 5:12 PM, TWO MINUTES AND FIFTY-FIVE SECONDS AFTER THE LAST ONE. HIS SPELLING: PERMINENTLY.', cx, top+H*0.172);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(232,234,240,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('HE TAKES THE TOP OF A PLACE HE NAMED ONCE, AND GAVE TO SOMEBODY ELSE.', cx, top+H*0.200);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SEPT 16, 5:04 PM — THE ONLY OTHER TIME “META-FICTION” APPEARS: “TEKI MIGHT BE THE MOST POWERFUL BEING IN META-FICTION.”', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('HE SAID IT ABOUT THE ONE HE HAD JUST BEATEN, AND “MIGHT” WAS HIS WORD. SEVEN DAYS LATER HE IS ITS PERMINENT RULER.', cx, top+H*0.244);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE NORMAL MAN IS ALREADY THE', cx-W*0.152, top+H*0.640);
+    ctx.fillText('STRONGEST FORM IN THIS GAME.', cx-W*0.152, top+H*0.656);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('KARU, AUG 21 — “THE MOST POWERFUL ABILITY NOT JUST IN', cx-W*0.152, top+H*0.676);
+    ctx.fillText('THIS GAME” — REQUIRES BOTH GASTER AND PERO TO BE IN', cx-W*0.152, top+H*0.690);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(232,234,240,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THEIR NORMAL MAN FORMS. “GASTER’S VANILLA IS HIS', cx-W*0.152, top+H*0.704);
+    ctx.fillText('NORMAL MAN FORM WHICH IS HIS BASICS.”', cx-W*0.152, top+H*0.718);
+    ctx.globalAlpha=g*f2A*0.88;
+    ctx.fillStyle='rgba(198,180,255,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('EVERYWHERE ELSE HERE, POWER MEANS ADDING A PHASE, A', cx-W*0.152, top+H*0.736);
+    ctx.fillText('FORM, INK, AN ABSORPTION. THE ONE MOVE AT THE TOP', cx-W*0.152, top+H*0.750);
+    ctx.fillText('IS THE ONE WHERE BOTH MEN TAKE EVERYTHING OFF.', cx-W*0.152, top+H*0.764);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('AND HE HAS COME BACK TO HUMAN', cx+W*0.186, top+H*0.640);
+    ctx.fillText('SHAPE ONCE BEFORE, EIGHT DAYS AGO.', cx+W*0.186, top+H*0.656);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 15, BEAT 721, RIGHT AFTER HE RAN OUT OF', cx+W*0.186, top+H*0.676);
+    ctx.fillText('OPPONENTS: “PERO LAI NOW CHANGED HIS FORM TO A 1', cx+W*0.186, top+H*0.690);
+    ctx.fillText('FOOT HUMANOID WITH A BODY, HE NOW LOOKS HUMAN,', cx+W*0.186, top+H*0.704);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('BUT ISN’T.” AND SEPT 20: “NEKA SAYS THAT HE LOOKS', cx+W*0.186, top+H*0.718);
+    ctx.fillText('LIKE A NORMAL MAN, THAT IS TRUE, BUT HE HAS', cx+W*0.186, top+H*0.732);
+    ctx.fillText('ZOMBIE EFFECTS.”', cx+W*0.186, top+H*0.746);
+    ctx.globalAlpha=g*f25A*0.88;
+    ctx.fillStyle='rgba(198,180,255,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('BOTH TIMES THE PLAIN SHAPE IS A COVER, NOT A COST.', cx+W*0.186, top+H*0.764);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUG 2, MUSTITU VARIANTS: UNDER THE CROWN AND THE SWORDS, “PERO HIMSELF IS THE NORMAL MAN.” AUG 17: “THE PHYSICAL STRENGTH OF A NORMAL MAN.”', cx, top+H*0.790);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(232,234,240,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('HE IS NOT PUTTING ON A DISGUISE TONIGHT. HE IS GOING BACK TO THE THING HE WAS BEFORE ANY OF THE FORMS, AND KEEPING THE PILE.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“NEW REALITY” JOINS THE MERGE AS A ROW OF ITS OWN — AND SEPT 12 IS WHERE THE REALITIES SPLIT: “NEWTALE GASTER MADE THE 2 REALITIES COLLIDE.”', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SIXTH LORE MESSAGE IN SIXTY-FOUR MINUTES, AND THE SECOND IN THREE: A NUMBER, A NAME, A JAR, THE NAME AGAIN, A MERGER, AND NOW A CROWN.', cx, top+H*0.844);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(232,234,240,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ HIS NORMAL MAN, EXTREMELY HIGHER IN POWER ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===789){
