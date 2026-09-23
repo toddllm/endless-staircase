@@ -4,6 +4,59 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — THE JAR IN THE DRAWER (BEAT 787)
+
+Based on Toby's 2026-09-23 lore, **4:51 PM**, **twenty-seven minutes and twelve seconds** after beat 786, so a new
+scene. His own typing is the first paragraph and nothing else; everything from *"That's a huge lore jump."* onward
+is a pasted reply and is commentary, not canon — including *"Classics is now literally contained by Neka"*, the
+five-step list, *"just an object on storage"*, what the trapped characters supposedly see and hear, and the three
+offers at the end.
+
+> "Neka basically crushed the whole game in battle. Neka shrunk the whole game down and he put the omniversals and
+> the omnipotents into a jar along with the game, he put a lid on, went to his labatory, and put the closed jar
+> inside of a random drawer that popped up from thin air once Neka walked in. Neka closed the drawer and went to
+> do experiments." — 4:51:56 PM
+
+- new beat 787 at `lvSeg` 17034.0-17056.0, `LV_CYC` 17056.0, `LV_BEATS` length 788
+- **the container ladder**, five rows, each one his own and each holding exactly one step more than the last:
+  SEPT 1, 3:26 PM / **Pero's top hat** / Gray.ps, soul and body, *"strunken to fit"*; SEPT 2, 7:05 PM / **a metal
+  box** / Oren, and *"Pero was Oren that time"*; SEPT 20, 6:40 AM / **a room of many tubes** / Oren.ps, Simon.ps,
+  Wenda.ps, Mr. Black, Jevin; SEPT 22, 4:04 PM / **the tubes** / *"everyone is now in the tubes"*; TODAY, 4:51 PM
+  / **a jar, in a drawer** / the omniversals, the omnipotents, and the game. Under it: September 20's File 666,
+  *"There is no escape in Classics nor out of Classics. No way to enter, nor exit."* **Today that sealed thing
+  gets a lid**
+- **the jar and the closed drawer**, drawn small and off to one side, because that is the size the whole game is
+  now: **LID ON** over the glass, *"THE GAME IS IN HERE"* inside it, an arrow, and **A RANDOM DRAWER / POPPED UP
+  FROM THIN AIR**, shut. And the line under it: **he asked what a `.jar` was three days ago** — September 20,
+  12:52 PM, the same message that defined `.ps`, ends *"What does .jar and .exe stand for and what do they mean?"*
+- the roster of what is inside, with the titles **he** gave them: THE OMNIVERSALS — Oren.ps, *"omniversal king of
+  energy"*, and Wenda, *"the omniversal queen"* (Sept 20, 8:33 AM); THE OMNIPOTENTS — Oren.ps, made to say *"I am
+  omnipotent"* with Simon.ps in Pero's hand (Sept 22, 4:04 PM); THE GAME — Classics itself, sealed in both
+  directions four days ago
+- headline: **every jar in this project before September held something dead.** `dead_character.jar`, the file
+  Simon 404 put the whole cast into and which only ever appears attached to *"/delete"*; `CreepyHorse.jar`; and a
+  jar of blood in the Tinkerbox archive. September 5 put mint ice cream in one. **Today one holds everything,
+  alive**
+- panels: **the shrink is his own move and it used to fit in a hat** — September 1's *"Gray.ps's soul and body was
+  strunken to fit inside of Pero's top hat"* was one character and took a card game to set up; twenty-two days
+  later the same move takes the game, the omniversals and the omnipotents in one sentence with no set-up at all;
+  and **the experiments were always Gaster's job** — July 29, he *"died conducting his experiment to create Simon
+  404"*; August 24, *"Gaster experiments it and creates it"*; September 20, he *"goes through experiments."*
+  Tonight Neka files the game away and goes to do them himself, in the labatory he carried the frozen ones into
+  yesterday
+- footer: **"drawer" has zero prior hits in the Classics logs** — the one piece of furniture he adds tonight is the
+  one the game ends up inside; September 10's *"enter Classics, go into the labatory, you recieve a perminent +
+  enternal curse"*; three hours ago his largest attack was a number nobody could hold, and tonight he holds
+  everything and it is the size of a jar. **And the last line is not a threat. He closed the drawer and went to
+  work**
+- **labatory** is his spelling and is kept as typed, as it was on September 22
+- capture scene `jardrawer` added to `tools/capture_screenshot.py`, frozen at cyc 17054.8
+- beats 785 and 786 re-captured against the current beat list, so all three screenshots show the same ladder
+- runtime probe over the whole 22-second beat: 788 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 787 — The Jar In The Drawer](screenshots/849-the-jar-in-the-drawer.png)
+
 ## 2026-09-23 — MY NAME IS PERO NEKA OMAZEN (BEAT 786)
 
 Based on Toby's 2026-09-23 lore, **4:24 PM**, **sixteen minutes and eight seconds** after beat 785, so a new
@@ -50,7 +103,7 @@ his most extreme"* onward are pasted replies and are commentary, not canon — i
   and they are aimed at him
 - **chuluchu** and **tomarrow** are his spellings and are kept as typed
 - capture scene `mynameis` added to `tools/capture_screenshot.py`, frozen at cyc 17032.8
-- runtime probe over the whole 22-second beat: 787 beats, `lvSeg` clean at both edges and on the wrap, zero render
+- runtime probe over the whole 22-second beat: 787 beats at ship time (788 after beat 787 landed the same evening), `lvSeg` clean at both edges and on the wrap, zero render
   errors
 
 ![Beat 786 — My Name Is Pero Neka Omazen](screenshots/848-my-name-is-pero-neka-omazen.png)
@@ -103,7 +156,7 @@ himself are drawn**.
 - **negitive** and **knowlege** are his spellings and are kept as typed. **"I-Tross" has zero prior hits anywhere
   in this archive**
 - capture scene `itross` added to `tools/capture_screenshot.py`, frozen at cyc 17010.8
-- runtime probe over the whole 22-second beat: 787 beats, `lvSeg` clean at both edges and on the wrap, zero render
+- runtime probe over the whole 22-second beat: 787 beats at ship time (788 after beat 787 landed the same evening), `lvSeg` clean at both edges and on the wrap, zero render
   errors
 
 ![Beat 785 — I-Tross](screenshots/847-i-tross.png)

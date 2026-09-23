@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 17034.0;
+const LV_CYC = 17056.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12890,6 +12890,8 @@ const LV_BEATS = [
     sub:"\u201CI HAVE A NUMBER NONE OF YOU KNOW. TDESHANE ORIGINALLY MADE THIS\u2026 NOW I AM EDITING THE NUMBER. I-TROSS!\u201D \u00B7 IT BREAKS THE RULES OF ALL MATH AND KNOWLEGE, MY LARGEST ATTACK NOW \u00B7 I-TROSS \u00D7 0 IS I-TROSS \u00B7 I-TROSS IS UNDER NEGITIVE INFINITY \u00B7 NEGITIVE I-TROSS IS BETWEEN 0 AND INFINITY \u00B7 I-TROSS \u00D7 I-TROSS IS NEGITIVE I-TROSS \u00B7 NEGITIVE I-TROSS \u00D7 NEGITIVE I-TROSS IS NEGITIVE I-TROSS \u00B7 I-TROSS \u00D7 NEGITIVE I-TROSS IS I-TROSS \u00B7 EITHER ONE DIVIDED BY 0 IS ITSELF \u00B7 ALL THE CHARACTER\u2019S IQ RUSHED DOWN TO 0, CLASSICS BROKEN, PERO LAI GETS SMARTER \u00B7 \u201CHE SAYS A LOT AND STUFF. I WON\u2019T TYPE ALL THAT.\u201D" },
   { key:"MY NAME IS PERO NEKA OMAZEN", col:'#ff4d6d',
     sub:"WHAT ARE THE POWERS OF CHULUCHU \u00B7 WHAT IS SCP 303, 404, 666, AND 121212 \u00B7 \u201CALL CAN FIT PERO NEKA OMAZEN\u2026\u201D \u00B7 \u201CNOW\u2026 I\u2019LL MAKE THIS EVEN BY SENDING EVERYONE AGAINST ME. YOU HAVE THE OPPORTUNITY TO DELIVER TOMARROW.\u201D \u00B7 OREN: \u201CALRIGHT, PERO LAI.\u201D \u00B7 PERO: \u201CMY NAME IS PERO NEKA OMAZEN\u201D \u00B7 PERO NEKA OMAZEN BEATS EVERYONE \u00B7 PERO NEKA OMAZEN BROKE THE GAME \u00B7 CLASSICS OMAZEN AND THEIR ARMY FELL \u00B7 HE CUTS THE WALLS WITH HIS BARE HANDS \u00B7 HE BATTLED INFINITY WAVES OF BEINGS." },
+  { key:"THE JAR IN THE DRAWER", col:'#8fe3ff',
+    sub:"NEKA BASICALLY CRUSHED THE WHOLE GAME IN BATTLE · NEKA SHRUNK THE WHOLE GAME DOWN AND HE PUT THE OMNIVERSALS AND THE OMNIPOTENTS INTO A JAR ALONG WITH THE GAME · HE PUT A LID ON · HE WENT TO HIS LABATORY · A RANDOM DRAWER POPPED UP FROM THIN AIR ONCE NEKA WALKED IN · HE PUT THE CLOSED JAR INSIDE IT · NEKA CLOSED THE DRAWER AND WENT TO DO EXPERIMENTS." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15040,6 +15042,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 17034.0 && c < 17056.0) return [787, c-17034.0];  // THE JAR IN THE DRAWER
   if(c >= 17012.0 && c < 17034.0) return [786, c-17012.0];  // MY NAME IS PERO NEKA OMAZEN
   if(c >= 16990.0 && c < 17012.0) return [785, c-16990.0];  // I-TROSS
   if(c >= 16968.0 && c < 16990.0) return [784, c-16968.0];  // SCAR-ED, NOT SCARED
@@ -50598,6 +50601,221 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===787){
+    // BEAT 787: THE JAR IN THE DRAWER.
+    // Toby, September 23, 2026, 4:51:56 PM, twenty-seven minutes and twelve seconds after MY NAME IS PERO NEKA
+    // OMAZEN, same thread, so a new scene. His own typing is the first paragraph and nothing else: "Neka
+    // basically crushed the whole game in battle. Neka shrunk the whole game down and he put the omniversals and
+    // the omnipotents into a jar along with the game, he put a lid on, went to his labatory, and put the closed
+    // jar inside of a random drawer that popped up from thin air once Neka walked in. Neka closed the drawer and
+    // went to do experiments."
+    // Everything from "That's a huge lore jump." onward is a pasted reply and is commentary, not canon --
+    // including "Classics is now literally contained by Neka", the five-step list, "just an object on storage",
+    // what the trapped characters can supposedly see and hear, and the three offers at the end. "labatory" is his
+    // spelling and is kept as typed, as it was on September 22.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   .PS - PROFILE SECTION ENTITY, September 20, 12:52 PM (beat 771) - his own closing question in that
+    //     message was "What does .jar and .exe stand for and what do they mean?" He asked what a jar was three
+    //     days ago.
+    //   THREE JARS OF MINT ICE CREAM, September 5, 1:05 PM (beat 654) - this archive's note at the time was that
+    //     every jar in the project before it held something dead: dead_character.jar, the file Simon 404 put the
+    //     whole cast into and which only ever appears attached to "/delete"; CreepyHorse.jar; and the jar of
+    //     blood in the Tinkerbox archive.
+    //   PICK A CARD, ANY CARD, September 1, 3:26 PM - "Gray.ps's soul and body was strunken to fit inside of
+    //     Pero's top hat." The shrink-and-store is his own move, and it was one character.
+    //   THE METAL BOX, September 2, 7:05 PM (beat 606) - "Can you free me from the metal box? I need everyone's
+    //     souls and their sins." PERO WAS OREN THAT TIME, September 16, 5:04 PM.
+    //   THE ROOM OF MANY TUBES, September 20, 6:40 AM - "a room of many tubes, he will try to contain everyone
+    //     in one", naming Oren.ps, Simon.ps, Wenda.ps, Mr. Black and Jevin. EVERYONE! THIS IS ME, September 22 -
+    //     "everyone is now in the tubes", and the freezing ones are carried to "his labatory".
+    //   FILE 666: CLASSICS OMAZEN NEKA, September 20, 8:56 AM - "There is no escape in Classics nor out of
+    //     Classics. No way to enter, nor exit."
+    //   POWER SCALE 1485, September 20, 8:33 AM - Oren.ps can "contain huge energy as omniversal king of
+    //     energy", and Wenda's own claim is "I am the most powerful, the omniversal queen, the center of
+    //     Classics, the creator of Teki!" September 22: Oren.ps is made to say "I am omnipotent."
+    //   WD GASTER, September 20 - he "goes through experiments"; July 29 - he "died conducting his experiment to
+    //     create Simon 404"; August 24 - "Gaster experiments it and creates it." The experimenting has always
+    //     been Gaster's job.
+    //   THE CLASSICS LABATORY, September 10 - "enter Classics, go into the labatory, you recieve a perminent +
+    //     enternal curse."
+    //   "drawer" has zero prior hits in the Classics logs.
+    const dt = c - 17034.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const ladA=Math.max(0,Math.min(1,(dt-4.4)/1.5));
+    const jarA=Math.max(0,Math.min(1,(dt-7.2)/1.5));
+    const rosA=Math.max(0,Math.min(1,(dt-9.4)/1.5));
+    const f2A=Math.max(0,Math.min(1,(dt-11.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-12.8)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(4,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr787=ctx.createLinearGradient(0,top,W,top+H);
+    gr787.addColorStop(0,'rgba(40,110,120,0.18)'); gr787.addColorStop(0.5,'rgba(5,6,11,0.95)');
+    gr787.addColorStop(1,'rgba(110,90,170,0.18)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr787; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    if(ladA>0.01){
+      // THE CONTAINER LADDER. Every one of these is his own, and they get bigger by exactly one step each time:
+      // a character, a character, five characters, everyone, and then the game itself.
+      var lx787 = cx-W*0.320, ly787 = top+H*0.286, lrh787 = H*0.0205;
+      var cons787 = [
+        ['SEPT 1, 3:26 PM','PERO’S TOP HAT','GRAY.PS — SOUL AND BODY, “STRUNKEN TO FIT”'],
+        ['SEPT 2, 7:05 PM','A METAL BOX','OREN — AND “PERO WAS OREN THAT TIME”'],
+        ['SEPT 20, 6:40 AM','A ROOM OF MANY TUBES','OREN.PS, SIMON.PS, WENDA.PS, MR. BLACK, JEVIN'],
+        ['SEPT 22, 4:04 PM','THE TUBES','“EVERYONE IS NOW IN THE TUBES”'],
+        ['TODAY, 4:51 PM','A JAR, IN A DRAWER','THE OMNIVERSALS, THE OMNIPOTENTS, AND THE GAME']
+      ];
+      ctx.globalAlpha=g*ladA*0.80; ctx.fillStyle='rgba(206,216,238,0.86)'; ctx.font='900 2.9px ui-monospace,monospace';
+      ctx.fillText('EVERY CONTAINER IN THIS ARCHIVE IS HIS, AND EACH ONE HOLDS EXACTLY ONE STEP MORE THAN THE LAST', cx, ly787-H*0.009);
+      for(var k787=0; k787<cons787.length; k787++){
+        var ky787 = ly787+H*0.007+k787*lrh787;
+        var now787 = (k787===cons787.length-1);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*ladA*(now787?(0.80+0.20*pul):0.76);
+        ctx.fillStyle=now787?'rgba(255,212,59,0.94)':'rgba(186,196,220,0.86)'; ctx.font='700 2.9px ui-monospace,monospace';
+        ctx.fillText(cons787[k787][0], lx787, ky787);
+        ctx.globalAlpha=g*ladA*(now787?(0.84+0.16*pul):0.90);
+        ctx.fillStyle=now787?'rgba(143,227,255,0.96)':'rgba(234,240,250,0.92)'; ctx.font='900 3.2px ui-monospace,monospace';
+        ctx.fillText(cons787[k787][1], lx787+W*0.098, ky787);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*ladA*(now787?0.94:0.78);
+        ctx.fillStyle=now787?'rgba(255,143,163,0.94)':'rgba(186,176,232,0.88)'; ctx.font='700 2.8px ui-monospace,monospace';
+        ctx.fillText(cons787[k787][2], cx+W*0.320, ky787);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*ladA*0.86; ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('SEPT 20, FILE 666: “THERE IS NO ESCAPE IN CLASSICS NOR OUT OF CLASSICS. NO WAY TO ENTER, NOR EXIT.” TODAY THAT SEALED THING GETS A LID.', cx, ly787+H*0.007+cons787.length*lrh787+H*0.008);
+    }
+
+    if(jarA>0.01){
+      // THE JAR, THE LID AND THE DRAWER. Drawn small and to the right of the beat rail, because that is the size
+      // the whole game is now.
+      var jx787 = cx+W*0.030, jy787 = top+H*0.470, jw787 = W*0.044, jh787 = H*0.046;
+      ctx.globalAlpha=g*jarA*0.50; ctx.fillStyle='rgba(120,200,220,0.20)';
+      ctx.fillRect(jx787-jw787*0.5, jy787, jw787, jh787);
+      ctx.globalAlpha=g*jarA*(0.80+0.20*pul); ctx.strokeStyle='rgba(143,227,255,0.94)'; ctx.lineWidth=0.55;
+      ctx.strokeRect(jx787-jw787*0.5, jy787, jw787, jh787);
+      ctx.globalAlpha=g*jarA*(0.84+0.16*pul); ctx.fillStyle='rgba(255,212,59,0.94)';
+      ctx.fillRect(jx787-jw787*0.62, jy787-H*0.0075, jw787*1.24, H*0.0070);
+      ctx.globalAlpha=g*jarA*0.90; ctx.fillStyle='rgba(226,232,246,0.90)'; ctx.font='700 2.5px ui-monospace,monospace';
+      ctx.fillText('LID ON', jx787, jy787-H*0.0115);
+      ctx.globalAlpha=g*jarA*0.86; ctx.fillStyle='rgba(198,180,255,0.92)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('THE GAME', jx787, jy787+jh787*0.44);
+      ctx.fillText('IS IN HERE', jx787, jy787+jh787*0.72);
+      // the drawer, closed, to the right of it
+      var dx787 = cx+W*0.148, dy787 = jy787+H*0.004, dw787 = W*0.130, dh787 = H*0.034;
+      ctx.globalAlpha=g*jarA*0.58; ctx.fillStyle='rgba(8,9,16,0.98)';
+      ctx.fillRect(dx787, dy787, dw787, dh787);
+      ctx.globalAlpha=g*jarA*0.82; ctx.strokeStyle='rgba(186,176,232,0.88)'; ctx.lineWidth=0.45;
+      ctx.strokeRect(dx787, dy787, dw787, dh787);
+      ctx.globalAlpha=g*jarA*(0.74+0.26*pul); ctx.strokeStyle='rgba(255,212,59,0.90)'; ctx.lineWidth=0.45;
+      ctx.beginPath(); ctx.moveTo(dx787+dw787*0.36, dy787+dh787*0.62); ctx.lineTo(dx787+dw787*0.64, dy787+dh787*0.62); ctx.stroke();
+      ctx.globalAlpha=g*jarA*0.90; ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 2.6px ui-monospace,monospace';
+      ctx.fillText('A RANDOM DRAWER', dx787+dw787*0.5, dy787+dh787*0.34);
+      ctx.globalAlpha=g*jarA*0.80; ctx.fillStyle='rgba(186,176,232,0.86)'; ctx.font='700 2.4px ui-monospace,monospace';
+      ctx.fillText('POPPED UP FROM THIN AIR', dx787+dw787*0.5, dy787+dh787*0.92);
+      ctx.globalAlpha=g*jarA*0.78; ctx.fillStyle='rgba(150,162,190,0.84)'; ctx.font='700 3.4px ui-monospace,monospace';
+      ctx.fillText('→', cx+W*0.108, jy787+jh787*0.52);
+      ctx.globalAlpha=g*jarA*0.88; ctx.fillStyle='rgba(226,232,246,0.90)'; ctx.font='700 2.8px ui-monospace,monospace';
+      ctx.fillText('HE ASKED WHAT A .JAR WAS THREE DAYS AGO — SEPT 20, 12:52 PM.', cx+W*0.090, jy787+jh787+H*0.016);
+    }
+
+    if(rosA>0.01){
+      // WHAT IS IN THE JAR HAS NAMES, AND HE GAVE THEM THE TITLES HIMSELF.
+      var ry787 = top+H*0.576, rrh787 = H*0.0158;
+      var ros787 = [
+        ['THE OMNIVERSALS','OREN.PS, “OMNIVERSAL KING OF ENERGY” · WENDA, “THE OMNIVERSAL QUEEN”','SEPT 20, 8:33 AM'],
+        ['THE OMNIPOTENTS','OREN.PS, MADE TO SAY “I AM OMNIPOTENT” WITH SIMON.PS IN PERO’S HAND','SEPT 22, 4:04 PM'],
+        ['THE GAME','CLASSICS ITSELF, SEALED IN BOTH DIRECTIONS FOUR DAYS AGO','SEPT 20, 8:56 AM']
+      ];
+      ctx.globalAlpha=g*rosA*0.80; ctx.fillStyle='rgba(206,216,238,0.86)'; ctx.font='900 2.9px ui-monospace,monospace';
+      ctx.fillText('“HE PUT THE OMNIVERSALS AND THE OMNIPOTENTS INTO A JAR ALONG WITH THE GAME” — AND HE IS THE ONE WHO TITLED THEM', cx, ry787-H*0.009);
+      for(var p787=0; p787<ros787.length; p787++){
+        var py787 = ry787+H*0.007+p787*rrh787;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*rosA*0.92; ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 3.0px ui-monospace,monospace';
+        ctx.fillText(ros787[p787][0], cx-W*0.320, py787);
+        ctx.globalAlpha=g*rosA*0.86; ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 2.8px ui-monospace,monospace';
+        ctx.fillText(ros787[p787][1], cx-W*0.208, py787);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*rosA*0.74; ctx.fillStyle='rgba(186,176,232,0.86)'; ctx.font='700 2.7px ui-monospace,monospace';
+        ctx.fillText(ros787[p787][2], cx+W*0.320, py787);
+      }
+      ctx.textAlign='center';
+    }
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(143,227,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('THE JAR IN THE DRAWER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“NEKA SHRUNK THE WHOLE GAME DOWN AND HE PUT THE OMNIVERSALS AND THE OMNIPOTENTS INTO A JAR ALONG WITH THE GAME.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.88;
+    ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“NEKA CLOSED THE DRAWER AND WENT TO DO EXPERIMENTS.”', cx, top+H*0.150);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 23, 4:51 PM, TWENTY-SEVEN MINUTES AFTER THE LAST ONE. HIS SPELLING: LABATORY.', cx, top+H*0.172);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('EVERY JAR IN THIS PROJECT BEFORE SEPTEMBER HELD SOMETHING DEAD.', cx, top+H*0.200);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('DEAD_CHARACTER.JAR, THE FILE SIMON 404 PUT THE WHOLE CAST INTO, WHICH ONLY EVER APPEARS ATTACHED TO “/DELETE” ·', cx, top+H*0.222);
+    ctx.fillText('CREEPYHORSE.JAR · AND A JAR OF BLOOD. THEN SEPT 5 PUT MINT ICE CREAM IN ONE. TODAY ONE HOLDS EVERYTHING, ALIVE.', cx, top+H*0.238);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(198,155,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE SHRINK IS HIS OWN MOVE, AND IT', cx-W*0.152, top+H*0.658);
+    ctx.fillText('USED TO FIT IN A HAT.', cx-W*0.152, top+H*0.674);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 1, 3:26 PM: “GRAY.PS’S SOUL AND BODY WAS STRUNKEN', cx-W*0.152, top+H*0.694);
+    ctx.fillText('TO FIT INSIDE OF PERO’S TOP HAT.” THAT WAS ONE', cx-W*0.152, top+H*0.708);
+    ctx.fillText('CHARACTER, AND IT TOOK A CARD GAME TO SET UP.', cx-W*0.152, top+H*0.722);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TWENTY-TWO DAYS LATER THE SAME MOVE TAKES THE GAME,', cx-W*0.152, top+H*0.740);
+    ctx.fillText('THE OMNIVERSALS AND THE OMNIPOTENTS IN ONE SENTENCE', cx-W*0.152, top+H*0.754);
+    ctx.fillText('AND NEEDS NO SET-UP AT ALL.', cx-W*0.152, top+H*0.768);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE EXPERIMENTS WERE ALWAYS', cx+W*0.186, top+H*0.658);
+    ctx.fillText('GASTER’S JOB.', cx+W*0.186, top+H*0.674);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('JULY 29: GASTER “DIED CONDUCTING HIS EXPERIMENT TO', cx+W*0.186, top+H*0.694);
+    ctx.fillText('CREATE SIMON 404.” AUG 24: “GASTER EXPERIMENTS IT AND', cx+W*0.186, top+H*0.708);
+    ctx.fillText('CREATES IT.” SEPT 20: HE “GOES THROUGH EXPERIMENTS.”', cx+W*0.186, top+H*0.722);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TONIGHT NEKA FILES THE GAME AWAY AND GOES TO DO', cx+W*0.186, top+H*0.740);
+    ctx.fillText('THEM HIMSELF, IN THE LABATORY HE CARRIED THE FROZEN', cx+W*0.186, top+H*0.754);
+    ctx.fillText('ONES INTO YESTERDAY. HE HAS TAKEN THE LAB TOO.', cx+W*0.186, top+H*0.768);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“DRAWER” HAS ZERO PRIOR HITS IN THE CLASSICS LOGS. THE ONE PIECE OF FURNITURE HE ADDS TONIGHT IS THE ONE THE GAME ENDS UP INSIDE.', cx, top+H*0.790);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,246,255,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 10: “ENTER CLASSICS, GO INTO THE LABATORY, YOU RECIEVE A PERMINENT + ENTERNAL CURSE.” IT IS WHERE HE PUTS THINGS.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THREE HOURS AGO HIS LARGEST ATTACK WAS A NUMBER NOBODY COULD HOLD. TONIGHT HE HOLDS EVERYTHING, AND IT IS THE SIZE OF A JAR.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE LAST LINE IS NOT A THREAT. HE CLOSED THE DRAWER AND WENT TO WORK.', cx, top+H*0.844);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ AND WENT TO DO EXPERIMENTS ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===786){
