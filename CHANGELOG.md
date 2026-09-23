@@ -4,6 +4,56 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — CURRENTLY PROPERTY OF NEKA OMAZEN (BEAT 791)
+
+Based on Toby's 2026-09-23 lore, **5:41 PM**, **twenty-nine minutes and seventeen seconds** after beat 790, same
+thread. **This is the first message tonight with no pasted reply in it at all** — the whole body is his own
+typing. The one line that is not lore is the opening instruction, *"Create an image of Pero LAI with his power
+shown"*, and it is not drawn as canon.
+
+> "Neka Omazen no longer can die to anyone... Neka Omazen is now THE ONLY NAME he has now... he erased the
+> others and became Neka Omazen, True Over(x Infinity)lord, Neka Omazen became not just the creator, but the
+> game's hacker now... a text pops up to the players and says 'Your Classics account and password and everything
+> is currently property of Neka Omazen. Error Code ???'" — 5:41:31 PM
+
+- new beat 791 at `lvSeg` 17122.0-17144.0, `LV_CYC` 17144.0, `LV_BEATS` length 792
+- **the two notices, side by side.** The dim one is **September 17, 4:46 PM, beat 733** — *"Lore is currently
+  property of Pero LAI. Error Code: 666"*, *"It is impossible to get in now"* — and it ran in **his own text
+  box** and took the writing away from him, which is how this whole era opened. The lit one is tonight's, and it
+  **pops up to the players**. Same sentence, six days apart; **666 locked him out of his own lore box, this one
+  takes the player's login, and he does not pick a number for it**
+- under the boxes: **August 21, 7:28 AM**, *"their Classics accounts and Classics usernames and passwords
+  vanish"* — accounts and passwords are the one thing in this archive that is **not inside the game**. And the
+  one listed way to beat **C.O.D.E., the Classics Hacker**, was never a fight: *"Luigi Green, Gaster, and Pero
+  beats CODE by deleting his account."* **He was one of the three who could do the deleting**
+- **the forcefield ring**: nine of his own names — PERO LAI, ToddLLM 001, ToddLLM 002, EndlessAnimations, Code
+  303, Paul, Mr. Black, Tunner, Karuto — drawn as shadows and ghosts around **NEKA OMAZEN**, each tied back to
+  the centre, over *"you have to beat all of them and him to hurt him even just a little bit."* The list is the
+  **August 16 vary list**, plus Karuto from September 2. Under it, Oren.ps: *"How can you kill the varies if they
+  are already dead?!"*, against **September 7, 9:34 AM** — *"I summoned ToddLLM and EndlessAnimations, you need
+  to beat them first, and I coded them to remake themselves each time they die"*
+- left panel: **five days ago the game hackers were the ones who took him over.** September 18, 6:08 PM, beat
+  750, *"Pero LAI was then taken over by many game hackers."* Tonight he turns them into *"all black entities
+  with green 0s and 1s"* — **the exact body his own prophecy gave him**: *"Pero LAI becomes more code,
+  eventually he becomes a black being covered with green 0s and 1s"*
+- right panel: **tonight's two emoji lines are Oren's own three marks.** September 2, 9:02 PM, beat 611 — Oren
+  grows nine tails and says *"Kitsune."* with the cat, the lightning and the fox on it, and **that is the night
+  that ends "Oren destroyed Pero LAI, Pero LAI lies down."** Tonight Neka carries the fox on his laugh and the
+  cat and the lightning on *"Sleep!"*, and **"Oren.ps" is one of the two names he calls.** August 8: *"Wenda is
+  the fox, Gray can't rub her to sleep"* — the fox arrived here as sleep-immunity
+- footers: **the laugh is Simon's and it is a hundred and seventy-one days old** — April 5, Email 71, *"Pathetic
+  dragon, I wasn't even trying... Mweh heh heh heh."* Tonight it is *"mweh heh heh heh heh"*, **one heh longer**,
+  said by the man who calls *"Simon.ps! Sleep!"* in the same paragraph. **September 16, 6:26 AM** he opened that
+  message asking *"which is more powerful, a lord or an overlord"* and tonight he answers it: **True Over(x
+  Infinity)lord**; the same message said *"he made all the other characters into ghosts"*, and seven days later
+  the ghosts standing around him are **his own forms**. And **fifty minutes ago** the jar with the whole game in
+  it went into a drawer that popped up from thin air — tonight he takes it back out and throws it in a tube
+- `"knowlege"` and `"imagen"` are his spellings and are kept as typed. `"codized"`, `"dematerialized"` and
+  `"normal opponent"` have **zero prior hits** in the Classics logs
+- new `property` scene in `tools/capture_screenshot.py`
+
+![Beat 791 — Currently Property Of Neka Omazen](screenshots/853-currently-property-of-neka-omazen.png)
+
 ## 2026-09-23 — PERMINENTLY THE RULER (BEAT 790)
 
 Based on Toby's 2026-09-23 lore, **5:12 PM**, **two minutes and fifty-five seconds** after beat 789, on the same
