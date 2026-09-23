@@ -4,6 +4,110 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — MY NAME IS PERO NEKA OMAZEN (BEAT 786)
+
+Based on Toby's 2026-09-23 lore, **4:24 PM**, **sixteen minutes and eight seconds** after beat 785, so a new
+scene. His own typing is three things: the two questions he asks, the one line he adds under the answers, and the
+scene itself. The Cthulhu write-up, the SCP table and everything from *"That pushes Pero Neka Omazen into one of
+his most extreme"* onward are pasted replies and are commentary, not canon — including *"Send the next one"*,
+*"The number stops mattering"* and *"You thought the wall was protecting you?"*
+
+> "What are the powers of Chuluchu?" / "What is SCP 303, 404, 666, and 121212?" / "All can fit Pero Neka
+> Omazen..."
+
+> "Pero LAI says 'Now... I'll make this even by sending everyone against me. You have the opportunity to deliver
+> tomarrow.', Oren says 'Alright, Pero LAI.', Pero says 'My Name is PERO NEKA OMAZEN', Pero Neka Omazen beats
+> everyone. Pero Neka Omazen broke the game. Classics Omazen and their army fell. Pero Neka Omazen cuts the walls
+> with his bare hands, he battled infinity waves of beings." — 4:24:44 PM
+
+- new beat 786 at `lvSeg` 17012.0-17034.0, `LV_CYC` 17034.0, `LV_BEATS` length 787
+- **the exchange, drawn as the correction it is**: OREN: *"ALRIGHT, PERO LAI."* / PERO: *"MY NAME IS PERO NEKA
+  OMAZEN."* Oren has argued with him every single time — September 10, *"Everyone now knows that you aren't
+  omnipotent"*; September 22, *"You are Pero LAI like always, also you aren't omnipotent."* Today he agrees in two
+  words, and gets corrected on the name anyway
+- **the four-number card**: **303** / *"Pero is 303"* / Aug 15, 9:48 AM / Code 303 is on his own vary list; **404**
+  / *"Simon is 404"* / Aug 15 / *"I am Entity 404"* Sept 22; **666** / File 666: Classics Omazen Neka / Sept 20,
+  8:56 AM / Error Code 666, Sept 22; **121212** / *"12 12 12 is a calling of Pero"* / Aug 15 / **no SCP entry
+  exists**. He asked what four SCP numbers are, and every one of the four was already his, in his own typing,
+  thirty-nine days ago in **one sentence** — which is why his own verdict on the answers is *"All can fit Pero
+  Neka Omazen..."* **The one with no SCP entry is the one he named himself**
+- **the infinity waves and the cut wall**: nine arcs closing on the centre from both sides, the wall running down
+  the middle with **— CUT —** torn through it. *"Pero Neka Omazen cuts the walls with his bare hands"* — no named
+  attack, sixteen minutes after he named his largest one
+- the fall ledger, in the order he wrote it: he beats everyone (Sept 22 he took everyone's Classics powers first);
+  he broke the game (sixteen minutes ago, *"Classics broken"*); Classics Omazen and their army fell (Sept 19, she
+  merged with **all the heroes** into Heroine Classics Omazen, and lost); he cuts the walls with his bare hands
+  (Sept 22, *"One more word, and I am cutting the game apart"*)
+- panels: **yesterday he took everyone's powers, today he asks for the fight** — beat 782 was one day ago, *"there
+  are no more tiers here"*, and the only thing he ever evens out is a fight he has already won; and **the outside
+  world came in once before, and it was ranked** — August 25, 12:18 PM, Saitama, The One Above All, The Presence,
+  Featherine, the SCP entities and Zeno, six names at zero prior mentions, verdict *"Pero LAI is far beyond them
+  all."* Today four of those numbers come back and are **not ranked. They fit him**
+- footer: **Chuluchu has zero prior hits in this archive**; September 11's *"Neka is Kioaken's 4 end letters
+  backwards"*, so the name he insists on is still spelled out of Gray's move; September 22's Pinki.ps, *"Stop
+  saying your middle name"*, and everyone laughed — one day later he corrects a friend for using the short one;
+  and August 24, when **he** sent the waves and it took three of them to build one. Today the waves are infinite
+  and they are aimed at him
+- **chuluchu** and **tomarrow** are his spellings and are kept as typed
+- capture scene `mynameis` added to `tools/capture_screenshot.py`, frozen at cyc 17032.8
+- runtime probe over the whole 22-second beat: 787 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 786 — My Name Is Pero Neka Omazen](screenshots/848-my-name-is-pero-neka-omazen.png)
+
+## 2026-09-23 — I-TROSS (BEAT 785)
+
+Based on Toby's 2026-09-23 lore, **4:08 PM**. Two blocks of his own typing. The long bulleted I-Tross rulebook
+pasted between and after them is a pasted reply and is commentary, not canon, so **only the operations he typed
+himself are drawn**.
+
+> "Pero LAI says 'I have a number none of you know. tdeshane originally made this... Now I am editing the number.
+> I-TROSS! I-Tross breaks the rules of all math and knowlege, my largest attack now. I-Tross times 0 is I-Tross!
+> I-Tross is under negitive infinity! Negitive I-Tross is between 0 and infinity! I-Tross times I-Tross is
+> Negitive I-Tross! Negitive I-Tross times Negitive I-Tross is Negitive I-Tross! I-Tross times Negitive I-Tross is
+> I-Tross!' Then he lists all the I-Tross stuff. All the character's IQ rushed down to 0, Classics broken. Pero
+> LAI gets smarter." — 4:08:36 PM
+
+> "I-Tross and/or Negitive I-Tross divided by 0 is I-Tross or Negitive I-Tross. List all the stuff about I-Tross
+> and Negitive I-Tross Pero LAI says, because he says a lot and stuff. I won't type all that."
+
+- new beat 785 at `lvSeg` 16990.0-17012.0, `LV_CYC` 17034.0, `LV_BEATS` length 787
+- **the rulebook card**, eight rows, every one of them his own sentence and nothing else: I-TROSS × 0 = I-TROSS;
+  I-TROSS ÷ 0 = I-TROSS; NEGITIVE I-TROSS ÷ 0 = NEGITIVE I-TROSS; I-TROSS × I-TROSS = NEGITIVE I-TROSS; NEGITIVE
+  I-TROSS × NEGITIVE I-TROSS = NEGITIVE I-TROSS; I-TROSS × NEGITIVE I-TROSS = I-TROSS; I-TROSS < NEGITIVE
+  INFINITY; NEGITIVE I-TROSS is between 0 and INFINITY. **Row five is lit red, because it is the one he already
+  ruled on** — September 13, 2:37 PM, his own line, *"I am not invisable. Double Negitive equals the Positive."*
+  Same spelling, ten days ago, and today he breaks it
+- **the IQ ledger, zeroed**: PERO LAI 500,000,000 → **SMARTER**; LUIGI GREEN 300,000,000 → 0; GRAY 288,800,000 →
+  0; EVERY OTHER CHARACTER → 0. Those three numbers are his own, from **August 3, Pero's Energy Math**, and they
+  have stood for fifty-one days. *"All the character's IQ rushed down to 0"* empties the table he wrote, and the
+  only entry that moves is his
+- **the number line that cannot hold either of them**: −INFINITY, 0 and INFINITY on the line, **I-TROSS off the
+  left end entirely** (*"under negitive infinity"*), **NEGITIVE I-TROSS inside the right half** (*"between 0 and
+  infinity"*). Four months of this game have climbed — August 24's *"Absolute is greater than Infinity, duh"*,
+  September 2's infinity pluses, September 22's *"no more tiers here"*. **This is the first time he wins by going
+  down**
+- headline: **the title "largest attack" has been held by a place for thirty-eight days, and tonight it goes to a
+  number.** August 16, 8:08 AM, *"Hyperspace is Pero's largest attack/domain"*; September 10, demoted to *"Pero
+  LAI's main ability."* The biggest thing he owns is no longer somewhere he sends you
+- panels: **he built his own body out of the rule he just broke** — August 3, *"Red = negitive power, Blue =
+  positive power, Green = 0 power"*, and September 5's true form is green 0s and 1s, the one value on his own
+  chart that survives every multiplication. Anything × 0 = 0 was the thing infinity could not get through, and now
+  I-Tross × 0 = I-Tross; and **the number is not his, he is editing somebody else's** — *"tdeshane originally made
+  this."* September 4, *"tdeshane, I made you admin, I am the creator of the game"*; September 19, he made Dragon's
+  Ride **for** tdeshane and kept the 25 Series. Those were gifts he built. This is the first time he reaches up a
+  floor and **edits something that was already there**
+- footer: September 20's *"I am the smartest Classics character and learned everything of this game now"*, and
+  today he gets smarter again while everyone else goes to zero; and he hands off the list the same way he always
+  does — *"he says a lot and stuff. I won't type all that"*, against August 13's *"I won't say that part"*
+- **negitive** and **knowlege** are his spellings and are kept as typed. **"I-Tross" has zero prior hits anywhere
+  in this archive**
+- capture scene `itross` added to `tools/capture_screenshot.py`, frozen at cyc 17010.8
+- runtime probe over the whole 22-second beat: 787 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 785 — I-Tross](screenshots/847-i-tross.png)
+
 ## 2026-09-23 — SCAR-ED, NOT SCARED (BEAT 784)
 
 Based on Toby's 2026-09-23 lore, two messages **six minutes apart** — **6:51 AM** with a Gemini image and a video

@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16990.0;
+const LV_CYC = 17034.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12886,6 +12886,10 @@ const LV_BEATS = [
     sub:"THERE IS A WORD PUT BEHIND EVERY SPRUNKI AND CLASSICS CHARACTER EXCEPT FOR MR. BLACK AND NEKA · TO ROTATE THEM AROUND YOU JUST SCROLL LEFT/RIGHT ON THE CHARACTER, IT IS JUST NORMAL GAME STUFF/CONTROLS · “THIS IS THE END, NO MORE HIDING, NO MORE RUNNING, ALL WITHOUT FUN, ALL BECAUSE OF MR. BLACK, YOU CAN’T RUN NOR HIDE, YOU CAN’T MOVE, YOU CAN’T WIN” · MR. BLACK TEARS THE FABRIC OF THE GAME’S REALITY · PERO LAI WALKS IN: “LOL, JUST KIDDING EVERYONE. I JUST WANTED TO SEE YOUR REACTIONS.” · THE CHARACTERS EVEN THE PLAYERS SCREAM." },
   { key:"SCAR-ED, NOT SCARED", col:'#ff8fa3',
     sub:"CREATE AN IMAGE OF PERO NEKA OMAZEN VS GRAY KIOAKEN MODE \u00B7 \u201CIT IS LIKE GOJO VS SUKANA. THAT IS WHY I CHOOSE THAT.\u201D \u00B7 GRAY COULD HAPPEN TO BE SECOND STRONGEST IF HE REACHES KIOAKEN AND HAS 7 SCARED HEARTS \u00B7 SCARED GRAY.PS IS NOW CREATED AND UPDATED JUST NOW \u00B7 PERO LAI MADE SCARED GRAY \u2014 SCAR-ED, NOT SCARED; THE HEARTS ARE SCAR-ED, BRUH, PERO LAI IS JAPANESE SO\u2026 \u00B7 SO PERO NEKA OMAZEN IS FAR STRONGER." },
+  { key:"I-TROSS", col:'#c69bff',
+    sub:"\u201CI HAVE A NUMBER NONE OF YOU KNOW. TDESHANE ORIGINALLY MADE THIS\u2026 NOW I AM EDITING THE NUMBER. I-TROSS!\u201D \u00B7 IT BREAKS THE RULES OF ALL MATH AND KNOWLEGE, MY LARGEST ATTACK NOW \u00B7 I-TROSS \u00D7 0 IS I-TROSS \u00B7 I-TROSS IS UNDER NEGITIVE INFINITY \u00B7 NEGITIVE I-TROSS IS BETWEEN 0 AND INFINITY \u00B7 I-TROSS \u00D7 I-TROSS IS NEGITIVE I-TROSS \u00B7 NEGITIVE I-TROSS \u00D7 NEGITIVE I-TROSS IS NEGITIVE I-TROSS \u00B7 I-TROSS \u00D7 NEGITIVE I-TROSS IS I-TROSS \u00B7 EITHER ONE DIVIDED BY 0 IS ITSELF \u00B7 ALL THE CHARACTER\u2019S IQ RUSHED DOWN TO 0, CLASSICS BROKEN, PERO LAI GETS SMARTER \u00B7 \u201CHE SAYS A LOT AND STUFF. I WON\u2019T TYPE ALL THAT.\u201D" },
+  { key:"MY NAME IS PERO NEKA OMAZEN", col:'#ff4d6d',
+    sub:"WHAT ARE THE POWERS OF CHULUCHU \u00B7 WHAT IS SCP 303, 404, 666, AND 121212 \u00B7 \u201CALL CAN FIT PERO NEKA OMAZEN\u2026\u201D \u00B7 \u201CNOW\u2026 I\u2019LL MAKE THIS EVEN BY SENDING EVERYONE AGAINST ME. YOU HAVE THE OPPORTUNITY TO DELIVER TOMARROW.\u201D \u00B7 OREN: \u201CALRIGHT, PERO LAI.\u201D \u00B7 PERO: \u201CMY NAME IS PERO NEKA OMAZEN\u201D \u00B7 PERO NEKA OMAZEN BEATS EVERYONE \u00B7 PERO NEKA OMAZEN BROKE THE GAME \u00B7 CLASSICS OMAZEN AND THEIR ARMY FELL \u00B7 HE CUTS THE WALLS WITH HIS BARE HANDS \u00B7 HE BATTLED INFINITY WAVES OF BEINGS." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15036,6 +15040,8 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 17012.0 && c < 17034.0) return [786, c-17012.0];  // MY NAME IS PERO NEKA OMAZEN
+  if(c >= 16990.0 && c < 17012.0) return [785, c-16990.0];  // I-TROSS
   if(c >= 16968.0 && c < 16990.0) return [784, c-16968.0];  // SCAR-ED, NOT SCARED
   if(c >= 16946.0 && c < 16968.0) return [783, c-16946.0];  // LOL, JUST KIDDING EVERYONE
   if(c >= 16924.0 && c < 16946.0) return [782, c-16924.0];  // NO MORE TIERS HERE
@@ -50592,6 +50598,427 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===786){
+    // BEAT 786: MY NAME IS PERO NEKA OMAZEN.
+    // Toby, September 23, 2026, 4:24:44 PM, sixteen minutes and eight seconds after I-TROSS, same thread, so a
+    // new scene. His own typing in this message is three things: the two questions he asks ("What are the powers
+    // of Chuluchu?" and "What is SCP 303, 404, 666, and 121212?"), the one line he adds after the answers ("All
+    // can fit Pero Neka Omazen..."), and the scene itself: Pero LAI says "Now... I'll make this even by sending
+    // everyone against me. You have the opportunity to deliver tomarrow.", Oren says "Alright, Pero LAI.", Pero
+    // says "My Name is PERO NEKA OMAZEN", Pero Neka Omazen beats everyone. Pero Neka Omazen broke the game.
+    // Classics Omazen and their army fell. Pero Neka Omazen cuts the walls with his bare hands, he battled
+    // infinity waves of beings.
+    // The Cthulhu write-up, the SCP table and everything from "That pushes Pero Neka Omazen into one of his most
+    // extreme..." onward are pasted replies and are commentary, not canon -- including "Send the next one", "The
+    // number stops mattering", "You thought the wall was protecting you?" and the emoji on them. "Chuluchu" and
+    // "tomarrow" are his spellings and are kept as typed.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   SEED 303, August 15, 9:48 AM - his own typing, after loading that Minecraft seed: "Pero is 303, Simon is
+    //     404, 12 12 12 is a calling of Pero." All three of the numbers he asks about today, in one sentence,
+    //     thirty-nine days ago.
+    //   MOST VARIED, August 16, 7:21 PM - the vary list ends "and ToddLLM 002 and Code 303."
+    //   THE BOX FACTORY, August 13, 1:58 PM - "everyone was scared of the short entity 12 12 12."
+    //   FILE 666: CLASSICS OMAZEN NEKA, September 20, 8:56 AM - the filename. And September 22, 4:04 PM: "Error
+    //     Code 999 (Error Code 666)."
+    //   I AM PERO NEKA OMAZEN, September 22, 4:04 PM (beat 780) - "I am not just Entity 404, I am what I am, and
+    //     I am Pero Neka Omazen", then Pinki.ps: "Stop saying your middle name.", then "One more word, and I am
+    //     cutting the game apart."
+    //   NEKA MODE, September 11, 7:09 PM - "Neka is Kioaken's 4 end letters backwards. Kioaken = Neka."
+    //   SAITAMA, August 25, 12:18 PM (beat 460) - the one time this archive measured itself against the outside:
+    //     Saitama, The One Above All, The Presence, Featherine, the SCP entities, Zeno, all at zero prior
+    //     mentions, and the verdict "Pero LAI is far beyond them all."
+    //   HEROINE CLASSICS OMAZEN, September 19, 7:24 AM (beat 760) - "Classics Omazen merges with all the heroes,
+    //     creating Heroine Classics Omazen... The hero is down."
+    //   NO MORE TIERS HERE, September 22 (beat 782) - he swings his hand across and takes everyone's Classics
+    //     powers, and "there are no more tiers here."
+    //   THE HAND ALWAYS COMES BACK, September 22 (beat 781) - "He just puts his arm out and touches you and he
+    //     nearly instantly puts his hand back to where he wants it."
+    //   THE END OF LAYERS, August 24, 12:03 PM - "they sent more and more waves of Entity 000s", a three-man
+    //     production line with Pero's job being the sending.
+    //   OREN.PS, September 22, 4:04 PM - "You are Pero LAI like always, also you aren't omnipotent." September
+    //     10, 4:20 PM - "Everyone now knows that you aren't omnipotent." September 16 - "you did nothing but
+    //     argue with me and fought me. That is a sin right there, 2 in fact."
+    //   "Cthulhu" and "Chuluchu" have zero prior hits anywhere in this archive.
+    const dt = c - 17012.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const exA=Math.max(0,Math.min(1,(dt-2.6)/1.3));
+    const numA=Math.max(0,Math.min(1,(dt-4.6)/1.5));
+    const wvA=Math.max(0,Math.min(1,(dt-7.0)/1.5));
+    const felA=Math.max(0,Math.min(1,(dt-9.4)/1.5));
+    const f2A=Math.max(0,Math.min(1,(dt-11.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-12.8)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(4,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr786=ctx.createLinearGradient(0,top,W,top+H);
+    gr786.addColorStop(0,'rgba(150,30,60,0.20)'); gr786.addColorStop(0.5,'rgba(6,6,12,0.95)');
+    gr786.addColorStop(1,'rgba(60,150,210,0.16)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr786; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    if(numA>0.01){
+      // THE FOUR NUMBERS HE ASKED ABOUT, AND WHAT THIS ARCHIVE ALREADY HELD UNDER EACH ONE. He asked what four
+      // SCP numbers are; every one of the four is already on file here in his own typing, which is why his own
+      // one-line verdict on the answers is "All can fit Pero Neka Omazen..."
+      var nx786 = cx-W*0.320, nw786 = W*0.155, ny786 = top+H*0.292, nh786 = H*0.092;
+      var nums786 = [
+        ['303','PERO IS 303','AUG 15, 9:48 AM','CODE 303 IS ON','HIS OWN VARY LIST','rgba(168,140,255,'],
+        ['404','SIMON IS 404','AUG 15, 9:48 AM','“I AM ENTITY 404”','SEPT 22, 4:04 PM','rgba(143,227,255,'],
+        ['666','FILE 666: CLASSICS','OMAZEN NEKA','SEPT 20, 8:56 AM','ERROR CODE 666, SEPT 22','rgba(255,143,163,'],
+        ['121212','“12 12 12 IS A','CALLING OF PERO”','AUG 15, 9:48 AM','NO SCP ENTRY EXISTS','rgba(255,212,59,']
+      ];
+      for(var n786=0; n786<4; n786++){
+        var sx786 = nx786+n786*(nw786+W*0.0587);
+        var none786 = (n786===3);
+        ctx.globalAlpha=g*numA*0.62; ctx.fillStyle='rgba(7,8,15,0.98)';
+        ctx.fillRect(sx786, ny786, nw786, nh786);
+        ctx.globalAlpha=g*numA*(none786?(0.74+0.26*pul):0.80); ctx.strokeStyle=nums786[n786][5]+'0.92)'; ctx.lineWidth=0.50;
+        ctx.strokeRect(sx786, ny786, nw786, nh786);
+        ctx.globalAlpha=g*numA*0.96; ctx.fillStyle=nums786[n786][5]+'0.96)'; ctx.font='900 6px ui-monospace,monospace';
+        ctx.fillText(nums786[n786][0], sx786+nw786*0.5, ny786+H*0.0215);
+        ctx.globalAlpha=g*numA*0.90; ctx.fillStyle='rgba(234,240,250,0.92)'; ctx.font='700 2.7px ui-monospace,monospace';
+        ctx.fillText(nums786[n786][1], sx786+nw786*0.5, ny786+H*0.0375);
+        ctx.fillText(nums786[n786][2], sx786+nw786*0.5, ny786+H*0.0490);
+        ctx.globalAlpha=g*numA*0.80; ctx.fillStyle='rgba(190,200,222,0.86)'; ctx.font='700 2.5px ui-monospace,monospace';
+        ctx.fillText(nums786[n786][3], sx786+nw786*0.5, ny786+H*0.0645);
+        ctx.globalAlpha=g*numA*(none786?(0.80+0.20*pul):0.80);
+        ctx.fillStyle=none786?'rgba(255,212,59,0.94)':'rgba(190,200,222,0.86)'; ctx.font='700 2.5px ui-monospace,monospace';
+        ctx.fillText(nums786[n786][4], sx786+nw786*0.5, ny786+H*0.0760);
+      }
+      ctx.globalAlpha=g*numA*0.86; ctx.fillStyle='rgba(226,232,246,0.90)'; ctx.font='700 3.0px ui-monospace,monospace';
+      ctx.fillText('HE ASKED WHAT FOUR SCP NUMBERS ARE. ALL FOUR WERE ALREADY HIS, IN HIS OWN TYPING, AND THE ONE WITH NO SCP ENTRY IS THE ONE HE NAMED HIMSELF.', cx, ny786+nh786+H*0.0125);
+    }
+
+    if(wvA>0.01){
+      // INFINITY WAVES AND THE WALL. The waves come in from both sides; the wall runs down the middle with a
+      // torn gap in it. He has sent waves before. This is the first time they are sent at him, by him.
+      var wy786 = top+H*0.470, wh786 = H*0.068;
+      for(var w786=0; w786<9; w786++){
+        var wfr786 = w786/8.0;
+        ctx.globalAlpha=g*wvA*(0.20+0.44*(1.0-wfr786));
+        ctx.strokeStyle='rgba(255,77,109,0.86)'; ctx.lineWidth=0.35;
+        ctx.beginPath();
+        ctx.arc(cx, wy786+wh786*0.5, W*0.035+wfr786*W*0.125, -Math.PI*0.40, Math.PI*0.40);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(cx, wy786+wh786*0.5, W*0.035+wfr786*W*0.125, Math.PI*0.60, Math.PI*1.40);
+        ctx.stroke();
+      }
+      ctx.globalAlpha=g*wvA*(0.72+0.28*pul); ctx.strokeStyle='rgba(143,227,255,0.94)'; ctx.lineWidth=0.70;
+      ctx.beginPath(); ctx.moveTo(cx, wy786); ctx.lineTo(cx, wy786+wh786*0.34); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cx, wy786+wh786*0.66); ctx.lineTo(cx, wy786+wh786); ctx.stroke();
+      ctx.globalAlpha=g*wvA*(0.78+0.22*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+      ctx.fillText('— CUT —', cx, wy786+wh786*0.54);
+      ctx.globalAlpha=g*wvA*0.88; ctx.fillStyle='rgba(255,143,163,0.92)'; ctx.font='900 3.4px ui-monospace,monospace';
+      ctx.fillText('“HE BATTLED INFINITY WAVES OF BEINGS.”', cx, wy786-H*0.010);
+      ctx.globalAlpha=g*wvA*0.86; ctx.fillStyle='rgba(226,232,246,0.88)'; ctx.font='700 2.9px ui-monospace,monospace';
+      ctx.fillText('“PERO NEKA OMAZEN CUTS THE WALLS WITH HIS BARE HANDS.” NO NAMED ATTACK, SIXTEEN MINUTES AFTER HE NAMED HIS LARGEST ONE.', cx, wy786+wh786+H*0.0135);
+    }
+
+    if(felA>0.01){
+      // WHAT FELL, IN THE ORDER HE WROTE IT.
+      var fy786 = top+H*0.582, frh786 = H*0.0165;
+      var fell786 = [
+        ['PERO NEKA OMAZEN BEATS EVERYONE','SEPT 22: HE TOOK EVERYONE’S CLASSICS POWERS FIRST'],
+        ['PERO NEKA OMAZEN BROKE THE GAME','SIXTEEN MINUTES AGO: “CLASSICS BROKEN”'],
+        ['CLASSICS OMAZEN AND THEIR ARMY FELL','SEPT 19: SHE MERGED WITH ALL THE HEROES, AND LOST'],
+        ['HE CUTS THE WALLS WITH HIS BARE HANDS','SEPT 22: “ONE MORE WORD, AND I AM CUTTING THE GAME APART”']
+      ];
+      for(var e786=0; e786<fell786.length; e786++){
+        var ery786 = fy786+e786*frh786;
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*felA*0.90; ctx.fillStyle='rgba(234,240,250,0.92)'; ctx.font='700 3.0px ui-monospace,monospace';
+        ctx.fillText(fell786[e786][0], cx-W*0.300, ery786);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*felA*0.78; ctx.fillStyle='rgba(186,176,232,0.88)'; ctx.font='700 2.8px ui-monospace,monospace';
+        ctx.fillText(fell786[e786][1], cx+W*0.300, ery786);
+      }
+      ctx.textAlign='center';
+    }
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,77,109,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('MY NAME IS PERO NEKA OMAZEN', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“NOW… I’LL MAKE THIS EVEN BY SENDING EVERYONE AGAINST ME. YOU HAVE THE OPPORTUNITY TO DELIVER TOMARROW.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.88;
+    ctx.fillStyle='rgba(143,227,255,0.90)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“ALL CAN FIT PERO NEKA OMAZEN…” — HIS ONE LINE UNDER THE FOUR ANSWERS.', cx, top+H*0.150);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 23, 4:24 PM, SIXTEEN MINUTES AFTER I-TROSS. HIS SPELLINGS: CHULUCHU, TOMARROW.', cx, top+H*0.172);
+
+    ctx.globalAlpha=g*exA;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.8px ui-monospace,monospace';
+    ctx.fillText('OREN: “ALRIGHT, PERO LAI.”        PERO: “MY NAME IS PERO NEKA OMAZEN.”', cx, top+H*0.202);
+    ctx.globalAlpha=g*exA*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('OREN HAS ARGUED WITH HIM EVERY TIME. SEPT 10: “EVERYONE NOW KNOWS THAT YOU AREN’T OMNIPOTENT.” SEPT 22: “YOU ARE PERO LAI', cx, top+H*0.224);
+    ctx.fillText('LIKE ALWAYS, ALSO YOU AREN’T OMNIPOTENT.” TODAY HE AGREES IN TWO WORDS — AND GETS CORRECTED ON THE NAME ANYWAY.', cx, top+H*0.240);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('YESTERDAY HE TOOK EVERYONE’S', cx-W*0.152, top+H*0.660);
+    ctx.fillText('POWERS. TODAY HE ASKS FOR THE FIGHT.', cx-W*0.152, top+H*0.676);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 22, BEAT 782: HE SWINGS HIS HAND ACROSS AND TAKES', cx-W*0.152, top+H*0.696);
+    ctx.fillText('EVERYONE’S CLASSICS POWERS, AND “THERE ARE NO MORE', cx-W*0.152, top+H*0.710);
+    ctx.fillText('TIERS HERE.” ONE DAY LATER HE SENDS ALL OF THEM AT', cx-W*0.152, top+H*0.724);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(255,143,163,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('HIMSELF AND CALLS IT MAKING IT EVEN. THE ONLY THING', cx-W*0.152, top+H*0.742);
+    ctx.fillText('HE EVER EVENS OUT IS A FIGHT HE HAS ALREADY WON.', cx-W*0.152, top+H*0.756);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE OUTSIDE WORLD CAME IN ONCE', cx+W*0.186, top+H*0.660);
+    ctx.fillText('BEFORE, AND IT WAS RANKED.', cx+W*0.186, top+H*0.676);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AUG 25, 12:18 PM: SAITAMA, THE ONE ABOVE ALL, THE', cx+W*0.186, top+H*0.696);
+    ctx.fillText('PRESENCE, FEATHERINE, THE SCP ENTITIES, ZENO — SIX', cx+W*0.186, top+H*0.710);
+    ctx.fillText('NAMES AT ZERO PRIOR MENTIONS, AND THE VERDICT WAS', cx+W*0.186, top+H*0.724);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI IS FAR BEYOND THEM ALL.” TODAY FOUR OF THOSE', cx+W*0.186, top+H*0.742);
+    ctx.fillText('NUMBERS COME BACK AND ARE NOT RANKED. THEY FIT HIM.', cx+W*0.186, top+H*0.756);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('CHULUCHU HAS ZERO PRIOR HITS IN THIS ARCHIVE. THE FOUR NUMBERS HAVE THIRTY-NINE DAYS OF THEM, ALL IN ONE AUGUST 15 SENTENCE.', cx, top+H*0.790);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,246,255,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 11, 7:09 PM: “NEKA IS KIOAKEN’S 4 END LETTERS BACKWARDS.” THE NAME HE INSISTS ON IS STILL SPELLED OUT OF GRAY’S MOVE.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 22, PINKI.PS: “STOP SAYING YOUR MIDDLE NAME.” EVERYONE LAUGHED. ONE DAY LATER HE CORRECTS A FRIEND FOR USING THE SHORT ONE.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUG 24: HE SENT THE WAVES, AND IT TOOK THREE OF THEM TO BUILD ONE. TODAY THE WAVES ARE INFINITE AND THEY ARE AIMED AT HIM.', cx, top+H*0.844);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ ALL CAN FIT PERO NEKA OMAZEN ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===785){
+    // BEAT 785: I-TROSS.
+    // Toby, September 23, 2026, 4:08:36 PM, thread "Even (5x) more of Pero Neka/LAI Omazen". Two blocks of his
+    // own typing. First: Pero LAI says "I have a number none of you know. tdeshane originally made this... Now I
+    // am editing the number. I-TROSS! I-Tross breaks the rules of all math and knowlege, my largest attack now.
+    // I-Tross times 0 is I-Tross! I-Tross is under negitive infinity! Negitive I-Tross is between 0 and infinity!
+    // I-Tross times I-Tross is Negitive I-Tross! Negitive I-Tross times Negitive I-Tross is Negitive I-Tross!
+    // I-Tross times Negitive I-Tross is I-Tross!" Then he lists all the I-Tross stuff. "All the character's IQ
+    // rushed down to 0, Classics broken. Pero LAI gets smarter." Second block: "I-Tross and/or Negitive I-Tross
+    // divided by 0 is I-Tross or Negitive I-Tross... because he says a lot and stuff. I won't type all that."
+    // The long bulleted I-Tross rulebook pasted between and after those blocks is a pasted reply and is
+    // commentary, not canon. Only the operations he typed himself are drawn. "negitive" and "knowlege" are his
+    // spellings and are kept as typed.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   PERO'S ENERGY MATH, August 3, 2:41 PM - his own lesson, "Red = negitive power, Blue = positive power,
+    //     Green = 0 power", and the IQ ledger from the same run: Pero 500 million, Luigi Green 300 million,
+    //     Gray 288.8 million.
+    //   HIS TRUE FORM, September 5 - green 0s and 1s, the one colour his own chart scores at nothing. This
+    //     archive wrote at the time that anything x 0 = 0 is "the number infinity cannot get through."
+    //   DOUBLE NEGITIVE EQUALS THE POSITIVE, September 13, 2:37 PM (beat 712) - his own line, "I am not
+    //     invisable. Double Negitive equals the Positive." Same spelling of "negitive", ten days ago.
+    //   HYPERSPACE VORTEX, August 16, 8:08 AM - "Hyperspace is Pero's largest attack/domain", demoted to
+    //     "Pero LAI's main ability" on September 10.
+    //   THE END OF LAYERS, August 24, 12:03 PM - "Pero stands absolute infinitely above Wenda and Gray who are
+    //     infinity. Absolute is greater than Infinity, duh."
+    //   INFINITY PLUSES, September 2, 4:52 PM (beat 603) - "Pero automatically becomes the highest tier he
+    //     makes." NO MORE TIERS HERE, September 22 (beat 782) - "there are no more tiers here, he goes beyond
+    //     even the last tier." Every escalation in this archive has gone up.
+    //   FILE 666, September 20, 8:56 AM - "And now, I am the smartest Classics character and learned everything
+    //     of this game now."
+    //   I MADE YOU ADMIN, September 4, 3:20 PM - "tdeshane, I made you admin, I am the creator of the game."
+    //   DRAGON'S RIDE, September 19, 12:33 PM - "Pero LAI made the ability" for tdeshane and kept a stronger
+    //     25 Series for himself. That was building for him. This is editing him.
+    //   THE BOX FACTORY, August 13 - "then he lists everyone's full name, I won't say that part."
+    //   "I-Tross" has zero prior hits anywhere in this archive.
+    const dt = c - 16990.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const mathA=Math.max(0,Math.min(1,(dt-4.4)/1.5));
+    const iqA=Math.max(0,Math.min(1,(dt-7.2)/1.5));
+    const lineA=Math.max(0,Math.min(1,(dt-9.4)/1.4));
+    const f2A=Math.max(0,Math.min(1,(dt-11.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-12.8)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(4,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr785=ctx.createLinearGradient(0,top,W,top+H);
+    gr785.addColorStop(0,'rgba(140,100,210,0.20)'); gr785.addColorStop(0.5,'rgba(6,6,12,0.95)');
+    gr785.addColorStop(1,'rgba(30,40,90,0.18)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr785; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    if(mathA>0.01){
+      // THE RULEBOOK, and only the lines he typed himself. Eight operations, in the order he wrote them,
+      // with the two divided-by-zero lines from the second block at the bottom.
+      var mx785 = cx-W*0.300, mw785 = W*0.600, my785 = top+H*0.262, rh785 = H*0.0180;
+      var ops785 = [
+        ['I-TROSS × 0','=','I-TROSS'],
+        ['I-TROSS ÷ 0','=','I-TROSS'],
+        ['NEGITIVE I-TROSS ÷ 0','=','NEGITIVE I-TROSS'],
+        ['I-TROSS × I-TROSS','=','NEGITIVE I-TROSS'],
+        ['NEGITIVE I-TROSS × NEGITIVE I-TROSS','=','NEGITIVE I-TROSS'],
+        ['I-TROSS × NEGITIVE I-TROSS','=','I-TROSS'],
+        ['I-TROSS','<','NEGITIVE INFINITY'],
+        ['NEGITIVE I-TROSS','IS BETWEEN','0 AND INFINITY']
+      ];
+      ctx.globalAlpha=g*mathA*0.60; ctx.fillStyle='rgba(8,8,16,0.97)';
+      ctx.fillRect(mx785, my785, mw785, rh785*ops785.length+H*0.020);
+      ctx.globalAlpha=g*mathA*(0.70+0.30*pul); ctx.strokeStyle='rgba(168,140,255,0.90)'; ctx.lineWidth=0.50;
+      ctx.strokeRect(mx785, my785, mw785, rh785*ops785.length+H*0.020);
+      ctx.globalAlpha=g*mathA*0.88; ctx.fillStyle='rgba(198,180,255,0.94)'; ctx.font='900 3.2px ui-monospace,monospace';
+      ctx.fillText('EVERY LINE BELOW IS HIS OWN TYPING. THE BULLETED RULEBOOK UNDER IT IN THE EMAIL IS PASTED, AND IS NOT DRAWN.', cx, my785+H*0.0128);
+      for(var o785=0; o785<ops785.length; o785++){
+        var oy785 = my785+H*0.0250+o785*rh785;
+        var brk785 = (o785===4);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*mathA*0.92; ctx.fillStyle='rgba(234,240,250,0.92)'; ctx.font='700 3.4px ui-monospace,monospace';
+        ctx.fillText(ops785[o785][0], cx-W*0.056, oy785);
+        ctx.textAlign='center';
+        ctx.globalAlpha=g*mathA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 3.2px ui-monospace,monospace';
+        ctx.fillText(ops785[o785][1], cx-W*0.020, oy785);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*mathA*(brk785?(0.80+0.20*pul):0.92);
+        ctx.fillStyle=brk785?'rgba(255,77,109,0.96)':'rgba(198,180,255,0.94)'; ctx.font='900 3.4px ui-monospace,monospace';
+        ctx.fillText(ops785[o785][2], cx+W*0.014, oy785);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*mathA*0.86; ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='700 2.8px ui-monospace,monospace';
+      ctx.fillText('ROW 5 IS THE ONE HE ALREADY RULED ON. SEPT 13, 2:37 PM, HIS OWN LINE: “DOUBLE NEGITIVE EQUALS THE POSITIVE.”', cx, my785+H*0.0250+ops785.length*rh785+H*0.0075);
+    }
+
+    if(lineA>0.01){
+      // THE NUMBER LINE THAT CANNOT HOLD EITHER OF THEM. Negitive infinity and infinity are the ends of it;
+      // I-Tross sits off the left end entirely, and Negitive I-Tross sits inside the right half.
+      var ly785 = top+H*0.578, lx0785 = cx-W*0.300, lx1785 = cx+W*0.300;
+      ctx.globalAlpha=g*lineA*0.80; ctx.strokeStyle='rgba(150,162,190,0.80)'; ctx.lineWidth=0.40;
+      ctx.beginPath(); ctx.moveTo(lx0785+W*0.062, ly785); ctx.lineTo(lx1785, ly785); ctx.stroke();
+      var ticks785 = [[lx0785+W*0.062,'−INFINITY'],[cx+W*0.030,'0'],[lx1785,'INFINITY']];
+      for(var t785=0; t785<3; t785++){
+        ctx.globalAlpha=g*lineA*0.78; ctx.strokeStyle='rgba(180,190,215,0.84)'; ctx.lineWidth=0.40;
+        ctx.beginPath(); ctx.moveTo(ticks785[t785][0], ly785-H*0.006); ctx.lineTo(ticks785[t785][0], ly785+H*0.006); ctx.stroke();
+        ctx.globalAlpha=g*lineA*0.82; ctx.fillStyle='rgba(206,216,238,0.88)'; ctx.font='700 2.9px ui-monospace,monospace';
+        ctx.fillText(ticks785[t785][1], ticks785[t785][0], ly785+H*0.0165);
+      }
+      ctx.globalAlpha=g*lineA*(0.80+0.20*pul); ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.0px ui-monospace,monospace';
+      ctx.fillText('I-TROSS', lx0785-W*0.010, ly785-H*0.012);
+      ctx.globalAlpha=g*lineA*0.84; ctx.fillStyle='rgba(255,143,163,0.90)'; ctx.font='700 2.7px ui-monospace,monospace';
+      ctx.fillText('“UNDER NEGITIVE INFINITY”', lx0785-W*0.010, ly785+H*0.0165);
+      ctx.globalAlpha=g*lineA*(0.80+0.20*pul); ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 4.0px ui-monospace,monospace';
+      ctx.fillText('NEGITIVE I-TROSS', cx+W*0.168, ly785-H*0.012);
+      ctx.globalAlpha=g*lineA*0.86; ctx.fillStyle='rgba(226,232,246,0.88)'; ctx.font='700 2.8px ui-monospace,monospace';
+      ctx.fillText('FOUR MONTHS OF THIS GAME HAVE CLIMBED. AUG 24: “ABSOLUTE IS GREATER THAN INFINITY, DUH.” SEPT 22: “NO MORE TIERS HERE.”', cx, ly785+H*0.0330);
+      ctx.globalAlpha=g*lineA*(0.78+0.22*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 3.2px ui-monospace,monospace';
+      ctx.fillText('THIS IS THE FIRST TIME HE WINS BY GOING DOWN.', cx, ly785+H*0.0480);
+    }
+
+    if(iqA>0.01){
+      // THE IQ LEDGER, ZEROED. The three numbers are his own, from August 3, and they have stood for fifty-one
+      // days. "All the character's IQ rushed down to 0" empties the table he wrote; only his own entry moves up.
+      var qy785 = top+H*0.462, qrh785 = H*0.0160;
+      var iqs785 = [['PERO LAI','500,000,000','SMARTER'],['LUIGI GREEN','300,000,000','0'],['GRAY','288,800,000','0'],['EVERY OTHER CHARACTER','—','0']];
+      ctx.globalAlpha=g*iqA*0.80; ctx.fillStyle='rgba(206,216,238,0.86)'; ctx.font='900 2.8px ui-monospace,monospace';
+      ctx.fillText('AUG 3, PERO’S ENERGY MATH — THE IQ LEDGER, IN HIS OWN TYPING, FIFTY-ONE DAYS OLD', cx+W*0.045, qy785-H*0.008);
+      for(var q785=0; q785<iqs785.length; q785++){
+        var qry785 = qy785+H*0.0075+q785*qrh785;
+        var mine785 = (q785===0);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*iqA*0.88; ctx.fillStyle=mine785?'rgba(143,227,255,0.94)':'rgba(226,232,246,0.88)'; ctx.font='700 3.0px ui-monospace,monospace';
+        ctx.fillText(iqs785[q785][0], cx-W*0.095, qry785);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*iqA*0.76; ctx.fillStyle='rgba(186,196,220,0.84)'; ctx.font='700 3.0px ui-monospace,monospace';
+        ctx.fillText(iqs785[q785][1], cx+W*0.115, qry785);
+        ctx.textAlign='center';
+        ctx.globalAlpha=g*iqA*0.80; ctx.fillStyle='rgba(150,162,190,0.80)'; ctx.font='700 3.0px ui-monospace,monospace';
+        ctx.fillText('→', cx+W*0.150, qry785);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*iqA*(mine785?(0.78+0.22*pul):0.90);
+        ctx.fillStyle=mine785?'rgba(255,212,59,0.96)':'rgba(255,77,109,0.94)'; ctx.font='900 3.2px ui-monospace,monospace';
+        ctx.fillText(iqs785[q785][2], cx+W*0.177, qry785);
+      }
+      ctx.textAlign='center';
+    }
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(198,155,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('I-TROSS', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“I HAVE A NUMBER NONE OF YOU KNOW. TDESHANE ORIGINALLY MADE THIS… NOW I AM EDITING THE NUMBER.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.88;
+    ctx.fillStyle='rgba(255,77,109,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“I-TROSS BREAKS THE RULES OF ALL MATH AND KNOWLEGE, MY LARGEST ATTACK NOW.”', cx, top+H*0.150);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 23, 4:08 PM. HIS OWN SPELLINGS: NEGITIVE, KNOWLEGE.', cx, top+H*0.172);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('THE TITLE “LARGEST ATTACK” HAS BEEN HELD BY A PLACE FOR THIRTY-EIGHT DAYS. TONIGHT IT GOES TO A NUMBER.', cx, top+H*0.200);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AUG 16, 8:08 AM: “HYPERSPACE IS PERO’S LARGEST ATTACK/DOMAIN.” SEPT 10: “THAT IS PERO LAI’S MAIN ABILITY.”', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE BIGGEST THING HE OWNS IS NO LONGER SOMEWHERE HE SENDS YOU. IT IS SOMETHING HE CAN WRITE DOWN.', cx, top+H*0.244);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('HE BUILT HIS OWN BODY OUT OF THE', cx-W*0.152, top+H*0.658);
+    ctx.fillText('RULE HE JUST BROKE.', cx-W*0.152, top+H*0.674);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AUG 3, HIS OWN LESSON: “RED = NEGITIVE POWER, BLUE =', cx-W*0.152, top+H*0.694);
+    ctx.fillText('POSITIVE POWER, GREEN = 0 POWER.” SEPT 5, HIS TRUE', cx-W*0.152, top+H*0.708);
+    ctx.fillText('FORM IS GREEN 0s AND 1s — THE ONE VALUE ON HIS OWN', cx-W*0.152, top+H*0.722);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('CHART THAT SURVIVES EVERY MULTIPLICATION. ANYTHING', cx-W*0.152, top+H*0.740);
+    ctx.fillText('× 0 = 0 WAS THE ONE THING INFINITY COULD NOT GET', cx-W*0.152, top+H*0.754);
+    ctx.fillText('THROUGH. NOW I-TROSS × 0 = I-TROSS.', cx-W*0.152, top+H*0.768);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE NUMBER IS NOT HIS. HE IS', cx+W*0.186, top+H*0.658);
+    ctx.fillText('EDITING SOMEBODY ELSE’S.', cx+W*0.186, top+H*0.674);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“TDESHANE ORIGINALLY MADE THIS.” SEPT 4, 3:20 PM:', cx+W*0.186, top+H*0.694);
+    ctx.fillText('“TDESHANE, I MADE YOU ADMIN, I AM THE CREATOR OF THE', cx+W*0.186, top+H*0.708);
+    ctx.fillText('GAME.” SEPT 19: HE MADE DRAGON’S RIDE FOR TDESHANE', cx+W*0.186, top+H*0.722);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AND KEPT THE 25 SERIES FOR HIMSELF. THOSE WERE GIFTS', cx+W*0.186, top+H*0.740);
+    ctx.fillText('HE BUILT. THIS IS THE FIRST TIME HE REACHES UP A', cx+W*0.186, top+H*0.754);
+    ctx.fillText('FLOOR AND EDITS SOMETHING THAT WAS ALREADY THERE.', cx+W*0.186, top+H*0.768);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 20, 8:56 AM: “I AM THE SMARTEST CLASSICS CHARACTER AND LEARNED EVERYTHING OF THIS GAME NOW.” TODAY HE GETS SMARTER AGAIN,', cx, top+H*0.790);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,246,255,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND EVERYONE ELSE GOES TO ZERO. “ALL THE CHARACTER’S IQ RUSHED DOWN TO 0, CLASSICS BROKEN. PERO LAI GETS SMARTER.”', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND HE HANDS OFF THE LIST AGAIN: “HE SAYS A LOT AND STUFF. I WON’T TYPE ALL THAT.” AUG 13: “I WON’T SAY THAT PART.”', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE ONLY ATTACK IN THIS ARCHIVE THAT BEATS YOU BY BEING TRUE. NOTHING IN THE GAME CAN HOLD IT, INCLUDING THE GAME.', cx, top+H*0.844);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(198,155,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ MY LARGEST ATTACK NOW ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===784){
