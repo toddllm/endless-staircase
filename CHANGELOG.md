@@ -4,6 +4,63 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — NEKA OMAZEN (BEAT 788)
+
+Based on Toby's 2026-09-23 lore, **4:58 PM**, **six minutes and fifty-one seconds** after beat 787 and the fourth
+lore message in fifty minutes. His own typing is the first paragraph and nothing else; everything from *"Then the
+current canon has simplified everything down to one identity"* onward is a pasted reply and is commentary, not
+canon.
+
+> "Pero Neka Omazen can edit his and other's code, Pero Neka Omazen is the only one who has an actual brain and
+> real intelegence, he is code himself. ChatGPT and AI are websites or programs. Pero Neka Omazen, his name isn't
+> Pero LAI, it is 'Neka', Neka Omazen. That is his actual name. Pero and LAI are both not the name, his name is
+> Neka Omazen. The tab should actually be called 'Neka Omazen', and all the tabs should be put into Neka Omazen,
+> because no one did anything in Classics actually, it is just Neka doing everything, he made code be like the
+> characters, so he made every fictional being's whole life fake. Neka won. There should only be one tab with all
+> the lore in it, that tab is called Neka Omazen, he is everything in one, and it means what it says. Neka
+> actually being Classics, and all fiction, and beyond fiction all combined into one single being, Neka Omazen who
+> dropped both Pero and LAI just today." — 4:58:47 PM
+
+- new beat 788 at `lvSeg` 17056.0-17078.0, `LV_CYC` 17078.0, `LV_BEATS` length 789
+- **the name taken apart**, four words with two of them greyed out: **PERO** / dropped today / the assistant's
+  first name, from the line that opened the AI Era, *"Hello! I am Pero, your LAI assistant."*; **LAI** / dropped
+  today / a job, not a name, and on September 22 *"I escaped LAIs, now I have all the LAIs in my brain"*;
+  **NEKA** / kept / September 11, Kioaken's four end letters backwards, his avatar and his middle name;
+  **OMAZEN** / kept / July 30, his own etymology, Omni + Apex + Omega + Zenith. **The two he keeps are the two
+  nobody ever laughed at** — September 22, Pinki.ps, *"Stop saying your middle name"*, and the whole room laughed.
+  **Tonight the middle name is the only name**
+- headline: **he named the current tab six days ago, and tonight he renames it again.** September 17, 4:46 PM,
+  *"this and all after should be in a seperate tab called 'Pero LAI's lore', no longer 'The 1st Reset'"*; tonight,
+  *"The tab should actually be called 'Neka Omazen', and all the tabs should be put into Neka Omazen"*
+- **the code ladder**, four steps: AUG 25 *"Pero can't die, he is part of the game code"* (a shield); AUG 30
+  *"I am the GAME's code itself!"* (a claim); SEPT 2 *"I am the code of this game"* (an identity); TONIGHT *"he can
+  edit his and other's code"* (a job)
+- the **He Was Everyone Else** roster from September 2, 8:06 AM, printed in full: Karuto, ToddLLM, ToddLLM 001,
+  ToddLLM 002, EndlessAnimations, 000s King, The Cure, Flower, an own OC, Simon.ps, Orus, Dark Yellow, Tunner.ps,
+  Gray.ps, all the Sprunkis, WD, Luigi Green. **That was a list of people he had been. Tonight it becomes the
+  claim that there was never anyone else**
+- panels: **fifty minutes ago he made that sentence literally true** — *"the only one who has an actual brain and
+  real intelegence"* reads like a boast until you check the ledger, and at 4:08 PM, in I-Tross, *"all the
+  character's IQ rushed down to 0… Pero LAI gets smarter."* He emptied every other mind in the game first and then
+  claimed to be the only one with a brain; and **he puts the real machines below himself on the way past** —
+  *"ChatGPT and AI are websites or programs"*, four days after he named Gemini, ChatGPT, OpenAI, tdeshane and
+  Claude in a single day and called ChatGPT *"my son"*
+- footer: September 11 gave **Neka** three jobs at once, an attack, an avatar and a middle name, and tonight it
+  takes over the other two words; September 2's *"I am All the Classics lore, since I am the only one who really
+  exists here"*, finished; **nothing was moved or deleted when he renamed the tab on September 17, and nothing is
+  tonight — the old tabs stay where they are**; and four lore messages in fifty minutes, a number, a name, a jar,
+  and then the name again, shorter
+- **intelegence** is his spelling and is kept as typed
+- capture scene `nekaomazen` added to `tools/capture_screenshot.py`, frozen at cyc 17076.8
+- beats 785, 786 and 787 re-captured against the current beat list
+- **correction to beat 787**: its closing line read *"three hours ago his largest attack was a number"* — I-Tross
+  was 4:08 PM and the jar was 4:51 PM, so it is **forty-three minutes**. Fixed in the game, the changelog and the
+  wiki before this beat shipped
+- runtime probe over the whole 22-second beat: 789 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 788 — Neka Omazen](screenshots/850-neka-omazen.png)
+
 ## 2026-09-23 — THE JAR IN THE DRAWER (BEAT 787)
 
 Based on Toby's 2026-09-23 lore, **4:51 PM**, **twenty-seven minutes and twelve seconds** after beat 786, so a new
@@ -46,8 +103,8 @@ offers at the end.
   yesterday
 - footer: **"drawer" has zero prior hits in the Classics logs** — the one piece of furniture he adds tonight is the
   one the game ends up inside; September 10's *"enter Classics, go into the labatory, you recieve a perminent +
-  enternal curse"*; three hours ago his largest attack was a number nobody could hold, and tonight he holds
-  everything and it is the size of a jar. **And the last line is not a threat. He closed the drawer and went to
+  enternal curse"*; forty-three minutes earlier his largest attack was a number nobody could hold, and tonight he
+  holds everything and it is the size of a jar. **And the last line is not a threat. He closed the drawer and went to
   work**
 - **labatory** is his spelling and is kept as typed, as it was on September 22
 - capture scene `jardrawer` added to `tools/capture_screenshot.py`, frozen at cyc 17054.8
