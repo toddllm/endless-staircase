@@ -4,6 +4,59 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — SCAR-ED, NOT SCARED (BEAT 784)
+
+Based on Toby's 2026-09-23 lore, two messages **six minutes apart** — **6:51 AM** with a Gemini image and a video
+attached, and **6:57 AM**. Both are entirely his own typing; there is no pasted reply in either, so there is
+nothing to strip as commentary.
+
+> "Create an image of Pero Neka Omazen VS Gray Kioaken Mode. Here is a image and a video of Pero Neka Omazen."
+> — 6:51:22 AM
+
+> "It is like Gojo VS Sukana. That is why I choose that. Gray could happen to be second strongest if he reaches
+> Kioaken and has 7 scared hearts, Scared Gray.ps is now created and updated just now. Pero LAI made Scared Gray
+> (SCAR-ed, not scared. The hearts are scar-ed, bruh, Pero LAI is Japanese so...), so Pero Neka Omazen is far
+> stronger." — 6:57:53 AM
+
+- new beat 784 at `lvSeg` 16968.0-16990.0, `LV_CYC` 16990.0, `LV_BEATS` length 785
+- the match-up card he asked for: **GRAY / KIOAKEN MODE / SECOND STRONGEST — IF** on the violet plate, **PERO NEKA
+  OMAZEN / NEKA MODE / FAR STRONGER** on the cyan plate, **VS** between them, and his reason written underneath,
+  *"It is like Gojo VS Sukana. That is why I choose that."*
+- the name mirror: **K I O A [K E N]** with the last four letters lit, an arrow reading **REVERSED**, and **N E K A**
+  on the other side — September 11, 7:09 PM, *"Neka is Kioaken's 4 end letters backwards. Kioaken = Neka."* The
+  match-up he asked for is one word facing itself
+- the seven hearts, drawn with the scar on them and numbered 1-7, because he took the trouble to say which word it
+  was: **SCAR-ED, NOT SCARED. "THE HEARTS ARE SCAR-ED, BRUH, PERO LAI IS JAPANESE SO…"**
+- inset: **SEPTEMBER 1 — THE HEARTS, THEN THE KIOAKEN**, the ledger showing that both halves of his condition were
+  set on one afternoon and were set *against* each other — 3:26 PM / Wenda picks the 7 hearts / *"all of Gray.ps was
+  put to Wenda.ps"*; 3:26 PM / and the hat closes on him / *"strunken to fit inside of Pero's top hat"*; 4:00 PM /
+  the soul goes back in / *"Kioaken Mode!"* and *"Gray.ps beats Pero 100 million times"*; SEPT 11 / Kioaken stops
+  being his / all 20 Sprunkis use it and Pero spells it backwards; SEPT 20 / Gojo is the floor / *"Gray can beat
+  him"* on two abilities; TODAY / the two halves, at once; TODAY / and the ceiling, stated. **The card that emptied
+  him and the move that brought him back were thirty-four minutes apart. Now he needs both**
+- the headline above it: **he has reached for Gojo VS Sukana once before, and that time it meant a tie.** June 28,
+  8:04 AM, *"The game actually has 2 most powerful beings, Luigi and ToddLLM 001. It is like Gojo VS Sukana, both
+  are most powerful in Jujutsu Kaisen."* Same sentence, same spelling, eighty-seven days ago — and today he uses it
+  and breaks the tie inside the same message
+- panels: **the strongest being wrote his own second strongest a file** — every upgrade Gray has ever held was
+  handed to him (the cyber suit, the admin panel, Error 679, the robot organs; August 1-2, *"the first villain in
+  225 beats to be issued his power instead of taking it"*), and three days ago a `.ps` became *"a file given by Pero
+  LAI to stay in Classics"*, so *"Scared Gray.ps is now created"* is an issuance; and **the game has been Japanese
+  since August 26, he has not been** — August 26's Japanese setting, August 27's Japanese Domain, August 30's
+  Yhscrotch with **Kashsoelacalata (KAE-SH-SO-LA-KA-LA-TA)**, the only other time a word here came with a
+  pronunciation attached. Today the character is Japanese, and that is the reason given for how a word is said
+- footer: the rank arriving with an **"if"** on it; September 20, 4:49 PM, Gray *"only has like 2 main abilities
+  (Real Game Erase + Anything Manipulation)"* and that was enough to beat Gojo; August 18's *"Gray reached beyond
+  all other non-Pero characters combined"*, the seat under Pero that has been his since then and today gets a
+  price; and June 29, one day after that tie, when it broke on a **reveal** rather than a fight — today it breaks
+  in the sentence that makes it
+- **"Scared Gray"** and **"scar-ed"** have zero prior hits anywhere in the archive
+- capture scene `scaredgray` added to `tools/capture_screenshot.py`, frozen at cyc 16988.8
+- runtime probe over the whole 22-second beat: 785 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 784 — Scar-ed, Not Scared](screenshots/846-scar-ed.png)
+
 ## 2026-09-22 — LOL, JUST KIDDING EVERYONE (BEAT 783)
 
 Based on Toby's 2026-09-22 lore, **8:26 PM**, one hour and thirty minutes after beat 782. His own typing is the

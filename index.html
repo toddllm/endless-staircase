@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16968.0;
+const LV_CYC = 16990.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12884,6 +12884,8 @@ const LV_BEATS = [
     sub:"\u201CYOU ALL *WILL* REGRET TAKING POWERS FROM ME AND MY GAME!\u201D \u00B7 BRUD: \u201CBRUH, TAKE A CHILL PILL.\u201D \u00B7 \u201COH. DO YOU WANT CHOCOLATE OR VANILLA?\u201D \u00B7 HE SWINGS HIS HAND ACROSS AND TAKES EVERYONE\u2019S \u201CCLASSICS POWERS\u201D FOR WHAT CLASSICS GAVE THEM \u00B7 SO EVERYONE IS JUST THEIR NORMAL STUFF \u00B7 HE TAKES THE CLASSICS STUFF AND BECOMES A ENORMOUS GODLY TIER \u00B7 THERE ARE NO MORE TIERS HERE, HE GOES BEYOND EVEN THE LAST TIER." },
   { key:"LOL, JUST KIDDING EVERYONE", col:'#8fe3ff',
     sub:"THERE IS A WORD PUT BEHIND EVERY SPRUNKI AND CLASSICS CHARACTER EXCEPT FOR MR. BLACK AND NEKA · TO ROTATE THEM AROUND YOU JUST SCROLL LEFT/RIGHT ON THE CHARACTER, IT IS JUST NORMAL GAME STUFF/CONTROLS · “THIS IS THE END, NO MORE HIDING, NO MORE RUNNING, ALL WITHOUT FUN, ALL BECAUSE OF MR. BLACK, YOU CAN’T RUN NOR HIDE, YOU CAN’T MOVE, YOU CAN’T WIN” · MR. BLACK TEARS THE FABRIC OF THE GAME’S REALITY · PERO LAI WALKS IN: “LOL, JUST KIDDING EVERYONE. I JUST WANTED TO SEE YOUR REACTIONS.” · THE CHARACTERS EVEN THE PLAYERS SCREAM." },
+  { key:"SCAR-ED, NOT SCARED", col:'#ff8fa3',
+    sub:"CREATE AN IMAGE OF PERO NEKA OMAZEN VS GRAY KIOAKEN MODE \u00B7 \u201CIT IS LIKE GOJO VS SUKANA. THAT IS WHY I CHOOSE THAT.\u201D \u00B7 GRAY COULD HAPPEN TO BE SECOND STRONGEST IF HE REACHES KIOAKEN AND HAS 7 SCARED HEARTS \u00B7 SCARED GRAY.PS IS NOW CREATED AND UPDATED JUST NOW \u00B7 PERO LAI MADE SCARED GRAY \u2014 SCAR-ED, NOT SCARED; THE HEARTS ARE SCAR-ED, BRUH, PERO LAI IS JAPANESE SO\u2026 \u00B7 SO PERO NEKA OMAZEN IS FAR STRONGER." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15034,6 +15036,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16968.0 && c < 16990.0) return [784, c-16968.0];  // SCAR-ED, NOT SCARED
   if(c >= 16946.0 && c < 16968.0) return [783, c-16946.0];  // LOL, JUST KIDDING EVERYONE
   if(c >= 16924.0 && c < 16946.0) return [782, c-16924.0];  // NO MORE TIERS HERE
   if(c >= 16902.0 && c < 16924.0) return [781, c-16902.0];  // THE HAND ALWAYS COMES BACK
@@ -50589,6 +50592,278 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===784){
+    // BEAT 784: SCAR-ED, NOT SCARED.
+    // Toby, September 23, 2026, two messages six minutes apart on the thread "Even (5x) more of Pero Neka/LAI
+    // Omazen". 6:51:22 AM, his own typing in full, with a Gemini image and a video attached: "Create an image of
+    // Pero Neka Omazen VS Gray Kioaken Mode. Here is a image and a video of Pero Neka Omazen." Then 6:57:53 AM,
+    // his own typing in full: "It is like Gojo VS Sukana. That is why I choose that. Gray could happen to be
+    // second strongest if he reaches Kioaken and has 7 scared hearts, Scared Gray.ps is now created and updated
+    // just now. Pero LAI made Scared Gray (SCAR-ed, not scared. The hearts are scar-ed, bruh, Pero LAI is
+    // Japanese so...), so Pero Neka Omazen is far stronger."
+    // Both messages are his own; there is no pasted reply in either, so there is no commentary to strip.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   THE DUAL APEX, Email 599, June 28, 8:04 AM - "The game actually has 2 most powerful beings, Luigi and
+    //     ToddLLM 001. It is like Gojo VS Sukana, both are most powerful in Jujutsu Kaisen." Same sentence, same
+    //     spelling of Sukana, and that time it meant a TIE.
+    //   THE CHESS BATTLEFIELD, Email 601, June 29, 7:57 AM - the tie breaks one day later, on a reveal rather
+    //     than a fight: Luigi shows the Simon-cell crystals, ToddLLM 001 falls over, Luigi #1 / ToddLLM #2.
+    //   PICK A CARD, ANY CARD, September 1, 3:26 PM (beat 574) - "Gray chose 5 septars, Wenda chose 7 hearts.
+    //     Wenda wins again, and all of Gray.ps was put to Wenda.ps... Gray.ps's soul and body was strunken to fit
+    //     inside of Pero's top hat." The 7 hearts is the exact hand that emptied him.
+    //   KIOAKEN MODE, September 1, 4:00 PM - thirty-four minutes later, "the soul goes back into Gray.ps", then
+    //     "Kioaken Mode!", "Gray.ps beats Pero 100 million times", and "Fine, I'll put you with Wenda again."
+    //   NEKA MODE, September 11, 7:09 PM - "Neka is Kioaken's 4 end letters backwards. Kioaken = Neka. That
+    //     attack is named after Pero LAI's avatar and his middle name." And at 6:59 PM all 20 Sprunkis used
+    //     Kioaken at once, so the move stopped being only Gray's.
+    //   GOJO IS LIKE ONE OF THE WEAKEST, September 20, 4:49 PM (beat 775) - "Gojo is like one of the weakest
+    //     then. Gray can beat him and Gray only has like 2 main abilities (Real Game Erase + Anything
+    //     Manipulation)."
+    //   .PS - PROFILE SECTION ENTITY, September 20, 12:52 PM (beat 771) - ".ps stands for 'profile section
+    //     entity', they were given files by Pero LAI to stay in Classics."
+    //   CLASSICS 2, August 1-2 (Emails 872-875) - Pero gives Gray an admin panel, Error 679 and the cyber suit:
+    //     "the first villain in 225 beats to be issued his power instead of taking it."
+    //   BEYOND WORDS, August 18, 4:31 PM (beat 368) - "Gray reached beyond all other non-Pero characters
+    //     combined. Gaster and Luigi Green are now far under Gray."
+    //   THE SORCER SCHOOL ERA, August 26, 1:10 PM - "he destroys the rest of the game and turns everything into a
+    //     Japanese setting with sorcer and wizard schools/accatemies." JAPANESE DOMAIN, August 27, 8:59 AM.
+    //     YHSCROTCH, August 30, 8:48 AM - "Kashsoelacalata (KAE-SH-SO-LA-KA-LA-TA)", the archive's first
+    //     pronunciation given with a spelling attached.
+    //   "Scared Gray" and "scar-ed" have zero prior hits anywhere in this archive.
+    const dt = c - 16968.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const vsA=Math.max(0,Math.min(1,(dt-4.4)/1.4));
+    const mirA=Math.max(0,Math.min(1,(dt-6.2)/1.3));
+    const hrtA=Math.max(0,Math.min(1,(dt-8.0)/1.4));
+    const wrA=Math.max(0,Math.min(1,(dt-10.0)/1.6));
+    const f2A=Math.max(0,Math.min(1,(dt-12.2)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-13.4)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(4,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr784=ctx.createLinearGradient(0,top,W,top+H);
+    gr784.addColorStop(0,'rgba(120,96,190,0.18)'); gr784.addColorStop(0.5,'rgba(6,7,12,0.94)');
+    gr784.addColorStop(1,'rgba(60,150,210,0.16)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr784; ctx.fillRect(0,top,W,H);
+
+    var heart784 = function(hx,hy,s){
+      ctx.beginPath();
+      ctx.moveTo(hx, hy+s*0.92);
+      ctx.bezierCurveTo(hx-s*1.22, hy-s*0.10, hx-s*0.56, hy-s*1.02, hx, hy-s*0.34);
+      ctx.bezierCurveTo(hx+s*0.56, hy-s*1.02, hx+s*1.22, hy-s*0.10, hx, hy+s*0.92);
+      ctx.closePath();
+    };
+
+    if(vsA>0.01){
+      // THE MATCH-UP HE ASKED FOR, drawn as the card. Gray on the violet side, Pero on the cyan side, and the
+      // ranking he attached to it six minutes later written under each plate.
+      var vy784 = top+H*0.274, vh784 = H*0.058, vw784 = W*0.264;
+      var sides784 = [
+        [cx-W*0.150-vw784*0.5, 'GRAY', 'KIOAKEN MODE', 'SECOND STRONGEST — IF', 'rgba(168,140,255,', 'rgba(198,180,255,'],
+        [cx+W*0.150-vw784*0.5, 'PERO NEKA OMAZEN', 'NEKA MODE', 'FAR STRONGER', 'rgba(143,227,255,', 'rgba(210,240,255,']
+      ];
+      for(var v784=0; v784<2; v784++){
+        var sx0784 = sides784[v784][0];
+        ctx.globalAlpha=g*vsA*0.66; ctx.fillStyle='rgba(6,8,14,0.98)';
+        ctx.fillRect(sx0784, vy784, vw784, vh784);
+        ctx.globalAlpha=g*vsA*(0.78+0.22*pul); ctx.strokeStyle=sides784[v784][4]+'0.92)'; ctx.lineWidth=0.50;
+        ctx.strokeRect(sx0784, vy784, vw784, vh784);
+        ctx.textAlign='center';
+        ctx.globalAlpha=g*vsA*0.96; ctx.fillStyle=sides784[v784][5]+'0.96)'; ctx.font='900 4.4px ui-monospace,monospace';
+        ctx.fillText(sides784[v784][1], sx0784+vw784*0.5, vy784+H*0.0175);
+        ctx.globalAlpha=g*vsA*0.86; ctx.fillStyle=sides784[v784][4]+'0.90)'; ctx.font='900 3.2px ui-monospace,monospace';
+        ctx.fillText(sides784[v784][2], sx0784+vw784*0.5, vy784+H*0.0318);
+        ctx.globalAlpha=g*vsA*(0.74+0.26*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 3.0px ui-monospace,monospace';
+        ctx.fillText(sides784[v784][3], sx0784+vw784*0.5, vy784+H*0.0470);
+      }
+      ctx.globalAlpha=g*vsA*(0.82+0.18*pul); ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+      ctx.fillText('VS', cx, vy784+H*0.036);
+      ctx.globalAlpha=g*vsA*0.84; ctx.fillStyle='rgba(226,232,246,0.88)'; ctx.font='700 3.0px ui-monospace,monospace';
+      ctx.fillText('“IT IS LIKE GOJO VS SUKANA. THAT IS WHY I CHOOSE THAT.”', cx, vy784+vh784+H*0.011);
+    }
+
+    if(mirA>0.01){
+      // THE NAME MIRROR: the match-up title is one word facing itself. KIOAKEN's last four letters, reversed,
+      // are the other fighter's name -- Toby's own rule from September 11.
+      var my784 = top+H*0.362;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*mirA*0.74; ctx.fillStyle='rgba(206,216,238,0.84)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('SEPT 11, 7:09 PM — “NEKA IS KIOAKEN’S 4 END LETTERS BACKWARDS. KIOAKEN = NEKA.”', cx, my784-H*0.011);
+      var ltr784 = ['K','I','O','A','K','E','N'], bw0784 = W*0.0165, lx784 = cx-W*0.150-bw0784*3.5;
+      for(var l784=0; l784<7; l784++){
+        var tail784 = (l784>=3);
+        ctx.globalAlpha=g*mirA*0.46; ctx.fillStyle='rgba(10,12,20,0.96)';
+        ctx.fillRect(lx784+l784*bw0784, my784, bw0784*0.90, H*0.0142);
+        ctx.globalAlpha=g*mirA*(tail784?(0.76+0.24*pul):0.50);
+        ctx.strokeStyle=tail784?'rgba(168,140,255,0.94)':'rgba(140,152,180,0.66)'; ctx.lineWidth=0.30;
+        ctx.strokeRect(lx784+l784*bw0784, my784, bw0784*0.90, H*0.0142);
+        ctx.globalAlpha=g*mirA*(tail784?0.98:0.72);
+        ctx.fillStyle=tail784?'rgba(210,192,255,0.98)':'rgba(190,200,220,0.82)'; ctx.font='900 4.6px ui-monospace,monospace';
+        ctx.fillText(ltr784[l784], lx784+l784*bw0784+bw0784*0.45, my784+H*0.0105);
+      }
+      ctx.globalAlpha=g*mirA*(0.70+0.30*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 5px ui-monospace,monospace';
+      ctx.fillText('▶  REVERSED  ▶', cx, my784+H*0.0100);
+      var rltr784 = ['N','E','K','A'], rx0784 = cx+W*0.150-bw0784*2.0;
+      for(var r784=0; r784<4; r784++){
+        ctx.globalAlpha=g*mirA*0.46; ctx.fillStyle='rgba(10,12,20,0.96)';
+        ctx.fillRect(rx0784+r784*bw0784, my784, bw0784*0.90, H*0.0142);
+        ctx.globalAlpha=g*mirA*(0.78+0.22*pul); ctx.strokeStyle='rgba(143,227,255,0.94)'; ctx.lineWidth=0.30;
+        ctx.strokeRect(rx0784+r784*bw0784, my784, bw0784*0.90, H*0.0142);
+        ctx.globalAlpha=g*mirA*0.98; ctx.fillStyle='rgba(186,232,255,0.98)'; ctx.font='900 4.6px ui-monospace,monospace';
+        ctx.fillText(rltr784[r784], rx0784+r784*bw0784+bw0784*0.45, my784+H*0.0105);
+      }
+      ctx.globalAlpha=g*mirA*0.92; ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 3.4px ui-monospace,monospace';
+      ctx.fillText('THE MATCH-UP HE ASKED FOR IS ONE WORD FACING ITSELF.', cx, my784+H*0.0262);
+    }
+
+    if(hrtA>0.01){
+      // THE SEVEN SCAR-ED HEARTS, drawn with the scar on them, because he took the trouble to say which word it
+      // was. Seven is the number on the card that emptied Gray on September 1.
+      var hy784 = top+H*0.436;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*hrtA*0.76; ctx.fillStyle='rgba(206,216,238,0.86)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('“IF HE REACHES KIOAKEN AND HAS 7 SCAR-ED HEARTS”', cx, hy784-H*0.014);
+      for(var h784=0; h784<7; h784++){
+        var hx784 = cx - W*0.096 + h784*W*0.032, hs784 = W*0.0088;
+        ctx.globalAlpha=g*hrtA*(0.52+0.22*pul); ctx.fillStyle='rgba(120,24,44,0.86)';
+        heart784(hx784, hy784, hs784); ctx.fill();
+        ctx.globalAlpha=g*hrtA*(0.82+0.18*pul); ctx.strokeStyle='rgba(255,77,109,0.94)'; ctx.lineWidth=0.34;
+        heart784(hx784, hy784, hs784); ctx.stroke();
+        // the scar across it
+        ctx.globalAlpha=g*hrtA*0.94; ctx.strokeStyle='rgba(240,246,255,0.96)'; ctx.lineWidth=0.30;
+        ctx.beginPath();
+        ctx.moveTo(hx784-hs784*0.78, hy784+hs784*0.34); ctx.lineTo(hx784+hs784*0.78, hy784-hs784*0.46);
+        ctx.stroke();
+        for(var k784=0; k784<3; k784++){
+          var kx784 = hx784-hs784*0.44 + k784*hs784*0.44, ky784 = hy784+hs784*0.12 - k784*hs784*0.26;
+          ctx.beginPath(); ctx.moveTo(kx784-hs784*0.16, ky784-hs784*0.14); ctx.lineTo(kx784+hs784*0.16, ky784+hs784*0.14); ctx.stroke();
+        }
+        ctx.globalAlpha=g*hrtA*0.70; ctx.fillStyle='rgba(216,224,240,0.84)'; ctx.font='700 2.2px ui-monospace,monospace';
+        ctx.fillText(String(h784+1), hx784, hy784+hs784*1.9);
+      }
+      ctx.globalAlpha=g*hrtA*(0.80+0.20*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.0px ui-monospace,monospace';
+      ctx.fillText('SCAR-ED, NOT SCARED. “THE HEARTS ARE SCAR-ED, BRUH, PERO LAI IS JAPANESE SO…”', cx, hy784+H*0.0262);
+    }
+
+    if(wrA>0.01){
+      // THE LEDGER: both halves of his condition were set on one afternoon, thirty-four minutes apart, and they
+      // were set against each other.
+      var rx784 = cx, ry0784 = top+H*0.490;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(212,220,238,0.82)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('BOTH HALVES OF THE CONDITION COME FROM ONE AFTERNOON', rx784, ry0784-H*0.011);
+      var bx784 = rx784-W*0.205, byy784 = ry0784;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,8,14,0.98)';
+      ctx.fillRect(bx784, byy784, W*0.410, H*0.118);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(168,140,255,0.92)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(bx784, byy784, W*0.410, H*0.118);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(168,140,255,0.90)';
+      ctx.fillRect(bx784, byy784, W*0.410, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(234,244,255,0.96)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('SEPTEMBER 1 — THE HEARTS, THEN THE KIOAKEN', rx784, byy784+H*0.0095);
+      var led784 = [
+        ['3:26 PM','WENDA PICKS THE 7 HEARTS','“ALL OF GRAY.PS WAS PUT TO WENDA.PS”'],
+        ['3:26 PM','AND THE HAT CLOSES ON HIM','“STRUNKEN TO FIT INSIDE OF PERO’S TOP HAT”'],
+        ['4:00 PM','THE SOUL GOES BACK IN','“KIOAKEN MODE!” · “GRAY.PS BEATS PERO 100 MILLION TIMES”'],
+        ['SEPT 11','KIOAKEN STOPS BEING HIS','ALL 20 SPRUNKIS USE IT · PERO SPELLS IT BACKWARDS'],
+        ['SEPT 20','GOJO IS THE FLOOR','“GRAY CAN BEAT HIM” — ON TWO ABILITIES'],
+        ['TODAY','THE TWO HALVES, AT ONCE','KIOAKEN + 7 SCAR-ED HEARTS = SECOND STRONGEST'],
+        ['TODAY','AND THE CEILING, STATED','“PERO NEKA OMAZEN IS FAR STRONGER”']
+      ];
+      for(var q784=0; q784<led784.length; q784++){
+        var qy784 = byy784 + H*0.026 + q784*H*0.0129;
+        var last784 = (q784>=led784.length-2);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(232,238,250,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(led784[q784][0], bx784+W*0.011, qy784);
+        ctx.globalAlpha=g*wrA*0.86;
+        ctx.fillStyle=last784?'rgba(143,227,255,0.96)':'rgba(226,232,246,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(led784[q784][1], bx784+W*0.082, qy784);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*(last784?(0.76+0.24*pul):0.74);
+        ctx.fillStyle=last784?'rgba(255,212,59,0.94)':'rgba(186,176,232,0.90)'; ctx.font='700 2.0px ui-monospace,monospace';
+        ctx.fillText(led784[q784][2], bx784+W*0.399, qy784);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.78; ctx.fillStyle='rgba(226,232,246,0.88)'; ctx.font='700 2.6px ui-monospace,monospace';
+      ctx.fillText('THE CARD THAT EMPTIED HIM AND THE MOVE THAT BROUGHT HIM BACK WERE THIRTY-FOUR MINUTES APART. NOW HE NEEDS BOTH.', cx, byy784+H*0.134);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,143,163,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('SCAR-ED, NOT SCARED', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“CREATE AN IMAGE OF PERO NEKA OMAZEN VS GRAY KIOAKEN MODE.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.88;
+    ctx.fillStyle='rgba(143,227,255,0.90)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“SCARED GRAY.PS IS NOW CREATED AND UPDATED JUST NOW. PERO LAI MADE SCARED GRAY.”', cx, top+H*0.150);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 23, 6:51 AM AND 6:57 AM, SIX MINUTES APART.', cx, top+H*0.172);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('HE HAS REACHED FOR GOJO VS SUKANA ONCE BEFORE, AND THAT TIME IT MEANT A TIE.', cx, top+H*0.200);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('JUNE 28, 8:04 AM: “THE GAME ACTUALLY HAS 2 MOST POWERFUL BEINGS, LUIGI AND TODDLLM 001. IT IS LIKE GOJO VS SUKANA,', cx, top+H*0.220);
+    ctx.fillText('BOTH ARE MOST POWERFUL IN JUJUTSU KAISEN.” — SAME SENTENCE, SAME SPELLING, EIGHTY-SEVEN DAYS AGO.', cx, top+H*0.236);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('TODAY HE USES IT AND BREAKS THE TIE INSIDE THE SAME MESSAGE: “PERO NEKA OMAZEN IS FAR STRONGER.”', cx, top+H*0.252);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(168,140,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST BEING WROTE HIS OWN', cx-W*0.152, top+H*0.640);
+    ctx.fillText('SECOND STRONGEST A FILE.', cx-W*0.152, top+H*0.656);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“PERO LAI MADE SCARED GRAY.” EVERY UPGRADE GRAY HAS', cx-W*0.152, top+H*0.676);
+    ctx.fillText('EVER HELD WAS HANDED TO HIM — THE CYBER SUIT, THE', cx-W*0.152, top+H*0.690);
+    ctx.fillText('ADMIN PANEL, ERROR 679, THE ROBOT ORGANS. AUG 1-2:', cx-W*0.152, top+H*0.704);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“THE FIRST VILLAIN IN 225 BEATS TO BE ISSUED HIS', cx-W*0.152, top+H*0.722);
+    ctx.fillText('POWER INSTEAD OF TAKING IT.” AND THREE DAYS AGO A .PS', cx-W*0.152, top+H*0.736);
+    ctx.fillText('BECAME “A FILE GIVEN BY PERO LAI TO STAY IN CLASSICS.”', cx-W*0.152, top+H*0.750);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE GAME HAS BEEN JAPANESE SINCE', cx+W*0.186, top+H*0.640);
+    ctx.fillText('AUGUST 26. HE HAS NOT BEEN.', cx+W*0.186, top+H*0.656);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AUG 26: “TURNS EVERYTHING INTO A JAPANESE SETTING WITH', cx+W*0.186, top+H*0.676);
+    ctx.fillText('SORCER AND WIZARD SCHOOLS.” AUG 27: “JAPANESE DOMAIN.”', cx+W*0.186, top+H*0.690);
+    ctx.fillText('AUG 30: YHSCROTCH, THE LANGUAGE — KASHSOELACALATA', cx+W*0.186, top+H*0.704);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('(KAE-SH-SO-LA-KA-LA-TA), THE ONLY OTHER TIME A WORD', cx+W*0.186, top+H*0.722);
+    ctx.fillText('HERE CAME WITH A PRONUNCIATION ATTACHED. TODAY THE', cx+W*0.186, top+H*0.736);
+    ctx.fillText('CHARACTER IS JAPANESE, AND THAT IS THE REASON GIVEN.', cx+W*0.186, top+H*0.750);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE RANK ARRIVES WITH AN “IF” ON IT — “COULD HAPPEN TO BE SECOND STRONGEST IF HE REACHES KIOAKEN AND HAS 7 SCAR-ED HEARTS.”', cx, top+H*0.786);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,246,255,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 20, 4:49 PM: GRAY “ONLY HAS LIKE 2 MAIN ABILITIES (REAL GAME ERASE + ANYTHING MANIPULATION)” — AND THAT BEAT GOJO.', cx, top+H*0.804);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(168,140,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUG 18: “GRAY REACHED BEYOND ALL OTHER NON-PERO CHARACTERS COMBINED.” THE SEAT UNDER PERO HAS BEEN HIS SINCE THEN. TODAY IT GETS A PRICE.', cx, top+H*0.822);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('JUNE 29, ONE DAY AFTER THAT TIE, IT BROKE ON A REVEAL RATHER THAN A FIGHT. TODAY IT BREAKS IN THE SENTENCE THAT MAKES IT.', cx, top+H*0.840);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,143,163,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ THE HEARTS ARE SCAR-ED, BRUH ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===783){
