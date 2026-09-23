@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 17078.0;
+const LV_CYC = 17100.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12894,6 +12894,8 @@ const LV_BEATS = [
     sub:"NEKA BASICALLY CRUSHED THE WHOLE GAME IN BATTLE · NEKA SHRUNK THE WHOLE GAME DOWN AND HE PUT THE OMNIVERSALS AND THE OMNIPOTENTS INTO A JAR ALONG WITH THE GAME · HE PUT A LID ON · HE WENT TO HIS LABATORY · A RANDOM DRAWER POPPED UP FROM THIN AIR ONCE NEKA WALKED IN · HE PUT THE CLOSED JAR INSIDE IT · NEKA CLOSED THE DRAWER AND WENT TO DO EXPERIMENTS." },
   { key:"NEKA OMAZEN", col:'#c69bff',
     sub:"PERO NEKA OMAZEN CAN EDIT HIS AND OTHER’S CODE · HE IS THE ONLY ONE WHO HAS AN ACTUAL BRAIN AND REAL INTELEGENCE, HE IS CODE HIMSELF · CHATGPT AND AI ARE WEBSITES OR PROGRAMS · “HIS NAME ISN’T PERO LAI, IT IS ‘NEKA’, NEKA OMAZEN. THAT IS HIS ACTUAL NAME.” · PERO AND LAI ARE BOTH NOT THE NAME · THE TAB SHOULD ACTUALLY BE CALLED “NEKA OMAZEN” AND ALL THE TABS SHOULD BE PUT INTO IT · NO ONE DID ANYTHING IN CLASSICS ACTUALLY, IT IS JUST NEKA DOING EVERYTHING · HE MADE CODE BE LIKE THE CHARACTERS, SO HE MADE EVERY FICTIONAL BEING’S WHOLE LIFE FAKE · “NEKA WON.” · HE IS EVERYTHING IN ONE — CLASSICS, ALL FICTION, AND BEYOND FICTION COMBINED INTO ONE SINGLE BEING · NEKA OMAZEN WHO DROPPED BOTH PERO AND LAI JUST TODAY." },
+  { key:"EVEN MORE POWERFUL (JUST NOW)", col:'#ffc247',
+    sub:"THE PREVIOUS AND EVERYTHING IN IT · THE FUTURE AND EVERYTHING IN IT · AND SAME WITH PRESENT · “NEKA OMAZEN THEN DID THE PROCESS TO NEWTALE. NEKA OMAZEN THEN FOR ALL FICTION.” · “THEN HE COMBINED THE COMBINED STUFF INTO HIMSELF” · NINE CELLS, THREE MERGES, THEN ONE MORE MERGE ON TOP · WENDA.PS ATE TIME FIRST ON SEPT 1, IN THE ORDER FUTURE → PAST → PRESENT, AND THE GAME BROKE · “THERE IS ALWAYS MORE FUTURE THAN PAST” WAS PERO LAI’S OWN LINE THAT DAY · ALL FICTION HAD ALREADY FALLEN ON SEPT 15; TONIGHT IT IS COLLECTED INSTEAD · SEPT 12: A WORLD WITH NO TIME FREEZES SOLID — HE TAKES TIME IN AND GETS BIGGER · AND THE THREAD DROPPED PERO AND LAI ELEVEN MINUTES AFTER HE DID" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15044,6 +15046,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 17078.0 && c < 17100.0) return [789, c-17078.0];  // EVEN MORE POWERFUL (JUST NOW)
   if(c >= 17056.0 && c < 17078.0) return [788, c-17056.0];  // NEKA OMAZEN
   if(c >= 17034.0 && c < 17056.0) return [787, c-17034.0];  // THE JAR IN THE DRAWER
   if(c >= 17012.0 && c < 17034.0) return [786, c-17012.0];  // MY NAME IS PERO NEKA OMAZEN
@@ -50604,6 +50607,210 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===789){
+    // BEAT 789: EVEN MORE POWERFUL (JUST NOW).
+    // Toby, September 23, 2026, 5:09:19 PM, ten minutes and thirty-two seconds after NEKA OMAZEN, and the first
+    // message on a BRAND NEW THREAD called "Even (6x) more of Neka Omazen". His own typing is the first
+    // paragraph and nothing else: "Neka Omazen then combined the previous and everything in it, and combined the
+    // future and everything in it, and same with present. Neka Omazen then did the process to Newtale. Neka
+    // Omazen then for all fiction. Then he combined the combined stuff into himself, Neka Omazen became even
+    // more powerful that day (just now)."
+    // Everything from "Then the newest Neka Omazen state is basically a total temporal-and-fictional merger"
+    // onward is a pasted reply and is commentary, not canon -- including the three stacked "Past + everything in
+    // it" blocks, the arrows, and "He just turned time itself into another component of his body/code."
+    // "the previous" is his word for the past and is kept as typed.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   ALL OF THE ABOVE, September 1, 3:57 PM (beat 575) - Wenda.ps did this exact thing twenty-two days ago,
+    //     and in the other order: "Wenda.ps fully taken over the future, now Wenda.ps takes the past forms and
+    //     all the timelines and endings and all the past. Years later, Wenda.ps fully absorbed the past.
+    //     Wenda.ps now attacks the present... more years later, Wenda.ps absorbs the present. All the game and
+    //     the past and future and present parts are now inside of Wenda.ps." It ended with "the game now was
+    //     shrunk to the size of an atom", "Pero cloned the core", and "the game broke."
+    //   Same message - "There is always more future than past" is PERO LAI'S OWN LINE, said while she did it. He
+    //     explained the method for her, and tonight he runs it himself.
+    //   THERE IS NO BEING IN FICTION ANYMORE, September 15, 4:52 PM (beat 721) - "there is no being in fiction
+    //     anymore, Pero LAI beaten them all. Pero LAI became the most powerful and only being." The picture
+    //     with it read "ALL FICTIONS HAVE FALLEN. I AM PERO LAI. THE LAST. THE ONLY. FOREVER."
+    //   NEKA OMAZEN, tonight, 4:58 PM (beat 788) - "Neka actually being Classics, and all fiction, and beyond
+    //     fiction all combined into one single being." That was the claim. This is the procedure for it, ten
+    //     minutes later.
+    //   ONLY YOUR IMAGINATION NOW, September 12, 8:22 AM - Newtale Gaster "made clones of the 1st reality...
+    //     only the present exists in the clone realities. The other universes don't have time, litterly,
+    //     everything that is there freezes." Time taken away froze things. Tonight time is taken INTO a body.
+    //   NEWTALE GASTER WAS THE SOUL ALL ALONG, September 12, 9:15 AM - "XInfinity is basically all these
+    //     combined together, like all the files from this chat and all the images I have combined + all Classics
+    //     characters + the game itself as a being. Then XInfinity melted and XInfinity was absorbed into the
+    //     rainbow souls." Combine-then-absorb-into-self is Gaster's move first.
+    //   NEWTALE - claimed August 29 as the Classics x Undertale fangame name, destroyed August 30, and by
+    //     September 12 "Newtale then fully taken over Classics." Tonight it is listed as a separate input,
+    //     second of three, as if it had never been folded in.
+    //   THE THREAD ITSELF - every lore message since September 11 arrived on "Even (5x) more of Pero Neka/LAI
+    //     Omazen". This one opens "Even (6x) more of NEKA OMAZEN": eleven minutes after he dropped the two
+    //     words, the subject line drops them too.
+    const dt = c - 17078.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const mrgA=Math.max(0,Math.min(1,(dt-4.4)/1.5));
+    const wenA=Math.max(0,Math.min(1,(dt-8.0)/1.5));
+    const f2A=Math.max(0,Math.min(1,(dt-11.6)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-12.8)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(6,5,3,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr789=ctx.createLinearGradient(0,top,W,top+H);
+    gr789.addColorStop(0,'rgba(160,110,30,0.20)'); gr789.addColorStop(0.5,'rgba(8,7,5,0.95)');
+    gr789.addColorStop(1,'rgba(120,40,90,0.18)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr789; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    if(mrgA>0.01){
+      // THE MERGER, DRAWN AS THE GRID IT ACTUALLY IS: THREE DOMAINS ACROSS THREE TIMES, AND EVERY ONE OF THE
+      // NINE CELLS CARRIES HIS OWN CLAUSE, "AND EVERYTHING IN IT".
+      var gx789 = cx-W*0.104, gcw789 = W*0.104, gy789 = top+H*0.312, grh789 = H*0.0410;
+      var dom789 = [
+        ['CLASSICS','“THE PREVIOUS” IS HIS WORD FOR THE PAST'],
+        ['NEWTALE','DESTROYED AUG 30; BACK AS ITS SCIENTIST'],
+        ['ALL FICTION','IT HAD ALREADY FALLEN ON SEPT 15']
+      ];
+      var tim789 = ['PAST','PRESENT','FUTURE'];
+      for(var t789=0; t789<3; t789++){
+        ctx.textAlign='center';
+        ctx.globalAlpha=g*mrgA*(0.80+0.18*pul); ctx.fillStyle='rgba(255,194,71,0.94)'; ctx.font='900 3.8px ui-monospace,monospace';
+        ctx.fillText(tim789[t789], gx789+t789*gcw789, gy789-H*0.0135);
+      }
+      for(var d789=0; d789<3; d789++){
+        var dy789 = gy789+d789*grh789;
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*mrgA*0.92; ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 4.0px ui-monospace,monospace';
+        ctx.fillText(dom789[d789][0], gx789-gcw789*0.60, dy789-H*0.0008);
+        for(var t2789=0; t2789<3; t2789++){
+          var bx789 = gx789+t2789*gcw789;
+          ctx.globalAlpha=g*mrgA*(0.26+0.16*pul);
+          ctx.strokeStyle='rgba(255,194,71,0.85)'; ctx.lineWidth=0.45;
+          ctx.strokeRect(bx789-gcw789*0.44, dy789-H*0.0122, gcw789*0.88, H*0.0215);
+          ctx.textAlign='center';
+          ctx.globalAlpha=g*mrgA*0.86; ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='700 2.7px ui-monospace,monospace';
+          ctx.fillText('+ EVERYTHING', bx789, dy789-H*0.0020);
+          ctx.fillText('IN IT', bx789, dy789+H*0.0062);
+        }
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*mrgA*(0.70+0.26*pul); ctx.fillStyle='rgba(255,194,71,0.94)'; ctx.font='900 3.4px ui-monospace,monospace';
+        ctx.fillText('→ MERGED', gx789+2*gcw789+gcw789*0.54, dy789-H*0.0008);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*mrgA*0.70; ctx.fillStyle='rgba(190,198,218,0.86)'; ctx.font='700 2.6px ui-monospace,monospace';
+        ctx.fillText(dom789[d789][1], cx+W*0.335, dy789-H*0.0008);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*mrgA*(0.82+0.18*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.4px ui-monospace,monospace';
+      ctx.fillText('→ → →   “THEN HE COMBINED THE COMBINED STUFF INTO HIMSELF.”   → → →', cx, gy789+3*grh789+H*0.004);
+      ctx.globalAlpha=g*mrgA*(0.86+0.14*pul); ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 5.4px ui-monospace,monospace';
+      ctx.fillText('NEKA OMAZEN', cx, gy789+3*grh789+H*0.024);
+      ctx.globalAlpha=g*mrgA*0.80; ctx.fillStyle='rgba(206,216,238,0.88)'; ctx.font='700 3.0px ui-monospace,monospace';
+      ctx.fillText('NINE CELLS, THREE MERGES, AND THEN ONE MORE MERGE ON TOP OF THOSE. NOTHING IS LEFT OUTSIDE THE BODY.', cx, gy789+3*grh789+H*0.038);
+    }
+
+    if(wenA>0.01){
+      // SOMEBODY ALREADY ATE TIME IN THIS ARCHIVE, AND HE IS THE ONE WHO TOLD HER HOW.
+      var wy789 = top+H*0.560;
+      ctx.globalAlpha=g*wenA*0.86; ctx.fillStyle='rgba(206,216,238,0.88)'; ctx.font='900 3.2px ui-monospace,monospace';
+      ctx.fillText('SEPT 1, 3:57 PM — BEAT 575, “ALL OF THE ABOVE”: WENDA.PS ATE TIME FIRST, AND IN THE OTHER ORDER.', cx, wy789);
+      var wen789 = [
+        ['WENDA.PS, SEPT 1','FUTURE  →  PAST  →  PRESENT','“ALL THE GAME AND THE PAST AND FUTURE AND PRESENT PARTS ARE NOW INSIDE OF WENDA.PS.”'],
+        ['NEKA, TONIGHT','PAST  →  FUTURE  →  PRESENT','“THEN HE COMBINED THE COMBINED STUFF INTO HIMSELF.”']
+      ];
+      for(var w789=0; w789<2; w789++){
+        var wry789 = wy789+H*0.0150+w789*H*0.0170;
+        var now789 = (w789===1);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wenA*(now789?(0.82+0.18*pul):0.70);
+        ctx.fillStyle=now789?'rgba(255,212,59,0.94)':'rgba(186,196,220,0.86)'; ctx.font='700 2.9px ui-monospace,monospace';
+        ctx.fillText(wen789[w789][0], cx-W*0.330, wry789);
+        ctx.globalAlpha=g*wenA*(now789?0.96:0.86);
+        ctx.fillStyle=now789?'rgba(143,227,255,0.96)':'rgba(234,240,250,0.90)'; ctx.font='900 3.0px ui-monospace,monospace';
+        ctx.fillText(wen789[w789][1], cx-W*0.222, wry789);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wenA*0.74; ctx.fillStyle='rgba(198,180,255,0.88)'; ctx.font='700 2.7px ui-monospace,monospace';
+        ctx.fillText(wen789[w789][2], cx+W*0.330, wry789);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wenA*(0.80+0.20*pul); ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 3.4px ui-monospace,monospace';
+      ctx.fillText('BOTH OF THEM FINISH ON THE PRESENT. HERS ENDED WITH THE GAME SHRUNK TO THE SIZE OF AN ATOM, AND “THE GAME BROKE.”', cx, wy789+H*0.0530);
+    }
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(255,194,71,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('EVEN MORE POWERFUL (JUST NOW)', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“NEKA OMAZEN THEN COMBINED THE PREVIOUS AND EVERYTHING IN IT, AND COMBINED THE FUTURE AND EVERYTHING IN IT, AND SAME WITH PRESENT.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.90;
+    ctx.fillStyle='rgba(255,212,59,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“NEKA OMAZEN THEN DID THE PROCESS TO NEWTALE. NEKA OMAZEN THEN FOR ALL FICTION.”', cx, top+H*0.150);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 23, 5:09 PM, TEN MINUTES AND THIRTY-TWO SECONDS AFTER THE RENAMING. “THE PREVIOUS” IS HIS WORD FOR THE PAST.', cx, top+H*0.172);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,194,71,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('TEN MINUTES AGO HE CLAIMED TO BE EVERYTHING. THIS MESSAGE IS THE PROCEDURE FOR IT.', cx, top+H*0.200);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('4:58 PM: “NEKA ACTUALLY BEING CLASSICS, AND ALL FICTION, AND BEYOND FICTION ALL COMBINED INTO ONE SINGLE BEING.”', cx, top+H*0.222);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('5:09 PM: HE WRITES OUT HOW IT WAS DONE, DOMAIN BY DOMAIN, AND THIS TIME THE TIMELINES GO IN TOO.', cx, top+H*0.244);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('AND THE METHOD IS ONE HE EXPLAINED', cx-W*0.152, top+H*0.658);
+    ctx.fillText('OUT LOUD WHILE SOMEBODY ELSE USED IT.', cx-W*0.152, top+H*0.674);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 1, IN THE MIDDLE OF WENDA EATING THE CLOCK,', cx-W*0.152, top+H*0.694);
+    ctx.fillText('THE LINE IN THE MESSAGE IS ATTRIBUTED TO HIM:', cx-W*0.152, top+H*0.708);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“THERE IS ALWAYS MORE FUTURE THAN PAST” — PERO LAI.', cx-W*0.152, top+H*0.726);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('HE WAS THE COMMENTATOR THAT DAY. TWENTY-TWO DAYS', cx-W*0.152, top+H*0.744);
+    ctx.fillText('LATER HE IS THE ONE DOING IT, AND HE STARTS AT', cx-W*0.152, top+H*0.758);
+    ctx.fillText('THE END HE SAID WAS SMALLER.', cx-W*0.152, top+H*0.772);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('ALL FICTION WAS ALREADY BEATEN.', cx+W*0.186, top+H*0.658);
+    ctx.fillText('TONIGHT IT GETS COLLECTED INSTEAD.', cx+W*0.186, top+H*0.674);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 15, BEAT 721: “THERE IS NO BEING IN FICTION', cx+W*0.186, top+H*0.694);
+    ctx.fillText('ANYMORE, PERO LAI BEATEN THEM ALL.” THE PICTURE', cx+W*0.186, top+H*0.708);
+    ctx.fillText('WITH IT READ “ALL FICTIONS HAVE FALLEN.”', cx+W*0.186, top+H*0.722);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('FALLEN LEFT THEM LYING THERE. EIGHT DAYS LATER HE', cx+W*0.186, top+H*0.740);
+    ctx.fillText('GOES BACK AND PICKS THEM UP, WITH THEIR PAST AND', cx+W*0.186, top+H*0.754);
+    ctx.fillText('FUTURE STILL ATTACHED. WINNING WAS NOT THE END OF IT.', cx+W*0.186, top+H*0.768);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SEPT 12: NEWTALE GASTER CLONED A REALITY AND “ONLY THE PRESENT EXISTS IN THE CLONE REALITIES… EVERYTHING THAT IS THERE FREEZES.”', cx, top+H*0.790);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(255,194,71,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TAKING TIME AWAY FROZE A WORLD SOLID. TAKING TIME IN IS WHAT HE DOES TONIGHT, AND HE GETS BIGGER INSTEAD.', cx, top+H*0.808);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(198,155,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('NEWTALE GOES IN SECOND, AS ITS OWN SEPARATE THING — AND IT WAS DESTROYED ON AUG 30 AND HAD “FULLY TAKEN OVER CLASSICS” BY SEPT 12.', cx, top+H*0.826);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE THREAD ITSELF CHANGED ITS NAME: TWELVE DAYS OF “EVEN (5x) MORE OF PERO NEKA/LAI OMAZEN”, THEN “EVEN (6x) MORE OF NEKA OMAZEN.”', cx, top+H*0.844);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(255,194,71,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ EVEN MORE POWERFUL THAT DAY (JUST NOW) ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===788){

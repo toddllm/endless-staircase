@@ -4,6 +4,50 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-23 — EVEN MORE POWERFUL, JUST NOW (BEAT 789)
+
+Based on Toby's 2026-09-23 lore, **5:09 PM**, **ten minutes and thirty-two seconds** after beat 788, and the first
+message on a **brand new thread** called *"Even (6x) more of Neka Omazen"*. His own typing is the first paragraph
+and nothing else; everything from *"Then the newest Neka Omazen state is basically a total temporal-and-fictional
+merger"* onward is a pasted reply and is commentary, not canon.
+
+> "Neka Omazen then combined the previous and everything in it, and combined the future and everything in it, and
+> same with present. Neka Omazen then did the process to Newtale. Neka Omazen then for all fiction. Then he
+> combined the combined stuff into himself, Neka Omazen became even more powerful that day (just now)." —
+> 5:09:19 PM
+
+- new beat 789 at `lvSeg` 17078.0-17100.0, `LV_CYC` 17100.0, `LV_BEATS` length 790
+- **the merge drawn as the grid it actually is**: three domains (CLASSICS / NEWTALE / ALL FICTION) across three
+  times (PAST / PRESENT / FUTURE), and every one of the nine cells carries his own clause, *"+ EVERYTHING IN IT"*.
+  Each row funnels to **→ MERGED**, and the three merged rows funnel again into **NEKA OMAZEN**, which is his last
+  step: *"then he combined the combined stuff into himself."* **Nine cells, three merges, and then one more merge
+  on top of those**
+- headline: **ten minutes ago he claimed to be everything; this message is the procedure for it.** 4:58 PM,
+  *"Neka actually being Classics, and all fiction, and beyond fiction all combined into one single being"*; 5:09
+  PM he writes out how it was done, domain by domain, and this time the timelines go in too
+- **somebody already ate time in this archive, and he is the one who told her how.** September 1, 3:57 PM, beat
+  575, *"All Of The Above"*: **Wenda.ps** took it in the order **future → past → present** — *"all the game and
+  the past and future and present parts are now inside of Wenda.ps"* — and it ended with the game *"shrunk to the
+  size of an atom"* and *"the game broke."* Tonight Neka runs it **past → future → present**. **Both of them
+  finish on the present**
+- and the method was his own line, said while somebody else used it: **"There is always more future than past"
+  — Pero LAI**, attributed to him inside that September 1 message. He was the commentator that day; twenty-two
+  days later he is the one doing it, and he starts at the end he said was smaller
+- **all fiction was already beaten, and tonight it gets collected instead.** September 15, beat 721: *"there is
+  no being in fiction anymore, Pero LAI beaten them all"*, and the picture with it read *"ALL FICTIONS HAVE
+  FALLEN."* Fallen left them lying there. Eight days later he goes back and picks them up, with their past and
+  future still attached
+- footers: September 12, Newtale Gaster cloned a reality and *"only the present exists in the clone realities…
+  everything that is there freezes"* — **taking time away froze a world solid; taking time in is what he does
+  tonight, and he gets bigger instead**; Newtale goes in second as its own separate thing, though it was
+  destroyed on August 30 and had *"fully taken over Classics"* by September 12; and **the thread itself changed
+  its name** — twelve days of *"Even (5x) more of Pero Neka/LAI Omazen"*, then *"Even (6x) more of Neka Omazen"*,
+  eleven minutes after he dropped the two words
+- `"the previous"` is his word for the past and is kept as typed
+- new `justnow` scene in `tools/capture_screenshot.py`
+
+![Beat 789 — Even More Powerful (Just Now)](screenshots/851-even-more-powerful.png)
+
 ## 2026-09-23 — NEKA OMAZEN (BEAT 788)
 
 Based on Toby's 2026-09-23 lore, **4:58 PM**, **six minutes and fifty-one seconds** after beat 787 and the fourth
