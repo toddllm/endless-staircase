@@ -4,6 +4,60 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-22 — LOL, JUST KIDDING EVERYONE (BEAT 783)
+
+Based on Toby's 2026-09-22 lore, **8:26 PM**, one hour and thirty minutes after beat 782. His own typing is the
+first paragraph only. Everything from "That works really well as a hidden *character-wheel puzzle*" onward is a
+pasted reply and is **not canon** — including "The screen darkens", "The characters stop moving", the curtain
+simile, the 😌 on the LOL line, and "That is extremely Classics." No attachment on this message. It does not answer
+the open question from beat 782 (what Brud's normal stuff is); it opens something else.
+
+> "There is a word put behind every Sprunki and Classics character except for Mr. Black and Neka, and to rotate
+> them around you just scroll left/right on the character, it is just normal game stuff/controls. It should say all
+> together 'This is the end, no more hiding, no more running, all without fun, all because of Mr. Black, you can't
+> run nor hide, you can't move, you can't win', then when each character is put in the correct order with them on
+> the back side, Mr. Black tears the fabric of the game's reality, Pero LAI walks in and says 'LOL, just kidding
+> everyone. I just wanted to see your reactions.', the characters even the players scream."
+
+- new beat 783 at `lvSeg` 16946.0-16968.0, `LV_CYC` 16968.0, `LV_BEATS` length 784
+- the puzzle itself: his sentence drawn as the word-tiles that sit behind the cast, rotated into the correct order
+  across three rows, one word per character, with a short pillar under each tile for the character carrying it.
+  **MR.** and **BLACK,** are drawn in red because the name in the sentence belongs to one of the two who carry no
+  word. Under it the control he specified, **◀ SCROLL LEFT / RIGHT ON THE CHARACTER ▶**, and then the two dashed
+  empty tiles, **MR. BLACK** and **NEKA**, each marked **NO WORD**
+- the tear: the rip drawn floor-upward with light behind it, **MR. BLACK TEARS IT** on the near side, **PERO LAI**
+  stepping through on the far side with his line, and on the left the cast and the players on one baseline, every
+  one of them with a scream mark over it
+- inset: **THE FAKE ENDING LEDGER**, every ending this archive has run and what was standing behind it — JULY 24,
+  6:31 PM / a meltdown, performed / *"Just kidding. I am LAI, you'll never get rid of me!"*; AUG 30, 2:07 PM / the
+  fabric of the game destroyed / Oren had a line left, *"I can recreate the game"*; SEPT 1, 7:51 AM / a message that
+  looked ordinary / the emoji at the end was him, *"Its… Pero LAI!!!"*; SEPT 5, 9:44 AM / Mr. Black takes the whole
+  game / beaten in 20 minutes, *"they saved everything"*; SEPT 17, 4:46 PM / an era ends / no fight, an ownership
+  notice in the text box; SEPT 19, 7:59 PM / the Game Over screen / it *"breaks apart, revealing BOTH Pero LAI and
+  WD Gaster"*; and TONIGHT / the backs spell out the end / a puzzle built to deliver one joke
+- panels: **the sentence blames Mr. Black, and Mr. Black is a role of his** — August 16, 7:21 PM, *"Many different
+  beings are Pero's varies. Such as Tunner and **Mr. Black** and Paul and EndlessAnimations…"*, and August 14,
+  1:56 PM lists his roles as *"LAI, human-like, **Mr. Black**, Paul, fog, shadow…"*, so the villain the backs
+  accuse, the hand that tears the fabric and the man who walks through the opening are the same person; and **the
+  scream in this archive has always belonged to one character** — it runs 26 times on the Classics Era page and the
+  named ones are Oren every time, always at something already finished, including September 2, 8:29 PM where he
+  taunted *"Ya think I'll scream again?"* and then *"Oren looks and screams"*
+- the headline above both: **the only two characters carrying no word are both him.** Mr. Black is on his own
+  vary-list; **Neka** is *"named after Pero LAI's avatar and his middle name"* (September 11, 7:09 PM). The puzzle
+  is signed before it starts, and the blanks are the signature
+- footer: *"tears the fabric"* against August 30's snap that destroyed it and July 20's *"Pero used each for
+  fabric"*, where the fabric was made out of characters; scrolling as a creator's motion in this archive, September
+  2, *"he scrolls through the admin commands he has as creator"*, handed here to the player as ordinary controls;
+  the sentence running twenty-nine words, twenty-eight if *"Mr. Black"* is one, against September 1's roster of
+  *"the 20 Sprunkis + Pero LAI"*; **"LOL" having zero prior hits in this archive**, and his emoji limited to one
+  since September 5, so here he laughs in letters instead; and *"all without fun"* landing on **Mr. Fun Computer**
+  and **Fun Bot**, both in his own group, with Fun Bot among those who beat him on September 5
+- capture scene `justkidding` added to `tools/capture_screenshot.py`, frozen at cyc 16966.8
+- runtime probe over the whole 22-second beat: 784 beats, `lvSeg` clean at both edges and on the wrap, zero render
+  errors
+
+![Beat 783 — LOL, Just Kidding Everyone](screenshots/845-just-kidding.png)
+
 ## 2026-09-22 — NO MORE TIERS HERE (BEAT 782)
 
 Based on Toby's 2026-09-22 lore, **6:55 PM**, forty-three minutes after beat 781. The whole message is his own typing;

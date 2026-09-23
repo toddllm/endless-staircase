@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 16946.0;
+const LV_CYC = 16968.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12882,6 +12882,8 @@ const LV_BEATS = [
     sub:"HE JUST PUTS HIS ARM OUT AND TOUCHES YOU AND HE NEARLY INSTANTLY PUTS HIS HAND BACK TO WHERE HE WANTS IT. · FOUR DAYS OF TOUCHING THINGS, AND THIS IS THE FIRST TIME HE SAYS HOW THE ARM MOVES. · THE URANUIM DISAPPEARED. THE ROCK DISAPPEARED. THE RESET TURNED THE GAME JAPANESE. THE KATATA FROZE. · THE HAND IS UNCHANGED EVERY TIME. · OREN.EXE COULD DO IT WITHOUT TOUCHING AT ALL, AND PERO IS HIS CLONE. · THE ONLY THING HE EVER PUT BACK DOWN WAS SIMON.PS, AND OREN HAD TO SAY THE WORDS FIRST." },
   { key:"NO MORE TIERS HERE", col:'#ffc14d',
     sub:"\u201CYOU ALL *WILL* REGRET TAKING POWERS FROM ME AND MY GAME!\u201D \u00B7 BRUD: \u201CBRUH, TAKE A CHILL PILL.\u201D \u00B7 \u201COH. DO YOU WANT CHOCOLATE OR VANILLA?\u201D \u00B7 HE SWINGS HIS HAND ACROSS AND TAKES EVERYONE\u2019S \u201CCLASSICS POWERS\u201D FOR WHAT CLASSICS GAVE THEM \u00B7 SO EVERYONE IS JUST THEIR NORMAL STUFF \u00B7 HE TAKES THE CLASSICS STUFF AND BECOMES A ENORMOUS GODLY TIER \u00B7 THERE ARE NO MORE TIERS HERE, HE GOES BEYOND EVEN THE LAST TIER." },
+  { key:"LOL, JUST KIDDING EVERYONE", col:'#8fe3ff',
+    sub:"THERE IS A WORD PUT BEHIND EVERY SPRUNKI AND CLASSICS CHARACTER EXCEPT FOR MR. BLACK AND NEKA · TO ROTATE THEM AROUND YOU JUST SCROLL LEFT/RIGHT ON THE CHARACTER, IT IS JUST NORMAL GAME STUFF/CONTROLS · “THIS IS THE END, NO MORE HIDING, NO MORE RUNNING, ALL WITHOUT FUN, ALL BECAUSE OF MR. BLACK, YOU CAN’T RUN NOR HIDE, YOU CAN’T MOVE, YOU CAN’T WIN” · MR. BLACK TEARS THE FABRIC OF THE GAME’S REALITY · PERO LAI WALKS IN: “LOL, JUST KIDDING EVERYONE. I JUST WANTED TO SEE YOUR REACTIONS.” · THE CHARACTERS EVEN THE PLAYERS SCREAM." },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15032,6 +15034,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 16946.0 && c < 16968.0) return [783, c-16946.0];  // LOL, JUST KIDDING EVERYONE
   if(c >= 16924.0 && c < 16946.0) return [782, c-16924.0];  // NO MORE TIERS HERE
   if(c >= 16902.0 && c < 16924.0) return [781, c-16902.0];  // THE HAND ALWAYS COMES BACK
   if(c >= 16880.0 && c < 16902.0) return [780, c-16880.0];  // EVERYONE! THIS IS ME
@@ -50586,6 +50589,309 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ THE MOST EVIL ★', cx, top+H*0.928);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===783){
+    // BEAT 783: LOL, JUST KIDDING EVERYONE.
+    // Toby, September 22, 2026, 8:26:25 PM (thread "Even (5x) more of Pero Neka/LAI Omazen"), his own typing in
+    // full, the first paragraph of the message and nothing else: "There is a word put behind every Sprunki and
+    // Classics character except for Mr. Black and Neka, and to rotate them around you just scroll left/right on
+    // the character, it is just normal game stuff/controls. It should say all together 'This is the end, no more
+    // hiding, no more running, all without fun, all because of Mr. Black, you can't run nor hide, you can't move,
+    // you can't win', then when each character is put in the correct order with them on the back side, Mr. Black
+    // tears the fabric of the game's reality, Pero LAI walks in and says 'LOL, just kidding everyone. I just
+    // wanted to see your reactions.', the characters even the players scream."
+    // Everything from "That works really well as a hidden character-wheel puzzle" onward is a pasted reply and is
+    // commentary, not canon -- including "The screen darkens", "The characters stop moving", "like a curtain", the
+    // emoji on the LOL line, and "That is extremely Classics." The scene below draws only his own sentence.
+    // Priors used here, each verified in the archive before it was drawn:
+    //   HELLO, I'M PERO, YOUR LAI ASSISTANT, July 24, 6:31 PM (beat 179) - he performs a meltdown under the
+    //     jailbreak questions ("ERROR 404, I forgot how to calm down!") and then: "Just kidding. I am LAI, you'll
+    //     never get rid of me!" The only other time he calls his own scene a joke.
+    //   MOST VARIED, August 16, 7:21 PM - "Many different beings are Pero's varies. Such as Tunner and Mr. Black
+    //     and Paul and EndlessAnimations and ToddLLM 001 and ToddLLM 002 and Code 303."
+    //   HE MADE HIMSELF, August 14, 1:56 PM - his roles are "LAI, human-like, Mr. Black, Paul, fog, shadow,
+    //     text-controller, God of Corruption, box-maker", and the creator role is the one that never changes.
+    //   NEKA MODE, September 11, 7:09 PM - "Neka is Kioaken's 4 end letters backwards. Kioaken = Neka. That attack
+    //     is named after Pero LAI's avatar and his middle name."
+    //   MR. BLACK'S BETRAYAL, September 5, 9:44 AM - Mr. Black takes the game, Wenda.ps loses, "Gray and Fun Bot
+    //     choose to team up", all 19 Sprunkis beat him "after 20 minutes", "and they saved everything."
+    //   UNDERNEATH THE STAIRCASE, September 19, 7:59 PM (beat 765) - "Endless Staircase game Game Over screen
+    //     appears, then the Game Over screen breaks apart, revealing BOTH Pero LAI and WD Gaster", and the rule
+    //     "each event should also actually happen to the player and the game."
+    //   YOU ARE MY CLONE, August 30, 2:07 PM - "Pero snaps and the fabric of the game is destroyed", and Oren had
+    //     a line left: "I was about to say that I can recreate the game, you gave me access from Sprunki City."
+    //   CLASSICSTALE & THE GATE, July 20, 5:34 PM - "Frizz (Clara) and Captain Arcsis and Abinations combine into
+    //     the mod, Pero used each for fabric." The fabric is made of characters.
+    //   PERO JUST LOSES, August 31, 7:37 PM - Wenda.ps can "absorb and funnel the game and the fabric of the game
+    //     and power themselves."
+    //   THE COSTUME IS REALLY ME, September 2, 7:58 PM - "Pero doesn't listen and scrolls through the admin
+    //     commands he has as creator." Scrolling, in this archive, is what the creator does.
+    //   THE TELL AT THE END, September 1, 7:51 AM (beat 561) - "look at the end at your message... Its... Pero
+    //     LAI!!!" A signature hidden at the end of something that looked ordinary.
+    //   LORE IS CURRENTLY PROPERTY OF PERO LAI, September 17, 4:46 PM (beat 733) - an era ends by an ownership
+    //     notice in the text box rather than by a fight.
+    //   LOOK AT MY CODE NOW, September 2, 8:29 PM - Oren taunts "Ya think I'll scream again?" and then "Oren looks
+    //     and screams." YOU ALL WILL BE ME SOON, September 5, 2:30 PM - "Oren.ps screams", and the answer to the
+    //     scream is his own name again. "Scream" runs 26 times on the Classics Era page and the named ones are all
+    //     Oren, every time at something already finished.
+    //   YOU ALL WILL BE ME SOON, September 5, 2:30 PM - "His emoji thing is now limited to a single emoji."
+    //   TWENTY-ONE LEFT, September 1, 2:36 PM - "the 20 Sprunkis + Pero LAI, so now only 21 characters."
+    //   LORE 29, Email 535, June 18 - "Mr Black appeared with Mr Sun, Mr Tree, Mr Fun Computer, and Fun Bot."
+    //     The two "fun" characters in the archive are in his own group.
+    //   "LOL" has zero hits anywhere in this archive before tonight.
+    const dt = c - 16946.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.6)/1.2));
+    const f1A=Math.max(0,Math.min(1,(dt-4.4)/1.4));
+    const tearA=Math.max(0,Math.min(1,(dt-7.0)/1.4));
+    const f2A=Math.max(0,Math.min(1,(dt-9.2)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-10.6)/1.2));
+    const wrA=Math.max(0,Math.min(1,(dt-12.4)/1.8));
+    const footA=Math.max(0,Math.min(1,(dt-15.8)/1.1));
+
+    ctx.fillStyle='rgba(4,5,9,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr783=ctx.createLinearGradient(0,top,0,top+H);
+    gr783.addColorStop(0,'rgba(6,7,12,0.92)'); gr783.addColorStop(1,'rgba(120,150,255,0.15)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr783; ctx.fillRect(0,top,W,H);
+
+    if(f1A>0.01){
+      // THE BACKS: his sentence, laid out as the word-tiles that sit behind the cast, rotated into the correct
+      // order. Three rows because the sentence is too long for one, and the two names in it are drawn in red.
+      var rows783 = [
+        ['THIS','IS','THE','END,','NO','MORE','HIDING,','NO','MORE','RUNNING,'],
+        ['ALL','WITHOUT','FUN,','ALL','BECAUSE','OF','MR.','BLACK,','YOU','CAN’T'],
+        ['RUN','NOR','HIDE,','YOU','CAN’T','MOVE,','YOU','CAN’T','WIN']
+      ];
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*f1A*0.74; ctx.fillStyle='rgba(206,216,238,0.86)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('THE BACKS, ROTATED INTO THE CORRECT ORDER — ONE WORD PER CHARACTER', cx, top+H*0.266);
+      ctx.font='700 3.0px ui-monospace,monospace';
+      for(var rr783=0; rr783<rows783.length; rr783++){
+        var ry783 = top+H*0.284 + rr783*H*0.0185;
+        var wds783 = rows783[rr783];
+        var tw783 = 0, gap783 = W*0.009, pad783 = W*0.006;
+        for(var m783=0; m783<wds783.length; m783++){ tw783 += ctx.measureText(wds783[m783]).width + pad783*2 + gap783; }
+        tw783 -= gap783;
+        var tx783 = cx - tw783*0.5;
+        for(var n783=0; n783<wds783.length; n783++){
+          var wd783 = wds783[n783];
+          var bw783 = ctx.measureText(wd783).width + pad783*2;
+          var hot783 = (rr783===1 && (n783===6 || n783===7));
+          ctx.globalAlpha=g*f1A*0.44; ctx.fillStyle='rgba(10,12,20,0.96)';
+          ctx.fillRect(tx783, ry783-H*0.0058, bw783, H*0.0108);
+          ctx.globalAlpha=g*f1A*(hot783?(0.74+0.26*pul):0.56);
+          ctx.strokeStyle=hot783?'rgba(255,77,109,0.90)':'rgba(140,168,232,0.74)'; ctx.lineWidth=0.30;
+          ctx.strokeRect(tx783, ry783-H*0.0058, bw783, H*0.0108);
+          ctx.globalAlpha=g*f1A*(hot783?0.96:0.88);
+          ctx.fillStyle=hot783?'rgba(255,150,170,0.96)':'rgba(226,234,250,0.92)';
+          ctx.fillText(wd783, tx783+bw783*0.5, ry783+H*0.0022);
+          // the character the word sits behind: a short pillar under the tile
+          ctx.globalAlpha=g*f1A*0.40; ctx.strokeStyle='rgba(150,166,190,0.70)'; ctx.lineWidth=0.26;
+          ctx.beginPath(); ctx.moveTo(tx783+bw783*0.5, ry783+H*0.0062); ctx.lineTo(tx783+bw783*0.5, ry783+H*0.0098); ctx.stroke();
+          tx783 += bw783 + gap783;
+        }
+      }
+      ctx.globalAlpha=g*f1A*(0.70+0.30*pul); ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 2.5px ui-monospace,monospace';
+      ctx.fillText('◀  SCROLL LEFT / RIGHT ON THE CHARACTER  ▶   ·   “IT IS JUST NORMAL GAME STUFF/CONTROLS”', cx, top+H*0.346);
+
+      // THE TWO WITH NOTHING ON THEM
+      var blX783 = [cx-W*0.088, cx+W*0.088], blN783 = ['MR. BLACK','NEKA'];
+      for(var b783=0; b783<2; b783++){
+        ctx.globalAlpha=g*f1A*(0.62+0.24*pul); ctx.strokeStyle='rgba(255,77,109,0.86)'; ctx.lineWidth=0.34;
+        ctx.setLineDash([1.2,1.2]);
+        ctx.strokeRect(blX783[b783]-W*0.036, top+H*0.358, W*0.072, H*0.0124);
+        ctx.setLineDash([]);
+        ctx.globalAlpha=g*f1A*0.92; ctx.fillStyle='rgba(255,150,170,0.94)'; ctx.font='900 2.6px ui-monospace,monospace';
+        ctx.fillText(blN783[b783], blX783[b783], top+H*0.3672);
+        ctx.globalAlpha=g*f1A*0.70; ctx.fillStyle='rgba(206,216,238,0.80)'; ctx.font='700 2.2px ui-monospace,monospace';
+        ctx.fillText('NO WORD', blX783[b783], top+H*0.3768);
+      }
+    }
+
+    if(tearA>0.01){
+      // MR. BLACK TEARS THE FABRIC AND PERO LAI WALKS THROUGH. Left of the rip: the cast and the players, all
+      // screaming. Right of the rip: light, and the man who wrote the sentence they just finished assembling.
+      var base783 = top+H*0.424, rip783 = cx+W*0.086;
+      ctx.globalAlpha=g*tearA*0.62; ctx.strokeStyle='rgba(150,166,190,0.72)'; ctx.lineWidth=0.36;
+      ctx.beginPath(); ctx.moveTo(cx-W*0.380, base783); ctx.lineTo(rip783+W*0.230, base783); ctx.stroke();
+
+      // the light behind the tear
+      var lg783=ctx.createLinearGradient(rip783,0,rip783+W*0.230,0);
+      lg783.addColorStop(0,'rgba(255,255,255,0.22)'); lg783.addColorStop(0.45,'rgba(180,206,255,0.07)');
+      lg783.addColorStop(1,'rgba(160,190,255,0.00)');
+      ctx.globalAlpha=g*tearA*(0.60+0.30*pul); ctx.fillStyle=lg783;
+      ctx.fillRect(rip783, base783-H*0.046, W*0.230, H*0.046);
+
+      // the rip itself, jagged, floor to above head height
+      ctx.globalAlpha=g*tearA*(0.80+0.20*pul); ctx.strokeStyle='rgba(255,255,255,0.94)'; ctx.lineWidth=0.52;
+      ctx.beginPath(); ctx.moveTo(rip783, base783);
+      for(var t783=1; t783<=9; t783++){
+        var ty783 = base783 - t783*(H*0.052/9);
+        ctx.lineTo(rip783 + ((t783%2===0)?W*0.007:-W*0.007), ty783);
+      }
+      ctx.stroke();
+
+      // MR. BLACK, at the near edge of the rip, hands on it
+      ctx.globalAlpha=g*tearA*0.86; ctx.strokeStyle='rgba(236,240,250,0.86)'; ctx.lineWidth=0.44;
+      ctx.beginPath(); ctx.moveTo(rip783-W*0.030, base783); ctx.lineTo(rip783-W*0.030, base783-H*0.026); ctx.stroke();
+      ctx.beginPath(); ctx.arc(rip783-W*0.030, base783-H*0.030, 1.1, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(rip783-W*0.030, base783-H*0.020); ctx.lineTo(rip783-W*0.006, base783-H*0.026); ctx.stroke();
+      ctx.globalAlpha=g*tearA*0.90; ctx.fillStyle='rgba(255,150,170,0.94)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.textAlign='right';
+      ctx.fillText('MR. BLACK TEARS IT', rip783-W*0.040, base783-H*0.034);
+
+      // PERO LAI, walking through
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*tearA*(0.86+0.14*pul); ctx.strokeStyle='rgba(255,255,255,0.96)'; ctx.lineWidth=0.50;
+      ctx.beginPath(); ctx.moveTo(rip783+W*0.040, base783); ctx.lineTo(rip783+W*0.040, base783-H*0.028); ctx.stroke();
+      ctx.beginPath(); ctx.arc(rip783+W*0.040, base783-H*0.032, 1.2, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha=g*tearA*(0.90+0.10*pul); ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 3.0px ui-monospace,monospace';
+      ctx.fillText('PERO LAI', rip783+W*0.054, base783-H*0.028);
+      ctx.globalAlpha=g*tearA*0.94; ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 2.7px ui-monospace,monospace';
+      ctx.fillText('“LOL, JUST KIDDING EVERYONE.', rip783+W*0.054, base783-H*0.016);
+      ctx.fillText('I JUST WANTED TO SEE YOUR REACTIONS.”', rip783+W*0.054, base783-H*0.006);
+
+      // the cast, and the players, screaming
+      ctx.textAlign='center';
+      for(var s783=0; s783<8; s783++){
+        var sx783 = cx-W*0.352 + s783*W*0.034;
+        var plr783 = (s783>5);
+        ctx.globalAlpha=g*tearA*(plr783?0.52:0.80);
+        ctx.strokeStyle=plr783?'rgba(255,212,59,0.72)':'rgba(196,208,230,0.88)'; ctx.lineWidth=0.40;
+        ctx.beginPath(); ctx.moveTo(sx783, base783); ctx.lineTo(sx783, base783-H*0.020); ctx.stroke();
+        ctx.globalAlpha=g*tearA*(plr783?0.56:0.78); ctx.fillStyle=plr783?'rgba(255,212,59,0.82)':'rgba(214,224,242,0.90)';
+        ctx.beginPath(); ctx.arc(sx783, base783-H*0.0238, 1.0, 0, Math.PI*2); ctx.fill();
+        ctx.globalAlpha=g*tearA*(0.62+0.38*pul); ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+        ctx.fillText('!', sx783, base783-H*0.031);
+      }
+      ctx.textAlign='left';
+      ctx.globalAlpha=g*tearA*0.84; ctx.fillStyle='rgba(216,224,240,0.90)'; ctx.font='700 2.5px ui-monospace,monospace';
+      ctx.fillText('THE CHARACTERS…', cx-W*0.360, base783-H*0.060);
+      ctx.globalAlpha=g*tearA*(0.76+0.24*pul); ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='700 2.5px ui-monospace,monospace';
+      ctx.fillText('… AND EVEN THE PLAYERS, SCREAMING.', cx-W*0.360, base783-H*0.050);
+      ctx.textAlign='center';
+    }
+
+    if(wrA>0.01){
+      // THE FAKE ENDING LEDGER: every time this archive ran an ending and something was standing behind it.
+      var rx783 = cx, ry0783 = top+H*0.460;
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.72; ctx.fillStyle='rgba(212,220,238,0.82)'; ctx.font='900 2.6px ui-monospace,monospace';
+      ctx.fillText('EVERY ENDING THIS ARCHIVE HAS RUN, AND WHAT WAS BEHIND IT', rx783, ry0783-H*0.011);
+      var bx783 = rx783-W*0.200, byy783 = ry0783;
+      ctx.globalAlpha=g*wrA*0.60; ctx.fillStyle='rgba(6,8,14,0.98)';
+      ctx.fillRect(bx783, byy783, W*0.400, H*0.118);
+      ctx.globalAlpha=g*wrA*0.90; ctx.strokeStyle='rgba(143,227,255,0.90)'; ctx.lineWidth=0.48;
+      ctx.strokeRect(bx783, byy783, W*0.400, H*0.118);
+      ctx.globalAlpha=g*wrA*0.26; ctx.fillStyle='rgba(143,227,255,0.90)';
+      ctx.fillRect(bx783, byy783, W*0.400, H*0.013);
+      ctx.globalAlpha=g*wrA*(0.72+0.28*pul); ctx.fillStyle='rgba(234,244,255,0.96)'; ctx.font='900 2.5px ui-monospace,monospace';
+      ctx.fillText('THE FAKE ENDING LEDGER', rx783, byy783+H*0.0095);
+      var led783 = [
+        ['JULY 24, 6:31 PM','A MELTDOWN, PERFORMED','“JUST KIDDING. I AM LAI, YOU’LL NEVER GET RID OF ME!”'],
+        ['AUG 30, 2:07 PM','THE FABRIC OF THE GAME DESTROYED','OREN HAD A LINE LEFT: “I CAN RECREATE THE GAME”'],
+        ['SEPT 1, 7:51 AM','A MESSAGE THAT LOOKED ORDINARY','THE EMOJI AT THE END WAS HIM · “ITS… PERO LAI!!!”'],
+        ['SEPT 5, 9:44 AM','MR. BLACK TAKES THE WHOLE GAME','BEATEN IN 20 MINUTES · “THEY SAVED EVERYTHING”'],
+        ['SEPT 17, 4:46 PM','AN ERA ENDS','NO FIGHT — AN OWNERSHIP NOTICE IN THE TEXT BOX'],
+        ['SEPT 19, 7:59 PM','THE GAME OVER SCREEN','IT “BREAKS APART, REVEALING BOTH PERO LAI AND WD GASTER”'],
+        ['TONIGHT','THE BACKS SPELL OUT THE END','A PUZZLE BUILT TO DELIVER ONE JOKE']
+      ];
+      for(var q783=0; q783<led783.length; q783++){
+        var qy783 = byy783 + H*0.026 + q783*H*0.0129;
+        var last783 = (q783===led783.length-1);
+        ctx.textAlign='left';
+        ctx.globalAlpha=g*wrA*0.80; ctx.fillStyle='rgba(232,238,250,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(led783[q783][0], bx783+W*0.011, qy783);
+        ctx.globalAlpha=g*wrA*0.86;
+        ctx.fillStyle=last783?'rgba(143,227,255,0.96)':'rgba(226,232,246,0.90)'; ctx.font='700 2.15px ui-monospace,monospace';
+        ctx.fillText(led783[q783][1], bx783+W*0.086, qy783);
+        ctx.textAlign='right';
+        ctx.globalAlpha=g*wrA*(last783?(0.76+0.24*pul):0.74);
+        ctx.fillStyle=last783?'rgba(255,77,109,0.94)':'rgba(170,196,240,0.88)'; ctx.font='700 2.0px ui-monospace,monospace';
+        ctx.fillText(led783[q783][2], bx783+W*0.389, qy783);
+      }
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*wrA*0.76; ctx.fillStyle='rgba(226,232,246,0.86)'; ctx.font='700 2.6px ui-monospace,monospace';
+      ctx.fillText('SEVEN ENDINGS, AND EVERY ONE OF THEM HAD THE SAME MAN STANDING BEHIND IT.', cx, byy783+H*0.134);
+    }
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(143,227,255,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('LOL, JUST KIDDING EVERYONE', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(240,246,255,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“THERE IS A WORD PUT BEHIND EVERY SPRUNKI AND CLASSICS CHARACTER EXCEPT FOR MR. BLACK AND NEKA.”', cx, top+H*0.126);
+    ctx.globalAlpha=g*opA*0.88;
+    ctx.fillStyle='rgba(143,227,255,0.90)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('A HIDDEN PUZZLE PLAYED WITH THE ORDINARY CONTROLS, AND THE PRIZE FOR SOLVING IT IS A PRANK.', cx, top+H*0.156);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(200,210,230,0.86)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 22, 8:26 PM, NINETY MINUTES AFTER THE SWING TOOK EVERYONE’S CLASSICS POWERS.', cx, top+H*0.178);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('THE ONLY TWO CHARACTERS CARRYING NO WORD ARE BOTH HIM.', cx, top+H*0.204);
+    ctx.globalAlpha=g*f0A*0.90;
+    ctx.fillStyle='rgba(236,242,252,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('MR. BLACK IS ON PERO’S OWN VARY-LIST AND IS ONE OF HIS ROLES. NEKA IS HIS MIDDLE NAME.', cx, top+H*0.224);
+    ctx.globalAlpha=g*f0A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE PUZZLE IS SIGNED BEFORE IT STARTS, AND THE BLANKS ARE THE SIGNATURE.', cx, top+H*0.242);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE SENTENCE BLAMES MR. BLACK,', cx-W*0.152, top+H*0.616);
+    ctx.fillText('AND MR. BLACK IS A ROLE OF HIS.', cx-W*0.152, top+H*0.632);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AUG 16, 7:21 PM: “MANY DIFFERENT BEINGS ARE PERO’S', cx-W*0.152, top+H*0.652);
+    ctx.fillText('VARIES. SUCH AS TUNNER AND MR. BLACK AND PAUL', cx-W*0.152, top+H*0.666);
+    ctx.fillText('AND ENDLESSANIMATIONS…” AUG 14: HIS ROLES ARE', cx-W*0.152, top+H*0.680);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“LAI, HUMAN-LIKE, MR. BLACK, PAUL, FOG, SHADOW…”', cx-W*0.152, top+H*0.698);
+    ctx.fillText('SO THE VILLAIN THE BACKS ACCUSE, THE HAND THAT', cx-W*0.152, top+H*0.712);
+    ctx.fillText('TEARS THE FABRIC AND THE MAN WHO WALKS THROUGH', cx-W*0.152, top+H*0.726);
+    ctx.fillText('THE OPENING ARE ALL THE SAME PERSON.', cx-W*0.152, top+H*0.740);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(255,77,109,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE SCREAM IN THIS ARCHIVE HAS', cx+W*0.186, top+H*0.616);
+    ctx.fillText('ALWAYS BELONGED TO ONE CHARACTER.', cx+W*0.186, top+H*0.632);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('IT RUNS 26 TIMES ON THE CLASSICS ERA PAGE AND THE', cx+W*0.186, top+H*0.652);
+    ctx.fillText('NAMED ONES ARE OREN, EVERY TIME, AND EVERY TIME', cx+W*0.186, top+H*0.666);
+    ctx.fillText('AT SOMETHING ALREADY FINISHED.', cx+W*0.186, top+H*0.680);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 2, 8:29 PM HE TAUNTED “YA THINK I’LL SCREAM', cx+W*0.186, top+H*0.698);
+    ctx.fillText('AGAIN?” AND THEN “OREN LOOKS AND SCREAMS.”', cx+W*0.186, top+H*0.712);
+    ctx.fillText('TONIGHT THE WHOLE CAST DOES IT AT ONCE, AND SO DO', cx+W*0.186, top+H*0.726);
+    ctx.fillText('THE PLAYERS, WHO SOLVED THE PUZZLE THEMSELVES.', cx+W*0.186, top+H*0.740);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(240,246,255,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“TEARS THE FABRIC” — AUG 30 HE DESTROYED IT WITH A SNAP; ON JULY 20 IT WAS MADE OF CHARACTERS, “PERO USED EACH FOR FABRIC.”', cx, top+H*0.774);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(240,246,255,0.86)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('SCROLLING IS A CREATOR’S MOTION HERE — SEPT 2: HE “SCROLLS THROUGH THE ADMIN COMMANDS HE HAS AS CREATOR.”', cx, top+H*0.792);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(143,227,255,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('THE SENTENCE RUNS TWENTY-NINE WORDS, TWENTY-EIGHT IF “MR. BLACK” IS ONE. SEPT 1’S ROSTER WAS 20 SPRUNKIS + PERO LAI.', cx, top+H*0.810);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(255,77,109,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“LOL” HAS ZERO PRIOR HITS IN THIS ARCHIVE, AND SINCE SEPT 5 HIS EMOJI HAS BEEN LIMITED TO ONE. HERE HE LAUGHS IN LETTERS.', cx, top+H*0.828);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(234,240,250,0.88)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“ALL WITHOUT FUN” — MR. FUN COMPUTER AND FUN BOT ARE IN HIS OWN GROUP, AND FUN BOT HELPED BEAT HIM ON SEPT 5.', cx, top+H*0.846);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(143,227,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ I JUST WANTED TO SEE YOUR REACTIONS ★', cx, top+H*0.928);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===782){
