@@ -4,6 +4,51 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-24 — ONLY THE DIAMOND EYES (BEAT 792)
+
+Based on Toby's 2026-09-24 lore, **6:43 AM**, **thirteen hours and two minutes** after beat 791, same thread.
+His own typing is **one sentence and nothing else**. The paragraph under it ("That gives Pero LAI's ice a much
+scarier effect...") is a pasted reply and is **commentary, not canon**; the attached file name,
+`Create_a_video_of_several_diam.mp4`, is a generator instruction and is not lore either.
+
+> "When anything is in Pero LAI's ice, they see the diamond eyes and can only see the diamond eyes, the whole
+> thing goes forever." — 6:43:22 AM
+
+- new beat 792 at `lvSeg` 17144.0-17166.0, `LV_CYC` 17166.0, `LV_BEATS` length 793
+- **the ice is thirty-eight hours and thirty-nine minutes old, and this is its second rule.** September 22,
+  4:04 PM, beat 780: *"Pero LAI touched one of his katatas that wasn't touched yet, the katata froze"*, and
+  *"The only thing that can melt or get out of MY ice is only God himself!"* **That rule was about getting
+  out. This one is the first about what happens while you are in.** That night he carried the frozen ones to
+  the labatory, threw knifes and nettles at the ice, and put them in the tubes — **the ice was a door; this
+  morning it is a room**
+- **the inversion at the centre of the beat.** Every eye rule this archive has ever had is about what the eyes
+  do to whatever they are pointed at: the Eye-Stability Scale, yellow — *"everything Simon looks at
+  vaporizes"*, *"sight = 1,000,000 sunbeams"*; orange — the world disappears; red — the lab melts; black —
+  *"the most unstable state in existence"*; and the standing warning, *"anyone in line of sight is in
+  danger."* **These eyes do nothing to you. You just cannot stop looking at them**
+- **right panel: he built a mountain out of the fear of eyes seventeen days ago.** September 7, 7:43 AM —
+  *"Ommetaphobia — fear of eyes update. Eyes appear from the holes."* The word had **zero prior hits**, it is
+  the archive's first phobia about **being seen**, and it names the mountain that holds **the past**. For two
+  days before it everything went **into** the holes; that was the first thing to come **out** of one. With
+  September 19, beat 758: *"an anomaly of millions of eyes looked at the heroes, face to face to face to face
+  to face"*
+- **the diamond and the endless mind-trap were already one move, and the move was Simon's.** April 26, Email
+  180 — **Infinite Void**: purple lines across the screen, the game blurs and fades, total black, **a diamond
+  ring**, the sun returning as a black hole, and then *"the victim's mind overfills — and it is Game Over."*
+  The archive's own note: *"Infinite Void targets the player rather than just the avatar... the kill is
+  mental overload, not physical damage."* **A hundred and fifty-one days ago**
+- **his eyes have been teal since September 13** — *"Pero LAI's full eyes is neon teal"*, restated twice on
+  September 16 — and **teal is the one eye colour this archive deliberately kept off the stability scale**.
+  This morning they are diamond. **"diamond eyes" has zero prior hits**
+- **and he calls it "Pero LAI's ice."** Thirteen hours earlier: *"Neka Omazen is now THE ONLY NAME he has
+  now... he erased the others."* **The first thing he writes after erasing every other name is the old one**
+- drawing: a hexagonal slab of ice with a frozen figure inside and frost cracks running to its faces, wrapped
+  in five rings of diamond eyes — 8, 13, 18, 24, 30 — that carry on past the edge of the panel, each ring
+  fading into the next so the field has no end
+- new `diamondeyes` scene in `tools/capture_screenshot.py`
+
+![Beat 792 — Only The Diamond Eyes](screenshots/854-only-the-diamond-eyes.png)
+
 ## 2026-09-23 — CURRENTLY PROPERTY OF NEKA OMAZEN (BEAT 791)
 
 Based on Toby's 2026-09-23 lore, **5:41 PM**, **twenty-nine minutes and seventeen seconds** after beat 790, same
