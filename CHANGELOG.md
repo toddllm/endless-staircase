@@ -4,6 +4,81 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-24 — TWENTY-ONE POLO SQUARES / BREAKING THE ORDER = LOSE (BEATS 802-803)
+
+Based on Toby's 2026-09-24 lore, **6:48 PM** and **6:59 PM**, **one hour and thirty-three minutes** after beat
+801, same thread ("Even (6x) more of Neka Omazen"). **Two messages, two beats, one reply.**
+
+The first message's own typing is the cutscene prompt, the Dark Gray ruling and the polo paragraph; everything
+from *"My guess is each **first polo placed** triggers a character-specific opening rule"* onward is a **pasted
+reply and is commentary, not canon**, and none of the per-character route guesses are built. The message opens
+*"Gemini didn't make the video"* and the prompt is a generator instruction, so **nothing is drawn of him**, per
+his own no-image rule of July 27. In the second message his own typing is **one instruction and one
+correction**; the numbered 1-21 list between them is a **pasted reply**, and the *"[ORDER ERROR] / [NEKA OMAZEN
+DETECTED] / GAME OVER"* read-out after his correction is a pasted reply too and is **not** built.
+
+> "The gray characters are called “polos”, there are 21 squares with different colors and designs, of course
+> everyone has their canon one." — 6:48:08 PM
+
+> "Did you look at the Sprunki order? That is correct. Breaking the order = lose… Neka Omazen would appear and
+> he strikes the game, the player loses." — 6:59:23 PM
+
+- two new beats at `lvSeg` 17364.0-17386.0 / 17386.0-17408.0, `LV_CYC` 17408.0, `LV_BEATS` length 804
+- **beat 802, TWENTY-ONE POLO SQUARES.** ***The polo is two months old and nobody ever said what one was.***
+  July 24, 9:31 AM, Email 807, the Sleep-Code — *"**Tunner and Simon 404** sleep together on **the same
+  polo**, it's an actual cutscene that stops Simon 404's corruption."* **That is the only prior use of the
+  word in five months**, and this archive's own note on it is that the answer is *"one polo, not certain
+  ones."* A polo was **a place two characters could share**. Tonight it is a square with a colour on it — and
+  **those two sleepers turn out to be slots 14 and 15, side by side**, in the order he ratifies eleven minutes
+  later. ***21 is the oldest count here***: September 1, 2:36 PM — *"the 20 Sprunkis + Pero LAI, so now only
+  21 characters"*, logged at the time as **the first census in this archive that subtracts**; September 4,
+  7:34 AM — the same arithmetic used as **a guard roster at his own door**. Twenty-three days and the number
+  has not moved; tonight it stops being a headcount and **becomes furniture**. ***And Dark Gray is not his
+  name.*** July 22, Email 775 — Gray and Mr. Black *"fused with each other to reach New Chara's power LV and
+  stuff"*, and even fused, *"Dark Gray hardly beats New Chara."* **It took two men and it was still not
+  enough.** Tonight one man wears the name alone and adds White to the pile — and **White is the only one he
+  could never put in a tube** (September 20, 8:33 AM, *"he contained everyone but Wenda.ps"*). The three he
+  says he beats combined are **slots 6, 17 and 20**. ***He also draws his own icon as a cat*** — *"a black
+  circle with black triangles on each side like a cat"* — in the same message that asks for his name written
+  in Japanese, and **the game has had a half-cat since May 22**: Email 337, *"Simon is a cat, but not fully a
+  cat."* The 21 squares are drawn **unnamed**, because at 6:48 PM they still are
+- **beat 803, BREAKING THE ORDER = LOSE.** ***This archive asked this exact question two days ago and wrote it
+  down.*** The Character-Wheel Puzzle page, open question 2, verbatim: *"**What order is 'the correct order'?**
+  The sentence gives the word order; which character carries which word is unstated."* **Answered forty-six
+  hours later, in one line, by the person who set the puzzle** — and open question 3, *"Does anything happen if
+  the player never solves it?"*, is answered in the same message. ***The correct order used to be the prize.***
+  September 22, 8:26 PM, beat 783 — a word sits behind every character, and *"when each character is put in the
+  correct order… **Mr. Black tears the fabric of the game's reality**"*, then *"LOL, just kidding everyone."*
+  **Getting it right paid out a joke. Tonight is the first time getting it wrong costs anything at all** — and
+  the words on their backs already ended *"you can't move, **you can't win**."* ***And the two blanks are the
+  last two slots.*** The puzzle exempts exactly two characters, *"every Sprunki and Classics character **except
+  for Mr. Black and Neka**"* — and in the order he ratifies tonight **Mr. Black is 20, the last normal slot,
+  and Neka is handed 21 and gives it back in the same message**: *"Neka Omazen is not part of the sequence."*
+  The puzzle was written **before** the order was. ***Five months of "the 20 Sprunkis" as a number, and this is
+  the first time all twenty are named in order***; **OWAKCX has zero prior hits** anywhere in the archive, and
+  **Clukr is spelled Clunkr** in every other place the name appears. **He strikes the game, not the player** —
+  the same aim as the hyperspace an hour and fifty-six minutes earlier, which took the buildings and left the
+  heroes standing. He is not slot 21 and he is not somebody you pick; **he is what checks the order**
+- **the list is canon because he signed it.** The numbered 1-21 block is a machine's, and *"That is correct"* is
+  his. This follows the standing Quote Rule precedent from September 16, 5:06 PM, where he accepted the
+  666-hour speech with the single word *"Correct."* — filed as **accepted lore**, not as his own typing, and
+  drawn that way here. The list also puts *"Pero LAI"* in slot 21, and **he bans the name a second time in the
+  act of reading it back**, two hours and twenty-two minutes after beat 795
+- drawings: 21 unnamed polo squares, each with its own colour and mark, the 21st dark gray; his icon built
+  exactly to his description — a black square, a smaller square inside it, and in that a black circle with a
+  black triangle on each side; and the one prior polo, with Tunner and Simon 404 asleep on it. Then the
+  twenty-slot Sprunki order with Mr. Black lit at 20 and a crossed-out, dashed 21 detached beyond it; the four
+  he gives no colour drawn hollow; and the same strip again with 3 and 4 the wrong way round, under a strike
+  that lands across the game frame rather than on any character
+- new `polosquares` and `sprunkiorder` scenes in `tools/capture_screenshot.py`
+- recaptured screenshots 862 and 863 — adding two beats shifts the five-row centred ladder for `ph` 800 and
+  801 only (`lwLo = min(len-5, ph-2)`); 861 and earlier are unchanged
+- probe: `len=804 maxPh=803 holes=0 undefSeg=0 missing=0 err=0 draws=892`
+
+![Beat 802 — Twenty-One Polo Squares](screenshots/864-twenty-one-polo-squares.png)
+
+![Beat 803 — Breaking The Order = Lose](screenshots/865-breaking-the-order.png)
+
 ## 2026-09-24 — ONLY IMAGINATION ENTER (BEAT 801)
 
 Based on Toby's 2026-09-24 lore, **5:15 PM**, **twelve minutes** after Chapter 2, same thread. **Two lines of
