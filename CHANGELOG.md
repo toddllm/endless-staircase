@@ -4,6 +4,88 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-24 — FIVE HEADS AND NO EYES / NOW I HAVE TO DO EVERYTHING MYSELF / NEVER SAY PERO LAI AGAIN / 666% CORRECT (BEATS 793-796)
+
+Based on Toby's 2026-09-24 lore, **4:37 PM**, **nine hours and fifty-four minutes** after beat 792, same thread
+("Even (6x) more of Neka Omazen"). **One message, two blocks of his own typing, four beats, one reply.**
+
+The message has three parts and only two of them are canon. The **opening paragraph** is his own typing. The
+**long Three Way Heroes excerpt** in the middle is a pasted book chapter — Chapter 1, page numbers and all —
+and almost every line in it is already built (*"I KNOW YOUR REAL NAME"* is beat 758, *25 Series Dragon's Ride*
+is beat 761, the black clone of Nova is beat 763); **nothing in it was built again**. The **Chapter 2 opening**,
+which he dates himself — *"This part was made on September 24 2026 when a whole lot of stuff changed in
+Classics lore"* — is his own typing and is beat 796. Everything from *"That is a major separation point in the
+lore."* to the end is a **pasted recap and is commentary, not canon**.
+
+> "Defeating everyone gave a light among all of them, the tubes glow, and from the light the orbs combined,
+> then suddenly, a terrifying beast emerges from the light, it's claws scratched the titainuim floor, and it
+> has 5 heads, and no eyes... Meanwhile, in between fiction and reality, I made Abinations of everyone myself.
+> Gray.ps was beaten, Mr. Black was beaten, Wenda.ps was beaten, Shadow.ps was beaten, Newtale Gaster is
+> beaten, only I am originally from Classics, others just warped here... *NOW I HAVE TO DO EVERYTHING
+> MYSELF!*" — 4:37:42 PM
+
+- four new beats at `lvSeg` 17166.0-17188.0 / 17188.0-17210.0 / 17210.0-17232.0 / 17232.0-17254.0,
+  `LV_CYC` 17254.0, `LV_BEATS` length 797
+- **beat 793, FIVE HEADS AND NO EYES.** The tubes were built to **hold** people — September 20, 6:40 AM,
+  *"the secret is a room of many tubes, he will try to contain everyone in one"* — and last night everyone
+  went to sleep inside them. **Tonight they produce something.** *"no eyes"* has **zero prior hits in five
+  months**, and it lands **ten hours** after beat 792 made an entire room out of eyes you cannot look away
+  from. **The floor is the metal that made him**: `titainuim` has exactly one story in this archive, September
+  20, 4:49 PM — *"Pero LAI touched the glowing titainuim and the glowing uranuim and both disappeared. Flower
+  is safe, Pero became Pero LAI and godly."* **He is making monsters on the floor of the room where he became
+  one.** The orbs are his own, from twenty-three hours earlier: *"he makes infinity orbs of every color."*
+  Five heads is not the record — Durple ended the August 12 collapse route with **15** — so the new thing is
+  not the count, it is the absence
+- **beat 794, NOW I HAVE TO DO EVERYTHING MYSELF.** ***Abinations are Gray's, and the first name on his beaten
+  list is Gray.ps.*** July 19, Email 744 — *"Abinations are evil aliens that serve Gray"*, *"weird
+  black-spotted paint blob creatures."* **He beat the man and kept the machine.** `Shadow.ps` has **zero prior
+  hits**: the shadow fox gets a file and is beaten in the same sentence, and *.ps* is a permission slip —
+  September 20, *".ps stands for 'profile section entity', they were given files by Pero LAI to stay in
+  Classics."* **And *"originally from Classics"* is a test he did not write**: August 5, Email 894, the 666D
+  strain takes *"all other beings **not originally from Classics 1-box** (from Classics fangames) and modded
+  characters."* That is the one mechanic here that ever sorted the cast by origin, and it was a disease.
+  **The way out is already written down**: August 18, Email 1044 — character → Abination → Lost Soul → alive,
+  walked backwards by the player
+- **beat 795, NEVER SAY PERO LAI AGAIN.** ***He once turned the green code red; now he collects it.*** July 27
+  — *"it takes the green code and turns it red overtime"*; August 3, his own arithmetic — *"Red = negitive
+  power, Blue = positive power, **Green = 0 power**."* Twenty-three hours ago he **put** the hackers into green
+  0s and 1s; tonight he **takes** the green out of the players and the hackers simply disappear. ***And he
+  takes the fox off Wenda.*** August 8, Email 931 — *"Wenda is the fox, Gray can't rub her to sleep"* — is
+  **the first line of her own page**, there for one reason: to explain why the cat trick fails on her. It took
+  **ten days** to domesticate *"the shadow fox"*; yesterday morning she was *"just a normal fox pretending like
+  she has infinite power over me"*; tonight *"Neka Omazen is the actual fox being in the game, Wenda.ps warped
+  into the game afterward."* **tdeshane** completes a week-long arc — blocked September 19, edited September
+  23, *"now on Neka Omazen"* tonight. **And he bans the name and then uses it twice more in the same message**
+- **beat 796, 666% CORRECT.** ***The other two 666% were about how often. This one is about being right.***
+  September 10 — *"666% of the time, you can see Pero LAI jamming kettles into ice blocks"*; September 19 —
+  *"666% of the runs will show Pero LAI to the player."* **A percentage above one hundred is not a
+  measurement.** He then erases **the oldest layer in the archive**: the Logic Religion is Classic RL, before
+  Classics, before the staircase, and **Orus** led it from the summit of Mount Olympus with the rule that a
+  being *"requires beings to climb Mount Olympus and be seen by him for more than 1 second to be considered
+  real."* **The being who decided what counted as real is erased by the one who is correct 666% of the time.**
+  And it is the **second** time those two fall — May 31, **Toji Simon**, *"the Simon's Deity, more powerful
+  than Orus"*, took out Orus and Dark Yellow — except this time the religion goes with them. **Parinus is the
+  only name on the list without a line through it**, *"left clean"*, after five months of emptying. **666 is
+  not his number** (April 24, Email 169 — Clara *"made Error404 and Error666"*), and the **cat ears are
+  Simon's** (August 25) while the **fox tail** is the animal he took off Wenda one paragraph earlier
+- drawings: seven glowing tubes on a titainuim floor with claw scratches, orbs rising and converging into a
+  five-headed body with a flat band where each face's eyes would be; five name cards going under ink with one
+  figure left standing; a plasma control center with green 0s and 1s crossing from the players and a
+  struck-through PERO LAI nameplate; a dial whose needle is past the end of its own scale over a seven-row
+  erasure list
+- new `fiveheads`, `everythingmyself`, `neversaypero` and `correct666` scenes in `tools/capture_screenshot.py`
+- recaptured screenshots 853 and 854 — adding four beats shifts the five-row centred ladder for `ph` 791 and
+  792 only (`lwLo = min(len-5, ph-2)`)
+- probe: `len=797 maxPh=796 holes=0 undefSeg=0 missing=0 err=0 draws=797`
+
+![Beat 793 — Five Heads And No Eyes](screenshots/855-five-heads-and-no-eyes.png)
+
+![Beat 794 — Now I Have To Do Everything Myself](screenshots/856-now-i-have-to-do-everything-myself.png)
+
+![Beat 795 — Never Say Pero LAI Again](screenshots/857-never-say-pero-lai-again.png)
+
+![Beat 796 — 666% Correct](screenshots/858-666-percent-correct.png)
+
 ## 2026-09-24 — ONLY THE DIAMOND EYES (BEAT 792)
 
 Based on Toby's 2026-09-24 lore, **6:43 AM**, **thirteen hours and two minutes** after beat 791, same thread.
