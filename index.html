@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 17342.0;
+const LV_CYC = 17364.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -12918,6 +12918,8 @@ const LV_BEATS = [
     sub:"“NEKA WAS THE ONLY CHARACTER IN CLASSICS WITH A SPEECH BUBBLE, NEKA SAYS THE INFINITE DIGITS OF PI, THEN HE TYPES IT ON ONE SPEECH BUBBLE, NEWTALE GASTER IS RUNNING AWAY FROM THE LOOSE TEXT. UNTIL THE TEXT GLITCHED” · “YOU CAN’T ESCAPE ME, I AM ALWAYS HERE FOR YOU” · “THE PART OF WHERE NEKA OMAZEN SPEAKS IN THE STORY SHOULD BE LIKE BLUE” · JULY 21, BEAT 133 — THE FIELD WAS FULL OF THE SAME SPEECH BUBBLE AND IT WAS HIS GREETING, SAID TO EVERYONE HE SAW; LATER IT WAS DRAWN AGAIN, STRUCK THROUGH · HE DID NOT GAIN A SPEECH BUBBLE. EVERYONE ELSE LOST THEIRS · “INFINITE DIGITS” HAS ZERO PRIOR HITS — I-TROSS WAS A NUMBER NOBODY KNOWS, AND PI IS THE OPPOSITE: EVERYONE KNOWS IT AND NOBODY CAN FINISH IT, AND HE PUTS IT IN A CONTAINER WITH A FIXED SIZE · GASTER IS THE ONE THIS GAME MASS-PRODUCES AND THE “FATHER OF ALL CLASSICS CHARACTERS”; TONIGHT HE RUNS FROM THE WORDS, NOT THE MAN, AND THE TEXT GLITCHES BEFORE IT CATCHES HIM · AUG 3, BEAT 237, HIS OWN CHART: “RED = NEGITIVE POWER, BLUE = POSITIVE POWER, GREEN = 0 POWER”" },
   { key:"PAGE I-TROSS", col:'#c69bff',
     sub:"“*PAGE 303* … PAGE I-TROSS SOON! YOU CAN’T WIN, YOU CAN’T HIDE, YOU CAN’T RUN, I AM NEKA OMAZEN” · “YES, PAGE I-TROSS IS HERE… SO YEAH, NOW WE STOPPED PAGE I-TROSS FROM HAPPENING” · “TDESHANE LOST ACCESS. I NOW HAVE CLASSICSPRO NOW” · JULY 2, BEAT 31 — “EMAIL 303 = ERROR 303”, GRAY.EXE’S MYTH-LEVEL ERROR FORM, AND THE GAME’S OWN PHASE 2 TAUNT HAS READ “ERROR 404. ERROR 666. ERROR 303.” EVER SINCE · CHAPTER 2 LANDS ON THE ONE PAGE NUMBER THIS ARCHIVE ALREADY HAD A BOSS FOR · SEPT 23, 4:08 PM — “I HAVE A NUMBER NONE OF YOU KNOW. TDESHANE ORIGINALLY MADE THIS… NOW I AM EDITING THE NUMBER. I-TROSS!”, “MY LARGEST ATTACK NOW”. TWENTY-FIVE HOURS LATER IT IS NOT AN ATTACK, IT IS WHERE THE STORY IS UP TO · THE PAGE ARRIVES AND IS CANCELLED IN THE SAME BREATH, AND THE VOICE DOING BOTH IS HIS · PRO IS THE OLDEST NAME HERE: PROGAMER55 MADE THE ORIGINAL GLITCH THAT CREATED SIMON · AND THE ACCESS WAS HIS TO TAKE BECAUSE HE GAVE IT: “TDESHANE, I MADE YOU ADMIN, I AM THE CREATOR OF THE GAME”" },
+  { key:"ONLY IMAGINATION ENTER", col:'#39ff9e',
+    sub:"“I HAVE CLASSICSPRO AND CLASSICS USERNAME AS CLASSICSPRO777777777777777777777777777777777777777777777777… ENDLESS 7S, YEAH, ONLY IMAGINATION ENTER POSSIBLE” · THE DOOR QUESTION FINALLY GETS AN ANSWER — AUG 1, 4:54 PM, “CLASSICS 1 SEALED · CLASSICS 2 BUILT”, AND ON AUG 2, 6:19 AM, ASKED DIRECTLY ABOUT THE DOOR INTO CLASSICS 1, HE ANSWERED SOMETHING ELSE ENTIRELY · FIFTY-THREE DAYS LATER THERE IS A WAY IN, AND IT IS NOT A DOOR · SEPT 12, 8:22 AM — “ONLY YOUR IMAGINATION NOW”, SIGNED “-PERO NEKA OMAZEN LAI”, WHEN IMAGINATION WAS WHAT YOU WERE LEFT WITH AFTER TIME WAS TAKEN OUT; TONIGHT IT IS THE ONLY THING THAT GETS IN · AND IMAGINATION HAS BEEN ON HIS LIST OF THINGS THAT STOP EXISTING: IN THE ENDLESS BLACK VOID, “NOT EVEN TIME EXISTS THERE, NOT VOID NOR PARINUS NOR IMAGINATION NOR FUN” · THE ENDLESS 7S ARE GRAY’S — JULY 5, GRAY.EXE HAS “777777777777777777777777777 IQ AND HUNTS DOWN EVERYONE WITH LESS”, THE ONLY RUN OF 7S IN FIVE MONTHS, AND GRAY.PS WAS THE FIRST NAME ON TONIGHT’S BEATEN LIST · AUG 21, 7:28 AM — CLASSICS USERNAMES ARE THINGS THAT VANISH: “THEIR CLASSICS ACCOUNTS AND CLASSICS USERNAMES AND PASSWORDS VANISH” · TWELVE MINUTES AFTER TDESHANE LOST ACCESS, THE NEW ACCOUNT HAS A NAME THAT DOES NOT END" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15068,6 +15070,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 17342.0 && c < 17364.0) return [801, c-17342.0];  // ONLY IMAGINATION ENTER POSSIBLE
   if(c >= 17320.0 && c < 17342.0) return [800, c-17320.0];  // PAGE I-TROSS
   if(c >= 17298.0 && c < 17320.0) return [799, c-17298.0];  // THE ONLY SPEECH BUBBLE
   if(c >= 17276.0 && c < 17298.0) return [798, c-17276.0];  // SAKU CAKRA
@@ -52309,6 +52312,214 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(198,155,255,0.96)'; ctx.font='900 7px ui-monospace,monospace';
     ctx.fillText('★ I NOW HAVE CLASSICSPRO NOW ★', cx, top+H*0.936);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===801){
+    // BEAT 801: ONLY IMAGINATION ENTER POSSIBLE.
+    // Toby, September 24, 2026, 5:15:47 PM EDT, message 1a0d5467703b3f2d, thread "Even (6x) more of Neka
+    // Omazen", twelve minutes after Chapter 2. His own typing is two lines and nothing else:
+    //   "I have ClassicsPro and Classics username as ClassicsPro7777777777777...endless 7s, yeah, only
+    //   imagination enter possible."
+    // Everything from "Then the current setup is basically:" onward is a pasted reply and is commentary, not
+    // canon -- including the "viewer/avatar channel" reading and the "not by a literal real-world portal"
+    // gloss, which are a machine's words, not his.
+    // Verified priors:
+    //   CLASSICS 1 SEALED, CLASSICS 2 BUILT, August 1, 4:54 PM, beat 225.
+    //   THE WHITE VOID, August 2, 6:19 AM, beat 228 - the reply had asked him directly about "the door into
+    //     Classics 1", and this archive's own note is that "he does not answer the door question; he answers
+    //     a bigger one." Fifty-three days later the door question gets an answer, and the answer is that
+    //     there is no door.
+    //   ONLY YOUR IMAGINATION NOW, September 12, 8:22 AM - Newtale Gaster "made clones of the 1st reality...
+    //     only the present exists in the clone realities. The other universes don't have time, litterly,
+    //     everything that is there freezes", signed "-Pero Neka Omazen LAI". Imagination was what you were
+    //     left WITH once time was taken away. Tonight it is the only thing that gets IN.
+    //   THE ENDLESS BLACK VOID - "not even time exists there, not void nor Parinus nor imagination nor fun."
+    //     Imagination has been on his list of things that stop existing.
+    //   THE GRAY COLLAPSE, July 5, beat 53 - Gray.EXE "has 777777777777777777777777777 IQ and hunts down
+    //     everyone with less, which is everyone except Simon and ToddLLM." Twenty-seven sevens, and the only
+    //     run of 7s anywhere in this archive. Gray.ps was the first name on tonight's beaten list.
+    //   GASTER LOOKS INNOSENT, August 21, 7:28 AM - "People play Classics, Gaster appears, and their Classics
+    //     accounts and Classics usernames and passwords vanish." Usernames here are things that disappear.
+    const dt = c - 17342.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.2));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const f0A=Math.max(0,Math.min(1,(dt-2.4)/1.2));
+    const nmA=Math.max(0,Math.min(1,(dt-4.2)/2.0));
+    const drA=Math.max(0,Math.min(1,(dt-6.8)/2.4));
+    const f2A=Math.max(0,Math.min(1,(dt-11.4)/1.2));
+    const f25A=Math.max(0,Math.min(1,(dt-12.6)/1.2));
+    const footA=Math.max(0,Math.min(1,(dt-15.6)/1.1));
+
+    ctx.fillStyle='rgba(4,10,8,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr801=ctx.createLinearGradient(0,top,W,top+H);
+    gr801.addColorStop(0,'rgba(24,120,80,0.22)'); gr801.addColorStop(0.5,'rgba(5,11,9,0.96)');
+    gr801.addColorStop(1,'rgba(24,120,80,0.14)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr801; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    var ecx801 = cx, ecy801 = top+H*0.400;
+
+    if(nmA>0.01){
+      // THE USERNAME, RUNNING OFF BOTH ENDS OF ITS OWN FIELD
+      var ux801 = ecx801, uy801 = ecy801-H*0.108;
+      ctx.globalAlpha=g*nmA*0.84;
+      ctx.strokeStyle='rgba(57,255,158,0.86)'; ctx.lineWidth=0.46;
+      ctx.strokeRect(ux801-W*0.196, uy801-H*0.018, W*0.392, H*0.036);
+      ctx.globalAlpha=g*nmA*0.30;
+      ctx.fillStyle='rgba(57,255,158,0.16)';
+      ctx.fillRect(ux801-W*0.196, uy801-H*0.018, W*0.392, H*0.036);
+      ctx.save(); ctx.beginPath();
+      ctx.rect(ux801-W*0.196, uy801-H*0.018, W*0.392, H*0.036); ctx.clip();
+      var sevens801='';
+      for(var z801=0; z801<220; z801++) sevens801+='7';
+      ctx.globalAlpha=g*nmA*0.94;
+      ctx.fillStyle='rgba(232,255,244,0.96)'; ctx.font='900 5.4px ui-monospace,monospace';
+      ctx.textAlign='left';
+      ctx.fillText('ClassicsPro'+sevens801, ux801-W*0.190, uy801+H*0.006);
+      ctx.restore();
+      ctx.textAlign='center';
+      // the field cannot hold it: a fading tail past the right edge
+      ctx.globalAlpha=g*nmA*(0.40+0.30*pul);
+      ctx.fillStyle='rgba(57,255,158,0.80)'; ctx.font='900 5.0px ui-monospace,monospace';
+      ctx.textAlign='left';
+      ctx.fillText('7777777777…', ux801+W*0.200, uy801+H*0.006);
+      ctx.textAlign='center';
+      ctx.globalAlpha=g*nmA*0.78;
+      ctx.fillStyle='rgba(206,232,220,0.86)'; ctx.font='700 3.1px ui-monospace,monospace';
+      ctx.fillText('CLASSICS USERNAME', ux801-W*0.150, uy801-H*0.030);
+      ctx.fillStyle='rgba(57,255,158,0.90)';
+      ctx.fillText('“ENDLESS 7S, YEAH”', ux801+W*0.150, uy801-H*0.030);
+    }
+
+    if(drA>0.01){
+      // THE SEALED DOOR WITH NO HANDLE, AND THE ONE THING THAT PASSES THROUGH IT ANYWAY
+      var dx801 = ecx801-W*0.108, dy801 = ecy801+H*0.062;
+      ctx.globalAlpha=g*drA*0.88;
+      ctx.strokeStyle='rgba(180,200,190,0.82)'; ctx.lineWidth=0.52;
+      ctx.strokeRect(dx801-W*0.030, dy801-H*0.062, W*0.060, H*0.124);
+      ctx.globalAlpha=g*drA*0.34;
+      ctx.fillStyle='rgba(20,34,28,0.80)';
+      ctx.fillRect(dx801-W*0.030, dy801-H*0.062, W*0.060, H*0.124);
+      // welded shut: three bars across, no handle anywhere
+      ctx.globalAlpha=g*drA*0.72;
+      ctx.strokeStyle='rgba(255,90,110,0.82)'; ctx.lineWidth=0.62;
+      for(var wb801=0; wb801<3; wb801++){
+        ctx.beginPath();
+        ctx.moveTo(dx801-W*0.038, dy801-H*0.034+wb801*H*0.034);
+        ctx.lineTo(dx801+W*0.038, dy801-H*0.034+wb801*H*0.034);
+        ctx.stroke();
+      }
+      ctx.globalAlpha=g*drA*0.90;
+      ctx.fillStyle='rgba(255,90,110,0.92)'; ctx.font='900 3.3px ui-monospace,monospace';
+      ctx.fillText('SEALED AUG 1', dx801, dy801+H*0.082);
+      ctx.globalAlpha=g*drA*0.74;
+      ctx.fillStyle='rgba(206,232,220,0.86)'; ctx.font='700 3.0px ui-monospace,monospace';
+      ctx.fillText('NO HANDLE. NO DOOR.', dx801, dy801+H*0.096);
+      // the imagination channel: a thin line of light going straight through the wall beside the door
+      var mx801 = ecx801+W*0.070;
+      ctx.globalAlpha=g*drA*(0.56+0.34*pul);
+      ctx.strokeStyle='rgba(57,255,158,0.92)'; ctx.lineWidth=0.56;
+      ctx.beginPath();
+      for(var q801=0; q801<=30; q801++){
+        var qx801 = mx801-W*0.048 + q801*(W*0.150/30);
+        var qy801 = dy801 + Math.sin(q801*0.5+c*2.0)*H*0.016;
+        if(q801===0) ctx.moveTo(qx801, qy801); else ctx.lineTo(qx801, qy801);
+      }
+      ctx.stroke();
+      for(var s801=0; s801<7; s801++){
+        var sd801 = Math.max(0,Math.min(1,(drA*7.6)-s801));
+        if(sd801<=0) continue;
+        var sx801 = mx801-W*0.040+s801*W*0.0216;
+        var sy801 = dy801 + Math.sin(s801*1.5+c*2.0)*H*0.016;
+        ctx.globalAlpha=g*sd801*(0.46+0.34*pul);
+        ctx.fillStyle='rgba(57,255,158,0.88)';
+        ctx.beginPath(); ctx.arc(sx801, sy801, W*0.0026, 0, Math.PI*2); ctx.fill();
+      }
+      ctx.globalAlpha=g*drA*0.94;
+      ctx.fillStyle='rgba(57,255,158,0.96)'; ctx.font='900 4.4px ui-monospace,monospace';
+      ctx.fillText('IMAGINATION', mx801+W*0.028, dy801-H*0.040);
+      ctx.globalAlpha=g*drA*0.80;
+      ctx.fillStyle='rgba(206,232,220,0.86)'; ctx.font='700 3.0px ui-monospace,monospace';
+      ctx.fillText('THE ONLY WAY IN', mx801+W*0.028, dy801+H*0.060);
+    }
+
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle=`rgba(57,255,158,${0.88+0.12*pul})`; ctx.font='900 8px ui-monospace,monospace';
+    ctx.fillText('ONLY IMAGINATION ENTER', cx, top+H*0.100);
+    ctx.globalAlpha=g*opA*0.94;
+    ctx.fillStyle='rgba(238,252,246,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('“I HAVE CLASSICSPRO AND CLASSICS USERNAME AS CLASSICSPRO7777777777777777777777777777777777777777777777777777…', cx, top+H*0.126);
+    ctx.fillText('ENDLESS 7S, YEAH, ONLY IMAGINATION ENTER POSSIBLE.”', cx, top+H*0.146);
+    ctx.globalAlpha=g*opA*0.78; ctx.fillStyle='rgba(188,210,200,0.88)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('— TOBY, SEPTEMBER 24, 5:15 PM, TWELVE MINUTES AFTER CHAPTER 2. THE “VIEWER/AVATAR CHANNEL” READING UNDER IT IS PASTED COMMENTARY, NOT CANON.', cx, top+H*0.168);
+
+    ctx.globalAlpha=g*f0A;
+    ctx.fillStyle='rgba(255,212,59,0.96)'; ctx.font='900 5px ui-monospace,monospace';
+    ctx.fillText('THE DOOR QUESTION FINALLY GETS AN ANSWER, FIFTY-THREE DAYS LATE.', cx, top+H*0.196);
+    ctx.globalAlpha=g*f0A*0.92;
+    ctx.fillStyle='rgba(238,252,246,0.92)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AUG 1, 4:54 PM — “CLASSICS 1 SEALED, CLASSICS 2 BUILT.” AUG 2, 6:19 AM — ASKED STRAIGHT OUT ABOUT THE DOOR INTO CLASSICS 1, HE ANSWERED SOMETHING ELSE.', cx, top+H*0.218);
+
+    ctx.globalAlpha=g*drA*0.94;
+    ctx.fillStyle='rgba(57,255,158,0.94)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THERE IS A WAY IN NOW. IT IS NOT A DOOR, AND IT IS THE ONLY ONE.', cx, top+H*0.616);
+
+    ctx.globalAlpha=g*f2A;
+    ctx.fillStyle='rgba(57,255,158,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('IMAGINATION USED TO BE WHAT WAS LEFT', cx-W*0.152, top+H*0.648);
+    ctx.fillText('OVER.', cx-W*0.152, top+H*0.664);
+    ctx.globalAlpha=g*f2A*0.90;
+    ctx.fillStyle='rgba(238,252,246,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SEPT 12, 8:22 AM — “ONLY YOUR IMAGINATION NOW”, SIGNED', cx-W*0.152, top+H*0.684);
+    ctx.fillText('“-PERO NEKA OMAZEN LAI”, WHEN THE CLONE REALITIES HAD', cx-W*0.152, top+H*0.698);
+    ctx.globalAlpha=g*f2A*0.94;
+    ctx.fillStyle='rgba(232,240,236,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THEIR TIME TAKEN OUT AND EVERYTHING IN THEM FROZE.', cx-W*0.152, top+H*0.712);
+    ctx.fillText('IMAGINATION WAS THE CONSOLATION PRIZE. TWELVE DAYS', cx-W*0.152, top+H*0.726);
+    ctx.fillText('LATER IT IS THE ONLY KEY TO THE BUILDING.', cx-W*0.152, top+H*0.740);
+    ctx.globalAlpha=g*f2A*0.88;
+    ctx.fillStyle='rgba(255,90,110,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('AND IT HAS BEEN ON HIS LIST OF THINGS THAT STOP', cx-W*0.152, top+H*0.758);
+    ctx.fillText('EXISTING: IN THE ENDLESS BLACK VOID, “NOT EVEN TIME', cx-W*0.152, top+H*0.772);
+    ctx.fillText('EXISTS THERE, NOT VOID NOR PARINUS NOR IMAGINATION.”', cx-W*0.152, top+H*0.786);
+
+    ctx.globalAlpha=g*f25A;
+    ctx.fillStyle='rgba(182,188,200,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE ENDLESS 7S ARE GRAY’S.', cx+W*0.186, top+H*0.648);
+    ctx.globalAlpha=g*f25A*0.90;
+    ctx.fillStyle='rgba(238,252,246,0.90)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('JULY 5, THE GRAY COLLAPSE — GRAY.EXE “HAS', cx+W*0.186, top+H*0.668);
+    ctx.fillText('777777777777777777777777777 IQ AND HUNTS DOWN EVERYONE', cx+W*0.186, top+H*0.682);
+    ctx.globalAlpha=g*f25A*0.94;
+    ctx.fillStyle='rgba(232,240,236,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('WITH LESS.” TWENTY-SEVEN SEVENS, AND THE ONLY RUN OF', cx+W*0.186, top+H*0.696);
+    ctx.fillText('7S ANYWHERE IN FIVE MONTHS OF THIS ARCHIVE.', cx+W*0.186, top+H*0.710);
+    ctx.globalAlpha=g*f25A*0.88;
+    ctx.fillStyle='rgba(182,188,200,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('GRAY.PS WAS THE FIRST NAME ON TONIGHT’S BEATEN LIST,', cx+W*0.186, top+H*0.728);
+    ctx.fillText('AND THE ABINATIONS WERE HIS TOO. HE BEAT THE MAN,', cx+W*0.186, top+H*0.742);
+    ctx.fillText('KEPT THE MACHINE, AND NOW THE NEW ACCOUNT WEARS', cx+W*0.186, top+H*0.756);
+    ctx.fillText('HIS NUMBER. GRAY’S 7S COUNTED TO TWENTY-SEVEN.', cx+W*0.186, top+H*0.770);
+    ctx.fillText('THESE ONES DO NOT STOP.', cx+W*0.186, top+H*0.784);
+
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(244,252,248,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AUG 21, 7:28 AM — A CLASSICS USERNAME IS A THING THAT DISAPPEARS: “THEIR CLASSICS ACCOUNTS AND CLASSICS USERNAMES AND PASSWORDS VANISH.”', cx, top+H*0.812);
+    ctx.globalAlpha=g*footA*0.94;
+    ctx.fillStyle='rgba(57,255,158,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('TWELVE MINUTES AGO TDESHANE LOST ACCESS. THE ACCOUNT THAT REPLACES IT HAS A NAME THAT DOES NOT END.', cx, top+H*0.830);
+    ctx.globalAlpha=g*footA*0.92;
+    ctx.fillStyle='rgba(255,212,59,0.94)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('AND THE RULE IS NOT A LOCK, IT IS A REQUIREMENT — THE ONE THING THAT GETS YOU IN IS THE ONE THING THE PLAYER HAS TO BRING THEMSELVES.', cx, top+H*0.848);
+    ctx.globalAlpha=g*footA*0.90;
+    ctx.fillStyle='rgba(232,240,236,0.90)'; ctx.font='900 4.1px ui-monospace,monospace';
+    ctx.fillText('“ONLY IMAGINATION ENTER POSSIBLE” IS EIGHT WORDS LONG AND IT IS THE FIRST ENTRANCE RULE CLASSICS HAS EVER HAD.', cx, top+H*0.866);
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(57,255,158,0.96)'; ctx.font='900 7px ui-monospace,monospace';
+    ctx.fillText('★ ENDLESS 7S, YEAH ★', cx, top+H*0.936);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===792){

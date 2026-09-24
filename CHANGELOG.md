@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-24 — ONLY IMAGINATION ENTER (BEAT 801)
+
+Based on Toby's 2026-09-24 lore, **5:15 PM**, **twelve minutes** after Chapter 2, same thread. **Two lines of
+his own typing and nothing else.** Everything from *"Then the current setup is basically:"* onward is a
+**pasted reply and is commentary, not canon** — including the *"viewer/avatar channel"* reading and the *"not
+by a literal real-world portal"* gloss, which are a machine's words.
+
+> "I have ClassicsPro and Classics username as
+> ClassicsPro777777777777777777777777777777777777777777777777777777… endless 7s, yeah, only imagination enter
+> possible." — 5:15:47 PM
+
+- new beat 801 at `lvSeg` 17342.0-17364.0, `LV_CYC` 17364.0, `LV_BEATS` length 802
+- ***The door question finally gets an answer, fifty-three days late.*** August 1, 4:54 PM — *"Classics 1
+  sealed, Classics 2 built."* August 2, 6:19 AM — the reply asked him **straight out about the door into
+  Classics 1**, and this archive's own note on that beat is that *"he does not answer the door question; he
+  answers a bigger one."* **Tonight there is a way in, it is not a door, and it is the only one.**
+- ***Imagination used to be what was left over.*** September 12, 8:22 AM — *"only your imagination now"*,
+  signed *"-Pero Neka Omazen LAI"*, when Newtale Gaster's clone realities had their time taken out and
+  everything in them froze. **Imagination was the consolation prize.** Twelve days later it is the only key to
+  the building. **And it has been on his list of things that stop existing**: in the endless black void, *"not
+  even time exists there, not void nor Parinus nor imagination nor fun."*
+- ***The endless 7s are Gray's.*** July 5, THE GRAY COLLAPSE — Gray.EXE *"has 777777777777777777777777777 IQ
+  and hunts down everyone with less."* **Twenty-seven sevens, and the only run of 7s anywhere in five
+  months.** Gray.ps was the first name on tonight's beaten list and the Abinations were his too; he beat the
+  man, kept the machine, and now the new account wears his number. **Gray's sevens counted to twenty-seven.
+  These ones do not stop.**
+- ***And a Classics username is a thing that disappears***: August 21, 7:28 AM — *"their Classics accounts and
+  Classics usernames and passwords vanish."* **Twelve minutes after tdeshane lost access, the account that
+  replaces it has a name that does not end.** The rule is not a lock, it is a **requirement**: the one thing
+  that gets you in is the one thing the player has to bring themselves, and *"only imagination enter
+  possible"* is **the first entrance rule Classics has ever had**
+- drawing: the username field with `ClassicsPro7777…` overflowing off both ends of its own box; a sealed door
+  with three weld bars and no handle anywhere on it; and a thin wave of light passing straight through the
+  wall beside it, labelled IMAGINATION
+- new `onlyimagination` scene in `tools/capture_screenshot.py`
+- recaptured screenshots 861 and 862 — adding one beat shifts the five-row centred ladder for `ph` 799 and
+  800 only (`lwLo = min(len-5, ph-2)`)
+- probe: `len=802 maxPh=801 holes=0 undefSeg=0 missing=0 err=0 draws=890`
+
+![Beat 801 — Only Imagination Enter](screenshots/863-only-imagination-enter.png)
+
 ## 2026-09-24 — EXCUSE ME? / SAKU CAKRA / THE ONLY SPEECH BUBBLE / PAGE I-TROSS (BEATS 797-800)
 
 Based on Toby's 2026-09-24 lore, **5:03 PM**, **twenty-six minutes** after beats 793-796, same thread
