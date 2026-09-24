@@ -4,6 +4,96 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-24 — EXCUSE ME? / SAKU CAKRA / THE ONLY SPEECH BUBBLE / PAGE I-TROSS (BEATS 797-800)
+
+Based on Toby's 2026-09-24 lore, **5:03 PM**, **twenty-six minutes** after beats 793-796, same thread
+("Even (6x) more of Neka Omazen"). **One message, four beats, one reply.**
+
+This is **Chapter 2 in full**. The short version arrived at 4:37 PM and became beat 796; this one is the same
+chapter written out, and almost none of it overlaps. The quoted 4:37 PM message underneath is his own earlier
+mail and is **already built**. Everything from *"Yep — Chapter 2 now establishes another big shift in the
+story."* to the end is a **pasted recap and is commentary, not canon** — including the 🔵 marker suggestion
+and the status list, which are a machine's, not his.
+
+> "Neka Omazen also is beyond both ChelseaPlays and tdeshane's controls… he then took over the whole story
+> just by talking now. 'No more about anything else, just me.' Then Nova- Neka says 'Me.' Nova went to Super
+> Dog, then Super Dog says 'Excuse me?', Nova shrugged… 'Wanna be in a tube in my laboratory?', the others
+> refuse." — 5:03:36 PM
+
+- four new beats at `lvSeg` 17254.0-17276.0 / 17276.0-17298.0 / 17298.0-17320.0 / 17320.0-17342.0,
+  `LV_CYC` 17342.0, `LV_BEATS` length 801
+- **beat 797, EXCUSE ME?** ***The interruption is the attack.*** "Nova-" is cut off mid-word and *"Me."* is
+  put in its place. **Five days ago he needed her name to do this**: September 19, 6:47 AM, he read every
+  hero's wrongs out loud and finished with *"I KNOW YOUR REAL NAME… Nova, you are Nina."* Tonight he does not
+  need the name. He has beaten people, erased people and contained people; **this is the first time he takes
+  somebody's sentence**. **And the one who answers is the only hero who ever hit him** — September 19, *"Super
+  Dog punches back"*; 3:27 PM the same day, *"Super Dog follows Pero LAI through the portal alone"*; and *"you
+  just attacked me"* is the charge he read **to Super Dog** before reusing it on Classics Omazen. Super Dog
+  answers the takeover of the whole story with two words, and Nova, whose line was just taken, **shrugs**.
+  ***And the tube is the first thing he has ever asked for.*** September 20, 6:40 AM — *"the secret is a room
+  of many tubes, he will try to **contain** everyone in one"*; September 18 — Tube 1 Teki, Tube 2 Classics'
+  mom, Tube 3 Arcsis; September 22 — he carried the frozen ones to the labatory and put them in. **Not one of
+  them was asked. Tonight he asks, they refuse, and the tube stays empty.** The two controls he says he is
+  beyond are **the two people actually typing**
+- **beat 798, SAKU CAKRA.** ***He asked for this ten days ago and could not make it.*** September 14, 6:46 PM
+  — *"What is Chakra?"* and *"Is it possible to make Chocolate Chakra?"* — and then he typed **Karma**, which
+  was already a stat in this game. Tonight the chakra arrives, and the chocolate is Classics' own. **Sakura is
+  not decoration here, it is the source**: August 31, 4:02 PM is the only other Sakura in five months —
+  *"Simon.ps hid the Sakura on the mountain, **all of Classics comes from the cherry blossom sakura**. Pero
+  made it so the Sakura gets hotter and hotter."* He has been heating the origin of the game for twenty-four
+  days, and the fusion welds it to the one word he asked about and could not spell. ***The hyperspace is a
+  feature he shipped***: August 16 — *"Pero created The Hyperspace, he created the whole game"*, and that move
+  was **a separation, not a kill**. Tonight the seam he opens is fiction and reality themselves, and **it
+  takes buildings, not people** — the heroes are still standing, the city is not. The Japanese is a claim he
+  made yesterday, September 23, 6:57 AM: *"the hearts are scar-ed, bruh, **Pero LAI is Japanese so…**"* — and
+  Classics has been a Japanese anime since the format update, so **the heroes cannot understand the one
+  language the world they live in has always been written in**. And Classics Omazen, who bought the Pero LAI
+  doll on September 19, is behind the glass in one sentence, with no fight and no line
+- **beat 799, THE ONLY SPEECH BUBBLE.** ***He did not gain a speech bubble. Everyone else lost theirs.*** July
+  21, beat 133, "Pero, your LAI assistant" — this archive's own note on that beat: *"the greeting, over and
+  over — he says it to everyone he sees, so **the field is full of the same speech bubble**."* Fourteen of
+  them drifting, all his. Later they are drawn again, **struck through**. Two months on there is one left in
+  the whole game and it is still his. ***Pi is the opposite of I-Tross***: yesterday's number was one *"none
+  of you know"* that *"breaks the rules of all math and knowlege"*; Pi is the one everybody knows and nobody
+  can finish. *"infinite digits"* has **zero prior hits**. He does not need a new number tonight, he needs one
+  that **will not fit**, and then he puts it in a container with a fixed size — **the text coming loose is the
+  point, not a side effect**. Gaster runs from **the words, not the man**, twenty-six minutes after being put
+  on the beaten list, and **the chase stops because the text glitches, not because anybody stops it**. And the
+  blue is not a formatting note: August 3, beat 237, his own chart — *"Red = negitive power, **Blue = positive
+  power**, Green = 0 power."* Green is what he pulled out of the players twenty-six minutes ago
+- **beat 800, PAGE I-TROSS.** ***Chapter 2 lands on the one page number this game already had a boss for.***
+  July 2, beat 31 — *"Email 303 = Error 303"*, Gray.EXE's myth-level error form, and the game's own Phase 2
+  taunt has read *"Error 404. Error 666. Error 303."* for nearly three months. ***Yesterday I-Tross was a
+  number; tonight it is a page.*** September 23, 4:08 PM — *"I have a number none of you know. **tdeshane
+  originally made this**… now I am editing the number. I-TROSS!"*, *"my largest attack now."* Twenty-five
+  hours later it is not an attack at all, it is where the story is up to — and **it was tdeshane's number
+  before he edited it, so the page and the account fall on the same page**. The page **arrives and is
+  cancelled in the same breath**, and the voice doing both is his. ***And Pro is the oldest name in this
+  archive***: the oldest page in this wiki says **ProGamer55 made the original glitch that created Simon**,
+  and Classic Simon is *"Pro + Sprunks + RLs + glitches + Clara-control."* On the night tdeshane loses access,
+  the version handed over is named after the name the whole game started from — and **the access was his to
+  take because he is the one who gave it**: *"tdeshane, I made you admin, I am the creator of the game."* Then
+  the chapter that took over the story ends with him **going back to work**
+- drawings: a speech bubble cut open mid-word with *"ME."* sitting in the hole, three figures and an empty
+  tube with its door crossed out; a vertical seam between FICTION and REALITIES with the buildings tipping
+  into it, a cherry blossom and a chocolate bar closing into one disc, and a lit tube with Classics Omazen in
+  it; fourteen struck-through empty bubbles behind one bubble packed with 790 digits of Pi overflowing off its
+  own edge, Gaster running from text that degrades into glitch blocks, and the red/blue/green chart with blue
+  circled; page 303 with PAGE I-TROSS arriving and X-ed out on the same sheet, an access panel where TDESHANE
+  goes dark and CLASSICSPRO lights up, and the number line with I-Tross under negative infinity
+- new `excuseme`, `sakucakra`, `speechbubble` and `pageitross` scenes in `tools/capture_screenshot.py`
+- recaptured screenshots 857 and 858 — adding four beats shifts the five-row centred ladder for `ph` 795 and
+  796 only (`lwLo = min(len-5, ph-2)`)
+- probe: `len=801 maxPh=800 holes=0 undefSeg=0 missing=0 err=0 draws=889`
+
+![Beat 797 — Excuse Me?](screenshots/859-excuse-me.png)
+
+![Beat 798 — Saku Cakra](screenshots/860-saku-cakra.png)
+
+![Beat 799 — The Only Speech Bubble](screenshots/861-the-only-speech-bubble.png)
+
+![Beat 800 — Page I-Tross](screenshots/862-page-i-tross.png)
+
 ## 2026-09-24 — FIVE HEADS AND NO EYES / NOW I HAVE TO DO EVERYTHING MYSELF / NEVER SAY PERO LAI AGAIN / 666% CORRECT (BEATS 793-796)
 
 Based on Toby's 2026-09-24 lore, **4:37 PM**, **nine hours and fifty-four minutes** after beat 792, same thread
