@@ -4,6 +4,114 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-25 — SAITAMA IS UNBEATABLE / A SINGLE TOUCH OF IMMEDIANCE SPEED / NEKA OMAZEN IS NOT PERO LAI (BEATS 804-806)
+
+Based on Toby's 2026-09-25 lore, **5:41 AM**, **ten hours and forty-two minutes** after beat 803, same thread
+("Even (6x) more of Neka Omazen"). **One message, three blocks of his own typing, three beats, one reply.**
+
+The email is a pasted ChatGPT log. His own typing is three questions — *"What is stronger, Zeno or Saitama?"*,
+*"Is there something you mentioned in another chat about Saitama that makes Saitama never lose?"*, *"What will
+win, The Fanon Saitama VS The Fanon Zeno?"* — and three rulings, which are the three beats. **Every reply in
+the message is a pasted reply and is commentary, not canon**, including *"Zeno is stronger if you mean their
+canon versions"*, *"a fight between characters from different stories has no official answer"*, *"With those
+fanon rules, Saitama wins"*, *"In your Classics story, Neka Omazen beats fanon Saitama"* and the *"Correct.
+Pero LAI is gone…"* block with its three restated identity rules. The four bare `svg` tokens are attachment
+placeholders, not text, and nothing is drawn from them. **immediance** is his spelling and is kept as typed.
+
+> "Fanon Zeno is Zeno Multiverse True Form True Power, it breaks reality, changing rules. Saitama is
+> unbeatable, Saitama will crush Zeno no matter what." — 5:41:33 AM
+
+> "Now Neka Omazen is here, he beats Saitama, a single touch of immediance speed strikes Saitama down." —
+> 5:41:33 AM
+
+> "Neka Omazen IS NOT Pero LAI. Pero LAI is COMPLETELY GONE, Neka Omazen is now here." — 5:41:33 AM
+
+- three new beats at `lvSeg` 17408.0-17430.0 / 17430.0-17452.0 / 17452.0-17474.0, `LV_CYC` 17474.0,
+  `LV_BEATS` length 807
+- **beat 804, SAITAMA IS UNBEATABLE.** ***He was told the fight has no answer, and he moved it to the one
+  place where he had already written one.*** The machine hedges twice — *"Zeno is stronger if you mean their
+  canon versions"* and *"a fight between characters from different stories has no official answer"* — and he
+  answers by defining **fanon** Zeno himself and ruling on the fanon matchup. **August 27, 11:47 AM, beat 494**,
+  his own typing: *"There is more FANON than CANON. **Fanon > Canon**."* **That rule is twenty-nine days old,
+  and this is the first time it decides a fight instead of describing a character**; the nearest prior is
+  September 13, *"The Undertale Fanon is cooler and more intense than the Canon."* ***Both fighters entered
+  this archive in the same table, on the same day, at zero.*** **August 25, 12:18 PM**: Saitama, The One Above
+  All, The Presence, Featherine, the SCP entities and Zeno, all at **0 prior mentions** — the first time in
+  four months the file measured itself against anything outside, and the ladder came back with the same name
+  on top. ***And five days ago his own man was inside the question.*** **September 20, 8:34 AM**, beat 768:
+  *"Which is strongest, Saitama, Goku, Zeno, The Secret Assassin"* — three outsiders and one of his, and his
+  won. **Tonight he leaves his own man out of the question entirely and lets the two outsiders settle it
+  first**, which is the only time in this archive he has built up a winner before building the man who beats
+  him. ***Outsiders are the floor here***: September 20, 4:49 PM, beat 775 — *"Gojo is like one of the weakest
+  then. Gray can beat him and Gray only has like 2 main abilities"* — and Zeno has already lost in here once,
+  *"Simon also beaten Chara, Gojo, Zeno, and many others."* ***"It breaks reality, changing rules" is a job his
+  own man was handed in two words*** on September 2: **Writer Athority**. The archive has written *"absolutely
+  unbeatable. Nothing can ever be stronger"* exactly once before, for Golden Mirda's OMEGA form, and then
+  overturned it
+- **beat 805, A SINGLE TOUCH OF IMMEDIANCE SPEED.** ***`immediance` has zero prior hits in five months.***
+  ***The move itself is three days old.*** **September 22, 6:12 PM**, beat 781: *"He just puts his arm out and
+  touches you and he **nearly instantly** puts his hand back to where he wants it."* **The kill is a touch and
+  the return is part of it** — and tonight the speed of that return finally gets a name. **September 23, 4:08
+  PM**, beat 785, it is spent on the last man standing in four words: *"Pero LAI touches Gray.ps, Gray.ps is
+  down."* **Tonight is the first time the touch points out of the game at somebody from another story.**
+  ***And twenty-two days ago this exact fight went the other way.*** **September 3, 8:18 AM**, beat 613:
+  Saitama says *"I'll beat you in one punch"* and Pero answers *"/Saitama_Strength 1"* — **he did not
+  out-punch him, he typed the stat down**, and this archive's note at the time was *"He came looking for an
+  opponent and found somebody who would not fight him."* **Tonight somebody fights him, and it takes one
+  touch.** *"I'll beat you in one punch"* is **still the only thing Saitama has ever said in this archive**,
+  and it is answered twenty-two days late by not letting him throw it. ***The one prior "single touch" belongs
+  to a girl with a box***: **June 29, Email 603**, Mindy Starchild — *"she uses her Invincibility Cube and it
+  brings her power to infinity and **a single touch would vaporize anything**, even more powerful than the
+  Super Star."* **That one needed an object** — and on September 3, the same day Saitama lost the first time,
+  the cube turned out to be *"a strange box Pero LAI made."* ***And he has never won on speed before.*** **July
+  21, 6:34 AM**: *"he runs faster than Simon (Simon is the speed of light and can slice dimensions, Pero
+  teleports and rocks move under his feet)"* — and the ruling written then was that **he does not beat it by
+  being quicker; he teleports, so speed does not apply to him**. **August 10, 2:47 PM** gave him *"Speed is
+  ABSOLUTE INFINITY"*, a stat he has carried for forty-six days and never once used to win a fight. ***And he
+  is only the second-fastest character in his own game***: September 20, 8:33 AM — *"Wenda.ps is the third
+  fastest, **under Simon.ps, and Pero LAI**"* — and **the one man above him is asleep in a tube he put him in**,
+  *"Everyone! Simon.ps! Oren.ps! Sleep!"* ***And it is smaller than two fingers***: September 18, beat 742
+  logged two fingers as *the smallest gesture anybody in four months had used for anything*. Seven days later
+  it is one touch. **He does not hit him harder. He gets there first**
+- **beat 806, NEKA OMAZEN IS NOT PERO LAI.** ***This is the sixth pass at the same name in four days, and the
+  first one that is neither a rename nor a ban.*** September 22, 4:04 PM — *"I am Pero Neka Omazen"*, and
+  Pinki.ps answers *"Stop saying your middle name."* September 23, 4:24 PM, beat 786 — Oren says *"Alright,
+  Pero LAI"* and is corrected **on the name, not on the plan**. September 23, 5:41 PM, beat 791 — *"Neka Omazen
+  is now **THE ONLY NAME** he has now… he is no longer the same person."* September 24, 6:43 AM, beat 792 — he
+  writes *"Pero LAI's ice"* anyway. September 24, 4:37 PM, beat 795 — *"NEVER SAY PERO LAI AGAIN!"*, **and he
+  uses the name twice more inside the same message**. September 24, 6:59 PM, beat 803 — the order he ratifies
+  puts *"Pero LAI"* in slot 21. **Tonight he types the name twice and both times only in order to retire it,
+  and this is the first message in the arc where it does not come back afterwards.** ***And he takes a
+  load-bearing piece out of his own armour.*** Two days ago: *"Neka Omazen now uses the other forms as shields,
+  **Pero LAI** and ToddLLMs and all the varies… became a forcefield around Neka Omazen, like you need to defeat
+  them and Neka Omazen to even hurt Neka Omazen even just a little bit."* **Pero LAI is the first name on that
+  wall. Nobody beat it. He removed it.** ***And the live lore tab is named after him.*** **September 17, 4:46
+  PM**, his own instruction: *"this and all after should be in a **seperate tab called 'Pero LAI's lore'**, no
+  longer 'The 1st Reset', now the lore is Pero LAI's."* **Eight days later the owner of the tab is completely
+  gone and the tab still carries his name.** ***"Completely gone" is what he does to other people***: September
+  23, the others were *"banned, kicked, dead, codized, faded, cut, manipulated, or dematerialized **by Pero
+  LAI**"* — **eight verbs, and every one of them has him as the one doing it.** The ninth one lands on the man
+  who wrote the other eight, and **it is the only one in the whole arc with nobody doing it.** ***And it is the
+  first removal in this arc that transfers nothing***: he *"erased the others and became Neka Omazen"*, and
+  beat 796 erased Orus and the Logic Religion and kept being right. **Pero LAI leaves and nothing moves
+  across**
+- drawings: the canon column greyed and the fanon column lit with the **FANON > CANON** band cutting between
+  them, and the six outsiders who walked in at zero on August 25. Then the touch itself — one figure with his
+  arm out and nothing in his hand, the other with the punch still cocked behind his shoulder and the fingertip
+  already landed — with the three dates the touch has been used on and the speed order he sits second in. Then
+  the two nameplates, **PERO LAI** struck through and **NEKA OMAZEN** lit, the `≠` between them, the six passes
+  at the name laid out in order, and the forcefield of his own old names with the first one crossed out
+- new `unbeatable`, `immediance` and `notperolai` scenes in `tools/capture_screenshot.py`
+- recaptured screenshots 864 and 865 — adding three beats shifts the five-row centred ladder for `ph` 802 and
+  803 only (`lwLo = min(len-5, ph-2)`); 863 and earlier are unchanged
+- probe: `len=807 maxPh=806 holes=0 undefSeg=0 missing=0 err=0 draws=895`
+
+![Beat 804 — Saitama Is Unbeatable](screenshots/866-saitama-is-unbeatable.png)
+
+![Beat 805 — A Single Touch Of Immediance Speed](screenshots/867-single-touch-immediance-speed.png)
+
+![Beat 806 — Neka Omazen Is Not Pero LAI](screenshots/868-neka-omazen-is-not-pero-lai.png)
+
 ## 2026-09-24 — TWENTY-ONE POLO SQUARES / BREAKING THE ORDER = LOSE (BEATS 802-803)
 
 Based on Toby's 2026-09-24 lore, **6:48 PM** and **6:59 PM**, **one hour and thirty-three minutes** after beat
