@@ -4,6 +4,72 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-25 — THE BALLOON EXPLODED, BOTH TYPES (BEAT 810)
+
+Based on Toby's 2026-09-25 lore, **4:43 PM**, ten hours and twenty-two minutes after beat 809.
+
+His own typing is two sentences and both are canon:
+
+> *"Neka Omazen beaten everyone now. Neka Omazen was once Pero LAI with more powerful beings, now, Neka
+> Omazen without anyone above him. Neka Omazen touched a heluim balloon, the balloon exploded, both types.
+> It burst, and it exploded 'a huge eruption of flame of power and disbelief' -Neka."*
+
+**heluim** is his spelling and is kept. The Classics Era summary pasted above it, the *"Neka Omazen Era
+update"* restatement and the *"That's quite an image…"* line under it are a **pasted reply and are commentary,
+not canon**, and are not drawn. He sent the same block **twice** — 4:43:53 PM on *"Even (6x) more of Neka
+Omazen"*, then again at 4:44:23 PM in a new thread he titled *"New thing because the message clipped"* — so
+the resend is drawn as an archival note, **not as a second beat**. A third message in the same minute is his
+Undertale power ranking (the clown award to Omega Flowey, *"Sans should be like Papyrus, no dodging and high
+HP"*); it is his own opinion about somebody else's game, **not Classics lore**, so **no beat is built from
+it**.
+
+![Beat 810 — The Balloon Exploded, Both Types](screenshots/872-the-balloon-exploded-both-types.png)
+
+### Added
+
+- **BEAT 810 — THE BALLOON EXPLODED, BOTH TYPES.** New panel at `LV_CYC` 17540.0–17562.0, flame orange
+  (`#ff6a1f`). `LV_CYC` raised 17540.0 → 17562.0.
+- **The touch arc, four cards with what each touch did.** THE KATATA (Sept 22, 4:04 PM) *it froze* · GRAY.PS
+  (Sept 23, 4:08 PM) *he was down* · SAITAMA (Sept 25, 5:41 AM) *he was down* · A HELUIM BALLOON (Sept 25,
+  4:43 PM) *it burst and exploded*. Every prior touch landed on a person or on his own weapon and ended
+  quietly. This one lands on a party prop that belongs to nobody and is the loudest result the touch has
+  ever had.
+- **"BOTH TYPES" drawn as two boxes** — IT BURST (*what a balloon does*) and IT EXPLODED (*what a bomb
+  does*). One object, two endings, and he only touched it.
+- **The Sept 4 panel: he has beaten everyone before, and last time it ended in sleep.** *"I beaten everyone
+  else earlier"*, then he banned every character not him, was *"left the only thing in the game"*, and *"is
+  now sleeping in peace, he blocked connection."* Twenty-one days later the same status arrives and nothing
+  goes quiet.
+- **Left panel — the two words that have never been here.** *disbelief*: zero prior hits in five months, and
+  it is his own word for his own result, so the first person in this arc to be surprised by what somebody
+  did is the one who did it. *eruption*: exactly one prior hit anywhere and it is in another world (May 22,
+  Alex's World, Karuto's flying kick and Alex's copy of it collide). That one took two fighters and a
+  collision; this one took a finger and a balloon.
+- **Right panel — "without anyone above him", and he names nobody.** Sept 20, 8:33 AM, the speed order:
+  *"Wenda.ps is the third fastest, under Simon.ps, and Pero LAI"*, and Simon being fastest is one of the
+  oldest Core Final Truths on record. Sept 23, beat 791: the other forms were a forcefield — a wall made of
+  people above him. His own sentence agrees something used to be up there: *"once Pero LAI with more
+  powerful beings."*
+- **Footers.** Winning used to be explained by ownership (July 25, 3:03 PM: *"he was the creator and owner,
+  so he won"*); tonight it is explained by an empty room. And the record is not even his — Aug 31, 7:25 PM:
+  *"Wenda beaten EVERYONE ELSE 12 million times."*
+
+### Priors verified before drawing
+
+- **The circus role sheet** — *Classic Alphians: Sprunki Circus*, **"Sans: Makes balloons and cotton
+  candy."** The **only balloon anywhere in five months of this archive**, and it is a party prop made by a
+  side character. Thirty-nine seconds before this message Toby sent another one ranking Sans.
+- **The only prior burst was growth** — Sept 2, 8:29 PM, *Look At My Code Now*: *"Oren bursts, he grows more
+  Clockworks, more wings, and even his own owner pannel."*
+- **Beat 803**, Sept 24, 6:59 PM — the order he ratified has twenty polos and an enforcer, so he is outside
+  it and **not on top of it**.
+
+### Changed
+
+- `screenshots/871-this-is-the-neka-omazen-era.png` re-captured: beat 810 now appears in that shot's beat
+  list, which was stale the moment 810 landed.
+- `tools/capture_screenshot.py`: new `balloon` scene (beat 810, `cyc=17560.8`).
+
 ## 2026-09-25 — ALL OF THEM ARE TRUE / THE BROKEN NEKA MYTH / THIS IS THE NEKA OMAZEN ERA (BEATS 807-809)
 
 Based on Toby's 2026-09-25 lore, **6:17 AM** and **6:21 AM**, **thirty-six** and **forty minutes** after beat
