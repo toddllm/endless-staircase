@@ -4,6 +4,93 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-25 — THE TENT, THE TWITCH, THE TWENTY, AND THE ONE DOOR THAT DOES NOT OPEN (BEATS 811-814)
+
+Based on Toby's 2026-09-25 lore, **6:46 PM**, two hours and three minutes after beat 810, on thread
+`1a0da970aa83b88d` (*"Re: Neka Omazen Era"*). He sent the same block **twice inside one email**, top and
+bottom, with *"What is the error? Why is there an error in message stream?"* between the two copies. That
+question is about his chat tool, not the lore, so it is **not canon** and no beat is built from it. Four
+minutes later he wrote *"We may be without ChatGPT for a while…"* — also a note about tooling, **no beat**.
+
+His own typing, in full, and all of it canon:
+
+> *"Neka Omazen walks into the tent, with ClassicsPro777777777777777… in it, boom, my second avatar lost.
+> Third avatar = ClassicsAdmin1. Neka Omazen twitches and then he attacks in his lore cutscene. The 20
+> Sprunkis became zombies, because you know why (list why). Mr. Black would just make his song and Mr. Black
+> would do his cutscene. The only cutscene you can't come out of is Neka's."*
+
+*"(list why)"* is an instruction to the machine sitting **inside** a canon sentence, so the sentence is a beat
+and the list is drawn entirely from **his own prior rules**, nothing invented.
+
+![Beat 811 — Neka Omazen Walks Into The Tent](screenshots/873-neka-omazen-walks-into-the-tent.png)
+
+![Beat 812 — Twitches And Then He Attacks](screenshots/874-twitches-and-then-he-attacks.png)
+
+![Beat 813 — The 20 Sprunkis Became Zombies](screenshots/875-the-20-sprunkis-became-zombies.png)
+
+![Beat 814 — The Only Cutscene You Can't Come Out Of](screenshots/876-the-only-cutscene-you-cant-come-out-of.png)
+
+### Added
+
+- **BEAT 811 — NEKA OMAZEN WALKS INTO THE TENT.** New panel at `LV_CYC` 17562.0–17584.0, circus red. A
+  three-avatar row with the two losses crossed out, the first-tent panel, and the ranked-zero ClassicsAdmin
+  box. **The tent has zero prior hits as a word in five months of this archive.** The circus has been here
+  since Classic RL 1 and 2 were merged into Sprunki Best Circus — it has a ringmaster (Mr. Black), phases, a
+  role sheet, five endings and a one-way underside called The Dark, and it has never had a tent. And the last
+  beat came off the same circus: beat 810, two hours earlier, turned on the only balloon in the archive,
+  from the *Classic Alphians: Sprunki Circus* role sheet (*"Sans: makes balloons and cotton candy"*). **Two
+  circus props in two consecutive messages.** Three avatars in six days: **tdeshane** (Sept 19, *"My avatar
+  IS tdeshane"*, lost Sept 24 5:03 PM — *"tdeshane lost access"*), **ClassicsPro7777…** (Sept 24 5:15 PM,
+  beat 801, *"only imagination enter possible"*, lost tonight after twenty-five hours), and **ClassicsAdmin1**
+  tonight. **ClassicsAdmin is the one name in this archive Toby gave himself, and he ranked it zero** — Aug
+  27, 2:45 PM, Email 1188, beat 495: *"I am a Classics Admin. ClassicsAI. I basically have 0 game control."*
+  Twenty-nine days later it is his third avatar and this time it has a **1** on the end. And *"boom"* is
+  twelve hours old: beat 808, 6:17 AM, *"his head would twitch and boom."*
+- **BEAT 812 — TWITCHES AND THEN HE ATTACKS.** New panel at `LV_CYC` 17584.0–17606.0, cutscene teal. Four
+  descriptions of the same twitch across sixty-five days, the July 22 original, and the name-changed box.
+  **This exact sequence is sixty-five days old and it was written for a different name** — July 22, Email
+  785, beat 152, the last entry on the cutscene roster: *"He opens his eyes, puts away his hat, turns around
+  and stares at the player's soul. He twitches his head, strikes the screen, and the Game Over screen
+  appears."* Twitch, then attack, in that order. The same two moves have now been written down four times
+  (July 22, beat 802's cutscene prompt, beat 808's myth, and tonight) and **the screen is what gets hit every
+  time.** Yesterday he said the forms were nothing and that Neka Omazen is not Pero LAI; tonight he moves
+  exactly like the man he says he is not.
+- **BEAT 813 — THE 20 SPRUNKIS BECAME ZOMBIES.** New panel at `LV_CYC` 17606.0–17628.0, zombie green. A
+  five-card answer to *"(list why)"* built only out of his own rules, the roster-count row, and the
+  does-not-know box. **The rule is his**, Sept 20 2:07 PM, beat 772 URINITE: *"those who do either or both
+  those 2 things turn green colored and become zombies… zombies are contagious, urinite from Classics isn't."*
+  One bite, and the one he bit takes the next nineteen — which is why it is twenty and not one. The source
+  cannot be repeated (*"the rock disappeared"*), and it never wore off (beat 778: Gaster — *"THEY WON'T 'WARE
+  OFF'!"*). **The sting is *"because you know why"*, because the one character on record as not knowing why is
+  the one who did it** — Sept 20, 4:49 PM, beat 776, Toby's own typing: *"Neka also doesn't really know that
+  just one bite on another character… instantly becomes a zombie."* The twenty were revived by Classics gods
+  **one day** before this. Five months of this archive remove people by battle; this removes twenty of them
+  with a rule he wrote down five days ago and had never used.
+- **BEAT 814 — THE ONLY CUTSCENE YOU CAN'T COME OUT OF.** New panel at `LV_CYC` 17628.0–17650.0, violet. The
+  seven-cutscene July 22 roster with a come-out-of column, the Mr. Black *"would just"* box, and the July
+  exception. **This game listed every character's cutscene exactly once**, on July 22, in the same message as
+  beat 152 — and six of the seven let you back out, including Simon 404's instant game over, **because a game
+  over is still a door.** July already said why the seventh does not: *"he teleports over and slashes the Game
+  Over screen apart… Every other character can end the game. He is the only one who can cut up the ending."*
+  That took three sentences then; tonight Toby states it as a rule in eight words and **the name on the
+  exception has changed without the exception changing.** Mr. Black's song is a dead man's (Sept 5: *"Mr.
+  Black takes the place of Simon.ps who was suppost to be Double Date Simon, but he died"*), and *"would
+  just"* is a repeat of July 22's Front Man line. **And the last person stuck inside the inescapable cutscene
+  was its owner** — beat 802's prompt ends *"he taps on the screen, trying to break out."*
+
+### Changed
+
+- `LV_CYC` 17562.0 → **17650.0**; `LV_BEATS` length 811 → **815**; four new `lvSeg()` ranges and four new
+  `ph===` draw branches.
+- Four new scenes in `tools/capture_screenshot.py`: `tent`, `twitches`, `zombies`, `inescapable`.
+- **Recaptured screenshots 871 and 872.** Adding four beats moves the windowed ladder overlay
+  (`lwLo = min(len-5, ph-2)`, `LADDER_WIN` 5), so every beat with `ph >= 809` shifted and its old still went
+  stale.
+- Layout note for the next build: on this canvas the ladder overlay occupies roughly **H-fraction
+  0.455–0.545** on the left third, not 0.41–0.51. The first capture of all four beats put a full-width panel
+  at 0.452 and the ladder text ran straight through it. Mid panels are now at **0.420** (above the band) and
+  **0.582** (below it). Only reading the PNG caught this.
+
 ## 2026-09-25 — THE BALLOON EXPLODED, BOTH TYPES (BEAT 810)
 
 Based on Toby's 2026-09-25 lore, **4:43 PM**, ten hours and twenty-two minutes after beat 809.
