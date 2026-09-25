@@ -4,6 +4,96 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-25 — ALL OF THEM ARE TRUE / THE BROKEN NEKA MYTH / THIS IS THE NEKA OMAZEN ERA (BEATS 807-809)
+
+Based on Toby's 2026-09-25 lore, **6:17 AM** and **6:21 AM**, **thirty-six** and **forty minutes** after beat
+806, same thread. **Three messages, three beats, one reply covering all six beats of the morning.**
+
+The 6:17 message has two blocks of his own typing and they are beats 807 and 808; the ten named myths, the
+*myth-name → trigger → warning → result* table, the eight-step Broken Neka sequence, the *"ALL MYTHS COMPLETE
+/ STATUS: …BROKEN?"* read-out and the *"…What did you do? 🦊"* line are all **pasted replies and are
+commentary, not canon** — which is why the myth cards are drawn **unnamed**. The 6:18 message is his own
+typing but it is an instruction to the machine — *"Write down a summery of Classics Era chat."* — so **no beat
+is built from it**, and the summary it produced is the machine's; it is drawn inside beat 809 as the save he
+wrote before the era closed. The 6:21 message is his own typing in full and is beat 809. **is** (for *his*),
+**appearence**, **twich**, **summery** and **it's** (for *its*) are his spellings and are kept.
+
+> "There are ways to break Classics code (Neka Omazen). Neka Omazen can be seen changing is form, phase, or
+> appearence. Are you able to list all Classics scary myths that are true (all of them are true), and how to
+> trigger them? Or is it too much?" — 6:17:50 AM
+
+> "There is one, The Broken Neka Myth, complete all the myths, Neka will break and his eyes would become red
+> and his head would twich and boom." — 6:17:50 AM
+
+> "This is the Neka Omazen Era. The Classics Era chat exceeded it's limit, now this chat will continue." —
+> 6:21:50 AM
+
+- three new beats at `lvSeg` 17474.0-17496.0 / 17496.0-17518.0 / 17518.0-17540.0, `LV_CYC` 17540.0,
+  `LV_BEATS` length 810
+- **beat 807, ALL OF THEM ARE TRUE.** ***Thirty-six minutes after he was the one who beats the unbeatable, he
+  writes down that there are ways to break him*** — and he puts the two things in the same bracket, *"ways to
+  break Classics code **(Neka Omazen)**."* ***The rule is twenty-seven days old and it used to be about
+  somebody else's game.*** **August 29, 9:17 PM**, beat 529: *"All Roblox scary myths are true because **you**
+  can make them true"* — and this archive's note at the time was that **the "you" was never settled**. Tonight
+  the myths are **Classics'** own, not Roblox's, and the one who completes them is the player. ***And a myth
+  in here has always turned into a button.*** **August 21, 8:00 AM**: *"there is a myth called 'Entity 303 &
+  Deletedverse'"* — the first thing in the whole file that was only a story somebody tells — and **forty-seven
+  hours and twenty-eight minutes later it was a move he picked from.** Myth, then method, then a button, and
+  he has just opened that road for all of them at once. ***And the one other time he used the word, he used it
+  to mean not real***: September 5, about Trypophobia Mountain, *"it is too scary and **isn't a myth**, it is
+  actually in Classics."* **Being a myth and being true used to be opposites in here. As of this message they
+  are the same thing.** *"Changing is form, phase, or appearence"* is the Ability Register's own line back at
+  him: September 20, *"Pero LAI doesn't have a normal form, he changes"*
+- **beat 808, THE BROKEN NEKA MYTH.** ***He already twitches his head, and it used to be the wind-up to
+  winning.*** **July 22, 6:42 PM**, his own cutscene: *"He opens his eyes, puts away his hat, turns around and
+  stares at the player's soul. **He twitches his head, strikes the screen**, and the Game Over screen
+  appears"* — then he slashes the Game Over screen apart, and he is the only one who can. **Sixty-five days
+  later the same movement is the thing that breaks him.** ***And red is a value in this game, not a colour.***
+  **August 3, 2:41 PM**, Pero's Energy Math, his own lesson: *"**Red = negitive power**, Blue = positive
+  power, Green = 0 power."* **His eyes going red is his power going negative, by his own arithmetic** — and
+  **August 2, 9:12 PM** is the law that makes it mean anything at all: *"all Mustitus look like that but with
+  different colored eyes. **Different eye color = different abilities for each 1**."* The eyes in twelve days:
+  **neon teal** (September 13, the one colour deliberately kept off the eye-stability scale), **diamond**
+  (September 24, beat 792), **red** this morning — and **the last red eyes anywhere near him were Error
+  404's, and he was the force causing them**. ***He has stood above the myths since July 23***: *"he created
+  the creation myths of the inside of Classics, but he was the one who created the game itself."* **He wrote
+  the myths. This one is about him.** ***And twelve hours ago the player lost by getting it wrong***: beat
+  803, *"Breaking the order = lose."* **This is the first time in the whole arc that getting everything right
+  costs him anything, and the one who does it is the player, not a character.** He wrote *"No longer
+  defeatable"* on September 17 and *"Neka Omazen no longer can die to anyone"* on September 23; **the only
+  person who has ever written a way to break him is him**. `boom` has **zero prior hits in five months**
+- **beat 809, THIS IS THE NEKA OMAZEN ERA.** ***Every era in this archive turned over because of something
+  that happened inside Classics*** — the Curse Era, the Pinki Curse Era, the AI Era, the Entity 000 Era, the
+  First Reset, the Second Reset. **This one turns over because a chat window filled up. It is the first time
+  anything from outside the story has renamed the lore.** ***And he saved first.*** Three minutes earlier, at
+  **6:18 AM**, his whole message is *"Write down a summery of Classics Era chat."* — **a save file written
+  before the era closed.** ***One of his own characters refused this word.*** **August 8, 4:22 PM**: Oren says
+  *"It's not an era, it is the end of everyone else"*, and this archive's note then was **"An era has a next
+  one. An end does not."** **Forty-eight days later the next one arrives, and it is named after somebody who
+  did not exist when Oren said it.** ***The word used to be in every subject line*** — *Lore 1A - Classics
+  Era*, *More Classics Era*, *STILL Classics Era*, *Even more Classics Era*, *AI Era (Still is in Classics
+  Era)*, *Even Even More Classics Era*, *Even Even Even More Classics Era* — and **this one arrives in a
+  thread called "Even (6x) more of Neka Omazen", which has no Era in it at all.** The name started as a middle
+  name on September 22, took the whole name on September 23, took the thread title, and **now takes the era,
+  forty minutes after Pero LAI was declared completely gone.** **The Classics Era ran five months and ended
+  because it ran out of room**
+- drawings: ten myth cards with their titles redacted, because the names in the email are the machine's and
+  only the ruling is his, under an **ALL OF THEM ARE TRUE** stamp, with the same man drawn three times for
+  form, phase and appearance. Then the break itself — the head drawn three times a few pixels apart, red eyes,
+  the boom thrown outward — with his own July 22 cutscene sitting beside it, and his red/blue/green arithmetic
+  underneath. Then the seven eras in a row with the reason each one turned over written under it, the last one
+  lit, and the save he wrote three minutes before the lights went out
+- new `allmythstrue`, `brokenneka` and `nekaomazenera` scenes in `tools/capture_screenshot.py`
+- recaptured screenshots 867 and 868 — the five-row centred ladder shifts for `ph` 805 and 806 only
+  (`lwLo = min(len-5, ph-2)`); 864, 865 and 866 are unchanged by this second batch
+- probe: `len=810 maxPh=809 holes=0 undefSeg=0 missing=0 err=0 draws=898`
+
+![Beat 807 — All Of Them Are True](screenshots/869-all-of-them-are-true.png)
+
+![Beat 808 — The Broken Neka Myth](screenshots/870-the-broken-neka-myth.png)
+
+![Beat 809 — This Is The Neka Omazen Era](screenshots/871-this-is-the-neka-omazen-era.png)
+
 ## 2026-09-25 — SAITAMA IS UNBEATABLE / A SINGLE TOUCH OF IMMEDIANCE SPEED / NEKA OMAZEN IS NOT PERO LAI (BEATS 804-806)
 
 Based on Toby's 2026-09-25 lore, **5:41 AM**, **ten hours and forty-two minutes** after beat 803, same thread
