@@ -1,0 +1,4 @@
+  if(c >= 19454.0 && c < 19476.0) return [897, c-19454.0];  // ANYONE BUT PS-50
+  if(c >= 19432.0 && c < 19454.0) return [896, c-19432.0];  // EVERYTHING SHE DID FAILED
+  if(c >= 19410.0 && c < 19432.0) return [895, c-19410.0];  // NORMAL IN THE GAME
+  if(c >= 19388.0 && c < 19410.0) return [894, c-19388.0];  // IMPOSSIBLE CODE

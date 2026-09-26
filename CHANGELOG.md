@@ -4,6 +4,61 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — IMPOSSIBLE CODE, NORMAL IN THE GAME, EVERYTHING SHE DID FAILED, ANYONE BUT PS-50 (BEATS 894-897)
+
+Based on Toby's 2026-09-26 lore, **6:33 PM** (`1a0dfda0baea15c2`) and **6:35 PM** (`1a0dfdbbab8be051`), thread
+`1a0deee4cb24addb`. Both messages are mostly a pasted chat (the Roblox myth lists, the "You're right" / "Got it" /
+"I was wrong" paragraphs, the "which is scarier" verdicts). Those are **not** canon. Only his own lines are drawn.
+
+- LV_CYC 19388.0 -> 19476.0, LV_BEATS length 894 -> 898. New capture scenes `impcode894`, `normalgame895`,
+  `didfail896`, `anyonebut897`. Generator `tools/gen894_897.py`, splice `tools/build894_897.py`.
+
+### Beat 894 — IMPOSSIBLE CODE (6:33 PM)
+
+![Beat 894](screenshots/956-impossible-code.png)
+
+> *"PS-50 is also made of corrupted code from Sky.ps, the tea, and Neka. And Luigi Green became the code. PS-50 is
+> unkillable because she is impossible code, she has a code layer that she can edit, making her litterly invicible.
+> Neka can't put even a dent in that."*
+
+- **Three things, corrupted.** Sky.ps, the tea, and Neka. The tea she asked to share at 4:21 is part of what she is made of.
+- **Luigi Green became the code.** Not just memories stored in her (5:37); he is the code.
+- **A layer she can edit.** She rewrites whatever hits her. Even Neka can't dent it.
+
+### Beat 895 — NORMAL IN THE GAME (6:33 PM)
+
+![Beat 895](screenshots/957-normal-in-the-game.png)
+
+> *"PS-50 is so strong it's sight would be able to kill a Goomba. ... PS-50 looks at Sky.ps, Sky.ps sees the long mouth
+> and red eyes, but in the game, PS-50 is normal, because those with paranoidia, their vision is infected causing them
+> to see something and it causes hallicultions and blindness."*
+
+- **Her sight vs. a Goomba.** Whatever touches a Goomba dies (except on top of its head); she only has to look.
+- **The long mouth and red eyes** are in the victim's infected vision. In the game she looks like a normal kid.
+- **Who is telling the truth?** The one person who sees the monster is the one nobody else can believe.
+
+### Beat 896 — EVERYTHING SHE DID FAILED (6:33 PM)
+
+![Beat 896](screenshots/958-everything-she-did-failed.png)
+
+> *"Neka is still tired, (impossible with the other characters), Neka can't see. Neka is sleeping and he is the 2nd most
+> powerful by far. PS-50 touched Neka, Neka didn't wake up. PS-50 put her dolls on Neka, Neka didn't wake up,
+> everything PS-50 did failed, LIKE ALWAYS!"*
+
+- **The night round.** Neka made it night; PS-50 walks under the beds and looks at each character, boom.
+- **Why Neka stays asleep.** He is tired and can't see, so her sight has nothing to get into.
+- **Touch, then dolls.** Both fail. "Like always."
+
+### Beat 897 — ANYONE BUT PS-50 (6:35 PM)
+
+![Beat 897](screenshots/959-anyone-but-ps-50.png)
+
+> *"Neka is an assassin, he can slay anyone but PS-50. PS-50 gives you paranoid. Which is scarier?"*
+
+- **The assassin.** Neka can slay anyone in the game except her.
+- **Two kinds of scary.** One ends it; the other makes you live through the blur and blackout.
+- **And right now** the assassin is asleep, and the one he can't slay is awake under the beds. The question stays open.
+
 ## 2026-09-26 — THE REAL ONE HAS A BRAIN (BEAT 893)
 
 Based on Toby's 2026-09-26 lore, **5:37 PM** (`1a0dfa77cb9106a3`), thread `1a0deee4cb24addb`. His own typing is the
