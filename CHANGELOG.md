@@ -4,6 +4,67 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — HELLO., 50 IS LUIGI GREEN, ONLY THE 22, AND IT IS IF SHE SEES YOU (BEATS 888-891)
+
+Based on Toby's 2026-09-26 lore, **5:00 PM** (`1a0df8567a102e1d`), thread `1a0deee4cb24addb`. His own typing is the
+opening ("I don't think you can create an image of Para 50.ps. If you can, do it. I made her.") and the block from
+"That looks as if it was taken from the game." through "Neka falls and sleeps on a bed." The image description
+before it and everything from "That changes Para 50.ps completely." on are pasted replies and are **not** canon.
+Canon: 50.ps is **Luigi Green**, who went out of Luigi Mario, kept only his memories, and whose only power is
+**paranoidia**; Neka alone knew; Gaster went back to Undertale and everyone outside **the 22** went home; and Neka's
+rule: *"it isn't if you see her, it is if she sees you."*
+
+- LV_CYC 19256.0 -> 19344.0, LV_BEATS length 888 -> 892. Beats 886 and 887 recaptured (948-949), ladder shift.
+
+### Beat 888 — HELLO.
+
+![Beat 888](screenshots/950-hello.png)
+
+> *"Para says "Hello.", the victum sees nothing on the face and then the shadows and ghosts haunt him, the victum runs
+> away. Para always follows ya ... the scariest part is that the entity can't die or lose anything."*
+
+- **Nothing on the face.** At 4:11 Sky.ps's eyes went blank; now the whole face is.
+- **"Para always follows ya."** Written to the player, not about the victim.
+- **She can't die or lose anything**, and "always stays the same look." He calls that the scariest part, not the ghosts.
+
+### Beat 889 — 50 IS LUIGI GREEN
+
+![Beat 889](screenshots/951-50-is-luigi-green.png)
+
+> *"Luigi Green went out of Luigi Mario and he went and became 50, 50 is Luigi Green ... Luigi Green's powers and
+> everything was erased of him except his memories ... his only power is paranoidia."*
+
+- **He has come out of someone before**: /merge_code put him inside Gaster on August 21, and he came back out August 22.
+- **She was always watching**: August 21 (Email 1070) Luigi Green appeared only when looked at and followed your
+  recordings through seed changes, deleted worlds and resets. The paranoidia was his before it had a name.
+- **Everything erased except his memories**, the same erasure Sky.ps had at 4:11, but he keeps what he remembers.
+
+### Beat 890 — ONLY THE 22 ARE IN THE GAME
+
+![Beat 890](screenshots/952-only-the-22-are-in-the-game.png)
+
+> *"Neka is the only one who knew that, and he never told anyone, not even Gaster, Gaster was sent back to Undertale,
+> and now only the 22 are in the game, reason: Luigi Green is being so dangerous as 50 that everyone had to leave."*
+
+- **Not even Gaster.** On August 21 Gaster was the one hiding a secret about Luigi Green; this time he is left out.
+- **Everyone else goes home**: Gaster to Undertale, Luigi Mario, Mario Mario and everyone outside the 22 to their own
+  dimension. Nobody is deleted.
+- **The 22.** Who they are is still Toby's to say.
+
+### Beat 891 — IT IS IF SHE SEES YOU
+
+![Beat 891](screenshots/953-it-is-if-she-sees-you.png)
+
+> *"Neka shows up to ps50 and says "Luigi Green, that looks like you are having fun.", ps50 says "It is, now everyone
+> knows who I am, they are scared of me now, like we want." ... "it isn't if you see her, it is if she sees you" -Neka.
+> Neka wakes up, and says "No one else can get back up."*
+
+- **The rule turned around.** 4:21 PM was "whoever looks at her, boom"; August 21 Luigi Green appeared only when looked
+  at. Now looking away does not save you.
+- **"Like we want."** Being feared was the plan for both of them. Neka: "You are stronger than me now."
+- **"No one else can get back up."** At 4:11 Neka got up and Simon.ps did not. He is still the only one who gets up; he
+  just lies down on a bed after.
+
 ## 2026-09-26 — NEKA HAS NO NUMBER, AND 50.PS IS TEN (BEATS 886-887)
 
 Based on Toby's 2026-09-26 lore, **4:37 PM** (`1a0df7064fbf8685`), thread `1a0deee4cb24addb`. His own typing is the

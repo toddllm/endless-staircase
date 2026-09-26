@@ -1,0 +1,4 @@
+  if(c >= 19322.0 && c < 19344.0) return [891, c-19322.0];  // IT IS IF SHE SEES YOU
+  if(c >= 19300.0 && c < 19322.0) return [890, c-19300.0];  // ONLY THE 22 ARE IN THE GAME
+  if(c >= 19278.0 && c < 19300.0) return [889, c-19278.0];  // 50 IS LUIGI GREEN
+  if(c >= 19256.0 && c < 19278.0) return [888, c-19256.0];  // HELLO.
