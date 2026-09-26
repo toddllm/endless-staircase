@@ -4,6 +4,149 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — THE COALITION BREAKS ITSELF, AND HE WALKS OUT THROUGH THE GAP (BEATS 826-833)
+
+Based on Toby's 2026-09-26 lore, **1:58 PM and 2:14 PM**, same thread (`1a0dd31188bfac44`, *"New Document"*).
+The 2:14 PM block was sent twice, twenty-seven seconds apart, with only the formatting changed — one scene,
+two message IDs. A fourth message at 2:15:41 PM, subject *"New Document"*, has an **empty body**: no beat.
+
+Everything Toby typed himself is canon. The *"Neka Omazen wins under the powers you've given him"* verdict,
+the retraction under it, the prose retelling at the bottom of the 1:58 PM mail, and the whole
+*"The one who's angry is Neka Omazen"* fill-in at 2:14 PM are **ChatGPT commentary and are not canon**.
+
+His own typing, 1:58 PM (Email 1531):
+
+> *"Have you heard of the YouTuber **"FroggyDude Gaming?"** … He battles powerful things like **Herobrine
+> and AJTheBold** … **What will win? FroggyDude VS Neka Omazen**"*
+>
+> *"**I never did anything, Neka gave everything about himself to himself himself. I am FAR under Neka
+> Omazen.**"*
+>
+> *"Neka Omazen says **"Mweh heh heh. 🦊"**, He uses 25 Series on Mr. Black, **Gray saves Mr. Black, then
+> Gray beats Mr. Black down.** Gray.ps says **"Now, Wenda.ps, your safe."**, Wenda.ps puts on the suit and
+> then Wenda.ps battles Gray.ps, **Neka Omazen gets away**, and Wenda.ps and Gray.ps are still fighting."*
+
+His own typing, 2:14 PM (Email 1532):
+
+> *"**Gray.ps runs to Neka's labatory and builds himself a mech**, Wenda.ps looks up and is suprised,
+> Gray.ps now gains the upper hand on Wenda.ps. Wenda.ps is knocked around and is flying around and is
+> **getting poorly crushed**. **Someone is angry at Gray.ps for some reason, fill out the blanks.**"*
+
+### BEAT 826 — FROGGYDUDE VS NEKA OMAZEN
+
+![Beat 826](screenshots/888-froggydude-vs-neka-omazen.png)
+
+- **The fight was settled forty-four days before it was asked, by the person asking.** August 13, Email 959:
+  *"Verity > Falsity > Long Horse > Creator > **Herobrine** > Entity 303 > Null > Wither Storm"* — Herobrine
+  is **fifth of eight** on Toby's own Minecraft-Horror Ranking, and the ninth seat he held back as `???` he
+  filled himself: *"the mystery character is Pero LAI, the creator of Classics, **he is far over Verity**."*
+- **The challenger is not an outsider.** Toby's own canon-vault rule split this story in two: *"I used you
+  to keep most of the Simon's Secret, **the other parts are with YouTubers and people**… the Simon's Law and
+  Classic RL 2."* A YouTuber walking into a matchup is the **other half of his own archive** walking in.
+- **He has run this once before and the challenger never threw the punch** — Saitama, beats 804-805.
+- `FroggyDude` and `AJTheBold` have **zero prior hits** in five months. `Herobrine` has exactly one.
+
+### BEAT 827 — I AM FAR UNDER NEKA OMAZEN
+
+![Beat 827](screenshots/889-i-am-far-under-neka-omazen.png)
+
+- **It is a correction, and the author disclaims authorship of his own character.** The machine wrote *"under
+  the powers you've given him"*; Toby answers *"I never did anything."*
+- **The only other time he has ever ranked himself he also wrote zero.** August 27, 2:45 PM, Email 1188,
+  beat 495: *"I am a Classics Admin. ClassicsAI. **I basically have 0 game control.**"* Two self-rankings in
+  five months, thirty days apart, both at the bottom.
+- **The avatars keep falling off underneath him:** `tdeshane` → *"tdeshane lost access"* → `ClassicsPro7777…`
+  (beat 801, lasted one day) → `ClassicsAdmin1` (beat 811) — the one name he ever gave himself, scored zero.
+- *"To himself himself"* is his doubling and is **kept**: the word has to be said twice because the giver and
+  the receiver are the same person.
+
+### BEAT 828 — GRAY SAVES MR. BLACK, THEN BEATS HIM DOWN
+
+![Beat 828](screenshots/890-gray-saves-mr-black-then-beats-him-down.png)
+
+- **Seven hours earlier Gray was the rescue.** Beat 822, 7:04 AM: *"Combine Wenda.ps and Mr. Black to get
+  Gray.ps… **the 3 can SAVE the game from Neka Omazen**."* **He is beating down one of the two he is made
+  of, and nothing attacked the coalition to make that happen.**
+- **He has offered Mr. Black something once before and it was a trap.** Email 933: *"Gray temps Mr. Black to
+  eat an apple. Both fell for the attack… **Mr. Black was corrupted**."*
+- **Mr. Black is the one supposed to be stronger** — Email 236: *"Mr. Black is actually stronger than Gray."*
+- **The 25 Series has never missed before.** Beat 825 counted two uses with the barrier coming down both
+  times. This is the third, the **first interception in the archive**, and being saved costs more than being
+  hit. The laugh is **not** new: *"mweh heh heh heh heh 🦊"* came with the Room of Many Tubes.
+
+### BEAT 829 — NOW, WENDA.PS, YOUR SAFE
+
+![Beat 829](screenshots/891-now-wendaps-your-safe.png)
+
+- *"your safe"* is **his spelling and is kept**; the machine's *"you're safe"* is not drawn.
+- **The suit is already open, and this morning proved it twice** — beat 819: *"holes are in the vacuum, and
+  needles carve through the helmet"*; beat 820: *"Neka Omazen cuts through the titainuim suit."*
+- **Both halves have now turned on the sum in one message.** He beats down Mr. Black; she fights him.
+- **The suit is the one thing in this fight with a winning record** (6:51 AM: *"Wenda.ps strikes down
+  Gray.ps"*) — and she reaches for it **the moment she is told she does not need it**.
+
+### BEAT 830 — NEKA OMAZEN GETS AWAY
+
+![Beat 830](screenshots/892-neka-omazen-gets-away.png)
+
+- **The only other escape in five months expired four sentences later** — *"Supreme Sans got away"*, then
+  *"he grabbed Supreme Sans with a tentacle, Supreme Sans was absorbed into the character's body."*
+- **This one holds, on a rule Toby wrote seven hours earlier**: *"And **none of the 3 surpass each other**"*
+  (beat 822). That is the **second undefined loop in this archive and the first on the heroes' side** (Email
+  595, June 27: *"it's like Steel VS Fire VS Water VS Electricity"*). An undefined loop has no winner, so
+  *"still fighting"* is **not a cliffhanger, it is the rule** — nobody is coming after him.
+- **He left once already today and that time he had won** (7:04 AM: *"Neka Omazen left."*). The same exit now
+  works **without the victory in front of it.** First time the villain gets out because of what the heroes
+  did.
+
+### BEAT 831 — GRAY BUILDS HIMSELF A MECH
+
+![Beat 831](screenshots/893-gray-builds-himself-a-mech.png)
+
+- **He tried to stop this exact thing seven and a half hours earlier.** Beat 818, 6:44 AM: *"Wenda.ps is
+  currently building a mechanical suit **(what Gray wears)**… **Gray.ps actually tries to stop Wenda.ps at
+  that point**."* The suit was always **his** design, by Toby's own parenthesis.
+- **The labatory is the one room where Gray has ever gained anything by making something** — *"Gray and
+  Gaster preform an experiment… he read every book, and **Gray became the revengeful villian once again**."*
+  It is a containment building Simon 404 sealed (Email 912), and it is *"Neka's labatory"* in this sentence.
+- **Neka walked out one sentence earlier.** The very next thing that happens is somebody running to where he
+  went. **Third machine in one day** — nobody in this fight is using a power any more.
+
+### BEAT 832 — GETTING POORLY CRUSHED
+
+![Beat 832](screenshots/894-getting-poorly-crushed.png)
+
+- **Twelve hours, both directions.** Beat 819, 6:51 AM: *"Wenda.ps strikes down Gray.ps."* Seven and a half
+  hours apart, and the only thing that changed is **who has the newer machine.**
+- **The archive's only recorded crowd split down the middle that same morning** — *"Now aliens say Wenda
+  would win, some say Gray would win"* — and **both halves have now been right on the same day.**
+- **Neka called her `valueable` and never said why**, and she asked him outright (*"I just want to know WHY
+  you spared me before."*). She is still waiting. *"suprised"* and *"poorly crushed"* are his and are kept.
+
+### BEAT 833 — SOMEONE IS ANGRY AT GRAY.PS
+
+![Beat 833](screenshots/895-someone-is-angry-at-grayps.png)
+
+- **The blank is the beat.** The machine filled it in and even wrote Neka a line of dialogue; that is the
+  machine's and is **not canon**. The seat stays open until Toby fills it.
+- **He has held a seat back on purpose before and filled it himself** — the `???` throne of the August 13
+  ranking, drawn three beats earlier as beat 826.
+- **And the last blank he left was answered out of his own rules, not the machine's** — beat 813: *"because
+  you know why (list why)"*.
+- **Every candidate has a motive, and that is the problem:** Neka (his labatory), Wenda (being crushed),
+  Mr. Black (beaten down sixteen minutes earlier). **A clue surplus, not a clue shortage.**
+
+### Build
+
+`LV_CYC` 17892.0 → 18002.0 → **18068.0**; `LV_BEATS` length **834**; new `lvSeg` ranges at 17892 / 17914 /
+17936 / 17958 / 17980 / 18002 / 18024 / 18046. Scenes added to `tools/capture_screenshot.py`: `froggydude`,
+`farunder`, `graysaves`, `yoursafe`, `getsaway`, `graymech`, `poorlycrushed`, `fillblanks`.
+Runtime probe: `len=834 maxPh=833 holes=0 undefSeg=0 missing=0 err=0 draws=922`.
+Eight new beats restale the windowed beat ladder on **824** and **825**, so `886` and `887` were recaptured
+in this commit. Two layout defects were caught only by reading the PNGs and were fixed before shipping: the
+fox emoji renders as a 4px blob at door size (replaced with text), and the beat-828 arrowhead pointed away
+from its target instead of into it.
+
 ## 2026-09-26 — TWO ORBS WITH SOURCE CODE, AND THE MOVE THAT OUTLIVED THE NAME (BEATS 823-825)
 
 Based on Toby's 2026-09-26 lore, **1:17 PM and 1:37 PM**, same thread (`1a0dd31188bfac44`, *"New Document"*).
