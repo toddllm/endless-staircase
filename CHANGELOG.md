@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — ERROR: NULL, A CHILD CAN BEAT EVERYONE (BEATS 900-901)
+
+Based on Toby's 2026-09-26 lore, **6:56 PM** (`1a0dfef28353812b`), thread `1a0deee4cb24addb`. His own typing runs from
+"In the Endless Staircase game, once PS-50 sees you" through "But PS-50 can make Neka sleepy."; the restatement after
+it is a pasted reply and is **not** canon. The 6:50 PM message (`1a0dfea542a34d3c`) is an image request plus pasted
+text, so it gets no beat.
+
+- LV_CYC 19520.0 -> 19564.0, LV_BEATS length 900 -> 902. New capture scenes `errornull900`, `childbeats901`.
+  Screenshots 960-961 recaptured at the final length so their beat ladders are current.
+- Not built yet: Toby's design note that the staircase should play through the Classics events as real encounters
+  (and a live PS-50 gaze that ends the run). Recorded here as the next big build.
+
+### Beat 900 — ERROR: NULL (6:56 PM)
+
+![Beat 900](screenshots/962-error-null.png)
+
+> *"In the Endless Staircase game, once PS-50 sees you, it is game over and it says "Game Over: ERROR: NULL:
+> death.fell.accident.glitch.paranoid", that is what happens in Classics. Also the Endless Staircase game should
+> actually have all the Classics stuff in it, so the player doesn't just fall forever."*
+
+- **Game Over: ERROR: NULL.** Five causes of death in one line; the game cannot pick which one it was.
+- **Read it left to right.** Fell, accident, glitch, and the real one last: paranoid.
+- **Not just falling forever.** Toby's own design note for this game.
+
+### Beat 901 — A CHILD CAN BEAT EVERYONE (6:56 PM)
+
+![Beat 901](screenshots/963-a-child-can-beat-everyone.png)
+
+> *"A child can beat everyone. Neka Omazen is too strong for the paranoid. But PS-50 can make Neka sleepy."*
+
+- **A child can beat everyone.** The smallest one in the game is the one nobody wins against.
+- **Too strong for the paranoid.** Her gaze cannot take hold on Neka.
+- **But she can make him sleepy.** Why he keeps going back to bed (6:33 PM "still tired", 6:41 PM sleeps again).
+
 ## 2026-09-26 — TEA PARTY AND DAGGERS, THROUGH THE STATIC (BEATS 898-899)
 
 Based on Toby's 2026-09-26 lore, **6:41 PM** (`1a0dfe155ac71d5b`), thread `1a0deee4cb24addb`, which arrived while

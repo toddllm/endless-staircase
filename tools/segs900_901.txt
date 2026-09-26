@@ -1,0 +1,2 @@
+  if(c >= 19542.0 && c < 19564.0) return [901, c-19542.0];  // A CHILD CAN BEAT EVERYONE
+  if(c >= 19520.0 && c < 19542.0) return [900, c-19520.0];  // ERROR: NULL
