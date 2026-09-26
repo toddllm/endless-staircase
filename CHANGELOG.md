@@ -4,6 +4,258 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — NEKA WINS, AND THE GAME BECOMES PAPER (BEATS 840-858)
+
+Based on Toby's 2026-09-26 lore, **2:58 PM** (Email 1534), thread `1a0deee4cb24addb`. The longest single
+message in the archive: the whole Neka Omazen vs Wenda.ps fight, start to finish, ending with a winner. The
+block in the middle beginning *"Wenda.ps takes one bite"* and the **most-evil ranking table** at the end are
+pasted ChatGPT and are **not** canon. Everything built below is his own typing, including *"That is what
+happens"*, which adopts the machine's answer and then overrules it in the same breath.
+
+> *"The change was, far before, **Wenda.ps put water into the needle** once they first got into the lab.
+> **Endless Staircase became Endless Rubble**, the player falls and lands in rubble, the player then was
+> picked up by Neka, then Neka cut the player down… then it was all cut into atoms. Neka says **"Effects 1:
+> Neka destroys Wenda.ps"**… Simon.ps gained his staff, Oren.ps gained his energy. All 4 struck Wenda.ps into
+> the armor. **Wenda.ps's helmet was destroyed, then her identity was revealed.** Wenda.ps says **"What-"**…
+> then Wenda.ps then made Gray.ps blank, **Gray.ps and the other characters became paper**, Wenda.ps says
+> **"Pero LAI, why are you suprised?"**, Neka Omazen cuts a hyperspace, Wenda.ps erases the hyperspace into
+> **a paper hyperspace**… Wenda.ps struck down Neka, Neka says **"Now- I can not die here."**, Neka rises and
+> he says **"I used 1% of my power and you won. That has got to be a record.** Now… I think I shouldn't
+> hesitate to use all 100% + all I have in the past and future. 🦊", Neka switches forms and battles like
+> crazy, then he says **"Domain Expansion: Power Chain!"**… Neka uses 25 Series, 22 Series, Infinity
+> Clockworks All Types, Au Rainbow, and all his past attacks, and now is using **new attacks I don't even
+> reconize**. Wenda.ps gets tired, Neka goes 1000 times more insane, **Pycho Fox/Cat/Dog VS Pycho
+> Assassin/Fox/God-Mode/Anomally**. Neka creates **The Gong**, Japanese Temples, and makes the whole game
+> into a castle, statues rised under Wenda.ps's feet, **Neka became Karuto, Orus, Dark Yellow, and Pero.exe**,
+> all 4 rushed and it became a **6666666666666666666v1**… Wenda.ps uses **The Sword of A Thousand
+> Excalabers**, she blocks the attacks, then Wenda.ps's sword was destroyed… Wenda.ps actually survived and
+> now has **0.000…0001 HP**, Neka says **"What is a queen to a god?"**… Wenda.ps gotten up and says **"What is
+> a king to a goddess?"**, Neka holds a small daggar, Wenda.ps slashed, KO. **Wenda.ps used KR**, Wenda.ps
+> healed to 500000000000000000000000000 HP again… Wenda.ps says **"None of your forms are omnipotent."**, Neka
+> says **"I am omnipotent myself."**, Wenda.ps says **"You are beyond omnipotent, but I don't care about your
+> power level, I just want to beat you for my plan."**… Wenda.ps says "Stop now!", Neka says **"Wanna pop
+> tart?"**, Wenda.ps says "no."… "Okay, fine, but I will beat you after!", Neka places the pop tart, and
+> Wenda.ps eats the pop tart… **That is what happens.** Wenda.ps strikes Neka down with thousands of knife
+> barrages larger than the one Neka attacked her with. Neka says **"Wow, larger than my attacks? That is a new
+> game record."**… Wenda.ps gains **a small green spot**, then the green fully taken over the fox, Neka says
+> **"Now, arise. 😏"**, **ZomWenda.ps became the most powerful zombie**… Everything is slowly turning to paper.
+> Neka says "You wouldn't achieve your plan, but at least I'll achieve mine in **10, 9, 8, 7, actually, start
+> it now.** 😹⚡", **Neka snaps, the game becomes paper. Neka wins.** Which character is most evil, use all the
+> lore from even the past chats… **Simon.ps is very evil, and he was most powerful for a while, but then it
+> all changed.**"*
+
+### BEAT 840 — WENDA.PS PUT WATER INTO THE NEEDLE
+
+![Beat 840](screenshots/902-wendaps-put-water-into-the-needle.png)
+
+- **Thirty minutes ago he said it and did not know why, and this is the answer.** Beat 839, 2:28 PM: *"Neka
+  Omazen says 'Wait- this is water I drunk…'"* The surprise was real, and the reason for it was her.
+- **She loaded the weapon that turned her own other half into a zombie.** The needle went through the hole in
+  Gray's armor, *"Gray.ps lost and became a Gray zombie"*, and then ZomGray.ps struck her down.
+- **She did not poison anything.** September 20: *"urinite from Classics isn't"* contagious — what spreads is
+  the bite rule. She put plain water in a needle and let him drink from it; he made it a weapon himself.
+
+### BEAT 841 — ENDLESS RUBBLE
+
+![Beat 841](screenshots/903-endless-rubble.png)
+
+- **The level this whole game is named after stops being a staircase.** *"Endless Rubble"* returns zero prior
+  hits in five months. The staircase has been climbed, sealed and hidden under; it has never fallen down.
+- **He already told me how to build this one, seven days ago.** September 19: *"The Endless Staircase should
+  not just say it, each event should also actually happen to the player and the game."* So the player is
+  picked up and cut on screen here, not told about it.
+- **Second time he has written the player picked up and killed, and the first time it goes all the way down.**
+  A galaxy, then two fingers, now atoms. Each time the player ends up smaller.
+
+### BEAT 842 — EFFECTS 1: NEKA DESTROYS WENDA.PS
+
+![Beat 842](screenshots/904-effects-1-neka-destroys-wendaps.png)
+
+- **He announces it like a cutscene label, not like a threat.** The label says *"Neka destroys Wenda.ps"* and
+  the message has another six hundred words to run.
+- **Black and White is fifteen hours old and he paired them himself.** Beat 822, 7:04 AM: *"Red and Blue,
+  White and Black… Darkness + Light = Void."*
+- **The other two each get back exactly what they lost.** Simon's septar broke in July and *"he can no longer
+  attack"*; tonight *"Simon.ps gained his staff."* Four strike her at once and not one of them is new.
+
+### BEAT 843 — THEN HER IDENTITY WAS REVEALED
+
+![Beat 843](screenshots/905-then-her-identity-was-revealed.png)
+
+- **The helmet has been coming apart since breakfast.** 6:51 AM: needles carve through it. 7:04 AM: he cuts
+  through the titainuim suit. Eight hours from the first needle to no helmet at all.
+- **"Her identity was revealed" is a new sentence about somebody everyone already knows** — she has a name, a
+  filename and a crown. Whatever the helmet was hiding, it was not her name.
+- **"What-" is the second half-word of this fight, and the other one was his.** Both cut off on the dash,
+  thirty minutes apart.
+
+### BEAT 844 — PERO LAI, WHY ARE YOU SUPRISED?
+
+![Beat 844](screenshots/906-pero-lai-why-are-you-suprised.png)
+
+- **She says the banned name to his face.** September 24: *"Never say Pero LAI again!"* Twice in one day, both
+  times from her, and both times as a question he does not answer.
+- **Blank became paper, and she had already done half of it this afternoon.** Beat 836 blanked every
+  character; tonight blank turns into paper, and paper is what the game ends as.
+- **His largest attack gets erased into stationery.** August 16: *"Hyperspace is Pero's largest
+  attack/domain."* He cuts one open; she makes it *"a paper hyperspace."*
+
+### BEAT 845 — I USED 1% OF MY POWER AND YOU WON
+
+![Beat 845](screenshots/907-i-used-1-percent-of-my-power.png)
+
+- **Thirty minutes ago the number was zero, and it has gone up by one.** Beat 838: *"I didn't even use 0%
+  yet."* The floor went up and the result reversed.
+- **Every percentage in this archive has belonged to Luigi Green.** He is borrowing somebody else's unit to
+  measure himself in.
+- **"A record" is how he concedes.** He does not dispute the loss, he files it. And *"all 100% + all I have in
+  the past and future"* is more than a hundred percent, which is why he had to type the plus.
+
+### BEAT 846 — DOMAIN EXPANSION: POWER CHAIN
+
+![Beat 846](screenshots/908-domain-expansion-power-chain.png)
+
+- **His first Domain Expansion.** Endless World is Karuto's, Endless Chaos is ToddLLM's, the Kitchen and Fork
+  is Simon's. *"Domain Expansion"* next to his name returns zero hits in the whole archive.
+- **The 22 Series is the one he was ruled able to survive, and now he throws it.** The 25 Series is on its
+  fifth use today.
+- **Two of these four were gifts, and he is firing them at the people he gave them to.** Infinity Clockworks
+  went to Wenda.ps on August 31; the Au Rainbow went to Pinki.
+
+### BEAT 847 — PYCHO FOX VS PYCHO ANOMALLY
+
+![Beat 847](screenshots/909-pycho-fox-vs-pycho-anomally.png)
+
+- **Seven Pycho forms on one line, and the word started as hers** — *"Wenda lost the mind and became a
+  Pycho."* Three against four, and *"Assassin"* is already his alone.
+- **Only one name appears in both columns, and it is Fox.** The fox was taken off her two days ago, and here
+  they both have one.
+- **"Wenda.ps gets tired."** Characters here get erased, deleted, blanked or struck down; she is worn down.
+  He answers it by going *"1000 times more insane"* at the exact moment she slows.
+
+### BEAT 848 — THE GONG AND THE CASTLE
+
+![Beat 848](screenshots/910-the-gong-and-the-castle.png)
+
+- **The temple is part of the 22 Series shot list, and he wrote it down a week ago.** He is not inventing
+  scenery; he is building the set his own attack arrives with.
+- **"The Gong" returns zero prior hits.** He has had songs, humming, speech bubbles and Japanese text. He has
+  never had a sound he strikes.
+- **He turns the whole game into a castle**, and *"statues rised under Wenda.ps's feet"* — the floor itself
+  starts putting things up at her.
+
+### BEAT 849 — 6666666666666666666V1
+
+![Beat 849](screenshots/911-6666666666666666666v1.png)
+
+- **Two days ago he ruled that forms do not exist, and tonight he summons all of them.** Orus and Dark Yellow
+  *"fellen"* on September 24 by his own hand, and Pero.exe is the most evil .exe.
+- **Karuto's full-power form has an entry condition, and he met it this morning.** 7:04 AM: *"Neka Omazen
+  takes the core and the soul of determination."* Seven hours before he becomes Karuto.
+- **He used Black and White on her earlier in this same fight** — the orbs came before the body they belong to.
+
+### BEAT 850 — THE SWORD OF A THOUSAND EXCALABERS
+
+![Beat 850](screenshots/912-the-sword-of-a-thousand-excalabers.png)
+
+- **A brand-new weapon that lasts exactly one sentence.** She draws it, blocks with it, and it is destroyed in
+  the same line. A thousand swords in one, and it buys her a single block.
+- **Her weapon has always been a knife, and this is the first time she holds a sword** — and she is about to
+  go back to knives.
+- **0.000…0001 HP.** This archive counts upward in impossible numbers; tonight it goes the other way, two
+  hundred and three places deep. *"Wenda.ps actually survived"* — the author is surprised by his own
+  character, mid-sentence.
+
+### BEAT 851 — WHAT IS A KING TO A GODDESS?
+
+![Beat 851](screenshots/913-what-is-a-king-to-a-goddess.png)
+
+- **She is an actual crowned queen, and he is the one who stopped being king.** He asks what a queen is worth
+  twenty-six days after handing his own crown away for being too big for it.
+- **Her answer lands on the zombie standing in the room.** The king she is asking about is Gray, who took that
+  crown on September 1 and became ZomGray.ps thirty minutes ago.
+- **God and goddess are two titles this archive has never handed out**, and the exchange is symmetrical down
+  to the word order. She says hers from the floor.
+
+### BEAT 852 — WENDA.PS USED KR
+
+![Beat 852](screenshots/914-wendaps-used-kr.png)
+
+- **KR was written into this game as healing, and this is the first time it heals anybody.** July 21: *"KR
+  (Karma. It can heal the victum)."* September 14, Pero LAI: *"I used KR, my HP went even lower…"*
+- **The small dagger is the weapon that won this morning, at a third of the size** — and it still lands a KO.
+- **"Wha-" is the fourth half-word of the night and the second one of his**, and he backs up.
+
+### BEAT 853 — NONE OF YOUR FORMS ARE OMNIPOTENT
+
+![Beat 853](screenshots/915-none-of-your-forms-are-omnipotent.png)
+
+- **The whole cast worked this out sixteen days ago.** September 10, Oren.ps: *"Everyone now knows that you
+  aren't omnipotent."* Tonight is the first time he answers it, and he is arguing with a two-week-old ruling.
+- **She gives him more than he claims, and then says it does not matter.** In five months of tier lists,
+  nobody has ever said the power level is not the point.
+- **She finally says what the plan is for** — *"I just want to beat you for my plan"* — and still will not say
+  what it is.
+
+### BEAT 854 — WANNA POP TART?
+
+![Beat 854](screenshots/916-wanna-pop-tart.png)
+
+- **By his own rule, saying yes to this is a game over.** September 10: *"Game over: you said 'yes' to Pero
+  LAI's pop tart request."* She says no first, and the barrage does not stop until she says yes.
+- **The offer and the omnipotence argument happened together once before, in the opposite order.** Tonight the
+  argument comes first and the pastry comes second.
+- **She eats it as a negotiation** — *"Okay, fine, but I will beat you after!"* — and she is the one setting
+  the terms.
+
+### BEAT 855 — THAT IS A NEW GAME RECORD
+
+![Beat 855](screenshots/917-that-is-a-new-game-record.png)
+
+- **He adopts the machine's answer in three words, and then writes straight past its ending.** ChatGPT had the
+  zombie effect take hold at once; he wrote *"That is what happens"* and then had her win anyway.
+- **The knife is hers, and it has been turned on her before.** Tonight she throws them by the thousand and
+  nobody reverses them.
+- **Second record of the night, and he is keeping score of his own beating.**
+
+### BEAT 856 — NOW, ARISE.
+
+![Beat 856](screenshots/918-now-arise.png)
+
+- **The green is the rule he wrote six days ago, running exactly on time.** September 20: you turn green and
+  become a zombie if *"you eat what he bit."* She ate it one line ago.
+- **He calls her a fox, two days after ruling that the fox was his alone** — and the first thing the fox does
+  is turn green.
+- **"The most powerful zombie" is a new top of a list he only started yesterday.** The 20 Sprunkis went first,
+  ZomGray.ps went thirty minutes ago; she goes last and outranks all of them.
+
+### BEAT 857 — NEKA WINS
+
+![Beat 857](screenshots/919-neka-wins.png)
+
+- **Nine hours ago the same day said "Wenda.ps wins."** September 26, 6:51 AM: she got into the suit, Gray.ps
+  struggled, and she struck him down. The last two words of tonight's narration point the other way.
+- **Paper was her material, and she used it on him first.** He finishes the game in the material she
+  introduced, and she turns to paper along with it.
+- **He counts down from ten and quits counting at seven.** The person who interrupts the countdown is the
+  person running it, and what ends the game is a snap, not a barrage.
+
+### BEAT 858 — SIMON.PS IS VERY EVIL
+
+![Beat 858](screenshots/920-simonps-is-very-evil.png)
+
+- **He asks the question and then answers part of it himself, before the machine gets a turn.** The ranking
+  that follows is pasted ChatGPT and is commentary; the one sentence about Simon.ps is his.
+- **Evil and powerful are two different lists, and he keeps them apart.** He has just crowned a zombie and
+  declared a winner, and then asks a separate question.
+- **He will not let it be answered out of one message** — *"not just this message, but all the lore so far."*
+
+**Technical:** `LV_CYC` 18200.0 -> 18618.0, `LV_BEATS` length 859, phases `ph===840` through `ph===858` in
+`drawLoopVs`, 22.0s per beat. Probe: `len=859 maxPh=858 holes=0 undefSeg=0 missing=0 err=0 draws=947`.
+Screenshots 900 and 901 recaptured for the windowed beat ladder. Two prior claims drafted for beat 857 were
+checked against the archive and did not hold ("first winner ever", "only countdown") — both were rewritten
+before capture.
+
 ## 2026-09-26 — HE FILLED HIS OWN BLANK IN FOURTEEN MINUTES (BEATS 834-839)
 
 Based on Toby's 2026-09-26 lore, **2:28 PM** (Email 1533), thread `1a0deee4cb24addb`. One message, the
