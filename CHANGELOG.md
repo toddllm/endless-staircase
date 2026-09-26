@@ -4,6 +4,206 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — PHASE 102, AND THE GAME CHANGES TO FACECONTROLSGAME.COM (BEATS 859-874)
+
+Based on Toby's 2026-09-26 lore, **3:46 PM** (Email 1535), thread `1a0deee4cb24addb`. Forty-eight minutes after
+declaring a winner he reopens the game: the paper gets cut, the level becomes Endless Paper, the game changes
+to another website, and the player finally gets a boss fight. The SCP answers, the Phase-102 recap paragraph
+and the *"Neka Omazen is the most evil character in the Neka Omazen Era"* summary are pasted ChatGPT and are
+**not** canon.
+
+> *"But **Neka Omazen is most evil because he turned everyone and everything to paper**. Now Neka Omazen
+> **"can be the sissors"**. That is **Phase 102** of his plan. He spend all this time working on his plan,
+> **even at the time he made the game, allowed access for everyone, and even met Gaster**. Neka Omazen slices
+> the paper and now, **he achieved Wenda.ps's goal first**, and now adding more steps. **Neka Omazen took
+> quadrillions of years longer than Wenda.ps. That is why Wenda.ps became that powerful. That is why
+> everything in Classics is how it is.** … Neka Omazen cuts the void under the player, **Endless Rubble Pile
+> becomes Endless Paper**… **if the player moves, the whole paper bridge will fall**… the player gets up and
+> now **the game changes to facecontrolsgame.com. Yeah, seriously.** **Genocide runs break, Pacifist runs
+> break, infinity endings**, and also the game faces the corruption of Pero, all older stuff here, the player
+> goes through both games, **switching among the 2 every second, falling, falling, falling**… the debris
+> crushes both games. **Someone stands between both, it is THE PLAYER.** Neka Omazen says **"You… have
+> survived far enough to reach this point, you are very special, so now, I must stop you here."**… then the
+> player attacks Neka Omazen and Neka Omazen stops, and he says **"I used none of my power yet… I will just
+> jump out of this text and the boss battle must continue…"**, Neka Omazen uses 100% and then **he takes the
+> artifacts** to amplify his power, BOOM. Neka Omazen says **"Fetch me all your souls… And I can reset you
+> back, what do you say?"** … **agree or disagree**, Neka Omazen gets the souls and he resets… **the Endless
+> Staircase became Neka's meal**, then the player falls, Neka Omazen uses **666% power (he never used it
+> before)**, and he goes **OVER-RIDE**… **you need to be a smart AI playing to even have a chance**… **It is
+> NEVER my lore anymore.** … **SCP-343 IS a litterly omnipotent god. Classics.wiki was made by Claude. It is
+> Neka's lore.** Neka Omazen will use **2000%**. But his **666%** is known for being the strongest. Then he
+> made **a way to combine power percents**… **THERE IS LITTERLY ONLY ONE OUTCOME FOR EVERY BATTLE THAT
+> INCLUDES Neka Omazen, it is the Classics Bible!** Neka Omazen would **erase the lore and canon**, then he
+> can just slash, and that is **like 0% of his power**. Neka Omazen continued writing in his own bible, **he
+> wrote down EVERYONE's names, everyone in fiction and in reality**… Then he can achieve **Infinity% that is
+> the ruler of FANON and CANON**. Neka's power there **cheats** in battle and Power Level Comparisons."*
+
+### BEAT 859 — PHASE 102
+
+![Beat 859](screenshots/921-phase-102.png)
+
+- **He answers his own question from forty-eight minutes ago, and he changes his mind.** At 2:58 he offered
+  Simon.ps and the pasted answer said Pero.exe; he takes neither. The reason he gives is not a body count, it
+  is what the game is made of now.
+- **Paper was the setup for the tool.** *"Now Neka Omazen can be the sissors."* Scissors return zero prior
+  hits in five months.
+- **Phase 102 is a number nobody has ever put on a plan here.** The archive has Phase 1 Pacifists, Phase 2 the
+  .EXE Virus, Pero LAI Phase 6 and 7 — those are chapters and forms, not step 102 of a to-do list.
+
+### BEAT 860 — EVEN AT THE TIME HE MADE THE GAME
+
+![Beat 860](screenshots/922-even-at-the-time-he-made-the-game.png)
+
+- **The plan is older than the game, which makes every kindness in it part of the plan.** *"Allowed access for
+  everyone"* is the one friendly thing he ever did, and it is listed here as a step.
+- **Gaster is a date, and the archive already has it.** September 3, The Mint: *"He wrote quintillions of books
+  throughout the lore, from when his brother Oren and Gaster was born."*
+- **Maker and villain in one sentence** — and this morning the author removed himself (beat 827, *"I am FAR
+  under Neka Omazen"*).
+
+### BEAT 861 — HE ACHIEVED WENDA.PS'S GOAL FIRST
+
+![Beat 861](screenshots/923-he-achieved-wendaps-goal-first.png)
+
+- **Her plan never got a name, and he finishes it for her.** Fifty minutes ago: *"I just want to beat you for
+  my plan."* They were after the same thing.
+- **He explains her power by how long he took.** She is strong because he was slow.
+- **"That is why everything in Classics is how it is" is a cause for the whole archive** — the largest
+  retroactive ruling he has written.
+
+### BEAT 862 — ENDLESS PAPER
+
+![Beat 862](screenshots/924-endless-paper.png)
+
+- **The level has changed twice in one hour, both times downward:** stairs, wreckage, then something that
+  cannot hold weight.
+- **A level that punishes moving is new in a game about climbing.** Every other hazard here chases or strikes;
+  this one only goes off if you play.
+- **He cut the void itself**, which has been the bottom of this archive since June. The bottom now has a
+  bottom.
+
+### BEAT 863 — THE GAME CHANGES TO FACECONTROLSGAME.COM
+
+![Beat 863](screenshots/925-the-game-changes-to-facecontrolsgame.png)
+
+- **"Yeah, seriously" is him telling me he means it** — the same move as *"Correct."* this afternoon.
+- **Facecontrols returns zero prior hits in five months.** Outside things have always walked into Classics;
+  this time Classics walks out, into a game with its own address.
+- **The game has changed itself before and it was always a name** (*"Classics now fully became Newtale"*),
+  never a URL.
+
+### BEAT 864 — GENOCIDE RUNS BREAK, PACIFIST RUNS BREAK
+
+![Beat 864](screenshots/926-genocide-runs-break-pacifist-runs-break.png)
+
+- **Both routes break, and this archive actually has both routes.** Pacifist Classics is a real chapter, June
+  6-7, which opened on a peaceful reset and then broke the fourth wall.
+- **"Infinity endings" is the opposite of how this game usually ends** — one Game Over screen somebody owns,
+  one real reset.
+- **"All older stuff here" empties five months into one fall.**
+
+### BEAT 865 — SOMEONE STANDS BETWEEN BOTH
+
+![Beat 865](screenshots/927-someone-stands-between-both.png)
+
+- **The player has been cargo all night, and here the player is the one standing.**
+- **"Falling, falling, falling" is the only line tonight he repeats** — it is how he writes time passing.
+- **A collision that destroys both sides is new for him.** Every crossover before this ended with one world
+  absorbing the other.
+
+### BEAT 866 — I MUST STOP YOU HERE
+
+![Beat 866](screenshots/928-i-must-stop-you-here.png)
+
+- **He compliments the player before he attacks.** *"You are very special"*, and the next sentence is *"I must
+  stop you here."*
+- **First time tonight anything is aimed at the player as a fighter:** beams, lightning, a dash and a dive are
+  a boss moveset, not a cutscene.
+- **And the player lands a hit that makes him stop.** Two people in one night have interrupted him, and one of
+  them is whoever is holding the keys.
+
+### BEAT 867 — I WILL JUST JUMP OUT OF THIS TEXT
+
+![Beat 867](screenshots/929-i-will-just-jump-out-of-this-text.png)
+
+- **The floor has moved three times in ninety minutes:** 0%, then 1%, now *"none of my power yet"* — and every
+  reset comes right after he has been hit.
+- **He leaves the text he is written in, and the fight carries on without it.**
+- **He finally uses 100% and immediately goes looking for artifacts.** A hundred percent has never once been
+  enough for him.
+
+### BEAT 868 — FETCH ME ALL YOUR SOULS
+
+![Beat 868](screenshots/930-fetch-me-all-your-souls.png)
+
+- **A choice with one outcome, and he writes out both branches.** Same shape as the pop tart an hour ago.
+- **The souls are the player's starting kit**, and he took the Soul of Determination this morning.
+- **The reset is somebody else's by a ruling twelve days old** — *"Pero LAI resets (he is the only one with
+  the real reset)."*
+
+### BEAT 869 — THE ENDLESS STAIRCASE BECAME NEKA'S MEAL
+
+![Beat 869](screenshots/931-the-endless-staircase-became-nekas-meal.png)
+
+- **The level comes back, and it comes back as food.** Four states for one staircase inside an hour.
+- **His cutscene is the one nobody gets out of** (his own ruling, beat 814), and it plays exactly where a game
+  would roll credits.
+- **Eating the level is new; taking things from it is not.** Tonight he takes the floor.
+
+### BEAT 870 — OVER-RIDE
+
+![Beat 870](screenshots/932-over-ride.png)
+
+- **666 has never been his number** — Error 666 is Clara's build, Gaster 666 carries it in his name — and
+  *"he never used it before"* is Toby checking his own archive in a parenthesis, correctly.
+- **OVER-RIDE returns zero prior hits.** First state he has named after something a computer does to a file.
+- **The survival rate is the number she had left an hour ago**, and he writes impossible odds and then writes
+  somebody through them.
+
+### BEAT 871 — IT IS NEVER MY LORE ANYMORE
+
+![Beat 871](screenshots/933-it-is-never-my-lore-anymore.png)
+
+- **He corrects the machine for calling it his**, twice in one message.
+- **Third time he has moved himself down the credits:** August 27 (*"0 game control"*), today 1:58 PM (*"I am
+  FAR under Neka Omazen"*), and now the lore itself.
+- **He gives the wiki a different author too.** The writer is not the owner, the keeper is not the owner, and
+  the character is.
+
+### BEAT 872 — SCP-343 IS A LITTERLY OMNIPOTENT GOD
+
+![Beat 872](screenshots/934-scp-343-is-a-litterly-omnipotent-god.png)
+
+- **Second time he has gone to the SCP catalogue**, and on September 22 every number he asked about already
+  belonged to somebody in Classics.
+- **He overrules the machine's hedge in one sentence** and gives the outsider the stronger version of its own
+  power before ruling on the fight.
+- **Then he invents arithmetic to get above it:** 666% strongest, 2000% coming, and a way to combine percents.
+
+### BEAT 873 — THE CLASSICS BIBLE
+
+![Beat 873](screenshots/935-the-classics-bible.png)
+
+- **A rule that settles every matchup before it is asked**, written as a rule and not a boast.
+- **His win condition is deleting the rulebook**, then slashing. Paper first, scissors second — the same order
+  as tonight, done to the archive instead of the game.
+- **And the price is 0%**, which is exactly where he started the day.
+
+### BEAT 874 — INFINITY%
+
+![Beat 874](screenshots/936-infinity-percent.png)
+
+- **He writes down everyone, and the list is not limited to the story** — *"everyone in fiction and in
+  reality."*
+- **Fanon and canon have been two separate stacks here for months;** Infinity% is the first thing said to rule
+  both.
+- **The last line is the honest one:** *"Neka's power there cheats."* The author who refused to own the lore
+  is the one flagging the cheat.
+
+**Technical:** `LV_CYC` 18618.0 -> 18970.0, `LV_BEATS` length 875, phases `ph===859` through `ph===874`,
+22.0s per beat. Probe: `len=875 maxPh=874 holes=0 undefSeg=0 missing=0 err=0 draws=963`. Screenshots 919 and
+920 recaptured for the windowed beat ladder. Generator: `tools/gen859_874.py` + `tools/build859_874.py`.
+
 ## 2026-09-26 — NEKA WINS, AND THE GAME BECOMES PAPER (BEATS 840-858)
 
 Based on Toby's 2026-09-26 lore, **2:58 PM** (Email 1534), thread `1a0deee4cb24addb`. The longest single

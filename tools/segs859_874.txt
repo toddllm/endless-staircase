@@ -1,0 +1,16 @@
+  if(c >= 18948.0 && c < 18970.0) return [874, c-18948.0];  // INFINITY%
+  if(c >= 18926.0 && c < 18948.0) return [873, c-18926.0];  // THE CLASSICS BIBLE
+  if(c >= 18904.0 && c < 18926.0) return [872, c-18904.0];  // SCP-343 IS A LITTERLY OMNIPOTENT GOD
+  if(c >= 18882.0 && c < 18904.0) return [871, c-18882.0];  // IT IS NEVER MY LORE ANYMORE
+  if(c >= 18860.0 && c < 18882.0) return [870, c-18860.0];  // OVER-RIDE
+  if(c >= 18838.0 && c < 18860.0) return [869, c-18838.0];  // THE ENDLESS STAIRCASE BECAME NEKA’S MEAL
+  if(c >= 18816.0 && c < 18838.0) return [868, c-18816.0];  // FETCH ME ALL YOUR SOULS
+  if(c >= 18794.0 && c < 18816.0) return [867, c-18794.0];  // I WILL JUST JUMP OUT OF THIS TEXT
+  if(c >= 18772.0 && c < 18794.0) return [866, c-18772.0];  // I MUST STOP YOU HERE
+  if(c >= 18750.0 && c < 18772.0) return [865, c-18750.0];  // SOMEONE STANDS BETWEEN BOTH
+  if(c >= 18728.0 && c < 18750.0) return [864, c-18728.0];  // GENOCIDE RUNS BREAK, PACIFIST RUNS BREAK
+  if(c >= 18706.0 && c < 18728.0) return [863, c-18706.0];  // THE GAME CHANGES TO FACECONTROLSGAME.COM
+  if(c >= 18684.0 && c < 18706.0) return [862, c-18684.0];  // ENDLESS PAPER
+  if(c >= 18662.0 && c < 18684.0) return [861, c-18662.0];  // HE ACHIEVED WENDA.PS’S GOAL FIRST
+  if(c >= 18640.0 && c < 18662.0) return [860, c-18640.0];  // EVEN AT THE TIME HE MADE THE GAME
+  if(c >= 18618.0 && c < 18640.0) return [859, c-18618.0];  // PHASE 102
