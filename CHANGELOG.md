@@ -4,6 +4,27 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — SLEEPING FOREVER ON HIS BED (BEAT 892)
+
+Based on Toby's 2026-09-26 lore, **5:13 PM** (`1a0df917bc5b50d2`), thread `1a0deee4cb24addb`. His own typing is the
+first two sentences; from "Neka Omazen is now *asleep forever on his bed*" on is a pasted reply and is **not** canon.
+
+- LV_CYC 19344.0 -> 19366.0, LV_BEATS length 892 -> 893. Beats 890 and 891 recaptured (952-953), ladder shift.
+
+### Beat 892 — SLEEPING FOREVER ON HIS BED (5:13 PM)
+
+![Beat 892](screenshots/954-sleeping-forever-on-his-bed.png)
+
+> *"Neka Omazen is sleeping forever on his bed. ps50 is trying to be friends with everyone else, but when she looks at
+> ya, you would get paranoid."*
+
+- **From a bed to forever.** At 5:00 Neka fell asleep on a bed and was still the one who woke up; thirteen minutes
+  later he is "sleeping forever." "No one else can get back up," and now he can't either.
+- **Trying to be friends.** Her first words at 4:21 were "Who are you?" and "Lets have a tea party!"; at 4:37 Neka made
+  her friends with Sky.ps. With him asleep she tries with everyone else herself.
+- **"When she looks at ya."** The same "ya" as "Para always follows ya." Making friends means looking at people, and
+  that is what makes them paranoid.
+
 ## 2026-09-26 — HELLO., 50 IS LUIGI GREEN, ONLY THE 22, AND IT IS IF SHE SEES YOU (BEATS 888-891)
 
 Based on Toby's 2026-09-26 lore, **5:00 PM** (`1a0df8567a102e1d`), thread `1a0deee4cb24addb`. His own typing is the
