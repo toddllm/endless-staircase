@@ -1,0 +1,2 @@
+  if(c >= 19234.0 && c < 19256.0) return [887, c-19234.0];  // AND WHO IS TEN? 50.PS
+  if(c >= 19212.0 && c < 19234.0) return [886, c-19212.0];  // NEKA HAS NO NUMBER

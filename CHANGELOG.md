@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — NEKA HAS NO NUMBER, AND 50.PS IS TEN (BEATS 886-887)
+
+Based on Toby's 2026-09-26 lore, **4:37 PM** (`1a0df7064fbf8685`), thread `1a0deee4cb24addb`. His own typing is the
+opening two lines, "Guess it", and the correction block; the numbers table, the guessed 1-20 list and the
+explanations between them are pasted replies and are **not** canon. Canon: Sky.ps is **68**, 50.ps is **number 10**,
+Neka Omazen **has no number**, and Neka made 50.ps and Sky.ps friends.
+
+- LV_CYC 19212.0 -> 19256.0, LV_BEATS length 886 -> 888. Beats 884 and 885 recaptured (946-947), ladder shift.
+
+### Beat 886 — NEKA HAS NO NUMBER (4:37 PM)
+
+![Beat 886](screenshots/948-neka-has-no-number.png)
+
+> *"Neka made 50 friends with Sky.ps (68). Neka has no number, everyone else does. List everyone's number"*
+
+- **Sky.ps is 68.** Written in a parenthesis next to the name, not explained; not a power level, a place in the list.
+- **Neka has no number.** His file was 666 on September 20, the error code was "999 (666)" on September 22, and by
+  September 23 it was "???", the first with no number at all. Tonight there are none.
+- **Neka made 50 friends with Sky.ps.** Twenty minutes after her stare knocked Sky over, the one with no number
+  introduces the two numbered ones.
+
+### Beat 887 — AND WHO IS TEN? 50.PS (4:37 PM)
+
+![Beat 887](screenshots/949-and-who-is-ten.png)
+
+> *"Correct numbers. And who is ten? 50.ps, I didn't directly say that 50.ps is 10, you said it is 50. Where did I
+> say that 50.ps is 50? Neka didn't. Neka caught my mistake. 🦊"*
+
+- **Her name is 50, her number is 10.** The machine read the 50 in her name as her number; he keeps the two apart.
+- **The guess left one hole and she goes in it.** The machine numbered the 20 Sprunkis in order and left slot 10
+  empty. The guessed numbers are not canon; only 68, 10 and "no number" are.
+- **"I thought you said 'Sky and 50 came for you 🦊' -Neka Omazen."** He read the machine's "came from you" as a
+  line signed by Neka, and in his version it is Neka who catches the mistake.
+
 ## 2026-09-26 — PHASE 200, THE SOUL OF ARTS, THE TEA, AND PARANOIDIA GIRL (BEATS 875-885)
 
 Based on Toby's 2026-09-26 lore, **4:11 PM** (`1a0df584d679e765`) and **4:21 PM** (`1a0df6149f1f5192`), thread
