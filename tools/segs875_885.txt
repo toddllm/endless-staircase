@@ -1,0 +1,11 @@
+  if(c >= 19190.0 && c < 19212.0) return [885, c-19190.0];  // THERE IS A NEW THEORY IN CLASSICS NOW!
+  if(c >= 19168.0 && c < 19190.0) return [884, c-19168.0];  // LETS HAVE A TEA PARTY!
+  if(c >= 19146.0 && c < 19168.0) return [883, c-19146.0];  // PARANOIDIA GIRL
+  if(c >= 19124.0 && c < 19146.0) return [882, c-19124.0];  // 233200%
+  if(c >= 19102.0 && c < 19124.0) return [881, c-19102.0];  // WANT TEA? 🫖
+  if(c >= 19080.0 && c < 19102.0) return [880, c-19080.0];  // MAYBE NEKA IS STRONG ENOUGH TO GET UP
+  if(c >= 19058.0 && c < 19080.0) return [879, c-19058.0];  // A 14 YEAR OLD SPRUNKI WITH A POWER
+  if(c >= 19036.0 && c < 19058.0) return [878, c-19036.0];  // POP TART? OR TEA?
+  if(c >= 19014.0 && c < 19036.0) return [877, c-19014.0];  // THE SOUL OF ARTS
+  if(c >= 18992.0 && c < 19014.0) return [876, c-18992.0];  // NEKA SNAPS THREE TIMES
+  if(c >= 18970.0 && c < 18992.0) return [875, c-18970.0];  // PHASE 200: BEING THE SCISSORS

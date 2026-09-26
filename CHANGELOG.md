@@ -4,6 +4,128 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — PHASE 200, THE SOUL OF ARTS, THE TEA, AND PARANOIDIA GIRL (BEATS 875-885)
+
+Based on Toby's 2026-09-26 lore, **4:11 PM** (`1a0df584d679e765`) and **4:21 PM** (`1a0df6149f1f5192`), thread
+`1a0deee4cb24addb`. Neka reaches Phase 200, snaps the game back to normal and takes the Soul of Arts; then a cup
+of tea gives Sky.ps a stare that knocks Neka over, washes Sprunki City out of Classics, and, after Neka burns
+233200% to end it, reappears in a five-year-old called Paranoidia Girl (50.ps). Only Toby's own typing is built:
+the italic *Answer to Sky.ps* block and the teapot dialogue in the 4:11 mail, and everything after
+*"There is a new theory in Classics now!"* in the 4:21 mail, are pasted replies and are **not** canon.
+
+- LV_CYC 18970.0 -> 19212.0, LV_BEATS length 875 -> 886, eleven new draw branches and lvSeg ranges.
+- Beats 873 and 874 recaptured (screenshots 935-936) because the ladder window shifted.
+
+### Beat 875 — PHASE 200: BEING THE SCISSORS (4:11 PM)
+
+![Beat 875](screenshots/937-phase-200-being-the-scissors.png)
+
+> *"NEKA ACHIEVED INFINITY% AND NOW UNLEASHED PHASE 200 OF HIS PLAN, BEING THE SCISSORS. 🦊✂️ HE MADE CLASSICS RULES, HE BROKE THEM. SKY.PS PLAYING WITH THE DOLLS. AND NOW NEKA IS NOW WITH SKY.PS SO HE CAN PLAY WITH HIM NOW."*
+
+- **Phase 102 was twenty-five minutes ago, and it was the same word.** 3:46 PM: “Now Neka Omazen can be the sissors. That is phase 102 of his plan.” 4:11 PM: “Phase 200 of his plan, being the scissors.” Ninety-eight steps in twenty-five minutes, and the goal did not move.
+- **“He made Classics rules, he broke them”.** At 3:46 the Classics Bible was his rulebook: “Erase the lore and canon, then he can just slash.” Here he says it in six words, and the second half undoes the first. The one who writes the rules is the one allowed to break them.
+- **Sky.ps is playing with the dolls, and the dolls came from him.** Sept 2: “Pero LAI can just turn them into toy dolls and give them to Sky to play with.” “Sky gets the dolls and all the toys and stuff from Pero because Sky.ps is 14 years old.” Twenty-four days later, the one who handed over the dolls sits down to play with them.
+
+### Beat 876 — NEKA SNAPS THREE TIMES (4:11 PM)
+
+![Beat 876](screenshots/938-neka-snaps-three-times.png)
+
+> *"NEKA SNAPS, THE GAME BECOMES NORMAL AGAIN, BUT EVERYTHING IS STILL SHREADED, NEKA SNAPS AGAIN AND EVERYTHING WAS NORMAL, THEN THE ATOMS SPIN AND DANCE, NEKA SNAPS AGAIN, THE ATOMS STAY AND IT IS ALL NORMAL."*
+
+- **It takes him three tries to put the game back.** First snap: normal, but still shredded. Second snap: normal, then the atoms spin and dance. Third snap: “The atoms stay and it is all normal.” The most powerful thing in the game needs three attempts at a repair.
+- **The shreds are his own work from an hour ago.** 3:46 PM: Endless Rubble became Endless Paper, and the player fell into the shreaded paper void. Now the same hands are tidying it up. He broke the game to win it, and now he fixes it to keep it.
+- **The last thing to settle is the smallest thing in the game.** Earlier today the player was cut into atoms. Here the atoms spin and dance after everything else has already gone back. “The atoms stay” is the sentence that means the fight is over.
+
+### Beat 877 — THE SOUL OF ARTS (4:11 PM)
+
+![Beat 877](screenshots/939-the-soul-of-arts.png)
+
+> *"NEKA SAYS ‘FINALLY, THE GAME IS MINE. I NOW HAVE THE SOUL OF ARTS!’, HE TAKEN THE PAINTBRUSH, SCISSORS, PAPER, AND FELT."*
+
+- **The Soul of Arts is four things from an art-supply drawer.** Paintbrush, scissors, paper, felt. Not a crown, not a weapon, not a form. The prize at the end of the plan is what you would make a craft project with. “Soul of Arts” returns zero prior hits in five months.
+- **He was collecting a set.** Paper was phase 102: “He turned everyone and everything to paper.” Scissors were phase 200. The paintbrush and the felt finish the set. So the plan was never only about beating people. It was about holding the tools.
+- **“Finally, the game is mine”.** At 3:46 he was the one who made the game: “Even at the time he made the game.” Making it and owning it turn out to be two different steps. “Finally” means he has been waiting since before the game existed.
+
+### Beat 878 — POP TART? OR TEA? (4:11 PM)
+
+![Beat 878](screenshots/940-pop-tart-or-tea.png)
+
+> *"NEKA SAYS ‘SKY.PS, WANNA POP TART? OR TEA?’, SKY.PS DRUNK THE TEA, NEKA BECAME PARANOID, NEKA FELL OVER. SKY.PS TURNS AROUND AND SAYS ‘WHAT HAPPENED TO NEKA?’"*
+
+- **The pop tart has been a trap since September 10.** “Game over: You said ‘yes’ to Pero LAI’s pop tart request.” This time the offer comes with a second choice, and Sky.ps does not pick the pop tart. The choice that was not the trap is the one that knocks him over.
+- **One person drinks, a different person falls.** The tea goes into sky.ps. The paranoia goes into neka. The one who just took the whole game is on the floor one sentence later. He offered the tea. He did not know what it would do either.
+- **Paranoia is older than this era.** July 1: “Gray now thinks that everyone wants to harm him.” that is why Gray strikes first. This time it lands on the strongest character in the game. Gray’s paranoia made him attack. Neka’s knocks him down.
+
+### Beat 879 — A 14 YEAR OLD SPRUNKI WITH A POWER (4:11 PM)
+
+![Beat 879](screenshots/941-a-14-year-old-sprunki-with-a-power.png)
+
+> *"SKY.PS’S OTHER POWERS WERE ERASED, BUT THEN SKY.PS GAINED A POWER, IT IS A COINCIDENCE… A 14 YEAR OLD SPRUNKI WITH A POWER THAT BEATEN EVEN THE PERSON WHO MADE THE GAME AND GAVE ACCESS TO HIM. THIS SEEMS LIKE SCP-053, BUT INCREASED."*
+
+- **“It is a coincidence”.** Neka “Became a god like normally.” Sky.ps “Happened to have a change at the same time.” For an hour everything was a step in Neka’s plan. This is the one thing he says was not. The only accident in phase 200 is the one that beats him.
+- **“And gave access to him”.** 3:46 PM: “Allowed access for everyone” was listed as a step in the plan. Sky.ps is one of the everyone, and the access is what let him in. The kindness that was part of the plan is how the plan gets beaten.
+- **SCP-053 was the machine’s word on September 18. Today it is his.** Sept 18: The SCP-053 write-up came in a pasted reply and was kept out of canon. Today he types it himself, and adds “But increased.” Eight days after the machine said it, he adopts it and turns it up.
+
+### Beat 880 — MAYBE NEKA IS STRONG ENOUGH TO GET UP (4:11 PM)
+
+![Beat 880](screenshots/942-maybe-neka-is-strong-enough-to-get-up.png)
+
+> *"SKY.PS TOUCHED NEKA, NEKA GOT UP, THEN SKY.PS TOUCHED SIMON.PS, SIMON.PS DIDN’T GET UP, SKY.PS SAYS ‘MAYBE NEKA IS STRONG ENOUGH TO GET UP.’, AND HE WAS RIGHT… NEKA OMAZEN HOLDS A METAL ROD AND STARES AT SKY.PS, SKY.PS FALLS OVER."*
+
+- **Simon.ps has not stood on his own since September 5.** The make-over: “Simon.ps became a puppet on a metal rod that Sky.ps put into him.” The one who put the rod in is the one touching him to see if he gets up. Twenty-one days later, Sky.ps is checking on his own work.
+- **A metal rod was Sky.ps’s tool on September 5. Tonight it is in Neka’s hand.** He does not say it is the same rod. He does use the same two words. And one stare with it puts Sky.ps on the floor. The stare works both ways now.
+- **One pair of eyes open at a time.** “Sky.ps’s eyes became white, Neka Omazen is the only thing Sky.ps can see… ice patterns, and eyes.” “Neka Omazen then closed his eyes, he can no longer see.” When Sky.ps opens his and says “Huh?”, Neka is the one with the rod.
+
+### Beat 881 — WANT TEA? 🫖 (4:11 PM)
+
+![Beat 881](screenshots/943-want-tea.png)
+
+> *"THE TEA SPREADED, EVERYONE EVENTUALLY GOTTEN PARANOID, SPRUNKI CITY WASHED OUT OF CLASSICS. SKY.PS’S EYES BECAME BLANK AND HE SAYS ‘WANT TEA? 🫖’… EVERYONE ELSE SEES A DEMONIC VERSION OF NEKA OMAZEN… NEKA OMAZEN SAYS ‘HELLO, CAN YOU READ ME?!’… SKY.PS ASKS NEKA TO MAKE THE CURSE STOP."*
+
+- **The City washes out on tea.** August 24: Sprunki City is where Oren is dropped off after the pop tart. Tonight it washes out of Classics on a spill of tea. A pop tart brought someone to the city. A cup of tea takes the City away.
+- **The demon from the make-over comes back.** Sept 5, the make-over: “Sky.ps became demoned.” Tonight, while Sky offers tea, everyone else sees a demonic version of Neka omazen. The demon is back, and it is wearing someone else’s face.
+- **“Hello, can you read me?!”.** He says read, not hear. The one who wrote the Classics Bible talks like words on a page. And the real Neka calling out scares them again, after the demon is gone. Then the one who started it asks the god to make it stop.
+
+### Beat 882 — 233200% (4:21 PM)
+
+![Beat 882](screenshots/944-233200-percent.png)
+
+> *"NEKA THEN COMBINES 2000% AND 666% AND GETS 233200% AND HE BATTLES THE CURSE, THEN SKY.PS’S EYES DISAPPEARED, AND THEN THE MOUSE EARS DISAPPEARED, THEN SKY.PS DISAPPEARED PART BY PART. SKY.PS RESPAWNED AND BECAME NORMAL AGAIN."*
+
+- **He answered the question about combining five minutes after it was asked.** 4:16 PM, the reply: Does combining mean adding them, like 666 plus 2000? 4:21 PM: 2000% and 666% make 233200%. Not 2666, and not 1,332,000 either. So combining is its own operation, and only Neka knows the rule for it.
+- **The curse comes off piece by piece.** The eyes go first, then the mouse ears, then Sky.ps “Disappeared part by part.” The eyes were where the power lived, so they are what goes first. He takes it apart starting with the stare.
+- **“Sky.ps respawned and became normal again”.** Ten minutes ago Sky’s old powers were erased. Now the new one is gone too. He comes back with nothing, which is what he asked for: Make the curse stop. He is the one person tonight who gets to go back to normal.
+
+### Beat 883 — PARANOIDIA GIRL (4:21 PM)
+
+![Beat 883](screenshots/945-paranoidia-girl.png)
+
+> *"A NEW ENTITY WAS MADE THOUGH, IT BEATEN CLASSICS INSTANTLY, AND IT IS KNOWN AS PARANOIDIA GIRL. IT IS BASICALLY A 5 YEAR OLD CHILD FEMALE WHO JUST HAS DOLLS AND WHOEVER LOOKS AT HER, BOOM, SAME EFFECTS AS SKY. SO IT IS SKY BUT FEMALE AND YOUNGER."*
+
+- **The power did not end. It moved.** Sky.ps respawned normal, and in the same breath: “A new entity was made though.” The curse Neka fought at 233200% did not go away. It found someone younger. “Though” is the most important word in the message.
+- **She has the dolls too.** Sept 2: Sky gets the dolls “Because Sky.ps is 14 years old.” Tonight a five-year-old “Just has dolls.” the toys pass down with the power. Nine years younger, and the same dolls.
+- **He built the scp he named, one message later.** Ten minutes ago he said Sky “Seems like SCP-053, but increased.” SCP-053 is a small girl. Paranoidia girl is a small girl. The comparison fits her better than it fit sky.
+
+### Beat 884 — LETS HAVE A TEA PARTY! (4:21 PM)
+
+![Beat 884](screenshots/946-lets-have-a-tea-party.png)
+
+> *"PS50 LOOKED AT SKY.PS WITH A CONFUSED LOOK, AND SHE ASKED ‘WHO ARE YOU?’, SKY.PS SAYS ‘I AM THE ONE WHO ACCIDENTALLY MADE YOU.’, PS50 SAYS ‘IT IS COOL THOUGH. HEE HEE. 🥲’… PS50 STARED AT SKY.PS, AND PS50 SAYS ‘LETS HAVE A TEA PARTY!’, SKY.PS FALLS OVER."*
+
+- **“I am the one who accidentally made you”.** Sky.ps’s power was “A coincidence.” now he has made somebody by accident. Neka’s plan ran “Even at the time he made the game.” Sky made 50.ps without meaning to. The two makers in this era are a plan and an accident.
+- **Three offers of tea in ten minutes.** 4:11: Neka offers “Pop tart? Or tea?” Sky.ps, with blank eyes: “Want tea? 🫖” 4:21: 50.ps: “Lets have a tea party!” and Sky.ps falls over. Every one of them ends badly for somebody.
+- **“It is cool though. Hee hee. 🥲”.** She is not angry about being made. She laughs, with a face that is smiling and crying. The most powerful entity ever, and her first feeling is being okay with it. She does not want a fight. She wants a tea party, and that is enough.
+
+### Beat 885 — THERE IS A NEW THEORY IN CLASSICS NOW! (4:21 PM)
+
+![Beat 885](screenshots/947-there-is-a-new-theory-in-classics-now.png)
+
+> *"NEKA CALLS IT ‘50.PS’. 50.PS, OR PS 50, OR PS-50, OR HOWEVER YOU WANT TO WRITE IT, IT IS BASICALLY THE MOST POWERFUL ENTITY EVER… THEN 50 WAS PUT AGAINST EVERYONE ELSE, IT WAS THE SAME RESULT OVER AND OVER AND OVER AGAIN, NEKA OMAZEN SAYS ‘THERE IS A NEW THEORY IN CLASSICS NOW!’"*
+
+- **He lets you spell this one however you want.** “50.ps, or PS 50, or ps-50, or however you want to write it.” He has corrected Neka omazen’s name three times. Her name comes with four spellings. The strongest entity ever is the one whose name is not fixed.
+- **Neka runs an experiment.** “Look at Sky.ps more, is she already more powerful than Sky.ps, If yes, is she more powerful than Wenda.ps?” The one who wrote the rules for every fight has to test this one to find out.
+- **“The same result over and over and over again”.** Everyone else, one at a time, and every one of them falls. The Wenda.ps test Neka asked for is inside “Everyone else”, and he does not single it out. So the question is not who is strongest. It is whether anyone can look at her.
+
 ## 2026-09-26 — PHASE 102, AND THE GAME CHANGES TO FACECONTROLSGAME.COM (BEATS 859-874)
 
 Based on Toby's 2026-09-26 lore, **3:46 PM** (Email 1535), thread `1a0deee4cb24addb`. Forty-eight minutes after
