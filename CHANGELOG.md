@@ -4,6 +4,140 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — THE FIGHT GETS CALLED, AND THEN THE THREE OF THEM GET NAMED (BEATS 819-822)
+
+Based on Toby's 2026-09-26 lore, **6:51 AM and 7:04 AM**, same thread (`1a0dd31188bfac44`, *"New Document"*).
+Three messages arrived in eighteen minutes. The 6:46 AM one is an image request with a pasted recap under it
+and carries **no new lore**, so it gets no beat. The other two are his own typing and all of it is canon; the
+paragraphs pasted under each are ChatGPT commentary and are **not** canon.
+
+His own typing, 6:51 AM, in full:
+
+> *"Now aliens say Wenda would win, some say Gray would win. Wenda.ps goes into the mechanical suit and now
+> Gray.ps is struggling. Wenda.ps strikes down Gray.ps. But then the shadows fill the mechasuit. Wenda.ps
+> gains more power. Eyes surround Wenda.ps, holes are in the vacuum, and needles carve through the helmet.
+> What do you think is happening?"*
+
+His own typing, 7:04 AM (the part built here):
+
+> *"Neka Omazen then fully puts holes and needles into the suit, now he attacks the outside of the suit.
+> Wenda.ps fell over, Neka Omazen holds a HUGE daggar like the size of Wenda.ps, and Neka Omazen is basically
+> 1 foot tall. Neka Omazen cuts through the titainuim suit, Wenda.ps valueable. Neka Omazen left. Wenda.ps was
+> suprised, Wenda.ps suddenly beats the other characters quickly and makes a villianous cloak for Wenda.ps and
+> Mr. Black.ps. Wenda.ps asks Mr. Black to join, Mr. Black agreed. Neka Omazen takes off his cloak and puts on
+> a villianous cloak and now has large triangle-shaped collar parts, whatever that is called, most villian
+> suits have that. Neka Omazen walks across the metal floor to Classics Omazen core, Neka Omazen says "At
+> last, now I can beat Wenda.ps now.", Neka Omazen takes the core and the soul of determination, and he
+> recreates the Luigi Green, and he now has Luigi Green and Newtale characters from Newtale Betty to Newtale
+> Gaster. Neka Omazen made everyone into colored souls, Neka Omazen spirils the souls around his hand, Neka
+> Omazen walks to Wenda.ps and Mr. Black and Wenda.ps says "Hello, Pero LAI, I just want to know WHY you
+> spared me before.", Neka Omazen says "Say 'Pero LAI' one more time, and your access will be erased from this
+> game. 🦊", Wenda.ps says "Another fox I see.", Neka Omazen says "Yes, now look at the closest cat to you.",
+> Wenda.ps looks at herself. Neka Omazen says "Mr. Black, look at the nearest dog of you.", Mr. Black looks at
+> Wenda.ps. Wenda.ps is all three. Wenda.ps is the colors blasting out toward you, Mr. Black is the absorbtion
+> and consumption of color. Red and Blue, White and Black... 😱 Darkness + Light = Void. Combine Wenda.ps and
+> Mr. Black to get Gray.ps, Gray.ps is the eraser of the game, gained real erase from Luigi Green, and now no
+> longer exists in the game but is still here. And none of the 3 surpass each other... The 3 can ruin and
+> corrupt the game, but all together, they can do anything and change and can SAVE the game from Neka Omazen."*
+
+**daggar**, **titainuim**, **valueable**, **suprised**, **villianous**, **villian**, **spirils** and
+**absorbtion** are Toby's spellings and are kept as typed. The capitals on **HUGE**, **WHY** and **SAVE** are his.
+
+![Beat 819 — The Shadows Fill The Mechasuit](screenshots/881-the-shadows-fill-the-mechasuit.png)
+
+![Beat 820 — A Daggar The Size Of Her](screenshots/882-a-daggar-the-size-of-her.png)
+
+![Beat 821 — The Villianous Cloaks](screenshots/883-the-villianous-cloaks.png)
+
+![Beat 822 — Look At The Closest Cat To You](screenshots/884-look-at-the-closest-cat-to-you.png)
+
+### Added
+
+- **BEAT 819 — THE SHADOWS FILL THE MECHASUIT.** New panel at `LV_CYC` 17738.0–17760.0, shadow violet. The
+  alien split, the three rounds, and the shadows coming in through the armour. **Beat 818 was built forty-two
+  minutes earlier and closed on *"whoever it is unknown who wins yet"*, which this archive called one of the
+  rarest things in five months. The unfinished fight lasted forty-two minutes.** **The aliens are Gray's own
+  servants** — July 19, Email 745: *"Abinations are **evil aliens that serve Gray**"*, *"weird black-spotted
+  paint blob creatures"* — and two days ago Neka said *"I made Abinations of everyone myself."* Half the crowd
+  betting on this fight works for the man losing it, and **it is the first time in five months anybody in this
+  game disagrees about an outcome before it happens.** **Gray had stopped her twice and ended it both times**
+  (August 8: *"Wenda was slashed and Gray won"*; September 10, beat 696: *"Gray.ps created a huge funnel down,
+  and Wenda.ps lost all the aura instantly"*) — round three is the first one she wins. **And the shadows are
+  the one substance he is already made of:** September 20 — *"Pero LAI also doesn't have a shadow, but goes
+  into shadows, can take away shadows, and also can become a shadow."* The helmet was the part nobody could
+  see into. September 24's beast out of the tubes *"has 5 heads, and no eyes"*; two days later **eyes surround
+  her**. And the vacuum she built at 6:09 to collect has **holes in it** at 6:51.
+
+- **BEAT 820 — A DAGGAR THE SIZE OF HER.** New panel at `LV_CYC` 17760.0–17782.0, steel and red, with the
+  one-foot figure drawn beside the blade at the ratio he gave. ***His height is his own cell specification,
+  and it is eight days old*** — September 18, Email 1461, his own answer to how you hold him: *"Just put him
+  in a cell taller than 1 foot."* Today Toby states the height flat and **it matches the cell exactly**.
+  August 22's tape-measure chart, the only one in five months, had him at **five to six feet**: he has lost
+  five feet and gained the game, and the blade is twelve times his own height. **Every dagger in this archive
+  belonged to Clara** — *"dashes, dagger slash, slash beams, teleportation, rebirth"*, and Storyshifted Clara
+  *"wields so many types of daggers."* **This is the first one he has ever held**, after five months of
+  deleting people with commands. He cuts her suit open, decides she is worth something, and **walks away**.
+  **He has been sparing her for six days:** September 20 — *"Pero LAI sucessfully contained everyone else, but
+  Wenda.ps."* Every other name went in a tube; hers never did. **And the surprise changes hands** — September
+  24: *"Neka Omazen was **suprised** of their arrival"*, the first surprise he had ever registered here. Two
+  days later, same spelling, it is hers.
+
+- **BEAT 821 — THE VILLIANOUS CLOAKS.** New panel at `LV_CYC` 17782.0–17804.0, purple and gold. Three cloaks,
+  the core, the soul he refused by name, and the cast spiralling around one hand. ***"Villianous" returns zero
+  prior hits in any spelling*** — this game has been full of villains for five months and **nobody has ever
+  dressed as one on purpose.** The one cloak-and-collar outfit this archive already owns is **Simon's**: *"a
+  rubber black cloak with a rubber white collar, and a yellow rubber horseshoe shape on the front."* And the
+  only cloak ever made *for somebody else* was Pero's: *"he even made an ink cloak for Gaster."* Tonight she
+  makes two and **he copies her.** **The alliance is two days older than the agreement** — September 24:
+  *"Then Wenda.ps and Mr. Black.ps both charge."* They attacked him together first; she asks him afterwards.
+  ***"At last, now I can beat Wenda.ps now" is the first time in this archive he has needed equipment to beat
+  somebody.*** **Classics Omazen was in a tube in his own Chapter 2 on September 24** — *"Classics Omazen was
+  currently in a tube"* — and two days later she is a **core** he walks over and takes. The core and the soul
+  have travelled together before: **Email 333**, the Classics Soul of Determination, *"absorbed via White Orb
+  when Simon brought the Classics Core."* ***And he takes DETERMINATION, which he refused by name nineteen
+  days ago, to Wenda's own shadow*** — September 7, 7:17 PM: *"Your DETERMINATION can effect a game? I don't
+  have DETERMINATION, I have JUSTICE."* **Newtale Betty to Newtale Gaster is the whole boss ladder in one
+  phrase**, second-to-final through final. He has put people in tubes, in jars and in a drawer; this is the
+  first time he carries the whole cast **in one hand**.
+
+- **BEAT 822 — LOOK AT THE CLOSEST CAT TO YOU.** New panel at `LV_CYC` 17804.0–17826.0, white/black/gray. The
+  penalty, the colour arithmetic drawn as three discs, the real erase, and the save. **The ban finally has a
+  penalty.** September 24's *"NEVER SAY PERO LAI AGAIN!"* had nothing attached to it and he broke it himself
+  two hundred words later; today it costs **your access**, the same currency as *"tdeshane lost access"* in
+  that same message — and **Wenda breaks it in her first word.** ***He named the one combination that beats
+  him while boasting he was stronger than it***: September 24, beat 802 — *"Neka Omazen is considered to be
+  **Dark Gray**, he is more powerful than **Gray, White, and Mr. Black** combined basically"* — and this
+  archive had already ruled **White = Wenda.ps**, because she is the one he could not put in a tube. Two days
+  later those exact three combine. ***Gray's erase was fake for forty-five days***: August 12, Email 955 —
+  *"Pero told us that Gray's erase is a fake erase, it just teleports everything into a white void, and that
+  **Luigi Green is the only one with the real erase**."* Tonight Gray has the real one, **from Luigi Green,
+  whom Neka rebuilt ninety words earlier in the same message.** *"No longer exists in the game but is still
+  here"* is **Mr. Black's own standing** — Email 956: *"Mr. Black could just walk in and use the power of the
+  outside of the box and he could just destroy the whole box."* And ***"Darkness + Light = Void"* lands on the
+  one attack this archive already owns, and it is Luigi Green's** — Email 398, June 2: *"He can take anything
+  out with just one world cut (others call it Dismantle, but Luigi's is way stronger and is called **Void**)."*
+  **The save rule is twenty-four days old and says the opposite:** September 2, Pero's First Death — *"if you
+  place Pero LAI down, you can't save the game anymore."* **And the last time anybody saved this game they did
+  it by killing Luigi Green** — June 7, Email 439: *"Alex destroyed Luigi Green to save the game, so Alex is
+  actually a secret hero."* The last save-the-game coalition had **Wenda in it against Gray**: *"Nutro just
+  wants to save the game. Nutro and Classics and Wenda work together to defeat Gray."* **Tonight she is on his
+  side.** *"None of the 3 surpass each other"* is **the second Undefined Loop in five months** — after Email
+  595, June 27, *"it's like Steel VS Fire VS Water VS Electricity"*, called *undefined* by ToddLLM and Luigi
+  Green themselves — **and the first one on the heroes' side.**
+
+### Changed
+
+- `LV_CYC` 17738.0 → 17826.0; four `CV_BEATS` rows added; four scenes (`shadowsuit`, `daggar`,
+  `villianouscloaks`, `closestcat`) added to `tools/capture_screenshot.py`.
+
+### Not built
+
+- **The 6:46 AM message** (*"Are you able to create an image of Wenda.ps and Gray.ps?"*) is an image request
+  with a pasted recap under it. No new lore, no beat — the same ruling this archive has applied to every bare
+  image request.
+
+---
+
 ## 2026-09-26 — THE NEKA TREATMENT, A DREAM, AND A FIGHT NOBODY WINS YET (BEATS 815-818)
 
 Based on Toby's 2026-09-26 lore, **6:09 AM**, on a new thread (`1a0dd31188bfac44`, *"New Document"*). The
