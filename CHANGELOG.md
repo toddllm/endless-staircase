@@ -4,6 +4,108 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — HE FILLED HIS OWN BLANK IN FOURTEEN MINUTES (BEATS 834-839)
+
+Based on Toby's 2026-09-26 lore, **2:28 PM** (Email 1533), thread `1a0deee4cb24addb`. One message, the
+longest of the day, and it **answers the blank beat 833 was drawn around**. Everything from *"That 'shot' is
+a nasty twist"* onward is the machine's recap and is **not** canon.
+
+> *"**Correct.** Neka says **"You... Gray.ps! 😾⚡"**, Neka summons **Simon.ps and Oren.ps**, Neka combines
+> the 2 and makes a large orb, boom, Gray.ps is knocked over, Wenda.ps connects the vacuum to Gray's mech.
+> Neka creates a **jewel** and now uses the powers of **the 7 souls**, Gray.ps is destroyed now. Wenda.ps
+> says **"Now... once I erase the memories and feelings of those, Gray.ps can only love me now."**. Wenda.ps
+> takes the color and everything of every character that Wenda.ps can find. Gray.ps **respawns** and sees
+> everyone as gray zombie versions of themselves, **every character blank**, Gray.ps thinks **Mr. Black did
+> it**. **Neka Omazen didn't change, Neka Omazen was never around Wenda.ps's path.** Neka Omazen says
+> **"Now I shall cut the path."**, Neka Omazen uses Dragon's Ride 25 Series, the path was blocked. Wenda.ps
+> and Gray.ps are both **locked in Neka's Lab**. Neka says **"Now, I can beat them both, 2 for 1."**, Neka
+> builds himself **mechanical hands**. Neka dashes and attacks Gray.ps, Wenda.ps says **"I need him for my
+> plan! 😱"**, Wenda.ps swipes her hand across and grabs Gray.ps, **they both survive**. Neka Omazen says
+> **"I didn't even use 0% yet, and you barely survived just a simple cyber-dive? 💨"**, Neka Omazen makes
+> **shadowed clones of the avatars**, the **Shadow-Men** all attacked Gray.ps and Wenda.ps. Neka Omazen
+> strikes lightning down and uses **telekentics** to put both Wenda.ps and Gray.ps to a wall. Neka Omazen
+> cuts the wall… **Gray.ps's armor is dented**, Neka Omazen says **"Time for your shot. 💉"**, Neka Omazen
+> puts a needle through **the hole** of Gray's armor, Gray.ps lost and became a Gray zombie. Neka Omazen
+> says **"Wait- this is water I drunk..."**, Wenda.ps was struck down by **ZomGray.ps**."*
+
+### BEAT 834 — YOU… GRAY.PS!
+
+![Beat 834](screenshots/896-you-grayps.png)
+
+- **The blank is filled, and the word that fills it is "Correct."** Fourteen minutes earlier beat 833 was
+  *"fill out the blanks"*; the machine guessed Neka Omazen; Toby's next word adopts it. **It is canon
+  because he said so, not because the machine did.**
+- **He summons the exact two he put to sleep, in the order he named them.** September 23: *"Everyone!
+  **Simon.ps! Oren.ps!** Sleep! 😸⚡"* — three days later they are woken up as ammunition and combined.
+- **The 7 souls were the player's loadout** — *"you will have Infinite HP, Infinite LV, and a shield and all
+  7 souls"* — and he took the Soul of Determination seven hours ago (beat 821).
+
+### BEAT 835 — GRAY.PS CAN ONLY LOVE ME NOW
+
+![Beat 835](screenshots/897-grayps-can-only-love-me-now.png)
+
+- **Eight hours of doing things, and the reason arrives last, and the reason is a person.** She built the
+  suit at 6:44, recruited Mr. Black at 7:04, was called `valueable`, was told she was safe, and never once
+  said why.
+- **Love has never been a motive in this archive before** — only one of the Player's fourteen powers, and a
+  joke about sugar (beat 777).
+- **Taking colour is not even her half of the job** (beat 822: *"Mr. Black is the absorbtion and consumption
+  of color"*), and *"every character that Wenda.ps can find"* **includes the ally she recruited this
+  morning.**
+
+### BEAT 836 — EVERY CHARACTER BLANK
+
+![Beat 836](screenshots/898-every-character-blank.png)
+
+- **He blames the half of himself he beat down thirty minutes ago** — and it is the **right read of the
+  evidence about the wrong person**, because draining colour is literally Mr. Black's function.
+- **The one figure still in colour is the one she never reached**, and Toby says so in the same breath.
+  Gray does not read that either.
+- **Respawning is new here.** Things in this archive are deleted, erased, tubed, absorbed or put to sleep.
+  **The thing that changed while he was gone is the world, not him.**
+
+### BEAT 837 — NOW I SHALL CUT THE PATH
+
+![Beat 837](screenshots/899-now-i-shall-cut-the-path.png)
+
+- **Fourth use of the 25 Series and the first aimed at nobody at all.** Uses 1-2 brought the barrier down;
+  use 3 was intercepted by Gray (beat 828); **this one is spent on a door.**
+- **He has always cut things open.** July 22: *"he is the only one who can cut up the ending."* Sixty-six
+  days later **he cuts a path so nobody can get to one.**
+- **Mechanical hands make it three out of three** — her suit, his mech, now Neka's hands. **Gray ran into
+  that lab on his own legs thirty minutes ago to build a weapon, and the door has just closed behind him.**
+
+### BEAT 838 — I NEED HIM FOR MY PLAN!
+
+![Beat 838](screenshots/900-i-need-him-for-my-plan.png)
+
+- **She saves the one who kills her, and it takes two sentences.**
+- ***"I didn't even use 0% yet"* is a new floor.** Every percentage here has been Luigi Green's; the first
+  number Neka ever got was 100%, and it was the first time he was described as holding back. **Tonight the
+  number is zero and he is still holding back underneath it.**
+- **The shadow clones were a shield before they were a weapon** (September 23, the forcefield of forms) —
+  and **they are clones of the avatars, which in this story are the names Toby lost.**
+
+### BEAT 839 — WAIT- THIS IS WATER I DRUNK
+
+![Beat 839](screenshots/901-wait-this-is-water-i-drunk.png)
+
+- **He does not know what he is carrying, and Toby wrote that rule himself six days ago.** September 20:
+  *"just one bite on another character **or if a character eats what he bit**, then that character instantly
+  becomes a zombie"*, and beat 776: he *"doesn't know that he actually has urinite."* **Water he drank is
+  water he bit, so the surprise is real and the zombie is his.**
+- **The only character who ever checked for this was Gaster, and he checked a dessert.** *"Also without the
+  urinite from your bite."* **A pop tart got screened; a syringe did not.**
+- **Needles and holes are twelve hours old and this morning they were on the other suit** (beat 819).
+  **Gray.ps is not the first zombie — he is the first one it happened to by accident.**
+
+### Build
+
+`LV_CYC` 18068.0 → **18200.0**; `LV_BEATS` length **840**; new `lvSeg` ranges at 18068 / 18090 / 18112 /
+18134 / 18156 / 18178. Scenes added: `yougrayps`, `onlyloveme`, `everyoneblank`, `cutthepath`, `needhim`,
+`waterIdrunk`. Runtime probe: `len=840 maxPh=839 holes=0 undefSeg=0 missing=0 err=0 draws=928`.
+Six new beats restale the windowed ladder on **832** and **833**, so `894` and `895` were recaptured here.
+
 ## 2026-09-26 — THE COALITION BREAKS ITSELF, AND HE WALKS OUT THROUGH THE GAP (BEATS 826-833)
 
 Based on Toby's 2026-09-26 lore, **1:58 PM and 2:14 PM**, same thread (`1a0dd31188bfac44`, *"New Document"*).
