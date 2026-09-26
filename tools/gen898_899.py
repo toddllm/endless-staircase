@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+"""
+gen898_899.py - emit the draw branches for BEATS 898-899 from Toby's September 26, 2026 6:41 PM message
+(1a0dfe155ac71d5b, thread 1a0deee4cb24addb), which arrived while 894-897 were deploying.
+Same template as beats 888-897.
+
+Only Toby's own typing is drawn: "PS-50 sets up a whole tea party." through "can also edit her code."
+Everything from "Yes—Neka and PS-50 are opposites" on (the comparison table and the closing paragraph)
+is a pasted reply. Commentary, not canon.
+"""
+import io
+
+START = 19476.0
+STEP = 22.0
+B = []
+
+A641 = dict(when='6:41 PM', short='6:41 PM', attr='TOBY, SEPTEMBER 26, 6:41 PM — HIS OWN TYPING.')
+
+def add(meta, key, accent, quote, panels, close):
+    d = dict(key=key, accent=accent, quote=quote, panels=panels, close=close)
+    d.update(meta)
+    B.append(d)
+
+add(A641, 'TEA PARTY AND DAGGERS', '190,120,255',
+    ['“PS-50 SETS UP A WHOLE TEA PARTY. NEKA POLISHES KATATAS AND DAGGARS. ARE THEY LIKE OPPOSITES? NEKA VS',
+     'WENDA.PS WOULD BE THE CORRECT WAY BECAUSE THEY ARE THE 2 ATTACKERS IN THE GAME, BUT NEKA WOULD EASILY',
+     'WIN AT HIGH POWER PERCENT. PS-50 VS SKY.PS, PS-50 IS UNIQUE. PS-50 IS BEATING EVERYONE.”'],
+    [('CUPS VS. BLADES',
+      ['SHE SETS UP A WHOLE TEA PARTY. HE SITS AND POLISHES KATANAS AND DAGGERS.',
+       'THE SAME NIGHT, THE SAME HOUSE, AND NOTHING ELSE ABOUT THEM MATCHES.'],
+      'TOBY ASKS IT HIMSELF: “ARE THEY LIKE OPPOSITES?”'),
+     ('THE RIGHT MATCHUPS',
+      ['NEKA VS WENDA.PS, BECAUSE THEY ARE THE 2 ATTACKERS. AT HIGH POWER PERCENT NEKA WINS EASILY.',
+       'PS-50 VS SKY.PS, THE ONE WHOSE CORRUPTED CODE SHE IS PARTLY MADE OF.'],
+      'EACH ONE GETS MATCHED WITH THE ONE MOST LIKE THEM.'),
+     ('“PS-50 IS UNIQUE”',
+      ['THERE IS NO ONE ELSE LIKE HER TO MATCH HER WITH.',
+       'AND SHE IS BEATING EVERYONE.'],
+      'EVEN SKY.PS IS ONLY THE CLOSEST, NOT A MATCH.'),
+     ],
+    ['TEA PARTY AND DAGGERS',
+     'ONE POURS THE TEA. THE OTHER SHARPENS THE BLADES.'])
+
+add(A641, 'THROUGH THE STATIC', '160,170,185',
+    ['“NEKA PUTS THE KATATAS AND DAGGARS IN A BAG AND PUTS THE BAG NEXT TO HIS BED, AND HE SLEEPS ON HIS BED',
+     'AGAIN. THE 2 ARE THE ONLY 2 ACTUALLY MADE OF CODE. PS-50 IS NOW REVEALED TO BE ABLE TO TELEPORT',
+     'THROUGH STATIC AND CAN ALSO EDIT HER CODE.”'],
+    [('THE BAG BY THE BED',
+      ['HE WAS UP LONG ENOUGH TO POLISH EVERY BLADE.',
+       'THEN THEY GO IN A BAG, THE BAG GOES NEXT TO THE BED, AND HE SLEEPS AGAIN.'],
+      'ASLEEP, BUT WITH HIS WEAPONS WITHIN REACH.'),
+     ('THE ONLY 2 MADE OF CODE',
+      ['EVERYONE ELSE IS A CHARACTER IN THE GAME. NEKA AND PS-50 ARE THE CODE.',
+       '6:33 PM: SHE IS PARTLY MADE OF NEKA’S CORRUPTED CODE. NOW IT IS JUST THE TWO OF THEM.'],
+      'THE OPPOSITES ARE MADE OF THE SAME THING.'),
+     ('THROUGH STATIC',
+      ['SHE CAN TELEPORT THROUGH STATIC NOW. ANY BLINK OF STATIC COULD BE HER.',
+       'AND SHE CAN STILL EDIT HER OWN CODE, SO NOTHING CAN STOP HER ON THE WAY.'],
+      'SHE DOES NOT WALK UNDER THE BEDS ANYMORE. SHE ARRIVES.'),
+     ],
+    ['THROUGH THE STATIC',
+     'IF THE SCREEN FLICKERS, SHE IS ALREADY THERE.'])
+
+if __name__ == '__main__':
+    exec(open('/Users/tdeshane/endless-staircase/tools/emit_tail898.py', encoding='utf-8').read())

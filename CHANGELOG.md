@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — TEA PARTY AND DAGGERS, THROUGH THE STATIC (BEATS 898-899)
+
+Based on Toby's 2026-09-26 lore, **6:41 PM** (`1a0dfe155ac71d5b`), thread `1a0deee4cb24addb`, which arrived while
+894-897 were deploying. His own typing runs from "PS-50 sets up a whole tea party" through "can also edit her code";
+the "Yes, Neka and PS-50 are opposites" table and paragraph after it are a pasted reply and are **not** canon.
+
+- LV_CYC 19476.0 -> 19520.0, LV_BEATS length 898 -> 900. New capture scenes `teadaggers898`, `static899`.
+  Screenshots 958-959 recaptured at the final length so their beat ladders are current.
+
+### Beat 898 — TEA PARTY AND DAGGERS (6:41 PM)
+
+![Beat 898](screenshots/960-tea-party-and-daggers.png)
+
+> *"PS-50 sets up a whole tea party. Neka polishes katatas and daggars. Are they like opposites? Neka VS Wenda.ps would
+> be the correct way because they are the 2 attackers in the game, but Neka would easily win at high power percent.
+> PS-50 VS Sky.ps, PS-50 is unique. PS-50 is beating everyone."*
+
+- **Cups vs. blades.** Same night, same house, nothing else matches.
+- **The right matchups.** Neka vs Wenda.ps (the 2 attackers; Neka wins easily at high power percent); PS-50 vs Sky.ps.
+- **"PS-50 is unique"** and beating everyone.
+
+### Beat 899 — THROUGH THE STATIC (6:41 PM)
+
+![Beat 899](screenshots/961-through-the-static.png)
+
+> *"Neka puts the katatas and daggars in a bag and puts the bag next to his bed, and he sleeps on his bed again. The 2
+> are the only 2 actually made of code. PS-50 is now revealed to be able to teleport through static and can also edit
+> her code."*
+
+- **The bag by the bed.** Asleep again, weapons within reach.
+- **The only 2 made of code.** Neka and PS-50, the opposites, are made of the same thing.
+- **Through static.** She can teleport through static and still edit her own code.
+
 ## 2026-09-26 — IMPOSSIBLE CODE, NORMAL IN THE GAME, EVERYTHING SHE DID FAILED, ANYONE BUT PS-50 (BEATS 894-897)
 
 Based on Toby's 2026-09-26 lore, **6:33 PM** (`1a0dfda0baea15c2`) and **6:35 PM** (`1a0dfdbbab8be051`), thread

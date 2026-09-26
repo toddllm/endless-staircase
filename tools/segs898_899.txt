@@ -1,0 +1,2 @@
+  if(c >= 19498.0 && c < 19520.0) return [899, c-19498.0];  // THROUGH THE STATIC
+  if(c >= 19476.0 && c < 19498.0) return [898, c-19476.0];  // TEA PARTY AND DAGGERS
