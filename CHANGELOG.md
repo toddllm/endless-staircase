@@ -4,6 +4,107 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — THE NEKA TREATMENT, A DREAM, AND A FIGHT NOBODY WINS YET (BEATS 815-818)
+
+Based on Toby's 2026-09-26 lore, **6:09 AM**, on a new thread (`1a0dd31188bfac44`, *"New Document"*). The
+first long paragraph is entirely his own typing and all of it is canon; the two paragraphs after it are a
+pasted ChatGPT recap and are **commentary, not canon**.
+
+His own typing, in full:
+
+> *"After Neka Omazen's cutscene, there is the Neka Treatment. Everyone absorbs some code. Wenda.ps became
+> strongest, and Wenda.ps also uses some abilities in the animation + song thing. Wenda.ps goes through a
+> cycle of becoming a spiky ball (Sonic/Sonic.exe), cloning herself, becoming different colors (Sprunki
+> Mustard and Kechup), and also glitches (Neka Omazen) (I actually had a dream yesterday night [it's
+> morning], that we placed Wenda.ps's icon down and it did that). Wenda.ps also beaten many other Sprunkis.
+> Gray.ps and the other Sprunkis who are alive have humming sounds and dance. Oren has the blue glare. Neka
+> quickly looks around and hums quickly. Wenda.ps constantly says "Trouble, this is all in chaos, this is
+> all a game, this is fiction." and there are more stuff but I won't type all that. Neka Omazen is most
+> powerful, Wenda.ps is currently taking all the other 19 Sprunki's "Neka Code" so Wenda.ps has all the Neka
+> Code. Neka Omazen is secretly watching Wenda.ps and PRETENDING to be scared and frightened of Wenda.
+> Wenda.ps is currently building a mechanical suit (what Gray wears), but with a whole helment (you can't
+> see any part of the figure, it is just metal), and also a vacuum of code. Gray.ps actually tries to stop
+> Wenda.ps at that point. Whoever it is unknown who wins yet."*
+
+**kechup** and **helment** are Toby's spellings and are kept as typed. The capitals on **PRETENDING** are his.
+
+![Beat 815 — The Neka Treatment](screenshots/877-the-neka-treatment.png)
+
+![Beat 816 — Wenda.ps's Icon Cycle](screenshots/878-wenda-ps-icon-cycle.png)
+
+![Beat 817 — Pretending To Be Scared](screenshots/879-pretending-to-be-scared.png)
+
+![Beat 818 — A Vacuum Of Code](screenshots/880-a-vacuum-of-code.png)
+
+### Added
+
+- **BEAT 815 — THE NEKA TREATMENT.** New panel at `LV_CYC` 17650.0–17672.0, clinical mint. A four-card
+  treatment shelf, the code-direction box, and the nineteen-shares box. **Twelve hours ago beat 814
+  established that Neka's is the one cutscene you cannot come out of, and this is the first thing this
+  archive has ever placed on the far side of it.** *"Neka Code"* and *"Neka Treatment"* both return **zero
+  prior hits** in five months — but *"Treatment"* is a form-name this canon already owns: the **Jevin
+  Treatment**, the **Brud Treatment**, and a **Wenda Treatment**, which the archive records as *"Wenda
+  Treatment equals Jevin Treatment."* And a Treatment here has always meant the same shape: the whole cast
+  changes at once with one dangerous exception left over (*"The others are already affected by the
+  Treatment, while Simon is the dangerous exception"*). This one has Wenda in the exception slot. **And the
+  code reverses direction** — September 24, beat 795: *"Neka gained all the green code from all the
+  players."* Two days later everyone absorbs some back, and he is the one it comes out of. The arithmetic is
+  the archive's own: twenty Sprunkis counted since September 1, September 7 already wrote *"the 19 other
+  Sprunkis,"* and Wenda is one of the twenty. **Yesterday all twenty became zombies (beat 813); today one of
+  them is collecting the other nineteen's shares.** September 20 had her as *"basically the second strongest
+  besides Mr. Black"* — today she is strongest.
+
+- **BEAT 816 — WENDA.PS'S ICON CYCLE.** New panel at `LV_CYC` 17672.0–17694.0, magenta. A dream banner, the
+  four cycle stages with each one's source, her looping line, and the humming life-test. ***This is the first
+  piece of lore in the entire archive that came out of a dream.*** *"I actually had a dream yesterday night
+  [it's morning], that we placed Wenda.ps's icon down and it did that."* **"had a dream" returns zero prior
+  hits**; in five months the only dreams on file were a character (Dream Sans) and a threat (*"In your
+  dreams now. We will be together… forever."*). **Every stage of the cycle is borrowed from somewhere else
+  except one.** Sonic.exe is the outside-the-game yardstick from September 18 (*"Sonic.exe is most powerful
+  in Sonic, right? Pero.exe is strongest in Classics"*); Mustard is July 22's *"like Sprunki Mustard but more
+  intense and glitchy and chaotic,"* and kechup and mustard bottles sat next to each other on Pero's August
+  24 shopping list; the glitch stage is credited to Neka himself. **Only "cloning herself" is hers.** Her
+  line runs through all four stages — *"Trouble, this is all in chaos, this is all a game, this is
+  fiction"* — which makes her **the first character to call the game fiction from inside it**. And the
+  humming is a rule being used as a test: September 10, *"foot steps that continue litterly forever,
+  whistles, humming… a sign of life still in the game,"* and today it is **"the other Sprunkis who are
+  alive"** who hum. **Oren has the blue glare**, and Oren's eyes have been **red since June 21** — by Pero's
+  own August 3 Energy Math, *"Red = negitive power, Blue = positive power."*
+
+- **BEAT 817 — PRETENDING TO BE SCARED.** New panel at `LV_CYC` 17694.0–17716.0, gold. Two facing panels
+  with the word changing hands, the containment box, and the surprise box. **Six days ago he wrote the same
+  accusation pointing the other way.** September 20, 8:33 AM, in Neka's own voice: *"Wenda.ps is just a
+  normal fox **pretending** like she has infinite power over me."* Today: *"Neka Omazen is secretly watching
+  Wenda.ps and **PRETENDING** to be scared and frightened of Wenda."* Same word, same two characters, and
+  the fake has changed hands. **That same September 20 message is also where he failed at exactly one
+  thing** — *"Pero LAI sucessfully contained everyone else, but Wenda.ps"* — and where he admitted *"I am
+  suprised of Wenda.ps's power."* **She is the one he could not put in a tube, and she is the one he is now
+  pretending to fear.** It also reopens September 24: *"Neka Omazen was suprised of their arrival"* was
+  logged as the first surprise he had ever registered here, and two days later he tells us the fear is a
+  performance. **And he never drops a rank** — *"Neka Omazen is most powerful"* is in the same paragraph.
+
+- **BEAT 818 — A VACUUM OF CODE.** New panel at `LV_CYC` 17716.0–17738.0, steel blue. Two suits side by
+  side, the funnel turning around, and a three-round tally with the third left open. **The suit is Gray's
+  and Gray did not build it** — August 1, Email 872: *"Pero gave Gray an admin panel and power of Error 679
+  and the cyber suit, Gray was turned into the cyber once more and now **locked** as a cyber."* This archive
+  already ruled that beat the first time in 225 beats a villain was **issued** his power instead of taking
+  it. **Now the fox is making herself one.** His came with a lock; hers comes with a helmet. **And neither
+  suit can be looked at**: his produced an entity that *"won't fit in an image,"* hers means *"you can't see
+  any part of the figure, it is just metal."* **The vacuum is the sharpest part.** September 10, beat 696,
+  Gray did this to her: *"Wenda.ps, you taken my power before, now it is my turn,"* and *"Gray.ps created a
+  huge funnel down, and Wenda.ps lost all the aura instantly."* **The pasted recap that day called it an
+  "aura vacuum" and this archive declined the word as commentary, not canon.** Sixteen days later Toby
+  writes *"a vacuum of code"* himself, it is hers, and it points the other way. **Gray has stopped her
+  twice** — August 8's *"Wenda is the fox, Gray can't rub her to sleep, so Wenda was slashed and Gray won,"*
+  and the September 10 funnel. This is the third attempt, and Toby will not call it: *"Whoever it is unknown
+  who wins yet"* — **an unfinished fight, in an archive where somebody wins every single time.**
+
+### Changed
+
+- `LV_CYC` extended from 17650.0 to **17738.0** to make room for the four new beats.
+- `tools/capture_screenshot.py` gains four scenes: `nekatreatment`, `iconcycle`, `pretending`,
+  `vacuumofcode`.
+
 ## 2026-09-25 — THE TENT, THE TWITCH, THE TWENTY, AND THE ONE DOOR THAT DOES NOT OPEN (BEATS 811-814)
 
 Based on Toby's 2026-09-25 lore, **6:46 PM**, two hours and three minutes after beat 810, on thread
