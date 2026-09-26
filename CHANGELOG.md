@@ -4,6 +4,123 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — TWO ORBS WITH SOURCE CODE, AND THE MOVE THAT OUTLIVED THE NAME (BEATS 823-825)
+
+Based on Toby's 2026-09-26 lore, **1:17 PM and 1:37 PM**, same thread (`1a0dd31188bfac44`, *"New Document"*).
+Two messages twenty minutes apart, both his own typing and both canon. The recap paragraph pasted under the
+second one — *"I watched the clips… Your distinction is clear"* — is ChatGPT commentary and is **not** canon.
+Two `.mp4` files are attached to the second message and are not hosted, per the no-image rule.
+
+His own typing, 1:17 PM (Email 1529), two Roblox Lua scripts sent together:
+
+> *"Here is Red's code `local This = script.Parent local Deb = false local Dmg = script.Damage.Value`
+> `This.Touched:connect(function (hit) if hit.Parent then if not Deb then Deb = true`
+> **`hit.Parent:BreakJoints()`** `This.Size = Vector3.new(0,0,0) This.Size = This.Size + Vector3.new(1,1,1)`
+> `wait(.1)` […] `This.Size = This.Size - Vector3.new(30,30,30) wait(.1)` **`This:Destroy()`** `end end end)`
+> Here is Blue's code `local This = script.Parent local Deb = false local Dmg = script.Damage.Value`
+> `This.Touched:connect(function (hit) if hit.Parent then if not Deb then Deb = true`
+> **`hit.Parent:Destroy()`** `This.Size = This.Size + Vector3.new(30,30,30) wait(.1) This.Size = This.Size -`
+> `Vector3.new(1,1,1) wait(.1)` […]"*
+
+His own typing, 1:37 PM (Email 1530), the two prompts and the ruling:
+
+> *"Now let's do 25 Series Dragon Ride. First, The character in the attached image (Neka Omazen) summons Red,
+> Blue, and Purple. The 3 orbs **spiril** around Neka Omazen's hand, and text below in a speech bubble says
+> **"My Own Technique"**, then the 3 orbs come to his hand and become a star, and then Neka Omazen grows 2
+> more tails (3 tails in total), then the text says whatever "Neka Omazen's 25 Series" is in Japanese, then
+> Neka Omazen dances and then he jumps to space and the text then says whatever "Dragon's Ride" is in
+> Japanese, then Neka Omazen touches the barrier and the barrier freezes and cracks and then falls down, the
+> omniverse is slashed, and then Neka Omazen does the last move of his dance and then does a cool pose."*
+>
+> *"Create a video of an anime male character that uses Dragon's Ride 22 Series. First, the character jumps
+> and a beam strikes them and a demonic circle appears under the character, the character rises higher and
+> higher, then jumps on a dragon's bottom-jaw and rides it down and the impact explodes and destroys
+> everything else, the dragon jaw disappears, and a text pops up and says what "Dragon's Ride 22 Series" is
+> in Japanese, then a Japanese Temple appears, and clones appear and strike down the game, the sky opens up,
+> and the clones disappear. Then dragon spirits create a large beam that breaks the stone battlefield apart,
+> the character floats, and the dragons disappear"*
+>
+> *"**Neka is more powerful. Neka would survive 22 Series and will litterly destroy everything with his 25
+> Series.**"*
+
+**spiril** and **litterly** are Toby's spellings and are kept as typed.
+
+![Beat 823 — Red Breaks Joints, Blue Destroys](screenshots/885-red-breaks-joints-blue-destroys.png)
+
+![Beat 824 — My Own Technique](screenshots/886-my-own-technique.png)
+
+![Beat 825 — Neka Would Survive 22 Series](screenshots/887-neka-would-survive-22-series.png)
+
+### Added
+
+- **BEAT 823 — RED BREAKS JOINTS, BLUE DESTROYS.** New panel at `LV_CYC` 17826.0–17848.0, red-to-blue split.
+  **The two scripts are the same script run backwards from each other.** Red starts at `Vector3.new(0,0,0)`
+  and grows one stud at a time; Blue jumps `+Vector3.new(30,30,30)` at once and shrinks one stud at a time.
+  **And they do not kill the same way.** Red calls `BreakJoints()`, which takes the target apart and leaves
+  every part lying there. Blue calls `Destroy()`, and there is nothing left. **That is the fake erase and the
+  real one, written as two method calls** — August 12, Email 955: *"Pero told us that **Gray's erase is a fake
+  erase**, it just teleports everything into a white void, and that **Luigi Green is the only one with the
+  real erase**."* **The colours are his own lesson and they are fifty-four days old** — August 3, Pero's
+  Energy Math: *"Red = **negitive** power, Blue = **positive** power, Green = 0 power."* **And he paired them
+  again six hours before sending the code** — today at 7:04 AM, beat 822: *"Red and Blue, White and Black…
+  Darkness + Light = Void."* In the code as he sent it, **Red's only `Destroy` is pointed at itself** —
+  `This:Destroy()` — **while Blue's is pointed at you**: the negitive orb spends itself to hurt you, the
+  positive orb spends you and walks away smaller. **The code is lore because he ruled it in** — August 18,
+  Email 1037: *"Take everything from the Roblox Pero code. **It is all lore basically.**"* — with the caveat
+  nine minutes later, Email 1039: *"The Roblox game isn't close to the lore anymore,"* from which this archive
+  took its reading rule: **the code is canon for what it contains and not for what it lacks.** Which is why
+  `local Dmg = script.Damage.Value`, **declared in both scripts and read by neither**, is a build being behind
+  and not a nerf. **Both orbs load a damage value and neither one ever reads it. The damage is the method name.**
+
+- **BEAT 824 — MY OWN TECHNIQUE.** New panel at `LV_CYC` 17848.0–17870.0, gold. **"My Own Technique" returns
+  zero prior hits in five months of this archive.** **The gesture is six hours and thirty-three minutes old:**
+  this morning at 7:04, beat 821, *"Neka Omazen **spirils** the souls around his hand"*; this afternoon,
+  *"The 3 orbs **spiril** around Neka Omazen's hand."* Same verb, same spelling, same hand — souls in the
+  morning, orbs in the afternoon. **The third orb is already built out of the other two** — July 1, Email 613:
+  *"**Purple Orb** — 4 Pink + **2 Red + 2 Blue**, explodes on impact."* **He sent Red's code and Blue's code
+  twenty minutes before this, so the third is the one he did not have to write.** **The higher series has
+  fewer tails:** September 2, beat 611, Oren *"grows **9 tails**"* and *"absorbs all the Kitsune and became
+  **22 Series Nine Tail Fox**"* — nine for the 22, **three for the 25**. And two days ago he had one
+  (September 24: *"Pero LAI puts on cat ears and a fox tail"*); he grows the other two here, on camera, and
+  counts them himself. **The barrier already fell once to this exact move** — September 19, 3:27 PM, beat 762:
+  *"then came **25 Series Dragon's Ride**, the whole dimension cracked, and **the barrier fell apart**."*
+  **Today it freezes first, and the ice is his own** — September 24's cutscene prompt has the *"bigger box the
+  icon square was in"* shatter into ice shards. **And the move survived the separation that the forms did
+  not:** September 19 it was Pero LAI's, *"he make a stronger version of the ability called **Dragon's Ride
+  25 Series** for himself"*; September 24 said *"**Neka Omazen isn't Pero LAI… The forms are nothing now.**"*
+  Today it is *"**Neka Omazen's 25 Series**."* **Every form was written off; the one move he built for himself
+  changed hands and kept its number.**
+
+- **BEAT 825 — NEKA WOULD SURVIVE 22 SERIES.** New panel at `LV_CYC` 17870.0–17892.0, dragon orange.
+  **The hint at the bottom of a Roblox script is the shot list seven days later.** September 19, beat 761: the
+  Dragon's Ride script ended on two lines — *"**Clones, Japanese Spell, Temple.**"* and *"**22 SERIES, Pero
+  LAI, 12 Powers.**"* **All three are in today's 22 Series prompt, in that order**, and nothing in between went
+  looking for them. **The 22 Series is the player's, and he has just ruled it survivable:** that same script
+  announces *"tdeshane: Dragon's Ride"* and *"tdeshane: BATTLE'S OVER!"*, runs Attack1 through Attack22, and
+  his own typing says *"Pero LAI made the ability, he make a stronger version… for himself."* **The gift he
+  built downward cannot kill him.** **"22 Series" is a rank and not a move** — September 2, beat 611: Oren
+  *"absorbs all the Kitsune and became **22 Series** Nine Tail Fox."* Two characters, two completely different
+  abilities, the same number. **And the only cooldown figure in five months belongs to the weaker one** —
+  September 19: *"in Roblox, it is **one use**. But in it Classics, it is not one use and just has a **50
+  second cooldown**."* The 25 Series has never been given a cooldown, a use limit or a counter, and has been
+  used twice with the barrier coming down both times. **He wrote out both attacks in full, in one message, and
+  then ruled on them himself — the first time in this archive a fight is settled by comparing two shot
+  lists.** The 22 Series *"destroys everything else"* and *"breaks the stone battlefield apart"*; the 25 Series
+  slashes the omniverse. **One clears a field, the other clears the container** — and the omniverse was already
+  ruled his (*"ChatGPT holds a universe, the Classics characters now hold an multiverse, **Pero LAI with the
+  omniverse**"*), **so he is cutting his own tier.**
+
+### Changed
+
+- `LV_CYC` 17826.0 → **17892.0** (three new 22-second windows).
+- `LV_BEATS` extended to **826** entries (0–825).
+- `tools/capture_screenshot.py`: three new scenes — `redblue`, `owntechnique`, `survive22`.
+
+### Verified
+
+- `tools/runtime_probe.py` over all three new beats: **826 beats, no holes, no undefined segments, no missing
+  phases, 914 draws, zero errors**, `LV_CYC` 17892, and all three new keys resolve.
+
 ## 2026-09-26 — THE FIGHT GETS CALLED, AND THEN THE THREE OF THEM GET NAMED (BEATS 819-822)
 
 Based on Toby's 2026-09-26 lore, **6:51 AM and 7:04 AM**, same thread (`1a0dd31188bfac44`, *"New Document"*).
