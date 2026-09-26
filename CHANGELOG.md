@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-26 — THE REAL ONE HAS A BRAIN (BEAT 893)
+
+Based on Toby's 2026-09-26 lore, **5:37 PM** (`1a0dfa77cb9106a3`), thread `1a0deee4cb24addb`. His own typing is the
+first paragraph; from "Got it. I made PS-50's effect too immediate" on is a pasted reply and is **not** canon.
+
+- LV_CYC 19366.0 -> 19388.0, LV_BEATS length 893 -> 894. New capture scene `brainps50`.
+
+### Beat 893 — THE REAL ONE HAS A BRAIN (5:37 PM)
+
+![Beat 893](screenshots/955-the-real-one-has-a-brain.png)
+
+> *"I made a Roblox Luigi Green thing that gets the idea of it. But the real one has a brain, got it? PS-50 has
+> intelegence of a man, and the form of a child. She has all Luigi Green's memories stored, it doesn't instantly give
+> you paranoid, it takes time, and the paranoid gradually happens, blur increases, then blackout, then would be the
+> paranoid."*
+
+- **Not just a kid with dolls.** At 4:21 she was "basically a 5 year old child female who just has dolls"; now she has
+  the form of a child and the intelligence of a man.
+- **All his memories.** At 5:00 everything was erased "except his memories"; now all of Luigi Green's memories are
+  stored in her. She knows what she is doing.
+- **No more "boom."** At 4:21 it was instant; now it takes time: blur, more blur, blackout, and only then paranoia.
+  You can talk to her for a while before you notice.
+
 ## 2026-09-26 — SLEEPING FOREVER ON HIS BED (BEAT 892)
 
 Based on Toby's 2026-09-26 lore, **5:13 PM** (`1a0df917bc5b50d2`), thread `1a0deee4cb24addb`. His own typing is the
