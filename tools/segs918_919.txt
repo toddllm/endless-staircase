@@ -1,0 +1,2 @@
+  if(c >= 19938.0 && c < 19960.0) return [919, c-19938.0];  // 0% FOX
+  if(c >= 19916.0 && c < 19938.0) return [918, c-19916.0];  // IMMUNE TO EACH OTHER

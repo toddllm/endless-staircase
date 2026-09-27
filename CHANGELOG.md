@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-27 — IMMUNE TO EACH OTHER, 0% FOX (BEATS 918-919)
+
+Based on Toby's 2026-09-27 lore, **7:12 PM** (`1a0e524bf7fcc7f9`), thread `1a0deee4cb24addb`. His own Classics typing
+runs from "Neka Omazen VS PS-50 would be extremely chaotic and scary" through "when he reaches his human form and
+becomes 0% fox." The prose under it ("That would be a frightening matchup...", "Your human form, 0% fox idea gives
+Neka a possible turning point...") is pasted chatbot text and is **not** canon. The "Jesus 777 VS 67 Kid Demon"
+YouTube matchup at the top of the message is outside Classics and is not drawn.
+
+- LV_CYC 19916.0 -> 19960.0, LV_BEATS length 918 -> 920. New capture scenes `immune918`, `zerofox919`.
+  Screenshots 978-979 (beats 916-917) recaptured so their beat ladders are current. Tools: `gen918_919.py`,
+  `emit_tail918.py`, `build918_919.py`.
+
+### Beat 918 — IMMUNE TO EACH OTHER
+
+![Beat 918](screenshots/980-immune-to-each-other.png)
+
+- Neka has more powers and created the game; PS-50 is immune to him and has her own power. Ties back to Sept 27,
+  8:12 AM ("Neka Omazen is immune" to her paranoia) and Sept 26, 6:33 PM (her impossible code: "Neka can't put even a
+  dent in that"). Now the immunity goes both ways.
+
+### Beat 919 — 0% FOX
+
+![Beat 919](screenshots/981-zero-percent-fox.png)
+
+- "Neka would probubly win, when he reaches his human form and becomes 0% fox." Ties back to Sept 24, 4:37 PM ("the
+  actual fox being in the game") and Sept 26, 6:41 PM ("Neka would easily win at high power percent" vs Wenda.ps).
+
 ## 2026-09-27 — WANT DATA?, THANKS FOR THE ERROR, YOU ONLY NEED ME!, NEKA SHOWS HIS POWER, CRARKRAR, THE ONLY ONE WHO CONSUMES DATA (BEATS 912-917)
 
 Based on Toby's 2026-09-27 lore, **5:24 PM** (`1a0e4c19f2790085`) and **5:26 PM** (`1a0e4c2f4c59473d`), thread
