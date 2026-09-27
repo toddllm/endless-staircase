@@ -1,0 +1,3 @@
+  if(c >= 19674.0 && c < 19696.0) return [907, c-19674.0];  // 20 SHADOWS OF THE SPRUNKIS
+  if(c >= 19652.0 && c < 19674.0) return [906, c-19652.0];  // I AM LUIGI GREEN! MWEH HE HE HE
+  if(c >= 19630.0 && c < 19652.0) return [905, c-19630.0];  // THEY FALL SO THEY DON’T DIE

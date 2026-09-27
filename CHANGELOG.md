@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-27 — THEY FALL SO THEY DON'T DIE, I AM LUIGI GREEN! MWEH HE HE HE, 20 SHADOWS OF THE SPRUNKIS (BEATS 905-907)
+
+Based on Toby's 2026-09-27 lore, **8:12 AM** (`1a0e2c8611d2ad4f`), thread `1a0deee4cb24addb`. It arrived while the
+reply for beats 902-904 was going out. His own typing runs from "PS-50's horror paranoidia" through "the Sprunkis get
+paranoid."; everything from "I had Luigi Green's origin backward." on is a pasted reply and is **not** canon.
+
+- LV_CYC 19630.0 -> 19696.0, LV_BEATS length 905 -> 908. New capture scenes `fallsafe905`, `mweh906`, `shadows907`.
+  Screenshots 965-966 (beats 903-904) recaptured at the final length so their beat ladders are current.
+
+### Beat 905 — THEY FALL SO THEY DON'T DIE
+
+![Beat 905](screenshots/967-they-fall-so-they-dont-die.png)
+
+> *"PS-50's horror paranoidia makes the other characters think they would die so they just fall so they don't die from
+> the paranoid horror. PS-50 could slay anyone too with the heart attack and too-much-paranoid. Neka Omazen is immune."*
+
+- Explains the first words of beat 900's game over line, "death.fell.accident...": they fell.
+
+### Beat 906 — I AM LUIGI GREEN! MWEH HE HE HE
+
+![Beat 906](screenshots/968-i-am-luigi-green-mweh.png)
+
+> *"PS-50 says "I am Luigi Green! Mweh he he he he he he" He is not Luigi from Mario, he is PS-50 who went into Luigi's
+> body. PS-50 is what Luigi Green actually is, not in a Luigi Mario form."*
+
+- The "mweh" laugh was Neka's on Sept 23, 5:41 PM, its first appearance in the archive.
+
+### Beat 907 — 20 SHADOWS OF THE SPRUNKIS
+
+![Beat 907](screenshots/969-20-shadows-of-the-sprunkis.png)
+
+> *"PS-50 then continues finding anyone. They are still sleeping cause it is night there. PS-50 looks at the beds, the
+> beds move around, the Sprunkis wake up. Then the game wasn't even on the Sprunkis, but 20 shadows of the Sprunkis, the
+> game evolved more, beyond the Sprunkis, now they were like Classics versions. PS-50 looks at the Sprunkis, boom, after
+> several seconds, the Sprunkis get paranoid."*
+
+- Sept 13, Clover: "The 20 Sprunkis are still in the game! This is ment to be a new era!"
+
 ## 2026-09-27 — ALL DIMENSIONS IN ONE ENTITY, 3.587 FEET TALL, THE MAIN ANTAGONIST OF CLASSICS AND BEYOND (BEATS 902-904)
 
 Based on Toby's 2026-09-27 lore, **7:52 AM** (`1a0e2b5ab6632dec`) and **7:54 AM** (`1a0e2b7f22bc0aff`), thread
