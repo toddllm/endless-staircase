@@ -1,0 +1,6 @@
+  if(c >= 19894.0 && c < 19916.0) return [917, c-19894.0];  // THE ONLY ONE WHO CONSUMES DATA
+  if(c >= 19872.0 && c < 19894.0) return [916, c-19872.0];  // CRARKRAR
+  if(c >= 19850.0 && c < 19872.0) return [915, c-19850.0];  // NEKA SHOWS HIS POWER
+  if(c >= 19828.0 && c < 19850.0) return [914, c-19828.0];  // YOU ONLY NEED ME!
+  if(c >= 19806.0 && c < 19828.0) return [913, c-19806.0];  // THANKS FOR THE ERROR
+  if(c >= 19784.0 && c < 19806.0) return [912, c-19784.0];  // WANT DATA?

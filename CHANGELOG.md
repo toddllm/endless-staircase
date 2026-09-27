@@ -4,6 +4,60 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-27 — WANT DATA?, THANKS FOR THE ERROR, YOU ONLY NEED ME!, NEKA SHOWS HIS POWER, CRARKRAR, THE ONLY ONE WHO CONSUMES DATA (BEATS 912-917)
+
+Based on Toby's 2026-09-27 lore, **5:24 PM** (`1a0e4c19f2790085`) and **5:26 PM** (`1a0e4c2f4c59473d`), thread
+`1a0deee4cb24addb`. His own typing runs from "What character eats data?" through "Neka and PS-50 stand as the most
+powerful beings." (5:24) and "Answer: Neka Omazen's favorite is data" through "he consumes the Pi and all this stuff."
+(5:26). The prose paragraphs under each ("Neka Omazen is the character acting like a data eater here...", "You're
+right, I missed the literal answer...") are pasted chatbot text and are **not** canon. The attached
+`Add_all_the_colors_of_the_rain.mp4` was not viewable and is not drawn.
+
+- LV_CYC 19784.0 -> 19916.0, LV_BEATS length 912 -> 918. New capture scenes `wantdata912`, `thankserror913`,
+  `onlyneedme914`, `showspower915`, `crarkrar916`, `consumes917`. Screenshots 972-973 (beats 910-911) recaptured so
+  their beat ladders are current. Tools: `gen912_917.py`, `emit_tail912.py`, `build912_917.py`.
+
+### Beat 912 — WANT DATA?
+
+![Beat 912](screenshots/974-want-data.png)
+
+- Neka offers data, Luigi Green asks for pie, gets Pi, reads it off his speech bubble (Sept 24, 5:03 PM: the only
+  speech bubble in Classics, infinite digits of Pi), then gets a cherry pie because "This is a Japanese game."
+
+### Beat 913 — THANKS FOR THE ERROR
+
+![Beat 913](screenshots/975-thanks-for-the-error.png)
+
+- Neka cleans Newtale Gaster (who ran from the Pi text on Sept 24). "Are you an error?" "No, I am code."
+
+### Beat 914 — YOU ONLY NEED ME!
+
+![Beat 914](screenshots/976-you-only-need-me.png)
+
+- Neka locks Classics Omazen, Newtale Omazen comes alive and falls apart when Luigi Green sees it. "I am your friend,
+  your only friend, YOU ONLY NEED ME!" (Pero LAI's words from Sept 2, 3:58 PM, now Neka's.)
+
+### Beat 915 — NEKA SHOWS HIS POWER
+
+![Beat 915](screenshots/977-neka-shows-his-power.png)
+
+- Breaks time and space, separates the 2 forces of the game, tail slices titainuim quadranuim like paper, beats the
+  Sprunkis and all the avatars, blocks the game.
+
+### Beat 916 — CRARKRAR
+
+![Beat 916](screenshots/978-crarkrar.png)
+
+- Crarkrar (sounds like cracker): a power tier only Neka can get. Infinity Series Dragon Ride. Neka and PS-50 stand
+  as the most powerful beings.
+
+### Beat 917 — THE ONLY ONE WHO CONSUMES DATA
+
+![Beat 917](screenshots/979-the-only-one-who-consumes-data.png)
+
+- Toby's own 5:26 PM answer: data is Neka's favorite, he is the only one who consumes it, including the forms before
+  and the Pi.
+
 ## 2026-09-27 — I NEED YOU… ALL, TWO BEINGS ARE EQUAL, ONE GRAIN OF SUGAR, THE TEDDY BEAR STARTED TO WALK (BEATS 908-911)
 
 Based on Toby's 2026-09-27 lore, **2:50 PM** (`1a0e4342f2dcf97e`), thread `1a0deee4cb24addb`. His own typing runs from
