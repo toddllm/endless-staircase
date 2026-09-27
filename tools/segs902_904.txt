@@ -1,0 +1,3 @@
+  if(c >= 19608.0 && c < 19630.0) return [904, c-19608.0];  // THE MAIN ANTAGONIST OF CLASSICS AND BEYOND
+  if(c >= 19586.0 && c < 19608.0) return [903, c-19586.0];  // 3.587 FEET TALL
+  if(c >= 19564.0 && c < 19586.0) return [902, c-19564.0];  // ALL DIMENSIONS IN ONE ENTITY

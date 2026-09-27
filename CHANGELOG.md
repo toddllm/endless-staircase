@@ -4,6 +4,45 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-27 — ALL DIMENSIONS IN ONE ENTITY, 3.587 FEET TALL, THE MAIN ANTAGONIST OF CLASSICS AND BEYOND (BEATS 902-904)
+
+Based on Toby's 2026-09-27 lore, **7:52 AM** (`1a0e2b5ab6632dec`) and **7:54 AM** (`1a0e2b7f22bc0aff`), thread
+`1a0deee4cb24addb`. Canon is only his own typing. At 7:52 the dimensions table answers his "List and explain all
+dimensions" and is the machine's reply; "Create an image of both standing next to each other" is an image ask, no
+beat. At 7:54 everything after "Sky.ps would be just under 5 feet." is pasted.
+
+- LV_CYC 19564.0 -> 19630.0, LV_BEATS length 902 -> 905. New capture scenes `dims902`, `height903`, `antagonist904`.
+  Screenshots 962-963 (beats 900-901) recaptured at the final length so their beat ladders are current.
+
+### Beat 902 — ALL DIMENSIONS IN ONE ENTITY (7:52 AM)
+
+![Beat 902](screenshots/964-all-dimensions-in-one-entity.png)
+
+> *"Neka Omazen is all dimensions in one entity, PS-50 is basically Luigi Green in a smaller form."*
+
+- Simon closed all dimensions (June), Alex split them and Gray pulled them into a void (July 23), Pupahya opens them
+  with speed. Neka does not move them; he is them.
+
+### Beat 903 — 3.587 FEET TALL (7:52 AM)
+
+![Beat 903](screenshots/965-3587-feet-tall.png)
+
+> *"Neka is one foot tall (you should know that), and PS-50 is 3.587 feet tall."*
+
+- The one foot is already in the archive (Sept 26, 7:04 AM: "Neka Omazen is basically 1 foot tall"). 3.587 feet is
+  three decimal places, one finer than Simon's "about 1.98 meters" (May 15).
+
+### Beat 904 — THE MAIN ANTAGONIST OF CLASSICS AND BEYOND (7:54 AM)
+
+![Beat 904](screenshots/966-main-antagonist-of-classics-and-beyond.png)
+
+> *"You know who Luigi Green is? The main antagonist of Classics and beyond. He first had the form of Luigi Mario from
+> Mario, and now has the form of a psychic child. And he called himself PS-50. Neka is an adult and is 3 times smaller
+> than Luigi Green with the form of a child. Everyone else would be like 5 feet tall, Sky.ps would be just under 5 feet."*
+
+- The height chart: Neka 1 ft (an adult), PS-50 3.587 ft (a child), Sky.ps just under 5 ft, everyone else about 5 ft.
+  The only earlier chart (Aug 22) had the others at 7-9 feet.
+
 ## 2026-09-26 — ERROR: NULL, A CHILD CAN BEAT EVERYONE (BEATS 900-901)
 
 Based on Toby's 2026-09-26 lore, **6:56 PM** (`1a0dfef28353812b`), thread `1a0deee4cb24addb`. His own typing runs from
