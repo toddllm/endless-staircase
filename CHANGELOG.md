@@ -4,6 +4,52 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-27 — I NEED YOU… ALL, TWO BEINGS ARE EQUAL, ONE GRAIN OF SUGAR, THE TEDDY BEAR STARTED TO WALK (BEATS 908-911)
+
+Based on Toby's 2026-09-27 lore, **2:50 PM** (`1a0e4342f2dcf97e`), thread `1a0deee4cb24addb`. His own typing runs from
+"PS-50 is obsessed with other characters" through "PS-50 brings the game to chaos."; the SCP / D-Class / SCP-number
+questions above it and the prose retelling below it ("Simon.ps finally asks the question...") are pasted chatbot text
+and are **not** canon. His "put everything into the Neka Omazen tab, make it only one tab" line is a wiki request left
+for Dad, not a beat.
+
+- LV_CYC 19696.0 -> 19784.0, LV_BEATS length 908 -> 912. New capture scenes `needyou908`, `equal909`, `sugar910`,
+  `teddy911`. Screenshots 968-969 (beats 906-907) recaptured at the final length so their beat ladders are current.
+
+### Beat 908 — I NEED YOU… ALL
+
+![Beat 908](screenshots/970-i-need-you-all.png)
+
+> *"PS-50 is obsessed with other characters and Simon.ps says "Luigi Green, why are you beating us?!", PS-50 says "I
+> need you... all. 😌". Neka Omazen says "PS-50 wants you all, so PS-50 will just come for you all through static.""*
+
+- Answers Sept 26, 6:41 PM, "PS-50 is beating everyone," and uses the static teleport from the same message.
+
+### Beat 909 — TWO BEINGS ARE EQUAL
+
+![Beat 909](screenshots/971-two-beings-are-equal.png)
+
+> *"PS-50 walked through code, her power cut through reality itself, 2 beings are equal. Neka is more powerful by
+> extreme, PS-50 can make Neka sleep. Neka can make anyone sleep with a command, everyone is scared of Neka."*
+
+- Sept 26, 6:56 PM said PS-50 can make Neka *sleepy*; today it is *sleep*. Neka's own sleep command is from Sept 23.
+
+### Beat 910 — ONE GRAIN OF SUGAR
+
+![Beat 910](screenshots/972-one-grain-of-sugar.png)
+
+> *"Also in Classics, even touching one grain of sugar kills you."*
+
+- Ties back to Pero LAI's "Guess ya love sugar" (Sept 20, 4:49 PM) and the 0 sugar chocolate (Sept 14 and Sept 18).
+
+### Beat 911 — THE TEDDY BEAR STARTED TO WALK
+
+![Beat 911](screenshots/973-the-teddy-bear-started-to-walk.png)
+
+> *"PS-50's teddy bear started to walk when she looked at it. Neka then made all her toys move when she looked at
+> them. Neka disappeared into the code. PS-50 brings the game to chaos."*
+
+- Follows this morning's beds that moved when she looked at them (beat 907).
+
 ## 2026-09-27 — THEY FALL SO THEY DON'T DIE, I AM LUIGI GREEN! MWEH HE HE HE, 20 SHADOWS OF THE SPRUNKIS (BEATS 905-907)
 
 Based on Toby's 2026-09-27 lore, **8:12 AM** (`1a0e2c8611d2ad4f`), thread `1a0deee4cb24addb`. It arrived while the

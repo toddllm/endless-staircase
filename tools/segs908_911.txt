@@ -1,0 +1,4 @@
+  if(c >= 19762.0 && c < 19784.0) return [911, c-19762.0];  // THE TEDDY BEAR STARTED TO WALK
+  if(c >= 19740.0 && c < 19762.0) return [910, c-19740.0];  // ONE GRAIN OF SUGAR
+  if(c >= 19718.0 && c < 19740.0) return [909, c-19718.0];  // TWO BEINGS ARE EQUAL
+  if(c >= 19696.0 && c < 19718.0) return [908, c-19696.0];  // I NEED YOU… ALL
