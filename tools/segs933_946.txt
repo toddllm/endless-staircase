@@ -1,0 +1,14 @@
+  if(c >= 20532.0 && c < 20554.0) return [946, c-20532.0];  // DATA COLLECTED.
+  if(c >= 20510.0 && c < 20532.0) return [945, c-20510.0];  // EXPERIMENT 12-12-12
+  if(c >= 20488.0 && c < 20510.0) return [944, c-20488.0];  // OREN.EXE
+  if(c >= 20466.0 && c < 20488.0) return [943, c-20466.0];  // THE STAR
+  if(c >= 20444.0 && c < 20466.0) return [942, c-20444.0];  // NEKA MADE AN ACCEPTION
+  if(c >= 20422.0 && c < 20444.0) return [941, c-20422.0];  // WHAT IS ‘GOD’ BACKWARDS?
+  if(c >= 20400.0 && c < 20422.0) return [940, c-20400.0];  // BEFORE TIME
+  if(c >= 20378.0 && c < 20400.0) return [939, c-20378.0];  // DR. NEKA OMAZEN
+  if(c >= 20356.0 && c < 20378.0) return [938, c-20356.0];  // THE INK JEWEL
+  if(c >= 20334.0 && c < 20356.0) return [937, c-20334.0];  // C0DE IS DOWN
+  if(c >= 20312.0 && c < 20334.0) return [936, c-20312.0];  // ICINUS
+  if(c >= 20290.0 && c < 20312.0) return [935, c-20290.0];  // THE HEADLESS PIG
+  if(c >= 20268.0 && c < 20290.0) return [934, c-20268.0];  // PS-50’S THREE DOLLS
+  if(c >= 20246.0 && c < 20268.0) return [933, c-20246.0];  // NEKA’S DIARY

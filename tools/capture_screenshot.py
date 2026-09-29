@@ -29592,6 +29592,398 @@ SCENES = {
         window.update = function(){};
       } catch(e){ document.title='SCENE_ERR '+e; }
     """,
+"diary933": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 933 NEKA’S DIARY (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20246.0; loopVs.cyc=20266.8; loopVs.phase=933;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20266.8; loopVs.phase=933; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"dolls934": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 934 PS-50’S THREE DOLLS (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20268.0; loopVs.cyc=20288.8; loopVs.phase=934;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20288.8; loopVs.phase=934; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"pig935": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 935 THE HEADLESS PIG (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20290.0; loopVs.cyc=20310.8; loopVs.phase=935;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20310.8; loopVs.phase=935; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"icinus936": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 936 ICINUS (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20312.0; loopVs.cyc=20332.8; loopVs.phase=936;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20332.8; loopVs.phase=936; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"c0de937": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 937 C0DE IS DOWN (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20334.0; loopVs.cyc=20354.8; loopVs.phase=937;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20354.8; loopVs.phase=937; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"inkjewel938": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 938 THE INK JEWEL (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20356.0; loopVs.cyc=20376.8; loopVs.phase=938;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20376.8; loopVs.phase=938; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"drneka939": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 939 DR. NEKA OMAZEN (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20378.0; loopVs.cyc=20398.8; loopVs.phase=939;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20398.8; loopVs.phase=939; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"beforetime940": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 940 BEFORE TIME (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20400.0; loopVs.cyc=20420.8; loopVs.phase=940;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20420.8; loopVs.phase=940; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"godbackwards941": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 941 WHAT IS ‘GOD’ BACKWARDS? (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20422.0; loopVs.cyc=20442.8; loopVs.phase=941;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20442.8; loopVs.phase=941; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"acception942": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 942 NEKA MADE AN ACCEPTION (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20444.0; loopVs.cyc=20464.8; loopVs.phase=942;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20464.8; loopVs.phase=942; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"star943": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 943 THE STAR (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20466.0; loopVs.cyc=20486.8; loopVs.phase=943;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20486.8; loopVs.phase=943; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"orenexe944": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 944 OREN.EXE (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20488.0; loopVs.cyc=20508.8; loopVs.phase=944;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20508.8; loopVs.phase=944; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"experiment945": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 945 EXPERIMENT 12-12-12 (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20510.0; loopVs.cyc=20530.8; loopVs.phase=945;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20530.8; loopVs.phase=945; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
+"datacollected946": """
+      try {
+        handleConfirm();
+        for (var i=0;i<60;i++){ keys['ArrowRight']=(i%30<15); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.done=true; restore.glow=1; restore.active=false; }
+        if (typeof peace!=='undefined'){ peace.done=true; peace.glow=1; peace.active=false; }
+        for (var j=0;j<150;j++){ keys['ArrowRight']=(j%40<14); update(1/60); }
+        if (typeof restore!=='undefined'){ restore.glow=0; }
+        if (typeof peace!=='undefined'){ peace.glow=0; }
+        if (typeof battle!=='undefined'){ battle.glow=0; }
+        var stages = ['phase2','exposed','executioner','atomix','residual','sounds','voidwar','judge','triad','scf','scf404','treads','firey','alien','wall','smooth','hallu','plague','danger','codex','web','clara','claraAdmin','power','oren','betray','dimension','deletion','weakness','pursuit','reckoning','toddllm','reveal001','errLad','centerMine','endlessChaos','karuto','endOfClassics','godWall','phaseProg','acumin','highForm','claraVs'];
+        for (var s=0;s<stages.length;s++){ var nm=stages[s];
+          try { var o=eval(nm); if(o){ o.active=false; o.done=true; o.glow=0; o.t=6.5; } } catch(e){} }
+        // BEAT 946 DATA COLLECTED. (Toby, Sep 29). cyc=start+20.8.
+        if (typeof loopVs!=='undefined'){
+          loopVs.active=true; loopVs.done=false; loopVs.glow=1;
+          loopVs.t=20532.0; loopVs.cyc=20552.8; loopVs.phase=946;
+        }
+        if (typeof loopVsM!=='undefined'){ loopVsM=0.6; }
+        for (var m=0;m<2;m++){ update(1/60); }
+        if (typeof loopVs!=='undefined'){ loopVs.glow=1; loopVs.cyc=20552.8; loopVs.phase=946; }
+        if (typeof floaters!=='undefined'){ floaters.length=0; }
+        if (typeof winFlash!=='undefined'){ winFlash=0.2; }
+        if (typeof glitch!=='undefined'){ glitch=0.02; }
+        if (typeof tauntT!=='undefined'){ tauntT=0; }
+        window.update = function(){};
+      } catch(e){ document.title='SCENE_ERR '+e; }
+    """,
 
 "closestcat": """
       try {

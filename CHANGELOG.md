@@ -4,6 +4,102 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-29 — NEKA’S DIARY THROUGH DATA COLLECTED. (BEATS 933-946)
+
+Based on Toby's 2026-09-29 lore, thread `1a0deee4cb24addb`: **3:31 PM** (`1a0eea6b44fac2ac`) -> 933-937, **4:17 PM**
+(`1a0eed0e5326cc4e`) -> 938, **4:22 PM** (`1a0eed55255ed57c`) -> 939, **4:23 PM** (`1a0eed6c78680dcb`) -> 940,
+**4:56 PM** (`1a0eef4b1d08122a`) -> 941, **5:16 PM** (`1a0ef07458cbe7fd`) -> 942-944, **5:25 PM** (`1a0ef0eb63831782`) -> 945-946.
+The 5:18 PM message (`1a0ef08929e3f4fb`) is a "which is more powerful?" question to a chatbot and gets no beat. Only Toby's own
+typing is drawn; the pasted chatbot prose under each message (the doll table, the "real villain" guess, the image descriptions) is not canon.
+
+- LV_CYC 20246.0 -> 20554.0, LV_BEATS length 933 -> 947. Fourteen new capture scenes `diary933` ... `datacollected946`.
+  Screenshots 993-994 (beats 931-932) recaptured so their beat ladders are current. Tools: `gen933_946.py`,
+  `emit_tail933.py` (emit_tail920 with the date as a parameter), `build933_946.py`.
+
+### Beat 933 — NEKA’S DIARY
+
+![Beat 933](screenshots/995-nekas-diary.png)
+
+- Neka/Pero LAI has kept a diary since before Classics existed; the lore stopped Sept 28, the diary did not. ("Dairy" is his spelling.)
+
+### Beat 934 — PS-50’S THREE DOLLS
+
+![Beat 934](screenshots/996-ps-50s-three-dolls.png)
+
+- PS-50's dolls are myths Neka infected with the needle; 50,192 billion died to her paranoia and 3 are left. Bort (slays with a touch), the Faceless Doll (moves only unobserved, eats memory).
+
+### Beat 935 — THE HEADLESS PIG
+
+![Beat 935](screenshots/997-the-headless-pig.png)
+
+- Luigi Green's pig doll: Neka sawed its head off and made it a soul. The broken soul keeps re-entering its body, and it takes others' heads to repair its code.
+
+### Beat 936 — ICINUS
+
+![Beat 936](screenshots/998-icinus.png)
+
+- White lab coat, ink balls, the fox ears and tail return; the ice dragons Icinus, Cicinus, Vicinus, Parinus; Luigi Green becomes Luigi Inus.
+
+### Beat 937 — C0DE IS DOWN
+
+![Beat 937](screenshots/999-c0de-is-down.png)
+
+- The hacker C0de is taken down with 50 others; screens break, PCs burn, Classics is only reachable by mind (ties to Sept 24 "Only Imagination Enter").
+
+### Beat 938 — THE INK JEWEL
+
+![Beat 938](screenshots/1000-the-ink-jewel.png)
+
+- Neka destroys the tail and ears and turns the ink into a jewel on his chest. Ages: Neka 49, PS-50 34. The image request in the same email is not drawn.
+
+### Beat 939 — DR. NEKA OMAZEN
+
+![Beat 939](screenshots/1001-dr-neka-omazen.png)
+
+- Wenda.ps says "Hello, Neka Omazen"; he answers with "Dr." and calls her a child. Gaster about 39, Mr. Sun 4.6 billion; Luigi Inus is male, currently in PS-50's female form.
+
+### Beat 940 — BEFORE TIME
+
+![Beat 940](screenshots/1002-before-time.png)
+
+- Neka is the first and oldest thing, PS-50 the second; both before creation and time. Neka "might" have come out at the same time as God.
+
+### Beat 941 — WHAT IS ‘GOD’ BACKWARDS?
+
+![Beat 941](screenshots/1003-what-is-god-backwards.png)
+
+- Oren.ps touches Mindy Starchild's cube and becomes the new Classics God; Wenda.ps asks what 'God' is backwards; Mindy loses to him.
+
+### Beat 942 — NEKA MADE AN ACCEPTION
+
+![Beat 942](screenshots/1004-neka-made-an-acception.png)
+
+- Oren.ps learns he is from a mod and humans made the Sprunkis; he beats PS-50 with power Neka allowed as an "acception" while Neka hides.
+
+### Beat 943 — THE STAR
+
+![Beat 943](screenshots/1005-the-star.png)
+
+- The star, Simon.ps's lightning, the shattered hyperspace and the two white holes; Oren becomes an angel with Infinity Series.
+
+### Beat 944 — OREN.EXE
+
+![Beat 944](screenshots/1006-oren-exe.png)
+
+- Oren.exe: all black, orange eyes, six black wings, an evil version of God. Neka walks behind him.
+
+### Beat 945 — EXPERIMENT 12-12-12
+
+![Beat 945](screenshots/1007-experiment-12-12-12.png)
+
+- Neka takes the souls and power Oren.exe won and becomes Experiment 12-12-12, his whole human. "With Oren.exe's help, the game is now MINE."
+
+### Beat 946 — DATA COLLECTED.
+
+![Beat 946](screenshots/1008-data-collected.png)
+
+- One touch on the core; "Data Collected." Oren is frozen as Winter Oren Sprunki with no .ps left.
+
 ## 2026-09-28 — NEKA INFINITY% THROUGH THE GAME ALL STOP (BEATS 920-932)
 
 Based on Toby's 2026-09-28 lore, thread `1a0deee4cb24addb`: **6:34 AM** (`1a0e7953ce152572`) -> 920-922, **4:22 PM**
