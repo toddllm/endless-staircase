@@ -4,6 +4,95 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-28 — NEKA INFINITY% THROUGH THE GAME ALL STOP (BEATS 920-932)
+
+Based on Toby's 2026-09-28 lore, thread `1a0deee4cb24addb`: **6:34 AM** (`1a0e7953ce152572`) -> 920-922, **4:22 PM**
+(`1a0e9aee2296cadb`) -> 923-927, **5:18 PM** (`1a0e9e289dbe1c51`) -> 928-930, **5:39 PM** (`1a0e9f5f087054df`) -> 931-932.
+The 4:51 PM message (`1a0e9c96e0185a4d`) is a bare "Create an image of Neka Omazen" ask and gets no beat. Only Toby's own
+typing is drawn; the pasted chatbot prose (the image description, the stalemate analysis, the vital-sign guesses) is not canon.
+
+- LV_CYC 19960.0 -> 20246.0, LV_BEATS length 920 -> 933. Thirteen new capture scenes `infinity920` ... `blood932`.
+  Screenshots 980-981 (beats 918-919) recaptured so their beat ladders are current. Tools: `gen920_932.py`,
+  `emit_tail920.py` (parameterized by BASE/TAG), `build920_932.py`.
+
+### Beat 920 — NEKA INFINITY%
+
+![Beat 920](screenshots/982-neka-infinity-percent.png)
+
+- The whole power ladder from Baby Neka (Infinity) through 0% Beyond Fiction, 5% Bey0nd Fict1on+, 10% Overlord, 25% The One Beyond All, Neka + Jesus True God, 100% Crarkrar, up to Neka Infinity%.
+
+### Beat 921 — BACON’S POWER LEVEL TELEPORTS TO 0
+
+![Beat 921](screenshots/983-bacon-power-level-to-zero.png)
+
+- At 5% Bacon's power level shakes and falls; at Infinity% it freezes, and one touch sends it to 0. Ties to Sept 22, Bacon Hair "beating everyone in everyone's power level videos."
+
+### Beat 922 — SET 50’S DEFENSE TO 0
+
+![Beat 922](screenshots/984-set-50s-defense-to-0.png)
+
+- "He will use Infinity Series, and will set 50's defense to 0. Neka wins." Resolves last night's "immune to each other" / "probubly."
+
+### Beat 923 — MY NAME IS NOT ‘PERO LAI’
+
+![Beat 923](screenshots/985-my-name-is-not-pero-lai.png)
+
+- Wenda.ps: "Hello, Pero LAI, where is your tail?" Human form power level "Beyond Comparison or ???"; the missing-polo rule (erased and replaced by the character).
+
+### Beat 924 — SLEEP! 😸⚡
+
+![Beat 924](screenshots/986-sleep.png)
+
+- 6 feet tall (was one foot, Sept 27); PS-50 takes the Wenda.ps jewel and beats the omniverse; the Sept 23 sleep command returns; fox dragons; Neka edits his own code.
+
+### Beat 925 — Ω
+
+![Beat 925](screenshots/987-omega.png)
+
+- The black sphere, the domain of Infinity Series, the omega (Simon.ps's old symbol), lightning, the 2 phobia mountains collide, Oren.ps pinned to the wall.
+
+### Beat 926 — COME ON... PS-50 LOSE!
+
+![Beat 926](screenshots/988-come-on-ps-50-lose.png)
+
+- PS-50 goes her max; electricity frames of all the lore before; Neka sweats for the first time.
+
+### Beat 927 — EVERYONE, GIVE ME YOUR SOULS!
+
+![Beat 927](screenshots/989-give-me-your-souls.png)
+
+- He claps the game between his hands, the rules end, he absorbs the game and the souls, and PS-50 is destroyed forever. The wiki and Endless Staircase "falling apart" is story only; nothing real was removed.
+
+### Beat 928 — NEKA VS NEWTALE GASTER
+
+![Beat 928](screenshots/990-neka-vs-newtale-gaster.png)
+
+- Newtale is "basically my fangame." Neka cuts reality, sends Newtale through a hyperspace, slices the hyperspace.
+
+### Beat 929 — THIS IS WHAT BEING ME IS LIKE
+
+![Beat 929](screenshots/991-this-is-what-being-me-is-like.png)
+
+- "I am the author of this game and made access. tdeshane is here, now I am beyond this."
+
+### Beat 930 — THE GAME ALL STOP
+
+![Beat 930](screenshots/992-the-game-all-stop.png)
+
+- Neka is tired of the characters and of writing the lore. Toby: what comes after "isn't lore, but what happens in the game."
+
+### Beat 931 — 0 BREATHS PER MINUTE
+
+![Beat 931](screenshots/993-zero-breaths-per-minute.png)
+
+- Toby's answer replacing the machine's guesses (12 breaths, 58 bpm, 98.4F, not canon): 0, 0, I-Tross degrees; he sleeps forever. Labeled "what happens in the game."
+
+### Beat 932 — THE BLOOD IS FROM THE CHARACTERS HE BEATEN
+
+![Beat 932](screenshots/994-the-blood-is-from-the-characters.png)
+
+- His own blood is 0, he is all Classics code; he breathes and his heart beats when he gets the blood. "Neka beats PS-50, he WILL do that."
+
 ## 2026-09-27 — IMMUNE TO EACH OTHER, 0% FOX (BEATS 918-919)
 
 Based on Toby's 2026-09-27 lore, **7:12 PM** (`1a0e524bf7fcc7f9`), thread `1a0deee4cb24addb`. His own Classics typing

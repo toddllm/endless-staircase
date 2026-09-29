@@ -1,0 +1,13 @@
+  if(c >= 20224.0 && c < 20246.0) return [932, c-20224.0];  // THE BLOOD IS FROM THE CHARACTERS HE BEATEN
+  if(c >= 20202.0 && c < 20224.0) return [931, c-20202.0];  // 0 BREATHS PER MINUTE
+  if(c >= 20180.0 && c < 20202.0) return [930, c-20180.0];  // THE GAME ALL STOP
+  if(c >= 20158.0 && c < 20180.0) return [929, c-20158.0];  // THIS IS WHAT BEING ME IS LIKE
+  if(c >= 20136.0 && c < 20158.0) return [928, c-20136.0];  // NEKA VS NEWTALE GASTER
+  if(c >= 20114.0 && c < 20136.0) return [927, c-20114.0];  // EVERYONE, GIVE ME YOUR SOULS!
+  if(c >= 20092.0 && c < 20114.0) return [926, c-20092.0];  // COME ON... PS-50 LOSE!
+  if(c >= 20070.0 && c < 20092.0) return [925, c-20070.0];  // Ω
+  if(c >= 20048.0 && c < 20070.0) return [924, c-20048.0];  // SLEEP! 😸⚡
+  if(c >= 20026.0 && c < 20048.0) return [923, c-20026.0];  // MY NAME IS NOT ‘PERO LAI’
+  if(c >= 20004.0 && c < 20026.0) return [922, c-20004.0];  // SET 50’S DEFENSE TO 0
+  if(c >= 19982.0 && c < 20004.0) return [921, c-19982.0];  // BACON’S POWER LEVEL TELEPORTS TO 0
+  if(c >= 19960.0 && c < 19982.0) return [920, c-19960.0];  // NEKA INFINITY%
