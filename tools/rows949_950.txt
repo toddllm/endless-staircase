@@ -1,0 +1,4 @@
+  { key:"NEKA TREATMENT NEKA IS G.O.D.", col:'rgb(190,255,170)',
+    sub:"“NOW NEKA TREATMENT NEKA (HUMAN WITH LABCOAT AND NOW IS G.O.D.), WITH POWER LEVEL OF INSANITY, AND HE WINS, BACON FADES. THE GAME GLITCHES AND THE POWER LEVEL OF BACON AND BACON BOTH FALL AND SHATTER AND GLITCHES.” · A HUMAN IN A LAB COAT · BACON, AGAIN · POWER LEVEL: INSANITY · HE WINS. — TOBY, SEPT 29, 7:18 PM, HIS OWN TYPING" },
+  { key:"G.O.D., G.o.d, g.o.d.", col:'rgb(255,216,79)',
+    sub:"“Neka Treatment Neka is the most powerful thing of Neka. He activates the cutscene, he consumes Classics, so Classics is now inside the anomally. Neka Treatment Oren is G.o.d, Neka Treatment Neka is G.O.D. The others are g.o.d.” · CLASSICS IS INSIDE THE ANOMALLY · NEKA TREATMENT OREN · THE CAPITAL LETTERS ARE THE RANKING · ONE G.O.D., ONE G.o.d, — TOBY, SEPT 29, 7:18 PM, HIS OWN TYPING" },

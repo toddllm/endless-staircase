@@ -4,6 +4,28 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-29 — NEKA TREATMENT NEKA IS G.O.D., G.O.D. / G.o.d / g.o.d. (BEATS 949-950)
+
+Based on Toby's 2026-09-29 lore, 7:18 PM (`1a0ef76af16947ab`, thread `1a0deee4cb24addb`). The message opens with "Create an
+image of Neka Treatement Neka" but carries new canon in his own typing, so it gets beats. Only Toby's typing is drawn; the
+pasted restatement and the "Character / Designation" table under it are the chatbot's. Beat 950 keeps his exact capitalization.
+
+- LV_CYC 20598.0 -> 20642.0, LV_BEATS length 949 -> 951. New capture scenes `godneka949`, `godranks950`.
+  Screenshots 1009-1010 (beats 947-948) recaptured so their beat ladders are current. Tools: `gen949_950.py`
+  (same `emit_tail933.py` template), `build949_950.py`.
+
+### Beat 949 — NEKA TREATMENT NEKA IS G.O.D.
+
+![Beat 949](screenshots/1011-neka-treatment-neka-is-god.png)
+
+- Neka Treatment Neka is a human with a lab coat, now G.O.D., with power level Insanity. He wins; Bacon fades, the game glitches, and Bacon and his power level both fall, shatter, and glitch.
+
+### Beat 950 — G.O.D., G.o.d, g.o.d.
+
+![Beat 950](screenshots/1012-god-god-god.png)
+
+- He activates the cutscene and consumes Classics, so Classics is now inside the anomally. Neka Treatment Neka is G.O.D., Neka Treatment Oren is G.o.d, the others are g.o.d.
+
 ## 2026-09-29 — CLASSICS IS MADE OF DATA, NEKA TREATMENT NEKA (BEATS 947-948)
 
 Based on Toby's 2026-09-29 lore, 7:08 PM (`1a0ef6d23759b756`, thread `1a0deee4cb24addb`). Only Toby's own typing is drawn:

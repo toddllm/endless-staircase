@@ -1,0 +1,2 @@
+  if(c >= 20620.0 && c < 20642.0) return [950, c-20620.0];  // G.O.D., G.o.d, g.o.d.
+  if(c >= 20598.0 && c < 20620.0) return [949, c-20598.0];  // NEKA TREATMENT NEKA IS G.O.D.
