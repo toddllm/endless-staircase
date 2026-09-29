@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-29 — CLASSICS IS MADE OF DATA, NEKA TREATMENT NEKA (BEATS 947-948)
+
+Based on Toby's 2026-09-29 lore, 7:08 PM (`1a0ef6d23759b756`, thread `1a0deee4cb24addb`). Only Toby's own typing is drawn:
+his question ("How do you think Classics will end. Hint- Classics is made of data") and his answer ("Correct. Neka appears in
+front of the screen and he consumes the game ..."). The pasted chatbot guess and restatement are not canon. The
+"(remove every other tab other than a Neka Omazen tab ...)" wiki request is a wiki restructure, not a game beat, and is left for Todd.
+
+- LV_CYC 20554.0 -> 20598.0, LV_BEATS length 947 -> 949. New capture scenes `madeofdata947`, `treatmentneka948`.
+  Screenshots 1007-1008 (beats 945-946) recaptured so their beat ladders are current. Tools: `gen947_948.py`
+  (same `emit_tail933.py` template), `build947_948.py`.
+
+### Beat 947 — CLASSICS IS MADE OF DATA
+
+![Beat 947](screenshots/1009-classics-is-made-of-data.png)
+
+- How Classics ends: Neka, the only one who consumes data, appears in front of the screen and consumes the game itself. It is the cutscene that comes next after the Neka Treatment.
+
+### Beat 948 — NEKA TREATMENT NEKA
+
+![Beat 948](screenshots/1010-neka-treatment-neka.png)
+
+- Oren.ps "rebecomes" his godly form, stronger than before; everyone else gains power too. Neka disappears from in front of the screen and reappears inside the game as Neka Treatment Neka, "the coolest."
+
 ## 2026-09-29 — NEKA’S DIARY THROUGH DATA COLLECTED. (BEATS 933-946)
 
 Based on Toby's 2026-09-29 lore, thread `1a0deee4cb24addb`: **3:31 PM** (`1a0eea6b44fac2ac`) -> 933-937, **4:17 PM**
