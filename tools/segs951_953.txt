@@ -1,0 +1,3 @@
+  if(c >= 20686.0 && c < 20708.0) return [953, c-20686.0];  // PRESSURE
+  if(c >= 20664.0 && c < 20686.0) return [952, c-20664.0];  // PERFECT FUEL
+  if(c >= 20642.0 && c < 20664.0) return [951, c-20642.0];  // THE SHIP TO REAL LIFE

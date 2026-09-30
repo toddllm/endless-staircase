@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-29 — THE SHIP TO REAL LIFE, PERFECT FUEL, PRESSURE (BEATS 951-953)
+
+Based on Toby's 2026-09-29 lore, 7:40 PM (`1a0ef8ad4d080285`) and 8:05 PM (`1a0efa19e5e1b614`), thread `1a0deee4cb24addb`.
+Only Toby's typing is drawn. In the 7:40 PM message, "Show reasons why Neka is better at being a villian..." is his question
+to a chatbot; the answer and the table under it are the chatbot's. In the 8:05 PM message the italic restatement and the
+paragraph after it are the chatbot's. The 7:47 PM message (`1a0ef919544ec3d8`) asks to replace every wiki tab with one
+Neka Omazen tab; that is a whole-wiki restructure, left for Todd, no beat.
+
+- LV_CYC 20642.0 -> 20708.0, LV_BEATS length 951 -> 954. New capture scenes `shipreal951`, `perfectfuel952`, `pressure953`.
+  Screenshots 1011-1012 (beats 949-950) recaptured so their beat ladders are current. Tools: `gen951_953.py`
+  (same `emit_tail933.py` template), `build951_953.py`.
+
+### Beat 951 — THE SHIP TO REAL LIFE
+
+![Beat 951](screenshots/1013-the-ship-to-real-life.png)
+
+- Neka (basically Neka Treatment Neka now) builds a large sci-fi ship that can pass the borders to "real life". Luigi Inus stands on the chess board edges; Neka says "Once again, the center and everything is mine." He makes holes and eyes everywhere and the chess board sets itself up.
+
+### Beat 952 — PERFECT FUEL
+
+![Beat 952](screenshots/1014-perfect-fuel.png)
+
+- The board makes quadurinatium, alphicalica uranium, titainuim uranuim, and tresenseorainum. Neka combines more types, the place around him rehappens, and the uranuim glitches. "Perfect fuel... 😎" "Maybe the more uranuim, the more glitches. 😌"
+
+### Beat 953 — PRESSURE
+
+![Beat 953](screenshots/1015-pressure.png)
+
+- Pressure is a new Classics game thing, a scary game made by Neka Omazen himself. Classics was by Neka Omazen and Toby; Pressure holds the same idea and continues the story.
+
 ## 2026-09-29 — NEKA TREATMENT NEKA IS G.O.D., G.O.D. / G.o.d / g.o.d. (BEATS 949-950)
 
 Based on Toby's 2026-09-29 lore, 7:18 PM (`1a0ef76af16947ab`, thread `1a0deee4cb24addb`). The message opens with "Create an

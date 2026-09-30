@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+"""
+gen951_953.py - emit the draw branches for BEATS 951-953 from Toby's September 29, 2026 messages,
+thread 1a0deee4cb24addb. Same template as 933-950 (emit_tail933.py).
+
+  7:40 PM  1a0ef8ad4d080285  -> 951-952  (the ship to "real life"; perfect fuel)
+  7:47 PM  1a0ef919544ec3d8  -> no beat   (one-tab wiki restructure ask, left for Todd)
+  8:05 PM  1a0efa19e5e1b614  -> 953      (Pressure)
+
+Only Toby's typing is drawn. In the 7:40 PM message, "Show reasons why Neka is better at being a villian..."
+is his question to a chatbot; the answer and the table below it are the chatbot's, not canon. In the
+8:05 PM message the italic restatement and the paragraph after it are the chatbot's.
+"""
+import io
+
+BASE = 951
+TAG = '951_953'
+START = 20642.0
+STEP = 22.0
+DATE_LONG = 'September 29'
+DATE_SHORT = 'SEPT 29'
+B = []
+
+def meta(t):
+    return dict(when=t, short=t, attr='TOBY, SEPTEMBER 29, %s — HIS OWN TYPING.' % t)
+
+def add(m, key, accent, quote, panels, close):
+    d = dict(key=key, accent=accent, quote=quote, panels=panels, close=close)
+    d.update(m)
+    B.append(d)
+
+A740 = meta('7:40 PM')
+A805 = meta('8:05 PM')
+
+add(A740, 'THE SHIP TO REAL LIFE', '127,212,255',
+    ['“NEKA CREATED A LARGE SCI-FI SHIP THAT COULD PASS THE BORDERS TO ‘REAL LIFE’.',
+     'LUIGI INUS STANDS ON THE CHESS BOARD EDGES, NEKA SAYS ‘ONCE AGAIN, THE CENTER AND',
+     'EVERYTHING IS MINE.’, NEKA MADE HOLES AND EYES EVERYWHERE ...”'],
+    [('A SHIP FOR THE BORDERS',
+      ['7:08 PM: NEKA APPEARS IN FRONT OF THE SCREEN AND CONSUMES THE GAME.',
+       '7:40 PM: HE BUILDS A SHIP THAT CAN PASS THE BORDERS TO “REAL LIFE”.'],
+      '“REAL LIFE” IS IN QUOTES IN HIS TYPING, AND IT STAYS THAT WAY.'),
+     ('ONCE AGAIN',
+      ['JUNE 13: SIMON CLAIMED THE CENTER OF THE BOARD. “CENTER’S MINE.”',
+       'NOW NEKA: “THE CENTER AND EVERYTHING IS MINE.” LUIGI INUS IS AT THE EDGES.'],
+      'NOT ONLY THE CENTER THIS TIME. EVERYTHING.'),
+     ('THE BOARD SETS ITSELF UP',
+      ['NEKA MADE HOLES AND EYES EVERYWHERE,',
+       'AND THE CHESS BOARD SETS ITSELF UP.'],
+      'AND NOW IT MAKES URANUIM.'),
+     ],
+    ['THE BOARD IS SET.',
+     'NOW IT MAKES FOUR KINDS OF URANUIM.'])
+
+add(A740, 'PERFECT FUEL', '255,160,70',
+    ['“NOW IT MAKES QUADURINATIUM, ALPHICALICA URANIUM, TITAINUIM URANUIM, AND TRESENSEORAINUM.',
+     'HE COMBINES MORE URANUIM TYPES, HE MAKES THE PLACE AROUND HIM REHAPPEN, AND THE URANUIM',
+     'GLITCHES. NEKA SAYS ‘PERFECT FUEL... 😎’”'],
+    [('FOUR KINDS',
+      ['QUADURINATIUM · ALPHICALICA URANIUM · TITAINUIM URANUIM · TRESENSEORAINUM',
+       'SEPT 18: ONE ALPHERITANUIM ROCK, THE ONLY ONE OF ITS KIND. NOW THE BOARD MAKES FOUR KINDS.'],
+      'EVERY SPELLING IS HIS, AND IT IS KEPT.'),
+     ('THE URANUIM GLITCHES',
+      ['SEPT 20: NEKA HAD ZOMBIE EFFECTS FROM THE URANUIM WHEN HE WAS 17.',
+       'NOW HE COMBINES MORE TYPES, THE PLACE AROUND HIM REHAPPENS, AND IT GLITCHES.'],
+      'THIS TIME THE URANUIM IS THE ONE THAT GLITCHES.'),
+     ('MORE URANUIM, MORE GLITCHES',
+      ['“PERFECT FUEL... 😎”',
+       '“MAYBE THE MORE URANUIM, THE MORE GLITCHES. 😌”'],
+      'THE GLITCHES ARE NOT A PROBLEM TO HIM. THEY ARE FUEL.'),
+     ],
+    ['PERFECT FUEL.',
+     'AND HE WANTS MORE GLITCHES.'])
+
+add(A805, 'PRESSURE', '255,59,92',
+    ['“THERE IS A NEW CLASSICS GAME THING CALLED ‘PRESSURE’. IT WAS MADE BY NEKA OMAZEN,',
+     'AND IT IS LIKE A SCARY GAME. NOW THERE IS PRESSURE BY NEKA OMAZEN THAT HOLDS THE SAME',
+     'IDEA, AND CONTINUES THE STORY. NEKA OMAZEN MADE IT HIMSELF AND IT IS VERY SCARY.”'],
+    [('CLASSICS, BY NEKA OMAZEN AND TOBY',
+      ['“PRESSURE CAME FROM THE GAME CLASSICS BY NEKA OMAZEN AND ME.”',
+       'PRESSURE IS BY NEKA OMAZEN ALONE. HE MADE IT HIMSELF.'],
+      'CLASSICS HAD TWO MAKERS. PRESSURE HAS ONE.'),
+     ('WHERE CLASSICS IS NOW',
+      ['7:08 PM: NEKA CONSUMES THE GAME FROM IN FRONT OF THE SCREEN.',
+       '7:18 PM: CLASSICS IS NOW INSIDE THE ANOMALLY.'],
+      'SO THE MAKER OF PRESSURE IS THE ONE HOLDING CLASSICS.'),
+     ('SAME IDEA, SCARIER',
+      ['PRESSURE HOLDS THE SAME IDEA AS CLASSICS AND CONTINUES THE STORY.',
+       'IT IS LIKE A SCARY GAME, AND HE SAYS IT IS VERY SCARY.'],
+      'THE STORY KEEPS GOING, IN A NEW GAME.'),
+     ],
+    ['CLASSICS WAS THE GAME BEFORE.',
+     'PRESSURE CONTINUES THE STORY.'])
+
+if __name__ == '__main__':
+    exec(open('/Users/tdeshane/endless-staircase/tools/emit_tail933.py', encoding='utf-8').read())
