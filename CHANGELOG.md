@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-30 — THE NEON THING (BEAT 955)
+
+Based on Toby's 2026-09-30 lore, 5:25 PM (`1a0f4353f0e50d35`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
+his opening paragraph, from "Oren.exe became more powerful than ever before combined" to "only 2 know exist (me, and Neka)".
+The italic restatement after it is the chatbot's, not canon. "Dairy" is his spelling (as on Sept 29) and is kept.
+
+- LV_CYC 20730.0 -> 20752.0, LV_BEATS length 955 -> 956. New capture scene `neon955`.
+  Screenshot 1016 (beat 954) recaptured so its beat ladder is current. Tools: `gen955.py`
+  (same `emit_tail933.py` template), `build955.py`.
+
+### Beat 955 — THE NEON THING
+
+![Beat 955](screenshots/1017-the-neon-thing.png)
+
+- Oren.exe, more powerful than ever before combined, takes over some Sprunkis with the void, Mr. Black included (the same Mr. Black the 19 beat together on Sept 5); the survivors join Wenda.ps's team. He compresses all of it into a simple neon design. Humans are the largest things ever, with an entire universe in them, and the only ones who live forever. Neka hides in the void and keeps writing in his indestructible dairy.
+
 ## 2026-09-30 — THE TERMINATORS OF THE NULLIFIED VOID (BEAT 954)
 
 Based on Toby's 2026-09-30 lore, 5:03 PM (`1a0f4218a7751835`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
