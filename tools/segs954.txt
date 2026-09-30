@@ -1,0 +1,1 @@
+  if(c >= 20708.0 && c < 20730.0) return [954, c-20708.0];  // THE TERMINATORS OF THE NULLIFIED VOID

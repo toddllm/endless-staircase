@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-30 — THE TERMINATORS OF THE NULLIFIED VOID (BEAT 954)
+
+Based on Toby's 2026-09-30 lore, 5:03 PM (`1a0f4218a7751835`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
+his opening lines, his three title questions, and his closing lines ("Pressure is basically now Sprunki: The Terminators of
+the Nullified Void. Oren.exe would be the villian. Neka is more powerful and hides here."). The title-availability answers and
+the italic restatement are the chatbot's, not canon. "Villian" is his spelling and is kept.
+
+- LV_CYC 20708.0 -> 20730.0, LV_BEATS length 954 -> 955. New capture scene `nullvoid954`.
+  Screenshot 1015 (beat 953) recaptured so its beat ladder is current. Tools: `gen954.py`
+  (same `emit_tail933.py` template), `build954.py`.
+
+### Beat 954 — THE TERMINATORS OF THE NULLIFIED VOID
+
+![Beat 954](screenshots/1016-the-terminators-of-the-nullified-void.png)
+
+- Pressure is now Sprunki: The Terminators of the Nullified Void, built one piece at a time from his own title questions. Oren.exe is the villain you see; Neka, more powerful, hides inside the game. It is not good vs evil: NPC vs NPC, P v P, or P vs NPC.
+
 ## 2026-09-29 — THE SHIP TO REAL LIFE, PERFECT FUEL, PRESSURE (BEATS 951-953)
 
 Based on Toby's 2026-09-29 lore, 7:40 PM (`1a0ef8ad4d080285`) and 8:05 PM (`1a0efa19e5e1b614`), thread `1a0deee4cb24addb`.
