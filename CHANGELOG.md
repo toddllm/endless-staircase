@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-09-30 — EVERYTHING CONNECTS TO PRESSURE (BEAT 956)
+
+Based on Toby's 2026-09-30 lore, 6:26 PM (`1a0f46d8bc182b33`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
+his opening paragraph, from "Correct." to "Everything in the lore connects to the Pressure game." The restatement after it
+is the chatbot's, not canon. "Oren.ps" is his spelling here and is kept. His 6:16 PM message (`1a0f464392f12c54`) is a
+bare "create an image" ask (Oren.exe's neon form, orange eyes, six black wings) and gets no beat.
+
+- LV_CYC 20752.0 -> 20774.0, LV_BEATS length 956 -> 957. New capture scene `connect956`.
+  Screenshot 1017 (beat 955) recaptured so its beat ladder is current. Tools: `gen956.py`
+  (same `emit_tail933.py` template), `build956.py`.
+
+### Beat 956 — EVERYTHING CONNECTS TO PRESSURE
+
+![Beat 956](screenshots/1018-everything-connects-to-pressure.png)
+
+- Oren holds a large sword made by all of the void itself, which makes it Nullified. Neka puts diamond eyes, holes, and neon patterns onto Oren.exe, and every character takes on the simple-neon-thing style. Neka made Mindy Starchild by stars colliding; Neka's own first stage came from the largest supernova of all fiction combining. Neka summons everyone over: Time Paranoid, Luigi Inus, Clockworks, clocks and gears. Everything in the lore connects to the Pressure game.
+
 ## 2026-09-30 — THE NEON THING (BEAT 955)
 
 Based on Toby's 2026-09-30 lore, 5:25 PM (`1a0f4353f0e50d35`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
