@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-01 — THE SHORT-NOSED MASK / LIKE ALWAYS! / YOU ARE MINE / THE MEGA STAR / THE ULTIMATE MASS (BEATS 963-967)
+
+Based on Toby's 2026-10-01 lore, 4:44 PM (`1a0f93615fed5bb4`), 4:48 PM (`1a0f9399beb0638f`), 4:49 PM (`1a0f93b22d4c587e`)
+and 5:02 PM (`1a0f9473cbe14c50`), thread `1a0deee4cb24addb`. The 4:58 PM message ("Create PS-50 and the Mega Star") is an
+image ask and gets no beat. Only Toby's typing is drawn; the italic readings under each message are the chatbot's.
+
+- LV_CYC 20906.0 -> 21016.0, LV_BEATS length 963 -> 968. New capture scenes `mask963`, `likealways964`, `mine965`,
+  `megastar966`, `ultimatemass967`. Screenshots 1023 and 1024 (beats 961-962) recaptured so their beat ladders are current.
+  Tools: `gen963.py` (same `emit_tail933.py` template), `build963.py`.
+
+### Beat 963 — THE SHORT-NOSED MASK
+
+![Beat 963](screenshots/1025-the-short-nosed-mask.png)
+
+- Neka Omazen wears a short-nosed plauge doctor mask, rough and black, with his eyes showing and black gloves. He hangs many outfits up and even cleaned his labatory.
+
+### Beat 964 — LIKE ALWAYS!
+
+![Beat 964](screenshots/1026-like-always.png)
+
+- Everything everyone uses fails, and Neka says "LIKE ALWAYS!" PS-50 looks at him, his outfit changes to his lab suit, she says "Neka, destroy all the other characters here," and he does, in battle.
+
+### Beat 965 — YOU ARE MINE
+
+![Beat 965](screenshots/1027-you-are-mine.png)
+
+- PS-50 was hypnotising Neka. Luigi touched Neka, Neka turns and looks at PS-50, and a message appears in her mind: "You are PS-50, You are Luigi Inus, You are Luigi Green, You are mine, you are safe here, do not run, do not hide, you are free."
+
+### Beat 966 — THE MEGA STAR
+
+![Beat 966](screenshots/1028-the-mega-star.png)
+
+- PS-50 snaps out of it and stands in Neka's creation, a tiny mass inside the huge Mega Star.
+
+### Beat 967 — THE ULTIMATE MASS
+
+![Beat 967](screenshots/1029-the-ultimate-mass.png)
+
+- The Mega Star is way smaller than Pressure. Pressure and Classics are inside the Ultimate Mass, the Grand Judgement Hall, which holds the Judgement Hall, the Error Hall, every Hall version, all fiction, the barrier, the realities and everything. Neka made it all, is larger than it, and can consume it all.
+
 ## 2026-10-01 — DAMAGE ITSELF NO LONGER EXISTS / ENTITY 12 VS ENTITY 75 / FRONT MAN OF PRESSURE (BEATS 960-962)
 
 Based on Toby's 2026-10-01 lore, 4:26 PM (`1a0f925df2297583`) and 4:34 PM (`1a0f92d1e9fbd922`), thread `1a0deee4cb24addb`.

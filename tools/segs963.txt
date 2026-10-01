@@ -1,0 +1,5 @@
+  if(c >= 20994.0 && c < 21016.0) return [967, c-20994.0];  // THE ULTIMATE MASS
+  if(c >= 20972.0 && c < 20994.0) return [966, c-20972.0];  // THE MEGA STAR
+  if(c >= 20950.0 && c < 20972.0) return [965, c-20950.0];  // YOU ARE MINE
+  if(c >= 20928.0 && c < 20950.0) return [964, c-20928.0];  // LIKE ALWAYS!
+  if(c >= 20906.0 && c < 20928.0) return [963, c-20906.0];  // THE SHORT-NOSED MASK
