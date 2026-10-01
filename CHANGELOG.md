@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-01 — ANYTHING 12 / EVERYONE! DON'T BE AFRAID! (BEATS 958-959)
+
+Based on Toby's 2026-10-01 lore, 4:03 PM (`1a0f9106be70b925`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
+"Try Neka; 12. saying 12 12 12 doesn't matter, it is saying the number 3 times. Saying the number even once will answer Neka ...
+He is Anything 12 ... Neka is the top 1, and even 0." and the "Everyone! Don't be afraid!" scene. The SCP-053 vs SCP-2094 verdict,
+the restatements, and the description of the Gemini video frames are the chatbot's, not drawn.
+
+- LV_CYC 20796.0 -> 20840.0, LV_BEATS length 958 -> 960. New capture scenes `anything958`, `afraid959`.
+  Screenshot 1019 (beat 957) recaptured so its beat ladder is current. Tools: `gen958.py`
+  (same `emit_tail933.py` template), `build958.py`.
+
+### Beat 958 — ANYTHING 12
+
+![Beat 958](screenshots/1020-anything-12.png)
+
+- One 12 is enough to answer Neka; 12 12 12 is just the number said three times. He is Anything 12: Entity 12, SCP 12, anything 12. On Aug 15, 12 12 12 was a calling of Pero; now one 12 calls Neka. He is hated by everyone, not just Sprunkis, and some still try to attack him. A normal anime man, the most powerful being in Fiction, Meta, and Realities: top 1, and even 0.
+
+### Beat 959 — EVERYONE! DON'T BE AFRAID!
+
+![Beat 959](screenshots/1021-everyone-dont-be-afraid.png)
+
+- Neka says "Everyone! Don't be afraid!" and everyone runs around screaming. The void takes nearly all of them. Neka sets Oren.ps's HP to 1, then makes damage nullified. "I want to help you, but instead, I have to keep punishing you all."
+
 ## 2026-10-01 — THE PRESSURE POWER INDEX (BEAT 957)
 
 Based on Toby's 2026-10-01 lore, 6:22 AM (`1a0f6fc78b08458b`, `1a0f6fc9229b24ac`, thread `1a0deee4cb24addb`; `1a0f6fd2e5fa0fbe`,
