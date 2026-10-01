@@ -1,0 +1,1 @@
+  if(c >= 21016.0 && c < 21038.0) return [968, c-21016.0];  // INFINITE ROOM INSIDE HIM

@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-01 — INFINITE ROOM INSIDE HIM (BEAT 968)
+
+Based on Toby's 2026-10-01 lore, 5:23 PM (`1a0f95a5031a792d`), thread `1a0deee4cb24addb`. Only Toby's typing is drawn:
+his question line and his "Answer:" paragraph. The paragraphs in between and the italic restatement are the chatbot's.
+The 5:34 PM message (`1a0f9648ce9f60c1`, "Create an image of all the 20 Pressure Sprunkis...") is an image ask and gets no beat.
+
+- LV_CYC 21016.0 -> 21038.0, LV_BEATS length 968 -> 969. New capture scene `infiniteroom968`. Screenshot 1029 (beat 967)
+  recaptured so its beat ladder is current. Tools: `gen968.py` (same `emit_tail933.py` template), `build968.py`.
+
+### Beat 968 — INFINITE ROOM INSIDE HIM
+
+![Beat 968](screenshots/1030-infinite-room-inside-him.png)
+
+- Neka is physically 5-6 feet tall and still larger than the Ultimate Mass, because he made it: he is the creator of it plus more. He can consume the whole mass and still has infinite room inside him. Neka is an anomally; everyone dislikes him, and he punishes them constantly.
+
 ## 2026-10-01 — THE SHORT-NOSED MASK / LIKE ALWAYS! / YOU ARE MINE / THE MEGA STAR / THE ULTIMATE MASS (BEATS 963-967)
 
 Based on Toby's 2026-10-01 lore, 4:44 PM (`1a0f93615fed5bb4`), 4:48 PM (`1a0f9399beb0638f`), 4:49 PM (`1a0f93b22d4c587e`)
