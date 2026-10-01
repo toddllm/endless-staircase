@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-01 — PRESSURETALE / I AM NOW... DEAD. (BEATS 969-970)
+
+Based on Toby's 2026-10-01 lore, 7:27 PM (`1a0f9cb82996f580`, subject "Document"). Only Toby's typing is drawn: the
+battle paragraph from "Pressuretale Gaster, wait-" through "the heroes died but respawned afterward." The italic
+"Pressuretale ends this battle..." line and the bullet recap under it are the chatbot's.
+
+- LV_CYC 21038.0 -> 21082.0, LV_BEATS length 969 -> 971. New capture scenes `pressuretale969`, `nowdead970`.
+  Screenshots 1029 and 1030 recaptured so their beat ladders are current. Tools: `gen969.py` (same `emit_tail933.py`
+  template), `build969.py`.
+
+### Beat 969 — PRESSURETALE
+
+![Beat 969](screenshots/1031-pressuretale.png)
+
+- Neka grabs everyone and takes them to a Pressure AU, Pressuretale. The Sprunkis ask Gaster and Neka "How was the fall?"
+  (the Aug 27 question Gaster would not talk about), and Neka shrinks back to 5-6 feet: "Why do you guys ask me that?"
+- Neka tries to type "/kill_commands" and Simon.ps shatters the command panel with his error strings. Every access Neka
+  deletes, Simon.ps writes back ("Oren.ps = true").
+- "I deleted my HP, now I have actual health." Neka's arm is damaged and he cannot heal it. Wenda.ps resists the villain
+  urge and becomes a hero; everyone takes a piece of Neka's soul and glows rainbow.
+
+### Beat 970 — I AM NOW... DEAD.
+
+![Beat 970](screenshots/1032-i-am-now-dead.png)
+
+- The longest fight ever, 35.7 times the lore length of time. "I try to make it up to you, but then you all hate me now."
+- Neka's eyes flash purple and he uses Paranoidia, an attack only Pressure gives him (on Sep 27 it was PS-50's, and Neka
+  was immune to it). Nearly the whole stadium is wiped out and all the Ultimate Mass is destroyed.
+- "I am now... dead." Neka falls over. The heroes died, but respawned afterward.
+
 ## 2026-10-01 — INFINITE ROOM INSIDE HIM (BEAT 968)
 
 Based on Toby's 2026-10-01 lore, 5:23 PM (`1a0f95a5031a792d`), thread `1a0deee4cb24addb`. Only Toby's typing is drawn:

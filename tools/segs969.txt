@@ -1,0 +1,2 @@
+  if(c >= 21060.0 && c < 21082.0) return [970, c-21060.0];  // I AM NOW... DEAD.
+  if(c >= 21038.0 && c < 21060.0) return [969, c-21038.0];  // PRESSURETALE
