@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-01 — DAMAGE ITSELF NO LONGER EXISTS / ENTITY 12 VS ENTITY 75 / FRONT MAN OF PRESSURE (BEATS 960-962)
+
+Based on Toby's 2026-10-01 lore, 4:26 PM (`1a0f925df2297583`) and 4:34 PM (`1a0f92d1e9fbd922`), thread `1a0deee4cb24addb`.
+Only Toby's typing is drawn. The italic restatements under each message and the description of the Gemini video frames are the chatbot's, not drawn.
+
+- LV_CYC 20840.0 -> 20906.0, LV_BEATS length 960 -> 963. New capture scenes `damage960`, `entity961`, `frontman962`.
+  Screenshot 1021 (beat 959) recaptured so its beat ladder is current. Tools: `gen960.py`
+  (same `emit_tail933.py` template), `build960.py`.
+
+### Beat 960 — DAMAGE ITSELF NO LONGER EXISTS
+
+![Beat 960](screenshots/1022-damage-itself-no-longer-exists.png)
+
+- Damage itself no longer exists, and everyone's respawn was deleted. Mindy Starchild reached invincibility; Neka touches her, she freezes in ice, and eyes appear.
+
+### Beat 961 — ENTITY 12 VS ENTITY 75
+
+![Beat 961](screenshots/1023-entity-12-vs-entity-75.png)
+
+- Pup-pup-pup-pup-pup-Pupahya: a glowing 75, and Pupahya separates 6 and 7. Neka breaks the barrier, the 75 turns to 12, the calculator and calendar say 12, and crystal eyes open and make patterns. Neka beats Pupahya; halos surround him, 75 is ripped, and red glowing 12s appear everywhere, even on Pupahya's 75. Neka beats the other entities, wins his own game, and is feared by them all.
+
+### Beat 962 — FRONT MAN OF PRESSURE
+
+![Beat 962](screenshots/1024-front-man-of-pressure.png)
+
+- Neka Omazen is Front Man, Creator, Owner, and Admin of Pressure. Classics was consumed by Neka Omazen; he eats code, basically.
+
 ## 2026-10-01 — ANYTHING 12 / EVERYONE! DON'T BE AFRAID! (BEATS 958-959)
 
 Based on Toby's 2026-10-01 lore, 4:03 PM (`1a0f9106be70b925`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:

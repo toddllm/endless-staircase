@@ -1,0 +1,3 @@
+  if(c >= 20884.0 && c < 20906.0) return [962, c-20884.0];  // FRONT MAN OF PRESSURE
+  if(c >= 20862.0 && c < 20884.0) return [961, c-20862.0];  // ENTITY 12 VS ENTITY 75
+  if(c >= 20840.0 && c < 20862.0) return [960, c-20840.0];  // DAMAGE ITSELF NO LONGER EXISTS
