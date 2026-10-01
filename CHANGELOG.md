@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-01 — THE PRESSURE POWER INDEX (BEAT 957)
+
+Based on Toby's 2026-10-01 lore, 6:22 AM (`1a0f6fc78b08458b`, `1a0f6fc9229b24ac`, thread `1a0deee4cb24addb`; `1a0f6fd2e5fa0fbe`,
+new thread "New Document"). Only Toby's typing is drawn: "Did you know Fun Bot's mouth was turned upside down into a frown, and
+Pinki's whole face was ripped off?", "Gray is just like Fun Bot, Gray is like scared of the chaos. So hardly anyone survived Mr. Black.",
+"Now Pressure power levels, yeah it is all the Classics lore put together", and "Neka is his normal style. The game uses the PPI or
+whatever it is." The PPI numbers come from the chart he sent and adopted as the in-game scale; the chatbot's reasoning is not drawn.
+
+- LV_CYC 20774.0 -> 20796.0, LV_BEATS length 957 -> 958. New capture scene `power957`.
+  Screenshot 1018 (beat 956) recaptured so its beat ladder is current. Tools: `gen957.py`
+  (same `emit_tail933.py` template), `build957.py`.
+
+### Beat 957 — THE PRESSURE POWER INDEX
+
+![Beat 957](screenshots/1019-the-pressure-power-index.png)
+
+- Pressure uses the Pressure Power Index (PPI) in-game, and every Classics form stacks into it (EXE, PS, Winter, RL, Treatment, Neka Code). Oren.exe is 1000 PPI, then Simon 965, Gray 950, Wenda 920, Black 875, down to Mr. Tree at 365. Neka is ∞ PPI, Creator Tier. Neka keeps his normal style, human in a lab coat, while the 20 Sprunkis are simple neon. In Horror Mode Fun Bot's mouth turned upside down and Pinki's whole face was ripped off; Gray is scared of the chaos just like Fun Bot, and hardly anyone survived Mr. Black.
+
 ## 2026-09-30 — EVERYTHING CONNECTS TO PRESSURE (BEAT 956)
 
 Based on Toby's 2026-09-30 lore, 6:26 PM (`1a0f46d8bc182b33`, thread `1a0deee4cb24addb`). Only Toby's typing is drawn:
