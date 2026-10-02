@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 21126.0;
+const LV_CYC = 21148.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -13263,6 +13263,8 @@ const LV_BEATS = [
     sub:"“NEKA OMAZEN AFTER 7 DAYS COMES BACK UP, AND HE USES SMALL BARRAGES, THEN HE WALKS AWAY. GASTER WALKS INTO THE ROOM. THEN THE GAME HAPPENS TO CHANGE. THE MOST TERRIFYING ONE.” · AFTER 7 DAYS · SMALL BARRAGES · GASTER WALKS INTO THE ROOM · THE MOST TERRIFYING ONE. — TOBY, OCT 2, 6:40 AM, HIS OWN TYPING" },
   { key:"EVERYONE TO PRESSURETALE", col:'rgb(110,160,255)',
     sub:"“GASTER BATTLED PS-50 AND WON EASILY. AFTER, GASTER BECAME EXTREME, HE DELETED CLASSICS AND PRESSURE AND ALL THE OTHER GAMES, AND HE SENT EVERYONE TO PRESSURETALE.” · PARANOIDIA BARRAGE · GASTER VS PS-50 · GASTER BECAME EXTREME · GASTER CHANGED THE GAME HIMSELF. — TOBY, OCT 2, 4:51 PM, HIS OWN TYPING" },
+  { key:"THE PRESSURETALE INTRO SCREEN", col:'rgb(110,160,255)',
+    sub:"“SHOW A INTRO SCREEN THING OF PRESSURETALE, AS LIKE THEY HAVE ON MOST ROBLOX GAMES. PRESSING PLAY WILL GLITCH THE GAME AND YOU GET A 404 ERROR.” · [ PLAY ] · [ SETTINGS ] · [ CREDITS ] · THE INTRO SCREEN. GASTER IS ON IT. — TOBY, OCT 2, 5:23 AND 5:25 PM, HIS OWN TYPING" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15413,6 +15415,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 21126.0 && c < 21148.0) return [973, c-21126.0];  // THE PRESSURETALE INTRO SCREEN
   if(c >= 21104.0 && c < 21126.0) return [972, c-21104.0];  // EVERYONE TO PRESSURETALE
   if(c >= 21082.0 && c < 21104.0) return [971, c-21082.0];  // THE GAME HAPPENS TO CHANGE
   if(c >= 21060.0 && c < 21082.0) return [970, c-21060.0];  // I AM NOW... DEAD.
@@ -72967,6 +72970,153 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
     ctx.fillText('★ EVERYONE TO PRESSURETALE ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===973){
+    // BEAT 973: THE PRESSURETALE INTRO SCREEN.
+    // Toby, October 2, 2026, 5:23 AND 5:25 PM EDT, his own typing:
+    //   “SHOW A INTRO SCREEN THING OF PRESSURETALE,
+    //   AS LIKE THEY HAVE ON MOST ROBLOX GAMES.
+    //   PRESSING PLAY WILL GLITCH THE GAME AND YOU GET A 404 ERROR.”
+    // Priors, each verified in the archive before it was drawn:
+    //   [ PLAY ]
+    //     THE GAME GLITCHES.
+    //     404 ERROR.
+    //     PRESSING PLAY WILL GLITCH THE GAME.
+    //   [ SETTINGS ]
+    //     SAME AS THE PLAY.
+    //     404 ERROR.
+    //     OCT 2, BEAT 972: GASTER DELETED CLASSICS, PRESSURE AND ALL THE OTHER GAMES.
+    //   [ CREDITS ]
+    //     TOBY FOX FOR UNDERTALE AND DELTARUNE,
+    //     TOBY DESHANE AND CLAUDE AND CHATGPT AND OTHERS FOR LORE,
+    //     GAME BY PRESSURETALE GASTER
+    const dt = c - 21126.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr973=ctx.createLinearGradient(0,top+H,0,top);
+    gr973.addColorStop(0,'rgba(110,160,255,0.22)'); gr973.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr973.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr973; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(110,160,255,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('THE PRESSURETALE INTRO SCREEN', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“SHOW A INTRO SCREEN THING OF PRESSURETALE,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('AS LIKE THEY HAVE ON MOST ROBLOX GAMES.', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('PRESSING PLAY WILL GLITCH THE GAME AND YOU GET A 404 ERROR.”', cx, top+H*0.1760);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 2, 5:23 AND 5:25 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky973=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(110,160,255,0.46)';
+      ctx.fillRect(cx-W*0.352, ky973, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(110,160,255,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky973, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(110,160,255,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('[ PLAY ]', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE GAME GLITCHES.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('404 ERROR.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('PRESSING PLAY WILL GLITCH THE GAME.', cx, top+H*0.3580);
+    }
+
+    // Gaster on the intro screen (Toby: "with Gaster"), drawn in the middle band.
+    if(knA>0.01){
+      var gy973=top+H*0.4520, gs973=H*0.0500;
+      ctx.globalAlpha=g*knA*0.92; ctx.fillStyle='rgba(10,10,14,1)';
+      ctx.beginPath(); ctx.moveTo(cx-gs973*0.55, gy973+gs973*0.70); ctx.lineTo(cx+gs973*0.55, gy973+gs973*0.70);
+      ctx.lineTo(cx+gs973*1.35, gy973+gs973*2.05); ctx.lineTo(cx-gs973*1.35, gy973+gs973*2.05); ctx.closePath(); ctx.fill();
+      ctx.globalAlpha=g*knA*0.60; ctx.strokeStyle='rgba(110,160,255,0.80)'; ctx.lineWidth=0.35; ctx.stroke();
+      ctx.globalAlpha=g*knA; ctx.fillStyle='rgba(236,238,242,1)';
+      ctx.beginPath(); ctx.ellipse(cx, gy973, gs973*0.72, gs973, 0, 0, Math.PI*2); ctx.fill();
+      ctx.fillStyle='rgba(6,7,12,1)';
+      ctx.beginPath(); ctx.ellipse(cx-gs973*0.30, gy973-gs973*0.10, gs973*0.16, gs973*0.22, 0, 0, Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.ellipse(cx+gs973*0.30, gy973-gs973*0.10, gs973*0.16, gs973*0.22, 0, 0, Math.PI*2); ctx.fill();
+      ctx.fillStyle='rgba(110,160,255,'+(0.55+0.45*pul)+')';
+      ctx.beginPath(); ctx.arc(cx+gs973*0.30, gy973-gs973*0.10, gs973*0.06, 0, Math.PI*2); ctx.fill();
+      ctx.strokeStyle='rgba(6,7,12,1)'; ctx.lineWidth=0.6;
+      ctx.beginPath(); ctx.moveTo(cx+gs973*0.30, gy973-gs973*0.32); ctx.lineTo(cx+gs973*0.22, gy973-gs973*0.62); ctx.lineTo(cx+gs973*0.34, gy973-gs973*0.97); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cx-gs973*0.30, gy973+gs973*0.12); ctx.lineTo(cx-gs973*0.22, gy973+gs973*0.45); ctx.lineTo(cx-gs973*0.32, gy973+gs973*0.78); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cx-gs973*0.22, gy973+gs973*0.52); ctx.quadraticCurveTo(cx, gy973+gs973*0.66, cx+gs973*0.22, gy973+gs973*0.52); ctx.stroke();
+      ctx.globalAlpha=g*knA*0.90; ctx.fillStyle='rgba(168,176,190,0.92)'; ctx.font='700 3.5px ui-monospace,monospace';
+      ctx.fillText('GASTER', cx, gy973+gs973*2.0-1);
+      var gl973=(Math.sin(c*7.3)>0.86)?1:0;
+      if(gl973){ ctx.globalAlpha=g*knA*0.85; ctx.fillStyle='rgba(255,70,90,0.95)'; ctx.font='900 5.0px ui-monospace,monospace';
+        ctx.fillText('404', cx+gs973*2.4, gy973+gs973*(0.3+0.5*Math.sin(c*3.1))); }
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('[ SETTINGS ]', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SAME AS THE PLAY.', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('404 ERROR.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('OCT 2, BEAT 972: GASTER DELETED CLASSICS, PRESSURE AND ALL THE OTHER GAMES.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy973=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy973, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy973, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('[ CREDITS ]', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('TOBY FOX FOR UNDERTALE AND DELTARUNE,', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('TOBY DESHANE AND CLAUDE AND CHATGPT AND OTHERS FOR LORE,', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('GAME BY PRESSURETALE GASTER', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE INTRO SCREEN. GASTER IS ON IT.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('EVERYONE WAS SENT TO PRESSURETALE. THIS IS THE FIRST THING THEY SEE.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ THE PRESSURETALE INTRO SCREEN ★', cx, top+H*0.9380);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===814){

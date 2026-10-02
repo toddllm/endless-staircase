@@ -1,0 +1,1 @@
+  if(c >= 21126.0 && c < 21148.0) return [973, c-21126.0];  // THE PRESSURETALE INTRO SCREEN

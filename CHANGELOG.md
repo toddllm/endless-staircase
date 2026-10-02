@@ -4,6 +4,29 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-02 — THE PRESSURETALE INTRO SCREEN (BEAT 973)
+
+Based on Toby's 2026-10-02 lore, 5:23 PM and 5:25 PM (`1a0fe805e890b09b`, `1a0fe822b1b64aa4`, subject "Re: Document").
+Only Toby's typing is drawn: "Show a intro screen thing of Pressuretale, as like they have on most Roblox games." and
+"Pressing Play will glitch the game and you get a 404 error, Settings same as the play, and Credits it will say "Toby Fox
+for Undertale and Deltarune, Toby Deshane and Claude and ChatGPT and others for lore, Game by Pressuretale Gaster"." The
+bold lines and the button table under it are the chatbot's. The 5:31 PM message (`1a0fe87e4409a7e5`) only quoted the
+earlier ones, so it has no beat.
+
+- LV_CYC 21126.0 -> 21148.0, LV_BEATS length 973 -> 974. New capture scene `introscreen973`. Screenshots 1033 and 1034
+  recaptured so their beat ladders are current. Tools: `gen973.py` (same `emit_tail933.py` template), `gaster973.js`
+  (hand-drawn Gaster for the middle band), `build973.py`.
+
+### Beat 973 — THE PRESSURETALE INTRO SCREEN
+
+![Beat 973](screenshots/1035-the-pressuretale-intro-screen.png)
+
+- The Roblox-style title screen for Pressuretale, with Gaster in the middle: cracked white face, one blue eye, black cloak,
+  and a red 404 that flickers next to him.
+- [ PLAY ]: the game glitches, 404 error. [ SETTINGS ]: same as the play, 404 error.
+- [ CREDITS ]: "Toby Fox for Undertale and Deltarune, Toby Deshane and Claude and ChatGPT and others for lore, Game by
+  Pressuretale Gaster."
+
 ## 2026-10-02 — EVERYONE TO PRESSURETALE (BEAT 972)
 
 Based on Toby's 2026-10-02 lore, 4:51 PM (`1a0fe62e1477162d`, subject "Re: Document"). Only Toby's typing is drawn:
