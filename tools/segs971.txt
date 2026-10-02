@@ -1,0 +1,1 @@
+  if(c >= 21082.0 && c < 21104.0) return [971, c-21082.0];  // THE GAME HAPPENS TO CHANGE
