@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-02 — THE GAME HAPPENS TO CHANGE (BEAT 971)
+
+Based on Toby's 2026-10-02 lore, 6:40 AM (`1a0fc33719c1061e`, subject "Re: Document"). Only Toby's typing is drawn:
+"Neka Omazen after 7 days comes back up, and he uses small barrages, then he walks away. Gaster walks into the room.
+Then the game happens to change. The most terrifying one." The italic retelling under it is the chatbot's.
+
+- LV_CYC 21082.0 -> 21104.0, LV_BEATS length 971 -> 972. New capture scene `changes971`. Screenshots 1031 and 1032
+  recaptured so their beat ladders are current. Tools: `gen971.py` (same `emit_tail933.py` template), `build971.py`.
+
+### Beat 971 — THE GAME HAPPENS TO CHANGE
+
+![Beat 971](screenshots/1033-the-game-happens-to-change.png)
+
+- Answers the Oct 1 question: Neka's death was not permanent. After 7 days he comes back up.
+- He uses only small barrages, not Paranoidia, then walks away.
+- Gaster walks into the room, and the game changes into the most terrifying one. What it becomes is not revealed yet.
+
 ## 2026-10-01 — PRESSURETALE / I AM NOW... DEAD. (BEATS 969-970)
 
 Based on Toby's 2026-10-01 lore, 7:27 PM (`1a0f9cb82996f580`, subject "Document"). Only Toby's typing is drawn: the
