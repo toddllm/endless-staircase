@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-02 — EVERYONE TO PRESSURETALE (BEAT 972)
+
+Based on Toby's 2026-10-02 lore, 4:51 PM (`1a0fe62e1477162d`, subject "Re: Document"). Only Toby's typing is drawn:
+"Neka Omazen then walked to the heroes, and he makes Paranoidia Barrage. The heroes didn't survive. PS-50 and Gaster
+survived. Gaster battled PS-50 and won easily. Then is the stuff in the document happened. After, Gaster became extreme,
+he deleted Classics and Pressure and all the other games, and he sent EVERYONE to Pressuretale." The italic line, the
+numbered sequence and the uranium details under it are the chatbot's.
+
+- LV_CYC 21104.0 -> 21126.0, LV_BEATS length 972 -> 973. New capture scene `pressuretale972`. Screenshots 1032 and 1033
+  recaptured so their beat ladders are current. Tools: `gen972.py` (same `emit_tail933.py` template), `build972.py`.
+
+### Beat 972 — EVERYONE TO PRESSURETALE
+
+![Beat 972](screenshots/1034-everyone-to-pressuretale.png)
+
+- Answers the Oct 2 morning question: Gaster changes the game himself.
+- Neka's Paranoidia Barrage takes out the heroes; only PS-50 and Gaster survive. Gaster beats PS-50 easily.
+- Gaster becomes extreme, deletes Classics, Pressure and every other game, and sends everyone to Pressuretale.
+
 ## 2026-10-02 — THE GAME HAPPENS TO CHANGE (BEAT 971)
 
 Based on Toby's 2026-10-02 lore, 6:40 AM (`1a0fc33719c1061e`, subject "Re: Document"). Only Toby's typing is drawn:

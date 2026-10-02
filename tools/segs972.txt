@@ -1,0 +1,1 @@
+  if(c >= 21104.0 && c < 21126.0) return [972, c-21104.0];  // EVERYONE TO PRESSURETALE
