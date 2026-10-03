@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — PYCHO FURY (BEAT 981)
+
+Based on Toby's 2026-10-03 lore, 3:17 PM (`1a103331d9556397`, subject "Re: Document"). Only Toby's own first paragraph is
+drawn; the italic recap and the link summary under it are the chatbot's. His 3:34 PM message (`1a10342e57e59ad9`) is a
+chatbot image prompt for Gaster using Pychotethicalicia, so it gets no beat.
+
+![Beat 981](screenshots/1043-pycho-fury.png)
+
+- LV_CYC 21302.0 -> 21324.0, LV_BEATS length 981 -> 982. New capture scene `pycho981`. Tools: `gen981.py`
+  (same `emit_tail933.py` template), `build981.py`. Recaptured `1042-comical-neka.png` at the new length (ladder window).
+- Gaster does not give power to anyone else. He takes it and keeps it.
+- Pycho Fury is "the thing in this thing" (his Glitchtale fight link) times Pressuretale Gaster's power.
+- Pycho Fury is even more powerful than Gaster's own power.
+
 ## 2026-10-03 — COMICAL NEKA (BEAT 980)
 
 Based on Toby's 2026-10-03 lore, 3:07 PM (`1a1032a0fa300c46`, subject "Re: Document"). Only Toby's own first paragraph is
