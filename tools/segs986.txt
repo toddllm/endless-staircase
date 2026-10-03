@@ -1,0 +1,2 @@
+  if(c >= 21434.0 && c < 21456.0) return [987, c-21434.0];  // BORT'S LEAP
+  if(c >= 21412.0 && c < 21434.0) return [986, c-21412.0];  // STARING CONTEST

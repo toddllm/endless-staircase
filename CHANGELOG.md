@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — STARING CONTEST + BORT'S LEAP (BEATS 986-987)
+
+Based on Toby's 2026-10-03 lore, 4:50 PM (`1a103882cade8094`), 4:58 PM (`1a1038ff83dc7db2`) and 5:00 PM
+(`1a10391e9438d07a`), subject "Re: Document". Toby's own lines: "Create Gaster with PS-50 Pressuretale Gaster and PS-50,
+holding Bort", "Who would win in a staring contest? Gaster or Luigi?", and his 5:00 PM verdict ("Luigi Inus would make a
+feeling in Gaster, Gaster will keep staring. Gaster wins ... Bort jumps on Gaster, Gaster easily throws Bort down, Bort
+turns to normal, PS-50 grabs Bort, Bort dances and makes the tune"). The paragraph after the 4:58 question reads like a
+pasted chatbot answer and is commentary.
+
+![Beat 986](screenshots/1048-staring-contest.png)
+![Beat 987](screenshots/1049-borts-leap.png)
+
+- LV_CYC 21412.0 -> 21456.0, two new LV_BEATS rows. New capture scenes `stare986`, `leap987`. Tools: `gen986.py`
+  (same `emit_tail933.py` template), `build986.py`.
+- 986 Staring Contest: Luigi Inus / PS-50 holds Bort and stares; her gaze makes a feeling in Gaster. Both can blink,
+  so composure decides it, and Gaster wins by holding his stare.
+- 987 Bort's Leap: Bort jumps on Gaster, gets thrown down and turns back to normal; PS-50 picks him up and he dances
+  and plays the tune again.
+
 ## 2026-10-03 — EVERYTHING WITHIN (BEAT 985)
 
 Based on Toby's 2026-10-03 lore, 4:08 PM (`1a10362185e144b9`, subject "Re: Document"). Only Toby's own top paragraph is
