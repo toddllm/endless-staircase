@@ -4,6 +4,19 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — NIL:DESTROY() (BEAT 983)
+
+Based on Toby's 2026-10-03 lore, 3:43 PM (`1a1034b0f4a25d2d`, subject "Re: Document"). Only Toby's own paragraph through
+`nil:Destroy()` is drawn; the italic explanation of the corrupted code under it is the chatbot's.
+
+![Beat 983](screenshots/1045-nil-destroy.png)
+
+- LV_CYC 21346.0 -> 21368.0, LV_BEATS length 983 -> 984. New capture scene `nil983`. Tools: `gen983.py`
+  (same `emit_tail933.py` template), `build983.py`. Recaptured `1042`-`1044` at the new length (ladder window).
+- `if 4=5 then 2=2 game:Destroy()`: it calculates 4=5, then it does it.
+- `Error=true then end end end...` with brackets that never match: all the broken code, errors, bugs and glitches are in the game now.
+- `Void:Destroy()` then `if Void~nil then nil:Destroy()`: the void goes, then nothing itself.
+
 ## 2026-10-03 — GAME:DESTROY() (BEAT 982)
 
 Based on Toby's 2026-10-03 lore, 3:40 PM (`1a103485055a1f0e`, subject "Re: Document"). Only Toby's own paragraph through the
