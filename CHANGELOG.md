@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — BORT’S TUNE, AND PS-50 WALKS ON AIR (BEAT 974)
+
+Based on Toby's 2026-10-03 lore, 6:01 AM (`1a101367f6b395b3`, subject "Re: Document"). Only Toby's first paragraph is
+drawn: Bort's theme song that the washing machine and everything else plays, the horror form, the 666-minute chase,
+Gaster beating Oren.ps and everyone else, summoning the Undertale characters, and PS-50 walking on air. The italic recap
+under it is the chatbot's.
+
+- LV_CYC 21148.0 -> 21170.0, LV_BEATS length 974 -> 975. New capture scene `bort974`. Screenshots 1034 and 1035
+  recaptured so their beat ladders are current. Tools: `gen974.py` (same `emit_tail933.py` template), `build974.py`.
+
+### Beat 974 — BORT’S TUNE, AND PS-50 WALKS ON AIR
+
+![Beat 974](screenshots/1036-borts-tune-and-ps-50-walks-on-air.png)
+
+- Bort dances and sings his Bort-Theme song; the washing machine plays it too. You can't unhear it.
+- PS-50 touches him, Bort becomes horror, PS-50 makes a Luigi scream and runs. After 666 minutes Bort stops and she
+  carries him back to Gaster.
+- Gaster blasts a hand at Oren.ps, beats everyone else, and summons all the Undertale characters.
+- Gaster holds PS-50, drops PS-50, and she walks on air instead of falling to the floor.
+
 ## 2026-10-02 — THE PRESSURETALE INTRO SCREEN (BEAT 973)
 
 Based on Toby's 2026-10-02 lore, 5:23 PM and 5:25 PM (`1a0fe805e890b09b`, `1a0fe822b1b64aa4`, subject "Re: Document").
