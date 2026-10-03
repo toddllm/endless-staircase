@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — COME... + SOUL COMBINATION (BEATS 988-989)
+
+Based on Toby's 2026-10-03 lore, 5:12 PM (`1a1039ce95c463b2`), subject "Re: Document". Toby's own lines: "Chara
+constantly battles Frisk. Gaster says "Come...", and a purple glow fills his eyes, and then a green forcefield appears
+... Gaster then summons a large hand, boom Pupahya is crushed" and "the souls combining to make 1 huge soul that summons
+a giant hand, that is the attack he used to beat Pupahya, Soul Combination Technique". The table after his paragraph
+reads like a pasted chatbot summary and is commentary. The 5:36 PM message (`1a103b2bc768cde3`) is an image request
+only, so no beat.
+
+![Beat 988](screenshots/1050-come.png)
+![Beat 989](screenshots/1051-soul-combination.png)
+
+- LV_CYC 21456.0 -> 21500.0, two new LV_BEATS rows. New capture scenes `come988`, `soul989`. Tools: `gen988.py`
+  (same `emit_tail933.py` template), `build988.py`.
+- 988 Come...: Gaster's eyes glow purple, a green forcefield stops Frisk and Chara from both sides and dissolves into
+  pixels; Pupahya runs at light speed until a blue saw stops him, teal strings throw him down, and a giant hand crushes him.
+- 989 Soul Combination: the soul attack family (Omni-Soul Barrage, Omni-Soul Storm, Soul Storm Barrage, The Omniverse
+  Soul, Soul Combination Technique), Pychotethicalicia going beyond the souls, and the Pychopathical Barrage Attack as
+  his strongest attack.
+
 ## 2026-10-03 — STARING CONTEST + BORT'S LEAP (BEATS 986-987)
 
 Based on Toby's 2026-10-03 lore, 4:50 PM (`1a103882cade8094`), 4:58 PM (`1a1038ff83dc7db2`) and 5:00 PM
