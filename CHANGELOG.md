@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — ONLY ONE CHOICE (BEAT 991)
+
+Based on Toby's 2026-10-03 lore, 5:59 PM (`1a103c7d85e4f9e4`), subject "Re: Document". Toby's own lines: "Frisk equips
+Heart Locket, Chara equips Real Knife, both charge again, Gaster says "No. You both need to stay where you are. There is
+only one choice here.", then he summons a large hand ... Frisk sent rocks at Chara, Chara dodges and slashes the rocks
+apart, still more and more." The italic retelling after his paragraph reads like a pasted chatbot rewrite and is
+commentary.
+
+![Beat 991](screenshots/1053-only-one-choice.png)
+
+- LV_CYC 21522.0 -> 21544.0, one new LV_BEATS row. New capture scene `choice991`. Tools: `gen991.py`, `build991.py`.
+- 991 Only One Choice: Frisk (Heart Locket) and Chara (Real Knife) charge again; Gaster tells them there is only one
+  choice, summons a large hand, slams his fists so rocks float and large hands reach in. Frisk throws rocks at Chara,
+  Chara slashes them apart, and Gaster cannot hold them in place.
+
 ## 2026-10-03 — TWO BEINGS (BEAT 990)
 
 Based on Toby's 2026-10-03 lore, 5:38 PM (`1a103b437c77148d`), subject "Re: Document". Toby's own lines: "Frisk and
