@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — GAME:DESTROY() (BEAT 982)
+
+Based on Toby's 2026-10-03 lore, 3:40 PM (`1a103485055a1f0e`, subject "Re: Document"). Only Toby's own paragraph through the
+code line is drawn; the italic recap and the Lua note under it are the chatbot's. The code panel shows the first 80 of his
+481 binary digits.
+
+![Beat 982](screenshots/1044-game-destroy.png)
+
+- LV_CYC 21324.0 -> 21346.0, LV_BEATS length 982 -> 983. New capture scene `destroy982`. Tools: `gen982.py`
+  (same `emit_tail933.py` template), `build982.py`. Recaptured `1042` and `1043` at the new length (ladder window).
+- In Pressuretale it is far larger, and Neka Omazen is absorbed into Gaster.
+- Blues, reds, purples: attacks from every game, every character, everything combined.
+- A Gaster Blaster consumes the game and it gives a 404 error.
+- Pressure Gaster's code ends with `if 404 then 404=true game:Destroy()`.
+
 ## 2026-10-03 — PYCHO FURY (BEAT 981)
 
 Based on Toby's 2026-10-03 lore, 3:17 PM (`1a103331d9556397`, subject "Re: Document"). Only Toby's own first paragraph is
