@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — JUST A GUY (BEAT 979)
+
+Based on Toby's 2026-10-03 lore, 2:29 PM (`1a10307193fa4ad5`, subject "Re: Document"). The message mixes Toby's own lines with
+chatbot replies; only Toby's lines are drawn.
+
+![Beat 979](screenshots/1041-just-a-guy.png)
+
+- LV_CYC 21258.0 -> 21280.0, LV_BEATS length 979 -> 980. New capture scene `guy979`. Tools: `gen979.py`
+  (same `emit_tail933.py` template), `build979.py`.
+- Gaster made the X Classics games too, not only Pressuretale.
+- His Pycho attack KOs everything, including god.
+- The ladder: Absolute Infinity = Absolute < Beyond Absolute+, times itself, forever < Neka Omazen < Gaster.
+  The top number is named "The Number of Neka Omazen's power".
+- Gaster absorbed Neka and kept his own power, making Pressuretale Gaster the most powerful Gaster.
+- And he looks like just a guy.
+
 ## 2026-10-03 — I'M SO TIRED... (BEAT 978)
 
 Based on Toby's 2026-10-03 lore, 12:56 PM (`1a102b23e22ca024`, subject "Re: Document"). Only Toby's own first paragraph is
