@@ -4,6 +4,19 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — TWO BEINGS (BEAT 990)
+
+Based on Toby's 2026-10-03 lore, 5:38 PM (`1a103b437c77148d`), subject "Re: Document". Toby's own lines: "Frisk and
+Chara are 2 different beings, but Chara sometimes takes control of Frisk. Chara beats everyone, Frisk goes nice with
+everyone. Pacifist VS Genocide, but sometimes Neutral." The bullet list after it reads like a pasted chatbot summary
+and is commentary.
+
+![Beat 990](screenshots/1052-two-beings.png)
+
+- LV_CYC 21500.0 -> 21522.0, one new LV_BEATS row. New capture scene `beings990`. Tools: `gen990.py`, `build990.py`.
+- 990 Two Beings: Frisk (Pacifist, kind to everyone) and Chara (Genocide, beats everyone) are separate, but Chara
+  sometimes takes control of Frisk; Neutral is when the choices mix. The fight is over who controls the route.
+
 ## 2026-10-03 — COME... + SOUL COMBINATION (BEATS 988-989)
 
 Based on Toby's 2026-10-03 lore, 5:12 PM (`1a1039ce95c463b2`), subject "Re: Document". Toby's own lines: "Chara
