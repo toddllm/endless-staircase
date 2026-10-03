@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — INFINITY LINES (BEAT 984)
+
+Based on Toby's 2026-10-03 lore, 4:07 PM (`1a10361537b08544`, subject "Re: Document"). Only Toby's own lines are drawn
+("there is far more, like thousands more lines of code" and "in the actual game, it has infinity lines, you just gave the
+first 5,547"); the binary fragment and the 5,547-line file are the chatbot's replies.
+
+![Beat 984](screenshots/1046-infinity-lines.png)
+
+- LV_CYC 21368.0 -> 21390.0, LV_BEATS length 984 -> 985. New capture scene `lines984`. Tools: `gen984.py`
+  (same `emit_tail933.py` template), `build984.py`.
+- Gaster's canon code: the binary and `if 404 then 404=true game:Destroy()` are only the start.
+- Thousands more lines: line 5,547 is not the last line.
+- Line ∞: the file ends, the code does not. Gaster's code has no final line.
+
 ## 2026-10-03 — NIL:DESTROY() (BEAT 983)
 
 Based on Toby's 2026-10-03 lore, 3:43 PM (`1a1034b0f4a25d2d`, subject "Re: Document"). Only Toby's own paragraph through

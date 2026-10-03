@@ -1,0 +1,1 @@
+  if(c >= 21368.0 && c < 21390.0) return [984, c-21368.0];  // INFINITY LINES
