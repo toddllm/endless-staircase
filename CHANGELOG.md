@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — I'M SO TIRED... (BEAT 978)
+
+Based on Toby's 2026-10-03 lore, 12:56 PM (`1a102b23e22ca024`, subject "Re: Document"). Only Toby's own first paragraph is
+drawn; the italic recap under it is the chatbot's. His 12:46 PM message (`1a102a8f3db9b504`) is a chatbot-written Gemini video
+prompt that retells beat 976, so it gets no beat of its own and is referenced in panel 1 only.
+
+![Beat 978](screenshots/1040-im-so-tired.png)
+
+- LV_CYC 21236.0 -> 21258.0, LV_BEATS length 978 -> 979. New capture scene `tired978`. Tools: `gen978.py`
+  (same `emit_tail933.py` template), `build978.py`.
+- The result: after Pychotethicalicia, Gaster says "I'm so tired...", falls over and sleeps.
+- Shown as もう疲れた…… with Toby's English under it, since Pressuretale is all Japanese (beat 977).
+- Gaster stands alone in the black void and absorbs the color, turning the void white.
+- Neka was tired and asleep before; now Neka is inside Gaster (beat 976), and Gaster sleeps.
+
 ## 2026-10-03 — GASTER MADE IT ALL HAPPEN, PYCHOTETHICALICIA, PRESSURETALE IS ALL JAPANESE (BEATS 975-977)
 
 Based on Toby's 2026-10-03 lore, 6:22 AM, 6:33 AM and 6:34 AM (`1a10149ce81384ce`, `1a1015390a12cd2c`,
