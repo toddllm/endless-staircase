@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — COMICAL NEKA (BEAT 980)
+
+Based on Toby's 2026-10-03 lore, 3:07 PM (`1a1032a0fa300c46`, subject "Re: Document"). Only Toby's own first paragraph is
+drawn; the italic recap under it is the chatbot's. His 2:45 PM message (`1a1031610ab80eba`) is a chatbot image prompt for
+Gaster's design, so it gets no beat.
+
+![Beat 980](screenshots/1042-comical-neka.png)
+
+- LV_CYC 21280.0 -> 21302.0, LV_BEATS length 980 -> 981. New capture scene `neka980`. Tools: `gen980.py`
+  (same `emit_tail933.py` template), `build980.py`. Recaptured `1041-just-a-guy.png` at the new length (ladder window).
+- The entity behind Gaster is Neka Omazen.
+- The biggest and strongest of all the game collisions makes Comical Neka.
+- Gaster absorbs Comical Neka with all his forms and power, all added to Gaster.
+- That makes Pressuretale Gaster the most powerful and strongest being.
+
 ## 2026-10-03 — JUST A GUY (BEAT 979)
 
 Based on Toby's 2026-10-03 lore, 2:29 PM (`1a10307193fa4ad5`, subject "Re: Document"). The message mixes Toby's own lines with
