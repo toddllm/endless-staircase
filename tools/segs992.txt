@@ -1,0 +1,2 @@
+  if(c >= 21566.0 && c < 21588.0) return [993, c-21566.0];  // SPEEDRUNS
+  if(c >= 21544.0 && c < 21566.0) return [992, c-21544.0];  // ENOUGH FIGHTING

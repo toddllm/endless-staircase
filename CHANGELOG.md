@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — ENOUGH FIGHTING + SPEEDRUNS (BEATS 992-993)
+
+Based on Toby's 2026-10-03 lore, 6:27 PM (`1a103e1655060a28`) and 6:30 PM (`1a103e466a3b02ca`), subject "Re: Document".
+Toby's own lines: "Gaster says "Enough fighting... now, lets just get to the point." ... Gaster runs to Frisk and blocks
+the knifes with a green shield. Gaster fires 2 huge blasters, both Frisk and Chara are beaten by Gaster." and "he walks
+to Neka and says "Here am I, myself.", Neka glows, Gaster says "I think I am doing great at the speedruns." ... he never
+stops gaining power and LV and stuff." The italic retellings after each paragraph read like pasted chatbot rewrites and
+are commentary.
+
+![Beat 992](screenshots/1054-enough-fighting.png)
+
+![Beat 993](screenshots/1055-speedruns.png)
+
+- LV_CYC 21544.0 -> 21588.0, two new LV_BEATS rows. New capture scenes `fight992`, `speed993`. Tools: `gen992.py`,
+  `build992.py`.
+- 992 Enough Fighting: Gaster summons flying knives, Chara throws them at Frisk, Gaster blocks them with a green shield,
+  then fires two huge blasters and defeats both Frisk and Chara.
+- 993 Speedruns: Gaster walks to Neka ("Here am I, myself."), Neka glows; several runs are played and Pressuretale
+  Gaster wins every one, gaining power and LV each time. "I think I am doing great at the speedruns."
+
 ## 2026-10-03 — ONLY ONE CHOICE (BEAT 991)
 
 Based on Toby's 2026-10-03 lore, 5:59 PM (`1a103c7d85e4f9e4`), subject "Re: Document". Toby's own lines: "Frisk equips
