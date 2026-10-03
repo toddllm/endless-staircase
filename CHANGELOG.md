@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — GASTER MADE IT ALL HAPPEN, PYCHOTETHICALICIA, PRESSURETALE IS ALL JAPANESE (BEATS 975-977)
+
+Based on Toby's 2026-10-03 lore, 6:22 AM, 6:33 AM and 6:34 AM (`1a10149ce81384ce`, `1a1015390a12cd2c`,
+`1a101546e1d66215`, subject "Re: Document"). Only Toby's own first paragraph in each message is drawn; the italic recaps
+under them are the chatbot's. The Japanese line in beat 977 is the chatbot's translation of the line Toby asked to appear
+in Japanese, and is labelled with its English.
+
+- LV_CYC 21170.0 -> 21236.0, LV_BEATS length 975 -> 978. New capture scenes `gaster975`, `pycho976`, `japanese977`.
+  Screenshot 1036 recaptured so its beat ladder is current. Tools: `gen975.py` (same `emit_tail933.py` template),
+  `build975.py`.
+
+### Beat 975 — GASTER MADE IT ALL HAPPEN
+
+![Beat 975](screenshots/1037-gaster-made-it-all-happen.png)
+
+- Gaster's upgrades: Oren.ps gains Oren 666, Oren 404 and the 404 strings; Simon.ps holds a larger sword with both hands;
+  Wenda.ps and Gray.ps gain erase and extra speed.
+- Simon.ps's Firey Delight: a ring of fire made from fiction that turns things to chocolate. He can stop Mr. Black's
+  corruption, so Mr. Black takes him down; Sky.ps and the survivors take down Mr. Black, who gets a human face.
+- Jevin's face brings bad luck, Pinki's song slows everyone down, PS-50 walks on air and dances, Brud and Durple battle.
+  Then everyone fights Gaster, and Gaster won.
+
+### Beat 976 — PYCHOTETHICALICIA
+
+![Beat 976](screenshots/1038-pychotethicalicia.png)
+
+- Mr. Black sets himself in Phase 666. Oren.ps rules the void. Gaster takes the Undertale characters into the void.
+- A large 12 appears; Neka Omazen grows tentacles, his feet strapped down by vines, his cloak covered in eyes and holes,
+  then goes inside Gaster.
+- Pychotethicalicia, stronger than Paranoidia: "Is that all? Then... IT'S MY TURN." Hands and blasters larger than the
+  omniverse. It shuts down the game forever to everyone else, and Gaster is the only one left.
+
+### Beat 977 — PRESSURETALE IS ALL JAPANESE
+
+![Beat 977](screenshots/1039-pressuretale-is-all-japanese.png)
+
+- Correction to beat 973: Pressuretale has no English at all, reason: Gaster.
+- The title screen buttons in Japanese (プレイ, 設定, クレジット); Play and Settings still glitch to エラー 404.
+- Gaster's line 「今度こそ逃がさない！」 (You won't escape this time!).
+
 ## 2026-10-03 — BORT’S TUNE, AND PS-50 WALKS ON AIR (BEAT 974)
 
 Based on Toby's 2026-10-03 lore, 6:01 AM (`1a101367f6b395b3`, subject "Re: Document"). Only Toby's first paragraph is
