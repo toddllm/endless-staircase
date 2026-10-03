@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — EVERYTHING WITHIN (BEAT 985)
+
+Based on Toby's 2026-10-03 lore, 4:08 PM (`1a10362185e144b9`, subject "Re: Document"). Only Toby's own top paragraph is
+drawn ("Gaster contains Classics, Pressure, all Classics games, and every being in fiction, and fiction itself"); the
+quoted text below it is the earlier thread.
+
+![Beat 985](screenshots/1047-everything-within.png)
+
+- LV_CYC 21390.0 -> 21412.0, LV_BEATS length 985 -> 986. New capture scene `everything985`. Tools: `gen985.py`
+  (same `emit_tail933.py` template), `build985.py`.
+- The games: Classics, Pressure, and every Classics game are inside Pressuretale Gaster.
+- Every being: every fictional being, including Neka Omazen and all his absorbed forms and power.
+- Fiction itself: the framework that holds their stories is held by him. His infinite code holds all of it.
+
 ## 2026-10-03 — INFINITY LINES (BEAT 984)
 
 Based on Toby's 2026-10-03 lore, 4:07 PM (`1a10361537b08544`, subject "Re: Document"). Only Toby's own lines are drawn
