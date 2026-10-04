@@ -1,0 +1,1 @@
+  if(c >= 21588.0 && c < 21610.0) return [994, c-21588.0];  // GAME OVER BUTTON

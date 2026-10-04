@@ -4,6 +4,20 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-03 — GAME OVER BUTTON (BEAT 994)
+
+Based on Toby's 2026-10-03 lore, 8:04 PM (`1a1043a0cc924156`), subject "Re: Document".
+Toby's own line: "Gaster picks up a reset button, then everything resets, Gaster changed the reset to a "Game Over"
+button, he presses it, and he wins." The italic retelling after it reads like a pasted chatbot rewrite and is commentary.
+It answers the beat 993 question (does anything reset between runs): the reset itself does, and Gaster rewrites it.
+
+![Beat 994](screenshots/1056-game-over-button.png)
+
+- LV_CYC 21588.0 -> 21610.0, one new LV_BEATS row. New capture scene `over994`. Tools: `gen994.py`, `build994.py`.
+- 994 Game Over Button: Gaster picks up the RESET button and everything resets; he rewrites the button to
+  「ゲームオーバー」 (Game Over), presses it again, and the run ends with his win. Even the button that could restart
+  the battle now lets him finish it.
+
 ## 2026-10-03 — ENOUGH FIGHTING + SPEEDRUNS (BEATS 992-993)
 
 Based on Toby's 2026-10-03 lore, 6:27 PM (`1a103e1655060a28`) and 6:30 PM (`1a103e466a3b02ca`), subject "Re: Document".
