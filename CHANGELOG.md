@@ -4,6 +4,28 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-04 — ONE ON ONE + BLUE, RED, PURPLE (BEATS 995-996)
+
+Based on Toby's 2026-10-04 lore, 8:11 AM (`1a106d41d7a46f57`), 8:12 AM (`1a106d4a9c1e7d43`), 8:13 AM
+(`1a106d5660873f09`), 8:14 AM (`1a106d674454ebc0`) and 8:36 AM (`1a106ea7566a206b`), subject "Re: Document".
+Toby's own lines: "Pressuretale Gaster is a pro at Pressuretale, he can beat any one, but when 2 or more are together,
+he can lose." ... "Gaster VS Simon.ps and Oren.ps (who wins)" ... "Gaster VS Neka Omazen (who wins)" ... "Even fighting
+1v1 on the gods' avatar, Gaster wins." ... "Nothing can escape Blue attacks, Nothing can touch Red attacks, Purple
+attacks have both effects. Gaster uses all 3, Sans and Papyrus use only Blue and Red attacks." The italic answers after
+each line read like pasted chatbot rewrites and are commentary.
+
+![Beat 995](screenshots/1057-one-on-one.png)
+
+![Beat 996](screenshots/1058-blue-red-purple.png)
+
+- LV_CYC 21610.0 -> 21654.0, two new LV_BEATS rows. New capture scenes `team995`, `colors996`. Tools: `gen995.py`,
+  `build995.py`. Beat 994's screenshot recaptured (the beat rail shifted).
+- 995 One On One: Gaster beats anyone alone (Neka Omazen, even the gods' avatar), but two or more together can beat
+  him; Simon.ps (lightning, error strings, resets) with Oren.ps (sword, telekinesis) could win, unless Gaster splits
+  them up. A team win is possible, not guaranteed.
+- 996 Blue, Red, Purple: nothing can escape Blue, nothing can touch Red, Purple has both. Sans and Papyrus use Blue
+  and Red; only Gaster uses all three.
+
 ## 2026-10-03 — GAME OVER BUTTON (BEAT 994)
 
 Based on Toby's 2026-10-03 lore, 8:04 PM (`1a1043a0cc924156`), subject "Re: Document".

@@ -1,0 +1,2 @@
+  if(c >= 21632.0 && c < 21654.0) return [996, c-21632.0];  // BLUE, RED, PURPLE
+  if(c >= 21610.0 && c < 21632.0) return [995, c-21610.0];  // ONE ON ONE
