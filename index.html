@@ -11354,7 +11354,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 21654.0;
+const LV_CYC = 21896.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -13311,6 +13311,28 @@ const LV_BEATS = [
     sub:"“HE CAN BEAT ANY ONE, BUT WHEN 2 OR MORE ARE TOGETHER, HE CAN LOSE.” · 1 VS GASTER · 2 VS GASTER · THE CATCH · A PRESSURETALE PRO. — TOBY, OCT 4, 8:11 AM, HIS OWN TYPING" },
   { key:"BLUE, RED, PURPLE", col:'rgb(190,110,255)',
     sub:"“NOTHING CAN ESCAPE BLUE ATTACKS, NOTHING CAN TOUCH RED ATTACKS.” · BLUE · RED · PURPLE · SANS AND PAPYRUS HAVE TWO COLORS. — TOBY, OCT 4, 8:36 AM, HIS OWN TYPING" },
+  { key:"BLACK/WHITE", col:'rgb(225,225,235)',
+    sub:"“INSTEAD OF BREAKING STUFF, IT STORES EVERYTHING INSIDE IT.” · BLACK/WHITE · ALL COLORS · THE VOID · BEYOND PULLING AND REPELLING. — TOBY, OCT 4, 8:43 AM, HIS OWN TYPING" },
+  { key:"INTO THE STOMACH", col:'rgb(150,95,215)',
+    sub:"“REALITY ITSELF LITERALLY GETS STORED IN, IT HAS INFINITE SPACE.” · THE ENTRANCE · INFINITE SPACE · FUEL · THE VOID IS A DOOR — TOBY, OCT 4, 8:46 AM, HIS OWN TYPING" },
+  { key:"SANS AND PAPYRUS", col:'rgb(255,130,120)',
+    sub:"“I NEED THE SOULS TO MAKE ME CONTINUE ON.” · THE PULL · HANDS VS BLASTERS · TWO VS ONE · THE TEAM RULE HOLDS. — TOBY, OCT 4, 8:56 AM, HIS OWN TYPING" },
+  { key:"ONE RED, ONE BLUE", col:'rgb(200,120,255)',
+    sub:"“ONE RED, ONE BLUE. THERE NEEDS TO BE ONE OF EACH.” · THE PAIR · ALONE, OR MORE THAN TWO · PHASES · NEKA: “GA-STER... I’M TIRED...” — TOBY, OCT 4, 2:43 PM, HIS OWN TYPING" },
+  { key:"WHILE HE SLEEPS", col:'rgb(120,170,235)',
+    sub:"“GASTER IS STILL CURRENTLY SLEEPING HERE. BASICALLY ANYTHING IS INDESTRUCTIBLE.” · STILL ASLEEP · INDESTRUCTIBLE · WHY HE SLEEPS · A QUIET STRETCH — TOBY, OCT 4, 6:24 PM, HIS OWN TYPING" },
+  { key:"PARANOIDIA", col:'rgb(235,70,90)',
+    sub:"“PARANOIA VS PARANOIDIA, PS-50 WINS.” · SCP-053 · PHOTOS AND MIRRORS · THE MIRROR · GASTER IS BASICALLY THE ONLY ONE IMMUNE. — TOBY, OCT 4, 6:42 PM, HIS OWN TYPING" },
+  { key:"IT IS ME", col:'rgb(90,220,210)',
+    sub:"“HELLO, GASTER. IT IS ME. YOURSELF.” · THE CARTOON GASTER · THE MOUTH · #### ###### · “I AM YOU, I AM GASTER.” — TOBY, OCT 5, 4:27 PM, HIS OWN TYPING" },
+  { key:"VACUUM OF CODE", col:'rgb(120,230,140)',
+    sub:"“IS THAT ALL? THEN IT’S MY TURN. YOU WON’T ESCAPE THIS TIME!” · SHIELD:DESTROY() · THE LONGEST BATTLE · THE ULTIMATE VACUUM OF CODE · TO BE CONTINUED. — TOBY, OCT 5, 5:14 PM, HIS OWN TYPING" },
+  { key:"I PLANNED IT", col:'rgb(255,170,70)',
+    sub:"“I PLANNED YOU TO BEAT ME.” · THE CLASH · INFINITY PARA-FURIES · 20,000 DROPKICK · “I NOW HAVE THE SCRAPS AND THE ATTACKS.” — TOBY, OCT 5, 5:33 PM, HIS OWN TYPING" },
+  { key:"RHABDOPHOBIA", col:'rgb(210,90,60)',
+    sub:"“RHABDOPHOBIA.” THE FEAR OF BEING SEVERELY BEATEN. · EVERYONE HAS IT · THE MECH · TELEKINESIS · THE SCRAPS BECAME A BIGGER MACHINE. — TOBY, OCT 5, 7:30 PM, HIS OWN TYPING" },
+  { key:"HELLO ME", col:'rgb(245,245,250)',
+    sub:"“YOU ARE ME.” “I AM YOU. HELLO ME.” · THE 50 YEAR BATTLE · THE URINITE · THE MERGE · NOT TWO ANYMORE. — TOBY, OCT 5, 7:34 PM, HIS OWN TYPING" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15461,6 +15483,17 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 21874.0 && c < 21896.0) return [1007, c-21874.0];  // HELLO ME
+  if(c >= 21852.0 && c < 21874.0) return [1006, c-21852.0];  // RHABDOPHOBIA
+  if(c >= 21830.0 && c < 21852.0) return [1005, c-21830.0];  // I PLANNED IT
+  if(c >= 21808.0 && c < 21830.0) return [1004, c-21808.0];  // VACUUM OF CODE
+  if(c >= 21786.0 && c < 21808.0) return [1003, c-21786.0];  // IT IS ME
+  if(c >= 21764.0 && c < 21786.0) return [1002, c-21764.0];  // PARANOIDIA
+  if(c >= 21742.0 && c < 21764.0) return [1001, c-21742.0];  // WHILE HE SLEEPS
+  if(c >= 21720.0 && c < 21742.0) return [1000, c-21720.0];  // ONE RED, ONE BLUE
+  if(c >= 21698.0 && c < 21720.0) return [999, c-21698.0];  // SANS AND PAPYRUS
+  if(c >= 21676.0 && c < 21698.0) return [998, c-21676.0];  // INTO THE STOMACH
+  if(c >= 21654.0 && c < 21676.0) return [997, c-21654.0];  // BLACK/WHITE
   if(c >= 21632.0 && c < 21654.0) return [996, c-21632.0];  // BLUE, RED, PURPLE
   if(c >= 21610.0 && c < 21632.0) return [995, c-21610.0];  // ONE ON ONE
   if(c >= 21588.0 && c < 21610.0) return [994, c-21588.0];  // GAME OVER BUTTON
@@ -75948,6 +75981,1304 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
     ctx.fillText('★ BLUE, RED, PURPLE ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===997){
+    // BEAT 997: BLACK/WHITE.
+    // Toby, October 4, 2026, 8:43 AM EDT, his own typing:
+    //   “INSTEAD OF BREAKING STUFF,
+    //   IT STORES EVERYTHING INSIDE IT.”
+    // Priors, each verified in the archive before it was drawn:
+    //   BLACK/WHITE
+    //     ONE ABILITY.
+    //     IT STORES, IT DOES NOT BREAK.
+    //     ONLY GASTER HAS IT.
+    //   ALL COLORS
+    //     BLACK/WHITE PLUS BLUE,
+    //     RED, PURPLE AND THE REST.
+    //     COMBINED INTO ONE TECHNIQUE.
+    //   THE VOID
+    //     THE SPACE OF
+    //     REALITY AND TIME.
+    //     HIS OWN TECHNIQUE.
+    const dt = c - 21654.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr997=ctx.createLinearGradient(0,top+H,0,top);
+    gr997.addColorStop(0,'rgba(225,225,235,0.22)'); gr997.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr997.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr997; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(225,225,235,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('BLACK/WHITE', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“INSTEAD OF BREAKING STUFF,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('IT STORES EVERYTHING INSIDE IT.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 8:43 AM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky997=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(225,225,235,0.46)';
+      ctx.fillRect(cx-W*0.352, ky997, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(225,225,235,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky997, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(225,225,235,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('BLACK/WHITE', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('ONE ABILITY.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('IT STORES, IT DOES NOT BREAK.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('ONLY GASTER HAS IT.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('ALL COLORS', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BLACK/WHITE PLUS BLUE,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('RED, PURPLE AND THE REST.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('COMBINED INTO ONE TECHNIQUE.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy997=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy997, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy997, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THE VOID', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE SPACE OF', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('REALITY AND TIME.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('HIS OWN TECHNIQUE.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('BEYOND PULLING AND REPELLING.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('WHAT IT CATCHES, IT KEEPS.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ BLACK/WHITE ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===998){
+    // BEAT 998: INTO THE STOMACH.
+    // Toby, October 4, 2026, 8:46 AM EDT, his own typing:
+    //   “REALITY ITSELF LITERALLY GETS STORED IN,
+    //   IT HAS INFINITE SPACE.”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE ENTRANCE
+    //     THE VOID LEADS INTO
+    //     PRESSURETALE GASTER’S STOMACH.
+    //     STORED, NOT DESTROYED.
+    //   INFINITE SPACE
+    //     CLASSICS, PRESSURE, BEINGS,
+    //     SPACE AND TIME ALL FIT.
+    //     IT NEVER GETS FULL.
+    //   FUEL
+    //     WHAT HE ABSORBS
+    //     BECOMES ENERGY AND FUEL.
+    //     MORE INSIDE, MORE POWER.
+    const dt = c - 21676.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr998=ctx.createLinearGradient(0,top+H,0,top);
+    gr998.addColorStop(0,'rgba(150,95,215,0.22)'); gr998.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr998.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr998; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(150,95,215,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('INTO THE STOMACH', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“REALITY ITSELF LITERALLY GETS STORED IN,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('IT HAS INFINITE SPACE.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 8:46 AM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky998=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(150,95,215,0.46)';
+      ctx.fillRect(cx-W*0.352, ky998, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(150,95,215,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky998, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(150,95,215,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE ENTRANCE', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE VOID LEADS INTO', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PRESSURETALE GASTER’S STOMACH.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('STORED, NOT DESTROYED.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('INFINITE SPACE', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('CLASSICS, PRESSURE, BEINGS,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SPACE AND TIME ALL FIT.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('IT NEVER GETS FULL.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy998=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy998, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy998, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('FUEL', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('WHAT HE ABSORBS', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BECOMES ENERGY AND FUEL.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('MORE INSIDE, MORE POWER.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE VOID IS A DOOR', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('INTO GASTER HIMSELF.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ INTO THE STOMACH ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===999){
+    // BEAT 999: SANS AND PAPYRUS.
+    // Toby, October 4, 2026, 8:56 AM EDT, his own typing:
+    //   “I NEED THE SOULS
+    //   TO MAKE ME CONTINUE ON.”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE PULL
+    //     BLACK/WHITE PULLS LIKE A BLACK HOLE.
+    //     SANS: “WE DON’T HAVE TO FIGHT ABOUT THAT!”
+    //     SANS HITS. “WE DO ABOUT THAT!”
+    //   HANDS VS BLASTERS
+    //     GASTER SUMMONS HANDS.
+    //     SANS SUMMONS BLASTERS, AND PAPYRUS.
+    //     GASTER GASPS.
+    //   TWO VS ONE
+    //     THE TWO OF THEM
+    //     MAKE GASTER SO TIRED.
+    //     SANS STRIKES HIM DOWN.
+    const dt = c - 21698.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr999=ctx.createLinearGradient(0,top+H,0,top);
+    gr999.addColorStop(0,'rgba(255,130,120,0.22)'); gr999.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr999.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr999; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(255,130,120,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('SANS AND PAPYRUS', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“I NEED THE SOULS', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('TO MAKE ME CONTINUE ON.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 8:56 AM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky999=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(255,130,120,0.46)';
+      ctx.fillRect(cx-W*0.352, ky999, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(255,130,120,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky999, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(255,130,120,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE PULL', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BLACK/WHITE PULLS LIKE A BLACK HOLE.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SANS: “WE DON’T HAVE TO FIGHT ABOUT THAT!”', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SANS HITS. “WE DO ABOUT THAT!”', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('HANDS VS BLASTERS', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('GASTER SUMMONS HANDS.', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SANS SUMMONS BLASTERS, AND PAPYRUS.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('GASTER GASPS.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy999=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy999, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy999, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('TWO VS ONE', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE TWO OF THEM', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('MAKE GASTER SO TIRED.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SANS STRIKES HIM DOWN.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE TEAM RULE HOLDS.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('SANS AND PAPYRUS WIN TOGETHER.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ SANS AND PAPYRUS ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1000){
+    // BEAT 1000: ONE RED, ONE BLUE.
+    // Toby, October 4, 2026, 2:43 PM EDT, his own typing:
+    //   “ONE RED, ONE BLUE.
+    //   THERE NEEDS TO BE ONE OF EACH.”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE PAIR
+    //     EXACTLY TWO: ONE RED, ONE BLUE.
+    //     UNDYNE RED, ALPHYS BLUE. ANYONE CAN.
+    //     ONLY THEN CAN GASTER LOSE.
+    //   ALONE, OR MORE THAN TWO
+    //     PURPLE AND WHITE/BLACK
+    //     MAKE YOU VULNERABLE.
+    //     GASTER WINS.
+    //   PHASES
+    //     PS-50, BORT AND THE 20 SPRUNKIS: PHASE 2.
+    //     NEKA, THE SPRUNKIS, GASTER: INFINITE.
+    //     PS-50 HOLDS BORT.
+    const dt = c - 21720.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1000=ctx.createLinearGradient(0,top+H,0,top);
+    gr1000.addColorStop(0,'rgba(200,120,255,0.22)'); gr1000.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1000.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1000; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(200,120,255,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('ONE RED, ONE BLUE', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“ONE RED, ONE BLUE.', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THERE NEEDS TO BE ONE OF EACH.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 2:43 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1000=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(200,120,255,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1000, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(200,120,255,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1000, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(200,120,255,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE PAIR', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('EXACTLY TWO: ONE RED, ONE BLUE.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('UNDYNE RED, ALPHYS BLUE. ANYONE CAN.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('ONLY THEN CAN GASTER LOSE.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('ALONE, OR MORE THAN TWO', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PURPLE AND WHITE/BLACK', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('MAKE YOU VULNERABLE.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('GASTER WINS.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1000=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1000, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1000, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('PHASES', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PS-50, BORT AND THE 20 SPRUNKIS: PHASE 2.', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('NEKA, THE SPRUNKIS, GASTER: INFINITE.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('PS-50 HOLDS BORT.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('NEKA: “GA-STER... I’M TIRED...”', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('GASTER COLLAPSES, CLOSES HIS EYES, AND SLEEPS.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ ONE RED, ONE BLUE ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1001){
+    // BEAT 1001: WHILE HE SLEEPS.
+    // Toby, October 4, 2026, 6:24 PM EDT, his own typing:
+    //   “GASTER IS STILL CURRENTLY SLEEPING HERE.
+    //   BASICALLY ANYTHING IS INDESTRUCTIBLE.”
+    // Priors, each verified in the archive before it was drawn:
+    //   STILL ASLEEP
+    //     GASTER SLEEPS.
+    //     PS-50 WATCHES, HOLDING BORT.
+    //     NOBODY WAKES HIM.
+    //   INDESTRUCTIBLE
+    //     WHILE HE SLEEPS,
+    //     BASICALLY NOTHING CAN BREAK.
+    //     NOT EVEN BY BLACK/WHITE.
+    //   WHY HE SLEEPS
+    //     SANS AND PAPYRUS TIRED HIM OUT.
+    //     THE NEKA INSIDE HIM WAS TIRED TOO.
+    //     ONE TIRED, BOTH SLEEP.
+    const dt = c - 21742.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1001=ctx.createLinearGradient(0,top+H,0,top);
+    gr1001.addColorStop(0,'rgba(120,170,235,0.22)'); gr1001.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1001.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1001; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(120,170,235,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('WHILE HE SLEEPS', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“GASTER IS STILL CURRENTLY SLEEPING HERE.', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('BASICALLY ANYTHING IS INDESTRUCTIBLE.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 6:24 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1001=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(120,170,235,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1001, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(120,170,235,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1001, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(120,170,235,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('STILL ASLEEP', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('GASTER SLEEPS.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PS-50 WATCHES, HOLDING BORT.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('NOBODY WAKES HIM.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('INDESTRUCTIBLE', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('WHILE HE SLEEPS,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BASICALLY NOTHING CAN BREAK.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('NOT EVEN BY BLACK/WHITE.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1001=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1001, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1001, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('WHY HE SLEEPS', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SANS AND PAPYRUS TIRED HIM OUT.', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE NEKA INSIDE HIM WAS TIRED TOO.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('ONE TIRED, BOTH SLEEP.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('A QUIET STRETCH', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('IN THE PRESSURETALE.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ WHILE HE SLEEPS ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1002){
+    // BEAT 1002: PARANOIDIA.
+    // Toby, October 4, 2026, 6:42 PM EDT, his own typing:
+    //   “PARANOIA VS PARANOIDIA,
+    //   PS-50 WINS.”
+    // Priors, each verified in the archive before it was drawn:
+    //   SCP-053
+    //     HER PARANOIA HITS PEOPLE
+    //     WHO SEE HER, TOUCH HER, OR STAY.
+    //     PS-50 IS IMMUNE TO IT.
+    //   PHOTOS AND MIRRORS
+    //     SEE PS-50 IN A PHOTO OR A MIRROR,
+    //     OR GET SEEN BY HER IMAGE:
+    //     YOU GET PARANOIDIA. 053 TOO.
+    //   THE MIRROR
+    //     PS-50 LOOKS AT HERSELF.
+    //     STALEMATE.
+    //     SHE IS VERY STRONG AND STRICT.
+    const dt = c - 21764.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1002=ctx.createLinearGradient(0,top+H,0,top);
+    gr1002.addColorStop(0,'rgba(235,70,90,0.22)'); gr1002.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1002.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1002; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(235,70,90,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('PARANOIDIA', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“PARANOIA VS PARANOIDIA,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('PS-50 WINS.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 6:42 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1002=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(235,70,90,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1002, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(235,70,90,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1002, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(235,70,90,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('SCP-053', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('HER PARANOIA HITS PEOPLE', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('WHO SEE HER, TOUCH HER, OR STAY.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('PS-50 IS IMMUNE TO IT.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('PHOTOS AND MIRRORS', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SEE PS-50 IN A PHOTO OR A MIRROR,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('OR GET SEEN BY HER IMAGE:', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('YOU GET PARANOIDIA. 053 TOO.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1002=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1002, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1002, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THE MIRROR', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PS-50 LOOKS AT HERSELF.', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('STALEMATE.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SHE IS VERY STRONG AND STRICT.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('GASTER IS BASICALLY THE ONLY ONE IMMUNE.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('PS-50 EVEN BEAT MINDY STARCHILD.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ PARANOIDIA ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1003){
+    // BEAT 1003: IT IS ME.
+    // Toby, October 5, 2026, 4:27 PM EDT, his own typing:
+    //   “HELLO, GASTER. IT IS ME.
+    //   YOURSELF.”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE CARTOON GASTER
+    //     /enemy_health = 0
+    //     enemy:Destroy()
+    //     BLUE SAWS. EVEN THE SPRUNKIS FALL.
+    //   THE MOUTH
+    //     A TOOTHED CODE TUBE FROM HIS CHEST.
+    //     “THE DATA AND CODE ARE DELICIOUS.”
+    //     THE WHOLE ARMY: CONSUMED.
+    //   #### ######
+    //     NEKA OMAZEN,
+    //     AS A CARTOON GASTER.
+    //     TEAL STRINGS. A STORM OF SAWS.
+    const dt = c - 21786.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1003=ctx.createLinearGradient(0,top+H,0,top);
+    gr1003.addColorStop(0,'rgba(90,220,210,0.22)'); gr1003.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1003.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1003; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(90,220,210,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('IT IS ME', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“HELLO, GASTER. IT IS ME.', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('YOURSELF.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 4:27 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1003=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(90,220,210,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1003, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(90,220,210,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1003, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(90,220,210,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE CARTOON GASTER', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('/enemy_health = 0', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('enemy:Destroy()', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('BLUE SAWS. EVEN THE SPRUNKIS FALL.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE MOUTH', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('A TOOTHED CODE TUBE FROM HIS CHEST.', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE DATA AND CODE ARE DELICIOUS.”', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('THE WHOLE ARMY: CONSUMED.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1003=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1003, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1003, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('#### ######', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('NEKA OMAZEN,', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AS A CARTOON GASTER.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TEAL STRINGS. A STORM OF SAWS.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“I AM YOU, I AM GASTER.”', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('“NO! I AM GASTER!”', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ IT IS ME ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1004){
+    // BEAT 1004: VACUUM OF CODE.
+    // Toby, October 5, 2026, 5:14 PM EDT, his own typing:
+    //   “IS THAT ALL? THEN IT’S MY TURN.
+    //   YOU WON’T ESCAPE THIS TIME!”
+    // Priors, each verified in the archive before it was drawn:
+    //   SHIELD:DESTROY()
+    //     NEKA WRITES IT. GASTER IS DESTROYED,
+    //     THEN RESETS HIMSELF.
+    //     POLYCYCROPLASM, PARANOIDIA, PARA-FURY.
+    //   THE LONGEST BATTLE
+    //     THOUSANDS OF YEARS. FORMS, CLONES,
+    //     SPRUNKIS, BEDS, BOOKS, A WRENCH.
+    //     THEY SLEEP 666 YEARS, THEN CONTINUE.
+    //   THE ULTIMATE VACUUM OF CODE
+    //     THE MALLOW + WENDA.PS’S SUIT,
+    //     THEN 20 YEARS MAKING IT STRONGER.
+    //     THE HAND WHO SPEAKS IN MAN(S).
+    const dt = c - 21808.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1004=ctx.createLinearGradient(0,top+H,0,top);
+    gr1004.addColorStop(0,'rgba(120,230,140,0.22)'); gr1004.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1004.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1004; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(120,230,140,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('VACUUM OF CODE', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“IS THAT ALL? THEN IT’S MY TURN.', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('YOU WON’T ESCAPE THIS TIME!”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 5:14 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1004=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(120,230,140,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1004, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(120,230,140,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1004, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(120,230,140,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('SHIELD:DESTROY()', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('NEKA WRITES IT. GASTER IS DESTROYED,', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THEN RESETS HIMSELF.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('POLYCYCROPLASM, PARANOIDIA, PARA-FURY.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE LONGEST BATTLE', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THOUSANDS OF YEARS. FORMS, CLONES,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('SPRUNKIS, BEDS, BOOKS, A WRENCH.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('THEY SLEEP 666 YEARS, THEN CONTINUE.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1004=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1004, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1004, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THE ULTIMATE VACUUM OF CODE', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE MALLOW + WENDA.PS’S SUIT,', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THEN 20 YEARS MAKING IT STRONGER.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THE HAND WHO SPEAKS IN MAN(S).', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('TO BE CONTINUED.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('NEKA AT 1 HP. GASTER FACING THE VACUUM.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ VACUUM OF CODE ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1005){
+    // BEAT 1005: I PLANNED IT.
+    // Toby, October 5, 2026, 5:33 PM EDT, his own typing:
+    //   “I PLANNED YOU TO BEAT ME.”
+    //   
+    // Priors, each verified in the archive before it was drawn:
+    //   THE CLASH
+    //     HANDS VS MEN. CODE FALLS
+    //     AND TURNS INTO MINI GASTERS.
+    //     THE VACUUM CONSUMES IT, LIKE ALWAYS.
+    //   INFINITY PARA-FURIES
+    //     GASTER BECOMES A VOID OF EYES,
+    //     AND MAKES HIMSELF SO MANY TIMES.
+    //     THE VACUUM SHATTERS.
+    //   20,000 DROPKICK
+    //     A THOUSAND KJS. LARGE ARMS.
+    //     THE SUIT IS TORN APART.
+    //     NEKA SHOWS. NO MORE MECHA SUIT.
+    const dt = c - 21830.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1005=ctx.createLinearGradient(0,top+H,0,top);
+    gr1005.addColorStop(0,'rgba(255,170,70,0.22)'); gr1005.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1005.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1005; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(255,170,70,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('I PLANNED IT', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“I PLANNED YOU TO BEAT ME.”', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 5:33 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1005=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(255,170,70,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1005, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(255,170,70,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1005, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(255,170,70,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE CLASH', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('HANDS VS MEN. CODE FALLS', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AND TURNS INTO MINI GASTERS.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THE VACUUM CONSUMES IT, LIKE ALWAYS.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('INFINITY PARA-FURIES', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('GASTER BECOMES A VOID OF EYES,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AND MAKES HIMSELF SO MANY TIMES.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('THE VACUUM SHATTERS.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1005=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1005, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1005, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('20,000 DROPKICK', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('A THOUSAND KJS. LARGE ARMS.', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE SUIT IS TORN APART.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('NEKA SHOWS. NO MORE MECHA SUIT.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“I NOW HAVE THE SCRAPS AND THE ATTACKS.”', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('GASTER SCREAMS.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ I PLANNED IT ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1006){
+    // BEAT 1006: RHABDOPHOBIA.
+    // Toby, October 5, 2026, 7:30 PM EDT, his own typing:
+    //   “RHABDOPHOBIA.”
+    //   THE FEAR OF BEING SEVERELY BEATEN.
+    // Priors, each verified in the archive before it was drawn:
+    //   EVERYONE HAS IT
+    //     CLASSICS, PRESSURE, ALL THE GAMES.
+    //     IN THE GAMES, BEATEN MEANS DEATH.
+    //     NEKA SAYS THE WORD.
+    //   THE MECH
+    //     BUILT FROM HIS OWN SOURCES.
+    //     BOTH ARMS ARE VACUUMS.
+    //     EVEN LARGER THAN THE SUIT.
+    //   TELEKINESIS
+    //     NEKA CONTROLS IT WITH
+    //     THE STRONGEST TELEKINESIS.
+    //     IN ALL OF FICTION.
+    const dt = c - 21852.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1006=ctx.createLinearGradient(0,top+H,0,top);
+    gr1006.addColorStop(0,'rgba(210,90,60,0.22)'); gr1006.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1006.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1006; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(210,90,60,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('RHABDOPHOBIA', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“RHABDOPHOBIA.”', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE FEAR OF BEING SEVERELY BEATEN.', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 7:30 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1006=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(210,90,60,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1006, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(210,90,60,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1006, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(210,90,60,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('EVERYONE HAS IT', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('CLASSICS, PRESSURE, ALL THE GAMES.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('IN THE GAMES, BEATEN MEANS DEATH.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('NEKA SAYS THE WORD.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE MECH', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BUILT FROM HIS OWN SOURCES.', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BOTH ARMS ARE VACUUMS.', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('EVEN LARGER THAN THE SUIT.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1006=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1006, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1006, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('TELEKINESIS', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('NEKA CONTROLS IT WITH', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE STRONGEST TELEKINESIS.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('IN ALL OF FICTION.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE SCRAPS BECAME A BIGGER MACHINE.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('EVERYONE FEARS BEING BEATEN.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ RHABDOPHOBIA ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1007){
+    // BEAT 1007: HELLO ME.
+    // Toby, October 5, 2026, 7:34 PM EDT, his own typing:
+    //   “YOU ARE ME.”
+    //   “I AM YOU. HELLO ME.”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE 50 YEAR BATTLE
+    //     GASTER VS THE MECH. SAWS EVERYWHERE.
+    //     GASTER WINS AGAIN.
+    //     THE MECH AND THE LAB: DESTROYED.
+    //   THE URINITE
+    //     “YOUR URINITE RAN OFF.”
+    //     “IT WON’T RUN OFF!” “IT DID.”
+    //     NEKA: “HUH, WHAT HAPPENED HERE?”
+    //   THE MERGE
+    //     NEKA AND GASTER MERGE INTO
+    //     THE ACTUAL PRESSURETALE GASTER.
+    //     A VERY SIMPLE CARTOON DESIGN.
+    const dt = c - 21874.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1007=ctx.createLinearGradient(0,top+H,0,top);
+    gr1007.addColorStop(0,'rgba(245,245,250,0.22)'); gr1007.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1007.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1007; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(245,245,250,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('HELLO ME', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“YOU ARE ME.”', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“I AM YOU. HELLO ME.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 4, 7:34 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1007=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(245,245,250,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1007, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(245,245,250,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1007, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(245,245,250,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE 50 YEAR BATTLE', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('GASTER VS THE MECH. SAWS EVERYWHERE.', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('GASTER WINS AGAIN.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THE MECH AND THE LAB: DESTROYED.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE URINITE', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“YOUR URINITE RAN OFF.”', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“IT WON’T RUN OFF!” “IT DID.”', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('NEKA: “HUH, WHAT HAPPENED HERE?”', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1007=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1007, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1007, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THE MERGE', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('NEKA AND GASTER MERGE INTO', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE ACTUAL PRESSURETALE GASTER.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('A VERY SIMPLE CARTOON DESIGN.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('NOT TWO ANYMORE.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('ONE GASTER.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ HELLO ME ★', cx, top+H*0.9380);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===814){

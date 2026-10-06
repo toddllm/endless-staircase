@@ -1,0 +1,5 @@
+  if(c >= 21874.0 && c < 21896.0) return [1007, c-21874.0];  // HELLO ME
+  if(c >= 21852.0 && c < 21874.0) return [1006, c-21852.0];  // RHABDOPHOBIA
+  if(c >= 21830.0 && c < 21852.0) return [1005, c-21830.0];  // I PLANNED IT
+  if(c >= 21808.0 && c < 21830.0) return [1004, c-21808.0];  // VACUUM OF CODE
+  if(c >= 21786.0 && c < 21808.0) return [1003, c-21786.0];  // IT IS ME

@@ -1,0 +1,3 @@
+  if(c >= 21698.0 && c < 21720.0) return [999, c-21698.0];  // SANS AND PAPYRUS
+  if(c >= 21676.0 && c < 21698.0) return [998, c-21676.0];  // INTO THE STOMACH
+  if(c >= 21654.0 && c < 21676.0) return [997, c-21654.0];  // BLACK/WHITE

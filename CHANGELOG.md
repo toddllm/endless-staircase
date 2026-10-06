@@ -4,6 +4,58 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-05 — BLACK/WHITE THROUGH HELLO ME (BEATS 997-1007)
+
+Based on Toby's 2026-10-04 lore, 8:43 AM (`1a106f1558407e92`), 8:46 AM (`1a106f3e45f710f4`), 8:47 AM
+(`1a106f4d9efde089`), 8:56 AM (`1a106fce750ee104`), 2:43 PM (`1a1083a685945706`), 6:24 PM (`1a10905514240317`),
+6:42 PM (`1a1091520d058990`), and 2026-10-05 lore, 4:27 PM (`1a10dbfd1783e609`), 4:28 PM (`1a10dc10c2a857ca`),
+5:14 PM (`1a10deacdec1b936`), 5:33 PM (`1a10dfc9a89f8b4e`), 7:30 PM (`1a10e6809b2be449`) and 7:34 PM
+(`1a10e6b59e2e6a6b`), subject "Re: Document". Image requests (Oct 4 9:00 AM, 6:23 PM; Oct 5 5:25 PM, 7:40 PM) are
+no beat. The italic retellings after Toby's lines read like pasted chatbot rewrites and are commentary; the phobia
+A-Z list and the SCP-053 summary are pasted reference, and only Toby's own rules on top of them are drawn.
+Toby's own lines include: "instead of breaking stuff, it stores everything INSIDE it." ... "ONE red, ONE blue." ...
+"Basically anything is indestructible." ... "Paranoia VS Paranoidia, PS-50 wins." ... "Hello, Gaster. It is me.
+Yourself." ... "The Ultimate Vacuum of Code." ... "I planned you to beat me" ... "Rhabdophobia" ... "I am you. Hello me."
+
+![Beat 997](screenshots/1059-black-white.png)
+
+![Beat 1000](screenshots/1062-one-red-one-blue.png)
+
+![Beat 1004](screenshots/1066-vacuum-of-code.png)
+
+![Beat 1007](screenshots/1069-hello-me.png)
+
+- LV_CYC 21654.0 -> 21896.0, eleven new LV_BEATS rows. New capture scenes `void997`, `stomach998`, `team999`,
+  `red1000`, `sleep1001`, `para1002`, `me1003`, `vacuum1004`, `plan1005`, `rhabdo1006`, `hello1007`. Tools:
+  `gen997.py`/`build997.py` (built Oct 4, shipped now), `gen1000.py`, `gen1003.py`, `build1000.py`. All eleven
+  screenshots are `screenshots/1059-*` through `1069-*`.
+- 997 Black/White: one ability that stores instead of breaking; only Gaster has it; combined with all colors it
+  becomes his own technique, The Void, the space of reality and time.
+- 998 Into the Stomach: the Void leads into Pressuretale Gaster's stomach, infinite space, and what he absorbs
+  becomes energy and fuel.
+- 999 Sans and Papyrus: Black/White pulls like a black hole; "I need the souls to make me continue on."; Sans and
+  Papyrus together tire Gaster out and Sans strikes him down.
+- 1000 One Red, One Blue: the winning team is exactly two, one Red and one Blue (Undyne Red, Alphys Blue, anyone
+  can); alone or more than two, Gaster wins. PS-50, Bort and the 20 Sprunkis have Phase 2s; Neka, the Sprunkis and
+  Gaster have infinite phases. Neka: "Ga-ster... I'm tired...", and Gaster falls asleep.
+- 1001 While He Sleeps: Gaster is still asleep, PS-50 watches holding Bort, and basically anything is
+  indestructible.
+- 1002 Paranoidia: PS-50 is immune to SCP-053's paranoia, but 053 can get Paranoidia; seeing PS-50 in a photo or
+  mirror (or being seen by her image) spreads it; PS-50 in a mirror is a stalemate; Gaster is basically the only one
+  immune, and PS-50 even beat Mindy Starchild.
+- 1003 It Is Me: a cartoony Gaster writes "/enemy_health = 0 enemy:Destroy()", beats Simon.ps, opens a toothed
+  code tube in his chest and consumes the army. It is Neka Omazen ("#### ######"). Teal strings bind Gaster in a
+  storm of saws.
+- 1004 Vacuum of Code: "Shield:Destroy()", Gaster resets, Polycycroplasm into Paranoidia into Para-fury brings Neka
+  to 1 HP; the thousand-year battle (666-year nap included); the mallow plus Wenda.ps's suit plus 20 years becomes
+  the Ultimate Vacuum of Code. To be continued.
+- 1005 I Planned It: code falls into mini Gasters, Infinity Para-furies shatter the vacuum, the 20,000 Dropkick tears
+  the suit apart. "I planned you to beat me." Gaster screams.
+- 1006 Rhabdophobia: the fear of being severely beaten, which everyone in the games has; Neka builds The Mech, larger,
+  both arms vacuums, run by the strongest telekinesis in fiction.
+- 1007 Hello Me: Gaster beats The Mech after 50 years; "Your Urinite ran off."; "You are me." "I am you. Hello me."
+  Neka and Gaster merge into the actual Pressuretale Gaster, a very simple cartoon design.
+
 ## 2026-10-04 — ONE ON ONE + BLUE, RED, PURPLE (BEATS 995-996)
 
 Based on Toby's 2026-10-04 lore, 8:11 AM (`1a106d41d7a46f57`), 8:12 AM (`1a106d4a9c1e7d43`), 8:13 AM
