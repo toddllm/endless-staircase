@@ -1,0 +1,2 @@
+  if(c >= 23018.0 && c < 23040.0) return [1059, c-23018.0];  // NEKA GOES WITH LUIGI INUS
+  if(c >= 22996.0 && c < 23018.0) return [1058, c-22996.0];  // NO ONE IS UNDERGROUND ANYMORE

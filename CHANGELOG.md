@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — NO ONE IS UNDERGROUND ANYMORE AND NEKA GOES WITH LUIGI INUS (BEATS 1058-1059)
+
+Based on Toby's 2026-10-10 lore, 11:25 AM (`1a1266b803727c2f`) and 11:30 AM (`1a1266fee7003085`), thread "Another
+Document" (`1a1204179c8e973f`). Only his own lines are drawn. 11:25 AM: "Neka and Luigi Inus both walk. Neka beats more
+and more characters on surface, Luigi Inus gets the gold on both surface and underground. Because no one is underground
+anymore." 11:30 AM: "That is one reason why Neka wiped out the whole underground of lives, he also did it for LV. Luigi
+Inus can get all the gold in both spots, Luigi Inus has all the Cat Power now, Neka has all the LV now. So Neka would go
+with Luigi Inus. Neka finally finished erasing the Overworld in lives." The italic retellings under each paragraph are
+the chatbot's and are commentary.
+
+![Beat 1058](screenshots/1120-no-one-is-underground-anymore.png)
+
+![Beat 1059](screenshots/1121-neka-goes-with-luigi-inus.png)
+
+- LV_CYC 22996.0 -> 23040.0, two new LV_BEATS rows (1058-1059). New capture scenes `b1058`, `b1059`. Tools:
+  `gen1058.py`, `build1058.py` (template `emit_tail1008.py`).
+  Probe: `len=1060 maxPh=1059 holes=0 undefSeg=0 missing=0 err=0 draws=1148`.
+- Beat 1058 priors: Oct 9, 7:45 PM "Neka and Luigi walk together" (beats 1046-1048); Oct 9, 4:09 PM "Neka beaten all
+  8.6 billion beings in the Overworld + the animals"; Sept 8, 5:04 PM "Luigi Green gives WD boxes of gold"; Oct 9,
+  7:39 PM Luigi "sailed across the 7 seas, looking for powerful artifacts".
+- Beat 1059 priors: Oct 9, 4:09 PM Neka resets every run to gain "more and more LOVE"; Oct 10, 9:47 AM "Neka LAI is
+  still getting LV" and "Then Luigi Inus gained max cat power" (beats 1056-1057); Oct 9, 7:35 PM "Luigi/Pirate is the
+  most powerful besides Neka", with Neka neutral and Luigi the main villain (Oct 9, 4:09-4:47 PM roles).
+
 ## 2026-10-10 — UNTRINUIM CAPIBUIM AND MAX CAT POWER (BEATS 1056-1057)
 
 Based on Toby's 2026-10-10 lore, 9:47 AM (`1a12612260448947`), thread "Another Document" (`1a1204179c8e973f`).
