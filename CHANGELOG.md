@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — SHIFTED NEKA THROUGH THE INVINCIBILITY CUBE (BEATS 1008-1052)
+
+Based on Toby's 2026-10-06 through 2026-10-10 lore: 61 messages on threads "Re: Document" (`1a0f9cb82996f580`),
+its Gmail split (`1a12024dfbc6a081`) and "Another Document" (`1a1204179c8e973f`), Oct 6 5:51 AM to Oct 10 7:23 AM.
+Six image requests, the Oct 6 5:58 PM ranking question and the Oct 8 7:07 PM "error in message stream" note are no beat.
+The italic retellings after Toby's lines read like pasted chatbot rewrites and are commentary. Toby's own lines include:
+"Many try to delete Neka, it always failed. It gives a 404 error, like you are trying to delete nothing." ... "Neka says "Center's mine."" ... "Once you enter Classics, he perminentally becomes your boss." ... ""D0n'T L3av3", his text glitches when he is angry" ... "The new game is called Neka NOT tale, it is not Nekatale, it is Neka NOT tale." ... "Then the Pirate says "Hello, I am Luigi Inus.", then he takes over the game" ... "of course don't fight someone who is godmode."
+
+![Beat 1008](screenshots/1070-shifted-neka.png)
+
+![Beat 1033](screenshots/1095-d0nt-l3av3.png)
+
+![Beat 1045](screenshots/1107-neka-not-tale.png)
+
+![Beat 1052](screenshots/1114-the-invincibility-cube.png)
+
+- LV_CYC 21896.0 -> 22886.0, 45 new LV_BEATS rows (1008-1052). Each beat card now carries its own date line.
+  New capture scenes `b1008` ... `b1052`. Tools: `gen1008.py`, `emit_tail1008.py` (per-beat dates), `build1008.py`.
+- Screenshots 1070-1114 added; 1065-1069 recaptured because the ladder window moved.
+- Not built: Toby's Endless Staircase 2 (Infinite Hallway, Gaster with arrow-key blocks) and his ask to put
+  Endless Staircase 1 back up. Those are Todd's call; beat 1021 records the hallway and its four keys.
+- Fetcher gap found: `fetch_new.py` only looks back `newer_than:3d` with `maxResults: 30`, so the Oct 6-8 mail
+  was invisible to it. This run pulled the full range directly.
+
 ## 2026-10-05 — BLACK/WHITE THROUGH HELLO ME (BEATS 997-1007)
 
 Based on Toby's 2026-10-04 lore, 8:43 AM (`1a106f1558407e92`), 8:46 AM (`1a106f3e45f710f4`), 8:47 AM
