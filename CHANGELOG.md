@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — THE PIRATE MUSIC AND ALEX AND NEKA ARE 2 (BEATS 1061-1062)
+
+Based on Toby's 2026-10-10 lore, 1:19 PM (`1a126d3863a64380`), 1:20 PM (`1a126d4d4d1e693c`) and 1:30 PM
+(`1a126ddcca560df5`), thread "Another Document" (`1a1204179c8e973f`). Only his own lines are drawn. 1:19 PM: "Luigi
+Inus has the 'Dum dun dun da dum dun dun dun dun' Pirate Music. Alex basically starts beating more and more in Supreme
+Mate, increasing Alex's power level. It would be outstanding if Classics Alex is secretly Neka LAI." 1:20 PM: "Alex
+could PRETEND to lose. Luigi Inus would attack Neka for him. Alex could have turned Gaster into Greg." 1:30 PM: "The
+faceless doll erased Bort's face, then both dolls combine, Alex and Neka are clones, Greg and Gaster are clones. Neka
+takes off his coat, and there is Alex right there. Neka touched Gaster, there was Greg, he turns back, Neka throws Gaster
+through the hyperspace again. Neka says 'Divide. Here, Pupahya. You weren't from this world, neither of you are... I
+AM.'. Then Alex sends everyone through hyperspaces, so the 2 figures have the same abilities and can become each other.
+They also went through the same backstory. Alex and Neka are 2. They have the same everything, but they are 2 beings.
+Alex goes with Neka. Alex moves so fast that you need to pause the game to see him." The italic retellings under his
+paragraphs are the chatbot's and are commentary.
+
+![Beat 1061](screenshots/1123-the-pirate-music.png)
+
+![Beat 1062](screenshots/1124-alex-and-neka-are-2.png)
+
+- LV_CYC 23062.0 -> 23106.0, two new LV_BEATS rows (1061-1062). New capture scenes `b1061`, `b1062`. Tools:
+  `gen1061.py`, `build1061.py` (template `emit_tail1008.py`).
+  Probe: `len=1063 maxPh=1062 holes=0 undefSeg=0 missing=0 err=0 draws=1151`.
+- Beat 1061 priors: Oct 9, 7:35-7:45 PM "Luigi/Pirate is the most powerful besides Neka" and "sailed across the 7
+  seas, looking for powerful artifacts" (the pirate, now with a theme; "Dum dun dun" has no earlier use in the
+  archive); the old archive's Core Final Truths "Alex wins Supreme Mate because he made that game" (now each win
+  raises his power level); his own 1:19 PM "secretly Neka LAI" question and 1:20 PM "Alex could PRETEND to lose",
+  drawn as the open question the 1:30 PM message then answers.
+- Beat 1062 priors: Oct 7, 6:36 AM "Neka and CODE merged and became basically Pressuretale Alex known as Neka" (now
+  two beings, same everything, clones of each other); the old archive's "Greg is the man in the green shirt, Alex
+  with the blue" (now Greg and Gaster are clones too); Sept 29, 3:31 PM Neka's Diary "Faceless doll is a doll where
+  Luigi Green erased the face" and "The Teddy Bear is Bort the horror bear" (now she erases Bort's face and the two
+  dolls combine). "Pause the game to see him" is the first time pausing the game is part of the lore.
+
 ## 2026-10-10 — THE CLASSICS BARRIER (BEAT 1060)
 
 Based on Toby's 2026-10-10 lore, 12:32 PM (`1a126a9020be8a0e`), thread "Another Document" (`1a1204179c8e973f`). Only his
