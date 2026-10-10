@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — THE CLASSICS BARRIER (BEAT 1060)
+
+Based on Toby's 2026-10-10 lore, 12:32 PM (`1a126a9020be8a0e`), thread "Another Document" (`1a1204179c8e973f`). Only his
+own lines are drawn: "All this happened, then Luigi Inus gets more gold. Classics has returned in an even larger form,
+connecting limitless timelines, games, mods, platforms, and its fangames. Neka LAI remains the only being able to cross
+the Classics Barrier. All those events are now established history, and meanwhile, Luigi Inus continues collecting more
+gold." "Classics Barrier" has no earlier use anywhere in the archive; this is the first time the phrase appears.
+
+![Beat 1060](screenshots/1122-the-classics-barrier.png)
+
+- LV_CYC 23040.0 -> 23062.0, one new LV_BEATS row (1060). New capture scene `b1060`. Tools: `gen1060.py`,
+  `build1060.py` (template `emit_tail1008.py`).
+  Probe: `len=1061 maxPh=1060 holes=0 undefSeg=0 missing=0 err=0 draws=1149`.
+- Beat 1060 priors: Oct 9, 7:04 PM "All games destroyed, now only Neka NOT tale exists" (the state Classics returns
+  from); Sept 10, 8:06 PM "Pero LAI is the only being in Classics lore, Classics, and Classics code" (the same
+  sentence shape, now with Neka LAI in it); Oct 9, 4:09 PM "Gaster then broke the barrier, making the game glitch
+  between each one" (the Undertale barrier broke; the Classics Barrier is a new one that only Neka LAI crosses);
+  Oct 10, 11:25-11:30 AM Luigi Inus taking the gold in both places (beats 1058-1059), continued here.
+
 ## 2026-10-10 — NO ONE IS UNDERGROUND ANYMORE AND NEKA GOES WITH LUIGI INUS (BEATS 1058-1059)
 
 Based on Toby's 2026-10-10 lore, 11:25 AM (`1a1266b803727c2f`) and 11:30 AM (`1a1266fee7003085`), thread "Another
