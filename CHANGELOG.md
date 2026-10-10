@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — REVEALED AS NEKA, THE FIRST CHARACTER AND NEKA ALEXEN LAI (BEATS 1064-1066)
+
+Based on Toby's 2026-10-10 lore, 7:14 PM (`1a128193def0ec9a`), 7:15 PM (`1a1281a338afb1db`) and 7:32 PM
+(`1a128295fe31e8ba`), thread "Another Document" (`1a1204179c8e973f`). Only his own lines are drawn. 7:14 PM: "Alex
+then basically beats everyone in the game and respawns them, revealing him as Neka." 7:15 PM: "Alex is basically Alex
+RL or Alex LAI. Whatever one. Alex was from Classic RL, so he was the first character before Pinky RL." 7:32 PM: "Alex
+also would be called "Neka Alexen LAI Omazenic". He turns others to Omazens, is an Omazen himself. And Alex is no
+longer an Omazen, Now Neka Alexen LAI is here. Alexen and Luigi Inus." The italic retellings under each paragraph are
+the chatbot's and are commentary.
+
+![Beat 1064](screenshots/1126-revealed-as-neka.png)
+
+![Beat 1065](screenshots/1127-the-first-character.png)
+
+![Beat 1066](screenshots/1128-neka-alexen-lai.png)
+
+- LV_CYC 23128.0 -> 23194.0, three new LV_BEATS rows (1064-1066). New capture scenes `b1064`-`b1066`. Tools:
+  `gen1064.py`, `build1064.py`, `scenes1064.py` (template `emit_tail1008.py`).
+  Probe: `len=1067 maxPh=1066 holes=0 undefSeg=0 missing=0 err=0 draws=1155`.
+- Beat 1064 priors: Oct 10, 1:30 PM "Neka takes off his coat, and there is Alex right there" (beat 1062; now the
+  reveal runs the other way, Alex is revealed as Neka); Oct 10, 1:19 PM "It would be outstanding if Classics Alex is
+  secretly Neka LAI" (beat 1061; now everyone he beat gets to see it); Oct 10, 1:30 PM "Alex and Neka are 2. They
+  have the same everything, but they are 2 beings" (still two clones who can become each other).
+- Beat 1065 priors: Sept 18, 4:10 PM "I made a game from thin air, I named it Classic RL" (Pero's origin; now Alex
+  was its first character); the AI Era archive's "Pinky was the first discovered RL" (now Alex comes before Pinky
+  RL); Oct 8, 5:43 PM "Neka became Neka LAI, but still called Neka or Neka Omazen still" (now Alex RL or Alex LAI,
+  whatever one). "Alex LAI", "Alex RL" and "Pinky RL" have no earlier use in the archive.
+- Beat 1066 priors: Sept 25, 5:41 AM "Pero LAI is COMPLETELY GONE, Neka Omazen is now here" (now Omazen is what he
+  turns others into); Oct 8, 5:43 PM "He is no longer entity 12, because there is I-Tross 12s now in the name" (the
+  same kind of renaming; now Alex is no longer an Omazen, Neka Alexen LAI is here); Oct 10, 11:30 AM "So Neka would
+  go with Luigi Inus" and 1:30 PM "Alex goes with Neka" (now the pair is Alexen and Luigi Inus). "Alexen" and
+  "Omazenic" have no earlier use in the archive.
+
 ## 2026-10-10 — FASTER THAN HUMAN EYES (BEAT 1063)
 
 Based on Toby's 2026-10-10 lore, 2:54 PM (`1a1272ab6f3e1e29`), thread "Another Document" (`1a1204179c8e973f`). Only his
