@@ -1,0 +1,1 @@
+  if(c >= 23106.0 && c < 23128.0) return [1063, c-23106.0];  // FASTER THAN HUMAN EYES

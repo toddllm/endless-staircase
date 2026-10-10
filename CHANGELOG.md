@@ -4,6 +4,26 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — FASTER THAN HUMAN EYES (BEAT 1063)
+
+Based on Toby's 2026-10-10 lore, 2:54 PM (`1a1272ab6f3e1e29`), thread "Another Document" (`1a1204179c8e973f`). Only his
+own lines are drawn: "Alex can go so fast, that human eyes can't comprehend it, even if they try to slow the motion down.
+He can break anything with the speed, even atoms and air. Alex would slay Flash and Sonic. Alex makes the game a
+Minecraft style world... like him." The italic retelling under his paragraph is the chatbot's and is commentary. The
+attached picture (a Minecraft-style Alex with purple hair and a blue hoodie, holding a microphone) is his image, not a
+beat; it is kept in the bot's attachments folder.
+
+![Beat 1063](screenshots/1125-faster-than-human-eyes.png)
+
+- LV_CYC 23106.0 -> 23128.0, one new LV_BEATS row (1063). New capture scene `b1063`. Tools: `gen1063.py`,
+  `build1063.py` (template `emit_tail1008.py`).
+  Probe: `len=1064 maxPh=1063 holes=0 undefSeg=0 missing=0 err=0 draws=1152`.
+- Beat 1063 priors: Oct 10, 1:30 PM "Alex moves so fast that you need to pause the game to see him" (beat 1062; now
+  even slowed-down motion cannot show him); Oct 3, 5:12 PM "Pupahya runs the speed of light, cuts the atoms of space"
+  (now Alex breaks atoms and air with speed alone); May 30 (Email 376) "Alex's World is one Minecraft-style/anime game
+  while Classics is a whole platform" (now Alex makes the game a Minecraft style world, like him). "Flash" and "Sonic"
+  as speed rivals have no earlier use; Pero-Flash (Aug 15) and Sonic.exe (Sept 20) are different things.
+
 ## 2026-10-10 — THE PIRATE MUSIC AND ALEX AND NEKA ARE 2 (BEATS 1061-1062)
 
 Based on Toby's 2026-10-10 lore, 1:19 PM (`1a126d3863a64380`), 1:20 PM (`1a126d4d4d1e693c`) and 1:30 PM
