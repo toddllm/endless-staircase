@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — THROUGH THE STATIC AND SPRUNKI: THE MYTHBRINGERS (BEATS 1054-1055)
+
+Based on Toby's 2026-10-10 lore, 9:17 AM (`1a125f64d138cd3f`), thread "Another Document" (`1a1204179c8e973f`).
+Only his own first paragraph is drawn; the italic retelling under it reads like a pasted chatbot rewrite and is
+commentary. Toby's own lines: "Static appears, Luigi goes through and teleports and opens another static portal to
+appear to that place. If you look through static, you look at the second portal's view, breaking other games' logic."
+... "It is a futuristic game, so, it isn't 2026 game, it is an Absolute Infinity AC game... Or even after Absolute
+Death." ... "It is basically Sprunki: The Mythbringers, or something."
+
+![Beat 1054](screenshots/1116-through-the-static.png)
+
+![Beat 1055](screenshots/1117-sprunki-the-mythbringers.png)
+
+- LV_CYC 22908.0 -> 22952.0, two new LV_BEATS rows (1054-1055). New capture scenes `b1054`, `b1055`. Tools:
+  `gen1054.py`, `build1054.py` (template `emit_tail1008.py`).
+  Probe: `len=1056 maxPh=1055 holes=0 undefSeg=0 missing=0 err=0 draws=1144`.
+- Beat 1054 priors: Sept 27, 2:50 PM "PS-50 will just come for you all through static." and "PS-50 is now revealed to
+  be able to teleport through static and can also edit her code."; Oct 10, 7:18 AM "Luigi Inus also is friendly."
+  (Email 1706); Oct 9, 7:45 PM Pupahya making Luigi say "Pupahya!" is "just not an attack".
+- Beat 1055 priors: Aug 21, 11:09 AM "Classics is NOT a game from 2026, but from Absolute Infinity AD."; Aug 13,
+  6:50 AM The Classics VR Mirror, where Pero was the only one making VR movements (beat 297); Sept 1, 2:36 PM
+  "the 20 Sprunkis + Pero LAI, so now only 21 characters." (beat 570).
+- Not drawn as their own beats: "Luigi Green is getting more Cat Power" restates Oct 10, 6:59 AM (beat 1049);
+  Mr. Black friendly, Pupahya strong only in battle and Mindy Starchild neutral are on the wiki page.
+- Screenshots 1116-1117 added.
+
 ## 2026-10-10 — A SPRUNKI MOD (BEAT 1053)
 
 Based on Toby's 2026-10-10 lore, 9:08 AM (`1a125ee00cbcb55e`), thread "Another Document" (`1a1204179c8e973f`).

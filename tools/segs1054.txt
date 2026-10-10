@@ -1,0 +1,2 @@
+  if(c >= 22930.0 && c < 22952.0) return [1055, c-22930.0];  // SPRUNKI: THE MYTHBRINGERS
+  if(c >= 22908.0 && c < 22930.0) return [1054, c-22908.0];  // THROUGH THE STATIC
