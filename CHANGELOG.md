@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — A SPRUNKI MOD (BEAT 1053)
+
+Based on Toby's 2026-10-10 lore, 9:08 AM (`1a125ee00cbcb55e`), thread "Another Document" (`1a1204179c8e973f`).
+The 8:34 AM "make them playable" build request and the 9:07 AM image request are no beat. The italic retelling
+under his lines reads like a pasted chatbot rewrite and is commentary. Toby's own lines: "Did you know Sprunkis
+are from an Incredibox mod called "Sprunki"? Yeah, and Classics will be a Sprunki mod."
+
+![Beat 1053](screenshots/1115-a-sprunki-mod.png)
+
+- LV_CYC 22886.0 -> 22908.0, one new LV_BEATS row (1053). New capture scene `b1053`. Tools: `gen1053.py`,
+  `build1053.py` (template `emit_tail1008.py`).
+- Priors drawn: Email 85 (Apr 8) "This actually is Classics, Classics in Sprunki."; Email 261 (May 14)
+  "Classic Sprunki is only an incredibox." (the lore moved into Mystery of The Missing Tunmon); beat 942
+  (Sept 29) where Oren.ps learns he is from a mod, not even the original Incredibox, and humans made the Sprunkis.
+- Screenshot 1115 added; 1113-1114 recaptured because the ladder window moved.
+
 ## 2026-10-10 — SHIFTED NEKA THROUGH THE INVINCIBILITY CUBE (BEATS 1008-1052)
 
 Based on Toby's 2026-10-06 through 2026-10-10 lore: 61 messages on threads "Re: Document" (`1a0f9cb82996f580`),
