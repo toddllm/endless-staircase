@@ -1,0 +1,3 @@
+  if(c >= 23238.0 && c < 23260.0) return [1069, c-23238.0];  // PYCHOPATHICAL USYTREMICISM
+  if(c >= 23216.0 && c < 23238.0) return [1068, c-23216.0];  // THE POWER CHAIN
+  if(c >= 23194.0 && c < 23216.0) return [1067, c-23194.0];  // LUIGI INUS: GOLDEN PIRATE

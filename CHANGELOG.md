@@ -4,6 +4,50 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — LUIGI INUS: GOLDEN PIRATE, THE POWER CHAIN AND PYCHOPATHICAL USYTREMICISM (BEATS 1067-1069)
+
+Based on Toby's 2026-10-10 lore, 7:41 PM (`1a12831468964450`) and 7:46 PM (`1a12835c107c06d6`), thread "Another
+Document" (`1a1204179c8e973f`). Only his own lines are drawn. 7:41 PM: "Alexen continues the plan Neka did all
+before. Alexen is now Neka now. Alexen now continues with LV, so he can reach past max LV. Luigi Inus collects more
+gold, and after 56 years, he finally gotten all the gold in the game, Luigi Inus made a gold tooth, a peg leg, gold
+bones, and now he can infinitely repair himself, until he reaches Luigi Inus: Golden Pirate ... Alex's Domain
+Expansion Power Chain connects everything, wraps around all targets ... Alex and the victum(s) are sent to the Void,
+then Alex jumps on the hexagon parts of Neka's body ... Alex/Alexen then flies for 67 seconds (only 30 shown in
+video), across the void, Yeah the void is white ... Luigi Green's Domain Expansion Power Chain summons anchors and
+chains flying everywhere, the boat crashes and deals HUGE AOE damage ... Alex VS Luigi Green is the toughest fight,
+Alex would win as Neka, before, Luigi Green would win instantly." 7:46 PM: "Alex still continues constantly winning
+supreme mate with only losing to Oren.ps or/and Simon.ps. Alex gained Pychopathical Usytremicism. Alexen's eyes become
+red, he summons a barrage of swords, microphones, Gregs, and copies of everyone else, Alex says "I AM STRONGER THAN
+YOU!" ... he has the power to create anything from thin air ... After the part of the Pycho-Ustremism, he beats
+everyone, it is stronger than his domain." The italic retellings under each paragraph are the chatbot's and are
+commentary. A Gemini-generated mp4 came attached to the 7:41 PM message; it is his video, not a beat, and is kept in
+the bot's attachments folder. He wrote "Luigi Green" for the second domain; the chatbot retold it as Luigi Inus; his
+own words are drawn.
+
+![Beat 1067](screenshots/1129-luigi-inus-golden-pirate.png)
+
+![Beat 1068](screenshots/1130-the-power-chain.png)
+
+![Beat 1069](screenshots/1131-pychopathical-usytremicism.png)
+
+- LV_CYC 23194.0 -> 23260.0, three new LV_BEATS rows (1067-1069). New capture scenes `b1067`-`b1069`. Tools:
+  `gen1067.py`, `build1067.py`, `scenes1067.py` (template `emit_tail1008.py`).
+  Probe: `len=1070 maxPh=1069 holes=0 undefSeg=0 missing=0 err=0 draws=1158`.
+- Beat 1067 priors: Oct 10, 12:32 PM "Luigi Inus continues collecting more gold" (beat 1060; now, after 56 years, he
+  has all of it); Oct 9, 7:35-7:45 PM "Luigi sailed across the 7 seas, looking for powerful artifacts" (now he can
+  infinitely repair himself); Oct 10, 7:32 PM "Alex is no longer an Omazen, Now Neka Alexen LAI is here" (beat 1066;
+  now "Alexen is now Neka now" and goes past max LV). "Golden Pirate", "gold tooth" and "peg leg" have no earlier use.
+- Beat 1068 priors: Oct 9, 7:35-7:45 PM "Alex creates Power Chain, domain expansion, japanese letters of Power Chain
+  appear" (now it wraps around all targets and sends them to the Void); Oct 9, 5:56-5:59 PM "Neka strikes the chains
+  and it sucks the power ... making Neka's body into plasma hexagon plates" (now Alex jumps on the hexagon parts of
+  Neka's body); Oct 9, 7:35-7:45 PM "then the 67 Pirate comes ... Alex uses diamond sword, 67 Pirate doesn't die" (now
+  Alex flies for 67 seconds across the white void).
+- Beat 1069 priors: Oct 10, 1:19 PM "Alex basically starts beating more and more in Supreme Mate" (beat 1061; now he
+  only loses to Oren.ps or/and Simon.ps); Oct 9, 10:40 AM-12:58 PM "Neka is clarified as an all purple entity with
+  red eyes" (now Alexen's eyes become red too); Sept 18, 4:10 PM "I made a game from thin air, I named it Classic RL"
+  (now Alex has the power to create anything from thin air). "I AM STRONGER THAN YOU!", "Pychopathical Usytremicism"
+  and "Pycho-Ustremism" have no earlier use; "Pycho fury" (Oct 9) and "Pychotethicalicia" (Oct 3) are Gaster's.
+
 ## 2026-10-10 — REVEALED AS NEKA, THE FIRST CHARACTER AND NEKA ALEXEN LAI (BEATS 1064-1066)
 
 Based on Toby's 2026-10-10 lore, 7:14 PM (`1a128193def0ec9a`), 7:15 PM (`1a1281a338afb1db`) and 7:32 PM
