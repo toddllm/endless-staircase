@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-10 — UNTRINUIM CAPIBUIM AND MAX CAT POWER (BEATS 1056-1057)
+
+Based on Toby's 2026-10-10 lore, 9:47 AM (`1a12612260448947`), thread "Another Document" (`1a1204179c8e973f`).
+Only his own lines are drawn: "They already did. Maybe check the lore to see how many times they used hollograms or
+untrinuim capibuim?" and the paragraph "Untrinuim Capibuim is what Classics hollograms are made of, Neka is one now.
+Neka made a Untrin body. Neka gets more and more bodies by making them himself, and the blood he gets from the other
+entities. Neka has a system. Neka LAI would attack ANYTHING and ANYONE. Neka LAI is still getting LV. Luigi Inus
+crosses in boat to Simon.ps's small wooden boat. Luigi Inus then collects Cat Power by visiting the same places
+Simon.ps walked on before in coronalogical order, and it took the same amount of time it takes to get to here, a long
+time. Then Luigi Inus gained max cat power, he shown he can survive tracing Simon.ps's steps, while Simon.ps died a
+lot of times." The pasted chatbot answer about real holograms, its lore-count table, and the italic retelling under
+his paragraph are commentary.
+
+![Beat 1056](screenshots/1118-untrinuim-capibuim.png)
+
+![Beat 1057](screenshots/1119-max-cat-power.png)
+
+- LV_CYC 22952.0 -> 22996.0, two new LV_BEATS rows (1056-1057). New capture scenes `b1056`, `b1057`. Tools:
+  `gen1056.py`, `build1056.py` (template `emit_tail1008.py`).
+  Probe: `len=1058 maxPh=1057 holes=0 undefSeg=0 missing=0 err=0 draws=1146`.
+- Beat 1056 priors: Aug 27, 9:47 AM Gaster "like a hollogram but it is in static and really there" (the one hologram
+  already in the lore; the chatbot's table said zero); Sept 28, 5:39 PM "His blood is 0, he is all Classics code, the
+  blood is from the characters who he beaten." (beat 932); Oct 10, 9:17 AM "As Neka continues even more to get more
+  LV" (beats 1054-1055).
+- Beat 1057 priors: May 16 (Email 280) Simon "wakes only to travel on his small wooden boat"; June 27 (Email 595) cat
+  power thresholds 30% / 45% / 100%; Aug 31, 9:20 AM Pero "deleted Simon.ps" and "respawned him"; Oct 10, 6:59 AM
+  Cat Power is "power he gets from Simon.ps" (beat 1049).
+- "Neka LAI is still getting LV" restates 9:17 AM and is folded into beat 1056's third panel, not its own beat.
+
 ## 2026-10-10 — THROUGH THE STATIC AND SPRUNKI: THE MYTHBRINGERS (BEATS 1054-1055)
 
 Based on Toby's 2026-10-10 lore, 9:17 AM (`1a125f64d138cd3f`), thread "Another Document" (`1a1204179c8e973f`).

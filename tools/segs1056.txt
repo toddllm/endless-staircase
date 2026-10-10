@@ -1,0 +1,2 @@
+  if(c >= 22974.0 && c < 22996.0) return [1057, c-22974.0];  // MAX CAT POWER
+  if(c >= 22952.0 && c < 22974.0) return [1056, c-22952.0];  // UNTRINUIM CAPIBUIM
