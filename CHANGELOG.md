@@ -4,6 +4,25 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-11 — ALEX'S ACTUAL LV AND THROUGH THE TIMELINES (BEATS 1072-1073)
+
+Based on Toby's 2026-10-11 lore, 6:50-7:01 AM, thread "Another Document" (`1a1204179c8e973f`): 6:50 AM
+(`1a12a95fa503b213`), 6:51 AM (`1a12a9696379e34c`, `1a12a96f153beca6`), 6:57 AM (`1a12a9c32a95e555`) and 7:01 AM
+(`1a12a9ffb7ea762d`). Only his own lines are drawn. 6:50 AM: "Like the actual number of LV he has. INVENT IT". 6:51 AM:
+"Where did you get that?" and "Actually use the lore". 6:57 AM: "Actual number: x19199283983947 u49847948427 y883783 z5666267 + (Beyond Absolute Infinity Beyond Absolute Infinity Beyond Absolute Infinity ... Said Beyond Absolute Infinity Times greater than Beyond Absolute Infinity ... Said Beyond Absolute Infinity Times Said Beyond Absolute Infinity Times..., Absolute Infinity > Normal Infinity by Far)" 7:01 AM: "He still continues getting more LV, making it x2000000000000... u5000000000000... y99999999999999... z666666666666...7777777777777... + (…) and Alex gets more and more and more LV, he beats all Undertale AUs and he then beats every single game of characters, and he then moves back to Classics to beat everyone there, and he also walked through timelines to get all the characters Classics had, will have, and has now." (The phrase "Beyond Absolute Infinity" repeats dozens of times in his message and the digits run on for hundreds of places; both are shortened here with "...".) The chatbot's invented decimal
+number (LV 12,134,867,...) and all its retellings are commentary; Toby rejected the decimal number himself.
+
+![Beat 1072](screenshots/1134-alexs-actual-lv.png)
+
+![Beat 1073](screenshots/1135-through-the-timelines.png)
+
+- LV_CYC 23304.0 -> 23348.0, two new LV_BEATS rows (1072-1073). New capture scenes `b1072`-`b1073`. Tools:
+  `gen1072.py`, `build1072.py`, `scenes1072.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check`).
+- Beat 1072 priors: Oct 10, 7:41 PM "Alexen now continues with LV, so he can reach past max LV" (beat 1067; now the
+  number is written out in x, u, y and z parts plus a Beyond Absolute Infinity term).
+- Beat 1073 priors: Oct 11, 6:31 AM "he even goes beyond the game to the boarder" (beat 1071; now he goes through every
+  Undertale AU and every game, then back to Classics, then across its timelines).
+
 ## 2026-10-11 — POWER CHAIN: UPDATED AND BEYOND THE GAME (BEATS 1070-1071)
 
 Based on Toby's 2026-10-11 lore, 6:23 AM (`1a12a7db951475ae`) and 6:31 AM (`1a12a84aadaa5409`), thread "Another

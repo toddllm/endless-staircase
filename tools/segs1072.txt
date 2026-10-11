@@ -1,0 +1,2 @@
+  if(c >= 23326.0 && c < 23348.0) return [1073, c-23326.0];  // THROUGH THE TIMELINES
+  if(c >= 23304.0 && c < 23326.0) return [1072, c-23304.0];  // ALEX’S ACTUAL LV
