@@ -1,0 +1,2 @@
+  if(c >= 23282.0 && c < 23304.0) return [1071, c-23282.0];  // BEYOND THE GAME
+  if(c >= 23260.0 && c < 23282.0) return [1070, c-23260.0];  // POWER CHAIN: UPDATED

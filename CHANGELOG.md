@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-11 — POWER CHAIN: UPDATED AND BEYOND THE GAME (BEATS 1070-1071)
+
+Based on Toby's 2026-10-11 lore, 6:23 AM (`1a12a7db951475ae`) and 6:31 AM (`1a12a84aadaa5409`), thread "Another
+Document" (`1a1204179c8e973f`). Only his own lines are drawn. 6:23 AM: "His domain expansion now has an update, it now contains Pychopathical Usytremicism. The actual Domain Expansion is more cool and intense and fast." 6:31 AM: "Pychopathical Usytremicism is no longer a seperate ability. Alex continues getting more and more LV, and reaches even more level. Alex resets to make more and more entities to get more and more LV, he even goes beyond the game to the boarder where quintquadenentallard enities are their, also he also beaten all the entities in Area 12X so many times." The italic
+line and the "Previously..." paragraph in the 6:23 AM message, and the restated paragraphs and the "gain LV → reset"
+cycle under the 6:31 AM message, are the chatbot's and are commentary (the cycle line is used only as a caption).
+
+![Beat 1070](screenshots/1132-power-chain-updated.png)
+
+![Beat 1071](screenshots/1133-beyond-the-game.png)
+
+- LV_CYC 23260.0 -> 23304.0, two new LV_BEATS rows (1070-1071). New capture scenes `b1070`-`b1071`. Tools:
+  `gen1070.py`, `build1070.py`, `scenes1070.py` (template `emit_tail1008.py`). JS syntax check clean.
+- Beat 1070 priors: Oct 10, 7:41 PM "Alex's Domain Expansion Power Chain connects everything ... sent to the Void"
+  (beat 1068; now the Pycho-Ustremism happens inside it); Oct 10, 7:46 PM "After the part of the Pycho-Ustremism, he
+  beats everyone, it is stronger than his domain" (beat 1069; now it is part of the domain itself); Oct 10, 7:46 PM
+  "he summons a barrage of swords, microphones, Gregs, and copies of everyone else" (now with the chains in the white
+  void).
+- Beat 1071 priors: Oct 9, 4:09 PM "Neka runs over, Resets every time he completed a run ... more and more LOVE" (now
+  Alex resets to make more entities); Oct 8, 7:14 PM "Area 12X now is here ... Everyone has their own room. Neka has
+  the whole place." (now Alex has beaten all of them so many times); Oct 10, 7:41 PM "Alexen now continues with LV, so
+  he can reach past max LV" (beat 1067; now he goes past the game itself, to the boarder). "Quintquadenentallard" and
+  "the boarder" have no earlier use in the archive; his spelling is kept.
+
 ## 2026-10-10 — LUIGI INUS: GOLDEN PIRATE, THE POWER CHAIN AND PYCHOPATHICAL USYTREMICISM (BEATS 1067-1069)
 
 Based on Toby's 2026-10-10 lore, 7:41 PM (`1a12831468964450`) and 7:46 PM (`1a12835c107c06d6`), thread "Another
