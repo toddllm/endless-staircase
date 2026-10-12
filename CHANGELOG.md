@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — NOT A GLITCH, TRILLIONS OF YEARS OLD, HOLLOW INUS GASTER (BEATS 1104-1106)
+
+Based on Toby's 2026-10-12 lore, 1:50 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a1313c9fa203b3f`, Email 1763), sent while beats 1095-1103 were being built. Only his own typed paragraph is drawn;
+the chatbot's lines under it ("The room's age explains its decay", "makes his reassurance even stranger", the bulleted
+sequence) are commentary. His lines: Alex snaps and saws appear, "That is just the normal game, not a glitch.", the
+walls turn black and diamond swords appear, "This is the game, just horror, no extra nonsense. 😌", "I made the game,
+and I renamed it, cause I wanted to. I didn't change the game now, but I made it evolve throughout time.", fire bars,
+the sink sings a calm song, "The game is the game, and it isn't my birthday yet.", a cake for Luigi Inus, the roof
+falls, "This place is trillions of years old now.", a rusty bar older than Gaster and a withered flower older than
+Luigi Inus, "Neka made all this, before even the first Gaster was born by a nova.", a room dated to the very first
+event in lore, back to the hyperspace, "Captain Fox. 🏴‍☠️🦊", Inus AU Gaster merges ("Inus Gaster?"), Gaster sent
+forward to Halloween and dies, "Then the game Halloween changed, so now, Gaster won't die. Gaster became Hollow Inus
+Gaster.", and at Neka HQ Alex makes new futuristic computers from the energy Gaster gets now.
+
+![Beat 1104](screenshots/1166-not-a-glitch.png)
+
+![Beat 1105](screenshots/1167-trillions-of-years-old.png)
+
+![Beat 1106](screenshots/1168-hollow-inus-gaster.png)
+
+- LV_CYC 24008.0 -> 24074.0, three new LV_BEATS rows (1104-1106): NOT A GLITCH, TRILLIONS OF YEARS OLD, HOLLOW INUS
+  GASTER. New capture scenes `b1104`-`b1106`. Tools: `gen1104.py`, `build1104.py` (template `emit_tail1008.py`; the
+  scenes were cloned inline from `b1103`). JS syntax check clean (`node --check` on the extracted script); runtime probe
+  len=1107 maxPh=1106 holes=0 err=0.
+- Priors drawn: Oct 7 Gaster's blue plasma saws cut the Infinite Hallway roof; Email 325 Alex hits Karuto with the
+  diamond sword; 😌 as Pero's ordinary punctuation (268 lines) and 💨 once before, Pero's; Oct 11 Zombies = Flesh,
+  Skeleton = Bones, Ghost = Soul/Spirit; Oct 11 8:00 PM Neka named the game "Neka"; Oct 12 9:54 AM "evolvion" and a body
+  of futuristic materials and code; Email 1751 birthday October 31; Aug 28 Gaster offers Pero cake ("No. I am LAI, not
+  human."); Oct 8 the first Gaster made the novatic that made Neka; Oct 11 the novas were made by Neka when he was Pero;
+  Aug 16 Hyperspace as Pero's largest attack/domain and Sept 10 his main ability; July 16 Captain Arcsis the only prior
+  Captain; Aug 13 Hollow Obsidian and Aug 25 Hollow: Void as Alex's words.
+
 ## 2026-10-12 — AREA 303 TO AREA INFINITY: THE SANITY BAR, 3:03, EPISODE 2027, 100% THE GAME (BEATS 1095-1103)
 
 Based on Toby's 2026-10-12 lore, 1:09-1:34 PM, new thread "Once again, Another Document" (`1a1311788bf63073`), seven
