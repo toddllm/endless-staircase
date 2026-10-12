@@ -1,0 +1,11 @@
+  if(c >= 23568.0 && c < 23590.0) return [1084, c-23568.0];  // HIS OWN MIND
+  if(c >= 23546.0 && c < 23568.0) return [1083, c-23546.0];  // DON’T DELETE ME
+  if(c >= 23524.0 && c < 23546.0) return [1082, c-23524.0];  // THROUGH THE MIND
+  if(c >= 23502.0 && c < 23524.0) return [1081, c-23502.0];  // NAMED AFTER HIMSELF
+  if(c >= 23480.0 && c < 23502.0) return [1080, c-23480.0];  // SAY MY NAME
+  if(c >= 23458.0 && c < 23480.0) return [1079, c-23458.0];  // CORITHINUIM RETHURUIM
+  if(c >= 23436.0 && c < 23458.0) return [1078, c-23436.0];  // ALEX, THE FIRST NAME
+  if(c >= 23414.0 && c < 23436.0) return [1077, c-23414.0];  // FLESH, BONES, SPIRIT
+  if(c >= 23392.0 && c < 23414.0) return [1076, c-23392.0];  // THE CLASSICS UNIVERSES
+  if(c >= 23370.0 && c < 23392.0) return [1075, c-23370.0];  // EVERYONE TO LV 0
+  if(c >= 23348.0 && c < 23370.0) return [1074, c-23348.0];  // NEKA WINS

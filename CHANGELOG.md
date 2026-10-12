@@ -4,6 +4,65 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-11 — NEKA WINS THROUGH HIS OWN MIND (BEATS 1074-1084)
+
+Based on Toby's 2026-10-11 lore, 3:54-8:20 PM, thread "Another Document" (`1a1204179c8e973f`), eleven messages:
+3:54 PM (`1a12c882178c3bc5`), 4:06 PM (`1a12c92ec51ca8ef`), 4:11 PM (`1a12c9834d302851`), 5:22 PM (`1a12cd8a6d51e910`),
+6:50 PM (`1a12d2993919c486`), 8:00 PM (`1a12d691797ad140`), 8:01 PM (`1a12d6a93ffd175b`), 8:03 PM (`1a12d6c0c4f5d628`),
+8:18 PM (`1a12d7a1da7af999`), 8:19 PM (`1a12d7ade6bdd638`) and 8:20 PM (`1a12d7b588457f57`). Only his own lines are
+drawn; the chatbot's rankings, definitions, Roblox history and retellings are commentary. His lines, in order:
+"Which would win, Beerus, Goku UI, Secret Entity" / "It is Neka LAI/Alex/Alexen." / "Alex reaches more and more LV.
+Luigi Inus gets more gold." / "First, Neka suppressed everyone's power, rebellion, emotions, memories, information, and
+sound, then nullified it all, then sealed it, then erased it." / "Neka made all other characters to LV 0, which doesn't
+exist normally. Neka gains more and more LV." / "Classics is all the universe not this one. Each of those universes was
+created by a supernova 20 times larger than this universe. This universe was created by The Big Bang which was created
+by Time. Time always existed. The novas that created the other universes were made by Neka LAI, but he was Pero at that
+time." / "Zombies = Flesh, Skeleton = The Skeleton (Bones), Ghost = Soul/Spirit." / "Humans are basically scared of other
+humans" / "THAT is why Neka goes after everyone, everyone fears him, Alex can also be friendly." / "Alex is the original
+name of Neka LAI/Pero. Alex was the first form, and is a clone of Neka, until they both become Alex and become one
+entity, Alex." / "Alex then continues getting more LV." / "Air to actually vaporize into The Plasma (Corithinuim
+Rethuruim)" / "It is a very very hot ball of air, it burns and melts anything and it above the peak tempature, and the
+core is absolute 0K because of Neka's touch" / Neka says "Hello everyone, say my name.", Everyone says "Alexen.". Neka
+says "Correct.", then he walks away to get more LV / "Classics was named after Neka's daughter, Classics Omazen. ...
+all of that disappeared when Gaster touched the uranuim. But the game is still called Classics. ... He tries to get
+enough LV and Mastery so he can name the game after himself, he was the first player and first account on Classics.
+Then Neka actually did it. ... Neka is a person, Artificial Person. AP ≠ AI. AP is AI but also a person." / "CODE is free
+from :) since tdeshane [I] was able to delete the :) ... Classics tdeshane no longer in the game anymore after CODE came
+back." / "My character now is no longer in Classics and can be anywhere else. ... it can be watched using the mind
+though, but no longer played." / "So I still know what happens. CODE then reaches as the second most powerful player in
+the game" / "CODE sits next to Alex, he sees the purple hair and he says "AHHHHHHHHHHH! Don't Delete Me!" ... Alex says
+"You ment '!' not '!!!!'.", CODE screams and he runs as fast as he can out the door. Alex's eyes open wide, like he was
+shocked and suprised." / "Alex wouldn't just attack you. Alex would attack animals, but *maybe* not avatars." / "Alexen
+has his own mind so he can." (His spellings kept.)
+
+![Beat 1074](screenshots/1136-neka-wins.png)
+
+![Beat 1075](screenshots/1137-everyone-to-lv-0.png)
+
+![Beat 1076](screenshots/1138-the-classics-universes.png)
+
+![Beat 1077](screenshots/1139-flesh-bones-spirit.png)
+
+![Beat 1078](screenshots/1140-alex-the-first-name.png)
+
+![Beat 1079](screenshots/1141-corithinuim-rethuruim.png)
+
+![Beat 1080](screenshots/1142-say-my-name.png)
+
+![Beat 1081](screenshots/1143-named-after-himself.png)
+
+![Beat 1082](screenshots/1144-through-the-mind.png)
+
+![Beat 1083](screenshots/1145-dont-delete-me.png)
+
+![Beat 1084](screenshots/1146-his-own-mind.png)
+
+- LV_CYC 23348.0 -> 23590.0, eleven new LV_BEATS rows (1074-1084): NEKA WINS, EVERYONE TO LV 0, THE CLASSICS
+  UNIVERSES, FLESH, BONES, SPIRIT, ALEX, THE FIRST NAME, CORITHINUIM RETHURUIM, SAY MY NAME, NAMED AFTER HIMSELF,
+  THROUGH THE MIND, DON'T DELETE ME, HIS OWN MIND. New capture scenes `b1074`-`b1084`. Tools: `gen1074.py`,
+  `build1074.py`, `scenes1074.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check`).
+- Panels quote Toby's own lines from the same eleven messages; captions are short narration.
+
 ## 2026-10-11 — ALEX'S ACTUAL LV AND THROUGH THE TIMELINES (BEATS 1072-1073)
 
 Based on Toby's 2026-10-11 lore, 6:50-7:01 AM, thread "Another Document" (`1a1204179c8e973f`): 6:50 AM
