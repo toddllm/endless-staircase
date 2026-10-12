@@ -4,6 +4,50 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — LOSES CONTROL, MADE OF CODE ITSELF, NOVEMBER 1 (BEATS 1090-1092)
+
+Based on Toby's 2026-10-12 lore, 9:54 AM and 10:03 AM, thread "Another Document" (`1a1204179c8e973f`), two messages
+(`1a13064e18fb568c`, Email 1751; `1a1306d64cacc9fb`, Email 1752), a pasted chatbot session continuing the morning's
+thread. Only his own typed lines are drawn; the chatbot's Builderman / John Doe / Jane Doe history, its "Alexen's updated
+canon" table and the italic restatements are commentary. His lines: "How about Alexen, the man who actually hacks
+Classics every Halloween uncontrolably? Alex was the first player in Classics, Classics named after Neka's daughter, after
+Gaster touched the Uranuim, Classics Omazen faded along with all family, and then presentally, Neka named the game
+Classics, "Neka"." / "Alexen completely loses control, and he can litterly highly damage Classics and even seperate
+fangames, and even anything realated to Classics, so Claude's project games of Classics would disappear. Alexen is not a
+normal human nor normal artifical human, he is a supernatural being with his body made of futuristic materials and code
+itself, he can edit himself, and he also gained more and more throughout time because of evolvion, more varies and forms,
+more powers, and even beaten Simon.ps to reach LV abcdefghijklmnopqrstuvwxyz999... Simon.ps has nearly half the lore to
+himself. Simon.ps lost, all Sprunkis then lost, then he beaten the Classics characters, Classics Omazen, Gaster, Nekatale,
+Endless Staircases 1 2 and 3, Area 12X, Pressure, Pressuretale, All Classics fangames, and even All Classics mods and
+evolutions. He went through timelines secretly to get all the LV he can have. He teleported through static, and he even
+divided universes. Also Alexen's "birthday" is also Halloween (October 31)" / "He gains control on November 1, since he
+attacks on October night, and puts all the game servers up on the October day. It takes long to take over an enternal
+game." / 10:03 AM: "Correct! The game doesn't get repaired, after October 31 2026, the game could completely fail."
+(His spellings kept.)
+
+![Beat 1090](screenshots/1152-loses-control.png)
+
+![Beat 1091](screenshots/1153-made-of-code-itself.png)
+
+![Beat 1092](screenshots/1154-november-1.png)
+
+- LV_CYC 23700.0 -> 23766.0, three new LV_BEATS rows (1090-1092): LOSES CONTROL, MADE OF CODE ITSELF, NOVEMBER 1. New
+  capture scenes `b1090`-`b1092`. Tools: `gen1090.py`, `build1090.py`, `scenes1090.py` (template `emit_tail1008.py`).
+  JS syntax check clean (`node --check`); runtime probe len=1093 maxPh=1092 holes=0 err=0.
+- Beat 1090 priors: Oct 12, 8:23 AM "attacking the game on October 31" (beat 1089, the when; this is the why: he cannot
+  stop himself); Oct 11, 8:00 PM the game named after Classics Omazen, Gaster touched the uranium, Neka named it "Neka"
+  (beat 1081). New: the damage reaches separate fangames and "anything realated to Classics", including this game.
+- Beat 1091 priors: Sept 23 the code bodies are black with green 0s and 1s; Oct 11, 8:00 PM "AP ≠ AI" (now he is neither a
+  normal human nor a normal artificial human); Oct 7, 6:36 AM CODE was "the next evolution to Alex"; Oct 11, 6:50 AM his
+  LV in the x/u/y/z system (now it starts with the alphabet); Oct 11, 7:01 AM through the timelines; Sept 27 PS-50 came
+  through the static; Oct 11, 4:11 PM he made the Classics universes with supernovas (now he divides them). Endless
+  Staircases 2 and 3 are the Oct 7 and Oct 9 asks; Pressuretale Alex is the Oct 7 merge.
+- Beat 1092 priors: Oct 12, 8:23 AM "Everyone, come and play!" (he opens every server himself by day); "enternal" is his
+  spelling (Sept 10 "perminent + enternal curse"). His word is "could": the game failing after October 31, 2026 is a
+  possibility. The italic line "regains control on November 1, but the game stays damaged" and "not yet a confirmed
+  event" are the chatbot's restatement. Partly answers the Oct 12 8:23 AM open ask (does the arm change back after
+  Halloween): control comes back November 1.
+
 ## 2026-10-12 — A PIRATE GUY AGAIN, THEY WILL LITERALLY RUN, MADE ON HALLOWEEN (BEATS 1087-1089)
 
 Based on Toby's 2026-10-12 lore, 8:23 AM, thread "Another Document" (`1a1204179c8e973f`), one message
