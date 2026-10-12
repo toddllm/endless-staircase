@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — GAME DESTROYED IN THREE HOURS, THE MOST POWERFUL THING, RED 0S AND 1S, HACKERS INSTANTLY LOSE, NOBODY TO PLAY WITH (BEATS 1113-1117)
+
+Based on Toby's 2026-10-12 lore, 4:12-4:35 PM, thread "Once again, Another Document" (`1a1311788bf63073`), five
+messages (`1a131bee4e86d515` Email 1771, `1a131c558e13b778` 1772, `1a131d1f3e388e6a` 1773, `1a131d39bdffb866` 1774,
+`1a131d45f2970bbb` 1775). Only his own typed lines are drawn. The document attached to Email 1771
+(`Alexen_Omazen_Infinite_October_31_Lore.docx`, saved as simon-lore-bot/attachments/2026-10-12-1612-alexen-omazen-infinite-october-31-lore.docx)
+is a chatbot-compiled reference (Gru, Saitama, SCP-3812 matchups, "30,000 commands per millisecond", an error code) and is
+commentary; the c00lkidd history in Email 1772 is the chatbot's; the italic restatements under his lines are commentary.
+His lines, in order: "All this happened. Alex 303 then continued, it worked so fast, that in 3 hours, game physics were
+broken and the game lagged and broke, so the attack is over, game destroyed."; "Alexen can delete Roblox, it can
+basically do anything. Hacked code that can edit itself and basically is a corrupted entity made by code and is KNOWN
+for deleted games is the most powerful thing. Alexen is the most powerful thing."; "Alex Omazen now made the game into
+red 0s and 1s, Alex Omazen attacks those that enter the game, until 50 years pass, and Alex is normal again and he says
+"Let's play!""; "Classics hackers would instantly lose because of Alex Omazen."; "Alex Omazen says "Lets play!" and he
+plays his own game, called "Neka" (you know), Alex goes through several games and doesn't see anyone. Why would that be
+the reason?"; and "Answer: That and also everyone still thinks Alex Omazen as the most powerful hacker." (His spellings
+kept.)
+
+![Beat 1113](screenshots/1175-game-destroyed-in-three-hours.png)
+
+![Beat 1114](screenshots/1176-the-most-powerful-thing.png)
+
+![Beat 1115](screenshots/1177-red-0s-and-1s.png)
+
+![Beat 1116](screenshots/1178-hackers-instantly-lose.png)
+
+![Beat 1117](screenshots/1179-nobody-to-play-with.png)
+
+- LV_CYC 24206.0 -> 24316.0, five new LV_BEATS rows (1113-1117): GAME DESTROYED IN THREE HOURS, THE MOST POWERFUL
+  THING, RED 0S AND 1S, HACKERS INSTANTLY LOSE, NOBODY TO PLAY WITH. New capture scenes `b1113`-`b1117`. Tools:
+  `gen1113.py`, `build1113.py`, `scenes1113.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on
+  the extracted script); runtime probe len=1118 maxPh=1117 holes=0 err=0.
+- Priors drawn: 2:31 PM the largest, longest attack ever; 10:03 AM "the game could completely fail" and "the game
+  doesn't get repaired"; Aug 25 Hollow: Void (lag between exploding and crashing); 2:19 PM the Classics time is 31;
+  9:54 AM a body of futuristic materials and code itself, he can edit himself, Claude's project games would disappear;
+  2:28 PM "I am code"; 2:16 PM thousands of accounts, impossible to attack, "Your account is now Alexen's"; 8:23 AM
+  Alexen Omazen, "Everyone, come and play!", "They will literally run"; 2:31 PM Alex 303; Oct 1 Entity 12 (red glowing
+  12s); Sept 7 "50 years later" (the paint portal); 10:03 AM control back on November 1; Sept 29 C0de taken down with
+  50 others (beat 937); Oct 11 Classics named after his daughter; 1:50 PM "I renamed it, cause I wanted to"; Oct 10
+  Neka wiped out the underground, "no one is underground anymore".
+
 ## 2026-10-12 — EVERY OCTOBER 31, THEPERONEKAALEXEN303, /TIME SET 31, I AM CODE, ALEX 303 (BEATS 1107-1112)
 
 Based on Toby's 2026-10-12 lore, 2:09-2:31 PM, thread "Once again, Another Document" (`1a1311788bf63073`), six

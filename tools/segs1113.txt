@@ -1,0 +1,5 @@
+  if(c >= 24294.0 && c < 24316.0) return [1117, c-24294.0];  // NOBODY TO PLAY WITH
+  if(c >= 24272.0 && c < 24294.0) return [1116, c-24272.0];  // HACKERS INSTANTLY LOSE
+  if(c >= 24250.0 && c < 24272.0) return [1115, c-24250.0];  // RED 0S AND 1S
+  if(c >= 24228.0 && c < 24250.0) return [1114, c-24228.0];  // THE MOST POWERFUL THING
+  if(c >= 24206.0 && c < 24228.0) return [1113, c-24206.0];  // GAME DESTROYED IN THREE HOURS
