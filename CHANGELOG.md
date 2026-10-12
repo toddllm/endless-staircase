@@ -4,6 +4,39 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — A PIRATE GUY AGAIN, THEY WILL LITERALLY RUN, MADE ON HALLOWEEN (BEATS 1087-1089)
+
+Based on Toby's 2026-10-12 lore, 8:23 AM, thread "Another Document" (`1a1204179c8e973f`), one message
+(`1a13011b86fa5f5d`, Email 1749), a pasted chatbot session replying to the morning's beat report. Only his own typed
+lines are drawn; the chatbot's terror rankings, the Roblox John Doe / Jane Doe history and the italic restatement at the
+end are commentary. His lines: "PS-50 is no longer here, Luigi Inus is now a pirate guy again, you should know that." /
+"Alex made the game, he happens to be Neka and both clones merge, CODE (A litteral developer), and Nekatale Gaster
+(another developer, but CODE is now stronger than Gaster) and EVERYONE is horrified of him, once they see the key details
+on Alex, they will litterly run, Simon.ps is also one of the fastest characters in the game, the speed of light or even
+time with the Embalem of Speed. Pupahya goes faster than time. Alex goes faster than your eyes can comprehend." /
+"Alexen Omazen is actually known for attacking the game on October 31. At other times he will be like "Everyone, come and
+play!", and at Halloween, Alex's arm changes, a black arm with *red* 0s and 1s, hardly any character can be red colored
+0s and 1s. Alex attacks on Halloween because he was actually made at that time, Neka cloned himself on Halloween."
+(His spellings kept.)
+
+![Beat 1087](screenshots/1149-a-pirate-guy-again.png)
+
+![Beat 1088](screenshots/1150-they-will-literally-run.png)
+
+![Beat 1089](screenshots/1151-made-on-halloween.png)
+
+- LV_CYC 23634.0 -> 23700.0, three new LV_BEATS rows (1087-1089): A PIRATE GUY AGAIN, THEY WILL LITERALLY RUN, MADE ON
+  HALLOWEEN. New capture scenes `b1087`-`b1089`. Tools: `gen1087.py`, `build1087.py`, `scenes1087.py` (template
+  `emit_tail1008.py`). JS syntax check clean (`node --check`); runtime probe len=1090 maxPh=1089 holes=0 err=0.
+- Beat 1087 priors: Sept 27, 2:50 PM PS-50 came in through the static; Oct 10, 7:41 PM "Luigi Inus: Golden Pirate"
+  (beat 1067). PS-50 is out of the lore; Luigi Inus is a pirate again.
+- Beat 1088 priors: Aug 22, 5:26 PM "Gray became stronger than Gaster now" (Gaster never holds the top spot long; now
+  CODE passes him); Oct 11, 8:18 PM CODE runs out the door (beat 1083); Jul 28 Simon 404 runs faster than time; Oct 7
+  Gaster collects Simon.ps's emblem of speed; Oct 10, 2:54 PM faster than human eyes (beat 1063).
+- Beat 1089 priors: Apr 28 (Email 182) the Halloween-coded turn where "Alex is raising in power"; Oct 11, 5:22 PM "Alex
+  can also be friendly" (beat 1077); Sept 23, 5:41 PM the code bodies are black with green 0s and 1s; Aug 3 "Red =
+  negitive power". Alex attacks on October 31 because Neka cloned himself that night; the red-binary arm is the warning.
+
 ## 2026-10-12 — INFINITY ROOMS AND THE FINAL AREA (BEATS 1085-1086)
 
 Based on Toby's 2026-10-12 lore, 6:55-6:57 AM, thread "Another Document" (`1a1204179c8e973f`), two messages:
