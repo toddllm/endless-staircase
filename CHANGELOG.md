@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — NOT AFTER OCTOBER 31, 5000 NEKA-COINS (BEATS 1093-1094)
+
+Based on Toby's 2026-10-12 lore, 11:39 AM and 11:44 AM, thread "Another Document" (`1a1204179c8e973f`), two messages
+(`1a130c5751239c65`, Email 1754; `1a130c9acdd1c4e2`, Email 1755), both replies to the 10:20 AM beat report. Only his own
+typed lines are drawn; the italic restatements ("adds a memory cutoff after October 31", "friendly side before Halloween
+approaches") are the chatbot's commentary. His lines: "Time leans closer and closer... Alexen will eventually take over
+Classics. Also, he remembers everything he done, he remembers everything, but not after October 31." / 11:44 AM: "Alexen
+walks to say that everyone will get free Neka-Coins on this day, and it was correct, everyone got 5000 Neka-Coins."
+(His spellings kept.) A third message at 11:38 AM (`1a130c3facd43334`, Email 1753) is a pasted chatbot session about
+ChelseaPlays' Stuffy World (foxes kind to snakes, every stuffy has supernatural powers); it is not Classics lore and got
+no beat.
+
+![Beat 1093](screenshots/1155-not-after-october-31.png)
+
+![Beat 1094](screenshots/1156-5000-neka-coins.png)
+
+- LV_CYC 23766.0 -> 23810.0, two new LV_BEATS rows (1093-1094): NOT AFTER OCTOBER 31, 5000 NEKA-COINS. New capture
+  scenes `b1093`-`b1094`. Tools: `gen1093.py`, `build1093.py`, `scenes1093.py` (template `emit_tail1008.py`). JS syntax
+  check clean (`node --check` on the extracted script); runtime probe len=1095 maxPh=1094 holes=0 err=0.
+- Beat 1093 priors: the 10:20 AM reply asked whether Alexen remembers Halloween night; this is the answer (everything he
+  has done, nothing after October 31). Oct 12, 8:23 AM he attacks on October 31 (beat 1089); Oct 12, 9:54 AM he edits
+  himself (beat 1091) and his birthday is October 31; May 3 Gray's FULL RESET, where only the one who pressed it kept
+  his memory. "Memory cutoff" is the chatbot's phrase; his words are "not after October 31". "Eventually" is his word for
+  the takeover.
+- Beat 1094 priors: "Neka-Coins" has zero hits in the archive before today, so this is the first currency in Classics;
+  Oct 11 (Email 1736) "Luigi Inus gets more gold" was the only money before. Oct 12, 8:23 AM "Everyone, come and play!"
+  (the friendly daytime Alex); Oct 12, 10:03 AM servers up on the October day, attack on the October night (beat 1092).
+  "On this day" is his phrase; "before Halloween approaches" is the chatbot's.
+
 ## 2026-10-12 — LOSES CONTROL, MADE OF CODE ITSELF, NOVEMBER 1 (BEATS 1090-1092)
 
 Based on Toby's 2026-10-12 lore, 9:54 AM and 10:03 AM, thread "Another Document" (`1a1204179c8e973f`), two messages

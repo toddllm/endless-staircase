@@ -1,0 +1,2 @@
+  if(c >= 23788.0 && c < 23810.0) return [1094, c-23788.0];  // 5000 NEKA-COINS
+  if(c >= 23766.0 && c < 23788.0) return [1093, c-23766.0];  // NOT AFTER OCTOBER 31
