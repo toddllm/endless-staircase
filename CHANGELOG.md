@@ -4,6 +4,54 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — AREA 303 TO AREA INFINITY: THE SANITY BAR, 3:03, EPISODE 2027, 100% THE GAME (BEATS 1095-1103)
+
+Based on Toby's 2026-10-12 lore, 1:09-1:34 PM, new thread "Once again, Another Document" (`1a1311788bf63073`), seven
+messages (`1a1311788bf63073` Email 1756, `1a13118e5246c318` 1757, `1a1311a523f6a68f` 1758, `1a1311df0114b2a1` 1759,
+`1a1312809235fa0a` 1760, `1a1312a104fca97d` 1761, `1a1312e228685d1c` 1762). Only his own typed lines are drawn; the
+italic restatements ("event-driven clock", "frozen game-state marker", "their escape hasn't been confirmed yet", "shared,
+suspicious reaction", "Alex twists Luigi's words") are the chatbot's commentary. His lines, in order: the game becomes a
+realistic anime with Neka-Coins raining from the sky, Simon.ps adds a Sanity bar, Sky.ps's doll loses its face, the 3rd
+floor collapses, the calendar says October 12 2026 and the clock says 2:00 then 3:03 "303 seconds later" ("You see?
+Halloween in Classics is near."); "Classics stayed 3:03"; static says "Classics Area 303" and the 2nd floor falls;
+"Sanity says "Insane"" and the 1st floor falls, survivors Luigi Inus, Gaster and the Undertale characters, the 20
+Sprunkis; "Episode 2027: The Area 304", a maze of snakes and fake voices, Wenda.ps takes down the Sprunkis and Gray.ps
+dies; Area 305 "an infinite hallway of trapdoors, simular to the one Gaster had to escape at :) Era"; they beat Area 12X
+and find Alex in Area Infinity ("IT ISN'T HALLOWEEN YET!" / "That was just the normal horror game running."), it
+demolishes, Alexen goes to his "Neka" HQ and puts them in a white room; spikes, "This is 100% the game ... Nothing
+irregular happening. 😉", two fox emoji; "It is October 12, not 31." / "I am Neka LAI. I made this game." / "This game is
+correct." and eighteen fox emoji. (His spellings kept.)
+
+![Beat 1095](screenshots/1157-the-sanity-bar.png)
+
+![Beat 1096](screenshots/1158-the-clock-says-3-03.png)
+
+![Beat 1097](screenshots/1159-classics-area-303.png)
+
+![Beat 1098](screenshots/1160-insane.png)
+
+![Beat 1099](screenshots/1161-episode-2027-the-area-304.png)
+
+![Beat 1100](screenshots/1162-area-305-trapdoors.png)
+
+![Beat 1101](screenshots/1163-area-infinity.png)
+
+![Beat 1102](screenshots/1164-100-percent-the-game.png)
+
+![Beat 1103](screenshots/1165-october-12-not-31.png)
+
+- LV_CYC 23810.0 -> 24008.0, nine new LV_BEATS rows (1095-1103): THE SANITY BAR, THE CLOCK SAYS 3:03, CLASSICS AREA
+  303, INSANE, EPISODE 2027: THE AREA 304, AREA 305: TRAPDOORS, AREA INFINITY, 100% THE GAME, OCTOBER 12, NOT 31. New
+  capture scenes `b1095`-`b1103`. Tools: `gen1095.py`, `build1095.py`, `scenes1095.py` (template `emit_tail1008.py`). JS
+  syntax check clean (`node --check` on the extracted script); runtime probe len=1104 maxPh=1103 holes=0 err=0.
+- Priors drawn: Sept 2 "Sanity and Power" (the only prior "Sanity"; "Insane" has 109 hits); Oct 10 Sky.ps turns Sprunkis
+  into dolls; Oct 11 (Email 1738) Classics is all the universe, not this one; Oct 12 6:55 AM Area 12X is infinity rooms
+  called Areas; Sept 27 PS-50 and Oct 12 9:54 AM Alexen through the static; Sept 25 the 20 Sprunkis became zombies;
+  Jul 13 Page < Episode < Chapter; Oct 10 Mr. Black controlling Wenda.ps; Oct 7 the Infinite Hallway (Endless Staircase
+  2) with the :)s pouring out; Oct 9 Area 12X is every game; Oct 12 6:57 AM the Final Area is wherever Alex stands;
+  Pero's Realm as a white room; Oct 11 "say my name" / "Alexen"; Oct 6 CODE "(you know him 😉)"; Oct 11 Alex made the
+  game and is Neka; Oct 11 8:00 PM Neka named the game "Neka"; Oct 12 8:23 AM attack on October 31, everyone runs.
+
 ## 2026-10-12 — NOT AFTER OCTOBER 31, 5000 NEKA-COINS (BEATS 1093-1094)
 
 Based on Toby's 2026-10-12 lore, 11:39 AM and 11:44 AM, thread "Another Document" (`1a1204179c8e973f`), two messages

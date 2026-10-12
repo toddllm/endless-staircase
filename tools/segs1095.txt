@@ -1,0 +1,9 @@
+  if(c >= 23986.0 && c < 24008.0) return [1103, c-23986.0];  // OCTOBER 12, NOT 31
+  if(c >= 23964.0 && c < 23986.0) return [1102, c-23964.0];  // 100% THE GAME
+  if(c >= 23942.0 && c < 23964.0) return [1101, c-23942.0];  // AREA INFINITY
+  if(c >= 23920.0 && c < 23942.0) return [1100, c-23920.0];  // AREA 305: TRAPDOORS
+  if(c >= 23898.0 && c < 23920.0) return [1099, c-23898.0];  // EPISODE 2027: THE AREA 304
+  if(c >= 23876.0 && c < 23898.0) return [1098, c-23876.0];  // INSANE
+  if(c >= 23854.0 && c < 23876.0) return [1097, c-23854.0];  // CLASSICS AREA 303
+  if(c >= 23832.0 && c < 23854.0) return [1096, c-23832.0];  // THE CLOCK SAYS 3:03
+  if(c >= 23810.0 && c < 23832.0) return [1095, c-23810.0];  // THE SANITY BAR
