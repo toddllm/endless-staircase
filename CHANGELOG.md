@@ -4,6 +4,28 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — INFINITY ROOMS AND THE FINAL AREA (BEATS 1085-1086)
+
+Based on Toby's 2026-10-12 lore, 6:55-6:57 AM, thread "Another Document" (`1a1204179c8e973f`), two messages:
+6:55 AM (`1a12fc13e00fcc28`) and 6:57 AM (`1a12fc2c78e0803b`), both replies to last night's beat report. Only his own
+lines are drawn; the italic restatements under each ("contains infinitely many rooms ... onward without end", "The name
+comes from their fear of Alex's authority") are the chatbot's rewrites and are commentary. His lines: "Area12X is split
+into infinity rooms called "Areas" and it would be Area 0, Area 1, Area 2, Area 3,..." / "The Final Area is a myth,
+people say it is where ever Alex stands in Classics. Because they know Alex can basically take them out of code, can
+delete Classics accounts, and all these stuff." (His spellings kept.)
+
+![Beat 1085](screenshots/1147-infinity-rooms.png)
+
+![Beat 1086](screenshots/1148-the-final-area.png)
+
+- LV_CYC 23590.0 -> 23634.0, two new LV_BEATS rows (1085-1086): INFINITY ROOMS, THE FINAL AREA. New capture scenes
+  `b1085`-`b1086`. Tools: `gen1085.py`, `build1085.py`, `scenes1085.py` (template `emit_tail1008.py`). JS syntax
+  check clean (`node --check`); runtime probe len=1087 maxPh=1086 holes=0 err=0.
+- Beat 1085 priors: Oct 8, 7:14 PM "Everyone has their own room. Neka has the whole place." (Area 12X, Email 1669);
+  the rooms are now numbered from Area 0 with no last number.
+- Beat 1086 priors: Oct 11, 8:18 PM CODE runs out the door from Alex (beat 1083); the Final Area has no room number,
+  it is wherever Alex stands, and the fear behind the name is the same one CODE ran from.
+
 ## 2026-10-11 — NEKA WINS THROUGH HIS OWN MIND (BEATS 1074-1084)
 
 Based on Toby's 2026-10-11 lore, 3:54-8:20 PM, thread "Another Document" (`1a1204179c8e973f`), eleven messages:

@@ -1,0 +1,2 @@
+  if(c >= 23612.0 && c < 23634.0) return [1086, c-23612.0];  // THE FINAL AREA
+  if(c >= 23590.0 && c < 23612.0) return [1085, c-23590.0];  // INFINITY ROOMS
