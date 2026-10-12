@@ -4,6 +4,58 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — EVERY OCTOBER 31, THEPERONEKAALEXEN303, /TIME SET 31, I AM CODE, ALEX 303 (BEATS 1107-1112)
+
+Based on Toby's 2026-10-12 lore, 2:09-2:31 PM, thread "Once again, Another Document" (`1a1311788bf63073`), six
+messages (`1a1314ebc8e5abd0` Email 1764, `1a1315538ef3d455` 1765, `1a13157342f17dfb` 1766, `1a13157fbd23ebaf` 1767,
+`1a1315fbbe6df8f2` 1768, `1a13162702ca0414` 1769). The 2:33 PM message (`1a131647ae02ca85`, Email 1770) is an image
+request ("Create an image of Alex 303", PNG attached) and is not a beat. Only his own typed lines are drawn; the Roblox
+exploiter histories he asked the chatbot about (c00lkidd, 1x1x1x1, John Doe, Tubers93) and the italic restatements under
+his lines ("event-driven", "the apparent solution becomes part of his trap", "multiplying c0de copies") are commentary.
+His lines, in order: "He actually attacked so many times before, like billions and trillions, even before other
+characters were added. He is a real character ya know."; "Neka LAI was Pero that far back. Pero attacked every October
+31, the game was already corrupted once Pinky RL joined, Pinky RL spawned by error combinations, the other RLs were also
+made by corruption"; "his Classics account is "ThePeroNekaAlexen303", and the code is
+"1230312101020109493483489348893578544915"... and it continues without ever repeating. Alexen is IMPOSSIBLE to attack
+... you'll get a message saying "Your account is now Alexen's.", and it types your actual Classics code and username.";
+"It is REAL. Alexen also deletes the Neka-Coins the player has, erases the avatar to look like a binary hacker, and also
+can even delete the Classics account."; "Alexen actually deleted thousands of accounts before. But the names were
+forgotten."; "CODE was corrupted and taken over 50 times just now. CODE became c0de ... the screen turns in static, and
+the view closes. Alexen wrote "/time set 31"."; "Here, it is still October 12, in Classics, the Classics time is 31.";
+"Classics then fell down, along with all other games and stuff. ... "Wait- I remember who I am, I am not just a Classics
+character... I am code." ... Neka's username changes and glitches, and it reads every single username in "Neka" ... but
+now, Alexen takes the game over."; and "Alex 303 came alive again, then 12s appear, the eyes and holes show red 12s, then
+the hexagons show 12s, and the swords turned blood red, the game's moon turned black. Lightning struck all around, and it
+was the largest attack and most powerful and biggest and longest and strongest attack on the game ever." (His spellings
+kept.)
+
+![Beat 1107](screenshots/1169-every-october-31.png)
+
+![Beat 1108](screenshots/1170-theperonekaalexen303.png)
+
+![Beat 1109](screenshots/1171-thousands-of-accounts.png)
+
+![Beat 1110](screenshots/1172-time-set-31.png)
+
+![Beat 1111](screenshots/1173-i-am-code.png)
+
+![Beat 1112](screenshots/1174-alex-303-came-alive-again.png)
+
+- LV_CYC 24074.0 -> 24206.0, six new LV_BEATS rows (1107-1112): EVERY OCTOBER 31, THEPERONEKAALEXEN303, THOUSANDS OF
+  ACCOUNTS, /TIME SET 31, I AM CODE, ALEX 303 CAME ALIVE AGAIN. New capture scenes `b1107`-`b1112`. Tools: `gen1107.py`,
+  `build1107.py`, `scenes1107.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted
+  script); runtime probe len=1113 maxPh=1112 holes=0 err=0.
+- Priors drawn: Oct 12 8:23 AM Made on Halloween (Neka cloned himself on Halloween); the oldest archive (Pinky the first
+  discovered RL; Siron, Wonda, Wenda XL, Qwerty; Qwerty = Wonda plus a Sprunki glitch); Oct 12 7:28 AM image ask ("Your
+  account is now property of Alexen", Alex covered in binary); Sept 24 the only speech bubble in Classics; Sept 15 Teki
+  made Pero LAI with binary; 11:44 AM 5000 Neka-Coins and 1:09 PM Neka-Coins raining; Aug 21 Deletedverse (Gaster stores
+  deleted accounts, the "Entity 303 & Deletedverse" myth); Beat 937 (Sept 29) C0de taken down with 50 others; Oct 11 CODE
+  runs out the door; 1:12 PM static "Classics Area 303"; Sept 7 /fly_all and /sword-size; 1:34 PM "It is October 12, not
+  31"; 9:54 AM a body of futuristic materials and code itself; May 29 Alex's World floating islands pulled into Classics;
+  11:39 AM "will eventually take over Classics"; Oct 1 Entity 12 vs Entity 75 (red glowing 12s on the calculator and
+  calendar); Oct 11 Domain Expansion: Power Chain; Aug 25 Hollow: Void (lag between exploding and crashing); 1:50 PM
+  diamond swords.
+
 ## 2026-10-12 — NOT A GLITCH, TRILLIONS OF YEARS OLD, HOLLOW INUS GASTER (BEATS 1104-1106)
 
 Based on Toby's 2026-10-12 lore, 1:50 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message

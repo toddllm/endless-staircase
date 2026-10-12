@@ -1,0 +1,6 @@
+  if(c >= 24184.0 && c < 24206.0) return [1112, c-24184.0];  // ALEX 303 CAME ALIVE AGAIN
+  if(c >= 24162.0 && c < 24184.0) return [1111, c-24162.0];  // I AM CODE
+  if(c >= 24140.0 && c < 24162.0) return [1110, c-24140.0];  // /TIME SET 31
+  if(c >= 24118.0 && c < 24140.0) return [1109, c-24118.0];  // THOUSANDS OF ACCOUNTS
+  if(c >= 24096.0 && c < 24118.0) return [1108, c-24096.0];  // THEPERONEKAALEXEN303
+  if(c >= 24074.0 && c < 24096.0) return [1107, c-24074.0];  // EVERY OCTOBER 31
