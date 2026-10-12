@@ -1,0 +1,5 @@
+  if(c >= 24404.0 && c < 24426.0) return [1122, c-24404.0];  // CHAPTER 2: I DO MORE BECAUSE I CAN
+  if(c >= 24382.0 && c < 24404.0) return [1121, c-24382.0];  // PUPAHYA FARM
+  if(c >= 24360.0 && c < 24382.0) return [1120, c-24360.0];  // ACCOUNT #1
+  if(c >= 24338.0 && c < 24360.0) return [1119, c-24338.0];  // AN OFFICIAL ACCOUNT
+  if(c >= 24316.0 && c < 24338.0) return [1118, c-24316.0];  // WHO IS HACKING CLASSICS?

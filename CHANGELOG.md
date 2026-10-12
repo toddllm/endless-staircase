@@ -4,6 +4,46 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-12 — WHO IS HACKING CLASSICS?, AN OFFICIAL ACCOUNT, ACCOUNT #1, PUPAHYA FARM, CHAPTER 2: I DO MORE BECAUSE I CAN (BEATS 1118-1122)
+
+Based on Toby's 2026-10-12 lore, 7:07 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a1325f31b9a3639` Email 1777). The 6:59 PM message before it (`1a132580544b373e` Email 1776) is an image request
+("Create an image of a comparison of the "2" Alex"es"") with a 2.9 MB PNG attached (`Alex AI_ Friend to Hacker.png`, saved as
+simon-lore-bot/attachments/2026-10-12-1859-alex-ai-friend-to-hacker.png) and is not a beat. Only his own typed lines are
+drawn; the italic restatements under his paragraph are the chatbot's. His lines, in order: "Someone would say that CODE is
+hacking Classics and Alex appears and says "Who is hacking Classics?", then the someone would say "CODE", then Alex would
+attack CODE. CODE is canonacially scared of Alex and would never attack the game without 303 Alex AI/LAI."; "Alex still
+constantly looks for someone to play with and he says "I did everything I had done, so I can be an official account, so I
+can have Neka-Coins. I also wanted to give stuff I have to people, but I didn't have anything.""; "Alex gave everyone a
+sliver of a coin. Alex then became officially Account #1. The creator did play the game first. Now he can play constantly
+again, but with no people."; "Alex builds a Pupahya Farm game, and also games of each character. Alex then made fun-time
+happen, just like Fun Computer said would happen. Basically everyone was happy."; and "Alex still wasn't happy, he wanted
+to do more, so he then ended "Chapter 1: Classics", and made "Chapter 2: I Do More Because I Can"". (His spellings kept.)
+
+![Beat 1118](screenshots/1180-who-is-hacking-classics.png)
+
+![Beat 1119](screenshots/1181-an-official-account.png)
+
+![Beat 1120](screenshots/1182-account-1.png)
+
+![Beat 1121](screenshots/1183-pupahya-farm.png)
+
+![Beat 1122](screenshots/1184-chapter-2-i-do-more-because-i-can.png)
+
+- LV_CYC 24316.0 -> 24426.0, five new LV_BEATS rows (1118-1122): WHO IS HACKING CLASSICS?, AN OFFICIAL ACCOUNT,
+  ACCOUNT #1, PUPAHYA FARM, CHAPTER 2: I DO MORE BECAUSE I CAN. New capture scenes `b1118`-`b1122`. Tools: `gen1118.py`,
+  `build1118.py`, `scenes1118.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted
+  script); runtime probe len=1123 maxPh=1122 holes=0 err=0.
+- Priors drawn: Oct 11 8:18 PM CODE's "DON'T DELETE ME!!!!" and the run out the door; 2:19 PM CODE taken over 50 times
+  and c0de attacking for Alexen; 4:33 PM hackers instantly lose; 2:16 PM the account ThePeroNekaAlexen303 and the deleted
+  Neka-Coins; 11:44 AM 5000 Neka-Coins for everyone; Sept 4 "I am the creator of the game" and 1:34 PM "I am Neka LAI. I
+  made this game."; 4:35 PM nobody to play with; Pupahya appears when Alex walks (character page) and Aug 17 Alex learns to
+  say Pupahya; Sept 7 the 150+ older Classics characters; Email 277 Fun Computer the warning system and Simon says whatever
+  it says (the archive has no earlier Fun Computer line promising fun-time; Toby asked); Sept 25 "This is the Neka Omazen
+  Era"; Oct 11 "Alexen has his own mind so he can"; 4:19 PM "it can basically do anything".
+- Not drawn: the chatbot's italic restatements ("CODE's fear is also established", "That leads into Chapter 2"); the image
+  request and its PNG.
+
 ## 2026-10-12 — GAME DESTROYED IN THREE HOURS, THE MOST POWERFUL THING, RED 0S AND 1S, HACKERS INSTANTLY LOSE, NOBODY TO PLAY WITH (BEATS 1113-1117)
 
 Based on Toby's 2026-10-12 lore, 4:12-4:35 PM, thread "Once again, Another Document" (`1a1311788bf63073`), five
