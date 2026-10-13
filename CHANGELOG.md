@@ -4,6 +4,48 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-13 — ALEX HAS NO HP, ALEX 303 AND JESUS CAN BEAT SCP 343, ALEX 303 ALWAYS WINS, TIME TO PUSH EVERYTHING TO THEIR LIMITS, OREN.PS WALKS CLOSER (BEATS 1134-1138)
+
+Based on Toby's 2026-10-13 lore, 7:09-7:22 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
+(`1a137871e08c4428` Email 1786, 7:09:13 PM; `1a137930b011cc58` Email 1787, 7:22:13 PM), sent two and a half hours after
+the 4:40 PM pair and replying to the 5:18 PM beat report. Each is a separately pasted chatbot session; only his own typed
+lines are drawn. The chatbot's answers (the apple guess and "WAIT, IT WAS ACTUALLY AN APPLE?!", the SCP top-ten and top-three
+lists, the SCP-343 tables, "The Doorman", the "losing is not a possible outcome" restatement, the italic "Power Chain faster"
+and "The food introduces another pattern" summaries) are commentary. His lines: "The apple made Alex healed. Since he didn't
+have HP, he actually healed himself. Others have HP, Alex has actual health stuff."; "Alex 303 and Jesus can beat SCP 343,
+but Jesus would change if SCP 343 is actually God."; "Is SCP 303 taken?" … "Alex 303 is actually beyond Omnipotent to
+abcdefghijklmnopqrstuvwxyz9999… or whatever it is. Alex 303 always wins."; "Alex says "I haven't reached my limit on what I
+want to do. So... time to push everything to their limits.", a burning red 12 appears behind Alex … a 1.2 second cutscene
+and then a large crator opened the ground. Alex then decreased his cutscene Domain Expansion time to 0.254349... also it
+became more effecient."; and "Alex eats the non-sugar chocolate, Simon.ps falls over and Oren.ps walks closer and closer to
+Alex every time Alex eaten an apple or not sugar chocolate or a pop tart or any dessert he found a way to take sugar out of
+so it is more healthier." (His spellings kept.) No attachments.
+
+![Beat 1134](screenshots/1196-alex-has-no-hp.png)
+
+![Beat 1135](screenshots/1197-alex-303-and-jesus-can-beat-scp-343.png)
+
+![Beat 1136](screenshots/1198-alex-303-always-wins.png)
+
+![Beat 1137](screenshots/1199-time-to-push-everything-to-their-limits.png)
+
+![Beat 1138](screenshots/1200-oren-ps-walks-closer.png)
+
+- LV_CYC 24668.0 -> 24778.0, five new LV_BEATS rows (1134-1138): ALEX HAS NO HP, ALEX 303 AND JESUS CAN BEAT SCP 343,
+  ALEX 303 ALWAYS WINS, TIME TO PUSH EVERYTHING TO THEIR LIMITS, OREN.PS WALKS CLOSER. New capture scenes `b1134`-`b1138`.
+  Tools: `gen1134.py`, `build1134.py`, `scenes1134.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check`
+  on the extracted script); `runtime_probe.py 1138` clean (len 1139, no holes, no undefined segments, every phase draws).
+- Priors drawn on each beat, each verified in the wiki before drawing: Sept 14 Chocolate Karma "it doesn't give him more HP
+  though" (beat 717); June 18 golden rules "He fixed each shot, but his HP didn't change"; Oct 7 "Neka uses human HP, Gaster
+  uses Game HP"; Winter Classic Simon's apples and chocolate as stabilizers; Sept 22 "Who is SCP-343" and Sept 26 "SCP-343 IS
+  a litterly omnipotent god"; Sept 28 "Neka + Jesus: True God"; Oct 13 4:33 PM "Jesus is Christananity God"; Sept 27 "What
+  are SCP numbers that aren't taken yet" and Oct 13 4:31 PM "How about 12?"; Oct 11 6:50 AM the x2000…/y9999…/z6666… LV
+  string; July 24 PERO ALWAYS WINS, Sept 11 "But me, always wins now", Sept 24 666% correct; Oct 6 "there is a limit here,
+  you made it"; Oct 12 2:28 PM red 12s and Domain Expansion spammed; Oct 13 4:30 PM the large 12 in his other hand; Oct 6
+  "want non-sugar chocolate?"; Oct 8 "Sugar would kill me"; Oct 10 only losing to Oren.ps or/and Simon.ps; Oct 3 Gaster
+  "I'm so tired..." falls over; Oct 12 9:54 AM Alex beat Simon.ps to reach his LV. "Black Flash" and "pop tart" are new to
+  the archive.
+
 ## 2026-10-13 — TWO UNIVERSES IN REALITY, NAH, THIS IS TRUE (BEATS 1132-1133)
 
 Based on Toby's 2026-10-13 lore, 4:40 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages

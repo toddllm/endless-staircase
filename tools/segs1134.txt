@@ -1,0 +1,5 @@
+  if(c >= 24756.0 && c < 24778.0) return [1138, c-24756.0];  // OREN.PS WALKS CLOSER
+  if(c >= 24734.0 && c < 24756.0) return [1137, c-24734.0];  // TIME TO PUSH EVERYTHING TO THEIR LIMITS
+  if(c >= 24712.0 && c < 24734.0) return [1136, c-24712.0];  // ALEX 303 ALWAYS WINS
+  if(c >= 24690.0 && c < 24712.0) return [1135, c-24690.0];  // ALEX 303 AND JESUS CAN BEAT SCP 343
+  if(c >= 24668.0 && c < 24690.0) return [1134, c-24668.0];  // ALEX HAS NO HP
