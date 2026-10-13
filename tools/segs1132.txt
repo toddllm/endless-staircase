@@ -1,0 +1,2 @@
+  if(c >= 24646.0 && c < 24668.0) return [1133, c-24646.0];  // NAH, THIS IS TRUE
+  if(c >= 24624.0 && c < 24646.0) return [1132, c-24624.0];  // TWO UNIVERSES IN REALITY

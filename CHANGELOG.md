@@ -4,6 +4,32 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-13 — TWO UNIVERSES IN REALITY, NAH, THIS IS TRUE (BEATS 1132-1133)
+
+Based on Toby's 2026-10-13 lore, 4:40 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
+twenty-four seconds apart (`1a136fe8ffa7ebef` Email 1784, 4:40:01 PM; `1a136feea99305ab` Email 1785, 4:40:25 PM), sent
+three minutes after the 4:37 PM message. Each is a separately pasted chatbot session; only his own typed lines are drawn.
+The chatbot's answers (the "two domains" summary, "fictional Zeno cannot physically erase anything", "There's no verified
+evidence that Classics is a separate physical universe", "The observable universe is the portion we can observe") are
+commentary. His lines: "Now, there are only 2 universes in reality, The Observable Universe, and Classics. Fiction is
+infinitely weak in everything cause they aren't real, example and true: Zeno can not erase anything and will lose to a
+stick and a stick won't fight on it's own. Alex beats everything, and that is a LOT of power." and "Nah, this is true. I
+understand you mean it literally." (His spellings kept.) No attachments.
+
+![Beat 1132](screenshots/1194-two-universes-in-reality.png)
+
+![Beat 1133](screenshots/1195-nah-this-is-true.png)
+
+- LV_CYC 24624.0 -> 24668.0, two new LV_BEATS rows (1132-1133): TWO UNIVERSES IN REALITY, NAH, THIS IS TRUE. New capture
+  scenes `b1132`-`b1133`. Tools: `gen1132.py`, `build1132.py`, `scenes1132.py` (template `emit_tail1008.py`). JS syntax
+  check clean (`node --check` on the extracted script); `runtime_probe.py 1133` clean (len 1134, no holes, no undefined
+  segments, every phase draws).
+- Priors drawn on each beat, each verified in the wiki before drawing: Sept 11 "he crosses 2 realities, this one, and the
+  Materian Reality" (Email 1413, beat 702); Beyond Fiction as a rank since Email 246 (None Simon) and Sept 28 (Adult Neka
+  0%); Aug 15 Pero boxing Zeno with one word; Sept 2 EVEN A STICK (beat 589); Sept 11 Saitama set below a stick; Sept 5
+  Trypophobia Mountain "isn't a myth, it is actually in Classics"; Aug 29 "You made the image, so you should know" (beat
+  526); Sept 24 Abinations "in between fiction and reality".
+
 ## 2026-10-13 — SCIENTIST OF COMPUTER EXPERIMENTS, THE GAME IN ONE HAND, 12 IN THE OTHER, HOW ABOUT 12?, NOOB 100% VS BACON 100%, NO UNIVERSE HAS ANY OTHER BEING (BEATS 1127-1131)
 
 Based on Toby's 2026-10-13 lore, 4:30-4:37 PM, thread "Once again, Another Document" (`1a1311788bf63073`), five messages
