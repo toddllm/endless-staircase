@@ -4,6 +4,54 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-13 — SCIENTIST OF COMPUTER EXPERIMENTS, THE GAME IN ONE HAND, 12 IN THE OTHER, HOW ABOUT 12?, NOOB 100% VS BACON 100%, NO UNIVERSE HAS ANY OTHER BEING (BEATS 1127-1131)
+
+Based on Toby's 2026-10-13 lore, 4:30-4:37 PM, thread "Once again, Another Document" (`1a1311788bf63073`), five messages
+(`1a136f5f6b9abc88` Email 1779, `1a136f72b4bf8c7e` Email 1780, `1a136f8765c8ee8f` Email 1781, `1a136f979d73f650` Email 1782,
+`1a136fbd1d794e68` Email 1783), sent after the October 13, 3:50 PM beat report. Each is a separately pasted chatbot session;
+the first three are one conversation sent newest part first ("Here is the part before it", "Here is the first part, the part
+before it"). Only his own typed lines are drawn; the chatbot's answers (the SCP designations, the SCP-3812 and Keter and
+SCP-012 write-ups, the Noob/Bacon tables and rankings, the "narrative layers" answer) and the italic summaries at the end of
+each paste are commentary. Email 1779 carries a 3.2 MB PNG (`Entity 12_ Reality Protocols.png`, 1122 x 1402: Alex 303 holding
+a boxed game world in one hand and a red 12 in the other, saved as simon-lore-bot/attachments/2026-10-13-1630-entity-12-reality-protocols.png);
+it is the picture he describes and is saved, not drawn. His lines, in order: "Alex 303 VS SCP 3812, which wins?"; "He actually
+did all that. Also what is the narrative containing Alex?"; "Alex grabs the game and has a large 12 in his other hand, some
+show Neka Omazen's scientist form almost grabbing the other characters, or even trying to escape the screen."; "Alex is also a
+scientist, of Computer Experiments, he even tests to make corruption and other stuff into infectionious anti-viruses made by
+him."; "What is Class Keter? Also is SCP 012 already taken?"; "How about 12?"; "Noobs go up to Noob with Admin Commands or
+Owner of Roblox Noob, Bacons go to Jesus Holding Bacon Hair Best Duo. Bacons are stronger. But Noobs should be stronger if a
+Bacon didn't have that form."; "But also the Evil Bacon is Full Power, also the Noob, so Noob 100% VS Bacon 100%, Noob would
+win."; "Neka LAI would beat both and everyone together, even SCP The-Voice-Behind-Me (strongest known SCP... so far)";
+"Everything connects, even other beings lore. Alex 303 is the most powerful."; and "No universe has any other being. Alex is
+the most powerful by far actually (Neka Omazen is most powerful)". (His spellings kept.)
+
+![Beat 1127](screenshots/1189-scientist-of-computer-experiments.png)
+
+![Beat 1128](screenshots/1190-the-game-in-one-hand-12-in-the-other.png)
+
+![Beat 1129](screenshots/1191-how-about-12.png)
+
+![Beat 1130](screenshots/1192-noob-100-vs-bacon-100.png)
+
+![Beat 1131](screenshots/1193-no-universe-has-any-other-being.png)
+
+- LV_CYC 24514.0 -> 24624.0, five new LV_BEATS rows (1127-1131): SCIENTIST OF COMPUTER EXPERIMENTS, THE GAME IN ONE HAND,
+  12 IN THE OTHER, HOW ABOUT 12?, NOOB 100% VS BACON 100%, NO UNIVERSE HAS ANY OTHER BEING. New capture scenes `b1127`-`b1131`.
+  Tools: `gen1127.py`, `build1127.py`, `scenes1127.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on
+  the extracted script); runtime probe len=1132 maxPh=1131 holes=0 err=0.
+- Priors drawn: Oct 6 7:26 PM the scientist/plague-doctor who makes everything he sees into anti-virus and infects the code;
+  Oct 6 5:33 PM :) taken over and made an anti-virus whose existence breaks the game, /tickfreeze; Oct 12 2:09 PM Pinky RL
+  spawned by error combinations and the other RLs made by corruption; Oct 8 Classics and all its games inside Area 12X, every
+  being in a cell, Neka never in one; Oct 12 1:34 PM "I am Neka LAI. I made this game."; Oct 1 Entity 12, "saying the number
+  even once will answer Neka"; Oct 6 the code says 1348; Sept 28 Adult Neka 0% is Beyond Fiction and at 5% the screen glitches
+  and Bacon's power level falls; Oct 10 the Classics Barrier; Sept 27 (Email 1552) "What are SCP numbers that aren't taken
+  yet."; Oct 11 every Undertale AU, every game of characters, the timelines; Oct 12 4:15 PM the most powerful thing; Aug 25
+  Saitama and the rest ranked below him; Sept 26-27 SCP-343 "a litterly omnipotent god" and still Neka's lore; Sept 22 Bacon
+  Hair from Roblox beating everyone in power-level videos with his last form; Sept 29 Neka Treatment Neka wins, "bacon
+  fades"; Sept 25 (Email 1517) nobody above him; Sept 25 "Neka Omazen is now here"; Oct 11 Alex the first name.
+- Not drawn: the chatbot's answers and summaries; the SCP numbers and object classes and the Roblox avatar history are
+  outside catalogues the chatbot described; the PNG.
+
 ## 2026-10-13 — ARE YOU ALEXEN?, NOT A SINGLE CLUE, WENDA.PS IS BEING MOVED, ALEX CAN CONTROL THE FORMS (BEATS 1123-1126)
 
 Based on Toby's 2026-10-13 lore, 3:37 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message

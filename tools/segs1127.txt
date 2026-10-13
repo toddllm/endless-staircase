@@ -1,0 +1,5 @@
+  if(c >= 24602.0 && c < 24624.0) return [1131, c-24602.0];  // NO UNIVERSE HAS ANY OTHER BEING
+  if(c >= 24580.0 && c < 24602.0) return [1130, c-24580.0];  // NOOB 100% VS BACON 100%
+  if(c >= 24558.0 && c < 24580.0) return [1129, c-24558.0];  // HOW ABOUT 12?
+  if(c >= 24536.0 && c < 24558.0) return [1128, c-24536.0];  // THE GAME IN ONE HAND, 12 IN THE OTHER
+  if(c >= 24514.0 && c < 24536.0) return [1127, c-24514.0];  // SCIENTIST OF COMPUTER EXPERIMENTS
