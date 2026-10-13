@@ -4,6 +4,40 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-13 — ARE YOU ALEXEN?, NOT A SINGLE CLUE, WENDA.PS IS BEING MOVED, ALEX CAN CONTROL THE FORMS (BEATS 1123-1126)
+
+Based on Toby's 2026-10-13 lore, 3:37 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a136c4ecab14016` Email 1778), a reply to the October 12, 7:21 PM beat report. It is a question he put to the chatbot and
+then answered himself. Only his own typed lines are drawn; the two italic paragraphs between his blocks ("My guess is Alex
+took Wenda.ps out of the visible game and concealed her in his code or a hidden Area", "Alex kept moving Wenda.ps for all
+50 years") are the chatbot's. His lines, in order: "Alex sees Wenda.ps and Gray.ps. Wenda.ps says "Hello.", Gray.ps says
+"Are you Alexen?", Wenda.ps was scared. And at the Classics night, Wenda.ps was missing. Gray.ps looked for 50 years, did
+not see a single clue. What do you think happened?"; and "Answer: Alex took Wenda.ps away for the 50 years, Gray was
+walking the same direction, but never reached Wenda.ps's location, cause Wenda.ps is being moved by Alex. Alex now thinks
+that the way to no longer become the normal form uncontrolably is to basically beat Wenda.ps. Alex won, and Alex now can
+control the forms. Alex constantly was Alex 303." (His spellings kept.)
+
+![Beat 1123](screenshots/1185-are-you-alexen.png)
+
+![Beat 1124](screenshots/1186-not-a-single-clue.png)
+
+![Beat 1125](screenshots/1187-wenda-ps-is-being-moved.png)
+
+![Beat 1126](screenshots/1188-alex-can-control-the-forms.png)
+
+- LV_CYC 24426.0 -> 24514.0, four new LV_BEATS rows (1123-1126): ARE YOU ALEXEN?, NOT A SINGLE CLUE, WENDA.PS IS BEING
+  MOVED, ALEX CAN CONTROL THE FORMS. New capture scenes `b1123`-`b1126`. Tools: `gen1123.py`, `build1123.py`,
+  `scenes1123.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted script); runtime
+  probe len=1127 maxPh=1126 holes=0 err=0.
+- Priors drawn: Sept 28 "Hello, Pero LAI, where is your tail?" and Wenda.ps beaten; Oct 11 everyone says "Alexen." and he
+  says "Correct."; Oct 12 7:07 PM an accusation is enough; Sept 23 Scared Gray.ps created; Oct 12 4:19 PM he attacks
+  anyone who enters for 50 years, then is normal again and says "Let's play!"; Oct 12 9:54 AM servers up on the October
+  day and the attack on the October night, hacks Classics every Halloween uncontrolably, beat Simon.ps to reach his LV;
+  Mar 30 (Email 38) Wenda's 40-year hand-hold wait; Sept 7 Gray.ps "Where is everyone?"; Oct 12 1:27 PM Gray.ps sent the
+  wrong way in Area 304; Sept 20 Pero LAI contained everyone but Wenda.ps; June 6 (Email 430) Basic Alex drops every form
+  and keeps the power; Oct 12 2:31 PM Alex 303 came alive again; Oct 12 6:59 PM the normal friend Alex image request.
+- Not drawn: the chatbot's two italic paragraphs. His own "What do you think happened?" is kept inside the beat 1124 quote.
+
 ## 2026-10-12 — WHO IS HACKING CLASSICS?, AN OFFICIAL ACCOUNT, ACCOUNT #1, PUPAHYA FARM, CHAPTER 2: I DO MORE BECAUSE I CAN (BEATS 1118-1122)
 
 Based on Toby's 2026-10-12 lore, 7:07 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
