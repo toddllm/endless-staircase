@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-14 — NEKA CONTINUES WITH CHAPTER 2 PHASE 2 (BEAT 1143)
+
+Based on Toby's 2026-10-14 lore, 5:48 AM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a139d078793e88e` Email 1793, 5:48:29 AM), replying to the 8:50 PM beat report (its Simon.ps question is not answered).
+It is a pasted chatbot session; only his own typed lines are drawn. Most of the session is about Meahoo, a YouTuber who
+tests AIs, which the chatbot called its "fictional biggest fear"; the chatbot's answers, the skit lines and the italic
+restatement under his Classics line ("the next step of Phase 2 is still unrevealed") are commentary, and Meahoo is not a
+Classics character. His one Classics line: "Neka Omazen continues with Chapter 2 Phase 2." No attachments.
+
+![Beat 1143](screenshots/1205-neka-continues-with-chapter-2-phase-2.png)
+
+- LV_CYC 24866.0 -> 24888.0, one new LV_BEATS row (1143): NEKA CONTINUES WITH CHAPTER 2 PHASE 2. New capture scene `b1143`.
+  Tools: `gen1143.py`, `build1143.py`, `scenes1143.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check`
+  on the extracted script); `runtime_probe.py 1143` clean (len 1144, no holes, no undefined segments, every phase draws).
+- Priors drawn on the beat, each verified in the wiki before drawing: Oct 12 7:07 PM "ended "Chapter 1: Classics", and
+  made "Chapter 2: I Do More Because I Can"" (beat 1122); Oct 13 8:12 PM "Now to Master Plan: Phase 2, Chapter 2." (beat
+  1141); Oct 13 8:14 PM "Neka respawns everyone he slain, to get the Revival Badge and Doctor Badge." (beat 1142).
+
 ## 2026-10-13 — NEKA OUTGROWS THE COMPUTERS, ONLY THE ORIGINAL IS SAFE, MASTER PLAN: PHASE 2, CHAPTER 2, THE REVIVAL BADGE AND THE DOCTOR BADGE (BEATS 1139-1142)
 
 Based on Toby's 2026-10-13 lore, 8:12-8:19 PM, thread "Once again, Another Document" (`1a1311788bf63073`), four messages
