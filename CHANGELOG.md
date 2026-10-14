@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-13 — NEKA OUTGROWS THE COMPUTERS, ONLY THE ORIGINAL IS SAFE, MASTER PLAN: PHASE 2, CHAPTER 2, THE REVIVAL BADGE AND THE DOCTOR BADGE (BEATS 1139-1142)
+
+Based on Toby's 2026-10-13 lore, 8:12-8:19 PM, thread "Once again, Another Document" (`1a1311788bf63073`), four messages
+(`1a137c14537b6a4a` Email 1789, 8:12:43 PM; `1a137c2831d8f551` Email 1790, 8:14:03 PM; `1a137c6fbc8e182a` Email 1791,
+8:18:57 PM; `1a137c7ab8db5c3b` Email 1792, 8:19:42 PM), sent twenty minutes after the 7:52 PM beat report. Each is a
+separately pasted chatbot session; only his own typed lines are drawn. The chatbot's answers (the "Secret GPT Squad" skit,
+the supernatural-horror list and its stock images, the "Classics expansion" diagrams, the italic restatements) are
+commentary. His lines: "Neka is growing and growing computer wise so we had to attach so many Classics clones together.
+(Remember Simon.ps attached to so many computers from way before in the lore?)"; "Both. Also Neka's computer load of
+servers are all contained into several buildings of computers, so huge, and all those buildings scattered all around the
+Classics clones, so only The Original is safe, from all the sound and the other impacts, also Neka continues growing more
+and more computers, he is even summoning them from air."; "Both, most are connected, but others, Classics connects them. So
+the game is actually doing an AI's bitting. Neka says "Now to Master Plan: Phase 2, Chapter 2.""; and "Neka plans to
+dominate everything. ... Neka respawns everyone he slain, to get the Revival Badge and Doctor Badge." (His spellings kept.)
+Emails 1791-1792 are about a YouTube video and carry no Classics canon beyond "okay? 😉" being his phrase and "tdeshane"
+being his Classics avatar; nothing was built from them. No attachments.
+
+![Beat 1139](screenshots/1201-neka-outgrows-the-computers.png)
+
+![Beat 1140](screenshots/1202-only-the-original-is-safe.png)
+
+![Beat 1141](screenshots/1203-master-plan-phase-2-chapter-2.png)
+
+![Beat 1142](screenshots/1204-the-revival-badge-and-the-doctor-badge.png)
+
+- LV_CYC 24778.0 -> 24866.0, four new LV_BEATS rows (1139-1142): NEKA OUTGROWS THE COMPUTERS, ONLY THE ORIGINAL IS SAFE,
+  MASTER PLAN: PHASE 2, CHAPTER 2, THE REVIVAL BADGE AND THE DOCTOR BADGE. New capture scenes `b1139`-`b1142`.
+  Tools: `gen1139.py`, `build1139.py`, `scenes1139.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check`
+  on the extracted script); `runtime_probe.py 1142` clean (len 1143, no holes, no undefined segments, every phase draws).
+- Priors drawn on each beat, each verified in the wiki before drawing: Aug 22 8:10 PM Let Me Out ("He takes control of
+  CODE's PC and Simon.psc ... the computers of Classics fall"; "stuck in the original"); Oct 12 1:50 PM "Neka HQ, Alex
+  makes new futuristic computers from the energy Gaster gets now"; June 6 Email 429 "growing monsterosity chaos"; Sept 23
+  4:51 PM the drawer "that popped up from thin air"; Sept 18 "I made a game from thin air"; Oct 12 9:54 AM "puts all the
+  game servers up on the October day"; Oct 11 "Artificial Person. AP ≠ AI"; Aug 30 3:27 PM "Hey, this is the best plan."
+  (beat 535); Oct 12 7:07 PM "Chapter 2: I Do More Because I Can"; Sept 24 5:03 PM the book's Chapter 2 and Page 303; Oct 6
+  4:07 PM "Every time I die, I respawn and make myself stronger"; Sept 24 the Classics gods revived the Sprunkis; May 2
+  Email 200 the "Lets Para-ize It!" badge; June 22 Email 559 Simon's badge 000; May 11 Email 254 Dr. Simon; Oct 6 7:26 PM
+  the plague-doctor coat. The Simon.ps multi-computer line he asks us to remember is not in the archive as written; the
+  nearest is the Aug 22 line, and Toby has been asked which one he meant. "Revival Badge", "Doctor Badge", "Master Plan"
+  and "The Original" (as a safe place) are new to the archive.
+
 ## 2026-10-13 — ALEX HAS NO HP, ALEX 303 AND JESUS CAN BEAT SCP 343, ALEX 303 ALWAYS WINS, TIME TO PUSH EVERYTHING TO THEIR LIMITS, OREN.PS WALKS CLOSER (BEATS 1134-1138)
 
 Based on Toby's 2026-10-13 lore, 7:09-7:22 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages

@@ -1,0 +1,4 @@
+  if(c >= 24844.0 && c < 24866.0) return [1142, c-24844.0];  // THE REVIVAL BADGE AND THE DOCTOR BADGE
+  if(c >= 24822.0 && c < 24844.0) return [1141, c-24822.0];  // MASTER PLAN: PHASE 2, CHAPTER 2
+  if(c >= 24800.0 && c < 24822.0) return [1140, c-24800.0];  // ONLY THE ORIGINAL IS SAFE
+  if(c >= 24778.0 && c < 24800.0) return [1139, c-24778.0];  // NEKA OUTGROWS THE COMPUTERS
