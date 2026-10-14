@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-14 — 🦊 = WHAT THEY THINK IS A LIE, THE ATTACK IS COMPLETE (BEATS 1144-1145)
+
+Based on Toby's 2026-10-14 lore, 6:24 AM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a139f104aa50810` Email 1794, 6:24:05 AM), replying to the 6:16 AM beat report (its "what is the next step of Phase 2"
+question is not answered). It is a pasted chatbot session; only his own typed lines are drawn. The chatbot's "13 foxes"
+count, its guess that 🦊 means Neka's "older fox forms", its Recognition/Teasing/Warning/Transformation list and its italic
+restatements ("Luigi's 🦊 means I think you're lying") are commentary. His lines: "🦊🦊🦊🦊🦊🦊🦊🦊🦊🦊🦊🦊🦊 = ?"; "If
+Undertale Gaster or Luigi Inus say "🦊" to Neka, what does it mean?"; "Neka says it as "🦊 = something Gaster and Luigi Inus
+say that they think is a lie.""; and "Alex says again "This is the game, the attack is complete!", Luigi Inus says "🦊" once
+again." No attachments.
+
+![Beat 1144](screenshots/1206-fox-equals-what-they-think-is-a-lie.png)
+
+![Beat 1145](screenshots/1207-the-attack-is-complete.png)
+
+- LV_CYC 24888.0 -> 24932.0, two new LV_BEATS rows (1144-1145): 🦊 = WHAT THEY THINK IS A LIE; THE ATTACK IS COMPLETE. New
+  capture scenes `b1144`, `b1145`. Tools: `gen1144.py`, `build1144.py`, `scenes1144.py` (template `emit_tail1008.py`). JS
+  syntax check clean (`node --check` on the extracted script); `runtime_probe.py 1145` clean (len 1146, no holes, no undefined
+  segments, every phase draws).
+- Priors drawn on beat 1144, each verified in the wiki before drawing: Oct 12 1:29 PM "This is 100% the game ... Nothing
+  irregular happening. 😉", Luigi Inus says "🦊", Gaster says "🦊" (beat 1102); Oct 12 1:34 PM eighteen 🦊 "and he just scams
+  the fox emoji" (beat 1103); Neka's own fox forms, Sept 26 "Mweh heh heh. 🦊" (beat 828) and Sept 27 0% Fox (beat 919), which
+  the chatbot guessed at and he overruled.
+- Priors drawn on beat 1145: Oct 12 1:34 PM "It is October 12, not 31." / "I know you only attack on 31, but THIS ISN'T-" (beat
+  1103); Oct 12 1:50 PM "That is just the normal game, not a glitch." / "This is the game, just horror, no extra nonsense. 😌"
+  (beat 1104); Oct 14 5:48 AM "Neka Omazen continues with Chapter 2 Phase 2." (beat 1143, thirty-six minutes earlier).
+
 ## 2026-10-14 — NEKA CONTINUES WITH CHAPTER 2 PHASE 2 (BEAT 1143)
 
 Based on Toby's 2026-10-14 lore, 5:48 AM, thread "Once again, Another Document" (`1a1311788bf63073`), one message

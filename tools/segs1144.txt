@@ -1,0 +1,2 @@
+  if(c >= 24910.0 && c < 24932.0) return [1145, c-24910.0];  // THE ATTACK IS COMPLETE
+  if(c >= 24888.0 && c < 24910.0) return [1144, c-24888.0];  // 🦊 = WHAT THEY THINK IS A LIE
