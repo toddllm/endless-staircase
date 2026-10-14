@@ -1,0 +1,2 @@
+  if(c >= 24976.0 && c < 24998.0) return [1148, c-24976.0];  // WENDA.PS EVEN FARTHER
+  if(c >= 24954.0 && c < 24976.0) return [1147, c-24954.0];  // NOT INFINITY, ABSOLUTE INFINITY

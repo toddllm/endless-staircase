@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-14 — NOT INFINITY, ABSOLUTE INFINITY; WENDA.PS EVEN FARTHER (BEATS 1147-1148)
+
+Based on Toby's 2026-10-14 lore, 5:32 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a13c552d6a390d8` Email 1796, 5:32:44 PM), the first since the 6:40 AM beat was answered (the 7:00 AM report asked where
+the Alex 303 vs Builderman fight is held; not answered). It is a pasted chatbot session; only his own typed lines are drawn.
+The chatbot's "NEKA LAI / ALEXEN — CURRENT POWER LEVEL" card, its "TOP 0" and "Beyond Absolute+∞" labels, its
+twenty-thousand-odd typed 9s, "No finite message could contain his entire power level" and its italic restatement of the
+Gray.ps line are commentary. His lines: "Now Neka's power level currently 😏👑"; "You kept scamming 9s, but it is actually
+infinity 9s, not infinity but Absolute Infinity. 😏👑"; and "Neka takes Wenda.ps even farther from Gray.ps. Gray.ps keeps
+following." No attachments.
+
+![Beat 1147](screenshots/1209-not-infinity-absolute-infinity.png)
+
+![Beat 1148](screenshots/1210-wenda-ps-even-farther.png)
+
+- LV_CYC 24954.0 -> 24998.0, two new LV_BEATS rows (1147-1148): NOT INFINITY, ABSOLUTE INFINITY; WENDA.PS EVEN FARTHER. New
+  capture scenes `b1147`, `b1148`. Tools: `gen1147.py`, `build1147.py`, `scenes1147.py` (template `emit_tail1008.py`). JS
+  syntax check clean (`node --check` on the extracted script); `runtime_probe.py 1148` clean (len 1149, no holes, no undefined
+  segments, every phase draws, 1237 draws).
+- Priors drawn on beat 1147, each verified in the wiki before drawing: Oct 13 7:22 PM "Alex 303 is actually beyond Omnipotent
+  to abcdefghijklmnopqrstuvwxyz9999... Alex 303 always wins." (beat 1136); Oct 10 1:30 PM "Neka takes off his coat, and there
+  is Alex right there." (Email 1720) and Oct 11 3:54 PM "It is Neka LAI/Alex/Alexen." (Email 1736); Oct 3 2:29 PM "Neka Omazen
+  is higher than Beyond Absolute, and an endless number of it times itself..." (Email 1608). The beat says the chatbot counted
+  and he named the count.
+- Priors drawn on beat 1148: Oct 13 3:37 PM "Alex took Wenda.ps away for the 50 years ... Wenda.ps is being moved by Alex.",
+  "Gray.ps looked for 50 years, did not see a single clue." and "Gray was walking the same direction" (Email 1778, beats
+  1124-1125); Oct 12 1:27 PM Gray.ps sent the wrong way by fake voices in Area 304, spared by Wenda.ps (Email 1760). The beat
+  notes the mover was named Alex yesterday and Neka today, the same being by his own Oct 10 rule.
+
 ## 2026-10-14 — ALEX 303 IN CLASSICS NOW (BEAT 1146)
 
 Based on Toby's 2026-10-14 lore, 6:40 AM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
