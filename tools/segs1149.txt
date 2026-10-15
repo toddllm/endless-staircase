@@ -1,0 +1,5 @@
+  if(c >= 25086.0 && c < 25108.0) return [1153, c-25086.0];  // TO THE ORANGE SUN
+  if(c >= 25064.0 && c < 25086.0) return [1152, c-25064.0];  // GRAY.PS CHOSE WENDA.PS
+  if(c >= 25042.0 && c < 25064.0) return [1151, c-25042.0];  // THE 2 “NEKA” SPRUNKI GODS
+  if(c >= 25020.0 && c < 25042.0) return [1150, c-25020.0];  // I AM SIMON.PS!
+  if(c >= 24998.0 && c < 25020.0) return [1149, c-24998.0];  // OBSERITY. 👤

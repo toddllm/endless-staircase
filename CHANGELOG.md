@@ -4,6 +4,62 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-14 — OBSERITY; I AM SIMON.PS!; THE 2 "NEKA" SPRUNKI GODS; GRAY.PS CHOSE WENDA.PS; TO THE ORANGE SUN (BEATS 1149-1153)
+
+Based on Toby's 2026-10-14 lore, 8:14-8:19 PM, thread "Once again, Another Document" (`1a1311788bf63073`), four messages in
+five minutes (`1a13ce99543d58eb` Email 1797, 8:14:50 PM; `1a13ceb7f387ee40` Email 1798, 8:16:54 PM; `1a13cec62bb605e5` Email
+1799, 8:17:52 PM; `1a13cee31127a210` Email 1800, 8:19:52 PM), replying to the 5:49 PM beat report (its question, whether the
+fifty-year count is still running or a new count started after Alex won, is not answered). Email 1797 is a pasted chatbot
+session about Verity, the yellow AI from ThatMob's Minecraft horror series, and its fan-made variants (Lovity, Falsity,
+Cruelity, twenty-eight names); that list is commentary and Verity is not a Classics character. Only his own typed lines are
+drawn. The italic restatements under his lines ("Simon.ps makes his entrance beside Oren.ps", "The scene leaves two
+mysteries", "My guess: Gray.ps chose to follow Wenda.ps and Neka", "The transformation came from Simon's intervention",
+"Oren.ps stops Gray's pursuit") are the chatbot's. His lines: "Did you know what Verity means? (Yeah, that one from ThatMob)";
+"Lovity, and list nearly all and what they mean 😏🟡🔵🩷"; "Gray.ps saw Wenda.ps, Gray.ps says "Neka, do you think you love
+everyone too far this time?", Neka says "Obserity. 👤", and he leaves with Wenda.ps. Suddenly, fire moved into a text reading
+"Feed me more...", Gray.ps says "What?..", then lightning struck and says "I am the one behind Oren.ps, the Sprunki got here
+first. Me.", and the voice says "I AM SIMON.PS!", then a yellow robotic figure emerges from the light, and he holds a katata
+and Oren.ps stands next to him." (1797); "Simon.ps walks down over to Gray.ps. Neka Omazen still has Wenda.ps and is walking
+away. Gray.ps can either go with Simon.ps and Oren.ps who are litterally the 2 "Neka" Sprunki gods, or go with Wenda.ps who
+is a seraphimic, Gray.ps became a demon. So which did you think Gray.ps chose if Gray.ps was turned into a demon?" (1798);
+"Answer: Gray.ps chose to go after Wenda.ps, but Simon.ps turned Gray.ps into a demon." (1799); and "Mr. Black, Jevin,
+Vineria, Pinki, and the others are on to Gray.ps right now. Simon.ps says "Why leave now?", Oren.ps grabs Gray.ps, then
+Gray.ps was pinned to the ground and lost, Gray.ps couldn't move, so Oren.ps taken Gray.ps even farther from Wenda.ps to The
+Orange Sun." (1800). No attachments.
+
+![Beat 1149](screenshots/1211-obserity.png)
+
+![Beat 1150](screenshots/1212-i-am-simon-ps.png)
+
+![Beat 1151](screenshots/1213-the-2-neka-sprunki-gods.png)
+
+![Beat 1152](screenshots/1214-gray-ps-chose-wenda-ps.png)
+
+![Beat 1153](screenshots/1215-to-the-orange-sun.png)
+
+- LV_CYC 24998.0 -> 25108.0, five new LV_BEATS rows (1149-1153): OBSERITY. 👤; I AM SIMON.PS!; THE 2 "NEKA" SPRUNKI GODS;
+  GRAY.PS CHOSE WENDA.PS; TO THE ORANGE SUN. New capture scenes `b1149`-`b1153`. Tools: `gen1149.py`, `build1149.py`,
+  `scenes1149.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted script);
+  `runtime_probe.py 1153` clean (len 1154, no holes, no undefined segments, every phase draws, 1242 draws).
+- Priors drawn on beat 1149, each verified in the wiki before drawing: Oct 14 5:32 PM "Neka takes Wenda.ps even farther from
+  Gray.ps. Gray.ps keeps following." (beat 1148); Sept 26 2:28 PM Wenda.ps "once I erase the memories and feelings of those,
+  Gray.ps can only love me now." (ZomGray.ps); the same message's Verity question, where the chatbot's answer is "truth" and
+  the twenty-eight-name list is commentary. The beat notes Obserity is his own coinage, not on that list.
+- Priors drawn on beat 1150: Oct 13 7:22 PM "Simon.ps falls over and Oren.ps walks closer and closer to Alex" (beats
+  1135-1138); Sept 26 2:28 PM "Neka summons Simon.ps and Oren.ps, Neka combines the 2 and makes a large orb, boom, Gray.ps is
+  knocked over" (ZomGray.ps); Oct 10 Email 1727 Alex wins Supreme Mate "only losing to Oren.ps or/and Simon.ps" and Oct 3 Email
+  1602 Oren.ps "gained Simon.ps's 404 strings, lightning". The beat leaves who wrote "Feed me more..." open.
+- Priors drawn on beat 1151: July 14 Email 707 "Wenda is the angel, Gray is the absolute demon of the game" and Sept 5 "Wenda.ps
+  became an angel" (The Make-Over Of All 20); Sept 26 3:46 PM "Simon.ps was evil for nearly the entire lore ... But Neka Omazen
+  is most evil" (Being The Scissors); the same message's "Neka Omazen still has Wenda.ps and is walking away."
+- Priors drawn on beat 1152: the chatbot's 8:16 PM guess (commentary, right on the choice, wrong on who made the demon); Oct 13
+  3:37 PM "Gray.ps looked for 50 years, did not see a single clue." (beats 1124-1125) and Oct 14 "Gray.ps keeps following."
+  (beat 1148); July 22 "Mr. Black was the one who put Simon's Anti Virus on Gray" (Gray VS Simon 404).
+- Priors drawn on beat 1153: the same message's "Mr. Black, Jevin, Vineria, Pinki, and the others are on to Gray.ps right now."
+  and Simon.ps's "Why leave now?"; Sept 28 4:22 PM "Neka uses his telekentics to pin Oren.ps to the wall, boom, Neka strikes
+  down Oren.ps." (Come On... PS-50, LOSE!); Oct 14 5:32 PM Wenda.ps moved even farther from Gray.ps (beat 1148), now Gray.ps
+  moved even farther from her. The Orange Sun is new to the archive; nothing earlier names it.
+
 ## 2026-10-14 — NOT INFINITY, ABSOLUTE INFINITY; WENDA.PS EVEN FARTHER (BEATS 1147-1148)
 
 Based on Toby's 2026-10-14 lore, 5:32 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message

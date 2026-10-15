@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+"""
+gen1149.py - draw the branches for BEATS 1149-1153 from Toby's October 14, 2026, 8:14-8:19 PM messages
+(thread 1a1311788bf63073 "Once again, Another Document", msgs 1a13ce99543d58eb Email 1797, 1a13ceb7f387ee40 Email 1798,
+1a13cec62bb605e5 Email 1799, 1a13cee31127a210 Email 1800).
+Same template as 1008-1148 (emit_tail1008.py). Only Toby's own typed lines are drawn; the Verity / Lovity list in Email 1797
+is a pasted chatbot session (ThatMob's Verity is not a Classics character), and the italic restatements under his lines
+("Simon.ps makes his entrance beside Oren.ps", "The scene leaves two mysteries", "My guess: Gray.ps chose to follow Wenda.ps
+and Neka", "The transformation came from Simon's intervention", "Oren.ps stops Gray's pursuit") are commentary.
+"""
+import io
+
+BASE = 1149
+TAG = "1149"
+START = 24998.0
+STEP = 22.0
+B = []
+
+MONTH = {14: 'OCTOBER 14'}
+
+def meta(day, t):
+    return dict(when=t, short=t, day=day,
+                attr='TOBY, %s, %s — HIS OWN TYPING.' % (MONTH[day], t))
+
+def add(m, key, accent, quote, panels, close):
+    d = dict(key=key, accent=accent, quote=quote, panels=panels, close=close)
+    d.update(m)
+    B.append(d)
+
+# ---------------- October 14, 8:14 PM (Email 1797) ----------------
+add(meta(14, '8:14 PM'), 'OBSERITY. 👤', '150,170,255',
+    ['“NEKA, DO YOU THINK YOU LOVE EVERYONE TOO FAR THIS TIME?”', 'GRAY.PS SAW WENDA.PS AND ASKED. NEKA SAID “OBSERITY. 👤”', 'AND HE LEFT WITH HER. A VERITY-STYLE WORD, HIS OWN.'],
+    [('KEEPS FOLLOWING', ['OCT 14, 5:32 PM: “NEKA TAKES WENDA.PS EVEN FARTHER FROM', 'GRAY.PS. GRAY.PS KEEPS FOLLOWING.”'],
+      'THREE HOURS LATER HE CAUGHT UP. HE GOT ONE QUESTION IN.'),
+     ('CAN ONLY LOVE ME NOW', ['SEPT 26, 2:28 PM: WENDA.PS: “ONCE I ERASE THE MEMORIES AND', 'FEELINGS OF THOSE, GRAY.PS CAN ONLY LOVE ME NOW.”'],
+      'HER WORD FOR HIM THEN. TONIGHT IT IS HIS WORD FOR NEKA.'),
+     ('VERITY MEANS TRUTH', ['SAME MESSAGE: HE ASKED THE CHATBOT WHAT VERITY MEANS.', 'TRUTH. LOVITY, FALSITY, 28 NAMES, ALL COMMENTARY.'],
+      'THEN HE COINED HIS OWN. OBSERITY IS NOT ON THE LIST.')],
+    ['“OBSERITY. 👤”', 'ONE WORD, ONE SILHOUETTE, AND HE LEAVES WITH HER.'])
+
+add(meta(14, '8:14 PM'), 'I AM SIMON.PS!', '255,228,70',
+    ['FIRE MOVED INTO TEXT: “FEED ME MORE...” LIGHTNING STRUCK:', '“I AM THE ONE BEHIND OREN.PS, THE SPRUNKI GOT HERE FIRST.', 'ME.” “I AM SIMON.PS!” A YELLOW ROBOT, A KATANA, OREN.PS.'],
+    [('FALLS OVER', ['OCT 13, 7:22 PM: “SIMON.PS FALLS OVER AND OREN.PS WALKS', 'CLOSER AND CLOSER TO ALEX EVERY TIME ALEX EATEN AN APPLE.”'],
+      'LAST NIGHT HE FELL OVER. TONIGHT HE STEPS OUT OF LIGHT.'),
+     ('SUMMONED AS A PAIR', ['SEPT 26, 2:28 PM: “NEKA SUMMONS SIMON.PS AND OREN.PS, NEKA', 'COMBINES THE 2... BOOM, GRAY.PS IS KNOCKED OVER.”'],
+      'NEKA’S TOOLS THEN. NOW ONE CLAIMS TO BE BEHIND THE OTHER.'),
+     ('THE TWO WHO BEAT ALEX', ['OCT 10: ALEX WINS SUPREME MATE “ONLY LOSING TO OREN.PS', 'OR/AND SIMON.PS.” OCT 3: OREN.PS GOT SIMON.PS’S LIGHTNING'],
+      'THE TWO WHO CAN BEAT ALEX. THE LIGHTNING WAS SIMON’S FIRST')],
+    ['“I AM SIMON.PS!”', 'WHO WROTE “FEED ME MORE...” IN THE FIRE, HE HAS NOT SAID.'])
+
+# ---------------- October 14, 8:16 PM (Email 1798) ----------------
+add(meta(14, '8:16 PM'), 'THE 2 “NEKA” SPRUNKI GODS', '90,220,200',
+    ['“GRAY.PS CAN EITHER GO WITH SIMON.PS AND OREN.PS WHO ARE', 'LITTERALLY THE 2 “NEKA” SPRUNKI GODS, OR GO WITH WENDA.PS', 'WHO IS A SERAPHIMIC, GRAY.PS BECAME A DEMON.” HIS QUESTION.'],
+    [('THE ANGEL AND THE DEMON', ['JULY 14: “WENDA IS THE ANGEL, GRAY IS THE ABSOLUTE DEMON', 'OF THE GAME.” SEPT 5: “WENDA.PS BECAME AN ANGEL.”'],
+      'THREE MONTHS OLD. TONIGHT THE PAIR IS A FORK IN THE ROAD.'),
+     ('THE SCISSORS', ['SEPT 26, 3:46 PM: “SIMON.PS WAS EVIL FOR NEARLY THE ENTIRE', 'LORE... BUT NEKA OMAZEN IS MOST EVIL.”'],
+      'NOW THE TWO ARE “NEKA” GODS. HIS NAME SITS IN QUOTES.'),
+     ('STILL WALKING AWAY', ['SAME MESSAGE: “NEKA OMAZEN STILL HAS WENDA.PS AND IS', 'WALKING AWAY.” SIMON.PS WALKS DOWN TO GRAY.PS.'],
+      'ONE SIDE WALKS TOWARD HIM. THE OTHER KEEPS WALKING AWAY.')],
+    ['“SO WHICH DID YOU THINK GRAY.PS CHOSE?”', 'THE CHATBOT GUESSED WENDA.PS. HIS ANSWER CAME IN A MINUTE.'])
+
+# ---------------- October 14, 8:17 PM (Email 1799) ----------------
+add(meta(14, '8:17 PM'), 'GRAY.PS CHOSE WENDA.PS', '235,80,80',
+    ['“ANSWER: GRAY.PS CHOSE TO GO AFTER WENDA.PS, BUT SIMON.PS', 'TURNED GRAY.PS INTO A DEMON.” HIS RULING, 8:17 PM.', 'HE DID NOT PICK THE DEMON SIDE. THE DEMON WAS DONE TO HIM.'],
+    [('THE CHATBOT’S GUESS', ['8:16 PM, THE CHATBOT: “MY GUESS: GRAY.PS CHOSE TO FOLLOW', 'WENDA.PS AND NEKA.” COMMENTARY, NOT CANON.'],
+      'RIGHT ON THE CHOICE. WRONG ABOUT WHO MADE THE DEMON.'),
+     ('FIFTY YEARS', ['OCT 13, 3:37 PM: “GRAY.PS LOOKED FOR 50 YEARS, DID NOT SEE', 'A SINGLE CLUE.” OCT 14: “GRAY.PS KEEPS FOLLOWING.”'],
+      'FIFTY YEARS OF WALKING ONE WAY. HE WAS NOT GOING TO TURN.'),
+     ('THE ANTI-VIRUS ON GRAY', ['JULY 22: “MR. BLACK WAS THE ONE WHO PUT SIMON’S ANTI VIRUS', 'ON GRAY.” A SIMON’S HAND CHANGED HIM ONCE BEFORE.'],
+      'THAT TIME, MR. BLACK’S HAND. THIS TIME, SIMON.PS’S OWN.')],
+    ['“SIMON.PS TURNED GRAY.PS INTO A DEMON.”', 'HE CHOSE THE ANGEL. HE WAS MADE THE DEMON ANYWAY.'])
+
+# ---------------- October 14, 8:19 PM (Email 1800) ----------------
+add(meta(14, '8:19 PM'), 'TO THE ORANGE SUN', '255,150,40',
+    ['“OREN.PS GRABS GRAY.PS, THEN GRAY.PS WAS PINNED TO THE', 'GROUND AND LOST, GRAY.PS COULDN’T MOVE, SO OREN.PS TAKEN', 'GRAY.PS EVEN FARTHER FROM WENDA.PS TO THE ORANGE SUN.”'],
+    [('ON TO GRAY.PS', ['SAME MESSAGE: “MR. BLACK, JEVIN, VINERIA, PINKI, AND THE', 'OTHERS ARE ON TO GRAY.PS.” SIMON.PS SAYS “WHY LEAVE NOW?”'],
+      'THE WHOLE LINEUP TURNS ON THE ONE WHO CHOSE THE ANGEL.'),
+     ('PINNED TO THE WALL', ['SEPT 28: “NEKA USES HIS TELEKENTICS TO PIN OREN.PS', 'TO THE WALL, BOOM, NEKA STRIKES DOWN OREN.PS.”'],
+      'OREN.PS WAS THE ONE PINNED THEN. TONIGHT HE PINS.'),
+     ('EVEN FARTHER, TWICE', ['OCT 14, 5:32 PM: “NEKA TAKES WENDA.PS EVEN FARTHER FROM', 'GRAY.PS.” 8:19 PM: GRAY.PS TAKEN EVEN FARTHER FROM HER.'],
+      'SHE WAS MOVED AWAY FROM HIM. NOW HE IS MOVED FROM HER.')],
+    ['“TO THE ORANGE SUN.”', 'A PLACE NEW TO THE ARCHIVE. WHAT IS THERE, HE HAS NOT SAID.'])
+
+# length audit: panel lines over ~58 chars overflow the box
+for b in B:
+    for ln in list(b['quote']) + list(b['close']):
+        assert len(ln) <= 60, (b['key'], len(ln), ln)
+    for h, lines, acc in b['panels']:
+        for ln in list(lines) + [acc, h]:
+            assert len(ln) <= 58, (b['key'], len(ln), ln)
+
+if __name__ == '__main__':
+    exec(open('/Users/tdeshane/endless-staircase/tools/emit_tail1008.py', encoding='utf-8').read())
