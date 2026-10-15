@@ -4,6 +4,44 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — NOT A MINUTE OUTSIDE THE CABIN, SANITY / PSYCHOPATHICAL / MERCY, EVERYTHING OF A HUMAN (BEATS 1173-1175)
+
+Based on Toby's 2026-10-15 lore, 7:08-7:15 PM, thread "Once again, Another Document" (`1a1311788bf63073`), six messages
+(`1a141d2eb7015025` Email 1817, 7:08:09 PM; `1a141d6da499f81f` Email 1818, 7:12:28 PM; `1a141d7533d7b02f` Email 1819,
+7:12:58 PM; `1a141d8193aafcc1` Email 1820, 7:13:48 PM; `1a141d8aba085a7e` Email 1821, 7:14:27 PM; `1a141d955a86790f` Email
+1822, 7:15:08 PM), which arrived while beats 1171-1172 were being built. No attachments. In each one his own typing is the
+opening lines and the chatbot's restatement (the "survival-horror game with strict deadlines" bullets, the bar table, the
+Sanity progression arrow, the eleven guessed bars, the ten more guesses) is commentary. His lines: "Also the player isn't able
+to survive 19 days without food, and can't survive 1 day without water, and also needs to sleep at 7 PM or sooner. 9 AM is all
+around the clock PLUS. The player wouldn't survive a minute outside the cabin, Neka would basically destroy them. That is why
+outside tasks are simple like "Make a campfire", and those stuff instead of sorting 1 million logs and sticks."; "There is also
+Health, Strength, Oxegen, Warmth, and all this stuff, basically everything a human needs to survive + Sanity (calmness; unsure,
+uncomfortable, shocked, shooken, scared, terrified, horrified, insane) and Psychopathical (increases every time the player slays
+an entity), Mercy (every time the player uses mercy. 😏) bars."; "There are more I didn't list."; "uess the rest using the
+things you know about a human." (a prompt to the chatbot, the G missing); "There is still more, it does have all that +
+everything of a human."; "Correct, that is included too. EVERYTHING of a human + the horror bars are included". Emails
+1819-1822 are one beat. Lore beats only; nothing in play changed.
+
+![Beat 1173](screenshots/1236-not-a-minute-outside-the-cabin.png)
+![Beat 1174](screenshots/1237-sanity-psychopathical-mercy.png)
+![Beat 1175](screenshots/1238-everything-of-a-human.png)
+
+- LV_CYC 25526.0 -> 25592.0, three new LV_BEATS rows (1173-1175): NOT A MINUTE OUTSIDE THE CABIN; SANITY, PSYCHOPATHICAL,
+  MERCY; EVERYTHING OF A HUMAN. New capture scenes `b1173`-`b1175`. Tools: `gen1173.py`, `build1173.py`, `scenes1173.py`
+  (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted script); `runtime_probe.py 1175`
+  clean (len 1176, no holes, no undefined segments, every phase draws, 1264 draws).
+- Beat 1173, Not A Minute Outside The Cabin: the first cabin in this archive since Email 142 (April 18, 2026), Simon's log
+  cabin in his lab; the 7 PM rule from beat 1171 is now a survival bar next to food (19 days) and water (1 day); "9 AM is all
+  around the clock PLUS" places the 9 AM player a full clock past bedtime; The Player is "a tall male entity, human" (5:48 PM),
+  and a human outside lasts under a minute. Outside tasks stay simple, "Make a campfire", not sorting 1 million logs.
+- Beat 1174, Sanity, Psychopathical, Mercy: the Sanity bar is Simon.ps's, from October 12, 1:09 PM ("Simon.ps added a new
+  Sanity bar"; "Sanity says "Insane", then the Area 303 First floor falls down"), now with its nine steps named; Psychopathical
+  is a new word here, rising with every slain entity (the Player struck down all 20 Sprunkis at 5:48 PM); Mercy has history
+  from August 26 ("Accept my mercy") and Email 409 ("mercy in certain cercumstances, but not all the time").
+- Beat 1175, Everything Of A Human: he does not name the remaining bars, he states the rule that contains them; the chatbot's
+  guessed bars (stamina, blood, hygiene, pain, heart rate, stress ...) are its own, and "it does have all that + everything of a
+  human" is his confirmation in bulk. The Player is human (5:48 PM), so a game that simulates a whole human simulates its player.
+
 ## 2026-10-15 — NO GAMES AFTER 7 PM!, SUGAR KILLS YOU IN THIS GAME (BEATS 1171-1172)
 
 Based on Toby's 2026-10-15 lore, 7:02 PM and 7:04 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages

@@ -1,0 +1,3 @@
+  if(c >= 25570.0 && c < 25592.0) return [1175, c-25570.0];  // EVERYTHING OF A HUMAN
+  if(c >= 25548.0 && c < 25570.0) return [1174, c-25548.0];  // SANITY, PSYCHOPATHICAL, MERCY
+  if(c >= 25526.0 && c < 25548.0) return [1173, c-25526.0];  // NOT A MINUTE OUTSIDE THE CABIN
