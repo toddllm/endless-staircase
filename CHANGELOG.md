@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — THE CROSS EYES; ALEX 303 LOWED DOWN (BEATS 1157-1158)
+
+Based on Toby's 2026-10-15 lore, 4:12 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a1413276a7dcc37` Email 1804, 4:12:54 PM), nine minutes after Email 1803 and before the 1155-1156 reply went out. No
+attachments. The italic restatement under his lines ("Neka's current appearance has glowing yellow cross-shaped eyes as a
+permanent feature. There is no separate "Awakened" form now, and he can levitate. Alex 303's power has been reduced, and it
+is no longer a separate form. Neka now appears as the humanlike being shown in the golden-cross-eye reference") is the
+chatbot's, commentary. Only his own lines are drawn: "Neka's eyes are actually the yellow crosses, also there is no longer
+awakened, Neka actually has the cross eyes. He has powers of levitate. Alex 303 was lowed down into power, no longer form,
+now came an actual human-like being with glowing yellow cross eyes."
+
+![Beat 1157](screenshots/1219-the-cross-eyes.png)
+
+![Beat 1158](screenshots/1220-alex-303-lowed-down.png)
+
+- LV_CYC 25174.0 -> 25218.0, two new LV_BEATS rows (1157-1158): THE CROSS EYES; ALEX 303 LOWED DOWN. New capture scenes
+  `b1157`, `b1158`. Tools: `gen1157.py`, `build1157.py`, `scenes1157.py` (template `emit_tail1008.py`). JS syntax check
+  clean (`node --check` on the extracted script); `runtime_probe.py 1158` clean (len 1159, no holes, no undefined segments,
+  every phase draws, 1247 draws).
+- Beat 1157, The Cross Eyes: this answers the 3:36 PM question (what was missing from the "90%-95% correct" Gemini
+  pictures): the eyes are the yellow crosses, there is no Awakened form, and he levitates. Priors drawn, each verified in the
+  wiki before drawing: Oct 15 3:36 PM the two Gemini pictures, "Neka LAI" with blue eyes and "Awakened Neka" with glowing
+  cross eyes (beat 1154); Oct 8 8:26 PM Neka levitates and creates 2 large void thrones (Nirthologe); Sept 24 4:37 PM "The
+  forms are nothing now.", the first line of the era.
+- Beat 1158, Alex 303 Lowed Down (his spelling kept): priors drawn: Oct 13 3:37 PM "Alex won, and Alex now can control the
+  forms. Alex constantly was Alex 303." (beat 1126); Oct 14 6:40 AM "Alex 303 in Classics now. 😏" (beat 1146) and that
+  evening's Absolute Infinity power (beat 1147); Oct 10 1:30 PM Neka takes off his coat and there is Alex right there
+  (Alex And Neka Are 2). What came instead of the form is "an actual human-like being with glowing yellow cross eyes".
+- Not drawn as canon: the chatbot's "permanent feature", "no separate Awakened form", "power has been reduced" restatement.
+
 ## 2026-10-15 — TO THE LABATORY; ORANGE STAR/SUN (BEATS 1155-1156)
 
 Based on Toby's 2026-10-15 lore, 4:00-4:03 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
