@@ -1,0 +1,2 @@
+  if(c >= 25438.0 && c < 25460.0) return [1169, c-25438.0];  // NOT THE COMPUTER COOKIE
+  if(c >= 25416.0 && c < 25438.0) return [1168, c-25416.0];  // HIS FAVORITE DESSERT IS PI

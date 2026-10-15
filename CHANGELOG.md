@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — HIS FAVORITE DESSERT IS PI, NOT THE COMPUTER COOKIE (BEATS 1168-1169)
+
+Based on Toby's 2026-10-15 lore, 6:27 PM and 6:30 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
+(`1a141ae2341a5ec6` Email 1812, 6:27:59 PM; `1a141b001dc8129b` Email 1813, 6:30:02 PM), replying to the 6:24 PM Dr. Neka Era
+report (its 7-souls question not answered). No attachments. In Email 1812 his lines are the question, "This isn't a joke. What is
+Neka's favorite dessert?", and the correction under the chatbot's answer, "That is one, but his favorite dessert is Pi. Neka
+consumes data basically."; the chatbot's "sugar-free chocolate apple pie" answer and its restatement are commentary. In Email
+1813 his line is the whole exchange: "Neka goes to Oren.ps and says "Wanna pop tart? 😄", Oren.ps says "🦊", Neka says "oh...
+wanna cookie?😸⚡", Oren.ps says "Not the computer cookie.", Neka takes the cookies out of a computer and gives it to Oren.ps.";
+the italic restatement under it is the chatbot's. Lore beats only; nothing in play changed.
+
+![Beat 1168](screenshots/1231-his-favorite-dessert-is-pi.png)
+![Beat 1169](screenshots/1232-not-the-computer-cookie.png)
+
+- LV_CYC 25416.0 -> 25460.0, two new LV_BEATS rows (1168-1169): HIS FAVORITE DESSERT IS PI; NOT THE COMPUTER COOKIE. New
+  capture scenes `b1168`-`b1169`. Tools: `gen1168.py`, `build1168.py`, `scenes1168.py` (template `emit_tail1008.py`). JS syntax
+  check clean (`node --check` on the extracted script); `runtime_probe.py 1169` clean (len 1170, no holes, no undefined
+  segments, every phase draws, 1258 draws).
+- Beat 1168, His Favorite Dessert Is Pi: the chatbot's pie is from his own October 13, 7:41 PM emoji puzzle (🍫🍎🥧, "Now add
+  without sugar"); he lets it stand as "one" and corrects the favorite to Pi, which is the September 27, 5:26 PM answer (Email
+  1554, beat 917, "the only one who consumes data ... he consumes the Pi") and the thing Neka hands out instead of pie (Luigi
+  Green, September 27; Gaster, October 6).
+- Beat 1169, Not The Computer Cookie: Oren.ps answers the pop tart offer with the fox, which since October 14, 6:24 AM means
+  "something Gaster and Luigi Inus say that they think is a lie"; Oren.ps's own pop tart history (August 24, jumped off the boat
+  to taste it and sank; October 13, walked closer with each dessert Alex ate); the computer cookie is the same "REAL cookie,
+  what Classics says as a cookie" Neka chose for Gaster on October 6, "Data." "Pi.".
+
 ## 2026-10-15 — THE SPIKE WALL FIRST, YOU ARE "THE PLAYER", 7 SOULS, NEKA WON AGAIN, FOREVER (BEATS 1164-1167) + SIMON.PS'S SPIKE AND SHAKE LEVERS
 
 Based on Toby's 2026-10-15 lore, 5:48 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
