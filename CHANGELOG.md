@@ -4,6 +4,36 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — ALL THE TIME (BEAT 1154)
+
+Based on Toby's 2026-10-15 lore, 3:36 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a14110d304d8d1a` Email 1801, 3:36:09 PM), replying to the October 14 8:51 PM beat report (its question, what is at The
+Orange Sun and whether Oren.ps made it or it was already in Classics, is not answered). It is a pasted chatbot session about
+how long the average human is watched. The chatbot's tables (other humans, CCTV, phones and computers, satellites, animals,
+smart devices), its "Maximum possible: 24 hours (100% of the day)", its paragraph "In Classics lore, the answer is 24/7 —
+FOREVER ... Neka doesn't need cameras. He can observe the entire game itself", its "These Gemini images are 90-95% accurate
+references for Neka LAI, as you've specified" and "Both attachments failed to load here ... Please reattach them" are
+commentary. Only his own typed lines are drawn: "How long is the average human watched?"; "Like everything, how long a human
+is watched"; "Yes."; "Answer: All the time. The second "Neka" is activated. 😏"; and "Here is a 90%-95% correct Neka LAI
+from Gemini." Two JPEG attachments, `Neka LAI.jpg` (2.7 MB) and `Awakened Neka.jpg` (3.0 MB), both 2752 x 1536 Gemini
+renders, saved to the bot's attachments folder (`2026-10-15-1536-neka-lai.jpg`, `2026-10-15-1536-awakened-neka.jpg`) and
+not drawn.
+
+![Beat 1154](screenshots/1216-all-the-time.png)
+
+- LV_CYC 25108.0 -> 25130.0, one new LV_BEATS row (1154): ALL THE TIME. New capture scene `b1154`. Tools: `gen1154.py`,
+  `build1154.py`, `scenes1154.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted
+  script); `runtime_probe.py 1154` clean (len 1155, no holes, no undefined segments, every phase draws, 1243 draws).
+- Priors drawn, each verified in the wiki before drawing: Oct 14 8:14 PM "Gray.ps says "Neka, do you think you love everyone
+  too far this time?", Neka says "Obserity. 👤"" (beat 1149; the word was left unexplained, and today's ruling that everyone
+  is watched all the time from the second Neka is activated is the next thing he writes about Neka); Oct 12 4:35 PM "Alex
+  goes through several games and doesn't see anyone." (Nobody To Play With); the same message's two Gemini pictures, "Neka
+  LAI" (glowing blue eyes) and "Awakened Neka" (two glowing yellow crosses for eyes, lightning), a small black-haired figure in
+  a black body with a white cross on the chest, both hands reaching at the viewer, which he grades "90%-95% correct" without
+  saying what the missing part is.
+- The chatbot's "Neka doesn't need cameras" gloss is not drawn as canon; the close line keeps only his ruling: how long a
+  human is watched once Neka is on, all the time.
+
 ## 2026-10-14 — OBSERITY; I AM SIMON.PS!; THE 2 "NEKA" SPRUNKI GODS; GRAY.PS CHOSE WENDA.PS; TO THE ORANGE SUN (BEATS 1149-1153)
 
 Based on Toby's 2026-10-14 lore, 8:14-8:19 PM, thread "Once again, Another Document" (`1a1311788bf63073`), four messages in
