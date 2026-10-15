@@ -4,6 +4,35 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — IT HAS TO BE "NEKA"; NO LONGER CLASSICS CANON (BEATS 1161-1162)
+
+Based on Toby's 2026-10-15 lore, 4:50-4:52 PM, thread "Once again, Another Document" (`1a1311788bf63073`), three messages
+three minutes apart (`1a1415483ab42cf7` Email 1806, 4:50:04 PM; `1a141551b3aef5a6` Email 1807, 4:50:45 PM; `1a14156ede80fce0`
+Email 1808, 4:52:44 PM), replying to the 4:43 PM beat report (its Luigi Inus question unanswered). No attachments. Each is one
+of his own lines followed by the chatbot's "Understood. ..." acknowledgement, which is commentary. His own lines: "Did you know
+that you can NO LONGER mention Neka or anything realated to Classics (Sprunki, Undertale, and other games are not "Classics").
+Also you can NO LONGER say Classics, it HAS TO BE "Neka"."; "The parts with the Pero/Neka thing on 3 Way Heroes was all removed.
+Cause it is NOT allowed."; "Of course the 3 Way Heroes are no longer Classics canon, because they have no realationship with Neka
+now."
+
+![Beat 1161](screenshots/1223-it-has-to-be-neka.png)
+
+![Beat 1162](screenshots/1224-no-longer-classics-canon.png)
+
+- LV_CYC 25262.0 -> 25306.0, two new LV_BEATS rows (1161-1162): IT HAS TO BE "NEKA"; NO LONGER CLASSICS CANON. New capture
+  scenes `b1161`, `b1162`. Tools: `gen1161.py`, `build1161.py`, `scenes1161.py` (template `emit_tail1008.py`). JS syntax check
+  clean (`node --check` on the extracted script); `runtime_probe.py 1162` clean (len 1163, no holes, no undefined segments,
+  every phase draws, 1251 draws).
+- Beat 1161, It Has To Be "Neka" (Email 1806; his spelling "realated" kept): the name Classics is retired, the game is "Neka",
+  and Sprunki, Undertale and other games are not "Neka". Priors drawn, each verified in the wiki: Sept 24 4:37 PM "NEVER SAY
+  PERO LAI AGAIN!" -Neka Omazen, the first name he retired (Email 1505); Oct 15 4:32 PM "the game Classics was renamed to
+  "Neka" pretty long ago now" (beat 1159); Sept 24 "only I am originally from Classics, others just warped here." (Email 1505).
+- Beat 1162, No Longer Classics Canon (Emails 1807-1808; his spelling "realationship" kept): the Pero/Neka parts of the real
+  book "3 Way Heroes" are removed and the book is out of the canon. Priors drawn: Sept 19 6:17 AM "ChelseaPlays and I am making
+  a book in this reality we are in called "3 Way Heroes"." (Email 1469); Sept 19 3:27 PM "Pero LAI jumps and drops down and
+  lands a HUGE kick on the 3 Way Heroes" (Email 1473, beat 762); Sept 24 4:37 PM Chapter 2, "then Nova- Neka says 'Me. 😸⚡'",
+  he "took over the whole story just by talking" (Email 1505).
+
 ## 2026-10-15 — NEKA IS NEKA; SECRETLY ALSO TAKEN (BEATS 1159-1160)
 
 Based on Toby's 2026-10-15 lore, 4:32 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message

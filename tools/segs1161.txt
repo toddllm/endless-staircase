@@ -1,0 +1,2 @@
+  if(c >= 25284.0 && c < 25306.0) return [1162, c-25284.0];  // NO LONGER CLASSICS CANON
+  if(c >= 25262.0 && c < 25284.0) return [1161, c-25262.0];  // IT HAS TO BE "NEKA"
