@@ -1,0 +1,2 @@
+  if(c >= 25152.0 && c < 25174.0) return [1156, c-25152.0];  // ORANGE STAR/SUN
+  if(c >= 25130.0 && c < 25152.0) return [1155, c-25130.0];  // TO THE LABATORY

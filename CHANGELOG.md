@@ -4,6 +4,41 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — TO THE LABATORY; ORANGE STAR/SUN (BEATS 1155-1156)
+
+Based on Toby's 2026-10-15 lore, 4:00-4:03 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
+(`1a14126be643e601` Email 1802, 4:00:05 PM; `1a14129d934f215f` Email 1803, 4:03:30 PM), replying to the 3:47 PM beat report
+(its question, what is in the missing 5-10% of the Gemini Neka LAI, is not answered). Email 1802 is a pasted chatbot session
+with no typing of his own: the chatbot's "No such file or directory" upload note, its "I can see it now", and its two
+descriptions of the pictures (Neka LAI: "messy black hair, bright glowing blue eyes, tan skin, a black outfit with a white
+cross, and two large hands reaching toward the viewer"; Awakened Neka: "glowing golden cross-shaped eyes, surrounded by
+yellow lightning and circular light rings. His chest cross also glows") are commentary, and the same two JPEGs (`Neka LAI.jpg`
+2,682,914 bytes, `Awakened Neka.jpg` 3,043,042 bytes, identical sizes to the 3:36 PM copies already in the bot's attachments
+folder) came attached again; not re-saved, not drawn. Email 1803 is two lines of his own, followed by the chatbot's italic
+restatement ("Neka arrives at the laboratory with Wenda.ps ... Simon.ps has now completed the transfer"), which is
+commentary. Only his two lines are drawn: "Neka walks away with Wenda.ps, then came to the labatory." and "Simon.ps brought
+Gray.ps sucessfully to Orange Star/Sun."
+
+![Beat 1155](screenshots/1217-to-the-labatory.png)
+
+![Beat 1156](screenshots/1218-orange-star-sun.png)
+
+- LV_CYC 25130.0 -> 25174.0, two new LV_BEATS rows (1155-1156): TO THE LABATORY; ORANGE STAR/SUN. New capture scenes
+  `b1155`, `b1156`. Tools: `gen1155.py`, `build1155.py`, `scenes1155.py` (template `emit_tail1008.py`). JS syntax check
+  clean (`node --check` on the extracted script); `runtime_probe.py 1156` clean (len 1157, no holes, no undefined segments,
+  every phase draws, 1245 draws).
+- Beat 1155, To The Labatory (his spelling kept): priors drawn, each verified in the wiki before drawing: Sept 26 2:28 PM
+  "Wenda.ps and Gray.ps are both locked in Neka's Lab" (ZomGray.ps; the Shadow-Men, the wall, the needle), Oct 5 7:34 PM
+  "The Mech was destroyed, the labatory was destroyed" (same spelling, ten days earlier; Gaster won the 50-year battle), and
+  Oct 14 8:16 PM "Neka Omazen still has Wenda.ps and is walking away" (beat 1151). The walk away now has an address; Gray.ps
+  is not behind them.
+- Beat 1156, Orange Star/Sun: priors drawn: Oct 14 8:19 PM "Oren.ps taken Gray.ps even farther from Wenda.ps to The Orange
+  Sun" (beat 1153; last night the hand was Oren.ps's, today it is Simon.ps's, and the place has a second name, Orange Star),
+  the same night's "Simon.ps turned Gray.ps into a demon" and "Why leave now?" (beats 1152-1153), and the new split: Wenda.ps
+  at the laboratory with Neka (beat 1155), Gray.ps at Orange Star/Sun with Simon.ps, nobody following anybody.
+- The chatbot's "Gray remains separated from Wenda. Oren.ps had previously pinned and carried him away; Simon.ps has now
+  completed the transfer" is its restatement, not drawn as canon.
+
 ## 2026-10-15 — ALL THE TIME (BEAT 1154)
 
 Based on Toby's 2026-10-15 lore, 3:36 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
