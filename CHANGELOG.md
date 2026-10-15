@@ -4,6 +4,30 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — CALL ME: DR. NEKA (BEAT 1163)
+
+Based on Toby's 2026-10-15 lore, 5:08-5:09 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
+(`1a1416502170f488` Email 1809, 5:08:06 PM; `1a141664f288323a` Email 1810, 5:09:31 PM), found by the post-ship re-list after
+the 1161-1162 reply had gone out. No attachments. Email 1809 is two questions to the chatbot, "Remember Simon.ps's Law?
+(like the start of the lore)" and "How about Simon's Law?"; the chatbot's answers ("If speed is the contest, Simon already
+won before the contest began", "Dr. Gaster created it to cause chaos in the game. Simon 404 signed the oldest books") are
+commentary; no canon, no beat. Email 1810 is one line of his own; the italic restatement under it ("He takes Gray.ps from
+Oren.ps and Simon.ps ... but as another captive") is the chatbot's. His line: "Neka then appears to Gray.ps and says "Call
+me: Dr. Neka.", then he took Gray.ps from Oren.ps and Simon.ps, and then Neka walks away with Gray.ps, taking Gray.ps to the
+same spot as Wenda.ps and Luigi Inus are."
+
+![Beat 1163](screenshots/1225-call-me-dr-neka.png)
+
+- LV_CYC 25306.0 -> 25328.0, one new LV_BEATS row (1163): CALL ME: DR. NEKA. New capture scene `b1163`. Tools:
+  `gen1163.py`, `build1163.py`, `scenes1163.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the
+  extracted script); `runtime_probe.py 1163` clean (len 1164, no holes, no undefined segments, every phase draws, 1252 draws).
+- Beat 1163, Call Me: Dr. Neka: this answers the 4:43 PM question (is Luigi Inus at the labatory too): Luigi Inus and
+  Wenda.ps are in the same spot, and now Gray.ps is there with them. Priors drawn, each verified in the wiki: Oct 13 8:19 PM
+  "Neka respawns everyone he slain, to get the Revival Badge and Doctor Badge." (beat 1142); the only earlier doctor, Dr.
+  Gaster 404 (July 29); Oct 15 4:03 PM "Simon.ps brought Gray.ps sucessfully to Orange Star/Sun." (beat 1156) and Oct 14
+  8:19 PM Oren.ps carrying him there; Oct 15 4:03 PM Wenda.ps to the labatory (beat 1155) and 4:32 PM Luigi Inus secretly
+  also taken (beat 1160).
+
 ## 2026-10-15 — IT HAS TO BE "NEKA"; NO LONGER CLASSICS CANON (BEATS 1161-1162)
 
 Based on Toby's 2026-10-15 lore, 4:50-4:52 PM, thread "Once again, Another Document" (`1a1311788bf63073`), three messages
