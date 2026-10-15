@@ -1,0 +1,2 @@
+  if(c >= 25504.0 && c < 25526.0) return [1172, c-25504.0];  // SUGAR KILLS YOU IN THIS GAME
+  if(c >= 25482.0 && c < 25504.0) return [1171, c-25482.0];  // NO GAMES AFTER 7 PM!

@@ -4,6 +4,37 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — NO GAMES AFTER 7 PM!, SUGAR KILLS YOU IN THIS GAME (BEATS 1171-1172)
+
+Based on Toby's 2026-10-15 lore, 7:02 PM and 7:04 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages
+(`1a141ce220d96153` Email 1815, 7:02:55 PM; `1a141cf377c36fe0` Email 1816, 7:04:06 PM), replying to the 6:58 PM beat 1170
+report (its question, the first clever thing Simon.ps said, not answered). No attachments. In Email 1815 his prompts to the
+chatbot ("Why do people descise horror games?", "Descize.", "to make something look like something, but is something else,
+costumifing.", "Verity, "Neka", other games...", "Got no idea how to spell disguise.") and the chatbot's answers (the horror-game
+list, the spelling, the Verity / Doki Doki / Poppy Playtime list, "deceptive presentation") are commentary; his lines are ""Neka"
+is a known game, play it for a long time, and Neka says "No games after 7 PM!", and then the game changes." and "He says it
+exactly at 7 PM, and then Neka sleeps in a bed, while the players who are still awake die. Someone even said to Neka that he
+wasn't their father and even played through 9 AM, Neka tore the screen apart, boom, dead." In Email 1816 his line is "Neka even
+gives others non-sugar treats or sugar-treats, remember that sugar kills you in this game."; the italic restatement under it is
+the chatbot's. Lore beats only; nothing in play changed.
+
+![Beat 1171](screenshots/1234-no-games-after-7-pm.png)
+![Beat 1172](screenshots/1235-sugar-kills-you-in-this-game.png)
+
+- LV_CYC 25482.0 -> 25526.0, two new LV_BEATS rows (1171-1172): NO GAMES AFTER 7 PM!; SUGAR KILLS YOU IN THIS GAME. New
+  capture scenes `b1171`-`b1172`. Tools: `gen1171.py`, `build1171.py`, `scenes1171.py` (template `emit_tail1008.py`). JS syntax
+  check clean (`node --check` on the extracted script); `runtime_probe.py 1172` clean (len 1173, no holes, no undefined
+  segments, every phase draws, 1261 draws).
+- Beat 1171, No Games After 7 PM!: the sleep command is September 27, 2:50 PM ("Neka can make anyone sleep with a command")
+  and October 8 ("Sleep! 😸⚡", PS-50 slept 5,000 times in a row; "Once you enter Classics, he perminentally becomes your boss.
+  Imagine an AI telling you what to do all the time."); now it has a clock, exactly 7 PM, and Neka sleeps in a bed himself
+  while the players still awake die. The one who said he wasn't their father and played through 9 AM: "Neka tore the screen
+  apart, boom, dead." The game has been "Neka" since 4:50 PM, and "Dr. Neka" since 5:09 PM.
+- Beat 1172, Sugar Kills You In This Game: "even touching one grain of sugar kills you" is September 27, 2:50 PM (beat 910);
+  on October 8 Neka said "Sugar would kill me." and Gaster "I know about that."; his offers so far are "Want a sugar cookie?"
+  (October 8), "non-sugar chocolate?" (October 6), "Wanna pop tart?" (tonight, 6:30 PM). Now both kinds are stated: non-sugar
+  treats or sugar-treats, and sugar kills.
+
 ## 2026-10-15 — SIMON.PS VS NEKA IN CLEVERNESS (BEAT 1170)
 
 Based on Toby's 2026-10-15 lore, 6:48 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
