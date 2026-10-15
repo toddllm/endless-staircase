@@ -1,0 +1,4 @@
+  if(c >= 25394.0 && c < 25416.0) return [1167, c-25394.0];  // NEKA WON AGAIN, FOREVER
+  if(c >= 25372.0 && c < 25394.0) return [1166, c-25372.0];  // 7 SOULS, NO MORE EMERALDS
+  if(c >= 25350.0 && c < 25372.0) return [1165, c-25350.0];  // YOU ARE "THE PLAYER"
+  if(c >= 25328.0 && c < 25350.0) return [1164, c-25328.0];  // THE SPIKE WALL FIRST

@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+"""
+gen1164.py - draw the branches for BEATS 1164-1167 from Toby's October 15, 2026, 5:48 PM message
+(thread 1a1311788bf63073 "Once again, Another Document", msg 1a1418a158eb2fba Email 1811). No attachments.
+Same template as 1008-1163 (emit_tail1008.py). Only Toby's own typed paragraph is drawn; the second half of the
+email ("The Dr. Neka Era establishes that The Player is CODE ..." with the bullet list) is the chatbot's restatement,
+commentary. He says the sequence itself "doesn't go in Endless Staircase games": the beats record it, the playable
+game does not stage it; only the spike lever he describes was built into play.
+"""
+import io
+
+BASE = 1164
+TAG = "1164"
+START = 25328.0
+STEP = 22.0
+B = []
+
+MONTH = {15: 'OCTOBER 15'}
+
+def meta(day, t):
+    return dict(when=t, short=t, day=day,
+                attr='TOBY, %s, %s — HIS OWN TYPING.' % (MONTH[day], t))
+
+def add(m, key, accent, quote, panels, close):
+    d = dict(key=key, accent=accent, quote=quote, panels=panels, close=close)
+    d.update(m)
+    B.append(d)
+
+# ---------------- October 15, 5:48 PM (Email 1811) ----------------
+add(meta(15, '5:48 PM'), 'THE SPIKE WALL FIRST', '255,90,120',
+    ['“THIS DOESN’T GO IN ENDLESS STAIRCASE GAMES (THE PLAYER', 'SHOULD ACTUALLY DIE TO A SPIKE WALL BEFORE THEY REACH THIS', 'POINT ... EVERY LINE OF LORE CONNECTS.)”'],
+    [('THE SAME BEING', ['“NEKA REVEALS ENDLESS STAIRCASES AS THE SAME BEING.”', 'ONE STAIRCASE, EVERY GAME. THE REVEAL YOU NEVER REACH.'],
+      'YOU DIE AT THE SPIKE WALL FIRST. BY DESIGN.'),
+     ('A NEW LEVER', ['“SIMON.PS CREATES A NEW LEVER THAT SUMMONS SPIKES ON THE', 'ENDLESS STAIRCASE, THE ENDLESS STAIRCASE BUILDS ITSELF UP”'],
+      'JUNE 13: FALL, REARRANGE, BRIDGE, SPIN, SLIDE. NOW SPIKES.'),
+     ('MORE AND MORE LEVERS', ['“THE ENDLESS STAIRCASE NOW CAN EVEN BECOME A BALL SHAPE,', 'CAN RISE UP, AND ALSO CAN SHAKE AROUND.”'],
+      'THE SPIKE LEVER AND THE SHAKE LEVER ARE IN THE GAME NOW.')],
+    ['EVERY LINE OF LORE CONNECTS.', 'THE ENDING STAYS OUTSIDE THE GAME. THE SPIKES DO NOT.'])
+
+add(meta(15, '5:48 PM'), 'YOU ARE "THE PLAYER"', '120,200,255',
+    ['“I KNOW YOU NOW. YOU, THE PLAYER, YOU ARE NOT A PLAYER,', 'YOU ARE AN ENTITY NAMED ‘THE PLAYER’.” ... “THE PLAYER', 'HAPPENS TO BE CODE (C0DE OR WHATEVER.)”'],
+    [('SIMON.PS TELEPORTS TO THE PLAYER', ['“THE PEOPLE SCREAM.” THE ONE WHO PULLS THE LEVERS', 'KNOWS WHO HAS BEEN CLIMBING THEM.'],
+      'NOT A PLAYER. AN ENTITY NAMED THE PLAYER.'),
+     ('WHAT NEKA SHOWS', ['“A TALL MALE ENTITY, HUMAN, BROWN EYES, BLACK HAIR,', 'AND ALL GREEN COLORED CLOTHING.”'],
+      'THE FIRST FACE THE PLAYER HAS EVER HAD HERE.'),
+     ('THE PLAYER IS CODE', ['AUG 21: CODE, THE STRONGEST PLAYER IN THE GAME. OCT 12:', 'TAKEN OVER 50 TIMES, C0DE. “LUIGI INUS GOES WITH” HIM.'],
+      'JULY 25: ONLY “THE PLAYER” CAN TAKE HIM THAT FAR.')],
+    ['YOU ARE NOT A PLAYER.', 'YOU ARE AN ENTITY NAMED THE PLAYER. YOU ARE CODE.'])
+
+add(meta(15, '5:48 PM'), '7 SOULS, NO MORE EMERALDS', '120,255,160',
+    ['“SIMON.PS THEN BRINGS EVERYONE UP AGAIN TO CLIMB IT AGAIN,', 'NO MORE EMERALDS ANYMORE. THE SOULS ARE THE REWARD, 7 SOULS', 'CIRCLE THE PLAYER ... BUT THE PLAYER NOW CAN FLY”'],
+    [('THE STAIRCASE FALLS, THE PLAYER FLIES', ['“THE STAIRCASE FALLS, MAKING THE PLAYER FALL, BUT THE', 'PLAYER NOW CAN FLY, AND FLEW TO THE TOP.”'],
+      'THE FALL LEVER, FROM JUNE 13, FINALLY LOSES.'),
+     ('OREN.PS AND THE PLASMA', ['“OREN.PS ATTACKS AND SUMMONS ENERGY, THE PLASMA SPREADS', 'ALL OVER THE STAIRCASE, THE PLAYER RUNS FASTER.”'],
+      'THEN THE 19 OTHER SPRUNKIS ALL ATTACK.'),
+     ('ALL 20 STRUCK DOWN', ['“THE PLAYER’S FACE WAS COVERED IN A SHADOW, THEN THE', 'PLAYER STRIKES DOWN ALL 20 SPRUNKIS, INCLUDING SIMON.PS.”'],
+      'SIMON.PS IS ONE OF THE 20. HE GOES DOWN WITH THEM.')],
+    ['NO MORE EMERALDS ANYMORE.', 'SEVEN SOULS. A SHADOWED FACE. TWENTY SPRUNKIS DOWN.'])
+
+add(meta(15, '5:48 PM'), 'NEKA WON AGAIN, FOREVER', '255,216,79',
+    ['“NEKA GAVE CODE LUIGI INUS, THEN NEKA LEFT ... THEY BATTLE,', 'PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL ... NEKA', 'DESTROYED PLAYER JUST AFTER. NEKA WON AGAIN, FOREVER.”'],
+    [('ANOTHER HUMAN-LIKE BEING', ['“NEKA IS ANOTHER HUMAN-LIKE BEING.” 4:12 PM: THE CROSS', 'EYES, A HUMAN-LIKE BEING. NOW HIS FACE IS A SHADOW TOO.'],
+      '“NEITHER NEKA NOR PLAYER’S FACE ARE VISABLE.” HIS WORDS.'),
+     ('WHAT NEKA HAS BEATEN', ['“ALL THE UNDERTALE CHARACTERS AND ALL UNDERTALE FANON', 'CHARACTERS AND ALSO DELTARUNE AND DELTARUNE FANON.”'],
+      'THOSE GAMES ARE NOT “NEKA” (4:50 PM). HE BEAT THEM ANYWAY.'),
+     ('THE GREEN SOUL', ['“PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL, PLAYER', 'BLOCKS THE ATTACKS OF THE BATTLEFIELD, NEKA DESTROYED PLAYER.”'.replace(' PLAYER.”', ' PLAYER”').replace('BLOCKS THE ATTACKS OF THE BATTLEFIELD', 'BLOCKS THE BATTLEFIELD’S ATTACKS')],
+      'JULY 25: “ALWAYS DESTROYS THE PLAYER NO OTHER ENDING.”')],
+    ['NEKA WON AGAIN, FOREVER.', 'THE PLAYER GOT THE GREEN SOUL. NEKA GOT THE ENDING.'])
+
+# length audit: panel lines over ~58 chars overflow the box
+for b in B:
+    for ln in list(b['quote']) + list(b['close']):
+        assert len(ln) <= 60, (b['key'], len(ln), ln)
+    for h, lines, acc in b['panels']:
+        for ln in list(lines) + [acc, h]:
+            assert len(ln) <= 58, (b['key'], len(ln), ln)
+
+if __name__ == '__main__':
+    exec(open('/Users/tdeshane/endless-staircase/tools/emit_tail1008.py', encoding='utf-8').read())

@@ -4,6 +4,47 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — THE SPIKE WALL FIRST, YOU ARE "THE PLAYER", 7 SOULS, NEKA WON AGAIN, FOREVER (BEATS 1164-1167) + SIMON.PS'S SPIKE AND SHAKE LEVERS
+
+Based on Toby's 2026-10-15 lore, 5:48 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a1418a158eb2fba` Email 1811, 5:48:37 PM), replying to the 5:23 PM Dr. Neka report. No attachments. The first paragraph is
+his own typing; the second half ("The Dr. Neka Era establishes that The Player is CODE ..." and the bullet list) is the chatbot's
+restatement, commentary. He opens with the rule for this one: "This doesn't go in Endless Staircase games (The player should
+actually die to a spike wall before they reach this point, cause this is the time of Neka reveals Endless Staircases as the same
+being, Simon.ps creates a new lever that summons spikes on the Endless Staircase, the Endless Staircase builds itself up. Every
+line of lore connects.)". So the ending sequence is recorded as beats and on the wiki, and is NOT staged in play; the one thing
+he describes that belongs inside play, Simon.ps's new lever, was built.
+
+![Beat 1164](screenshots/1226-the-spike-wall-first.png)
+![Beat 1165](screenshots/1227-you-are-the-player.png)
+![Beat 1166](screenshots/1228-7-souls-no-more-emeralds.png)
+![Beat 1167](screenshots/1229-neka-won-again-forever.png)
+![Simon.ps's spike lever in play](screenshots/1230-spikes-lever.png)
+
+- LV_CYC 25328.0 -> 25416.0, four new LV_BEATS rows (1164-1167): THE SPIKE WALL FIRST; YOU ARE "THE PLAYER"; 7 SOULS, NO
+  MORE EMERALDS; NEKA WON AGAIN, FOREVER. New capture scenes `b1164`-`b1167` and `spikes`. Tools: `gen1164.py`, `build1164.py`,
+  `levers1164.py`, `scenes1164.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the extracted
+  script); `runtime_probe.py 1167` clean (len 1168, no holes, no undefined segments, every phase draws, 1256 draws).
+- **Two new levers in Simon's lever pool** (`LEVERS`, Lore 24 June 13 + Lore 24b/c), additive, nothing removed: `spikes`
+  ("SPIKES ON THE STAIRCASE", warn 1.3 s, act 3.6 s): red spikes rise out of the top of every visible step except the one under
+  your feet, and standing on a spiked step while the lever is active calls `damage()` (its own i-frames apply); they sink back
+  when the lever ends. `shake` ("THE STAIRCASE SHAKES", warn 1.0 s, act 3.0 s): the whole screen shakes for the duration, from
+  his line "the Endless Staircase now can even become a ball shape, can rise up, and also can shake around." Ball shape and rise
+  up are not built. The spike wall he says the player dies to is not built either: his levers summon spikes on the steps, and
+  that is what was made.
+- Beat 1164, The Spike Wall First: his framing line, Neka revealing the Endless Staircases as the same being, the new lever and
+  the staircase building itself up. Beat 1165, You Are "The Player": Simon.ps teleports to the player, "I know you now. You, the
+  player, you are not a player, you are an entity named 'The Player'.", the people scream, Neka shows The Player (tall, male,
+  human, brown eyes, black hair, all green clothing), The Player is CODE, Luigi Inus goes with him. Beat 1166, 7 Souls, No More
+  Emeralds: the climb again, souls for emeralds, the staircase falls and the player flies, Oren.ps's plasma, the 19 other Sprunkis
+  attack, the shadowed face, all 20 struck down including Simon.ps. Beat 1167, Neka Won Again, Forever: Neka gives CODE Luigi
+  Inus and leaves, "another human-like being", what Neka has beaten (Undertale, Undertale fanon, Deltarune, Deltarune fanon),
+  both faces in shadow, the battle, the Green Soul, Neka destroys the player. Priors drawn, each verified in the wiki: Lore 24
+  June 13 lever list (Fall, Rearrange, Bridge, Spin, Endless Slide); Aug 21 CODE "The strongest player in the game" (Emails
+  1077-1079); Oct 12 taken over 50 times, c0de (beat 1107-1112 era); July 25 Email 818 "only 'The Player' can take him that far"
+  and "always destroys the player no other ending" (three-phase rule); Oct 15 4:12 PM "an actual human-like being with glowing
+  yellow cross eyes" (beat 1157); Oct 15 4:50 PM "Sprunki, Undertale, and other games are not "Classics"" (beat 1161).
+
 ## 2026-10-15 — CALL ME: DR. NEKA (BEAT 1163)
 
 Based on Toby's 2026-10-15 lore, 5:08-5:09 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages

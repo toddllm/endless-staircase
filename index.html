@@ -567,6 +567,10 @@ const LEVERS = [
   { type:'slide',     name:'THE ENDLESS SLIDE',    warn:1.2, act:3.6 },
   { type:'cure',      name:'THE FALSE CURE',       warn:1.2, act:5.0 },
   { type:'dud',       name:'...NOTHING HAPPENS',   warn:1.0, act:1.4 },
+  // Toby, Oct 15 2026, 5:48 PM (Email 1811): "Simon.ps creates a new lever that summons spikes on the
+  // Endless Staircase" ... "the Endless Staircase now ... can shake around."
+  { type:'spikes',    name:'SPIKES ON THE STAIRCASE', warn:1.3, act:3.6 },
+  { type:'shake',     name:'THE STAIRCASE SHAKES',  warn:1.0, act:3.0 },
 ];
 // Simon's lies — he promises a cure at a top that does not exist
 const TAUNTS = [
@@ -2376,6 +2380,18 @@ function activateLever(){
     // "juice" (hurts). same color. you cannot tell which until you drink.
     dropBottles();
     showTaunt('A CURE HAS BEEN PREPARED.');
+  } else if(lever.type==='spikes'){
+    // Oct 15 2026 lore: spikes are summoned onto the steps; the one under your feet stays clear,
+    // so the hit comes from where you land next, not from where you already are
+    for(const p of vis){ if(p===platforms[0]) continue;
+      const onIt = (player.x+player.w*0.35>p.x && player.x-player.w*0.35<p.x+p.w
+                    && Math.abs((player.y+player.h/2)-p.y)<22);
+      if(onIt) continue;
+      p.spikes = 1; }
+    shake = Math.max(shake, 8);
+  } else if(lever.type==='shake'){
+    // Oct 15 2026 lore: the staircase "can shake around"
+    shake = Math.max(shake, 14);
   } else if(lever.type==='dud'){
     // the lever that does nothing — the cruelest trick of all
     showTaunt(pick(["...","WAS THAT THE CURE?","KEEP GUESSING."]));
@@ -2386,6 +2402,13 @@ function runLeverEffect(dt){
     for(const p of platforms){ if(p.targetX===undefined) continue;
       p.x += (p.targetX - p.x) * 0.18;
       if(Math.abs(p.targetX-p.x)<0.6){ p.x=p.targetX; p.targetX=undefined; } }
+  } else if(lever.type==='spikes'){
+    if(player.onGround){
+      for(const p of platforms){ if(!p.spikes || p.gone) continue;
+        if(player.x+player.w*0.35>p.x && player.x-player.w*0.35<p.x+p.w
+           && Math.abs((player.y+player.h/2)-p.y)<8){ damage(); break; } } }
+  } else if(lever.type==='shake'){
+    shake = Math.max(shake, 6 + 6*Math.abs(Math.sin(lever.t*9)));
   } else if(lever.type==='bridge'){
     const tx = MARGIN, tw = W-MARGIN*2;
     for(const p of platforms){ if(!p.bridge) continue;
@@ -2397,6 +2420,7 @@ function endLever(hf){
     for(const p of platforms){ if(p.bridge){ p.x=p.bridge.ox; p.w=p.bridge.ow; p.bridge=null; } }
   }
   for(const p of platforms){ if(p.targetX!==undefined) p.targetX=undefined; }
+  for(const p of platforms){ if(p.spikes) p.spikes = 0; }
   ctrlInvert = false; slideMode = 0;
   leverTimer = rnd(12,18) - hf*6;
   lever = { state:'idle', type:null, name:'', t:0, warnDur:0, actDur:0 };
@@ -3385,6 +3409,7 @@ function draw(){
   if(isHighForm() && highForm.glow>0.02) drawHighForm();
   if(isClaraVs() && claraVs.glow>0.02) drawClaraVs();
   if(isLoopVs() && loopVs.glow>0.02) drawLoopVs();
+  drawSpikes();
   drawPlayer();
   drawParticles();
   drawFloaters();
@@ -3702,6 +3727,28 @@ function drawWorldStatic(){
     const w=120, x= (i%2? W*0.22 : W*0.55), y=H-60 - i*86;
     roundRect(x,y,w,16,6); ctx.fillStyle='#241a3c'; ctx.fill();
     ctx.fillStyle='#3a2a5e'; ctx.fillRect(x,y,w,4);
+  }
+  ctx.restore();
+}
+
+// Simon.ps's spike lever (Toby, Oct 15 2026, 5:48 PM): red spikes rise out of the top of every spiked step.
+// Drawn in its own layer just under the player, above the era overlays, so they stay visible in every stage.
+function drawSpikes(){
+  if(!lever || lever.type!=='spikes' || lever.state!=='act') return;
+  const rise = Math.min(1, lever.t*3) * Math.min(1, Math.max(0.15, (lever.actDur-lever.t)*2));
+  ctx.save();
+  ctx.globalAlpha=1;   // an era layer above may leave the alpha low; the spikes are a hazard, so full strength
+  ctx.shadowColor='#ff3b5c'; ctx.shadowBlur=8;
+  ctx.fillStyle='#ff3b5c';
+  for(const p of platforms){
+    if(!p.spikes || p.gone) continue;
+    const wob = Math.sin(time*1.6 + (p.eye||0))*1.5;
+    const x=p.x, y=p.y+wob, w=p.w;
+    ctx.beginPath();
+    const spk=Math.max(3,(w/14)|0);
+    for(let i=0;i<spk;i++){ const tx=x+(i+0.5)*(w/spk);
+      ctx.moveTo(tx-4,y+1); ctx.lineTo(tx,y-11*rise); ctx.lineTo(tx+4,y+1); }
+    ctx.fill();
   }
   ctx.restore();
 }
@@ -11354,7 +11401,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 25328.0;
+const LV_CYC = 25416.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -13645,6 +13692,14 @@ const LV_BEATS = [
     sub:"“THE PARTS WITH THE PERO/NEKA THING ON 3 WAY HEROES WAS ALL REMOVED. CAUSE IT IS NOT ALLOWED.” … “NO LONGER CLASSICS CANON, BECAUSE THEY HAVE NO REALATIONSHIP WITH NEKA NOW.” · THE BOOK WITH CHELSEAPLAYS · THE PERO PART · NEKA TOOK OVER CHAPTER 2 · 3 WAY HEROES: NOT “NEKA” CANON. — TOBY, OCT 15, 4:50-4:52 PM, HIS OWN TYPING" },
   { key:"CALL ME: DR. NEKA", col:'rgb(120,200,255)',
     sub:"“NEKA THEN APPEARS TO GRAY.PS AND SAYS “CALL ME: DR. NEKA.”, THEN HE TOOK GRAY.PS FROM OREN.PS AND SIMON.PS ... TAKING GRAY.PS TO THE SAME SPOT AS WENDA.PS AND LUIGI INUS ARE.” · THE DOCTOR BADGE · TAKEN FROM THE TWO “NEKA” SPRUNKI GODS · THE SAME SPOT · CALL ME: DR. NEKA. — TOBY, OCT 15, 5:09 PM, HIS OWN TYPING" },
+  { key:"THE SPIKE WALL FIRST", col:'rgb(255,90,120)',
+    sub:"“THIS DOESN’T GO IN ENDLESS STAIRCASE GAMES (THE PLAYER SHOULD ACTUALLY DIE TO A SPIKE WALL BEFORE THEY REACH THIS POINT ... EVERY LINE OF LORE CONNECTS.)” · THE SAME BEING · A NEW LEVER · MORE AND MORE LEVERS · EVERY LINE OF LORE CONNECTS. — TOBY, OCT 15, 5:48 PM, HIS OWN TYPING" },
+  { key:"YOU ARE ”THE PLAYER”", col:'rgb(120,200,255)',
+    sub:"“I KNOW YOU NOW. YOU, THE PLAYER, YOU ARE NOT A PLAYER, YOU ARE AN ENTITY NAMED ‘THE PLAYER’.” ... “THE PLAYER HAPPENS TO BE CODE (C0DE OR WHATEVER.)” · SIMON.PS TELEPORTS TO THE PLAYER · WHAT NEKA SHOWS · THE PLAYER IS CODE · YOU ARE NOT A PLAYER. — TOBY, OCT 15, 5:48 PM, HIS OWN TYPING" },
+  { key:"7 SOULS, NO MORE EMERALDS", col:'rgb(120,255,160)',
+    sub:"“SIMON.PS THEN BRINGS EVERYONE UP AGAIN TO CLIMB IT AGAIN, NO MORE EMERALDS ANYMORE. THE SOULS ARE THE REWARD, 7 SOULS CIRCLE THE PLAYER ... BUT THE PLAYER NOW CAN FLY” · THE STAIRCASE FALLS, THE PLAYER FLIES · OREN.PS AND THE PLASMA · ALL 20 STRUCK DOWN · NO MORE EMERALDS ANYMORE. — TOBY, OCT 15, 5:48 PM, HIS OWN TYPING" },
+  { key:"NEKA WON AGAIN, FOREVER", col:'rgb(255,216,79)',
+    sub:"“NEKA GAVE CODE LUIGI INUS, THEN NEKA LEFT ... THEY BATTLE, PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL ... NEKA DESTROYED PLAYER JUST AFTER. NEKA WON AGAIN, FOREVER.” · ANOTHER HUMAN-LIKE BEING · WHAT NEKA HAS BEATEN · THE GREEN SOUL · NEKA WON AGAIN, FOREVER. — TOBY, OCT 15, 5:48 PM, HIS OWN TYPING" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -15795,6 +15850,10 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 25394.0 && c < 25416.0) return [1167, c-25394.0];  // NEKA WON AGAIN, FOREVER
+  if(c >= 25372.0 && c < 25394.0) return [1166, c-25372.0];  // 7 SOULS, NO MORE EMERALDS
+  if(c >= 25350.0 && c < 25372.0) return [1165, c-25350.0];  // YOU ARE "THE PLAYER"
+  if(c >= 25328.0 && c < 25350.0) return [1164, c-25328.0];  // THE SPIKE WALL FIRST
   if(c >= 25306.0 && c < 25328.0) return [1163, c-25306.0];  // CALL ME: DR. NEKA
   if(c >= 25284.0 && c < 25306.0) return [1162, c-25284.0];  // NO LONGER CLASSICS CANON
   if(c >= 25262.0 && c < 25284.0) return [1161, c-25262.0];  // IT HAS TO BE "NEKA"
@@ -96507,6 +96566,494 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
     ctx.fillText('★ CALL ME: DR. NEKA ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1164){
+    // BEAT 1164: THE SPIKE WALL FIRST.
+    // Toby, October 15, 2026, 5:48 PM EDT, his own typing:
+    //   “THIS DOESN’T GO IN ENDLESS STAIRCASE GAMES (THE PLAYER
+    //   SHOULD ACTUALLY DIE TO A SPIKE WALL BEFORE THEY REACH THIS
+    //   POINT ... EVERY LINE OF LORE CONNECTS.)”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE SAME BEING
+    //     “NEKA REVEALS ENDLESS STAIRCASES AS THE SAME BEING.”
+    //     ONE STAIRCASE, EVERY GAME. THE REVEAL YOU NEVER REACH.
+    //     YOU DIE AT THE SPIKE WALL FIRST. BY DESIGN.
+    //   A NEW LEVER
+    //     “SIMON.PS CREATES A NEW LEVER THAT SUMMONS SPIKES ON THE
+    //     ENDLESS STAIRCASE, THE ENDLESS STAIRCASE BUILDS ITSELF UP”
+    //     JUNE 13: FALL, REARRANGE, BRIDGE, SPIN, SLIDE. NOW SPIKES.
+    //   MORE AND MORE LEVERS
+    //     “THE ENDLESS STAIRCASE NOW CAN EVEN BECOME A BALL SHAPE,
+    //     CAN RISE UP, AND ALSO CAN SHAKE AROUND.”
+    //     THE SPIKE LEVER AND THE SHAKE LEVER ARE IN THE GAME NOW.
+    const dt = c - 25328.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1164=ctx.createLinearGradient(0,top+H,0,top);
+    gr1164.addColorStop(0,'rgba(255,90,120,0.22)'); gr1164.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1164.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1164; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(255,90,120,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('THE SPIKE WALL FIRST', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“THIS DOESN’T GO IN ENDLESS STAIRCASE GAMES (THE PLAYER', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('SHOULD ACTUALLY DIE TO A SPIKE WALL BEFORE THEY REACH THIS', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('POINT ... EVERY LINE OF LORE CONNECTS.)”', cx, top+H*0.1760);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 15, 5:48 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1164=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(255,90,120,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1164, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(255,90,120,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1164, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(255,90,120,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE SAME BEING', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“NEKA REVEALS ENDLESS STAIRCASES AS THE SAME BEING.”', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('ONE STAIRCASE, EVERY GAME. THE REVEAL YOU NEVER REACH.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('YOU DIE AT THE SPIKE WALL FIRST. BY DESIGN.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('A NEW LEVER', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“SIMON.PS CREATES A NEW LEVER THAT SUMMONS SPIKES ON THE', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('ENDLESS STAIRCASE, THE ENDLESS STAIRCASE BUILDS ITSELF UP”', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('JUNE 13: FALL, REARRANGE, BRIDGE, SPIN, SLIDE. NOW SPIKES.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1164=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1164, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1164, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('MORE AND MORE LEVERS', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE ENDLESS STAIRCASE NOW CAN EVEN BECOME A BALL SHAPE,', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('CAN RISE UP, AND ALSO CAN SHAKE AROUND.”', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THE SPIKE LEVER AND THE SHAKE LEVER ARE IN THE GAME NOW.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('EVERY LINE OF LORE CONNECTS.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('THE ENDING STAYS OUTSIDE THE GAME. THE SPIKES DO NOT.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ THE SPIKE WALL FIRST ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1165){
+    // BEAT 1165: YOU ARE "THE PLAYER".
+    // Toby, October 15, 2026, 5:48 PM EDT, his own typing:
+    //   “I KNOW YOU NOW. YOU, THE PLAYER, YOU ARE NOT A PLAYER,
+    //   YOU ARE AN ENTITY NAMED ‘THE PLAYER’.” ... “THE PLAYER
+    //   HAPPENS TO BE CODE (C0DE OR WHATEVER.)”
+    // Priors, each verified in the archive before it was drawn:
+    //   SIMON.PS TELEPORTS TO THE PLAYER
+    //     “THE PEOPLE SCREAM.” THE ONE WHO PULLS THE LEVERS
+    //     KNOWS WHO HAS BEEN CLIMBING THEM.
+    //     NOT A PLAYER. AN ENTITY NAMED THE PLAYER.
+    //   WHAT NEKA SHOWS
+    //     “A TALL MALE ENTITY, HUMAN, BROWN EYES, BLACK HAIR,
+    //     AND ALL GREEN COLORED CLOTHING.”
+    //     THE FIRST FACE THE PLAYER HAS EVER HAD HERE.
+    //   THE PLAYER IS CODE
+    //     AUG 21: CODE, THE STRONGEST PLAYER IN THE GAME. OCT 12:
+    //     TAKEN OVER 50 TIMES, C0DE. “LUIGI INUS GOES WITH” HIM.
+    //     JULY 25: ONLY “THE PLAYER” CAN TAKE HIM THAT FAR.
+    const dt = c - 25350.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1165=ctx.createLinearGradient(0,top+H,0,top);
+    gr1165.addColorStop(0,'rgba(120,200,255,0.22)'); gr1165.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1165.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1165; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(120,200,255,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('YOU ARE "THE PLAYER"', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“I KNOW YOU NOW. YOU, THE PLAYER, YOU ARE NOT A PLAYER,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('YOU ARE AN ENTITY NAMED ‘THE PLAYER’.” ... “THE PLAYER', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('HAPPENS TO BE CODE (C0DE OR WHATEVER.)”', cx, top+H*0.1760);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 15, 5:48 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1165=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(120,200,255,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1165, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(120,200,255,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1165, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(120,200,255,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('SIMON.PS TELEPORTS TO THE PLAYER', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE PEOPLE SCREAM.” THE ONE WHO PULLS THE LEVERS', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('KNOWS WHO HAS BEEN CLIMBING THEM.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('NOT A PLAYER. AN ENTITY NAMED THE PLAYER.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('WHAT NEKA SHOWS', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“A TALL MALE ENTITY, HUMAN, BROWN EYES, BLACK HAIR,', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AND ALL GREEN COLORED CLOTHING.”', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('THE FIRST FACE THE PLAYER HAS EVER HAD HERE.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1165=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1165, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1165, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THE PLAYER IS CODE', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('AUG 21: CODE, THE STRONGEST PLAYER IN THE GAME. OCT 12:', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('TAKEN OVER 50 TIMES, C0DE. “LUIGI INUS GOES WITH” HIM.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('JULY 25: ONLY “THE PLAYER” CAN TAKE HIM THAT FAR.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('YOU ARE NOT A PLAYER.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('YOU ARE AN ENTITY NAMED THE PLAYER. YOU ARE CODE.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ YOU ARE "THE PLAYER" ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1166){
+    // BEAT 1166: 7 SOULS, NO MORE EMERALDS.
+    // Toby, October 15, 2026, 5:48 PM EDT, his own typing:
+    //   “SIMON.PS THEN BRINGS EVERYONE UP AGAIN TO CLIMB IT AGAIN,
+    //   NO MORE EMERALDS ANYMORE. THE SOULS ARE THE REWARD, 7 SOULS
+    //   CIRCLE THE PLAYER ... BUT THE PLAYER NOW CAN FLY”
+    // Priors, each verified in the archive before it was drawn:
+    //   THE STAIRCASE FALLS, THE PLAYER FLIES
+    //     “THE STAIRCASE FALLS, MAKING THE PLAYER FALL, BUT THE
+    //     PLAYER NOW CAN FLY, AND FLEW TO THE TOP.”
+    //     THE FALL LEVER, FROM JUNE 13, FINALLY LOSES.
+    //   OREN.PS AND THE PLASMA
+    //     “OREN.PS ATTACKS AND SUMMONS ENERGY, THE PLASMA SPREADS
+    //     ALL OVER THE STAIRCASE, THE PLAYER RUNS FASTER.”
+    //     THEN THE 19 OTHER SPRUNKIS ALL ATTACK.
+    //   ALL 20 STRUCK DOWN
+    //     “THE PLAYER’S FACE WAS COVERED IN A SHADOW, THEN THE
+    //     PLAYER STRIKES DOWN ALL 20 SPRUNKIS, INCLUDING SIMON.PS.”
+    //     SIMON.PS IS ONE OF THE 20. HE GOES DOWN WITH THEM.
+    const dt = c - 25372.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1166=ctx.createLinearGradient(0,top+H,0,top);
+    gr1166.addColorStop(0,'rgba(120,255,160,0.22)'); gr1166.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1166.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1166; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(120,255,160,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('7 SOULS, NO MORE EMERALDS', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“SIMON.PS THEN BRINGS EVERYONE UP AGAIN TO CLIMB IT AGAIN,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('NO MORE EMERALDS ANYMORE. THE SOULS ARE THE REWARD, 7 SOULS', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('CIRCLE THE PLAYER ... BUT THE PLAYER NOW CAN FLY”', cx, top+H*0.1760);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 15, 5:48 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1166=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(120,255,160,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1166, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(120,255,160,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1166, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(120,255,160,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE STAIRCASE FALLS, THE PLAYER FLIES', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE STAIRCASE FALLS, MAKING THE PLAYER FALL, BUT THE', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PLAYER NOW CAN FLY, AND FLEW TO THE TOP.”', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THE FALL LEVER, FROM JUNE 13, FINALLY LOSES.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('OREN.PS AND THE PLASMA', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“OREN.PS ATTACKS AND SUMMONS ENERGY, THE PLASMA SPREADS', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('ALL OVER THE STAIRCASE, THE PLAYER RUNS FASTER.”', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('THEN THE 19 OTHER SPRUNKIS ALL ATTACK.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1166=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1166, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1166, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('ALL 20 STRUCK DOWN', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“THE PLAYER’S FACE WAS COVERED IN A SHADOW, THEN THE', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PLAYER STRIKES DOWN ALL 20 SPRUNKIS, INCLUDING SIMON.PS.”', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('SIMON.PS IS ONE OF THE 20. HE GOES DOWN WITH THEM.', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('NO MORE EMERALDS ANYMORE.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('SEVEN SOULS. A SHADOWED FACE. TWENTY SPRUNKIS DOWN.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ 7 SOULS, NO MORE EMERALDS ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1167){
+    // BEAT 1167: NEKA WON AGAIN, FOREVER.
+    // Toby, October 15, 2026, 5:48 PM EDT, his own typing:
+    //   “NEKA GAVE CODE LUIGI INUS, THEN NEKA LEFT ... THEY BATTLE,
+    //   PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL ... NEKA
+    //   DESTROYED PLAYER JUST AFTER. NEKA WON AGAIN, FOREVER.”
+    // Priors, each verified in the archive before it was drawn:
+    //   ANOTHER HUMAN-LIKE BEING
+    //     “NEKA IS ANOTHER HUMAN-LIKE BEING.” 4:12 PM: THE CROSS
+    //     EYES, A HUMAN-LIKE BEING. NOW HIS FACE IS A SHADOW TOO.
+    //     “NEITHER NEKA NOR PLAYER’S FACE ARE VISABLE.” HIS WORDS.
+    //   WHAT NEKA HAS BEATEN
+    //     “ALL THE UNDERTALE CHARACTERS AND ALL UNDERTALE FANON
+    //     CHARACTERS AND ALSO DELTARUNE AND DELTARUNE FANON.”
+    //     THOSE GAMES ARE NOT “NEKA” (4:50 PM). HE BEAT THEM ANYWAY.
+    //   THE GREEN SOUL
+    //     “PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL, PLAYER
+    //     BLOCKS THE BATTLEFIELD’S ATTACKS, NEKA DESTROYED PLAYER”
+    //     JULY 25: “ALWAYS DESTROYS THE PLAYER NO OTHER ENDING.”
+    const dt = c - 25394.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.4));
+    const neA=Math.max(0,Math.min(1,(dt-8.2)/1.8));
+    const zoA=Math.max(0,Math.min(1,(dt-11.6)/1.8));
+    const svA=Math.max(0,Math.min(1,(dt-15.0)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1167=ctx.createLinearGradient(0,top+H,0,top);
+    gr1167.addColorStop(0,'rgba(255,216,79,0.22)'); gr1167.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1167.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1167; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(255,216,79,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('NEKA WON AGAIN, FOREVER', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“NEKA GAVE CODE LUIGI INUS, THEN NEKA LEFT ... THEY BATTLE,', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL ... NEKA', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('DESTROYED PLAYER JUST AFTER. NEKA WON AGAIN, FOREVER.”', cx, top+H*0.1760);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 15, 5:48 PM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      var ky1167=top+H*0.2780;
+      ctx.globalAlpha=g*knA*0.16; ctx.fillStyle='rgba(255,216,79,0.46)';
+      ctx.fillRect(cx-W*0.352, ky1167, W*0.704, H*0.1040);
+      ctx.globalAlpha=g*knA*(0.52+0.22*pul); ctx.strokeStyle='rgba(255,216,79,0.70)'; ctx.lineWidth=0.38;
+      ctx.strokeRect(cx-W*0.352, ky1167, W*0.704, H*0.1040);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('ANOTHER HUMAN-LIKE BEING', cx, top+H*0.3000);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“NEKA IS ANOTHER HUMAN-LIKE BEING.” 4:12 PM: THE CROSS', cx, top+H*0.3200);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('EYES, A HUMAN-LIKE BEING. NOW HIS FACE IS A SHADOW TOO.', cx, top+H*0.3390);
+    ctx.globalAlpha=g*knA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('“NEITHER NEKA NOR PLAYER’S FACE ARE VISABLE.” HIS WORDS.', cx, top+H*0.3580);
+    }
+
+    if(neA>0.01){
+    ctx.globalAlpha=g*neA*0.96;
+    ctx.fillStyle='rgba(127,212,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('WHAT NEKA HAS BEATEN', cx, top+H*0.5960);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“ALL THE UNDERTALE CHARACTERS AND ALL UNDERTALE FANON', cx, top+H*0.6160);
+    ctx.globalAlpha=g*neA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.94)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('CHARACTERS AND ALSO DELTARUNE AND DELTARUNE FANON.”', cx, top+H*0.6350);
+    ctx.globalAlpha=g*neA*0.88;
+    ctx.fillStyle='rgba(188,198,212,0.90)'; ctx.font='700 3.6px ui-monospace,monospace';
+    ctx.fillText('THOSE GAMES ARE NOT “NEKA” (4:50 PM). HE BEAT THEM ANYWAY.', cx, top+H*0.6540);
+    }
+
+    if(zoA>0.01){
+      var zy1167=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1167, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1167, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('THE GREEN SOUL', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('“PLAYER BEATS LUIGI INUS AND GETS THE GREEN SOUL, PLAYER', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('BLOCKS THE BATTLEFIELD’S ATTACKS, NEKA DESTROYED PLAYER”', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('JULY 25: “ALWAYS DESTROYS THE PLAYER NO OTHER ENDING.”', cx, top+H*0.7750);
+    }
+
+    if(svA>0.01){
+    ctx.globalAlpha=g*svA*0.96;
+    ctx.fillStyle='rgba(255,255,255,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('NEKA WON AGAIN, FOREVER.', cx, top+H*0.8620);
+    ctx.globalAlpha=g*svA*0.88;
+    ctx.fillStyle='rgba(242,244,248,0.94)'; ctx.font='900 4.0px ui-monospace,monospace';
+    ctx.fillText('THE PLAYER GOT THE GREEN SOUL. NEKA GOT THE ENDING.', cx, top+H*0.8820);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ NEKA WON AGAIN, FOREVER ★', cx, top+H*0.9380);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===814){
