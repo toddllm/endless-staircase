@@ -1,0 +1,2 @@
+  if(c >= 25240.0 && c < 25262.0) return [1160, c-25240.0];  // SECRETLY ALSO TAKEN
+  if(c >= 25218.0 && c < 25240.0) return [1159, c-25218.0];  // NEKA IS NEKA

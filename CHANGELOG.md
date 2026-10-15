@@ -4,6 +4,33 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — NEKA IS NEKA; SECRETLY ALSO TAKEN (BEATS 1159-1160)
+
+Based on Toby's 2026-10-15 lore, 4:32 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a14144aa80f66cf` Email 1805, 4:32:46 PM), replying to the 4:25 PM beat report (its Alex 303 question unanswered). No
+attachments. It is a pasted chatbot session. The chatbot's answers (the Sprunki mod list: Melody Attack, EARTHBORN SHIFTED,
+Sprunki.msi; Mr. Tree's powers; the villain rankings Wenda / Mr. Black / Simon; "Two Nekas, two different meanings!"; and the
+closing restatement that Gray.ps's pursuit revealed only part of what Neka was doing) are commentary. His questions about
+Mr. Tree and the Sprunki villains are about real fan mods, not lore, and are not drawn. His own lore lines: "Neka LAI is the
+best one, he is Classics OC, and the game Classics was renamed to "Neka" pretty long ago now."; "It is actually called
+"Neka" with the quoteations cause Neka is Neka, and "Neka" is "Neka"."; "Neka is actually doing far better than the
+Sprunkis at the villian thing. Neka actually secretly also taken Luigi Inus, when only keeping Wenda.ps visable."
+
+![Beat 1159](screenshots/1221-neka-is-neka.png)
+
+![Beat 1160](screenshots/1222-secretly-also-taken.png)
+
+- LV_CYC 25218.0 -> 25262.0, two new LV_BEATS rows (1159-1160): NEKA IS NEKA; SECRETLY ALSO TAKEN. New capture scenes
+  `b1159`, `b1160`. Tools: `gen1159.py`, `build1159.py`, `scenes1159.py` (template `emit_tail1008.py`). JS syntax check
+  clean (`node --check` on the extracted script); `runtime_probe.py 1160` clean (len 1161, no holes, no undefined segments,
+  every phase draws, 1249 draws).
+- Beat 1159, Neka Is Neka: Neka LAI is the best villain (his pick over the chatbot's Wenda), and the game's name is
+  "Neka", quote marks included. Priors drawn: Oct 11 Email 1741, Classics was named after Neka's daughter, Classics Omazen;
+  Oct 12 1:50 PM "I made the game, and I renamed it, cause I wanted to."
+- Beat 1160, Secretly Also Taken (his spelling "villian", "visable" kept): priors drawn: Oct 14 5:32 PM Neka takes Wenda.ps
+  even farther, Gray.ps keeps following; Oct 15 4:03 PM Neka walks away with Wenda.ps to the labatory; Oct 14 6:24 AM Luigi
+  Inus says "🦊" once again (he thinks the attack-is-complete line is a lie).
+
 ## 2026-10-15 — THE CROSS EYES; ALEX 303 LOWED DOWN (BEATS 1157-1158)
 
 Based on Toby's 2026-10-15 lore, 4:12 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
