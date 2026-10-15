@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-15 — SIMON.PS VS NEKA IN CLEVERNESS (BEAT 1170)
+
+Based on Toby's 2026-10-15 lore, 6:48 PM, thread "Once again, Another Document" (`1a1311788bf63073`), one message
+(`1a141c12f5b97935` Email 1814, 6:48:48 PM), which arrived while beats 1168-1169 were being built. No attachments. His line:
+"Oren.ps says "I SAID NOT THE COMPUTER-", Neka says "You asked for a cookie, not the whole computer.", Oren.ps brings Simon.ps,
+Simon.ps was playful and smart like Neka, so Simon.ps VS Neka in cleverness happened, it continued for so many hours."; the
+restatement under it ("Neka twists ... No winner has been established yet.") is the chatbot's, commentary. Lore beat only;
+nothing in play changed.
+
+![Beat 1170](screenshots/1233-simon-ps-vs-neka-in-cleverness.png)
+
+- LV_CYC 25460.0 -> 25482.0, one new LV_BEATS row (1170): SIMON.PS VS NEKA IN CLEVERNESS. New capture scene `b1170`. Tools:
+  `gen1170.py`, `build1170.py`, `scenes1170.py` (template `emit_tail1008.py`). JS syntax check clean (`node --check` on the
+  extracted script); `runtime_probe.py 1170` clean (len 1171, no holes, no undefined segments, every phase draws, 1259 draws).
+- Beat 1170: Oren.ps cut off mid-word (the way Neka cut Nova off on September 24), "a cookie, not the whole computer"; Simon.ps,
+  "the one behind Oren.ps" since October 14 and one of the 20 struck down at 5:48 PM, now in a contest of cleverness, not power,
+  for so many hours, no winner named.
+
 ## 2026-10-15 — HIS FAVORITE DESSERT IS PI, NOT THE COMPUTER COOKIE (BEATS 1168-1169)
 
 Based on Toby's 2026-10-15 lore, 6:27 PM and 6:30 PM, thread "Once again, Another Document" (`1a1311788bf63073`), two messages

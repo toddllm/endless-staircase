@@ -1,0 +1,1 @@
+  if(c >= 25460.0 && c < 25482.0) return [1170, c-25460.0];  // SIMON.PS VS NEKA IN CLEVERNESS
