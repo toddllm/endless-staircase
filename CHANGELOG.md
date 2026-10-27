@@ -4,6 +4,15 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-27 — OWNER: 1337 (BEAT 1274)
+
+Based on Toby's October 27, 2026, 5:50 AM lore (Email 2000, message `1a17cc54df2240f6` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the morning's beat report. Built the same morning. Only his own typed lines are drawn; "Create an image of Jeck" is his prompt to the chatbot, and the second paragraph under his lines (the restated mustache and shirt text, "The image I made needs ...") is the chatbot's, commentary. The wiki ingest had not reached this message when the game was built, so the game assigned the number and title. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1337.
+
+![Beat 1274](screenshots/1337-owner-1337.png)
+
+- LV_CYC 27748.0 -> 27770.0, 1 new LV_BEATS row (1274). New capture scene `b1274`. Tools: `gen1274.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1274`, `scenes_batch.py 1274`. `node --check` clean; `runtime_probe.py 1274` = len 1275, no holes, 1363 draws, no errors.
+- Beat 1274, Owner: 1337 (October 27, 5:50 AM): "Also Jeck also has a mustache, and his shirt says "Owner: 1337", and he is the first owner of the facility at the first of Classic RL, this is the second time Classic RL happened. 1337 Jeck is obsessed with the number 1337, as Neka is obsessed with all numbers." Priors drawn: Neka's mustache (Oct 25, beat 1260, shrinks to 0 as Mr. Black), the default owner shirt (Oct 26, beat 1273), Facility Worker / Facility Owner (Oct 24, beat 1251), Neka "facinated with ALL numbers" (Oct 25, beat 1263).
+
 ## 2026-10-27 — THE MOTHER TO JECK IS ACCOUNT 1337 (BEATS 1267-1273)
 
 Based on Toby's October 25-26, 2026 lore (Emails 1990-1999), the end of "Classic RL (Last Era)" (`1a16f845d4f16406`, Oct 25 6:47-6:55 PM) and "Continuing of Classic RL" (`1a1779f533a68ea7`, Oct 26 5:51 AM - 7:00 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
