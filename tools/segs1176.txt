@@ -1,0 +1,19 @@
+  if(c >= 25988.0 && c < 26010.0) return [1194, c-25988.0];  // 21 PUNCH
+  if(c >= 25966.0 && c < 25988.0) return [1193, c-25966.0];  // EVERY BEING SLAIN
+  if(c >= 25944.0 && c < 25966.0) return [1192, c-25944.0];  // “NEKA” SHIFTED
+  if(c >= 25922.0 && c < 25944.0) return [1191, c-25922.0];  // NO LONGER AN ANTI-VIRUS
+  if(c >= 25900.0 && c < 25922.0) return [1190, c-25900.0];  // NEKA: TROLLGE STATE
+  if(c >= 25878.0 && c < 25900.0) return [1189, c-25878.0];  // 2 CHARACTERS WITH 100% PYCHOPATHY
+  if(c >= 25856.0 && c < 25878.0) return [1188, c-25856.0];  // THE BODY TEARS APART
+  if(c >= 25834.0 && c < 25856.0) return [1187, c-25834.0];  // THE CUTS
+  if(c >= 25812.0 && c < 25834.0) return [1186, c-25812.0];  // /LEAVE_BUTTON = NIL
+  if(c >= 25790.0 && c < 25812.0) return [1185, c-25790.0];  // ATULICATUS
+  if(c >= 25768.0 && c < 25790.0) return [1184, c-25768.0];  // NEKA’S SPIRIT
+  if(c >= 25746.0 && c < 25768.0) return [1183, c-25746.0];  // THE AI ERA CAME
+  if(c >= 25724.0 && c < 25746.0) return [1182, c-25724.0];  // TO SURVIVE... PRAY.
+  if(c >= 25702.0 && c < 25724.0) return [1181, c-25702.0];  // BLACK X EYES IN EVERY PICTURE
+  if(c >= 25680.0 && c < 25702.0) return [1180, c-25680.0];  // THE COMPANY ROSTER
+  if(c >= 25658.0 && c < 25680.0) return [1179, c-25658.0];  // THE PAUSE BUTTON AND 7MAN
+  if(c >= 25636.0 && c < 25658.0) return [1178, c-25636.0];  // A QUADRILLION+ PLAYERS
+  if(c >= 25614.0 && c < 25636.0) return [1177, c-25614.0];  // 7UON REMOVES TIME
+  if(c >= 25592.0 && c < 25614.0) return [1176, c-25592.0];  // NEKA AND ALEX BOTH DIE

@@ -1,0 +1,8 @@
+  if(c >= 26670.0 && c < 26692.0) return [1225, c-26670.0];  // NEKA SAYS YES.
+  if(c >= 26648.0 && c < 26670.0) return [1224, c-26648.0];  // INFINITE PAGES A SECOND
+  if(c >= 26626.0 && c < 26648.0) return [1223, c-26626.0];  // CLAIM ALL.
+  if(c >= 26604.0 && c < 26626.0) return [1222, c-26604.0];  // COMPRESSED TO 5.65 FEET
+  if(c >= 26582.0 && c < 26604.0) return [1221, c-26582.0];  // NEKA’S ORIGINAL NAME IS NEKA
+  if(c >= 26560.0 && c < 26582.0) return [1220, c-26560.0];  // CURINIUM SERUIM TATHIFICITIONUM
+  if(c >= 26538.0 && c < 26560.0) return [1219, c-26538.0];  // NO LONGER CALLED ALEXEN
+  if(c >= 26516.0 && c < 26538.0) return [1218, c-26516.0];  // THE VOID BOUNDARIES CRACK

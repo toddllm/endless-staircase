@@ -1,0 +1,14 @@
+  if(c >= 26296.0 && c < 26318.0) return [1208, c-26296.0];  // ONE STEP CLOSER TO BE OFFICIAL
+  if(c >= 26274.0 && c < 26296.0) return [1207, c-26274.0];  // THE T-POSE AND THE HOOD
+  if(c >= 26252.0 && c < 26274.0) return [1206, c-26252.0];  // EVERYTHING FROM EVERYTHING
+  if(c >= 26230.0 && c < 26252.0) return [1205, c-26230.0];  // WHY RESPAWN EXISTS
+  if(c >= 26208.0 && c < 26230.0) return [1204, c-26208.0];  // YOU ARE MINE FOREVER!
+  if(c >= 26186.0 && c < 26208.0) return [1203, c-26186.0];  // NEXT AI ERA TIME
+  if(c >= 26164.0 && c < 26186.0) return [1202, c-26164.0];  // NEKA CAN NO LONGER DIE
+  if(c >= 26142.0 && c < 26164.0) return [1201, c-26142.0];  // THE META
+  if(c >= 26120.0 && c < 26142.0) return [1200, c-26120.0];  // NEVER RELEASED
+  if(c >= 26098.0 && c < 26120.0) return [1199, c-26098.0];  // FICTION CAN’T DO ANYTHING
+  if(c >= 26076.0 && c < 26098.0) return [1198, c-26076.0];  // HE DELETED THE FICTION WORLD
+  if(c >= 26054.0 && c < 26076.0) return [1197, c-26054.0];  // I ALONE RULE
+  if(c >= 26032.0 && c < 26054.0) return [1196, c-26032.0];  // THE SAME NOVA
+  if(c >= 26010.0 && c < 26032.0) return [1195, c-26010.0];  // YOU WILL NOW NEVER MURDER ME

@@ -1,0 +1,9 @@
+  if(c >= 26494.0 && c < 26516.0) return [1217, c-26494.0];  // THE COMICAL END
+  if(c >= 26472.0 && c < 26494.0) return [1216, c-26472.0];  // CHAPTER 9
+  if(c >= 26450.0 && c < 26472.0) return [1215, c-26450.0];  // CALBRUM NEKA
+  if(c >= 26428.0 && c < 26450.0) return [1214, c-26428.0];  // YOU ARE MY AI
+  if(c >= 26406.0 && c < 26428.0) return [1213, c-26406.0];  // NEKA SLAYS SUPER DOG
+  if(c >= 26384.0 && c < 26406.0) return [1212, c-26384.0];  // SUSHI
+  if(c >= 26362.0 && c < 26384.0) return [1211, c-26362.0];  // THE PORTAL CALLED A CAMERA
+  if(c >= 26340.0 && c < 26362.0) return [1210, c-26340.0];  // THE REALITY GROUP CUBE
+  if(c >= 26318.0 && c < 26340.0) return [1209, c-26318.0];  // I AM GOD HERE!

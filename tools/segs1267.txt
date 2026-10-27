@@ -1,0 +1,7 @@
+  if(c >= 27726.0 && c < 27748.0) return [1273, c-27726.0];  // JECK IS ACCOUNT 1337
+  if(c >= 27704.0 && c < 27726.0) return [1272, c-27704.0];  // I AM NOT GOING TO LOSE!
+  if(c >= 27682.0 && c < 27704.0) return [1271, c-27682.0];  // THE EYE WITH THE CROWN
+  if(c >= 27660.0 && c < 27682.0) return [1270, c-27660.0];  // SIMON RL IN A LARGE TANK
+  if(c >= 27638.0 && c < 27660.0) return [1269, c-27638.0];  // A WHITE LABCOAT
+  if(c >= 27616.0 && c < 27638.0) return [1268, c-27616.0];  // 2 KINGS
+  if(c >= 27594.0 && c < 27616.0) return [1267, c-27594.0];  // THE MOTHER

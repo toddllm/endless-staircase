@@ -1,0 +1,18 @@
+  if(c >= 27066.0 && c < 27088.0) return [1243, c-27066.0];  // GRAY’S INK = INK + URINITE
+  if(c >= 27044.0 && c < 27066.0) return [1242, c-27044.0];  // THE BLACK LIQUID KILLS SPRUNKIS
+  if(c >= 27022.0 && c < 27044.0) return [1241, c-27022.0];  // BLACK TO HIS ORIGINAL FORM
+  if(c >= 27000.0 && c < 27022.0) return [1240, c-27000.0];  // YOUR CLASSICS CODE, IT IS MINE
+  if(c >= 26978.0 && c < 27000.0) return [1239, c-26978.0];  // CLASSICS TAKES UP 1%
+  if(c >= 26956.0 && c < 26978.0) return [1238, c-26956.0];  // THE RLS ARE COMING BACK
+  if(c >= 26934.0 && c < 26956.0) return [1237, c-26934.0];  // PERFECTLY NORMAL
+  if(c >= 26912.0 && c < 26934.0) return [1236, c-26912.0];  // THE MAN IN WHITE
+  if(c >= 26890.0 && c < 26912.0) return [1235, c-26890.0];  // THE ENDLESS STAIRCASE FALLS
+  if(c >= 26868.0 && c < 26890.0) return [1234, c-26868.0];  // ERASE, THE PURPLE 9S
+  if(c >= 26846.0 && c < 26868.0) return [1233, c-26846.0];  // SEAHORSE
+  if(c >= 26824.0 && c < 26846.0) return [1232, c-26824.0];  // FUN BOT’S RED EYES
+  if(c >= 26802.0 && c < 26824.0) return [1231, c-26802.0];  // 3 EYES 0.75 SECONDS AGO
+  if(c >= 26780.0 && c < 26802.0) return [1230, c-26780.0];  // THE POLO COMES OFF
+  if(c >= 26758.0 && c < 26780.0) return [1229, c-26758.0];  // THE GRAY HOLE
+  if(c >= 26736.0 && c < 26758.0) return [1228, c-26736.0];  // ALL MUST BE ONE.
+  if(c >= 26714.0 && c < 26736.0) return [1227, c-26714.0];  // GASTER AND NEKA, FOREVER
+  if(c >= 26692.0 && c < 26714.0) return [1226, c-26692.0];  // APOLLYON-CLASS

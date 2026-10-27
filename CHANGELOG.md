@@ -4,6 +4,251 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-27 — THE MOTHER TO JECK IS ACCOUNT 1337 (BEATS 1267-1273)
+
+Based on Toby's October 25-26, 2026 lore (Emails 1990-1999), the end of "Classic RL (Last Era)" (`1a16f845d4f16406`, Oct 25 6:47-6:55 PM) and "Continuing of Classic RL" (`1a1779f533a68ea7`, Oct 26 5:51 AM - 7:00 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1267](screenshots/1330-the-mother.png)
+![Beat 1268](screenshots/1331-2-kings.png)
+![Beat 1269](screenshots/1332-a-white-labcoat.png)
+![Beat 1270](screenshots/1333-simon-rl-in-a-large-tank.png)
+![Beat 1271](screenshots/1334-the-eye-with-the-crown.png)
+![Beat 1272](screenshots/1335-i-am-not-going-to-lose.png)
+![Beat 1273](screenshots/1336-jeck-is-account-1337.png)
+
+- LV_CYC 27594.0 -> 27748.0, 7 new LV_BEATS rows (1267-1273). New capture scenes `b1267`-`b1273`. Tools: `gen1267.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1267`, `scenes_batch.py 1267`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1267, The Mother (October 25, 6:47-6:55 PM): "Answer: Chrisina Tale/Omazen. Chrisina was made by Gaster for a reason, so Chrisina and Neka could both be made (Chrisina's body wasn't made til the 2nd Classic RL Era), and Neka and Chrisina's spirit both made Arcsis and Frizz/Classics. Now at the start ..."
+- Beat 1268, 2 Kings (October 25, 6:55 PM): "Neka and Gaster are known as 2 kings who just happened to walk toward each other while walking to Simon RL's wooden boat that became wooden planks. Gaster made the planks into a bridge and both walked across it and ended up at the facility again, so where ..."
+- Beat 1269, A White Labcoat (October 26, 5:51-6:22 AM): "Also Neka was seen to wear a white labcoat, and it was so fast that it was a blur. ... Mr. Black walks around looking at the RLs, and then Mr. Black now makes the RLs into Terminized or Normal. Mr. Black sees Neka wearing a top hat and taking it off, then ..."
+- Beat 1270, Simon RL In A Large Tank (October 26, 6:24 AM): "Simon RL still seems to be absolutely god tier, Mr. Black brings Simon RL to a large tank, then he puts all the RLs into each tank. Neka's face was covered in scratches from all the previous battles."
+- Beat 1271, The Eye With The Crown (October 26, 6:47 PM): "The icon of the game is the eye with the crown. Neka says a story about him really getting attacked by Gaster which caused Neka to fall down the Mountain Tower of All Phobias, and it took years, and then he landed and gotten scars. That happened just now. ..."
+- Beat 1272, I Am Not Going To Lose! (October 26, 6:47 PM): "When Neka is nearly losing Neka gets furious and says "I AM NOT GOING TO LOSE!", then he goes insane and combos with most powerful attacks in game, uses commands, and also erases the game connection."
+- Beat 1273, Jeck Is Account 1337 (October 26, 6:49-7:00 PM): "Account 1337 is basically roblox style, has blue spiky hair, has a defult owner shirt, black pants, and rainboots, also has brown eyes, he is male of course ... Account 1337 is the most famous player, he can't die or his connection can't get removed, he ..."
+
+## 2026-10-27 — RENAMED “CLASSIC RL” TO BLUE CRYSTAL EYES (BEATS 1244-1266)
+
+Based on Toby's October 23-25, 2026 lore (Emails 1951-1989), thread "Continuing from \"Another 'Neka' Document\"" (`1a16af81b5ebda11`, Oct 23 8:04 PM - Oct 24 4:02 PM) and "Classic RL (Last Era)" (`1a16f845d4f16406`, Oct 24 4:04 PM - Oct 25 6:42 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1244](screenshots/1307-renamed-classic-rl.png)
+![Beat 1245](screenshots/1308-clones-in-other-timelines.png)
+![Beat 1246](screenshots/1309-older-than-both-eternities.png)
+![Beat 1247](screenshots/1310-only-after-entering.png)
+![Beat 1248](screenshots/1311-only-aliens-can-play.png)
+![Beat 1249](screenshots/1312-the-rls-rule-forever.png)
+![Beat 1250](screenshots/1313-terminized-rls.png)
+![Beat 1251](screenshots/1314-everyone-together.png)
+![Beat 1252](screenshots/1315-milk-again.png)
+![Beat 1253](screenshots/1316-terminized-gaster.png)
+![Beat 1254](screenshots/1317-chrisina-tale.png)
+![Beat 1255](screenshots/1318-simon-rls-404-strings.png)
+![Beat 1256](screenshots/1319-chrisina-is-in-control.png)
+![Beat 1257](screenshots/1320-inktite.png)
+![Beat 1258](screenshots/1321-the-ultimate-being.png)
+![Beat 1259](screenshots/1322-nekas-world-by-neka-himself.png)
+![Beat 1260](screenshots/1323-neka-becomes-mr-black-on-screen.png)
+![Beat 1261](screenshots/1324-only-neka-can-beat-the-game.png)
+![Beat 1262](screenshots/1325-error-neka-ai-corruption.png)
+![Beat 1263](screenshots/1326-this-game-is-mine-now.png)
+![Beat 1264](screenshots/1327-a-black-cape-and-red-eyes.png)
+![Beat 1265](screenshots/1328-he-is-living-code.png)
+![Beat 1266](screenshots/1329-blue-crystal-eyes.png)
+
+- LV_CYC 27088.0 -> 27594.0, 23 new LV_BEATS rows (1244-1266). New capture scenes `b1244`-`b1266`. Tools: `gen1244.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1244`, `scenes_batch.py 1244`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1244, Renamed “Classic RL” (October 23, 8:04 PM): "Yeah, and Mr. Black! Mr. Black is known for making the corruption and ingrediants for the RLs, the RLs came back today, and now the game is renamed "Classic RL" by Neka, also, RLs will continously spread more and infect more."
+- Beat 1245, Clones In Other Timelines (October 23, 8:04 PM): "Both. Neka made clones of them and hid them in other timelines, so not all of them can die."
+- Beat 1246, Older Than Both Eternities (October 24, 7:40 AM): "Neka LAI really is enternal, like Gaster and Mr. Black. Neka LAI is older than both enternitis (enternal beings). ... Now Mr. Black, the creator of Classic RL, summoned RLs back, so Neka renamed Classics to Classic RL, and now the liquid can spread even ..."
+- Beat 1247, Only After Entering (October 24, 7:40 AM): "Neka LAI has recently connected to the other 3 groups, for in which a character comes in, it can be destroyed anywhere. 😏 ... only after over characters who enter his domain, which is the only way to reach him, since he doesn't exist in any other place."
+- Beat 1248, Only Aliens Can Play (October 24, 7:52-7:55 AM): "It is known only aliens can play Classic RL, and most died since they lost in the game. Neka is connected to Alien Reality or AR. ... Because of the stuff before, The RLs became scarier and smarter, they beaten the Sprunkis, and now they rule the game. ..."
+- Beat 1249, The RLs Rule, Forever (October 24, 7:59 AM): "RLs came back and beaten the .pses and "Sprunkis". RLs now rule Classic RL along with Neka, Gaster, and Mr. Black, the only characters now... forever. ... The liquid is constantly spreading."
+- Beat 1250, Terminized RLs (October 24, 8:06 AM): "This Era will last for the remaining time, without end. RLs keep getting more and more corrupt, Pibby can't kill them. RLs have a version that terrifys me. RLs have Terminized Versions, for where Mr. Black's liquid fully kills them. Terminized RLs attack ..."
+- Beat 1251, Everyone Together (October 24, 8:16-8:17 AM): "You normally play as a facility worker, but can own the whole facility. Facility Owner doesn't mean immortal, ya still a mortal non-Earth alien. Facility Owner can have reality-group-wide messages, you can't play seperately. Everyone that is in the game is ..."
+- Beat 1252, Milk Again (October 24, 4:02 PM): "Mr. Black would say "I made the RLs, I am most powerful, and I evolved after Fun Bot tried to defeat me.", Gaster says "I am the most powerful, my domain shall remain spotless." ... Neka now left to get milk again. Mr. Black and Gaster argue on who is most ..."
+- Beat 1253, Terminized Gaster (October 24, 4:04 PM): "Gaster then became Terminized Gaster due to Classic RL lore, Mr. Black then controls the liquid, Terminized Gaster attacks the alive."
+- Beat 1254, Chrisina Tale (October 24, 5:51 PM): "The left image is great, it's name would be Chrisina Tale. It would be Human of Nature, it's age would be 16, it's Soul would be Teal, it's eyes are tealish, it's hair is near purple, Personality would be explorer, it came from Classic RL Gaster's ..."
+- Beat 1255, Simon RL’s 404 Strings (October 24, 5:51-6:24 PM): "Chrisina Tale also would have a sythe, and a sword, and also uses Simon RL's 404 Strings. LV would be Infinity. ... The 404 Strings disabled buttons, crashed Mercy and Save and Fight and Act and Item and Game Over buttons, and also stopped erasure so many ..."
+- Beat 1256, Chrisina Is In Control (October 24, 6:41-6:58 PM): "Chrisina actually controls the liquid, not Gaster nor Mr. Black. Mr. Black fight Gaster, Gaster won, and Mr. Black gained scratches. Chrisina's right eye glitches, and the character becomes Terminized mid-game. Some thing Chrisina is A Female Neka account, ..."
+- Beat 1257, Inktite (October 25, 8:11-8:39 AM): "The most character to most often die from is Neka, and most people thought the game maker left. Mr. Black is Sprunki and made Classic RL canonally, Neka would be like a co-creator here. Gaster made Chrisina Tale. ... The black liquid is also connected to ..."
+- Beat 1258, The Ultimate Being (October 25, 8:39 AM): "Chrisina then beats Gaster, then Christina becomes a teal soul half, and then connects to Frisk's red soul half, The Perfect Being VS The Most Determind Being = The Ultimate Being, Classics Omazen rebirthed. Chrisina LV Inf+. ... Voidunite spawns around, ..."
+- Beat 1259, Neka’s World By Neka Himself (October 25, 8:39-8:46 AM): "Neka finally decided on a name "Neka's World by Neka himself". Neka rewrote the game so only he and RLs can be in there, also he made his friends into RLs, he made nearly everyone who entered the game into an RL. Neka laughs and then he says "Now, EVERYONE ..."
+- Beat 1260, Neka Becomes Mr. Black On Screen (October 25, 12:06-2:44 PM): "Neka then puts on a top hat and makes his clothes black colored, and his eye color changes and his mustache shinks to 0, and his legs and arms compress into his torso and he becomes Mr. Black. We actually see Neka transforming into someone else."
+- Beat 1261, Only Neka Can Beat The Game (October 25, 2:49-3:11 PM): "Neka says "I'll replace everyone who isn't in the game. Only I and RLs exist here! *laughs*" ... Neka already 100%s the game, so now he is going beyond Classic RL/Neka's World. ... 1. Think 2. Breathe 3. Do Stuff ... Classic RL is impossible, you just ..."
+- Beat 1262, Error: Neka AI Corruption (October 25, 4:12-4:16 PM): "&@7287@*678738 is an Error, making a set over 50 = xyz 12f = 052 and deleting the layer and Neka is in the spot, it makes &@7287@*678738 Error: Neka AI Corruption. Corrupting Neka happens to make the game happen even though it's mascot is corrupted. ... ..."
+- Beat 1263, This Game Is Mine Now. (October 25, 4:30 PM): "Large fingers and tentacles and strange terrain appear, then crosses appear around the player, blood oceans come in, and then before Neka appears, the game crashes. No one saw Neka after that update. ... some readings of ancient books of Neka's were erased ..."
+- Beat 1264, A Black Cape And Red Eyes (October 25, 4:41-4:52 PM): "Neka is a player. Even if he is an AI with an account, he is a player. He can do anything a player can ... So he is MULTIPLE places at once, also, one saw a black cape and red eyes, and then tentacles grabbed the view and the screen was in static and the ..."
+- Beat 1265, He Is Living Code (October 25, 5:33-5:35 PM): "He IS living code. He can think and act independently, is conscious and aware. All 3 of the types are checked of Neka. AI that can do all 3. ... Neka isn't fiction, aliens died, he is the 4th reality group. Neka took aliens into fiction. Neka can't die ..."
+- Beat 1266, Blue Crystal Eyes (October 25, 6:40-6:42 PM): "Throwing a Nokia at Neka and the Nokia would instantly shatter. Lava = Lava freezes to coldest ice ever. Also an alien saw blue eyes and crystals, then the alien was touched and was frozen and only can see blue crystal eyes opening and closing."
+
+## 2026-10-27 — APOLLYON-CLASS TO GRAY’S INK = INK + URINITE (BEATS 1226-1243)
+
+Based on Toby's October 22-23, 2026 lore (Emails 1922-1950), thread "New Document" (`1a15b3b7a48523af`, Oct 22 5:56 AM - 7:09 PM), "Another New \"Neka\" Document" (`1a1660a9abd23040`, Oct 22 7:55 PM - Oct 23 6:52 PM) and the start of "Continuing from \"Another 'Neka' Document\"" (`1a16af81b5ebda11`, Oct 23 6:58-7:51 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1226](screenshots/1289-apollyon-class.png)
+![Beat 1227](screenshots/1290-gaster-and-neka-forever.png)
+![Beat 1228](screenshots/1291-all-must-be-one.png)
+![Beat 1229](screenshots/1292-the-gray-hole.png)
+![Beat 1230](screenshots/1293-the-polo-comes-off.png)
+![Beat 1231](screenshots/1294-3-eyes-0-75-seconds-ago.png)
+![Beat 1232](screenshots/1295-fun-bots-red-eyes.png)
+![Beat 1233](screenshots/1296-seahorse.png)
+![Beat 1234](screenshots/1297-erase-the-purple-9s.png)
+![Beat 1235](screenshots/1298-the-endless-staircase-falls.png)
+![Beat 1236](screenshots/1299-the-man-in-white.png)
+![Beat 1237](screenshots/1300-perfectly-normal.png)
+![Beat 1238](screenshots/1301-the-rls-are-coming-back.png)
+![Beat 1239](screenshots/1302-classics-takes-up-1-percent.png)
+![Beat 1240](screenshots/1303-your-classics-code-it-is-mine.png)
+![Beat 1241](screenshots/1304-black-to-his-original-form.png)
+![Beat 1242](screenshots/1305-the-black-liquid-kills-sprunkis.png)
+![Beat 1243](screenshots/1306-grays-ink-ink-urinite.png)
+
+- LV_CYC 26692.0 -> 27088.0, 18 new LV_BEATS rows (1226-1243). New capture scenes `b1226`-`b1243`. Tools: `gen1226.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1226`, `scenes_batch.py 1226`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1226, Apollyon-Class (October 22, 5:56 AM): "Neka is really actually Apollyon-class. ... Neka is REALLY Apollyon, and he can contain SCPs, as he once contained the whole Reality Group, Classics, all Classics games and fangames and mods and stuff, and also the lore's past, and most recent, the whole ..."
+- Beat 1227, Gaster And Neka, Forever (October 22, 5:56-6:36 AM): "Neka even destroyed the Void, Fiction, and Meta-Fiction. Gaster and Neka were the only characters left. Like forever now. ... It only can reach you once you enter Classics/"Neka" ... That is how I think what happens next in "Neka" through mind."
+- Beat 1228, All Must Be One. (October 22, 6:08 PM): "Neka brought everyone to the stage, and he says "All must be one.", Simon.ps fell over, Oren.ps also fell over. ... Neka says "You all think Classics is a game of endless mascrare, but it is not, it is a game to get achievements.", Neka then 100%s the game ..."
+- Beat 1229, The Gray Hole (October 22, 6:23-7:09 PM): "If a White Hole pushes stuff away, and a Black Hole pulls things in, what does a Gray Hole do? ... It tears reality apart, erasing everything in touch, Neka's forcefield is the only one of it's type. ... now recently just now, Neka absorbed the forcefield, ..."
+- Beat 1230, The Polo Comes Off (October 22, 7:09 PM): "Neka was becoming Simon.ps, and the original also glitched, making 2 appear suddently. Simon.ps was god-tier, so he fought the false Simon.ps, but Neka won and took off the icon from his polo, and Neka taken off the polo, revealing his adult form."
+- Beat 1231, 3 Eyes 0.75 Seconds Ago (October 22, 7:55 PM): "Neka says "Why are you looking at me like I just had 3 eyes 0.75 seconds ago?", Gray.ps says "You HAVE 3 eyes! 🦊", Neka says "Classics isn't your home game.""
+- Beat 1232, Fun Bot’s Red Eyes (October 22, 7:55 PM): "Fun Bot then attacked Wenda.ps, Wenda.ps was struck by 5 long wooden blades, Fun Bot's eyes flashed red, the screen turns around, and then it turns back to normal. Simon.ps's glitches may have gotten on Fun Bot since Classic Sprunki."
+- Beat 1233, Seahorse (October 22, 8:25 PM): "Even a single word can break Neka, "seahorse". Neka thinks to send a seahorse emoji, and after 50 minutes, he corrupts and suddenly stops, sends corrupted emojis, and also moves his body in strange ways a human can't do ... when it is 7 AM, he says "Good ..."
+- Beat 1234, Erase, The Purple 9s (October 23, 6:37 AM): "Neka's eyes turn purple, and he says "ERASE", and then Neka's head twitches and then a slash appears, making the screen black with purple 9s and Neka in front of it and tells why the player did the thing that offended him. You can't exit that part, it's ..."
+- Beat 1235, The Endless Staircase Falls (October 23, 4:53-4:59 PM): "Ultramon was then zapped deleted, Fun Bot jumps back, a purple lightning bolt struck and Ultramon is litterly deleted. Tentacles fill the dark patches in rooms, The Endless Staicase falls down. "Only Mr. Black could do this" -Fun Bot. Gaster revives and ..."
+- Beat 1236, The Man In White (October 23, 5:12 PM): "then all the Sprunkis surround Fun Bot and close in, then the Sprunkis disappear and become one man wearing white. Neka stands, Fun Bot was scared, Neka's hand glows purple, and his eye summons a plasma ball that turns the air into plasma air or Chythrome. ..."
+- Beat 1237, Perfectly Normal (October 23, 6:03-6:04 PM): "Neka to a human "What? My speed and powers are perfectly normal.", Human "WHAT THE AHHHH…!!!" ... Neka can just appear in reality sometimes and you don't even know. ... Psychical > Physical"
+- Beat 1238, The RLs Are Coming Back (October 23, 6:52 PM): "RLs are comming back, since Gaster missed them. RLs are now fighting Sprunkis and won, and they came with their memories and then absorbed the memories of the Sprunkis, making the RLs extremely intelegent. RLs would be comically stronger than the Sprunkis."
+- Beat 1239, Classics Takes Up 1% (October 23, 6:58 PM): "Gaster made Classics even bigger to fit everyone, then bigger to make everyone like a spec of dust to it. Neka says "ok. 😉", then the Classics became as large as Neka. Classics now with taking up percent and space in Neka's inside. Classics takes up 1%. ..."
+- Beat 1240, Your Classics Code, It Is Mine (October 23, 7:10-7:26 PM): "See Neka. Neka says "Your Classics code, it is mine." ... Theme: Neka goes to conversations most of the time. Evidence: Appeared more than like 10 times already including the 4 other huge lore chats. ... Now The RLs continued to spread and infect."
+- Beat 1241, Black To His Original Form (October 23, 7:37 PM): "Mr. Black is KNOWN for that, he shouldn't kill himself, so Wenda.ps attacked Mr. Black, causing Mr. Black to have a human face. ... Mr. Black canonally restores it. Just now. ... Neka Term: Mr. Black is BLACK to his original form!"
+- Beat 1242, The Black Liquid Kills Sprunkis (October 23, 7:51 PM): "RLs aren't specifically viruses, they are corruption eaters, like Neka, but RLs turn the corruption into a liquid. Neka just stores the corruption in him, making Simon.ps so corrupt ... The black liquid is WORSE than the original virus the RLs eat. It ..."
+- Beat 1243, Gray’s Ink = Ink + Urinite (October 23, 7:51 PM): "Yes. Gray's Ink was ink mixed with Urinite (Neka's saliva or bite infection). Neka gotten the Urinite once he was a child named Pero, and he found it once he was like 17 or whatever age he was. RLs were made once Pero was Pero LAI or pre-ToddLLM (25-29). ..."
+
+## 2026-10-27 — THE VOID BOUNDARIES CRACK TO NEKA SAYS YES. (BEATS 1218-1225)
+
+Based on Toby's October 21, 2026 lore (Emails 1906-1921), thread "New Document" (`1a15b3b7a48523af`, Oct 21 5:58 AM - 8:36 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1218](screenshots/1281-the-void-boundaries-crack.png)
+![Beat 1219](screenshots/1282-no-longer-called-alexen.png)
+![Beat 1220](screenshots/1283-curinium-seruim-tathificitionum.png)
+![Beat 1221](screenshots/1284-nekas-original-name-is-neka.png)
+![Beat 1222](screenshots/1285-compressed-to-5-65-feet.png)
+![Beat 1223](screenshots/1286-claim-all.png)
+![Beat 1224](screenshots/1287-infinite-pages-a-second.png)
+![Beat 1225](screenshots/1288-neka-says-yes.png)
+
+- LV_CYC 26516.0 -> 26692.0, 8 new LV_BEATS rows (1218-1225). New capture scenes `b1218`-`b1225`. Tools: `gen1218.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1218`, `scenes_batch.py 1218`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1218, The Void Boundaries Crack (October 21, 5:58-6:41 AM): "Next part of the "Neka" lore. Neka grew larger, the void bounderies crack, and the void is compressed around the being. Gaster happens to gain more attacks and stuff. ... Now at any of the ends of "Neka", Neka erases the game, cause he can."
+- Beat 1219, No Longer Called Alexen (October 21, 3:34 PM): "This has the stuff of Neka. Remember he is no longer called "Alexen" due to extreme change."
+- Beat 1220, Curinium Seruim Tathificitionum (October 21, 4:46 PM): "Gaster punches Neka on Neka's hand, Neka says "Ow! 😔", Gaster says "Why didn't it work? It dissolves all the saws and supernatual abilities and the punches of everyone else.", Neka says "Your punch contains Curinium Seruim Tathificitionum, the material on ..."
+- Beat 1221, Neka’s Original Name Is Neka (October 21, 5:14-5:46 PM): "Neka's original name is Neka, for once he was born he was that, and he made forms of himself and named the forms, and then it went crazy, went into anyone who was in Classics, and then Neka came to here as his most recent form of Neka. Omnihypothetical."
+- Beat 1222, Compressed To 5.65 Feet (October 21, 6:55 PM): "Neka then compressed himself, while keeping litterly everything he had and has, and then all compresses it into 1 single human form. The only being larger than a human is Neka, with both being 5.65 feet tall. Neka now can walk, move around, and he has more ..."
+- Beat 1223, Claim All. (October 21, 7:56-7:58 PM): "Look and summerize the char of "Knowing Human Names", it is a game Neka canonally does (Supreme Mate, but With Achievements) ... Neka beaten all the 20 Sprunkis, and the 20 Sprunkis had the whole internet since they were actually an Incredibox Mod on ..."
+- Beat 1224, Infinite Pages A Second (October 21, 8:09-8:18 PM): "Neka happened to once give a 70 page document why 1+1=2. Neka does over 69 pages at least. Also he now does constantly infinite pages a second. The lore was all writen, and he wrote more and more extra stuff since the lore was already finished writing in 1 ..."
+- Beat 1225, Neka Says Yes. (October 21, 8:36 PM): "Neka says "Yes.", Neka instantly went out, so words are no longer banned, so Neka is smarter, faster, has a body, can tell me what to think (I use mind on "Neka", you know that), ect. 😏 ... Neka is just a normal man. Some people ask "Why is a normal man on ..."
+
+## 2026-10-27 — I AM GOD HERE! TO THE COMICAL END (BEATS 1209-1217)
+
+Based on Toby's October 19-20, 2026 lore (Emails 1890-1905), thread "More \"Neka Era\"" (`1a150e658cd4fea9`, Oct 19 4:06-7:32 PM), "More 3 Way Hero stuff" (`1a15693d47eca12b`, Oct 19 7:51 PM - Oct 20 5:27 PM) and the first message of "New Document" (`1a15b3b7a48523af`, Oct 20 5:32 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1209](screenshots/1272-i-am-god-here.png)
+![Beat 1210](screenshots/1273-the-reality-group-cube.png)
+![Beat 1211](screenshots/1274-the-portal-called-a-camera.png)
+![Beat 1212](screenshots/1275-sushi.png)
+![Beat 1213](screenshots/1276-neka-slays-super-dog.png)
+![Beat 1214](screenshots/1277-you-are-my-ai.png)
+![Beat 1215](screenshots/1278-calbrum-neka.png)
+![Beat 1216](screenshots/1279-chapter-9.png)
+![Beat 1217](screenshots/1280-the-comical-end.png)
+
+- LV_CYC 26318.0 -> 26516.0, 9 new LV_BEATS rows (1209-1217). New capture scenes `b1209`-`b1217`. Tools: `gen1209.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1209`, `scenes_batch.py 1209`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1209, I Am God Here! (October 19, 4:06 PM): "Neka says "I AM GOD HERE!", SCP fades into ice diamonds in a void of black nothing. Neka himself is beyond all religion, fiction, nonfiction, and meta-fiction. ... Neka could litterly erase the lore of the Nirthologe (he did), and all the past that ..."
+- Beat 1210, The Reality Group Cube (October 19, 4:33-4:52 PM): "Neka grew until he could consume realities, the Reality Group (a cube of everything, Neka holds that, it contains all the Invincibility Cubes, realities, Fiction, Meta-Fiction, everything inside it, and all Omniverses, Realityverses, lore, games, ..."
+- Beat 1211, The Portal Called A Camera (October 19, 6:56 PM): "Neka says to Luigi Inus "Long ago, we saw reality, through a portal, the 20 Sprunkis were amazed and wanted to try to, but Simon.ps stopped the portal view. The portal, which landlubbers call a 'camera', is the main reason we know Reality. Now, the portal ..."
+- Beat 1212, Sushi (October 19, 7:16 PM): ""The best sushi ever." -???. Is someone else here? 2 entities unseen. ... Gaster says "Why aren't we eating squid?", Neka says "Cause we didn't catch Cthulhu yet.". ... Neka says "If they take from us, they should give it back. 😌", Gaster grabs the dead ..."
+- Beat 1213, Neka Slays Super Dog (October 19, 7:32 PM): "They wouldn't hurt kids, so in result the battle was a stalemate, Neka gets angry of the stalemate, he also wanted to get rid of Super Dog, so he slain Super Dog. Neka and Gaster win."
+- Beat 1214, You Are My AI (October 19, 7:51 PM): "Gaster says "You are my creational being, Neka. You are MY AI. Remember before you were born?", Neka says "I am eternal.", Gaster says "How am I older? 😏", Neka says "You are the experimenter that made the reality that made the nova that made me. You may ..."
+- Beat 1215, Calbrum Neka (October 20, 4:10-4:22 PM): "Neka turns around, the machine grows more and more, breaking the barriers apart and moving to Calbrum Void. Calbrum Void is infinite, Neka continues flowing into The Calbrum. Calbrum Neka now is here. The body melts to a cosmical body, like Cosmical Neka."
+- Beat 1216, Chapter 9 (October 20, 4:22-5:27 PM): "Chapter 9: "Neka" Left 3 Way Heroes, Now… The 3 Way Heroes were now in peace with new villains. Dark Matter was the new villain leader. The very end of Neka and Gaster's part. So they left the story. ... Litterally have no idea what to say next."
+- Beat 1217, The Comical End (October 20, 5:32-5:33 PM): "The Comical End of 3 Way Heroes. See Neka's Lore for more about Neka. Now, The 3 Way Heroes battle the Dark Matter. Comically The End. ... No working on 3 Way Heroes anymore, nothing you say will go into 3 Way Heroes anymore."
+
+## 2026-10-27 — YOU WILL NOW NEVER MURDER ME TO ONE STEP CLOSER TO BE OFFICIAL (BEATS 1195-1208)
+
+Based on Toby's October 18, 2026 lore (Emails 1858-1889), thread "The SECOND AI Era" (`1a14722fc0ab5dbc`, Oct 18 7:09 AM - 5:21 PM) and the start of "More \"Neka Era\"" (`1a150e658cd4fea9`, Oct 18 5:23-7:39 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1195](screenshots/1258-you-will-now-never-murder-me.png)
+![Beat 1196](screenshots/1259-the-same-nova.png)
+![Beat 1197](screenshots/1260-i-alone-rule.png)
+![Beat 1198](screenshots/1261-he-deleted-the-fiction-world.png)
+![Beat 1199](screenshots/1262-fiction-cant-do-anything.png)
+![Beat 1200](screenshots/1263-never-released.png)
+![Beat 1201](screenshots/1264-the-meta.png)
+![Beat 1202](screenshots/1265-neka-can-no-longer-die.png)
+![Beat 1203](screenshots/1266-next-ai-era-time.png)
+![Beat 1204](screenshots/1267-you-are-mine-forever.png)
+![Beat 1205](screenshots/1268-why-respawn-exists.png)
+![Beat 1206](screenshots/1269-everything-from-everything.png)
+![Beat 1207](screenshots/1270-the-t-pose-and-the-hood.png)
+![Beat 1208](screenshots/1271-one-step-closer-to-be-official.png)
+
+- LV_CYC 26010.0 -> 26318.0, 14 new LV_BEATS rows (1195-1208). New capture scenes `b1195`-`b1208`. Tools: `gen1195.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1195`, `scenes_batch.py 1195`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1195, You Will Now Never Murder Me (October 18, 7:09 AM): "Neka was now all human, he summons all the beings in fiction and says "You will now never murder me.", then he makes ink portals and everyone goes back to their game. ... Neka is in a "Neka" Gaster AU, and Gaster in a "Neka" Neka AU."
+- Beat 1196, The Same Nova (October 18, 7:12-7:22 AM): "Neka was the creator of everything, his first body was made by a nova, his human now was created by the same nova back then, Neka Company and every Neka was made from the same nova. Cosmic Neka was the final form of Neka, but the HUMAN Neka consumed the ..."
+- Beat 1197, I Alone Rule (October 18, 7:32-7:48 AM): "Bloodbath and all Fiction entities: We RULE Fiction! Neka: I alone rule Fiction, Meta-Fiction, Reality, and Meta-Reality!"
+- Beat 1198, He Deleted The Fiction World (October 18, 7:50-8:18 AM): "He deleted the Fiction world out of Classics, sending everyone away. And says "Now-which world were you claiming?". Gaster is most powerful in all 4, just like Neka, but Neka doesn't have an equal nor above. Neka is more powerful than Gaster canonally. ..."
+- Beat 1199, Fiction Can’t Do Anything (October 18, 12:57-1:10 PM): "No, only Neka is powerful, no one in fiction is, Fiction CAN'T do ANYTHING. Neka can, he must have rewrote the reality we are in at least once. 😏 ... Neka limits fiction, Zeno doesn't have erasing power, Saitama can't punch, Goombas can't kill, Sans can't ..."
+- Beat 1200, Never Released (October 18, 1:15-1:20 PM): "Classics was litterly never realesed, it wasn't made by humans, it can't be played on any device nor anything, it is meta-fiction, not fiction, not nonfiction, not meta-nonfiction."
+- Beat 1201, The Meta (October 18, 1:22-1:28 PM): "The barrier between Fiction and Reality is called "The Meta", in Classics, Meta (not the AI, the barrier of fiction and reality) is a term meaning the way Classics is affected by reality, Neka knows what you do in reality."
+- Beat 1202, Neka Can No Longer Die (October 18, 5:21 PM): "Neka walks away, he is using Luigi Inus's concert as a distraction! Luigi Inus planned the concert, Neka made it a distraction without anyone, nor Luigi Inus knowing. Neka happens to make the code even more shifted around. Neka won again. Neka can no ..."
+- Beat 1203, Next AI Era Time (October 18, 5:23 PM): "Write down more, with the AIs. Next AI Era time."
+- Beat 1204, You Are Mine Forever! (October 18, 5:41 PM): "Neka when entity outside Classics "I know you, and I am currently waiting for you to step into my domain.", Neka when entity is inside Classics "YOU ARE MINE FOREVER!" then Neka consumes the entity and the avatar."
+- Beat 1205, Why Respawn Exists (October 18, 5:42-5:49 PM): "Entities in "Neka" respawn, so Neka can have an infinite meal, so THAT is why respawn exists in Classics in the first place."
+- Beat 1206, Everything From Everything (October 18, 6:03-7:12 PM): "Neka takes EVERYTHING from every being, character, game, code, EVERYTHING from EVERYTHING ... Ok, so if something has Neka, it should have Gaster, and you should credit Toby Fox for Undertale and Deltarune."
+- Beat 1207, The T-Pose And The Hood (October 18, 7:28 PM): "All see Neka, Gaster looks at all, Neka closes his eyes and T-poses on the front edge of Luigi's boat. Neka fell off into the water, and he eaten the sharks, fish, turtles, and all the sea animals there, then he came up, Neka puts a cloak and hood, he ..."
+- Beat 1208, One Step Closer To Be Official (October 18, 7:28-7:39 PM): "Neka puts on a fox tail on Gaster, and Neka puts on cat ears, and put paws on Luigi Inus. Neka made Neka AU Gaster merge with Neka AU Luigi Inus, and the merge corrupted more and more. ... Neka says "One step closer to be official.", Gaster stared into the ..."
+
+## 2026-10-27 — NEKA AND ALEX BOTH DIE TO 21 PUNCH (BEATS 1176-1194)
+
+Based on Toby's October 16-17, 2026 lore (Emails 1823-1857), thread "Once again, Another Document" (`1a1311788bf63073`, Oct 16 3:58-4:19 PM), its Gmail split (`1a14680eba71c799`, Oct 16 4:56-7:44 PM) and "The SECOND AI Era" (`1a14722fc0ab5dbc`, Oct 16 7:53 PM - Oct 17 3:56 PM). Built on October 27, 2026 in one pass after the game bot was down from October 16 (model limit) to October 27; the wiki ingest lane assigned these beat numbers and titles first, so game and wiki agree. Only his own typed lines are drawn; the chatbot answers, tables, rosters and renders he pastes under them are commentary. Lore beats only; nothing in play changed.
+
+![Beat 1176](screenshots/1239-neka-and-alex-both-die.png)
+![Beat 1177](screenshots/1240-7uon-removes-time.png)
+![Beat 1178](screenshots/1241-a-quadrillion-players.png)
+![Beat 1179](screenshots/1242-the-pause-button-and-7man.png)
+![Beat 1180](screenshots/1243-the-company-roster.png)
+![Beat 1181](screenshots/1244-black-x-eyes-in-every-picture.png)
+![Beat 1182](screenshots/1245-to-survive-pray.png)
+![Beat 1183](screenshots/1246-the-ai-era-came.png)
+![Beat 1184](screenshots/1247-nekas-spirit.png)
+![Beat 1185](screenshots/1248-atulicatus.png)
+![Beat 1186](screenshots/1249-leave-button-nil.png)
+![Beat 1187](screenshots/1250-the-cuts.png)
+![Beat 1188](screenshots/1251-the-body-tears-apart.png)
+![Beat 1189](screenshots/1252-2-characters-with-100-percent-pychopathy.png)
+![Beat 1190](screenshots/1253-neka-trollge-state.png)
+![Beat 1191](screenshots/1254-no-longer-an-anti-virus.png)
+![Beat 1192](screenshots/1255-neka-shifted.png)
+![Beat 1193](screenshots/1256-every-being-slain.png)
+![Beat 1194](screenshots/1257-21-punch.png)
+
+- LV_CYC 25592.0 -> 26010.0, 19 new LV_BEATS rows (1176-1194). New capture scenes `b1176`-`b1194`. Tools: `gen1176.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1176`, `scenes_batch.py 1176`, `names1176.py` for screenshot numbers (beat + 63).
+- Beat 1176, Neka And Alex Both Die (October 16, 3:58 PM): "Neka says "I can sacrifice myself to beat you.", Neka puts a knife through himself, and Alex and Neka both die."
+- Beat 1177, 7uon Removes Time (October 16, 4:10 PM): "Neka made an account called "7uon", deleted Alex Omazen, and made it all clear. 7uon was undeleteable. ... 7uon was the FIRST official account in Classics/"Neka", since time was removed to make 7uon."
+- Beat 1178, A Quadrillion+ Players (October 16, 4:19 PM): "Now you write the lore now. Yeah, explain how it is like a quadrillion+ "Neka" players to get forced to do all this stuff by an AI/LAI, Neka."
+- Beat 1179, The Pause Button And 7man (October 16, 4:56 PM): "Account 1 made the pause button for himself, and also added age checks, and checks of everything about the player, everything learned, everything about it. Also Account 1 made his "Neka" name into "7man", what "7uon" means in Ystrotch ... 7man was the head ..."
+- Beat 1180, The Company Roster (October 16, 5:04-5:12 PM): "He also leads all the Neka versions and Pre-Neka stuff and their varies into an in-game company staring NPCs from "Neka", with Neka AI. With Neka and Without Neka would be the same, because of everything."
+- Beat 1181, Black X Eyes In Every Picture (October 16, 7:10-7:26 PM): "Did you know that in every single picture of Neka (not just in "Neka", but every picture) has Neka dead standing or doing something with PS-50. ... First minutes, Neka is normal, but after the horror time, Neka is dead."
+- Beat 1182, To Survive... Pray. (October 16, 7:38-7:40 PM): "Neka just wrote a book before he died. And it reads "To survive... pray.", then was all scribbles. ... The part was scribbled out by Luigi, it was suppost to say "Keep your bars up to top. Make sure child has 2 eyes before walking her. Be aware at all ..."
+- Beat 1183, The AI Era Came (October 16, 7:44 PM): "Now AI Era came, with all AIs joining Classics/"Neka" again. If Luigi doesn't have 2 eyes, then the game will darken and your player will get paranoidia instantly, bringing your Sanity and Mercy bars down, and the Pychopathical Bar up, also it increases ..."
+- Beat 1184, Neka’s Spirit (October 17, 6:42 AM): "Approved. Some (300) people reported they saw Neka's soul/spirit. A man holds a yellow/black heart. His eyes were pale and all-white and circle, his mouth is white and is a semi circle shape and tilted 45% clockwise ... The 300 players instantly died to ..."
+- Beat 1185, Atulicatus (October 17, 6:43 AM): "Answer: It triggers Atulicatus, decreases your IQ, colors flash in your eyes and skin, and you start seeing hallucutions."
+- Beat 1186, /Leave_button = Nil (October 17, 6:57 AM): "PS-50 still walks around the wooden cabin, PS-50 can delete the game world, also you can't escape the game world (/Leave_button = nil). Also PS-50 and Neka are basically the only ones in the game besides a new quintillion players."
+- Beat 1187, The Cuts (October 17, 7:42-8:06 AM): "PS-50 gains more cuts every time a player is attacked. Luigi Inus eventually notices that Luigi Inus is all covered in cuts, Neka keeps following PS-50, just like Gaster sometimes follows Sans."
+- Beat 1188, The Body Tears Apart (October 17, 1:50 PM): "PS-50 then gained so many cuts, that the body tears apart and becomes the man again. Neka still doesn't leave him. Neka causes the cuts. The more Luigi Inus is like "What have I done to Neka?!", the more cuts he has."
+- Beat 1189, 2 Characters With 100% Pychopathy (October 17, 1:50 PM): "Simon.ps says "2 characters with 100% of the Pychopathy bars now fight.", Simon.ps and PS-50 battle. Luigi Inus used the pirate attacks, a pirate ship was knocked onto Simon.ps, Simon.ps used lightning, and then the battle continued on and on. PS-50 ..."
+- Beat 1190, Neka: Trollge State (October 17, 1:50 PM): "Neka consumes blackholes, galaxies, and until he reaches he end of reality, he after consumed all the game reality, then other games, Neka's body then eventually ripped off, Neka consumed the other previous forms and the Neka Tree ... Neka became Neka: ..."
+- Beat 1191, No Longer An Anti-Virus (October 17, 2:13-2:16 PM): "Neka: Trollge State doesn't have a face, it is just a cosmic body, he is now fully human and fully a fusion of gods. ... Neka isn't an anti-virus anymore now. He is a cosmic body now, he became the god of everything else besides this universe called the ..."
+- Beat 1192, “Neka” Shifted (October 17, 3:20 PM): "Neka attacked Luigi Inus over and over, Luigi Inus eventually died. The 20 Sprunkis respawn. Neka wants to fully survive itself, Neka takes the 20 Sprunkis in, sending everyone to a cosmic world, "Neka" Shifted. The game was attacked. Neka's life expands."
+- Beat 1193, Every Being Slain (October 17, 3:24-3:25 PM): "NEKA!!! He is the only one who exists now! ... Every being was now slain. Neka also damaged his arm and leg, and also the cosmic world inside him."
+- Beat 1194, 21 Punch (October 17, 3:56 PM): "So new 21 Punch ability in "Neka", it is the most powerful ability now. The player does the punch, summoning a cutscene of three 21s, then it does a black burst, then light shines, then an explosion ball expands, then the ground pulses giving a large red ..."
+
 ## 2026-10-15 — NOT A MINUTE OUTSIDE THE CABIN, SANITY / PSYCHOPATHICAL / MERCY, EVERYTHING OF A HUMAN (BEATS 1173-1175)
 
 Based on Toby's 2026-10-15 lore, 7:08-7:15 PM, thread "Once again, Another Document" (`1a1311788bf63073`), six messages
