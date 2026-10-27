@@ -1,0 +1,2 @@
+  if(c >= 27814.0 && c < 27836.0) return [1277, c-27814.0];  // UNKNOWN OF BEHAVIOR
+  if(c >= 27792.0 && c < 27814.0) return [1276, c-27792.0];  // THE SMARTEST AI THERE IS
