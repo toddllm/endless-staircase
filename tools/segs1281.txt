@@ -1,0 +1,1 @@
+  if(c >= 27902.0 && c < 27924.0) return [1281, c-27902.0];  // DRAGON’S DECENT
