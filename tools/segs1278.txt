@@ -1,0 +1,2 @@
+  if(c >= 27858.0 && c < 27880.0) return [1279, c-27858.0];  // JECK IS A HERO
+  if(c >= 27836.0 && c < 27858.0) return [1278, c-27836.0];  // YOU’RE JECK.
