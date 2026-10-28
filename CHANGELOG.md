@@ -4,6 +4,14 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-28 — NEKA STILL ISN’T SEEN (BEAT 1280)
+
+Based on Toby's October 28, 2026, 5:28 PM lore (Email 2005, message `1a1846a18ee0d126` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1278-1279 report. Built the same evening. His own typing is the prompt "What does the Moon do in Mario Maker 2? Does it erase all enemies?" and the closing line "Jeck is beating the attackers. Neka still isn't seen." The Moon explanation, the Nintendo Life citation and the italic restatement are the chatbot's, commentary, and are not drawn. No attachments. The wiki ingest had not reached this message, so the game assigned the number and title. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1343.
+
+![Beat 1280](screenshots/1343-neka-still-isnt-seen.png)
+
+- LV_CYC 27880.0 -> 27902.0, 1 new LV_BEATS row (1280). New capture scene `b1280`. Tools: `gen1280.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1280`, `scenes_batch.py 1280`. `node --check` clean; `runtime_probe.py 1280` = len 1281, no holes, 1369 draws, no errors.
+
 ## 2026-10-27 — YOU’RE JECK.; JECK IS A HERO (BEATS 1278-1279)
 
 Based on Toby's October 27, 2026, 8:31 PM lore (Email 2004, message `1a17febc28084c02` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the evening's beat 1276-1277 report. Built the same evening. The email is one long paragraph of his own typing, from "Jeck and Simon RL may be the heroes of the game" to "Jeck IS a hero.", followed by a chatbot restatement ("*Jeck is now confirmed as a hero*, and *Jeck RL is officially an RL* ...", "The latest events establish:", the bullets, "*Game ownership and facility ownership are separate.*", the BobServer666 paragraph), which is commentary and is not drawn. No attachments. The wiki ingest had not reached this message when the game was built, so the game assigned the numbers and titles. The paragraph is long enough for two beats, split where he turns from the fight to the roster and the rules. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) their PNGs are numbers 1341 and 1342.

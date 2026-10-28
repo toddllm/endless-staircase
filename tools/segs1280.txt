@@ -1,0 +1,1 @@
+  if(c >= 27880.0 && c < 27902.0) return [1280, c-27880.0];  // NEKA STILL ISN’T SEEN
