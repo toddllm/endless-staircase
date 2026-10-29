@@ -4,6 +4,15 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-29 — ONLY NEKA COMES BACK (BEAT 1283)
+
+Based on Toby's October 29, 2026, 5:59 AM lore (Email 2008, message `1a1871a15f377a36` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1282 report. Built the same morning. His own typing is the line "Neka's Last Timeline move is like this, but without the aftermath and has a black ink dragon, Neka touches the character and doesn't punch. The character freezes into a sheet of invisable ice." and his video prompt: "Last Timeline" in English and Japanese, a large black ink dragon with the text "Voikor", Neka touches the character, the dragon's mouth snaps shut over both, both disappear, the dragon disappears, the character is nowhere, and Neka comes back. The Earth Splitting Strike walkthrough (Suiryu, The Strongest Battlegrounds) and the numbered "intended sequence" restatement are the chatbot's and are not drawn. The game assigned the number and title. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1346.
+
+![Beat 1283](screenshots/1346-only-neka-comes-back.png)
+
+- LV_CYC 27946.0 -> 27968.0, 1 new LV_BEATS row (1283). New capture scene `b1283`. Tools: `gen1283.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1283`, `scenes_batch.py 1283`. `node --check` clean; `runtime_probe.py 1283` = len 1284, no holes, 1372 draws, no errors.
+- Beat 1283, Only Neka Comes Back (October 29, 5:59 AM): Last Timeline is a touch, not a punch; the opponent freezes into a sheet of invisible ice; the black ink dragon snaps its jaws over Neka and the opponent; both vanish, the dragon vanishes, the opponent is nowhere, and only Neka returns. No knockback, no aftermath. Where the opponent goes is left open.
+
 ## 2026-10-28 — LAST TIMELINE (BEAT 1282)
 
 Based on Toby's October 28, 2026, 7:56 PM lore (Email 2007, message `1a184f1c1b336891` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1281 report. Built the same evening. His own typing is the prompt "Create an image of Neka *Neka — The Dragon's Brother*, wearing his shark hood and white lab coat." and the line "This is the closest I got to the last timeline power, it shows the point, but isn't perfect." The paragraphs describing his clip (Voikor gathering around Neka's hand, the enormous black dragon, purple energy through the facility, black liquid dispersing) are the chatbot's description; they are drawn only as what the clip showed, and the beat leaves the timeline mechanics open, as he said. The clip itself was not in the email. The wiki ingest had not reached this message, so the game assigned the number and title. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1345.

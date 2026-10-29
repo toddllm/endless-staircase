@@ -1,0 +1,1 @@
+  if(c >= 27946.0 && c < 27968.0) return [1283, c-27946.0];  // ONLY NEKA COMES BACK
