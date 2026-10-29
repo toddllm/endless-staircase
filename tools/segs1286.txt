@@ -1,0 +1,2 @@
+  if(c >= 28034.0 && c < 28056.0) return [1287, c-28034.0];  // FOUR MALLOWS
+  if(c >= 28012.0 && c < 28034.0) return [1286, c-28012.0];  // THE NEW CLASSIC RL TRIO
