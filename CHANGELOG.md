@@ -4,6 +4,15 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-28 — LAST TIMELINE (BEAT 1282)
+
+Based on Toby's October 28, 2026, 7:56 PM lore (Email 2007, message `1a184f1c1b336891` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1281 report. Built the same evening. His own typing is the prompt "Create an image of Neka *Neka — The Dragon's Brother*, wearing his shark hood and white lab coat." and the line "This is the closest I got to the last timeline power, it shows the point, but isn't perfect." The paragraphs describing his clip (Voikor gathering around Neka's hand, the enormous black dragon, purple energy through the facility, black liquid dispersing) are the chatbot's description; they are drawn only as what the clip showed, and the beat leaves the timeline mechanics open, as he said. The clip itself was not in the email. The wiki ingest had not reached this message, so the game assigned the number and title. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1345.
+
+![Beat 1282](screenshots/1345-last-timeline.png)
+
+- LV_CYC 27924.0 -> 27946.0, 1 new LV_BEATS row (1282). New capture scene `b1282`. Tools: `gen1282.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1282`, `scenes_batch.py 1282`. `node --check` clean; `runtime_probe.py 1282` = len 1283, no holes, 1371 draws, no errors.
+- Beat 1282, Last Timeline (October 28, 7:56 PM): Neka, The Dragon's Brother, in his shark hood and white lab coat; the Last Timeline power as far as his clip got it; what it does to the timeline is still Toby's to explain.
+
 ## 2026-10-28 — DRAGON’S DECENT (BEAT 1281)
 
 Based on Toby's October 28, 2026, 7:14 PM lore (Email 2006, message `1a184cb65348781a` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1280 report. Built the same evening. His own typing is the prompt "What is the difference between "Ask me anything, I know everything!", and "Ask me everything, I know anything!"", the follow-up ""I know anything" = you know about anything." and the lore paragraph from "Jeck says" to "Jeckerinia". The grammar explanation, the comparison table and the italic restatement at the end are the chatbot's, commentary, and are not drawn. No attachments. The wiki ingest had not reached this message, so the game assigned the number and title (his spelling "Decent" kept). Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1344.
