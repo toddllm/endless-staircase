@@ -4,6 +4,17 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-29 — THE FINAL BEAT and THE DRAGON LORD (BEATS 1284-1285)
+
+Based on Toby's October 29, 2026, 5:09 PM lore (Email 2010, message `1a1897f9fd3b12d1` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1283 report. Built the same evening. His own typing is a run of attack riddles and answers: Dreamwork Handworks (Gaster summons Sans and Papyrus, blasters, a black hood cloak and 2 giant hands; a clap, a throw, a triple KO punch; "This character lost all his family except for Sans, Papyrus, and Neka"), the heartbeat attack "called 'The Final Beat' (beats are small chapters of the game)" for Oran RL, Siron RL, and Simon RL, "Neka added them to Classic RL recently", Dragon's Embalem and Domain Expansion: The Dragon Lord ("It is tdeshane. I made the attack/ability, for my own character."), the character maker ("the game makes it for you"), Neka's line "Hello, here is your character, want to lose?", "CODE was also given it", and "My character would be the second most powerful player in game". The guesses, emoji walkthroughs and the summary table are the chatbot's and are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1347-1348.
+
+![Beat 1284](screenshots/1347-the-final-beat.png)
+![Beat 1285](screenshots/1348-the-dragon-lord.png)
+
+- LV_CYC 27968.0 -> 28012.0, 2 new LV_BEATS rows (1284-1285). New capture scenes `b1284`, `b1285`. Tools: `gen1284.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1284`, `scenes_batch.py 1284`. `node --check` clean; `runtime_probe.py 1285` = len 1286, no holes, 1374 draws, no errors.
+- Beat 1284, The Final Beat: Dreamwork Handworks for Gaster with Sans and Papyrus; The Final Beat for Oran RL, Siron RL, and Simon RL (the heartbeat slows to a stop, a jerky dash, fire slashes, clones, a 3 way blow); Gaster's remaining family is Sans, Papyrus, and Neka. tdeshane made the attacks and Neka added them.
+- Beat 1285, The Dragon Lord: Dragon's Embalem combines Simon RL's Speed, Mr. Black's Corruption and Wonda RL's Strength; Domain Expansion: The Dragon Lord fuses fire dragons into one, destroys Planet X, and the speed cuts the game's reality fabric. tdeshane is the second most powerful player; CODE was also given The Dragon Lord.
+
 ## 2026-10-29 — ONLY NEKA COMES BACK (BEAT 1283)
 
 Based on Toby's October 29, 2026, 5:59 AM lore (Email 2008, message `1a1871a15f377a36` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the beat 1282 report. Built the same morning. His own typing is the line "Neka's Last Timeline move is like this, but without the aftermath and has a black ink dragon, Neka touches the character and doesn't punch. The character freezes into a sheet of invisable ice." and his video prompt: "Last Timeline" in English and Japanese, a large black ink dragon with the text "Voikor", Neka touches the character, the dragon's mouth snaps shut over both, both disappear, the dragon disappears, the character is nowhere, and Neka comes back. The Earth Splitting Strike walkthrough (Suiryu, The Strongest Battlegrounds) and the numbered "intended sequence" restatement are the chatbot's and are not drawn. The game assigned the number and title. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) its PNG is number 1346.

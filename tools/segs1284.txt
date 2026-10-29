@@ -1,0 +1,2 @@
+  if(c >= 27990.0 && c < 28012.0) return [1285, c-27990.0];  // THE DRAGON LORD
+  if(c >= 27968.0 && c < 27990.0) return [1284, c-27968.0];  // THE FINAL BEAT
