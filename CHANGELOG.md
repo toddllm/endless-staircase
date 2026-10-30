@@ -4,6 +4,15 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-30 — THE STAIRCASE ENDS (BEAT 1290)
+
+Based on Toby's October 30, 2026, 5:26 AM lore (message `1a18c22357f9dbaa` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the Classic RL: Elimination report. His whole typing: "Have Endless Staircase end at Classic RL Elimination. The player should have a 100% of getting destroyed then." Built as the newest and last beat of the loop rather than a rewrite of how the game plays: the staircase still loops back to the first step afterward. Making the actual climb stop is Todd's call. By the screenshot rule (beat + 63) the PNG is 1353.
+
+![Beat 1290](screenshots/1353-the-staircase-ends.png)
+
+- LV_CYC 28100.0 -> 28122.0, 1 new LV_BEATS row (1290). New capture scene `b1290`. Tool: `gen1290.py`. `node --check` clean; capture scene renders.
+- Beat 1290, The Staircase Ends: the last steps climb to a door marked ELIMINATION; the player is a Starry; the attackers are Neka, Simon RL, Pinky RL and Gaster; a "chance of getting destroyed" meter fills from 0% to 100% and stays there.
+
 ## 2026-10-29 — CLASSIC RL: ELIMINATION and COVERED IN BLOOD (BEATS 1288-1289)
 
 Based on Toby's October 29, 2026, 7:46 PM lore (Email 2016, message `1a18a0e9eaf55091` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the Four Mallows report. Built the same evening. His own typing: Chance is Simon RL and Two Twin is Oran or Wonda; Pinky RL and Simon RL are the two most important RLs, "not because of power"; a new game, "Elimination", "like Forsaken for Classic RL", made by Gaster, opening with an intro video; only Simon RL, Pinky RL, Neka, Gaster and Jeck from the old cast, plus returning names Jumble, Mindy Barchild, Zan and Arcsos; named characters are unplayable and the player is a Starry, named after his Among Us character Starrychin, sometimes in two stacked top hats; Simon RL beats Simon.ps ("hit me = death") with a ranged electric shot; the Sprunkis, including Mr. Black, died of overwork; Neka becomes covered in blood and attacks; roles: Neka, Simon RL, Pinky RL and Gaster attack, Jeck is the hero, everyone else survives, Neka is the most dangerous. The italic restatement and the role table are the chatbot's and are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1351-1352.

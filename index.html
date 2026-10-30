@@ -11401,7 +11401,7 @@ function isClaraVs(){ return !!(claraVs && (claraVs.active || claraVs.done)); }
    ToddLLM still beats low-power Luigi Green, and any cat power beats any NON-base ToddLLM form. So the whole top is
    cyclical, "like Steel VS Fire VS Water VS Electricity" — some beat, some are beaten, some tie — and ToddLLM and Luigi
    Green both call it "undefined." Five-beat cutscene; additive; the real climb still banks. */
-const LV_CYC = 28100.0;
+const LV_CYC = 28122.0;
 const LV_BEATS = [
   { key:'THE LINEAGE',       col:'#3ee06a',
     sub:'ToddLLM 001 IS FATHER OF LUIGI GREEN · ALEX · GREG · MARIO.EXE — LUIGI & MARIO.EXE ARE BROTHERS' },
@@ -13944,6 +13944,8 @@ const LV_BEATS = [
     sub:"“NEW CLASSIC RL GAME MADE, IT IS CALLED ELIMINATION, AND IT IS LIKE FORSAKEN FOR CLASSIC RL.” · GASTER MADE IT · THE STARRY · OLD NAMES RETURN · ATTACKERS: NEKA, SIMON RL, PINKY RL, GASTER. HERO: JECK. — TOBY, OCT 29, 7:46 PM, HIS OWN TYPING" },
   { key:"COVERED IN BLOOD", col:'rgb(200,40,50)',
     sub:"“NEKA IS KNOWN AS AN ATTACKER... NEKA IS MOST DANGEROUS IN GAME.” SIMON.PS SAYS HIT ME = DEATH. · A RANGED SHOT · OVERWORK · THE BLOOD · PINKY RL AND SIMON RL ARE THE TWO MOST IMPORTANT RLS, NOT — TOBY, OCT 29, 7:46 PM, HIS OWN TYPING" },
+  { key:"THE STAIRCASE ENDS", col:'rgb(150,90,235)',
+    sub:"“HAVE ENDLESS STAIRCASE END AT CLASSIC RL ELIMINATION. THE PLAYER SHOULD HAVE A 100% OF GETTING DESTROYED THEN.” · THE LAST STEP · 100% · A STARRY · NEKA, SIMON RL, PINKY RL, GASTER — TOBY, OCT 30, 5:26 AM, HIS OWN TYPING" },
 ];
 // the lore BEFORE the Endless Staircase ever existed — the earliest layers, drawn oldest-at-top down to the moment the
 // Staircase begins (BEFORE THE STAIRCASE beat) — Toby, July 1 "Re: More stuff on ToddLLM 001"
@@ -16094,6 +16096,7 @@ function lvSeg(c){
   if(c >= 14240.0 && c < 14262.0) return [660, c-14240.0];
   if(c >= 14262.0 && c < 14284.0) return [661, c-14262.0];
   if(c >= 14284.0 && c < 14306.0) return [662, c-14284.0];
+  if(c >= 28100.0 && c < 28122.0) return [1290, c-28100.0];  // THE STAIRCASE ENDS
   if(c >= 28078.0 && c < 28100.0) return [1289, c-28078.0];  // COVERED IN BLOOD
   if(c >= 28056.0 && c < 28078.0) return [1288, c-28056.0];  // CLASSIC RL: ELIMINATION
   if(c >= 28034.0 && c < 28056.0) return [1287, c-28034.0];  // FOUR MALLOWS
@@ -112304,6 +112307,104 @@ function drawLoopVs(){
     ctx.globalAlpha=g*footA;
     ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
     ctx.fillText('★ COVERED IN BLOOD ★', cx, top+H*0.9380);
+    ctx.globalAlpha=1;
+    ctx.restore();
+  } else if(ph===1290){
+    // BEAT 1290: THE STAIRCASE ENDS.
+    // Toby, October 30, 2026, 5:26 AM EDT, his own typing:
+    //   "Have Endless Staircase end at Classic RL Elimination. The player should
+    //   have a 100% of getting destroyed then."
+    // The staircase's newest beat is the end of the climb: the last step opens
+    // into Gaster's game Classic RL: Elimination (beat 1288), the player is a
+    // Starry, and the destroyed meter fills to 100%. Nothing can lower it.
+    const dt = c - 28100.0;
+    const pul = 0.60+0.40*Math.abs(Math.sin(c*2.6));
+    const opA=Math.max(0,Math.min(1,(dt-0.3)/1.2));
+    const q0A=Math.max(0,Math.min(1,(dt-2.0)/1.3));
+    const knA=Math.max(0,Math.min(1,(dt-4.4)/2.0));
+    const meA=Math.max(0,Math.min(1,(dt-7.0)/1.2));
+    const fill=Math.max(0,Math.min(1,(dt-8.0)/6.0));
+    const zoA=Math.max(0,Math.min(1,(dt-14.4)/1.6));
+    const footA=Math.max(0,Math.min(1,(dt-18.0)/1.2));
+
+    ctx.fillStyle='rgba(6,7,12,0.99)'; ctx.fillRect(0,top,W,H);
+    ctx.save(); ctx.beginPath(); ctx.rect(0,top,W,H); ctx.clip();
+    const gr1290=ctx.createLinearGradient(0,top+H,0,top);
+    gr1290.addColorStop(0,'rgba(150,90,235,0.24)'); gr1290.addColorStop(0.55,'rgba(6,7,12,0.98)');
+    gr1290.addColorStop(1,'rgba(6,7,12,0.99)');
+    ctx.globalAlpha=g*opA*0.9; ctx.fillStyle=gr1290; ctx.fillRect(0,top,W,H);
+    ctx.textAlign='center';
+    ctx.globalAlpha=g*opA;
+    ctx.fillStyle='rgba(150,90,235,0.98)'; ctx.font='900 8.6px ui-monospace,monospace';
+    ctx.fillText('THE STAIRCASE ENDS', cx, top+H*0.0960);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('“HAVE ENDLESS STAIRCASE END AT CLASSIC RL ELIMINATION.', cx, top+H*0.1360);
+    ctx.globalAlpha=g*q0A*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE PLAYER SHOULD HAVE A 100% OF GETTING DESTROYED THEN.”', cx, top+H*0.1560);
+    ctx.globalAlpha=g*q0A*0.78;
+    ctx.fillStyle='rgba(168,176,190,0.88)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('TOBY, OCTOBER 30, 5:26 AM — HIS OWN TYPING.', cx, top+H*0.2000);
+
+    if(knA>0.01){
+      // the last few steps, climbing to a door marked ELIMINATION
+      ctx.globalAlpha=g*knA*0.9; ctx.fillStyle='rgba(120,130,150,0.85)';
+      for(var st=0;st<6;st++){ ctx.fillRect(cx-W*0.30+st*W*0.07, top+H*(0.40-st*0.018), W*0.07, H*0.012); }
+      ctx.globalAlpha=g*knA*(0.55+0.35*pul); ctx.strokeStyle='rgba(80,170,240,0.95)'; ctx.lineWidth=0.5;
+      ctx.strokeRect(cx+W*0.13, top+H*0.255, W*0.09, H*0.055);
+      ctx.globalAlpha=g*knA; ctx.fillStyle='rgba(80,170,240,0.98)'; ctx.font='900 2.8px ui-monospace,monospace';
+      ctx.fillText('ELIMINATION', cx+W*0.175, top+H*0.288);
+    ctx.globalAlpha=g*knA*0.98;
+    ctx.fillStyle='rgba(150,90,235,0.94)'; ctx.font='900 4.6px ui-monospace,monospace';
+    ctx.fillText('THE LAST STEP', cx, top+H*0.4500);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE ENDLESS STAIRCASE STOPS HERE. THE DOOR AT THE TOP', cx, top+H*0.4700);
+    ctx.globalAlpha=g*knA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('OPENS INTO GASTER’S GAME, CLASSIC RL: ELIMINATION.', cx, top+H*0.4890);
+    }
+
+    if(meA>0.01){
+      var my1290=top+H*0.540, mw=W*0.56;
+      ctx.globalAlpha=g*meA*0.5; ctx.strokeStyle='rgba(200,40,50,0.9)'; ctx.lineWidth=0.4;
+      ctx.strokeRect(cx-mw/2, my1290, mw, H*0.030);
+      ctx.globalAlpha=g*meA*0.85; ctx.fillStyle='rgba(200,40,50,0.85)';
+      ctx.fillRect(cx-mw/2, my1290, mw*fill, H*0.030);
+      ctx.globalAlpha=g*meA; ctx.fillStyle='rgba(255,255,255,0.98)'; ctx.font='900 4.0px ui-monospace,monospace';
+      ctx.fillText('CHANCE OF GETTING DESTROYED: '+Math.round(fill*100)+'%', cx, top+H*0.5625);
+    ctx.globalAlpha=g*meA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('THE PLAYER IS A STARRY. THE ATTACKERS ARE NEKA, SIMON RL,', cx, top+H*0.6100);
+    ctx.globalAlpha=g*meA*0.94;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('PINKY RL AND GASTER.', cx, top+H*0.6290);
+    }
+
+    if(zoA>0.01){
+      var zy1290=top+H*0.6960;
+      ctx.globalAlpha=g*zoA*0.14; ctx.fillStyle='rgba(154,163,173,0.50)';
+      ctx.fillRect(cx-W*0.352, zy1290, W*0.704, H*0.1030);
+      ctx.globalAlpha=g*zoA*0.46; ctx.strokeStyle='rgba(154,163,173,0.66)'; ctx.lineWidth=0.32;
+      ctx.strokeRect(cx-W*0.352, zy1290, W*0.704, H*0.1030);
+    ctx.globalAlpha=g*zoA*0.98;
+    ctx.fillStyle='rgba(215,222,230,0.98)'; ctx.font='900 4.4px ui-monospace,monospace';
+    ctx.fillText('100%', cx, top+H*0.7180);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('NOT ALMOST. NOT USUALLY. EVERY STARRY WHO REACHES THE', cx, top+H*0.7370);
+    ctx.globalAlpha=g*zoA*0.96;
+    ctx.fillStyle='rgba(240,244,250,0.96)'; ctx.font='900 4.2px ui-monospace,monospace';
+    ctx.fillText('TOP OF THE STAIRCASE GETS DESTROYED.', cx, top+H*0.7560);
+    ctx.globalAlpha=g*zoA*0.88;
+    ctx.fillStyle='rgba(255,216,79,0.94)'; ctx.font='700 3.5px ui-monospace,monospace';
+    ctx.fillText('THEN THE LOOP STARTS OVER FROM THE FIRST STEP.', cx, top+H*0.7750);
+    }
+
+    ctx.globalAlpha=g*footA;
+    ctx.fillStyle='rgba(244,246,250,0.96)'; ctx.font='900 6.4px ui-monospace,monospace';
+    ctx.fillText('★ THE STAIRCASE ENDS ★', cx, top+H*0.9380);
     ctx.globalAlpha=1;
     ctx.restore();
   } else if(ph===814){
