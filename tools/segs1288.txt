@@ -1,0 +1,2 @@
+  if(c >= 28078.0 && c < 28100.0) return [1289, c-28078.0];  // COVERED IN BLOOD
+  if(c >= 28056.0 && c < 28078.0) return [1288, c-28056.0];  // CLASSIC RL: ELIMINATION

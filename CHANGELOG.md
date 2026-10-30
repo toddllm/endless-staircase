@@ -4,6 +4,17 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-29 — CLASSIC RL: ELIMINATION and COVERED IN BLOOD (BEATS 1288-1289)
+
+Based on Toby's October 29, 2026, 7:46 PM lore (Email 2016, message `1a18a0e9eaf55091` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the Four Mallows report. Built the same evening. His own typing: Chance is Simon RL and Two Twin is Oran or Wonda; Pinky RL and Simon RL are the two most important RLs, "not because of power"; a new game, "Elimination", "like Forsaken for Classic RL", made by Gaster, opening with an intro video; only Simon RL, Pinky RL, Neka, Gaster and Jeck from the old cast, plus returning names Jumble, Mindy Barchild, Zan and Arcsos; named characters are unplayable and the player is a Starry, named after his Among Us character Starrychin, sometimes in two stacked top hats; Simon RL beats Simon.ps ("hit me = death") with a ranged electric shot; the Sprunkis, including Mr. Black, died of overwork; Neka becomes covered in blood and attacks; roles: Neka, Simon RL, Pinky RL and Gaster attack, Jeck is the hero, everyone else survives, Neka is the most dangerous. The italic restatement and the role table are the chatbot's and are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1351-1352.
+
+![Beat 1288](screenshots/1351-classic-rl-elimination.png)
+![Beat 1289](screenshots/1352-covered-in-blood.png)
+
+- LV_CYC 28056.0 -> 28100.0, 2 new LV_BEATS rows (1288-1289). New capture scenes `b1288`, `b1289`. Tools: `gen1288.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1288`, `scenes_batch.py 1288`. `node --check` clean; both capture scenes render.
+- Beat 1288, Classic RL: Elimination: Gaster's new game, not a mod; intro video; the Starry as the only playable character; old names return; attackers, hero and survivors.
+- Beat 1289, Covered in Blood: Simon RL's ranged electric shot beats Simon.ps; the Sprunkis and Mr. Black die of overwork; Neka's blood covers him and he attacks.
+
 ## 2026-10-29 — THE NEW CLASSIC RL TRIO and FOUR MALLOWS (BEATS 1286-1287)
 
 Based on Toby's October 29, 2026, 6:21-6:26 PM lore (Emails 2013-2015, messages `1a189c0d5ee1ab95`, `1a189c43eff96e88`, `1a189c5dda2a8ec6` on "Continuing of Classic RL" `1a1779f533a68ea7`), his replies to the inspiration-table report. Built the same evening. His own typing is the first paragraph of each message: Simon RL enters the glass chamber ("Desprite all the timelines before, I destroyed the porpose of them."), Mr. Black makes the RL code based on Sprunki and Incredibox and builds RL Cyber HQ, the RLs become music characters in a horror game, Wonda meows, Neka was made for learning while Jeck was made for every task ("Mind? No, brain."), "Jeck, Mr. Black and Gaster are the new Classic RL Trio. Neka was left out since he had no porpose to them anymore.", Neka burns his shark hood and his mallow eats the ashes; then four mallows crunch RL Cyber HQ "like it was an apple", "I was no longer able to learn about the game anymore, you changed it on me!", and Neka stranded on a cabin next to the destroyed RL HQ. The italic restatements are the chatbot's and are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1349-1350.
