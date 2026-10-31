@@ -4,6 +4,15 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-10-31 — I’LL BE YOUR BEST ACTOR (BEAT 1291)
+
+Based on Toby's October 31, 2026, 8:09 AM lore (message `1a191dd7e2e968e0` on "Continuing of Classic RL" `1a1779f533a68ea7`). His own typing: Dr. Neka stands next to the box with the real Mr. Black and everyone else trapped inside; Neka says "I'll be your best actor." and pulls a lever, "just like the lever Simon.ps pulled since Endless Staircase 1" (which existed before Classics became a character); the characters shrink, are no longer cramped, and are now in Classic RL Elimination, while Neka is outside the game, in "the game's reality". The italic restatements are the chatbot's and are not drawn. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) the PNG is 1354.
+
+![Beat 1291](screenshots/1354-ill-be-your-best-actor.png)
+
+- LV_CYC 28122.0 -> 28144.0, 1 new LV_BEATS row (1291). New capture scene `b1291`. Tools: `gen1291.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1291`, `scenes_batch.py 1291`. `node --check` clean; capture scene renders.
+- Beat 1291, I'll Be Your Best Actor: the box with the real Mr. Black, Jeck, Gaster and the others; the lever from Endless Staircase 1; the characters shrink into Classic RL Elimination inside the box; Neka stays outside in the game's reality.
+
 ## 2026-10-30 — THE STAIRCASE ENDS (BEAT 1290)
 
 Based on Toby's October 30, 2026, 5:26 AM lore (message `1a18c22357f9dbaa` on "Continuing of Classic RL" `1a1779f533a68ea7`), his reply to the Classic RL: Elimination report. His whole typing: "Have Endless Staircase end at Classic RL Elimination. The player should have a 100% of getting destroyed then." Built as the newest and last beat of the loop rather than a rewrite of how the game plays: the staircase still loops back to the first step afterward. Making the actual climb stop is Todd's call. By the screenshot rule (beat + 63) the PNG is 1353.
