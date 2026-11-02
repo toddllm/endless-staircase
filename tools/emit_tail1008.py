@@ -126,8 +126,8 @@ for i, b in enumerate(B):
     ph = BASE + i
     st = START + STEP * i
     sub = ' · '.join([' '.join(x for x in b['quote'] if x)] + [h for h, _, _ in b['panels']] + [b['close'][0]])
-    rows.append(('  { key:"%s", col:\'rgb(%s)\',\n    sub:"%s — TOBY, OCT %d, %s, HIS OWN TYPING" },')
-                % (b['key'].replace('"', '”'), b['accent'], sub.replace('"', '”'), b['day'], b['short']))
+    rows.append(('  { key:"%s", col:\'rgb(%s)\',\n    sub:"%s — TOBY, %s %d, %s, HIS OWN TYPING" },')
+                % (b['key'].replace('"', '”'), b['accent'], sub.replace('"', '”'), MONTH[b['day']].split()[0][:3], b['day'], b['short']))
     segs.append('  if(c >= %.1f && c < %.1f) return [%d, c-%.1f];  // %s' % (st, st + STEP, ph, st, b['key']))
 io.open('/Users/tdeshane/endless-staircase/tools/rows%s.txt' % TAG, 'w', encoding='utf-8').write('\n'.join(rows) + '\n')
 io.open('/Users/tdeshane/endless-staircase/tools/segs%s.txt' % TAG, 'w', encoding='utf-8').write('\n'.join(reversed(segs)) + '\n')

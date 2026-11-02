@@ -4,6 +4,15 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-11-02 — 10 DIMENSIONAL (BEAT 1292)
+
+Based on Toby's November 2, 2026, 5:49 AM lore (message `1a19be0b90adb989`, the first message on the new thread "Continuing from Classic RL Eliminations"). His own typing, after a pasted ChatGPT-vs-Neka dance-request bit (the chatbot's, not drawn): "So Neka's soul is going through the gates of the chamber to the body. And then Neka revives stronger. Rocks fill everywhere, Neka holds a Seperial staff. Neka becomes 10 dimensional." The ghost-emoji restatement under it (reunites with his original body, advancing beyond the 5 Dimensional: Dragon awakening, a new evolution) is the chatbot's and is not drawn. This follows Neka's death at 12:04 on the real clock on November 1. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) the PNG is 1355.
+
+![Beat 1292](screenshots/1355-10-dimensional.png)
+
+- LV_CYC 28144.0 -> 28166.0, 1 new LV_BEATS row (1292). New capture scene `b1292`. Tools: `gen1292.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1292`, `scenes_batch.py 1292`. `emit_tail1008.py` now takes the month abbreviation from the gen's MONTH table instead of a hard-coded OCT (first November beat). `node --check` clean; capture scene renders.
+- Beat 1292, 10 Dimensional: Neka's soul passes through the chamber gates back to his original body; rocks fill the surrounding space; he holds a Seperial staff; he revives stronger and becomes 10 dimensional, past the 5 Dimensional: Dragon awakening.
+
 ## 2026-10-31 — I’LL BE YOUR BEST ACTOR (BEAT 1291)
 
 Based on Toby's October 31, 2026, 8:09 AM lore (message `1a191dd7e2e968e0` on "Continuing of Classic RL" `1a1779f533a68ea7`). His own typing: Dr. Neka stands next to the box with the real Mr. Black and everyone else trapped inside; Neka says "I'll be your best actor." and pulls a lever, "just like the lever Simon.ps pulled since Endless Staircase 1" (which existed before Classics became a character); the characters shrink, are no longer cramped, and are now in Classic RL Elimination, while Neka is outside the game, in "the game's reality". The italic restatements are the chatbot's and are not drawn. Lore beat only; nothing in play changed. By the screenshot rule (beat + 63) the PNG is 1354.
