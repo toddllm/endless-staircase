@@ -1,0 +1,3 @@
+  if(c >= 28276.0 && c < 28298.0) return [1298, c-28276.0];  // FLOWER HAS RETURNED
+  if(c >= 28254.0 && c < 28276.0) return [1297, c-28254.0];  // DEATH TIMER STARTED
+  if(c >= 28232.0 && c < 28254.0) return [1296, c-28232.0];  // UNDERTALE X CLASSIC RL
