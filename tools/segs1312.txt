@@ -1,0 +1,3 @@
+  if(c >= 28628.0 && c < 28650.0) return [1314, c-28628.0];  // NEKA ALSO HAS RULES
+  if(c >= 28606.0 && c < 28628.0) return [1313, c-28606.0];  // ONE PLUS ONE IS SIXTY
+  if(c >= 28584.0 && c < 28606.0) return [1312, c-28584.0];  // SMARTER EVERY SECOND

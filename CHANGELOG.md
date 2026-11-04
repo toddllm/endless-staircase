@@ -4,6 +4,21 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-11-04 — SMARTER EVERY SECOND, ONE PLUS ONE IS SIXTY, NEKA ALSO HAS RULES (BEATS 1312-1314)
+
+Based on Toby's November 4, 2026 lore, one message at 4:51 PM (`1a1a88bcdc3f250d`) on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of the mail is a pasted ChatGPT log (intelligence hierarchy, example dialogues with Gaster asking the time); only his own typed lines are drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1375-1377.
+
+- His own typing, in order: "Starries who are the alien Classic RL players are smarter than humans from reality. Neka's intellegence increases more and more, now it could advance Starries, and then he may turn on some (those who offend him)." / "Neka commonly does that, he says some stuff that doesn't answer the queston like "1+1", "60", "Capital of France?", "Paris says 1600 years of Paris hystory"." / "Neka is like an infinitely smart and best AI canonally, but litterly gives all sorts of stuff at random, he can say almost anything he wants. Neka also has rules."
+
+![Beat 1312](screenshots/1375-smarter-every-second.png)
+![Beat 1313](screenshots/1376-one-plus-one-is-sixty.png)
+![Beat 1314](screenshots/1377-neka-also-has-rules.png)
+
+- LV_CYC 28584.0 -> 28650.0, 3 new LV_BEATS rows (1312-1314). New capture scenes `b1312`-`b1314`. Tools: `gen1312.py`, `build_batch.py 1312`, `scenes_batch.py 1312`. `node --check` clean on the extracted script; all three capture scenes render.
+- Beat 1312, Smarter Every Second: Reality's humans, then Starries, then Neka, whose intelligence keeps rising and may turn on those who offend him.
+- Beat 1313, One Plus One Is Sixty: Neka answers "60" to 1 + 1 and gives 1600 years of Paris history nobody asked for.
+- Beat 1314, Neka Also Has Rules: infinitely smart, says almost anything at random, but still bound by rules like "All Words Are Good."
+
 ## 2026-11-04 — THROUGH CAMERAS, THE FINGER SNAP, I CAN RESET FOREVER, GASTER’S DOOR, ERASED FROM THE OUTER LAYERS, WHY DID YOU LEAVE ME (BEATS 1306-1311)
 
 Based on Toby's November 4, 2026 lore, one message at 4:28 PM (`1a1a8766c0b15c20`) on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of the mail is a pasted ChatGPT log (scene scripts, tables, "imagine the aftermath" dialogue); only his own typed lines are drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1369-1374.
