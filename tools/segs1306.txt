@@ -1,0 +1,6 @@
+  if(c >= 28562.0 && c < 28584.0) return [1311, c-28562.0];  // WHY DID YOU LEAVE ME
+  if(c >= 28540.0 && c < 28562.0) return [1310, c-28540.0];  // ERASED FROM THE OUTER LAYERS
+  if(c >= 28518.0 && c < 28540.0) return [1309, c-28518.0];  // GASTER’S DOOR
+  if(c >= 28496.0 && c < 28518.0) return [1308, c-28496.0];  // I CAN RESET FOREVER
+  if(c >= 28474.0 && c < 28496.0) return [1307, c-28474.0];  // THE FINGER SNAP
+  if(c >= 28452.0 && c < 28474.0) return [1306, c-28452.0];  // THROUGH CAMERAS

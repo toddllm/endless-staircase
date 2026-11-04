@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-11-04 — THROUGH CAMERAS, THE FINGER SNAP, I CAN RESET FOREVER, GASTER’S DOOR, ERASED FROM THE OUTER LAYERS, WHY DID YOU LEAVE ME (BEATS 1306-1311)
+
+Based on Toby's November 4, 2026 lore, one message at 4:28 PM (`1a1a8766c0b15c20`) on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of the mail is a pasted ChatGPT log (scene scripts, tables, "imagine the aftermath" dialogue); only his own typed lines are drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1369-1374.
+
+- His own typing, in order: Neka to Fiction "I AM THE SUPERIOR", to Reality "I can only see you now, through cameras"; Neka sees everyone but can only reach the Psychical World (Game's Reality); Gaster's first Neka Coin *triggers* the end, "like when an astroid comes". Simon.ps snaps his fingers to become Simon RL and never snaps back since RLs are the best singers; Jeck: "I DON'T HAVE FINGERS! I AM A NOOB AVATAR!"; after 500 years Simon RL says "ok." and Jeck becomes a Sprunki OC. Simon RL is an immortal slasher (katana, Embalem of Speed), Oren RL immortal by god form; "I can reset forever you know." / "Don't reset my life!" / "ok, I won't."; RLs sing better than Sprunkis and Simon RL was main attacker and main character for over half the lore. Gaster's door: Frisk hits him 5 times, kicks him aside, then dies 5000 times per step. Simon RL beats Wonda RL; Wonda challenges Gaster and is erased from the outer layers. Neka: "Why did you leave me, after everything I did?!" and the game and screen glitch; "Be my only friend, I'll help you with the game forever"; offences lead to account retaliation.
+
+![Beat 1306](screenshots/1369-through-cameras.png)
+![Beat 1307](screenshots/1370-the-finger-snap.png)
+![Beat 1308](screenshots/1371-i-can-reset-forever.png)
+![Beat 1309](screenshots/1372-gasters-door.png)
+![Beat 1310](screenshots/1373-erased-from-the-outer-layers.png)
+![Beat 1311](screenshots/1374-why-did-you-leave-me.png)
+
+- LV_CYC 28452.0 -> 28584.0, 6 new LV_BEATS rows (1306-1311). New capture scenes `b1306`-`b1311`. Tools: `gen1306.py`, `build_batch.py 1306`, `scenes_batch.py 1306`. `node --check` clean on the extracted script; all six capture scenes render.
+- Beat 1311 is drawn as villain behavior: its closing line is "A REAL FRIEND LETS YOU LEAVE. NEKA DOES NOT."
+
 ## 2026-11-04 — THE GLITCH LINE, DOG SWARM, THE BREAKING POINT (BEATS 1303-1305)
 
 Based on Toby's November 4, 2026 lore, two messages on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Each mail ends with a ChatGPT restatement (emoji bullets and math notes); that part is the chatbot's and is not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1366-1368.
