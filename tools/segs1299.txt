@@ -1,0 +1,4 @@
+  if(c >= 28364.0 && c < 28386.0) return [1302, c-28364.0];  // CLASSIC RL ELIMINATED
+  if(c >= 28342.0 && c < 28364.0) return [1301, c-28342.0];  // DOG MADE GASTER
+  if(c >= 28320.0 && c < 28342.0) return [1300, c-28320.0];  // ASGROTH’S CURSE
+  if(c >= 28298.0 && c < 28320.0) return [1299, c-28298.0];  // NEKA CODE

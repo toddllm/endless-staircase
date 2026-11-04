@@ -4,6 +4,24 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-11-03 — NEKA CODE, ASGROTH'S CURSE, DOG MADE GASTER, CLASSIC RL ELIMINATED (BEATS 1299-1302)
+
+Based on Toby's November 3, 2026 lore, two messages on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of each mail is a pasted ChatGPT log (Flowey/Asriel/Alphys explainers, Annoying Dog / Toby Fox explainers, defeat charts); the chatbot's retellings are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1362-1365.
+
+- 7:14 PM (`1a1a3e86af60e29d`): "Here is the next thing. A document. Explains more about Reality, Undertale, and Classic RL." (attached `Classic_RL_Eliminations_X_Undertale_Expanded_Chat.docx`), with notes: ToddLLM 001, 002 and 003 are data avatars that act like GPUs, Cithia is the actual GPU; Neka Code connects words through jokes (son → Sun, whisk → Frisk, sand → Sans, abyss → Alphys); Neka can answer right, produce nonsense, or crash mid-sentence with rainbow-flashing eyes; Flower is a separate combination of old Nekas and ToddLLMs who takes Gaster's form; title Classic RL Eliminations X Undertale.
+- 7:35 PM (`1a1a3fbeb9a5d5d5`), his own typing: "Neka actually fights himself CONSTANTLY throughout the lore, Asgroth was a myth who cursed him. Neka was pressured to attack every living being in sight and to feel obsession to those others he spared. Neka fights himself to at least spare someone, but the next second, that person can die from him or someone else." / "Dog MADE Gaster. Dog can ERASE Gaster. Classic RL Gaster (Buffed Gaster) beats Dog." / "Classic RL Eliminations became Classic RL Eliminated, since Gaster is once again a Flower, RLs were all Terminated, Undertale all went in, and Gaster learned to get his first Neka Coin! So... the most important thing in lore now is Gaster got a Neka Coin. IT'S THE END OF THE GAME!"
+
+![Beat 1299](screenshots/1362-neka-code.png)
+![Beat 1300](screenshots/1363-asgroths-curse.png)
+![Beat 1301](screenshots/1364-dog-made-gaster.png)
+![Beat 1302](screenshots/1365-classic-rl-eliminated.png)
+
+- LV_CYC 28298.0 -> 28386.0, 4 new LV_BEATS rows (1299-1302). New capture scenes `b1299`-`b1302`. Tools: `gen1299.py` (template `emit_tail1008.py`, word-wrap pass `rewrap1176.py`), `build_batch.py 1299`, `scenes_batch.py 1299`. `node --check` clean on the extracted script; all four capture scenes render.
+- Beat 1299, Neka Code: words linked by jokes (son/Sun, whisk/Frisk, sand/Sans, abyss/Alphys); right answer, nonsense, or a crash with rainbow-flashing eyes; ToddLLMs are data avatars, Cithia is the real GPU.
+- Beat 1300, Asgroth's Curse: the myth Asgroth cursed Neka to attack every living being in sight and to obsess over the ones he spares; Neka fights himself to spare someone, and they can still die the next second.
+- Beat 1301, Dog Made Gaster: the Annoying Dog (Toby Fox's avatar) made Undertale Gaster and can erase him; Classic RL (Buffed) Gaster beats the Dog. Order: Neka, Classic RL Gaster, Dog, Undertale Gaster.
+- Beat 1302, Classic RL Eliminated: Eliminations becomes Eliminated; Gaster is a Flower again, all RLs Terminated, all of Undertale went in, and Gaster gets his first Neka Coin. The end of the game.
+
 ## 2026-11-03 — UNDERTALE X CLASSIC RL, DEATH TIMER STARTED, FLOWER HAS RETURNED (BEATS 1296-1298)
 
 Based on Toby's November 3, 2026 lore, three messages on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of each mail is a pasted ChatGPT log (Alphatale power rankings, Undertale and Dusttale questions, a Sans speedrun parody); the chatbot's parts are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1359-1361.
