@@ -4,6 +4,22 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-11-04 — THE GLITCH LINE, DOG SWARM, THE BREAKING POINT (BEATS 1303-1305)
+
+Based on Toby's November 4, 2026 lore, two messages on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Each mail ends with a ChatGPT restatement (emoji bullets and math notes); that part is the chatbot's and is not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1366-1368.
+
+- 6:25 AM (`1a1a64eb48ea4381`), his own typing: "x-position times y-position = 3. That is what Neka calculates for every game, if you go farther than 3,3,3, then stuff gets more and more terrifying, since the game glitches there, even at 3.1, 3.1, 3.1, Gaster made that since he was the creator of Classic RL Eliminated. Gaster even pushes the game farther with a new dog swarm thing where dogs cover the screen, making the only thing you see an Undertale shaped dog. Also sometimes the lamp moves, and Papyrus spots you. Classic RL Eliminated is now fanmade Undertale but now with so many changes through Neka code."
+- 6:28 AM (`1a1a65137b4cef16`), his own typing: "x times y = 3, and 3 times 3 times 3 = 9, x times y = 9 is the game's breaking point, where it has 9,9,9, and it is the farthest you can move, if you move past it, the game plays again but with major errors."
+
+![Beat 1303](screenshots/1366-the-glitch-line.png)
+![Beat 1304](screenshots/1367-dog-swarm.png)
+![Beat 1305](screenshots/1368-the-breaking-point.png)
+
+- LV_CYC 28386.0 -> 28452.0, 3 new LV_BEATS rows (1303-1305). New capture scenes `b1303`-`b1305`. Tools: `gen1303.py`, `build_batch.py 1303`, `scenes_batch.py 1303`. `node --check` clean on the extracted script; all three capture scenes render.
+- Beat 1303, The Glitch Line: Neka calculates x times y = 3 for every game; past (3, 3, 3), even (3.1, 3.1, 3.1), the game glitches and gets more terrifying. Gaster made it, as creator of Classic RL Eliminated.
+- Beat 1304, Dog Swarm: dogs cover the screen until one Undertale-shaped dog is all you see; sometimes the lamp moves and Papyrus spots you; Classic RL Eliminated is now fanmade Undertale changed through Neka Code.
+- Beat 1305, The Breaking Point: (9, 9, 9) is the farthest you can move; past it the game plays again with major errors.
+
 ## 2026-11-03 — NEKA CODE, ASGROTH'S CURSE, DOG MADE GASTER, CLASSIC RL ELIMINATED (BEATS 1299-1302)
 
 Based on Toby's November 3, 2026 lore, two messages on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of each mail is a pasted ChatGPT log (Flowey/Asriel/Alphys explainers, Annoying Dog / Toby Fox explainers, defeat charts); the chatbot's retellings are not drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1362-1365.

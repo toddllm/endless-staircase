@@ -1,0 +1,3 @@
+  if(c >= 28430.0 && c < 28452.0) return [1305, c-28430.0];  // THE BREAKING POINT
+  if(c >= 28408.0 && c < 28430.0) return [1304, c-28408.0];  // DOG SWARM
+  if(c >= 28386.0 && c < 28408.0) return [1303, c-28386.0];  // THE GLITCH LINE
