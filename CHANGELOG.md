@@ -4,6 +4,23 @@ All notable changes to the playable game. Newest first. Built from Toby's
 "Secret of Simon's Lore" emails (Lore 25). Live game:
 https://d1hysvqh647i13.cloudfront.net/game/endless-staircase/
 
+## 2026-11-04 — AFTER THE ENDING, 8.9, 8.9, 8.9, PAST THE BOUNDARY, WHAT CAME NEXT (BEATS 1315-1318)
+
+Based on Toby's November 4, 2026 lore, one message at 7:15 PM (`1a1a90fcb389dcbb`) on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. He asked "Now write what happens next in lore" and sent a full "Proposed next scene for Classic RL Eliminated", which picks up from the 1302 ending screen and the 1303-1305 glitch line, dog swarm, moving lamp and 9, 9, 9 breaking point. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1378-1381.
+
+- The scene, in order: the ending screen stays frozen on "GASTER'S FIRST NEKA COIN: OBTAINED."; Gaster: "Surely there is something after the ending." Neka, in his white lab coat: "Hello." / "Paris." / Gaster: "Do not." Neka's blue crystal eyes flicker, the ending vanishes, a hallway appears with the conveniently shaped lamp; Sans: "pretty sure that wasn't in the credits."; the lamp steps sideways, Papyrus: "HUMAN! YOUR HIDING PLACE HAS ABANDONED YOU!"; Frisk steps out onto a coordinate display reading 8.9, 8.9, 8.9; Gaster: "Nobody move." Neka walks to 9, 9, 9 and past it; dogs cover the screen; the hallway returns with major errors (doors onto doors, names into gray smiley faces, the lamp behind Papyrus); Sans: "guess we finished the game." / Gaster: "And began the errors." Neka's eyes glow blue-teal, the Seperial shapes turning, and he laughs; "Brother... did you know this would happen?" / "I wanted to learn what came next."
+
+![Beat 1315](screenshots/1378-after-the-ending.png)
+![Beat 1316](screenshots/1379-eight-point-nine.png)
+![Beat 1317](screenshots/1380-past-the-boundary.png)
+![Beat 1318](screenshots/1381-what-came-next.png)
+
+- LV_CYC 28650.0 -> 28738.0, 4 new LV_BEATS rows (1315-1318). New capture scenes `b1315`-`b1318`. Tools: `gen1315.py`, `build_batch.py 1315`, `scenes_batch.py 1315`. `node --check` clean on the extracted script; all four capture scenes render.
+- Beat 1315, After the Ending: Gaster holds his first Neka Coin and asks what comes after the ending; Neka says "Paris."
+- Beat 1316, 8.9, 8.9, 8.9: the post-credits hallway, the lamp moves, Papyrus finds Frisk, and the coordinates sit one step from the limit.
+- Beat 1317, Past the Boundary: Neka walks past 9, 9, 9, the dogs cover the screen, and the hallway comes back full of errors.
+- Beat 1318, What Came Next: for once Neka answers directly, "I wanted to learn what came next."
+
 ## 2026-11-04 — SMARTER EVERY SECOND, ONE PLUS ONE IS SIXTY, NEKA ALSO HAS RULES (BEATS 1312-1314)
 
 Based on Toby's November 4, 2026 lore, one message at 4:51 PM (`1a1a88bcdc3f250d`) on the "Continuing from Classic RL Eliminations" thread `1a19be0b90adb989`. Most of the mail is a pasted ChatGPT log (intelligence hierarchy, example dialogues with Gaster asking the time); only his own typed lines are drawn. Lore beats only; nothing in play changed. By the screenshot rule (beat + 63) the PNGs are 1375-1377.

@@ -1,0 +1,4 @@
+  if(c >= 28716.0 && c < 28738.0) return [1318, c-28716.0];  // WHAT CAME NEXT
+  if(c >= 28694.0 && c < 28716.0) return [1317, c-28694.0];  // PAST THE BOUNDARY
+  if(c >= 28672.0 && c < 28694.0) return [1316, c-28672.0];  // 8.9, 8.9, 8.9
+  if(c >= 28650.0 && c < 28672.0) return [1315, c-28650.0];  // AFTER THE ENDING
